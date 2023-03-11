@@ -1,0 +1,41 @@
+---
+layout: default
+title: Blog<br>部落格
+pagination:
+  data: collections.posts
+  size: 10
+  reverse: true
+  alias: posts
+---
+
+{% for post in pagination.items %}
+{% if post.data.published %}
+<div class="py-4">
+  <p>
+    <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
+    <span class="text-base sm:text-2xl font-normal"> &middot; {{ post.templateContent | readTime }} min read</span>
+  </p>
+  <em>{{ post.date | date: "%Y-%m-%d" }}</em>
+  <p class="mt-4">{{ post.data.post_excerpt }}...</p>
+  
+  <div class="flex justify-between items-center mt-4">
+    <div class="flex-1 pr-4">
+      {% for tag in post.data.tags %}
+        {% if tag != "posts" %}
+          <a href="/tags/{{ tag }}" class="">
+            <div class="post-tag">{{ tag }}</div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <a class="flex-none hover:underline font-semibold text-blue-700" href="{{ post.url }}">Read this post &rarr;</a>
+  </div>
+
+</div>
+
+{% endif %}
+{% endfor %}
+
+
+{% include "paginator.liquid" %}

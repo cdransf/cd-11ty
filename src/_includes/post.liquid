@@ -1,0 +1,30 @@
+---
+layout: main
+---
+
+{% include "nav.liquid" %}
+
+<p class="text-5xl md:text-6xl font-black pt-10 md:pt-30 pb-4 leading-tight">
+    {{ title}}
+</p>
+
+<div>
+    <em>{{ date | date: "%Y-%m-%d" }}</em> &middot; 
+    <span>{{ content | readTime }} min read</span>
+</div>
+
+<div class="mt-3 pb-10">
+  {% for tag in tags %}
+    {% if tag != "posts" %}
+      <a href="/tags/{{ tag }}">
+        <span class="post-tag">{{ tag }}</span>
+      </a>
+    {% endif %}
+  {% endfor %}
+  </div>
+
+<div class="prose dark:prose-invert hover:prose-a:text-blue-500">
+  {{ content }}
+</div>
+
+{% include "author.liquid" %}
