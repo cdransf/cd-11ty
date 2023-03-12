@@ -28,6 +28,7 @@
         "vercel-submodules": "^1.0.10"
     },
     "dependencies": {
+        "@11ty/eleventy-img": "^3.0.0",
         "@tailwindcss/typography": "^0.5.1",
         "autoprefixer": "^10.4.2",
         "eleventy-rss-helper": "^1.2.1",
