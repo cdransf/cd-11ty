@@ -1,10 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{{ site.title }}</title>
+    <title>{{ title }}</title>
     <meta charset="utf-8">
   	<meta name='viewport' content='width=device-width'>
-    <meta name='description' content={{ site.description }}>
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="description" content="{% if excerpt %}{{ excerpt}}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:description" content="{% if excerpt %}{{ excerpt}}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://coryd.dev{{ page.url }}" />
+    <meta property="og:image" content="{{ post | getFirstAttachment }}">
     <meta name="theme-color" content="#bd93f9"/>
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
@@ -12,6 +17,9 @@
     <link href="/assets/styles/tailwind.css" rel="stylesheet" />
     <link href="/assets/styles/prism.css" rel="stylesheet" />
     <link href="/assets/styles/index.css" rel="stylesheet" />
+    <script src="https://breezy-restored.coryd.dev/script.js" data-site="RHNGSUXO" defer></script>
+    <link rel="webmention" href="https://webmention.io/coryd.dev/webmention" />
+    <link rel="pingback" href="https://webmention.io/coryd.dev/xmlrpc" />
     <script>
       const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
       if (isDarkMode()) {

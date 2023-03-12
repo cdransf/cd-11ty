@@ -24,6 +24,7 @@
         "postcss": "^8.4.5",
         "prettier": "^2.8.4",
         "prettier-plugin-tailwindcss": "^0.2.4",
+        "sanitize-html": "^2.10.0",
         "vercel-submodules": "^1.0.10"
     },
     "dependencies": {
