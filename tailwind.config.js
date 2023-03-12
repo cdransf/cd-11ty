@@ -50,6 +50,7 @@ module.exports = {
                         },
                         pre: {
                             backgroundColor: theme('colors.gray.900'),
+                            border: `1px solid ${theme('colors.gray.700')}`,
                         },
                         code: {
                             backgroundColor: theme('colors.gray.900'),
