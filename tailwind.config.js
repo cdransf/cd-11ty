@@ -53,7 +53,10 @@ module.exports = {
                             border: `1px solid ${theme('colors.gray.700')}`,
                         },
                         code: {
+                            color: `${theme('colors.gray.50')} !important`,
                             backgroundColor: theme('colors.gray.900'),
+                            borderRadius: '0.25rem',
+                            padding: '0.25rem',
                         },
                     },
                 },

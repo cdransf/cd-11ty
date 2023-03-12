@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Blog
-templateEngineOverride: liquid,md
 pagination:
     data: collections.posts
     size: 10
     reverse: true
     alias: posts
+templateEngineOverride: liquid,md
 ---
 
 {% for post in pagination.items %} {% if post.data.published %}
