@@ -1,6 +1,7 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
+const markdownItFootnote = require('markdown-it-footnote')
 const filters = require('./config/filters.js')
 
 module.exports = function (eleventyConfig) {
@@ -54,6 +55,7 @@ module.exports = function (eleventyConfig) {
             class: 'header-anchor',
         }),
     })
+    md.use(markdownItFootnote)
     eleventyConfig.setLibrary('md', md)
 
     // asset_img shortcode
