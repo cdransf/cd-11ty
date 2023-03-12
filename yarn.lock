@@ -852,6 +852,11 @@ electron-to-chromium@^1.4.284:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.328.tgz#b4565ffa502542b561cea16086d6d9b916c7095a"
   integrity sha512-DE9tTy2PNmy1v55AZAO542ui+MLC2cvINMK4P2LXGsJdput/ThVG9t+QGecPuAZZSgC8XoI+Jh9M1OG9IoNSCw==
 
+eleventy-plugin-heroicons@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-heroicons/-/eleventy-plugin-heroicons-1.1.0.tgz#5799b37251269e9d3b46c27185f724d319f4b28b"
+  integrity sha512-i9pBWru64ixs8lafSPFLsiCdcpy/FvRb0G/sS5D+VuS+QKyJE5ifxsGtOi6AiAdTzHp1t6uXV4ZMb0k5ACrgng==
+
 eleventy-rss-helper@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/eleventy-rss-helper/-/eleventy-rss-helper-1.2.1.tgz#c5a1e06bb94687f2df542adede67bbacb54f5daa"
@@ -1723,6 +1728,11 @@ markdown-it@^13.0.1:
     linkify-it "^4.0.1"
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
+
+marked@^4.2.12:
+  version "4.2.12"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-4.2.12.tgz#d69a64e21d71b06250da995dcd065c11083bebb5"
+  integrity sha512-yr8hSKa3Fv4D3jdZmtMMPghgVt6TWbk86WQaWhDloQjRSQhMMYCAro7jP7VDJrjjdV8pxVxMssXS8B8Y5DZ5aw==
 
 maximatch@^0.1.0:
   version "0.1.0"

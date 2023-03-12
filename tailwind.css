@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+::-moz-selection {
+    color: theme(colors.gray.800);
+    background: theme(colors.purple.400);
+}
+
+::selection {
+    color: theme(colors.gray.800);
+    background: theme(colors.purple.400);
+}
+
 .paginator-text {
     @apply py-2 px-4 font-bold text-gray-600 dark:text-gray-200;
 }
@@ -23,5 +33,9 @@
 }
 
 .dark .toggle-dark {
+    @apply inline;
+}
+
+.icon-inline svg {
     @apply inline;
 }

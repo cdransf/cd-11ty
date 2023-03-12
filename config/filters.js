@@ -1,3 +1,4 @@
+const marked = require('marked')
 const sanitizeHTML = require('sanitize-html')
 
 module.exports = {
@@ -10,6 +11,9 @@ module.exports = {
     },
     stripIndex: (path) => {
         return path.replace('/index.html', '/')
+    },
+    mdToHtml: (content) => {
+        return marked.parse(content)
     },
     getFirstAttachment: (post) => {
         if (post && post.attachments && post.attachments.length > 0) {

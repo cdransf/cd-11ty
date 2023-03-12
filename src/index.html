@@ -9,8 +9,8 @@ pagination:
 templateEngineOverride: liquid,md
 ---
 
-{% for post in pagination.items %} {% if post.data.published %}
-<div class="mb-8 border-b border-gray-200 pb-8 text-gray-800 dark:border-gray-700 dark:text-white">
+{% include "now-topper.liquid" %} {% for post in pagination.items %} {% if post.data.published %}
+<div class="mb-8 border-b border-gray-200 pb-4 text-gray-800 dark:border-gray-700 dark:text-white">
     <a class="no-underline" href="{{ post.url }}"
         ><h2
             class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl"

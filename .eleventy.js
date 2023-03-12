@@ -1,33 +1,41 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const heroIcons = require('eleventy-plugin-heroicons')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const markdownItFootnote = require('markdown-it-footnote')
 const filters = require('./config/filters.js')
+const dateFilters = require('./config/dateFilters.js')
 
 module.exports = function (eleventyConfig) {
-    // Plugins
+    // plugins
     eleventyConfig.addPlugin(syntaxHighlight)
+    eleventyConfig.addPlugin(heroIcons)
 
     // filters
     Object.keys(filters).forEach((filterName) => {
         eleventyConfig.addFilter(filterName, filters[filterName])
     })
 
-    // To enable merging of tags
+    // date filters
+    Object.keys(dateFilters).forEach((filterName) => {
+        eleventyConfig.addFilter(filterName, dateFilters[filterName])
+    })
+
+    // enable merging of tags
     eleventyConfig.setDataDeepMerge(true)
 
-    // Copy these static files to _site folder
+    // copy these static files to _site folder
     eleventyConfig.addPassthroughCopy('src/assets')
     eleventyConfig.addPassthroughCopy('src/manifest.json')
 
-    // To create excerpts
+    // create excerpts
     eleventyConfig.setFrontMatterParsingOptions({
         excerpt: true,
         excerpt_alias: 'post_excerpt',
         excerpt_separator: '<!-- excerpt -->',
     })
 
-    // To create a filter to determine duration of post
+    // create a filter to determine duration of post
     eleventyConfig.addFilter('readTime', (value) => {
         const content = value
         const textOnly = content.replace(/(<([^>]+)>)/gi, '')
@@ -35,7 +43,7 @@ module.exports = function (eleventyConfig) {
         return Math.max(1, Math.floor(textOnly.length / readingSpeedPerMin))
     })
 
-    // Enable us to iterate over all the tags, excluding posts and all
+    // enable us to iterate over all the tags, excluding posts and all
     eleventyConfig.addCollection('tagList', (collection) => {
         const tagsSet = new Set()
         collection.getAll().forEach((item) => {
