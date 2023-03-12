@@ -7,21 +7,23 @@
     <button class="py-2 pr-4 cursor-not-allowed disabled:opacity-50" disabled>Previous</button>
   {% endif %}
 
-  {% for pageEntry in pagination.pages %}
-    {% if page.url == pagination.hrefs[forloop.index0] %}
-      <a href="{{ pagination.hrefs[forloop.index0] }}" aria-current="page">
-        <button class="w-8 h-8 rounded-full text-white dark:text-gray-900 bg-primary-400 hover:bg-primary-500 dark:hover:bg-primary-300">
-          {{ forloop.index }}
-        </button>
-      </a>
-    {% else %}
-      <a href="{{ pagination.hrefs[forloop.index0] }}">
-        <button class="py-2 px-4">
-          {{ forloop.index }}
-        </button>
-      </a>
-    {% endif %}
-  {% endfor %}
+    <div class="flex flex-row items-center">
+      {% for pageEntry in pagination.pages %}
+        {% if page.url == pagination.hrefs[forloop.index0] %}
+          <a href="{{ pagination.hrefs[forloop.index0] }}" aria-current="page">
+            <button class="w-8 h-8 rounded-full text-white dark:text-gray-900 bg-primary-400 hover:bg-primary-500 dark:hover:bg-primary-300">
+              {{ forloop.index }}
+            </button>
+          </a>
+        {% else %}
+          <a href="{{ pagination.hrefs[forloop.index0] }}">
+            <button class="py-2 px-4">
+              {{ forloop.index }}
+            </button>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
 
 
   {% if pagination.href.next %}

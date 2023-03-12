@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{{ title }}</title>
+    <title>{{ title }} • {{site.title}}</title>
     <meta charset="utf-8">
   	<meta name='viewport' content='width=device-width'>
     <meta property="og:title" content="{{ title }}" />
@@ -29,7 +29,7 @@
       }
     </script>
   </head>
-  <body class="dark:text-white dark:bg-gray-900 font-sans text-gray-800 dark:text-gray-50">
+  <body class="dark:text-white dark:bg-gray-900 font-sans text-gray-800">
     {{ content }}
   <script>
     document.getElementById("toggleDarkMode").addEventListener("click", function() {

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog
+templateEngineOverride: liquid,md
 pagination:
     data: collections.posts
     size: 10
@@ -9,7 +10,7 @@ pagination:
 ---
 
 {% for post in pagination.items %} {% if post.data.published %}
-<div class="mb-8 border-b border-gray-200 pb-8 dark:border-gray-700">
+<div class="mb-8 border-b border-gray-200 pb-8 text-gray-800 dark:border-gray-700 dark:text-white">
     <a class="no-underline" href="{{ post.url }}"
         ><h2
             class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl"
@@ -17,15 +18,18 @@ pagination:
             {{ post.data.title }}
         </h2>
     </a>
-    <div class="mt-2 text-sm">
-        <em>{{ post.date | date: "%m.%d.%Y" }}</em> • {% for tag in post.data.tags %} {% if tag !=
-        "posts" %}
-        <a href="/tags/{{ tag }}" class="font-normal no-underline">
-            <div class="post-tag">{{ tag }}</div>
-        </a>
-        {% endif %} {% endfor %}
+    <div class="flex h-14 items-center text-sm">
+        <span>{{ post.date | date: "%m.%d.%Y" }}</span>
+        <span class="mx-1">•</span>
+        <span class="inline-flex flex-row">
+            {% for tag in post.data.tags %} {% if tag != "posts" %}
+            <a href="/tags/{{ tag }}" class="font-normal no-underline">
+                <span class="post-tag">{{ tag }}</span>
+            </a>
+            {% endif %} {% endfor %}
+        </span>
     </div>
-    <p class="mt-4">{{ post.data.post_excerpt }}...</p>
+    <p class="mt-0">{{ post.data.post_excerpt }}</p>
     <div class="mt-4 flex items-center justify-between">
         <a class="flex-none font-normal no-underline" href="{{ post.url }}">Read more &rarr;</a>
     </div>

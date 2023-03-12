@@ -7,7 +7,7 @@
 }
 
 .post-tag {
-    @apply mt-1 mr-1 inline-block text-sm text-primary-400 hover:text-primary-500 dark:hover:text-primary-300;
+    @apply mr-1 inline-block text-sm text-primary-400 hover:text-primary-500 dark:hover:text-primary-300;
 }
 
 .toggle-light {
