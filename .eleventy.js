@@ -1,5 +1,7 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const heroIcons = require('eleventy-plugin-heroicons')
+const pluginUnfurl = require('eleventy-plugin-unfurl')
+const pluginCleanUrls = require('@inframanufaktur/eleventy-plugin-clean-urls')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const markdownItFootnote = require('markdown-it-footnote')
@@ -11,6 +13,8 @@ module.exports = function (eleventyConfig) {
     // plugins
     eleventyConfig.addPlugin(syntaxHighlight)
     eleventyConfig.addPlugin(heroIcons)
+    eleventyConfig.addPlugin(pluginUnfurl)
+    eleventyConfig.addPlugin(pluginCleanUrls)
 
     // filters
     Object.keys(filters).forEach((filterName) => {

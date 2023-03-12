@@ -9,7 +9,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "build": "npx @11ty/eleventy & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css"
+        "build": "npx @11ty/eleventy & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css",
+        "postbuild": "webmention _site/feed.xml --limit 1 --send"
     },
     "keywords": [],
     "author": "",
@@ -31,8 +32,11 @@
     "dependencies": {
         "@11ty/eleventy-fetch": "^3.0.0",
         "@11ty/eleventy-img": "^3.0.0",
+        "@inframanufaktur/eleventy-plugin-clean-urls": "^1.0.2",
+        "@remy/webmention": "^1.4.5",
         "@tailwindcss/typography": "^0.5.1",
         "autoprefixer": "^10.4.2",
+        "eleventy-plugin-unfurl": "^1.0.0",
         "eleventy-rss-helper": "^1.2.1",
         "markdown-it": "^13.0.1",
         "markdown-it-anchor": "^8.4.1",
