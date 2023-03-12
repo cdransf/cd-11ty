@@ -1,72 +1,36 @@
-<nav class="flex justify-center mt-8">
-    <div class="inline-flex">
-      {% if page.url != pagination.href.first %}
-        <a href="{{ pagination.href.first }}">
-          <button class="paginator-text">
-            First
-          </button>
-        </a>
-      {% else %}
-        <button class="paginator-text cursor-not-allowed">
-          First
+<nav class="flex justify-between mt-8">
+  {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}">
+      <button class="py-2 pr-4 text-primary-400 hover:text-primary-500 dark:hover:text-primary-300">Previous</button>
+    </a>
+  {% else %}
+    <button class="py-2 pr-4 cursor-not-allowed disabled:opacity-50" disabled>Previous</button>
+  {% endif %}
+
+  {% for pageEntry in pagination.pages %}
+    {% if page.url ==  pagination.hrefs[forloop.index0] %}
+      <a href="{{ pagination.hrefs[forloop.index0] }}" aria-current="page">
+        <button class="py-2 px-4 text-primary-400 hover:text-primary-500 dark:hover:text-primary-300">
+          {{ forloop.index }}
         </button>
-      {% endif %}
-      
-
-      {% if pagination.href.previous %}
-        <a href="{{ pagination.href.previous }}">
-          <button class="py-2 px-4">
-            <img src="/assets/img/chevron-left.svg" alt="prev">
-          </button>
-        </a>
-      {% else %}
-        <button class="py-2 px-4 cursor-not-allowed">
-          <img src="/assets/img/chevron-left.svg" alt="prev">
+      </a>
+    {% else %}
+      <a href="{{ pagination.hrefs[forloop.index0] }}">
+        <button class="py-2 px-4">
+          {{ forloop.index }}
         </button>
-      {% endif %}
-
-      {% for pageEntry in pagination.pages %}
-        {% if page.url ==  pagination.hrefs[forloop.index0] %} 
-          <a href="{{ pagination.hrefs[forloop.index0] }}" aria-current="page">
-            <button class="border bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4">
-              {{ forloop.index }}
-            </button>
-          </a>
-        {% else %}
-          <a href="{{ pagination.hrefs[forloop.index0] }}">
-            <button class="border border-gray-300 bg-white hover:bg-gray-300 text-gray-800 font-bold py-2 px-4">
-              {{ forloop.index }}
-            </button>
-          </a>
-        {% endif %}
-      {% endfor %}
+      </a>
+    {% endif %}
+  {% endfor %}
 
 
-      {% if pagination.href.next %}
-        <a href="{{ pagination.href.next }}">
-          <button class="py-2 px-4">
-            <img src="/assets/img/chevron-right.svg" alt="next">
-          </button>
-        </a>
-      {% else %}
-        <button class="py-2 px-4 cursor-not-allowed">
-          <img src="/assets/img/chevron-right.svg" alt="next">
-        </button>
-      {% endif %}
-
-
-      {% if page.url != pagination.href.last %}
-        <a href="{{ pagination.href.last }}">
-          <button class="paginator-text">
-            Last
-          </button>
-        </a>
-      {% else %}
-        <button class="paginator-text cursor-not-allowed">
-          Last
-        </button>
-      {% endif %}
-      
-    </div>
-
+  {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}">
+      <button class="py-2 pl-4">
+        <button class="py-2 pl-4 text-primary-400 hover:text-primary-500 dark:hover:text-primary-300">Next</button>
+      </button>
+    </a>
+  {% else %}
+    <button class="py-2 pl-4 cursor-not-allowed disabled:opacity-50" disabled>Next</button>
+  {% endif %}
 </nav>

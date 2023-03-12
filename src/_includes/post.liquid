@@ -2,28 +2,20 @@
 layout: main
 ---
 
-{% include "nav.liquid" %}
+{% include "header.liquid" %}
 
-<p class="text-5xl md:text-6xl font-black pt-10 md:pt-30 pb-4 leading-tight">
-    {{ title}}
-</p>
-
-<div>
-    <em>{{ date | date: "%Y-%m-%d" }}</em> &middot; 
-    <span>{{ content | readTime }} min read</span>
-</div>
-
-<div class="mt-3 pb-10">
-  {% for tag in tags %}
+<h2 class="text-xl md:text-2xl font-black leading-tight dark:text-gray-200 pt-12">{{title}}</h2>
+<div class="mt-2 text-sm mb-4">
+    <em>{{ date | date: "%m.%d.%Y" }}</em> • {% for tag in tags %}
     {% if tag != "posts" %}
-      <a href="/tags/{{ tag }}">
+      <a href="/tags/{{ tag }}" class="no-underline">
         <span class="post-tag">{{ tag }}</span>
       </a>
     {% endif %}
   {% endfor %}
-  </div>
+</div>
 
-<div class="prose dark:prose-invert hover:prose-a:text-blue-500">
+<div class="prose dark:prose-invert hover:prose-a:text-blue-500  max-w-full">
   {{ content }}
 </div>
 

@@ -1,8 +1,14 @@
 <nav>
-  <ul class="flex py-2 border-b-2 mb-6">
-    <li class="mr-6"><a href="/">Home</a></li>
-    <li class="mr-6"><a href="/tags">Tags</a></li>
-    <li class="mr-6"><a href="/about">About</a></li>
-    <li class="mr-6"><span class="cursor-pointer" id="toggleDarkMode">Dark mode</spam></li>
+  <ul class="flex">
+    <li class="mr-6"><a class="text-gray-700 hover:text-purple-500 dark:text-gray-200 dark:hover:text-purple-400" href="/about">About</a></li>
+    <li class="mr-6">
+        {% include "icons/coffee.liquid" %}
+    </li>
+    <li class="mr-6">
+        {% include "icons/tags.liquid" %}
+    </li>
+    <li class="mr-6">
+        {% include "icons/toggle-theme.liquid" %}
+    </li>
   </ul>
 </nav>

@@ -4,9 +4,6 @@
 
 View the live demo [here](https://eleventy.rongying.co/), hosted on Netlify
 
-![homepage](blog-v2.png)
-![darkmode](blog-dark.png)
-
 ## Aims
 A blog that still runs without javascript. Hence, no bundlers. 
 

@@ -1,19 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <title>{{ site.title }}</title>
     <meta charset="utf-8">
   	<meta name='viewport' content='width=device-width'>
-
-    <title>{{ site.title }}</title>
     <meta name='description' content={{ site.description }}>
-    <meta name="theme-color" content="#ffffff"/>
-
+    <meta name="theme-color" content="#bd93f9"/>
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.json" />
-
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
     <link href="/assets/styles/tailwind.css" rel="stylesheet" />
+    <link href="/assets/styles/prism.css" rel="stylesheet" />
     <link href="/assets/styles/index.css" rel="stylesheet" />
     <script>
       const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
@@ -24,10 +21,8 @@
       }
     </script>
   </head>
-
-  <body class="dark:text-white dark:bg-black">
+  <body class="dark:text-white dark:bg-black font-sans text-gray-800 dark:text-gray-50">
     {{ content }}
-    
   <script>
     document.getElementById("toggleDarkMode").addEventListener("click", function() {
       if (isDarkMode()) {

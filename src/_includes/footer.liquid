@@ -1,18 +1,11 @@
-<footer class="mt-8 bg-gray-200 dark:bg-gray-900 py-8 flex-shrink-0">
-  <div class="max-w-screen-sm md:max-w-screen-md mx-auto px-8">
-    <p class="text-sm py-2 text-right">
-      {% if site.github != "" %}
-        <a href={{ site.github }}>Github</a> 
-      {% endif %}
-
-      {% if site.linkedin != "" %}
-        &middot; <a href={{ site.linkedin }}>LinkedIn</a>
-      {% endif %}
-
-      {% if site.twitter != "" %}
-        &middot; <a href={{ site.twitter }}>Twitter</a>
-      {% endif %}
-
-    </p>
-  </div>
+<footer class="mt-8 py-8 flex gap-3 justify-center w-full">
+    {% include "icons/gmail.liquid" %}
+    {% include "icons/savvycal.liquid" %}
+    {% include "icons/github.liquid" %}
+    {% include "icons/mastodon.liquid" %}
+    {% include "icons/glass.liquid" %}
+    {% include "icons/lastfm.liquid" %}
+    {% include "icons/letterboxd.liquid" %}
+    {% include "icons/trakt.liquid" %}
+    {% include "icons/oku.liquid" %}
 </footer>
