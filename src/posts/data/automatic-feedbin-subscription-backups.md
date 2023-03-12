@@ -3,7 +3,6 @@ title: Automatic Feedbin subscription backups
 date: '2014-02-27'
 tags: ['automation']
 draft: false
-summary: A few weeks ago I switched from Fever. to Feedbin. I had been using Fever on a shared hosting account and, over    the long term, was proving to be slower than I had expected it to be.
 ---
 
 A few weeks ago I switched from [Fever.](http://feedafever.com/ 'Fever° Red hot. Well read.') to [Feedbin](https://feedbin.me/ 'Feedbin'). I had been using Fever on a shared hosting account and, over the long term, was proving to be slower than I had expected it to be.<!-- excerpt --> So far Feedbin has proven to be considerably faster than my old Fever install and appears to be more actively developed (I've also been able to use Jared Sinclair's [Unread](http://jaredsinclair.com/unread/ 'Unread — An RSS Reader') — it's fantastic).

@@ -3,7 +3,6 @@ date: '2021-04-01'
 title: 'Digital privacy tools'
 draft: false
 tags: ['tech', 'privacy']
-summary: 'This is a helpful, albeit basic, guide to online privacy tools. In addition to the tools cited, I would recommend the following.'
 ---
 
 **[The New York Times:](https://www.nytimes.com/2021/03/28/style/tools-protect-your-digital-privacy.html)**

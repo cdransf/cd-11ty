@@ -4,7 +4,6 @@ date: '2022-05-31'
 draft: false
 tags: ['apple', 'privacy', 'ios', 'macos', 'tech']
 images: ['/static/images/blog/privacy.jpg']
-summary: "A rundown of privacy tools that work well with Apple's technology ecosystem."
 ---
 
 A rundown of privacy tools that work well with Apple's technology ecosystem.<!-- excerpt -->[^1]

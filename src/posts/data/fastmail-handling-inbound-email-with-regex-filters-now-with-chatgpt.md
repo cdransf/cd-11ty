@@ -3,7 +3,6 @@ date: '2023-02-17'
 title: 'Workflows: handling inbound email on Fastmail with regular expressions (now featuring ChatGPT)'
 draft: false
 tags: ['email', 'fastmail', 'regular expressions', 'workflows', 'chatgpt']
-summary: "I've been using Fastmail for years now and have explored a number of different approaches to handling mail."
 ---
 
 I've been using Fastmail for years now and have explored a number of different approaches to handling mail. I've approached it by creating rules targeting lists of top level domains, I've gone with no rules at all and a heavy-handed approach to unsubscribing from messages (operating under the idea that _everything_ warrants being seen and triaged) and I've even used HEY [^1].<!-- excerpt -->

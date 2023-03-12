@@ -3,7 +3,6 @@ title: 'Simple data fetching with custom React hooks and SWR'
 date: '2022-05-23'
 draft: false
 tags: [swr, api, fetch, react, nextjs]
-summary: "I've implemented a few simple custom hooks for data that wrap SWR to efficiently retrieve and display what I'm currently reading and listening to."
 ---
 
 My site was scaffolded out using [Timothy Lin](https://github.com/timlrx)'s [tailwind-nextjs-starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) project (which I highly recommend checking out). As part of the build out I wanted to display the books I'm currently reading and the song I most recently listened to, data available from [oku](https://oku.club) and [Last.fm](https://last.fm), respectively[^1]. I've added the display for this data to the top of the home page using a pair of light-weight React components.<!-- excerpt -->

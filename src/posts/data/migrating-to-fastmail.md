@@ -3,7 +3,6 @@ title: 'Migrating to Fastmail'
 date: '2022-04-13'
 draft: false
 tags: ['email', 'fastmail', 'gmail']
-summary: "So you want to migrate over to Fastmail for your email — here's how you can go about doing so as seamlessly as possible."
 ---
 
 So you want to migrate over to Fastmail for your email — here's how you can go about doing so as seamlessly as possible.<!-- excerpt -->

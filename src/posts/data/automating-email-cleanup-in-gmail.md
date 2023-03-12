@@ -3,7 +3,6 @@ title: 'Automating email cleanup in Gmail'
 date: '2022-03-28'
 draft: false
 tags: ['gmail', 'automation']
-summary: "Lately I've been leaning into automating the cleanup of email I receive in Gmail using a combination of Inbox-era categories that the application still exposes via search and Google Apps Script."
 ---
 
 Lately I've been leaning into automating the cleanup of email I receive in Gmail using a combination of Inbox-era categories that the application still exposes via search and [Google Apps Script](https://www.google.com/script/start/).<!-- excerpt -->

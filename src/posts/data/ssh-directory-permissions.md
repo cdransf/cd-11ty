@@ -3,10 +3,9 @@ title: .ssh directory permissions
 date: '2020-11-09'
 draft: false
 tags: ['ssh', 'development']
-summary: I was recently setting up a new, always-on machine that I do occasional dev work. This dev work typically consists of routine maintenance and, a requirement of that, is sshing into and running software updates on manually managed servers (yes, manually managed).
 ---
 
-I was recently setting up a new, always-on machine that I do occasional dev work. This dev work typically consists of routine maintenance and, a requirement of that, is sshing into and running software updates on manually managed servers (yes, manually managed[^1]).<!-- excerpt -->
+I was recently setting up a new, always-on machine that I do occasional dev work.<!-- excerpt --> This dev work typically consists of routine maintenance and, a requirement of that, is sshing into and running software updates on manually managed servers (yes, manually managed[^1]).
 
 I sync my `.ssh` configuration using [mackup](https://github.com/lra/mackup). However, while setting up and then using a key I received a warning that my configured `.ssh` directory permissions were too open. If you ever run into this, the solution is fairly simple[^2]:
 

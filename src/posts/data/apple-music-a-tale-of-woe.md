@@ -3,7 +3,6 @@ title: 'Apple Music: a tale of woe'
 date: '2022-02-15'
 draft: false
 tags: ['music', 'apple', 'services']
-summary: Last week my Apple Music collection, in as far as I can tell, become corrupted or otherwise unmanageable. This isn't the first issue I've had with the service nor is it the most severe.
 ---
 
 Last week my Apple Music collection, in as far as I can tell, become corrupted or otherwise unmanageable. This isn't the first issue I've had with the service nor is it the most severe — I gave Apple Music a try right after it launched, remnants of Beats Music and all.<!-- excerpt --> Adding an album to your library was unreliable and tracks would get duplicated if you tried a second time. It ended up overheating my phone battery to the point it could no longer hold a charge. Back to Spotify I went.
