@@ -1,0 +1,4 @@
+---
+layout: now
+title: Now
+---

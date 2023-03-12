@@ -5,6 +5,7 @@ const markdownItAnchor = require('markdown-it-anchor')
 const markdownItFootnote = require('markdown-it-footnote')
 const filters = require('./config/filters.js')
 const dateFilters = require('./config/dateFilters.js')
+const mediaFilters = require('./config/mediaFilters.js')
 
 module.exports = function (eleventyConfig) {
     // plugins
@@ -19,6 +20,11 @@ module.exports = function (eleventyConfig) {
     // date filters
     Object.keys(dateFilters).forEach((filterName) => {
         eleventyConfig.addFilter(filterName, dateFilters[filterName])
+    })
+
+    // media filters
+    Object.keys(mediaFilters).forEach((filterName) => {
+        eleventyConfig.addFilter(filterName, mediaFilters[filterName])
     })
 
     // enable merging of tags
