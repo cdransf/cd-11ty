@@ -41,14 +41,6 @@ module.exports = function (eleventyConfig) {
         excerpt_separator: '<!-- excerpt -->',
     })
 
-    // create a filter to determine duration of post
-    eleventyConfig.addFilter('readTime', (value) => {
-        const content = value
-        const textOnly = content.replace(/(<([^>]+)>)/gi, '')
-        const readingSpeedPerMin = 450
-        return Math.max(1, Math.floor(textOnly.length / readingSpeedPerMin))
-    })
-
     // enable us to iterate over all the tags, excluding posts and all
     eleventyConfig.addCollection('tagList', (collection) => {
         const tagsSet = new Set()
