@@ -6,7 +6,6 @@ pagination:
     size: 10
     reverse: true
     alias: posts
-templateEngineOverride: liquid,md
 ---
 
 {% include "now-topper.liquid" %} {% for post in pagination.items %} {% if post.data.published %}
@@ -21,7 +20,7 @@ templateEngineOverride: liquid,md
     <div class="h-14 flex items-center text-sm">
     {{ post.date | date: "%m.%d.%Y" }}
     </div>
-    <p class="mt-0">{{ post.data.post_excerpt }}</p>
+    <p class="mt-0">{{ post.data.post_excerpt | markdownify }}</p>
     <div class="mt-4 flex items-center justify-between">
         <a class="flex-none font-normal no-underline" href="{{ post.url }}">Read more &rarr;</a>
     </div>
