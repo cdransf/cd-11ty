@@ -19,11 +19,13 @@ module.exports = function (eleventyConfig) {
 
     // tailwind watches
     eleventyConfig.addWatchTarget('./tailwind.config.js')
-    eleventyConfig.addWatchTarget('./tailwind.css')
+    eleventyConfig.addWatchTarget('./tailwind.css') 
 
-    eleventyConfig.addShortcode('version', function () {
-        return now
-    })
+    // passthrough
+    eleventyConfig.addPassthroughCopy("src/assets");
+    
+    // shortcodes
+    eleventyConfig.addShortcode('version', () => now)
 
     // filters
     Object.keys(filters).forEach((filterName) => {
