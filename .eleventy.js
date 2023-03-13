@@ -50,6 +50,9 @@ module.exports = function (eleventyConfig) {
         excerpt_separator: '<!-- excerpt -->',
     })
 
+    // md instance
+    const md = markdownIt({ html: true, linkify: true })
+
     // enable us to iterate over all the tags, excluding posts and all
     eleventyConfig.addCollection('tagList', (collection) => {
         const tagsSet = new Set()
@@ -62,7 +65,6 @@ module.exports = function (eleventyConfig) {
         return Array.from(tagsSet).sort()
     })
 
-    const md = markdownIt({ html: true, linkify: true })
     md.use(markdownItAnchor, {
         level: [1, 2],
         permalink: markdownItAnchor.permalink.headerLink({
@@ -72,6 +74,11 @@ module.exports = function (eleventyConfig) {
     })
     md.use(markdownItFootnote)
     eleventyConfig.setLibrary('md', md)
+
+    // markdown filter
+    eleventyConfig.addLiquidFilter("markdown", (content) => {
+  return md.render(content);
+});
 
     // asset_img shortcode
     eleventyConfig.addLiquidShortcode('asset_img', (filename, alt) => {

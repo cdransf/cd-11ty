@@ -20,7 +20,7 @@ pagination:
     <div class="h-14 flex items-center text-sm">
     {{ post.date | date: "%m.%d.%Y" }}
     </div>
-    <p class="mt-0">{{ post.data.post_excerpt | markdownify }}</p>
+    <p class="mt-0">{{ post.data.post_excerpt | markdown }}</p>
     <div class="mt-4 flex items-center justify-between">
         <a class="flex-none font-normal no-underline" href="{{ post.url }}">Read more &rarr;</a>
     </div>
