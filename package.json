@@ -31,6 +31,7 @@
     "dependencies": {
         "@11ty/eleventy-fetch": "^3.0.0",
         "@11ty/eleventy-img": "^3.0.0",
+        "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
         "@tailwindcss/typography": "^0.5.1",
         "autoprefixer": "^10.4.2",
         "eleventy-plugin-unfurl": "^1.0.0",
