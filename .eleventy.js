@@ -41,10 +41,6 @@ module.exports = function (eleventyConfig) {
     // enable merging of tags
     eleventyConfig.setDataDeepMerge(true)
 
-    // copy these static files to _site folder
-    eleventyConfig.addPassthroughCopy('src/assets')
-    eleventyConfig.addPassthroughCopy('src/manifest.json')
-
     // create excerpts
     eleventyConfig.setFrontMatterParsingOptions({
         excerpt: true,
@@ -84,6 +80,8 @@ module.exports = function (eleventyConfig) {
         passthroughFileCopy: true,
         dir: {
             input: 'src',
+            includes: '_includes',
+            data: '_data',
             output: '_site',
         },
     }
