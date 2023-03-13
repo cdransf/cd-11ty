@@ -232,19 +232,6 @@
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
   integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
 
-"@inframanufaktur/clean-urls@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@inframanufaktur/clean-urls/-/clean-urls-1.0.1.tgz#61c0957b3670f226de3fb5648c1f655e8b9b1e07"
-  integrity sha512-WCYk+lp0Cu+jts6C3myAuzEwZov7ZjYMNkXjk3RhIU3I5wXrrZQNAn7Si7376MEpTGWEBsVU4rlwW4UU6SKTWA==
-
-"@inframanufaktur/eleventy-plugin-clean-urls@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@inframanufaktur/eleventy-plugin-clean-urls/-/eleventy-plugin-clean-urls-1.0.2.tgz#75589709ae99dca0781687d1fd5376137b270a4b"
-  integrity sha512-pdSXyzShC7x0rO0ujjqA7Zeq9n6lLXVYFCAf+Wm9lpAJ0gY0eDMbYqkrqs8GaWwkNAhhpXu/yJUFxiTWdET3Xg==
-  dependencies:
-    "@inframanufaktur/clean-urls" "^1.0.1"
-    linkedom "^0.14.4"
-
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -2364,7 +2351,7 @@ limiter@^1.0.5:
   resolved "https://registry.yarnpkg.com/limiter/-/limiter-1.1.5.tgz#8f92a25b3b16c6131293a0cc834b4a838a2aa7c2"
   integrity sha512-FWWMIEOxz3GwUI4Ts/IvgVy6LPvoMPgjMdQ185nN6psJyBJ4yOpzqm695/h5umdLJg2vW3GR5iG11MAkR2AzJA==
 
-linkedom@^0.14.19, linkedom@^0.14.4:
+linkedom@^0.14.19:
   version "0.14.24"
   resolved "https://registry.yarnpkg.com/linkedom/-/linkedom-0.14.24.tgz#981610ccd512376739f9fd5e76f48b4033fa5491"
   integrity sha512-z9DlnDqvTyV0JJQlUqTCRzkElY6Ref4O4w8GXzGuV5vR5M85xnXvo0Dg33DehbhY7lhmDCyZYpecAGApz6zvxA==

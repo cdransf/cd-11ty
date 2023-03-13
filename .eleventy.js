@@ -1,7 +1,6 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const heroIcons = require('eleventy-plugin-heroicons')
 const pluginUnfurl = require('eleventy-plugin-unfurl')
-const pluginCleanUrls = require('@inframanufaktur/eleventy-plugin-clean-urls')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const markdownItFootnote = require('markdown-it-footnote')
@@ -14,21 +13,20 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(syntaxHighlight)
     eleventyConfig.addPlugin(heroIcons)
     eleventyConfig.addPlugin(pluginUnfurl)
-    eleventyConfig.addPlugin(pluginCleanUrls)
 
     // filters
     Object.keys(filters).forEach((filterName) => {
-        eleventyConfig.addFilter(filterName, filters[filterName])
+        eleventyConfig.addLiquidFilter(filterName, filters[filterName])
     })
 
     // date filters
     Object.keys(dateFilters).forEach((filterName) => {
-        eleventyConfig.addFilter(filterName, dateFilters[filterName])
+        eleventyConfig.addLiquidFilter(filterName, dateFilters[filterName])
     })
 
     // media filters
     Object.keys(mediaFilters).forEach((filterName) => {
-        eleventyConfig.addFilter(filterName, mediaFilters[filterName])
+        eleventyConfig.addLiquidFilter(filterName, mediaFilters[filterName])
     })
 
     // enable merging of tags
@@ -37,7 +35,6 @@ module.exports = function (eleventyConfig) {
     // copy these static files to _site folder
     eleventyConfig.addPassthroughCopy('src/assets')
     eleventyConfig.addPassthroughCopy('src/manifest.json')
-    eleventyConfig.addPassthroughCopy('src/.well-known')
 
     // create excerpts
     eleventyConfig.setFrontMatterParsingOptions({

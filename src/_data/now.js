@@ -1,7 +1,7 @@
 const EleventyFetch = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
-    const url = 'https://coryd.dev/api/now?endpoints=artists,albums,books,movies,tv'
+    const url = 'https://utils.coryd.dev/api/now?endpoints=artists,albums,books,movies,tv'
     const res = EleventyFetch(url, {
         duration: '3h',
         type: 'json',

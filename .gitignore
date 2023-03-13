@@ -1,4 +1,8 @@
+# build output
 _site
 node_modules
-.DS_Store
+.env.local
 .cache
+
+# system files
+.DS_Store
