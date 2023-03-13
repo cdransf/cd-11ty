@@ -28,9 +28,7 @@
 
   {% if pagination.href.next %}
     <a href="{{ pagination.href.next }}">
-      <button class="py-2 pl-4">
-        <button class="py-2 pl-4 text-primary-400 hover:text-primary-500 dark:hover:text-primary-300" aria-label="Next page">Next</button>
-      </button>
+    <button class="py-2 pl-4 text-primary-400 hover:text-primary-500 dark:hover:text-primary-300" aria-label="Next page">Next</button>
     </a>
   {% else %}
     <button class="py-2 pl-4 cursor-not-allowed disabled:opacity-50" aria-label="Next page (disabled)" disabled>Next</button>

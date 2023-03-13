@@ -4,6 +4,7 @@
     <title>{{ title }} • {{site.title}}</title>
     <meta charset="utf-8">
   	<meta name='viewport' content='width=device-width'>
+  	<link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
     <meta property="og:title" content="{{ title }}" />
     <meta name="description" content="{% if excerpt %}{{ excerpt}}{% else %}{{ site.description }}{% endif %}" />
     <meta property="og:description" content="{% if excerpt %}{{ excerpt}}{% else %}{{ site.description }}{% endif %}" />
