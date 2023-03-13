@@ -1,19 +1,18 @@
 {
     "name": "coryd.dev",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "The source for my personal site, blog and portfolio. Build using 11ty and hosted on Vercel.",
+    "main": "index.html",
     "scripts": {
         "start": "npx @11ty/eleventy --serve & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
         "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "build": "npx @11ty/eleventy & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css",
-        "postbuild": "webmention _site/feed.xml --limit 1 --send"
+        "build": "npx @11ty/eleventy & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css"
     },
     "keywords": [],
-    "author": "",
+    "author": "Cory Dransfeldt",
     "license": "ISC",
     "devDependencies": {
         "@11ty/eleventy": "^2.0.0",
@@ -32,8 +31,6 @@
     "dependencies": {
         "@11ty/eleventy-fetch": "^3.0.0",
         "@11ty/eleventy-img": "^3.0.0",
-        "@remy/webmention": "^1.4.5",
-        "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
         "@tailwindcss/typography": "^0.5.1",
         "autoprefixer": "^10.4.2",
         "eleventy-plugin-unfurl": "^1.0.0",

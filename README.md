@@ -2,6 +2,8 @@
 
 # coryd.dev
 
+[![scheduled-syndication](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml/badge.svg)](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml)
+
 Hi! I'm Cory. 👋🏻
 
 This is the code for my personal website and portfolio. Built using 11ty and deployed on Vercel.
