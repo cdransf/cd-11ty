@@ -18,16 +18,8 @@ templateEngineOverride: liquid,md
             {{ post.data.title }}
         </h2>
     </a>
-    <div class="flex flex:col md:flex-row h-14 items-center text-sm">
-        <span>{{ post.date | date: "%m.%d.%Y" }}</span>
-        <span class="mx-1 hidden md:inline">•</span>
-        <span class="inline-flex flex-row">
-            {% for tag in post.data.tags %} {% if tag != "posts" %}
-            <a href="/tags/{{ tag }}" class="font-normal no-underline">
-                <span class="post-tag">{{ tag }}</span>
-            </a>
-            {% endif %} {% endfor %}
-        </span>
+    <div class="h-14 items-center text-sm">
+    {{ post.date | date: "%m.%d.%Y" }}
     </div>
     <p class="mt-0">{{ post.data.post_excerpt }}</p>
     <div class="mt-4 flex items-center justify-between">
