@@ -4,12 +4,12 @@
     "description": "The source for my personal site, blog and portfolio. Build using 11ty and hosted on Vercel.",
     "main": "index.html",
     "scripts": {
-        "start": "npx @11ty/eleventy --serve & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
+        "start": "eleventy --serve & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
         "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "build": "npx @11ty/eleventy & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css"
+        "build": "eleventy && npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css"
     },
     "keywords": [],
     "author": "Cory Dransfeldt",

@@ -7,12 +7,21 @@ const markdownItFootnote = require('markdown-it-footnote')
 const filters = require('./config/filters.js')
 const dateFilters = require('./config/dateFilters.js')
 const mediaFilters = require('./config/mediaFilters.js')
+const now = String(Date.now())
 
 module.exports = function (eleventyConfig) {
     // plugins
     eleventyConfig.addPlugin(syntaxHighlight)
     eleventyConfig.addPlugin(heroIcons)
     eleventyConfig.addPlugin(pluginUnfurl)
+
+    // tailwind watches
+    eleventyConfig.addWatchTarget('./tailwind.config.js')
+    eleventyConfig.addWatchTarget('./tailwind.css')
+
+    eleventyConfig.addShortcode('version', function () {
+        return now
+    })
 
     // filters
     Object.keys(filters).forEach((filterName) => {
