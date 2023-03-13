@@ -8,10 +8,6 @@ images: ['/static/images/blog/privacy.jpg']
 
 A rundown of privacy tools that work well with Apple's technology ecosystem.<!-- excerpt -->[^1]
 
-## Overview
-
-<TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
-
 ## Email providers
 
 Ubiquitous free email providers profit by mining user data (whether humans are involved or not). Your inbox acts as a key to your digital life and you should avoid using any provider that monetizes its contents.
