@@ -38,7 +38,7 @@ layout: main
     <div>
         <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
             {% for artist in now.artists %}
-                <a href={{artist.url}} title={{artist.name}}>
+                <a href={{artist.url}} title={{artist.name | escape}}>
                     <div class="relative block">
                         <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-primary-500 bg-cover-gradient dark:border-gray-500"></div>
                         <div class="absolute left-1 bottom-2 drop-shadow-md">
@@ -69,7 +69,7 @@ layout: main
     <div>
         <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
             {% for album in now.albums %}
-                <a href={{album.url}} title={{album.name}}>
+                <a href={{album.url}} title={{album.name | escape}}>
                     <div class="relative block">
                         <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-primary-500 bg-cover-gradient dark:border-gray-500"></div>
                         <div class="absolute left-1 bottom-2 drop-shadow-md">
@@ -102,7 +102,7 @@ layout: main
         <ul class="list-inside list-disc pl-5 md:pl-10">
         {% for book in now.books %}
             <li class="mt-1.5 mb-2">
-                <a href={{book.link}} title={{book.title}}>
+                <a href={{book.link}} title={{book.title | escape}}>
                     {{book.title}}
                 </a>
             </li>
@@ -120,7 +120,7 @@ layout: main
         <ul class="list-inside list-disc pl-5 md:pl-10">
         {% for movie in now.movies %}
             <li class="mt-1.5 mb-2">
-                <a href={{movie.link}} title={{movie.title}}>
+                <a href={{movie.link}} title={{movie.title | escape}}>
                     {{movie.title}}
                 </a>
             </li>
@@ -138,7 +138,7 @@ layout: main
         <ul class="list-inside list-disc pl-5 md:pl-10">
         {% for show in now.tv %}
             <li class="mt-1.5 mb-2">
-                <a href={{show.link}} title={{show.title}}>
+                <a href={{show.link}} title={{show.title | escape}}>
                     {{show.title}}
                 </a>
             </li>
