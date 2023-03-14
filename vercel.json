@@ -43,6 +43,10 @@
         {
             "source": "/blog/simple-api-fetch-hooks-with-swr",
             "destination": "/posts/2022/simple-api-fetch-hooks-with-swr/"
+        },
+        {
+            "source": "/rss.xml",
+            "destination": "/feed.xml"
         }
     ]
 }
