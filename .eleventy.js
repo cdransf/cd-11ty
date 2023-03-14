@@ -19,11 +19,12 @@ module.exports = function (eleventyConfig) {
 
     // tailwind watches
     eleventyConfig.addWatchTarget('./tailwind.config.js')
-    eleventyConfig.addWatchTarget('./tailwind.css') 
+    eleventyConfig.addWatchTarget('./tailwind.css')
 
     // passthrough
-    eleventyConfig.addPassthroughCopy("src/assets");
-    
+    eleventyConfig.addPassthroughCopy('src/assets')
+    eleventyConfig.addPassthroughCopy('src/robots.txt')
+
     // shortcodes
     eleventyConfig.addShortcode('version', () => now)
 
@@ -78,9 +79,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.setLibrary('md', md)
 
     // markdown filter
-    eleventyConfig.addLiquidFilter("markdown", (content) => {
-  return md.render(content);
-});
+    eleventyConfig.addLiquidFilter('markdown', (content) => {
+        return md.render(content)
+    })
 
     // asset_img shortcode
     eleventyConfig.addLiquidShortcode('asset_img', (filename, alt) => {
