@@ -12,14 +12,6 @@
     background: theme(colors.purple.400);
 }
 
-.paginator-text {
-    @apply py-2 px-4 font-bold text-gray-600 dark:text-gray-200;
-}
-
-.post-tag {
-    @apply mr-1 inline-block text-sm text-primary-400 hover:text-primary-500 dark:hover:text-primary-300;
-}
-
 .toggle-light {
     @apply inline;
 }
