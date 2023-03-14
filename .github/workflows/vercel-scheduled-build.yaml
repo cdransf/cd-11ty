@@ -1,4 +1,4 @@
-name: Vercel scheduled build
+name: vercel-scheduled-build
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
