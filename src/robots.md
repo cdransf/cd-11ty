@@ -2,7 +2,8 @@
 permalink: /robots.txt
 eleventyExcludeFromCollections: true
 ---
+
 Sitemap: https://coryd.dev/sitemap.xml
 
-User-agent: *
+User-agent: \*
 Disallow:
