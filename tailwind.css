@@ -31,3 +31,7 @@
 .icon-inline svg {
     @apply inline;
 }
+
+.active {
+    @apply text-primary-400;
+}

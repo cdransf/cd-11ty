@@ -36,9 +36,10 @@ module.exports = {
             return author.name && published && content
         }
 
-        const filtered = webmentions
-            .filter((entry) => entry['wm-target'] === `https://coryd.dev${url}`)
-            .filter((entry) => allowedTypes.includes(entry['wm-property']))
+        const filtered =
+            webmentions
+                ?.filter((entry) => entry['wm-target'] === `https://coryd.dev${url}`)
+                .filter((entry) => allowedTypes.includes(entry['wm-property'])) || []
 
         filtered.forEach((m) => {
             if (data[m['wm-property']]) {

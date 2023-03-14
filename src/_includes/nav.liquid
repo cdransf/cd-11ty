@@ -1,7 +1,7 @@
 <nav>
   <ul class="flex">
-    <li class="mr-6"><a class="text-gray-700 hover:text-purple-500 dark:text-gray-200 dark:hover:text-purple-400" href="/now">/now</a></li>
-    <li class="mr-6"><a class="text-gray-700 hover:text-purple-500 dark:text-gray-200 dark:hover:text-purple-400" href="/about">About</a></li>
+    <li class="mr-6"><a class="text-gray-700 hover:text-primary-400 dark:text-gray-200{% if page.url == '/now/' %} active{% endif %}" href="/now">/now</a></li>
+    <li class="mr-6"><a class="text-gray-700 hover:text-primary-400 dark:text-gray-200{% if page.url == '/about/' %} active{% endif %}" href="/about">About</a></li>
     <li class="mr-6">
         {% include "icons/coffee.liquid" %}
     </li>
