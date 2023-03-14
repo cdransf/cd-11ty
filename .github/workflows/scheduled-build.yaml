@@ -1,8 +1,10 @@
-name: vercel-manual-build
+name: scheduled-build
 env:
     VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
     VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-on: [workflow_dispatch]
+on:
+    schedule:
+        - cron: '0 * * * *'
 jobs:
     cron:
         runs-on: ubuntu-latest
