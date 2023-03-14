@@ -9,7 +9,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "build": "rm -rf .cache && ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o _site/assets/styles/tailwind.css"
+        "build": "rm -rf .cache && ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o _site/assets/styles/tailwind.css",
+        "postbuild": "webmention _site/feed.xml --limit 1 --send"
     },
     "keywords": [],
     "author": "Cory Dransfeldt",
@@ -31,6 +32,7 @@
     "dependencies": {
         "@11ty/eleventy-fetch": "^3.0.0",
         "@11ty/eleventy-img": "^3.0.0",
+        "@remy/webmention": "^1.4.5",
         "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
         "@tailwindcss/typography": "^0.5.1",
         "autoprefixer": "^10.4.2",
