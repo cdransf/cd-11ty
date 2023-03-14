@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Referrals
+title: Uses
 ---
 
 <h2
