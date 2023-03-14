@@ -52,7 +52,7 @@ layout: main
                             onerror="this.onerror=null; this.src='/assets/img/media/404.jpg'"
                             width="350"
                             height="350"
-                            class="rounded-lg" alt={{artist.name}}
+                            class="rounded-lg" alt={{artist.name | escape}}}}
                             loading="lazy"
                         />
                     </div>
@@ -85,7 +85,7 @@ layout: main
                             width="350"
                             height="350"
                             class="rounded-lg"
-                            alt={{album.name}}
+                            alt={{album.name | escape}}}}
                             loading="lazy"
                         />
                     </div>
