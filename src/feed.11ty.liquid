@@ -1,9 +1,10 @@
 ---
 permalink: '/feed.json'
 ---
+{% assign posts = collections.posts | reverse %}
 {
   "posts": [
-    {% for item in collections.posts %}
+    {% for item in posts %}
       {
         "title": "{{ item.data.title }}",
         "url": "{{ item.url }}"

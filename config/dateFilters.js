@@ -37,4 +37,8 @@ module.exports = {
 
         return [month, day, year].join('.')
     },
+    rssLastUpdatedDate: (collection) => {
+        if (!collection || !collection.length) return ''
+        return collection[0].publishedAt
+    },
 }

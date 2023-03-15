@@ -1,0 +1,22 @@
+---
+layout: null
+permalink: /feeds/all.xml
+---
+{% layout "./_includes/feed.liquid" %}
+{% block title %}All posts • Cory Dransfeldt{% endblock %}
+{% block self %}all.xml{% endblock %}
+{% block update %}{{ collections.posts | rssLastUpdatedDate }}{% endblock %}
+{% block entries %}
+  {% assign posts = collections.posts | reverse %}
+  {% for post in posts %}
+    <entry>
+      <title>{{ post.data.title }}</title>
+      <link href="{{ site.url }}{{ post.url }}" />
+      <updated>{{ post.date | date: "%m.%d.%Y" }}</updated>
+      <id>{{ site.url }}{{ post.url }}</id>
+      <content type="html">
+        {{ post.data.post_excerpt | markdown }}
+      </content>
+    </entry>
+  {% endfor %}
+{% endblock %}
