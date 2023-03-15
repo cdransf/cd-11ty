@@ -55,7 +55,7 @@
             nowPlayingWrapper.insertAdjacentHTML("beforeEnd", cachedTemplate);
           }
 
-          fetch("https://utils.coryd.dev/api/music?limit=1&period=7day")
+          fetch("https://utils.coryd.dev/api/music?limit=1")
             .then((response) => response.json())
             .then((data) => {
               const track = data.recenttracks.track[0];
