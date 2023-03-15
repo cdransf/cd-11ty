@@ -6,7 +6,6 @@
     "scripts": {
         "start": "eleventy --serve & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
         "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
-        "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "build": "rm -rf .cache && ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o _site/assets/styles/tailwind.css",
@@ -26,8 +25,7 @@
         "postcss": "^8.4.5",
         "prettier": "^2.8.4",
         "prettier-plugin-tailwindcss": "^0.2.4",
-        "sanitize-html": "^2.10.0",
-        "vercel-submodules": "^1.0.10"
+        "sanitize-html": "^2.10.0"
     },
     "dependencies": {
         "@11ty/eleventy-fetch": "^3.0.0",
