@@ -3,7 +3,7 @@ const EleventyFetch = require('@11ty/eleventy-fetch')
 module.exports = async function () {
     const url = 'https://api.omg.lol/address/cory/statuses/'
     const res = EleventyFetch(url, {
-        duration: '1d',
+        duration: '1h',
         type: 'json',
     })
     const status = await res
