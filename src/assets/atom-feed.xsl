@@ -57,14 +57,12 @@ xmlns:atom="http://www.w3.org/2005/Atom">
                     </div>
                     <xsl:apply-templates select="atom:feed/atom:entry" />
                 </div>
-                <footer class="prose pb-8 mt-4">
+                <footer class="prose pb-8 mt-4 text-gray-800 dark:text-white">
                     <div>
-                        <p class="mb-0"><strong>This is a web feed,</strong> also known as an RSS or Atom feed.</p>
-                        <p class="mt-0"><strong>Subscribe</strong> by copying the URL from the address bar into your newsreader.</p>
+                        <p class="mb-0"><strong class="text-gray-800 dark:text-gray-200">This is a web feed,</strong> also known as an RSS or Atom feed.</p>
+                        <p class="mt-0"><strong class="text-gray-800 dark:text-gray-200">Subscribe</strong> by copying the URL from the address bar into your newsreader.</p>
                     </div>
-                    <small>
-                    Visit <a href="https://aboutfeeds.com">About Feeds</a> to get started with newsreaders and subscribing. It’s free.
-                    </small>
+                    <small>Visit <a href="https://aboutfeeds.com">About Feeds</a> to get started with newsreaders and subscribing. It’s free.</small>
                 </footer>
             </main>
         </div>
@@ -74,7 +72,7 @@ xmlns:atom="http://www.w3.org/2005/Atom">
 <xsl:template match="atom:feed/atom:entry">
 <div class="pb-4 border-b border-gray-200 dark:border-gray-700 mb-8">
     <h3 class="mb-0">
-    <a class="no-underline font-black dark:text-gray-200 leading-tight m-0 md:text-2xl text-xl tracking-normal dark:text-white text-gray-800">
+    <a class="no-underline text-gray-800 dark:text-gray-200 leading-tight m-0 md:text-2xl text-xl tracking-normal  text-gray-800">
         <xsl:attribute name="href">
         <xsl:value-of select="atom:link/@href"/>
         </xsl:attribute>
