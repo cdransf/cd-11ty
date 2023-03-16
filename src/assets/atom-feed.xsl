@@ -29,9 +29,9 @@ xmlns:atom="http://www.w3.org/2005/Atom">
         <div class="min-h-screen flex flex-col">
             <main class="flex-1 w-10/12 max-w-screen-sm md:max-w-screen-md mx-auto">
                 <div class="flex flex-col md:flex-row md:items-center md:justify-between md:pt-10 pt-5">
-                    <h1 class="dark:text-gray-200 font-black leading-tight dark:hover:text-purple-400 hover:text-purple-500 md:pb-0 md:text-3xl pb-5 text-2xl">
-                    <a href="/">Cory Dransfeldt</a>
-                    </h1>
+                    <a class="text-gray-800 dark:text-gray-200 dark:hover:text-purple-400 hover:text-purple-400" href="/">
+                        <h1 class="font-black leading-tight md:pb-0 md:text-3xl pb-5 text-2xl">Cory Dransfeldt</h1>
+                    </a>
                     <a href="/">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="inline w-6 h-6 fill-current text-gray-700 hover:text-purple-500 dark:text-gray-200 dark:hover:text-purple-400">
                           <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
@@ -41,7 +41,7 @@ xmlns:atom="http://www.w3.org/2005/Atom">
                 </div>
                 <div class="pt-12 prose dark:prose-invert hover:prose-a:text-blue-500 max-w-full">
                     <div class="dark:text-white text-gray-800 border-b border-gray-200 dark:border-gray-700 pb-4">
-                        <h2 class="font-black leading-tight m-0 md:text-2xl text-xl tracking-normal mb-4 flex flex-row items-center">
+                        <h2 class="font-black leading-tight m-0 md:text-2xl text-xl tracking-normal mb-4 flex flex-row items-center text-gray-800 dark:text-gray-200">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mr-1">
                             <path fill-rule="evenodd" d="M3.75 4.5a.75.75 0 01.75-.75h.75c8.284 0 15 6.716 15 15v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75C18 11.708 12.292 6 5.25 6H4.5a.75.75 0 01-.75-.75V4.5zm0 6.75a.75.75 0 01.75-.75h.75a8.25 8.25 0 018.25 8.25v.75a.75.75 0 01-.75.75H12a.75.75 0 01-.75-.75v-.75a6 6 0 00-6-6H4.5a.75.75 0 01-.75-.75v-.75zm0 7.5a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" clip-rule="evenodd" />
                         </svg>
@@ -72,7 +72,7 @@ xmlns:atom="http://www.w3.org/2005/Atom">
 <xsl:template match="atom:feed/atom:entry">
 <div class="pb-4 border-b border-gray-200 dark:border-gray-700 mb-8">
     <h3 class="mb-0">
-    <a class="no-underline text-gray-800 dark:text-gray-200 leading-tight m-0 md:text-2xl text-xl tracking-normal  text-gray-800">
+    <a class="no-underline text-gray-800 dark:text-gray-200 leading-tight m-0 md:text-2xl text-xl tracking-normal  text-gray-800 font-black ">
         <xsl:attribute name="href">
         <xsl:value-of select="atom:link/@href"/>
         </xsl:attribute>
