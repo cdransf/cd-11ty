@@ -2,7 +2,7 @@
 
 # coryd.dev
 
-[![scheduled-build](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-build.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-build.yaml) [![scheduled-syndication](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml/badge.svg)](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml)
+[![scheduled-build](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-build.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-build.yaml)
 
 Hi! I'm Cory. 👋🏻
 
