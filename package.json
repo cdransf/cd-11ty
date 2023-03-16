@@ -28,11 +28,14 @@
         "sanitize-html": "^2.10.0"
     },
     "dependencies": {
+        "@11ty/eleventy-activity-feed": "^1.0.9",
         "@11ty/eleventy-fetch": "^3.0.0",
         "@11ty/eleventy-img": "^3.0.0",
+        "@extractus/feed-extractor": "^6.2.1",
         "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
         "@tailwindcss/typography": "^0.5.1",
         "autoprefixer": "^10.4.2",
+        "dotenv-flow": "^3.2.0",
         "eleventy-plugin-unfurl": "^1.0.0",
         "liquidjs": "^10.6.1",
         "markdown-it": "^13.0.1",

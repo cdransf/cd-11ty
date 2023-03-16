@@ -29,7 +29,7 @@ layout: main
     <div class="pl-4 md:pl-8">
         <p class="my-2"><span class="icon-inline mr-1">{% heroicon "solid" "terminal" "Terminal" "width=20 height=20" %}</span> Hacking away on random projects like this page, my <a href="/">blog</a>, and whatever else I can find time for.</p>
     </div>
-    {% if now.artists %}
+    {% if artists %}
     <h2
         class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4"
     >
@@ -37,7 +37,7 @@ layout: main
     </h2>
     <div>
         <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
-            {% for artist in now.artists %}
+            {% for artist in artists %}
                 <a href="{{artist.url}}" title="{{artist.name | escape}}">
                     <div class="relative block">
                         <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-primary-500 bg-cover-gradient dark:border-gray-500"></div>
@@ -61,7 +61,7 @@ layout: main
         </div>
     </div>
     {% endif %}
-    {% if now.albums %}
+    {% if albums %}
     <h2
         class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4"
     >
@@ -69,7 +69,7 @@ layout: main
     </h2>
     <div>
         <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
-            {% for album in now.albums %}
+            {% for album in albums %}
                 <a href="{{album.url}}" title="{{album.name | escape}}">
                     <div class="relative block">
                         <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-primary-500 bg-cover-gradient dark:border-gray-500"></div>
@@ -94,7 +94,7 @@ layout: main
         </div>
     </div>
     {% endif %}
-    {% if now.books %}
+    {% if books %}
     <h2
         class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4"
     >
@@ -102,7 +102,7 @@ layout: main
     </h2>
     <div>
         <ul class="list-inside list-disc pl-5 md:pl-10">
-        {% for book in now.books %}
+        {% for book in books %}
             <li class="mt-1.5 mb-2">
                 <a href="{{book.link}}" title="{{book.title | escape}}">
                     {{book.title}}
@@ -112,7 +112,7 @@ layout: main
         </ul>
     </div>
     {% endif %}
-    {% if now.movies %}
+    {% if movies %}
     <h2
         class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4"
     >
@@ -120,7 +120,7 @@ layout: main
     </h2>
     <div>
         <ul class="list-inside list-disc pl-5 md:pl-10">
-        {% for movie in now.movies %}
+        {% for movie in movies %}
             <li class="mt-1.5 mb-2">
                 <a href="{{movie.link}}" title="{{movie.title | escape}}">
                     {{movie.title}}
@@ -130,7 +130,7 @@ layout: main
         </ul>
     </div>
     {% endif %}
-    {% if now.tv %}
+    {% if tv %}
     <h2
         class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4"
     >
@@ -138,7 +138,7 @@ layout: main
     </h2>
     <div>
         <ul class="list-inside list-disc pl-5 md:pl-10">
-        {% for show in now.tv %}
+        {% for show in tv %}
             <li class="mt-1.5 mb-2">
                 <a href="{{show.link}}" title="{{show.title | escape}}">
                     {{show.title}}

@@ -10,6 +10,9 @@ const dateFilters = require('./config/dateFilters.js')
 const mediaFilters = require('./config/mediaFilters.js')
 const now = String(Date.now())
 
+// load .env
+require('dotenv-flow').config()
+
 module.exports = function (eleventyConfig) {
     // plugins
     eleventyConfig.addPlugin(syntaxHighlight)
