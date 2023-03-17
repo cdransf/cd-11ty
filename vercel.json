@@ -45,6 +45,10 @@
             "destination": "/posts/2022/simple-api-fetch-hooks-with-swr/"
         },
         {
+            "source": "/2023/02/automatingandprobablyoverengineeringmy-nowpage",
+            "destination": "/posts/2023/automating-and-overengineering-my-now-page/"
+        },
+        {
             "source": "/rss.xml",
             "destination": "/feed.xml"
         }
