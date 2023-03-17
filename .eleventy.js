@@ -27,6 +27,7 @@ module.exports = function (eleventyConfig) {
     // passthrough
     eleventyConfig.addPassthroughCopy('src/assets')
     eleventyConfig.addPassthroughCopy('src/robots.txt')
+    eleventyConfig.addPassthroughCopy('src/contribute.json')
 
     // shortcodes
     eleventyConfig.addShortcode('version', () => now)

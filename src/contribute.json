@@ -1,0 +1,9 @@
+{
+    "name": "coryd.dev",
+    "description": "Cory Dransfeldt's personal blog.",
+    "repository": {
+        "url": "https://github.com/mozilla/contribute.json",
+        "license": "MPL2"
+    },
+    "keywords": ["11ty", "Eleventy", "Javascript", "Liquid.js", "Markdown"]
+}
