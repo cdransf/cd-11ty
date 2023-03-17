@@ -49,6 +49,10 @@
             "destination": "/posts/2023/automating-and-overengineering-my-now-page/"
         },
         {
+            "source": "/2023/01/workflows-handling-inbound-email-on-fastmail-with-regular-expressions",
+            "destination": "/posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/"
+        },
+        {
             "source": "/rss.xml",
             "destination": "/feed.xml"
         }
