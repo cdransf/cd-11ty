@@ -24,6 +24,7 @@ xmlns:atom="http://www.w3.org/2005/Atom">
         <link href="/assets/img/favicon/apple-touch-icon.png" rel="apple-touch-icon" />
         <script src="https://breezy-restored.coryd.dev/script.js" data-site="RHNGSUXO">''</script>
         <script src="/assets/scripts/isDarkMode.js">''</script>
+        <link rel="me" href="https://social.lol/@cory" />
     </head>
     <body class="dark:text-white dark:bg-gray-900 font-sans text-gray-800">
         <div class="min-h-screen flex flex-col">
