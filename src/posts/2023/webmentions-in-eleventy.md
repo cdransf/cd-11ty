@@ -57,7 +57,8 @@ jobs:
 
 When the build runs, it renders any mentions of a given post via a [liquid.js](https://liquidjs.com/) template that looks like this:
 
-```plaintext
+{% raw %}
+```liquid
 {% if webmentions %}
     <div class="border-t border-gray-200 mt-12 pt-14 dark:border-gray-700">
     {%
@@ -129,6 +130,7 @@ When the build runs, it renders any mentions of a given post via a [liquid.js](h
     </div>
 {% endif %}
 ```
+{% endraw %}
 
 This conditionally displays different mention types based on the available data after being passed through the `webmentionsByUrl` filter which I shamelessly lifted from [Robb](https://github.com/rknightuk/rknight.me/blob/8e2a5c5f886cae6c04add7893b8bf8a2d6295ddf/config/filters.js#L48-L84).
 
