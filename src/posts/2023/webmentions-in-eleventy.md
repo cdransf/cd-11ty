@@ -7,7 +7,7 @@ tags: ['webmentions', '11ty', 'eleventy']
 
 In the interest of continuing to repeat myself I'm writing, once again, about adding webmentions to a blog.<!-- excerpt -->[^1] To quote myself[^2]:
 
-> To kick this off you'll need to log in and establish an account with [webmention.io](https://webmention.io) and [Bridgy](https://brid.gy). The former provides you with a pair of meta tags that collect webmentions, the latter connects your site to social media[^1]
+> To kick this off you'll need to log in and establish an account with [webmention.io](https://webmention.io) and [Bridgy](https://brid.gy). The former provides you with a pair of meta tags that collect webmentions, the latter connects your site to social media
 
 > Once you've added the appropriate tags from webmention.io, connected your desired accounts to Bridgy and received some mentions on these sites, you should be able to access said mentions via their API.
 
