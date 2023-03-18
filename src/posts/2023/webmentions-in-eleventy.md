@@ -57,7 +57,7 @@ jobs:
 
 When the build runs, it renders any mentions of a given post via a [liquid.js](https://liquidjs.com/) template that looks like this:
 
-```liquid
+```plaintext
 {% if webmentions %}
     <div class="border-t border-gray-200 mt-12 pt-14 dark:border-gray-700">
     {%
