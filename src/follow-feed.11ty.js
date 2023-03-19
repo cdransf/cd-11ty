@@ -8,7 +8,6 @@ module.exports = class {
     async render() {
         const { ActivityFeed } = await import('@11ty/eleventy-activity-feed')
         const feed = new ActivityFeed()
-        feed.setCacheDuration('1h')
 
         feed.addSource('atom', 'Blog', 'https://coryd.dev/feed.xml')
         feed.addSource('rss', 'Letterboxd', 'https://letterboxd.com/cdme/rss')
