@@ -7,7 +7,7 @@ tags: ['webmentions', '11ty', 'eleventy']
 
 In the interest of continuing to repeat myself I'm writing, once again, about adding webmentions to a blog.<!-- excerpt -->[^1] To quote myself[^2]:
 
-> To kick this off you'll need to log in and establish an account with [webmention.io](https://webmention.io) and [Bridgy](https://brid.gy). The former provides you with a pair of meta tags that collect webmentions, the latter connects your site to social media[^1]
+> To kick this off you'll need to log in and establish an account with [webmention.io](https://webmention.io) and [Bridgy](https://brid.gy). The former provides you with a pair of meta tags that collect webmentions, the latter connects your site to social media
 
 > Once you've added the appropriate tags from webmention.io, connected your desired accounts to Bridgy and received some mentions on these sites, you should be able to access said mentions via their API.
 
@@ -57,6 +57,7 @@ jobs:
 
 When the build runs, it renders any mentions of a given post via a [liquid.js](https://liquidjs.com/) template that looks like this:
 
+{% raw %}
 ```liquid
 {% if webmentions %}
     <div class="border-t border-gray-200 mt-12 pt-14 dark:border-gray-700">
@@ -129,6 +130,7 @@ When the build runs, it renders any mentions of a given post via a [liquid.js](h
     </div>
 {% endif %}
 ```
+{% endraw %}
 
 This conditionally displays different mention types based on the available data after being passed through the `webmentionsByUrl` filter which I shamelessly lifted from [Robb](https://github.com/rknightuk/rknight.me/blob/8e2a5c5f886cae6c04add7893b8bf8a2d6295ddf/config/filters.js#L48-L84).
 
