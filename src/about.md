@@ -3,11 +3,10 @@ layout: default
 title: About
 ---
 
-<h2
-    class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mb-2"
->
-    {{ title }}
-</h2>
+<div class="flex items-center justify-center w-full">
+    <img class="max-w-xs w-full h-auto mb-1" src="/assets/img/avatar.webp" alt={{ site.name }} loading="lazy" />
+</div>
+<h1 class="text-xxl font-black -leading-tight tracking-normal dark:text-gray-200 md:text-3xl text-center">Hi, I'm Cory</h1>
 
 I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, <a href="https://last.fm/user/cdme_" target="_blank" rel="noopener noreferrer">music</a>, writing, <a href="https://oku.club/user/cory" target="_blank" rel="noopener noreferrer">reading</a> and <a href="https://trakt.tv/users/cdransf" target="_blank" rel="noopener noreferrer">tv</a> and <a href="https://letterboxd.com/cdme" target="_blank" rel="noopener noreferrer">movies</a>.
 
