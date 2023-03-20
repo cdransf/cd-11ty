@@ -10,7 +10,7 @@ This is the code for my personal website and portfolio. Built using 11ty and dep
 
 **Built with:**
 
--   [Sublime Text](https://sublimetext.com)
+-   [VS Code](https://code.visualstudio.com)
 -   [iTerm](https://iterm2.com)
 -   [11ty](https://www.11ty.dev)
 -   [Vercel](https://vercel.com)
