@@ -4,7 +4,7 @@
     {% if mentions['repost-of'].size > 0 %}
     <h2 class="text-lg md:text-xl font-black leading-tight dark:text-gray-200">Reposts</h2>
     <div class="flex flex-row items-center mt-4 mb-6">
-        <ul class="ml-3 flex flex-row">
+        <ul class="ml-3 flex flex-row flex-wrap">
         {% for mention in mentions['repost-of'] %}
             <li class="-ml-3 inline">
                 <a href={{mention.url}}>
@@ -23,7 +23,7 @@
     {% if mentions['like-of'].size > 0 %}
     <h2 class="text-lg md:text-xl font-black leading-tight dark:text-gray-200">Likes</h2>
     <div class="flex flex-row items-center mt-4 mb-6">
-        <ul class="ml-3 flex flex-row">
+        <ul class="ml-3 flex flex-row flex-wrap">
         {% for mention in mentions['like-of'] %}
             <li class="-ml-3 inline">
                 <a href={{mention.url}}>
