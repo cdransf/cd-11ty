@@ -3,7 +3,10 @@ _site
 node_modules
 .env.local
 .cache
+.vercel
+
+# logs
+*-error.log
 
 # system files
 .DS_Store
-.vercel
