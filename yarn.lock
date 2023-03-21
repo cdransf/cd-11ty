@@ -44,6 +44,16 @@
     node-fetch "^2.6.7"
     p-queue "^6.6.2"
 
+"@11ty/eleventy-fetch@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-fetch/-/eleventy-fetch-4.0.0.tgz#500d69b9ec336d8e4fd1e618cabb9a262c7a333f"
+  integrity sha512-wGAd0r+8DUWr22fK5r07dOKuNY6ltA7hX+sJzngGZL1yJmuUVdM/xPQZ+iq0BFgf/ZeRdpVEzf2D0cpVZUuiTg==
+  dependencies:
+    debug "^4.3.4"
+    flat-cache "^3.0.4"
+    node-fetch "^2.6.7"
+    p-queue "^6.6.2"
+
 "@11ty/eleventy-img@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@11ty/eleventy-img/-/eleventy-img-3.0.0.tgz#226fad067d10fd499c54e643572841f55623ddb4"
