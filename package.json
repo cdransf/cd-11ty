@@ -20,7 +20,7 @@
         "@fontsource/inter": "^4.5.15",
         "eleventy-plugin-heroicons": "^1.1.0",
         "eslint": "^8.36.0",
-        "eslint-config-prettier": "^8.7.0",
+        "eslint-config-prettier": "^8.8.0",
         "eslint-plugin-prettier": "^4.2.1",
         "postcss": "^8.4.5",
         "prettier": "^2.8.4",
