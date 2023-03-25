@@ -25,20 +25,24 @@
         "postcss": "^8.4.5",
         "prettier": "^2.8.7",
         "prettier-plugin-tailwindcss": "^0.2.5",
-        "sanitize-html": "^2.10.0",
-        "husky": "^8.0.0"
+        "sanitize-html": "^2.10.0"
     },
     "dependencies": {
         "@11ty/eleventy-activity-feed": "^1.0.9",
         "@11ty/eleventy-fetch": "^4.0.0",
         "@11ty/eleventy-img": "^3.0.0",
+        "@commitlint/cli": "^17.5.0",
+        "@commitlint/config-conventional": "^17.4.4",
         "@extractus/feed-extractor": "^6.2.1",
         "@funboxteam/markdown-lint": "^2.0.1",
         "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
         "@tailwindcss/typography": "^0.5.1",
+        "@typescript-eslint/eslint-plugin": "^5.56.0",
+        "@typescript-eslint/parser": "^5.56.0",
         "autoprefixer": "^10.4.2",
         "dotenv-flow": "^3.2.0",
         "eleventy-plugin-unfurl": "^1.0.0",
+        "eslint-plugin-jsx-a11y": "^6.7.1",
         "husky": "^8.0.3",
         "lint-staged": "^13.2.0",
         "liquidjs": "^10.7.0",
@@ -49,8 +53,8 @@
         "tailwind-dracula": "^1.1.0",
         "tailwindcss": "^3.0.18"
     },
-    "lint-staged":{
-        "**/*.{js,jsx,ts,tsx}":[
+    "lint-staged": {
+        "**/*.{js,jsx,ts,tsx}": [
             "npx prettier --write",
             "npx eslint --fix"
         ],
