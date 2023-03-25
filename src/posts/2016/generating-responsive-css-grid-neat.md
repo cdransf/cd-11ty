@@ -9,61 +9,61 @@ I use a responsive grid system for this site (and a number of other projects) th
 
 ```scss
 .grid {
-    &-main-container {
-        @include outer-container;
+  &-main-container {
+    @include outer-container;
+  }
+
+  &-row {
+    @include row;
+    @include pad(0 10%);
+
+    @media only screen and (max-width: 640px) {
+      @include pad(0 10%);
     }
 
-    &-row {
-        @include row;
-        @include pad(0 10%);
-
-        @media only screen and (max-width: 640px) {
-            @include pad(0 10%);
-        }
-
-        &.collapse {
-            @media only screen and (max-width: 640px) {
-                @include pad(0);
-            }
-        }
-
-        .grid-row {
-            // collapse nested grid rows
-            @include pad(0);
-        }
+    &.collapse {
+      @media only screen and (max-width: 640px) {
+        @include pad(0);
+      }
     }
 
-    $grid-columns: 12;
-
-    @for $i from 0 through $grid-columns {
-        &-columns-#{$i} {
-            @include span-columns($i);
-        }
-
-        &-columns-small-#{$i} {
-            @include span-columns($i);
-
-            @media only screen and (max-width: 640px) {
-                @include span-columns(12);
-            }
-        }
+    .grid-row {
+      // collapse nested grid rows
+      @include pad(0);
     }
-    @for $i from 0 through $grid-columns {
-        &-shift-left-#{$i} {
-            @include shift(-$i);
-        }
+  }
 
-        &-shift-right-#{$i} {
-            @include shift($i);
-        }
+  $grid-columns: 12;
 
-        @media only screen and (max-width: 640px) {
-            &-shift-left-#{$i},
-            &-shift-right-#{$i} {
-                @include shift(0);
-            }
-        }
+  @for $i from 0 through $grid-columns {
+    &-columns-#{$i} {
+      @include span-columns($i);
     }
+
+    &-columns-small-#{$i} {
+      @include span-columns($i);
+
+      @media only screen and (max-width: 640px) {
+        @include span-columns(12);
+      }
+    }
+  }
+  @for $i from 0 through $grid-columns {
+    &-shift-left-#{$i} {
+      @include shift(-$i);
+    }
+
+    &-shift-right-#{$i} {
+      @include shift($i);
+    }
+
+    @media only screen and (max-width: 640px) {
+      &-shift-left-#{$i},
+      &-shift-right-#{$i} {
+        @include shift(0);
+      }
+    }
+  }
 }
 ```
 

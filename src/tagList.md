@@ -1,16 +1,17 @@
 ---
 layout: default
 pagination:
-    data: collections
-    size: 1
-    alias: tag
+  data: collections
+  size: 1
+  alias: tag
 permalink: /tags/{{ tag }}/
 eleventyComputed:
-    title: '{{ tag }}'
+  title: '{{ tag }}'
 templateEngineOverride: liquid,md
 ---
 
 {% for post in collections[tag] %}
+
 <div class="mb-8 border-b border-gray-200 pb-4 dark:border-gray-700">
   <a class="no-underline" href="{{ post.url }}">
     <h2

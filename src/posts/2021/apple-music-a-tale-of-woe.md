@@ -13,15 +13,15 @@ A few weeks ago I read through a [Brooklyn Vegan](https://brooklynvegan.com) on 
 
 My next steps were pretty standard, escalating, troubleshooting:
 
--   [x] Log out of Apple Music on all devices
--   [x] Reboot
--   [x] Log in
+- [x] Log out of Apple Music on all devices
+- [x] Reboot
+- [x] Log in
 
 Welcome back _Glow On_!
 
--   [x] Reset my Apple Music library[^3]
--   [x] Reconstruct my collection[^4]
--   [x] Notice that I _still_ can't update metadata and Apple fingerprints your tracks, tries to overwrite the metadata and creates duplicate tracks if there's the _slightest_ mismatch. Notice that these duplicates can't be deleted.
+- [x] Reset my Apple Music library[^3]
+- [x] Reconstruct my collection[^4]
+- [x] Notice that I _still_ can't update metadata and Apple fingerprints your tracks, tries to overwrite the metadata and creates duplicate tracks if there's the _slightest_ mismatch. Notice that these duplicates can't be deleted.
 
 So, here I am: I've had swapped a phone after the service launched and cooked the battery. I gave it a second try, it worked for a while exactly how I'd liked — as a cloud locker with a supplemental catalog of music I was less invested in — and then it hit a wall.
 

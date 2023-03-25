@@ -62,13 +62,13 @@ For example, to clear old newsletters, I use the following:
 
 ```javascript
 function batchDeleteEmail() {
-    var SEARCH_QUERY = 'label:newsletters -label:inbox'
-    var batchSize = 100
-    var searchSize = 400
-    var threads = GmailApp.search(SEARCH_QUERY, 0, searchSize)
-    for (j = 0; j < threads.length; j += batchSize) {
-        GmailApp.moveThreadsToTrash(threads.slice(j, j + batchSize))
-    }
+  var SEARCH_QUERY = 'label:newsletters -label:inbox'
+  var batchSize = 100
+  var searchSize = 400
+  var threads = GmailApp.search(SEARCH_QUERY, 0, searchSize)
+  for (j = 0; j < threads.length; j += batchSize) {
+    GmailApp.moveThreadsToTrash(threads.slice(j, j + batchSize))
+  }
 }
 ```
 
@@ -92,13 +92,13 @@ Unrelated to cleanup, I also mark any unread emails in my archive as read, with 
 
 ```javascript
 function markArchivedAsRead() {
-    var SEARCH_QUERY = 'label:unread -label:inbox'
-    var batchSize = 100
-    var searchSize = 400
-    var threads = GmailApp.search(SEARCH_QUERY, 0, searchSize)
-    for (j = 0; j < threads.length; j += batchSize) {
-        GmailApp.markThreadsRead(threads.slice(j, j + batchSize))
-    }
+  var SEARCH_QUERY = 'label:unread -label:inbox'
+  var batchSize = 100
+  var searchSize = 400
+  var threads = GmailApp.search(SEARCH_QUERY, 0, searchSize)
+  for (j = 0; j < threads.length; j += batchSize) {
+    GmailApp.markThreadsRead(threads.slice(j, j + batchSize))
+  }
 }
 ```
 

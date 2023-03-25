@@ -21,19 +21,19 @@ I'm already exposing my most recently listened tracks and actively read books on
 
 ```typescript
 export default async function handler(req: any, res: any) {
-    const KEY = process.env.API_KEY_LASTFM
-    const METHODS: { [key: string]: string } = {
-        default: 'user.getrecenttracks',
-        albums: 'user.gettopalbums',
-        artists: 'user.gettopartists',
-    }
-    const METHOD = METHODS[req.query.type] || METHODS['default']
-    const data = await fetch(
-        `http://ws.audioscrobbler.com/2.0/?method=${METHOD}&user=cdme_&api_key=${KEY}&limit=${
-            req.query.limit || 20
-        }&format=${req.query.format || 'json'}&period=${req.query.period || 'overall'}`
-    ).then((response) => response.json())
-    res.json(data)
+  const KEY = process.env.API_KEY_LASTFM
+  const METHODS: { [key: string]: string } = {
+    default: 'user.getrecenttracks',
+    albums: 'user.gettopalbums',
+    artists: 'user.gettopartists',
+  }
+  const METHOD = METHODS[req.query.type] || METHODS['default']
+  const data = await fetch(
+    `http://ws.audioscrobbler.com/2.0/?method=${METHOD}&user=cdme_&api_key=${KEY}&limit=${
+      req.query.limit || 20
+    }&format=${req.query.format || 'json'}&period=${req.query.period || 'overall'}`
+  ).then((response) => response.json())
+  res.json(data)
 }
 ```
 
@@ -45,24 +45,24 @@ Last.fm's API returns album images, but no longer returns artist images. To solv
 import siteMetadata from '@/data/siteMetadata'
 
 export default async function handler(req: any, res: any) {
-    const env = process.env.NODE_ENV
-    let host = siteMetadata.siteUrl
-    if (env === 'development') host = 'http://localhost:3000'
-    const ARTIST = req.query.artist
-    const ALBUM = req.query.album
-    const MEDIA = ARTIST ? 'artists' : 'albums'
-    const MEDIA_VAL = ARTIST ? ARTIST : ALBUM
+  const env = process.env.NODE_ENV
+  let host = siteMetadata.siteUrl
+  if (env === 'development') host = 'http://localhost:3000'
+  const ARTIST = req.query.artist
+  const ALBUM = req.query.album
+  const MEDIA = ARTIST ? 'artists' : 'albums'
+  const MEDIA_VAL = ARTIST ? ARTIST : ALBUM
 
-    const data = await fetch(`${host}/media/${MEDIA}/${MEDIA_VAL}.jpg`)
-        .then((response) => {
-            if (response.status === 200) return `${host}/media/${MEDIA}/${MEDIA_VAL}.jpg`
-            fetch(
-                `${host}/api/omg/paste-edit?paste=404-images&editType=append&content=${MEDIA_VAL}`
-            ).then((response) => response.json())
-            return `${host}/media/404.jpg`
-        })
-        .then((image) => image)
-    res.redirect(data)
+  const data = await fetch(`${host}/media/${MEDIA}/${MEDIA_VAL}.jpg`)
+    .then((response) => {
+      if (response.status === 200) return `${host}/media/${MEDIA}/${MEDIA_VAL}.jpg`
+      fetch(
+        `${host}/api/omg/paste-edit?paste=404-images&editType=append&content=${MEDIA_VAL}`
+      ).then((response) => response.json())
+      return `${host}/media/404.jpg`
+    })
+    .then((image) => image)
+  res.redirect(data)
 }
 ```
 
@@ -73,12 +73,12 @@ import { extract } from '@extractus/feed-extractor'
 import siteMetadata from '@/data/siteMetadata'
 
 export default async function handler(req: any, res: any) {
-    const env = process.env.NODE_ENV
-    let host = siteMetadata.siteUrl
-    if (env === 'development') host = 'http://localhost:3000'
-    const url = `${host}/feeds/books`
-    const result = await extract(url)
-    res.json(result)
+  const env = process.env.NODE_ENV
+  let host = siteMetadata.siteUrl
+  if (env === 'development') host = 'http://localhost:3000'
+  const url = `${host}/feeds/books`
+  const result = await extract(url)
+  res.json(result)
 }
 ```
 
@@ -89,20 +89,20 @@ import { extract } from '@extractus/feed-extractor'
 import siteMetadata from '@/data/siteMetadata'
 
 export default async function handler(req: any, res: any) {
-    const KEY = process.env.API_KEY_TRAKT
-    const env = process.env.NODE_ENV
-    let host = siteMetadata.siteUrl
-    if (env === 'development') host = 'http://localhost:3000'
-    const url = `${host}/feeds/tv?slurm=${KEY}`
-    const result = await extract(url, {
-        getExtraEntryFields: (feedEntry) => {
-            return {
-                image: feedEntry['media:content']['@_url'],
-                thumbnail: feedEntry['media:thumbnail']['@_url'],
-            }
-        },
-    })
-    res.json(result)
+  const KEY = process.env.API_KEY_TRAKT
+  const env = process.env.NODE_ENV
+  let host = siteMetadata.siteUrl
+  if (env === 'development') host = 'http://localhost:3000'
+  const url = `${host}/feeds/tv?slurm=${KEY}`
+  const result = await extract(url, {
+    getExtraEntryFields: (feedEntry) => {
+      return {
+        image: feedEntry['media:content']['@_url'],
+        thumbnail: feedEntry['media:thumbnail']['@_url'],
+      }
+    },
+  })
+  res.json(result)
 }
 ```
 
@@ -113,12 +113,12 @@ import { extract } from '@extractus/feed-extractor'
 import siteMetadata from '@/data/siteMetadata'
 
 export default async function handler(req: any, res: any) {
-    const env = process.env.NODE_ENV
-    let host = siteMetadata.siteUrl
-    if (env === 'development') host = 'http://localhost:3000'
-    const url = `${host}/feeds/movies`
-    const result = await extract(url)
-    res.json(result)
+  const env = process.env.NODE_ENV
+  let host = siteMetadata.siteUrl
+  if (env === 'development') host = 'http://localhost:3000'
+  const url = `${host}/feeds/movies`
+  const result = await extract(url)
+  res.json(result)
 }
 ```
 
@@ -133,199 +133,178 @@ import { nowResponseToMarkdown } from '@/utils/transforms'
 import { ALBUM_DENYLIST } from '@/utils/constants'
 
 export default async function handler(req: any, res: any) {
-    const env = process.env.NODE_ENV
-    const { APP_KEY_OMG, API_KEY_OMG } = process.env
-    const ACTION_KEY = req.headers.authorization?.split(' ')[1]
+  const env = process.env.NODE_ENV
+  const { APP_KEY_OMG, API_KEY_OMG } = process.env
+  const ACTION_KEY = req.headers.authorization?.split(' ')[1]
 
-    let host = siteMetadata.siteUrl
-    if (env === 'development') host = 'http://localhost:3000'
+  let host = siteMetadata.siteUrl
+  if (env === 'development') host = 'http://localhost:3000'
 
-    try {
-        if (ACTION_KEY === APP_KEY_OMG) {
-            const now = await fetch('https://api.omg.lol/address/cory/pastebin/now.yaml')
-                .then((res) => res.json())
-                .then((json) => {
-                    const now = jsYaml.load(json.response.paste.content)
-                    Object.keys(jsYaml.load(json.response.paste.content)).forEach((key) => {
-                        now[key] = listsToMarkdown(now[key])
-                    })
+  try {
+    if (ACTION_KEY === APP_KEY_OMG) {
+      const now = await fetch('https://api.omg.lol/address/cory/pastebin/now.yaml')
+        .then((res) => res.json())
+        .then((json) => {
+          const now = jsYaml.load(json.response.paste.content)
+          Object.keys(jsYaml.load(json.response.paste.content)).forEach((key) => {
+            now[key] = listsToMarkdown(now[key])
+          })
 
-                    return { now }
-                })
+          return { now }
+        })
 
-            const books = await fetch(`${host}/api/books`)
-                .then((res) => res.json())
-                .then((json) => {
-                    const data = json.entries
-                        .slice(0, 5)
-                        .map((book: { title: string; link: string }) => {
-                            return {
-                                title: book.title,
-                                link: book.link,
-                            }
-                        })
-                    return {
-                        json: data,
-                        md: data
-                            .map((d: any) => {
-                                return `- [${d.title}](${d.link}) {${getRandomIcon('books')}}`
-                            })
-                            .join('\n'),
-                    }
-                })
+      const books = await fetch(`${host}/api/books`)
+        .then((res) => res.json())
+        .then((json) => {
+          const data = json.entries.slice(0, 5).map((book: { title: string; link: string }) => {
+            return {
+              title: book.title,
+              link: book.link,
+            }
+          })
+          return {
+            json: data,
+            md: data
+              .map((d: any) => {
+                return `- [${d.title}](${d.link}) {${getRandomIcon('books')}}`
+              })
+              .join('\n'),
+          }
+        })
 
-            const movies = await fetch(`${host}/api/movies`)
-                .then((res) => res.json())
-                .then((json) => {
-                    const data = json.entries
-                        .slice(0, 5)
-                        .map((movie: { title: string; link: string; description: string }) => {
-                            return {
-                                title: movie.title,
-                                link: movie.link,
-                                desc: movie.description,
-                            }
-                        })
-                    return {
-                        json: data,
-                        md: data
-                            .map((d: any) => {
-                                return `- [${d.title}](${d.link}): ${d.desc} {${getRandomIcon(
-                                    'movies'
-                                )}}`
-                            })
-                            .join('\n'),
-                    }
-                })
-
-            const tv = await fetch(`${host}/api/tv`)
-                .then((res) => res.json())
-                .then((json) => {
-                    const data = json.entries
-                        .splice(0, 5)
-                        .map(
-                            (episode: {
-                                title: string
-                                link: string
-                                image: string
-                                thumbnail: string
-                            }) => {
-                                return {
-                                    title: episode.title,
-                                    link: episode.link,
-                                    image: episode.image,
-                                    thumbnail: episode.thumbnail,
-                                }
-                            }
-                        )
-                    return {
-                        json: data,
-                        html: data
-                            .map((d: any) => {
-                                return `<div class="container"><a href=${d.link} title='${d.title} by ${d.artist}'><div class='cover'></div><div class='details'><div class='text-main'>${d.title}</div></div><img src='${d.thumbnail}' alt='${d.title}' /></div></a>`
-                            })
-                            .join('\n'),
-                        md: data
-                            .map((d: any) => {
-                                return `- [${d.title}](${d.link}) {${getRandomIcon('tv')}}`
-                            })
-                            .join('\n'),
-                    }
-                })
-
-            const musicArtists = await fetch(
-                `https://utils.coryd.dev/api/music?type=artists&period=7day&limit=8`
-            )
-                .then((res) => res.json())
-                .then((json) => {
-                    const data = json.topartists.artist.map((a: any) => {
-                        return {
-                            artist: a.name,
-                            link: `https://rateyourmusic.com/search?searchterm=${encodeURIComponent(
-                                a.name
-                            )}`,
-                            image: `${host}/api/media?artist=${a.name
-                                .replace(/\s+/g, '-')
-                                .toLowerCase()}`,
-                        }
-                    })
-                    return {
-                        json: data,
-                        html: data
-                            .map((d: any) => {
-                                return `<div class="container"><a href=${d.link} title='${d.title} by ${d.artist}'><div class='cover'></div><div class='details'><div class='text-main'>${d.artist}</div></div><img src='${d.image}' alt='${d.artist}' /></div></a>`
-                            })
-                            .join('\n'),
-                        md: data
-                            .map((d: any) => {
-                                return `- [${d.artist}](${d.link}) {${getRandomIcon('music')}}`
-                            })
-                            .join('\n'),
-                    }
-                })
-
-            const musicAlbums = await fetch(
-                `https://utils.coryd.dev/api/music?type=albums&period=7day&limit=8`
-            )
-                .then((res) => res.json())
-                .then((json) => {
-                    const data = json.topalbums.album.map((a: any) => ({
-                        title: a.name,
-                        artist: a.artist.name,
-                        link: `https://rateyourmusic.com/search?searchterm=${encodeURIComponent(
-                            a.name
-                        )}`,
-                        image: !ALBUM_DENYLIST.includes(a.name.replace(/\s+/g, '-').toLowerCase())
-                            ? a.image[a.image.length - 1]['#text']
-                            : `${host}/api/media?album=${a.name
-                                  .replace(/\s+/g, '-')
-                                  .toLowerCase()}`,
-                    }))
-                    return {
-                        json: data,
-                        html: data
-                            .map((d: any) => {
-                                return `<div class="container"><a href=${d.link} title='${d.title} by ${d.artist}'><div class='cover'></div><div class='details'><div class='text-main'>${d.title}</div><div class='text-secondary'>${d.artist}</div></div><img src='${d.image}' alt='${d.title} by ${d.artist}' /></div></a>`
-                            })
-                            .join('\n'),
-                        md: data
-                            .map((d: any) => {
-                                return `- [${d.title}](${d.link}) by ${d.artist} {${getRandomIcon(
-                                    'music'
-                                )}}`
-                            })
-                            .join('\n'),
-                    }
-                })
-
-            fetch('https://api.omg.lol/address/cory/now', {
-                method: 'post',
-                headers: {
-                    Authorization: `Bearer ${API_KEY_OMG}`,
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    content: nowResponseToMarkdown({
-                        now,
-                        books,
-                        movies,
-                        tv,
-                        music: {
-                            artists: musicArtists,
-                            albums: musicAlbums,
-                        },
-                    }),
-                    listed: 1,
-                }),
+      const movies = await fetch(`${host}/api/movies`)
+        .then((res) => res.json())
+        .then((json) => {
+          const data = json.entries
+            .slice(0, 5)
+            .map((movie: { title: string; link: string; description: string }) => {
+              return {
+                title: movie.title,
+                link: movie.link,
+                desc: movie.description,
+              }
             })
+          return {
+            json: data,
+            md: data
+              .map((d: any) => {
+                return `- [${d.title}](${d.link}): ${d.desc} {${getRandomIcon('movies')}}`
+              })
+              .join('\n'),
+          }
+        })
 
-            res.status(200).json({ success: true })
-        } else {
-            res.status(401).json({ success: false })
-        }
-    } catch (err) {
-        res.status(500).json({ success: false })
+      const tv = await fetch(`${host}/api/tv`)
+        .then((res) => res.json())
+        .then((json) => {
+          const data = json.entries
+            .splice(0, 5)
+            .map((episode: { title: string; link: string; image: string; thumbnail: string }) => {
+              return {
+                title: episode.title,
+                link: episode.link,
+                image: episode.image,
+                thumbnail: episode.thumbnail,
+              }
+            })
+          return {
+            json: data,
+            html: data
+              .map((d: any) => {
+                return `<div class="container"><a href=${d.link} title='${d.title} by ${d.artist}'><div class='cover'></div><div class='details'><div class='text-main'>${d.title}</div></div><img src='${d.thumbnail}' alt='${d.title}' /></div></a>`
+              })
+              .join('\n'),
+            md: data
+              .map((d: any) => {
+                return `- [${d.title}](${d.link}) {${getRandomIcon('tv')}}`
+              })
+              .join('\n'),
+          }
+        })
+
+      const musicArtists = await fetch(
+        `https://utils.coryd.dev/api/music?type=artists&period=7day&limit=8`
+      )
+        .then((res) => res.json())
+        .then((json) => {
+          const data = json.topartists.artist.map((a: any) => {
+            return {
+              artist: a.name,
+              link: `https://rateyourmusic.com/search?searchterm=${encodeURIComponent(a.name)}`,
+              image: `${host}/api/media?artist=${a.name.replace(/\s+/g, '-').toLowerCase()}`,
+            }
+          })
+          return {
+            json: data,
+            html: data
+              .map((d: any) => {
+                return `<div class="container"><a href=${d.link} title='${d.title} by ${d.artist}'><div class='cover'></div><div class='details'><div class='text-main'>${d.artist}</div></div><img src='${d.image}' alt='${d.artist}' /></div></a>`
+              })
+              .join('\n'),
+            md: data
+              .map((d: any) => {
+                return `- [${d.artist}](${d.link}) {${getRandomIcon('music')}}`
+              })
+              .join('\n'),
+          }
+        })
+
+      const musicAlbums = await fetch(
+        `https://utils.coryd.dev/api/music?type=albums&period=7day&limit=8`
+      )
+        .then((res) => res.json())
+        .then((json) => {
+          const data = json.topalbums.album.map((a: any) => ({
+            title: a.name,
+            artist: a.artist.name,
+            link: `https://rateyourmusic.com/search?searchterm=${encodeURIComponent(a.name)}`,
+            image: !ALBUM_DENYLIST.includes(a.name.replace(/\s+/g, '-').toLowerCase())
+              ? a.image[a.image.length - 1]['#text']
+              : `${host}/api/media?album=${a.name.replace(/\s+/g, '-').toLowerCase()}`,
+          }))
+          return {
+            json: data,
+            html: data
+              .map((d: any) => {
+                return `<div class="container"><a href=${d.link} title='${d.title} by ${d.artist}'><div class='cover'></div><div class='details'><div class='text-main'>${d.title}</div><div class='text-secondary'>${d.artist}</div></div><img src='${d.image}' alt='${d.title} by ${d.artist}' /></div></a>`
+              })
+              .join('\n'),
+            md: data
+              .map((d: any) => {
+                return `- [${d.title}](${d.link}) by ${d.artist} {${getRandomIcon('music')}}`
+              })
+              .join('\n'),
+          }
+        })
+
+      fetch('https://api.omg.lol/address/cory/now', {
+        method: 'post',
+        headers: {
+          Authorization: `Bearer ${API_KEY_OMG}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          content: nowResponseToMarkdown({
+            now,
+            books,
+            movies,
+            tv,
+            music: {
+              artists: musicArtists,
+              albums: musicAlbums,
+            },
+          }),
+          listed: 1,
+        }),
+      })
+
+      res.status(200).json({ success: true })
+    } else {
+      res.status(401).json({ success: false })
     }
+  } catch (err) {
+    res.status(500).json({ success: false })
+  }
 }
 ```
 
@@ -335,14 +314,14 @@ For items displayed from Markdown I'm attaching a random FontAwesome icon (e.g. 
 
 ```typescript
 export const getRandomIcon = (type: string) => {
-    const icons = {
-        books: ['book', 'book-bookmark', 'book-open', 'book-open-reader', 'bookmark'],
-        music: ['music', 'headphones', 'record-vinyl', 'radio', 'guitar', 'compact-disc'],
-        movies: ['film', 'display', 'video', 'ticket'],
-        tv: ['tv', 'display', 'video'],
-    }
+  const icons = {
+    books: ['book', 'book-bookmark', 'book-open', 'book-open-reader', 'bookmark'],
+    music: ['music', 'headphones', 'record-vinyl', 'radio', 'guitar', 'compact-disc'],
+    movies: ['film', 'display', 'video', 'ticket'],
+    tv: ['tv', 'display', 'video'],
+  }
 
-    return icons[type][Math.floor(Math.random() * (icons[type].length - 1 - 0))]
+  return icons[type][Math.floor(Math.random() * (icons[type].length - 1 - 0))]
 }
 ```
 
@@ -351,16 +330,16 @@ As the final step to wrap this up, calls to `/api/now` are made every 8 hours us
 ```yaml
 name: scheduled-cron-job
 on:
-    schedule:
-        - cron: '0 */8 * * *'
+  schedule:
+    - cron: '0 */8 * * *'
 jobs:
-    cron:
-        runs-on: ubuntu-latest
-        steps:
-            - name: scheduled-cron-job
-              run: |
-                  curl -X POST 'https://utils.coryd.dev/api/now' \
-                  -H 'Authorization: Bearer ${{ secrets.ACTION_KEY }}'
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: scheduled-cron-job
+        run: |
+          curl -X POST 'https://utils.coryd.dev/api/now' \
+          -H 'Authorization: Bearer ${{ secrets.ACTION_KEY }}'
 ```
 
 This endpoint can also be manually called using another workflow:
@@ -369,21 +348,21 @@ This endpoint can also be manually called using another workflow:
 name: manual-job
 on: [workflow_dispatch]
 jobs:
-    cron:
-        runs-on: ubuntu-latest
-        steps:
-            - name: manual-job
-              run: |
-                  curl -X POST 'https://utils.coryd.dev/api/now' \
-                  -H 'Authorization: Bearer ${{ secrets.ACTION_KEY }}'
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: manual-job
+        run: |
+          curl -X POST 'https://utils.coryd.dev/api/now' \
+          -H 'Authorization: Bearer ${{ secrets.ACTION_KEY }}'
 ```
 
 So far this works seamlessly — if I want to update or add static content I can do so via my yaml paste at paste.lol and the change will roll out in due time.
 
 Questions? Comments? Feel free to get in touch:
 
--   [Email](mailto:hi@coryd.dev)
--   [Mastodon](https://social.lol/@cory)
+- [Email](mailto:hi@coryd.dev)
+- [Mastodon](https://social.lol/@cory)
 
 ---
 

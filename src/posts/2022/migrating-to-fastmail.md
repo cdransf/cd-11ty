@@ -38,8 +38,8 @@ These will be specific to your domain and can be found and set as follows:
 
 **Bonus points**
 
--   Configure DMARC — Simon Andrews has [an excellent writeup](https://simonandrews.ca/articles/how-to-set-up-spf-dkim-dmarc#dmarc)on how to do this.
--   Configure MTA-STS — there's a writeup on that [over at dmarcian](https://dmarcian.com/mta-sts/). It'll entail configuring an additional 3 DNS records and exposing an MTA-STS policy file[^6].
+- Configure DMARC — Simon Andrews has [an excellent writeup](https://simonandrews.ca/articles/how-to-set-up-spf-dkim-dmarc#dmarc)on how to do this.
+- Configure MTA-STS — there's a writeup on that [over at dmarcian](https://dmarcian.com/mta-sts/). It'll entail configuring an additional 3 DNS records and exposing an MTA-STS policy file[^6].
 
 ### Importing your email
 
@@ -63,17 +63,17 @@ Hop on over to Fastmail's [folder documentation](https://www.fastmail.help/hc/en
 
 I would highly recommend creating rulesets to help filter messages that aren't critical out of your inbox. Fastmail's documentation on their mail rules and filters [can be found here](https://www.fastmail.help/hc/en-us/articles/1500000278122-Organizing-your-inbox#rules). I filter messages out of my inbox based on a few broad categories, namely:
 
--   **Updates:** anything sent programmatically and pertinent but not critical (e.g. service or utility notifications and so forth).
--   **Financial:** anything from financial institutions. I do this based on the TLD, e.g. `examplebank.com`.
--   **Social:** anything from social networks or services. I do this based on the TLD, e.g. `linkedin.com`.
--   **Promotions:** anything from a merchant or similar mailing list. I subscribe to a handful but don't want them in my inbox. I use [Fastmail's advanced folder options](https://www.fastmail.help/hc/en-us/articles/1500000280301-Setting-up-and-using-folders) to auto-purge this folder every 60 days.
+- **Updates:** anything sent programmatically and pertinent but not critical (e.g. service or utility notifications and so forth).
+- **Financial:** anything from financial institutions. I do this based on the TLD, e.g. `examplebank.com`.
+- **Social:** anything from social networks or services. I do this based on the TLD, e.g. `linkedin.com`.
+- **Promotions:** anything from a merchant or similar mailing list. I subscribe to a handful but don't want them in my inbox. I use [Fastmail's advanced folder options](https://www.fastmail.help/hc/en-us/articles/1500000280301-Setting-up-and-using-folders) to auto-purge this folder every 60 days.
 
 I also use a few aliases to route mail elsewhere:
 
--   **Deliveries:** anything referencing tracking numbers or shipment status get sent off to [Parcel](https://parcelapp.net).
--   **Alerts:** uptime alerts and a few other notifications get sent off to [Things](https://culturedcode.com/things/) to be slotted as actionable tasks to be addressed.
--   **Newsletters:** mailing lists get routed off to [Feedbin](https://feedbin.com) to be read (or not).
--   **Reports:** I route DMARC/email reports to this folder in the event I need to review them (which is rarely if ever).
+- **Deliveries:** anything referencing tracking numbers or shipment status get sent off to [Parcel](https://parcelapp.net).
+- **Alerts:** uptime alerts and a few other notifications get sent off to [Things](https://culturedcode.com/things/) to be slotted as actionable tasks to be addressed.
+- **Newsletters:** mailing lists get routed off to [Feedbin](https://feedbin.com) to be read (or not).
+- **Reports:** I route DMARC/email reports to this folder in the event I need to review them (which is rarely if ever).
 
 All of these particular folders live as children of my Archive folder and are auto-purged at different intervals. They're messages that are useful in the near term but whose utility falls off pretty quickly over time.
 

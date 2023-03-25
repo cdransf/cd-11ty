@@ -1,5 +1,5 @@
 {
-    "layout": "post.liquid",
-    "tags": ["posts"],
-    "published": true
+  "layout": "post.liquid",
+  "tags": ["posts"],
+  "published": true
 }

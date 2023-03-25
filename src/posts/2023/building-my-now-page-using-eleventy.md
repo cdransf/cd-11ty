@@ -13,13 +13,13 @@ My /now page is a series of discreet sections — the **Currently** block is [po
 const EleventyFetch = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
-    const url = 'https://api.omg.lol/address/cory/statuses/'
-    const res = EleventyFetch(url, {
-        duration: '1h',
-        type: 'json',
-    })
-    const status = await res
-    return status.response.statuses[0]
+  const url = 'https://api.omg.lol/address/cory/statuses/'
+  const res = EleventyFetch(url, {
+    duration: '1h',
+    type: 'json',
+  })
+  const status = await res
+  return status.response.statuses[0]
 }
 ```
 
@@ -29,14 +29,14 @@ The **Listening: artists** and **Listening: albums** sections draw on data from 
 const EleventyFetch = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
-    const MUSIC_KEY = process.env.API_KEY_LASTFM
-    const url = `http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=cdme_&api_key=${MUSIC_KEY}&limit=8&format=json&period=7day`
-    const res = EleventyFetch(url, {
-        duration: '1h',
-        type: 'json',
-    })
-    const artists = await res
-    return artists.topartists.artist
+  const MUSIC_KEY = process.env.API_KEY_LASTFM
+  const url = `http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=cdme_&api_key=${MUSIC_KEY}&limit=8&format=json&period=7day`
+  const res = EleventyFetch(url, {
+    duration: '1h',
+    type: 'json',
+  })
+  const artists = await res
+  return artists.topartists.artist
 }
 ```
 
@@ -149,13 +149,13 @@ const { extract } = require('@extractus/feed-extractor')
 const { AssetCache } = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
-    const url = 'https://oku.club/rss/collection/POaRa'
-    const asset = new AssetCache('books_data')
-    if (asset.isCacheValid('1h')) return await asset.getCachedValue()
-    const res = await extract(url).catch((error) => {})
-    const data = res.entries
-    await asset.save(data, 'json')
-    return data
+  const url = 'https://oku.club/rss/collection/POaRa'
+  const asset = new AssetCache('books_data')
+  if (asset.isCacheValid('1h')) return await asset.getCachedValue()
+  const res = await extract(url).catch((error) => {})
+  const data = res.entries
+  await asset.save(data, 'json')
+  return data
 }
 ```
 

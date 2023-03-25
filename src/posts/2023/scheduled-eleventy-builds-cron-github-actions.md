@@ -14,24 +14,24 @@ To update my feeds ([feed.xml](https://coryd.dev/feed.xml) and [follow.xml](http
 ```yaml
 name: Scheduled Vercel build
 env:
-    VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-    VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 on:
-    schedule:
-        - cron: '0 * * * *'
+  schedule:
+    - cron: '0 * * * *'
 jobs:
-    cron:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-            - name: Install Vercel CLI
-              run: npm install --global vercel@latest
-            - name: Pull Vercel Environment Information
-              run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
-            - name: Build Project Artifacts
-              run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
-            - name: Deploy Project Artifacts to Vercel
-              run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Build Project Artifacts
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Deploy Project Artifacts to Vercel
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
 ```
 
 {% endraw %}
@@ -47,22 +47,22 @@ If you need to manually trigger a build, you can do so using a workflow with a {
 ```yaml
 name: Manual Vercel build
 env:
-    VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-    VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 on: [workflow_dispatch]
 jobs:
-    cron:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-            - name: Install Vercel CLI
-              run: npm install --global vercel@latest
-            - name: Pull Vercel Environment Information
-              run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
-            - name: Build Project Artifacts
-              run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
-            - name: Deploy Project Artifacts to Vercel
-              run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Build Project Artifacts
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Deploy Project Artifacts to Vercel
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
 ```
 
 {% endraw %}

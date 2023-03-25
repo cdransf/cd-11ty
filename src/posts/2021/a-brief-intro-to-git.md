@@ -97,9 +97,9 @@ git revert <git commit hash value>
 
 Each of these commands has numerous options associated with it and allows for broad control over the flow and history of your project. There are a number of other options I'd suggest for learning more about git:
 
--   [Github's git tutorial](https://try.github.io)
--   [Pro Git book](https://git-scm.com/book)
--   [Oh shit, git!](http://ohshitgit.com/)
--   [Github guides](https://guides.github.com)
--   [Git Real](https://courses.codeschool.com/courses/git-real)
--   [Git documentation](https://git-scm.com/documentation)
+- [Github's git tutorial](https://try.github.io)
+- [Pro Git book](https://git-scm.com/book)
+- [Oh shit, git!](http://ohshitgit.com/)
+- [Github guides](https://guides.github.com)
+- [Git Real](https://courses.codeschool.com/courses/git-real)
+- [Git documentation](https://git-scm.com/documentation)

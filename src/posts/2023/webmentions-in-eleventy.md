@@ -17,16 +17,16 @@ I'm fetching data from [webmention.io](https://webmention.io) at build time in `
 const EleventyFetch = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
-    const KEY_CORYD = process.env.API_KEY_WEBMENTIONS_CORYD_DEV
-    const url = `https://webmention.io/api/mentions.jf2?token=${KEY_CORYD}&per-page=1000`
-    const res = EleventyFetch(url, {
-        duration: '1h',
-        type: 'json',
-    })
-    const webmentions = await res
-    return {
-        mentions: webmentions.children,
-    }
+  const KEY_CORYD = process.env.API_KEY_WEBMENTIONS_CORYD_DEV
+  const url = `https://webmention.io/api/mentions.jf2?token=${KEY_CORYD}&per-page=1000`
+  const res = EleventyFetch(url, {
+    duration: '1h',
+    type: 'json',
+  })
+  const webmentions = await res
+  return {
+    mentions: webmentions.children,
+  }
 }
 ```
 
@@ -35,29 +35,30 @@ I have cache duration set to `1h` and a scheduled build operating on approximate
 ```yaml
 name: Scheduled Vercel build
 env:
-    VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-    VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 on:
-    schedule:
-        - cron: '0 * * * *'
+  schedule:
+    - cron: '0 * * * *'
 jobs:
-    cron:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-            - name: Install Vercel CLI
-              run: npm install --global vercel@latest
-            - name: Pull Vercel Environment Information
-              run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
-            - name: Build Project Artifacts
-              run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
-            - name: Deploy Project Artifacts to Vercel
-              run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Build Project Artifacts
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Deploy Project Artifacts to Vercel
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
 ```
 
 When the build runs, it renders any mentions of a given post via a [liquid.js](https://liquidjs.com/) template that looks like this:
 
 {% raw %}
+
 ```liquid
 {% if webmentions %}
     <div class="border-t border-gray-200 mt-12 pt-14 dark:border-gray-700">
@@ -130,6 +131,7 @@ When the build runs, it renders any mentions of a given post via a [liquid.js](h
     </div>
 {% endif %}
 ```
+
 {% endraw %}
 
 This conditionally displays different mention types based on the available data after being passed through the `webmentionsByUrl` filter which I shamelessly lifted from [Robb](https://github.com/rknightuk/rknight.me/blob/8e2a5c5f886cae6c04add7893b8bf8a2d6295ddf/config/filters.js#L48-L84).

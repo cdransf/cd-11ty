@@ -63,9 +63,9 @@ I've been using Fastmail since the end of November and couldn't be happier with 
 
 I did quite a bit of research before switching to Fastmail and the following posts helped push me to make the move:
 
--   [Switching from Gmail to FastMail / Max Masnick](http://www.maxmasnick.com/2013/07/19/fastmail/ 'Switching from Gmail to FastMail / Max Masnick')
--   [From Gmail to FastMail: Moving Away from Google – ReadWrite](http://readwrite.com/2012/03/19/from-gmail-to-fastmail-moving#awesm=~othfJ88hm9Tp8X 'From Gmail to FastMail: Moving Away from Google – ReadWrite')
--   [FastMail is My Favourite Email Provider](http://web.appstorm.net/reviews/email-apps/fastmail-is-my-favourite-email-provider/ 'FastMail is My Favourite Email Provider')
+- [Switching from Gmail to FastMail / Max Masnick](http://www.maxmasnick.com/2013/07/19/fastmail/ 'Switching from Gmail to FastMail / Max Masnick')
+- [From Gmail to FastMail: Moving Away from Google – ReadWrite](http://readwrite.com/2012/03/19/from-gmail-to-fastmail-moving#awesm=~othfJ88hm9Tp8X 'From Gmail to FastMail: Moving Away from Google – ReadWrite')
+- [FastMail is My Favourite Email Provider](http://web.appstorm.net/reviews/email-apps/fastmail-is-my-favourite-email-provider/ 'FastMail is My Favourite Email Provider')
 
 Have you moved to Fastmail? Are you thinking of doing so? [Let me know your thoughts](mailto:coryd@hey.com) on it or the move to it. You can sign up for Fastmail [here](https://www.fastmail.com).
 

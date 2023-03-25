@@ -16,100 +16,98 @@ import { SERVICES, TAGS } from './config'
 import createMastoPost from './createMastoPost'
 
 export default async function syndicate(init?: string) {
-    const TOKEN_CORYDDEV_GISTS = process.env.TOKEN_CORYDDEV_GISTS
-    const GIST_ID_SYNDICATION_CACHE = '406166f337b9ed2d494951757a70b9d1'
-    const GIST_NAME_SYNDICATION_CACHE = 'syndication-cache.json'
-    const CLEAN_OBJECT = () => {
-        const INIT_OBJECT = {}
-        Object.keys(SERVICES).map((service) => (INIT_OBJECT[service] = []))
-        return INIT_OBJECT
-    }
+  const TOKEN_CORYDDEV_GISTS = process.env.TOKEN_CORYDDEV_GISTS
+  const GIST_ID_SYNDICATION_CACHE = '406166f337b9ed2d494951757a70b9d1'
+  const GIST_NAME_SYNDICATION_CACHE = 'syndication-cache.json'
+  const CLEAN_OBJECT = () => {
+    const INIT_OBJECT = {}
+    Object.keys(SERVICES).map((service) => (INIT_OBJECT[service] = []))
+    return INIT_OBJECT
+  }
 
-    async function hydrateCache() {
-        const CACHE_DATA = CLEAN_OBJECT()
-        for (const service in SERVICES) {
-            const data = await extract(SERVICES[service])
-            const entries = data?.entries
-            entries.map((entry: FeedEntry) => CACHE_DATA[service].push(entry.id))
+  async function hydrateCache() {
+    const CACHE_DATA = CLEAN_OBJECT()
+    for (const service in SERVICES) {
+      const data = await extract(SERVICES[service])
+      const entries = data?.entries
+      entries.map((entry: FeedEntry) => CACHE_DATA[service].push(entry.id))
+    }
+    await fetch(`https://api.github.com/gists/${GIST_ID_SYNDICATION_CACHE}`, {
+      method: 'PATCH',
+      headers: {
+        Authorization: `Bearer ${TOKEN_CORYDDEV_GISTS}`,
+        'Content-Type': 'application/vnd.github+json',
+      },
+      body: JSON.stringify({
+        gist_id: GIST_ID_SYNDICATION_CACHE,
+        files: {
+          'syndication-cache.json': {
+            content: JSON.stringify(CACHE_DATA),
+          },
+        },
+      }),
+    })
+      .then((response) => response.json())
+      .catch((err) => console.log(err))
+  }
+
+  const DATA = await fetch(`https://api.github.com/gists/${GIST_ID_SYNDICATION_CACHE}`).then(
+    (response) => response.json()
+  )
+  const CONTENT = DATA?.files[GIST_NAME_SYNDICATION_CACHE].content
+
+  // rewrite the sync data if init is reset
+  if (CONTENT === '' || init === 'true') hydrateCache()
+
+  if (CONTENT && CONTENT !== '' && !init) {
+    const existingData = await fetch(
+      `https://api.github.com/gists/${GIST_ID_SYNDICATION_CACHE}`
+    ).then((response) => response.json())
+    const existingContent = JSON.parse(existingData?.files[GIST_NAME_SYNDICATION_CACHE].content)
+
+    for (const service in SERVICES) {
+      const data = await extract(SERVICES[service], {
+        getExtraEntryFields: (feedEntry) => {
+          return {
+            tags: feedEntry['cd:tags'],
+          }
+        },
+      })
+      const entries: (FeedEntry & { tags?: string })[] = data?.entries
+      if (!existingContent[service].includes(entries[0].id)) {
+        let tags = ''
+        if (entries[0].tags) {
+          entries[0].tags
+            .split(',')
+            .forEach((a, index) =>
+              index === 0 ? (tags += `#${toPascalCase(a)}`) : (tags += ` #${toPascalCase(a)}`)
+            )
+          tags += ` ${TAGS[service]}`
+        } else {
+          tags = TAGS[service]
         }
+        existingContent[service].push(entries[0].id)
+        createMastoPost(`${entries[0].title} ${entries[0].link} ${tags}`)
         await fetch(`https://api.github.com/gists/${GIST_ID_SYNDICATION_CACHE}`, {
-            method: 'PATCH',
-            headers: {
-                Authorization: `Bearer ${TOKEN_CORYDDEV_GISTS}`,
-                'Content-Type': 'application/vnd.github+json',
+          method: 'PATCH',
+          headers: {
+            Authorization: `Bearer ${TOKEN_CORYDDEV_GISTS}`,
+            'Content-Type': 'application/vnd.github+json',
+          },
+          body: JSON.stringify({
+            gist_id: GIST_ID_SYNDICATION_CACHE,
+            files: {
+              'syndication-cache.json': {
+                content: JSON.stringify(existingContent),
+              },
             },
-            body: JSON.stringify({
-                gist_id: GIST_ID_SYNDICATION_CACHE,
-                files: {
-                    'syndication-cache.json': {
-                        content: JSON.stringify(CACHE_DATA),
-                    },
-                },
-            }),
+          }),
         })
-            .then((response) => response.json())
-            .catch((err) => console.log(err))
+          .then((response) => response.json())
+          .catch((err) => console.log(err))
+      }
     }
-
-    const DATA = await fetch(`https://api.github.com/gists/${GIST_ID_SYNDICATION_CACHE}`).then(
-        (response) => response.json()
-    )
-    const CONTENT = DATA?.files[GIST_NAME_SYNDICATION_CACHE].content
-
-    // rewrite the sync data if init is reset
-    if (CONTENT === '' || init === 'true') hydrateCache()
-
-    if (CONTENT && CONTENT !== '' && !init) {
-        const existingData = await fetch(
-            `https://api.github.com/gists/${GIST_ID_SYNDICATION_CACHE}`
-        ).then((response) => response.json())
-        const existingContent = JSON.parse(existingData?.files[GIST_NAME_SYNDICATION_CACHE].content)
-
-        for (const service in SERVICES) {
-            const data = await extract(SERVICES[service], {
-                getExtraEntryFields: (feedEntry) => {
-                    return {
-                        tags: feedEntry['cd:tags'],
-                    }
-                },
-            })
-            const entries: (FeedEntry & { tags?: string })[] = data?.entries
-            if (!existingContent[service].includes(entries[0].id)) {
-                let tags = ''
-                if (entries[0].tags) {
-                    entries[0].tags
-                        .split(',')
-                        .forEach((a, index) =>
-                            index === 0
-                                ? (tags += `#${toPascalCase(a)}`)
-                                : (tags += ` #${toPascalCase(a)}`)
-                        )
-                    tags += ` ${TAGS[service]}`
-                } else {
-                    tags = TAGS[service]
-                }
-                existingContent[service].push(entries[0].id)
-                createMastoPost(`${entries[0].title} ${entries[0].link} ${tags}`)
-                await fetch(`https://api.github.com/gists/${GIST_ID_SYNDICATION_CACHE}`, {
-                    method: 'PATCH',
-                    headers: {
-                        Authorization: `Bearer ${TOKEN_CORYDDEV_GISTS}`,
-                        'Content-Type': 'application/vnd.github+json',
-                    },
-                    body: JSON.stringify({
-                        gist_id: GIST_ID_SYNDICATION_CACHE,
-                        files: {
-                            'syndication-cache.json': {
-                                content: JSON.stringify(existingContent),
-                            },
-                        },
-                    }),
-                })
-                    .then((response) => response.json())
-                    .catch((err) => console.log(err))
-            }
-        }
-    }
+  }
 }
 ```
 
@@ -119,9 +117,9 @@ Once the cache is hydrated the script will check the feeds available in `lib/syn
 
 ```typescript
 export const SERVICES = {
-    'coryd.dev': 'https://coryd.dev/feed.xml',
-    glass: 'https://glass.photo/coryd/rss',
-    letterboxd: 'https://letterboxd.com/cdme/rss/',
+  'coryd.dev': 'https://coryd.dev/feed.xml',
+  glass: 'https://glass.photo/coryd/rss',
+  letterboxd: 'https://letterboxd.com/cdme/rss/',
 }
 ```
 
@@ -129,9 +127,9 @@ As we iterate through this object we also attach tags specific to each service u
 
 ```typescript
 export const TAGS = {
-    'coryd.dev': '#Blog',
-    glass: '#Photo #Glass',
-    letterboxd: '#Movie #Letterboxd',
+  'coryd.dev': '#Blog',
+  glass: '#Photo #Glass',
+  letterboxd: '#Movie #Letterboxd',
 }
 ```
 
@@ -168,7 +166,7 @@ const generateRss = (posts: PostFrontMatter[], page = 'feed.xml') => `
             <webMaster>${siteMetadata.email} (${siteMetadata.author})</webMaster>
             <lastBuildDate>${new Date(posts[0].date).toUTCString()}</lastBuildDate>
             <atom:link href="${
-                siteMetadata.siteUrl
+              siteMetadata.siteUrl
             }/${page}" rel="self" type="application/rss+xml"/>
             ${posts.map(generateRssItem).join('')}
         </channel>
@@ -214,18 +212,18 @@ import { MASTODON_INSTANCE } from './config'
 const KEY = process.env.API_KEY_MASTODON
 
 const createMastoPost = async (content: string) => {
-    const formData = new FormData()
-    formData.append('status', content)
+  const formData = new FormData()
+  formData.append('status', content)
 
-    const res = await fetch(`${MASTODON_INSTANCE}/api/v1/statuses`, {
-        method: 'POST',
-        headers: {
-            Accept: 'application/json',
-            Authorization: `Bearer ${KEY}`,
-        },
-        body: formData,
-    })
-    return res.json()
+  const res = await fetch(`${MASTODON_INSTANCE}/api/v1/statuses`, {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      Authorization: `Bearer ${KEY}`,
+    },
+    body: formData,
+  })
+  return res.json()
 }
 
 export default createMastoPost
@@ -236,16 +234,16 @@ Back at GitHub, this is all kicked off every hour on the hour using the followin
 ```yaml
 name: scheduled-cron-job
 on:
-    schedule:
-        - cron: '0 * * * *'
+  schedule:
+    - cron: '0 * * * *'
 jobs:
-    cron:
-        runs-on: ubuntu-latest
-        steps:
-            - name: scheduled-cron-job
-              run: |
-                  curl -X POST 'https://coryd.dev/api/syndicate' \
-                  -H 'Authorization: Bearer ${{ secrets.VERCEL_SYNDICATE_KEY }}'
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: scheduled-cron-job
+        run: |
+          curl -X POST 'https://coryd.dev/api/syndicate' \
+          -H 'Authorization: Bearer ${{ secrets.VERCEL_SYNDICATE_KEY }}'
 ```
 
 Now, as I post things elsewhere, they'll make their way back to Mastodon with a simple title, link and tag set. Read them if you'd like, or filter them out altogether.
