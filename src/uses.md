@@ -4,9 +4,9 @@ title: Uses
 ---
 
 <h2
-    class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mb-2"
+  class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mb-2"
 >
-    {{ title }}
+  {{ title }}
 </h2>
 
 Software and services that I use for work and my own enjoyment.

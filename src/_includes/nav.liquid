@@ -1,18 +1,22 @@
 <nav>
   <ul class="flex">
-    <li class="mr-6"><a class="text-gray-700 hover:text-primary-400 dark:text-gray-200{% if page.url contains '/now' %} active{% endif %}" href="/now">/now</a></li>
-    <li class="mr-6"><a class="text-gray-700 hover:text-primary-400 dark:text-gray-200{% if page.url contains '/about' %} active{% endif %}" href="/about">About</a></li>
     <li class="mr-6">
-        {% include "icons/coffee.liquid" %}
+      <a class="text-gray-700 hover:text-primary-400 dark:text-gray-200{% if page.url contains '/now' %} active{% endif %}" href="/now">/now</a>
     </li>
     <li class="mr-6">
-        {% include "icons/tags.liquid" %}
+      <a class="text-gray-700 hover:text-primary-400 dark:text-gray-200{% if page.url contains '/about' %} active{% endif %}" href="/about">About</a>
     </li>
     <li class="mr-6">
-        {% include "icons/rss.liquid" %}
+      {% include "icons/coffee.liquid" %}
+    </li>
+    <li class="mr-6">
+      {% include "icons/tags.liquid" %}
+    </li>
+    <li class="mr-6">
+      {% include "icons/rss.liquid" %}
     </li>
     <li>
-        {% include "icons/toggle-theme.liquid" %}
+      {% include "icons/toggle-theme.liquid" %}
     </li>
   </ul>
 </nav>

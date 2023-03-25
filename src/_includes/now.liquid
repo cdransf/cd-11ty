@@ -3,150 +3,151 @@ layout: main
 ---
 
 {% include "header.liquid" %}
-
 <div class="pt-12 prose dark:prose-invert hover:prose-a:text-blue-500 max-w-full">
-    <h2
-        class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mb-4"
-    >
-        Currently
-    </h2>
-    <div class="pl-4 md:pl-8">
-        <p class="my-2">{{ status.emoji }} {{ status.content }}</p>
-        <p class="my-2"><span class="icon-inline mr-1">{% heroicon "solid" "map" "Map" "width=20 height=20" %}</span> Living in Camarillo, California with my beautiful family, 4 rescue dogs and a guinea pig.</p>
-        <p class="my-2"><span class="icon-inline mr-1">{% heroicon "solid" "code" "Code" "width=20 height=20" %}</span> Working at <a href="https://hashicorp.com">HashiCorp</a></p>
-        <p class="my-2">
-            <span class="icon-inline mr-1">
-                <svg class="fill-gray-800 dark:fill-white w-5" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>NBA</title><path d="M9.19 0a2.486 2.486 0 0 0-2.485 2.484v19.029A2.488 2.488 0 0 0 9.19 24h5.615a2.493 2.493 0 0 0 2.49-2.487V2.484A2.488 2.488 0 0 0 14.81 0zm0 .584h3.21c-.62.237-.707.508-.73 1.366-.105.01-.325-.087-.25.434 0 0 .043.346.18.286-.133.918.023.99-.93 1.031l-.047.067c-.95.093-1.25-.027-2.05 1.603 0 0-.207.505-.268.714-.197.415-.674 1.328-.819 1.919-.046.2-.14.264-.01.553.185.417-.124.527.95.496V9.3s-.286.247-.346.398c-.061.147-.226.89-.22 1.237.019.917.767 1.683.992 2.597l.492.07c.282.634 1.495 2.355 1.743 2.582.057.159.365.355.545.551.149.141 1.025 1.1 2.054 1.692-.007-.001.164.344.249.618-.342.275.32.777.52 1.609.012.107-.19.222.114.495-.022 1.256-.402 1.918.241 2.266H9.191a1.9 1.9 0 0 1-1.9-1.901V2.486a1.9 1.9 0 0 1 1.9-1.902zm3.804.002h1.815a1.9 1.9 0 0 1 1.897 1.898v9.193a1.653 1.653 0 0 0-.22-.397c0-.255-.272-.249-.346-.344-.07-.081.067-.128-.407-.235-.09-.05-.158-.747-.158-.747-.07-.447-.229-.754-.467-1.227-.12-.243-.177-1.001-.305-1.386.071-1.767-.493-2.28-.95-2.569-.174-.11-.262-.191-.433-.29l-.005-.082c-.133-.126-.402-.264-.623-.362-.068-.07-.037-.22.01-.276.15-.02.348-.356.513-.703.129.009.174-.118.214-.19.138-.222.288-.413.096-.542.435-.777.154-1.301-.08-1.321-.095-.195-.26-.316-.551-.42zm.551 6.338c.06.319.34 1.929.456 2.187.123.259.535 1.05.73 1.54a1.69 1.69 0 0 0-1.294 1.646 1.692 1.692 0 0 0 1.693 1.691 1.692 1.692 0 0 0 1.576-1.066v8.59a1.887 1.887 0 0 1-1.598 1.877h-.017c.833-.502.319-1.46.16-2.022-.012-.033.014-.074.026-.1.045-.08-.045-.257-.045-.257-.098-.09-.127-.561-.182-.772-.089-.358.157-.971.157-1.18 0-.206-.156-.491-.445-.858-.069-.078-.276-1.86-.462-2.313-.258-.623-.339-.526-.64-1.266-.24-.525-.055-1.295-.59-3.085.005.006.12-.113.12-.113s-.422-1.55-.561-1.975c-.14-.426-.385-.456-.385-.456s.002-.172.012-.216c.02-.07.516-1.367.558-1.407.001-.03.717-.514.731-.445Z"/></svg>
-            </span>
-            Rooting for the <a href="https://lakers.com">Lakers</a>, for better or worse.</p>
-            {{ content }}
-    </div>
-    <h2
-        class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4"
-    >
-        Making
-    </h2>
-    <div class="pl-4 md:pl-8">
-        <p class="my-2"><span class="icon-inline mr-1">{% heroicon "solid" "terminal" "Terminal" "width=20 height=20" %}</span> Hacking away on random projects like this page, my <a href="/">blog</a>, and whatever else I can find time for.</p>
-    </div>
-    {% if artists %}
-    <h2
-        class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4"
-    >
-        Listening: artists
-    </h2>
-    <div>
-        <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
-            {% for artist in artists %}
-                <a href="{{artist.url}}" title="{{artist.name | escape}}">
-                    <div class="relative block">
-                        <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-primary-500 bg-cover-gradient dark:border-gray-500"></div>
-                        <div class="absolute left-1 bottom-2 drop-shadow-md">
-                            <div class="px-1 text-xs font-bold text-white">{{artist.name}}</div>
-                            <div class="px-1 text-xs text-white">
-                                {{artist.playcount}} plays
-                            </div>
-                        </div>
-                        <img
-                            src="{{artist.name | artist}}"
-                            onerror="this.onerror=null; this.src='/assets/img/media/404.jpg'"
-                            width="350"
-                            height="350"
-                            class="rounded-lg" alt="{{artist.name | escape}}"
-                            loading="lazy"
-                        />
-                    </div>
-                </a>
-            {% endfor %}
-        </div>
-    </div>
-    {% endif %}
-    {% if albums %}
-    <h2
-        class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4"
-    >
-        Listening: albums
+  <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mb-4">
+    Currently
+  </h2>
+  <div class="pl-4 md:pl-8">
+    <p class="my-2">{{ status.emoji }} {{ status.content }}</p>
+    <p class="my-2">
+      <span class="icon-inline mr-1">{% heroicon "solid" "map" "Map" "width=20 height=20" %}</span>
+      Living in Camarillo, California with my beautiful family, 4 rescue dogs and a guinea pig.</p>
+    <p class="my-2">
+      <span class="icon-inline mr-1">{% heroicon "solid" "code" "Code" "width=20 height=20" %}</span>
+      Working at
+      <a href="https://hashicorp.com">HashiCorp</a>
+    </p>
+    <p class="my-2">
+      <span class="icon-inline mr-1">
+        <svg
+          class="fill-gray-800 dark:fill-white w-5"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <title>NBA</title><path d="M9.19 0a2.486 2.486 0 0 0-2.485 2.484v19.029A2.488 2.488 0 0 0 9.19 24h5.615a2.493 2.493 0 0 0 2.49-2.487V2.484A2.488 2.488 0 0 0 14.81 0zm0 .584h3.21c-.62.237-.707.508-.73 1.366-.105.01-.325-.087-.25.434 0 0 .043.346.18.286-.133.918.023.99-.93 1.031l-.047.067c-.95.093-1.25-.027-2.05 1.603 0 0-.207.505-.268.714-.197.415-.674 1.328-.819 1.919-.046.2-.14.264-.01.553.185.417-.124.527.95.496V9.3s-.286.247-.346.398c-.061.147-.226.89-.22 1.237.019.917.767 1.683.992 2.597l.492.07c.282.634 1.495 2.355 1.743 2.582.057.159.365.355.545.551.149.141 1.025 1.1 2.054 1.692-.007-.001.164.344.249.618-.342.275.32.777.52 1.609.012.107-.19.222.114.495-.022 1.256-.402 1.918.241 2.266H9.191a1.9 1.9 0 0 1-1.9-1.901V2.486a1.9 1.9 0 0 1 1.9-1.902zm3.804.002h1.815a1.9 1.9 0 0 1 1.897 1.898v9.193a1.653 1.653 0 0 0-.22-.397c0-.255-.272-.249-.346-.344-.07-.081.067-.128-.407-.235-.09-.05-.158-.747-.158-.747-.07-.447-.229-.754-.467-1.227-.12-.243-.177-1.001-.305-1.386.071-1.767-.493-2.28-.95-2.569-.174-.11-.262-.191-.433-.29l-.005-.082c-.133-.126-.402-.264-.623-.362-.068-.07-.037-.22.01-.276.15-.02.348-.356.513-.703.129.009.174-.118.214-.19.138-.222.288-.413.096-.542.435-.777.154-1.301-.08-1.321-.095-.195-.26-.316-.551-.42zm.551 6.338c.06.319.34 1.929.456 2.187.123.259.535 1.05.73 1.54a1.69 1.69 0 0 0-1.294 1.646 1.692 1.692 0 0 0 1.693 1.691 1.692 1.692 0 0 0 1.576-1.066v8.59a1.887 1.887 0 0 1-1.598 1.877h-.017c.833-.502.319-1.46.16-2.022-.012-.033.014-.074.026-.1.045-.08-.045-.257-.045-.257-.098-.09-.127-.561-.182-.772-.089-.358.157-.971.157-1.18 0-.206-.156-.491-.445-.858-.069-.078-.276-1.86-.462-2.313-.258-.623-.339-.526-.64-1.266-.24-.525-.055-1.295-.59-3.085.005.006.12-.113.12-.113s-.422-1.55-.561-1.975c-.14-.426-.385-.456-.385-.456s.002-.172.012-.216c.02-.07.516-1.367.558-1.407.001-.03.717-.514.731-.445Z" /></svg>
+      </span>
+      Rooting for the
+      <a href="https://lakers.com">Lakers</a>, for better or worse.</p>
+    {{ content }}
+  </div>
+  <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+    Making
+  </h2>
+  <div class="pl-4 md:pl-8">
+    <p class="my-2">
+      <span class="icon-inline mr-1">{% heroicon "solid" "terminal" "Terminal" "width=20 height=20" %}</span>
+      Hacking away on random projects like this page, my
+      <a href="/">blog</a>, and whatever else I can find time for.</p>
+  </div>
+  {% if artists %}
+    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+      Listening: artists
     </h2>
     <div>
-        <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
-            {% for album in albums %}
-                <a href="{{album.url}}" title="{{album.name | escape}}">
-                    <div class="relative block">
-                        <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-primary-500 bg-cover-gradient dark:border-gray-500"></div>
-                        <div class="absolute left-1 bottom-2 drop-shadow-md">
-                            <div class="px-1 text-xs font-bold text-white">{{album.name}}</div>
-                            <div class="px-1 text-xs text-white">
-                                {{album.artist.name}}
-                            </div>
-                        </div>
-                        <img
-                            src="{{album | album}}"
-                            onerror="this.onerror=null; this.src='/assets/img/media/404.jpg'"
-                            width="350"
-                            height="350"
-                            class="rounded-lg"
-                            alt="{{album.name | escape}}"
-                            loading="lazy"
-                        />
-                    </div>
-                </a>
-            {% endfor %}
-        </div>
+      <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
+        {% for artist in artists %}
+          <a href="{{artist.url}}" title="{{artist.name | escape}}">
+            <div class="relative block">
+              <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-primary-500 bg-cover-gradient dark:border-gray-500"></div>
+              <div class="absolute left-1 bottom-2 drop-shadow-md">
+                <div class="px-1 text-xs font-bold text-white">{{ artist.name }}</div>
+                <div class="px-1 text-xs text-white">
+                  {{ artist.playcount }} plays
+                </div>
+              </div>
+              <img
+                src="{{artist.name | artist}}"
+                onerror="this.onerror=null; this.src='/assets/img/media/404.jpg'"
+                width="350"
+                height="350"
+                class="rounded-lg"
+                alt="{{artist.name | escape}}"
+                loading="lazy" />
+            </div>
+          </a>
+        {% endfor %}
+      </div>
     </div>
-    {% endif %}
-    {% if books %}
-    <h2
-        class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4"
-    >
-        Reading
+  {% endif %}
+  {% if albums %}
+    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+      Listening: albums
     </h2>
     <div>
-        <ul class="list-inside list-disc pl-5 md:pl-10">
+      <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
+        {% for album in albums %}
+          <a href="{{album.url}}" title="{{album.name | escape}}">
+            <div class="relative block">
+              <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-primary-500 bg-cover-gradient dark:border-gray-500"></div>
+              <div class="absolute left-1 bottom-2 drop-shadow-md">
+                <div class="px-1 text-xs font-bold text-white">{{ album.name }}</div>
+                <div class="px-1 text-xs text-white">
+                  {{ album.artist.name }}
+                </div>
+              </div>
+              <img
+                src="{{album | album}}"
+                onerror="this.onerror=null; this.src='/assets/img/media/404.jpg'"
+                width="350"
+                height="350"
+                class="rounded-lg"
+                alt="{{album.name | escape}}"
+                loading="lazy" />
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+  {% if books %}
+    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
+      Reading
+    </h2>
+    <div>
+      <ul class="list-inside list-disc pl-5 md:pl-10">
         {% for book in books %}
-            <li class="mt-1.5 mb-2">
-                <a href="{{book.link}}" title="{{book.title | escape}}">
-                    {{book.title}}
-                </a>
-            </li>
+          <li class="mt-1.5 mb-2">
+            <a href="{{book.link}}" title="{{book.title | escape}}">
+              {{ book.title }}
+            </a>
+          </li>
         {% endfor %}
-        </ul>
+      </ul>
     </div>
-    {% endif %}
-    {% if movies %}
-    <h2
-        class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4"
-    >
-        Watching: movies
+  {% endif %}
+  {% if movies %}
+    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
+      Watching: movies
     </h2>
     <div>
-        <ul class="list-inside list-disc pl-5 md:pl-10">
+      <ul class="list-inside list-disc pl-5 md:pl-10">
         {% for movie in movies %}
-            <li class="mt-1.5 mb-2">
-                <a href="{{movie.link}}" title="{{movie.title | escape}}">
-                    {{movie.title}}
-                </a>
-            </li>
+          <li class="mt-1.5 mb-2">
+            <a href="{{movie.link}}" title="{{movie.title | escape}}">
+              {{ movie.title }}
+            </a>
+          </li>
         {% endfor %}
-        </ul>
+      </ul>
     </div>
-    {% endif %}
-    {% if tv %}
-    <h2
-        class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4"
-    >
-        Watching: tv
+  {% endif %}
+  {% if tv %}
+    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
+      Watching: tv
     </h2>
     <div>
-        <ul class="list-inside list-disc pl-5 md:pl-10">
+      <ul class="list-inside list-disc pl-5 md:pl-10">
         {% for show in tv %}
-            <li class="mt-1.5 mb-2">
-                <a href="{{show.link}}" title="{{show.title | escape}}">
-                    {{show.title}}
-                </a>
-            </li>
+          <li class="mt-1.5 mb-2">
+            <a href="{{show.link}}" title="{{show.title | escape}}">
+              {{ show.title }}
+            </a>
+          </li>
         {% endfor %}
-        </ul>
+      </ul>
     </div>
-    {% endif %}
-    <p class="text-xs text-center">This is a <a href="https://nownownow.com/about">now page</a>, and if you have your own site, <a href="https://nownownow.com/about">you should make one too</a>.</p>
+  {% endif %}
+  <p class="text-xs text-center">This is a
+    <a href="https://nownownow.com/about">now page</a>, and if you have your own site,
+    <a href="https://nownownow.com/about">you should make one too</a>.</p>
 </div>

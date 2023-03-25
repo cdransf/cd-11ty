@@ -3,35 +3,35 @@
 @tailwind utilities;
 
 ::-moz-selection {
-    color: theme(colors.gray.800);
-    background: theme(colors.purple.400);
+  color: theme(colors.gray.800);
+  background: theme(colors.purple.400);
 }
 
 ::selection {
-    color: theme(colors.gray.800);
-    background: theme(colors.purple.400);
+  color: theme(colors.gray.800);
+  background: theme(colors.purple.400);
 }
 
 .toggle-light {
-    @apply inline;
+  @apply inline;
 }
 
 .dark .toggle-light {
-    @apply hidden;
+  @apply hidden;
 }
 
 .toggle-dark {
-    @apply hidden;
+  @apply hidden;
 }
 
 .dark .toggle-dark {
-    @apply inline;
+  @apply inline;
 }
 
 .icon-inline svg {
-    @apply inline;
+  @apply inline;
 }
 
 .active {
-    @apply text-primary-400 !important;
+  @apply text-primary-400 !important;
 }

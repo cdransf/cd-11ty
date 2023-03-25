@@ -1,65 +1,61 @@
 {
-    "name": "coryd.dev",
-    "version": "1.0.0",
-    "description": "The source for my personal site, blog and portfolio. Build using 11ty and hosted on Vercel.",
-    "main": "index.html",
-    "scripts": {
-        "start": "eleventy --serve & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
-        "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
-        "lint": "eslint .",
-        "lint:fix": "eslint . --fix",
-        "build": "rm -rf .cache && ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o _site/assets/styles/tailwind.css",
-        "prepare": "husky install"
-    },
-    "keywords": [],
-    "author": "Cory Dransfeldt",
-    "license": "ISC",
-    "devDependencies": {
-        "@11ty/eleventy": "^2.0.0",
-        "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
-        "@fontsource/inter": "^4.5.15",
-        "eleventy-plugin-heroicons": "^1.1.0",
-        "eslint": "^8.36.0",
-        "eslint-config-prettier": "^8.8.0",
-        "eslint-plugin-prettier": "^4.2.1",
-        "postcss": "^8.4.5",
-        "prettier": "^2.8.7",
-        "prettier-plugin-tailwindcss": "^0.2.5",
-        "sanitize-html": "^2.10.0"
-    },
-    "dependencies": {
-        "@11ty/eleventy-activity-feed": "^1.0.9",
-        "@11ty/eleventy-fetch": "^4.0.0",
-        "@11ty/eleventy-img": "^3.0.0",
-        "@commitlint/cli": "^17.5.0",
-        "@commitlint/config-conventional": "^17.4.4",
-        "@extractus/feed-extractor": "^6.2.1",
-        "@funboxteam/markdown-lint": "^2.0.1",
-        "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
-        "@tailwindcss/typography": "^0.5.1",
-        "@typescript-eslint/eslint-plugin": "^5.56.0",
-        "@typescript-eslint/parser": "^5.56.0",
-        "autoprefixer": "^10.4.2",
-        "dotenv-flow": "^3.2.0",
-        "eleventy-plugin-unfurl": "^1.0.0",
-        "eslint-plugin-jsx-a11y": "^6.7.1",
-        "husky": "^8.0.3",
-        "lint-staged": "^13.2.0",
-        "liquidjs": "^10.7.0",
-        "markdown-it": "^13.0.1",
-        "markdown-it-anchor": "^8.4.1",
-        "markdown-it-footnote": "^3.0.3",
-        "marked": "^4.3.0",
-        "tailwind-dracula": "^1.1.0",
-        "tailwindcss": "^3.0.18"
-    },
-    "lint-staged": {
-        "**/*.{js,jsx,ts,tsx}": [
-            "npx prettier --write",
-            "npx eslint --fix"
-        ],
-        "*.md": [
-            "markdown-lint --fix --typograph"
-        ]
-    }
+  "name": "coryd.dev",
+  "version": "1.0.0",
+  "description": "The source for my personal site, blog and portfolio. Build using 11ty and hosted on Vercel.",
+  "main": "index.html",
+  "scripts": {
+    "start": "eleventy --serve & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build": "rm -rf .cache && ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o _site/assets/styles/tailwind.css",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "Cory Dransfeldt",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "@fontsource/inter": "^4.5.15",
+    "eleventy-plugin-heroicons": "^1.1.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "postcss": "^8.4.5",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.5",
+    "sanitize-html": "^2.10.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-activity-feed": "^1.0.9",
+    "@11ty/eleventy-fetch": "^4.0.0",
+    "@11ty/eleventy-img": "^3.0.0",
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@extractus/feed-extractor": "^6.2.1",
+    "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
+    "@tailwindcss/typography": "^0.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "autoprefixer": "^10.4.2",
+    "dotenv-flow": "^3.2.0",
+    "eleventy-plugin-unfurl": "^1.0.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "liquidjs": "^10.7.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.4.1",
+    "markdown-it-footnote": "^3.0.3",
+    "marked": "^4.3.0",
+    "tailwind-dracula": "^1.1.0",
+    "tailwindcss": "^3.0.18"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "npx eslint --fix"
+    ]
+  }
 }

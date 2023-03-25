@@ -1,29 +1,55 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{{ title }} • {{site.title}}</title>
+    <title>
+      {% if title %}
+        {{ title }} •
+      {% endif %}
+      {{ site.title }}</title>
     <meta charset="utf-8">
-  	<meta name='viewport' content='width=device-width'>
-  	<link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
-    <meta property="og:title" content="{{ title }}" />
+    <meta name='viewport' content='width=device-width'>
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <meta property="og:title" content="{% if title %}{{ title }} • {% endif %}{{site.title}}" />
     <meta name="description" content="{% if excerpt %}{{ excerpt}}{% else %}{{ site.description }}{% endif %}" />
     <meta property="og:description" content="{% if excerpt %}{{ excerpt}}{% else %}{{ site.description }}{% endif %}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://coryd.dev{{ page.url }}" />
     <meta property="og:image" content="{{ post | getFirstAttachment }}">
-    <meta name="theme-color" content="#bd93f9"/>
-    <link rel="icon" type="image/x-icon" href="/assets/img/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <meta name="theme-color" content="#bd93f9" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/img/favicon/favicon-16x16.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/favicon/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
     <link href="/assets/styles/tailwind.css?v={% version %}" rel="stylesheet" />
     <link href="/assets/styles/prism.css?v={% version %}" rel="stylesheet" />
     <link href="/assets/styles/index.css?v={% version %}" rel="stylesheet" />
-    <script src="https://breezy-restored.coryd.dev/script.js" data-site="RHNGSUXO" defer></script>
+    <script
+      src="https://breezy-restored.coryd.dev/script.js"
+      data-site="RHNGSUXO"
+      defer></script>
     <link rel="webmention" href="https://webmention.io/coryd.dev/webmention" />
     <link rel="pingback" href="https://webmention.io/coryd.dev/xmlrpc" />
-    <link type="application/atom+xml" rel="alternate" title="Cory Dransfeldt" href="/feed.xml">
-    <link rel="alternate" type="application/json" title="Cory Dransfeldt" href="/feed.json" />
-    <link rel="alternate" href="/follow.xml" title="Cory Dransfeldt's activity feed" type="application/rss+xml">
+    <link
+      type="application/atom+xml"
+      rel="alternate"
+      title="Cory Dransfeldt"
+      href="/feed.xml">
+    <link
+      rel="alternate"
+      type="application/json"
+      title="Cory Dransfeldt"
+      href="/feed.json" />
+    <link
+      rel="alternate"
+      href="/follow.xml"
+      title="Cory Dransfeldt's activity feed"
+      type="application/rss+xml">
     <script>
       const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
       if (isDarkMode()) {
@@ -35,16 +61,16 @@
   </head>
   <body class="dark:text-white dark:bg-gray-900 font-sans text-gray-800">
     {{ content }}
-  <script>
-    document.getElementById("toggleDarkMode").addEventListener("click", function() {
-      if (isDarkMode()) {
-        localStorage.theme = 'light'
-        document.documentElement.classList.remove('dark')
-      } else {
-        localStorage.theme = 'dark'
-        document.documentElement.classList.add('dark')
-      }
-    });
-  </script>
+    <script>
+      document.getElementById("toggleDarkMode").addEventListener("click", function() {
+        if (isDarkMode()) {
+          localStorage.theme = 'light'
+          document.documentElement.classList.remove('dark')
+        } else {
+          localStorage.theme = 'dark'
+          document.documentElement.classList.add('dark')
+        }
+      });
+    </script>
   </body>
 </html>

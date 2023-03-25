@@ -5,7 +5,8 @@ permalink: /feed.xml
 {% layout "./_includes/feed.liquid" %}
 {% block title %}All posts • Cory Dransfeldt{% endblock %}
 {% block self %}all.xml{% endblock %}
-{% block update %}{{ collections.posts | rssLastUpdatedDate }}{% endblock %}
+{% block update %}
+  {{ collections.posts | rssLastUpdatedDate }}{% endblock %}
 {% block entries %}
   {% assign posts = collections.posts | reverse %}
   {% for post in posts %}

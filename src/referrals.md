@@ -4,9 +4,9 @@ title: Referrals
 ---
 
 <h2
-    class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mb-2"
+  class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mb-2"
 >
-    {{ title }}
+  {{ title }}
 </h2>
 
 Referral links for services I use. I save some money and you do as well if you choose to use them.

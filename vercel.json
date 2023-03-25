@@ -1,60 +1,60 @@
 {
-    "redirects": [
-        {
-            "source": "/blog/fixing-safari-icloud-syncing",
-            "destination": "/posts/2022/fixing-safari-icloud-syncing/"
-        },
-        {
-            "source": "/blog/migrating-to-fastmail",
-            "destination": "/posts/2022/migrating-to-fastmail/"
-        },
-        {
-            "source": "/blog/client-side-webmentions-in-nextjs",
-            "destination": "/posts/2023/client-side-webmentions-in-nextjs/"
-        },
-        {
-            "source": "/blog/apple-centric-digital-privacy-tools",
-            "destination": "/posts/2022/apple-centric-digital-privacy-tools/"
-        },
-        {
-            "source": "/blog/automating-rss-syndication-with-nextjs-github",
-            "destination": "/posts/2023/automating-rss-syndication-with-nextjs-github/"
-        },
-        {
-            "source": "/blog/apple-music-a-tale-of-woe",
-            "destination": "/posts/2021/apple-music-a-tale-of-woe/"
-        },
-        {
-            "source": "/blog/building-a-now-page-using-nextjs-and-social-apis",
-            "destination": "/posts/2023/building-a-now-page-using-nextjs-and-social-apis/"
-        },
-        {
-            "source": "/blog/adding-client-side-rendered-webmentions-to-my-blog",
-            "destination": "/posts/2023/client-side-webmentions-in-nextjs/"
-        },
-        {
-            "source": "/blog/automating-email-cleanup-in-gmail",
-            "destination": "/posts/2022/automating-email-cleanup-in-gmail/"
-        },
-        {
-            "source": "/blog/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt",
-            "destination": "/posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/"
-        },
-        {
-            "source": "/blog/simple-api-fetch-hooks-with-swr",
-            "destination": "/posts/2022/simple-api-fetch-hooks-with-swr/"
-        },
-        {
-            "source": "/2023/02/automatingandprobablyoverengineeringmy-nowpage",
-            "destination": "/posts/2023/automating-and-overengineering-my-now-page/"
-        },
-        {
-            "source": "/2023/01/workflows-handling-inbound-email-on-fastmail-with-regular-expressions",
-            "destination": "/posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/"
-        },
-        {
-            "source": "/rss.xml",
-            "destination": "/feed.xml"
-        }
-    ]
+  "redirects": [
+    {
+      "source": "/blog/fixing-safari-icloud-syncing",
+      "destination": "/posts/2022/fixing-safari-icloud-syncing/"
+    },
+    {
+      "source": "/blog/migrating-to-fastmail",
+      "destination": "/posts/2022/migrating-to-fastmail/"
+    },
+    {
+      "source": "/blog/client-side-webmentions-in-nextjs",
+      "destination": "/posts/2023/client-side-webmentions-in-nextjs/"
+    },
+    {
+      "source": "/blog/apple-centric-digital-privacy-tools",
+      "destination": "/posts/2022/apple-centric-digital-privacy-tools/"
+    },
+    {
+      "source": "/blog/automating-rss-syndication-with-nextjs-github",
+      "destination": "/posts/2023/automating-rss-syndication-with-nextjs-github/"
+    },
+    {
+      "source": "/blog/apple-music-a-tale-of-woe",
+      "destination": "/posts/2021/apple-music-a-tale-of-woe/"
+    },
+    {
+      "source": "/blog/building-a-now-page-using-nextjs-and-social-apis",
+      "destination": "/posts/2023/building-a-now-page-using-nextjs-and-social-apis/"
+    },
+    {
+      "source": "/blog/adding-client-side-rendered-webmentions-to-my-blog",
+      "destination": "/posts/2023/client-side-webmentions-in-nextjs/"
+    },
+    {
+      "source": "/blog/automating-email-cleanup-in-gmail",
+      "destination": "/posts/2022/automating-email-cleanup-in-gmail/"
+    },
+    {
+      "source": "/blog/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt",
+      "destination": "/posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/"
+    },
+    {
+      "source": "/blog/simple-api-fetch-hooks-with-swr",
+      "destination": "/posts/2022/simple-api-fetch-hooks-with-swr/"
+    },
+    {
+      "source": "/2023/02/automatingandprobablyoverengineeringmy-nowpage",
+      "destination": "/posts/2023/automating-and-overengineering-my-now-page/"
+    },
+    {
+      "source": "/2023/01/workflows-handling-inbound-email-on-fastmail-with-regular-expressions",
+      "destination": "/posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/"
+    },
+    {
+      "source": "/rss.xml",
+      "destination": "/feed.xml"
+    }
+  ]
 }

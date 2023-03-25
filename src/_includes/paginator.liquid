@@ -4,33 +4,39 @@
       <button class="py-2 pr-4 text-primary-500 hover:text-primary-400" aria-label="Previous page">Previous</button>
     </a>
   {% else %}
-    <button class="py-2 pr-4 cursor-not-allowed disabled:opacity-50" aria-label="Previous page (disabled)" disabled>Previous</button>
+    <button
+      class="py-2 pr-4 cursor-not-allowed disabled:opacity-50"
+      aria-label="Previous page (disabled)"
+      disabled>Previous</button>
   {% endif %}
 
-    <div class="flex flex-row gap-2 items-center">
-      {% for pageEntry in pagination.pages %}
-        {% if page.url == pagination.hrefs[forloop.index0] %}
-          <a href="{{ pagination.hrefs[forloop.index0] }}" aria-current="page">
-            <button class="w-12 h-12 rounded-full text-white dark:text-gray-900 bg-primary-400 hover:bg-primary-500 dark:hover:bg-primary-300" aria-label="Go to page {{forloop.index}}">
-              {{ forloop.index }}
-            </button>
-          </a>
-        {% else %}
-          <a href="{{ pagination.hrefs[forloop.index0] }}">
-            <button class="py-2 px-4" aria-label="Go to page {{forloop.index}}">
-              {{ forloop.index }}
-            </button>
-          </a>
-        {% endif %}
-      {% endfor %}
-    </div>
+  <div class="flex flex-row gap-2 items-center">
+    {% for pageEntry in pagination.pages %}
+      {% if page.url == pagination.hrefs[forloop.index0] %}
+        <a href="{{ pagination.hrefs[forloop.index0] }}" aria-current="page">
+          <button class="w-12 h-12 rounded-full text-white dark:text-gray-900 bg-primary-400 hover:bg-primary-500 dark:hover:bg-primary-300" aria-label="Go to page {{forloop.index}}">
+            {{ forloop.index }}
+          </button>
+        </a>
+      {% else %}
+        <a href="{{ pagination.hrefs[forloop.index0] }}">
+          <button class="py-2 px-4" aria-label="Go to page {{forloop.index}}">
+            {{ forloop.index }}
+          </button>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
 
 
   {% if pagination.href.next %}
     <a href="{{ pagination.href.next }}">
-    <button class="py-2 pl-4 text-primary-500 hover:text-primary-400" aria-label="Next page">Next</button>
+      <button class="py-2 pl-4 text-primary-500 hover:text-primary-400" aria-label="Next page">Next</button>
     </a>
   {% else %}
-    <button class="py-2 pl-4 cursor-not-allowed disabled:opacity-50" aria-label="Next page (disabled)" disabled>Next</button>
+    <button
+      class="py-2 pl-4 cursor-not-allowed disabled:opacity-50"
+      aria-label="Next page (disabled)"
+      disabled>Next</button>
   {% endif %}
 </nav>

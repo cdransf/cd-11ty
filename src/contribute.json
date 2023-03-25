@@ -3,7 +3,7 @@
     "description": "Cory Dransfeldt's personal blog.",
     "repository": {
         "url": "https://github.com/mozilla/contribute.json",
-        "license": "MPL2"
+        "license": "ISC"
     },
     "keywords": ["11ty", "Eleventy", "Javascript", "Liquid.js", "Markdown"]
 }
