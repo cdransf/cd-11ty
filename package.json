@@ -58,7 +58,7 @@
       "npx prettier --write",
       "npx eslint --fix"
     ],
-    "**/*.{scss}": [
+    "**/*.scss": [
       "npx prettier --write"
     ]
   }
