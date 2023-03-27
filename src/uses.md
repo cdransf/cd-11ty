@@ -70,5 +70,6 @@ Software and services that I use for work and my own enjoyment.
 - [Oku](https://oku.club)
 - [Glass](https://glass.photo)
 - [Matter](https://getmatter.com)
+- [Make](https://make.com)
 
 Check out [uses.tech](https://uses.tech) for more lists like this one.
