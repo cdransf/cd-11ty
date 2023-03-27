@@ -14,8 +14,8 @@
     </button>
   {% endif %}
 
-  <div class="flex flex-row gap-2 items-center">
-    <select id="pagination" class="inline rounded-lg p-1 text-center border border-primary-500 dark:text-white dark:bg-gray-900 text-gray-800 focus-visible:border-primary-400 focus-visible:outline-none">
+  <div class="flex flex-row items-center">
+    <select id="pagination" class="mr-1 inline rounded-lg px-1 appearance-none text-center border border-primary-500 dark:text-white dark:bg-gray-900 text-gray-800 focus-visible:border-primary-400 focus-visible:outline-none cursor-pointer relative">
       {% for pageEntry in pagination.pages %}
         <option {% if page.url == pagination.hrefs[forloop.index0] %}selected{% endif %} value="{{ forloop.index }}">{{ forloop.index }}</option>
       {% endfor %}
