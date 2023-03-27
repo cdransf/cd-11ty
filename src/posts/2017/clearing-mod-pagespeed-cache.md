@@ -1,7 +1,7 @@
 ---
-title: Clearing mod_pagespeed cache
 date: '2017-02-20'
 draft: false
+title: Clearing mod_pagespeed cache
 tags: ['apache', 'development']
 ---
 

@@ -35,6 +35,7 @@
     "@commitlint/config-conventional": "^17.4.4",
     "@extractus/feed-extractor": "^6.2.1",
     "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.1",
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",

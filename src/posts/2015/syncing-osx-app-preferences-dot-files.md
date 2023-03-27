@@ -1,7 +1,7 @@
 ---
-title: Syncing OSX app preferences and dot files
 date: '2015-03-15'
 draft: false
+title: Syncing OSX app preferences and dot files
 tags: ['development', 'macOS']
 ---
 

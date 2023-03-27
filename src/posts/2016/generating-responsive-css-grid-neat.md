@@ -1,7 +1,7 @@
 ---
-title: Generating a responsive CSS grid using Neat
 date: '2016-07-24'
 draft: false
+title: Generating a responsive CSS grid using Neat
 tags: ['development', 'css', 'sass']
 ---
 

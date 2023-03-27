@@ -70,7 +70,22 @@
           localStorage.theme = 'dark'
           document.documentElement.classList.add('dark')
         }
-      });
+      });;
+      (function() {
+        const pagination = document.getElementById('pagination');
+        if (pagination) {
+          pagination.addEventListener('change', (event) => {
+            const page = parseInt(event.target.value)
+            if (page === 1) {
+              window.location.href = '/'
+            } else {
+              window.location.href = `/${
+                event.target.value - 1
+              }/`
+            }
+          })
+        }
+      })()
     </script>
   </body>
 </html>

@@ -1,42 +1,42 @@
 <nav class="flex justify-between mt-8 items-center">
   {% if pagination.href.previous %}
     <a href="{{ pagination.href.previous }}">
-      <button class="py-2 pr-4 text-primary-500 hover:text-primary-400" aria-label="Previous page">Previous</button>
+      <button class="py-2 pr-4 text-primary-500 hover:text-primary-400" aria-label="Previous page">
+        {% heroicon "solid" "arrow-left" "Prevous" "width=20 height=20" %}
+      </button>
     </a>
   {% else %}
     <button
       class="py-2 pr-4 cursor-not-allowed disabled:opacity-50"
       aria-label="Previous page (disabled)"
-      disabled>Previous</button>
+      disabled>
+      {% heroicon "solid" "arrow-left" "Prevous" "width=20 height=20" %}
+    </button>
   {% endif %}
 
   <div class="flex flex-row gap-2 items-center">
-    {% for pageEntry in pagination.pages %}
-      {% if page.url == pagination.hrefs[forloop.index0] %}
-        <a href="{{ pagination.hrefs[forloop.index0] }}" aria-current="page">
-          <button class="w-12 h-12 rounded-full text-white dark:text-gray-900 bg-primary-400 hover:bg-primary-500 dark:hover:bg-primary-300" aria-label="Go to page {{forloop.index}}">
-            {{ forloop.index }}
-          </button>
-        </a>
-      {% else %}
-        <a href="{{ pagination.hrefs[forloop.index0] }}">
-          <button class="py-2 px-4" aria-label="Go to page {{forloop.index}}">
-            {{ forloop.index }}
-          </button>
-        </a>
-      {% endif %}
-    {% endfor %}
+    <select id="pagination" class="inline rounded-lg p-1 text-center border border-primary-500 dark:text-white dark:bg-gray-900 text-gray-800 focus-visible:border-primary-400 focus-visible:outline-none">
+      {% for pageEntry in pagination.pages %}
+        <option {% if page.url == pagination.hrefs[forloop.index0] %}selected{% endif %} value="{{ forloop.index }}">{{ forloop.index }}</option>
+      {% endfor %}
+    </select>
+    <span>
+      of {{ pagination.links.size }}</span>
   </div>
 
 
   {% if pagination.href.next %}
     <a href="{{ pagination.href.next }}">
-      <button class="py-2 pl-4 text-primary-500 hover:text-primary-400" aria-label="Next page">Next</button>
+      <button class="py-2 pl-4 text-primary-500 hover:text-primary-400" aria-label="Next page">
+        {% heroicon "solid" "arrow-right" "Next" "width=20 height=20" %}
+      </button>
     </a>
   {% else %}
     <button
       class="py-2 pl-4 cursor-not-allowed disabled:opacity-50"
       aria-label="Next page (disabled)"
-      disabled>Next</button>
+      disabled>
+      {% heroicon "solid" "arrow-right" "Next" "width=20 height=20" %}
+    </button>
   {% endif %}
 </nav>

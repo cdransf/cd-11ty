@@ -1,0 +1,12 @@
+---
+date: 2017-03-14
+draft: false
+title: Keep the Internet Open
+tags: ['politics', 'net neutrality']
+---
+
+**[Sam Altman](http://blog.samaltman.com/keep-the-internet-open):**
+
+> "The internet is a public good, and I believe access should be a basic right. We've seen such great innovation in software because the internet has been a level playing field. People have been able to succeed by merit, not the regulatory weight of incumbency."<!-- excerpt -->
+
+I could not agree more. ISPs demonstrate over and over that they [will not act in anyone's best interest but their own](https://www.techdirt.com/articles/20170314/04285036912/new-york-city-sues-verizon-fiber-optic-bait-switch.shtml) without proper oversight.

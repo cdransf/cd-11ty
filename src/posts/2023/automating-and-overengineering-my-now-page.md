@@ -9,7 +9,7 @@ tags: ['automation', 'development', 'nextjs', 'javascript']
 
 **[nownownow.com](https://nownownow.com)**
 
-> ...a link that says “**now**” goes to a page that tells you **what this person is focused on at this point in their life.** For short, we call it a “now page”.
+> ...a link that says "**now**" goes to a page that tells you **what this person is focused on at this point in their life.** For short, we call it a "now page".
 
 This page can be updated manually but, as with just about everything offered by omg.lol, there's an API to submit updates to the page. I already blog infrequently and knew I would fail to manually update the page frequently, which presented an opportunity to automate updates to the page. My page is available at [coryd.dev/now](https://coryd.dev/now).
 

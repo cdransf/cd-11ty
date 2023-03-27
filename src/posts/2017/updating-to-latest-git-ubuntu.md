@@ -1,7 +1,7 @@
 ---
-title: Updating to the latest version of git on Ubuntu
 date: '2017-08-13'
 draft: false
+title: Updating to the latest version of git on Ubuntu
 tags: ['development', 'git', 'linux', 'ubuntu']
 ---
 

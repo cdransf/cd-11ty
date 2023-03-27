@@ -2,7 +2,7 @@
 title: Leaving Google Apps for Fastmail
 date: '2014-01-18'
 draft: false
-tags: ['email', 'fastmail', 'google']
+tags: ['email', 'Fastmail', 'Google']
 ---
 
 I recently began a process of re-evaluating the web services I use, the companies that provide them and an evaluation of where I store important data. I had used Google services extensively with Gmail handling my email, my contacts synced through Google contacts, calendars in Google calendar and documents in a Google Drive (I had used Google Reader extensively but switched to a [Fever](http://feedafever.com/ 'Fever Red hot. Well read.') installation following Reader's demise).<!-- excerpt --> While Google's services are world class, it became increasingly clear to me that if was not in my interest to store significant amounts of personal data with a company that has a financial interest in profiting from that information.

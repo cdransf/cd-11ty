@@ -1,0 +1,10 @@
+---
+date: 2017-09-08
+draft: false
+title: The Equifax breach is a disaster
+tags: ['security']
+---
+
+**[Mike Masnick, Techdirt:](https://www.techdirt.com/articles/20170908/17363538172/equifax-security-breach-is-complete-disaster-will-almost-certainly-get-worse.shtml)**
+
+> At some point, we need to rethink why we've given Equifax, Experian and TransUnion so much power over so much of our everyday lives. You can't opt-out. They collect most of their data without us knowing and in secret. You can't avoid them. And now we know that at least one of them doesn't know how to secure that data.<!-- excerpt -->

@@ -62,6 +62,13 @@ module.exports = {
       }),
     },
   },
-  plugins: [require('@tailwindcss/typography'), require('tailwind-dracula')('dracula')],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('tailwind-dracula')('dracula'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
   content: ['./src/**/*.md', './src/**/*.html', './src/_includes/**/*.liquid'],
 }
