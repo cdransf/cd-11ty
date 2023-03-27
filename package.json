@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "build": "rm -rf .cache && ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o _site/assets/styles/tailwind.css",
-    "prepare": "husky install"
+    "prepare": "husky install && touch ./.git/COMMIT_EDITMSG"
   },
   "keywords": [],
   "author": "Cory Dransfeldt",
