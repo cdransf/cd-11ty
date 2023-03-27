@@ -13,7 +13,7 @@ For now, I've approached filtering my mail by applying regular expressions to re
 
 ## Alias-specific rules
 
-I have four aliases that I regularly provide to different services. One is for newsletters and routes them to [Readwise's Reader app](https://readwise.io/read), another routes directly to my saved articles in the same app, another routes different messages to my [Things](https://culturedcode.com/things/) inbox and a final one serves as the recovery email on my grandfather's accounts (in the event anything goes awry).
+I have four aliases that I regularly provide to different services. One is for newsletters and routes them to [Matter's app](https://getmatter.com), another routes directly to my saved articles in the same app, another routes different messages to my [Todoist](https://todoist) inbox and a final one serves as the recovery email on my grandfather's accounts (in the event anything goes awry).
 
 These work by checking that the `To/CC/BCC` matches the appropriate alias before filing them off to `Archive/Newsletters`, `Archive/Saves` or `Notifications`, respectively. These folders are configured to auto-purge their contents at regular intervals as they are typically consumed in the context of the application that they're forwarded to (and are only filed into folders for reference in the event something goes wrong in said applications).
 

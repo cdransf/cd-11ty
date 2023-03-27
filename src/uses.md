@@ -69,6 +69,6 @@ Software and services that I use for work and my own enjoyment.
 - [Letterboxd](https://letterboxd.com)
 - [Oku](https://oku.club)
 - [Glass](https://glass.photo)
-- [Reader](https://readwise.io/read)
+- [Matter](https://getmatter.com)
 
 Check out [uses.tech](https://uses.tech) for more lists like this one.
