@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "./well-known/webfinger",
-      "destination": "https://social.lol/.well-known/webfinger?resource=acct:cory@social.lol/"
+      "destination": "https://social.lol/.well-known/webfinger?resource=acct%3Acory%40social.lol"
     }
   ],
   "redirects": [
