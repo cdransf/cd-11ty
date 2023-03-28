@@ -18,11 +18,4 @@ deployed on Vercel.
 - [Building my /now page using Eleventy](https://coryd.dev/posts/2023/building-my-now-page-using-eleventy/)
 <!-- BLOGPOSTS:END -->
 
-### Built with
-
-- [VS Code](https://code.visualstudio.com)
-- [iTerm](https://iterm2.com)
-- [11ty](https://www.11ty.dev)
-- [Vercel](https://vercel.com)
-- [GitHub](https://github.com)
-- [git](https://git-scm.com)
+[Now](https://coryd.dev/now) • [About](https://coryd.dev/about) • [Uses](https://coryd.dev/uses) • [Referrals](https://coryd.dev/referrals)
