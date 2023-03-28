@@ -9,6 +9,8 @@ Hi! I'm Cory. 👋🏻
 This is the code for my personal website and portfolio. Built using 11ty and
 deployed on Vercel.
 
+[Now](https://coryd.dev/now) • [About](https://coryd.dev/about) • [Uses](https://coryd.dev/uses) • [Referrals](https://coryd.dev/referrals)
+
 ## My latest posts
 <!-- BLOGPOSTS:START -->
 - [Lazy select-based pagination in Eleventy](https://coryd.dev/posts/2023/lazy-select-based-pagination-eleventy/)
@@ -18,4 +20,3 @@ deployed on Vercel.
 - [Building my /now page using Eleventy](https://coryd.dev/posts/2023/building-my-now-page-using-eleventy/)
 <!-- BLOGPOSTS:END -->
 
-[Now](https://coryd.dev/now) • [About](https://coryd.dev/about) • [Uses](https://coryd.dev/uses) • [Referrals](https://coryd.dev/referrals)
