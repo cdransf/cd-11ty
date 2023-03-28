@@ -1,4 +1,10 @@
 {
+  "rewrites": [
+    {
+      "source": "./well-known/webfinger",
+      "destination": "https://social.lol/.well-known/webfinger?resource=acct:cory@social.lol"
+    }
+  ],
   "redirects": [
     {
       "source": "/blog/fixing-safari-icloud-syncing",
