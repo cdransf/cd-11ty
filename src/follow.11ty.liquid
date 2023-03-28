@@ -12,7 +12,7 @@ permalink: '/follow.json'
   {
   "title": "{{ item.title }}",
   "url": "{{ item.url }}"
-  }{% if not loop.last %},{% endif %}
+  }{% if not forloop.last %},{% endif %}
 {% endfor %}
 ]
 }

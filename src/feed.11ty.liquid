@@ -12,7 +12,7 @@ permalink: '/feed.json'
   {
   "title": "{{ item.data.title }}",
   "url": "{{ item.url }}"
-  }{% if not loop.last %},{% endif %}
+  }{% if not forloop.last %},{% endif %}
 {% endfor %}
 ]
 }
