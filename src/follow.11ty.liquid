@@ -3,8 +3,12 @@ permalink: '/follow.json'
 ---
 {% assign posts = follow.posts %}
 {
-"posts": [
-{% for item in posts %}
+"version": "https://jsonfeed.org/version/1",
+"title": "All activity • Cory Dransfeldt"
+"icon": "https://coryd.dev/static/images/avatar.webp",
+"home_page_url": "https://coryd.dev",
+"feed_url": "https://coryd.dev/follow.json",
+"items": [{% for item in posts %}
   {
   "title": "{{ item.title }}",
   "url": "{{ item.url }}"

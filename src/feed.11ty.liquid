@@ -3,8 +3,12 @@ permalink: '/feed.json'
 ---
 {% assign posts = collections.posts | reverse %}
 {
-"posts": [
-{% for item in posts %}
+"version": "https://jsonfeed.org/version/1",
+"title": "All posts • Cory Dransfeldt"
+"icon": "https://coryd.dev/static/images/avatar.webp",
+"home_page_url": "https://coryd.dev",
+"feed_url": "https://coryd.dev/feed.json",
+"items": [{% for item in posts %}
   {
   "title": "{{ item.data.title }}",
   "url": "{{ item.url }}"
