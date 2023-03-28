@@ -8,6 +8,13 @@ module.exports = async function () {
   const entries = feed.getEntries()
   const res = await entries
   const activity = { posts: [] }
-  res.forEach((entry) => activity.posts.push({ title: entry.title, url: entry.url }))
+  res.forEach((entry) =>
+    activity.posts.push({
+      id: entry.url,
+      title: entry.title,
+      url: entry.url,
+      date_published: entry.published,
+    })
+  )
   return activity
 }
