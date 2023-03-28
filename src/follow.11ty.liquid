@@ -6,7 +6,7 @@ permalink: '/follow.json'
 "posts": [
 {% for item in posts %}
   {
-  "title": "{{ item.data.title }}",
+  "title": "{{ item.title }}",
   "url": "{{ item.url }}"
   }{% if not loop.last %},{% endif %}
 {% endfor %}
