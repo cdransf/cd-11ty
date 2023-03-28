@@ -10,7 +10,7 @@ permalink: '/feed.json'
 "feed_url": "https://coryd.dev/feed.json",
 "items": [{% for item in posts %}
   {
-  "id": "{{ site.url }}{{ item.url }}"
+  "id": "{{ site.url }}{{ item.url }}",
   "title": "{{ item.data.title }}",
   "url": "{{ site.url }}{{ item.url }}",
   "content_html": "",
