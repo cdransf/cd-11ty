@@ -6,8 +6,7 @@
 
 Hi! I'm Cory. 👋🏻
 
-This is the code for my personal website and portfolio. Built using 11ty and
-deployed on Vercel.
+This is the code for my personal website and portfolio. Built using [11ty](https://www.11ty.dev) and deployed on [Vercel](https://vercel.com).
 
 [Now](https://coryd.dev/now) • [About](https://coryd.dev/about) • [Uses](https://coryd.dev/uses) • [Referrals](https://coryd.dev/referrals)
 
