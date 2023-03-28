@@ -12,7 +12,7 @@ permalink: '/follow.json'
   {
   "id": "{{ item.id }}",
   "title": "{{ item.title }}",
-  "url": "{{ item.url }}"
+  "url": "{{ item.url }}",
   "date_published": {{ item.date_published | date: "%m.%d.%Y" }}
   }{% if not forloop.last %},{% endif %}
 {% endfor %}

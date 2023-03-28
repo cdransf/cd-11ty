@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "./well-known/webfinger",
+      "source": "/.well-known/webfinger",
       "destination": "https://social.lol/.well-known/webfinger?resource=cory@social.lol"
     }
   ],
