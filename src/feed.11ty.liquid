@@ -13,7 +13,7 @@ permalink: '/feed.json'
   "id": "{{ site.url }}{{ item.url }}"
   "title": "{{ item.data.title }}",
   "url": "{{ site.url }}{{ item.url }}",
-  "content_html": "{{ item.data.post_excerpt | mdToHtml | escape }}",
+  "content_html": "",
   "date_published" "{{ item.date | date: "%Y-%m-%dT%H:%M" }}"
   }{% if not forloop.last %},{% endif %}
 {% endfor %}
