@@ -1,0 +1,14 @@
+---
+permalink: '/follow.json'
+---
+{% assign posts = follow.posts %}
+{
+"posts": [
+{% for item in posts %}
+  {
+  "title": "{{ item.data.title }}",
+  "url": "{{ item.url }}"
+  }{% if not loop.last %},{% endif %}
+{% endfor %}
+]
+}

@@ -1,0 +1,19 @@
+name: Manual follow feed to Mastodon
+on: [workflow_dispatch]
+jobs:
+  JSONFeed2Mastodon:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Feed to Mastodon
+        uses: nhoizey/github-action-feed-to-mastodon@v2
+        with:
+          feedUrl: "https://coryd.dev/follow.json"
+          mastodonInstance: "https://social.lol"
+          mastodonToken: ${{ secrets.MASTODON_TOKEN }}
+          testMode: true
+      - name: Pull any changes from Git
+        run: git pull
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v4
