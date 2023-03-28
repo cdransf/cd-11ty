@@ -17,14 +17,14 @@ They also offer [extensive documentation](https://www.fastmail.com/help/domain_m
 
 **MX:**
 
-```
+```text
 example.com. IN MX 10 in1-smtp.messagingengine.com
 example.com. IN MX 10 in1-smtp.messagingengine.com
 ```
 
 **SPF:**
 
-```
+```text
 @ TXT "v=spf1 include:spf.messagingengine.com -all"
 ```
 
@@ -32,9 +32,9 @@ example.com. IN MX 10 in1-smtp.messagingengine.com
 
 These will be specific to your domain and can be found and set as follows:
 
-1.  Login to your FastMail account and go to Options –> Virtual Domains (or Manage –> Domains for a family/business account).
-2.  Scroll to the bottom, and you’ll see a new "DKIM signing keys" section. For each domain you have, you’ll see a DKIM public key.
-3.  Login to your DNS provider, and create a new TXT record for each domain listed and use the value in the "Public Key" column as the TXT record data to publish.
+1. Login to your FastMail account and go to Options –> Virtual Domains (or Manage –> Domains for a family/business account).
+2. Scroll to the bottom, and you’ll see a new "DKIM signing keys" section. For each domain you have, you’ll see a DKIM public key.
+3. Login to your DNS provider, and create a new TXT record for each domain listed and use the value in the "Public Key" column as the TXT record data to publish.
 
 **Bonus points**
 

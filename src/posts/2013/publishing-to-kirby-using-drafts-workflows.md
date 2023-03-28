@@ -11,7 +11,7 @@ My notes template uses four different text file names to differentiate between p
 
 **Text post workflow:**
 
-```
+```text
 'textastic://x-callback-url/new?name=note.text.txt&amp;text=Title:%20[[title]]%0D----%0DDate:%20[[date|%m.%d.%Y]]%0D----%0DText:%20[[body]]'
 ```
 
@@ -23,7 +23,7 @@ _Consectetur adipiscing elit. Suspendisse imperdiet ullamcorper accumsan. Duis e
 
 ... the workflow above would create a text file in Textastic named note.text.txt that contains:
 
-```
+```markdown
 Title: Lorem ipsum dolor sit amet
 ----
 Date: 08.20.2013
@@ -41,7 +41,7 @@ _Consectetur adipiscing elit. Suspendisse imperdiet ullamcorper accumsan. Duis e
 
 ... as:
 
-```
+```markdown
 Title: Lorem ipsum dolor sit amet
 ----
 Date: 08.20.2013
@@ -51,19 +51,19 @@ Link: http://google.com
 Text: Consectetur adipiscing elit. Suspendisse imperdiet ullamcorper accumsan. Duis et rhoncus odio. Vestibulum rhoncus nisl diam, non malesuada odio condimentum in. Morbi ut nisi nec erat viverra blandit at dapibus nibh.
 ```
 
-It's worth noting that this particular workflow is a bit messy inasmuch as I've included an arbitrary number of Drafts line tags to account for any additional paragraphs of text after the first. Using the [[body]] tag in this instance would result in the "Link: http://google.com" line being included with the text.
+It's worth noting that this particular workflow is a bit messy inasmuch as I've included an arbitrary number of Drafts line tags to account for any additional paragraphs of text after the first. Using the [[body]] tag in this instance would result in the "Link: <http://google.com>" line being included with the text.
 
 The final two post types / work flows I use are identical to the first aside from the name of the file they supply to Textastic. They are as follows:
 
 **Image post workflow:**
 
-```
+```text
 'textastic://x-callback-url/new?name=note.image.txt&amp;text=Title:%20[[title]]%0D----%0DWhen:%20[[date|%m.%d.%Y]]%0D----%0DText:%20[[body]]'
 ```
 
 **Gallery post workflow:**
 
-```
+```text
 textastic://x-callback-url/new?name=note.gallery.txt&amp;text=Title:%20[[title]]%0D----%0DWhen:%20[[date|%m.%d.%Y]]%0D----%0DText:%20[[body]]
 ```
 
