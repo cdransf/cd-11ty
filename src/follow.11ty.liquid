@@ -13,7 +13,8 @@ permalink: '/follow.json'
   "id": "{{ item.id }}",
   "title": "{{ item.title }}",
   "url": "{{ item.url }}",
-  "date_published": "{{ item.date_published | date: "%m.%d.%Y" }}"
+  "content_html": "{{ item.content_html | mdToHtml }}",
+  "date_published": "{{ item.date_published | date: "%Y-%m-%dT%H:%M" }}"
   }{% if not forloop.last %},{% endif %}
 {% endfor %}
 ]

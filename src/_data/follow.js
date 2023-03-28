@@ -13,6 +13,7 @@ module.exports = async function () {
       id: entry.url,
       title: entry.title,
       url: entry.url,
+      content_html: entry.content || '',
       date_published: entry.published,
     })
   )
