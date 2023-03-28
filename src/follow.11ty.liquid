@@ -14,7 +14,7 @@ permalink: '/follow.json'
   "title": "{{ item.title }}",
   "url": "{{ item.url }}",
   "content_html": "",
-  "date_published": "{{ item.date_published | date: "%Y-%m-%dT%H:%M" }}"
+  "date_published": "{{ item.date_published | date: "%Y-%m-%dT%H:%M:%S-08:00" }}"
   }{% if not forloop.last %},{% endif %}
 {% endfor %}
 ]
