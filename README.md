@@ -9,7 +9,11 @@ Hi! I'm Cory. 👋🏻
 This is the code for my personal website and portfolio. Built using 11ty and
 deployed on Vercel.
 
-**Built with:**
+## My latest posts
+<!-- BLOGPOSTS:START -->
+<!-- BLOGPOSTS:END -->
+
+### Built with
 
 - [VS Code](https://code.visualstudio.com)
 - [iTerm](https://iterm2.com)
