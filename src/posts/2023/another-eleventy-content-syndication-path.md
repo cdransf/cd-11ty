@@ -65,6 +65,8 @@ permalink: '/follow.json'
 
 Finally, we skip the Make-dependent portion of this exercise and leverage a [cron-based action](https://github.com/cdransf/coryd.dev/blob/66085dfdb1fab7bd46b8aa3e4b5e40ced906fb93/.github/workflows/scheduled-post.yaml#L21):
 
+{% raw %}
+
 ```yaml
 name: Scheduled follow feed to Mastodon
 on:
@@ -88,6 +90,8 @@ jobs:
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v4
 ```
+
+{% endraw %}
 
 GitHub will now check the `follow.json` feed and post updates hourly.
 
