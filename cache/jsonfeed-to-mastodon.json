@@ -2872,7 +2872,10 @@
     "content_html": "",
     "content_text": "Letterboxd: Avatar: The Way of Water, 2022 - ★★★★ https://letterboxd.com/cdme/film/avatar-the-way-of-water/",
     "date_published": "2023-03-29T14:27:53-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110108828482515633"
+    ],
+    "lastTootTimestamp": 1680127387824
   },
   "https://coryd.dev/posts/2023/another-eleventy-content-syndication-path/": {
     "id": "https://coryd.dev/posts/2023/another-eleventy-content-syndication-path/",
