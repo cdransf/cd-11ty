@@ -14,7 +14,6 @@ jobs:
           feedUrl: "https://coryd.dev/follow.json"
           mastodonInstance: "https://social.lol"
           mastodonToken: ${{ secrets.MASTODON_TOKEN }}
-          globalDelayToots: 0
       - name: Pull any changes from Git
         run: git pull
       - name: Commit and push
