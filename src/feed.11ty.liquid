@@ -14,6 +14,7 @@ permalink: '/feed.json'
   "title": "{{ item.data.title }}",
   "url": "{{ site.url }}{{ item.url }}",
   "content_html": "",
+  "content_text": "{{ item.data.title }} {{ site.url }}{{ item.url }}",
   "date_published": "{{ item.date | date: "%Y-%m-%dT%H:%M:%S-08:00" }}"
   }{% if not forloop.last %},{% endif %}
 {% endfor %}
