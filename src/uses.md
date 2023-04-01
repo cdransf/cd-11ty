@@ -24,6 +24,7 @@ Software and services that I use for work and my own enjoyment.
 
 - [Todoist](https://todoist.com)
 - [Obsidian](https://obsidian.md)
+- [Plexamp](https://plexamp.com)
 - [Fantastical](https://flexibits.com/)
 - [Ivory](https://tapbots.com/ivory)
 - [Flighty](https://www.flightyapp.com)
@@ -62,7 +63,7 @@ Software and services that I use for work and my own enjoyment.
 - [1Password](https://1password.com)
 - [IVPN](https://www.ivpn.net)
 - [Jumpshare](https://jumpshare.com)
-- [Apple Music](https://music.apple.com)
+- [Plex](https://www.plex.tv)
 - [Slack](http://slack.com)
 - [Discord](http://discord.com)
 - [Trakt](https://trakt.tv)
