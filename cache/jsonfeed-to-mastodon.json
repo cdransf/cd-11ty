@@ -2672,5 +2672,16 @@
       "https://social.lol/users/cory/statuses/110138555661752406"
     ],
     "lastTootTimestamp": 1680580988566
+  },
+  "https://letterboxd.com/cdme/film/crank/": {
+    "id": "https://letterboxd.com/cdme/film/crank/",
+    "title": "Letterboxd: Crank, 2006 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/crank/",
+    "content_text": "Letterboxd: Crank, 2006 - ★★★ https://letterboxd.com/cdme/film/crank/",
+    "date_published": "2023-04-04T12:05:56-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110140915590839847"
+    ],
+    "lastTootTimestamp": 1680616998241
   }
 }
