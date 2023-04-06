@@ -1,4 +1,4 @@
-name: Scheduled broken link check
+name: Broken link check
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check links on site
-      uses: mattorb/actions-muffet@v1.3.1
+      uses: mattorb/actions-muffet@v2.4.2
       with:
         args: >
           --timeout 20
