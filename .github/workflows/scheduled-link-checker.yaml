@@ -14,6 +14,7 @@ jobs:
       uses: ScholliYT/Broken-Links-Crawler-Action@v3
       with:
         website_url: 'https://coryd.dev'
+        include_url_prefix: 'https://coryd.dev'
         resolve_before_filtering: 'true'
         verbose: 'true'
         max_retry_time: 30
