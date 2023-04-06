@@ -5,7 +5,7 @@ title: FCC chair offers poor excuses as he seeks to strip consumer protections
 tags: ['politics', 'privacy']
 ---
 
-**[TechDirt:](https://www.techdirt.com/articles/20170228/07594036809/fcc-boss-falsely-claims-his-attacks-net-neutrality-have-already-made-wireless-sector-more-competitive.shtml)**
+**[Techdirt:](https://www.techdirt.com/2017/03/01/fcc-boss-falsely-claims-his-attacks-net-neutrality-have-already-made-wireless-sector-more-competitive/)**
 
 > Eliminate functional regulatory oversight and refuse to address limited competition? The end result is... Comcast Corporation and its record-shatteringly-bad customer service, high prices, and usage caps.<!-- excerpt -->
 

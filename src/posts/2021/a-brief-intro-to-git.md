@@ -101,5 +101,4 @@ Each of these commands has numerous options associated with it and allows for br
 - [Pro Git book](https://git-scm.com/book)
 - [Oh shit, git!](http://ohshitgit.com/)
 - [Github guides](https://guides.github.com)
-- [Git Real](https://courses.codeschool.com/courses/git-real)
 - [Git documentation](https://git-scm.com/documentation)

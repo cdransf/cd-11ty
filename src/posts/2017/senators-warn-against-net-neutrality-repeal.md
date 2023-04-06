@@ -5,7 +5,7 @@ title: Senators warn against net neutrality repeal
 tags: ['politics', 'net neutrality']
 ---
 
-[TechDirt:](https://www.techdirt.com/blog/netneutrality/articles/20170208/05490136662/wyden-other-senators-warn-that-net-neutrality-repeal-will-make-sopa-backlash-look-like-fireside-snuggle.shtml)
+[TechDirt:](https://www.techdirt.com/2017/02/09/wyden-other-senators-warn-that-net-neutrality-repeal-will-make-sopa-backlash-look-like-fireside-snuggle/)
 
 > In light of a Congress that long ago made it clear that it prioritizes telecom cash contributions over consumers, the best "solution" for net neutrality at this juncture would be leaving the existing rules -- and the FCC's authority over broadband providers -- intact.<!-- excerpt -->
 

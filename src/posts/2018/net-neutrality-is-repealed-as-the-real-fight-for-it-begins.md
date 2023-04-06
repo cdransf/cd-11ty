@@ -5,7 +5,7 @@ title: Net neutrality is repealed as the real fight for it begins
 tags: ['politics', 'net neutrality']
 ---
 
-**[Techdirt:](https://www.techdirt.com/articles/20180611/08382240010/net-neutrality-rules-die-today-backlash-is-just-getting-started.shtml)**
+**[Techdirt:](https://www.techdirt.com/2018/06/11/net-neutrality-rules-die-today-backlash-is-just-getting-started/)**
 
 > So while many are understandably frustrated today, the elimination of the FCC's 2015 rules shouldn't be seen the end of net neutrality, or the end of the road. It's more like another chapter in a story that has neither a beginning nor an end. Net neutrality isn't something that simply "ends" with the creation or elimination of government guidelines. Net neutrality violations are only a symptom of a lack of competition in broadband and decades of regulatory capture.<!-- excerpt -->
 

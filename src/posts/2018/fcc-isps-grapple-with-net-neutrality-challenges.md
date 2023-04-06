@@ -11,7 +11,7 @@ tags: ['politics', 'net neutrality']
 
 > The 12 lawsuits were filed by more than three dozen entities, including state attorneys general, consumer advocacy groups, and tech companies.
 
-**[Karl Bode, techdirt:](https://www.techdirt.com/articles/20180307/09452639377/telecom-lobbyists-whine-about-state-net-neutrality-efforts-they-helped-create.shtml)**
+**[Karl Bode, Techdirt:](https://www.techdirt.com/2018/03/12/telecom-lobbyists-whine-about-state-net-neutrality-efforts-they-helped-create/)**
 
 > Granted having disparate state-level protections may in some ways be cumbersome, but that's again something ISPs like AT&T, Verizon and Comcast should have thought a little harder about before killing extremely popular and modest (by international standards) federal protections. Large ISP lobbyists created this mess and, unsurprisingly, they're simply refusing to own it.
 

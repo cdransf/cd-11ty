@@ -9,4 +9,4 @@ tags: ['politics']
 
 I really enjoyed this episode — it's an engaging deep dive into the history of net neutrality and where it stands under the oversight (or lack thereof) of the new FCC chairman, Ajit Pai.
 
-_[You can subscribe to the Techdirt podcast here.](https://www.techdirt.com/blog/podcast/)_<!-- excerpt -->
+_[You can subscribe to the Techdirt podcast here.](https://www.techdirt.com/edition/podcast/)_<!-- excerpt -->

@@ -5,7 +5,7 @@ title: FCC continues to completely disregard public opposition to net neutrality
 tags: ['politics', 'net neutrality']
 ---
 
-**[Karl Bode via Techdirt:](https://www.techdirt.com/articles/20170830/10391738114/985-original-comments-to-fcc-oppose-killing-net-neutrality.shtml)**
+**[Karl Bode via Techdirt:](https://www.techdirt.com/2017/08/31/985-original-comments-to-fcc-oppose-killing-net-neutrality/)**
 
 > Let's not mince words: the FCC's plan to gut net neutrality protections in light of severe public opposition is likely one of the more bare-knuckled acts of cronyism in modern technological and political history. That's because the rules have overwhelming, bipartisan support from the vast majority of consumers, most of whom realize the already imperfect rules are some of the only consumer protections standing between consumers and giant, uncompetitive companies like Comcast. Repealing the rules only serves one interest: that of one of the least liked, least-competitive industries in America.<!-- excerpt -->
 
