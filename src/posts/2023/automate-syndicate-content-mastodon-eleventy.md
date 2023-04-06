@@ -5,7 +5,7 @@ draft: false
 tags: ['automation', 'Mastodon', 'Eleventy']
 ---
 
-I've discussed [building a now page using Eleventy](/posts/2023/building-my-now-page-using-eleventy/) but I also syndicate a subset of that content out to Mastodon using [`@11ty/eleventy-activity-feed`](https://www.npmjs.com/package/@11ty/eleventy-activity-feed) and [Make](https://make.com).<!-- excerpt --> The [`@11ty/eleventy-activity-feed`](https://www.npmjs.com/package/@11ty/eleventy-activity-feed) allows you to aggregate various web feeds into a single feed, inserting entries from the feeds sequentially as they're published. My `follow-feed.11ty.js`  looks like this:
+I've discussed [building a now page using Eleventy](/posts/2023/building-my-now-page-using-eleventy/) but I also syndicate a subset of that content out to Mastodon using [`@11ty/eleventy-activity-feed`](https://www.npmjs.com/package/@11ty/eleventy-activity-feed) and [Make](https://make.com/en/).<!-- excerpt --> The [`@11ty/eleventy-activity-feed`](https://www.npmjs.com/package/@11ty/eleventy-activity-feed) allows you to aggregate various web feeds into a single feed, inserting entries from the feeds sequentially as they're published. My `follow-feed.11ty.js`  looks like this:
 
 ```javascript
 module.exports = class {
