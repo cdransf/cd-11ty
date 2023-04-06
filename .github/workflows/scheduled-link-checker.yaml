@@ -15,7 +15,7 @@ jobs:
       with:
         website_url: 'https://coryd.dev'
         include_url_prefix: 'https'
-        exclude_url_prefix: 'mailto,https://make.com'
+        exclude_url_prefix: 'mailto,https://cdn.coryd.dev,https://make.com,https://lakers.com'
         verbose: 'true'
         max_retry_time: 30
         max_retries: 5
