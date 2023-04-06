@@ -1,0 +1,18 @@
+name: Scheduled broken link check
+
+on:
+  push:
+    branches:
+    - master
+  schedule:
+    - cron: '0 13 * * 6'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check links on site
+      uses: mattorb/actions-muffet@v1.3.1
+      with:
+        args: >
+          --timeout 20
+          https://coryd.dev
