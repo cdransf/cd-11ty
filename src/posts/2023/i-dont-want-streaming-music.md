@@ -17,9 +17,9 @@ I've got a bucket of files locally that I want to listen to — I want a bucket 
 
 This leaves me in a place where I've ruled out the popular streaming music providers and looking for something considerably more niche. Here's what I've explored:
 
-- **VOX Music Cloud:** this does what I need, but I don't like any of their player software. It works, but it doesn't feel *right* — their desktop app feels like a mini player, the new beta is missing features and the iOS app isn't enjoyable to navigate.
-- **Astiga:** nicely designed, supports the [Subsonic music API](http://www.subsonic.org/pages/api.jsp) and lets you source music from cloud storage. **Awesome.** Not awesome: I don't particularly like any of the available iOS apps and scrobbling from iOS to Last.fm is inconsistent. Not perfect — absolutely worth keeping an eye on as it develops.
-- **Roon:** a very promising service, but one geared more towards the audiophile audience and with hardware requirements I'm not interested in investing in at this point.
+- **[VOX Music Cloud:](https://vox.rocks)** this does what I need, but I don't like any of their player software. It works, but it doesn't feel *right* — their desktop app feels like a mini player, the new beta is missing features and the iOS app isn't enjoyable to navigate.
+- **[Astiga:](https://asti.ga)** nicely designed, supports the [Subsonic music API](http://www.subsonic.org/pages/api.jsp) and lets you source music from cloud storage. **Awesome.** Not awesome: I don't particularly like any of the available iOS apps and scrobbling from iOS to Last.fm is inconsistent. Not perfect — absolutely worth keeping an eye on as it develops.
+- **[Roon:](https://roonlabs.com)** a very promising service, but one geared more towards the audiophile audience and with hardware requirements I'm not interested in investing in at this point.
 
 Pretty limited, right? My solution and the one I'm really enjoying is [Plexamp](https://plexamp.com/). I knew Plex supported music playback — I didn't realize they had an excellent, bespoke app to support it.[^5] Plex scrobbles to Last.fm from the server, auto-populates artist metadata, does a stellar job matching similar artists and building playlists from *your own collection*. That's it, that's what I wanted. I don't want the collection to drift, I'll add to it when I find music that I want to listen to more than once and *sometimes*, I want to throw on a station or playlist constrained to that set of artists.
 
