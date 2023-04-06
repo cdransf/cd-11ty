@@ -2683,5 +2683,27 @@
       "https://social.lol/users/cory/statuses/110140915590839847"
     ],
     "lastTootTimestamp": 1680616998241
+  },
+  "https://coryd.dev/posts/2023/i-dont-want-streaming-music/": {
+    "id": "https://coryd.dev/posts/2023/i-dont-want-streaming-music/",
+    "title": "Blog: I don't want streaming music, I just want to stream my music",
+    "url": "https://coryd.dev/posts/2023/i-dont-want-streaming-music/",
+    "content_text": "Blog: I don't want streaming music, I just want to stream my music https://coryd.dev/posts/2023/i-dont-want-streaming-music/",
+    "date_published": "2023-04-05T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110148963390717348"
+    ],
+    "lastTootTimestamp": 1680739797986
+  },
+  "https://letterboxd.com/cdme/film/argo/": {
+    "id": "https://letterboxd.com/cdme/film/argo/",
+    "title": "Letterboxd: Argo, 2012 - ★★★★",
+    "url": "https://letterboxd.com/cdme/film/argo/",
+    "content_text": "Letterboxd: Argo, 2012 - ★★★★ https://letterboxd.com/cdme/film/argo/",
+    "date_published": "2023-04-05T23:15:29-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110149457853141404"
+    ],
+    "lastTootTimestamp": 1680747342814
   }
 }
