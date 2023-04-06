@@ -2683,5 +2683,16 @@
       "https://social.lol/users/cory/statuses/110140915590839847"
     ],
     "lastTootTimestamp": 1680616998241
+  },
+  "https://coryd.dev/posts/2023/i-dont-want-streaming-music/": {
+    "id": "https://coryd.dev/posts/2023/i-dont-want-streaming-music/",
+    "title": "Blog: I don't want streaming music, I just want to stream my music",
+    "url": "https://coryd.dev/posts/2023/i-dont-want-streaming-music/",
+    "content_text": "Blog: I don't want streaming music, I just want to stream my music https://coryd.dev/posts/2023/i-dont-want-streaming-music/",
+    "date_published": "2023-04-05T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110148963390717348"
+    ],
+    "lastTootTimestamp": 1680739797986
   }
 }
