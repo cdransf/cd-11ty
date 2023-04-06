@@ -2,7 +2,7 @@
 
 [![Cory Dransfeldt](/src/assets/img/social-card.png)](https://coryd.dev)
 
-[![scheduled-build](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-build.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-build.yaml) [![Scheduled follow feed to Mastodon](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-post.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-post.yaml) [![Blog posts to readme](https://github.com/cdransf/coryd.dev/actions/workflows/blog-posts-to-readme.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/blog-posts-to-readme.yaml)
+[![scheduled-build](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-build.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-build.yaml) [![Scheduled follow feed to Mastodon](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-post.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-post.yaml) [![Blog posts to readme](https://github.com/cdransf/coryd.dev/actions/workflows/blog-posts-to-readme.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/blog-posts-to-readme.yaml) [![Broken link check](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-link-checker.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-link-checker.yaml)
 
 Hi! I'm Cory. 👋🏻
 
