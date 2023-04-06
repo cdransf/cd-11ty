@@ -11,8 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check links on site
-      uses: mattorb/actions-muffet@v2.4.2
+      uses: ScholliYT/Broken-Links-Crawler-Action@v3
       with:
-        args: >
-          --timeout 20
-          https://coryd.dev
+        website_url: 'https://coryd.dev'
+        resolve_before_filtering: 'true'
+        verbose: 'true'
+        max_retry_time: 30
+        max_retries: 5
+        max_depth: 1
