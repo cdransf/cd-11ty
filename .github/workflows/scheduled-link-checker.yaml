@@ -3,7 +3,7 @@ name: Scheduled broken link check
 on:
   push:
     branches:
-    - master
+    - main
   schedule:
     - cron: '0 13 * * 6'
 jobs:
