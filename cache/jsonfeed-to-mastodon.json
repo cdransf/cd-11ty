@@ -2716,5 +2716,16 @@
       "https://social.lol/users/cory/statuses/110166866220931721"
     ],
     "lastTootTimestamp": 1681012973396
+  },
+  "https://oku.club/book/the-creative-act-by-rick-rubin-3EzCg": {
+    "id": "https://oku.club/book/the-creative-act-by-rick-rubin-3EzCg",
+    "title": "Oku: The Creative Act",
+    "url": "https://oku.club/book/the-creative-act-by-rick-rubin-3EzCg",
+    "content_text": "Oku: The Creative Act https://oku.club/book/the-creative-act-by-rick-rubin-3EzCg",
+    "date_published": "2023-04-09T16:47:05-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110170170009118666"
+    ],
+    "lastTootTimestamp": 1681063385216
   }
 }
