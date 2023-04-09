@@ -2705,5 +2705,16 @@
       "https://social.lol/users/cory/statuses/110149457853141404"
     ],
     "lastTootTimestamp": 1680747342814
+  },
+  "https://letterboxd.com/cdme/film/65/": {
+    "id": "https://letterboxd.com/cdme/film/65/",
+    "title": "Letterboxd: 65, 2023 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/65/",
+    "content_text": "Letterboxd: 65, 2023 - ★★★ https://letterboxd.com/cdme/film/65/",
+    "date_published": "2023-04-09T01:51:27-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110166866220931721"
+    ],
+    "lastTootTimestamp": 1681012973396
   }
 }
