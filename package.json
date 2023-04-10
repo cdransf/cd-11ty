@@ -19,7 +19,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
     "@fontsource/inter": "^4.5.15",
     "eleventy-plugin-heroicons": "^1.1.0",
-    "eslint": "^8.37.0",
+    "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "postcss": "^8.4.5",
