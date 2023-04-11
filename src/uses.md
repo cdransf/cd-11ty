@@ -24,7 +24,7 @@ Software and services that I use for work and my own enjoyment.
 
 - [Todoist](https://todoist.com)
 - [Obsidian](https://obsidian.md)
-- [Plexamp](https://plexamp.com)
+- [iBroadcast](https://ibroadcast.com)
 - [Fantastical](https://flexibits.com/)
 - [Ivory](https://tapbots.com/ivory)
 - [Flighty](https://www.flightyapp.com)
