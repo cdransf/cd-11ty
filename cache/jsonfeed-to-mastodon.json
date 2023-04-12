@@ -2727,5 +2727,27 @@
       "https://social.lol/users/cory/statuses/110170170009118666"
     ],
     "lastTootTimestamp": 1681063385216
+  },
+  "https://letterboxd.com/cdme/film/shazam-fury-of-the-gods/": {
+    "id": "https://letterboxd.com/cdme/film/shazam-fury-of-the-gods/",
+    "title": "Letterboxd: Shazam! Fury of the Gods, 2023 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/shazam-fury-of-the-gods/",
+    "content_text": "Letterboxd: Shazam! Fury of the Gods, 2023 - ★★★ https://letterboxd.com/cdme/film/shazam-fury-of-the-gods/",
+    "date_published": "2023-04-11T16:09:43-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110181494554515535"
+    ],
+    "lastTootTimestamp": 1681236184062
+  },
+  "https://oku.club/book/bind-torture-kill-by-roy-wenzl-SwS01": {
+    "id": "https://oku.club/book/bind-torture-kill-by-roy-wenzl-SwS01",
+    "title": "Oku: Bind, Torture, Kill",
+    "url": "https://oku.club/book/bind-torture-kill-by-roy-wenzl-SwS01",
+    "content_text": "Oku: Bind, Torture, Kill https://oku.club/book/bind-torture-kill-by-roy-wenzl-SwS01",
+    "date_published": "2022-07-31T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110181965979967706"
+    ],
+    "lastTootTimestamp": 1681243377488
   }
 }

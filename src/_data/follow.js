@@ -3,7 +3,6 @@ module.exports = async function () {
   const feed = new ActivityFeed()
   feed.addSource('atom', 'Blog', 'https://coryd.dev/feed.xml')
   feed.addSource('rss', 'Letterboxd', 'https://letterboxd.com/cdme/rss')
-  feed.addSource('rss', 'Glass', 'https://glass.photo/coryd/rss')
   feed.addSource('rss', 'Oku', 'https://oku.club/rss/collection/NvEmF')
   const entries = feed.getEntries()
   const res = await entries

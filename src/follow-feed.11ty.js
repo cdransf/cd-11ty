@@ -11,7 +11,6 @@ module.exports = class {
 
     feed.addSource('atom', 'Blog', 'https://coryd.dev/feed.xml')
     feed.addSource('rss', 'Letterboxd', 'https://letterboxd.com/cdme/rss')
-    feed.addSource('rss', 'Glass', 'https://glass.photo/coryd/rss')
     feed.addSource('rss', 'Oku', 'https://oku.club/rss/collection/NvEmF')
 
     return feed.toRssFeed({
