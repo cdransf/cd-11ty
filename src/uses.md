@@ -69,7 +69,6 @@ Software and services that I use for work and my own enjoyment.
 - [Trakt](https://trakt.tv)
 - [Letterboxd](https://letterboxd.com)
 - [Oku](https://oku.club)
-- [Glass](https://glass.photo)
 - [Matter](https://getmatter.com)
 - [Make](https://make.com/en/)
 
