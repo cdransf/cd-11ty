@@ -23,4 +23,4 @@ I tend to write about whatever strikes me, with a focus on development, technolo
 </h3>
 
 - [Email](mailto:hi@coryd.dev)
-- [Calendar](https://savvycal.com/coryd)
+- [Calendar](https://calendly.com/cdme)

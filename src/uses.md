@@ -55,7 +55,7 @@ Software and services that I use for work and my own enjoyment.
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Services</h3>
 
 - <a href="https://referworkspace.app.goo.gl/7BYo" onclick="fathom.trackGoal('EWREAPNX', 0)">Google Workspace</a>
-- <a href="https://savvycal.com/?r=coryd" onclick="fathom.trackGoal('UXTCQANC', 0)">SavvyCal</a>
+- [Calendly](https://calendly.com)
 - <a href="https://usefathom.com/ref/EGXCON" onclick="fathom.trackGoal('EWREAPNX', 0)">Fathom Analytics</a>
 - <a href="https://nextdns.io/?from=m56mt3z6" onclick="fathom.trackGoal('CG4FNTCN', 0)">NextDNS</a>
 - <a href="https://dnsimple.com/r/3a7cbb9e15df8f" onclick="fathom.trackGoal('MFQVXQQ9', 0)">DNSimple</a>
