@@ -16,7 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@fontsource/inter": "^4.5.15",
     "eleventy-plugin-heroicons": "^1.1.0",
     "eslint": "^8.38.0",
