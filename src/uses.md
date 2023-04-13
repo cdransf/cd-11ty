@@ -40,7 +40,6 @@ Software and services that I use for work and my own enjoyment.
 - [VS Code](https://code.visualstudio.com) + [Dracula Pro](https://draculatheme.com/pro)
 - [iTerm2](https://iterm2.com)
 - [Alfred](https://alfredapp.com)
-- [Webcatalog](https://webcatalog.io)
 - [Keyboard Maestro](https://www.keyboardmaestro.com/)
 - [Arq](https://www.arqbackup.com)
 - [Sleeve](https://replay.software/sleeve)
