@@ -2,7 +2,7 @@
 date: 2013-07-15
 draft: false
 title: Maps And Music - Explore Okkervil River's New Album
-tags: ['video', 'music', 'Okkervil River']
+tags: ['video', 'music']
 ---
 
 **[NPR:](http://www.npr.org/blogs/allsongs/2013/07/12/201582565/maps-and-music-explore-okkervil-rivers-new-album)**

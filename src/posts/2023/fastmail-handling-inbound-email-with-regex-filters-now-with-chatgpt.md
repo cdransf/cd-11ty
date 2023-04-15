@@ -2,7 +2,7 @@
 date: '2023-02-17'
 title: 'Workflows: handling inbound email on Fastmail with regular expressions (now featuring ChatGPT)'
 draft: false
-tags: ['email', 'fastmail', 'regular expressions', 'workflows', 'chatgpt']
+tags: ['Email', 'Fastmail', 'regular expressions', 'workflows', 'ChatGPT']
 ---
 
 I've been using Fastmail for years now and have explored a number of different approaches to handling mail. I've approached it by creating rules targeting lists of top level domains, I've gone with no rules at all and a heavy-handed approach to unsubscribing from messages (operating under the idea that _everything_ warrants being seen and triaged) and I've even used HEY.<!-- excerpt -->[^1]
@@ -296,7 +296,7 @@ These I've left as a simple list wherein `any` included top level domain is file
 
 That covers _most_ of what I use to manage my mail (outside of anything particularly personal). I fully expect the regular expressions I'm using could stand to be refined and I plan on continuing to do just that. But, with that said, things have worked better than I expected so far and false positives/miscategorizations have been infrequent.
 
-If you have any questions or suggestions I'm all ears. Feel free to [email me](mailto:hi@coryd.dev) or ping me on [Mastodon]().
+If you have any questions or suggestions I'm all ears. Feel free to [email me](mailto:hi@coryd.dev) or ping me on [Mastodon](https://social.lol/@cory).
 
 [^1]: Before, well, _all that_.
 [^2]: Fastmail has some helpful tips on regular expression rules [here](https://www.fastmail.help/hc/en-us/articles/360060591193-Rules-using-regular-expressions)

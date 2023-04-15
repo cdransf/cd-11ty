@@ -2,7 +2,7 @@
 date: 2020-02-18
 draft: false
 title: Facebook asks for a moat of regulations it already meets
-tags: ['tech', 'economics', 'privacy']
+tags: ['tech', 'privacy']
 ---
 
 **[TechCrunch:](https://techcrunch.com/2020/02/17/regulate-facebook/)**

@@ -2,7 +2,7 @@
 date: 2017-09-10
 draft: false
 title: RSS still beats social media for tracking news
-tags: ['rss']
+tags: ['RSS']
 ---
 
 **[David Nield, Gizmodo:](http://fieldguide.gizmodo.com/why-rss-feeds-still-beat-facebook-and-twitter-for-track-1800722740)**

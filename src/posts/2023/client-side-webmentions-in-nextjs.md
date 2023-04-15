@@ -2,7 +2,7 @@
 title: 'Adding client side webmentions to my Next.js blog'
 date: 2023-02-18
 draft: false
-tags: ['next.js', 'react', 'web development', 'indie web']
+tags: ['Next.js', 'React', 'development', 'indie web']
 ---
 
 The latest iteration of my website is built on [Next.js](https://nextjs.org), specifically [Timothy Lin](https://github.com/timlrx)'s wonderful [Tailwind/Next.js starter blog.](https://github.com/timlrx/tailwind-nextjs-starter-blog).<!-- excerpt --> I've modified it quite a bit, altering the color scheme, dropping components like analytics, comments and a few others while also building out some new pages (like my [now page](https://coryd.dev/now)). As part of this process I wanted to add support for webmentions to the template, integrating mentions from Mastodon, Medium.com and other available sources.

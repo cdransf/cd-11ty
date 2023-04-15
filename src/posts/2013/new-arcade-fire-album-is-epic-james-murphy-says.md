@@ -2,7 +2,7 @@
 date: 2013-07-16
 draft: false
 title: New Arcade Fire Album Is 'Epic,' James Murphy Says
-tags: ['music', 'Arcide Fire']
+tags: ['music']
 ---
 
 **[Rolling Stone:](http://www.rollingstone.com/music/news/new-arcade-fire-album-is-epic-james-murphy-says-20130716)**

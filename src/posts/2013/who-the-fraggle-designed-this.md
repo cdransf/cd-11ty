@@ -2,7 +2,7 @@
 date: 2013-07-24
 draft: false
 title: Who the Fraggle designed this?
-tags: ['music', 'Sufjan Stevens', 'Savages']
+tags: ['music']
 ---
 
 [Sufjan Stevens' thoughts on Savages' use of typography.](http://sufjan.com/post/56323826291/the-very-cool-savages-has-allowed-a-very-uncool) (Don't mind the unicorns throwing up rainbows in the background.)<!-- excerpt -->

@@ -2,7 +2,7 @@
 date: 2013-08-14
 draft: false
 title: The National at Jimmy Kimmel Live!
-tags: ['music', 'The National']
+tags: ['music']
 ---
 
 I was finally able to see The National for the first time. The band has been promoting their newest release, _Trouble Will Find Me_ on the road but, after having missed them at Outside Lands, the Greek Theatre and the Hollywood Forever Cemetary, my final shot to catch them on this run through California was their performance at _Jimmy Kimmel Live_.<!-- excerpt -->

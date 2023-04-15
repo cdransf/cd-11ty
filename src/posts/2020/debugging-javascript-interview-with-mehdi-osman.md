@@ -2,7 +2,7 @@
 date: 2020-03-04
 draft: false
 title: Debugging JavaScript - Interview with Mehdi Osman
-tags: ['development', 'javascript']
+tags: ['development', 'JavaScript']
 ---
 
 **[SurviveJS:](https://survivejs.com/blog/debugging-interview/)**

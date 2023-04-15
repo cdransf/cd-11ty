@@ -2,7 +2,7 @@
 date: 2013-08-13
 draft: false
 title: How The Head and the Heart made organic music
-tags: ['music', 'The Head and the Heart']
+tags: ['music']
 ---
 
 [A nice, brief interview with _Elle_:](http://www.elle.com/news/culture/the-head-and-the-heart-outside-lands-2013)

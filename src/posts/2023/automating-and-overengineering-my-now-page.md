@@ -2,7 +2,7 @@
 title: 'Automating (and probably overengineering) my /now page'
 date: '2023-02-06'
 draft: false
-tags: ['automation', 'development', 'next.js', 'javascript']
+tags: ['automation', 'development', 'Next.js', 'JavaScript']
 ---
 
 [omg.lol](https://home.omg.lol) (where I point my domain) and host most of my site content [recently launched support for /now pages](https://omglol.news/2023/01/16/now-pages-are-here).<!-- excerpt -->
@@ -17,7 +17,7 @@ Borrowing from [Robb Knight](https://rknight.me) I started by creating a paste c
 
 From there, I turned to the myriad content-based services I use to track what I'm listening to, what TV and movies I'm watching and what books I'm reading to source updates from.
 
-I'm already exposing my most recently listened tracks and actively read books on my omg.lol home page/profile. This data is fetched from a [next.js](https://nextjs.org) application hosted over at [Vercel](https://vercel.com) that exposes a number of endpoints. For my music listening data, I'm using a route at `/api/music` that looks like this:
+I'm already exposing my most recently listened tracks and actively read books on my omg.lol home page/profile. This data is fetched from a [Next.js](https://nextjs.org) application hosted over at [Vercel](https://vercel.com) that exposes a number of endpoints. For my music listening data, I'm using a route at `/api/music` that looks like this:
 
 ```typescript
 export default async function handler(req: any, res: any) {

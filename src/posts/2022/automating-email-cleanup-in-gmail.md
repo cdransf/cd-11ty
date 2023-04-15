@@ -2,7 +2,7 @@
 title: 'Automating email cleanup in Gmail'
 date: '2022-03-28'
 draft: false
-tags: ['gmail', 'automation']
+tags: ['Gmail', 'automation']
 ---
 
 Lately I've been leaning into automating the cleanup of email I receive in Gmail using a combination of Inbox-era categories that the application still exposes via search and [Google Apps Script](https://www.google.com/script/start/).<!-- excerpt -->
@@ -11,7 +11,7 @@ I wasn't using Gmail when Inbox was available (I'm sure I missed out) and know n
 
 I've created filter rules leveraging all of these legacy filters to automatically categorize messages the same way the current tabs do. These rules look like the following:
 
-```
+```plaintext
 # emails gmail categorizes as travel related
 Matches: category:travel
 Do this: Apply label "Traveling"
@@ -31,14 +31,14 @@ Do this: Apply label "Reservations"
 
 Expanding on this, I also have a few forwarding addresses in place to conditionally handle other types of messages. First up, I use some compiled search terms to redirect emails indicating something I've ordered has shipped off to [Deliveries.app](https://junecloud.com). That rule looks like this:
 
-```
+```plaintext
 Matches: subject:({"has shipped" "was shipped" "on its way" "tracking number" "shipment from order" "order shipped confirmation" "Shipped:"})
 Do this: Skip Inbox, Mark as read, Apply label "Deliveries", Forward to <UNIQUE-ID>@junecloud.com
 ```
 
 For newsletters, I sign up using Gmail's plus addressing scheme to automatically label them as `newsletters`[^2]:
 
-```
+```plaintext
 Matches: to:(cory.dransfeldt+newsletters@gmail.com)
 Do this: Skip Inbox, Mark as read, Apply label "Newsletters", Forward to <UNIQUE-ID>@newsletters.feedbin.com
 ```
@@ -47,7 +47,7 @@ For both newsletters and deliveries this leaves me with a fair amount of archive
 
 I take a similar approach to actionable/alert-style messages:
 
-```
+```plaintext
 Matches: <SUPER IMPORTANT CONDITION HERE>
 Do this: Apply label "Alerts", Forward to <UNIQUE-ID>@todoist.net, Mark it as important, Categorize as Primary
 ```
@@ -78,13 +78,13 @@ The rules for deliveries and alerts operate in very much the same way, but with 
 
 **Deliveries (omitting Gmail-identified receipts and the inbox)**
 
-```
+```plaintext
 'label:deliveries -label:inbox -label:receipts'
 ```
 
 **Alerts (omitting the inbox)**
 
-```
+```plaintext
 'label:alerts -label:inbox'
 ```
 

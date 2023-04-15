@@ -1,6 +1,6 @@
 ---
 date: 2013-08-20
-drafts: false
+draft: false
 title: Publishing to Kirby using Drafts workflows
 tags: ['iOS']
 ---

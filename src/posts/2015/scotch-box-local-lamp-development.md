@@ -2,7 +2,7 @@
 date: 2015-11-12
 title: Scotch Box for local LAMP development
 draft: false
-tags: ['development', 'vagrant']
+tags: ['development', 'Vagrant']
 ---
 
 > Scotch Box is a preconfigured Vagrant Box with a full array of LAMP Stack features to get you up and running with Vagrant in no time.<!-- excerpt -->

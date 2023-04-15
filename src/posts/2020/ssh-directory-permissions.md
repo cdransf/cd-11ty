@@ -2,7 +2,7 @@
 date: 2020-11-09
 title: .ssh directory permissions
 draft: false
-tags: ['ssh', 'development']
+tags: ['SSH', 'development']
 ---
 
 I was recently setting up a new, always-on machine that I do occasional dev work.<!-- excerpt --> This dev work typically consists of routine maintenance and, a requirement of that, is sshing into and running software updates on manually managed servers (yes, manually managed[^1]).

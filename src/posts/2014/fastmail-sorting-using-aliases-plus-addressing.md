@@ -2,7 +2,7 @@
 date: 2014-04-30
 draft: false
 title: Sorting email using aliases and plus addressing in Fastmail
-tags: ['email', 'Fastmail']
+tags: ['Email', 'Fastmail']
 ---
 
 I subscribe to a number of mailing lists and, up until recently, had been using individual server-side rules to sort all incoming messages from those lists in to a specific folder. However, as the number of lists I was subscribed to grew, adding and maintaining individual rules became increasingly tedious.<!-- excerpt -->

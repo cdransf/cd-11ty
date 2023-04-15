@@ -2,7 +2,7 @@
 title: 2021 reading list
 date: '2021-03-21'
 draft: false
-tags: ['reading']
+tags: ['books']
 ---
 
 I've been working on making reading a habit again for the past few years (my streak in books is currently 383 days).<!-- excerpt --> Here's where I'm at for 2021 so far:

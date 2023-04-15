@@ -2,7 +2,7 @@
 date: 2013-08-17
 draft: false
 title: Pile on the kale salad and an extra chicken wing
-tags: ['Dawes', 'music']
+tags: ['music']
 ---
 
 Dawes played an acoustic set at the Whole Foods in West Hollywood to celebrate Whole Foods adding a record store to the location. Brothers Taylor and Griffin Goldsmith were joined on stage by Tay Strathairn with the elder Goldsmith leading the band through a range of songs from the band's 3 albums."<!-- excerpt -->

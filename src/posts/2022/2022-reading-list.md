@@ -2,7 +2,7 @@
 title: '2022 reading list'
 date: '2022-04-03'
 draft: false
-tags: ['reading']
+tags: ['books']
 ---
 
 I'm still plugging away with my reading habit and my streak is now at 772 days.<!-- excerpt --> Here's where I'm at for 2022 so far:

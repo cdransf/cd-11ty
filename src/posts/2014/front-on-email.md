@@ -2,7 +2,7 @@
 date: 2014-09-02
 draft: false
 title: Front on email
-tags: ['email']
+tags: ['Email']
 ---
 
 **[Via Front](http://blog.frontapp.com/email-will-last-forever/):**

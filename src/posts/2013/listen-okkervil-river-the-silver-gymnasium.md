@@ -2,7 +2,7 @@
 date: 2013-08-26
 draft: false
 title: Listen - Okkervil River, 'The Silver Gymnasium'
-tags: ['music', 'Okkervil River']
+tags: ['music']
 ---
 
 **[NPR:](http://www.npr.org/2013/08/25/214471289/first-listen-okkervil-river-the-silver-gymnasium)**

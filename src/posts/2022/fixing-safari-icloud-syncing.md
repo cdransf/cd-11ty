@@ -2,7 +2,7 @@
 title: 'Fixing Safari iCloud syncing'
 date: '2022-05-28'
 draft: false
-tags: [apple, iOS, macOS]
+tags: [Apple, iOS, macOS]
 ---
 
 I've been having an intermittent issue with Safari failing to sync any data via iCloud that you would normally expect — history, tabs, bookmarks and the landing page were all behaving independently despite iCloud syncing being enabled.<!-- excerpt -->

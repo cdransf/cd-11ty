@@ -2,7 +2,7 @@
 date: '2023-03-18'
 title: 'Building my /now page using Eleventy'
 draft: false
-tags: ['Eleventy', 'javascript', 'last.fm', 'oku', 'trakt', 'letterboxd']
+tags: ['Eleventy', 'JavaScript', 'Last.fm', 'Oku', 'Trakt', 'Letterboxd']
 ---
 
 As part of my commitment to writing about things I've written in other frameworks in Eleventy, this is how I re-engineered [my /now page](/now) in [Eleventy](https://www.11ty.dev/).<!-- excerpt -->[^1]
