@@ -2,7 +2,7 @@
 title: 'Building a now page using Next.js and social APIs'
 date: 2023-02-20
 draft: false
-tags: ['nextjs', 'web development', 'react', 'api']
+tags: ['next.js', 'react', 'api']
 ---
 
 With my personal site now sitting at Vercel and written in Next.js I decided to rework my [now](https://coryd.dev/now) page by leveraging a variety of social APIs. I kicked things off by looking through various platforms I use regularly and tracking down those that provide either API access or RSS feeds. For those with APIs I wrote code to access my data via said APIs, for those with feeds only I've leveraged [@extractus/feed-extractor](https://www.npmjs.com/package/@extractus/feed-extractor) to transform them to JSON responses.<!-- excerpt -->

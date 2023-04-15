@@ -2,7 +2,7 @@
 title: 'Automating (and probably overengineering) my /now page'
 date: '2023-02-06'
 draft: false
-tags: ['automation', 'development', 'nextjs', 'javascript']
+tags: ['automation', 'development', 'next.js', 'javascript']
 ---
 
 [omg.lol](https://home.omg.lol) (where I point my domain) and host most of my site content [recently launched support for /now pages](https://omglol.news/2023/01/16/now-pages-are-here).<!-- excerpt -->
