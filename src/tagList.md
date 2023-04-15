@@ -9,9 +9,8 @@ eleventyComputed:
   title: '{{ tag }}'
 templateEngineOverride: liquid,md
 ---
-
-{% for post in collections[tag] %}
-
+{% assign posts = collections[tag] | reverse %}
+{% for post in posts %}
 <div class="mb-8 border-b border-gray-200 pb-4 dark:border-gray-700">
   <a class="no-underline" href="{{ post.url }}">
     <h2
@@ -20,9 +19,15 @@ templateEngineOverride: liquid,md
       {{ post.data.title }}
     </h2>
   </a>
-  <div class="h-14 flex items-center text-sm">
-    <span>{{ post.date | date: "%m.%d.%Y" }}</span>
-    <span class="mx-1">•</span>
+  <div class="my-2 text-sm">
+    <time class="dt-published" datetime="{{ post.date }}">
+      {{ post.date | date: "%m.%d.%Y" }}
+    </time>
+  </div>
+  {% if post.data.post_excerpt %}
+  <p class="p-summary mt-0">{{ post.data.post_excerpt | markdown }}</p>
+  {% endif %}
+  <div class="mt-4 flex items-center justify-between">
     <a class="flex-none font-normal no-underline" href="{{ post.url }}">Read more &rarr;</a>
   </div>
 </div>
