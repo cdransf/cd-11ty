@@ -2,7 +2,7 @@
 date: '2023-03-28'
 title: 'Another Eleventy content syndication path'
 draft: false
-tags: ['Eleventy', '11ty', 'Mastodon', 'json', 'rss']
+tags: ['Eleventy', 'Mastodon', 'json', 'rss']
 ---
 
 After posting and [discussing](https://social.lol/@nhoizey@mamot.fr/110101373765987885) [my post from yesterday](/posts/2023/automate-syndicate-content-mastodon-eleventy/) with [Nicolas Hoizey](https://nicolas-hoizey.com/) I decided to explore his suggested path and explore using a GitHub action to handle posts to Mastodon, rather than Make.<!-- excerpt --> Nicolas, thankfully, [has an action that supports exactly this path](https://github.com/marketplace/actions/any-feed-to-mastodon). It currently supports JSON feeds, [with planned support for Atom/RSS](https://github.com/nhoizey/github-action-feed-to-mastodon/issues/16).[^1]

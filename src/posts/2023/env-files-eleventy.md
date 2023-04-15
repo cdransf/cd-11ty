@@ -2,7 +2,7 @@
 date: '2023-03-24'
 title: '.env files in Eleventy'
 draft: false
-tags: ['.env', '11ty', 'eleventy']
+tags: ['.env', 'Eleventy']
 ---
 
 **dotenv-flow:**
