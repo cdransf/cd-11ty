@@ -2,7 +2,7 @@
 title: 'Apple-centric digital privacy tools'
 date: '2022-05-31'
 draft: false
-tags: ['apple', 'privacy', 'ios', 'macos', 'tech']
+tags: ['apple', 'privacy', 'iOS', 'macOS', 'tech']
 images: ['/static/images/blog/privacy.jpg']
 ---
 
