@@ -22,6 +22,8 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
 
+- [Orion](https://browser.kagi.com)
+- [Spark](https://sparkmailapp.com)
 - [Todoist](https://todoist.com)
 - [Obsidian](https://obsidian.md)
 - [iBroadcast](https://ibroadcast.com)
@@ -37,7 +39,6 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS</h3>
 
-- [Orion](https://browser.kagi.com)
 - [VS Code](https://code.visualstudio.com) + [Dracula Pro](https://draculatheme.com/pro)
 - [iTerm2](https://iterm2.com)
 - [Alfred](https://alfredapp.com)
