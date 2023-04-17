@@ -22,7 +22,6 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
 
-- [Orion](https://browser.kagi.com)
 - [Spark](https://sparkmailapp.com)
 - [Todoist](https://todoist.com)
 - [Obsidian](https://obsidian.md)
@@ -34,7 +33,6 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">iOS</h3>
 
-- [Marvis Pro](https://apps.apple.com/app/marvis-pro/id1447768809)
 - [status.log](https://apps.apple.com/ca/app/status-log/id6444921793)
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS</h3>
@@ -63,7 +61,6 @@ Software and services that I use for work and my own enjoyment.
 - [1Password](https://1password.com)
 - [IVPN](https://www.ivpn.net)
 - [Jumpshare](https://jumpshare.com)
-- [Plex](https://www.plex.tv)
 - [Slack](http://slack.com)
 - [Discord](http://discord.com)
 - [Trakt](https://trakt.tv)
