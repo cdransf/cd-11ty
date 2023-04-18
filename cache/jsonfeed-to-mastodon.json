@@ -2760,5 +2760,16 @@
       "https://social.lol/users/cory/statuses/110215939887520803"
     ],
     "lastTootTimestamp": 1681761778147
+  },
+  "https://oku.club/book/writing-for-software-developers-by-philip-kiely-jyuEz": {
+    "id": "https://oku.club/book/writing-for-software-developers-by-philip-kiely-jyuEz",
+    "title": "Oku: Writing for Software Developers",
+    "url": "https://oku.club/book/writing-for-software-developers-by-philip-kiely-jyuEz",
+    "content_text": "Oku: Writing for Software Developers https://oku.club/book/writing-for-software-developers-by-philip-kiely-jyuEz",
+    "date_published": "2023-04-18T02:08:27-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110217827365024269"
+    ],
+    "lastTootTimestamp": 1681790578781
   }
 }
