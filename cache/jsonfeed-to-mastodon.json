@@ -2771,5 +2771,24 @@
       "https://social.lol/users/cory/statuses/110217827365024269"
     ],
     "lastTootTimestamp": 1681790578781
+  },
+  "https://oku.club/book/letter-from-birmingham-jail-by-martin-luther-V45dT": {
+    "id": "https://oku.club/book/letter-from-birmingham-jail-by-martin-luther-V45dT",
+    "title": "Oku: Letter from Birmingham Jail",
+    "url": "https://oku.club/book/letter-from-birmingham-jail-by-martin-luther-V45dT",
+    "content_text": "Oku: Letter from Birmingham Jail https://oku.club/book/letter-from-birmingham-jail-by-martin-luther-V45dT",
+    "date_published": "2023-04-18T14:15:32-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110220658737284964"
+    ],
+    "lastTootTimestamp": 1681833782059
+  },
+  "https://oku.club/book/its-ok-to-be-angry-about-capitalism-by-senator-bernie-sanders-3gwpI": {
+    "id": "https://oku.club/book/its-ok-to-be-angry-about-capitalism-by-senator-bernie-sanders-3gwpI",
+    "title": "Oku: It's OK to Be Angry About Capitalism",
+    "url": "https://oku.club/book/its-ok-to-be-angry-about-capitalism-by-senator-bernie-sanders-3gwpI",
+    "content_text": "Oku: It's OK to Be Angry About Capitalism https://oku.club/book/its-ok-to-be-angry-about-capitalism-by-senator-bernie-sanders-3gwpI",
+    "date_published": "2023-04-18T00:00:00-08:00",
+    "toots": []
   }
 }
