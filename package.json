@@ -45,7 +45,7 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.1",
-    "liquidjs": "^10.7.0",
+    "liquidjs": "^10.7.1",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.4.1",
     "markdown-it-footnote": "^3.0.3",
