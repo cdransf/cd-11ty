@@ -2826,5 +2826,16 @@
       "https://social.lol/users/cory/statuses/110257463288157409"
     ],
     "lastTootTimestamp": 1682395374942
+  },
+  "https://letterboxd.com/cdme/film/scream-vi/": {
+    "id": "https://letterboxd.com/cdme/film/scream-vi/",
+    "title": "Letterboxd: Scream VI, 2023 - ★★★½",
+    "url": "https://letterboxd.com/cdme/film/scream-vi/",
+    "content_text": "Letterboxd: Scream VI, 2023 - ★★★½ https://letterboxd.com/cdme/film/scream-vi/",
+    "date_published": "2023-04-25T13:48:45-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110260295611664209"
+    ],
+    "lastTootTimestamp": 1682438592759
   }
 }
