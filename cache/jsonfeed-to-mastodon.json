@@ -2815,5 +2815,16 @@
       "https://social.lol/users/cory/statuses/110254160567324095"
     ],
     "lastTootTimestamp": 1682344979651
+  },
+  "https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/": {
+    "id": "https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/",
+    "title": "Blog: Talk: Building a /now page with Eleventy",
+    "url": "https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/",
+    "content_text": "Blog: Talk: Building a /now page with Eleventy https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/",
+    "date_published": "2023-04-24T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110257463288157409"
+    ],
+    "lastTootTimestamp": 1682395374942
   }
 }
