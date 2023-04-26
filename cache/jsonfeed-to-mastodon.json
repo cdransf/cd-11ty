@@ -2848,5 +2848,16 @@
       "https://social.lol/users/cory/statuses/110263126318602615"
     ],
     "lastTootTimestamp": 1682481785944
+  },
+  "https://letterboxd.com/cdme/film/plane-2023/": {
+    "id": "https://letterboxd.com/cdme/film/plane-2023/",
+    "title": "Letterboxd: Plane, 2023 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/plane-2023/",
+    "content_text": "Letterboxd: Plane, 2023 - ★★★ https://letterboxd.com/cdme/film/plane-2023/",
+    "date_published": "2023-04-26T13:36:26-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110265957419225300"
+    ],
+    "lastTootTimestamp": 1682524985101
   }
 }
