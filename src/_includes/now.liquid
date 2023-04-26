@@ -57,7 +57,7 @@ layout: main
               </div>
               <img
                 src="{{artist.name | artist}}"
-                onerror="this.onerror=null; this.src='/assets/img/media/404.jpg'"
+                onerror="this.onerror=null; this.src='/assets/img/media/404-music.jpg'"
                 width="350"
                 height="350"
                 class="rounded-lg"
@@ -87,7 +87,7 @@ layout: main
               </div>
               <img
                 src="{{album | album}}"
-                onerror="this.onerror=null; this.src='/assets/img/media/404.jpg'"
+                onerror="this.onerror=null; this.src='/assets/img/media/404-music.jpg'"
                 width="350"
                 height="350"
                 class="rounded-lg"
@@ -120,15 +120,26 @@ layout: main
       Watching: movies
     </h2>
     <div>
-      <ul class="list-inside list-disc pl-5 md:pl-10">
+      <div class="grid grid-cols-3 gap-2 md:grid-cols-6 not-prose">
         {% for movie in movies %}
-          <li class="mt-1.5 mb-2">
-            <a href="{{movie.link}}" title="{{movie.title | escape}}">
-              {{ movie.title }}
-            </a>
-          </li>
+          <a href="{{movie.link}}" title="{{movie.title | escape}}">
+            <div class="relative block" style="max-width:226px">
+              <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-primary-500 bg-cover-gradient dark:border-gray-500"></div>
+              <div class="absolute left-1 bottom-2 drop-shadow-md">
+                <div class="px-1 text-xs font-bold text-white">{{ movie.title }}</div>
+              </div>
+              <img
+                src="{{movie.image}}"
+                onerror="this.onerror=null; this.src='/assets/img/media/404-movie.jpg'"
+                width="226"
+                height="337"
+                class="rounded-lg"
+                alt="{{movie.title | escape}}"
+                loading="lazy" />
+            </div>
+          </a>
         {% endfor %}
-      </ul>
+      </div>
     </div>
   {% endif %}
   {% if tv %}
