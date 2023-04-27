@@ -9,7 +9,7 @@ module.exports = async function () {
     getExtraEntryFields: (feedEntry) => {
       const images = feedEntry['description']?.match(/<img [^>]*src="[^"]*"[^>]*>/gm) || []
       return {
-        image: images.length ? images.map((x) => x.replace(/.*src="([^"]*)".*/, '$1'))[0] : '',
+        image: images.length ? images.map((image) => image.replace(/.*src="([^"]*)".*/, '$1'))[0] : '',
       }
     },
   }).catch((error) => {
