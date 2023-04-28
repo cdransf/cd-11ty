@@ -24,7 +24,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "postcss": "^8.4.23",
     "prettier": "^2.8.8",
-    "prettier-plugin-tailwindcss": "^0.2.7",
+    "prettier-plugin-tailwindcss": "^0.2.8",
     "sanitize-html": "^2.10.0"
   },
   "dependencies": {
