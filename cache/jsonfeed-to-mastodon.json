@@ -2903,5 +2903,16 @@
       "https://social.lol/users/cory/statuses/110276809448962550"
     ],
     "lastTootTimestamp": 1682690573952
+  },
+  "https://letterboxd.com/cdme/film/the-new-mutants/": {
+    "id": "https://letterboxd.com/cdme/film/the-new-mutants/",
+    "title": "Letterboxd: The New Mutants, 2020 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/the-new-mutants/",
+    "content_text": "Letterboxd: The New Mutants, 2020 - ★★★ https://letterboxd.com/cdme/film/the-new-mutants/",
+    "date_published": "2023-04-28T16:03:26-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110277755311253916"
+    ],
+    "lastTootTimestamp": 1682705006619
   }
 }
