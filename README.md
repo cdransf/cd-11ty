@@ -12,10 +12,10 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 
 ## My latest posts
 <!-- BLOGPOSTS:START -->
+- [We lost the thread](https://coryd.dev/posts/2023/we-lost-the-thread/)
 - [Talk: Building a /now page with Eleventy](https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/)
 - [I don't want streaming music, I just want to stream my music](https://coryd.dev/posts/2023/i-dont-want-streaming-music/)
 - [Another Eleventy content syndication path](https://coryd.dev/posts/2023/another-eleventy-content-syndication-path/)
 - [Lazy select-based pagination in Eleventy](https://coryd.dev/posts/2023/lazy-select-based-pagination-eleventy/)
-- [Automate and syndicate content from Eleventy to Mastodon](https://coryd.dev/posts/2023/automate-syndicate-content-mastodon-eleventy/)
 <!-- BLOGPOSTS:END -->
 
