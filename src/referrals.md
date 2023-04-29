@@ -11,7 +11,7 @@ title: Referrals
 
 Referral links for services I use. I save some money and you do as well if you choose to use them.
 
-- <a href="https://referworkspace.app.goo.gl/7BYo" onclick="fathom.trackGoal('EWREAPNX', 0)">Google Workspace</a>
+- <a href="https://pr.tn/ref/X775YX40Z50G" onclick="fathom.trackGoal('INTJNLRE', 0)">Proton</a>
 - <a href="https://usefathom.com/ref/EGXCON" onclick="fathom.trackGoal('EWREAPNX', 0)">Fathom Analytics</a>
 - <a href="https://nextdns.io/?from=m56mt3z6" onclick="fathom.trackGoal('CG4FNTCN', 0)">NextDNS</a>
 - <a href="https://dnsimple.com/r/3a7cbb9e15df8f" onclick="fathom.trackGoal('MFQVXQQ9', 0)">DNSimple</a>
