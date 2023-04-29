@@ -53,7 +53,7 @@ Software and services that I use for work and my own enjoyment.
 - <a href="https://usefathom.com/ref/EGXCON" onclick="fathom.trackGoal('EWREAPNX', 0)">Fathom Analytics</a>
 - <a href="https://nextdns.io/?from=m56mt3z6" onclick="fathom.trackGoal('CG4FNTCN', 0)">NextDNS</a>
 - <a href="https://dnsimple.com/r/3a7cbb9e15df8f" onclick="fathom.trackGoal('MFQVXQQ9', 0)">DNSimple</a>
-- <a href="https://bunny.net?ref=3kd0m6d30v" onclick="fathom.trackGoal('EIQ2NE4V', 0)">Bunny.net</a>
+- <a href="https://bunny.net?ref=revw3mehej" onclick="fathom.trackGoal('EIQ2NE4V', 0)">Bunny.net</a>
 - [1Password](https://1password.com)
 - [Slack](http://slack.com)
 - [Discord](http://discord.com)
