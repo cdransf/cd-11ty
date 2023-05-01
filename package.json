@@ -4,8 +4,8 @@
   "description": "The source for my personal site, blog and portfolio. Build using 11ty and hosted on Vercel.",
   "main": "index.html",
   "scripts": {
-    "start": "eleventy --serve & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
-    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
+    "start": "ELEVENTY_PRODUCTION=false eleventy --serve && NODE_ENV=development npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve && NODE_ENV=development npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "build": "rm -rf .cache && ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o _site/assets/styles/tailwind.css",

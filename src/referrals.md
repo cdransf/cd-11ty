@@ -11,9 +11,8 @@ title: Referrals
 
 Referral links for services I use. I save some money and you do as well if you choose to use them.
 
-- <a href="https://pr.tn/ref/X775YX40Z50G" onclick="fathom.trackGoal('INTJNLRE', 0)">Proton</a>
-- <a href="https://usefathom.com/ref/EGXCON" onclick="fathom.trackGoal('EWREAPNX', 0)">Fathom Analytics</a>
-- <a href="https://nextdns.io/?from=m56mt3z6" onclick="fathom.trackGoal('CG4FNTCN', 0)">NextDNS</a>
-- <a href="https://dnsimple.com/r/3a7cbb9e15df8f" onclick="fathom.trackGoal('MFQVXQQ9', 0)">DNSimple</a>
-- <a href="https://bunny.net?ref=revw3mehej" onclick="fathom.trackGoal('EIQ2NE4V', 0)">Bunny.net</a>
-- <a href="https://m.do.co/c/3635bf99aee2" onclick="fathom.trackGoal('YQQCW9LE', 0)">DigitalOcean</a>
+- <a href="https://pr.tn/ref/X775YX40Z50G" onclick="va('event',{name:'Proton referral',data:{location:'Referrals'}})">Proton</a>
+- <a href="https://nextdns.io/?from=m56mt3z6" onclick="va('event',{name:'NextDNS referral',data:{location:'Referrals'}})">NextDNS</a>
+- <a href="https://dnsimple.com/r/3a7cbb9e15df8f" onclick="va('event',{name:'DNSimple referral',data:{location:'Referrals'}})">DNSimple</a>
+- <a href="https://bunny.net?ref=revw3mehej" onclick="va('event',{name:'Bunny.net referral',data:{location:'Referrals'}})">Bunny.net</a>
+- <a href="https://m.do.co/c/3635bf99aee2" onclick="va('event',{name:'DigitalOcean referral',data:{location:'Referrals'}})">DigitalOcean</a>

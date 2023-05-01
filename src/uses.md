@@ -49,11 +49,10 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Services</h3>
 
-- <a href="https://pr.tn/ref/X775YX40Z50G" onclick="fathom.trackGoal('INTJNLRE', 0)">Proton</a>
-- <a href="https://usefathom.com/ref/EGXCON" onclick="fathom.trackGoal('EWREAPNX', 0)">Fathom Analytics</a>
-- <a href="https://nextdns.io/?from=m56mt3z6" onclick="fathom.trackGoal('CG4FNTCN', 0)">NextDNS</a>
-- <a href="https://dnsimple.com/r/3a7cbb9e15df8f" onclick="fathom.trackGoal('MFQVXQQ9', 0)">DNSimple</a>
-- <a href="https://bunny.net?ref=revw3mehej" onclick="fathom.trackGoal('EIQ2NE4V', 0)">Bunny.net</a>
+- <a href="https://pr.tn/ref/X775YX40Z50G" onclick="va('event',{name:'Proton referral',data:{location:'Uses'}})">Proton</a>
+- <a href="https://nextdns.io/?from=m56mt3z6" onclick="va('event',{name:'NextDNS referral',data:{location:'Uses'}})">NextDNS</a>
+- <a href="https://dnsimple.com/r/3a7cbb9e15df8f" onclick="va('event',{name:'DNSimple referral',data:{location:'Uses'}})">DNSimple</a>
+- <a href="https://bunny.net?ref=revw3mehej" onclick="va('event',{name:'Bunny.net referral',data:{location:'Uses'}})">Bunny.net</a>
 - [1Password](https://1password.com)
 - [Slack](http://slack.com)
 - [Discord](http://discord.com)

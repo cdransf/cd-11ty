@@ -88,7 +88,7 @@ artist: (media) =>
         `https://cdn.coryd.dev/artists/${media.replace(/\s+/g, '-').toLowerCase()}.jpg`,
 ```
 
-These images are all cropped to `350x350` and hosted over on <a href="https://bunny.net?ref=revw3mehej" onclick="fathom.trackGoal('EIQ2NE4V', 0)">Bunny.net</a>[^2].
+These images are all cropped to `350x350` and hosted over on <a href="https://bunny.net?ref=revw3mehej" onclick="va('event',{name:'Bunny.net referral',data:{location:'Blog post: Building my /now page using Eleventy'}})">Bunny.net</a>[^2].
 
 [Much like artists, we populate albums from data sourced from Last.fm](https://github.com/cdransf/coryd.dev/blob/e886857387661ceeba4f2b368989ec32f0c3f121/src/_data/albums.js)
 
