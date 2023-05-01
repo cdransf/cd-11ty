@@ -2958,5 +2958,16 @@
       "https://social.lol/users/cory/statuses/110294740980363089"
     ],
     "lastTootTimestamp": 1682964187381
+  },
+  "https://letterboxd.com/cdme/film/creed-iii/": {
+    "id": "https://letterboxd.com/cdme/film/creed-iii/",
+    "title": "Letterboxd: Creed III, 2023 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/creed-iii/",
+    "content_text": "Letterboxd: Creed III, 2023 - ★★★ https://letterboxd.com/cdme/film/creed-iii/",
+    "date_published": "2023-05-01T17:23:45-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110295212199111847"
+    ],
+    "lastTootTimestamp": 1682971377606
   }
 }
