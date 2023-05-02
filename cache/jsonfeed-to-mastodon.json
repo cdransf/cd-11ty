@@ -2980,5 +2980,16 @@
       "https://social.lol/users/cory/statuses/110296185488286227"
     ],
     "lastTootTimestamp": 1682986228826
+  },
+  "https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/": {
+    "id": "https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/",
+    "title": "Blog: A Safari-specific guide to making the modern web suck less",
+    "url": "https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/",
+    "content_text": "Blog: A Safari-specific guide to making the modern web suck less https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/",
+    "date_published": "2023-05-01T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110296680198275175"
+    ],
+    "lastTootTimestamp": 1682993777499
   }
 }
