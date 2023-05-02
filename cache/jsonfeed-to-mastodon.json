@@ -2969,5 +2969,16 @@
       "https://social.lol/users/cory/statuses/110295212199111847"
     ],
     "lastTootTimestamp": 1682971377606
+  },
+  "https://letterboxd.com/cdme/film/the-equalizer/": {
+    "id": "https://letterboxd.com/cdme/film/the-equalizer/",
+    "title": "Letterboxd: The Equalizer, 2014 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/the-equalizer/",
+    "content_text": "Letterboxd: The Equalizer, 2014 - ★★★ https://letterboxd.com/cdme/film/the-equalizer/",
+    "date_published": "2023-05-01T21:21:48-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110296185488286227"
+    ],
+    "lastTootTimestamp": 1682986228826
   }
 }
