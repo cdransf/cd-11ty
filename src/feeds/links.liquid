@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /links.xml
+---
+{% layout "./_includes/feed-links.liquid" %}
+{% block title %}Links • Cory Dransfeldt{% endblock %}
+{% block self %}links.xml{% endblock %}
+{% block update %}
+  {{ articles | rssLastUpdatedDate }}{% endblock %}
+{% block entries %}
+  {% assign links = articles | reverse %}
+  {% for article in articles %}
+    <entry>
+      <title>{{ article.content.title | escape }}</title>
+      <link href="{{article.content.url}}" />
+      <updated>{{ article.history.feed_dirty_date | date: "%m.%d.%Y" }}</updated>
+      <id>{{ article.content.id }}</id>
+      <content type="html">
+        {{ article.excerpt | escape }}
+      </content>
+    </entry>
+  {% endfor %}
+{% endblock %}

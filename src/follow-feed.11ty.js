@@ -10,6 +10,7 @@ module.exports = class {
     const feed = new ActivityFeed()
 
     feed.addSource('atom', 'Blog', 'https://coryd.dev/feed.xml')
+    feed.addSource('atom', 'Link', 'https://coryd.dev/links.xml')
     feed.addSource('rss', 'Letterboxd', 'https://letterboxd.com/cdme/rss')
     feed.addSource('rss', 'Oku', 'https://oku.club/rss/collection/NvEmF')
 
