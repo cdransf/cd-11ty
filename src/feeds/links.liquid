@@ -13,7 +13,7 @@ permalink: /links.xml
     <entry>
       <title>{{ article.content.title | escape }}</title>
       <link href="{{article.content.url}}" />
-      <updated>{{ article.history.publication_date | date: "%m.%d.%Y" }}</updated>
+      <updated>{{ article.publication_date | date: "%m.%d.%Y" }}</updated>
       <id>{{ article.content.id }}</id>
       <content type="html">
         {{ article.excerpt | escape }}
