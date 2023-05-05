@@ -3035,5 +3035,16 @@
       "https://social.lol/users/cory/statuses/110311727428793773"
     ],
     "lastTootTimestamp": 1683223379997
+  },
+  "https://letterboxd.com/cdme/film/terminator-genisys/": {
+    "id": "https://letterboxd.com/cdme/film/terminator-genisys/",
+    "title": "Letterboxd: Terminator Genisys, 2015 - ★★½",
+    "url": "https://letterboxd.com/cdme/film/terminator-genisys/",
+    "content_text": "Letterboxd: Terminator Genisys, 2015 - ★★½ https://letterboxd.com/cdme/film/terminator-genisys/",
+    "date_published": "2023-05-04T22:06:43-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110313171416876638"
+    ],
+    "lastTootTimestamp": 1683245413527
   }
 }
