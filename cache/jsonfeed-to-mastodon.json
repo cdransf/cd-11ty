@@ -3065,5 +3065,16 @@
       "https://social.lol/users/cory/statuses/110317861380594108"
     ],
     "lastTootTimestamp": 1683316976679
+  },
+  "https://letterboxd.com/cdme/film/terminator-dark-fate/": {
+    "id": "https://letterboxd.com/cdme/film/terminator-dark-fate/",
+    "title": "Letterboxd: Terminator: Dark Fate, 2019 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/terminator-dark-fate/",
+    "content_text": "Letterboxd: Terminator: Dark Fate, 2019 - ★★★ https://letterboxd.com/cdme/film/terminator-dark-fate/",
+    "date_published": "2023-05-05T20:22:13-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110318333199683104"
+    ],
+    "lastTootTimestamp": 1683324176070
   }
 }
