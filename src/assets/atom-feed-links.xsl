@@ -74,7 +74,7 @@ xmlns:atom="http://www.w3.org/2005/Atom">
     <xsl:value-of select="atom:link/@href"/>
     </xsl:attribute>
     <xsl:value-of select="atom:title"/>
-</a>
+</a> • <xsl:value-of select="atom:updated" />
 </li>
 </xsl:template>
 </xsl:stylesheet>
