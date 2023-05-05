@@ -101,7 +101,7 @@ layout: main
   {% endif %}
   {% if books %}
     <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
-      Reading
+      Reading: books
     </h2>
     <div>
       <ul class="list-inside list-disc pl-5 md:pl-10">
@@ -109,6 +109,22 @@ layout: main
           <li class="mt-1.5 mb-2">
             <a href="{{book.link}}" title="{{book.title | escape}}">
               {{ book.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+  {% if articles %}
+    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
+      Reading: favorite articles
+    </h2>
+    <div>
+      <ul class="list-inside list-disc pl-5 md:pl-10">
+        {% for article in articles | reverse %}
+          <li class="mt-1.5 mb-2">
+            <a href="{{article.content.url}}" title="{{article.content.title | escape}}">
+              {{ article.content.title | escape }} by {{ article.content.author.name | escape }}
             </a>
           </li>
         {% endfor %}
