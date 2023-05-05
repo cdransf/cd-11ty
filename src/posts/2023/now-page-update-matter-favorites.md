@@ -29,7 +29,9 @@ module.exports = async function () {
 
 By following Federico's steps we can obtain a bearer token to access the API which will return an array of our favorited articles. This endpoint is paginated (e.g. passing `?page=1`, but I'm retrieving the full response, reversing the order and rendering the output to achieve the displayed result:
 
-```html
+{% raw %}
+
+```liquid
 {% if articles %}
     <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
       Reading: favorite articles
@@ -48,5 +50,7 @@ By following Federico's steps we can obtain a bearer token to access the API whi
     </div>
   {% endif %}
 ```
+
+{% endraw %}
 
 [You can see the result rendered here.](/now)
