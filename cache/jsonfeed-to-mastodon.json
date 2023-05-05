@@ -2980,5 +2980,71 @@
       "https://social.lol/users/cory/statuses/110296185488286227"
     ],
     "lastTootTimestamp": 1682986228826
+  },
+  "https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/": {
+    "id": "https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/",
+    "title": "Blog: A Safari-specific guide to making the modern web suck less",
+    "url": "https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/",
+    "content_text": "Blog: A Safari-specific guide to making the modern web suck less https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/",
+    "date_published": "2023-05-01T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110296680198275175"
+    ],
+    "lastTootTimestamp": 1682993777499
+  },
+  "https://letterboxd.com/cdme/film/the-equalizer-2/": {
+    "id": "https://letterboxd.com/cdme/film/the-equalizer-2/",
+    "title": "Letterboxd: The Equalizer 2, 2018 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/the-equalizer-2/",
+    "content_text": "Letterboxd: The Equalizer 2, 2018 - ★★★ https://letterboxd.com/cdme/film/the-equalizer-2/",
+    "date_published": "2023-05-02T12:28:57-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110299458852308368"
+    ],
+    "lastTootTimestamp": 1683036176377
+  },
+  "https://letterboxd.com/cdme/film/a-history-of-violence/": {
+    "id": "https://letterboxd.com/cdme/film/a-history-of-violence/",
+    "title": "Letterboxd: A History of Violence, 2005 - ★★★★",
+    "url": "https://letterboxd.com/cdme/film/a-history-of-violence/",
+    "content_text": "Letterboxd: A History of Violence, 2005 - ★★★★ https://letterboxd.com/cdme/film/a-history-of-violence/",
+    "date_published": "2023-05-02T15:49:39-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110300402944257201"
+    ],
+    "lastTootTimestamp": 1683050582102
+  },
+  "https://oku.club/book/the-assassination-of-fred-hampton-by-jeffrey-haas-HJ0S1": {
+    "id": "https://oku.club/book/the-assassination-of-fred-hampton-by-jeffrey-haas-HJ0S1",
+    "title": "Oku: The Assassination of Fred Hampton",
+    "url": "https://oku.club/book/the-assassination-of-fred-hampton-by-jeffrey-haas-HJ0S1",
+    "content_text": "Oku: The Assassination of Fred Hampton https://oku.club/book/the-assassination-of-fred-hampton-by-jeffrey-haas-HJ0S1",
+    "date_published": "2023-05-04T01:46:53-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110308424109283919"
+    ],
+    "lastTootTimestamp": 1683172975343
+  },
+  "https://letterboxd.com/cdme/film/dungeons-dragons-honor-among-thieves/": {
+    "id": "https://letterboxd.com/cdme/film/dungeons-dragons-honor-among-thieves/",
+    "title": "Letterboxd: Dungeons & Dragons: Honor Among Thieves, 2023 - ★★★½",
+    "url": "https://letterboxd.com/cdme/film/dungeons-dragons-honor-among-thieves/",
+    "content_text": "Letterboxd: Dungeons & Dragons: Honor Among Thieves, 2023 - ★★★½ https://letterboxd.com/cdme/film/dungeons-dragons-honor-among-thieves/",
+    "date_published": "2023-05-04T16:48:54-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110311727428793773"
+    ],
+    "lastTootTimestamp": 1683223379997
+  },
+  "https://letterboxd.com/cdme/film/terminator-genisys/": {
+    "id": "https://letterboxd.com/cdme/film/terminator-genisys/",
+    "title": "Letterboxd: Terminator Genisys, 2015 - ★★½",
+    "url": "https://letterboxd.com/cdme/film/terminator-genisys/",
+    "content_text": "Letterboxd: Terminator Genisys, 2015 - ★★½ https://letterboxd.com/cdme/film/terminator-genisys/",
+    "date_published": "2023-05-04T22:06:43-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110313171416876638"
+    ],
+    "lastTootTimestamp": 1683245413527
   }
 }
