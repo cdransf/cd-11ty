@@ -41,8 +41,7 @@ By following Federico's steps we can obtain a bearer token to access the API whi
         {% for article in articles | reverse %}
           <li class="mt-1.5 mb-2">
             <a href="{{article.content.url}}" title="{{article.content.title | escape}}">
-              {{ article.content.title | escape }}{% if article.content.author.name %}
-                by {{ article.content.author.name | escape }}{% endif %}
+              {{ article.content.title | escape }}
             </a>
           </li>
         {% endfor %}
