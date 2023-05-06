@@ -79,7 +79,7 @@ When the build runs, it renders any mentions of a given post via a [liquid.js](h
                     <img
                         src={{mention.author.photo}}
                         alt={{mention.author.name}}
-                        class="h-14 w-14 rounded-full border-4 border-white dark:border-gray-900 transition-all hover:border-primary-500 dark:hover:border-primary-300"
+                        class="h-14 w-14 rounded-full border-4 border-white dark:border-gray-900 transition-all hover:border-purple-500 dark:hover:border-purple-300"
                         loading="lazy"
                     />
                 </a>
@@ -98,7 +98,7 @@ When the build runs, it renders any mentions of a given post via a [liquid.js](h
                     <img
                         src={{mention.author.photo}}
                         alt={{mention.author.name}}
-                        class="h-14 w-14 rounded-full border-4 border-white dark:border-gray-900 transition-all hover:border-primary-500 dark:hover:border-primary-300"
+                        class="h-14 w-14 rounded-full border-4 border-white dark:border-gray-900 transition-all hover:border-purple-500 dark:hover:border-purple-300"
                         loading="lazy"
                     />
                 </a>
@@ -116,12 +116,12 @@ When the build runs, it renders any mentions of a given post via a [liquid.js](h
                 <img
                     src={{mention.author.photo}}
                     alt={{mention.author.name}}
-                    class="h-14 w-14 rounded-full border-4 border-white dark:border-gray-900 transition-all group-hover:border-primary-500 dark:group-hover:border-primary-300"
+                    class="h-14 w-14 rounded-full border-4 border-white dark:border-gray-900 transition-all group-hover:border-purple-500 dark:group-hover:border-purple-300"
                     loading="lazy"
                 />
                 <div class="ml-3">
-                    <p class="text-sm group-hover:text-primary-500 dark:group-hover:text-primary-300">{{mention.content.text}}</p>
-                    <p class="mt-1 text-xs group-hover:text-primary-500 dark:group-hover:text-primary-300">{{mention.published | isoDateOnly}}</p>
+                    <p class="text-sm group-hover:text-purple-500 dark:group-hover:text-purple-300">{{mention.content.text}}</p>
+                    <p class="mt-1 text-xs group-hover:text-purple-500 dark:group-hover:text-purple-300">{{mention.published | isoDateOnly}}</p>
                 </div>
             </a>
         </div>

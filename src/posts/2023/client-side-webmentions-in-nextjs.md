@@ -76,7 +76,7 @@ const WebmentionsCore = () => {
                 <li key={mention['wm-id']} className="-ml-2">
                   <Link href={mention.url} target="_blank" rel="noopener noreferrer">
                     <Image
-                      className="h-10 w-10 rounded-full border border-primary-500 dark:border-gray-500"
+                      className="h-10 w-10 rounded-full border border-purple-500 dark:border-gray-500"
                       src={mention.author.photo}
                       alt={mention.author.name}
                       width="40"
@@ -105,7 +105,7 @@ const WebmentionsCore = () => {
                 rel="noopener noreferrer"
               >
                 <Image
-                  className="h-12 w-12 rounded-full border border-primary-500 dark:border-gray-500"
+                  className="h-12 w-12 rounded-full border border-purple-500 dark:border-gray-500"
                   src={mention.author.photo}
                   alt={mention.author.name}
                   width="48"

@@ -1,7 +1,7 @@
 <nav class="flex justify-between mt-8 items-center">
   {% if pagination.href.previous %}
     <a href="{{ pagination.href.previous }}">
-      <button class="py-2 pr-4 text-primary-500 hover:text-primary-400" aria-label="Previous page">
+      <button class="py-2 pr-4 text-purple-500 hover:text-purple-400" aria-label="Previous page">
         {% heroicon "solid" "arrow-left" "Prevous" "width=20 height=20" %}
       </button>
     </a>
@@ -17,7 +17,7 @@
   <div class="flex flex-row items-center">
     <select
       id="pagination"
-      class="block w-12 h-12 rounded-full text-white dark:text-gray-900 bg-primary-500 hover:bg-primary-500 dark:hover:bg-primary-300 mr-1 focus-visible:outline-none focus-visible:bg-primary-400 appearance-none text-center"
+      class="block cursor-pointer w-12 h-12 rounded-full text-white dark:text-gray-900 bg-purple-500 hover:bg-purple-500 dark:hover:bg-purple-300 mr-1 focus-visible:outline-none focus-visible:bg-purple-400 appearance-none text-center"
       style="text-align-last:center">
       {% for pageEntry in pagination.pages %}
         <option {% if page.url == pagination.hrefs[forloop.index0] %}selected{% endif %} value="{{ forloop.index }}">{{ forloop.index }}</option>
@@ -30,7 +30,7 @@
 
   {% if pagination.href.next %}
     <a href="{{ pagination.href.next }}">
-      <button class="py-2 pl-4 text-primary-500 hover:text-primary-400" aria-label="Next page">
+      <button class="py-2 pl-4 text-purple-500 hover:text-purple-400" aria-label="Next page">
         {% heroicon "solid" "arrow-right" "Next" "width=20 height=20" %}
       </button>
     </a>

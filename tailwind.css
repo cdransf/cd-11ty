@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 ::-moz-selection {
-  color: theme(colors.gray.800);
+  color: theme(colors.white);
   background: theme(colors.purple.400);
 }
 
 ::selection {
-  color: theme(colors.gray.800);
+  color: theme(colors.white);
   background: theme(colors.purple.400);
 }
 
@@ -33,5 +33,11 @@
 }
 
 .active {
-  @apply text-primary-400 !important;
+  @apply text-purple-500 !important;
+}
+
+.active:hover,
+.active:active,
+.active:focus {
+  @apply text-purple-400 !important;
 }

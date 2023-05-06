@@ -7,7 +7,7 @@ title: Tags
 
 <span>
   <a href="/tags/{{ tag }}" class="no-underline">
-    <button class="font-semibold py-2 px-4 mr-4 mb-4 rounded-full text-white dark:text-gray-900 bg-primary-400 hover:bg-primary-500 dark:hover:bg-primary-300">
+    <button class="font-semibold py-2 px-4 mr-4 mb-4 rounded-full text-white dark:text-gray-900 bg-purple-400 hover:bg-purple-500 dark:hover:bg-purple-300">
       {{ tag }}
     </button>
   </a>

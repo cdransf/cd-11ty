@@ -69,7 +69,7 @@ xmlns:atom="http://www.w3.org/2005/Atom">
 </xsl:template>
 <xsl:template match="atom:feed/atom:entry">
 <li>
-<a class="no-underline text-gray-800 dark:text-gray-200 leading-tight m-0 cursor-pointer">
+<a class="no-underline text-gray-800 hover:text-purple-400 dark:text-gray-200 dark:hover:text-purple-400 leading-tight m-0 cursor-pointer">
     <xsl:attribute name="href">
     <xsl:value-of select="atom:link/@href"/>
     </xsl:attribute>

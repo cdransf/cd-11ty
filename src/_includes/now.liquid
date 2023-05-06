@@ -48,7 +48,7 @@ layout: main
         {% for artist in artists %}
           <a href="{{artist.url}}" title="{{artist.name | escape}}">
             <div class="relative block">
-              <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-primary-500 bg-cover-gradient dark:border-gray-500"></div>
+              <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-500 hover:border-purple-400 bg-cover-gradient dark:border-gray-500 dark:hover:border-purple-400"></div>
               <div class="absolute left-1 bottom-2 drop-shadow-md">
                 <div class="px-1 text-xs font-bold text-white">{{ artist.name }}</div>
                 <div class="px-1 text-xs text-white">
@@ -78,7 +78,7 @@ layout: main
         {% for album in albums %}
           <a href="{{album.url}}" title="{{album.name | escape}}">
             <div class="relative block">
-              <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-primary-500 bg-cover-gradient dark:border-gray-500"></div>
+              <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-500 hover:border-purple-400 bg-cover-gradient dark:border-gray-500 dark:hover:border-purple-400"></div>
               <div class="absolute left-1 bottom-2 drop-shadow-md">
                 <div class="px-1 text-xs font-bold text-white">{{ album.name }}</div>
                 <div class="px-1 text-xs text-white">
@@ -140,7 +140,7 @@ layout: main
         {% for movie in movies %}
           <a href="{{movie.link}}" title="{{movie.title | escape}}">
             <div class="relative block" style="max-width:226px">
-              <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-primary-500 bg-cover-gradient dark:border-gray-500"></div>
+              <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-500 hover:border-purple-400 bg-cover-gradient dark:border-gray-500 dark:hover:border-purple-400"></div>
               <div class="absolute left-1 bottom-2 drop-shadow-md">
                 <div class="px-1 text-xs font-bold text-white">{{ movie.title }}</div>
               </div>

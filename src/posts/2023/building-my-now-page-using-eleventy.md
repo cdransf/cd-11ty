@@ -56,7 +56,7 @@ The **Listening: albums** call is quite similar, swapping the `user.gettopartist
             {% for artist in artists %}
                 <a href="{{artist.url}}" title="{{artist.name | escape}}">
                     <div class="relative block">
-                        <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-primary-500 bg-cover-gradient dark:border-gray-500"></div>
+                        <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-500 bg-cover-gradient dark:border-gray-500"></div>
                         <div class="absolute left-1 bottom-2 drop-shadow-md">
                             <div class="px-1 text-xs font-bold text-white">{{artist.name}}</div>
                             <div class="px-1 text-xs text-white">
@@ -106,7 +106,7 @@ These images are all cropped to `350x350` and hosted over on <a href="https://bu
             {% for album in albums %}
                 <a href="{{album.url}}" title="{{album.name | escape}}">
                     <div class="relative block">
-                        <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-primary-500 bg-cover-gradient dark:border-gray-500"></div>
+                        <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-500 bg-cover-gradient dark:border-gray-500"></div>
                         <div class="absolute left-1 bottom-2 drop-shadow-md">
                             <div class="px-1 text-xs font-bold text-white">{{album.name}}</div>
                             <div class="px-1 text-xs text-white">
