@@ -6,7 +6,7 @@ module.exports = async function () {
   const res = EleventyFetch(url, {
     duration: '1h',
     type: 'json',
-  })
+  }).catch()
   const webmentions = await res
   return {
     mentions: webmentions.children,

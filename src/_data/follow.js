@@ -5,7 +5,7 @@ module.exports = async function () {
   feed.addSource('atom', 'Link', 'https://coryd.dev/links.xml')
   feed.addSource('rss', 'Letterboxd', 'https://letterboxd.com/cdme/rss')
   feed.addSource('rss', 'Oku', 'https://oku.club/rss/collection/NvEmF')
-  const entries = feed.getEntries()
+  const entries = feed.getEntries().catch()
   const res = await entries
   const activity = { posts: [] }
   res.forEach((entry) =>

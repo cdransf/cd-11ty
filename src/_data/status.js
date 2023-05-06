@@ -5,7 +5,7 @@ module.exports = async function () {
   const res = EleventyFetch(url, {
     duration: '1h',
     type: 'json',
-  })
+  }).catch()
   const status = await res
   return status.response.statuses[0]
 }
