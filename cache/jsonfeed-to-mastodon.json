@@ -3087,5 +3087,48 @@
     "content_text": "Link: The world is a terrible place right now, and that’s largely because it is what we make it. ",
     "date_published": "Invalid Date",
     "toots": []
+  },
+  "https://conversationalist.org/2020/03/05/the-prodigal-techbro/": {
+    "id": "https://conversationalist.org/2020/03/05/the-prodigal-techbro/",
+    "title": "Link: The Prodigal Techbro",
+    "url": "https://conversationalist.org/2020/03/05/the-prodigal-techbro/",
+    "content_text": "Link: The Prodigal Techbro https://conversationalist.org/2020/03/05/the-prodigal-techbro/",
+    "date_published": "2023-05-05T00:00:00-08:00",
+    "toots": []
+  },
+  "https://www.newyorker.com/science/annals-of-artificial-intelligence/will-ai-become-the-new-mckinsey": {
+    "id": "https://www.newyorker.com/science/annals-of-artificial-intelligence/will-ai-become-the-new-mckinsey",
+    "title": "Link: Will A.I. Become the New McKinsey?",
+    "url": "https://www.newyorker.com/science/annals-of-artificial-intelligence/will-ai-become-the-new-mckinsey",
+    "content_text": "Link: Will A.I. Become the New McKinsey? https://www.newyorker.com/science/annals-of-artificial-intelligence/will-ai-become-the-new-mckinsey",
+    "date_published": "2023-05-05T00:00:00-08:00",
+    "toots": []
+  },
+  "https://www.brooklynvegan.com/american-football-bought-the-american-football-house/": {
+    "id": "https://www.brooklynvegan.com/american-football-bought-the-american-football-house/",
+    "title": "Link: American Football bought The American Football House",
+    "url": "https://www.brooklynvegan.com/american-football-bought-the-american-football-house/",
+    "content_text": "Link: American Football bought The American Football House https://www.brooklynvegan.com/american-football-bought-the-american-football-house/",
+    "date_published": "2023-05-05T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110319321641451489"
+    ],
+    "lastTootTimestamp": 1683339258523
+  },
+  "https://wilwheaton.net/2018/08/the-world-is-a-terrible-place-right-now-and-thats-largely-because-it-is-what-we-make-it/": {
+    "id": "https://wilwheaton.net/2018/08/the-world-is-a-terrible-place-right-now-and-thats-largely-because-it-is-what-we-make-it/",
+    "title": "Link: The world is a terrible place right now, and that’s largely because it is what we make it.",
+    "url": "https://wilwheaton.net/2018/08/the-world-is-a-terrible-place-right-now-and-thats-largely-because-it-is-what-we-make-it/",
+    "content_text": "Link: The world is a terrible place right now, and that’s largely because it is what we make it. https://wilwheaton.net/2018/08/the-world-is-a-terrible-place-right-now-and-thats-largely-because-it-is-what-we-make-it/",
+    "date_published": "2023-05-05T00:00:00-08:00",
+    "toots": []
+  },
+  "https://calibreapp.com/blog/calm-web": {
+    "id": "https://calibreapp.com/blog/calm-web",
+    "title": "Link: The Calm Web: A Solution to Our Scary and Divisive Online World",
+    "url": "https://calibreapp.com/blog/calm-web",
+    "content_text": "Link: The Calm Web: A Solution to Our Scary and Divisive Online World https://calibreapp.com/blog/calm-web",
+    "date_published": "2023-05-03T00:00:00-08:00",
+    "toots": []
   }
 }
