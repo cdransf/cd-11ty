@@ -11,8 +11,7 @@
     {% block update %}
       {{ collections.entries | rssLastUpdatedDate }}{% endblock %}
   </updated>
-  <id>{{ site.url }}</id>
-  </id>
+  <id>{{ site.url }}/</id>
   <author>
     <name>{{ site.author }}</name>
     <email>{{ site.email }}</email>
