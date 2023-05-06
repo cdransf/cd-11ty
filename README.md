@@ -12,10 +12,10 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 
 ## My latest posts
 <!-- BLOGPOSTS:START -->
+- [Now page update: favorite articles from Matter](https://coryd.dev/posts/2023/now-page-update-matter-favorites/)
 - [A Safari-specific guide to making the modern web suck less](https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/)
 - [We lost the thread](https://coryd.dev/posts/2023/we-lost-the-thread/)
 - [Talk: Building a /now page with Eleventy](https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/)
 - [I don't want streaming music, I just want to stream my music](https://coryd.dev/posts/2023/i-dont-want-streaming-music/)
-- [Another Eleventy content syndication path](https://coryd.dev/posts/2023/another-eleventy-content-syndication-path/)
 <!-- BLOGPOSTS:END -->
 
