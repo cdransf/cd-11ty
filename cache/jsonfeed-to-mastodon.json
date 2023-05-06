@@ -3133,5 +3133,16 @@
     "content_text": "Link: The Calm Web: A Solution to Our Scary and Divisive Online World https://calibreapp.com/blog/calm-web",
     "date_published": "2023-05-03T00:00:00-08:00",
     "toots": []
+  },
+  "https://quii.dev/The_Web_I_Want": {
+    "id": "https://quii.dev/The_Web_I_Want",
+    "title": "Link: Chris James - The Web I Want",
+    "url": "https://quii.dev/The_Web_I_Want",
+    "content_text": "Link: Chris James - The Web I Want https://quii.dev/The_Web_I_Want",
+    "date_published": "2023-05-06T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110320221103139605"
+    ],
+    "lastTootTimestamp": 1683352983220
   }
 }
