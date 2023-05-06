@@ -3094,7 +3094,10 @@
     "url": "https://conversationalist.org/2020/03/05/the-prodigal-techbro/",
     "content_text": "Link: The Prodigal Techbro https://conversationalist.org/2020/03/05/the-prodigal-techbro/",
     "date_published": "2023-05-05T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110321164079013175"
+    ],
+    "lastTootTimestamp": 1683367371872
   },
   "https://www.newyorker.com/science/annals-of-artificial-intelligence/will-ai-become-the-new-mckinsey": {
     "id": "https://www.newyorker.com/science/annals-of-artificial-intelligence/will-ai-become-the-new-mckinsey",
