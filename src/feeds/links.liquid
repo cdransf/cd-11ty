@@ -14,7 +14,7 @@ permalink: /links.xml
       <title>{{ link.content.title | escape }}</title>
       <link href="{{link.content.url}}" />
       <updated>{{ link.content.library.last_favorited_date | date: "%m.%d.%Y" }}</updated>
-      <id>{{ link.content.link }}</id>
+      <id>{{ link.content.url }}</id>
       <content type="html">
         {{ link.excerpt | escape }}
       </content>
