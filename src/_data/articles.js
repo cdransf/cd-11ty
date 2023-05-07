@@ -10,6 +10,5 @@ module.exports = async function () {
     fetchOptions: { headers },
   }).catch()
   const feed = await res
-  const articles = feed.feed.splice(0, 5)
-  return articles
+  return feed.feed.splice(0, 5)
 }

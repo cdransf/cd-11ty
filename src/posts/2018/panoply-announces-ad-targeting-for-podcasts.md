@@ -9,4 +9,4 @@ tags: ['privacy']
 
 > For the first time in podcasting, target your audience by demographic, interests, purchase behavior and more..<!-- excerpt -->
 
-The last thing we need is the ad industry co-opting podcasts to enable more invasive tracking. No thanks.
+The last thing we need is the ad industry co-opting podcasts to enable more invasive tracking. No, thanks.

@@ -9,7 +9,7 @@ Last week my Apple Music collection, in as far as I can tell, become corrupted o
 
 I'm the kind of music nerd that likes to meticulously manage genre tags, trim extraneous strings out of track and album names and update album artwork[^1]. Apple Music is the only streaming service that supports importing your own music to supplement their catalog while also editing their metadata to match. I've been doing this for a few years now and all was well and good as my music collection grew.
 
-A few weeks ago I read through a [Brooklyn Vegan](https://brooklynvegan.com) on the best hardcore releases of 2021, added a few to my collection, tagged them and queued them. No problem. I don't end up liking all of them[^2]. I go back and notice the tags are all back to Apple's defaults (no big deal, this happens occasionally) and proceed to delete the albums I don't like. Fast forward to the next day — I sit down, scroll through Recently Added to queue up something new and everything is right back to where it was. I try deleting the same albums from the iOS app and it works briefly before they reappeared. Great.
+A few weeks ago I read through a [Brooklyn Vegan](https://brooklynvegan.com) on the best hardcore releases of 2021, added a few to my collection, tagged them and queued them. No problem. I don't end up liking all of them[^2]. I go back and notice the tags are all back to Apple's defaults (no big deal, this happens occasionally) and proceed to delete the albums I don't like. Fast-forward to the next day — I sit down, scroll through Recently Added to queue up something new and everything is right back to where it was. I try deleting the same albums from the iOS app, and it works briefly before they reappeared. Great.
 
 My next steps were pretty standard, escalating, troubleshooting:
 
@@ -33,6 +33,6 @@ I likely should have been listening to and managing music this way all along and
 
 [^1]: I'm looking at you Audiotree Live.
 [^2]: I've seen folks raving about the new Turnstile record and that's rad, but I don't get it. I'm so sorry.
-[^3]: There's a button to do this in the Mac App store app and it doesn't work. I throws a generic exception telling you to try later — use the one in the Music app.
+[^3]: There's a button to do this in the Mac App store app, and it doesn't work. It throws a generic exception telling you to try later — use the one in the Music app.
 [^4]: Cool — an opportunity to get introspective and pare back what I actually care to listen to.
 [^5]: This prompted me to move the last of my import data, my photos, off of Apple's services — my music library is one thing, having the same happen to my photos would be devastating. They're now sitting in Google Photos, getting mirrored to Dropbox and perhaps off to BackBlaze. Is this an overreaction? Maybe — but I've also had a tab Safari claims is open on my Mac Mini for 3-4 months now. Syncing is hard and the evidence leads me to believe the service implementation may not be that reliable.

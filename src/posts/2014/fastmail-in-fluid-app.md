@@ -37,8 +37,8 @@ Configuring the dock counter for the Fluid instance is also fairly straightforwa
 
 Are you currently using Fastmail in a Fluid instance? Or do you have a particular web client you prefer? I'm currently pretty happy with this setup and already have a few other ideas for URL handlers and scripts I plan on trying out.
 
-If you don't use Fastmail, I would highly recommend it and you can [sign up for it here](http://www.fastmail.com/?STKI=11917049).
+If you don't use Fastmail, I would highly recommend it, and you can [sign up for it here](http://www.fastmail.com/?STKI=11917049).
 
-**Edit (10.29.2014):** Updated the script to reflect Fastmail's new TLD (.com as opposed to .fm that they previously used; thanks to [Keith Bradnam for the heads up](http://keithbradnam.com).
+**Edit (10.29.2014):** Updated the script to reflect Fastmail's new TLD (.com as opposed to .fm that they previously used; thanks to [Keith Bradnam for the heads-up](http://keithbradnam.com).
 
-**Edit (1.29.2017):** Updated the compose URL to reflect Fastmail's new compose routing. Thanks [Fred Barker](http://fredbarker.com)!
+**Edit (1.29.2017):** Updated the compose URL to reflect Fastmail's new compose routing. Thanks, [Fred Barker](http://fredbarker.com)!

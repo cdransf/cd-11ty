@@ -175,7 +175,7 @@ export default async function loadNowData(endpoints?: string) {
 
   // artists
   if ((endpoints && selectedEndpoints.includes('artists')) || !endpoints) {
-    const artistsUrl = `http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=cdme_&api_key=${MUSIC_KEY}&limit=8&format=json&period=7day`
+    const artistsUrl = `https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=cdme_&api_key=${MUSIC_KEY}&limit=8&format=json&period=7day`
     artistsJson = await fetch(artistsUrl)
       .then((response) => response.json())
       .catch((error) => {
@@ -186,7 +186,7 @@ export default async function loadNowData(endpoints?: string) {
 
   // albums
   if ((endpoints && selectedEndpoints.includes('albums')) || !endpoints) {
-    const albumsUrl = `http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=cdme_&api_key=${MUSIC_KEY}&limit=8&format=json&period=7day`
+    const albumsUrl = `https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=cdme_&api_key=${MUSIC_KEY}&limit=8&format=json&period=7day`
     albumsJson = await fetch(albumsUrl)
       .then((response) => response.json())
       .catch((error) => {
@@ -226,7 +226,7 @@ export default async function loadNowData(endpoints?: string) {
 
   // current track
   if ((endpoints && selectedEndpoints.includes('currentTrack')) || !endpoints) {
-    const currentTrackUrl = `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=cdme_&api_key=${MUSIC_KEY}&limit=1&format=json&period=7day`
+    const currentTrackUrl = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=cdme_&api_key=${MUSIC_KEY}&limit=1&format=json&period=7day`
     currentTrackJson = await fetch(currentTrackUrl)
       .then((response) => response.json())
       .catch((error) => {
@@ -338,7 +338,7 @@ const Cover = (props: { media: Media; type: 'artist' | 'album' }) => {
 export default Cover
 ```
 
-All of the components for this page [can be viewed on GitHub](https://github.com/cdransf/coryd.dev/tree/main/components/media). Each one consumes an object from the `loadNowData` object and renders it to the page. The page is also periodically revalidated via an api route that simply calls this same method:
+All the components for this page [can be viewed on GitHub](https://github.com/cdransf/coryd.dev/tree/main/components/media). Each one consumes an object from the `loadNowData` object and renders it to the page. The page is also periodically revalidated via an api route that simply calls this same method:
 
 ```ts
 import loadNowData from '@/lib/now'

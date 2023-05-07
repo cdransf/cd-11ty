@@ -13,7 +13,7 @@ tags: ['politics', 'net neutrality']
 
 The current incarnation of the FCC is entirely pro-industry and anti-consumer in its approach to regulating the market it oversees.
 
-Chairman Pai's argument is misleading at best, particularly given the admission of ISPs that the current net neutrality rules have not harmed investment. Should the current rules be repealed, ISPs likely won't materially increase their infrastructure investments. Instead they'll use the lack of oversight and regulations to line their pockets at the expense of competitors that require access to their networks and consumers that have no other choice but to pay for their service when selecting an internet service provider.
+Chairman Pai's argument is misleading at best, particularly given the admission of ISPs that the current net neutrality rules have not harmed investment. Should the current rules be repealed, ISPs likely won't materially increase their infrastructure investments. Instead, they'll use the lack of oversight and regulations to line their pockets at the expense of competitors that require access to their networks and consumers that have no other choice but to pay for their service when selecting an internet service provider.
 
 **[Via Ars Technica](https://arstechnica.com/?p=1138213):**
 

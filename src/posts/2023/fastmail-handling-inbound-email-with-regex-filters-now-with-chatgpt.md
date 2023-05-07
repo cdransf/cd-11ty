@@ -21,7 +21,7 @@ These work by checking that the `To/CC/BCC` matches the appropriate alias before
 
 In the event I've failed to tune a regular expression properly or an actual person triggers a match I have a rule that is executed after the aforementioned alias-specific rules that stops all rule evaluations for _any_ address in my contacts.
 
-**Update:** I've run every regular expression and glob pattern I apply to my messages through ChatGPT to see if it could simplify, combine and otherwise improve them (namely reducing false positives). This has worked quite well (outside of the time required to coax ChatGPT to the best possible answer). Further, my deliveries rule that forwards to Parcel now also requires both a subject and body match before forwarding.
+**Update:** I've run every regular expression and glob pattern I apply to my messages through ChatGPT to see if it could simplify, combine and otherwise improve them (namely reducing false positives). This has worked quite well (outside the time required to coax ChatGPT to the best possible answer). Further, my deliveries rule that forwards to Parcel now also requires both a subject and body match before forwarding.
 
 [I also have a rule containing regular expressions that also skips evaluations for login pin codes, meeting/appointment reminders and common security notices](https://pastes.coryd.dev/mail-regexes-alerts/markup).
 
@@ -92,7 +92,7 @@ In the event I've failed to tune a regular expression properly or an actual pers
 
 ## Mapping categories as folders
 
-I've tailored these rules to align with folders on a per topic basis. I have a broad `Financial` folder for things like receipts, bank statements and bills. That folder contains a few granular subfolders like `Deliveries`, `Media`, `Medical`, `Promotions` and so forth. All multi-step rules are set to filter messages when `any` of the tabled criteria matches.
+I've tailored these rules to align with folders on a per-topic basis. I have a broad `Financial` folder for things like receipts, bank statements and bills. That folder contains a few granular subfolders like `Deliveries`, `Media`, `Medical`, `Promotions` and so forth. All multistep rules are set to filter messages when `any` of the tabled criteria matches.
 
 The top level `Financial` rule [looks like this](https://pastes.coryd.dev/mail-regexes-financial/markup).
 
@@ -138,7 +138,7 @@ The top level `Financial` rule [looks like this](https://pastes.coryd.dev/mail-r
 
 `Deliveries` follow a similar pattern with rule sets intended to capture messages with package tracking information or other details. I kickstarted this rule by, naturally, referencing [this answer from StackOverflow](https://stackoverflow.com/a/5024011).
 
-All of the regular expressions contained in this answer are matched against the `Body` of inbound messages before being forwarded to [Parcel Email](https://parcelapp.net/help/parcel-email.html)[^3]. These rules are supplemented by a few edge case rules targeted at the `Subject` field:
+All the regular expressions contained in this answer are matched against the `Body` of inbound messages before being forwarded to [Parcel Email](https://parcelapp.net/help/parcel-email.html)[^3]. These rules are supplemented by a few edge case rules targeted at the `Subject` field:
 
 ```json
 "conditions": [
@@ -275,7 +275,7 @@ These are designed to capture confirmations sent by Southwest and are sent off t
 ```
 
 **Social networking messages**  
-These I've left as a simple list wherein `any` included top level domain is filed away as I don't belong to many social networks and they change fairly infrequently.
+These I've left as a simple list wherein `any` included top level domain is filed away as I don't belong to many social networks, and they change fairly infrequently.
 
 **DMARC notifications (depending on how you have your policy record configured)**
 

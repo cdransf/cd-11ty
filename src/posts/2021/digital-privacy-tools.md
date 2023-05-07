@@ -14,10 +14,10 @@ This is a helpful, albeit basic, guide to online privacy tools.<!-- excerpt --> 
 **Private email providers**
 
 - [Fastmail](https://fastmail.com)
-- [mailbox.org](mailbox.org)
+- [mailbox.org](https://mailbox.org)
 - [Proton Mail](http://protonmail.com)
 
-Ubiquitous free email providers profit by mining user data (whether humans are involved or not). Your inbox acts as a key to your digital life and you should avoid using any provider that monetizes its contents.
+Ubiquitous free email providers profit by mining user data (whether humans are involved or not). Your inbox acts as a key to your digital life, and you should avoid using any provider that monetizes its contents.
 
 **Adblockers**
 

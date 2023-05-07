@@ -30,7 +30,7 @@ const EleventyFetch = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
   const MUSIC_KEY = process.env.API_KEY_LASTFM
-  const url = `http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=cdme_&api_key=${MUSIC_KEY}&limit=8&format=json&period=7day`
+  const url = `https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=cdme_&api_key=${MUSIC_KEY}&limit=8&format=json&period=7day`
   const res = EleventyFetch(url, {
     duration: '1h',
     type: 'json',
@@ -159,7 +159,7 @@ module.exports = async function () {
 }
 ```
 
-Rather than dealing with a an API that returns JSON, I'm transforming the RSS feed that Oku exposes for my currently reading collection, using [@extractis/feed-extractor](https://www.npmjs.com/package/@extractus/feed-extractor) to transform the XML into JSON and leveraging Eleventy's [@11ty/eleventy-fetch](https://www.npmjs.com/package/@11ty/eleventy-fetch) package for caching. Because I'm simply rendering a list of what I'm reading, the liquid templating is a bit simpler:
+Rather than dealing with an API that returns JSON, I'm transforming the RSS feed that Oku exposes for my currently reading collection, using [@extractis/feed-extractor](https://www.npmjs.com/package/@extractus/feed-extractor) to transform the XML into JSON and leveraging Eleventy's [@11ty/eleventy-fetch](https://www.npmjs.com/package/@11ty/eleventy-fetch) package for caching. Because I'm simply rendering a list of what I'm reading, the liquid templating is a bit simpler:
 
 {% raw %}
 
@@ -188,7 +188,7 @@ Rather than dealing with a an API that returns JSON, I'm transforming the RSS fe
 
 For **Watching: movies** and **Watching: tv** we're following a nearly identical pattern (outside of object name semantics that are specific to the media type for each). Both Trakt and Letterboxd expose RSS feeds for watched media activity and both are passed through, fetched and cached using the same dependencies.
 
-[You can view the tv.js data file here](https://github.com/cdransf/coryd.dev/blob/e886857387661ceeba4f2b368989ec32f0c3f121/src/_data/tv.js) and [movies here](https://github.com/cdransf/coryd.dev/blob/e886857387661ceeba4f2b368989ec32f0c3f121/src/_data/movies.js), while [the full `now.liquid` combines all of the discussed snippets](https://github.com/cdransf/coryd.dev/blob/e886857387661ceeba4f2b368989ec32f0c3f121/src/_includes/now.liquid).
+[You can view the tv.js data file here](https://github.com/cdransf/coryd.dev/blob/e886857387661ceeba4f2b368989ec32f0c3f121/src/_data/tv.js) and [movies here](https://github.com/cdransf/coryd.dev/blob/e886857387661ceeba4f2b368989ec32f0c3f121/src/_data/movies.js), while [the full `now.liquid` combines all the discussed snippets](https://github.com/cdransf/coryd.dev/blob/e886857387661ceeba4f2b368989ec32f0c3f121/src/_includes/now.liquid).
 
 Currently, this page is refreshed on an hourly basis using scheduled builds on Vercel triggered by GitHub actions, [which you can read about here](/posts/2023/scheduled-eleventy-builds-cron-github-actions/).
 

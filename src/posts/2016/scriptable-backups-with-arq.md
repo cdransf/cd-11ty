@@ -5,7 +5,7 @@ title: Scriptable Backups with Arq
 tags: ['Arq', 'backups']
 ---
 
-I've been using Arq for my backups for several months now and have regular backups being pushed to both [Amazon Cloud Drive](https://www.amazon.com/clouddrive) and [AWS](https://aws.amazon.com). A big part of Arq's appeal is it's flexibility, configurability and the wide array of backup destinations it supports. In short, it allows you to own and control your backups.<!-- excerpt -->
+I've been using Arq for my backups for several months now and have regular backups being pushed to both [Amazon Cloud Drive](https://www.amazon.com/clouddrive) and [AWS](https://aws.amazon.com). A big part of Arq's appeal is its flexibility, configurability and the wide array of backup destinations it supports. In short, it allows you to own and control your backups.<!-- excerpt -->
 
 In addition to being a wonderfully designed app, Arq ships with a handy command line utility that lets you pause, resume and otherwise control your backups using simple commands named for the app. In order to use these commands, however, you need to include the executable in your shell's path variable.
 

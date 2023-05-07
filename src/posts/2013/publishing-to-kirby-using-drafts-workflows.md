@@ -46,7 +46,7 @@ Title: Lorem ipsum dolor sit amet
 ----
 Date: 08.20.2013
 ----
-Link: http://google.com
+Link: https://google.com
 ----
 Text: Consectetur adipiscing elit. Suspendisse imperdiet ullamcorper accumsan. Duis et rhoncus odio. Vestibulum rhoncus nisl diam, non malesuada odio condimentum in. Morbi ut nisi nec erat viverra blandit at dapibus nibh.
 ```

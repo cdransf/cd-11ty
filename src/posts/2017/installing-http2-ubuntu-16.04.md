@@ -5,7 +5,7 @@ title: Installing HTTP/2 on Ubuntu 16.04 with virtual hosts
 tags: ['Apache', 'development']
 ---
 
-Now that HTTP/2 is fairly stable and widely available, I decided to try and install and run it on this server. I'm currently running the [Ubuntu 16.04.2](http://releases.ubuntu.com/16.04/) LTS with virtual hosts configured so I can serve a number of sites beyond this one. All of the sites this server hosts are also served securely using certificates from [LetsEncrypt](https://letsencrypt.org/).<!-- excerpt -->
+Now that HTTP/2 is fairly stable and widely available, I decided to try and install and run it on this server. I'm currently running the [Ubuntu 16.04.2](http://releases.ubuntu.com/16.04/) LTS with virtual hosts configured, so I can serve a number of sites beyond this one. All the sites this server hosts are also served securely using certificates from [LetsEncrypt](https://letsencrypt.org/).<!-- excerpt -->
 
 To install HTTP/2 I SSH'd in to the server and ran the following commands:
 

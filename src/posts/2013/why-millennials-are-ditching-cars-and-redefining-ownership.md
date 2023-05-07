@@ -5,7 +5,7 @@ title: Why Millennials are Ditching Cars and Redefining Ownership
 tags: ['culture']
 ---
 
-I wish ditching a car in Los Angeles were a workable option for me personally but, at the moment, I have an sixteen mile round trip, daily commute that isn't workable with public transit.<!-- excerpt -->
+I wish ditching a car in Los Angeles were a workable option for me personally but, at the moment, I have a sixteen-mile round trip, daily commute that isn't workable with public transit.<!-- excerpt -->
 
 **[Via NPR](http://www.npr.org/2013/08/21/209579037/why-millennials-are-ditching-cars-and-redefining-ownership):**
 

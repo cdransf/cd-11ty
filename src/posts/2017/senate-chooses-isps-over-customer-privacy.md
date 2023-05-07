@@ -11,4 +11,4 @@ tags: ['politics', 'net neutrality']
 
 I truly wish I could be shocked or surprised by a move like this coming out of the senate but, lately, congress appears to be dedicated to making decisions that actively harm their constituencies in order to benefit entrenched business interests.
 
-This action needs to fail in the house. ISPs occupy a privileged position that gives them detailed access to customer data and they should not be able to freely exploit that data for financial gain.
+This action needs to fail in the house. ISPs occupy a privileged position that gives them detailed access to customer data, and they should not be able to freely exploit that data for financial gain.

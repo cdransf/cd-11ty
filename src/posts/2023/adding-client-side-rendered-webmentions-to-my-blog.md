@@ -7,7 +7,7 @@ tags: ['webmentions', 'development', 'JavaScript']
 
 My blog is currently hosted on weblog.lol which allows for a simple and configurable weblog managed in git with posts formatted in markdown. I wanted to add webmentions to my blog which, as of now, doesn't include a build step. To accomplish this, I've added an intermediary api endpoint to the same Next.js app that powers my [/now](https://coryd.dev/now) page.<!-- excerpt -->
 
-Robb has [a handy write up on adding webmentions to your website](https://rknight.me/adding-webmentions-to-your-site/), which I followed — first adding the appropriate Mastodon link to my blog template, registering for webmentions.up and Bridgy, then adding the appropriate tags to my template document's `<head>` to record mentions.
+Robb has [a handy write-up on adding webmentions to your website](https://rknight.me/adding-webmentions-to-your-site/), which I followed — first adding the appropriate Mastodon link to my blog template, registering for webmentions.io and Bridgy, then adding the appropriate tags to my template document's `<head>` to record mentions.
 
 Next it was simply a question of rendering the output from the webmentions endpoint.
 
@@ -137,4 +137,4 @@ The webmentions HTML shell is as follows:
 </div>
 ```
 
-And there you have it — webmentions loaded client side and updated as they occur. There's an example visible on my post [Automating (and probably overengineering) my /now page](https://blog.coryd.dev/2023/02/automatingandprobablyoverengineeringmy-nowpage#webmentions).
+And there you have it — webmentions loaded client side and updated as they occur. There's an example visible on my post [Automating (and probably over-engineering) my /now page](https://blog.coryd.dev/2023/02/automatingandprobablyoverengineeringmy-nowpage#webmentions).

@@ -29,7 +29,7 @@ export default async function handler(req: any, res: any) {
   }
   const METHOD = METHODS[req.query.type] || METHODS['default']
   const data = await fetch(
-    `http://ws.audioscrobbler.com/2.0/?method=${METHOD}&user=cdme_&api_key=${KEY}&limit=${
+    `https://ws.audioscrobbler.com/2.0/?method=${METHOD}&user=cdme_&api_key=${KEY}&limit=${
       req.query.limit || 20
     }&format=${req.query.format || 'json'}&period=${req.query.period || 'overall'}`
   ).then((response) => response.json())

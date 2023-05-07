@@ -14,7 +14,7 @@ brew install mackup
 mackup backup
 ```
 
-By default mackup will back up your files to a file named mackup in the root of your Dropbox folder. You can also choose to back your files up to Google Drive or anywhere else on your local drive by creating .mackup.cfg in your user root and setting [options the tool provides](https://github.com/lra/mackup/tree/master/doc).
+By default, mackup will back up your files to a file named mackup in the root of your Dropbox folder. You can also choose to back your files up to Google Drive or anywhere else on your local drive by creating .mackup.cfg in your user root and setting [options the tool provides](https://github.com/lra/mackup/tree/master/doc).
 
 Now, when you move to a new machine, you simply install the tool and run:
 

@@ -49,7 +49,7 @@ If you still need access to calendars from your own provider, Fastmail can [sync
 
 ### Syncing with your devices
 
-First, set up [two-step verification](https://www.fastmail.help/hc/en-us/articles/360058752374-Using-two-step-verification-2FA-) — this should be done with a an authenticator app[^5]. Next, [create a password](https://www.fastmail.help/hc/en-us/articles/360058752854-App-passwords) for each app you'll access the service with — you can provision the permissions for the password to be fairly broad but, in the interest of security, I'd suggest scoping them to each app and the service they need to access (e.g. IMAP/SMTP for your Mail app on each device, CalDAV only for your calendar app on each device etc.). Fastmail has server names and ports required to access each service [outlined here](https://www.fastmail.help/hc/en-us/articles/1500000278342-Server-names-and-ports).
+First, set up [two-step verification](https://www.fastmail.help/hc/en-us/articles/360058752374-Using-two-step-verification-2FA-) — this should be done with an authenticator app[^5]. Next, [create a password](https://www.fastmail.help/hc/en-us/articles/360058752854-App-passwords) for each app you'll access the service with — you can provision the permissions for the password to be fairly broad but, in the interest of security, I'd suggest scoping them to each app and the service they need to access (e.g. IMAP/SMTP for your Mail app on each device, CalDAV only for your calendar app on each device etc.). Fastmail has server names and ports required to access each service [outlined here](https://www.fastmail.help/hc/en-us/articles/1500000278342-Server-names-and-ports).
 
 ### Next steps
 

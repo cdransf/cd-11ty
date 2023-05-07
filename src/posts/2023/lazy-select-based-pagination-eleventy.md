@@ -5,11 +5,11 @@ draft: false
 tags: ['Eleventy', 'JavaScript', 'development']
 ---
 
-I've relaunched, rebuilt and rewritten my personal blog more times than I can count and I've had a trail of posts I've never fully migrated at each turn. This weekend, while relaxing and watching movies I ported them into Eleventy and, in doing so, found that the pagination implementation I was using didn't scale well with the number of pages I added.<!-- excerpt -->
+I've relaunched, rebuilt and rewritten my personal blog more times than I can count, and I've had a trail of posts I've never fully migrated at each turn. This weekend, while relaxing and watching movies I ported them into Eleventy and, in doing so, found that the pagination implementation I was using didn't scale well with the number of pages I added.<!-- excerpt -->
 
 I quickly explored having the current page act as a floating index of sorts wherein I would cap the number of pages shown at, say, `5` and then show the previous and next two pages on either side. Limiting the rendered count in [liquid.js](https://liquidjs.com/) was as simple as using the `limit` filter, but tracking the floating index and numbers on either side was more difficult than I would have liked.
 
-Given that I was already iterating through all pages in my posts collection, my next thought (and the choice I ran with) was to fold all of the enumerated values into a `<select>` and use that to give users more control when paging. That select lives in [`paginator.liquid#17-28`](https://github.com/cdransf/coryd.dev/blob/78f6cfa93b6caaf6d82e9085939df9d2a14fc389/src/_includes/paginator.liquid#L17-L28) and looks like this:
+Given that I was already iterating through all pages in my posts collection, my next thought (and the choice I ran with) was to fold all the enumerated values into a `<select>` and use that to give users more control when paging. That select lives in [`paginator.liquid#17-28`](https://github.com/cdransf/coryd.dev/blob/78f6cfa93b6caaf6d82e9085939df9d2a14fc389/src/_includes/paginator.liquid#L17-L28) and looks like this:
 
 ```html
   <div class="flex flex-row items-center">

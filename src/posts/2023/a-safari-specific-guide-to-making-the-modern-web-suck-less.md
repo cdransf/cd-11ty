@@ -12,7 +12,7 @@ Here's a quick rundown of extensions and tools, specific to Safari, to make that
 - [1Blocker](https://1blocker.com): block ads, trackers and myriad other annoyances. My go to adblocker for Safari and it even ships with a handy, dandy local firewall to futz with analytics and trackers embedded in apps.
 - [Baking Soda](https://apps.apple.com/us/app/baking-soda-tube-cleaner/id1601151613) and [Vinegar](https://apps.apple.com/us/app/vinegar-tube-cleaner/id1591303229): load videos on YouTube and elsewhere in the native video player. 
 - [Banish](https://apps.apple.com/us/app/banish-block-open-in-app/id1632848430): block all those annoying open in app banners.[^2]
-- [Stop the Madness](https://underpassapp.com/StopTheMadness/): a Swiss Army knife of an extension aimed at curtailing modern annoyances. It'll route around AMP pages, strip tracking parameters, stops clickjacking, stops url shorteners and myriad other fixes for popular user-hostile patterns. *Essential*.atterns. *Essential*.
+- [Stop the Madness](https://underpassapp.com/StopTheMadness/): a Swiss Army knife of an extension aimed at curtailing modern annoyances. It'll route around AMP pages, strip tracking parameters, stops clickjacking, stops url shorteners and myriad other fixes for popular user-hostile patterns. *Essential*.
 - [Super Agent](https://www.super-agent.com/): automatically set your cookie preferences to the minimum allowed set.[^3]
 - [User Scripts](https://github.com/quoid/userscripts): an open source user scripts extension for Safari. I'll leave this one to your imagination (exercise caution and abandon in equal measure since you'll be running community provided scripts and styles on the sites you visit).
 

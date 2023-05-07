@@ -10,12 +10,12 @@ A rundown of privacy tools that work well with Apple's technology ecosystem.<!--
 
 ## Email providers
 
-Ubiquitous free email providers profit by mining user data (whether humans are involved or not). Your inbox acts as a key to your digital life and you should avoid using any provider that monetizes its contents.
+Ubiquitous free email providers profit by mining user data (whether humans are involved or not). Your inbox acts as a key to your digital life, and you should avoid using any provider that monetizes its contents.
 
 - [Fastmail](https://ref.fm/u28939392)[^2]: based in Melbourne, Australia Fastmail offers a range of affordably priced plans with a focus on support for open standards (including active development support for [JMAP](https://jmap.io) and the [Cyrus IMAP email server](https://fastmail.blog/open-technologies/why-we-contribute/)). They also [articulate a clear commitment to protecting and respecting your privacy](https://www.fastmail.com/values/) and offer an extensive [rundown of the privacy and security measures they employ on their site](https://www.fastmail.com/privacy-and-security/).
   - I would also recommend exploring their [masked email implementation](https://www.fastmail.help/hc/en-us/articles/4406536368911-Masked-Email), which integrates seamlessly with [1Password](https://1password.com) (though using 1Password isn't required).
 - [mailbox.org](https://mailbox.org): based in Germany, [mailbox.org](http://mailbox.org) also has [a long history](https://mailbox.org/en/company#our-history) and [commitment to privacy](https://mailbox.org/en/company#our-mission). Their service is reliable, straightforward and fully featured (it's based off of a customized implementation [Open-Xchange](https://www.open-xchange.com)) and supports features like incoming address blocking, PGP support and so forth.
-- [Proton Mail](http://protonmail.com): Proton offers a host of encrypted tools, ranging from mail to drive, calendaring and VPN services. They're also the only option in this list that includes end to end encryption. The service is extremely polished and reliable but, it's worth noting, doesn't support access to your email via open standards like IMAP/SMTP without the use of a cumbersome, desktop-only, bridge application.
+- [Proton Mail](http://protonmail.com): Proton offers a host of encrypted tools, ranging from mail to drive, calendaring and VPN services. They're also the only option in this list that includes end-to-end encryption. The service is extremely polished and reliable but, it's worth noting, doesn't support access to your email via open standards like IMAP/SMTP without the use of a cumbersome, desktop-only, bridge application.
 - [iCloud+](https://support.apple.com/guide/icloud/icloud-overview-mmfc854d9604/icloud): if you're paying for an Apple iCloud subscription you'll get access to the option to add a custom email domain to your account to use with Apple's iCloud Mail service. This is private inasmuch as the data isn't mined for monetization against personalized ads, but is also bare-bones in terms of functionality. It supports IMAP and push notifications on Apple's devices but features like rules, aliases and so forth are extremely limited compared to the previously mentioned providers. This is better than most free providers, but hardly the best option.
   - iCloud+ _does_ also offer a [Hide My Email](https://support.apple.com/guide/icloud/what-you-can-do-with-icloud-and-hide-my-email-mme38e1602db/1.0/icloud/1.0) feature to conceal your true email address, much like Fastmail.
 
@@ -23,7 +23,7 @@ Ubiquitous free email providers profit by mining user data (whether humans are i
 
 - [Apple Mail](https://support.apple.com/mail): Apple's Mail app is simple but also fully featured and reliable to the point of being a bit boring. It also has enhanced privacy features as of iOS 15 and macOS 12 in the form of [Mail Privacy Protection](https://support.apple.com/guide/iphone/use-mail-privacy-protection-iphf084865c7/ios).
 - [Canary Mail](https://canarymail.io/): a third-party email with a reasonable price tag and a heavy focus on privacy and security, Canary offers a number of enhancements like read receipts, templates, snoozing, PGP support and calendar/contact integration. The design hews tightly to iOS and macOS platform norms but, naturally, is not quite as tightly integrated as Apple's first-party mail app.
-- [Mailmate](https://freron.com/): a long running, highly configurable mail app with a strict focus on IMAP support, Mailmate is an excellent option on macOS and also offers strong support for authoring messages in markdown.
+- [Mailmate](https://freron.com/): a long-running, highly configurable mail app with a strict focus on IMAP support, Mailmate is an excellent option on macOS and also offers strong support for authoring messages in markdown.
 
 ## Safari extensions
 
@@ -48,9 +48,9 @@ Ubiquitous free email providers profit by mining user data (whether humans are i
 - [Mullvad](https://mullvad.net/en/): an open source, commercial VPN based in Sweden, Mullvad offers both WireGuard and OpenVPN support.
 - [Mozilla](https://www.mozilla.org/en-US/products/vpn/): offered by the non-profit Mozilla Foundation, this is another compelling offering from an organization with a track record of fighting for the open web and preserving user privacy.
 
-For now I've scoped this post to platforms and tools that are central to maintaining your online privacy. But, with that said, each app you use should be examined to determine if and how it fits with your approach towards privacy.
+For now, I've scoped this post to platforms and tools that are central to maintaining your online privacy. But, with that said, each app you use should be examined to determine if and how it fits with your approach towards privacy.
 
-Everything you use is going to glean data from your interactions with it and it's worth considering that tool's stance on privacy, tracking and monetization before investing your time and data into using it.
+Everything you use is going to glean data from your interactions with it, and it's worth considering that tool's stance on privacy, tracking and monetization before investing your time and data into using it.
 
 **Other resources**
 
