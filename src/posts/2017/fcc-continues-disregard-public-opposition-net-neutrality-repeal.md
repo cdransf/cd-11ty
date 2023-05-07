@@ -19,4 +19,4 @@ FCC chairman Ajit Pai has, for the entirety of the net neutrality comment period
 
 > Despite a study showing that 98.5 percent of individually written net neutrality comments support the US's current net neutrality rules, AT&T is claiming that the vast majority of "legitimate" comments favor repealing the rules.
 
-> The Federal Communication Commission's net neutrality docket is a real mess, with nearly 22 million comments, mostly from form letters and many from spam bots using identities stolen from data breaches.
+> The Federal Communication Commission's net neutrality docket is a real mess, with nearly 22 million comments, mostly from form letters and many from spambots using identities stolen from data breaches.

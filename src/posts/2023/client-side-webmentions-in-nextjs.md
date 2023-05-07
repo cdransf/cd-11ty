@@ -198,7 +198,7 @@ export default Webmentions
 
 The final display looks like this:
 
-<img src="https://files.coryd.dev/v/NG8lHj24OsJilx7QuxWO+" alt="Example webmentions" styles="width:100%;height:auto;margin:.5em 0" />
+<img src="https://files.coryd.dev/v/NG8lHj24OsJilx7QuxWO+" alt="Example webmentions" style="width:100%;height:auto;margin:.5em 0" />
 
 [^1]: For my purposes, social media is GitHub, Mastodon and Medium. I've used the rest at various points and no longer have an interest in them for myriad reasons.
 [^2]: I've discussed this all a bit more in [this post](https://coryd.dev/blog/simple-api-fetch-hooks-with-swr).

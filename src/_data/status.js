@@ -7,5 +7,5 @@ module.exports = async function () {
     type: 'json',
   }).catch()
   const status = await res
-  return status.response.statuses[0]
+  return status.response['statuses'][0]
 }

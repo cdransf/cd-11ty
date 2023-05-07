@@ -28,4 +28,4 @@ Arq pause 60
 Arq resume
 ```
 
-Now you can easily control your backups from your CLI of choice or even script them from apps like [Alfred](https://www.alfredapp.com/) or [Control Plane](http://www.controlplaneapp.com/) (context sensitive backups anyone?).
+Now you can easily control your backups from your CLI of choice or even script them from apps like [Alfred](https://www.alfredapp.com/) or [Control Plane](http://www.controlplaneapp.com/) (context-sensitive backups anyone?).

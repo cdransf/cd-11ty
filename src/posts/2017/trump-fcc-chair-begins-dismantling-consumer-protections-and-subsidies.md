@@ -9,7 +9,7 @@ tags: ['politics', 'net neutrality']
 
 > "The Federal Communications Commission's new Republican leadership has rescinded a determination that AT&T and Verizon Wireless violated net neutrality rules with paid data cap exemptions. The FCC also rescinded several other Wheeler-era reports and actions."<!-- excerpt -->
 
-We're barely two weeks into the new presidential administration and it looks like net neutrality will be yet another casualty of this administration's drive to strip away consumer-friendly regulations.
+We're barely two weeks into the new presidential administration, and it looks like net neutrality will be yet another casualty of this administration's drive to strip away consumer-friendly regulations.
 
 If a ruling or judgement is good for telecoms or ISPs it is very likely bad for customers. This is one of those cases.
 

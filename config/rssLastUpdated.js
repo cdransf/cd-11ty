@@ -1,4 +1,4 @@
 module.exports = (collection) => {
   if (!collection || !collection.length) return ''
-  return collection[0].publishedAt
+  return collection[0]['publishedAt']
 }

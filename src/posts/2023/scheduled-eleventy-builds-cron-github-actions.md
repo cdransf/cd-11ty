@@ -7,7 +7,7 @@ tags: ['Eleventy', 'JavaScript', 'automation', 'GitHub', 'GitHub actions', 'cron
 
 In an effort to get away from client-side Javascript and embrace Eleventy for what it is (a static site generator), I've dropped my [social-utils](https://github.com/cdransf/social-utils) instance offline and my now-playing track display on my home page that still relied on it.<!-- excerpt -->
 
-To update my feeds ([feed.xml](https://coryd.dev/feed.xml) and [follow.xml](https://coryd.dev/follow.xml)) and [now page](/now) I've adopted [@11ty/eleventy-fetch](https://www.npmjs.com/package/@11ty/eleventy-fetch) and regular builds at [Vercel](https://vercel.com/) that are triggered by [Github Actions](https://docs.github.com/en/actions) that leverage cron for scheduling. [The workflow file](https://github.com/cdransf/coryd.dev/blob/e886857387661ceeba4f2b368989ec32f0c3f121/.github/workflows/scheduled-build.yaml) looks like this:
+To update my feeds ([feed.xml](https://coryd.dev/feed.xml) and [follow.xml](https://coryd.dev/follow.xml)) and [now page](/now) I've adopted [@11ty/eleventy-fetch](https://www.npmjs.com/package/@11ty/eleventy-fetch) and regular builds at [Vercel](https://vercel.com/) that are triggered by [GitHub Actions](https://docs.github.com/en/actions) that leverage cron for scheduling. [The workflow file](https://github.com/cdransf/coryd.dev/blob/e886857387661ceeba4f2b368989ec32f0c3f121/.github/workflows/scheduled-build.yaml) looks like this:
 
 {% raw %}
 
@@ -36,9 +36,9 @@ jobs:
 
 {% endraw %}
 
-This leverages three different Vercel secrets specific to your account that must be added to the [Github Actions Secrets](https://docs.github.com/en/rest/actions/secrets?apiVersion=2022-11-28) for your project (`Project repo -> Settings -> Secruity section -> Secrets and variables -> Actions`).
+This leverages three different Vercel secrets specific to your account that must be added to the [GitHub Actions Secrets](https://docs.github.com/en/rest/actions/secrets?apiVersion=2022-11-28) for your project (`Project repo -> Settings -> Secruity section -> Secrets and variables -> Actions`).
 
-Your Vercel org ID and project ID will be at the bottom of your organization/personal acount's settings (in the General section), with your project ID located in the same section of your project settings.
+Your Vercel org ID and project ID will be at the bottom of your organization/personal account's settings (in the General section), with your project ID located in the same section of your project settings.
 
 If you need to manually trigger a build, you can do so using a workflow with a {% raw %}`[workflow_dispatch]`{% endraw %} trigger like this:
 

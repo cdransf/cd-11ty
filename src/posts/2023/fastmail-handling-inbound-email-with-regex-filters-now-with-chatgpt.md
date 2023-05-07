@@ -9,7 +9,7 @@ I've been using Fastmail for years now and have explored a number of different a
 
 For now, I've approached filtering my mail by applying regular expressions to reasonably broad categories of incoming mail[^2]. My thinking with this approach is that will scale better over the long term by applying heuristics to common phrases and patterns in incoming mail without the need to apply rules to senders on a per address or domain basis.
 
-<img src="https://cdn.coryd.dev/blog/fastmail-workflow.jpg" alt="A diagram of my Fastmail workflow" styles="width:100%;height:auto;margin:.5em 0" />
+<img src="https://cdn.coryd.dev/blog/fastmail-workflow.jpg" alt="A diagram of my Fastmail workflow" style="width:100%;height:auto;margin:.5em 0" />
 
 ## Alias-specific rules
 
@@ -92,7 +92,7 @@ In the event I've failed to tune a regular expression properly or an actual pers
 
 ## Mapping categories as folders
 
-I've tailored these rules to align with folders on a per-topic basis. I have a broad `Financial` folder for things like receipts, bank statements and bills. That folder contains a few granular subfolders like `Deliveries`, `Media`, `Medical`, `Promotions` and so forth. All multistep rules are set to filter messages when `any` of the tabled criteria matches.
+I've tailored these rules to align with folders on a per-topic basis. I have a broad `Financial` folder for things like receipts, bank statements and bills. That folder contains a few granular sub-folders like `Deliveries`, `Media`, `Medical`, `Promotions` and so forth. All multistep rules are set to filter messages when `any` of the tabled criteria matches.
 
 The top level `Financial` rule [looks like this](https://pastes.coryd.dev/mail-regexes-financial/markup).
 
@@ -294,7 +294,7 @@ These I've left as a simple list wherein `any` included top level domain is file
     ],
 ```
 
-That covers _most_ of what I use to manage my mail (outside of anything particularly personal). I fully expect the regular expressions I'm using could stand to be refined and I plan on continuing to do just that. But, with that said, things have worked better than I expected so far and false positives/miscategorizations have been infrequent.
+That covers _most_ of what I use to manage my mail (outside of anything particularly personal). I fully expect the regular expressions I'm using could stand to be refined and I plan on continuing to do just that. But, with that said, things have worked better than I expected so far and false positives/mis-categorizations have been infrequent.
 
 If you have any questions or suggestions I'm all ears. Feel free to [email me](mailto:hi@coryd.dev) or ping me on [Mastodon](https://social.lol/@cory).
 

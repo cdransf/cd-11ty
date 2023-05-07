@@ -5,7 +5,7 @@ title: Senator attacks ISP and FCC argument for net neutrality repeal
 tags: ['politics', 'net neutrality']
 ---
 
-**[Senator Edward Markey, Ars Technica](https://arstechnica.com/?p=1135805￼):**
+**[Senator Edward Markey, Ars Technica](https://arstechnica.com/?p=1135805):**
 
 > ISPs are quick to tell the FCC and the public that Title II is harming network investment, but they have presented a much rosier view when talking to investors.<!-- excerpt -->
 

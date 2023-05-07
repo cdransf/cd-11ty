@@ -9,7 +9,7 @@ I don't want your streaming music service, I just want the music I've collected 
 
 Apple Music *kind of* offers this, [with some serious sharp edges to watch out for](/posts/2021/apple-music-a-tale-of-woe/). Spotify doesn't offer this, neither does YouTube Music. Want to stream music? Sign up for a service, hope your favorite artists and albums don't rot out of their catalogue and run with the algorithmic recommendations sourced from that ever-shifting catalogue[^1].
 
-I have the audio files for the music I care about and I've spent a long time collecting them. They're all tagged and named consistently using [Meta](https://www.nightbirdsevolve.com/meta/)[^2], shuffled off to an external hard drive, encrypted and mirrored up to B2 and GCP. *I just want to listen to them without using all of my local storage to do so.*
+I have the audio files for the music I care about, and I've spent a long time collecting them. They're all tagged and named consistently using [Meta](https://www.nightbirdsevolve.com/meta/)[^2], shuffled off to an external hard drive, encrypted and mirrored up to B2 and GCP. *I just want to listen to them without using all of my local storage to do so.*
 
 I leaned on iTunes Match to do this for a while but, funnily enough, Apple will still dedupe your audio against their cloud catalog, overriding meta tags and audio availability as they see fit.[^3] You can sync music into Spotify via playlists, but that's not a scalable solution to, well, much of anything.
 

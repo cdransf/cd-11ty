@@ -4,7 +4,7 @@ title: About
 ---
 
 <div class="flex items-center justify-center w-full">
-  <img class="max-w-xs w-full h-auto mt-0 mb-1" src="/assets/img/avatar.webp" alt={{ site.name }} loading="lazy" />
+  <img class="max-w-xs w-full h-auto mt-0 mb-1" src="/assets/img/avatar.webp" alt="{{ site.name }}" loading="lazy" />
 </div>
 <h1 class="text-xxl font-black -leading-tight tracking-normal dark:text-gray-200 md:text-3xl text-center">Hi, I'm Cory</h1>
 

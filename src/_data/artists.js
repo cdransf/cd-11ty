@@ -8,5 +8,5 @@ module.exports = async function () {
     type: 'json',
   }).catch()
   const artists = await res
-  return artists.topartists.artist
+  return artists['topartists'].artist
 }

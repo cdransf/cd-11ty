@@ -136,7 +136,7 @@ When the build runs, it renders any mentions of a given post via a [liquid.js](h
 
 This conditionally displays different mention types based on the available data after being passed through the `webmentionsByUrl` filter which I shamelessly lifted from [Robb](https://github.com/rknightuk/rknight.me/blob/8e2a5c5f886cae6c04add7893b8bf8a2d6295ddf/config/filters.js#L48-L84).
 
-I would like to also send outbound webmentions, but have yet to find a clear way to do so. One option I've seen mentioned is [Telegraph](https://telegraph.p3k.io/), but it's API interface requires a network call per link mentioned (which isn't untenable, but parsing posts for links and making a call for each _feels_ suboptimal)[^3].
+I would like to also send outbound webmentions, but have yet to find a clear way to do so. One option I've seen mentioned is [Telegraph](https://telegraph.p3k.io/), but its API interface requires a network call per link mentioned (which isn't untenable, but parsing posts for links and making a call for each _feels_ suboptimal)[^3].
 
 [^1]: I've done so in [Next.js](https://coryd.dev/posts/2023/client-side-webmentions-in-nextjs/) and entirely in Javascript for [weblog.lol](https://coryd.dev/posts/2023/adding-client-side-rendered-webmentions-to-my-blog/).
 [^2]: Or, better yet, read [Robb's post on the subject](https://rknight.me/adding-webmentions-to-your-site/).

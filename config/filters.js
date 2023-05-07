@@ -16,8 +16,8 @@ module.exports = {
     return marked.parse(content)
   },
   getFirstAttachment: (post) => {
-    if (post && post.attachments && post.attachments.length > 0) {
-      return post.attachments[0].url ? post.attachments[0].url : post.attachments[0]
+    if (post && post['attachments'] && post['attachments'].length > 0) {
+      return post['attachments'][0].url ? post['attachments'][0].url : post['attachments'][0]
     }
 
     return '/assets/img/social-card.png'

@@ -8,5 +8,5 @@ module.exports = async function () {
     type: 'json',
   }).catch()
   const albums = await res
-  return albums.topalbums.album
+  return albums['topalbums'].album
 }

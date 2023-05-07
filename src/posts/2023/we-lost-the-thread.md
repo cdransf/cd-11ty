@@ -5,17 +5,17 @@ draft: false
 tags: ['social media', 'tech', 'culture']
 ---
 
-We've arrived at a point where we can say that our attempts to port relationships and social interactions to the internet has been an unambiguous failure.<!-- excerpt --> Cory[^1] Doctorow [captures how markets have driven this quite succintly](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys):
+We've arrived at a point where we can say that our attempts to port relationships and social interactions to the internet has been an unambiguous failure.<!-- excerpt --> Cory[^1] Doctorow [captures how markets have driven this quite succinctly](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys):
 
 > This is enshittification: surpluses are first directed to users; then, once they're locked in, surpluses go to suppliers; then once _they're_ locked in, the surplus is handed to shareholders and the platform becomes a useless pile of shit. From mobile app stores to Steam, from Facebook to Twitter, this is the enshittification lifecycle.
 
-It's a failure of imagination, a failure of requirements and a natural outcome of market incentives that have us sitting here and, frankly, it sucks. We've got networked devices, humans maintain a network of relationships and we tried to facilitate the latter using the former and, like so much what we do as a society, we tried to use the opportunity to turn a profit. Sounds cool right?
+It's a failure of imagination, a failure of requirements and a natural outcome of market incentives that have us sitting here and, frankly, it sucks. We've got networked devices, humans maintain a network of relationships, and we tried to facilitate the latter using the former and, like so much what we do as a society, we tried to use the opportunity to turn a profit. Sounds cool right?
 
 I'd say it worked reasonably well while the technology was a nascent compliment to existing human relationships, where those relationships were rooted in a real connection. But those benefits didn't last all that long — the value diminished as these platforms worked to climb to the top of the enshittification curve, privatize profits and replace real relationships.[^2]
 
 Is a friend on a social network a friend or someone you went to in high school ten years ago? Is that a relationship or a data point in a social graph that you don't own?
 
-Your real social graph is a list of contacts — a list that may be tedious to main but, if a relationship is worth maintaining, you'll maintain its entry in that list. Modern social platforms make it easy to maintain relationships that aren't that. Log in, like some posts, log off. It's ritualized, it's addictive and it's devoid of value.
+Your real social graph is a list of contacts — a list that may be tedious to main but, if a relationship is worth maintaining, you'll maintain its entry in that list. Modern social platforms make it easy to maintain relationships that aren't that. Log in, like some posts, log off. It's ritualized, it's addictive, and it's devoid of value.
 
 Pick up a phone and call someone, grab coffee, send them a text — if that's too much work then it sounds like you may have outgrown that relationship and moved on. We haven't scaled relationships or made them more convenient, we've created sticky platforms that don't benefit or empower their users.
 

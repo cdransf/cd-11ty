@@ -9,4 +9,4 @@ tags: ['music']
 
 I could not be more excited for this release.
 
-Kudos to Roadburn Festivam [for commissioning the piece](https://roadburn.com/premiere-waste-of-space-orchestra-seekers-reflection/).<!-- excerpt -->
+Kudos to Roadburn Festival [for commissioning the piece](https://roadburn.com/premiere-waste-of-space-orchestra-seekers-reflection/).<!-- excerpt -->

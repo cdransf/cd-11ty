@@ -1,6 +1,6 @@
 ---
 date: 2013-07-30
-dradt: false
+draft: false
 title: Blitzen Trapper - 'Ever Loved Once'
 tags: ['music']
 ---

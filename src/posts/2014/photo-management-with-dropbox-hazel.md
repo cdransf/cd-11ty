@@ -9,7 +9,7 @@ I recently abandoned iPhoto as a means of storing, organizing and managing photo
 
 I began by exporting my iPhoto library to a folder using [Phoshare](http://code.google.com/p/phoshare/)[^iphoto]. I then created a simple [Hazel](http://www.noodlesoft.com/hazel.php) rule to scan my iPhoto library for duplicate images or videos and discard them. Clearing duplicates from my iPhoto library saved me 6 GB in space which either speaks to how disorganized my library was to begin with or how bloated iPhoto managed to make it.
 
-After clearing duplicate files I created another rule to rename all photos based on the date they were taken and what they were taken with before then organizing them in to a subfolder based on that date. From there organization was simply a question of looking through each folder and appending an event title after the date the folder was named with.
+After clearing duplicate files I created another rule to rename all photos based on the date they were taken and what they were taken with before then organizing them in to a sub-folder based on that date. From there organization was simply a question of looking through each folder and appending an event title after the date the folder was named with.
 
 Once all of the above rules were run on my Dropbox Photos directory I edited them to run on my [Dropbox Camera Uploads directory](https://www.dropbox.com/help/289/en 'How do I use Camera Upload?'). This allows me to upload photos via the iOS Dropbox app or import it directly from my camera and have Hazel auto-organize any content based on event date which I then label and move to a folder in the Photos folder named for the year in which the pictures were taken.
 
