@@ -51,7 +51,7 @@ Software and services that I use for work and my own enjoyment.
 
 - [Catppuccin](https://github.com/catppuccin)
 
-- <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Services</h3>
+<h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Services</h3>
 
 - <a href="https://pr.tn/ref/X775YX40Z50G" onclick="va('event',{name:'Proton referral',data:{location:'Uses'}})">Proton</a>
 - <a href="https://nextdns.io/?from=m56mt3z6" onclick="va('event',{name:'NextDNS referral',data:{location:'Uses'}})">NextDNS</a>
