@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/*noinspection Annotator*/
 ::-moz-selection {
   color: theme(colors.white);
   background: theme(colors.purple.400);
 }
 
+/*noinspection Annotator*/
 ::selection {
   color: theme(colors.white);
   background: theme(colors.purple.400);

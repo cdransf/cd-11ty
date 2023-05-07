@@ -3,6 +3,7 @@ const { AssetCache } = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
   const url = 'https://oku.club/rss/collection/POaRa'
+  // noinspection JSCheckFunctionSignatures
   const asset = new AssetCache('books_data')
   if (asset.isCacheValid('1h')) return await asset.getCachedValue()
   const res = await extract(url)

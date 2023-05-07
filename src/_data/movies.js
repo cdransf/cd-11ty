@@ -3,6 +3,7 @@ const { AssetCache } = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
   const url = 'https://letterboxd.com/cdme/rss'
+  // noinspection JSCheckFunctionSignatures
   const asset = new AssetCache('movies_data')
   if (asset.isCacheValid('1h')) return await asset.getCachedValue()
   const res = await extract(url, {
