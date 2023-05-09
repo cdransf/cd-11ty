@@ -1865,6 +1865,13 @@ electron-to-chromium@^1.4.284:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.373.tgz#58eb1c180e56550fdbf8cd6e4f04a84abd414bb9"
   integrity sha512-whGyixOVSRlyOBQDsRH9xltFaMij2/+DQRdaYahCq0P/fiVnAVGaW7OVsFnEjze/qUo298ez9C46gnALpo6ukg==
 
+eleventy-plugin-activity-pub@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-activity-pub/-/eleventy-plugin-activity-pub-0.1.1.tgz#1e23e71a3502154d599c3e1bb2dccf16c3838236"
+  integrity sha512-9U4gEKi5mlk4J73NF6i33Qyp5+GKm20A9D6ExwuJnQP7nalbFpSblpTsdebU6/vDJeC82fsP/Klt2jNPFPsLew==
+  dependencies:
+    node-fetch "^2.6.7"
+
 eleventy-plugin-heroicons@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/eleventy-plugin-heroicons/-/eleventy-plugin-heroicons-1.1.0.tgz#5799b37251269e9d3b46c27185f724d319f4b28b"
