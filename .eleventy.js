@@ -23,8 +23,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(activityPubPlugin, {
     username: 'hi',
     domain: 'coryd.dev',
-    outbox: true,
-    outboxCollection: 'posts',
     alias: {
       username: 'cory',
       domain: 'social.lol',

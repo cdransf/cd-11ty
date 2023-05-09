@@ -5,15 +5,12 @@
     {% block title %}Links • Cory Dransfeldt{% endblock %}
   </title>
   <link href="{{ pkg.homepage }}/links.xml" rel="self" />
-  <link href="{{ pkg.homepage }}" />
+  <link href="{{ pkg.homepage }}/" />
   <link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
-  <updated>
-    {% block update %}
-      {{ collections.entries | rssLastUpdatedDate }}{% endblock %}
-  </updated>
+  <updated>{% block update %}{{ articles[0].content.library.last_favorited_date | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}</updated>
   <id>{{ site.url }}</id>
   <author>
-    <name>{{ site.author }}</name>
+    <name>{{ site.name }}</name>
     <email>{{ site.email }}</email>
   </author>
   <generator uri="https://11ty.dev" version="{{ eleventy.version }}">{{ eleventy.generator }}</generator>
