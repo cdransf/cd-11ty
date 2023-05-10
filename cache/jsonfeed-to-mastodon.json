@@ -3205,5 +3205,16 @@
       "https://social.lol/users/cory/statuses/110334848513468068"
     ],
     "lastTootTimestamp": 1683576179767
+  },
+  "https://letterboxd.com/cdme/film/battle-los-angeles/": {
+    "id": "https://letterboxd.com/cdme/film/battle-los-angeles/",
+    "title": "🎥: Battle: Los Angeles, 2011 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/battle-los-angeles/",
+    "content_text": "🎥: Battle: Los Angeles, 2011 - ★★★ https://letterboxd.com/cdme/film/battle-los-angeles/",
+    "date_published": "2023-05-10T13:55:45-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110346182971362519"
+    ],
+    "lastTootTimestamp": 1683749129873
   }
 }
