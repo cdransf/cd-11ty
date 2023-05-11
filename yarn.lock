@@ -443,14 +443,14 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.40.0.tgz#3ba73359e11f5a7bd3e407f70b3528abfae69cec"
   integrity sha512-ElyB54bJIhXQYVKjDSvCkPO1iU1tSAeVQJbllWJq1XQSmmA4dgFk8CbiBGpiOPxleE48vDogxCtmMYku4HSVLA==
 
-"@extractus/feed-extractor@^6.2.1":
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/@extractus/feed-extractor/-/feed-extractor-6.2.1.tgz#9f9295a4c997f7711a068afe7d7fdb7ef6bce863"
-  integrity sha512-zCIcvp4CDhgqdX17MJenBCXXm4NMVFJyKmvVMzl3LwOyFUEmpO4WGjtzXhxw1XN1Mjj5gvPclJNPgRBGlom2zA==
+"@extractus/feed-extractor@^6.2.2":
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/@extractus/feed-extractor/-/feed-extractor-6.2.2.tgz#04a7b202371a6cbff069bc24d9cba96846a2e4a4"
+  integrity sha512-aMQ25XMllrnVdWGwqCCadQ2rZhgrxusTO09MHqP8ATm86S3GT5Uq5XCYjOG4qVqQ238ZfqTaIxK4pUzo0PftwQ==
   dependencies:
-    bellajs "^11.1.1"
+    bellajs "^11.1.2"
     cross-fetch "^3.1.5"
-    fast-xml-parser "^4.0.13"
+    fast-xml-parser "^4.2.2"
     html-entities "^2.3.3"
 
 "@fontsource/inter@^4.5.15":
@@ -1098,7 +1098,7 @@ bcp-47@^1.0.0:
     is-alphanumerical "^1.0.0"
     is-decimal "^1.0.0"
 
-bellajs@^11.1.1:
+bellajs@^11.1.2:
   version "11.1.2"
   resolved "https://registry.yarnpkg.com/bellajs/-/bellajs-11.1.2.tgz#1b7d5660bd7f34158349e76b1451461d938f1d50"
   integrity sha512-2Fy3Km5JKyIy/KunW3oica2gZtkjD2qSqti2Q3xPhHvXXdMbc+32pEMOPG+xrSat0BXVhRjHIx++lzxIPK0GqQ==
@@ -2305,7 +2305,7 @@ fast-levenshtein@^2.0.6:
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==
 
-fast-xml-parser@^4.0.13, fast-xml-parser@^4.0.14:
+fast-xml-parser@^4.0.14, fast-xml-parser@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-4.2.2.tgz#cb7310d1e9cf42d22c687b0fae41f3c926629368"
   integrity sha512-DLzIPtQqmvmdq3VUKR7T6omPK/VCRNqgFlGtbESfyhcH2R4I8EzK1/K6E8PkRCK2EabWrUHK32NjYRbEFnnz0Q==
