@@ -22,9 +22,8 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
 
-- [Todoist](https://todoist.com)
 - [Obsidian](https://obsidian.md)
-- [iBroadcast](https://ibroadcast.com)
+- [Plexamp](https://plexamp.com)
 - [Ivory](https://tapbots.com/ivory)
 - [Parcel](https://parcelapp.net)
 
@@ -58,11 +57,11 @@ Software and services that I use for work and my own enjoyment.
 - <a href="https://dnsimple.com/r/3a7cbb9e15df8f" onclick="va('event',{name:'DNSimple referral',data:{location:'Uses'}})">DNSimple</a>
 - <a href="https://bunny.net?ref=revw3mehej" onclick="va('event',{name:'Bunny.net referral',data:{location:'Uses'}})">Bunny.net</a>
 - [1Password](https://1password.com)
-- [Slack](http://slack.com)
-- [Discord](http://discord.com)
+- [Reader](https://readwise.io/read)
 - [Trakt](https://trakt.tv)
 - [Letterboxd](https://letterboxd.com)
 - [Oku](https://oku.club)
-- [Matter](https://getmatter.com)
+- [Slack](http://slack.com)
+- [Discord](http://discord.com)
 
 Check out [uses.tech](https://uses.tech) for more lists like this one.

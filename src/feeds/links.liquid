@@ -5,17 +5,17 @@ permalink: /links.xml
 {% layout "./_includes/feed-links.liquid" %}
 {% block title %}Links • Cory Dransfeldt{% endblock %}
 {% block self %}links.xml{% endblock %}
-{% block update %}{{ articles[0].content.library.last_favorited_date | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}
+{% block update %}{{ articles[0].created_at | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}
 {% block entries %}
   {% assign links = articles | reverse %}
   {% for link in links %}
     <entry>
-      <title>{{ link.content.title | escape }}</title>
-      <link href="{{link.content.url}}" />
-      <updated>{{ link.content.library.last_favorited_date | date: "%m.%d.%Y" }}</updated>
-      <id>{{ link.content.url }}</id>
+      <title>{{ link.title | escape }}</title>
+      <link href="{{link.url}}" />
+      <updated>{{ link.created_at | date: "%m.%d.%Y" }}</updated>
+      <id>{{ link.url }}</id>
       <content type="html">
-        {{ link.excerpt | escape }}
+        {{ link.summary | escape }}
       </content>
     </entry>
   {% endfor %}

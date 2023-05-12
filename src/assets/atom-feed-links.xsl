@@ -48,7 +48,7 @@ xmlns:atom="http://www.w3.org/2005/Atom">
                         </svg>
                         Feed preview • links
                         </h2>
-                        <p>Recently read and favorited links <a href="/posts/2023/now-page-update-matter-favorites/">sourced from the Matter API.</a></p>
+                        <p>Recently read and favorited links <a href="/posts/2023/now-page-update-matter-favorites/">sourced from the Reader API.</a></p>
                         <p><xsl:value-of select="atom:feed/atom:description"/></p>
                     </div>
                     <ul class="mb-8">
