@@ -3216,5 +3216,16 @@
       "https://social.lol/users/cory/statuses/110346182971362519"
     ],
     "lastTootTimestamp": 1683749129873
+  },
+  "https://getmatter.com/email/24292543/?token=24292543%3AW8dRhAqbwkcdbPT6GPSmGxogH4Y": {
+    "id": "https://getmatter.com/email/24292543/?token=24292543%3AW8dRhAqbwkcdbPT6GPSmGxogH4Y",
+    "title": "🔗: Google wants to take over the web",
+    "url": "https://getmatter.com/email/24292543/?token=24292543%3AW8dRhAqbwkcdbPT6GPSmGxogH4Y",
+    "content_text": "🔗: Google wants to take over the web https://getmatter.com/email/24292543/?token=24292543%3AW8dRhAqbwkcdbPT6GPSmGxogH4Y",
+    "date_published": "2023-05-11T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110353299535726662"
+    ],
+    "lastTootTimestamp": 1683857720017
   }
 }
