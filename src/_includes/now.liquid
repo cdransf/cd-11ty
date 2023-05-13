@@ -113,15 +113,16 @@ layout: main
   {% endif %}
   {% if articles %}
     <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
-      Reading: favorite articles
+      Reading: shortlisted articles
     </h2>
     <div>
       <ul class="list-inside list-disc pl-5 md:pl-10">
         {% for article in articles | reverse %}
           <li class="mt-1.5 mb-2">
-            <a href="{{article.url}}" title="{{article.title | escape}}">
-              {{ article.title | escape }}
-            </a>
+            {% comment %}<a href="{{article.url}}" title="{{article.title | escape}}">{% endcomment %}
+              {% comment %}{{ article.title | escape }}{% endcomment %}
+            {% comment %}</a>{% endcomment %}
+            {{ article.title | escape }} by {{ article.author }}
           </li>
         {% endfor %}
       </ul>
