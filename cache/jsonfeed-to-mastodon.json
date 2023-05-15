@@ -3359,5 +3359,16 @@
       "https://social.lol/users/cory/statuses/110372126007474699"
     ],
     "lastTootTimestamp": 1684144989175
+  },
+  "https://letterboxd.com/cdme/film/godzilla-2014/": {
+    "id": "https://letterboxd.com/cdme/film/godzilla-2014/",
+    "title": "🎥: Godzilla, 2014 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/godzilla-2014/",
+    "content_text": "🎥: Godzilla, 2014 - ★★★ https://letterboxd.com/cdme/film/godzilla-2014/",
+    "date_published": "2023-05-15T13:16:20-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110373541957582669"
+    ],
+    "lastTootTimestamp": 1684166594861
   }
 }
