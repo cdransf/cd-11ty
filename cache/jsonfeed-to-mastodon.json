@@ -3311,7 +3311,10 @@
     "url": "https://thebaffler.com/outbursts/bad-manors-wagner",
     "content_text": "🔗: Bad Manors https://thebaffler.com/outbursts/bad-manors-wagner",
     "date_published": "2023-05-14T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110372600535196418"
+    ],
+    "lastTootTimestamp": 1684152229910
   },
   "https://www.vice.com/en/article/n7zadk/everything-ive-learnt-about-london-renting": {
     "id": "https://www.vice.com/en/article/n7zadk/everything-ive-learnt-about-london-renting",
