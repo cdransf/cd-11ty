@@ -3296,9 +3296,9 @@
   },
   "https://www.theatlantic.com/magazine/archive/2023/06/dc-solar-power-ponzi-scheme-scandal/673782/": {
     "id": "https://www.theatlantic.com/magazine/archive/2023/06/dc-solar-power-ponzi-scheme-scandal/673782/",
-    "title": "🔗: The Billion-Dollar Ponzi Scheme That Hooked Wall Street, Warren Buffett, and the U.S. Treasury - The Atlantic",
+    "title": "🔗: The Billion-Dollar Ponzi Scheme That Hooked Wall Street, Warren Buffett, and the U.S. Treasury",
     "url": "https://www.theatlantic.com/magazine/archive/2023/06/dc-solar-power-ponzi-scheme-scandal/673782/",
-    "content_text": "🔗: The Billion-Dollar Ponzi Scheme That Hooked Wall Street, Warren Buffett, and the U.S. Treasury - The Atlantic https://www.theatlantic.com/magazine/archive/2023/06/dc-solar-power-ponzi-scheme-scandal/673782/",
+    "content_text": "🔗: The Billion-Dollar Ponzi Scheme That Hooked Wall Street, Warren Buffett, and the U.S. Treasury https://www.theatlantic.com/magazine/archive/2023/06/dc-solar-power-ponzi-scheme-scandal/673782/",
     "date_published": "2023-05-14T00:00:00-08:00",
     "toots": [
       "https://social.lol/users/cory/statuses/110370295559022376"
@@ -3311,6 +3311,33 @@
     "url": "https://thebaffler.com/outbursts/bad-manors-wagner",
     "content_text": "🔗: Bad Manors https://thebaffler.com/outbursts/bad-manors-wagner",
     "date_published": "2023-05-14T00:00:00-08:00",
+    "toots": []
+  },
+  "https://www.vice.com/en/article/n7zadk/everything-ive-learnt-about-london-renting": {
+    "id": "https://www.vice.com/en/article/n7zadk/everything-ive-learnt-about-london-renting",
+    "title": "🔗: 'Landlords Are a Scum Class': Everything I've Learnt About London Renting",
+    "url": "https://www.vice.com/en/article/n7zadk/everything-ive-learnt-about-london-renting",
+    "content_text": "🔗: 'Landlords Are a Scum Class': Everything I've Learnt About London Renting https://www.vice.com/en/article/n7zadk/everything-ive-learnt-about-london-renting",
+    "date_published": "2023-05-15T00:00:00-08:00",
+    "toots": []
+  },
+  "https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web": {
+    "id": "https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web",
+    "title": "🔗: ChatGPT Is a Blurry JPEG of the Web",
+    "url": "https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web",
+    "content_text": "🔗: ChatGPT Is a Blurry JPEG of the Web https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web",
+    "date_published": "2023-05-15T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110370711735470987"
+    ],
+    "lastTootTimestamp": 1684123409121
+  },
+  "https://ericwbailey.website/published/i-doubled-down-on-rss/": {
+    "id": "https://ericwbailey.website/published/i-doubled-down-on-rss/",
+    "title": "🔗: I doubled-down on RSS",
+    "url": "https://ericwbailey.website/published/i-doubled-down-on-rss/",
+    "content_text": "🔗: I doubled-down on RSS https://ericwbailey.website/published/i-doubled-down-on-rss/",
+    "date_published": "2023-05-15T00:00:00-08:00",
     "toots": []
   }
 }
