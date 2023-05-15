@@ -3319,7 +3319,10 @@
     "url": "https://www.vice.com/en/article/n7zadk/everything-ive-learnt-about-london-renting",
     "content_text": "🔗: 'Landlords Are a Scum Class': Everything I've Learnt About London Renting https://www.vice.com/en/article/n7zadk/everything-ive-learnt-about-london-renting",
     "date_published": "2023-05-15T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110371183913013043"
+    ],
+    "lastTootTimestamp": 1684130613989
   },
   "https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web": {
     "id": "https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web",
@@ -3337,6 +3340,14 @@
     "title": "🔗: I doubled-down on RSS",
     "url": "https://ericwbailey.website/published/i-doubled-down-on-rss/",
     "content_text": "🔗: I doubled-down on RSS https://ericwbailey.website/published/i-doubled-down-on-rss/",
+    "date_published": "2023-05-15T00:00:00-08:00",
+    "toots": []
+  },
+  "https://www.nplusonemag.com/issue-45/the-intellectual-situation/the-new-new-reading-environment/": {
+    "id": "https://www.nplusonemag.com/issue-45/the-intellectual-situation/the-new-new-reading-environment/",
+    "title": "🔗: The New New Reading Environment",
+    "url": "https://www.nplusonemag.com/issue-45/the-intellectual-situation/the-new-new-reading-environment/",
+    "content_text": "🔗: The New New Reading Environment https://www.nplusonemag.com/issue-45/the-intellectual-situation/the-new-new-reading-environment/",
     "date_published": "2023-05-15T00:00:00-08:00",
     "toots": []
   }
