@@ -35,7 +35,7 @@ layout: main
       Hacking away on random projects like this page, my
       <a href="/">blog</a>, and whatever else I can find time for.</p>
   </div>
-  {% if artists %}
+  {% if artists.size > 0 %}
     <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
       Listening: artists
     </h2>
@@ -65,7 +65,7 @@ layout: main
       </div>
     </div>
   {% endif %}
-  {% if albums %}
+  {% if albums.size > 0 %}
     <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
       Listening: albums
     </h2>
@@ -95,7 +95,7 @@ layout: main
       </div>
     </div>
   {% endif %}
-  {% if books %}
+  {% if books.size > 0 %}
     <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
       Reading: books
     </h2>
@@ -111,24 +111,23 @@ layout: main
       </ul>
     </div>
   {% endif %}
-  {% if articles %}
+  {% if articles.size > 0 %}
     <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
-      Reading: shortlisted articles
+      Reading: favorite articles
     </h2>
     <div>
       <ul class="list-inside list-disc pl-5 md:pl-10">
-        {% for article in articles | reverse %}
+        {% for article in articles %}
           <li class="mt-1.5 mb-2">
-            {% comment %}<a href="{{article.url}}" title="{{article.title | escape}}">{% endcomment %}
-              {% comment %}{{ article.title | escape }}{% endcomment %}
-            {% comment %}</a>{% endcomment %}
-            {{ article.title | escape }} by {{ article.author }}
+            <a href="{{article.href}}" title="{{article.description | escape}}">
+              {{ article.description }}
+            </a>
           </li>
         {% endfor %}
       </ul>
     </div>
   {% endif %}
-  {% if movies %}
+  {% if movies.size > 0 %}
     <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
       Watching: movies
     </h2>
@@ -155,7 +154,7 @@ layout: main
       </div>
     </div>
   {% endif %}
-  {% if tv %}
+  {% if tv.size > 0 %}
     <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
       Watching: tv
     </h2>
