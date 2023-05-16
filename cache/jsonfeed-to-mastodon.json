@@ -3381,5 +3381,16 @@
       "https://social.lol/users/cory/statuses/110374484418779302"
     ],
     "lastTootTimestamp": 1684180975713
+  },
+  "https://letterboxd.com/cdme/film/kong-skull-island/": {
+    "id": "https://letterboxd.com/cdme/film/kong-skull-island/",
+    "title": "🎥: Kong: Skull Island, 2017 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/kong-skull-island/",
+    "content_text": "🎥: Kong: Skull Island, 2017 - ★★★ https://letterboxd.com/cdme/film/kong-skull-island/",
+    "date_published": "2023-05-16T12:02:22-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110378730826143777"
+    ],
+    "lastTootTimestamp": 1684245770711
   }
 }
