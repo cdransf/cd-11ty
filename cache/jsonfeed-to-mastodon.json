@@ -3403,5 +3403,16 @@
       "https://social.lol/users/cory/statuses/110384866429543387"
     ],
     "lastTootTimestamp": 1684339392618
+  },
+  "https://oku.club/book/black-against-empire-by-joshua-bloom-insEs": {
+    "id": "https://oku.club/book/black-against-empire-by-joshua-bloom-insEs",
+    "title": "📖: Black Against Empire",
+    "url": "https://oku.club/book/black-against-empire-by-joshua-bloom-insEs",
+    "content_text": "📖: Black Against Empire https://oku.club/book/black-against-empire-by-joshua-bloom-insEs",
+    "date_published": "2023-05-17T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110385337971761719"
+    ],
+    "lastTootTimestamp": 1684346587762
   }
 }
