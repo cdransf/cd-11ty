@@ -1,4 +1,4 @@
-const ALBUM_DENYLIST = ['no-love-deep-web']
+const ALBUM_DENYLIST = ['no-love-deep-web', 'unremittance']
 
 module.exports = {
   artist: (media) =>
