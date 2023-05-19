@@ -3469,5 +3469,16 @@
       "https://social.lol/users/cory/statuses/110391000623209429"
     ],
     "lastTootTimestamp": 1684432993003
+  },
+  "https://arstechnica.com/?p=1940171": {
+    "id": "https://arstechnica.com/?p=1940171",
+    "title": "🔗: Google pushes .zip and .mov domains onto the Internet, and the Internet pushes back",
+    "url": "https://arstechnica.com/?p=1940171",
+    "content_text": "🔗: Google pushes .zip and .mov domains onto the Internet, and the Internet pushes back https://arstechnica.com/?p=1940171",
+    "date_published": "2023-05-18T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110393359853437718"
+    ],
+    "lastTootTimestamp": 1684468991927
   }
 }
