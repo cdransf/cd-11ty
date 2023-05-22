@@ -2,6 +2,7 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const heroIcons = require('eleventy-plugin-heroicons')
 const pluginUnfurl = require('eleventy-plugin-unfurl')
 const pluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier')
+const schema = require('@quasibit/eleventy-plugin-schema')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const markdownItFootnote = require('markdown-it-footnote')
@@ -20,6 +21,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(heroIcons)
   eleventyConfig.addPlugin(pluginUnfurl)
   eleventyConfig.addPlugin(pluginFilesMinifier)
+  eleventyConfig.addPlugin(schema)
   eleventyConfig.addPlugin(activityPubPlugin, {
     username: 'hi',
     domain: 'coryd.dev',

@@ -558,6 +558,11 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
+"@quasibit/eleventy-plugin-schema@^1.11.0":
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/@quasibit/eleventy-plugin-schema/-/eleventy-plugin-schema-1.11.0.tgz#5184dd828a52d5cfb906834f52d925eed84f1b5d"
+  integrity sha512-1nsAS+N8gY3VyUrGHEgSoQHa1kKgyexMHe5BFCK5QXYqLd/AP9IiBLZMYIf0HjQfuVvBeY8s/y4/HqhLuBPpkw==
+
 "@sherby/eleventy-plugin-files-minifier@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@sherby/eleventy-plugin-files-minifier/-/eleventy-plugin-files-minifier-1.1.1.tgz#f5506be12051f067114fc6e54af26c234e5f6cce"
@@ -5188,6 +5193,11 @@ string-argv@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/string-argv/-/string-argv-0.3.1.tgz#95e2fbec0427ae19184935f816d74aaa4c5c19da"
   integrity sha512-a1uQGz7IyVy9YwhqjZIZu1c8JO8dNIe20xBmSS6qu9kv++k3JGzCVmprbNN5Kn+BgzD5E7YYwg1CcjuJMRNsvg==
+
+string-strip-html@8.5.0:
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/string-strip-html/-/string-strip-html-8.5.0.tgz#5e239fe84016fad7b33ca02d23c591f1ccb6af75"
+  integrity sha512-5ICsK1B1j0A3AF1d45m0sqQCcmi1Q+t1QpF+b794LO5FTHV+ITkGR5C+UCDJQZgs5LMuRruqr6j48PxQVIurJQ==
 
 string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
   version "4.2.3"
