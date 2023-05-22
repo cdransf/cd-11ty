@@ -24,7 +24,7 @@ Software and services that I use for work and my own enjoyment.
 
 - [Obsidian](https://obsidian.md)
 - [Readkit](https://readkit.app)
-- [Pinstachio](https://pinstachio.com)
+- [Pins for Pinboard](https://get-pins.app)
 - [Plexamp](https://plexamp.com)
 - [Ivory](https://tapbots.com/ivory)
 - [Parcel](https://parcelapp.net)
