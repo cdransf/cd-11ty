@@ -3524,5 +3524,40 @@
       "https://social.lol/users/cory/statuses/110409433122326312"
     ],
     "lastTootTimestamp": 1684714250560
+  },
+  "https://kentcdodds.com/blog/stop-mocking-fetch": {
+    "id": "https://kentcdodds.com/blog/stop-mocking-fetch",
+    "title": "🔗: Stop mocking fetch",
+    "url": "https://kentcdodds.com/blog/stop-mocking-fetch",
+    "content_text": "🔗: Stop mocking fetch https://kentcdodds.com/blog/stop-mocking-fetch",
+    "date_published": "2023-05-22T00:00:00-08:00",
+    "toots": []
+  },
+  "https://www.wired.com/story/doug-rushkoff-survival-of-the-richest/": {
+    "id": "https://www.wired.com/story/doug-rushkoff-survival-of-the-richest/",
+    "title": "🔗: Doug Rushkoff Is Ready to Renounce the Digital Revolution",
+    "url": "https://www.wired.com/story/doug-rushkoff-survival-of-the-richest/",
+    "content_text": "🔗: Doug Rushkoff Is Ready to Renounce the Digital Revolution https://www.wired.com/story/doug-rushkoff-survival-of-the-richest/",
+    "date_published": "2023-05-22T00:00:00-08:00",
+    "toots": []
+  },
+  "https://i-d.vice.com/en/article/ak3v7k/find-my-location-sharing-app-accidental-social-media-platform": {
+    "id": "https://i-d.vice.com/en/article/ak3v7k/find-my-location-sharing-app-accidental-social-media-platform",
+    "title": "🔗: Location sharing is the best, worst thing to ever happen to us",
+    "url": "https://i-d.vice.com/en/article/ak3v7k/find-my-location-sharing-app-accidental-social-media-platform",
+    "content_text": "🔗: Location sharing is the best, worst thing to ever happen to us https://i-d.vice.com/en/article/ak3v7k/find-my-location-sharing-app-accidental-social-media-platform",
+    "date_published": "2023-05-22T00:00:00-08:00",
+    "toots": []
+  },
+  "https://www.damemagazine.com/2023/03/06/america-propaganda-disinformation/": {
+    "id": "https://www.damemagazine.com/2023/03/06/america-propaganda-disinformation/",
+    "title": "🔗: America’s Propaganda Apocalypse Was Decades in the Making",
+    "url": "https://www.damemagazine.com/2023/03/06/america-propaganda-disinformation/",
+    "content_text": "🔗: America’s Propaganda Apocalypse Was Decades in the Making https://www.damemagazine.com/2023/03/06/america-propaganda-disinformation/",
+    "date_published": "2023-05-22T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110410346299759060"
+    ],
+    "lastTootTimestamp": 1684728184589
   }
 }
