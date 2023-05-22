@@ -3513,5 +3513,16 @@
       "https://social.lol/users/cory/statuses/110408930058846408"
     ],
     "lastTootTimestamp": 1684706574430
+  },
+  "https://letterboxd.com/cdme/film/babylon-ad/": {
+    "id": "https://letterboxd.com/cdme/film/babylon-ad/",
+    "title": "🎥: Babylon A.D., 2008 - ★★½",
+    "url": "https://letterboxd.com/cdme/film/babylon-ad/",
+    "content_text": "🎥: Babylon A.D., 2008 - ★★½ https://letterboxd.com/cdme/film/babylon-ad/",
+    "date_published": "2023-05-21T22:48:39-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110409433122326312"
+    ],
+    "lastTootTimestamp": 1684714250560
   }
 }
