@@ -3568,5 +3568,16 @@
       "https://social.lol/users/cory/statuses/110410346299759060"
     ],
     "lastTootTimestamp": 1684728184589
+  },
+  "https://letterboxd.com/cdme/film/bloodshot/": {
+    "id": "https://letterboxd.com/cdme/film/bloodshot/",
+    "title": "🎥: Bloodshot, 2020 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/bloodshot/",
+    "content_text": "🎥: Bloodshot, 2020 - ★★★ https://letterboxd.com/cdme/film/bloodshot/",
+    "date_published": "2023-05-22T13:30:08-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110413177772979796"
+    ],
+    "lastTootTimestamp": 1684771389409
   }
 }
