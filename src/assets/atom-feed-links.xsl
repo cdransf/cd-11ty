@@ -30,7 +30,7 @@ xmlns:atom="http://www.w3.org/2005/Atom">
         <div class="min-h-screen flex flex-col">
             <main class="flex-1 w-10/12 max-w-screen-sm md:max-w-screen-md mx-auto">
                 <div class="flex flex-col md:flex-row md:items-center md:justify-between md:pt-10 pt-5">
-                    <a class="text-gray-800 dark:text-gray-200 dark:hover:text-purple-400 hover:text-purple-400" href="/">
+                    <a class="text-gray-800 dark:text-gray-200 dark:hover:text-purple-400 hover:text-purple-500" href="/">
                         <h1 class="font-black leading-tight md:pb-0 md:text-3xl pb-5 text-2xl">Links • Cory Dransfeldt</h1>
                     </a>
                     <a href="/">
