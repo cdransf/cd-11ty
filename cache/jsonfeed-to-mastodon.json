@@ -3531,7 +3531,10 @@
     "url": "https://kentcdodds.com/blog/stop-mocking-fetch",
     "content_text": "🔗: Stop mocking fetch https://kentcdodds.com/blog/stop-mocking-fetch",
     "date_published": "2023-05-22T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110410818890361586"
+    ],
+    "lastTootTimestamp": 1684735395721
   },
   "https://www.wired.com/story/doug-rushkoff-survival-of-the-richest/": {
     "id": "https://www.wired.com/story/doug-rushkoff-survival-of-the-richest/",
