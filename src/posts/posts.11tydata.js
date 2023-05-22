@@ -1,6 +1,6 @@
 const { getFirstAttachment } = require('../../config/filters')
 const md = require('markdown-it')()
-const str = require('string-strip-html')
+const striptags = require('striptags')
 
 module.exports = {
   eleventyComputed: {
@@ -18,7 +18,7 @@ module.exports = {
       },
       language: 'en-US',
       title: (data) => data.title,
-      description: (data) => str.stripHtml(md.render(data.post_excerpt)).result,
+      description: (data) => striptags(md.render(data.post_excerpt)),
       url: (data) => data.url,
       image: {
         src: (data) => data.post | getFirstAttachment,
