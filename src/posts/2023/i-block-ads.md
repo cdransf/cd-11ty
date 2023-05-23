@@ -30,6 +30,8 @@ I block prompts to install your app.
 
 I block all cookies that aren't strictly required for your site to function.
 
+I opt out of allowing apps to ask to track me.
+
 I block email pixel trackers.
 
 I provide a masked email address.
@@ -46,7 +48,8 @@ I throw your physical mail in the recycling without opening it and unsubscribe f
 
 I block ads, and you should too.
 
-> "Let the products sell themselves
-> Fuck advertising, commercial psychology
-> Psychological methods to sell should be destroyed"
-> Minutemen, *Shit from an Old Notebook*, 1984
+> Let the products sell themselves<br/>
+> Fuck advertising, commercial psychology<br/>
+> Psychological methods to sell should be destroyed
+
+Minutemen, *Shit from an Old Notebook*, 1984
