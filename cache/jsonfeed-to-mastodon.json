@@ -3601,5 +3601,16 @@
       "https://social.lol/users/cory/statuses/110414592842903648"
     ],
     "lastTootTimestamp": 1684792981680
+  },
+  "https://letterboxd.com/cdme/film/john-wick-chapter-4/": {
+    "id": "https://letterboxd.com/cdme/film/john-wick-chapter-4/",
+    "title": "🎥: John Wick: Chapter 4, 2023 - ★★★★",
+    "url": "https://letterboxd.com/cdme/film/john-wick-chapter-4/",
+    "content_text": "🎥: John Wick: Chapter 4, 2023 - ★★★★ https://letterboxd.com/cdme/film/john-wick-chapter-4/",
+    "date_published": "2023-05-23T12:27:50-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110418367430415442"
+    ],
+    "lastTootTimestamp": 1684850577359
   }
 }
