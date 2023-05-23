@@ -37,15 +37,6 @@
           "value": "application/jrd+json; charset=utf-8"
         }
       ]
-    },
-    {
-      "source": "/hi",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/activity+json; charset=utf-8"
-        }
-      ]
     }
   ],
   "redirects": [

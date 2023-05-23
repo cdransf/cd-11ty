@@ -9,7 +9,6 @@ const markdownItFootnote = require('markdown-it-footnote')
 const filters = require('./config/filters.js')
 const dateFilters = require('./config/dateFilters.js')
 const mediaFilters = require('./config/mediaFilters.js')
-const activityPubPlugin = require('eleventy-plugin-activity-pub')
 const now = String(Date.now())
 
 // load .env
@@ -22,14 +21,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginUnfurl)
   eleventyConfig.addPlugin(pluginFilesMinifier)
   eleventyConfig.addPlugin(schema)
-  eleventyConfig.addPlugin(activityPubPlugin, {
-    username: 'hi',
-    domain: 'coryd.dev',
-    alias: {
-      username: 'cory',
-      domain: 'social.lol',
-    },
-  })
 
   // tailwind watches
   eleventyConfig.addWatchTarget('./tailwind.config.js')
