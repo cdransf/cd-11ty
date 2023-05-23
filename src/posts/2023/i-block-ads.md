@@ -32,6 +32,8 @@ I block all cookies that aren't strictly required for your site to function.
 
 I opt out of allowing apps to ask to track me.
 
+I filter sponsored content out of the RSS feeds I follow.
+
 I block email pixel trackers.
 
 I provide a masked email address.
