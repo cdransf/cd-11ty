@@ -24,11 +24,11 @@ module.exports = {
         DEFAULT: {
           css: {
             a: {
-              color: theme('colors.purple.500'),
+              color: theme('colors.purple.600'),
               '&:hover': {
-                color: `${theme('colors.purple.400')} !important`,
+                color: `${theme('colors.purple.500')} !important`,
               },
-              code: { color: theme('colors.purple.400') },
+              code: { color: theme('colors.purple.500') },
             },
             pre: {
               backgroundColor: theme('colors.gray.900'),

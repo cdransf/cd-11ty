@@ -64,6 +64,9 @@
         document.documentElement.classList.remove('dark')
       }
     </script>
+    <script type="application/ld+json">
+      {% jsonLd meta, type, tags %}
+    </script>
   </head>
   <body class="dark:text-white bg-white dark:bg-gray-900 font-sans text-gray-800">
     {{ content }}

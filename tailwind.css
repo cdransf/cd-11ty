@@ -35,11 +35,11 @@
 }
 
 .active {
-  @apply text-purple-500 !important;
+  @apply text-purple-600 !important;
 }
 
 .active:hover,
 .active:active,
 .active:focus {
-  @apply text-purple-400 !important;
+  @apply text-purple-500 !important;
 }

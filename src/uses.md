@@ -1,6 +1,21 @@
 ---
 layout: default
 title: Uses
+meta:
+  site:
+    name: 'Cory Dransfeldt'
+    description: "I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, music, writing, reading and tv and movies."
+    url: https://coryd.dev
+    logo:
+      src: https://coryd.dev/assets/img/logo.webp
+      width: 2000
+      height: 2000
+  language: en-US
+  title: 'Cory Dransfeldt • Uses'
+  description: 'Software, tools and services that I use regularly.'
+  url: https://coryd.dev/uses
+  image:
+    src: https://coryd.dev/assets/img/avatar.webp
 ---
 
 <h2
@@ -24,7 +39,7 @@ Software and services that I use for work and my own enjoyment.
 
 - [Obsidian](https://obsidian.md)
 - [Readkit](https://readkit.app)
-- [Pinstachio](https://pinstachio.com)
+- [Pins for Pinboard](https://get-pins.app)
 - [Plexamp](https://plexamp.com)
 - [Ivory](https://tapbots.com/ivory)
 - [Parcel](https://parcelapp.net)
