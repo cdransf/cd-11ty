@@ -15,11 +15,8 @@ module.exports = {
   mdToHtml: (content) => {
     return marked.parse(content)
   },
-  getPostImage: (post) => {
-    if (post && post['image'] && post['image'] !== '') {
-      return post['image']
-    }
-
+  getPostImage: (image) => {
+    if (image && image !== '') return image
     return '/assets/img/social-card.png'
   },
   webmentionsByUrl: (webmentions, url) => {

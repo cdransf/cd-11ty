@@ -1,5 +1,5 @@
+{%- capture fullUrl %}{{ site.url }}{{ page.url }}{% endcapture -%}
 <!doctype html>
-<!--suppress ALL -->
 <html lang="en">
   <head>
     <title>
@@ -9,13 +9,13 @@
       {{ site.title }}</title>
     <meta charset="utf-8">
     <meta name='viewport' content='width=device-width'>
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <link rel="canonical" href="{{ fullUrl }}" />
     <meta property="og:title" content="{% if title %}{{ title }} • {% endif %}{{site.title}}" />
     <meta name="description" content="{% if excerpt %}{{ excerpt}}{% else %}{{ site.description }}{% endif %}" />
     <meta property="og:description" content="{% if excerpt %}{{ excerpt}}{% else %}{{ site.description }}{% endif %}" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://coryd.dev{{ page.url }}" />
-    <meta property="og:image" content="/assets/img/social-card.png">
+    <meta property="og:url" content="{{ fullUrl }}" />
+    <meta property="og:image" content="{{ image | getPostImage }}">
     <meta name="theme-color" content="#a855f7" />
     <meta name="generator" content="{{ eleventy.generator }}">
     <link
@@ -79,7 +79,7 @@
           localStorage.theme = 'dark'
           document.documentElement.classList.add('dark')
         }
-      });;
+      });
       (function() {
         const pagination = document.getElementById('pagination');
         if (pagination) {
