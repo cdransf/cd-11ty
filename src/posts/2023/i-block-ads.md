@@ -3,7 +3,7 @@ date: '2023-05-23'
 title: 'I block ads'
 draft: false
 tags: ['advertising', 'privacy', 'tech']
-image: https://cdn.coryd.dev/blog/adblocks.jpg
+image: /src/assets/img/og/adblocks.jpg
 ---
 
 I block ads in the browser.

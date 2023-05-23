@@ -3,6 +3,7 @@ date: '2023-02-17'
 title: 'Workflows: handling inbound email on Fastmail with regular expressions (now featuring ChatGPT)'
 draft: false
 tags: ['Email', 'Fastmail', 'regular expressions', 'workflows', 'ChatGPT']
+image: /src/assets/img/og/fastmail-workflow.jpg
 ---
 
 I've been using Fastmail for years now and have explored a number of different approaches to handling mail. I've approached it by creating rules targeting lists of top level domains, I've gone with no rules at all and a heavy-handed approach to unsubscribing from messages (operating under the idea that _everything_ warrants being seen and triaged) and I've even used HEY.<!-- excerpt -->[^1]
@@ -222,7 +223,7 @@ This pattern of filtering and filing continues for several additional categories
     ],
 ```
 
-**Travel (forwarding)**  
+**Travel (forwarding)**
 These are designed to capture confirmations sent by Southwest and are sent off to [Flighty](https://www.flightyapp.com) before being sorted.
 
 ```json
@@ -274,7 +275,7 @@ These are designed to capture confirmations sent by Southwest and are sent off t
     ],
 ```
 
-**Social networking messages**  
+**Social networking messages**
 These I've left as a simple list wherein `any` included top level domain is filed away as I don't belong to many social networks, and they change fairly infrequently.
 
 **DMARC notifications (depending on how you have your policy record configured)**
