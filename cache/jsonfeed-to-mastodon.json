@@ -3612,5 +3612,32 @@
       "https://social.lol/users/cory/statuses/110418367430415442"
     ],
     "lastTootTimestamp": 1684850577359
+  },
+  "https://coryd.dev/posts/2023/i-block-ads/": {
+    "id": "https://coryd.dev/posts/2023/i-block-ads/",
+    "title": "📝: I block ads",
+    "url": "https://coryd.dev/posts/2023/i-block-ads/",
+    "content_text": "📝: I block ads https://coryd.dev/posts/2023/i-block-ads/",
+    "date_published": "2023-05-23T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110419311310854145"
+    ],
+    "lastTootTimestamp": 1684864979777
+  },
+  "https://jacobin.com/2023/05/california-legislature-climate-emissions-disclosure-bill-business-lobby/": {
+    "id": "https://jacobin.com/2023/05/california-legislature-climate-emissions-disclosure-bill-business-lobby/",
+    "title": "🔗: In-N-Out — and the Whole California Business Lobby — Is Fighting a Landmark Climate Bill",
+    "url": "https://jacobin.com/2023/05/california-legislature-climate-emissions-disclosure-bill-business-lobby/",
+    "content_text": "🔗: In-N-Out — and the Whole California Business Lobby — Is Fighting a Landmark Climate Bill https://jacobin.com/2023/05/california-legislature-climate-emissions-disclosure-bill-business-lobby/",
+    "date_published": "2023-05-23T00:00:00-08:00",
+    "toots": []
+  },
+  "https://oku.club/book/subprime-attention-crisis-by-tim-hwang-wZnoI": {
+    "id": "https://oku.club/book/subprime-attention-crisis-by-tim-hwang-wZnoI",
+    "title": "📖: Subprime Attention Crisis",
+    "url": "https://oku.club/book/subprime-attention-crisis-by-tim-hwang-wZnoI",
+    "content_text": "📖: Subprime Attention Crisis https://oku.club/book/subprime-attention-crisis-by-tim-hwang-wZnoI",
+    "date_published": "2023-05-23T00:00:00-08:00",
+    "toots": []
   }
 }
