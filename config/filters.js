@@ -15,9 +15,9 @@ module.exports = {
   mdToHtml: (content) => {
     return marked.parse(content)
   },
-  getFirstAttachment: (post) => {
-    if (post && post['attachments'] && post['attachments'].length > 0) {
-      return post['attachments'][0].url ? post['attachments'][0].url : post['attachments'][0]
+  getPostImage: (post) => {
+    if (post && post['image'] && post['image'] !== '') {
+      return post['image']
     }
 
     return '/assets/img/social-card.png'

@@ -1,4 +1,3 @@
-const { getFirstAttachment } = require('../../config/filters')
 const md = require('markdown-it')()
 const striptags = require('striptags')
 
@@ -21,7 +20,7 @@ module.exports = {
       description: (data) => striptags(md.render(data.post_excerpt)),
       url: (data) => data.url,
       image: {
-        src: (data) => data.post | getFirstAttachment,
+        src: '/assets/img/social-card.png',
       },
       author: {
         name: 'Cory Dransfeldt',
