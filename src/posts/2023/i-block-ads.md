@@ -55,3 +55,7 @@ I block ads, and you should too.
 > Psychological methods to sell should be destroyed
 
 Minutemen, *Shit from an Old Notebook*, 1984
+
+---
+
+**Update:** For a list of adblocking resources (and to contribute your own), please see [Awesome adblock](https://github.com/cdransf/awesome-adblock).
