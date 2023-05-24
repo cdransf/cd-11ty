@@ -3630,7 +3630,10 @@
     "url": "https://jacobin.com/2023/05/california-legislature-climate-emissions-disclosure-bill-business-lobby/",
     "content_text": "🔗: In-N-Out — and the Whole California Business Lobby — Is Fighting a Landmark Climate Bill https://jacobin.com/2023/05/california-legislature-climate-emissions-disclosure-bill-business-lobby/",
     "date_published": "2023-05-23T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110420254525943753"
+    ],
+    "lastTootTimestamp": 1684879372093
   },
   "https://oku.club/book/subprime-attention-crisis-by-tim-hwang-wZnoI": {
     "id": "https://oku.club/book/subprime-attention-crisis-by-tim-hwang-wZnoI",
@@ -3638,6 +3641,20 @@
     "url": "https://oku.club/book/subprime-attention-crisis-by-tim-hwang-wZnoI",
     "content_text": "📖: Subprime Attention Crisis https://oku.club/book/subprime-attention-crisis-by-tim-hwang-wZnoI",
     "date_published": "2023-05-23T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110419784587766061"
+    ],
+    "lastTootTimestamp": 1684872201414
+  },
+  "https://www.eff.org/deeplinks/2023/05/save-news-we-must-shatter-ad-tech": {
+    "id": "https://www.eff.org/deeplinks/2023/05/save-news-we-must-shatter-ad-tech",
+    "title": "🔗: To Save the News, We Must Shatter Ad-Tech",
+    "url": "https://www.eff.org/deeplinks/2023/05/save-news-we-must-shatter-ad-tech",
+    "content_text": "🔗: To Save the News, We Must Shatter Ad-Tech https://www.eff.org/deeplinks/2023/05/save-news-we-must-shatter-ad-tech",
+    "date_published": "2023-05-24T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110424502800767991"
+    ],
+    "lastTootTimestamp": 1684944195606
   }
 }
