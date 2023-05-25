@@ -3667,5 +3667,16 @@
       "https://social.lol/users/cory/statuses/110425445938833403"
     ],
     "lastTootTimestamp": 1684958586784
+  },
+  "https://letterboxd.com/cdme/film/good-time/": {
+    "id": "https://letterboxd.com/cdme/film/good-time/",
+    "title": "🎥: Good Time, 2017 - ★★★★",
+    "url": "https://letterboxd.com/cdme/film/good-time/",
+    "content_text": "🎥: Good Time, 2017 - ★★★★ https://letterboxd.com/cdme/film/good-time/",
+    "date_published": "2023-05-25T12:17:16-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110429692109404657"
+    ],
+    "lastTootTimestamp": 1685023378176
   }
 }
