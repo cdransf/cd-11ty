@@ -3678,5 +3678,16 @@
       "https://social.lol/users/cory/statuses/110429692109404657"
     ],
     "lastTootTimestamp": 1685023378176
+  },
+  "https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/": {
+    "id": "https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/",
+    "title": "📝: Domain names as discoverable personal identifiers for the web",
+    "url": "https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/",
+    "content_text": "📝: Domain names as discoverable personal identifiers for the web https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/",
+    "date_published": "2023-05-26T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110436769786870729"
+    ],
+    "lastTootTimestamp": 1685131375003
   }
 }
