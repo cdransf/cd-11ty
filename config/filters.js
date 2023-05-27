@@ -5,10 +5,6 @@ module.exports = {
   trim: (string, limit) => {
     return string.length <= limit ? string : `${string.slice(0, limit)}...`
   },
-  postPath: (path) => {
-    if (path.includes('micro/')) return path
-    return `/micro/${path}`
-  },
   stripIndex: (path) => {
     return path.replace('/index.html', '/')
   },
