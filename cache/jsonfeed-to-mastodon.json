@@ -3689,5 +3689,16 @@
       "https://social.lol/users/cory/statuses/110436769786870729"
     ],
     "lastTootTimestamp": 1685131375003
+  },
+  "https://letterboxd.com/cdme/film/riddick/": {
+    "id": "https://letterboxd.com/cdme/film/riddick/",
+    "title": "🎥: Riddick, 2013 - ★★½",
+    "url": "https://letterboxd.com/cdme/film/riddick/",
+    "content_text": "🎥: Riddick, 2013 - ★★½ https://letterboxd.com/cdme/film/riddick/",
+    "date_published": "2023-05-27T03:26:34-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110438657556720539"
+    ],
+    "lastTootTimestamp": 1685160180060
   }
 }
