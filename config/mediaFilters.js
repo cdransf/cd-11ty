@@ -11,7 +11,8 @@ module.exports = {
         )
       : `https://cdn.coryd.dev/albums/${media.name.replace(/\s+/g, '-').toLowerCase()}.jpg`
   },
-  tv: (episode) => `https://cdn.coryd.dev/tv/${episode.replace(/\s+/g, '-').toLowerCase()}.jpg`,
+  tv: (episode) =>
+    `https://cdn.coryd.dev/tv/min/${episode.replace(/\s+/g, '-').toLowerCase()}.webp`,
   movie: (url, host, cdn) => {
     return url.replace(host, cdn).replace('600', '200').replace('900', '300')
   },
