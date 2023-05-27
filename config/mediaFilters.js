@@ -11,7 +11,7 @@ module.exports = {
         )
       : `https://cdn.coryd.dev/albums/${media.name.replace(/\s+/g, '-').toLowerCase()}.jpg`
   },
-  proxy: (url, host, cdn) => {
-    return url.replace(host, cdn)
+  movie: (url, host, cdn) => {
+    return url.replace(host, cdn).replace('600', '200').replace('900', '300')
   },
 }
