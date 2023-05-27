@@ -3700,5 +3700,16 @@
       "https://social.lol/users/cory/statuses/110438657556720539"
     ],
     "lastTootTimestamp": 1685160180060
+  },
+  "https://web.dev/lcp-lazy-loading/": {
+    "id": "https://web.dev/lcp-lazy-loading/",
+    "title": "🔗: The performance effects of too much lazy loading",
+    "url": "https://web.dev/lcp-lazy-loading/",
+    "content_text": "🔗: The performance effects of too much lazy loading https://web.dev/lcp-lazy-loading/",
+    "date_published": "2023-05-27T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110439130601298116"
+    ],
+    "lastTootTimestamp": 1685167398163
   }
 }
