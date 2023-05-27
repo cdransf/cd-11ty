@@ -163,18 +163,32 @@ layout: main
       Watching: tv
     </h2>
     <div>
-      <ul class="list-inside list-disc pl-5 md:pl-10">
-        {% for show in tv %}
-          <li class="mt-1.5 mb-2">
-            <a href="{{show.link}}" title="{{show.title | escape}}">
-              {{ show.title }}
-            </a>
-          </li>
+      <div class="grid grid-cols-3 gap-2 md:grid-cols-6 not-prose">
+        {% for episode in tv %}
+          <a href="https://trakt.tv/shows/{{episode.show.ids.slug}}/seasons/{{ episode.episode.season }}/episodes/{{ episode.episode.number }}" title="{{ episode.episode.title | escape}} {{ episode.show.title | escape }}">
+            <div class="relative block" style="max-width:226px">
+              <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-gray-500 dark:hover:border-purple-400"></div>
+              <div class="absolute left-1 bottom-2 drop-shadow-md">
+                <div class="px-1 text-xs font-bold text-white">{{ episode.episode.title }}</div>
+                <div class="px-1 text-xs text-white">
+                  {{ episode.show.title }} • <strong>S</strong>{{ episode.episode.season }}<strong>E</strong>{{ episode.episode.number }}
+                </div>
+              </div>
+              <img
+                src="{{ episode.show.title | tv }}"
+                onerror="this.onerror=null; this.src='/assets/img/media/404-movie.jpg'"
+                width="226"
+                height="337"
+                class="rounded-lg"
+                alt="{{ episode.episode.title | escape}} {{ episode.show.title | escape }}"
+                loading="lazy" />
+            </div>
+          </a>
         {% endfor %}
-      </ul>
+      </div>
     </div>
   {% endif %}
-  <p class="text-xs text-center">This is a
+  <p class="text-xs text-center pt-4">This is a
     <a href="https://nownownow.com/about">now page</a>, and if you have your own site,
     <a href="https://nownownow.com/about">you should make one too</a>.</p>
 </div>
