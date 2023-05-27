@@ -145,7 +145,7 @@ layout: main
                 <div class="px-1 text-xs font-bold text-white">{{ movie.title }}</div>
               </div>
               <img
-                src="{{movie.image}}"
+                src="{{movie.image |  proxy: site.letterboxd-host, site.cdn-movies}}"
                 onerror="this.onerror=null; this.src='/assets/img/media/404-movie.jpg'"
                 width="226"
                 height="337"

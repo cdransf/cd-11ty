@@ -12,7 +12,9 @@
   "listenbrainz": "https://listenbrainz.org/user/cdransf/",
   "pinboard": "https://pinboard.in/u:cdme/profile/public/",
   "letterboxd": "https://letterboxd.com/cdme",
+  "letterboxd-host": "https://a.ltrbxd.com",
   "trakt": "https://trakt.tv/users/cdransf",
   "oku": "https://oku.club/user/cory",
-  "coffee": "https://www.buymeacoffee.com/cory"
+  "coffee": "https://www.buymeacoffee.com/cory",
+  "cdn-movies": "https://movies.coryd.dev"
 }
