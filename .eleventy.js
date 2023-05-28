@@ -11,6 +11,7 @@ const markdownItFootnote = require('markdown-it-footnote')
 const filters = require('./config/filters.js')
 const dateFilters = require('./config/dateFilters.js')
 const mediaFilters = require('./config/mediaFilters.js')
+const CleanCSS = require('clean-css')
 const now = String(Date.now())
 
 // load .env
@@ -51,6 +52,9 @@ module.exports = function (eleventyConfig) {
   Object.keys(mediaFilters).forEach((filterName) => {
     eleventyConfig.addLiquidFilter(filterName, mediaFilters[filterName])
   })
+
+  // css filters
+  eleventyConfig.addFilter('cssmin', (code) => new CleanCSS({}).minify(code).styles)
 
   // enable merging of tags
   eleventyConfig.setDataDeepMerge(true)
