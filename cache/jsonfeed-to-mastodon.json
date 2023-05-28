@@ -3711,5 +3711,16 @@
       "https://social.lol/users/cory/statuses/110439130601298116"
     ],
     "lastTootTimestamp": 1685167398163
+  },
+  "https://oku.club/book/the-contrarian-by-max-chafkin-iteL7": {
+    "id": "https://oku.club/book/the-contrarian-by-max-chafkin-iteL7",
+    "title": "📖: The Contrarian",
+    "url": "https://oku.club/book/the-contrarian-by-max-chafkin-iteL7",
+    "content_text": "📖: The Contrarian https://oku.club/book/the-contrarian-by-max-chafkin-iteL7",
+    "date_published": "2023-05-28T02:55:45-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110444319793757125"
+    ],
+    "lastTootTimestamp": 1685246578971
   }
 }
