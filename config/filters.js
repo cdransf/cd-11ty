@@ -13,7 +13,7 @@ module.exports = {
   },
   getPostImage: (image) => {
     if (image && image !== '') return image
-    return '/assets/img/social-card.png'
+    return '/assets/img/social-card.webp'
   },
   webmentionsByUrl: (webmentions, url) => {
     const allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of']
