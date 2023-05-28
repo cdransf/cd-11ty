@@ -3722,5 +3722,16 @@
       "https://social.lol/users/cory/statuses/110444319793757125"
     ],
     "lastTootTimestamp": 1685246578971
+  },
+  "https://letterboxd.com/cdme/film/x-men-origins-wolverine/": {
+    "id": "https://letterboxd.com/cdme/film/x-men-origins-wolverine/",
+    "title": "🎥: X-Men Origins: Wolverine, 2009 - ★★½",
+    "url": "https://letterboxd.com/cdme/film/x-men-origins-wolverine/",
+    "content_text": "🎥: X-Men Origins: Wolverine, 2009 - ★★½ https://letterboxd.com/cdme/film/x-men-origins-wolverine/",
+    "date_published": "2023-05-28T19:33:16-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110448566146445409"
+    ],
+    "lastTootTimestamp": 1685311373141
   }
 }
