@@ -55,13 +55,9 @@ layout: main
                   {{ artist.playcount }} plays
                 </div>
               </div>
-              <img
-                src="{{artist.name | artist}}"
-                onerror="this.onerror=null; this.src='/assets/img/media/404-music.jpg'"
-                width="350"
-                height="350"
-                class="rounded-lg"
-                alt="{{artist.name | escape}}" />
+              {%- capture artistImg %}{{ artist.name | artist }}{% endcapture -%}
+              {%- capture artistName %}{{ artist.name | escape }}{% endcapture -%}
+              {% image artistImg, artistName, 'rounded-lg', '225px', 'eager' %}
             </div>
           </a>
         {% endfor %}
@@ -84,14 +80,9 @@ layout: main
                   {{ album.artist.name }}
                 </div>
               </div>
-              <img
-                src="{{album | album}}"
-                onerror="this.onerror=null; this.src='/assets/img/media/404-music.jpg'"
-                width="350"
-                height="350"
-                class="rounded-lg"
-                alt="{{album.name | escape}}"
-                loading="lazy" />
+              {%- capture albumImg %}{{ album | album }}{% endcapture -%}
+              {%- capture albumName %}{{ album.name | escape }}{% endcapture -%}
+              {% image albumImg, albumName, 'rounded-lg', '225px' %}
             </div>
           </a>
         {% endfor %}
@@ -143,14 +134,9 @@ layout: main
               <div class="absolute left-1 bottom-2 drop-shadow-md">
                 <div class="px-1 text-xs font-bold text-white">{{ movie.title }}</div>
               </div>
-              <img
-                src="{{movie.image |  movie: site.letterboxd-host, site.cdn-movies}}"
-                onerror="this.onerror=null; this.src='/assets/img/media/404-movie.jpg'"
-                width="226"
-                height="337"
-                class="rounded-lg"
-                alt="{{movie.title | escape}}"
-                loading="lazy" />
+              {%- capture movieImg %}{{movie.image |  movie: site.letterboxd-host, site.cdn-movies}}{% endcapture -%}
+              {%- capture movieName %}{{movie.title | escape}}{% endcapture -%}
+              {% image movieImg, movieName, 'rounded-lg w-full', '180px' %}
             </div>
           </a>
         {% endfor %}
@@ -173,14 +159,9 @@ layout: main
                   {{ episode.show.title }} • <strong>S</strong>{{ episode.episode.season }}<strong>E</strong>{{ episode.episode.number }}
                 </div>
               </div>
-              <img
-                src="{{ episode.show.title | tv }}"
-                onerror="this.onerror=null; this.src='/assets/img/media/404-movie.jpg'"
-                width="226"
-                height="337"
-                class="rounded-lg"
-                alt="{{ episode.episode.title | escape}} {{ episode.show.title | escape }}"
-                loading="lazy" />
+              {%- capture tvImg %}{{episode.show.title | tv}}{% endcapture -%}
+              {%- capture tvName %}{{ episode.episode.title | escape}} {{ episode.show.title | escape }}{% endcapture -%}
+              {% image tvImg, tvName, 'rounded-lg w-full', '180px' %}
             </div>
           </a>
         {% endfor %}

@@ -3,6 +3,8 @@ const heroIcons = require('eleventy-plugin-heroicons')
 const pluginUnfurl = require('eleventy-plugin-unfurl')
 const pluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier')
 const schema = require('@quasibit/eleventy-plugin-schema')
+const { eleventyImagePlugin } = require('@11ty/eleventy-img')
+const Image = require('@11ty/eleventy-img')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const markdownItFootnote = require('markdown-it-footnote')
@@ -21,6 +23,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginUnfurl)
   eleventyConfig.addPlugin(pluginFilesMinifier)
   eleventyConfig.addPlugin(schema)
+  eleventyConfig.addPlugin(eleventyImagePlugin)
 
   // tailwind watches
   eleventyConfig.addWatchTarget('./tailwind.config.js')
@@ -89,9 +92,24 @@ module.exports = function (eleventyConfig) {
     return md.render(content)
   })
 
-  // asset_img shortcode
-  eleventyConfig.addLiquidShortcode('asset_img', (filename, alt) => {
-    return `<img class="my-4" src="/assets/img/posts/${filename}" alt="${alt}" />`
+  // image shortcode
+  eleventyConfig.addShortcode('image', async function (src, alt, css, sizes, loading) {
+    let metadata = await Image(src, {
+      widths: [75, 150, 300, 600],
+      formats: ['webp'],
+      urlPath: '/assets/img/cache/',
+      outputDir: './_site/assets/img/cache/',
+    })
+
+    let imageAttributes = {
+      class: css,
+      alt,
+      sizes,
+      loading: loading || 'lazy',
+      decoding: 'async',
+    }
+
+    return Image.generateHTML(metadata, imageAttributes)
   })
 
   return {
