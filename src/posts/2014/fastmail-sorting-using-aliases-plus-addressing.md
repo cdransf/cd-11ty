@@ -9,6 +9,8 @@ I subscribe to a number of mailing lists and, up until recently, had been using 
 
 To make managing messages from mailing lists easier, I've switched all the mailing lists I subscribe to an alias that is targeted at the specific folder I want them sorted in to. To set this up you need to create a new alias and target that alias at a specific folder using [plus addressing](https://www.fastmail.com/help/receive/addressing.html) as follows:
 
-`fastmailusername+targetfolder@fastmail.com`
+```txt
+fastmailusername+targetfolder@fastmail.com
+```
 
 Now, instead of having to create a rule for each mailing list sender, I simply provide the alias that I have created and any messages received via that alias are sent directly to the folder I store mailing list messages in.
