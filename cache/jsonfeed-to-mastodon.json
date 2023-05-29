@@ -3744,5 +3744,27 @@
       "https://social.lol/users/cory/statuses/110449068500773824"
     ],
     "lastTootTimestamp": 1685319038478
+  },
+  "https://letterboxd.com/cdme/film/the-wolverine/": {
+    "id": "https://letterboxd.com/cdme/film/the-wolverine/",
+    "title": "🎥: The Wolverine, 2013 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/the-wolverine/",
+    "content_text": "🎥: The Wolverine, 2013 - ★★★ https://letterboxd.com/cdme/film/the-wolverine/",
+    "date_published": "2023-05-29T00:55:26-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110449581153973644"
+    ],
+    "lastTootTimestamp": 1685326860941
+  },
+  "https://maggieappleton.com/cozy-web": {
+    "id": "https://maggieappleton.com/cozy-web",
+    "title": "🔗: The Dark Forest and the Cozy Web",
+    "url": "https://maggieappleton.com/cozy-web",
+    "content_text": "🔗: The Dark Forest and the Cozy Web https://maggieappleton.com/cozy-web",
+    "date_published": "2023-05-28T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110449982662464003"
+    ],
+    "lastTootTimestamp": 1685332987469
   }
 }
