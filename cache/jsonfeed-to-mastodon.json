@@ -3733,5 +3733,16 @@
       "https://social.lol/users/cory/statuses/110448566146445409"
     ],
     "lastTootTimestamp": 1685311373141
+  },
+  "https://tylermercer.net/posts/software/free-lunches/": {
+    "id": "https://tylermercer.net/posts/software/free-lunches/",
+    "title": "🔗: Free Lunches in Frontend Dev",
+    "url": "https://tylermercer.net/posts/software/free-lunches/",
+    "content_text": "🔗: Free Lunches in Frontend Dev https://tylermercer.net/posts/software/free-lunches/",
+    "date_published": "2023-05-28T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110449068500773824"
+    ],
+    "lastTootTimestamp": 1685319038478
   }
 }
