@@ -3766,5 +3766,16 @@
       "https://social.lol/users/cory/statuses/110449982662464003"
     ],
     "lastTootTimestamp": 1685332987469
+  },
+  "https://letterboxd.com/cdme/film/the-prestige/": {
+    "id": "https://letterboxd.com/cdme/film/the-prestige/",
+    "title": "🎥: The Prestige, 2006 - ★★★½",
+    "url": "https://letterboxd.com/cdme/film/the-prestige/",
+    "content_text": "🎥: The Prestige, 2006 - ★★★½ https://letterboxd.com/cdme/film/the-prestige/",
+    "date_published": "2023-05-29T22:55:52-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110454734093350247"
+    ],
+    "lastTootTimestamp": 1685405488540
   }
 }
