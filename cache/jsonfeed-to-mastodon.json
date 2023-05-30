@@ -3788,5 +3788,16 @@
       "https://social.lol/users/cory/statuses/110456117302022644"
     ],
     "lastTootTimestamp": 1685426594627
+  },
+  "https://letterboxd.com/cdme/film/gone-baby-gone/": {
+    "id": "https://letterboxd.com/cdme/film/gone-baby-gone/",
+    "title": "🎥: Gone Baby Gone, 2007 - ★★★★",
+    "url": "https://letterboxd.com/cdme/film/gone-baby-gone/",
+    "content_text": "🎥: Gone Baby Gone, 2007 - ★★★★ https://letterboxd.com/cdme/film/gone-baby-gone/",
+    "date_published": "2023-05-30T13:00:02-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110458003344552192"
+    ],
+    "lastTootTimestamp": 1685455373355
   }
 }
