@@ -32,7 +32,7 @@
     "@11ty/eleventy-activity-feed": "^1.0.9",
     "@11ty/eleventy-fetch": "^4.0.0",
     "@11ty/eleventy-img": "^3.1.0",
-    "@commitlint/cli": "^17.6.3",
+    "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
     "@extractus/feed-extractor": "^6.2.2",
     "@quasibit/eleventy-plugin-schema": "^1.11.0",
