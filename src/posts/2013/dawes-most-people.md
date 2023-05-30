@@ -9,4 +9,4 @@ A wonderful new video for one of the highlights of Dawes' most recent album _Sto
 
 Damien Jurado gave "Museum of Flight" off of _Maraqopa_ a similar treatment that's also very [much worth checking out](https://www.youtube.com/watch?v=CCcAKNSJ3Ac).
 
-<iframe class="aspect-video w-full" width="640" height="360" src="//www.youtube.com/embed/zUWu8Ny36dc" frameborder="0" allowfullscreen></iframe>
+<https://www.youtube.com/watch?v=zUWu8Ny36dc>

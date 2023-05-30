@@ -5,6 +5,7 @@ const pluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier')
 const schema = require('@quasibit/eleventy-plugin-schema')
 const { eleventyImagePlugin } = require('@11ty/eleventy-img')
 const Image = require('@11ty/eleventy-img')
+const embedYouTube = require('eleventy-plugin-youtube-embed')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const markdownItFootnote = require('markdown-it-footnote')
@@ -25,6 +26,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginFilesMinifier)
   eleventyConfig.addPlugin(schema)
   eleventyConfig.addPlugin(eleventyImagePlugin)
+  eleventyConfig.addPlugin(embedYouTube, {
+    modestBranding: true,
+    lite: {
+      'lite.css.path': 'src/assets/styles/yt-lite.css',
+      'lite.js.path': 'src/assets/scripts/yt-lite.js',
+    },
+  })
 
   // tailwind watches
   eleventyConfig.addWatchTarget('./tailwind.config.js')

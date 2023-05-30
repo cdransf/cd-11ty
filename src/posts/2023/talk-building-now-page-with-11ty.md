@@ -7,4 +7,4 @@ tags: ['Eleventy', 'JavaScript', 'automation']
 
 My talk from the Eleventy meetup about building [my now page](https://coryd.dev/now) (you even get to see how much I resemble my avatar).<!-- excerpt -->
 
-<iframe class="aspect-video w-full" width="640" height="480" src="//www.youtube.com/embed/AzcFZJYEpnQ" frameborder="0" allowfullscreen></iframe>
+<https://www.youtube.com/watch?v=AzcFZJYEpnQ>
