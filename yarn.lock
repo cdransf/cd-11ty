@@ -453,10 +453,10 @@
     fast-xml-parser "^4.2.2"
     html-entities "^2.3.3"
 
-"@fontsource/inter@^5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-5.0.1.tgz#43fd31988734fe3abbe6864923ad43ede34038c2"
-  integrity sha512-jezFhHp0HcVy2t6M6r89EcxkT30vx0ofGauveQWQ81j70N/wNDYs4zI+sedeend6zF9GXIEqpOTO2D1k7VQX4w==
+"@fontsource/inter@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-5.0.2.tgz#fdaae4af1000601f9321f828d43d0892a818af6d"
+  integrity sha512-pQ1ms5nbprD+7Dnu5h0T9XOSJi5pvOanLCxi6mA9/5wclXFkkzvZo31ddoD8/Urncx11967qTnvGglPeWEOT+Q==
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
