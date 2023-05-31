@@ -35,11 +35,83 @@
 }
 
 .active {
-  @apply text-purple-600 !important;
+  color: theme(colors.purple.600) !important;
+}
+
+.dark .active {
+  color: theme(colors.purple.400) !important;
 }
 
 .active:hover,
 .active:active,
 .active:focus {
-  @apply text-purple-500 !important;
+  color: theme(colors.purple.500) !important;
+}
+
+.header-anchor {
+  text-decoration: none !important;
+}
+
+h1 > a.header-anchor {
+  font-weight: 800;
+}
+
+h2 > a.header-anchor {
+  font-weight: 700;
+}
+
+a,
+.prose a {
+  color: theme(colors.purple.600);
+}
+
+.dark a,
+.dark .prose a {
+  color: theme(colors.purple.400);
+}
+
+a:hover,
+a:focus,
+a:active,
+.prose a:hover,
+.prose a:focus,
+.prose a:active {
+  color: theme(colors.purple.500);
+}
+
+code {
+  @apply text-gray-50;
+  border-radius: .25rem;
+  padding: .25rem;
+}
+
+pre {
+  border: 1px solid theme(colors.gray.700);
+}
+
+.dark code,
+.dark pre {
+  @apply bg-gray-900;
+}
+
+.tag--button {
+  @apply font-semibold;
+  @apply py-2;
+  @apply px-4;
+  @apply mr-4;
+  @apply mb-4;
+  @apply rounded-full;
+  @apply text-white;
+  background: theme(colors.purple.600);
+}
+
+.dark .tag--button {
+  color: theme(colors.gray.900);
+  background: theme(colors.purple.400);
+}
+
+.tag--button:hover,
+.tag--button:active,
+.tag--button:focus {
+  background: theme(colors.purple.500);
 }

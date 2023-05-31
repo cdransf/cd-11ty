@@ -20,29 +20,6 @@ module.exports = {
         'cover-gradient':
           'linear-gradient(180deg,transparent 0,rgba(0,0,0,.15) 70%,rgba(0,0,0,.5))',
       },
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            a: {
-              color: theme('colors.purple.600'),
-              '&:hover': {
-                color: `${theme('colors.purple.500')} !important`,
-              },
-              code: { color: theme('colors.purple.500') },
-            },
-            pre: {
-              backgroundColor: theme('colors.gray.900'),
-              border: `1px solid ${theme('colors.gray.700')}`,
-            },
-            code: {
-              color: `${theme('colors.gray.50')} !important`,
-              backgroundColor: theme('colors.gray.900'),
-              borderRadius: '0.25rem',
-              padding: '0.25rem',
-            },
-          },
-        },
-      }),
     },
   },
   corePlugins: {
