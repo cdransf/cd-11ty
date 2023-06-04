@@ -3082,11 +3082,14 @@
   },
   "": {
     "id": "",
-    "title": "Link: The world is a terrible place right now, and that’s largely because it is what we make it.",
+    "title": "🔗: Whether its building a new project from scratch, implementing a big feature,or beginning a large refactor, it can be difficult to stay motivated andcomplete…",
     "url": "",
-    "content_text": "Link: The world is a terrible place right now, and that’s largely because it is what we make it. ",
-    "date_published": "Invalid Date",
-    "toots": []
+    "content_text": "🔗: Whether its building a new project from scratch, implementing a big feature,or beginning a large refactor, it can be difficult to stay motivated andcomplete… ",
+    "date_published": "2023-06-03T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110488202166481129"
+    ],
+    "lastTootTimestamp": 1685916170815
   },
   "https://conversationalist.org/2020/03/05/the-prodigal-techbro/": {
     "id": "https://conversationalist.org/2020/03/05/the-prodigal-techbro/",
@@ -3810,5 +3813,13 @@
       "https://social.lol/users/cory/statuses/110477380986594501"
     ],
     "lastTootTimestamp": 1685751052703
+  },
+  "https://letterboxd.com/cdme/film/casino/": {
+    "id": "https://letterboxd.com/cdme/film/casino/",
+    "title": "🎥: Casino, 1995 - ★★★★",
+    "url": "https://letterboxd.com/cdme/film/casino/",
+    "content_text": "🎥: Casino, 1995 - ★★★★ https://letterboxd.com/cdme/film/casino/",
+    "date_published": "2023-06-04T20:54:42-08:00",
+    "toots": []
   }
 }
