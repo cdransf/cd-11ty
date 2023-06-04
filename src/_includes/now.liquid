@@ -39,6 +39,22 @@ layout: main
       <a href="https://github.com/cdransf/awesome-adblock">Assembling lists of ad and tracker-blocking tools.</a>
     </p>
   </div>
+  {% if books.size > 0 %}
+    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
+      Reading: books
+    </h2>
+    <div>
+      <ul class="list-inside list-disc pl-5 md:pl-10">
+        {% for book in books %}
+          <li class="mt-1.5 mb-2">
+            <a href="{{book.link}}" title="{{book.title | escape}}">
+              {{ book.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
   {% if artists.size > 0 %}
     <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
       Listening: artists
@@ -87,22 +103,6 @@ layout: main
           </a>
         {% endfor %}
       </div>
-    </div>
-  {% endif %}
-  {% if books.size > 0 %}
-    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
-      Reading: books
-    </h2>
-    <div>
-      <ul class="list-inside list-disc pl-5 md:pl-10">
-        {% for book in books %}
-          <li class="mt-1.5 mb-2">
-            <a href="{{book.link}}" title="{{book.title | escape}}">
-              {{ book.title }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
     </div>
   {% endif %}
   {% if movies.size > 0 %}
