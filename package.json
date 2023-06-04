@@ -8,7 +8,7 @@
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve && NODE_ENV=development npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "build": "rm -rf .cache && ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o _site/assets/styles/tailwind.css --minify",
+    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o _site/assets/styles/tailwind.css --minify",
     "prepare": "husky install && touch ./.git/COMMIT_EDITMSG"
   },
   "keywords": [],
