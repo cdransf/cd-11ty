@@ -105,22 +105,6 @@ layout: main
       </ul>
     </div>
   {% endif %}
-  {% if articles.size > 0 %}
-    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
-      Reading: articles
-    </h2>
-    <div>
-      <ul class="list-inside list-disc pl-5 md:pl-10">
-        {% for article in articles %}
-          <li class="mt-1.5 mb-2">
-            <a href="{{article.href}}" title="{{article.description | escape}}">
-              {{ article.description }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endif %}
   {% if movies.size > 0 %}
     <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
       Watching: movies

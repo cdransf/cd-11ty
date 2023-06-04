@@ -39,7 +39,6 @@ Software and services that I use for work and my own enjoyment.
 
 - [Obsidian](https://obsidian.md)
 - [Readkit](https://readkit.app)
-- [Pins for Pinboard](https://get-pins.app)
 - [Plexamp](https://plexamp.com)
 - [Ivory](https://tapbots.com/ivory)
 - [Parcel](https://parcelapp.net)
@@ -76,7 +75,7 @@ Software and services that I use for work and my own enjoyment.
 - <a href="https://bunny.net?ref=revw3mehej" onclick="va('event',{name:'Bunny.net referral',data:{location:'Uses'}})">Bunny.net</a>
 - [1Password](https://1password.com)
 - [Feedbin](https://feedbin.com)
-- [Pinboard](https://pinboard.in)
+- [Instapaper](https://instapaper.com)
 - [Trakt](https://trakt.tv)
 - [Letterboxd](https://letterboxd.com)
 - [Oku](https://oku.club)

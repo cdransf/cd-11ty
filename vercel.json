@@ -17,19 +17,6 @@
       ]
     },
     {
-      "source": "/links.xml",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/xml; charset=utf-8  # not application/rss+xml"
-        },
-        {
-          "key": "x-content-type-options",
-          "value": "nosniff"
-        }
-      ]
-    },
-    {
       "source": "/.well-known/webfinger",
       "headers": [
         {
