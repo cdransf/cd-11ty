@@ -3,8 +3,9 @@ layout: main
 ---
 {% include "header.liquid" %}
 <div class="pt-12 prose dark:prose-invert hover:prose-a:text-blue-500 max-w-full">
-  <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mb-4">
-    Currently
+  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+    {% heroicon "solid" "clock" "Currently" "height=28" %}
+    <div class="ml-1">Currently</div>
   </h2>
   <div class="pl-4 md:pl-8">
     <p class="my-2">{{ status.emoji }} {{ status.content }}</p>
@@ -26,12 +27,13 @@ layout: main
     </p>
     {{ content }}
   </div>
-  <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
-    Making
+  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+    {% heroicon "solid" "terminal" "Making" "height=28" %}
+    <div class="ml-1">Making</div>
   </h2>
   <div class="pl-4 md:pl-8">
     <p class="my-2">
-      <span class="icon-inline mr-1">{% heroicon "solid" "terminal" "Terminal" "width=20 height=20" %}</span>
+      <span class="icon-inline mr-1">{% heroicon "solid" "desktop-computer" "Hacking" "width=20 height=20" %}</span>
       Hacking away on random projects like this page, my
       <a href="/">blog</a>, and whatever else I can find time for.</p>
     <p class="my-2">
@@ -40,8 +42,9 @@ layout: main
     </p>
   </div>
   {% if artists.size > 0 %}
-    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
-      Listening: artists
+    <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+      {% heroicon "solid" "microphone" "Artists" "height=28" %}
+      <div class="ml-1">Artists</div>
     </h2>
     <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
       {% for artist in artists %}
@@ -63,8 +66,9 @@ layout: main
     </div>
   {% endif %}
   {% if albums.size > 0 %}
-    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
-      Listening: albums
+    <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+      {% heroicon "solid" "music-note" "Albums" "height=28" %}
+      <div class="ml-1">Albums</div>
     </h2>
     <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
       {% for album in albums %}
@@ -86,8 +90,9 @@ layout: main
     </div>
   {% endif %}
   {% if books.size > 0 %}
-    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
-      Reading: books
+    <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+      {% heroicon "solid" "bookmark" "Books" "height=28" %}
+      <div class="ml-1">Books</div>
     </h2>
     <div class="grid grid-cols-3 gap-2 md:grid-cols-6 not-prose">
       {% for book in books %}
@@ -105,9 +110,27 @@ layout: main
       {% endfor %}
     </div>
   {% endif %}
+  {% if links.size > 0 %}
+    <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+      {% heroicon "solid" "newspaper" "Links" "height=28" %}
+      <div class="ml-1">Links</div>
+    </h2>
+    <div>
+      <ul class="list-inside list-disc pl-5 md:pl-10">
+        {% for link in links %}
+          <li class="mt-1.5 mb-2">
+            <a href="{{link.link}}" title="{{link.title | escape}}">
+              {{ link.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
   {% if movies.size > 0 %}
-    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
-      Watching: movies
+    <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+      {% heroicon "solid" "film" "Movies" "height=28" %}
+      <div class="ml-1">Movies</div>
     </h2>
     <div class="grid grid-cols-3 gap-2 md:grid-cols-6 not-prose">
       {% for movie in movies %}
@@ -126,8 +149,9 @@ layout: main
     </div>
   {% endif %}
   {% if tv.size > 0 %}
-    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
-      Watching: tv
+    <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+      {% heroicon "solid" "video-camera" "TV" "height=28" %}
+      <div class="ml-1">TV</div>
     </h2>
     <div class="grid grid-cols-3 gap-2 md:grid-cols-6 not-prose">
       {% for episode in tv %}

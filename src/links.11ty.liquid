@@ -1,0 +1,20 @@
+---
+permalink: '/links.json'
+---
+{
+"version": "https://jsonfeed.org/version/1",
+"title": "Links • Cory Dransfeldt",
+"icon": "https://coryd.dev/static/images/avatar.webp",
+"home_page_url": "https://coryd.dev",
+"feed_url": "https://coryd.dev/links.json",
+"items": [{% for link in links %}
+  {
+  "id": "{{ link.href }}",
+  "title": "{{ link.description | escape }}",
+  "url": "{{ link.href }}",
+  "content_text": "",
+  "date_published": "{{ link.time | date: "%Y-%m-%dT%H:%M:%S-08:00" }}"
+  }{% if not forloop.last %},{% endif %}
+{% endfor %}
+]
+}

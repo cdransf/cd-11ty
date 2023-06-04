@@ -2,6 +2,7 @@ module.exports = async function () {
   const { ActivityFeed } = await import('@11ty/eleventy-activity-feed')
   const feed = new ActivityFeed()
   feed.addSource('atom', '📝', 'https://coryd.dev/feed.xml')
+  // feed.addSource('atom', '🔗', 'https://coryd.dev/links.xml')
   feed.addSource('rss', '🎥', 'https://letterboxd.com/cdme/rss')
   feed.addSource('rss', '📖', 'https://oku.club/rss/collection/NvEmF')
   const entries = feed.getEntries().catch()
