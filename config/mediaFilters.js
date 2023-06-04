@@ -15,4 +15,7 @@ module.exports = {
   movie: (url, host, cdn) => {
     return url.replace(host, cdn).replace('600', '200').replace('900', '300')
   },
+  book: (url, host, cdn) => {
+    return url.replace(host, cdn)
+  },
 }

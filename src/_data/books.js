@@ -6,7 +6,13 @@ module.exports = async function () {
   // noinspection JSCheckFunctionSignatures
   const asset = new AssetCache('books_data')
   if (asset.isCacheValid('1h')) return await asset.getCachedValue()
-  const res = await extract(url)
+  const res = await extract(url, {
+    getExtraEntryFields: (feedEntry) => {
+      return {
+        image: feedEntry['oku:cover'] || 'https://cdn.coryd.dev/books/missing-book.jpg',
+      }
+    },
+  })
     .catch((error) => {
       console.log(error.message)
     })

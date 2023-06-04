@@ -39,117 +39,113 @@ layout: main
       <a href="https://github.com/cdransf/awesome-adblock">Assembling lists of ad and tracker-blocking tools.</a>
     </p>
   </div>
-  {% if books.size > 0 %}
-    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
-      Reading: books
-    </h2>
-    <div>
-      <ul class="list-inside list-disc pl-5 md:pl-10">
-        {% for book in books %}
-          <li class="mt-1.5 mb-2">
-            <a href="{{book.link}}" title="{{book.title | escape}}">
-              {{ book.title }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endif %}
   {% if artists.size > 0 %}
     <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
       Listening: artists
     </h2>
-    <div>
-      <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
-        {% for artist in artists %}
-          <a href="{{artist.url}}" title="{{artist.name | escape}}">
-            <div class="relative block">
-              <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
-              <div class="absolute left-1 bottom-2 drop-shadow-md">
-                <div class="px-1 text-xs font-bold text-white">{{ artist.name }}</div>
-                <div class="px-1 text-xs text-white">
-                  {{ artist.playcount }} plays
-                </div>
+    <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
+      {% for artist in artists %}
+        <a href="{{artist.url}}" title="{{artist.name | escape}}">
+          <div class="relative block">
+            <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
+            <div class="absolute left-1 bottom-2 drop-shadow-md">
+              <div class="px-1 text-xs font-bold text-white">{{ artist.name }}</div>
+              <div class="px-1 text-xs text-white">
+                {{ artist.playcount }} plays
               </div>
-              {%- capture artistImg %}{{ artist.name | artist }}{% endcapture -%}
-              {%- capture artistName %}{{ artist.name | escape }}{% endcapture -%}
-              {% image artistImg, artistName, 'rounded-lg', '225px', 'eager' %}
             </div>
-          </a>
-        {% endfor %}
-      </div>
+            {%- capture artistImg %}{{ artist.name | artist }}{% endcapture -%}
+            {%- capture artistName %}{{ artist.name | escape }}{% endcapture -%}
+            {% image artistImg, artistName, 'rounded-lg', '225px', 'eager' %}
+          </div>
+        </a>
+      {% endfor %}
     </div>
   {% endif %}
   {% if albums.size > 0 %}
     <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
       Listening: albums
     </h2>
-    <div>
-      <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
-        {% for album in albums %}
-          <a href="{{album.url}}" title="{{album.name | escape}}">
-            <div class="relative block">
-              <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
-              <div class="absolute left-1 bottom-2 drop-shadow-md">
-                <div class="px-1 text-xs font-bold text-white">{{ album.name }}</div>
-                <div class="px-1 text-xs text-white">
-                  {{ album.artist.name }}
-                </div>
+    <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
+      {% for album in albums %}
+        <a href="{{album.url}}" title="{{album.name | escape}}">
+          <div class="relative block">
+            <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
+            <div class="absolute left-1 bottom-2 drop-shadow-md">
+              <div class="px-1 text-xs font-bold text-white">{{ album.name }}</div>
+              <div class="px-1 text-xs text-white">
+                {{ album.artist.name }}
               </div>
-              {%- capture albumImg %}{{ album | album }}{% endcapture -%}
-              {%- capture albumName %}{{ album.name | escape }}{% endcapture -%}
-              {% image albumImg, albumName, 'rounded-lg', '225px' %}
             </div>
-          </a>
-        {% endfor %}
-      </div>
+            {%- capture albumImg %}{{ album | album }}{% endcapture -%}
+            {%- capture albumName %}{{ album.name | escape }}{% endcapture -%}
+            {% image albumImg, albumName, 'rounded-lg', '225px' %}
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
+  {% if books.size > 0 %}
+    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
+      Reading: books
+    </h2>
+    <div class="grid grid-cols-3 gap-2 md:grid-cols-6 not-prose">
+      {% for book in books %}
+        <a href="{{book.link}}" title="{{book.title | escape}}">
+          <div class="relative block" style="max-width:226px">
+            <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
+            <div class="absolute left-1 bottom-2 drop-shadow-md">
+              <div class="px-1 text-xs font-bold text-white">{{ book.title }}</div>
+            </div>
+            {%- capture bookImg %}{{book.image |  book: site.oku-host, site.cdn-books}}{% endcapture -%}
+            {%- capture bookName %}{{book.title | escape}}{% endcapture -%}
+            {% image bookImg, bookName, 'rounded-lg w-full', '180px' %}
+          </div>
+        </a>
+      {% endfor %}
     </div>
   {% endif %}
   {% if movies.size > 0 %}
     <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
       Watching: movies
     </h2>
-    <div>
-      <div class="grid grid-cols-3 gap-2 md:grid-cols-6 not-prose">
-        {% for movie in movies %}
-          <a href="{{movie.link}}" title="{{movie.title | escape}}">
-            <div class="relative block" style="max-width:226px">
-              <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
-              <div class="absolute left-1 bottom-2 drop-shadow-md">
-                <div class="px-1 text-xs font-bold text-white">{{ movie.title }}</div>
-              </div>
-              {%- capture movieImg %}{{movie.image |  movie: site.letterboxd-host, site.cdn-movies}}{% endcapture -%}
-              {%- capture movieName %}{{movie.title | escape}}{% endcapture -%}
-              {% image movieImg, movieName, 'rounded-lg w-full', '180px' %}
+    <div class="grid grid-cols-3 gap-2 md:grid-cols-6 not-prose">
+      {% for movie in movies %}
+        <a href="{{movie.link}}" title="{{movie.title | escape}}">
+          <div class="relative block" style="max-width:226px">
+            <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
+            <div class="absolute left-1 bottom-2 drop-shadow-md">
+              <div class="px-1 text-xs font-bold text-white">{{ movie.title }}</div>
             </div>
-          </a>
-        {% endfor %}
-      </div>
+            {%- capture movieImg %}{{movie.image |  movie: site.letterboxd-host, site.cdn-movies}}{% endcapture -%}
+            {%- capture movieName %}{{movie.title | escape}}{% endcapture -%}
+            {% image movieImg, movieName, 'rounded-lg w-full', '180px' %}
+          </div>
+        </a>
+      {% endfor %}
     </div>
   {% endif %}
   {% if tv.size > 0 %}
     <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
       Watching: tv
     </h2>
-    <div>
-      <div class="grid grid-cols-3 gap-2 md:grid-cols-6 not-prose">
-        {% for episode in tv %}
-          <a href="https://trakt.tv/shows/{{episode.show.ids.slug}}/seasons/{{ episode.episode.season }}/episodes/{{ episode.episode.number }}" title="{{ episode.episode.title | escape}} {{ episode.show.title | escape }}">
-            <div class="relative block" style="max-width:226px">
-              <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
-              <div class="absolute left-1 bottom-2 drop-shadow-md">
-                <div class="px-1 text-xs font-bold text-white">{{ episode.episode.title }}</div>
-                <div class="px-1 text-xs text-white">
-                  {{ episode.show.title }} • <strong>S</strong>{{ episode.episode.season }}<strong>E</strong>{{ episode.episode.number }}
-                </div>
+    <div class="grid grid-cols-3 gap-2 md:grid-cols-6 not-prose">
+      {% for episode in tv %}
+        <a href="https://trakt.tv/shows/{{episode.show.ids.slug}}/seasons/{{ episode.episode.season }}/episodes/{{ episode.episode.number }}" title="{{ episode.episode.title | escape}} {{ episode.show.title | escape }}">
+          <div class="relative block" style="max-width:226px">
+            <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
+            <div class="absolute left-1 bottom-2 drop-shadow-md">
+              <div class="px-1 text-xs font-bold text-white">{{ episode.episode.title }}</div>
+              <div class="px-1 text-xs text-white">
+                {{ episode.show.title }} • <strong>S</strong>{{ episode.episode.season }}<strong>E</strong>{{ episode.episode.number }}
               </div>
-              {%- capture tvImg %}{{episode.show.title | tv}}{% endcapture -%}
-              {%- capture tvName %}{{ episode.episode.title | escape}} {{ episode.show.title | escape }}{% endcapture -%}
-              {% image tvImg, tvName, 'rounded-lg w-full', '180px' %}
             </div>
-          </a>
-        {% endfor %}
-      </div>
+            {%- capture tvImg %}{{episode.show.title | tv}}{% endcapture -%}
+            {%- capture tvName %}{{ episode.episode.title | escape}} {{ episode.show.title | escape }}{% endcapture -%}
+            {% image tvImg, tvName, 'rounded-lg w-full', '180px' %}
+          </div>
+        </a>
+      {% endfor %}
     </div>
   {% endif %}
   <p class="text-xs text-center pt-4">This is a
