@@ -24,7 +24,7 @@
           <main class="flex-1 w-10/12 max-w-screen-sm md:max-w-screen-md mx-auto">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between md:pt-10 pt-5">
               <a class="text-gray-800 dark:text-gray-200 dark:hover:text-purple-400 hover:text-purple-500" href="/">
-                <h1 class="font-black leading-tight md:pb-0 md:text-3xl pb-5 text-2xl">Links • Cory Dransfeldt</h1>
+                <h1 class="font-black leading-tight md:pb-0 md:text-3xl pb-5 text-2xl">Follow • Cory Dransfeldt</h1>
               </a>
               <a href="/">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="inline w-6 h-6 fill-current text-gray-700 hover:text-purple-500 dark:text-gray-200 dark:hover:text-purple-400">
@@ -39,9 +39,9 @@
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mr-1">
                     <path fill-rule="evenodd" d="M3.75 4.5a.75.75 0 01.75-.75h.75c8.284 0 15 6.716 15 15v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75C18 11.708 12.292 6 5.25 6H4.5a.75.75 0 01-.75-.75V4.5zm0 6.75a.75.75 0 01.75-.75h.75a8.25 8.25 0 018.25 8.25v.75a.75.75 0 01-.75.75H12a.75.75 0 01-.75-.75v-.75a6 6 0 00-6-6H4.5a.75.75 0 01-.75-.75v-.75zm0 7.5a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" clip-rule="evenodd" />
                   </svg>
-                  Feed preview • links
+                  Feed preview • follow
                 </h2>
-                <p>Recently read and favorited links <a href="https://www.pinboard.in/api/">sourced from my Instapaper likes.</a></p>
+                <p>My activity from around the web.</p>
                 <p><xsl:value-of select="atom:feed/atom:description"/></p>
               </div>
               <ul class="mb-8">

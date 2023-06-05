@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/assets/atom-feed-follow.xsl" type="text/xsl" media="screen"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>
+    {% block title %}Follow • Cory Dransfeldt{% endblock %}
+  </title>
+  <link href="{{ pkg.homepage }}/follow.xml" rel="self" />
+  <link href="{{ pkg.homepage }}/" />
+  <link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
+  <updated>{% block update %}{{ links[0].time | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}</updated>
+  <id>{{ site.url }}</id>
+  <author>
+    <name>{{ site.name }}</name>
+    <email>{{ site.email }}</email>
+  </author>
+  <generator uri="https://11ty.dev" version="{{ eleventy.version }}">{{ eleventy.generator }}</generator>
+  {% block entries %}{% endblock %}
+</feed>

@@ -1,11 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-# Pretty Atom Feed
-Based on "Pretty RSS Feed": https://github.com/genmon/aboutfeeds/issues/26
-Styles an Atom feed, making it friendly for humans viewers, and adds a link
-to aboutfeeds.com for new user onboarding. See it in action:
-https://nicolas-hoizey.com/feeds/all.xml
--->
 <xsl:stylesheet
 version="3.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
