@@ -1,0 +1,9 @@
+<div class="mt-8">
+  {% for tag in tags %}
+    {% if tag != "posts" %}
+      <a href="/tags/{{ tag }}">
+        <span class="tag--button tag--button__small">{{ tag }}</span>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>

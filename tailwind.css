@@ -105,6 +105,14 @@ pre {
   background: theme(colors.purple.600);
 }
 
+.tag--button.tag--button__small {
+  @apply py-1;
+  @apply px-2;
+  @apply mr-2;
+  @apply mb-2;
+  @apply text-sm;
+}
+
 .dark .tag--button {
   color: theme(colors.gray.900);
   background: theme(colors.purple.400);

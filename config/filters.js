@@ -57,4 +57,16 @@ module.exports = {
 
     return data
   },
+  pageNumberOf: (postUrl, collection, pageSize = 10) => {
+    const index = collection.findIndex((p) => p.data.page.url === postUrl)
+    if (index === -1) throw new Error(`${postUrl} not found in collection`)
+    return Math.ceil(collection.length / pageSize) - Math.ceil(index / pageSize)
+  },
+  blogBackLink: (postUrl, collection, pageSize = 10) => {
+    const index = collection.findIndex((p) => p.data.page.url === postUrl)
+    if (index === -1) throw new Error(`${postUrl} not found in collection`)
+    const pageNumber = Math.ceil(collection.length / pageSize) - Math.ceil(index / pageSize)
+    if (pageNumber === 0) return '/'
+    return `/${pageNumber}/`
+  },
 }
