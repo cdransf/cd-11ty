@@ -57,17 +57,4 @@ module.exports = {
 
     return data
   },
-  pageLinkMeta: (postUrl, collection, pageSize = 10) => {
-    const index = collection.findIndex((p) => p.data.page.url === postUrl)
-    if (index === -1) throw new Error(`${postUrl} not found in collection`)
-    return {
-      number: Math.ceil(collection.length / pageSize) - Math.ceil(index / pageSize),
-      slug: collection[index].fileSlug,
-    }
-  },
-  blogListingLink: (postUrl, collection, pageSize = 10) => {
-    const pageLinkMeta = module.exports.pageLinkMeta(postUrl, collection, pageSize)
-    if (pageLinkMeta.number === 0) return { uri: `/#${pageLinkMeta.slug}`, number: '1' }
-    return { uri: `/${pageLinkMeta.number}#${pageLinkMeta.slug}`, number: pageLinkMeta.number + 1 }
-  },
 }
