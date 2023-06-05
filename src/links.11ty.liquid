@@ -9,9 +9,9 @@ permalink: '/links.json'
 "feed_url": "https://coryd.dev/links.json",
 "items": [{% for link in links %}
   {
-  "id": "{{ link.href }}",
-  "title": "{{ link.description | escape }}",
-  "url": "{{ link.href }}",
+  "id": "{{ link.link }}",
+  "title": "{{ link.title | escape }}",
+  "url": "{{ link.link }}",
   "content_text": "",
   "date_published": "{{ link.time | date: "%Y-%m-%dT%H:%M:%S-08:00" }}"
   }{% if not forloop.last %},{% endif %}
