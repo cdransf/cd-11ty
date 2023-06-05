@@ -48,7 +48,7 @@ https://nicolas-hoizey.com/feeds/all.xml
                   </svg>
                   Feed preview • links
                 </h2>
-                <p>Recently read and favorited links <a href="https://www.pinboard.in/api/">sourced from the Pinboard API.</a></p>
+                <p>Recently read and favorited links <a href="https://www.pinboard.in/api/">sourced from my Instapaper likes.</a></p>
                 <p><xsl:value-of select="atom:feed/atom:description"/></p>
               </div>
               <ul class="mb-8">

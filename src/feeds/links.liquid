@@ -9,10 +9,10 @@ permalink: /links.xml
 {% block entries %}
 {% for link in links %}
   <entry>
-    <title>{{ link.description | escape }}</title>
-    <link href="{{link.href}}" />
+    <title>{{ link.title | escape }}</title>
+    <link href="{{link.link}}" />
     <updated>{{ link.time | date: "%m.%d.%Y" }}</updated>
-    <id>{{ link.href }}</id>
+    <id>{{ link.link }}</id>
     <content type="html"></content>
   </entry>
 {% endfor %}
