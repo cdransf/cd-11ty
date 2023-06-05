@@ -2,13 +2,12 @@
 layout: null
 permalink: /follow.xml
 ---
-{% assign posts = follow.posts %}
-{% layout "./_includes/feed-links.liquid" %}
+{% layout "./_includes/feed-follow.liquid" %}
 {% block title %}Follow • Cory Dransfeldt{% endblock %}
 {% block self %}follow.xml{% endblock %}
-{% block update %}{{ articles[0].time | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}
+{% block update %}{{ follow.posts[0].date_published | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}
 {% block entries %}
-{% for item in posts %}
+{% for item in follow.posts %}
   <entry>
     <title>{{ item.title | escape }}</title>
     <link href="{{item.url}}" />
