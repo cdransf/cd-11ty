@@ -1,16 +1,16 @@
 ---
 layout: main
 ---
+{% assign backLinkData = page.url |  blogListingLink: collections.posts %}
 {% include "header.liquid" %}
 <article class="h-entry">
   <h2 class="p-name text-xl md:text-2xl font-black leading-tight dark:text-gray-200 pt-12">{{ title }}</h2>
   <span class="p-author h-card hidden">{{ site.title }}</span>
   <div class="mt-2 mb-6 text-sm flex flex-row items-center">
-    <a class="flex flex-row items-center mr-1" href="{{ page.url |  blogBackLink: collections.posts }}">
-      {% heroicon "solid" "arrow-left" "Back" "width=14" %}
-      <span class="ml-1">Back</span>
-    </a> •
-    <time class="ml-1 dt-published" datetime="{{ date }}">{{ date | date: "%m.%d.%Y" }}</time>
+    <time class="ml-1 dt-published" datetime="{{ date }}">{{ date | date: "%m.%d.%Y" }}</time> •
+    <a class="flex flex-row items-center mr-1" href="{{ backLinkData.uri }}">
+      <span class="ml-1">Originally shown on page {{ backLinkData.number }}</span>
+    </a>
   </div>
   <div class="p-summary hidden">{{ post_excerpt | markdown }}</div>
   <div class="e-content prose dark:prose-invert hover:prose-a:text-blue-500  max-w-full text-gray-800 dark:text-white">

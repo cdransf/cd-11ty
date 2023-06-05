@@ -3890,5 +3890,16 @@
       "https://social.lol/users/cory/statuses/110490563696382343"
     ],
     "lastTootTimestamp": 1685952204888
+  },
+  "https://letterboxd.com/cdme/film/black-swan/": {
+    "id": "https://letterboxd.com/cdme/film/black-swan/",
+    "title": "🎥: Black Swan, 2010 - ★★★★",
+    "url": "https://letterboxd.com/cdme/film/black-swan/",
+    "content_text": "🎥: Black Swan, 2010 - ★★★★ https://letterboxd.com/cdme/film/black-swan/",
+    "date_published": "2023-06-05T14:10:13-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110492451050188548"
+    ],
+    "lastTootTimestamp": 1685981003656
   }
 }
