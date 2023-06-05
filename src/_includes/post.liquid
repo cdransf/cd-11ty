@@ -10,7 +10,7 @@ layout: main
     <time class="ml-1 dt-published" datetime="{{ date }}">{{ date | date: "%m.%d.%Y" }}</time>
     <span class="mx-1">•</span>
     <a class="flex flex-row items-center" href="{{ backLinkData.uri }}">
-      <span class="ml-1">Originally shown on page {{ backLinkData.number }}</span>
+      Originally shown on page {{ backLinkData.number }}
     </a>
   </div>
   <div class="p-summary hidden">{{ post_excerpt | markdown }}</div>
