@@ -3357,7 +3357,7 @@
     "title": "🔗: The New New Reading Environment",
     "url": "https://www.nplusonemag.com/issue-45/the-intellectual-situation/the-new-new-reading-environment/",
     "content_text": "🔗: The New New Reading Environment https://www.nplusonemag.com/issue-45/the-intellectual-situation/the-new-new-reading-environment/",
-    "date_published": "2023-05-15T00:00:00-08:00",
+    "date_published": "2023-06-03T00:00:00-08:00",
     "toots": [
       "https://social.lol/users/cory/statuses/110372126007474699"
     ],
@@ -3901,5 +3901,49 @@
       "https://social.lol/users/cory/statuses/110492451050188548"
     ],
     "lastTootTimestamp": 1685981003656
+  },
+  "https://www.disconnect.blog/p/apples-vision-pro-headset-deserves": {
+    "id": "https://www.disconnect.blog/p/apples-vision-pro-headset-deserves",
+    "title": "🔗: Apple's Vision Pro headset deserves to be ridiculed",
+    "url": "https://www.disconnect.blog/p/apples-vision-pro-headset-deserves",
+    "content_text": "🔗: Apple's Vision Pro headset deserves to be ridiculed https://www.disconnect.blog/p/apples-vision-pro-headset-deserves",
+    "date_published": "2023-06-05T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110494368281450857"
+    ],
+    "lastTootTimestamp": 1686010258442
+  },
+  "http://joe-steel.com/2023-05-24-Happy-Hour-vs-Wine-Lists.html": {
+    "id": "http://joe-steel.com/2023-05-24-Happy-Hour-vs-Wine-Lists.html",
+    "title": "🔗: Happy Hour vs. Wine Lists",
+    "url": "http://joe-steel.com/2023-05-24-Happy-Hour-vs-Wine-Lists.html",
+    "content_text": "🔗: Happy Hour vs. Wine Lists http://joe-steel.com/2023-05-24-Happy-Hour-vs-Wine-Lists.html",
+    "date_published": "2023-06-03T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110495282093879757"
+    ],
+    "lastTootTimestamp": 1686024202072
+  },
+  "https://letterboxd.com/cdme/film/gone-girl/": {
+    "id": "https://letterboxd.com/cdme/film/gone-girl/",
+    "title": "🎥: Gone Girl, 2014 - ★★★★½",
+    "url": "https://letterboxd.com/cdme/film/gone-girl/",
+    "content_text": "🎥: Gone Girl, 2014 - ★★★★½ https://letterboxd.com/cdme/film/gone-girl/",
+    "date_published": "2023-06-06T13:23:37-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110498113821911570"
+    ],
+    "lastTootTimestamp": 1686067410675
+  },
+  "https://letterboxd.com/cdme/film/dog-day-afternoon/": {
+    "id": "https://letterboxd.com/cdme/film/dog-day-afternoon/",
+    "title": "🎥: Dog Day Afternoon, 1975 - ★★★★★",
+    "url": "https://letterboxd.com/cdme/film/dog-day-afternoon/",
+    "content_text": "🎥: Dog Day Afternoon, 1975 - ★★★★★ https://letterboxd.com/cdme/film/dog-day-afternoon/",
+    "date_published": "2023-06-07T12:39:38-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110503301997648615"
+    ],
+    "lastTootTimestamp": 1686146575941
   }
 }
