@@ -102,7 +102,7 @@ layout: main
             <div class="absolute left-1 bottom-2 drop-shadow-md">
               <div class="px-1 text-xs font-bold text-white">{{ book.title }}</div>
             </div>
-            {%- capture bookImg %}{{book.image |  book: site.oku-host, site.cdn-books}}{% endcapture -%}
+            {%- capture bookImg %}{{book.image | cdn: site.oku-host, site.cdn-books}}{% endcapture -%}
             {%- capture bookName %}{{book.title | escape}}{% endcapture -%}
             {% image bookImg, bookName, 'rounded-lg w-full', '180px' %}
           </div>
@@ -140,7 +140,7 @@ layout: main
             <div class="absolute left-1 bottom-2 drop-shadow-md">
               <div class="px-1 text-xs font-bold text-white">{{ movie.title }}</div>
             </div>
-            {%- capture movieImg %}{{movie.image |  movie: site.letterboxd-host, site.cdn-movies}}{% endcapture -%}
+            {%- capture movieImg %}{{movie.image | cdn: site.letterboxd-host, site.cdn-movies}}{% endcapture -%}
             {%- capture movieName %}{{movie.title | escape}}{% endcapture -%}
             {% image movieImg, movieName, 'rounded-lg w-full', '180px' %}
           </div>
