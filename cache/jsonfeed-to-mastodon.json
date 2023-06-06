@@ -3923,5 +3923,16 @@
       "https://social.lol/users/cory/statuses/110495282093879757"
     ],
     "lastTootTimestamp": 1686024202072
+  },
+  "https://letterboxd.com/cdme/film/gone-girl/": {
+    "id": "https://letterboxd.com/cdme/film/gone-girl/",
+    "title": "🎥: Gone Girl, 2014 - ★★★★½",
+    "url": "https://letterboxd.com/cdme/film/gone-girl/",
+    "content_text": "🎥: Gone Girl, 2014 - ★★★★½ https://letterboxd.com/cdme/film/gone-girl/",
+    "date_published": "2023-06-06T13:23:37-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110498113821911570"
+    ],
+    "lastTootTimestamp": 1686067410675
   }
 }
