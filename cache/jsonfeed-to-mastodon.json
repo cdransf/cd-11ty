@@ -3945,5 +3945,16 @@
       "https://social.lol/users/cory/statuses/110503301997648615"
     ],
     "lastTootTimestamp": 1686146575941
+  },
+  "https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/": {
+    "id": "https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/",
+    "title": "📝: Optimizing for performance with Eleventy",
+    "url": "https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/",
+    "content_text": "📝: Optimizing for performance with Eleventy https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/",
+    "date_published": "2023-06-07T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110504717978669650"
+    ],
+    "lastTootTimestamp": 1686168182098
   }
 }
