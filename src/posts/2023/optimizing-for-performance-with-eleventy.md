@@ -76,7 +76,7 @@ The site include's Prism for code syntax highlighting and this is embedded and m
 
 Final HTML output for the site is minified when it's built using `@sherby/eleventy-plugin-files-minifier` which, [per the docs](https://www.npmjs.com/package/@sherby/eleventy-plugin-files-minifier):
 
-> This plugin allow you to automatically **minify** files when builting with **[Eleventy](https://www.11ty.dev/)**. It currently supports `css`, `html`, `json`, `xml`, `xsl` and `webmanifest` files.
+> This plugin allow you to automatically **minify** files when building with **[Eleventy](https://www.11ty.dev/)**. It currently supports `css`, `html`, `json`, `xml`, `xsl` and `webmanifest` files.
 
 Implementing this in `.eleventy.js` is straightforward:
 
