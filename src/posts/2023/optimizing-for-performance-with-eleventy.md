@@ -60,6 +60,7 @@ ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./ta
 
 The site include's Prism for code syntax highlighting and this is embedded and minified in the `<head>` of each page at build time:
 {% raw %}
+
 ```liquid
 {% capture css %}
   {% include "../assets/styles/prism.css" %}
@@ -68,16 +69,20 @@ The site include's Prism for code syntax highlighting and this is embedded and m
   {{ css | cssmin }}
 </style>
 ```
+
 {% endraw %}
 This is made possible by leveraging CleanCSS in (you guessed it) `.eleventy.js`:
 {% raw %}
+
 ```javascript
 const CleanCSS = require('clean-css')
 ...
 // css filters
 eleventyConfig.addFilter('cssmin', (code) => new CleanCSS({}).minify(code).styles)
 ```
+
 {% endraw %}
+
 ## Minify HTML output
 
 Final HTML output for the site is minified when it's built using `@sherby/eleventy-plugin-files-minifier` which, [per the docs](https://www.npmjs.com/package/@sherby/eleventy-plugin-files-minifier):
@@ -99,6 +104,7 @@ module.exports = function (eleventyConfig) {
 
 Finally (and this is something that took me longer than it should have to do), we optimize images at build time using `@11ty/eleventy-image`, defining a shortcode in `.eleventy.js` as follows:
 {% raw %}
+
 ```javascript
 // image shortcode
 eleventyConfig.addShortcode('image', async function (src, alt, css, sizes, loading) {
@@ -120,17 +126,20 @@ eleventyConfig.addShortcode('image', async function (src, alt, css, sizes, loadi
   return Image.generateHTML(metadata, imageAttributes)
 })
 ```
+
 {% endraw %}
 This is most impactful on [my now page](https://coryd.dev/now) which is populated with quite a few images and, when used, looks something like this:
 {% raw %}
+
 ```liquid
 {% image artistImg, artistName, 'rounded-lg', '225px', 'eager' %}
 ```
+
 {% endraw %}
-For this page in particular, the images that are rendered above the fold are set to load as `eager` to mitigate performance impacts related to [too much lazy loading](https://web.dev/lcp-lazy-loading/). These images are fetched from caches hosted at [Bunny.net](https://bunny.net/?ref=revw3mehej) when the site is built.
+For this page in particular, the images that are rendered above the fold are set to load as `eager` to mitigate performance impacts related to [too much lazy loading](https://web.dev/lcp-lazy-loading/). These images are fetched from caches hosted at <a href="https://bunny.net?ref=revw3mehej" onclick="va('event',{name:'Bunny.net referral',data:{location:'Referrals'}})">Bunny.net</a> when the site is built.
 
 All of these boilerplate steps leave us with a quick to load, accessible and resilient site:
 
-{% image 'https://cdn.coryd.dev/blog/page-speed.jpg', 'Pagespeed scores for coryd.dev/now', 'w-full', '600px' %}
+{% image '<https://cdn.coryd.dev/blog/page-speed.jpg>', 'Pagespeed scores for coryd.dev/now', 'w-full', '600px' %}
 
 [^1]: It's easy, flexible and helps mitigate my lack of an eye for design by providing safe baselines.
