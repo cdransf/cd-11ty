@@ -3956,5 +3956,16 @@
       "https://social.lol/users/cory/statuses/110504717978669650"
     ],
     "lastTootTimestamp": 1686168182098
+  },
+  "https://www.raymondcamden.com/2023/06/07/using-goodreads-data-in-eleventy": {
+    "id": "https://www.raymondcamden.com/2023/06/07/using-goodreads-data-in-eleventy",
+    "title": "🔗: Using Goodreads Data in Eleventy",
+    "url": "https://www.raymondcamden.com/2023/06/07/using-goodreads-data-in-eleventy",
+    "content_text": "🔗: Using Goodreads Data in Eleventy https://www.raymondcamden.com/2023/06/07/using-goodreads-data-in-eleventy",
+    "date_published": "2023-06-07T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110505694086618353"
+    ],
+    "lastTootTimestamp": 1686183076335
   }
 }
