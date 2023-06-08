@@ -2,7 +2,7 @@
 layout: main
 ---
 {% include "header.liquid" %}
-<div class="pt-12 prose dark:prose-invert hover:prose-a:text-blue-500 max-w-full">
+<ul class="pt-12 prose dark:prose-invert hover:prose-a:text-blue-500 max-w-full">
   <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
     {% heroicon "solid" "clock" "Currently" "height=28" %}
     <div class="ml-1">Currently</div>
@@ -89,6 +89,21 @@ layout: main
       {% endfor %}
     </div>
   {% endif %}
+  {% if albumReleases.size > 0 %}
+    <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+      {% heroicon "solid" "calendar" "Albums I'm looking forward to" "height=28" %}
+      <div class="ml-1">Albums I'm looking forward to</div>
+    </h2>
+    <ul class="list-inside list-disc pl-5 md:pl-10">
+      {% for album in albumReleases %}
+        <li class="mt-1.5 mb-2">
+          <a href="https://{{album.location}}" title="{{album.summary | escape}}">
+            {{ album.startDate | date: "%m.%d.%Y" }}: {{album.summary}}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
   {% if books.size > 0 %}
     <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
       {% heroicon "solid" "bookmark" "Books" "height=28" %}
@@ -115,17 +130,15 @@ layout: main
       {% heroicon "solid" "newspaper" "Links" "height=28" %}
       <div class="ml-1">Links</div>
     </h2>
-    <div>
-      <ul class="list-inside list-disc pl-5 md:pl-10">
-        {% for link in links %}
-          <li class="mt-1.5 mb-2">
-            <a href="{{link.link}}" title="{{link.title | escape}}">
-              {{ link.title }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+    <ul class="list-inside list-disc pl-5 md:pl-10">
+      {% for link in links %}
+        <li class="mt-1.5 mb-2">
+          <a href="{{link.link}}" title="{{link.title | escape}}">
+            {{ link.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
   {% endif %}
   {% if movies.size > 0 %}
     <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">

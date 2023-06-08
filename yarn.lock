@@ -2843,6 +2843,13 @@ iconv-lite@0.4.24:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
+ics-to-json-extended@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/ics-to-json-extended/-/ics-to-json-extended-1.1.4.tgz#38e65b574c8175a6d2dd4b950a70789f6bbe174a"
+  integrity sha512-5NtUG7GwN2uVp4Gg1++brlELbv/fkIU+N7rZGQCIKujQAf+l6LTjMjsNifma3bX2CrPcsxy2tf/9bqF/NWIDWA==
+  dependencies:
+    moment "^2.29.1"
+
 ieee754@^1.1.13:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
@@ -3833,6 +3840,11 @@ mkdirp@^0.5.1:
   integrity sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==
   dependencies:
     minimist "^1.2.6"
+
+moment@^2.29.1:
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 moo@^0.5.1, moo@^0.5.2:
   version "0.5.2"
