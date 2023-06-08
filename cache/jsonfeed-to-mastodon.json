@@ -3956,5 +3956,38 @@
       "https://social.lol/users/cory/statuses/110504717978669650"
     ],
     "lastTootTimestamp": 1686168182098
+  },
+  "https://www.raymondcamden.com/2023/06/07/using-goodreads-data-in-eleventy": {
+    "id": "https://www.raymondcamden.com/2023/06/07/using-goodreads-data-in-eleventy",
+    "title": "🔗: Using Goodreads Data in Eleventy",
+    "url": "https://www.raymondcamden.com/2023/06/07/using-goodreads-data-in-eleventy",
+    "content_text": "🔗: Using Goodreads Data in Eleventy https://www.raymondcamden.com/2023/06/07/using-goodreads-data-in-eleventy",
+    "date_published": "2023-06-07T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110505694086618353"
+    ],
+    "lastTootTimestamp": 1686183076335
+  },
+  "https://collabfund.com/blog/how-this-all-happened/": {
+    "id": "https://collabfund.com/blog/how-this-all-happened/",
+    "title": "🔗: How This All Happened",
+    "url": "https://collabfund.com/blog/how-this-all-happened/",
+    "content_text": "🔗: How This All Happened https://collabfund.com/blog/how-this-all-happened/",
+    "date_published": "2023-06-08T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110507078791384972"
+    ],
+    "lastTootTimestamp": 1686204205266
+  },
+  "https://www.lesswrong.com/posts/7hFeMWC6Y5eaSixbD/100-tips-for-a-better-life": {
+    "id": "https://www.lesswrong.com/posts/7hFeMWC6Y5eaSixbD/100-tips-for-a-better-life",
+    "title": "🔗: 100 Tips for a Better Life - LessWrong",
+    "url": "https://www.lesswrong.com/posts/7hFeMWC6Y5eaSixbD/100-tips-for-a-better-life",
+    "content_text": "🔗: 100 Tips for a Better Life - LessWrong https://www.lesswrong.com/posts/7hFeMWC6Y5eaSixbD/100-tips-for-a-better-life",
+    "date_published": "2023-06-08T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110509908801291010"
+    ],
+    "lastTootTimestamp": 1686247387770
   }
 }

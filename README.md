@@ -12,10 +12,10 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 
 ## My latest posts
 <!-- BLOGPOSTS:START -->
+- [Optimizing for performance with Eleventy](https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/)
 - [Domain names as discoverable personal identifiers for the web](https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/)
 - [I block ads](https://coryd.dev/posts/2023/i-block-ads/)
 - [Now page update: favorite articles from Matter](https://coryd.dev/posts/2023/now-page-update-matter-favorites/)
 - [A Safari-specific guide to making the modern web suck less](https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/)
-- [We lost the thread](https://coryd.dev/posts/2023/we-lost-the-thread/)
 <!-- BLOGPOSTS:END -->
 
