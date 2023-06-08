@@ -97,8 +97,9 @@ layout: main
     <ul class="list-inside list-disc pl-5 md:pl-10">
       {% for album in albumReleases %}
         <li class="mt-1.5 mb-2">
+          <span class="font-bold">{{ album.startDate | readableDate }}: </span>
           <a href="https://{{album.location}}" title="{{album.summary | escape}}">
-            {{ album.startDate | date: "%m.%d.%Y" }}: {{album.summary}}
+            {{album.summary}}
           </a>
         </li>
       {% endfor %}

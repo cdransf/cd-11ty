@@ -1,6 +1,9 @@
 const { DateTime } = require('luxon')
 
 module.exports = {
+  readableDate: (date) => {
+    return DateTime.fromISO(date).toFormat('LLLL d, yyyy')
+  },
   dateForFeed: (date) => {
     return new Date(date).toISOString()
   },

@@ -21,7 +21,7 @@ templateEngineOverride: liquid,md
   </a>
   <div class="my-2 text-sm">
     <time class="dt-published" datetime="{{ post.date }}">
-      {{ post.date | date: "%m.%d.%Y" }}
+      {{ post.date | date: "%m.%Y" }}
     </time>
   </div>
   {% if post.data.post_excerpt %}

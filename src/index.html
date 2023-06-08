@@ -37,7 +37,7 @@ meta:
     <span class="p-author h-card hidden">{{ site.title }}</span>
     <div class="my-2 text-sm">
       <time class="dt-published" datetime="{{ post.date }}">
-        {{ post.date | date: "%m.%d.%Y" }}
+        {{ post.date | date: "%m.%Y" }}
       </time>
     </div>
     <p class="p-summary mt-0">{{ post.data.post_excerpt | markdown }}</p>
