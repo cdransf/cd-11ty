@@ -3989,5 +3989,16 @@
       "https://social.lol/users/cory/statuses/110509908801291010"
     ],
     "lastTootTimestamp": 1686247387770
+  },
+  "https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/": {
+    "id": "https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/",
+    "title": "📝: From ICS to JSON: surfacing anticipated albums",
+    "url": "https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/",
+    "content_text": "📝: From ICS to JSON: surfacing anticipated albums https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/",
+    "date_published": "2023-06-08T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110511358153038691"
+    ],
+    "lastTootTimestamp": 1686269503122
   }
 }
