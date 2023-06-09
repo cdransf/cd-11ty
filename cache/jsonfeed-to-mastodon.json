@@ -4011,5 +4011,24 @@
       "https://social.lol/users/cory/statuses/110511902651287024"
     ],
     "lastTootTimestamp": 1686277811513
+  },
+  "https://letterboxd.com/cdme/film/2001-a-space-odyssey/": {
+    "id": "https://letterboxd.com/cdme/film/2001-a-space-odyssey/",
+    "title": "🎥: 2001: A Space Odyssey, 1968 - ★★★★★",
+    "url": "https://letterboxd.com/cdme/film/2001-a-space-odyssey/",
+    "content_text": "🎥: 2001: A Space Odyssey, 1968 - ★★★★★ https://letterboxd.com/cdme/film/2001-a-space-odyssey/",
+    "date_published": "2023-06-09T02:05:26-08:00",
+    "toots": []
+  },
+  "https://studio.ribbonfarm.com/p/the-extended-internet-universe": {
+    "id": "https://studio.ribbonfarm.com/p/the-extended-internet-universe",
+    "title": "🔗: The Extended Internet Universe",
+    "url": "https://studio.ribbonfarm.com/p/the-extended-internet-universe",
+    "content_text": "🔗: The Extended Internet Universe https://studio.ribbonfarm.com/p/the-extended-internet-universe",
+    "date_published": "2023-06-08T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110512268908787393"
+    ],
+    "lastTootTimestamp": 1686283400153
   }
 }
