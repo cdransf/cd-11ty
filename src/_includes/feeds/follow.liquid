@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="/assets/atom-feed.xsl" type="text/xsl" media="screen"?>
+<?xml-stylesheet href="/assets/feeds/follow.xsl" type="text/xsl" media="screen"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>
-    {% block title %}All posts • Cory Dransfeldt{% endblock %}
+    {% block title %}Follow • Cory Dransfeldt{% endblock %}
   </title>
-  <link href="{{ pkg.homepage }}/feed.xml" rel="self" />
+  <link href="{{ pkg.homepage }}/follow.xml" rel="self" />
   <link href="{{ pkg.homepage }}/" />
   <link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
-  <updated>{% block update %}{{ collections.posts[0].date | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}</updated>
-  <id>{{ site.url }}/</id>
+  <updated>{% block update %}{{ follow.posts[0].date_published | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}</updated>
+  <id>{{ site.url }}</id>
   <author>
     <name>{{ site.name }}</name>
     <email>{{ site.email }}</email>

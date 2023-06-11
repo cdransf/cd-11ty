@@ -2,7 +2,7 @@
 layout: null
 permalink: /follow.xml
 ---
-{% layout "./_includes/feed-follow.liquid" %}
+{% layout "./_includes/feeds/follow.liquid" %}
 {% block title %}Follow • Cory Dransfeldt{% endblock %}
 {% block self %}follow.xml{% endblock %}
 {% block update %}{{ follow.posts[0].date_published | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}
