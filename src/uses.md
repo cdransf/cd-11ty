@@ -39,7 +39,6 @@ Software and services that I use for work and my own enjoyment.
 
 - [Obsidian](https://obsidian.md)
 - [Readkit](https://readkit.app)
-- [iBroadcast](https://ibroadcast.com)
 - [Ivory](https://tapbots.com/ivory)
 - [Parcel](https://parcelapp.net)
 
@@ -73,6 +72,7 @@ Software and services that I use for work and my own enjoyment.
 - <a href="https://nextdns.io/?from=m56mt3z6" onclick="va('event',{name:'NextDNS referral',data:{location:'Uses'}})">NextDNS</a>
 - <a href="https://dnsimple.com/r/3a7cbb9e15df8f" onclick="va('event',{name:'DNSimple referral',data:{location:'Uses'}})">DNSimple</a>
 - <a href="https://bunny.net?ref=revw3mehej" onclick="va('event',{name:'Bunny.net referral',data:{location:'Uses'}})">Bunny.net</a>
+- [iBroadcast](https://ibroadcast.com)
 - [1Password](https://1password.com)
 - [Feedbin](https://feedbin.com)
 - [Instapaper](https://instapaper.com)
