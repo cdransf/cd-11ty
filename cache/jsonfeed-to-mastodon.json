@@ -4044,5 +4044,24 @@
       "https://social.lol/users/cory/statuses/110521705980986899"
     ],
     "lastTootTimestamp": 1686427398463
+  },
+  "https://letterboxd.com/cdme/film/shutter-island/": {
+    "id": "https://letterboxd.com/cdme/film/shutter-island/",
+    "title": "🎥: Shutter Island, 2010 - ★★★½",
+    "url": "https://letterboxd.com/cdme/film/shutter-island/",
+    "content_text": "🎥: Shutter Island, 2010 - ★★★½ https://letterboxd.com/cdme/film/shutter-island/",
+    "date_published": "2023-06-11T03:10:33-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110523593811351468"
+    ],
+    "lastTootTimestamp": 1686456204457
+  },
+  "https://crookedtimber.org/2022/12/08/your-platform-is-not-an-ecosystem/": {
+    "id": "https://crookedtimber.org/2022/12/08/your-platform-is-not-an-ecosystem/",
+    "title": "🔗: Your platform is not an ecosystem",
+    "url": "https://crookedtimber.org/2022/12/08/your-platform-is-not-an-ecosystem/",
+    "content_text": "🔗: Your platform is not an ecosystem https://crookedtimber.org/2022/12/08/your-platform-is-not-an-ecosystem/",
+    "date_published": "2023-06-11T00:00:00-08:00",
+    "toots": []
   }
 }
