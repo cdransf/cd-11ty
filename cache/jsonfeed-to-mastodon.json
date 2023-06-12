@@ -4085,5 +4085,16 @@
       "https://social.lol/users/cory/statuses/110527838440094432"
     ],
     "lastTootTimestamp": 1686520972339
+  },
+  "http://joe-steel.com/2023-06-11-visionOYes.html": {
+    "id": "http://joe-steel.com/2023-06-11-visionOYes.html",
+    "title": "🔗: visionOYes",
+    "url": "http://joe-steel.com/2023-06-11-visionOYes.html",
+    "content_text": "🔗: visionOYes http://joe-steel.com/2023-06-11-visionOYes.html",
+    "date_published": "2023-06-11T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110528345725203694"
+    ],
+    "lastTootTimestamp": 1686528712913
   }
 }
