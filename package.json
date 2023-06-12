@@ -56,7 +56,7 @@
     "markdown-it-anchor": "^8.4.1",
     "markdown-it-footnote": "^3.0.3",
     "markdownlint-cli": "^0.34.0",
-    "marked": "^5.0.5",
+    "marked": "^5.1.0",
     "striptags": "^3.2.0",
     "tailwindcss": "^3.3.2"
   },
