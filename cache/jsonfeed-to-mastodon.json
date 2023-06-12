@@ -4110,5 +4110,16 @@
       "https://social.lol/users/cory/statuses/110529256506593580"
     ],
     "lastTootTimestamp": 1686542610341
+  },
+  "https://letterboxd.com/cdme/film/fast-x/": {
+    "id": "https://letterboxd.com/cdme/film/fast-x/",
+    "title": "🎥: Fast X, 2023 - ★★★½",
+    "url": "https://letterboxd.com/cdme/film/fast-x/",
+    "content_text": "🎥: Fast X, 2023 - ★★★½ https://letterboxd.com/cdme/film/fast-x/",
+    "date_published": "2023-06-12T14:23:44-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110532086201058530"
+    ],
+    "lastTootTimestamp": 1686585788031
   }
 }
