@@ -4143,5 +4143,16 @@
       "https://social.lol/users/cory/statuses/110538221531395913"
     ],
     "lastTootTimestamp": 1686679405771
+  },
+  "https://letterboxd.com/cdme/film/brazil/": {
+    "id": "https://letterboxd.com/cdme/film/brazil/",
+    "title": "🎥: Brazil, 1985 - ★★★★½",
+    "url": "https://letterboxd.com/cdme/film/brazil/",
+    "content_text": "🎥: Brazil, 1985 - ★★★★½ https://letterboxd.com/cdme/film/brazil/",
+    "date_published": "2023-06-14T19:17:26-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110544825374941657"
+    ],
+    "lastTootTimestamp": 1686780172397
   }
 }
