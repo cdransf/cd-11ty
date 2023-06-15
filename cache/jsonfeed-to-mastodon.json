@@ -4154,5 +4154,16 @@
       "https://social.lol/users/cory/statuses/110544825374941657"
     ],
     "lastTootTimestamp": 1686780172397
+  },
+  "https://letterboxd.com/cdme/film/demolition-man/": {
+    "id": "https://letterboxd.com/cdme/film/demolition-man/",
+    "title": "🎥: Demolition Man, 1993 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/demolition-man/",
+    "content_text": "🎥: Demolition Man, 1993 - ★★★ https://letterboxd.com/cdme/film/demolition-man/",
+    "date_published": "2023-06-15T19:13:01-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110550488104486195"
+    ],
+    "lastTootTimestamp": 1686866578795
   }
 }
