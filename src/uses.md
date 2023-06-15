@@ -37,7 +37,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
 
-- [Obsidian](https://obsidian.md)
+- [Things](https://culturedcode.com/things/)
 - [Readkit](https://readkit.app)
 - [Ivory](https://tapbots.com/ivory)
 - [Parcel](https://parcelapp.net)
@@ -68,11 +68,10 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Services</h3>
 
-- <a href="https://pr.tn/ref/X775YX40Z50G" onclick="va('event',{name:'Proton referral',data:{location:'Uses'}})">Proton</a>
+- <a href="https://ref.fm/u28939392" onclick="va('event',{name:'Fastmail referral',data:{location:'Uses'}})">Fastmail</a>
 - <a href="https://nextdns.io/?from=m56mt3z6" onclick="va('event',{name:'NextDNS referral',data:{location:'Uses'}})">NextDNS</a>
 - <a href="https://dnsimple.com/r/3a7cbb9e15df8f" onclick="va('event',{name:'DNSimple referral',data:{location:'Uses'}})">DNSimple</a>
 - <a href="https://bunny.net?ref=revw3mehej" onclick="va('event',{name:'Bunny.net referral',data:{location:'Uses'}})">Bunny.net</a>
-- [iBroadcast](https://ibroadcast.com)
 - [1Password](https://1password.com)
 - [Feedbin](https://feedbin.com)
 - [Instapaper](https://instapaper.com)

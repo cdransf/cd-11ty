@@ -26,7 +26,7 @@ meta:
 
 Referral links for services I use. I save some money, and you do as well if you choose to use them.
 
-- <a href="https://pr.tn/ref/X775YX40Z50G" onclick="va('event',{name:'Proton referral',data:{location:'Referrals'}})">Proton</a>
+- <a href="https://ref.fm/u28939392" onclick="va('event',{name:'Fastmail referral',data:{location:'Referrals'}})">Fastmail</a>
 - <a href="https://nextdns.io/?from=m56mt3z6" onclick="va('event',{name:'NextDNS referral',data:{location:'Referrals'}})">NextDNS</a>
 - <a href="https://dnsimple.com/r/3a7cbb9e15df8f" onclick="va('event',{name:'DNSimple referral',data:{location:'Referrals'}})">DNSimple</a>
 - <a href="https://bunny.net?ref=revw3mehej" onclick="va('event',{name:'Bunny.net referral',data:{location:'Referrals'}})">Bunny.net</a>
