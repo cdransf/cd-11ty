@@ -4209,5 +4209,16 @@
       "https://social.lol/users/cory/statuses/110554735147230132"
     ],
     "lastTootTimestamp": 1686931383512
+  },
+  "https://letterboxd.com/cdme/film/hidden-2015/": {
+    "id": "https://letterboxd.com/cdme/film/hidden-2015/",
+    "title": "🎥: Hidden, 2015 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/hidden-2015/",
+    "content_text": "🎥: Hidden, 2015 - ★★★ https://letterboxd.com/cdme/film/hidden-2015/",
+    "date_published": "2023-06-16T16:10:10-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110555207765321365"
+    ],
+    "lastTootTimestamp": 1686938595131
   }
 }
