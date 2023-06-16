@@ -4187,5 +4187,16 @@
       "https://social.lol/users/cory/statuses/110552377449749177"
     ],
     "lastTootTimestamp": 1686895407914
+  },
+  "https://letterboxd.com/cdme/film/the-wrath-of-becky/": {
+    "id": "https://letterboxd.com/cdme/film/the-wrath-of-becky/",
+    "title": "🎥: The Wrath of Becky, 2023 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/the-wrath-of-becky/",
+    "content_text": "🎥: The Wrath of Becky, 2023 - ★★★ https://letterboxd.com/cdme/film/the-wrath-of-becky/",
+    "date_published": "2023-06-16T13:02:39-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110554262164183248"
+    ],
+    "lastTootTimestamp": 1686924166379
   }
 }
