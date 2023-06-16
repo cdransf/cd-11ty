@@ -4220,5 +4220,16 @@
       "https://social.lol/users/cory/statuses/110555207765321365"
     ],
     "lastTootTimestamp": 1686938595131
+  },
+  "https://letterboxd.com/cdme/film/serpico/": {
+    "id": "https://letterboxd.com/cdme/film/serpico/",
+    "title": "🎥: Serpico, 1973 - ★★★★",
+    "url": "https://letterboxd.com/cdme/film/serpico/",
+    "content_text": "🎥: Serpico, 1973 - ★★★★ https://letterboxd.com/cdme/film/serpico/",
+    "date_published": "2023-06-16T18:15:28-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110555678871863095"
+    ],
+    "lastTootTimestamp": 1686945783655
   }
 }
