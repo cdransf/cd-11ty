@@ -4165,5 +4165,24 @@
       "https://social.lol/users/cory/statuses/110550488104486195"
     ],
     "lastTootTimestamp": 1686866578795
+  },
+  "https://www.vice.com/en/article/g5yykm/the-reddit-protest-is-a-battle-for-the-soul-of-the-human-internet": {
+    "id": "https://www.vice.com/en/article/g5yykm/the-reddit-protest-is-a-battle-for-the-soul-of-the-human-internet",
+    "title": "🔗: The Reddit Protest Is a Battle for the Soul of the Human Internet",
+    "url": "https://www.vice.com/en/article/g5yykm/the-reddit-protest-is-a-battle-for-the-soul-of-the-human-internet",
+    "content_text": "🔗: The Reddit Protest Is a Battle for the Soul of the Human Internet https://www.vice.com/en/article/g5yykm/the-reddit-protest-is-a-battle-for-the-soul-of-the-human-internet",
+    "date_published": "2023-06-16T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110551904339541661"
+    ],
+    "lastTootTimestamp": 1686888188830
+  },
+  "https://blog.jim-nielsen.com/2023/imports-under-the-hood/": {
+    "id": "https://blog.jim-nielsen.com/2023/imports-under-the-hood/",
+    "title": "🔗: JavaScript Imports Under The Hood",
+    "url": "https://blog.jim-nielsen.com/2023/imports-under-the-hood/",
+    "content_text": "🔗: JavaScript Imports Under The Hood https://blog.jim-nielsen.com/2023/imports-under-the-hood/",
+    "date_published": "2023-06-15T00:00:00-08:00",
+    "toots": []
   }
 }
