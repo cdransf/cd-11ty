@@ -21,7 +21,7 @@
       "headers": [
         {
           "key": "Content-Type",
-          "value": "application/xml; charset=utf-8  # not application/rss+xml"
+          "value": "application/xml; charset=utf-8"
         },
         {
           "key": "x-content-type-options",
@@ -34,7 +34,7 @@
       "headers": [
         {
           "key": "Content-Type",
-          "value": "application/xml; charset=utf-8  # not application/rss+xml"
+          "value": "application/xml; charset=utf-8"
         },
         {
           "key": "x-content-type-options",
