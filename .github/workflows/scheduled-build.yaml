@@ -1,20 +1,14 @@
-name: Scheduled Vercel build
-env:
-  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+name: Scheduled Netlify Build
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 * * * *'
 jobs:
-  cron:
+  build:
+    name: Request Netlify Webhook
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Install Vercel CLI
-        run: npm install --global vercel@29.4.0
-      - name: Pull Vercel Environment Information
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
-      - name: Build Project Artifacts
-        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
-      - name: Deploy Project Artifacts to Vercel
-        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+      - name: POST to Build Hook
+        env:
+          BUILD_KEY: ${{ secrets.NETLIFY_BUILD_KEY }}
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/$env:BUILD_KEY
