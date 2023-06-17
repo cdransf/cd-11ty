@@ -17,5 +17,5 @@ You probably don’t need to worry about them rolling up the drawbridge and char
 
 Not all big businesses are bad (absolutes often can be) — but the drive to scale forever, put off developing a business model until later (hey — look at all that user data!) and never stop growing profits has proven to have some pretty terrible outcomes for everyone involved short of owners and investors. So go buy a weird domain (not from a registrar that’s getting sold because someone got bored), connect it to a small email service and buy some apps or something. Keep the internet weird and a little more sustainable.
 
-[^1]: [Drafts](https://getdrafts.com), [Overcast](https://overcast.fm), [Readkit](https://readkit.app), [Feedbin](https://feedbin.com), [Things](https://culturedcode.com/things), anything made by [Sindre Sorhus](https://sindresorhus.com) or [Simon Støvring](https://simonbs.dev) — I could go on and on here.
+[^1]: [omg.lol](https://omg.lol), [Drafts](https://getdrafts.com), [Overcast](https://overcast.fm), [Readkit](https://readkit.app), [Feedbin](https://feedbin.com), [Things](https://culturedcode.com/things), anything made by [Sindre Sorhus](https://sindresorhus.com) or [Simon Støvring](https://simonbs.dev) — I could go on and on here.
 [^2]: I’m going to be wrong here — yay generalizations!
