@@ -4253,5 +4253,16 @@
       "https://social.lol/users/cory/statuses/110557160058240163"
     ],
     "lastTootTimestamp": 1686968384714
+  },
+  "https://letterboxd.com/cdme/film/full-metal-jacket/": {
+    "id": "https://letterboxd.com/cdme/film/full-metal-jacket/",
+    "title": "🎥: Full Metal Jacket, 1987 - ★★★★½",
+    "url": "https://letterboxd.com/cdme/film/full-metal-jacket/",
+    "content_text": "🎥: Full Metal Jacket, 1987 - ★★★★½ https://letterboxd.com/cdme/film/full-metal-jacket/",
+    "date_published": "2023-06-17T19:20:15-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110561341185703135"
+    ],
+    "lastTootTimestamp": 1687032183679
   }
 }
