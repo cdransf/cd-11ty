@@ -2,7 +2,7 @@
 
 [![Cory Dransfeldt](/src/assets/img/social-card.png)](https://coryd.dev)
 
-[![scheduled-build](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-build.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-build.yaml) [![Scheduled follow feed to Mastodon](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-post.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-post.yaml) [![Blog posts to readme](https://github.com/cdransf/coryd.dev/actions/workflows/blog-posts-to-readme.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/blog-posts-to-readme.yaml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/02b49681-1b96-4d64-978b-cd8ff204ba1e/deploy-status)](https://app.netlify.com/sites/cdme/deploys) [![scheduled-build](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-build.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-build.yaml) [![Scheduled follow feed to Mastodon](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-post.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/scheduled-post.yaml) [![Blog posts to readme](https://github.com/cdransf/coryd.dev/actions/workflows/blog-posts-to-readme.yaml/badge.svg)](https://github.com/cdransf/coryd.dev/actions/workflows/blog-posts-to-readme.yaml)
 
 Hi! I'm Cory. 👋🏻
 
