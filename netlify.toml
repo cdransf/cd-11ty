@@ -3,13 +3,11 @@
 ###
 [[plugins]]
 package = "netlify-plugin-cache"
-
   [plugins.inputs]
   paths = [ ".cache", "./src/assets/img/cache" ]
 
 [[plugins]]
 package = "@netlify/plugin-lighthouse"
-
   [plugins.inputs]
   output_path = "reports/lighthouse/index.html"
 
@@ -53,14 +51,13 @@ for = "/links.xml"
 [[headers]]
 for = "/follow.xml"
 
-[headers.values]
+  [headers.values]
   Content-Type = "application/xml; charset=utf-8"
   x-content-type-options = "nosniff"
 
 [[headers]]
 for = "/.well-known/webfinger"
-
-[headers.values]
+  [headers.values]
   Content-Type = "application/jrd+json; charset=utf-8"
 
 ###
