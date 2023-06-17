@@ -5,9 +5,9 @@ title: 'Support small businesses (internet ones too)'
 tags: ['tech']
 ---
 
-Small businesses are awesome — the owners are local, the service is better, the products are often unique, and they don’t usually look to scale until their employees are peeing in bottles. Go out of your way to keep them around.
+Small businesses are awesome — the owners are local, the service is better, the products are often unique, and they don’t usually look to scale until their employees are peeing in bottles. Go out of your way to keep them around.<!-- excerpt -->
 
-We should look to support small businesses on the internet in much the same way. Some of the best (weirdest and most creative too) products and services we have access to are developed by one or a handful of folks[^1] and provide far better service and optionality than services that are scaling to meet a mass market or take advantage of economies of scale.<!-- excerpt -->
+We should look to support small businesses on the internet in much the same way. Some of the best (weirdest and most creative too) products and services we have access to are developed by one or a handful of folks[^1] and provide far better service and optionality than services that are scaling to meet a mass market or take advantage of economies of scale.
 
 They’re crafting small businesses, applications and services at a reasonable scale that affords them, I hope, reasonable financial means[^2].
 
