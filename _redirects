@@ -1,0 +1,25 @@
+# feeds
+/rss.xml /feed.xml 301!
+
+# mastodon
+/.well-known/host-meta* https://social.lol/.well-known/host-meta:splat 301
+/.well-known/nodeinfo* https://social.lol/.well-known/nodeinfo:splat 301
+
+# rewrites
+/feeds/all.xml /feed.xml 200!
+/favicon.ico /assets/img/favicon/favicon.ico 200!
+/static/favicons/apple-touch-icon.png /assets/img/favicon/apple-touch-icon.png 200!
+
+# blog posts
+/blog/fixing-safari-icloud-syncing  /posts/2022/fixing-safari-icloud-syncing/ 301!
+/blog/migrating-to-fastmail /posts/2022/migrating-to-fastmail/ 301!
+/blog/client-side-webmentions-in-nextjs /posts/2023/client-side-webmentions-in-nextjs/ 301!
+/blog/apple-centric-digital-privacy-tools /posts/2022/apple-centric-digital-privacy-tools/ 301!
+/blog/automating-rss-syndication-with-nextjs-github /posts/2023/automating-rss-syndication-with-nextjs-github/ 301!
+/blog/apple-music-a-tale-of-woe /posts/2021/apple-music-a-tale-of-woe/ 301!
+/blog/adding-client-side-rendered-webmentions-to-my-blog /posts/2023/client-side-webmentions-in-nextjs/ 301!
+/blog/automating-email-cleanup-in-gmail /posts/2022/automating-email-cleanup-in-gmail/ 301!
+/blog/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt /posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/ 301!
+/blog/simple-api-fetch-hooks-with-swr /posts/2022/simple-api-fetch-hooks-with-swr/ 301!
+/2023/02/automatingandprobablyoverengineeringmy-nowpage /posts/2023/automating-and-overengineering-my-now-page/ 301!
+/2023/01/workflows-handling-inbound-email-on-fastmail-with-regular-expressions /posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/ 301!
