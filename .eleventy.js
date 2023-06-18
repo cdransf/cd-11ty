@@ -34,6 +34,9 @@ module.exports = function (eleventyConfig) {
     },
   })
 
+  // quiet build output
+  eleventyConfig.setQuietMode(true)
+
   // tailwind watches
   eleventyConfig.addWatchTarget('./tailwind.config.js')
   eleventyConfig.addWatchTarget('./tailwind.css')
