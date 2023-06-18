@@ -127,3 +127,25 @@ status = 301
 from = "/2023/01/workflows-handling-inbound-email-on-fastmail-with-regular-expressions"
 to = "/posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/"
 status = 301
+
+###
+# SITE REWRITES
+###
+
+[[redirects]]
+from = "/feeds/all.xml"
+to = "/feed.xml"
+status = 200
+force = true
+
+[[redirects]]
+from = "/favicon.ico"
+to = "/assets/img/favicon/favicon.ico"
+status = 200
+force = true
+
+[[redirects]]
+from = "/static/favicons/apple-touch-icon.png"
+to = "/assets/img/favicon/apple-touch-icon.png"
+status = 200
+force = true
