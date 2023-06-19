@@ -8,6 +8,9 @@
 # rewrites
 /feeds/all.xml /feed.xml 200!
 /favicon.ico /assets/img/favicon/favicon.ico 200!
+/apple-touch-icon.png /assets/img/favicon/apple-touch-icon.png 200!
+/apple-touch-icon-precomposed.png /assets/img/favicon/apple-touch-icon.png 200!
+/static/favicons/apple-touch-icon.png /assets/img/favicon/apple-touch-icon.png 200!
 
 # blog posts
 /blog/fixing-safari-icloud-syncing  /posts/2022/fixing-safari-icloud-syncing/ 301!
@@ -24,4 +27,4 @@
 /2023/01/workflows-handling-inbound-email-on-fastmail-with-regular-expressions /posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/ 301!
 
 # assets
-/static/images/avatar.webp /assets/img/favicon/apple-touch-icon.png 301!
+/static/images/avatar.webp /assets/img/avatar.webp 301!
