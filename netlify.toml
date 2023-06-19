@@ -4,7 +4,7 @@
 [[plugins]]
 package = "netlify-plugin-cache"
   [plugins.inputs]
-  paths = [ ".cache", "./src/assets/img/cache" ]
+  paths = [ "./src/assets/img/cache" ]
 
 [[plugins]]
 package = "@netlify/plugin-lighthouse"
