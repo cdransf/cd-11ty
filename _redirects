@@ -1,12 +1,12 @@
 # feeds
 /rss.xml /feed.xml 301!
+/feeds/all.xml /feed.xml 301!
 
 # mastodon
 /.well-known/host-meta* https://social.lol/.well-known/host-meta:splat 301
 /.well-known/nodeinfo* https://social.lol/.well-known/nodeinfo:splat 301
 
 # rewrites
-/feeds/all.xml /feed.xml 200!
 /favicon.ico /assets/img/favicon/favicon.ico 200!
 /apple-touch-icon.png /assets/img/favicon/apple-touch-icon.png 200!
 /apple-touch-icon-precomposed.png /assets/img/favicon/apple-touch-icon.png 200!
