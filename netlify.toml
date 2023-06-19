@@ -59,3 +59,8 @@ for = "/follow.xml"
 for = "/.well-known/webfinger"
   [headers.values]
   Content-Type = "application/jrd+json; charset=utf-8"
+
+[[headers]]
+for = "/.well-known/gpc.json"
+  [headers.values]
+  Content-Type = "application/jrd+json; charset=utf-8"
