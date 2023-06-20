@@ -64,3 +64,8 @@ for = "/.well-known/webfinger"
 for = "/.well-known/gpc.json"
   [headers.values]
   Content-Type = "application/jrd+json; charset=utf-8"
+
+[[headers]]
+for = "/.well-known/traffic-advice"
+  [headers.values]
+  Content-Type = "application/trafficadvice+json"
