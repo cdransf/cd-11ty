@@ -11,8 +11,6 @@
 /apple-touch-icon.png /assets/img/favicon/apple-touch-icon.png 200!
 /apple-touch-icon-precomposed.png /assets/img/favicon/apple-touch-icon.png 200!
 /static/favicons/apple-touch-icon.png /assets/img/favicon/apple-touch-icon.png 200!
-/sitemap.txt /sitemap.xml 200!
-/articles/ / 200!
 
 # blog posts
 /blog/fixing-safari-icloud-syncing  /posts/2022/fixing-safari-icloud-syncing/ 301!
@@ -30,3 +28,7 @@
 
 # assets
 /static/images/avatar.webp /assets/img/avatar.webp 301!
+
+# redirects
+/articles/ / 301!
+/sitemap.txt /sitemap.xml 301!
