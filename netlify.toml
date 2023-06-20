@@ -69,3 +69,8 @@ for = "/.well-known/gpc.json"
 for = "/.well-known/traffic-advice"
   [headers.values]
   Content-Type = "application/trafficadvice+json"
+
+[[headers]]
+for = "/contribute.json"
+  [headers.values]
+  Content-Type = "application/json"
