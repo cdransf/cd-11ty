@@ -8,12 +8,19 @@ const sortTrim = (array, length = 5) =>
 module.exports = async function () {
   const APPLE_BEARER = process.env.API_BEARER_APPLE_MUSIC
   const APPLE_TOKEN = process.env.API_TOKEN_APPLE_MUSIC
-  const PAGE_SIZE = 30
-  let CURRENT_PAGE = 0
-  const PAGES = 4
-  let res = []
   const asset = new AssetCache('recent_tracks_data')
+  const PAGE_SIZE = 30
+  const PAGES = 4
+  const response = {
+    artists: {},
+    tracks: {},
+  }
+
+  let CURRENT_PAGE = 0
+  let res = []
+
   if (asset.isCacheValid('1h')) return await asset.getCachedValue()
+
   while (CURRENT_PAGE < PAGES) {
     const URL = `https://api.music.apple.com/v1/me/recent/played/tracks?limit=${PAGE_SIZE}&offset=${
       PAGE_SIZE * CURRENT_PAGE
@@ -30,10 +37,7 @@ module.exports = async function () {
     res = [...res, ...tracks.data]
     CURRENT_PAGE++
   }
-  const response = {
-    artists: {},
-    tracks: {},
-  }
+
   res.forEach((track) => {
     // aggregate artists
     if (!response.artists[track.attributes.artistName]) {
