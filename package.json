@@ -22,11 +22,10 @@
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "netlify-plugin-cache": "^1.0.3",
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
-    "sanitize-html": "^2.10.0"
+    "sanitize-html": "^2.11.0"
   },
   "dependencies": {
     "@11ty/eleventy-activity-feed": "^1.0.9",

@@ -2,11 +2,6 @@
 # PLUGINS
 ###
 [[plugins]]
-package = "netlify-plugin-cache"
-  [plugins.inputs]
-  paths = [ "./src/assets/img/cache" ]
-
-[[plugins]]
 package = "@netlify/plugin-lighthouse"
   [plugins.inputs]
   output_path = "reports/lighthouse/index.html"

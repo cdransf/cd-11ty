@@ -26,8 +26,8 @@ meta:
 
 Referral links for services I use. I save some money, and you do as well if you choose to use them.
 
-- [Fastmail](https://ref.fm/u28939392)
-- [NextDNS](https://nextdns.io/?from=m56mt3z6)
-- [DNSimple](https://dnsimple.com/r/3a7cbb9e15df8f)
-- [Bunny.net](https://bunny.net?ref=revw3mehej)
-- [DigitalOcean](https://m.do.co/c/3635bf99aee2)
+- <a href="https://ref.fm/u28939392" onclick="umami.track('fastmail-referral', { name: 'Fastmail referral', url: '{{ page.url }}' });">Fastmail</a>
+- <a href="https://nextdns.io/?from=m56mt3z6" onclick="umami.track('nextdns-referral', { name: 'NextDNS referral', url: '{{ page.url }}' });">NextDNS</a>
+- <a href="https://dnsimple.com/r/3a7cbb9e15df8f" onclick="umami.track('dnsimple-referral', { name: 'DNSimple referral', url: '{{ page.url }}' });">DNSimple</a>
+- <a href="https://bunny.net?ref=revw3mehej" onclick="umami.track('bunny-referral', { name: 'Bunny.net referral', url: '{{ page.url }}' });">Bunny.net</a>
+- <a href="https://m.do.co/c/3635bf99aee2" onclick="umami.track('digitalocean-referral', { name: 'DigitalOcean referral', url: '{{ page.url }}' });">DigitalOcean</a>

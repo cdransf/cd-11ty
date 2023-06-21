@@ -4352,5 +4352,68 @@
       "https://social.lol/users/cory/statuses/110583047012640568"
     ],
     "lastTootTimestamp": 1687363388329
+  },
+  "https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/": {
+    "id": "https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/",
+    "title": "📝: Displaying listening data from Apple Music using MusicKit.js",
+    "url": "https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/",
+    "content_text": "📝: Displaying listening data from Apple Music using MusicKit.js https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/",
+    "date_published": "2023-06-21T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110585489118367775"
+    ],
+    "lastTootTimestamp": 1687400651881
+  },
+  "https://www.techdirt.com/2023/06/21/seven-rules-for-internet-ceos-to-avoid-enshittification/": {
+    "id": "https://www.techdirt.com/2023/06/21/seven-rules-for-internet-ceos-to-avoid-enshittification/",
+    "title": "🔗: Seven Rules For Internet CEOs To Avoid Enshittification",
+    "url": "https://www.techdirt.com/2023/06/21/seven-rules-for-internet-ceos-to-avoid-enshittification/",
+    "content_text": "🔗: Seven Rules For Internet CEOs To Avoid Enshittification https://www.techdirt.com/2023/06/21/seven-rules-for-internet-ceos-to-avoid-enshittification/",
+    "date_published": "2023-06-21T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110584967862279088"
+    ],
+    "lastTootTimestamp": 1687392698129
+  },
+  "https://sanjosespotlight.com/full-report-silicon-valley-pain-index-2023/": {
+    "id": "https://sanjosespotlight.com/full-report-silicon-valley-pain-index-2023/",
+    "title": "🔗: Full report: Silicon Valley Pain Index 2023",
+    "url": "https://sanjosespotlight.com/full-report-silicon-valley-pain-index-2023/",
+    "content_text": "🔗: Full report: Silicon Valley Pain Index 2023 https://sanjosespotlight.com/full-report-silicon-valley-pain-index-2023/",
+    "date_published": "2023-06-21T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110585878945797189"
+    ],
+    "lastTootTimestamp": 1687406600159
+  },
+  "https://blog.cassidoo.co/post/open-standards-are-good/": {
+    "id": "https://blog.cassidoo.co/post/open-standards-are-good/",
+    "title": "🔗: Open standards, trust, and Google",
+    "url": "https://blog.cassidoo.co/post/open-standards-are-good/",
+    "content_text": "🔗: Open standards, trust, and Google https://blog.cassidoo.co/post/open-standards-are-good/",
+    "date_published": "2023-06-23T00:00:00-08:00",
+    "toots": []
+  },
+  "https://thenewstack.io/too-much-javascript-why-the-frontend-needs-to-build-better/": {
+    "id": "https://thenewstack.io/too-much-javascript-why-the-frontend-needs-to-build-better/",
+    "title": "🔗: Too Much JavaScript? Why the Frontend Needs to Build Better",
+    "url": "https://thenewstack.io/too-much-javascript-why-the-frontend-needs-to-build-better/",
+    "content_text": "🔗: Too Much JavaScript? Why the Frontend Needs to Build Better https://thenewstack.io/too-much-javascript-why-the-frontend-needs-to-build-better/",
+    "date_published": "2023-06-22T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110593898960867682"
+    ],
+    "lastTootTimestamp": 1687528975877
+  },
+  "https://themarkup.org/privacy/2023/06/23/how-your-attention-is-auctioned-off-to-advertisers": {
+    "id": "https://themarkup.org/privacy/2023/06/23/how-your-attention-is-auctioned-off-to-advertisers",
+    "title": "🔗: How Your Attention Is Auctioned Off to Advertisers",
+    "url": "https://themarkup.org/privacy/2023/06/23/how-your-attention-is-auctioned-off-to-advertisers",
+    "content_text": "🔗: How Your Attention Is Auctioned Off to Advertisers https://themarkup.org/privacy/2023/06/23/how-your-attention-is-auctioned-off-to-advertisers",
+    "date_published": "2023-06-23T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110594371504094526"
+    ],
+    "lastTootTimestamp": 1687536186329
   }
 }

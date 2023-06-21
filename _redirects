@@ -35,3 +35,7 @@
 
 # netlify app domain
 https://cdme.netlify.app https://coryd.dev 301!
+
+# analytics
+/api/send https://analytics.umami.is/api/send 200!
+/analytics.js https://analytics.umami.is/script.js 200!

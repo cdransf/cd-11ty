@@ -1,7 +1,7 @@
 {% if site.coffee != "" %}
     <a
     href={{ site.coffee }}
-    onclick="va('event',{name:'Coffee',data:{location:'Header'}})"
+    onclick="umami.track('coffee', { name: 'Coffee', url: '{{ page.url }}' })"
     rel="me"
     title="Buy Me a Coffee">
     <svg
