@@ -4330,5 +4330,16 @@
       "https://social.lol/users/cory/statuses/110578798732185088"
     ],
     "lastTootTimestamp": 1687298564688
+  },
+  "https://wheresyoured.at/p/the-internet-is-already-broken": {
+    "id": "https://wheresyoured.at/p/the-internet-is-already-broken",
+    "title": "🔗: The Internet Is Already Broken",
+    "url": "https://wheresyoured.at/p/the-internet-is-already-broken",
+    "content_text": "🔗: The Internet Is Already Broken https://wheresyoured.at/p/the-internet-is-already-broken",
+    "date_published": "2023-06-20T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110579304171951272"
+    ],
+    "lastTootTimestamp": 1687306277105
   }
 }
