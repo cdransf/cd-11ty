@@ -1,5 +1,5 @@
 ---
-date: 2017-04-14
+date: '2017-04-14'
 draft: false
 title: Don't like systematic privacy violations? Stop using the internet
 tags: ['politics', 'net neutrality']

@@ -1,5 +1,5 @@
 ---
-date: 2017-03-08
+date: '2017-03-08'
 draft: false
 title: GOP senators' new bill would let ISPs sell your Web browsing data
 tags: ['politics', 'privacy']

@@ -1,5 +1,5 @@
 ---
-date: 2013-07-25
+date: '2013-07-25'
 draft: false
 title: Postal Service - Some Idealistic Future
 tags: ['music', 'video']

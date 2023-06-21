@@ -1,5 +1,5 @@
 ---
-date: 2018-09-30
+date: '2018-09-30'
 draft: false
 title: CA governor signs nation's strictest net neutrality law
 tags: ['politics', 'net neutrality']

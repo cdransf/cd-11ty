@@ -1,5 +1,5 @@
 ---
-date: 2013-08-20
+date: '2013-08-20'
 draft: false
 title: Publishing to Kirby using Drafts workflows
 tags: ['iOS']

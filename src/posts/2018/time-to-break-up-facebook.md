@@ -1,5 +1,5 @@
 ---
-date: 2018-09-04
+date: '2018-09-04'
 draft: false
 title: Time to break up Facebook
 tags: ['politics', 'social media', 'privacy']

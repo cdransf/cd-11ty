@@ -1,5 +1,5 @@
 ---
-date: 2017-03-11
+date: '2017-03-11'
 draft: false
 title: FCC throwing consumer privacy protections out the window to help ISPs
 tags: ['politics', 'privacy']

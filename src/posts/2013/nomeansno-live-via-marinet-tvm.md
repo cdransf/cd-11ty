@@ -1,5 +1,5 @@
 ---
-date: 2013-07-18
+date: '2013-07-18'
 draft: false
 title: NoMeansNo live via Marinet TVM
 tags: ['music', 'video']

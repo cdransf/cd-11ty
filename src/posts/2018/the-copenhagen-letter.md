@@ -1,5 +1,5 @@
 ---
-date: 2018-09-06
+date: '2018-09-06'
 draft: false
 title: The Copenhagen Letter
 tags: ['politics']

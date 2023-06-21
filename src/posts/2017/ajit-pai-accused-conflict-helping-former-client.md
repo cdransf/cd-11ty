@@ -1,5 +1,5 @@
 ---
-date: 2017-08-10
+date: '2017-08-10'
 draft: false
 title: Ajit Pai accused of conflict for helping former client
 tags: ['politics']

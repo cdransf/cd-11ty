@@ -1,5 +1,5 @@
 ---
-date: 2013-08-07
+date: '2013-08-07'
 draft: false
 title: Okkervil River - Stay Young
 tags: ['video', 'music']

@@ -1,5 +1,5 @@
 ---
-date: 2018-06-26
+date: '2018-06-26'
 draft: false
 title: Popular tech companies work to stop California privacy law
 tags: ['politics', 'privacy']

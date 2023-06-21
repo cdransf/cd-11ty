@@ -1,5 +1,5 @@
 ---
-date: 2017-03-03
+date: '2017-03-03'
 draft: false
 title: 'The Internet belongs to the people, not powerful corporate interests'
 tags: ['politics', 'net neutrality']

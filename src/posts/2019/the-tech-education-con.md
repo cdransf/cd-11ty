@@ -1,5 +1,5 @@
 ---
-date: 2019-01-13
+date: '2019-01-13'
 draft: false
 title: The tech education con
 tags: ['education']

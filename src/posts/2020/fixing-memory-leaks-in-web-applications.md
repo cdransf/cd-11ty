@@ -1,5 +1,5 @@
 ---
-date: 2020-02-26
+date: '2020-02-26'
 draft: false
 title: Fixing memory leaks in web applications
 tags: ['development']

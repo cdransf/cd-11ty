@@ -1,5 +1,5 @@
 ---
-date: 2017-03-19
+date: '2017-03-19'
 draft: false
 title: Installing HTTP/2 on Ubuntu 16.04 with virtual hosts
 tags: ['Apache', 'development']

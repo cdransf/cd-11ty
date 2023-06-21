@@ -1,5 +1,5 @@
 ---
-date: 2014-10-15
+date: '2014-10-15'
 draft: false
 title: External links and redirects in Statamic navigation
 tags: ['development', 'Statamic']

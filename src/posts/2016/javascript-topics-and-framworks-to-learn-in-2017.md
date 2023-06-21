@@ -1,5 +1,5 @@
 ---
-date: 2016-12-31
+date: '2016-12-31'
 draft: false
 title: Updating to the latest version of git on Ubuntu
 tags: ['JavaScript', 'development']

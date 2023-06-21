@@ -1,5 +1,5 @@
 ---
-date: 2014-10-03
+date: '2014-10-03'
 draft: false
 title: ISPs secretly furious at Verizon
 tags: ['net neutrality', 'politics']

@@ -1,5 +1,5 @@
 ---
-date: 2018-07-03
+date: '2018-07-03'
 draft: false
 title: Comcast throttling mobile video and charging extra for high quality streaming
 tags: ['politics', 'net neutrality']

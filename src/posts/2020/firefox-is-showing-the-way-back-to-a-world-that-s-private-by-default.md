@@ -1,5 +1,5 @@
 ---
-date: 2020-03-02
+date: '2020-03-02'
 draft: false
 title: Firefox is showing the way back to a world that's private by default
 tags: ['Firefox', 'privacy']

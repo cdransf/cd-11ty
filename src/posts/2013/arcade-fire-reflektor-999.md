@@ -1,5 +1,5 @@
 ---
-date: 2013-09-04
+date: '2013-09-04'
 draft: false
 title: Arcade Fire - Reflektor 9/9/9
 tags: ['music']

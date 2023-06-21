@@ -1,5 +1,5 @@
 ---
-date: 2017-03-19
+date: '2017-03-19'
 draft: false
 title: Spotify begins to gain leverage in its relationship with labels
 tags: ['Spotify']

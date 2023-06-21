@@ -1,5 +1,5 @@
 ---
-date: 2014-10-20
+date: '2014-10-20'
 draft: false
 title: Streaming Music Has Left Me Adrift
 tags: ['music']

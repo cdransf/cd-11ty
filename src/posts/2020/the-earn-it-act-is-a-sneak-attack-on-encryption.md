@@ -1,5 +1,5 @@
 ---
-date: 2020-03-05
+date: '2020-03-05'
 draft: false
 title: The EARN IT Act Is a Sneak Attack on Encryption
 tags: ['politics', 'security']

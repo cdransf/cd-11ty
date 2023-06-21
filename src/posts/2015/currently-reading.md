@@ -1,5 +1,5 @@
 ---
-date: 2015-03-28
+date: '2015-03-28'
 draft: false
 title: Currently reading
 tags: ['books', 'JavaScript']

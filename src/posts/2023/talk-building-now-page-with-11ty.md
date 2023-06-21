@@ -1,5 +1,5 @@
 ---
-date: 2023-04-24
+date: '2023-04-24'
 draft: false
 title: 'Talk: Building a /now page with Eleventy'
 tags: ['Eleventy', 'JavaScript', 'automation']

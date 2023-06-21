@@ -1,5 +1,5 @@
 ---
-date: 2013-08-21
+date: '2013-08-21'
 draft: false
 title: Why Millennials are Ditching Cars and Redefining Ownership
 tags: ['culture']

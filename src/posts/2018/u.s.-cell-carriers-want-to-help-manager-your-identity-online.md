@@ -1,5 +1,5 @@
 ---
-date: 2018-09-15
+date: '2018-09-15'
 draft: false
 title: U.S. cell carriers want to help manager your identity online
 tags: ['privacy']

@@ -1,5 +1,5 @@
 ---
-date: 2020-02-22
+date: '2020-02-22'
 draft: false
 title: 'Protocols, Not Platforms: A Technological Approach to Free Speech'
 tags: ['politics', 'social media']

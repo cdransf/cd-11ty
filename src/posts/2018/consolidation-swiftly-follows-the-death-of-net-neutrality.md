@@ -1,5 +1,5 @@
 ---
-date: 2018-06-13
+date: '2018-06-13'
 draft: false
 title: Consolidation swiftly follows the death of net neutrality
 tags: ['politics', 'net neutrality']

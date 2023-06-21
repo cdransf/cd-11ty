@@ -1,5 +1,5 @@
 ---
-date: 2017-07-26
+date: '2017-07-26'
 draft: false
 title: Lawmakers blast FCC net neutrality rollback
 tags: ['politics', 'net neutrality']

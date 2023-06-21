@@ -1,5 +1,5 @@
 ---
-date: 2017-08-01
+date: '2017-08-01'
 draft: false
 title: We Should All Care About Encryption
 tags: ['politics', 'security']

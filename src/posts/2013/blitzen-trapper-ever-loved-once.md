@@ -1,5 +1,5 @@
 ---
-date: 2013-07-30
+date: '2013-07-30'
 draft: false
 title: Blitzen Trapper - 'Ever Loved Once'
 tags: ['music']

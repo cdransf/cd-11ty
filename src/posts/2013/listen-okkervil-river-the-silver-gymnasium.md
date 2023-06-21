@@ -1,5 +1,5 @@
 ---
-date: 2013-08-26
+date: '2013-08-26'
 draft: false
 title: Listen - Okkervil River, 'The Silver Gymnasium'
 tags: ['music']

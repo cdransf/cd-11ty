@@ -1,6 +1,6 @@
 ---
+date: '2023-02-18'
 title: 'Adding client side webmentions to my Next.js blog'
-date: 2023-02-18
 draft: false
 tags: ['Next.js', 'React', 'development', 'indie web']
 ---

@@ -1,6 +1,6 @@
 ---
+date: '2023-02-23'
 title: 'Automating RSS syndication and sharing with Next.js and GitHub'
-date: 2023-02-23
 draft: false
 tags: ['Next.js', 'RSS', 'automation', 'GitHub']
 ---

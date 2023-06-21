@@ -1,5 +1,5 @@
 ---
-date: 2013-08-13
+date: '2013-08-13'
 draft: false
 title: Grapes of Wrath
 tags: ['environment', 'politics']

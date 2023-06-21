@@ -1,5 +1,5 @@
 ---
-date: 2013-07-16
+date: '2013-07-16'
 draft: false
 title: New Arcade Fire Album Is 'Epic,' James Murphy Says
 tags: ['music']

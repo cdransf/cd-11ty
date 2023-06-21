@@ -1,5 +1,5 @@
 ---
-date: 2017-08-27
+date: '2017-08-27'
 draft: false
 title: Sarahah uploads your contacts without permission
 link: https://theintercept.com/2017/08/27/hit-app-sarahah-quietly-uploads-your-address-book/

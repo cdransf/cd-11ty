@@ -1,5 +1,5 @@
 ---
-date: 2017-09-16
+date: '2017-09-16'
 draft: false
 title: 'Why do we keep using Facebook?'
 tags: ['social media']

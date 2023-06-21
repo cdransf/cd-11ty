@@ -1,5 +1,5 @@
 ---
-date: 2015-12-24
+date: '2015-12-24'
 draft: false
 title: Backdoor password in Juniper's firewall code
 tags: ['politics', 'security']

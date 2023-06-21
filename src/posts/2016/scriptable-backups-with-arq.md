@@ -1,5 +1,5 @@
 ---
-date: 2016-04-24
+date: '2016-04-24'
 draft: false
 title: Scriptable Backups with Arq
 tags: ['Arq', 'backups']

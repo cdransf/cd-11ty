@@ -1,5 +1,5 @@
 ---
-date: 2020-02-17
+date: '2020-02-17'
 draft: false
 title: 'The DOJ Asks Startup Investors: Are Tech Giants Too Powerful?'
 tags: ['politics']

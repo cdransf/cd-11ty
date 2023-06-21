@@ -1,5 +1,5 @@
 ---
-date: 2014-04-30
+date: '2014-04-30'
 draft: false
 title: Sorting email using aliases and plus addressing in Fastmail
 tags: ['Email', 'Fastmail']

@@ -1,5 +1,5 @@
 ---
-date: 2013-09-13
+date: '2013-09-13'
 draft: false
 title: Where are you going?
 tags: ['concert', 'music']

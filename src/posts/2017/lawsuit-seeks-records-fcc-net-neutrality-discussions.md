@@ -1,5 +1,5 @@
 ---
-date: 2017-07-26
+date: '2017-07-26'
 draft: false
 title: Lawsuit seeks records of FCC net neutrality discussions
 tags: ['politics', 'net neutrality']

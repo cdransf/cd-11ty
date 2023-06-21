@@ -1,5 +1,5 @@
 ---
-date: 2018-08-07
+date: '2018-08-07'
 draft: false
 title: FCC admits its site was never hacked
 tags: ['politics', 'net neutrality']

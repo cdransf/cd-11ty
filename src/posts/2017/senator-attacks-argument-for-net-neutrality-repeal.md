@@ -1,5 +1,5 @@
 ---
-date: 2017-07-20
+date: '2017-07-20'
 draft: false
 title: Senator attacks ISP and FCC argument for net neutrality repeal
 tags: ['politics', 'net neutrality']

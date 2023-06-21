@@ -1,5 +1,5 @@
 ---
-date: 2017-05-03
+date: '2017-05-03'
 draft: false
 title: FCC and ISPs begin campaign to gut net neutrality while pretending to protect it
 tags: ['politics', 'net neutrality']

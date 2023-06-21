@@ -1,5 +1,5 @@
 ---
-date: 2013-08-01
+date: '2013-08-01'
 draft: false
 title: Dawes - Most People
 tags: ['music', 'video']

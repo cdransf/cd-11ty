@@ -1,5 +1,5 @@
 ---
-date: 2018-11-15
+date: '2018-11-15'
 draft: false
 title: Senators press wireless carriers on mobile throttling
 tags: ['politics', 'net neutrality']

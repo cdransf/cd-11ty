@@ -1,5 +1,5 @@
 ---
-date: 2017-02-20
+date: '2017-02-20'
 draft: false
 title: Securing your personal devices and accounts
 tags: ['privacy', 'security']

@@ -1,5 +1,5 @@
 ---
-date: 2013-07-10
+date: '2013-07-10'
 draft: false
 title: Skin and Bones - Old Horses
 tags: ['video', 'music']

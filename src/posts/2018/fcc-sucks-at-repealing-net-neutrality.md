@@ -1,5 +1,5 @@
 ---
-date: 2018-03-15
+date: '2018-03-15'
 draft: false
 title: The FCC sucks at repealing net neutrality
 tags: ['politics', 'net neutrality']

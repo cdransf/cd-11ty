@@ -1,5 +1,5 @@
 ---
-date: 2020-03-11
+date: '2020-03-11'
 draft: false
 title: Tech companies agree to voluntary principles as governments ask for encryption backdoors
 tags: ['tech', 'privacy']

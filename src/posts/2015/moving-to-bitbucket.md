@@ -1,5 +1,5 @@
 ---
-date: 2015-08-29
+date: '2015-08-29'
 draft: false
 title: Moving to Bitbucket
 tags: ['Git', 'GitHub', 'Bitbucket']

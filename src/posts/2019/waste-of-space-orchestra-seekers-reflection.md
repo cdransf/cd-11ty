@@ -1,5 +1,5 @@
 ---
-date: 2019-02-18
+date: '2019-02-18'
 draft: false
 title: Waste of Space Orchestra - Seeker's Reflection
 tags: ['music']

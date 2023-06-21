@@ -1,5 +1,5 @@
 ---
-date: 2014-09-08
+date: '2014-09-08'
 draft: false
 title: Fastmail in Fluid.app
 tags: ['Email', 'Fastmail']

@@ -1,5 +1,5 @@
 ---
-date: 2014-05-19
+date: '2014-05-19'
 draft: false
 title: Ben Thompson on net neutrality
 tags: ['net neutrality']

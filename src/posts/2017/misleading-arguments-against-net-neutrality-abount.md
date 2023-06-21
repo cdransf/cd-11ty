@@ -1,5 +1,5 @@
 ---
-date: 2017-07-20
+date: '2017-07-20'
 draft: false
 title: Misleading Arguments Against Net Neutrality Abound
 tags: ['politics', 'net neutrality']

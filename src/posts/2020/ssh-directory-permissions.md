@@ -1,5 +1,5 @@
 ---
-date: 2020-11-09
+date: '2020-11-09'
 title: .ssh directory permissions
 draft: false
 tags: ['SSH', 'development']

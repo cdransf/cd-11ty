@@ -1,5 +1,5 @@
 ---
-date: 2017-03-23
+date: '2017-03-23'
 draft: false
 title: Senate chooses ISPs over customer privacy
 tags: ['politics', 'net neutrality']

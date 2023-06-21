@@ -1,5 +1,5 @@
 ---
-date: 2015-04-17
+date: '2015-04-17'
 draft: false
 title: Exploring OS X mail clients
 tags: ['Fastmail', 'Email']

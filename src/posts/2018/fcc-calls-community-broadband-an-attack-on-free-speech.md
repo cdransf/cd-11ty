@@ -1,5 +1,5 @@
 ---
-date: 2018-11-05
+date: '2018-11-05'
 draft: false
 title: FCC calls community broadband an attack on free speech
 tag: ['politics', 'net neutrality']

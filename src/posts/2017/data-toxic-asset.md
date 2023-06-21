@@ -1,5 +1,5 @@
 ---
-date: 2017-09-08
+date: '2017-09-08'
 draft: false
 title: Data is a toxic asset
 tags: ['security']

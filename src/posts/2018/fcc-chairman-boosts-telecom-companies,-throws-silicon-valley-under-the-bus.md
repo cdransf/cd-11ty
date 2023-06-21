@@ -1,5 +1,5 @@
 ---
-date: 2018-09-05
+date: '2018-09-05'
 draft: false
 title: FCC chairman boosts telecom companies, throws Silicon Valley under the bus
 tags: ['politics', 'net neutrality']

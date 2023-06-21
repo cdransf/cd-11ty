@@ -1,5 +1,5 @@
 ---
-date: 2017-09-30
+date: '2017-09-30'
 draft: false
 title: Ending net neutrality will end the Internet as we know it
 tags: ['politics', 'net neutrality']

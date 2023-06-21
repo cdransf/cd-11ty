@@ -1,5 +1,5 @@
 ---
-date: 2020-03-04
+date: '2020-03-04'
 draft: false
 title: Debugging JavaScript - Interview with Mehdi Osman
 tags: ['development', 'JavaScript']

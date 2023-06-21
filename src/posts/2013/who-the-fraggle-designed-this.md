@@ -1,5 +1,5 @@
 ---
-date: 2013-07-24
+date: '2013-07-24'
 draft: false
 title: Who the Fraggle designed this?
 tags: ['music']

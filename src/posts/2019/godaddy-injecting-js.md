@@ -1,5 +1,5 @@
 ---
-date: 2019-01-14
+date: '2019-01-14'
 draft: false
 title: GoDaddy secretly injecting js into customer sites
 tags: ['development']

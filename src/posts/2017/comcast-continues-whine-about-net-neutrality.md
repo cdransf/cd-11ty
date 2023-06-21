@@ -1,5 +1,5 @@
 ---
-date: 2017-07-18
+date: '2017-07-18'
 draft: false
 title: Comcast continues to whine about net neutrality
 tags: ['politics', 'net neutrality']

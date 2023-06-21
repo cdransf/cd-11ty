@@ -1,5 +1,5 @@
 ---
-date: 2014-09-04
+date: '2014-09-04'
 draft: false
 title: Standard Markdown
 tags: ['markdown']

@@ -1,5 +1,5 @@
 ---
-date: 2014-01-06
+date: '2014-01-06'
 draft: false
 title: Changes coming to Droplr
 tags: ['iOS']

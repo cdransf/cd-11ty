@@ -1,5 +1,5 @@
 ---
-date: 2017-02-20
+date: '2017-02-20'
 draft: false
 title: Techdirt podcast on the new FCC
 tags: ['politics']

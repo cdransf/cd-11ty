@@ -1,5 +1,5 @@
 ---
-date: 2020-03-06
+date: '2020-03-06'
 draft: false
 title: DuckDuckGo is good enough for regular use
 tags: ['DuckDuckGo']

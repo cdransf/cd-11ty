@@ -1,5 +1,5 @@
 ---
-date: 2017-04-04
+date: '2017-04-04'
 draft: false
 title: Lawmakers want to require border agents to obtain a warrant for smartphone searches
 tags: ['politics', 'privacy']

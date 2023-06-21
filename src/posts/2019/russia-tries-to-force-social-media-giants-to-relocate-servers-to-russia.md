@@ -1,5 +1,5 @@
 ---
-date: 2019-01-21
+date: '2019-01-21'
 draft: false
 title: Russia tries to force social media giants to relocate servers to Russia
 tags: ['politics', 'security', 'social media']

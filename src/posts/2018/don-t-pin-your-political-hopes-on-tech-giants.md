@@ -1,5 +1,5 @@
 ---
-date: 2018-08-02
+date: '2018-08-02'
 draft: false
 title: Don't pin your political hopes on tech giants
 tags: ['politics']

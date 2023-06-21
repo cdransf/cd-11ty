@@ -1,5 +1,5 @@
 ---
-date: 2015-11-27
+date: '2015-11-27'
 draft: false
 title: A Cadillac for Your Thoughts (2015 in music)
 tags: ['music']

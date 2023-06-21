@@ -1,5 +1,5 @@
 ---
-date: 2017-05-23
+date: '2017-05-23'
 draft: false
 title: How to comment on the FCC's proposal to kill net neutrality
 tags: ['politics', 'net neutrality']

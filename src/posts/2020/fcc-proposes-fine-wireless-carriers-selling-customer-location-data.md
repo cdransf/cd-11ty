@@ -1,5 +1,5 @@
 ---
-date: 2020-02-28
+date: '2020-02-28'
 draft: false
 title: FCC Proposes to Fine Wireless Carriers $200M for Selling Customer Location Data
 tags: ['politics', 'privacy', 'security']

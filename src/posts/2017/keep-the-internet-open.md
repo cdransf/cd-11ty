@@ -1,5 +1,5 @@
 ---
-date: 2017-03-14
+date: '2017-03-14'
 draft: false
 title: Keep the Internet Open
 tags: ['politics', 'net neutrality']

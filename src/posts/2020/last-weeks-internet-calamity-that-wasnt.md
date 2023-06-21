@@ -1,5 +1,5 @@
 ---
-date: 2020-03-09
+date: '2020-03-09'
 draft: false
 title: Last Week's Internet Calamity That Wasn't
 category: links

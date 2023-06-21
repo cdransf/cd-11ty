@@ -1,5 +1,5 @@
 ---
-date: 2020-03-04
+date: '2020-03-04'
 draft: false
 title: 'The Graham-Blumenthal Bill: A New Path for DOJ to Finally Break Encryption'
 tags: ['politics', 'security']

@@ -1,5 +1,5 @@
 ---
-date: 2018-03-12
+date: '2018-03-12'
 draft: false
 title: FCC, ISPs grapple with net neutrality challenges
 tags: ['politics', 'net neutrality']

@@ -1,5 +1,5 @@
 ---
-date: 2017-10-10
+date: '2017-10-10'
 draft: false
 title: Responsible encryption
 tags: ['politics', 'security']

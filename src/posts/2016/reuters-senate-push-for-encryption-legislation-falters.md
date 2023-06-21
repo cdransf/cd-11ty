@@ -1,5 +1,5 @@
 ---
-date: 2016-05-30
+date: '2016-05-30'
 draft: false
 title: Senate push for encryption legislation falters
 tags: ['politics', 'security']

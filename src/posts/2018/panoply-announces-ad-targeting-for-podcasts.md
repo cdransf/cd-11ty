@@ -1,5 +1,5 @@
 ---
-date: 2018-08-02
+date: '2018-08-02'
 draft: false
 title: Panoply announces ad targeting for podcasts
 tags: ['privacy']

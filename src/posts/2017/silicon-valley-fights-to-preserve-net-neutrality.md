@@ -1,5 +1,5 @@
 ---
-date: 2017-04-12
+date: '2017-04-12'
 draft: false
 title: Silicon Valley fights to preserve net neutrality
 tags: ['politics', 'net neutrality']

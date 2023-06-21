@@ -1,5 +1,5 @@
 ---
-date: 2017-03-13
+date: '2017-03-13'
 draft: false
 title: CBO analysis confirms GOP health bill is little more than class warfare
 tags: ['politics']

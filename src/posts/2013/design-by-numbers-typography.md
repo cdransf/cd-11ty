@@ -1,5 +1,5 @@
 ---
-date: 2013-08-15
+date: '2013-08-15'
 draft: false
 title: Design by numbers - typography
 tags: ['design', 'typography']

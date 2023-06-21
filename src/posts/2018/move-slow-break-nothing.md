@@ -1,5 +1,5 @@
 ---
-date: 2018-01-31
+date: '2018-01-31'
 draft: false
 title: Move slow and break nothing
 tags: ['development']

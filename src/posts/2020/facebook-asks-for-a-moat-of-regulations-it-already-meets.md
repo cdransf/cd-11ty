@@ -1,5 +1,5 @@
 ---
-date: 2020-02-18
+date: '2020-02-18'
 draft: false
 title: Facebook asks for a moat of regulations it already meets
 tags: ['tech', 'privacy']

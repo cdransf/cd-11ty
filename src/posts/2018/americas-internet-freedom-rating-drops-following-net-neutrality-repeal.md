@@ -1,5 +1,5 @@
 ---
-date: 2018-11-05
+date: '2018-11-05'
 draft: false
 title: America's internet freedom rating drops following net neutrality repeal
 tags: ['politics', 'net neutrality']

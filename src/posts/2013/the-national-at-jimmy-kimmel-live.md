@@ -1,5 +1,5 @@
 ---
-date: 2013-08-14
+date: '2013-08-14'
 draft: false
 title: The National at Jimmy Kimmel Live!
 tags: ['music']

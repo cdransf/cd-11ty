@@ -1,5 +1,5 @@
 ---
-date: 2018-07-31
+date: '2018-07-31'
 draft: false
 title: The Bullshit Web
 tags: ['development']

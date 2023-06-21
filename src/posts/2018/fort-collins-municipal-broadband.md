@@ -1,5 +1,5 @@
 ---
-date: 2018-01-03
+date: '2018-01-03'
 draft: false
 title: Fort Collins votes in favor of municipal broadband
 tags: ['politics', 'net neutrality']

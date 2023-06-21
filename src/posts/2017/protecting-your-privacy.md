@@ -1,5 +1,5 @@
 ---
-date: 2017-04-23
+date: '2017-04-23'
 draft: false
 title: Protecting your privacy
 tags: ['politics', 'privacy']

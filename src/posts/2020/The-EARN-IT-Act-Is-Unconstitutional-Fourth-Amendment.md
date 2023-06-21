@@ -1,5 +1,5 @@
 ---
-date: 2020-03-10
+date: '2020-03-10'
 draft: false
 title: 'The EARN IT Act Is Unconstitutional: Fourth Amendment'
 category: links

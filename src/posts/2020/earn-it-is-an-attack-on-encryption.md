@@ -1,5 +1,5 @@
 ---
-date: 2020-03-06
+date: '2020-03-06'
 draft: false
 title: EARN IT is an attack on encryption
 tags: ['politics', 'privacy', 'encryption']

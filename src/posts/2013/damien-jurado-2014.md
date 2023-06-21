@@ -1,5 +1,5 @@
 ---
-date: 2013-08-27
+date: '2013-08-27'
 draft: false
 title: Damien Jurado - 2014
 tags: ['music']

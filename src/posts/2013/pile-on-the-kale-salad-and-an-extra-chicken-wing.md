@@ -1,5 +1,5 @@
 ---
-date: 2013-08-17
+date: '2013-08-17'
 draft: false
 title: Pile on the kale salad and an extra chicken wing
 tags: ['music']

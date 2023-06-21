@@ -1,5 +1,5 @@
 ---
-date: 2013-07-17
+date: '2013-07-17'
 draft: false
 title: Okkervil River - Open Mic Night
 tags: ['video', 'music']

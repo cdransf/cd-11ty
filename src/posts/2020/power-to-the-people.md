@@ -1,5 +1,5 @@
 ---
-date: 2020-02-27
+date: '2020-02-27'
 draft: false
 title: Power to the People
 tags: ['privacy']

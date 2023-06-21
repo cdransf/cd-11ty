@@ -1,5 +1,5 @@
 ---
-date: 2020-02-17
+date: '2020-02-17'
 draft: false
 title: EFF's Recommendations for Consumer Data Privacy Laws
 tags: ['politics', 'privacy']

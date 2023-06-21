@@ -1,5 +1,5 @@
 ---
-date: 2017-05-23
+date: '2017-05-23'
 draft: false
 title: GOP advances plan for ring-free voicemail spam
 tags: ['politics', 'privacy']

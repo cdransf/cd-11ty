@@ -1,5 +1,5 @@
 ---
-date: 2017-09-29
+date: '2017-09-29'
 draft: false
 title: ISPs look to the Supreme Court to kill net neutrality
 tags: ['politics', 'net neutrality']

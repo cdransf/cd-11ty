@@ -1,5 +1,5 @@
 ---
-date: 2018-10-09
+date: '2018-10-09'
 draft: false
 title: "Facebook isn't sorry — it only wants more data"
 tags: ['social media', 'privacy']

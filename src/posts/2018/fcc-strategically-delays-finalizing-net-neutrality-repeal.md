@@ -1,5 +1,5 @@
 ---
-date: 2018-04-24
+date: '2018-04-24'
 draft: false
 title: FCC strategically delays finalizing net neutrality repeal
 tags: ['politics', 'net neutrality']

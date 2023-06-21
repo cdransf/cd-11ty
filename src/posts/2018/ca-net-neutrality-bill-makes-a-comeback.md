@@ -1,5 +1,5 @@
 ---
-date: 2018-07-08
+date: '2018-07-08'
 draft: false
 title: CA net neutrality bill makes a comeback
 tags: ['politics', 'net neutrality']

@@ -1,5 +1,5 @@
 ---
-date: 2017-03-28
+date: '2017-03-28'
 draft: false
 title: Congress guts internet privacy protections
 tags: ['politics', 'net neutrality']

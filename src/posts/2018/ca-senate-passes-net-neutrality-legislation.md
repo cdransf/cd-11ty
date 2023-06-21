@@ -1,5 +1,5 @@
 ---
-date: 2018-01-30
+date: '2018-01-30'
 draft: false
 title: California state senate passes net neutrality legislation
 tags: ['politics', 'net neutrality']

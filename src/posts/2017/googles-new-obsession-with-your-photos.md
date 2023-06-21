@@ -1,5 +1,5 @@
 ---
-date: 2017-05-27
+date: '2017-05-27'
 draft: false
 title: Google's new obsession with your photos
 tags: ['Google', 'privacy']

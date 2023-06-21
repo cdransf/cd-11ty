@@ -1,5 +1,5 @@
 ---
-date: 2013-08-14
+date: '2013-08-14'
 draft: false
 title: Okkervil River - Lido Pier Suicide Car
 tags: ['music']

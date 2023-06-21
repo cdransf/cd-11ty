@@ -1,5 +1,5 @@
 ---
-date: 2018-07-25
+date: '2018-07-25'
 draft: false
 title: FBI once again compares creating encryption back doors to putting a man on the moon
 tags: ['politics', 'privacy']

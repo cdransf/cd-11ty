@@ -1,5 +1,5 @@
 ---
-date: 2018-05-27
+date: '2018-05-27'
 draft: false
 title: Vermont passes law regulating data brokers
 tags: ['politics', 'privacy']

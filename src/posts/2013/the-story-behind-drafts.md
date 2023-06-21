@@ -1,5 +1,5 @@
 ---
-date: 2013-09-04
+date: '2013-09-04'
 draft: false
 title: The story behind Drafts
 tags: ['Drafts', 'iOS']

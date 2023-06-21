@@ -1,5 +1,5 @@
 ---
-date: 2017-04-20
+date: '2017-04-20'
 draft: false
 title: DHS Boss Calls For More Fear, Less Encryption
 tags: ['politics', 'security', 'privacy']

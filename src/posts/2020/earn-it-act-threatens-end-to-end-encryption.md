@@ -1,5 +1,5 @@
 ---
-date: 2020-03-13
+date: '2020-03-13'
 draft: false
 title: EARN IT Act threatens end-to-end encryption
 tags: ['politics', 'privacy', 'security']

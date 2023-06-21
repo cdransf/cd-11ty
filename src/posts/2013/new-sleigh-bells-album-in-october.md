@@ -1,5 +1,5 @@
 ---
-date: 2013-09-03
+date: '2013-09-03'
 draft: false
 title: New Sleigh Bells album in October
 tags: ['music']

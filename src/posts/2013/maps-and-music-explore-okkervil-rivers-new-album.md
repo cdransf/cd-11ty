@@ -1,5 +1,5 @@
 ---
-date: 2013-07-15
+date: '2013-07-15'
 draft: false
 title: Maps And Music - Explore Okkervil River's New Album
 tags: ['video', 'music']

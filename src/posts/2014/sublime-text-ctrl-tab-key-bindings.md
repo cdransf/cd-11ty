@@ -1,5 +1,5 @@
 ---
-date: 2014-08-06
+date: '2014-08-06'
 draft: false
 title: Sublime Text 3 - ctrl + tab key bindings
 tags: ['Sublime Text']

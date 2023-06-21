@@ -1,5 +1,5 @@
 ---
-date: 2018-08-10
+date: '2018-08-10'
 draft: false
 title: CA net neutrality bill back on track
 tags: ['politics', 'net neutrality']

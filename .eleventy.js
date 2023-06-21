@@ -1,5 +1,5 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
-const heroIcons = require('eleventy-plugin-heroicons')
+const heroIcons = require('@cdransf/eleventy-plugin-heroicons')
 const pluginUnfurl = require('eleventy-plugin-unfurl')
 const pluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier')
 const schema = require('@quasibit/eleventy-plugin-schema')

@@ -1,5 +1,5 @@
 ---
-date: 2017-03-01
+date: '2017-03-01'
 draft: false
 title: FCC chair offers poor excuses as he seeks to strip consumer protections
 tags: ['politics', 'privacy']

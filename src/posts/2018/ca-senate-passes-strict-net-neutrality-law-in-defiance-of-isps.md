@@ -1,5 +1,5 @@
 ---
-date: 2018-05-31
+date: '2018-05-31'
 draft: false
 title: CA senate passes strict net neutrality law in defiance of ISPs
 tags: ['politics', 'net neutrality']

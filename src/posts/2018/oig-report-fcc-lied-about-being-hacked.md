@@ -1,5 +1,5 @@
 ---
-date: 2018-08-08
+date: '2018-08-08'
 draft: false
 title: 'OIG report: FCC lied about being hacked'
 tags: ['politics', 'net neutrality']

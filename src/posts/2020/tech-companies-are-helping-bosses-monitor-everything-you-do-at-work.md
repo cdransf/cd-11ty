@@ -1,5 +1,5 @@
 ---
-date: 2020-03-01
+date: '2020-03-01'
 draft: false
 title: Tech Companies Are Helping Bosses Monitor Everything You Do at Work
 category: links

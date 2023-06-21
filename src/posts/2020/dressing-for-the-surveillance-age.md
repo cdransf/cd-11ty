@@ -1,5 +1,5 @@
 ---
-date: 2020-03-10
+date: '2020-03-10'
 draft: false
 title: Dressing for the Surveillance Age
 tags: ['tech', 'privacy']

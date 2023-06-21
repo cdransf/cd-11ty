@@ -1,5 +1,5 @@
 ---
-date: 2020-03-06
+date: '2020-03-06'
 draft: false
 title: Ajit Pai follows Congress' instructions, requires new anti-robocall tech
 category: links

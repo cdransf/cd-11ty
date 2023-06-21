@@ -1,5 +1,5 @@
 ---
-date: 2018-06-23
+date: '2018-06-23'
 draft: false
 title: Silos and centralization on the internet
 tags: ['politics']

@@ -1,5 +1,5 @@
 ---
-date: 2016-12-11
+date: '2016-12-11'
 draft: false
 title: Throwing together a blog
 tags: ['development', 'Statamic']

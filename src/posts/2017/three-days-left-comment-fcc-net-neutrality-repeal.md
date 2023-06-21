@@ -1,5 +1,5 @@
 ---
-date: 2017-08-28
+date: '2017-08-28'
 draft: false
 title: Three days left to comment on the FCC plan to kill net neutrality
 tags: ['politics', 'net neutrality']

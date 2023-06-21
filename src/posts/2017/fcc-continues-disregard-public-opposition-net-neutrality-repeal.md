@@ -1,5 +1,5 @@
 ---
-date: 2017-08-31
+date: '2017-08-31'
 draft: false
 title: FCC continues to completely disregard public opposition to net neutrality repeal
 tags: ['politics', 'net neutrality']

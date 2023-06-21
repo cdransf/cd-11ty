@@ -6,6 +6,9 @@
   </h2>
   <div class="dark:text-white text-gray-800">
     <p>I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, music, writing, reading and tv and movies.</p>
-    <p class="mb-0">{{ status.emoji }} {{ status.content }}</p>
+    <p class="mb-0 flex flex-row items-center">
+      <span class="mr-1">{{ status.emoji }}</span>
+      <span>{{ status.content }}</span>
+    </p>
   </div>
 </div>

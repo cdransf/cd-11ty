@@ -1,5 +1,5 @@
 ---
-date: 2020-03-01
+date: '2020-03-01'
 draft: false
 title: Deploying a Jekyll site to Netlify with Docker and GitLab CI
 tags: ['development', 'Netlify', 'Jekyll', 'GitLab', 'Docker']

@@ -1,5 +1,5 @@
 ---
-date: 2015-11-12
+date: '2015-11-12'
 title: Scotch Box for local LAMP development
 draft: false
 tags: ['development', 'Vagrant']

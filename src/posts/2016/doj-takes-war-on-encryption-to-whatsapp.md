@@ -1,5 +1,5 @@
 ---
-date: 2016-03-13
+date: '2016-03-13'
 draft: false
 title: DOJ takes war on encryption to WhatsApp
 tags: ['politics', 'security']

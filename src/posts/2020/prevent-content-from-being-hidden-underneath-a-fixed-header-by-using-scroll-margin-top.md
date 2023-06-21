@@ -1,5 +1,5 @@
 ---
-date: 2020-03-01
+date: '2020-03-01'
 draft: false
 title: Prevent content from being hidden underneath a fixed header by using `scroll-margin-top`
 tags: ['development']

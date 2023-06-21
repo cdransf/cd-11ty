@@ -1,6 +1,6 @@
 ---
+date: '2023-02-20'
 title: 'Building a now page using Next.js and social APIs'
-date: 2023-02-20
 draft: false
 tags: ['Next.js', 'React', 'API']
 ---

@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: '2018-06-25'
 draft: false
 title: AT&T buying web-based ad targeting company
 tags: ['net neutrality', 'privacy']

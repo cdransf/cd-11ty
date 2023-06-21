@@ -1,5 +1,5 @@
 ---
-date: 2016-01-09
+date: '2016-01-09'
 draft: false
 title: Dutch government on encryption
 tags: ['politics', 'security']

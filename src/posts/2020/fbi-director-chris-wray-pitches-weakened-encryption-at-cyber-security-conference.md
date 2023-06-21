@@ -1,5 +1,5 @@
 ---
-date: 2020-03-12
+date: '2020-03-12'
 draft: false
 title: FBI Director Chris Wray Pitches Weakened Encryption At A Cyber Security Conference
 tags: ['politics', 'privacy', 'security']

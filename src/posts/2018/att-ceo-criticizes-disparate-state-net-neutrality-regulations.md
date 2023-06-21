@@ -1,5 +1,5 @@
 ---
-date: 2018-11-13
+date: '2018-11-13'
 draft: false
 title: AT&T CEO criticizes disparate state net neutrality regulations after helping to dismantle unified, national rules
 tags: ['politics', 'net neutrality']

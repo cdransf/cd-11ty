@@ -1,5 +1,5 @@
 ---
-date: 2017-08-08
+date: '2017-08-08'
 draft: false
 title: EFF argues border agents need warrants to search digital devices
 tags: ['politics', 'security']

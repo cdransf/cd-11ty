@@ -1,5 +1,5 @@
 ---
-date: 2016-12-30
+date: '2016-12-30'
 draft: false
 title: The year encryption won
 tags: ['security', 'privacy']

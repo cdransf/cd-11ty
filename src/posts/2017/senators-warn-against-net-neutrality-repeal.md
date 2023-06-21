@@ -1,5 +1,5 @@
 ---
-date: 2017-02-10
+date: '2017-02-10'
 draft: false
 title: Senators warn against net neutrality repeal
 tags: ['politics', 'net neutrality']

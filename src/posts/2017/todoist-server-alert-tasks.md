@@ -1,5 +1,5 @@
 ---
-date: 2017-09-23
+date: '2017-09-23'
 draft: false
 title: Using server alerts to generate Todoist tasks
 tags: ['development', 'Todoist']

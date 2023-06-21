@@ -243,6 +243,11 @@
     "@catppuccin/palette" "0.1.5"
     tailwindcss "^3.0.24"
 
+"@cdransf/eleventy-plugin-heroicons@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@cdransf/eleventy-plugin-heroicons/-/eleventy-plugin-heroicons-1.2.0.tgz#223888c8666816c1f51e103c08b15e9413c24ad9"
+  integrity sha512-Zdga6XCEg5yBzVIFQmqbeiVNj0+BbCHrjoELDvZEGM4hrTCH03njgDbSEz7BF9fQt4mOc6uqqhoO7MUlPE773A==
+
 "@commitlint/cli@^17.6.5":
   version "17.6.5"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-17.6.5.tgz#3a8abd6499f9d4aeafe3bf9201338ccb868a14b9"
@@ -1868,11 +1873,6 @@ electron-to-chromium@^1.4.431:
   version "1.4.433"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.433.tgz#305ef5f8ea5fe65d252aae4b0e1088f9e4842533"
   integrity sha512-MGO1k0w1RgrfdbLVwmXcDhHHuxCn2qRgR7dYsJvWFKDttvYPx6FNzCGG0c/fBBvzK2LDh3UV7Tt9awnHnvAAUQ==
-
-eleventy-plugin-heroicons@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/eleventy-plugin-heroicons/-/eleventy-plugin-heroicons-1.1.0.tgz#5799b37251269e9d3b46c27185f724d319f4b28b"
-  integrity sha512-i9pBWru64ixs8lafSPFLsiCdcpy/FvRb0G/sS5D+VuS+QKyJE5ifxsGtOi6AiAdTzHp1t6uXV4ZMb0k5ACrgng==
 
 eleventy-plugin-unfurl@^1.0.0:
   version "1.0.0"

@@ -1,5 +1,5 @@
 ---
-date: 2018-06-23
+date: '2018-06-23'
 draft: false
 title: Bill promises Californians more control over their data
 tags: ['politics', 'privacy']

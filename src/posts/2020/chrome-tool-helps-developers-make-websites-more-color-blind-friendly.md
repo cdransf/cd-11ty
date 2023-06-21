@@ -1,5 +1,5 @@
 ---
-date: 2020-03-11
+date: '2020-03-11'
 draft: false
 title: Chrome tool helps developers make websites more color blind friendly
 tags: ['development']

@@ -1,5 +1,5 @@
 ---
-date: 2014-02-25
+date: '2014-02-25'
 draft: false
 title: Dumb pipes
 tags: ['politics', 'net neutrality']

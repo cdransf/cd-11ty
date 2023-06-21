@@ -1,5 +1,5 @@
 ---
-date: 2018-06-29
+date: '2018-06-29'
 draft: false
 title: California approves new online privacy rules
 tags: ['politics', 'net neutrality']

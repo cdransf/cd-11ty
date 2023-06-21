@@ -1,5 +1,5 @@
 ---
-date: 2017-09-10
+date: '2017-09-10'
 draft: false
 title: RSS still beats social media for tracking news
 tags: ['RSS']

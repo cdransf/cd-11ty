@@ -1,5 +1,5 @@
 ---
-date: 2018-06-11
+date: '2018-06-11'
 draft: false
 title: Net neutrality is repealed as the real fight for it begins
 tags: ['politics', 'net neutrality']

@@ -1,5 +1,5 @@
 ---
-date: 2017-08-04
+date: '2017-08-04'
 draft: false
 title: FCC is ignoring public interest in net neutrality repeal
 tags: ['politics', 'net neutrality']

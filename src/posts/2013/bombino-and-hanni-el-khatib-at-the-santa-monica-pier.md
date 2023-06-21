@@ -1,5 +1,5 @@
 ---
-date: 2013-08-09
+date: '2013-08-09'
 draft: false
 title: Bombino and Hanni El Khatib at the Santa Monica Pier
 tags: ['music']

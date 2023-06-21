@@ -1,5 +1,5 @@
 ---
-date: 2017-07-25
+date: '2017-07-25'
 draft: false
 title: Verizon argues throttling isn't throttling
 tags: ['politics', 'net neutrality']

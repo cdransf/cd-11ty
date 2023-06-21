@@ -1,5 +1,5 @@
 ---
-date: 2017-04-03
+date: '2017-04-03'
 draft: false
 title: Internet privacy rules repealed
 tags: ['politics', 'net neutrality']

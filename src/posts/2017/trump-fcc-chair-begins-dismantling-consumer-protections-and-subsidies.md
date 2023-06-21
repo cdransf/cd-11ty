@@ -1,5 +1,5 @@
 ---
-date: 2017-02-04
+date: '2017-02-04'
 draft: false
 title: Trump FCC chair begins dismantling consumer protections and subsidies
 tags: ['politics', 'net neutrality']

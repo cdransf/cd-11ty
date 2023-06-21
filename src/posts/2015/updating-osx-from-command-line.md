@@ -1,5 +1,5 @@
 ---
-date: 2015-09-05
+date: '2015-09-05'
 draft: false
 title: Update OS X from the command line
 tags: ['macOS']

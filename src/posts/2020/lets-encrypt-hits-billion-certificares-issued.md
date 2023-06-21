@@ -1,5 +1,5 @@
 ---
-date: 2020-02-27
+date: '2020-02-27'
 draft: false
 title: Let's Encrypt hits 1 billion certificates issued
 tags: ['security', 'development']

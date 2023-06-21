@@ -1,5 +1,5 @@
 ---
-date: 2017-09-30
+date: '2017-09-30'
 draft: false
 title: A vote for Pai is a vote against consumers and for Big Cable
 tags: ['politics', 'net neutrality']

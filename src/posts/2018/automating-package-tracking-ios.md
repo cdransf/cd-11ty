@@ -1,5 +1,5 @@
 ---
-date: 2018-01-09
+date: '2018-01-09'
 draft: false
 title: Automating package tracking on iOS
 tags: ['automation', 'iOS']
@@ -11,10 +11,10 @@ In an effort to cut down on manually managing and tracking all of these, I've be
 
 In Gmail/Google apps, the rule syntax looks like the following:
 
-```
+```text
 subject:("SHIPPING EMAIL SUBJECT") OR subject:("SHIPPING EMAIL SUBJECT")
 ```
 
-Emails matching that rule are then sent to track@junecloud.com and, provided the sending address matches the email associated with your Junecloud account, your packages will be automatically added to the Deliveries app. Now all of my deliveries are automatically tracked where they normally would be, without adding to the clutter in my inbox or my email workload.
+Emails matching that rule are then sent to <track@junecloud.com> and, provided the sending address matches the email associated with your Junecloud account, your packages will be automatically added to the Deliveries app. Now all of my deliveries are automatically tracked where they normally would be, without adding to the clutter in my inbox or my email workload.
 
 [^1]: Deliveries is available on [iOS](https://itunes.apple.com/us/app/deliveries-a-package-tracker/id290986013) and [macOS](https://itunes.apple.com/us/app/deliveries-a-package-tracker/id924726344)

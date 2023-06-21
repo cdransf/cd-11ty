@@ -1,5 +1,5 @@
 ---
-date: 2017-02-26
+date: '2017-02-26'
 draft: false
 title: Internet Privacy Rules in Part Face a Halt at the FCC
 tags: ['politics', 'privacy']

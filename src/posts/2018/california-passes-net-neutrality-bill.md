@@ -1,5 +1,5 @@
 ---
-date: 2018-09-03
+date: '2018-09-03'
 draft: false
 title: California passes net neutrality bill
 tags: ['politics', 'net neutrality']

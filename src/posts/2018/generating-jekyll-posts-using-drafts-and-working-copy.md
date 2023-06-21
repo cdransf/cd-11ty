@@ -1,5 +1,5 @@
 ---
-date: 2018-04-22
+date: '2018-04-22'
 draft: false
 title: Generating Jekyll posts using Drafts and Working Copy
 tags: ['iOS', 'JavaScript', 'automation']

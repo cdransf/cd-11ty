@@ -1,5 +1,5 @@
 ---
-date: 2015-07-18
+date: '2015-07-18'
 draft: false
 title: Hypebot Hosts LA Music Tech Meetup July 23
 tags: ['meetups']

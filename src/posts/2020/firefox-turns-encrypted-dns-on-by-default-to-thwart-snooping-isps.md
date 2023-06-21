@@ -1,5 +1,5 @@
 ---
-date: 2020-02-25
+date: '2020-02-25'
 draft: false
 title: Firefox turns encrypted DNS on by default to thwart snooping ISPs
 tags: ['Firefox', 'privacy', 'security']

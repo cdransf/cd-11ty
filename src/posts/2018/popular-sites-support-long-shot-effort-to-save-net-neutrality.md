@@ -1,5 +1,5 @@
 ---
-date: 2018-05-08
+date: '2018-05-08'
 draft: false
 title: Popular sites support long-shot effort to save net neutrality
 tags: ['politics', 'net neutrality']

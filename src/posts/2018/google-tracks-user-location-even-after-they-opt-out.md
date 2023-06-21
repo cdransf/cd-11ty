@@ -1,5 +1,5 @@
 ---
-date: 2018-08-13
+date: '2018-08-13'
 draft: false
 title: Google tracks user location — even after they opt out
 tags: ['privacy']

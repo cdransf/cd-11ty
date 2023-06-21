@@ -1,5 +1,5 @@
 ---
-date: 2017-02-12
+date: '2017-02-12'
 draft: false
 title: The next big blue collar job is coding
 tags: ['development']

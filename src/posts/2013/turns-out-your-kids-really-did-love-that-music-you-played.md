@@ -1,5 +1,5 @@
 ---
-date: 2013-09-07
+date: '2013-09-07'
 draft: false
 title: Turns out your kids really did love that music you played
 tags: ['music']

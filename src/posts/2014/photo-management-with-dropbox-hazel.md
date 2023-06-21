@@ -1,5 +1,5 @@
 ---
-date: 2014-02-03
+date: '2014-02-03'
 draft: false
 title: Photo management with Dropbox and Hazel
 tags: ['automation', 'Dropbox', 'macOS']
