@@ -243,10 +243,10 @@
     "@catppuccin/palette" "0.1.5"
     tailwindcss "^3.0.24"
 
-"@cdransf/eleventy-plugin-heroicons@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@cdransf/eleventy-plugin-heroicons/-/eleventy-plugin-heroicons-1.2.0.tgz#223888c8666816c1f51e103c08b15e9413c24ad9"
-  integrity sha512-Zdga6XCEg5yBzVIFQmqbeiVNj0+BbCHrjoELDvZEGM4hrTCH03njgDbSEz7BF9fQt4mOc6uqqhoO7MUlPE773A==
+"@cdransf/eleventy-plugin-heroicons@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@cdransf/eleventy-plugin-heroicons/-/eleventy-plugin-heroicons-1.3.1.tgz#d3c908bbe813eee973fe0fec9e32f4a59d3412af"
+  integrity sha512-wwma/9s0Xto0mUqZq7uVCbhus7w/aXRSjDjMpS7CgMS0hpmGKf3b2iS8xCsxtMtOFBtMX8TjsTquLt0ivITyhA==
 
 "@commitlint/cli@^17.6.5":
   version "17.6.5"
