@@ -52,6 +52,9 @@ layout: main
           <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
           <div class="absolute left-1 bottom-2 drop-shadow-md">
             <div class="px-1 text-xs font-bold text-white">{{ artist.name }}</div>
+            <div class="px-1 text-xs text-white">
+              {{ artist.plays }} plays
+            </div>
           </div>
           {%- capture artistImg %}{{ artist.name | artist }}{% endcapture -%}
           {%- capture artistName %}{{ artist.name | escape }}{% endcapture -%}
@@ -61,24 +64,24 @@ layout: main
     {% endfor %}
   </div>
 {% endif %}
-{% if heavyRotation.size > 0 %}
+{% if recentTracks.size > 0 %}
   <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
     {% heroicon "solid" "music-note" "Albums" "height=28" %}
     <div class="ml-1">Albums</div>
   </h2>
   <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
-    {% for album in heavyRotation %}
-      <a href="https://rateyourmusic.com/search?searchtype=l&searchterm={{album.attributes.name | escape}}" title="{{album.attributes.name | escape}}">
+    {% for album in recentTracks.albums %}
+      <a href="https://rateyourmusic.com/search?searchtype=l&searchterm={{album.name | escape}}" title="{{album.name | escape}}">
         <div class="relative block">
           <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
           <div class="absolute left-1 bottom-2 drop-shadow-md">
-            <div class="px-1 text-xs font-bold text-white">{{ album.attributes.name }}</div>
+            <div class="px-1 text-xs font-bold text-white">{{ album.name }}</div>
             <div class="px-1 text-xs text-white">
-              {{ album.attributes.artistName }}
+              {{ album.artist }}
             </div>
           </div>
-          {%- capture albumName %}{{ album.attributes.name | escape }}{% endcapture -%}
-          {% image album.attributes.artwork.url, albumName, 'rounded-lg', '225px' %}
+          {%- capture albumName %}{{ album.name | escape }}{% endcapture -%}
+          {% image album.art, albumName, 'rounded-lg', '225px' %}
         </div>
       </a>
     {% endfor %}

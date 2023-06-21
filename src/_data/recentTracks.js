@@ -1,6 +1,6 @@
 const { AssetCache } = require('@11ty/eleventy-fetch')
 
-const sortTrim = (array, length = 5) =>
+const sortTrim = (array, length = 8) =>
   Object.values(array)
     .sort((a, b) => b.plays - a.plays)
     .splice(0, length)
@@ -10,9 +10,10 @@ module.exports = async function () {
   const APPLE_TOKEN = process.env.API_TOKEN_APPLE_MUSIC
   const asset = new AssetCache('recent_tracks_data')
   const PAGE_SIZE = 30
-  const PAGES = 4
+  const PAGES = 8
   const response = {
     artists: {},
+    albums: {},
     tracks: {},
   }
 
@@ -49,6 +50,18 @@ module.exports = async function () {
       response.artists[track.attributes.artistName].plays++
     }
 
+    // aggregate albums
+    if (!response.albums[track.attributes.albumName]) {
+      response.albums[track.attributes.albumName] = {
+        name: track.attributes.albumName,
+        artist: track.attributes.artistName,
+        art: track.attributes.artwork.url.replace('{w}', '300').replace('{h}', '300'),
+        plays: 1,
+      }
+    } else {
+      response.albums[track.attributes.albumName].plays++
+    }
+
     // aggregate tracks
     if (!response.tracks[track.attributes.name]) {
       response.tracks[track.attributes.name] = {
@@ -59,8 +72,9 @@ module.exports = async function () {
       response.tracks[track.attributes.name].plays++
     }
   })
-  response.artists = sortTrim(response.artists, 4)
-  response.tracks = sortTrim(response.tracks)
+  response.artists = sortTrim(response.artists)
+  response.albums = sortTrim(response.albums)
+  response.tracks = sortTrim(response.tracks, 5)
   await asset.save(response, 'json')
   return response
 }
