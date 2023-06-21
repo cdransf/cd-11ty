@@ -4341,5 +4341,16 @@
       "https://social.lol/users/cory/statuses/110579304171951272"
     ],
     "lastTootTimestamp": 1687306277105
+  },
+  "https://letterboxd.com/cdme/film/justice-league/": {
+    "id": "https://letterboxd.com/cdme/film/justice-league/",
+    "title": "🎥: Justice League, 2017 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/justice-league/",
+    "content_text": "🎥: Justice League, 2017 - ★★★ https://letterboxd.com/cdme/film/justice-league/",
+    "date_published": "2023-06-21T15:19:26-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110583047012640568"
+    ],
+    "lastTootTimestamp": 1687363388329
   }
 }
