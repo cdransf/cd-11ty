@@ -4297,5 +4297,49 @@
       "https://social.lol/users/cory/statuses/110573136792047860"
     ],
     "lastTootTimestamp": 1687212170432
+  },
+  "https://letterboxd.com/cdme/film/man-of-steel/": {
+    "id": "https://letterboxd.com/cdme/film/man-of-steel/",
+    "title": "🎥: Man of Steel, 2013 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/man-of-steel/",
+    "content_text": "🎥: Man of Steel, 2013 - ★★★ https://letterboxd.com/cdme/film/man-of-steel/",
+    "date_published": "2023-06-20T12:09:27-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110577855895963885"
+    ],
+    "lastTootTimestamp": 1687284178157
+  },
+  "https://www.theverge.com/23763482/municipal-broadband-biden-internet-funds-telecom-lobbying": {
+    "id": "https://www.theverge.com/23763482/municipal-broadband-biden-internet-funds-telecom-lobbying",
+    "title": "🔗: The government is helping Big Telecom squeeze out city-run broadband",
+    "url": "https://www.theverge.com/23763482/municipal-broadband-biden-internet-funds-telecom-lobbying",
+    "content_text": "🔗: The government is helping Big Telecom squeeze out city-run broadband https://www.theverge.com/23763482/municipal-broadband-biden-internet-funds-telecom-lobbying",
+    "date_published": "2023-06-20T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110578327972067074"
+    ],
+    "lastTootTimestamp": 1687291381562
+  },
+  "https://letterboxd.com/cdme/film/batman-v-superman-dawn-of-justice/": {
+    "id": "https://letterboxd.com/cdme/film/batman-v-superman-dawn-of-justice/",
+    "title": "🎥: Batman v Superman: Dawn of Justice, 2016 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/batman-v-superman-dawn-of-justice/",
+    "content_text": "🎥: Batman v Superman: Dawn of Justice, 2016 - ★★★ https://letterboxd.com/cdme/film/batman-v-superman-dawn-of-justice/",
+    "date_published": "2023-06-20T17:48:51-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110578798732185088"
+    ],
+    "lastTootTimestamp": 1687298564688
+  },
+  "https://wheresyoured.at/p/the-internet-is-already-broken": {
+    "id": "https://wheresyoured.at/p/the-internet-is-already-broken",
+    "title": "🔗: The Internet Is Already Broken",
+    "url": "https://wheresyoured.at/p/the-internet-is-already-broken",
+    "content_text": "🔗: The Internet Is Already Broken https://wheresyoured.at/p/the-internet-is-already-broken",
+    "date_published": "2023-06-20T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110579304171951272"
+    ],
+    "lastTootTimestamp": 1687306277105
   }
 }
