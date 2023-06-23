@@ -7,7 +7,19 @@ const sortTrim = (array, length = 8) =>
 
 module.exports = async function () {
   const APPLE_BEARER = process.env.API_BEARER_APPLE_MUSIC
-  const APPLE_TOKEN = process.env.API_TOKEN_APPLE_MUSIC
+  const APPLE_MUSIC_TOKEN = process.env.API_TOKEN_APPLE_MUSIC
+  const APPLE_TOKEN_RESPONSE = await fetch(process.env.APPLE_RENEW_TOKEN_URL, {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${APPLE_BEARER}`,
+      'X-Apple-Music-User-Token': APPLE_MUSIC_TOKEN,
+    },
+  })
+    .then((data) => data.json())
+    .catch()
+  const APPLE_TOKEN = APPLE_TOKEN_RESPONSE['music-token']
   const asset = new AssetCache('recent_tracks_data')
   const PAGE_SIZE = 30
   const PAGES = 10
