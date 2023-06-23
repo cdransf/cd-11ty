@@ -10,7 +10,7 @@ module.exports = async function () {
   const APPLE_TOKEN = process.env.API_TOKEN_APPLE_MUSIC
   const asset = new AssetCache('recent_tracks_data')
   const PAGE_SIZE = 30
-  const PAGES = 8
+  const PAGES = 10
   const response = {
     artists: {},
     albums: {},
