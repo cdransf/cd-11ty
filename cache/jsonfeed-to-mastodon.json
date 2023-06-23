@@ -4418,5 +4418,24 @@
       "https://social.lol/users/cory/statuses/110594371504094526"
     ],
     "lastTootTimestamp": 1687536186329
+  },
+  "https://letterboxd.com/cdme/film/zack-snyders-justice-league/": {
+    "id": "https://letterboxd.com/cdme/film/zack-snyders-justice-league/",
+    "title": "🎥: Zack Snyder&#039;s Justice League, 2021 - ★★★½",
+    "url": "https://letterboxd.com/cdme/film/zack-snyders-justice-league/",
+    "content_text": "🎥: Zack Snyder&#039;s Justice League, 2021 - ★★★½ https://letterboxd.com/cdme/film/zack-snyders-justice-league/",
+    "date_published": "2023-06-23T20:00:17-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110595787218115749"
+    ],
+    "lastTootTimestamp": 1687557788436
+  },
+  "https://ploum.net/2023-06-23-how-to-kill-decentralised-networks.html": {
+    "id": "https://ploum.net/2023-06-23-how-to-kill-decentralised-networks.html",
+    "title": "🔗: How to Kill a Decentralised Network (such as the Fediverse)",
+    "url": "https://ploum.net/2023-06-23-how-to-kill-decentralised-networks.html",
+    "content_text": "🔗: How to Kill a Decentralised Network (such as the Fediverse) https://ploum.net/2023-06-23-how-to-kill-decentralised-networks.html",
+    "date_published": "2023-06-23T00:00:00-08:00",
+    "toots": []
   }
 }
