@@ -4392,7 +4392,10 @@
     "url": "https://blog.cassidoo.co/post/open-standards-are-good/",
     "content_text": "🔗: Open standards, trust, and Google https://blog.cassidoo.co/post/open-standards-are-good/",
     "date_published": "2023-06-23T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110594844525598759"
+    ],
+    "lastTootTimestamp": 1687543404059
   },
   "https://thenewstack.io/too-much-javascript-why-the-frontend-needs-to-build-better/": {
     "id": "https://thenewstack.io/too-much-javascript-why-the-frontend-needs-to-build-better/",
