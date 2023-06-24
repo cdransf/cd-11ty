@@ -182,7 +182,7 @@ layout: main
           <div class="absolute left-1 bottom-2 drop-shadow-md">
             <div class="px-1 text-xs font-bold text-white">{{ episode.episode.title }}</div>
             <div class="px-1 text-xs text-white">
-              {{ episode.show.title }} • <strong>S</strong>{{ episode.episode.season }}<strong>E</strong>{{ episode.episode.number }}
+              {{ episode.show.title }} • <strong>S{{ episode.episode.season }}E{{ episode.episode.number }}</strong>
             </div>
           </div>
           {%- capture tvImg %}{{episode.show.title | tv}}{% endcapture -%}
