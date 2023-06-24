@@ -2,7 +2,7 @@
 date: '2023-06-08'
 title: 'From ICS to JSON: surfacing anticipated albums'
 draft: false
-tags: ['development', 'music', 'automation']
+tags: ['development', 'music', 'automation', 'API']
 image: https://cdn.coryd.dev/blog/album-releases.jpg
 ---
 
@@ -65,6 +65,6 @@ Rendering the output is as simple as:
 
 {% endraw %}
 Leaving us with:
-{% image 'https://cdn.coryd.dev/blog/album-releases.jpg', 'Albums I\'m looking forward to', 'w-full', '600px' %}
+{% image '<https://cdn.coryd.dev/blog/album-releases.jpg>', 'Albums I\'m looking forward to', 'w-full', '600px' %}
 
 [^1]: At this point, a dev playground.

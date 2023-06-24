@@ -2,7 +2,7 @@
 date: '2023-06-21'
 title: 'Displaying listening data from Apple Music using MusicKit.js'
 draft: false
-tags: ['development', 'music', 'Eleventy', 'Apple', 'JavaScript']
+tags: ['development', 'music', 'Eleventy', 'Apple', 'JavaScript', 'API']
 image: https://cdn.coryd.dev/blog/albums-artists.jpg
 ---
 
@@ -149,6 +149,7 @@ artists: [
 
 The templating for my site is all written in [liquid.js](https://liquidjs.com) and looks like the following:
 {% raw %}
+
 ```liquid
 {% if recentTracks.size > 0 %}
   <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
@@ -198,11 +199,12 @@ The templating for my site is all written in [liquid.js](https://liquidjs.com) a
   </div>
 {% endif %}
 ```
+
 {% endraw %}
 
 We have an object containing arrays of objects — we iterate through each object for the appropriate section (tracks aren't displayed at the moment) and build the resulting display[^3]. This isn't perfect by any means, but, it does provide a nice little visualization of what I'm listening to and `240` tracks feels adequate as a rolling window into that activity.
 
-{% image 'https://cdn.coryd.dev/blog/albums-artists.jpg', 'Albums and artists', 'w-full', '600px' %}
+{% image '<https://cdn.coryd.dev/blog/albums-artists.jpg>', 'Albums and artists', 'w-full', '600px' %}
 
 [^1]: There are some good options to do this, but there aren't a _ton_ and the age of some of the apps is concerning. [Marvis](https://appaddy.wixsite.com/marvis) is far and away your best choice here.
 [^2]: Making sure that you update the values you obtained, including the path to your downloaded `.p8` file.

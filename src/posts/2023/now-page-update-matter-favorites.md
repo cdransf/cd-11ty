@@ -2,7 +2,7 @@
 date: '2023-05-05'
 title: 'Now page update: favorite articles from Matter'
 draft: false
-tags: ['Matter', 'development', 'Eleventy']
+tags: ['Matter', 'development', 'Eleventy', 'API']
 ---
 
 I dropped in a quick update to [my now page](/now) to display the 5 most recent articles from my favorites feed in [Matter](https://getmatter.com/).<!-- excerpt -->

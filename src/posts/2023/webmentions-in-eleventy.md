@@ -2,7 +2,7 @@
 date: '2023-03-17'
 title: 'Webmentions in Eleventy'
 draft: false
-tags: ['webmentions', 'Eleventy']
+tags: ['webmentions', 'Eleventy', 'API']
 ---
 
 In the interest of continuing to repeat myself I'm writing, once again, about adding webmentions to a blog.<!-- excerpt -->[^1] To quote myself[^2]:
