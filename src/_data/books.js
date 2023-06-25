@@ -9,7 +9,10 @@ module.exports = async function () {
   const res = await extract(url, {
     getExtraEntryFields: (feedEntry) => {
       return {
-        image: feedEntry['oku:cover'] || 'https://cdn.coryd.dev/books/missing-book.jpg',
+        image:
+          feedEntry['oku:cover'] ||
+          `https://cdn.coryd.dev/books/${feedEntry.title.replace(/\s+/g, '-').toLowerCase()}.jpg` ||
+          'https://cdn.coryd.dev/books/missing-book.jpg',
       }
     },
   })
