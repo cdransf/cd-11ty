@@ -4506,5 +4506,16 @@
       "https://social.lol/users/cory/statuses/110606168184301905"
     ],
     "lastTootTimestamp": 1687716189376
+  },
+  "https://www.bitecode.dev/p/hype-cycles": {
+    "id": "https://www.bitecode.dev/p/hype-cycles",
+    "title": "🔗: XML is the future",
+    "url": "https://www.bitecode.dev/p/hype-cycles",
+    "content_text": "🔗: XML is the future https://www.bitecode.dev/p/hype-cycles",
+    "date_published": "2023-06-25T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110607110599594422"
+    ],
+    "lastTootTimestamp": 1687730569488
   }
 }
