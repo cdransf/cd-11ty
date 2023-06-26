@@ -4517,5 +4517,16 @@
       "https://social.lol/users/cory/statuses/110607110599594422"
     ],
     "lastTootTimestamp": 1687730569488
+  },
+  "https://nymag.com/intelligencer/article/ai-artificial-intelligence-humans-technology-business-factory.html": {
+    "id": "https://nymag.com/intelligencer/article/ai-artificial-intelligence-humans-technology-business-factory.html",
+    "title": "🔗: Inside the AI Factory",
+    "url": "https://nymag.com/intelligencer/article/ai-artificial-intelligence-humans-technology-business-factory.html",
+    "content_text": "🔗: Inside the AI Factory https://nymag.com/intelligencer/article/ai-artificial-intelligence-humans-technology-business-factory.html",
+    "date_published": "2023-06-26T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110609002277011409"
+    ],
+    "lastTootTimestamp": 1687759434205
   }
 }
