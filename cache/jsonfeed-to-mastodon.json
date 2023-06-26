@@ -4528,5 +4528,24 @@
       "https://social.lol/users/cory/statuses/110609002277011409"
     ],
     "lastTootTimestamp": 1687759434205
+  },
+  "https://letterboxd.com/cdme/film/never-let-me-go-2010/": {
+    "id": "https://letterboxd.com/cdme/film/never-let-me-go-2010/",
+    "title": "🎥: Never Let Me Go, 2010 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/never-let-me-go-2010/",
+    "content_text": "🎥: Never Let Me Go, 2010 - ★★★ https://letterboxd.com/cdme/film/never-let-me-go-2010/",
+    "date_published": "2023-06-26T13:45:49-08:00",
+    "toots": []
+  },
+  "https://letterboxd.com/cdme/film/dredd/": {
+    "id": "https://letterboxd.com/cdme/film/dredd/",
+    "title": "🎥: Dredd, 2012 - ★★★½",
+    "url": "https://letterboxd.com/cdme/film/dredd/",
+    "content_text": "🎥: Dredd, 2012 - ★★★½ https://letterboxd.com/cdme/film/dredd/",
+    "date_published": "2023-06-26T13:08:46-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110611358657485068"
+    ],
+    "lastTootTimestamp": 1687795389721
   }
 }
