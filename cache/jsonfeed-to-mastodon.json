@@ -4506,5 +4506,49 @@
       "https://social.lol/users/cory/statuses/110606168184301905"
     ],
     "lastTootTimestamp": 1687716189376
+  },
+  "https://www.bitecode.dev/p/hype-cycles": {
+    "id": "https://www.bitecode.dev/p/hype-cycles",
+    "title": "🔗: XML is the future",
+    "url": "https://www.bitecode.dev/p/hype-cycles",
+    "content_text": "🔗: XML is the future https://www.bitecode.dev/p/hype-cycles",
+    "date_published": "2023-06-25T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110607110599594422"
+    ],
+    "lastTootTimestamp": 1687730569488
+  },
+  "https://nymag.com/intelligencer/article/ai-artificial-intelligence-humans-technology-business-factory.html": {
+    "id": "https://nymag.com/intelligencer/article/ai-artificial-intelligence-humans-technology-business-factory.html",
+    "title": "🔗: Inside the AI Factory",
+    "url": "https://nymag.com/intelligencer/article/ai-artificial-intelligence-humans-technology-business-factory.html",
+    "content_text": "🔗: Inside the AI Factory https://nymag.com/intelligencer/article/ai-artificial-intelligence-humans-technology-business-factory.html",
+    "date_published": "2023-06-26T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110609002277011409"
+    ],
+    "lastTootTimestamp": 1687759434205
+  },
+  "https://letterboxd.com/cdme/film/never-let-me-go-2010/": {
+    "id": "https://letterboxd.com/cdme/film/never-let-me-go-2010/",
+    "title": "🎥: Never Let Me Go, 2010 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/never-let-me-go-2010/",
+    "content_text": "🎥: Never Let Me Go, 2010 - ★★★ https://letterboxd.com/cdme/film/never-let-me-go-2010/",
+    "date_published": "2023-06-26T13:45:49-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110611830793747964"
+    ],
+    "lastTootTimestamp": 1687802593940
+  },
+  "https://letterboxd.com/cdme/film/dredd/": {
+    "id": "https://letterboxd.com/cdme/film/dredd/",
+    "title": "🎥: Dredd, 2012 - ★★★½",
+    "url": "https://letterboxd.com/cdme/film/dredd/",
+    "content_text": "🎥: Dredd, 2012 - ★★★½ https://letterboxd.com/cdme/film/dredd/",
+    "date_published": "2023-06-26T13:08:46-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110611358657485068"
+    ],
+    "lastTootTimestamp": 1687795389721
   }
 }
