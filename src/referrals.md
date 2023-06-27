@@ -26,8 +26,9 @@ meta:
 
 Referral links for services I use. I save some money, and you do as well if you choose to use them.
 
-- <a href="https://ref.fm/u28939392" onclick="umami.track('fastmail-referral', { name: 'Fastmail referral', url: '{{ page.url }}' });">Fastmail</a>
-- <a href="https://nextdns.io/?from=m56mt3z6" onclick="umami.track('nextdns-referral', { name: 'NextDNS referral', url: '{{ page.url }}' });">NextDNS</a>
-- <a href="https://dnsimple.com/r/3a7cbb9e15df8f" onclick="umami.track('dnsimple-referral', { name: 'DNSimple referral', url: '{{ page.url }}' });">DNSimple</a>
-- <a href="https://bunny.net?ref=revw3mehej" onclick="umami.track('bunny-referral', { name: 'Bunny.net referral', url: '{{ page.url }}' });">Bunny.net</a>
-- <a href="https://m.do.co/c/3635bf99aee2" onclick="umami.track('digitalocean-referral', { name: 'DigitalOcean referral', url: '{{ page.url }}' });">DigitalOcean</a>
+- <a href="https://ref.fm/u28939392" onclick="fathom.trackGoal('UD5XFEEZ', 0)">Fastmail</a>
+- <a href="https://nextdns.io/?from=m56mt3z6" onclick="fathom.trackGoal('S87ZPMLV', 0)">NextDNS</a>
+- <a href="https://dnsimple.com/r/3a7cbb9e15df8f" onclick="fathom.trackGoal('BWXKK16K', 0)">DNSimple</a>
+- <a href="https://bunny.net?ref=revw3mehej" onclick="fathom.trackGoal('OYACX1AU', 0)">Bunny.net</a>
+- <a href="https://usefathom.com/ref/LEHPBZ" onclick="fathom.trackGoal('JCEU6TF0', 0)">Fathom Analytics</a>
+- <a href="https://m.do.co/c/3635bf99aee2" onclick="fathom.trackGoal('R54WK3UM', 0)">DigitalOcean</a>
