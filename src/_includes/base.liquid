@@ -1,5 +1,6 @@
 {%- capture fullUrl %}{{ site.url }}{{ page.url }}{% endcapture -%}
 <!doctype html>
+<!--suppress JSUnresolvedLibraryURL -->
 <html lang="en">
   <head>
     <title>
@@ -63,7 +64,7 @@
     <script type="application/ld+json">
       {% jsonLd meta, type, tags %}
     </script>
-    <script src="https://cdn.usefathom.com/script.js" data-site="ZDSEBUEA" defer></script>
+    <script defer data-domain="coryd.dev" src="https://coryd.dev/js/script.js"></script>
   </head>
   <body class="dark:text-white bg-white dark:bg-gray-900 font-sans text-gray-800">
     {{ content }}
