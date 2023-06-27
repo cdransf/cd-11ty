@@ -11,7 +11,10 @@ module.exports = async function () {
       return {
         image:
           feedEntry['oku:cover'] ||
-          `https://cdn.coryd.dev/books/${feedEntry.title.replace(/\s+/g, '-').toLowerCase()}.jpg` ||
+          `https://cdn.coryd.dev/books/${feedEntry.title
+            .replace(/\s+/g, '-')
+            .replace(':', '')
+            .toLowerCase()}.jpg` ||
           'https://cdn.coryd.dev/books/missing-book.jpg',
       }
     },
