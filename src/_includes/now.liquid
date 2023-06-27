@@ -60,7 +60,7 @@ layout: main
         <div class="relative block">
           <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
           <div class="absolute left-1 bottom-2 drop-shadow-md">
-            <div class="px-1 text-xs font-bold text-white">{{ artist.name }}</div>
+            <div class="px-1 text-xs font-bold text-white line-clamp-2">{{ artist.name }}</div>
             <div class="px-1 text-xs text-white">
               {{ artist.plays }} plays
             </div>
@@ -84,8 +84,8 @@ layout: main
         <div class="relative block">
           <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
           <div class="absolute left-1 bottom-2 drop-shadow-md">
-            <div class="px-1 text-xs font-bold text-white">{{ album.name }}</div>
-            <div class="px-1 text-xs text-white">
+            <div class="px-1 text-xs font-bold text-white line-clamp-2">{{ album.name }}</div>
+            <div class="px-1 text-xs text-white line-clamp-2">
               {{ album.artist }}
             </div>
           </div>
@@ -123,7 +123,7 @@ layout: main
         <div class="relative block" style="max-width:226px">
           <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
           <div class="absolute left-1 bottom-2 drop-shadow-md">
-            <div class="px-1 text-xs font-bold text-white">{{ book.title }}</div>
+            <div class="px-1 text-xs font-bold text-white line-clamp-3">{{ book.title }}</div>
           </div>
           {%- capture bookImg %}{{book.image | cdn: site.oku-host, site.cdn-books}}{% endcapture -%}
           {%- capture bookName %}{{book.title | escape}}{% endcapture -%}
