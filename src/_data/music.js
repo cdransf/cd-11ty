@@ -1,5 +1,20 @@
 const { AssetCache } = require('@11ty/eleventy-fetch')
 
+const artistAliases = [
+  {
+    artist: 'Osees',
+    aliases: ['OCS', 'The Ohsees', 'Thee Oh Sees', "Thee Oh See's"],
+  },
+]
+
+const aliasArtists = (array) => {
+  array.forEach((a) => {
+    const aliased = artistAliases.find((alias) => alias.aliases.includes(a.artist))
+    if (aliased) a.artist = aliased.artist
+  })
+  return array
+}
+
 const sortTrim = (array, length = 8) =>
   Object.values(array)
     .sort((a, b) => b.plays - a.plays)
@@ -55,7 +70,7 @@ module.exports = async function () {
     // aggregate artists
     if (!response.artists[track.attributes.artistName]) {
       response.artists[track.attributes.artistName] = {
-        name: track.attributes.artistName,
+        artist: track.attributes.artistName,
         plays: 1,
       }
     } else {
@@ -78,15 +93,16 @@ module.exports = async function () {
     if (!response.tracks[track.attributes.name]) {
       response.tracks[track.attributes.name] = {
         name: track.attributes.name,
+        artist: track.attributes.artistName,
         plays: 1,
       }
     } else {
       response.tracks[track.attributes.name].plays++
     }
   })
-  response.artists = sortTrim(response.artists)
-  response.albums = sortTrim(response.albums)
-  response.tracks = sortTrim(response.tracks, 5)
+  response.artists = aliasArtists(sortTrim(response.artists))
+  response.albums = aliasArtists(sortTrim(response.albums))
+  response.tracks = aliasArtists(sortTrim(response.tracks, 5))
   await asset.save(response, 'json')
   return response
 }
