@@ -15,10 +15,7 @@ const aliasArtists = (array) => {
   return array
 }
 
-const sortTrim = (array, length = 8) =>
-  Object.values(array)
-    .sort((a, b) => b.plays - a.plays)
-    .splice(0, length)
+const sort = (array) => Object.values(array).sort((a, b) => b.plays - a.plays)
 
 module.exports = async function () {
   const APPLE_BEARER = process.env.API_BEARER_APPLE_MUSIC
@@ -68,41 +65,41 @@ module.exports = async function () {
 
   res.forEach((track) => {
     // aggregate artists
-    if (!response.artists[track.attributes.artistName]) {
-      response.artists[track.attributes.artistName] = {
-        artist: track.attributes.artistName,
+    if (!response.artists[track.attributes['artistName']]) {
+      response.artists[track.attributes['artistName']] = {
+        artist: track.attributes['artistName'],
         plays: 1,
       }
     } else {
-      response.artists[track.attributes.artistName].plays++
+      response.artists[track.attributes['artistName']].plays++
     }
 
     // aggregate albums
-    if (!response.albums[track.attributes.albumName]) {
-      response.albums[track.attributes.albumName] = {
-        name: track.attributes.albumName,
-        artist: track.attributes.artistName,
+    if (!response.albums[track.attributes['albumName']]) {
+      response.albums[track.attributes['albumName']] = {
+        name: track.attributes['albumName'],
+        artist: track.attributes['artistName'],
         art: track.attributes.artwork.url.replace('{w}', '300').replace('{h}', '300'),
         plays: 1,
       }
     } else {
-      response.albums[track.attributes.albumName].plays++
+      response.albums[track.attributes['albumName']].plays++
     }
 
     // aggregate tracks
     if (!response.tracks[track.attributes.name]) {
       response.tracks[track.attributes.name] = {
         name: track.attributes.name,
-        artist: track.attributes.artistName,
+        artist: track.attributes['artistName'],
         plays: 1,
       }
     } else {
       response.tracks[track.attributes.name].plays++
     }
   })
-  response.artists = aliasArtists(sortTrim(response.artists))
-  response.albums = aliasArtists(sortTrim(response.albums))
-  response.tracks = aliasArtists(sortTrim(response.tracks, 5))
+  response.artists = aliasArtists(sort(response.artists)).splice(0, 8)
+  response.albums = aliasArtists(sort(response.albums)).splice(0, 8)
+  response.tracks = aliasArtists(sort(response.tracks)).splice(0, 5)
   await asset.save(response, 'json')
   return response
 }
