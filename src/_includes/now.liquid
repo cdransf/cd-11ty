@@ -120,7 +120,7 @@ layout: main
   <div class="grid grid-cols-3 gap-2 md:grid-cols-6 not-prose">
     {% for book in books %}
       <a href="{{book.url}}" title="{{book.title | escape}}">
-        <div class="relative block" style="max-height:226px">
+        <div class="relative block" style="max-width:226px">
           <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
           <div class="absolute left-1 bottom-2 drop-shadow-md">
             <div class="px-1 text-xs font-bold text-white line-clamp-3">{{ book.title }}</div>
