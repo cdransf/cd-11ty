@@ -1,29 +1,29 @@
-const { extract } = require('@extractus/feed-extractor')
-const { AssetCache } = require('@11ty/eleventy-fetch')
+const EleventyFetch = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
-  const url = 'https://oku.club/rss/collection/POaRa'
-  // noinspection JSCheckFunctionSignatures
-  const asset = new AssetCache('books_data')
-  if (asset.isCacheValid('1h')) return await asset.getCachedValue()
-  const res = await extract(url, {
-    getExtraEntryFields: (feedEntry) => {
-      return {
-        image:
-          feedEntry['oku:cover'] ||
-          `https://cdn.coryd.dev/books/${feedEntry.title
-            .replace(/\s+/g, '-')
-            .replace(':', '')
-            .toLowerCase()}.jpg` ||
-          'https://cdn.coryd.dev/books/missing-book.jpg',
-      }
-    },
-  })
-    .catch((error) => {
-      console.log(error.message)
+  const OKU_URL = 'https://oku.club/api/collections/user/cory/reading'
+  const OPEN_LIBRARY_URL = 'https://openlibrary.org/search.json?title='
+  const res = EleventyFetch(OKU_URL, {
+    duration: '1h',
+    type: 'json',
+  }).catch()
+  const data = await res
+  const books = []
+  for (const book of data['books']) {
+    const res = await fetch(`${OPEN_LIBRARY_URL}${book.title.replace(/\s+/g, '+')}`)
+      .then((res) => res.json())
+      .catch()
+    const data = await res
+    const coverId = data['docs'].find((b) => {
+      return b['author_name'][0] === book['authors'][0].name
+    })?.['cover_i']
+    books.push({
+      title: book.title,
+      url: `https://oku.club/book/${book.slug}`,
+      cover: coverId
+        ? `https://books.coryd.dev/b/id/${coverId}-L.jpg`
+        : `https://cdn.coryd.dev/books/${book.title.toLowerCase().replace(/\s+/g, '-')}.jpg`,
     })
-    .catch()
-  const data = res.entries
-  await asset.save(data, 'json')
-  return data
+  }
+  return books
 }
