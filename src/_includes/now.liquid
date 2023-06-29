@@ -67,7 +67,7 @@ layout: main
           </div>
           {%- capture artistImg %}{{ artist.artist | artist }}{% endcapture -%}
           {%- capture artistName %}{{ artist.artist | escape }}{% endcapture -%}
-          {% image artistImg, artistName, 'rounded-lg', '225px', 'eager' %}
+          {% image artistImg, artistName, 'rounded-lg w-full', '225px', 'eager' %}
         </div>
       </a>
     {% endfor %}
@@ -90,7 +90,7 @@ layout: main
             </div>
           </div>
           {%- capture albumName %}{{ album.name | escape }}{% endcapture -%}
-          {% image album.art, albumName, 'rounded-lg', '225px' %}
+          {% image album.art, albumName, 'rounded-lg w-full', '225px' %}
         </div>
       </a>
     {% endfor %}
