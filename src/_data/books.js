@@ -19,6 +19,7 @@ module.exports = async function () {
     })?.['cover_i']
     books.push({
       title: book.title,
+      author: book['authors'][0].name,
       url: `https://oku.club/book/${book.slug}`,
       cover: coverId
         ? `https://books.coryd.dev/b/id/${coverId}-L.jpg`
