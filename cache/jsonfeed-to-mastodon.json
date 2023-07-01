@@ -4594,5 +4594,16 @@
       "https://social.lol/users/cory/statuses/110625514650291324"
     ],
     "lastTootTimestamp": 1688011393034
+  },
+  "https://www.theverge.com/23778253/google-reader-death-2013-rss-social": {
+    "id": "https://www.theverge.com/23778253/google-reader-death-2013-rss-social",
+    "title": "🔗: Who killed Google Reader?",
+    "url": "https://www.theverge.com/23778253/google-reader-death-2013-rss-social",
+    "content_text": "🔗: Who killed Google Reader? https://www.theverge.com/23778253/google-reader-death-2013-rss-social",
+    "date_published": "2023-06-30T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110635939200207628"
+    ],
+    "lastTootTimestamp": 1688170459053
   }
 }
