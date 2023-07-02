@@ -15,7 +15,7 @@ module.exports = async function () {
       .catch()
     const data = await res
     const coverId = data['docs'].find((b) => {
-      return b['author_name'][0] === book['authors'][0].name
+      return b['title'] === book['title']
     })?.['cover_i']
     books.push({
       title: book.title,
