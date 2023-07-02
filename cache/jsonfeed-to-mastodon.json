@@ -4605,5 +4605,16 @@
       "https://social.lol/users/cory/statuses/110635939200207628"
     ],
     "lastTootTimestamp": 1688170459053
+  },
+  "https://letterboxd.com/cdme/film/platoon/": {
+    "id": "https://letterboxd.com/cdme/film/platoon/",
+    "title": "🎥: Platoon, 1986 - ★★★★",
+    "url": "https://letterboxd.com/cdme/film/platoon/",
+    "content_text": "🎥: Platoon, 1986 - ★★★★ https://letterboxd.com/cdme/film/platoon/",
+    "date_published": "2023-07-01T02:48:59-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110636839106186364"
+    ],
+    "lastTootTimestamp": 1688184190532
   }
 }
