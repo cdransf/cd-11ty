@@ -240,10 +240,10 @@
   resolved "https://registry.yarnpkg.com/@catppuccin/tailwindcss/-/tailwindcss-0.1.6.tgz#d97c491e1523ead83009e32d0a34c364c2a0ca5b"
   integrity sha512-V+Y0AwZ5SSyvOVAcDl7Ng30xy+m82OKnEJ+9+kcZZ7lRyXuZrAb2GScdq9XR3v+ggt8qiZ/G4TvaC9cJ88AAXA==
 
-"@cdransf/eleventy-plugin-heroicons@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@cdransf/eleventy-plugin-heroicons/-/eleventy-plugin-heroicons-1.3.1.tgz#d3c908bbe813eee973fe0fec9e32f4a59d3412af"
-  integrity sha512-wwma/9s0Xto0mUqZq7uVCbhus7w/aXRSjDjMpS7CgMS0hpmGKf3b2iS8xCsxtMtOFBtMX8TjsTquLt0ivITyhA==
+"@cdransf/eleventy-plugin-heroicons@^1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@cdransf/eleventy-plugin-heroicons/-/eleventy-plugin-heroicons-1.3.2.tgz#8577330fa34aa6756898898014914b0880582e9f"
+  integrity sha512-sPggfG+nQvVY1hlrTZDbUK5/v7peMR3k6rssuVKm1E0sCL/x+I/lbuvpDp0MXE22chIn5M0Y/GWbSx8zo0sYmw==
 
 "@commitlint/cli@^17.6.6":
   version "17.6.6"
