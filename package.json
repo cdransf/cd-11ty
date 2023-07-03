@@ -41,7 +41,7 @@
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.1",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
-    "@typescript-eslint/parser": "^5.60.1",
+    "@typescript-eslint/parser": "^5.61.0",
     "autoprefixer": "^10.4.2",
     "clean-css": "^5.3.2",
     "dotenv-flow": "^3.2.0",
