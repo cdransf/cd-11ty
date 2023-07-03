@@ -53,14 +53,6 @@
       href="/follow.xml"
       title="Cory Dransfeldt's activity feed"
       type="application/rss+xml">
-    <script>
-      const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
-      if (isDarkMode()) {
-        document.documentElement.classList.add('dark')
-      } else {
-        document.documentElement.classList.remove('dark')
-      }
-    </script>
     <script type="application/ld+json">
       {% jsonLd meta, type, tags %}
     </script>
@@ -69,15 +61,6 @@
   <body class="dark:text-white bg-white dark:bg-gray-900 font-sans text-gray-800">
     {{ content }}
     <script>
-      document.getElementById("toggleDarkMode").addEventListener("click", function() {
-        if (isDarkMode()) {
-          localStorage.theme = 'light'
-          document.documentElement.classList.remove('dark')
-        } else {
-          localStorage.theme = 'dark'
-          document.documentElement.classList.add('dark')
-        }
-      });
       (function() {
         const pagination = document.getElementById('pagination');
         if (pagination) {
