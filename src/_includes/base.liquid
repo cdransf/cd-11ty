@@ -60,22 +60,5 @@
   </head>
   <body class="dark:text-white bg-white dark:bg-gray-900 font-sans text-gray-800">
     {{ content }}
-    <script>
-      (function() {
-        const pagination = document.getElementById('pagination');
-        if (pagination) {
-          pagination.addEventListener('change', (event) => {
-            const page = parseInt(event.target.value)
-            if (page === 1) {
-              window.location.href = '/'
-            } else {
-              window.location.href = `/${
-                event.target.value - 1
-              }/`
-            }
-          })
-        }
-      })()
-    </script>
   </body>
 </html>

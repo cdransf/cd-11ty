@@ -1,4 +1,3 @@
-<!--suppress HtmlFormInputWithoutLabel -->
 <nav class="flex justify-between mt-8 items-center">
   {% if pagination.href.previous %}
     <a href="{{ pagination.href.previous }}">
@@ -14,21 +13,9 @@
       {% heroicon "outline" "arrow-left" "Prevous" "width=20 height=20" %}
     </button>
   {% endif %}
-
-  <div class="flex flex-row items-center">
-    <select
-      id="pagination"
-      class="block cursor-pointer w-12 h-12 rounded-full text-white dark:text-gray-900 dark:bg-purple-400 bg-purple-600 hover:bg-purple-500 dark:hover:bg-purple-500 mr-1 focus-visible:outline-none focus-visible:bg-purple-400 appearance-none text-center"
-      style="text-align-last:center">
-      {% for pageEntry in pagination.pages %}
-        <option {% if page.url == pagination.hrefs[forloop.index0] %}selected{% endif %} value="{{ forloop.index }}">{{ forloop.index }}</option>
-      {% endfor %}
-    </select>
-    <span>
-      of {{ pagination.links.size }}</span>
+  <div class="text-center">
+    {{ pagination.pageNumber | plus: 1 }} of {{ pagination.links.size }}
   </div>
-
-
   {% if pagination.href.next %}
     <a href="{{ pagination.href.next }}">
       <button class="py-2 pl-4 dark:text-purple-400 text-purple-600 hover:text-purple-500 dark:hover:text-purple-500" aria-label="Next page">
