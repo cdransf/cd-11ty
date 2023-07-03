@@ -24,9 +24,7 @@
         <div class="min-h-screen flex flex-col">
           <main class="flex-1 w-10/12 max-w-screen-sm md:max-w-screen-md mx-auto">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between md:pt-10 pt-5">
-              <a class="text-gray-800 dark:text-gray-200 dark:hover:text-purple-400 hover:text-purple-500" href="/">
-                <h1 class="font-black leading-tight md:pb-0 md:text-3xl pb-5 text-2xl">Links • Cory Dransfeldt</h1>
-              </a>
+              <h1 class="font-black leading-tight md:pb-0 md:text-3xl pb-5 text-2xl">Links • Cory Dransfeldt</h1>
               <a href="/">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                      class="inline w-6 h-6 fill-current text-gray-700 hover:text-purple-500 dark:text-gray-200 dark:hover:text-purple-400">
@@ -37,7 +35,7 @@
                 </svg>
               </a>
             </div>
-            <div class="pt-12 prose dark:prose-invert hover:prose-a:text-blue-500 max-w-full">
+            <div class="pt-8 prose dark:prose-invert hover:prose-a:text-blue-500 max-w-full">
               <div class="dark:text-white text-gray-800">
                 <h2
                   class="font-black leading-tight m-0 md:text-2xl text-xl tracking-normal mb-4 flex flex-row items-center text-gray-800 dark:text-gray-200">
