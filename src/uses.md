@@ -83,6 +83,7 @@ Software and services that I use for work and my own enjoyment.
 - [Trakt](https://trakt.tv)
 - [Letterboxd](https://letterboxd.com)
 - [Oku](https://oku.club)
+- [Whereby](https://whereby.com)
 - [Slack](http://slack.com)
 - [Discord](http://discord.com)
 
