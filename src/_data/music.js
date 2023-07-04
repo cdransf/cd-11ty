@@ -5,6 +5,10 @@ const artistAliases = [
     artist: 'Osees',
     aliases: ['OCS', 'The Ohsees', 'Thee Oh Sees', "Thee Oh See's"],
   },
+  {
+    artist: 'Tom Waits',
+    aliases: ['Tom Waits & Crystal Gayle'],
+  },
 ]
 
 const aliasArtists = (array) => {
