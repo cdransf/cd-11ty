@@ -1,19 +1,9 @@
 const { AssetCache } = require('@11ty/eleventy-fetch')
-
-const artistAliases = [
-  {
-    artist: 'Osees',
-    aliases: ['OCS', 'The Ohsees', 'Thee Oh Sees', "Thee Oh See's"],
-  },
-  {
-    artist: 'Tom Waits',
-    aliases: ['Tom Waits & Crystal Gayle'],
-  },
-]
+const artistAliases = require('./json/artist-aliases.json')
 
 const aliasArtists = (array) => {
   array.forEach((a) => {
-    const aliased = artistAliases.find((alias) => alias.aliases.includes(a.artist))
+    const aliased = artistAliases.aliases.find((alias) => alias.aliases.includes(a.artist))
     if (aliased) a.artist = aliased.artist
   })
   return array
