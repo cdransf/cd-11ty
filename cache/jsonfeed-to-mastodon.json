@@ -4660,5 +4660,16 @@
       "https://social.lol/users/cory/statuses/110657129580357265"
     ],
     "lastTootTimestamp": 1688493798582
+  },
+  "https://oku.club/book/responsible-javascript-by-jeremy-wagner-gqpTj": {
+    "id": "https://oku.club/book/responsible-javascript-by-jeremy-wagner-gqpTj",
+    "title": "📖: Responsible JavaScript",
+    "url": "https://oku.club/book/responsible-javascript-by-jeremy-wagner-gqpTj",
+    "content_text": "📖: Responsible JavaScript https://oku.club/book/responsible-javascript-by-jeremy-wagner-gqpTj",
+    "date_published": "2023-07-04T18:51:02-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110657601441865231"
+    ],
+    "lastTootTimestamp": 1688500998606
   }
 }
