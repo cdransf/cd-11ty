@@ -18,7 +18,7 @@
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@catppuccin/tailwindcss": "^0.1.6",
-    "@fontsource/inter": "^5.0.3",
+    "@fontsource/inter": "^5.0.4",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
