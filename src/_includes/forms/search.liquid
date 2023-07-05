@@ -1,0 +1,26 @@
+<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+<style>
+  :root {
+    --pagefind-ui-font: InterVariable, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --pagefind-ui-primary: #374151;
+    --pagefind-ui-text: #374151;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --pagefind-ui-primary: #e5e7eb;
+      --pagefind-ui-text: #e5e7eb;
+      --pagefind-ui-background: #152028;
+      --pagefind-ui-border: #152028;
+      --pagefind-ui-tag: #152028;
+    }
+  }
+</style>
+<div id="search" class="search"></div>
+<script src="/_pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+<script>
+  if (plausible) {
+    document.querySelector('#search').addEventListener('focusout', (e) => {
+      plausible('Search', { props: { query: e.target.value }})
+    })
+  }
+</script>
