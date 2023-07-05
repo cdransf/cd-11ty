@@ -17,7 +17,7 @@ meta:
   image:
     src: https://coryd.dev/assets/img/avatar.webp
 ---
-<link href="https://coryd.dev/_pagefind/pagefind-ui.css" rel="stylesheet">
+<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
 <style>
   :root {
     --pagefind-ui-font: InterVariable, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -35,7 +35,7 @@ meta:
   }
 </style>
 <div id="search" class="search"></div>
-<script src="https://coryd.dev/_pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+<script src="/_pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search', showImages: false });"></script>
 <script>
   if (plausible) {
     document.querySelector('#search').addEventListener('focusout', (e) => {

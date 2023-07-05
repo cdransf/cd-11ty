@@ -7,20 +7,6 @@ package = "@netlify/plugin-lighthouse"
   output_path = "reports/lighthouse/index.html"
 
 ###
-# OPTIMIZATION
-###
-[build.processing]
-  skip_processing = false
-[build.processing.css]
-  bundle = true
-  minify = false
-[build.processing.js]
-  bundle = true
-  minify = false
-[build.processing.images]
-  compress = true
-
-###
 # URLs
 ###
 [build.processing.html]
