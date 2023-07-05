@@ -455,7 +455,7 @@
     fast-xml-parser "^4.2.4"
     html-entities "^2.3.6"
 
-"@fontsource/inter@^5.0.3":
+"@fontsource/inter@^5.0.4":
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-5.0.4.tgz#95e5c9f082b285ed6375b1ea08af34489d52d236"
   integrity sha512-rUiTktdsh6B45XRZYTsZb2y4+TVkiVJhkqCSnSXfWxdUl0Rp6Cheu27IcurdjSfxJPUD+nl18wYp5RFf5P5zlA==
