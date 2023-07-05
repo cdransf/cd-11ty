@@ -1,0 +1,43 @@
+---
+layout: default
+title: Search
+meta:
+  site:
+    name: 'Cory Dransfeldt'
+    description: "I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, music, writing, reading and tv and movies."
+    url: https://coryd.dev
+    logo:
+      src: https://coryd.dev/assets/img/logo.webp
+      width: 2000
+      height: 2000
+  language: en-US
+  title: 'Cory Dransfeldt • Search'
+  description: "Search everything I've posted on my site."
+  url: https://coryd.dev/search
+  image:
+    src: https://coryd.dev/assets/img/avatar.webp
+---
+<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+<style>
+  :root {
+    --pagefind-ui-font: InterVariable, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --pagefind-ui-primary: #374151;
+    --pagefind-ui-text: #374151;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --pagefind-ui-primary: #e5e7eb;
+      --pagefind-ui-text: #e5e7eb;
+      --pagefind-ui-background: #152028;
+      --pagefind-ui-border: #152028;
+      --pagefind-ui-tag: #152028;
+    }
+  }
+</style>
+<div id="search" class="search"></div>
+<script src="/_pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+<script>
+  document.querySelector('#search').addEventListener('focusout', (e) => {
+      plausible('Search', { props: { query: e.target.value }})
+  })
+</script>

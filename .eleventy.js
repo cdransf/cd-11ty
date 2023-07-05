@@ -14,6 +14,7 @@ const dateFilters = require('./config/dateFilters.js')
 const mediaFilters = require('./config/mediaFilters.js')
 const CleanCSS = require('clean-css')
 const now = String(Date.now())
+const { execSync } = require('child_process')
 
 // load .env
 require('dotenv-flow').config()
@@ -124,6 +125,10 @@ module.exports = function (eleventyConfig) {
     }
 
     return Image.generateHTML(metadata, imageAttributes)
+  })
+
+  eleventyConfig.on('eleventy.after', () => {
+    execSync(`npx pagefind --source _site --glob "**/*.html"`, { encoding: 'utf-8' })
   })
 
   return {
