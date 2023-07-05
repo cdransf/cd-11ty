@@ -21,7 +21,7 @@ module.exports = {
         if (analytics.find((p) => p.page === post.url)) return true
       })
       .sort((a, b) => {
-        const visitors = (page) => analytics.filter((p) => p.page === page.url)[0].visitors
+        const visitors = (page) => analytics.filter((p) => p.page === page.url).pop().visitors
         return visitors(b) - visitors(a)
       })
   },
