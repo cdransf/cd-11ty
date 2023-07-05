@@ -15,6 +15,16 @@ module.exports = {
     if (image && image !== '') return image
     return '/assets/img/social-card.webp'
   },
+  getPopularPosts: (posts, analytics) => {
+    return posts
+      .filter((post) => {
+        if (analytics.find((p) => p.page === post.url)) return true
+      })
+      .sort((a, b) => {
+        const visitors = (page) => analytics.filter((p) => p.page === page.url)[0].visitors
+        return visitors(b) - visitors(a)
+      })
+  },
   webmentionsByUrl: (webmentions, url) => {
     const allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of']
 
