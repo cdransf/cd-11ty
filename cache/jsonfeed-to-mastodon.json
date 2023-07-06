@@ -4682,5 +4682,16 @@
       "https://social.lol/users/cory/statuses/110663263344446344"
     ],
     "lastTootTimestamp": 1688587392419
+  },
+  "https://coryd.dev/posts/2023/embrace-extend-enshittify/": {
+    "id": "https://coryd.dev/posts/2023/embrace-extend-enshittify/",
+    "title": "📝: Embrace, extend, enshittify",
+    "url": "https://coryd.dev/posts/2023/embrace-extend-enshittify/",
+    "content_text": "📝: Embrace, extend, enshittify https://coryd.dev/posts/2023/embrace-extend-enshittify/",
+    "date_published": "2023-07-05T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110665150505986865"
+    ],
+    "lastTootTimestamp": 1688616188193
   }
 }
