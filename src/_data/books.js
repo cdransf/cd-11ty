@@ -1,30 +1,12 @@
-const EleventyFetch = require('@11ty/eleventy-fetch')
+const reading = require('./json/read.json')
 
 module.exports = async function () {
-  const OKU_URL = 'https://oku.club/api/collections/user/cory/reading'
-  const OPEN_LIBRARY_URL = 'https://openlibrary.org/search.json?title='
-  const res = EleventyFetch(OKU_URL, {
-    duration: '1h',
-    type: 'json',
-  }).catch()
-  const data = await res
-  const books = []
-  for (const book of data['books']) {
-    const res = await fetch(`${OPEN_LIBRARY_URL}${book.title.replace(/\s+/g, '+')}`)
-      .then((res) => res.json())
-      .catch()
-    const data = await res
-    const coverId = data['docs'].find((b) => {
-      return b['title'] === book['title']
-    })?.['cover_i']
-    books.push({
-      title: book.title,
-      author: book['authors'][0].name,
-      url: `https://oku.club/book/${book.slug}`,
-      cover: coverId
-        ? `https://books.coryd.dev/b/id/${coverId}-L.jpg`
-        : `https://cdn.coryd.dev/books/${book.title.toLowerCase().replace(/\s+/g, '-')}.jpg`,
-    })
-  }
-  return books
+  return reading.map(read => {
+    if (read.status === 'started') return {
+      title: read.title,
+      author: read.authors.length > 1 ? read.authors.join(', ') : read.authors.pop(),
+      cover: read.thumbnail.replace('https://books.google.com', 'https://books.coryd.dev'),
+      link: `https://duckduckgo.com/?q=!olib%20${read.isbn}`,
+    }
+  })
 }
