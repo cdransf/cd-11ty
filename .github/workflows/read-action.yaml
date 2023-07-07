@@ -34,9 +34,6 @@ on:
       date-finished:
         description: Date you finished the book (YYYY-MM-DD). Optional.
         type: string
-env:
-  filename: _data/json/read.json
-  time-zone: America/Los_Angeles
 jobs:
   update-library:
     runs-on: macOS-latest
@@ -47,6 +44,9 @@ jobs:
 
       - name: Read
         uses: katydecorah/read-action@v7.1.0
+        with:
+          filename: _data/json/read.json
+          time-zone: America/Los_Angeles
 
       - name: Commit updated read file
         run: |
