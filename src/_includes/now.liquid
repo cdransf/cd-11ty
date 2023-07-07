@@ -187,7 +187,7 @@ layout: main
             </div>
           </div>
           {%- capture tvImg %}{{episode.show.title | tv}}{% endcapture -%}
-          {%- capture tvName %}{{ episode.episode.title | escape}} - {{ episode.show.title | escape }}{% endcapture -%}
+          {%- capture tvName %}{{ episode.episode.title | escape}} • {{ episode.show.title | escape }}{% endcapture -%}
           {% image tvImg, tvName, 'rounded-lg w-full', '180px' %}
         </div>
       </a>
