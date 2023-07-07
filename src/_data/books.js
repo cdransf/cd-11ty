@@ -6,7 +6,8 @@ module.exports = async function () {
       title: read.title,
       author: read.authors.length > 1 ? read.authors.join(', ') : read.authors.pop(),
       cover: read.thumbnail.replace('https://books.google.com', 'https://books.coryd.dev'),
-      link: `https://duckduckgo.com/?q=!olib%20${read.isbn}`,
+      link: `https://openlibrary.org/search?q=${read.isbn}`,
+      finished: read.dateFinished
     }
   })
 }

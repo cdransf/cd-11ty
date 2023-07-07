@@ -1,7 +1,7 @@
 ---
 layout: main
 ---
-{% include "header.liquid" %}
+{% include "partials/header.liquid" %}
 <article class="h-entry" data-pagefind-body>
   <h2 class="p-name text-xl md:text-2xl font-black leading-tight dark:text-gray-200 pt-8" data-pagefind-meta="title">{{ title }}</h2>
   <span class="p-author h-card hidden">{{ site.title }}</span>
@@ -11,7 +11,7 @@ layout: main
     {{ content }}
   </div>
 </article>
-{% include "post-tags.liquid" %}
-{% include "webmentions.liquid" %}
-{% include "author.liquid" %}
-{% include "popular-posts.liquid" %}
+{% include "partials/post-tags.liquid" %}
+{% include "partials/webmentions.liquid" %}
+{% include "partials/author.liquid" %}
+{% include "partials/popular-posts.liquid" %}

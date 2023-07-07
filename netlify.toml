@@ -44,6 +44,13 @@ for = "/links.xml"
   x-content-type-options = "nosniff"
 
 [[headers]]
+for = "/books.xml"
+
+  [headers.values]
+  Content-Type = "application/xml; charset=utf-8"
+  x-content-type-options = "nosniff"
+
+[[headers]]
 for = "/follow.xml"
 
   [headers.values]
