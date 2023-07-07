@@ -13,7 +13,7 @@ permalink: '/books.json'
   "title": "{{ book.title | escape }}",
   "url": "{{ book.link }}",
   "content_text": "",
-  "date_published": "{{ book.finished | date: "%Y-%m-%dT%H:%M:%S-08:00" }}"
+  "date_published": "{{ book.started | date: "%Y-%m-%dT%H:%M:%S-08:00" }}"
   }{% if not forloop.last %},{% endif %}
 {% endfor %}
 ]

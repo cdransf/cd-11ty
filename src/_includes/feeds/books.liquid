@@ -7,7 +7,7 @@
   <link href="{{ pkg.homepage }}/books.xml" rel="self" />
   <link href="{{ pkg.homepage }}/" />
   <link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
-  <updated>{% block update %}{{ books[0].finished | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}</updated>
+  <updated>{% block update %}{{ book[0].started | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}</updated>
   <id>{{ site.url }}</id>
   <author>
     <name>{{ site.name }}</name>

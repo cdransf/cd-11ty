@@ -11,7 +11,7 @@ permalink: /books.xml
   <entry>
     <title>{{ book.title | escape }}</title>
     <link href="{{book.link}}" />
-    <updated>{{ book.finished | date: "%m.%d.%Y" }}</updated>
+    <updated>{{ book.started  | date: "%m.%d.%Y" }}</updated>
     <id>{{ book.link }}</id>
     <content type="html"></content>
   </entry>
