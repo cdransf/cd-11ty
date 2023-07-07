@@ -6,7 +6,11 @@
     },
     {
       "artist": "Tom Waits",
-      "aliases": ["Tom Waits & Crystal Gayle"]
+      "aliases": ["Tom Waits & Crystal Gayle", "Crystal Gayle"]
+    },
+    {
+      "artist": "Fen",
+      "aliases": ["Sleepwalker & Fen"]
     }
   ]
 }

@@ -28,19 +28,19 @@ module.exports = async function () {
   const APPLE_TOKEN = APPLE_TOKEN_RESPONSE['music-token']
   const asset = new AssetCache('recent_tracks_data')
   const PAGE_SIZE = 30
-  const PAGES = 7
+  const PAGES = 10
   const response = {
     artists: {},
     albums: {},
     tracks: {},
   }
-
   let CURRENT_PAGE = 0
   let res = []
+  let hasNextPage = true
 
   if (asset.isCacheValid('1h')) return await asset.getCachedValue()
 
-  while (CURRENT_PAGE < PAGES) {
+  while (CURRENT_PAGE < PAGES && hasNextPage) {
     const URL = `https://api.music.apple.com/v1/me/recent/played/tracks?limit=${PAGE_SIZE}&offset=${
       PAGE_SIZE * CURRENT_PAGE
     }`
@@ -53,12 +53,12 @@ module.exports = async function () {
     })
       .then((data) => data.json())
       .catch()
-    res = [...res, ...tracks.data]
+    if (!tracks.next) hasNextPage = false
+    if (tracks.data.length) res = [...res, ...tracks.data]
     CURRENT_PAGE++
   }
 
   res.forEach((track) => {
-    // aggregate artists
     if (!response.artists[track.attributes['artistName']]) {
       response.artists[track.attributes['artistName']] = {
         artist: track.attributes['artistName'],
@@ -68,7 +68,6 @@ module.exports = async function () {
       response.artists[track.attributes['artistName']].plays++
     }
 
-    // aggregate albums
     if (!response.albums[track.attributes['albumName']]) {
       response.albums[track.attributes['albumName']] = {
         name: track.attributes['albumName'],
@@ -80,7 +79,6 @@ module.exports = async function () {
       response.albums[track.attributes['albumName']].plays++
     }
 
-    // aggregate tracks
     if (!response.tracks[track.attributes.name]) {
       response.tracks[track.attributes.name] = {
         name: track.attributes.name,
