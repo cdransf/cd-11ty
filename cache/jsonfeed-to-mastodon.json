@@ -4726,5 +4726,16 @@
       "https://social.lol/users/cory/statuses/110670813503901430"
     ],
     "lastTootTimestamp": 1688702598703
+  },
+  "https://letterboxd.com/cdme/film/guardians-of-the-galaxy-vol-3/": {
+    "id": "https://letterboxd.com/cdme/film/guardians-of-the-galaxy-vol-3/",
+    "title": "🎥: Guardians of the Galaxy Vol. 3, 2023 - ★★★★",
+    "url": "https://letterboxd.com/cdme/film/guardians-of-the-galaxy-vol-3/",
+    "content_text": "🎥: Guardians of the Galaxy Vol. 3, 2023 - ★★★★ https://letterboxd.com/cdme/film/guardians-of-the-galaxy-vol-3/",
+    "date_published": "2023-07-07T17:10:41-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110674587282334433"
+    ],
+    "lastTootTimestamp": 1688760182057
   }
 }
