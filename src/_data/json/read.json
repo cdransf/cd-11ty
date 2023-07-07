@@ -1,1 +1,24 @@
- []
+[
+  {
+    "isbn": "1952616034",
+    "dateStarted": "2023-07-07",
+    "status": "started",
+    "rating": "unrated",
+    "tags": [
+      "development"
+    ],
+    "title": "Sustainable Web Design",
+    "authors": [
+      "Tom Greenwood"
+    ],
+    "publishedDate": "2021",
+    "description": "Make greener design choices for better experiences and a healthier planet.",
+    "printType": "BOOK",
+    "categories": [
+      "Sites Web"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=VdduzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Sustainable_Web_Design.html?hl=&id=VdduzgEACAAJ"
+  }
+]
