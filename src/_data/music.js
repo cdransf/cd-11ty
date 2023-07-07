@@ -9,6 +9,14 @@ const aliasArtists = (array) => {
   return array
 }
 
+const sanitizeAlbums = (array) => {
+  const denyList = /(\[|\()(Deluxe Edition|Special Edition|Remastered)(\]|\))/i;
+  array.forEach((a) => {
+    a.name = a.name.replace(denyList, '')
+  })
+  return array
+}
+
 const sort = (array) => Object.values(array).sort((a, b) => b.plays - a.plays)
 
 module.exports = async function () {
@@ -90,7 +98,7 @@ module.exports = async function () {
     }
   })
   response.artists = aliasArtists(sort(response.artists)).splice(0, 8)
-  response.albums = aliasArtists(sort(response.albums)).splice(0, 8)
+  response.albums = sanitizeAlbums(aliasArtists(sort(response.albums)).splice(0, 8))
   response.tracks = aliasArtists(sort(response.tracks)).splice(0, 5)
   await asset.save(response, 'json')
   return response
