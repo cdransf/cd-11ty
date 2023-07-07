@@ -4682,5 +4682,38 @@
       "https://social.lol/users/cory/statuses/110663263344446344"
     ],
     "lastTootTimestamp": 1688587392419
+  },
+  "https://coryd.dev/posts/2023/embrace-extend-enshittify/": {
+    "id": "https://coryd.dev/posts/2023/embrace-extend-enshittify/",
+    "title": "📝: Embrace, extend, enshittify",
+    "url": "https://coryd.dev/posts/2023/embrace-extend-enshittify/",
+    "content_text": "📝: Embrace, extend, enshittify https://coryd.dev/posts/2023/embrace-extend-enshittify/",
+    "date_published": "2023-07-05T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110665150505986865"
+    ],
+    "lastTootTimestamp": 1688616188193
+  },
+  "https://ploum.net/2023-07-06-stop-trying-to-make-social-networks-succeed.html": {
+    "id": "https://ploum.net/2023-07-06-stop-trying-to-make-social-networks-succeed.html",
+    "title": "🔗: Stop Trying to Make Social Networks Succeed",
+    "url": "https://ploum.net/2023-07-06-stop-trying-to-make-social-networks-succeed.html",
+    "content_text": "🔗: Stop Trying to Make Social Networks Succeed https://ploum.net/2023-07-06-stop-trying-to-make-social-networks-succeed.html",
+    "date_published": "2023-07-06T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110667981527787907"
+    ],
+    "lastTootTimestamp": 1688659386163
+  },
+  "https://jogblog.substack.com/p/facebooks-threads-is-so-depressing": {
+    "id": "https://jogblog.substack.com/p/facebooks-threads-is-so-depressing",
+    "title": "🔗: Facebook's Threads is so depressing",
+    "url": "https://jogblog.substack.com/p/facebooks-threads-is-so-depressing",
+    "content_text": "🔗: Facebook's Threads is so depressing https://jogblog.substack.com/p/facebooks-threads-is-so-depressing",
+    "date_published": "2023-07-06T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110669907664602978"
+    ],
+    "lastTootTimestamp": 1688688776659
   }
 }
