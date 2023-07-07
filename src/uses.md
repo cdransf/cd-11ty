@@ -78,7 +78,7 @@ Software and services that I use for work and my own enjoyment.
 - [forwardemail.net](https://forwardemail.net)
 - [1Password](https://1password.com)
 - [Feedbin](https://feedbin.com)
-- [Instapaper](https://instapaper.com)
+- [Pocket](https://getpocket.com)
 - [Trakt](https://trakt.tv)
 - [Letterboxd](https://letterboxd.com)
 - [Whereby](https://whereby.com)

@@ -11,7 +11,7 @@ permalink: '/links.json'
   {
   "id": "{{ link.link }}",
   "title": "{{ link.title | escape }}",
-  "url": "{{ link.link }}",
+  "url": "{{ link.url }}",
   "content_text": "",
   "date_published": "{{ link.time | date: "%Y-%m-%dT%H:%M:%S-08:00" }}"
   }{% if not forloop.last %},{% endif %}

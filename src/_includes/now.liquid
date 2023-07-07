@@ -138,7 +138,7 @@ layout: main
   <ul class="list-inside list-disc pl-5 md:pl-10">
     {% for link in links %}
       <li class="mt-1.5 mb-2">
-        <a href="{{link.link}}" title="{{link.title | escape}}">
+        <a href="{{link.url}}" title="{{link.title | escape}}">
           {{ link.title }}
         </a>
       </li>

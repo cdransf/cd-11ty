@@ -46,7 +46,7 @@
                   Feed preview • links
                 </h2>
                 <p>Recently read and favorited links
-                  <a href="https://instapaper.com">sourced from my Instapaper likes.</a>
+                  <a href="https://getpocket.com">sourced from my Pocket favorites.</a>
                 </p>
                 <p>
                   <xsl:value-of select="atom:feed/atom:description"/>

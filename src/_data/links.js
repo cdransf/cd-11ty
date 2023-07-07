@@ -1,24 +1,31 @@
-const { extract } = require('@extractus/feed-extractor')
-const { AssetCache } = require('@11ty/eleventy-fetch')
+const EleventyFetch = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
-  const URL = process.env.SECRET_FEED_INSTAPAPER_LIKES
-  // noinspection JSCheckFunctionSignatures
-  const asset = new AssetCache('links_data')
-  if (asset.isCacheValid('1h')) return await asset.getCachedValue()
-  const res = await extract(URL, {
-    getExtraEntryFields: (feedEntry) => {
-      return {
-        time: feedEntry['pubDate'] || '',
-      }
+  const KEY = process.env.CONSUMER_KEY_POCKET
+  const TOKEN = process.env.ACCESS_TOKEN_POCKET
+  const url = 'https://getpocket.com/v3/get'
+  const res = EleventyFetch(url, {
+    duration: '1h',
+    type: 'json',
+    fetchOptions: {
+      method: 'POST',
+      body: JSON.stringify({
+          'consumer_key': KEY,
+        'access_token': TOKEN,
+        'favorite': 1,
+        }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
     },
+  }).catch()
+  const data = await res
+  const articles = Object.values(data.list).map(article => {
+    return {
+      title: article['resolved_title'],
+      url: article['resolved_url'],
+      time: article['time_added']
+    }
   })
-    .catch((error) => {
-      console.log(error.message)
-    })
-    .catch()
-  const data = res.entries
-  const links = data.splice(0, 5)
-  await asset.save(links, 'json')
-  return links
+  return articles.sort((a, b) => b.time - a.time).splice(0, 5)
 }

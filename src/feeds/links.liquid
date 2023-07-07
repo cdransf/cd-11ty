@@ -12,7 +12,7 @@ permalink: /links.xml
     <title>{{ link.title | escape }}</title>
     <link href="{{link.link}}" />
     <updated>{{ link.time | date: "%m.%d.%Y" }}</updated>
-    <id>{{ link.link }}</id>
+    <id>{{ link.url }}</id>
     <content type="html"></content>
   </entry>
 {% endfor %}
