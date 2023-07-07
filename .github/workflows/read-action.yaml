@@ -34,12 +34,9 @@ on:
       date-finished:
         description: Date you finished the book (YYYY-MM-DD). Optional.
         type: string
-      filename:
-        description: The file where you want to save your books.
-        default: _data/json/read.json
-      time-zone:
-        description: Your time zone.
-        default: America/Los_Angeles
+env:
+  filename: _data/json/read.json
+  time-zone: America/Los_Angeles
 jobs:
   update-library:
     runs-on: macOS-latest
