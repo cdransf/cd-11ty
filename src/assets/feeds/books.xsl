@@ -24,7 +24,7 @@
         <div class="min-h-screen flex flex-col">
           <main class="flex-1 w-10/12 max-w-screen-sm md:max-w-screen-md mx-auto">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between md:pt-10 pt-5">
-              <h1 class="font-black leading-tight md:pb-0 md:text-3xl pb-5 text-2xl">Links • Cory Dransfeldt</h1>
+              <h1 class="font-black leading-tight md:pb-0 md:text-3xl pb-5 text-2xl">Books • Cory Dransfeldt</h1>
               <a href="/">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                      stroke="currentColor"
