@@ -45,7 +45,7 @@ jobs:
       - name: Read
         uses: katydecorah/read-action@v7.1.0
         with:
-          filename: _data/json/read.json
+          filename: src/_data/json/read.json
           time-zone: America/Los_Angeles
 
       - name: Commit updated read file
