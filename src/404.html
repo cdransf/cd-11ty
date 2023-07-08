@@ -21,4 +21,4 @@ permalink: 404.html
   </div>
 </div>
 <hr />
-{% include "partials/popular-posts.liquid" %}
+{% render "partials/popular-posts.liquid", posts: collections.posts, analytics: analytics %}

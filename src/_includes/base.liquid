@@ -31,7 +31,7 @@
     <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
     <link href="/assets/styles/tailwind.css?v={% version %}" rel="stylesheet" />
     {% capture css %}
-      {% include "../assets/styles/prism.css" %}
+      {% render "../assets/styles/prism.css" %}
     {% endcapture %}
     <style>
       {{ css | cssmin }}

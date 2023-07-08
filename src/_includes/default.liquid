@@ -2,7 +2,7 @@
 layout: main
 ---
 
-{% include "partials/header.liquid" %}
+{% render "partials/header.liquid", site: site %}
 
 <div class="pt-8 prose dark:prose-invert hover:prose-a:text-blue-500 max-w-full">
   {{ content }}
