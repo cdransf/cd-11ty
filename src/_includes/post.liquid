@@ -1,7 +1,7 @@
 ---
 layout: main
 ---
-{% render "partials/header.liquid", site: site %}
+{% render "partials/header.liquid", site: site, page: page %}
 <article class="h-entry" data-pagefind-body>
   <h2 class="p-name text-xl md:text-2xl font-black leading-tight dark:text-gray-200 pt-8" data-pagefind-meta="title">{{ title }}</h2>
   <span class="p-author h-card hidden">{{ site.title }}</span>
@@ -12,6 +12,6 @@ layout: main
   </div>
 </article>
 {% render "partials/post-tags.liquid", tags: tags %}
-{% render "partials/webmentions.liquid", webmentions: webmentions %}
+{% render "partials/webmentions.liquid", webmentions: webmentions, page: page %}
 {% render "partials/author.liquid", site: site %}
 {% render "partials/popular-posts.liquid", posts: collections.posts, analytics: analytics %}

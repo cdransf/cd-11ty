@@ -7,13 +7,13 @@
       <a class="text-gray-700 hover:text-purple-500 dark:text-gray-200 dark:hover:text-purple-500{% if page.url == '/about/' %} active{% endif %}" href="/about">About</a>
     </li>
     <li class="mr-6">
-      {% render "icons/tags.liquid" %}
+      {% render "icons/tags.liquid", page: page %}
     </li>
     <li class="mr-6 client-side">
-      {% render "icons/search.liquid" %}
+      {% render "icons/search.liquid", page: page %}
     </li>
     <li>
-      {% render "icons/rss.liquid" %}
+      {% render "icons/rss.liquid", page: page %}
     </li>
   </ul>
 </nav>
