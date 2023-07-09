@@ -4814,5 +4814,48 @@
       "https://social.lol/users/cory/statuses/110685911665514798"
     ],
     "lastTootTimestamp": 1688932978344
+  },
+  "https://letterboxd.com/cdme/film/patriot-games/": {
+    "id": "https://letterboxd.com/cdme/film/patriot-games/",
+    "title": "🎥: Patriot Games, 1992 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/patriot-games/",
+    "content_text": "🎥: Patriot Games, 1992 - ★★★ https://letterboxd.com/cdme/film/patriot-games/",
+    "date_published": "2023-07-09T20:15:47-08:00",
+    "toots": []
+  },
+  "https://openlibrary.org/search?q=9780674979857": {
+    "id": "https://openlibrary.org/search?q=9780674979857",
+    "title": "📖: Capital in the Twenty-First Century",
+    "url": "https://openlibrary.org/search?q=9780674979857",
+    "content_text": "📖: Capital in the Twenty-First Century https://openlibrary.org/search?q=9780674979857",
+    "date_published": "2023-07-09T00:00:00-08:00",
+    "toots": []
+  },
+  "https://openlibrary.org/search?q=1952616034": {
+    "id": "https://openlibrary.org/search?q=1952616034",
+    "title": "📖: Sustainable Web Design",
+    "url": "https://openlibrary.org/search?q=1952616034",
+    "content_text": "📖: Sustainable Web Design https://openlibrary.org/search?q=1952616034",
+    "date_published": "2023-07-07T00:00:00-08:00",
+    "toots": []
+  },
+  "https://openlibrary.org/search?q=9780316555678": {
+    "id": "https://openlibrary.org/search?q=9780316555678",
+    "title": "📖: Elysium Fire",
+    "url": "https://openlibrary.org/search?q=9780316555678",
+    "content_text": "📖: Elysium Fire https://openlibrary.org/search?q=9780316555678",
+    "date_published": "2023-07-07T00:00:00-08:00",
+    "toots": []
+  },
+  "https://gizmodo.com/google-says-itll-scrape-everything-you-post-online-for-1850601486": {
+    "id": "https://gizmodo.com/google-says-itll-scrape-everything-you-post-online-for-1850601486",
+    "title": "🔗: Google Says It'll Scrape Everything You Post Online for AI",
+    "url": "https://gizmodo.com/google-says-itll-scrape-everything-you-post-online-for-1850601486",
+    "content_text": "🔗: Google Says It'll Scrape Everything You Post Online for AI https://gizmodo.com/google-says-itll-scrape-everything-you-post-online-for-1850601486",
+    "date_published": "2023-07-03T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110686383503596050"
+    ],
+    "lastTootTimestamp": 1688940178029
   }
 }
