@@ -24,8 +24,8 @@
   {
     "isbn": "9780593083888",
     "dateStarted": "2023-07-07",
-    "status": "started",
-    "rating": "unrated",
+    "status": "finished",
+    "rating": "⭐️⭐️⭐️",
     "title": "The Myth of Normal",
     "authors": [
       "Gabor Maté, MD"
@@ -38,7 +38,8 @@
     ],
     "thumbnail": "https://books.google.com/books/content?id=eZVUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
     "language": "en",
-    "link": "https://books.google.com/books/about/The_Myth_of_Normal.html?hl=&id=eZVUEAAAQBAJ"
+    "link": "https://books.google.com/books/about/The_Myth_of_Normal.html?hl=&id=eZVUEAAAQBAJ",
+    "dateFinished": "2023-07-08"
   },
   {
     "isbn": "9780316555678",
