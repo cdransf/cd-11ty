@@ -80,5 +80,25 @@
     "language": "en",
     "link": "https://books.google.com/books/about/How_To_Get_Over_OCD_Step_by_Step_Obsessi.html?hl=&id=mnt-zgEACAAJ",
     "dateFinished": "2023-07-09"
+  },
+  {
+    "isbn": "9780674979857",
+    "dateStarted": "2023-07-09",
+    "status": "started",
+    "rating": "unrated",
+    "title": "Capital in the Twenty-First Century",
+    "authors": [
+      "Thomas Piketty"
+    ],
+    "publishedDate": "2017-08-14",
+    "description": "What are the grand dynamics that drive the accumulation and distribution of capital? Questions about the long-term evolution of inequality, the concentration of wealth, and the prospects for economic growth lie at the heart of political economy. But satisfactory answers have been hard to find for lack of adequate data and clear guiding theories. In this work the author analyzes a unique collection of data from twenty countries, ranging as far back as the eighteenth century, to uncover key economic and social patterns. His findings transform debate and set the agenda for the next generation of thought about wealth and inequality. He shows that modern economic growth and the diffusion of knowledge have allowed us to avoid inequalities on the apocalyptic scale predicted by Karl Marx. But we have not modified the deep structures of capital and inequality as much as we thought in the optimistic decades following World War II. The main driver of inequality--the tendency of returns on capital to exceed the rate of economic growth--today threatens to generate extreme inequalities that stir discontent and undermine democratic values if political action is not taken. But economic trends are not acts of God. Political action has curbed dangerous inequalities in the past, the author says, and may do so again. This original work reorients our understanding of economic history and confronts us with sobering lessons for today.",
+    "pageCount": 817,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=dqEuDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Capital_in_the_Twenty_First_Century.html?hl=&id=dqEuDwAAQBAJ"
   }
 ]
