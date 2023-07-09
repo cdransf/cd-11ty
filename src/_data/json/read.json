@@ -63,7 +63,7 @@
   {
     "isbn": "1988320143",
     "dateStarted": "2023-07-08",
-    "status": "started",
+    "status": "finished",
     "rating": "unrated",
     "title": "How To Get Over OCD: Step by Step Obsessive Compulsive Disorder Recovery Guide",
     "authors": [
@@ -78,6 +78,7 @@
     ],
     "thumbnail": "https://books.google.com/books/content?id=mnt-zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
     "language": "en",
-    "link": "https://books.google.com/books/about/How_To_Get_Over_OCD_Step_by_Step_Obsessi.html?hl=&id=mnt-zgEACAAJ"
+    "link": "https://books.google.com/books/about/How_To_Get_Over_OCD_Step_by_Step_Obsessi.html?hl=&id=mnt-zgEACAAJ",
+    "dateFinished": "2023-07-09"
   }
 ]
