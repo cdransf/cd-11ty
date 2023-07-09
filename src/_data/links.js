@@ -9,12 +9,12 @@ module.exports = async function () {
     type: 'json',
     fetchOptions: { headers },
   })
-  const feed = await res
-  const links = feed.feed.splice(0, 5).map(link => {
+  const favorites = await res
+  return favorites.feed.splice(0, 5).map(link => {
     return {
       title: link.content.title,
-      url: link.content.url
+      url: link.content.url,
+      time: link.content['publication_date']
     }
   })
-  return links
 }
