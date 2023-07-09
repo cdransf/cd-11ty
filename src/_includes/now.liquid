@@ -119,16 +119,14 @@ layout: main
   </h2>
   <div class="grid grid-cols-3 gap-2 md:grid-cols-6 not-prose">
     {% for book in books %}
-      {% if book.cover %}
       <a href="{{book.link}}" title="{{book.title | escape}}">
         <div class="relative block" style="max-width:226px">
           <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 dark:border-purple-400 dark:hover:border-purple-500"></div>
           {%- capture bookImg %}{{book.cover}}{% endcapture -%}
-          {%- capture bookName %}{{book.title | escape}} by {{book.author | escape}}{% endcapture -%}
+          {%- capture bookName %}{{book.title | escape}}{% endcapture -%}
           {% image bookImg, bookName, 'rounded-lg w-full h-full', '180px' %}
         </div>
       </a>
-      {% endif %}
     {% endfor %}
   </div>
 {% endif %}
