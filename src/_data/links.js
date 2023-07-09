@@ -1,31 +1,20 @@
 const EleventyFetch = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
-  const KEY = process.env.CONSUMER_KEY_POCKET
-  const TOKEN = process.env.ACCESS_TOKEN_POCKET
-  const url = 'https://getpocket.com/v3/get'
+  const MATTER_TOKEN = process.env.API_TOKEN_MATTER
+  const headers = { Authorization: `Bearer ${MATTER_TOKEN}` }
+  const url = `https://web.getmatter.com/api/library_items/favorites_feed`
   const res = EleventyFetch(url, {
     duration: '1h',
     type: 'json',
-    fetchOptions: {
-      method: 'POST',
-      body: JSON.stringify({
-          'consumer_key': KEY,
-        'access_token': TOKEN,
-        'favorite': 1,
-        }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    },
-  }).catch()
-  const data = await res
-  const articles = Object.values(data.list).map(article => {
+    fetchOptions: { headers },
+  })
+  const feed = await res
+  const links = feed.feed.splice(0, 5).map(link => {
     return {
-      title: article['resolved_title'],
-      url: article['resolved_url'],
-      time: article['time_added']
+      title: link.content.title,
+      url: link.content.url
     }
   })
-  return articles.sort((a, b) => b.time - a.time).splice(0, 5)
+  return links
 }

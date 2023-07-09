@@ -39,7 +39,6 @@ Software and services that I use for work and my own enjoyment.
 
 - [Things](https://culturedcode.com/things/)
 - [Ivory](https://tapbots.com/ivory)
-- [Readkit](https://readkit.app)
 - [Parcel](https://parcelapp.net)
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">iOS</h3>
@@ -77,10 +76,9 @@ Software and services that I use for work and my own enjoyment.
 - [Mullvad](https://mullvad.net)
 - [forwardemail.net](https://forwardemail.net)
 - [1Password](https://1password.com)
-- [Feedbin](https://feedbin.com)
-- [Pocket](https://getpocket.com)
 - [Trakt](https://trakt.tv)
 - [Letterboxd](https://letterboxd.com)
+- [Matter](https://getmatter.com)
 - [Whereby](https://whereby.com)
 - [Slack](http://slack.com)
 - [Discord](http://discord.com)
