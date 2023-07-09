@@ -59,5 +59,25 @@
     "thumbnail": "https://books.google.com/books/content?id=PnLhswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
     "language": "en",
     "link": "https://books.google.com/books/about/Elysium_Fire.html?hl=&id=PnLhswEACAAJ"
+  },
+  {
+    "isbn": "1988320143",
+    "dateStarted": "2023-07-08",
+    "status": "started",
+    "rating": "unrated",
+    "title": "How To Get Over OCD: Step by Step Obsessive Compulsive Disorder Recovery Guide",
+    "authors": [
+      "Ali Greymond"
+    ],
+    "publishedDate": "2021-05-29",
+    "description": "Ali Greymond recovered from obsessive compulsive disorder using \"How To Get Over OCD\" method and has helped people all over the world recover from OCD as well.To begin your recovery, you need to fully understand the \"mechanics\" of OCD. How To Get Over OCD E-Book will explain to you exactly why the thoughts are there, why they are constantly coming into your mind and most importantly, how to make them stop.Once you understand how your mind works and what makes the thoughts come and go, you will get back the control you have lost and will be able to fully recover.If you need help getting over OCD this book is for you.",
+    "pageCount": 36,
+    "printType": "BOOK",
+    "categories": [
+      "Self-Help"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=mnt-zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "language": "en",
+    "link": "https://books.google.com/books/about/How_To_Get_Over_OCD_Step_by_Step_Obsessi.html?hl=&id=mnt-zgEACAAJ"
   }
 ]
