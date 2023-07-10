@@ -455,10 +455,10 @@
     fast-xml-parser "^4.2.5"
     html-entities "^2.4.0"
 
-"@fontsource/inter@^5.0.4":
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-5.0.4.tgz#95e5c9f082b285ed6375b1ea08af34489d52d236"
-  integrity sha512-rUiTktdsh6B45XRZYTsZb2y4+TVkiVJhkqCSnSXfWxdUl0Rp6Cheu27IcurdjSfxJPUD+nl18wYp5RFf5P5zlA==
+"@fontsource/inter@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-5.0.5.tgz#bd3e923660cc4632d09b1882d104b0cb9430dec6"
+  integrity sha512-RE1JmWRB6Kxo+1nXUnORSSH5uKgUZ2QEQE+h/nsNt758C+17G9y26E9QiAsIqsG13NpKhwn22EeECfyC+da5ew==
 
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
