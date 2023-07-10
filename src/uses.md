@@ -69,6 +69,7 @@ Software and services that I use for work and my own enjoyment.
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Services</h3>
 
 - [Fastmail](https://ref.fm/u28939392)
+- [SavvyCal](https://savvycal.com/?via=cory)
 - [NextDNS](https://nextdns.io/?from=m56mt3z6)
 - [DNSimple](https://dnsimple.com/r/3a7cbb9e15df8f)
 - [Bunny.net](https://bunny.net?ref=revw3mehej)
