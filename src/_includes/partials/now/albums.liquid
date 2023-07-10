@@ -1,0 +1,23 @@
+{% if music.size > 0 %}
+  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+    {% heroicon "outline" "musical-note" "Albums" "height=28" %}
+    <div class="ml-1">Albums</div>
+  </h2>
+  <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
+    {% for album in music.albums %}
+      <a href="https://rateyourmusic.com/search?searchtype=l&searchterm={{album.name | escape}}%20{{ album.artist | escape }}" title="{{album.name | escape}} by {{ album.artist | escape }}">
+        <div class="relative block h-full">
+          <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
+          <div class="absolute left-1 bottom-2 drop-shadow-md">
+            <div class="px-1 text-xs font-bold text-white line-clamp-2">{{ album.name }}</div>
+            <div class="px-1 text-xs text-white line-clamp-2">
+              {{ album.artist }}
+            </div>
+          </div>
+          {%- capture albumName %}{{ album.name | escape }}{% endcapture -%}
+          {% image album.art, albumName, 'rounded-lg w-full h-full', '225px' %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

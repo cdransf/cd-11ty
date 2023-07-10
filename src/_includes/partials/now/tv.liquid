@@ -1,0 +1,24 @@
+{% if tv.size > 0 %}
+  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+    {% heroicon "outline" "tv" "TV" "height=28" %}
+    <div class="ml-1">TV</div>
+  </h2>
+  <div class="grid grid-cols-3 gap-2 md:grid-cols-6 not-prose">
+    {% for episode in tv %}
+      <a href="https://trakt.tv/shows/{{episode.show.ids.slug}}/seasons/{{ episode.episode.season }}/episodes/{{ episode.episode.number }}" title="{{ episode.episode.title | escape}} {{ episode.show.title | escape }}">
+        <div class="relative block" style="max-width:226px">
+          <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
+          <div class="absolute left-1 bottom-2 drop-shadow-md">
+            <div class="px-1 text-xs font-bold text-white">{{ episode.episode.title }}</div>
+            <div class="px-1 text-xs text-white">
+              {{ episode.show.title }} • <strong>S{{ episode.episode.season }}E{{ episode.episode.number }}</strong>
+            </div>
+          </div>
+          {%- capture tvImg %}{{episode.show.title | tv}}{% endcapture -%}
+          {%- capture tvName %}{{ episode.episode.title | escape}} • {{ episode.show.title | escape }}{% endcapture -%}
+          {% image tvImg, tvName, 'rounded-lg w-full', '180px' %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

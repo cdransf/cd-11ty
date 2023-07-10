@@ -1,0 +1,15 @@
+{% if links.size > 0 %}
+  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+    {% heroicon "outline" "link" "Links" "height=28" %}
+    <div class="ml-1">Links</div>
+  </h2>
+  <ul class="list-inside list-disc pl-5 md:pl-10">
+    {% for link in links %}
+      <li class="mt-1.5 mb-2">
+        <a href="{{link.url}}" title="{{link.title | escape}}">
+          {{ link.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

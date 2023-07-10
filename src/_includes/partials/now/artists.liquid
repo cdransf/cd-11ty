@@ -1,0 +1,24 @@
+{% if music.size > 0 %}
+  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+    {% heroicon "outline" "microphone" "Artists" "height=28" %}
+    <div class="ml-1">Artists</div>
+  </h2>
+  <div class="grid grid-cols-2 gap-2 md:grid-cols-4 not-prose">
+    {% for artist in music.artists %}
+      <a href="https://rateyourmusic.com/search?searchterm={{ artist.artist | escape }}" title="{{artist.artist | escape}}">
+        <div class="relative block">
+          <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
+          <div class="absolute left-1 bottom-2 drop-shadow-md">
+            <div class="px-1 text-xs font-bold text-white line-clamp-2">{{ artist.artist }}</div>
+            <div class="px-1 text-xs text-white">
+              {{ artist.plays }} plays
+            </div>
+          </div>
+          {%- capture artistImg %}{{ artist.artist | artist }}{% endcapture -%}
+          {%- capture artistName %}{{ artist.artist | escape }}{% endcapture -%}
+          {% image artistImg, artistName, 'rounded-lg w-full', '225px', 'eager' %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}
