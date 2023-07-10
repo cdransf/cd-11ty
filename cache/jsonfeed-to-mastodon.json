@@ -4843,7 +4843,10 @@
     "url": "https://openlibrary.org/search?q=1952616034",
     "content_text": "📖: Sustainable Web Design https://openlibrary.org/search?q=1952616034",
     "date_published": "2023-07-07T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110688274038151302"
+    ],
+    "lastTootTimestamp": 1688969025355
   },
   "https://openlibrary.org/search?q=9780316555678": {
     "id": "https://openlibrary.org/search?q=9780316555678",
