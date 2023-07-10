@@ -4869,5 +4869,16 @@
       "https://social.lol/users/cory/statuses/110686383503596050"
     ],
     "lastTootTimestamp": 1688940178029
+  },
+  "https://letterboxd.com/cdme/film/san-andreas/": {
+    "id": "https://letterboxd.com/cdme/film/san-andreas/",
+    "title": "🎥: San Andreas, 2015 - ★★½",
+    "url": "https://letterboxd.com/cdme/film/san-andreas/",
+    "content_text": "🎥: San Andreas, 2015 - ★★½ https://letterboxd.com/cdme/film/san-andreas/",
+    "date_published": "2023-07-10T13:34:25-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110690631636701867"
+    ],
+    "lastTootTimestamp": 1689004999403
   }
 }
