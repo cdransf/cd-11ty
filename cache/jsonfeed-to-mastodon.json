@@ -4843,7 +4843,10 @@
     "url": "https://openlibrary.org/search?q=1952616034",
     "content_text": "📖: Sustainable Web Design https://openlibrary.org/search?q=1952616034",
     "date_published": "2023-07-07T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110688274038151302"
+    ],
+    "lastTootTimestamp": 1688969025355
   },
   "https://openlibrary.org/search?q=9780316555678": {
     "id": "https://openlibrary.org/search?q=9780316555678",
@@ -4851,7 +4854,10 @@
     "url": "https://openlibrary.org/search?q=9780316555678",
     "content_text": "📖: Elysium Fire https://openlibrary.org/search?q=9780316555678",
     "date_published": "2023-07-07T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110687800745608235"
+    ],
+    "lastTootTimestamp": 1688961803428
   },
   "https://gizmodo.com/google-says-itll-scrape-everything-you-post-online-for-1850601486": {
     "id": "https://gizmodo.com/google-says-itll-scrape-everything-you-post-online-for-1850601486",
@@ -4863,5 +4869,16 @@
       "https://social.lol/users/cory/statuses/110686383503596050"
     ],
     "lastTootTimestamp": 1688940178029
+  },
+  "https://letterboxd.com/cdme/film/san-andreas/": {
+    "id": "https://letterboxd.com/cdme/film/san-andreas/",
+    "title": "🎥: San Andreas, 2015 - ★★½",
+    "url": "https://letterboxd.com/cdme/film/san-andreas/",
+    "content_text": "🎥: San Andreas, 2015 - ★★½ https://letterboxd.com/cdme/film/san-andreas/",
+    "date_published": "2023-07-10T13:34:25-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110690631636701867"
+    ],
+    "lastTootTimestamp": 1689004999403
   }
 }
