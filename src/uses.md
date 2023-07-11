@@ -29,7 +29,7 @@ Software and services that I use for work and my own enjoyment.
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Hardware</h3>
 
 - Midnight MacBook Air (2022 - M2)
-- 27" Dell Monitor (courtesy of a previous employer that didn't want it back)
+- 27" Dell Monitor
 - Apple Magic Keyboard
 - Apple Magic Trackpad
 - Homepod Mini for audio
