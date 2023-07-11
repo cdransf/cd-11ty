@@ -4902,5 +4902,16 @@
       "https://social.lol/users/cory/statuses/110693936425455601"
     ],
     "lastTootTimestamp": 1689055426471
+  },
+  "https://letterboxd.com/cdme/film/witness/": {
+    "id": "https://letterboxd.com/cdme/film/witness/",
+    "title": "🎥: Witness, 1985 - ★★½",
+    "url": "https://letterboxd.com/cdme/film/witness/",
+    "content_text": "🎥: Witness, 1985 - ★★½ https://letterboxd.com/cdme/film/witness/",
+    "date_published": "2023-07-11T11:48:18-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110695821210732966"
+    ],
+    "lastTootTimestamp": 1689084186241
   }
 }
