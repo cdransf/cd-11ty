@@ -445,10 +445,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.44.0.tgz#961a5903c74139390478bdc808bcde3fc45ab7af"
   integrity sha512-Ag+9YM4ocKQx9AarydN0KY2j0ErMHNIocPDrVo8zAE44xLTjEtz81OdR68/cydGtk6m6jDb5Za3r2useMzYmSw==
 
-"@extractus/feed-extractor@6.2.4":
-  version "6.2.4"
-  resolved "https://registry.yarnpkg.com/@extractus/feed-extractor/-/feed-extractor-6.2.4.tgz#a527d2bd870bd1a2e49ea1ec31044e19381e9fae"
-  integrity sha512-VqeFvRGkL9mo6Z/EzkXGJ1Z45F2h5jN/PrjZnMmkh67MzsEubdYGfZTsEtM+BTflA+jsKvtnIgGjU/sYFJFnWA==
+"@extractus/feed-extractor@6.3.0":
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/@extractus/feed-extractor/-/feed-extractor-6.3.0.tgz#e0512c2aee837ddb3afc27aa47ad2e7123a2b4cb"
+  integrity sha512-OOMrJEvPmpNNUxjVgWoABgJfiMe0Nu9WGRkeguX00ZeJh2W7YKh06lP9U/VEYu8RoQCrWJ3pJNphgIzXZsrkvw==
   dependencies:
     bellajs "^11.1.2"
     cross-fetch "^4.0.0"
