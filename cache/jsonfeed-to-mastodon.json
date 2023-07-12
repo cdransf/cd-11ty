@@ -4946,5 +4946,16 @@
       "https://social.lol/users/cory/statuses/110699598907537168"
     ],
     "lastTootTimestamp": 1689141829116
+  },
+  "https://matt-rickard.com/why-frameworks-fail": {
+    "id": "https://matt-rickard.com/why-frameworks-fail",
+    "title": "🔗: Why Frameworks Fail",
+    "url": "https://matt-rickard.com/why-frameworks-fail",
+    "content_text": "🔗: Why Frameworks Fail https://matt-rickard.com/why-frameworks-fail",
+    "date_published": "2023-07-11T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110701483593046342"
+    ],
+    "lastTootTimestamp": 1689170587122
   }
 }
