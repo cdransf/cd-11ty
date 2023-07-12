@@ -4913,5 +4913,24 @@
       "https://social.lol/users/cory/statuses/110695821210732966"
     ],
     "lastTootTimestamp": 1689084186241
+  },
+  "https://adactio.com/journal/20315": {
+    "id": "https://adactio.com/journal/20315",
+    "title": "🔗: Permission",
+    "url": "https://adactio.com/journal/20315",
+    "content_text": "🔗: Permission https://adactio.com/journal/20315",
+    "date_published": "2023-07-11T00:00:00-08:00",
+    "toots": []
+  },
+  "https://werd.io/2023/licensing-site-content-using-a-text-file": {
+    "id": "https://werd.io/2023/licensing-site-content-using-a-text-file",
+    "title": "🔗: Licensing site content using a text file",
+    "url": "https://werd.io/2023/licensing-site-content-using-a-text-file",
+    "content_text": "🔗: Licensing site content using a text file https://werd.io/2023/licensing-site-content-using-a-text-file",
+    "date_published": "2023-07-03T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110698220765868760"
+    ],
+    "lastTootTimestamp": 1689120800337
   }
 }
