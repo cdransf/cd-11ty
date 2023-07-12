@@ -4935,5 +4935,16 @@
       "https://social.lol/users/cory/statuses/110698220765868760"
     ],
     "lastTootTimestamp": 1689120800337
+  },
+  "https://www.nytimes.com/2023/07/07/magazine/guam-american-military.html": {
+    "id": "https://www.nytimes.com/2023/07/07/magazine/guam-american-military.html",
+    "title": "🔗: The America That Americans Forget",
+    "url": "https://www.nytimes.com/2023/07/07/magazine/guam-american-military.html",
+    "content_text": "🔗: The America That Americans Forget https://www.nytimes.com/2023/07/07/magazine/guam-american-military.html",
+    "date_published": "2023-07-07T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110699598907537168"
+    ],
+    "lastTootTimestamp": 1689141829116
   }
 }
