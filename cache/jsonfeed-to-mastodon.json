@@ -4920,7 +4920,10 @@
     "url": "https://adactio.com/journal/20315",
     "content_text": "🔗: Permission https://adactio.com/journal/20315",
     "date_published": "2023-07-11T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110698758417405074"
+    ],
+    "lastTootTimestamp": 1689129004232
   },
   "https://werd.io/2023/licensing-site-content-using-a-text-file": {
     "id": "https://werd.io/2023/licensing-site-content-using-a-text-file",
