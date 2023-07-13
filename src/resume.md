@@ -19,7 +19,11 @@ meta:
 ---
 Software engineer with a wide range of experience covering frontend and mobile application development.
 
-[GitHub](https://github.com/cdransf) • [LinkedIn](https://www.linkedin.com/in/cdransf/) • [Book a meeting](https://savvycal.com/coryd/quick-call)
+<div class="flex gap-3">
+  {% render "icons/github.liquid" %}
+  {% render "icons/linkedin.liquid" %}
+  {% render "icons/calendar.liquid" %}
+</div>
 
 ### Experience
 
