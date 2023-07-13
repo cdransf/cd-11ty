@@ -25,6 +25,7 @@
     "@commitlint/config-conventional": "^17.6.6",
     "@extractus/feed-extractor": "6.2.4",
     "@fontsource/inter": "^5.0.5",
+    "@netlify/plugin-lighthouse": "^5.0.0",
     "@quasibit/eleventy-plugin-schema": "^1.11.0",
     "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
@@ -72,8 +73,5 @@
     "**/*.{md,mkd,mdwn,mdown,mdtxt,mdtext,markdown}": [
       "npx markdownlint --config ./markdownlint.config.json --fix"
     ]
-  },
-  "dependencies": {
-    "@netlify/plugin-lighthouse": "^5.0.0"
   }
 }
