@@ -72,5 +72,8 @@
     "**/*.{md,mkd,mdwn,mdown,mdtxt,mdtext,markdown}": [
       "npx markdownlint --config ./markdownlint.config.json --fix"
     ]
+  },
+  "dependencies": {
+    "@netlify/plugin-lighthouse": "^5.0.0"
   }
 }
