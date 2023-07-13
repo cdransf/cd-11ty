@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o _site/assets/styles/tailwind.css --minify",
-    "prepare": "husky install && touch ./.git/COMMIT_EDITMSG"
+    "prepare": "husky install && touch ./.git/COMMIT_EDITMSG",
+    "postbuild": "webmention _site/feed.xml --limit 1 --send"
   },
   "keywords": [],
   "author": "Cory Dransfeldt",
@@ -61,6 +62,9 @@
     "sanitize-html": "^2.11.0",
     "striptags": "^3.2.0",
     "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "@remy/webmention": "^1.4.5"
   },
   "lint-staged": {
     "**/*.{js,ts,json}": [
