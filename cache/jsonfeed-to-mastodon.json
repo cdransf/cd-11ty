@@ -4964,7 +4964,10 @@
     "url": "https://letterboxd.com/cdme/film/transformers-rise-of-the-beasts/",
     "content_text": "🎥: Transformers: Rise of the Beasts, 2023 - ★★★ https://letterboxd.com/cdme/film/transformers-rise-of-the-beasts/",
     "date_published": "2023-07-12T21:50:42-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110704426210552398"
+    ],
+    "lastTootTimestamp": 1689215487892
   },
   "https://coryd.dev/posts/2023/popular-posts-widget-using-eleventy-plausible/": {
     "id": "https://coryd.dev/posts/2023/popular-posts-widget-using-eleventy-plausible/",
@@ -4976,5 +4979,13 @@
       "https://social.lol/users/cory/statuses/110703880392083159"
     ],
     "lastTootTimestamp": 1689207159391
+  },
+  "https://blog.testdouble.com/posts/2023-07-12-the-looming-demise-of-the-10x-developer/": {
+    "id": "https://blog.testdouble.com/posts/2023-07-12-the-looming-demise-of-the-10x-developer/",
+    "title": "🔗: The Looming Demise of the 10x Developer",
+    "url": "https://blog.testdouble.com/posts/2023-07-12-the-looming-demise-of-the-10x-developer/",
+    "content_text": "🔗: The Looming Demise of the 10x Developer https://blog.testdouble.com/posts/2023-07-12-the-looming-demise-of-the-10x-developer/",
+    "date_published": "2023-07-12T00:00:00-08:00",
+    "toots": []
   }
 }
