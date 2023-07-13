@@ -4,7 +4,7 @@
 [[plugins]]
 package = "@netlify/plugin-lighthouse"
   [plugins.inputs.audits]
-  output_path = "reports/lighthouse/index.html"
+  output_path = "reports/lighthouse.html"
 
 ###
 # OPTIMIZATION
