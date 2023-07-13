@@ -4990,5 +4990,16 @@
       "https://social.lol/users/cory/statuses/110704787149263301"
     ],
     "lastTootTimestamp": 1689220995387
+  },
+  "https://letterboxd.com/cdme/film/ronin/": {
+    "id": "https://letterboxd.com/cdme/film/ronin/",
+    "title": "🎥: Ronin, 1998 - ★★★★",
+    "url": "https://letterboxd.com/cdme/film/ronin/",
+    "content_text": "🎥: Ronin, 1998 - ★★★★ https://letterboxd.com/cdme/film/ronin/",
+    "date_published": "2023-07-13T19:17:26-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110708561889698885"
+    ],
+    "lastTootTimestamp": 1689278593348
   }
 }
