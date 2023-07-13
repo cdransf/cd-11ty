@@ -1,5 +1,5 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
-const heroIcons = require('@cdransf/eleventy-plugin-heroicons')
+const tablerIcons = require('eleventy-plugin-tabler-icons')
 const pluginUnfurl = require('eleventy-plugin-unfurl')
 const pluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier')
 const schema = require('@quasibit/eleventy-plugin-schema')
@@ -22,7 +22,7 @@ require('dotenv-flow').config()
 module.exports = function (eleventyConfig) {
   // plugins
   eleventyConfig.addPlugin(syntaxHighlight)
-  eleventyConfig.addPlugin(heroIcons)
+  eleventyConfig.addPlugin(tablerIcons)
   eleventyConfig.addPlugin(pluginUnfurl)
   eleventyConfig.addPlugin(pluginFilesMinifier)
   eleventyConfig.addPlugin(schema)

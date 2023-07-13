@@ -2,44 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/*noinspection Annotator*/
 ::-moz-selection {
   color: theme(colors.white);
   background: theme(colors.purple.400);
 }
 
-/*noinspection Annotator*/
 ::selection {
   color: theme(colors.white);
   background: theme(colors.purple.400);
-}
-
-.toggle-light {
-  @apply inline;
-}
-
-.dark .toggle-light {
-  @apply hidden;
-}
-
-.toggle-dark {
-  @apply hidden;
-}
-
-.dark .toggle-dark {
-  @apply inline;
 }
 
 .icon-inline svg {
   @apply inline;
 }
 
-.active {
+.active,
+.active svg {
   color: theme(colors.purple.600) !important;
-}
-
-.dark .active {
-  color: theme(colors.purple.400) !important;
 }
 
 .active:hover,
@@ -63,11 +42,6 @@ h2 > a.header-anchor {
 a,
 .prose a {
   color: theme(colors.purple.600);
-}
-
-.dark a,
-.dark .prose a {
-  color: theme(colors.purple.400);
 }
 
 a:hover,
@@ -123,4 +97,32 @@ pre {
 .tag--button:active,
 .tag--button:focus {
   background: theme(colors.purple.500);
+}
+
+.link--icon svg {
+  color: theme(colors.gray.700)
+}
+
+.link--icon:hover svg {
+  color: theme(colors.purple.500)
+}
+
+@media (prefers-color-scheme: dark) {
+  .active,
+  .active svg {
+    color: theme(colors.purple.400) !important;
+  }
+
+  a,
+  .prose a {
+    color: theme(colors.purple.400);
+  }
+
+  .link--icon svg {
+    color: theme(colors.gray.200)
+  }
+
+  .link--icon:hover svg {
+    color: theme(colors.purple.500)
+  }
 }

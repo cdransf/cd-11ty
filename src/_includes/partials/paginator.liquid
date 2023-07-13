@@ -2,7 +2,7 @@
   {% if pagination.href.previous %}
     <a href="{{ pagination.href.previous }}">
       <button class="py-2 pr-4 dark:text-purple-400 text-purple-600 hover:text-purple-500 dark:hover:text-purple-500" aria-label="Previous page">
-        {% heroicon "outline" "arrow-left" "Previous" "width=20 height=20" %}
+        {% tablericon "arrow-left" "Previous" "width=20 height=20" %}
       </button>
     </a>
   {% else %}
@@ -10,7 +10,7 @@
       class="py-2 pr-4 cursor-not-allowed disabled:opacity-50"
       aria-label="Previous page (disabled)"
       disabled>
-      {% heroicon "outline" "arrow-left" "Prevous" "width=20 height=20" %}
+      {% tablericon "arrow-left" "Prevous" "width=20 height=20" %}
     </button>
   {% endif %}
   <div class="text-center">
@@ -19,7 +19,7 @@
   {% if pagination.href.next %}
     <a href="{{ pagination.href.next }}">
       <button class="py-2 pl-4 dark:text-purple-400 text-purple-600 hover:text-purple-500 dark:hover:text-purple-500" aria-label="Next page">
-        {% heroicon "outline" "arrow-right" "Next" "width=20 height=20" %}
+        {% tablericon "arrow-right" "Next" "width=20 height=20" %}
       </button>
     </a>
   {% else %}
@@ -27,7 +27,7 @@
       class="py-2 pl-4 cursor-not-allowed disabled:opacity-50"
       aria-label="Next page (disabled)"
       disabled>
-      {% heroicon "outline" "arrow-right" "Next" "width=20 height=20" %}
+      {% tablericon "arrow-right" "Next" "width=20 height=20" %}
     </button>
   {% endif %}
 </nav>

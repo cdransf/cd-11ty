@@ -240,11 +240,6 @@
   resolved "https://registry.yarnpkg.com/@catppuccin/tailwindcss/-/tailwindcss-0.1.6.tgz#d97c491e1523ead83009e32d0a34c364c2a0ca5b"
   integrity sha512-V+Y0AwZ5SSyvOVAcDl7Ng30xy+m82OKnEJ+9+kcZZ7lRyXuZrAb2GScdq9XR3v+ggt8qiZ/G4TvaC9cJ88AAXA==
 
-"@cdransf/eleventy-plugin-heroicons@^1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@cdransf/eleventy-plugin-heroicons/-/eleventy-plugin-heroicons-1.3.2.tgz#8577330fa34aa6756898898014914b0880582e9f"
-  integrity sha512-sPggfG+nQvVY1hlrTZDbUK5/v7peMR3k6rssuVKm1E0sCL/x+I/lbuvpDp0MXE22chIn5M0Y/GWbSx8zo0sYmw==
-
 "@commitlint/cli@^17.6.6":
   version "17.6.6"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-17.6.6.tgz#416da9c45901323e5bf931aa1eac5995a3aa251c"
@@ -1956,6 +1951,11 @@ electron-to-chromium@^1.4.431:
   version "1.4.459"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.459.tgz#25a23370f4ae8aaa8f77aaf00133aa4994f4148e"
   integrity sha512-XXRS5NFv8nCrBL74Rm3qhJjA2VCsRFx0OjHKBMPI0otij56aun8UWiKTDABmd5/7GTR021pA4wivs+Ri6XCElg==
+
+eleventy-plugin-tabler-icons@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-tabler-icons/-/eleventy-plugin-tabler-icons-1.0.6.tgz#a6c06d1fc8868e25a67808bb0fffe15c285f77db"
+  integrity sha512-JWVm1syOnkwJFsXj8Q06phvklrg7Pzk9CU+OLPSuAgUacCs7ctk/1h8CXTgpFB7//wOa0s4xrK5pJoB9biQxzQ==
 
 eleventy-plugin-unfurl@^1.0.0:
   version "1.0.0"

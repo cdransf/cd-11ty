@@ -53,7 +53,7 @@ And rendered using a liquid template:
 {% assign posts = posts | getPopularPosts: analytics %}
 <div class="not-prose">
   <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
-    {% heroicon "outline" "fire" "Popular" "height=28" %}
+    {% tablericon "fire" "Popular" "height=28" %}
     <div class="ml-1">Popular posts</div>
   </h2>
   <ul class="list-inside list-disc pl-5 md:pl-10">
