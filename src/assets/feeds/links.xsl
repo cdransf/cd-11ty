@@ -46,7 +46,7 @@
                   Feed preview • links
                 </h2>
                 <p>Recently read and favorited links
-                  <a href="https://getmatter.com">sourced from my Matter favorites.</a>
+                  <a href="https://readwise.io/reader">sourced from my Reader favorites.</a>
                 </p>
                 <p>
                   <xsl:value-of select="atom:feed/atom:description"/>
