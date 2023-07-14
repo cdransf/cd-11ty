@@ -3,8 +3,6 @@
 ###
 [[plugins]]
 package = "@netlify/plugin-lighthouse"
-  [plugins.inputs]
-  output_path = "reports/lighthouse/index.html"
 
 ###
 # OPTIMIZATION
