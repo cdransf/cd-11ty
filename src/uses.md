@@ -79,7 +79,7 @@ Software and services that I use for work and my own enjoyment.
 - [1Password](https://1password.com)
 - [Trakt](https://trakt.tv)
 - [Letterboxd](https://letterboxd.com)
-- [Matter](https://getmatter.com)
+- [Reader](https://readwise.io/read)
 - [Whereby](https://whereby.com)
 - [Slack](http://slack.com)
 - [Discord](http://discord.com)

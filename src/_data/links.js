@@ -1,20 +1,23 @@
 const EleventyFetch = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
-  const MATTER_TOKEN = process.env.API_TOKEN_MATTER
-  const headers = { Authorization: `Bearer ${MATTER_TOKEN}` }
-  const url = `https://web.getmatter.com/api/library_items/favorites_feed`
+  const READWISE_TOKEN = process.env.API_TOKEN_READWISE
+  const headers = { Authorization: `Token ${READWISE_TOKEN}` }
+  const url = 'https://readwise.io/api/v3/list?category=article'
   const res = EleventyFetch(url, {
     duration: '1h',
     type: 'json',
     fetchOptions: { headers },
   })
-  const favorites = await res
-  return favorites.feed.splice(0, 5).map(link => {
+  const data = await res
+  const links = data.results.filter((result) => Object.keys(result.tags).includes('share'))
+  return links.splice(0, 5).map((link) => {
     return {
-      title: link.content.title,
-      url: link.content.url,
-      time: link.content['publication_date']
+      title: link['title'],
+      url: link['source_url'],
+      time: link['published_date'],
+      summary: link['summary'],
+      id: link['id'],
     }
   })
 }
