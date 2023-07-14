@@ -15,7 +15,7 @@ module.exports = async function () {
     return {
       title: link['title'],
       url: link['source_url'],
-      time: link['published_date'],
+      date: new Date(link['published_date']),
       summary: link['summary'],
       id: link['id'],
     }

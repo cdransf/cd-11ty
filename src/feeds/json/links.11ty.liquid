@@ -13,7 +13,7 @@ permalink: '/links.json'
   "title": "{{ link.title | escape }}",
   "url": "{{ link.url }}",
   "content_text": "{{ link.summary | escape }}",
-  "date_published": "{{ link.time | date: "%Y-%m-%dT%H:%M:%S-08:00" }}"
+  "date_published": "{{ link.date | date: "%Y-%m-%dT%H:%M:%S-08:00" }}"
   }{% if not forloop.last %},{% endif %}
 {% endfor %}
 ]

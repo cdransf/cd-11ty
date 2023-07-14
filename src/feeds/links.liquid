@@ -5,13 +5,13 @@ permalink: /links.xml
 {% layout "./_includes/feeds/links.liquid" %}
 {% block title %}Links • Cory Dransfeldt{% endblock %}
 {% block self %}links.xml{% endblock %}
-{% block update %}{{ articles[0].time | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}
+{% block update %}{{ link[0].date | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}
 {% block entries %}
 {% for link in links %}
   <entry>
     <title>{{ link.title | escape }}</title>
     <link href="{{link.link}}" />
-    <updated>{{ link.time | date: "%m.%d.%Y" }}</updated>
+    <updated>{{ link.date | date: "%Y-%m-%dT%H:%M:%S-08:00" }}</updated>
     <id>{{ link.url }}</id>
     <content type="html"></content>
   </entry>
