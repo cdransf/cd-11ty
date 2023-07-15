@@ -5056,5 +5056,16 @@
       "https://social.lol/users/cory/statuses/110716110649802782"
     ],
     "lastTootTimestamp": 1689393778300
+  },
+  "https://letterboxd.com/cdme/film/top-gun/": {
+    "id": "https://letterboxd.com/cdme/film/top-gun/",
+    "title": "🎥: Top Gun, 1986 - ★★",
+    "url": "https://letterboxd.com/cdme/film/top-gun/",
+    "content_text": "🎥: Top Gun, 1986 - ★★ https://letterboxd.com/cdme/film/top-gun/",
+    "date_published": "2023-07-15T14:09:44-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110718942340487904"
+    ],
+    "lastTootTimestamp": 1689436986478
   }
 }
