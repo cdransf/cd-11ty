@@ -11,6 +11,7 @@ module.exports = {
   mdToHtml: (content) => {
     return marked.parse(content)
   },
+  dashLower: (string) => string.replace(/\s+/g, '-').toLowerCase(),
   getPostImage: (image) => {
     if (image && image !== '') return image
     return '/assets/img/social-card.webp'
@@ -40,7 +41,8 @@ module.exports = {
     }
 
     const filtered =
-      webmentions.filter((entry) => entry['wm-target'] === `https://coryd.dev${url}`)
+      webmentions
+        .filter((entry) => entry['wm-target'] === `https://coryd.dev${url}`)
         .filter((entry) => allowedTypes.includes(entry['wm-property'])) || []
 
     filtered.forEach((m) => {

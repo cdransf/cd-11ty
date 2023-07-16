@@ -10,7 +10,7 @@ const aliasArtists = (array) => {
 }
 
 const sanitizeAlbums = (array) => {
-  const denyList = /(\[|\()(Deluxe Edition|Special Edition|Remastered)(\]|\))/i;
+  const denyList = /(\[|\()(Deluxe Edition|Special Edition|Remastered)(\]|\))/i
   array.forEach((a) => {
     a.name = a.name.replace(denyList, '')
   })
@@ -51,7 +51,7 @@ module.exports = async function () {
   while (CURRENT_PAGE < PAGES && hasNextPage) {
     const URL = `https://api.music.apple.com/v1/me/recent/played/tracks?limit=${PAGE_SIZE}&offset=${
       PAGE_SIZE * CURRENT_PAGE
-    }`
+    }&extend=album`
     const tracks = await fetch(URL, {
       headers: {
         'Content-Type': 'application/json',
@@ -81,6 +81,7 @@ module.exports = async function () {
         name: track.attributes['albumName'],
         artist: track.attributes['artistName'],
         art: track.attributes.artwork.url.replace('{w}', '300').replace('{h}', '300'),
+        url: track.attributes.url,
         plays: 1,
       }
     } else {
