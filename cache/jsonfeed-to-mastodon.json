@@ -5089,5 +5089,16 @@
       "https://social.lol/users/cory/statuses/110724604552833420"
     ],
     "lastTootTimestamp": 1689523384948
+  },
+  "https://letterboxd.com/cdme/film/m3gan/": {
+    "id": "https://letterboxd.com/cdme/film/m3gan/",
+    "title": "🎥: M3GAN, 2022 - ★★½",
+    "url": "https://letterboxd.com/cdme/film/m3gan/",
+    "content_text": "🎥: M3GAN, 2022 - ★★½ https://letterboxd.com/cdme/film/m3gan/",
+    "date_published": "2023-07-16T17:35:55-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110725548818518693"
+    ],
+    "lastTootTimestamp": 1689537793321
   }
 }
