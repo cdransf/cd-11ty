@@ -51,7 +51,7 @@ module.exports = async function () {
   while (CURRENT_PAGE < PAGES && hasNextPage) {
     const URL = `https://api.music.apple.com/v1/me/recent/played/tracks?limit=${PAGE_SIZE}&offset=${
       PAGE_SIZE * CURRENT_PAGE
-    }&extend=album`
+    }&include[songs]=albums&extend=artistUrl`
     const tracks = await fetch(URL, {
       headers: {
         'Content-Type': 'application/json',
@@ -65,7 +65,6 @@ module.exports = async function () {
     if (tracks.data.length) res = [...res, ...tracks.data]
     CURRENT_PAGE++
   }
-
   res.forEach((track) => {
     if (!response.artists[track.attributes['artistName']]) {
       response.artists[track.attributes['artistName']] = {
@@ -81,7 +80,7 @@ module.exports = async function () {
         name: track.attributes['albumName'],
         artist: track.attributes['artistName'],
         art: track.attributes.artwork.url.replace('{w}', '300').replace('{h}', '300'),
-        url: track.attributes.url,
+        url: `https://song.link/${track['relationships'].albums.data.pop().attributes.url}`,
         plays: 1,
       }
     } else {
