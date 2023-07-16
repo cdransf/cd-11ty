@@ -45,7 +45,6 @@ _June 2021 - June 2022_
 _Jun 2019 - Jun 2021_
 
 - Contributed to the maintenance of a legacy Salesforce Commerce Cloud application, ensuring its continued functionality and usability.
-- Played a key role in the transition and development of a new SFRA-architecture based Salesforce Commerce Cloud application, improving efficiency and user experience.
 - Successfully rewrote and implemented core analytics and reporting data layer for SFRA implementation across all stores and regions, enabling better insights and decision-making.
 
 **Frontend Web Developer, [Harbor Freight Tools](https://harborfreight.com)**<br/>
@@ -60,21 +59,17 @@ _Nov 2015 - Sep 2018_
 - Led the successful development and launch of the Musician's Friend mobile application.
 - Developed, implemented, and maintained a customer lessons scheduling web application.
 - Collaborated with cross-functional teams to achieve project goals across front end, back end, services, and QA.
-- Implemented and maintained new features on all desktop and mobile websites and properties.
 
 **Quality Assurance Developer, Technicolor**<br/>
 _Jun 2015 - Nov 2015_
 
 - Developed and implemented an automated testing suite using Protractor, Jasmine, and Selenium to improve overall testing efficiency
 - Effectively tracked and managed manual testing efforts for various functionality, ensuring thorough coverage
-- Demonstrated exceptional bug tracking and reporting skills by efficiently filing and monitoring platform bugs
-- Successfully managed build and deployment schedule to ensure timely releases
 
 **Frontend Web Developer, [Pressed Juicery](https://pressed.com)**<br/>
 _Dec 2014 - May 2015_
 
 - Led the responsive/mobile redesign of company's website and custom ecommerce platform, resulting in improved user experience and increased online sales.
-- Collaborated with existing static site sections to implement a staged, section by section redesign approach, ensuring smooth integration and minimizing disruption.
 - Developed clean and reusable styling for the company's website, enhancing its visual appeal and brand consistency.
 
 ### Education
