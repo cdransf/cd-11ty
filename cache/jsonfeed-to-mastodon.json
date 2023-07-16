@@ -5078,5 +5078,16 @@
       "https://social.lol/users/cory/statuses/110720874899318944"
     ],
     "lastTootTimestamp": 1689466475066
+  },
+  "https://letterboxd.com/cdme/film/sisu-2022/": {
+    "id": "https://letterboxd.com/cdme/film/sisu-2022/",
+    "title": "🎥: Sisu, 2022 - ★★★½",
+    "url": "https://letterboxd.com/cdme/film/sisu-2022/",
+    "content_text": "🎥: Sisu, 2022 - ★★★½ https://letterboxd.com/cdme/film/sisu-2022/",
+    "date_published": "2023-07-16T14:34:40-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110724604552833420"
+    ],
+    "lastTootTimestamp": 1689523384948
   }
 }
