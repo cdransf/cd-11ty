@@ -1,26 +1,17 @@
-<script
-  src="https://the-claw-webring-widget.netlify.app/the-claw-webring-widget.mjs"
-  type="module"
-></script>
 <div class="mb-4">
-  <the-claw-webring-widget fullWidth="true">
-    <div style="color: inherit; font-family: system-ui; padding: 1rem; font-size: 1rem;">
-      <div
-        style="display: grid; gap: 0.5rem 1rem; align-items: center; margin-bottom: 1rem; justify-content: flex-start; grid-template-areas: 'image title' 'image view';"
-      >
-        <img
-          src="https://the-claw-webring.netlify.app/img/theclaw.png"
-          alt="The Claw Webring"
-          style="grid-area: image; height: 4rem; transform: rotate(-8deg);"
-        />
-        <h2 style="grid-area: title; font-size: 1.4rem; margin: 0;">The Claw Webring</h2>
-        <a
-          href="https://github.com/whitep4nth3r/the-claw-webring"
-          style="grid-area: view; margin: 0; color: inherit;"
-        >
-          View on GitHub
-        </a>
-      </div>
-    </div>
-  </the-claw-webring-widget>
+  <div class="w-full flex justify-center">
+    {% image './src/assets/img/webrings/theclaw.png', 'The Claw Webring', '', '200px' %}
+  </div>
+  <h3 class="m-0 text-xl font-bold leading-tight tracking-normal dark:text-gray-200 md:text-2xl mb-6 text-center">
+    The Claw Webring
+  </h3>
+  <div class="flex justify-center">
+    <a href="https://github.com/whitep4nth3r/the-claw-webring" class="flex flex-row items-start md:items-center font-semibold py-2 px-4 rounded-full !no-underline !text-white dark:text-gray-900 bg-purple-600 dark:bg-purple-400 hover:bg-purple-500">
+        <span class="pt-1 md:pt-0 mr-1">
+          {% tablericon "user-plus" "Join!" "width=20 height=20" %}
+        </span>
+      <span>Join!</span>
+    </a>
+  </div>
 </div>
+
