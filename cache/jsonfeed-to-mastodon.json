@@ -5133,5 +5133,16 @@
       "https://social.lol/users/cory/statuses/110727436713129311"
     ],
     "lastTootTimestamp": 1689566600285
+  },
+  "https://letterboxd.com/cdme/film/alice-darling/": {
+    "id": "https://letterboxd.com/cdme/film/alice-darling/",
+    "title": "🎥: Alice, Darling, 2022 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/alice-darling/",
+    "content_text": "🎥: Alice, Darling, 2022 - ★★★ https://letterboxd.com/cdme/film/alice-darling/",
+    "date_published": "2023-07-17T12:27:57-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110729794749646085"
+    ],
+    "lastTootTimestamp": 1689602581262
   }
 }
