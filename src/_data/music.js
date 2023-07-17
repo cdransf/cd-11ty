@@ -80,7 +80,9 @@ module.exports = async function () {
         name: track.attributes['albumName'],
         artist: track.attributes['artistName'],
         art: track.attributes.artwork.url.replace('{w}', '300').replace('{h}', '300'),
-        url: `https://song.link/${track['relationships'].albums.data.pop().attributes.url}`,
+        url: track['relationships']
+          ? `https://song.link/${track['relationships'].albums.data.pop().attributes.url}`
+          : `https://rateyourmusic.com/search?searchtype=l&searchterm=${track.attributes['albumName']}%20${track.attributes['artistName']}`,
         plays: 1,
       }
     } else {

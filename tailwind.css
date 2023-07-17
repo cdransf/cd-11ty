@@ -103,6 +103,10 @@ pre {
   stroke-width: 1.4;
 }
 
+.icon--bold [data-tablericon-name] {
+  stroke-width: 2;
+}
+
 .link--icon svg {
   color: theme(colors.gray.700)
 }
