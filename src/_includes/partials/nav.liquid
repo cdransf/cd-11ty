@@ -1,10 +1,10 @@
 <nav>
   <ul class="flex">
     <li class="mr-6">
-      <a class="font-medium text-gray-700 hover:text-purple-500 dark:text-gray-200 dark:hover:text-purple-500{% if page.url == '/now/' %} active{% endif %}" href="/now">Now</a>
+      <a class="text-gray-700 hover:text-purple-500 dark:text-gray-200 dark:hover:text-purple-500{% if page.url == '/now/' %} active{% endif %}" href="/now">Now</a>
     </li>
     <li class="mr-6">
-      <a class="font-medium text-gray-700 hover:text-purple-500 dark:text-gray-200 dark:hover:text-purple-500{% if page.url == '/about/' %} active{% endif %}" href="/about">About</a>
+      <a class="text-gray-700 hover:text-purple-500 dark:text-gray-200 dark:hover:text-purple-500{% if page.url == '/about/' %} active{% endif %}" href="/about">About</a>
     </li>
     <li class="mr-6">
       {% render "icons/tags.liquid", page: page %}

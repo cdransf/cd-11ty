@@ -99,6 +99,10 @@ pre {
   background: theme(colors.purple.500);
 }
 
+[data-tablericon-name] {
+  stroke-width: 1.25;
+}
+
 .link--icon svg {
   color: theme(colors.gray.700)
 }
