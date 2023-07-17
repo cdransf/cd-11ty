@@ -28,4 +28,4 @@ I build, maintain and design web applications. I've been coding professionally s
 
 I tend to write about whatever strikes me, with a focus on development, technology, automation or issues I run into with these things. This is all typically light on editing with and heavy on spur of the moment thoughts.
 
-[You can also see what I'm doing now](/now).
+[You can also see what I'm doing now](/now) or [check out the webrings I'm a member of](/webrings).
