@@ -14,20 +14,21 @@ const sanitizeAlbum = (album) => {
 
 const titleCase = (string) => {
   const exceptions = [
-    'of',
-    'the',
+    'a',
     'and',
     'but',
+    'an',
     'for',
     'if',
-    'nor',
-    'or',
-    'so',
-    'yet',
-    'a',
-    'an',
+    'in',
     'is',
     'it',
+    'nor',
+    'of',
+    'or',
+    'so',
+    'the',
+    'yet',
   ]
   if (!string) return ''
   return string
