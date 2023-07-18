@@ -13,7 +13,22 @@ const sanitizeAlbum = (album) => {
 }
 
 const titleCase = (string) => {
-  const exceptions = ['of', 'the', 'and']
+  const exceptions = [
+    'of',
+    'the',
+    'and',
+    'but',
+    'for',
+    'if',
+    'nor',
+    'or',
+    'so',
+    'yet',
+    'a',
+    'an',
+    'is',
+    'it',
+  ]
   if (!string) return ''
   return string
     .toLowerCase()
