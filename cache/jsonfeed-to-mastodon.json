@@ -5166,5 +5166,16 @@
       "https://social.lol/users/cory/statuses/110732738450058577"
     ],
     "lastTootTimestamp": 1689647498393
+  },
+  "https://letterboxd.com/cdme/film/the-recruit/": {
+    "id": "https://letterboxd.com/cdme/film/the-recruit/",
+    "title": "🎥: The Recruit, 2003 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/the-recruit/",
+    "content_text": "🎥: The Recruit, 2003 - ★★★ https://letterboxd.com/cdme/film/the-recruit/",
+    "date_published": "2023-07-18T11:44:45-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110735456930101877"
+    ],
+    "lastTootTimestamp": 1689688979109
   }
 }
