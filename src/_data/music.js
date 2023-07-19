@@ -89,6 +89,7 @@ const deriveCharts = (tracks) => {
     if (!charts.artists[track.artist]) {
       charts.artists[track.artist] = {
         artist: track.artist,
+        url: `https://rateyourmusic.com/search?searchterm=${encodeURI(track.artist)}`,
         plays: 1,
       }
     } else {
