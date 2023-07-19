@@ -13,7 +13,8 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', ...defaultTheme.fontFamily.mono],
       },
       backgroundImage: {
         'cover-gradient':
