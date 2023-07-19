@@ -95,9 +95,11 @@ module.exports = async function () {
     const formattedArtist = titleCase(aliasArtist(track.attributes['artistName']))
     const formattedAlbum = titleCase(sanitizeMedia(track.attributes['albumName']))
     const formattedTrack = sanitizeMedia(track.attributes['name'])
+
     if (!charts.artists[formattedArtist]) {
       charts.artists[formattedArtist] = {
         artist: formattedArtist,
+        url: `https://rateyourmusic.com/search?searchterm=${encodeURI(formattedArtist)}`,
         plays: 1,
       }
     } else {
@@ -111,7 +113,9 @@ module.exports = async function () {
         art: track.attributes.artwork.url.replace('{w}', '300').replace('{h}', '300'),
         url: track['relationships']
           ? `https://song.link/${track['relationships'].albums.data.pop().attributes.url}`
-          : `https://rateyourmusic.com/search?searchtype=l&searchterm=${formattedAlbum}%20${formattedArtist}`,
+          : `https://rateyourmusic.com/search?searchtype=l&searchterm=${encodeURI(
+              formattedAlbum
+            )}%20${encodeURI(formattedArtist)}`,
         plays: 1,
       }
     } else {
