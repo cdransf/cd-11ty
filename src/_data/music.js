@@ -7,9 +7,10 @@ const aliasArtist = (artist) => {
   return artist
 }
 
-const sanitizeAlbum = (album) => {
-  const denyList = /(\[|\()(Deluxe Edition|Special Edition|Remastered)(\]|\))/i
-  return album.replace(denyList, '')
+const sanitizeMedia = (media) => {
+  const denyList =
+    /(\[|\()(Deluxe Edition|Special Edition|Remastered|Full Dynamic Range Edition)(\]|\))/i
+  return media.replace(denyList, '').trim()
 }
 
 const titleCase = (string) => {
@@ -62,7 +63,7 @@ module.exports = async function () {
   const asset = new AssetCache('recent_tracks_data')
   const PAGE_SIZE = 30
   const PAGES = 10
-  const response = {
+  const charts = {
     artists: {},
     albums: {},
     tracks: {},
@@ -91,44 +92,45 @@ module.exports = async function () {
     CURRENT_PAGE++
   }
   res.forEach((track) => {
-    const artist = titleCase(aliasArtist(track.attributes['artistName']))
-    const album = titleCase(sanitizeAlbum(track.attributes['albumName']))
-    if (!response.artists[artist]) {
-      response.artists[artist] = {
-        artist,
+    const formattedArtist = titleCase(aliasArtist(track.attributes['artistName']))
+    const formattedAlbum = titleCase(sanitizeMedia(track.attributes['albumName']))
+    const formattedTrack = sanitizeMedia(track.attributes['name'])
+    if (!charts.artists[formattedArtist]) {
+      charts.artists[formattedArtist] = {
+        artist: formattedArtist,
         plays: 1,
       }
     } else {
-      response.artists[artist].plays++
+      charts.artists[formattedArtist].plays++
     }
 
-    if (!response.albums[album]) {
-      response.albums[album] = {
-        name: album,
-        artist,
+    if (!charts.albums[formattedAlbum]) {
+      charts.albums[formattedAlbum] = {
+        name: formattedAlbum,
+        artist: formattedArtist,
         art: track.attributes.artwork.url.replace('{w}', '300').replace('{h}', '300'),
         url: track['relationships']
           ? `https://song.link/${track['relationships'].albums.data.pop().attributes.url}`
-          : `https://rateyourmusic.com/search?searchtype=l&searchterm=${album}%20${artist}`,
+          : `https://rateyourmusic.com/search?searchtype=l&searchterm=${formattedAlbum}%20${formattedArtist}`,
         plays: 1,
       }
     } else {
-      response.albums[album].plays++
+      charts.albums[formattedAlbum].plays++
     }
 
-    if (!response.tracks[track.attributes.name]) {
-      response.tracks[track.attributes.name] = {
-        name: track.attributes.name,
-        artist,
+    if (!charts.tracks[formattedTrack]) {
+      charts.tracks[formattedTrack] = {
+        name: formattedTrack,
+        artist: formattedArtist,
         plays: 1,
       }
     } else {
-      response.tracks[track.attributes.name].plays++
+      charts.tracks[formattedTrack].plays++
     }
   })
-  response.artists = sort(response.artists).splice(0, 8)
-  response.albums = sort(response.albums).splice(0, 8)
-  response.tracks = sort(response.tracks).splice(0, 5)
-  await asset.save(response, 'json')
-  return response
+  charts.artists = sort(charts.artists).splice(0, 8)
+  charts.albums = sort(charts.albums).splice(0, 8)
+  charts.tracks = sort(charts.tracks).splice(0, 5)
+  await asset.save(charts, 'json')
+  return charts
 }
