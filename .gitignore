@@ -3,7 +3,6 @@ _site
 node_modules
 .env.local
 .cache
-.vercel
 
 # logs
 *-error.log

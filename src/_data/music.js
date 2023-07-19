@@ -1,3 +1,5 @@
+const fs = require('fs')
+const _ = require('lodash')
 const { AssetCache } = require('@11ty/eleventy-fetch')
 const artistAliases = require('./json/artist-aliases.json')
 
@@ -9,8 +11,104 @@ const aliasArtist = (artist) => {
 
 const sanitizeMedia = (media) => {
   const denyList =
-    /(\[|\()(Deluxe Edition|Special Edition|Remastered|Full Dynamic Range Edition)(\]|\))/i
+    /-\s*(?:single|ep)\s*|(\[|\()(Deluxe Edition|Special Edition|Remastered|Full Dynamic Range Edition)(\]|\))/gi
   return media.replace(denyList, '').trim()
+}
+
+const diffTracks = (cache, tracks) => {
+  const trackCompareSet = Object.values(tracks)
+  const cacheCompareSet = Object.values(cache).sort((a, b) => a.time - b.time)
+  const diffedTracks = {}
+
+  const ONE_HOUR_MS = 3600000
+  const tracksOneHour = []
+  let trackIndex = 0
+  let trackTimer = 0
+
+  while (trackTimer < ONE_HOUR_MS) {
+    trackTimer = trackTimer + parseInt(trackCompareSet[trackIndex].duration)
+    tracksOneHour.push(trackCompareSet[trackIndex])
+    trackIndex++
+  }
+  const comparedTracks = _.differenceWith(
+    tracksOneHour,
+    cacheCompareSet.slice(-tracksOneHour.length),
+    (a, b) => _.isEqual(a.id, b.id)
+  )
+
+  for (let i = 0; i < comparedTracks.length; i++)
+    diffedTracks[`${comparedTracks[i]?.id}-${comparedTracks[i].time}`] = comparedTracks[i]
+
+  return diffedTracks
+}
+
+const formatTracks = (tracks, time) => {
+  let formattedTracks = {}
+  Object.values(tracks).forEach((track) => {
+    const artistFormatted = titleCase(aliasArtist(track.attributes['artistName']))
+    const albumFormatted = titleCase(sanitizeMedia(track.attributes['albumName']))
+    const trackFormatted = sanitizeMedia(track.attributes['name'])
+    if (!formattedTracks[track.attributes.name]) {
+      formattedTracks[track.attributes.name] = {
+        name: trackFormatted,
+        artist: artistFormatted,
+        album: albumFormatted,
+        art: track.attributes.artwork.url.replace('{w}', '300').replace('{h}', '300'),
+        url:
+          track['relationships'] && track['relationships'].albums.data.length > 0
+            ? `https://song.link/${track['relationships'].albums.data.pop().attributes.url}`
+            : `https://rateyourmusic.com/search?searchtype=l&searchterm=${encodeURI(
+                albumFormatted
+              )}%20${encodeURI(artistFormatted)}`,
+        id: track.id,
+        time,
+        duration: track.attributes['durationInMillis'],
+      }
+    } else {
+      formattedTracks[track.attributes.name].plays++
+    }
+  })
+  return formattedTracks
+}
+
+const deriveCharts = (tracks) => {
+  const charts = {
+    artists: {},
+    albums: {},
+  }
+  const tracksForLastWeek = Object.values(tracks).filter((track) => {
+    const currentDate = new Date()
+    const currentDateTime = new Date().getTime()
+    const lastWeek = new Date(currentDate.setDate(currentDate.getDate() - 7))
+    const lastWeekDateTime = lastWeek.getTime()
+    const trackDateTime = new Date(track.time).getTime()
+    return trackDateTime <= currentDateTime && trackDateTime > lastWeekDateTime
+  })
+
+  tracksForLastWeek.forEach((track) => {
+    if (!charts.artists[track.artist]) {
+      charts.artists[track.artist] = {
+        artist: track.artist,
+        plays: 1,
+      }
+    } else {
+      charts.artists[track.artist].plays++
+    }
+
+    if (!charts.albums[track.album]) {
+      charts.albums[track.album] = {
+        name: track.album,
+        artist: track.artist,
+        art: track.art,
+        url: track.url,
+        plays: 1,
+      }
+    } else {
+      charts.albums[track.album].plays++
+    }
+  })
+
+  return charts
 }
 
 const titleCase = (string) => {
@@ -63,10 +161,10 @@ module.exports = async function () {
   const asset = new AssetCache('recent_tracks_data')
   const PAGE_SIZE = 30
   const PAGES = 10
-  const charts = {
+  const time = Number(new Date())
+  let charts = {
     artists: {},
     albums: {},
-    tracks: {},
   }
   let CURRENT_PAGE = 0
   let res = []
@@ -91,50 +189,18 @@ module.exports = async function () {
     if (tracks.data.length) res = [...res, ...tracks.data]
     CURRENT_PAGE++
   }
-  res.forEach((track) => {
-    const formattedArtist = titleCase(aliasArtist(track.attributes['artistName']))
-    const formattedAlbum = titleCase(sanitizeMedia(track.attributes['albumName']))
-    const formattedTrack = sanitizeMedia(track.attributes['name'])
 
-    if (!charts.artists[formattedArtist]) {
-      charts.artists[formattedArtist] = {
-        artist: formattedArtist,
-        url: `https://rateyourmusic.com/search?searchterm=${encodeURI(formattedArtist)}`,
-        plays: 1,
-      }
-    } else {
-      charts.artists[formattedArtist].plays++
-    }
-
-    if (!charts.albums[formattedAlbum]) {
-      charts.albums[formattedAlbum] = {
-        name: formattedAlbum,
-        artist: formattedArtist,
-        art: track.attributes.artwork.url.replace('{w}', '300').replace('{h}', '300'),
-        url: track['relationships']
-          ? `https://song.link/${track['relationships'].albums.data.pop().attributes.url}`
-          : `https://rateyourmusic.com/search?searchtype=l&searchterm=${encodeURI(
-              formattedAlbum
-            )}%20${encodeURI(formattedArtist)}`,
-        plays: 1,
-      }
-    } else {
-      charts.albums[formattedAlbum].plays++
-    }
-
-    if (!charts.tracks[formattedTrack]) {
-      charts.tracks[formattedTrack] = {
-        name: formattedTrack,
-        artist: formattedArtist,
-        plays: 1,
-      }
-    } else {
-      charts.tracks[formattedTrack].plays++
-    }
-  })
+  const cachedTracks = fs.readFileSync('./src/_data/json/cache/music.json', { encoding: 'utf8' })
+  const updatedCache = {
+    ...JSON.parse(cachedTracks),
+    ...diffTracks(JSON.parse(cachedTracks), formatTracks(res, time)),
+  }
+  charts = deriveCharts(updatedCache)
   charts.artists = sort(charts.artists).splice(0, 8)
   charts.albums = sort(charts.albums).splice(0, 8)
-  charts.tracks = sort(charts.tracks).splice(0, 5)
+  fs.writeFileSync('./src/_data/json/cache/music.json', JSON.stringify(updatedCache), {
+    encoding: 'utf8',
+  })
   await asset.save(charts, 'json')
   return charts
 }
