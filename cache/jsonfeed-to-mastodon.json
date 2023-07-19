@@ -5177,5 +5177,16 @@
       "https://social.lol/users/cory/statuses/110735456930101877"
     ],
     "lastTootTimestamp": 1689688979109
+  },
+  "https://letterboxd.com/cdme/film/the-flash/": {
+    "id": "https://letterboxd.com/cdme/film/the-flash/",
+    "title": "🎥: The Flash, 2023 - ★★★½",
+    "url": "https://letterboxd.com/cdme/film/the-flash/",
+    "content_text": "🎥: The Flash, 2023 - ★★★½ https://letterboxd.com/cdme/film/the-flash/",
+    "date_published": "2023-07-19T12:43:20-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110741119075072391"
+    ],
+    "lastTootTimestamp": 1689775376553
   }
 }
