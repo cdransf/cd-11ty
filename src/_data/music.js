@@ -193,9 +193,10 @@ module.exports = async function () {
   )
   const cachedTracksData = getReadableData(cachedTracksOutput.Body)
   const cachedTracks = await cachedTracksData.then((tracks) => JSON.parse(tracks)).catch()
+  const diffedTracks = diffTracks(cachedTracks, formatTracks(res, time))
   const updatedCache = {
     ...cachedTracks,
-    ...diffTracks(cachedTracks, formatTracks(res, time)),
+    ...diffedTracks,
   }
   charts = deriveCharts(updatedCache)
   charts.artists = Object.values(charts.artists)
@@ -205,14 +206,16 @@ module.exports = async function () {
     .sort((a, b) => b.plays - a.plays)
     .splice(0, 8)
 
-  await client.send(
-    new PutObjectCommand({
-      Bucket: WASABI_BUCKET,
-      Key: 'music.json',
-      Body: JSON.stringify(updatedCache),
-    })
-  )
-  await asset.save(charts, 'json')
+  if (!_.isEmpty(diffedTracks)) {
+    await client.send(
+      new PutObjectCommand({
+        Bucket: WASABI_BUCKET,
+        Key: 'music.json',
+        Body: JSON.stringify(updatedCache),
+      })
+    )
+  }
 
+  await asset.save(charts, 'json')
   return charts
 }
