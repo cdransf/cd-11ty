@@ -30,10 +30,8 @@ const titleCase = (string) => {
     .join(' ')
 }
 
-const sortByPlays = (array) => Object.values(array).sort((a, b) => b.plays - a.plays)
-
 const diffTracks = (cache, tracks) => {
-  const trackCompareSet = Object.values(tracks)
+  const trackCompareSet = Object.values(tracks).sort((a, b) => a.time - b.time)
   const cacheCompareSet = Object.values(cache).sort((a, b) => a.time - b.time)
   const diffedTracks = {}
 
@@ -200,8 +198,12 @@ module.exports = async function () {
     ...diffTracks(cachedTracks, formatTracks(res, time)),
   }
   charts = deriveCharts(updatedCache)
-  charts.artists = sortByPlays(charts.artists).splice(0, 8)
-  charts.albums = sortByPlays(charts.albums).splice(0, 8)
+  charts.artists = Object.values(charts.artists)
+    .sort((a, b) => b.plays - a.plays)
+    .splice(0, 8)
+  charts.albums = Object.values(charts.albums)
+    .sort((a, b) => b.plays - a.plays)
+    .splice(0, 8)
 
   await client.send(
     new PutObjectCommand({
