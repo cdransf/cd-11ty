@@ -5188,5 +5188,16 @@
       "https://social.lol/users/cory/statuses/110741119075072391"
     ],
     "lastTootTimestamp": 1689775376553
+  },
+  "https://letterboxd.com/cdme/film/the-super-mario-bros-movie/": {
+    "id": "https://letterboxd.com/cdme/film/the-super-mario-bros-movie/",
+    "title": "🎥: The Super Mario Bros. Movie, 2023 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/the-super-mario-bros-movie/",
+    "content_text": "🎥: The Super Mario Bros. Movie, 2023 - ★★★ https://letterboxd.com/cdme/film/the-super-mario-bros-movie/",
+    "date_published": "2023-07-21T02:57:49-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110750084698632938"
+    ],
+    "lastTootTimestamp": 1689912181159
   }
 }
