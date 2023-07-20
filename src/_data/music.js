@@ -20,7 +20,7 @@ const aliasArtist = (artist) => {
 
 const sanitizeMedia = (media) => {
   const denyList =
-    /-\s*(?:single|ep)\s*|(\[|\()(Deluxe Edition|Special Edition|Remastered|Full Dynamic Range Edition)(\]|\))/gi
+    /-\s*(?:single|ep)\s*|(\[|\()(Deluxe Edition|Special Edition|Remastered|Full Dynamic Range Edition|Anniversary Edition)(\]|\))/gi
   return media.replace(denyList, '').trim()
 }
 
