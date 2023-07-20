@@ -2,15 +2,8 @@ const { S3Client, GetObjectCommand, PutObjectCommand } = require('@aws-sdk/clien
 const _ = require('lodash')
 const { AssetCache } = require('@11ty/eleventy-fetch')
 const artistAliases = require('./json/artist-aliases.json')
-
-const getReadableData = (readable) => {
-  return new Promise((resolve, reject) => {
-    const chunks = []
-    readable.once('error', (err) => reject(err))
-    readable.on('data', (chunk) => chunks.push(chunk))
-    readable.once('end', () => resolve(chunks.join('')))
-  })
-}
+const titleCaseExceptions = require('./json/title-case-exceptions.json')
+const { getReadableData } = require('../utils/aws')
 
 const aliasArtist = (artist) => {
   const aliased = artistAliases.aliases.find((alias) => alias.aliases.includes(artist))
@@ -23,6 +16,21 @@ const sanitizeMedia = (media) => {
     /-\s*(?:single|ep)\s*|(\[|\()(Deluxe Edition|Special Edition|Remastered|Full Dynamic Range Edition|Anniversary Edition)(\]|\))/gi
   return media.replace(denyList, '').trim()
 }
+
+const titleCase = (string) => {
+  if (!string) return ''
+  return string
+    .toLowerCase()
+    .split(' ')
+    .map((word, i) => {
+      return titleCaseExceptions.exceptions.includes(word) && i !== 0
+        ? word
+        : word.charAt(0).toUpperCase().concat(word.substring(1))
+    })
+    .join(' ')
+}
+
+const sortByPlays = (array) => Object.values(array).sort((a, b) => b.plays - a.plays)
 
 const diffTracks = (cache, tracks) => {
   const trackCompareSet = Object.values(tracks)
@@ -121,38 +129,6 @@ const deriveCharts = (tracks) => {
   return charts
 }
 
-const titleCase = (string) => {
-  const exceptions = [
-    'a',
-    'and',
-    'but',
-    'an',
-    'for',
-    'if',
-    'in',
-    'is',
-    'it',
-    'nor',
-    'of',
-    'or',
-    'so',
-    'the',
-    'yet',
-  ]
-  if (!string) return ''
-  return string
-    .toLowerCase()
-    .split(' ')
-    .map((word, i) => {
-      return exceptions.includes(word) && i !== 0
-        ? word
-        : word.charAt(0).toUpperCase().concat(word.substring(1))
-    })
-    .join(' ')
-}
-
-const sort = (array) => Object.values(array).sort((a, b) => b.plays - a.plays)
-
 module.exports = async function () {
   const client = new S3Client({
     credentials: {
@@ -224,8 +200,9 @@ module.exports = async function () {
     ...diffTracks(cachedTracks, formatTracks(res, time)),
   }
   charts = deriveCharts(updatedCache)
-  charts.artists = sort(charts.artists).splice(0, 8)
-  charts.albums = sort(charts.albums).splice(0, 8)
+  charts.artists = sortByPlays(charts.artists).splice(0, 8)
+  charts.albums = sortByPlays(charts.albums).splice(0, 8)
+
   await client.send(
     new PutObjectCommand({
       Bucket: WASABI_BUCKET,
@@ -234,5 +211,6 @@ module.exports = async function () {
     })
   )
   await asset.save(charts, 'json')
+
   return charts
 }
