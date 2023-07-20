@@ -1,7 +1,16 @@
-const fs = require('fs')
+const { S3Client, GetObjectCommand, PutObjectCommand } = require('@aws-sdk/client-s3')
 const _ = require('lodash')
 const { AssetCache } = require('@11ty/eleventy-fetch')
 const artistAliases = require('./json/artist-aliases.json')
+
+const getReadableData = (readable) => {
+  return new Promise((resolve, reject) => {
+    const chunks = []
+    readable.once('error', (err) => reject(err))
+    readable.on('data', (chunk) => chunks.push(chunk))
+    readable.once('end', () => resolve(chunks.join('')))
+  })
+}
 
 const aliasArtist = (artist) => {
   const aliased = artistAliases.aliases.find((alias) => alias.aliases.includes(artist))
@@ -145,6 +154,17 @@ const titleCase = (string) => {
 const sort = (array) => Object.values(array).sort((a, b) => b.plays - a.plays)
 
 module.exports = async function () {
+  const client = new S3Client({
+    credentials: {
+      accessKeyId: process.env.ACCESS_KEY_WASABI,
+      secretAccessKey: process.env.SECRET_KEY_WASABI,
+    },
+    endpoint: {
+      url: 'https://s3.us-west-1.wasabisys.com',
+    },
+    region: 'us-west-1',
+  })
+  const WASABI_BUCKET = process.env.BUCKET_WASABI
   const APPLE_BEARER = process.env.API_BEARER_APPLE_MUSIC
   const APPLE_MUSIC_TOKEN = process.env.API_TOKEN_APPLE_MUSIC
   const APPLE_TOKEN_RESPONSE = await fetch(process.env.APPLE_RENEW_TOKEN_URL, {
@@ -191,17 +211,28 @@ module.exports = async function () {
     CURRENT_PAGE++
   }
 
-  const cachedTracks = fs.readFileSync('./src/_data/json/cache/music.json', { encoding: 'utf8' })
+  const cachedTracksOutput = await client.send(
+    new GetObjectCommand({
+      Bucket: WASABI_BUCKET,
+      Key: 'music.json',
+    })
+  )
+  const cachedTracksData = getReadableData(cachedTracksOutput.Body)
+  const cachedTracks = await cachedTracksData.then((tracks) => JSON.parse(tracks)).catch()
   const updatedCache = {
-    ...JSON.parse(cachedTracks),
-    ...diffTracks(JSON.parse(cachedTracks), formatTracks(res, time)),
+    ...cachedTracks,
+    ...diffTracks(cachedTracks, formatTracks(res, time)),
   }
   charts = deriveCharts(updatedCache)
   charts.artists = sort(charts.artists).splice(0, 8)
   charts.albums = sort(charts.albums).splice(0, 8)
-  fs.writeFileSync('./src/_data/json/cache/music.json', JSON.stringify(updatedCache), {
-    encoding: 'utf8',
-  })
+  await client.send(
+    new PutObjectCommand({
+      Bucket: WASABI_BUCKET,
+      Key: 'music.json',
+      Body: JSON.stringify(updatedCache),
+    })
+  )
   await asset.save(charts, 'json')
   return charts
 }
