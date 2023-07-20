@@ -1,9 +1,9 @@
 const { S3Client, GetObjectCommand, PutObjectCommand } = require('@aws-sdk/client-s3')
 const _ = require('lodash')
-const { AssetCache } = require('@11ty/eleventy-fetch')
 const artistAliases = require('./json/artist-aliases.json')
 const titleCaseExceptions = require('./json/title-case-exceptions.json')
 const { getReadableData } = require('../utils/aws')
+const fs = require('fs')
 
 /**
  * Accepts a string representing an artist name, checks to see if said artist name
@@ -55,7 +55,7 @@ const titleCase = (string) => {
 }
 
 const diffTracks = (cache, tracks) => {
-  const trackCompareSet = Object.values(tracks).sort((a, b) => a.time - b.time)
+  const trackCompareSet = Object.values(tracks)
   const cacheCompareSet = Object.values(cache).sort((a, b) => a.time - b.time)
   const diffedTracks = {}
 
@@ -87,24 +87,20 @@ const formatTracks = (tracks, time) => {
     const artistFormatted = titleCase(aliasArtist(track.attributes['artistName']))
     const albumFormatted = titleCase(sanitizeMedia(track.attributes['albumName']))
     const trackFormatted = sanitizeMedia(track.attributes['name'])
-    if (!formattedTracks[track.attributes.name]) {
-      formattedTracks[track.attributes.name] = {
-        name: trackFormatted,
-        artist: artistFormatted,
-        album: albumFormatted,
-        art: track.attributes.artwork.url.replace('{w}', '300').replace('{h}', '300'),
-        url:
-          track['relationships'] && track['relationships'].albums.data.length > 0
-            ? `https://song.link/${track['relationships'].albums.data.pop().attributes.url}`
-            : `https://rateyourmusic.com/search?searchtype=l&searchterm=${encodeURI(
-                albumFormatted
-              )}%20${encodeURI(artistFormatted)}`,
-        id: track.id,
-        time,
-        duration: track.attributes['durationInMillis'],
-      }
-    } else {
-      formattedTracks[track.attributes.name].plays++
+    formattedTracks[`${track.id}-${time}`] = {
+      name: trackFormatted,
+      artist: artistFormatted,
+      album: albumFormatted,
+      art: track.attributes.artwork.url.replace('{w}', '300').replace('{h}', '300'),
+      url:
+        track['relationships'] && track['relationships'].albums.data.length > 0
+          ? `https://song.link/${track['relationships'].albums.data.pop().attributes.url}`
+          : `https://rateyourmusic.com/search?searchtype=l&searchterm=${encodeURI(
+              albumFormatted
+            )}%20${encodeURI(artistFormatted)}`,
+      id: track.id,
+      time,
+      duration: track.attributes['durationInMillis'],
     }
   })
   return formattedTracks
@@ -177,7 +173,6 @@ module.exports = async function () {
     .then((data) => data.json())
     .catch()
   const APPLE_TOKEN = APPLE_TOKEN_RESPONSE['music-token']
-  const asset = new AssetCache('recent_tracks_data')
   const PAGE_SIZE = 30
   const PAGES = 10
   const time = Number(new Date())
@@ -188,8 +183,6 @@ module.exports = async function () {
   let CURRENT_PAGE = 0
   let res = []
   let hasNextPage = true
-
-  if (asset.isCacheValid('1h')) return await asset.getCachedValue()
 
   while (CURRENT_PAGE < PAGES && hasNextPage) {
     const URL = `https://api.music.apple.com/v1/me/recent/played/tracks?limit=${PAGE_SIZE}&offset=${
@@ -240,6 +233,5 @@ module.exports = async function () {
     )
   }
 
-  await asset.save(charts, 'json')
   return charts
 }
