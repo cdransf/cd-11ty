@@ -5,18 +5,42 @@ const artistAliases = require('./json/artist-aliases.json')
 const titleCaseExceptions = require('./json/title-case-exceptions.json')
 const { getReadableData } = require('../utils/aws')
 
+/**
+ * Accepts a string representing an artist name, checks to see if said artist name
+ * exists in an artist alias group of shape string[]. If so, replaces the provided
+ * artist name with the canonical artist name.
+ *
+ * @name aliasArtist
+ * @param {string} artist
+ * @returns {string}
+ */
 const aliasArtist = (artist) => {
   const aliased = artistAliases.aliases.find((alias) => alias.aliases.includes(artist))
   if (aliased) artist = aliased.artist
   return artist
 }
 
+/**
+ * Accepts a media name represented as a string (album or song name) and replaces
+ * matches in the `denyList` with an empty string before returning the result.
+ *
+ * @name sanitizeMedia
+ * @param {string} media
+ * @returns {string}
+ */
 const sanitizeMedia = (media) => {
   const denyList =
     /-\s*(?:single|ep)\s*|(\[|\()(Deluxe Edition|Special Edition|Remastered|Full Dynamic Range Edition|Anniversary Edition)(\]|\))/gi
   return media.replace(denyList, '').trim()
 }
 
+/**
+ * Accepts a string that is then transformed to title case and returned.
+ *
+ * @name titleCase
+ * @param {string} string
+ * @returns {string}
+ */
 const titleCase = (string) => {
   if (!string) return ''
   return string
@@ -35,12 +59,12 @@ const diffTracks = (cache, tracks) => {
   const cacheCompareSet = Object.values(cache).sort((a, b) => a.time - b.time)
   const diffedTracks = {}
 
-  const ONE_HOUR_MS = 3600000
+  const TIMER_CEILING = 3780000 // 63 minutes — an hour plus a 3-minute buffer
   const tracksOneHour = []
   let trackIndex = 0
   let trackTimer = 0
 
-  while (trackTimer < ONE_HOUR_MS) {
+  while (trackTimer < TIMER_CEILING) {
     trackTimer = trackTimer + parseInt(trackCompareSet[trackIndex].duration)
     tracksOneHour.push(trackCompareSet[trackIndex])
     trackIndex++
