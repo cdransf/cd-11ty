@@ -3,7 +3,6 @@ const _ = require('lodash')
 const artistAliases = require('./json/artist-aliases.json')
 const titleCaseExceptions = require('./json/title-case-exceptions.json')
 const { getReadableData } = require('../utils/aws')
-const fs = require('fs')
 
 /**
  * Accepts a string representing an artist name, checks to see if said artist name
