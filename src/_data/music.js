@@ -1,8 +1,10 @@
 const { S3Client, GetObjectCommand, PutObjectCommand } = require('@aws-sdk/client-s3')
 const _ = require('lodash')
 const artistAliases = require('./json/artist-aliases.json')
+const artistGenres = require('./json/artist-genres.json')
 const titleCaseExceptions = require('./json/title-case-exceptions.json')
 const { getReadableData } = require('../utils/aws')
+const { getKeyByValue } = require('../utils/arrays')
 
 /**
  * Accepts a string representing an artist name, checks to see if said artist name
@@ -128,6 +130,7 @@ const deriveCharts = (tracks) => {
     if (!charts.artists[track.artist]) {
       charts.artists[track.artist] = {
         artist: track.artist,
+        genre: getKeyByValue(artistGenres, track.artist.replace(/\s+/g, '-').toLowerCase()),
         url: `https://rateyourmusic.com/search?searchterm=${encodeURI(track.artist)}`,
         plays: 1,
       }

@@ -10,6 +10,9 @@
           <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
           <div class="absolute left-1 bottom-2 drop-shadow-md">
             <div class="px-1 text-xs font-bold text-white line-clamp-2">{{ artist.artist }}</div>
+            <div class="px-1 text-xs text-white">
+              {{ artist.genre }}
+            </div>
           </div>
           {%- capture artistImg %}{{ artist.artist | artist }}{% endcapture -%}
           {%- capture artistName %}{{ artist.artist | escape }}{% endcapture -%}
