@@ -5199,5 +5199,27 @@
       "https://social.lol/users/cory/statuses/110750084698632938"
     ],
     "lastTootTimestamp": 1689912181159
+  },
+  "https://letterboxd.com/cdme/film/cloverfield/": {
+    "id": "https://letterboxd.com/cdme/film/cloverfield/",
+    "title": "🎥: Cloverfield, 2008 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/cloverfield/",
+    "content_text": "🎥: Cloverfield, 2008 - ★★★ https://letterboxd.com/cdme/film/cloverfield/",
+    "date_published": "2023-07-21T17:06:01-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110753391934396926"
+    ],
+    "lastTootTimestamp": 1689962645599
+  },
+  "https://www.invisibleoranges.com/death-metal-english/": {
+    "id": "https://www.invisibleoranges.com/death-metal-english/",
+    "title": "🔗: Death Metal English",
+    "url": "https://www.invisibleoranges.com/death-metal-english/",
+    "content_text": "🔗: Death Metal English https://www.invisibleoranges.com/death-metal-english/",
+    "date_published": "2013-11-09T08:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110753859366790082"
+    ],
+    "lastTootTimestamp": 1689969778008
   }
 }
