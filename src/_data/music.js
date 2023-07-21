@@ -2,6 +2,7 @@ const { S3Client, GetObjectCommand, PutObjectCommand } = require('@aws-sdk/clien
 const _ = require('lodash')
 const artistAliases = require('./json/artist-aliases.json')
 const artistGenres = require('./json/artist-genres.json')
+const mockedMusic = require('./json/mocks/music.json')
 const titleCaseExceptions = require('./json/title-case-exceptions.json')
 const { getReadableData } = require('../utils/aws')
 const { getKeyByValue } = require('../utils/arrays')
@@ -62,6 +63,7 @@ const getTracksOneHour = (tracks) => {
   let trackTimer = 0
 
   while (trackTimer < TIMER_CEILING) {
+    if (!tracks[trackIndex]) return tracksOneHour
     trackTimer = trackTimer + parseInt(tracks[trackIndex].duration)
     tracksOneHour.push(tracks[trackIndex])
     trackIndex++
@@ -186,6 +188,7 @@ module.exports = async function () {
   let CURRENT_PAGE = 0
   let trackTimer = 0
   let res = []
+  let cachedTracks = mockedMusic
 
   while (trackTimer < TIMER_CEILING) {
     const URL = `https://api.music.apple.com/v1/me/recent/played/tracks?limit=${PAGE_SIZE}&offset=${
@@ -209,14 +212,17 @@ module.exports = async function () {
     CURRENT_PAGE++
   }
 
-  const cachedTracksOutput = await client.send(
-    new GetObjectCommand({
-      Bucket: WASABI_BUCKET,
-      Key: 'music.json',
-    })
-  )
-  const cachedTracksData = getReadableData(cachedTracksOutput.Body)
-  const cachedTracks = await cachedTracksData.then((tracks) => JSON.parse(tracks)).catch()
+  if (process.env.ELEVENTY_PRODUCTION === 'true') {
+    const cachedTracksOutput = await client.send(
+      new GetObjectCommand({
+        Bucket: WASABI_BUCKET,
+        Key: 'music.json',
+      })
+    )
+    const cachedTracksData = getReadableData(cachedTracksOutput.Body)
+    cachedTracks = await cachedTracksData.then((tracks) => JSON.parse(tracks)).catch()
+  }
+
   const diffedTracks = diffTracks(cachedTracks, formatTracks(res))
   const updatedCache = {
     ...cachedTracks,
