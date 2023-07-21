@@ -1,60 +1,11 @@
 const { S3Client, GetObjectCommand, PutObjectCommand } = require('@aws-sdk/client-s3')
 const _ = require('lodash')
-const artistAliases = require('./json/artist-aliases.json')
 const artistGenres = require('./json/artist-genres.json')
 const mockedMusic = require('./json/mocks/music.json')
-const titleCaseExceptions = require('./json/title-case-exceptions.json')
 const { getReadableData } = require('../utils/aws')
 const { getKeyByValue } = require('../utils/arrays')
-
-/**
- * Accepts a string representing an artist name, checks to see if said artist name
- * exists in an artist alias group of shape string[]. If so, replaces the provided
- * artist name with the canonical artist name.
- *
- * @name aliasArtist
- * @param {string} artist
- * @returns {string}
- */
-const aliasArtist = (artist) => {
-  const aliased = artistAliases.aliases.find((alias) => alias.aliases.includes(artist))
-  if (aliased) artist = aliased.artist
-  return artist
-}
-
-/**
- * Accepts a media name represented as a string (album or song name) and replaces
- * matches in the `denyList` with an empty string before returning the result.
- *
- * @name sanitizeMedia
- * @param {string} media
- * @returns {string}
- */
-const sanitizeMedia = (media) => {
-  const denyList =
-    /-\s*(?:single|ep)\s*|(\[|\()(Deluxe Edition|Special Edition|Remastered|Full Dynamic Range Edition|Anniversary Edition)(\]|\))/gi
-  return media.replace(denyList, '').trim()
-}
-
-/**
- * Accepts a string that is then transformed to title case and returned.
- *
- * @name titleCase
- * @param {string} string
- * @returns {string}
- */
-const titleCase = (string) => {
-  if (!string) return ''
-  return string
-    .toLowerCase()
-    .split(' ')
-    .map((word, i) => {
-      return titleCaseExceptions.exceptions.includes(word) && i !== 0
-        ? word
-        : word.charAt(0).toUpperCase().concat(word.substring(1))
-    })
-    .join(' ')
-}
+const { aliasArtist, sanitizeMedia } = require('../utils/media')
+const { titleCase } = require('../utils/grammar')
 
 const getTracksOneHour = (tracks) => {
   const TIMER_CEILING = 3600000 // 1 hour
@@ -228,6 +179,7 @@ module.exports = async function () {
     ...cachedTracks,
     ...diffedTracks,
   }
+
   charts = deriveCharts(updatedCache)
   charts.artists = _.orderBy(Object.values(charts.artists), ['plays'], ['desc']).splice(0, 8)
   charts.albums = _.orderBy(Object.values(charts.albums), ['plays'], ['desc']).splice(0, 8)
