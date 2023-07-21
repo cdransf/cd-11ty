@@ -53,29 +53,26 @@ const titleCase = (string) => {
     .join(' ')
 }
 
+const getTracksOneHour = (tracks) => {
+  const TIMER_CEILING = 3600000 // 1 hour
+  const tracksOneHour = []
+  let trackIndex = 0
+  let trackTimer = 0
+  while (trackTimer < TIMER_CEILING) {
+    trackTimer = trackTimer + parseInt(tracks[trackIndex].duration)
+    tracksOneHour.push(tracks[trackIndex])
+    trackIndex++
+  }
+
+  return tracksOneHour
+}
+
 const diffTracks = (cache, tracks) => {
   const trackCompareSet = Object.values(tracks)
   const cacheCompareSet = _.orderBy(Object.values(cache), ['time'], ['desc'])
   const diffedTracks = {}
-
-  const getTracksOneHour = (tracks) => {
-    const TIMER_CEILING = 3600000 // 1 hour
-    const tracksOneHour = []
-    let trackIndex = 0
-    let trackTimer = 0
-
-    while (trackTimer < TIMER_CEILING) {
-      trackTimer = trackTimer + parseInt(tracks[trackIndex].duration)
-      tracksOneHour.push(tracks[trackIndex])
-      trackIndex++
-    }
-
-    return tracksOneHour
-  }
-
-  const tracksOneHour = getTracksOneHour(trackCompareSet)
-  const cachedTracksOneHour = getTracksOneHour(cacheCompareSet)
-  const comparedTracks = _.differenceWith(tracksOneHour, cachedTracksOneHour, (a, b) =>
+  const cacheCompareOneHour = getTracksOneHour(cacheCompareSet)
+  const comparedTracks = _.differenceWith(trackCompareSet, cacheCompareOneHour, (a, b) =>
     _.isEqual(a.id, b.id)
   )
 
@@ -85,8 +82,11 @@ const diffTracks = (cache, tracks) => {
   return diffedTracks
 }
 
-const formatTracks = (tracks, time) => {
+const formatTracks = (tracks) => {
+  const now = new Date().getTime()
   let formattedTracks = {}
+  let time = now
+
   Object.values(tracks).forEach((track) => {
     const artistFormatted = titleCase(aliasArtist(track.attributes['artistName']))
     const albumFormatted = titleCase(sanitizeMedia(track.attributes['albumName']))
@@ -103,8 +103,9 @@ const formatTracks = (tracks, time) => {
               albumFormatted
             )}%20${encodeURI(artistFormatted)}`,
       id: track.id,
-      time,
-      duration: track.attributes['durationInMillis'],
+      time: now,
+      playTime: time - parseInt(track.attributes['durationInMillis']),
+      duration: parseInt(track.attributes['durationInMillis']),
     }
   })
   return formattedTracks
@@ -178,14 +179,13 @@ module.exports = async function () {
     .catch()
   const APPLE_TOKEN = APPLE_TOKEN_RESPONSE['music-token']
   const PAGE_SIZE = 30
-  const PAGES = 10
-  const time = Number(new Date())
+  const TIMER_CEILING = 3600000 // 1 hour
   let charts
   let CURRENT_PAGE = 0
+  let trackTimer = 0
   let res = []
-  let hasNextPage = true
 
-  while (CURRENT_PAGE < PAGES && hasNextPage) {
+  while (trackTimer < TIMER_CEILING) {
     const URL = `https://api.music.apple.com/v1/me/recent/played/tracks?limit=${PAGE_SIZE}&offset=${
       PAGE_SIZE * CURRENT_PAGE
     }&include[songs]=albums&extend=artistUrl`
@@ -198,8 +198,12 @@ module.exports = async function () {
     })
       .then((data) => data.json())
       .catch()
-    if (!tracks.next) hasNextPage = false
-    if (tracks.data.length) res = [...res, ...tracks.data]
+
+    tracks.data.forEach((track) => {
+      trackTimer = trackTimer + parseInt(track.attributes['durationInMillis'])
+      if (trackTimer >= TIMER_CEILING) return
+      res.push(track)
+    })
     CURRENT_PAGE++
   }
 
@@ -211,7 +215,7 @@ module.exports = async function () {
   )
   const cachedTracksData = getReadableData(cachedTracksOutput.Body)
   const cachedTracks = await cachedTracksData.then((tracks) => JSON.parse(tracks)).catch()
-  const diffedTracks = diffTracks(cachedTracks, formatTracks(res, time))
+  const diffedTracks = diffTracks(cachedTracks, formatTracks(res))
   const updatedCache = {
     ...cachedTracks,
     ...diffedTracks,
