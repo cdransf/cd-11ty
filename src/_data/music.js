@@ -226,7 +226,7 @@ module.exports = async function () {
   charts.artists = _.orderBy(Object.values(charts.artists), ['plays'], ['desc']).splice(0, 8)
   charts.albums = _.orderBy(Object.values(charts.albums), ['plays'], ['desc']).splice(0, 8)
 
-  if (!_.isEmpty(diffedTracks)) {
+  if (!_.isEmpty(diffedTracks) && process.env.ELEVENTY_PRODUCTION === 'true') {
     await client.send(
       new PutObjectCommand({
         Bucket: WASABI_BUCKET,
