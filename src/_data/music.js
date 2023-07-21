@@ -55,23 +55,28 @@ const titleCase = (string) => {
 
 const diffTracks = (cache, tracks) => {
   const trackCompareSet = Object.values(tracks)
-  const cacheCompareSet = Object.values(cache).sort((a, b) => a.time - b.time)
+  const cacheCompareSet = _.orderBy(Object.values(cache), ['time'], ['desc'])
   const diffedTracks = {}
 
-  const TIMER_CEILING = 3780000 // 63 minutes — an hour plus a 3-minute buffer
-  const tracksOneHour = []
-  let trackIndex = 0
-  let trackTimer = 0
+  const getTracksOneHour = (tracks) => {
+    const TIMER_CEILING = 3600000 // 1 hour
+    const tracksOneHour = []
+    let trackIndex = 0
+    let trackTimer = 0
 
-  while (trackTimer < TIMER_CEILING) {
-    trackTimer = trackTimer + parseInt(trackCompareSet[trackIndex].duration)
-    tracksOneHour.push(trackCompareSet[trackIndex])
-    trackIndex++
+    while (trackTimer < TIMER_CEILING) {
+      trackTimer = trackTimer + parseInt(tracks[trackIndex].duration)
+      tracksOneHour.push(tracks[trackIndex])
+      trackIndex++
+    }
+
+    return tracksOneHour
   }
-  const comparedTracks = _.differenceWith(
-    tracksOneHour,
-    cacheCompareSet.slice(-tracksOneHour.length),
-    (a, b) => _.isEqual(a.id, b.id)
+
+  const tracksOneHour = getTracksOneHour(trackCompareSet)
+  const cachedTracksOneHour = getTracksOneHour(cacheCompareSet)
+  const comparedTracks = _.differenceWith(tracksOneHour, cachedTracksOneHour, (a, b) =>
+    _.isEqual(a.id, b.id)
   )
 
   for (let i = 0; i < comparedTracks.length; i++)
@@ -215,12 +220,8 @@ module.exports = async function () {
     ...diffedTracks,
   }
   charts = deriveCharts(updatedCache)
-  charts.artists = Object.values(charts.artists)
-    .sort((a, b) => b.plays - a.plays)
-    .splice(0, 8)
-  charts.albums = Object.values(charts.albums)
-    .sort((a, b) => b.plays - a.plays)
-    .splice(0, 8)
+  charts.artists = _.orderBy(Object.values(charts.artists), ['plays'], ['desc']).splice(0, 8)
+  charts.albums = _.orderBy(Object.values(charts.albums), ['plays'], ['desc']).splice(0, 8)
 
   if (!_.isEmpty(diffedTracks)) {
     await client.send(
