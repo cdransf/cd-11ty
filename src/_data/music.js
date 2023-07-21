@@ -58,6 +58,7 @@ const getTracksOneHour = (tracks) => {
   const tracksOneHour = []
   let trackIndex = 0
   let trackTimer = 0
+
   while (trackTimer < TIMER_CEILING) {
     trackTimer = trackTimer + parseInt(tracks[trackIndex].duration)
     tracksOneHour.push(tracks[trackIndex])
@@ -77,15 +78,14 @@ const diffTracks = (cache, tracks) => {
   )
 
   for (let i = 0; i < comparedTracks.length; i++)
-    diffedTracks[`${comparedTracks[i]?.id}-${comparedTracks[i].time}`] = comparedTracks[i]
+    diffedTracks[`${comparedTracks[i]?.id}-${comparedTracks[i].playTime}`] = comparedTracks[i]
 
   return diffedTracks
 }
 
 const formatTracks = (tracks) => {
-  const now = new Date().getTime()
   let formattedTracks = {}
-  let time = now
+  let time = new Date().getTime()
 
   Object.values(tracks).forEach((track) => {
     const artistFormatted = titleCase(aliasArtist(track.attributes['artistName']))
@@ -103,7 +103,6 @@ const formatTracks = (tracks) => {
               albumFormatted
             )}%20${encodeURI(artistFormatted)}`,
       id: track.id,
-      time: now,
       playTime: time - parseInt(track.attributes['durationInMillis']),
       duration: parseInt(track.attributes['durationInMillis']),
     }
