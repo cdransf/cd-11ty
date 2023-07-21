@@ -180,10 +180,7 @@ module.exports = async function () {
   const PAGE_SIZE = 30
   const PAGES = 10
   const time = Number(new Date())
-  let charts = {
-    artists: {},
-    albums: {},
-  }
+  let charts
   let CURRENT_PAGE = 0
   let res = []
   let hasNextPage = true
