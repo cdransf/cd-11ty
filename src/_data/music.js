@@ -121,7 +121,7 @@ const deriveCharts = (tracks) => {
     const currentDateTime = new Date().getTime()
     const lastWeek = new Date(currentDate.setDate(currentDate.getDate() - 7))
     const lastWeekDateTime = lastWeek.getTime()
-    const trackDateTime = new Date(track.time).getTime()
+    const trackDateTime = new Date(track.playTime).getTime()
     return trackDateTime <= currentDateTime && trackDateTime > lastWeekDateTime
   })
 
