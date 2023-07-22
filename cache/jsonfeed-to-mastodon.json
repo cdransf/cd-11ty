@@ -5221,5 +5221,16 @@
       "https://social.lol/users/cory/statuses/110753859366790082"
     ],
     "lastTootTimestamp": 1689969778008
+  },
+  "https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/": {
+    "id": "https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/",
+    "title": "📝: Road to madness: charting Apple Music data listening data",
+    "url": "https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/",
+    "content_text": "📝: Road to madness: charting Apple Music data listening data https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/",
+    "date_published": "2023-07-21T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110755328597863886"
+    ],
+    "lastTootTimestamp": 1689992196700
   }
 }
