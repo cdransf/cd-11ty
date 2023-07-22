@@ -1,6 +1,6 @@
 ---
 date: '2023-07-21'
-title: 'Road to madness: charting Apple Music data listening data'
+title: 'Road to madness: charting Apple Music listening data'
 draft: false
 tags: ['development', 'music', 'Eleventy', 'Apple', 'JavaScript', 'API']
 image: https://cdn.coryd.dev/blog/charlie.jpg
