@@ -29,4 +29,5 @@ module.exports = {
       /-\s*(?:single|ep)\s*|(\[|\()(Deluxe Edition|Special Edition|Remastered|Full Dynamic Range Edition|Anniversary Edition)(\]|\))/gi
     return media.replace(denyList, '').trim()
   },
+  sortByPlays: (array) => Object.values(array).sort((a, b) => b.plays - a.plays),
 }
