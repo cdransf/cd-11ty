@@ -5224,13 +5224,54 @@
   },
   "https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/": {
     "id": "https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/",
-    "title": "📝: Road to madness: charting Apple Music data listening data",
+    "title": "📝: Road to madness: charting Apple Music listening data",
     "url": "https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/",
-    "content_text": "📝: Road to madness: charting Apple Music data listening data https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/",
+    "content_text": "📝: Road to madness: charting Apple Music listening data https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/",
     "date_published": "2023-07-21T00:00:00-08:00",
     "toots": [
       "https://social.lol/users/cory/statuses/110755328597863886"
     ],
     "lastTootTimestamp": 1689992196700
+  },
+  "https://openlibrary.org/search?q=0063114488": {
+    "id": "https://openlibrary.org/search?q=0063114488",
+    "title": "📖: Trust the Plan",
+    "url": "https://openlibrary.org/search?q=0063114488",
+    "content_text": "📖: Trust the Plan https://openlibrary.org/search?q=0063114488",
+    "date_published": "2023-07-23T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110766659039233094"
+    ],
+    "lastTootTimestamp": 1690165085484
+  },
+  "https://letterboxd.com/cdme/film/stephen-curry-underrated/": {
+    "id": "https://letterboxd.com/cdme/film/stephen-curry-underrated/",
+    "title": "🎥: Stephen Curry: Underrated, 2023 - ★★★½",
+    "url": "https://letterboxd.com/cdme/film/stephen-curry-underrated/",
+    "content_text": "🎥: Stephen Curry: Underrated, 2023 - ★★★½ https://letterboxd.com/cdme/film/stephen-curry-underrated/",
+    "date_published": "2023-07-24T12:26:33-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110769430191475694"
+    ],
+    "lastTootTimestamp": 1690207369905
+  },
+  "https://letterboxd.com/cdme/film/upgrade/": {
+    "id": "https://letterboxd.com/cdme/film/upgrade/",
+    "title": "🎥: Upgrade, 2018 - ★★★½",
+    "url": "https://letterboxd.com/cdme/film/upgrade/",
+    "content_text": "🎥: Upgrade, 2018 - ★★★½ https://letterboxd.com/cdme/film/upgrade/",
+    "date_published": "2023-07-24T17:52:59-08:00",
+    "toots": []
+  },
+  "https://blog.jim-nielsen.com/2023/offline-is-online-with-extreme-latency/": {
+    "id": "https://blog.jim-nielsen.com/2023/offline-is-online-with-extreme-latency/",
+    "title": "🔗: Offline Is Just Online With Extreme Latency",
+    "url": "https://blog.jim-nielsen.com/2023/offline-is-online-with-extreme-latency/",
+    "content_text": "🔗: Offline Is Just Online With Extreme Latency https://blog.jim-nielsen.com/2023/offline-is-online-with-extreme-latency/",
+    "date_published": "2023-04-18T08:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110770847208071025"
+    ],
+    "lastTootTimestamp": 1690228991894
   }
 }

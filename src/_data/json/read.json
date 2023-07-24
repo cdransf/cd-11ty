@@ -85,7 +85,7 @@
   {
     "isbn": "9780674979857",
     "dateStarted": "2023-07-09",
-    "status": "started",
+    "status": "finished",
     "rating": "unrated",
     "title": "Capital in the Twenty-First Century",
     "authors": [
@@ -100,6 +100,24 @@
     ],
     "thumbnail": "https://books.google.com/books/content?id=dqEuDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
     "language": "en",
-    "link": "https://books.google.com/books/about/Capital_in_the_Twenty_First_Century.html?hl=&id=dqEuDwAAQBAJ"
+    "link": "https://books.google.com/books/about/Capital_in_the_Twenty_First_Century.html?hl=&id=dqEuDwAAQBAJ",
+    "dateFinished": "2023-07-23"
+  },
+  {
+    "isbn": "0063114488",
+    "dateStarted": "2023-07-23",
+    "status": "started",
+    "rating": "unrated",
+    "title": "Trust the Plan",
+    "authors": [
+      "William Sommer"
+    ],
+    "publishedDate": "2021-11-09",
+    "description": "A journalist who has followed the rise of QAnon explains what it is, how it has gained a mainstream following among Republican lawmakers and ordinary citizens, the threat it poses to democracy, and how we can reach those who have embraced the conspiracy and are disseminating its lies. Over the last year, as the Covid-19 pandemic spread worldwide, so too did the pro-Trump cabal known as QAnon. What began as a fringe online conspiracy in the mid 2000s is now embraced by millions of Americans across the country--and the globe--including new members of Congress and the thousands of Trump followers, armed with guns and a variety of makeshift weapons, who attacked the United States Capitol on January 6, 2021, searching for lawmakers including the Vice President, shouting \"hang Mike Pence.\" Following internet clues from a mysterious figure named \"Q\"--who has claimed to be a high-level government insider with a Q-level clearance--QAnon adherents, fueled by paranoia and hatred of the left, believe that Donald Trump has been anointed by God to stop evil Democrats who sexually abuse, kill, and eat children; that Trump won the 2020 election that was stolen from him and will soon order mass executions of Democrats, including Hillary Clinton, the Obamas, George Soros, and many others. QAnon believers continue to spout lies and disinformation about politics and the pandemic; their beliefs have ruptured friendships and family bonds and caused untold damage. While in office, Trump praised QAnon believers as \"people who love our country,\" invited them to the White House, and retweeted their crazed messages on a near-daily basis. Though he is gone, the threat of widespread violence from his acolytes--\"the Storm is coming\"--remains high. What can we do about Q's growing platform? Daily Beast reporter Will Sommer has been reporting on the QAnon conspiracy for years and has been targeted by the group. In this timely and essential book, he explains the genesis of QAnon, his experience covering its members online and in the real world, Q's lies and how they are spread, how Q has overshadowed politics, and what the nation must do to address this growing danger--including how to help friends and family who have fallen under Q's pernicious sway.",
+    "pageCount": 320,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=UZVIzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Trust_the_Plan.html?hl=&id=UZVIzgEACAAJ"
   }
 ]
