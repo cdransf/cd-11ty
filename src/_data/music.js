@@ -23,7 +23,6 @@ module.exports = async function () {
   const charts = {
     artists: {},
     albums: {},
-    tracks: {},
   }
   let CURRENT_PAGE = 0
   let res = []
@@ -34,7 +33,7 @@ module.exports = async function () {
   while (CURRENT_PAGE < PAGES && hasNextPage) {
     const URL = `https://api.music.apple.com/v1/me/recent/played/tracks?limit=${PAGE_SIZE}&offset=${
       PAGE_SIZE * CURRENT_PAGE
-    }&include[songs]=albums&extend=artistUrl`
+    }&include[songs]=albums,library&extend=artistUrl`
     const tracks = await fetch(URL, {
       headers: {
         'Content-Type': 'application/json',
@@ -51,12 +50,12 @@ module.exports = async function () {
   res.forEach((track) => {
     const formattedArtist = titleCase(aliasArtist(track.attributes['artistName']))
     const formattedAlbum = titleCase(sanitizeMedia(track.attributes['albumName']))
-    const formattedTrack = sanitizeMedia(track.attributes['name'])
 
     if (!charts.artists[formattedArtist]) {
       charts.artists[formattedArtist] = {
         artist: formattedArtist,
         url: `https://rateyourmusic.com/search?searchterm=${encodeURI(formattedArtist)}`,
+        genre: track['relationships']?.['library'].data[0]?.attributes['genreNames'][0] || '',
         plays: 1,
       }
     } else {
@@ -78,20 +77,10 @@ module.exports = async function () {
     } else {
       charts.albums[formattedAlbum].plays++
     }
-
-    if (!charts.tracks[formattedTrack]) {
-      charts.tracks[formattedTrack] = {
-        name: formattedTrack,
-        artist: formattedArtist,
-        plays: 1,
-      }
-    } else {
-      charts.tracks[formattedTrack].plays++
-    }
   })
   charts.artists = sortByPlays(charts.artists).splice(0, 8)
   charts.albums = sortByPlays(charts.albums).splice(0, 8)
-  charts.tracks = sortByPlays(charts.tracks).splice(0, 5)
+
   await asset.save(charts, 'json')
   return charts
 }
