@@ -5254,5 +5254,24 @@
       "https://social.lol/users/cory/statuses/110769430191475694"
     ],
     "lastTootTimestamp": 1690207369905
+  },
+  "https://letterboxd.com/cdme/film/upgrade/": {
+    "id": "https://letterboxd.com/cdme/film/upgrade/",
+    "title": "🎥: Upgrade, 2018 - ★★★½",
+    "url": "https://letterboxd.com/cdme/film/upgrade/",
+    "content_text": "🎥: Upgrade, 2018 - ★★★½ https://letterboxd.com/cdme/film/upgrade/",
+    "date_published": "2023-07-24T17:52:59-08:00",
+    "toots": []
+  },
+  "https://blog.jim-nielsen.com/2023/offline-is-online-with-extreme-latency/": {
+    "id": "https://blog.jim-nielsen.com/2023/offline-is-online-with-extreme-latency/",
+    "title": "🔗: Offline Is Just Online With Extreme Latency",
+    "url": "https://blog.jim-nielsen.com/2023/offline-is-online-with-extreme-latency/",
+    "content_text": "🔗: Offline Is Just Online With Extreme Latency https://blog.jim-nielsen.com/2023/offline-is-online-with-extreme-latency/",
+    "date_published": "2023-04-18T08:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110770847208071025"
+    ],
+    "lastTootTimestamp": 1690228991894
   }
 }
