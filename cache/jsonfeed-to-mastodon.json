@@ -5261,7 +5261,10 @@
     "url": "https://letterboxd.com/cdme/film/upgrade/",
     "content_text": "🎥: Upgrade, 2018 - ★★★½ https://letterboxd.com/cdme/film/upgrade/",
     "date_published": "2023-07-24T17:52:59-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110771318524001240"
+    ],
+    "lastTootTimestamp": 1690236183586
   },
   "https://blog.jim-nielsen.com/2023/offline-is-online-with-extreme-latency/": {
     "id": "https://blog.jim-nielsen.com/2023/offline-is-online-with-extreme-latency/",
