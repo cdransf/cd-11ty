@@ -85,7 +85,7 @@
   {
     "isbn": "9780674979857",
     "dateStarted": "2023-07-09",
-    "status": "started",
+    "status": "finished",
     "rating": "unrated",
     "title": "Capital in the Twenty-First Century",
     "authors": [
@@ -100,6 +100,7 @@
     ],
     "thumbnail": "https://books.google.com/books/content?id=dqEuDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
     "language": "en",
-    "link": "https://books.google.com/books/about/Capital_in_the_Twenty_First_Century.html?hl=&id=dqEuDwAAQBAJ"
+    "link": "https://books.google.com/books/about/Capital_in_the_Twenty_First_Century.html?hl=&id=dqEuDwAAQBAJ",
+    "dateFinished": "2023-07-23"
   }
 ]
