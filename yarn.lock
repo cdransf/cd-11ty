@@ -440,14 +440,14 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.44.0.tgz#961a5903c74139390478bdc808bcde3fc45ab7af"
   integrity sha512-Ag+9YM4ocKQx9AarydN0KY2j0ErMHNIocPDrVo8zAE44xLTjEtz81OdR68/cydGtk6m6jDb5Za3r2useMzYmSw==
 
-"@extractus/feed-extractor@6.2.4":
-  version "6.2.4"
-  resolved "https://registry.yarnpkg.com/@extractus/feed-extractor/-/feed-extractor-6.2.4.tgz#a527d2bd870bd1a2e49ea1ec31044e19381e9fae"
-  integrity sha512-VqeFvRGkL9mo6Z/EzkXGJ1Z45F2h5jN/PrjZnMmkh67MzsEubdYGfZTsEtM+BTflA+jsKvtnIgGjU/sYFJFnWA==
+"@extractus/feed-extractor@7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@extractus/feed-extractor/-/feed-extractor-7.0.1.tgz#9628aea3a04f3ebf91092059a7b31d50fa95929a"
+  integrity sha512-C0PTQOH7/Qcipp1Tov19jRPwMw+fLuxIHSfQqSs/Nl7rdsX98YIvOs/unJYq7LqfUGpN2CHKwKkcnhOOai8bCw==
   dependencies:
     bellajs "^11.1.2"
     cross-fetch "^4.0.0"
-    fast-xml-parser "^4.2.5"
+    fast-xml-parser "^4.2.6"
     html-entities "^2.4.0"
 
 "@fontsource/inter@^5.0.5":
@@ -2921,7 +2921,7 @@ fast-levenshtein@^2.0.6:
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==
 
-fast-xml-parser@^4.0.14, fast-xml-parser@^4.2.5:
+fast-xml-parser@^4.0.14, fast-xml-parser@^4.2.6:
   version "4.2.6"
   resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-4.2.6.tgz#30ad37b014c16e31eec0e01fbf90a85cedb4eacf"
   integrity sha512-Xo1qV++h/Y3Ng8dphjahnYe+rGHaaNdsYOBWL9Y9GCPKpNKilJtilvWkLcI9f9X2DoKTLsZsGYAls5+JL5jfLA==
