@@ -63,8 +63,6 @@
     "tailwindcss": "^3.3.2"
   },
   "dependencies": {
-    "@fontsource/inter": "^5.0.5",
-    "@fontsource/jetbrains-mono": "^5.0.5",
     "@remy/webmention": "^1.4.5"
   },
   "lint-staged": {
