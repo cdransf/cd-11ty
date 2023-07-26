@@ -106,7 +106,7 @@
   {
     "isbn": "0063114488",
     "dateStarted": "2023-07-23",
-    "status": "started",
+    "status": "finished",
     "rating": "unrated",
     "title": "Trust the Plan",
     "authors": [
@@ -118,6 +118,24 @@
     "printType": "BOOK",
     "thumbnail": "https://books.google.com/books/content?id=UZVIzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
     "language": "en",
-    "link": "https://books.google.com/books/about/Trust_the_Plan.html?hl=&id=UZVIzgEACAAJ"
+    "link": "https://books.google.com/books/about/Trust_the_Plan.html?hl=&id=UZVIzgEACAAJ",
+    "dateFinished": "2023-07-25"
+  },
+  {
+    "isbn": "0306925486",
+    "dateStarted": "2023-07-25",
+    "status": "started",
+    "rating": "unrated",
+    "title": "Corporate Rock Sucks",
+    "authors": [
+      "Jim Ruland"
+    ],
+    "publishedDate": "2022-04-12",
+    "description": "A no-holds-barred narrative history of the iconic label that brought the world Black Flag, Hüsker Dü, Sonic Youth, Soundgarden, and more, by the co-author of Do What You Want and My Damage Greg Ginn started SST Records in the sleepy beach town of Hermosa Beach, CA, to supply ham radio enthusiasts with tuners and transmitters. But when Ginn wanted to launch his band, Black Flag, no one was willing to take them on. Determined to bring his music to the masses, Ginn turned SST into a record label. On the back of Black Flag's relentless touring, guerilla marketing, and refusal to back down, SST became the sound of the underground. In Corporate Rock Sucks, music journalist Jim Ruland relays the unvarnished story of SST Records, from its remarkable rise in notoriety to its infamous downfall. With records by Black Flag, Minutemen, Hüsker Dü, Bad Brains, Sonic Youth, Dinosaur Jr, Screaming Trees, Soundgarden, and scores of obscure yet influential bands, SST was the most popular indie label by the mid-80s--until a tsunami of legal jeopardy, financial peril, and dysfunctional management brought the empire tumbling down. Throughout this investigative deep-dive, Ruland leads readers through SST's tumultuous history and epic catalog. Featuring never-before-seen interviews with the label's former employees, as well as musicians, managers, producers, photographers, video directors, and label heads, Corporate Rock Sucks presents a definitive narrative history of the '80s punk and alternative rock scenes, and shows how the music industry was changed forever.",
+    "pageCount": 304,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=YjuWzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Corporate_Rock_Sucks.html?hl=&id=YjuWzgEACAAJ"
   }
 ]

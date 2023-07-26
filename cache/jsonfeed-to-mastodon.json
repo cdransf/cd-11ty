@@ -5287,5 +5287,16 @@
       "https://social.lol/users/cory/statuses/110775565867473664"
     ],
     "lastTootTimestamp": 1690300992901
+  },
+  "https://openlibrary.org/search?q=0306925486": {
+    "id": "https://openlibrary.org/search?q=0306925486",
+    "title": "📖: Corporate Rock Sucks",
+    "url": "https://openlibrary.org/search?q=0306925486",
+    "content_text": "📖: Corporate Rock Sucks https://openlibrary.org/search?q=0306925486",
+    "date_published": "2023-07-25T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110778869230808555"
+    ],
+    "lastTootTimestamp": 1690351398245
   }
 }
