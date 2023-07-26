@@ -1,5 +1,5 @@
 {
-  "exceptions": [
+  "words": [
     "a",
     "and",
     "but",
@@ -15,5 +15,6 @@
     "so",
     "the",
     "yet"
-  ]
+  ],
+  "artists": ["NoMeansNo"]
 }

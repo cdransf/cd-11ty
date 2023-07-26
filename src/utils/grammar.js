@@ -10,11 +10,12 @@ module.exports = {
    */
   titleCase: (string) => {
     if (!string) return ''
+    if (titleCaseExceptions.artists.includes(string)) return string
     return string
       .toLowerCase()
       .split(' ')
       .map((word, i) => {
-        return titleCaseExceptions.exceptions.includes(word) && i !== 0
+        return titleCaseExceptions.words.includes(word) && i !== 0
           ? word
           : word.charAt(0).toUpperCase().concat(word.substring(1))
       })
