@@ -3,8 +3,8 @@ layout: main
 ---
 {% render "partials/header.liquid", site: site, page: page %}
 {{ content }}
-{% render "partials/now/artists.liquid", music:music %}
-{% render "partials/now/albums.liquid", music:music %}
+{% render "partials/now/artists.liquid", music:artists %}
+{% render "partials/now/albums.liquid", music:albums %}
 {% render "partials/now/albumReleases.liquid", albumReleases:albumReleases %}
 {% render "partials/now/books.liquid", books:books %}
 {% render "partials/now/links.liquid", links:links %}

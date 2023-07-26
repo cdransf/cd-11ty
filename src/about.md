@@ -22,7 +22,7 @@ meta:
 </div>
 <h1 class="text-xxl font-black -leading-tight tracking-normal dark:text-gray-200 md:text-3xl text-center">Hi, I'm Cory</h1>
 
-I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, <a href="https://music.apple.com/profile/cdransf" rel="noopener noreferrer">music</a>, writing, <a href="/now" rel="noopener noreferrer">reading</a> and <a href="https://trakt.tv/users/cdransf" rel="noopener noreferrer">tv</a> and <a href="https://letterboxd.com/cdme" rel="noopener noreferrer">movies</a>.
+I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, <a href="https://www.last.fm/user/cdrn_" rel="noopener noreferrer">music</a>, writing, <a href="/now" rel="noopener noreferrer">reading</a> and <a href="https://trakt.tv/users/cdransf" rel="noopener noreferrer">tv</a> and <a href="https://letterboxd.com/cdme" rel="noopener noreferrer">movies</a>.
 
 I build, maintain and design web applications. I've been coding professionally since 2010 with a focus on frontend technologies.
 
