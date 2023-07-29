@@ -5320,5 +5320,16 @@
       "https://social.lol/users/cory/statuses/110796326434214198"
     ],
     "lastTootTimestamp": 1690617774000
+  },
+  "https://letterboxd.com/cdme/film/the-maze-runner/": {
+    "id": "https://letterboxd.com/cdme/film/the-maze-runner/",
+    "title": "🎥: The Maze Runner, 2014 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/the-maze-runner/",
+    "content_text": "🎥: The Maze Runner, 2014 - ★★★ https://letterboxd.com/cdme/film/the-maze-runner/",
+    "date_published": "2023-07-29T19:47:29-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110799629664057138"
+    ],
+    "lastTootTimestamp": 1690668177313
   }
 }
