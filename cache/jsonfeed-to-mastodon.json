@@ -5309,5 +5309,16 @@
       "https://social.lol/users/cory/statuses/110788807290542960"
     ],
     "lastTootTimestamp": 1690503040975
+  },
+  "https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/": {
+    "id": "https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/",
+    "title": "🔗: Let a website be a worry stone.",
+    "url": "https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/",
+    "content_text": "🔗: Let a website be a worry stone. https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/",
+    "date_published": "1970-01-01T08:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110796326434214198"
+    ],
+    "lastTootTimestamp": 1690617774000
   }
 }
