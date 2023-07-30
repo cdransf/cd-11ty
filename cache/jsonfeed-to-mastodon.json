@@ -5331,5 +5331,16 @@
       "https://social.lol/users/cory/statuses/110799629664057138"
     ],
     "lastTootTimestamp": 1690668177313
+  },
+  "https://www.nytimes.com/2023/07/29/technology/mike-masnick-techdirt-internet-future.html": {
+    "id": "https://www.nytimes.com/2023/07/29/technology/mike-masnick-techdirt-internet-future.html",
+    "title": "🔗: An Internet Veteran’s Guide to Not Being Scared of Technology",
+    "url": "https://www.nytimes.com/2023/07/29/technology/mike-masnick-techdirt-internet-future.html",
+    "content_text": "🔗: An Internet Veteran’s Guide to Not Being Scared of Technology https://www.nytimes.com/2023/07/29/technology/mike-masnick-techdirt-internet-future.html",
+    "date_published": "2023-07-29T08:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110800137914379272"
+    ],
+    "lastTootTimestamp": 1690675932598
   }
 }
