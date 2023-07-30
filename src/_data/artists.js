@@ -16,7 +16,9 @@ module.exports = async function () {
       image:
         `https://cdn.coryd.dev/artists/${artist['name'].replace(/\s+/g, '-').toLowerCase()}.jpg` ||
         'https://cdn.coryd.dev/artists/missing-artist.jpg',
-      url: `https://musicbrainz.org/artist/${artist['mbid']}`,
+      url: artist['mbid']
+        ? `https://musicbrainz.org/artist/${artist['mbid']}`
+        : `https://rateyourmusic.com/search?searchterm=${encodeURI(artist['name'])}`,
     }
   })
 }

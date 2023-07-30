@@ -23,7 +23,9 @@ module.exports = async function () {
         : `https://cdn.coryd.dev/albums/${album['name'].name
             .replace(/\s+/g, '-')
             .toLowerCase()}.jpg`,
-      url: `https://musicbrainz.org/album/${album['mbid']}`,
+      url: album['mbid']
+        ? `https://musicbrainz.org/album/${album['mbid']}`
+        : `https://rateyourmusic.com/search?searchtype=l&searchterm=${encodeURI(album['name'])}`,
     }
   })
 }
