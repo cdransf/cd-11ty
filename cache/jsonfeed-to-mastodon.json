@@ -5364,5 +5364,16 @@
       "https://social.lol/users/cory/statuses/110805798027703624"
     ],
     "lastTootTimestamp": 1690762299048
+  },
+  "https://letterboxd.com/cdme/film/maze-runner-the-scorch-trials/": {
+    "id": "https://letterboxd.com/cdme/film/maze-runner-the-scorch-trials/",
+    "title": "🎥: Maze Runner: The Scorch Trials, 2015 - ★★½",
+    "url": "https://letterboxd.com/cdme/film/maze-runner-the-scorch-trials/",
+    "content_text": "🎥: Maze Runner: The Scorch Trials, 2015 - ★★½ https://letterboxd.com/cdme/film/maze-runner-the-scorch-trials/",
+    "date_published": "2023-07-31T18:50:53-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110810483322259038"
+    ],
+    "lastTootTimestamp": 1690833790982
   }
 }
