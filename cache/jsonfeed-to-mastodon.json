@@ -5375,5 +5375,16 @@
       "https://social.lol/users/cory/statuses/110810483322259038"
     ],
     "lastTootTimestamp": 1690833790982
+  },
+  "https://ploum.net/2023-08-01-splitting-the-web.html": {
+    "id": "https://ploum.net/2023-08-01-splitting-the-web.html",
+    "title": "🔗: Splitting the Web",
+    "url": "https://ploum.net/2023-08-01-splitting-the-web.html",
+    "content_text": "🔗: Splitting the Web https://ploum.net/2023-08-01-splitting-the-web.html",
+    "date_published": "2023-08-01T08:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110816616350849098"
+    ],
+    "lastTootTimestamp": 1690927373602
   }
 }
