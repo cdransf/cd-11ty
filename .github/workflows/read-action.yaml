@@ -51,7 +51,7 @@ jobs:
       - name: Commit updated read file
         run: |
           git pull
-          git config --local user.email "hi@coryd.dev"
+          git config --local user.email "coryd@hey.com"
           git config --local user.name "Cory Dransfeldt"
           git add -A && git commit -m "📚 “${{ env.BookTitle }}” (${{ env.BookStatus }})"
           git push

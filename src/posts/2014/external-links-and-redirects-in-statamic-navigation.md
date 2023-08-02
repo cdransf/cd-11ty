@@ -29,4 +29,4 @@ template: link
 link: https://example.com
 ```
 
-Is there an easier or more effective way to do this? [Let me know.](mailto:hi@coryd.dev)
+Is there an easier or more effective way to do this? [Let me know.](mailto:coryd@hey.com)
