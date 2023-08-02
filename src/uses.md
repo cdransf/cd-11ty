@@ -77,6 +77,7 @@ Software and services that I use for work and my own enjoyment.
 - [Mullvad](https://mullvad.net)
 - [forwardemail.net](https://forwardemail.net)
 - [1Password](https://1password.com)
+- [Spotify](https://spotify.com)
 - [Last.fm](https://last.fm)
 - [Trakt](https://trakt.tv)
 - [Letterboxd](https://letterboxd.com)
