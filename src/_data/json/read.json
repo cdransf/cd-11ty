@@ -138,5 +138,25 @@
     "language": "en",
     "link": "https://books.google.com/books/about/Corporate_Rock_Sucks.html?hl=&id=YjuWzgEACAAJ",
     "dateFinished": "2023-08-03"
+  },
+  {
+    "isbn": "9780063251281",
+    "dateStarted": "2023-08-03",
+    "status": "started",
+    "rating": "unrated",
+    "title": "Where Are Your Boys Tonight?",
+    "authors": [
+      "Chris Payne"
+    ],
+    "publishedDate": "2022-11",
+    "description": "An energetic and explosive oral history examining the mainstream emo explosion from 1999-2008 and how it reversed expectations of what was possible in popular music, featuring exclusive interviews with the bands, managers, journalists, photographers, and awe-struck fans that defined the genre and a \"scene\" that would one day sweep across the entire country. If Meet Me in the Bathroom traced New York City's underground Indie scene, Where Are Your Boys Tonight? draws a wide circle around an emo culture that would grace the stages of the mainstream and become bigger than anyone ever thought possible. There was Pete Wentz, the Fall Out Boy leader who launched a litany of scene-stealing bands and preposterous side hustles, and Gerard Way, the wizard behind My Chemical Romance and The Black Parade. Panic! at the Disco and Paramore exploded soon after--a pair of intrepid outsiders who got massive playing by rules uniquely their own. Told from within the scenes that created this big bang, Where Are Your Boys Tonight? follows first-hand accounts of New Jersey basement shows and Long Island VFW hall gigs, where bands like Dashboard Confessional, Jimmy Eat World, Thursday, Lifetime, and Taking Back Sunday laid the foundation for the explosion of rock's most polarizing (and addictive) sub-genre. New Jersey native and former Billboard staff writer Chris Payne experienced much of emo's mainstream moment from sweaty crowds and mosh pits, and in Where Are Your Boys Tonight?, he reexamines these bands as they come of age and sky-rocket to fame within a genre rife with contradictions: avowing punk ethos while walking the VMAs red carpet; creating outlets for mental health struggles while perhaps inadvertently turning them into a crucial part of belonging; building fandoms significantly comprising young women and LGBTQ+ kids in an environment that was often toxic and unsafe. Set at the unique intersection of regional emo scenes and the rise of worldwide social media communities like MySpace and Tumblr, Where Are Your Boys Tonight? is a deeply personal, uncompromisingly emotional, and occasionally absurd account--featuring interviews with musicians like Pete Wentz, Chris Carrabba, and Jim Adkins; journalists like Leslie Simon, Andy Greenwald, and Hanif Abdurraqib; and the managers, idolizing scenesters, and won-over fans that made this all possible.",
+    "pageCount": 480,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=BSvtzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Where_Are_Your_Boys_Tonight.html?hl=&id=BSvtzgEACAAJ"
   }
 ]
