@@ -124,7 +124,7 @@
   {
     "isbn": "0306925486",
     "dateStarted": "2023-07-25",
-    "status": "started",
+    "status": "finished",
     "rating": "unrated",
     "title": "Corporate Rock Sucks",
     "authors": [
@@ -136,6 +136,7 @@
     "printType": "BOOK",
     "thumbnail": "https://books.google.com/books/content?id=YjuWzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
     "language": "en",
-    "link": "https://books.google.com/books/about/Corporate_Rock_Sucks.html?hl=&id=YjuWzgEACAAJ"
+    "link": "https://books.google.com/books/about/Corporate_Rock_Sucks.html?hl=&id=YjuWzgEACAAJ",
+    "dateFinished": "2023-08-03"
   }
 ]
