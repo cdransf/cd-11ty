@@ -95,13 +95,15 @@
         </a>
       </h3>
       <div class="h-14 flex items-center text-sm">
-        <xsl:value-of select="atom:updated"/><br/><br/>
-        <a>
-          <xsl:attribute name="href">
-            <xsl:value-of select="atom:link/@href"/>
-          </xsl:attribute>
-          Read more &#x2192;
-        </a>
+        <span>
+          <xsl:value-of select="atom:updated"/> •
+          <a>
+            <xsl:attribute name="href">
+              <xsl:value-of select="atom:link/@href"/>
+            </xsl:attribute>
+            Read more &#x2192;
+          </a>
+        </span>
       </div>
     </div>
   </xsl:template>
