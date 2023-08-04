@@ -10,7 +10,7 @@ permalink: /links.xml
 {% for link in links %}
   <entry>
     <title>{{ link.title | escape }}</title>
-    <link href="{{ link.url | url_encode }}" />
+    <link href="{{ link.url }}" />
     <updated>{{ link.date | date: "%m.%d.%Y" }}</updated>
     <id>{{ link.url | url_encode }}</id>
     <content type="html"></content>
