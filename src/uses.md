@@ -81,6 +81,7 @@ Software and services that I use for work and my own enjoyment.
 - [Last.fm](https://last.fm)
 - [Trakt](https://trakt.tv)
 - [Letterboxd](https://letterboxd.com)
+- [Goodreads](https://goodreads.com)
 - [Reader](https://readwise.io/read)
 - [Whereby](https://whereby.com)
 - [Slack](http://slack.com)

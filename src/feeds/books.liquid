@@ -5,13 +5,13 @@ permalink: /books.xml
 {% layout "./_includes/feeds/books.liquid" %}
 {% block title %}Books • Cory Dransfeldt{% endblock %}
 {% block self %}books.xml{% endblock %}
-{% block update %}{{ articles[0].time | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}
+{% block update %}{{ books[0].dateAdded | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}
 {% block entries %}
 {% for book in books %}
   <entry>
     <title>{{ book.title | escape }}</title>
     <link href="{{book.link}}" />
-    <updated>{{ book.started  | date: "%m.%d.%Y" }}</updated>
+    <updated>{{ book.dateAdded  | date: "%m.%d.%Y" }}</updated>
     <id>{{ book.link }}</id>
     <content type="html"></content>
   </entry>

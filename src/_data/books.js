@@ -1,17 +1,33 @@
-const reading = require('./json/read.json')
+const Parser = require('rss-parser')
+const { AssetCache } = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
-  const books = reading.map((read) => {
-    return {
-      title: read['title'],
-      cover: read['thumbnail']
-        .replace('https://books.google.com', 'https://books.coryd.dev')
-        .replace('&edge=curl', ''),
-      link: `https://openlibrary.org/search?q=${read['isbn']}`,
-      started: read['dateStarted'],
-      finished: read['dateFinished'],
-      status: read['status'],
-    }
+  const parser = new Parser({
+    customFields: {
+      item: ['book_large_image_url', 'isbn', 'book_description', 'user_date_added'],
+    },
   })
-  return books.filter((book) => book.status === 'started')
+  const url = process.env.SECRET_FEED_GOODREADS
+  const asset = new AssetCache('books_data')
+  if (asset.isCacheValid('1h')) return await asset.getCachedValue()
+  const data = []
+  const res = await parser.parseURL(url).catch((error) => {
+    console.log(error.message)
+  })
+  res.items.forEach((book) => {
+    data.push({
+      image: book['book_large_image_url'].replace(
+        'https://i.gr-assets.com',
+        'https://books.coryd.dev'
+      ),
+      title: book['title'],
+      link: book['link'],
+      isbn: book['isbn'],
+      description: book['book_description'],
+      dateAdded: book['user_date_added'],
+    })
+  })
+  const books = data.splice(0, 6)
+  await asset.save(books, 'json')
+  return books
 }

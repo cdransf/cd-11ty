@@ -5,7 +5,7 @@ permalink: /links.xml
 {% layout "./_includes/feeds/links.liquid" %}
 {% block title %}Links • Cory Dransfeldt{% endblock %}
 {% block self %}links.xml{% endblock %}
-{% block update %}{{ link[0].date | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}
+{% block update %}{{ links[0].date | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}
 {% block entries %}
 {% for link in links %}
   <entry>
