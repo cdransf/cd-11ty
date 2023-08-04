@@ -10,9 +10,9 @@ permalink: /books.xml
 {% for book in books %}
   <entry>
     <title>{{ book.title | escape }}</title>
-    <link href="{{book.link}}" />
-    <updated>{{ book.dateAdded  | date: "%m.%d.%Y" }}</updated>
-    <id>{{ book.link }}</id>
+    <link href="{{book.link | url_encode}}" />
+    <updated>{{ book.dateAdded | date: "%m.%d.%Y" }}</updated>
+    <id>{{ book.link | url_encode }}</id>
     <content type="html"></content>
   </entry>
 {% endfor %}

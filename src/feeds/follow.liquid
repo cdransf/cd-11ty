@@ -10,9 +10,9 @@ permalink: /follow.xml
 {% for item in follow.posts %}
   <entry>
     <title>{{ item.title | escape }}</title>
-    <link href="{{item.url}}" />
+    <link href="{{item.url | url_encode}}" />
     <updated>{{ item.date_published | date: "%m.%d.%Y" }}</updated>
-    <id>{{ item.url }}</id>
+    <id>{{ item.url | url_encode }}</id>
     <content type="html"></content>
   </entry>
 {% endfor %}
