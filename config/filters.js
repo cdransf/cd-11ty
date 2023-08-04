@@ -12,6 +12,15 @@ module.exports = {
     return marked.parse(content)
   },
   dashLower: (string) => string.replace(/\s+/g, '-').toLowerCase(),
+  encodeAmp: (string) => {
+    const pattern = /&(?!(?:[a-zA-Z]+|#[0-9]+|#x[0-9a-fA-F]+);)/g
+    const replacement = '&amp;'
+    return string.replace(pattern, replacement)
+  },
+  stripUtm: (string) => {
+    const pattern = /[?&](utm_[^&=]+=[^&#]*)/gi
+    return string.replace(pattern, '')
+  },
   getPostImage: (image) => {
     if (image && image !== '') return image
     return '/assets/img/social-card.webp'
