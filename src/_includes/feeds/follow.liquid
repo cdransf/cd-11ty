@@ -4,8 +4,8 @@
   <title>
     {% block title %}Follow • Cory Dransfeldt{% endblock %}
   </title>
-  <link href="{{ pkg.homepage }}/follow.xml" rel="self" />
-  <link href="{{ pkg.homepage }}/" />
+  <link href="{{ site.url }}/follow.xml" rel="self" />
+  <link href="{{ site.url }}" />
   <link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
   <updated>{% block update %}{{ follow.posts[0].date_published | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}</updated>
   <id>{{ site.url }}</id>
