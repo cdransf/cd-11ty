@@ -5337,7 +5337,7 @@
     "title": "🔗: An Internet Veteran’s Guide to Not Being Scared of Technology",
     "url": "https://www.nytimes.com/2023/07/29/technology/mike-masnick-techdirt-internet-future.html",
     "content_text": "🔗: An Internet Veteran’s Guide to Not Being Scared of Technology https://www.nytimes.com/2023/07/29/technology/mike-masnick-techdirt-internet-future.html",
-    "date_published": "2023-07-29T08:00:00-08:00",
+    "date_published": "2023-07-29T00:00:00-08:00",
     "toots": [
       "https://social.lol/users/cory/statuses/110800137914379272"
     ],
@@ -5348,7 +5348,7 @@
     "title": "🔗: When Emo Conquered the Mainstream",
     "url": "https://www.newyorker.com/books/page-turner/when-emo-conquered-the-mainstream",
     "content_text": "🔗: When Emo Conquered the Mainstream https://www.newyorker.com/books/page-turner/when-emo-conquered-the-mainstream",
-    "date_published": "2023-07-28T08:00:00-08:00",
+    "date_published": "2023-07-28T00:00:00-08:00",
     "toots": [
       "https://social.lol/users/cory/statuses/110805291529878939"
     ],
@@ -5359,7 +5359,7 @@
     "title": "🔗: The Right to Lie: Google’s “Web Environment Integrity” Proposal is a Geyser of Badness Threatening to Swamp the Open Web.",
     "url": "https://rants.org/2023/07/the-right-to-lie-and-google-wei/",
     "content_text": "🔗: The Right to Lie: Google’s “Web Environment Integrity” Proposal is a Geyser of Badness Threatening to Swamp the Open Web. https://rants.org/2023/07/the-right-to-lie-and-google-wei/",
-    "date_published": "2023-07-30T08:00:00-08:00",
+    "date_published": "2023-07-30T00:00:00-08:00",
     "toots": [
       "https://social.lol/users/cory/statuses/110805798027703624"
     ],
@@ -5381,7 +5381,7 @@
     "title": "🔗: Splitting the Web",
     "url": "https://ploum.net/2023-08-01-splitting-the-web.html",
     "content_text": "🔗: Splitting the Web https://ploum.net/2023-08-01-splitting-the-web.html",
-    "date_published": "2023-08-01T08:00:00-08:00",
+    "date_published": "2023-08-01T00:00:00-08:00",
     "toots": [
       "https://social.lol/users/cory/statuses/110816616350849098"
     ],
@@ -5414,7 +5414,7 @@
     "title": "🔗: The Coming Enshittification of Public Libraries",
     "url": "https://karawynn.substack.com/p/the-coming-enshittification-of-public-libraries",
     "content_text": "🔗: The Coming Enshittification of Public Libraries https://karawynn.substack.com/p/the-coming-enshittification-of-public-libraries",
-    "date_published": "2023-07-26T08:00:00-08:00",
+    "date_published": "2023-07-26T00:00:00-08:00",
     "toots": [
       "https://social.lol/users/cory/statuses/110832660612729810"
     ],
@@ -5478,5 +5478,24 @@
       "https://social.lol/users/cory/statuses/110833132301098773"
     ],
     "lastTootTimestamp": 1691179386978
+  },
+  "https://www.goodreads.com/review/show/5743213157": {
+    "id": "https://www.goodreads.com/review/show/5743213157",
+    "title": "📖: Where Are Your Boys Tonight?: The Oral History of Emo's Mainstream Explosion 1999-2008",
+    "url": "https://www.goodreads.com/review/show/5743213157",
+    "content_text": "📖: Where Are Your Boys Tonight?: The Oral History of Emo's Mainstream Explosion 1999-2008 https://www.goodreads.com/review/show/5743213157",
+    "date_published": "2023-08-04T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110833604227255782"
+    ],
+    "lastTootTimestamp": 1691186588003
+  },
+  "https://www.goodreads.com/review/show/5743212805": {
+    "id": "https://www.goodreads.com/review/show/5743212805",
+    "title": "📖: Elysium Fire (Prefect Dreyfus Emergency #2)",
+    "url": "https://www.goodreads.com/review/show/5743212805",
+    "content_text": "📖: Elysium Fire (Prefect Dreyfus Emergency #2) https://www.goodreads.com/review/show/5743212805",
+    "date_published": "2023-08-04T00:00:00-08:00",
+    "toots": []
   }
 }
