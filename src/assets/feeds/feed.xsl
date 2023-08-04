@@ -63,7 +63,7 @@
               </div>
               <xsl:apply-templates select="atom:feed/atom:entry"/>
             </div>
-            <footer class="prose pb-8 mt-4 text-gray-800 dark:text-white border-t border-gray-200 dark:border-gray-700 max-w-full">
+            <footer class="prose pb-8 mt-4 text-gray-800 dark:text-white max-w-full">
               <div>
                 <p class="mb-0">
                   <strong class="text-gray-800 dark:text-gray-200">This is a web feed,</strong>
