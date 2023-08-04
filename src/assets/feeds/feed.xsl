@@ -98,7 +98,7 @@
         <span>
           <xsl:value-of select="atom:updated"/>
         </span>
-        <span class="mx-1">•</span>
+        <span> • </span>
         <a>
           <xsl:attribute name="href">
             <xsl:value-of select="atom:link/@href"/>
