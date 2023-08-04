@@ -11,7 +11,7 @@ permalink: /links.xml
   <entry>
     <title>{{ link.title | escape }}</title>
     <link href="{{ link.url | url_encode }}" />
-    <updated>{{ link.date | date: "%Y-%m-%dT%H:%M:%S-08:00" }}</updated>
+    <updated>{{ link.date | date: "%m.%d.%Y" }}</updated>
     <id>{{ link.url | url_encode }}</id>
     <content type="html"></content>
   </entry>
