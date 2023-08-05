@@ -101,7 +101,7 @@
             <xsl:attribute name="href">
               <xsl:value-of select="atom:link/@href"/>
             </xsl:attribute>
-            Read more &#x2192;
+            Read &#x2192;
           </a>
         </span>
       </div>
