@@ -5500,5 +5500,40 @@
       "https://social.lol/users/cory/statuses/110834105761938773"
     ],
     "lastTootTimestamp": 1691194240794
+  },
+  "https://lucybellwood.com/one-quick-one-slow/": {
+    "id": "https://lucybellwood.com/one-quick-one-slow/",
+    "title": "🔗: One Quick, One Slow",
+    "url": "https://lucybellwood.com/one-quick-one-slow/",
+    "content_text": "🔗: One Quick, One Slow https://lucybellwood.com/one-quick-one-slow/",
+    "date_published": "2023-08-03T00:00:00-08:00",
+    "toots": []
+  },
+  "https://leahreich.substack.com/p/the-great-social-media-wars-of-2023": {
+    "id": "https://leahreich.substack.com/p/the-great-social-media-wars-of-2023",
+    "title": "🔗: The Great Social Media Wars of 2023",
+    "url": "https://leahreich.substack.com/p/the-great-social-media-wars-of-2023",
+    "content_text": "🔗: The Great Social Media Wars of 2023 https://leahreich.substack.com/p/the-great-social-media-wars-of-2023",
+    "date_published": "2023-07-07T00:00:00-08:00",
+    "toots": []
+  },
+  "https://erinkissane.com/tomorrow-and-tomorrow-and-tomorrow": {
+    "id": "https://erinkissane.com/tomorrow-and-tomorrow-and-tomorrow",
+    "title": "🔗: Tomorrow & tomorrow & tomorrow",
+    "url": "https://erinkissane.com/tomorrow-and-tomorrow-and-tomorrow",
+    "content_text": "🔗: Tomorrow & tomorrow & tomorrow https://erinkissane.com/tomorrow-and-tomorrow-and-tomorrow",
+    "date_published": "2023-06-01T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110834588957409292"
+    ],
+    "lastTootTimestamp": 1691201613814
+  },
+  "https://nazhamid.com/journal/dissocial-media/": {
+    "id": "https://nazhamid.com/journal/dissocial-media/",
+    "title": "🔗: Dissocial Media",
+    "url": "https://nazhamid.com/journal/dissocial-media/",
+    "content_text": "🔗: Dissocial Media https://nazhamid.com/journal/dissocial-media/",
+    "date_published": "2022-07-08T00:00:00-08:00",
+    "toots": []
   }
 }
