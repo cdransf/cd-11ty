@@ -9,7 +9,7 @@ permalink: '/links.json'
 "feed_url": "https://coryd.dev/links.json",
 "items": [{% for link in links %}
   {
-  "id": "{{ link.url | stripUtm | encodeAmp }}",
+  "id": "{{ link.id }}",
   "title": "{{ link.title | escape }}",
   "url": "{{ link.url | stripUtm | encodeAmp }}",
   "content_text": "{{ link.summary | escape }}",
