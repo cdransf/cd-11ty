@@ -11,7 +11,7 @@ module.exports = async function () {
   })
   const data = await res
   const links = data.results.filter((result) => Object.keys(result.tags).includes('share'))
-  return links.splice(0, 5).map((link) => {
+  return links.map((link) => {
     return {
       title: link['title'],
       url: link['source_url'],
