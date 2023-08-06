@@ -5555,5 +5555,16 @@
       "https://social.lol/users/cory/statuses/110839771195322178"
     ],
     "lastTootTimestamp": 1691280688779
+  },
+  "https://letterboxd.com/cdme/film/the-passenger-2023/": {
+    "id": "https://letterboxd.com/cdme/film/the-passenger-2023/",
+    "title": "🎥: The Passenger, 2023 - ★★★★",
+    "url": "https://letterboxd.com/cdme/film/the-passenger-2023/",
+    "content_text": "🎥: The Passenger, 2023 - ★★★★ https://letterboxd.com/cdme/film/the-passenger-2023/",
+    "date_published": "2023-08-06T16:55:23-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110843985327074214"
+    ],
+    "lastTootTimestamp": 1691344991014
   }
 }
