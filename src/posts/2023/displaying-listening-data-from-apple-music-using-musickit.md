@@ -152,7 +152,7 @@ The templating for my site is all written in [liquid.js](https://liquidjs.com) a
 
 ```liquid
 {% if recentTracks.size > 0 %}
-  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 icon--h-28">
+  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 icon--28">
     {% tablericon "microphone" "Artists" %}
     <div class="ml-1">Artists</div>
   </h2>
@@ -176,7 +176,7 @@ The templating for my site is all written in [liquid.js](https://liquidjs.com) a
   </div>
 {% endif %}
 {% if recentTracks.size > 0 %}
-  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 icon--h-28">
+  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 icon--28">
     {% tablericon "musical-note" "Albums" %}
     <div class="ml-1">Albums</div>
   </h2>

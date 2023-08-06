@@ -46,7 +46,7 @@ Rendering the output is as simple as:
 
 ```liquid
 {% if albumReleases.size > 0 %}
-  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 icon--h-28">
+  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 icon--28">
     {% tablericon "calendar" "Albums I'm looking forward to" %}
     <div class="ml-1">Albums I'm looking forward to</div>
   </h2>

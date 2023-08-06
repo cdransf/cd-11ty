@@ -108,16 +108,24 @@ code[class*=language-], pre[class*=language-] {
   stroke-width: 1.4;
 }
 
-.icon--h-20 > svg {
+.icon--20 > svg {
   @apply h-5;
+  @apply w-5;
 }
 
-.icon--h-24 > svg {
+.icon--24 > svg {
   @apply h-6;
+  @apply w-6
 }
 
-.icon--h-28 > svg {
-  @apply h-6;
+.icon--28 > svg {
+  @apply h-7;
+  @apply w-7;
+}
+
+.icon--32 > svg {
+  @apply h-8;
+  @apply w-8;
 }
 
 .icon--bold > svg {
