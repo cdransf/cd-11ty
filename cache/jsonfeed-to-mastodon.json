@@ -5566,5 +5566,16 @@
       "https://social.lol/users/cory/statuses/110843985327074214"
     ],
     "lastTootTimestamp": 1691344991014
+  },
+  "https://letterboxd.com/cdme/film/brother-2022/": {
+    "id": "https://letterboxd.com/cdme/film/brother-2022/",
+    "title": "🎥: Brother, 2022 - ★★★★",
+    "url": "https://letterboxd.com/cdme/film/brother-2022/",
+    "content_text": "🎥: Brother, 2022 - ★★★★ https://letterboxd.com/cdme/film/brother-2022/",
+    "date_published": "2023-08-06T19:27:50-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110844456616348260"
+    ],
+    "lastTootTimestamp": 1691352182307
   }
 }
