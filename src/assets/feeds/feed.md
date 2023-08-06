@@ -1,6 +1,6 @@
 ---
 layout: feed
-title: Feed • Cory Dransfeldt
+title: Posts • Cory Dransfeldt
 icon: rss
 heading: Feed preview • all posts
 description: A feed of the posts from my site.
