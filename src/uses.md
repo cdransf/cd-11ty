@@ -75,6 +75,7 @@ Software and services that I use for work and my own enjoyment.
 - [Bunny.net](https://bunny.net?ref=revw3mehej)
 - [Plausible analytics](https://plausible.io)
 - [Mullvad](https://mullvad.net)
+- [Kagi](https://kagi.com)
 - [forwardemail.net](https://forwardemail.net)
 - [1Password](https://1password.com)
 - [Spotify](https://spotify.com)
