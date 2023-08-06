@@ -17,7 +17,6 @@
         <link href="/assets/img/favicon/favicon-16x16.png" rel="icon" type="image/x-icon"/>
         <link href="/assets/img/favicon/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32"/>
         <link href="/assets/img/favicon/apple-touch-icon.png" rel="apple-touch-icon"/>
-        <script src="/assets/scripts/isDarkMode.js">''</script>
         <link rel="me" href="https://social.lol/@cory"/>
       </head>
       <body class="dark:text-white dark:bg-gray-900 font-sans text-gray-800">
