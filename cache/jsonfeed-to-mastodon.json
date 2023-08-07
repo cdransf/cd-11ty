@@ -5577,5 +5577,16 @@
       "https://social.lol/users/cory/statuses/110844456616348260"
     ],
     "lastTootTimestamp": 1691352182307
+  },
+  "https://letterboxd.com/cdme/film/rampage-2018/": {
+    "id": "https://letterboxd.com/cdme/film/rampage-2018/",
+    "title": "🎥: Rampage, 2018 - ★★½",
+    "url": "https://letterboxd.com/cdme/film/rampage-2018/",
+    "content_text": "🎥: Rampage, 2018 - ★★½ https://letterboxd.com/cdme/film/rampage-2018/",
+    "date_published": "2023-08-07T01:02:07-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110845922342364397"
+    ],
+    "lastTootTimestamp": 1691374547538
   }
 }
