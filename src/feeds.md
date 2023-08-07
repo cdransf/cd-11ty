@@ -26,5 +26,5 @@ class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 m
 
 - Posts ([RSS](/feed.xml) • [JSON](/feed.json)): posts from my site.
 - Links ([RSS](/links.xml) • [JSON](/links.json)): links I've liked.
-- Books ([RSS](/books.xml) • [JSON](/books.json)): my recently read books.
+- Books ([RSS](/books.xml) • [JSON](/books.json)): books I'm currently reading.
 - Follow ([RSS](/follow.xml) • [JSON](/follow.json)): my activity from around the web.
