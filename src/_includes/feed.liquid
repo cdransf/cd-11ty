@@ -29,9 +29,14 @@
             </span>
             {{ title }}
           </h1>
-          <a href="/" class="icon--28 icon--bold link--icon">
-            {% tablericon "home-move" "Home • Cory Dransfeldt" %}
-          </a>
+          <div class="flex flex-row gap-6">
+            <a href="/feeds" class="icon--24 link--icon">
+              {% tablericon "rss" "Feeds • Cory Dransfeldt" %}
+            </a>
+            <a href="/" class="icon--24 link--icon">
+              {% tablericon "home-move" "Home • Cory Dransfeldt" %}
+            </a>
+          </div>
         </div>
         <div class="pt-4 prose dark:prose-invert hover:prose-a:text-blue-500 max-w-full">
           <div class="dark:text-white text-gray-800">
