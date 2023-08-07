@@ -38,7 +38,7 @@ Software and services that I use for work and my own enjoyment.
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
 
 - [Things](https://culturedcode.com/things/)
-- [Ivory](https://tapbots.com/ivory)
+- [Mona](https://mastodon.social/@MonaApp)
 - [Parcel](https://parcelapp.net)
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">iOS</h3>
