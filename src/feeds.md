@@ -24,7 +24,7 @@ class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 m
 {{ title }}
 </h2>
 
-- Posts ([RSS](/feed.xml) • [JSON](/feed.json)): a feed of all of my blog posts.
-- Links ([RSS](/links.xml) • [JSON](/links.json)): a feed of links I've liked.
-- Books ([RSS](/books.xml) • [JSON](/books.json)): a feed of books I've finished reading.
-- Follow ([RSS](/follow.xml) • [JSON](/follow.json)): a feed of my web activity comprised of blog posts, links, movies and books (using the same data sources as [my now page](/now)).
+- Posts ([RSS](/feed.xml) • [JSON](/feed.json)): posts from my site.
+- Links ([RSS](/links.xml) • [JSON](/links.json)): links I've liked.
+- Books ([RSS](/books.xml) • [JSON](/books.json)): my recently read books.
+- Follow ([RSS](/follow.xml) • [JSON](/follow.json)): my activity from around the web.
