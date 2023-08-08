@@ -5610,5 +5610,24 @@
       "https://social.lol/users/cory/statuses/110850591920564984"
     ],
     "lastTootTimestamp": 1691445800100
+  },
+  "https://dev.to/stuffbreaker/seo-and-web-components-2023-edition-3l6i": {
+    "id": "https://dev.to/stuffbreaker/seo-and-web-components-2023-edition-3l6i",
+    "title": "🔗: SEO and Web Components - 2023 Edition",
+    "url": "https://dev.to/stuffbreaker/seo-and-web-components-2023-edition-3l6i",
+    "content_text": "🔗: SEO and Web Components - 2023 Edition https://dev.to/stuffbreaker/seo-and-web-components-2023-edition-3l6i",
+    "date_published": "2023-08-07T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110851094841509724"
+    ],
+    "lastTootTimestamp": 1691453473606
+  },
+  "https://doctorow.medium.com/fool-me-twice-we-dont-get-fooled-again-20074e311f1f": {
+    "id": "https://doctorow.medium.com/fool-me-twice-we-dont-get-fooled-again-20074e311f1f",
+    "title": "🔗: Fool Me Twice We Don’t Get Fooled Again",
+    "url": "https://doctorow.medium.com/fool-me-twice-we-dont-get-fooled-again-20074e311f1f",
+    "content_text": "🔗: Fool Me Twice We Don’t Get Fooled Again https://doctorow.medium.com/fool-me-twice-we-dont-get-fooled-again-20074e311f1f",
+    "date_published": "2023-08-06T00:00:00-08:00",
+    "toots": []
   }
 }
