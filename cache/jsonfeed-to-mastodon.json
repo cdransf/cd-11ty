@@ -5643,5 +5643,16 @@
       "https://social.lol/users/cory/statuses/110855782538049036"
     ],
     "lastTootTimestamp": 1691525002182
+  },
+  "https://css-tricks.com/simple-boring/": {
+    "id": "https://css-tricks.com/simple-boring/",
+    "title": "🔗: Simple & Boring",
+    "url": "https://css-tricks.com/simple-boring/",
+    "content_text": "🔗: Simple & Boring https://css-tricks.com/simple-boring/",
+    "date_published": "2019-03-25T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110856758022883572"
+    ],
+    "lastTootTimestamp": 1691539886972
   }
 }
