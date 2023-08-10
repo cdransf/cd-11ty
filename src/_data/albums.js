@@ -25,7 +25,7 @@ module.exports = async function () {
             .toLowerCase()}.jpg`,
       url: album['mbid']
         ? `https://musicbrainz.org/album/${album['mbid']}`
-        : `https://rateyourmusic.com/search?searchtype=l&searchterm=${encodeURI(album['name'])}`,
+        : `https://musicbrainz.org/search?query=${encodeURI(album['name'])}&type=release_group`,
     }
   })
 }
