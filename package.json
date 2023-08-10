@@ -22,7 +22,7 @@
     "@11ty/eleventy-img": "^3.1.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@catppuccin/tailwindcss": "^0.1.6",
-    "@commitlint/cli": "^17.7.0",
+    "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "@netlify/plugin-lighthouse": "^5.0.0",
     "@quasibit/eleventy-plugin-schema": "^1.11.0",
