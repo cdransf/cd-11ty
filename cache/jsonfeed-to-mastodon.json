@@ -5687,5 +5687,16 @@
       "https://social.lol/users/cory/statuses/110873737165906071"
     ],
     "lastTootTimestamp": 1691798968042
+  },
+  "https://www.goodreads.com/review/show/5750192874": {
+    "id": "https://www.goodreads.com/review/show/5750192874",
+    "title": "📖: Trouble Boys: The True Story of the Replacements",
+    "url": "https://www.goodreads.com/review/show/5750192874",
+    "content_text": "📖: Trouble Boys: The True Story of the Replacements https://www.goodreads.com/review/show/5750192874",
+    "date_published": "2023-08-12T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110875129049503259"
+    ],
+    "lastTootTimestamp": 1691820206523
   }
 }
