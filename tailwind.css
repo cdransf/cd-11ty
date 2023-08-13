@@ -42,6 +42,8 @@ h2 > a.header-anchor {
 a,
 .prose a {
   color: theme(colors.purple.600);
+  @apply ease-in-out;
+  @apply duration-300;
 }
 
 a:hover,
@@ -50,7 +52,13 @@ a:active,
 .prose a:hover,
 .prose a:focus,
 .prose a:active {
-  color: theme(colors.purple.500);
+  color: theme(colors.pink.500);
+}
+
+p > a,
+span > a,
+blockquote > a {
+  text-decoration: underline !important;
 }
 
 code {
@@ -76,6 +84,8 @@ pre {
   @apply mb-4;
   @apply rounded-full;
   @apply text-white;
+  @apply ease-in-out;
+  @apply duration-300;
   background: theme(colors.purple.600);
 }
 
@@ -96,7 +106,7 @@ pre {
 .tag--button:hover,
 .tag--button:active,
 .tag--button:focus {
-  background: theme(colors.purple.500);
+  background: theme(colors.pink.500);
 }
 
 code[class*=language-], pre[class*=language-] {
@@ -133,11 +143,13 @@ code[class*=language-], pre[class*=language-] {
 }
 
 .link--icon > svg {
-  color: theme(colors.gray.700)
+  color: theme(colors.gray.700);
+  @apply ease-in-out;
+  @apply duration-300;
 }
 
 .link--icon:hover > svg {
-  color: theme(colors.purple.500)
+  color: theme(colors.pink.500)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -156,6 +168,6 @@ code[class*=language-], pre[class*=language-] {
   }
 
   .link--icon:hover svg {
-    color: theme(colors.purple.500)
+    color: theme(colors.pink.500)
   }
 }

@@ -21,7 +21,7 @@ meta:
 {% for tag in collections.tagList %}
 
 <span>
-  <a href="/tags/{{ tag }}" class="no-underline">
+  <a href="/tags/{{ tag }}" class="!no-underline">
     <button class="tag--button">
       {{ tag }}
     </button>

@@ -27,9 +27,7 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/line-clamp'),
-    require('@catppuccin/tailwindcss', {
-      defaultFlavour: 'mocha',
-    }),
+    require('@catppuccin/tailwindcss'),
     require('@tailwindcss/aspect-ratio'),
   ],
   content: ['./src/**/*.md', './src/**/*.html', './src/_includes/**/*.liquid'],
