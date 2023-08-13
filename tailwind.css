@@ -57,7 +57,8 @@ a:active,
 
 p > a,
 span > a,
-blockquote > a {
+blockquote > a,
+li > a {
   text-decoration: underline !important;
 }
 
