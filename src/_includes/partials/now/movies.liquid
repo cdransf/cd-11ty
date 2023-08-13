@@ -12,7 +12,7 @@
             <div class="px-1 text-xs font-bold text-white">{{ movie.title }}</div>
           </div>
           {%- capture movieImg %}{{movie.image | cdn: site.letterboxd-host, site.cdn-movies}}{% endcapture -%}
-          {%- capture movieName %}{{movie.title | escape}}{% endcapture -%}
+          {%- capture movieName %}{{movie.title | escape}} - {{ movie.contentSnippet }}{% endcapture -%}
           {% image movieImg, movieName, 'rounded-lg w-full', '180px' %}
         </div>
       </a>
