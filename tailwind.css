@@ -4,12 +4,12 @@
 
 ::-moz-selection {
   color: theme(colors.white);
-  background: theme(colors.purple.400);
+  background: theme(colors.pink.500);
 }
 
 ::selection {
   color: theme(colors.white);
-  background: theme(colors.purple.400);
+  background: theme(colors.pink.500);
 }
 
 .icon-inline svg {
