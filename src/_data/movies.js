@@ -12,10 +12,18 @@ module.exports = async function () {
   const data = res.items
     .map((item) => {
       const images = item['content']?.match(/<img [^>]*src="[^"]*"[^>]*>/gm) || []
-      item.image = images.length
-        ? images.map((image) => image.replace(/.*src="([^"]*)".*/, '$1'))[0]
-        : 'https://cdn.coryd.dev/movies/missing-movie.jpg'
-      return item
+      return {
+        name: item['title'],
+        date: item['pubDate'],
+        summary: item['contentSnippet'],
+        image: images.length
+          ? images
+              .map((image) => image.replace(/.*src="([^"]*)".*/, '$1'))[0]
+              .replace('https://a.ltrbxd.com', 'https://movies.coryd.dev')
+          : 'https://cdn.coryd.dev/movies/missing-movie.jpg',
+        url: item['link'],
+        id: item['guid'],
+      }
     })
     .splice(0, 6)
   await asset.save(data, 'json')
