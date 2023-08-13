@@ -5698,5 +5698,24 @@
       "https://social.lol/users/cory/statuses/110875129049503259"
     ],
     "lastTootTimestamp": 1691820206523
+  },
+  "https://chrishannah.me/most-websites-should-be-served-statically/": {
+    "id": "https://chrishannah.me/most-websites-should-be-served-statically/",
+    "title": "🔗: Most websites should be served statically",
+    "url": "https://chrishannah.me/most-websites-should-be-served-statically/",
+    "content_text": "🔗: Most websites should be served statically https://chrishannah.me/most-websites-should-be-served-statically/",
+    "date_published": "2023-08-12T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110879861955033248"
+    ],
+    "lastTootTimestamp": 1691892424916
+  },
+  "https://robinrendle.com/newsletter/what-makes-a-website-cool/": {
+    "id": "https://robinrendle.com/newsletter/what-makes-a-website-cool/",
+    "title": "🔗: What makes a website cool?",
+    "url": "https://robinrendle.com/newsletter/what-makes-a-website-cool/",
+    "content_text": "🔗: What makes a website cool? https://robinrendle.com/newsletter/what-makes-a-website-cool/",
+    "date_published": "2023-08-12T00:00:00-08:00",
+    "toots": []
   }
 }
