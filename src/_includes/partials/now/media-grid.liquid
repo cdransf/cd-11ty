@@ -6,14 +6,7 @@
   </h2>
   <div class="grid gap-2 {% if shape == 'square' %}grid-cols-2 md:grid-cols-4{% else %}grid-cols-3 md:grid-cols-6{% endif %} not-prose">
     {% for item in media limit: count %}
-      {% capture altVal %}
-        {% if item.alt %}
-          {{ item.alt }}
-        {% elsif item.title %}
-          {{ item.title }}
-        {% endif %}
-      {% endcapture %}
-      {% assign alt = altVal | strip %}
+      {% assign alt = item.alt | strip %}
       <a href="{{ item.url }}" title="{{ alt | escape }}">
         <div class="relative block{% if shape == 'square' %} h-full{% endif %}"{% if shape != 'square' %} style="max-width:226px"{% endif %}>
           <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-pink-500 dark:border-purple-400 dark:hover:border-pink-500 ease-in-out duration-300{% if item.title %} bg-cover-gradient{% endif %}"></div>
