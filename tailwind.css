@@ -66,11 +66,6 @@ pre {
   border: 1px solid theme(colors.gray.700);
 }
 
-.dark code,
-.dark pre {
-  @apply bg-gray-900;
-}
-
 .tag--button {
   @apply font-semibold;
   @apply py-2;
@@ -91,11 +86,6 @@ pre {
   @apply mb-2;
   @apply text-sm;
   @apply inline-block;
-}
-
-.dark .tag--button {
-  color: theme(colors.gray.900);
-  background: theme(colors.purple.400);
 }
 
 .tag--button:hover,
@@ -164,5 +154,10 @@ code[class*=language-], pre[class*=language-] {
 
   .link--icon:hover svg {
     color: theme(colors.pink.500)
+  }
+
+  .tag--button {
+    color: theme(colors.gray.900);
+    background: theme(colors.purple.400);
   }
 }
