@@ -21,7 +21,7 @@ Software engineer with a wide range of experience covering frontend and mobile a
 
 <div class="flex gap-3 not-prose">
   {% for link in nav.resume %}
-    {% render "partials/linked-icon.liquid", name: link.name, link: link.url, icon: link.icon %}
+    {% render "partials/nav/linked-icon.liquid", name: link.name, link: link.url, icon: link.icon %}
   {% endfor %}
 </div>
 

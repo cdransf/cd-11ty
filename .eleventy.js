@@ -37,6 +37,9 @@ module.exports = function (eleventyConfig) {
 
   // quiet build output
   eleventyConfig.setQuietMode(true)
+  eleventyConfig.setLiquidOptions({
+    jsTruthy: true,
+  })
 
   // tailwind watches
   eleventyConfig.addWatchTarget('./tailwind.config.js')
@@ -48,24 +51,6 @@ module.exports = function (eleventyConfig) {
 
   // shortcodes
   eleventyConfig.addShortcode('version', () => now)
-
-  // filters
-  Object.keys(filters).forEach((filterName) => {
-    eleventyConfig.addLiquidFilter(filterName, filters[filterName])
-  })
-
-  // date filters
-  Object.keys(dateFilters).forEach((filterName) => {
-    eleventyConfig.addLiquidFilter(filterName, dateFilters[filterName])
-  })
-
-  // media filters
-  Object.keys(mediaFilters).forEach((filterName) => {
-    eleventyConfig.addLiquidFilter(filterName, mediaFilters[filterName])
-  })
-
-  // css filters
-  eleventyConfig.addFilter('cssmin', (code) => new CleanCSS({}).minify(code).styles)
 
   // enable merging of tags
   eleventyConfig.setDataDeepMerge(true)
@@ -106,6 +91,24 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLiquidFilter('markdown', (content) => {
     return md.render(content)
   })
+
+  // filters
+  Object.keys(filters).forEach((filterName) => {
+    eleventyConfig.addLiquidFilter(filterName, filters[filterName])
+  })
+
+  // date filters
+  Object.keys(dateFilters).forEach((filterName) => {
+    eleventyConfig.addLiquidFilter(filterName, dateFilters[filterName])
+  })
+
+  // media filters
+  Object.keys(mediaFilters).forEach((filterName) => {
+    eleventyConfig.addLiquidFilter(filterName, mediaFilters[filterName])
+  })
+
+  // css filters
+  eleventyConfig.addFilter('cssmin', (code) => new CleanCSS({}).minify(code).styles)
 
   // image shortcode
   eleventyConfig.addShortcode('image', async function (src, alt, css, sizes, loading) {

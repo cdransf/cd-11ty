@@ -1,7 +1,7 @@
 <footer>
   <div class="mt-8 pt-8 pb-4 flex gap-2 md:gap-3 justify-center w-full">
     {% for link in nav.social %}
-      {% render "partials/linked-icon.liquid", name: link.name, link: link.url, icon: link.icon %}
+      {% render "partials/nav/linked-icon.liquid", name: link.name, link: link.url, icon: link.icon %}
     {% endfor %}
   </div>
   <div class="flex justify-center text-sm text-gray-500 dark:text-gray-100 pb-8 text-center">
