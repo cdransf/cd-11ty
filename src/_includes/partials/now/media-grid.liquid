@@ -1,0 +1,36 @@
+{% if data.size > 0 %}
+  {% assign media = data | normalizeMedia %}
+  <h2 class="icon--bold m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 icon--28">
+    {% tablericon icon title %}
+    <div class="ml-1">{{ title }}</div>
+  </h2>
+  <div class="grid gap-2 {% if shape == 'square' %}grid-cols-2 md:grid-cols-4{% else %}grid-cols-3 md:grid-cols-6{% endif %} not-prose">
+    {% for item in media limit: count %}
+      {% capture altVal %}
+        {% if item.alt %}
+          {{ item.alt }}
+        {% elsif item.title %}
+          {{ item.title }}
+        {% endif %}
+      {% endcapture %}
+      {% assign alt = altVal | strip %}
+      <a href="{{ item.url }}" title="{{ alt | escape }}">
+        <div class="relative block{% if shape == 'square' %} h-full{% endif %}"{% if shape != 'square' %} style="max-width:226px"{% endif %}>
+          <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-pink-500 dark:border-purple-400 dark:hover:border-pink-500 ease-in-out duration-300{% if item.title %} bg-cover-gradient{% endif %}"></div>
+          <div class="absolute left-1 bottom-2 drop-shadow-md">
+            {% if item.title %}
+              <div class="px-1 text-xs font-bold text-white line-clamp-2">{{ item.title }}</div>
+            {% endif %}
+            {% if item.subtext %}
+              <div class="px-1 text-xs text-white line-clamp-2">
+                {{ item.subtext }}
+              </div>
+            {% endif %}
+          </div>
+          {%- capture size %}{% if shape == 'square' %}225px{% else %}180px{% endif %}{% endcapture -%}
+          {% image item.image, alt, 'rounded-lg w-full h-full', size %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

@@ -10,7 +10,7 @@ module.exports = async function () {
   const data = await res
   return data['topartists'].artist.map((artist) => {
     return {
-      name: artist['name'],
+      title: artist['name'],
       plays: artist['playcount'],
       rank: artist['@attr']['rank'],
       image:
@@ -19,6 +19,7 @@ module.exports = async function () {
       url: artist['mbid']
         ? `https://musicbrainz.org/artist/${artist['mbid']}`
         : `https://musicbrainz.org/search?query=${encodeURI(artist['name'])}&type=artist`,
+      type: 'artist',
     }
   })
 }

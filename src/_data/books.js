@@ -25,6 +25,7 @@ module.exports = async function () {
       isbn: book['isbn'],
       description: book['book_description'],
       dateAdded: book['user_date_added'],
+      type: 'book',
     })
   })
   const books = data.splice(0, 6)

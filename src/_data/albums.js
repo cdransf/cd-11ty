@@ -11,7 +11,7 @@ module.exports = async function () {
   const data = await res
   return data['topalbums'].album.map((album) => {
     return {
-      name: album['name'],
+      title: album['name'],
       artist: album['artist']['name'],
       plays: album['playcount'],
       rank: album['@attr']['rank'],
@@ -26,6 +26,7 @@ module.exports = async function () {
       url: album['mbid']
         ? `https://musicbrainz.org/album/${album['mbid']}`
         : `https://musicbrainz.org/search?query=${encodeURI(album['name'])}&type=release_group`,
+      type: 'album',
     }
   })
 }

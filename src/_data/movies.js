@@ -13,7 +13,7 @@ module.exports = async function () {
     .map((item) => {
       const images = item['content']?.match(/<img [^>]*src="[^"]*"[^>]*>/gm) || []
       return {
-        name: item['title'],
+        title: item['title'],
         date: item['pubDate'],
         summary: item['contentSnippet'],
         image: images.length
@@ -23,6 +23,7 @@ module.exports = async function () {
           : 'https://cdn.coryd.dev/movies/missing-movie.jpg',
         url: item['link'],
         id: item['guid'],
+        type: 'movie',
       }
     })
     .filter((movie) => !movie.url.includes('/list/'))

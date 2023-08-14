@@ -14,6 +14,19 @@ module.exports = async function () {
       },
     },
   }).catch()
-  const shows = await res
-  return shows.splice(0, 6)
+  const data = await res
+  return data.map((episode) => {
+    return {
+      name: episode['show']['title'],
+      title: episode['episode']['title'],
+      url: `https://trakt.tv/shows/${episode['show']['ids']['slug']}/seasons/${episode['episode']['season']}/episodes/${episode['episode']['number']}`,
+      episode: `S${episode['episode']['season']}E${episode['episode']['number']}`,
+      image:
+        `https://cdn.coryd.dev/tv/${episode['show']['title']
+          .replace(':', '')
+          .replace(/\s+/g, '-')
+          .toLowerCase()}.jpg` || 'https://cdn.coryd.dev/tv/missing-tv.jpg',
+      type: 'tv',
+    }
+  })
 }
