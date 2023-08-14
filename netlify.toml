@@ -3,6 +3,13 @@
 ###
 [[plugins]]
 package = "@netlify/plugin-lighthouse"
+  [plugins.inputs.audits]
+    output_path = "reports/lighthouse.html"
+
+[[plugins]]
+package = "netlify-plugin-cache"
+  [plugins.inputs]
+    paths = [ ".cache", "_site/assets/img/cache" ]
 
 ###
 # URLs
