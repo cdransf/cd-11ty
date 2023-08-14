@@ -21,7 +21,7 @@
             {% endif %}
           </div>
           {%- capture size %}{% if shape == 'square' %}225px{% else %}180px{% endif %}{% endcapture -%}
-          {% image item.image, alt, 'rounded-lg w-full h-full', size %}
+          {% image item.image, alt, 'rounded-lg w-full h-full', size, loading %}
         </div>
       </a>
     {% endfor %}
