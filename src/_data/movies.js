@@ -9,7 +9,7 @@ module.exports = async function () {
   const res = await parser.parseURL(url).catch((error) => {
     console.log(error.message)
   })
-  const data = res.items
+  const movies = res.items
     .map((item) => {
       const images = item['content']?.match(/<img [^>]*src="[^"]*"[^>]*>/gm) || []
       return {
@@ -25,7 +25,7 @@ module.exports = async function () {
         id: item['guid'],
       }
     })
-    .splice(0, 6)
-  await asset.save(data, 'json')
-  return data
+    .filter((movie) => !movie.url.includes('/list/'))
+  await asset.save(movies, 'json')
+  return movies
 }
