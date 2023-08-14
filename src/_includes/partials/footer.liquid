@@ -1,17 +1,13 @@
 <footer>
   <div class="mt-8 pt-8 pb-4 flex gap-2 md:gap-3 justify-center w-full">
-    {% render "icons/email.liquid" %}
-    {% render "icons/github.liquid" %}
-    {% render "icons/mastodon.liquid" %}
-    {% render "icons/lastfm.liquid" %}
-    {% render "icons/spotify.liquid" %}
-    {% render "icons/letterboxd.liquid" %}
-    {% render "icons/trakt.liquid" %}
-    {% render "icons/goodreads.liquid" %}
-    {% render "icons/coffee.liquid" %}
+    {% for link in nav.social %}
+      {% render "partials/linked-icon.liquid", name: link.name, link: link.url, icon: link.icon %}
+    {% endfor %}
   </div>
-  <div class="text-sm text-gray-500 dark:text-gray-100 pb-8 text-center">
-    {% render "partials/nav/link.liquid", page: page, link: "Uses" %} •
-    {% render "partials/nav/link.liquid", page: page, link: "Referrals" %}
+  <div class="flex justify-center text-sm text-gray-500 dark:text-gray-100 pb-8 text-center">
+    {% for link in nav.footer %}
+      {% render "partials/nav/link.liquid", page: page, link: link.name, icon: link.icon %}
+      {% if not forloop.last %}<span class="mx-1">•</span>{% endif %}
+    {% endfor %}
   </div>
 </footer>

@@ -1,7 +1,7 @@
 ---
 layout: main
 ---
-{% render "partials/header.liquid", site: site, page: page %}
+{% render "partials/header.liquid", site: site, page: page, nav: nav %}
 {{ content }}
 {% render "partials/now/artists.liquid", music:artists %}
 {% render "partials/now/albums.liquid", music:albums %}

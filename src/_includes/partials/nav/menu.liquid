@@ -1,22 +1,9 @@
 <nav>
   <ul class="flex">
-    <li class="mr-6">
-      {% render "partials/nav/link.liquid", page: page, link: "Now" %}
-    </li>
-    <li class="mr-6">
-      {% render "partials/nav/link.liquid", page: page, link: "About" %}
-    </li>
-    <li class="mr-6">
-      {% render "partials/nav/link.liquid", page: page, link: "Tags", icon: "tag" %}
-    </li>
-    <li class="mr-6 client-side">
-      {% render "partials/nav/link.liquid", page: page, link: "Search", icon: "search" %}
-    </li>
-    <li class="mr-6">
-      {% render "partials/nav/link.liquid", page: page, link: "Feeds", icon: "rss" %}
-    </li>
-    <li>
-      {% render "partials/nav/link.liquid", page: page, link: "Webrings", icon: "heart-handshake" %}
-    </li>
+    {% for link in nav.menu %}
+      <li class="mr-6">
+        {% render "partials/nav/link.liquid", page: page, link: link.name, icon: link.icon %}
+      </li>
+    {% endfor %}
   </ul>
 </nav>
