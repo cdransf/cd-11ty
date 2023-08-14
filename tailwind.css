@@ -18,13 +18,7 @@
 
 .active,
 .active svg {
-  color: theme(colors.purple.600) !important;
-}
-
-.active:hover,
-.active:active,
-.active:focus {
-  color: theme(colors.purple.500) !important;
+  color: theme(colors.pink.500) !important;
 }
 
 .header-anchor {
@@ -156,7 +150,7 @@ code[class*=language-], pre[class*=language-] {
 @media (prefers-color-scheme: dark) {
   .active,
   .active svg {
-    color: theme(colors.purple.400) !important;
+    color: theme(colors.pink.500) !important;
   }
 
   a,

@@ -1,0 +1,19 @@
+{%- capture pageUrl %}/{{ link | downcase }}/{% endcapture -%}
+{% if page.url != pageUrl %}
+  <a class="text-gray-700 hover:text-pink-500 dark:text-gray-200 dark:hover:text-pink-500 !no-underline" href="/{{ link | downcase }}">
+    {% if icon %}
+      {% tablericon icon link %}
+    {% else %}
+      {{ link }}
+    {% endif %}
+  </a>
+{% endif %}
+{% if page.url == pageUrl %}
+  <span class="cursor-not-allowed active">
+    {% if icon %}
+      {% tablericon icon link %}
+    {% else %}
+      {{ link }}
+    {% endif %}
+  </span>
+{% endif %}
