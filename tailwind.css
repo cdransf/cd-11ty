@@ -18,7 +18,7 @@
 
 .active,
 .active svg {
-  color: theme(colors.pink.500) !important;
+  color: theme(colors.teal.700);
 }
 
 .header-anchor {
@@ -140,7 +140,7 @@ code[class*=language-], pre[class*=language-] {
 @media (prefers-color-scheme: dark) {
   .active,
   .active svg {
-    color: theme(colors.pink.500) !important;
+    color: theme(colors.teal.300);
   }
 
   a,
