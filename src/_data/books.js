@@ -21,7 +21,7 @@ module.exports = async function () {
         'https://books.coryd.dev'
       ),
       title: book['title'],
-      link: book['link'],
+      url: book['link'],
       isbn: book['isbn'],
       description: book['book_description'],
       dateAdded: book['user_date_added'],
