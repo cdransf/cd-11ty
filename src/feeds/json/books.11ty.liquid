@@ -9,9 +9,9 @@ permalink: '/books.json'
 "feed_url": "https://coryd.dev/books.json",
 "items": [{% for book in books %}
   {
-  "id": "{{ book.link | stripUtm | encodeAmp }}",
+  "id": "{{ book.url | stripUtm | encodeAmp }}",
   "title": "{{ book.title | escape }}",
-  "url": "{{ book.link | stripUtm | encodeAmp }}",
+  "url": "{{ book.url | stripUtm | encodeAmp }}",
   "content_text": "{{ book.description | strip_html }}",
   "date_published": "{{ book.dateAdded | date: "%Y-%m-%dT%H:%M:%S-08:00" }}"
   }{% if not forloop.last %},{% endif %}
