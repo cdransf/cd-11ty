@@ -29,6 +29,7 @@ module.exports = {
     require('@tailwindcss/line-clamp'),
     require('@catppuccin/tailwindcss'),
     require('@tailwindcss/aspect-ratio'),
+    require('tailwind-scrollbar'),
   ],
   content: ['./src/**/*.md', './src/**/*.html', './src/_includes/**/*.liquid'],
 }

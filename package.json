@@ -60,6 +60,7 @@
     "rss-parser": "^3.13.0",
     "sanitize-html": "^2.11.0",
     "striptags": "^3.2.0",
+    "tailwind-scrollbar": "^3.0.5",
     "tailwindcss": "^3.3.2"
   },
   "dependencies": {
