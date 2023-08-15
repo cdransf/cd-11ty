@@ -5742,5 +5742,16 @@
       "https://social.lol/users/cory/statuses/110888812229693871"
     ],
     "lastTootTimestamp": 1692028995281
+  },
+  "https://www.nngroup.com/articles/the-top-ten-web-design-mistakes-of-1999/": {
+    "id": "https://www.nngroup.com/articles/the-top-ten-web-design-mistakes-of-1999/",
+    "title": "🔗: The Top 10 Web Design Mistakes of 1999",
+    "url": "https://www.nngroup.com/articles/the-top-ten-web-design-mistakes-of-1999/",
+    "content_text": "🔗: The Top 10 Web Design Mistakes of 1999 https://www.nngroup.com/articles/the-top-ten-web-design-mistakes-of-1999/",
+    "date_published": "1999-05-29T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110891186066070259"
+    ],
+    "lastTootTimestamp": 1692065217123
   }
 }
