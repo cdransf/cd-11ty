@@ -8,7 +8,7 @@ module.exports = async function () {
     type: 'json',
   }).catch()
   const data = await res
-  return data['topartists'].artist.map((artist) => {
+  return data['topartists']['artist'].map((artist) => {
     return {
       title: artist['name'],
       plays: artist['playcount'],

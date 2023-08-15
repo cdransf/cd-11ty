@@ -9,7 +9,7 @@ module.exports = async function () {
     type: 'json',
   }).catch()
   const data = await res
-  return data['topalbums'].album.map((album) => {
+  return data['topalbums']['album'].map((album) => {
     return {
       title: album['name'],
       artist: album['artist']['name'],

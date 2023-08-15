@@ -10,7 +10,7 @@ module.exports = async function () {
     fetchOptions: { headers },
   })
   const data = await res
-  const links = data.results.filter((result) => Object.keys(result.tags).includes('share'))
+  const links = data['results'].filter((result) => Object.keys(result.tags).includes('share'))
   return links.map((link) => {
     return {
       title: link['title'],

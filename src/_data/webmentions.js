@@ -9,6 +9,6 @@ module.exports = async function () {
   }).catch()
   const webmentions = await res
   return {
-    mentions: webmentions.children,
+    mentions: webmentions['children'],
   }
 }
