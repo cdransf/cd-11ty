@@ -84,7 +84,7 @@ Software and services that I use for work and my own enjoyment.
 - [Letterboxd](https://letterboxd.com)
 - [Goodreads](https://goodreads.com)
 - [Reader](https://readwise.io/read)
-- [Whereby](https://whereby.com)
+- [Zoom](https://zoom.us)
 - [Slack](http://slack.com)
 - [Discord](http://discord.com)
 
