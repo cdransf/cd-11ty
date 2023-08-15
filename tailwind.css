@@ -58,12 +58,15 @@ li > a {
 
 code {
   @apply text-gray-50;
-  border-radius: .25rem;
   padding: .25rem;
 }
 
 pre {
   border: 1px solid theme(colors.gray.700);
+  border-radius: 0 !important;
+  @apply scrollbar-thin;
+  @apply scrollbar-thumb-pink-500;
+  @apply scrollbar-track-pink-100;
 }
 
 .tag--button {
