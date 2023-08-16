@@ -10,7 +10,7 @@ module.exports = async function () {
       { name: 'Webrings', icon: 'heart-handshake' },
     ],
     social: [
-      { name: 'Email', url: 'mailto:hi@coryd.dev', icon: 'at' },
+      { name: 'Email', url: 'mailto:coryd@hey.com', icon: 'at' },
       { name: 'GitHub', url: 'https://github.com/cdransf', icon: 'brand-github' },
       { name: 'Mastodon', url: 'https://social.lol/@cory', icon: 'brand-mastodon' },
       { name: 'Last.fm', url: 'https://www.last.fm/user/cdrn_', icon: 'brand-lastfm' },
