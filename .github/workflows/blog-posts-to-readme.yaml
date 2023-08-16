@@ -1,5 +1,6 @@
 name: Blog posts to readme
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 15 * * *'
 jobs:
