@@ -19,7 +19,8 @@ meta:
 ---
 <div class="flex items-center justify-center w-full not-prose mb-6">
   <div class="border border-teal-700 dark:border-teal-300 bg-white rounded-full overflow-hidden p-4">
-    {% image './src/assets/img/avatar.webp', site.name, 'max-w-xs w-full h-auto', '600px', 'eager' %}
+    {% capture about_alt %}{{ site.name }} - image by David Neal / @reverentgeek{% endcapture %}
+    {% image './src/assets/img/avatar.webp', about_alt, 'max-w-xs w-full h-auto', '600px', 'eager' %}
   </div>
 </div>
 <h1 class="text-xxl font-black -leading-tight tracking-normal dark:text-gray-200 md:text-3xl text-center">Hi, I'm Cory</h1>
