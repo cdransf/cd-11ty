@@ -24,6 +24,18 @@ body, html {
   background: theme(colors.pink.500) !important;
 }
 
+.pagefind-ui__form .pagefind-ui__result-link {
+  color: theme(colors.purple.600) !important;
+  @apply !ease-in-out;
+  @apply !duration-300;
+}
+
+.pagefind-ui__form .pagefind-ui__result-link:hover,
+.pagefind-ui__form .pagefind-ui__result-link:focus,
+.pagefind-ui__form .pagefind-ui__result-link:active {
+  color: theme(colors.pink.500) !important;
+}
+
 ::-moz-selection {
   color: theme(colors.white);
   background: theme(colors.pink.500);
@@ -174,6 +186,10 @@ code[class*=language-], pre[class*=language-] {
   .active,
   .active svg {
     color: theme(colors.teal.300);
+  }
+
+  .pagefind-ui__form .pagefind-ui__result-link {
+    color: theme(colors.purple.400) !important;
   }
 
   a,
