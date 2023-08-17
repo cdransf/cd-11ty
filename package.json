@@ -1,7 +1,7 @@
 {
   "name": "coryd.dev",
   "version": "1.0.0",
-  "description": "The source for my personal site, blog and portfolio. Build using 11ty and hosted on Vercel.",
+  "description": "The source for my personal site, blog and portfolio. Build using 11ty and hosted on Netlify.",
   "main": "index.html",
   "scripts": {
     "start": "rm -rf .cache && ELEVENTY_PRODUCTION=false eleventy --serve && NODE_ENV=development npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
@@ -12,7 +12,10 @@
     "prepare": "husky install && touch ./.git/COMMIT_EDITMSG",
     "postbuild": "webmention _site/feed.xml --limit 1 --send"
   },
-  "keywords": [],
+  "keywords": [
+    "11ty",
+    "Eleventy"
+  ],
   "author": "Cory Dransfeldt",
   "license": "ISC",
   "devDependencies": {
@@ -24,7 +27,6 @@
     "@catppuccin/tailwindcss": "^0.1.6",
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
-    "@netlify/plugin-lighthouse": "^5.0.0",
     "@quasibit/eleventy-plugin-schema": "^1.11.0",
     "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
