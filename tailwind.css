@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  --pagefind-ui-scale: 1.1;
+  --pagefind-ui-primary: theme(colors.purple.600);
+  --pagefind-ui-text: theme(colors.gray.800);
+  --pagefind-ui-background: theme(colors.white);
+  --pagefind-ui-border: theme(colors.gray.200);
+  --pagefind-ui-tag: theme(colors.gray.200);
+  --pagefind-ui-border-width: 2px;
+  --pagefind-ui-border-radius: 8px;
+  --pagefind-ui-image-border-radius: 8px;
+  --pagefind-ui-image-box-ratio: 3 / 2;
+  --pagefind-ui-font: sans-serif;
+}
+
+body, html {
+  color: theme(colors.gray.900)
+}
+
 ::-moz-selection {
   color: theme(colors.white);
   background: theme(colors.pink.500);
@@ -141,6 +159,14 @@ code[class*=language-], pre[class*=language-] {
 }
 
 @media (prefers-color-scheme: dark) {
+  body {
+    --pagefind-ui-primary: theme(colors.purple.400);
+    --pagefind-ui-text: theme(colors.white);
+    --pagefind-ui-background: theme(colors.gray.900);
+    --pagefind-ui-border: theme(colors.gray.700);
+    --pagefind-ui-tag: theme(colors.gray.700);
+  }
+
   .active,
   .active svg {
     color: theme(colors.teal.300);
