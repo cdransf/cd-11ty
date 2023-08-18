@@ -19,6 +19,7 @@ module.exports = async function () {
         ? new Date(link['published_date'])
         : new Date(link['created_at']),
       summary: link['summary'],
+      notes: link['notes'],
       id: btoa(link['source_url']),
     }
   })
