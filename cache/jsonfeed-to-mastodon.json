@@ -5775,5 +5775,16 @@
       "https://social.lol/users/cory/statuses/110912404249773724"
     ],
     "lastTootTimestamp": 1692388980924
+  },
+  "https://letterboxd.com/cdme/film/pokemon-detective-pikachu/": {
+    "id": "https://letterboxd.com/cdme/film/pokemon-detective-pikachu/",
+    "title": "🎥: Pokémon Detective Pikachu, 2019 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/pokemon-detective-pikachu/",
+    "content_text": "🎥: Pokémon Detective Pikachu, 2019 - ★★★ https://letterboxd.com/cdme/film/pokemon-detective-pikachu/",
+    "date_published": "2023-08-19T19:10:27-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110918537830920481"
+    ],
+    "lastTootTimestamp": 1692482571950
   }
 }
