@@ -5786,5 +5786,16 @@
       "https://social.lol/users/cory/statuses/110918537830920481"
     ],
     "lastTootTimestamp": 1692482571950
+  },
+  "https://www.goodreads.com/review/show/5773585310": {
+    "id": "https://www.goodreads.com/review/show/5773585310",
+    "title": "📖: Our Band Could Be Your Life: Scenes from the American Indie Underground 1981-1991",
+    "url": "https://www.goodreads.com/review/show/5773585310",
+    "content_text": "📖: Our Band Could Be Your Life: Scenes from the American Indie Underground 1981-1991 https://www.goodreads.com/review/show/5773585310",
+    "date_published": "2023-08-20T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110919497435922979"
+    ],
+    "lastTootTimestamp": 1692497214336
   }
 }
