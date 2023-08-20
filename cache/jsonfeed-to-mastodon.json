@@ -5819,5 +5819,24 @@
       "https://social.lol/users/cory/statuses/110923728490098997"
     ],
     "lastTootTimestamp": 1692561775159
+  },
+  "https://www.theprivacywhisperer.com/p/when-human-knowledge-becomes-feedstock": {
+    "id": "https://www.theprivacywhisperer.com/p/when-human-knowledge-becomes-feedstock",
+    "title": "🔗: When human knowledge becomes feedstock",
+    "url": "https://www.theprivacywhisperer.com/p/when-human-knowledge-becomes-feedstock",
+    "content_text": "🔗: When human knowledge becomes feedstock https://www.theprivacywhisperer.com/p/when-human-knowledge-becomes-feedstock",
+    "date_published": "2023-08-17T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110924200298923558"
+    ],
+    "lastTootTimestamp": 1692568974965
+  },
+  "https://freddiedeboer.substack.com/p/does-ai-just-suck": {
+    "id": "https://freddiedeboer.substack.com/p/does-ai-just-suck",
+    "title": "🔗: Does AI Just Suck?",
+    "url": "https://freddiedeboer.substack.com/p/does-ai-just-suck",
+    "content_text": "🔗: Does AI Just Suck? https://freddiedeboer.substack.com/p/does-ai-just-suck",
+    "date_published": "2023-08-16T00:00:00-08:00",
+    "toots": []
   }
 }
