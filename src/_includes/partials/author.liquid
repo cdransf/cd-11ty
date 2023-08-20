@@ -1,6 +1,8 @@
 <div class="mt-12 py-8 border-t-2 flex flex-col md:flex-row justify-between items-center">
   <div class="flex flex-col mb-4 md:mb-0 md:flex-row items-center flex-1">
-    {% image './src/assets/img/avatar.webp', site.name, 'inline-block h-20 w-20 mr-2', '80px' %}
+    <div class="border border-teal-700 dark:border-teal-300 bg-white rounded-full overflow-hidden mr-4">
+      {% image './src/assets/img/avatar.webp', site.name, 'inline-block h-20 w-20', '80px' %}
+    </div>
     <span class="text-lg font-medium">{{ site.name }}</span>
   </div>
   <p class="text-sm flex-1">{{ site.description }}</p>
