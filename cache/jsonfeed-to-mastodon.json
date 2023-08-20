@@ -5797,5 +5797,16 @@
       "https://social.lol/users/cory/statuses/110919497435922979"
     ],
     "lastTootTimestamp": 1692497214336
+  },
+  "https://www.goodreads.com/review/show/5782272228": {
+    "id": "https://www.goodreads.com/review/show/5782272228",
+    "title": "📖: You Deserve a Tech Union",
+    "url": "https://www.goodreads.com/review/show/5782272228",
+    "content_text": "📖: You Deserve a Tech Union https://www.goodreads.com/review/show/5782272228",
+    "date_published": "2023-08-20T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110923257493441233"
+    ],
+    "lastTootTimestamp": 1692554588295
   }
 }
