@@ -5808,5 +5808,16 @@
       "https://social.lol/users/cory/statuses/110923257493441233"
     ],
     "lastTootTimestamp": 1692554588295
+  },
+  "https://educatedguesswork.org/posts/wei/": {
+    "id": "https://educatedguesswork.org/posts/wei/",
+    "title": "🔗: The endpoint of Web Environment Integrity is a closed Web",
+    "url": "https://educatedguesswork.org/posts/wei/",
+    "content_text": "🔗: The endpoint of Web Environment Integrity is a closed Web https://educatedguesswork.org/posts/wei/",
+    "date_published": "2023-08-18T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110923728490098997"
+    ],
+    "lastTootTimestamp": 1692561775159
   }
 }
