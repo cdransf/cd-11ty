@@ -297,7 +297,7 @@ These I've left as a simple list wherein `any` included top level domain is file
 
 That covers _most_ of what I use to manage my mail (outside of anything particularly personal). I fully expect the regular expressions I'm using could stand to be refined and I plan on continuing to do just that. But, with that said, things have worked better than I expected so far and false positives/mis-categorizations have been infrequent.
 
-If you have any questions or suggestions I'm all ears. Feel free to [email me](mailto:coryd@hey.com) or ping me on [Mastodon](https://social.lol/@cory).
+If you have any questions or suggestions I'm all ears. Feel free to [email me](mailto:cory.dransfeldt@gmail.com) or ping me on [Mastodon](https://social.lol/@cory).
 
 [^1]: Before, well, _all that_.
 [^2]: Fastmail has some helpful tips on regular expression rules [here](https://www.fastmail.help/hc/en-us/articles/360060591193-Rules-using-regular-expressions)
