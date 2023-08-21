@@ -5852,5 +5852,16 @@
       "https://social.lol/users/cory/statuses/110925160029767169"
     ],
     "lastTootTimestamp": 1692583618693
+  },
+  "https://letterboxd.com/cdme/film/thor-love-and-thunder/": {
+    "id": "https://letterboxd.com/cdme/film/thor-love-and-thunder/",
+    "title": "🎥: Thor: Love and Thunder, 2022 - ★★",
+    "url": "https://letterboxd.com/cdme/film/thor-love-and-thunder/",
+    "content_text": "🎥: Thor: Love and Thunder, 2022 - ★★ https://letterboxd.com/cdme/film/thor-love-and-thunder/",
+    "date_published": "2023-08-21T12:59:58-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110927975720959558"
+    ],
+    "lastTootTimestamp": 1692626582720
   }
 }
