@@ -37,7 +37,8 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
 
-- [Things](https://culturedcode.com/things/)
+- [Obsidian](https://obsidian.md)
+- [Todoist](https://todoist.com)
 - [Mona](https://mastodon.social/@MonaApp)
 - [Parcel](https://parcelapp.net)
 
@@ -47,7 +48,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS</h3>
 
-- [Webstorm](https://www.jetbrains.com/webstorm/)
+- [VS Code](https://code.visualstudio.com)
 - [iTerm2](https://iterm2.com)
 - [Alfred](https://alfredapp.com)
 - [Keyboard Maestro](https://www.keyboardmaestro.com/)
@@ -68,7 +69,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Services</h3>
 
-- [HEY](https://hey.com)
+- [Google Workspace](https://workspace.google.com)
 - [SavvyCal](https://savvycal.com/?via=cory)
 - [NextDNS](https://nextdns.io/?from=m56mt3z6)
 - [DNSimple](https://dnsimple.com/r/3a7cbb9e15df8f)
