@@ -37,6 +37,3 @@
 
 # netlify app domain
 https://cdme.netlify.app https://coryd.dev 301!
-
-# analytics
-/script.js https://cdn.usefathom.com/script.js 200
