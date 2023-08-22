@@ -1,18 +1,18 @@
 const EleventyFetch = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
-  const API_KEY_PLAUSIBLE = process.env.API_KEY_PLAUSIBLE
+  const API_KEY_FATHOM = process.env.API_KEY_FATHOM
   const url =
-    'https://plausible.io/api/v1/stats/breakdown?site_id=coryd.dev&period=6mo&property=event:page&limit=30'
+    'https://api.usefathom.com/v1/aggregations?entity=pageview&entity_id=RBCOWZTA&aggregates=pageviews&field_grouping=pathname&sort_by=pageviews:desc&limit=10'
   const res = EleventyFetch(url, {
     duration: '1h',
     type: 'json',
     fetchOptions: {
       headers: {
-        Authorization: `Bearer ${API_KEY_PLAUSIBLE}`,
+        Authorization: `Bearer ${API_KEY_FATHOM}`,
       },
     },
   }).catch()
   const pages = await res
-  return pages.results.filter((p) => p.page.includes('posts')).splice(0, 5)
+  return pages.filter((p) => p.pathname.includes('posts'))
 }

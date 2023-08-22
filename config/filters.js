@@ -28,10 +28,10 @@ module.exports = {
   getPopularPosts: (posts, analytics) => {
     return posts
       .filter((post) => {
-        if (analytics.find((p) => p.page === post.url)) return true
+        if (analytics.find((p) => p.pathname === post.url)) return true
       })
       .sort((a, b) => {
-        const visitors = (page) => analytics.filter((p) => p.page === page.url).pop().visitors
+        const visitors = (page) => analytics.filter((p) => p.pathname === page.url).pop().visitors
         return visitors(b) - visitors(a)
       })
   },
