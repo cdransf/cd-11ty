@@ -5,13 +5,17 @@ permalink: /feed.xml
 {% layout "./_includes/feeds/feed.liquid" %}
 {% block title %}All posts • Cory Dransfeldt{% endblock %}
 {% block self %}feed.xml{% endblock %}
-{% block update %}{{ collections.posts[0].date | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}
+{% block update %}
+  {{ collections.posts[0].date | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}
 {% block entries %}
   {% assign posts = collections.posts | reverse %}
   {% for post in posts limit: 15 %}
+    {% capture entry_link %}
+      {{ site.url }}{{ post.url }}?utm_campaign=syndication&utm_source=rss
+    {% endcapture %}
     <entry>
       <title>{{ post.data.title }}</title>
-      <link href="{{ site.url }}{{ post.url }}" />
+      <link href="{{ entry_link | encodeAmp }}" />
       <updated>{{ post.date | date: "%m.%d.%Y" }}</updated>
       <id>{{ site.url }}{{ post.url }}</id>
       <content type="html">
