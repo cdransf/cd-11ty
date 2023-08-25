@@ -26,7 +26,6 @@ meta:
 
 Referral links for services I use. I save some money, and you do as well if you choose to use them.
 
-- [SavvyCal](https://savvycal.com/?via=cory)
 - [NextDNS](https://nextdns.io/?from=m56mt3z6)
 - [DNSimple](https://dnsimple.com/r/3a7cbb9e15df8f)
 - [Bunny.net](https://bunny.net?ref=revw3mehej)

@@ -27,7 +27,11 @@ module.exports = async function () {
     resume: [
       { name: 'GitHub', url: 'https://github.com/cdransf', icon: 'brand-github' },
       { name: 'LinkedIn', url: 'https://www.linkedin.com/in/cdransf/', icon: 'brand-linkedin' },
-      { name: 'SavvyCal', url: 'https://savvycal.com/coryd/quick-call', icon: 'calendar-plus' },
+      {
+        name: 'Google Calendar',
+        url: 'https://calendar.app.google/sdgyNSx3RcWuatfT6',
+        icon: 'calendar-plus',
+      },
     ],
   }
 }
