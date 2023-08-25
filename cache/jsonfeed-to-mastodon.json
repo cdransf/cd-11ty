@@ -17,19 +17,19 @@
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514022
   },
-  "https://coryd.dev/posts/2023/lazy-select-based-pagination-eleventy/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/lazy-select-based-pagination-eleventy/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/lazy-select-based-pagination-eleventy/": {
+    "id": "https://coryd.dev/posts/2023/lazy-select-based-pagination-eleventy/",
     "title": "📝: Lazy select-based pagination in Eleventy",
-    "url": "https://coryd.dev/posts/2023/lazy-select-based-pagination-eleventy/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/lazy-select-based-pagination-eleventy/",
     "content_text": "📝: Lazy select-based pagination in Eleventy https://coryd.dev/posts/2023/lazy-select-based-pagination-eleventy/",
     "date_published": "2023-03-27T00:00:00-08:00",
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514022
   },
-  "https://coryd.dev/posts/2023/automate-syndicate-content-mastodon-eleventy/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/automate-syndicate-content-mastodon-eleventy/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/automate-syndicate-content-mastodon-eleventy/": {
+    "id": "https://coryd.dev/posts/2023/automate-syndicate-content-mastodon-eleventy/",
     "title": "📝: Automate and syndicate content from Eleventy to Mastodon",
-    "url": "https://coryd.dev/posts/2023/automate-syndicate-content-mastodon-eleventy/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/automate-syndicate-content-mastodon-eleventy/",
     "content_text": "📝: Automate and syndicate content from Eleventy to Mastodon https://coryd.dev/posts/2023/automate-syndicate-content-mastodon-eleventy/",
     "date_published": "2023-03-27T00:00:00-08:00",
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
@@ -71,11 +71,11 @@
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514022
   },
-  "https://coryd.dev/posts/2023/env-files-eleventy/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/env-files-eleventy/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/env-files-eleventy/": {
+    "id": "https://coryd.dev/posts/2023/env-files-eleventy/",
     "title": "📝: .env files in Eleventy",
-    "url": "https://coryd.dev/posts/2023/env-files-eleventy/?utm_campaign=syndication&utm_source=follow",
-    "content_text": "📝: .env files in Eleventy https://coryd.dev/posts/2023/env-files-eleventy/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/env-files-eleventy/",
+    "content_text": "📝: .env files in Eleventy https://coryd.dev/posts/2023/env-files-eleventy/",
     "date_published": "2023-03-24T00:00:00-08:00",
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514022
@@ -116,29 +116,29 @@
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514022
   },
-  "https://coryd.dev/posts/2023/scheduled-eleventy-builds-cron-github-actions/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/scheduled-eleventy-builds-cron-github-actions/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/scheduled-eleventy-builds-cron-github-actions/": {
+    "id": "https://coryd.dev/posts/2023/scheduled-eleventy-builds-cron-github-actions/",
     "title": "📝: Scheduled Eleventy builds on Vercel with cron-triggered GitHub actions",
-    "url": "https://coryd.dev/posts/2023/scheduled-eleventy-builds-cron-github-actions/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/scheduled-eleventy-builds-cron-github-actions/",
     "content_text": "📝: Scheduled Eleventy builds on Vercel with cron-triggered GitHub actions https://coryd.dev/posts/2023/scheduled-eleventy-builds-cron-github-actions/",
     "date_published": "2023-03-19T00:00:00-08:00",
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514022
   },
-  "https://coryd.dev/posts/2023/building-my-now-page-using-eleventy/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/building-my-now-page-using-eleventy/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/building-my-now-page-using-eleventy/": {
+    "id": "https://coryd.dev/posts/2023/building-my-now-page-using-eleventy/",
     "title": "📝: Building my /now page using Eleventy",
-    "url": "https://coryd.dev/posts/2023/building-my-now-page-using-eleventy/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/building-my-now-page-using-eleventy/",
     "content_text": "📝: Building my /now page using Eleventy https://coryd.dev/posts/2023/building-my-now-page-using-eleventy/",
     "date_published": "2023-03-18T00:00:00-08:00",
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514022
   },
-  "https://coryd.dev/posts/2023/webmentions-in-eleventy/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/webmentions-in-eleventy/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/webmentions-in-eleventy/": {
+    "id": "https://coryd.dev/posts/2023/webmentions-in-eleventy/",
     "title": "📝: Webmentions in Eleventy",
-    "url": "https://coryd.dev/posts/2023/webmentions-in-eleventy/?utm_campaign=syndication&utm_source=follow",
-    "content_text": "📝: Webmentions in Eleventy https://coryd.dev/posts/2023/webmentions-in-eleventy/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/webmentions-in-eleventy/",
+    "content_text": "📝: Webmentions in Eleventy https://coryd.dev/posts/2023/webmentions-in-eleventy/",
     "date_published": "2023-03-17T00:00:00-08:00",
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514022
@@ -296,10 +296,10 @@
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514022
   },
-  "https://coryd.dev/posts/2023/automating-rss-syndication-with-nextjs-github/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/automating-rss-syndication-with-nextjs-github/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/automating-rss-syndication-with-nextjs-github/": {
+    "id": "https://coryd.dev/posts/2023/automating-rss-syndication-with-nextjs-github/",
     "title": "📝: Automating RSS syndication and sharing with Next.js and GitHub",
-    "url": "https://coryd.dev/posts/2023/automating-rss-syndication-with-nextjs-github/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/automating-rss-syndication-with-nextjs-github/",
     "content_text": "📝: Automating RSS syndication and sharing with Next.js and GitHub https://coryd.dev/posts/2023/automating-rss-syndication-with-nextjs-github/",
     "date_published": "2023-02-23T00:00:00-08:00",
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
@@ -350,10 +350,10 @@
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514022
   },
-  "https://coryd.dev/posts/2023/building-a-now-page-using-nextjs-and-social-apis/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/building-a-now-page-using-nextjs-and-social-apis/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/building-a-now-page-using-nextjs-and-social-apis/": {
+    "id": "https://coryd.dev/posts/2023/building-a-now-page-using-nextjs-and-social-apis/",
     "title": "📝: Building a now page using Next.js and social APIs",
-    "url": "https://coryd.dev/posts/2023/building-a-now-page-using-nextjs-and-social-apis/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/building-a-now-page-using-nextjs-and-social-apis/",
     "content_text": "📝: Building a now page using Next.js and social APIs https://coryd.dev/posts/2023/building-a-now-page-using-nextjs-and-social-apis/",
     "date_published": "2023-02-20T00:00:00-08:00",
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
@@ -386,19 +386,19 @@
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514022
   },
-  "https://coryd.dev/posts/2023/client-side-webmentions-in-nextjs/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/client-side-webmentions-in-nextjs/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/client-side-webmentions-in-nextjs/": {
+    "id": "https://coryd.dev/posts/2023/client-side-webmentions-in-nextjs/",
     "title": "📝: Adding client side webmentions to my Next.js blog",
-    "url": "https://coryd.dev/posts/2023/client-side-webmentions-in-nextjs/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/client-side-webmentions-in-nextjs/",
     "content_text": "📝: Adding client side webmentions to my Next.js blog https://coryd.dev/posts/2023/client-side-webmentions-in-nextjs/",
     "date_published": "2023-02-18T00:00:00-08:00",
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514022
   },
-  "https://coryd.dev/posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/": {
+    "id": "https://coryd.dev/posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/",
     "title": "Blog: Workflows: handling inbound email on Fastmail with regular expressions (now featuring ChatGPT)",
-    "url": "https://coryd.dev/posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/",
     "content_text": "Blog: Workflows: handling inbound email on Fastmail with regular expressions (now featuring ChatGPT) https://coryd.dev/posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/",
     "date_published": "2023-02-17T00:00:00-08:00",
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
@@ -476,10 +476,10 @@
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514022
   },
-  "https://coryd.dev/posts/2023/adding-client-side-rendered-webmentions-to-my-blog/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/adding-client-side-rendered-webmentions-to-my-blog/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/adding-client-side-rendered-webmentions-to-my-blog/": {
+    "id": "https://coryd.dev/posts/2023/adding-client-side-rendered-webmentions-to-my-blog/",
     "title": "Blog: Adding client-side rendered webmentions to my blog",
-    "url": "https://coryd.dev/posts/2023/adding-client-side-rendered-webmentions-to-my-blog/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/adding-client-side-rendered-webmentions-to-my-blog/",
     "content_text": "Blog: Adding client-side rendered webmentions to my blog https://coryd.dev/posts/2023/adding-client-side-rendered-webmentions-to-my-blog/",
     "date_published": "2023-02-09T00:00:00-08:00",
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
@@ -530,10 +530,10 @@
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514022
   },
-  "https://coryd.dev/posts/2023/automating-and-overengineering-my-now-page/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/automating-and-overengineering-my-now-page/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/automating-and-overengineering-my-now-page/": {
+    "id": "https://coryd.dev/posts/2023/automating-and-overengineering-my-now-page/",
     "title": "Blog: Automating (and probably overengineering) my /now page",
-    "url": "https://coryd.dev/posts/2023/automating-and-overengineering-my-now-page/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/automating-and-overengineering-my-now-page/",
     "content_text": "Blog: Automating (and probably overengineering) my /now page https://coryd.dev/posts/2023/automating-and-overengineering-my-now-page/",
     "date_published": "2023-02-06T00:00:00-08:00",
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
@@ -1026,10 +1026,10 @@
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514023
   },
-  "https://coryd.dev/posts/2022/apple-centric-digital-privacy-tools/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2022/apple-centric-digital-privacy-tools/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2022/apple-centric-digital-privacy-tools/": {
+    "id": "https://coryd.dev/posts/2022/apple-centric-digital-privacy-tools/",
     "title": "Blog: Apple-centric digital privacy tools",
-    "url": "https://coryd.dev/posts/2022/apple-centric-digital-privacy-tools/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2022/apple-centric-digital-privacy-tools/",
     "content_text": "Blog: Apple-centric digital privacy tools https://coryd.dev/posts/2022/apple-centric-digital-privacy-tools/",
     "date_published": "2022-05-31T00:00:00-08:00",
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
@@ -1044,19 +1044,19 @@
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514023
   },
-  "https://coryd.dev/posts/2022/fixing-safari-icloud-syncing/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2022/fixing-safari-icloud-syncing/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2022/fixing-safari-icloud-syncing/": {
+    "id": "https://coryd.dev/posts/2022/fixing-safari-icloud-syncing/",
     "title": "Blog: Fixing Safari iCloud syncing",
-    "url": "https://coryd.dev/posts/2022/fixing-safari-icloud-syncing/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2022/fixing-safari-icloud-syncing/",
     "content_text": "Blog: Fixing Safari iCloud syncing https://coryd.dev/posts/2022/fixing-safari-icloud-syncing/",
     "date_published": "2022-05-28T00:00:00-08:00",
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
     "lastTootTimestamp": 1680035514023
   },
-  "https://coryd.dev/posts/2022/simple-api-fetch-hooks-with-swr/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2022/simple-api-fetch-hooks-with-swr/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2022/simple-api-fetch-hooks-with-swr/": {
+    "id": "https://coryd.dev/posts/2022/simple-api-fetch-hooks-with-swr/",
     "title": "Blog: Simple data fetching with custom React hooks and SWR",
-    "url": "https://coryd.dev/posts/2022/simple-api-fetch-hooks-with-swr/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2022/simple-api-fetch-hooks-with-swr/",
     "content_html": "",
     "date_published": "2022-05-23T00:00:00-08:00",
     "toots": ["Ignored during first run (see `ignoreFirstRun` input)"],
@@ -2160,10 +2160,10 @@
     "toots": ["https://social.lol/users/cory/statuses/110108828482515633"],
     "lastTootTimestamp": 1680127387824
   },
-  "https://coryd.dev/posts/2023/another-eleventy-content-syndication-path/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/another-eleventy-content-syndication-path/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/another-eleventy-content-syndication-path/": {
+    "id": "https://coryd.dev/posts/2023/another-eleventy-content-syndication-path/",
     "title": "📝: Another Eleventy content syndication path",
-    "url": "https://coryd.dev/posts/2023/another-eleventy-content-syndication-path/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/another-eleventy-content-syndication-path/",
     "content_text": "📝: Another Eleventy content syndication path https://coryd.dev/posts/2023/another-eleventy-content-syndication-path/",
     "date_published": "2023-03-28T00:00:00-08:00",
     "toots": ["https://social.lol/users/cory/statuses/110108482983060733"],
@@ -2196,10 +2196,10 @@
     "toots": ["https://social.lol/users/cory/statuses/110140915590839847"],
     "lastTootTimestamp": 1680616998241
   },
-  "https://coryd.dev/posts/2023/i-dont-want-streaming-music/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/i-dont-want-streaming-music/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/i-dont-want-streaming-music/": {
+    "id": "https://coryd.dev/posts/2023/i-dont-want-streaming-music/",
     "title": "📝: I don't want streaming music, I just want to stream my music",
-    "url": "https://coryd.dev/posts/2023/i-dont-want-streaming-music/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/i-dont-want-streaming-music/",
     "content_text": "📝: I don't want streaming music, I just want to stream my music https://coryd.dev/posts/2023/i-dont-want-streaming-music/",
     "date_published": "2023-04-05T00:00:00-08:00",
     "toots": ["https://social.lol/users/cory/statuses/110148963390717348"],
@@ -2304,10 +2304,10 @@
     "toots": ["https://social.lol/users/cory/statuses/110254160567324095"],
     "lastTootTimestamp": 1682344979651
   },
-  "https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/": {
+    "id": "https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/",
     "title": "📝: Talk: Building a /now page with Eleventy",
-    "url": "https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/",
     "content_text": "📝: Talk: Building a /now page with Eleventy https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/",
     "date_published": "2023-04-24T00:00:00-08:00",
     "toots": ["https://social.lol/users/cory/statuses/110257463288157409"],
@@ -2340,10 +2340,10 @@
     "toots": ["https://social.lol/users/cory/statuses/110265957419225300"],
     "lastTootTimestamp": 1682524985101
   },
-  "https://coryd.dev/posts/2023/we-lost-the-thread/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/we-lost-the-thread/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/we-lost-the-thread/": {
+    "id": "https://coryd.dev/posts/2023/we-lost-the-thread/",
     "title": "📝: We lost the thread",
-    "url": "https://coryd.dev/posts/2023/we-lost-the-thread/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/we-lost-the-thread/",
     "content_text": "📝: We lost the thread https://coryd.dev/posts/2023/we-lost-the-thread/",
     "date_published": "2023-04-27T00:00:00-08:00",
     "toots": ["https://social.lol/users/cory/statuses/110272563425053762"],
@@ -2439,10 +2439,10 @@
     "toots": ["https://social.lol/users/cory/statuses/110296185488286227"],
     "lastTootTimestamp": 1682986228826
   },
-  "https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/": {
+    "id": "https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/",
     "title": "📝: A Safari-specific guide to making the modern web suck less",
-    "url": "https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/",
     "content_text": "📝: A Safari-specific guide to making the modern web suck less https://coryd.dev/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/",
     "date_published": "2023-05-01T00:00:00-08:00",
     "toots": ["https://social.lol/users/cory/statuses/110296680198275175"],
@@ -2502,10 +2502,10 @@
     "toots": ["https://social.lol/users/cory/statuses/110318832571032723"],
     "lastTootTimestamp": 1683331795865
   },
-  "https://coryd.dev/posts/2023/now-page-update-matter-favorites/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/now-page-update-matter-favorites/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/now-page-update-matter-favorites/": {
+    "id": "https://coryd.dev/posts/2023/now-page-update-matter-favorites/",
     "title": "📝: Now page update: favorite articles from Matter",
-    "url": "https://coryd.dev/posts/2023/now-page-update-matter-favorites/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/now-page-update-matter-favorites/",
     "content_text": "📝: Now page update: favorite articles from Matter https://coryd.dev/posts/2023/now-page-update-matter-favorites/",
     "date_published": "2023-05-05T00:00:00-08:00",
     "toots": ["https://social.lol/users/cory/statuses/110317861380594108"],
@@ -2960,10 +2960,10 @@
     "toots": ["https://social.lol/users/cory/statuses/110418367430415442"],
     "lastTootTimestamp": 1684850577359
   },
-  "https://coryd.dev/posts/2023/i-block-ads/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/i-block-ads/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/i-block-ads/": {
+    "id": "https://coryd.dev/posts/2023/i-block-ads/",
     "title": "📝: I block ads",
-    "url": "https://coryd.dev/posts/2023/i-block-ads/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/i-block-ads/",
     "content_text": "📝: I block ads https://coryd.dev/posts/2023/i-block-ads/",
     "date_published": "2023-05-23T00:00:00-08:00",
     "toots": ["https://social.lol/users/cory/statuses/110419311310854145"],
@@ -3014,10 +3014,10 @@
     "toots": ["https://social.lol/users/cory/statuses/110429692109404657"],
     "lastTootTimestamp": 1685023378176
   },
-  "https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/": {
+    "id": "https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/",
     "title": "📝: Domain names as discoverable personal identifiers for the web",
-    "url": "https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/",
     "content_text": "📝: Domain names as discoverable personal identifiers for the web https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/",
     "date_published": "2023-05-26T00:00:00-08:00",
     "toots": ["https://social.lol/users/cory/statuses/110436769786870729"],
@@ -3230,10 +3230,10 @@
     "toots": ["https://social.lol/users/cory/statuses/110503301997648615"],
     "lastTootTimestamp": 1686146575941
   },
-  "https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/": {
+    "id": "https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/",
     "title": "📝: Optimizing for performance with Eleventy",
-    "url": "https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/",
     "content_text": "📝: Optimizing for performance with Eleventy https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/",
     "date_published": "2023-06-07T00:00:00-08:00",
     "toots": ["https://social.lol/users/cory/statuses/110504717978669650"],
@@ -3266,10 +3266,10 @@
     "toots": ["https://social.lol/users/cory/statuses/110509908801291010"],
     "lastTootTimestamp": 1686247387770
   },
-  "https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/": {
+    "id": "https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/",
     "title": "📝: From ICS to JSON: surfacing anticipated albums",
-    "url": "https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/",
     "content_text": "📝: From ICS to JSON: surfacing anticipated albums https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/",
     "date_published": "2023-06-08T00:00:00-08:00",
     "toots": ["https://social.lol/users/cory/statuses/110511358153038691"],
@@ -3473,10 +3473,10 @@
     "toots": ["https://social.lol/users/cory/statuses/110556655874625080"],
     "lastTootTimestamp": 1686960691518
   },
-  "https://coryd.dev/posts/2023/support-small-businesses-internet-ones-too/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/support-small-businesses-internet-ones-too/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/support-small-businesses-internet-ones-too/": {
+    "id": "https://coryd.dev/posts/2023/support-small-businesses-internet-ones-too/",
     "title": "📝: Support small businesses (internet ones too)",
-    "url": "https://coryd.dev/posts/2023/support-small-businesses-internet-ones-too/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/support-small-businesses-internet-ones-too/",
     "content_text": "📝: Support small businesses (internet ones too) https://coryd.dev/posts/2023/support-small-businesses-internet-ones-too/",
     "date_published": "2023-06-16T00:00:00-08:00",
     "toots": ["https://social.lol/users/cory/statuses/110557160058240163"],
@@ -3563,10 +3563,10 @@
     "toots": ["https://social.lol/users/cory/statuses/110583047012640568"],
     "lastTootTimestamp": 1687363388329
   },
-  "https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/": {
+    "id": "https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/",
     "title": "📝: Displaying listening data from Apple Music using MusicKit.js",
-    "url": "https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/",
     "content_text": "📝: Displaying listening data from Apple Music using MusicKit.js https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/",
     "date_published": "2023-06-21T00:00:00-08:00",
     "toots": ["https://social.lol/users/cory/statuses/110585489118367775"],
@@ -3833,10 +3833,10 @@
     "toots": ["https://social.lol/users/cory/statuses/110663263344446344"],
     "lastTootTimestamp": 1688587392419
   },
-  "https://coryd.dev/posts/2023/embrace-extend-enshittify/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/embrace-extend-enshittify/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/embrace-extend-enshittify/": {
+    "id": "https://coryd.dev/posts/2023/embrace-extend-enshittify/",
     "title": "📝: Embrace, extend, enshittify",
-    "url": "https://coryd.dev/posts/2023/embrace-extend-enshittify/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/embrace-extend-enshittify/",
     "content_text": "📝: Embrace, extend, enshittify https://coryd.dev/posts/2023/embrace-extend-enshittify/",
     "date_published": "2023-07-05T00:00:00-08:00",
     "toots": ["https://social.lol/users/cory/statuses/110665150505986865"],
@@ -4067,10 +4067,10 @@
     "toots": ["https://social.lol/users/cory/statuses/110704426210552398"],
     "lastTootTimestamp": 1689215487892
   },
-  "https://coryd.dev/posts/2023/popular-posts-widget-using-eleventy-plausible/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/popular-posts-widget-using-eleventy-plausible/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/popular-posts-widget-using-eleventy-plausible/": {
+    "id": "https://coryd.dev/posts/2023/popular-posts-widget-using-eleventy-plausible/",
     "title": "📝: Building a popular posts widget in Eleventy using Plausible analytics",
-    "url": "https://coryd.dev/posts/2023/popular-posts-widget-using-eleventy-plausible/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/popular-posts-widget-using-eleventy-plausible/",
     "content_text": "📝: Building a popular posts widget in Eleventy using Plausible analytics https://coryd.dev/posts/2023/popular-posts-widget-using-eleventy-plausible/",
     "date_published": "2023-07-12T00:00:00-08:00",
     "toots": ["https://social.lol/users/cory/statuses/110703880392083159"],
@@ -4274,10 +4274,10 @@
     "toots": ["https://social.lol/users/cory/statuses/110753859366790082"],
     "lastTootTimestamp": 1689969778008
   },
-  "https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/?utm_campaign=syndication&utm_source=follow": {
-    "id": "https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/?utm_campaign=syndication&utm_source=follow",
+  "https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/": {
+    "id": "https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/",
     "title": "📝: Road to madness: charting Apple Music listening data",
-    "url": "https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/?utm_campaign=syndication&utm_source=follow",
+    "url": "https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/",
     "content_text": "📝: Road to madness: charting Apple Music listening data https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/",
     "date_published": "2023-07-21T00:00:00-08:00",
     "toots": ["https://social.lol/users/cory/statuses/110755328597863886"],
