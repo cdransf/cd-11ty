@@ -1,15 +1,25 @@
 const emojiMap = (genre, artist) => {
   if (artist === 'David Bowie') return '👨‍🎤'
+  if (genre.includes('black metal')) return '🧛🏻‍♂️'
+  if (genre.includes('death metal')) return '💀'
   if (genre.includes('metal')) return '🤘'
-  if (genre.includes('emo')) return '😢'
-  if (genre.includes('alternative')) return '🎸'
+  if (genre.includes('emo') || genre.includes('blues')) return '😢'
   if (genre.includes('grind') || genre.includes('powerviolence')) return '🫨'
-  if (genre.includes('country') || genre.includes('americana') || genre.includes('bluegrass'))
+  if (
+    genre.includes('country') ||
+    genre.includes('americana') ||
+    genre.includes('bluegrass') ||
+    genre.includes('folk')
+  )
     return '🪕'
   if (genre.includes('post-punk')) return '😔'
   if (genre.includes('punk') || genre.includes('hardcore')) return '✊'
   if (genre.includes('hip hop')) return '🎤'
+  if (genre.includes('progressive') || genre.includes('experimental')) return '🤓'
+  if (genre.includes('jazz')) return '🎺'
+  if (genre.includes('psychedelic')) return '💊'
   if (genre.includes('dance') || genre.includes('electronic')) return '💻'
+  if (genre.includes('alternative') || genre.includes('rock')) return '🎸'
   return '🎧'
 }
 
