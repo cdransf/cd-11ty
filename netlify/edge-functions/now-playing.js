@@ -1,4 +1,6 @@
 const emojiMap = (genre, artist) => {
+  const DEFAULT = '🎧'
+  if (!genre) return DEFAULT // early return for bad input
   if (artist === 'David Bowie') return '👨‍🎤'
   if (genre.includes('death metal')) return '💀'
   if (genre.includes('black metal')) return '🧛🏻‍♂️'
@@ -22,7 +24,7 @@ const emojiMap = (genre, artist) => {
   if (genre.includes('dance') || genre.includes('electronic')) return '💻'
   if (genre.includes('alternative') || genre.includes('rock') || genre.includes('shoegaze'))
     return '🎸'
-  return '🎧'
+  return DEFAULT
 }
 
 export default async () => {
