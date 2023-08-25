@@ -23,7 +23,12 @@ const emojiMap = (genre, artist) => {
   if (genre.includes('jazz')) return '🎺'
   if (genre.includes('psychedelic')) return '💊'
   if (genre.includes('dance') || genre.includes('electronic')) return '💻'
-  if (genre.includes('alternative') || genre.includes('rock') || genre.includes('shoegaze'))
+  if (
+    genre.includes('alternative') ||
+    genre.includes('rock') ||
+    genre.includes('shoegaze') ||
+    genre.includes('screamo')
+  )
     return '🎸'
   return DEFAULT
 }
