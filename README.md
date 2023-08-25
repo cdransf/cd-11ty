@@ -12,10 +12,20 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 
 ## My latest posts
 <!-- BLOGPOSTS:START -->
-- [Road to madness: charting Apple Music listening data](https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/)
-- [Building a popular posts widget in Eleventy using Plausible analytics](https://coryd.dev/posts/2023/popular-posts-widget-using-eleventy-plausible/)
-- [Embrace, extend, enshittify](https://coryd.dev/posts/2023/embrace-extend-enshittify/)
-- [Displaying listening data from Apple Music using MusicKit.js](https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/)
-- [Support small businesses (internet ones too)](https://coryd.dev/posts/2023/support-small-businesses-internet-ones-too/)
+- [Road to madness: charting Apple Music listening data](
+      https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/?utm_campaign=syndication&utm_source=rss
+    )
+- [Building a popular posts widget in Eleventy using Plausible analytics](
+      https://coryd.dev/posts/2023/popular-posts-widget-using-eleventy-plausible/?utm_campaign=syndication&utm_source=rss
+    )
+- [Embrace, extend, enshittify](
+      https://coryd.dev/posts/2023/embrace-extend-enshittify/?utm_campaign=syndication&utm_source=rss
+    )
+- [Displaying listening data from Apple Music using MusicKit.js](
+      https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/?utm_campaign=syndication&utm_source=rss
+    )
+- [Support small businesses (internet ones too)](
+      https://coryd.dev/posts/2023/support-small-businesses-internet-ones-too/?utm_campaign=syndication&utm_source=rss
+    )
 <!-- BLOGPOSTS:END -->
 
