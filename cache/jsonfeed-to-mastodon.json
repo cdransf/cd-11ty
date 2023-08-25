@@ -6025,7 +6025,10 @@
     "url": "https://coryd.dev/posts/2023/i-dont-want-streaming-music/?utm_campaign=syndication&utm_source=follow",
     "content_text": "📝: I don't want streaming music, I just want to stream my music https://coryd.dev/posts/2023/i-dont-want-streaming-music/?utm_campaign=syndication&utm_source=follow",
     "date_published": "2023-04-05T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110949681446493757"
+    ],
+    "lastTootTimestamp": 1692957785811
   },
   "https://coryd.dev/posts/2023/another-eleventy-content-syndication-path/?utm_campaign=syndication&utm_source=follow": {
     "id": "https://coryd.dev/posts/2023/another-eleventy-content-syndication-path/",
