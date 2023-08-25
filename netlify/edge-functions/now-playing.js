@@ -2,6 +2,7 @@ const emojiMap = (genre, artist) => {
   const DEFAULT = '🎧'
   if (!genre) return DEFAULT // early return for bad input
   if (artist === 'David Bowie') return '👨‍🎤'
+  if (artist === 'Minor Threat') return '👨🏻‍🦲'
   if (genre.includes('death metal')) return '💀'
   if (genre.includes('black metal')) return '🧛🏻‍♂️'
   if (genre.includes('metal')) return '🤘'
