@@ -9,3 +9,6 @@ node_modules
 
 # system files
 .DS_Store
+
+# netlify
+.netlify
