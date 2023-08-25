@@ -15,12 +15,6 @@
       <span class="pt-1 md:pt-0 mr-1">{{ status.emoji }}</span>
       <span>{{ status.content }}</span>
     </p>
-    <p id="now-playing" class="mb-0 flex flex-row items-start md:items-center">
-      <span id="now-playing-loading" class="text--blur">Loading...</span>
-      <span id="now-playing-display">
-        <span id="now-playing-emoji" class="pt-1 md:pt-0 mr-1"></span>
-        <span id="now-playing-content"></span>
-      </span>
-    </p>
+    {% include "partials/now/playing.liquid" %}
   </div>
 </div>

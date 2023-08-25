@@ -174,9 +174,8 @@ code[class*=language-], pre[class*=language-] {
   color: theme(colors.pink.500)
 }
 
-.text--blur {
-  color: transparent;
-  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+.icon--spin > svg {
+  @apply animate-spin;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -213,9 +212,5 @@ code[class*=language-], pre[class*=language-] {
   .tag--button {
     color: theme(colors.gray.900);
     background: theme(colors.purple.400);
-  }
-  
-  .text--blur {
-    text-shadow: 0 0 5px rgba(255,255,255,0.5);
   }
 }

@@ -22,7 +22,7 @@ meta:
     src: https://coryd.dev/assets/img/avatar.webp
 ---
 
-{% if pagination.pageNumber == 0 %}{% include "partials/now-topper.liquid" %}{% endif %} {% for post in pagination.items %} {% if post.data.published %}
+{% if pagination.pageNumber == 0 %}{% include "partials/now/topper.liquid" %}{% endif %} {% for post in pagination.items %} {% if post.data.published %}
 <article class="h-entry">
   <div
     class="mb-8 border-b border-gray-200 pb-4 text-gray-800 dark:border-gray-700 dark:text-white"
