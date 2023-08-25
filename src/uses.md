@@ -54,6 +54,7 @@ Software and services that I use for work and my own enjoyment.
 - [Keyboard Maestro](https://www.keyboardmaestro.com/)
 - [Arq](https://www.arqbackup.com)
 - [Magnet](https://magnet.crowdcafe.com)
+- [Choosy](https://choosy.app)
 - [Hazel](https://www.noodlesoft.com)
 - [Bartender](https://www.macbartender.com)
 - [AirBuddy](https://v2.airbuddy.app)
