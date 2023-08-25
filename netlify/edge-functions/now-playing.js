@@ -4,7 +4,7 @@ const emojiMap = (genre, artist) => {
   if (artist === 'David Bowie') return '👨‍🎤'
   if (artist === 'Minor Threat') return '👨🏻‍🦲'
   if (genre.includes('death metal')) return '💀'
-  if (genre.includes('black metal')) return '🧛🏻‍♂️'
+  if (genre.includes('black metal')) return '🪦'
   if (genre.includes('metal')) return '🤘'
   if (genre.includes('emo') || genre.includes('blues')) return '😢'
   if (genre.includes('grind') || genre.includes('powerviolence')) return '🫨'
