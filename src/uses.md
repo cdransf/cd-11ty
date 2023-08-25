@@ -74,7 +74,6 @@ Software and services that I use for work and my own enjoyment.
 - [NextDNS](https://nextdns.io/?from=m56mt3z6)
 - [DNSimple](https://dnsimple.com/r/3a7cbb9e15df8f)
 - [Bunny.net](https://bunny.net?ref=revw3mehej)
-- [Plausible analytics](https://plausible.io)
 - [Mullvad](https://mullvad.net)
 - [Kagi](https://kagi.com)
 - [forwardemail.net](https://forwardemail.net)
