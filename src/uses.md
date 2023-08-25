@@ -70,11 +70,11 @@ Software and services that I use for work and my own enjoyment.
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Services</h3>
 
 - [Google Workspace](https://workspace.google.com)
-- <a href="https://usefathom.com/ref/LEHPBZ" onclick="fathom.trackGoal('LBARJ7AM', 0);">Fathom analytics</a>
-- <a href="https://savvycal.com/?via=cory" onclick="fathom.trackGoal('SBOFHVUS', 0);">SavvyCal</a>
-- <a href="https://nextdns.io/?from=m56mt3z6" onclick="fathom.trackGoal('TUYBEWFH', 0);">NextDNS</a>
-- <a href="https://dnsimple.com/r/3a7cbb9e15df8f" onclick="fathom.trackGoal('CUFDBFVQ', 0);">DNSimple</a>
-- <a href="https://bunny.net?ref=revw3mehej" onclick="fathom.trackGoal('WPHHPC2K', 0);">bunny.net</a>
+- [SavvyCal](https://savvycal.com/?via=cory)
+- [NextDNS](https://nextdns.io/?from=m56mt3z6)
+- [DNSimple](https://dnsimple.com/r/3a7cbb9e15df8f)
+- [Bunny.net](https://bunny.net?ref=revw3mehej)
+- [Plausible analytics](https://plausible.io)
 - [Mullvad](https://mullvad.net)
 - [Kagi](https://kagi.com)
 - [forwardemail.net](https://forwardemail.net)
