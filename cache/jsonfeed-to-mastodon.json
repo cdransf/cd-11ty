@@ -5962,7 +5962,10 @@
     "url": "https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/?utm_campaign=syndication&utm_source=follow",
     "content_text": "📝: Domain names as discoverable personal identifiers for the web https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/?utm_campaign=syndication&utm_source=follow",
     "date_published": "2023-05-26T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110947349645071427"
+    ],
+    "lastTootTimestamp": 1692922206202
   },
   "https://coryd.dev/posts/2023/i-block-ads/?utm_campaign=syndication&utm_source=follow": {
     "id": "https://coryd.dev/posts/2023/i-block-ads/",
