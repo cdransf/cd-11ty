@@ -11,18 +11,16 @@
       <a href="https://trakt.tv/users/cdransf" rel="noopener noreferrer">tv</a>
       and
       <a href="https://letterboxd.com/cdme" rel="noopener noreferrer">movies</a>.</p>
-    <div class="pl-4 md:pl-8">
-      <p class="my-2 flex flex-row items-start md:items-center">
-        <span class="pt-1 md:pt-0 mr-1">{{ status.emoji }}</span>
-        <span>{{ status.content }}</span>
-      </p>
-      <p id="now-playing" class="my-2 flex flex-row items-start md:items-center">
-        <span id="now-playing-loading" class="text--blur">Loading...</span>
-        <span id="now-playing-display">
-          <span id="now-playing-emoji" class="pt-1 md:pt-0 mr-1"></span>
-          <span id="now-playing-content"></span>
-        </span>
-      </p>
-    </div>
+    <p class="mb-0 flex flex-row items-start md:items-center">
+      <span class="pt-1 md:pt-0 mr-1">{{ status.emoji }}</span>
+      <span>{{ status.content }}</span>
+    </p>
+    <p id="now-playing" class="mb-0 flex flex-row items-start md:items-center">
+      <span id="now-playing-loading" class="text--blur">Loading...</span>
+      <span id="now-playing-display">
+        <span id="now-playing-emoji" class="pt-1 md:pt-0 mr-1"></span>
+        <span id="now-playing-content"></span>
+      </span>
+    </p>
   </div>
 </div>
