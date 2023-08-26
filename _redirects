@@ -43,3 +43,7 @@
 
 # netlify app domain
 https://cdme.netlify.app https://coryd.dev 301!
+
+# analytics
+https://static.getclicky.com/js?in=%2F4dcb93321b2a3b /4afe62271e477e.js
+https://in.getclicky.com/in.php /4dcb93321b2a3b
