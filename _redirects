@@ -30,6 +30,12 @@
 
 # assets
 /static/images/avatar.webp /assets/img/avatar.webp 301!
+/assets/img/favicon/apple-touch-icon.png /assets/icons/apple-touch-icon.png 301!
+/apple-touch-icon.png /assets/icons/apple-touch-icon.png 301!
+/apple-touch-icon-precomposed.png /assets/icons/apple-touch-icon.png 301!
+/favicon.ico /assets/icons/favicon.ico 301!
+/assets/img/favicon/favicon-32x32.png /assets/icons/favicon.ico 301!
+/assets/img/favicon/favicon-16x16.png /assets/icons/favicon.ico 301!
 
 # redirects
 /articles/ / 301!
