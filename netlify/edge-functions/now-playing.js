@@ -42,12 +42,17 @@ export default async () => {
   }).catch()
   const trackData = await trackRes.json()
   const track = trackData['recenttracks']['track'][0]
-  const genreUrl = `https://musicbrainz.org/ws/2/artist/${track['artist']['mbid']}?inc=aliases+genres&fmt=json`
-  const genreRes = await fetch(genreUrl, {
-    type: 'json',
-  }).catch()
-  const genreData = await genreRes.json()
-  const genre = genreData.genres.sort((a, b) => b.count - a.count)[0]['name']
+  const mbid = track['artist']['mbid']
+  let genre = ''
+
+  if (mbid && mbid !== '') {
+    const genreUrl = `https://musicbrainz.org/ws/2/artist/${mbid}?inc=aliases+genres&fmt=json`
+    const genreRes = await fetch(genreUrl, {
+      type: 'json',
+    }).catch()
+    const genreData = await genreRes.json()
+    genre = genreData.genres.sort((a, b) => b.count - a.count)[0]['name']
+  }
 
   return Response.json({
     artist: track['artist']['#text'],
