@@ -5907,5 +5907,16 @@
       "https://social.lol/users/cory/statuses/110953008933127659"
     ],
     "lastTootTimestamp": 1693008559230
+  },
+  "https://www.goodreads.com/review/show/5799760410": {
+    "id": "https://www.goodreads.com/review/show/5799760410",
+    "title": "📖: Helter Skelter: The True Story of the Manson Murders",
+    "url": "https://www.goodreads.com/review/show/5799760410",
+    "content_text": "📖: Helter Skelter: The True Story of the Manson Murders https://www.goodreads.com/review/show/5799760410",
+    "date_published": "2023-08-27T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110962893314942378"
+    ],
+    "lastTootTimestamp": 1693159382919
   }
 }
