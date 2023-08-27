@@ -26,7 +26,8 @@ meta:
 
 Referral links for services I use. I save some money, and you do as well if you choose to use them.
 
-- [NextDNS](https://nextdns.io/?from=m56mt3z6)
-- [DNSimple](https://dnsimple.com/r/3a7cbb9e15df8f)
-- [Bunny.net](https://bunny.net?ref=revw3mehej)
-- [DigitalOcean](https://m.do.co/c/3635bf99aee2)
+- <a onclick="clicky.goal('Referral: nextDNS')" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>
+- <a onclick="clicky.goal('Referral: DNSimple')" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>
+- <a onclick="clicky.goal('Referral: Bunny.net')" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>
+- <a onclick="clicky.goal('Referral: Clicky')" href="https://clicky.com/101424044">Clicky</a>
+- <a onclick="clicky.goal('Referral: DigitalOcean')" href="https://m.do.co/c/3635bf99aee2">DigitalOcean</a>
