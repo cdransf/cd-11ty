@@ -1,5 +1,6 @@
 const marked = require('marked')
 const sanitizeHTML = require('sanitize-html')
+const utmPattern = /[?&](utm_[^&=]+=[^&#]*)/gi
 
 module.exports = {
   trim: (string, limit) => {
@@ -18,8 +19,7 @@ module.exports = {
     return string.replace(pattern, replacement)
   },
   stripUtm: (string) => {
-    const pattern = /[?&](utm_[^&=]+=[^&#]*)/gi
-    return string.replace(pattern, '')
+    return string.replace(utmPattern, '')
   },
   getPostImage: (image) => {
     if (image && image !== '') return image
@@ -51,7 +51,7 @@ module.exports = {
 
     const filtered =
       webmentions
-        .filter((entry) => entry['wm-target'] === `https://coryd.dev${url}`)
+        .filter((entry) => entry['wm-target'].replace(utmPattern, '') === `https://coryd.dev${url}`)
         .filter((entry) => allowedTypes.includes(entry['wm-property'])) || []
 
     filtered.forEach((m) => {
