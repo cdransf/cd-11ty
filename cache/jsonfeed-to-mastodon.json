@@ -6070,5 +6070,16 @@
     "content_text": "📝: I don't want streaming music, I just want to stream my music https://coryd.dev/posts/2023/i-dont-want-streaming-music/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "date_published": "2023-04-05T00:00:00-08:00",
     "toots": []
+  },
+  "https://letterboxd.com/cdme/film/the-cell/": {
+    "id": "https://letterboxd.com/cdme/film/the-cell/",
+    "title": "🎥: The Cell, 2000 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/the-cell/",
+    "content_text": "🎥: The Cell, 2000 - ★★★ https://letterboxd.com/cdme/film/the-cell/",
+    "date_published": "2023-08-28T18:23:44-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110969028146274332"
+    ],
+    "lastTootTimestamp": 1693252993006
   }
 }
