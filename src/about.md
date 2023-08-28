@@ -27,7 +27,7 @@ meta:
 
 I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, <a href="https://www.last.fm/user/cdrn_" rel="noopener noreferrer">music</a>, writing, <a href="https://www.goodreads.com/user/show/168570560-cory-dransfeldt" rel="noopener noreferrer">reading</a> and <a href="https://trakt.tv/users/cdransf" rel="noopener noreferrer">tv</a> and <a href="https://letterboxd.com/cdme" rel="noopener noreferrer">movies</a>.
 
-I build, maintain and design web applications. I've been coding professionally since 2010 with a focus on frontend technologies.
+I build, maintain and design web applications. I've been coding professionally since 2010 with a focus on frontend technologies. I help organize [the Eleventy Meetup](https://11tymeetup.dev) and mentor for [Underdog Devs](https://www.underdogdevs.org).
 
 I tend to write about whatever strikes me, with a focus on development, technology, automation or issues I run into with these things. This is all typically light on editing with and heavy on spur of the moment thoughts.
 
