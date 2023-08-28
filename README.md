@@ -12,20 +12,20 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 
 ## My latest posts
 <!-- BLOGPOSTS:START -->
-- [Displaying now playing data with matching emoji using Netlify edge functions and Eleventy](?utm_source=all_posts_feed&utm_medium=rss&utm_campaign=syndication
-      https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/
+- [Displaying now playing data with matching emoji using Netlify edge functions and Eleventy](
+      https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/?utm_source=all_posts_feed&utm_medium=rss&utm_campaign=syndication
     )
-- [Road to madness: charting Apple Music listening data](?utm_source=all_posts_feed&utm_medium=rss&utm_campaign=syndication
-      https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/
+- [Road to madness: charting Apple Music listening data](
+      https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/?utm_source=all_posts_feed&utm_medium=rss&utm_campaign=syndication
     )
-- [Building a popular posts widget in Eleventy using Plausible analytics](?utm_source=all_posts_feed&utm_medium=rss&utm_campaign=syndication
-      https://coryd.dev/posts/2023/popular-posts-widget-using-eleventy-plausible/
+- [Building a popular posts widget in Eleventy using Plausible analytics](
+      https://coryd.dev/posts/2023/popular-posts-widget-using-eleventy-plausible/?utm_source=all_posts_feed&utm_medium=rss&utm_campaign=syndication
     )
-- [Embrace, extend, enshittify](?utm_source=all_posts_feed&utm_medium=rss&utm_campaign=syndication
-      https://coryd.dev/posts/2023/embrace-extend-enshittify/
+- [Embrace, extend, enshittify](
+      https://coryd.dev/posts/2023/embrace-extend-enshittify/?utm_source=all_posts_feed&utm_medium=rss&utm_campaign=syndication
     )
-- [Displaying listening data from Apple Music using MusicKit.js](?utm_source=all_posts_feed&utm_medium=rss&utm_campaign=syndication
-      https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/
+- [Displaying listening data from Apple Music using MusicKit.js](
+      https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/?utm_source=all_posts_feed&utm_medium=rss&utm_campaign=syndication
     )
 <!-- BLOGPOSTS:END -->
 
