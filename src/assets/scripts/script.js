@@ -4,16 +4,17 @@
     const emoji = document.getElementById('now-playing-emoji')
     const content = document.getElementById('now-playing-content')
     const loading = document.getElementById('now-playing-loading')
+    const populateNowPlaying = (data) => {
+      loading.style.display = 'none'
+      emoji.innerText = data.emoji
+      content.innerText = `${data.title} by ${data.artist}`
+      emoji.classList.remove('hidden')
+      content.classList.remove('hidden')
+    }
 
     try {
       const cache = JSON.parse(localStorage.getItem('now-playing'))
-      if (cache) {
-        loading.style.display = 'none'
-        emoji.innerText = cache.emoji
-        content.innerText = `${cache.title} by ${cache.artist}`
-        emoji.classList.remove('hidden')
-        content.classList.remove('hidden')
-      }
+      if (cache) populateNowPlaying(cache)
     } catch (e) {
       /* quiet catch */
     }
@@ -31,10 +32,6 @@
 
     if (!JSON.parse(localStorage.getItem('now-playing')) && !data) nowPlaying.remove()
 
-    loading.style.display = 'none'
-    emoji.innerText = data.emoji
-    content.innerText = `${data.title} by ${data.artist}`
-    emoji.classList.remove('hidden')
-    content.classList.remove('hidden')
+    populateNowPlaying(data)
   }
 })()
