@@ -6007,7 +6007,10 @@
     "url": "https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "content_text": "📝: Optimizing for performance with Eleventy https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "date_published": "2023-06-07T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110968556322205480"
+    ],
+    "lastTootTimestamp": 1693245793572
   },
   "https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication": {
     "id": "https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/",
