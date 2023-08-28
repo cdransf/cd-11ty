@@ -5963,7 +5963,10 @@
     "url": "https://coryd.dev/posts/2023/embrace-extend-enshittify/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "content_text": "📝: Embrace, extend, enshittify https://coryd.dev/posts/2023/embrace-extend-enshittify/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "date_published": "2023-07-05T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110967612118169538"
+    ],
+    "lastTootTimestamp": 1693231386198
   },
   "https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication": {
     "id": "https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/",
@@ -5982,7 +5985,10 @@
     "url": "https://coryd.dev/posts/2023/support-small-businesses-internet-ones-too/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "content_text": "📝: Support small businesses (internet ones too) https://coryd.dev/posts/2023/support-small-businesses-internet-ones-too/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "date_published": "2023-06-16T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110968084757908704"
+    ],
+    "lastTootTimestamp": 1693238598038
   },
   "https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication": {
     "id": "https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/",
@@ -5990,7 +5996,10 @@
     "url": "https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "content_text": "📝: From ICS to JSON: surfacing anticipated albums https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "date_published": "2023-06-08T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110967144965753785"
+    ],
+    "lastTootTimestamp": 1693224257957
   },
   "https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication": {
     "id": "https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/",
@@ -5998,7 +6007,10 @@
     "url": "https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "content_text": "📝: Optimizing for performance with Eleventy https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "date_published": "2023-06-07T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110968556322205480"
+    ],
+    "lastTootTimestamp": 1693245793572
   },
   "https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication": {
     "id": "https://coryd.dev/posts/2023/domain-names-as-discoverable-personal-identifiers-for-the-web/",
