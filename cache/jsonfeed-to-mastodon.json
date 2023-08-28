@@ -5963,7 +5963,10 @@
     "url": "https://coryd.dev/posts/2023/embrace-extend-enshittify/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "content_text": "📝: Embrace, extend, enshittify https://coryd.dev/posts/2023/embrace-extend-enshittify/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "date_published": "2023-07-05T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110967612118169538"
+    ],
+    "lastTootTimestamp": 1693231386198
   },
   "https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication": {
     "id": "https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/",
