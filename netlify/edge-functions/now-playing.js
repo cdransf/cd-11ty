@@ -51,7 +51,7 @@ export default async () => {
       type: 'json',
     }).catch()
     const genreData = await genreRes.json()
-    genre = genreData.genres.sort((a, b) => b.count - a.count)[0]['name']
+    genre = genreData.genres.sort((a, b) => b.count - a.count)[0]?.['name'] || ''
   }
 
   return Response.json({
