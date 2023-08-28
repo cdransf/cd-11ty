@@ -31,7 +31,7 @@ module.exports = {
         if (analytics.find((p) => p.url.includes(post.url))) return true
       })
       .sort((a, b) => {
-        const visitors = (page) => analytics.filter((p) => p.url.includes(page.url)).pop().value
+        const visitors = (page) => analytics.filter((p) => p.url.includes(page.url)).pop().rank
         return visitors(b) - visitors(a)
       })
   },
