@@ -5990,7 +5990,10 @@
     "url": "https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "content_text": "📝: From ICS to JSON: surfacing anticipated albums https://coryd.dev/posts/2023/from-ics-to-json-surfacing-anticipated-albums/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "date_published": "2023-06-08T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110967144965753785"
+    ],
+    "lastTootTimestamp": 1693224257957
   },
   "https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication": {
     "id": "https://coryd.dev/posts/2023/optimizing-for-performance-with-eleventy/",
