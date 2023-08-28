@@ -3446,10 +3446,10 @@ lint-staged@^14.0.1:
     string-argv "0.3.2"
     yaml "2.3.1"
 
-liquidjs@^10.7.0, liquidjs@^10.9.1:
-  version "10.9.1"
-  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-10.9.1.tgz#3baf399efd447dafe48ee8431c81fb36d5733b73"
-  integrity sha512-1191NKgWdsxc7VJKuLR2hNfacyn1LSA2/1bMMECDGckajVCvbDC4OWlcZJ+il3fkhuiGSHYd++HNgjP35gbDWw==
+liquidjs@^10.7.0, liquidjs@^10.9.2:
+  version "10.9.2"
+  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-10.9.2.tgz#701c17185715585947b86c74ef193d1dcead5010"
+  integrity sha512-ygPCgYyiFKQNyRi/CK3s3U5RimosBtrIq7TaMYK5ek93mUl9CZ6xxqw2T+1G4kVc9dAmwI71bWLQNKRToV8SsQ==
   dependencies:
     commander "^10.0.0"
 
