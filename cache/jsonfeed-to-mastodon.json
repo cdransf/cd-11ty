@@ -6064,7 +6064,10 @@
     "url": "https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "content_text": "📝: Talk: Building a /now page with Eleventy https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "date_published": "2023-04-24T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110969999978348214"
+    ],
+    "lastTootTimestamp": 1693267822014
   },
   "https://coryd.dev/posts/2023/i-dont-want-streaming-music/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication": {
     "id": "https://coryd.dev/posts/2023/i-dont-want-streaming-music/",
