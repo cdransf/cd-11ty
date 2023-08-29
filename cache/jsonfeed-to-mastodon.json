@@ -6078,7 +6078,10 @@
     "url": "https://coryd.dev/posts/2023/i-dont-want-streaming-music/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "content_text": "📝: I don't want streaming music, I just want to stream my music https://coryd.dev/posts/2023/i-dont-want-streaming-music/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "date_published": "2023-04-05T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110970915295455236"
+    ],
+    "lastTootTimestamp": 1693281788606
   },
   "https://letterboxd.com/cdme/film/the-cell/": {
     "id": "https://letterboxd.com/cdme/film/the-cell/",
@@ -6090,5 +6093,13 @@
       "https://social.lol/users/cory/statuses/110969028146274332"
     ],
     "lastTootTimestamp": 1693252993006
+  },
+  "https://theoutline.com/post/4029/computer-people-for-peace-history": {
+    "id": "https://theoutline.com/post/4029/computer-people-for-peace-history",
+    "title": "🔗: Remembering the ’70s activist group that tried to save us from the tech industry",
+    "url": "https://theoutline.com/post/4029/computer-people-for-peace-history",
+    "content_text": "🔗: Remembering the ’70s activist group that tried to save us from the tech industry https://theoutline.com/post/4029/computer-people-for-peace-history",
+    "date_published": "2018-04-02T00:00:00-08:00",
+    "toots": []
   }
 }
