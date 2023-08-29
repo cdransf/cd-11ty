@@ -5933,7 +5933,10 @@
     "url": "https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "content_text": "📝: Displaying now playing data with matching emoji using Netlify edge functions and Eleventy https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "date_published": "2023-08-25T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110970571575223701"
+    ],
+    "lastTootTimestamp": 1693276543889
   },
   "https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication": {
     "id": "https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/",
