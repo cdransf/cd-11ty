@@ -6062,7 +6062,10 @@
     "url": "https://coryd.dev/posts/2023/we-lost-the-thread/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "content_text": "📝: We lost the thread https://coryd.dev/posts/2023/we-lost-the-thread/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication",
     "date_published": "2023-04-27T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110971860042861899"
+    ],
+    "lastTootTimestamp": 1693296204311
   },
   "https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication": {
     "id": "https://coryd.dev/posts/2023/talk-building-now-page-with-11ty/",
