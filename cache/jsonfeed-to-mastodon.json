@@ -5962,5 +5962,16 @@
       "https://social.lol/users/cory/statuses/110972806310987808"
     ],
     "lastTootTimestamp": 1693310644212
+  },
+  "https://letterboxd.com/cdme/film/fast-color/": {
+    "id": "https://letterboxd.com/cdme/film/fast-color/",
+    "title": "🎥: Fast Color, 2018 - ★★★★",
+    "url": "https://letterboxd.com/cdme/film/fast-color/",
+    "content_text": "🎥: Fast Color, 2018 - ★★★★ https://letterboxd.com/cdme/film/fast-color/",
+    "date_published": "2023-08-29T15:24:17-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/110974218982874341"
+    ],
+    "lastTootTimestamp": 1693332198876
   }
 }
