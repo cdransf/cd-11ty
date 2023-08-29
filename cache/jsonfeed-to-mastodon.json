@@ -5933,7 +5933,10 @@
     "url": "https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/",
     "content_text": "📝: Displaying now playing data with matching emoji using Netlify edge functions and Eleventy https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/",
     "date_published": "2023-08-25T00:00:00-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110973274454732069"
+    ],
+    "lastTootTimestamp": 1693317786522
   },
   "https://letterboxd.com/cdme/film/the-cell/": {
     "id": "https://letterboxd.com/cdme/film/the-cell/",
