@@ -5925,7 +5925,10 @@
     "url": "https://letterboxd.com/cdme/film/thx-1138/",
     "content_text": "🎥: THX 1138, 1971 - ★★★½ https://letterboxd.com/cdme/film/thx-1138/",
     "date_published": "2023-08-28T00:37:55-08:00",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/110973746909729794"
+    ],
+    "lastTootTimestamp": 1693324995627
   },
   "https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/": {
     "id": "https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/",
