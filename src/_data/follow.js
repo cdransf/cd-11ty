@@ -12,9 +12,7 @@ module.exports = async function () {
     activity.posts.push({
       id: entry.url,
       title: entry.title,
-      url: entry.url.includes('coryd.dev')
-        ? `${entry.url}?utm_source=follow_feed&utm_medium=social&utm_campaign=syndication`
-        : entry.url,
+      url: entry.url,
       content_html: entry.content || '',
       date_published: entry.published,
     })

@@ -10,12 +10,9 @@ permalink: /feed.xml
 {% block entries %}
   {% assign posts = collections.posts | reverse %}
   {% for post in posts limit: 15 %}
-    {% capture entry_link %}
-      {{ site.url }}{{ post.url }}?utm_source=all_posts_feed&utm_medium=rss&utm_campaign=syndication
-    {% endcapture %}
     <entry>
       <title>{{ post.data.title }}</title>
-      <link href="{{ entry_link | encodeAmp }}" />
+      <link href="{{ site.url }}{{ post.url }}" />
       <updated>{{ post.date | date: "%m.%d.%Y" }}</updated>
       <id>{{ site.url }}{{ post.url }}</id>
       <content type="html">
