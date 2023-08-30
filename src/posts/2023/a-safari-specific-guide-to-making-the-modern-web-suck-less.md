@@ -20,6 +20,8 @@ Here's a quick rundown of extensions and tools, specific to Safari, to make that
 
 Now, with all that in place, go back to that same site we started at and see how much less annoying it is, how much quicker it loads (and how many network requests that don't do you any good get blocked).
 
+**Edit:** A curated list of cross-browser resources can also be found on GitHub [@cdransf/awesome-adblock](https://github.com/cdransf/awesome-adblock).
+
 [^1]: We can't fix this (or, well, not easily), but you've still got some agency when browsing.
 [^2]: Yay you've got an app — it's probably a web view with more analytics.
 [^3]: You can accept whatever you want, I'd recommend sticking with functional cookies only.
