@@ -11,10 +11,7 @@
       <a href="https://trakt.tv/users/cdransf" rel="noopener noreferrer">tv</a>
       and
       <a href="https://letterboxd.com/cdme" rel="noopener noreferrer">movies</a>.</p>
-    <p class="mb-0 flex flex-row items-start md:items-center">
-      <span class="pt-1 md:pt-0 mr-1">{{ status.emoji }}</span>
-      <span>{{ status.content }}</span>
-    </p>
+    {% render "partials/now/status.liquid", status:status %}
     {% include "partials/now/playing.liquid" %}
   </div>
 </div>
