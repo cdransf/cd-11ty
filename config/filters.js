@@ -63,7 +63,6 @@ module.exports = {
             m.sanitized = sanitizeHTML(m.content.html)
             data[m['wm-property']].unshift(m)
           }
-
           return
         }
 
