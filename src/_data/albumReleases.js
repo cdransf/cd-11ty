@@ -10,6 +10,15 @@ module.exports = async function () {
   const icsRes = await fetch(URL)
   const icsData = await icsRes.text()
   const data = icsToJson(icsData)
-  const albumReleases = data.filter((d) => DateTime.fromISO(d.startDate) > DateTime.now())
-  return albumReleases.sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
+  const albumReleases = data
+    .filter((d) => DateTime.fromISO(d.startDate) > DateTime.now())
+    .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
+    .map((release) => {
+      return {
+        date: release.startDate,
+        url: release.location,
+        title: release.summary.replace(/\\/g, ''),
+      }
+    })
+  return albumReleases
 }

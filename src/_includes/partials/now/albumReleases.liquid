@@ -6,9 +6,9 @@
   <ul class="list-inside list-disc pl-5 md:pl-10">
     {% for album in albumReleases %}
       <li class="mt-1.5 mb-2">
-        <span class="font-bold">{{ album.startDate | readableDate }}: </span>
-        <a href="https://{{album.location}}" title="{{album.summary | escape}}">
-          {{album.summary}}
+        <span class="font-bold">{{ album.date | readableDate }}: </span>
+        <a href="https://{{album.url}}" title="{{album.title | escape}}">
+          {{album.title}}
         </a>
       </li>
     {% endfor %}
