@@ -6017,5 +6017,16 @@
       "https://social.lol/users/cory/statuses/110997338399891284"
     ],
     "lastTootTimestamp": 1693684973211
+  },
+  "https://coryd.dev/posts/2023/drying-up-now-page-templates-eleventy/": {
+    "id": "https://coryd.dev/posts/2023/drying-up-now-page-templates-eleventy/",
+    "title": "📝: Drying up now page templates and normalizing data in Eleventy",
+    "url": "https://coryd.dev/posts/2023/drying-up-now-page-templates-eleventy/",
+    "content_text": "📝: Drying up now page templates and normalizing data in Eleventy https://coryd.dev/posts/2023/drying-up-now-page-templates-eleventy/",
+    "date_published": "2023-09-03T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111002529775542767"
+    ],
+    "lastTootTimestamp": 1693764187299
   }
 }
