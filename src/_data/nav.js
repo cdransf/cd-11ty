@@ -29,7 +29,7 @@ module.exports = async function () {
       { name: 'LinkedIn', url: 'https://www.linkedin.com/in/cdransf/', icon: 'brand-linkedin' },
       {
         name: 'Google Calendar',
-        url: 'https://calendar.app.google/sdgyNSx3RcWuatfT6',
+        url: 'https://coryd.dev/calendar',
         icon: 'calendar-plus',
       },
     ],
