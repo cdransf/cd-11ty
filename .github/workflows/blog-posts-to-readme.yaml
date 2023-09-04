@@ -12,7 +12,7 @@ jobs:
       - name: Get RSS Feed
         uses: kohrongying/readme-the-rss@master
         with:
-          feed_url: https://coryd.dev/feed.xml
+          feed_url: https://coryd.dev/feeds/posts
           count: 5
       - name: Commit file changes
         run: |

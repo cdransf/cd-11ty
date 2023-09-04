@@ -1,7 +1,3 @@
-# feeds
-/rss.xml /feed.xml 301!
-/feeds/all.xml /feed.xml 301!
-
 # mastodon
 /.well-known/host-meta* https://social.lol/.well-known/host-meta:splat 301
 /.well-known/nodeinfo* https://social.lol/.well-known/nodeinfo:splat 301
@@ -47,6 +43,18 @@
 
 # netlify app domain
 https://cdme.netlify.app https://coryd.dev 301!
+
+# feeds
+/rss.xml https://feedpress.me/coryd 301!
+/feeds/all.xml https://feedpress.me/coryd 301!
+/feed.xml https://feedpress.me/coryd
+/feed.json https://feedpress.me/coryd.json
+/links.xml https://feedpress.me/coryd-links
+/links.json https://feedpress.me/coryd-links.json
+/books.xml https://feedpress.me/coryd-books
+/books.json https://feedpress.me/coryd-books.json
+/follow.xml https://feedpress.me/coryd-follow
+/follow.json https://feedpress.me/coryd-follow.json
 
 # analytics
 /4afe62271e477e.js https://static.getclicky.com/js?in=%2F4dcb93321b2a3b 200

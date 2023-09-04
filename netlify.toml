@@ -17,26 +17,25 @@ package = "@netlify/plugin-lighthouse"
 # HEADERS
 ###
 [[headers]]
-for = "/feed.xml"
+for = "/feeds/posts"
   [headers.values]
   Content-Type = "application/xml; charset=utf-8"
   x-content-type-options = "nosniff"
 
 [[headers]]
-for = "/links.xml"
+for = "/feeds/links"
   [headers.values]
   Content-Type = "application/xml; charset=utf-8"
   x-content-type-options = "nosniff"
 
 [[headers]]
-for = "/books.xml"
+for = "/feeds/books"
   [headers.values]
   Content-Type = "application/xml; charset=utf-8"
   x-content-type-options = "nosniff"
 
 [[headers]]
-for = "/follow.xml"
-
+for = "/feeds/follow"
   [headers.values]
   Content-Type = "application/xml; charset=utf-8"
   x-content-type-options = "nosniff"

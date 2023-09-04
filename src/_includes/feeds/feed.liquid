@@ -4,7 +4,7 @@
   <title>
     {% block title %}All posts • Cory Dransfeldt{% endblock %}
   </title>
-  <link href="{{ site.url }}/feed.xml" rel="self" />
+  <link href="{{ site.url }}/feeds/posts" rel="self" />
   <link href="{{ site.url }}" />
   <link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
   <updated>{% block update %}{{ collections.posts[0].date | date: "%Y-%m-%dT%H:%M:%S-08:00" }}{% endblock %}</updated>

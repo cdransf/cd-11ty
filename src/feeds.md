@@ -24,7 +24,7 @@ class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 m
 {{ title }}
 </h2>
 
-- Posts ([RSS](/feed.xml) • [JSON](/feed.json)): posts from my site.
-- Links ([RSS](/links.xml) • [JSON](/links.json)): links I've liked.
-- Books ([RSS](/books.xml) • [JSON](/books.json)): books I'm currently reading.
-- Follow ([RSS](/follow.xml) • [JSON](/follow.json)): my activity from around the web.
+- Posts ([RSS](https://feedpress.me/coryd) • [JSON](https://feedpress.me/coryd.json)): posts from my site.
+- Links ([RSS](https://feedpress.me/coryd-links) • [JSON](https://feedpress.me/coryd-links.json)): links I've liked.
+- Books ([RSS](https://feedpress.me/coryd-books.xml) • [JSON](https://feedpress.me/coryd-books.json)): books I'm currently reading.
+- Follow ([RSS](https://feedpress.me/coryd-follow) • [JSON](https://feedpress.me/coryd-follow.json)): my activity from around the web.
