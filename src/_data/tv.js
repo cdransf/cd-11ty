@@ -17,6 +17,9 @@ module.exports = async function () {
   const data = await res
   const episodes = []
   data.reverse().forEach((episode) => {
+    const episodeNumber = episode['episode']['number']
+    const seasonNumber = episode['episode']['season']
+
     if (episodes.find((e) => e.name === episode?.['show']?.['title'])) {
       // cache the matched episode reference
       const matchedEpisode = episodes.find((e) => e.name === episode?.['show']?.['title'])
@@ -51,8 +54,8 @@ module.exports = async function () {
             .toLowerCase()}.jpg` || 'https://cdn.coryd.dev/tv/missing-tv.jpg',
         startingEpisode: matchedEpisode['episode'],
         startingSeason: matchedEpisode['season'],
-        episode: episode['episode']['number'],
-        season: episode['episode']['season'],
+        episode: episodeNumber,
+        season: seasonNumber,
         type: 'tv-range',
       })
     } else {
@@ -67,8 +70,8 @@ module.exports = async function () {
             .replace(':', '')
             .replace(/\s+/g, '-')
             .toLowerCase()}.jpg` || 'https://cdn.coryd.dev/tv/missing-tv.jpg',
-        episode: episode['episode']['number'],
-        season: episode['episode']['season'],
+        episode: episodeNumber,
+        season: seasonNumber,
         type: 'tv',
       })
     }
