@@ -6061,5 +6061,16 @@
       "https://social.lol/users/cory/statuses/111013587777979312"
     ],
     "lastTootTimestamp": 1693932919207
+  },
+  "https://www.goodreads.com/review/show/5753145894": {
+    "id": "https://www.goodreads.com/review/show/5753145894",
+    "title": "📖: The Internet Con: How to Seize the Means of Computation",
+    "url": "https://www.goodreads.com/review/show/5753145894",
+    "content_text": "📖: The Internet Con: How to Seize the Means of Computation https://www.goodreads.com/review/show/5753145894",
+    "date_published": "2023-09-05T00:00:00-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111014798185363412"
+    ],
+    "lastTootTimestamp": 1693951388419
   }
 }
