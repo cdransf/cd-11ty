@@ -14,5 +14,5 @@ jobs:
         uses: Arisamiga/Linkedin-RSS@master
         with:
           feed_list: https://coryd.dev/feeds/posts
-          ln_access_token: {{ secrets.LI_TOKEN }}
+          ln_access_token: ${{ secrets.LI_TOKEN }}
           embed_image: https://coryd.dev/assets/img/social-card.jpg
