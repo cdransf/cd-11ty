@@ -28,12 +28,13 @@ module.exports = async function () {
       )
 
       // populate the subtext to show the appropriate range if it spans multiple seasons
+      // this yields a string in the format of S1E1 - S2E2 or S1E1 - E2
       const subtext =
         matchedEpisode['season'] === episode['episode']['season']
-          ? `S${matchedEpisode['season']}E${
+          ? `S${matchedEpisode['startingSeason'] || matchedEpisode['season']}E${
               matchedEpisode['startingEpisode'] || matchedEpisode['episode']
-            } - ${episode['episode']['number']}`
-          : `S${matchedEpisode['season']}E${
+            } - E${episode['episode']['number']}`
+          : `S${matchedEpisode['startingSeason'] || matchedEpisode['season']}E${
               matchedEpisode['startingEpisode'] || matchedEpisode['episode']
             } - S${episode['episode']['season']}E${episode['episode']['number']}`
 
@@ -49,6 +50,7 @@ module.exports = async function () {
             .replace(/\s+/g, '-')
             .toLowerCase()}.jpg` || 'https://cdn.coryd.dev/tv/missing-tv.jpg',
         startingEpisode: matchedEpisode['episode'],
+        startingSeason: matchedEpisode['season'],
         episode: episode['episode']['number'],
         season: episode['episode']['season'],
         type: 'tv',
