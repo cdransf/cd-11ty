@@ -23,7 +23,7 @@ module.exports = {
   },
   getPostImage: (image) => {
     if (image && image !== '') return image
-    return 'https://coryd.dev/assets/img/social-card.png'
+    return 'https://coryd.dev/assets/img/social-card.jpg'
   },
   getPopularPosts: (posts, analytics) => {
     return posts
