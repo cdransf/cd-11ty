@@ -53,7 +53,7 @@ module.exports = async function () {
         startingSeason: matchedEpisode['season'],
         episode: episode['episode']['number'],
         season: episode['episode']['season'],
-        type: 'tv',
+        type: 'tv-range',
       })
     } else {
       // if an episode with the same show name doesn't exist, push it to the array

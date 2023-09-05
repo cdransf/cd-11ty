@@ -25,6 +25,11 @@ module.exports = {
         normalized['alt'] = `${item['title']} from ${item['name']}`
         normalized['subtext'] = item['subtext']
       }
+      if (item.type === 'tv-range') {
+        normalized['title'] = item['name']
+        normalized['alt'] = `${item['subtext']} from ${item['name']}`
+        normalized['subtext'] = item['subtext']
+      }
       return normalized
     }),
 }
