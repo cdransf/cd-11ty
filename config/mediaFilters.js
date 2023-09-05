@@ -23,7 +23,7 @@ module.exports = {
       if (item.type === 'tv') {
         normalized['title'] = item['title']
         normalized['alt'] = `${item['title']} from ${item['name']}`
-        normalized['subtext'] = `${item.name} • <strong>${item.episode}</strong>`
+        normalized['subtext'] = item['subtext']
       }
       return normalized
     }),

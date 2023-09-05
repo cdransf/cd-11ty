@@ -15,18 +15,64 @@ module.exports = async function () {
     },
   }).catch()
   const data = await res
-  return data.map((episode) => {
-    return {
-      name: episode['show']['title'],
-      title: episode['episode']['title'],
-      url: `https://trakt.tv/shows/${episode['show']['ids']['slug']}/seasons/${episode['episode']['season']}/episodes/${episode['episode']['number']}`,
-      episode: `S${episode['episode']['season']}E${episode['episode']['number']}`,
-      image:
-        `https://cdn.coryd.dev/tv/${episode['show']['title']
-          .replace(':', '')
-          .replace(/\s+/g, '-')
-          .toLowerCase()}.jpg` || 'https://cdn.coryd.dev/tv/missing-tv.jpg',
-      type: 'tv',
+  const episodes = []
+  data.reverse().forEach((episode) => {
+    if (episodes.find((e) => e.name === episode?.['show']?.['title'])) {
+      // cache the matched episode reference
+      const matchedEpisode = episodes.find((e) => e.name === episode?.['show']?.['title'])
+
+      // remove the matched episode from the array
+      episodes.splice(
+        episodes.findIndex((e) => e.name === episode['show']['title']),
+        1
+      )
+
+      // populate the subtext to show the appropriate range if it spans multiple seasons
+      const subtext =
+        matchedEpisode['season'] === episode['episode']['season']
+          ? `S${matchedEpisode['season']}E${
+              matchedEpisode['startingEpisode'] || matchedEpisode['episode']
+            } - ${episode['episode']['number']}`
+          : `S${matchedEpisode['season']}E${
+              matchedEpisode['startingEpisode'] || matchedEpisode['episode']
+            } - S${episode['episode']['season']}E${episode['episode']['number']}`
+
+      // push the new episode to the array
+      episodes.push({
+        name: matchedEpisode['name'],
+        title: matchedEpisode['title'],
+        url: `https://trakt.tv/shows/${matchedEpisode['slug']}`,
+        subtext,
+        image:
+          `https://cdn.coryd.dev/tv/${matchedEpisode['name']
+            .replace(':', '')
+            .replace(/\s+/g, '-')
+            .toLowerCase()}.jpg` || 'https://cdn.coryd.dev/tv/missing-tv.jpg',
+        startingEpisode: matchedEpisode['episode'],
+        episode: episode['episode']['number'],
+        season: episode['episode']['season'],
+        type: 'tv',
+      })
+    } else {
+      // if an episode with the same show name doesn't exist, push it to the array
+      episodes.push({
+        name: episode['show']['title'],
+        title: episode['episode']['title'],
+        url: `https://trakt.tv/shows/${episode['show']['ids']['slug']}/seasons/${episode['episode']['season']}/episodes/${episode['episode']['number']}`,
+        subtext: `${episode['show']['title']} • S${episode['episode']['season']}E${episode['episode']['number']}`,
+        image:
+          `https://cdn.coryd.dev/tv/${episode['show']['title']
+            .replace(':', '')
+            .replace(/\s+/g, '-')
+            .toLowerCase()}.jpg` || 'https://cdn.coryd.dev/tv/missing-tv.jpg',
+        episode: episode['episode']['number'],
+        season: episode['episode']['season'],
+        slug: episode['show']['ids']['slug'],
+        type: 'tv',
+      })
     }
   })
+
+  // return a reverse sorted array of episodes to match the watch order
+  return episodes.reverse()
 }
