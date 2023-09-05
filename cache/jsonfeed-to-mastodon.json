@@ -6050,5 +6050,16 @@
       "https://social.lol/users/cory/statuses/111007721089970706"
     ],
     "lastTootTimestamp": 1693843400541
+  },
+  "https://letterboxd.com/cdme/film/hypnotic-2023/": {
+    "id": "https://letterboxd.com/cdme/film/hypnotic-2023/",
+    "title": "🎥: Hypnotic, 2023 - ★",
+    "url": "https://letterboxd.com/cdme/film/hypnotic-2023/",
+    "content_text": "🎥: Hypnotic, 2023 - ★ https://letterboxd.com/cdme/film/hypnotic-2023/",
+    "date_published": "2023-09-05T12:50:41-08:00",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111013587777979312"
+    ],
+    "lastTootTimestamp": 1693932919207
   }
 }
