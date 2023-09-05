@@ -30,7 +30,7 @@
     "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/line-clamp": "^0.4.4",
-    "@tailwindcss/typography": "^0.5.1",
+    "@tailwindcss/typography": "^0.5.10",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "autoprefixer": "^10.4.15",
