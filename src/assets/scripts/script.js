@@ -21,7 +21,9 @@
 
     const res = await fetch('/api/now-playing', {
       type: 'json',
-    }).catch()
+    }).catch(() => {
+      loading.style.display = 'none'
+    })
     const data = await res.json()
 
     try {
