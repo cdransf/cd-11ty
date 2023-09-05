@@ -42,7 +42,7 @@ module.exports = async function () {
       episodes.push({
         name: matchedEpisode['name'],
         title: matchedEpisode['title'],
-        url: `https://trakt.tv/shows/${matchedEpisode['slug']}`,
+        url: `https://trakt.tv/shows/${episode['show']['ids']['slug']}`,
         subtext,
         image:
           `https://cdn.coryd.dev/tv/${matchedEpisode['name']
@@ -69,7 +69,6 @@ module.exports = async function () {
             .toLowerCase()}.jpg` || 'https://cdn.coryd.dev/tv/missing-tv.jpg',
         episode: episode['episode']['number'],
         season: episode['episode']['season'],
-        slug: episode['show']['ids']['slug'],
         type: 'tv',
       })
     }
