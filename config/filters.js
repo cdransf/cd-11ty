@@ -25,17 +25,13 @@ module.exports = {
   },
   normalizeEntries: (entries) => {
     return entries.map((entry) => {
+      const dateKey = Object.keys(entry).find((key) => key.includes('date'))
+      const date = entry[dateKey]
       let excerpt = ''
-      let date = ''
 
       // set the entry excerpt
       if (entry.data?.post_excerpt) excerpt = entry.data.post_excerpt
       if (entry.description) excerpt = entry.description
-
-      // set the entry date
-      if (entry.date) date = entry.date
-      if (entry.dateAdded) date = entry.dateAdded
-      if (entry.date_published) date = entry.date_published
 
       // if there's a valid entry return a normalized object
       if (entry) {
