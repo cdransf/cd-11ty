@@ -1,6 +1,8 @@
 const marked = require('marked')
 const sanitizeHTML = require('sanitize-html')
+
 const utmPattern = /[?&](utm_[^&=]+=[^&#]*)/gi
+const BASE_URL = 'https://coryd.dev'
 
 module.exports = {
   trim: (string, limit) => {
@@ -23,30 +25,9 @@ module.exports = {
     if (!string) return
     return string.replace(utmPattern, '')
   },
-  normalizeEntries: (entries) => {
-    return entries.map((entry) => {
-      const dateKey = Object.keys(entry).find((key) => key.includes('date'))
-      const date = entry[dateKey]
-      let excerpt = ''
-
-      // set the entry excerpt
-      if (entry.data?.post_excerpt) excerpt = entry.data.post_excerpt
-      if (entry.description) excerpt = entry.description
-
-      // if there's a valid entry return a normalized object
-      if (entry) {
-        return {
-          title: entry.data?.title || entry.title,
-          url: entry.url.includes('http') ? entry.url : `https://coryd.dev${entry.url}`,
-          date,
-          excerpt,
-        }
-      }
-    })
-  },
   getPostImage: (image) => {
     if (image && image !== '') return image
-    return 'https://coryd.dev/assets/img/social-card.jpg'
+    return `${BASE_URL}/assets/img/social-card.jpg`
   },
   getPopularPosts: (posts, analytics) => {
     return posts
@@ -74,7 +55,7 @@ module.exports = {
 
     const filtered =
       webmentions
-        .filter((entry) => entry['wm-target'].replace(utmPattern, '') === `https://coryd.dev${url}`)
+        .filter((entry) => entry['wm-target'].replace(utmPattern, '') === `${BASE_URL}${url}`)
         .filter((entry) => allowedTypes.includes(entry['wm-property'])) || []
 
     filtered.forEach((m) => {

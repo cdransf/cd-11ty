@@ -4,9 +4,6 @@ module.exports = {
   readableDate: (date) => {
     return DateTime.fromISO(date).toFormat('LLLL d, yyyy')
   },
-  dateForFeed: (date) => {
-    return new Date(date).toISOString()
-  },
   toDateTime: (date) => {
     const formatted = DateTime.fromISO(date)
 
@@ -40,8 +37,8 @@ module.exports = {
 
     return [month, day, year].join('.')
   },
-  rssLastUpdatedDate: (collection) => {
-    if (!collection || !collection.length) return ''
-    return collection[0]['publishedAt']
+  stringToDate: (string) => {
+    if (!string) return
+    return new Date(string)
   },
 }

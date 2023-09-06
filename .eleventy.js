@@ -4,6 +4,7 @@ const pluginUnfurl = require('eleventy-plugin-unfurl')
 const pluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier')
 const schema = require('@quasibit/eleventy-plugin-schema')
 const { eleventyImagePlugin } = require('@11ty/eleventy-img')
+const pluginRss = require('@11ty/eleventy-plugin-rss')
 const Image = require('@11ty/eleventy-img')
 const embedYouTube = require('eleventy-plugin-youtube-embed')
 const markdownIt = require('markdown-it')
@@ -12,6 +13,7 @@ const markdownItFootnote = require('markdown-it-footnote')
 const filters = require('./config/filters.js')
 const dateFilters = require('./config/dateFilters.js')
 const mediaFilters = require('./config/mediaFilters.js')
+const feedFilters = require('./config/feedFilters.js')
 const CleanCSS = require('clean-css')
 const now = String(Date.now())
 const { execSync } = require('child_process')
@@ -108,8 +110,17 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addLiquidFilter(filterName, mediaFilters[filterName])
   })
 
+  // feed filters
+  Object.keys(feedFilters).forEach((filterName) => {
+    eleventyConfig.addLiquidFilter(filterName, feedFilters[filterName])
+  })
+
   // css filters
   eleventyConfig.addFilter('cssmin', (code) => new CleanCSS({}).minify(code).styles)
+
+  // rss filters
+  eleventyConfig.addLiquidFilter('dateToRfc822', pluginRss.dateToRfc822)
+  eleventyConfig.addLiquidFilter('absoluteUrl', pluginRss.absoluteUrl)
 
   // image shortcode
   eleventyConfig.addShortcode('image', async function (src, alt, css, sizes, loading) {

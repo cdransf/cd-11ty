@@ -1,4 +1,4 @@
-{% assign entries = data | normalizeEntries %}
+{%- assign entries = data | normalizeEntries -%}
 {
   "version": "https://jsonfeed.org/version/1",
   "title": "{{ title }}",
@@ -11,7 +11,7 @@
     "title": "{{ entry.title | escape }}",
     "url": "{{ entry.url }}",
     "content_text": "{{ entry.title }} {{ entry.url }}",
-    "date_published": "{{ entry.date | date: "%Y-%m-%dT%H:%M:%S-08:00" }}"
+    "date_published": "{{ entry.date | stringToDate | dateToRfc822 }}"
     }{% if not forloop.last %},{% endif %}
   {%- endfor %}
   ]

@@ -3,10 +3,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   {% assign entries = data | normalizeEntries %}
   <title>{{ title }}</title>
-  <link href="{{ site.url }}{{ permalink }}" rel="self" />
+  <link href="{{ permalink | absoluteUrl: site.url }}" rel="self" />
   <link href="{{ site.url }}" />
   <link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
-  <updated>{{ updated | date: "%Y-%m-%dT%H:%M:%S-08:00" }}</updated>
+  <updated>{{ updated | stringToDate | dateToRfc822 }}</updated>
   <id>{{ site.url }}</id>
   <author>
     <name>{{ site.name }}</name>
@@ -20,6 +20,7 @@
       <updated>{{ entry.date | date: "%m.%d.%Y" }}</updated>
       <id>{{ entry.url | stripUtm | encodeAmp }}</id>
       <content type="html">
+        {{ entry.excerpt | escape }}
       </content>
     </entry>
   {%- endfor %}
