@@ -2,7 +2,7 @@
 layout: null
 permalink: /feeds/posts
 ---
-{% assign posts = collections.posts | reverse %}
+{%- assign posts = collections.posts | reverse -%}
 {% render "partials/feeds/content.liquid"
   permalink:'/feeds/posts'
   title:'All posts • Cory Dransfeldt'

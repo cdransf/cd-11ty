@@ -1,0 +1,18 @@
+{% assign entries = data | normalizeEntries %}
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "{{ title }}",
+  "icon": "https://coryd.dev/static/images/avatar.webp",
+  "home_page_url": "{{ site.url }}",
+  "feed_url": "{{ site.url }}{{ permalink }}",
+  "items": [{% for entry in entries limit: 20 -%}
+    {
+    "id": "{{ entry.id }}",
+    "title": "{{ entry.title | escape }}",
+    "url": "{{ entry.url }}",
+    "content_text": "{{ entry.title }} {{ entry.url }}",
+    "date_published": "{{ entry.date | date: "%Y-%m-%dT%H:%M:%S-08:00" }}"
+    }{% if not forloop.last %},{% endif %}
+  {%- endfor %}
+  ]
+}
