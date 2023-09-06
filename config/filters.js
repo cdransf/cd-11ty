@@ -14,12 +14,39 @@ module.exports = {
   },
   dashLower: (string) => string.replace(/\s+/g, '-').toLowerCase(),
   encodeAmp: (string) => {
+    if (!string) return
     const pattern = /&(?!(?:[a-zA-Z]+|#[0-9]+|#x[0-9a-fA-F]+);)/g
     const replacement = '&amp;'
     return string.replace(pattern, replacement)
   },
   stripUtm: (string) => {
+    if (!string) return
     return string.replace(utmPattern, '')
+  },
+  normalizeEntries: (entries) => {
+    return entries.map((entry) => {
+      let excerpt = ''
+      let date = ''
+
+      // set the entry excerpt
+      if (entry.data?.post_excerpt) excerpt = entry.data.post_excerpt
+      if (entry.description) excerpt = entry.description
+
+      // set the entry date
+      if (entry.date) date = entry.date
+      if (entry.dateAdded) date = entry.dateAdded
+      if (entry.date_published) date = entry.date_published
+
+      // if there's a valid entry return a normalized object
+      if (entry) {
+        return {
+          title: entry.data?.title || entry.title,
+          url: entry.url.includes('http') ? entry.url : `https://coryd.dev${entry.url}`,
+          date,
+          excerpt,
+        }
+      }
+    })
   },
   getPostImage: (image) => {
     if (image && image !== '') return image

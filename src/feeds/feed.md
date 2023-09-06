@@ -1,0 +1,13 @@
+---
+layout: null
+permalink: /feeds/posts
+---
+{% assign posts = collections.posts | reverse %}
+{% render "partials/feeds/content.liquid"
+  permalink:'/feeds/posts'
+  title:'All posts • Cory Dransfeldt'
+  data:posts
+  updated:posts[0].date
+  site:site
+  eleventy:eleventy
+%}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/assets/feeds/template.xsl" type="text/xsl" media="screen"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  {% assign entries = data | normalizeEntries %}
+  <title>{{ title }}</title>
+  <link href="{{ site.url }}{{ permalink }}" rel="self" />
+  <link href="{{ site.url }}" />
+  <link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
+  <updated>{{ updated | date: "%Y-%m-%dT%H:%M:%S-08:00" }}</updated>
+  <id>{{ site.url }}</id>
+  <author>
+    <name>{{ site.name }}</name>
+    <email>{{ site.email }}</email>
+  </author>
+  <generator uri="https://11ty.dev" version="{{ eleventy.version }}">{{ eleventy.generator }}</generator>
+  {% for entry in entries limit: 20 -%}
+    <entry>
+      <title>{{ entry.title | escape }}</title>
+      <link href="{{ entry.url | stripUtm | encodeAmp }}" />
+      <updated>{{ entry.date | date: "%m.%d.%Y" }}</updated>
+      <id>{{ entry.url | stripUtm | encodeAmp }}</id>
+      <content type="html">
+      </content>
+    </entry>
+  {%- endfor %}
+</feed>

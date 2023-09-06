@@ -89,6 +89,7 @@ module.exports = function (eleventyConfig) {
 
   // markdown filter
   eleventyConfig.addLiquidFilter('markdown', (content) => {
+    if (!content) return
     return md.render(content)
   })
 
