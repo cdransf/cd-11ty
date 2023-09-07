@@ -4,7 +4,8 @@
     {% for mention in mentions['in-reply-to'] %}
       <div class="border-bottom flex flex-row items-center border-gray-100 pb-4 w-full">
         <a class="text-gray-700 dark:text-gray-200 group flex flex-row space-between items-center" href={{mention.url}}>
-          {% image mention.author.photo, mention.author.name, 'bg-gray-900 dark:bg-white h-14 w-14 rounded-full border-4 border-white dark:border-gray-900 transition-all ease-in-out duration-300 group-hover:border-pink-500 dark:group-hover:border-pink-500', '56px' %}
+          {% assign photo = mention.author.photo | getUserImage %}
+          {% image photo, mention.author.name, 'bg-gray-900 dark:bg-white h-14 w-14 rounded-full border-4 border-white dark:border-gray-900 transition-all ease-in-out duration-300 group-hover:border-pink-500 dark:group-hover:border-pink-500', '56px' %}
           <div class="ml-3">
             <p class="text-sm group-hover:text-pink-500 dark:group-hover:text-pink-500">{{ mention.content.text }}</p>
             <p class="mt-1 text-xs group-hover:text-pink-500 dark:group-hover:text-pink-500">{{ mention.published | isoDateOnly }}</p>

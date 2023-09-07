@@ -29,6 +29,10 @@ module.exports = {
     if (image && image !== '') return image
     return `${BASE_URL}/assets/img/social-card.jpg`
   },
+  getUserImage: (image) => {
+    if (image && image !== '') return image
+    return `http://localhost:8080/assets/img/media/missing-user.jpg`
+  },
   getPopularPosts: (posts, analytics) => {
     return posts
       .filter((post) => {
@@ -46,6 +50,7 @@ module.exports = {
       'like-of': [],
       'repost-of': [],
       'in-reply-to': [],
+      'mention-of': [],
     }
 
     const hasRequiredFields = (entry) => {
@@ -55,7 +60,7 @@ module.exports = {
 
     const filtered =
       webmentions
-        .filter((entry) => entry['wm-target'].replace(utmPattern, '') === `${BASE_URL}${url}`)
+        .filter((entry) => entry['wm-target'] === `${BASE_URL}${url}`)
         .filter((entry) => allowedTypes.includes(entry['wm-property'])) || []
 
     filtered.forEach((m) => {
@@ -74,6 +79,7 @@ module.exports = {
       }
     })
 
+    // data['in-reply-to'] = [...data['in-reply-to'], ...data['mention-of']]
     data['in-reply-to'].sort((a, b) =>
       a.published > b.published ? 1 : b.published > a.published ? -1 : 0
     )
