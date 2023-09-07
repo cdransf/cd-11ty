@@ -35,5 +35,5 @@ meta:
   }
 </style>
 <div id="search" class="search"></div>
-<script src="https://coryd.dev/_pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search', showImages: false, processTerm: (term) => {clicky.log('/search', term, 'pageview');} });"></script>
+<script src="https://coryd.dev/_pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search', showImages: false, processTerm: (term) => {try{clicky.log('/search',term,'pageview');}catch(e){}}});"></script>
 {% render "partials/popular-posts.liquid", posts: collections.posts, analytics: analytics %}
