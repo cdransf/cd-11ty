@@ -6091,5 +6091,16 @@
       "https://social.lol/users/cory/statuses/111020959892237619"
     ],
     "lastTootTimestamp": 1694045408592
+  },
+  "https://coryd.dev/posts/2023/on-imposter-syndrome/": {
+    "id": "",
+    "title": "📝: On imposter syndrome",
+    "url": "https://coryd.dev/posts/2023/on-imposter-syndrome/",
+    "content_text": "📝: On imposter syndrome https://coryd.dev/posts/2023/on-imposter-syndrome/",
+    "date_published": "Wed, 06 Sep 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111021423046741025"
+    ],
+    "lastTootTimestamp": 1694052475758
   }
 }
