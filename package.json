@@ -55,6 +55,7 @@
     "markdown-it-footnote": "^3.0.3",
     "markdownlint-cli": "^0.36.0",
     "marked": "^8.0.1",
+    "netlify-plugin-webmentions": "^1.1.1",
     "pagefind": "^0.12.0",
     "postcss": "^8.4.29",
     "prettier": "^3.0.3",
