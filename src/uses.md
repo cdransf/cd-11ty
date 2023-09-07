@@ -85,7 +85,7 @@ Software and services that I use for work and my own enjoyment.
 - [Trakt](https://trakt.tv)
 - [Letterboxd](https://letterboxd.com)
 - [Goodreads](https://goodreads.com)
-- [Reader](https://readwise.io/read)
+- [Matter](https://getmatter.com)
 - [Slack](http://slack.com)
 - [Discord](http://discord.com)
 

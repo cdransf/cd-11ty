@@ -7,13 +7,6 @@ package = "@netlify/plugin-lighthouse"
     url = "https://coryd.dev"
     output_path = "reports/lighthouse.html"
 
-[[plugins]]
-  package = "netlify-plugin-webmentions"
-	[plugins.inputs]
-    baseUrl = "https://coryd.dev"
-    feedPath = "/feeds/posts"
-    limit = 1
-
 ###
 # URLs
 ###
