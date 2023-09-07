@@ -4,5 +4,6 @@
     {% render "partials/webmentions/interaction.liquid", mentions: mentions, type: 'repost-of' %}
     {% render "partials/webmentions/interaction.liquid", mentions: mentions, type: 'like-of' %}
     {% render "partials/webmentions/comments.liquid", mentions: mentions %}
+    {% render "partials/webmentions/links.liquid", mentions: mentions %}
   </div>
 {% endif %}

@@ -1,6 +1,6 @@
 {% if mentions['in-reply-to'].size > 0 %}
   <h2 class="text-lg md:text-xl font-black leading-tight dark:text-gray-200">Comments</h2>
-  <div class="mt-4 flex flex-col items-center not-prose">
+  <div class="mt-4 mb-4 flex flex-col items-center not-prose">
     {% for mention in mentions['in-reply-to'] %}
       <div class="border-bottom flex flex-row items-center border-gray-100 pb-4 w-full">
         <a class="text-gray-700 dark:text-gray-200 group flex flex-row space-between items-center" href={{mention.url}}>

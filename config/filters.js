@@ -46,11 +46,18 @@ module.exports = {
       'like-of': [],
       'repost-of': [],
       'in-reply-to': [],
+      'mention-of': [],
+      'link-to': [],
     }
 
-    const hasRequiredFields = (entry) => {
+    const hasRequiredReplyFields = (entry) => {
       const { author, published, content } = entry
-      return author.name && published && content
+      return author.name && author.photo && published && content
+    }
+
+    const hasRequiredMentionFields = (entry) => {
+      const { name, url } = entry
+      return name && url
     }
 
     const filtered =
@@ -61,19 +68,22 @@ module.exports = {
     filtered.forEach((m) => {
       if (data[m['wm-property']]) {
         const isReply = m['wm-property'] === 'in-reply-to'
-        const isValidReply = isReply && hasRequiredFields(m)
-        if (isReply) {
+        const isMention = m['wm-property'] === 'mention-of'
+        const isValidReply = (isReply || isMention) && hasRequiredReplyFields(m)
+        if (isReply || isMention) {
           if (isValidReply) {
             m.sanitized = sanitizeHTML(m.content.html)
             data[m['wm-property']].unshift(m)
           }
+
+          if (isMention && hasRequiredMentionFields(m)) data['link-to'].push(m)
           return
         }
-
         data[m['wm-property']].unshift(m)
       }
     })
 
+    data['in-reply-to'] = [...data['in-reply-to'], ...data['mention-of']]
     data['in-reply-to'].sort((a, b) =>
       a.published > b.published ? 1 : b.published > a.published ? -1 : 0
     )
