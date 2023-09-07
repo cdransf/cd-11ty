@@ -6124,5 +6124,16 @@
       "https://social.lol/users/cory/statuses/111024707859241046"
     ],
     "lastTootTimestamp": 1694102598027
+  },
+  "https://blog.kagi.com/small-web": {
+    "id": "",
+    "title": "🔗: Kagi Small Web",
+    "url": "https://blog.kagi.com/small-web",
+    "content_text": "🔗: Kagi Small Web https://blog.kagi.com/small-web",
+    "date_published": "Thu, 07 Sep 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111025179776119237"
+    ],
+    "lastTootTimestamp": 1694109798910
   }
 }
