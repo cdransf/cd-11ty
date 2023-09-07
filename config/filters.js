@@ -55,7 +55,7 @@ module.exports = {
 
     const filtered =
       webmentions
-        .filter((entry) => entry['wm-target'].replace(utmPattern, '') === `${BASE_URL}${url}`)
+        .filter((entry) => entry['wm-target'] === `${BASE_URL}${url}`)
         .filter((entry) => allowedTypes.includes(entry['wm-property'])) || []
 
     filtered.forEach((m) => {
