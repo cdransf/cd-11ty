@@ -14,6 +14,9 @@ module.exports = {
   mdToHtml: (content) => {
     return marked.parse(content)
   },
+  btoa: (string) => {
+    return btoa(string)
+  },
   dashLower: (string) => string.replace(/\s+/g, '-').toLowerCase(),
   encodeAmp: (string) => {
     if (!string) return

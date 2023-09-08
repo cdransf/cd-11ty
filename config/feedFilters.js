@@ -17,6 +17,7 @@ module.exports = {
         return {
           title: entry.data?.title || entry.title,
           url: entry.url.includes('http') ? entry.url : new URL(entry.url, BASE_URL).toString(),
+          content: entry.description,
           date,
           excerpt,
         }

@@ -1,0 +1,12 @@
+---
+layout: null
+permalink: /feeds/share-follow.json
+---
+{% render "partials/feeds/json.liquid"
+  permalink:'/feeds/follow'
+  title:'Follow • Cory Dransfeldt'
+  data:follow.posts
+  updated:follow.posts[0].date_published
+  site:site
+  share:true
+%}
