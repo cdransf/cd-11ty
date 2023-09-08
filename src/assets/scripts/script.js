@@ -7,6 +7,7 @@
     const populateNowPlaying = (data) => {
       loading.style.display = 'none'
       emoji.innerText = data.emoji
+      content.href = data.url
       content.innerText = `${data.title} by ${data.artist}`
       emoji.classList.remove('hidden')
       content.classList.remove('hidden')

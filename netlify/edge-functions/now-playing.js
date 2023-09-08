@@ -58,6 +58,7 @@ export default async () => {
   return Response.json({
     artist: track['artist']['#text'],
     title: track['name'],
+    url: track['url'],
     genre,
     emoji: emojiMap(genre, track['artist']['#text']),
   })
