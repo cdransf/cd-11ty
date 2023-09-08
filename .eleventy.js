@@ -86,17 +86,20 @@ module.exports = function (eleventyConfig) {
       if (item.data.collections.posts) {
         item.data.collections.posts.forEach((post) => {
           const url = post.url.includes('http') ? post.url : `https://coryd.dev${post.url}`
-          const tagString = post.data.tags
-            .map((tag) => {
-              if (
-                typeof tagAliases.tags.find((t) => t.aliases.includes(tag.toLowerCase()))?.[
-                  'tag'
-                ] !== 'undefined'
-              )
-                return `#${
-                  tagAliases.tags.find((t) => t.aliases.includes(tag.toLowerCase()))?.['tag']
-                }`
-            })
+          const tagString = [
+            ...new Set(
+              post.data.tags.map((tag) => {
+                if (
+                  typeof tagAliases.tags.find((t) => t.aliases.includes(tag.toLowerCase()))?.[
+                    'tag'
+                  ] !== 'undefined'
+                )
+                  return `#${
+                    tagAliases.tags.find((t) => t.aliases.includes(tag.toLowerCase()))?.['tag']
+                  }`
+              })
+            ),
+          ]
             .join(' ')
             .trim()
           if (tagString) tags[url] = tagString
@@ -104,17 +107,20 @@ module.exports = function (eleventyConfig) {
       }
       if (item.data.links) {
         item.data.links.forEach((link) => {
-          const tagString = link.tags
-            .map((tag) => {
-              if (
-                typeof tagAliases.tags.find((t) => t.aliases.includes(tag.toLowerCase()))?.[
-                  'tag'
-                ] !== 'undefined'
-              )
-                return `#${
-                  tagAliases.tags.find((t) => t.aliases.includes(tag.toLowerCase()))?.['tag']
-                }`
-            })
+          const tagString = [
+            ...new Set(
+              link.tags.map((tag) => {
+                if (
+                  typeof tagAliases.tags.find((t) => t.aliases.includes(tag.toLowerCase()))?.[
+                    'tag'
+                  ] !== 'undefined'
+                )
+                  return `#${
+                    tagAliases.tags.find((t) => t.aliases.includes(tag.toLowerCase()))?.['tag']
+                  }`
+              })
+            ),
+          ]
             .join(' ')
             .trim()
           if (tagString) tags[link.url] = tagString
