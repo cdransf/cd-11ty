@@ -5932,7 +5932,7 @@
   },
   "https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/": {
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9ub3ctcGxheWluZy1lbGV2ZW50eS1uZXRsaWZ5LWVkZ2UtZnVuY3Rpb25zLWVtb2ppLw==",
-    "title": "📝: Displaying now playing data with matching emoji using Netlify edge functions and Eleventy #Eleventy #WebDev",
+    "title": "📝: Displaying now playing data with matching emoji using Netlify edge functions and Eleventy #Eleventy #JavaScript",
     "url": "https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/",
     "content_text": "📝: Displaying now playing data with matching emoji using Netlify edge functions and Eleventy https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/",
     "date_published": "Fri, 25 Aug 2023 00:00:00 +0000",
@@ -6020,7 +6020,7 @@
   },
   "https://coryd.dev/posts/2023/drying-up-now-page-templates-eleventy/": {
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9kcnlpbmctdXAtbm93LXBhZ2UtdGVtcGxhdGVzLWVsZXZlbnR5Lw==",
-    "title": "📝: Drying up now page templates and normalizing data in Eleventy #Eleventy #WebDev",
+    "title": "📝: Drying up now page templates and normalizing data in Eleventy #Eleventy #WebDev #JavaScript",
     "url": "https://coryd.dev/posts/2023/drying-up-now-page-templates-eleventy/",
     "content_text": "📝: Drying up now page templates and normalizing data in Eleventy https://coryd.dev/posts/2023/drying-up-now-page-templates-eleventy/",
     "date_published": "Sun, 03 Sep 2023 00:00:00 +0000",
@@ -6083,7 +6083,7 @@
   },
   "https://coryd.dev/posts/2023/now-page-grouping-episodes-of-same-show/": {
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9ub3ctcGFnZS1ncm91cGluZy1lcGlzb2Rlcy1vZi1zYW1lLXNob3cv",
-    "title": "📝: Now page: grouping episodes of the same tv show #WebDev #Eleventy",
+    "title": "📝: Now page: grouping episodes of the same tv show #JavaScript #Eleventy #WebDev",
     "url": "https://coryd.dev/posts/2023/now-page-grouping-episodes-of-same-show/",
     "content_text": "📝: Now page: grouping episodes of the same tv show https://coryd.dev/posts/2023/now-page-grouping-episodes-of-same-show/",
     "date_published": "Wed, 06 Sep 2023 00:00:00 +0000",
@@ -6164,6 +6164,9 @@
     "url": "https://ez.substack.com/p/the-rot-economy",
     "content_text": "🔗: The Rot Economy https://ez.substack.com/p/the-rot-economy",
     "date_published": "Fri, 08 Sep 2023 00:00:00 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111031784630923478"
+    ],
+    "lastTootTimestamp": 1694210580994
   }
 }
