@@ -6,19 +6,11 @@
     },
     {
       "tag": "WebDev",
-      "aliases": [
-        "development",
-        "javascript",
-        "react",
-        "nextjs",
-        "gatsby",
-        "vue",
-        "svelte",
-        "angular",
-        "webdev",
-        "web-development",
-        "web-development"
-      ]
+      "aliases": ["development", "webdev", "web-development", "web-development"]
+    },
+    {
+      "tag": "JavaScript",
+      "aliases": ["javascript", "js", "react", "nextjs", "gatsby", "vue", "svelte", "angular"]
     },
     {
       "tag": "Tech",
