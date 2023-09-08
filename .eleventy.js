@@ -17,6 +17,7 @@ const feedFilters = require('./config/feedFilters.js')
 const CleanCSS = require('clean-css')
 const now = String(Date.now())
 const { execSync } = require('child_process')
+const tagAliases = require('./src/_data/json/tag-aliases.json')
 
 // load .env
 require('dotenv-flow').config()
@@ -77,6 +78,50 @@ module.exports = function (eleventyConfig) {
         .forEach((tag) => tagsSet.add(tag))
     })
     return Array.from(tagsSet).sort()
+  })
+
+  eleventyConfig.addCollection('tagMap', (collection) => {
+    const tags = {}
+    collection.getAll().forEach((item) => {
+      if (item.data.collections.posts) {
+        item.data.collections.posts.forEach((post) => {
+          const url = post.url.includes('http') ? post.url : `https://coryd.dev${post.url}`
+          const tagString = post.data.tags
+            .map((tag) => {
+              if (
+                typeof tagAliases.tags.find((t) => t.aliases.includes(tag.toLowerCase()))?.[
+                  'tag'
+                ] !== 'undefined'
+              )
+                return `#${
+                  tagAliases.tags.find((t) => t.aliases.includes(tag.toLowerCase()))?.['tag']
+                }`
+            })
+            .join(' ')
+            .trim()
+          if (tagString) tags[url] = tagString
+        })
+      }
+      if (item.data.links) {
+        item.data.links.forEach((link) => {
+          const tagString = link.tags
+            .map((tag) => {
+              if (
+                typeof tagAliases.tags.find((t) => t.aliases.includes(tag.toLowerCase()))?.[
+                  'tag'
+                ] !== 'undefined'
+              )
+                return `#${
+                  tagAliases.tags.find((t) => t.aliases.includes(tag.toLowerCase()))?.['tag']
+                }`
+            })
+            .join(' ')
+            .trim()
+          if (tagString) tags[link.url] = tagString
+        })
+      }
+    })
+    return tags
   })
 
   md.use(markdownItAnchor, {

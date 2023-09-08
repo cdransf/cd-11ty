@@ -1,0 +1,32 @@
+{
+  "tags": [
+    {
+      "tag": "Eleventy",
+      "aliases": ["11ty", "eleventy"]
+    },
+    {
+      "tag": "WebDev",
+      "aliases": [
+        "development",
+        "javascript",
+        "react",
+        "nextjs",
+        "gatsby",
+        "vue",
+        "svelte",
+        "angular",
+        "webdev",
+        "web-development",
+        "web-development"
+      ]
+    },
+    {
+      "tag": "Tech",
+      "aliases": ["technology", "tech"]
+    },
+    {
+      "tag": "Music",
+      "aliases": ["music"]
+    }
+  ]
+}

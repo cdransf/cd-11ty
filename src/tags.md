@@ -17,7 +17,6 @@ meta:
   image:
     src: https://coryd.dev/assets/img/avatar.webp
 ---
-
 {% for tag in collections.tagList %}
 <span>
   <a href="/tags/{{ tag }}" class="!no-underline">

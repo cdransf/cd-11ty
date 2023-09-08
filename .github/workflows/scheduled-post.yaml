@@ -12,7 +12,7 @@ jobs:
       - name: Feed to Mastodon
         uses: nhoizey/github-action-feed-to-mastodon@v2
         with:
-          feedUrl: "https://coryd.dev/feeds/follow.json"
+          feedUrl: "https://coryd.dev/feeds/share-follow.json"
           mastodonInstance: "https://social.lol"
           mastodonToken: ${{ secrets.MASTODON_TOKEN }}
           globalDelayToots: 0

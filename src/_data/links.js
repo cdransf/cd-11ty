@@ -13,10 +13,6 @@ module.exports = async function () {
   const articles = feed.feed
   return articles.reverse().map((article) => {
     const tags = article['content']['tags'].map((tag) => tag['name'])
-    const shareTags = tags
-      .map((tag) => `#${tag}`)
-      .join(' ')
-      .trim()
     return {
       url: article['content']['url'],
       title: article['content']['title'],
@@ -24,9 +20,8 @@ module.exports = async function () {
         ? new Date(article['content']['library']['modified_date'])
         : new Date(article['content']['publication_date']),
       description: article['content']['excerpt'],
-      notes: article['content']['my_notes'],
+      notes: article['content']['my_notes'] || '',
       tags,
-      shareTags,
       id: btoa(article['id']),
     }
   })

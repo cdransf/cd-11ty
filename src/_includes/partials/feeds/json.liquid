@@ -8,7 +8,7 @@
   "items": [{% for entry in entries limit: 20 -%}
     {
     "id": "{{ entry.url | btoa }}",
-    "title": "{{ entry.title | escape }}{% if share %}{{ entry.shareTags }}{%endif%}",
+    "title": "{{ entry.title | escape }}{% if tagMap %} {{ entry.url | tagLookup: tagMap }}{% endif %}",
     "url": "{{ entry.url }}",
     "content_text": "{{ entry.title }} {{ entry.url }}",
     "date_published": "{{ entry.date | stringToDate | dateToRfc822 }}"
