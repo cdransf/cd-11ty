@@ -6,7 +6,15 @@
     },
     {
       "tag": "WebDev",
-      "aliases": ["development", "webdev", "web-development", "web-development"]
+      "aliases": [
+        "development",
+        "webdev",
+        "web-development",
+        "web-development",
+        "jekyll",
+        "netlify",
+        "vercel"
+      ]
     },
     {
       "tag": "JavaScript",
@@ -18,7 +26,11 @@
     },
     {
       "tag": "Music",
-      "aliases": ["music"]
+      "aliases": ["music", "spotify", "last.fm", "lastfm"]
+    },
+    {
+      "tag": "Email",
+      "aliases": ["email", "fastmail", "gmail"]
     }
   ]
 }
