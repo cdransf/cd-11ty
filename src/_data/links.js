@@ -10,8 +10,7 @@ module.exports = async function () {
     fetchOptions: { headers },
   })
   const feed = await res
-  const articles = feed.feed
-  return articles.reverse().map((article) => {
+  return feed.feed.map((article) => {
     const tags = article['content']['tags'].map((tag) => tag['name'])
     return {
       url: article['content']['url'],
