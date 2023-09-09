@@ -86,7 +86,7 @@ module.exports = function (eleventyConfig) {
       if (item.data.collections.posts) {
         item.data.collections.posts.forEach((post) => {
           const url = post.url.includes('http') ? post.url : `https://coryd.dev${post.url}`
-          const tagString = [...new Set(post.data.tags.map((tag) => tagAliases[tag]))]
+          const tagString = [...new Set(post.data.tags.map((tag) => tagAliases[tag.toLowerCase()]))]
             .join(' ')
             .trim()
           if (tagString) tags[url] = tagString
@@ -94,7 +94,9 @@ module.exports = function (eleventyConfig) {
       }
       if (item.data.links) {
         item.data.links.forEach((link) => {
-          const tagString = [...new Set(link.tags.map((tag) => tagAliases[tag]))].join(' ').trim()
+          const tagString = [...new Set(link.tags.map((tag) => tagAliases[tag.toLowerCase()]))]
+            .join(' ')
+            .trim()
           if (tagString) tags[link.url] = tagString
         })
       }
