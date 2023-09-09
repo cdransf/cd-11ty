@@ -4,7 +4,7 @@
     <div class="ml-1">Links</div>
   </h2>
   <ul class="list-inside list-disc pl-5 md:pl-10">
-    {% for link in links limit: 5 %}
+    {% for link in links limit: 5 | reverse %}
       <li class="mt-1.5 mb-2">
         <a href="{{link.url}}" title="{{link.title | escape}}">
           {{ link.title }}
