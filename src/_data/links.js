@@ -12,7 +12,7 @@ module.exports = async function () {
   const feed = await res
   const articles = feed.feed
   return articles.reverse().map((article) => {
-    const tags = article['content']['tags'].map((tag) => tag['name'])
+    const tags = article['content']['tags'].reverse().map((tag) => tag['name'])
     return {
       url: article['content']['url'],
       title: article['content']['title'],
