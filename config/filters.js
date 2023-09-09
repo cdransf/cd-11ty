@@ -42,9 +42,7 @@ module.exports = {
         return visitors(b) - visitors(a)
       })
   },
-  tagLookup: (url, tagMap) => {
-    return tagMap[url]
-  },
+  tagLookup: (url, tagMap) => tagMap[url],
   webmentionsByUrl: (webmentions, url) => {
     const allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of']
 

@@ -1,36 +1,17 @@
 {
-  "tags": [
-    {
-      "tag": "Eleventy",
-      "aliases": ["11ty", "eleventy"]
-    },
-    {
-      "tag": "WebDev",
-      "aliases": [
-        "development",
-        "webdev",
-        "web-development",
-        "web-development",
-        "jekyll",
-        "netlify",
-        "vercel"
-      ]
-    },
-    {
-      "tag": "JavaScript",
-      "aliases": ["javascript", "js", "react", "nextjs", "gatsby", "vue", "svelte", "angular"]
-    },
-    {
-      "tag": "Tech",
-      "aliases": ["technology", "tech"]
-    },
-    {
-      "tag": "Music",
-      "aliases": ["music", "spotify", "last.fm", "lastfm"]
-    },
-    {
-      "tag": "Email",
-      "aliases": ["email", "fastmail", "gmail"]
-    }
-  ]
+  "11ty": "#Eleventy",
+  "eleventy": "#Eleventy",
+  "development": "#WebDev",
+  "javascript": "#JavaScript",
+  "react": "#JavaScript",
+  "tech": "#Tech",
+  "social media": "#Tech",
+  "technology": "#Tech",
+  "music": "#Music",
+  "spotify": "#Music",
+  "last.fm": "#Music",
+  "lastfm": "#Music",
+  "email": "#Email",
+  "fastmail": "#Email",
+  "gmail": "#Email"
 }
