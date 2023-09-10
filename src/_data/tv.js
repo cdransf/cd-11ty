@@ -51,7 +51,7 @@ module.exports = async function () {
           `https://cdn.coryd.dev/tv/${matchedEpisode['name']
             .replace(':', '')
             .replace(/\s+/g, '-')
-            .toLowerCase()}.jpg?crop=450,662&crop_gravity=center&quality=100` ||
+            .toLowerCase()}.jpg?width=450&height=662&quality=100` ||
           'https://cdn.coryd.dev/tv/missing-tv.jpg',
         startingEpisode: matchedEpisode['episode'],
         startingSeason: matchedEpisode['season'],
@@ -70,7 +70,8 @@ module.exports = async function () {
           `https://cdn.coryd.dev/tv/${episode['show']['title']
             .replace(':', '')
             .replace(/\s+/g, '-')
-            .toLowerCase()}.jpg` || 'https://cdn.coryd.dev/tv/missing-tv.jpg',
+            .toLowerCase()}.jpg?width=450&height=662&quality=100` ||
+          'https://cdn.coryd.dev/tv/missing-tv.jpg',
         episode: episodeNumber,
         season: seasonNumber,
         type: 'tv',

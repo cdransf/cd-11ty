@@ -6256,5 +6256,24 @@
       "https://social.lol/users/cory/statuses/111038862870621908"
     ],
     "lastTootTimestamp": 1694318586335
+  },
+  "https://letterboxd.com/cdme/film/the-wolf-of-wall-street/": {
+    "id": "aHR0cHM6Ly9sZXR0ZXJib3hkLmNvbS9jZG1lL2ZpbG0vdGhlLXdvbGYtb2Ytd2FsbC1zdHJlZXQv",
+    "title": "🎥: The Wolf of Wall Street, 2013 - ★★★½",
+    "url": "https://letterboxd.com/cdme/film/the-wolf-of-wall-street/",
+    "content_text": "🎥: The Wolf of Wall Street, 2013 - ★★★½  https://letterboxd.com/cdme/film/the-wolf-of-wall-street/",
+    "date_published": "Sun, 10 Sep 2023 18:48:02 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111042637315260729"
+    ],
+    "lastTootTimestamp": 1694376179790
+  },
+  "https://coryd.dev/posts/2023/semi-automated-hashtags-syndicated-posts/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9zZW1pLWF1dG9tYXRlZC1oYXNodGFncy1zeW5kaWNhdGVkLXBvc3RzLw==",
+    "title": "📝: Semi-automated hashtags for syndicated posts",
+    "url": "https://coryd.dev/posts/2023/semi-automated-hashtags-syndicated-posts/",
+    "content_text": "📝: Semi-automated hashtags for syndicated posts #Eleventy #WebDev https://coryd.dev/posts/2023/semi-automated-hashtags-syndicated-posts/",
+    "date_published": "Sun, 10 Sep 2023 00:00:00 +0000",
+    "toots": []
   }
 }
