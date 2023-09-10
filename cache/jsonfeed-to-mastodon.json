@@ -6234,5 +6234,24 @@
       "https://social.lol/users/cory/statuses/111034145985090643"
     ],
     "lastTootTimestamp": 1694246612397
+  },
+  "https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/": {
+    "id": "aHR0cHM6Ly9icmFkZnJvc3QuY29tL2Jsb2cvcG9zdC9mcm9udC1vZi10aGUtZnJvbnQtZW5kLWFuZC1iYWNrLW9mLXRoZS1mcm9udC1lbmQtd2ViLWRldmVsb3BtZW50Lw==",
+    "title": "🔗: Front-of-the-front-end and back-of-the-front-end web development",
+    "url": "https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/",
+    "content_text": "🔗: Front-of-the-front-end and back-of-the-front-end web development #WebDev https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/",
+    "date_published": "Sat, 09 Sep 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111038416163363904"
+    ],
+    "lastTootTimestamp": 1694311770128
+  },
+  "https://brutalist-web.design/": {
+    "id": "aHR0cHM6Ly9icnV0YWxpc3Qtd2ViLmRlc2lnbi8=",
+    "title": "🔗: Brutalist Web Design",
+    "url": "https://brutalist-web.design/",
+    "content_text": "🔗: Brutalist Web Design #WebDev https://brutalist-web.design/",
+    "date_published": "Sat, 09 Sep 2023 00:00:00 +0000",
+    "toots": []
   }
 }
