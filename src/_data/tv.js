@@ -51,7 +51,8 @@ module.exports = async function () {
           `https://cdn.coryd.dev/tv/${matchedEpisode['name']
             .replace(':', '')
             .replace(/\s+/g, '-')
-            .toLowerCase()}.jpg` || 'https://cdn.coryd.dev/tv/missing-tv.jpg',
+            .toLowerCase()}.jpg?crop=450,662&crop_gravity=center&quality=100` ||
+          'https://cdn.coryd.dev/tv/missing-tv.jpg',
         startingEpisode: matchedEpisode['episode'],
         startingSeason: matchedEpisode['season'],
         episode: episodeNumber,
