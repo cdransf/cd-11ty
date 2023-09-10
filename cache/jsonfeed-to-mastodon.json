@@ -6274,6 +6274,9 @@
     "url": "https://coryd.dev/posts/2023/semi-automated-hashtags-syndicated-posts/",
     "content_text": "📝: Semi-automated hashtags for syndicated posts #Eleventy #WebDev https://coryd.dev/posts/2023/semi-automated-hashtags-syndicated-posts/",
     "date_published": "Sun, 10 Sep 2023 00:00:00 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111043109391870235"
+    ],
+    "lastTootTimestamp": 1694383383117
   }
 }
