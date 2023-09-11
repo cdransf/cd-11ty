@@ -12,10 +12,10 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 
 ## My latest posts
 <!-- BLOGPOSTS:START -->
+- [Semi-automated hashtags for syndicated posts](https://coryd.dev/posts/2023/semi-automated-hashtags-syndicated-posts/)
 - [On imposter syndrome](https://coryd.dev/posts/2023/on-imposter-syndrome/)
 - [Now page: grouping episodes of the same tv show](https://coryd.dev/posts/2023/now-page-grouping-episodes-of-same-show/)
 - [Drying up now page templates and normalizing data in Eleventy](https://coryd.dev/posts/2023/drying-up-now-page-templates-eleventy/)
 - [Displaying now playing data with matching emoji using Netlify edge functions and Eleventy](https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/)
-- [Road to madness: charting Apple Music listening data](https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/)
 <!-- BLOGPOSTS:END -->
 
