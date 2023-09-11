@@ -6278,5 +6278,16 @@
       "https://social.lol/users/cory/statuses/111043109391870235"
     ],
     "lastTootTimestamp": 1694383383117
+  },
+  "https://letterboxd.com/cdme/film/logan-2017/": {
+    "id": "aHR0cHM6Ly9sZXR0ZXJib3hkLmNvbS9jZG1lL2ZpbG0vbG9nYW4tMjAxNy8=",
+    "title": "🎥: Logan, 2017 - ★★★★",
+    "url": "https://letterboxd.com/cdme/film/logan-2017/",
+    "content_text": "🎥: Logan, 2017 - ★★★★  https://letterboxd.com/cdme/film/logan-2017/",
+    "date_published": "Mon, 11 Sep 2023 15:45:59 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111047829086004368"
+    ],
+    "lastTootTimestamp": 1694455399923
   }
 }
