@@ -22,7 +22,7 @@ module.exports = async function () {
           )
         : `https://cdn.coryd.dev/albums/${album['name'].name
             .replace(/\s+/g, '-')
-            .toLowerCase()}.jpg?width=450&crop=450,450&crop_gravity=center&quality=100&sharpen=true`,
+            .toLowerCase()}.jpg?width=400&crop=500,500&crop_gravity=center&quality=100&sharpen=true`,
       url: album['mbid']
         ? `https://musicbrainz.org/album/${album['mbid']}`
         : `https://musicbrainz.org/search?query=${encodeURI(album['name'])}&type=release_group`,
