@@ -14,9 +14,7 @@ module.exports = async function () {
       plays: artist['playcount'],
       rank: artist['@attr']['rank'],
       image:
-        `https://cdn.coryd.dev/artists/${artist['name']
-          .replace(/\s+/g, '-')
-          .toLowerCase()}.jpg?width=400&crop=500,500&crop_gravity=center&quality=100&sharpen=true` ||
+        `https://cdn.coryd.dev/artists/${artist['name'].replace(/\s+/g, '-').toLowerCase()}.jpg` ||
         'https://cdn.coryd.dev/artists/missing-artist.jpg',
       url: artist['mbid']
         ? `https://musicbrainz.org/artist/${artist['mbid']}`
