@@ -42,7 +42,12 @@ module.exports = {
         return visitors(b) - visitors(a)
       })
   },
-  tagLookup: (url, tagMap) => tagMap[url],
+  tagLookup: (url, tagMap) => {
+    if (!url) return
+    if (url.includes('goodreads.com')) return '#Books #Reading'
+    if (url.includes('letterboxd.com')) return '#Movies #Letterboxd'
+    return tagMap[url] || ''
+  },
   webmentionsByUrl: (webmentions, url) => {
     const allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of']
 
