@@ -16,6 +16,7 @@ body {
 }
 
 body, html {
+  @apply font-sans;
   color: theme(colors.gray.900)
 }
 
@@ -132,7 +133,7 @@ pre {
 }
 
 code[class*=language-], pre[class*=language-] {
-  font-family: ui-monospace, SFMono-Regular, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !important;
+  @apply font-mono;
   font-weight: 400 !important;
 }
 
