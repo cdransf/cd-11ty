@@ -6333,5 +6333,16 @@
       "https://social.lol/users/cory/statuses/111064815764320955"
     ],
     "lastTootTimestamp": 1694714596091
+  },
+  "https://www.latimes.com/politics/story/2023-09-14/california-bill-delete-online-personal-data": {
+    "id": "aHR0cHM6Ly93d3cubGF0aW1lcy5jb20vcG9saXRpY3Mvc3RvcnkvMjAyMy0wOS0xNC9jYWxpZm9ybmlhLWJpbGwtZGVsZXRlLW9ubGluZS1wZXJzb25hbC1kYXRh",
+    "title": "🔗: California lawmakers pass bill to make it easier to delete online personal data",
+    "url": "https://www.latimes.com/politics/story/2023-09-14/california-bill-delete-online-personal-data",
+    "content_text": "🔗: California lawmakers pass bill to make it easier to delete online personal data #Tech https://www.latimes.com/politics/story/2023-09-14/california-bill-delete-online-personal-data",
+    "date_published": "Fri, 15 Sep 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111070950061830696"
+    ],
+    "lastTootTimestamp": 1694808198071
   }
 }
