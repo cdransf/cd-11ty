@@ -52,7 +52,6 @@ Software and services that I use for work and my own enjoyment.
 - [iTerm2](https://iterm2.com)
 - [Alfred](https://alfredapp.com)
 - [Keyboard Maestro](https://www.keyboardmaestro.com/)
-- [Arq](https://www.arqbackup.com)
 - [Magnet](https://magnet.crowdcafe.com)
 - [Choosy](https://choosy.app)
 - [Hazel](https://www.noodlesoft.com)
@@ -78,6 +77,7 @@ Software and services that I use for work and my own enjoyment.
 - <a onclick="clicky.goal('Referral: Feedpress')" href="https://feedpress.com/?affid=34370">Feedpress</a>
 - [Mullvad](https://mullvad.net)
 - [Kagi](https://kagi.com)
+- [Reader](https://readwise.io/read)
 - [forwardemail.net](https://forwardemail.net)
 - [1Password](https://1password.com)
 - [Spotify](https://spotify.com)
@@ -85,8 +85,8 @@ Software and services that I use for work and my own enjoyment.
 - [Trakt](https://trakt.tv)
 - [Letterboxd](https://letterboxd.com)
 - [Goodreads](https://goodreads.com)
-- [Reader](https://readwise.io/read)
 - [Slack](http://slack.com)
 - [Discord](http://discord.com)
+- [Backblaze](https://www.backblaze.com/cloud-backup)
 
 Check out [uses.tech](https://uses.tech) for more lists like this one.
