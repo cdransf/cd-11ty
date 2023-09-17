@@ -6355,5 +6355,16 @@
       "https://social.lol/users/cory/statuses/111078970958945503"
     ],
     "lastTootTimestamp": 1694930587226
+  },
+  "https://heather-buchel.com/blog/2023/09/the-js-community-on-twitter-is-dead/": {
+    "id": "aHR0cHM6Ly9oZWF0aGVyLWJ1Y2hlbC5jb20vYmxvZy8yMDIzLzA5L3RoZS1qcy1jb21tdW5pdHktb24tdHdpdHRlci1pcy1kZWFkLw==",
+    "title": "🔗: The JS community on Twitter is dead.",
+    "url": "https://heather-buchel.com/blog/2023/09/the-js-community-on-twitter-is-dead/",
+    "content_text": "🔗: The JS community on Twitter is dead. #WebDev https://heather-buchel.com/blog/2023/09/the-js-community-on-twitter-is-dead/",
+    "date_published": "Sun, 17 Sep 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111082273728595680"
+    ],
+    "lastTootTimestamp": 1694980983503
   }
 }
