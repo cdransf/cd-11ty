@@ -44,8 +44,8 @@ module.exports = {
   },
   tagLookup: (url, tagMap) => {
     if (!url) return
-    if (url.includes('goodreads.com')) return '#Books #Reading'
-    if (url.includes('letterboxd.com')) return '#Movies #Letterboxd'
+    if (url.includes('https://goodreads.com')) return '#Books #Reading'
+    if (url.includes('https://letterboxd.com')) return '#Movies #Letterboxd'
     return tagMap[url] || ''
   },
   webmentionsByUrl: (webmentions, url) => {
