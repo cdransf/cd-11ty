@@ -6377,5 +6377,16 @@
       "https://social.lol/users/cory/statuses/111083246814148579"
     ],
     "lastTootTimestamp": 1694995831573
+  },
+  "https://localghost.dev/blog/ai-and-the-trouble-with-inaccessible-saas/": {
+    "id": "aHR0cHM6Ly9sb2NhbGdob3N0LmRldi9ibG9nL2FpLWFuZC10aGUtdHJvdWJsZS13aXRoLWluYWNjZXNzaWJsZS1zYWFzLw==",
+    "title": "🔗: &#34;AI&#34;, and the trouble with inaccessible SaaS",
+    "url": "https://localghost.dev/blog/ai-and-the-trouble-with-inaccessible-saas/",
+    "content_text": "🔗: &#34;AI&#34;, and the trouble with inaccessible SaaS #WebDev https://localghost.dev/blog/ai-and-the-trouble-with-inaccessible-saas/",
+    "date_published": "Mon, 18 Sep 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111084161528045966"
+    ],
+    "lastTootTimestamp": 1695009789028
   }
 }
