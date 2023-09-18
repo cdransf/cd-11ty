@@ -543,30 +543,30 @@
   resolved "https://registry.yarnpkg.com/@one-ini/wasm/-/wasm-0.1.1.tgz#6013659736c9dbfccc96e8a9c2b3de317df39323"
   integrity sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==
 
-"@pagefind/darwin-arm64@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@pagefind/darwin-arm64/-/darwin-arm64-1.0.2.tgz#cf250b3ad45786c958e613f47c4e12320d183457"
-  integrity sha512-saHinnIbchShIeT7+fFe77k3cbtXxbLcK4m+MjZA8VM/lrLeTaS+UYUYCzpKmV4U+APeELnquL4fhDquFAcScQ==
+"@pagefind/darwin-arm64@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@pagefind/darwin-arm64/-/darwin-arm64-1.0.3.tgz#5377ff2c3fca97125d0624da019b52cc2375edb9"
+  integrity sha512-vsHDtvao3W4iFCxVc4S0BVhpj3E2MAoIVM7RmuQfGp1Ng22nGLRaMP6FguLO8TMabRJdvp4SVr227hL4WGKOHA==
 
-"@pagefind/darwin-x64@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@pagefind/darwin-x64/-/darwin-x64-1.0.2.tgz#9cd54e5e09875807508a74dcae3bec833aa13ad3"
-  integrity sha512-CAyPARt41lHPpHD8O7O2zv8MJa06iPa6nrGt+o9puY47OcNM6x8GxCAKPR1OTfEsiuwPovAdi7rvwJ35z3tnrA==
+"@pagefind/darwin-x64@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@pagefind/darwin-x64/-/darwin-x64-1.0.3.tgz#c4bae6522e3bac09a9f58f48f89356dca931f5ca"
+  integrity sha512-NhEXHHYmB/hT6lx5rCcmnVTxH+uIkMAd43bzEqMwHQosqTZEIQfwihmV39H+m8yo7jFvz3zRbJNzhAh7G4PiwA==
 
-"@pagefind/linux-arm64@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@pagefind/linux-arm64/-/linux-arm64-1.0.2.tgz#64cef7bb5187f99481b55b72a7d288fae9a70ddc"
-  integrity sha512-bGpLKV2WLkLH/Qn/ibHJj7oTPvMcpJMwcjdPWk+tWqBl5xoBK1l4k45Gi70deCdIjKom5TcXuS8mgcXY8tSJ0A==
+"@pagefind/linux-arm64@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@pagefind/linux-arm64/-/linux-arm64-1.0.3.tgz#ada5ec030c7286f956d506aebe1e1e53ea826966"
+  integrity sha512-RGsMt4AmGT8WxCSeP09arU7Za6Vf/We4TWHVSbY7vDMuwWql9Ngoib/q1cP9dIAIMdkXh9ePG/S3mGnJYsdzuQ==
 
-"@pagefind/linux-x64@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@pagefind/linux-x64/-/linux-x64-1.0.2.tgz#15efc59e13286e56b09153af17efee690ce0ef57"
-  integrity sha512-59beym/0riPCTjNeT91ksqlBToW0FFeFAHKxvM0nmvzEeNYurgoZY+8fJz9Xvz8icXhi2NxLirDgclAMsahWWQ==
+"@pagefind/linux-x64@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@pagefind/linux-x64/-/linux-x64-1.0.3.tgz#4f658bac9ce5e9fb22e0a4350ff933e621c6b916"
+  integrity sha512-o+VCKaqImL42scSH1n5gUfppYSNyu3BuGTvtKKgWHmycbL+A3fkFH+ZOFbaLeN7LVTvJqJIOYbk4j2yaq9784Q==
 
-"@pagefind/windows-x64@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@pagefind/windows-x64/-/windows-x64-1.0.2.tgz#52f19f986ba217522f2cb501b85b32a4930e302f"
-  integrity sha512-lwae3p7xOVihaTv6D8gJJLl05U4lDvkyMN9azlpjlWbfhBJXJnvD2CQTDwzZxK+u6ZDJUR1Qcz2oVeedyQpMjQ==
+"@pagefind/windows-x64@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@pagefind/windows-x64/-/windows-x64-1.0.3.tgz#686c46cb274e087362d0a8d6ff03e89a10ee508e"
+  integrity sha512-S+Yq4FyvXJm4F+iN/wRiLvEEF8Xs9lTKGtQGaRHXJslQyl65dytDDPIULXJXIadrDbnMrnTt4C2YHmEUIyUIHg==
 
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
@@ -4228,16 +4228,16 @@ p-try@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
-pagefind@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/pagefind/-/pagefind-1.0.2.tgz#f908351a8938f8f411029a90ebe6a199cde28084"
-  integrity sha512-UxZgvmknPrH25qXZL7aK5fUOj1GrZxEQb2Mdd4l2m/PtdKJfrszxOR2EI1349bCYZ+OxiPn7wz2NCRNzb3QPpA==
+pagefind@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/pagefind/-/pagefind-1.0.3.tgz#1ce2118408d42fbd303e8b567ed3fff134895138"
+  integrity sha512-ws7kmMxW6OuxzsOjj3YAx6TYq/54MiE3wfyBM3J5CInbZyBBvM2Z8c8IYvnMkBcb5v2EoB9DewXEekOEiDRu5g==
   optionalDependencies:
-    "@pagefind/darwin-arm64" "1.0.2"
-    "@pagefind/darwin-x64" "1.0.2"
-    "@pagefind/linux-arm64" "1.0.2"
-    "@pagefind/linux-x64" "1.0.2"
-    "@pagefind/windows-x64" "1.0.2"
+    "@pagefind/darwin-arm64" "1.0.3"
+    "@pagefind/darwin-x64" "1.0.3"
+    "@pagefind/linux-arm64" "1.0.3"
+    "@pagefind/linux-x64" "1.0.3"
+    "@pagefind/windows-x64" "1.0.3"
 
 param-case@^2.1.1:
   version "2.1.1"
