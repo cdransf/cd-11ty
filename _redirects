@@ -50,8 +50,6 @@ https://cdme.netlify.app https://coryd.dev 301!
 /feeds/all.xml https://feedpress.me/coryd 301!
 /feed.xml https://feedpress.me/coryd
 /feed.json https://feedpress.me/coryd.json
-/links.xml https://feedpress.me/coryd-links
-/links.json https://feedpress.me/coryd-links.json
 /books.xml https://feedpress.me/coryd-books
 /books.json https://feedpress.me/coryd-books.json
 /follow.xml https://feedpress.me/coryd-follow
