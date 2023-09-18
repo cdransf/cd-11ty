@@ -6388,5 +6388,16 @@
       "https://social.lol/users/cory/statuses/111084161528045966"
     ],
     "lastTootTimestamp": 1695009789028
+  },
+  "https://blog.thecodewhisperer.com/permalink/which-kinds-of-tests-should-i-write-revisited": {
+    "id": "aHR0cHM6Ly9ibG9nLnRoZWNvZGV3aGlzcGVyZXIuY29tL3Blcm1hbGluay93aGljaC1raW5kcy1vZi10ZXN0cy1zaG91bGQtaS13cml0ZS1yZXZpc2l0ZWQ=",
+    "title": "🔗: Which Kinds of Tests Should I Write? Revisited",
+    "url": "https://blog.thecodewhisperer.com/permalink/which-kinds-of-tests-should-i-write-revisited",
+    "content_text": "🔗: Which Kinds of Tests Should I Write? Revisited #WebDev https://blog.thecodewhisperer.com/permalink/which-kinds-of-tests-should-i-write-revisited",
+    "date_published": "Sun, 17 Sep 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111087465564848773"
+    ],
+    "lastTootTimestamp": 1695060204616
   }
 }
