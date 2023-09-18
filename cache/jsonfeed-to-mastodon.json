@@ -6327,7 +6327,7 @@
     "id": "aHR0cHM6Ly93d3cuZ29vZHJlYWRzLmNvbS9yZXZpZXcvc2hvdy81ODQwNDk4MDYx",
     "title": "📖: Monopolized: Life in the Age of Corporate Power",
     "url": "https://www.goodreads.com/review/show/5840498061",
-    "content_text": "📖: Monopolized: Life in the Age of Corporate Power #Books #Reading https://www.goodreads.com/review/show/5840498061",
+    "content_text": "📖: Monopolized: Life in the Age of Corporate Power  https://www.goodreads.com/review/show/5840498061",
     "date_published": "Thu, 14 Sep 2023 00:00:00 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111064815764320955"
@@ -6366,5 +6366,16 @@
       "https://social.lol/users/cory/statuses/111082273728595680"
     ],
     "lastTootTimestamp": 1694980983503
+  },
+  "https://jdotc.xyz/blog/developer-productivity/": {
+    "id": "aHR0cHM6Ly9qZG90Yy54eXovYmxvZy9kZXZlbG9wZXItcHJvZHVjdGl2aXR5Lw==",
+    "title": "🔗: Customer Focus is Paramount in Measuring Developer Productivity",
+    "url": "https://jdotc.xyz/blog/developer-productivity/",
+    "content_text": "🔗: Customer Focus is Paramount in Measuring Developer Productivity #WebDev https://jdotc.xyz/blog/developer-productivity/",
+    "date_published": "Sun, 17 Sep 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111083246814148579"
+    ],
+    "lastTootTimestamp": 1694995831573
   }
 }
