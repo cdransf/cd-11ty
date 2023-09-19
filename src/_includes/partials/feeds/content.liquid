@@ -26,7 +26,7 @@
       <updated>{{ entry.date | date: "%m.%d.%Y" }}</updated>
       <id>{{ entry.url | stripUtm | encodeAmp }}</id>
       <content type="html">
-        {{ entry.excerpt | escape | markdown }}
+        {{ entry.excerpt | markdown | escape }}
       </content>
     </entry>
   {%- endfor %}
