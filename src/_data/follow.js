@@ -3,6 +3,7 @@ module.exports = async function () {
   const feed = new ActivityFeed()
   feed.addSource('atom', '📝', 'https://coryd.dev/feeds/posts')
   feed.addSource('rss', '🎥', 'https://letterboxd.com/cdme/rss')
+  feed.addSource('atom', '🔗', 'https://coryd.dev/feeds/links')
   feed.addSource('atom', '📖', 'https://coryd.dev/feeds/books')
   const entries = feed.getEntries().catch()
   const res = await entries
