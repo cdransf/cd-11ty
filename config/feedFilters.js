@@ -13,7 +13,7 @@ module.exports = {
       if (entry.description) excerpt = entry.description
 
       // if there's a valid entry return a normalized object
-      if (entry) {
+      if (entry && !entry.data?.link) {
         return {
           title: entry.data?.title || entry.title,
           url: entry.url.includes('http') ? entry.url : new URL(entry.url, BASE_URL).toString(),

@@ -16,7 +16,7 @@ If you want to skip all the reading, the diff for this [is here](https://github.
 ```liquid
 {% if data.size > 0 %}
   {% assign media = data | normalizeMedia %}
-  <h2 class="icon--bold m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 icon--28">
+  <h2 class="icon--bold m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 [&>svg]:h-7 [&>svg]:w-7">
     {% tablericon icon title %}
     <div class="ml-1">{{ title }}</div>
   </h2>

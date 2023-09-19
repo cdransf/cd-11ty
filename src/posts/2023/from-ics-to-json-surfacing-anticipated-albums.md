@@ -46,7 +46,7 @@ Rendering the output is as simple as:
 
 ```liquid
 {% if albumReleases.size > 0 %}
-  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 icon--28">
+  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 [&>svg]:h-7 [&>svg]:w-7">
     {% tablericon "calendar" "Albums I'm looking forward to" %}
     <div class="ml-1">Albums I'm looking forward to</div>
   </h2>
@@ -65,6 +65,6 @@ Rendering the output is as simple as:
 
 {% endraw %}
 Leaving us with:
-{% image 'https://cdn.coryd.dev/blog/album-releases.jpg', 'Albums I\'m looking forward to', 'w-full', '600px' %}
+{% image '<https://cdn.coryd.dev/blog/album-releases.jpg>', 'Albums I\'m looking forward to', 'w-full', '600px' %}
 
 [^1]: At this point, a dev playground.

@@ -1,8 +1,8 @@
 {% assign posts = posts | getPopularPosts: analytics %}
 <div class="not-prose">
-  <h2 class="icon--bold m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 icon--28">
+  <h2 class="[&>svg]:h-5 [&>svg]:w-5 [&>svg]:md:h-7 [&>svg]:md:w-7 [&>svg]:inline icon--bold m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
     {% tablericon "flame" "Popular" %}
-    <div class="ml-1">Popular posts</div>
+    Popular posts
   </h2>
   <ul class="list-inside list-disc pl-5 md:pl-10">
     {% for post in posts limit: 5 %}

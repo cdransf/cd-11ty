@@ -47,10 +47,6 @@ body, html {
   background: theme(colors.pink.500);
 }
 
-.icon-inline svg {
-  @apply inline;
-}
-
 .active,
 .active svg {
   color: theme(colors.teal.700);
@@ -141,26 +137,6 @@ code[class*=language-], pre[class*=language-] {
   stroke-width: 1.4;
 }
 
-.icon--20 > svg {
-  @apply h-5;
-  @apply w-5;
-}
-
-.icon--24 > svg {
-  @apply h-6;
-  @apply w-6
-}
-
-.icon--28 > svg {
-  @apply h-7;
-  @apply w-7;
-}
-
-.icon--32 > svg {
-  @apply h-8;
-  @apply w-8;
-}
-
 .icon--bold > svg {
   stroke-width: 2;
 }
@@ -177,6 +153,10 @@ code[class*=language-], pre[class*=language-] {
 
 .icon--spin > svg {
   @apply animate-spin;
+}
+
+.icon--inline > svg {
+  @apply inline;
 }
 
 @media (prefers-color-scheme: dark) {

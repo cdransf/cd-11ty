@@ -1,13 +1,13 @@
 <nav class="flex justify-between mt-8 items-center">
   {% if pagination.href.previous %}
     <a href="{{ pagination.href.previous }}">
-      <button class="py-2 pr-4 dark:text-purple-400 text-purple-600" aria-label="Previous page icon--20">
+      <button class="py-2 pr-4 dark:text-purple-400 text-purple-600" aria-label="Previous page [&>svg]:h-5 [&>svg]:w-5">
         {% tablericon "arrow-left" "Previous" %}
       </button>
     </a>
   {% else %}
     <button
-      class="py-2 pr-4 cursor-not-allowed disabled:opacity-50 icon--20"
+      class="py-2 pr-4 cursor-not-allowed disabled:opacity-50 [&>svg]:h-5 [&>svg]:w-5"
       aria-label="Previous page (disabled)"
       disabled>
       {% tablericon "arrow-left" "Prevous" %}
@@ -18,13 +18,13 @@
   </div>
   {% if pagination.href.next %}
     <a href="{{ pagination.href.next }}">
-      <button class="py-2 pl-4 dark:text-purple-400 text-purple-600 icon--20" aria-label="Next page">
+      <button class="py-2 pl-4 dark:text-purple-400 text-purple-600 [&>svg]:h-5 [&>svg]:w-5" aria-label="Next page">
         {% tablericon "arrow-right" "Next" %}
       </button>
     </a>
   {% else %}
     <button
-      class="py-2 pl-4 cursor-not-allowed disabled:opacity-50 icon--20"
+      class="py-2 pl-4 cursor-not-allowed disabled:opacity-50 [&>svg]:h-5 [&>svg]:w-5"
       aria-label="Next page (disabled)"
       disabled>
       {% tablericon "arrow-right" "Next" %}

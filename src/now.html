@@ -17,43 +17,32 @@ meta:
   image:
     src: https://coryd.dev/assets/img/avatar.webp
 ---
-<h2 class="icon--bold m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 icon--28">
+<h2 class="[&>svg]:h-5 [&>svg]:w-5 [&>svg]:md:h-7 [&>svg]:md:w-7 [&>svg]:-mt-1 [&>svg]:md:-mt-1.5 [&>svg]:inline icon--bold m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
   {% tablericon "clock-heart" "Currently" %}
-  <div class="ml-1">Currently</div>
+  Currently
 </h2>
 <div class="pl-4 md:pl-8">
     {% render "partials/now/status.liquid", status:status %}
-  <p class="my-2 flex flex-row items-start md:items-center">
-    <span class="pt-0.5 md:pt-0 mr-1 icon--20">{% tablericon "map-2" "Map" %}</span>
-    <span>Living in Camarillo, California with my beautiful family, 4 rescue dogs and a guinea pig.</span>
+  <p class="my-2 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:inline">
+    {% tablericon "map-2" "Map" %}
+    Living in Camarillo, California with my beautiful family, 4 rescue dogs and a guinea pig.
   </p>
-  <p class="my-2 flex flex-row items-start md:items-center">
-    <span class="pt-0.5 md:pt-0 mr-1 icon--20">
-      {% tablericon "play-basketball" "Hacking" %}
-    </span>
-    <span>
-      Rooting for the <a href="https://lakers.com">Lakers</a> (can't wait for next season with the new roster 💜💛).
-    </span>
+  <p class="my-2 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:inline">
+    {% tablericon "play-basketball" "NBA - Lakers" %}
+    Rooting for the <a href="https://lakers.com">Lakers</a> (can't wait for next season with the new roster 💜💛).
   </p>
 </div>
-<h2 class="icon--bold m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 icon--28">
+<h2 class="[&>svg]:h-5 [&>svg]:w-5 [&>svg]:md:h-7 [&>svg]:md:w-7 [&>svg]:-mt-1 [&>svg]:md:-mt-1.5 [&>svg]:inline icon--bold m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
   {% tablericon "terminal-2" "Making" %}
-  <div class="ml-1">Making</div>
+  Making
 </h2>
 <div class="pl-4 md:pl-8">
-  <p class="my-2 flex flex-row items-start md:items-center">
-    <span class="pt-0.5 md:pt-0 mr-1 icon--20">
-      {% tablericon "code" "Hacking" %}
-    </span>
-    <span>
-      Hacking away on projects like this page, my
-      <a href="/">blog</a>, and whatever else I can find time for.
-    </span>
+  <p class="my-2 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:inline">
+    {% tablericon "code" "Hacking" %}
+    Hacking away on projects like this page, my <a href="/">blog</a>, and whatever else I can find time for.
   </p>
-  <p class="my-2 flex flex-row items-start md:items-center">
-    <span class="pt-0.5 md:pt-0 mr-1 icon--20">{% tablericon "hand-stop" "Ad and tracker-blocking" %}</span>
-    <span>
-      Assembling lists of <a href="https://github.com/cdransf/awesome-adblock">ad and tracker-blocking tools</a>.
-    </span>
+  <p class="my-2 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:inline">
+    {% tablericon "hand-stop" "Ad and tracker-blocking" %}
+    Assembling lists of <a href="https://github.com/cdransf/awesome-adblock">ad and tracker-blocking tools</a>.
   </p>
 </div>

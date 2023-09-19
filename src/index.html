@@ -27,23 +27,32 @@ meta:
   <div
     class="mb-8 border-b border-gray-200 pb-4 text-gray-800 dark:border-gray-700 dark:text-white"
   >
-    <a class="no-underline" href="{{ post.url }}">
-      <h2
-        class="p-name m-0 text-xl font-black leading-tight tracking-normal hover:text-pink-500 dark:text-gray-200 dark:hover:text-pink-500 md:text-2xl ease-in-out duration-300"
-      >
-        {{ post.data.title }}
-      </h2>
+    <a class="no-underline" href="{% if post.data.link %}{{ post.data.link }}{% else %}{{ post.url }}{% endif %}">
+      {% if post.data.link %}
+        <h2 class="[&>svg]:h-5 [&>svg]:w-5 [&>svg]:md:h-7 [&>svg]:md:w-7 [&>svg]:-mt-1 [&>svg]:md:-mt-1.5 [&>svg]:inline icon--bold p-name m-0 text-xl font-black leading-tight tracking-normal hover:text-pink-500 dark:text-gray-200 dark:hover:text-pink-500 md:text-2xl ease-in-out duration-300">
+          {% tablericon 'link' post.data.title %}
+          {{ post.data.title }}
+        </h2>
+      {% else %}
+        <h2
+          class="p-name m-0 text-xl font-black leading-tight tracking-normal hover:text-pink-500 dark:text-gray-200 dark:hover:text-pink-500 md:text-2xl ease-in-out duration-300"
+        >
+          {{ post.data.title }}
+        </h2>
+      {% endif %}
     </a>
     <span class="p-author h-card hidden">{{ site.title }}</span>
     <div class="my-2 text-sm">
       <time class="dt-published" datetime="{{ post.date }}">
-        {{ post.date | date: "%m.%Y" }}
+        {{ post.date | date: "%m.%Y" }} {% if post.data.link %} • <a class="flex-none font-normal no-underline" href="{{ post.url }}">Permalink</a>{% endif %}
       </time>
     </div>
     <p class="p-summary mt-0">{{ post.data.post_excerpt | markdown }}</p>
-    <div class="mt-4 flex items-center justify-between">
-      <a class="flex-none font-normal no-underline" href="{{ post.url }}">Read more &rarr;</a>
-    </div>
+    {% unless post.data.link %}
+      <div class="mt-4 flex items-center justify-between">
+        <a class="flex-none font-normal no-underline" href="{{ post.url }}">Read more &rarr;</a>
+      </div>
+    {% endunless %}
   </div>
 </article>
 {% endif %} {% endfor %} {% include "partials/paginator.liquid" %}

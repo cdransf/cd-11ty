@@ -52,9 +52,9 @@ And rendered using a liquid template:
 ```liquid
 {% assign posts = posts | getPopularPosts: analytics %}
 <div class="not-prose">
-  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 icon--28">
+  <h2 class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:inline icon--bold m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
     {% tablericon "fire" "Popular" %}
-    <div class="ml-1">Popular posts</div>
+    Popular posts
   </h2>
   <ul class="list-inside list-disc pl-5 md:pl-10">
     {% for post in posts %}

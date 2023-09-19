@@ -1,8 +1,8 @@
 {% if data.size > 0 %}
   {% assign media = data | normalizeMedia %}
-  <h2 class="icon--bold m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4 icon--28">
+  <h2 class="[&>svg]:h-5 [&>svg]:w-5 [&>svg]:md:h-7 [&>svg]:md:w-7 [&>svg]:-mt-1 [&>svg]:md:-mt-1.5 [&>svg]:inline icon--bold m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
     {% tablericon icon title %}
-    <div class="ml-1">{{ title }}</div>
+    {{ title }}
   </h2>
   <div class="grid gap-2 {% if shape == 'square' %}grid-cols-2 md:grid-cols-4{% else %}grid-cols-3 md:grid-cols-6{% endif %} not-prose">
     {% for item in media limit: count %}
