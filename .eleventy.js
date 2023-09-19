@@ -91,7 +91,7 @@ module.exports = function (eleventyConfig) {
               url: post.data.link,
               title: post.data.title,
               date: post.data.date,
-              description: md.render(post.data.post_excerpt),
+              description: post.data.post_excerpt,
             })
         })
       }
