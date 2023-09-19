@@ -4,7 +4,7 @@
   {% assign entries = data | normalizeEntries %}
   <title>{{ title }}</title>
   <link href="{{ permalink | absoluteUrl: site.url }}" rel="self" />
-  <link href="{{ site.url }}" />
+  <link href="{{ site.url }}/" />
   <link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
   <updated>{{ updated | stringToDate | dateToRfc822 }}</updated>
   <id>{{ site.url }}/</id>
@@ -15,7 +15,7 @@
   <image>
     <url>https://coryd.dev/assets/icons/apple-touch-icon.png</url>
     <title>Cory Dransfeldt</title>
-    <link>https://coryd.dev</link>
+    <link>https://coryd.dev/</link>
     <width>512</width>
     <height>512</height>
   </image>
