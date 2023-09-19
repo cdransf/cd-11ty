@@ -4,10 +4,10 @@ permalink: /feeds/posts
 ---
 {%- assign posts = collections.posts | reverse -%}
 {% render "partials/feeds/content.liquid"
-  permalink:'/feeds/posts'
-  title:'Cory Dransfeldt'
+  permalink:"/feeds/posts"
+  title:"Cory Dransfeldt"
+  description:"Posts from my site."
   data:posts
   updated:posts[0].date
   site:site
-  eleventy:eleventy
 %}

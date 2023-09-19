@@ -5,7 +5,7 @@ draft: false
 tags: ['Matter', 'development', 'Eleventy', 'API']
 ---
 
-I dropped in a quick update to [my now page](/now) to display the 5 most recent articles from my favorites feed in [Matter](https://getmatter.com/).<!-- excerpt -->
+I dropped in a quick update to [my now page](https://coryd.dev/now) to display the 5 most recent articles from my favorites feed in [Matter](https://getmatter.com/).<!-- excerpt -->
 
 To do this I'm borrowing from [Federico Viticci's method of obtaining a key for their api](https://www.macstories.net/stories/macstories-starter-pack-reverse-engineering-the-matter-api-and-my-save-to-matter-shortcut/) and using it to make a `GET` request to their `favorites_feed` endpoint:
 

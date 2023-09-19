@@ -1,33 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  {% assign entries = data | normalizeEntries %}
-  <title>{{ title }}</title>
-  <link href="{{ permalink | absoluteUrl: site.url }}" rel="self" />
-  <link href="{{ site.url }}/" />
-  <link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
-  <updated>{{ updated | stringToDate | dateToRfc822 }}</updated>
-  <id>{{ site.url }}/</id>
-  <author>
-    <name>{{ site.name }}</name>
-    <email>{{ site.email }}</email>
-  </author>
-  <image>
-    <url>https://coryd.dev/assets/icons/apple-touch-icon.png</url>
-    <title>Cory Dransfeldt</title>
-    <link>https://coryd.dev/</link>
-    <width>512</width>
-    <height>512</height>
-  </image>
-  <generator uri="https://11ty.dev" version="{{ eleventy.version }}">{{ eleventy.generator }}</generator>
-  {% for entry in entries limit: 20 -%}
-    <entry>
-      <title>{{ entry.title | escape }}</title>
-      <link href="{{ entry.url | stripUtm | encodeAmp }}" />
-      <updated>{{ entry.date | date: "%m.%d.%Y" }}</updated>
-      <id>{{ entry.url | stripUtm | encodeAmp }}</id>
-      <content type="html">
-        {{ entry.excerpt | markdown | escape }}
-      </content>
-    </entry>
-  {%- endfor %}
-</feed>
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    {% assign entries = data | normalizeEntries -%}
+    <title>{{ title }}</title>
+    <description>{{ description }}</description>
+    <link>{{ permalink | absoluteUrl: site.url }}</link>
+    <image>
+      <title>{{ title }}</title>
+      <link>{{ permalink | absoluteUrl: site.url }}</link>
+      <url>{{ site.url }}/assets/icons/feed-icon.png</url>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    {% for entry in entries limit: 20 -%}
+      <item>
+        <title>{{ entry.title | escape }}</title>
+        <link>{{ entry.url | stripUtm | encodeAmp }}</link>
+        <guid>{{ entry.url | stripUtm | encodeAmp }}</guid>
+        <description>{{ entry.excerpt | markdown | escape }}</description>
+      </item>
+    {%- endfor %}
+  </channel>
+</rss>

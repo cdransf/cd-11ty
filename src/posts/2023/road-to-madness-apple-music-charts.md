@@ -5,27 +5,29 @@ draft: false
 tags: ['development', 'music', 'Eleventy', 'Apple', 'JavaScript', 'API']
 image: https://cdn.coryd.dev/blog/charlie.jpg
 ---
-I've written before about [displaying my listening data from Apple Music](/posts/2023/displaying-listening-data-from-apple-music-using-musickit/) but, recently, I've attempted to take things a bit further.<!-- excerpt -->
+I've written before about [displaying my listening data from Apple Music](https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/) but, recently, I've attempted to take things a bit further.<!-- excerpt -->
 
-The Apple Music is API is cool because it gives you data about your music, it’s not cool because well, it’s missing some things. It sends back a whole host of handy-dandy track metadata that you’d expect from a music service and that’s great. But it doesn’t provide data you’d normally expect like, well, a time stamp of when the recently played track was recently played.
+The Apple Music is API is cool because it gives you data about your music, it's not cool because well, it's missing some things. It sends back a whole host of handy-dandy track metadata that you'd expect from a music service and that's great. But it doesn't provide data you'd normally expect like, well, a time stamp of when the recently played track was recently played.
 
-I want an API that can act as a state of truth — what I’ve got is an API that returns tracks in the play order, but with no concrete representation of when they were actually played.
+I want an API that can act as a state of truth — what I've got is an API that returns tracks in the play order, but with no concrete representation of when they were actually played.
 
-Where does that leave us? Well, if we’re smart, that solution might look like what I ran with during my first go around. I call Apple’s API and iteratively page through it to aggregate a 200 track sample. That’s about 6-7 calls and a moving window.
+Where does that leave us? Well, if we're smart, that solution might look like what I ran with during my first go around. I call Apple's API and iteratively page through it to aggregate a 200 track sample. That's about 6-7 calls and a moving window.
 
 What we can achieve though, dear listener, through some inferences and external storage is a cache and — wait for it — with a more slowly moving, less capricious window.
 
-What we’ve got:
+What we've got:
+
 - The current time
 - A duration for each track
 
 What we can do:
-- Calculate how many tracks from Apple’s response approximate an hour of listening
+
+- Calculate how many tracks from Apple's response approximate an hour of listening
 - Infer time stamps by moving backwards iteratively through an hour of listening
 
-This isn’t canonical, it’s not definitive, but it’s what we’ve got.
+This isn't canonical, it's not definitive, but it's what we've got.
 
-So, we’re dealing with JSON and a static site generator. We want to persist our data as a cache, read it in and write out an update. For this I’ve elected to use Wasabi, who offer a 1:1 compatible S3 API. The data structure we want to store for each track looks like this[^1]:
+So, we're dealing with JSON and a static site generator. We want to persist our data as a cache, read it in and write out an update. For this I've elected to use Wasabi, who offer a 1:1 compatible S3 API. The data structure we want to store for each track looks like this[^1]:
 
 ```json
 {
@@ -42,7 +44,7 @@ So, we’re dealing with JSON and a static site generator. We want to persist ou
 }
 ```
 
-When I deploy a production build of my site[^2] we’ll read in our cache from Wasabi, call Apple’s flawed[^3] but persistent API, align the two and suss out the difference:
+When I deploy a production build of my site[^2] we'll read in our cache from Wasabi, call Apple's flawed[^3] but persistent API, align the two and suss out the difference:
 
 ```javascript
 const _ = require('lodash')
@@ -79,7 +81,7 @@ const diffTracks = (cache, tracks) => {
 }
 ```
 
-Still with me? Next — we’re going to derive some chart data, excluding anything not within a week prior to build time (this is where that slower moving window comes in).
+Still with me? Next — we're going to derive some chart data, excluding anything not within a week prior to build time (this is where that slower moving window comes in).
 
 ```javascript
 const deriveCharts = (tracks) => {
@@ -127,11 +129,11 @@ const deriveCharts = (tracks) => {
 
 _Cool_[^4]. GitHub triggers a rebuild of the site every hour, Netlify builds it, Eleventy optimizes images that are stored at bunny.net, Apple provides the listening data, Wasabi provides persistence.
 
-There are some significant issues with this approach: it doesn’t capture listens to an album in a loop (like me playing the new Outer Heaven record today — hails 🤘). It can get wonky when my diff function hits a track order that elicits a false positive return value.
+There are some significant issues with this approach: it doesn't capture listens to an album in a loop (like me playing the new Outer Heaven record today — hails 🤘). It can get wonky when my diff function hits a track order that elicits a false positive return value.
 
 {% image 'https://cdn.coryd.dev/blog/charlie.jpg', 'Charlie Day standing in front of "charts"', 'w-full', '600px' %}
 
-"But Cory there’s last.fm." I hear this, I love last.fm, but I’ve got concerns about its age, ownership and maintenance. I don’t want to be on the wrong end of a scream test when the wrong (right?) server rack gets decommissioned.
+"But Cory there's last.fm." I hear this, I love last.fm, but I've got concerns about its age, ownership and maintenance. I don't want to be on the wrong end of a scream test when the wrong (right?) server rack gets decommissioned.
 
 So, would I recommend pursuing this? Probably not, pretty definitely, probably not. It's, I think, as close as it can be to being an accurate but imperfect representation of what I listen to regularly. With that imperfect accuracy in mind I've replaced play counts on [my now page](https://coryd.dev/now) where this is all displayed with the genres I've associated with each artist[^5]. I _like_ where this is at. I'd **love** it if Apple would take away my crazy wall and give me a timestamp though.
 
