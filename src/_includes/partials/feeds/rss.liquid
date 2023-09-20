@@ -19,7 +19,7 @@
         <link>{{ entry.url | stripUtm | encodeAmp }}</link>
         <pubDate>{{ entry.date | stringToDate | dateToRfc822 }}</pubDate>
         <guid>{{ entry.url | stripUtm | encodeAmp }}</guid>
-        <description>{{ entry.excerpt | escape }}</description>
+        <description>{{ entry.excerpt }}</description>
       </item>
     {%- endfor %}
   </channel>
