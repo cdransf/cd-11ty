@@ -1,3 +1,4 @@
+const marked = require('marked')
 const sanitizeHTML = require('sanitize-html')
 
 const utmPattern = /[?&](utm_[^&=]+=[^&#]*)/gi
@@ -9,6 +10,9 @@ module.exports = {
   },
   stripIndex: (path) => {
     return path.replace('/index.html', '/')
+  },
+  mdToHtml: (content) => {
+    return marked.parse(content)
   },
   btoa: (string) => {
     return btoa(string)
