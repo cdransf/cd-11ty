@@ -17,7 +17,7 @@
       <item>
         <title>{{ entry.title }}</title>
         <link>{{ entry.url | stripUtm | encodeAmp }}</link>
-        <pubDate>{{ entry.date }}</pubDate>
+        <pubDate>{{ entry.date | stringToDate | dateToRfc822 }}</pubDate>
         <guid>{{ entry.url | stripUtm | encodeAmp }}</guid>
         <description>{{ entry.excerpt | markdown }}</description>
       </item>

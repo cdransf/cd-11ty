@@ -5899,9 +5899,9 @@
   },
   "https://letterboxd.com/cdme/film/sympathy-for-the-devil-2023/": {
     "id": "aHR0cHM6Ly9sZXR0ZXJib3hkLmNvbS9jZG1lL2ZpbG0vc3ltcGF0aHktZm9yLXRoZS1kZXZpbC0yMDIzLw==",
-    "title": "🎥: Sympathy for the Devil, 2023 - ★★★ ",
+    "title": "🎥: Sympathy for the Devil, 2023 - ★★★",
     "url": "https://letterboxd.com/cdme/film/sympathy-for-the-devil-2023/",
-    "content_text": "🎥: Sympathy for the Devil, 2023 - ★★★ ",
+    "content_text": "🎥: Sympathy for the Devil, 2023 - ★★★ #Movies #Letterboxd https://letterboxd.com/cdme/film/sympathy-for-the-devil-2023/",
     "date_published": "Fri, 25 Aug 2023 21:17:43 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/110953008933127659"
@@ -5932,9 +5932,9 @@
   },
   "https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/": {
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9ub3ctcGxheWluZy1lbGV2ZW50eS1uZXRsaWZ5LWVkZ2UtZnVuY3Rpb25zLWVtb2ppLw==",
-    "title": "📝: Displaying now playing data with matching emoji using Netlify edge functions and Eleventy #Eleventy #JavaScript",
+    "title": "📝: Displaying now playing data with matching emoji using Netlify edge functions and Eleventy",
     "url": "https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/",
-    "content_text": "📝: Displaying now playing data with matching emoji using Netlify edge functions and Eleventy #Eleventy #JavaScript",
+    "content_text": "📝: Displaying now playing data with matching emoji using Netlify edge functions and Eleventy #Eleventy #JavaScript https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/",
     "date_published": "Fri, 25 Aug 2023 00:00:00 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/110973274454732069"
@@ -6399,5 +6399,38 @@
       "https://social.lol/users/cory/statuses/111087465564848773"
     ],
     "lastTootTimestamp": 1695060204616
+  },
+  "https://www.goodreads.com/review/show/5852764098": {
+    "id": "aHR0cHM6Ly93d3cuZ29vZHJlYWRzLmNvbS9yZXZpZXcvc2hvdy81ODUyNzY0MDk4",
+    "title": "📖: Number Go Up: Inside Crypto&#39;s Wild Rise and Staggering Fall",
+    "url": "https://www.goodreads.com/review/show/5852764098",
+    "content_text": "📖: Number Go Up: Inside Crypto&#39;s Wild Rise and Staggering Fall  https://www.goodreads.com/review/show/5852764098",
+    "date_published": "Wed, 20 Sep 2023 00:59:41 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111095486324165663"
+    ],
+    "lastTootTimestamp": 1695182591713
+  },
+  "https://www.goodreads.com/review/show/5853791826": {
+    "id": "aHR0cHM6Ly93d3cuZ29vZHJlYWRzLmNvbS9yZXZpZXcvc2hvdy81ODUzNzkxODI2",
+    "title": "📖: Let&#39;s Go",
+    "url": "https://www.goodreads.com/review/show/5853791826",
+    "content_text": "📖: Let&#39;s Go  https://www.goodreads.com/review/show/5853791826",
+    "date_published": "Tue, 19 Sep 2023 22:55:58 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111095959954488602"
+    ],
+    "lastTootTimestamp": 1695189818704
+  },
+  "https://pxlnv.com/linklog/stream-buy-music/": {
+    "id": "aHR0cHM6Ly9weGxudi5jb20vbGlua2xvZy9zdHJlYW0tYnV5LW11c2ljLw==",
+    "title": "🔗: &#39;It Is Possible to Both Stream and Buy Music&#39;",
+    "url": "https://pxlnv.com/linklog/stream-buy-music/",
+    "content_text": "🔗: &#39;It Is Possible to Both Stream and Buy Music&#39;  https://pxlnv.com/linklog/stream-buy-music/",
+    "date_published": "Tue, 19 Sep 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111095035261424022"
+    ],
+    "lastTootTimestamp": 1695175709006
   }
 }
