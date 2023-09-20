@@ -445,7 +445,7 @@ ul#items {
   padding: 20px 0;
 }
 ul#items li.regularitem {
-  padding: 20px 20px 5px;
+  padding: 20px;
   margin: 20px auto;
   width: 50%;
   background: #fff;
@@ -541,6 +541,9 @@ ul#items li.regularitem div.itemcontent blockquote {
 }
 ul#items li.regularitem div.itemcontent strong {
   font-weight: 700;
+}
+ul#items li.regularitem div.itemcontent p:last-of-type {
+  margin-bottom: 0;
 }
 ul#items li.regularitem div.player img {
   max-width: 100%;
