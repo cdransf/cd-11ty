@@ -15,11 +15,11 @@
     </image>
     {% for entry in entries limit: 20 -%}
       <item>
-        <title>{{ entry.title }}</title>
+        <title>{{ entry.title | escape }}</title>
         <link>{{ entry.url | stripUtm | encodeAmp }}</link>
         <pubDate>{{ entry.date | stringToDate | dateToRfc822 }}</pubDate>
         <guid>{{ entry.url | stripUtm | encodeAmp }}</guid>
-        <description>{{ entry.excerpt | markdown }}</description>
+        <description>{{ entry.excerpt | markdown | escape }}</description>
       </item>
     {%- endfor %}
   </channel>
