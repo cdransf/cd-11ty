@@ -3,7 +3,8 @@ const BASE_URL = 'https://coryd.dev'
 
 module.exports = {
   normalizeEntries: (entries) => {
-    return entries.map((entry) => {
+    const posts = []
+    entries.forEach((entry) => {
       const dateKey = Object.keys(entry).find((key) => key.includes('date'))
       const date = new Date(entry[dateKey])
       let excerpt = ''
@@ -14,14 +15,15 @@ module.exports = {
 
       // if there's a valid entry return a normalized object
       if (entry && !entry.data?.link) {
-        return {
+        posts.push({
           title: entry.data?.title || entry.title,
           url: entry.url.includes('http') ? entry.url : new URL(entry.url, BASE_URL).toString(),
           content: entry.description,
           date,
           excerpt,
-        }
+        })
       }
     })
+    return posts
   },
 }

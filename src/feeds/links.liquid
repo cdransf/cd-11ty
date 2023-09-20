@@ -2,11 +2,12 @@
 layout: null
 permalink: /feeds/links
 ---
-{% render "partials/feeds/content.liquid"
+{%- assign links = collections.links | reverse -%}
+{% render "partials/feeds/rss.liquid"
   permalink:"/feeds/links"
   title:"Links • Cory Dransfeldt"
   description:"Links I've shared."
-  data:collections.links
-  updated:collections.links[0].date
+  data:links
+  updated:links[0].date
   site:site
 %}
