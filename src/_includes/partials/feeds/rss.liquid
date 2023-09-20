@@ -5,6 +5,7 @@
     <title>{{ title }}</title>
     <description>{{ description }}</description>
     <link>{{ permalink | absoluteUrl: site.url }}</link>
+    <lastBuildDate>{{ updated }}</lastBuildDate>
     <image>
       <title>{{ title }}</title>
       <link>{{ permalink | absoluteUrl: site.url }}</link>
@@ -16,6 +17,7 @@
       <item>
         <title>{{ entry.title | escape }}</title>
         <link>{{ entry.url | stripUtm | encodeAmp }}</link>
+        <pubDate>{{ entry.date }}</pubDate>
         <guid>{{ entry.url | stripUtm | encodeAmp }}</guid>
         <description>{{ entry.excerpt | markdown | escape }}</description>
       </item>
