@@ -23,7 +23,7 @@ module.exports = async function () {
       title: book['title'],
       url: book['link'],
       isbn: book['isbn'],
-      description: book['content'],
+      description: book['book_description'],
       dateAdded: book['user_date_added'],
       type: 'book',
     })

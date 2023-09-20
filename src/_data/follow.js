@@ -9,16 +9,12 @@ module.exports = async function () {
   const res = await entries
   const activity = { posts: [] }
   res.forEach((entry) => {
-    let excerpt = ''
-    if (entry.content) excerpt = entry.content
-    if (entry.data?.post_excerpt) excerpt = entry.data.post_excerpt
-
     activity.posts.push({
       id: entry.url,
       title: entry.title,
       url: entry.url,
-      description: excerpt,
-      content_html: excerpt,
+      description: entry.content,
+      content_html: entry.content,
       date_published: entry.published,
     })
   })
