@@ -65,7 +65,6 @@ module.exports = function (eleventyConfig) {
     excerpt_separator: '<!-- excerpt -->',
   })
 
-  // md instance
   const md = markdownIt({ html: true, linkify: true })
 
   // enable us to iterate over all the tags, excluding posts and all
