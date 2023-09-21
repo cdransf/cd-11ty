@@ -30,23 +30,14 @@ module.exports = async function () {
         1
       )
 
-      // populate the subtext to show the appropriate range if it spans multiple seasons
-      // this yields a string in the format of S1E1 - S2E2 or S1E1 - E2
-      const subtext =
-        matchedEpisode['season'] === episode['episode']['season']
-          ? `S${matchedEpisode['startingSeason'] || matchedEpisode['season']}E${
-              matchedEpisode['startingEpisode'] || matchedEpisode['episode']
-            } - E${episode['episode']['number']}`
-          : `S${matchedEpisode['startingSeason'] || matchedEpisode['season']}E${
-              matchedEpisode['startingEpisode'] || matchedEpisode['episode']
-            } - S${episode['episode']['season']}E${episode['episode']['number']}`
-
       // push the new episode to the array
       episodes.push({
         name: matchedEpisode['name'],
         title: matchedEpisode['title'],
         url: `https://trakt.tv/shows/${episode['show']['ids']['slug']}`,
-        subtext,
+        subtext: `S${matchedEpisode['startingSeason'] || matchedEpisode['season']}E${
+          matchedEpisode['startingEpisode'] || matchedEpisode['episode']
+        } - S${episode['episode']['season']}E${episode['episode']['number']}`,
         image:
           `https://cdn.coryd.dev/tv/${matchedEpisode['name']
             .replace(':', '')
