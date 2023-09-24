@@ -6413,9 +6413,9 @@
   },
   "https://www.goodreads.com/review/show/5853791826": {
     "id": "aHR0cHM6Ly93d3cuZ29vZHJlYWRzLmNvbS9yZXZpZXcvc2hvdy81ODUzNzkxODI2",
-    "title": "📖: Let&#39;s Go",
+    "title": "📖: Let's Go",
     "url": "https://www.goodreads.com/review/show/5853791826",
-    "content_text": "📖: Let&#39;s Go  https://www.goodreads.com/review/show/5853791826",
+    "content_text": "📖: Let's Go  https://www.goodreads.com/review/show/5853791826",
     "date_published": "Tue, 19 Sep 2023 22:55:58 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111095959954488602"
@@ -6424,13 +6424,32 @@
   },
   "https://pxlnv.com/linklog/stream-buy-music/": {
     "id": "aHR0cHM6Ly9weGxudi5jb20vbGlua2xvZy9zdHJlYW0tYnV5LW11c2ljLw==",
-    "title": "🔗: &#39;It Is Possible to Both Stream and Buy Music&#39;",
+    "title": "🔗: 'It Is Possible to Both Stream and Buy Music'",
     "url": "https://pxlnv.com/linklog/stream-buy-music/",
-    "content_text": "🔗: &#39;It Is Possible to Both Stream and Buy Music&#39;  https://pxlnv.com/linklog/stream-buy-music/",
+    "content_text": "🔗: 'It Is Possible to Both Stream and Buy Music'  https://pxlnv.com/linklog/stream-buy-music/",
     "date_published": "Tue, 19 Sep 2023 00:00:00 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111095035261424022"
     ],
     "lastTootTimestamp": 1695175709006
+  },
+  "https://letterboxd.com/cdme/film/the-popes-exorcist/": {
+    "id": "aHR0cHM6Ly9sZXR0ZXJib3hkLmNvbS9jZG1lL2ZpbG0vdGhlLXBvcGVzLWV4b3JjaXN0Lw==",
+    "title": "🎥: The Pope&#039;s Exorcist, 2023 - ★★½",
+    "url": "https://letterboxd.com/cdme/film/the-popes-exorcist/",
+    "content_text": "🎥: The Pope&#039;s Exorcist, 2023 - ★★½ #Movies #Letterboxd https://letterboxd.com/cdme/film/the-popes-exorcist/",
+    "date_published": "Sun, 24 Sep 2023 18:44:37 +0000",
+    "toots": []
+  },
+  "https://www.goodreads.com/review/show/5756830605": {
+    "id": "aHR0cHM6Ly93d3cuZ29vZHJlYWRzLmNvbS9yZXZpZXcvc2hvdy81NzU2ODMwNjA1",
+    "title": "📖: Girl in a Band",
+    "url": "https://www.goodreads.com/review/show/5756830605",
+    "content_text": "📖: Girl in a Band  https://www.goodreads.com/review/show/5756830605",
+    "date_published": "Sun, 24 Sep 2023 16:58:44 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111121909989062546"
+    ],
+    "lastTootTimestamp": 1695585784802
   }
 }
