@@ -39,7 +39,6 @@ Software and services that I use for work and my own enjoyment.
 
 - [Orion](https://browser.kagi.com)
 - [Obsidian](https://obsidian.md)
-- [Todoist](https://todoist.com)
 - [Mona](https://mastodon.social/@MonaApp)
 - [ReadKit](https://readkit.app)
 - [Parcel](https://parcelapp.net)
