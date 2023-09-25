@@ -1925,10 +1925,10 @@ electron-to-chromium@^1.4.477:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.508.tgz#5641ff2f5ba11df4bd960fe6a2f9f70aa8b9af96"
   integrity sha512-FFa8QKjQK/A5QuFr2167myhMesGrhlOBD+3cYNxO9/S4XzHEXesyTD/1/xF644gC8buFPz3ca6G1LOQD0tZrrg==
 
-eleventy-plugin-tabler-icons@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/eleventy-plugin-tabler-icons/-/eleventy-plugin-tabler-icons-2.0.6.tgz#04ea88cfec61a0b7c1fbc5cb9f434e5409de819f"
-  integrity sha512-5wu9P6WfKxhSVc0UTdxQpp3x/AvMmApriOgZ1o2NZ2nKwT7Y/sDiGD2B9Xqj4nypuCGzVOnpnYZebd2MRQdN9Q==
+eleventy-plugin-tabler-icons@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-tabler-icons/-/eleventy-plugin-tabler-icons-2.0.7.tgz#84d647a350ee2db25a335f26443c10ba57a71b2d"
+  integrity sha512-4Fs1ELlPLSFiqgzNrEY4GN9Ieb1zncs1/y7Y41Q8HZ71+Z1Vl+PlI43s2Uqv8EwSttJZ8BIKqjbJMx2XT5Dh9Q==
 
 eleventy-plugin-unfurl@^1.0.0:
   version "1.0.0"
