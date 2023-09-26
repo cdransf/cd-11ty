@@ -6454,5 +6454,16 @@
       "https://social.lol/users/cory/statuses/111121909989062546"
     ],
     "lastTootTimestamp": 1695585784802
+  },
+  "https://letterboxd.com/cdme/film/blue-beetle/": {
+    "id": "aHR0cHM6Ly9sZXR0ZXJib3hkLmNvbS9jZG1lL2ZpbG0vYmx1ZS1iZWV0bGUv",
+    "title": "🎥: Blue Beetle, 2023 - ★★★",
+    "url": "https://letterboxd.com/cdme/film/blue-beetle/",
+    "content_text": "🎥: Blue Beetle, 2023 - ★★★ #Movies #Letterboxd https://letterboxd.com/cdme/film/blue-beetle/",
+    "date_published": "Tue, 26 Sep 2023 15:49:48 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111132763329249418"
+    ],
+    "lastTootTimestamp": 1695751393644
   }
 }
