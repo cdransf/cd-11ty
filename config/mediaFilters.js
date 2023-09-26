@@ -18,7 +18,7 @@ module.exports = {
       if (item.type === 'book') normalized['alt'] = item['title']
       if (item.type === 'movie') {
         normalized['title'] = item['title']
-        normalized['alt'] = `${item['title']} - ${item['summary']}`
+        normalized['alt'] = `${item['title']} - ${item['description']}`
       }
       if (item.type === 'tv') {
         normalized['title'] = item['title']

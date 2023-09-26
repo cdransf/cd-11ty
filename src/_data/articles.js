@@ -13,7 +13,7 @@ module.exports = async function () {
     return {
       title: item['title'],
       date: item['pubDate'],
-      summary: item['description'],
+      description: item['contentSnippet'],
       url: item['link'],
       id: item['guid'],
       type: 'article',

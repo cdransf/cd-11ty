@@ -15,7 +15,7 @@ module.exports = async function () {
       return {
         title: item['title'],
         date: item['pubDate'],
-        summary: item['contentSnippet'],
+        description: item['contentSnippet'],
         image: images.length
           ? images
               .map((image) => image.replace(/.*src="([^"]*)".*/, '$1'))[0]
