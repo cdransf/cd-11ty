@@ -1,0 +1,13 @@
+---
+layout: null
+eleventyExcludeFromCollections: true
+permalink: /feeds/articles
+---
+{% render "partials/feeds/rss.liquid"
+  permalink:"/feeds/articles"
+  title:"Articles • Cory Dransfeldt"
+  description:"Articles I've liked recently."
+  data:articles
+  updated:articles[0].date
+  site:site
+%}
