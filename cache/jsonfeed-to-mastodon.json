@@ -6498,5 +6498,16 @@
       "https://social.lol/users/cory/statuses/111135122428198286"
     ],
     "lastTootTimestamp": 1695787390635
+  },
+  "https://coryd.dev/posts/2023/it-is-possible-to-both-stream-and-buy-music/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9pdC1pcy1wb3NzaWJsZS10by1ib3RoLXN0cmVhbS1hbmQtYnV5LW11c2ljLw==",
+    "title": "📝: 'It Is Possible to Both Stream and Buy Music'",
+    "url": "https://coryd.dev/posts/2023/it-is-possible-to-both-stream-and-buy-music/",
+    "content_text": "📝: 'It Is Possible to Both Stream and Buy Music' #Music https://coryd.dev/posts/2023/it-is-possible-to-both-stream-and-buy-music/",
+    "date_published": "Tue, 19 Sep 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111138425819164288"
+    ],
+    "lastTootTimestamp": 1695837796351
   }
 }
