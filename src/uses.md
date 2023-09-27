@@ -52,7 +52,6 @@ Software and services that I use for work and my own enjoyment.
 - [VS Code](https://code.visualstudio.com)
 - [iTerm2](https://iterm2.com)
 - [Magnet](https://magnet.crowdcafe.com)
-- [Choosy](https://choosy.app)
 - [Bartender](https://www.macbartender.com)
 - [AirBuddy](https://v2.airbuddy.app)
 - [Lingon](https://www.peterborgapps.com/lingon)
