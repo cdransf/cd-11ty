@@ -17,7 +17,7 @@ module.exports = {
       if (entry.data?.post_excerpt) excerpt = md.render(entry.data.post_excerpt)
 
       // if there's a valid entry return a normalized object
-      if (entry && !entry.data?.link) {
+      if (entry)
         posts.push({
           title: entry.data?.title || entry.title,
           url: entry.url.includes('http') ? entry.url : new URL(entry.url, BASE_URL).toString(),
@@ -25,7 +25,6 @@ module.exports = {
           date,
           excerpt,
         })
-      }
     })
     return posts
   },

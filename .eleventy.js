@@ -79,25 +79,6 @@ module.exports = function (eleventyConfig) {
     return Array.from(tagsSet).sort()
   })
 
-  eleventyConfig.addCollection('links', (collection) => {
-    const links = []
-    collection.getAll().forEach((item) => {
-      if (item.data.collections.posts) {
-        item.data.collections.posts.forEach((post) => {
-          const url = post.data.link
-          if (url?.includes('http') && !links.find((link) => link.title === post.data.title))
-            links.push({
-              url: post.data.link,
-              title: post.data.title,
-              date: post.data.date,
-              description: post.data.post_excerpt ? md.render(post.data.post_excerpt) : '',
-            })
-        })
-      }
-    })
-    return links
-  })
-
   eleventyConfig.addCollection('tagMap', (collection) => {
     const tags = {}
     collection.getAll().forEach((item) => {
