@@ -91,6 +91,14 @@ module.exports = function (eleventyConfig) {
           if (tagString) tags[url] = tagString
         })
       }
+      if (item.data.articles) {
+        item.data.articles.forEach((article) => {
+          const tagString = [...new Set(article.tags.map((tag) => tagAliases[tag.toLowerCase()]))]
+            .join(' ')
+            .trim()
+          if (tagString) tags[article.url] = tagString
+        })
+      }
     })
     return tags
   })

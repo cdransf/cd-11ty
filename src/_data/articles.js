@@ -1,24 +1,28 @@
-const Parser = require('rss-parser')
-const { AssetCache } = require('@11ty/eleventy-fetch')
+const EleventyFetch = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
-  const parser = new Parser()
-  const url = process.env.SECRET_FEED_INSTAPAPER_LIKES
-  const asset = new AssetCache('articles_data')
-  if (asset.isCacheValid('1h')) return await asset.getCachedValue()
-  const res = await parser.parseURL(url).catch((error) => {
-    console.log(error.message)
+  const MATTER_TOKEN = process.env.ACCESS_TOKEN_MATTER
+  const headers = { Cookie: MATTER_TOKEN }
+  const url = `https://web.getmatter.com/api/library_items/favorites_feed`
+  const res = EleventyFetch(url, {
+    duration: '1h',
+    type: 'json',
+    fetchOptions: { headers },
   })
-  const articles = res.items.map((item) => {
+  const feed = await res
+  const articles = feed.feed
+  return articles.reverse().map((article) => {
+    const tags = article['content']['tags'].map((tag) => tag['name'])
     return {
-      title: item['title'],
-      date: item['pubDate'],
-      description: item['contentSnippet'],
-      url: item['link'],
-      id: item['guid'],
-      type: 'article',
+      url: article['content']['url'],
+      title: article['content']['title'],
+      date: article['content']['library']['modified_date']
+        ? new Date(article['content']['library']['modified_date'])
+        : new Date(article['content']['publication_date']),
+      description: article['content']['excerpt'],
+      notes: article['content']['my_notes'] || '',
+      tags,
+      id: btoa(article['id']),
     }
   })
-  await asset.save(articles, 'json')
-  return articles
 }

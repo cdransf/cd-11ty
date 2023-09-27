@@ -40,7 +40,7 @@ Software and services that I use for work and my own enjoyment.
 - [Orion](https://browser.kagi.com)
 - [Obsidian](https://obsidian.md)
 - [Mona](https://mastodon.social/@MonaApp)
-- [ReadKit](https://readkit.app)
+- [NetNewsWire](https://netnewswire.com)
 - [Parcel](https://parcelapp.net)
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">iOS</h3>
@@ -52,6 +52,7 @@ Software and services that I use for work and my own enjoyment.
 - [VS Code](https://code.visualstudio.com)
 - [iTerm2](https://iterm2.com)
 - [Magnet](https://magnet.crowdcafe.com)
+- [Keyboard Maestro](https://www.keyboardmaestro.com)
 - [Bartender](https://www.macbartender.com)
 - [AirBuddy](https://v2.airbuddy.app)
 - [Lingon](https://www.peterborgapps.com/lingon)
@@ -75,7 +76,7 @@ Software and services that I use for work and my own enjoyment.
 - [Mullvad](https://mullvad.net)
 - [Kagi](https://kagi.com)
 - [Feedbin](https://feedbin.com)
-- [Instapaper](https://instapaper.com)
+- [Matter](https://getmatter.com)
 - [forwardemail.net](https://forwardemail.net)
 - [1Password](https://1password.com)
 - [Spotify](https://spotify.com)
