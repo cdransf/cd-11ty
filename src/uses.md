@@ -51,11 +51,8 @@ Software and services that I use for work and my own enjoyment.
 
 - [VS Code](https://code.visualstudio.com)
 - [iTerm2](https://iterm2.com)
-- [Alfred](https://alfredapp.com)
-- [Keyboard Maestro](https://www.keyboardmaestro.com/)
 - [Magnet](https://magnet.crowdcafe.com)
 - [Choosy](https://choosy.app)
-- [Hazel](https://www.noodlesoft.com)
 - [Bartender](https://www.macbartender.com)
 - [AirBuddy](https://v2.airbuddy.app)
 - [Lingon](https://www.peterborgapps.com/lingon)
