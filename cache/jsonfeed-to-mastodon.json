@@ -6483,7 +6483,10 @@
     "url": "https://herman.bearblog.dev/the-frustration-loop/",
     "content_text": "📰: The Frustration Loop  https://herman.bearblog.dev/the-frustration-loop/",
     "date_published": "Fri, 22 Sep 2023 02:11:11 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111134673703549176"
+    ],
+    "lastTootTimestamp": 1695780543625
   },
   "https://medium.com/reloading/javascript-start-up-performance-69200f43b201": {
     "id": "aHR0cHM6Ly9tZWRpdW0uY29tL3JlbG9hZGluZy9qYXZhc2NyaXB0LXN0YXJ0LXVwLXBlcmZvcm1hbmNlLTY5MjAwZjQzYjIwMQ==",
@@ -6491,6 +6494,9 @@
     "url": "https://medium.com/reloading/javascript-start-up-performance-69200f43b201",
     "content_text": "📰: JavaScript Start-up Performance  https://medium.com/reloading/javascript-start-up-performance-69200f43b201",
     "date_published": "Thu, 21 Sep 2023 23:42:32 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111135122428198286"
+    ],
+    "lastTootTimestamp": 1695787390635
   }
 }
