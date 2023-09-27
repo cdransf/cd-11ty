@@ -6465,5 +6465,32 @@
       "https://social.lol/users/cory/statuses/111132763329249418"
     ],
     "lastTootTimestamp": 1695751393644
+  },
+  "https://dev.to/thejaredwilcurt/bun-hype-how-we-learned-nothing-from-yarn-2n3j": {
+    "id": "aHR0cHM6Ly9kZXYudG8vdGhlamFyZWR3aWxjdXJ0L2J1bi1oeXBlLWhvdy13ZS1sZWFybmVkLW5vdGhpbmctZnJvbS15YXJuLTJuM2o=",
+    "title": "📰: Bun hype. How we learned nothing from Yarn",
+    "url": "https://dev.to/thejaredwilcurt/bun-hype-how-we-learned-nothing-from-yarn-2n3j",
+    "content_text": "📰: Bun hype. How we learned nothing from Yarn  https://dev.to/thejaredwilcurt/bun-hype-how-we-learned-nothing-from-yarn-2n3j",
+    "date_published": "Tue, 26 Sep 2023 22:54:34 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111134207149273700"
+    ],
+    "lastTootTimestamp": 1695773424612
+  },
+  "https://herman.bearblog.dev/the-frustration-loop/": {
+    "id": "aHR0cHM6Ly9oZXJtYW4uYmVhcmJsb2cuZGV2L3RoZS1mcnVzdHJhdGlvbi1sb29wLw==",
+    "title": "📰: The Frustration Loop",
+    "url": "https://herman.bearblog.dev/the-frustration-loop/",
+    "content_text": "📰: The Frustration Loop  https://herman.bearblog.dev/the-frustration-loop/",
+    "date_published": "Fri, 22 Sep 2023 02:11:11 +0000",
+    "toots": []
+  },
+  "https://medium.com/reloading/javascript-start-up-performance-69200f43b201": {
+    "id": "aHR0cHM6Ly9tZWRpdW0uY29tL3JlbG9hZGluZy9qYXZhc2NyaXB0LXN0YXJ0LXVwLXBlcmZvcm1hbmNlLTY5MjAwZjQzYjIwMQ==",
+    "title": "📰: JavaScript Start-up Performance",
+    "url": "https://medium.com/reloading/javascript-start-up-performance-69200f43b201",
+    "content_text": "📰: JavaScript Start-up Performance  https://medium.com/reloading/javascript-start-up-performance-69200f43b201",
+    "date_published": "Thu, 21 Sep 2023 23:42:32 +0000",
+    "toots": []
   }
 }
