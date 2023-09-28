@@ -6520,5 +6520,16 @@
       "https://social.lol/users/cory/statuses/111141258014934425"
     ],
     "lastTootTimestamp": 1695881012270
+  },
+  "https://www.goodreads.com/review/show/5850594500": {
+    "id": "aHR0cHM6Ly93d3cuZ29vZHJlYWRzLmNvbS9yZXZpZXcvc2hvdy81ODUwNTk0NTAw",
+    "title": "📖: Blood in the Machine: The Origins of the Rebellion Against Big Tech",
+    "url": "https://www.goodreads.com/review/show/5850594500",
+    "content_text": "📖: Blood in the Machine: The Origins of the Rebellion Against Big Tech  https://www.goodreads.com/review/show/5850594500",
+    "date_published": "Thu, 28 Sep 2023 15:27:13 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111144088085954309"
+    ],
+    "lastTootTimestamp": 1695924195685
   }
 }
