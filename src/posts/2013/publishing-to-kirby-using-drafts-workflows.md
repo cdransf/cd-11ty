@@ -67,6 +67,6 @@ The final two post types / work flows I use are identical to the first aside fro
 textastic://x-callback-url/new?name=note.gallery.txt&amp;text=Title:%20[[title]]%0D----%0DWhen:%20[[date|%m.%d.%Y]]%0D----%0DText:%20[[body]]
 ```
 
-Using these actions to publish content from Drafts to your Kirby-based site should be as simple as changing the file name sent to Textastic in each workflow. If you run in to any problems or have any suggestions for improving these workflows feel free to [let me know](mailto:cory.dransfeldt@gmail.com).
+Using these actions to publish content from Drafts to your Kirby-based site should be as simple as changing the file name sent to Textastic in each workflow. If you run in to any problems or have any suggestions for improving these workflows feel free to [let me know](mailto:<coryd@fastmail.com>.
 
 Many thanks to [Alex Duner](http://alexduner.com/) and [Nate Boateng](http://rantsandrambles.net/) for the Statamic Drafts workflow they provided to get me pointed in the right direction on this.

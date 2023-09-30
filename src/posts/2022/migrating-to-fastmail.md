@@ -11,7 +11,7 @@ I've used (and/or tried) nearly every email service I've heard of and have stuck
 
 ### Kicking things off
 
-Register for an account at [fastmail.com](https://ref.fm/u12449450)[^3] — you'll be run through their lightweight onboarding process which allows you to select an address at a domain they own or use your own. If you use your own, they'll guide you through configuring the DNS records for it, often with registrar specific instructions.
+Register for an account at [fastmail.com](https://ref.fm/u30190984)[^3] — you'll be run through their lightweight onboarding process which allows you to select an address at a domain they own or use your own. If you use your own, they'll guide you through configuring the DNS records for it, often with registrar specific instructions.
 
 They also offer [extensive documentation](https://www.fastmail.com/help/domain_management_custom_dns.html) on this process and offer a UI that validates that the records you have set are correct. For example, your finalized records would look like the following:
 
@@ -81,7 +81,7 @@ All of these particular folders live as children of my Archive folder and are au
 
 If you're a [1Password](https://1password.com) user you can link your accounts and generate per-service, [masked emails for improved security](https://www.fastmail.help/hc/en-us/articles/4406536368911-Masked-Email). The idea here being that if your primary email is known, it can be used to trigger password resets at different services or leveraged in brute-force attacks, but this is mitigated by using a masked/pseudo-random address for each service.
 
-Did I miss anything? [Email me](mailto:cory.dransfeldt@gmail.com)[^7].
+Did I miss anything? [Email me](mailto:coryd@fastmail.com)[^7].
 
 [^1]: As an aside, [mailbox.org](https://mailbox.org) is also quite nice and offers some nice privacy features but isn't _quite_ as polished as Fastmail.
 [^2]: Which amounts to seamless syncing with iOS at the system level or via an app like [DAVx](https://play.google.com/store/apps/details?id=at.bitfire.davdroid&hl=en) on Android.
