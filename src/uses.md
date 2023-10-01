@@ -51,6 +51,7 @@ Software and services that I use for work and my own enjoyment.
 
 - [VS Code](https://code.visualstudio.com)
 - [iTerm2](https://iterm2.com)
+- [Dato](https://sindresorhus.com/dato)
 - [Magnet](https://magnet.crowdcafe.com)
 - [Keyboard Maestro](https://www.keyboardmaestro.com)
 - [Bartender](https://www.macbartender.com)
@@ -73,7 +74,8 @@ Software and services that I use for work and my own enjoyment.
 - <a onclick="clicky.goal('Referral: Bunny.net')" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>
 - <a onclick="clicky.goal('Referral: Clicky')" href="https://clicky.com/101424044">Clicky</a>
 - <a onclick="clicky.goal('Referral: Feedpress')" href="https://feedpress.com/?affid=34370">Feedpress</a>
-- [Mullvad](https://mullvad.net)
+- [SavvyCal](https://savvycal.com)
+- [IVPN](https://www.ivpn.net)
 - [Kagi](https://kagi.com)
 - [Feedbin](https://feedbin.com)
 - [Matter](https://getmatter.com)

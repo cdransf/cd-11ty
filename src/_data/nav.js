@@ -28,7 +28,7 @@ module.exports = async function () {
       { name: 'GitHub', url: 'https://github.com/cdransf', icon: 'brand-github' },
       { name: 'LinkedIn', url: 'https://www.linkedin.com/in/cdransf/', icon: 'brand-linkedin' },
       {
-        name: 'Google Calendar',
+        name: 'Calendar',
         url: 'https://coryd.dev/calendar',
         icon: 'calendar-plus',
       },

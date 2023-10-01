@@ -40,7 +40,7 @@
 # redirects
 /articles/ / 301!
 /sitemap.txt /sitemap.xml 301!
-/calendar https://fantastical.app/cdransf/quick-chat 301!
+/calendar https://savvycal.com/ced/quick-chat 301!
 
 # netlify app domain
 https://cdme.netlify.app https://coryd.dev 301!
