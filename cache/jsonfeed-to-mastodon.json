@@ -6608,7 +6608,10 @@
     "url": "https://trakt.tv/movies/the-ninth-gate-1999",
     "content_text": "🎥: The Ninth Gate #Movies #Trakt https://trakt.tv/movies/the-ninth-gate-1999",
     "date_published": "Wed, 06 Sep 2023 20:15:00 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111167209074587616"
+    ],
+    "lastTootTimestamp": 1696276994025
   },
   "https://trakt.tv/movies/hypnotic-2023": {
     "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvaHlwbm90aWMtMjAyMw==",
