@@ -19,7 +19,6 @@ module.exports = async function () {
         url: 'https://open.spotify.com/user/mdh0acvmvfsbunzt6ywnq2tg3',
         icon: 'brand-spotify',
       },
-      { name: 'Letterboxd', url: 'https://letterboxd.com/cdme', icon: 'brand-letterboxd' },
       { name: 'Trakt', url: 'https://trakt.tv/users/cdransf', icon: 'device-tv' },
       { name: 'Goodreads', url: 'https://www.goodreads.com/cdransf', icon: 'books' },
       { name: 'Buy Me a Coffee', url: 'https://www.buymeacoffee.com/cory', icon: 'cup' },

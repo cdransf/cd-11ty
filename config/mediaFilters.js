@@ -15,11 +15,7 @@ module.exports = {
         normalized['alt'] = `${item['plays']} plays of ${item['title']}`
         normalized['subtext'] = `${item['plays']} plays`
       }
-      if (item.type === 'book') normalized['alt'] = item['title']
-      if (item.type === 'movie') {
-        normalized['title'] = item['title']
-        normalized['alt'] = `${item['title']} - ${item['description']}`
-      }
+      if (item.type === 'book' || item.type === 'movie') normalized['alt'] = item['title']
       if (item.type === 'tv') {
         normalized['title'] = item['title']
         normalized['alt'] = `${item['title']} from ${item['name']}`

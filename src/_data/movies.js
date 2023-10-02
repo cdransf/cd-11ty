@@ -1,32 +1,43 @@
-const Parser = require('rss-parser')
-const { AssetCache } = require('@11ty/eleventy-fetch')
+const EleventyFetch = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
-  const parser = new Parser()
-  const url = 'https://letterboxd.com/cdme/rss'
-  const asset = new AssetCache('movies_data')
-  if (asset.isCacheValid('1h')) return await asset.getCachedValue()
-  const res = await parser.parseURL(url).catch((error) => {
-    console.log(error.message)
+  const TV_KEY = process.env.API_KEY_TRAKT
+  const MOVIEDB_KEY = process.env.API_KEY_MOVIEDB
+  const url = 'https://api.trakt.tv/users/cdransf/history/movies?page=1&limit=30'
+  const res = EleventyFetch(url, {
+    duration: '1h',
+    type: 'json',
+    fetchOptions: {
+      headers: {
+        'Content-Type': 'application/json',
+        'trakt-api-version': 2,
+        'trakt-api-key': TV_KEY,
+      },
+    },
+  }).catch()
+  const data = await res
+  const movies = data.map((item) => {
+    return {
+      title: item['movie']['title'],
+      dateAdded: item['watched_at'],
+      url: `https://trakt.tv/movies/${item['movie']['ids']['slug']}`,
+      id: item['movie']['ids']['trakt'],
+      tmdbId: item['movie']['ids']['tmdb'],
+      type: 'movie',
+    }
   })
-  const movies = res.items
-    .map((item) => {
-      const images = item['content']?.match(/<img [^>]*src="[^"]*"[^>]*>/gm) || []
-      return {
-        title: item['title'],
-        date: item['pubDate'],
-        description: item['contentSnippet'],
-        image: images.length
-          ? images
-              .map((image) => image.replace(/.*src="([^"]*)".*/, '$1'))[0]
-              .replace('https://a.ltrbxd.com', 'https://movies.coryd.dev')
-          : 'https://cdn.coryd.dev/movies/missing-movie.jpg',
-        url: item['link'],
-        id: item['guid'],
-        type: 'movie',
-      }
+
+  for (const movie of movies) {
+    const tmdbId = movie['tmdbId']
+    const tmdbUrl = `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${MOVIEDB_KEY}`
+    const tmdbRes = EleventyFetch(tmdbUrl, {
+      duration: '1h',
+      type: 'json',
     })
-    .filter((movie) => !movie.url.includes('/list/'))
-  await asset.save(movies, 'json')
+    const tmdbData = await tmdbRes
+    const posterPath = tmdbData['poster_path']
+    movie.image = `https://movies.coryd.dev/t/p/w500${posterPath}`
+  }
+
   return movies
 }

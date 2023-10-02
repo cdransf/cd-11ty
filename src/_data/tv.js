@@ -2,6 +2,7 @@ const EleventyFetch = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
   const TV_KEY = process.env.API_KEY_TRAKT
+  const MOVIEDB_KEY = process.env.API_KEY_MOVIEDB
   const url = 'https://api.trakt.tv/users/cdransf/history/shows?page=1&limit=30'
   const res = EleventyFetch(url, {
     duration: '1h',
@@ -15,59 +16,66 @@ module.exports = async function () {
     },
   }).catch()
   const data = await res
-  const episodes = []
+  const episodeData = []
   data.reverse().forEach((episode) => {
     const episodeNumber = episode['episode']['number']
     const seasonNumber = episode['episode']['season']
 
-    if (episodes.find((e) => e.name === episode?.['show']?.['title'])) {
+    if (episodeData.find((e) => e.name === episode?.['show']?.['title'])) {
       // cache the matched episode reference
-      const matchedEpisode = episodes.find((e) => e.name === episode?.['show']?.['title'])
+      const matchedEpisode = episodeData.find((e) => e.name === episode?.['show']?.['title'])
 
       // remove the matched episode from the array
-      episodes.splice(
-        episodes.findIndex((e) => e.name === episode['show']['title']),
+      episodeData.splice(
+        episodeData.findIndex((e) => e.name === episode['show']['title']),
         1
       )
 
       // push the new episode to the array
-      episodes.push({
+      episodeData.push({
         name: matchedEpisode['name'],
         title: matchedEpisode['title'],
         url: `https://trakt.tv/shows/${episode['show']['ids']['slug']}`,
         subtext: `S${matchedEpisode['startingSeason'] || matchedEpisode['season']}E${
           matchedEpisode['startingEpisode'] || matchedEpisode['episode']
         } - S${episode['episode']['season']}E${episode['episode']['number']}`,
-        image:
-          `https://cdn.coryd.dev/tv/${matchedEpisode['name']
-            .replace(':', '')
-            .replace(/\s+/g, '-')
-            .toLowerCase()}.jpg` || 'https://cdn.coryd.dev/tv/missing-tv.jpg',
         startingEpisode: matchedEpisode['episode'],
         startingSeason: matchedEpisode['season'],
         episode: episodeNumber,
         season: seasonNumber,
+        id: episode['show']['ids']['trakt'],
+        tmdbId: episode['show']['ids']['tmdb'],
         type: 'tv-range',
       })
     } else {
       // if an episode with the same show name doesn't exist, push it to the array
-      episodes.push({
+      episodeData.push({
         name: episode['show']['title'],
         title: episode['episode']['title'],
         url: `https://trakt.tv/shows/${episode['show']['ids']['slug']}/seasons/${episode['episode']['season']}/episodes/${episode['episode']['number']}`,
         subtext: `${episode['show']['title']} • S${episode['episode']['season']}E${episode['episode']['number']}`,
-        image:
-          `https://cdn.coryd.dev/tv/${episode['show']['title']
-            .replace(':', '')
-            .replace(/\s+/g, '-')
-            .toLowerCase()}.jpg` || 'https://cdn.coryd.dev/tv/missing-tv.jpg',
         episode: episodeNumber,
         season: seasonNumber,
+        id: episode['show']['ids']['trakt'],
+        tmdbId: episode['show']['ids']['tmdb'],
         type: 'tv',
       })
     }
   })
 
-  // return a reverse sorted array of episodes to match the watch order
-  return episodes.reverse()
+  const episodes = episodeData.reverse()
+
+  for (const episode of episodes) {
+    const tmdbId = episode['tmdbId']
+    const tmdbUrl = `https://api.themoviedb.org/3/tv/${tmdbId}?api_key=${MOVIEDB_KEY}`
+    const tmdbRes = EleventyFetch(tmdbUrl, {
+      duration: '1h',
+      type: 'json',
+    })
+    const tmdbData = await tmdbRes
+    const posterPath = tmdbData['poster_path']
+    episode.image = `https://movies.coryd.dev/t/p/w500${posterPath}`
+  }
+
+  return episodes
 }

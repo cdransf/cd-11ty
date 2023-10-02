@@ -1,0 +1,13 @@
+---
+layout: null
+eleventyExcludeFromCollections: true
+permalink: /feeds/movies
+---
+{% render "partials/feeds/rss.liquid"
+  permalink:"/feeds/movies"
+  title:"Movies • Cory Dransfeldt"
+  description:"Movies I've watched recently."
+  data:movies
+  updated:movies[0].dateAdded
+  site:site
+%}
