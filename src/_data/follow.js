@@ -3,7 +3,6 @@ module.exports = async function () {
   const feed = new ActivityFeed()
   feed.addSource('rss', '📝', 'https://coryd.dev/feeds/posts')
   feed.addSource('rss', '🎥', 'https://coryd.dev/feeds/movies')
-  feed.addSource('rss', '📰', 'https://coryd.dev/feeds/articles')
   feed.addSource('rss', '📖', 'https://coryd.dev/feeds/books')
   const entries = feed.getEntries().catch()
   const res = await entries

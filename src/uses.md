@@ -37,10 +37,10 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
 
-- [Orion](https://browser.kagi.com)
 - [Obsidian](https://obsidian.md)
 - [Mona](https://mastodon.social/@MonaApp)
 - [NetNewsWire](https://netnewswire.com)
+- [GoodLinks](http://goodlinks.app)
 - [Parcel](https://parcelapp.net)
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">iOS</h3>
@@ -77,7 +77,6 @@ Software and services that I use for work and my own enjoyment.
 - [IVPN](https://www.ivpn.net)
 - [Kagi](https://kagi.com)
 - [Feedbin](https://feedbin.com)
-- [Matter](https://getmatter.com)
 - [forwardemail.net](https://forwardemail.net)
 - [1Password](https://1password.com)
 - [Spotify](https://spotify.com)
