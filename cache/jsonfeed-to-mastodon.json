@@ -6560,7 +6560,10 @@
     "url": "https://trakt.tv/movies/blue-beetle-2023",
     "content_text": "🎥: Blue Beetle #Movies #Trakt https://trakt.tv/movies/blue-beetle-2023",
     "date_published": "Tue, 26 Sep 2023 20:15:00 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111168648467862356"
+    ],
+    "lastTootTimestamp": 1696298957397
   },
   "https://trakt.tv/movies/the-pope-s-exorcist-2023": {
     "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvdGhlLXBvcGUtcy1leG9yY2lzdC0yMDIz",
