@@ -55,7 +55,6 @@ Software and services that I use for work and my own enjoyment.
 - [Magnet](https://magnet.crowdcafe.com)
 - [Bartender](https://www.macbartender.com)
 - [AirBuddy](https://v2.airbuddy.app)
-- [Lingon](https://www.peterborgapps.com/lingon)
 - [Meta](https://www.nightbirdsevolve.com/meta)
 - [Permute](https://software.charliemonroe.net/permute)
 - [SoundSource](https://rogueamoeba.com/soundsource)
