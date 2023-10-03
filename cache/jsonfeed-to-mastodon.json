@@ -6571,7 +6571,10 @@
     "url": "https://trakt.tv/movies/the-pope-s-exorcist-2023",
     "content_text": "🎥: The Pope's Exorcist #Movies #Trakt https://trakt.tv/movies/the-pope-s-exorcist-2023",
     "date_published": "Sun, 24 Sep 2023 20:15:00 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111169570187488527"
+    ],
+    "lastTootTimestamp": 1696313021729
   },
   "https://trakt.tv/movies/talk-to-me-2023": {
     "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvdGFsay10by1tZS0yMDIz",
