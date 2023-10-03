@@ -6659,7 +6659,10 @@
     "url": "https://trakt.tv/movies/indiana-jones-and-the-dial-of-destiny-2023",
     "content_text": "🎥: Indiana Jones and the Dial of Destiny #Movies #Trakt https://trakt.tv/movies/indiana-jones-and-the-dial-of-destiny-2023",
     "date_published": "Sat, 02 Sep 2023 20:15:00 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111173342168874695"
+    ],
+    "lastTootTimestamp": 1696370577596
   },
   "https://trakt.tv/movies/fast-color-2019": {
     "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvZmFzdC1jb2xvci0yMDE5",
