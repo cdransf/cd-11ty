@@ -53,6 +53,7 @@ Software and services that I use for work and my own enjoyment.
 - [iTerm2](https://iterm2.com)
 - [Dato](https://sindresorhus.com/dato)
 - [Magnet](https://magnet.crowdcafe.com)
+- [Keyboard Maestro](https://www.keyboardmaestro.com)
 - [Bartender](https://www.macbartender.com)
 - [AirBuddy](https://v2.airbuddy.app)
 - [Meta](https://www.nightbirdsevolve.com/meta)
