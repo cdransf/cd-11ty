@@ -12,10 +12,10 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 
 ## My latest posts
 <!-- BLOGPOSTS:START -->
+- [Migrating your Letterboxd data](https://coryd.dev/posts/2023/migrating-your-letterboxd-data/)
 - ['It Is Possible to Both Stream and Buy Music'](https://coryd.dev/posts/2023/it-is-possible-to-both-stream-and-buy-music/)
 - [Semi-automated hashtags for syndicated posts](https://coryd.dev/posts/2023/semi-automated-hashtags-syndicated-posts/)
 - [On imposter syndrome](https://coryd.dev/posts/2023/on-imposter-syndrome/)
 - [Now page: grouping episodes of the same tv show](https://coryd.dev/posts/2023/now-page-grouping-episodes-of-same-show/)
-- [Drying up now page templates and normalizing data in Eleventy](https://coryd.dev/posts/2023/drying-up-now-page-templates-eleventy/)
 <!-- BLOGPOSTS:END -->
 
