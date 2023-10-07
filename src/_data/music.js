@@ -75,10 +75,12 @@ module.exports = async function () {
         title: track['attributes']['albumName'],
         artist: track['attributes']['artistName'],
         image: track['attributes']['artwork']['url'].replace('{w}', '300').replace('{h}', '300'),
-        url: `https://musicbrainz.org/search?query=${track['attributes']['albumName'].replace(
+        url: `https://musicbrainz.org/taglookup/index?tag-lookup.artist=${track['attributes'][
+          'artistName'
+        ].replace(/\s+/g, '+')}&tag-lookup.release=${track['attributes']['albumName'].replace(
           /\s+/g,
           '+'
-        )}&type=recording`,
+        )}`,
         plays: 1,
         type: 'album',
       }
