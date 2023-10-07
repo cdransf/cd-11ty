@@ -46,7 +46,7 @@ module.exports = async function () {
     })
       .then((data) => data.json())
       .catch()
-    res = [...res, ...tracks['data']]
+    res = tracks['data'].length ? [...res, ...tracks['data']] : [...res]
     CURRENT_PAGE++
   }
 
