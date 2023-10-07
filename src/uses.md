@@ -37,7 +37,6 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
 
-- [Obsidian](https://obsidian.md)
 - [Mona](https://mastodon.social/@MonaApp)
 - [NetNewsWire](https://netnewswire.com)
 - [GoodLinks](http://goodlinks.app)
@@ -79,8 +78,6 @@ Software and services that I use for work and my own enjoyment.
 - [Feedbin](https://feedbin.com)
 - [forwardemail.net](https://forwardemail.net)
 - [1Password](https://1password.com)
-- [Spotify](https://spotify.com)
-- [Last.fm](https://last.fm)
 - [Trakt](https://trakt.tv)
 - [Goodreads](https://goodreads.com)
 - [Slack](http://slack.com)
