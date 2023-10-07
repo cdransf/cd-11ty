@@ -74,7 +74,7 @@ module.exports = async function () {
       response.albums[track['attributes']['albumName']] = {
         title: track['attributes']['albumName'],
         artist: track['attributes']['artistName'],
-        image: track['attributes']['artwork']['url'].replace('{w}', '300').replace('{h}', '300'),
+        image: track['attributes']['artwork']['url'].replace('{w}', '500').replace('{h}', '500'),
         url: `https://musicbrainz.org/taglookup/index?tag-lookup.artist=${track['attributes'][
           'artistName'
         ].replace(/\s+/g, '+')}&tag-lookup.release=${track['attributes']['albumName'].replace(
