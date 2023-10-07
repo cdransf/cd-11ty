@@ -17,7 +17,7 @@ export default async () => {
   return Response.json({
     artist: track['artistName'],
     title: track['name'],
-    emoji: '🎧',
+    text: `🎧 ${track['name']} by ${track['artistName']}`,
   })
 }
 

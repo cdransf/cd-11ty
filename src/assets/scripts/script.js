@@ -1,14 +1,13 @@
 ;(async function () {
   const nowPlaying = document.getElementById('now-playing')
+
   if (nowPlaying) {
-    const emoji = document.getElementById('now-playing-emoji')
     const content = document.getElementById('now-playing-content')
     const loading = document.getElementById('now-playing-loading')
+
     const populateNowPlaying = (data) => {
       loading.style.display = 'none'
-      emoji.innerText = data.emoji
-      content.innerText = `${data.title} by ${data.artist}`
-      emoji.classList.remove('hidden')
+      content.innerText = data.text
       content.classList.remove('hidden')
     }
 
@@ -19,12 +18,13 @@
       /* quiet catch */
     }
 
-    const res = await fetch('/api/now-playing', {
+    const data = await fetch('/api/now-playing', {
       type: 'json',
-    }).catch(() => {
-      loading.style.display = 'none'
     })
-    const data = await res.json()
+      .then((data) => data.json())
+      .catch(() => {
+        loading.style.display = 'none'
+      })
 
     try {
       localStorage.setItem('now-playing', JSON.stringify(data))
