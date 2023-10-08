@@ -24,7 +24,7 @@ export default async () => {
       return Response.json({
         title: traktRes['show']['title'],
         episode: traktRes['episode']['title'],
-        text: `📺 ${traktRes['show']['title']}: ${traktRes['episode']['title']}`,
+        text: `📺 ${traktRes['show']['title']} • ${traktRes['episode']['title']}`,
       })
     }
 
