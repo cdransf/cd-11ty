@@ -6737,5 +6737,16 @@
       "https://social.lol/users/cory/statuses/111182780185095389"
     ],
     "lastTootTimestamp": 1696514590289
+  },
+  "https://www.goodreads.com/review/show/5814902487": {
+    "id": "aHR0cHM6Ly93d3cuZ29vZHJlYWRzLmNvbS9yZXZpZXcvc2hvdy81ODE0OTAyNDg3",
+    "title": "📖: When McKinsey Comes to Town",
+    "url": "https://www.goodreads.com/review/show/5814902487",
+    "content_text": "📖: When McKinsey Comes to Town  https://www.goodreads.com/review/show/5814902487",
+    "date_published": "Sun, 08 Oct 2023 18:24:38 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111201181897111112"
+    ],
+    "lastTootTimestamp": 1696795378106
   }
 }
