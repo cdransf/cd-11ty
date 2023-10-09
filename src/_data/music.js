@@ -31,7 +31,7 @@ module.exports = async function () {
   while (CURRENT_PAGE < PAGES) {
     const URL = `https://api.music.apple.com/v1/me/recent/played/tracks?limit=${PAGE_SIZE}&offset=${
       PAGE_SIZE * CURRENT_PAGE
-    }`
+    }&include[songs]=albums&extend=artistUrl`
     const tracks = await fetch(URL, {
       headers: {
         'Content-Type': 'application/json',
@@ -52,10 +52,12 @@ module.exports = async function () {
         image: `https://cdn.coryd.dev/artists/${track['attributes']['artistName']
           .replace(/\s+/g, '-')
           .toLowerCase()}.jpg`,
-        url: `https://musicbrainz.org/search?query=${track['attributes']['artistName'].replace(
-          /\s+/g,
-          '+'
-        )}&type=artist`,
+        url: track['attributes']['artistUrl']
+          ? track['attributes']['artistUrl']
+          : `https://musicbrainz.org/search?query=${track['attributes']['artistName'].replace(
+              /\s+/g,
+              '+'
+            )}&type=artist`,
         plays: 1,
         type: 'artist',
       }
