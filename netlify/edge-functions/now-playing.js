@@ -1,4 +1,29 @@
-const { aliasArtist } = require('../../src/utils/media')
+const artistAliases = {
+  "aliases": [
+    {
+      "artist": "Aesop Rock",
+      "aliases": ["Aesop Rock & Homeboy Sandman", "Aesop Rock & Blockhead"]
+    },
+    {
+      "artist": "Fen",
+      "aliases": ["Sleepwalker & Fen"]
+    },
+    {
+      "artist": "Osees",
+      "aliases": ["OCS", "The Ohsees", "Thee Oh Sees", "Thee Oh See's"]
+    },
+    {
+      "artist": "Tom Waits",
+      "aliases": ["Tom Waits & Crystal Gayle", "Crystal Gayle"]
+    }
+  ]
+}
+
+const aliasArtist = (artist) => {
+  const aliased = artistAliases.aliases.find((alias) => alias.aliases.includes(artist))
+  if (aliased) artist = aliased.artist
+  return artist
+}
 
 export default async () => {
   // eslint-disable-next-line no-undef
