@@ -26,7 +26,7 @@ module.exports = {
    */
   sanitizeMedia: (media) => {
     const denyList =
-      /-\s*(?:single|ep)\s*|(\[|\()(Deluxe Edition|Special Edition|Remastered|Full Dynamic Range Edition|Anniversary Edition|Expanded Edition)(\]|\))/gi
+      /-\s*(?:single|ep)\s*|(\[|\()(Deluxe|Special|Remastered|Full Dynamic Range|Expanded)(?:\s+\d+(?:th|nd|rd|st)? Anniversary)?(?:\s+Edition)?(\]|\))/gi
     return media.replace(denyList, '').trim()
   },
 
