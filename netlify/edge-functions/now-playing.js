@@ -1,3 +1,5 @@
+const { aliasArtist } = require('../../src/utils/media')
+
 export default async () => {
   // eslint-disable-next-line no-undef
   const API_APPLE_MUSIC_DEVELOPER_TOKEN = Netlify.env.get('API_APPLE_MUSIC_DEVELOPER_TOKEN')
@@ -48,9 +50,9 @@ export default async () => {
   const track = trackRes.data[0]['attributes']
 
   return Response.json({
-    artist: track['artistName'],
+    artist: aliasArtist(track['artistName']),
     title: track['name'],
-    text: `🎧 ${track['name']} by ${track['artistName']}`,
+    text: `🎧 ${track['name']} by ${aliasArtist(track['artistName'])}`,
   })
 }
 
