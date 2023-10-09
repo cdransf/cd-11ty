@@ -46,8 +46,8 @@ module.exports = async function () {
   }
 
   res.forEach((track) => {
-    if (!response['artists'][track['attributes']['artistName']]) {
-      response['artists'][track['attributes']['artistName']] = {
+    if (!response['artists'][aliasArtist(track['attributes']['artistName'])]) {
+      response['artists'][aliasArtist(track['attributes']['artistName'])] = {
         title: aliasArtist(track['attributes']['artistName']),
         image: `https://cdn.coryd.dev/artists/${track['attributes']['artistName']
           .replace(/\s+/g, '-')
@@ -62,12 +62,12 @@ module.exports = async function () {
         type: 'artist',
       }
     } else {
-      response['artists'][track['attributes']['artistName']].plays++
+      response['artists'][aliasArtist(track['attributes']['artistName'])].plays++
     }
 
     // aggregate albums
-    if (!response.albums[track['attributes']['albumName']]) {
-      response.albums[track['attributes']['albumName']] = {
+    if (!response.albums[sanitizeMedia(track['attributes']['albumName'])]) {
+      response.albums[sanitizeMedia(track['attributes']['albumName'])] = {
         title: sanitizeMedia(track['attributes']['albumName']),
         artist: aliasArtist(track['attributes']['artistName']),
         image: track['attributes']['artwork']['url'].replace('{w}', '500').replace('{h}', '500'),
@@ -83,7 +83,7 @@ module.exports = async function () {
         type: 'album',
       }
     } else {
-      response.albums[track['attributes']['albumName']].plays++
+      response.albums[sanitizeMedia(track['attributes']['albumName'])].plays++
     }
   })
   response.artists = sortByPlays(response.artists)
