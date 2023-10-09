@@ -1,9 +1,5 @@
 const { AssetCache } = require('@11ty/eleventy-fetch')
-
-const sortTrim = (array, length = 8) =>
-  Object.values(array)
-    .sort((a, b) => b.plays - a.plays)
-    .splice(0, length)
+const { aliasArtist, sanitizeMedia, sortByPlays } = require('../utils/media')
 
 module.exports = async function () {
   const API_APPLE_MUSIC_DEVELOPER_TOKEN = process.env.API_APPLE_MUSIC_DEVELOPER_TOKEN
@@ -15,7 +11,6 @@ module.exports = async function () {
   const response = {
     artists: {},
     albums: {},
-    tracks: {},
   }
 
   const RENEWED_MUSIC_TOKEN = await fetch(APPLE_RENEW_TOKEN_URL, {
@@ -53,11 +48,10 @@ module.exports = async function () {
   res.forEach((track) => {
     if (!response['artists'][track['attributes']['artistName']]) {
       response['artists'][track['attributes']['artistName']] = {
-        title: track['attributes']['artistName'],
-        image:
-          `https://cdn.coryd.dev/artists/${track['attributes']['artistName']
-            .replace(/\s+/g, '-')
-            .toLowerCase()}.jpg` || 'https://cdn.coryd.dev/artists/missing-artist.jpg',
+        title: aliasArtist(track['attributes']['artistName']),
+        image: `https://cdn.coryd.dev/artists/${track['attributes']['artistName']
+          .replace(/\s+/g, '-')
+          .toLowerCase()}.jpg`,
         url: `https://musicbrainz.org/search?query=${track['attributes']['artistName'].replace(
           /\s+/g,
           '+'
@@ -72,35 +66,26 @@ module.exports = async function () {
     // aggregate albums
     if (!response.albums[track['attributes']['albumName']]) {
       response.albums[track['attributes']['albumName']] = {
-        title: track['attributes']['albumName'],
-        artist: track['attributes']['artistName'],
+        title: sanitizeMedia(track['attributes']['albumName']),
+        artist: aliasArtist(track['attributes']['artistName']),
         image: track['attributes']['artwork']['url'].replace('{w}', '500').replace('{h}', '500'),
-        url: `https://musicbrainz.org/taglookup/index?tag-lookup.artist=${track['attributes'][
-          'artistName'
-        ].replace(/\s+/g, '+')}&tag-lookup.release=${track['attributes']['albumName'].replace(
-          /\s+/g,
-          '+'
-        )}`,
+        url:
+          track['relationships'] && track['relationships'].albums.data.length > 0
+            ? `https://song.link/${track['relationships'].albums.data.pop().attributes.url}`
+            : `https://musicbrainz.org/taglookup/index?tag-lookup.artist=${track['attributes'][
+                'artistName'
+              ].replace(/\s+/g, '+')}&tag-lookup.release=${sanitizeMedia(
+                track['attributes']['albumName']
+              ).replace(/\s+/g, '+')}`,
         plays: 1,
         type: 'album',
       }
     } else {
       response.albums[track['attributes']['albumName']].plays++
     }
-
-    // aggregate tracks
-    if (!response.tracks[track['attributes']['name']]) {
-      response.tracks[track['attributes']['name']] = {
-        name: track['attributes']['name'],
-        plays: 1,
-      }
-    } else {
-      response.tracks[track['attributes']['name']].plays++
-    }
   })
-  response.artists = sortTrim(response.artists)
-  response.albums = sortTrim(response.albums)
-  response.tracks = sortTrim(response.tracks, 5)
+  response.artists = sortByPlays(response.artists)
+  response.albums = sortByPlays(response.albums)
   await asset.save(response, 'json')
   return response
 }
