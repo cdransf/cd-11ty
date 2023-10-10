@@ -46,9 +46,11 @@ module.exports = async function () {
   }
 
   res.forEach((track) => {
-    if (!response['artists'][aliasArtist(track['attributes']['artistName'])]) {
-      response['artists'][aliasArtist(track['attributes']['artistName'])] = {
-        title: aliasArtist(track['attributes']['artistName']),
+    const artist = aliasArtist(track['attributes']['artistName'])
+    const album = sanitizeMedia(track['attributes']['albumName'])
+    if (!response['artists'][artist]) {
+      response['artists'][artist] = {
+        title: artist,
         image: `https://cdn.coryd.dev/artists/${track['attributes']['artistName']
           .replace(/\s+/g, '-')
           .toLowerCase()}.jpg`,
@@ -62,13 +64,13 @@ module.exports = async function () {
         type: 'artist',
       }
     } else {
-      response['artists'][aliasArtist(track['attributes']['artistName'])].plays++
+      response['artists'][artist].plays++
     }
 
     // aggregate albums
-    if (!response.albums[sanitizeMedia(track['attributes']['albumName'])]) {
-      response.albums[sanitizeMedia(track['attributes']['albumName'])] = {
-        title: sanitizeMedia(track['attributes']['albumName']),
+    if (!response.albums[album]) {
+      response.albums[album] = {
+        title: album,
         artist: aliasArtist(track['attributes']['artistName']),
         image: track['attributes']['artwork']['url'].replace('{w}', '500').replace('{h}', '500'),
         url:
@@ -76,14 +78,12 @@ module.exports = async function () {
             ? `https://song.link/${track['relationships'].albums.data.pop().attributes.url}`
             : `https://musicbrainz.org/taglookup/index?tag-lookup.artist=${track['attributes'][
                 'artistName'
-              ].replace(/\s+/g, '+')}&tag-lookup.release=${sanitizeMedia(
-                track['attributes']['albumName']
-              ).replace(/\s+/g, '+')}`,
+              ].replace(/\s+/g, '+')}&tag-lookup.release=${album.replace(/\s+/g, '+')}`,
         plays: 1,
         type: 'album',
       }
     } else {
-      response.albums[sanitizeMedia(track['attributes']['albumName'])].plays++
+      response.albums[album].plays++
     }
   })
   response.artists = sortByPlays(response.artists)
