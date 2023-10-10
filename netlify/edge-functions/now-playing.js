@@ -49,15 +49,12 @@ export default async () => {
   if (Object.keys(traktRes).length) {
     if (traktRes['type'] === 'episode') {
       return Response.json({
-        title: traktRes['show']['title'],
-        episode: traktRes['episode']['title'],
         text: `📺 ${traktRes['show']['title']} • ${traktRes['episode']['title']}`,
       })
     }
 
     if (traktRes['type'] === 'movie') {
       return Response.json({
-        title: traktRes['movie']['title'],
         text: `🎥 ${traktRes['movie']['title']}`,
       })
     }
@@ -76,8 +73,6 @@ export default async () => {
   const artist = aliasArtist(track['artistName'])
 
   return Response.json({
-    artist,
-    title: track['name'],
     text: `🎧 ${track['name']} by ${artist}`,
   })
 }
