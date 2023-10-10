@@ -1,4 +1,4 @@
-{
+const artistAliases = {
   "aliases": [
     {
       "artist": "Aesop Rock",
