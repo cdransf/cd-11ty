@@ -72,7 +72,7 @@ export default async () => {
   })
     .then((data) => data.json())
     .catch()
-  const track = trackRes.data[0]['attributes']
+  const track = trackRes.data?.[0]['attributes']
 
   return Response.json({
     artist: aliasArtist(track['artistName']),
