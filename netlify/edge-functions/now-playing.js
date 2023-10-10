@@ -1,3 +1,30 @@
+{
+  "aliases": [
+    {
+      "artist": "Aesop Rock",
+      "aliases": ["Aesop Rock & Homeboy Sandman", "Aesop Rock & Blockhead"]
+    },
+    {
+      "artist": "Fen",
+      "aliases": ["Sleepwalker & Fen"]
+    },
+    {
+      "artist": "Osees",
+      "aliases": ["OCS", "The Ohsees", "Thee Oh Sees", "Thee Oh See's"]
+    },
+    {
+      "artist": "Tom Waits",
+      "aliases": ["Tom Waits & Crystal Gayle", "Crystal Gayle"]
+    }
+  ]
+}
+
+const aliasArtist = (artist) => {
+  const aliased = artistAliases.aliases.find((alias) => alias.aliases.includes(artist))
+  if (aliased) artist = aliased.artist
+  return artist
+}
+
 export default async () => {
   // eslint-disable-next-line no-undef
   const API_APPLE_MUSIC_DEVELOPER_TOKEN = Netlify.env.get('API_APPLE_MUSIC_DEVELOPER_TOKEN')
@@ -46,11 +73,12 @@ export default async () => {
     .then((data) => data.json())
     .catch()
   const track = trackRes.data?.[0]['attributes']
+  const artist = aliasArtist(track['artistName'])
 
   return Response.json({
-    artist: track['artistName'],
+    artist,
     title: track['name'],
-    text: `🎧 ${track['name']} by ${track['artistName']}`,
+    text: `🎧 ${track['name']} by ${artist}`,
   })
 }
 
