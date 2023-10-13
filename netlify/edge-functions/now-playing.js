@@ -9,6 +9,10 @@ const artistAliases = {
       "aliases": ["Sleepwalker & Fen"]
     },
     {
+      "artist": "Free Throw"
+      "aliases": ["Free Throw, Hot Mulligan & Tadss Sanville"]
+    },
+    {
       "artist": "Osees",
       "aliases": ["OCS", "The Ohsees", "Thee Oh Sees", "Thee Oh See's"]
     },
