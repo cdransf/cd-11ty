@@ -10,7 +10,7 @@ const artistAliases = {
     },
     {
       "artist": "Free Throw",
-      "aliases": ["Free Throw, Hot Mulligan & Tadss Sanville"]
+      "aliases": ["Free Throw, Hot Mulligan & Tades Sanville"]
     },
     {
       "artist": "Osees",
