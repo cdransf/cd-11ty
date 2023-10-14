@@ -6748,5 +6748,16 @@
       "https://social.lol/users/cory/statuses/111201181897111112"
     ],
     "lastTootTimestamp": 1696795378106
+  },
+  "https://www.goodreads.com/review/show/5852766387": {
+    "id": "aHR0cHM6Ly93d3cuZ29vZHJlYWRzLmNvbS9yZXZpZXcvc2hvdy81ODUyNzY2Mzg3",
+    "title": "📖: MCU: The Reign of Marvel Studios",
+    "url": "https://www.goodreads.com/review/show/5852766387",
+    "content_text": "📖: MCU: The Reign of Marvel Studios  https://www.goodreads.com/review/show/5852766387",
+    "date_published": "Fri, 13 Oct 2023 21:51:15 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111230464929328729"
+    ],
+    "lastTootTimestamp": 1697242201718
   }
 }
