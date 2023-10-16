@@ -48,7 +48,7 @@
     "husky": "^8.0.3",
     "ics-to-json-extended": "^1.1.4",
     "lint-staged": "^14.0.1",
-    "liquidjs": "^10.9.2",
+    "liquidjs": "^10.9.3",
     "luxon": "^3.4.3",
     "markdown-it": "^13.0.2",
     "markdown-it-anchor": "^8.4.1",
