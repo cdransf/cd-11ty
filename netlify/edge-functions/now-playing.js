@@ -1,26 +1,26 @@
 const artistAliases = {
-  "aliases": [
+  aliases: [
     {
-      "artist": "Aesop Rock",
-      "aliases": ["Aesop Rock & Homeboy Sandman", "Aesop Rock & Blockhead"]
+      artist: 'Aesop Rock',
+      aliases: ['Aesop Rock & Homeboy Sandman', 'Aesop Rock & Blockhead'],
     },
     {
-      "artist": "Fen",
-      "aliases": ["Sleepwalker & Fen"]
+      artist: 'Fen',
+      aliases: ['Sleepwalker & Fen'],
     },
     {
-      "artist": "Free Throw",
-      "aliases": ["Free Throw, Hot Mulligan & Tades Sanville"]
+      artist: 'Free Throw',
+      aliases: ['Free Throw, Hot Mulligan & Tades Sanville'],
     },
     {
-      "artist": "Osees",
-      "aliases": ["OCS", "The Ohsees", "Thee Oh Sees", "Thee Oh See's"]
+      artist: 'Osees',
+      aliases: ['OCS', 'The Ohsees', 'Thee Oh Sees', "Thee Oh See's"],
     },
     {
-      "artist": "Tom Waits",
-      "aliases": ["Tom Waits & Crystal Gayle", "Crystal Gayle"]
-    }
-  ]
+      artist: 'Tom Waits',
+      aliases: ['Tom Waits & Crystal Gayle', 'Crystal Gayle'],
+    },
+  ],
 }
 
 const aliasArtist = (artist) => {
