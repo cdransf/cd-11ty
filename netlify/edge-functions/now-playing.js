@@ -29,6 +29,12 @@ const aliasArtist = (artist) => {
   return artist
 }
 
+const sanitizeTrack = (track) => {
+  if (track.includes(' [') return track.split(' [')[0]
+  if (track.includes(' (') return track.split(' (')[0]
+  return track
+}
+
 export default async () => {
   // eslint-disable-next-line no-undef
   const API_APPLE_MUSIC_DEVELOPER_TOKEN = Netlify.env.get('API_APPLE_MUSIC_DEVELOPER_TOKEN')
@@ -91,8 +97,8 @@ export default async () => {
     : `https://musicbrainz.org/search?query=${track['artistName'].replace(/\s+/g, '+')}&type=artist`
 
   return Response.json({
-    text: `🎧 ${track['name']} by ${artist}`,
-    html: `🎧 <a href="${trackUrl}">${track['name']}</a> by <a href="${artistUrl}">${artist}</a>`,
+    text: `🎧 ${sanitizeTrack(track['name'])} by ${artist}`,
+    html: `🎧 <a href="${trackUrl}">${sanitizeTrack(track['name'])}</a> by <a href="${artistUrl}">${artist}</a>`,
   })
 }
 
