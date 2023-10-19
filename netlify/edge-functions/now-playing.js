@@ -54,7 +54,7 @@ export default async () => {
     if (traktRes['type'] === 'episode') {
       return Response.json({
         text: `📺 ${traktRes['show']['title']} • ${traktRes['episode']['title']}`,
-        html: `📺 <a href="https://trakt.tv/shows/${traktRes['show']['ids']['slug']}">${traktRes['show']['title']}</a> • <a href="https://trakt.tv/shows/${traktRes['show']['ids']['slug']}">${traktRes['episode']['title']}</a>`,
+        html: `📺 <a href="https://trakt.tv/shows/${traktRes['show']['ids']['slug']}">${traktRes['show']['title']}</a> • <a href="https://trakt.tv/shows/${traktRes['show']['ids']['slug']}/seasons/${traktRes['episode']['season']}/episodes/${traktRes['episode']['number']}">${traktRes['episode']['title']}</a>`,
       })
     }
 
