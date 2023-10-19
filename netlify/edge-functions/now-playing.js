@@ -23,14 +23,6 @@ const artistAliases = {
   ],
 }
 
-const sanitizeTrack = (track) => {
-  track.replace(
-    '(2001 Version) [feat. Markus Johnsson, Thomas Einarsson, Tobias Gustavsson & Daniel Erlandsson] [2001]',
-    ''
-  )
-  return track
-}
-
 const aliasArtist = (artist) => {
   const aliased = artistAliases.aliases.find((alias) => alias.aliases.includes(artist))
   if (aliased) artist = aliased.artist
@@ -99,10 +91,8 @@ export default async () => {
     : `https://musicbrainz.org/search?query=${track['artistName'].replace(/\s+/g, '+')}&type=artist`
 
   return Response.json({
-    text: `🎧 ${sanitizeTrack(track['name'])} by ${artist}`,
-    html: `🎧 <a href="${trackUrl}">${sanitizeTrack(
-      track['name']
-    )}</a> by <a href="${artistUrl}">${artist}</a>`,
+    text: `🎧 ${track['name']} by ${artist}`,
+    html: `🎧 <a href="${trackUrl}">${track['name']}</a> by <a href="${artistUrl}">${artist}</a>`,
   })
 }
 
