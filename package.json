@@ -47,7 +47,7 @@
     "eslint-plugin-prettier": "^5.0.1",
     "husky": "^8.0.3",
     "ics-to-json-extended": "^1.1.4",
-    "lint-staged": "^15.0.1",
+    "lint-staged": "^15.0.2",
     "liquidjs": "^10.9.3",
     "luxon": "^3.4.3",
     "markdown-it": "^13.0.2",
