@@ -30,8 +30,8 @@ const aliasArtist = (artist) => {
 }
 
 const sanitizeTrack = (track) => {
-  if (track.includes(' [') return track.split(' [')[0]
-  if (track.includes(' (') return track.split(' (')[0]
+  if (track.includes(' [')) return track.split(' [')[0]
+  if (track.includes(' (')) return track.split(' (')[0]
   return track
 }
 
