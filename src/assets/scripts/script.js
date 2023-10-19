@@ -7,7 +7,7 @@
 
     const populateNowPlaying = (data) => {
       loading.style.display = 'none'
-      content.innerText = data.text
+      content.innerHTML = data.html
       content.classList.remove('hidden')
     }
 
