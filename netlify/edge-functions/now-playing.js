@@ -99,7 +99,9 @@ export default async () => {
 
   return Response.json({
     text: `🎧 ${sanitizeTrack(track['name'])} by ${artist}`,
-    html: `🎧 <a href="${trackUrl}">${sanitizeTrack(track['name'])}</a> by <a href="${artistUrl}">${artist}</a>`,
+    html: `🎧 <a href="${trackUrl}">${sanitizeTrack(
+      track['name']
+    )}</a> by <a href="${artistUrl}">${artist}</a>`,
   })
 }
 
