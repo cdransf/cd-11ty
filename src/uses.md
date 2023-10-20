@@ -77,7 +77,6 @@ Software and services that I use for work and my own enjoyment.
 - [Kagi](https://kagi.com)
 - [Feedbin](https://feedbin.com)
 - [forwardemail.net](https://forwardemail.net)
-- [1Password](https://1password.com)
 - [Trakt](https://trakt.tv)
 - [Goodreads](https://goodreads.com)
 - [Slack](http://slack.com)
