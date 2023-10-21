@@ -26,43 +26,49 @@ meta:
 
 Software and services that I use for work and my own enjoyment.
 
-<h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Hardware</h3>
+<h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Computer setup</h3>
 
 - Midnight MacBook Air (2022 - M2)
 - 27" Dell Monitor
-- Apple Magic Keyboard
+- Apple Magic Keyboard with Touch ID + number pad
 - Apple Magic Trackpad
 - Homepod Mini for audio
 - Raspberry Pi for Homebridge
 
+<h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Desk and chair</h3>
+
+- My desk is a custom made corner desk I bought on Etsy years ago. It's sturdy, has tons of storage and finally arrived with a chip on the surface to add some character after the first one got lost by the freight company on the journey from Michigan to Los Angeles. I probably _wouldn't_ repeat the experience, but I do love the desk.
+- [Herman Miller Aeron chair](https://www.hermanmiller.com/products/seating/office-chairs/aeron-chairs/): it's pretty comfortable and makes swiveling around my corner desk easy.
+
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
 
-- [Mona](https://mastodon.social/@MonaApp)
-- [NetNewsWire](https://netnewswire.com)
-- [GoodLinks](http://goodlinks.app)
-- [Parcel](https://parcelapp.net)
+- [Mona](https://mastodon.social/@MonaApp): endlessly configurable and yet still easy to use I enjoy Mona's take on Mastodon and use it as my go-to client across all of my devices.
+- [NetNewsWire](https://netnewswire.com): I love the simplicity and stability of NetNewsWire as an RSS client. I use a handful of Keyboard Maestro macros on macOS to quickly mark items as read and clean up the today view and another to quickly save items out to GoodLinks.
+- [GoodLinks](http://goodlinks.app): a native read it later app that provides an excellent reading experience, a wealth of features and plenty of customization options. Lately I've been using it in conjunction with Safari's newly-added ability to read web pages to listen to queued items.
+- [Parcel](https://parcelapp.net): it tracks deliveries and does so reliably. I've got a few rules configured in Fastmail to handle forwarding delivery emails to the app as well.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">iOS</h3>
 
-- [status.log](https://apps.apple.com/ca/app/status-log/id6444921793)
+- [status.log](https://apps.apple.com/ca/app/status-log/id6444921793): a focused and wonderfully built utility for posting to [omg.lol](https://omg.lol)'s status.lol service.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS</h3>
 
-- [Nova](https://nova.app)
-- [iTerm2](https://iterm2.com)
-- [Dato](https://sindresorhus.com/dato)
-- [Magnet](https://magnet.crowdcafe.com)
-- [Keyboard Maestro](https://www.keyboardmaestro.com)
-- [Bartender](https://www.macbartender.com)
-- [AirBuddy](https://v2.airbuddy.app)
-- [Meta](https://www.nightbirdsevolve.com/meta)
-- [Permute](https://software.charliemonroe.net/permute)
+- [Dato](https://sindresorhus.com/dato): to show/reference my calendar in the menubar and quickly join upcoming meetings.
+- [Magnet](https://magnet.crowdcafe.com): to quickly move around/organize/snap application windows. Using a Mac without it now feels like it's broken.
+- [Keyboard Maestro](https://www.keyboardmaestro.com): an endlessly flexible app that I underutilize for quick macros and keyboard shortcuts in a number of different apps.
+- [Bartender](https://www.macbartender.com): used to hide or conditionally show menubar items.
+- [AirBuddy](https://v2.airbuddy.app): finer-grained control over AirPods and other wireless devices.
+- [Meta](https://www.nightbirdsevolve.com/meta): the _best_ utility for tagging and organizing music files on macOS.
+- [Permute](https://software.charliemonroe.net/permute): a useful utility for quickly converting files to different formats.
 - [SoundSource](https://rogueamoeba.com/soundsource)
 - [Sleeve](https://replay.software/sleeve)
 
-<h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Themes</h3>
+<h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Dev tools</h3>
 
+- [Nova](https://nova.app)
+- [iTerm2](https://iterm2.com)
 - [Catppuccin](https://github.com/catppuccin)
+- [Mono Lisa](https://monolisa.dev)
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Services</h3>
 
@@ -74,7 +80,7 @@ Software and services that I use for work and my own enjoyment.
 - <a onclick="clicky.goal('Referral: Feedpress')" href="https://feedpress.com/?affid=34370">Feedpress</a>
 - [SavvyCal](https://savvycal.com)
 - [IVPN](https://www.ivpn.net)
-- [Kagi](https://kagi.com)
+- [Kagi](https://kagi.com): search that's actually helpful and ad-free.
 - [Feedbin](https://feedbin.com)
 - [forwardemail.net](https://forwardemail.net)
 - [Trakt](https://trakt.tv)
