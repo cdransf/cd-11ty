@@ -6781,5 +6781,16 @@
       "https://social.lol/users/cory/statuses/111258778213059463"
     ],
     "lastTootTimestamp": 1697674228135
+  },
+  "https://www.goodreads.com/review/show/5922211786": {
+    "id": "aHR0cHM6Ly93d3cuZ29vZHJlYWRzLmNvbS9yZXZpZXcvc2hvdy81OTIyMjExNzg2",
+    "title": "📖: In Cold Blood",
+    "url": "https://www.goodreads.com/review/show/5922211786",
+    "content_text": "📖: In Cold Blood  https://www.goodreads.com/review/show/5922211786",
+    "date_published": "Sat, 21 Oct 2023 02:04:16 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111271019737924989"
+    ],
+    "lastTootTimestamp": 1697861019028
   }
 }
