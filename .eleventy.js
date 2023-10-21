@@ -146,6 +146,8 @@ module.exports = function (eleventyConfig) {
       urlPath: '/assets/img/cache/',
       outputDir: './_site/assets/img/cache/',
     })
+    
+    console.log(src)
 
     let imageAttributes = {
       class: css,
