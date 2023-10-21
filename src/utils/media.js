@@ -38,7 +38,6 @@ module.exports = {
    * @returns {Array} - a new array sorted by the number of plays in descending order.
    */
   sortByPlays: (array) => Object.values(array).sort((a, b) => b.plays - a.plays).map((media, index) => {
-    media.rank = index + 1
-    return media
+    return media.rank = index + 1
   }),
 }
