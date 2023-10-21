@@ -140,14 +140,13 @@ module.exports = function (eleventyConfig) {
 
   // image shortcode
   eleventyConfig.addShortcode('image', async function (src, alt, css, sizes, loading) {
+    if (!src) return
     let metadata = await Image(src, {
       widths: [75, 150, 300, 600],
       formats: ['webp'],
       urlPath: '/assets/img/cache/',
       outputDir: './_site/assets/img/cache/',
     })
-    
-    if (!src) return
 
     let imageAttributes = {
       class: css,
