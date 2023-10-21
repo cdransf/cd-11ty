@@ -147,7 +147,7 @@ module.exports = function (eleventyConfig) {
       outputDir: './_site/assets/img/cache/',
     })
     
-    console.log(src)
+    if (!src) return
 
     let imageAttributes = {
       class: css,
