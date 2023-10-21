@@ -12,7 +12,7 @@ module.exports = {
       }
       if (item.type === 'artist') {
         normalized['title'] = item['title']
-        normalized['alt'] = `${item['title']} at ${item['rank']}`
+        normalized['alt'] = `${item['title']} at #${item['rank']}`
         normalized['subtext'] = `#${item['rank']}`
       }
       if (item.type === 'book' || item.type === 'movie') normalized['alt'] = item['title']
