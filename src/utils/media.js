@@ -37,5 +37,8 @@ module.exports = {
    * @param {Array} array - an array of media objects.
    * @returns {Array} - a new array sorted by the number of plays in descending order.
    */
-  sortByPlays: (array) => Object.values(array).sort((a, b) => b.plays - a.plays).map((media, index) => media.rank = index + 1),
+  sortByPlays: (array) => Object.values(array).sort((a, b) => b.plays - a.plays).map((media, index) => {
+    media.rank = index + 1
+    return media
+  }),
 }
