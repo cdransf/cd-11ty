@@ -3,7 +3,6 @@ title: 'Apple-centric digital privacy tools'
 date: '2022-05-31'
 draft: false
 tags: ['Apple', 'privacy', 'iOS', 'macOS', 'tech']
-images: ['/static/images/blog/privacy.jpg']
 ---
 
 A rundown of privacy tools that work well with Apple's technology ecosystem.<!-- excerpt -->[^1]
