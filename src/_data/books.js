@@ -25,8 +25,9 @@ module.exports = async function () {
           if (data[index]) data[index]['author'] = author.textContent
         })
       doc.querySelectorAll('.md\\:block .book-cover img').forEach((image, index) => {
-        if (!data[index]) data.push({ image: image.src })
-        if (data[index]) data[index]['image'] = image.src
+        const img = image.src.replace('https://cdn.thestorygraph.com', 'https://books.coryd.dev')
+        if (!data[index]) data.push({ image: img })
+        if (data[index]) data[index]['image'] = img
       })
       doc.querySelectorAll('.md\\:block .book-cover a').forEach((url, index) => {
         if (!data[index]) data.push({ url: `https://app.thestorygraph.com${url.href}` })
