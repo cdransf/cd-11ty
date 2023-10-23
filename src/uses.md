@@ -60,13 +60,13 @@ Software and services that I use for work and my own enjoyment.
 - [AirBuddy](https://v2.airbuddy.app): finer-grained control over AirPods and other wireless devices.
 - [Meta](https://www.nightbirdsevolve.com/meta): the _best_ utility for tagging and organizing music files on macOS.
 - [Permute](https://software.charliemonroe.net/permute): a useful utility for quickly converting files to different formats.
-- [SoundSource](https://rogueamoeba.com/soundsource)
-- [Sleeve](https://replay.software/sleeve)
+- [SoundSource](https://rogueamoeba.com/soundsource): a handy utility for better, more granular control on macOS.
+- [Sleeve](https://replay.software/sleeve): my favorite Music.app controller (it works with Spotify too). I'll always have a softspot for Bowtie and Ecoute though.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Dev tools</h3>
 
-- [Nova](https://nova.app)
-- [iTerm2](https://iterm2.com)
+- [Nova](https://nova.app): Panic's code editor has come a long way. It's stable, fully-featured and native (VS Code is an institution at this point, but monocultures are, well, bad).
+- [iTerm2](https://iterm2.com): a more configurable terminal than the one macOS ships with. I've used it for a long time now and it's still my go-to.
 - [Catppuccin](https://github.com/catppuccin)
 - [Mono Lisa](https://monolisa.dev)
 
@@ -84,9 +84,9 @@ Software and services that I use for work and my own enjoyment.
 - [Feedbin](https://feedbin.com)
 - [forwardemail.net](https://forwardemail.net)
 - [Trakt](https://trakt.tv)
-- [Goodreads](https://goodreads.com)
-- [Slack](http://slack.com)
-- [Discord](http://discord.com)
+- [The Storygraph](https://thestorygraph.com): an excellent, focused and community driven book tracking app. All it needs is RSS/Atom feeds and/or an API.
+- [Slack](http://slack.com): I have a family Slack set up to avoid group text messages and am in a few other community Slacks.
+- [Discord](http://discord.com): I don't _like_ Discord but, for better or worse, it's where some communities I frequent are.
 - [Backblaze](https://www.backblaze.com/cloud-backup)
 
 Check out [uses.tech](https://uses.tech) for more lists like this one.
