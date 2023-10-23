@@ -80,7 +80,7 @@ Software and services that I use for work and my own enjoyment.
 - <a onclick="clicky.goal('Referral: Feedpress')" href="https://feedpress.com/?affid=34370">Feedpress</a>
 - [SavvyCal](https://savvycal.com)
 - [IVPN](https://www.ivpn.net)
-- [Kagi](https://kagi.com): search that's actually helpful and ad-free.
+- [Kagi](https://kagi.com): search that's actually helpful and ad-free. It's lenses feature and the ability to up/downvote and block results from different sites are indispensable.
 - [Feedbin](https://feedbin.com)
 - [forwardemail.net](https://forwardemail.net)
 - [Trakt](https://trakt.tv)
