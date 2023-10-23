@@ -50,6 +50,7 @@ Software and services that I use for work and my own enjoyment.
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">iOS</h3>
 
 - [status.log](https://apps.apple.com/ca/app/status-log/id6444921793): a focused and wonderfully built utility for posting to [omg.lol](https://omg.lol)'s status.lol service.
+- [FontCase](https://apps.apple.com/us/app/fontcase-manage-your-type/id1205074470): for managing/installing fonts.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS</h3>
 
@@ -67,26 +68,26 @@ Software and services that I use for work and my own enjoyment.
 
 - [Nova](https://nova.app): Panic's code editor has come a long way. It's stable, fully-featured and native (VS Code is an institution at this point, but monocultures are, well, bad).
 - [iTerm2](https://iterm2.com): a more configurable terminal than the one macOS ships with. I've used it for a long time now and it's still my go-to.
-- [Catppuccin](https://github.com/catppuccin)
-- [Mono Lisa](https://monolisa.dev)
+- [Catppuccin](https://github.com/catppuccin): nearly as ubiquitous as Dracula but lighter and more playful, I've started using this theme wherever I'm looking at/reading/writing code.
+- [Mono Lisa](https://monolisa.dev): a relatively new find, I've been enjoying how pleasant and readable this font is (and have even gone so far as to install it on iOS via [FontCase](https://apps.apple.com/us/app/fontcase-manage-your-type/id1205074470)).
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Services</h3>
 
-- <a onclick="clicky.goal('Referral: Fastmail')" href="https://ref.fm/u30190984">Fastmail</a>
-- <a onclick="clicky.goal('Referral: nextDNS')" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>
-- <a onclick="clicky.goal('Referral: DNSimple')" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>
-- <a onclick="clicky.goal('Referral: Bunny.net')" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>
-- <a onclick="clicky.goal('Referral: Clicky')" href="https://clicky.com/101424044">Clicky</a>
-- <a onclick="clicky.goal('Referral: Feedpress')" href="https://feedpress.com/?affid=34370">Feedpress</a>
-- [SavvyCal](https://savvycal.com)
-- [IVPN](https://www.ivpn.net)
+- <a onclick="clicky.goal('Referral: Fastmail')" href="https://ref.fm/u30190984">Fastmail</a>: the best email service available, bar-none. They're standards compliant (and often contribute to said standards), reliable and fully-featured — they even respect your privacy.
+- <a onclick="clicky.goal('Referral: nextDNS')" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>: a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.
+- <a onclick="clicky.goal('Referral: DNSimple')" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>: a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
+- <a onclick="clicky.goal('Referral: Bunny.net')" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>: a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
+- <a onclick="clicky.goal('Referral: Clicky')" href="https://clicky.com/101424044">Clicky</a>: powerful and easy to understand analytics (if, perhaps, not the prettiest to look at).
+- <a onclick="clicky.goal('Referral: Feedpress')" href="https://feedpress.com/?affid=34370">Feedpress</a>: they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
+- [SavvyCal](https://savvycal.com): the most pleasant scheduling solution I've found to date. It offers a number of scheduling niceties and allows visitors to overlay their own calendars for a seamless booking experience.
+- [IVPN](https://www.ivpn.net): my VPN of choice for browsing outside of my home network. Privacy-focused and trustworthy.
 - [Kagi](https://kagi.com): search that's actually helpful and ad-free. It's lenses feature and the ability to up/downvote and block results from different sites are indispensable.
-- [Feedbin](https://feedbin.com)
-- [forwardemail.net](https://forwardemail.net)
-- [Trakt](https://trakt.tv)
+- [Feedbin](https://feedbin.com): the best available modern RSS service. I use its actions to filter noise out of my feed as well as to star and surface my must-read feeds and newsletters.
+- [forwardemail.net](https://forwardemail.net): I could route the domains I have here through Fastmail, but I prefer the simplicity of this service and the separation of email concerns.
+- [Trakt](https://trakt.tv): my preferred TV and movie tracking service — it has a strong community (and isn't owned by a private equity firm).
 - [The Storygraph](https://thestorygraph.com): an excellent, focused and community driven book tracking app. All it needs is RSS/Atom feeds and/or an API.
 - [Slack](http://slack.com): I have a family Slack set up to avoid group text messages and am in a few other community Slacks.
 - [Discord](http://discord.com): I don't _like_ Discord but, for better or worse, it's where some communities I frequent are.
-- [Backblaze](https://www.backblaze.com/cloud-backup)
+- [Backblaze](https://www.backblaze.com/cloud-backup): a set it and forget it remote backup solution. I have it pointed at the external storage volume I have velcroed to the back of my monitor.
 
 Check out [uses.tech](https://uses.tech) for more lists like this one.
