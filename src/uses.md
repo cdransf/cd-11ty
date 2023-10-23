@@ -50,6 +50,7 @@ Software and services that I use for work and my own enjoyment.
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">iOS</h3>
 
 - [status.log](https://apps.apple.com/ca/app/status-log/id6444921793): a focused and wonderfully built utility for posting to [omg.lol](https://omg.lol)'s status.lol service.
+- [FontCase](https://apps.apple.com/us/app/fontcase-manage-your-type/id1205074470): for managing/installing fonts.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS</h3>
 
@@ -67,8 +68,8 @@ Software and services that I use for work and my own enjoyment.
 
 - [Nova](https://nova.app): Panic's code editor has come a long way. It's stable, fully-featured and native (VS Code is an institution at this point, but monocultures are, well, bad).
 - [iTerm2](https://iterm2.com): a more configurable terminal than the one macOS ships with. I've used it for a long time now and it's still my go-to.
-- [Catppuccin](https://github.com/catppuccin)
-- [Mono Lisa](https://monolisa.dev)
+- [Catppuccin](https://github.com/catppuccin): nearly as ubiquitous as Dracula but lighter and more playful, I've started using this theme wherever I'm looking at/reading/writing code.
+- [Mono Lisa](https://monolisa.dev): a relatively new find, I've been enjoying how pleasant and readable this font is (and have even gone so far as to install it on iOS via [FontCase](https://apps.apple.com/us/app/fontcase-manage-your-type/id1205074470)).
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Services</h3>
 
@@ -87,6 +88,6 @@ Software and services that I use for work and my own enjoyment.
 - [The Storygraph](https://thestorygraph.com): an excellent, focused and community driven book tracking app. All it needs is RSS/Atom feeds and/or an API.
 - [Slack](http://slack.com): I have a family Slack set up to avoid group text messages and am in a few other community Slacks.
 - [Discord](http://discord.com): I don't _like_ Discord but, for better or worse, it's where some communities I frequent are.
-- [Backblaze](https://www.backblaze.com/cloud-backup)
+- [Backblaze](https://www.backblaze.com/cloud-backup): a set it and forget it remote backup solution. I have it pointed at the external storage volume I have velcroed to the back of my monitor.
 
 Check out [uses.tech](https://uses.tech) for more lists like this one.
