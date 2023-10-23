@@ -91,5 +91,6 @@ Software and services that I use for work and my own enjoyment.
 - [Slack](http://slack.com): I have a family Slack set up to avoid group text messages and am in a few other community Slacks.
 - [Discord](http://discord.com): I don't _like_ Discord but, for better or worse, it's where some communities I frequent are.
 - [Backblaze](https://www.backblaze.com/cloud-backup): a set it and forget it remote backup solution. I have it pointed at the external storage volume I have velcroed to the back of my monitor.
+- [Zoom](https://zoom.us): it works and it's ubiquitous.
 
 Check out [uses.tech](https://uses.tech) for more lists like this one.
