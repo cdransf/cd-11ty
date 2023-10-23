@@ -15,7 +15,7 @@ meta:
   description: 'Software, tools and services that I use regularly.'
   url: https://coryd.dev/uses
   image:
-    src: https://coryd.dev/assets/img/avatar.webp
+    src: https://coryd.dev/assets/img/pages/uses.jpg
 ---
 
 <h2
@@ -25,6 +25,8 @@ meta:
 </h2>
 
 Software and services that I use for work and my own enjoyment.
+
+{% image 'https://coryd.dev/assets/img/pages/uses.jpg', 'My desk', 'w-full border border-purple-600 dark:border-purple-400  rounded-lg', '900px' %}
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Computer setup</h3>
 
