@@ -69,6 +69,7 @@ Software and services that I use for work and my own enjoyment.
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Dev tools</h3>
 
 - [Nova](https://nova.app): Panic's code editor has come a long way. It's stable, fully-featured and native (VS Code is an institution at this point, but monocultures are, well, bad).
+- [iTerm2](https://iterm2.com): a more configurable terminal than the one macOS ships with. I've used it for a long time now and it's still my go-to.
 - [Catppuccin](https://github.com/catppuccin): nearly as ubiquitous as Dracula but lighter and more playful, I've started using this theme wherever I'm looking at/reading/writing code.
 - [Mono Lisa](https://monolisa.dev): a relatively new find, I've been enjoying how pleasant and readable this font is (and have even gone so far as to install it on iOS via [FontCase](https://apps.apple.com/us/app/fontcase-manage-your-type/id1205074470)).
 
