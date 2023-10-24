@@ -17,6 +17,10 @@ const artistAliases = {
       aliases: ['OCS', 'The Ohsees', 'Thee Oh Sees', "Thee Oh See's"],
     },
     {
+      artist: 'Sněť',
+      aliases: ['Snet', 'Sne-T'],
+    },
+    {
       artist: 'Tom Waits',
       aliases: ['Tom Waits & Crystal Gayle', 'Crystal Gayle'],
     },
