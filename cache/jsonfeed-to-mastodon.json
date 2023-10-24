@@ -6809,7 +6809,7 @@
     "title": "📖: Elysium Fire",
     "url": "https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
     "content_text": "📖: Elysium Fire #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
-    "date_published": "Mon, 23 Oct 2023 21:03:11 +0000",
+    "date_published": "Tue, 24 Oct 2023 00:25:26 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111286588479677459"
     ],
@@ -6820,10 +6820,21 @@
     "title": "📖: Crossings: How Road Ecology Is Shaping the Future of Our Planet",
     "url": "https://app.thestorygraph.com/books/5be3faf8-ec2d-4fe4-b065-63165facb489",
     "content_text": "📖: Crossings: How Road Ecology Is Shaping the Future of Our Planet #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/5be3faf8-ec2d-4fe4-b065-63165facb489",
-    "date_published": "Mon, 23 Oct 2023 21:03:11 +0000",
+    "date_published": "Tue, 24 Oct 2023 00:25:26 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111286116863070004"
     ],
     "lastTootTimestamp": 1698091382902
+  },
+  "https://coryd.dev/posts/2023/onward-to-the-storygraph/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9vbndhcmQtdG8tdGhlLXN0b3J5Z3JhcGgv",
+    "title": "📝: Onward, to The Storygraph",
+    "url": "https://coryd.dev/posts/2023/onward-to-the-storygraph/",
+    "content_text": "📝: Onward, to The Storygraph #Eleventy #WebDev https://coryd.dev/posts/2023/onward-to-the-storygraph/",
+    "date_published": "Mon, 23 Oct 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111287557031102665"
+    ],
+    "lastTootTimestamp": 1698113358102
   }
 }
