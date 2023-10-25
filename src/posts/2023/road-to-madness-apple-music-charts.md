@@ -5,6 +5,7 @@ draft: false
 tags: ['development', 'music', 'Eleventy', 'Apple', 'JavaScript', 'API']
 image: https://cdn.coryd.dev/blog/charlie.jpg
 ---
+
 I've written before about [displaying my listening data from Apple Music](https://coryd.dev/posts/2023/displaying-listening-data-from-apple-music-using-musickit/) but, recently, I've attempted to take things a bit further.<!-- excerpt -->
 
 The Apple Music is API is cool because it gives you data about your music, it's not cool because well, it's missing some things. It sends back a whole host of handy-dandy track metadata that you'd expect from a music service and that's great. But it doesn't provide data you'd normally expect like, well, a time stamp of when the recently played track was recently played.
@@ -31,7 +32,8 @@ So, we're dealing with JSON and a static site generator. We want to persist our 
 
 ```json
 {
-  "i.rXXXdmUa6Nme-1689970612847": { // that's an id + a timestamp, not a leaked key
+  "i.rXXXdmUa6Nme-1689970612847": {
+    // that's an id + a timestamp, not a leaked key
     "name": "Sacrificial Blood Oath In The Temple Of K'zadu",
     "artist": "Gateway",
     "album": "Galgendood",
@@ -131,7 +133,7 @@ _Cool_[^4]. GitHub triggers a rebuild of the site every hour, Netlify builds it,
 
 There are some significant issues with this approach: it doesn't capture listens to an album in a loop (like me playing the new Outer Heaven record today — hails 🤘). It can get wonky when my diff function hits a track order that elicits a false positive return value.
 
-{% image 'https://cdn.coryd.dev/blog/charlie.jpg', 'Charlie Day standing in front of "charts"', 'w-full', '600px' %}
+{% image 'https://cdn.coryd.dev/blog/charlie.jpg', 'Charlie Day standing in front of "charts"', 'w-full', '1200px' %}
 
 "But Cory there's last.fm." I hear this, I love last.fm, but I've got concerns about its age, ownership and maintenance. I don't want to be on the wrong end of a scream test when the wrong (right?) server rack gets decommissioned.
 

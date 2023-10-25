@@ -34,10 +34,10 @@ We surface the url, require the ICS conversion library, cache and convert the re
 
 ```json
 {
-  startDate: '20180505T020000Z',
-  endDate: '20180505T060000Z',
-  location: 'url',
-  summary: 'Artist - Album'
+  "startDate": "20180505T020000Z",
+  "endDate": "20180505T060000Z",
+  "location": "url",
+  "summary": "Artist - Album"
 }
 ```
 
@@ -65,6 +65,6 @@ Rendering the output is as simple as:
 
 {% endraw %}
 Leaving us with:
-{% image 'https://cdn.coryd.dev/blog/album-releases.jpg', 'Albums I\'m looking forward to', 'w-full', '600px' %}
+{% image 'https://cdn.coryd.dev/blog/album-releases.jpg', 'Albums I\'m looking forward to', 'w-full', '1200px' %}
 
 [^1]: At this point, a dev playground.

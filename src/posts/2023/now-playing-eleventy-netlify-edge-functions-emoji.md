@@ -107,7 +107,7 @@ The client side JavaScript to display the retrieve data is pretty straightforwar
       content.classList.remove('hidden')
     }
 
-	// try and retrieve cached track data
+    // try and retrieve cached track data
     try {
       const cache = JSON.parse(localStorage.getItem('now-playing'))
       if (cache) populateNowPlaying(cache)
@@ -115,13 +115,13 @@ The client side JavaScript to display the retrieve data is pretty straightforwar
       /* quiet catch */
     }
 
-	// fetch now playing data from our edge function
+    // fetch now playing data from our edge function
     const res = await fetch('/api/now-playing', {
       type: 'json',
     }).catch()
     const data = await res.json()
 
-	// cache retrieved data
+    // cache retrieved data
     try {
       localStorage.setItem('now-playing', JSON.stringify(data))
     } catch (e) {
@@ -130,7 +130,7 @@ The client side JavaScript to display the retrieve data is pretty straightforwar
 
     if (!JSON.parse(localStorage.getItem('now-playing')) && !data) nowPlaying.remove()
 
-	// update the DOM with the data we've retrieved from the edge function
+    // update the DOM with the data we've retrieved from the edge function
     populateNowPlaying(data)
   }
 })()
@@ -139,6 +139,7 @@ The client side JavaScript to display the retrieve data is pretty straightforwar
 The template to be populated looks like the following:
 
 {% raw %}
+
 ```liquid
 <p id="now-playing" class="client-side mb-0 flex flex-row items-start md:items-center">
   <span id="now-playing-loading" class="icon--spin">
@@ -150,6 +151,7 @@ The template to be populated looks like the following:
   </span>
 </p>
 ```
+
 {% endraw %}
 
 Finally, if the page this all lives on is loaded by a client without JavaScript enabled, it will be hidden by the `client-side` class which is simply:
@@ -157,15 +159,15 @@ Finally, if the page this all lives on is loaded by a client without JavaScript 
 ```html
 <noscript>
   <style>
-	.client-side {
-	  display: none
-	}
+    .client-side {
+      display: none;
+    }
   </style>
 </noscript>
 ```
 
 All of this, yields the single line at the bottom of this image — updated on each visit.
 
-{% image 'https://cdn.coryd.dev/blog/now-playing.jpg', 'Now playing', 'w-full', '600px' %}
+{% image 'https://cdn.coryd.dev/blog/now-playing.jpg', 'Now playing', 'w-full', '1200px' %}
 
 [^1]: Plus explicit conditions matching David Bowie and Minor Threat.

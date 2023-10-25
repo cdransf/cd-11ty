@@ -1,6 +1,6 @@
 ---
-date: "2023-09-06"
-title: "Now page: grouping episodes of the same tv show"
+date: '2023-09-06'
+title: 'Now page: grouping episodes of the same tv show'
 draft: false
 tags:
   - JavaScript
@@ -8,13 +8,15 @@ tags:
   - development
 image: https://cdn.coryd.dev/blog/grouped-tv.jpg
 ---
+
 I made a minor update to how I'm normalizing TV data for display on my now page.<!-- excerpt -->
 
-By *minor* I mean one of those things that may well break inexplicably depending on where the data lands. Instead of returning a normalized array based directly off the data returned by [Trakt](https://trakt.tv)'s API I'm instead collecting episodes in an array, checking as I iterate through the response to see if an episode of the same show exists and replacing that object with a mutated object designed to display the range of episodes watched for the show.
+By _minor_ I mean one of those things that may well break inexplicably depending on where the data lands. Instead of returning a normalized array based directly off the data returned by [Trakt](https://trakt.tv)'s API I'm instead collecting episodes in an array, checking as I iterate through the response to see if an episode of the same show exists and replacing that object with a mutated object designed to display the range of episodes watched for the show.
 
-{% image 'https://cdn.coryd.dev/blog/grouped-tv.jpg', 'Grouped TV episodes', 'w-full', '600px' %}
+{% image 'https://cdn.coryd.dev/blog/grouped-tv.jpg', 'Grouped TV episodes', 'w-full', '1200px' %}
 
 {% raw %}
+
 ```javascript
 const EleventyFetch = require('@11ty/eleventy-fetch')
 
@@ -99,4 +101,5 @@ module.exports = async function () {
   return episodes.reverse()
 }
 ```
+
 {% endraw %}
