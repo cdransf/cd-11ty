@@ -75,7 +75,7 @@ module.exports = async function () {
         image: track['attributes']['artwork']['url'].replace('{w}', '500').replace('{h}', '500'),
         url:
           track['relationships'] && track['relationships'].albums.data.length > 0
-            ? `https://song.link/${track['relationships'].albums.data.pop().attributes.url}`
+            ? track['relationships'].albums.data.pop().attributes.url
             : `https://musicbrainz.org/taglookup/index?tag-lookup.artist=${track['attributes'][
                 'artistName'
               ].replace(/\s+/g, '+')}&tag-lookup.release=${album.replace(/\s+/g, '+')}`,
