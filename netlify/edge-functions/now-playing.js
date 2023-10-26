@@ -35,6 +35,15 @@ const aliasArtist = (artist) => {
 
 const sanitizeTrack = (track) => {
   let sanitizedTrack = track
+  if (
+    !track.includes('Deluxe') ||
+    !track.includes('Special') ||
+    !track.includes('Remastered') ||
+    !track.includes('Full Dynamic') ||
+    !track.includes('Expanded') ||
+    !track.includes('Bonus Track')
+  )
+    return sanitizedTrack
   if (track.includes(' [')) sanitizedTrack = track.split(' [')[0]
   if (track.includes(' (')) sanitizedTrack = track.split(' (')[0]
   return sanitizedTrack
