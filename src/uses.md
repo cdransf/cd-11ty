@@ -57,7 +57,7 @@ Software and services that I use for work and my own enjoyment.
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS</h3>
 
 - [Dato](https://sindresorhus.com/dato): to show/reference my calendar in the menubar and quickly join upcoming meetings.
-- [Magnet](https://magnet.crowdcafe.com): to quickly move around/organize/snap application windows. Using a Mac without it now feels like it's broken.
+- [Rectangle](https://rectangleapp.com): to quickly move around/organize/snap application windows. Using a Mac without it now feels like it's broken.
 - [Keyboard Maestro](https://www.keyboardmaestro.com): an endlessly flexible app that I underutilize for quick macros and keyboard shortcuts in a number of different apps.
 - [Bartender](https://www.macbartender.com): used to hide or conditionally show menubar items.
 - [AirBuddy](https://v2.airbuddy.app): finer-grained control over AirPods and other wireless devices.
