@@ -13,6 +13,10 @@ const artistAliases = {
       aliases: ['Free Throw, Hot Mulligan & Tades Sanville'],
     },
     {
+      artist: 'Hot Mulligan',
+      aliases: ['Hot Mulligan & Less Gravity'],
+    },
+    {
       artist: 'Osees',
       aliases: ['OCS', 'The Ohsees', 'Thee Oh Sees', "Thee Oh See's"],
     },
