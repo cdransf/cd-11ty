@@ -7,6 +7,7 @@ tags:
   - development
   - JavaScript
 ---
+
 My now page consists of a number of similar sections — some bespoke text, a number of media grids and lists. The text is repeated once, the lists are easily templated out in [Liquid.js](https://liquidjs.com/) and the media grids are all quite similar. Given the prominence of the media grids on the page and the number of them I decided to consolidate them into a single template while also normalizing the data passed into them as best I could.<!-- excerpt -->
 
 If you want to skip all the reading, the diff for this [is here](https://github.com/cdransf/coryd.dev/commit/6dda493d7b6c0435bac8ee2a55179e9e1afb7acd). There were a few steps to take to get this done. First I went ahead and took an existing media template and went to work reconciling the slight differences between the artist, album, book, tv and movie displays as follows:
@@ -37,7 +38,7 @@ If you want to skip all the reading, the diff for this [is here](https://github.
             {% endif %}
           </div>
           {%- capture size %}{% if shape == 'square' %}225px{% else %}180px{% endif %}{% endcapture -%}
-          {% image item.image, alt, 'rounded-lg w-full h-full', size, loading %}
+          {% image item.image, alt, 'rounded-lg w-full h-full' %}
         </div>
       </a>
     {% endfor %}

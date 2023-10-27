@@ -3,16 +3,25 @@ title: '404'
 layout: default
 permalink: 404.html
 ---
-{% image './src/assets/img/404.jpg', title, 'w-full rounded-lg', '1200px' %}
+
+{% image './src/assets/img/404.jpg', title, 'border border-purple-600 dark:border-purple-400 rounded-lg overflow-hidden [&>*]:w-full' %}
 <div class="text-center w-full">
-  <h2 class="m-0 text-4xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-6xl mb-4">{{ title }}</h2>
-  <h3 class="m-0 text-xl font-bold leading-tight tracking-normal dark:text-gray-200 md:text-2xl mb-6">
+  <h2
+    class="m-0 text-4xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-6xl mb-4"
+  >
+    {{ title }}
+  </h2>
+  <h3
+    class="m-0 text-xl font-bold leading-tight tracking-normal dark:text-gray-200 md:text-2xl mb-6"
+  >
     What kind of idiots do you have working here?
   </h3>
   <div class="flex justify-center">
-    <a href="/" class="[&>svg]:h-5 [&>svg]:w-5 [&>svg]:inline icon--bold font-semibold py-2 px-4 rounded-full !no-underline !text-white dark:text-gray-900 bg-purple-600 dark:bg-purple-400 hover:bg-pink-500">
-      {% tablericon "receipt-2" "Receipt" %}
-      Skip out on the room service bill
+    <a
+      href="/"
+      class="[&>svg]:h-5 [&>svg]:w-5 [&>svg]:inline icon--bold font-semibold py-2 px-4 rounded-full !no-underline !text-white dark:text-gray-900 bg-purple-600 dark:bg-purple-400 hover:bg-pink-500"
+    >
+      {% tablericon "receipt-2" "Receipt" %} Skip out on the room service bill
     </a>
   </div>
 </div>

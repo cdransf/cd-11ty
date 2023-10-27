@@ -8,7 +8,7 @@
     {% for item in media limit: count %}
       {% assign alt = item.alt | strip %}
       <a href="{{ item.url | stripUtm }}" title="{{ alt | escape }}">
-        <div class="relative block h-full"{% if shape != 'square' %} style="max-width:226px"{% endif %}>
+        <div class="relative block h-full rounded-lg overflow-hidden"{% if shape != 'square' %} style="max-width:226px"{% endif %}>
           <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-pink-500 dark:border-purple-400 dark:hover:border-pink-500 ease-in-out duration-300{% if item.title %} bg-cover-gradient{% endif %}"></div>
           <div class="absolute left-1 bottom-2 drop-shadow-md">
             {% if item.title %}
@@ -20,8 +20,7 @@
               </div>
             {% endif %}
           </div>
-          {%- capture size %}{% if shape == 'square' %}225px{% else %}180px{% endif %}{% endcapture -%}
-          {% image item.image, alt, 'rounded-lg w-full h-full', size, loading %}
+          {% image item.image, alt, 'rounded-lg w-full h-full [&>*]:h-full' %}
         </div>
       </a>
     {% endfor %}

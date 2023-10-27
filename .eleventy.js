@@ -5,6 +5,7 @@ const pluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier')
 const schema = require('@quasibit/eleventy-plugin-schema')
 const { eleventyImagePlugin } = require('@11ty/eleventy-img')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
+const outdent = require('outdent')
 const Image = require('@11ty/eleventy-img')
 const embedYouTube = require('eleventy-plugin-youtube-embed')
 const markdownIt = require('markdown-it')
@@ -21,6 +22,71 @@ const tagAliases = require('./src/_data/json/tag-aliases.json')
 
 // load .env
 require('dotenv-flow').config()
+
+const imageShortcode = async (
+  src,
+  alt,
+  className = undefined,
+  widths = [75, 150, 300, 600, 900, 1200],
+  formats = ['webp', 'jpeg'],
+  sizes = '100vw'
+) => {
+  const imageMetadata = await Image(src, {
+    widths: [...widths, null],
+    formats: [...formats, null],
+    outputDir: './_site/assets/img/cache/',
+    urlPath: '/assets/img/cache/',
+  })
+
+  const stringifyAttributes = (attributeMap) => {
+    return Object.entries(attributeMap)
+      .map(([attribute, value]) => {
+        if (typeof value === 'undefined') return ''
+        return `${attribute}="${value}"`
+      })
+      .join(' ')
+  }
+
+  const sourceHtmlString = Object.values(imageMetadata)
+    .map((images) => {
+      const { sourceType } = images[0]
+      const sourceAttributes = stringifyAttributes({
+        type: sourceType,
+        srcset: images.map((image) => image.srcset).join(', '),
+        sizes,
+      })
+
+      return `<source ${sourceAttributes}>`
+    })
+    .join('\n')
+
+  const getLargestImage = (format) => {
+    const images = imageMetadata[format]
+    return images[images.length - 1]
+  }
+
+  const largestUnoptimizedImg = getLargestImage(formats[0])
+  const imgAttributes = stringifyAttributes({
+    src: largestUnoptimizedImg.url,
+    width: largestUnoptimizedImg.width,
+    height: largestUnoptimizedImg.height,
+    alt,
+    loading: 'lazy',
+    decoding: 'async',
+  })
+
+  const imgHtmlString = `<img ${imgAttributes}>`
+  const pictureAttributes = stringifyAttributes({
+    class: className,
+  })
+
+  const picture = `<picture ${pictureAttributes}>
+    ${sourceHtmlString}
+    ${imgHtmlString}
+  </picture>`
+
+  return outdent`${picture}`
+}
 
 module.exports = function (eleventyConfig) {
   // plugins
@@ -139,25 +205,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLiquidFilter('absoluteUrl', pluginRss.absoluteUrl)
 
   // image shortcode
-  eleventyConfig.addShortcode('image', async function (src, alt, css, sizes, loading) {
-    if (!src) return
-    let metadata = await Image(src, {
-      widths: [75, 150, 300, 600, 900, 1200],
-      formats: ['webp'],
-      urlPath: '/assets/img/cache/',
-      outputDir: './_site/assets/img/cache/',
-    })
-
-    let imageAttributes = {
-      class: css,
-      alt,
-      sizes,
-      loading: loading || 'lazy',
-      decoding: 'async',
-    }
-
-    return Image.generateHTML(metadata, imageAttributes)
-  })
+  eleventyConfig.addShortcode('image', imageShortcode)
 
   eleventyConfig.on('eleventy.after', () => {
     execSync(`npx pagefind --site _site --glob "**/*.html"`, { encoding: 'utf-8' })

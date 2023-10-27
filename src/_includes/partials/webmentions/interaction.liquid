@@ -12,7 +12,9 @@
       {% for mention in mentions[type] %}
         <li class="-ml-3 inline">
           <a href={{mention.url}}>
-            {% image mention.author.photo, mention.author.name, 'bg-gray-900 dark:bg-white h-14 w-14 rounded-full border-4 border-white dark:border-gray-900 transition-all hover:border-pink-500 dark:hover:border-pink-500', '56px' %}
+            <div class="bg-gray-900 dark:bg-white h-14 w-14 border-4 border-white dark:border-gray-900 transition-all ease-in-out duration-300 hover:border-pink-500 dark:hover:border-pink-500 rounded-full overflow-hidden">
+              {% image mention.author.photo, mention.author.name %}
+            </div>
           </a>
         </li>
       {% endfor %}
