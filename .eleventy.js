@@ -27,6 +27,7 @@ const imageShortcode = async (
   src,
   alt,
   className = undefined,
+  loading = 'lazy',
   widths = [75, 150, 300, 600, 900, 1200],
   formats = ['webp', 'jpeg'],
   sizes = '100vw'
@@ -71,7 +72,7 @@ const imageShortcode = async (
     width: largestUnoptimizedImg.width,
     height: largestUnoptimizedImg.height,
     alt,
-    loading: 'lazy',
+    loading,
     decoding: 'async',
   })
 

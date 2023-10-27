@@ -20,7 +20,14 @@
               </div>
             {% endif %}
           </div>
-          {% image item.image, alt, 'rounded-lg w-full h-full [&>*]:h-full' %}
+          {%- capture loadingStrategy %}
+            {% if loading %}
+              {{ loading }}
+            {% else %}
+              'lazy'
+            {% endif %}
+          {% endcapture -%}
+          {% image item.image, alt, 'rounded-lg w-full h-full [&>*]:h-full', loadingStrategy %}
         </div>
       </a>
     {% endfor %}
