@@ -51,9 +51,7 @@ module.exports = async function () {
     if (!response['artists'][artist]) {
       response['artists'][artist] = {
         title: artist,
-        image: `https://cdn.coryd.dev/artists/${track['attributes']['artistName']
-          .replace(/\s+/g, '-')
-          .toLowerCase()}.jpg`,
+        image: `https://cdn.coryd.dev/artists/${artist.replace(/\s+/g, '-').toLowerCase()}.jpg`,
         url: track['attributes']['artistUrl']
           ? track['attributes']['artistUrl']
           : `https://musicbrainz.org/search?query=${track['attributes']['artistName'].replace(
