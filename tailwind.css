@@ -15,9 +15,10 @@ body {
   --pagefind-ui-font: sans-serif;
 }
 
-body, html {
+body,
+html {
   @apply font-sans;
-  color: theme(colors.gray.900)
+  color: theme(colors.gray.900);
 }
 
 .pagefind-ui__form mark {
@@ -89,7 +90,7 @@ li > a {
 
 code {
   @apply text-gray-50;
-  padding: .25rem;
+  padding: 0.25rem;
 }
 
 pre {
@@ -104,8 +105,8 @@ pre {
   @apply font-semibold;
   @apply py-2;
   @apply px-4;
-  @apply mr-4;
-  @apply mb-4;
+  @apply mr-1;
+  @apply mb-3;
   @apply rounded-full;
   @apply text-white;
   @apply ease-in-out;
@@ -128,7 +129,8 @@ pre {
   background: theme(colors.pink.500);
 }
 
-code[class*=language-], pre[class*=language-] {
+code[class*='language-'],
+pre[class*='language-'] {
   @apply font-mono;
   font-weight: 400 !important;
 }
@@ -148,7 +150,7 @@ code[class*=language-], pre[class*=language-] {
 }
 
 .link--icon:hover > svg {
-  color: theme(colors.pink.500)
+  color: theme(colors.pink.500);
 }
 
 .icon--spin > svg {
@@ -183,11 +185,11 @@ code[class*=language-], pre[class*=language-] {
   }
 
   .link--icon svg {
-    color: theme(colors.gray.200)
+    color: theme(colors.gray.200);
   }
 
   .link--icon:hover svg {
-    color: theme(colors.pink.500)
+    color: theme(colors.pink.500);
   }
 
   .tag--button {
