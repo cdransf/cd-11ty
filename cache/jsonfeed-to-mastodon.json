@@ -6809,7 +6809,7 @@
     "title": "📖: Elysium Fire",
     "url": "https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
     "content_text": "📖: Elysium Fire #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
-    "date_published": "Wed, 25 Oct 2023 22:27:23 +0000",
+    "date_published": "Sun, 29 Oct 2023 02:59:51 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111286588479677459"
     ],
@@ -6847,5 +6847,16 @@
       "https://social.lol/users/cory/statuses/111298413448313454"
     ],
     "lastTootTimestamp": 1698279013860
+  },
+  "https://app.thestorygraph.com/books/02e39d2f-fcfc-4f2a-b5bd-94460f96f5b6": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvMDJlMzlkMmYtZmNmYy00ZjJhLWI1YmQtOTQ0NjBmOTZmNWI2",
+    "title": "📖: The Possibility of Life: Science, Imagination, and Our Quest for Kinship in the Cosmos",
+    "url": "https://app.thestorygraph.com/books/02e39d2f-fcfc-4f2a-b5bd-94460f96f5b6",
+    "content_text": "📖: The Possibility of Life: Science, Imagination, and Our Quest for Kinship in the Cosmos #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/02e39d2f-fcfc-4f2a-b5bd-94460f96f5b6",
+    "date_published": "Sun, 29 Oct 2023 02:59:51 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111316315841073560"
+    ],
+    "lastTootTimestamp": 1698552182688
   }
 }
