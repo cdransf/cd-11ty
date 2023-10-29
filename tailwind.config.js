@@ -13,8 +13,8 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
-        mono: ['ui-monospace', 'SFMono-Regular', ...defaultTheme.fontFamily.mono],
+        sans: ['silka', 'Inter', ...defaultTheme.fontFamily.sans],
+        mono: ['ml', ...defaultTheme.fontFamily.mono],
       },
       backgroundImage: {
         'cover-gradient':

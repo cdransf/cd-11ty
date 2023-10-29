@@ -89,6 +89,7 @@ li > a {
 }
 
 code {
+  @apply font-mono;
   @apply text-gray-50;
   padding: 0.25rem;
 }
@@ -127,12 +128,6 @@ pre {
 .tag--button:active,
 .tag--button:focus {
   background: theme(colors.blue.800);
-}
-
-code[class*='language-'],
-pre[class*='language-'] {
-  @apply font-mono;
-  font-weight: 400 !important;
 }
 
 [data-tablericon-name] {
