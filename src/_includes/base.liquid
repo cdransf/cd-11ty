@@ -1,7 +1,7 @@
 {%- capture fullUrl %}
   {{ site.url }}{{ page.url }}{% endcapture -%}
 <!doctype html>
-<html class="scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-blue-100" lang="en">
+<html class="scrollbar-thin scrollbar-thumb-blue-600 dark:scrollbar-thumb-blue-400 scrollbar-track-blue-100" lang="en">
   <head>
     <title>
       {% if title %}
@@ -66,7 +66,7 @@
       </style>
     </noscript>
   </head>
-  <body class="dark:text-white bg-white dark:bg-gray-900 font-sans text-gray-800 scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-blue-100">
+  <body class="dark:text-white bg-white dark:bg-gray-900 font-sans text-gray-800 scrollbar-thin scrollbar-thumb-blue-600 dark:scrollbar-thumb-blue-400 scrollbar-track-blue-100">
     {{ content }}
     {% capture js %}
       {% render "../assets/scripts/script.js" %}

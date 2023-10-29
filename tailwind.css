@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  --pagefind-ui-primary: theme(colors.blue.500);
+  --pagefind-ui-primary: theme(colors.blue.600);
   --pagefind-ui-text: theme(colors.gray.800);
   --pagefind-ui-background: theme(colors.white);
   --pagefind-ui-border: theme(colors.gray.200);
@@ -23,11 +23,11 @@ html {
 
 .pagefind-ui__form mark {
   color: theme(colors.white) !important;
-  background: theme(colors.blue.500) !important;
+  background: theme(colors.blue.600) !important;
 }
 
 .pagefind-ui__form .pagefind-ui__result-link {
-  color: theme(colors.blue.500) !important;
+  color: theme(colors.blue.600) !important;
   @apply !ease-in-out;
   @apply !duration-300;
 }
@@ -35,22 +35,22 @@ html {
 .pagefind-ui__form .pagefind-ui__result-link:hover,
 .pagefind-ui__form .pagefind-ui__result-link:focus,
 .pagefind-ui__form .pagefind-ui__result-link:active {
-  color: theme(colors.blue.500) !important;
+  color: theme(colors.blue.600) !important;
 }
 
 ::-moz-selection {
   color: theme(colors.white);
-  background: theme(colors.blue.500);
+  background: theme(colors.blue.600);
 }
 
 ::selection {
   color: theme(colors.white);
-  background: theme(colors.blue.500);
+  background: theme(colors.blue.600);
 }
 
 .active,
 .active svg {
-  color: theme(colors.blue.500);
+  color: theme(colors.blue.600);
 }
 
 .header-anchor {
@@ -67,7 +67,7 @@ h2 > a.header-anchor {
 
 a,
 .prose a {
-  color: theme(colors.blue.500);
+  color: theme(colors.blue.600);
   @apply ease-in-out;
   @apply duration-300;
 }
@@ -97,7 +97,7 @@ pre {
   border: 1px solid theme(colors.gray.700);
   border-radius: 0 !important;
   @apply scrollbar-thin;
-  @apply scrollbar-thumb-blue-500;
+  @apply scrollbar-thumb-blue-600;
   @apply scrollbar-track-blue-100;
 }
 
@@ -111,7 +111,7 @@ pre {
   @apply text-white;
   @apply ease-in-out;
   @apply duration-300;
-  background: theme(colors.blue.500);
+  background: theme(colors.blue.600);
 }
 
 .tag--button.tag--button__small {
@@ -150,7 +150,7 @@ pre[class*='language-'] {
 }
 
 .link--icon:hover > svg {
-  color: theme(colors.blue.500);
+  color: theme(colors.blue.600);
 }
 
 .icon--spin > svg {
@@ -170,8 +170,9 @@ pre[class*='language-'] {
     --pagefind-ui-tag: theme(colors.gray.700);
   }
 
-  .pagefind-ui__form .pagefind-ui__result-link {
-    color: theme(colors.blue.400) !important;
+  a,
+  .prose a {
+    color: theme(colors.blue.400);
   }
 
   a:hover,
@@ -191,8 +192,40 @@ pre[class*='language-'] {
     color: theme(colors.blue.200);
   }
 
+  .pagefind-ui__form mark {
+    background: theme(colors.blue.400) !important;
+  }
+
+  .pagefind-ui__form .pagefind-ui__result-link {
+    color: theme(colors.blue.400) !important;
+  }
+
+  .pagefind-ui__form .pagefind-ui__result-link:hover,
+  .pagefind-ui__form .pagefind-ui__result-link:focus,
+  .pagefind-ui__form .pagefind-ui__result-link:active {
+    color: theme(colors.blue.600) !important;
+  }
+
+  ::-moz-selection {
+    background: theme(colors.blue.400);
+  }
+
+  ::selection {
+    background: theme(colors.blue.400);
+  }
+
+  .active,
+  .active svg {
+    color: theme(colors.blue.400);
+  }
+
+  pre {
+    @apply scrollbar-thumb-blue-400;
+  }
+
   .tag--button {
     color: theme(colors.gray.900);
+    background: theme(colors.blue.400);
   }
 
   .tag--button:hover,
