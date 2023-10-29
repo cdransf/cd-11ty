@@ -6809,7 +6809,7 @@
     "title": "📖: Elysium Fire",
     "url": "https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
     "content_text": "📖: Elysium Fire #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
-    "date_published": "Sun, 29 Oct 2023 02:59:51 +0000",
+    "date_published": "Sun, 29 Oct 2023 20:03:12 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111286588479677459"
     ],
@@ -6853,10 +6853,21 @@
     "title": "📖: The Possibility of Life: Science, Imagination, and Our Quest for Kinship in the Cosmos",
     "url": "https://app.thestorygraph.com/books/02e39d2f-fcfc-4f2a-b5bd-94460f96f5b6",
     "content_text": "📖: The Possibility of Life: Science, Imagination, and Our Quest for Kinship in the Cosmos #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/02e39d2f-fcfc-4f2a-b5bd-94460f96f5b6",
-    "date_published": "Sun, 29 Oct 2023 02:59:51 +0000",
+    "date_published": "Sat, 28 Oct 2023 00:00:00 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111316315841073560"
     ],
     "lastTootTimestamp": 1698552182688
+  },
+  "https://trakt.tv/movies/the-craft-1996": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvdGhlLWNyYWZ0LTE5OTY=",
+    "title": "🎥: The Craft",
+    "url": "https://trakt.tv/movies/the-craft-1996",
+    "content_text": "🎥: The Craft #Movies #Watching #Trakt https://trakt.tv/movies/the-craft-1996",
+    "date_published": "Sun, 29 Oct 2023 21:43:16 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111320562199470390"
+    ],
+    "lastTootTimestamp": 1698616977234
   }
 }
