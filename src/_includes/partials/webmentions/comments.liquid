@@ -4,13 +4,13 @@
     {% for mention in mentions['in-reply-to'] %}
       <div class="border-bottom flex flex-row items-center border-gray-100 pb-4 w-full">
         <div class="group flex flex-row space-between items-center">
-          <a href={{mention.url}}>
+          <a href="{{mention.url}}">
             <div class="bg-gray-900 dark:bg-white h-14 w-14 border-4 border-white dark:border-gray-200 transition-all ease-in-out duration-300 group-hover:border-blue-800 dark:group-hover:border-blue-200 rounded-full overflow-hidden">
-                {% image mention.author.photo, mention.author.name %}
+              <img src="{{ mention.author.photo }}" alt="{{ mention.author.name }}" class="w-full" />
             </div>
           </a>
           <div class="ml-3">
-            <a class="text-gray-700 dark:text-gray-200" href={{mention.url}}>
+            <a class="text-gray-700 dark:text-gray-200" href="{{mention.url}}">
               <p class="text-sm group-hover:text-blue-800 dark:group-hover:text-blue-200">{{ mention.content.text }}</p>
               <p class="mt-1 text-xs group-hover:text-blue-800 dark:group-hover:text-blue-200">{{ mention.published | isoDateOnly }}</p>
             </a>
