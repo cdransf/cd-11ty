@@ -140,6 +140,6 @@ For this page in particular, the images that are rendered above the fold are set
 
 All of these boilerplate steps leave us with a quick to load, accessible and resilient site:
 
-{% image '<https://cdn.coryd.dev/blog/page-speed.jpg>', 'Pagespeed scores for coryd.dev/now', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full' %}
+{% image 'https://cdn.coryd.dev/blog/page-speed.jpg', 'Pagespeed scores for coryd.dev/now', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full' %}
 
 [^1]: It's easy, flexible and helps mitigate my lack of an eye for design by providing safe baselines.
