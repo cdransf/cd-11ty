@@ -26,7 +26,7 @@ If you want to skip all the reading, the diff for this [is here](https://github.
       {% assign alt = item.alt | strip %}
       <a href="{{ item.url | stripUtm }}" title="{{ alt | escape }}">
         <div class="relative block h-full"{% if shape != 'square' %} style="max-width:226px"{% endif %}>
-          <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-pink-500 dark:border-purple-400 dark:hover:border-pink-500 ease-in-out duration-300{% if item.title %} bg-cover-gradient{% endif %}"></div>
+          <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-blue-600 hover:border-blue-800 dark:border-blue-400 dark:hover:border-blue-200 ease-in-out duration-300{% if item.title %} bg-cover-gradient{% endif %}"></div>
           <div class="absolute left-1 bottom-2 drop-shadow-md">
             {% if item.title %}
               <div class="px-1 text-xs font-bold text-white line-clamp-2">{{ item.title }}</div>

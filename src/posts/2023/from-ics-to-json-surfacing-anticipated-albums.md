@@ -65,6 +65,6 @@ Rendering the output is as simple as:
 
 {% endraw %}
 Leaving us with:
-{% image 'https://cdn.coryd.dev/blog/album-releases.jpg', 'Albums I\'m looking forward to', 'border border-purple-600 dark:border-purple-400 rounded-lg overflow-hidden [&>*]:w-full' %}
+{% image '<https://cdn.coryd.dev/blog/album-releases.jpg>', 'Albums I\'m looking forward to', 'border border-blue-500 dark:border-blue-200 rounded-lg overflow-hidden [&>*]:w-full' %}
 
 [^1]: At this point, a dev playground.

@@ -69,7 +69,7 @@ export default function Now(props) {
             <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-100">
               <CodeBracketIcon className="mr-1 inline h-6 w-6" />
               Working at <Link
-                className="text-purple-500 hover:text-purple-600 dark:hover:text-purple-400"
+                className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                 href="https://hashicorp.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -81,7 +81,7 @@ export default function Now(props) {
               <MegaphoneIcon className="mr-1 inline h-6 w-6" />
               Rooting for the{` `}
               <Link
-                className="text-purple-500 hover:text-purple-600 dark:hover:text-purple-400"
+                className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                 href="https://lakers.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -98,7 +98,7 @@ export default function Now(props) {
             <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-100">
               <CommandLineIcon className="mr-1 inline h-6 w-6" />
               Hacking away on random projects like this page, my <Link
-                className="text-purple-500 hover:text-purple-600 dark:hover:text-purple-400"
+                className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                 href="/blog"
                 passHref
               >
@@ -114,7 +114,7 @@ export default function Now(props) {
           <p className="pt-8 text-center text-xs text-gray-900 dark:text-gray-100">
             (This is a{' '}
             <Link
-              className="text-purple-500 hover:text-purple-600 dark:hover:text-purple-400"
+              className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
               href="https://nownownow.com/about"
               target="_blank"
               rel="noopener noreferrer"
@@ -122,7 +122,7 @@ export default function Now(props) {
               now page
             </Link>
             , and if you have your own site, <Link
-              className="text-purple-500 hover:text-purple-600 dark:hover:text-purple-400"
+              className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
               href="https://nownownow.com/about"
               target="_blank"
               rel="noopener noreferrer"
@@ -309,14 +309,14 @@ const Cover = (props: { media: Media; type: 'artist' | 'album' }) => {
 
   return (
     <Link
-      className="text-purple-500 hover:text-purple-600 dark:hover:text-purple-400"
+      className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
       href={media.url}
       target="_blank"
       rel="noopener noreferrer"
       title={media.name}
     >
       <div className="relative">
-        <div className="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-500 bg-cover-gradient dark:border-gray-500"></div>
+        <div className="absolute left-0 top-0 h-full w-full rounded-lg border border-blue-500 bg-cover-gradient dark:border-gray-500"></div>
         <div className="absolute left-1 bottom-2 drop-shadow-md">
           <div className="px-1 text-xs font-bold text-white">{media.name}</div>
           <div className="px-1 text-xs text-white">

@@ -1,7 +1,7 @@
 <nav class="flex justify-between mt-8 items-center">
   {% if pagination.href.previous %}
     <a href="{{ pagination.href.previous }}">
-      <button class="py-2 pr-4 dark:text-purple-400 text-purple-600" aria-label="Previous page [&>svg]:h-5 [&>svg]:w-5">
+      <button class="py-2 pr-4 dark:text-blue-400 text-blue-600" aria-label="Previous page [&>svg]:h-5 [&>svg]:w-5">
         {% tablericon "arrow-left" "Previous" %}
       </button>
     </a>
@@ -18,7 +18,7 @@
   </div>
   {% if pagination.href.next %}
     <a href="{{ pagination.href.next }}">
-      <button class="py-2 pl-4 dark:text-purple-400 text-purple-600 [&>svg]:h-5 [&>svg]:w-5" aria-label="Next page">
+      <button class="py-2 pl-4 dark:text-blue-400 text-blue-600 [&>svg]:h-5 [&>svg]:w-5" aria-label="Next page">
         {% tablericon "arrow-right" "Next" %}
       </button>
     </a>

@@ -19,7 +19,7 @@ meta:
 ---
 
 <div class="flex items-center justify-center w-full not-prose mb-6">
-  <div class="border border-teal-700 dark:border-teal-300 bg-white rounded-full overflow-hidden p-4 [&>*]:max-w-xs">
+  <div class="border border-blue-500 dark:border-blue-200 bg-white rounded-full overflow-hidden p-4 [&>*]:max-w-xs">
     {% capture about_alt %}{{ site.name }} - image by David Neal / @reverentgeek{% endcapture %}
     {% image './src/assets/img/avatar.webp', about_alt, 'w-full h-auto' %}
   </div>

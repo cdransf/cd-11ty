@@ -160,7 +160,7 @@ The templating for my site is all written in [liquid.js](https://liquidjs.com) a
     {% for artist in recentTracks.artists %}
       <a href="https://rateyourmusic.com/search?searchterm={{ artist.name | escape }}" title="{{artist.name | escape}}">
         <div class="relative block">
-          <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
+          <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-blue-600 hover:border-blue-500 bg-cover-gradient dark:border-blue-400 dark:hover:border-blue-500"></div>
           <div class="absolute left-1 bottom-2 drop-shadow-md">
             <div class="px-1 text-xs font-bold text-white">{{ artist.name }}</div>
             <div class="px-1 text-xs text-white">
@@ -184,7 +184,7 @@ The templating for my site is all written in [liquid.js](https://liquidjs.com) a
     {% for album in recentTracks.albums %}
       <a href="https://rateyourmusic.com/search?searchtype=l&searchterm={{album.name | escape}}" title="{{album.name | escape}}">
         <div class="relative block">
-          <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-purple-600 hover:border-purple-500 bg-cover-gradient dark:border-purple-400 dark:hover:border-purple-500"></div>
+          <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-blue-600 hover:border-blue-500 bg-cover-gradient dark:border-blue-400 dark:hover:border-blue-500"></div>
           <div class="absolute left-1 bottom-2 drop-shadow-md">
             <div class="px-1 text-xs font-bold text-white">{{ album.name }}</div>
             <div class="px-1 text-xs text-white">
@@ -204,7 +204,7 @@ The templating for my site is all written in [liquid.js](https://liquidjs.com) a
 
 We have an object containing arrays of objects — we iterate through each object for the appropriate section (tracks aren't displayed at the moment) and build the resulting display[^3]. This isn't perfect by any means, but, it does provide a nice little visualization of what I'm listening to and `240` tracks feels adequate as a rolling window into that activity.
 
-{% image 'https://cdn.coryd.dev/blog/albums-artists.jpg', 'Albums and artists', 'border border-purple-600 dark:border-purple-400 rounded-lg overflow-hidden [&>*]:w-full' %}
+{% image '<https://cdn.coryd.dev/blog/albums-artists.jpg>', 'Albums and artists', 'border border-blue-500 dark:border-blue-200 rounded-lg overflow-hidden [&>*]:w-full' %}
 
 [^1]: There are some good options to do this, but there aren't a _ton_ and the age of some of the apps is concerning. [Marvis](https://appaddy.wixsite.com/marvis) is far and away your best choice here.
 [^2]: Making sure that you update the values you obtained, including the path to your downloaded `.p8` file.
