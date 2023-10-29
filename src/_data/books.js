@@ -44,12 +44,17 @@ module.exports = async function () {
           if (!data[index]) data.push({ percentage: percentage.textContent })
           if (data[index]) data[index]['percentage'] = percentage.textContent
         })
+      doc.querySelectorAll('.md\\:block .action-menu a > p').forEach((dateStarted, index) => {
+        const date = new Date(dateStarted.textContent.replace('Started ', '').split('\n')[0])
+        if (!data[index]) data.push({ dateAdded: date })
+        if (data[index]) data[index]['dateAdded'] = date
+      })
     })
   const books = data
     .filter((book) => book.title)
     .map((book) => {
       book.type = 'book'
-      book.dateAdded = new Date()
+      if (!('dateAdded' in book)) book.dateAdded = new Date()
       return book
     })
   await asset.save(books, 'json')

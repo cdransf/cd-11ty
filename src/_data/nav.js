@@ -11,6 +11,7 @@ module.exports = async function () {
     ],
     social: [
       { name: 'Email', url: 'mailto:coryd@fastmail.com', icon: 'at' },
+      { name: 'Calendar', url: 'https://savvycal.com/ced/', icon: 'calendar-plus' },
       { name: 'GitHub', url: 'https://github.com/cdransf', icon: 'brand-github' },
       { name: 'Mastodon', url: 'https://social.lol/@cory', icon: 'brand-mastodon' },
       {

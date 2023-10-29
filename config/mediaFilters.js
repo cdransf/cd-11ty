@@ -16,7 +16,11 @@ module.exports = {
         normalized['subtext'] = `#${item['rank']}`
       }
       if (item.type === 'movie') normalized['alt'] = item['title']
-      if (item.type === 'book') normalized['alt'] = `${item['title']} by ${item['author']}`
+      if (item.type === 'book') {
+        normalized['alt'] = `${item['title']} by ${item['author']}`
+        normalized['subtext'] = `${item['percentage']} finished`
+        normalized['percentage'] = item['percentage']
+      }
       if (item.type === 'tv') {
         normalized['title'] = item['title']
         normalized['alt'] = `${item['title']} from ${item['name']}`
