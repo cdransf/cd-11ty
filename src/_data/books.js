@@ -17,47 +17,53 @@ module.exports = async function () {
     .then((html) => {
       const DOM = new JSDOM(html)
       const doc = DOM.window.document
-      doc
-        .querySelectorAll('.md\\:block .book-title-author-and-series h3 > a')
-        .forEach((title, index) => {
-          if (!data[index]) data.push({ title: title.textContent })
-          if (data[index]) data[index]['title'] = title.textContent
-        })
-      doc
-        .querySelectorAll('.md\\:block .book-title-author-and-series h3 p:last-of-type > a')
-        .forEach((author, index) => {
-          if (!data[index]) data.push({ author: author.textContent })
-          if (data[index]) data[index]['author'] = author.textContent
-        })
-      doc.querySelectorAll('.md\\:block .book-cover img').forEach((image, index) => {
-        const img = image.src.replace('https://cdn.thestorygraph.com', 'https://books.coryd.dev')
-        if (!data[index]) data.push({ image: img })
-        if (data[index]) data[index]['image'] = img
-      })
-      doc.querySelectorAll('.md\\:block .book-cover a').forEach((url, index) => {
-        if (!data[index]) data.push({ url: `https://app.thestorygraph.com${url.href}` })
-        if (data[index]) data[index]['url'] = `https://app.thestorygraph.com${url.href}`
-      })
-      doc
-        .querySelectorAll('.md\\:block .progress-tracker-pane .font-semibold')
-        .forEach((percentage, index) => {
-          if (!data[index]) data.push({ percentage: percentage.textContent })
-          if (data[index]) data[index]['percentage'] = percentage.textContent
-        })
-      doc.querySelectorAll('.md\\:block .action-menu a > p').forEach((dateStarted, index) => {
-        const date = new Date(dateStarted.textContent.replace('Started ', '').split('\n')[0])
-        if (!data[index]) data.push({ dateAdded: date })
-        if (data[index]) data[index]['dateAdded'] = date
-      })
+      const bookCount = doc.querySelectorAll('.md\\:block .book-pane-content').length
+      const titles = doc.querySelectorAll('.md\\:block .book-title-author-and-series h3 > a')
+      const authors = doc.querySelectorAll(
+        '.md\\:block .book-title-author-and-series h3 p:last-of-type > a'
+      )
+      const images = doc.querySelectorAll('.md\\:block .book-cover img')
+      const urls = doc.querySelectorAll('.md\\:block .book-cover a')
+      const percentages = doc.querySelectorAll('.md\\:block .progress-tracker-pane .font-semibold')
+      const dates = doc.querySelectorAll('.md\\:block .action-menu a > p')
+
+      for (let i = 0; i < bookCount; i++) {
+        if (!data[i]) {
+          data.push({ title: titles[i].textContent })
+          data.push({ author: authors[i].textContent })
+          data.push({
+            image: images[i].src.replace(
+              'https://cdn.thestorygraph.com',
+              'https://books.coryd.dev'
+            ),
+          })
+          data.push({ url: `https://app.thestorygraph.com${urls[i].href}` })
+          data.push({ percentage: percentages[i].textContent || '0%' })
+          data.push({
+            dateAdded: dates[i]
+              ? new Date(dates[i].textContent.replace('Started ', '').split('\n')[0])
+              : new Date(),
+          })
+          data.push({ type: 'book' })
+        }
+
+        if (data[i]) {
+          data[i]['title'] = titles[i].textContent
+          data[i]['author'] = authors[i].textContent
+          data[i]['image'] = images[i].src.replace(
+            'https://cdn.thestorygraph.com',
+            'https://books.coryd.dev'
+          )
+          data[i]['url'] = `https://app.thestorygraph.com${urls[i].href}`
+          data[i]['percentage'] = percentages[i].textContent || '0%'
+          data[i]['dateAdded'] = dates[i]
+            ? new Date(dates[i].textContent.replace('Started ', '').split('\n')[0])
+            : new Date()
+          data[i]['type'] = 'book'
+        }
+      }
     })
-  const books = data
-    .filter((book) => book.title)
-    .map((book) => {
-      book.type = 'book'
-      if (!('dateAdded' in book)) book.dateAdded = new Date()
-      if (!('percentage' in book)) book.percentage = '0%'
-      return book
-    })
+  const books = data.filter((book) => book.title)
   await asset.save(books, 'json')
   return books
 }
