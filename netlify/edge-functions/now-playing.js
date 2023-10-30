@@ -90,6 +90,43 @@ export default async () => {
     }
   }
 
+  const nbaRes = await fetch(
+    'https://cdn.nba.com/static/json/liveData/scoreboard/todaysScoreboard_00.json'
+  )
+    .then((data) => data.json())
+    .catch()
+  const games = nbaRes?.scoreboard?.games
+
+  if (games && games.length) {
+    const game = games.find((game) => game.gameCode.includes('LAL'))
+    if (game) {
+      const startDate = new Date(game.gameTimeUTC)
+      const startTime = startDate.toLocaleString('en-US', {
+        timeZone: 'America/Los_Angeles',
+      })
+      const endDate = startDate.setHours(startDate.getHours() + 3)
+      const endTime = new Date(endDate).toLocaleString('en-US', {
+        timeZone: 'America/Los_Angeles',
+      })
+      const now = new Date().toLocaleString('en-US', {
+        timeZone: 'America/Los_Angeles',
+      })
+      const isCorrectDate =
+        now.split(',')[0] === startTime.split(',')[0] && now.split(',')[0] === endTime.split(',')[0]
+
+      const nowHour = parseInt(now.split(',')[1].split(':')[0].trim())
+      const startHour = parseInt(startTime.split(',')[1].split(':')[0].trim())
+      const endHour = parseInt(endTime.split(',')[1].split(':')[0].trim())
+
+      if (isCorrectDate && nowHour >= startHour && nowHour <= endHour) {
+        return Response.json({
+          text: `🏀 ${game['awayTeam']['teamName']} (${game['awayTeam']['wins']}-${game['awayTeam']['losses']}) @ ${game['homeTeam']['teamName']} (${game['homeTeam']['wins']}-${game['homeTeam']['losses']})`,
+          html: `🏀 ${game['awayTeam']['teamName']} (${game['awayTeam']['wins']}-${game['awayTeam']['losses']}) @ ${game['homeTeam']['teamName']} (${game['homeTeam']['wins']}-${game['homeTeam']['losses']})`,
+        })
+      }
+    }
+  }
+
   const trackRes = await fetch(
     'https://api.music.apple.com/v1/me/recent/played/tracks?limit=1&extend=artistUrl',
     {
