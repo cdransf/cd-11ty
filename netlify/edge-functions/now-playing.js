@@ -113,16 +113,21 @@ export default async () => {
       })
       const isCorrectDate =
         now.split(',')[0] === startTime.split(',')[0] && now.split(',')[0] === endTime.split(',')[0]
-
       const nowHour = parseInt(now.split(',')[1].split(':')[0].trim())
       const startHour = parseInt(startTime.split(',')[1].split(':')[0].trim())
       const endHour = parseInt(endTime.split(',')[1].split(':')[0].trim())
-
-      if (isCorrectDate && nowHour >= startHour && nowHour <= endHour) {
-        return Response.json({
+      const nowMinutes = parseInt(now.split(',')[1].split(':')[1].trim())
+      const startMinutes = parseInt(startTime.split(',')[1].split(':')[1].trim())
+      const endMinutes = parseInt(endTime.split(',')[1].split(':')[1].trim())
+      const res = {
           text: `🏀 ${game['awayTeam']['teamName']} (${game['awayTeam']['wins']}-${game['awayTeam']['losses']}) @ ${game['homeTeam']['teamName']} (${game['homeTeam']['wins']}-${game['homeTeam']['losses']})`,
           html: `🏀 ${game['awayTeam']['teamName']} (${game['awayTeam']['wins']}-${game['awayTeam']['losses']}) @ ${game['homeTeam']['teamName']} (${game['homeTeam']['wins']}-${game['homeTeam']['losses']})`,
-        })
+        }
+        
+      if (isCorrectDate) {
+        if (nowHour === startHour && nowMinutes >= startMinutes && nowHour < endHour) return Response.json(res)
+        if (nowHour > startHour && nowHour < endHour) return Response.json(res)
+        if (nowHour > startHour && nowMinutes <= endMinutes && nowHour == endHour) return Response.json(res)
       }
     }
   }
