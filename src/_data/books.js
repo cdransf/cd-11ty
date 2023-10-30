@@ -55,6 +55,7 @@ module.exports = async function () {
     .map((book) => {
       book.type = 'book'
       if (!('dateAdded' in book)) book.dateAdded = new Date()
+      if (!('percentage' in book)) book.percentage = '0%'
       return book
     })
   await asset.save(books, 'json')
