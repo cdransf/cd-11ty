@@ -6809,7 +6809,7 @@
     "title": "📖: Elysium Fire",
     "url": "https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
     "content_text": "📖: Elysium Fire #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
-    "date_published": "Sun, 29 Oct 2023 20:03:12 +0000",
+    "date_published": "Mon, 30 Oct 2023 17:03:19 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111286588479677459"
     ],
@@ -6869,5 +6869,16 @@
       "https://social.lol/users/cory/statuses/111320562199470390"
     ],
     "lastTootTimestamp": 1698616977234
+  },
+  "https://app.thestorygraph.com/books/dd1135c7-0631-4bef-aab4-b62b400e0354": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvZGQxMTM1YzctMDYzMS00YmVmLWFhYjQtYjYyYjQwMGUwMzU0",
+    "title": "📖: Bottoms Up and the Devil Laughs: A Journey Through the Deep State",
+    "url": "https://app.thestorygraph.com/books/dd1135c7-0631-4bef-aab4-b62b400e0354",
+    "content_text": "📖: Bottoms Up and the Devil Laughs: A Journey Through the Deep State #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/dd1135c7-0631-4bef-aab4-b62b400e0354",
+    "date_published": "Mon, 30 Oct 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111325281856288949"
+    ],
+    "lastTootTimestamp": 1698688993230
   }
 }
