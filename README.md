@@ -10,7 +10,7 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 
 [Now](https://coryd.dev/now) • [About](https://coryd.dev/about) • [Uses](https://coryd.dev/uses) • [Referrals](https://coryd.dev/referrals)
 
-## My latest posts
+## 📝 Recent posts
 <!-- BLOGPOSTS:START -->
 - [Onward, to The Storygraph](https://coryd.dev/posts/2023/onward-to-the-storygraph/)
 - [Migrating your Letterboxd data](https://coryd.dev/posts/2023/migrating-your-letterboxd-data/)
