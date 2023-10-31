@@ -120,14 +120,16 @@ export default async () => {
       const startMinutes = parseInt(startTime.split(',')[1].split(':')[1].trim())
       const endMinutes = parseInt(endTime.split(',')[1].split(':')[1].trim())
       const res = {
-          text: `🏀 ${game['awayTeam']['teamName']} (${game['awayTeam']['wins']}-${game['awayTeam']['losses']}) @ ${game['homeTeam']['teamName']} (${game['homeTeam']['wins']}-${game['homeTeam']['losses']})`,
-          html: `🏀 ${game['awayTeam']['teamName']} (${game['awayTeam']['wins']}-${game['awayTeam']['losses']}) @ ${game['homeTeam']['teamName']} (${game['homeTeam']['wins']}-${game['homeTeam']['losses']})`,
-        }
-        
+        text: `🏀 ${game['awayTeam']['teamName']} (${game['awayTeam']['wins']}-${game['awayTeam']['losses']}) @ ${game['homeTeam']['teamName']} (${game['homeTeam']['wins']}-${game['homeTeam']['losses']})`,
+        html: `🏀 ${game['awayTeam']['teamName']} (${game['awayTeam']['wins']}-${game['awayTeam']['losses']}) @ ${game['homeTeam']['teamName']} (${game['homeTeam']['wins']}-${game['homeTeam']['losses']})`,
+      }
+
       if (isCorrectDate) {
-        if (nowHour === startHour && nowMinutes >= startMinutes && nowHour < endHour) return Response.json(res)
+        if (nowHour === startHour && nowMinutes >= startMinutes && nowHour < endHour)
+          return Response.json(res)
         if (nowHour > startHour && nowHour < endHour) return Response.json(res)
-        if (nowHour > startHour && nowMinutes <= endMinutes && nowHour == endHour) return Response.json(res)
+        if (nowHour > startHour && nowMinutes <= endMinutes && nowHour == endHour)
+          return Response.json(res)
       }
     }
   }
