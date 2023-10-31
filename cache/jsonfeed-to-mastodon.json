@@ -6809,7 +6809,7 @@
     "title": "📖: Elysium Fire",
     "url": "https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
     "content_text": "📖: Elysium Fire #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
-    "date_published": "Mon, 30 Oct 2023 17:03:19 +0000",
+    "date_published": "Tue, 31 Oct 2023 17:51:49 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111286588479677459"
     ],
@@ -6880,5 +6880,24 @@
       "https://social.lol/users/cory/statuses/111325281856288949"
     ],
     "lastTootTimestamp": 1698688993230
+  },
+  "https://heather-buchel.com/blog/2023/10/why-your-web-design-sucks/": {
+    "id": "aHR0cHM6Ly9oZWF0aGVyLWJ1Y2hlbC5jb20vYmxvZy8yMDIzLzEwL3doeS15b3VyLXdlYi1kZXNpZ24tc3Vja3Mv",
+    "title": "🔗: It's 2023, here is why your web design sucks.",
+    "url": "https://heather-buchel.com/blog/2023/10/why-your-web-design-sucks/",
+    "content_text": "🔗: It's 2023, here is why your web design sucks. #WebDev https://heather-buchel.com/blog/2023/10/why-your-web-design-sucks/",
+    "date_published": "Tue, 31 Oct 2023 17:27:36 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111330944026878712"
+    ],
+    "lastTootTimestamp": 1698775391159
+  },
+  "https://meiert.com/en/blog/what-happened-to-separation-of-concerns/": {
+    "id": "aHR0cHM6Ly9tZWllcnQuY29tL2VuL2Jsb2cvd2hhdC1oYXBwZW5lZC10by1zZXBhcmF0aW9uLW9mLWNvbmNlcm5zLw==",
+    "title": "🔗: What Happened to Separation of Concerns in Frontend Development",
+    "url": "https://meiert.com/en/blog/what-happened-to-separation-of-concerns/",
+    "content_text": "🔗: What Happened to Separation of Concerns in Frontend Development #WebDev https://meiert.com/en/blog/what-happened-to-separation-of-concerns/",
+    "date_published": "Tue, 31 Oct 2023 17:25:06 +0000",
+    "toots": []
   }
 }
