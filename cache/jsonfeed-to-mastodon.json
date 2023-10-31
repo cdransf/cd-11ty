@@ -6809,7 +6809,7 @@
     "title": "📖: Elysium Fire",
     "url": "https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
     "content_text": "📖: Elysium Fire #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
-    "date_published": "Tue, 31 Oct 2023 18:21:17 +0000",
+    "date_published": "Tue, 31 Oct 2023 19:03:09 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111286588479677459"
     ],
@@ -6902,9 +6902,9 @@
   },
   "https://www.epicweb.dev/why-i-wont-use-nextjs": {
     "id": "aHR0cHM6Ly93d3cuZXBpY3dlYi5kZXYvd2h5LWktd29udC11c2UtbmV4dGpz",
-    "title": "🔗: Why I Won't Use Next.js | Epic Web Dev by Kent C. Dodds",
+    "title": "🔗: Why I Won't Use Next.js",
     "url": "https://www.epicweb.dev/why-i-wont-use-nextjs",
-    "content_text": "🔗: Why I Won't Use Next.js | Epic Web Dev by Kent C. Dodds #WebDev https://www.epicweb.dev/why-i-wont-use-nextjs",
+    "content_text": "🔗: Why I Won't Use Next.js #WebDev https://www.epicweb.dev/why-i-wont-use-nextjs",
     "date_published": "Tue, 31 Oct 2023 18:18:47 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111331098209503702"
@@ -6925,6 +6925,9 @@
     "url": "https://pudding.cool/2023/10/genre/",
     "content_text": "🔗: You should look at this chart about music genres #Music https://pudding.cool/2023/10/genre/",
     "date_published": "Tue, 31 Oct 2023 18:02:55 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111331415392035223"
+    ],
+    "lastTootTimestamp": 1698782583559
   }
 }
