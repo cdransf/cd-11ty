@@ -6809,7 +6809,7 @@
     "title": "📖: Elysium Fire",
     "url": "https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
     "content_text": "📖: Elysium Fire #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
-    "date_published": "Tue, 31 Oct 2023 17:51:49 +0000",
+    "date_published": "Tue, 31 Oct 2023 18:21:17 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111286588479677459"
     ],
@@ -6898,6 +6898,33 @@
     "url": "https://meiert.com/en/blog/what-happened-to-separation-of-concerns/",
     "content_text": "🔗: What Happened to Separation of Concerns in Frontend Development #WebDev https://meiert.com/en/blog/what-happened-to-separation-of-concerns/",
     "date_published": "Tue, 31 Oct 2023 17:25:06 +0000",
+    "toots": []
+  },
+  "https://www.epicweb.dev/why-i-wont-use-nextjs": {
+    "id": "aHR0cHM6Ly93d3cuZXBpY3dlYi5kZXYvd2h5LWktd29udC11c2UtbmV4dGpz",
+    "title": "🔗: Why I Won't Use Next.js | Epic Web Dev by Kent C. Dodds",
+    "url": "https://www.epicweb.dev/why-i-wont-use-nextjs",
+    "content_text": "🔗: Why I Won't Use Next.js | Epic Web Dev by Kent C. Dodds #WebDev https://www.epicweb.dev/why-i-wont-use-nextjs",
+    "date_published": "Tue, 31 Oct 2023 18:18:47 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111331098209503702"
+    ],
+    "lastTootTimestamp": 1698777743742
+  },
+  "https://www.smashingmagazine.com/2023/10/speedcurve-fight-main-thread/": {
+    "id": "aHR0cHM6Ly93d3cuc21hc2hpbmdtYWdhemluZS5jb20vMjAyMy8xMC9zcGVlZGN1cnZlLWZpZ2h0LW1haW4tdGhyZWFkLw==",
+    "title": "🔗: The Fight For The Main Thread",
+    "url": "https://www.smashingmagazine.com/2023/10/speedcurve-fight-main-thread/",
+    "content_text": "🔗: The Fight For The Main Thread #WebDev https://www.smashingmagazine.com/2023/10/speedcurve-fight-main-thread/",
+    "date_published": "Tue, 31 Oct 2023 18:04:41 +0000",
+    "toots": []
+  },
+  "https://pudding.cool/2023/10/genre/": {
+    "id": "aHR0cHM6Ly9wdWRkaW5nLmNvb2wvMjAyMy8xMC9nZW5yZS8=",
+    "title": "🔗: You should look at this chart about music genres",
+    "url": "https://pudding.cool/2023/10/genre/",
+    "content_text": "🔗: You should look at this chart about music genres #Music https://pudding.cool/2023/10/genre/",
+    "date_published": "Tue, 31 Oct 2023 18:02:55 +0000",
     "toots": []
   }
 }
