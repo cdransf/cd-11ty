@@ -1,18 +1,1 @@
-{
-  "links": [
-    {
-      "date": "Tue, 31 Oct 2023 10:25:06 -0700",
-      "tags": "development",
-      "title": "What Happened to Separation of Concerns in Frontend Development",
-      "id": "https://meiert.com/en/blog/what-happened-to-separation-of-concerns/",
-      "url": "https://meiert.com/en/blog/what-happened-to-separation-of-concerns/"
-    },
-    {
-      "date": "Tue, 31 Oct 2023 10:27:36 -0700",
-      "tags": "development",
-      "title": "It&#39;s 2023, here is why your web design sucks.",
-      "id": "https://heather-buchel.com/blog/2023/10/why-your-web-design-sucks/",
-      "url": "https://heather-buchel.com/blog/2023/10/why-your-web-design-sucks/"
-    }
-  ]
-}
+{"links":[{"tags":"development","title":"What Happened to Separation of Concerns in Frontend Development","id":"https:\/\/meiert.com\/en\/blog\/what-happened-to-separation-of-concerns\/","url":"https:\/\/meiert.com\/en\/blog\/what-happened-to-separation-of-concerns\/","date":"Tue, 31 Oct 2023 10:25:06 -0700"},{"tags":"development","title":"It&#39;s 2023, here is why your web design sucks.","id":"https:\/\/heather-buchel.com\/blog\/2023\/10\/why-your-web-design-sucks\/","url":"https:\/\/heather-buchel.com\/blog\/2023\/10\/why-your-web-design-sucks\/","date":"Tue, 31 Oct 2023 10:27:36 -0700"},{"tags":"music","title":"You should look at this chart about music genres","id":"https:\/\/pudding.cool\/2023\/10\/genre\/","url":"https:\/\/pudding.cool\/2023\/10\/genre\/","date":"Tue, 31 Oct 2023 11:02:55 -0700"}]}
