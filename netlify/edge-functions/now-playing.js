@@ -77,15 +77,13 @@ export default async () => {
   if (Object.keys(traktRes).length) {
     if (traktRes['type'] === 'episode') {
       return Response.json({
-        text: `📺 ${traktRes['show']['title']} • ${traktRes['episode']['title']}`,
-        html: `📺 <a href="https://trakt.tv/shows/${traktRes['show']['ids']['slug']}">${traktRes['show']['title']}</a> • <a href="https://trakt.tv/shows/${traktRes['show']['ids']['slug']}/seasons/${traktRes['episode']['season']}/episodes/${traktRes['episode']['number']}">${traktRes['episode']['title']}</a>`,
+        content: `📺 <a href="https://trakt.tv/shows/${traktRes['show']['ids']['slug']}">${traktRes['show']['title']}</a> • <a href="https://trakt.tv/shows/${traktRes['show']['ids']['slug']}/seasons/${traktRes['episode']['season']}/episodes/${traktRes['episode']['number']}">${traktRes['episode']['title']}</a>`,
       })
     }
 
     if (traktRes['type'] === 'movie') {
       return Response.json({
-        text: `🎥 ${traktRes['movie']['title']}`,
-        html: `🎥 <a href="https://trakt.tv/movies/${traktRes['movie']['ids']['slug']}">${traktRes['movie']['title']}</a>`,
+        content: `🎥 <a href="https://trakt.tv/movies/${traktRes['movie']['ids']['slug']}">${traktRes['movie']['title']}</a>`,
       })
     }
   }
@@ -120,8 +118,7 @@ export default async () => {
       const startMinutes = parseInt(startTime.split(',')[1].split(':')[1].trim())
       const endMinutes = parseInt(endTime.split(',')[1].split(':')[1].trim())
       const res = {
-        text: `🏀 ${game['awayTeam']['teamName']} (${game['awayTeam']['wins']}-${game['awayTeam']['losses']}) @ ${game['homeTeam']['teamName']} (${game['homeTeam']['wins']}-${game['homeTeam']['losses']})`,
-        html: `🏀 ${game['awayTeam']['teamName']} (${game['awayTeam']['wins']}-${game['awayTeam']['losses']}) @ ${game['homeTeam']['teamName']} (${game['homeTeam']['wins']}-${game['homeTeam']['losses']})`,
+        content: `🏀 ${game['awayTeam']['teamName']} (${game['awayTeam']['wins']}-${game['awayTeam']['losses']}) @ ${game['homeTeam']['teamName']} (${game['homeTeam']['wins']}-${game['homeTeam']['losses']})`,
       }
 
       if (isCorrectDate) {
@@ -159,8 +156,7 @@ export default async () => {
     : `https://musicbrainz.org/search?query=${track['artistName'].replace(/\s+/g, '+')}&type=artist`
 
   return Response.json({
-    text: `🎧 ${sanitizeTrack(track['name'])} by ${artist}`,
-    html: `🎧 <a href="${trackUrl}">${sanitizeTrack(
+    content: `🎧 <a href="${trackUrl}">${sanitizeTrack(
       track['name']
     )}</a> by <a href="${artistUrl}">${artist}</a>`,
   })
