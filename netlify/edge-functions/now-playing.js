@@ -96,6 +96,7 @@ export default async () => {
   const games = nbaRes?.scoreboard?.games
 
   if (games && games.length) {
+    const isAmPm = (hours) => (hours >= 12 ? 'pm' : 'am')
     const game = games.find((game) => game.gameCode.includes('LAL'))
     if (game) {
       const startDate = new Date(game.gameTimeUTC)
@@ -110,12 +111,10 @@ export default async () => {
       const now = nowDate.toLocaleString('en-US', {
         timeZone: 'America/Los_Angeles',
       })
-      const startAmPm = startDate.getHours() >= 12 ? 'pm' : 'am'
-      const nowAmPm = nowDate.getHours() >= 12 ? 'pm' : 'am'
       const isCorrectDate =
         now.split(',')[0] === startTime.split(',')[0] &&
         now.split(',')[0] === endTime.split(',')[0] &&
-        startAmPm === nowAmPm
+        isAmPm(startDate.getHours()) === isAmPm(nowDate.getHours())
       const nowHour = parseInt(now.split(',')[1].split(':')[0].trim())
       const startHour = parseInt(startTime.split(',')[1].split(':')[0].trim())
       const endHour = parseInt(endTime.split(',')[1].split(':')[0].trim())
