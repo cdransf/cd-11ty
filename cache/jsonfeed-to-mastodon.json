@@ -6809,7 +6809,7 @@
     "title": "📖: Elysium Fire",
     "url": "https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
     "content_text": "📖: Elysium Fire #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
-    "date_published": "Tue, 31 Oct 2023 19:03:09 +0000",
+    "date_published": "Mon, 30 Oct 2023 00:00:00 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111286588479677459"
     ],
@@ -6875,7 +6875,7 @@
     "title": "📖: Bottoms Up and the Devil Laughs: A Journey Through the Deep State",
     "url": "https://app.thestorygraph.com/books/dd1135c7-0631-4bef-aab4-b62b400e0354",
     "content_text": "📖: Bottoms Up and the Devil Laughs: A Journey Through the Deep State #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/dd1135c7-0631-4bef-aab4-b62b400e0354",
-    "date_published": "Mon, 30 Oct 2023 00:00:00 +0000",
+    "date_published": "Wed, 01 Nov 2023 02:13:50 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111325281856288949"
     ],
@@ -6898,7 +6898,10 @@
     "url": "https://meiert.com/en/blog/what-happened-to-separation-of-concerns/",
     "content_text": "🔗: What Happened to Separation of Concerns in Frontend Development #WebDev https://meiert.com/en/blog/what-happened-to-separation-of-concerns/",
     "date_published": "Tue, 31 Oct 2023 17:25:06 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111331886866793776"
+    ],
+    "lastTootTimestamp": 1698789777695
   },
   "https://www.epicweb.dev/why-i-wont-use-nextjs": {
     "id": "aHR0cHM6Ly93d3cuZXBpY3dlYi5kZXYvd2h5LWktd29udC11c2UtbmV4dGpz",
@@ -6917,7 +6920,10 @@
     "url": "https://www.smashingmagazine.com/2023/10/speedcurve-fight-main-thread/",
     "content_text": "🔗: The Fight For The Main Thread #WebDev https://www.smashingmagazine.com/2023/10/speedcurve-fight-main-thread/",
     "date_published": "Tue, 31 Oct 2023 18:04:41 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111332866724546029"
+    ],
+    "lastTootTimestamp": 1698804729122
   },
   "https://pudding.cool/2023/10/genre/": {
     "id": "aHR0cHM6Ly9wdWRkaW5nLmNvb2wvMjAyMy8xMC9nZW5yZS8=",
@@ -6929,5 +6935,27 @@
       "https://social.lol/users/cory/statuses/111331415392035223"
     ],
     "lastTootTimestamp": 1698782583559
+  },
+  "https://viewports.fyi/": {
+    "id": "aHR0cHM6Ly92aWV3cG9ydHMuZnlpLw==",
+    "title": "🔗: The ideal viewport doesn’t exist",
+    "url": "https://viewports.fyi/",
+    "content_text": "🔗: The ideal viewport doesn’t exist #WebDev https://viewports.fyi/",
+    "date_published": "Tue, 31 Oct 2023 19:40:05 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111332391146807088"
+    ],
+    "lastTootTimestamp": 1698797472409
+  },
+  "https://tonsky.me/blog/disenchantment/": {
+    "id": "aHR0cHM6Ly90b25za3kubWUvYmxvZy9kaXNlbmNoYW50bWVudC8=",
+    "title": "🔗: Software disenchantment",
+    "url": "https://tonsky.me/blog/disenchantment/",
+    "content_text": "🔗: Software disenchantment #WebDev https://tonsky.me/blog/disenchantment/",
+    "date_published": "Wed, 01 Nov 2023 01:53:38 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111333304583053507"
+    ],
+    "lastTootTimestamp": 1698811410329
   }
 }
