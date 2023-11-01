@@ -106,11 +106,16 @@ export default async () => {
       const endTime = new Date(endDate).toLocaleString('en-US', {
         timeZone: 'America/Los_Angeles',
       })
-      const now = new Date().toLocaleString('en-US', {
+      const nowDate = new Date()
+      const now = nowDate.toLocaleString('en-US', {
         timeZone: 'America/Los_Angeles',
       })
+      const startAmPm = startDate.getHours() >= 12 ? 'pm' : 'am'
+      const nowAmPm = nowDate.getHours() >= 12 ? 'pm' : 'am'
       const isCorrectDate =
-        now.split(',')[0] === startTime.split(',')[0] && now.split(',')[0] === endTime.split(',')[0]
+        now.split(',')[0] === startTime.split(',')[0] &&
+        now.split(',')[0] === endTime.split(',')[0] &&
+        startAmPm === nowAmPm
       const nowHour = parseInt(now.split(',')[1].split(':')[0].trim())
       const startHour = parseInt(startTime.split(',')[1].split(':')[0].trim())
       const endHour = parseInt(endTime.split(',')[1].split(':')[0].trim())
