@@ -38,7 +38,7 @@ module.exports = async function () {
             ),
           })
           data.push({ url: `https://app.thestorygraph.com${urls[i].href}` })
-          data.push({ percentage: percentages[i].textContent || '0%' })
+          data.push({ percentage: percentages[i].textContent })
           data.push({
             dateAdded: dates[i]
               ? new Date(dates[i].textContent.replace('Started ', '').split('\n')[0])
@@ -55,7 +55,7 @@ module.exports = async function () {
             'https://books.coryd.dev'
           )
           data[i]['url'] = `https://app.thestorygraph.com${urls[i].href}`
-          data[i]['percentage'] = percentages[i] ? percentages[i].textContent : '0%'
+          data[i]['percentage'] = percentages[i].textContent
           data[i]['dateAdded'] = dates[i]
             ? new Date(dates[i].textContent.replace('Started ', '').split('\n')[0])
             : new Date()
