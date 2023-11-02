@@ -1,7 +1,7 @@
 module.exports = async function () {
   return {
     name: 'Cory Dransfeldt',
-    email: 'coryd@fastmail.com',
+    email: 'cory.dransfeldt@icloud.com',
     url: 'https://coryd.dev',
     logo: 'https://coryd.dev/assets/img/logo.webp',
     title: 'Cory Dransfeldt',

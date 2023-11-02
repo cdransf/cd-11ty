@@ -361,7 +361,7 @@ So far this works seamlessly — if I want to update or add static content I can
 
 Questions? Comments? Feel free to get in touch:
 
-- [Email](mailto:coryd@fastmail.com)
+- [Email](mailto:cory.dransfeldt@icloud.com)
 - [Mastodon](https://social.lol/@cory)
 
 ---
