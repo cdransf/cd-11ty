@@ -6809,7 +6809,7 @@
     "title": "📖: Elysium Fire",
     "url": "https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
     "content_text": "📖: Elysium Fire #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/98b0dc33-48d2-4ff2-9d6c-9f58e28131d9",
-    "date_published": "Mon, 30 Oct 2023 00:00:00 +0000",
+    "date_published": "Thu, 02 Nov 2023 02:22:06 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111286588479677459"
     ],
@@ -6957,5 +6957,16 @@
       "https://social.lol/users/cory/statuses/111333304583053507"
     ],
     "lastTootTimestamp": 1698811410329
+  },
+  "https://app.thestorygraph.com/books/89f4d784-5565-4b95-aae4-7eca8cf134c1": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvODlmNGQ3ODQtNTU2NS00Yjk1LWFhZTQtN2VjYThjZjEzNGMx",
+    "title": "📖: Recoding America: Why Government Is Failing in the Digital Age and How We Can Do Better",
+    "url": "https://app.thestorygraph.com/books/89f4d784-5565-4b95-aae4-7eca8cf134c1",
+    "content_text": "📖: Recoding America: Why Government Is Failing in the Digital Age and How We Can Do Better #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/89f4d784-5565-4b95-aae4-7eca8cf134c1",
+    "date_published": "Wed, 01 Nov 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111338965533343104"
+    ],
+    "lastTootTimestamp": 1698897789618
   }
 }
