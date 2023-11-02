@@ -47,7 +47,7 @@ Software and services that I use for work and my own enjoyment.
 - [Mona](https://mastodon.social/@MonaApp): endlessly configurable and yet still easy to use I enjoy Mona's take on Mastodon and use it as my go-to client across all of my devices.
 - [NetNewsWire](https://netnewswire.com): I love the simplicity and stability of NetNewsWire as an RSS client. I use a handful of Keyboard Maestro macros on macOS to quickly mark items as read and clean up the today view and another to quickly save items out to GoodLinks.
 - [GoodLinks](http://goodlinks.app): a native read it later app that provides an excellent reading experience, a wealth of features and plenty of customization options. Lately I've been using it in conjunction with Safari's newly-added ability to read web pages to listen to queued items.
-- [Parcel](https://parcelapp.net): it tracks deliveries and does so reliably. I've got a few rules configured in Fastmail to handle forwarding delivery emails to the app as well.
+- [Parcel](https://parcelapp.net): it tracks deliveries and does so reliably.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">iOS</h3>
 
@@ -75,7 +75,6 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Services</h3>
 
-- <a onclick="clicky.goal('Referral: Fastmail')" href="https://ref.fm/u30190984">Fastmail</a>: the best email service available, bar-none. They're standards compliant (and often contribute to said standards), reliable and fully-featured — they even respect your privacy.
 - <a onclick="clicky.goal('Referral: nextDNS')" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>: a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.
 - <a onclick="clicky.goal('Referral: DNSimple')" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>: a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
 - <a onclick="clicky.goal('Referral: Bunny.net')" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>: a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
@@ -85,7 +84,7 @@ Software and services that I use for work and my own enjoyment.
 - [IVPN](https://www.ivpn.net): my VPN of choice for browsing outside of my home network. Privacy-focused and trustworthy.
 - [Kagi](https://kagi.com): search that's actually helpful and ad-free. It's lenses feature and the ability to up/downvote and block results from different sites are indispensable.
 - [Feedbin](https://feedbin.com): the best available modern RSS service. I use its actions to filter noise out of my feed as well as to star and surface my must-read feeds and newsletters.
-- [forwardemail.net](https://forwardemail.net): I could route the domains I have here through Fastmail, but I prefer the simplicity of this service and the separation of email concerns.
+- [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.
 - [Trakt](https://trakt.tv): my preferred TV and movie tracking service — it has a strong community (and isn't owned by a private equity firm).
 - [The Storygraph](https://thestorygraph.com): an excellent, focused and community driven book tracking app. All it needs is RSS/Atom feeds and/or an API.
 - [Slack](http://slack.com): I have a family Slack set up to avoid group text messages and am in a few other community Slacks.

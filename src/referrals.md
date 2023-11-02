@@ -26,7 +26,6 @@ meta:
 
 Referral links for services I use. I save some money, and you do as well if you choose to use them.
 
-- <a onclick="clicky.goal('Referral: Fastmail')" href="https://ref.fm/u30190984">Fastmail</a>
 - <a onclick="clicky.goal('Referral: nextDNS')" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>
 - <a onclick="clicky.goal('Referral: DNSimple')" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>
 - <a onclick="clicky.goal('Referral: Bunny.net')" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>
