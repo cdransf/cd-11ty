@@ -6979,5 +6979,16 @@
       "https://social.lol/users/cory/statuses/111342268578225995"
     ],
     "lastTootTimestamp": 1698948190392
+  },
+  "https://app.thestorygraph.com/books/17700d7b-620c-43fe-b2f1-09fee30ca2dd": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvMTc3MDBkN2ItNjIwYy00M2ZlLWIyZjEtMDlmZWUzMGNhMmRk",
+    "title": "📖: Providence",
+    "url": "https://app.thestorygraph.com/books/17700d7b-620c-43fe-b2f1-09fee30ca2dd",
+    "content_text": "📖: Providence #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/17700d7b-620c-43fe-b2f1-09fee30ca2dd",
+    "date_published": "Thu, 02 Nov 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111344183079489636"
+    ],
+    "lastTootTimestamp": 1698977403613
   }
 }
