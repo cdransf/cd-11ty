@@ -45,8 +45,7 @@ Software and services that I use for work and my own enjoyment.
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
 
 - [Mona](https://mastodon.social/@MonaApp): endlessly configurable and yet still easy to use I enjoy Mona's take on Mastodon and use it as my go-to client across all of my devices.
-- [NetNewsWire](https://netnewswire.com): I love the simplicity and stability of NetNewsWire as an RSS client. I use a handful of Keyboard Maestro macros on macOS to quickly mark items as read and clean up the today view and another to quickly save items out to GoodLinks.
-- [GoodLinks](http://goodlinks.app): a native read it later app that provides an excellent reading experience, a wealth of features and plenty of customization options. Lately I've been using it in conjunction with Safari's newly-added ability to read web pages to listen to queued items.
+- [NetNewsWire](https://netnewswire.com): I love the simplicity and stability of NetNewsWire as an RSS client. I use a handful of Keyboard Maestro macros on macOS to quickly mark items as read and clean up the today view and another to quickly save items out to Safari's Reading List.
 - [Parcel](https://parcelapp.net): it tracks deliveries and does so reliably.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">iOS</h3>
