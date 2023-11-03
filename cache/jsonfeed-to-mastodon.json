@@ -6990,5 +6990,16 @@
       "https://social.lol/users/cory/statuses/111344183079489636"
     ],
     "lastTootTimestamp": 1698977403613
+  },
+  "https://www.mayank.co/blog/presentational-shadow-dom/": {
+    "id": "aHR0cHM6Ly93d3cubWF5YW5rLmNvL2Jsb2cvcHJlc2VudGF0aW9uYWwtc2hhZG93LWRvbS8=",
+    "title": "🔗: Presentational shadow DOM",
+    "url": "https://www.mayank.co/blog/presentational-shadow-dom/",
+    "content_text": "🔗: Presentational shadow DOM #WebDev https://www.mayank.co/blog/presentational-shadow-dom/",
+    "date_published": "Fri, 03 Nov 2023 19:40:07 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111348873997586229"
+    ],
+    "lastTootTimestamp": 1699048980718
   }
 }
