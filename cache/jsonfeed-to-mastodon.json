@@ -7001,5 +7001,16 @@
       "https://social.lol/users/cory/statuses/111348873997586229"
     ],
     "lastTootTimestamp": 1699048980718
+  },
+  "https://app.thestorygraph.com/books/3259baa3-ab9b-4613-9aa6-3535201907e5": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvMzI1OWJhYTMtYWI5Yi00NjEzLTlhYTYtMzUzNTIwMTkwN2U1",
+    "title": "📖: The Deepest Map: The High-Stakes Race to Chart the World's Oceans",
+    "url": "https://app.thestorygraph.com/books/3259baa3-ab9b-4613-9aa6-3535201907e5",
+    "content_text": "📖: The Deepest Map: The High-Stakes Race to Chart the World's Oceans #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/3259baa3-ab9b-4613-9aa6-3535201907e5",
+    "date_published": "Sat, 04 Nov 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111354064131866188"
+    ],
+    "lastTootTimestamp": 1699128175934
   }
 }
