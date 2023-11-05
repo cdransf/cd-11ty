@@ -10,7 +10,7 @@ module.exports = async function () {
       { name: 'Webrings', icon: 'heart-handshake' },
     ],
     social: [
-      { name: 'Email', url: 'mailto:cory.dransfeldt@icloud.com', icon: 'at' },
+      { name: 'Email', url: 'mailto:hi@coryd.dev', icon: 'at' },
       { name: 'Calendar', url: 'https://savvycal.com/ced/', icon: 'calendar-plus' },
       { name: 'GitHub', url: 'https://github.com/cdransf', icon: 'brand-github' },
       { name: 'Mastodon', url: 'https://social.lol/@cory', icon: 'brand-mastodon' },
