@@ -6908,7 +6908,7 @@
     "title": "🔗: Why I Won't Use Next.js",
     "url": "https://www.epicweb.dev/why-i-wont-use-nextjs",
     "content_text": "🔗: Why I Won't Use Next.js #WebDev https://www.epicweb.dev/why-i-wont-use-nextjs",
-    "date_published": "Tue, 31 Oct 2023 18:18:47 +0000",
+    "date_published": "Mon, 06 Nov 2023 01:34:27 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111331098209503702"
     ],
@@ -6941,7 +6941,7 @@
     "title": "🔗: The ideal viewport doesn’t exist",
     "url": "https://viewports.fyi/",
     "content_text": "🔗: The ideal viewport doesn’t exist #WebDev https://viewports.fyi/",
-    "date_published": "Tue, 31 Oct 2023 19:40:05 +0000",
+    "date_published": "Mon, 06 Nov 2023 01:34:18 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111332391146807088"
     ],
@@ -6952,7 +6952,7 @@
     "title": "🔗: Software disenchantment",
     "url": "https://tonsky.me/blog/disenchantment/",
     "content_text": "🔗: Software disenchantment #WebDev https://tonsky.me/blog/disenchantment/",
-    "date_published": "Wed, 01 Nov 2023 01:53:38 +0000",
+    "date_published": "Sun, 05 Nov 2023 23:29:09 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111333304583053507"
     ],
@@ -6974,7 +6974,7 @@
     "title": "🔗: Second-guessing the modern web",
     "url": "https://macwright.com/2020/05/10/spa-fatigue.html",
     "content_text": "🔗: Second-guessing the modern web #WebDev https://macwright.com/2020/05/10/spa-fatigue.html",
-    "date_published": "Thu, 02 Nov 2023 15:55:58 +0000",
+    "date_published": "Mon, 06 Nov 2023 01:33:31 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111342268578225995"
     ],
@@ -6996,7 +6996,7 @@
     "title": "🔗: Presentational shadow DOM",
     "url": "https://www.mayank.co/blog/presentational-shadow-dom/",
     "content_text": "🔗: Presentational shadow DOM #WebDev https://www.mayank.co/blog/presentational-shadow-dom/",
-    "date_published": "Fri, 03 Nov 2023 19:40:07 +0000",
+    "date_published": "Mon, 06 Nov 2023 01:33:18 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111348873997586229"
     ],
@@ -7012,5 +7012,16 @@
       "https://social.lol/users/cory/statuses/111354064131866188"
     ],
     "lastTootTimestamp": 1699128175934
+  },
+  "https://trakt.tv/movies/fingernails-2023": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvZmluZ2VybmFpbHMtMjAyMw==",
+    "title": "🎥: Fingernails",
+    "url": "https://trakt.tv/movies/fingernails-2023",
+    "content_text": "🎥: Fingernails #Movies #Watching #Trakt https://trakt.tv/movies/fingernails-2023",
+    "date_published": "Mon, 06 Nov 2023 04:39:15 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111362561106008606"
+    ],
+    "lastTootTimestamp": 1699257829430
   }
 }
