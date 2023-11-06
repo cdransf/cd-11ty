@@ -37,7 +37,7 @@
     "autoprefixer": "^10.4.16",
     "child_process": "^1.0.2",
     "clean-css": "^5.3.2",
-    "dotenv-flow": "^4.0.0",
+    "dotenv-flow": "^4.0.1",
     "eleventy-plugin-tabler-icons": "^2.0.9",
     "eleventy-plugin-unfurl": "^1.0.0",
     "eleventy-plugin-youtube-embed": "^1.9.1",
