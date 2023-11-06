@@ -20,7 +20,7 @@ module.exports = async function () {
         icon: 'device-airpods',
       },
       { name: 'Trakt', url: 'https://trakt.tv/users/cdransf', icon: 'device-tv' },
-      { name: 'StoryGraph', url: 'https://app.thestorygraph.com/profile/coryd', icon: 'books' },
+      { name: 'The StoryGraph', url: 'https://app.thestorygraph.com/profile/coryd', icon: 'books' },
       { name: 'Pinboard', url: 'http://pinboard.in/u:cdme', icon: 'pin' },
       { name: 'Buy Me a Coffee', url: 'https://www.buymeacoffee.com/cory', icon: 'cup' },
     ],
