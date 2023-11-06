@@ -12,7 +12,7 @@ module.exports = async function () {
     return {
       title: link['description'],
       url: link['href'],
-      tags: [...new Set(link['tags'].split(' '))],
+      tags: [...new Set(link['tags'].split(' ').filter((tag) => tag.toLowerCase() !== 'share'))],
       date: link['time'],
       description: link['extended'],
     }
