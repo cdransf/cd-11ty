@@ -7023,5 +7023,35 @@
       "https://social.lol/users/cory/statuses/111362561106008606"
     ],
     "lastTootTimestamp": 1699257829430
+  },
+  "https://gomakethings.com/are-build-tools-an-anti-pattern/": {
+    "id": "aHR0cHM6Ly9nb21ha2V0aGluZ3MuY29tL2FyZS1idWlsZC10b29scy1hbi1hbnRpLXBhdHRlcm4v",
+    "title": "🔗: Are build tools an anti-pattern?",
+    "url": "https://gomakethings.com/are-build-tools-an-anti-pattern/",
+    "content_text": "🔗: Are build tools an anti-pattern? #WebDev https://gomakethings.com/are-build-tools-an-anti-pattern/",
+    "date_published": "Mon, 06 Nov 2023 17:06:01 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111365861147260219"
+    ],
+    "lastTootTimestamp": 1699308184067
+  },
+  "https://jvns.ca/blog/2023/11/06/rebasing-what-can-go-wrong-/": {
+    "id": "aHR0cHM6Ly9qdm5zLmNhL2Jsb2cvMjAyMy8xMS8wNi9yZWJhc2luZy13aGF0LWNhbi1nby13cm9uZy0v",
+    "title": "🔗: git rebase: what can go wrong?",
+    "url": "https://jvns.ca/blog/2023/11/06/rebasing-what-can-go-wrong-/",
+    "content_text": "🔗: git rebase: what can go wrong? #WebDev https://jvns.ca/blog/2023/11/06/rebasing-what-can-go-wrong-/",
+    "date_published": "Mon, 06 Nov 2023 17:04:29 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111365389552846266"
+    ],
+    "lastTootTimestamp": 1699300988127
+  },
+  "https://coryd.dev/posts/2023/default-apps-2023/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9kZWZhdWx0LWFwcHMtMjAyMy8=",
+    "title": "📝: My default apps, 2023 edition",
+    "url": "https://coryd.dev/posts/2023/default-apps-2023/",
+    "content_text": "📝: My default apps, 2023 edition #Tech https://coryd.dev/posts/2023/default-apps-2023/",
+    "date_published": "Mon, 06 Nov 2023 00:00:00 +0000",
+    "toots": []
   }
 }
