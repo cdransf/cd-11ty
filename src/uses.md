@@ -79,6 +79,7 @@ Software and services that I use for work and my own enjoyment.
 - <a onclick="clicky.goal('Referral: Bunny.net')" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>: a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
 - <a onclick="clicky.goal('Referral: Clicky')" href="https://clicky.com/101424044">Clicky</a>: powerful and easy to understand analytics (if, perhaps, not the prettiest to look at).
 - <a onclick="clicky.goal('Referral: Feedpress')" href="https://feedpress.com/?affid=34370">Feedpress</a>: they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
+- [Pinboard](https://pinboard.in): an old, reliable and slow to change web service that does exactly what it sets out to — provide reliable bookmarking.
 - [SavvyCal](https://savvycal.com): the most pleasant scheduling solution I've found to date. It offers a number of scheduling niceties and allows visitors to overlay their own calendars for a seamless booking experience.
 - [IVPN](https://www.ivpn.net): my VPN of choice for browsing outside of my home network. Privacy-focused and trustworthy.
 - [Kagi](https://kagi.com): search that's actually helpful and ad-free. It's lenses feature and the ability to up/downvote and block results from different sites are indispensable.
