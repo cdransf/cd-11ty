@@ -26,7 +26,8 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Mastodon: [Mona](https://mastodon.social/@MonaApp)
 - TV/Movie tracking: [Trakt](https://trakt.tv)
 - Notes: Notes.app
-- Search: [Kagi](https://kagi.con)
+- Terminal: [iTerm2](https://iterm2.com)
+- Search: [Kagi](https://kagi.com)
 - Package tracking: [Parcel](https://parcelapp.net)
 
 A lot of my defaults are, well, system defaults. I've been enjoying the simplicity and integration.
