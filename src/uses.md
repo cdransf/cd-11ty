@@ -79,11 +79,11 @@ Software and services that I use for work and my own enjoyment.
 - <a onclick="clicky.goal('Referral: Bunny.net')" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>: a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
 - <a onclick="clicky.goal('Referral: Clicky')" href="https://clicky.com/101424044">Clicky</a>: powerful and easy to understand analytics (if, perhaps, not the prettiest to look at).
 - <a onclick="clicky.goal('Referral: Feedpress')" href="https://feedpress.com/?affid=34370">Feedpress</a>: they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
-- [Pinboard](https://pinboard.in): an old, reliable and slow to change web service that does exactly what it sets out to — provide reliable bookmarking.
 - [SavvyCal](https://savvycal.com): the most pleasant scheduling solution I've found to date. It offers a number of scheduling niceties and allows visitors to overlay their own calendars for a seamless booking experience.
 - [IVPN](https://www.ivpn.net): my VPN of choice for browsing outside of my home network. Privacy-focused and trustworthy.
 - [Kagi](https://kagi.com): search that's actually helpful and ad-free. It's lenses feature and the ability to up/downvote and block results from different sites are indispensable.
 - [Feedbin](https://feedbin.com): the best available modern RSS service. I use its actions to filter noise out of my feed as well as to star and surface my must-read feeds and newsletters.
+- [Pinboard](https://pinboard.in): an old, reliable and slow to change web service that does exactly what it sets out to — provide reliable bookmarking.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.
 - [Trakt](https://trakt.tv): my preferred TV and movie tracking service — it has a strong community (and isn't owned by a private equity firm).
 - [The Storygraph](https://thestorygraph.com): an excellent, focused and community driven book tracking app. All it needs is RSS/Atom feeds and/or an API.
