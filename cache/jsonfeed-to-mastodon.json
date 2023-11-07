@@ -7056,5 +7056,16 @@
       "https://social.lol/users/cory/statuses/111366362915790930"
     ],
     "lastTootTimestamp": 1699315840492
+  },
+  "https://gomakethings.com/how-do-build-tools-break-backwards-compatibility/": {
+    "id": "aHR0cHM6Ly9nb21ha2V0aGluZ3MuY29tL2hvdy1kby1idWlsZC10b29scy1icmVhay1iYWNrd2FyZHMtY29tcGF0aWJpbGl0eS8=",
+    "title": "🔗: How do build tools break backwards compatibility?",
+    "url": "https://gomakethings.com/how-do-build-tools-break-backwards-compatibility/",
+    "content_text": "🔗: How do build tools break backwards compatibility? #WebDev https://gomakethings.com/how-do-build-tools-break-backwards-compatibility/",
+    "date_published": "Tue, 07 Nov 2023 16:37:02 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111371051401398461"
+    ],
+    "lastTootTimestamp": 1699387381061
   }
 }
