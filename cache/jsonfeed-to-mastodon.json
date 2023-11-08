@@ -7067,5 +7067,16 @@
       "https://social.lol/users/cory/statuses/111371051401398461"
     ],
     "lastTootTimestamp": 1699387381061
+  },
+  "https://app.thestorygraph.com/books/a35d29d9-55bf-4f78-b3f2-b7a01b83159e": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvYTM1ZDI5ZDktNTViZi00Zjc4LWIzZjItYjdhMDFiODMxNTll",
+    "title": "📖: Waco: David Koresh, the Branch Davidians, and A Legacy of Rage",
+    "url": "https://app.thestorygraph.com/books/a35d29d9-55bf-4f78-b3f2-b7a01b83159e",
+    "content_text": "📖: Waco: David Koresh, the Branch Davidians, and A Legacy of Rage #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/a35d29d9-55bf-4f78-b3f2-b7a01b83159e",
+    "date_published": "Wed, 08 Nov 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111376242522192610"
+    ],
+    "lastTootTimestamp": 1699466591285
   }
 }
