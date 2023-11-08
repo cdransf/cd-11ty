@@ -7028,7 +7028,7 @@
     "id": "aHR0cHM6Ly9nb21ha2V0aGluZ3MuY29tL2FyZS1idWlsZC10b29scy1hbi1hbnRpLXBhdHRlcm4v",
     "title": "🔗: Are build tools an anti-pattern?",
     "url": "https://gomakethings.com/are-build-tools-an-anti-pattern/",
-    "content_text": "🔗: Are build tools an anti-pattern? #WebDev https://gomakethings.com/are-build-tools-an-anti-pattern/",
+    "content_text": "🔗: Are build tools an anti-pattern?  https://gomakethings.com/are-build-tools-an-anti-pattern/",
     "date_published": "Mon, 06 Nov 2023 17:06:01 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111365861147260219"
@@ -7039,7 +7039,7 @@
     "id": "aHR0cHM6Ly9qdm5zLmNhL2Jsb2cvMjAyMy8xMS8wNi9yZWJhc2luZy13aGF0LWNhbi1nby13cm9uZy0v",
     "title": "🔗: git rebase: what can go wrong?",
     "url": "https://jvns.ca/blog/2023/11/06/rebasing-what-can-go-wrong-/",
-    "content_text": "🔗: git rebase: what can go wrong? #WebDev https://jvns.ca/blog/2023/11/06/rebasing-what-can-go-wrong-/",
+    "content_text": "🔗: git rebase: what can go wrong?  https://jvns.ca/blog/2023/11/06/rebasing-what-can-go-wrong-/",
     "date_published": "Mon, 06 Nov 2023 17:04:29 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111365389552846266"
@@ -7061,7 +7061,7 @@
     "id": "aHR0cHM6Ly9nb21ha2V0aGluZ3MuY29tL2hvdy1kby1idWlsZC10b29scy1icmVhay1iYWNrd2FyZHMtY29tcGF0aWJpbGl0eS8=",
     "title": "🔗: How do build tools break backwards compatibility?",
     "url": "https://gomakethings.com/how-do-build-tools-break-backwards-compatibility/",
-    "content_text": "🔗: How do build tools break backwards compatibility? #WebDev https://gomakethings.com/how-do-build-tools-break-backwards-compatibility/",
+    "content_text": "🔗: How do build tools break backwards compatibility?  https://gomakethings.com/how-do-build-tools-break-backwards-compatibility/",
     "date_published": "Tue, 07 Nov 2023 16:37:02 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111371051401398461"
@@ -7078,5 +7078,32 @@
       "https://social.lol/users/cory/statuses/111376242522192610"
     ],
     "lastTootTimestamp": 1699466591285
+  },
+  "https://thathtml.blog/2023/11/longevity-of-web-components/": {
+    "id": "aHR0cHM6Ly90aGF0aHRtbC5ibG9nLzIwMjMvMTEvbG9uZ2V2aXR5LW9mLXdlYi1jb21wb25lbnRzLw==",
+    "title": "🔗: The Longevity of Web Components Over Frameworks",
+    "url": "https://thathtml.blog/2023/11/longevity-of-web-components/",
+    "content_text": "🔗: The Longevity of Web Components Over Frameworks #WebDev https://thathtml.blog/2023/11/longevity-of-web-components/",
+    "date_published": "Wed, 08 Nov 2023 16:53:49 +0000",
+    "toots": []
+  },
+  "https://www.baldurbjarnason.com/2023/web-dev-untalented/": {
+    "id": "aHR0cHM6Ly93d3cuYmFsZHVyYmphcm5hc29uLmNvbS8yMDIzL3dlYi1kZXYtdW50YWxlbnRlZC8=",
+    "title": "🔗: Web developers: remarkably untalented and careless?",
+    "url": "https://www.baldurbjarnason.com/2023/web-dev-untalented/",
+    "content_text": "🔗: Web developers: remarkably untalented and careless? #WebDev https://www.baldurbjarnason.com/2023/web-dev-untalented/",
+    "date_published": "Wed, 08 Nov 2023 16:50:49 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111376714308506031"
+    ],
+    "lastTootTimestamp": 1699473790173
+  },
+  "https://www.mensurdurakovic.com/hard-to-swallow-truths-they-wont-tell-you-about-software-engineer-job/": {
+    "id": "aHR0cHM6Ly93d3cubWVuc3VyZHVyYWtvdmljLmNvbS9oYXJkLXRvLXN3YWxsb3ctdHJ1dGhzLXRoZXktd29udC10ZWxsLXlvdS1hYm91dC1zb2Z0d2FyZS1lbmdpbmVlci1qb2Iv",
+    "title": "🔗: 10 hard-to-swallow truths they won't tell you about software engineer job",
+    "url": "https://www.mensurdurakovic.com/hard-to-swallow-truths-they-wont-tell-you-about-software-engineer-job/",
+    "content_text": "🔗: 10 hard-to-swallow truths they won't tell you about software engineer job #WebDev https://www.mensurdurakovic.com/hard-to-swallow-truths-they-wont-tell-you-about-software-engineer-job/",
+    "date_published": "Wed, 08 Nov 2023 16:45:32 +0000",
+    "toots": []
   }
 }
