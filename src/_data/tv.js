@@ -3,7 +3,7 @@ const EleventyFetch = require('@11ty/eleventy-fetch')
 module.exports = async function () {
   const TV_KEY = process.env.API_KEY_TRAKT
   const MOVIEDB_KEY = process.env.API_KEY_MOVIEDB
-  const url = 'https://api.trakt.tv/users/cdransf/history/shows?page=1&limit=30'
+  const url = 'https://api.trakt.tv/users/cdransf/history/shows?page=1&limit=36'
   const res = EleventyFetch(url, {
     duration: '1h',
     type: 'json',
