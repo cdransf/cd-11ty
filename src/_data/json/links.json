@@ -9,7 +9,7 @@
     },
     {
       "tags": "development",
-      "title": "It&#39;s 2023, here is why your web design sucks.",
+      "title": "It's 2023, here is why your web design sucks.",
       "id": "https://heather-buchel.com/blog/2023/10/why-your-web-design-sucks/",
       "url": "https://heather-buchel.com/blog/2023/10/why-your-web-design-sucks/",
       "date": "Tue, 31 Oct 2023 10:27:36 -0700"
@@ -62,6 +62,27 @@
       "id": "https://www.mayank.co/blog/presentational-shadow-dom/",
       "url": "https://www.mayank.co/blog/presentational-shadow-dom/",
       "date": "Fri, 03 Nov 2023 12:40:07 -0700"
+    },
+    {
+      "tags": "development",
+      "title": "10 hard-to-swallow truths they won't tell you about software engineer job",
+      "id": "https://www.mensurdurakovic.com/hard-to-swallow-truths-they-wont-tell-you-about-software-engineer-job/",
+      "url": "https://www.mensurdurakovic.com/hard-to-swallow-truths-they-wont-tell-you-about-software-engineer-job/",
+      "date": "Wed, 08 Nov 2023 11:51:21 -0800"
+    },
+    {
+      "tags": "development",
+      "title": "Web developers: remarkably untalented and careless?",
+      "id": "https://www.baldurbjarnason.com/2023/web-dev-untalented/",
+      "url": "https://www.baldurbjarnason.com/2023/web-dev-untalented/",
+      "date": "Wed, 08 Nov 2023 11:52:01 -0800"
+    },
+    {
+      "tags": "development",
+      "title": "The Longevity of Web Components Over Frameworks",
+      "id": "https://thathtml.blog/2023/11/longevity-of-web-components/",
+      "url": "https://thathtml.blog/2023/11/longevity-of-web-components/",
+      "date": "Wed, 08 Nov 2023 11:52:12 -0800"
     }
   ]
 }
