@@ -44,7 +44,7 @@ module.exports = {
   },
   tagLookup: (url, tagMap) => {
     if (!url) return
-    if (url.includes('thestorygraph.com')) return '#Books #NowReading #StoryGraph'
+    if (url.includes('thestorygraph.com')) return '#Books #NowReading #TheStoryGraph'
     if (url.includes('trakt.tv')) return '#Movies #Watching #Trakt'
     return tagMap[url] || ''
   },
