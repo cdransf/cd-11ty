@@ -6984,7 +6984,7 @@
     "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvMTc3MDBkN2ItNjIwYy00M2ZlLWIyZjEtMDlmZWUzMGNhMmRk",
     "title": "📖: Providence",
     "url": "https://app.thestorygraph.com/books/17700d7b-620c-43fe-b2f1-09fee30ca2dd",
-    "content_text": "📖: Providence #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/17700d7b-620c-43fe-b2f1-09fee30ca2dd",
+    "content_text": "📖: Providence #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/17700d7b-620c-43fe-b2f1-09fee30ca2dd",
     "date_published": "Thu, 02 Nov 2023 00:00:00 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111344183079489636"
@@ -7072,7 +7072,7 @@
     "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvYTM1ZDI5ZDktNTViZi00Zjc4LWIzZjItYjdhMDFiODMxNTll",
     "title": "📖: Waco: David Koresh, the Branch Davidians, and A Legacy of Rage",
     "url": "https://app.thestorygraph.com/books/a35d29d9-55bf-4f78-b3f2-b7a01b83159e",
-    "content_text": "📖: Waco: David Koresh, the Branch Davidians, and A Legacy of Rage #Books #NowReading #StoryGraph https://app.thestorygraph.com/books/a35d29d9-55bf-4f78-b3f2-b7a01b83159e",
+    "content_text": "📖: Waco: David Koresh, the Branch Davidians, and A Legacy of Rage #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/a35d29d9-55bf-4f78-b3f2-b7a01b83159e",
     "date_published": "Wed, 08 Nov 2023 00:00:00 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111376242522192610"
@@ -7111,5 +7111,16 @@
       "https://social.lol/users/cory/statuses/111377687655392014"
     ],
     "lastTootTimestamp": 1699488642286
+  },
+  "https://darthmall.net/weblog/2023/rss/": {
+    "id": "aHR0cHM6Ly9kYXJ0aG1hbGwubmV0L3dlYmxvZy8yMDIzL3Jzcy8=",
+    "title": "🔗: RSS?",
+    "url": "https://darthmall.net/weblog/2023/rss/",
+    "content_text": "🔗: RSS? #Tech https://darthmall.net/weblog/2023/rss/",
+    "date_published": "Thu, 09 Nov 2023 16:47:50 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111381904685381731"
+    ],
+    "lastTootTimestamp": 1699552989019
   }
 }
