@@ -6908,7 +6908,7 @@
     "title": "🔗: Why I Won't Use Next.js",
     "url": "https://www.epicweb.dev/why-i-wont-use-nextjs",
     "content_text": "🔗: Why I Won't Use Next.js #WebDev https://www.epicweb.dev/why-i-wont-use-nextjs",
-    "date_published": "Mon, 06 Nov 2023 01:34:27 +0000",
+    "date_published": "Tue, 31 Oct 2023 18:18:47 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111331098209503702"
     ],
@@ -6941,7 +6941,7 @@
     "title": "🔗: The ideal viewport doesn’t exist",
     "url": "https://viewports.fyi/",
     "content_text": "🔗: The ideal viewport doesn’t exist #WebDev https://viewports.fyi/",
-    "date_published": "Mon, 06 Nov 2023 01:34:18 +0000",
+    "date_published": "Tue, 31 Oct 2023 19:40:05 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111332391146807088"
     ],
@@ -6952,7 +6952,7 @@
     "title": "🔗: Software disenchantment",
     "url": "https://tonsky.me/blog/disenchantment/",
     "content_text": "🔗: Software disenchantment #WebDev https://tonsky.me/blog/disenchantment/",
-    "date_published": "Sun, 05 Nov 2023 23:29:09 +0000",
+    "date_published": "Wed, 01 Nov 2023 01:53:38 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111333304583053507"
     ],
@@ -6974,7 +6974,7 @@
     "title": "🔗: Second-guessing the modern web",
     "url": "https://macwright.com/2020/05/10/spa-fatigue.html",
     "content_text": "🔗: Second-guessing the modern web #WebDev https://macwright.com/2020/05/10/spa-fatigue.html",
-    "date_published": "Mon, 06 Nov 2023 01:33:31 +0000",
+    "date_published": "Thu, 02 Nov 2023 15:55:58 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111342268578225995"
     ],
@@ -6996,7 +6996,7 @@
     "title": "🔗: Presentational shadow DOM",
     "url": "https://www.mayank.co/blog/presentational-shadow-dom/",
     "content_text": "🔗: Presentational shadow DOM #WebDev https://www.mayank.co/blog/presentational-shadow-dom/",
-    "date_published": "Mon, 06 Nov 2023 01:33:18 +0000",
+    "date_published": "Fri, 03 Nov 2023 19:40:07 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111348873997586229"
     ],
@@ -7084,15 +7084,18 @@
     "title": "🔗: The Longevity of Web Components Over Frameworks",
     "url": "https://thathtml.blog/2023/11/longevity-of-web-components/",
     "content_text": "🔗: The Longevity of Web Components Over Frameworks #WebDev https://thathtml.blog/2023/11/longevity-of-web-components/",
-    "date_published": "Wed, 08 Nov 2023 16:53:49 +0000",
-    "toots": []
+    "date_published": "Wed, 08 Nov 2023 19:52:12 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111377185188522172"
+    ],
+    "lastTootTimestamp": 1699480975230
   },
   "https://www.baldurbjarnason.com/2023/web-dev-untalented/": {
     "id": "aHR0cHM6Ly93d3cuYmFsZHVyYmphcm5hc29uLmNvbS8yMDIzL3dlYi1kZXYtdW50YWxlbnRlZC8=",
     "title": "🔗: Web developers: remarkably untalented and careless?",
     "url": "https://www.baldurbjarnason.com/2023/web-dev-untalented/",
     "content_text": "🔗: Web developers: remarkably untalented and careless? #WebDev https://www.baldurbjarnason.com/2023/web-dev-untalented/",
-    "date_published": "Wed, 08 Nov 2023 16:50:49 +0000",
+    "date_published": "Wed, 08 Nov 2023 19:52:01 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111376714308506031"
     ],
@@ -7103,7 +7106,10 @@
     "title": "🔗: 10 hard-to-swallow truths they won't tell you about software engineer job",
     "url": "https://www.mensurdurakovic.com/hard-to-swallow-truths-they-wont-tell-you-about-software-engineer-job/",
     "content_text": "🔗: 10 hard-to-swallow truths they won't tell you about software engineer job #WebDev https://www.mensurdurakovic.com/hard-to-swallow-truths-they-wont-tell-you-about-software-engineer-job/",
-    "date_published": "Wed, 08 Nov 2023 16:45:32 +0000",
-    "toots": []
+    "date_published": "Wed, 08 Nov 2023 19:51:21 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111377687655392014"
+    ],
+    "lastTootTimestamp": 1699488642286
   }
 }
