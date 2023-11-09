@@ -1,7 +1,7 @@
 {
   "name": "coryd.dev",
-  "version": "2.2.3",
-  "description": "The source for my personal site, blog and portfolio. Build using 11ty and hosted on Netlify.",
+  "version": "2.2.4",
+  "description": "The source for my personal site, blog and portfolio. Built using 11ty and hosted on Netlify.",
   "main": "index.html",
   "scripts": {
     "start": "rm -rf .cache && ELEVENTY_PRODUCTION=false eleventy --serve && NODE_ENV=development npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
