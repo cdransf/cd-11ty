@@ -26,7 +26,7 @@ meta:
 
 Software and services that I use for work and my own enjoyment.
 
-{% image 'https://coryd.dev/assets/img/pages/uses.jpg', 'My desk', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full', 'eager' %}
+{% image '<https://coryd.dev/assets/img/pages/uses.jpg>', 'My desk', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full', 'eager' %}
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Computer setup</h3>
 
@@ -81,6 +81,7 @@ Software and services that I use for work and my own enjoyment.
 - [IVPN](https://www.ivpn.net): my VPN of choice for browsing outside of my home network. Privacy-focused and trustworthy.
 - [Kagi](https://kagi.com): search that's actually helpful and ad-free. It's lenses feature and the ability to up/downvote and block results from different sites are indispensable.
 - [Feedbin](https://feedbin.com): the best available modern RSS service. I use its actions to filter noise out of my feed as well as to star and surface my must-read feeds and newsletters.
+- [Pinboard](https://pinboard.in): an old, reliable and slow to change web service that does exactly what it sets out to — provide reliable bookmarking.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.
 - [Trakt](https://trakt.tv): my preferred TV and movie tracking service — it has a strong community (and isn't owned by a private equity firm).
 - [The Storygraph](https://thestorygraph.com): an excellent, focused and community driven book tracking app. All it needs is RSS/Atom feeds and/or an API.
