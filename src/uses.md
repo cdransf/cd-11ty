@@ -62,7 +62,6 @@ Software and services that I use for work and my own enjoyment.
 - [Meta](https://www.nightbirdsevolve.com/meta): the _best_ utility for tagging and organizing music files on macOS.
 - [Permute](https://software.charliemonroe.net/permute): a useful utility for quickly converting files to different formats.
 - [SoundSource](https://rogueamoeba.com/soundsource): a handy utility for better, more granular control on macOS.
-- [Sleeve](https://replay.software/sleeve): my favorite Music.app controller (it works with Spotify too). I'll always have a softspot for Bowtie and Ecoute though.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Dev tools</h3>
 
