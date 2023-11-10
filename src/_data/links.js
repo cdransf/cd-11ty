@@ -2,7 +2,7 @@ const EleventyFetch = require('@11ty/eleventy-fetch')
 
 module.exports = async function () {
   const API_TOKEN_PINBOARD = process.env.API_TOKEN_PINBOARD
-  const url = `https://api.pinboard.in/v1/posts/recent?auth_token=${API_TOKEN_PINBOARD}&format=json&tag=share&count=5`
+  const url = `https://api.pinboard.in/v1/posts/recent?auth_token=${API_TOKEN_PINBOARD}&format=json&tag=share`
   const res = EleventyFetch(url, {
     duration: '1h',
     type: 'json',
