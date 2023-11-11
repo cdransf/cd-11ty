@@ -8,7 +8,7 @@ module.exports = {
       if (item.type === 'album') {
         normalized['title'] = item['title']
         normalized['alt'] = `${item['title']} by ${item['artist']}`
-        normalized['subtext'] = `${item['plays']} plays`
+        normalized['subtext'] = `${item['artist']}`
       }
       if (item.type === 'artist') {
         normalized['title'] = item['title']
