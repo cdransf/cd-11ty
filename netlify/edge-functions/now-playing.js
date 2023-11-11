@@ -1,65 +1,44 @@
-const artistAliases = {
-  aliases: [
-    {
-      artist: 'Aesop Rock',
-      aliases: ['Aesop Rock & Homeboy Sandman', 'Aesop Rock & Blockhead'],
-    },
-    {
-      artist: 'Fen',
-      aliases: ['Sleepwalker & Fen'],
-    },
-    {
-      artist: 'Free Throw',
-      aliases: ['Free Throw, Hot Mulligan & Tades Sanville'],
-    },
-    {
-      artist: 'Hot Mulligan',
-      aliases: ['Hot Mulligan & Less Gravity'],
-    },
-    {
-      artist: 'Osees',
-      aliases: ['OCS', 'The Ohsees', 'Thee Oh Sees', "Thee Oh See's"],
-    },
-    {
-      artist: 'Sněť',
-      aliases: ['Snet', 'Sne-T'],
-    },
-    {
-      artist: 'Tom Waits',
-      aliases: ['Tom Waits & Crystal Gayle', 'Crystal Gayle'],
-    },
-  ],
-}
-
-const aliasArtist = (artist) => {
-  const aliased = artistAliases.aliases.find((alias) => alias.aliases.includes(artist))
-  if (aliased) artist = aliased.artist
-  return artist
-}
-
-const sanitizeTrack = (track) => {
-  let sanitizedTrack = track
+const emojiMap = (genre, artist) => {
+  const DEFAULT = '🎧'
+  if (!genre) return DEFAULT // early return for bad input
+  if (artist === 'David Bowie') return '👨🏻‍🎤'
+  if (artist === 'Minor Threat') return '👨🏻‍🦲'
+  if (artist === 'Bruce Springsteen') return '🇺🇸'
+  if (genre.includes('death metal')) return '💀'
+  if (genre.includes('black metal')) return '🪦'
+  if (genre.includes('metal')) return '🤘'
+  if (genre.includes('emo') || genre.includes('blues')) return '😢'
+  if (genre.includes('grind') || genre.includes('powerviolence')) return '🫨'
   if (
-    !track.includes('Deluxe') ||
-    !track.includes('Special') ||
-    !track.includes('Remastered') ||
-    !track.includes('Full Dynamic') ||
-    !track.includes('Expanded') ||
-    !track.includes('Bonus Track')
+    genre.includes('country') ||
+    genre.includes('americana') ||
+    genre.includes('bluegrass') ||
+    genre.includes('folk')
   )
-    return sanitizedTrack
-  if (track.includes(' [')) sanitizedTrack = track.split(' [')[0]
-  if (track.includes(' (')) sanitizedTrack = track.split(' (')[0]
-  return sanitizedTrack
+    return '🪕'
+  if (genre.includes('post-punk')) return '😔'
+  if (genre.includes('dance-punk')) return '🪩'
+  if (genre.includes('punk') || genre.includes('hardcore')) return '✊'
+  if (genre.includes('hip hop')) return '🎤'
+  if (genre.includes('progressive') || genre.includes('experimental')) return '🤓'
+  if (genre.includes('jazz')) return '🎺'
+  if (genre.includes('psychedelic')) return '💊'
+  if (genre.includes('dance') || genre.includes('electronic')) return '💻'
+  if (
+    genre.includes('alternative') ||
+    genre.includes('rock') ||
+    genre.includes('shoegaze') ||
+    genre.includes('screamo')
+  )
+    return '🎸'
+  return DEFAULT
 }
 
 export default async () => {
   // eslint-disable-next-line no-undef
-  const API_APPLE_MUSIC_DEVELOPER_TOKEN = Netlify.env.get('API_APPLE_MUSIC_DEVELOPER_TOKEN')
-  // eslint-disable-next-line no-undef
-  const API_APPLE_MUSIC_USER_TOKEN = Netlify.env.get('API_APPLE_MUSIC_USER_TOKEN')
-  // eslint-disable-next-line no-undef
   const TV_KEY = Netlify.env.get('API_KEY_TRAKT')
+  // eslint-disable-next-line no-undef
+  const MUSIC_KEY = Netlify.env.get('API_KEY_LASTFM')
 
   const traktRes = await fetch('https://api.trakt.tv/users/cdransf/watching', {
     headers: {
@@ -135,34 +114,28 @@ export default async () => {
     }
   }
 
-  const trackRes = await fetch(
-    'https://api.music.apple.com/v1/me/recent/played/tracks?limit=1&extend=artistUrl',
-    {
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${API_APPLE_MUSIC_DEVELOPER_TOKEN}`,
-        'music-user-token': `${API_APPLE_MUSIC_USER_TOKEN}`,
-      },
-    }
-  )
-    .then((data) => data.json())
-    .catch()
-  const track = trackRes.data?.[0]['attributes']
-  const trackUrl = track['url']
-    ? track['url']
-    : `https://musicbrainz.org/taglookup/index?tag-lookup.artist=${track['artistName'].replace(
-        /\s+/g,
-        '+'
-      )}&tag-lookup.track=${track['name'].replace(/\s+/g, '+')}`
-  const artist = aliasArtist(track['artistName'])
-  const artistUrl = track['artistUrl']
-    ? track['artistUrl']
-    : `https://musicbrainz.org/search?query=${track['artistName'].replace(/\s+/g, '+')}&type=artist`
+  const trackUrl = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=coryd_&api_key=${MUSIC_KEY}&limit=1&format=json`
+  const trackRes = await fetch(trackUrl, {
+    type: 'json',
+  }).catch()
+  const trackData = await trackRes.json()
+  const track = trackData['recenttracks']['track'][0]
+  const mbid = track['artist']['mbid']
+  let genre = ''
+
+  if (mbid && mbid !== '') {
+    const genreUrl = `https://musicbrainz.org/ws/2/artist/${mbid}?inc=aliases+genres&fmt=json`
+    const genreRes = await fetch(genreUrl, {
+      type: 'json',
+    }).catch()
+    const genreData = await genreRes.json()
+    genre = genreData.genres.sort((a, b) => b.count - a.count)[0]?.['name'] || ''
+  }
 
   return Response.json({
-    content: `🎧 <a href="${trackUrl}">${sanitizeTrack(
+    content: `${emojiMap(genre, track['artist']['#text'])} <a href="${track['url']}">${
       track['name']
-    )}</a> by <a href="${artistUrl}">${artist}</a>`,
+    } by ${track['artist']['#text']}</a>`,
   })
 }
 

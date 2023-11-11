@@ -37,7 +37,7 @@ module.exports = async function () {
           if (data[index]) data[index]['author'] = author.textContent
         })
       doc.querySelectorAll('.md\\:block .book-cover img').forEach((image, index) => {
-        const img = image.src.replace('https://cdn.thestorygraph.com', 'https://books.coryd.dev')
+        const img = image.src.replace('https://cdn.thestorygraph.com', 'https://cd-books.b-cdn.net')
         if (!data[index]) data.push({ image: img })
         if (data[index]) data[index]['image'] = img
       })

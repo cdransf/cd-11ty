@@ -13,7 +13,7 @@ The function I've written works by making a pair of API calls: one to Last.fm wh
 export default async () => {
   // access our Last.fm API key and interpolate it into a call to their recent tracks endpoint
   const MUSIC_KEY = Netlify.env.get('API_KEY_LASTFM')
-  const trackUrl = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=cdrn_&api_key=${MUSIC_KEY}&limit=1&format=json`
+  const trackUrl = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=coryd_&api_key=${MUSIC_KEY}&limit=1&format=json`
   // fetch the track data
   const trackRes = await fetch(trackUrl, {
     type: 'json',
@@ -168,6 +168,6 @@ Finally, if the page this all lives on is loaded by a client without JavaScript 
 
 All of this, yields the single line at the bottom of this image — updated on each visit.
 
-{% image 'https://cdn.coryd.dev/blog/now-playing.jpg', 'Now playing', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full' %}
+{% image '<https://cdn.coryd.dev/blog/now-playing.jpg>', 'Now playing', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full' %}
 
 [^1]: Plus explicit conditions matching David Bowie and Minor Threat.

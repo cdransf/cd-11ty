@@ -34,7 +34,7 @@ module.exports = async function () {
           data.push({
             image: images[i].src.replace(
               'https://cdn.thestorygraph.com',
-              'https://books.coryd.dev'
+              'https://cd-books.b-cdn.net'
             ),
           })
           data.push({ url: `https://app.thestorygraph.com${urls[i].href}` })
@@ -52,7 +52,7 @@ module.exports = async function () {
           data[i]['author'] = authors[i].textContent
           data[i]['image'] = images[i].src.replace(
             'https://cdn.thestorygraph.com',
-            'https://books.coryd.dev'
+            'https://cd-books.b-cdn.net'
           )
           data[i]['url'] = `https://app.thestorygraph.com${urls[i].href}`
           data[i]['percentage'] = percentages[i].textContent

@@ -8,12 +8,12 @@ module.exports = {
       if (item.type === 'album') {
         normalized['title'] = item['title']
         normalized['alt'] = `${item['title']} by ${item['artist']}`
-        normalized['subtext'] = item['artist']
+        normalized['subtext'] = `${item['plays']} plays`
       }
       if (item.type === 'artist') {
         normalized['title'] = item['title']
         normalized['alt'] = `${item['title']} at #${item['rank']}`
-        normalized['subtext'] = `#${item['rank']}`
+        normalized['subtext'] = `${item['plays']} plays`
       }
       if (item.type === 'movie') normalized['alt'] = item['title']
       if (item.type === 'book') {

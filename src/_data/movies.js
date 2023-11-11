@@ -36,7 +36,7 @@ module.exports = async function () {
     })
     const tmdbData = await tmdbRes
     const posterPath = tmdbData['poster_path']
-    movie.image = `https://movies.coryd.dev/t/p/w500${posterPath}`
+    movie.image = `https://cd-movies.b-cdn.net/t/p/w500${posterPath}`
   }
 
   return movies

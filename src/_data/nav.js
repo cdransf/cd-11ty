@@ -15,9 +15,9 @@ module.exports = async function () {
       { name: 'GitHub', url: 'https://github.com/cdransf', icon: 'brand-github' },
       { name: 'Mastodon', url: 'https://social.lol/@cory', icon: 'brand-mastodon' },
       {
-        name: 'Apple Music',
-        url: 'https://music.apple.com/profile/cdransf',
-        icon: 'device-airpods',
+        name: 'Last.fm',
+        url: 'https://www.last.fm/user/coryd_',
+        icon: 'headphones',
       },
       { name: 'Trakt', url: 'https://trakt.tv/users/cdransf', icon: 'device-tv' },
       { name: 'The StoryGraph', url: 'https://app.thestorygraph.com/profile/coryd', icon: 'books' },
