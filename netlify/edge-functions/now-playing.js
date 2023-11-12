@@ -123,6 +123,12 @@ export default async () => {
   const track = trackData['recenttracks']['track'][0]
   const mbid = track['artist']['mbid']
   let genre = ''
+  const artistUrl = mbid
+    ? `https://musicbrainz.org/artist/${mbid}`
+    : `https://musicbrainz.org/search?query=${track['artist']['#text'].replace(
+        /\s+/g,
+        '+'
+      )}&type=artist`
 
   if (mbid && mbid !== '') {
     const genreUrl = `https://musicbrainz.org/ws/2/artist/${mbid}?inc=aliases+genres&fmt=json`
@@ -136,7 +142,7 @@ export default async () => {
   return Response.json({
     content: `${emojiMap(genre, track['artist']['#text'])} <a href="${track['url']}">${
       track['name']
-    } by ${track['artist']['#text']}</a>`,
+    }</a> by <a href="${artistUrl}">${track['artist']['#text']}</a>`,
   })
 }
 

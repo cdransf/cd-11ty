@@ -18,7 +18,7 @@ module.exports = async function () {
         'https://cdn.coryd.dev/artists/missing-artist.jpg',
       url: artist['mbid']
         ? `https://musicbrainz.org/artist/${artist['mbid']}`
-        : `https://musicbrainz.org/search?query=${encodeURI(artist['name'])}&type=artist`,
+        : `https://musicbrainz.org/search?query=${artist['name'].replace(/\s+/g, '+')}&type=artist`,
       type: 'artist',
     }
   })

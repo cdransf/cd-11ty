@@ -25,7 +25,9 @@ module.exports = async function () {
             .toLowerCase()}.jpg`,
       url: album['mbid']
         ? `https://musicbrainz.org/album/${album['mbid']}`
-        : `https://musicbrainz.org/search?query=${encodeURI(album['name'])}&type=release_group`,
+        : `https://musicbrainz.org/taglookup/index?tag-lookup.artist=${album['artist'][
+            'name'
+          ].replace(/\s+/g, '+')}&tag-lookup.release=${album['name'].replace(/\s+/g, '+')}`,
       type: 'album',
     }
   })
