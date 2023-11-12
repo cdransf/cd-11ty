@@ -7155,5 +7155,16 @@
       "https://social.lol/users/cory/statuses/111394172214427888"
     ],
     "lastTootTimestamp": 1699740176661
+  },
+  "https://trakt.tv/movies/the-royal-hotel-2023": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvdGhlLXJveWFsLWhvdGVsLTIwMjM=",
+    "title": "🎥: The Royal Hotel",
+    "url": "https://trakt.tv/movies/the-royal-hotel-2023",
+    "content_text": "🎥: The Royal Hotel #Movies #Watching #Trakt https://trakt.tv/movies/the-royal-hotel-2023",
+    "date_published": "Sun, 12 Nov 2023 03:55:56 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111396060098491153"
+    ],
+    "lastTootTimestamp": 1699768983497
   }
 }
