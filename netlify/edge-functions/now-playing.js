@@ -5,6 +5,10 @@ const emojiMap = (genre, artist) => {
   if (artist === 'Minor Threat') return '👨🏻‍🦲'
   if (artist === 'Bruce Springsteen') return '🇺🇸'
   if (artist === 'Taylor Swift') return '👸🏼'
+
+  // mbid mismatches
+  if (artist === 'Ghastly') return '💀'
+
   if (genre.includes('death metal')) return '💀'
   if (genre.includes('black metal')) return '🪦'
   if (genre.includes('metal')) return '🤘'
