@@ -55,7 +55,7 @@
     "markdown-it-anchor": "^8.4.1",
     "markdown-it-footnote": "^3.0.3",
     "markdownlint-cli": "^0.37.0",
-    "marked": "^9.1.6",
+    "marked": "^10.0.0",
     "outdent": "^0.8.0",
     "pagefind": "^1.0.3",
     "postcss": "^8.4.31",
