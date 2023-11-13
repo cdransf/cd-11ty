@@ -44,6 +44,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
 
+- [Doppler](https://brushedtype.co/doppler): a delightfully simple and reliable local music player — it even supports Last.fm.
 - [Mona](https://mastodon.social/@MonaApp): endlessly configurable and yet still easy to use I enjoy Mona's take on Mastodon and use it as my go-to client across all of my devices.
 - [NetNewsWire](https://netnewswire.com): I love the simplicity and stability of NetNewsWire as an RSS client. I use a handful of Keyboard Maestro macros on macOS to quickly mark items as read and clean up the today view and another to quickly save items out to Safari's Reading List.
 - [Parcel](https://parcelapp.net): it tracks deliveries and does so reliably.
@@ -84,6 +85,7 @@ Software and services that I use for work and my own enjoyment.
 - [Feedbin](https://feedbin.com): the best available modern RSS service. I use its actions to filter noise out of my feed as well as to star and surface my must-read feeds and newsletters.
 - [Pinboard](https://pinboard.in): an old, reliable and slow to change web service that does exactly what it sets out to — provide reliable bookmarking.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.
+- [Last.fm](https://last.fm): as it turns out, the best music recommendations still come from dedicated fans.
 - [Trakt](https://trakt.tv): my preferred TV and movie tracking service — it has a strong community (and isn't owned by a private equity firm).
 - [The Storygraph](https://thestorygraph.com): an excellent, focused and community driven book tracking app. All it needs is RSS/Atom feeds and/or an API.
 - [Slack](http://slack.com): I have a family Slack set up to avoid group text messages and am in a few other community Slacks.
