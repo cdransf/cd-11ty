@@ -17,7 +17,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Photo library: iCloud
 - Web browser: Safari
 - Calendar: Calendar.app
-- Bookmarking/reading: Safari + Safari's reader view and listen to this page functionality
+- Bookmarking/reading: [Pinboard](https://pinboard.in) + Safari's reader view and listen to this page functionality
 - Weather: Weather.app
 - Podcasts: I only listen to podcasts _very occasionally_ via [Feedbin](https://feedbin.com). I add feeds to my RSS subscriptions and tag/categorize them as `Podcasts`
 - Music: Apple Music
