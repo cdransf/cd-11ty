@@ -6,7 +6,13 @@ on:
 jobs:
   FetchArtistCharts:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
       - name: Fetch
         uses: JamesIves/fetch-api-data-action@v2
         with:
