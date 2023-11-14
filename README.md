@@ -12,10 +12,10 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 
 ## 📝 Recent posts
 <!-- BLOGPOSTS:START -->
+- [Doppler, locally stored music and storage as a beneficial constraint](https://coryd.dev/posts/2023/locally-stored-music-and-storage-as-a-meaningful-constraint/)
 - [My default apps, 2023 edition](https://coryd.dev/posts/2023/default-apps-2023/)
 - [Onward, to The Storygraph](https://coryd.dev/posts/2023/onward-to-the-storygraph/)
 - [Migrating your Letterboxd data](https://coryd.dev/posts/2023/migrating-your-letterboxd-data/)
 - ['It Is Possible to Both Stream and Buy Music'](https://coryd.dev/posts/2023/it-is-possible-to-both-stream-and-buy-music/)
-- [Semi-automated hashtags for syndicated posts](https://coryd.dev/posts/2023/semi-automated-hashtags-syndicated-posts/)
 <!-- BLOGPOSTS:END -->
 
