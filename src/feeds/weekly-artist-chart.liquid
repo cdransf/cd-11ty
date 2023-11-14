@@ -1,0 +1,13 @@
+---
+layout: null
+eleventyExcludeFromCollections: true
+permalink: /feeds/weekly-artist-chart
+---
+{% render "partials/feeds/rss.liquid"
+  permalink:"/feeds/weekly-artist-chart"
+  title:"Weekly artist chart • Cory Dransfeldt"
+  description:"The top 8 artists I've listened to this week."
+  data:weeklyArtistChart
+  updated:weeklyArtistChart[0].date
+  site:site
+%}
