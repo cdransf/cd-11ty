@@ -7050,7 +7050,7 @@
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9kZWZhdWx0LWFwcHMtMjAyMy8=",
     "title": "📝: My default apps, 2023 edition",
     "url": "https://coryd.dev/posts/2023/default-apps-2023/",
-    "content_text": "📝: My default apps, 2023 edition #Tech https://coryd.dev/posts/2023/default-apps-2023/",
+    "content_text": "📝: My default apps, 2023 edition #Tech #macOS #Apple https://coryd.dev/posts/2023/default-apps-2023/",
     "date_published": "Mon, 06 Nov 2023 00:00:00 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111366362915790930"
@@ -7199,5 +7199,16 @@
       "https://social.lol/users/cory/statuses/111405025136878809"
     ],
     "lastTootTimestamp": 1699905779117
+  },
+  "https://coryd.dev/posts/2023/locally-stored-music-and-storage-as-a-meaningful-constraint/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9sb2NhbGx5LXN0b3JlZC1tdXNpYy1hbmQtc3RvcmFnZS1hcy1hLW1lYW5pbmdmdWwtY29uc3RyYWludC8=",
+    "title": "📝: Doppler, locally stored music and storage as a beneficial constraint",
+    "url": "https://coryd.dev/posts/2023/locally-stored-music-and-storage-as-a-meaningful-constraint/",
+    "content_text": "📝: Doppler, locally stored music and storage as a beneficial constraint #macOS #Apple #Music https://coryd.dev/posts/2023/locally-stored-music-and-storage-as-a-meaningful-constraint/",
+    "date_published": "Mon, 13 Nov 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111405999052127538"
+    ],
+    "lastTootTimestamp": 1699920639896
   }
 }
