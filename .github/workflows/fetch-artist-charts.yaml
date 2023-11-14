@@ -12,3 +12,5 @@ jobs:
         with:
           endpoint: https://ws.audioscrobbler.com/2.0/?method=user.getweeklyartistchart&user=coryd_&api_key=${{ secrets.LASTFM_API_KEY }}&format=json
           configuration: '{ "method": "GET" }'
+          save-location: 'src/_data/json'
+          save-name: 'weekly-artist-charts.json'
