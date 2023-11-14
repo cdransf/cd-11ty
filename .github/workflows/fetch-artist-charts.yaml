@@ -19,8 +19,11 @@ jobs:
           endpoint: https://ws.audioscrobbler.com/2.0/?method=user.getweeklyartistchart&user=coryd_&api_key=${{ secrets.LASTFM_API_KEY }}&format=json
           configuration: '{ "method": "GET" }'
           save-location: 'src/_data/json'
-          save-name: 'weekly-artist-charts.json'
+          save-name: 'weekly-artist-charts'
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Update artist charts for the week.
+          commit_user_name: cdransf
+          commit_user_email: hi@coryd.dev
+          commit_author: Cory Dransfeldt
