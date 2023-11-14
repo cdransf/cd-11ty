@@ -7210,5 +7210,24 @@
       "https://social.lol/users/cory/statuses/111405999052127538"
     ],
     "lastTootTimestamp": 1699920639896
+  },
+  "https://benmyers.dev/blog/spotless-giraffe/": {
+    "id": "aHR0cHM6Ly9iZW5teWVycy5kZXYvYmxvZy9zcG90bGVzcy1naXJhZmZlLw==",
+    "title": "🔗: I'm a Spotless Giraffe.",
+    "url": "https://benmyers.dev/blog/spotless-giraffe/",
+    "content_text": "🔗: I'm a Spotless Giraffe. #Tech #WebDev https://benmyers.dev/blog/spotless-giraffe/",
+    "date_published": "Tue, 14 Nov 2023 03:54:25 +0000",
+    "toots": []
+  },
+  "https://css-irl.info/stop-using-ai-generated-images/": {
+    "id": "aHR0cHM6Ly9jc3MtaXJsLmluZm8vc3RvcC11c2luZy1haS1nZW5lcmF0ZWQtaW1hZ2VzLw==",
+    "title": "🔗: Stop Using AI-Generated Images",
+    "url": "https://css-irl.info/stop-using-ai-generated-images/",
+    "content_text": "🔗: Stop Using AI-Generated Images #WebDev #Tech https://css-irl.info/stop-using-ai-generated-images/",
+    "date_published": "Tue, 14 Nov 2023 02:27:22 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111407386783876498"
+    ],
+    "lastTootTimestamp": 1699941815005
   }
 }
