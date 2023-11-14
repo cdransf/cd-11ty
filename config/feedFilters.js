@@ -13,8 +13,14 @@ module.exports = {
       let excerpt = ''
 
       // set the entry excerpt
-      if (entry.description) excerpt = entry.description
-      if (entry.data?.post_excerpt) excerpt = md.render(entry.data.post_excerpt)
+      if (entry.description)
+        excerpt = entry.description.includes('p>')
+          ? entry.description
+          : `<p>${entry.description}</p>`
+      if (entry.data?.post_excerpt)
+        excerpt = md.render(entry.data.post_excerpt).includes('p>')
+          ? md.render(entry.data.post_excerpt)
+          : `<p>${md.render(entry.data.post_excerpt)}</p>`
 
       // if there's a valid entry return a normalized object
       if (entry)

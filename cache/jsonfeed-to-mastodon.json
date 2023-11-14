@@ -7243,5 +7243,16 @@
       "https://social.lol/users/cory/statuses/111409744410391018"
     ],
     "lastTootTimestamp": 1699977789523
+  },
+  "https://jarango.com/2022/09/15/against-superficial-simplicity/": {
+    "id": "aHR0cHM6Ly9qYXJhbmdvLmNvbS8yMDIyLzA5LzE1L2FnYWluc3Qtc3VwZXJmaWNpYWwtc2ltcGxpY2l0eS8=",
+    "title": "🔗: Against Superficial Simplicity",
+    "url": "https://jarango.com/2022/09/15/against-superficial-simplicity/",
+    "content_text": "🔗: Against Superficial Simplicity #WebDev https://jarango.com/2022/09/15/against-superficial-simplicity/",
+    "date_published": "Tue, 14 Nov 2023 16:21:47 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111410687363653746"
+    ],
+    "lastTootTimestamp": 1699992177896
   }
 }

@@ -3,7 +3,7 @@ const EleventyFetch = require('@11ty/eleventy-fetch')
 module.exports = async function () {
   const TV_KEY = process.env.API_KEY_TRAKT
   const MOVIEDB_KEY = process.env.API_KEY_MOVIEDB
-  const url = 'https://api.trakt.tv/users/cdransf/history/movies?page=1&limit=30'
+  const url = 'https://api.trakt.tv/users/cdransf/history/movies?page=1&limit=6&extended=full'
   const res = EleventyFetch(url, {
     duration: '1h',
     type: 'json',
@@ -23,6 +23,7 @@ module.exports = async function () {
       url: `https://trakt.tv/movies/${item['movie']['ids']['slug']}`,
       id: item['movie']['ids']['trakt'],
       tmdbId: item['movie']['ids']['tmdb'],
+      description: item['movie']['overview'],
       type: 'movie',
     }
   })
