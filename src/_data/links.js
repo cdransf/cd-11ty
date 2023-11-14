@@ -14,7 +14,7 @@ module.exports = async function () {
       url: link['href'],
       tags: [...new Set(link['tags'].split(' '))],
       date: link['time'],
-      description: link['extended'],
+      description: `${link['extended']}<br/><br/>`,
     }
   })
 }

@@ -23,7 +23,7 @@ module.exports = async function () {
       url: `https://trakt.tv/movies/${item['movie']['ids']['slug']}`,
       id: item['movie']['ids']['trakt'],
       tmdbId: item['movie']['ids']['tmdb'],
-      description: item['movie']['overview'],
+      description: `${item['movie']['overview']}<br/><br/>`,
       type: 'movie',
     }
   })
