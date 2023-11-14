@@ -11,7 +11,7 @@ module.exports = async function () {
   return [
     {
       title: content,
-      url: `https://last.fm/user/coryd_?ts=${date}`,
+      url: `https://coryd.dev/now?ts=${date}`,
       date: new Date(date),
       description: 'My top artists for the week as a feed item.\n\n',
     },
