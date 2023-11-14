@@ -1,0 +1,16 @@
+name: Fetch weekly artist charts
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '00 09 * * 5'
+jobs:
+  refresh-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch API Data 📦
+        uses: JamesIves/fetch-api-data-action@v2
+        with:
+          endpoint: https://ws.audioscrobbler.com/2.0/?method=user.getweeklyartistchart&user=coryd_&api_key=${{ secrets.LASTFM_API_KEY }}&format=json
+          configuration: '{ "method": "GET" }'
+          save-location: 'src/_data/json'
+          save-name: 'weekly-artist-charts.json'
