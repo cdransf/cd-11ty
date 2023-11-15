@@ -7298,5 +7298,16 @@
       "https://social.lol/users/cory/statuses/111416515948114589"
     ],
     "lastTootTimestamp": 1700081114979
+  },
+  "https://coryd.dev/posts/2023/hacking-together-a-tweeklyfm-repalcement/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9oYWNraW5nLXRvZ2V0aGVyLWEtdHdlZWtseWZtLXJlcGFsY2VtZW50Lw==",
+    "title": "📝: Hacking together a Tweekly.fm replacement",
+    "url": "https://coryd.dev/posts/2023/hacking-together-a-tweeklyfm-repalcement/",
+    "content_text": "📝: Hacking together a Tweekly.fm replacement #WebDev #Eleventy https://coryd.dev/posts/2023/hacking-together-a-tweeklyfm-repalcement/",
+    "date_published": "Wed, 15 Nov 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111416996577988879"
+    ],
+    "lastTootTimestamp": 1700088448813
   }
 }
