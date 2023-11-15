@@ -7287,5 +7287,16 @@
       "https://social.lol/users/cory/statuses/111415407268057087"
     ],
     "lastTootTimestamp": 1700064197868
+  },
+  "https://coryd.dev/now?ts=1699963200000": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE2OTk5NjMyMDAwMDA=",
+    "title": "🎧: My top artists for the week: Tom Waits @ 34 plays, blink-182 @ 19 plays, Aesop Rock @ 18 plays, Sedimentum @ 18 plays, Vertebra Atlantis @ 14 plays, Chaotian @ 13 plays, Hooded Menace @ 12 plays, Hot Mulligan @ 12 plays #Music #LastFM",
+    "url": "https://coryd.dev/now?ts=1699963200000",
+    "content_text": "🎧: My top artists for the week: Tom Waits @ 34 plays, blink-182 @ 19 plays, Aesop Rock @ 18 plays, Sedimentum @ 18 plays, Vertebra Atlantis @ 14 plays, Chaotian @ 13 plays, Hooded Menace @ 12 plays, Hot Mulligan @ 12 plays #Music #LastFM  https://coryd.dev/now?ts=1699963200000",
+    "date_published": "Tue, 14 Nov 2023 12:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111416515948114589"
+    ],
+    "lastTootTimestamp": 1700081114979
   }
 }
