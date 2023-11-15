@@ -9,17 +9,15 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout
+      - name: Checkout out this repo
         uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
-      - name: Fetch
-        uses: JamesIves/fetch-api-data-action@v2
-        with:
-          endpoint: https://ws.audioscrobbler.com/2.0/?method=user.getweeklyartistchart&user=coryd_&api_key=${{ secrets.LASTFM_API_KEY }}&format=json
-          configuration: '{ "method": "GET" }'
-          save-location: 'src/_data/json'
-          save-name: 'weekly-artist-charts'
+      - name: Fetch current artist charts
+        run: |-
+          data=$(curl 'https://ws.audioscrobbler.com/2.0/?method=user.getweeklyartistchart&user=coryd_&api_key=${{ secrets.LASTFM_API_KEY }}&format=json') \
+          charts=$(src/_data/json/weekly-artist-charts.json | jq --argjson jq_data "${data}" '.charts += [$jq_data]') \
+          echo $charts > src/_data/json/weekly-artist-charts.json
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
