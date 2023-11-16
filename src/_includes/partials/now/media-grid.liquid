@@ -30,7 +30,7 @@
               'lazy'
             {% endif %}
           {% endcapture -%}
-          {% image item.image, alt, 'rounded-lg w-full h-full [&>*]:h-full', loadingStrategy %}
+          {% image item.image, alt, 'rounded-lg w-full h-full [&>*]:w-full [&>*]:h-full', loadingStrategy %}
         </div>
       </a>
     {% endfor %}
