@@ -58,6 +58,5 @@ https://cdme.netlify.app https://coryd.dev 301!
 /follow.json https://feedpress.me/coryd-follow.json
 
 # analytics
-/4afe62271e477e.js https://static.getclicky.com/js?in=%2F4dcb93321b2a3b 200
-/4dcb93321b2a3b https://in.getclicky.com/in.php 200
-/404ca498061b54 https://in.getclicky.com/101424044ns.gif 200
+/js/script.js https://plausible.io/js/script.outbound-links.tagged-events.js 200
+/api/event https://plausible.io/api/event 200

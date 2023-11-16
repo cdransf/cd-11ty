@@ -27,3 +27,8 @@ permalink: 404.html
 </div>
 <hr />
 {% render "partials/popular-posts.liquid", posts: collections.posts, analytics: analytics %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    plausible('404', { props: { path: document.location.pathname } })
+  })
+</script>
