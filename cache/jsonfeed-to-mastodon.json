@@ -7361,5 +7361,16 @@
       "https://social.lol/users/cory/statuses/111422987048022760"
     ],
     "lastTootTimestamp": 1700179856431
+  },
+  "https://app.thestorygraph.com/books/fbb408f5-545f-4ab8-bcad-d4cf39d6daa0": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvZmJiNDA4ZjUtNTQ1Zi00YWI4LWJjYWQtZDRjZjM5ZDZkYWEw",
+    "title": "📖: We Were Once a Family: A Story of Love, Death, and Child Removal in America",
+    "url": "https://app.thestorygraph.com/books/fbb408f5-545f-4ab8-bcad-d4cf39d6daa0",
+    "content_text": "📖: We Were Once a Family: A Story of Love, Death, and Child Removal in America #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/fbb408f5-545f-4ab8-bcad-d4cf39d6daa0",
+    "date_published": "Thu, 16 Nov 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111423900308469874"
+    ],
+    "lastTootTimestamp": 1700193791382
   }
 }
