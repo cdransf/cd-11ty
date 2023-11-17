@@ -17,7 +17,7 @@ module.exports = async function () {
       title: content,
       url: `https://coryd.dev/now?ts=${date}`,
       date: new Date(date),
-      description: `My top artists as of ${
+      description: `My top artists for the last week, ending ${
         new Date(date).toLocaleString().split(',')[0]
       }.<br/><br/>`,
     }

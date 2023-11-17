@@ -28,6 +28,12 @@ module.exports = async function () {
       const dates = doc.querySelectorAll('.md\\:block .action-menu a > p')
 
       for (let i = 0; i < bookCount; i++) {
+        const date = new Date(
+          dates[i].textContent.replace('Started ', '').split('\n')[0]
+        ).toLocaleString('en-US', {
+          timeZone: 'America/Los_Angeles',
+        })
+
         if (!data[i]) {
           data.push({ title: titles[i].textContent })
           data.push({ author: authors[i].textContent })
@@ -40,9 +46,7 @@ module.exports = async function () {
           data.push({ url: `https://app.thestorygraph.com${urls[i].href}` })
           data.push({ percentage: percentages[i].textContent })
           data.push({
-            dateAdded: dates[i]
-              ? new Date(dates[i].textContent.replace('Started ', '').split('\n')[0])
-              : new Date(),
+            dateAdded: date,
           })
           data.push({ type: 'book' })
         }
@@ -56,9 +60,7 @@ module.exports = async function () {
           )
           data[i]['url'] = `https://app.thestorygraph.com${urls[i].href}`
           data[i]['percentage'] = percentages[i].textContent
-          data[i]['dateAdded'] = dates[i]
-            ? new Date(dates[i].textContent.replace('Started ', '').split('\n')[0])
-            : new Date()
+          data[i]['dateAdded'] = date
           data[i]['type'] = 'book'
         }
       }
