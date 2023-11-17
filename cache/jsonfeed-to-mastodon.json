@@ -7359,7 +7359,7 @@
     "title": "📖: Red Rising",
     "url": "https://app.thestorygraph.com/books/240f2048-8438-49b7-90a3-a5dc1018270f",
     "content_text": "📖: Red Rising #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/240f2048-8438-49b7-90a3-a5dc1018270f",
-    "date_published": "Thu, 16 Nov 2023 00:00:00 +0000",
+    "date_published": "Wed, 15 Nov 2023 16:00:00 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111422987048022760"
     ],
@@ -7370,10 +7370,21 @@
     "title": "📖: We Were Once a Family: A Story of Love, Death, and Child Removal in America",
     "url": "https://app.thestorygraph.com/books/fbb408f5-545f-4ab8-bcad-d4cf39d6daa0",
     "content_text": "📖: We Were Once a Family: A Story of Love, Death, and Child Removal in America #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/fbb408f5-545f-4ab8-bcad-d4cf39d6daa0",
-    "date_published": "Thu, 16 Nov 2023 00:00:00 +0000",
+    "date_published": "Wed, 15 Nov 2023 16:00:00 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111423900308469874"
     ],
     "lastTootTimestamp": 1700193791382
+  },
+  "https://coryd.dev/now?ts=1700136000000": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MDAxMzYwMDAwMDA=",
+    "title": "🎧: My top artists for the week: Tom Waits @ 34 plays, Execration @ 30 plays, Aesop Rock @ 27 plays, Basement @ 24 plays, blink-182 @ 19 plays, Sedimentum @ 18 plays, NoMeansNo @ 15 plays, Vertebra Atlantis @ 14 plays #Music #LastFM",
+    "url": "https://coryd.dev/now?ts=1700136000000",
+    "content_text": "🎧: My top artists for the week: Tom Waits @ 34 plays, Execration @ 30 plays, Aesop Rock @ 27 plays, Basement @ 24 plays, blink-182 @ 19 plays, Sedimentum @ 18 plays, NoMeansNo @ 15 plays, Vertebra Atlantis @ 14 plays #Music #LastFM  https://coryd.dev/now?ts=1700136000000",
+    "date_published": "Thu, 16 Nov 2023 12:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111427485155502613"
+    ],
+    "lastTootTimestamp": 1700248491823
   }
 }
