@@ -7386,5 +7386,16 @@
       "https://social.lol/users/cory/statuses/111427485155502613"
     ],
     "lastTootTimestamp": 1700248491823
+  },
+  "https://trakt.tv/movies/ghostbusters-afterlife-2021": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvZ2hvc3RidXN0ZXJzLWFmdGVybGlmZS0yMDIx",
+    "title": "🎥: Ghostbusters: Afterlife",
+    "url": "https://trakt.tv/movies/ghostbusters-afterlife-2021",
+    "content_text": "🎥: Ghostbusters: Afterlife #Movies #Watching #Trakt https://trakt.tv/movies/ghostbusters-afterlife-2021",
+    "date_published": "Fri, 17 Nov 2023 15:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111427675043846172"
+    ],
+    "lastTootTimestamp": 1700251389270
   }
 }
