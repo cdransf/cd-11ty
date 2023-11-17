@@ -7,6 +7,7 @@ const emojiMap = (genre, artist) => {
 
   // mbid mismatches
   if (artist === 'Ghastly') return '💀'
+  if (artist === 'Cruciamentum') return '💀'
 
   // early return for bad input
   if (!genre) return DEFAULT
