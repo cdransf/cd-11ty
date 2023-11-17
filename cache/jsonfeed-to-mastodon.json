@@ -7331,5 +7331,32 @@
       "https://social.lol/users/cory/statuses/111421069787089993"
     ],
     "lastTootTimestamp": 1700150601092
+  },
+  "https://www.abeautifulsite.net/posts/thoughts-on-framework-churn/": {
+    "id": "aHR0cHM6Ly93d3cuYWJlYXV0aWZ1bHNpdGUubmV0L3Bvc3RzL3Rob3VnaHRzLW9uLWZyYW1ld29yay1jaHVybi8=",
+    "title": "🔗: Thoughts on Framework Churn",
+    "url": "https://www.abeautifulsite.net/posts/thoughts-on-framework-churn/",
+    "content_text": "🔗: Thoughts on Framework Churn #WebDev https://www.abeautifulsite.net/posts/thoughts-on-framework-churn/",
+    "date_published": "Thu, 16 Nov 2023 23:17:54 +0000",
+    "toots": []
+  },
+  "https://thathtml.blog/2023/11/the-framework-trap/": {
+    "id": "aHR0cHM6Ly90aGF0aHRtbC5ibG9nLzIwMjMvMTEvdGhlLWZyYW1ld29yay10cmFwLw==",
+    "title": "🔗: The Framework Trap",
+    "url": "https://thathtml.blog/2023/11/the-framework-trap/",
+    "content_text": "🔗: The Framework Trap #WebDev https://thathtml.blog/2023/11/the-framework-trap/",
+    "date_published": "Thu, 16 Nov 2023 23:17:45 +0000",
+    "toots": []
+  },
+  "https://app.thestorygraph.com/books/240f2048-8438-49b7-90a3-a5dc1018270f": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvMjQwZjIwNDgtODQzOC00OWI3LTkwYTMtYTVkYzEwMTgyNzBm",
+    "title": "📖: Red Rising",
+    "url": "https://app.thestorygraph.com/books/240f2048-8438-49b7-90a3-a5dc1018270f",
+    "content_text": "📖: Red Rising #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/240f2048-8438-49b7-90a3-a5dc1018270f",
+    "date_published": "Thu, 16 Nov 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111422987048022760"
+    ],
+    "lastTootTimestamp": 1700179856431
   }
 }
