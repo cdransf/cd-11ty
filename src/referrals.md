@@ -26,6 +26,7 @@ meta:
 
 Referral links for services I use. I save some money, and you do as well if you choose to use them.
 
+- <a class="plausible-event-name=Fastmail+referral" href="https://ref.fm/u30190984">Fastmail</a>
 - <a class="plausible-event-name=NextDNS+referral" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>
 - <a class="plausible-event-name=DNSimple+referral" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>
 - <a class="plausible-event-name=bunny+referral" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>

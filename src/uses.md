@@ -26,7 +26,7 @@ meta:
 
 Software and services that I use for work and my own enjoyment.
 
-{% image 'https://coryd.dev/assets/img/pages/uses.jpg', 'My desk', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full', 'eager' %}
+{% image '<https://coryd.dev/assets/img/pages/uses.jpg>', 'My desk', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full', 'eager' %}
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Computer setup</h3>
 
@@ -73,6 +73,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Services</h3>
 
+- <a class="plausible-event-name=Fastmail+referral" href="https://ref.fm/u30190984">Fastmail</a>: the best, most reliable and standards-compliant email provider around.
 - <a class="plausible-event-name=NextDNS+referral" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>: a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.
 - <a class="plausible-event-name=DNSimple+referral" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>: a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
 - <a class="plausible-event-name=bunny+referral" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>: a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
