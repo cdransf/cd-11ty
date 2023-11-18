@@ -7,7 +7,7 @@ tags: ['tech', 'macOS']
 
 In the spirit of following a trend, here are my default apps as of now (the end of 2023).<!-- excerpt -->
 
-- Mail service: iCloud
+- Mail service: <a class="plausible-event-name=Fastmail+referral" href="https://ref.fm/u30190984">Fastmail</a>
 - Mail client: Mail.app
 - Tasks: Reminders.app
 - RSS service: [Feedbin](https://feedbin.com)
