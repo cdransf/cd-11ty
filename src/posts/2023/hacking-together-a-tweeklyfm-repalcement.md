@@ -13,6 +13,8 @@ I mused the other day about wanting a replacement for [Tweekly.fm](https://tweek
 
 Given some time, that's basically where I've landed. I'm not great with GitHub actions by any means, but I've come up with this:
 
+{% raw %}
+
 ```yaml
 name: Fetch weekly artist charts
 on:
@@ -46,6 +48,8 @@ jobs:
           commit_user_email: coryd@fastmail.com
           commit_author: Cory Dransfeldt
 ```
+
+{% endraw %}
 
 I've added a Last.fm API key to my repository secrets and the action then uses that key to access Last.fm's `usergetweeklyartistchart` endpoint. The JSON returned by the endpoint is then merged with an existing JSON object read in from `src/_data/json/weekly-artist-charts.json` and it's shaped like this:
 
