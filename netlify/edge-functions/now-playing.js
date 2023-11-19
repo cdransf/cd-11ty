@@ -9,6 +9,7 @@ const emojiMap = (genre, artist) => {
 
   // mbid mismatches
   if (artist === 'Cruciamentum') return '💀'
+  if (artist === 'Fumes') return '💀'
   if (artist === 'Ghastly') return '💀'
   if (artist === 'Pigment Vehicle') return '✊'
 
