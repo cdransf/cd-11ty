@@ -20,7 +20,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Bookmarking/reading: [Pinboard](https://pinboard.in) + Safari's reader view and listen to this page functionality
 - Weather: Weather.app
 - Podcasts: I only listen to podcasts _very occasionally_ via [Feedbin](https://feedbin.com). I add feeds to my RSS subscriptions and tag/categorize them as `Podcasts`
-- Music: [Doppler](https://brushedtype.co/doppler) + [Last.fm](https://last.fm)
+- Music: [Plexamp](https://www.plex.tv/plexamp/) + [Last.fm](https://last.fm)
 - Passwords: iCloud keychain
 - Budgeting: Numbers.app (looking at YNAB though)
 - Mastodon: [Mona](https://mastodon.social/@MonaApp)

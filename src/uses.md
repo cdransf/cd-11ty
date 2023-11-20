@@ -44,7 +44,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
 
-- [Doppler](https://brushedtype.co/doppler): a delightfully simple and reliable local music player — it even supports Last.fm.
+- [Plexamp](https://www.plex.tv/plexamp/): Plex's music player that, while not native, is feature rich and, through it's platform, supports both Last.fm and ListenBrainz.
 - [Mona](https://mastodon.social/@MonaApp): endlessly configurable and yet still easy to use I enjoy Mona's take on Mastodon and use it as my go-to client across all of my devices.
 - [NetNewsWire](https://netnewswire.com): I love the simplicity and stability of NetNewsWire as an RSS client. I use a handful of Keyboard Maestro macros on macOS to quickly mark items as read and clean up the today view and another to quickly save items out to Safari's Reading List.
 - [Parcel](https://parcelapp.net): it tracks deliveries and does so reliably.
