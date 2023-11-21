@@ -63,9 +63,9 @@ I did quite a bit of research before switching to Fastmail and the following pos
 - [From Gmail to FastMail: Moving Away from Google – ReadWrite](http://readwrite.com/2012/03/19/from-gmail-to-fastmail-moving#awesm=~othfJ88hm9Tp8X 'From Gmail to FastMail: Moving Away from Google – ReadWrite')
 - [FastMail is My Favourite Email Provider](http://web.appstorm.net/reviews/email-apps/fastmail-is-my-favourite-email-provider/ 'FastMail is My Favourite Email Provider')
 
-Have you moved to Fastmail? Are you thinking of doing so? [Let me know your thoughts](mailto:gauze_0_saps@icloud.com) on it or the move to it. You can sign up for Fastmail [here](https://www.fastmail.com).
+Have you moved to Fastmail? Are you thinking of doing so? [Let me know your thoughts](mailto:coryd@fastmail.com) on it or the move to it. You can sign up for Fastmail [here](https://www.fastmail.com).
 
 [^1]: My interest in this idea, specifically was sparked by this blog post by Marco Arment: [Let us pay for this service, so it won’t go down](http://www.marco.org/2011/04/05/let-us-pay-for-this-service-so-it-wont-go-down 'Let us pay for this service so it won’t go down – Marco.org')
 [^2]: I had previously consolidated all of my old email accounts in to my Google Apps account via forwarding and by checking them via IMAP through Gmail.
 [^3]: I currently use the first-party mail clients on both iOS and OSX so not having contacts and calendars synced with Fastmail is really only an issue when in the Fastmail web interface (which isn't all that frequently). For now, I've been manually uploading vCard files to Fastmail which is clunky, but not all that annoying. I _do_ miss being able to create events by clicking on parsed text (which Google Apps supported), but not all that much.
-[^4]: If you do get tripped up switching from another provider, Fastmail does have extensive documentation. [You can also feel free to get in touch](mailto:gauze_0_saps@icloud.com).
+[^4]: If you do get tripped up switching from another provider, Fastmail does have extensive documentation. [You can also feel free to get in touch](mailto:coryd@fastmail.com).
