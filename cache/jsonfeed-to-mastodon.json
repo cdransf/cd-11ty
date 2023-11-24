@@ -6372,7 +6372,7 @@
     "title": "🔗: Customer Focus is Paramount in Measuring Developer Productivity",
     "url": "https://jdotc.xyz/blog/developer-productivity/",
     "content_text": "🔗: Customer Focus is Paramount in Measuring Developer Productivity #WebDev https://jdotc.xyz/blog/developer-productivity/",
-    "date_published": "Sun, 17 Sep 2023 00:00:00 +0000",
+    "date_published": "Sun, 17 Sep 2023 21:49:35 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111083246814148579"
     ],
@@ -6394,7 +6394,7 @@
     "title": "🔗: Which Kinds of Tests Should I Write? Revisited",
     "url": "https://blog.thecodewhisperer.com/permalink/which-kinds-of-tests-should-i-write-revisited",
     "content_text": "🔗: Which Kinds of Tests Should I Write? Revisited #WebDev https://blog.thecodewhisperer.com/permalink/which-kinds-of-tests-should-i-write-revisited",
-    "date_published": "Sun, 17 Sep 2023 00:00:00 +0000",
+    "date_published": "Mon, 18 Sep 2023 15:14:09 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111087465564848773"
     ],
@@ -6842,7 +6842,7 @@
     "title": "🎥: John Mulaney: Baby J",
     "url": "https://trakt.tv/movies/john-mulaney-baby-j-2023",
     "content_text": "🎥: John Mulaney: Baby J #Movies #Watching #Trakt https://trakt.tv/movies/john-mulaney-baby-j-2023",
-    "date_published": "Wed, 25 Oct 2023 22:31:28 +0000",
+    "date_published": "Fri, 24 Nov 2023 06:40:54 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111298413448313454"
     ],
@@ -7474,5 +7474,24 @@
       "https://social.lol/users/cory/statuses/111455043409890618"
     ],
     "lastTootTimestamp": 1700668997392
+  },
+  "https://coryd.dev/now?ts=1700740800000": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MDA3NDA4MDAwMDA=",
+    "title": "🎧: My top artists for the week: Minutemen @ 43 plays, NoMeansNo @ 32 plays, Ryan Adams @ 31 plays, Prince Daddy & The Hyena @ 27 plays, Fugazi @ 24 plays, Morbus Chron @ 22 plays, Cock Sparrer @ 18 plays, Sturgill Simpson @ 16 plays #Music #LastFM",
+    "url": "https://coryd.dev/now?ts=1700740800000",
+    "content_text": "🎧: My top artists for the week: Minutemen @ 43 plays, NoMeansNo @ 32 plays, Ryan Adams @ 31 plays, Prince Daddy & The Hyena @ 27 plays, Fugazi @ 24 plays, Morbus Chron @ 22 plays, Cock Sparrer @ 18 plays, Sturgill Simpson @ 16 plays #Music #LastFM  https://coryd.dev/now?ts=1700740800000",
+    "date_published": "Thu, 23 Nov 2023 12:00:00 +0000",
+    "toots": []
+  },
+  "https://defector.com/the-internet-isnt-meant-to-be-so-small": {
+    "id": "aHR0cHM6Ly9kZWZlY3Rvci5jb20vdGhlLWludGVybmV0LWlzbnQtbWVhbnQtdG8tYmUtc28tc21hbGw=",
+    "title": "🔗: The Internet Isn’t Meant To Be So Small",
+    "url": "https://defector.com/the-internet-isnt-meant-to-be-so-small",
+    "content_text": "🔗: The Internet Isn’t Meant To Be So Small #Tech https://defector.com/the-internet-isnt-meant-to-be-so-small",
+    "date_published": "Sun, 17 Sep 2023 17:49:16 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111468071969618015"
+    ],
+    "lastTootTimestamp": 1700867797431
   }
 }
