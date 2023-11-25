@@ -44,6 +44,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
 
+- [Obsidian](https://obsidian.md): fast, flexible and extensible plus it keeps all of your notes as markdown files. It's one of those rare apps that can be as simple or as absurdly powerful as you need it to be.
 - [Fantastical](https://flexibits.com/fantastical): the best and most powerful calendaring app for the Apple ecosystem, bar none.
 - [Plexamp](https://www.plex.tv/plexamp/): Plex's music player that, while not native, is feature rich and, through it's platform, supports both Last.fm and ListenBrainz.
 - [Mona](https://mastodon.social/@MonaApp): endlessly configurable and yet still easy to use I enjoy Mona's take on Mastodon and use it as my go-to client across all of my devices.
@@ -54,6 +55,8 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS</h3>
 
+- [Orion](https://kagi.com/orion/): the webkit browser from the folks at Kagi — it feels a bit like Safari but snappier and with ever-improving web extension support.
+- [Gmail Desktop](https://github.com/timche/gmail-desktop): yes it's Electron, but it's thoughtfully developed and built (be sure to opt into the latest beta updates ahead of the next major version).
 - [Rectangle](https://rectangleapp.com): to quickly move around/organize/snap application windows. Using a Mac without it now feels like it's broken.
 - [Keyboard Maestro](https://www.keyboardmaestro.com): an endlessly flexible app that I underutilize for quick macros and keyboard shortcuts in a number of different apps.
 - [Bartender](https://www.macbartender.com): used to hide or conditionally show menubar items.
@@ -71,7 +74,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Services</h3>
 
-- [Gmail](https://www.google.com/gmail/about): it’s exceedingly well established and Google’s apps are so ubiquitous that it’s hard to avoid.
+- [Gmail](https://www.google.com/gmail/about): it's exceedingly well established and Google's apps are so ubiquitous that it's hard to avoid.
 - <a class="plausible-event-name=NextDNS+referral" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>: a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.
 - <a class="plausible-event-name=DNSimple+referral" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>: a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
 - <a class="plausible-event-name=bunny+referral" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>: a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
@@ -79,7 +82,8 @@ Software and services that I use for work and my own enjoyment.
 - <a class="plausible-event-name=Feedpress+referral" href="https://feedpress.com/?affid=34370">Feedpress</a>: they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
 - [IVPN](https://www.ivpn.net): my VPN of choice for browsing outside of my home network. Privacy-focused and trustworthy.
 - [Kagi](https://kagi.com): search that's actually helpful and ad-free. It's lenses feature and the ability to up/downvote and block results from different sites are indispensable.
-- [Readwise Reader](https://readwise.io/read): an impressive RSS reader that handles all the functionality you’d expect from a read it later app beautifully. It’s as powerful as it is flexible.
+- [Readwise Reader](https://readwise.io/read): an impressive RSS reader that handles all the functionality you'd expect from a read it later app beautifully. It's as powerful as it is flexible.
+- [Todoist](https://todoist.com): the task manager I always return to for it's flexibility and endless integrations.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.
 - [Last.fm](https://last.fm): as it turns out, the best music recommendations still come from dedicated fans.
 - [Trakt](https://trakt.tv): my preferred TV and movie tracking service — it has a strong community (and isn't owned by a private equity firm).

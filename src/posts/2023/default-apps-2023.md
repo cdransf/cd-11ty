@@ -7,28 +7,24 @@ tags: ['tech', 'macOS']
 
 In the spirit of following a trend, here are my default apps as of now (the end of 2023).<!-- excerpt -->
 
-- Mail service: <a class="plausible-event-name=Fastmail+referral" href="https://ref.fm/u30190984">Fastmail</a>
-- Mail client: Mail.app
-- Tasks: Reminders.app
-- RSS service: [Feedbin](https://feedbin.com)
-- RSS client: [NetNewsWire](https://netnewswire.com)
+- Mail service: Gmail
+- Mail client: [Gmail Desktop](https://github.com/timche/gmail-desktop)
+- Tasks: [Todoist](https://todoist.com)
+- RSS service/client/bookmarking: [Readwise Reader](https://readwise.io/read) + clips sent to [Obsidian.md](https://obsidian.md)
 - Launcher: Spotlight
 - Cloud storage: iCloud
 - Photo library: iCloud
-- Web browser: Safari
-- Calendar: Calendar.app
-- Bookmarking/reading: [Pinboard](https://pinboard.in) + Safari's reader view and listen to this page functionality
+- Web browser: [Orion](https://kagi.com/orion/)
+- Calendar: [Fantastical](https://flexibits.com/fantastical)
 - Weather: Weather.app
-- Podcasts: I only listen to podcasts _very occasionally_ via [Feedbin](https://feedbin.com). I add feeds to my RSS subscriptions and tag/categorize them as `Podcasts`
+- Podcasts: N/A
 - Music: [Plexamp](https://www.plex.tv/plexamp/) + [Last.fm](https://last.fm)
-- Passwords: iCloud keychain
-- Budgeting: Numbers.app (looking at YNAB though)
+- Passwords: [1Password.com](https://1password.com)
+- Budgeting: [YNAB](https://ynab.com)
 - Mastodon: [Mona](https://mastodon.social/@MonaApp)
 - TV/Movie tracking: [Trakt](https://trakt.tv)
-- Notes: Notes.app
-- Code: [Nova](https://nova.app)
+- Notes: [Obsidian.md](https://obsidian.md)
+- Code: [Visual Studio Code](https://code.visualstudio.com)
 - Terminal: [iTerm2](https://iterm2.com)
 - Search: [Kagi](https://kagi.com)
-- Package tracking: [Parcel](https://parcelapp.net)
-
-A lot of my defaults are, well, system defaults. I've been enjoying the simplicity and integration.
+- Package tracking: Gmail's delivery surfacing — I invariably miss deliveries when I have to add them manually.
