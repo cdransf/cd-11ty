@@ -37,3 +37,6 @@
     populateNowPlaying(data)
   }
 })()
+;(async function () {
+  if (window.location.search.includes('ignore-me')) localStorage?.plausible_ignore = true
+})()
