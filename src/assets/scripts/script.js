@@ -38,5 +38,6 @@
   }
 })()
 ;(async function () {
-  if (window.location.search.includes('ignore-me')) localStorage?.plausible_ignore = true
+  if (window.location.search.includes('ignore-me') && localStorage)
+    localStorage.plausible_ignore = true
 })()
