@@ -7540,5 +7540,24 @@
       "https://social.lol/users/cory/statuses/111475804777439205"
     ],
     "lastTootTimestamp": 1700985790777
+  },
+  "https://app.thestorygraph.com/books/eb46fdaa-93ed-43cd-80d8-ea5a3bb6ea46": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvZWI0NmZkYWEtOTNlZC00M2NkLTgwZDgtZWE1YTNiYjZlYTQ2",
+    "title": "📖: A City on Mars: Can we settle space, should we settle space, and have we really thought this through?",
+    "url": "https://app.thestorygraph.com/books/eb46fdaa-93ed-43cd-80d8-ea5a3bb6ea46",
+    "content_text": "📖: A City on Mars: Can we settle space, should we settle space, and have we really thought this through? #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/eb46fdaa-93ed-43cd-80d8-ea5a3bb6ea46",
+    "date_published": "Sat, 25 Nov 2023 16:00:00 +0000",
+    "toots": []
+  },
+  "https://freddiedeboer.substack.com/p/where-are-the-ai-skepticism-stories?publication_id=295937&post_id=138840957&isFreemail=true&r=1o96ly": {
+    "id": "aHR0cHM6Ly9mcmVkZGllZGVib2VyLnN1YnN0YWNrLmNvbS9wL3doZXJlLWFyZS10aGUtYWktc2tlcHRpY2lzbS1zdG9yaWVzP3B1YmxpY2F0aW9uX2lkPTI5NTkzNyZwb3N0X2lkPTEzODg0MDk1NyZpc0ZyZWVtYWlsPXRydWUmcj0xbzk2bHk=",
+    "title": "🔗: Where Are the AI Skepticism Stories?",
+    "url": "https://freddiedeboer.substack.com/p/where-are-the-ai-skepticism-stories?publication_id=295937&post_id=138840957&isFreemail=true&r=1o96ly",
+    "content_text": "🔗: Where Are the AI Skepticism Stories? #Tech https://freddiedeboer.substack.com/p/where-are-the-ai-skepticism-stories?publication_id=295937&post_id=138840957&isFreemail=true&r=1o96ly",
+    "date_published": "Thu, 23 Nov 2023 04:02:55 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111479106728703808"
+    ],
+    "lastTootTimestamp": 1701036174556
   }
 }
