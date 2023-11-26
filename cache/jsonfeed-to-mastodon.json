@@ -7529,5 +7529,16 @@
       "https://social.lol/users/cory/statuses/111473951856919064"
     ],
     "lastTootTimestamp": 1700957517537
+  },
+  "https://app.thestorygraph.com/books/27dc0d8f-e412-4c7b-94a6-be74583d3f02": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvMjdkYzBkOGYtZTQxMi00YzdiLTk0YTYtYmU3NDU4M2QzZjAy",
+    "title": "📖: A Heart That Works",
+    "url": "https://app.thestorygraph.com/books/27dc0d8f-e412-4c7b-94a6-be74583d3f02",
+    "content_text": "📖: A Heart That Works #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/27dc0d8f-e412-4c7b-94a6-be74583d3f02",
+    "date_published": "Fri, 24 Nov 2023 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111475804777439205"
+    ],
+    "lastTootTimestamp": 1700985790777
   }
 }
