@@ -13,6 +13,7 @@ const emojiMap = (genre, artist) => {
   if (artist === 'Fumes') return '💀'
   if (artist === 'Ghastly') return '💀'
   if (artist === 'Pigment Vehicle') return '✊'
+  if (artist === 'Worm') return '💀'
 
   // early return for bad input
   if (!genre) return DEFAULT
