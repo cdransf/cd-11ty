@@ -7,14 +7,14 @@ tags: ['tech', 'macOS']
 
 In the spirit of following a trend, here are my default apps as of now (the end of 2023).<!-- excerpt -->
 
-- Mail service: Gmail
+- Mail service: [Gmail](https://www.google.com/gmail/about)
 - Mail client: [Gmail Desktop](https://github.com/timche/gmail-desktop)
 - Tasks: [Todoist](https://todoist.com)
 - RSS service/client/bookmarking: [Readwise Reader](https://readwise.io/read) + clips sent to [Obsidian.md](https://obsidian.md)
 - Launcher: [Alfred](https://www.alfredapp.com)
 - Cloud storage: iCloud
 - Photo library: iCloud
-- Web browser: Chrome
+- Web browser: [Chrome](https://www.google.com/chrome)
 - Calendar: [Fantastical](https://flexibits.com/fantastical)
 - Weather: Weather.app
 - Podcasts: N/A

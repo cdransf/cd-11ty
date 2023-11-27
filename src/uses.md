@@ -55,7 +55,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS</h3>
 
-- [Chrome](https://google.com/chrome/): as time goes on I find I tend to need less customization and more that just _works_. To that end I've been using Chrome with a minimum of extensions (Readwise and 1Password). It syncs nicely to iOS and I block adds via nextDNS.
+- [Chrome](https://google.com/chrome): as time goes on I find I tend to need less customization and more that just _works_. To that end I've been using Chrome with a minimum of extensions (Readwise and 1Password). It syncs nicely to iOS and I block adds via nextDNS.
 - [Gmail Desktop](https://github.com/timche/gmail-desktop): yes it's Electron, but it's thoughtfully developed and built (be sure to opt into the latest beta updates ahead of the next major version).
 - [Alfred](https://www.alfredapp.com): I like Alfred for it's flexibility, a few added niceties that Spotlight doesnt support (like quick access to system commands) and the fact that it hews quite nicely to native platform expectations.
 - [Rectangle](https://rectangleapp.com): to quickly move around/organize/snap application windows. Using a Mac without it now feels like it's broken.
