@@ -11,10 +11,10 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Mail client: [Gmail Desktop](https://github.com/timche/gmail-desktop)
 - Tasks: [Todoist](https://todoist.com)
 - RSS service/client/bookmarking: [Readwise Reader](https://readwise.io/read) + clips sent to [Obsidian.md](https://obsidian.md)
-- Launcher: Spotlight
+- Launcher: [Alfred](https://www.alfredapp.com)
 - Cloud storage: iCloud
 - Photo library: iCloud
-- Web browser: [Orion](https://kagi.com/orion/)
+- Web browser: Chrome
 - Calendar: [Fantastical](https://flexibits.com/fantastical)
 - Weather: Weather.app
 - Podcasts: N/A
