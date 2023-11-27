@@ -19,9 +19,9 @@ meta:
 ---
 
 <div class="flex items-center justify-center w-full not-prose mb-6">
-  <div class="border border-blue-600 dark:border-blue-400 bg-white rounded-full overflow-hidden p-4 [&>*]:max-w-xs">
+  <div class="border border-blue-600 dark:border-blue-400 bg-white rounded-full overflow-hidden p-4 w-64 h-64 md:w-96 md:h-96 flex items-center [&>*]:w-full [&>*]:h-auto">
     {% capture about_alt %}{{ site.name }} - image by David Neal / @reverentgeek{% endcapture %}
-    {% image './src/assets/img/avatar.webp', about_alt, 'w-full h-auto' %}
+    {% image './src/assets/img/avatar.webp', about_alt %}
   </div>
 </div>
 <h1 class="text-xxl font-black -leading-tight tracking-normal dark:text-gray-200 md:text-3xl text-center">Hi, I'm Cory</h1>

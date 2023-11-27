@@ -4,11 +4,11 @@
   "description": "The source for my personal site, blog and portfolio. Built using 11ty and hosted on Netlify.",
   "main": "index.html",
   "scripts": {
-    "start": "rm -rf .cache && ELEVENTY_PRODUCTION=false eleventy --serve && NODE_ENV=development npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
-    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve && NODE_ENV=development npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
+    "start": "NODE_ENV=development npx tailwindcss -i ./tailwind.css -o src/assets/styles/tailwind.css && rm -rf .cache && ELEVENTY_PRODUCTION=false eleventy --serve",
+    "debug": "NODE_ENV=development npx tailwindcss -i ./tailwind.css -o src/styles/tailwind.css && DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o _site/assets/styles/tailwind.css --minify",
+    "build": "NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o src/styles/tailwind.css --minify && ELEVENTY_PRODUCTION=true eleventy",
     "prepare": "husky install && touch ./.git/COMMIT_EDITMSG"
   },
   "keywords": [
