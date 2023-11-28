@@ -7,6 +7,8 @@ module.exports = async function () {
       { name: 'Tags', icon: 'tags' },
       { name: 'Search', icon: 'search' },
       { name: 'Feeds', icon: 'rss' },
+      { name: 'Mastodon', icon: 'brand-mastodon' },
+      { name: 'Coffee', icon: 'cup' },
     ],
     social: [
       { name: 'Email', url: 'mailto:cory.dransfeldt@gmail.com', icon: 'brand-gmail' },
