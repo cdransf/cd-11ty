@@ -1,7 +1,7 @@
 <nav>
   <ul class="flex">
     {% for link in nav.menu %}
-      <li{% if not forloop.last %} class="mr-6"{% endif %}>
+      <li{% if not forloop.last %} class="mr-4"{% endif %}>
         {% render "partials/nav/link.liquid", page: page, link: link.name, icon: link.icon %}
       </li>
     {% endfor %}

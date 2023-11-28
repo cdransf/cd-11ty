@@ -7,7 +7,8 @@ module.exports = async function () {
       { name: 'Tags', icon: 'tags' },
       { name: 'Search', icon: 'search' },
       { name: 'Feeds', icon: 'rss' },
-      { name: 'Webrings', icon: 'heart-handshake' },
+      { name: 'Mastodon', url: 'https://social.lol/@cory', icon: 'brand-mastodon' },
+      { name: 'Buy Me a Coffee', url: 'https://www.buymeacoffee.com/cory', icon: 'cup' },
     ],
     social: [
       { name: 'Email', url: 'mailto:cory.dransfeldt@gmail.com', icon: 'brand-gmail' },
@@ -17,6 +18,7 @@ module.exports = async function () {
       { name: 'Trakt', url: 'https://trakt.tv/users/cdransf', icon: 'device-tv' },
       { name: 'The StoryGraph', url: 'https://app.thestorygraph.com/profile/coryd', icon: 'books' },
       { name: 'Buy Me a Coffee', url: 'https://www.buymeacoffee.com/cory', icon: 'cup' },
+      { name: 'Webrings', icon: 'heart-handshake' },
     ],
   }
 }
