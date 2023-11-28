@@ -7573,5 +7573,27 @@
       "https://social.lol/users/cory/statuses/111483355006813645"
     ],
     "lastTootTimestamp": 1701100998114
+  },
+  "https://www.zachleat.com/web/jamstack-future/": {
+    "id": "aHR0cHM6Ly93d3cuemFjaGxlYXQuY29tL3dlYi9qYW1zdGFjay1mdXR1cmUv",
+    "title": "🔗: The Tension and Future of Jamstack",
+    "url": "https://www.zachleat.com/web/jamstack-future/",
+    "content_text": "🔗: The Tension and Future of Jamstack  https://www.zachleat.com/web/jamstack-future/",
+    "date_published": "Mon, 27 Nov 2023 20:59:50 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111485272886420324"
+    ],
+    "lastTootTimestamp": 1701130262593
+  },
+  "https://trakt.tv/movies/kimi-2022": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMva2ltaS0yMDIy",
+    "title": "🎥: Kimi",
+    "url": "https://trakt.tv/movies/kimi-2022",
+    "content_text": "🎥: Kimi #Movies #Watching #Trakt https://trakt.tv/movies/kimi-2022",
+    "date_published": "Tue, 28 Nov 2023 13:58:17 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111489017643507267"
+    ],
+    "lastTootTimestamp": 1701187403089
   }
 }
