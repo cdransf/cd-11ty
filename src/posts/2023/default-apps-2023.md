@@ -9,8 +9,8 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 
 - Mail service: [Gmail](https://www.google.com/gmail/about)
 - Mail client: [Gmail Desktop](https://github.com/timche/gmail-desktop)
-- Tasks: [Todoist](https://todoist.com)
-- RSS service/client/bookmarking: [Readwise Reader](https://readwise.io/read) + clips sent to [Obsidian.md](https://obsidian.md)
+- Tasks: Google Tasks + [Fantastical](https://flexibits.com/fantastical)
+- RSS service/client/bookmarking: [Readwise Reader](https://readwise.io/read) + clips sent to [Bear](https://bear.app)
 - Launcher: [Alfred](https://www.alfredapp.com)
 - Cloud storage: iCloud
 - Photo library: iCloud
@@ -23,7 +23,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Budgeting: [YNAB](https://ynab.com)
 - Mastodon: [Mona](https://mastodon.social/@MonaApp)
 - TV/Movie tracking: [Trakt](https://trakt.tv)
-- Notes: [Obsidian.md](https://obsidian.md)
+- Notes: [Bear](https://bear.app)
 - Code: [Visual Studio Code](https://code.visualstudio.com)
 - Terminal: [iTerm2](https://iterm2.com)
 - Search: [Kagi](https://kagi.com)

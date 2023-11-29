@@ -44,7 +44,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
 
-- [Obsidian](https://obsidian.md): fast, flexible and extensible plus it keeps all of your notes as markdown files. It's one of those rare apps that can be as simple or as absurdly powerful as you need it to be.
+- [Bear](https://bear.app): native, fast and flexible — it's a breeze to use across Apple's ecosystem.
 - [Fantastical](https://flexibits.com/fantastical): the best and most powerful calendaring app for the Apple ecosystem, bar none.
 - [Plexamp](https://www.plex.tv/plexamp/): Plex's music player that, while not native, is feature rich and, through it's platform, supports both Last.fm and ListenBrainz.
 - [Mona](https://mastodon.social/@MonaApp): endlessly configurable and yet still easy to use I enjoy Mona's take on Mastodon and use it as my go-to client across all of my devices.
@@ -84,7 +84,7 @@ Software and services that I use for work and my own enjoyment.
 - [IVPN](https://www.ivpn.net): my VPN of choice for browsing outside of my home network. Privacy-focused and trustworthy.
 - [Kagi](https://kagi.com): search that's actually helpful and ad-free. It's lenses feature and the ability to up/downvote and block results from different sites are indispensable.
 - [Readwise Reader](https://readwise.io/read): an impressive RSS reader that handles all the functionality you'd expect from a read it later app beautifully. It's as powerful as it is flexible.
-- [Todoist](https://todoist.com): the task manager I always return to for it's flexibility and endless integrations.
+- Google Tasks: lightweight and integrated across Google's apps. I interact with it via the iOS apps and Fantastical.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.
 - [Last.fm](https://last.fm): as it turns out, the best music recommendations still come from dedicated fans.
 - [Trakt](https://trakt.tv): my preferred TV and movie tracking service — it has a strong community (and isn't owned by a private equity firm).
