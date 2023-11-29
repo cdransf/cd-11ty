@@ -1,11 +1,12 @@
 const emojiMap = (genre, artist) => {
   const DEFAULT = '🎧'
-  if (artist === 'David Bowie') return '👨🏻‍🎤'
-  if (artist === 'Minor Threat') return '👨🏻‍🦲'
-  if (artist === 'Bruce Springsteen') return '🇺🇸'
-  if (artist === 'Taylor Swift') return '👸🏼'
-  if (artist === 'Imperial Triumphant') return '🎭'
   if (artist === 'Autopsy') return '🧟'
+  if (artist === 'Bruce Springsteen') return '🇺🇸'
+  if (artist === 'David Bowie') return '👨🏻‍🎤'
+  if (artist === 'Imperial Triumphant') return '🎭'
+  if (artist === 'Minor Threat') return '👨🏻‍🦲'
+  if (artist === 'Panopticon') return '🪕🪦'
+  if (artist === 'Taylor Swift') return '👸🏼'
 
   // mbid mismatches
   if (artist === 'AFI') return '✊'
@@ -13,7 +14,6 @@ const emojiMap = (genre, artist) => {
   if (artist === 'Fumes') return '💀'
   if (artist === 'Ghastly') return '💀'
   if (artist === 'Osees') return '💊'
-  if (artist === 'Panopticon') return '🪕🪦'
   if (artist === 'Pigment Vehicle') return '✊'
   if (artist === 'Worm') return '💀'
 
