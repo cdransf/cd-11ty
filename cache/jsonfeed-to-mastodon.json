@@ -7595,5 +7595,16 @@
       "https://social.lol/users/cory/statuses/111489017643507267"
     ],
     "lastTootTimestamp": 1701187403089
+  },
+  "https://app.thestorygraph.com/books/68cc34ae-516f-4b0c-afd0-b7e7d109d441": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvNjhjYzM0YWUtNTE2Zi00YjBjLWFmZDAtYjdlN2QxMDlkNDQx",
+    "title": "📖: Broken Code: Inside Facebook and the Fight to Expose Its Harmful Secrets",
+    "url": "https://app.thestorygraph.com/books/68cc34ae-516f-4b0c-afd0-b7e7d109d441",
+    "content_text": "📖: Broken Code: Inside Facebook and the Fight to Expose Its Harmful Secrets #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/68cc34ae-516f-4b0c-afd0-b7e7d109d441",
+    "date_published": "Mon, 27 Nov 2023 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111492321802417303"
+    ],
+    "lastTootTimestamp": 1701237820560
   }
 }
