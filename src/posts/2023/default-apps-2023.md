@@ -9,7 +9,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 
 - Mail service: [Gmail](https://www.google.com/gmail/about)
 - Mail client: [Gmail Desktop](https://github.com/timche/gmail-desktop)
-- Tasks: Google Tasks + [Fantastical](https://flexibits.com/fantastical)
+- Tasks: [Todoist](https://todoist.com)
 - RSS service/client/bookmarking: [Readwise Reader](https://readwise.io/read) + clips sent to [Bear](https://bear.app)
 - Launcher: [Alfred](https://www.alfredapp.com)
 - Cloud storage: iCloud

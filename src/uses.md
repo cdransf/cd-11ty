@@ -84,7 +84,7 @@ Software and services that I use for work and my own enjoyment.
 - [IVPN](https://www.ivpn.net): my VPN of choice for browsing outside of my home network. Privacy-focused and trustworthy.
 - [Kagi](https://kagi.com): search that's actually helpful and ad-free. It's lenses feature and the ability to up/downvote and block results from different sites are indispensable.
 - [Readwise Reader](https://readwise.io/read): an impressive RSS reader that handles all the functionality you'd expect from a read it later app beautifully. It's as powerful as it is flexible.
-- Google Tasks: lightweight and integrated across Google's apps. I interact with it via the iOS apps and [Fantastical](https://flexibits.com/fantastical).
+- [Todoist](https://todoist.com): the task manager I always return to for it's flexibility and endless integrations.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.
 - [Last.fm](https://last.fm): as it turns out, the best music recommendations still come from dedicated fans.
 - [Trakt](https://trakt.tv): my preferred TV and movie tracking service — it has a strong community (and isn't owned by a private equity firm).
