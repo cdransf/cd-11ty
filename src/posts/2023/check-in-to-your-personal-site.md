@@ -4,7 +4,7 @@ title: 'Check in to your personal site'
 draft: false
 tags: ['Eleventy', 'JavaScript', 'Last.fm', 'Trakt', 'NBA', 'API']
 ---
-For a while now I've had a line on my homepage displaying the track I'm currently listening to via Last.fm. In the interest of taking things entirely too far I've expanded what it does a fair bit.<!-- excerpt -->
+For a while now I've had a line on my homepage displaying the track I'm currently listening to via [Last.fm](https://www.last.fm/user/coryd_). In the interest of taking things entirely too far I've expanded what it does a fair bit.<!-- excerpt -->
 
 The display functionality is powered by a Netlify edge function that looks like this:
 
@@ -176,11 +176,11 @@ export default async () => {
 export const config = { path: '/api/now-playing' }
 ```
 
-At the top of the file you'll find a messy helper function that maps emoji to the currently playing track when supplied with the artist fetched from Last.fm and the genre as supplied by MusicBrainz. Last.fm will, typically, return an `mbid` in its response which is a unique identifier mapped to an artist page over at MusicBrainz. This `mbid` can then be used to fetch the most upvoted genre for the artist on MusicBrainz[^1]. This is the most common display case.
+At the top of the file you'll find a messy helper function that maps emoji to the currently playing track when supplied with the artist fetched from [Last.fm](https://www.last.fm/user/coryd_) and the genre as supplied by MusicBrainz. [Last.fm](https://www.last.fm/user/coryd_) will, typically, return an `mbid` in its response which is a unique identifier mapped to an artist page over at MusicBrainz. This `mbid` can then be used to fetch the most upvoted genre for the artist on MusicBrainz[^1]. This is the most common display case.
 
-If I happen to check in to a movie or TV show over at Trakt, that will get fetched _before_ the Last.fm data, differentiate between the two media types to set the appropriate emoji and data display format and execute an early return, skipping all of the aforementioned music logic.
+If I happen to check in to a movie or TV show over at [Trakt](https://trakt.tv/users/cdransf), that will get fetched _before_ the [Last.fm](https://www.last.fm/user/coryd_) data, differentiate between the two media types to set the appropriate emoji and data display format and execute an early return, skipping all of the aforementioned music logic.
 
-Next, and perhaps the most irritatingly involved part of this exercise, is parsing the NBA game schedule for the current day, searching the response for the Lakers and then displaying information about the game _only_ while it's taking place. This isn't an actively taken action but I either watch or follow every game and it seemed appropriate to include (if perhaps a bit ridiculous).
+Next, and perhaps the most irritatingly involved part of this exercise, is parsing the NBA game schedule for the current day, searching the response for the [Lakers](https://lakers.com) and then displaying information about the game _only_ while it's taking place. This isn't an actively taken action but I either watch or follow every game and it seemed appropriate to include (if perhaps a bit ridiculous).
 
 When this all runs, it returns a `JSON` object at `https://coryd.dev/api/now-playing`. The client side JavaScript looks like the following and simply fetches the data before caching the response in local storage and updating the DOM:
 
