@@ -7661,5 +7661,16 @@
       "https://social.lol/users/cory/statuses/111500341838031585"
     ],
     "lastTootTimestamp": 1701360196589
+  },
+  "https://coryd.dev/posts/2023/check-in-to-your-personal-site/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9jaGVjay1pbi10by15b3VyLXBlcnNvbmFsLXNpdGUv",
+    "title": "📝: Check in to your personal site",
+    "url": "https://coryd.dev/posts/2023/check-in-to-your-personal-site/",
+    "content_text": "📝: Check in to your personal site #Eleventy #JavaScript #Music https://coryd.dev/posts/2023/check-in-to-your-personal-site/",
+    "date_published": "Thu, 30 Nov 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111501987717813443"
+    ],
+    "lastTootTimestamp": 1701385310725
   }
 }
