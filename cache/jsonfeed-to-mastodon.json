@@ -7617,5 +7617,32 @@
       "https://social.lol/users/cory/statuses/111495622369800519"
     ],
     "lastTootTimestamp": 1701288183188
+  },
+  "https://jenniferplusplus.com/losing-the-imitation-game/": {
+    "id": "aHR0cHM6Ly9qZW5uaWZlcnBsdXNwbHVzLmNvbS9sb3NpbmctdGhlLWltaXRhdGlvbi1nYW1lLw==",
+    "title": "🔗: Losing the imitation game",
+    "url": "https://jenniferplusplus.com/losing-the-imitation-game/",
+    "content_text": "🔗: Losing the imitation game #Tech  #WebDev https://jenniferplusplus.com/losing-the-imitation-game/",
+    "date_published": "Wed, 29 Nov 2023 18:14:08 +0000",
+    "toots": []
+  },
+  "https://www.afterbabel.com/p/algorithms-hijacked-my-generation": {
+    "id": "aHR0cHM6Ly93d3cuYWZ0ZXJiYWJlbC5jb20vcC9hbGdvcml0aG1zLWhpamFja2VkLW15LWdlbmVyYXRpb24=",
+    "title": "🔗: Algorithms Hijacked My Generation. I Fear For Gen Alpha.",
+    "url": "https://www.afterbabel.com/p/algorithms-hijacked-my-generation",
+    "content_text": "🔗: Algorithms Hijacked My Generation. I Fear For Gen Alpha. #Tech  #Tech https://www.afterbabel.com/p/algorithms-hijacked-my-generation",
+    "date_published": "Wed, 29 Nov 2023 17:58:42 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111497984315231502"
+    ],
+    "lastTootTimestamp": 1701324223625
+  },
+  "https://derekkedziora.com/notes/20231129180549": {
+    "id": "aHR0cHM6Ly9kZXJla2tlZHppb3JhLmNvbS9ub3Rlcy8yMDIzMTEyOTE4MDU0OQ==",
+    "title": "🔗: Algorithmic conveyor belts",
+    "url": "https://derekkedziora.com/notes/20231129180549",
+    "content_text": "🔗: Algorithmic conveyor belts #Tech  #Tech https://derekkedziora.com/notes/20231129180549",
+    "date_published": "Wed, 29 Nov 2023 17:58:20 +0000",
+    "toots": []
   }
 }
