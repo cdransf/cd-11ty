@@ -11,7 +11,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Mail client: [Gmail Desktop](https://github.com/timche/gmail-desktop)
 - Tasks: [Todoist](https://todoist.com)
 - RSS service/client/bookmarking: [Readwise Reader](https://readwise.io/read) + clips sent to [Bear](https://bear.app)
-- Launcher: [Alfred](https://www.alfredapp.com)
+- Launcher: Spotlight
 - Cloud storage: iCloud
 - Photo library: iCloud
 - Web browser: [Chrome](https://www.google.com/chrome)
