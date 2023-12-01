@@ -15,6 +15,7 @@ const emojiMap = (genre, artist) => {
   if (artist === 'Edge of Sanity') return '💀'
   if (artist === 'Fumes') return '💀'
   if (artist === 'Ghastly') return '💀'
+  if (artist === 'Krallice') return '🪦'
   if (artist === 'Osees') return '💊'
   if (artist === 'Pigment Vehicle') return '✊'
   if (artist === 'Worm') return '💀'
