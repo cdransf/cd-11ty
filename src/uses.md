@@ -26,7 +26,7 @@ meta:
 
 Software and services that I use for work and my own enjoyment.
 
-{% image '<https://coryd.dev/assets/img/pages/uses.jpg>', 'My desk', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full', 'eager' %}
+{% image 'https://coryd.dev/assets/img/pages/uses.jpg', 'My desk', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full', 'eager' %}
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Computer setup</h3>
 
@@ -90,6 +90,6 @@ Software and services that I use for work and my own enjoyment.
 - [The Storygraph](https://thestorygraph.com): an excellent, focused and community driven book tracking app. All it needs is RSS/Atom feeds and/or an API.
 - [Slack](http://slack.com): I have a family Slack set up to avoid group text messages and am in a few other community Slacks.
 - [Discord](http://discord.com): I don't _like_ Discord but, for better or worse, it's where some communities I frequent are.
-- [Backblaze](https://www.backblaze.com/cloud-backup): a set it and forget it remote backup solution. I have it pointed at the external storage volume I have velcroed to the back of my monitor.
+- [Arq](https://arqbackup.com): I back up my MacBook and attached drives to both Backblaze's B2 and Google's cloud storage — Arq even has the option to download files in cloud storage like iCloud Drive and Google Drive to then be properly included in backups.
 
 Check out [uses.tech](https://uses.tech) for more lists like this one.
