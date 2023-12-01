@@ -7672,5 +7672,16 @@
       "https://social.lol/users/cory/statuses/111501987717813443"
     ],
     "lastTootTimestamp": 1701385310725
+  },
+  "https://coryd.dev/now?ts=1701345600000": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MDEzNDU2MDAwMDA=",
+    "title": "🎧: My top artists for the week: The National @ 55 plays, Damien Jurado @ 35 plays, Osees @ 32 plays, Panopticon @ 31 plays, Fawn Limbs @ 30 plays, Cruciamentum @ 26 plays, Jawbreaker @ 24 plays, Agalloch @ 23 plays #Music #LastFM",
+    "url": "https://coryd.dev/now?ts=1701345600000",
+    "content_text": "🎧: My top artists for the week: The National @ 55 plays, Damien Jurado @ 35 plays, Osees @ 32 plays, Panopticon @ 31 plays, Fawn Limbs @ 30 plays, Cruciamentum @ 26 plays, Jawbreaker @ 24 plays, Agalloch @ 23 plays #Music #LastFM  https://coryd.dev/now?ts=1701345600000",
+    "date_published": "Thu, 30 Nov 2023 12:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111505531104320715"
+    ],
+    "lastTootTimestamp": 1701439378479
   }
 }
