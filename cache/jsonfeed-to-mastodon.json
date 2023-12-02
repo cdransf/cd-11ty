@@ -7683,5 +7683,16 @@
       "https://social.lol/users/cory/statuses/111505531104320715"
     ],
     "lastTootTimestamp": 1701439378479
+  },
+  "https://app.thestorygraph.com/books/2d191a7d-ae8e-4d7e-aa14-ab5deedd583d": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvMmQxOTFhN2QtYWU4ZS00ZDdlLWFhMTQtYWI1ZGVlZGQ1ODNk",
+    "title": "📖: The Bill Gates Problem: Reckoning with the Myth of the Good Billionaire",
+    "url": "https://app.thestorygraph.com/books/2d191a7d-ae8e-4d7e-aa14-ab5deedd583d",
+    "content_text": "📖: The Bill Gates Problem: Reckoning with the Myth of the Good Billionaire #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/2d191a7d-ae8e-4d7e-aa14-ab5deedd583d",
+    "date_published": "Thu, 30 Nov 2023 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111508834433399707"
+    ],
+    "lastTootTimestamp": 1701489783285
   }
 }
