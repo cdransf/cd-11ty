@@ -9,18 +9,6 @@ const emojiMap = (genre, artist) => {
   if (artist === 'Panopticon') return '🪕🪦'
   if (artist === 'Taylor Swift') return '👸🏼'
 
-  // mbid mismatches
-  if (artist === 'AFI') return '✊'
-  if (artist === 'Carpe Noctem') return '🪦'
-  if (artist === 'Cruciamentum') return '💀'
-  if (artist === 'Edge of Sanity') return '💀'
-  if (artist === 'Fumes') return '💀'
-  if (artist === 'Ghastly') return '💀'
-  if (artist === 'Krallice') return '🪦'
-  if (artist === 'Osees') return '💊'
-  if (artist === 'Pigment Vehicle') return '✊'
-  if (artist === 'Worm') return '💀'
-
   // early return for bad input
   if (!genre) return DEFAULT
 
@@ -140,8 +128,22 @@ export default async () => {
   }).catch()
   const trackData = await trackRes.json()
   const track = trackData['recenttracks']['track'][0]
-  const mbid = track['artist']['mbid']
+  const artist = track['artist']['#text']
+  let mbid = track['artist']['mbid']
   let genre = ''
+
+  // mbid mismatches
+  if (artist === 'AFI') mbid = '1c3919b2-43ca-4a4a-935d-9d50135ec0ef'
+  if (artist === 'Carpe Noctem') mbid = 'aa349181-1cb9-4340-bb3f-82eefba3e697'
+  if (artist === 'Cruciamentum') mbid = '9a783663-db0c-4237-a3a9-afe72d055ddc'
+  if (artist === 'Edge of Sanity') mbid = '82d1972f-f815-480d-ba78-9873b799bdd1'
+  if (artist === 'Fumes') mbid = 'a5139ca1-f4f3-4bea-ae4c-ae4e2efd857d'
+  if (artist === 'Ghastly') mbid = '70f969df-7fc1-421e-afad-678c0bbd1aea'
+  if (artist === 'Krallice') mbid = 'b4e4b359-76a3-447e-be1d-80a24887134e'
+  if (artist === 'Osees') mbid = '194272cc-dcc8-4640-a4a6-66da7d250d5c'
+  if (artist === 'Pigment Vehicle') mbid = 'c421f86c-991c-4b2d-9058-516375903deb'
+  if (artist === 'Worm') mbid = '6313658e-cd68-4c81-9778-17ce3825748e'
+
   const artistUrl = mbid
     ? `https://musicbrainz.org/artist/${mbid}`
     : `https://musicbrainz.org/search?query=${track['artist']['#text'].replace(
