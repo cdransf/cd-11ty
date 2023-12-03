@@ -6,7 +6,6 @@ const emojiMap = (genre, artist) => {
   if (artist === 'Full of Hell & Nothing') return '🫨🎸'
   if (artist === 'Imperial Triumphant') return '🎭'
   if (artist === 'Minor Threat') return '👨🏻‍🦲'
-  if (artist === 'Panopticon') return '🪕🪦'
   if (artist === 'Taylor Swift') return '👸🏼'
 
   // early return for bad input
@@ -141,6 +140,7 @@ export default async () => {
   if (artist === 'Ghastly') mbid = '70f969df-7fc1-421e-afad-678c0bbd1aea'
   if (artist === 'Krallice') mbid = 'b4e4b359-76a3-447e-be1d-80a24887134e'
   if (artist === 'Osees') mbid = '194272cc-dcc8-4640-a4a6-66da7d250d5c'
+  if (artist === 'Panopticon') mbid = 'd9b1f00a-31a7-4f64-9f29-8481e7be8911'
   if (artist === 'Pigment Vehicle') mbid = 'c421f86c-991c-4b2d-9058-516375903deb'
   if (artist === 'Worm') mbid = '6313658e-cd68-4c81-9778-17ce3825748e'
 
