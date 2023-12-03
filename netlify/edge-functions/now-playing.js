@@ -41,6 +41,23 @@ const emojiMap = (genre, artist) => {
   return DEFAULT
 }
 
+const mbidMap = (artist) => {
+  const map = {
+    afi: '1c3919b2-43ca-4a4a-935d-9d50135ec0ef',
+    'carpe noctem': 'aa349181-1cb9-4340-bb3f-82eefba3e697',
+    cruciamentum: '9a783663-db0c-4237-a3a9-afe72d055ddc',
+    'edge of sanity': '82d1972f-f815-480d-ba78-9873b799bdd1',
+    fumes: 'a5139ca1-f4f3-4bea-ae4c-ae4e2efd857d',
+    ghastly: '70f969df-7fc1-421e-afad-678c0bbd1aea',
+    krallice: 'b4e4b359-76a3-447e-be1d-80a24887134e',
+    osees: '194272cc-dcc8-4640-a4a6-66da7d250d5c',
+    panopticon: 'd9b1f00a-31a7-4f64-9f29-8481e7be8911',
+    'pigment vehicle': 'c421f86c-991c-4b2d-9058-516375903deb',
+    worm: '6313658e-cd68-4c81-9778-17ce3825748e',
+  }
+  return map[artist.toLowerCase()] || ''
+}
+
 export default async () => {
   // eslint-disable-next-line no-undef
   const TV_KEY = Netlify.env.get('API_KEY_TRAKT')
@@ -132,17 +149,7 @@ export default async () => {
   let genre = ''
 
   // mbid mismatches
-  if (artist === 'AFI') mbid = '1c3919b2-43ca-4a4a-935d-9d50135ec0ef'
-  if (artist === 'Carpe Noctem') mbid = 'aa349181-1cb9-4340-bb3f-82eefba3e697'
-  if (artist === 'Cruciamentum') mbid = '9a783663-db0c-4237-a3a9-afe72d055ddc'
-  if (artist === 'Edge of Sanity') mbid = '82d1972f-f815-480d-ba78-9873b799bdd1'
-  if (artist === 'Fumes') mbid = 'a5139ca1-f4f3-4bea-ae4c-ae4e2efd857d'
-  if (artist === 'Ghastly') mbid = '70f969df-7fc1-421e-afad-678c0bbd1aea'
-  if (artist === 'Krallice') mbid = 'b4e4b359-76a3-447e-be1d-80a24887134e'
-  if (artist === 'Osees') mbid = '194272cc-dcc8-4640-a4a6-66da7d250d5c'
-  if (artist === 'Panopticon') mbid = 'd9b1f00a-31a7-4f64-9f29-8481e7be8911'
-  if (artist === 'Pigment Vehicle') mbid = 'c421f86c-991c-4b2d-9058-516375903deb'
-  if (artist === 'Worm') mbid = '6313658e-cd68-4c81-9778-17ce3825748e'
+  if (mbidMap(artist) !== '') mbid = mbidMap(artist)
 
   const artistUrl = mbid
     ? `https://musicbrainz.org/artist/${mbid}`
