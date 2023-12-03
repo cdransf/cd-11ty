@@ -41,23 +41,6 @@ const emojiMap = (genre, artist) => {
   return DEFAULT
 }
 
-const mbidMap = (artist) => {
-  const map = {
-    afi: '1c3919b2-43ca-4a4a-935d-9d50135ec0ef',
-    'carpe noctem': 'aa349181-1cb9-4340-bb3f-82eefba3e697',
-    cruciamentum: '9a783663-db0c-4237-a3a9-afe72d055ddc',
-    'edge of sanity': '82d1972f-f815-480d-ba78-9873b799bdd1',
-    fumes: 'a5139ca1-f4f3-4bea-ae4c-ae4e2efd857d',
-    ghastly: '70f969df-7fc1-421e-afad-678c0bbd1aea',
-    krallice: 'b4e4b359-76a3-447e-be1d-80a24887134e',
-    osees: '194272cc-dcc8-4640-a4a6-66da7d250d5c',
-    panopticon: 'd9b1f00a-31a7-4f64-9f29-8481e7be8911',
-    'pigment vehicle': 'c421f86c-991c-4b2d-9058-516375903deb',
-    worm: '6313658e-cd68-4c81-9778-17ce3825748e',
-  }
-  return map[artist.toLowerCase()] || ''
-}
-
 export default async () => {
   // eslint-disable-next-line no-undef
   const TV_KEY = Netlify.env.get('API_KEY_TRAKT')
@@ -143,10 +126,18 @@ export default async () => {
     type: 'json',
   }).catch()
   const trackData = await trackRes.json()
+  const mbidRes = await fetch('https://coryd.dev/api/mbids', {
+    type: 'json',
+  }).catch()
+  const mbidData = await mbidRes.json()
   const track = trackData['recenttracks']['track'][0]
   const artist = track['artist']['#text']
   let mbid = track['artist']['mbid']
   let genre = ''
+
+  const mbidMap = (artist) => {
+    return mbidData[artist.toLowerCase()] || ''
+  }
 
   // mbid mismatches
   if (mbidMap(artist) !== '') mbid = mbidMap(artist)
