@@ -7705,5 +7705,16 @@
       "https://social.lol/users/cory/statuses/111519248656777718"
     ],
     "lastTootTimestamp": 1701648692469
+  },
+  "https://trakt.tv/movies/the-mist-2007": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvdGhlLW1pc3QtMjAwNw==",
+    "title": "🎥: The Mist",
+    "url": "https://trakt.tv/movies/the-mist-2007",
+    "content_text": "🎥: The Mist #Movies #Watching #Trakt https://trakt.tv/movies/the-mist-2007",
+    "date_published": "Mon, 04 Dec 2023 13:57:08 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111522991232651921"
+    ],
+    "lastTootTimestamp": 1701705798913
   }
 }
