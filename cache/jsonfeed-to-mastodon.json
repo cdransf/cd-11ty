@@ -7694,5 +7694,27 @@
       "https://social.lol/users/cory/statuses/111508834433399707"
     ],
     "lastTootTimestamp": 1701489783285
+  },
+  "https://app.thestorygraph.com/books/afa2e754-9035-4f8e-a8e8-d654d78ebd0d": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvYWZhMmU3NTQtOTAzNS00ZjhlLWE4ZTgtZDY1NGQ3OGViZDBk",
+    "title": "📖: Do Androids Dream of Electric Sheep?",
+    "url": "https://app.thestorygraph.com/books/afa2e754-9035-4f8e-a8e8-d654d78ebd0d",
+    "content_text": "📖: Do Androids Dream of Electric Sheep? #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/afa2e754-9035-4f8e-a8e8-d654d78ebd0d",
+    "date_published": "Sat, 02 Dec 2023 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111519248656777718"
+    ],
+    "lastTootTimestamp": 1701648692469
+  },
+  "https://trakt.tv/movies/the-mist-2007": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvdGhlLW1pc3QtMjAwNw==",
+    "title": "🎥: The Mist",
+    "url": "https://trakt.tv/movies/the-mist-2007",
+    "content_text": "🎥: The Mist #Movies #Watching #Trakt https://trakt.tv/movies/the-mist-2007",
+    "date_published": "Mon, 04 Dec 2023 13:57:08 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111522991232651921"
+    ],
+    "lastTootTimestamp": 1701705798913
   }
 }
