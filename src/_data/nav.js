@@ -1,6 +1,6 @@
 module.exports = async function () {
   return {
-    footer: [{ name: 'Uses' }, { name: 'Referrals' }],
+    footer: [{ name: 'Uses' }, { name: 'Referrals' }, { name: 'Blogroll' }],
     menu: [
       { name: 'Now' },
       { name: 'About' },
