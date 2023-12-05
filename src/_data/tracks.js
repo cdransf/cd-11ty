@@ -59,6 +59,7 @@ module.exports = async function () {
       ts: submission[0]['listened_at'],
     }),
   })
+
   return {
     listenbrainz_submission: submission,
   }
