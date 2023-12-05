@@ -7738,5 +7738,16 @@
       "https://social.lol/users/cory/statuses/111526295846580343"
     ],
     "lastTootTimestamp": 1701756223316
+  },
+  "https://trakt.tv/movies/star-trek-the-motion-picture-1979": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvc3Rhci10cmVrLXRoZS1tb3Rpb24tcGljdHVyZS0xOTc5",
+    "title": "🎥: Star Trek: The Motion Picture",
+    "url": "https://trakt.tv/movies/star-trek-the-motion-picture-1979",
+    "content_text": "🎥: Star Trek: The Motion Picture #Movies #Watching #Trakt https://trakt.tv/movies/star-trek-the-motion-picture-1979",
+    "date_published": "Tue, 05 Dec 2023 14:38:21 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111528654072746497"
+    ],
+    "lastTootTimestamp": 1701792207038
   }
 }
