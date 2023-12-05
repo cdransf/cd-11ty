@@ -7727,5 +7727,16 @@
       "https://social.lol/users/cory/statuses/111523464717831639"
     ],
     "lastTootTimestamp": 1701713023762
+  },
+  "https://blog.j11y.io/2023-11-22_multifaceted/": {
+    "id": "aHR0cHM6Ly9ibG9nLmoxMXkuaW8vMjAyMy0xMS0yMl9tdWx0aWZhY2V0ZWQv",
+    "title": "🔗: Multifaceted: the linguistic echo chambers of LLMs",
+    "url": "https://blog.j11y.io/2023-11-22_multifaceted/",
+    "content_text": "🔗: Multifaceted: the linguistic echo chambers of LLMs #Tech https://blog.j11y.io/2023-11-22_multifaceted/",
+    "date_published": "Sat, 02 Dec 2023 20:10:10 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111526295846580343"
+    ],
+    "lastTootTimestamp": 1701756223316
   }
 }
