@@ -7760,5 +7760,16 @@
       "https://social.lol/users/cory/statuses/111529596792785912"
     ],
     "lastTootTimestamp": 1701806591797
+  },
+  "https://www.htmhell.dev/adventcalendar/2023/2/": {
+    "id": "aHR0cHM6Ly93d3cuaHRtaGVsbC5kZXYvYWR2ZW50Y2FsZW5kYXIvMjAyMy8yLw==",
+    "title": "🔗: You don't need JavaScript for that",
+    "url": "https://www.htmhell.dev/adventcalendar/2023/2/",
+    "content_text": "🔗: You don't need JavaScript for that #WebDev https://www.htmhell.dev/adventcalendar/2023/2/",
+    "date_published": "Tue, 05 Dec 2023 02:19:50 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111530068218210138"
+    ],
+    "lastTootTimestamp": 1701813785115
   }
 }
