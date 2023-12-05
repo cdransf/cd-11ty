@@ -59,9 +59,7 @@ module.exports = async function () {
       ts: submission[0]['listened_at'],
     }),
   })
-  console.log({
-    listenbrainz_submission: submission,
-  })
+
   return {
     listenbrainz_submission: submission,
   }
