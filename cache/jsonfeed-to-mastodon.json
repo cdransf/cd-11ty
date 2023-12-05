@@ -7749,5 +7749,16 @@
       "https://social.lol/users/cory/statuses/111528654072746497"
     ],
     "lastTootTimestamp": 1701792207038
+  },
+  "https://coryd.dev/posts/2023/programmatically-importing-your-lastfm-listening-data-to-listenbrainz/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9wcm9ncmFtbWF0aWNhbGx5LWltcG9ydGluZy15b3VyLWxhc3RmbS1saXN0ZW5pbmctZGF0YS10by1saXN0ZW5icmFpbnov",
+    "title": "📝: Programmatically importing your Last.fm listening data to ListenBrainz",
+    "url": "https://coryd.dev/posts/2023/programmatically-importing-your-lastfm-listening-data-to-listenbrainz/",
+    "content_text": "📝: Programmatically importing your Last.fm listening data to ListenBrainz #Music #Eleventy #WebDev https://coryd.dev/posts/2023/programmatically-importing-your-lastfm-listening-data-to-listenbrainz/",
+    "date_published": "Tue, 05 Dec 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111529596792785912"
+    ],
+    "lastTootTimestamp": 1701806591797
   }
 }
