@@ -55,7 +55,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS</h3>
 
-- [Chrome](https://google.com/chrome): as time goes on I find I tend to need less customization and more that just _works_. To that end I've been using Chrome with a minimum of extensions (Readwise and 1Password). It syncs nicely to iOS and I block adds via nextDNS.
+- [Orion](https://kagi.com/orion/): the webkit browser from the folks at Kagi — it feels a bit like Safari but snappier and with ever-improving web extension support.
 - [Gmail Desktop](https://github.com/timche/gmail-desktop): yes it's Electron, but it's thoughtfully developed and built (be sure to opt into the latest beta updates ahead of the next major version).
 - [Rectangle](https://rectangleapp.com): to quickly move around/organize/snap application windows. Using a Mac without it now feels like it's broken.
 - [Keyboard Maestro](https://www.keyboardmaestro.com): an endlessly flexible app that I underutilize for quick macros and keyboard shortcuts in a number of different apps.

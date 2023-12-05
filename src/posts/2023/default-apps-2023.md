@@ -14,7 +14,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Launcher: Spotlight
 - Cloud storage: iCloud
 - Photo library: iCloud
-- Web browser: [Chrome](https://www.google.com/chrome)
+- Web browser: [Orion](https://kagi.com/orion/)
 - Calendar: [Fantastical](https://flexibits.com/fantastical)
 - Weather: Weather.app
 - Podcasts: N/A
