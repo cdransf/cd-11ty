@@ -18,7 +18,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Calendar: [Fantastical](https://flexibits.com/fantastical)
 - Weather: Weather.app
 - Podcasts: N/A
-- Music: [Plexamp](https://www.plex.tv/plexamp/) + [Last.fm](https://last.fm)
+- Music: [iBroadcast](https://ibroadcast.com) + [Last.fm](https://last.fm)
 - Passwords: [1Password.com](https://1password.com)
 - Budgeting: [YNAB](https://ynab.com)
 - Mastodon: [Mona](https://mastodon.social/@MonaApp)
