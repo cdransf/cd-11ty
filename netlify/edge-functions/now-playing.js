@@ -46,6 +46,13 @@ export default async () => {
   const TV_KEY = Netlify.env.get('API_KEY_TRAKT')
   // eslint-disable-next-line no-undef
   const MUSIC_KEY = Netlify.env.get('API_KEY_LASTFM')
+  const headers = {
+    headers: {
+      'Content-Type': 'application/json',
+      'Cache-Control': 'public, max-age=0, must-revalidate',
+      'Netlify-CDN-Cache-Control': 'public, max-age=0, stale-while-revalidate=210',
+    },
+  }
 
   const traktRes = await fetch('https://api.trakt.tv/users/cdransf/watching', {
     headers: {
@@ -62,15 +69,21 @@ export default async () => {
 
   if (Object.keys(traktRes).length) {
     if (traktRes['type'] === 'episode') {
-      return Response.json({
-        content: `📺 <a href="https://trakt.tv/shows/${traktRes['show']['ids']['slug']}">${traktRes['show']['title']}</a> • <a href="https://trakt.tv/shows/${traktRes['show']['ids']['slug']}/seasons/${traktRes['episode']['season']}/episodes/${traktRes['episode']['number']}">${traktRes['episode']['title']}</a>`,
-      })
+      return Response.json(
+        {
+          content: `📺 <a href="https://trakt.tv/shows/${traktRes['show']['ids']['slug']}">${traktRes['show']['title']}</a> • <a href="https://trakt.tv/shows/${traktRes['show']['ids']['slug']}/seasons/${traktRes['episode']['season']}/episodes/${traktRes['episode']['number']}">${traktRes['episode']['title']}</a>`,
+        },
+        headers
+      )
     }
 
     if (traktRes['type'] === 'movie') {
-      return Response.json({
-        content: `🎥 <a href="https://trakt.tv/movies/${traktRes['movie']['ids']['slug']}">${traktRes['movie']['title']}</a>`,
-      })
+      return Response.json(
+        {
+          content: `🎥 <a href="https://trakt.tv/movies/${traktRes['movie']['ids']['slug']}">${traktRes['movie']['title']}</a>`,
+        },
+        headers
+      )
     }
   }
 
@@ -113,10 +126,10 @@ export default async () => {
 
       if (isCorrectDate) {
         if (nowHour === startHour && nowMinutes >= startMinutes && nowHour < endHour)
-          return Response.json(res)
+          return Response.json(res, headers)
         if (nowHour > startHour && nowHour < endHour) return Response.json(res)
         if (nowHour > startHour && nowMinutes <= endMinutes && nowHour == endHour)
-          return Response.json(res)
+          return Response.json(res, headers)
       }
     }
   }
@@ -158,11 +171,14 @@ export default async () => {
     genre = genreData.genres.sort((a, b) => b.count - a.count)[0]?.['name'] || ''
   }
 
-  return Response.json({
-    content: `${emojiMap(genre, track['artist']['#text'])} <a href="${track['url']}">${
-      track['name']
-    }</a> by <a href="${artistUrl}">${track['artist']['#text']}</a>`,
-  })
+  return Response.json(
+    {
+      content: `${emojiMap(genre, track['artist']['#text'])} <a href="${track['url']}">${
+        track['name']
+      }</a> by <a href="${artistUrl}">${track['artist']['#text']}</a>`,
+    },
+    headers
+  )
 }
 
 export const config = { path: '/api/now-playing' }
