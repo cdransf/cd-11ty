@@ -26,6 +26,7 @@ meta:
 
 - [Ethan Marcotte](https://ethanmarcotte.com)
 - [Keenan](https://gkeenan.co/avgb)
+- [Matt Birchler](https://birchtree.me)
 - [Max Böck](https://mxb.dev)
 - [Mike Haynes](https://mikehaynes.blog)
 - [Paul Anthony Webb](https://webb.page)
