@@ -46,7 +46,6 @@ Software and services that I use for work and my own enjoyment.
 
 - [Bear](https://bear.app): native, fast and flexible — it's a breeze to use across Apple's ecosystem.
 - [Fantastical](https://flexibits.com/fantastical): the best and most powerful calendaring app for the Apple ecosystem, bar none.
-- [iBroadcast](https://ibroadcast.com): a nifty music locker with apps across Apple's ecosystem and a nice web interface.
 - [Mona](https://mastodon.social/@MonaApp): endlessly configurable and yet still easy to use I enjoy Mona's take on Mastodon and use it as my go-to client across all of my devices.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">iOS</h3>
@@ -85,6 +84,7 @@ Software and services that I use for work and my own enjoyment.
 - [Readwise Reader](https://readwise.io/read): an impressive RSS reader that handles all the functionality you'd expect from a read it later app beautifully. It's as powerful as it is flexible.
 - [Todoist](https://todoist.com): the task manager I always return to for it's flexibility and endless integrations.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.
+- [iBroadcast](https://ibroadcast.com): a nifty music locker with apps across Apple's ecosystem and a nice web interface.
 - [Last.fm](https://last.fm): as it turns out, the best music recommendations still come from dedicated fans.
 - [Trakt](https://trakt.tv): my preferred TV and movie tracking service — it has a strong community (and isn't owned by a private equity firm).
 - [The Storygraph](https://thestorygraph.com): an excellent, focused and community driven book tracking app. All it needs is RSS/Atom feeds and/or an API.
