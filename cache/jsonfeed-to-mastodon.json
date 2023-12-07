@@ -7771,5 +7771,16 @@
       "https://social.lol/users/cory/statuses/111530068218210138"
     ],
     "lastTootTimestamp": 1701813785115
+  },
+  "https://app.thestorygraph.com/books/af1e9753-9c7c-4d53-9381-bb0c57f51786": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvYWYxZTk3NTMtOWM3Yy00ZDUzLTkzODEtYmIwYzU3ZjUxNzg2",
+    "title": "📖: Snow Crash",
+    "url": "https://app.thestorygraph.com/books/af1e9753-9c7c-4d53-9381-bb0c57f51786",
+    "content_text": "📖: Snow Crash #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/af1e9753-9c7c-4d53-9381-bb0c57f51786",
+    "date_published": "Tue, 05 Dec 2023 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111537146521175989"
+    ],
+    "lastTootTimestamp": 1701921791454
   }
 }
