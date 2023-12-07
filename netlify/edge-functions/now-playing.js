@@ -134,10 +134,12 @@ export default async () => {
     }
   }
 
-  const trackUrl = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=coryd_&api_key=${MUSIC_KEY}&limit=1&format=json`
-  const trackRes = await fetch(trackUrl, {
-    type: 'json',
-  }).catch()
+  const trackRes = await fetch(
+    `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=coryd_&api_key=${MUSIC_KEY}&limit=1&format=json`,
+    {
+      type: 'json',
+    }
+  ).catch()
   const trackData = await trackRes.json()
   const mbidRes = await fetch('https://coryd.dev/api/mbids', {
     type: 'json',
@@ -161,6 +163,7 @@ export default async () => {
         /\s+/g,
         '+'
       )}&type=artist`
+  const trackUrl = track['mbid'] ? `https://musicbrainz.org/track/${track['mbid']}` : track['url']
 
   if (mbid && mbid !== '') {
     const genreUrl = `https://musicbrainz.org/ws/2/artist/${mbid}?inc=aliases+genres&fmt=json`
@@ -173,7 +176,7 @@ export default async () => {
 
   return Response.json(
     {
-      content: `${emojiMap(genre, track['artist']['#text'])} <a href="${track['url']}">${
+      content: `${emojiMap(genre, track['artist']['#text'])} <a href="${trackUrl}">${
         track['name']
       }</a> by <a href="${artistUrl}">${track['artist']['#text']}</a>`,
     },
