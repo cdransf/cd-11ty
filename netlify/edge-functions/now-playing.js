@@ -1,6 +1,7 @@
 const emojiMap = (genre, artist) => {
   const DEFAULT = '🎧'
   if (artist === 'Autopsy') return '🧟'
+  if (artist === 'Black Flag') return '🏴'
   if (artist === 'Bruce Springsteen') return '🇺🇸'
   if (artist === 'David Bowie') return '👨🏻‍🎤'
   if (artist === 'Full of Hell & Nothing') return '🫨🎸'
@@ -12,7 +13,7 @@ const emojiMap = (genre, artist) => {
   if (!genre) return DEFAULT
 
   if (genre.includes('death metal')) return '💀'
-  if (genre.includes('black metal')) return '🪦'
+  if (genre.includes('black metal') || genre.includes('blackgaze')) return '🪦'
   if (genre.includes('metal')) return '🤘'
   if (genre.includes('emo') || genre.includes('blues')) return '😢'
   if (genre.includes('grind') || genre.includes('powerviolence')) return '🫨'
