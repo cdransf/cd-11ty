@@ -21,7 +21,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Music: [iBroadcast](https://ibroadcast.com) + [Last.fm](https://last.fm)
 - Passwords: [1Password.com](https://1password.com)
 - Budgeting: [YNAB](https://ynab.com)
-- Mastodon: [Mona](https://mastodon.social/@MonaApp)
+- Mastodon: [Ivory](https://tapbots.com/ivory)
 - TV/Movie tracking: [Trakt](https://trakt.tv)
 - Notes: [Bear](https://bear.app)
 - Code: [Visual Studio Code](https://code.visualstudio.com)

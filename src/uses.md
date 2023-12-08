@@ -26,7 +26,7 @@ meta:
 
 Software and services that I use for work and my own enjoyment.
 
-{% image 'https://coryd.dev/assets/img/pages/uses.jpg', 'My desk', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full', 'eager' %}
+{% image '<https://coryd.dev/assets/img/pages/uses.jpg>', 'My desk', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full', 'eager' %}
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Computer setup</h3>
 
@@ -46,7 +46,7 @@ Software and services that I use for work and my own enjoyment.
 
 - [Bear](https://bear.app): native, fast and flexible — it's a breeze to use across Apple's ecosystem.
 - [Fantastical](https://flexibits.com/fantastical): the best and most powerful calendaring app for the Apple ecosystem, bar none.
-- [Mona](https://mastodon.social/@MonaApp): endlessly configurable and yet still easy to use I enjoy Mona's take on Mastodon and use it as my go-to client across all of my devices.
+- [Ivory](https://tapbots.com/ivory): a beautifully designed and extremely well built Mastodon app — I use it as my go-to client across all of my devices.
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">iOS</h3>
 
