@@ -7804,5 +7804,16 @@
       "https://social.lol/users/cory/statuses/111544224407918916"
     ],
     "lastTootTimestamp": 1702029791448
+  },
+  "https://www.wired.com/story/mirai-untold-story-three-young-hackers-web-killing-monster/": {
+    "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0b3J5L21pcmFpLXVudG9sZC1zdG9yeS10aHJlZS15b3VuZy1oYWNrZXJzLXdlYi1raWxsaW5nLW1vbnN0ZXIv",
+    "title": "🔗: The Mirai Confessions: Three Young Hackers Who Built a Web-Killing Monster Finally Tell Their Story",
+    "url": "https://www.wired.com/story/mirai-untold-story-three-young-hackers-web-killing-monster/",
+    "content_text": "🔗: The Mirai Confessions: Three Young Hackers Who Built a Web-Killing Monster Finally Tell Their Story #Tech https://www.wired.com/story/mirai-untold-story-three-young-hackers-web-killing-monster/",
+    "date_published": "Fri, 01 Dec 2023 19:22:51 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111546112058244112"
+    ],
+    "lastTootTimestamp": 1702058594727
   }
 }
