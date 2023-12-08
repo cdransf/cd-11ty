@@ -7477,9 +7477,9 @@
   },
   "https://coryd.dev/now?ts=1700740800000": {
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MDA3NDA4MDAwMDA=",
-    "title": "🎧: My top artists for the week: Minutemen @ 43 plays, NoMeansNo @ 32 plays, Ryan Adams @ 31 plays, Prince Daddy & The Hyena @ 27 plays, Fugazi @ 24 plays, Morbus Chron @ 22 plays, Cock Sparrer @ 18 plays, Sturgill Simpson @ 16 plays #Music #LastFM",
+    "title": "🎧: My top artists for the week: Minutemen @ 43 plays, NoMeansNo @ 32 plays, Ryan Adams @ 31 plays, Prince Daddy and The Hyena @ 27 plays, Fugazi @ 24 plays, Morbus Chron @ 22 plays, Cock Sparrer @ 18 plays, Sturgill Simpson @ 16 plays #Music #LastFM",
     "url": "https://coryd.dev/now?ts=1700740800000",
-    "content_text": "🎧: My top artists for the week: Minutemen @ 43 plays, NoMeansNo @ 32 plays, Ryan Adams @ 31 plays, Prince Daddy & The Hyena @ 27 plays, Fugazi @ 24 plays, Morbus Chron @ 22 plays, Cock Sparrer @ 18 plays, Sturgill Simpson @ 16 plays #Music #LastFM  https://coryd.dev/now?ts=1700740800000",
+    "content_text": "🎧: My top artists for the week: Minutemen @ 43 plays, NoMeansNo @ 32 plays, Ryan Adams @ 31 plays, Prince Daddy and The Hyena @ 27 plays, Fugazi @ 24 plays, Morbus Chron @ 22 plays, Cock Sparrer @ 18 plays, Sturgill Simpson @ 16 plays #Music #LastFM  https://coryd.dev/now?ts=1700740800000",
     "date_published": "Thu, 23 Nov 2023 12:00:00 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111468075494627676"
@@ -7793,5 +7793,16 @@
       "https://social.lol/users/cory/statuses/111540921201947970"
     ],
     "lastTootTimestamp": 1701979388539
+  },
+  "https://coryd.dev/now?ts=1701950400000": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MDE5NTA0MDAwMDA=",
+    "title": "🎧: My top artists for the week: blink-182 @ 42 plays, Rotten Sound @ 40 plays, Portrayal of Guilt @ 39 plays, Envy @ 35 plays, Wormrot @ 32 plays, Helfró @ 25 plays, Gravenchalice @ 23 plays, Afsky @ 20 plays #Music #LastFM",
+    "url": "https://coryd.dev/now?ts=1701950400000",
+    "content_text": "🎧: My top artists for the week: blink-182 @ 42 plays, Rotten Sound @ 40 plays, Portrayal of Guilt @ 39 plays, Envy @ 35 plays, Wormrot @ 32 plays, Helfró @ 25 plays, Gravenchalice @ 23 plays, Afsky @ 20 plays #Music #LastFM  https://coryd.dev/now?ts=1701950400000",
+    "date_published": "Thu, 07 Dec 2023 12:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111544224407918916"
+    ],
+    "lastTootTimestamp": 1702029791448
   }
 }
