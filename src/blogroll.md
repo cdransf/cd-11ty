@@ -24,10 +24,11 @@ meta:
   {{ title }}
 </h2>
 
-- [Ethan Marcotte](https://ethanmarcotte.com)
+- [fLaMEd](https://flamedfury.com/)
+- [Joe Steel](https://joe-steel.com)
 - [Keenan](https://gkeenan.co/avgb)
+- [Łukasz Wójcik](https://lukaszwojcik.net)
 - [Matt Birchler](https://birchtree.me)
-- [Max Böck](https://mxb.dev)
 - [Mike Haynes](https://mikehaynes.blog)
 - [Paul Anthony Webb](https://webb.page)
 - [Raymond Camden](https://raymondcamden.com)
