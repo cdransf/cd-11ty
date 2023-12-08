@@ -24,6 +24,7 @@ meta:
   {{ title }}
 </h2>
 
+- [Ashur Cabrera](https://multiline.co/mment)
 - [fLaMEd](https://flamedfury.com/)
 - [Joe Steel](https://joe-steel.com)
 - [Keenan](https://gkeenan.co/avgb)
