@@ -14,7 +14,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Launcher: Spotlight
 - Cloud storage: iCloud
 - Photo library: iCloud
-- Web browser: [Orion](https://kagi.com/orion/)
+- Web browser: Safari
 - Calendar: [Fantastical](https://flexibits.com/fantastical)
 - Weather: Weather.app
 - Podcasts: N/A
@@ -26,5 +26,5 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Notes: [Bear](https://bear.app)
 - Code: [Visual Studio Code](https://code.visualstudio.com)
 - Terminal: [iTerm2](https://iterm2.com)
-- Search: [Kagi](https://kagi.com)
+- Search: DuckDuckGo
 - Package tracking: Gmail's delivery surfacing — I invariably miss deliveries when I have to add them manually.
