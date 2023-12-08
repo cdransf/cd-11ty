@@ -14,26 +14,28 @@ module.exports = async function () {
     type: 'json',
   }).catch()
   const data = await res
-  const submission = data['recenttracks']['track'].map((track) => {
+  let submissions = []
+  data['recenttracks']['track'].forEach((track) => {
     let artistMbid = track['artist']['mbid']['mbid']
 
     // mbid mismatches
     if (mbidMap(track['artist']['#text']) !== '') artistMbid = mbidMap(track['artist']['#text'])
 
-    return {
-      track_metadata: {
-        track_name: track['name'],
-        artist_name: track['artist']['#text'],
-        release_name: track['album']['#text'],
-        additional_info: {
-          submission_client: 'coryd.dev last.fm importer',
-          lastfm_track_mbid: track['mbid'],
-          lastfm_release_mbid: track['album']['mbid'],
-          lastfm_artist_mbid: artistMbid,
+    if (track['date'])
+      submissions.push({
+        track_metadata: {
+          track_name: track['name'],
+          artist_name: track['artist']['#text'],
+          release_name: track['album']['#text'],
+          additional_info: {
+            submission_client: 'coryd.dev last.fm importer',
+            lastfm_track_mbid: track['mbid'],
+            lastfm_release_mbid: track['album']['mbid'],
+            lastfm_artist_mbid: artistMbid,
+          },
         },
-      },
-      listened_at: track['date']['uts'],
-    }
+        listened_at: track['date']['uts'],
+      })
   })
 
   await fetch('https://api.listenbrainz.org/1/submit-listens', {
@@ -44,7 +46,7 @@ module.exports = async function () {
     },
     body: JSON.stringify({
       listen_type: 'import',
-      payload: submission,
+      payload: submissions,
     }),
   })
 
@@ -56,11 +58,11 @@ module.exports = async function () {
     },
     body: JSON.stringify({
       service: 'lastfm',
-      ts: submission[0]['listened_at'],
+      ts: submissions[0]['listened_at'],
     }),
   })
 
   return {
-    listenbrainz_submission: submission,
+    listenbrainz_submissions: submissions,
   }
 }
