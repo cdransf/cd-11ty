@@ -7,7 +7,8 @@ module.exports = async function () {
     const date = parseInt(chart['weeklyartistchart']['@attr']['to']) * 1000
     let content = 'My top artists for the week: '
     artists.forEach((artist, index) => {
-      content += `${encodeURIComponent(artist['name'])} @ ${artist['playcount']} play${
+      const artistName = artist['name'].replace('&', '&amp;');
+      content += `${artistName} @ ${artist['playcount']} play${
         parseInt(artist['playcount']) > 1 ? 's' : ''
       }`
       if (index !== artists.length - 1) content += ', '
