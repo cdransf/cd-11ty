@@ -11,7 +11,7 @@ module.exports = async function () {
       { name: 'Coffee', icon: 'cup' },
     ],
     social: [
-      { name: 'Email', url: 'mailto:cory.dransfeldt@gmail.com', icon: 'brand-gmail' },
+      { name: 'Email', url: '/contact', icon: 'at' },
       { name: 'GitHub', url: 'https://github.com/cdransf', icon: 'brand-github' },
       { name: 'Mastodon', url: 'https://social.lol/@cory', icon: 'brand-mastodon' },
       { name: 'Last.fm', url: 'https://www.last.fm/user/coryd_', icon: 'brand-lastfm' },

@@ -1,0 +1,28 @@
+---
+title: 'Success'
+layout: default
+permalink: contact/success.html
+---
+
+<div class="text-center w-full">
+  <h2
+    class="m-0 text-4xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-6xl mb-4"
+  >
+    {{ title }}
+  </h2>
+  <h3
+    class="m-0 text-xl font-bold leading-tight tracking-normal dark:text-gray-200 md:text-2xl mb-6"
+  >
+    I'll be in touch soon!
+  </h3>
+  <div class="flex justify-center">
+    <a
+      href="/"
+      class="[&>svg]:h-5 [&>svg]:w-5 [&>svg]:inline icon--bold font-semibold py-2 px-4 rounded-full !no-underline !text-white dark:text-gray-900 bg-blue-600 dark:bg-blue-400 hover:bg-blue-800 dark:hover:bg-blue-200"
+    >
+      {% tablericon "home-2" "Home" %} Head home
+    </a>
+  </div>
+</div>
+<hr />
+{% render "partials/popular-posts.liquid", posts: collections.posts, analytics: analytics %}

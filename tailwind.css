@@ -102,6 +102,11 @@ pre {
   @apply scrollbar-track-blue-100;
 }
 
+button {
+  @apply !appearance-none;
+}
+
+button,
 .tag--button {
   @apply font-semibold;
   @apply py-2;
@@ -110,11 +115,13 @@ pre {
   @apply mb-3;
   @apply rounded-full;
   @apply text-white;
+  @apply transition-colors;
   @apply ease-in-out;
   @apply duration-300;
-  background: theme(colors.blue.600);
+  background-color: theme(colors.blue.600) !important;
 }
 
+button.button__small,
 .tag--button.tag--button__small {
   @apply py-1;
   @apply px-2;
@@ -124,10 +131,13 @@ pre {
   @apply inline-block;
 }
 
+button:hover,
+button:active,
+button:focus,
 .tag--button:hover,
 .tag--button:active,
 .tag--button:focus {
-  background: theme(colors.blue.800);
+  background-color: theme(colors.blue.800) !important;
 }
 
 [data-tablericon-name] {
