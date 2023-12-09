@@ -2061,14 +2061,10 @@ pre {
   --scrollbar-track: #dbeafe;
 }
 
-button {
+.pill--button {
   -webkit-appearance: none !important;
      -moz-appearance: none !important;
           appearance: none !important;
-}
-
-button,
-.tag--button {
   font-weight: 600;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2085,8 +2081,7 @@ button,
   background-color: #2563eb !important;
 }
 
-button.button__small,
-.tag--button.tag--button__small {
+.pill--button.pill--button__small {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
@@ -2098,12 +2093,9 @@ button.button__small,
   display: inline-block;
 }
 
-button:hover,
-button:active,
-button:focus,
-.tag--button:hover,
-.tag--button:active,
-.tag--button:focus {
+.pill--button:hover,
+.pill--button:active,
+.pill--button:focus {
   background-color: #1e40af !important;
 }
 
@@ -2201,14 +2193,14 @@ button:focus,
     --scrollbar-thumb: #60a5fa;
   }
 
-  .tag--button {
+  .pill--button {
     color: #111827;
     background: #60a5fa;
   }
 
-  .tag--button:hover,
-  .tag--button:active,
-  .tag--button:focus {
+  .pill--button:hover,
+  .pill--button:active,
+  .pill--button:focus {
     background: #bfdbfe;
   }
 
