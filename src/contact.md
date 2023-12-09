@@ -39,5 +39,5 @@ Fill out the form below to get in touch (or ping me on [Mastodon](https://social
     <input type="email" name="email" placeholder="Email" class="w-full outline-none p-2 mb-6 rounded-sm border border-blue-600 focus:border-blue-800 dark:border-blue-400 dark:focus:border-blue-200 transition-colors ease-in-out duration-300" />
   </label>
   <textarea name="message" placeholder="Message"  class="w-full md:w-3/4 h-40 resize-none outline-none p-2 mb-6 rounded-sm border border-blue-600 focus:border-blue-800 dark:border-blue-400 dark:focus:border-blue-200 transition-colors ease-in-out duration-300"></textarea>
-  <button class="w-1/2 md:w-1/3" type="submit">Send message</button>
+  <button class="pill--button w-1/2 md:w-1/3" type="submit">Send message</button>
 </form>

@@ -102,12 +102,8 @@ pre {
   @apply scrollbar-track-blue-100;
 }
 
-button {
+.pill--button {
   @apply !appearance-none;
-}
-
-button,
-.tag--button {
   @apply font-semibold;
   @apply py-2;
   @apply px-4;
@@ -121,8 +117,7 @@ button,
   background-color: theme(colors.blue.600) !important;
 }
 
-button.button__small,
-.tag--button.tag--button__small {
+.pill--button.pill--button__small {
   @apply py-1;
   @apply px-2;
   @apply mr-2;
@@ -131,12 +126,9 @@ button.button__small,
   @apply inline-block;
 }
 
-button:hover,
-button:active,
-button:focus,
-.tag--button:hover,
-.tag--button:active,
-.tag--button:focus {
+.pill--button:hover,
+.pill--button:active,
+.pill--button:focus {
   background-color: theme(colors.blue.800) !important;
 }
 
@@ -228,14 +220,14 @@ button:focus,
     @apply scrollbar-thumb-blue-400;
   }
 
-  .tag--button {
+  .pill--button {
     color: theme(colors.gray.900);
     background: theme(colors.blue.400);
   }
 
-  .tag--button:hover,
-  .tag--button:active,
-  .tag--button:focus {
+  .pill--button:hover,
+  .pill--button:active,
+  .pill--button:focus {
     background: theme(colors.blue.200);
   }
 }
