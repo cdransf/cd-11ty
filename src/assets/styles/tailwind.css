@@ -1235,6 +1235,10 @@ video {
   margin-top: 0.625rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -2461,8 +2465,8 @@ pre {
     margin-right: 1rem;
   }
 
-  .md\:mt-4 {
-    margin-top: 1rem;
+  .md\:mt-0 {
+    margin-top: 0px;
   }
 
   .md\:block {

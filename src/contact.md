@@ -26,7 +26,7 @@ meta:
 
 <div class="flex flex-col md:flex-row">
   <div class="w-full md:w-1/2 md:pr-6">
-    <p>Fill out the form to get in touch. Or I've got other options below 👇🏻</p>
+    <p class="mt-0">Fill out the form to get in touch. Or I've got other options 👇🏻</p>
     <ul>
       <li>Ping me on <a href="https://social.lol/@cory">Mastodon</a></li>
       <li>Message me on Signal or iMessage (if you have my phone number)</li>
@@ -34,7 +34,7 @@ meta:
       <li>File an issue on the appropriate repo over at <a href="https://github.com/cdransf">GitHub</a></li>
     </ul>
   </div>
-  <form class="md:mt-4 flex flex-col items-center justify-center w-full md:w-1/2" method="POST" action="/contact/success" name="contact" netlify netlify-honeypot="bot-field">
+  <form class="mt-3 md:mt-0 flex flex-col items-center justify-center w-full md:w-1/2" method="POST" action="/contact/success" name="contact" netlify netlify-honeypot="bot-field">
     <label class="hidden">
       Don't fill this out if you're human: <input name="bot-field" />
     </label>
