@@ -1,6 +1,7 @@
 ---
 date: '2023-07-05'
 title: 'Embrace, extend, enshittify'
+description: "Meta launched Threads and it'll support ActivityPub soon. You should federate with the app since, well, all your posts are accessible to them anyways should they make the effort to obtain them."
 draft: false
 tags: ['privacy', 'tech']
 ---

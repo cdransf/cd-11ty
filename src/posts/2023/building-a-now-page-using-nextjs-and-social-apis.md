@@ -1,6 +1,7 @@
 ---
 date: '2023-02-20'
 title: 'Building a now page using Next.js and social APIs'
+description: "With my personal site now sitting at Vercel and written in Next.js I decided to rework my now page by leveraging a variety of social APIs."
 draft: false
 tags: ['Next.js', 'React', 'API']
 ---

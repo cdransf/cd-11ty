@@ -1,6 +1,7 @@
 ---
 date: '2023-02-18'
 title: 'Adding client side webmentions to my Next.js blog'
+description: "The latest iteration of my website is built on Next.js, specifically Timothy Lin's wonderful Tailwind/Next.js starter blog.."
 draft: false
 tags: ['Next.js', 'React', 'development', 'indie web', 'API']
 ---

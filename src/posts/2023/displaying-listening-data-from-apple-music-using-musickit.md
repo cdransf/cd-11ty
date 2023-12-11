@@ -1,6 +1,7 @@
 ---
 date: '2023-06-21'
 title: 'Displaying listening data from Apple Music using MusicKit.js'
+description: "Up until now my now page has sourced music data from Last.fm (and may well again). But, in the interest in experimenting a bit, I've tried my hand at rewriting that part of the page to leverage data from Apple Music, using MusicKit.js instead."
 draft: false
 tags: ['development', 'music', 'Eleventy', 'Apple', 'JavaScript', 'API']
 image: https://cdn.coryd.dev/blog/albums-artists.jpg

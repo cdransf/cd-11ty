@@ -1,6 +1,7 @@
 ---
 date: '2023-06-08'
 title: 'From ICS to JSON: surfacing anticipated albums'
+description: "I use MusicHarbor by Marcos Tanaka to track upcoming albums from my favorite artists (typically by syncing my last.fm data with the app.) When I see something new that I want to add to my collection I throw it on a calendar creatively titled Albums."
 draft: false
 tags: ['development', 'music', 'automation', 'API']
 image: https://cdn.coryd.dev/blog/album-releases.jpg

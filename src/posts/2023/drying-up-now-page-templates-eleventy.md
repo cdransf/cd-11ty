@@ -1,6 +1,7 @@
 ---
 date: '2023-09-03'
 title: Drying up now page templates and normalizing data in Eleventy
+description: "My now page consists of a number of similar sections — some bespoke text, a number of media grids and lists. The text is repeated once, the lists are easily templated out in Liquid.js and the media grids are all quite similar."
 draft: false
 tags:
   - Eleventy

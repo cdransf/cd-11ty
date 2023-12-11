@@ -1,6 +1,7 @@
 ---
 date: '2023-05-26'
 title: 'Domain names as discoverable personal identifiers for the web'
+description: "What if — and hear me out here — instead of using email or a platform-owned account, we leveraged individual domain names as personal identifiers for the web?"
 draft: false
 tags: ['tech', 'privacy']
 ---

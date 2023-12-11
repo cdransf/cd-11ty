@@ -1,6 +1,7 @@
 ---
 date: '2023-11-06'
 title: 'My default apps, 2023 edition'
+description: "In the spirit of following a trend, here are my default apps as of now (the end of 2023)."
 draft: false
 tags: ['tech', 'macOS']
 ---

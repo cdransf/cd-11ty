@@ -1,6 +1,7 @@
 ---
 date: '2023-02-17'
 title: 'Workflows: handling inbound email on Fastmail with regular expressions (now featuring ChatGPT)'
+description: "I've been using Fastmail for years now and have explored a number of different approaches to handling mail. I've approached it by creating rules targeting lists of top level domains, I've gone with no rules at all and a heavy-handed approach to unsubscribing from messages (operating under the idea that _everything_ warrants being seen and triaged)."
 draft: false
 tags: ['Email', 'Fastmail', 'regular expressions', 'workflows', 'ChatGPT']
 image: https://cdn.coryd.dev/blog/fastmail-workflow.jpg
