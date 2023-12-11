@@ -1,6 +1,7 @@
 ---
-title: 'Apple Messages: a tale of woe OR how to fix sync, a crash loop and accept data loss'
 date: '2022-04-06'
+title: 'Apple Messages: a tale of woe OR how to fix sync, a crash loop and accept data loss'
+description: "Apple's Messages app recently started crashing in a loop on my Mac Mini — it would happen every time the app was opened after a 5-10 second delay. Deleting conversations from other devices and letting that change sync over didn't appear to help."
 draft: false
 tags: ['Apple', 'services']
 ---

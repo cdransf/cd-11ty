@@ -1,6 +1,7 @@
 ---
-title: 'Simple data fetching with custom React hooks and SWR'
 date: '2022-05-23'
+title: 'Simple data fetching with custom React hooks and SWR'
+description: "My site was scaffolded out using Timothy Lin's tailwind-nextjs-starter-blog project (which I highly recommend checking out). As part of the build out I wanted to display the books I'm currently reading and the song I most recently listened to, data available from Oku and Last.fm, respectively."
 draft: false
 tags: [SWR, API, fetch, React, Next.js]
 ---

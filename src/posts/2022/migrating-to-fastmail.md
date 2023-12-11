@@ -1,6 +1,7 @@
 ---
-title: 'Migrating to Fastmail'
 date: '2022-04-13'
+title: 'Migrating to Fastmail'
+description: "So you want to migrate over to Fastmail for your email — here's how you can go about doing so as seamlessly as possible."
 draft: false
 tags: ['Email', 'Fastmail', 'Gmail']
 ---
