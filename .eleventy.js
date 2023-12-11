@@ -3,100 +3,38 @@ const tablerIcons = require('eleventy-plugin-tabler-icons')
 const pluginUnfurl = require('eleventy-plugin-unfurl')
 const pluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier')
 const schema = require('@quasibit/eleventy-plugin-schema')
-const { eleventyImagePlugin } = require('@11ty/eleventy-img')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
-const outdent = require('outdent')
-const Image = require('@11ty/eleventy-img')
 const embedYouTube = require('eleventy-plugin-youtube-embed')
+
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const markdownItFootnote = require('markdown-it-footnote')
-const filters = require('./config/filters.js')
-const dateFilters = require('./config/dateFilters.js')
-const mediaFilters = require('./config/mediaFilters.js')
-const feedFilters = require('./config/feedFilters.js')
+
+const filters = require('./config/filters/index.js')
+
 const CleanCSS = require('clean-css')
-const now = String(Date.now())
 const { execSync } = require('child_process')
+
 const tagAliases = require('./src/_data/json/tag-aliases.json')
 
 // load .env
 require('dotenv-flow').config()
 
-const imageShortcode = async (
-  src,
-  alt,
-  className = undefined,
-  loading = 'lazy',
-  widths = [75, 150, 300, 600, 900, 1200],
-  formats = ['webp', 'jpeg'],
-  sizes = '100vw'
-) => {
-  const imageMetadata = await Image(src, {
-    widths: [...widths, null],
-    formats: [...formats, null],
-    outputDir: './_site/assets/img/cache/',
-    urlPath: '/assets/img/cache/',
-  })
+/**
+ *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
+ */
 
-  const stringifyAttributes = (attributeMap) => {
-    return Object.entries(attributeMap)
-      .map(([attribute, value]) => {
-        if (typeof value === 'undefined') return ''
-        return `${attribute}="${value}"`
-      })
-      .join(' ')
-  }
+const packageVersion = require('./package.json').version
 
-  const sourceHtmlString = Object.values(imageMetadata)
-    .map((images) => {
-      const { sourceType } = images[0]
-      const sourceAttributes = stringifyAttributes({
-        type: sourceType,
-        srcset: images.map((image) => image.srcset).join(', '),
-        sizes,
-      })
-
-      return `<source ${sourceAttributes}>`
-    })
-    .join('\n')
-
-  const getLargestImage = (format) => {
-    const images = imageMetadata[format]
-    return images[images.length - 1]
-  }
-
-  const largestUnoptimizedImg = getLargestImage(formats[0])
-  const imgAttributes = stringifyAttributes({
-    src: largestUnoptimizedImg.url,
-    width: largestUnoptimizedImg.width,
-    height: largestUnoptimizedImg.height,
-    alt,
-    loading,
-    decoding: 'async',
-  })
-
-  const imgHtmlString = `<img ${imgAttributes}>`
-  const pictureAttributes = stringifyAttributes({
-    class: className,
-  })
-
-  const picture = `<picture ${pictureAttributes}>
-    ${sourceHtmlString}
-    ${imgHtmlString}
-  </picture>`
-
-  return outdent`${picture}`
-}
+// module import shortcodes
+const { img } = require('./config/shortcodes/index.js')
 
 module.exports = function (eleventyConfig) {
-  // plugins
   eleventyConfig.addPlugin(syntaxHighlight)
   eleventyConfig.addPlugin(tablerIcons)
   eleventyConfig.addPlugin(pluginUnfurl)
   eleventyConfig.addPlugin(pluginFilesMinifier)
   eleventyConfig.addPlugin(schema)
-  eleventyConfig.addPlugin(eleventyImagePlugin)
   eleventyConfig.addPlugin(embedYouTube, {
     modestBranding: true,
     lite: {
@@ -120,7 +58,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('_redirects')
 
   // shortcodes
-  eleventyConfig.addShortcode('version', () => now)
+  eleventyConfig.addShortcode('version', () => packageVersion)
 
   // enable merging of tags
   eleventyConfig.setDataDeepMerge(true)
@@ -181,41 +119,20 @@ module.exports = function (eleventyConfig) {
   md.use(markdownItFootnote)
   eleventyConfig.setLibrary('md', md)
 
-  // markdown filter
   eleventyConfig.addLiquidFilter('markdown', (content) => {
     if (!content) return
     return md.render(content)
   })
 
-  // filters
   Object.keys(filters).forEach((filterName) => {
     eleventyConfig.addLiquidFilter(filterName, filters[filterName])
   })
-
-  // date filters
-  Object.keys(dateFilters).forEach((filterName) => {
-    eleventyConfig.addLiquidFilter(filterName, dateFilters[filterName])
-  })
-
-  // media filters
-  Object.keys(mediaFilters).forEach((filterName) => {
-    eleventyConfig.addLiquidFilter(filterName, mediaFilters[filterName])
-  })
-
-  // feed filters
-  Object.keys(feedFilters).forEach((filterName) => {
-    eleventyConfig.addLiquidFilter(filterName, feedFilters[filterName])
-  })
-
-  // css filters
-  eleventyConfig.addFilter('cssmin', (code) => new CleanCSS({}).minify(code).styles)
-
-  // rss filters
   eleventyConfig.addLiquidFilter('dateToRfc822', pluginRss.dateToRfc822)
   eleventyConfig.addLiquidFilter('absoluteUrl', pluginRss.absoluteUrl)
 
-  // image shortcode
-  eleventyConfig.addShortcode('image', imageShortcode)
+  eleventyConfig.addFilter('cssmin', (code) => new CleanCSS({}).minify(code).styles)
+
+  eleventyConfig.addShortcode('image', img)
 
   eleventyConfig.on('eleventy.after', () => {
     execSync(`npx pagefind --site _site --glob "**/*.html"`, { encoding: 'utf-8' })
