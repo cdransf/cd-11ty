@@ -1,5 +1,6 @@
 ---
 title: 'Automating (and probably overengineering) my /now page'
+description: 'omg.lol (where I point my domain) and host most of my site content recently launched support for /now pages.'
 date: '2023-02-06'
 draft: false
 tags: ['automation', 'development', 'Next.js', 'JavaScript']

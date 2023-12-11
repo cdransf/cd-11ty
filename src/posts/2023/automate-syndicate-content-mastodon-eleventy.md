@@ -1,7 +1,7 @@
 ---
+date: '2023-03-27'
 title: 'Automate and syndicate content from Eleventy to Mastodon'
 description: 'I've discussed building a now page using Eleventy, but I also syndicate a subset of that content out to Mastodon using @11ty/eleventy-activity-feed and Make.'
-date: '2023-03-27'
 draft: false
 tags: ['automation', 'Mastodon', 'Eleventy']
 ---
@@ -23,7 +23,7 @@ async render() {
   feed.addSource('rss', 'Letterboxd', 'https://letterboxd.com/cdme/rss')
   feed.addSource('rss', 'Glass', 'https://glass.photo/coryd/rss')
   feed.addSource('rss', 'Oku', 'https://oku.club/rss/collection/NvEmF')
-  
+
   return feed.toRssFeed({
    title: "Cory Dransfeldt's activity feed",
    language: 'en',

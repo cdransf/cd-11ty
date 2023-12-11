@@ -1,6 +1,7 @@
 ---
-date: '2023-02-23'
 title: 'Automating RSS syndication and sharing with Next.js and GitHub'
+description: 'I wrote a basic syndication tool in Next.js to automate sharing items from configured RSS feeds to Mastodon. This tool works by leveraging a few basic configurations, the Mastodon API and a (reasonably) lightweight script that creates a JSON cache when initialized and posts new items on an hourly basis.'
+date: '2023-02-23'
 draft: false
 tags: ['Next.js', 'RSS', 'automation', 'GitHub']
 ---
