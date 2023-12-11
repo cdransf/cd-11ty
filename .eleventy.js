@@ -1,7 +1,7 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const tablerIcons = require('eleventy-plugin-tabler-icons')
 const pluginUnfurl = require('eleventy-plugin-unfurl')
-const schema = require('@quasibit/eleventy-plugin-schema')
+const pluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const embedYouTube = require('eleventy-plugin-youtube-embed')
 
@@ -32,7 +32,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight)
   eleventyConfig.addPlugin(tablerIcons)
   eleventyConfig.addPlugin(pluginUnfurl)
-  eleventyConfig.addPlugin(schema)
+  eleventyConfig.addPlugin(pluginFilesMinifier)
   eleventyConfig.addPlugin(embedYouTube, {
     modestBranding: true,
     lite: {
@@ -131,9 +131,6 @@ module.exports = function (eleventyConfig) {
 
   // shortcodes
   eleventyConfig.addShortcode('image', img)
-
-  // transforms
-  eleventyConfig.addPlugin(require('./config/transforms/html-config.js'))
 
   eleventyConfig.on('eleventy.after', () => {
     execSync(`npx pagefind --site _site --glob "**/*.html"`, { encoding: 'utf-8' })

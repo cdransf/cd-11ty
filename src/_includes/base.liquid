@@ -3,11 +3,7 @@
 <!doctype html>
 <html class="scrollbar-thin scrollbar-thumb-blue-600 dark:scrollbar-thumb-blue-400 scrollbar-track-blue-100" lang="en">
   <head>
-    <title>
-      {% if title %}
-        {{ title }} •
-      {% endif %}
-      {{ meta.siteName }}</title>
+    <title>{%- if title %}{{ title }} • {% endif -%}{{ meta.siteName }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="{{ fullUrl }}" />
