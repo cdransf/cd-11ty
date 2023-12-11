@@ -1,6 +1,7 @@
 ---
 date: '2023-11-30'
 title: 'Check in to your personal site'
+description: "For a while now I've had a line on my homepage displaying the track I'm currently listening to via Last.fm. In the interest of taking things entirely too far I've expanded what it does a fair bit."
 draft: false
 tags: ['Eleventy', 'JavaScript', 'Last.fm', 'Trakt', 'NBA', 'API']
 ---
