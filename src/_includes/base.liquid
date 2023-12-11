@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="{{ fullUrl }}" />
     <meta property="og:title" content="{% if title %}{{ title }} • {% endif %}{{meta.siteName}}" />
-    <meta name="description" content="{% if excerpt %}{{ excerpt}}{% else %}{{ meta.siteDescription }}{% endif %}" />
-    <meta property="og:description" content="{% if excerpt %}{{ excerpt}}{% else %}{{ meta.siteDescription }}{% endif %}" />
+    <meta name="description" content="{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}" />
+    <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ fullUrl }}" />
     <meta property="og:image" content="{{ image | getPostImage }}">
@@ -52,9 +52,49 @@
       title="Cory Dransfeldt's activity feed"
       type="application/rss+xml">
       {% if schema == 'blog' %}
-        {% render "schemas/blogpost-schema.liquid", meta: meta, page: page %}
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "mainEntityOfPage": {
+              "@type": "WebPage"
+            },
+            "isPartOf": {
+              "@id": "{{ meta.url }}#website"
+            },
+            "@id": "{{ fullUrl }}",
+            "headline": "{%- if title %}{{ title }} • {% endif -%}{{ meta.siteName }}",
+            "description": "{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}",
+            "image": "{% if image %}{{ image }}{% else %}{{ meta.meta_data.opengraph_default }}{% endif %}",
+            "inLanguage": "{{ meta.locale }}",
+            "publisher": {
+              "@type": "{{ meta.siteType }}",
+              "name": "{{ meta.author }}",
+              "url": "{{ meta.url }}"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "{{ meta.author }}"
+            },
+            "datePublished": "{{ page.date | isoDateOnly }}"
+          }
+        </script>
       {% else %}
-        {% render "schemas/base-schema.liquid", meta: meta, page: page %}
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "@id": "{{ meta.url }}#website",
+                "url": "{{ meta.url }}",
+                "name": "{%- if title %}{{ title }} • {% endif -%}{{ meta.siteName }}",
+                "description": "{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}",
+                "inLanguage": "{{ meta.locale }}"
+              }
+            ]
+          }
+        </script>
       {% endif %}
     <script defer data-domain="coryd.dev" src="/js/script.js"></script>
     <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
