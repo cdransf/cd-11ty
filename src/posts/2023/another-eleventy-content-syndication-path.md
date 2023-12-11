@@ -1,7 +1,7 @@
 ---
+date: '2023-03-28'
 title: 'Another Eleventy content syndication path'
 description: 'After posting and discussing my post from yesterday with Nicolas Hoizey I decided to explore his suggested path and explore using a GitHub action to handle posts to Mastodon, rather than Make.'
-date: '2023-03-28'
 draft: false
 tags: ['Eleventy', 'Mastodon', 'JSON', 'RSS']
 ---

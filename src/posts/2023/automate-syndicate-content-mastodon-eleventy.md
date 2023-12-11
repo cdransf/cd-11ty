@@ -1,7 +1,7 @@
 ---
 date: '2023-03-27'
 title: 'Automate and syndicate content from Eleventy to Mastodon'
-description: 'I've discussed building a now page using Eleventy, but I also syndicate a subset of that content out to Mastodon using @11ty/eleventy-activity-feed and Make.'
+description: "I've discussed building a now page using Eleventy, but I also syndicate a subset of that content out to Mastodon using @11ty/eleventy-activity-feed and Make."
 draft: false
 tags: ['automation', 'Mastodon', 'Eleventy']
 ---
