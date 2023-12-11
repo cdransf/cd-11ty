@@ -1,6 +1,7 @@
 ---
 date: '2023-11-15'
 title: 'Hacking together a Tweekly.fm replacement'
+description: "I mused the other day about wanting a replacement for Tweekly.fm which shut down due to Twitter's API changes and restrictions. In my case, the aim would be to make this compatible with Mastodon since that's where I've found myself spending the most time recently."
 draft: false
 tags: ['Development', 'Eleventy', 'GitHub']
 ---

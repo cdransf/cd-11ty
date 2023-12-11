@@ -1,6 +1,7 @@
 ---
 date: '2023-05-05'
 title: 'Now page update: favorite articles from Matter'
+description: "I dropped in a quick update to my now page to display the 5 most recent articles from my favorites feed in Matter."
 draft: false
 tags: ['Matter', 'development', 'Eleventy', 'API']
 ---

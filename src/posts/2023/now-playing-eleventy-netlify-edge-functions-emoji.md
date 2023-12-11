@@ -1,6 +1,7 @@
 ---
 date: '2023-08-25'
 title: 'Displaying now playing data with matching emoji using Netlify edge functions and Eleventy'
+description: "My site is built using 11ty and is rebuilt once an hour. These frequent rebuilds accomplish a few things, notably updating webmention data and keeping my now page current."
 draft: false
 tags: ['Eleventy', 'JavaScript']
 ---
@@ -168,6 +169,6 @@ Finally, if the page this all lives on is loaded by a client without JavaScript 
 
 All of this, yields the single line at the bottom of this image — updated on each visit.
 
-{% image 'https://cdn.coryd.dev/blog/now-playing.jpg', 'Now playing', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full' %}
+{% image '<https://cdn.coryd.dev/blog/now-playing.jpg>', 'Now playing', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full' %}
 
 [^1]: Plus explicit conditions matching David Bowie and Minor Threat.
