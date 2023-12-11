@@ -1,6 +1,7 @@
 ---
-title: 2021 reading list
 date: '2021-03-21'
+title: 2021 reading list
+description: "I've been working on making reading a habit again for the past few years (my streak in books is currently 383 days)."
 draft: false
 tags: ['books']
 ---
