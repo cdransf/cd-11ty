@@ -1,7 +1,6 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const tablerIcons = require('eleventy-plugin-tabler-icons')
 const pluginUnfurl = require('eleventy-plugin-unfurl')
-const pluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier')
 const schema = require('@quasibit/eleventy-plugin-schema')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const embedYouTube = require('eleventy-plugin-youtube-embed')
@@ -33,7 +32,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight)
   eleventyConfig.addPlugin(tablerIcons)
   eleventyConfig.addPlugin(pluginUnfurl)
-  eleventyConfig.addPlugin(pluginFilesMinifier)
   eleventyConfig.addPlugin(schema)
   eleventyConfig.addPlugin(embedYouTube, {
     modestBranding: true,
@@ -119,20 +117,23 @@ module.exports = function (eleventyConfig) {
   md.use(markdownItFootnote)
   eleventyConfig.setLibrary('md', md)
 
+  // filters
   eleventyConfig.addLiquidFilter('markdown', (content) => {
     if (!content) return
     return md.render(content)
   })
-
   Object.keys(filters).forEach((filterName) => {
     eleventyConfig.addLiquidFilter(filterName, filters[filterName])
   })
   eleventyConfig.addLiquidFilter('dateToRfc822', pluginRss.dateToRfc822)
   eleventyConfig.addLiquidFilter('absoluteUrl', pluginRss.absoluteUrl)
-
   eleventyConfig.addFilter('cssmin', (code) => new CleanCSS({}).minify(code).styles)
 
+  // shortcodes
   eleventyConfig.addShortcode('image', img)
+
+  // transforms
+  eleventyConfig.addPlugin(require('./config/transforms/html-config.js'));
 
   eleventyConfig.on('eleventy.after', () => {
     execSync(`npx pagefind --site _site --glob "**/*.html"`, { encoding: 'utf-8' })

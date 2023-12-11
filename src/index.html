@@ -41,7 +41,7 @@ meta:
         </h2>
       {% endif %}
     </a>
-    <span class="p-author h-card hidden">{{ site.title }}</span>
+    <span class="p-author h-card hidden">{{ meta.siteName }}</span>
     <div class="my-2 text-sm">
       <time class="dt-published" datetime="{{ post.date }}">
         {{ post.date | date: "%m.%Y" }} {% if post.data.link %} • <a class="flex-none font-normal no-underline" href="{{ post.url }}">Permalink</a>{% endif %}

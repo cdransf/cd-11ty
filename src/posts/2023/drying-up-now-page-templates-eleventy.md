@@ -132,7 +132,7 @@ We use the [liquid.js render tag](https://liquidjs.com/tags/render.html) and pas
 ---
 layout: main
 ---
-{% render "partials/header.liquid", site: site, page: page, nav: nav %}
+{% render "partials/header.liquid", meta: meta, page: page, nav: nav %}
 {{ content }}
 {% render "partials/now/media-grid.liquid", data:artists, icon: "microphone-2", title: "Artists", shape: "square", count: 8, loading: 'eager' %}
 {% render "partials/now/media-grid.liquid", data:albums, icon: "vinyl", title: "Albums", shape: "square", count: 8, loading: 'lazy' %}

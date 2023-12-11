@@ -1,21 +1,8 @@
 ---
-layout: default
 title: Feeds
-meta:
-  site:
-    name: 'Cory Dransfeldt'
-    description: "I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, music, writing, reading and tv and movies."
-    url: https://coryd.dev
-    logo:
-      src: https://coryd.dev/assets/img/logo.webp
-      width: 2000
-      height: 2000
-  language: en-US
-  title: 'Cory Dransfeldt • Feeds'
-  description: 'Content feeds exposed by and generated from my site.'
-  url: https://coryd.dev/feeds
-  image:
-    src: https://coryd.dev/assets/img/avatar.webp
+layout: default
+permalink: /feeds.html
+description: 'Content feeds exposed by and generated from my site.'
 ---
 
 <h2

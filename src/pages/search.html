@@ -1,21 +1,7 @@
 ---
+title: /Search
 layout: default
-title: Search
-meta:
-  site:
-    name: 'Cory Dransfeldt'
-    description: "I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, music, writing, reading and tv and movies."
-    url: https://coryd.dev
-    logo:
-      src: https://coryd.dev/assets/img/logo.webp
-      width: 2000
-      height: 2000
-  language: en-US
-  title: 'Cory Dransfeldt • Search'
-  description: "Search everything I've posted on my site."
-  url: https://coryd.dev/search
-  image:
-    src: https://coryd.dev/assets/img/avatar.webp
+permalink: /search.html
 ---
 
 <link href="https://coryd.dev/pagefind/pagefind-ui.css" rel="stylesheet" />
@@ -37,12 +23,12 @@ meta:
     }
   }
 </style>
-<div id="search" class="search"></div>
+<div id="/search" class="/search"></div>
 <script
   src="https://coryd.dev/_pagefind/pagefind-ui.js"
-  onload="new PagefindUI({ element: '#search', showImages: false, processTerm: (term) => {
+  onload="new PagefindUI({ element: '#/search', showImages: false, processTerm: (term) => {
       try{
-        plausible('Search', {props: {method: 'Text', term}});
+        plausible('/Search', {props: {method: 'Text', term}});
       } catch(e){};
       return term;
     }

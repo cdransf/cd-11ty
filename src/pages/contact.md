@@ -1,21 +1,8 @@
 ---
-layout: default
 title: Contact
-meta:
-  site:
-    name: 'Cory Dransfeldt'
-    description: "I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, music, writing, reading and tv and movies."
-    url: https://coryd.dev
-    logo:
-      src: https://coryd.dev/assets/img/logo.webp
-      width: 2000
-      height: 2000
-  language: en-US
-  title: 'Cory Dransfeldt • Contact'
-  description: 'How to contact me.'
-  url: https://coryd.dev/contact
-  image:
-    src: https://coryd.dev/assets/img/avatar.webp
+layout: default
+permalink: /contact.html
+description: 'How to contact me.'
 ---
 
 <h2
@@ -30,7 +17,7 @@ meta:
     <ul>
       <li>Ping me on <a href="https://social.lol/@cory">Mastodon</a></li>
       <li>Message me on Signal or iMessage (if you have my phone number)</li>
-      <li><a href="mailto:{{ site.email }}">Email me directly</a> if you have a client set up to use <code>mailto:</code> links</li>
+      <li><a href="mailto:{{ meta.authorEmail }}">Email me directly</a> if you have a client set up to use <code>mailto:</code> links</li>
       <li>File an issue on the appropriate repo over at <a href="https://github.com/cdransf">GitHub</a></li>
     </ul>
   </div>

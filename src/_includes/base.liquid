@@ -1,5 +1,5 @@
 {%- capture fullUrl %}
-  {{ site.url }}{{ page.url }}{% endcapture -%}
+  {{ meta.url }}{{ page.url }}{% endcapture -%}
 <!doctype html>
 <html class="scrollbar-thin scrollbar-thumb-blue-600 dark:scrollbar-thumb-blue-400 scrollbar-track-blue-100" lang="en">
   <head>
@@ -7,17 +7,17 @@
       {% if title %}
         {{ title }} •
       {% endif %}
-      {{ site.title }}</title>
+      {{ meta.siteName }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="{{ fullUrl }}" />
-    <meta property="og:title" content="{% if title %}{{ title }} • {% endif %}{{site.title}}" />
-    <meta name="description" content="{% if excerpt %}{{ excerpt}}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:description" content="{% if excerpt %}{{ excerpt}}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:title" content="{% if title %}{{ title }} • {% endif %}{{meta.title}}" />
+    <meta name="description" content="{% if excerpt %}{{ excerpt}}{% else %}{{ meta.siteDescription }}{% endif %}" />
+    <meta property="og:description" content="{% if excerpt %}{{ excerpt}}{% else %}{{ meta.siteDescription }}{% endif %}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ fullUrl }}" />
     <meta property="og:image" content="{{ image | getPostImage }}">
-    <meta name="theme-color" content="#3b82f6" />
+    <meta name="theme-color" content="{{ meta.themeColor }}" />
     <meta name="generator" content="{{ eleventy.generator }}">
     <meta name="robots" content="noai, noimageai">
     <link
@@ -55,9 +55,11 @@
       href="https://feedpress.me/coryd-follow"
       title="Cory Dransfeldt's activity feed"
       type="application/rss+xml">
-    <script type="application/ld+json">
-      {% jsonLd meta, type, tags %}
-    </script>
+      {% if schema == 'blog' %}
+        {% render "schemas/blogpost-schema.liquid", meta: meta, page: page %}
+      {% else %}
+        {% render "schemas/base-schema.liquid", meta: meta, page: page %}
+      {% endif %}
     <script defer data-domain="coryd.dev" src="/js/script.js"></script>
     <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
     <noscript>

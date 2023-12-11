@@ -1,21 +1,8 @@
 ---
-layout: default
 title: Blogroll
-meta:
-  site:
-    name: 'Cory Dransfeldt'
-    description: "I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, music, writing, reading and tv and movies."
-    url: https://coryd.dev
-    logo:
-      src: https://coryd.dev/assets/img/logo.webp
-      width: 2000
-      height: 2000
-  language: en-US
-  title: 'Cory Dransfeldt • Blogroll'
-  description: 'These are awesome blogs that I enjoy and you may enjoy too.'
-  url: https://coryd.dev/blogroll
-  image:
-    src: https://coryd.dev/assets/img/avatar.webp
+layout: default
+permalink: /blogroll.html
+description: 'These are awesome blogs that I enjoy and you may enjoy too.'
 ---
 
 <h2

@@ -1,7 +1,8 @@
 ---
 layout: main
+schema: blog
 ---
-{% render "partials/header.liquid", site: site, page: page, nav: nav %}
+{% render "partials/header.liquid", meta: meta, page: page, nav: nav %}
 <article class="h-entry" data-pagefind-body>
   {% if link %}
     <a class="no-underline" href="{{ link }}">
@@ -13,7 +14,7 @@ layout: main
   {% else %}
     <h2 class="p-name text-xl md:text-2xl font-black leading-tight dark:text-gray-200 pt-8" data-pagefind-meta="title">{{ title }}</h2>
   {% endif %}
-  <span class="p-author h-card hidden">{{ site.title }}</span>
+  <span class="p-author h-card hidden">{{ meta.author }}</span>
   <time class="mt-2 mb-6 block text-sm dt-published" datetime="{{ date }}">{{ date | readableDate }}</time>
   <div class="p-summary hidden">{{ post_excerpt | markdown }}</div>
   <div class="e-content prose dark:prose-invert hover:prose-a:text-blue-800 dark:hover:prose-a:text-blue-200  max-w-full text-gray-800 dark:text-white">
@@ -22,5 +23,5 @@ layout: main
 </article>
 {% render "partials/post-tags.liquid", tags: tags %}
 {% render "partials/webmentions/container.liquid", webmentions: webmentions, page: page %}
-{% render "partials/author.liquid", site: site %}
+{% render "partials/author.liquid", meta: meta %}
 {% render "partials/popular-posts.liquid", posts: collections.posts, analytics: analytics %}

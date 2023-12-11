@@ -4,12 +4,12 @@
     {% assign entries = data | normalizeEntries -%}
     <title>{{ title }}</title>
     <description>{{ description }}</description>
-    <link>{{ permalink | absoluteUrl: site.url }}</link>
+    <link>{{ permalink | absoluteUrl: meta.url }}</link>
     <lastBuildDate>{{ updated }}</lastBuildDate>
     <image>
       <title>{{ title }}</title>
-      <link>{{ permalink | absoluteUrl: site.url }}</link>
-      <url>{{ site.url }}/assets/icons/feed-icon.png</url>
+      <link>{{ permalink | absoluteUrl: meta.url }}</link>
+      <url>{{ meta.url }}/assets/icons/feed-icon.png</url>
       <width>144</width>
       <height>144</height>
     </image>

@@ -1,26 +1,12 @@
 ---
-layout: default
 title: About
-meta:
-  site:
-    name: 'Cory Dransfeldt'
-    description: "I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, music, writing, reading and tv and movies."
-    url: https://coryd.dev
-    logo:
-      src: https://coryd.dev/assets/img/logo.webp
-      width: 2000
-      height: 2000
-  language: en-US
-  title: 'Cory Dransfeldt • About'
-  description: 'Husband, dad, developer, music nerd.'
-  url: https://coryd.dev/about
-  image:
-    src: https://coryd.dev/assets/img/avatar.webp
+layout: default
+permalink: /about.html
 ---
 
 <div class="flex items-center justify-center w-full not-prose mb-6">
   <div class="border border-blue-600 dark:border-blue-400 bg-white rounded-full overflow-hidden p-4 w-64 h-64 md:w-96 md:h-96 flex items-center [&>*]:w-full [&>*]:h-auto">
-    {% capture about_alt %}{{ site.name }} - image by David Neal / @reverentgeek{% endcapture %}
+    {% capture about_alt %}{{ meta.siteName }} - image by David Neal / @reverentgeek{% endcapture %}
     {% image './src/assets/img/avatar.webp', about_alt %}
   </div>
 </div>

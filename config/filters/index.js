@@ -1,7 +1,6 @@
 const { DateTime } = require('luxon')
 const markdownIt = require('markdown-it')
 const { URL } = require('url')
-const marked = require('marked')
 const sanitizeHTML = require('sanitize-html')
 
 const utmPattern = /[?&](utm_[^&=]+=[^&#]*)/gi
@@ -12,16 +11,9 @@ module.exports = {
   trim: (string, limit) => {
     return string.length <= limit ? string : `${string.slice(0, limit)}...`
   },
-  stripIndex: (path) => {
-    return path.replace('/index.html', '/')
-  },
-  mdToHtml: (content) => {
-    return marked.parse(content)
-  },
   btoa: (string) => {
     return btoa(string)
   },
-  dashLower: (string) => string.replace(/\s+/g, '-').toLowerCase(),
   encodeAmp: (string) => {
     if (!string) return
     const pattern = /&(?!(?:[a-zA-Z]+|#[0-9]+|#x[0-9a-fA-F]+);)/g
@@ -54,7 +46,6 @@ module.exports = {
   },
   webmentionsByUrl: (webmentions, url) => {
     const allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of']
-
     const data = {
       'like-of': [],
       'repost-of': [],
