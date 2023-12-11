@@ -7,7 +7,7 @@
         "@id": "{{ meta.url }}#website",
         "url": "{{ meta.url }}",
         "name": "{{ meta.siteName }}",
-        "description": "{{ meta.siteDescription }}",
+        "description": "{% if page.description %}{{ page.description }}{% else %}{{ meta.siteDescription }}{% endif %}",
         "inLanguage": "{{ meta.locale }}"
       }
     ]
