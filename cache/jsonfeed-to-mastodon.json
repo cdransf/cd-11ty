@@ -7826,5 +7826,16 @@
       "https://social.lol/users/cory/statuses/111553225370138533"
     ],
     "lastTootTimestamp": 1702167135218
+  },
+  "https://blakewatson.com/journal/omg-lol-an-oasis-on-the-internet/": {
+    "id": "aHR0cHM6Ly9ibGFrZXdhdHNvbi5jb20vam91cm5hbC9vbWctbG9sLWFuLW9hc2lzLW9uLXRoZS1pbnRlcm5ldC8=",
+    "title": "🔗: omg.lol: an oasis on the internet",
+    "url": "https://blakewatson.com/journal/omg-lol-an-oasis-on-the-internet/",
+    "content_text": "🔗: omg.lol: an oasis on the internet #Tech https://blakewatson.com/journal/omg-lol-an-oasis-on-the-internet/",
+    "date_published": "Mon, 11 Dec 2023 02:38:46 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111560270064869221"
+    ],
+    "lastTootTimestamp": 1702274628752
   }
 }
