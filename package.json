@@ -59,7 +59,7 @@
     "outdent": "^0.8.0",
     "pagefind": "^1.0.4",
     "postcss": "^8.4.32",
-    "prettier": "^3.1.0",
+    "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.9",
     "sanitize-html": "^2.11.0",
     "striptags": "^3.2.0",
