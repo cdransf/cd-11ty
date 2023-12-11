@@ -1,5 +1,6 @@
 ---
 title: Tags
+description: "Filter and find posts on my site by tag."
 layout: default
 permalink: /tags.html
 ---
