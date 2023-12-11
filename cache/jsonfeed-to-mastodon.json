@@ -7848,5 +7848,16 @@
       "https://social.lol/users/cory/statuses/111562627582735018"
     ],
     "lastTootTimestamp": 1702310601611
+  },
+  "https://app.thestorygraph.com/books/b107665f-edb2-4d4f-842a-e4cbd764e90f": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvYjEwNzY2NWYtZWRiMi00ZDRmLTg0MmEtZTRjYmQ3NjRlOTBm",
+    "title": "📖: A Fever in the Heartland: The Ku Klux Klan's Plot to Take Over America, and the Woman Who Stopped Them",
+    "url": "https://app.thestorygraph.com/books/b107665f-edb2-4d4f-842a-e4cbd764e90f",
+    "content_text": "📖: A Fever in the Heartland: The Ku Klux Klan's Plot to Take Over America, and the Woman Who Stopped Them #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/b107665f-edb2-4d4f-842a-e4cbd764e90f",
+    "date_published": "Sun, 10 Dec 2023 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111563571106360353"
+    ],
+    "lastTootTimestamp": 1702324998666
   }
 }
