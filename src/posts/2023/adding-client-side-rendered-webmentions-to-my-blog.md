@@ -1,7 +1,7 @@
 ---
 date: '2023-02-09'
 title: 'Adding client-side rendered webmentions to my blog'
-description: 'My blog is currently hosted on weblog.lol which allows for a simple and configurable weblog managed in git with posts formatted in markdown.'
+description: "My blog is currently hosted on weblog.lol which allows for a simple and configurable weblog managed in git with posts formatted in markdown."
 draft: false
 tags: ['webmentions', 'development', 'JavaScript', 'API']
 ---

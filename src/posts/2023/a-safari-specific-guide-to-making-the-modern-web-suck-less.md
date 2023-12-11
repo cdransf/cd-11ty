@@ -1,7 +1,7 @@
 ---
 date: '2023-05-01'
 title: 'A Safari-specific guide to making the modern web suck less'
-description: 'Take a second, turn off all of your browser extensions, go to a popular website that comes to mind and take a look at how bad the default experience is. Bonus points — pull up the dev tools, go to the network tab, filter for JavaScript and see how many analytics suites load.'
+description: "Take a second, turn off all of your browser extensions, go to a popular website that comes to mind and take a look at how bad the default experience is. Bonus points — pull up the dev tools, go to the network tab, filter for JavaScript and see how many analytics suites load."
 draft: false
 tags: ['iOS', 'macOS', 'Apple', 'privacy', 'tech']
 ---
