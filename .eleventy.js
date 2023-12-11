@@ -133,7 +133,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode('image', img)
 
   // transforms
-  eleventyConfig.addPlugin(require('./config/transforms/html-config.js'));
+  eleventyConfig.addPlugin(require('./config/transforms/html-config.js'))
 
   eleventyConfig.on('eleventy.after', () => {
     execSync(`npx pagefind --site _site --glob "**/*.html"`, { encoding: 'utf-8' })
