@@ -27,7 +27,7 @@ permalink: /search.html
 <div id="/search" class="/search"></div>
 <script
   src="https://coryd.dev/_pagefind/pagefind-ui.js"
-  onload="new PagefindUI({ element: '#/search', showImages: false, processTerm: (term) => {
+  onload="new PagefindUI({ element: '#search', showImages: false, processTerm: (term) => {
       try{
         plausible('/Search', {props: {method: 'Text', term}});
       } catch(e){};
