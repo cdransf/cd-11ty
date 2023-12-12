@@ -34,7 +34,7 @@ By following Federico's steps we can obtain a bearer token to access the API whi
 
 ```liquid
 {% if articles %}
-    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4">
+    <h2 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-white md:text-2xl mt-6 mb-4">
       Reading: favorite articles
     </h2>
     <div>

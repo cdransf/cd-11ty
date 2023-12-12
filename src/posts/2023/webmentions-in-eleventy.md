@@ -71,7 +71,7 @@ When the build runs, it renders any mentions of a given post via a [liquid.js](h
     %}
     {% assign mentions = webmentions.mentions | webmentionsByUrl: page.url %}
     {% if mentions['repost-of'].size > 0 %}
-    <h2 class="text-lg md:text-xl font-black leading-tight dark:text-gray-200">Reposts</h2>
+    <h2 class="text-lg md:text-xl font-black leading-tight dark:text-white">Reposts</h2>
     <div class="flex flex-row items-center mt-4 mb-6">
         <ul class="ml-3 flex flex-row">
         {% for mention in mentions['repost-of'] %}
@@ -90,7 +90,7 @@ When the build runs, it renders any mentions of a given post via a [liquid.js](h
     </div>
     {% endif %}
     {% if mentions['like-of'].size > 0 %}
-    <h2 class="text-lg md:text-xl font-black leading-tight dark:text-gray-200">Likes</h2>
+    <h2 class="text-lg md:text-xl font-black leading-tight dark:text-white">Likes</h2>
     <div class="flex flex-row items-center mt-4 mb-6">
         <ul class="ml-3 flex flex-row">
         {% for mention in mentions['like-of'] %}
@@ -109,7 +109,7 @@ When the build runs, it renders any mentions of a given post via a [liquid.js](h
     </div>
     {% endif %}
     {% if mentions['in-reply-to'].size > 0 %}
-    <h2 class="text-lg md:text-xl font-black leading-tight dark:text-gray-200">Comments</h2>
+    <h2 class="text-lg md:text-xl font-black leading-tight dark:text-white">Comments</h2>
     <div class="mt-4 flex flex-col items-center not-prose">
         {% for mention in mentions['in-reply-to'] %}
         <div class="border-bottom flex flex-row items-center border-gray-100 pb-4 w-full">

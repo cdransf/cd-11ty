@@ -1,5 +1,5 @@
 {% if mentions['in-reply-to'].size > 0 %}
-  <h2 class="text-lg md:text-xl font-black leading-tight dark:text-gray-200">Comments</h2>
+  <h2 class="text-lg md:text-xl font-black leading-tight dark:text-white">Comments</h2>
   <div class="mt-4 mb-4 flex flex-col items-center not-prose">
     {% for mention in mentions['in-reply-to'] %}
       <div class="border-bottom flex flex-row items-center border-gray-100 pb-4 w-full">
@@ -10,7 +10,7 @@
             </div>
           </a>
           <div class="ml-3">
-            <a class="text-gray-700 dark:text-gray-200" href={{mention.url}}>
+            <a class="text-gray-700 dark:text-white" href={{mention.url}}>
               <p class="text-sm group-hover:text-blue-800 dark:group-hover:text-blue-200">{{ mention.content.text }}</p>
               <p class="mt-1 text-xs group-hover:text-blue-800 dark:group-hover:text-blue-200">{{ mention.published | isoDateOnly }}</p>
             </a>

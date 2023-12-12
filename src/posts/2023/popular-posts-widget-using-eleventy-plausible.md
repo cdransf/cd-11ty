@@ -53,7 +53,7 @@ And rendered using a liquid template:
 ```liquid
 {% assign posts = posts | getPopularPosts: analytics %}
 <div class="not-prose">
-  <h2 class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:inline icon--bold m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4">
+  <h2 class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:inline icon--bold m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-white md:text-2xl mt-8 mb-4">
     {% tablericon "fire" "Popular" %}
     Popular posts
   </h2>

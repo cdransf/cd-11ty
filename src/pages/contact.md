@@ -6,7 +6,7 @@ description: 'How to contact me.'
 ---
 
 <h2
-  class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mb-2"
+  class="m-0 text-xl font-black leading-tight tracking-normal dark:text-white md:text-2xl mb-2"
 >
   {{ title }}
 </h2>

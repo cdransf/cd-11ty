@@ -48,7 +48,7 @@ The **Listening: albums** call is quite similar, swapping the `user.gettopartist
 ```liquid
 {% if artists %}
     <h2
-        class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4"
+        class="m-0 text-xl font-black leading-tight tracking-normal dark:text-white md:text-2xl mt-8 mb-4"
     >
         Listening: artists
     </h2>
@@ -98,7 +98,7 @@ These images are all cropped to `350x350` and hosted over on <a href="https://bu
 ```liquid
 {% if albums %}
     <h2
-        class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-8 mb-4"
+        class="m-0 text-xl font-black leading-tight tracking-normal dark:text-white md:text-2xl mt-8 mb-4"
     >
         Listening: albums
     </h2>
@@ -167,7 +167,7 @@ Rather than dealing with an API that returns JSON, I'm transforming the RSS feed
 ```liquid
 {% if books %}
     <h2
-        class="m-0 text-xl font-black leading-tight tracking-normal dark:text-gray-200 md:text-2xl mt-6 mb-4"
+        class="m-0 text-xl font-black leading-tight tracking-normal dark:text-white md:text-2xl mt-6 mb-4"
     >
         Reading
     </h2>

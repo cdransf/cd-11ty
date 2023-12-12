@@ -10,7 +10,7 @@ permalink: /about.html
     {% image './src/assets/img/avatar.webp', about_alt %}
   </div>
 </div>
-<h1 class="text-xxl font-black -leading-tight tracking-normal dark:text-gray-200 md:text-3xl text-center">Hi, I'm Cory</h1>
+<h1 class="text-xxl font-black -leading-tight tracking-normal dark:text-white md:text-3xl text-center">Hi, I'm Cory</h1>
 
 I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, [music](https://last.fm/user/coryd_), writing, [reading](https://app.thestorygraph.com/profile/coryd), [tv](https://trakt.tv/users/cdransf) and [movies](https://trakt.tv/users/cdransf).
 
