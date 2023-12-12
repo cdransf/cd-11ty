@@ -7859,5 +7859,16 @@
       "https://social.lol/users/cory/statuses/111563571106360353"
     ],
     "lastTootTimestamp": 1702324998666
+  },
+  "https://www.ursulakleguin.com/a-rant-about-technology": {
+    "id": "aHR0cHM6Ly93d3cudXJzdWxha2xlZ3Vpbi5jb20vYS1yYW50LWFib3V0LXRlY2hub2xvZ3k=",
+    "title": "🔗: A Rant About “Technology”",
+    "url": "https://www.ursulakleguin.com/a-rant-about-technology",
+    "content_text": "🔗: A Rant About “Technology” #Tech https://www.ursulakleguin.com/a-rant-about-technology",
+    "date_published": "Tue, 12 Dec 2023 00:31:16 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111565458129770968"
+    ],
+    "lastTootTimestamp": 1702353792320
   }
 }
