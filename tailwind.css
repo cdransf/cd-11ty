@@ -221,7 +221,7 @@ pre {
   }
 
   .pill--button {
-    color: theme(colors.gray.900);
+    color: theme(colors.white);
     background: theme(colors.blue.400);
   }
 
