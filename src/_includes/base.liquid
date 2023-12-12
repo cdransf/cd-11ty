@@ -63,7 +63,8 @@
               "@id": "{{ meta.url }}#website"
             },
             "@id": "{{ fullUrl }}",
-            "headline": "{%- if title %}{{ title }}{% else %}{{ meta.siteName }}{% endif -%}",
+            "headline":             "headline": "{%- if title %}{{ title }} • {% endif -%}{{ meta.siteName }}",
+,
             "description": "{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}",
             "image": "{% if image %}{{ image }}{% else %}{{ meta.meta_data.opengraph_default }}{% endif %}",
             "inLanguage": "{{ meta.locale }}",
