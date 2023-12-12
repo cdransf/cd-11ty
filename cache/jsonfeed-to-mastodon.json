@@ -7870,5 +7870,16 @@
       "https://social.lol/users/cory/statuses/111565458129770968"
     ],
     "lastTootTimestamp": 1702353792320
+  },
+  "https://trakt.tv/movies/star-trek-iii-the-search-for-spock-1984": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvc3Rhci10cmVrLWlpaS10aGUtc2VhcmNoLWZvci1zcG9jay0xOTg0",
+    "title": "🎥: Star Trek III: The Search for Spock",
+    "url": "https://trakt.tv/movies/star-trek-iii-the-search-for-spock-1984",
+    "content_text": "🎥: Star Trek III: The Search for Spock #Movies #Watching #Trakt https://trakt.tv/movies/star-trek-iii-the-search-for-spock-1984",
+    "date_published": "Tue, 12 Dec 2023 14:16:11 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111568289131148837"
+    ],
+    "lastTootTimestamp": 1702396990209
   }
 }
