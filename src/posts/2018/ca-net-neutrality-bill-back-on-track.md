@@ -1,7 +1,8 @@
 ---
 date: '2018-08-10'
+title: 'CA net neutrality bill back on track'
+description: "The bill enshrines not only the fundamentals of net neutrality, such as prohibiting ISPs from throttling or blocking sites, but also prohibits other telecom trickery, such as zero rating—a practice where companies provide access to certain parts of the internet for 'free' and charge for others."
 draft: false
-title: CA net neutrality bill back on track
 tags: ['politics', 'net neutrality']
 ---
 

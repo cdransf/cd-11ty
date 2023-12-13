@@ -1,7 +1,8 @@
 ---
 date: '2018-01-06'
+title: 'Blocking spam calls from similar numbers on iOS'
+description: "I've been seeing more incoming spam calls from numbers similar to mine recently. They're annoying in large part because traditional iOS call blockers like Hiya, Nomorobo and so forth don't screen them out (these apps apparently due this to err on the side of caution and avoid blocking what they see as legitimate local calls)"
 draft: false
-title: Blocking spam calls from similar numbers on iOS
 tags: ['security']
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: '2018-09-15'
+title: 'U.S. cell carriers want to help manager your identity online'
+description: 'But do you want your carrier managing your logins across the websites and apps you use on your phone?'
 draft: false
-title: U.S. cell carriers want to help manager your identity online
 tags: ['privacy']
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: '2018-01-03'
+title: 'Fort Collins votes in favor of municipal broadband'
+description: "While the Federal Communications Commission has voted to eliminate the nation's net neutrality rules, the municipal broadband network will be neutral and without data caps."
 draft: false
-title: Fort Collins votes in favor of municipal broadband
 tags: ['politics', 'net neutrality']
 ---
 

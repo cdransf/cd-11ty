@@ -1,7 +1,8 @@
 ---
 date: '2018-07-25'
+title: 'FBI once again compares creating encryption back doors to putting a man on the moon'
+description: "We're a country that has unbelievable innovation. We put a man on the moon. We have the power of flight. We have autonomous vehicles… [T]he idea that we can't solve this problem as a society -- I just don't buy it."
 draft: false
-title: FBI once again compares creating encryption back doors to putting a man on the moon
 tags: ['politics', 'privacy']
 ---
 

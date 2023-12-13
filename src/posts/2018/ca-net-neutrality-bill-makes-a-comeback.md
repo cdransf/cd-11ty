@@ -1,7 +1,8 @@
 ---
 date: '2018-07-08'
+title: 'CA net neutrality bill makes a comeback'
+description: "After compromise, nation's toughest net neutrality bill back on track."
 draft: false
-title: CA net neutrality bill makes a comeback
 tags: ['politics', 'net neutrality']
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: '2018-08-13'
+title: 'Google tracks user location — even after they opt out'
+description: "This isn't at all surprising. Google's business consists of monetizing data provided to it by its users — if you're not comfortable with that, the only real fix is to stop using Google's services altogether."
 draft: false
-title: Google tracks user location — even after they opt out
 tags: ['privacy']
 ---
 

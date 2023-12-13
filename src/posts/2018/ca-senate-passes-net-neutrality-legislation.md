@@ -1,7 +1,8 @@
 ---
 date: '2018-01-30'
+title: 'California state senate passes net neutrality legislation'
+description: "This is a positive first step and one that will, hopefully, be taken up and passed through the state house before being signed into law. It'll be interesting to see how this plays out with the FCC's language preemption language includes in their original order."
 draft: false
-title: California state senate passes net neutrality legislation
 tags: ['politics', 'net neutrality']
 ---
 

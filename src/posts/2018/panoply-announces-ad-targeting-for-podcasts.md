@@ -1,7 +1,8 @@
 ---
 date: '2018-08-02'
+title: 'Panoply announces ad targeting for podcasts'
+description: "The last thing we need is the ad industry co-opting podcasts to enable more invasive tracking. No, thanks."
 draft: false
-title: Panoply announces ad targeting for podcasts
 tags: ['privacy']
 ---
 

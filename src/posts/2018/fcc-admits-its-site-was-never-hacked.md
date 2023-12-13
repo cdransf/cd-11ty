@@ -1,7 +1,8 @@
 ---
 date: '2018-08-07'
+title: 'FCC admits its site was never hacked'
+description: "No one seriously believed the FCC's hackers-ate-my-homework excuse, especially after the FCC refused to cooperate with law-enforcement agencies who wanted to investigate the supposed attack and stonewalling Congress on the details."
 draft: false
-title: FCC admits its site was never hacked
 tags: ['politics', 'net neutrality']
 ---
 

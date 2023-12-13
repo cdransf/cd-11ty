@@ -1,7 +1,8 @@
 ---
 date: '2018-09-05'
+title: 'FCC chairman boosts telecom companies, throws Silicon Valley under the bus'
+description: "There's absolutely a legitimate conversation to be had here in terms of what to do about privacy and speech in the Facebook and Twitter era. And that may or may not involve crafting new regulations. But it might be nice if people wised up to the fact that a huge swath of the conversation is being dictated not by parties acting in good faith with a genuine eye on valid solutions, but by telecom monopolies eager to pee in the discourse pool simply to fatten their wallets."
 draft: false
-title: FCC chairman boosts telecom companies, throws Silicon Valley under the bus
 tags: ['politics', 'net neutrality']
 ---
 

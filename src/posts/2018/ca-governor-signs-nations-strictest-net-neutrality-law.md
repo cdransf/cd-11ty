@@ -1,7 +1,8 @@
 ---
 date: '2018-09-30'
+title: "CA governor signs nation's strictest net neutrality law"
+description: 'The Justice Department immediately challenged the law, saying only the federal government can regulate broadband providers.'
 draft: false
-title: CA governor signs nation's strictest net neutrality law
 tags: ['politics', 'net neutrality']
 ---
 

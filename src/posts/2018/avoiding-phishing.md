@@ -1,7 +1,8 @@
 ---
 date: '2018-01-06'
+title: 'Avoiding phishing'
+description: "Someone just tried to phish me, and it made me want to put together a little guide to help you catch this stuff before it ruins your day."
 draft: false
-title: Avoiding phishing
 tags: ['security']
 ---
 

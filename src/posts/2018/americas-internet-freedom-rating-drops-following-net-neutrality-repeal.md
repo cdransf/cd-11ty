@@ -1,7 +1,7 @@
 ---
 date: '2018-11-05'
 title: "America's internet freedom rating drops following net neutrality repeal"
-description: '"Losing net neutrality impacts internet freedom because the open web is one of most powerful tools we have to hold leaders to account," [Josh] Tabish said. "Whether you're challenging tyranny or just saying something unpopular politically, net neutrality is essential for maintaining free speech online."'
+description: "Freedom House, a US think tank, analyzes internet freedom around the world every year, and this year's report saw a drop in the US's rating."
 draft: false
 tags: ['politics', 'net neutrality']
 ---

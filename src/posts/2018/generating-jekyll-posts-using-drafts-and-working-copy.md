@@ -1,7 +1,8 @@
 ---
 date: '2018-04-22'
+title: 'Generating Jekyll posts using Drafts and Working Copy'
+description: "I put together a script that will take a draft, grab the title and body and then prompt you for front matter data before sending the completed post off to Working Copy. It's specific to my site, and purposes, but it should be fairly straightforward and easy to adapt to your needs."
 draft: false
-title: Generating Jekyll posts using Drafts and Working Copy
 tags: ['iOS', 'JavaScript', 'automation']
 ---
 

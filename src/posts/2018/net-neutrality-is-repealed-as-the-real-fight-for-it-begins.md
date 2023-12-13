@@ -1,7 +1,8 @@
 ---
 date: '2018-06-11'
+title: 'Net neutrality is repealed as the real fight for it begins'
+description: "So while many are understandably frustrated today, the elimination of the FCC's 2015 rules shouldn't be seen the end of net neutrality, or the end of the road. It's more like another chapter in a story that has neither a beginning nor an end."
 draft: false
-title: Net neutrality is repealed as the real fight for it begins
 tags: ['politics', 'net neutrality']
 ---
 

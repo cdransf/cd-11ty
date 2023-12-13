@@ -1,7 +1,8 @@
 ---
 date: '2018-10-09'
-draft: false
 title: "Facebook isn't sorry — it only wants more data"
+description: "We've already given it so much, why stop now? No one else is going to delete Facebook, so why should I? Facebook understands this — the data tells them so. It also tells them that slickly produced videos and contrite congressional testimony are small ways to ameliorate lingering public concern."
+draft: false
 tags: ['social media', 'privacy']
 ---
 

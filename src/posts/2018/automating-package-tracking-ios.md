@@ -1,7 +1,8 @@
 ---
 date: '2018-01-09'
+title: 'Automating package tracking on iOS'
+description: 'I try to do as much shopping as I can online and a lot of the shopping I end up doing is through Amazon. This means I end up with quite a few order and shipping confirmation emails in my inbox.'
 draft: false
-title: Automating package tracking on iOS
 tags: ['automation', 'iOS']
 ---
 
