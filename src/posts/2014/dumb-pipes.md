@@ -1,7 +1,8 @@
 ---
 date: '2014-02-25'
+title: 'Dumb pipes'
+description: "I can't help but agree with everything Ben Bajarin has to say in this post. Carriers and broadband providers acting as 'dumb pipes' is the best outcome for consumers and I can't help but cheer every time a provider gets a step closer to that role."
 draft: false
-title: Dumb pipes
 tags: ['politics', 'net neutrality']
 ---
 

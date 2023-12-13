@@ -1,7 +1,8 @@
 ---
 date: '2014-05-19'
+title: 'Ben Thompson on net neutrality'
+description: "This is a fantastic piece on net neutrality by Ben Thompson. This is a balanced, realistic look at net neutrality and the issues surrounding it."
 draft: false
-title: Ben Thompson on net neutrality
 tags: ['net neutrality']
 ---
 

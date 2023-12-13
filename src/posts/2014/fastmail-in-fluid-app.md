@@ -1,7 +1,8 @@
 ---
 date: '2014-09-08'
+title: 'Fastmail in Fluid.app'
+description: "I've spent the last few months bouncing around OSX mail clients. I went from Mail.app to Airmail, to a Mailmate trial, back to Airmail and then back to Mail.app. Now, however, I've finally settled on a mail client: Fastmail's web interface in a Fluid instance."
 draft: false
-title: Fastmail in Fluid.app
 tags: ['Email', 'Fastmail']
 ---
 

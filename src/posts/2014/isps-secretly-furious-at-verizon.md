@@ -1,7 +1,8 @@
 ---
 date: '2014-10-03'
+title: 'ISPs secretly furious at Verizon'
+description: "That's good news if I've ever heard it (though I suppose I shouldn't be overly optimistic). Anything that upsets ISPs and, ultimately, leads to stronger net neutrality rules is a win for consumers."
 draft: false
-title: ISPs secretly furious at Verizon
 tags: ['net neutrality', 'politics']
 ---
 

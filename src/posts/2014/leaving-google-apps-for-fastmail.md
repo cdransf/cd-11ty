@@ -1,7 +1,8 @@
 ---
-title: Leaving Google Apps for Fastmail
 date: '2014-01-18'
 draft: false
+title: 'Leaving Google Apps for Fastmail'
+description: "I recently began a process of re-evaluating the web services I use, the companies that provide them and an evaluation of where I store important data. I had used Google services extensively with Gmail handling my email, my contacts synced through Google contacts, calendars in Google calendar and documents in a Google Drive (I had used Google Reader extensively but switched to a Fever installation following Reader's demise)."
 tags: ['Email', 'Fastmail', 'Google']
 ---
 

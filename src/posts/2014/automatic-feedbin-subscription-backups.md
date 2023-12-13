@@ -1,7 +1,8 @@
 ---
 date: '2014-02-27'
+title: 'Automatic Feedbin subscription backups'
+description: "A few weeks ago I switched from Fever to Feedbin. I had been using Fever on a shared hosting account and, over the long term, was proving to be slower than I had expected it to be."
 draft: false
-title: Automatic Feedbin subscription backups
 tags: ['automation']
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: '2014-08-06'
 draft: false
-title: Sublime Text 3 - ctrl + tab key bindings
+title: 'Sublime Text 3 - ctrl + tab key bindings'
+description: "I use Sublime Text as my primary text editor but have never liked the default tab behavior where ctrl + tab takes you to the most recently used tab rather than the next horizontal tab in the tab bar (ctrl + shift + tab does the reverse)."
 tags: ['Sublime Text']
 ---
 
