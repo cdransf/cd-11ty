@@ -1,7 +1,8 @@
 ---
 date: '2018-11-13'
+title: 'AT&T CEO criticizes disparate state net neutrality regulations after helping to dismantle unified, national rules'
+description: '"We've got a mess coming at us, literally states independently going out and designing their own privacy regulation," [Randall] Stephenson said. "How do you do business in a world where you have 50 different regulations and rules around privacy?"'
 draft: false
-title: AT&T CEO criticizes disparate state net neutrality regulations after helping to dismantle unified, national rules
 tags: ['politics', 'net neutrality']
 ---
 

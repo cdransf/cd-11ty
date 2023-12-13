@@ -1,7 +1,8 @@
 ---
 date: '2018-06-25'
+title: 'AT&T buying web-based ad targeting company'
+description: "AT&T controlling your internet connection, the media you use it to consume and the means to target ads at you based on those habits is truly a nightmare."
 draft: false
-title: AT&T buying web-based ad targeting company
 tags: ['net neutrality', 'privacy']
 ---
 
