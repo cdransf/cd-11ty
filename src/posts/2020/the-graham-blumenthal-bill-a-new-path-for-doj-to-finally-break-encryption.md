@@ -2,6 +2,7 @@
 date: '2020-03-04'
 draft: false
 title: 'The Graham-Blumenthal Bill: A New Path for DOJ to Finally Break Encryption'
+description: "Members of Congress are about to introduce a bill that will undermine the law that undergirds free speech on the Internet. If passed, the bill known as the Eliminating Abusive and Rampant Neglect of Interactive Technologies (EARN IT) Act, will fulfill a long-standing dream of U.S. law enforcement."
 tags: ['politics', 'security']
 ---
 
