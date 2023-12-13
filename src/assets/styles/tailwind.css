@@ -1960,7 +1960,7 @@ html {
 
 .active,
 .active svg {
-  color: #2563eb;
+  color: #2563eb !important;
 }
 
 .header-anchor {
