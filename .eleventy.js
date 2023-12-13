@@ -10,6 +10,8 @@ const markdownItAnchor = require('markdown-it-anchor')
 const markdownItFootnote = require('markdown-it-footnote')
 
 const filters = require('./config/filters/index.js')
+const { slugifyString } = require('./config/utils')
+const { svgToJpeg } = require('./config/events/index.js')
 
 const CleanCSS = require('clean-css')
 const { execSync } = require('child_process')
@@ -128,10 +130,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLiquidFilter('dateToRfc822', pluginRss.dateToRfc822)
   eleventyConfig.addLiquidFilter('absoluteUrl', pluginRss.absoluteUrl)
   eleventyConfig.addFilter('cssmin', (code) => new CleanCSS({}).minify(code).styles)
+  eleventyConfig.addFilter('slugify', slugifyString)
 
   // shortcodes
   eleventyConfig.addShortcode('image', img)
 
+  // events
+  eleventyConfig.on('afterBuild', svgToJpeg)
   eleventyConfig.on('eleventy.after', () => {
     execSync(`npx pagefind --site _site --glob "**/*.html"`, { encoding: 'utf-8' })
   })

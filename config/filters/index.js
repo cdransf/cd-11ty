@@ -20,6 +20,17 @@ module.exports = {
     const replacement = '&amp;'
     return string.replace(pattern, replacement)
   },
+  splitlines: (input, maxCharLength) => {
+    const parts = input.split(' ')
+    const lines = parts.reduce(function (acc, cur) {
+      if (!acc.length) return [cur]
+      let lastOne = acc[acc.length - 1]
+      if (lastOne.length + cur.length > maxCharLength) return [...acc, cur]
+      acc[acc.length - 1] = lastOne + ' ' + cur
+      return acc
+    }, [])
+    return lines
+  },
   stripUtm: (string) => {
     if (!string) return
     return string.replace(utmPattern, '')
@@ -99,9 +110,15 @@ module.exports = {
   readableDate: (date) => {
     return DateTime.fromISO(date).toFormat('LLLL d, yyyy')
   },
+  dateToReadableDate: (date) => {
+    return new Date(date)
+      .toLocaleString('en-US', {
+        timeZone: 'America/Los_Angeles',
+      })
+      .split(',')[0]
+  },
   toDateTime: (date) => {
     const formatted = DateTime.fromISO(date)
-
     const trail = (number) => {
       return parseInt(number, 10) < 10 ? `0${number}` : number
     }

@@ -1,0 +1,65 @@
+---
+pagination:
+  data: collections.posts
+  size: 1
+  alias: preview
+permalink: '/assets/img/social-preview/{{ preview.data.title | slugify }}-preview.svg'
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1200" height="628" viewBox="0 0 1200 628" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  {% assign titleInLines = preview.data.title | splitlines: 36 %}
+    {% assign numberOfLines = titleInLines.length %}
+  {% if numberOfLines == 2 %}
+    {% assign verticalStartingPoint = 250 %}
+  {% elsif numberOfLines == 3 %}
+    {% assign verticalStartingPoint = 210 %}
+  {% elsif numberOfLines == 4 %}
+    {% assign verticalStartingPoint = 170 %}
+  {% elsif numberOfLines == 5 %}
+    {% assign verticalStartingPoint = 130 %}
+  {% else %}
+    {% assign verticalStartingPoint = 290 %}
+  {% endif %}
+
+  <svg id="visual" viewBox="0 0 1200 628" width="1200" height="628" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="1200" height="628" fill="#111827"></rect><path d="M0 525L28.5 508C57 491 114 457 171.2 460.2C228.3 463.3 285.7 503.7 342.8 507.8C400 512 457 480 514.2 469.3C571.3 458.7 628.7 469.3 685.8 462C743 454.7 800 429.3 857.2 422.7C914.3 416 971.7 428 1028.8 439C1086 450 1143 460 1171.5 465L1200 470L1200 629L1171.5 629C1143 629 1086 629 1028.8 629C971.7 629 914.3 629 857.2 629C800 629 743 629 685.8 629C628.7 629 571.3 629 514.2 629C457 629 400 629 342.8 629C285.7 629 228.3 629 171.2 629C114 629 57 629 28.5 629L0 629Z" fill="#3b82f6" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+
+  <!-- date -->
+  <text
+    font-family="silka, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif"
+    font-size="24"
+    font-weight="bold"
+    fill="#fff"
+  >
+    <tspan x="160" y="{{ verticalStartingPoint | minus: 120 }}">
+      {{ preview.date | dateToReadableDate}}
+    </tspan>
+  </text>
+
+  <!-- title -->
+  <text
+    id="text"
+    font-family="silka, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif"
+    font-size="40"
+    font-weight="900"
+    fill="#fff"
+  >
+    {% for line in titleInLines %}
+    {% capture spacing %}{{ forloop.index0 | times: 50 }}{% endcapture %}
+    <tspan x="160" y="{{ verticalStartingPoint | minus: 20 | plus: spacing }}">
+      {{ line }}
+    </tspan>
+    {% endfor %}
+  </text>
+
+  <!-- sitename -->
+  <text
+  font-family="silka, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif"
+    font-size="24"
+    font-weight="bold"
+    fill="#fff"
+  >
+    <tspan x="160" y="600">{{ meta.siteName }} • {{ meta.url | replace: "https://", "" | replace: "http://", "" }}</tspan>
+  </text>
+</svg>

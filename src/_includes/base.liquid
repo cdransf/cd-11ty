@@ -12,6 +12,12 @@
     <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ fullUrl }}" />
+    <meta
+      property="og:image"
+      content="{%- if schema == 'blog' %}{{ meta.url }}/assets/img/social-preview/{{
+        title | slugify
+      }}-preview.jpeg{%- else -%}{{ meta.meta_data.opengraph_default }}{% endif -%}"
+    />
     <meta property="og:image" content="{{ image | getPostImage }}">
     <meta name="theme-color" content="{{ meta.themeColor }}" />
     <meta name="generator" content="{{ eleventy.generator }}">
