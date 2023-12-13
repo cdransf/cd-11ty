@@ -158,6 +158,22 @@ pre {
   @apply inline;
 }
 
+.pagefind-ui__search-input {
+  @apply !w-full;
+  @apply !outline-none;
+  @apply !bg-white;
+  @apply !rounded-sm;
+  @apply !border;
+  @apply !border-blue-600;
+  @apply !transition-colors;
+  @apply !ease-in-out;
+  @apply !duration-300;
+}
+
+.pagefind-ui__search-input:focus {
+  @apply !border-blue-800;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     --pagefind-ui-primary: theme(colors.blue.400);
@@ -229,5 +245,14 @@ pre {
   .pill--button:active,
   .pill--button:focus {
     background: theme(colors.blue.200);
+  }
+
+  .pagefind-ui__search-input {
+    @apply !border-blue-400;
+    @apply !bg-gray-900
+  }
+
+  .pagefind-ui__search-input:focus {
+    @apply !border-blue-200
   }
 }
