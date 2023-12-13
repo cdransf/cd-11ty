@@ -1,7 +1,8 @@
 ---
 date: '2013-08-27'
+title: 'Damien Jurado - 2014'
+description: "Damien Jurado has been one of my favorite musicians for years. He's a talented, albeit nervous, performer and a gifted songwriter."
 draft: false
-title: Damien Jurado - 2014
 tags: ['music']
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: '2013-07-24'
+title: 'Who the Fraggle designed this?'
+description: "Sufjan Stevens' thoughts on Savages' use of typography."
 draft: false
-title: Who the Fraggle designed this?
 tags: ['music']
 ---
 

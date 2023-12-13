@@ -1,7 +1,8 @@
 ---
 date: '2013-07-30'
+title: "Blitzen Trapper - 'Ever Loved Once'"
+description: "I'm not quite sure what to make of this new track. It's a mellow, well-written song that's consistent with Blitzen Trapper's past material, but it doesn't quite make the connection that their previous hits did."
 draft: false
-title: Blitzen Trapper - 'Ever Loved Once'
 tags: ['music']
 ---
 

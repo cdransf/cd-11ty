@@ -1,7 +1,8 @@
 ---
 date: '2013-08-14'
+title: 'Okkervil River - Lido Pier Suicide Car'
+description: "This is proving to be one of my most anticipated albums (and shows) of the year."
 draft: false
-title: Okkervil River - Lido Pier Suicide Car
 tags: ['music']
 ---
 

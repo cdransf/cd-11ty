@@ -1,7 +1,8 @@
 ---
 date: '2013-07-16'
+title: "New Arcade Fire Album Is 'Epic,' James Murphy Says"
+description: "It took me longer than it should have to get in to Arcade Fire, but I have been absolutely hooked of late."
 draft: false
-title: New Arcade Fire Album Is 'Epic,' James Murphy Says
 tags: ['music']
 ---
 

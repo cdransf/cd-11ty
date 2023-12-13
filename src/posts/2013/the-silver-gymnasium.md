@@ -1,7 +1,8 @@
 ---
 date: '2013-08-21'
+title: 'The Silver Gymnasium'
+description: "This is an extremely creative and well-executed move by Okkervil River to promote their new album, The Silver Gymnasium."
 draft: false
-title: The Silver Gymnasium
 tags: ['video', 'music']
 ---
 

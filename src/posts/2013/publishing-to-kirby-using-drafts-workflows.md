@@ -1,7 +1,8 @@
 ---
 date: '2013-08-20'
+title: 'Publishing to Kirby using Drafts workflows'
+description: "I have recently begun publishing content to my Kirby powered site using workflows from the endlessly-customizable Drafts."
 draft: false
-title: Publishing to Kirby using Drafts workflows
 tags: ['iOS']
 ---
 

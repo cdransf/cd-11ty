@@ -1,7 +1,8 @@
 ---
 date: '2013-08-13'
+title: 'How The Head and the Heart made organic music'
+description: "I cannot wait to get my hands on _Let's Be Still_ and finally see The Head and The Heart live."
 draft: false
-title: How The Head and the Heart made organic music
 tags: ['music']
 ---
 

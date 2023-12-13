@@ -1,8 +1,8 @@
 ---
 date: '2014-02-03'
-draft: false
 title: 'Photo management with Dropbox and Hazel'
 description: "I recently abandoned iPhoto as a means of storing, organizing and managing photos on OSX and deactivated the associated iCloud Photo Sharing feature running from iOS in to iPhoto via iCloud."
+draft: false
 tags: ['automation', 'Dropbox', 'macOS']
 ---
 

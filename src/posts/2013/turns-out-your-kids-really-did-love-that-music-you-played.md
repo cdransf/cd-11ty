@@ -1,7 +1,8 @@
 ---
 date: '2013-09-07'
 draft: false
-title: Turns out your kids really did love that music you played
+title: 'Turns out your kids really did love that music you played'
+description: "The connection to parents' music isn't entirely surprising. Music plays a central role in child-rearing, both in the songs children are taught at home and in school and in those heard more informally as part of the home environment. The songs parents choose to listen to reflect their taste, their values, their era."
 tags: ['music']
 ---
 

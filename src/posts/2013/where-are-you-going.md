@@ -1,7 +1,8 @@
 ---
 date: '2013-09-13'
 draft: false
-title: Where are you going?
+title: 'Where are you going?'
+description: "I've been a fan of Godspeed You! Black Emperor since high school and finally got the chance to see them live. The band put on a devastating, energetic performance that was worth the nine or so year wait it took to see them."
 tags: ['concert', 'music']
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: '2013-08-09'
+title: 'Bombino and Hanni El Khatib at the Santa Monica Pier'
+description: "The most recent entry in to the Santa Monica Pier's Twilight Concert series featured Bombino and Hanni El Khatib performing to a packed crowd on the pier that spilled out on to the beach."
 draft: false
-title: Bombino and Hanni El Khatib at the Santa Monica Pier
 tags: ['music']
 ---
 

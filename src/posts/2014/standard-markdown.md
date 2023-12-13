@@ -1,8 +1,8 @@
 ---
 date: '2014-09-04'
-draft: false
 title: 'Standard Markdown'
 description: "This is about legitimizing their fork over all the others. Not just another fork here, this one is named 'Standard Markdown'!"
+draft: false
 tags: ['markdown']
 ---
 

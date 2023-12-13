@@ -1,7 +1,8 @@
 ---
 date: '2013-09-04'
+title: 'The story behind Drafts'
+description: "A nice, brief interview with Greg Pierce, the developer of Drafts."
 draft: false
-title: The story behind Drafts
 tags: ['Drafts', 'iOS']
 ---
 

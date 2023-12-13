@@ -1,7 +1,8 @@
 ---
 date: '2013-09-04'
+title: 'Arcade Fire - Reflektor 9/9/9'
+description: "This sample sounds promising. I can't wait to hear more from Reflektor on the 9th."
 draft: false
-title: Arcade Fire - Reflektor 9/9/9
 tags: ['music']
 ---
 
