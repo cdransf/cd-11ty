@@ -1,7 +1,8 @@
 ---
 date: '2015-07-18'
+title: 'Hypebot Hosts LA Music Tech Meetup July 23'
+description: "If you're based in LA be sure to come out to the meetup and say hi!"
 draft: false
-title: Hypebot Hosts LA Music Tech Meetup July 23
 tags: ['meetups']
 ---
 

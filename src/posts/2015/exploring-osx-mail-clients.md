@@ -1,11 +1,12 @@
 ---
 date: '2015-04-17'
+title: 'Exploring OS X mail clients'
+description: "I've been using Fastmail for over a year now and have been exploring email clients the entire time I've been a subscriber. Until recently, the best client I've been able to find has been Fastmail's web app itself (whether that's in the browser or in a Fluid instance)."
 draft: false
-title: Exploring OS X mail clients
 tags: ['Fastmail', 'Email']
 ---
 
-I've been using [Fastmail](https://www.fastmail.com/?STKI=11917049) for over a year now and have been exploring email clients the entire time I've been a subscriber. Until recently, the best client I've been able to find has been Fastmail's web app itself (whether that's in the browser or [in a Fluid instance](http://coryd.me/notes/fastmail-in-fluid-app).<!-- excerpt -->
+I've been using [Fastmail](https://www.fastmail.com/?STKI=11917049) for over a year now and have been exploring email clients the entire time I've been a subscriber. Until recently, the best client I've been able to find has been Fastmail's web app itself (whether that's in the browser or [in a Fluid instance](http://coryd.me/notes/fastmail-in-fluid-app)).<!-- excerpt -->
 
 I've tried [Airmail](http://airmailapp.com/), which is fine but isn't as flexible as I'd like (despite having a really extensive preferences pane) or as lightweight as I had hoped[^1]. I suffered through using OS X's Mail app and, though the [Gmailinator](https://github.com/nompute/GMailinator) plugin made it somewhat bearable, it frequently exhibited odd behavior that had me wondering just what the app was doing at times. I tried using [Mailmate](http://freron.com) on several occasions but would get hung up on the minimal nature of the app's designed and overwhelmed by its flexibility and feature-set.
 

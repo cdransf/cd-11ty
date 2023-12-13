@@ -1,7 +1,8 @@
 ---
 date: '2015-11-27'
+title: 'A Cadillac for Your Thoughts (2015 in music)'
+description: "2015 has been a genuinely fantastic year for music (both live and recorded). That's very much a personal assessment of the year but music is an inherently personal thing. There's been a number of albums released or that I've discovered that I see myself listening to for a long time to come, and I've attended a number of shows that left a lasting impression on me (for good reasons and bad)."
 draft: false
-title: A Cadillac for Your Thoughts (2015 in music)
 tags: ['music']
 ---
 

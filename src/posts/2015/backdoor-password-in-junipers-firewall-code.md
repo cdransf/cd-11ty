@@ -1,7 +1,8 @@
 ---
 date: '2015-12-24'
+title: 'Backdoor password in Juniper's firewall code'
+description: "This is exactly why creating back doors in to encryption is an awful thing. We don't need a 'Manhattan-like project' to create more security holes like this one — if you create backdoors, even for legitimate purposes, you'll simply be increasing the likelihood that incidents like this will continue to happen."
 draft: false
-title: Backdoor password in Juniper's firewall code
 tags: ['politics', 'security']
 ---
 

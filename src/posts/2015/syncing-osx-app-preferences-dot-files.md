@@ -1,7 +1,8 @@
 ---
 date: '2015-03-15'
+title: 'Syncing OSX app preferences and dot files'
+description: "I've started using a command line tool called mackup to back up and sync many of my dot files and application settings on OS X."
 draft: false
-title: Syncing OSX app preferences and dot files
 tags: ['development', 'macOS']
 ---
 

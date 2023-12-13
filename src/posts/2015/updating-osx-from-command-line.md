@@ -1,7 +1,8 @@
 ---
 date: '2015-09-05'
+title: 'Update OS X from the command line'
+description: "If you don't want to bother dealing with the Mac App Store you can check for any recent updates for OS X from the command."
 draft: false
-title: Update OS X from the command line
 tags: ['macOS']
 ---
 

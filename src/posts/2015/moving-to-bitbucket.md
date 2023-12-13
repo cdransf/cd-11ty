@@ -1,7 +1,8 @@
 ---
 date: '2015-08-29'
+title: 'Moving to Bitbucket'
+description: "I recently moved all the repositories for my personal and client development projects to Bitbucket. I had been paying for GitHub's micro plan to manage a few projects that I didn't want public, but made the decision to switch after exploring a bit more and seeing that, well, Bitbucket provides the functionality I was paying GitHub for free."
 draft: false
-title: Moving to Bitbucket
 tags: ['Git', 'GitHub', 'Bitbucket']
 ---
 
