@@ -50,7 +50,7 @@ html {
 
 .active,
 .active svg {
-  color: theme(colors.blue.600);
+  color: theme(colors.blue.600) !important;
 }
 
 .header-anchor {
