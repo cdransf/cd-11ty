@@ -1,7 +1,8 @@
 ---
 date: '2020-03-11'
-draft: false
 title: Chrome tool helps developers make websites more color blind friendly
+description: "Google has launched a new Chrome tool that allows developers to mimic visual impairments like color blindness to help them fix accessibility issues on their sites. Developers can use this feature by launching Google Chrome and heading to the browser's developer tools."
+draft: false
 tags: ['development']
 ---
 

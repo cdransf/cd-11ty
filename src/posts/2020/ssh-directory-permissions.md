@@ -1,6 +1,7 @@
 ---
 date: '2020-11-09'
-title: .ssh directory permissions
+title: '.ssh directory permissions'
+description: "I was recently setting up a new, always-on machine that I do occasional dev work."
 draft: false
 tags: ['SSH', 'development']
 ---

@@ -1,7 +1,8 @@
 ---
 date: '2020-03-02'
+title: "Firefox is showing the way back to a world that's private by default"
+description: "One of the nice things about looking at the full scope of tech news for the day is that two stories that you otherwise wouldn't think to connect end up playing off each other perfectly. So it was today with the following pieces of news."
 draft: false
-title: Firefox is showing the way back to a world that's private by default
 tags: ['Firefox', 'privacy']
 ---
 
