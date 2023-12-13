@@ -1,7 +1,8 @@
 ---
 date: '2016-12-31'
+title: 'JavaScript topics and frameworks to learn in 2017'
+description: "A fantastastic read on what to stay on top of in the ever-changing JavaScript ecosystem in 2017."
 draft: false
-title: Updating to the latest version of git on Ubuntu
 tags: ['JavaScript', 'development']
 ---
 

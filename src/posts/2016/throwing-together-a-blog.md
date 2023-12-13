@@ -1,7 +1,8 @@
 ---
 date: '2016-12-11'
+title: 'Throwing together a blog'
+description: "I've been working on this site for longer than I'd care to admit (years at this point). It's been through a few domains, two content management systems, multiple versions of those content management systems, countless designs and several different hosts. I'm really happy with where it's at and what I've learned putting it together."
 draft: false
-title: Throwing together a blog
 tags: ['development', 'Statamic']
 ---
 
