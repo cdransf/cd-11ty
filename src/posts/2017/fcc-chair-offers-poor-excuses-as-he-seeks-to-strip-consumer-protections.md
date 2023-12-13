@@ -1,7 +1,8 @@
 ---
 date: '2017-03-01'
+title: 'FCC chair offers poor excuses as he seeks to strip consumer protections'
+description: "Eliminate functional regulatory oversight and refuse to address limited competition? The end result is... Comcast Corporation and its record-shatteringly-bad customer service, high prices, and usage caps."
 draft: false
-title: FCC chair offers poor excuses as he seeks to strip consumer protections
 tags: ['politics', 'privacy']
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: '2017-08-10'
+title: 'Ajit Pai accused of conflict for helping former client'
+description: "A prisoners' rights group has accused Federal Communications Commission Chairman Ajit Pai of having a conflict of interest because he used to represent a prison phone company as a lawyer."
 draft: false
-title: Ajit Pai accused of conflict for helping former client
 tags: ['politics']
 ---
 

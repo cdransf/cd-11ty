@@ -1,7 +1,8 @@
 ---
 date: '2017-07-18'
+title: 'Comcast continues to whine about net neutrality'
+description: "This is, of course, nonsense as the article goes on to explain. Comcast and so many of the other players in the net neutrality argument appear to either miss or intentionally bury the point: in the absence of competition, consumers and the open internet need net neutrality protections. Failing that, customers need dramatically more choice in selecting an ISP."
 draft: false
-title: Comcast continues to whine about net neutrality
 tags: ['politics', 'net neutrality']
 ---
 

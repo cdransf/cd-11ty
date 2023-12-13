@@ -1,7 +1,8 @@
 ---
 date: '2017-05-03'
+title: 'FCC and ISPs begin campaign to gut net neutrality while pretending to protect it'
+description: "All this amounts to is ISPs attempting to irreperably harm the internet in an effort to prop up businesses that would otherwise not be competetive. Strong net neutrality protections are absolutely vital to the ongoing health of the internet and companies that depend on it."
 draft: false
-title: FCC and ISPs begin campaign to gut net neutrality while pretending to protect it
 tags: ['politics', 'net neutrality']
 ---
 

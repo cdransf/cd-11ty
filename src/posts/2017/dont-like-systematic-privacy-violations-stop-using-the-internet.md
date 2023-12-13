@@ -1,7 +1,8 @@
 ---
 date: '2017-04-14'
+title: "Don't like systematic privacy violations? Stop using the internet"
+description: "We desperately need to stop electing officials that have no understanding of the impact of the legislation they help pass."
 draft: false
-title: Don't like systematic privacy violations? Stop using the internet
 tags: ['politics', 'net neutrality']
 ---
 

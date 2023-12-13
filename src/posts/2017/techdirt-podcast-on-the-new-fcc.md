@@ -1,7 +1,8 @@
 ---
 date: '2017-02-20'
+title: 'Techdirt podcast on the new FCC'
+description: "I really enjoyed this episode — it's an engaging deep dive into the history of net neutrality and where it stands under the oversight (or lack thereof) of the new FCC chairman, Ajit Pai."
 draft: false
-title: Techdirt podcast on the new FCC
 tags: ['politics']
 ---
 

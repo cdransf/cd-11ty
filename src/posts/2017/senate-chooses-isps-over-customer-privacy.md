@@ -1,7 +1,8 @@
 ---
 date: '2017-03-23'
+title: 'Senate chooses ISPs over customer privacy'
+description: "I truly wish I could be shocked or surprised by a move like this coming out of the senate but, lately, congress appears to be dedicated to making decisions that actively harm their constituencies in order to benefit entrenched business interests."
 draft: false
-title: Senate chooses ISPs over customer privacy
 tags: ['politics', 'net neutrality']
 ---
 

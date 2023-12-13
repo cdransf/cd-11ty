@@ -1,7 +1,8 @@
 ---
 date: '2017-02-26'
+title: 'Internet Privacy Rules in Part Face a Halt at the FCC'
+description: "Rolling back privacy protections for consumers is only good for ISPs. This move reflects the current FCC chair's willingness to work for the interests of the businesses his agency should be regulating over those of consumers."
 draft: false
-title: Internet Privacy Rules in Part Face a Halt at the FCC
 tags: ['politics', 'privacy']
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: '2017-07-26'
+title: 'Lawmakers blast FCC net neutrality rollback'
+description: "The current incarnation of the FCC is entirely pro-industry and anti-consumer in its approach to regulating the market it oversees."
 draft: false
-title: Lawmakers blast FCC net neutrality rollback
 tags: ['politics', 'net neutrality']
 ---
 

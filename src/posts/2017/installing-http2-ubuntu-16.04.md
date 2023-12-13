@@ -1,7 +1,8 @@
 ---
 date: '2017-03-19'
+title: 'Installing HTTP/2 on Ubuntu 16.04 with virtual hosts'
+description: "Now that HTTP/2 is fairly stable and widely available, I decided to try and install and run it on this server. I'm currently running the Ubuntu 16.04.2 LTS with virtual hosts configured, so I can serve a number of sites beyond this one. All the sites this server hosts are also served securely using certificates from LetsEncrypt."
 draft: false
-title: Installing HTTP/2 on Ubuntu 16.04 with virtual hosts
 tags: ['Apache', 'development']
 ---
 

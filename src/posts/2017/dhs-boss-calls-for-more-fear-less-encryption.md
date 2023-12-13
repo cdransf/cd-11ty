@@ -1,7 +1,8 @@
 ---
 date: '2017-04-20'
+title: 'DHS Boss Calls For More Fear, Less Encryption'
+description: "This is wonderful stuff if you're a fan of authoritarianism. Shut up and show your support. It's a message that's been sent several times by the new president. Now, it's being echoed by his top officials."
 draft: false
-title: DHS Boss Calls For More Fear, Less Encryption
 tags: ['politics', 'security', 'privacy']
 ---
 

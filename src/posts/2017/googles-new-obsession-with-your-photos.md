@@ -1,7 +1,8 @@
 ---
 date: '2017-05-27'
+title: "Google's new obsession with your photos"
+description: "'Sergey Brin says that Google wants to be the third half of your brain,' [Pedro] Domingos says. 'But now think about it: Do you really want the third half of your brain to make a living by showing you ads? I don't.'"
 draft: false
-title: Google's new obsession with your photos
 tags: ['Google', 'privacy']
 ---
 

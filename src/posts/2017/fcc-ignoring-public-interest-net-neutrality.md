@@ -1,7 +1,8 @@
 ---
 date: '2017-08-04'
+title: 'FCC is ignoring public interest in net neutrality repeal'
+description: "Although ISPs have claimed that the net neutrality rules harm investment, the cable industry's top lobbying group recently boasted that US Internet speeds are continuing to soar and that the cost of data per megabit has gone down."
 draft: false
-title: FCC is ignoring public interest in net neutrality repeal
 tags: ['politics', 'net neutrality']
 ---
 

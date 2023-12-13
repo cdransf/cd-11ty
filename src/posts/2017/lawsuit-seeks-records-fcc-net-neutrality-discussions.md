@@ -1,7 +1,8 @@
 ---
 date: '2017-07-26'
+title: 'Lawsuit seeks records of FCC net neutrality discussions'
+description: "hey're listening to ISPs and their lobbyists — they couldn't care less about the public."
 draft: false
-title: Lawsuit seeks records of FCC net neutrality discussions
 tags: ['politics', 'net neutrality']
 ---
 

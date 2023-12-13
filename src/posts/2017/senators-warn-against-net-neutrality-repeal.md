@@ -1,7 +1,8 @@
 ---
 date: '2017-02-10'
+title: 'Senators warn against net neutrality repeal'
+description: "The unfortunate reality of the situation is that the current administration will always prefer the vested interest of corporate telecoms and lobbyists over those of the consumers they serve."
 draft: false
-title: Senators warn against net neutrality repeal
 tags: ['politics', 'net neutrality']
 ---
 

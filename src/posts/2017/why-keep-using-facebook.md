@@ -1,7 +1,8 @@
 ---
 date: '2017-09-16'
-draft: false
 title: 'Why do we keep using Facebook?'
+description: "Facebook offers a terrible bargain: It gives you the connectedness you crave, but it's unfulfilling and leaves you wanting more. It's like drinking Coke, or eating McDonald's, except you don't even have to pay for it."
+draft: false
 tags: ['social media']
 ---
 

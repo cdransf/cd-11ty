@@ -1,7 +1,8 @@
 ---
 date: '2017-09-30'
+title: 'A vote for Pai is a vote against consumers and for Big Cable'
+description: "Mr. Pai, has a long track record of putting big cable before consumers, big corporations above small businesses and pay-to-play over the free and open internet."
 draft: false
-title: A vote for Pai is a vote against consumers and for Big Cable
 tags: ['politics', 'net neutrality']
 ---
 

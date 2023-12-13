@@ -1,7 +1,8 @@
 ---
 date: '2017-08-10'
+title: 'Unobstruct for iOS'
+description: "I had been using the 1Blocker extension to hide floating share bars but this content blocker makes the whole process dramatically easier."
 draft: false
-title: Unobstruct for iOS
 tags: ['iOS']
 ---
 

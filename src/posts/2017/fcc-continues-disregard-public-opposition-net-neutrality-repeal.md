@@ -1,7 +1,8 @@
 ---
 date: '2017-08-31'
+title: 'FCC continues to completely disregard public opposition to net neutrality repeal'
+description: "Let's not mince words: the FCC's plan to gut net neutrality protections in light of severe public opposition is likely one of the more bare-knuckled acts of cronyism in modern technological and political history."
 draft: false
-title: FCC continues to completely disregard public opposition to net neutrality repeal
 tags: ['politics', 'net neutrality']
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: '2017-02-20'
+title: 'Clearing mod_pagespeed cache'
+description: "I use mod_pagespeed on this server to help speed up asset delivery and force optimization best practices across all the sites I host."
 draft: false
-title: Clearing mod_pagespeed cache
 tags: ['Apache', 'development']
 ---
 

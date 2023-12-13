@@ -1,7 +1,8 @@
 ---
 date: '2017-07-20'
+title: 'Misleading Arguments Against Net Neutrality Abound'
+description: "Comcast's argument that gutting existing net neutrality rules will help members of protected classes is totally disingenuous. The best way to protect consumers and the open internet across the board is to leave the existing rules intact. Comcast has only its best interests in mind, not those of their customers or any other consumers."
 draft: false
-title: Misleading Arguments Against Net Neutrality Abound
 tags: ['politics', 'net neutrality']
 ---
 
