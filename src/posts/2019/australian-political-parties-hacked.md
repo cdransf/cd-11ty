@@ -1,7 +1,8 @@
 ---
 date: '2019-02-18'
+title: 'Australian political parties hacked'
+description: 'Morrison said that the Australian government had made moves to "ensure the integrity of our electoral system," including instructing the Australian Cyber Security Centre "to be ready to provide any political party or electoral body in Australia with immediate support, including making their technical experts available."'
 draft: false
-title: Australian political parties hacked
 tags: ['politics', 'security']
 ---
 

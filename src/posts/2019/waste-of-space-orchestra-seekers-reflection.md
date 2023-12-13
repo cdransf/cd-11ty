@@ -1,7 +1,8 @@
 ---
 date: '2019-02-18'
+title: "Waste of Space Orchestra - Seeker's Reflection"
+description: 'I could not be more excited for this release.'
 draft: false
-title: Waste of Space Orchestra - Seeker's Reflection
 tags: ['music']
 ---
 
