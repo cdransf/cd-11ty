@@ -37,7 +37,7 @@
     "child_process": "^1.0.2",
     "clean-css": "^5.3.3",
     "dotenv-flow": "^4.0.1",
-    "eleventy-plugin-tabler-icons": "^2.1.0",
+    "eleventy-plugin-tabler-icons": "^2.2.0",
     "eleventy-plugin-unfurl": "^1.0.0",
     "eleventy-plugin-youtube-embed": "^1.9.1",
     "eslint": "^8.55.0",
