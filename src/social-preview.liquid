@@ -9,7 +9,7 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="1200" height="628" viewBox="0 0 1200 628" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 >
-  {% assign titleInLines = preview.data.title | splitlines: 36 %}
+  {% assign titleInLines = preview.data.title | splitlines: 40 %}
     {% assign numberOfLines = titleInLines.length %}
   {% if numberOfLines == 2 %}
     {% assign verticalStartingPoint = 250 %}
@@ -32,7 +32,7 @@ eleventyExcludeFromCollections: true
     font-weight="bold"
     fill="#fff"
   >
-    <tspan x="160" y="{{ verticalStartingPoint | minus: 120 }}">
+    <tspan x="40" y="{{ verticalStartingPoint | minus: 120 }}">
       {{ preview.date | dateToReadableDate}}
     </tspan>
   </text>
@@ -47,7 +47,7 @@ eleventyExcludeFromCollections: true
   >
     {% for line in titleInLines %}
     {% capture spacing %}{{ forloop.index0 | times: 50 }}{% endcapture %}
-    <tspan x="160" y="{{ verticalStartingPoint | minus: 20 | plus: spacing }}">
+    <tspan x="40" y="{{ verticalStartingPoint | minus: 20 | plus: spacing }}">
       {{ line }}
     </tspan>
     {% endfor %}
@@ -60,6 +60,6 @@ eleventyExcludeFromCollections: true
     font-weight="bold"
     fill="#fff"
   >
-    <tspan x="160" y="600">{{ meta.siteName }} • {{ meta.url | replace: "https://", "" | replace: "http://", "" }}</tspan>
+    <tspan x="40" y="600">{{ meta.siteName }} • {{ meta.url | replace: "https://", "" | replace: "http://", "" }}</tspan>
   </text>
 </svg>
