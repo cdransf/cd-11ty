@@ -7903,5 +7903,32 @@
       "https://social.lol/users/cory/statuses/111583860750097922"
     ],
     "lastTootTimestamp": 1702634594040
+  },
+  "https://www.techdirt.com/2023/12/15/whats-left-of-cable-tv-is-slowly-going-to-hell/": {
+    "id": "aHR0cHM6Ly93d3cudGVjaGRpcnQuY29tLzIwMjMvMTIvMTUvd2hhdHMtbGVmdC1vZi1jYWJsZS10di1pcy1zbG93bHktZ29pbmctdG8taGVsbC8=",
+    "title": "🔗: What’s Left Of Cable TV Is Slowly Going To Hell",
+    "url": "https://www.techdirt.com/2023/12/15/whats-left-of-cable-tv-is-slowly-going-to-hell/",
+    "content_text": "🔗: What’s Left Of Cable TV Is Slowly Going To Hell #Tech https://www.techdirt.com/2023/12/15/whats-left-of-cable-tv-is-slowly-going-to-hell/",
+    "date_published": "Fri, 15 Dec 2023 15:57:35 +0000",
+    "toots": []
+  },
+  "https://trakt.tv/movies/star-trek-iv-the-voyage-home-1986": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvc3Rhci10cmVrLWl2LXRoZS12b3lhZ2UtaG9tZS0xOTg2",
+    "title": "🎥: Star Trek IV: The Voyage Home",
+    "url": "https://trakt.tv/movies/star-trek-iv-the-voyage-home-1986",
+    "content_text": "🎥: Star Trek IV: The Voyage Home #Movies #Watching #Trakt https://trakt.tv/movies/star-trek-iv-the-voyage-home-1986",
+    "date_published": "Fri, 15 Dec 2023 14:59:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111586219950034580"
+    ],
+    "lastTootTimestamp": 1702670592598
+  },
+  "https://rknight.me/meta-doesnt-need-activitypub-to-slurp-up-your-data/": {
+    "id": "aHR0cHM6Ly9ya25pZ2h0Lm1lL21ldGEtZG9lc250LW5lZWQtYWN0aXZpdHlwdWItdG8tc2x1cnAtdXAteW91ci1kYXRhLw==",
+    "title": "🔗: Meta Doesn't Need ActivityPub to Slurp Up Your Data",
+    "url": "https://rknight.me/meta-doesnt-need-activitypub-to-slurp-up-your-data/",
+    "content_text": "🔗: Meta Doesn't Need ActivityPub to Slurp Up Your Data #Tech  #Tech https://rknight.me/meta-doesnt-need-activitypub-to-slurp-up-your-data/",
+    "date_published": "Fri, 15 Dec 2023 13:11:25 +0000",
+    "toots": []
   }
 }
