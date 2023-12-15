@@ -7881,5 +7881,16 @@
       "https://social.lol/users/cory/statuses/111568289131148837"
     ],
     "lastTootTimestamp": 1702396990209
+  },
+  "https://app.thestorygraph.com/books/9f063dae-e5ef-4622-8cb6-ba8222222579": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvOWYwNjNkYWUtZTVlZi00NjIyLThjYjYtYmE4MjIyMjIyNTc5",
+    "title": "📖: American Gun: The True Story of the AR-15",
+    "url": "https://app.thestorygraph.com/books/9f063dae-e5ef-4622-8cb6-ba8222222579",
+    "content_text": "📖: American Gun: The True Story of the AR-15 #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/9f063dae-e5ef-4622-8cb6-ba8222222579",
+    "date_published": "Wed, 13 Dec 2023 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111582445718906598"
+    ],
+    "lastTootTimestamp": 1702613002356
   }
 }
