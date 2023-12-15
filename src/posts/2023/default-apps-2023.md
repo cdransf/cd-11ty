@@ -19,7 +19,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Calendar: [Fantastical](https://flexibits.com/fantastical)
 - Weather: Weather.app
 - Podcasts: N/A
-- Music: [Doppler](https://brushedtype.com/doppler)
+- Music: Apple Music + [Last.fm](https://last.fm)
 - Passwords: [1Password.com](https://1password.com)
 - Budgeting: [YNAB](https://ynab.com)
 - Mastodon: [Ivory](https://tapbots.com/ivory)

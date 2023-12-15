@@ -33,7 +33,6 @@ Software and services that I use for work and my own enjoyment.
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
 
 - [Bear](https://bear.app): native, fast and flexible — it's a breeze to use across Apple's ecosystem.
-- [Doppler](https://brushedtype.com/doppler): a beautiful, simple native music player that supports scrobbling to Last.fm.
 - [Fantastical](https://flexibits.com/fantastical): the best and most powerful calendaring app for the Apple ecosystem, bar none.
 - [Ivory](https://tapbots.com/ivory): a beautifully designed and extremely well built Mastodon app — I use it as my go-to client across all of my devices.
 
@@ -50,7 +49,7 @@ Software and services that I use for work and my own enjoyment.
 - [Meta](https://www.nightbirdsevolve.com/meta): the _best_ utility for tagging and organizing music files on macOS.
 - [Permute](https://software.charliemonroe.net/permute): a useful utility for quickly converting files to different formats.
 - [SoundSource](https://rogueamoeba.com/soundsource): a handy utility for better, more granular control on macOS.
-- [Sleeve](https://replay.software/sleeve): a lightweight music controller (that happens to support Doppler).
+- [Sleeve](https://replay.software/sleeve): a lightweight music controller (that also supports scrobbling).
 
 <h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Dev tools</h3>
 
