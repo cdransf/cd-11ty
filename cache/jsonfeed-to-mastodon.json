@@ -7929,6 +7929,39 @@
     "url": "https://rknight.me/meta-doesnt-need-activitypub-to-slurp-up-your-data/",
     "content_text": "🔗: Meta Doesn't Need ActivityPub to Slurp Up Your Data #Tech  #Tech https://rknight.me/meta-doesnt-need-activitypub-to-slurp-up-your-data/",
     "date_published": "Fri, 15 Dec 2023 13:11:25 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111586690677687441"
+    ],
+    "lastTootTimestamp": 1702677775292
+  },
+  "https://trakt.tv/movies/star-trek-v-the-final-frontier-1989": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvc3Rhci10cmVrLXYtdGhlLWZpbmFsLWZyb250aWVyLTE5ODk=",
+    "title": "🎥: Star Trek V: The Final Frontier",
+    "url": "https://trakt.tv/movies/star-trek-v-the-final-frontier-1989",
+    "content_text": "🎥: Star Trek V: The Final Frontier #Movies #Watching #Trakt https://trakt.tv/movies/star-trek-v-the-final-frontier-1989",
+    "date_published": "Fri, 15 Dec 2023 15:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111587193900553670"
+    ],
+    "lastTootTimestamp": 1702685453867
+  },
+  "https://trakt.tv/movies/star-trek-vi-the-undiscovered-country-1991": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvc3Rhci10cmVrLXZpLXRoZS11bmRpc2NvdmVyZWQtY291bnRyeS0xOTkx",
+    "title": "🎥: Star Trek VI: The Undiscovered Country",
+    "url": "https://trakt.tv/movies/star-trek-vi-the-undiscovered-country-1991",
+    "content_text": "🎥: Star Trek VI: The Undiscovered Country #Movies #Watching #Trakt https://trakt.tv/movies/star-trek-vi-the-undiscovered-country-1991",
+    "date_published": "Fri, 15 Dec 2023 15:01:00 +0000",
     "toots": []
+  },
+  "https://slate.com/culture/2023/12/melrose-place-abortion-art-gala-committee-mel-chin.html": {
+    "id": "aHR0cHM6Ly9zbGF0ZS5jb20vY3VsdHVyZS8yMDIzLzEyL21lbHJvc2UtcGxhY2UtYWJvcnRpb24tYXJ0LWdhbGEtY29tbWl0dGVlLW1lbC1jaGluLmh0bWw=",
+    "title": "🔗: The Virus Inside Your TV",
+    "url": "https://slate.com/culture/2023/12/melrose-place-abortion-art-gala-committee-mel-chin.html",
+    "content_text": "🔗: The Virus Inside Your TV  https://slate.com/culture/2023/12/melrose-place-abortion-art-gala-committee-mel-chin.html",
+    "date_published": "Tue, 12 Dec 2023 13:40:23 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111587669717148700"
+    ],
+    "lastTootTimestamp": 1702692714228
   }
 }
