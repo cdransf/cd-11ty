@@ -12,11 +12,10 @@ const markdownItFootnote = require('markdown-it-footnote')
 const filters = require('./config/filters/index.js')
 const { slugifyString } = require('./config/utils')
 const { svgToJpeg } = require('./config/events/index.js')
+const { tagList, tagMap } = require('./config/collections/index.js')
 
 const CleanCSS = require('clean-css')
 const { execSync } = require('child_process')
-
-const tagAliases = require('./src/_data/json/tag-aliases.json')
 
 // load .env
 require('dotenv-flow').config()
@@ -70,45 +69,11 @@ module.exports = function (eleventyConfig) {
     excerpt_separator: '<!-- excerpt -->',
   })
 
+  // collections
+  eleventyConfig.addCollection('tagList', tagList)
+  eleventyConfig.addCollection('tagMap', tagMap)
+
   const md = markdownIt({ html: true, linkify: true })
-
-  // enable us to iterate over all the tags, excluding posts and all
-  eleventyConfig.addCollection('tagList', (collection) => {
-    const tagsSet = new Set()
-    collection.getAll().forEach((item) => {
-      if (!item.data.tags) return
-      item.data.tags
-        .filter((tag) => !['posts', 'all'].includes(tag))
-        .forEach((tag) => tagsSet.add(tag))
-    })
-    return Array.from(tagsSet).sort()
-  })
-
-  eleventyConfig.addCollection('tagMap', (collection) => {
-    const tags = {}
-    collection.getAll().forEach((item) => {
-      if (item.data.collections.posts) {
-        item.data.collections.posts.forEach((post) => {
-          const url = post.url.includes('http') ? post.url : `https://coryd.dev${post.url}`
-          const tagString = [...new Set(post.data.tags.map((tag) => tagAliases[tag.toLowerCase()]))]
-            .join(' ')
-            .trim()
-          if (tagString) tags[url] = tagString
-        })
-      }
-      if (item.data.links) {
-        item.data.links.forEach((link) => {
-          const tagString = link['tags']
-            .map((tag) => tagAliases[tag.toLowerCase()])
-            .join(' ')
-            .trim()
-          if (tagString) tags[link.url] = tagString
-        })
-      }
-    })
-    return tags
-  })
-
   md.use(markdownItAnchor, {
     level: [1, 2],
     permalink: markdownItAnchor.permalink.headerLink({
