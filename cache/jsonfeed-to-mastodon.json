@@ -7969,5 +7969,40 @@
       "https://social.lol/users/cory/statuses/111587669717148700"
     ],
     "lastTootTimestamp": 1702692714228
+  },
+  "https://trakt.tv/movies/prospect-2018": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvcHJvc3BlY3QtMjAxOA==",
+    "title": "🎥: Prospect",
+    "url": "https://trakt.tv/movies/prospect-2018",
+    "content_text": "🎥: Prospect #Movies #Watching #Trakt https://trakt.tv/movies/prospect-2018",
+    "date_published": "Sun, 17 Dec 2023 21:36:44 +0000",
+    "toots": []
+  },
+  "https://manuelmoreale.com/@/page/lB9xVypmDrlu2TVM": {
+    "id": "aHR0cHM6Ly9tYW51ZWxtb3JlYWxlLmNvbS9AL3BhZ2UvbEI5eFZ5cG1Ecmx1MlRWTQ==",
+    "title": "🔗: Pirating social media",
+    "url": "https://manuelmoreale.com/@/page/lB9xVypmDrlu2TVM",
+    "content_text": "🔗: Pirating social media #Tech  #Tech https://manuelmoreale.com/@/page/lB9xVypmDrlu2TVM",
+    "date_published": "Sun, 17 Dec 2023 19:05:04 +0000",
+    "toots": []
+  },
+  "https://manuelmoreale.com/the-personality-of-a-personal-website": {
+    "id": "aHR0cHM6Ly9tYW51ZWxtb3JlYWxlLmNvbS90aGUtcGVyc29uYWxpdHktb2YtYS1wZXJzb25hbC13ZWJzaXRl",
+    "title": "🔗: The personality of a personal website",
+    "url": "https://manuelmoreale.com/the-personality-of-a-personal-website",
+    "content_text": "🔗: The personality of a personal website #WebDev https://manuelmoreale.com/the-personality-of-a-personal-website",
+    "date_published": "Sun, 17 Dec 2023 19:04:14 +0000",
+    "toots": []
+  },
+  "https://app.thestorygraph.com/books/d666516f-4adc-4d29-b71f-92ddea83937c": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvZDY2NjUxNmYtNGFkYy00ZDI5LWI3MWYtOTJkZGVhODM5Mzdj",
+    "title": "📖: Breaking Twitter",
+    "url": "https://app.thestorygraph.com/books/d666516f-4adc-4d29-b71f-92ddea83937c",
+    "content_text": "📖: Breaking Twitter #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/d666516f-4adc-4d29-b71f-92ddea83937c",
+    "date_published": "Sat, 16 Dec 2023 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111598015169138271"
+    ],
+    "lastTootTimestamp": 1702850573328
   }
 }
