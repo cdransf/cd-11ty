@@ -3,7 +3,7 @@
 ###
 [[plugins]]
 package = "@netlify/plugin-lighthouse"
-  [plugins.inputs.audits]
+  [[plugins.inputs.audits]]
     url = "https://coryd.dev"
     output_path = "reports/lighthouse.html"
 
