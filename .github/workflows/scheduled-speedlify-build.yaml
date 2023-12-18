@@ -1,0 +1,12 @@
+name: Scheduled Speedlify test
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  build:
+    name: Request Netlify Webhook
+    runs-on: ubuntu-latest
+    steps:
+      - name: POST to Build Hook
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/${{ secrets.SPEEDLIFY_NETLIFY_BUILD_KEY }}
