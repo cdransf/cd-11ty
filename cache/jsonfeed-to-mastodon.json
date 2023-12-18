@@ -8013,5 +8013,16 @@
       "https://social.lol/users/cory/statuses/111598015169138271"
     ],
     "lastTootTimestamp": 1702850573328
+  },
+  "https://app.thestorygraph.com/books/2f6044dd-2a23-4db2-b8e3-afb8cbdde0e0": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvMmY2MDQ0ZGQtMmEyMy00ZGIyLWI4ZTMtYWZiOGNiZGRlMGUw",
+    "title": "📖: King: A Life",
+    "url": "https://app.thestorygraph.com/books/2f6044dd-2a23-4db2-b8e3-afb8cbdde0e0",
+    "content_text": "📖: King: A Life #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/2f6044dd-2a23-4db2-b8e3-afb8cbdde0e0",
+    "date_published": "Sun, 17 Dec 2023 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111603206432598110"
+    ],
+    "lastTootTimestamp": 1702929785779
   }
 }
