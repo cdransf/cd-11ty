@@ -131,7 +131,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ml, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, Cascadia Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace;
   /* 1 */
   font-feature-settings: normal;
   /* 2 */
@@ -1990,7 +1990,7 @@ li > a {
 }
 
 code {
-  font-family: ml, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, Cascadia Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace;
   --tw-text-opacity: 1;
   color: rgb(249 250 251 / var(--tw-text-opacity));
   padding: 0.25rem;

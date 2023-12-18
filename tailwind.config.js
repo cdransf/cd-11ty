@@ -1,5 +1,3 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
   theme: {
     extend: {
@@ -22,7 +20,15 @@ module.exports = {
           'source-sans-pro',
           'sans-serif',
         ],
-        mono: ['ml', ...defaultTheme.fontFamily.mono],
+        mono: [
+          'ui-monospace',
+          'Cascadia Code',
+          'Source Code Pro',
+          'Menlo',
+          'Consolas',
+          'DejaVu Sans Mono',
+          'monospace',
+        ],
       },
       backgroundImage: {
         'cover-gradient':
