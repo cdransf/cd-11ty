@@ -13,7 +13,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['silka', 'Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
         mono: ['ml', ...defaultTheme.fontFamily.mono],
       },
       backgroundImage: {
