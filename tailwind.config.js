@@ -14,12 +14,12 @@ module.exports = {
       },
       fontFamily: {
         sans: [
-          'Inter',
-          'Roboto',
-          'Helvetica Neue',
-          'Arial Nova',
-          'Nimbus Sans',
-          'Arial',
+          'Seravek',
+          'Gill Sans Nova',
+          'Ubuntu',
+          'Calibri',
+          'DejaVu Sans',
+          'source-sans-pro',
           'sans-serif',
         ],
         mono: ['ml', ...defaultTheme.fontFamily.mono],
