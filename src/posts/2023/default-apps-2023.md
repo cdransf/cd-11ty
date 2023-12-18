@@ -24,7 +24,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Budgeting: [YNAB](https://ynab.com)
 - Mastodon: [Ivory](https://tapbots.com/ivory)
 - TV/Movie tracking: [Trakt](https://trakt.tv)
-- Notes: Apple
+- Notes: [Bear](https://bear.app)
 - Code: [Visual Studio Code](https://code.visualstudio.com)
 - Terminal: [iTerm2](https://iterm2.com)
 - Search: DuckDuckGo
