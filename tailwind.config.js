@@ -13,7 +13,15 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['Helvetica Neue', 'Arial Nova', 'Nimbus Sans', 'Arial', 'sans-serif'],
+        sans: [
+          'Inter',
+          'Roboto',
+          'Helvetica Neue',
+          'Arial Nova',
+          'Nimbus Sans',
+          'Arial',
+          'sans-serif',
+        ],
         mono: ['ml', ...defaultTheme.fontFamily.mono],
       },
       backgroundImage: {

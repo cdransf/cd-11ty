@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Helvetica Neue, Arial Nova, Nimbus Sans, Arial, sans-serif;
+  font-family: Inter, Roboto, Helvetica Neue, Arial Nova, Nimbus Sans, Arial, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -1656,7 +1656,7 @@ video {
 }
 
 .font-sans {
-  font-family: Helvetica Neue, Arial Nova, Nimbus Sans, Arial, sans-serif;
+  font-family: Inter, Roboto, Helvetica Neue, Arial Nova, Nimbus Sans, Arial, sans-serif;
 }
 
 .text-2xl {
@@ -1927,7 +1927,7 @@ body {
 
 body,
 html {
-  font-family: Helvetica Neue, Arial Nova, Nimbus Sans, Arial, sans-serif;
+  font-family: Inter, Roboto, Helvetica Neue, Arial Nova, Nimbus Sans, Arial, sans-serif;
   color: #111827;
 }
 
