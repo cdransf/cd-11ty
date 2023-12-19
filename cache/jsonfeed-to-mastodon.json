@@ -8024,5 +8024,16 @@
       "https://social.lol/users/cory/statuses/111603206432598110"
     ],
     "lastTootTimestamp": 1702929785779
+  },
+  "https://trakt.tv/movies/the-thing-1982": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvdGhlLXRoaW5nLTE5ODI=",
+    "title": "🎥: The Thing",
+    "url": "https://trakt.tv/movies/the-thing-1982",
+    "content_text": "🎥: The Thing #Movies #Watching #Trakt https://trakt.tv/movies/the-thing-1982",
+    "date_published": "Tue, 19 Dec 2023 15:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111608867883537431"
+    ],
+    "lastTootTimestamp": 1703016172615
   }
 }
