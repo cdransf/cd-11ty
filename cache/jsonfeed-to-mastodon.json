@@ -8035,5 +8035,16 @@
       "https://social.lol/users/cory/statuses/111608867883537431"
     ],
     "lastTootTimestamp": 1703016172615
+  },
+  "https://coryd.dev/posts/2023/leaning-into-google-services/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9sZWFuaW5nLWludG8tZ29vZ2xlLXNlcnZpY2VzLw==",
+    "title": "📝: Why I'm leaning into Google services",
+    "url": "https://coryd.dev/posts/2023/leaning-into-google-services/",
+    "content_text": "📝: Why I'm leaning into Google services #macOS #Apple #Tech https://coryd.dev/posts/2023/leaning-into-google-services/",
+    "date_published": "Tue, 19 Dec 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111608946236551993"
+    ],
+    "lastTootTimestamp": 1703017368184
   }
 }
