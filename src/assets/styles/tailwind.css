@@ -1989,7 +1989,7 @@ a:active,
 .highlight-text {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-  padding: 0.25rem;
+  padding: 0.125rem;
   background-color: #2563eb;
 }
 

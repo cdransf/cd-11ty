@@ -83,7 +83,7 @@ a:active,
 
 .highlight-text {
   @apply text-white;
-  @apply p-1;
+  @apply p-0.5;
   background-color: theme(colors.blue.600);
 }
 
