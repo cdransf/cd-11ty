@@ -1,6 +1,6 @@
 ---
 date: '2023-12-19'
-title: 'Why I'm leaning into Google services'
+title: "Why I'm leaning into Google services"
 description: "I'm leaning into Google services when, at least in the circles I frequent, doing so is, frankly, seen negatively or simply out of the realm of consideration. But, hear me out."
 draft: false
 tags: ['Google', 'macOS', 'Apple', 'privacy', 'tech']
