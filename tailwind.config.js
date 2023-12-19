@@ -11,15 +11,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: [
-          'Seravek',
-          'Gill Sans Nova',
-          'Ubuntu',
-          'Calibri',
-          'DejaVu Sans',
-          'source-sans-pro',
-          'sans-serif',
-        ],
+        sans: ['system-ui', 'sans-serif'],
         mono: [
           'ui-monospace',
           'Cascadia Code',

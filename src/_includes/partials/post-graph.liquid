@@ -1,0 +1,13 @@
+<div class="post-graph">
+  {% assign years = postYears | reverse %}
+  {%- for year in years %}
+  <div class="post-graph__wrapper">
+    <div class="post-graph__year">{{ year.year }}</div>
+    <div class="post-graph__progress" style="width: {{ year.yearProgress }}%">
+    </div>
+    <div class="post-graph__data">
+      {{ year.postCount }}
+    </div>
+  </div>
+  {% endfor %}
+</div>

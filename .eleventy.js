@@ -3,6 +3,7 @@ const tablerIcons = require('eleventy-plugin-tabler-icons')
 const pluginUnfurl = require('eleventy-plugin-unfurl')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const embedYouTube = require('eleventy-plugin-youtube-embed')
+const postGraph = require('@rknightuk/eleventy-plugin-post-graph')
 
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
@@ -11,7 +12,7 @@ const markdownItFootnote = require('markdown-it-footnote')
 const filters = require('./config/filters/index.js')
 const { slugifyString } = require('./config/utils')
 const { svgToJpeg } = require('./config/events/index.js')
-const { tagList, tagMap } = require('./config/collections/index.js')
+const { tagList, tagMap, postStats } = require('./config/collections/index.js')
 
 const CleanCSS = require('clean-css')
 const { execSync } = require('child_process')
@@ -38,6 +39,15 @@ module.exports = function (eleventyConfig) {
       'lite.css.path': 'src/assets/styles/yt-lite.css',
       'lite.js.path': 'src/assets/scripts/yt-lite.js',
     },
+  })
+  eleventyConfig.addPlugin(postGraph, {
+    boxColorLight: '#e5e7eb',
+    highlightColorLight: '#2563eb',
+    textColorLight: '#1f2937',
+
+    boxColorDark: '#374151',
+    highlightColorDark: '#60a5fa',
+    textColorDark: '#fff',
   })
 
   // quiet build output
@@ -70,6 +80,7 @@ module.exports = function (eleventyConfig) {
   // collections
   eleventyConfig.addCollection('tagList', tagList)
   eleventyConfig.addCollection('tagMap', tagMap)
+  eleventyConfig.addCollection('postStats', postStats)
 
   const md = markdownIt({ html: true, linkify: true })
   md.use(markdownItAnchor, {

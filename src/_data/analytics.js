@@ -14,5 +14,5 @@ module.exports = async function () {
     },
   }).catch()
   const pages = await res
-  return pages.results.filter((p) => p.page.includes('posts')).splice(0, 5)
+  return pages.results.filter((p) => p.page.includes('posts'))
 }

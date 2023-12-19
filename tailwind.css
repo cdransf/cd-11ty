@@ -81,6 +81,12 @@ a:active,
   color: theme(colors.blue.800);
 }
 
+.highlight-text {
+  @apply text-white;
+  @apply p-1;
+  background-color: theme(colors.blue.600);
+}
+
 p > a,
 span > a,
 blockquote > a,
@@ -174,6 +180,32 @@ pre {
   @apply !border-blue-800;
 }
 
+.post-graph {
+  @apply my-5;
+}
+
+.post-graph__wrapper {
+  @apply relative;
+  @apply h-8;
+  @apply mb-1.5;
+  @apply flex;
+  @apply items-center;
+}
+
+.post-graph__progress {
+  @apply bg-blue-600;
+  @apply h-full;
+}
+
+.post-graph__year {
+  @apply font-mono;
+}
+
+.post-graph__progress,
+.post-graph__data {
+  @apply ml-2.5;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     --pagefind-ui-primary: theme(colors.blue.400);
@@ -195,6 +227,10 @@ pre {
   .prose a:focus,
   .prose a:active {
     color: theme(colors.blue.200);
+  }
+
+  .highlight-text {
+    background-color: theme(colors.blue.400);
   }
 
   .link--icon svg {
@@ -254,5 +290,9 @@ pre {
 
   .pagefind-ui__search-input:focus {
     @apply !border-blue-200
+  }
+
+  .post-graph__progress {
+    @apply bg-blue-400;
   }
 }
