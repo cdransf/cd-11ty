@@ -8057,5 +8057,16 @@
       "https://social.lol/users/cory/statuses/111610755865308612"
     ],
     "lastTootTimestamp": 1703044980904
+  },
+  "https://trakt.tv/movies/silent-night-2023-12-01": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvc2lsZW50LW5pZ2h0LTIwMjMtMTItMDE=",
+    "title": "🎥: Silent Night",
+    "url": "https://trakt.tv/movies/silent-night-2023-12-01",
+    "content_text": "🎥: Silent Night #Movies #Watching #Trakt https://trakt.tv/movies/silent-night-2023-12-01",
+    "date_published": "Wed, 20 Dec 2023 05:34:42 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111611699752419568"
+    ],
+    "lastTootTimestamp": 1703059383486
   }
 }
