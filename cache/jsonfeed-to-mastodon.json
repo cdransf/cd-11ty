@@ -8046,5 +8046,16 @@
       "https://social.lol/users/cory/statuses/111608946236551993"
     ],
     "lastTootTimestamp": 1703017368184
+  },
+  "https://wheresyoured.at/p/software-has-beaten-the-world": {
+    "id": "aHR0cHM6Ly93aGVyZXN5b3VyZWQuYXQvcC9zb2Z0d2FyZS1oYXMtYmVhdGVuLXRoZS13b3JsZA==",
+    "title": "🔗: Software Is Beating The World",
+    "url": "https://wheresyoured.at/p/software-has-beaten-the-world",
+    "content_text": "🔗: Software Is Beating The World #Tech https://wheresyoured.at/p/software-has-beaten-the-world",
+    "date_published": "Wed, 20 Dec 2023 01:18:59 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111610755865308612"
+    ],
+    "lastTootTimestamp": 1703044980904
   }
 }
