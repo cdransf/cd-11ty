@@ -115,6 +115,7 @@ export default async function (eleventyConfig) {
         minifyCSS: true,
         minifyJS: true,
         removeComments: true,
+        processScripts: ['application/ld+json'], // minify JSON-LD scripts
       })
     }
     return content
