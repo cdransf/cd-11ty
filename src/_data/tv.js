@@ -1,6 +1,6 @@
-const EleventyFetch = require('@11ty/eleventy-fetch')
+import EleventyFetch from '@11ty/eleventy-fetch'
 
-module.exports = async function () {
+export default async function () {
   const TV_KEY = process.env.API_KEY_TRAKT
   const MOVIEDB_KEY = process.env.API_KEY_MOVIEDB
   const url = 'https://api.trakt.tv/users/cdransf/history/shows?page=1&limit=36'

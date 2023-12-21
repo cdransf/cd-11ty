@@ -1,4 +1,4 @@
-module.exports = async function () {
+export default async function () {
   const { ActivityFeed } = await import('@11ty/eleventy-activity-feed')
   const feed = new ActivityFeed()
   feed.addSource('rss', '📝', 'https://coryd.dev/feeds/posts')

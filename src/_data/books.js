@@ -1,8 +1,9 @@
-const jsdom = require('jsdom')
-const { AssetCache } = require('@11ty/eleventy-fetch')
+import jsdom from 'jsdom'
+import { AssetCache } from '@11ty/eleventy-fetch'
+
 const { JSDOM } = jsdom
 
-module.exports = async function () {
+export default async function () {
   const COOKIE = process.env.COOKIE_STORYGRAPH
   const url = 'https://app.thestorygraph.com/currently-reading/coryd'
   const asset = new AssetCache('books_data')

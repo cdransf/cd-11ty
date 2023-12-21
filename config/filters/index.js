@@ -1,12 +1,12 @@
-const { DateTime } = require('luxon')
-const markdownIt = require('markdown-it')
-const { URL } = require('url')
-const sanitizeHTML = require('sanitize-html')
+import { DateTime } from 'luxon'
+import markdownIt from 'markdown-it'
+import { URL } from 'url'
+import sanitizeHTML from 'sanitize-html'
 
 const utmPattern = /[?&](utm_[^&=]+=[^&#]*)/gi
 const BASE_URL = 'https://coryd.dev'
 
-module.exports = {
+export default {
   // general
   trim: (string, limit) => {
     return string.length <= limit ? string : `${string.slice(0, limit)}...`

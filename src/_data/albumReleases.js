@@ -1,8 +1,8 @@
-const { AssetCache } = require('@11ty/eleventy-fetch')
-const ics = require('ics-to-json-extended')
-const { DateTime } = require('luxon')
+import { AssetCache } from '@11ty/eleventy-fetch'
+import ics from 'ics-to-json-extended'
+import { DateTime } from 'luxon'
 
-module.exports = async function () {
+export default async function () {
   const URL = process.env.SECRET_FEED_ALBUM_RELEASES
   const icsToJson = ics.default
   const asset = new AssetCache('album_release_data')

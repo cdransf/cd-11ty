@@ -1,5 +1,5 @@
-const mbidPatches = require('./json/mbid-patches.json')
+import mbidPatches from './json/mbid-patches.js'
 
-module.exports = async function () {
+export default async function () {
   return mbidPatches
 }

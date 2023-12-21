@@ -1,13 +1,9 @@
-const slugify = require('slugify')
+import slugify from 'slugify'
 
-const slugifyString = (str) => {
+export const slugifyString = (str) => {
   return slugify(str, {
     replacement: '-',
     remove: /[#,&,+()$~%.'":*?<>{}]/g,
     lower: true,
   })
-}
-
-module.exports = {
-  slugifyString,
 }

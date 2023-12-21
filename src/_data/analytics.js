@@ -1,6 +1,6 @@
-const EleventyFetch = require('@11ty/eleventy-fetch')
+import EleventyFetch from '@11ty/eleventy-fetch'
 
-module.exports = async function () {
+export default async function () {
   const API_KEY_PLAUSIBLE = process.env.API_KEY_PLAUSIBLE
   const url =
     'https://plausible.io/api/v1/stats/breakdown?site_id=coryd.dev&period=6mo&property=event:page&limit=30'

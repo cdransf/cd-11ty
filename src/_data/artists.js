@@ -1,11 +1,11 @@
-const EleventyFetch = require('@11ty/eleventy-fetch')
-const mbidPatches = require('./json/mbid-patches.json')
+import EleventyFetch from '@11ty/eleventy-fetch'
+import mbidPatches from './json/mbid-patches.js'
 
 const mbidMap = (artist) => {
   return mbidPatches[artist.toLowerCase()] || ''
 }
 
-module.exports = async function () {
+export default async function () {
   const MUSIC_KEY = process.env.API_KEY_LASTFM
   const url = `https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=coryd_&api_key=${MUSIC_KEY}&limit=8&format=json&period=7day`
   const res = EleventyFetch(url, {

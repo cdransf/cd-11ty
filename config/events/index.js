@@ -1,7 +1,7 @@
-const fs = require('fs')
-const Image = require('@11ty/eleventy-img')
+import fs from 'fs'
+import Image from '@11ty/eleventy-img'
 
-const svgToJpeg = function () {
+export const svgToJpeg = function () {
   const socialPreviewImagesDir = '_site/assets/img/social-preview/'
   fs.readdir(socialPreviewImagesDir, (err, files) => {
     if (!!files && files.length > 0) {
@@ -22,8 +22,4 @@ const svgToJpeg = function () {
       console.log('⚠ No social images found')
     }
   })
-}
-
-module.exports = {
-  svgToJpeg,
 }

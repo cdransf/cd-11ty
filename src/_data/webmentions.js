@@ -1,6 +1,6 @@
-const EleventyFetch = require('@11ty/eleventy-fetch')
+import EleventyFetch from '@11ty/eleventy-fetch'
 
-module.exports = async function () {
+export default async function () {
   const KEY_CORYD = process.env.API_KEY_WEBMENTIONS_CORYD_DEV
   const url = `https://webmention.io/api/mentions.jf2?token=${KEY_CORYD}&per-page=1000`
   const res = EleventyFetch(url, {

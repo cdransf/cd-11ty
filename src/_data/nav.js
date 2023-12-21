@@ -1,4 +1,4 @@
-module.exports = async function () {
+export default async function () {
   return {
     footer: [
       { name: 'Uses' },

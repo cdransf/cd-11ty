@@ -1,6 +1,6 @@
-const EleventyFetch = require('@11ty/eleventy-fetch')
+import EleventyFetch from '@11ty/eleventy-fetch'
 
-module.exports = async function () {
+export default async function () {
   const url = 'https://api.omg.lol/address/cory/statuses/'
   const res = EleventyFetch(url, {
     duration: '1h',

@@ -1,6 +1,6 @@
-const EleventyFetch = require('@11ty/eleventy-fetch')
+import EleventyFetch from '@11ty/eleventy-fetch'
 
-module.exports = async function () {
+export default async function () {
   const API_TOKEN_READWISE = process.env.API_TOKEN_READWISE
   const url = 'https://readwise.io/api/v3/list?location=archive'
   const res = EleventyFetch(url, {

@@ -1,13 +1,16 @@
+import { createRequire } from 'module'
+
+const require = createRequire(import.meta.url)
 const chartData = require('./json/weekly-artist-charts.json')
 const charts = chartData['charts']
 
-module.exports = async function () {
+export default async function () {
   return charts.map((chart) => {
     const artists = chart['weeklyartistchart']['artist'].splice(0, 8)
     const date = parseInt(chart['weeklyartistchart']['@attr']['to']) * 1000
     let content = 'My top artists for the week: '
     artists.forEach((artist, index) => {
-      const artistName = artist['name'].replace('&', 'and');
+      const artistName = artist['name'].replace('&', 'and')
       content += `${artistName} @ ${artist['playcount']} play${
         parseInt(artist['playcount']) > 1 ? 's' : ''
       }`

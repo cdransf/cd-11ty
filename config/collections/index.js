@@ -1,8 +1,8 @@
-const { DateTime } = require('luxon')
-const tagAliases = require('../data/tag-aliases.json')
-const { makeYearStats, processPostFile } = require('./utils')
+import { DateTime } from 'luxon'
+import tagAliases from '../data/tag-aliases.js'
+import { makeYearStats, processPostFile } from './utils.js'
 
-const tagList = (collection) => {
+export const tagList = (collection) => {
   const tagsSet = new Set()
   collection.getAll().forEach((item) => {
     if (!item.data.tags) return
@@ -13,7 +13,7 @@ const tagList = (collection) => {
   return Array.from(tagsSet).sort()
 }
 
-const tagMap = (collection) => {
+export const tagMap = (collection) => {
   const tags = {}
   collection.getAll().forEach((item) => {
     if (item.data.collections.posts) {
@@ -38,7 +38,7 @@ const tagMap = (collection) => {
   return tags
 }
 
-const postStats = (collectionApi) => {
+export const postStats = (collectionApi) => {
   const oneDayMilliseconds = 1000 * 60 * 60 * 24
   const statsObject = {
     avgDays: 0,
@@ -163,10 +163,4 @@ const postStats = (collectionApi) => {
   statsObject.totalCodeBlockCount = totalCodeBlockCount
   statsObject.highPostCount = highPostCount
   return statsObject
-}
-
-module.exports = {
-  tagList,
-  tagMap,
-  postStats,
 }

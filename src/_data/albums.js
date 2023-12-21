@@ -1,7 +1,7 @@
-const EleventyFetch = require('@11ty/eleventy-fetch')
+import EleventyFetch from '@11ty/eleventy-fetch'
 const ALBUM_DENYLIST = ['no-love-deep-web', 'unremittance']
 
-module.exports = async function () {
+export default async function () {
   const MUSIC_KEY = process.env.API_KEY_LASTFM
   const url = `https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=coryd_&api_key=${MUSIC_KEY}&limit=8&format=json&period=7day`
   const res = EleventyFetch(url, {

@@ -1,7 +1,7 @@
-const fs = require('fs')
-const writingStats = require('writing-stats')
+import fs from 'fs'
+import writingStats from 'writing-stats'
 
-const processPostFile = (filePath) => {
+export const processPostFile = (filePath) => {
   try {
     let content = fs.readFileSync(filePath, 'utf8')
     // remove front matter
@@ -30,7 +30,7 @@ const processPostFile = (filePath) => {
   }
 }
 
-const makeYearStats = (
+export const makeYearStats = (
   currentYear,
   yearPostCount,
   yearWordCount,
@@ -56,9 +56,4 @@ const makeYearStats = (
     avgWordCount: parseFloat((yearWordCount / yearPostCount).toFixed(2)),
     yearProgress,
   }
-}
-
-module.exports = {
-  processPostFile,
-  makeYearStats,
 }
