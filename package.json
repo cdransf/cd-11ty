@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "The source for my personal site, blog and portfolio. Built using 11ty and hosted on Netlify.",
   "type": "module",
   "scripts": {
@@ -55,17 +55,5 @@
     "tailwind-scrollbar": "^3.0.5",
     "tailwindcss": "^3.4.0",
     "writing-stats": "^1.0.6"
-  },
-  "lint-staged": {
-    "**/*.{js,ts,json}": [
-      "npx prettier --write",
-      "npx eslint --fix"
-    ],
-    "**/*.scss": [
-      "npx prettier --write"
-    ],
-    "**/*.{md,mkd,mdwn,mdown,mdtxt,mdtext,markdown}": [
-      "npx markdownlint --config ./markdownlint.config.json --fix"
-    ]
   }
 }
