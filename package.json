@@ -4,11 +4,11 @@
   "description": "The source for my personal site, blog and portfolio. Built using 11ty and hosted on Netlify.",
   "type": "module",
   "scripts": {
-    "start": "NODE_ENV=development npx tailwindcss -i ./tailwind.css -o src/assets/styles/tailwind.css && rm -rf .cache && ELEVENTY_PRODUCTION=false eleventy --serve",
-    "debug": "NODE_ENV=development npx tailwindcss -i ./tailwind.css -o src/styles/tailwind.css && DEBUG=Eleventy* npx @11ty/eleventy --serve",
+    "start": "ELEVENTY_PRODUCTION=false eleventy --serve && NODE_ENV=development npx tailwindcss -i ./tailwind.css -o src/assets/styles/tailwind.css && rm -rf .cache",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve && NODE_ENV=development npx tailwindcss -i ./tailwind.css -o src/styles/tailwind.css",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "build": "NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o src/styles/tailwind.css --minify && ELEVENTY_PRODUCTION=true eleventy"
+    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o src/styles/tailwind.css --minify"
   },
   "keywords": [
     "11ty",
