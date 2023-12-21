@@ -8,8 +8,7 @@
     "debug": "NODE_ENV=development npx tailwindcss -i ./tailwind.css -o src/styles/tailwind.css && DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "build": "NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o src/styles/tailwind.css --minify && ELEVENTY_PRODUCTION=true eleventy",
-    "prepare": "husky install && touch ./.git/COMMIT_EDITMSG"
+    "build": "NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o src/styles/tailwind.css --minify && ELEVENTY_PRODUCTION=true eleventy"
   },
   "keywords": [
     "11ty",
@@ -25,7 +24,7 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@catppuccin/tailwindcss": "^0.1.6",
-    "@rknightuk/eleventy-plugin-post-graph": "^1.0.3",
+    "@rknightuk/eleventy-plugin-post-graph": "^1.0.4",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.10",
