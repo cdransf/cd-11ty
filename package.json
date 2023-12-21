@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "The source for my personal site, blog and portfolio. Built using 11ty and hosted on Netlify.",
   "type": "module",
   "scripts": {
@@ -47,7 +47,6 @@
     "marked": "^11.1.0",
     "outdent": "^0.8.0",
     "pagefind": "^1.0.4",
-    "postcss": "^8.4.32",
     "sanitize-html": "^2.11.0",
     "slugify": "^1.6.6",
     "striptags": "^3.2.0",
