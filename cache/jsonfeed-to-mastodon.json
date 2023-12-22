@@ -8105,7 +8105,10 @@
     "url": "https://locusmag.com/2023/12/commentary-cory-doctorow-what-kind-of-bubble-is-ai/",
     "content_text": "🔗: Cory Doctorow: What Kind of Bubble is AI? #Tech https://locusmag.com/2023/12/commentary-cory-doctorow-what-kind-of-bubble-is-ai/",
     "date_published": "Tue, 19 Dec 2023 17:03:52 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111622081210344612"
+    ],
+    "lastTootTimestamp": 1703217791948
   },
   "https://adrianroselli.com/2023/12/baseline-does-not-really-cover-baseline-support.html": {
     "id": "aHR0cHM6Ly9hZHJpYW5yb3NlbGxpLmNvbS8yMDIzLzEyL2Jhc2VsaW5lLWRvZXMtbm90LXJlYWxseS1jb3Zlci1iYXNlbGluZS1zdXBwb3J0Lmh0bWw=",
@@ -8128,5 +8131,13 @@
       "https://social.lol/users/cory/statuses/111621642579180184"
     ],
     "lastTootTimestamp": 1703211098982
+  },
+  "https://trakt.tv/movies/escape-from-new-york-1981": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvZXNjYXBlLWZyb20tbmV3LXlvcmstMTk4MQ==",
+    "title": "🎥: Escape from New York",
+    "url": "https://trakt.tv/movies/escape-from-new-york-1981",
+    "content_text": "🎥: Escape from New York #Movies #Watching #Trakt https://trakt.tv/movies/escape-from-new-york-1981",
+    "date_published": "Thu, 21 Dec 2023 15:00:00 +0000",
+    "toots": []
   }
 }
