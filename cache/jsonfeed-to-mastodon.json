@@ -8145,5 +8145,16 @@
       "https://social.lol/users/cory/statuses/111622554629634812"
     ],
     "lastTootTimestamp": 1703225015784
+  },
+  "https://coryd.dev/now?ts=1703160000000": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MDMxNjAwMDAwMDA=",
+    "title": "🎧: My top artists for the week: Vektor @ 61 plays, AFI @ 32 plays, Mastodon @ 27 plays, Gudsforladt @ 26 plays, Nucleus @ 25 plays, Panopticon @ 22 plays, Dinosaur Jr. @ 20 plays, Obliteration @ 16 plays #Music #LastFM",
+    "url": "https://coryd.dev/now?ts=1703160000000",
+    "content_text": "🎧: My top artists for the week: Vektor @ 61 plays, AFI @ 32 plays, Mastodon @ 27 plays, Gudsforladt @ 26 plays, Nucleus @ 25 plays, Panopticon @ 22 plays, Dinosaur Jr. @ 20 plays, Obliteration @ 16 plays #Music #LastFM  https://coryd.dev/now?ts=1703160000000",
+    "date_published": "Thu, 21 Dec 2023 12:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111623496231910137"
+    ],
+    "lastTootTimestamp": 1703239383471
   }
 }
