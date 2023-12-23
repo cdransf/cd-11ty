@@ -5,7 +5,7 @@ permalink: /stats.html
 ---
 <p>My first post was published on <strong class="highlight-text">{{ collections.postStats.firstPostDate | dateToReadableDate }}</strong> and my most recent one was published on <strong class="highlight-text">{{ collections.postStats.lastPostDate | dateToReadableDate }}</strong>. I've published <strong class="highlight-text">{{ collections.postStats.postCount }} posts</strong> containing <strong class="highlight-text">{{ collections.postStats.totalWordCount }} words</strong> and <strong class="highlight-text">{{ collections.postStats.totalCodeBlockCount }} code samples</strong>.</p>
 <p>Posts have, on average, <strong class="highlight-text">{{ collections.postStats.avgWordCount | round }} words</strong> and a gap of <strong class="highlight-text">{{ collections.postStats.avgDays | round }} days</strong> between them.</p>
-<h3>Popular posts</h3>
+<h2>Popular posts</h2>
 <ol class="list-inside pl-5 md:pl-10">
   {% assign posts = collections.posts | getPopularPosts: analytics %}
   {% for post in posts limit: 10 %}
@@ -18,5 +18,5 @@ permalink: /stats.html
 </ol>
 <h3>Posts by year</h3>
 {% render "partials/post-graph.liquid", postYears: collections.postStats.years %}
-<h3>Post distribution graphs</h3>
+<h4>Post distribution graphs</h4>
 {%- postGraph collections.posts -%}
