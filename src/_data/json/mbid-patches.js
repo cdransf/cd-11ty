@@ -17,6 +17,7 @@ export default {
   osees: '194272cc-dcc8-4640-a4a6-66da7d250d5c',
   panopticon: 'd9b1f00a-31a7-4f64-9f29-8481e7be8911',
   'pigment vehicle': 'c421f86c-991c-4b2d-9058-516375903deb',
+  'phoebe bridgers': '96855c21-b832-4366-ba12-0d2330c36a86',
   'regional justice center': '64ad5550-e93f-4add-80c3-e6b651f4f250',
   worm: '6313658e-cd68-4c81-9778-17ce3825748e',
 }
