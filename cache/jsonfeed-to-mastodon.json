@@ -8200,5 +8200,16 @@
       "https://social.lol/users/cory/statuses/111628216221836005"
     ],
     "lastTootTimestamp": 1703311404808
+  },
+  "https://trakt.tv/movies/barbie-2023": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvYmFyYmllLTIwMjM=",
+    "title": "🎥: Barbie",
+    "url": "https://trakt.tv/movies/barbie-2023",
+    "content_text": "🎥: Barbie #Movies #Watching #Trakt https://trakt.tv/movies/barbie-2023",
+    "date_published": "Sat, 23 Dec 2023 23:04:19 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111632496460441568"
+    ],
+    "lastTootTimestamp": 1703376716138
   }
 }
