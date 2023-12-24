@@ -1,6 +1,7 @@
 export default {
   adramelech: '259e6968-a841-4fc5-b02b-54665b85977b',
   afi: '1c3919b2-43ca-4a4a-935d-9d50135ec0ef',
+  basement: 'a8c7ff7a-ebc0-42c7-8828-475decf0ccdd',
   'carnal tomb': 'e24534dc-d29e-4e0b-84fa-26d487b0790a',
   'carpe noctem': 'aa349181-1cb9-4340-bb3f-82eefba3e697',
   cruciamentum: '9a783663-db0c-4237-a3a9-afe72d055ddc',
