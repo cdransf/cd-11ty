@@ -22,7 +22,8 @@ const emojiMap = (genre, artist) => {
     genre.includes('country') ||
     genre.includes('americana') ||
     genre.includes('bluegrass') ||
-    genre.includes('folk')
+    genre.includes('folk') ||
+    genre.includes('songwriter')
   )
     return '🪕'
   if (genre.includes('post-punk')) return '😔'
