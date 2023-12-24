@@ -11,6 +11,7 @@ export default {
   ghastly: '70f969df-7fc1-421e-afad-678c0bbd1aea',
   'home is where': '76ead0bf-51e0-43c8-ae8f-59caefdd84a2',
   krallice: 'b4e4b359-76a3-447e-be1d-80a24887134e',
+  'la dispute': '2ec89bcc-5bf9-4d2a-ac5e-44b7496d115a',
   nucleus: '9eefaa74-8dea-41af-8bb3-0d9616bec16f',
   oasis: '39ab1aed-75e0-4140-bd47-540276886b60',
   obliteration: '5c241a91-d7e9-447a-807c-e4a8435f10ef',
