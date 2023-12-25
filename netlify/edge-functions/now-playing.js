@@ -4,6 +4,7 @@ const emojiMap = (genre, artist) => {
   if (artist === 'Black Flag') return '🏴'
   if (artist === 'Bruce Springsteen') return '🇺🇸'
   if (artist === 'Carcass') return '🥼'
+  if (artist === 'Counting Crows') return '🐦‍⬛'
   if (artist === 'David Bowie') return '👨🏻‍🎤'
   if (artist === 'Full of Hell & Nothing') return '🫨🎸'
   if (artist === 'Imperial Triumphant') return '🎭'
