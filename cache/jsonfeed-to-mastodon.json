@@ -8233,5 +8233,16 @@
       "https://social.lol/users/cory/statuses/111638635153141546"
     ],
     "lastTootTimestamp": 1703470385102
+  },
+  "https://app.thestorygraph.com/books/05de5de3-3572-4d50-b70e-651909502ca1": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvMDVkZTVkZTMtMzU3Mi00ZDUwLWI3MGUtNjUxOTA5NTAyY2Ex",
+    "title": "📖: NoMeansNo: From Obscurity to Oblivion: an Oral History",
+    "url": "https://app.thestorygraph.com/books/05de5de3-3572-4d50-b70e-651909502ca1",
+    "content_text": "📖: NoMeansNo: From Obscurity to Oblivion: an Oral History #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/05de5de3-3572-4d50-b70e-651909502ca1",
+    "date_published": "Sun, 24 Dec 2023 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111644287617733599"
+    ],
+    "lastTootTimestamp": 1703556634838
   }
 }
