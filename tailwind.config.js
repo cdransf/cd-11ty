@@ -11,7 +11,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['system-ui', 'sans-serif'],
+        sans: ['silka', 'Inter', 'Roboto', 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', 'Arial', 'system-ui', 'sans-serif'],
         mono: [
           'ui-monospace',
           'Cascadia Code',
