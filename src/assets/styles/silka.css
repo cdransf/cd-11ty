@@ -4,6 +4,7 @@
     format('woff2');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
     format('woff2');
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
     format('woff2');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
     format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -36,4 +40,5 @@
     format('woff2');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
