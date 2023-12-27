@@ -8244,5 +8244,16 @@
       "https://social.lol/users/cory/statuses/111644287617733599"
     ],
     "lastTootTimestamp": 1703556634838
+  },
+  "https://trakt.tv/movies/chasing-amy-1997": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvY2hhc2luZy1hbXktMTk5Nw==",
+    "title": "🎥: Chasing Amy",
+    "url": "https://trakt.tv/movies/chasing-amy-1997",
+    "content_text": "🎥: Chasing Amy #Movies #Watching #Trakt https://trakt.tv/movies/chasing-amy-1997",
+    "date_published": "Tue, 26 Dec 2023 18:41:54 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111648976499723320"
+    ],
+    "lastTootTimestamp": 1703628181538
   }
 }
