@@ -538,6 +538,7 @@ code {
 
 article h2 {
   line-height: var(--line-height-2xl);
+  margin-bottom: 0;
 }
 
 article time {
