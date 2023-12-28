@@ -1,6 +1,6 @@
 <a
-  class="link--icon"
-  href="{{ link }}"
+  class="link--icon {{ icon }}"
+  href="{{ link | downcase }}"
   rel="me"
   title="{{ name }}">
   {% tablericon icon name %}

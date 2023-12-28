@@ -25,6 +25,17 @@
   --white: #fff;
   --black: #000;
 
+  --brand-github: #333;
+  --brand-github-light: #f5f5f5;
+  --brand-gmail: #34a853;
+  --brand-mastodon: #6364ff;
+  --brand-lastfm: #d51007;
+  --brand-trakt: #ed1c24;
+  --brand-storygraph: #14919b;
+  --brand-buy-me-a-coffee: #ffdd00;
+  --brand-rss: #f26522;
+  --webrings: #ec8fd0;
+
   /* fonts */
   --font-sans: silka, Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, system-ui, sans-serif;
   --font-mono: ml, ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
@@ -61,6 +72,10 @@
 
   /* transitions */
   --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* svgs */
+  --stroke-width-default: 1.4;
+  --stroke-width-bold: 2;
 }
 
 @keyframes spin {
@@ -161,7 +176,7 @@ h4 > svg,
 h5 > svg,
 h6 > svg {
   margin-right: .25rem;
-  stroke-width: 2 !important;
+  stroke-width: var(--stroke-width-bold) !important;
 }
 
 hr {
@@ -277,8 +292,58 @@ nav ul li a {
 }
 
 nav svg {
-  stroke: var(--black);
   margin-top: .125rem;
+}
+
+nav svg:hover {
+  stroke-width: var(--stroke-width-bold);
+}
+
+nav .at svg {
+  stroke: var(--brand-gmail);
+}
+
+nav .brand-github svg {
+  stroke: var(--brand-github);
+}
+
+nav .brand-mastodon svg {
+  stroke: var(--brand-mastodon);
+}
+
+nav .brand-lastfm svg {
+  stroke: var(--brand-lastfm);
+}
+
+nav .device-tv svg {
+  stroke: var(--brand-trakt);
+}
+
+nav .books svg {
+  stroke: var(--brand-storygraph);
+}
+
+nav .cup svg {
+  stroke: var(--brand-buy-me-a-coffee);
+}
+
+nav .heart-handshake svg {
+  stroke: var(--webrings);
+}
+
+nav .rss svg {
+  stroke: var(--brand-rss);
+}
+
+nav .tags svg,
+nav .search svg {
+  stroke: var(--black);
+}
+
+nav .tags svg:hover,
+nav .search svg:hover {
+  stroke: var(--blue-800);
+  stroke-width: var(--stroke-width-default);
 }
 
 nav ul li:last-child {
@@ -290,6 +355,10 @@ nav ul li:last-child {
   color: var(--blue-600);
   stroke: var(--blue-600);
   cursor: not-allowed;
+}
+
+.active svg:hover {
+  stroke-width: var(--stroke-width-default);
 }
 
 .link--icon {
@@ -529,11 +598,11 @@ article time {
 
 /* icons */
 [data-tablericon-name] {
-  stroke-width: 1.4;
+  stroke-width: var(--stroke-width-default);
 }
 
 .icon--bold > svg {
-  stroke-width: 2;
+  stroke-width: var(--stroke-width-bold);
 }
 
 .icon--spin > svg {
@@ -1182,6 +1251,20 @@ textarea {
   /* nav */
   nav ul li a {
     color: var(--white);
+  }
+
+  nav .brand-github svg {
+    stroke: var(--brand-github-light);
+  }
+
+  nav .tags svg,
+  nav .search svg {
+    stroke: var(--white);
+  }
+
+  nav .tags svg:hover,
+  nav .search svg:hover {
+    stroke: var(--blue-200);
   }
 
   .active,
