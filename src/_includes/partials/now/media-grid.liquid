@@ -8,7 +8,7 @@
     {% for item in media limit: count %}
       {% assign alt = item.alt | strip %}
       <a href="{{ item.url | stripUtm }}" title="{{ alt | escape }}">
-        <div class="item__wrapper"{% if shape != 'square' %} style="max-width:226px"{% endif %}>
+        <div class="item__wrapper">
           <div class="item__cover{% if item.subtext %} gradient{% endif %}"></div>
           <div class="item__meta-text">
             {% if item.title %}

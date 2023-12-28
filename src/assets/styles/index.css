@@ -759,6 +759,10 @@ ol li {
   grid-template-columns: repeat(3,minmax(0,1fr));
 }
 
+.media__grid.vertical .item__wrapper {
+  max-width: 165px;
+}
+
 .media__grid .item__wrapper {
   position: relative;
   overflow: hidden;
@@ -1143,6 +1147,10 @@ textarea {
 
   .media__grid.vertical {
     grid-template-columns: repeat(6,minmax(0,1fr));
+  }
+
+  .media__grid.vertical .item__wrapper {
+    max-width: 121px;
   }
 
   /* contact */
