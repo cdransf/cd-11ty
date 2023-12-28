@@ -215,17 +215,16 @@ main {
   line-height: var(--line-height-2xl);
 }
 
-article a h2 {
-  line-height: var(--line-height-2xl);
+.now__topper h2 a,
+article a h2,
+.main__title h1 a,
+footer .links__secondary a {
+  text-decoration: none;
 }
 
 .main__title h1 a,
-.now__topper h2 a,
-article a h2,
 footer .links__secondary a {
   color: var(--black);
-  stroke: var(--black);
-  text-decoration: none;
 }
 
 .main__title h1 a:hover,
@@ -247,7 +246,7 @@ footer .links__secondary a:active {
 article {
   border-bottom: 1px solid var(--gray-200);
   margin-bottom: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .now__topper h2 {
@@ -458,8 +457,12 @@ code {
 }
 
 /* articles */
+.article__wrapper {
+  padding-top: 1rem;
+}
+
 article h2 {
-  margin-bottom: .5rem;
+  line-height: var(--line-height-2xl);
 }
 
 article time {
@@ -772,9 +775,17 @@ ol li {
   margin-bottom: 1.5rem;
 }
 
+.webmentions__wrapper .interaction__wrapper:last-child {
+  margin-bottom: 0;
+}
+
 .webmentions__wrapper .interaction__wrapper .comment__wrapper {
   width: 100%;
   padding-bottom: 1rem;
+}
+
+.webmentions__wrapper .interaction__wrapper .comment__wrapper:last-child {
+  padding-bottom: 0;
 }
 
 .webmentions__wrapper .interaction__wrapper .comment__wrapper--interior {

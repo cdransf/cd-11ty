@@ -5,9 +5,8 @@ description: 'I could not be more excited for this release.'
 draft: false
 tags: ['music']
 ---
+I could not be more excited for this release.<!-- excerpt -->
 
 <https://www.youtube.com/watch?v=V8ia-nyd_K8>
 
-I could not be more excited for this release.
-
-Kudos to Roadburn Festival [for commissioning the piece](https://roadburn.com/premiere-waste-of-space-orchestra-seekers-reflection/).<!-- excerpt -->
+Kudos to Roadburn Festival [for commissioning the piece](https://roadburn.com/premiere-waste-of-space-orchestra-seekers-reflection/).

@@ -3,24 +3,26 @@ layout: main
 schema: blog
 ---
 {% render "partials/header.liquid", meta: meta, page: page, nav: nav %}
-<article class="h-entry" data-pagefind-body>
-  {% if link %}
-    <a class="no-underline" href="{{ link }}">
-      <h2 data-pagefind-meta="title">
-        {% tablericon 'link' title %}
-        {{ title }}
-      </h2>
-    </a>
-  {% else %}
-    <h2 class="p-name" data-pagefind-meta="title">{{ title }}</h2>
-  {% endif %}
-  <span class="p-author h-card hidden">{{ meta.author }}</span>
-  <time class="dt-published" datetime="{{ date }}">{{ date | readableDate }}</time>
-  <div class="p-summary hidden">{{ post_excerpt | markdown }}</div>
-  <div class="e-content">
-    {{ content }}
-  </div>
-</article>
+<div class="article__wrapper">
+  <article class="h-entry" data-pagefind-body>
+    {% if link %}
+      <a class="no-underline" href="{{ link }}">
+        <h2 data-pagefind-meta="title">
+          {% tablericon 'link' title %}
+          {{ title }}
+        </h2>
+      </a>
+    {% else %}
+      <h2 class="p-name" data-pagefind-meta="title">{{ title }}</h2>
+    {% endif %}
+    <span class="p-author h-card hidden">{{ meta.author }}</span>
+    <time class="dt-published" datetime="{{ date }}">{{ date | readableDate }}</time>
+    <div class="p-summary hidden">{{ post_excerpt }}</div>
+    <div class="e-content">
+      {{ content }}
+    </div>
+  </article>
+</div>
 {% render "partials/post-tags.liquid", tags: tags %}
 {% render "partials/webmentions/container.liquid", webmentions: webmentions, page: page %}
 {% render "partials/author.liquid", meta: meta %}
