@@ -8255,5 +8255,16 @@
       "https://social.lol/users/cory/statuses/111648976499723320"
     ],
     "lastTootTimestamp": 1703628181538
+  },
+  "https://trakt.tv/movies/rebel-moon-part-one-a-child-of-fire-2023": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvcmViZWwtbW9vbi1wYXJ0LW9uZS1hLWNoaWxkLW9mLWZpcmUtMjAyMw==",
+    "title": "🎥: Rebel Moon - Part One: A Child of Fire",
+    "url": "https://trakt.tv/movies/rebel-moon-part-one-a-child-of-fire-2023",
+    "content_text": "🎥: Rebel Moon - Part One: A Child of Fire #Movies #Watching #Trakt https://trakt.tv/movies/rebel-moon-part-one-a-child-of-fire-2023",
+    "date_published": "Wed, 27 Dec 2023 14:57:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111655141630226443"
+    ],
+    "lastTootTimestamp": 1703722253946
   }
 }
