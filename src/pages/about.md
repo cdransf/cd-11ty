@@ -4,7 +4,7 @@ layout: default
 permalink: /about.html
 ---
 <div class="avatar__wrapper">
-  <div class="avatar">
+  <div class="avatar__wrapper--interior">
     {% capture about_alt %}{{ meta.siteName }} - image by David Neal / @reverentgeek{% endcapture %}
     {% image './src/assets/img/avatar.webp', about_alt %}
   </div>
