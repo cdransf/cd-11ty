@@ -525,6 +525,12 @@ code {
   background-color: var(--blue-800) !important;
 }
 
+.pill--button svg:hover,
+.pill--button svg:active,
+.pill--button svg:focus {
+  stroke: var(--white);
+}
+
 /* articles */
 .article__wrapper {
   padding-top: 1rem;
