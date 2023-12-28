@@ -1,14 +1,14 @@
 {
   "name": "coryd.dev",
-  "version": "3.0.2",
+  "version": "4.0.0",
   "description": "The source for my personal site, blog and portfolio. Built using 11ty and hosted on Netlify.",
   "type": "module",
   "scripts": {
-    "start": "ELEVENTY_PRODUCTION=false eleventy --serve && NODE_ENV=development npx tailwindcss -i ./tailwind.css -o src/assets/styles/tailwind.css && rm -rf .cache",
-    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve && NODE_ENV=development npx tailwindcss -i ./tailwind.css -o src/styles/tailwind.css",
+    "start": "ELEVENTY_PRODUCTION=false eleventy --serve",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o src/styles/tailwind.css --minify"
+    "build": "ELEVENTY_PRODUCTION=true eleventy"
   },
   "keywords": [
     "11ty",
@@ -23,11 +23,7 @@
     "@11ty/eleventy-img": "^3.1.8",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@catppuccin/tailwindcss": "^0.1.6",
     "@rknightuk/eleventy-plugin-post-graph": "^1.0.4",
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/line-clamp": "^0.4.4",
-    "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.16",
     "child_process": "^1.0.2",
     "clean-css": "^5.3.3",
@@ -50,8 +46,6 @@
     "sanitize-html": "^2.11.0",
     "slugify": "^1.6.6",
     "striptags": "^3.2.0",
-    "tailwind-scrollbar": "^3.0.5",
-    "tailwindcss": "^3.4.0",
     "writing-stats": "^1.0.6"
   }
 }

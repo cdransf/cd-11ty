@@ -169,6 +169,6 @@ Finally, if the page this all lives on is loaded by a client without JavaScript 
 
 All of this, yields the single line at the bottom of this image — updated on each visit.
 
-{% image 'https://cdn.coryd.dev/blog/now-playing.jpg', 'Now playing', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full' %}
+{% image 'https://cdn.coryd.dev/blog/now-playing.jpg', 'Now playing', 'image__banner' %}
 
 [^1]: Plus explicit conditions matching David Bowie and Minor Threat.

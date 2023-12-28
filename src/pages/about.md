@@ -3,14 +3,13 @@ title: About
 layout: default
 permalink: /about.html
 ---
-
-<div class="flex items-center justify-center w-full not-prose mb-6">
-  <div class="border border-blue-600 dark:border-blue-400 bg-white rounded-full overflow-hidden p-4 w-64 h-64 md:w-96 md:h-96 flex items-center [&>*]:w-full [&>*]:h-auto">
+<div class="avatar__wrapper">
+  <div class="avatar">
     {% capture about_alt %}{{ meta.siteName }} - image by David Neal / @reverentgeek{% endcapture %}
     {% image './src/assets/img/avatar.webp', about_alt %}
   </div>
 </div>
-<h1 class="text-xxl font-black -leading-tight tracking-normal dark:text-white md:text-3xl text-center">Hi, I'm Cory</h1>
+<h2 class="page__header text-center">Hi, I'm Cory</h2>
 
 I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, [music](https://last.fm/user/coryd_), writing, [reading](https://app.thestorygraph.com/profile/coryd), [tv](https://trakt.tv/users/cdransf) and [movies](https://trakt.tv/users/cdransf).
 

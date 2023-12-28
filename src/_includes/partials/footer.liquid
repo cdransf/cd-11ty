@@ -1,13 +1,13 @@
 <footer>
-  <div class="mt-8 pt-8 pb-4 flex gap-2 md:gap-3 justify-center w-full">
+  <nav class="social__main">
     {% for link in nav.social %}
       {% render "partials/nav/linked-icon.liquid", name: link.name, link: link.url, icon: link.icon %}
     {% endfor %}
-  </div>
-  <div class="flex justify-center text-sm text-gray-500 dark:text-gray-100 pb-8 text-center">
+  </nav>
+  <nav class="links__secondary">
     {% for link in nav.footer %}
       {% render "partials/nav/link.liquid", page: page, link: link.name, icon: link.icon %}
-      {% if not forloop.last %}<span class="mx-1">•</span>{% endif %}
+      {% if not forloop.last %}<span>•</span>{% endif %}
     {% endfor %}
-  </div>
+  </nav>
 </footer>

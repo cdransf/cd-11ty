@@ -1,12 +1,12 @@
 {% assign posts = posts | getPopularPosts: analytics %}
-<div class="not-prose">
-  <h2 class="[&>svg]:h-5 [&>svg]:w-5 [&>svg]:md:h-7 [&>svg]:md:w-7 [&>svg]:inline icon--bold m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-white md:text-2xl mt-8 mb-4">
+<div class="popular-posts">
+  <h2>
     {% tablericon "flame" "Popular" %}
     Popular posts
   </h2>
-  <ul class="list-inside list-disc pl-5 md:pl-10">
+  <ul>
     {% for post in posts limit: 5 %}
-      <li class="mt-1.5 mb-2">
+      <li>
         <a href="{{post.url}}" title="{{ post.data.title | escape}}">
           {{ post.data.title }}
         </a>

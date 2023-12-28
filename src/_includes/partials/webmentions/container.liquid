@@ -1,5 +1,5 @@
 {% if webmentions %}
-  <div class="border-t border-gray-200 mt-12 pt-12 dark:border-gray-700">
+  <div class="webmentions__wrapper">
     {% assign mentions = webmentions.mentions | webmentionsByUrl: page.url %}
     {% render "partials/webmentions/interaction.liquid", mentions: mentions, type: 'repost-of' %}
     {% render "partials/webmentions/interaction.liquid", mentions: mentions, type: 'like-of' %}

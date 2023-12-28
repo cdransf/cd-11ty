@@ -1,36 +1,36 @@
 {% if data.size > 0 %}
   {% assign media = data | normalizeMedia %}
-  <h2 class="[&>svg]:h-5 [&>svg]:w-5 [&>svg]:md:h-7 [&>svg]:md:w-7 [&>svg]:-mt-1 [&>svg]:md:-mt-1.5 [&>svg]:inline icon--bold m-0 text-xl font-black leading-tight tracking-normal dark:text-white md:text-2xl mt-8 mb-4">
+  <h2 class="now__section--header">
     {% tablericon icon title %}
     {{ title }}
   </h2>
-  <div class="grid gap-2 {% if shape == 'square' %}grid-cols-2 md:grid-cols-4{% else %}grid-cols-3 md:grid-cols-6{% endif %} not-prose">
+  <div class="media__grid {% if shape == 'square' %}square{% else %}vertical{% endif %}">
     {% for item in media limit: count %}
       {% assign alt = item.alt | strip %}
       <a href="{{ item.url | stripUtm }}" title="{{ alt | escape }}">
-        <div class="relative block h-full rounded-lg overflow-hidden"{% if shape != 'square' %} style="max-width:226px"{% endif %}>
-          <div class="absolute left-0 top-0 h-full w-full rounded-lg border border-blue-600 hover:border-blue-800 dark:border-blue-400 dark:hover:border-blue-200 ease-in-out duration-300{% if item.subtext %} bg-cover-gradient{% endif %}"></div>
-          <div class="absolute px-1.5 bottom-2 drop-shadow-md w-full">
+        <div class="item__wrapper"{% if shape != 'square' %} style="max-width:226px"{% endif %}>
+          <div class="item__cover{% if item.subtext %} gradient{% endif %}"></div>
+          <div class="item__meta-text">
             {% if item.title %}
-              <div class="text-xs font-bold text-white line-clamp-2">{{ item.title }}</div>
+              <div class="header">{{ item.title }}</div>
             {% endif %}
             {% if item.percentage %}
               {% render "partials/now/progress-bar.liquid", percentage:item.percentage %}
             {% endif %}
             {% if item.subtext %}
-              <div class="text-xs text-white line-clamp-2">
+              <div class="subheader">
                 {{ item.subtext }}
               </div>
             {% endif %}
           </div>
-          {%- capture loadingStrategy %}
-            {% if loading %}
+          {%- capture loadingStrategy -%}
+            {%- if loading -%}
               {{ loading }}
-            {% else %}
+            {%- else -%}
               'lazy'
-            {% endif %}
-          {% endcapture -%}
-          {% image item.image, alt, 'rounded-lg w-full h-full [&>*]:w-full [&>*]:h-full', loadingStrategy %}
+            {%- endif -%}
+          {%- endcapture -%}
+          {% image item.image, alt, 'item__image', loadingStrategy %}
         </div>
       </a>
     {% endfor %}

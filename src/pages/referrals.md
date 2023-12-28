@@ -4,12 +4,7 @@ layout: default
 permalink: /referrals.html
 description: 'Referral links for services that I use.'
 ---
-
-<h2
-  class="m-0 text-xl font-black leading-tight tracking-normal dark:text-white md:text-2xl mb-2"
->
-  {{ title }}
-</h2>
+<h2 class="page__header">{{ title }}</h2>
 
 Referral links for services I use. I save some money, and you do as well if you choose to use them.
 

@@ -4,31 +4,31 @@ layout: now
 permalink: /now.html
 description: "See what I'm doing now."
 ---
-<h2 class="[&>svg]:h-5 [&>svg]:w-5 [&>svg]:md:h-7 [&>svg]:md:w-7 [&>svg]:-mt-1 [&>svg]:md:-mt-1.5 [&>svg]:inline icon--bold m-0 text-xl font-black leading-tight tracking-normal dark:text-white md:text-2xl mt-8 mb-4">
+<h2 class="now__section--header">
   {% tablericon "clock-heart" "Currently" %}
   Currently
 </h2>
-<div class="pl-4 md:pl-8">
+<div class="now__section--text">
     {% render "partials/now/status.liquid", status:status %}
-  <p class="my-2 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:inline">
+  <p>
     {% tablericon "map-2" "Map" %}
     Living in Camarillo, California with my beautiful family, 4 rescue dogs and a guinea pig.
   </p>
-  <p class="my-2 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:inline">
+  <p>
     {% tablericon "play-basketball" "NBA - Lakers" %}
     Rooting for the <a href="https://lakers.com">Lakers</a>. 💜💛
   </p>
 </div>
-<h2 class="[&>svg]:h-5 [&>svg]:w-5 [&>svg]:md:h-7 [&>svg]:md:w-7 [&>svg]:-mt-1 [&>svg]:md:-mt-1.5 [&>svg]:inline icon--bold m-0 text-xl font-black leading-tight tracking-normal dark:text-white md:text-2xl mt-8 mb-4">
+<h2 class="now__section--header">
   {% tablericon "terminal-2" "Making" %}
   Making
 </h2>
-<div class="pl-4 md:pl-8">
-  <p class="my-2 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:inline">
+<div class="now__section--text">
+  <p>
     {% tablericon "code" "Hacking" %}
     Hacking away on projects like this page, my <a href="/">blog</a>, and whatever else I can find time for.
   </p>
-  <p class="my-2 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:inline">
+  <p>
     {% tablericon "hand-stop" "Ad and tracker-blocking" %}
     Assembling lists of <a href="https://github.com/cdransf/awesome-adblock">ad and tracker-blocking tools</a>.
   </p>

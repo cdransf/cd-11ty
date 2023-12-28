@@ -5,18 +5,13 @@ permalink: /uses.html
 description: 'Software, tools and services that I use regularly.'
 image: https://coryd.dev/assets/img/pages/uses.jpg
 ---
-
-<h2
-  class="m-0 text-xl font-black leading-tight tracking-normal dark:text-white md:text-2xl mb-2"
->
-  {{ title }}
-</h2>
+<h2 class="page__header">{{ title }}</h2>
 
 Software and services that I use for work and my own enjoyment.
 
-{% image 'https://coryd.dev/assets/img/pages/uses.jpg', 'My desk', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full', 'eager' %}
+{% image 'https://coryd.dev/assets/img/pages/uses.jpg', 'My desk', 'image__banner', 'eager' %}
 
-<h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Computer setup</h3>
+<h3>Computer setup</h3>
 
 - Midnight MacBook Air (2022 - M2)
 - 27" Dell Monitor
@@ -25,22 +20,22 @@ Software and services that I use for work and my own enjoyment.
 - Homepod Mini for audio
 - Raspberry Pi for Homebridge
 
-<h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Desk and chair</h3>
+<h3>Desk and chair</h3>
 
 - My desk is a custom made corner desk I bought on Etsy years ago. It's sturdy, has tons of storage and finally arrived with a chip on the surface to add some character after the first one got lost by the freight company on the journey from Michigan to Los Angeles. I probably _wouldn't_ repeat the experience, but I do love the desk.
 - [Herman Miller Aeron chair](https://www.hermanmiller.com/products/seating/office-chairs/aeron-chairs/): it's pretty comfortable and makes swiveling around my corner desk easy.
 
-<h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS + iOS</h3>
+<h3>macOS + iOS</h3>
 
 - [Bear](https://bear.app): native, fast and flexible — it's a breeze to use across Apple's ecosystem.
 - [Fantastical](https://flexibits.com/fantastical): the best and most powerful calendaring app for the Apple ecosystem, bar none.
 - [Ivory](https://tapbots.com/ivory): a beautifully designed and extremely well built Mastodon app — I use it as my go-to client across all of my devices.
 
-<h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">iOS</h3>
+<h3>iOS</h3>
 
 - [FontCase](https://apps.apple.com/us/app/fontcase-manage-your-type/id1205074470): for managing/installing fonts.
 
-<h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">macOS</h3>
+<h3>macOS</h3>
 
 - [Gmail Desktop](https://github.com/timche/gmail-desktop): yes it's Electron, but it's thoughtfully developed and built (be sure to opt into the latest beta updates ahead of the next major version).
 - [Rectangle](https://rectangleapp.com): to quickly move around/organize/snap application windows. Using a Mac without it now feels like it's broken.
@@ -52,14 +47,14 @@ Software and services that I use for work and my own enjoyment.
 - [SoundSource](https://rogueamoeba.com/soundsource): a handy utility for better, more granular control on macOS.
 - [Sleeve](https://replay.software/sleeve): a lightweight music controller (that also supports scrobbling).
 
-<h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Dev tools</h3>
+<h3>Dev tools</h3>
 
 - [Visual Studio Code](https://code.visualstudio.com): the reigning industry standard for web development work.
 - [iTerm2](https://iterm2.com): a more configurable terminal than the one macOS ships with. I've used it for a long time now and it's still my go-to.
 - [Catppuccin](https://github.com/catppuccin): nearly as ubiquitous as Dracula but lighter and more playful, I've started using this theme wherever I'm looking at/reading/writing code.
 - [Mono Lisa](https://monolisa.dev): a relatively new find, I've been enjoying how pleasant and readable this font is (and have even gone so far as to install it on iOS via [FontCase](https://apps.apple.com/us/app/fontcase-manage-your-type/id1205074470)).
 
-<h3 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">Services</h3>
+<h3>Services</h3>
 
 - [Gmail](https://www.google.com/gmail/about): it's exceedingly well established and Google's apps are so ubiquitous that it's hard to avoid.
 - <a class="plausible-event-name=NextDNS+referral" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>: a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.

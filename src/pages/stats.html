@@ -6,10 +6,10 @@ permalink: /stats.html
 <p>My first post was published on <strong class="highlight-text">{{ collections.postStats.firstPostDate | dateToReadableDate }}</strong> and my most recent one was published on <strong class="highlight-text">{{ collections.postStats.lastPostDate | dateToReadableDate }}</strong>. I've published <strong class="highlight-text">{{ collections.postStats.postCount }} posts</strong> containing <strong class="highlight-text">{{ collections.postStats.totalWordCount }} words</strong> and <strong class="highlight-text">{{ collections.postStats.totalCodeBlockCount }} code samples</strong>.</p>
 <p>Posts have, on average, <strong class="highlight-text">{{ collections.postStats.avgWordCount | round }} words</strong> and a gap of <strong class="highlight-text">{{ collections.postStats.avgDays | round }} days</strong> between them.</p>
 <h2>Popular posts</h2>
-<ol class="list-inside pl-5 md:pl-10">
+<ol>
   {% assign posts = collections.posts | getPopularPosts: analytics %}
   {% for post in posts limit: 10 %}
-  <li class="mt-1.5 mb-2">
+  <li>
     <a href="{{post.url}}" title="{{ post.data.title | escape}}">
       {{ post.data.title }}
     </a>

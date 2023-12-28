@@ -1,11 +1,11 @@
 {% if links.size > 0 %}
-  <h2 class="[&>svg]:h-5 [&>svg]:w-5 [&>svg]:md:h-7 [&>svg]:md:w-7 [&>svg]:-mt-1 [&>svg]:md:-mt-1.5 [&>svg]:inline icon--bold m-0 text-xl font-black leading-tight tracking-normal dark:text-white md:text-2xl mt-8 mb-4">
+  <h2 class="now__section--header">
     {% tablericon "link" "Links" %}
     Links
   </h2>
-  <ul class="list-inside list-disc pl-5 md:pl-10">
+  <ul>
     {% for link in links limit: 5 %}
-      <li class="mt-1.5 mb-2">
+      <li>
         <a href="{{link.url}}" title="{{link.title | escape}}">
           {{ link.title }}
         </a>

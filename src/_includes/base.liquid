@@ -1,6 +1,6 @@
 {%- capture fullUrl %}{{ meta.url }}{{ page.url }}{% endcapture -%}
 <!doctype html>
-<html class="scrollbar-thin scrollbar-thumb-blue-600 dark:scrollbar-thumb-blue-400 scrollbar-track-blue-100" lang="en">
+<html lang="en">
   <head>
     <title>{%- if title %}{{ title }} • {% endif -%}{{ meta.siteName }}</title>
     <meta charset="utf-8">
@@ -31,9 +31,11 @@
       type="image/svg+xml">
     <link href="/assets/icons/apple-touch-icon.png?v={% assetHash %}" rel="apple-touch-icon">
     {% capture css %}
-      {% render "../assets/styles/prism.css" %}
+      {% render "../assets/styles/ml.css" %}
       {% render "../assets/styles/silka.css" %}
-      {% render "../assets/styles/tailwind.css" %}
+      {% render "../assets/styles/yt-lite.css" %}
+      {% render "../assets/styles/prism.css" %}
+      {% render "../assets/styles/index.css" %}
     {% endcapture %}
     <style>
       {{ css | cssmin }}
@@ -110,7 +112,7 @@
       </style>
     </noscript>
   </head>
-  <body class="dark:text-white bg-white dark:bg-gray-900 font-sans text-gray-800 scrollbar-thin scrollbar-thumb-blue-600 dark:scrollbar-thumb-blue-400 scrollbar-track-blue-100">
+  <body>
     {{ content }}
     {% capture js %}
       {% render "../assets/scripts/script.js" %}

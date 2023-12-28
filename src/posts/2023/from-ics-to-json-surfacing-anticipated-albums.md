@@ -47,16 +47,16 @@ Rendering the output is as simple as:
 
 ```liquid
 {% if albumReleases.size > 0 %}
-  <h2 class="m-0 text-xl flex flex-row items-center font-black leading-tight tracking-normal dark:text-white md:text-2xl mt-8 mb-4 [&>svg]:h-7 [&>svg]:w-7">
-    {% tablericon "calendar" "Albums I'm looking forward to" %}
-    <div class="ml-1">Albums I'm looking forward to</div>
+  <h2 class="now__section--header">
+    {% tablericon "calendar-time" "Anticipated albums" %}
+    Anticipated albums
   </h2>
-  <ul class="list-inside list-disc pl-5 md:pl-10">
+  <ul>
     {% for album in albumReleases %}
-      <li class="mt-1.5 mb-2">
-        <span class="font-bold">{{ album.startDate | readableDate }}: </span>
-        <a href="https://{{album.location}}" title="{{album.summary | escape}}">
-          {{album.summary}}
+      <li>
+        <strong>{{ album.date | readableDate }}: </strong>
+        <a href="https://{{album.url}}" title="{{album.title | escape}}">
+          {{album.title}}
         </a>
       </li>
     {% endfor %}
@@ -66,6 +66,6 @@ Rendering the output is as simple as:
 
 {% endraw %}
 Leaving us with:
-{% image 'https://cdn.coryd.dev/blog/album-releases.jpg', 'Albums I\'m looking forward to', 'border border-blue-600 dark:border-blue-400 rounded-lg overflow-hidden [&>*]:w-full' %}
+{% image 'https://cdn.coryd.dev/blog/album-releases.jpg', 'Albums I\'m looking forward to', 'image__banner' %}
 
 [^1]: At this point, a dev playground.
