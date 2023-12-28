@@ -21,9 +21,5 @@ templateEngineOverride: liquid,md
   {%- if post.data.post_excerpt %}
     <p class="p-summary">{{ post.data.post_excerpt | markdown }}</p>
   {% endif -%}
-  <a class="no-underline read-more" href="{{ post.url }}">
-    Read more
-    {% tablericon "arrow-right" "Read more" %}
-  </a>
 </article>
 {% endfor %}

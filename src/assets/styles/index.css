@@ -467,12 +467,6 @@ article time {
   line-height: var(--line-height-sm);
 }
 
-article .read-more > svg {
-  height: 1rem;
-  width: 1rem;
-  margin-left: .125rem;
-}
-
 /* search */
 .pagefind-ui__search-input {
   font-weight: 400 !important;
@@ -958,7 +952,6 @@ textarea:focus {
 }
 
 /* flex layout */
-.read-more,
 .pagination,
 article h2,
 .now__section--header,

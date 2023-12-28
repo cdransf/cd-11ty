@@ -24,19 +24,13 @@ meta:
 
 {% if pagination.pageNumber == 0 %}{% include "partials/now/topper.liquid" status:status %}{% endif %} {% for post in pagination.items %} {% if post.data.published %}
 <article class="h-entry">
-    <a class="no-underline" href="{{ post.url }}">
-      <h2>
-        {{ post.data.title }}
-      </h2>
-    </a>
-    <span class="p-author h-card hidden">{{ meta.siteName }}</span>
-    <time class="dt-published" datetime="{{ post.date }}">
-      {{ post.date | date: "%m.%Y" }}
-    </time>
-    <p class="p-summary">{{ post.data.post_excerpt | markdown }}</p>
-    <a class="no-underline read-more" href="{{ post.url }}">
-      Read more
-      {% tablericon "arrow-right" "Read more" %}
+  <a class="no-underline" href="{{ post.url }}">
+    <h2>{{ post.data.title }}</h2>
   </a>
+  <span class="p-author h-card hidden">{{ meta.siteName }}</span>
+  <time class="dt-published" datetime="{{ post.date }}">
+    {{ post.date | date: "%m.%Y" }}
+  </time>
+  <p class="p-summary">{{ post.data.post_excerpt | markdown }}</p>
 </article>
 {% endif %} {% endfor %} {% include "partials/paginator.liquid" %}
