@@ -866,10 +866,6 @@ article .now__section--header {
   margin-bottom: 1.5rem;
 }
 
-.webmentions__wrapper .interaction__wrapper:last-child {
-  margin-bottom: 0;
-}
-
 .webmentions__wrapper .interaction__wrapper .comment__wrapper {
   width: 100%;
   padding-bottom: 1rem;
