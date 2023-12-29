@@ -8299,5 +8299,16 @@
       "https://social.lol/users/cory/statuses/111660300688326537"
     ],
     "lastTootTimestamp": 1703800974912
+  },
+  "https://coryd.dev/posts/2023/2023-in-review/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy8yMDIzLWluLXJldmlldy8=",
+    "title": "📝: 2023 in review",
+    "url": "https://coryd.dev/posts/2023/2023-in-review/",
+    "content_text": "📝: 2023 in review #Music #WebDev #Eleventy https://coryd.dev/posts/2023/2023-in-review/",
+    "date_published": "Thu, 28 Dec 2023 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111660937384186769"
+    ],
+    "lastTootTimestamp": 1703810690143
   }
 }
