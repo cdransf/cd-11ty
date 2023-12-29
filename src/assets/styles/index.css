@@ -853,7 +853,7 @@ article .now__section--header {
 .webmentions__wrapper {
   border-top: 1px solid var(--gray-200);
   margin-top: 1.5rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .webmentions__wrapper .interaction__wrapper.comments {
@@ -938,7 +938,7 @@ article .now__section--header {
 .author__wrapper {
   margin-top: 3rem;
   padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   border-top: 1px solid var(--gray-200);
   justify-content: space-between;
 }
