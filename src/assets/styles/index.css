@@ -1231,7 +1231,6 @@ textarea {
 
   a {
     color: var(--blue-400);
-    stroke: var(--blue-400);
   }
 
   a:hover,
@@ -1250,11 +1249,8 @@ textarea {
   }
 
   .main__title h1 a,
-  .now__topper h2 a,
-  article a h2,
   footer .links__secondary a {
     color: var(--white);
-    stroke: var(--white);
   }
 
   .main__title h1 a:hover,
