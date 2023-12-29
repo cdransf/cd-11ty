@@ -8321,5 +8321,16 @@
       "https://social.lol/users/cory/statuses/111661718525747623"
     ],
     "lastTootTimestamp": 1703822609403
+  },
+  "https://coryd.dev/now?ts=1703764800000": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MDM3NjQ4MDAwMDA=",
+    "title": "🎧: My top artists for the week: blink-182 @ 21 plays, Carnal Tomb @ 21 plays, Knuckle Puck @ 19 plays, Cerebral Rot @ 18 plays, Rush @ 18 plays, Basement @ 16 plays, Drug Church @ 16 plays, Soft Kill @ 15 plays #Music #LastFM",
+    "url": "https://coryd.dev/now?ts=1703764800000",
+    "content_text": "🎧: My top artists for the week: blink-182 @ 21 plays, Carnal Tomb @ 21 plays, Knuckle Puck @ 19 plays, Cerebral Rot @ 18 plays, Rush @ 18 plays, Basement @ 16 plays, Drug Church @ 16 plays, Soft Kill @ 15 plays #Music #LastFM  https://coryd.dev/now?ts=1703764800000",
+    "date_published": "Thu, 28 Dec 2023 12:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111663132194835058"
+    ],
+    "lastTootTimestamp": 1703844180309
   }
 }
