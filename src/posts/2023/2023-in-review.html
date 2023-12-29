@@ -1,0 +1,31 @@
+---
+date: '2023-12-28'
+title: '2023 in review'
+description: "A quick year in review post to close out 2023."
+draft: false
+tags: ['books', 'music', 'development', 'Eleventy']
+---
+<p>Here's my brief, altogether incomplete, review of 2023.</p><!-- excerpt -->
+<ul>
+  <li>Our son turned 1! (Kids are <em>awesome</em>.)</li>
+  <li>I kept writing front end code — I have loved diving into <a href="https://www.11ty.dev/">Eleventy</a> and the community around it.</li>
+  <li>The omg.lol community has also been incredible to hang around with and I should pop into the Discord more.</li>
+  <li>I got 4 more tattoos done in as many sessions, with 2 more sessions scheduled for next year.</li>
+  <li><a href="https://app.thestorygraph.com/profile/coryd">I read 71 books</a></li>
+  <li><a href="https://www.last.fm/user/coryd_">I listened to a bunch of music</a></li>
+  <li><a href="https://trakt.tv/users/cdransf">I watched a bunch of movies and TV</a>, but picking favorites feels weird when so much of that consisted of catching up on "classics" and things I'd either ignored or never seen.</li>
+</ul>
+
+{% render "partials/now/media-grid.liquid", data:roundups['2023'].books, icon: "books", title: "Favorite books", shape: "vertical", count: 6 %}
+{% render "partials/now/media-grid.liquid", data:roundups['2023'].albums, icon: "vinyl", title: "Favorite albums", shape: "square", count: 8 %}
+
+<p><strong><a href="https://coryd.dev">I wrote some things:</a></strong></p>
+<ul>
+  <li><a href="https://coryd.dev/posts/2023/i-block-ads/">I Block Ads</a>: <a href="https://news.ycombinator.com/item?id=36046293">made it to the home page of Hacker News</a></li>
+  <li><a href="https://coryd.dev/posts/2023/i-dont-want-streaming-music/">I don't want streaming music, I just want to stream my music</a>: <a href="https://news.ycombinator.com/item?id=35461596">also made it to the home page of Hacker News</a></li>
+  <li><a href="https://coryd.dev/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/">Displaying now playing data with matching emoji using Netlify edge functions and Eleventy</a></li>
+  <li><a href="https://coryd.dev/posts/2023/popular-posts-widget-using-eleventy-plausible/">Building a popular posts widget in Eleventy using Plausible analytics</a></li>
+  <li><a href="https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/">Road to madness: charting Apple Music listening data</a></li>
+</ul>
+
+<p><a href="https://github.com/cdransf/coryd.dev">And I suppose I spent quite a lot of time hacking on this site.</a> Here's to more of that and an altogether bearable 2024.</p>

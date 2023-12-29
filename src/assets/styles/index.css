@@ -164,6 +164,10 @@ strong {
   font-weight: 700;
 }
 
+em {
+  font-style: italic;
+}
+
 /* headers */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
@@ -738,6 +742,11 @@ ol li {
   vertical-align: middle;
   height: 1.25rem;
   width: 1.25rem;
+}
+
+.now__section--header,
+article .now__section--header {
+  margin-bottom: 1rem;
 }
 
 .now__explainer {
