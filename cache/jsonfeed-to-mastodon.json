@@ -8304,11 +8304,22 @@
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy8yMDIzLWluLXJldmlldy8=",
     "title": "📝: 2023 in review",
     "url": "https://coryd.dev/posts/2023/2023-in-review/",
-    "content_text": "📝: 2023 in review #Music #WebDev #Eleventy https://coryd.dev/posts/2023/2023-in-review/",
+    "content_text": "📝: 2023 in review #Books #Music #WebDev #Eleventy https://coryd.dev/posts/2023/2023-in-review/",
     "date_published": "Thu, 28 Dec 2023 00:00:00 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111660937384186769"
     ],
     "lastTootTimestamp": 1703810690143
+  },
+  "https://rknight.me/blog/the-web-is-fantastic/": {
+    "id": "aHR0cHM6Ly9ya25pZ2h0Lm1lL2Jsb2cvdGhlLXdlYi1pcy1mYW50YXN0aWMv",
+    "title": "🔗: The Web is Fantastic",
+    "url": "https://rknight.me/blog/the-web-is-fantastic/",
+    "content_text": "🔗: The Web is Fantastic #Tech  #WebDev https://rknight.me/blog/the-web-is-fantastic/",
+    "date_published": "Fri, 29 Dec 2023 01:45:02 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111661718525747623"
+    ],
+    "lastTootTimestamp": 1703822609403
   }
 }
