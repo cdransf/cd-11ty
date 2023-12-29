@@ -13,9 +13,9 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 ## 📝 Recent posts
 
 <!-- BLOGPOSTS:START -->
+- [2023 in review](https://coryd.dev/posts/2023/2023-in-review/)
 - [Why I'm leaning into Google services](https://coryd.dev/posts/2023/leaning-into-google-services/)
 - [Programmatically importing your Last.fm listening data to ListenBrainz](https://coryd.dev/posts/2023/programmatically-importing-your-lastfm-listening-data-to-listenbrainz/)
 - [Check in to your personal site](https://coryd.dev/posts/2023/check-in-to-your-personal-site/)
 - [Hacking together a Tweekly.fm replacement](https://coryd.dev/posts/2023/hacking-together-a-tweeklyfm-repalcement/)
-- [Doppler, locally stored music and storage as a beneficial constraint](https://coryd.dev/posts/2023/locally-stored-music-and-storage-as-a-meaningful-constraint/)
 <!-- BLOGPOSTS:END -->
