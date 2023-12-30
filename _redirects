@@ -41,7 +41,6 @@
 # redirects
 /articles/ / 301!
 /sitemap.txt /sitemap.xml 301!
-/calendar https://calendar.app.google/sQUW2GgcUhWuAWRU6 301!
 /mastodon https://social.lol/@cory 301!
 /coffee https://www.buymeacoffee.com/cory 301!
 /speedlify https://speedlify.coryd.dev 301!
