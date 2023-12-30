@@ -23,7 +23,7 @@
     "@11ty/eleventy-img": "^3.1.8",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@rknightuk/eleventy-plugin-post-graph": "^1.0.5",
+    "@rknightuk/eleventy-plugin-post-graph": "^1.0.6",
     "autoprefixer": "^10.4.16",
     "child_process": "^1.0.2",
     "clean-css": "^5.3.3",

@@ -8332,5 +8332,27 @@
       "https://social.lol/users/cory/statuses/111663132194835058"
     ],
     "lastTootTimestamp": 1703844180309
+  },
+  "https://app.thestorygraph.com/books/57473af0-6d9d-4860-835a-6c01a2131040": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvNTc0NzNhZjAtNmQ5ZC00ODYwLTgzNWEtNmMwMWEyMTMxMDQw",
+    "title": "📖: The Gospel of J. Edgar Hoover: How the FBI Aided and Abetted the Rise of White Christian Nationalism",
+    "url": "https://app.thestorygraph.com/books/57473af0-6d9d-4860-835a-6c01a2131040",
+    "content_text": "📖: The Gospel of J. Edgar Hoover: How the FBI Aided and Abetted the Rise of White Christian Nationalism #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/57473af0-6d9d-4860-835a-6c01a2131040",
+    "date_published": "Thu, 28 Dec 2023 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111665493077443965"
+    ],
+    "lastTootTimestamp": 1703880204520
+  },
+  "https://trakt.tv/movies/the-last-starfighter-1984": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvdGhlLWxhc3Qtc3RhcmZpZ2h0ZXItMTk4NA==",
+    "title": "🎥: The Last Starfighter",
+    "url": "https://trakt.tv/movies/the-last-starfighter-1984",
+    "content_text": "🎥: The Last Starfighter #Movies #Watching #Trakt https://trakt.tv/movies/the-last-starfighter-1984",
+    "date_published": "Sat, 30 Dec 2023 00:01:51 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111666938064800756"
+    ],
+    "lastTootTimestamp": 1703902253247
   }
 }
