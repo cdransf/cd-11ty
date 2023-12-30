@@ -8343,5 +8343,16 @@
       "https://social.lol/users/cory/statuses/111665493077443965"
     ],
     "lastTootTimestamp": 1703880204520
+  },
+  "https://trakt.tv/movies/the-last-starfighter-1984": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvdGhlLWxhc3Qtc3RhcmZpZ2h0ZXItMTk4NA==",
+    "title": "🎥: The Last Starfighter",
+    "url": "https://trakt.tv/movies/the-last-starfighter-1984",
+    "content_text": "🎥: The Last Starfighter #Movies #Watching #Trakt https://trakt.tv/movies/the-last-starfighter-1984",
+    "date_published": "Sat, 30 Dec 2023 00:01:51 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111666938064800756"
+    ],
+    "lastTootTimestamp": 1703902253247
   }
 }
