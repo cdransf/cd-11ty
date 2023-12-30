@@ -362,7 +362,7 @@ So far this works seamlessly — if I want to update or add static content I can
 
 Questions? Comments? Feel free to get in touch:
 
-- [Email](mailto:cory.dransfeldt@gmail.com)
+- [Email](mailto:hi@coryd.dev)
 - [Mastodon](https://social.lol/@cory)
 
 ---

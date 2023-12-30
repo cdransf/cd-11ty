@@ -56,7 +56,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3>Services</h3>
 
-- [Gmail](https://www.google.com/gmail/about): it's exceedingly well established and Google's apps are so ubiquitous that it's hard to avoid.
+- - <a class="plausible-event-name=Proton+referral" href="https://pr.tn/ref/X775YX40Z50G">Proton</a>: the premier, secure email provider. It supports custom domains and just about everything else I need out of an email service.
 - <a class="plausible-event-name=NextDNS+referral" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>: a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.
 - <a class="plausible-event-name=DNSimple+referral" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>: a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
 - <a class="plausible-event-name=bunny+referral" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>: a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
@@ -71,6 +71,6 @@ Software and services that I use for work and my own enjoyment.
 - [The Storygraph](https://thestorygraph.com): an excellent, focused and community driven book tracking app. All it needs is RSS/Atom feeds and/or an API.
 - [Slack](http://slack.com): I have a family Slack set up to avoid group text messages and am in a few other community Slacks.
 - [Discord](http://discord.com): I don't _like_ Discord but, for better or worse, it's where some communities I frequent are.
-- [Arq](https://arqbackup.com): I back up my MacBook and attached drives to both Backblaze's B2 and Google's cloud storage — Arq even has the option to download files in cloud storage like iCloud Drive and Google Drive to then be properly included in backups.
+- [Arq](https://arqbackup.com): I back up my MacBook and attached drives to both Backblaze's B2 and Wasabi — Arq even has the option to download files in cloud storage like iCloud Drive to then be properly included in backups.
 
 Check out [uses.tech](https://uses.tech) for more lists like this one.

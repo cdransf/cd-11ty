@@ -40,4 +40,4 @@ Finally, restart apache:
 
 Your site should now be served using http2. You can verify this using the KeyCDN tool located [here](https://tools.keycdn.com/http2-test).
 
-_Did I miss anything? [Let me know.](mailto:cory.dransfeldt@gmail.com)_
+_Did I miss anything? [Let me know.](mailto:hi@coryd.dev)_

@@ -27,7 +27,7 @@
 
   --brand-github: #333;
   --brand-github-light: #f5f5f5;
-  --brand-gmail: #34a853;
+  --brand-proton: #6d4aff;
   --brand-mastodon: #6364ff;
   --brand-lastfm: #d51007;
   --brand-trakt: #ed1c24;
@@ -304,7 +304,7 @@ nav svg:hover {
 }
 
 nav .at svg {
-  stroke: var(--brand-gmail);
+  stroke: var(--brand-proton);
 }
 
 nav .brand-github svg {
