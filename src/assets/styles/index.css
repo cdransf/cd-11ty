@@ -704,13 +704,14 @@ ol li {
   width: 1.25rem;
 }
 
-.now__section--header:first-of-type {
-  margin-top: 0;
-}
-
 .now__section--header,
 article .now__section--header {
+  margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+.now__section--header:first-of-type {
+  margin-top: 0;
 }
 
 .now__explainer {
