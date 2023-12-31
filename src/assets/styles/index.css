@@ -506,11 +506,7 @@ code {
 
 /* articles */
 .article__wrapper {
-  padding-top: 1rem;
-}
-
-.article__wrapper article h2 {
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 article h2 {
