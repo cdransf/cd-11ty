@@ -47,9 +47,7 @@ const emojiMap = (genre, artist) => {
 }
 
 export default async () => {
-  // eslint-disable-next-line no-undef
   const TV_KEY = Netlify.env.get('API_KEY_TRAKT')
-  // eslint-disable-next-line no-undef
   const MUSIC_KEY = Netlify.env.get('API_KEY_LASTFM')
   const headers = {
     headers: {

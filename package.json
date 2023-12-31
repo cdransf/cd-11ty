@@ -1,13 +1,11 @@
 {
   "name": "coryd.dev",
-  "version": "4.0.13",
+  "version": "4.0.14",
   "description": "The source for my personal site, blog and portfolio. Built using 11ty and hosted on Netlify.",
   "type": "module",
   "scripts": {
     "start": "ELEVENTY_PRODUCTION=false eleventy --serve",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
     "build": "ELEVENTY_PRODUCTION=true eleventy"
   },
   "keywords": [
