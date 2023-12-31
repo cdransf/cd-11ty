@@ -253,7 +253,7 @@ article {
 .now__topper h2 {
   font-size: var(--font-size-xl);
   line-height: 0;
-  margin-top: 1rem;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 
@@ -702,6 +702,10 @@ ol li {
   vertical-align: middle;
   height: 1.25rem;
   width: 1.25rem;
+}
+
+.now__section--header:first-of-type {
+  margin-top: 0;
 }
 
 .now__section--header,
