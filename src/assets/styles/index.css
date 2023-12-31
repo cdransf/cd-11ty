@@ -252,7 +252,7 @@ article {
 
 .now__topper h2 {
   font-size: var(--font-size-xl);
-  line-height: var(--line-height-xl);
+  line-height: 0;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -709,6 +709,10 @@ article .now__section--header {
   margin-bottom: 1rem;
 }
 
+.now__section--header:first-of-type {
+  margin-top: 0;
+}
+
 .now__explainer {
   font-size: var(--font-size-xs);
   line-height: var(--line-height-xs);
@@ -1073,7 +1077,6 @@ textarea {
 
   .now__topper h2 {
     font-size: var(--font-size-2xl);
-    line-height: var(--line-height-2xl);
   }
 
   .avatar__wrapper .avatar__wrapper--interior {
