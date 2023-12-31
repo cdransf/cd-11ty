@@ -127,7 +127,6 @@ p {
 }
 
 blockquote {
-  font-style: italic;
   margin: 1.25rem 0;
   padding-left: .875rem;
   border-left: 4px solid var(--gray-400);
@@ -162,6 +161,7 @@ h2 > a.header-anchor,
   font-weight: 700;
 }
 
+blockquote,
 em {
   font-style: italic;
 }
@@ -188,11 +188,7 @@ hr {
   border: 0;
 }
 
-hr.large__spacing {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
+hr.large__spacing,
 hr.footnotes-sep {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -257,8 +253,6 @@ article {
 .now__topper h2 {
   font-size: var(--font-size-xl);
   line-height: var(--line-height-xl);
-  display: inline;
-  line-height: 1.25;
   margin-bottom: 1rem;
 }
 
