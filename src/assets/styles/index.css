@@ -110,11 +110,6 @@ html {
   margin: 0;
 }
 
-body svg,
-html svg {
-  stroke: var(--black);
-}
-
 ::-moz-selection {
   color: var(--white);
   background: var(--blue-600);
@@ -160,7 +155,10 @@ a > svg:active {
   stroke: var(--blue-800);
 }
 
-strong {
+strong,
+h2 > a.header-anchor,
+.pill--button,
+.media__grid .item__meta-text .header {
   font-weight: 700;
 }
 
@@ -329,6 +327,13 @@ nav .rss svg {
   stroke: var(--brand-rss);
 }
 
+body svg,
+html svg,
+.link--icon,
+.pagination button.disabled > svg,
+.pagination button.disabled > svg:hover,
+.pagination button.disabled > svg:focus,
+.pagination button.disabled > svg:active,
 nav .tags svg,
 nav .search svg {
   stroke: var(--black);
@@ -353,10 +358,6 @@ nav ul li:last-child {
 
 .active svg:hover {
   stroke-width: var(--stroke-width-default);
-}
-
-.link--icon {
-  stroke: var(--black);
 }
 
 .link--icon:hover,
@@ -391,7 +392,6 @@ nav ul li:last-child {
 .pagination button.disabled > svg:hover,
 .pagination button.disabled > svg:focus,
 .pagination button.disabled > svg:active {
-  stroke: var(--black);
   opacity: .5;
   cursor: not-allowed;
 }
@@ -446,12 +446,7 @@ h1 > a.header-anchor {
   font-weight: 900;
 }
 
-h2 > a.header-anchor {
-  font-weight: 700;
-}
-
 .highlight-text {
-  color: var(--white);
   padding: .125rem;
   background-color: var(--blue-600);
 }
@@ -459,7 +454,6 @@ h2 > a.header-anchor {
 code {
   font-family: var(--font-mono);
   padding: .125rem;
-  color: var(--white);
   background-color: var(--black);
 }
 
@@ -467,7 +461,6 @@ code {
 .pill--button {
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
-  font-weight: 700;
   border-radius: var(--rounded-full);
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -475,7 +468,6 @@ code {
   padding-right: 1rem;
   margin-right: .25rem;
   margin-bottom: .75rem;
-  color: var(--white);
   cursor: pointer;
   appearance: none;
   border: none;
@@ -508,7 +500,6 @@ code {
 .pill--button:hover,
 .pill--button:active,
 .pill--button:focus {
-  color: var(--white);
   background-color: var(--blue-800) !important;
 }
 
@@ -553,7 +544,6 @@ article time {
 }
 
 .pagefind-ui__form mark {
-  color: var(--white);
   background: var(--blue-600);
 }
 
@@ -793,16 +783,11 @@ article .now__section--header {
 .media__grid .item__meta-text .subheader {
   font-size: var(--font-size-xs);
   line-height: var(--line-height-xs);
-  color: var(--white);
   overflow: visible;
   display: -webkit-box;
   text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-}
-
-.media__grid .item__meta-text .header {
-  font-weight: 700;
 }
 
 .media__grid .item__image,
@@ -1023,7 +1008,7 @@ textarea:focus {
 
 /* utilities */
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .no-underline {
@@ -1031,17 +1016,28 @@ textarea:focus {
 }
 
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
-/* flex layout */
 .flex--centered {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-/* transitions */
+/* shared styles */
+.highlight-text,
+code,
+.pill--button,
+.pill--button:hover,
+.pill--button:active,
+.pill--button:focus,
+.pagefind-ui__form mark,
+.media__grid .item__meta-text .header,
+.media__grid .item__meta-text .subheader {
+  color: var(--white);
+}
+
 a,
 a > svg,
 .webmentions__wrapper .interaction__wrapper .avatar__wrapper,
@@ -1183,11 +1179,6 @@ textarea {
     background-color: var(--black);
   }
 
-  body svg,
-  html svg {
-    stroke: var(--white)
-  }
-
   ::-moz-selection {
     background: var(--blue-400);
   }
@@ -1196,18 +1187,8 @@ textarea {
     background: var(--blue-400);
   }
 
-  .main__title h1 a {
-    color: var(--white);
-  }
-
   a {
     color: var(--blue-400);
-  }
-
-  a:hover,
-  a:focus,
-  a:active {
-    color: var(--blue-200);
   }
 
   hr {
@@ -1219,11 +1200,9 @@ textarea {
     border-color: var(--gray-900)
   }
 
-  .main__title h1 a,
-  footer .links__secondary a {
-    color: var(--white);
-  }
-
+  a:hover,
+  a:focus,
+  a:active,
   .main__title h1 a:hover,
   .main__title h1 a:focus,
   .main__title h1 a:active,
@@ -1245,17 +1224,8 @@ textarea {
   }
 
   /* nav */
-  nav ul li a {
-    color: var(--white);
-  }
-
   nav .brand-github svg {
     stroke: var(--brand-github-light);
-  }
-
-  nav .tags svg,
-  nav .search svg {
-    stroke: var(--white);
   }
 
   nav .tags svg:hover,
@@ -1263,12 +1233,11 @@ textarea {
     stroke: var(--blue-200);
   }
 
-  .active,
-  .active svg {
+  .active {
     color: var(--blue-400);
-    stroke: var(--blue-400);
   }
 
+  .active svg,
   .pagination button > svg {
     stroke: var(--blue-400)
   }
@@ -1279,13 +1248,6 @@ textarea {
     stroke: var(--blue-200);
   }
 
-  .pagination button.disabled > svg,
-  .pagination button.disabled > svg:hover,
-  .pagination button.disabled > svg:focus,
-  .pagination button.disabled > svg:active {
-    stroke: var(--white);
-  }
-
   /* search */
   .pagefind-ui__search-input {
     border-color: var(--blue-400);
@@ -1293,7 +1255,7 @@ textarea {
   }
 
   .pagefind-ui__form mark {
-    background: var(--blue-400);
+    background-color: var(--blue-400);
   }
 
   .pagefind-ui__form .pagefind-ui__result-link {
@@ -1310,21 +1272,28 @@ textarea {
   input[type="text"],
   input[type="email"],
   textarea {
-    color: var(--white);
     background-color: var(--black);
   }
 
   /* buttons */
   .pill--button {
-    background: var(--blue-400);
+    background-color: var(--blue-400);
   }
 
   .pill--button:hover,
   .pill--button:active,
   .pill--button:focus {
-    background: var(--blue-200);
+    background-color: var(--blue-200);
   }
 
+  body svg,
+  html svg,
+  nav .tags svg,
+  nav .search svg,
+  .pagination button.disabled > svg,
+  .pagination button.disabled > svg:hover,
+  .pagination button.disabled > svg:focus,
+  .pagination button.disabled > svg:active,
   .link--icon {
     stroke: var(--white);
   }
@@ -1346,7 +1315,7 @@ textarea {
 
   /* images */
   .image__banner {
-    border: 1px solid var(--blue-400);
+    border-color: var(--blue-400);
   }
 
   .post-graph__progress {
@@ -1354,10 +1323,7 @@ textarea {
   }
 
   /* widgets */
-  .author__wrapper {
-    border-color: var(--gray-900)
-  }
-
+  .author__wrapper,
   .webmentions__wrapper {
     border-color: var(--gray-900);
   }
@@ -1372,16 +1338,18 @@ textarea {
     border-color: var(--black);
   }
 
+  .main__title h1 a,
+  footer .links__secondary a,
+  nav ul li a,
+  input[type="text"],
+  input[type="email"],
+  textarea,
   .webmentions__wrapper .interaction__wrapper .comment__wrapper--interior .comment a {
     color: var(--white);
   }
 
+  .highlight-text,
   .progress-bar {
-    background-color: var(--blue-400);
-  }
-
-  /* utilities */
-  .highlight-text {
     background-color: var(--blue-400);
   }
 }
