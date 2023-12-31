@@ -177,6 +177,7 @@ h3 > svg,
 h4 > svg,
 h5 > svg,
 h6 > svg {
+  margin-right: .25rem;
   stroke-width: var(--stroke-width-bold) !important;
 }
 
@@ -1054,16 +1055,6 @@ input[type="text"],
 input[type="email"],
 textarea {
   transition-property: border-color;
-}
-
-h1 > svg,
-h2 > svg,
-h3 > svg,
-h4 > svg,
-h5 > svg,
-h6 > svg,
-.now__section--text p > svg {
-  margin-right: .25rem;
 }
 
 /* screens: small */
