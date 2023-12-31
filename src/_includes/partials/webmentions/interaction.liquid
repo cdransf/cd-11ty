@@ -7,12 +7,12 @@
 {% endcapture -%}
 {% if mentions[type].size > 0 %}
   <h2>{{ title }}</h2>
-  <div class="interaction__wrapper">
+  <div class="interaction__wrapper flex--centered">
     <ul>
       {% for mention in mentions[type] %}
         <li>
           <a href={{mention.url}}>
-            <div class="avatar__wrapper">
+            <div class="avatar__wrapper flex--centered">
               {% image mention.author.photo, mention.author.name, 'avatar__wrapper-image' %}
             </div>
           </a>

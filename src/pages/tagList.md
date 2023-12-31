@@ -13,7 +13,7 @@ templateEngineOverride: liquid,md
 {% for post in posts %}
 <article class="h-entry">
   <a class="no-underline" href="{{ post.url }}">
-    <h2>{{ post.data.title }}</h2>
+    <h2 class="flex--centered">{{ post.data.title }}</h2>
   </a>
   <time class="dt-published" datetime="{{ post.date }}">
     {{ post.date | date: "%m.%Y" }}

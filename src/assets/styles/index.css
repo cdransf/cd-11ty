@@ -234,18 +234,6 @@ main {
   line-height: var(--line-height-2xl);
 }
 
-.now__topper h2 a,
-article a h2,
-.main__title h1 a,
-footer .links__secondary a {
-  text-decoration: none;
-}
-
-.main__title h1 a,
-footer .links__secondary a {
-  color: var(--black);
-}
-
 .main__title h1 a:hover,
 .main__title h1 a:focus,
 .main__title h1 a:active,
@@ -290,7 +278,9 @@ nav ul li {
   margin-right: 1rem;
 }
 
-nav ul li a {
+.main__title h1 a,
+nav ul li a,
+footer .links__secondary a {
   color: var(--black);
   text-decoration: none !important;
 }
@@ -466,13 +456,6 @@ h2 > a.header-anchor {
   background-color: var(--blue-600);
 }
 
-p > a,
-span > a,
-blockquote > a,
-li > a {
-  text-decoration: underline !important;
-}
-
 code {
   font-family: var(--font-mono);
   padding: .125rem;
@@ -482,7 +465,6 @@ code {
 
 /* buttons */
 .pill--button {
-  appearance: none;
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   font-weight: 700;
@@ -493,9 +475,10 @@ code {
   padding-right: 1rem;
   margin-right: .25rem;
   margin-bottom: .75rem;
-  border: none;
   color: var(--white);
   cursor: pointer;
+  appearance: none;
+  border: none;
   text-decoration: none;
   background-color: var(--blue-600);
   transition-property: background-color;
@@ -1052,15 +1035,7 @@ textarea:focus {
 }
 
 /* flex layout */
-.pagination,
-article h2,
-.now__section--header,
-.avatar__wrapper,
-.popular-posts h2,
-.webmentions__wrapper .interaction__wrapper,
-.webmentions__wrapper .interaction__wrapper .comment__wrapper,
-.webmentions__wrapper .interaction__wrapper .comment__wrapper--interior,
-.webring__wrapper > .webring__centered {
+.flex--centered {
   display: flex;
   flex-direction: row;
   align-items: center;

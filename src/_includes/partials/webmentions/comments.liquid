@@ -2,10 +2,10 @@
   <h2>Comments</h2>
   <div class="interaction__wrapper comments">
     {% for mention in mentions['in-reply-to'] %}
-      <div class="comment__wrapper">
-        <div class="comment__wrapper--interior">
+      <div class="comment__wrapper flex--centered">
+        <div class="comment__wrapper--interior flex--centered">
           <a href={{mention.url}}>
-            <div class="avatar__wrapper">
+            <div class="avatar__wrapper flex--centered">
                 {% image mention.author.photo, mention.author.name, 'avatar__wrapper-image' %}
             </div>
           </a>
