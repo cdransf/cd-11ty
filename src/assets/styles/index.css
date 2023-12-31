@@ -252,7 +252,6 @@ article {
 
 .now__topper h2 {
   font-size: var(--font-size-xl);
-  line-height: 0;
   margin-top: 0;
   margin-bottom: 1rem;
 }
