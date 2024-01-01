@@ -465,18 +465,6 @@ article time {
   line-height: var(--line-height-sm);
 }
 
-/* search */
-.pagefind-ui__search-input {
-  font-weight: 400 !important;
-  border-radius: var(--rounded-sm);
-  background-color: var(--white);
-  border: 1px solid var(--blue-600);
-}
-
-.pagefind-ui__search-input:focus {
-  border: 1px solid var(--blue-800);
-}
-
 /* statistics */
 .post-graph {
   margin-top: 1.25rem;
@@ -881,6 +869,7 @@ textarea {
   border: 1px solid var(--blue-600);
   padding: .5rem;
   margin-bottom: 1.5rem;
+  font-weight: 400 !important;
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
 }
@@ -1167,11 +1156,6 @@ h6 > svg,
   }
 
   /* search */
-  .pagefind-ui__search-input {
-    border-color: var(--blue-400);
-    background-color: var(--black);
-  }
-
   .pagefind-ui__form .pagefind-ui__result-link {
     color: var(--blue-400);
   }
