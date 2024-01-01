@@ -81,7 +81,6 @@ export default async function (eleventyConfig) {
     level: [1, 2],
     permalink: markdownItAnchor.permalink.headerLink({
       safariReaderFix: true,
-      class: 'header-anchor',
     }),
   })
   md.use(markdownItFootnote)

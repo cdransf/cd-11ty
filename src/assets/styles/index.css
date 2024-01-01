@@ -11,6 +11,7 @@
   --blue-800: #1e55af;
   --blue-900: #1e478a;
   --blue-950: #172e54;
+
   --gray-50: #f6f7f8;
   --gray-100: #eaecef;
   --gray-200: #d9dee4;
@@ -22,6 +23,7 @@
   --gray-800: #5a6173;
   --gray-900: #4b515d;
   --gray-950: #30333b;
+
   --white: #fff;
   --black: #000;
 
@@ -161,7 +163,6 @@ a > svg:active {
 }
 
 strong,
-h2 > a.header-anchor,
 .pill--button,
 .media__grid .item__meta-text .header {
   font-weight: 700;
@@ -408,14 +409,6 @@ footer .links__secondary {
 footer .links__secondary span {
   margin-left: .375rem;
   margin-right: .375rem;
-}
-
-.header-anchor {
-  text-decoration: none !important;
-}
-
-h1 > a.header-anchor {
-  font-weight: 900;
 }
 
 .highlight-text {
