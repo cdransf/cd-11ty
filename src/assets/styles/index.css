@@ -976,6 +976,10 @@ article .now__section--header {
   justify-content: center;
 }
 
+.footnotes {
+  padding-bottom: 1.5rem;
+}
+
 /* inputs */
 input[type="text"],
 input[type="email"],
