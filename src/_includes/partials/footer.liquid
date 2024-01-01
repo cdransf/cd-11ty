@@ -4,7 +4,7 @@
       {% render "partials/nav/linked-icon.liquid", name: link.name, link: link.url, icon: link.icon %}
     {% endfor %}
   </nav>
-  <nav class="links__secondary flex--centered">
+  <nav class="links__secondary flex--centered text-center">
     {% for link in nav.footer %}
       {% render "partials/nav/link.liquid", page: page, link: link.name, icon: link.icon %}
       {% if not forloop.last %}<span>•</span>{% endif %}

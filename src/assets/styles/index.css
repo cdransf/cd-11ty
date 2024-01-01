@@ -139,7 +139,13 @@ a {
 
 a:hover,
 a:focus,
-a:active {
+a:active,
+.main__title h1 a:hover,
+.main__title h1 a:focus,
+.main__title h1 a:active,
+footer .links__secondary a:hover,
+footer .links__secondary a:focus,
+footer .links__secondary a:active {
   color: var(--blue-800);
 }
 
@@ -166,7 +172,8 @@ em {
   font-style: italic;
 }
 
-button {
+button,
+.pill--button {
   appearance: none;
   border: none;
 }
@@ -231,21 +238,6 @@ main {
   padding-bottom: .625rem;
   font-size: var(--font-size-2xl);
   line-height: var(--line-height-2xl);
-}
-
-.main__title h1 a:hover,
-.main__title h1 a:focus,
-.main__title h1 a:active,
-.now__topper h2 a:hover,
-.now__topper h2 a:focus,
-.now__topper h2 a:active,
-article a h2:hover,
-article a h2:focus,
-article a h2:active,
-footer .links__secondary a:hover,
-footer .links__secondary a:focus,
-footer .links__secondary a:active {
-  color: var(--blue-800);
 }
 
 .now__topper,
@@ -363,10 +355,12 @@ nav ul li:last-child {
 
 .pagination button {
   background: none;
-  cursor: pointer;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .pagination button > svg {
+  cursor: pointer;
   stroke: var(--blue-600);
   transition-property: stroke;
 }
@@ -384,16 +378,13 @@ nav ul li:last-child {
 }
 
 .pagination .previous {
-  padding-right: 1rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding: .5rem 1rem .5rem 0;
 }
 
 footer .social__main {
   gap: 0.5rem;
   margin-top: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding: 2rem 0 1rem;
   width: 100%;
 }
 
@@ -409,7 +400,6 @@ footer .social__main a {
 footer .links__secondary {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
-  text-align: center;
   padding-bottom: 2rem;
 }
 
@@ -442,15 +432,9 @@ code {
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   border-radius: var(--rounded-full);
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-right: .25rem;
-  margin-bottom: .75rem;
+  padding: .5rem 1rem;
+  margin: 0 .25rem .75rem 0;
   cursor: pointer;
-  appearance: none;
-  border: none;
   text-decoration: none;
   background-color: var(--blue-600);
   transition-property: background-color;
@@ -741,8 +725,7 @@ article .now__section--header {
 
 .media__grid .item__meta-text {
   position: absolute;
-  padding-left: .375rem;
-  padding-right: .375rem;
+  padding: 0 .375rem;
   width: 90%;
   bottom: .375rem;
 }
@@ -869,8 +852,7 @@ article .now__section--header {
 
 .author__wrapper {
   margin-top: 3rem;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+  padding: 3rem 0 1rem;
   border-top: 1px solid var(--gray-200);
 }
 
@@ -1188,12 +1170,6 @@ footer .links__secondary {
   .main__title h1 a:hover,
   .main__title h1 a:focus,
   .main__title h1 a:active,
-  .now__topper h2 a:hover,
-  .now__topper h2 a:focus,
-  .now__topper h2 a:active,
-  article a h2:hover,
-  article a h2:focus,
-  article a h2:active,
   footer .links__secondary a:hover,
   footer .links__secondary a:focus,
   footer .links__secondary a:active {
