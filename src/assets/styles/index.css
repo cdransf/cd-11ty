@@ -275,7 +275,9 @@ nav svg {
   margin-top: .125rem;
 }
 
-nav svg:hover {
+nav svg:hover,
+nav svg:active,
+nav svg:focus {
   stroke-width: var(--stroke-width-bold);
 }
 
