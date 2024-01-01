@@ -330,7 +330,11 @@ nav .search svg {
 }
 
 nav .tags svg:hover,
-nav .search svg:hover {
+nav .tags svg:focus,
+nav .tags svg:active,
+nav .search svg:hover,
+nav .search svg:focus,
+nav .search svg:active {
   stroke: var(--blue-800);
 }
 
