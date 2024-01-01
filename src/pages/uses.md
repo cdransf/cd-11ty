@@ -37,7 +37,6 @@ Software and services that I use for work and my own enjoyment.
 
 <h3>macOS</h3>
 
-- [Gmail Desktop](https://github.com/timche/gmail-desktop): yes it's Electron, but it's thoughtfully developed and built (be sure to opt into the latest beta updates ahead of the next major version).
 - [Rectangle](https://rectangleapp.com): to quickly move around/organize/snap application windows. Using a Mac without it now feels like it's broken.
 - [Alfred](https://alfredapp.com): a flexible, extensible and reliable Spotlight replacement.
 - [Keyboard Maestro](https://www.keyboardmaestro.com): an endlessly flexible app that I underutilize for quick macros and keyboard shortcuts in a number of different apps.
