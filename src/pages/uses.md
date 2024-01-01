@@ -61,7 +61,6 @@ Software and services that I use for work and my own enjoyment.
 - <a class="plausible-event-name=bunny+referral" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>: a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
 - [Plausible](https://plausible.io): powerful, well-designed and privacy-respecting analytics.
 - <a class="plausible-event-name=Feedpress+referral" href="https://feedpress.com/?affid=34370">Feedpress</a>: they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
-- [IVPN](https://www.ivpn.net): my VPN of choice for browsing outside of my home network. Privacy-focused and trustworthy.
 - [Readwise Reader](https://readwise.io/read): an impressive RSS reader that handles all the functionality you'd expect from a read it later app beautifully. It's as powerful as it is flexible.
 - [Todoist](https://todoist.com): the task manager I always return to for it's flexibility and endless integrations.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.

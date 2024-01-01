@@ -104,9 +104,9 @@ body {
 
 body,
 html {
+  font-family: var(--font-sans);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
-  font-family: var(--font-sans);
   color: var(--black);
   background: var(--white);
   margin: 0;
@@ -203,8 +203,7 @@ hr {
 
 hr.large__spacing,
 hr.footnotes-sep {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin: 2.5rem 0;
 }
 
 /* layout */
@@ -533,8 +532,7 @@ ul, ol {
   list-style-position: inside;
 }
 
-ul li,
-ol li {
+li {
   margin-top: .375rem;
   margin-bottom: .5rem;
 }
