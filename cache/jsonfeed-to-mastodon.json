@@ -8442,5 +8442,16 @@
       "https://social.lol/users/cory/statuses/111678705029794471"
     ],
     "lastTootTimestamp": 1704081802886
+  },
+  "https://danmcquillan.org/ai_thatcherism.html": {
+    "id": "aHR0cHM6Ly9kYW5tY3F1aWxsYW4ub3JnL2FpX3RoYXRjaGVyaXNtLmh0bWw=",
+    "title": "🔗: AI as Algorithmic Thatcherism",
+    "url": "https://danmcquillan.org/ai_thatcherism.html",
+    "content_text": "🔗: AI as Algorithmic Thatcherism #Tech https://danmcquillan.org/ai_thatcherism.html",
+    "date_published": "Thu, 21 Dec 2023 16:30:16 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111679650009366048"
+    ],
+    "lastTootTimestamp": 1704096222144
   }
 }
