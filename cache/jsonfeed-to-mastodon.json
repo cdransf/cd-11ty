@@ -8475,5 +8475,24 @@
       "https://social.lol/users/cory/statuses/111682478520839428"
     ],
     "lastTootTimestamp": 1704139381793
+  },
+  "https://www.mayank.co/blog/react-server-components": {
+    "id": "aHR0cHM6Ly93d3cubWF5YW5rLmNvL2Jsb2cvcmVhY3Qtc2VydmVyLWNvbXBvbmVudHM=",
+    "title": "🔗: React Server Components: the Good, the Bad, and the Ugly",
+    "url": "https://www.mayank.co/blog/react-server-components",
+    "content_text": "🔗: React Server Components: the Good, the Bad, and the Ugly #WebDev https://www.mayank.co/blog/react-server-components",
+    "date_published": "Mon, 01 Jan 2024 16:13:33 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111682950321080558"
+    ],
+    "lastTootTimestamp": 1704146580910
+  },
+  "https://app.thestorygraph.com/books/aae944bf-109d-4728-939b-17dfac5d3b15": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvYWFlOTQ0YmYtMTA5ZC00NzI4LTkzOWItMTdkZmFjNWQzYjE1",
+    "title": "📖: NoMeansNo: Going Nowhere",
+    "url": "https://app.thestorygraph.com/books/aae944bf-109d-4728-939b-17dfac5d3b15",
+    "content_text": "📖: NoMeansNo: Going Nowhere #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/aae944bf-109d-4728-939b-17dfac5d3b15",
+    "date_published": "Sun, 31 Dec 2023 16:00:00 +0000",
+    "toots": []
   }
 }
