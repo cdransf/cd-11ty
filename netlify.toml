@@ -1,4 +1,11 @@
 ###
+# BUILD
+###
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+###
 # URLs
 ###
 [build.processing.html]
@@ -59,7 +66,3 @@ for = "/contribute.json"
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "autoplay=(), camera=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), publickey-credentials-get=()"
-
-[build]
-  command = "npm run build"
-  publish = "_site"
