@@ -8464,5 +8464,16 @@
       "https://social.lol/users/cory/statuses/111681535408955263"
     ],
     "lastTootTimestamp": 1704124991062
+  },
+  "https://thebaffler.com/latest/its-all-bullshit-tan": {
+    "id": "aHR0cHM6Ly90aGViYWZmbGVyLmNvbS9sYXRlc3QvaXRzLWFsbC1idWxsc2hpdC10YW4=",
+    "title": "🔗: It’s All Bullshit",
+    "url": "https://thebaffler.com/latest/its-all-bullshit-tan",
+    "content_text": "🔗: It’s All Bullshit #Tech https://thebaffler.com/latest/its-all-bullshit-tan",
+    "date_published": "Mon, 01 Jan 2024 17:36:13 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111682478520839428"
+    ],
+    "lastTootTimestamp": 1704139381793
   }
 }
