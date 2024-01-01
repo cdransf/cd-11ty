@@ -991,7 +991,7 @@ h5 > svg,
 h6 > svg,
 .pill--button > svg {
   margin-right: .25rem;
-  stroke-width: var(--stroke-width-bold);
+  stroke-width: var(--stroke-width-bold) !important;
 }
 
 /* screens: md */
