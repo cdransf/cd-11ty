@@ -475,10 +475,6 @@ code {
 }
 
 /* articles */
-.article__wrapper {
-  padding-top: 2rem;
-}
-
 article h2 {
   line-height: var(--line-height-2xl);
   margin-top: 0;
@@ -501,20 +497,6 @@ article time {
 
 .pagefind-ui__search-input:focus {
   border: 1px solid var(--blue-800);
-}
-
-.pagefind-ui__form mark {
-  background: var(--blue-600);
-}
-
-.pagefind-ui__form .pagefind-ui__result-link {
-  color: var(--blue-600);
-}
-
-.pagefind-ui__form .pagefind-ui__result-link:hover,
-.pagefind-ui__form .pagefind-ui__result-link:focus,
-.pagefind-ui__form .pagefind-ui__result-link:active {
-  color: var(--blue-800);
 }
 
 /* statistics */
@@ -978,7 +960,6 @@ code,
 .pill--button:hover,
 .pill--button:active,
 .pill--button:focus,
-.pagefind-ui__form mark,
 .media__grid .item__meta-text .header,
 .media__grid .item__meta-text .subheader {
   color: var(--white);
@@ -1216,12 +1197,6 @@ footer .links__secondary {
 
   .pagefind-ui__form .pagefind-ui__result-link {
     color: var(--blue-400);
-  }
-
-  .pagefind-ui__form .pagefind-ui__result-link:hover,
-  .pagefind-ui__form .pagefind-ui__result-link:focus,
-  .pagefind-ui__form .pagefind-ui__result-link:active {
-    color: var(--blue-200);
   }
 
   /* inputs */
