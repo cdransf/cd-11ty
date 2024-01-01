@@ -424,7 +424,6 @@ h1 > a.header-anchor {
 }
 
 code {
-  font-family: var(--font-mono);
   padding: .125rem;
   background-color: var(--black);
 }
@@ -491,7 +490,6 @@ article time {
   font-weight: 400 !important;
   border-radius: var(--rounded-sm);
   background-color: var(--white);
-  outline: none;
   border: 1px solid var(--blue-600);
 }
 
@@ -920,12 +918,18 @@ textarea {
   color: var(--black);
   background-color: var(--white);
   width: 100%;
-  outline: none;
   border: 1px solid var(--blue-600);
   padding: .5rem;
   margin-bottom: 1.5rem;
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+.pagefind-ui__search-input {
+  outline: none;
 }
 
 input[type="text"]:focus,
