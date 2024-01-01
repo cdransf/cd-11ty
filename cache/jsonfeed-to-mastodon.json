@@ -8438,6 +8438,42 @@
     "url": "https://trakt.tv/movies/blade-trinity-2004",
     "content_text": "🎥: Blade: Trinity #Movies #Watching #Trakt https://trakt.tv/movies/blade-trinity-2004",
     "date_published": "Sun, 31 Dec 2023 23:22:33 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111678705029794471"
+    ],
+    "lastTootTimestamp": 1704081802886
+  },
+  "https://danmcquillan.org/ai_thatcherism.html": {
+    "id": "aHR0cHM6Ly9kYW5tY3F1aWxsYW4ub3JnL2FpX3RoYXRjaGVyaXNtLmh0bWw=",
+    "title": "🔗: AI as Algorithmic Thatcherism",
+    "url": "https://danmcquillan.org/ai_thatcherism.html",
+    "content_text": "🔗: AI as Algorithmic Thatcherism #Tech https://danmcquillan.org/ai_thatcherism.html",
+    "date_published": "Thu, 21 Dec 2023 16:30:16 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111679650009366048"
+    ],
+    "lastTootTimestamp": 1704096222144
+  },
+  "https://trakt.tv/movies/the-siege-1998": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvdGhlLXNpZWdlLTE5OTg=",
+    "title": "🎥: The Siege",
+    "url": "https://trakt.tv/movies/the-siege-1998",
+    "content_text": "🎥: The Siege #Movies #Watching #Trakt https://trakt.tv/movies/the-siege-1998",
+    "date_published": "Mon, 01 Jan 2024 14:25:20 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111681535408955263"
+    ],
+    "lastTootTimestamp": 1704124991062
+  },
+  "https://thebaffler.com/latest/its-all-bullshit-tan": {
+    "id": "aHR0cHM6Ly90aGViYWZmbGVyLmNvbS9sYXRlc3QvaXRzLWFsbC1idWxsc2hpdC10YW4=",
+    "title": "🔗: It’s All Bullshit",
+    "url": "https://thebaffler.com/latest/its-all-bullshit-tan",
+    "content_text": "🔗: It’s All Bullshit #Tech https://thebaffler.com/latest/its-all-bullshit-tan",
+    "date_published": "Mon, 01 Jan 2024 17:36:13 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111682478520839428"
+    ],
+    "lastTootTimestamp": 1704139381793
   }
 }
