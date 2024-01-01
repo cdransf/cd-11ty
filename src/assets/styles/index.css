@@ -184,16 +184,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
-h1 > svg,
-h2 > svg,
-h3 > svg,
-h4 > svg,
-h5 > svg,
-h6 > svg {
-  margin-right: .25rem;
-  stroke-width: var(--stroke-width-bold) !important;
-}
-
 hr {
   height: 1px;
   background-color: var(--gray-200);
@@ -441,8 +431,6 @@ code {
 
 .pill--button > svg {
   stroke: var(--white);
-  margin-right: .25rem;
-  stroke-width: 2 !important;
 }
 
 .pill--button.pill--button__small {
@@ -993,6 +981,17 @@ footer .links__secondary {
 .author__wrapper > .avatar__wrapper > .avatar__wrapper--interior,
 .progress-bar__wrapper {
   overflow: hidden;
+}
+
+h1 > svg,
+h2 > svg,
+h3 > svg,
+h4 > svg,
+h5 > svg,
+h6 > svg,
+.pill--button > svg {
+  margin-right: .25rem;
+  stroke-width: var(--stroke-width-bold);
 }
 
 /* screens: small */
