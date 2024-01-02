@@ -8541,5 +8541,16 @@
       "https://social.lol/users/cory/statuses/111685311931564388"
     ],
     "lastTootTimestamp": 1704182616198
+  },
+  "https://trakt.tv/movies/the-cabin-in-the-woods-2012": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvdGhlLWNhYmluLWluLXRoZS13b29kcy0yMDEy",
+    "title": "🎥: The Cabin in the Woods",
+    "url": "https://trakt.tv/movies/the-cabin-in-the-woods-2012",
+    "content_text": "🎥: The Cabin in the Woods #Movies #Watching #Trakt https://trakt.tv/movies/the-cabin-in-the-woods-2012",
+    "date_published": "Tue, 02 Jan 2024 14:04:17 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111687198219805831"
+    ],
+    "lastTootTimestamp": 1704211398683
   }
 }
