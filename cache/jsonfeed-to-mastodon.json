@@ -8504,7 +8504,10 @@
     "url": "https://trakt.tv/movies/3-10-to-yuma-2007",
     "content_text": "🎥: 3:10 to Yuma #Movies #Watching #Trakt https://trakt.tv/movies/3-10-to-yuma-2007",
     "date_published": "Mon, 01 Jan 2024 23:39:46 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111684366409009499"
+    ],
+    "lastTootTimestamp": 1704168188664
   },
   "https://app.thestorygraph.com/books/814c649b-1378-4f3b-b9af-f12c1d0f8059": {
     "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvODE0YzY0OWItMTM3OC00ZjNiLWI5YWYtZjEyYzFkMGY4MDU5",
@@ -8516,5 +8519,21 @@
       "https://social.lol/users/cory/statuses/111683935911092491"
     ],
     "lastTootTimestamp": 1704161619811
+  },
+  "https://bix.blog/2024/01/01/its-time-for-blogging-to-pump-up-the-volume/": {
+    "id": "aHR0cHM6Ly9iaXguYmxvZy8yMDI0LzAxLzAxL2l0cy10aW1lLWZvci1ibG9nZ2luZy10by1wdW1wLXVwLXRoZS12b2x1bWUv",
+    "title": "🔗: The Year For Blogging To Pump Up The Volume",
+    "url": "https://bix.blog/2024/01/01/its-time-for-blogging-to-pump-up-the-volume/",
+    "content_text": "🔗: The Year For Blogging To Pump Up The Volume #Tech https://bix.blog/2024/01/01/its-time-for-blogging-to-pump-up-the-volume/",
+    "date_published": "Mon, 01 Jan 2024 20:12:14 +0000",
+    "toots": []
+  },
+  "https://app.thestorygraph.com/books/f5f5128e-6350-4b60-be37-9d2334412cf7": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvZjVmNTEyOGUtNjM1MC00YjYwLWJlMzctOWQyMzM0NDEyY2Y3",
+    "title": "📖: Anthem: Rush in the '70s",
+    "url": "https://app.thestorygraph.com/books/f5f5128e-6350-4b60-be37-9d2334412cf7",
+    "content_text": "📖: Anthem: Rush in the '70s #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/f5f5128e-6350-4b60-be37-9d2334412cf7",
+    "date_published": "Sun, 31 Dec 2023 16:00:00 +0000",
+    "toots": []
   }
 }
