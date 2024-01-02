@@ -69,6 +69,6 @@ Software and services that I use for work and my own enjoyment.
 - [The Storygraph](https://thestorygraph.com): an excellent, focused and community driven book tracking app. All it needs is RSS/Atom feeds and/or an API.
 - [Slack](http://slack.com): I have a family Slack set up to avoid group text messages and am in a few other community Slacks.
 - [Discord](http://discord.com): I don't _like_ Discord but, for better or worse, it's where some communities I frequent are.
-- [Arq](https://arqbackup.com): I back up my MacBook and attached drives to both Backblaze's B2 and Wasabi — Arq even has the option to download files in cloud storage like iCloud Drive to then be properly included in backups.
+- [Backblaze](https://backblaze.com): It backs up my MacBook Air and attached storage drive and I don't have to think about it.
 
 Check out [uses.tech](https://uses.tech) for more lists like this one.
