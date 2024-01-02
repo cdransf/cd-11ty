@@ -134,11 +134,8 @@ blockquote {
   border-left: 4px solid var(--gray-400);
 }
 
-body svg,
-html svg,
-nav .tags svg,
-nav .search svg {
-  stroke: var(--black);
+:is(body, html, nav .tags, nav .search) svg {
+  stroke: var(--black); 
 }
 
 /* links */
@@ -148,9 +145,7 @@ a {
 }
 
 /* links: custom */
-.main__title a,
-nav a,
-.links__secondary a {
+:is(.main__title, footer nav:last-child) a {
   color: var(--black);
   text-decoration: none;
 }
