@@ -32,7 +32,7 @@ eleventyExcludeFromCollections: true
     font-weight="bold"
     fill="#fff"
   >
-    <tspan x="40" y="{{ verticalStartingPoint | minus: 120 }}">
+    <tspan x="160" y="{{ verticalStartingPoint | minus: 120 }}">
       {{ preview.date | dateToReadableDate}}
     </tspan>
   </text>
@@ -47,7 +47,7 @@ eleventyExcludeFromCollections: true
   >
     {% for line in titleInLines %}
     {% capture spacing %}{{ forloop.index0 | times: 50 }}{% endcapture %}
-    <tspan x="40" y="{{ verticalStartingPoint | minus: 20 | plus: spacing }}">
+    <tspan x="160" y="{{ verticalStartingPoint | minus: 20 | plus: spacing }}">
       {{ line }}
     </tspan>
     {% endfor %}
@@ -60,6 +60,6 @@ eleventyExcludeFromCollections: true
     font-weight="bold"
     fill="#fff"
   >
-    <tspan x="40" y="600">{{ meta.siteName }} • {{ meta.url | replace: "https://", "" | replace: "http://", "" }}</tspan>
+    <tspan x="160" y="600">{{ meta.siteName }} • {{ meta.url | replace: "https://", "" | replace: "http://", "" }}</tspan>
   </text>
 </svg>
