@@ -8552,5 +8552,16 @@
       "https://social.lol/users/cory/statuses/111687198219805831"
     ],
     "lastTootTimestamp": 1704211398683
+  },
+  "https://trakt.tv/movies/go-1999": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvZ28tMTk5OQ==",
+    "title": "🎥: Go",
+    "url": "https://trakt.tv/movies/go-1999",
+    "content_text": "🎥: Go #Movies #Watching #Trakt https://trakt.tv/movies/go-1999",
+    "date_published": "Tue, 02 Jan 2024 15:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111687670688247141"
+    ],
+    "lastTootTimestamp": 1704218607985
   }
 }
