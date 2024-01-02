@@ -459,7 +459,10 @@ footer nav {
 
   a:hover,
   a:focus,
-  a:active {
+  a:active,
+  :is(.main__title, footer nav:last-child) a:hover,
+  :is(.main__title, footer nav:last-child) a:focus,
+  :is(.main__title, footer nav:last-child) a:active {
     color: var(--blue-200);
   }
 
