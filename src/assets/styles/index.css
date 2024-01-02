@@ -850,8 +850,7 @@ textarea {
 
 input[type="text"],
 input[type="email"],
-textarea,
-.pagefind-ui__search-input {
+textarea {
   outline: none;
 }
 
@@ -895,7 +894,6 @@ code,
 a,
 .webmentions__wrapper .interaction__wrapper .avatar__wrapper,
 .media__grid .item__wrapper,
-.pagefind-ui__search-input,
 .pill--button,
 input[type="text"],
 input[type="email"],
@@ -906,7 +904,6 @@ textarea {
 
 .webmentions__wrapper .interaction__wrapper .avatar__wrapper,
 .media__grid .item__wrapper,
-.pagefind-ui__search-input,
 input[type="text"],
 input[type="email"],
 textarea {
@@ -1135,11 +1132,6 @@ h6 > svg,
 
   .active:has(svg) {
     stroke: var(--blue-400)
-  }
-
-  /* search */
-  .pagefind-ui__form .pagefind-ui__result-link {
-    color: var(--blue-400);
   }
 
   /* inputs */
