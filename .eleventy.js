@@ -2,8 +2,8 @@ import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import tablerIcons from 'eleventy-plugin-tabler-icons'
 import pluginUnfurl from 'eleventy-plugin-unfurl'
 import pluginRss from '@11ty/eleventy-plugin-rss'
-import embedYouTube from 'eleventy-plugin-youtube-embed'
 import postGraph from '@rknightuk/eleventy-plugin-post-graph'
+import embedEverything from 'eleventy-plugin-embed-everything'
 
 import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
@@ -30,13 +30,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight)
   eleventyConfig.addPlugin(tablerIcons)
   eleventyConfig.addPlugin(pluginUnfurl)
-  eleventyConfig.addPlugin(embedYouTube, {
-    modestBranding: true,
-    lite: {
-      'lite.css.path': 'src/assets/styles/yt-lite.css',
-      'lite.js.path': 'src/assets/scripts/yt-lite.js',
-    },
-  })
   eleventyConfig.addPlugin(postGraph, {
     boxColorLight: '#e5e7eb',
     highlightColorLight: '#2563eb',
@@ -46,6 +39,7 @@ export default async function (eleventyConfig) {
     highlightColorDark: '#60a5fa',
     textColorDark: '#fff',
   })
+  eleventyConfig.addPlugin(embedEverything);
 
   // quiet build output
   eleventyConfig.setQuietMode(true)

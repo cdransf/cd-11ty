@@ -7,4 +7,4 @@ tags: ['music']
 ---
 Absolutely classic.<!-- excerpt -->
 
-<https://www.youtube.com/watch?v=gzC0RNkBXM0>
+https://www.youtube.com/watch?v=gzC0RNkBXM0

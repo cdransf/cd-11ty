@@ -1,0 +1,26 @@
+.post-graph {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.post-graph__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  margin-bottom: .375rem;
+}
+
+.post-graph__progress {
+  background-color: var(--blue-600);
+  height: 100%;
+}
+
+.post-graph__year {
+  font-family: var(--font-mono)
+}
+
+.post-graph__progress,
+.post-graph__data {
+  margin-left: .625rem;
+}

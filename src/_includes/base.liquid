@@ -31,10 +31,9 @@
       type="image/svg+xml">
     <link href="/assets/icons/apple-touch-icon.png?v={% assetHash %}" rel="apple-touch-icon">
     {% capture css %}
-      {% render "../assets/styles/yt-lite.css" %}
-      {% render "../assets/styles/silka.css" %}
-      {% render "../assets/styles/prism.css" %}
-      {% render "../assets/styles/pagefind.css" %}
+      {% render "../assets/styles/fonts/silka.css" %}
+      {% render "../assets/styles/partials/vars.css" %}
+      {% render "../assets/styles/partials/animations.css" %}
       {% render "../assets/styles/index.css" %}
     {% endcapture %}
     <style>
@@ -115,7 +114,7 @@
   <body>
     {{ content }}
     {% capture js %}
-      {% render "../assets/scripts/script.js" %}
+      {% render "../assets/scripts/index.js" %}
     {% endcapture %}
     <script>
       {{ js }}

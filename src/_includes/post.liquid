@@ -3,6 +3,12 @@ layout: main
 schema: blog
 ---
 {% render "partials/header.liquid", meta: meta, page: page, nav: nav %}
+{% capture css %}
+  {% render "../assets/styles/plugins/prism.css" %}
+{% endcapture %}
+<style>
+  {{ css | cssmin }}
+</style>
 <div class="default__wrapper">
   <article class="h-entry" data-pagefind-body>
     {% if link %}

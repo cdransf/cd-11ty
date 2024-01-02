@@ -6,21 +6,11 @@ permalink: /search.html
 ---
 
 <link href="https://coryd.dev/pagefind/pagefind-ui.css" rel="stylesheet" />
+{% capture css %}
+  {% render "../assets/styles/widgets/pagefind.css" %}
+{% endcapture %}
 <style>
-  :root {
-    --pagefind-ui-font: 'silka', 'Inter', 'Roboto', 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', 'Arial', 'system-ui', 'sans-serif';
-    --pagefind-ui-primary: #374151;
-    --pagefind-ui-text: #374151;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --pagefind-ui-primary: #e5e7eb;
-      --pagefind-ui-text: #e5e7eb;
-      --pagefind-ui-background: #152028;
-      --pagefind-ui-border: #152028;
-      --pagefind-ui-tag: #152028;
-    }
-  }
+  {{ css | cssmin }}
 </style>
 <div id="search" class="search"></div>
 <script
