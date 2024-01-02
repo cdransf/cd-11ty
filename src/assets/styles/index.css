@@ -794,6 +794,7 @@ article .now__section--header {
 .author__wrapper > .avatar__wrapper span {
   font-size: var(--font-size-lg);
   line-height: var(--line-height-lg);
+  font-weight: 700;
 }
 
 .author__wrapper > .avatar__wrapper,
