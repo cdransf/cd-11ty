@@ -39,8 +39,8 @@
   --webrings: #ec8fd0;
 
   /* fonts */
-  --font-sans: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, system-ui, sans-serif;
-  --font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  --font-sans: system-ui, sans-serif;
+  --font-mono: ui-monospace, monospace;
 
   /* text */
   --font-size-xs: .75rem;
