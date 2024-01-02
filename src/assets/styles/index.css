@@ -161,7 +161,7 @@ a:active {
   color: var(--blue-800);
 }
 
-a:has(svg) svg {
+a svg {
   stroke: var(--blue-600);
 }
 
@@ -1070,11 +1070,18 @@ h6 > svg,
     background: var(--blue-400);
   }
 
+  body svg,
+  html svg,
+  nav .tags svg,
+  nav .search svg {
+    stroke: var(--white);
+  }
+
   a {
     color: var(--blue-400);
   }
 
-  a:has(svg) svg {
+  a svg {
     stroke: var(--blue-400);
   }
 
@@ -1115,7 +1122,7 @@ h6 > svg,
     stroke: var(--brand-github-light) !important;
   }
 
-  a:has(svg):hover > svg {
+  a:has(svg):hover svg {
     stroke: var(--blue-200);
   }
 
@@ -1123,7 +1130,7 @@ h6 > svg,
     color: var(--blue-400);
   }
 
-  .active svg {
+  .active:has(svg) {
     stroke: var(--blue-400)
   }
 
@@ -1144,11 +1151,6 @@ h6 > svg,
   .pill--button:active,
   .pill--button:focus {
     background-color: var(--blue-200);
-  }
-
-  body svg,
-  html svg {
-    stroke: var(--white);
   }
 
   /* now */
