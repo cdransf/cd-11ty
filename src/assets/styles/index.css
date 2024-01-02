@@ -453,7 +453,7 @@ footer nav {
     stroke: var(--blue-400);
   }
 
-  .main__title, footer nav:last-child a {
+  :is(.main__title, footer nav:last-child) a {
     color: var(--white);
   }
 

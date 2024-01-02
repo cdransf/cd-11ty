@@ -9,6 +9,7 @@
 }
 
 .pagination button > svg {
+  stroke: var(--blue-600);
   cursor: pointer;
 }
 
@@ -20,6 +21,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  .pagination button > svg {
+    stroke: var(--blue-400);
+  }
+
   .pagination button.disabled > svg {
     stroke: var(--white);
   }
