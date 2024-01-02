@@ -40,7 +40,7 @@
 
   /* fonts */
   --font-sans: silka, Inter, Roboto, 'Helvetica Neue', system-ui, sans-serif;
-  --font-mono: ml, ui-monospace, monospace;
+  --font-mono: ui-monospace, monospace;
 
   /* text */
   --font-size-xs: .75rem;
@@ -87,19 +87,6 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-body {
-  --pagefind-ui-primary: var(--blue-600);
-  --pagefind-ui-text: var(--black);
-  --pagefind-ui-background: var(--white);
-  --pagefind-ui-border: var(--gray-200);
-  --pagefind-ui-tag: var(--gray-200);
-  --pagefind-ui-border-width: 1px;
-  --pagefind-ui-border-radius: 0;
-  --pagefind-ui-image-border-radius: 0;
-  --pagefind-ui-image-box-ratio: 3 / 2;
-  --pagefind-ui-font: var(--font-sans);
 }
 
 body,
@@ -962,14 +949,6 @@ footer nav {
 
 /* dark theme */
 @media (prefers-color-scheme: dark) {
-  body {
-    --pagefind-ui-primary: var(--blue-400);
-    --pagefind-ui-text: var(--white);
-    --pagefind-ui-background: var(--black);
-    --pagefind-ui-border: var(--gray-900);
-    --pagefind-ui-tag: var(--gray-900);
-  }
-
   body,
   html {
     color: var(--white);
@@ -1096,7 +1075,6 @@ footer nav {
 
   .highlight-text,
   .progress-bar,
-  .pagefind-ui__form mark,
   .pill--button,
   .post-graph__progress {
     background-color: var(--blue-400);

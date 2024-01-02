@@ -1,0 +1,22 @@
+body {
+  --pagefind-ui-primary: var(--blue-600);
+  --pagefind-ui-text: var(--black);
+  --pagefind-ui-background: var(--white);
+  --pagefind-ui-border: var(--gray-200);
+  --pagefind-ui-tag: var(--gray-200);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 0;
+  --pagefind-ui-image-border-radius: 0;
+  --pagefind-ui-image-box-ratio: 3 / 2;
+  --pagefind-ui-font: var(--font-sans);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --pagefind-ui-primary: var(--blue-400);
+    --pagefind-ui-text: var(--white);
+    --pagefind-ui-background: var(--black);
+    --pagefind-ui-border: var(--gray-900);
+    --pagefind-ui-tag: var(--gray-900);
+  }
+}
