@@ -1,6 +1,6 @@
 <nav class="pagination flex--centered">
   {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}">
+    <a class="link--icon" href="{{ pagination.href.previous }}">
       <button aria-label="Previous page [&>svg]:h-5 [&>svg]:w-5">
         {% tablericon "arrow-left" "Previous" %}
       </button>
@@ -17,7 +17,7 @@
     {{ pagination.pageNumber | plus: 1 }} of {{ pagination.links.size }}
   </div>
   {% if pagination.href.next %}
-    <a href="{{ pagination.href.next }}">
+    <a class="link--icon" href="{{ pagination.href.next }}">
       <button aria-label="Next page">
         {% tablericon "arrow-right" "Next" %}
       </button>

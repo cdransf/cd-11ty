@@ -134,31 +134,40 @@ blockquote {
   border-left: 4px solid var(--gray-400);
 }
 
+body svg,
+html svg,
+nav .tags svg,
+nav .search svg {
+  stroke: var(--black);
+}
+
+/* links */
 a {
   color: var(--blue-600);
   transition-property: color;
 }
 
+/* links: custom */
+.main__title a,
+nav a,
+.links__secondary a {
+  color: var(--black);
+  text-decoration: none;
+}
+
 a:hover,
 a:focus,
-a:active,
-.main__title h1 a:hover,
-.main__title h1 a:focus,
-.main__title h1 a:active,
-footer .links__secondary a:hover,
-footer .links__secondary a:focus,
-footer .links__secondary a:active {
+a:active {
   color: var(--blue-800);
 }
 
-a > svg {
+a:has(svg) svg {
   stroke: var(--blue-600);
-  transition-property: stroke;
 }
 
-a > svg:hover,
-a > svg:focus,
-a > svg:active {
+a:has(svg):hover svg,
+a:has(svg):active svg,
+a:has(svg):focus svg {
   stroke: var(--blue-800);
 }
 
@@ -187,31 +196,12 @@ h1, h2, h3, h4, h5, h6 {
 hr {
   height: 1px;
   background-color: var(--gray-200);
-  width: 100%;
   border: 0;
 }
 
 hr.large__spacing,
 hr.footnotes-sep {
   margin: 2.5rem 0;
-}
-
-/* layout */
-.main__wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1 1 0%;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.default__wrapper {
-  padding-top: 2rem;
 }
 
 /* header */
@@ -230,6 +220,106 @@ main {
   line-height: var(--line-height-2xl);
 }
 
+/* nav */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav svg {
+  margin-top: .125rem;
+}
+
+nav a:hover svg,
+nav a:active svg,
+nav a:focus svg,
+nav svg:hover,
+nav svg:active,
+nav svg:focus {
+  stroke-width: var(--stroke-width-bold);
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+.active,
+.active svg {
+  cursor: not-allowed;
+}
+
+.active {
+  color: var(--blue-600);
+}
+
+.active svg {
+  stroke: var(--blue-600);
+}
+
+.active svg:hover {
+  stroke-width: var(--stroke-width-default);
+}
+
+.at svg {
+  stroke: var(--brand-proton) !important;
+}
+
+.brand-github svg {
+  stroke: var(--brand-github) !important;
+}
+
+.brand-mastodon svg {
+  stroke: var(--brand-mastodon) !important;
+}
+
+.brand-lastfm svg {
+  stroke: var(--brand-lastfm) !important;
+}
+
+.device-tv svg {
+  stroke: var(--brand-trakt) !important;
+}
+
+.books svg {
+  stroke: var(--brand-storygraph) !important;
+}
+
+.cup svg {
+  stroke: var(--brand-buy-me-a-coffee) !important;
+}
+
+.heart-handshake svg {
+  stroke: var(--webrings) !important;
+}
+
+.rss svg {
+  stroke: var(--brand-rss) !important;
+}
+
+/* layout */
+.default__wrapper {
+  padding-top: 2rem;
+}
+
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 1 0%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* now */
 .now__topper,
 article {
   border-bottom: 1px solid var(--gray-200);
@@ -243,112 +333,6 @@ article {
   margin-bottom: 1rem;
 }
 
-/* nav */
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav ul li {
-  margin-right: 1rem;
-}
-
-.main__title h1 a,
-nav ul li a,
-footer .links__secondary a {
-  color: var(--black);
-  text-decoration: none;
-}
-
-nav svg {
-  margin-top: .125rem;
-}
-
-nav svg:hover,
-nav svg:active,
-nav svg:focus {
-  stroke-width: var(--stroke-width-bold);
-}
-
-nav .at svg {
-  stroke: var(--brand-proton);
-}
-
-nav .brand-github svg {
-  stroke: var(--brand-github);
-}
-
-nav .brand-mastodon svg {
-  stroke: var(--brand-mastodon);
-}
-
-nav .brand-lastfm svg {
-  stroke: var(--brand-lastfm);
-}
-
-nav .device-tv svg {
-  stroke: var(--brand-trakt);
-}
-
-nav .books svg {
-  stroke: var(--brand-storygraph);
-}
-
-nav .cup svg {
-  stroke: var(--brand-buy-me-a-coffee);
-}
-
-nav .heart-handshake svg {
-  stroke: var(--webrings);
-}
-
-nav .rss svg {
-  stroke: var(--brand-rss);
-}
-
-body svg,
-html svg,
-.link--icon,
-.pagination button.disabled > svg,
-.pagination button.disabled > svg:hover,
-.pagination button.disabled > svg:focus,
-.pagination button.disabled > svg:active,
-nav .tags svg,
-nav .search svg {
-  stroke: var(--black);
-}
-
-nav .tags svg:hover,
-nav .tags svg:focus,
-nav .tags svg:active,
-nav .search svg:hover,
-nav .search svg:focus,
-nav .search svg:active {
-  stroke: var(--blue-800);
-}
-
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-.active,
-.active svg {
-  color: var(--blue-600);
-  stroke: var(--blue-600);
-  cursor: not-allowed;
-}
-
-.active svg:hover {
-  stroke-width: var(--stroke-width-default);
-}
-
-.link--icon:hover,
-.link--icon:active,
-.link--icon:focus {
-  stroke: var(--blue-800);
-}
-
 .pagination button {
   background: none;
   padding-left: 0;
@@ -357,49 +341,38 @@ nav ul li:last-child {
 
 .pagination button > svg {
   cursor: pointer;
-  stroke: var(--blue-600);
-  transition-property: stroke;
-}
-
-.pagination button > svg:hover,
-.pagination button > svg:focus,
-.pagination button > svg:active {
-  stroke: var(--blue-800);
 }
 
 .pagination button.disabled > svg {
   opacity: .5;
   cursor: not-allowed;
+  stroke: var(--black);
   stroke-width: var(--stroke-width-default);
 }
 
-.pagination .previous {
-  padding: .5rem 1rem .5rem 0;
-}
-
-footer .social__main {
+footer nav:first-child {
   gap: 0.5rem;
   margin-top: 2rem;
   padding: 2rem 0 1rem;
   width: 100%;
 }
 
-footer .social__main svg {
+footer nav:first-child svg {
   margin-top: 0;
 }
 
-footer .social__main a {
+footer nav:first-child a {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-footer .links__secondary {
+footer nav:last-child {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
   padding-bottom: 2rem;
 }
 
-footer .links__secondary span {
+footer nav:last-child span {
   margin-left: .375rem;
   margin-right: .375rem;
 }
@@ -494,7 +467,7 @@ article time {
 }
 
 /* icons */
-[data-tablericon-name] {
+svg {
   stroke-width: var(--stroke-width-default);
 }
 
@@ -920,12 +893,9 @@ code,
 }
 
 a,
-a > svg,
 .webmentions__wrapper .interaction__wrapper .avatar__wrapper,
 .media__grid .item__wrapper,
 .pagefind-ui__search-input,
-.link--icon svg,
-.pagination button > svg,
 .pill--button,
 input[type="text"],
 input[type="email"],
@@ -959,8 +929,7 @@ textarea {
 .pill--button,
 .progress-bar,
 .webring__wrapper > .webring__centered,
-footer .social__main,
-footer .links__secondary {
+footer nav {
   justify-content: center;
 }
 
@@ -1022,7 +991,7 @@ h6 > svg,
     padding-left: 2.5rem;
   }
 
-  footer .social__main {
+  footer nav:first-child {
     gap: .75rem;
   }
 
@@ -1105,6 +1074,12 @@ h6 > svg,
     color: var(--blue-400);
   }
 
+  a:hover,
+  a:focus,
+  a:active {
+    color: var(--blue-200);
+  }
+
   hr {
     background-color: var(--gray-900);
   }
@@ -1114,18 +1089,6 @@ h6 > svg,
     border-color: var(--gray-900)
   }
 
-  a:hover,
-  a:focus,
-  a:active,
-  .main__title h1 a:hover,
-  .main__title h1 a:focus,
-  .main__title h1 a:active,
-  footer .links__secondary a:hover,
-  footer .links__secondary a:focus,
-  footer .links__secondary a:active {
-    color: var(--blue-200);
-  }
-
   code {
     color: var(--black);
     background-color: var(--white);
@@ -1133,11 +1096,10 @@ h6 > svg,
 
   /* nav */
   nav .brand-github svg {
-    stroke: var(--brand-github-light);
+    stroke: var(--brand-github-light) !important;
   }
 
-  nav .tags svg:hover,
-  nav .search svg:hover {
+  a:has(svg):hover > svg {
     stroke: var(--blue-200);
   }
 
@@ -1145,15 +1107,8 @@ h6 > svg,
     color: var(--blue-400);
   }
 
-  .active svg,
-  .pagination button > svg {
+  .active svg {
     stroke: var(--blue-400)
-  }
-
-  .pagination button > svg:hover,
-  .pagination button > svg:focus,
-  .pagination button > svg:active {
-    stroke: var(--blue-200);
   }
 
   /* search */
@@ -1176,20 +1131,17 @@ h6 > svg,
   }
 
   body svg,
-  html svg,
-  nav .tags svg,
-  nav .search svg,
-  .pagination button.disabled > svg,
-  .pagination button.disabled > svg:hover,
-  .pagination button.disabled > svg:focus,
-  .pagination button.disabled > svg:active,
-  .link--icon {
+  html svg {
     stroke: var(--white);
   }
 
-  .link--icon:hover,
-  .link--icon:active,
-  .link--icon:focus {
+  a:has(svg) svg {
+    stroke: var(--blue-400);
+  }
+
+  a:has(svg):hover svg,
+  a:has(svg):active svg,
+  a:has(svg):focus svg {
     stroke: var(--blue-200);
   }
 
@@ -1222,7 +1174,7 @@ h6 > svg,
   }
 
   .main__title h1 a,
-  footer .links__secondary a,
+  footer nav:last-child a,
   nav ul li a,
   input[type="text"],
   input[type="email"],
