@@ -6,7 +6,7 @@ pre[class*='language-'] {
   color: #d9e0ee;
   background: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  font-family: ui-monospace, monospace;
+  font-family: ml, ui-monospace, monospace;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
