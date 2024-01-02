@@ -160,9 +160,7 @@ a svg {
   stroke: var(--blue-600);
 }
 
-a:has(svg):hover svg,
-a:has(svg):active svg,
-a:has(svg):focus svg {
+:is(a:has(svg):hover, a:has(svg):active, a:has(svg):focus) svg {
   stroke: var(--blue-800);
 }
 
@@ -230,9 +228,7 @@ nav svg {
   margin-top: .125rem;
 }
 
-nav a:hover svg,
-nav a:active svg,
-nav a:focus svg,
+:is(nav a:hover, nav a:active, nav a:focus) svg,
 nav svg:hover,
 nav svg:active,
 nav svg:focus {
@@ -1078,12 +1074,10 @@ h6 > svg,
     stroke: var(--blue-400);
   }
 
-  .main__title a,
-  footer nav:last-child a,
+  :is(.main__title, footer nav:last-child, .webmentions__wrapper .interaction__wrapper .comment__wrapper--interior .comment) a,
   input[type="text"],
   input[type="email"],
-  textarea,
-  .webmentions__wrapper .interaction__wrapper .comment__wrapper--interior .comment a {
+  textarea {
     color: var(--white);
   }
 
