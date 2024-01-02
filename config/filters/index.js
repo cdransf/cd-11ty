@@ -20,7 +20,7 @@ export default {
     const replacement = '&amp;'
     return string.replace(pattern, replacement)
   },
-  splitlines: (input, maxCharLength) => {
+  splitLines: (input, maxCharLength) => {
     const parts = input.split(' ')
     const lines = parts.reduce(function (acc, cur) {
       if (!acc.length) return [cur]
@@ -125,27 +125,6 @@ export default {
         timeZone: 'America/Los_Angeles',
       })
       .split(',')[0]
-  },
-  toDateTime: (date) => {
-    const formatted = DateTime.fromISO(date)
-    const trail = (number) => {
-      return parseInt(number, 10) < 10 ? `0${number}` : number
-    }
-
-    return `${formatted.year}-${trail(formatted.month)}-${trail(formatted.day)} ${trail(
-      formatted.hour
-    )}:${trail(formatted.minute)}`
-  },
-  toDateTimeFromUnix: (date) => {
-    const formatted = DateTime.fromSeconds(parseInt(date, 10))
-
-    const trail = (number) => {
-      return parseInt(number, 10) < 10 ? `0${number}` : number
-    }
-
-    return `${trail(formatted.month)}.${trail(formatted.day)}.${formatted.year} ${trail(
-      formatted.hour
-    )}:${trail(formatted.minute)}`
   },
   isoDateOnly: (date) => {
     let d = new Date(date)
