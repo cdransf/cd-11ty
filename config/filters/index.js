@@ -56,6 +56,8 @@ export default {
     return tagMap[url] || ''
   },
   webmentionsByUrl: (webmentions, url) => {
+    if (!webmentions) return null;
+
     const allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of']
     const data = {
       'like-of': [],
@@ -102,6 +104,13 @@ export default {
     data['in-reply-to'].sort((a, b) =>
       a.published > b.published ? 1 : b.published > a.published ? -1 : 0
     )
+
+    // delete empty keys
+    Object.keys(data).forEach((key) => {
+      if (data[key].length === 0) delete data[key]
+    });
+
+    if (!Object.keys(data).length) return null;
 
     return data
   },
