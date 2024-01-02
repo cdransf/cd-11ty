@@ -8505,5 +8505,16 @@
     "content_text": "🎥: 3:10 to Yuma #Movies #Watching #Trakt https://trakt.tv/movies/3-10-to-yuma-2007",
     "date_published": "Mon, 01 Jan 2024 23:39:46 +0000",
     "toots": []
+  },
+  "https://app.thestorygraph.com/books/814c649b-1378-4f3b-b9af-f12c1d0f8059": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvODE0YzY0OWItMTM3OC00ZjNiLWI5YWYtZjEyYzFkMGY4MDU5",
+    "title": "📖: The Clash: All the Albums, All the Songs",
+    "url": "https://app.thestorygraph.com/books/814c649b-1378-4f3b-b9af-f12c1d0f8059",
+    "content_text": "📖: The Clash: All the Albums, All the Songs #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/814c649b-1378-4f3b-b9af-f12c1d0f8059",
+    "date_published": "Sun, 31 Dec 2023 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111683935911092491"
+    ],
+    "lastTootTimestamp": 1704161619811
   }
 }
