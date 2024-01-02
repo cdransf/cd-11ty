@@ -1086,8 +1086,11 @@ h6 > svg,
   }
 
   .main__title a,
-  nav a,
-  .links__secondary a {
+  footer nav:last-child a,
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  .webmentions__wrapper .interaction__wrapper .comment__wrapper--interior .comment a {
     color: var(--white);
   }
 
@@ -1179,16 +1182,6 @@ h6 > svg,
   .webmentions__wrapper .interaction__wrapper .avatar__wrapper:hover,
   .webmentions__wrapper .interaction__wrapper .comment__wrapper:hover .avatar__wrapper {
     border-color: var(--blue-200);
-  }
-
-  .main__title h1 a,
-  footer nav:last-child a,
-  nav ul li a,
-  input[type="text"],
-  input[type="email"],
-  textarea,
-  .webmentions__wrapper .interaction__wrapper .comment__wrapper--interior .comment a {
-    color: var(--white);
   }
 
   .highlight-text,
