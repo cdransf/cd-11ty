@@ -1156,6 +1156,10 @@ h6 > svg,
     background-color: var(--blue-200);
   }
 
+  .pagination button.disabled > svg {
+    stroke: var(--white);
+  }
+
   /* now */
   .media__grid .item__wrapper {
     border-color: var(--blue-400);
