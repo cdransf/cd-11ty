@@ -199,8 +199,6 @@ hr.footnotes-sep {
 
 /* header */
 .main__title {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   padding-top: 1.25rem;
 }
@@ -298,8 +296,6 @@ nav ul li:last-child {
 }
 
 .main__wrapper {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -528,11 +524,6 @@ li {
 }
 
 /* contact */
-.contact__wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 .contact__wrapper textarea {
   height: 10rem;
   resize: none;
@@ -755,9 +746,8 @@ article .now__section--header {
 
 .author__wrapper,
 .author__wrapper > .avatar__wrapper,
-.webmentions .interaction .avatar__wrapper > picture {
-  display: flex;
-  flex-direction: column;
+.webmentions .interaction .avatar__wrapper > picture,
+.author__wrapper > .avatar__wrapper > .avatar__wrapper--interior {
   align-items: center;
 }
 
@@ -771,9 +761,6 @@ article .now__section--header {
   margin-bottom: 1rem;
   margin-right: 0;
   padding: .25rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .author__wrapper > .avatar__wrapper > .avatar__wrapper--interior,
@@ -810,8 +797,6 @@ article .now__section--header {
 }
 
 .progress-bar {
-  display: flex;
-  flex-direction: column;
   white-space: nowrap;
   background-color: var(--blue-600);
 }
@@ -872,8 +857,20 @@ textarea:focus {
 }
 
 /* shared styles */
-.highlight-text,
+.main__title,
+.main__wrapper,
+.contact__wrapper,
+.author__wrapper,
+.author__wrapper > .avatar__wrapper,
+.author__wrapper > .avatar__wrapper > .avatar__wrapper--interior,
+.webmentions .interaction .avatar__wrapper > picture,
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+}
+
 code,
+.highlight-text,
 .pill--button,
 .pill--button:hover,
 .pill--button:active,
