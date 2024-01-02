@@ -31,7 +31,7 @@ blockquote {
 }
 
 :is(body, html, nav .tags, nav .search) svg {
-  stroke: var(--black); 
+  stroke: var(--black);
 }
 
 :is(h1, h2, h3, h4, h5, h6, .pill--button) > svg {
@@ -438,10 +438,7 @@ footer nav {
     background: var(--blue-400);
   }
 
-  body svg,
-  html svg,
-  nav .tags svg,
-  nav .search svg {
+  :is(body, html, nav .tags, nav .search) svg {
     stroke: var(--white);
   }
 
