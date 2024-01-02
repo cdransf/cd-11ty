@@ -1,0 +1,37 @@
+/* now */
+.now__section--text {
+  padding-left: 1rem;
+}
+
+.now__section--text p {
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+}
+
+.now__section--text p > svg {
+  display: inline;
+  vertical-align: middle;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.now__section--header {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.now__section--header:first-of-type {
+  margin-top: 0;
+}
+
+.now__explainer {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .now__section--text {
+    padding-left: 2rem;
+  }
+}

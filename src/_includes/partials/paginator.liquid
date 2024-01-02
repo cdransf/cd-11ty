@@ -1,3 +1,9 @@
+{% capture css %}
+  {% render "../../assets/styles/widgets/paginator.css" %}
+{% endcapture %}
+<style>
+  {{ css | cssmin }}
+</style>
 <nav class="pagination flex--centered">
   {% if pagination.href.previous %}
     <a href="{{ pagination.href.previous }}">

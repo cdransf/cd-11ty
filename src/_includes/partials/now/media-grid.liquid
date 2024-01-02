@@ -1,4 +1,10 @@
 {% if data.size > 0 %}
+  {% capture css %}
+    {% render "../../../assets/styles/widgets/media-grid.css" %}
+  {% endcapture %}
+  <style>
+    {{ css | cssmin }}
+  </style>
   {% assign media = data | normalizeMedia %}
   <h2 class="now__section--header flex--centered">
     {% tablericon icon title %}

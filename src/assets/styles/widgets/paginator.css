@@ -1,0 +1,26 @@
+.pagination {
+  justify-content: space-between;
+}
+
+.pagination button {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.pagination button > svg {
+  cursor: pointer;
+}
+
+.pagination button.disabled > svg {
+  opacity: .5;
+  cursor: not-allowed;
+  stroke: var(--black);
+  stroke-width: var(--stroke-width-default);
+}
+
+@media (prefers-color-scheme: dark) {
+  .pagination button.disabled > svg {
+    stroke: var(--white);
+  }
+}

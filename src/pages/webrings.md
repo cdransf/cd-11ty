@@ -4,7 +4,12 @@ layout: default
 permalink: /webrings.html
 description: "Webrings are awesome! These are the ones I'm a member of."
 ---
-
+{% capture css %}
+  {% render "../assets/styles/pages/webrings.css" %}
+{% endcapture %}
+<style>
+  {{ css | cssmin }}
+</style>
 <h2
 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-white md:text-2xl mb-2"
 >

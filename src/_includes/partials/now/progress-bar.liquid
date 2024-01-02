@@ -1,4 +1,10 @@
 {% if percentage %}
+{% capture css %}
+  {% render "../../../assets/styles/widgets/media-grid.css" %}
+{% endcapture %}
+<style>
+  {{ css | cssmin }}
+</style>
 <div class="progress-bar__wrapper">
   <div style="width:{{ percentage }}" class="progress-bar shadow-none flex flex-col whitespace-nowrap justify-center bg-blue-600 dark:bg-blue-400"></div>
 </div>

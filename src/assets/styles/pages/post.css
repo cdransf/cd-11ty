@@ -1,0 +1,26 @@
+/* embeds */
+.eleventy-plugin-youtube-embed {
+  margin-bottom: 1rem;
+}
+
+/* footnotes */
+hr.footnotes-sep {
+  margin: 2.5rem 0;
+}
+
+.footnotes-list {
+  margin-bottom: 0 !important;
+  padding-left: 0 !important;
+}
+
+.footnotes-list li:last-child {
+  margin-bottom: 0;
+}
+
+.footnotes {
+  padding-bottom: 1.5rem;
+}
+
+.footnote-item > p {
+  display: inline;
+}

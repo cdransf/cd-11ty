@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+{% capture css %}
+  {% render "../assets/styles/pages/now.css" %}
+{% endcapture %}
+<style>
+  {{ css | cssmin }}
+</style>
 {{ content }}
 {% render "partials/now/media-grid.liquid", data:artists, icon: "microphone-2", title: "Artists", shape: "square", count: 8, loading: 'eager' %}
 {% render "partials/now/media-grid.liquid", data:albums, icon: "vinyl", title: "Albums", shape: "square", count: 8 %}

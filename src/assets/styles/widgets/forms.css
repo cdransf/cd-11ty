@@ -1,0 +1,37 @@
+input[type="text"],
+input[type="email"],
+textarea {
+  color: var(--black);
+  background-color: var(--white);
+  width: 100%;
+  border: 1px solid var(--blue-600);
+  padding: .5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400 !important;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  transition-property: border-color;
+  transition-timing-function: var(--ease-in-out);
+  transition-duration: 300ms;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: 1px solid var(--blue-800);
+}
+
+@media (prefers-color-scheme: dark) {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    color: var(--white);
+    background-color: var(--black);
+  }
+}

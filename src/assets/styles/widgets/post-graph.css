@@ -24,3 +24,9 @@
 .post-graph__data {
   margin-left: .625rem;
 }
+
+@media (prefers-color-scheme: dark) {
+  .post-graph__progress {
+    background-color: var(--blue-400);
+  }
+}

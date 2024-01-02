@@ -5,6 +5,7 @@ schema: blog
 {% render "partials/header.liquid", meta: meta, page: page, nav: nav %}
 {% capture css %}
   {% render "../assets/styles/plugins/prism.css" %}
+  {% render "../assets/styles/pages/post.css" %}
 {% endcapture %}
 <style>
   {{ css | cssmin }}

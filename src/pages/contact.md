@@ -4,6 +4,13 @@ layout: default
 permalink: /contact.html
 description: 'How to contact me.'
 ---
+{% capture css %}
+  {% render "../assets/styles/widgets/forms.css" %}
+  {% render "../assets/styles/pages/contact.css" %}
+{% endcapture %}
+<style>
+  {{ css | cssmin }}
+</style>
 <h2 class="page__header">{{ title }}</h2>
 <div class="contact__wrapper">
   <div class="column contact__description">
