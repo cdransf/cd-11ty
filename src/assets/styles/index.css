@@ -1080,6 +1080,12 @@ h6 > svg,
     color: var(--blue-200);
   }
 
+  .main__title a,
+  nav a,
+  .links__secondary a {
+    color: var(--white);
+  }
+
   hr {
     background-color: var(--gray-900);
   }
