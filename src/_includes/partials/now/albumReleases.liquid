@@ -7,7 +7,7 @@
     {% for album in albumReleases %}
       <li>
         <strong>{{ album.date | readableDate }}: </strong>
-        <a href="https://{{album.url}}" title="{{album.title | escape}}">
+        <a class="no-underline" href="https://{{album.url}}" title="{{album.title | escape}}">
           {{album.title}}
         </a>
       </li>
