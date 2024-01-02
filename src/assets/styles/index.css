@@ -1074,16 +1074,26 @@ h6 > svg,
     color: var(--blue-400);
   }
 
-  a:hover,
-  a:focus,
-  a:active {
-    color: var(--blue-200);
+  a:has(svg) svg {
+    stroke: var(--blue-400);
   }
 
   .main__title a,
   nav a,
   .links__secondary a {
     color: var(--white);
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    color: var(--blue-200);
+  }
+
+  a:has(svg):hover svg,
+  a:has(svg):active svg,
+  a:has(svg):focus svg {
+    stroke: var(--blue-200);
   }
 
   hr {
@@ -1139,16 +1149,6 @@ h6 > svg,
   body svg,
   html svg {
     stroke: var(--white);
-  }
-
-  a:has(svg) svg {
-    stroke: var(--blue-400);
-  }
-
-  a:has(svg):hover svg,
-  a:has(svg):active svg,
-  a:has(svg):focus svg {
-    stroke: var(--blue-200);
   }
 
   /* now */
