@@ -1,6 +1,6 @@
 {% assign mentions = webmentions.mentions | webmentionsByUrl: page.url %}
 {% if mentions %}
-  <div class="webmentions__wrapper">
+  <div class="webmentions">
     {% render "partials/webmentions/interaction.liquid", mentions: mentions, type: 'repost-of' %}
     {% render "partials/webmentions/interaction.liquid", mentions: mentions, type: 'like-of' %}
     {% render "partials/webmentions/comments.liquid", mentions: mentions %}

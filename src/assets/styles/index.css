@@ -666,59 +666,59 @@ article .now__section--header {
   margin-bottom: 1rem;
 }
 
-.webmentions__wrapper {
+.webmentions {
   border-top: 1px solid var(--gray-200);
   margin-top: 1.5rem;
   margin-bottom: 3.25rem;
   padding-top: 2rem;
 }
 
-.webmentions__wrapper .interaction__wrapper.comments {
+.webmentions .interaction.comments {
   flex-direction: column;
 }
 
-.webmentions__wrapper .interaction__wrapper {
+.webmentions .interaction {
   cursor: pointer;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.webmentions__wrapper .interaction__wrapper .comment__wrapper {
+.webmentions .interaction .comment__wrapper {
   width: 100%;
   padding-bottom: 1rem;
 }
 
-.webmentions__wrapper .interaction__wrapper .comment__wrapper:last-child {
+.webmentions .interaction .comment__wrapper:last-child {
   padding-bottom: 0;
 }
 
-.webmentions__wrapper .interaction__wrapper .avatar__wrapper:hover,
-.webmentions__wrapper .interaction__wrapper .comment__wrapper:hover .avatar__wrapper {
+.webmentions .interaction .avatar__wrapper:hover,
+.webmentions .interaction .comment__wrapper:hover .avatar__wrapper {
   border-color: var(--blue-800);
 }
 
-.webmentions__wrapper .interaction__wrapper .comment__wrapper--interior .comment {
+.webmentions .interaction .comment__wrapper--interior .comment {
   margin-left: .75rem;
 }
 
-.webmentions__wrapper .interaction__wrapper .comment__wrapper--interior .comment a {
+.webmentions .interaction .comment__wrapper--interior .comment a {
   color: var(--black);
   text-decoration: none;
 }
 
-.webmentions__wrapper .interaction__wrapper .comment__wrapper--interior .comment p {
+.webmentions .interaction .comment__wrapper--interior .comment p {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
   margin: 0;
 }
 
-.webmentions__wrapper .interaction__wrapper .comment__wrapper--interior .comment time {
+.webmentions .interaction .comment__wrapper--interior .comment time {
   font-size: var(--font-size-xs);
   line-height: var(--line-height-xs);
   margin-top: .25rem;
 }
 
-.webmentions__wrapper .interaction__wrapper ul {
+.webmentions .interaction ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -727,12 +727,12 @@ article .now__section--header {
   list-style: none;
 }
 
-.webmentions__wrapper .interaction__wrapper li {
+.webmentions .interaction li {
   margin-left: -.75rem;
   height: 3.5rem;
 }
 
-.webmentions__wrapper .interaction__wrapper .avatar__wrapper {
+.webmentions .interaction .avatar__wrapper {
   background-color: var(--black);
   width: 3.5rem;
   height: 3.5rem;
@@ -741,7 +741,7 @@ article .now__section--header {
   border: 4px solid var(--white);
 }
 
-.webmentions__wrapper .interaction__wrapper .avatar__wrapper .avatar__wrapper-image > * {
+.webmentions .interaction .avatar__wrapper .avatar__wrapper-image > * {
   width: 100%;
   height: 100%;
   border-radius: var(--rounded-full);
@@ -755,7 +755,7 @@ article .now__section--header {
 
 .author__wrapper,
 .author__wrapper > .avatar__wrapper,
-.webmentions__wrapper .interaction__wrapper .avatar__wrapper > picture {
+.webmentions .interaction .avatar__wrapper > picture {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -884,7 +884,7 @@ code,
 }
 
 a,
-.webmentions__wrapper .interaction__wrapper .avatar__wrapper,
+.webmentions .interaction .avatar__wrapper,
 .media__grid .item__wrapper,
 .pill--button,
 input[type="text"],
@@ -894,7 +894,7 @@ textarea {
   transition-duration: 300ms;
 }
 
-.webmentions__wrapper .interaction__wrapper .avatar__wrapper,
+.webmentions .interaction .avatar__wrapper,
 .media__grid .item__wrapper,
 input[type="text"],
 input[type="email"],
@@ -903,7 +903,7 @@ textarea {
 }
 
 .pagination,
-.webmentions__wrapper .interaction__wrapper .comment__wrapper--interior,
+.webmentions .interaction .comment__wrapper--interior,
 .author__wrapper {
   justify-content: space-between;
 }
@@ -925,7 +925,7 @@ footer nav {
 .image__banner,
 .avatar__wrapper .avatar__wrapper--interior,
 .media__grid .item__wrapper,
-.webmentions__wrapper .interaction__wrapper .avatar__wrapper,
+.webmentions .interaction .avatar__wrapper,
 .author__wrapper > .avatar__wrapper > .avatar__wrapper--interior,
 .progress-bar__wrapper {
   overflow: hidden;
@@ -1065,7 +1065,7 @@ footer nav {
     stroke: var(--blue-400);
   }
 
-  :is(.main__title, footer nav:last-child, .webmentions__wrapper .interaction__wrapper .comment__wrapper--interior .comment) a,
+  :is(.main__title, footer nav:last-child, .webmentions .interaction .comment__wrapper--interior .comment) a,
   input[type="text"],
   input[type="email"],
   textarea {
@@ -1145,19 +1145,19 @@ footer nav {
 
   /* widgets */
   .author__wrapper,
-  .webmentions__wrapper {
+  .webmentions {
     border-color: var(--gray-900);
   }
 
-  .webmentions__wrapper .interaction__wrapper .avatar__wrapper {
+  .webmentions .interaction .avatar__wrapper {
     background-color: var(--white);
     border-color: var(--black);
   }
 
   /* shared styles */
   .media__grid .item__wrapper:hover,
-  .webmentions__wrapper .interaction__wrapper .avatar__wrapper:hover,
-  .webmentions__wrapper .interaction__wrapper .comment__wrapper:hover .avatar__wrapper {
+  .webmentions .interaction .avatar__wrapper:hover,
+  .webmentions .interaction .comment__wrapper:hover .avatar__wrapper {
     border-color: var(--blue-200);
   }
 
