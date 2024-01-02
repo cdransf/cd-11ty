@@ -931,13 +931,7 @@ footer nav {
   overflow: hidden;
 }
 
-h1 > svg,
-h2 > svg,
-h3 > svg,
-h4 > svg,
-h5 > svg,
-h6 > svg,
-.pill--button > svg {
+:is(h1, h2, h3, h4, h5, h6, .pill--button) > svg {
   margin-right: .25rem;
   stroke-width: var(--stroke-width-bold) !important;
 }
@@ -1023,9 +1017,6 @@ h6 > svg,
 
   .author__wrapper > .avatar__wrapper {
     justify-content: start;
-  }
-
-  .author__wrapper > .avatar__wrapper {
     margin-bottom: 0;
   }
 
