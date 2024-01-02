@@ -9,7 +9,7 @@
   </span>
 {% else %}
   {% if icon %}
-    <a class="link--icon {{ icon | downcase }}" href="/{{ link | downcase }}">
+    <a class="{{ icon | downcase }}" href="/{{ link | downcase }}">
       {% tablericon icon link %}
     </a>
   {% else %}
