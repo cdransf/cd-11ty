@@ -8574,5 +8574,24 @@
       "https://social.lol/users/cory/statuses/111688140950438923"
     ],
     "lastTootTimestamp": 1704225783591
+  },
+  "https://slate.com/technology/2023/12/ai-mass-spying-internet-surveillance.html": {
+    "id": "aHR0cHM6Ly9zbGF0ZS5jb20vdGVjaG5vbG9neS8yMDIzLzEyL2FpLW1hc3Mtc3B5aW5nLWludGVybmV0LXN1cnZlaWxsYW5jZS5odG1s",
+    "title": "🔗: The Internet Enabled Mass Surveillance. A.I. Will Enable Mass Spying.",
+    "url": "https://slate.com/technology/2023/12/ai-mass-spying-internet-surveillance.html",
+    "content_text": "🔗: The Internet Enabled Mass Surveillance. A.I. Will Enable Mass Spying. #Tech https://slate.com/technology/2023/12/ai-mass-spying-internet-surveillance.html",
+    "date_published": "Wed, 03 Jan 2024 00:09:17 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111689592416654638"
+    ],
+    "lastTootTimestamp": 1704247931242
+  },
+  "https://infrequently.org/2024/01/the-web-is-the-app-store/": {
+    "id": "aHR0cHM6Ly9pbmZyZXF1ZW50bHkub3JnLzIwMjQvMDEvdGhlLXdlYi1pcy10aGUtYXBwLXN0b3JlLw==",
+    "title": "🔗: Why Are Tech Reporters Sleeping On The Biggest App Store Story?",
+    "url": "https://infrequently.org/2024/01/the-web-is-the-app-store/",
+    "content_text": "🔗: Why Are Tech Reporters Sleeping On The Biggest App Store Story? #Tech  #WebDev https://infrequently.org/2024/01/the-web-is-the-app-store/",
+    "date_published": "Tue, 02 Jan 2024 22:04:46 +0000",
+    "toots": []
   }
 }
