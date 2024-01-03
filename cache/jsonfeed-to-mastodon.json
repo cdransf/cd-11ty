@@ -8596,5 +8596,27 @@
       "https://social.lol/users/cory/statuses/111690029186464585"
     ],
     "lastTootTimestamp": 1704254595791
+  },
+  "https://trakt.tv/movies/the-guest-2014": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvdGhlLWd1ZXN0LTIwMTQ=",
+    "title": "🎥: The Guest",
+    "url": "https://trakt.tv/movies/the-guest-2014",
+    "content_text": "🎥: The Guest #Movies #Watching #Trakt https://trakt.tv/movies/the-guest-2014",
+    "date_published": "Wed, 03 Jan 2024 15:00:07 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111693332314906294"
+    ],
+    "lastTootTimestamp": 1704304997535
+  },
+  "https://www.scientificamerican.com/article/tech-billionaires-need-to-stop-trying-to-make-the-science-fiction-they-grew-up-on-real/": {
+    "id": "aHR0cHM6Ly93d3cuc2NpZW50aWZpY2FtZXJpY2FuLmNvbS9hcnRpY2xlL3RlY2gtYmlsbGlvbmFpcmVzLW5lZWQtdG8tc3RvcC10cnlpbmctdG8tbWFrZS10aGUtc2NpZW5jZS1maWN0aW9uLXRoZXktZ3Jldy11cC1vbi1yZWFsLw==",
+    "title": "🔗: Tech Billionaires Need to Stop Trying to Make the Science Fiction They Grew Up on Real",
+    "url": "https://www.scientificamerican.com/article/tech-billionaires-need-to-stop-trying-to-make-the-science-fiction-they-grew-up-on-real/",
+    "content_text": "🔗: Tech Billionaires Need to Stop Trying to Make the Science Fiction They Grew Up on Real #Tech https://www.scientificamerican.com/article/tech-billionaires-need-to-stop-trying-to-make-the-science-fiction-they-grew-up-on-real/",
+    "date_published": "Wed, 03 Jan 2024 16:04:34 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111694274877524966"
+    ],
+    "lastTootTimestamp": 1704319379901
   }
 }
