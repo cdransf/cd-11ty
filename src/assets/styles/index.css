@@ -148,12 +148,15 @@ nav ul li:last-child {
   color: var(--blue-600);
 }
 
-.active svg {
+.active svg,
+nav ul li .active svg {
   stroke: var(--blue-600);
 }
 
 .active:hover svg,
-.active svg:hover {
+.active svg:hover,
+nav ul li .active:hover svg,
+nav ul li .active svg:hover {
   stroke-width: var(--stroke-width-default);
 }
 
@@ -447,6 +450,15 @@ footer nav {
   }
 
   a svg {
+    stroke: var(--blue-400);
+  }
+
+  .active {
+    color: var(--blue-400);
+  }
+
+  .active svg,
+  nav ul li .active svg {
     stroke: var(--blue-400);
   }
 
