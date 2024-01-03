@@ -21,6 +21,7 @@ export default {
   'pigment vehicle': 'c421f86c-991c-4b2d-9058-516375903deb',
   'phoebe bridgers': '96855c21-b832-4366-ba12-0d2330c36a86',
   'regional justice center': '64ad5550-e93f-4add-80c3-e6b651f4f250',
-  'rush': '534ee493-bfac-4575-a44a-0ae41e2c3fe4',
+  rush: '534ee493-bfac-4575-a44a-0ae41e2c3fe4',
+  undergang: '6853b4ec-8cd4-46a4-b970-8331d4587c43',
   worm: '6313658e-cd68-4c81-9778-17ce3825748e',
 }
