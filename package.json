@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "4.3.0",
+  "version": "4.3.1",
   "description": "The source for my personal site, blog and portfolio. Built using 11ty and hosted on Netlify.",
   "type": "module",
   "scripts": {
@@ -15,7 +15,7 @@
   "author": "Cory Dransfeldt",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "3.0.0-alpha.3",
+    "@11ty/eleventy": "3.0.0-alpha.4",
     "@11ty/eleventy-activity-feed": "^1.0.9",
     "@11ty/eleventy-fetch": "^4.0.0",
     "@11ty/eleventy-img": "^3.1.8",
