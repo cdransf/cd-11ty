@@ -16,6 +16,7 @@ export default {
   nucleus: '9eefaa74-8dea-41af-8bb3-0d9616bec16f',
   oasis: '39ab1aed-75e0-4140-bd47-540276886b60',
   obliteration: '5c241a91-d7e9-447a-807c-e4a8435f10ef',
+  'oranssi pazuzu': 'e9d2cdf6-d485-4074-9a53-9990c9a4d8b1',
   osees: '194272cc-dcc8-4640-a4a6-66da7d250d5c',
   panopticon: 'd9b1f00a-31a7-4f64-9f29-8481e7be8911',
   'pigment vehicle': 'c421f86c-991c-4b2d-9058-516375903deb',
