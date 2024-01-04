@@ -20,7 +20,7 @@
     </button>
   {% endif %}
   <div class="text-center">
-    {{ pagination.pageNumber | plus: 1 }} of {{ pagination.links.size }}
+    <span aria-current="page">{{ pagination.pageNumber | plus: 1 }}</span> of {{ pagination.links.size }}
   </div>
   {% if pagination.href.next %}
     <a href="{{ pagination.href.next }}">
