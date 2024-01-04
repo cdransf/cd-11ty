@@ -8618,5 +8618,16 @@
       "https://social.lol/users/cory/statuses/111694274877524966"
     ],
     "lastTootTimestamp": 1704319379901
+  },
+  "https://app.thestorygraph.com/books/57fd0912-3e02-4a55-b7a8-86f584ecf373": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvNTdmZDA5MTItM2UwMi00YTU1LWI3YTgtODZmNTg0ZWNmMzcz",
+    "title": "📖: Blindsight",
+    "url": "https://app.thestorygraph.com/books/57fd0912-3e02-4a55-b7a8-86f584ecf373",
+    "content_text": "📖: Blindsight #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/57fd0912-3e02-4a55-b7a8-86f584ecf373",
+    "date_published": "Tue, 02 Jan 2024 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111694780038050299"
+    ],
+    "lastTootTimestamp": 1704327088039
   }
 }
