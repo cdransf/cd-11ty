@@ -27,7 +27,7 @@ p {
 blockquote {
   margin: 1.25rem 0;
   padding-left: .875rem;
-  border-left: 4px solid var(--gray-400);
+  border-left: .25rem solid var(--gray-400);
 }
 
 :is(body, html, nav .tags, nav .search) svg {
@@ -317,6 +317,7 @@ li {
 .image__banner {
   border: 1px solid var(--blue-600);
   border-radius: var(--rounded-lg);
+  overflow: hidden;
 }
 
 .image__banner,
@@ -381,10 +382,6 @@ a,
 .pill--button,
 footer nav {
   justify-content: center;
-}
-
-.image__banner {
-  overflow: hidden;
 }
 
 /* screens: md */
