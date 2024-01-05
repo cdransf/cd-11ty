@@ -8673,5 +8673,24 @@
       "https://social.lol/users/cory/statuses/111705127799720844"
     ],
     "lastTootTimestamp": 1704484982378
+  },
+  "https://coryd.dev/posts/2023/i-removed-tailwind-from-my-site/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9pLXJlbW92ZWQtdGFpbHdpbmQtZnJvbS1teS1zaXRlLw==",
+    "title": "📝: I removed Tailwind from my site",
+    "url": "https://coryd.dev/posts/2023/i-removed-tailwind-from-my-site/",
+    "content_text": "📝: I removed Tailwind from my site #Eleventy #WebDev https://coryd.dev/posts/2023/i-removed-tailwind-from-my-site/",
+    "date_published": "Fri, 05 Jan 2024 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111705376570016863"
+    ],
+    "lastTootTimestamp": 1704488778441
+  },
+  "https://app.thestorygraph.com/books/73bcc48e-d237-4d5a-957e-4fa9e26a070f": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvNzNiY2M0OGUtZDIzNy00ZDVhLTk1N2UtNGZhOWUyNmEwNzBm",
+    "title": "📖: Limelight: Rush in the '80s",
+    "url": "https://app.thestorygraph.com/books/73bcc48e-d237-4d5a-957e-4fa9e26a070f",
+    "content_text": "📖: Limelight: Rush in the '80s #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/73bcc48e-d237-4d5a-957e-4fa9e26a070f",
+    "date_published": "Thu, 04 Jan 2024 16:00:00 +0000",
+    "toots": []
   }
 }
