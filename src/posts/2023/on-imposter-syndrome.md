@@ -4,7 +4,7 @@ title: "On imposter syndrome"
 description: "I had imposter syndrome when I entered the tech industry and I still have it years later. I imagine most folks have it to one degree or another."
 draft: false
 tags:
-  - Development
+  - development
 ---
 I had imposter syndrome when I entered the tech industry and I still have it years later. I imagine most folks have it to one degree or another.<!-- excerpt -->
 
