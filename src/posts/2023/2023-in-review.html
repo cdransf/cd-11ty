@@ -16,7 +16,7 @@ tags: ['books', 'music', 'development', 'Eleventy']
   <li><a href="https://trakt.tv/users/cdransf">I watched a bunch of movies and TV</a>, but picking favorites feels weird when so much of that consisted of catching up on "classics" and things I'd either ignored or never seen.</li>
 </ul>
 
-{% render "partials/now/media-grid.liquid", data:roundups['2023'].books, icon: "books", title: "Favorite books", shape: "vertical", count: 6 %}
+{% render "partials/now/media-grid.liquid", data:roundups['2023'].books, icon: "books", title: "Favorite books", shape: "vertical", count: 6, embeddedStyles: true %}
 {% render "partials/now/media-grid.liquid", data:roundups['2023'].albums, icon: "vinyl", title: "Favorite albums", shape: "square", count: 8 %}
 
 <p><strong><a href="https://coryd.dev">I wrote some things:</a></strong></p>

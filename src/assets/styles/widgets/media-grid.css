@@ -61,11 +61,7 @@
   color: var(--white);
   font-size: var(--font-size-xs);
   line-height: var(--line-height-xs);
-  overflow: visible;
-  display: -webkit-box;
   text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
 }
 
 .media__grid .item__image,

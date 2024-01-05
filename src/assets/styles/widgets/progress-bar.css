@@ -5,15 +5,10 @@
   overflow: hidden;
   height: 1rem;
   width: 100%;
-  margin-top: .25rem;
   margin-bottom: .25rem;
 }
 
 .progress-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  white-space: nowrap;
   background-color: var(--blue-600);
 }
 

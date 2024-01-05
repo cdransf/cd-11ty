@@ -5,6 +5,7 @@ textarea {
   background-color: var(--white);
   width: 100%;
   border: 1px solid var(--blue-600);
+  outline: none;
   padding: .5rem;
   margin-bottom: 1.5rem;
   font-weight: 400 !important;
@@ -13,12 +14,6 @@ textarea {
   transition-property: border-color;
   transition-timing-function: var(--ease-in-out);
   transition-duration: 300ms;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  outline: none;
 }
 
 input[type="text"]:focus,
