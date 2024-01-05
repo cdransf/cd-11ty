@@ -79,8 +79,8 @@
   border-radius: var(--rounded-full);
   border: 4px solid var(--white);
   transition-property: border-color;
-  transition-timing-function: var(--ease-in-out);
-  transition-duration: 300ms;
+  transition-timing-function: var(--transition-ease-in-out);
+  transition-duration: var(--transition-duration-default);
 }
 
 .webmentions .interaction .avatar__wrapper .avatar__wrapper-image > * {

@@ -28,7 +28,7 @@
   border-radius: var(--rounded-lg);
   overflow: hidden;
   transition-property: border-color;
-  transition-timing-function: var(--ease-in-out);
+  transition-timing-function: var(--transition-ease-in-out);
   transition-duration: 300ms;
 }
 

@@ -14,9 +14,8 @@
 }
 
 .pagination button.disabled > svg {
-  opacity: .5;
   cursor: not-allowed;
-  stroke: var(--black);
+  stroke: color-mix(in srgb, var(--black), transparent 50%);
   stroke-width: var(--stroke-width-default);
 }
 

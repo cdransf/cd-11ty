@@ -375,8 +375,8 @@ code,
 
 a,
 .pill--button {
-  transition-timing-function: var(--ease-in-out);
-  transition-duration: 300ms;
+  transition-timing-function: var(--transition-ease-in-out);
+  transition-duration: var(--transition-duration-default);
 }
 
 .pill--button,
