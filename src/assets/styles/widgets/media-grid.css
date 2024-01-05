@@ -70,6 +70,11 @@
   height: 100%;
 }
 
+.media__links,
+.media__links li:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
   .media__grid.square {
     grid-template-columns: repeat(4,minmax(0,1fr));

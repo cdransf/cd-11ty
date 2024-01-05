@@ -3,7 +3,7 @@
     {% tablericon "calendar-time" "Anticipated albums" %}
     Anticipated albums
   </h2>
-  <ul>
+  <ul class="media__links">
     {% for album in albumReleases %}
       <li>
         <strong>{{ album.date | readableDate }}: </strong>
