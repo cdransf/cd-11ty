@@ -1,14 +1,12 @@
 {% if mentions['link-to'].size > 0 %}
   <h2>Links</h2>
-  <div class="interaction">
-    <ul>
-      {% for mention in mentions['link-to'] %}
-        <li>
-          <a href="{{ mention.url }}">
-            {{ mention.name }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+  <ul class="link__list">
+    {% for mention in mentions['link-to'] %}
+      <li>
+        <a href="{{ mention.url }}">
+          {{ mention.name }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
 {% endif %}

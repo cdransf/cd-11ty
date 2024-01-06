@@ -120,7 +120,7 @@ nav ul {
   list-style: none;
 }
 
-nav ul li {
+nav ul li:not(:last-child) {
   margin-right: 1rem;
 }
 
@@ -133,10 +133,6 @@ nav svg:hover,
 nav svg:active,
 nav svg:focus {
   stroke-width: var(--stroke-width-bold);
-}
-
-nav ul li:last-child {
-  margin-right: 0;
 }
 
 .active,
@@ -311,6 +307,11 @@ ul, ol {
 li {
   margin-top: .375rem;
   margin-bottom: .5rem;
+}
+
+.link__list,
+.link__list li:last-child {
+  margin-bottom: 0;
 }
 
 /* images */

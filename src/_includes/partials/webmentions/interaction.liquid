@@ -8,16 +8,12 @@
 {% if mentions[type].size > 0 %}
   <h2>{{ title }}</h2>
   <div class="interaction flex--centered">
-    <ul>
-      {% for mention in mentions[type] %}
-        <li>
-          <a href={{mention.url}}>
-            <div class="avatar__wrapper flex--centered">
-              {% image mention.author.photo, mention.author.name, 'avatar__wrapper-image' %}
-            </div>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+    {% for mention in mentions[type] %}
+    <a href={{mention.url}}>
+      <div class="avatar__wrapper flex--centered">
+        {% image mention.author.photo, mention.author.name, 'avatar__wrapper-image' %}
+      </div>
+    </a>
+    {% endfor %}
   </div>
 {% endif %}

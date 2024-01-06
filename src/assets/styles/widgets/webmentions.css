@@ -4,7 +4,11 @@
   margin-top: 1.5rem;
   margin-bottom: 3.25rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.webmentions h2:not(:first-child) {
+  margin-top: 2rem;
 }
 
 .webmentions .interaction.comments {
@@ -57,16 +61,15 @@
   margin-top: .25rem;
 }
 
-.webmentions .interaction ul {
+.webmentions .interaction {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 0 0 .75rem;
   padding: 0;
-  list-style: none;
 }
 
-.webmentions .interaction li {
+.webmentions .interaction > a {
   margin-left: -.75rem;
   height: 3.5rem;
 }

@@ -3,7 +3,7 @@
     {% tablericon "link" "Links" %}
     Links
   </h2>
-  <ul class="media__links">
+  <ul class="link__list">
     {% for link in links limit: 5 %}
       <li>
         <a class="no-underline" href="{{link.url}}" title="{{link.title | escape}}">
