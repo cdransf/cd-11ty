@@ -11,7 +11,11 @@
     {% for mention in mentions[type] %}
     <a href={{mention.url}}>
       <div class="avatar__wrapper flex--centered">
-        {% image mention.author.photo, mention.author.name, 'avatar__wrapper-image' %}
+        <img
+          src="{{ mention.author.photo }}"
+          alt="{{ mention.author.name }}"
+          class="avatar__image"
+          onerror="this.onerror=null; this.src='/assets/img/icons/user.webp'" />
       </div>
     </a>
     {% endfor %}
