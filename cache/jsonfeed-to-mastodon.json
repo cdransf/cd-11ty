@@ -8695,5 +8695,24 @@
       "https://social.lol/users/cory/statuses/111705599256737765"
     ],
     "lastTootTimestamp": 1704492176237
+  },
+  "https://maerk.xyz/blog/you-should-have-a-website/": {
+    "id": "aHR0cHM6Ly9tYWVyay54eXovYmxvZy95b3Utc2hvdWxkLWhhdmUtYS13ZWJzaXRlLw==",
+    "title": "🔗: You Should Have a Website",
+    "url": "https://maerk.xyz/blog/you-should-have-a-website/",
+    "content_text": "🔗: You Should Have a Website #Tech https://maerk.xyz/blog/you-should-have-a-website/",
+    "date_published": "Thu, 04 Jan 2024 18:09:34 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111707015500373544"
+    ],
+    "lastTootTimestamp": 1704513786368
+  },
+  "https://atthis.link/blog/2021/personalsite.html": {
+    "id": "aHR0cHM6Ly9hdHRoaXMubGluay9ibG9nLzIwMjEvcGVyc29uYWxzaXRlLmh0bWw=",
+    "title": "🔗: The Value of a Personal Site",
+    "url": "https://atthis.link/blog/2021/personalsite.html",
+    "content_text": "🔗: The Value of a Personal Site #Tech https://atthis.link/blog/2021/personalsite.html",
+    "date_published": "Thu, 04 Jan 2024 17:59:06 +0000",
+    "toots": []
   }
 }
