@@ -48,6 +48,7 @@
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
   margin: 0;
+  word-break: break-word;
 }
 
 .webmentions .interaction .comment__wrapper--interior .comment time {
