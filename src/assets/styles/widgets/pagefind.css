@@ -1,4 +1,5 @@
 .pagefind-ui {
+  margin-bottom: 4rem;
   --pagefind-ui-primary: var(--accent-color);
   --pagefind-ui-text: var(--text-color);
   --pagefind-ui-background: var(--color-lightest);
