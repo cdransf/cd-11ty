@@ -20,6 +20,10 @@
   font-size: var(--font-size-base) !important;
 }
 
+.pagefind-ui__form:before {
+  opacity: 1 !important;
+}
+
 .pagefind-ui__result-title {
   color: var(--accent-color);
   font-size: var(--font-size-2xl);
