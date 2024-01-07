@@ -9,11 +9,5 @@
 }
 
 .progress-bar {
-  background-color: var(--blue-600);
-}
-
-@media (prefers-color-scheme: dark) {
-  .progress-bar {
-    background-color: var(--blue-400);
-  }
+  background-color: var(--accent-color);
 }

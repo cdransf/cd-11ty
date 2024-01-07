@@ -9,22 +9,12 @@
 }
 
 .pagination button > svg {
-  stroke: var(--blue-600);
+  stroke: var(--accent-color);
   cursor: pointer;
 }
 
 .pagination button.disabled > svg {
   cursor: not-allowed;
-  stroke: color-mix(in srgb, var(--black), transparent 50%);
+  stroke: color-mix(in srgb, var(--text-color), transparent 50%);
   stroke-width: var(--stroke-width-default);
-}
-
-@media (prefers-color-scheme: dark) {
-  .pagination button > svg {
-    stroke: var(--blue-400);
-  }
-
-  .pagination button.disabled > svg {
-    stroke: var(--white);
-  }
 }

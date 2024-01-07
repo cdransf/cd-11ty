@@ -4,7 +4,7 @@
   "description": "The source for my personal site, blog and portfolio. Built using 11ty and hosted on Netlify.",
   "type": "module",
   "scripts": {
-    "start": "ELEVENTY_PRODUCTION=false eleventy --serve --incremental",
+    "start": "ELEVENTY_PRODUCTION=false eleventy --serve",
     "start:search": "run-s build:11ty index:local",
 		"start:quick": "eleventy --serve --incremental --ignore-initial",
     "build": "ELEVENTY_PRODUCTION=true eleventy && npm run build:index",

@@ -6,11 +6,11 @@
 .avatar__wrapper .avatar__wrapper--interior {
   width: 16rem;
   height: 16rem;
-  border: 1px solid var(--blue-600);
+  border: 1px solid var(--accent-color);
   border-radius: var(--rounded-full);
   display: flex;
   padding: 1rem;
-  background-color: var(--white);
+  background-color: var(--color-lightest);
 }
 
 .avatar__wrapper,

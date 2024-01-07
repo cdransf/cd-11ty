@@ -2,15 +2,19 @@ input[type="text"],
 input[type="email"],
 input[type="search"],
 textarea {
-  color: var(--black);
-  background-color: var(--white);
-  width: 100%;
-  border: 1px solid var(--blue-600);
+  /* necessary for pagefind overrides */
+  font-family: var(--font-sans) !important;
+  color: var(--text-color) !important;
+  background-color: var(--background-color) !important;
+  border: 1px solid var(--accent-color) !important;
+  padding: .5rem !important;
+  font-size: var(--font-size-base) !important;
+  width: 100% !important;
+  /* necessary for pagefind overrides */
+
   outline: none;
-  padding: .5rem;
   margin-bottom: 1.5rem;
   font-weight: 400 !important;
-  font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   transition-property: border-color;
   transition-timing-function: var(--transition-ease-in-out);
@@ -21,15 +25,5 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="search"],
 textarea:focus {
-  border: 1px solid var(--blue-800);
-}
-
-@media (prefers-color-scheme: dark) {
-  input[type="text"],
-  input[type="email"],
-  input[type="search"],
-  textarea {
-    color: var(--white);
-    background-color: var(--black);
-  }
+  border: 1px solid var(--accent-color-hover) !important;
 }

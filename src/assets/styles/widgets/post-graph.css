@@ -11,7 +11,7 @@
 }
 
 .post-graph__progress {
-  background-color: var(--blue-600);
+  background-color: var(--accent-color);
   height: 100%;
 }
 
@@ -22,10 +22,4 @@
 .post-graph__progress,
 .post-graph__data {
   margin-left: .625rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  .post-graph__progress {
-    background-color: var(--blue-400);
-  }
 }

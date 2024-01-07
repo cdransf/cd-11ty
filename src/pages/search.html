@@ -5,8 +5,8 @@ layout: default
 permalink: /search.html
 ---
 {% capture css %}
-  {% render "../assets/styles/widgets/pagefind.css" %}
-  {% render "../assets/styles/widgets/forms.css" %}
+{% render "../assets/styles/widgets/forms.css" %}
+{% render "../assets/styles/widgets/pagefind.css" %}
 {% endcapture %}
 <style>
   {{ css | cssmin }}

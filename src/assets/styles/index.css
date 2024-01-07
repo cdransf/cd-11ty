@@ -3,19 +3,19 @@ html {
   font-family: var(--font-sans);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
-  color: var(--black);
-  background: var(--white);
+  color: var(--text-color);
+  background: var(--background-color);
   margin: 0;
 }
 
 ::-moz-selection {
-  color: var(--white);
-  background: var(--blue-600);
+  color: var(--text-color-inverted);
+  background: var(--selection-color);
 }
 
 ::selection {
-  color: var(--white);
-  background: var(--blue-600);
+  color: var(--text-color-inverted);
+  background: var(--selection-color);
 }
 
 p {
@@ -31,7 +31,7 @@ blockquote {
 }
 
 :is(body, html, nav .tags, nav .search) svg {
-  stroke: var(--black);
+  stroke: var(--text-color);
 }
 
 :is(h1, h2, h3, h4, h5, h6, .pill--button) > svg {
@@ -41,13 +41,13 @@ blockquote {
 
 /* links */
 a {
-  color: var(--blue-600);
+  color: var(--accent-color);
   transition-property: color;
 }
 
 /* links: custom */
 :is(.main__title, footer nav:last-child) a {
-  color: var(--black);
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -57,15 +57,15 @@ a:active,
 :is(.main__title, footer nav:last-child) a:hover,
 :is(.main__title, footer nav:last-child) a:focus,
 :is(.main__title, footer nav:last-child) a:active {
-  color: var(--blue-800);
+  color: var(--accent-color-hover);
 }
 
 a svg {
-  stroke: var(--blue-600);
+  stroke: var(--accent-color);
 }
 
 :is(a:has(svg):hover, a:has(svg):active, a:has(svg):focus) svg {
-  stroke: var(--blue-800);
+  stroke: var(--accent-color-hover);
 }
 
 strong,
@@ -89,9 +89,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
+h1 { font-size: var(--font-size-3xl) }
+h2 { font-size: var(--font-size-2xl) }
+h3 { font-size: var(--font-size-xl) }
+h4 { font-size: var(--font-size-lg) }
+h5 { font-size: var(--font-size-base) }
+h6 { font-size: var(--font-size-sm) }
+
 hr {
   height: 1px;
-  background-color: var(--gray-200);
+  background-color: var(--gray-light);
   border: 0;
 }
 
@@ -141,12 +148,12 @@ nav svg:focus {
 }
 
 .active {
-  color: var(--blue-600);
+  color: var(--accent-color);
 }
 
 .active svg,
 nav ul li .active svg {
-  stroke: var(--blue-600);
+  stroke: var(--accent-color);
 }
 
 .active:hover svg,
@@ -186,7 +193,7 @@ main {
 /* now */
 .now__topper,
 article {
-  border-bottom: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--gray-light);
   margin-bottom: 2rem;
   padding-bottom: 1rem;
 }
@@ -226,12 +233,13 @@ footer nav:last-child span {
 
 .highlight-text {
   padding: .125rem;
-  background-color: var(--blue-600);
+  background-color: var(--accent-color);
 }
 
 code {
   padding: .125rem;
-  background-color: var(--black);
+  color: var(--text-color-inverted);
+  background-color: var(--background-color-inverted);
 }
 
 /* buttons */
@@ -243,7 +251,7 @@ code {
   margin: 0 .25rem .75rem 0;
   cursor: pointer;
   text-decoration: none;
-  background-color: var(--blue-600);
+  background-color: var(--accent-color);
   transition-property: background-color;
   display: inline-flex;
   flex-direction: row;
@@ -261,7 +269,7 @@ code {
 .pill--button:hover,
 .pill--button:active,
 .pill--button:focus {
-  background-color: var(--blue-800) !important;
+  background-color: var(--accent-color-hover) !important;
 }
 
 .pill--button > svg,
@@ -271,7 +279,7 @@ code {
 .pill--button:hover svg,
 .pill--button:active svg,
 .pill--button:focus svg {
-  stroke: var(--white) !important;
+  stroke: var(--color-lightest) !important;
 }
 
 /* articles */
@@ -316,7 +324,7 @@ li {
 
 /* images */
 .image__banner {
-  border: 1px solid var(--blue-600);
+  border: 1px solid var(--accent-color);
   border-radius: var(--rounded-lg);
   overflow: hidden;
 }
@@ -365,13 +373,12 @@ li {
   flex-direction: column;
 }
 
-code,
 .highlight-text,
 .pill--button,
 .pill--button:hover,
 .pill--button:active,
 .pill--button:focus {
-  color: var(--white);
+  color: var(--color-lightest);
 }
 
 a,
@@ -420,110 +427,5 @@ footer nav {
 
   footer nav:first-child {
     gap: .75rem;
-  }
-}
-
-/* dark theme */
-@media (prefers-color-scheme: dark) {
-  body,
-  html {
-    color: var(--white);
-    background-color: var(--black);
-  }
-
-  ::-moz-selection {
-    background: var(--blue-400);
-  }
-
-  ::selection {
-    background: var(--blue-400);
-  }
-
-  :is(body, html, nav .tags, nav .search) svg {
-    stroke: var(--white);
-  }
-
-  a {
-    color: var(--blue-400);
-  }
-
-  a svg {
-    stroke: var(--blue-400);
-  }
-
-  .active {
-    color: var(--blue-400);
-  }
-
-  .active svg,
-  nav ul li .active svg {
-    stroke: var(--blue-400);
-  }
-
-  :is(.main__title, footer nav:last-child) a {
-    color: var(--white);
-  }
-
-  a:hover,
-  a:focus,
-  a:active,
-  :is(.main__title, footer nav:last-child) a:hover,
-  :is(.main__title, footer nav:last-child) a:focus,
-  :is(.main__title, footer nav:last-child) a:active {
-    color: var(--blue-200);
-  }
-
-  a:has(svg):hover svg,
-  a:has(svg):active svg,
-  a:has(svg):focus svg {
-    stroke: var(--blue-200);
-  }
-
-  hr {
-    background-color: var(--gray-900);
-  }
-
-  .now__topper,
-  article {
-    border-color: var(--gray-900)
-  }
-
-  code {
-    color: var(--black);
-    background-color: var(--white);
-  }
-
-  /* nav */
-  nav .brand-github svg {
-    stroke: var(--brand-github-light) !important;
-  }
-
-  a:has(svg):hover svg {
-    stroke: var(--blue-200);
-  }
-
-  .active {
-    color: var(--blue-400);
-  }
-
-  .active:has(svg) {
-    stroke: var(--blue-400)
-  }
-
-  /* buttons */
-  .pill--button:hover,
-  .pill--button:active,
-  .pill--button:focus {
-    background-color: var(--blue-200);
-  }
-
-  /* images */
-  .image__banner {
-    border-color: var(--blue-400);
-  }
-
-  .highlight-text,
-  .pill--button {
-    background-color: var(--blue-400);
   }
 }
