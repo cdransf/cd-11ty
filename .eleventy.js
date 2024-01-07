@@ -54,6 +54,9 @@ export default async function (eleventyConfig) {
   // passthrough
   eleventyConfig.addPassthroughCopy('src/assets')
   eleventyConfig.addPassthroughCopy('_redirects')
+  eleventyConfig.addPassthroughCopy({
+    'node_modules/@zachleat/pagefind-search/pagefind-search.js': 'assets/scripts/pagefind-search.js',
+  })
 
   // enable merging of tags
   eleventyConfig.setDataDeepMerge(true)

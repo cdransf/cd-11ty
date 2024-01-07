@@ -1,12 +1,16 @@
 {
   "name": "coryd.dev",
-  "version": "4.3.3",
+  "version": "4.4.0",
   "description": "The source for my personal site, blog and portfolio. Built using 11ty and hosted on Netlify.",
   "type": "module",
   "scripts": {
-    "start": "ELEVENTY_PRODUCTION=false eleventy --serve",
-    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
-    "build": "ELEVENTY_PRODUCTION=true eleventy"
+    "start": "ELEVENTY_PRODUCTION=false eleventy --serve --incremental",
+    "start:search": "run-s build:11ty index:local",
+		"start:quick": "eleventy --serve --incremental --ignore-initial",
+    "build": "ELEVENTY_PRODUCTION=true eleventy && npm run build:index",
+    "build:index": "npx -y pagefind --site _site",
+    "index:serve": "npx -y pagefind --site _site --serve",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve"
   },
   "keywords": [
     "11ty",
@@ -14,6 +18,9 @@
   ],
   "author": "Cory Dransfeldt",
   "license": "ISC",
+  "dependencies": {
+    "@zachleat/pagefind-search": "^1.0.3"
+  },
   "devDependencies": {
     "@11ty/eleventy": "3.0.0-alpha.4",
     "@11ty/eleventy-activity-feed": "^1.0.9",
@@ -38,7 +45,6 @@
     "markdown-it-footnote": "^4.0.0",
     "marked": "^11.1.1",
     "outdent": "^0.8.0",
-    "pagefind": "^1.0.4",
     "sanitize-html": "^2.11.0",
     "slugify": "^1.6.6",
     "writing-stats": "^1.0.6"

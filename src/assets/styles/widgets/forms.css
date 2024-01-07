@@ -1,5 +1,6 @@
 input[type="text"],
 input[type="email"],
+input[type="search"],
 textarea {
   color: var(--black);
   background-color: var(--white);
@@ -18,6 +19,7 @@ textarea {
 
 input[type="text"]:focus,
 input[type="email"]:focus,
+input[type="search"],
 textarea:focus {
   border: 1px solid var(--blue-800);
 }
@@ -25,6 +27,7 @@ textarea:focus {
 @media (prefers-color-scheme: dark) {
   input[type="text"],
   input[type="email"],
+  input[type="search"],
   textarea {
     color: var(--white);
     background-color: var(--black);

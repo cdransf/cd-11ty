@@ -4,8 +4,6 @@ description: "Search through and find the posts on my site."
 layout: default
 permalink: /search.html
 ---
-
-<link href="https://coryd.dev/pagefind/pagefind-ui.css" rel="stylesheet" />
 {% capture css %}
   {% render "../assets/styles/widgets/pagefind.css" %}
   {% render "../assets/styles/widgets/forms.css" %}
@@ -13,15 +11,13 @@ permalink: /search.html
 <style>
   {{ css | cssmin }}
 </style>
-<div id="search" class="search"></div>
-<script
-  src="https://coryd.dev/pagefind/pagefind-ui.js"
-  onload="new PagefindUI({ element: '#search', showImages: false, processTerm: (term) => {
-      try{
-        plausible('/Search', {props: {method: 'Text', term}});
-      } catch(e){};
-      return term;
-    }
-  });"
-></script>
+<pagefind-search _show_images="false">
+  <form action="https://duckduckgo.com/" method="get" style="min-height: 3.2em;">
+	<label>
+    <input placeholder="Search" type="search" name="q" autocomplete="off" autofocus>
+	</label>
+	<input type="hidden" placeholder="Search" name="sites" value="coryd.dev">
+  </form>
+</pagefind-search>
 {% render "partials/popular-posts.liquid", posts: collections.posts, analytics: analytics %}
+<script type="module" src="/assets/scripts/pagefind-search.js" defer></script>
