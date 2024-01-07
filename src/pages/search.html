@@ -4,6 +4,7 @@ description: "Search through and find the posts on my site."
 layout: default
 permalink: /search.html
 ---
+<script type="module" src="/assets/scripts/pagefind-search.js"></script>
 {% capture css %}
 {% render "../assets/styles/widgets/forms.css" %}
 {% render "../assets/styles/widgets/pagefind.css" %}
@@ -20,4 +21,3 @@ permalink: /search.html
   </form>
 </pagefind-search>
 {% render "partials/popular-posts.liquid", posts: collections.posts, analytics: analytics %}
-<script type="module" src="/assets/scripts/pagefind-search.js" defer></script>
