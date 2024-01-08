@@ -18,26 +18,24 @@ export default async function () {
     .then((html) => {
       const DOM = new JSDOM(html)
       const doc = DOM.window.document
-      const bookCount = doc.querySelectorAll('.md\\:block .book-pane-content').length
-      const titles = doc.querySelectorAll('.md\\:block .book-title-author-and-series h3 > a')
-      const authors = doc.querySelectorAll(
-        '.md\\:block .book-title-author-and-series h3 p:last-of-type > a'
-      )
+      const bookCount = doc.querySelectorAll('.book-pane-content').length
+      const titles = doc.querySelectorAll('.book-title-author-and-series h3 > a')
+      const authors = doc.querySelectorAll('.book-title-author-and-series h3 p:last-of-type > a')
       const images = doc.querySelectorAll('.md\\:block .book-cover img')
       const urls = doc.querySelectorAll('.md\\:block .book-cover a')
       const percentages = doc.querySelectorAll('.md\\:block .progress-tracker-pane .font-semibold')
-      const dates = doc.querySelectorAll('.md\\:block .action-menu a > p')
+      const dates = doc.querySelectorAll('.md\\:block .action-menu a p')
 
       for (let i = 0; i < bookCount; i++) {
         const date = new Date(
-          dates[i].textContent.replace('Started ', '').split('\n')[0]
-        ).toLocaleString('en-US', {
-          timeZone: 'America/Los_Angeles',
-        })
+          dates[i]?.textContent.replace('Started ', '').split('\n')[0]
+          ).toLocaleString('en-US', {
+            timeZone: 'America/Los_Angeles',
+          })
 
         if (!data[i]) {
-          data.push({ title: titles[i].textContent })
-          data.push({ author: authors[i].textContent })
+          data.push({ title: titles[i]?.textContent })
+          data.push({ author: authors[i]?.textContent })
           data.push({
             image: images[i].src.replace(
               'https://cdn.thestorygraph.com',
@@ -45,7 +43,7 @@ export default async function () {
             ),
           })
           data.push({ url: `https://app.thestorygraph.com${urls[i].href}` })
-          data.push({ percentage: percentages[i].textContent })
+          data.push({ percentage: percentages[i]?.textContent })
           data.push({
             dateAdded: date,
           })
@@ -53,14 +51,14 @@ export default async function () {
         }
 
         if (data[i]) {
-          data[i]['title'] = titles[i].textContent
-          data[i]['author'] = authors[i].textContent
-          data[i]['image'] = images[i].src.replace(
+          data[i]['title'] = titles[i]?.textContent
+          data[i]['author'] = authors[i]?.textContent
+          data[i]['image'] = images[i]?.src.replace(
             'https://cdn.thestorygraph.com',
             'https://cd-books.b-cdn.net'
           )
-          data[i]['url'] = `https://app.thestorygraph.com${urls[i].href}`
-          data[i]['percentage'] = percentages[i].textContent
+          data[i]['url'] = `https://app.thestorygraph.com${urls[i]?.href}`
+          data[i]['percentage'] = percentages[i]?.textContent
           data[i]['dateAdded'] = date
           data[i]['type'] = 'book'
         }
