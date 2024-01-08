@@ -223,7 +223,11 @@ a:active {
 }
 
 #background { display: none }
-#items { list-style: none }
+
+#items {
+  list-style: none;
+  padding: 0;
+}
 
 #items li {
   border-bottom: 1px solid var(--gray-light);
