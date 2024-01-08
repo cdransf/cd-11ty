@@ -163,11 +163,18 @@ html {
 
 h1 { font-size: var(--font-size-3xl) }
 h2 { font-size: var(--font-size-lg) }
-h4 { font-size: var(--font-size-base) }
+h4 { font-size: var(--font-size-2xl) }
 
 h1, h2, h4 {
   font-weight: 900;
 }
+
+h1 {
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+h2 { margin: 0 }
 
 a {
   color: var(--accent-color);
@@ -183,6 +190,13 @@ a {
   margin-right: auto;
 }
 
+#header,
+#subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #logo img {
   width: 16rem;
   height: 16rem;
@@ -191,14 +205,22 @@ a {
   border: 1px solid var(--accent-color);
 }
 
+#background { display: none }
+#items { list-style: none }
+
 #items li {
   border-bottom: 1px solid var(--gray-light);
   margin-bottom: 2rem;
   padding-bottom: 1rem;
 }
 
+#items li:last-child {
+  border-bottom: none;
+}
+
 .itemposttime {
   font-size: var(--font-size-sm);
+  font-weight: 400;
   line-height: var(--line-height-sm);
 }
 
@@ -209,6 +231,7 @@ a {
 }
 
 .subbutton {
+  color: var(--color-lightest);
   font-weight: 700;
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
@@ -236,7 +259,7 @@ a {
 .subbutton:hover svg,
 .subbutton:active svg,
 .subbutton:focus svg {
-  stroke: var(--color-lightest) !important;
+  fill: var(--color-lightest) !important;
 }
 
 .subbutton svg {
