@@ -261,7 +261,7 @@ a:active {
   margin-bottom: .75rem;
 }
 
-.itemcontent {
+.itemcontent br {
   position: absolute;
   display: none;
 }
