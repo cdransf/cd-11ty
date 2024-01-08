@@ -29,29 +29,13 @@
 
 :root {
   /* colors */
-  --blue-50: #eff5ff;
-  --blue-100: #dbe8fe;
   --blue-200: #bfd7fe;
-  --blue-300: #93bbfd;
   --blue-400: #609afa;
-  --blue-500: #3b82f6;
   --blue-600: #2570eb;
-  --blue-700: #1d64d8;
   --blue-800: #1e55af;
-  --blue-900: #1e478a;
-  --blue-950: #172e54;
 
-  --gray-50: #f6f7f8;
-  --gray-100: #eaecef;
   --gray-200: #d9dee4;
-  --gray-300: #b8c2cc;
-  --gray-400: #a0adba;
-  --gray-500: #8996a8;
-  --gray-600: #778399;
-  --gray-700: #6b748a;
-  --gray-800: #5a6173;
   --gray-900: #4b515d;
-  --gray-950: #30333b;
 
   --white: #fff;
   --black: #000;
@@ -68,57 +52,27 @@
   --selection-color: var(--accent-color);
   --gray-light: var(--gray-200);
 
-  --brand-github: #333;
-  --brand-proton: #6d4aff;
-  --brand-mastodon: #6364ff;
-  --brand-lastfm: #d51007;
-  --brand-trakt: #ed1c24;
-  --brand-storygraph: #14919b;
-  --brand-buy-me-a-coffee: #ffdd00;
-  --brand-rss: #f26522;
-  --webrings: #ec8fd0;
-
   /* fonts */
   --font-sans: silka, Inter, Roboto, 'Helvetica Neue', system-ui, sans-serif;
-  --font-mono: ui-monospace, monospace;
 
   /* text */
-  --font-size-xs: .75rem;
-  --line-height-xs: 1rem;
-
   --font-size-sm: .875rem;
-  --line-height-sm: 1.25rem;
-
   --font-size-base: 1rem;
-  --line-height-base: 1.5rem;
-
   --font-size-lg: 1.125rem;
-  --line-height-lg: 1.75rem;
-
-  --font-size-xl: 1.25rem;
-  --line-height-xl: 1.75rem;
-
   --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+
+  --line-height-sm: 1.25rem;
+  --line-height-base: 1.5rem;
+  --line-height-lg: 1.75rem;
   --line-height-2xl: 2rem;
 
-  --font-size-3xl: 1.875rem;
-  --line-height-3xl: 2.25rem;
-
   /* radii */
-  --rounded-none: 0;
-  --rounded-sm: .125rem;
-  --rounded: .25rem;
-  --rounded-md: .375rem;
-  --rounded-lg: .5rem;
   --rounded-full: 9999px;
 
   /* transitions */
   --transition-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-duration-default: 300ms;
-
-  /* svgs */
-  --stroke-width-default: 1.4;
-  --stroke-width-bold: 2;
 }
 
 /* dark theme */
@@ -131,7 +85,6 @@
     --accent-color: var(--blue-400);
     --accent-color-hover: var(--blue-200);
     --gray-light: var(--gray-900);
-    --brand-github: #f5f5f5;
   }
 }
 
@@ -314,7 +267,6 @@ a,
 
 .subbutton svg {
   margin-right: .25rem;
-  stroke-width: var(--stroke-width-bold) !important;
 }
 
 @media screen and (min-width: 768px) {
