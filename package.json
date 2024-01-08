@@ -37,7 +37,7 @@
     "eleventy-plugin-unfurl": "^1.0.0",
     "html-minifier-terser": "^7.2.0",
     "ics-to-json-extended": "^1.1.4",
-    "jsdom": "^23.0.1",
+    "jsdom": "^23.2.0",
     "liquidjs": "^10.10.0",
     "luxon": "^3.4.4",
     "markdown-it": "^14.0.0",
