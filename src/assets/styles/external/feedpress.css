@@ -127,12 +127,17 @@ h4 a {
   text-decoration: none;
 }
 
-h1, h2, h4 {
+h1, h4 {
   font-weight: 900;
 }
 
 h1 { text-decoration: none }
-h2 { margin-top: 0 }
+
+h2 {
+  font-weight: 400;
+  margin-top: 0;
+}
+
 h1, h2 {
   margin-bottom: 1rem;
 }
@@ -220,21 +225,42 @@ a:active {
 }
 
 a,
-.subbutton {
+.subbutton,
+#subpopin > span {
   transition-timing-function: var(--transition-ease-in-out);
   transition-duration: var(--transition-duration-default);
 }
 
 .subbutton {
+  margin: 0 .25rem .75rem 0;
+  padding: .5rem 1rem;
+  text-decoration: none;
+}
+
+.subbutton:hover,
+.subbutton:focus,
+.subbutton:active {
+  background-color: var(--accent-color-hover);
+}
+
+.subbutton > svg g,
+.subbutton > svg:hover, g,
+.subbutton > svg:focus g,
+.subbutton > svg:active g,
+.subbutton:hover > svg g,
+.subbutton:active > svg g,
+.subbutton:focus > svg g {
+  fill: var(--color-lightest);
+}
+
+.subbutton,
+#subpopin > span {
+  cursor: pointer;
   color: var(--color-lightest);
   font-weight: 700;
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   border-radius: var(--rounded-full);
-  padding: .5rem 1rem;
-  margin: 0 .25rem .75rem 0;
-  cursor: pointer;
-  text-decoration: none;
   background-color: var(--accent-color);
   transition-property: background-color;
   display: inline-flex;
@@ -242,31 +268,36 @@ a,
   align-items: center;
 }
 
-.subbutton:hover,
-.subbutton:focus,
-.subbutton:active {
-  background-color: var(--accent-color-hover) !important;
-}
-
-.subbutton > svg,
-.subbutton > svg *,
-.subbutton > svg:hover, *,
-.subbutton > svg:focus *,
-.subbutton > svg:active *,
-.subbutton svg:hover,
-.subbutton svg:active,
-.subbutton svg:focus,
-.subbutton:hover svg,
-.subbutton:active svg,
-.subbutton:focus svg,
-.subbutton:hover > svg *,
-.subbutton:active > svg *,
-.subbutton:focus > svg * {
-  fill: var(--color-lightest) !important;
-}
-
-.subbutton svg {
+#subpopin > span {
   margin-right: .25rem;
+  padding: 0 .5rem;
+}
+
+#subpopin > h3 {
+  display: inline;
+}
+
+.subprovider:first-child {
+  margin-top: 1rem;
+}
+
+.subprovider:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+.subprovider a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.subbutton svg,
+.subprovider a svg {
+  margin-right: .25rem;
+}
+
+.subprovider a svg {
+  width: 18px;
+  height: 18px;
 }
 
 @media screen and (min-width: 768px) {
