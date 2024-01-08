@@ -163,24 +163,37 @@ html {
 
 h1 { font-size: var(--font-size-3xl) }
 h2 { font-size: var(--font-size-lg) }
-h4 { font-size: var(--font-size-2xl) }
+h4 {
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-2xl);
+  margin-bottom: .5rem;
+}
+
+h4 a {
+  text-decoration: none;
+}
 
 h1, h2, h4 {
   font-weight: 900;
 }
 
-h1 {
-  text-decoration: none;
+h1 { text-decoration: none }
+h2 { margin-top: 0 }
+h1, h2 {
   margin-bottom: 1rem;
 }
-
-h2 { margin: 0 }
 
 a {
   color: var(--accent-color);
   transition-property: color;
   transition-timing-function: var(--transition-ease-in-out);
   transition-duration: var(--transition-duration-default);
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--accent-color-hover);
 }
 
 #main {
@@ -222,6 +235,12 @@ a {
   font-size: var(--font-size-sm);
   font-weight: 400;
   line-height: var(--line-height-sm);
+  margin: 0;
+}
+
+.itemposttime a {
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 .itemcontent {
@@ -244,6 +263,7 @@ a {
   transition-property: background-color;
   display: inline-flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .subbutton:hover,
@@ -253,12 +273,19 @@ a {
 }
 
 .subbutton > svg,
+.subbutton > svg *,
+.subbutton > svg:hover, *,
+.subbutton > svg:focus *,
+.subbutton > svg:active *,
 .subbutton svg:hover,
 .subbutton svg:active,
 .subbutton svg:focus,
 .subbutton:hover svg,
 .subbutton:active svg,
-.subbutton:focus svg {
+.subbutton:focus svg,
+.subbutton:hover > svg *,
+.subbutton:active > svg *,
+.subbutton:focus > svg * {
   fill: var(--color-lightest) !important;
 }
 
