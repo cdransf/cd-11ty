@@ -8728,5 +8728,40 @@
       "https://social.lol/users/cory/statuses/111717912470249982"
     ],
     "lastTootTimestamp": 1704680060969
+  },
+  "https://gilest.org/indie-easy.html": {
+    "id": "aHR0cHM6Ly9naWxlc3Qub3JnL2luZGllLWVhc3kuaHRtbA==",
+    "title": "🔗: Make the indie web easier",
+    "url": "https://gilest.org/indie-easy.html",
+    "content_text": "🔗: Make the indie web easier #Tech  #WebDev https://gilest.org/indie-easy.html",
+    "date_published": "Tue, 09 Jan 2024 01:34:27 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111723644487921468"
+    ],
+    "lastTootTimestamp": 1704767524604
+  },
+  "https://prospect.org/power/2024-01-04-harbinger-in-hollywood/": {
+    "id": "aHR0cHM6Ly9wcm9zcGVjdC5vcmcvcG93ZXIvMjAyNC0wMS0wNC1oYXJiaW5nZXItaW4taG9sbHl3b29kLw==",
+    "title": "🔗: Harbinger in Hollywood",
+    "url": "https://prospect.org/power/2024-01-04-harbinger-in-hollywood/",
+    "content_text": "🔗: Harbinger in Hollywood #Tech https://prospect.org/power/2024-01-04-harbinger-in-hollywood/",
+    "date_published": "Mon, 08 Jan 2024 17:39:28 +0000",
+    "toots": []
+  },
+  "https://coryd.dev/posts/2024/i-found-the-music-i-love-on-the-internet/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9pLWZvdW5kLXRoZS1tdXNpYy1pLWxvdmUtb24tdGhlLWludGVybmV0Lw==",
+    "title": "📝: I found the music I love on the internet",
+    "url": "https://coryd.dev/posts/2024/i-found-the-music-i-love-on-the-internet/",
+    "content_text": "📝: I found the music I love on the internet #Music #Tech https://coryd.dev/posts/2024/i-found-the-music-i-love-on-the-internet/",
+    "date_published": "Mon, 08 Jan 2024 00:00:00 +0000",
+    "toots": []
+  },
+  "https://newrepublic.com/article/177733/billionaire-solano-california-tech-secession": {
+    "id": "aHR0cHM6Ly9uZXdyZXB1YmxpYy5jb20vYXJ0aWNsZS8xNzc3MzMvYmlsbGlvbmFpcmUtc29sYW5vLWNhbGlmb3JuaWEtdGVjaC1zZWNlc3Npb24=",
+    "title": "🔗: The People of Solano County Versus the Next Tech-Billionaire Dystopia",
+    "url": "https://newrepublic.com/article/177733/billionaire-solano-california-tech-secession",
+    "content_text": "🔗: The People of Solano County Versus the Next Tech-Billionaire Dystopia #Tech https://newrepublic.com/article/177733/billionaire-solano-california-tech-secession",
+    "date_published": "Sun, 07 Jan 2024 02:42:44 +0000",
+    "toots": []
   }
 }
