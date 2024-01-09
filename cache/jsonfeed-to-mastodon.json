@@ -8757,7 +8757,10 @@
     "url": "https://coryd.dev/posts/2024/i-found-the-music-i-love-on-the-internet/",
     "content_text": "📝: I found the music I love on the internet #Music #Tech https://coryd.dev/posts/2024/i-found-the-music-i-love-on-the-internet/",
     "date_published": "Mon, 08 Jan 2024 00:00:00 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111724476501775052"
+    ],
+    "lastTootTimestamp": 1704780220114
   },
   "https://newrepublic.com/article/177733/billionaire-solano-california-tech-secession": {
     "id": "aHR0cHM6Ly9uZXdyZXB1YmxpYy5jb20vYXJ0aWNsZS8xNzc3MzMvYmlsbGlvbmFpcmUtc29sYW5vLWNhbGlmb3JuaWEtdGVjaC1zZWNlc3Npb24=",
@@ -8784,6 +8787,54 @@
     "url": "https://www.thejaymo.net/2019/12/14/114-please-for-the-love-of-blarg-start-a-blog/",
     "content_text": "🔗: Please for the love of Blarg, Start a Blog #Tech https://www.thejaymo.net/2019/12/14/114-please-for-the-love-of-blarg-start-a-blog/",
     "date_published": "Thu, 04 Jan 2024 18:10:47 +0000",
+    "toots": []
+  },
+  "https://www.jackcheng.com/the-slow-web/": {
+    "id": "aHR0cHM6Ly93d3cuamFja2NoZW5nLmNvbS90aGUtc2xvdy13ZWIv",
+    "title": "🔗: The Slow Web",
+    "url": "https://www.jackcheng.com/the-slow-web/",
+    "content_text": "🔗: The Slow Web #Tech https://www.jackcheng.com/the-slow-web/",
+    "date_published": "Tue, 09 Jan 2024 02:55:10 +0000",
+    "toots": []
+  },
+  "https://manuelmoreale.com/asynchronous-conversations": {
+    "id": "aHR0cHM6Ly9tYW51ZWxtb3JlYWxlLmNvbS9hc3luY2hyb25vdXMtY29udmVyc2F0aW9ucw==",
+    "title": "🔗: Asynchronous conversations",
+    "url": "https://manuelmoreale.com/asynchronous-conversations",
+    "content_text": "🔗: Asynchronous conversations #Tech https://manuelmoreale.com/asynchronous-conversations",
+    "date_published": "Tue, 09 Jan 2024 02:53:24 +0000",
+    "toots": []
+  },
+  "https://manuelmoreale.com/quiet-web": {
+    "id": "aHR0cHM6Ly9tYW51ZWxtb3JlYWxlLmNvbS9xdWlldC13ZWI=",
+    "title": "🔗: Quiet web",
+    "url": "https://manuelmoreale.com/quiet-web",
+    "content_text": "🔗: Quiet web #Tech https://manuelmoreale.com/quiet-web",
+    "date_published": "Tue, 09 Jan 2024 02:52:09 +0000",
+    "toots": []
+  },
+  "https://briankoberlein.com/tech/quiet-web/": {
+    "id": "aHR0cHM6Ly9icmlhbmtvYmVybGVpbi5jb20vdGVjaC9xdWlldC13ZWIv",
+    "title": "🔗: The Quiet Web",
+    "url": "https://briankoberlein.com/tech/quiet-web/",
+    "content_text": "🔗: The Quiet Web #Tech https://briankoberlein.com/tech/quiet-web/",
+    "date_published": "Thu, 04 Jan 2024 18:08:29 +0000",
+    "toots": []
+  },
+  "https://cdevroe.com/2023/01/11/blogging-is-alive": {
+    "id": "aHR0cHM6Ly9jZGV2cm9lLmNvbS8yMDIzLzAxLzExL2Jsb2dnaW5nLWlzLWFsaXZl",
+    "title": "🔗: Blogging is alive and well",
+    "url": "https://cdevroe.com/2023/01/11/blogging-is-alive",
+    "content_text": "🔗: Blogging is alive and well #Tech  #WebDev https://cdevroe.com/2023/01/11/blogging-is-alive",
+    "date_published": "Thu, 04 Jan 2024 18:03:59 +0000",
+    "toots": []
+  },
+  "https://eyeondesign.aiga.org/early-web-design-helped-generation-express/": {
+    "id": "aHR0cHM6Ly9leWVvbmRlc2lnbi5haWdhLm9yZy9lYXJseS13ZWItZGVzaWduLWhlbHBlZC1nZW5lcmF0aW9uLWV4cHJlc3Mv",
+    "title": "🔗: Early Web Design Helped a Generation Express Themselves Online. How Do We Capture That Feeling Again?",
+    "url": "https://eyeondesign.aiga.org/early-web-design-helped-generation-express/",
+    "content_text": "🔗: Early Web Design Helped a Generation Express Themselves Online. How Do We Capture That Feeling Again? #Tech  #WebDev https://eyeondesign.aiga.org/early-web-design-helped-generation-express/",
+    "date_published": "Thu, 04 Jan 2024 18:01:30 +0000",
     "toots": []
   }
 }
