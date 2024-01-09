@@ -4288,11 +4288,11 @@
     "lastTootTimestamp": 1687190600988
   },
   "https://ar.al/2020/08/07/what-is-the-small-web/": {
-    "id": "https://ar.al/2020/08/07/what-is-the-small-web/",
+    "id": "aHR0cHM6Ly9hci5hbC8yMDIwLzA4LzA3L3doYXQtaXMtdGhlLXNtYWxsLXdlYi8=",
     "title": "🔗: What is the Small Web?",
     "url": "https://ar.al/2020/08/07/what-is-the-small-web/",
-    "content_text": "🔗: What is the Small Web? https://ar.al/2020/08/07/what-is-the-small-web/",
-    "date_published": "2023-06-19T00:00:00-08:00",
+    "content_text": "🔗: What is the Small Web? #Tech https://ar.al/2020/08/07/what-is-the-small-web/",
+    "date_published": "Thu, 04 Jan 2024 17:58:07 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/110573136792047860"
     ],
@@ -8765,6 +8765,25 @@
     "url": "https://newrepublic.com/article/177733/billionaire-solano-california-tech-secession",
     "content_text": "🔗: The People of Solano County Versus the Next Tech-Billionaire Dystopia #Tech https://newrepublic.com/article/177733/billionaire-solano-california-tech-secession",
     "date_published": "Sun, 07 Jan 2024 02:42:44 +0000",
+    "toots": []
+  },
+  "https://24ways.org/2019/its-time-to-get-personal/": {
+    "id": "aHR0cHM6Ly8yNHdheXMub3JnLzIwMTkvaXRzLXRpbWUtdG8tZ2V0LXBlcnNvbmFsLw==",
+    "title": "🔗: It’s Time to Get Personal",
+    "url": "https://24ways.org/2019/its-time-to-get-personal/",
+    "content_text": "🔗: It’s Time to Get Personal #Tech https://24ways.org/2019/its-time-to-get-personal/",
+    "date_published": "Thu, 04 Jan 2024 18:11:10 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111724003344211939"
+    ],
+    "lastTootTimestamp": 1704773000319
+  },
+  "https://www.thejaymo.net/2019/12/14/114-please-for-the-love-of-blarg-start-a-blog/": {
+    "id": "aHR0cHM6Ly93d3cudGhlamF5bW8ubmV0LzIwMTkvMTIvMTQvMTE0LXBsZWFzZS1mb3ItdGhlLWxvdmUtb2YtYmxhcmctc3RhcnQtYS1ibG9nLw==",
+    "title": "🔗: Please for the love of Blarg, Start a Blog",
+    "url": "https://www.thejaymo.net/2019/12/14/114-please-for-the-love-of-blarg-start-a-blog/",
+    "content_text": "🔗: Please for the love of Blarg, Start a Blog #Tech https://www.thejaymo.net/2019/12/14/114-please-for-the-love-of-blarg-start-a-blog/",
+    "date_published": "Thu, 04 Jan 2024 18:10:47 +0000",
     "toots": []
   }
 }
