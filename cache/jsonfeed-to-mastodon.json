@@ -8814,7 +8814,10 @@
     "url": "https://manuelmoreale.com/quiet-web",
     "content_text": "🔗: Quiet web #Tech https://manuelmoreale.com/quiet-web",
     "date_published": "Tue, 09 Jan 2024 02:52:09 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111725418053456492"
+    ],
+    "lastTootTimestamp": 1704794587079
   },
   "https://briankoberlein.com/tech/quiet-web/": {
     "id": "aHR0cHM6Ly9icmlhbmtvYmVybGVpbi5jb20vdGVjaC9xdWlldC13ZWIv",
