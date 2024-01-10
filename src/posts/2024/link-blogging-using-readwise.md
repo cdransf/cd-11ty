@@ -65,7 +65,34 @@ This fetches links from my archive (so that it's much more likely that I've read
 ```
 {% endraw %}
 
-Now, however, I've gone ahead and added the `notes` field from Readwise's API response to the `data` I expose in my `links.js` file above and constructed [an additional top level page](/links), complete with pagination. This top level page formats my shared links much like the posts on my home page, adds the summary Readwise fetches as a `<blockquote>` and, if I've added notes to the document (which I'll now aim to do more consistently), it will render them below the `<blockquote>`. Now, *all* of the links I've shared are at least visible *somewhere* on my site instead of the five most recent on [my now page](/now).
+Now, however, I've gone ahead and added the `notes` field from Readwise's API response to the `data` I expose in my `links.js` file above and constructed [an additional top level page](/links), complete with pagination. This top level page formats my shared links much like the posts on my home page, adds the summary Readwise fetches as a `<blockquote>` and, if I've added notes to the document (which I'll now aim to do more consistently), it will render them below the `<blockquote>`. Now, *all* of the links I've shared are at least visible *somewhere* on my site instead of the five most recent on [my now page](/now). The `links` page template looks like this:
+
+{% raw %}
+```liquid
+---
+title: Links
+layout: default
+pagination:
+  data: links
+  size: 8
+---
+{% for link in links %}
+<article class="h-entry">
+  <a class="no-underline" href="{{ link.url }}">
+    <h2 class="flex--centered">{{ link.title }}</h2>
+  </a>
+  <time class="dt-published" datetime="{{ link.date }}">
+    {{ link.date | date: "%m.%Y" }}
+  </time>
+  <blockquote class="p-summary">{{ link.summary }}</blockquote>
+  {%- if link.note %}
+    <p class="p-summary">{{ link.note }}</p>
+  {% endif -%}
+</article>
+{% endfor %}
+{% include "partials/paginator.liquid" %}
+```
+{% endraw %}
 
 There you have it — link blogging via Readwise Reader[^1].
 
