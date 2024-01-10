@@ -141,6 +141,9 @@ export default {
     if (!string) return
     return new Date(string)
   },
+  oldPost: (date) => {
+    return DateTime.now().diff(DateTime.fromJSDate(new Date(date)), 'years').years > 3;
+  },
 
   // feeds
   normalizeEntries: (entries) => {

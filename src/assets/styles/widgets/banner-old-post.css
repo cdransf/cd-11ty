@@ -1,0 +1,20 @@
+.banner__old-post {
+  margin: 1rem 0;
+  padding: .75rem;
+  border: 1px solid var(--gray-light);
+  border-radius: var(--rounded-lg);
+  background-color: var(--gray-lighter);
+}
+
+.banner__old-post p {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  margin: 0;
+}
+
+.banner__old-post p > svg {
+  display: inline;
+  vertical-align: middle;
+  height: .875rem;
+  width: .875rem;
+}
