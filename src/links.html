@@ -5,7 +5,7 @@ pagination:
   data: links
   size: 8
 ---
-{% for link in links %}
+{% for link in pagination.items %}
 <article class="h-entry" data-pagefind-body>
   <a class="no-underline" href="{{ link.url }}">
     <h2 class="flex--centered" data-pagefind-meta="title">{{ link.title }}</h2>
