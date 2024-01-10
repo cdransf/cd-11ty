@@ -10,6 +10,7 @@ export const img = async (
   formats = ['webp', 'jpeg'],
   sizes = '100vw'
 ) => {
+  if (!src) return;
   const imageMetadata = await Image(src, {
     widths: [...widths, null],
     formats: [...formats, null],
