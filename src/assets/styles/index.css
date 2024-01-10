@@ -39,6 +39,10 @@ blockquote {
   stroke-width: var(--stroke-width-bold) !important;
 }
 
+sup.footnote-ref {
+  line-height: var(--line-height-xs);
+}
+
 /* links */
 a {
   color: var(--accent-color);
