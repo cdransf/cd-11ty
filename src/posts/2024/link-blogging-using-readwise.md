@@ -86,7 +86,7 @@ pagination:
   </time>
   <blockquote class="p-summary">{{ link.summary }}</blockquote>
   {%- if link.note %}
-    <p class="p-summary">{{ link.note }}</p>
+    <p>{{ link.note }}</p>
   {% endif -%}
 </article>
 {% endfor %}
