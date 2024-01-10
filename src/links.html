@@ -11,7 +11,7 @@ pagination:
     <h2 class="flex--centered">{{ link.title }}</h2>
   </a>
   <time class="dt-published" datetime="{{ link.date }}">
-    {{ poslinkt.date | date: "%m.%Y" }}
+    {{ link.date | date: "%m.%Y" }}
   </time>
   <blockquote class="p-summary">{{ link.summary | markdown }}</blockquote>
   {%- if link.note %}
