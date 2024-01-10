@@ -8860,5 +8860,16 @@
       "https://social.lol/users/cory/statuses/111727305609557107"
     ],
     "lastTootTimestamp": 1704823388874
+  },
+  "https://coryd.dev/posts/2024/your-site-your-home-your-web/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC95b3VyLXNpdGUteW91ci1ob21lLXlvdXItd2ViLw==",
+    "title": "📝: Your site, your home, your web",
+    "url": "https://coryd.dev/posts/2024/your-site-your-home-your-web/",
+    "content_text": "📝: Your site, your home, your web #WebDev #Tech https://coryd.dev/posts/2024/your-site-your-home-your-web/",
+    "date_published": "Tue, 09 Jan 2024 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111728753462295935"
+    ],
+    "lastTootTimestamp": 1704845481383
   }
 }
