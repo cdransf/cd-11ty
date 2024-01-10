@@ -8915,5 +8915,16 @@
       "https://social.lol/users/cory/statuses/111731080160929474"
     ],
     "lastTootTimestamp": 1704880983946
+  },
+  "https://coryd.dev/posts/2024/link-blogging-using-readwise/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9saW5rLWJsb2dnaW5nLXVzaW5nLXJlYWR3aXNlLw==",
+    "title": "📝: Link blogging using Readwise Reader",
+    "url": "https://coryd.dev/posts/2024/link-blogging-using-readwise/",
+    "content_text": "📝: Link blogging using Readwise Reader #WebDev #Tech #Eleventy https://coryd.dev/posts/2024/link-blogging-using-readwise/",
+    "date_published": "Wed, 10 Jan 2024 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111733911355779869"
+    ],
+    "lastTootTimestamp": 1704924184596
   }
 }
