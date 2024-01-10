@@ -18,7 +18,7 @@ export default async function () {
       title: link['title'],
       url: link['source_url'],
       tags: [...new Set(Object.keys(link['tags']))],
-      date: link['created_at'],
+      date: link['updated_at'],
       summary: link['summary'],
       note: link['notes'],
       description: `${link['summary']}<br/><br/>`,
