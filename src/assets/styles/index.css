@@ -25,9 +25,13 @@ p {
 }
 
 blockquote {
+  color: var(--gray-medium);
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
   margin: 1.25rem 0;
   padding-left: .875rem;
-  border-left: .25rem solid var(--gray-400);
+  border-left: .25rem solid var(--gray-medium);
 }
 
 :is(body, html, nav .tags, nav .search) svg {

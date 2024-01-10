@@ -39,6 +39,7 @@
   --selection-color: var(--accent-color);
   --gray-light: var(--gray-200);
   --gray-lighter: var(--gray-50);
+  --gray-medium: var(--gray-400);
 
   --brand-github: #333;
   --brand-proton: #6d4aff;
