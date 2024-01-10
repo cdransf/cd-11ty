@@ -76,10 +76,10 @@ pagination:
   data: links
   size: 8
 ---
-{% for link in links %}
-<article class="h-entry">
+{% for link in pagination.items %}
+<article class="h-entry" data-pagefind-body>
   <a class="no-underline" href="{{ link.url }}">
-    <h2 class="flex--centered">{{ link.title }}</h2>
+    <h2 class="flex--centered" data-pagefind-meta="title">{{ link.title }}</h2>
   </a>
   <time class="dt-published" datetime="{{ link.date }}">
     {{ link.date | date: "%m.%Y" }}
