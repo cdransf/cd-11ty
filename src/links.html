@@ -13,9 +13,9 @@ pagination:
   <time class="dt-published" datetime="{{ link.date }}">
     {{ link.date | date: "%m.%Y" }}
   </time>
-  <blockquote class="p-summary">{{ link.summary | markdown }}</blockquote>
+  <blockquote class="p-summary">{{ link.summary }}</blockquote>
   {%- if link.note %}
-    <p class="p-summary">{{ link.note | markdown }}</p>
+    <p class="p-summary">{{ link.note }}</p>
   {% endif -%}
 </article>
 {% endfor %}
