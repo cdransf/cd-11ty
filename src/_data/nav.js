@@ -11,6 +11,7 @@ export default async function () {
       { name: 'Now' },
       { name: 'About' },
       { name: 'Tags', icon: 'tags' },
+      { name: 'Links', icon: 'link' },
       { name: 'Search', icon: 'search' },
       { name: 'Feeds', icon: 'rss' },
       { name: 'Mastodon', icon: 'brand-mastodon' },
