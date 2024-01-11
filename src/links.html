@@ -4,6 +4,7 @@ layout: default
 pagination:
   data: links
   size: 8
+image: /assets/img/ogi/links.jpg
 ---
 {% for link in pagination.items %}
 {%- assign shareLink = link.url | findPost: linkPosts -%}
