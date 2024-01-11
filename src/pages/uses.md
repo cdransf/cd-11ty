@@ -3,7 +3,7 @@ title: Uses
 layout: default
 permalink: /uses.html
 description: 'Software, tools and services that I use regularly.'
-image: https://coryd.dev/assets/img/pages/uses.jpg
+image: /assets/img/pages/uses.jpg
 ---
 <h2 class="page__header">{{ title }}</h2>
 

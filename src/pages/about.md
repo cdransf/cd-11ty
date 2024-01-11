@@ -2,6 +2,7 @@
 title: About
 layout: default
 permalink: /about.html
+image: /assets/img/ogi/about.jpg
 ---
 {% capture css %}
   {% render "../assets/styles/pages/about.css" %}

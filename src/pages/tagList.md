@@ -5,6 +5,7 @@ pagination:
   size: 1
   alias: tag
 permalink: /tags/{{ tag }}/
+image: /assets/img/ogi/tags.jpg
 eleventyComputed:
   title: '{{ tag }}'
 templateEngineOverride: liquid,md

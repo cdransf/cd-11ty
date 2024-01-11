@@ -2,6 +2,7 @@
 title: Contact
 layout: default
 permalink: /contact.html
+image: /assets/img/ogi/contact.jpg
 description: 'How to contact me.'
 ---
 {% capture css %}

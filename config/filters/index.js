@@ -37,7 +37,7 @@ export default {
   },
   getPostImage: (image) => {
     if (image && image !== '') return image
-    return `${BASE_URL}/assets/img/social-card.jpg`
+    return `${BASE_URL}/assets/img/ogi/default.jpg`
   },
   getPopularPosts: (posts, analytics) => {
     return posts
