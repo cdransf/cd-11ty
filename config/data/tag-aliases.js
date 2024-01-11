@@ -13,6 +13,7 @@ export default {
   lastfm: '#Music',
   macos: '#macOS #Apple',
   music: '#Music',
+  privacy: '#Privacy',
   react: '#JavaScript',
   rss: '#RSS',
   'social media': '#Tech',
