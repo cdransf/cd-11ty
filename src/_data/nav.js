@@ -15,7 +15,6 @@ export default async function () {
       { name: 'Search', icon: 'search' },
       { name: 'Feeds', icon: 'rss' },
       { name: 'Mastodon', icon: 'brand-mastodon' },
-      { name: 'Coffee', icon: 'cup' },
     ],
     social: [
       { name: 'Email', url: '/contact', icon: 'at' },
