@@ -11,6 +11,7 @@ export default {
   fumes: 'a5139ca1-f4f3-4bea-ae4c-ae4e2efd857d',
   ghastly: '70f969df-7fc1-421e-afad-678c0bbd1aea',
   'home is where': '76ead0bf-51e0-43c8-ae8f-59caefdd84a2',
+  immolation: 'c373c7f0-fddf-4c04-a327-19dd83590753',
   inanna: 'b7200279-81b3-418a-8c2c-25b189c40843',
   krallice: 'b4e4b359-76a3-447e-be1d-80a24887134e',
   'la dispute': '2ec89bcc-5bf9-4d2a-ac5e-44b7496d115a',
