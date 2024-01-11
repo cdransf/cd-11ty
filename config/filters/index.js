@@ -145,6 +145,12 @@ export default {
     return DateTime.now().diff(DateTime.fromJSDate(new Date(date)), 'years').years > 3;
   },
 
+  // links
+  findPost: (url, posts) => {
+    if (!url || !posts) return null;
+    return posts[url]?.toots?.[0] || null;
+  },
+
   // feeds
   normalizeEntries: (entries) => {
     const md = markdownIt({ html: true, linkify: true })
