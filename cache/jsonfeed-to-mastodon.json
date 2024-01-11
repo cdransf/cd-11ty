@@ -8970,5 +8970,16 @@
       "https://social.lol/users/cory/statuses/111738854099424673"
     ],
     "lastTootTimestamp": 1704999605030
+  },
+  "https://hypercritical.co/2024/01/11/i-made-this": {
+    "id": "aHR0cHM6Ly9oeXBlcmNyaXRpY2FsLmNvLzIwMjQvMDEvMTEvaS1tYWRlLXRoaXM=",
+    "title": "🔗: I Made This",
+    "url": "https://hypercritical.co/2024/01/11/i-made-this",
+    "content_text": "🔗: I Made This #Tech https://hypercritical.co/2024/01/11/i-made-this",
+    "date_published": "Thu, 11 Jan 2024 18:59:15 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111739101741733921"
+    ],
+    "lastTootTimestamp": 1705003383562
   }
 }
