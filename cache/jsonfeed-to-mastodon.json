@@ -8959,5 +8959,16 @@
       "https://social.lol/users/cory/statuses/111735801199512232"
     ],
     "lastTootTimestamp": 1704953021321
+  },
+  "https://coryd.dev/posts/2024/your-attention-is-precious/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC95b3VyLWF0dGVudGlvbi1pcy1wcmVjaW91cy8=",
+    "title": "📝: Your attention is precious",
+    "url": "https://coryd.dev/posts/2024/your-attention-is-precious/",
+    "content_text": "📝: Your attention is precious #WebDev #Tech https://coryd.dev/posts/2024/your-attention-is-precious/",
+    "date_published": "Thu, 11 Jan 2024 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111738854099424673"
+    ],
+    "lastTootTimestamp": 1704999605030
   }
 }
