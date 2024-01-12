@@ -8992,5 +8992,16 @@
       "https://social.lol/users/cory/statuses/111740068131738159"
     ],
     "lastTootTimestamp": 1705018129567
+  },
+  "https://coryd.dev/posts/2024/link-page-improvements/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9saW5rLXBhZ2UtaW1wcm92ZW1lbnRzLw==",
+    "title": "📝: Link page improvements",
+    "url": "https://coryd.dev/posts/2024/link-page-improvements/",
+    "content_text": "📝: Link page improvements #WebDev #Tech #Eleventy https://coryd.dev/posts/2024/link-page-improvements/",
+    "date_published": "Wed, 10 Jan 2024 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111740077975312500"
+    ],
+    "lastTootTimestamp": 1705018279709
   }
 }
