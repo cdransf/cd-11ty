@@ -8987,7 +8987,7 @@
     "title": "🔗: Outlook is Microsoft’s new data collection service",
     "url": "https://proton.me/blog/outlook-is-microsofts-new-data-collection-service",
     "content_text": "🔗: Outlook is Microsoft’s new data collection service #Tech  #Privacy https://proton.me/blog/outlook-is-microsofts-new-data-collection-service",
-    "date_published": "Thu, 11 Jan 2024 21:23:21 +0000",
+    "date_published": "Fri, 12 Jan 2024 02:26:22 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111740068131738159"
     ],
@@ -9014,5 +9014,16 @@
       "https://social.lol/users/cory/statuses/111740563377986129"
     ],
     "lastTootTimestamp": 1705025686359
+  },
+  "https://coryd.dev/now?ts=1704974400000": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MDQ5NzQ0MDAwMDA=",
+    "title": "🎧: My top artists for the week: Wormrot @ 47 plays, NoMeansNo @ 42 plays, Deathspell Omega @ 40 plays, Autopsy @ 37 plays, blink-182 @ 36 plays, Ulthar @ 24 plays, Inanna @ 22 plays, Knuckle Puck @ 17 plays #Music #LastFM",
+    "url": "https://coryd.dev/now?ts=1704974400000",
+    "content_text": "🎧: My top artists for the week: Wormrot @ 47 plays, NoMeansNo @ 42 plays, Deathspell Omega @ 40 plays, Autopsy @ 37 plays, blink-182 @ 36 plays, Ulthar @ 24 plays, Inanna @ 22 plays, Knuckle Puck @ 17 plays #Music #LastFM  https://coryd.dev/now?ts=1704974400000",
+    "date_published": "Thu, 11 Jan 2024 12:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111742404951384980"
+    ],
+    "lastTootTimestamp": 1705053786568
   }
 }
