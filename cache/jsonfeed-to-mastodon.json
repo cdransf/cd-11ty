@@ -8976,10 +8976,32 @@
     "title": "🔗: I Made This",
     "url": "https://hypercritical.co/2024/01/11/i-made-this",
     "content_text": "🔗: I Made This #Tech https://hypercritical.co/2024/01/11/i-made-this",
-    "date_published": "Thu, 11 Jan 2024 18:59:15 +0000",
+    "date_published": "Thu, 11 Jan 2024 20:51:54 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111739101741733921"
     ],
     "lastTootTimestamp": 1705003383562
+  },
+  "https://proton.me/blog/outlook-is-microsofts-new-data-collection-service": {
+    "id": "aHR0cHM6Ly9wcm90b24ubWUvYmxvZy9vdXRsb29rLWlzLW1pY3Jvc29mdHMtbmV3LWRhdGEtY29sbGVjdGlvbi1zZXJ2aWNl",
+    "title": "🔗: Outlook is Microsoft’s new data collection service",
+    "url": "https://proton.me/blog/outlook-is-microsofts-new-data-collection-service",
+    "content_text": "🔗: Outlook is Microsoft’s new data collection service #Tech  #Privacy https://proton.me/blog/outlook-is-microsofts-new-data-collection-service",
+    "date_published": "Thu, 11 Jan 2024 21:23:21 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111740068131738159"
+    ],
+    "lastTootTimestamp": 1705018129567
+  },
+  "https://coryd.dev/posts/2024/link-page-improvements/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9saW5rLXBhZ2UtaW1wcm92ZW1lbnRzLw==",
+    "title": "📝: Link page improvements",
+    "url": "https://coryd.dev/posts/2024/link-page-improvements/",
+    "content_text": "📝: Link page improvements #WebDev #Tech #Eleventy https://coryd.dev/posts/2024/link-page-improvements/",
+    "date_published": "Wed, 10 Jan 2024 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111740077975312500"
+    ],
+    "lastTootTimestamp": 1705018279709
   }
 }
