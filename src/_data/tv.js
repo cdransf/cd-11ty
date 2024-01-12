@@ -3,7 +3,7 @@ import EleventyFetch from '@11ty/eleventy-fetch'
 export default async function () {
   const TV_KEY = process.env.API_KEY_TRAKT
   const MOVIEDB_KEY = process.env.API_KEY_MOVIEDB
-  const url = 'https://api.trakt.tv/users/cdransf/history/shows?page=1&limit=36'
+  const url = 'https://api.trakt.tv/users/cdransf/history/shows?page=1&limit=50'
   const res = EleventyFetch(url, {
     duration: '1h',
     type: 'json',
@@ -17,13 +17,19 @@ export default async function () {
   }).catch()
   const data = await res
   const episodeData = []
+  const startingEpisodes = []
+  const startingSeasons = []
   data.reverse().forEach((episode) => {
     const episodeNumber = episode['episode']['number']
     const seasonNumber = episode['episode']['season']
+    if (!startingEpisodes.find((e) => e.show === episode['show']['title'])) { startingEpisodes.push({ show: episode['show']['title'], episode: episodeNumber }) }
+    if (!startingSeasons.find((e) => e.show === episode['show']['title'])) { startingSeasons.push({ show: episode['show']['title'], season: seasonNumber }) }
 
     if (episodeData.find((e) => e.name === episode?.['show']?.['title'])) {
       // cache the matched episode reference
       const matchedEpisode = episodeData.find((e) => e.name === episode?.['show']?.['title'])
+      const startingEpisode = startingEpisodes.find((e) => e.show === episode['show']['title'])['episode']
+      const startingSeason = startingSeasons.find((e) => e.show === episode['show']['title'])['season']
 
       // remove the matched episode from the array
       episodeData.splice(
@@ -34,13 +40,10 @@ export default async function () {
       // push the new episode to the array
       episodeData.push({
         name: matchedEpisode['name'],
-        title: matchedEpisode['title'],
         url: `https://trakt.tv/shows/${episode['show']['ids']['slug']}`,
-        subtext: `S${matchedEpisode['startingSeason'] || matchedEpisode['season']}E${
-          matchedEpisode['startingEpisode'] || matchedEpisode['episode']
-        } - S${episode['episode']['season']}E${episode['episode']['number']}`,
-        startingEpisode: matchedEpisode['episode'],
-        startingSeason: matchedEpisode['season'],
+        subtext: `S${startingSeason}E${startingEpisode} - S${episode['episode']['season']}E${episode['episode']['number']}`,
+        startingEpisode,
+        startingSeason,
         episode: episodeNumber,
         season: seasonNumber,
         id: episode['show']['ids']['trakt'],
