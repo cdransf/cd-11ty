@@ -28,4 +28,4 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Code: [Visual Studio Code](https://code.visualstudio.com)
 - Terminal: [iTerm2](https://iterm2.com)
 - Search: DuckDuckGo
-- Package tracking: n/a 
+- Package tracking: [Parcel](https://parcelapp.net)
