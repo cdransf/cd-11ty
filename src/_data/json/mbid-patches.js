@@ -26,5 +26,6 @@ export default {
   'regional justice center': '64ad5550-e93f-4add-80c3-e6b651f4f250',
   rush: '534ee493-bfac-4575-a44a-0ae41e2c3fe4',
   undergang: '6853b4ec-8cd4-46a4-b970-8331d4587c43',
+  'wolves in the throne room': 'e9452446-7702-4853-96ce-5dfe6748d3fb',
   worm: '6313658e-cd68-4c81-9778-17ce3825748e',
 }
