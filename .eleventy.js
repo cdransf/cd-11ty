@@ -23,6 +23,12 @@ import { execSync } from 'child_process'
 import dotenvFlow from 'dotenv-flow'
 dotenvFlow.config()
 
+// get app version
+import { createRequire } from 'module'
+
+const require = createRequire(import.meta.url)
+const appVersion = require('./package.json').version
+
 /**
  *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
  */
@@ -104,7 +110,7 @@ export default async function (eleventyConfig) {
 
   // shortcodes
   eleventyConfig.addShortcode('image', img)
-  eleventyConfig.addShortcode('assetHash', () => Math.random())
+  eleventyConfig.addShortcode('appVersion', () => appVersion)
 
   // transforms
   eleventyConfig.addTransform('html-minify', (content, path) => {
