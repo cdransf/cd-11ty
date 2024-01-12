@@ -9003,5 +9003,16 @@
       "https://social.lol/users/cory/statuses/111740077975312500"
     ],
     "lastTootTimestamp": 1705018279709
+  },
+  "https://thathtml.blog/2024/01/css-performance-page-styles/": {
+    "id": "aHR0cHM6Ly90aGF0aHRtbC5ibG9nLzIwMjQvMDEvY3NzLXBlcmZvcm1hbmNlLXBhZ2Utc3R5bGVzLw==",
+    "title": "🔗: Improving CSS Download Performance by Unbundling Page Styles",
+    "url": "https://thathtml.blog/2024/01/css-performance-page-styles/",
+    "content_text": "🔗: Improving CSS Download Performance by Unbundling Page Styles #WebDev https://thathtml.blog/2024/01/css-performance-page-styles/",
+    "date_published": "Fri, 12 Jan 2024 00:06:08 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111740563377986129"
+    ],
+    "lastTootTimestamp": 1705025686359
   }
 }
