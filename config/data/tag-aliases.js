@@ -18,6 +18,7 @@ export default {
   rss: '#RSS',
   'social media': '#Tech',
   spotify: '#Music',
+  'surveillance capitalism': '#SurveillanceCapitalism',
   tech: '#Tech',
   technology: '#Tech',
 }
