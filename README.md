@@ -13,9 +13,9 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 ## 📝 Recent posts
 
 <!-- BLOGPOSTS:START -->
+- [Your attention is precious](https://coryd.dev/posts/2024/your-attention-is-precious/)
+- [Link page improvements](https://coryd.dev/posts/2024/link-page-improvements/)
 - [Link blogging using Readwise Reader](https://coryd.dev/posts/2024/link-blogging-using-readwise/)
 - [Your site, your home, your web](https://coryd.dev/posts/2024/your-site-your-home-your-web/)
 - [I found the music I love on the internet](https://coryd.dev/posts/2024/i-found-the-music-i-love-on-the-internet/)
-- [I removed Tailwind from my site](https://coryd.dev/posts/2023/i-removed-tailwind-from-my-site/)
-- [2023 in review](https://coryd.dev/posts/2023/2023-in-review/)
 <!-- BLOGPOSTS:END -->
