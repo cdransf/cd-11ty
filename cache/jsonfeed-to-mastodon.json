@@ -9042,10 +9042,21 @@
     "title": "🔗: I miss human curation",
     "url": "https://blog.cassidoo.co/post/human-curation/",
     "content_text": "🔗: I miss human curation #Tech https://blog.cassidoo.co/post/human-curation/",
-    "date_published": "Fri, 12 Jan 2024 21:22:04 +0000",
+    "date_published": "Sat, 13 Jan 2024 00:03:07 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111745741218469794"
     ],
     "lastTootTimestamp": 1705104693956
+  },
+  "https://www.cassey.dev/ssg-frontmatter-template/": {
+    "id": "aHR0cHM6Ly93d3cuY2Fzc2V5LmRldi9zc2ctZnJvbnRtYXR0ZXItdGVtcGxhdGUv",
+    "title": "🔗: Frontmatter Templates for New Blog Posts",
+    "url": "https://www.cassey.dev/ssg-frontmatter-template/",
+    "content_text": "🔗: Frontmatter Templates for New Blog Posts #WebDev https://www.cassey.dev/ssg-frontmatter-template/",
+    "date_published": "Sat, 13 Jan 2024 19:33:07 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111750426108913590"
+    ],
+    "lastTootTimestamp": 1705176179727
   }
 }
