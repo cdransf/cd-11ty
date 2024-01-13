@@ -9036,5 +9036,16 @@
       "https://social.lol/users/cory/statuses/111745235523253419"
     ],
     "lastTootTimestamp": 1705096977783
+  },
+  "https://blog.cassidoo.co/post/human-curation/": {
+    "id": "aHR0cHM6Ly9ibG9nLmNhc3NpZG9vLmNvL3Bvc3QvaHVtYW4tY3VyYXRpb24v",
+    "title": "🔗: I miss human curation",
+    "url": "https://blog.cassidoo.co/post/human-curation/",
+    "content_text": "🔗: I miss human curation #Tech https://blog.cassidoo.co/post/human-curation/",
+    "date_published": "Fri, 12 Jan 2024 21:22:04 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111745741218469794"
+    ],
+    "lastTootTimestamp": 1705104693956
   }
 }
