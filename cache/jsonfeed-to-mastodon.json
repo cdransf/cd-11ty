@@ -9009,7 +9009,7 @@
     "title": "🔗: Improving CSS Download Performance by Unbundling Page Styles",
     "url": "https://thathtml.blog/2024/01/css-performance-page-styles/",
     "content_text": "🔗: Improving CSS Download Performance by Unbundling Page Styles #WebDev https://thathtml.blog/2024/01/css-performance-page-styles/",
-    "date_published": "Fri, 12 Jan 2024 00:06:08 +0000",
+    "date_published": "Fri, 12 Jan 2024 13:21:09 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111740563377986129"
     ],
@@ -9025,5 +9025,27 @@
       "https://social.lol/users/cory/statuses/111742404951384980"
     ],
     "lastTootTimestamp": 1705053786568
+  },
+  "https://werd.io/2024/running-your-own-site-is-painful-hosting-nazis-is-worse": {
+    "id": "aHR0cHM6Ly93ZXJkLmlvLzIwMjQvcnVubmluZy15b3VyLW93bi1zaXRlLWlzLXBhaW5mdWwtaG9zdGluZy1uYXppcy1pcy13b3JzZQ==",
+    "title": "🔗: Running your own site is painful. Hosting Nazis is worse",
+    "url": "https://werd.io/2024/running-your-own-site-is-painful-hosting-nazis-is-worse",
+    "content_text": "🔗: Running your own site is painful. Hosting Nazis is worse #Tech https://werd.io/2024/running-your-own-site-is-painful-hosting-nazis-is-worse",
+    "date_published": "Fri, 12 Jan 2024 19:36:30 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111745235523253419"
+    ],
+    "lastTootTimestamp": 1705096977783
+  },
+  "https://blog.cassidoo.co/post/human-curation/": {
+    "id": "aHR0cHM6Ly9ibG9nLmNhc3NpZG9vLmNvL3Bvc3QvaHVtYW4tY3VyYXRpb24v",
+    "title": "🔗: I miss human curation",
+    "url": "https://blog.cassidoo.co/post/human-curation/",
+    "content_text": "🔗: I miss human curation #Tech https://blog.cassidoo.co/post/human-curation/",
+    "date_published": "Fri, 12 Jan 2024 21:22:04 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111745741218469794"
+    ],
+    "lastTootTimestamp": 1705104693956
   }
 }
