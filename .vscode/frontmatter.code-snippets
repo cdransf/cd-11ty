@@ -1,0 +1,17 @@
+{
+	"add post frontmatter": {
+		"prefix": "frontmatter",
+		"scope": "plaintext,markdown,html",
+		"body": [
+			"---",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"title: $TM_FILENAME_BASE"
+			"draft": false,
+			"description: ''",
+			"tags: ['']",
+			"---",
+			"$2"
+		],
+		"description": "Add frontmatter for new post"
+	},
+}
