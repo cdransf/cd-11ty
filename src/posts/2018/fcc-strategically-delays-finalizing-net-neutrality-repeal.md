@@ -2,7 +2,6 @@
 date: '2018-04-24'
 title: 'FCC strategically delays finalizing net neutrality repeal'
 description: "Pai has been fond of saying that the net neutrality repeal hasn't harmed consumers, but that's a pretty low bar to clear given that the rules are still in effect."
-draft: false
 tags: ['politics', 'net neutrality']
 ---
 

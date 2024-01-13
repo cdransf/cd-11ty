@@ -2,7 +2,6 @@
 date: '2017-05-23'
 title: "How to comment on the FCC's proposal to kill net neutrality"
 description: "The Verge has a handy write-up on how to comment on the FCC's proposal to kill net neutrality"
-draft: false
 tags: ['politics', 'net neutrality']
 ---
 

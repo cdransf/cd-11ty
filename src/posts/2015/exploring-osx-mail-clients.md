@@ -2,7 +2,6 @@
 date: '2015-04-17'
 title: 'Exploring OS X mail clients'
 description: "I've been using Fastmail for over a year now and have been exploring email clients the entire time I've been a subscriber. Until recently, the best client I've been able to find has been Fastmail's web app itself (whether that's in the browser or in a Fluid instance)."
-draft: false
 tags: ['Fastmail', 'Email']
 ---
 

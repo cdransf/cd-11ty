@@ -2,7 +2,6 @@
 date: '2017-02-22'
 title: 'Castro v2.3 released'
 description: "Castro is easily one of the best podcast apps on iOS, and it just keeps getting better."
-draft: false
 tags: ['iOS']
 ---
 

@@ -2,7 +2,6 @@
 date: '2023-03-24'
 title: '.env files in Eleventy'
 description: "The Eleventy docs recommend the dotenv package for working with .env files, but I've found dotenv-flow to be a bit more useful inasmuch as support for .env* file patterns make development more convenient."
-draft: false
 tags: ['env', 'Eleventy']
 ---
 

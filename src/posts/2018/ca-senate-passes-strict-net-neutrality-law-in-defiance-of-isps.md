@@ -2,7 +2,6 @@
 date: '2018-05-31'
 title: 'CA senate passes strict net neutrality law in defiance of ISPs'
 description: "As a general rule, if something is good for ISPs, it's bad for their customers."
-draft: false
 tags: ['politics', 'net neutrality']
 ---
 

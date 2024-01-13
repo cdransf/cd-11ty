@@ -2,7 +2,6 @@
 date: '2017-03-13'
 title: 'CBO analysis confirms GOP health bill is little more than class warfare'
 description: "This bill amounts to tax cuts for the rich by stripping healthcare subsidies away from individuals that desperately need them. It should not be allowed to pass."
-draft: false
 tags: ['politics']
 ---
 

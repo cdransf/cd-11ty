@@ -2,7 +2,6 @@
 date: '2018-06-26'
 title: 'Popular tech companies work to stop California privacy law'
 description: "The idea that Californians might gain sweeping new privacy rights has spooked Silicon Valley, internet service providers, and other industries that increasingly rely on data collection, leading to a lobbying push to defeat the initiative before it gains traction."
-draft: false
 tags: ['politics', 'privacy']
 ---
 

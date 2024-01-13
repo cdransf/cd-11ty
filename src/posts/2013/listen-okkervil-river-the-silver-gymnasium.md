@@ -2,7 +2,6 @@
 date: '2013-08-26'
 title: "Listen - Okkervil River, 'The Silver Gymnasium'"
 description: "Okkervil River's The Silver Gymnasium sounds every bit as good as I had hoped it would."
-draft: false
 tags: ['music']
 ---
 

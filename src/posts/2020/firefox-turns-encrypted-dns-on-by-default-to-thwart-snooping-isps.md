@@ -2,7 +2,6 @@
 date: '2020-02-25'
 title: 'Firefox turns encrypted DNS on by default to thwart snooping ISPs'
 description: "Firefox will start switching browser users to Cloudflare's encrypted-DNS service today and roll out the change across the United States in the coming weeks."
-draft: false
 tags: ['Firefox', 'privacy', 'security']
 ---
 

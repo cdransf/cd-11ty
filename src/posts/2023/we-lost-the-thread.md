@@ -2,7 +2,6 @@
 date: '2023-04-27'
 title: 'We lost the thread'
 description: "We've arrived at a point where we can say that our attempts to port relationships and social interactions to the internet has been an unambiguous failure."
-draft: false
 tags: ['social media', 'tech', 'culture']
 ---
 

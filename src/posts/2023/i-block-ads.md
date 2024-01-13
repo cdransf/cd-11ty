@@ -2,7 +2,6 @@
 date: '2023-05-23'
 title: 'I block ads'
 description: "I block ads in the browser. I block ads at the DNS level."
-draft: false
 tags: ['advertising', 'privacy', 'tech']
 image: /assets/img/og/adblocks.webp
 ---

@@ -2,7 +2,6 @@
 date: '2017-07-20'
 title: 'Senator attacks ISP and FCC argument for net neutrality repeal'
 description: "ISPs are already investing in infrastructure with existing regulations in place. They want net neutrality restrictions repealed so that they can more freely continue their existing abusing and anticompetitive behavior."
-draft: false
 tags: ['politics', 'net neutrality']
 ---
 

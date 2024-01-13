@@ -2,7 +2,6 @@
 date: '2013-08-13'
 title: 'Grapes of Wrath'
 description: "Interesting read on climate change, wine and agriculture via Mother Jones."
-draft: false
 tags: ['environment', 'politics']
 ---
 

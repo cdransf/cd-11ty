@@ -2,7 +2,6 @@
 date: '2013-08-14'
 title: 'The National at Jimmy Kimmel Live!'
 description: "I was finally able to see The National for the first time. The band has been promoting their newest release, Trouble Will Find Me on the road but, after having missed them at Outside Lands, the Greek Theatre and the Hollywood Forever Cemetary, my final shot to catch them on this run through California was their performance at Jimmy Kimmel Live."
-draft: false
 tags: ['music']
 ---
 

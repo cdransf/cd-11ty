@@ -2,7 +2,6 @@
 date: '2017-09-08'
 title: 'Data is a toxic asset'
 description: "We can be smarter than this. We need to regulate what corporations can do with our data at every stage: collection, storage, use, resale and disposal. We can make corporate executives personally liable, so they know there's a downside to taking chances. We can make the business models that involve massively surveilling people the less compelling ones, simply by making certain business practices illegal."
-draft: false
 tags: ['security']
 ---
 

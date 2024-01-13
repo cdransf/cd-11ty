@@ -2,7 +2,6 @@
 date: '2021-04-01'
 title: 'Digital privacy tools'
 description: "This is a helpful, albeit basic, guide to online privacy tools."
-draft: false
 tags: ['tech', 'privacy']
 ---
 

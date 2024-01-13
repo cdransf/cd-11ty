@@ -2,7 +2,6 @@
 date: '2013-07-17'
 title: 'Okkervil River - Open Mic Night'
 description: "Not out of place at all at an open mic night. Excellent."
-draft: false
 tags: ['video', 'music']
 ---
 

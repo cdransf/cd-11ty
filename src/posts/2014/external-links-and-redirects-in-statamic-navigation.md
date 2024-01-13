@@ -2,7 +2,6 @@
 date: '2014-10-15'
 title: 'External links and redirects in Statamic navigation'
 description: "I put together a fieldset and template that allows external links to be added to the navigation of Statamic sites alongside internal links."
-draft: false
 tags: ['development', 'Statamic']
 ---
 

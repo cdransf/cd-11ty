@@ -2,7 +2,6 @@
 date: '2017-08-08'
 title: 'EFF argues border agents need warrants to search digital devices'
 description: "It's ludicrous that a warrant is not currently required for these searches. If a search is truly necessary, the authorities in question should be able to obtain a warrant with ease."
-draft: false
 tags: ['politics', 'security']
 ---
 

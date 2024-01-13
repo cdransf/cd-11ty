@@ -2,7 +2,6 @@
 title: 'Programmatically importing your Last.fm listening data to ListenBrainz'
 description: "I love Last.fm, but in the interest of redundancy, Ive started programmatically importing my listening data from Last.fm into ListenBrainz."
 date: '2023-12-05'
-draft: false
 tags:
 - music
 - Eleventy

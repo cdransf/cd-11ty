@@ -2,7 +2,6 @@
 date: '2022-02-15'
 title: 'Apple Music: a tale of woe'
 description: "Last week my Apple Music collection, in as far as I can tell, become corrupted or otherwise unmanageable. This isn't the first issue I've had with the service nor is it the most severe — I gave Apple Music a try right after it launched, remnants of Beats Music and all."
-draft: false
 tags: ['music', 'Apple', 'services']
 ---
 

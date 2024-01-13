@@ -2,7 +2,6 @@
 date: '2022-03-28'
 title: 'Automating email cleanup in Gmail'
 description: "Lately I've been leaning into automating the cleanup of email I receive in Gmail using a combination of Inbox-era categories that the application still exposes via search and Google Apps Script."
-draft: false
 tags: ['Gmail', 'automation']
 ---
 

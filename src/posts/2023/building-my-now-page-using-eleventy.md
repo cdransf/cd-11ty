@@ -2,7 +2,6 @@
 date: '2023-03-18'
 title: 'Building my now page using Eleventy'
 description: "As part of my commitment to writing about things I've written in other frameworks in Eleventy, this is how I re-engineered my /now page in Eleventy."
-draft: false
 tags: ['Eleventy', 'JavaScript', 'Last.fm', 'Oku', 'Trakt', 'Letterboxd', 'API']
 ---
 

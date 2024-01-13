@@ -2,7 +2,6 @@
 date: '2024-01-10'
 title: 'Link page improvements'
 description: "I made a few improvements to my link page that's powered by Readwise Reader."
-draft: false
 tags:
   - 'development'
   - 'tech'

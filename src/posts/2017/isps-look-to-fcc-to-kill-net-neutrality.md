@@ -2,7 +2,6 @@
 date: '2017-09-29'
 title: 'ISPs look to the Supreme Court to kill net neutrality'
 description: "None of this would be necessary if ISPs and cable companies were capable of creating and providing services that consumers actually wanted to use. Instead, they pursue legal action to cripple competitors and force consumers to use their, at best, substandard services."
-draft: false
 tags: ['politics', 'net neutrality']
 ---
 

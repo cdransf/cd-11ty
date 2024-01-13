@@ -2,7 +2,6 @@
 date: '2017-04-23'
 title: 'Protecting your privacy'
 description: "Nonsense. If you're not paying for the service your data is being monetized in a way that benefits the interests of the company providing the service, not you."
-draft: false
 tags: ['politics', 'privacy']
 ---
 

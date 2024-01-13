@@ -2,7 +2,6 @@
 date: '2017-09-23'
 title: Using server alerts to generate Todoist tasks
 description: "I manage a few different servers (including this one) for several different friends and clients. As part of managing each server and site hosted on it, I'll typically receive alerts for errors, common tasks or downtime. For a while I had settled on filing these alerts into a separate mailbox to keep them from overwhelming my inbox."
-draft: false
 tags: ['development', 'Todoist']
 ---
 

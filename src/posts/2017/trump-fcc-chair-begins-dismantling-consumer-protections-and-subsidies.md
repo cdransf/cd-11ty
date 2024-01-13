@@ -2,7 +2,6 @@
 date: '2017-02-04'
 title: 'Trump FCC chair begins dismantling consumer protections and subsidies'
 description: "We're barely two weeks into the new presidential administration, and it looks like net neutrality will be yet another casualty of this administration's drive to strip away consumer-friendly regulations."
-draft: false
 tags: ['politics', 'net neutrality']
 ---
 

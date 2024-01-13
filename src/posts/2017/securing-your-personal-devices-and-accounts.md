@@ -2,7 +2,6 @@
 date: '2017-02-20'
 title: 'Securing your personal devices and accounts'
 description: "With the current US administration pondering the possibility of forcing foreign travelers to give up their social media passwords at the border, a lot of recent and justifiable concern has been raised about data privacy. The first mistake you could make is presuming that such a policy won't affect US citizens."
-draft: false
 tags: ['privacy', 'security']
 ---
 

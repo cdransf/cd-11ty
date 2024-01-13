@@ -2,7 +2,6 @@
 date: '2017-05-23'
 title: 'GOP advances plan for ring-free voicemail spam'
 description: "It's like a U2 album release — but for annoying political crap."
-draft: false
 tags: ['politics', 'privacy']
 ---
 

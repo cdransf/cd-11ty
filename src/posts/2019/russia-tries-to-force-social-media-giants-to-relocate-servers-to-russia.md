@@ -2,7 +2,6 @@
 date: '2019-01-21'
 title: 'Russia tries to force social media giants to relocate servers to Russia'
 description: "The Russian government agency responsible for censorship on the Internet has accused Facebook and Twitter of failing to comply with a law requiring all servers that store personal data to be located in Russia."
-draft: false
 tags: ['politics', 'security', 'social media']
 ---
 

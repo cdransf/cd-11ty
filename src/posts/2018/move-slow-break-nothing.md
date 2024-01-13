@@ -2,7 +2,6 @@
 date: '2018-01-31'
 title: 'Move slow and break nothing'
 description: "Reliability and stability are features. Focus on them."
-draft: false
 tags: ['development']
 ---
 

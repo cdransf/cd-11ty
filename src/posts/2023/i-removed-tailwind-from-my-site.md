@@ -2,7 +2,6 @@
 date: '2024-01-05'
 title: 'I removed Tailwind from my site'
 description: 'A brief run through removing Tailwind.css from this site.'
-draft: false
 tags:
   - Eleventy
   - CSS

@@ -2,7 +2,6 @@
 date: '2013-09-04'
 title: 'Arcade Fire - Reflektor'
 description: "This sample sounds promising. I can't wait to hear more from Reflektor on the 9th."
-draft: false
 tags: ['music']
 ---
 

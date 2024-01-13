@@ -2,7 +2,6 @@
 date: '2023-10-23'
 title: 'Onward, to The Storygraph'
 description: "Recently, I've been using Goodreads, begrudgingly, to track my reading activity. I had been using Oku but wanted to hedge against the lack of updates since 2022 or so. Looking around for an alternative, I found and read many good things about The Storygraph. It fits my needs, but doesn't (yet) have an API or RSS/Atom feeds exposed for your reading activity."
-draft: false
 tags: ['Eleventy', 'development']
 ---
 

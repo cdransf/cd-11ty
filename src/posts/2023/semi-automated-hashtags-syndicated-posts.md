@@ -2,7 +2,6 @@
 date: '2023-09-10'
 title: 'Semi-automated hashtags for syndicated posts'
 description: "I went out on a limb recently and decided to build a custom collection in Eleventy that aggregates my post tags and link tags (sourced from Matter). These tags then get appended to shared post or link titles when they're syndicated from my site."
-draft: false
 tags:
   - Eleventy
   - development

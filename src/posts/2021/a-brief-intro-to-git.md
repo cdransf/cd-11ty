@@ -2,7 +2,6 @@
 date: '2021-06-07'
 title: A brief intro to git
 description: "As a developer, a version control system is a critical part of your toolkit, no matter the size of the project or team you may find yourself working on."
-draft: false
 tags: ['Git', 'development']
 ---
 

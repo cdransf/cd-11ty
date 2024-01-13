@@ -2,7 +2,6 @@
 date: '2016-03-13'
 title: 'DOJ takes war on encryption to WhatsApp'
 description: "The government is taking its war on encryption to WhatsApp's front door. This is, perhaps, even more terrifying than their effort to force Apple to hamstring its device security."
-draft: false
 tags: ['politics', 'security']
 ---
 

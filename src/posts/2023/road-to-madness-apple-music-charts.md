@@ -2,7 +2,6 @@
 date: '2023-07-21'
 title: 'Road to madness: charting Apple Music listening data'
 description: "I've written before about displaying my listening data from Apple Music but, recently, I've attempted to take things a bit further."
-draft: false
 tags: ['development', 'music', 'Eleventy', 'Apple', 'JavaScript', 'API']
 image: https://cdn.coryd.dev/blog/charlie.jpg
 ---

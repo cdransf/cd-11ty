@@ -2,7 +2,6 @@
 date: '2018-09-04'
 title: 'Time to break up Facebook'
 description: "...the chilling effect of Facebook and other tech giants buying up every promising startup is noticeable. 'I think if we have a tech economy entirely premised on the idea that monopolists may one day buy the underlying thing, it really limits what can happen,' says Wu."
-draft: false
 tags: ['politics', 'social media', 'privacy']
 ---
 

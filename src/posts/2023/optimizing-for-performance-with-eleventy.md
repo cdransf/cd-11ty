@@ -2,7 +2,6 @@
 date: '2023-06-07'
 title: 'Optimizing for performance with Eleventy'
 description: "In the interest of over-engineering my personal site I've gone out of my way to optimize it for performance."
-draft: false
 tags: ['Eleventy', 'development']
 image: https://cdn.coryd.dev/blog/page-speed.jpg
 ---

@@ -2,7 +2,6 @@
 date: '2018-09-06'
 title: 'The Copenhagen Letter'
 description: 'Tech is not above us. It should be governed by all of us, by our democratic institutions. It should play by the rules of our societies. It should serve our needs, both individual and collective, as much as our wants.'
-draft: false
 tags: ['politics']
 ---
 

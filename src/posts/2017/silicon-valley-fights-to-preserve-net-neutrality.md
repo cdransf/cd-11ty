@@ -2,7 +2,6 @@
 date: '2017-04-12'
 title: 'Silicon Valley fights to preserve net neutrality'
 description: "I sincerely hope that net neutrality is preserved in its current form. Voluntary commitments from companies with the appalling track record shared by most ISPs are simply not going to be enough to preserve the internet freedoms we've become accustomed to."
-draft: false
 tags: ['politics', 'net neutrality']
 ---
 

@@ -2,7 +2,6 @@
 date: '2013-08-01'
 title: 'Dawes - Most People'
 description: "A wonderful new video for one of the highlights of Dawes' most recent album Stories Don't End. I love videos from bands that give an insight in to live shows from both their perspective and that of their fans."
-draft: false
 tags: ['music', 'video']
 ---
 

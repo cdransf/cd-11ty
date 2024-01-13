@@ -2,7 +2,6 @@
 date: '2023-03-27'
 title: 'Lazy select-based pagination in Eleventy'
 description: "I've relaunched, rebuilt and rewritten my personal blog more times than I can count, and I've had a trail of posts I've never fully migrated at each turn. This weekend, while relaxing and watching movies I ported them into Eleventy and, in doing so, found that the pagination implementation I was using didn't scale well with the number of pages I added."
-draft: false
 tags: ['Eleventy', 'JavaScript', 'development']
 ---
 

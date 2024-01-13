@@ -2,7 +2,6 @@
 date: '2014-10-20'
 title: 'Streaming Music Has Left Me Adrift'
 description: "The New York Times has published an interesting piece on streaming music and the transition from analogue listening, CDs and other physical media. What I find most interesting is the author, Dan Brooks', point about the effort involved in collecting music as versus now simply being able to search streaming services for available releases."
-draft: false
 tags: ['music']
 ---
 

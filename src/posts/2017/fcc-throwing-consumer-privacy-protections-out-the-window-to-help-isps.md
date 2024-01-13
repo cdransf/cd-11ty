@@ -2,7 +2,6 @@
 date: '2017-03-11'
 title: 'FCC throwing consumer privacy protections out the window to help ISPs'
 description: "There's not really a bright side here for consumers. Internet providers asked for permission to start sharing your private data again, and without much of a fight, they're about to get it."
-draft: false
 tags: ['politics', 'privacy']
 ---
 

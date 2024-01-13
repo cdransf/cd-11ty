@@ -2,7 +2,6 @@
 date: '2023-11-13'
 title: 'Doppler, locally stored music and storage as a beneficial constraint'
 description: "Over the weekend I moved my music listening to the excellent, macOS native app Doppler. I've spent entirely too much time moving music, thinking about music and fiddling with my setup for someone that is not an audiophile."
-draft: false
 tags:
   - macOS
   - music

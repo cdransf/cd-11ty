@@ -2,7 +2,6 @@
 date: '2017-03-08'
 title: "GOP senators' new bill would let ISPs sell your Web browsing data"
 description: "'Big broadband barons and their Republican allies want to turn the telecommunications marketplace into a Wild West where consumers are held captive with no defense against abusive invasions of their privacy by internet service providers,' [Sen. Edward] Markey said."
-draft: false
 tags: ['politics', 'privacy']
 ---
 

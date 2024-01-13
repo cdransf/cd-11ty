@@ -2,7 +2,6 @@
 date: '2023-06-16'
 title: 'Support small businesses (internet ones too)'
 description: "Small businesses are awesome — the owners are local, the service is better, the products are often unique, and they don't usually look to scale until their employees are peeing in bottles. Go out of your way to keep them around."
-draft: false
 tags: ['tech']
 ---
 

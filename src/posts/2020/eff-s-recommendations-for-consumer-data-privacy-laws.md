@@ -2,7 +2,6 @@
 date: '2020-02-17'
 title: EFF's Recommendations for Consumer Data Privacy Laws
 description: "Strong privacy legislation in the United States is possible, necessary, and long overdue. EFF emphasizes the following concrete recommendations for proposed legislation regarding consumer data privacy."
-draft: false
 tags: ['politics', 'privacy']
 ---
 

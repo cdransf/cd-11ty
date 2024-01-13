@@ -1,6 +1,5 @@
 ---
 date: '2020-03-10'
-draft: false
 title: 'The EARN IT Act Is Unconstitutional: Fourth Amendment'
 description: "So far, I've covered what I believe to be some First Amendment and due process problems with the EARN IT Act bill. Last but not least, let's talk about the Fourth Amendment."
 category: links

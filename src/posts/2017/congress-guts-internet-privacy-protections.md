@@ -2,7 +2,6 @@
 date: '2017-03-28'
 title: 'Congress guts internet privacy protections'
 description: "Thanks to a cash-soaked Congress there will be neither broadband competition, nor functional regulatory oversight of an industry with a documented history of aggressive, anti-consumer and anticompetitive behavior. What could possibly go wrong?"
-draft: false
 tags: ['politics', 'net neutrality']
 ---
 

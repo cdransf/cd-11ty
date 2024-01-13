@@ -2,7 +2,6 @@
 date: '2017-09-10'
 title: 'RSS still beats social media for tracking news'
 description: "Gizmodo has a simple explainer on why RSS still beats social media for news. If you don't currently use an RSS reader, check out the post and the services it recommends."
-draft: false
 tags: ['RSS']
 ---
 

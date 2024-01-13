@@ -2,7 +2,6 @@
 date: '2023-07-12'
 title: 'Building a popular posts widget in Eleventy using Plausible analytics'
 description: "I took some time last week to build out a popular posts widget after seeing Zach's implementation using Google Analytics."
-draft: false
 tags: ['Eleventy', 'development']
 ---
 I took some time last week to build out a popular posts widget after seeing [Zach's](https://www.zachleat.com) implementation using Google Analytics.<!-- excerpt -->

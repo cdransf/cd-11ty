@@ -2,7 +2,6 @@
 date: '2017-03-14'
 title: 'Keep the Internet Open'
 description: "'The internet is a public good, and I believe access should be a basic right. We've seen such great innovation in software because the internet has been a level playing field. People have been able to succeed by merit, not the regulatory weight of incumbency.'"
-draft: false
 tags: ['politics', 'net neutrality']
 ---
 

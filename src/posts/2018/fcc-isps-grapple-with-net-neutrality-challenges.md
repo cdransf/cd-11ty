@@ -2,7 +2,6 @@
 date: '2018-03-12'
 title: 'FCC, ISPs grapple with net neutrality challenges'
 description: "Twelve lawsuits filed against the Federal Communications Commission over its net neutrality repeal have been consolidated into one suit that will be heard at a federal appeals court in California."
-draft: false
 tags: ['politics', 'net neutrality']
 ---
 

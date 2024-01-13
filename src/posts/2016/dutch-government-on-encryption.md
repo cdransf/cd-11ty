@@ -2,7 +2,6 @@
 date: '2016-01-09'
 title: 'Dutch government on encryption'
 description: "...forcing companies to add backdoors to their products and services would have 'undesirable consequences for the security of communicated and stored information,' since 'digital systems can become vulnerable to criminals, terrorists and foreign intelligence services.'"
-draft: false
 tags: ['politics', 'security']
 ---
 

@@ -2,7 +2,6 @@
 date: '2015-11-12'
 title: 'Scotch Box for local LAMP development'
 description: "If you spend any amount of time working on LAMP stack development projects you should take a look at Scotch Box. It's a full-featured Vagrant Box and is far easier than fiddling with setting up a server directly on your dev machine."
-draft: false
 tags: ['development', 'Vagrant']
 ---
 

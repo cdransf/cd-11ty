@@ -2,7 +2,6 @@
 date: '2024-01-09'
 title: 'Your site, your home, your web'
 description: 'A brief, perhaps unoriginal, plea to have fun sharing and building on the web.'
-draft: false
 tags:
   - 'development'
   - 'tech'

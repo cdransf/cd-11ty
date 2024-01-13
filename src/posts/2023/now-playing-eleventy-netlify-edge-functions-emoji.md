@@ -2,7 +2,6 @@
 date: '2023-08-25'
 title: 'Displaying now playing data with matching emoji using Netlify edge functions and Eleventy'
 description: "My site is built using 11ty and is rebuilt once an hour. These frequent rebuilds accomplish a few things, notably updating webmention data and keeping my now page current."
-draft: false
 tags: ['Eleventy', 'JavaScript']
 ---
 

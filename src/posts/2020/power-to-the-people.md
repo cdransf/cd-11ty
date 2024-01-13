@@ -2,7 +2,6 @@
 date: '2020-02-27'
 title: 'Power to the People'
 description: "When you upload photos to Instagram, back up your phone to 'the cloud', send an email through GMail, or save a document in a storage application like Dropbox or Google Drive, your data is being saved in a data center."
-draft: false
 tags: ['privacy']
 ---
 

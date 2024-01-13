@@ -2,7 +2,6 @@
 date: '2024-01-08'
 title: 'I found the music I love on the internet'
 description: 'My roundabout journey of musical discovery on the internet.'
-draft: false
 tags:
   - 'music'
   - 'Last.fm'

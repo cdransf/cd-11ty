@@ -2,7 +2,6 @@
 date: '2022-04-03'
 title: '2022 reading list'
 description: "I'm still plugging away with my reading habit and my streak is now at 772 days."
-draft: false
 tags: ['books']
 ---
 

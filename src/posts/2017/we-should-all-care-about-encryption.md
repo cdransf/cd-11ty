@@ -2,7 +2,6 @@
 date: '2017-08-01'
 title: 'We Should All Care About Encryption'
 description: "If we squander privacy by allowing back doors or building illicit vulnerabilities into encryption tools, there is nothing to protect us from prying corporations, spying governments or even criminals bent on abusing our data. Unfortunately, there is no such thing as a back door that only lets the good guys in."
-draft: false
 tags: ['politics', 'security']
 ---
 

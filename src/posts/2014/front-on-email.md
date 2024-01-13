@@ -2,7 +2,6 @@
 date: '2014-09-02'
 title: 'Front on email'
 description: "I would gladly trade Hangouts, GroupMe, WhatsApp, Line et al. for a unified, open chat / messaging standard."
-draft: false
 tags: ['Email']
 ---
 

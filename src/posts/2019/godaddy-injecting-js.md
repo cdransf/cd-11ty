@@ -2,7 +2,6 @@
 date: '2019-01-14'
 title: 'GoDaddy secretly injecting js into customer sites'
 description: "I wish this were surprising. If you're still using GoDaddy for hosting, you should disable this."
-draft: false
 tags: ['development']
 ---
 

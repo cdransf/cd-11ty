@@ -2,7 +2,6 @@
 date: '2023-10-03'
 title: 'Migrating your Letterboxd data'
 description: "In case you missed the news Letterboxd was acquired and, assurances about nothing changing quickly followed. But, I think it's safe to say we've seen this movie before."
-draft: false
 tags:
   - development
   - tech

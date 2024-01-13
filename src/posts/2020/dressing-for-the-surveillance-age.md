@@ -2,7 +2,6 @@
 date: '2020-03-10'
 title: 'Dressing for the Surveillance Age'
 description: "Tom Goldstein, an associate professor of computer science at the University of Maryland, took an 'invisibility cloak' from a pile on a chair in his office and pulled it on over his head."
-draft: false
 tags: ['tech', 'privacy']
 ---
 

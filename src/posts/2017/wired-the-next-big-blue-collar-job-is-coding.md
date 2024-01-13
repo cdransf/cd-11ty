@@ -2,7 +2,6 @@
 date: '2017-02-12'
 title: 'The next big blue collar job is coding'
 description: "I couldn't agree more with this article. There are ranges in every profession, but development is filled with rich opportunities that more people could benefit from with the proper support."
-draft: false
 tags: ['development']
 ---
 

@@ -2,7 +2,6 @@
 date: '2023-09-06'
 title: 'Now page: grouping episodes of the same tv show'
 description: "I made a minor update to how I'm normalizing TV data for display on my now page."
-draft: false
 tags:
   - JavaScript
   - Eleventy

@@ -2,7 +2,6 @@
 date: '2024-01-11'
 title: 'Your attention is precious'
 description: "It's finite, it's exhaustible and it ought to be held close and carefully guarded."
-draft: false
 tags:
   - 'development'
   - 'tech'

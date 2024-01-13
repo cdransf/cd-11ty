@@ -2,7 +2,6 @@
 date: '2023-03-19'
 title: 'Scheduled Eleventy builds on Vercel with cron-triggered GitHub actions'
 description: "In an effort to get away from client-side Javascript and embrace Eleventy for what it is (a static site generator), I've dropped my social-utils instance offline and my now-playing track display on my home page that still relied on it."
-draft: false
 tags: ['Eleventy', 'JavaScript', 'automation', 'GitHub', 'GitHub actions', 'cron', 'YAML', 'API']
 ---
 

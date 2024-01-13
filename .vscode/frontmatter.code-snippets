@@ -4,9 +4,8 @@
 		"scope": "plaintext,markdown,html",
 		"body": [
 			"---",
-			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
-			"title: $TM_FILENAME_BASE"
-			"draft": false,
+			"date: '$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE'",
+			"title: '$TM_FILENAME_BASE'",
 			"description: ''",
 			"tags: ['']",
 			"---",

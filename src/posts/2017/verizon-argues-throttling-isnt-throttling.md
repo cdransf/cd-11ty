@@ -2,7 +2,6 @@
 date: '2017-07-25'
 title: "Verizon argues throttling isn't throttling"
 description: "Throttling is throttling. The justification on Verizon's part doesn't matter — they should be passing through traffic without filtering it."
-draft: false
 tags: ['politics', 'net neutrality']
 ---
 

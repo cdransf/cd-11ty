@@ -2,7 +2,6 @@
 date: '2023-09-19'
 title: "'It Is Possible to Both Stream and Buy Music'"
 description: "I've been streaming music again in part (and I know this is ridiculous) because Spotify is ubiquitous, well-integrated and has a — well — API that's usable for my purposes."
-draft: false
 tags:
   - music
 ---

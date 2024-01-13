@@ -2,7 +2,6 @@
 date: '2018-08-08'
 title: 'OIG report: FCC lied about being hacked'
 description: "The OIG report shows that Pai knew from the start that the story of a hack-attack was unsupported by evidence and disputed by experts -- we knew that too, because those experts were speaking publicly at the time, but it's great to see it in official black-and-white."
-draft: false
 tags: ['politics', 'net neutrality']
 ---
 

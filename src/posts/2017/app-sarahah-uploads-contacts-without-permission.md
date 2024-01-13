@@ -3,7 +3,6 @@ date: '2017-08-27'
 title: 'Sarahah uploads your contacts without permission'
 description: "This behavior seems to be all too common lately and, while most apps ask for permission to access contacts, it's worth bearing in mind that they may not need that access. Additionally, once that access is granted, it isn't always clear what's actually done with the data."
 link: https://theintercept.com/2017/08/27/hit-app-sarahah-quietly-uploads-your-address-book/
-draft: false
 tags: ['iOS', 'privacy']
 ---
 

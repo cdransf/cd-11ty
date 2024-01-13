@@ -2,7 +2,6 @@
 date: '2024-01-10'
 title: 'Link blogging using Readwise Reader'
 description: 'How I use Readwise Reader to post and share links.'
-draft: false
 tags:
   - 'development'
   - 'tech'

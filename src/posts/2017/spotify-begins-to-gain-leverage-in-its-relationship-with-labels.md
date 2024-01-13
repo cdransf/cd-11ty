@@ -2,7 +2,6 @@
 date: '2017-03-19'
 title: 'Spotify begins to gain leverage in its relationship with labels'
 description: "Spotify has done a lot to make music more accessible and available since it first launched. It's spent a lot of time since its launch beholden to labels and content providers so anything it can do, at this point, to gain leverage over those providers is only going to benefit it, and its users, in the long term."
-draft: false
 tags: ['Spotify']
 ---
 

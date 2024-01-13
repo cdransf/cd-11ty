@@ -2,7 +2,6 @@
 date: '2016-05-30'
 title: 'Senate push for encryption legislation falters'
 description: "Fantastic news. This bill (and the push behind it) was ill-conceived at best and would have caused untold damage were it to pass."
-draft: false
 tags: ['politics', 'security']
 ---
 

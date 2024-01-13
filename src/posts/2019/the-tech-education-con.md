@@ -2,7 +2,6 @@
 date: '2019-01-13'
 title: 'The tech education con'
 description: "Public education, like any institution, has to change with the times. Learning digital skills like coding should be part of any twenty-first century educational program."
-draft: false
 tags: ['education']
 ---
 

@@ -2,7 +2,6 @@
 date: '2023-03-17'
 title: 'Webmentions in Eleventy'
 description: "In the interest of continuing to repeat myself I'm writing, once again, about adding webmentions to a blog."
-draft: false
 tags: ['webmentions', 'Eleventy', 'API']
 ---
 

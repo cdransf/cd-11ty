@@ -2,7 +2,6 @@
 date: '2014-01-06'
 title: 'Changes coming to Droplr'
 description: "If this helps Droplr grow and continue as a successful business, I'm all for it. I use the service daily to shorten links, share files and post images."
-draft: false
 tags: ['iOS']
 ---
 

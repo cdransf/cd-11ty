@@ -2,7 +2,6 @@
 date: '2013-08-15'
 title: 'Design by numbers - typography'
 description: "A clear, concise primer on typography by Dan Eden."
-draft: false
 tags: ['design', 'typography']
 ---
 

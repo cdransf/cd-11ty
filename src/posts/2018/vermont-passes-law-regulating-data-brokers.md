@@ -2,7 +2,6 @@
 date: '2018-05-27'
 title: 'Vermont passes law regulating data brokers'
 description: "This sounds like the kind of law that should also exist at the federal level to benefit everyone. Data brokers are terrible companies that make money by exposing and endangering everyone's personal information."
-draft: false
 tags: ['politics', 'privacy']
 ---
 

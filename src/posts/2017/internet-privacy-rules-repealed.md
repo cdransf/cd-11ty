@@ -2,7 +2,6 @@
 date: '2017-04-03'
 title: 'Internet privacy rules repealed'
 description: "No, customers should be able to expect that their data remain private and, the fact of the matter is, customers typically have a choice who they provide their data to (whether that be Facebook, Google — you name it)."
-draft: false
 tags: ['politics', 'net neutrality']
 ---
 

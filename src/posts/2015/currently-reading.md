@@ -2,7 +2,6 @@
 date: '2015-03-28'
 title: 'Currently reading'
 description: "I've been reading a lot lately (mainly on my phone when I catch a spare moment). I've picked up several books on front end development and am currently digging in to JavaScript: The Good Parts by Douglas Crockford."
-draft: false
 tags: ['books', 'JavaScript']
 ---
 

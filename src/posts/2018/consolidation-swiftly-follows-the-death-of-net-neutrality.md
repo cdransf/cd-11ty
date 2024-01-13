@@ -2,7 +2,6 @@
 date: '2018-06-13'
 title: 'Consolidation swiftly follows the death of net neutrality'
 description: 'Combined with the death of net neutrality, the U.S. is creating a very uncertain future where a handful of companies now dominate everything from local sports and news broadcasts to broadband, with few rules or guidelines preventing price gouging, predatory practices, and routinely anti-competitive behavior.'
-draft: false
 tags: ['politics', 'net neutrality']
 ---
 
