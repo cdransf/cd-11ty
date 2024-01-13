@@ -10,6 +10,7 @@
 			"description: ''",
 			"tags: ['']",
 			"---",
+			"<!-- excerpt -->",
 			"$2"
 		],
 		"description": "Add frontmatter for new post"
