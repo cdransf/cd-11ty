@@ -9095,7 +9095,10 @@
     "url": "https://gilest.org/indie-easy-again.html",
     "content_text": "🔗: More on the easier indie web Mastodon had much to say #Tech  #WebDev https://gilest.org/indie-easy-again.html",
     "date_published": "Sun, 14 Jan 2024 16:17:35 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111756088584765689"
+    ],
+    "lastTootTimestamp": 1705262582255
   },
   "https://blog.cassidoo.co/post/annoyed-at-react/": {
     "id": "aHR0cHM6Ly9ibG9nLmNhc3NpZG9vLmNvL3Bvc3QvYW5ub3llZC1hdC1yZWFjdC8=",
