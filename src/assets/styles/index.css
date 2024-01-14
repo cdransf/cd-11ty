@@ -115,6 +115,47 @@ hr.large__spacing {
   margin: 2rem 0 3rem;
 }
 
+/* tables */
+table {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+  max-width: fit-content;
+  margin: 0 auto;
+  white-space: nowrap;
+  border-radius: var(--rounded-lg);
+  border: 1px solid var(--gray-light);
+}
+
+table a {
+  text-decoration: none;
+}
+
+table, th, td {
+  border-collapse: collapse;
+}
+
+:is(th, td):not(:last-child) {
+  border-right: 1px solid var(--gray-light);
+}
+
+th,
+tr:not(:last-child) {
+  border-bottom: 1px solid var(--gray-light);
+}
+
+th, td {
+  padding: .375rem;
+  min-width: 4rem;
+  word-break: break-word;
+}
+
+th {
+  background-color: var(--gray-lighter);
+  font-weight: 700;
+  text-align: center;
+}
+
 /* header */
 .main__title {
   width: 100%;
