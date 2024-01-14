@@ -9058,5 +9058,16 @@
       "https://social.lol/users/cory/statuses/111750426108913590"
     ],
     "lastTootTimestamp": 1705176179727
+  },
+  "https://app.thestorygraph.com/books/e8109eda-afe8-43ce-af62-6127af5424f2": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvZTgxMDllZGEtYWZlOC00M2NlLWFmNjItNjEyN2FmNTQyNGYy",
+    "title": "📖: Broad Band",
+    "url": "https://app.thestorygraph.com/books/e8109eda-afe8-43ce-af62-6127af5424f2",
+    "content_text": "📖: Broad Band #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/e8109eda-afe8-43ce-af62-6127af5424f2",
+    "date_published": "Fri, 12 Jan 2024 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111751891678217128"
+    ],
+    "lastTootTimestamp": 1705198542557
   }
 }
