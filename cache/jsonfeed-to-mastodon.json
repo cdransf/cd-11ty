@@ -9075,10 +9075,45 @@
     "title": "🔗: Coming of Age at the Dawn of the Social Internet",
     "url": "https://www.newyorker.com/culture/the-weekend-essay/coming-of-age-at-the-dawn-of-the-social-internet",
     "content_text": "🔗: Coming of Age at the Dawn of the Social Internet #Tech  #Tech https://www.newyorker.com/culture/the-weekend-essay/coming-of-age-at-the-dawn-of-the-social-internet",
-    "date_published": "Sun, 14 Jan 2024 04:31:29 +0000",
+    "date_published": "Sun, 14 Jan 2024 16:15:03 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111753259231767957"
     ],
     "lastTootTimestamp": 1705219409712
+  },
+  "https://citationneeded.news/effective-obfuscation/": {
+    "id": "aHR0cHM6Ly9jaXRhdGlvbm5lZWRlZC5uZXdzL2VmZmVjdGl2ZS1vYmZ1c2NhdGlvbi8=",
+    "title": "🔗: Effective obfuscation",
+    "url": "https://citationneeded.news/effective-obfuscation/",
+    "content_text": "🔗: Effective obfuscation #Tech https://citationneeded.news/effective-obfuscation/",
+    "date_published": "Sun, 14 Jan 2024 16:18:15 +0000",
+    "toots": []
+  },
+  "https://gilest.org/indie-easy-again.html": {
+    "id": "aHR0cHM6Ly9naWxlc3Qub3JnL2luZGllLWVhc3ktYWdhaW4uaHRtbA==",
+    "title": "🔗: More on the easier indie web Mastodon had much to say",
+    "url": "https://gilest.org/indie-easy-again.html",
+    "content_text": "🔗: More on the easier indie web Mastodon had much to say #Tech  #WebDev https://gilest.org/indie-easy-again.html",
+    "date_published": "Sun, 14 Jan 2024 16:17:35 +0000",
+    "toots": []
+  },
+  "https://blog.cassidoo.co/post/annoyed-at-react/": {
+    "id": "aHR0cHM6Ly9ibG9nLmNhc3NpZG9vLmNvL3Bvc3QvYW5ub3llZC1hdC1yZWFjdC8=",
+    "title": "🔗: Kind of annoyed at React",
+    "url": "https://blog.cassidoo.co/post/annoyed-at-react/",
+    "content_text": "🔗: Kind of annoyed at React #Tech  #WebDev https://blog.cassidoo.co/post/annoyed-at-react/",
+    "date_published": "Sun, 14 Jan 2024 16:16:18 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111755616844199910"
+    ],
+    "lastTootTimestamp": 1705255384053
+  },
+  "https://doctorow.medium.com/tech-workers-and-gig-workers-need-each-other-f1996468cca3?source=rss-eba9888d741b------2": {
+    "id": "aHR0cHM6Ly9kb2N0b3Jvdy5tZWRpdW0uY29tL3RlY2gtd29ya2Vycy1hbmQtZ2lnLXdvcmtlcnMtbmVlZC1lYWNoLW90aGVyLWYxOTk2NDY4Y2NhMz9zb3VyY2U9cnNzLWViYTk4ODhkNzQxYi0tLS0tLTI=",
+    "title": "🔗: Tech workers and gig workers need each other",
+    "url": "https://doctorow.medium.com/tech-workers-and-gig-workers-need-each-other-f1996468cca3?source=rss-eba9888d741b------2",
+    "content_text": "🔗: Tech workers and gig workers need each other #Tech https://doctorow.medium.com/tech-workers-and-gig-workers-need-each-other-f1996468cca3?source=rss-eba9888d741b------2",
+    "date_published": "Sun, 14 Jan 2024 16:10:37 +0000",
+    "toots": []
   }
 }
