@@ -32,6 +32,7 @@ blockquote {
   margin: 1.25rem 0;
   padding-left: .875rem;
   border-left: .25rem solid var(--gray-medium);
+  word-break: break-word;
 }
 
 :is(body, html, nav .tags, nav .search) svg {
