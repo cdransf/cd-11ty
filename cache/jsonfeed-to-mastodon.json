@@ -9087,7 +9087,10 @@
     "url": "https://citationneeded.news/effective-obfuscation/",
     "content_text": "🔗: Effective obfuscation #Tech https://citationneeded.news/effective-obfuscation/",
     "date_published": "Sun, 14 Jan 2024 16:18:15 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111756560133278564"
+    ],
+    "lastTootTimestamp": 1705269777496
   },
   "https://gilest.org/indie-easy-again.html": {
     "id": "aHR0cHM6Ly9naWxlc3Qub3JnL2luZGllLWVhc3ktYWdhaW4uaHRtbA==",
@@ -9095,7 +9098,10 @@
     "url": "https://gilest.org/indie-easy-again.html",
     "content_text": "🔗: More on the easier indie web Mastodon had much to say #Tech  #WebDev https://gilest.org/indie-easy-again.html",
     "date_published": "Sun, 14 Jan 2024 16:17:35 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111756088584765689"
+    ],
+    "lastTootTimestamp": 1705262582255
   },
   "https://blog.cassidoo.co/post/annoyed-at-react/": {
     "id": "aHR0cHM6Ly9ibG9nLmNhc3NpZG9vLmNvL3Bvc3QvYW5ub3llZC1hdC1yZWFjdC8=",
@@ -9114,6 +9120,28 @@
     "url": "https://doctorow.medium.com/tech-workers-and-gig-workers-need-each-other-f1996468cca3?source=rss-eba9888d741b------2",
     "content_text": "🔗: Tech workers and gig workers need each other #Tech https://doctorow.medium.com/tech-workers-and-gig-workers-need-each-other-f1996468cca3?source=rss-eba9888d741b------2",
     "date_published": "Sun, 14 Jan 2024 16:10:37 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111757067942935180"
+    ],
+    "lastTootTimestamp": 1705277526228
+  },
+  "https://robinrendle.com/notes/be-loud-about-the-things-you-love/": {
+    "id": "aHR0cHM6Ly9yb2JpbnJlbmRsZS5jb20vbm90ZXMvYmUtbG91ZC1hYm91dC10aGUtdGhpbmdzLXlvdS1sb3ZlLw==",
+    "title": "🔗: Be loud about the things you love",
+    "url": "https://robinrendle.com/notes/be-loud-about-the-things-you-love/",
+    "content_text": "🔗: Be loud about the things you love #Tech https://robinrendle.com/notes/be-loud-about-the-things-you-love/",
+    "date_published": "Mon, 15 Jan 2024 01:49:51 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111757978605928210"
+    ],
+    "lastTootTimestamp": 1705291421649
+  },
+  "https://app.thestorygraph.com/books/667b3daf-4c99-47de-82f6-f74eb7cd2ff7": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvNjY3YjNkYWYtNGM5OS00N2RlLTgyZjYtZjc0ZWI3Y2QyZmY3",
+    "title": "📖: The End of the World Is Just the Beginning: Mapping the Collapse of Globalization",
+    "url": "https://app.thestorygraph.com/books/667b3daf-4c99-47de-82f6-f74eb7cd2ff7",
+    "content_text": "📖: The End of the World Is Just the Beginning: Mapping the Collapse of Globalization #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/667b3daf-4c99-47de-82f6-f74eb7cd2ff7",
+    "date_published": "Sat, 13 Jan 2024 16:00:00 +0000",
     "toots": []
   }
 }
