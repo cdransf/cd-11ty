@@ -9124,5 +9124,24 @@
       "https://social.lol/users/cory/statuses/111757067942935180"
     ],
     "lastTootTimestamp": 1705277526228
+  },
+  "https://robinrendle.com/notes/be-loud-about-the-things-you-love/": {
+    "id": "aHR0cHM6Ly9yb2JpbnJlbmRsZS5jb20vbm90ZXMvYmUtbG91ZC1hYm91dC10aGUtdGhpbmdzLXlvdS1sb3ZlLw==",
+    "title": "🔗: Be loud about the things you love",
+    "url": "https://robinrendle.com/notes/be-loud-about-the-things-you-love/",
+    "content_text": "🔗: Be loud about the things you love #Tech https://robinrendle.com/notes/be-loud-about-the-things-you-love/",
+    "date_published": "Mon, 15 Jan 2024 01:49:51 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111757978605928210"
+    ],
+    "lastTootTimestamp": 1705291421649
+  },
+  "https://app.thestorygraph.com/books/667b3daf-4c99-47de-82f6-f74eb7cd2ff7": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvNjY3YjNkYWYtNGM5OS00N2RlLTgyZjYtZjc0ZWI3Y2QyZmY3",
+    "title": "📖: The End of the World Is Just the Beginning: Mapping the Collapse of Globalization",
+    "url": "https://app.thestorygraph.com/books/667b3daf-4c99-47de-82f6-f74eb7cd2ff7",
+    "content_text": "📖: The End of the World Is Just the Beginning: Mapping the Collapse of Globalization #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/667b3daf-4c99-47de-82f6-f74eb7cd2ff7",
+    "date_published": "Sat, 13 Jan 2024 16:00:00 +0000",
+    "toots": []
   }
 }
