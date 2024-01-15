@@ -49,7 +49,10 @@
 https://cdme.netlify.app https://coryd.dev 301!
 
 # feeds
+/rss https://feedpress.me/coryd 301!
+/atom https://feedpress.me/coryd 301!
 /rss.xml https://feedpress.me/coryd 301!
+/atom.xml https://feedpress.me/coryd 301!
 /feeds/all.xml https://feedpress.me/coryd 301!
 /feed.xml https://feedpress.me/coryd
 /feed.json https://feedpress.me/coryd.json
