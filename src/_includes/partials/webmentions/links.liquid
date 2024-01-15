@@ -3,7 +3,7 @@
   <ul class="link__list">
     {% for mention in mentions['link-to'] %}
       <li>
-        <a href="{{ mention.url }}">
+        <a class="no-underline" href="{{ mention.url }}">
           {{ mention.name }}
         </a>
       </li>
