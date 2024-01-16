@@ -9146,5 +9146,16 @@
       "https://social.lol/users/cory/statuses/111758451258324547"
     ],
     "lastTootTimestamp": 1705298633750
+  },
+  "https://remotesynthesis.com/blog/jamstack-in-2024/": {
+    "id": "aHR0cHM6Ly9yZW1vdGVzeW50aGVzaXMuY29tL2Jsb2cvamFtc3RhY2staW4tMjAyNC8=",
+    "title": "🔗: What is Jamstack in 2024?",
+    "url": "https://remotesynthesis.com/blog/jamstack-in-2024/",
+    "content_text": "🔗: What is Jamstack in 2024? #WebDev https://remotesynthesis.com/blog/jamstack-in-2024/",
+    "date_published": "Mon, 15 Jan 2024 21:31:43 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111762727191635147"
+    ],
+    "lastTootTimestamp": 1705363879327
   }
 }
