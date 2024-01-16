@@ -1,9 +1,7 @@
 {% capture css %}
   {% render "../../assets/styles/widgets/popular-posts.css" %}
 {% endcapture %}
-<style>
-  {{ css | cssmin }}
-</style>
+<style>{{ css }}</style>
 {% assign posts = posts | getPopularPosts: analytics %}
 <div class="popular-posts">
   <h2 class="flex--centered">

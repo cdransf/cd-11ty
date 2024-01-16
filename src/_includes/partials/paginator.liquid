@@ -1,9 +1,7 @@
 {% capture css %}
   {% render "../../assets/styles/widgets/paginator.css" %}
 {% endcapture %}
-<style>
-  {{ css | cssmin }}
-</style>
+<style>{{ css }}</style>
 <nav aria-label="Blog pagination" class="pagination flex--centered">
   {% if pagination.href.previous %}
     <a href="{{ pagination.href.previous }}">

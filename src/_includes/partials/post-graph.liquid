@@ -1,9 +1,7 @@
 {% capture css %}
   {% render "../../assets/styles/widgets/post-graph.css" %}
 {% endcapture %}
-<style>
-  {{ css | cssmin }}
-</style>
+<style>{{ css }}</style>
 <div class="post-graph">
   {% assign years = postYears | reverse %}
   {%- for year in years %}

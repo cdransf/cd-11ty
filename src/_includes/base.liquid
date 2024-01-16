@@ -36,9 +36,7 @@
       {% render "../assets/styles/partials/animations.css" %}
       {% render "../assets/styles/index.css" %}
     {% endcapture %}
-    <style>
-      {{ css | cssmin }}
-    </style>
+    <style>{{ css }}</style>
     <link rel="webmention" href="https://webmention.io/coryd.dev/webmention" />
     <link rel="pingback" href="https://webmention.io/coryd.dev/xmlrpc" />
     <link

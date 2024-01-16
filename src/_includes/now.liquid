@@ -6,9 +6,7 @@ layout: default
   {% render "../assets/styles/widgets/media-grid.css" %}
   {% render "../assets/styles/widgets/progress-bar.css" %}
 {% endcapture %}
-<style>
-  {{ css | cssmin }}
-</style>
+<style>{{ css }}</style>
 {{ content }}
 {% render "partials/now/media-grid.liquid", data:artists, icon: "microphone-2", title: "Artists", shape: "square", count: 8, loading: 'eager' %}
 {% render "partials/now/media-grid.liquid", data:albums, icon: "vinyl", title: "Albums", shape: "square", count: 8 %}

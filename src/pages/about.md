@@ -7,9 +7,7 @@ image: /assets/img/ogi/about.jpg
 {% capture css %}
   {% render "../assets/styles/pages/about.css" %}
 {% endcapture %}
-<style>
-  {{ css | cssmin }}
-</style>
+<style>{{ css }}</style>
 <div class="avatar__wrapper flex--centered">
   <div class="avatar__wrapper--interior">
     {% capture about_alt %}{{ meta.siteName }} - image by David Neal / @reverentgeek{% endcapture %}

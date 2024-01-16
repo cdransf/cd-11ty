@@ -3,9 +3,7 @@
   {% capture css %}
     {% render "../../../assets/styles/widgets/webmentions.css" %}
   {% endcapture %}
-  <style>
-    {{ css | cssmin }}
-  </style>
+  <style>{{ css }}</style>
   <div class="webmentions">
     {% render "partials/webmentions/interaction.liquid", mentions: mentions, type: 'repost-of' %}
     {% render "partials/webmentions/interaction.liquid", mentions: mentions, type: 'like-of' %}

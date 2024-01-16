@@ -7,9 +7,7 @@ schema: blog
   {% render "../assets/styles/plugins/prism.css" %}
   {% render "../assets/styles/pages/post.css" %}
 {% endcapture %}
-<style>
-  {{ css | cssmin }}
-</style>
+<style>{{ css }}</style>
 <div class="default__wrapper">
   <article class="h-entry" data-pagefind-body>
     <h2 class="p-name" data-pagefind-meta="title">{{ title }}</h2>

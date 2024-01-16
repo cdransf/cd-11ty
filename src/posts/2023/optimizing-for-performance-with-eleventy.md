@@ -65,9 +65,7 @@ The site include's Prism for code syntax highlighting and this is embedded and m
 {% capture css %}
   {% include "../assets/styles/prism.css" %}
 {% endcapture %}
-<style>
-  {{ css | cssmin }}
-</style>
+<style>{{ css }}</style>
 ```
 
 {% endraw %}

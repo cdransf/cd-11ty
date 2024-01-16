@@ -3,9 +3,7 @@
   {% capture css %}
     {% render "../../assets/styles/widgets/banner-old-post.css" %}
   {% endcapture %}
-  <style>
-    {{ css | cssmin }}
-  </style>
+  <style>{{ css }}</style>
   <div class="banner__old-post">
     <p>{% tablericon "clock-x" "Old post" %} This post is over 3 years old. I've probably changed my mind since it was written and it <em>could</em> be out of date.</p>
   </div>

@@ -15,7 +15,6 @@ import { svgToJpeg } from './config/events/index.js'
 import { tagList, tagMap, postStats } from './config/collections/index.js'
 import { img } from './config/shortcodes/index.js'
 
-import CleanCSS from 'clean-css'
 import { execSync } from 'child_process'
 
 // load .env
@@ -97,13 +96,6 @@ export default async function (eleventyConfig) {
   })
   eleventyConfig.addLiquidFilter('dateToRfc822', pluginRss.dateToRfc822)
   eleventyConfig.addLiquidFilter('absoluteUrl', pluginRss.absoluteUrl)
-  eleventyConfig.addFilter('cssmin', (code) => new CleanCSS({
-    level: {
-      2: {
-        restructureRules: true,
-      }
-    }
-  }).minify(code).styles)
   eleventyConfig.addFilter('slugify', slugifyString)
 
   // shortcodes

@@ -8,9 +8,7 @@ image: /assets/img/ogi/webrings.jpg
 {% capture css %}
   {% render "../assets/styles/pages/webrings.css" %}
 {% endcapture %}
-<style>
-  {{ css | cssmin }}
-</style>
+<style>{{ css }}</style>
 <h2
 class="m-0 text-xl font-black leading-tight tracking-normal dark:text-white md:text-2xl mb-2"
 >
