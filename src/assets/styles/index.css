@@ -9,12 +9,12 @@ html {
 }
 
 ::-moz-selection {
-  color: var(--text-color-inverted);
+  color: var(--text-color);
   background: var(--selection-color);
 }
 
 ::selection {
-  color: var(--text-color-inverted);
+  color: var(--text-color);
   background: var(--selection-color);
 }
 
