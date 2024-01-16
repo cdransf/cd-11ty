@@ -1,6 +1,5 @@
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import tablerIcons from 'eleventy-plugin-tabler-icons'
-import pluginUnfurl from 'eleventy-plugin-unfurl'
 import pluginRss from '@11ty/eleventy-plugin-rss'
 import postGraph from '@rknightuk/eleventy-plugin-post-graph'
 import embedEverything from 'eleventy-plugin-embed-everything'
@@ -35,7 +34,6 @@ const appVersion = require('./package.json').version
 export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight)
   eleventyConfig.addPlugin(tablerIcons)
-  eleventyConfig.addPlugin(pluginUnfurl)
   eleventyConfig.addPlugin(postGraph, {
     boxColorLight: '#e5e7eb',
     highlightColorLight: '#2563eb',

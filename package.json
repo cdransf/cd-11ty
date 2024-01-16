@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ELEVENTY_PRODUCTION=false eleventy --serve",
     "start:search": "run-s build:11ty index:local",
-		"start:quick": "eleventy --serve --incremental --ignore-initial",
+    "start:quick": "eleventy --serve --incremental --ignore-initial",
     "build": "ELEVENTY_PRODUCTION=true eleventy && npm run build:index",
     "build:index": "npx -y pagefind --site _site",
     "index:serve": "npx -y pagefind --site _site --serve",
@@ -34,7 +34,6 @@
     "dotenv-flow": "^4.1.0",
     "eleventy-plugin-embed-everything": "^1.18.2",
     "eleventy-plugin-tabler-icons": "^2.3.0",
-    "eleventy-plugin-unfurl": "^1.0.0",
     "html-minifier-terser": "^7.2.0",
     "ics-to-json-extended": "^1.1.4",
     "jsdom": "^23.2.0",
