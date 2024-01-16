@@ -25,7 +25,7 @@
   height: 100%;
   width: 100%;
   border: 1px solid var(--accent-color);
-  border-radius: var(--rounded-lg);
+  border-radius: var(--rounded-md);
   overflow: hidden;
   transition-property: border-color;
   transition-timing-function: var(--transition-ease-in-out);

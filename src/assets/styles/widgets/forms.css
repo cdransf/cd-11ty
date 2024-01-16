@@ -1,3 +1,8 @@
+::placeholder {
+  color: var(--text-color) !important;
+  opacity: .5 !important;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="search"],
@@ -10,6 +15,7 @@ textarea {
   padding: .5rem !important;
   font-size: var(--font-size-base) !important;
   width: 100% !important;
+  border-radius: var(--rounded-md) !important;
   /* necessary for pagefind overrides */
 
   outline: none;
