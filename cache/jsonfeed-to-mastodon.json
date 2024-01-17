@@ -9157,5 +9157,16 @@
       "https://social.lol/users/cory/statuses/111762727191635147"
     ],
     "lastTootTimestamp": 1705363879327
+  },
+  "https://app.thestorygraph.com/books/e5d59805-1122-4fde-b33d-85fdd44f65f4": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvZTVkNTk4MDUtMTEyMi00ZmRlLWIzM2QtODVmZGQ0NGY2NWY0",
+    "title": "📖: Filterworld: How Algorithms Flattened Culture",
+    "url": "https://app.thestorygraph.com/books/e5d59805-1122-4fde-b33d-85fdd44f65f4",
+    "content_text": "📖: Filterworld: How Algorithms Flattened Culture #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/e5d59805-1122-4fde-b33d-85fdd44f65f4",
+    "date_published": "Mon, 15 Jan 2024 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111768389791823935"
+    ],
+    "lastTootTimestamp": 1705450283777
   }
 }
