@@ -18,7 +18,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Calendar: <a class="plausible-event-name=Proton+referral" href="https://pr.tn/ref/X775YX40Z50G">Proton</a>
 - Weather: Weather.app
 - Podcasts: N/A
-- Music: Apple Music + [Last.fm](https://last.fm)
+- Music: Apple Music + [Last.fm](https://last.fm) + [Albums](https://www.albumstheapp.com) on iOS
 - Passwords: [1Password.com](https://1password.com)
 - Budgeting: [YNAB](https://ynab.com)
 - Mastodon: [Ivory](https://tapbots.com/ivory)
