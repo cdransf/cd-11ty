@@ -15,6 +15,7 @@ export default {
   inanna: 'b7200279-81b3-418a-8c2c-25b189c40843',
   krallice: 'b4e4b359-76a3-447e-be1d-80a24887134e',
   'la dispute': '2ec89bcc-5bf9-4d2a-ac5e-44b7496d115a',
+  nomeansno: '37e9d7b2-7779-41b2-b2eb-3685351caad3',
   nucleus: '9eefaa74-8dea-41af-8bb3-0d9616bec16f',
   oasis: '39ab1aed-75e0-4140-bd47-540276886b60',
   obliteration: '5c241a91-d7e9-447a-807c-e4a8435f10ef',
