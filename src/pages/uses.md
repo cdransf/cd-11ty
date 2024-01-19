@@ -35,6 +35,7 @@ Software and services that I use for work and my own enjoyment.
 <h3>iOS</h3>
 
 - [Albums](https://www.albumstheapp.com): an amazing music player that fits perfectly with how I listen to music and built in support for scrobbling to Last.fm.
+- [status.log](https://apps.apple.com/us/app/status-log/id6444921793): a fantastic client for status.lol that provides an outstanding native experience for the service.
 - [FontCase](https://apps.apple.com/us/app/fontcase-manage-your-type/id1205074470): for managing/installing fonts.
 
 <h3>macOS</h3>
