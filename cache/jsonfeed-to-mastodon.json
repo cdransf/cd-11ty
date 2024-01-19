@@ -9174,10 +9174,32 @@
     "title": "🔗: Corporations Are Not To Be Loved",
     "url": "https://inessential.com/2024/01/17/corporations_are_not_to_be_loved",
     "content_text": "🔗: Corporations Are Not To Be Loved  https://inessential.com/2024/01/17/corporations_are_not_to_be_loved",
-    "date_published": "Wed, 17 Jan 2024 19:12:51 +0000",
+    "date_published": "Thu, 18 Jan 2024 00:29:38 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111773547331458463"
     ],
     "lastTootTimestamp": 1705528981548
+  },
+  "https://trakt.tv/movies/the-marvels-2023": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvdGhlLW1hcnZlbHMtMjAyMw==",
+    "title": "🎥: The Marvels",
+    "url": "https://trakt.tv/movies/the-marvels-2023",
+    "content_text": "🎥: The Marvels #Movies #Watching #Trakt https://trakt.tv/movies/the-marvels-2023",
+    "date_published": "Thu, 18 Jan 2024 23:17:09 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111780199982196028"
+    ],
+    "lastTootTimestamp": 1705630492946
+  },
+  "https://coryd.dev/now?ts=1705579200000": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MDU1NzkyMDAwMDA=",
+    "title": "🎧: My top artists for the week: Free Throw @ 34 plays, Immolation @ 34 plays, Drug Church @ 28 plays, Envy @ 26 plays, Eluvium @ 20 plays, blink-182 @ 19 plays, Obliteration @ 19 plays, Wolves in the Throne Room @ 14 plays #Music #LastFM",
+    "url": "https://coryd.dev/now?ts=1705579200000",
+    "content_text": "🎧: My top artists for the week: Free Throw @ 34 plays, Immolation @ 34 plays, Drug Church @ 28 plays, Envy @ 26 plays, Eluvium @ 20 plays, blink-182 @ 19 plays, Obliteration @ 19 plays, Wolves in the Throne Room @ 14 plays #Music #LastFM  https://coryd.dev/now?ts=1705579200000",
+    "date_published": "Thu, 18 Jan 2024 12:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111782041040995490"
+    ],
+    "lastTootTimestamp": 1705658585298
   }
 }
