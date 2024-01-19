@@ -9201,5 +9201,16 @@
       "https://social.lol/users/cory/statuses/111782041040995490"
     ],
     "lastTootTimestamp": 1705658585298
+  },
+  "https://dev.to/matfrana/react-where-are-you-going-5284": {
+    "id": "aHR0cHM6Ly9kZXYudG8vbWF0ZnJhbmEvcmVhY3Qtd2hlcmUtYXJlLXlvdS1nb2luZy01Mjg0",
+    "title": "🔗: React, where are you going?",
+    "url": "https://dev.to/matfrana/react-where-are-you-going-5284",
+    "content_text": "🔗: React, where are you going? #WebDev https://dev.to/matfrana/react-where-are-you-going-5284",
+    "date_published": "Fri, 19 Jan 2024 17:14:32 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111784400152724803"
+    ],
+    "lastTootTimestamp": 1705694582459
   }
 }
