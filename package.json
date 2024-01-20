@@ -10,7 +10,8 @@
     "build": "ELEVENTY_PRODUCTION=true eleventy && npm run build:index",
     "build:index": "npx -y pagefind --site _site",
     "index:serve": "npx -y pagefind --site _site --serve",
-    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve"
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
+    "postbuild": "webmention _site/feeds/posts --limit 1 --send"
   },
   "keywords": [
     "11ty",
@@ -19,6 +20,7 @@
   "author": "Cory Dransfeldt",
   "license": "ISC",
   "dependencies": {
+    "@remy/webmention": "^1.5.0",
     "@zachleat/pagefind-search": "^1.0.3"
   },
   "devDependencies": {
