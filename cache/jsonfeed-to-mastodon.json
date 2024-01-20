@@ -9212,5 +9212,24 @@
       "https://social.lol/users/cory/statuses/111784400152724803"
     ],
     "lastTootTimestamp": 1705694582459
+  },
+  "https://www.anildash.com/2024/01/03/human-web-renaissance/": {
+    "id": "aHR0cHM6Ly93d3cuYW5pbGRhc2guY29tLzIwMjQvMDEvMDMvaHVtYW4td2ViLXJlbmFpc3NhbmNlLw==",
+    "title": "🔗: The Web Renaissance Takes Off",
+    "url": "https://www.anildash.com/2024/01/03/human-web-renaissance/",
+    "content_text": "🔗: The Web Renaissance Takes Off #Tech https://www.anildash.com/2024/01/03/human-web-renaissance/",
+    "date_published": "Fri, 19 Jan 2024 23:42:35 +0000",
+    "toots": []
+  },
+  "https://www.anildash.com/2024/01/19/personal-blogs-tech-news/": {
+    "id": "aHR0cHM6Ly93d3cuYW5pbGRhc2guY29tLzIwMjQvMDEvMTkvcGVyc29uYWwtYmxvZ3MtdGVjaC1uZXdzLw==",
+    "title": "🔗: Personal blogs are where tech news happens",
+    "url": "https://www.anildash.com/2024/01/19/personal-blogs-tech-news/",
+    "content_text": "🔗: Personal blogs are where tech news happens #Tech https://www.anildash.com/2024/01/19/personal-blogs-tech-news/",
+    "date_published": "Fri, 19 Jan 2024 23:42:28 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111785856097375491"
+    ],
+    "lastTootTimestamp": 1705716798441
   }
 }
