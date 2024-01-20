@@ -36,6 +36,9 @@ Software and services that I use for work and my own enjoyment.
 
 - [Albums](https://www.albumstheapp.com): an amazing music player that fits perfectly with how I listen to music and built in support for scrobbling to Last.fm.
 - [status.log](https://apps.apple.com/us/app/status-log/id6444921793): a fantastic client for status.lol that provides an outstanding native experience for the service.
+- [Working Copy](https://workingcopy.app): an incredible, fully-featured git client.
+- [Secure Shellfish](https://secureshellfish.app): the *best* ssh client for iOS, complete with Codeapaces support and Files.app integration.
+- [Runestone](https://runestone.app): a superb, lightweight text editor for iOS that works beautifully with Working Copy and Secure Shellfish via Files.app.
 - [FontCase](https://apps.apple.com/us/app/fontcase-manage-your-type/id1205074470): for managing/installing fonts.
 
 <h3>macOS</h3>
