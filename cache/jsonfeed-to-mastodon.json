@@ -9245,5 +9245,16 @@
       "https://social.lol/users/cory/statuses/111790533991789448"
     ],
     "lastTootTimestamp": 1705788177456
+  },
+  "https://app.thestorygraph.com/books/a6133c04-890d-41d5-a960-6ed0b6bf0c98": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvYTYxMzNjMDQtODkwZC00MWQ1LWE5NjAtNmVkMGI2YmYwYzk4",
+    "title": "📖: Pandora's Box: The Greed, Lust, and Lies That Broke Television",
+    "url": "https://app.thestorygraph.com/books/a6133c04-890d-41d5-a960-6ed0b6bf0c98",
+    "content_text": "📖: Pandora's Box: The Greed, Lust, and Lies That Broke Television #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/a6133c04-890d-41d5-a960-6ed0b6bf0c98",
+    "date_published": "Fri, 19 Jan 2024 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111791043677427895"
+    ],
+    "lastTootTimestamp": 1705795954625
   }
 }
