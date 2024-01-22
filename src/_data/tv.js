@@ -3,7 +3,7 @@ import EleventyFetch from '@11ty/eleventy-fetch'
 export default async function () {
   const TV_KEY = process.env.API_KEY_TRAKT
   const MOVIEDB_KEY = process.env.API_KEY_MOVIEDB
-  const url = 'https://api.trakt.tv/users/cdransf/history/shows?page=1&limit=50'
+  const url = 'https://api.trakt.tv/users/cdransf/history/shows?page=1&limit=75'
   const res = EleventyFetch(url, {
     duration: '1h',
     type: 'json',
