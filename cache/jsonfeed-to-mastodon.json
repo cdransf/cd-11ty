@@ -9278,5 +9278,16 @@
       "https://social.lol/users/cory/statuses/111808511710913213"
     ],
     "lastTootTimestamp": 1706062495658
+  },
+  "http://maerk.xyz/blog/please-delete-your-social-media-accounts/": {
+    "id": "aHR0cDovL21hZXJrLnh5ei9ibG9nL3BsZWFzZS1kZWxldGUteW91ci1zb2NpYWwtbWVkaWEtYWNjb3VudHMv",
+    "title": "🔗: Please Delete Your Social Media Accounts",
+    "url": "http://maerk.xyz/blog/please-delete-your-social-media-accounts/",
+    "content_text": "🔗: Please Delete Your Social Media Accounts #Tech  #Tech http://maerk.xyz/blog/please-delete-your-social-media-accounts/",
+    "date_published": "Wed, 24 Jan 2024 17:47:51 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111812711804822240"
+    ],
+    "lastTootTimestamp": 1706126583985
   }
 }
