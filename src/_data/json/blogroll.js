@@ -1,6 +1,9 @@
 export default [
+  { "name": "Adam Newbold", "url": "https://notes.neatnik.net", "feed": "https://notes.neatnik.net", "description": "Everything Adam makes is amazing (including omg.lol, of course)." },
   { "name": "Ashur Cabrera", "url": "https://multiline.co/mment", "feed": "https://multiline.co/mment/feed.xml", "description": "An excellent writer and a must follow for content both technical and otherwise." },
   { "name": "Chris Burnell", "url": "https://chrisburnell.com", "feed": "https://chrisburnell.com/feed.xml", "description": "A whole host of useful posts on CSS, JavaScript and other technical topics." },
+  { "name": "Chris Coyier", "url": "https://chriscoyier.net", "feed": "https://chriscoyier.net/feed/", "description": "A prolific writer and posts about a wide range of topics, including web development, CSS and more." },
+  { "name": "Chris McLeod", "url": "https://chrismcleod.dev", "feed": "https://chrismcleod.dev/feed.xml", "description": "A beautifully designed blog full of content covering everything from Warhammer to the indie web." },
   { "name": "fLaMEd", "url": "https://flamedfury.com", "feed": "https://flamedfury.com/feed.xml", "description": "Awesome retro and small web content — plus the design of the is awesome." },
   { "name": "Joe Steel", "url": "https://joe-steel.com", "feed": "https://joe-steel.com/feed.xml", "description": "Joe blogs about tech, the perpetually abysmal state of Apple's TV and movie products and numerous other things." },
   { "name": "Keenan", "url": "https://gkeenan.co/avgb", "feed": "https://gkeenan.co/avglb?format=rss", "description": "If you don't love them it's because you don't yet know them — a fantastic writer too." },
