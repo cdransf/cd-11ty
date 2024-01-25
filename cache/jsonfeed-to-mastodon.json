@@ -9289,5 +9289,16 @@
       "https://social.lol/users/cory/statuses/111812711804822240"
     ],
     "lastTootTimestamp": 1706126583985
+  },
+  "https://app.thestorygraph.com/books/65652a86-b8fa-4604-af98-406b465613a3": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvNjU2NTJhODYtYjhmYS00NjA0LWFmOTgtNDA2YjQ2NTYxM2Ez",
+    "title": "📖: The Algorithm: How AI Decides Who Gets Hired, Monitored, Promoted, and Fired and Why We Need to Fight Back Now",
+    "url": "https://app.thestorygraph.com/books/65652a86-b8fa-4604-af98-406b465613a3",
+    "content_text": "📖: The Algorithm: How AI Decides Who Gets Hired, Monitored, Promoted, and Fired and Why We Need to Fight Back Now #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/65652a86-b8fa-4604-af98-406b465613a3",
+    "date_published": "Tue, 23 Jan 2024 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111815073560448738"
+    ],
+    "lastTootTimestamp": 1706162621517
   }
 }
