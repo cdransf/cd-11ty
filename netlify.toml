@@ -59,6 +59,11 @@ for = "/contribute.json"
   Content-Type = "application/json"
 
 [[headers]]
+for = "/blogroll.opml"
+  [headers.values]
+  Content-Disposition = "attachment; filename=cory-dransfeldt-blogroll.opml"
+
+[[headers]]
     for = "/*"
     [headers.values]
     Content-Security-Policy = "upgrade-insecure-requests; block-all-mixed-content;"
