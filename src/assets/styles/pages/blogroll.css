@@ -1,5 +1,5 @@
 :root {
-  --grid: repeat(2,minmax(0,1fr));
+  --grid: repeat(1,minmax(0,1fr));
   --blog-roll-spacing: .75rem;
 }
 
