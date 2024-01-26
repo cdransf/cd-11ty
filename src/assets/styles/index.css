@@ -335,18 +335,22 @@ code {
 /* articles */
 article h2 {
   line-height: var(--line-height-2xl);
-  margin: 0 0 .25rem;
+  margin: 0 0 .125rem;
 }
 
 article [rel="author"],
 article time {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
-  margin-right: .25rem;
 }
 
 article .meta > * {
   height: 1rem;
+}
+
+article .meta .meta--icon {
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 /* icons */

@@ -22,7 +22,7 @@ image: /assets/img/ogi/links.jpg
       {{ link.date | date: "%m.%Y" }}
     </time>
     {%- if shareLink %}
-      <a class="brand-mastodon icon--small" href="{{ shareLink }}">
+      <a class="meta--icon brand-mastodon icon--small" href="{{ shareLink }}">
         {% tablericon "brand-mastodon" "Mastodon post" %}
       </a>
     {% endif -%}
