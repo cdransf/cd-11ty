@@ -7,6 +7,7 @@ export default [
   { "name": "fLaMEd", "url": "https://flamedfury.com", "feed": "https://flamedfury.com/feed.xml", "description": "Awesome retro and small web content — plus the design of the is awesome." },
   { "name": "Joe Steel", "url": "https://joe-steel.com", "feed": "https://joe-steel.com/feed.xml", "description": "Joe blogs about tech, the perpetually abysmal state of Apple's TV and movie products and numerous other things." },
   { "name": "Keenan", "url": "https://gkeenan.co/avgb", "feed": "https://gkeenan.co/avglb?format=rss", "description": "If you don't love them it's because you don't yet know them — a fantastic writer too." },
+  { "name": "Kev Quirk", "url": "https://kevq.uk", "feed": "https://kevq.uk/feed.xml", "description": "One of the admins of fosstodon.org and author of a really great blog." },
   { "name": "Łukasz Wójcik", "url": "https://lukaszwojcik.net", "feed": "https://blog.lukaszwojcik.net/full.xml", "description": "Posts about tech, web development and Eleventy. Łukasz is a talented and kind engineer." },
   { "name": "Matt Birchler", "url": "https://birchtree.me", "feed": "https://birchtree.me/rss/", "description": "Matt is exceedingly kind and also posts about Apple, tech and other topics." },
   { "name": "Mike Haynes", "url": "https://crashthearcade.com", "feed": "https://crashthearcade.com/feed/rss", "description": "A beautifully-designed site and I enjoy Mike's commentary and writing." },
