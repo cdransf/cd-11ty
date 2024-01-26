@@ -9334,7 +9334,10 @@
     "url": "https://www.spacebar.news/stop-using-opera-browser/",
     "content_text": "🔗: Stop using Opera Browser and Opera GX #Tech https://www.spacebar.news/stop-using-opera-browser/",
     "date_published": "Thu, 25 Jan 2024 21:39:52 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111823567384580875"
+    ],
+    "lastTootTimestamp": 1706292227027
   },
   "https://coryd.dev/now?ts=1706184000000": {
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MDYxODQwMDAwMDA=",
@@ -9346,5 +9349,13 @@
       "https://social.lol/users/cory/statuses/111823103354630856"
     ],
     "lastTootTimestamp": 1706285146508
+  },
+  "https://jakelazaroff.com/words/the-website-vs-web-app-dichotomy-doesnt-exist/": {
+    "id": "aHR0cHM6Ly9qYWtlbGF6YXJvZmYuY29tL3dvcmRzL3RoZS13ZWJzaXRlLXZzLXdlYi1hcHAtZGljaG90b215LWRvZXNudC1leGlzdC8=",
+    "title": "🔗: The Website vs. Web App Dichotomy Doesn't Exist",
+    "url": "https://jakelazaroff.com/words/the-website-vs-web-app-dichotomy-doesnt-exist/",
+    "content_text": "🔗: The Website vs. Web App Dichotomy Doesn't Exist #WebDev https://jakelazaroff.com/words/the-website-vs-web-app-dichotomy-doesnt-exist/",
+    "date_published": "Fri, 26 Jan 2024 16:30:51 +0000",
+    "toots": []
   }
 }
