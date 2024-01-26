@@ -9367,6 +9367,17 @@
     "url": "https://zachholman.com/posts/only-90s-developers/",
     "content_text": "🔗: Only 90s Web Developers Remember This #WebDev https://zachholman.com/posts/only-90s-developers/",
     "date_published": "Fri, 26 Jan 2024 18:10:39 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111824508784338973"
+    ],
+    "lastTootTimestamp": 1706306591646
+  },
+  "https://trakt.tv/movies/aquaman-2018": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvYXF1YW1hbi0yMDE4",
+    "title": "🎥: Aquaman",
+    "url": "https://trakt.tv/movies/aquaman-2018",
+    "content_text": "🎥: Aquaman #Movies #Watching #Trakt https://trakt.tv/movies/aquaman-2018",
+    "date_published": "Fri, 26 Jan 2024 20:25:58 +0000",
     "toots": []
   }
 }
