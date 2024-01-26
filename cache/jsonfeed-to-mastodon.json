@@ -9306,15 +9306,18 @@
     "title": "🔗: Concatenating text",
     "url": "https://johan.hal.se/wrote/2024/01/24/concatenating-text/",
     "content_text": "🔗: Concatenating text #WebDev https://johan.hal.se/wrote/2024/01/24/concatenating-text/",
-    "date_published": "Fri, 26 Jan 2024 15:27:04 +0000",
-    "toots": []
+    "date_published": "Fri, 26 Jan 2024 18:11:23 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111824036136956813"
+    ],
+    "lastTootTimestamp": 1706299379590
   },
   "https://joanwestenberg.com/blog/b1yrhi9kgm2ov15djytwh14xnvfzjl": {
     "id": "aHR0cHM6Ly9qb2Fud2VzdGVuYmVyZy5jb20vYmxvZy9iMXlyaGk5a2dtMm92MTVkanl0d2gxNHhudmZ6amw=",
     "title": "🔗: Internet access is a human right.",
     "url": "https://joanwestenberg.com/blog/b1yrhi9kgm2ov15djytwh14xnvfzjl",
     "content_text": "🔗: Internet access is a human right. #Tech https://joanwestenberg.com/blog/b1yrhi9kgm2ov15djytwh14xnvfzjl",
-    "date_published": "Fri, 26 Jan 2024 03:48:38 +0000",
+    "date_published": "Fri, 26 Jan 2024 18:12:11 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111823093589980004"
     ],
@@ -9333,7 +9336,7 @@
     "title": "🔗: Stop using Opera Browser and Opera GX",
     "url": "https://www.spacebar.news/stop-using-opera-browser/",
     "content_text": "🔗: Stop using Opera Browser and Opera GX #Tech https://www.spacebar.news/stop-using-opera-browser/",
-    "date_published": "Thu, 25 Jan 2024 21:39:52 +0000",
+    "date_published": "Fri, 26 Jan 2024 18:21:25 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111823567384580875"
     ],
@@ -9356,6 +9359,14 @@
     "url": "https://jakelazaroff.com/words/the-website-vs-web-app-dichotomy-doesnt-exist/",
     "content_text": "🔗: The Website vs. Web App Dichotomy Doesn't Exist #WebDev https://jakelazaroff.com/words/the-website-vs-web-app-dichotomy-doesnt-exist/",
     "date_published": "Fri, 26 Jan 2024 16:30:51 +0000",
+    "toots": []
+  },
+  "https://zachholman.com/posts/only-90s-developers/": {
+    "id": "aHR0cHM6Ly96YWNoaG9sbWFuLmNvbS9wb3N0cy9vbmx5LTkwcy1kZXZlbG9wZXJzLw==",
+    "title": "🔗: Only 90s Web Developers Remember This",
+    "url": "https://zachholman.com/posts/only-90s-developers/",
+    "content_text": "🔗: Only 90s Web Developers Remember This #WebDev https://zachholman.com/posts/only-90s-developers/",
+    "date_published": "Fri, 26 Jan 2024 18:10:39 +0000",
     "toots": []
   }
 }
