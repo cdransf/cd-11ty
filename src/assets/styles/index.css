@@ -20,8 +20,6 @@ html {
 
 p {
   line-height: var(--line-height-lg);
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 blockquote {
@@ -29,10 +27,14 @@ blockquote {
   font-weight: 700;
   font-size: var(--font-size-lg);
   line-height: var(--line-height-lg);
-  margin: 1.25rem 0;
   padding-left: .875rem;
   border-left: .25rem solid var(--gray-medium);
   word-break: break-word;
+}
+
+p,
+blockquote {
+  margin: 1.25rem 0;
 }
 
 :is(body, html, nav .tags, nav .search) svg {
@@ -342,15 +344,12 @@ article [rel="author"],
 article time {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
-}
-
-article .meta > * {
   height: 1rem;
+  margin-right: .25rem;
 }
 
-article .meta .meta--icon {
-  display: inline-flex;
-  vertical-align: middle;
+article [rel="author"] {
+  margin-bottom: .25rem;
 }
 
 /* icons */
@@ -369,6 +368,11 @@ svg {
 
 .icon--spin > svg {
   animation: spin 1s linear infinite;
+}
+
+.icon--center__vertical > svg {
+  display: inline;
+  vertical-align: middle;
 }
 
 /* lists */

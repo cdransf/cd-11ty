@@ -12,17 +12,17 @@ image: /assets/img/ogi/links.jpg
   <a class="no-underline" href="{{ link.url }}">
     <h2 class="flex--centered" data-pagefind-meta="title">{{ link.title }}</h2>
   </a>
-  <div class="meta">
-    {%- if link.author and link.author != 'undefined' %}
-    <span rel="author">
-      {{ link.author }} •
-    </span>
-    {% endif -%}
+  {%- if link.author and link.author != 'undefined' %}
+  <div rel="author">
+    {{ link.author }}
+  </div>
+  {% endif -%}
+  <div class="flex--centered">
     <time class="dt-published" datetime="{{ link.date }}">
       {{ link.date | date: "%m.%Y" }}
     </time>
     {%- if shareLink %}
-      <a class="meta--icon brand-mastodon icon--small" href="{{ shareLink }}">
+      <a class="brand-mastodon icon--small icon--center__vertical" href="{{ shareLink }}">
         {% tablericon "brand-mastodon" "Mastodon post" %}
       </a>
     {% endif -%}
