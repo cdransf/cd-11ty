@@ -3,6 +3,7 @@ export default {
   accessibility: '#Accessibility',
   development: '#WebDev',
   books: '#Books',
+  css: '#CSS',
   eleventy: '#Eleventy',
   email: '#Email',
   fastmail: '#Email',
