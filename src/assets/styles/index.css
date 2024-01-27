@@ -161,7 +161,7 @@ th {
 /* header */
 .main__title {
   width: 100%;
-  padding-top: 1.25rem;
+  padding-top: 2rem;
 }
 
 .main__title h1 {
@@ -477,7 +477,6 @@ footer nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 2.5rem;
   }
 
   .main__title h1 {
