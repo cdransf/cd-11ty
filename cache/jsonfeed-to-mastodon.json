@@ -9406,5 +9406,16 @@
     "content_text": "📝: Mobile web development with Codespaces #WebDev #iOS #Apple https://coryd.dev/posts/2024/mobile-web-development-with-codespaces/",
     "date_published": "Fri, 26 Jan 2024 00:00:00 +0000",
     "toots": []
+  },
+  "https://begin.com/blog/posts/2024-01-26-removing-react-is-just-weakness-leaving-your-codebase": {
+    "id": "aHR0cHM6Ly9iZWdpbi5jb20vYmxvZy9wb3N0cy8yMDI0LTAxLTI2LXJlbW92aW5nLXJlYWN0LWlzLWp1c3Qtd2Vha25lc3MtbGVhdmluZy15b3VyLWNvZGViYXNl",
+    "title": "🔗: Removing React is just weakness leaving your codebase",
+    "url": "https://begin.com/blog/posts/2024-01-26-removing-react-is-just-weakness-leaving-your-codebase",
+    "content_text": "🔗: Removing React is just weakness leaving your codebase #WebDev https://begin.com/blog/posts/2024-01-26-removing-react-is-just-weakness-leaving-your-codebase",
+    "date_published": "Sat, 27 Jan 2024 01:28:03 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111825467494491305"
+    ],
+    "lastTootTimestamp": 1706321220499
   }
 }
