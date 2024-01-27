@@ -161,7 +161,7 @@ th {
 /* header */
 .main__title {
   width: 100%;
-  padding-top: 1.25rem;
+  padding-top: 2rem;
 }
 
 .main__title h1 {
@@ -233,7 +233,7 @@ nav ul li .active svg:hover {
 
 /* layout */
 .default__wrapper {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .main__wrapper {
@@ -477,7 +477,6 @@ footer nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 2.5rem;
   }
 
   .main__title h1 {
@@ -486,10 +485,6 @@ footer nav {
 
   .now__topper h2 {
     font-size: var(--font-size-2xl);
-  }
-  
-  .default__wrapper {
-    padding-top: 2rem;
   }
 
   main {
