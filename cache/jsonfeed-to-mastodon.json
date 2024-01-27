@@ -9411,7 +9411,10 @@
     "url": "https://coryd.dev/posts/2024/mobile-web-development-with-codespaces/",
     "content_text": "📝: Mobile web development with Codespaces #WebDev #iOS #Apple https://coryd.dev/posts/2024/mobile-web-development-with-codespaces/",
     "date_published": "Fri, 26 Jan 2024 00:00:00 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111826867790914908"
+    ],
+    "lastTootTimestamp": 1706342587227
   },
   "https://begin.com/blog/posts/2024-01-26-removing-react-is-just-weakness-leaving-your-codebase": {
     "id": "aHR0cHM6Ly9iZWdpbi5jb20vYmxvZy9wb3N0cy8yMDI0LTAxLTI2LXJlbW92aW5nLXJlYWN0LWlzLWp1c3Qtd2Vha25lc3MtbGVhdmluZy15b3VyLWNvZGViYXNl",
