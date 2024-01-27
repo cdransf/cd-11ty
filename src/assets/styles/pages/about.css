@@ -1,11 +1,15 @@
+:root {
+  --avatar-size: 16rem;
+}
+
 .avatar__wrapper {
   width: 100%;
   margin-bottom: 1.5rem;
 }
 
 .avatar__wrapper .avatar__wrapper--interior {
-  width: 16rem;
-  height: 16rem;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
   border: 1px solid var(--accent-color);
   border-radius: var(--rounded-full);
   display: flex;
@@ -25,8 +29,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .avatar__wrapper .avatar__wrapper--interior {
-    width: 24rem;
-    height: 24rem;
+  :root {
+    --avatar-size: 24rem;
   }
 }
