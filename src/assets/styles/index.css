@@ -179,6 +179,11 @@ nav ul {
   list-style: none;
 }
 
+nav ul li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 nav ul li:not(:last-child) {
   margin-right: 1rem;
 }
@@ -477,8 +482,6 @@ footer nav {
 
   .main__title h1 {
     padding-bottom: 0;
-    font-size: var(--font-size-3xl);
-    line-height: var(--line-height-3xl);
   }
 
   .now__topper h2 {
@@ -489,6 +492,7 @@ footer nav {
     max-width: 768px;
   }
 
+  .main__title h1,
   .page__header {
     font-size: var(--font-size-3xl);
     line-height: var(--line-height-3xl);

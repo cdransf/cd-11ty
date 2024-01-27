@@ -46,6 +46,8 @@ export default async function (eleventyConfig) {
 
   // quiet build output
   eleventyConfig.setQuietMode(true)
+
+  // template options
   eleventyConfig.setLiquidOptions({
     jsTruthy: true,
   })
