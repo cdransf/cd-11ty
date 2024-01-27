@@ -233,7 +233,7 @@ nav ul li .active svg:hover {
 
 /* layout */
 .default__wrapper {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .main__wrapper {
@@ -486,6 +486,10 @@ footer nav {
 
   .now__topper h2 {
     font-size: var(--font-size-2xl);
+  }
+  
+  .default__wrapper {
+    padding-top: 2rem;
   }
 
   main {
