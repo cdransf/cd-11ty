@@ -72,6 +72,10 @@
   text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
 }
 
+.media__grid .item__meta-text .header {
+  font-weight: 700;
+}
+
 .media__grid .item__image,
 .media__grid .item__image > * {
   width: 100%;
