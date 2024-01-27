@@ -9379,5 +9379,32 @@
     "content_text": "🎥: Aquaman #Movies #Watching #Trakt https://trakt.tv/movies/aquaman-2018",
     "date_published": "Fri, 26 Jan 2024 20:25:58 +0000",
     "toots": []
+  },
+  "https://joe-steel.com/2024-01-26-Pick-Your-Poisonous-App-Store.html": {
+    "id": "aHR0cHM6Ly9qb2Utc3RlZWwuY29tLzIwMjQtMDEtMjYtUGljay1Zb3VyLVBvaXNvbm91cy1BcHAtU3RvcmUuaHRtbA==",
+    "title": "🔗: Pick Your Poisonous App Store",
+    "url": "https://joe-steel.com/2024-01-26-Pick-Your-Poisonous-App-Store.html",
+    "content_text": "🔗: Pick Your Poisonous App Store #iOS #Apple https://joe-steel.com/2024-01-26-Pick-Your-Poisonous-App-Store.html",
+    "date_published": "Fri, 26 Jan 2024 22:25:08 +0000",
+    "toots": []
+  },
+  "https://coryd.dev/posts/2024/you-dont-need-a-framework-for-that/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC95b3UtZG9udC1uZWVkLWEtZnJhbWV3b3JrLWZvci10aGF0Lw==",
+    "title": "📝: You don't need a framework for that",
+    "url": "https://coryd.dev/posts/2024/you-dont-need-a-framework-for-that/",
+    "content_text": "📝: You don't need a framework for that #WebDev #CSS #JavaScript https://coryd.dev/posts/2024/you-dont-need-a-framework-for-that/",
+    "date_published": "Fri, 26 Jan 2024 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111825008065721001"
+    ],
+    "lastTootTimestamp": 1706314210055
+  },
+  "https://coryd.dev/posts/2024/mobile-web-development-with-codespaces/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9tb2JpbGUtd2ViLWRldmVsb3BtZW50LXdpdGgtY29kZXNwYWNlcy8=",
+    "title": "📝: Mobile web development with Codespaces",
+    "url": "https://coryd.dev/posts/2024/mobile-web-development-with-codespaces/",
+    "content_text": "📝: Mobile web development with Codespaces #WebDev #iOS #Apple https://coryd.dev/posts/2024/mobile-web-development-with-codespaces/",
+    "date_published": "Fri, 26 Jan 2024 00:00:00 +0000",
+    "toots": []
   }
 }
