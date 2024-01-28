@@ -9432,5 +9432,16 @@
       "https://social.lol/users/cory/statuses/111825467494491305"
     ],
     "lastTootTimestamp": 1706321220499
+  },
+  "https://hamatti.org/posts/please-dont-force-me-to-log-in/": {
+    "id": "aHR0cHM6Ly9oYW1hdHRpLm9yZy9wb3N0cy9wbGVhc2UtZG9udC1mb3JjZS1tZS10by1sb2ctaW4v",
+    "title": "🔗: Please, don’t force me to log in",
+    "url": "https://hamatti.org/posts/please-dont-force-me-to-log-in/",
+    "content_text": "🔗: Please, don’t force me to log in #Tech https://hamatti.org/posts/please-dont-force-me-to-log-in/",
+    "date_published": "Sun, 28 Jan 2024 17:19:27 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111835360492125433"
+    ],
+    "lastTootTimestamp": 1706472175556
   }
 }
