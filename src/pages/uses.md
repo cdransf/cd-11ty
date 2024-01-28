@@ -28,13 +28,13 @@ Software and services that I use for work and my own enjoyment.
 <h3>macOS + iOS</h3>
 
 - [Bear](https://bear.app): native, fast and flexible — it's a breeze to use across Apple's ecosystem.
+- [Doppler](https://brushedtype.com/doppler): a beautiful, simple native music player that supports scrobbling to Last.fm.
 - [Ivory](https://tapbots.com/ivory): a beautifully designed and extremely well built Mastodon app — I use it as my go-to client across all of my devices.
 - [Parcel](https://parcelapp.net): the most flexible and reliable package tracker for Apple's ecosystem.
 - [Flighty](https://flightyapp.com): I don't travel a ton but Flighty makes doing so a fair bit less stressful.
 
 <h3>iOS</h3>
 
-- [Albums](https://www.albumstheapp.com): an amazing music player that fits perfectly with how I listen to music and built in support for scrobbling to Last.fm.
 - [status.log](https://apps.apple.com/us/app/status-log/id6444921793): a fantastic client for status.lol that provides an outstanding native experience for the service.
 - [Working Copy](https://workingcopy.app): an incredible, fully-featured git client.
 - [Secure Shellfish](https://secureshellfish.app): the *best* ssh client for iOS, complete with Codeapaces support and Files.app integration.
