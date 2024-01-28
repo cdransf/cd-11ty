@@ -349,7 +349,6 @@ article [rel="author"],
 article time {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
-  height: 1rem;
   margin-right: .25rem;
 }
 
@@ -495,6 +494,12 @@ footer nav {
   .page__header {
     font-size: var(--font-size-3xl);
     line-height: var(--line-height-3xl);
+  }
+
+  /* articles */
+  article [rel="author"],
+  article time {
+    height: 1rem;
   }
 
   /* lists */
