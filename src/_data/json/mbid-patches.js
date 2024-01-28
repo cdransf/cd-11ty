@@ -29,6 +29,7 @@ export default {
   replicant: '693adda8-6c52-466e-8ea0-e0e42679d320',
   rush: '534ee493-bfac-4575-a44a-0ae41e2c3fe4',
   'soul blind': '94dba818-73e7-4ee1-a8ed-894cef10552b',
+  sovereign: '8e5bd67e-9e31-4e2f-ad18-a3f6508f495e',
   undergang: '6853b4ec-8cd4-46a4-b970-8331d4587c43',
   'wolves in the throne room': 'e9452446-7702-4853-96ce-5dfe6748d3fb',
   worm: '6313658e-cd68-4c81-9778-17ce3825748e',
