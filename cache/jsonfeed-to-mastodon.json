@@ -9443,5 +9443,24 @@
       "https://social.lol/users/cory/statuses/111835360492125433"
     ],
     "lastTootTimestamp": 1706472175556
+  },
+  "https://blog.carlana.net/post/2023/web-component-alternative-futures/": {
+    "id": "aHR0cHM6Ly9ibG9nLmNhcmxhbmEubmV0L3Bvc3QvMjAyMy93ZWItY29tcG9uZW50LWFsdGVybmF0aXZlLWZ1dHVyZXMv",
+    "title": "🔗: What We Need Instead of “Web Components”",
+    "url": "https://blog.carlana.net/post/2023/web-component-alternative-futures/",
+    "content_text": "🔗: What We Need Instead of “Web Components” #WebDev https://blog.carlana.net/post/2023/web-component-alternative-futures/",
+    "date_published": "Sun, 28 Jan 2024 19:19:22 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111835833957847284"
+    ],
+    "lastTootTimestamp": 1706479400063
+  },
+  "https://app.thestorygraph.com/books/111e9397-9082-4a04-b006-ddfdc2ebd5e1": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvMTExZTkzOTctOTA4Mi00YTA0LWIwMDYtZGRmZGMyZWJkNWUx",
+    "title": "📖: Your Face Belongs to Us: A Secretive Startup's Quest to End Privacy as We Know It",
+    "url": "https://app.thestorygraph.com/books/111e9397-9082-4a04-b006-ddfdc2ebd5e1",
+    "content_text": "📖: Your Face Belongs to Us: A Secretive Startup's Quest to End Privacy as We Know It #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/111e9397-9082-4a04-b006-ddfdc2ebd5e1",
+    "date_published": "Sat, 27 Jan 2024 16:00:00 +0000",
+    "toots": []
   }
 }
