@@ -17,11 +17,15 @@
   flex-direction: column;
 }
 
-.blog__banner > h4,
+.blog__banner > strong,
 .blog__banner > p,
 .blog__banner .meta {
   margin-top: 0;
   margin-bottom: var(--blog-roll-spacing);
+}
+
+.blog__banner > strong {
+  font-size: var(--font-size-lg);
 }
 
 @media screen and (min-width: 768px) {
