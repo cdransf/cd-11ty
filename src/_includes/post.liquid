@@ -3,6 +3,8 @@ layout: main
 schema: blog
 ---
 {% render "partials/header.liquid", meta: meta, page: page, nav: nav %}
+{%- capture postUrl %}{{ meta.url }}{{ page.url }}{% endcapture -%}
+{%- assign shareLink = postUrl | findPost: linkPosts -%}
 {% capture css %}
   {% render "../assets/styles/plugins/prism.css" %}
   {% render "../assets/styles/pages/post.css" %}
@@ -12,7 +14,14 @@ schema: blog
   <article class="h-entry" data-pagefind-body>
     <h2 class="p-name" data-pagefind-meta="title">{{ title }}</h2>
     <span class="p-author h-card hidden">{{ meta.author }}</span>
-    <time class="dt-published" datetime="{{ date }}">{{ date | readableDate }}</time>
+    <div class="flex--centered">
+      <time class="dt-published" datetime="{{ date }}">{{ date | readableDate }}</time>
+      {%- if shareLink %}
+        <a class="brand-mastodon icon--small icon--center__vertical" href="{{ shareLink }}">
+          {% tablericon "brand-mastodon" "Mastodon post" %}
+        </a>
+      {% endif -%}
+    </div>
     <div class="p-summary hidden">{{ post_excerpt }}</div>
     <div class="e-content">
       {% render "partials/banner-old-post.liquid", date: date %}
