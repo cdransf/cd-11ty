@@ -9465,5 +9465,32 @@
       "https://social.lol/users/cory/statuses/111836335761047887"
     ],
     "lastTootTimestamp": 1706487057006
+  },
+  "https://darkvisitors.com/": {
+    "id": "aHR0cHM6Ly9kYXJrdmlzaXRvcnMuY29tLw==",
+    "title": "🔗: A List of Known AI Agents on the Internet",
+    "url": "https://darkvisitors.com/",
+    "content_text": "🔗: A List of Known AI Agents on the Internet #Tech https://darkvisitors.com/",
+    "date_published": "Mon, 29 Jan 2024 18:36:24 +0000",
+    "toots": []
+  },
+  "https://jakelazaroff.com/words/the-web-component-success-story/": {
+    "id": "aHR0cHM6Ly9qYWtlbGF6YXJvZmYuY29tL3dvcmRzL3RoZS13ZWItY29tcG9uZW50LXN1Y2Nlc3Mtc3Rvcnkv",
+    "title": "🔗: The Web Component Success Story",
+    "url": "https://jakelazaroff.com/words/the-web-component-success-story/",
+    "content_text": "🔗: The Web Component Success Story #WebDev https://jakelazaroff.com/words/the-web-component-success-story/",
+    "date_published": "Mon, 29 Jan 2024 16:56:40 +0000",
+    "toots": []
+  },
+  "https://macwright.com/2024/01/24/on-web-components.html": {
+    "id": "aHR0cHM6Ly9tYWN3cmlnaHQuY29tLzIwMjQvMDEvMjQvb24td2ViLWNvbXBvbmVudHMuaHRtbA==",
+    "title": "🔗: On Web Components",
+    "url": "https://macwright.com/2024/01/24/on-web-components.html",
+    "content_text": "🔗: On Web Components #WebDev https://macwright.com/2024/01/24/on-web-components.html",
+    "date_published": "Mon, 29 Jan 2024 16:50:46 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111841024428779613"
+    ],
+    "lastTootTimestamp": 1706558600360
   }
 }
