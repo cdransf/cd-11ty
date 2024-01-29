@@ -13,7 +13,6 @@
   padding: var(--blog-roll-spacing);
   border: 1px solid var(--gray-light);
   border-radius: var(--rounded-lg);
-  background-color: var(--gray-lighter);
   display: flex;
   flex-direction: column;
 }

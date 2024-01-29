@@ -3,7 +3,6 @@
   padding: .75rem;
   border: 1px solid var(--gray-light);
   border-radius: var(--rounded-lg);
-  background-color: var(--gray-lighter);
 }
 
 .banner__old-post p {
