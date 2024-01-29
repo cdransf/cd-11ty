@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "4.13.2",
+  "version": "4.14.0",
   "description": "The source for my personal site. Built using 11ty and hosted on Netlify.",
   "type": "module",
   "scripts": {
@@ -11,7 +11,7 @@
     "build:index": "npx -y pagefind --site _site",
     "index:serve": "npx -y pagefind --site _site --serve",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
-    "postbuild": "webmention _site/feeds/posts --limit 1 --send"
+    "postbuild": "webmention _site/feeds/posts --limit 1 --send && webmention _site/feeds/links --limit 1 --send"
   },
   "keywords": [
     "11ty",
