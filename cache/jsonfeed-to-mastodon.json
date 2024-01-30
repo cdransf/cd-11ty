@@ -9498,5 +9498,24 @@
       "https://social.lol/users/cory/statuses/111841024428779613"
     ],
     "lastTootTimestamp": 1706558600360
+  },
+  "https://chrismcleod.dev/blog/visiting-websites/": {
+    "id": "aHR0cHM6Ly9jaHJpc21jbGVvZC5kZXYvYmxvZy92aXNpdGluZy13ZWJzaXRlcy8=",
+    "title": "🔗: Visiting Websites",
+    "url": "https://chrismcleod.dev/blog/visiting-websites/",
+    "content_text": "🔗: Visiting Websites #Tech https://chrismcleod.dev/blog/visiting-websites/",
+    "date_published": "Tue, 30 Jan 2024 17:49:41 +0000",
+    "toots": []
+  },
+  "https://werd.io/2024/stripping-the-web-of-its-humanity": {
+    "id": "aHR0cHM6Ly93ZXJkLmlvLzIwMjQvc3RyaXBwaW5nLXRoZS13ZWItb2YtaXRzLWh1bWFuaXR5",
+    "title": "🔗: Stripping the web of its humanity",
+    "url": "https://werd.io/2024/stripping-the-web-of-its-humanity",
+    "content_text": "🔗: Stripping the web of its humanity #Tech  #Privacy https://werd.io/2024/stripping-the-web-of-its-humanity",
+    "date_published": "Tue, 30 Jan 2024 17:27:06 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111846685753666290"
+    ],
+    "lastTootTimestamp": 1706644985303
   }
 }
