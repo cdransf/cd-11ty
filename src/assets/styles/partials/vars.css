@@ -52,7 +52,7 @@
   --webrings: #ec8fd0;
 
   /* fonts */
-  --font-sans: silka, 'serif-fallback', system-ui, sans-serif;
+  --font-sans: silka, Inter, Roboto, 'Helvetica Neue', system-ui, sans-serif;
   --font-mono: ui-monospace, monospace;
 
   /* text */
