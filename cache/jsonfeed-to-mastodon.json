@@ -9498,5 +9498,49 @@
       "https://social.lol/users/cory/statuses/111841024428779613"
     ],
     "lastTootTimestamp": 1706558600360
+  },
+  "https://chrismcleod.dev/blog/visiting-websites/": {
+    "id": "aHR0cHM6Ly9jaHJpc21jbGVvZC5kZXYvYmxvZy92aXNpdGluZy13ZWJzaXRlcy8=",
+    "title": "🔗: Visiting Websites",
+    "url": "https://chrismcleod.dev/blog/visiting-websites/",
+    "content_text": "🔗: Visiting Websites #Tech https://chrismcleod.dev/blog/visiting-websites/",
+    "date_published": "Tue, 30 Jan 2024 17:49:41 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111847157226837230"
+    ],
+    "lastTootTimestamp": 1706652179426
+  },
+  "https://werd.io/2024/stripping-the-web-of-its-humanity": {
+    "id": "aHR0cHM6Ly93ZXJkLmlvLzIwMjQvc3RyaXBwaW5nLXRoZS13ZWItb2YtaXRzLWh1bWFuaXR5",
+    "title": "🔗: Stripping the web of its humanity",
+    "url": "https://werd.io/2024/stripping-the-web-of-its-humanity",
+    "content_text": "🔗: Stripping the web of its humanity #Tech  #Privacy https://werd.io/2024/stripping-the-web-of-its-humanity",
+    "date_published": "Tue, 30 Jan 2024 17:27:06 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111846685753666290"
+    ],
+    "lastTootTimestamp": 1706644985303
+  },
+  "https://gomakethings.com/the-elevator-pitch-for-web-components/": {
+    "id": "aHR0cHM6Ly9nb21ha2V0aGluZ3MuY29tL3RoZS1lbGV2YXRvci1waXRjaC1mb3Itd2ViLWNvbXBvbmVudHMv",
+    "title": "🔗: The elevator pitch for Web Components",
+    "url": "https://gomakethings.com/the-elevator-pitch-for-web-components/",
+    "content_text": "🔗: The elevator pitch for Web Components #JavaScript #WebDev https://gomakethings.com/the-elevator-pitch-for-web-components/",
+    "date_published": "Tue, 30 Jan 2024 21:27:11 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111847658729272819"
+    ],
+    "lastTootTimestamp": 1706659831747
+  },
+  "https://www.wheresyoured.at/how/?ref=ed-zitrons-wheres-your-ed-at-newsletter": {
+    "id": "aHR0cHM6Ly93d3cud2hlcmVzeW91cmVkLmF0L2hvdy8/cmVmPWVkLXppdHJvbnMtd2hlcmVzLXlvdXItZWQtYXQtbmV3c2xldHRlcg==",
+    "title": "🔗: How Tech Outstayed Its Welcome",
+    "url": "https://www.wheresyoured.at/how/?ref=ed-zitrons-wheres-your-ed-at-newsletter",
+    "content_text": "🔗: How Tech Outstayed Its Welcome #Tech https://www.wheresyoured.at/how/?ref=ed-zitrons-wheres-your-ed-at-newsletter",
+    "date_published": "Tue, 30 Jan 2024 20:56:17 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111848122027254860"
+    ],
+    "lastTootTimestamp": 1706666901107
   }
 }
