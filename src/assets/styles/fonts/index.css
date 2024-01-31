@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'silka';
+  src: url('/assets/fonts/silka/black.woff2') format('woff2'),;
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'silka';
+  src: url('/assets/fonts/silka/bold.woff2') format('woff2'),;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'silka';
+  src: url('/assets/fonts/silka/regular.woff2') format('woff2'),;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'serif-fallback';
+  src: local('Helvetica Neue');
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
