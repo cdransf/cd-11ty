@@ -9560,7 +9560,10 @@
     "url": "https://httpster.io/article/webfonts-and-layout-shifting/",
     "content_text": "🔗: Webfonts and layout shifting #WebDev https://httpster.io/article/webfonts-and-layout-shifting/",
     "date_published": "Wed, 31 Jan 2024 19:56:20 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111852873565875155"
+    ],
+    "lastTootTimestamp": 1706739403815
   },
   "https://aworkinglibrary.com/writing/unified-theory-of------": {
     "id": "aHR0cHM6Ly9hd29ya2luZ2xpYnJhcnkuY29tL3dyaXRpbmcvdW5pZmllZC10aGVvcnktb2YtLS0tLS0=",
@@ -9583,5 +9586,16 @@
       "https://social.lol/users/cory/statuses/111852819924285101"
     ],
     "lastTootTimestamp": 1706738585343
+  },
+  "https://coryd.dev/posts/2024/i-dont-want-anything-your-ai-generates/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9pLWRvbnQtd2FudC1hbnl0aGluZy15b3VyLWFpLWdlbmVyYXRlcy8=",
+    "title": "📝: I don't want anything your AI generates",
+    "url": "https://coryd.dev/posts/2024/i-dont-want-anything-your-ai-generates/",
+    "content_text": "📝: I don't want anything your AI generates #Tech https://coryd.dev/posts/2024/i-dont-want-anything-your-ai-generates/",
+    "date_published": "Wed, 31 Jan 2024 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111852915463071233"
+    ],
+    "lastTootTimestamp": 1706740043136
   }
 }
