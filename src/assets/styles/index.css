@@ -283,7 +283,7 @@ footer nav:last-child {
   padding-bottom: 2rem;
 }
 
-footer nav:last-child span {
+footer nav:last-child span:not(.active) {
   margin-left: .375rem;
   margin-right: .375rem;
 }
