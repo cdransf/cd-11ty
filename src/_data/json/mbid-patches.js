@@ -15,6 +15,7 @@ export default {
   'home is where': '76ead0bf-51e0-43c8-ae8f-59caefdd84a2',
   immolation: 'c373c7f0-fddf-4c04-a327-19dd83590753',
   inanna: 'b7200279-81b3-418a-8c2c-25b189c40843',
+  'khthoniik cerviiks': '17098248-792c-4396-b784-0ba0ed3314d0',
   krallice: 'b4e4b359-76a3-447e-be1d-80a24887134e',
   'la dispute': '2ec89bcc-5bf9-4d2a-ac5e-44b7496d115a',
   nomeansno: '37e9d7b2-7779-41b2-b2eb-3685351caad3',
