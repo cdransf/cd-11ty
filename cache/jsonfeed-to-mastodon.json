@@ -9520,5 +9520,24 @@
       "https://social.lol/users/cory/statuses/111846685753666290"
     ],
     "lastTootTimestamp": 1706644985303
+  },
+  "https://gomakethings.com/the-elevator-pitch-for-web-components/": {
+    "id": "aHR0cHM6Ly9nb21ha2V0aGluZ3MuY29tL3RoZS1lbGV2YXRvci1waXRjaC1mb3Itd2ViLWNvbXBvbmVudHMv",
+    "title": "🔗: The elevator pitch for Web Components",
+    "url": "https://gomakethings.com/the-elevator-pitch-for-web-components/",
+    "content_text": "🔗: The elevator pitch for Web Components #JavaScript #WebDev https://gomakethings.com/the-elevator-pitch-for-web-components/",
+    "date_published": "Tue, 30 Jan 2024 21:27:11 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111847658729272819"
+    ],
+    "lastTootTimestamp": 1706659831747
+  },
+  "https://www.wheresyoured.at/how/?ref=ed-zitrons-wheres-your-ed-at-newsletter": {
+    "id": "aHR0cHM6Ly93d3cud2hlcmVzeW91cmVkLmF0L2hvdy8/cmVmPWVkLXppdHJvbnMtd2hlcmVzLXlvdXItZWQtYXQtbmV3c2xldHRlcg==",
+    "title": "🔗: How Tech Outstayed Its Welcome",
+    "url": "https://www.wheresyoured.at/how/?ref=ed-zitrons-wheres-your-ed-at-newsletter",
+    "content_text": "🔗: How Tech Outstayed Its Welcome #Tech https://www.wheresyoured.at/how/?ref=ed-zitrons-wheres-your-ed-at-newsletter",
+    "date_published": "Tue, 30 Jan 2024 20:56:17 +0000",
+    "toots": []
   }
 }
