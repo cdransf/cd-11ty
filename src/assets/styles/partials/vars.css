@@ -52,8 +52,8 @@
   --webrings: #ec8fd0;
 
   /* fonts */
-  --font-sans: silka, 'serif-fallback', system-ui, sans-serif;
-  --font-mono: ui-monospace, monospace;
+  --font-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;
 
   /* text */
   --font-size-xs: .75rem;
