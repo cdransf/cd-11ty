@@ -92,6 +92,9 @@
   /* svgs */
   --stroke-width-default: 1.4;
   --stroke-width-bold: 2;
+
+  /* input accent color */
+  accent-color: var(--accent-color);
 }
 
 /* dark theme */
