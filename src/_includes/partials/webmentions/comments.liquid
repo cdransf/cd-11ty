@@ -8,7 +8,7 @@
             <div class="avatar__wrapper flex--centered">
               <img
                 src="{{ mention.author.photo }}"
-                alt="{{ mention.author.name }}"
+                alt="{{ mention.author.name | escape }}"
                 class="avatar__image"
                 loading="lazy"
                 onerror="this.onerror=null; this.src='/assets/img/icons/user.webp'" />
