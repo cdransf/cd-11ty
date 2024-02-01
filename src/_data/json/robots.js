@@ -2,6 +2,7 @@ export default [
   'AdsBot-Google',
   'Amazonbot',
   'anthropic-ai',
+  'Arc',
   'ArcMobile2',
   'Bytespider',
   'CCBot',
