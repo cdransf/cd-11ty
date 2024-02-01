@@ -9597,5 +9597,16 @@
       "https://social.lol/users/cory/statuses/111852915463071233"
     ],
     "lastTootTimestamp": 1706740043136
+  },
+  "https://max.engineer/long-term-refactors": {
+    "id": "aHR0cHM6Ly9tYXguZW5naW5lZXIvbG9uZy10ZXJtLXJlZmFjdG9ycw==",
+    "title": "🔗: Long Term Refactors",
+    "url": "https://max.engineer/long-term-refactors",
+    "content_text": "🔗: Long Term Refactors #WebDev https://max.engineer/long-term-refactors",
+    "date_published": "Thu, 01 Feb 2024 01:52:19 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111854236609507087"
+    ],
+    "lastTootTimestamp": 1706760202238
   }
 }
