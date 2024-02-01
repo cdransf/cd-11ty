@@ -4,28 +4,16 @@
 
 .avatar__wrapper {
   width: 100%;
-  margin-bottom: 1.5rem;
+  justify-content: center;
 }
 
-.avatar__wrapper .avatar__wrapper--interior {
+.avatar__wrapper img {
+  border-radius: var(--rounded-full);
+  border: 1px solid var(--accent-color);
   width: var(--avatar-size);
   height: var(--avatar-size);
-  border: 1px solid var(--accent-color);
-  border-radius: var(--rounded-full);
-  display: flex;
   padding: 1rem;
   background-color: var(--color-lightest);
-}
-
-.avatar__wrapper,
-.avatar__wrapper .avatar__wrapper--interior {
-  justify-content: center;
-  overflow: hidden;
-}
-
-.avatar__wrapper .avatar__wrapper--interior > * {
-  width: 100%;
-  height: 100%;
 }
 
 @media screen and (min-width: 768px) {

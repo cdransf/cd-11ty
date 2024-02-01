@@ -76,8 +76,7 @@
   font-weight: 700;
 }
 
-.media__grid .item__image,
-.media__grid .item__image > * {
+.media__grid img {
   width: 100%;
   height: 100%;
 }

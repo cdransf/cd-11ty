@@ -1,69 +1,64 @@
-import outdent from 'outdent'
 import Image from '@11ty/eleventy-img'
+import path from 'path'
+import htmlmin from 'html-minifier-terser'
+
+const stringifyAttributes = (attributeMap) => {
+  return Object.entries(attributeMap)
+    .map(([attribute, value]) => {
+      if (typeof value === 'undefined') return '';
+      return `${attribute}="${value}"`;
+    })
+    .join(' ');
+};
 
 export const img = async (
   src,
-  alt,
-  className = undefined,
+  alt = '',
+  className,
   loading = 'lazy',
-  widths = [75, 150, 300, 600, 900, 1200],
-  formats = ['webp', 'jpeg'],
-  sizes = '100vw'
+  maxWidth = 1248,
+  sizes = '90vw',
+  formats = ['avif', 'webp', 'jpeg']
 ) => {
-  if (!src) return;
-  const imageMetadata = await Image(src, {
-    widths: [...widths, null],
-    formats: [...formats, null],
+  const widths = [320, 570, 880, 1024, 1248];
+  const metadata = await Image(src, {
+    widths: widths.filter((width) => width <= maxWidth),
+    formats: [...formats],
     outputDir: './_site/assets/img/cache/',
     urlPath: '/assets/img/cache/',
-  })
+    filenameFormat: (id, src, width, format, options) => {
+      const extension = path.extname(src);
+      const name = path.basename(src, extension);
+      return `${name}-${width}w.${format}`;
+    },
+  });
 
-  const stringifyAttributes = (attributeMap) => {
-    return Object.entries(attributeMap)
-      .map(([attribute, value]) => {
-        if (typeof value === 'undefined') return ''
-        return `${attribute}="${value}"`
-      })
-      .join(' ')
-  }
+  const lowsrc = metadata.jpeg[metadata.jpeg.length - 1];
 
-  const sourceHtmlString = Object.values(imageMetadata)
-    .map((images) => {
-      const { sourceType } = images[0]
-      const sourceAttributes = stringifyAttributes({
-        type: sourceType,
-        srcset: images.map((image) => image.srcset).join(', '),
-        sizes,
-      })
-
-      return `<source ${sourceAttributes}>`
+  const imageSources = Object.values(metadata)
+    .map((imageFormat) => {
+      return `  <source type="${
+        imageFormat[0].sourceType
+      }" srcset="${imageFormat
+        .map((entry) => entry.srcset)
+        .join(', ')}" sizes="${sizes}">`;
     })
-    .join('\n')
+    .join('\n');
 
-  const getLargestImage = (format) => {
-    const images = imageMetadata[format]
-    return images[images.length - 1]
-  }
-
-  const largestUnoptimizedImg = getLargestImage(formats[0])
-  const imgAttributes = stringifyAttributes({
-    src: largestUnoptimizedImg.url,
-    width: largestUnoptimizedImg.width,
-    height: largestUnoptimizedImg.height,
+  const imgageAttributes = stringifyAttributes({
+    src: lowsrc.url,
+    width: lowsrc.width,
+    height: lowsrc.height,
     alt,
+    class: className,
     loading,
     decoding: 'async',
-  })
+  });
 
-  const imgHtmlString = `<img ${imgAttributes}>`
-  const pictureAttributes = stringifyAttributes({
-    class: className,
-  })
+  const imageElement = `<picture>
+    ${imageSources}
+    <img ${imgageAttributes} />
+  </picture>`;
 
-  const picture = `<picture ${pictureAttributes}>
-    ${sourceHtmlString}
-    ${imgHtmlString}
-  </picture>`
-
-  return outdent`${picture}`
-}
+  return htmlmin.minify(imageElement, { collapseWhitespace: true });
+};

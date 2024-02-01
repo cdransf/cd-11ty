@@ -37,7 +37,11 @@
               'lazy'
             {%- endif -%}
           {%- endcapture -%}
-          {% image item.image, alt, 'item__image', loadingStrategy %}
+          {% if imageMaxWidth %}
+            {% image item.image, alt, '', loadingStrategy, imageMaxWidth %}
+          {% else %}
+            {% image item.image, alt, '', loadingStrategy %}
+          {% endif %}
         </div>
       </a>
     {% endfor %}

@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "5.0.4",
+  "version": "5.1.4",
   "description": "The source for my personal site. Built using 11ty and hosted on Netlify.",
   "type": "module",
   "scripts": {
@@ -43,7 +43,6 @@
     "markdown-it": "^14.0.0",
     "markdown-it-anchor": "^8.4.1",
     "markdown-it-footnote": "^4.0.0",
-    "outdent": "^0.8.0",
     "sanitize-html": "^2.11.0",
     "slugify": "^1.6.6",
     "writing-stats": "^1.0.6"

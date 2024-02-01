@@ -403,17 +403,8 @@ li {
 .image__banner {
   border: 1px solid var(--accent-color);
   border-radius: var(--rounded-lg);
-  overflow: hidden;
-}
-
-.image__banner,
-.image__banner > * {
-  display: block;
-  width: 100%;
-}
-
-.image__banner > * {
   height: auto;
+  width: 100%;
 }
 
 /* pages */
