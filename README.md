@@ -13,9 +13,9 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 ## 📝 Recent posts
 
 <!-- BLOGPOSTS:START -->
+- [I don't want anything your AI generates](https://coryd.dev/posts/2024/i-dont-want-anything-your-ai-generates/)
 - [You don't need a framework for that](https://coryd.dev/posts/2024/you-dont-need-a-framework-for-that/)
 - [Mobile web development with Codespaces](https://coryd.dev/posts/2024/mobile-web-development-with-codespaces/)
 - [Your attention is precious](https://coryd.dev/posts/2024/your-attention-is-precious/)
 - [Link page improvements](https://coryd.dev/posts/2024/link-page-improvements/)
-- [Link blogging using Readwise Reader](https://coryd.dev/posts/2024/link-blogging-using-readwise/)
 <!-- BLOGPOSTS:END -->
