@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "5.1.4",
+  "version": "5.1.5",
   "description": "The source for my personal site. Built using 11ty and hosted on Netlify.",
   "type": "module",
   "scripts": {
@@ -34,7 +34,7 @@
     "child_process": "^1.0.2",
     "dotenv-flow": "^4.1.0",
     "eleventy-plugin-embed-everything": "^1.18.2",
-    "eleventy-plugin-tabler-icons": "^2.3.0",
+    "eleventy-plugin-tabler-icons": "^2.4.0",
     "html-minifier-terser": "^7.2.0",
     "ics-to-json-extended": "^1.1.4",
     "jsdom": "^24.0.0",
