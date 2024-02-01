@@ -23,12 +23,11 @@ p {
 }
 
 blockquote {
-  color: var(--gray-medium);
   font-weight: 700;
   font-size: var(--font-size-lg);
   line-height: var(--line-height-lg);
   padding-left: .875rem;
-  border-left: .25rem solid var(--gray-medium);
+  border-left: .25rem solid var(--text-color);
   word-break: break-word;
 }
 
