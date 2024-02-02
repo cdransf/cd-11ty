@@ -9608,5 +9608,27 @@
       "https://social.lol/users/cory/statuses/111854236609507087"
     ],
     "lastTootTimestamp": 1706760202238
+  },
+  "https://blog.jim-nielsen.com/2024/treating-the-symptoms/": {
+    "id": "aHR0cHM6Ly9ibG9nLmppbS1uaWVsc2VuLmNvbS8yMDI0L3RyZWF0aW5nLXRoZS1zeW1wdG9tcy8=",
+    "title": "🔗: Treating the Symptoms",
+    "url": "https://blog.jim-nielsen.com/2024/treating-the-symptoms/",
+    "content_text": "🔗: Treating the Symptoms #Tech https://blog.jim-nielsen.com/2024/treating-the-symptoms/",
+    "date_published": "Thu, 01 Feb 2024 19:51:27 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111858482969161784"
+    ],
+    "lastTootTimestamp": 1706824996560
+  },
+  "https://coryd.dev/now?ts=1706788800000": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MDY3ODg4MDAwMDA=",
+    "title": "🎧: My top artists for the week: Dead In The Dirt @ 35 plays, NoMeansNo @ 30 plays, Autopsy @ 29 plays, Fawn Limbs @ 23 plays, Resurgency @ 23 plays, Hyperdontia @ 22 plays, Khthoniik Cerviiks @ 22 plays, blink-182 @ 19 plays #Music #LastFM",
+    "url": "https://coryd.dev/now?ts=1706788800000",
+    "content_text": "🎧: My top artists for the week: Dead In The Dirt @ 35 plays, NoMeansNo @ 30 plays, Autopsy @ 29 plays, Fawn Limbs @ 23 plays, Resurgency @ 23 plays, Hyperdontia @ 22 plays, Khthoniik Cerviiks @ 22 plays, blink-182 @ 19 plays #Music #LastFM  https://coryd.dev/now?ts=1706788800000",
+    "date_published": "Thu, 01 Feb 2024 12:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111861313430356028"
+    ],
+    "lastTootTimestamp": 1706868185941
   }
 }
