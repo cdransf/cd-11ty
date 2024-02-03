@@ -3782,11 +3782,11 @@
     "lastTootTimestamp": 1685405488540
   },
   "https://www.baldurbjarnason.com/2023/tech-broke-the-webs-social-contract/": {
-    "id": "https://www.baldurbjarnason.com/2023/tech-broke-the-webs-social-contract/",
-    "title": "🔗: Writing when tech has broken the web's social contract",
+    "id": "aHR0cHM6Ly93d3cuYmFsZHVyYmphcm5hc29uLmNvbS8yMDIzL3RlY2gtYnJva2UtdGhlLXdlYnMtc29jaWFsLWNvbnRyYWN0Lw==",
+    "title": "🔗: Writing when tech has broken the web’s social contract",
     "url": "https://www.baldurbjarnason.com/2023/tech-broke-the-webs-social-contract/",
-    "content_text": "🔗: Writing when tech has broken the web's social contract https://www.baldurbjarnason.com/2023/tech-broke-the-webs-social-contract/",
-    "date_published": "2023-05-30T00:00:00-08:00",
+    "content_text": "🔗: Writing when tech has broken the web’s social contract #Tech https://www.baldurbjarnason.com/2023/tech-broke-the-webs-social-contract/",
+    "date_published": "Sat, 03 Feb 2024 01:03:00 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/110456117302022644"
     ],
@@ -9641,5 +9641,16 @@
       "https://social.lol/users/cory/statuses/111863672835711479"
     ],
     "lastTootTimestamp": 1706904187804
+  },
+  "https://www.tylerjfisher.com/blog/post/2024/02/01/anti-scale-a-response-to-ai-in-journalism": {
+    "id": "aHR0cHM6Ly93d3cudHlsZXJqZmlzaGVyLmNvbS9ibG9nL3Bvc3QvMjAyNC8wMi8wMS9hbnRpLXNjYWxlLWEtcmVzcG9uc2UtdG8tYWktaW4tam91cm5hbGlzbQ==",
+    "title": "🔗: Anti-scale: a response to AI in journalism",
+    "url": "https://www.tylerjfisher.com/blog/post/2024/02/01/anti-scale-a-response-to-ai-in-journalism",
+    "content_text": "🔗: Anti-scale: a response to AI in journalism #Tech https://www.tylerjfisher.com/blog/post/2024/02/01/anti-scale-a-response-to-ai-in-journalism",
+    "date_published": "Sat, 03 Feb 2024 01:09:29 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111865560052012657"
+    ],
+    "lastTootTimestamp": 1706932984275
   }
 }
