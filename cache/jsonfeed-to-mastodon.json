@@ -9630,5 +9630,16 @@
       "https://social.lol/users/cory/statuses/111861313430356028"
     ],
     "lastTootTimestamp": 1706868185941
+  },
+  "https://infrequently.org/2024/01/performance-inequality-gap-2024/": {
+    "id": "aHR0cHM6Ly9pbmZyZXF1ZW50bHkub3JnLzIwMjQvMDEvcGVyZm9ybWFuY2UtaW5lcXVhbGl0eS1nYXAtMjAyNC8=",
+    "title": "🔗: The Performance Inequality Gap, 2024",
+    "url": "https://infrequently.org/2024/01/performance-inequality-gap-2024/",
+    "content_text": "🔗: The Performance Inequality Gap, 2024 #Tech  #WebDev https://infrequently.org/2024/01/performance-inequality-gap-2024/",
+    "date_published": "Fri, 02 Feb 2024 17:55:43 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111863672835711479"
+    ],
+    "lastTootTimestamp": 1706904187804
   }
 }
