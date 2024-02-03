@@ -18,8 +18,23 @@
   grid-template-columns: var(--grid-square);
 }
 
+.media__grid.square a {
+  aspect-ratio: 1/1;
+}
+
 .media__grid.vertical {
   grid-template-columns: var(--grid-vertical);
+}
+
+.media__grid.vertical a {
+  aspect-ratio: 2/3;
+}
+
+.media__grid.square a,
+.media__grid.square a,
+.media__grid .item__wrapper {
+  height: 100%;
+  width: 100%;
 }
 
 .media__grid.vertical .item__wrapper {
@@ -28,8 +43,6 @@
 
 .media__grid .item__wrapper {
   position: relative;
-  height: 100%;
-  width: 100%;
   border: 1px solid var(--accent-color);
   border-radius: var(--rounded-md);
   overflow: hidden;
