@@ -9663,5 +9663,16 @@
       "https://social.lol/users/cory/statuses/111869335983852389"
     ],
     "lastTootTimestamp": 1706990600431
+  },
+  "https://coryd.dev/posts/2024/browsing-the-mobile-web-sucks/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9icm93c2luZy10aGUtbW9iaWxlLXdlYi1zdWNrcy8=",
+    "title": "📝: Browsing the mobile web sucks",
+    "url": "https://coryd.dev/posts/2024/browsing-the-mobile-web-sucks/",
+    "content_text": "📝: Browsing the mobile web sucks #WebDev #JavaScript #Tech #Privacy https://coryd.dev/posts/2024/browsing-the-mobile-web-sucks/",
+    "date_published": "Sat, 03 Feb 2024 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111870389957316446"
+    ],
+    "lastTootTimestamp": 1707006682800
   }
 }
