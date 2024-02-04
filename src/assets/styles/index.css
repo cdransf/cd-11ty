@@ -421,17 +421,8 @@ li {
   width: 1.75rem;
 }
 
-.image__placeholder.square,
-.image__placeholder.round {
-  aspect-ratio: 1/1;
-}
-
 .image__placeholder.round {
   border-radius: var(--rounded-full);
-}
-
-.image__placeholder.vertical {
-  aspect-ratio: 2/3;
 }
 
 /* pages */
