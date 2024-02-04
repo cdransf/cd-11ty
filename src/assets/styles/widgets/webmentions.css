@@ -11,10 +11,6 @@
   margin-top: 2rem;
 }
 
-.webmentions .interaction.comments {
-  flex-direction: column;
-}
-
 .webmentions .interaction {
   cursor: pointer;
   margin-top: 1rem;
@@ -71,6 +67,11 @@
   flex-wrap: wrap;
   margin: 0 0 0 .75rem;
   padding: 0;
+}
+
+.webmentions .interaction.comments {
+  flex-direction: column;
+  margin: 0;
 }
 
 .webmentions .interaction > a {
