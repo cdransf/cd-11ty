@@ -3786,7 +3786,7 @@
     "title": "🔗: Writing when tech has broken the web’s social contract",
     "url": "https://www.baldurbjarnason.com/2023/tech-broke-the-webs-social-contract/",
     "content_text": "🔗: Writing when tech has broken the web’s social contract #Tech https://www.baldurbjarnason.com/2023/tech-broke-the-webs-social-contract/",
-    "date_published": "Sat, 03 Feb 2024 01:03:00 +0000",
+    "date_published": "Sat, 03 Feb 2024 03:15:18 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/110456117302022644"
     ],
@@ -9515,7 +9515,7 @@
     "title": "🔗: Stripping the web of its humanity",
     "url": "https://werd.io/2024/stripping-the-web-of-its-humanity",
     "content_text": "🔗: Stripping the web of its humanity #Tech  #Privacy https://werd.io/2024/stripping-the-web-of-its-humanity",
-    "date_published": "Tue, 30 Jan 2024 17:27:06 +0000",
+    "date_published": "Sat, 03 Feb 2024 17:19:43 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111846685753666290"
     ],
@@ -9647,10 +9647,21 @@
     "title": "🔗: Anti-scale: a response to AI in journalism",
     "url": "https://www.tylerjfisher.com/blog/post/2024/02/01/anti-scale-a-response-to-ai-in-journalism",
     "content_text": "🔗: Anti-scale: a response to AI in journalism #Tech https://www.tylerjfisher.com/blog/post/2024/02/01/anti-scale-a-response-to-ai-in-journalism",
-    "date_published": "Sat, 03 Feb 2024 01:09:29 +0000",
+    "date_published": "Sat, 03 Feb 2024 17:19:43 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111865560052012657"
     ],
     "lastTootTimestamp": 1706932984275
+  },
+  "https://app.thestorygraph.com/books/7c30a431-70e0-4efd-a585-56df0babfc7c": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvN2MzMGE0MzEtNzBlMC00ZWZkLWE1ODUtNTZkZjBiYWJmYzdj",
+    "title": "📖: The Silence of the Lambs",
+    "url": "https://app.thestorygraph.com/books/7c30a431-70e0-4efd-a585-56df0babfc7c",
+    "content_text": "📖: The Silence of the Lambs #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/7c30a431-70e0-4efd-a585-56df0babfc7c",
+    "date_published": "Fri, 02 Feb 2024 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111869335983852389"
+    ],
+    "lastTootTimestamp": 1706990600431
   }
 }
