@@ -55,6 +55,8 @@ export default {
     if (url.includes('trakt.tv')) return '#Movies #Watching #Trakt'
     return tagMap[url] || ''
   },
+
+  // webmentions
   webmentionsByUrl: (webmentions, url) => {
     if (!webmentions) return null;
 
@@ -113,6 +115,9 @@ export default {
     if (!Object.keys(data).length) return null;
 
     return data
+  },
+  webmentionsSanitizeComments: (comment) => {
+    return comment.replace(/\?\?\?\?/g, '');
   },
 
   // dates

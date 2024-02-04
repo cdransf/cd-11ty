@@ -16,7 +16,7 @@
           </a>
           <div class="comment">
             <a href={{mention.url}}>
-              <p>{{ mention.content.text }}</p>
+              <p>{{ mention.content.text | webmentionsSanitizeComments }}</p>
               <time>{{ mention.published | isoDateOnly }}</time>
             </a>
           </div>
