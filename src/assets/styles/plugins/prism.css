@@ -1,44 +1,37 @@
-/**
- * Catppuccin Prism theme
- */
-code[class*='language-'],
-pre[class*='language-'] {
+/* Catppuccin Prism theme */
+code[class*="language-"],
+pre[class*="language-"] {
   color: #d9e0ee;
   background: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  font-family: ui-monospace, monospace;
+  font-family:  var(--font-mono);
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
   line-height: 1.5;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
+  tab-size: 2;
   hyphens: none;
 }
 
 /* Code blocks */
-pre[class*='language-'] {
+pre[class*="language-"] {
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
-  border-radius: 0.3em;
+  border-radius: var(--rounded-md);
 }
 
-:not(pre) > code[class*='language-'],
-pre[class*='language-'] {
-  background: #1e1d2f;
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background:#1e1d2f;
 }
 
 /* Inline code */
-:not(pre) > code[class*='language-'] {
+:not(pre) > code[class*="language-"] {
   padding: 0.1em;
-  border-radius: 0.3em;
+  border-radius: var(--rounded-md);
   white-space: normal;
 }
 
@@ -106,7 +99,7 @@ pre[class*='language-'] {
 
 .token.important,
 .token.bold {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .token.italic {

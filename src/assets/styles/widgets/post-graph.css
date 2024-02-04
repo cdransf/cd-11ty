@@ -16,7 +16,7 @@
 }
 
 .post-graph__year {
-  font-family: var(--font-mono)
+  font-family: var(--font-mono);
 }
 
 .post-graph__progress,
