@@ -407,6 +407,33 @@ li {
   width: 100%;
 }
 
+.image__placeholder {
+  background-color: var(--color-darkest);
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.image__placeholder > svg {
+  stroke: var(--color-lightest) !important;
+  stroke-width: var(--stroke-width-bold);
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+.image__placeholder.square,
+.image__placeholder.round {
+  aspect-ratio: 1/1;
+}
+
+.image__placeholder.round {
+  border-radius: var(--rounded-full);
+}
+
+.image__placeholder.vertical {
+  aspect-ratio: 2/3;
+}
+
 /* pages */
 .page__header {
   font-size: var(--font-size-2xl);

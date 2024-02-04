@@ -7,7 +7,7 @@ export default {
       url: 'https://app.thestorygraph.com/books/9946c834-81f1-4c7f-b7d1-30a804e9874f',
     },
     {
-      alt: 'Where Are Your Boys Tonigh?',
+      alt: 'Where Are Your Boys Tonight?',
       author: 'Chris Payne',
       image: 'https://cd-books.b-cdn.net/vajp3jxy6kee5ka2ymbvjc2fqkvf',
       url: 'https://app.thestorygraph.com/books/f074d4e3-a9fc-42af-889e-54697a1fece0',
