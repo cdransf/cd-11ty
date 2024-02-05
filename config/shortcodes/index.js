@@ -12,7 +12,7 @@ export const img = async (
   alt = '',
   className,
   loading = 'lazy',
-  shape = 'square',
+  shape = '',
   icon,
   maxWidth = 1248,
   sizes = '90vw',
