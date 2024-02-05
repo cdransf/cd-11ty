@@ -35,13 +35,11 @@ export const img = async (
       outputDir: './_site/assets/img/cache/',
       urlPath: '/assets/img/cache/',
       filenameFormat: (id, src, width, format) => {
-        const { ext, name } = path.parse(src);
+        const { name } = path.parse(src);
         return `${name}-${width}w.${format}`;
       },
     });
-
     const lowsrc = metadata.jpeg[metadata.jpeg.length - 1];
-
     const imageSources = Object.values(metadata)
       .map(
         (imageFormat) =>
@@ -50,7 +48,6 @@ export const img = async (
             .join(', ')}" sizes="${sizes}">`
       )
       .join('\n');
-
     const imgageAttributes = stringifyAttributes({
       src: lowsrc.url,
       width: lowsrc.width,
@@ -60,15 +57,16 @@ export const img = async (
       loading,
       decoding: 'async',
     });
-
     const imageElement = `<picture>${imageSources}<img ${imgageAttributes} /></picture>`;
 
     return htmlmin.minify(imageElement, { collapseWhitespace: true });
   };
 
   const generatePlaceholder = async () => {
-    const placeholderElement = `<div class="flex--centered image__placeholder ${shape}">${icon}</div>`;
-    return htmlmin.minify(placeholderElement, { collapseWhitespace: true });
+    return htmlmin.minify(
+      `<div class="flex--centered image__placeholder ${shape}">${icon}</div>`,
+      { collapseWhitespace: true }
+    );
   };
 
   return isLocal ? await generateImage() : await imageExists().then(async (exists) => (exists ? await generateImage() : await generatePlaceholder()));
