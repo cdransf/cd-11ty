@@ -9703,7 +9703,10 @@
     "url": "https://robhorning.substack.com/p/looking-away?ref=disconnect.blog",
     "content_text": "🔗: Looking away #Tech https://robhorning.substack.com/p/looking-away?ref=disconnect.blog",
     "date_published": "Mon, 05 Feb 2024 01:17:55 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111877358131331599"
+    ],
+    "lastTootTimestamp": 1707113008652
   },
   "https://trakt.tv/movies/apocalypse-now-1979": {
     "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvYXBvY2FseXBzZS1ub3ctMTk3OQ==",
