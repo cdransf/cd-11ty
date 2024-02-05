@@ -9685,5 +9685,38 @@
       "https://social.lol/users/cory/statuses/111874525880128081"
     ],
     "lastTootTimestamp": 1707069791949
+  },
+  "https://trakt.tv/movies/10-cloverfield-lane-2016": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvMTAtY2xvdmVyZmllbGQtbGFuZS0yMDE2",
+    "title": "🎥: 10 Cloverfield Lane",
+    "url": "https://trakt.tv/movies/10-cloverfield-lane-2016",
+    "content_text": "🎥: 10 Cloverfield Lane #Movies #Watching #Trakt https://trakt.tv/movies/10-cloverfield-lane-2016",
+    "date_published": "Sun, 04 Feb 2024 18:10:40 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111875468324209711"
+    ],
+    "lastTootTimestamp": 1707084172484
+  },
+  "https://robhorning.substack.com/p/looking-away?ref=disconnect.blog": {
+    "id": "aHR0cHM6Ly9yb2Job3JuaW5nLnN1YnN0YWNrLmNvbS9wL2xvb2tpbmctYXdheT9yZWY9ZGlzY29ubmVjdC5ibG9n",
+    "title": "🔗: Looking away",
+    "url": "https://robhorning.substack.com/p/looking-away?ref=disconnect.blog",
+    "content_text": "🔗: Looking away #Tech https://robhorning.substack.com/p/looking-away?ref=disconnect.blog",
+    "date_published": "Mon, 05 Feb 2024 01:17:55 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111877358131331599"
+    ],
+    "lastTootTimestamp": 1707113008652
+  },
+  "https://trakt.tv/movies/apocalypse-now-1979": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvYXBvY2FseXBzZS1ub3ctMTk3OQ==",
+    "title": "🎥: Apocalypse Now",
+    "url": "https://trakt.tv/movies/apocalypse-now-1979",
+    "content_text": "🎥: Apocalypse Now #Movies #Watching #Trakt https://trakt.tv/movies/apocalypse-now-1979",
+    "date_published": "Mon, 05 Feb 2024 00:58:37 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111876885559852653"
+    ],
+    "lastTootTimestamp": 1707105797792
   }
 }
