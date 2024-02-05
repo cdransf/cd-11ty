@@ -8,7 +8,7 @@
             <div class="avatar__wrapper flex--centered">
             {% capture authorAlt %}{{ mention.author.name | escape }}{% endcapture %}
             {% capture fallbackIcon %}{% tablericon "user" authorAlt %}{% endcapture %}
-            {% image mention.author.photo, authorAlt, 'avatar__image', 'lazy', 'square', fallbackIcon %}
+            {% image mention.author.photo, authorAlt, 'avatar__image', 'lazy', 'rounded', fallbackIcon %}
             </div>
           </a>
           <div class="comment">
