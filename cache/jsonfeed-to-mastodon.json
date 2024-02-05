@@ -9718,5 +9718,16 @@
       "https://social.lol/users/cory/statuses/111876885559852653"
     ],
     "lastTootTimestamp": 1707105797792
+  },
+  "https://coryd.dev/posts/2024/check-if-images-are-available-before-optimizing-in-eleventy/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9jaGVjay1pZi1pbWFnZXMtYXJlLWF2YWlsYWJsZS1iZWZvcmUtb3B0aW1pemluZy1pbi1lbGV2ZW50eS8=",
+    "title": "📝: Check if images are available before optimizing in Eleventy",
+    "url": "https://coryd.dev/posts/2024/check-if-images-are-available-before-optimizing-in-eleventy/",
+    "content_text": "📝: Check if images are available before optimizing in Eleventy #WebDev #JavaScript #Eleventy https://coryd.dev/posts/2024/check-if-images-are-available-before-optimizing-in-eleventy/",
+    "date_published": "Mon, 05 Feb 2024 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111881461547315080"
+    ],
+    "lastTootTimestamp": 1707175621846
   }
 }
