@@ -21,8 +21,7 @@ export const img = async (
   const isLocal = src.includes('src/assets');
   const imageExists = async () => {
     try {
-      const isOk = await fetch(src, { method: 'HEAD' }).then((res) => res.ok);
-      return isOk;
+      return await fetch(src, { method: 'HEAD' }).then((res) => res.ok);
     } catch {
       return false;
     }
