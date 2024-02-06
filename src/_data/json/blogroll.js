@@ -6,6 +6,7 @@ export default [
   { "name": "Chris McLeod", "url": "https://chrismcleod.dev", "feed": "https://chrismcleod.dev/feed.xml", "description": "A beautifully designed blog full of content covering everything from Warhammer to the indie web." },
   { "name": "fLaMEd", "url": "https://flamedfury.com", "feed": "https://flamedfury.com/feed.xml", "description": "Awesome retro and small web content — plus the design of the is awesome." },
   { "name": "Joe Steel", "url": "https://joe-steel.com", "feed": "https://joe-steel.com/feed.xml", "description": "Joe blogs about tech, the perpetually abysmal state of Apple's TV and movie products and numerous other things." },
+  { "name": "Juha-Matti Santala", "url": "https://hamatti.org", "feed": "https://hamatti.org/feed/feed.xml", "description": "A community builder, speaker, writer, developer and extremely kind person." },
   { "name": "Keenan", "url": "https://gkeenan.co/avgb", "feed": "https://gkeenan.co/avglb?format=rss", "description": "If you don't love them it's because you don't yet know them — a fantastic writer too." },
   { "name": "Kev Quirk", "url": "https://kevq.uk", "feed": "https://kevq.uk/feed.xml", "description": "One of the admins of fosstodon.org and author of a really great blog." },
   { "name": "Łukasz Wójcik", "url": "https://lukaszwojcik.net", "feed": "https://blog.lukaszwojcik.net/full.xml", "description": "Posts about tech, web development and Eleventy. Łukasz is a talented and kind engineer." },
