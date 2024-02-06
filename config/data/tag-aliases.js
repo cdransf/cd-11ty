@@ -11,6 +11,7 @@ export default {
   ios: '#iOS #Apple',
   javascript: '#JavaScript',
   'last.fm': '#Music',
+  labor: '#Work',
   lastfm: '#Music',
   macos: '#macOS #Apple',
   music: '#Music',
