@@ -9729,5 +9729,40 @@
       "https://social.lol/users/cory/statuses/111881461547315080"
     ],
     "lastTootTimestamp": 1707175621846
+  },
+  "https://lmnt.me/blog/teenage-web.html": {
+    "id": "aHR0cHM6Ly9sbW50Lm1lL2Jsb2cvdGVlbmFnZS13ZWIuaHRtbA==",
+    "title": "🔗: The Teenage Web",
+    "url": "https://lmnt.me/blog/teenage-web.html",
+    "content_text": "🔗: The Teenage Web #Tech https://lmnt.me/blog/teenage-web.html",
+    "date_published": "Tue, 06 Feb 2024 00:42:19 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111882547434998673"
+    ],
+    "lastTootTimestamp": 1707192191140
+  },
+  "https://lmnt.me/blog/make-a-damn-website.html": {
+    "id": "aHR0cHM6Ly9sbW50Lm1lL2Jsb2cvbWFrZS1hLWRhbW4td2Vic2l0ZS5odG1s",
+    "title": "🔗: Make a Damn Website",
+    "url": "https://lmnt.me/blog/make-a-damn-website.html",
+    "content_text": "🔗: Make a Damn Website #Tech https://lmnt.me/blog/make-a-damn-website.html",
+    "date_published": "Tue, 06 Feb 2024 00:39:51 +0000",
+    "toots": []
+  },
+  "https://lmnt.me/blog/craft-internet.html": {
+    "id": "aHR0cHM6Ly9sbW50Lm1lL2Jsb2cvY3JhZnQtaW50ZXJuZXQuaHRtbA==",
+    "title": "🔗: Craft Internet",
+    "url": "https://lmnt.me/blog/craft-internet.html",
+    "content_text": "🔗: Craft Internet #Tech https://lmnt.me/blog/craft-internet.html",
+    "date_published": "Tue, 06 Feb 2024 00:37:13 +0000",
+    "toots": []
+  },
+  "https://app.thestorygraph.com/books/d02f9eec-ca74-419e-a28b-4f59d0e89e01": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvZDAyZjllZWMtY2E3NC00MTllLWEyOGItNGY1OWQwZTg5ZTAx",
+    "title": "📖: How to Make a Killing: Blood, Death and Dollars in American Medicine",
+    "url": "https://app.thestorygraph.com/books/d02f9eec-ca74-419e-a28b-4f59d0e89e01",
+    "content_text": "📖: How to Make a Killing: Blood, Death and Dollars in American Medicine #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/d02f9eec-ca74-419e-a28b-4f59d0e89e01",
+    "date_published": "Sun, 04 Feb 2024 16:00:00 +0000",
+    "toots": []
   }
 }
