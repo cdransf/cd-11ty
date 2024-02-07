@@ -1,4 +1,4 @@
-name: Scheduled follow feed to BlueSky
+name: Scheduled posts feed to BlueSky
 on:
   workflow_dispatch:
   schedule:
