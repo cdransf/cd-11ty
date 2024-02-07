@@ -9828,5 +9828,16 @@
       "https://social.lol/users/cory/statuses/111892342806278442"
     ],
     "lastTootTimestamp": 1707341656623
+  },
+  "https://coryd.dev/posts/2024/on-getting-tattooed/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9vbi1nZXR0aW5nLXRhdHRvb2VkLw==",
+    "title": "📝: On getting tattooed",
+    "url": "https://coryd.dev/posts/2024/on-getting-tattooed/",
+    "content_text": "📝: On getting tattooed #Tattoos #Music https://coryd.dev/posts/2024/on-getting-tattooed/",
+    "date_published": "Wed, 07 Feb 2024 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111892395326602465"
+    ],
+    "lastTootTimestamp": 1707342458048
   }
 }
