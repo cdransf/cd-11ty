@@ -5,21 +5,6 @@ pagination:
   size: 8
   reverse: true
   alias: posts
-meta:
-  site:
-    name: 'Cory Dransfeldt'
-    description: "I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, music, writing, reading and tv and movies."
-    url: https://coryd.dev
-    logo:
-      src: https://coryd.dev/assets/img/logo.webp
-      width: 2000
-      height: 2000
-  language: en-US
-  title: 'Cory Dransfeldt'
-  description: 'Husband, dad, developer, music nerd.'
-  url: https://coryd.dev
-  image:
-    src: https://coryd.dev/assets/img/avatar.webp
 ---
 {% if pagination.pageNumber == 0 %}{% include "partials/now/topper.liquid" status:status %}{% endif %} {% for post in pagination.items %} {% if post.data.published %}
 <article class="h-entry">
