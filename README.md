@@ -8,7 +8,7 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 
 [![Follow @cory@social.lol](https://img.shields.io/mastodon/follow/109606224363698309?domain=https%3A%2F%2Fsocial.lol&style=for-the-badge&logo=Mastodon&logoColor=white&labelColor=6364FF)](https://social.lol/@cory)
 
-[Now](https://coryd.dev/now) • [About](https://coryd.dev/about) • [Uses](https://coryd.dev/uses) • [Referrals](https://coryd.dev/referrals) • [Speedlify](https://coryd.dev/speedlify) • [Stats](https://coryd.dev/stats)
+[Now](https://coryd.dev/now) • [About](https://coryd.dev/about) • [Uses](https://coryd.dev/uses) • [Referrals](https://coryd.dev/referrals) • [Blogroll](https://coryd.dev/blogroll) • [Speedlify](https://coryd.dev/speedlify) • [Stats](https://coryd.dev/stats)
 
 ## 📝 Recent posts
 
