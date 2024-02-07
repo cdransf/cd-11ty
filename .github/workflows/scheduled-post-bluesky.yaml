@@ -1,0 +1,20 @@
+name: Scheduled follow feed to BlueSky
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */2 * * *'
+jobs:
+  Feed2SocialMedia:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Feed to social media
+        uses: lwojcik/github-action-feed-to-social-media@v2
+        with:
+          feedUrl: "https://coryd.dev/feeds/posts"
+          newestItemStrategy: "latestDate"
+          postFormat: "📝: {title}\n\n{link}"
+          blueskyEnable: true
+          blueskyHandle: "cdme.bsky.social"
+          blueskyAppPassword: ${{ secrets.BLUESKY_TOKEN }}
+          blueskyOwnerHandle: "cdme.bsky.social"
+          blueskyOwnerContact: "hi@coryd.dev"
