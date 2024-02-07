@@ -9795,5 +9795,16 @@
       "https://social.lol/users/cory/statuses/111885850241561294"
     ],
     "lastTootTimestamp": 1707242587958
+  },
+  "https://mikegrindle.com/posts/personal-blogging": {
+    "id": "aHR0cHM6Ly9taWtlZ3JpbmRsZS5jb20vcG9zdHMvcGVyc29uYWwtYmxvZ2dpbmc=",
+    "title": "🔗: Home > Why Personal Blogging Still Rules",
+    "url": "https://mikegrindle.com/posts/personal-blogging",
+    "content_text": "🔗: Home > Why Personal Blogging Still Rules #Tech  #Blogging #WebDev https://mikegrindle.com/posts/personal-blogging",
+    "date_published": "Tue, 06 Feb 2024 23:41:32 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111887753539932630"
+    ],
+    "lastTootTimestamp": 1707271630039
   }
 }
