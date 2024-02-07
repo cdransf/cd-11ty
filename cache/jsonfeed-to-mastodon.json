@@ -9784,5 +9784,16 @@
       "https://social.lol/users/cory/statuses/111885378591862470"
     ],
     "lastTootTimestamp": 1707235391159
+  },
+  "https://gomakethings.com/the-f-ck-bucket/": {
+    "id": "aHR0cHM6Ly9nb21ha2V0aGluZ3MuY29tL3RoZS1mLWNrLWJ1Y2tldC8=",
+    "title": "🔗: The fuck bucket",
+    "url": "https://gomakethings.com/the-f-ck-bucket/",
+    "content_text": "🔗: The fuck bucket #Tech #Work https://gomakethings.com/the-f-ck-bucket/",
+    "date_published": "Tue, 06 Feb 2024 16:53:39 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111885850241561294"
+    ],
+    "lastTootTimestamp": 1707242587958
   }
 }

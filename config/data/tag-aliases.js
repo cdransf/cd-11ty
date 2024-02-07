@@ -1,9 +1,10 @@
 export default {
   '11ty': '#Eleventy',
   accessibility: '#Accessibility',
-  development: '#WebDev',
+  blogging: '#Blogging',
   books: '#Books',
   css: '#CSS',
+  development: '#WebDev',
   eleventy: '#Eleventy',
   email: '#Email',
   fastmail: '#Email',
