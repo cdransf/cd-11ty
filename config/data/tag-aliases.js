@@ -22,6 +22,7 @@ export default {
   'social media': '#Tech',
   spotify: '#Music',
   'surveillance capitalism': '#SurveillanceCapitalism',
+  'tattoos': '#Tattoos',
   tech: '#Tech',
   technology: '#Tech',
 }
