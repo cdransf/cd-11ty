@@ -12,9 +12,10 @@ jobs:
         with:
           feedUrl: "https://coryd.dev/feeds/posts"
           newestItemStrategy: "latestDate"
-          postFormat: "📝: {title}\n\n{link}"
+          postFormat: "📝: {title} {link}"
           blueskyEnable: true
+          blueskyService: "bsky.social"
           blueskyHandle: "cdme.bsky.social"
-          blueskyAppPassword: ${{ secrets.BLUESKY_TOKEN }}
-          blueskyOwnerHandle: "cdme.bsky.social"
+          blueskyAppPassword: "${{ secrets.BLUESKY_TOKEN }}"
+          blueskyOwnerHandle: "owner.bsky.social"
           blueskyOwnerContact: "hi@coryd.dev"
