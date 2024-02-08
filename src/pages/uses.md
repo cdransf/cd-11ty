@@ -55,7 +55,6 @@ Software and services that I use for work and my own enjoyment.
 <h3>Dev tools</h3>
 
 - [Sublime Text](https://www.sublimetext.com): super snappy and as reliable as ever for text editing and web development.
-- [iTerm2](https://iterm2.com): a more configurable terminal than the one macOS ships with. I've used it for a long time now and it's still my go-to.
 - [Catppuccin](https://github.com/catppuccin): nearly as ubiquitous as Dracula but lighter and more playful, I've started using this theme wherever I'm looking at/reading/writing code.
 - [Mono Lisa](https://monolisa.dev): a relatively new find, I've been enjoying how pleasant and readable this font is (and have even gone so far as to install it on iOS via [FontCase](https://apps.apple.com/us/app/fontcase-manage-your-type/id1205074470)).
 
