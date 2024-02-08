@@ -9823,7 +9823,7 @@
     "title": "🔗: The power to not",
     "url": "https://notes.neatnik.net/2024/01/the-power-to-not",
     "content_text": "🔗: The power to not #Tech  #Tech https://notes.neatnik.net/2024/01/the-power-to-not",
-    "date_published": "Wed, 07 Feb 2024 18:42:57 +0000",
+    "date_published": "Wed, 07 Feb 2024 22:11:10 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111892342806278442"
     ],
@@ -9839,5 +9839,16 @@
       "https://social.lol/users/cory/statuses/111892395326602465"
     ],
     "lastTootTimestamp": 1707342458048
+  },
+  "https://frills.dev/blog/070224-this-website-is-personal-girls/": {
+    "id": "aHR0cHM6Ly9mcmlsbHMuZGV2L2Jsb2cvMDcwMjI0LXRoaXMtd2Vic2l0ZS1pcy1wZXJzb25hbC1naXJscy8=",
+    "title": "🔗: This website is personal",
+    "url": "https://frills.dev/blog/070224-this-website-is-personal-girls/",
+    "content_text": "🔗: This website is personal #Tech  #Blogging https://frills.dev/blog/070224-this-website-is-personal-girls/",
+    "date_published": "Thu, 08 Feb 2024 00:04:51 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111893416725601331"
+    ],
+    "lastTootTimestamp": 1707358043362
   }
 }
