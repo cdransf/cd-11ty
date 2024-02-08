@@ -9850,5 +9850,24 @@
       "https://social.lol/users/cory/statuses/111893416725601331"
     ],
     "lastTootTimestamp": 1707358043362
+  },
+  "https://www.lrb.co.uk/the-paper/v46/n03/rebecca-solnit/in-the-shadow-of-silicon-valley": {
+    "id": "aHR0cHM6Ly93d3cubHJiLmNvLnVrL3RoZS1wYXBlci92NDYvbjAzL3JlYmVjY2Etc29sbml0L2luLXRoZS1zaGFkb3ctb2Ytc2lsaWNvbi12YWxsZXk=",
+    "title": "🔗: In the Shadow of Silicon Valley",
+    "url": "https://www.lrb.co.uk/the-paper/v46/n03/rebecca-solnit/in-the-shadow-of-silicon-valley",
+    "content_text": "🔗: In the Shadow of Silicon Valley #Tech  #Privacy #Tech https://www.lrb.co.uk/the-paper/v46/n03/rebecca-solnit/in-the-shadow-of-silicon-valley",
+    "date_published": "Thu, 08 Feb 2024 01:53:13 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111893872402463187"
+    ],
+    "lastTootTimestamp": 1707364996443
+  },
+  "https://piccalil.li/blog/react-is-getting-a-bit-of-a-kicking-recently/": {
+    "id": "aHR0cHM6Ly9waWNjYWxpbC5saS9ibG9nL3JlYWN0LWlzLWdldHRpbmctYS1iaXQtb2YtYS1raWNraW5nLXJlY2VudGx5Lw==",
+    "title": "🔗: It feels like React is getting a bit of a kicking recently",
+    "url": "https://piccalil.li/blog/react-is-getting-a-bit-of-a-kicking-recently/",
+    "content_text": "🔗: It feels like React is getting a bit of a kicking recently #JavaScript #WebDev https://piccalil.li/blog/react-is-getting-a-bit-of-a-kicking-recently/",
+    "date_published": "Thu, 08 Feb 2024 00:36:09 +0000",
+    "toots": []
   }
 }
