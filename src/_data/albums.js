@@ -17,9 +17,7 @@ export default async function () {
             'https://lastfm.freetls.fastly.net',
             'https://cd-albums.b-cdn.net'
           )
-        : `https://cdn.coryd.dev/albums/${album['name'].name
-            .replace(/\s+/g, '-')
-            .toLowerCase()}.jpg`,
+        : `https://cdn.coryd.dev/albums/${album['name'].replace(/\s+/g, '-').toLowerCase()}.jpg`,
       url: album['mbid']
         ? `https://musicbrainz.org/album/${album['mbid']}`
         : `https://musicbrainz.org/taglookup/index?tag-lookup.artist=${album['artist'][
