@@ -1,19 +1,10 @@
 import EleventyFetch from '@11ty/eleventy-fetch'
+import LinksMock from './json/mocks/links.js'
 
 export default async function () {
   const API_TOKEN_READWISE = process.env.API_TOKEN_READWISE
   const url = 'https://readwise.io/api/v3/list?location=archive'
-  const res = EleventyFetch(url, {
-    duration: '1h',
-    type: 'json',
-    fetchOptions: {
-      headers: {
-        Authorization: `Token ${API_TOKEN_READWISE}`,
-      },
-    },
-  }).catch()
-  const data = await res
-  const links = data['results'].map((link) => {
+  const formatLinkData = (links) => links.map((link) => {
     return {
       title: link['title'],
       url: link['source_url'],
@@ -25,5 +16,21 @@ export default async function () {
       description: `${link['summary']}<br/><br/>`,
     }
   })
-  return links.filter((link) => link.tags.includes('share'))
+
+  if (process.env.ELEVENTY_PRODUCTION) {
+    const res = EleventyFetch(url, {
+      duration: '1h',
+      type: 'json',
+      fetchOptions: {
+        headers: {
+          Authorization: `Token ${API_TOKEN_READWISE}`,
+        },
+      },
+    }).catch()
+    const data = await res
+    return formatLinkData(data['results']).filter((link) => link.tags.includes('share'))
+  } else {
+    return formatLinkData(LinksMock)
+  }
+
 }

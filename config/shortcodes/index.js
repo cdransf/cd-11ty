@@ -18,7 +18,7 @@ export const img = async (
   sizes = '90vw',
   formats = ['avif', 'webp', 'jpeg']
 ) => {
-  const isLocal = src.includes('src/assets');
+  const isLocal = src?.includes('src/assets');
   const imageExists = async () => {
     try {
       return await fetch(src, { method: 'HEAD' }).then((res) => res.ok);
@@ -69,5 +69,9 @@ export const img = async (
     );
   };
 
-  return isLocal ? await generateImage() : await imageExists().then(async (exists) => (exists ? await generateImage() : await generatePlaceholder()));
+  if (process.env.ELEVENTY_PRODUCTION) {
+    return isLocal ? await generateImage() : await imageExists().then(async (exists) => (exists ? await generateImage() : await generatePlaceholder()));
+  } else {
+    return await generatePlaceholder();
+  }
 };

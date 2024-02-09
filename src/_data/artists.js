@@ -1,5 +1,6 @@
 import EleventyFetch from '@11ty/eleventy-fetch';
 import mbidPatches from './json/mbid-patches.js';
+import ArtistsMock from './json/mocks/artists.js'
 
 const mbidMap = (artist) => {
   return mbidPatches[artist.toLowerCase()] || '';
@@ -13,12 +14,7 @@ const removeAccents = (inputStr) => {
 export default async function () {
   const MUSIC_KEY = process.env.API_KEY_LASTFM;
   const url = `https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=coryd_&api_key=${MUSIC_KEY}&limit=8&format=json&period=7day`;
-  const res = EleventyFetch(url, {
-    duration: '1h',
-    type: 'json',
-  }).catch();
-  const data = await res;
-  return data['topartists']['artist'].map((artist) => {
+  const formatArtistData = (artists) => artists.map((artist) => {
     let mbid = artist['mbid'];
 
     // mbid mismatches
@@ -40,4 +36,15 @@ export default async function () {
       type: 'artist',
     };
   });
+
+  if (process.env.ELEVENTY_PRODUCTION) {
+    const res = EleventyFetch(url, {
+      duration: '1h',
+      type: 'json',
+    }).catch();
+    const data = await res;
+    return formatArtistData(data['topartists']['artist'])
+  } else {
+    return formatArtistData(ArtistsMock);
+  }
 }

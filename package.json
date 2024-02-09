@@ -1,10 +1,10 @@
 {
   "name": "coryd.dev",
-  "version": "5.4.13",
+  "version": "5.5.0",
   "description": "The source for my personal site. Built using 11ty and hosted on Netlify.",
   "type": "module",
   "scripts": {
-    "start": "ELEVENTY_PRODUCTION=false eleventy --serve",
+    "start": "eleventy --serve",
     "start:search": "run-s build:11ty index:local",
     "start:quick": "eleventy --serve --incremental --ignore-initial",
     "build": "ELEVENTY_PRODUCTION=true eleventy && npm run build:index",
