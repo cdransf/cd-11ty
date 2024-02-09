@@ -3,6 +3,7 @@ date: '2024-02-07'
 title: 'On getting tattooed'
 description: "I got my first tattoo over ten years ago. It was a few lines from Tom Waits' *[Coney Island Baby](https://www.youtube.com/watch?v=A-Tod1_tZdU)* set on the inside of my left bicep as a dedication to my then fiancé and now wife of ten years. I was told recently that that's a really painful spot but, I suppose, I didn't know what I was getting into outside of having an artist recommended by a dear friend that I trust implicitly."
 tags: ['tattoos', 'music']
+image: https://cdn.coryd.dev/blog/half-sleeve.jpg
 ---
 I got my first tattoo over ten years ago. It was a few lines from Tom Waits' *[Coney Island Baby](https://www.youtube.com/watch?v=A-Tod1_tZdU)* set on the inside of my left bicep as a dedication to my then fiancé and now wife of ten years. I was told recently that that's a really painful spot but, I suppose, I didn't know what I was getting into outside of having an artist recommended by a dear friend that I trust implicitly.<!-- excerpt -->
 
