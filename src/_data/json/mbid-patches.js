@@ -7,6 +7,7 @@ export default {
   basement: 'a8c7ff7a-ebc0-42c7-8828-475decf0ccdd',
   'carnal tomb': 'e24534dc-d29e-4e0b-84fa-26d487b0790a',
   'carpe noctem': 'aa349181-1cb9-4340-bb3f-82eefba3e697',
+  contaminated: '11f7a795-25b1-4f25-8b23-734cba19f8a5',
   cruciamentum: '9a783663-db0c-4237-a3a9-afe72d055ddc',
   'edge of sanity': '82d1972f-f815-480d-ba78-9873b799bdd1',
   envy: '8c4519da-59e7-44b5-868d-350dffb30b51',
