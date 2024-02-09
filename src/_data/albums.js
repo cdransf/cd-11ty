@@ -1,7 +1,7 @@
 import EleventyFetch from '@11ty/eleventy-fetch'
 import AlbumsMock from './json/mocks/albums.js'
 
-const ALBUM_DENYLIST = ['no-love-deep-web', 'unremittance']
+const ALBUM_DENYLIST = ['no-love-deep-web', 'unremittance', 'celebratory-beheading']
 
 export default async function () {
   const MUSIC_KEY = process.env.API_KEY_LASTFM
