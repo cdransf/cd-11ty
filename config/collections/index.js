@@ -162,5 +162,6 @@ export const postStats = (collectionApi) => {
   statsObject.totalWordCount = totalWordCount
   statsObject.totalCodeBlockCount = totalCodeBlockCount
   statsObject.highPostCount = highPostCount
+
   return statsObject
 }

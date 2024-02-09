@@ -6,16 +6,20 @@ pagination:
   reverse: true
   alias: posts
 ---
-{% if pagination.pageNumber == 0 %}{% include "partials/now/topper.liquid" status:status %}{% endif %} {% for post in pagination.items %} {% if post.data.published %}
-<article class="h-entry">
-  <a class="no-underline" href="{{ post.url }}">
-    <h2 class="flex--centered">{{ post.data.title }}</h2>
-  </a>
-  <span class="p-author h-card hidden">{{ meta.siteName }}</span>
-  <time class="dt-published" datetime="{{ post.date }}">
-    {{ post.date | date: "%m.%Y" }}
-  </time>
-  <div class="p-summary hidden">{{ post.data.post_excerpt }}</div>
-  {{ post.data.post_excerpt | markdown }}
-</article>
-{% endif %} {% endfor %} {% include "partials/paginator.liquid" %}
+{% if pagination.pageNumber == 0 %}{% include "partials/now/topper.liquid" status:status %}{% endif %}
+{% for post in pagination.items %}
+  {% if post.data.published %}
+  <article class="h-entry">
+    <a class="no-underline" href="{{ post.url }}">
+      <h2 class="flex--centered">{{ post.data.title }}</h2>
+    </a>
+    <span class="p-author h-card hidden">{{ meta.siteName }}</span>
+    <time class="dt-published" datetime="{{ post.date }}">
+      {{ post.date | date: "%m.%Y" }}
+    </time>
+    <div class="p-summary hidden">{{ post.data.post_excerpt }}</div>
+    {{ post.data.post_excerpt | markdown }}
+  </article>
+  {% endif %}
+{% endfor %}
+{% include "partials/paginator.liquid" %}
