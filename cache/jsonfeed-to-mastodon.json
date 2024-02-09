@@ -9905,5 +9905,24 @@
       "https://social.lol/users/cory/statuses/111902794582995858"
     ],
     "lastTootTimestamp": 1707501138127
+  },
+  "https://gomakethings.com/html-as-the-baseline/": {
+    "id": "aHR0cHM6Ly9nb21ha2V0aGluZ3MuY29tL2h0bWwtYXMtdGhlLWJhc2VsaW5lLw==",
+    "title": "🔗: HTML as the baseline",
+    "url": "https://gomakethings.com/html-as-the-baseline/",
+    "content_text": "🔗: HTML as the baseline #WebDev https://gomakethings.com/html-as-the-baseline/",
+    "date_published": "Fri, 09 Feb 2024 19:42:08 +0000",
+    "toots": []
+  },
+  "https://www.mayank.co/blog/safari-focus/": {
+    "id": "aHR0cHM6Ly93d3cubWF5YW5rLmNvL2Jsb2cvc2FmYXJpLWZvY3VzLw==",
+    "title": "🔗: When will Apple focus on Safari?",
+    "url": "https://www.mayank.co/blog/safari-focus/",
+    "content_text": "🔗: When will Apple focus on Safari? #WebDev https://www.mayank.co/blog/safari-focus/",
+    "date_published": "Fri, 09 Feb 2024 19:04:10 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111903781883898271"
+    ],
+    "lastTootTimestamp": 1707516203137
   }
 }
