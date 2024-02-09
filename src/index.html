@@ -6,7 +6,9 @@ pagination:
   reverse: true
   alias: posts
 ---
-{% if pagination.pageNumber == 0 %}{% include "partials/now/topper.liquid" status:status %}{% endif %}
+{% if pagination.pageNumber == 0 %}
+  {% render "partials/now/topper.liquid" status:status %}
+{% endif %}
 {% for post in pagination.items %}
   {% if post.data.published %}
   <article class="h-entry">
@@ -22,4 +24,4 @@ pagination:
   </article>
   {% endif %}
 {% endfor %}
-{% include "partials/paginator.liquid" %}
+{% render "partials/paginator.liquid", pagination:pagination %}

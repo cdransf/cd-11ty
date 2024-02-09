@@ -33,4 +33,4 @@ image: /assets/img/ogi/links.jpg
   {% endif -%}
 </article>
 {% endfor %}
-{% include "partials/paginator.liquid" %}
+{% render "partials/paginator.liquid", pagination:pagination %}
