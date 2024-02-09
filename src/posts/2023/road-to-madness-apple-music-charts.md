@@ -133,7 +133,8 @@ _Cool_[^4]. GitHub triggers a rebuild of the site every hour, Netlify builds it,
 
 There are some significant issues with this approach: it doesn't capture listens to an album in a loop (like me playing the new Outer Heaven record today — hails 🤘). It can get wonky when my diff function hits a track order that elicits a false positive return value.
 
-{% image 'https://cdn.coryd.dev/blog/charlie.jpg', 'Charlie Day standing in front of charts', 'image__banner' %}
+{% capture fallbackIcon %}{% tablericon "photo" "Charlie Day standing in front of charts" %}{% endcapture %}
+{% image 'https://cdn.coryd.dev/blog/charlie.jpg', 'Charlie Day standing in front of charts', 'image__banner', 'lazy', 'banner', fallbackIcon %}
 
 "But Cory there's last.fm." I hear this, I love last.fm, but I've got concerns about its age, ownership and maintenance. I don't want to be on the wrong end of a scream test when the wrong (right?) server rack gets decommissioned.
 

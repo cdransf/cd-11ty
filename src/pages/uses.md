@@ -9,7 +9,8 @@ image: /assets/img/pages/uses.jpg
 
 Software and services that I use for work and my own enjoyment.
 
-{% image 'https://coryd.dev/assets/img/pages/uses.jpg', 'My desk', 'image__banner', 'eager' %}
+{% capture fallbackIcon %}{% tablericon "photo" "My desk" %}{% endcapture %}
+{% image 'https://coryd.dev/assets/img/pages/uses.jpg', 'My desk', 'image__banner', 'eager', 'banner', fallbackIcon %}
 
 <h3>Computer setup</h3>
 

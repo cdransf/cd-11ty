@@ -400,7 +400,8 @@ li {
 }
 
 /* images */
-.image__banner {
+.image__banner,
+.image__placeholder.banner {
   border: 1px solid var(--accent-color);
   border-radius: var(--rounded-lg);
   height: auto;
@@ -423,6 +424,11 @@ li {
 
 .image__placeholder.round {
   border-radius: var(--rounded-full);
+}
+
+.image__placeholder.banner {
+  padding: 6rem 0;
+  margin: 1rem 0;
 }
 
 /* pages */
