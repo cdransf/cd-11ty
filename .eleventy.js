@@ -37,7 +37,6 @@ export default async function (eleventyConfig) {
     boxColorLight: '#e5e7eb',
     highlightColorLight: '#2563eb',
     textColorLight: '#1f2937',
-
     boxColorDark: '#374151',
     highlightColorDark: '#60a5fa',
     textColorDark: '#fff',
@@ -51,10 +50,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.setLiquidOptions({
     jsTruthy: true,
   })
-
-  // tailwind watches
-  eleventyConfig.addWatchTarget('./tailwind.config.js')
-  eleventyConfig.addWatchTarget('./tailwind.css')
 
   // passthrough
   eleventyConfig.addPassthroughCopy('src/assets')
