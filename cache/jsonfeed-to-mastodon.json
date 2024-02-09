@@ -9872,5 +9872,27 @@
       "https://social.lol/users/cory/statuses/111894347793867138"
     ],
     "lastTootTimestamp": 1707372250386
+  },
+  "https://app.thestorygraph.com/books/f92ebcc5-c1ff-43b6-8c1e-6c4f5d2b1641": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvZjkyZWJjYzUtYzFmZi00M2I2LThjMWUtNmM0ZjVkMmIxNjQx",
+    "title": "📖: Flying Blind: Boeing's MAX Tragedy and the Lost Soul of an American Icon",
+    "url": "https://app.thestorygraph.com/books/f92ebcc5-c1ff-43b6-8c1e-6c4f5d2b1641",
+    "content_text": "📖: Flying Blind: Boeing's MAX Tragedy and the Lost Soul of an American Icon #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/f92ebcc5-c1ff-43b6-8c1e-6c4f5d2b1641",
+    "date_published": "Wed, 07 Feb 2024 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111899534758532868"
+    ],
+    "lastTootTimestamp": 1707451397127
+  },
+  "https://coryd.dev/now?ts=1707393600000": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MDczOTM2MDAwMDA=",
+    "title": "🎧: My top artists for the week: Portrayal of Guilt @ 52 plays, AFI @ 37 plays, Nucleus @ 34 plays, Hauntologist @ 32 plays, Defeated Sanity @ 30 plays, NoMeansNo @ 27 plays, Aesop Rock @ 26 plays, Galvanizer @ 24 plays #Music #LastFM",
+    "url": "https://coryd.dev/now?ts=1707393600000",
+    "content_text": "🎧: My top artists for the week: Portrayal of Guilt @ 52 plays, AFI @ 37 plays, Nucleus @ 34 plays, Hauntologist @ 32 plays, Defeated Sanity @ 30 plays, NoMeansNo @ 27 plays, Aesop Rock @ 26 plays, Galvanizer @ 24 plays #Music #LastFM  https://coryd.dev/now?ts=1707393600000",
+    "date_published": "Thu, 08 Feb 2024 12:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111901425058547121"
+    ],
+    "lastTootTimestamp": 1707480240852
   }
 }
