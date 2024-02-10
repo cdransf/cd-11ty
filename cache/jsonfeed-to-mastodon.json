@@ -9912,7 +9912,10 @@
     "url": "https://gomakethings.com/html-as-the-baseline/",
     "content_text": "🔗: HTML as the baseline #WebDev https://gomakethings.com/html-as-the-baseline/",
     "date_published": "Fri, 09 Feb 2024 19:42:08 +0000",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111904281411677034"
+    ],
+    "lastTootTimestamp": 1707523825309
   },
   "https://www.mayank.co/blog/safari-focus/": {
     "id": "aHR0cHM6Ly93d3cubWF5YW5rLmNvL2Jsb2cvc2FmYXJpLWZvY3VzLw==",
@@ -9924,5 +9927,13 @@
       "https://social.lol/users/cory/statuses/111903781883898271"
     ],
     "lastTootTimestamp": 1707516203137
+  },
+  "https://iamfran.com/archives/design-is-not-my-passion": {
+    "id": "aHR0cHM6Ly9pYW1mcmFuLmNvbS9hcmNoaXZlcy9kZXNpZ24taXMtbm90LW15LXBhc3Npb24=",
+    "title": "🔗: Design is NOT my passion",
+    "url": "https://iamfran.com/archives/design-is-not-my-passion",
+    "content_text": "🔗: Design is NOT my passion #Tech https://iamfran.com/archives/design-is-not-my-passion",
+    "date_published": "Fri, 09 Feb 2024 20:59:24 +0000",
+    "toots": []
   }
 }
