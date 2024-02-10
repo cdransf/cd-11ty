@@ -9911,7 +9911,7 @@
     "title": "🔗: HTML as the baseline",
     "url": "https://gomakethings.com/html-as-the-baseline/",
     "content_text": "🔗: HTML as the baseline #WebDev https://gomakethings.com/html-as-the-baseline/",
-    "date_published": "Fri, 09 Feb 2024 19:42:08 +0000",
+    "date_published": "Sat, 10 Feb 2024 01:44:19 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111904281411677034"
     ],
@@ -9932,11 +9932,22 @@
     "id": "aHR0cHM6Ly9pYW1mcmFuLmNvbS9hcmNoaXZlcy9kZXNpZ24taXMtbm90LW15LXBhc3Npb24=",
     "title": "🔗: Design is NOT my passion",
     "url": "https://iamfran.com/archives/design-is-not-my-passion",
-    "content_text": "🔗: Design is NOT my passion #Tech https://iamfran.com/archives/design-is-not-my-passion",
-    "date_published": "Fri, 09 Feb 2024 20:59:24 +0000",
+    "content_text": "🔗: Design is NOT my passion  https://iamfran.com/archives/design-is-not-my-passion",
+    "date_published": "Sat, 10 Feb 2024 17:50:09 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111904738380187540"
     ],
     "lastTootTimestamp": 1707530798114
+  },
+  "https://app.thestorygraph.com/books/39f4ba6d-70c8-4a37-b96a-cdc37f1f6a64": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvMzlmNGJhNmQtNzBjOC00YTM3LWI5NmEtY2RjMzdmMWY2YTY0",
+    "title": "📖: Our Enemies Will Vanish: The Russian Invasion and Ukraine's War of Independence",
+    "url": "https://app.thestorygraph.com/books/39f4ba6d-70c8-4a37-b96a-cdc37f1f6a64",
+    "content_text": "📖: Our Enemies Will Vanish: The Russian Invasion and Ukraine's War of Independence #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/39f4ba6d-70c8-4a37-b96a-cdc37f1f6a64",
+    "date_published": "Fri, 09 Feb 2024 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111908970436191693"
+    ],
+    "lastTootTimestamp": 1707595374151
   }
 }
