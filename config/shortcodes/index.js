@@ -18,15 +18,6 @@ export const img = async (
   sizes = '90vw',
   formats = ['avif', 'webp', 'jpeg']
 ) => {
-  const isLocal = src?.includes('src/assets');
-  const imageExists = async () => {
-    try {
-      return await fetch(src, { method: 'HEAD' }).then((res) => res.ok);
-    } catch {
-      return false;
-    }
-  };
-
   const generateImage = async () => {
     const widths = [320, 570, 880, 1024, 1248];
     const metadata = await Image(src, {
@@ -70,7 +61,7 @@ export const img = async (
   };
 
   if (process.env.ELEVENTY_PRODUCTION) {
-    return isLocal ? await generateImage() : await imageExists().then(async (exists) => (exists ? await generateImage() : await generatePlaceholder()));
+    return await generateImage();
   } else {
     return await generatePlaceholder();
   }
