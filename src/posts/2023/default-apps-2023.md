@@ -8,7 +8,7 @@ tags: ['tech', 'macOS']
 In the spirit of following a trend, here are my default apps as of now (the end of 2023).<!-- excerpt -->
 
 - Mail service: <a class="plausible-event-name=Proton+referral" href="https://pr.tn/ref/X775YX40Z50G">Proton</a>
-- Mail client: Proton in a Safari web container
+- Mail client: Proton's desktop app (it's a wrapper of the web app, but it's quite nice and works well with their calendar)
 - Tasks: [Todoist](https://todoist.com)
 - RSS service/client/bookmarking: [Readwise Reader](https://readwise.io/read) + clips sent to [Bear](https://bear.app)
 - Launcher: [Alfred](https://alfredapp.com)
