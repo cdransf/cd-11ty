@@ -27,7 +27,8 @@ blockquote {
   font-size: var(--font-size-lg);
   line-height: var(--line-height-lg);
   padding-left: .875rem;
-  border-left: .25rem solid var(--text-color);
+  color: var(--gray-dark);
+  border-left: .25rem solid var(--gray-dark);
   word-break: break-word;
 }
 

@@ -2,6 +2,9 @@ export default [
   {
     "title": "This website is personal",
     "author": "Frills",
+    "created_at":"2024-02-02T21:10:12.783499+00:00",
+    "updated_at":"2024-02-03T00:22:28.594852+00:00",
+    "published_date":1706832000000,
     "tags": {
       "tech": {
         "name": "tech",
@@ -26,6 +29,9 @@ export default [
     "url": "https://read.readwise.io/read/01hp2d8dggjjmgjg8pjxvdwnpz",
     "title": "The power to not",
     "author": "neatnik.net",
+    "created_at": "2024-01-30T17:40:08.899912+00:00",
+    "updated_at": "2024-01-30T21:26:29.469528+00:00",
+    "published_date": 1706313600000,
     "tags": {
       "tech": {
         "name": "tech",
