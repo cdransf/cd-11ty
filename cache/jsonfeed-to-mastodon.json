@@ -9960,5 +9960,38 @@
       "https://social.lol/users/cory/statuses/111909950255657255"
     ],
     "lastTootTimestamp": 1707610325382
+  },
+  "https://www.citationneeded.news/we-need-to-talk-about-digital-ownership/": {
+    "id": "aHR0cHM6Ly93d3cuY2l0YXRpb25uZWVkZWQubmV3cy93ZS1uZWVkLXRvLXRhbGstYWJvdXQtZGlnaXRhbC1vd25lcnNoaXAv",
+    "title": "🔗: We need to talk about digital ownership",
+    "url": "https://www.citationneeded.news/we-need-to-talk-about-digital-ownership/",
+    "content_text": "🔗: We need to talk about digital ownership #Tech https://www.citationneeded.news/we-need-to-talk-about-digital-ownership/",
+    "date_published": "Mon, 12 Feb 2024 01:12:54 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111916523056144636"
+    ],
+    "lastTootTimestamp": 1707710617985
+  },
+  "https://trakt.tv/movies/shaun-of-the-dead-2004": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvc2hhdW4tb2YtdGhlLWRlYWQtMjAwNA==",
+    "title": "🎥: Shaun of the Dead",
+    "url": "https://trakt.tv/movies/shaun-of-the-dead-2004",
+    "content_text": "🎥: Shaun of the Dead #Movies #Watching #Trakt https://trakt.tv/movies/shaun-of-the-dead-2004",
+    "date_published": "Mon, 12 Feb 2024 03:39:31 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111916994244323098"
+    ],
+    "lastTootTimestamp": 1707717807734
+  },
+  "https://app.thestorygraph.com/books/457eae82-64b0-43a6-a268-9fbbb012744e": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvNDU3ZWFlODItNjRiMC00M2E2LWEyNjgtOWZiYmIwMTI3NDRl",
+    "title": "📖: The Siege of Mecca: The Forgotten Uprising in Islam's Holiest Shrine and the Birth of Al Qaeda",
+    "url": "https://app.thestorygraph.com/books/457eae82-64b0-43a6-a268-9fbbb012744e",
+    "content_text": "📖: The Siege of Mecca: The Forgotten Uprising in Islam's Holiest Shrine and the Birth of Al Qaeda #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/457eae82-64b0-43a6-a268-9fbbb012744e",
+    "date_published": "Sat, 10 Feb 2024 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111917467494524674"
+    ],
+    "lastTootTimestamp": 1707725028962
   }
 }
