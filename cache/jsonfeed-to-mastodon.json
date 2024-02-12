@@ -9971,5 +9971,16 @@
       "https://social.lol/users/cory/statuses/111916523056144636"
     ],
     "lastTootTimestamp": 1707710617985
+  },
+  "https://trakt.tv/movies/shaun-of-the-dead-2004": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvc2hhdW4tb2YtdGhlLWRlYWQtMjAwNA==",
+    "title": "🎥: Shaun of the Dead",
+    "url": "https://trakt.tv/movies/shaun-of-the-dead-2004",
+    "content_text": "🎥: Shaun of the Dead #Movies #Watching #Trakt https://trakt.tv/movies/shaun-of-the-dead-2004",
+    "date_published": "Mon, 12 Feb 2024 03:39:31 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111916994244323098"
+    ],
+    "lastTootTimestamp": 1707717807734
   }
 }
