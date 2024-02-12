@@ -9960,5 +9960,16 @@
       "https://social.lol/users/cory/statuses/111909950255657255"
     ],
     "lastTootTimestamp": 1707610325382
+  },
+  "https://www.citationneeded.news/we-need-to-talk-about-digital-ownership/": {
+    "id": "aHR0cHM6Ly93d3cuY2l0YXRpb25uZWVkZWQubmV3cy93ZS1uZWVkLXRvLXRhbGstYWJvdXQtZGlnaXRhbC1vd25lcnNoaXAv",
+    "title": "🔗: We need to talk about digital ownership",
+    "url": "https://www.citationneeded.news/we-need-to-talk-about-digital-ownership/",
+    "content_text": "🔗: We need to talk about digital ownership #Tech https://www.citationneeded.news/we-need-to-talk-about-digital-ownership/",
+    "date_published": "Mon, 12 Feb 2024 01:12:54 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111916523056144636"
+    ],
+    "lastTootTimestamp": 1707710617985
   }
 }
