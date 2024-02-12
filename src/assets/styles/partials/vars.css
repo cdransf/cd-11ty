@@ -113,6 +113,19 @@
   }
 }
 
+:root body.theme__dark {
+  --text-color: var(--white);
+  --background-color: var(--black);
+  --text-color-inverted: var(--black);
+  --background-color-inverted: var(--white);
+  --accent-color: var(--blue-400);
+  --accent-color-hover: var(--blue-200);
+  --gray-light: var(--gray-900);
+  --gray-lighter: var(--gray-950);
+  --gray-dark: var(--gray-300);
+  --brand-github: #f5f5f5;
+}
+
 @media (prefers-reduced-motion) {
   :root {
     --transition-duration-default: 0.01ms;
