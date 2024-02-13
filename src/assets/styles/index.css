@@ -221,7 +221,7 @@ nav ul li .active svg:hover {
 }
 
 /* social icons */
-.at svg { stroke: var(--brand-proton) !important; }
+.at svg { stroke: var(--brand-hey) !important; }
 .brand-github svg { stroke: var(--brand-github) !important; }
 .brand-mastodon svg { stroke: var(--brand-mastodon) !important; }
 .brand-lastfm svg { stroke: var(--brand-lastfm) !important; }

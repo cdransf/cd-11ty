@@ -81,7 +81,7 @@ All of these particular folders live as children of my Archive folder and are au
 
 If you're a [1Password](https://1password.com) user you can link your accounts and generate per-service, [masked emails for improved security](https://www.fastmail.help/hc/en-us/articles/4406536368911-Masked-Email). The idea here being that if your primary email is known, it can be used to trigger password resets at different services or leveraged in brute-force attacks, but this is mitigated by using a masked/pseudo-random address for each service.
 
-Did I miss anything? [Email me](mailto:hi@coryd.dev)[^7].
+Did I miss anything? [Email me](mailto:coryd@hey.com)[^7].
 
 [^1]: As an aside, [mailbox.org](https://mailbox.org) is also quite nice and offers some nice privacy features but isn't _quite_ as polished as Fastmail.
 [^2]: Which amounts to seamless syncing with iOS at the system level or via an app like [DAVx](https://play.google.com/store/apps/details?id=at.bitfire.davdroid&hl=en) on Android.

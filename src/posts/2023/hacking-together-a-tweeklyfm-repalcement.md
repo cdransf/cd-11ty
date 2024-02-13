@@ -45,7 +45,7 @@ jobs:
         with:
           commit_message: Update artist charts for the week.
           commit_user_name: cdransf
-          commit_user_email: hi@coryd.dev
+          commit_user_email: coryd@hey.com
           commit_author: Cory Dransfeldt
 ```
 

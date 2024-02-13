@@ -10,7 +10,6 @@ description: 'Referral links for services that I use.'
 Referral links for services I use. I save some money, and you do as well if you choose to use them.
 
 <ul class="link__list">
-  <li><a class="no-underline plausible-event-name=Proton+referral" href="https://pr.tn/ref/X775YX40Z50G">Proton</a></li>
   <li><a class="no-underline plausible-event-name=NextDNS+referral" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a></li>
   <li><a class="no-underline plausible-event-name=DNSimple+referral" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a></li>
   <li><a class="no-underline plausible-event-name=bunny+referral" href="https://bunny.net?ref=revw3mehej">Bunny.net</a></li>
