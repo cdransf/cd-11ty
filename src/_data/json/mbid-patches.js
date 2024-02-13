@@ -10,6 +10,7 @@ export default {
   'chapel of disease': '27a3ffb1-b3c6-422f-88a0-463a497f2d6f',
   contaminated: '11f7a795-25b1-4f25-8b23-734cba19f8a5',
   cruciamentum: '9a783663-db0c-4237-a3a9-afe72d055ddc',
+  deafheaven: 'f4ccf6c5-ad41-4f8f-bb9e-6e2c6ad23302',
   'edge of sanity': '82d1972f-f815-480d-ba78-9873b799bdd1',
   envy: '8c4519da-59e7-44b5-868d-350dffb30b51',
   'fawn limbs': '91cd46b7-30ef-4b99-a332-89512c02df2e',
