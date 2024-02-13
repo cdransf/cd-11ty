@@ -1,11 +1,9 @@
 import EleventyFetch from '@11ty/eleventy-fetch'
-import TvMock from './json/mocks/tv.js'
 
 export default async function () {
   const TV_KEY = process.env.API_KEY_TRAKT
   const MOVIEDB_KEY = process.env.API_KEY_MOVIEDB
   const url = 'https://api.trakt.tv/users/cdransf/history/shows?page=1&limit=75'
-  let episodes
   const formatEpisodeData = (shows) => {
     const episodeData = []
     const startingEpisodes = []
@@ -61,33 +59,30 @@ export default async function () {
     return episodeData.reverse()
   }
 
-  if (process.env.ELEVENTY_PRODUCTION) {
-    const res = EleventyFetch(url, {
+  const res = EleventyFetch(url, {
+    duration: '1h',
+    type: 'json',
+    fetchOptions: {
+      headers: {
+        'Content-Type': 'application/json',
+        'trakt-api-version': 2,
+        'trakt-api-key': TV_KEY,
+      },
+    },
+  }).catch()
+  const shows = await res
+  const episodes = formatEpisodeData(shows)
+  for (const episode of episodes) {
+    const tmdbId = episode['tmdbId']
+    const tmdbUrl = `https://api.themoviedb.org/3/tv/${tmdbId}?api_key=${MOVIEDB_KEY}`
+    const tmdbRes = EleventyFetch(tmdbUrl, {
       duration: '1h',
       type: 'json',
-      fetchOptions: {
-        headers: {
-          'Content-Type': 'application/json',
-          'trakt-api-version': 2,
-          'trakt-api-key': TV_KEY,
-        },
-      },
-    }).catch()
-    const shows = await res
-    episodes = formatEpisodeData(shows)
-    for (const episode of episodes) {
-      const tmdbId = episode['tmdbId']
-      const tmdbUrl = `https://api.themoviedb.org/3/tv/${tmdbId}?api_key=${MOVIEDB_KEY}`
-      const tmdbRes = EleventyFetch(tmdbUrl, {
-        duration: '1h',
-        type: 'json',
-      })
-      const tmdbData = await tmdbRes
-      const posterPath = tmdbData['poster_path']
-      episode.image = `https://cd-movies.b-cdn.net/t/p/w500${posterPath}`
-    }
-  } else {
-    episodes = formatEpisodeData(TvMock)
+    })
+    const tmdbData = await tmdbRes
+    const posterPath = tmdbData['poster_path']
+    episode.image = `https://cd-movies.b-cdn.net/t/p/w500${posterPath}`
   }
+
   return episodes;
 }

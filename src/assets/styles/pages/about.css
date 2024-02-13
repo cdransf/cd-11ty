@@ -5,6 +5,7 @@
 .avatar__wrapper {
   width: 100%;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .avatar__wrapper img {

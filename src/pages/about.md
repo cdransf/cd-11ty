@@ -10,8 +10,7 @@ image: /assets/img/ogi/about.jpg
 <style>{{ css }}</style>
 <div class="avatar__wrapper flex--centered">
   {% capture about_alt %}{{ meta.siteName }} - image by David Neal / @reverentgeek{% endcapture %}
-  {% capture fallbackIcon %}{% tablericon "photo" about_alt %}{% endcapture %}
-  {% image './src/assets/img/avatar.webp', about_alt, '', 'eager', 'banner', fallbackIcon %}
+  <img src="/assets/img/avatar.webp" alt="{{ about_alt }}" />
 </div>
 <h2 class="page__header text-center">Hi, I'm Cory</h2>
 

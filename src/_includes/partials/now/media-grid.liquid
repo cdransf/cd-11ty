@@ -37,12 +37,7 @@
               'lazy'
             {%- endif -%}
           {%- endcapture -%}
-          {% capture fallbackIcon %}{% tablericon icon alt %}{% endcapture %}
-          {% if imageMaxWidth %}
-            {% image item.image, alt, '', loadingStrategy, shape, fallbackIcon, imageMaxWidth %}
-          {% else %}
-            {% image item.image, alt, '', loadingStrategy, shape, fallbackIcon, 1248 %}
-          {% endif %}
+          <img src="{{ item.image }}" alt="{{ alt }}" loading="{{ loadingStrategy }}" />
         </div>
       </a>
     {% endfor %}

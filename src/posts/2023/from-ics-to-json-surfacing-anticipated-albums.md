@@ -65,7 +65,6 @@ Rendering the output is as simple as:
 
 {% endraw %}
 Leaving us with:
-{% capture fallbackIcon %}{% tablericon "photo" "Albums I'm looking forward to" %}{% endcapture %}
-{% image 'https://cdn.coryd.dev/blog/album-releases.jpg', 'Albums I\'m looking forward to', 'image__banner', 'eager', 'banner', fallbackIcon %}
+<img src="https://cdn.coryd.dev/blog/album-releases.jpg" alt="Albums I'm looking forward to" class="image__banner" />
 
 [^1]: At this point, a dev playground.

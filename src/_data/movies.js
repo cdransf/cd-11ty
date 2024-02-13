@@ -1,5 +1,4 @@
 import EleventyFetch from '@11ty/eleventy-fetch'
-import MoviesMock from './json/mocks/movies.js'
 
 export default async function () {
   const TV_KEY = process.env.API_KEY_TRAKT
@@ -19,34 +18,30 @@ export default async function () {
     return movie;
   })
 
-  if (process.env.ELEVENTY_PRODUCTION) {
-    const res = EleventyFetch(url, {
+  const res = EleventyFetch(url, {
+    duration: '1h',
+    type: 'json',
+    fetchOptions: {
+      headers: {
+        'Content-Type': 'application/json',
+        'trakt-api-version': 2,
+        'trakt-api-key': TV_KEY,
+      },
+    },
+  }).catch()
+  const data = await res
+  const movies = formatMovieData(data)
+
+  for (const movie of movies) {
+    const tmdbId = movie['tmdbId']
+    const tmdbUrl = `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${MOVIEDB_KEY}`
+    const tmdbRes = EleventyFetch(tmdbUrl, {
       duration: '1h',
       type: 'json',
-      fetchOptions: {
-        headers: {
-          'Content-Type': 'application/json',
-          'trakt-api-version': 2,
-          'trakt-api-key': TV_KEY,
-        },
-      },
-    }).catch()
-    const data = await res
-    const movies = formatMovieData(data)
-
-    for (const movie of movies) {
-      const tmdbId = movie['tmdbId']
-      const tmdbUrl = `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${MOVIEDB_KEY}`
-      const tmdbRes = EleventyFetch(tmdbUrl, {
-        duration: '1h',
-        type: 'json',
-      })
-      const tmdbData = await tmdbRes
-      const posterPath = tmdbData['poster_path']
-      movie.image = `https://cd-movies.b-cdn.net/t/p/w500${posterPath}`
-    }
-    return movies;
-  } else {
-    return formatMovieData(MoviesMock)
+    })
+    const tmdbData = await tmdbRes
+    const posterPath = tmdbData['poster_path']
+    movie.image = `https://cd-movies.b-cdn.net/t/p/w500${posterPath}`
   }
+  return movies;
 }

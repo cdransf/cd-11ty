@@ -3,17 +3,18 @@ import tablerIcons from 'eleventy-plugin-tabler-icons'
 import pluginRss from '@11ty/eleventy-plugin-rss'
 import postGraph from '@rknightuk/eleventy-plugin-post-graph'
 import embedEverything from 'eleventy-plugin-embed-everything'
+import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
 
 import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItFootnote from 'markdown-it-footnote'
 import htmlmin from 'html-minifier-terser'
+import path from 'path';
 
 import filters from './config/filters/index.js'
 import { slugifyString } from './config/utils/index.js'
 import { svgToJpeg } from './config/events/index.js'
 import { tagList, tagMap, postStats } from './config/collections/index.js'
-import { img } from './config/shortcodes/index.js'
 
 import { execSync } from 'child_process'
 
@@ -42,6 +43,22 @@ export default async function (eleventyConfig) {
     textColorDark: '#fff',
   })
   eleventyConfig.addPlugin(embedEverything);
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    extensions: 'html',
+    formats: ['avif', 'webp', 'jpeg'],
+    widths: [320, 570, 880, 1024, 1248],
+    defaultAttributes: {
+      loading: 'lazy',
+      decoding: 'async',
+      sizes: '90vw',
+    },
+    outputDir: './_site/assets/img/cache/',
+    urlPath: '/assets/img/cache/',
+    filenameFormat: (id, src, width, format) => {
+      const { name } = path.parse(src);
+      return `${name}-${width}w.${format}`;
+    },
+  });
 
   // quiet build output
   eleventyConfig.setQuietMode(true)
@@ -96,7 +113,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('slugify', slugifyString)
 
   // shortcodes
-  eleventyConfig.addShortcode('image', img)
   eleventyConfig.addShortcode('appVersion', () => appVersion)
 
   // transforms

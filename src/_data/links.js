@@ -1,5 +1,4 @@
 import EleventyFetch from '@11ty/eleventy-fetch'
-import LinksMock from './json/mocks/links.js'
 
 export default async function () {
   const API_TOKEN_READWISE = process.env.API_TOKEN_READWISE
@@ -17,20 +16,16 @@ export default async function () {
     }
   })
 
-  if (process.env.ELEVENTY_PRODUCTION) {
-    const res = EleventyFetch(url, {
-      duration: '1h',
-      type: 'json',
-      fetchOptions: {
-        headers: {
-          Authorization: `Token ${API_TOKEN_READWISE}`,
-        },
+  const res = EleventyFetch(url, {
+    duration: '1h',
+    type: 'json',
+    fetchOptions: {
+      headers: {
+        Authorization: `Token ${API_TOKEN_READWISE}`,
       },
-    }).catch()
-    const data = await res
-    return formatLinkData(data['results']).filter((link) => link.tags.includes('share'))
-  } else {
-    return formatLinkData(LinksMock)
-  }
+    },
+  }).catch()
+  const data = await res
+  return formatLinkData(data['results']).filter((link) => link.tags.includes('share'))
 
 }

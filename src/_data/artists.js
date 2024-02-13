@@ -1,6 +1,5 @@
 import EleventyFetch from '@11ty/eleventy-fetch';
 import mbidPatches from './json/mbid-patches.js';
-import ArtistsMock from './json/mocks/artists.js'
 
 const mbidMap = (artist) => {
   return mbidPatches[artist.toLowerCase()] || '';
@@ -37,14 +36,10 @@ export default async function () {
     };
   });
 
-  if (process.env.ELEVENTY_PRODUCTION) {
-    const res = EleventyFetch(url, {
-      duration: '1h',
-      type: 'json',
-    }).catch();
-    const data = await res;
-    return formatArtistData(data['topartists']['artist'])
-  } else {
-    return formatArtistData(ArtistsMock);
-  }
+  const res = EleventyFetch(url, {
+    duration: '1h',
+    type: 'json',
+  }).catch();
+  const data = await res;
+  return formatArtistData(data['topartists']['artist'])
 }

@@ -9,8 +9,7 @@ image: /assets/img/pages/uses.jpg
 
 Software and services that I use for work and my own enjoyment.
 
-{% capture fallbackIcon %}{% tablericon "photo" "My desk" %}{% endcapture %}
-{% image 'https://coryd.dev/assets/img/pages/uses.jpg', 'My desk', 'image__banner', 'eager', 'banner', fallbackIcon %}
+<img src="https://coryd.dev/assets/img/pages/uses.jpg" alt="My desk" class="image__banner" />
 
 <h3>Computer setup</h3>
 
