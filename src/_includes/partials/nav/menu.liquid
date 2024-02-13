@@ -2,9 +2,8 @@
   <ul class="flex--centered">
     {% for link in nav.menu %}
       <li>
-        {% render "partials/nav/link.liquid", page: page, link: link.name, icon: link.icon, class: link.class %}
+        {% render "partials/nav/link.liquid", page: page, link: link.name, icon: link.icon %}
       </li>
     {% endfor %}
-    {% render "partials/nav/theme.liquid" %}
   </ul>
 </nav>

@@ -195,9 +195,7 @@ nav svg {
 :is(a:hover, a:active, a:focus) svg,
 a svg:hover,
 a svg:active,
-a svg:focus,
-.theme__toggle:hover,
-.theme__toggle svg:hover {
+a svg:focus {
   stroke-width: var(--stroke-width-bold);
 }
 
@@ -485,28 +483,6 @@ a,
 .pill--button,
 footer nav {
   justify-content: center;
-}
-
-/* theme toggle */
-.theme__toggle,
-.theme__toggle svg{
-  cursor: pointer;
-}
-
-.theme__dark .theme__toggle > .light {
-  display: inline;
-}
-
-.theme__dark .theme__toggle > .dark {
-  display: none;
-}
-
-.theme__toggle > .light {
-  display: none;
-}
-
-.theme__toggle > .dark {
-  display: inline;
 }
 
 /* screens: md */

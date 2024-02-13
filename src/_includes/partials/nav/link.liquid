@@ -1,6 +1,6 @@
 {%- capture pageUrl %}/{{ link | downcase }}/{% endcapture -%}
 {% if pageUrl contains page.fileSlug and page.fileSlug %}
-  <span class="active {{ class }}" aria-current="page">
+  <span class="active" aria-current="page">
     {% if icon %}
       {% tablericon icon link %}
     {% else %}
@@ -9,7 +9,7 @@
   </span>
 {% else %}
   {% if icon %}
-    <a class="{{ icon | downcase }} {{ class }}" href="/{{ link | downcase }}">
+    <a class="{{ icon | downcase }}" href="/{{ link | downcase }}">
       {% tablericon icon link %}
     </a>
   {% else %}
