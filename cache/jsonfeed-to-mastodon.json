@@ -10026,5 +10026,16 @@
       "https://social.lol/users/cory/statuses/111928321480759718"
     ],
     "lastTootTimestamp": 1707890647687
+  },
+  "https://coryd.dev/posts/2024/setting-up-image-transforms-in-eleventy/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9zZXR0aW5nLXVwLWltYWdlLXRyYW5zZm9ybXMtaW4tZWxldmVudHkv",
+    "title": "📝: Setting up image transforms in Eleventy",
+    "url": "https://coryd.dev/posts/2024/setting-up-image-transforms-in-eleventy/",
+    "content_text": "📝: Setting up image transforms in Eleventy #WebDev #Eleventy #JavaScript https://coryd.dev/posts/2024/setting-up-image-transforms-in-eleventy/",
+    "date_published": "Wed, 14 Feb 2024 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111932228713088397"
+    ],
+    "lastTootTimestamp": 1707950267309
   }
 }
