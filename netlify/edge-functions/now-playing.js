@@ -1,5 +1,6 @@
 const emojiMap = (genre, artist) => {
   const DEFAULT = "🎧";
+  if (artist === "Augury") return "☄️";
   if (artist === "Autopsy") return "🧟";
   if (artist === "Black Flag") return "🏴";
   if (artist === "Bruce Springsteen") return "🇺🇸";
