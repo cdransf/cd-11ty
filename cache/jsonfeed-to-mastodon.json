@@ -10037,5 +10037,16 @@
       "https://social.lol/users/cory/statuses/111932228713088397"
     ],
     "lastTootTimestamp": 1707950267309
+  },
+  "https://app.thestorygraph.com/books/51c3c209-fca4-4cb3-afbc-ff5ed60e2e75": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvNTFjM2MyMDktZmNhNC00Y2IzLWFmYmMtZmY1ZWQ2MGUyZTc1",
+    "title": "📖: Technofeudalism: What Killed Capitalism",
+    "url": "https://app.thestorygraph.com/books/51c3c209-fca4-4cb3-afbc-ff5ed60e2e75",
+    "content_text": "📖: Technofeudalism: What Killed Capitalism #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/51c3c209-fca4-4cb3-afbc-ff5ed60e2e75",
+    "date_published": "Tue, 13 Feb 2024 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111933057092620607"
+    ],
+    "lastTootTimestamp": 1707962907352
   }
 }
