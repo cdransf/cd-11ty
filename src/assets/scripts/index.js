@@ -52,15 +52,19 @@ if (window.location.hostname !== 'localhost') {
     document.body.classList.toggle('theme__dark');
   } else if (currentTheme === 'light') {
     document.body.classList.toggle('theme__light');
+  } else if (prefersDarkScheme) {
+    document.body.classList.toggle('theme__dark');
+  } else if (!prefersDarkScheme) {
+    document.body.classList.toggle('theme__light');
   }
 
   btn.addEventListener('click', () => {
-    console.log(prefersDarkScheme)
+    document.body.classList.toggle('theme__light');
+    document.body.classList.toggle('theme__dark');
+
     if (prefersDarkScheme) {
-      document.body.classList.toggle('theme__light');
       theme = document.body.classList.contains('theme__light') ? 'light' : 'dark';
     } else {
-      document.body.classList.toggle('theme__dark');
       theme = document.body.classList.contains('theme__dark') ? 'dark' : 'light';
     }
     localStorage?.setItem('theme', theme);

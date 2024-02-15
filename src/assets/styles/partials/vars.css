@@ -27,9 +27,15 @@
   --white: #fff;
   --black: #000;
 
+  --gray-light: var(--gray-200);
+  --gray-lighter: var(--gray-50);
+  --gray-lightest: #fbfbfb;
+  --gray-dark: var(--gray-700);
+  --blue-dark: #091222;
+
   /* theme */
-  --color-lightest: var(--white);
-  --color-darkest: var(--black);
+  --color-lightest: var(--gray-lightest);
+  --color-darkest: var(--blue-dark);
   --text-color: var(--color-darkest);
   --background-color: var(--color-lightest);
   --text-color-inverted: var(--color-lightest);
@@ -37,9 +43,6 @@
   --accent-color: var(--blue-600);
   --accent-color-hover: var(--blue-800);
   --selection-color: var(--accent-color);
-  --gray-light: var(--gray-200);
-  --gray-lighter: var(--gray-50);
-  --gray-dark: var(--gray-700);
 
   --brand-github: #333;
   --brand-hey: #5522fa;
@@ -50,6 +53,8 @@
   --brand-buy-me-a-coffee: #ffdd00;
   --brand-rss: #f26522;
   --webrings: #ec8fd0;
+  --moon: #655ad2;
+  --sun: #f9d71c;
 
   /* fonts */
   --font-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
@@ -100,10 +105,10 @@
 /* dark theme */
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color: var(--white);
-    --background-color: var(--black);
-    --text-color-inverted: var(--black);
-    --background-color-inverted: var(--white);
+    --text-color: var(--color-lightest);
+    --background-color: var(--color-darkest);
+    --text-color-inverted: var(--color-darkest);
+    --background-color-inverted: var(--color-lightest);
     --accent-color: var(--blue-400);
     --accent-color-hover: var(--blue-200);
     --gray-light: var(--gray-900);
@@ -113,11 +118,25 @@
   }
 }
 
+:root body.theme__light {
+  --text-color: var(--color-darkest);
+  --background-color: var(--color-lightest);
+  --text-color-inverted: var(--color-lightest);
+  --background-color-inverted: var(--color-darkest);
+  --accent-color: var(--blue-600);
+  --accent-color-hover: var(--blue-800);
+  --selection-color: var(--accent-color);
+  --gray-light: var(--gray-200);
+  --gray-lighter: var(--gray-50);
+  --gray-dark: var(--gray-700);
+  --brand-github: #333;
+}
+
 :root body.theme__dark {
-  --text-color: var(--white);
-  --background-color: var(--black);
-  --text-color-inverted: var(--black);
-  --background-color-inverted: var(--white);
+  --text-color: var(--color-lightest);
+  --background-color: var(--color-darkest);
+  --text-color-inverted: var(--color-darkest);
+  --background-color-inverted: var(--color-lightest);
   --accent-color: var(--blue-400);
   --accent-color-hover: var(--blue-200);
   --gray-light: var(--gray-900);

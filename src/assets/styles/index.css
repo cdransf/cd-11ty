@@ -9,12 +9,12 @@ html {
 }
 
 ::-moz-selection {
-  color: var(--white);
+  color: var(--color-lightest);
   background: var(--selection-color);
 }
 
 ::selection {
-  color: var(--white);
+  color: var(--color-lightest);
   background: var(--selection-color);
 }
 
@@ -489,9 +489,12 @@ footer nav {
 
 /* theme toggle */
 .theme__toggle,
-.theme__toggle svg{
+.theme__toggle svg {
   cursor: pointer;
 }
+
+.theme__toggle > .light svg { stroke: var(--sun) !important; }
+.theme__toggle > .dark svg { stroke: var(--moon) !important; }
 
 .theme__dark .theme__toggle > .light {
   display: inline;
@@ -501,11 +504,11 @@ footer nav {
   display: none;
 }
 
-.theme__toggle > .light {
+.theme__light .theme__toggle > .light {
   display: none;
 }
 
-.theme__toggle > .dark {
+.theme__light .theme__toggle > .dark {
   display: inline;
 }
 
