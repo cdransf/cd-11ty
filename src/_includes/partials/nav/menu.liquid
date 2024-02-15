@@ -1,5 +1,5 @@
 <nav aria-label="Primary site navigation">
-  <ul class="flex--centered">
+  <ul class="flex--centered flex--wrap">
     {% for link in nav.menu %}
       <li>
         {% render "partials/nav/link.liquid", page: page, link: link.name, icon: link.icon, class: link.class %}
