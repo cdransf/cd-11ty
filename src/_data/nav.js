@@ -12,7 +12,7 @@ export default async function () {
       { name: 'About' },
       { name: 'Links', icon: 'link' },
       { name: 'Tags', icon: 'tags' },
-      { name: 'Search', icon: 'search' },
+      { name: 'Search', icon: 'search', class: 'client-side' },
       { name: 'Feeds', icon: 'rss' },
       { name: 'Mastodon', icon: 'brand-mastodon' },
     ],
