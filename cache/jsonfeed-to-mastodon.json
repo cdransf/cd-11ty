@@ -10070,5 +10070,16 @@
       "https://social.lol/users/cory/statuses/111940585953393881"
     ],
     "lastTootTimestamp": 1708077788642
+  },
+  "https://app.thestorygraph.com/books/ff4fcd64-fbf9-4199-9acc-497588845e62": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvZmY0ZmNkNjQtZmJmOS00MTk5LTlhY2MtNDk3NTg4ODQ1ZTYy",
+    "title": "📖: The Coming Wave: Technology, Power, and the Twenty-first Century's Greatest Dilemma",
+    "url": "https://app.thestorygraph.com/books/ff4fcd64-fbf9-4199-9acc-497588845e62",
+    "content_text": "📖: The Coming Wave: Technology, Power, and the Twenty-first Century's Greatest Dilemma #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/ff4fcd64-fbf9-4199-9acc-497588845e62",
+    "date_published": "Thu, 15 Feb 2024 16:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111942473968185913"
+    ],
+    "lastTootTimestamp": 1708106597470
   }
 }
