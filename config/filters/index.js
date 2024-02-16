@@ -1,7 +1,6 @@
 import { DateTime } from 'luxon'
 import markdownIt from 'markdown-it'
 import { URL } from 'url'
-import sanitizeHTML from 'sanitize-html'
 
 const utmPattern = /[?&](utm_[^&=]+=[^&#]*)/gi
 const BASE_URL = 'https://coryd.dev'

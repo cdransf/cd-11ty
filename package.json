@@ -18,7 +18,7 @@
     "Eleventy"
   ],
   "author": "Cory Dransfeldt",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@remy/webmention": "^1.5.0",
     "@zachleat/pagefind-search": "^1.0.3"
@@ -43,7 +43,6 @@
     "markdown-it": "^14.0.0",
     "markdown-it-anchor": "^8.4.1",
     "markdown-it-footnote": "^4.0.0",
-    "sanitize-html": "^2.11.0",
     "slugify": "^1.6.6",
     "writing-stats": "^1.0.6"
   }
