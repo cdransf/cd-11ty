@@ -12,7 +12,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Tasks: [Todoist](https://todoist.com)
 - RSS service/client/bookmarking: [Readwise Reader](https://readwise.io/read) + clips sent to [Bear](https://bear.app)
 - Launcher: [Alfred](https://alfredapp.com)
-- Cloud storage: iCloud + <a class="plausible-event-name=Proton+referral" href="https://pr.tn/ref/X775YX40Z50G">Proton</a>
+- Cloud storage: iCloud
 - Photo library: iCloud
 - Web browser: Safari
 - Calendar: [HEY](https://hey.com)
