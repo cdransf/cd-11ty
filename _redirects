@@ -38,7 +38,7 @@
 /assets/img/favicon/favicon-32x32.png /assets/icons/favicon.ico 301!
 /assets/img/favicon/favicon-16x16.png /assets/icons/favicon.ico 301!
 
-# redirects
+# general
 /articles/ / 301!
 /sitemap.txt /sitemap.xml 301!
 /mastodon https://social.lol/@cory 301!
