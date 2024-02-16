@@ -34,7 +34,7 @@ export default async function () {
     fullData.push(...data['results']);
     nextPageCursor = data['nextPageCursor']
     requestCount++;
-    if (!nextPageCursor || requestCount === 20) break;
+    if (!nextPageCursor || requestCount === 5) break;
   }
 
   return formatLinkData(fullData).filter((link) => link.tags.includes('share'))
