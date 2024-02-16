@@ -29,13 +29,11 @@
 
   --gray-light: var(--gray-200);
   --gray-lighter: var(--gray-50);
-  --gray-lightest: #fbfbfb;
   --gray-dark: var(--gray-700);
-  --blue-dark: #091222;
 
   /* theme */
-  --color-lightest: var(--gray-lightest);
-  --color-darkest: var(--blue-dark);
+  --color-lightest: var(--white);
+  --color-darkest: var(--black);
   --text-color: var(--color-darkest);
   --background-color: var(--color-lightest);
   --text-color-inverted: var(--color-lightest);
