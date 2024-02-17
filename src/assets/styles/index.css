@@ -376,6 +376,10 @@ svg {
   animation: spin 1s linear infinite;
 }
 
+.icon--center__vertical {
+  height: 1.75rem;
+}
+
 .icon--center__vertical > svg {
   display: inline;
   vertical-align: middle;
@@ -546,6 +550,11 @@ footer nav {
   article [rel="author"],
   article time {
     height: 1rem;
+  }
+
+  /* icons */
+  .icon--center__vertical {
+    height: 1.5rem;
   }
 
   /* lists */
