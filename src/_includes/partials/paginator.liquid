@@ -17,7 +17,7 @@
       {% tablericon "arrow-left" "Prevous" %}
     </button>
   {% endif %}
-  <div class="text-center">
+  <div class="text--centered">
     <span aria-current="page">{{ pagination.pageNumber | plus: 1 }}</span> of {{ pagination.links.size }}
   </div>
   {% if pagination.href.next %}

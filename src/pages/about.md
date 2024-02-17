@@ -12,7 +12,7 @@ image: /assets/img/ogi/about.jpg
   {% capture about_alt %}{{ meta.siteName }} - image by David Neal / @reverentgeek{% endcapture %}
   <img src="/assets/img/avatar.webp" alt="{{ about_alt }}" />
 </div>
-<h2 class="page__header text-center">Hi, I'm Cory</h2>
+<h2 class="page__header text--centered">Hi, I'm Cory</h2>
 
 I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, [music](https://last.fm/user/coryd_), writing, [reading](https://app.thestorygraph.com/profile/coryd), [tv](https://trakt.tv/users/cdransf) and [movies](https://trakt.tv/users/cdransf).
 

@@ -141,7 +141,7 @@ layout: main
 {% render "partials/now/links.liquid", links:links %}
 {% render "partials/now/media-grid.liquid", data:movies, icon: "movie", title: "Movies", shape: "vertical", count: 6, loading: 'lazy' %}
 {% render "partials/now/media-grid.liquid", data:tv, icon: "device-tv", title: "TV", shape: "vertical", count: 6, loading: 'lazy' %}
-<p class="text-xs text-center pt-6">This is a
+<p class="text-xs text--centered pt-6">This is a
   <a href="https://nownownow.com/about">now page</a>, and if you have your own site,
   <a href="https://nownownow.com/about">you should make one too</a>.</p>
 ```
