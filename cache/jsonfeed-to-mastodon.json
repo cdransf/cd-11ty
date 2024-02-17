@@ -10098,7 +10098,7 @@
     "title": "🔗: People & Content #17: Ephemerality",
     "url": "https://garden.mattstein.com/notes/people-content-17-ephemerality",
     "content_text": "🔗: People & Content #17: Ephemerality #Tech https://garden.mattstein.com/notes/people-content-17-ephemerality",
-    "date_published": "Sat, 17 Feb 2024 18:04:30 +0000",
+    "date_published": "Sat, 17 Feb 2024 18:25:25 +0000",
     "toots": []
   },
   "https://flamedfury.com/posts/making-websites-shoud-be-easy/": {
@@ -10111,5 +10111,16 @@
       "https://social.lol/users/cory/statuses/111948607810810711"
     ],
     "lastTootTimestamp": 1708200192512
+  },
+  "https://joshcollinsworth.com/blog/copilot": {
+    "id": "aHR0cHM6Ly9qb3NoY29sbGluc3dvcnRoLmNvbS9ibG9nL2NvcGlsb3Q=",
+    "title": "🔗: I worry our Copilot is leaving some passengers behind",
+    "url": "https://joshcollinsworth.com/blog/copilot",
+    "content_text": "🔗: I worry our Copilot is leaving some passengers behind #WebDev https://joshcollinsworth.com/blog/copilot",
+    "date_published": "Sat, 17 Feb 2024 19:57:11 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111948812084985626"
+    ],
+    "lastTootTimestamp": 1708203309455
   }
 }
