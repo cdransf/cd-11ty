@@ -3,10 +3,9 @@ export default {
   siteDescription:
     "I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, music, writing, reading and tv and movies.",
   author: 'Cory Dransfeldt',
-  authorEmail: 'coryd@hey.com',
-  authorWebsite: 'https://coryd.dev',
+  email: 'coryd@hey.com',
+  url: 'https://coryd.dev',
   themeColor: '#3b82f6',
-  url: process.env.URL || 'http://localhost:8080',
   siteType: 'Person',
   locale: 'en_US',
   lang: 'en',

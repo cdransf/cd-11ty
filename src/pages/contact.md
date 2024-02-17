@@ -17,7 +17,7 @@ description: 'How to contact me.'
     <ul>
       <li>Ping me on <a href="https://social.lol/@cory">Mastodon</a></li>
       <li>Message me on Signal or iMessage (if you have my phone number)</li>
-      <li><a href="mailto:{{ meta.authorEmail }}">Email me directly</a> if you have a client set up to use <code>mailto:</code> links</li>
+      <li><a href="mailto:{{ meta.email }}">Email me directly</a> if you have a client set up to use <code>mailto:</code> links</li>
       <li>File an issue on the appropriate repo over at <a href="https://github.com/cdransf">GitHub</a></li>
     </ul>
   </div>

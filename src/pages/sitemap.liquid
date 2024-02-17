@@ -2,13 +2,16 @@
 permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
-
+<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for page in collections.all %}
-    <url>
-      <loc>{{ meta.url }}{{ page.url | url }}</loc>
-      <lastmod>{{ page.date }}</lastmod>
-      <changefreq>{{page.data.changeFreq}}</changefreq>
-    </url>
+    {% if not page.data.draft %}
+      <url>
+        <loc>{{ meta.url }}{{ page.url }}</loc>
+        <lastmod>{{ page.date | isoDateOnly }}</lastmod>
+        <changefreq>{%- if page.data.changeFreq -%}{{ page.data.changeFreq }}{%- else -%}monthly{%- endif -%}</changefreq>
+        <priority>{%- if page.data.priority -%}{{ page.data.priority }}{%- else -%}0.5{%- endif %}</priority>
+      </url>
+    {% endif %}
   {% endfor %}
 </urlset>
