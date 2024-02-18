@@ -11,6 +11,9 @@ I built the button as a short Liquid partial:
 {% raw %}
 ```liquid
 <li class="theme__toggle client-side">
+  <span class="placeholder">
+    {% tablericon "placeholder" "Toggle theme placeholder" %}
+  </span>
   <span class="light">
     {% tablericon "sun" "Toggle light theme" %}
   </span>
@@ -81,6 +84,15 @@ Finally, the theme is updated based on the body class applied by the JavaScript,
 
 .theme__toggle > .light svg { stroke: var(--sun) !important; }
 .theme__toggle > .dark svg { stroke: var(--moon) !important; }
+
+.theme__toggle > .light ,
+.theme__toggle > .dark {
+  display: none;
+}
+
+:is(.theme__light, .theme__dark) .theme__toggle > .placeholder {
+  display: none;
+}
 
 .theme__dark .theme__toggle > .light {
   display: inline;

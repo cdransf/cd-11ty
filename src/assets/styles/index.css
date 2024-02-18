@@ -504,6 +504,15 @@ footer nav {
 .theme__toggle > .light svg { stroke: var(--sun) !important; }
 .theme__toggle > .dark svg { stroke: var(--moon) !important; }
 
+.theme__toggle > .light ,
+.theme__toggle > .dark {
+  display: none;
+}
+
+:is(.theme__light, .theme__dark) .theme__toggle > .placeholder {
+  display: none;
+}
+
 .theme__dark .theme__toggle > .light {
   display: inline;
 }
