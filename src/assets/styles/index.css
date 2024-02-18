@@ -484,8 +484,12 @@ li {
   color: var(--color-lightest);
 }
 
-a,
-.pill--button {
+a:hover,
+a:focus,
+a:active,
+.pill--button:hover,
+.pill--button:focus,
+.pill--button:active {
   transition-timing-function: var(--transition-ease-in-out);
   transition-duration: var(--transition-duration-default);
 }
