@@ -87,6 +87,10 @@
   transition-duration: var(--transition-duration-default);
 }
 
+.pagefind-ui__search-clear {
+  height: calc(48px * var(--pagefind-ui-scale)) !important;
+}
+
 .pagefind-ui__button:hover,
 .pagefind-ui__button:active,
 .pagefind-ui__button:focus {
