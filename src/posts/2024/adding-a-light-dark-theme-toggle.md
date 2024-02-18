@@ -36,32 +36,50 @@ The `client-side` class above hides the button should the user have JavaScript d
 </noscript>
 ```
 
-And JavaScript is used to control the behavior of the toggle:
+And JavaScript is used to control the behavior of the toggle — first, in the `<body>` of my base template:
+
+{% raw %}
+```liquid
+{% capture js %}
+  {% render "../assets/scripts/theme.js" %}
+{% endcapture %}
+<script>{{ js }}</script>
+```
+{% endraw %}
+
+Where `theme.js` sets the initial state:
+
+```javascript
+;(async function() {
+  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const currentTheme = localStorage?.getItem('theme');
+
+  if (currentTheme === 'dark') {
+    document.body.classList.add('theme__dark');
+  } else if (currentTheme === 'light') {
+    document.body.classList.add('theme__light');
+  } else if (prefersDarkScheme) {
+    document.body.classList.add('theme__dark');
+  } else if (!prefersDarkScheme) {
+    document.body.classList.add('theme__light');
+  }
+})()
+```
+
+With the following JavaScript set in `assets/scripts/index.js` to add the `click` event listener for the theme toggle:
 
 ```javascript
 ;(async function() {
   const btn = document.querySelector('.theme__toggle');
-  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches; // check the user's OS appearance preference
-  const currentTheme = localStorage?.getItem('theme'); // check if a theme has been set
-  let theme;
-
-  if (!currentTheme) localStorage?.setItem('theme', (prefersDarkScheme ? 'dark' : 'light')) // if a theme hasn't been set, set one based on their OS preference
-
-  // set the body class based on the derived preferences above
-  if (currentTheme === 'dark') {
-    document.body.classList.toggle('theme__dark');
-  } else if (currentTheme === 'light') {
-    document.body.classList.toggle('theme__light');
-  } else if (prefersDarkScheme) {
-    document.body.classList.toggle('theme__dark');
-  } else if (!prefersDarkScheme) {
-    document.body.classList.toggle('theme__light');
-  }
-
-  // allow the user to toggle the theme by clicking the theme button
   btn.addEventListener('click', () => {
     document.body.classList.toggle('theme__light');
     document.body.classList.toggle('theme__dark');
+
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const currentTheme = localStorage?.getItem('theme');
+    let theme;
+
+    if (!currentTheme) localStorage?.setItem('theme', (prefersDarkScheme ? 'dark' : 'light'))
 
     if (prefersDarkScheme) {
       theme = document.body.classList.contains('theme__light') ? 'light' : 'dark';
@@ -139,3 +157,5 @@ Finally, the theme is updated based on the body class applied by the JavaScript,
 ```
 
 With those changes in place, visitors can toggle whichever theme they'd prefer and their preference is persisted in `localStorage` should it be available.
+
+**EDIT:** Many thanks to [Tixie Salander](https://mastodon.guerilla.studio/@tixie) for [guiding me to a solution that improves the initial load experience](https://mastodon.guerilla.studio/@tixie/111950371813634672).
