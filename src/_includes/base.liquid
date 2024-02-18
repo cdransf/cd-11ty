@@ -116,13 +116,14 @@
     </noscript>
   </head>
   <body>
-    {% capture js %}
+    {% capture theme %}
       {% render "../assets/scripts/theme.js" %}
     {% endcapture %}
-    <script>{{ js }}</script>
+    <script>{{ theme }}</script>
     {{ content }}
     {% capture js %}
-      {% render "../assets/scripts/index.js" %}
+      {% render "../assets/scripts/now-playing.js" %}
+      {% render "../assets/scripts/theme-handler.js" %}
     {% endcapture %}
     <script>
       {{ js }}
