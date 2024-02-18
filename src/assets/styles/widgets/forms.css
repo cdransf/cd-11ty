@@ -29,7 +29,7 @@ textarea {
 
 input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="search"],
+input[type="search"]:focus,
 textarea:focus {
   border: 1px solid var(--accent-color-hover) !important;
 }

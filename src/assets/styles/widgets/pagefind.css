@@ -23,6 +23,7 @@
 
 .pagefind-ui__form:before {
   opacity: 1 !important;
+  top: calc(19px * var(--pagefind-ui-scale)) !important;
 }
 
 .pagefind-ui__result-title {
@@ -45,6 +46,9 @@
 
 :is(input[type="text"], input[type="search"]).pagefind-ui__search-input {
   padding-left: 2.375rem !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: calc(53px * var(--pagefind-ui-scale)) !important;
 }
 
 .pagefind-ui__search-clear {

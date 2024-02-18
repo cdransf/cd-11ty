@@ -13,10 +13,10 @@ image: /assets/img/ogi/search.jpg
 <style>{{ css }}</style>
 <pagefind-search _show_images="false">
   <form action="https://duckduckgo.com/" method="get" style="min-height: 3.2em;">
-	<label>
+  <label>
     <input placeholder="Search" type="search" name="q" autocomplete="off" autofocus>
-	</label>
-	<input type="hidden" placeholder="Search" name="sites" value="coryd.dev">
+  </label>
+  <input type="hidden" placeholder="Search" name="sites" value="coryd.dev">
   </form>
 </pagefind-search>
 {% render "partials/popular-posts.liquid", posts: collections.posts, analytics: analytics %}
