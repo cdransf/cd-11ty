@@ -75,5 +75,6 @@ Software and services that I use for work and my own enjoyment.
 - [Slack](http://slack.com): I have a family Slack set up to avoid group text messages and am in a few other community Slacks.
 - [Discord](http://discord.com): I don't _like_ Discord but, for better or worse, it's where some communities I frequent are.
 - [Backblaze](https://backblaze.com): It backs up my MacBook Air and attached storage drive and I don't have to think about it.
+- <a class="no-underline plausible-event-name=Proton+referral" href="https://pr.tn/ref/X775YX40Z50G">Proton VPN</a>: a reliable, trustworthy VPN with all of the features you'd expect from such a service.
 
 Check out [uses.tech](https://uses.tech) for more lists like this one.
