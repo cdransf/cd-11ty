@@ -75,7 +75,14 @@ a svg {
   stroke: var(--accent-color);
 }
 
-:is(a:has(svg):hover, a:has(svg):active, a:has(svg):focus) svg {
+:is(
+    a:has(svg):hover,
+    a:has(svg):active,
+    a:has(svg):focus,
+    button:has(svg):hover,
+    button:has(svg):active,
+    button:has(svg):focus
+) svg {
   stroke: var(--accent-color-hover);
 }
 
@@ -196,6 +203,8 @@ nav svg {
 a svg:hover,
 a svg:active,
 a svg:focus,
+button:hover svg,
+button svg:hover,
 .theme__toggle:hover,
 .theme__toggle svg:hover {
   stroke-width: var(--stroke-width-bold);
@@ -344,7 +353,7 @@ code {
 /* articles */
 article h2 {
   line-height: var(--line-height-2xl);
-  margin: 0 0 .125rem;
+  margin: 0 0 .375rem;
 }
 
 article [rel="author"],
@@ -377,7 +386,7 @@ svg {
 }
 
 .icon--center__vertical {
-  height: 1.75rem;
+  height: 1.275rem;
 }
 
 .icon--center__vertical > svg {
@@ -563,11 +572,6 @@ footer nav {
   article [rel="author"],
   article time {
     height: 1rem;
-  }
-
-  /* icons */
-  .icon--center__vertical {
-    height: 1.5rem;
   }
 
   /* lists */

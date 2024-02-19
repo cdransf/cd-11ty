@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "6.1.7",
+  "version": "6.2.7",
   "description": "The source for my personal site. Built using 11ty and hosted on Netlify.",
   "type": "module",
   "scripts": {
@@ -21,6 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "@daviddarnes/mastodon-post": "^1.1.1",
+    "@daviddarnes/share-button": "^1.1.2",
     "@remy/webmention": "^1.5.0",
     "@zachleat/pagefind-search": "^1.0.3"
   },

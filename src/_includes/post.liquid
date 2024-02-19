@@ -14,7 +14,8 @@ schema: blog
     <h2 class="p-name" data-pagefind-meta="title">{{ title }}</h2>
     <span class="p-author h-card hidden">{{ meta.author }}</span>
     <div class="flex--centered">
-      <time class="dt-published" datetime="{{ date }}">{{ date | readableDate }}</time>
+      <time class="dt-published" datetime="{{ date }}">{{ date | readableDate }} • </time>
+      {% render "partials/share-button.liquid", url:postUrl %}
     </div>
     <div class="p-summary hidden">{{ post_excerpt }}</div>
     <div class="e-content">

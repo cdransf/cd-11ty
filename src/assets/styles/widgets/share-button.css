@@ -1,0 +1,21 @@
+button {
+  background: transparent;
+  padding: 0;
+}
+
+button,
+button > svg {
+  cursor: pointer;
+}
+
+input {
+  border-radius: var(--rounded-md);
+  padding: .25rem;
+  border: none;
+}
+
+label {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  height: 1rem;
+}

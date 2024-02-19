@@ -37,7 +37,8 @@
               'lazy'
             {%- endif -%}
           {%- endcapture -%}
-          <img src="{{ item.image }}" alt="{{ alt }}" loading="{{ loadingStrategy }}" />
+          <!-- <img src="{{ item.image }}" alt="{{ alt }}" loading="{{ loadingStrategy }}" /> -->
+          {{ item.image}}
         </div>
       </a>
     {% endfor %}

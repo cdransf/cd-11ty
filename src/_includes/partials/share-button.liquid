@@ -1,0 +1,23 @@
+{% capture css %}
+  {% render "../../assets/styles/widgets/share-button.css" %}
+{% endcapture %}
+<style>{{ css }}</style>
+<script type="module" src="/assets/scripts/share-button.js"></script>
+<share-button>
+  <button class="icon--small icon--center__vertical">{% tablericon "share" "Share" %}</button>
+  <label>
+    Share this page
+    <input
+      type="url"
+      readonly
+      value="{{ url }}"
+      onclick="this.select()"
+    />
+  </label>
+</share-button>
+<style>
+  share-button:not(:defined) button,
+  share-button:defined label {
+    display: none;
+  }
+</style>
