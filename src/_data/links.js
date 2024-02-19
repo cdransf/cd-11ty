@@ -10,6 +10,11 @@ const getReadableData = (readable) => {
   })
 }
 
+const filterDuplicates = array => {
+  const seenIds = new Set();
+  return array.filter(obj => !seenIds.has(obj.id) && seenIds.add(obj.id));
+};
+
 export default async function () {
    const client = new S3Client({
      credentials: {
@@ -33,6 +38,7 @@ export default async function () {
       summary: link['summary'],
       note: link['notes'],
       description: `${link['summary']}<br/><br/>`,
+      id: link['id']
     }
   })
   const fullData = [];
@@ -72,10 +78,10 @@ export default async function () {
   }
 
   if (process.env.ELEVENTY_PRODUCTION) {
-    const mergedData = [...new Set([
+    const mergedData = filterDuplicates([
       ...Object.values(cachedLinks),
       ...formatLinkData(fullData).filter((link) => link.tags.includes('share'))
-    ])]
+    ])
 
     await client.send(
       new PutObjectCommand({
@@ -84,7 +90,6 @@ export default async function () {
         Body: JSON.stringify(mergedData),
       })
      )
-
     return mergedData
   }
 
