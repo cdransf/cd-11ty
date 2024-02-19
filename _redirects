@@ -29,6 +29,9 @@
 /posts/2023/hacking-together-a-tweeklyfm-replacement/ /posts/2023/hacking-together-a-tweeklyfm-repalcement/
 /tags/.env /tags/env 301!
 
+# 404s
+/assets/img/social-preview/adding-a-light/dark-theme-toggle-preview.jpeg /assets/img/social-preview/adding-a-light-dark-theme-toggle-preview.jpeg 301!
+
 # assets
 /static/images/avatar.webp /assets/img/avatar.webp 301!
 /assets/img/favicon/apple-touch-icon.png /assets/icons/apple-touch-icon.png 301!
