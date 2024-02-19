@@ -1,0 +1,26 @@
+{%- assign shareLink = postUrl | findPost: linkPosts -%}
+{%- if shareLink %}
+{% capture css %}
+  {% render "../../assets/styles/widgets/mastodon-post.css" %}
+{% endcapture %}
+<style>{{ css }}</style>
+<script type="module" src="/assets/scripts/mastodon-post.js"></script>
+<template id="mastodon-post-template">
+  <div class="mastodon-post-wrapper">
+    <blockquote data-key="content"></blockquote>
+    <dl>
+      <dt>{% tablericon "refresh" "Reposts" %}</dt>
+      <dd data-key="reblogs_count"></dd>
+      <dt>{% tablericon "message-circle" "Replies" %}</dt>
+      <dd data-key="replies_count"></dd>
+      <dt>{% tablericon "star" "Favorites" %}</dt>
+      <dd data-key="favourites_count"></dd>
+    </dl>
+  </div>
+</template>
+<mastodon-post>
+  <a href="{{ shareLink }}">
+    Discuss on Mastodon
+  </a>
+</mastodon-post>
+{% endif -%}

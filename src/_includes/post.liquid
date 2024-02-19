@@ -29,5 +29,6 @@ schema: blog
     </div>
   </article>
 </div>
+{% render "partials/mastodon-post.liquid", postUrl: postUrl, linkPosts: linkPosts %}
 {% render "partials/post-tags.liquid", tags: tags %}
 {% render "partials/popular-posts.liquid", posts: collections.posts, analytics: analytics %}
