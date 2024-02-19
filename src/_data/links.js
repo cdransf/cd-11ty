@@ -81,7 +81,7 @@ export default async function () {
     const mergedData = filterDuplicates([
       ...formatLinkData(fullData).filter((link) => link.tags.includes('share')),
       ...Object.values(cachedLinks)
-    ]).sort((a, b) => new Date(b['date']) - new Date(a['date']))
+    ])
 
     await client.send(
       new PutObjectCommand({
