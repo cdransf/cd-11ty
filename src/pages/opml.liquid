@@ -5,13 +5,13 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="1.0">
-    <head>
-        <title>OPML for all feeds in Cory Dransfeldt's blogroll</title>
-        <dateCreated>{{ page.date | dateToRfc822 }}</dateCreated>
-    </head>
-    <body>
-        {%- for blog in blogroll -%}
-            <outline text="{{ blog.name }}" title="{{ blog.name }}" type="rss" xmlUrl="{{ blog.feed }}" htmlUrl="{{ blog.url }}"/>
-        {% endfor %}
-    </body>
+  <head>
+    <title>OPML for all feeds in Cory Dransfeldt's blogroll</title>
+    <dateCreated>{{ page.date | stringToRFC822Date }}</dateCreated>
+  </head>
+  <body>
+    {%- for blog in blogroll -%}
+      <outline text="{{ blog.name }}" title="{{ blog.name }}" type="rss" xmlUrl="{{ blog.feed }}" htmlUrl="{{ blog.url }}"/>
+    {% endfor %}
+  </body>
 </opml>

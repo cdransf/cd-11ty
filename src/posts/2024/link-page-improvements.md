@@ -8,7 +8,7 @@ tags:
   - 'Eleventy'
 ---
 
-I made a few quick improvements to my [links page](/links).<!-- excerpt -->
+I made a few quick improvements to my [links page](https://coryd.dev/links).<!-- excerpt -->
 
 I've fetched the author from Readwise's Reader API and displayed it next to the time, which required the simple addition of a field to my `links.js` data file. Additionally, and perhaps more interestingly, when a link has been shared via [Nicolas Hoizey](https://nicolas-hoizey.com)'s [GitHub action](https://github.com/nhoizey/github-action-feed-to-mastodon), it's rendered with a Mastodon icon linking to said post.
 

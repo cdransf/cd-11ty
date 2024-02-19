@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+    <atom:link href="{{ permalink | absoluteUrl: meta.url }}" rel="self" type="application/rss+xml" />
     {%- assign entries = data | normalizeEntries -%}
     <title>{{ title }}</title>
     <description>{{ description }}</description>
     <link>{{ permalink | absoluteUrl: meta.url }}</link>
-    <lastBuildDate>{{ updated }}</lastBuildDate>
+    <lastBuildDate>{{ updated | stringToRFC822Date }}</lastBuildDate>
     <image>
       <title>{{ title }}</title>
       <link>{{ permalink | absoluteUrl: meta.url }}</link>
@@ -17,7 +18,7 @@
       <item>
         <title>{{ entry.title | escape }}</title>
         <link>{{ entry.url | stripUtm | encodeAmp }}</link>
-        <pubDate>{{ entry.date | stringToDate | dateToRfc822 }}</pubDate>
+        <pubDate>{{ entry.date | stringToRFC822Date }}</pubDate>
         <guid>{{ entry.url | stripUtm | encodeAmp }}</guid>
         <description>{{ entry.excerpt | escape }}</description>
       </item>

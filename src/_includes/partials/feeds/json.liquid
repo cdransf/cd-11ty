@@ -11,7 +11,7 @@
     "title": "{{ entry.title }}",
     "url": "{{ entry.url }}",
     "content_text": "{{ entry.title }}{% if tagMap %} {{ entry.url | tagLookup: tagMap }}{% endif %} {{ entry.url }}",
-    "date_published": "{{ entry.date | stringToDate | dateToRfc822 }}"
+    "date_published": "{{ entry.date | stringToRFC822Date }}"
     }{% if not forloop.last %},{% endif %}
   {%- endfor %}
   ]
