@@ -39,6 +39,7 @@ export default async function () {
   const maxRequests = process.env.ELEVENTY_PRODUCTION ? 10 : 2
   let nextPageCursor = null;
   let requestCount = 0;
+  let cachedLinks;
 
   if (process.env.ELEVENTY_PRODUCTION) {
     const cachedLinksOutput = await client.send(
@@ -48,7 +49,7 @@ export default async function () {
        })
     )
     const cachedLinksData = getReadableData(cachedLinksOutput.Body)
-    const cachedLinks = await cachedLinksData.then((tracks) => JSON.parse(tracks)).catch()
+    cachedLinks = await cachedLinksData.then((tracks) => JSON.parse(tracks)).catch()
   }
 
   while (true) {
