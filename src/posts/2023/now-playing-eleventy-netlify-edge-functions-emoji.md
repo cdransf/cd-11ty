@@ -2,7 +2,7 @@
 date: '2023-08-25'
 title: 'Displaying now playing data with matching emoji using Netlify edge functions and Eleventy'
 description: "My site is built using 11ty and is rebuilt once an hour. These frequent rebuilds accomplish a few things, notably updating webmention data and keeping my now page current."
-tags: ['Eleventy', 'JavaScript']
+tags: ['Eleventy', 'javascript']
 ---
 
 My site is built using [11ty](https://www.11ty.dev) and is rebuilt once an hour. These frequent rebuilds accomplish a few things, notably updating webmention data and keeping [my now page](https://coryd.dev/now/) current. Recently, however, I decided to add the track I'm other currently listening to on my home page which, ideally, would be updated in real time. [Enter client-side JavaScript and Netlify's Edge Functions](https://docs.netlify.com/edge-functions/overview/).<!-- excerpt -->

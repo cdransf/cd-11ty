@@ -5,7 +5,7 @@ description: "My now page consists of a number of similar sections — some besp
 tags:
   - Eleventy
   - development
-  - JavaScript
+  - javascript
 ---
 
 My now page consists of a number of similar sections — some bespoke text, a number of media grids and lists. The text is repeated once, the lists are easily templated out in [Liquid.js](https://liquidjs.com/) and the media grids are all quite similar. Given the prominence of the media grids on the page and the number of them I decided to consolidate them into a single template while also normalizing the data passed into them as best I could.<!-- excerpt -->

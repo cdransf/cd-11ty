@@ -2,7 +2,7 @@
 date: '2024-01-26'
 title: "You don't need a framework for that"
 description: "You don't need a framework for *any* website primarily focused on presenting information to users."
-tags: ['development', 'CSS', 'JavaScript']
+tags: ['development', 'CSS', 'javascript']
 ---
 You don't need a framework for *any* website primarily focused on presenting information to users.<!-- excerpt -->
 

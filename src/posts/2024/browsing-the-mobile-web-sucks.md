@@ -2,7 +2,7 @@
 date: '2024-02-03'
 title: 'Browsing the mobile web sucks'
 description: "The mobile web isn't all bad, but so much of the experience is."
-tags: ['development', 'JavaScript', 'tech', 'privacy']
+tags: ['development', 'javascript', 'tech', 'privacy']
 ---
 The mobile web isn't all bad, but so much of the experience is. I've *absolutely loved* the recent trend back towards personal websites and blogs but, outside of all of those little homes and passion projects, it's rough.<!-- excerpt -->
 

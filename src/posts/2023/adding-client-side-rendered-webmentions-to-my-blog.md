@@ -2,7 +2,7 @@
 date: '2023-02-09'
 title: 'Adding client-side rendered webmentions to my blog'
 description: "My blog is currently hosted on weblog.lol which allows for a simple and configurable weblog managed in git with posts formatted in markdown."
-tags: ['webmentions', 'development', 'JavaScript', 'API']
+tags: ['webmentions', 'development', 'javascript', 'API']
 ---
 
 My blog is currently hosted on weblog.lol which allows for a simple and configurable weblog managed in git with posts formatted in markdown. I wanted to add webmentions to my blog which, as of now, doesn't include a build step. To accomplish this, I've added an intermediary api endpoint to the same Next.js app that powers my [/now](https://coryd.dev/now) page.<!-- excerpt -->

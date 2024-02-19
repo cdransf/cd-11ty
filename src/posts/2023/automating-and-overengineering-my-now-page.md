@@ -2,7 +2,7 @@
 date: '2023-02-06'
 title: 'Automating (and probably overengineering) my now page'
 description: "omg.lol (where I point my domain) and host most of my site content recently launched support for /now pages."
-tags: ['automation', 'development', 'Next.js', 'JavaScript']
+tags: ['automation', 'development', 'Next.js', 'javascript']
 ---
 
 [omg.lol](https://home.omg.lol) (where I point my domain) and host most of my site content [recently launched support for /now pages](https://omglol.news/2023/01/16/now-pages-are-here).<!-- excerpt -->

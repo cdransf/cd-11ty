@@ -2,7 +2,7 @@
 date: '2024-02-17'
 title: 'Adding a light-dark theme toggle'
 description: "I dropped a light/dark theme toggle into the navigation of my site, replacing the prior reliance on the visitor's preference set at the OS level (though it does still consider this preference)."
-tags: ['CSS', 'JavaScript', 'Eleventy', 'development']
+tags: ['CSS', 'javascript', 'Eleventy', 'development']
 ---
 I dropped a light/dark theme toggle into the navigation of my site, replacing the prior reliance on the visitor's preference set at the OS level (though it does still consider this preference).<!-- excerpt -->
 

@@ -2,7 +2,7 @@
 date: '2016-12-31'
 title: 'JavaScript topics and frameworks to learn in 2017'
 description: "A fantastastic read on what to stay on top of in the ever-changing JavaScript ecosystem in 2017."
-tags: ['JavaScript', 'development']
+tags: ['javascript', 'development']
 ---
 
 [A fantastastic read](https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711#.2micvl2c8) by [Eric Elliott](https://ericelliottjs.com) on what to stay on top of in the ever-changing JavaScript ecosystem in 2017.<!-- excerpt -->
