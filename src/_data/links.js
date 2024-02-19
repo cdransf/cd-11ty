@@ -79,8 +79,8 @@ export default async function () {
 
   if (process.env.ELEVENTY_PRODUCTION) {
     const mergedData = filterDuplicates([
-      ...formatLinkData(fullData).filter((link) => link.tags.includes('share'))
-      ...Object.values(cachedLinks),
+      ...formatLinkData(fullData).filter((link) => link.tags.includes('share')),
+      ...Object.values(cachedLinks)
     ]).sort((a, b) => new Date(b['date']) - new Date(a['date']))
 
     await client.send(
