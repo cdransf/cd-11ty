@@ -10128,9 +10128,9 @@
   },
   "https://coryd.dev/posts/2024/adding-a-light-dark-theme-toggle/": {
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9hZGRpbmctYS1saWdodC1kYXJrLXRoZW1lLXRvZ2dsZS8=",
-    "title": "📝: Adding a light/dark theme toggle",
+    "title": "📝: Adding a light-dark theme toggle",
     "url": "https://coryd.dev/posts/2024/adding-a-light-dark-theme-toggle/",
-    "content_text": "📝: Adding a light/dark theme toggle #CSS #JavaScript #Eleventy #WebDev https://coryd.dev/posts/2024/adding-a-light-dark-theme-toggle/",
+    "content_text": "📝: Adding a light-dark theme toggle #CSS #JavaScript #Eleventy #WebDev https://coryd.dev/posts/2024/adding-a-light-dark-theme-toggle/",
     "date_published": "Sat, 17 Feb 2024 00:00:00 +0000",
     "toots": [
       "https://social.lol/users/cory/statuses/111950048726630536"
@@ -10191,5 +10191,16 @@
       "https://social.lol/users/cory/statuses/111956630381064480"
     ],
     "lastTootTimestamp": 1708322607193
+  },
+  "https://coryd.dev/posts/2024/using-b2-as-a-json-data-store/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC91c2luZy1iMi1hcy1hLWpzb24tZGF0YS1zdG9yZS8=",
+    "title": "📝: Using B2 as a JSON data store",
+    "url": "https://coryd.dev/posts/2024/using-b2-as-a-json-data-store/",
+    "content_text": "📝: Using B2 as a JSON data store #Eleventy #WebDev #JavaScript https://coryd.dev/posts/2024/using-b2-as-a-json-data-store/",
+    "date_published": "Mon, 19 Feb 2024 00:00:00 +0000",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111959363283405048"
+    ],
+    "lastTootTimestamp": 1708364307998
   }
 }
