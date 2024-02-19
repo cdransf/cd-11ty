@@ -109,7 +109,6 @@ export default async function (eleventyConfig) {
     eleventyConfig.addLiquidFilter(filterName, filters[filterName])
   })
   eleventyConfig.addLiquidFilter('dateToRfc822', pluginRss.dateToRfc822)
-  eleventyConfig.addLiquidFilter('absoluteUrl', pluginRss.absoluteUrl)
   eleventyConfig.addFilter('slugify', slugifyString)
 
   // shortcodes

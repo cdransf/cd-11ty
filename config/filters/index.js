@@ -1,6 +1,10 @@
 import { DateTime } from 'luxon'
 import markdownIt from 'markdown-it'
 import { URL } from 'url'
+import { createRequire } from 'module'
+
+const require = createRequire(import.meta.url)
+const metaData = require('../../src/_data/json/meta.json')
 
 const utmPattern = /[?&](utm_[^&=]+=[^&#]*)/gi
 const BASE_URL = 'https://coryd.dev'
@@ -89,6 +93,13 @@ export default {
   findPost: (url, posts) => {
     if (!url || !posts) return null;
     return posts[url]?.toots?.[0] || null;
+  },
+  absoluteUrl: (url, base) => {
+    if (!base) base = metaData.url
+    try {
+      return (new URL(url, base)).toString()
+    } catch(e) {}
+    return url;
   },
 
   // feeds
