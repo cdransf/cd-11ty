@@ -7,7 +7,7 @@ tags:
   - 'tech'
   - 'Eleventy'
 ---
-I use Readwise Reader's API to populate the links on [my now page](/now). These then get included in [my follow feed](https://feedpress.me/coryd-follow) that's syndicated out to Mastodon using a [GitHub action](https://github.com/nhoizey/github-action-feed-to-mastodon) authored by [Nicolas Hoizey](https://nicolas-hoizey.com).<!-- excerpt -->
+I use Readwise Reader's API to populate the links on [my now page](https://coryd.dev/now). These then get included in [my follow feed](https://feedpress.me/coryd-follow) that's syndicated out to Mastodon using a [GitHub action](https://github.com/nhoizey/github-action-feed-to-mastodon) authored by [Nicolas Hoizey](https://nicolas-hoizey.com).<!-- excerpt -->
 
 The `data` file used to fetch these links looks like this:
 
