@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "6.0.4",
+  "version": "6.0.5",
   "description": "The source for my personal site. Built using 11ty and hosted on Netlify.",
   "type": "module",
   "scripts": {
