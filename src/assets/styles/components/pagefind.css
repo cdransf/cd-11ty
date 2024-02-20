@@ -21,6 +21,10 @@
   font-size: var(--font-size-base) !important;
 }
 
+.pagefind-ui__result-excerpt {
+  word-break: break-word !important;
+}
+
 .pagefind-ui__form:before {
   opacity: 1 !important;
   top: calc(19px * var(--pagefind-ui-scale)) !important;

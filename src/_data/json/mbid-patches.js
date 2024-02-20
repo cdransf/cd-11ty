@@ -36,6 +36,7 @@ export default {
   rush: '534ee493-bfac-4575-a44a-0ae41e2c3fe4',
   'soul blind': '94dba818-73e7-4ee1-a8ed-894cef10552b',
   sovereign: '8e5bd67e-9e31-4e2f-ad18-a3f6508f495e',
+  svartidauði: '5b67060c-6ec8-4ee8-9783-2207c169402d',
   'sunday valley': 'f71d08b7-8cee-48a8-acf0-95c9d6cf8fb9',
   undergang: '6853b4ec-8cd4-46a4-b970-8331d4587c43',
   'wolves in the throne room': 'e9452446-7702-4853-96ce-5dfe6748d3fb',
