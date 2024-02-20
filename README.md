@@ -13,9 +13,9 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 ## 📝 Recent posts
 
 <!-- BLOGPOSTS:START -->
-- [Adding a light/dark theme toggle](https://coryd.dev/posts/2024/adding-a-light-dark-theme-toggle/)
+- [Using B2 as a JSON data store](https://coryd.dev/posts/2024/using-b2-as-a-json-data-store/)
+- [Adding a light-dark theme toggle](https://coryd.dev/posts/2024/adding-a-light-dark-theme-toggle/)
 - [Setting up image transforms in Eleventy](https://coryd.dev/posts/2024/setting-up-image-transforms-in-eleventy/)
 - [Renting your music means accepting that it will disappear](https://coryd.dev/posts/2024/renting-your-music-means-accepting-that-it-will-disappear/)
 - [On getting tattooed](https://coryd.dev/posts/2024/on-getting-tattooed/)
-- [Check if images are available before optimizing in Eleventy](https://coryd.dev/posts/2024/check-if-images-are-available-before-optimizing-in-eleventy/)
 <!-- BLOGPOSTS:END -->

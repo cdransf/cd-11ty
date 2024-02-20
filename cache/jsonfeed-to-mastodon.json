@@ -10220,7 +10220,10 @@
     "url": "https://newrepublic.com/article/178675/garry-tan-tech-san-francisco?ref=disconnect.blog",
     "content_text": "🔗: The Tech Plutocrats Dreaming of a Right-Wing San Francisco #Tech https://newrepublic.com/article/178675/garry-tan-tech-san-francisco?ref=disconnect.blog",
     "date_published": "Mon, 19 Feb 2024 19:51:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111961823812840085"
+    ],
+    "lastTootTimestamp": 1708401852654
   },
   "https://bastianallgeier.com/notes/tailwind": {
     "id": "aHR0cHM6Ly9iYXN0aWFuYWxsZ2VpZXIuY29tL25vdGVzL3RhaWx3aW5k",
@@ -10239,7 +10242,10 @@
     "url": "https://www.wheresyoured.at/sam-altman-fried/?ref=ed-zitrons-wheres-your-ed-at-newsletter",
     "content_text": "🔗: Subprime Intelligence #Tech https://www.wheresyoured.at/sam-altman-fried/?ref=ed-zitrons-wheres-your-ed-at-newsletter",
     "date_published": "Mon, 19 Feb 2024 19:38:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111962293970914144"
+    ],
+    "lastTootTimestamp": 1708409026701
   },
   "https://trakt.tv/movies/splice-2009": {
     "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvc3BsaWNlLTIwMDk=",
@@ -10251,5 +10257,16 @@
       "https://social.lol/users/cory/statuses/111961363971344829"
     ],
     "lastTootTimestamp": 1708394836043
+  },
+  "https://app.thestorygraph.com/books/61eaebcd-6559-4099-b6d2-a7a4e78b5047": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvNjFlYWViY2QtNjU1OS00MDk5LWI2ZDItYTdhNGU3OGI1MDQ3",
+    "title": "📖: Extremely Hardcore: Inside Elon Musk's Twitter",
+    "url": "https://app.thestorygraph.com/books/61eaebcd-6559-4099-b6d2-a7a4e78b5047",
+    "content_text": "📖: Extremely Hardcore: Inside Elon Musk's Twitter #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/61eaebcd-6559-4099-b6d2-a7a4e78b5047",
+    "date_published": "Sun, 18 Feb 2024 16:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111962763938108403"
+    ],
+    "lastTootTimestamp": 1708416197836
   }
 }
