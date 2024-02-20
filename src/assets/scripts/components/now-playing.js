@@ -67,20 +67,11 @@ class NowPlaying extends HTMLElement {
   }
 
   get template() {
-    return document
-      .getElementById(nowPlayingTemplate.id)
-      .content.cloneNode(true);
+    return document.getElementById(nowPlayingTemplate.id).content.cloneNode(true);
   }
 
   get data() {
-    const data = fetch('/api/now-playing', {
-      type: 'json',
-    })
-      .then((data) => data.json())
-      .catch(() => {
-        loading.style.display = 'none'
-      })
-    return data;
+    return fetch('/api/now-playing', { type: 'json' }).then((data) => data.json()).catch((e) => {})
   }
 }
 
