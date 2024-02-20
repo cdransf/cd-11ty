@@ -1,5 +1,5 @@
 {% capture css %}
-  {% render "../../assets/styles/widgets/popular-posts.css" %}
+  {% render "../../assets/styles/components/popular-posts.css" %}
 {% endcapture %}
 <style>{{ css }}</style>
 {% assign posts = posts | getPopularPosts: analytics %}

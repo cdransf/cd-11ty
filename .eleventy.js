@@ -72,13 +72,13 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets')
   eleventyConfig.addPassthroughCopy('_redirects')
   eleventyConfig.addPassthroughCopy({
-    'node_modules/@zachleat/pagefind-search/pagefind-search.js': 'assets/scripts/pagefind-search.js',
+    'node_modules/@zachleat/pagefind-search/pagefind-search.js': 'assets/scripts/components/pagefind-search.js',
   })
   eleventyConfig.addPassthroughCopy({
-    'node_modules/@daviddarnes/mastodon-post/mastodon-post.js': 'assets/scripts/mastodon-post.js'
+    'node_modules/@daviddarnes/mastodon-post/mastodon-post.js': 'assets/scripts/components/mastodon-post.js'
   })
   eleventyConfig.addPassthroughCopy({
-    'node_modules/@daviddarnes/share-button/share-button.js': 'assets/scripts/share-button.js'
+    'node_modules/@daviddarnes/share-button/share-button.js': 'assets/scripts/components/share-button.js'
   })
 
   // enable merging of tags

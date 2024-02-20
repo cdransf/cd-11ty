@@ -385,10 +385,6 @@ svg {
   animation: spin 1s linear infinite;
 }
 
-.icon--center__vertical {
-  height: 1.76rem;
-}
-
 .icon--center__vertical > svg {
   display: inline;
   vertical-align: middle;
@@ -568,12 +564,6 @@ footer nav {
     line-height: var(--line-height-3xl);
   }
 
-  /* articles */
-  article [rel="author"],
-  article time {
-    height: 1rem;
-  }
-
   /* lists */
   ul, ol {
     padding-left: 2.5rem;
@@ -582,9 +572,4 @@ footer nav {
   footer nav:first-child {
     gap: .75rem;
   }
-
-/* icons */
-.icon--center__vertical {
-  height: 1.275rem;
-}
 }

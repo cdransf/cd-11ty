@@ -11,7 +11,7 @@ button > svg {
 input {
   border-radius: var(--rounded-md);
   padding: .25rem;
-  border: none;
+  border: 1px solid var(--gray-light);
 }
 
 label {

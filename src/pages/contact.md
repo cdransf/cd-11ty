@@ -6,7 +6,7 @@ image: /assets/img/ogi/contact.jpg
 description: 'How to contact me.'
 ---
 {% capture css %}
-  {% render "../assets/styles/widgets/forms.css" %}
+  {% render "../assets/styles/components/forms.css" %}
   {% render "../assets/styles/pages/contact.css" %}
 {% endcapture %}
 <style>{{ css }}</style>

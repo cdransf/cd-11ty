@@ -1,7 +1,7 @@
 {% assign isOldPost = date | oldPost %}
 {% if isOldPost %}
   {% capture css %}
-    {% render "../../assets/styles/widgets/banner-old-post.css" %}
+    {% render "../../assets/styles/components/banner-old-post.css" %}
   {% endcapture %}
   <style>{{ css }}</style>
   <div class="banner__old-post">
