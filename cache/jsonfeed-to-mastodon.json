@@ -10228,7 +10228,10 @@
     "url": "https://bastianallgeier.com/notes/tailwind",
     "content_text": "🔗: A Tailwind Post #CSS  #WebDev https://bastianallgeier.com/notes/tailwind",
     "date_published": "Mon, 19 Feb 2024 19:44:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111960905375310096"
+    ],
+    "lastTootTimestamp": 1708387838434
   },
   "https://www.wheresyoured.at/sam-altman-fried/?ref=ed-zitrons-wheres-your-ed-at-newsletter": {
     "id": "aHR0cHM6Ly93d3cud2hlcmVzeW91cmVkLmF0L3NhbS1hbHRtYW4tZnJpZWQvP3JlZj1lZC16aXRyb25zLXdoZXJlcy15b3VyLWVkLWF0LW5ld3NsZXR0ZXI=",
@@ -10236,6 +10239,14 @@
     "url": "https://www.wheresyoured.at/sam-altman-fried/?ref=ed-zitrons-wheres-your-ed-at-newsletter",
     "content_text": "🔗: Subprime Intelligence #Tech https://www.wheresyoured.at/sam-altman-fried/?ref=ed-zitrons-wheres-your-ed-at-newsletter",
     "date_published": "Mon, 19 Feb 2024 19:38:00 GMT",
+    "toots": []
+  },
+  "https://trakt.tv/movies/splice-2009": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvc3BsaWNlLTIwMDk=",
+    "title": "🎥: Splice",
+    "url": "https://trakt.tv/movies/splice-2009",
+    "content_text": "🎥: Splice #Movies #Watching #Trakt https://trakt.tv/movies/splice-2009",
+    "date_published": "Mon, 19 Feb 2024 22:09:00 GMT",
     "toots": []
   }
 }
