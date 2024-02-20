@@ -28,6 +28,11 @@ class NowPlaying extends HTMLElement {
         const { key } = slot.dataset
         const value = data[key]
 
+        if (!value || value === typeof undefined) {
+          slot.style.opacity = '0'
+          slot.style.display = 'none'
+        }
+
         if (cache) {
           if (key === 'loading') {
             slot.style.opacity = '0'

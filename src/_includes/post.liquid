@@ -18,7 +18,7 @@ schema: blog
         {{ date | readableDate }}
         <span class="client-side"> • </span>
       </time>
-      {% render "partials/share-button.liquid", url:postUrl %}
+      {% render "partials/share-button.liquid", url: postUrl, title: title, tagMap: collections.tagMap %}
     </div>
     <div class="p-summary hidden">{{ post_excerpt }}</div>
     <div class="e-content">

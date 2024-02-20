@@ -36,8 +36,7 @@ export default async function () {
         if (!data[i]) {
           data.push({ title: titles[i]?.textContent })
           data.push({ author: authors[i]?.textContent })
-          data.push({
-            image: images[i].src.replace(
+          data.push({ image: images[i].src.replace(
               'https://cdn.thestorygraph.com',
               'https://cd-books.b-cdn.net'
             ),
@@ -56,7 +55,7 @@ export default async function () {
           data[i]['image'] = images[i]?.src.replace(
             'https://cdn.thestorygraph.com',
             'https://cd-books.b-cdn.net'
-          )
+          ),
           data[i]['url'] = `https://app.thestorygraph.com${urls[i]?.href}`
           data[i]['percentage'] = percentages[i]?.textContent
           data[i]['dateAdded'] = date

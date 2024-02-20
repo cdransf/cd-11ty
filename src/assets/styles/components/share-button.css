@@ -1,3 +1,8 @@
+webcare-webshare {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+}
+
 button {
   background: transparent;
   padding: 0;
@@ -12,10 +17,4 @@ input {
   border-radius: var(--rounded-md);
   padding: .25rem;
   border: 1px solid var(--gray-light);
-}
-
-label {
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-sm);
-  height: 1rem;
 }
