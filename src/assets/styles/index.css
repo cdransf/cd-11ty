@@ -386,7 +386,7 @@ svg {
 }
 
 .icon--center__vertical {
-  height: 1.275rem;
+  height: 1.76rem;
 }
 
 .icon--center__vertical > svg {
@@ -582,4 +582,9 @@ footer nav {
   footer nav:first-child {
     gap: .75rem;
   }
+
+/* icons */
+.icon--center__vertical {
+  height: 1.275rem;
+}
 }
