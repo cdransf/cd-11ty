@@ -412,35 +412,21 @@ li {
 }
 
 /* images */
-.image__banner,
-.image__placeholder.banner {
+.image__banner {
   border: 1px solid var(--accent-color);
   border-radius: var(--rounded-lg);
   height: auto;
   width: 100%;
 }
 
-.image__placeholder {
-  background-color: var(--color-darkest);
-  justify-content: center;
+.image__banner,
+.image__banner > * {
+  display: block;
   width: 100%;
-  height: 100%;
 }
 
-.image__placeholder > svg {
-  stroke: var(--color-lightest) !important;
-  stroke-width: var(--stroke-width-bold);
-  height: 1.75rem;
-  width: 1.75rem;
-}
-
-.image__placeholder.round {
-  border-radius: var(--rounded-full);
-}
-
-.image__placeholder.banner {
-  padding: 6rem 0;
-  margin: 1rem 0;
+.image__banner > * {
+  height: auto;
 }
 
 /* pages */

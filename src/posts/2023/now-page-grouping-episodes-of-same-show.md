@@ -13,7 +13,7 @@ I made a minor update to how I'm normalizing TV data for display on my now page.
 
 By _minor_ I mean one of those things that may well break inexplicably depending on where the data lands. Instead of returning a normalized array based directly off the data returned by [Trakt](https://trakt.tv)'s API I'm instead collecting episodes in an array, checking as I iterate through the response to see if an episode of the same show exists and replacing that object with a mutated object designed to display the range of episodes watched for the show.
 
-<img src="https://cdn.coryd.dev/blog/grouped-tv.jpg" alt="Grouped TV episodes" class="image__banner" loading="eager" />
+{% image 'https://cdn.coryd.dev/blog/grouped-tv.jpg', 'Grouped TV episodes', 'image__banner' %}
 
 {% raw %}
 

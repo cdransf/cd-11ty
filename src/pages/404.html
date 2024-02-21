@@ -9,7 +9,7 @@ image: /assets/img/404.jpg
 {% endcapture %}
 <style>{{ css }}</style>
 <div class="four-oh-four__wrapper">
-  <img src="/assets/img/404.jpg" alt="404 — oops!" class="image__banner" />
+  {% image './src/assets/img/404.jpg', title, 'image__banner', 'eager' %}
   <div class="text--centered">
     <h2 class="page__header">{{ title }}</h2>
     <h3>What kind of idiots do you have working here?</h3>

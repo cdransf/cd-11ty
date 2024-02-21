@@ -9,7 +9,7 @@ image: /assets/img/pages/uses.jpg
 
 Software and services that I use for work and my own enjoyment.
 
-<img src="https://coryd.dev/assets/img/pages/uses.jpg" alt="My desk" class="image__banner" />
+{% image 'https://coryd.dev/assets/img/pages/uses.jpg', 'My desk', 'image__banner', 'eager' %}
 
 <h3>Computer setup</h3>
 

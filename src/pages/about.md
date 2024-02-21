@@ -9,8 +9,10 @@ image: /assets/img/ogi/about.jpg
 {% endcapture %}
 <style>{{ css }}</style>
 <div class="avatar__wrapper flex--centered">
-  {% capture about_alt %}{{ meta.siteName }} - image by David Neal / @reverentgeek{% endcapture %}
-  <img src="/assets/img/avatar.webp" alt="{{ about_alt }}" />
+  <div class="avatar__wrapper--interior">
+  {%- capture about_alt -%}{{ meta.siteName }} - image by David Neal / @reverentgeek{%- endcapture -%}
+  {% image './src/assets/img/avatar.webp', about_alt %}
+  </div>
 </div>
 <h2 class="page__header text--centered">Hi, I'm Cory</h2>
 

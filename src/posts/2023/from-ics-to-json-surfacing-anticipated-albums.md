@@ -65,6 +65,6 @@ Rendering the output is as simple as:
 
 {% endraw %}
 Leaving us with:
-<img src="https://cdn.coryd.dev/blog/album-releases.jpg" alt="Albums I'm looking forward to" class="image__banner" />
+{% image 'https://cdn.coryd.dev/blog/album-releases.jpg', 'Albums I\'m looking forward to', 'image__banner', 'eager' %}
 
 [^1]: At this point, a dev playground.
