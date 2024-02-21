@@ -74,10 +74,7 @@ The component is then included via a `playing.liquid` template:
 {% raw %}
 ```liquid
 <script type="module" src="/assets/scripts/components/now-playing.js"></script>
-<!-- I'm just a div, here to prevent layout shifts -->
-<div class="client-side" style="height:28px;margin-bottom:1rem">
-  <now-playing></now-playing>
-</div>
+<now-playing></now-playing>
 ```
 {% endraw %}
 
