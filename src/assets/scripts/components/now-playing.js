@@ -1,7 +1,7 @@
 const nowPlayingTemplate = document.createElement('template')
 
 nowPlayingTemplate.innerHTML = `
-  <p class="client-side">
+  <p>
     <span class="text--blurred fade" data-key="loading">🎧 Album by Artist</span>
     <span>
       <span class="fade" data-key="content" style="opacity:0"></span>
