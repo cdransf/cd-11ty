@@ -10301,5 +10301,16 @@
       "https://social.lol/users/cory/statuses/111967955141538880"
     ],
     "lastTootTimestamp": 1708495409330
+  },
+  "https://coryd.dev/posts/2024/building-a-bespoke-now-playing-web-component/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9idWlsZGluZy1hLWJlc3Bva2Utbm93LXBsYXlpbmctd2ViLWNvbXBvbmVudC8=",
+    "title": "📝: Building a bespoke now-playing web component",
+    "url": "https://coryd.dev/posts/2024/building-a-bespoke-now-playing-web-component/",
+    "content_text": "📝: Building a bespoke now-playing web component #WebDev #JavaScript #Eleventy https://coryd.dev/posts/2024/building-a-bespoke-now-playing-web-component/",
+    "date_published": "Wed, 21 Feb 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111971329194141636"
+    ],
+    "lastTootTimestamp": 1708546893297
   }
 }
