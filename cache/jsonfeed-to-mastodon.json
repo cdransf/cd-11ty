@@ -10279,5 +10279,16 @@
       "https://social.lol/users/cory/statuses/111965594846436937"
     ],
     "lastTootTimestamp": 1708459394501
+  },
+  "https://coryd.dev/posts/2024/automatic-mastodon-post-embeds/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9hdXRvbWF0aWMtbWFzdG9kb24tcG9zdC1lbWJlZHMv",
+    "title": "📝: Automatic Mastodon post embeds",
+    "url": "https://coryd.dev/posts/2024/automatic-mastodon-post-embeds/",
+    "content_text": "📝: Automatic Mastodon post embeds #JavaScript #WebDev #Eleventy https://coryd.dev/posts/2024/automatic-mastodon-post-embeds/",
+    "date_published": "Tue, 20 Feb 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111966582604528670"
+    ],
+    "lastTootTimestamp": 1708474466065
   }
 }
