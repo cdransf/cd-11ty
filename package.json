@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "6.5.7",
+  "version": "6.5.9",
   "description": "The source for my personal site. Built using 11ty and hosted on Netlify.",
   "type": "module",
   "scripts": {
@@ -23,7 +23,8 @@
     "@daviddarnes/mastodon-post": "^1.1.1",
     "@remy/webmention": "^1.5.0",
     "@zachleat/pagefind-search": "^1.0.3",
-    "@zachleat/webcare-webshare": "^1.0.3"
+    "@zachleat/webcare-webshare": "^1.0.3",
+    "netlify-cli": "^17.16.4"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.0.0-alpha.5",
