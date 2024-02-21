@@ -25,8 +25,8 @@ class NowPlaying extends HTMLElement {
     const value = data['content']
 
     loading.style.opacity = '0'
-    content.style.opacity = '1'
     loading.style.display = 'none'
+    content.style.opacity = '1'
     content.innerHTML = value
   }
 
