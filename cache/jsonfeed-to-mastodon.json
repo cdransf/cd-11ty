@@ -10363,7 +10363,10 @@
     "url": "https://ohhelloana.blog/goodbye-spotify/",
     "content_text": "🔗: I too have deleted my Spotify account #Tech #Music https://ohhelloana.blog/goodbye-spotify/",
     "date_published": "Thu, 22 Feb 2024 17:19:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/111977162590977841"
+    ],
+    "lastTootTimestamp": 1708635903842
   },
   "https://lynnandtonic.com/thoughts/entries/a-decade-of-working-remotely/": {
     "id": "aHR0cHM6Ly9seW5uYW5kdG9uaWMuY29tL3Rob3VnaHRzL2VudHJpZXMvYS1kZWNhZGUtb2Ytd29ya2luZy1yZW1vdGVseS8=",
@@ -10375,5 +10378,13 @@
       "https://social.lol/users/cory/statuses/111976918720965747"
     ],
     "lastTootTimestamp": 1708632182689
+  },
+  "https://coryd.dev/posts/2024/weaving-music-in-and-out-of-my-personal-site/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC93ZWF2aW5nLW11c2ljLWluLWFuZC1vdXQtb2YtbXktcGVyc29uYWwtc2l0ZS8=",
+    "title": "📝: Weaving music data in and out of my personal website",
+    "url": "https://coryd.dev/posts/2024/weaving-music-in-and-out-of-my-personal-site/",
+    "content_text": "📝: Weaving music data in and out of my personal website #Eleventy #JavaScript #WebDev #Music https://coryd.dev/posts/2024/weaving-music-in-and-out-of-my-personal-site/",
+    "date_published": "Thu, 22 Feb 2024 00:00:00 GMT",
+    "toots": []
   }
 }
