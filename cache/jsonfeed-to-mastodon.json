@@ -10323,5 +10323,24 @@
       "https://social.lol/users/cory/statuses/111972229204910189"
     ],
     "lastTootTimestamp": 1708560626345
+  },
+  "https://whitep4nth3r.com/blog/ramblings-about-javascript-scope-weird-errors-frameworks/": {
+    "id": "aHR0cHM6Ly93aGl0ZXA0bnRoM3IuY29tL2Jsb2cvcmFtYmxpbmdzLWFib3V0LWphdmFzY3JpcHQtc2NvcGUtd2VpcmQtZXJyb3JzLWZyYW1ld29ya3Mv",
+    "title": "🔗: Ramblings about JavaScript scope, weird errors and frameworks",
+    "url": "https://whitep4nth3r.com/blog/ramblings-about-javascript-scope-weird-errors-frameworks/",
+    "content_text": "🔗: Ramblings about JavaScript scope, weird errors and frameworks #JavaScript #WebDev https://whitep4nth3r.com/blog/ramblings-about-javascript-scope-weird-errors-frameworks/",
+    "date_published": "Thu, 22 Feb 2024 01:51:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111973144378710022"
+    ],
+    "lastTootTimestamp": 1708574590820
+  },
+  "https://app.thestorygraph.com/books/f04cb253-a56f-4b40-844a-346074191efe": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvZjA0Y2IyNTMtYTU2Zi00YjQwLTg0NGEtMzQ2MDc0MTkxZWZl",
+    "title": "📖: Between Two Fires: Truth, Ambition, and Compromise in Putin's Russia",
+    "url": "https://app.thestorygraph.com/books/f04cb253-a56f-4b40-844a-346074191efe",
+    "content_text": "📖: Between Two Fires: Truth, Ambition, and Compromise in Putin's Russia #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/f04cb253-a56f-4b40-844a-346074191efe",
+    "date_published": "Tue, 20 Feb 2024 16:00:00 GMT",
+    "toots": []
   }
 }
