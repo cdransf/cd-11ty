@@ -7046,17 +7046,6 @@
     ],
     "lastTootTimestamp": 1699300988127
   },
-  "https://coryd.dev/posts/2023/default-apps-2023/": {
-    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyMy9kZWZhdWx0LWFwcHMtMjAyMy8=",
-    "title": "📝: My default apps, 2023 edition",
-    "url": "https://coryd.dev/posts/2023/default-apps-2023/",
-    "content_text": "📝: My default apps, 2023 edition #Tech #macOS #Apple https://coryd.dev/posts/2023/default-apps-2023/",
-    "date_published": "Mon, 06 Nov 2023 00:00:00 +0000",
-    "toots": [
-      "https://social.lol/users/cory/statuses/111366362915790930"
-    ],
-    "lastTootTimestamp": 1699315840492
-  },
   "https://gomakethings.com/how-do-build-tools-break-backwards-compatibility/": {
     "id": "aHR0cHM6Ly9nb21ha2V0aGluZ3MuY29tL2hvdy1kby1idWlsZC10b29scy1icmVhay1iYWNrd2FyZHMtY29tcGF0aWJpbGl0eS8=",
     "title": "🔗: How do build tools break backwards compatibility?",

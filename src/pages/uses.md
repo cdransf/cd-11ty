@@ -18,7 +18,6 @@ Software and services that I use for work and my own enjoyment.
 - Apple Magic Keyboard with Touch ID + number pad
 - Apple Magic Trackpad
 - Homepod Mini for audio
-- Raspberry Pi for Homebridge
 
 <h3>Desk and chair</h3>
 
