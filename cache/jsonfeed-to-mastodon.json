@@ -10356,5 +10356,24 @@
       "https://social.lol/users/cory/statuses/111976449578461001"
     ],
     "lastTootTimestamp": 1708625024170
+  },
+  "https://ohhelloana.blog/goodbye-spotify/": {
+    "id": "aHR0cHM6Ly9vaGhlbGxvYW5hLmJsb2cvZ29vZGJ5ZS1zcG90aWZ5Lw==",
+    "title": "🔗: I too have deleted my Spotify account",
+    "url": "https://ohhelloana.blog/goodbye-spotify/",
+    "content_text": "🔗: I too have deleted my Spotify account #Tech #Music https://ohhelloana.blog/goodbye-spotify/",
+    "date_published": "Thu, 22 Feb 2024 17:19:00 GMT",
+    "toots": []
+  },
+  "https://lynnandtonic.com/thoughts/entries/a-decade-of-working-remotely/": {
+    "id": "aHR0cHM6Ly9seW5uYW5kdG9uaWMuY29tL3Rob3VnaHRzL2VudHJpZXMvYS1kZWNhZGUtb2Ytd29ya2luZy1yZW1vdGVseS8=",
+    "title": "🔗: A decade of working remotely",
+    "url": "https://lynnandtonic.com/thoughts/entries/a-decade-of-working-remotely/",
+    "content_text": "🔗: A decade of working remotely #Work  #WebDev https://lynnandtonic.com/thoughts/entries/a-decade-of-working-remotely/",
+    "date_published": "Thu, 22 Feb 2024 17:14:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111976918720965747"
+    ],
+    "lastTootTimestamp": 1708632182689
   }
 }
