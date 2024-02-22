@@ -113,7 +113,7 @@ export default {
     if (!url || !posts) return null;
     const BASE_URL = 'https://social.lol/users/cory/statuses/'
     const STATUS_URL = 'https://social.lol/@cory/'
-    return posts[url]?.toots?.[0].replace(BASE_URL, STATUS_URL) || null;
+    return posts[url]?.toots?.[0]?.replace(BASE_URL, STATUS_URL) || null;
   },
   absoluteUrl: (url, base) => {
     if (!base) base = metaData.url
