@@ -69,10 +69,13 @@ export default async () => {
     },
   })
     .then((data) => {
-      if (data.body) return data.json();
-      return {};
+      if (data.ok) return data.json();
+      throw new Error('Something went wrong with the Trakt endpoint.');
     })
-    .catch();
+    .catch(err => {
+      console.log(err);
+      return {}
+    });
 
   if (Object.keys(traktRes).length) {
     if (traktRes["type"] === "episode") {
@@ -97,8 +100,14 @@ export default async () => {
   const nbaRes = await fetch(
     "https://cdn.nba.com/static/json/liveData/scoreboard/todaysScoreboard_00.json"
   )
-    .then((data) => data.json())
-    .catch();
+    .then((data) => {
+      if (data.ok) return data.json()
+      throw new Error('Something went wrong with the NBA endpoint.');
+    })
+    .catch(err => {
+      console.log(err);
+      return {}
+    });
   const games = nbaRes?.scoreboard?.games;
 
   if (games && games.length) {
@@ -156,20 +165,27 @@ export default async () => {
     {
       type: "json",
     }
-  ).catch();
-  const trackData = await trackRes.json();
+  ).then((data) => {
+    if (data.ok) return data.json()
+    throw new Error('Something went wrong with the Last.fm endpoint.');
+  }).catch(err => {
+      console.log(err);
+      return {}
+    });
   const mbidRes = await fetch("https://coryd.dev/api/mbids", {
     type: "json",
-  }).catch();
-  const mbidData = await mbidRes.json();
-  const track = trackData["recenttracks"]["track"][0];
+  }).then((data) => {
+    if (data.ok) return data.json()
+    throw new Error('Something went wrong with the mbid endpoint.');
+  }).catch(err => {
+      console.log(err);
+      return {}
+    });
+  const track = trackRes["recenttracks"]["track"][0];
   const artist = track["artist"]["#text"];
   let mbid = track["artist"]["mbid"];
   let genre = "";
-
-  const mbidMap = (artist) => {
-    return mbidData[artist.toLowerCase()] || "";
-  };
+  const mbidMap = (artist) => mbidRes[artist.toLowerCase()] || "";
 
   // mbid mismatches
   if (mbidMap(artist) !== "") mbid = mbidMap(artist);
@@ -188,10 +204,14 @@ export default async () => {
     const genreUrl = `https://musicbrainz.org/ws/2/artist/${mbid}?inc=aliases+genres&fmt=json`;
     const genreRes = await fetch(genreUrl, {
       type: "json",
-    }).catch();
-    const genreData = await genreRes.json();
-    genre =
-      genreData.genres.sort((a, b) => b.count - a.count)[0]?.["name"] || "";
+    }).then((data) => {
+      if (data.ok) return data.json()
+      throw new Error('Something went wrong with the MusicBrainz endpoint.');
+    }).catch(err => {
+      console.log(err);
+      return {}
+    });
+    genre = genreRes['genres'].sort((a, b) => b.count - a.count)[0]?.["name"] || "";
   }
 
   return Response.json(

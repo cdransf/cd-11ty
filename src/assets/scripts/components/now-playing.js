@@ -24,10 +24,17 @@ class NowPlaying extends HTMLElement {
     const content = this.querySelector('[data-key="content"]')
     const value = data['content']
 
-    loading.style.opacity = '0'
-    loading.style.display = 'none'
-    content.style.opacity = '1'
-    content.innerHTML = value
+    if (!value) {
+      loading.style.display = 'none'
+      content.style.display = 'none'
+    }
+
+    if (value) {
+      loading.style.opacity = '0'
+      loading.style.display = 'none'
+      content.style.opacity = '1'
+      content.innerHTML = value
+    }
   }
 
   get template() {
