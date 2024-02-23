@@ -10389,5 +10389,16 @@
       "https://social.lol/users/cory/statuses/111977205900197593"
     ],
     "lastTootTimestamp": 1708636566373
+  },
+  "https://tonsky.me/blog/js-bloat/": {
+    "id": "aHR0cHM6Ly90b25za3kubWUvYmxvZy9qcy1ibG9hdC8=",
+    "title": "🔗: JavaScript Bloat in 2024",
+    "url": "https://tonsky.me/blog/js-bloat/",
+    "content_text": "🔗: JavaScript Bloat in 2024 #JavaScript #WebDev https://tonsky.me/blog/js-bloat/",
+    "date_published": "Thu, 22 Feb 2024 21:24:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111977891634117296"
+    ],
+    "lastTootTimestamp": 1708647028161
   }
 }
