@@ -18,3 +18,15 @@ input {
   padding: .25rem;
   border: 1px solid var(--gray-light);
 }
+
+:root body.theme__dark {
+  button {
+    color: var(--text-color);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  button {
+    color: var(--text-color);
+  }
+}
