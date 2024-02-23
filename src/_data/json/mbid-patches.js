@@ -39,6 +39,7 @@ export default {
   svartidauði: '5b67060c-6ec8-4ee8-9783-2207c169402d',
   'sunday valley': 'f71d08b7-8cee-48a8-acf0-95c9d6cf8fb9',
   undergang: '6853b4ec-8cd4-46a4-b970-8331d4587c43',
+  vircolac: '29616e0c-78d6-4c5f-99e2-d9e113d19d6a',
   'wolves in the throne room': 'e9452446-7702-4853-96ce-5dfe6748d3fb',
   worm: '6313658e-cd68-4c81-9778-17ce3825748e',
 }
