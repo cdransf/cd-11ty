@@ -10400,5 +10400,16 @@
       "https://social.lol/users/cory/statuses/111977891634117296"
     ],
     "lastTootTimestamp": 1708647028161
+  },
+  "https://coryd.dev/now?ts=1708603200000": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MDg2MDMyMDAwMDA=",
+    "title": "🎧: My top artists for the week: Minutemen @ 43 plays, Godflesh @ 38 plays, Hooded Menace @ 36 plays, Tom Waits @ 35 plays, Sturgill Simpson @ 32 plays, Rotted @ 28 plays, AFI @ 27 plays, Narrow Head @ 26 plays #Music #LastFM",
+    "url": "https://coryd.dev/now?ts=1708603200000",
+    "content_text": "🎧: My top artists for the week: Minutemen @ 43 plays, Godflesh @ 38 plays, Hooded Menace @ 36 plays, Tom Waits @ 35 plays, Sturgill Simpson @ 32 plays, Rotted @ 28 plays, AFI @ 27 plays, Narrow Head @ 26 plays #Music #LastFM  https://coryd.dev/now?ts=1708603200000",
+    "date_published": "Thu, 22 Feb 2024 12:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111980222406561157"
+    ],
+    "lastTootTimestamp": 1708682592929
   }
 }
