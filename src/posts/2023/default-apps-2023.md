@@ -21,7 +21,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Music: [Doppler](https://brushedtype.com/doppler) + [Last.fm](https://last.fm)
 - Passwords: [1Password.com](https://1password.com)
 - Budgeting: [YNAB](https://ynab.com)
-- Mastodon: [Ivory](https://tapbots.com/ivory)
+- Mastodon: [Mona](https://mastodon.social/@MonaApp)
 - TV/Movie tracking: [Trakt](https://trakt.tv)
 - Notes: [Bear](https://bear.app)
 - Code: [Sublime Text](https://www.sublimetext.com)
