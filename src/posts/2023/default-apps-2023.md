@@ -25,6 +25,6 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - TV/Movie tracking: [Trakt](https://trakt.tv)
 - Notes: [Bear](https://bear.app)
 - Code: [Sublime Text](https://www.sublimetext.com)
-- Terminal: [iTerm2](https://iterm2.com)
+- Terminal: Terminal.app
 - Search: DuckDuckGo
 - Package tracking: [Parcel](https://parcelapp.net)
