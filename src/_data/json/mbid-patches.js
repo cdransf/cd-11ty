@@ -10,6 +10,7 @@ export default {
   'chapel of disease': '27a3ffb1-b3c6-422f-88a0-463a497f2d6f',
   contaminated: '11f7a795-25b1-4f25-8b23-734cba19f8a5',
   cruciamentum: '9a783663-db0c-4237-a3a9-afe72d055ddc',
+  'dead bob': 'd39ffe1a-ef5d-4f01-8a14-8f7195b4ce86',
   deafheaven: 'f4ccf6c5-ad41-4f8f-bb9e-6e2c6ad23302',
   'edge of sanity': '82d1972f-f815-480d-ba78-9873b799bdd1',
   envy: '8c4519da-59e7-44b5-868d-350dffb30b51',
