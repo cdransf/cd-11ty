@@ -32,6 +32,8 @@
 # 404s
 /assets/img/social-preview/adding-a-light/dark-theme-toggle-preview.jpeg /assets/img/social-preview/adding-a-light-dark-theme-toggle-preview.jpeg 301!
 /assets/img/social-card.jpg /assets/img/ogi/default.jpg 301!
+/posts / 301!
+/posts/2024 / 301!
 
 # assets
 /static/images/avatar.webp /assets/img/avatar.webp 301!
