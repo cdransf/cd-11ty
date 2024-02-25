@@ -10455,5 +10455,16 @@
       "https://social.lol/users/cory/statuses/111993905468832010"
     ],
     "lastTootTimestamp": 1708891380010
+  },
+  "https://coryd.dev/posts/2024/i-need-ai/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9pLW5lZWQtYWkv",
+    "title": "📝: I need AI",
+    "url": "https://coryd.dev/posts/2024/i-need-ai/",
+    "content_text": "📝: I need AI #AI #Tech https://coryd.dev/posts/2024/i-need-ai/",
+    "date_published": "Sun, 25 Feb 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111994063595167671"
+    ],
+    "lastTootTimestamp": 1708893792717
   }
 }
