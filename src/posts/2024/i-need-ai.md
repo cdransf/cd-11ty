@@ -2,7 +2,7 @@
 date: '2024-02-25'
 title: 'I need AI'
 description: 'I need AI to waste energy. I need it to deprive vulnerable communities of water so that it can be used to cool new data centers. I need AI to make up answers to my questions.'
-tags: ['AI', 'Tech']
+tags: ['AI', 'tech']
 ---
 I need AI to waste energy. I need it to deprive vulnerable communities of water so that it can be used to cool new data centers.
 

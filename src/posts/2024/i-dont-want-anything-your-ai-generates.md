@@ -2,7 +2,7 @@
 date: '2024-01-31'
 title: "I don't want anything your AI generates"
 description: 'AI output is fundamentally derivative and exploitative (of content, labor and the environment).'
-tags: ['tech']
+tags: ['tech', 'AI']
 ---
 I really don't. AI output is fundamentally derivative and exploitative (of content, labor and the environment).<!-- excerpt -->
 
