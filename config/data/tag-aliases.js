@@ -1,6 +1,7 @@
 export default {
   '11ty': '#Eleventy',
   accessibility: '#Accessibility',
+  ai: '#AI',
   blogging: '#Blogging',
   books: '#Books',
   css: '#CSS',
