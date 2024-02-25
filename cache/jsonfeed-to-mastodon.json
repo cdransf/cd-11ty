@@ -10433,5 +10433,24 @@
       "https://social.lol/users/cory/statuses/111989221028321012"
     ],
     "lastTootTimestamp": 1708819900992
+  },
+  "https://paulrobertlloyd.com/2024/056/a1/indieweb_dents/": {
+    "id": "aHR0cHM6Ly9wYXVscm9iZXJ0bGxveWQuY29tLzIwMjQvMDU2L2ExL2luZGlld2ViX2RlbnRzLw==",
+    "title": "🔗: Small dents in the IndieWeb",
+    "url": "https://paulrobertlloyd.com/2024/056/a1/indieweb_dents/",
+    "content_text": "🔗: Small dents in the IndieWeb #Tech https://paulrobertlloyd.com/2024/056/a1/indieweb_dents/",
+    "date_published": "Sun, 25 Feb 2024 17:37:00 GMT",
+    "toots": []
+  },
+  "https://app.thestorygraph.com/books/ef459ac3-be87-4cd9-851a-d000b9bad1bf": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvZWY0NTlhYzMtYmU4Ny00Y2Q5LTg1MWEtZDAwMGI5YmFkMWJm",
+    "title": "📖: Wealth Supremacy: How the Extractive Economy and the Biased Rules of Capitalism Drive Today's Crises",
+    "url": "https://app.thestorygraph.com/books/ef459ac3-be87-4cd9-851a-d000b9bad1bf",
+    "content_text": "📖: Wealth Supremacy: How the Extractive Economy and the Biased Rules of Capitalism Drive Today's Crises #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/ef459ac3-be87-4cd9-851a-d000b9bad1bf",
+    "date_published": "Sat, 24 Feb 2024 16:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111993905468832010"
+    ],
+    "lastTootTimestamp": 1708891380010
   }
 }
