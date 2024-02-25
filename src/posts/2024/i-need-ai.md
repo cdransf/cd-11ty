@@ -30,7 +30,7 @@ I need AI to create more invasive and insidious advertising for things I don't n
 
 I need AI to do even more damage to the journalism industry and create content nobody can trust.
 
-I need AI to product gimmicky videos that threaten the jobs of creators and secure funding for the already wealthy.
+I need AI to produce gimmicky videos that threaten the jobs of creators and secure funding for the already wealthy.
 
 I need AI that can't taste to create recipes.
 
