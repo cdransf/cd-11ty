@@ -24,7 +24,7 @@ export default {
   privacy: '#Privacy',
   react: '#JavaScript',
   rss: '#RSS',
-  'social media': '#Tech',
+  'social media': '#SocialMedia',
   spotify: '#Music',
   'surveillance capitalism': '#SurveillanceCapitalism',
   'tattoos': '#Tattoos',
