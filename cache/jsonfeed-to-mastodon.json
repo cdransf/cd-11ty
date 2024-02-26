@@ -10372,7 +10372,7 @@
     "id": "aHR0cHM6Ly9seW5uYW5kdG9uaWMuY29tL3Rob3VnaHRzL2VudHJpZXMvYS1kZWNhZGUtb2Ytd29ya2luZy1yZW1vdGVseS8=",
     "title": "🔗: A decade of working remotely",
     "url": "https://lynnandtonic.com/thoughts/entries/a-decade-of-working-remotely/",
-    "content_text": "🔗: A decade of working remotely #Work  #WebDev https://lynnandtonic.com/thoughts/entries/a-decade-of-working-remotely/",
+    "content_text": "🔗: A decade of working remotely #Work #WebDev https://lynnandtonic.com/thoughts/entries/a-decade-of-working-remotely/",
     "date_published": "Thu, 22 Feb 2024 17:14:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/111976918720965747"
@@ -10493,7 +10493,7 @@
     "id": "aHR0cHM6Ly9ibG9nLmNocmlzemFjaGFyaWFzLmNvbS9hLWNvbnNwaXJhY3ktdG8ta2lsbC1pZTY=",
     "title": "🔗: A Conspiracy To Kill IE6",
     "url": "https://blog.chriszacharias.com/a-conspiracy-to-kill-ie6",
-    "content_text": "🔗: A Conspiracy To Kill IE6 #Tech  #WebDev https://blog.chriszacharias.com/a-conspiracy-to-kill-ie6",
+    "content_text": "🔗: A Conspiracy To Kill IE6 #Tech #WebDev https://blog.chriszacharias.com/a-conspiracy-to-kill-ie6",
     "date_published": "Mon, 26 Feb 2024 00:16:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/111995794560746601"
@@ -10526,11 +10526,30 @@
     "id": "aHR0cHM6Ly9ibG9nLmppbS1uaWVsc2VuLmNvbS8yMDI0L3RoZS1zdWJ2ZXJzaXZlLWh5cGVybGluay8=",
     "title": "🔗: The Subversive Hyperlink",
     "url": "https://blog.jim-nielsen.com/2024/the-subversive-hyperlink/",
-    "content_text": "🔗: The Subversive Hyperlink #Tech  #WebDev https://blog.jim-nielsen.com/2024/the-subversive-hyperlink/",
+    "content_text": "🔗: The Subversive Hyperlink #Tech #WebDev https://blog.jim-nielsen.com/2024/the-subversive-hyperlink/",
     "date_published": "Mon, 26 Feb 2024 18:43:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/111999569390973273"
     ],
     "lastTootTimestamp": 1708977804720
+  },
+  "https://www.ramijames.com/thoughts/package-dependency-hell": {
+    "id": "aHR0cHM6Ly93d3cucmFtaWphbWVzLmNvbS90aG91Z2h0cy9wYWNrYWdlLWRlcGVuZGVuY3ktaGVsbA==",
+    "title": "🔗: Package dependency hell",
+    "url": "https://www.ramijames.com/thoughts/package-dependency-hell",
+    "content_text": "🔗: Package dependency hell #JavaScript #WebDev https://www.ramijames.com/thoughts/package-dependency-hell",
+    "date_published": "Mon, 26 Feb 2024 21:59:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112000322386721789"
+    ],
+    "lastTootTimestamp": 1708989294283
+  },
+  "https://coryd.dev/posts/2024/give-me-a-web-feed-or-an-api-for-everything/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9naXZlLW1lLWEtd2ViLWZlZWQtb3ItYW4tYXBpLWZvci1ldmVyeXRoaW5nLw==",
+    "title": "📝: Give me a web feed or an API for everything",
+    "url": "https://coryd.dev/posts/2024/give-me-a-web-feed-or-an-api-for-everything/",
+    "content_text": "📝: Give me a web feed or an API for everything #Tech #WebDev https://coryd.dev/posts/2024/give-me-a-web-feed-or-an-api-for-everything/",
+    "date_published": "Mon, 26 Feb 2024 00:00:00 GMT",
+    "toots": []
   }
 }
