@@ -10510,5 +10510,16 @@
       "https://social.lol/users/cory/statuses/111998756699098267"
     ],
     "lastTootTimestamp": 1708965403800
+  },
+  "https://app.thestorygraph.com/books/d4d56f8e-6afe-4c34-95ed-706978b9bbcf": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvZDRkNTZmOGUtNmFmZS00YzM0LTk1ZWQtNzA2OTc4YjliYmNm",
+    "title": "📖: The Secret Gate: A True Story of Courage and Sacrifice During the Collapse of Afghanistan",
+    "url": "https://app.thestorygraph.com/books/d4d56f8e-6afe-4c34-95ed-706978b9bbcf",
+    "content_text": "📖: The Secret Gate: A True Story of Courage and Sacrifice During the Collapse of Afghanistan #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/d4d56f8e-6afe-4c34-95ed-706978b9bbcf",
+    "date_published": "Sun, 25 Feb 2024 16:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111999096591838389"
+    ],
+    "lastTootTimestamp": 1708970590161
   }
 }
