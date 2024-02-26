@@ -22,7 +22,7 @@ export const tagMap = (collection) => {
         const tagString = [...new Set(post.data.tags.map((tag) => tagAliases[tag.toLowerCase()]))]
           .join(' ')
           .trim()
-        if (tagString) tags[url] = tagString
+        if (tagString) tags[url] = tagString.replace(/\s+/g,' ')
       })
     }
     if (item.data.links) {
@@ -31,7 +31,7 @@ export const tagMap = (collection) => {
           .map((tag) => tagAliases[tag.toLowerCase()])
           .join(' ')
           .trim()
-        if (tagString) tags[link.url] = tagString
+        if (tagString) tags[link.url] = tagString.replace(/\s+/g,' ')
       })
     }
   })
