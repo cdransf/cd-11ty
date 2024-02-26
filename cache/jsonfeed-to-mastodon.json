@@ -10488,5 +10488,16 @@
       "https://social.lol/users/cory/statuses/111995347762338434"
     ],
     "lastTootTimestamp": 1708913387578
+  },
+  "https://blog.chriszacharias.com/a-conspiracy-to-kill-ie6": {
+    "id": "aHR0cHM6Ly9ibG9nLmNocmlzemFjaGFyaWFzLmNvbS9hLWNvbnNwaXJhY3ktdG8ta2lsbC1pZTY=",
+    "title": "🔗: A Conspiracy To Kill IE6",
+    "url": "https://blog.chriszacharias.com/a-conspiracy-to-kill-ie6",
+    "content_text": "🔗: A Conspiracy To Kill IE6 #Tech  #WebDev https://blog.chriszacharias.com/a-conspiracy-to-kill-ie6",
+    "date_published": "Mon, 26 Feb 2024 00:16:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/111995794560746601"
+    ],
+    "lastTootTimestamp": 1708920205175
   }
 }
