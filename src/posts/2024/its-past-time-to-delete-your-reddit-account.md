@@ -12,4 +12,6 @@ You invested in their platform, now they're selling you out to investors. The pl
 
 (Oh and good lord, delete your Twitter account too.)
 
+**Edit:** as an added bonus, [you can delete all your content before deleting your account](https://github.com/j0be/PowerDeleteSuite).
+
 [^1]: Or they'll just get more invasive and grating.
