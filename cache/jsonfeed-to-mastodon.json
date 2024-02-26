@@ -10550,6 +10550,17 @@
     "url": "https://coryd.dev/posts/2024/give-me-a-web-feed-or-an-api-for-everything/",
     "content_text": "📝: Give me a web feed or an API for everything #Tech #WebDev https://coryd.dev/posts/2024/give-me-a-web-feed-or-an-api-for-everything/",
     "date_published": "Mon, 26 Feb 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112000371370689313"
+    ],
+    "lastTootTimestamp": 1708990041811
+  },
+  "https://infrequently.org/2024/02/home-screen-advantage/": {
+    "id": "aHR0cHM6Ly9pbmZyZXF1ZW50bHkub3JnLzIwMjQvMDIvaG9tZS1zY3JlZW4tYWR2YW50YWdlLw==",
+    "title": "🔗: Home Screen Advantage",
+    "url": "https://infrequently.org/2024/02/home-screen-advantage/",
+    "content_text": "🔗: Home Screen Advantage #Tech https://infrequently.org/2024/02/home-screen-advantage/",
+    "date_published": "Mon, 26 Feb 2024 22:54:00 GMT",
     "toots": []
   }
 }
