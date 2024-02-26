@@ -121,7 +121,7 @@ When the build runs, it renders any mentions of a given post via a [liquid.js](h
                 />
                 <div class="ml-3">
                     <p class="text-sm group-hover:text-blue-500 dark:group-hover:text-blue-300">{{mention.content.text}}</p>
-                    <p class="mt-1 text-xs group-hover:text-blue-500 dark:group-hover:text-blue-300">{{mention.published | isoDateOnly}}</p>
+                    <p class="mt-1 text-xs group-hover:text-blue-500 dark:group-hover:text-blue-300">{{mention.published | isoDateOnly: '.' }}</p>
                 </div>
             </a>
         </div>

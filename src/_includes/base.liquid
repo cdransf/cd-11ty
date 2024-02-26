@@ -61,7 +61,7 @@
             "@type": "Person",
             "name": "{{ meta.author }}"
           },
-          "datePublished": "{{ page.date | isoDateOnly }}"
+          "datePublished": "{{ page.date | isoDateOnly: '.' }}"
         }
       </script>
       {% else %}
