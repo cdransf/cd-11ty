@@ -198,7 +198,10 @@ export default async () => {
       )}&type=artist`;
   const trackUrl = track["mbid"]
     ? `https://musicbrainz.org/track/${track["mbid"]}`
-    : track["url"];
+    : `https://musicbrainz.org/search?query=${track["artist"]["#text"].replace(
+      /\s+/g,
+      '+'
+    )}&type=artist`;
 
   if (mbid && mbid !== "") {
     const genreUrl = `https://musicbrainz.org/ws/2/artist/${mbid}?inc=aliases+genres&fmt=json`;
