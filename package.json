@@ -24,7 +24,7 @@
     "@remy/webmention": "^1.5.0",
     "@zachleat/pagefind-search": "^1.0.3",
     "@zachleat/webcare-webshare": "^1.0.3",
-    "netlify-cli": "^17.17.0"
+    "netlify-cli": "^17.17.1"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.0.0-alpha.5",
