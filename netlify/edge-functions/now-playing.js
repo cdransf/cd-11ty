@@ -3,6 +3,7 @@ const emojiMap = (genre, artist) => {
   if (artist === "Augury") return "☄️";
   if (artist === "Autopsy") return "🧟";
   if (artist === "Black Flag") return "🏴";
+  if (artist === "Bolt Thrower") return "⚔️"
   if (artist === "Bruce Springsteen") return "🇺🇸";
   if (artist === "Carcass") return "🥼";
   if (artist === "Counting Crows") return "🐦‍⬛";
