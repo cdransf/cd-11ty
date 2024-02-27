@@ -1,11 +1,17 @@
-<li class="theme__toggle client-side">
-  <span class="placeholder">
-    {% tablericon "placeholder" "Toggle theme placeholder" %}
-  </span>
-  <span class="light">
-    {% tablericon "sun" "Toggle light theme" %}
-  </span>
-  <span class="dark">
-    {% tablericon "moon" "Toggle dark theme" %}
-  </span>
+<script type="module" src="/assets/scripts/components/theme-toggle.js"></script>
+<template id="theme-toggle-template">
+  <div class="theme__toggle">
+    <span class="placeholder">
+      {% tablericon "placeholder" "Toggle theme placeholder" %}
+    </span>
+    <span class="light">
+      {% tablericon "sun" "Toggle light theme" %}
+    </span>
+    <span class="dark">
+      {% tablericon "moon" "Toggle dark theme" %}
+    </span>
+  </div>
+</template>
+<li class="client-side">
+  <theme-toggle></theme-toggle>
 </li>
