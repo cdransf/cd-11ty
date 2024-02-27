@@ -1,9 +1,10 @@
 <script type="module" src="/assets/scripts/components/theme-toggle.js"></script>
+{% capture css %}
+  {% render "../../../assets/styles/components/theme-toggle.css" %}
+{% endcapture %}
+<style>{{ css }}</style>
 <template id="theme-toggle-template">
   <div class="theme__toggle">
-    <span class="placeholder">
-      {% tablericon "placeholder" "Toggle theme placeholder" %}
-    </span>
     <span class="light">
       {% tablericon "sun" "Toggle light theme" %}
     </span>

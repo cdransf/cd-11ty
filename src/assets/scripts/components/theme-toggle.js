@@ -2,7 +2,6 @@ const themeToggleTemplate = document.createElement('template')
 
 themeToggleTemplate.innerHTML = `
   <button class="theme__toggle">
-    <span class="placeholder"></span>
     <span class="light"></span>
     <span class="dark"></span>
   </button>
