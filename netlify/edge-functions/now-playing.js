@@ -8,6 +8,7 @@ const emojiMap = (genre, artist) => {
   if (artist === "Carcass") return "🥼";
   if (artist === "Counting Crows") return "🐦‍⬛";
   if (artist === "David Bowie") return "👨🏻‍🎤";
+  if (artist === "Devoid of Thought") return "💭";
   if (artist === "Full of Hell & Nothing") return "🫨🎸";
   if (artist === "Imperial Triumphant") return "🎭";
   if (artist === "Mastodon") return "🐋";
