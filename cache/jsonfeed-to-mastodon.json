@@ -10565,5 +10565,24 @@
       "https://social.lol/users/cory/statuses/112000543209545365"
     ],
     "lastTootTimestamp": 1708992663789
+  },
+  "https://blog.jim-nielsen.com/2024/more-files-plz/": {
+    "id": "aHR0cHM6Ly9ibG9nLmppbS1uaWVsc2VuLmNvbS8yMDI0L21vcmUtZmlsZXMtcGx6Lw==",
+    "title": "🔗: More Files Please",
+    "url": "https://blog.jim-nielsen.com/2024/more-files-plz/",
+    "content_text": "🔗: More Files Please #Tech #WebDev https://blog.jim-nielsen.com/2024/more-files-plz/",
+    "date_published": "Tue, 27 Feb 2024 16:49:00 GMT",
+    "toots": []
+  },
+  "https://coryd.dev/posts/2024/towards-a-quieter-friendlier-web/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC90b3dhcmRzLWEtcXVpZXRlci1mcmllbmRsaWVyLXdlYi8=",
+    "title": "📝: Towards a quieter, friendlier web",
+    "url": "https://coryd.dev/posts/2024/towards-a-quieter-friendlier-web/",
+    "content_text": "📝: Towards a quieter, friendlier web #Tech #SocialMedia #Privacy #AI https://coryd.dev/posts/2024/towards-a-quieter-friendlier-web/",
+    "date_published": "Tue, 27 Feb 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112004715391177673"
+    ],
+    "lastTootTimestamp": 1709056326286
   }
 }
