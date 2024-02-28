@@ -13,6 +13,7 @@ export default {
   'dead bob': 'd39ffe1a-ef5d-4f01-8a14-8f7195b4ce86',
   deafheaven: 'f4ccf6c5-ad41-4f8f-bb9e-6e2c6ad23302',
   death: 'dbb3b771-ae77-4381-b61c-758b5b7898ec',
+  demigod: 'fc1ff9dd-3611-4e0f-9559-6e503d2fdb14',
   'edge of sanity': '82d1972f-f815-480d-ba78-9873b799bdd1',
   envy: '8c4519da-59e7-44b5-868d-350dffb30b51',
   'fawn limbs': '91cd46b7-30ef-4b99-a332-89512c02df2e',
