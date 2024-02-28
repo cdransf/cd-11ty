@@ -30,4 +30,5 @@ export default {
   'tattoos': '#Tattoos',
   tech: '#Tech',
   technology: '#Tech',
+  'web components': '#WebComponents'
 }
