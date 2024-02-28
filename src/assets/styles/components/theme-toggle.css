@@ -1,3 +1,8 @@
+.theme__toggle {
+  background: transparent;
+  padding: 0;
+}
+
 .theme__toggle svg {
   cursor: pointer;
 }

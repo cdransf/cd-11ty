@@ -4,14 +4,14 @@
 {% endcapture %}
 <style>{{ css }}</style>
 <template id="theme-toggle-template">
-  <div class="theme__toggle">
+  <button class="theme__toggle">
     <span class="light">
       {% tablericon "sun" "Toggle light theme" %}
     </span>
     <span class="dark">
       {% tablericon "moon" "Toggle dark theme" %}
     </span>
-  </div>
+  </button>
 </template>
 <li class="client-side">
   <theme-toggle></theme-toggle>

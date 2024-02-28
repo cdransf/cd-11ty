@@ -75,6 +75,11 @@ async connectedCallback() {
 The CSS for this is straightforward and contains a few vars specific to my implementation (related to icon color and SVG `stroke-width`):
 
 ```css
+.theme__toggle {
+  background: transparent;
+  padding: 0;
+}
+
 .theme__toggle svg {
   cursor: pointer;
 }
@@ -118,14 +123,14 @@ The final template that leverages the component looks like this:
 {% endcapture %}
 <style>{{ css }}</style>
 <template id="theme-toggle-template">
-  <div class="theme__toggle">
+  <button class="theme__toggle">
     <span class="light">
       {% tablericon "sun" "Toggle light theme" %}
     </span>
     <span class="dark">
       {% tablericon "moon" "Toggle dark theme" %}
     </span>
-  </div>
+  </button>
 </template>
 <li class="client-side">
   <theme-toggle></theme-toggle>
