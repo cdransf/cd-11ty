@@ -55,10 +55,13 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets')
   eleventyConfig.addPassthroughCopy('_redirects')
   eleventyConfig.addPassthroughCopy({
+    'node_modules/@daviddarnes/mastodon-post/mastodon-post.js': 'assets/scripts/components/mastodon-post.js'
+  })
+  eleventyConfig.addPassthroughCopy({
     'node_modules/@zachleat/pagefind-search/pagefind-search.js': 'assets/scripts/components/pagefind-search.js',
   })
   eleventyConfig.addPassthroughCopy({
-    'node_modules/@daviddarnes/mastodon-post/mastodon-post.js': 'assets/scripts/components/mastodon-post.js'
+    'node_modules/@cdransf/theme-toggle/theme-toggle.js': 'assets/scripts/components/theme-toggle.js',
   })
   eleventyConfig.addPassthroughCopy({
     'node_modules/@zachleat/webcare-webshare/webcare-webshare.js': 'assets/scripts/components/webcare-webshare.js'

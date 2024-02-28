@@ -31,7 +31,7 @@
   --gray-lighter: var(--gray-50);
   --gray-dark: var(--gray-700);
 
-  /* theme */
+  /* base theme */
   --color-lightest: var(--white);
   --color-darkest: var(--black);
   --text-color: var(--color-darkest);
@@ -116,6 +116,7 @@
   }
 }
 
+/* light theme */
 :root body.theme__light {
   --text-color: var(--color-darkest);
   --background-color: var(--color-lightest);
@@ -130,6 +131,7 @@
   --brand-github: #333;
 }
 
+/* dark theme */
 :root body.theme__dark {
   --text-color: var(--color-lightest);
   --background-color: var(--color-darkest);

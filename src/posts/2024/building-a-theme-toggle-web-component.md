@@ -141,3 +141,5 @@ The final template that leverages the component looks like this:
 I load the web component script, embed my styles, define the template such that preferred icons are included using [Eleventy](https://www.11ty.dev/) shortcodes and the result is wrapped in an `li` to match the rest of my menu items, with `.client-side` added to hide the component should JavaScript be disabled.
 
 [The complete JavaScript can be viewed in the source for my site.](https://github.com/cdransf/coryd.dev/blob/main/src/assets/scripts/components/theme-toggle.js)
+
+You can also install the component via npm using `npm i @cdransf/theme-toggle`.
