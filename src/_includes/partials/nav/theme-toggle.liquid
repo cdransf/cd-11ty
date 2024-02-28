@@ -3,18 +3,17 @@
   {% render "../../../assets/styles/components/theme-toggle.css" %}
 {% endcapture %}
 <style>{{ css }}</style>
-<template id="theme-toggle-template">
-  <button
-    class="theme__toggle"
-    aria-label="Toggle site theme">
-    <span class="light">
-      {% tablericon "sun" "Toggle light theme" %}
-    </span>
-    <span class="dark">
-      {% tablericon "moon" "Toggle dark theme" %}
-    </span>
-  </button>
-</template>
 <li class="client-side">
-  <theme-toggle></theme-toggle>
+  <theme-toggle>
+    <button
+      class="theme__toggle"
+      aria-label="Toggle site theme">
+      <span class="light">
+        {% tablericon "sun" "Toggle light theme" %}
+      </span>
+      <span class="dark">
+        {% tablericon "moon" "Toggle dark theme" %}
+      </span>
+    </button>
+  </theme-toggle>
 </li>
