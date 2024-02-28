@@ -1,27 +1,30 @@
-const nowPlayingTemplate = document.createElement('template')
-
-nowPlayingTemplate.innerHTML = `
-  <p>
-    <span class="text--blurred fade" data-key="loading">🎧 Album by Artist</span>
-    <span>
-      <span class="fade" data-key="content" style="opacity:0"></span>
-    </span>
-  </p>
-`
-nowPlayingTemplate.id = "now-playing-template"
-
-if (!document.getElementById(nowPlayingTemplate.id)) document.body.appendChild(nowPlayingTemplate)
-
 class NowPlaying extends HTMLElement {
-  static register(tagName) {
-    if ("customElements" in window) customElements.define(tagName || "now-playing", NowPlaying);
+  static tagName = 'now-playing'
+
+  static register(tagName, registry) {
+    if(!registry && ('customElements' in globalThis)) {
+      registry = globalThis.customElements;
+    }
+    registry?.define(tagName || this.tagName, this);
+  }
+
+  static attr = {
+    url: 'api-url'
+  }
+
+  get url() {
+    return this.getAttribute(NowPlaying.attr.url) || '';
   }
 
   async connectedCallback() {
-    this.append(this.template);
+    if (this.shadowRoot) return;
     const data = { ...(await this.data) };
-    const loading = this.querySelector('[data-key="loading"]')
-    const content = this.querySelector('[data-key="content"]')
+    let shadowroot = this.attachShadow({ mode: 'open' })
+    let slot = document.createElement('slot')
+    shadowroot.appendChild(slot)
+
+    const loading = this.querySelector('.loading')
+    const content = this.querySelector('.content')
     const value = data['content']
 
     if (!value) {
@@ -37,12 +40,8 @@ class NowPlaying extends HTMLElement {
     }
   }
 
-  get template() {
-    return document.getElementById(nowPlayingTemplate.id).content.cloneNode(true);
-  }
-
   get data() {
-    return fetch('/api/now-playing', { type: 'json' }).then((data) => data.json()).catch((e) => {})
+    return fetch(this.url, { type: 'json' }).then((data) => data.json()).catch((e) => {})
   }
 }
 
