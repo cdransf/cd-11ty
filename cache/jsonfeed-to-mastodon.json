@@ -10613,7 +10613,10 @@
     "url": "http://www.aaronsw.com/weblog/000404",
     "content_text": "🔗: Bake, Don’t Fry #Tech #WebDev http://www.aaronsw.com/weblog/000404",
     "date_published": "Tue, 27 Feb 2024 23:07:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112008063002956347"
+    ],
+    "lastTootTimestamp": 1709107406723
   },
   "https://www.404media.co/tumblr-and-wordpress-to-sell-users-data-to-train-ai-tools/": {
     "id": "aHR0cHM6Ly93d3cuNDA0bWVkaWEuY28vdHVtYmxyLWFuZC13b3JkcHJlc3MtdG8tc2VsbC11c2Vycy1kYXRhLXRvLXRyYWluLWFpLXRvb2xzLw==",
