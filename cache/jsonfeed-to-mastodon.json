@@ -10606,10 +10606,10 @@
   },
   "http://www.aaronsw.com/weblog/000404": {
     "id": "aHR0cDovL3d3dy5hYXJvbnN3LmNvbS93ZWJsb2cvMDAwNDA0",
-    "title": "🔗: February 27, 2024 at 10:47:00 PM UTC",
+    "title": "🔗: Bake, Don’t Fry",
     "url": "http://www.aaronsw.com/weblog/000404",
-    "content_text": "🔗: February 27, 2024 at 10:47:00 PM UTC #Tech #WebDev http://www.aaronsw.com/weblog/000404",
-    "date_published": "Tue, 27 Feb 2024 22:47:00 GMT",
+    "content_text": "🔗: Bake, Don’t Fry #Tech #WebDev http://www.aaronsw.com/weblog/000404",
+    "date_published": "Tue, 27 Feb 2024 23:07:00 GMT",
     "toots": []
   },
   "https://www.404media.co/tumblr-and-wordpress-to-sell-users-data-to-train-ai-tools/": {
@@ -10618,7 +10618,10 @@
     "url": "https://www.404media.co/tumblr-and-wordpress-to-sell-users-data-to-train-ai-tools/",
     "content_text": "🔗: Tumblr and Wordpress to Sell Users’ Data to Train AI Tools #Tech #Privacy https://www.404media.co/tumblr-and-wordpress-to-sell-users-data-to-train-ai-tools/",
     "date_published": "Tue, 27 Feb 2024 22:47:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112007121852586620"
+    ],
+    "lastTootTimestamp": 1709093046187
   },
   "https://coryd.dev/posts/2024/building-a-theme-toggle-web-component/": {
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9idWlsZGluZy1hLXRoZW1lLXRvZ2dsZS13ZWItY29tcG9uZW50Lw==",
@@ -10630,5 +10633,13 @@
       "https://social.lol/users/cory/statuses/112006666040162035"
     ],
     "lastTootTimestamp": 1709086090790
+  },
+  "https://connortumbleson.com/2024/02/26/the-disappointing-tea-xyz/": {
+    "id": "aHR0cHM6Ly9jb25ub3J0dW1ibGVzb24uY29tLzIwMjQvMDIvMjYvdGhlLWRpc2FwcG9pbnRpbmctdGVhLXh5ei8=",
+    "title": "🔗: The disappointing tea.xyz",
+    "url": "https://connortumbleson.com/2024/02/26/the-disappointing-tea-xyz/",
+    "content_text": "🔗: The disappointing tea.xyz #Tech https://connortumbleson.com/2024/02/26/the-disappointing-tea-xyz/",
+    "date_published": "Wed, 28 Feb 2024 01:43:00 GMT",
+    "toots": []
   }
 }
