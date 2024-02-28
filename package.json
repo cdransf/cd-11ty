@@ -20,7 +20,7 @@
   "author": "Cory Dransfeldt",
   "license": "MIT",
   "dependencies": {
-    "@cdransf/theme-toggle": "^1.2.0",
+    "@cdransf/theme-toggle": "^1.2.1",
     "@daviddarnes/mastodon-post": "^1.1.1",
     "@remy/webmention": "^1.5.0",
     "@zachleat/pagefind-search": "^1.0.3",
