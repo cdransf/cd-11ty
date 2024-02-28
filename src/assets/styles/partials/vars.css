@@ -42,8 +42,9 @@
   --accent-color-hover: var(--blue-800);
   --selection-color: var(--accent-color);
 
-  --brand-github: #333;
   --brand-hey: #5522fa;
+  --brand-github: #333;
+  --brand-npm: #cc3534;
   --brand-mastodon: #6364ff;
   --brand-lastfm: #d51007;
   --brand-trakt: #ed1c24;

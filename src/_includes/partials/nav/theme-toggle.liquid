@@ -4,7 +4,9 @@
 {% endcapture %}
 <style>{{ css }}</style>
 <template id="theme-toggle-template">
-  <button class="theme__toggle">
+  <button
+    class="theme__toggle"
+    aria-label="Toggle site theme">
     <span class="light">
       {% tablericon "sun" "Toggle light theme" %}
     </span>

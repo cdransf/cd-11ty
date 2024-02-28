@@ -232,6 +232,7 @@ nav ul li .active svg:hover {
 /* social icons */
 .at svg { stroke: var(--brand-hey) !important; }
 .brand-github svg { stroke: var(--brand-github) !important; }
+.brand-npm svg { stroke: var(--brand-npm) !important; }
 .brand-mastodon svg { stroke: var(--brand-mastodon) !important; }
 .brand-lastfm svg { stroke: var(--brand-lastfm) !important; }
 .device-tv svg { stroke: var(--brand-trakt) !important; }
@@ -271,7 +272,7 @@ article {
 }
 
 footer nav:first-child {
-  gap: .75rem;
+  gap: .6rem;
   margin-top: 2rem;
   padding: 2rem 0 1rem;
   width: 100%;
