@@ -10675,5 +10675,16 @@
       "https://social.lol/users/cory/statuses/112010893540646322"
     ],
     "lastTootTimestamp": 1709150597284
+  },
+  "https://chriscoyier.net/2024/02/28/where-im-at-on-the-whole-css-tricks-thing/": {
+    "id": "aHR0cHM6Ly9jaHJpc2NveWllci5uZXQvMjAyNC8wMi8yOC93aGVyZS1pbS1hdC1vbi10aGUtd2hvbGUtY3NzLXRyaWNrcy10aGluZy8=",
+    "title": "🔗: Where I’m at on the whole CSS-Tricks thing",
+    "url": "https://chriscoyier.net/2024/02/28/where-im-at-on-the-whole-css-tricks-thing/",
+    "content_text": "🔗: Where I’m at on the whole CSS-Tricks thing #CSS #Tech https://chriscoyier.net/2024/02/28/where-im-at-on-the-whole-css-tricks-thing/",
+    "date_published": "Wed, 28 Feb 2024 20:52:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112011340451192210"
+    ],
+    "lastTootTimestamp": 1709157416613
   }
 }
