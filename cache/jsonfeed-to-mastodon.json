@@ -10686,5 +10686,16 @@
       "https://social.lol/users/cory/statuses/112011340451192210"
     ],
     "lastTootTimestamp": 1709157416613
+  },
+  "https://coryd.dev/posts/2024/nows-the-time-to-own-and-host-your-own-content/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9ub3dzLXRoZS10aW1lLXRvLW93bi1hbmQtaG9zdC15b3VyLW93bi1jb250ZW50Lw==",
+    "title": "📝: Now's the time to own and host your own content",
+    "url": "https://coryd.dev/posts/2024/nows-the-time-to-own-and-host-your-own-content/",
+    "content_text": "📝: Now's the time to own and host your own content #WebDev #Tech #SocialMedia #AI https://coryd.dev/posts/2024/nows-the-time-to-own-and-host-your-own-content/",
+    "date_published": "Wed, 28 Feb 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112011351150724717"
+    ],
+    "lastTootTimestamp": 1709157579866
   }
 }
