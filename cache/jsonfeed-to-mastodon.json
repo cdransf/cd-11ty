@@ -10752,5 +10752,16 @@
       "https://social.lol/users/cory/statuses/112013255251582363"
     ],
     "lastTootTimestamp": 1709186634156
+  },
+  "https://ethanmarcotte.com/wrote/generative/": {
+    "id": "aHR0cHM6Ly9ldGhhbm1hcmNvdHRlLmNvbS93cm90ZS9nZW5lcmF0aXZlLw==",
+    "title": "🔗: Generative.",
+    "url": "https://ethanmarcotte.com/wrote/generative/",
+    "content_text": "🔗: Generative. #AI #Tech https://ethanmarcotte.com/wrote/generative/",
+    "date_published": "Thu, 29 Feb 2024 16:22:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112016558348107813"
+    ],
+    "lastTootTimestamp": 1709237035389
   }
 }
