@@ -61,7 +61,7 @@ export default async function (eleventyConfig) {
     'node_modules/@zachleat/pagefind-search/pagefind-search.js': 'assets/scripts/components/pagefind-search.js',
   })
   eleventyConfig.addPassthroughCopy({
-    'node_modules/@cdransf/now-playing/now-playing.js': 'assets/scripts/components/now-playing.js',
+    'node_modules/@cdransf/api-text/api-text.js': 'assets/scripts/components/api-text.js',
   })
   eleventyConfig.addPassthroughCopy({
     'node_modules/@cdransf/theme-toggle/theme-toggle.js': 'assets/scripts/components/theme-toggle.js',
