@@ -39,6 +39,7 @@ export default {
   'regional justice center': '64ad5550-e93f-4add-80c3-e6b651f4f250',
   replicant: '693adda8-6c52-466e-8ea0-e0e42679d320',
   rush: '534ee493-bfac-4575-a44a-0ae41e2c3fe4',
+  'shards of humanity': '9808e199-a99f-44e3-b6c5-daa9fcc6c9cb',
   'soul blind': '94dba818-73e7-4ee1-a8ed-894cef10552b',
   sovereign: '8e5bd67e-9e31-4e2f-ad18-a3f6508f495e',
   svartidauði: '5b67060c-6ec8-4ee8-9783-2207c169402d',
