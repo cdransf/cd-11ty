@@ -58,7 +58,7 @@ export default async () => {
   const MUSIC_KEY = Netlify.env.get("API_KEY_LASTFM");
   const headers = {
     "Content-Type": "application/json",
-    "Cache-Control": "public, s-maxage=3600",
+    "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=10800, stale-if-error=10800",
   };
 
   const traktRes = await fetch("https://api.trakt.tv/users/cdransf/watching", {
