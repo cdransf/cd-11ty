@@ -57,12 +57,8 @@ export default async () => {
   const TV_KEY = Netlify.env.get("API_KEY_TRAKT");
   const MUSIC_KEY = Netlify.env.get("API_KEY_LASTFM");
   const headers = {
-    headers: {
-      "Content-Type": "application/json",
-      "Cache-Control": "public, max-age=0, must-revalidate",
-      "Netlify-CDN-Cache-Control":
-        "public, max-age=0, stale-while-revalidate=210",
-    },
+    "Content-Type": "application/json",
+    "Cache-Control": "public, s-maxage=3600",
   };
 
   const traktRes = await fetch("https://api.trakt.tv/users/cdransf/watching", {
@@ -87,7 +83,7 @@ export default async () => {
         {
           content: `📺 <a href="https://trakt.tv/shows/${traktRes["show"]["ids"]["slug"]}">${traktRes["show"]["title"]}</a> • <a href="https://trakt.tv/shows/${traktRes["show"]["ids"]["slug"]}/seasons/${traktRes["episode"]["season"]}/episodes/${traktRes["episode"]["number"]}">${traktRes["episode"]["title"]}</a>`,
         },
-        headers
+        {...headers}
       );
     }
 
@@ -96,7 +92,7 @@ export default async () => {
         {
           content: `🎥 <a href="https://trakt.tv/movies/${traktRes["movie"]["ids"]["slug"]}">${traktRes["movie"]["title"]}</a>`,
         },
-        headers
+        {...headers}
       );
     }
   }
@@ -167,7 +163,7 @@ export default async () => {
         track["artist"]["#text"]
       }</a>`,
     },
-    headers
+    {...headers}
   );
 };
 
