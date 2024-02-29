@@ -10697,5 +10697,16 @@
       "https://social.lol/users/cory/statuses/112011351150724717"
     ],
     "lastTootTimestamp": 1709157579866
+  },
+  "https://nuejs.org/blog/tailwind-vs-semantic-css/": {
+    "id": "aHR0cHM6Ly9udWVqcy5vcmcvYmxvZy90YWlsd2luZC12cy1zZW1hbnRpYy1jc3Mv",
+    "title": "🔗: Tailwind vs. Semantic CSS",
+    "url": "https://nuejs.org/blog/tailwind-vs-semantic-css/",
+    "content_text": "🔗: Tailwind vs. Semantic CSS #CSS #WebDev https://nuejs.org/blog/tailwind-vs-semantic-css/",
+    "date_published": "Wed, 28 Feb 2024 22:17:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112011865485854473"
+    ],
+    "lastTootTimestamp": 1709165428082
   }
 }
