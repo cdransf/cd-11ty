@@ -120,7 +120,12 @@ export default async function (eleventyConfig) {
         minifyCSS: true,
         minifyJS: true,
         minifyURLs: true,
+        noNewlinesBeforeTagClose: true,
+        quoteCharacter: '"',
         removeComments: true,
+        removeRedundantAttributes: true,
+        sortAttributes: true,
+        sortClassName: true,
         useShortDoctype: true,
         processScripts: ['application/ld+json'], // minify JSON-LD scripts
       })

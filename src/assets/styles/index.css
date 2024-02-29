@@ -3,9 +3,7 @@ html {
   font-family: var(--font-sans);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
-  color: var(--text-color);
   background: var(--background-color);
-  margin: 0;
 }
 
 ::-moz-selection {
@@ -18,23 +16,18 @@ html {
   background: var(--selection-color);
 }
 
-p {
+p,
+blockquote {
   line-height: var(--line-height-lg);
+  margin: 1.25rem 0;
 }
 
 blockquote {
-  font-weight: 700;
   font-size: var(--font-size-lg);
-  line-height: var(--line-height-lg);
   padding-left: .875rem;
   color: var(--gray-dark);
   border-left: .25rem solid var(--gray-dark);
   word-break: break-word;
-}
-
-p,
-blockquote {
-  margin: 1.25rem 0;
 }
 
 :is(body, html, nav .tags, nav .search) svg {
@@ -52,14 +45,7 @@ sup.footnote-ref {
 
 /* links */
 a {
-  color: var(--accent-color);
   transition-property: color;
-}
-
-/* links: custom */
-:is(.main__title, footer nav:last-child) a {
-  color: var(--text-color);
-  text-decoration: none;
 }
 
 a:hover,
@@ -71,10 +57,6 @@ a:active,
   color: var(--accent-color-hover);
 }
 
-a svg {
-  stroke: var(--accent-color);
-}
-
 :is(
     a:has(svg):hover,
     a:has(svg):active,
@@ -84,22 +66,6 @@ a svg {
     button:has(svg):focus
 ) svg {
   stroke: var(--accent-color-hover);
-}
-
-strong,
-.pill--button {
-  font-weight: 700;
-}
-
-blockquote,
-em {
-  font-style: italic;
-}
-
-button,
-.pill--button {
-  appearance: none;
-  border: none;
 }
 
 /* headers */
@@ -136,11 +102,9 @@ table {
   border: 1px solid var(--gray-light);
 }
 
-table a {
-  text-decoration: none;
-}
-
-table, th, td {
+table,
+th,
+td {
   border-collapse: collapse;
 }
 
@@ -153,7 +117,8 @@ tr:not(:last-child) {
   border-bottom: 1px solid var(--gray-light);
 }
 
-th, td {
+th,
+td {
   padding: .375rem;
   min-width: 4rem;
   word-break: break-word;
@@ -161,7 +126,6 @@ th, td {
 
 th {
   background-color: var(--gray-lighter);
-  font-weight: 700;
   text-align: center;
 }
 
@@ -204,7 +168,8 @@ a svg:hover,
 a svg:active,
 a svg:focus,
 button:hover svg,
-button svg:hover {
+button svg:hover,
+.icon--bold > svg {
   stroke-width: var(--stroke-width-bold);
 }
 
@@ -213,10 +178,7 @@ button svg:hover {
   cursor: not-allowed;
 }
 
-.active {
-  color: var(--accent-color);
-}
-
+a svg,
 .active svg,
 nav ul li .active svg {
   stroke: var(--accent-color);
@@ -300,7 +262,6 @@ footer nav:last-child span:not(.active) {
 
 .highlight-text {
   padding: .125rem;
-  background-color: var(--accent-color);
 }
 
 code {
@@ -311,14 +272,10 @@ code {
 
 /* buttons */
 .pill--button {
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-base);
   border-radius: var(--rounded-full);
   padding: .5rem 1rem;
   margin: 0 .25rem .75rem 0;
   cursor: pointer;
-  text-decoration: none;
-  background-color: var(--accent-color);
   transition-property: background-color;
   display: inline-flex;
   flex-direction: row;
@@ -376,14 +333,6 @@ svg {
   height: 1rem;
 }
 
-.icon--bold > svg {
-  stroke-width: var(--stroke-width-bold);
-}
-
-.icon--spin > svg {
-  animation: spin 1s linear infinite;
-}
-
 .icon--center__vertical > svg {
   display: inline;
   vertical-align: middle;
@@ -415,7 +364,6 @@ li {
   border: 1px solid var(--accent-color);
   border-radius: var(--rounded-lg);
   height: auto;
-  width: 100%;
 }
 
 .image__banner,
@@ -470,6 +418,19 @@ li {
 }
 
 /* shared styles */
+body,
+html,
+:is(.main__title, footer nav:last-child) a {
+  color: var(--text-color);
+}
+
+body,
+html,
+.pill--button {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
 .main__title,
 .main__wrapper,
 .contact__wrapper {
@@ -485,6 +446,34 @@ li {
   color: var(--color-lightest);
 }
 
+.highlight-text,
+.pill--button {
+  background-color: var(--accent-color);
+}
+
+blockquote,
+strong,
+.pill--button,
+th {
+  font-weight: 700;
+}
+
+blockquote,
+em {
+  font-style: italic;
+}
+
+button,
+.pill--button {
+  appearance: none;
+  border: none;
+}
+
+a,
+.active {
+  color: var(--accent-color);
+}
+
 a:hover,
 a:focus,
 a:active,
@@ -493,6 +482,12 @@ a:active,
 .pill--button:active {
   transition-timing-function: var(--transition-ease-in-out);
   transition-duration: var(--transition-duration-default);
+}
+
+.pill--button,
+:is(.main__title, footer nav:last-child) a,
+table a {
+  text-decoration: none;
 }
 
 .pill--button,
