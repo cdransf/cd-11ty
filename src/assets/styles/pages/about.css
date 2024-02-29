@@ -3,7 +3,6 @@
 }
 
 .avatar__wrapper {
-  width: 100%;
   margin-bottom: 1.5rem;
 }
 
@@ -23,9 +22,14 @@
   overflow: hidden;
 }
 
+.avatar__wrapper,
 .avatar__wrapper .avatar__wrapper--interior picture > *,
 .avatar__wrapper .avatar__wrapper--interior img {
   width: 100%;
+}
+
+.avatar__wrapper .avatar__wrapper--interior picture > *,
+.avatar__wrapper .avatar__wrapper--interior img {
   height: 100%;
 }
 
