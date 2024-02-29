@@ -10708,5 +10708,16 @@
       "https://social.lol/users/cory/statuses/112011865485854473"
     ],
     "lastTootTimestamp": 1709165428082
+  },
+  "https://coryd.dev/posts/2024/everything-is-a-checklist/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9ldmVyeXRoaW5nLWlzLWEtY2hlY2tsaXN0Lw==",
+    "title": "📝: Everything is a checklist",
+    "url": "https://coryd.dev/posts/2024/everything-is-a-checklist/",
+    "content_text": "📝: Everything is a checklist #Health #Productivity https://coryd.dev/posts/2024/everything-is-a-checklist/",
+    "date_published": "Wed, 28 Feb 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112011980088921399"
+    ],
+    "lastTootTimestamp": 1709167176705
   }
 }
