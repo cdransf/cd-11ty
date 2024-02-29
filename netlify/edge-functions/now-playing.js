@@ -101,69 +101,6 @@ export default async () => {
     }
   }
 
-  const nbaRes = await fetch(
-    "https://cdn.nba.com/static/json/liveData/scoreboard/todaysScoreboard_00.json"
-  )
-    .then((data) => {
-      if (data.ok) return data.json()
-      throw new Error('Something went wrong with the NBA endpoint.');
-    })
-    .catch(err => {
-      console.log(err);
-      return {}
-    });
-  const games = nbaRes?.scoreboard?.games;
-
-  if (games && games.length) {
-    const isAmPm = (hours) => (hours >= 12 ? "pm" : "am");
-    const game = games.find((game) => game.gameCode.includes("LAL"));
-    if (game) {
-      const startDate = new Date(game.gameTimeUTC);
-      const startTime = startDate.toLocaleString("en-US", {
-        timeZone: "America/Los_Angeles",
-      });
-      const endDate = startDate.setHours(startDate.getHours() + 3);
-      const endTime = new Date(endDate).toLocaleString("en-US", {
-        timeZone: "America/Los_Angeles",
-      });
-      const nowDate = new Date();
-      const now = nowDate.toLocaleString("en-US", {
-        timeZone: "America/Los_Angeles",
-      });
-      const isCorrectDate =
-        now.split(",")[0] === startTime.split(",")[0] &&
-        now.split(",")[0] === endTime.split(",")[0] &&
-        isAmPm(startDate.getHours()) === isAmPm(nowDate.getHours());
-      const nowHour = parseInt(now.split(",")[1].split(":")[0].trim());
-      const startHour = parseInt(startTime.split(",")[1].split(":")[0].trim());
-      const endHour = parseInt(endTime.split(",")[1].split(":")[0].trim());
-      const nowMinutes = parseInt(now.split(",")[1].split(":")[1].trim());
-      const startMinutes = parseInt(
-        startTime.split(",")[1].split(":")[1].trim()
-      );
-      const endMinutes = parseInt(endTime.split(",")[1].split(":")[1].trim());
-      const res = {
-        content: `🏀 ${game["awayTeam"]["teamName"]} (${game["awayTeam"]["wins"]}-${game["awayTeam"]["losses"]}) @ ${game["homeTeam"]["teamName"]} (${game["homeTeam"]["wins"]}-${game["homeTeam"]["losses"]})`,
-      };
-
-      if (isCorrectDate) {
-        if (
-          nowHour === startHour &&
-          nowMinutes >= startMinutes &&
-          nowHour < endHour
-        )
-          return Response.json(res, headers);
-        if (nowHour > startHour && nowHour < endHour) return Response.json(res);
-        if (
-          nowHour > startHour &&
-          nowMinutes <= endMinutes &&
-          nowHour == endHour
-        )
-          return Response.json(res, headers);
-      }
-    }
-  }
-
   const trackRes = await fetch(
     `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=coryd_&api_key=${MUSIC_KEY}&limit=1&format=json`,
     {
