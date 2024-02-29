@@ -79,21 +79,19 @@ export default async () => {
 
   if (Object.keys(traktRes).length) {
     if (traktRes["type"] === "episode") {
-      return Response.json(
-        {
+      return new Response(JSON.stringify({
           content: `📺 <a href="https://trakt.tv/shows/${traktRes["show"]["ids"]["slug"]}">${traktRes["show"]["title"]}</a> • <a href="https://trakt.tv/shows/${traktRes["show"]["ids"]["slug"]}/seasons/${traktRes["episode"]["season"]}/episodes/${traktRes["episode"]["number"]}">${traktRes["episode"]["title"]}</a>`,
-        },
-        {...headers}
-      );
+        }),
+        { headers }
+      )
     }
 
     if (traktRes["type"] === "movie") {
-      return Response.json(
-        {
+      return new Response(JSON.stringify({
           content: `🎥 <a href="https://trakt.tv/movies/${traktRes["movie"]["ids"]["slug"]}">${traktRes["movie"]["title"]}</a>`,
-        },
-        {...headers}
-      );
+        }),
+        { headers }
+      )
     }
   }
 
@@ -154,17 +152,16 @@ export default async () => {
     genre = genreRes['genres'].sort((a, b) => b.count - a.count)[0]?.["name"] || "";
   }
 
-  return Response.json(
-    {
+  return new Response(JSON.stringify({
       content: `${emojiMap(
         genre,
         track["artist"]["#text"]
       )} <a href="${trackUrl}">${track["name"]}</a> by <a href="${artistUrl}">${
         track["artist"]["#text"]
       }</a>`,
-    },
-    {...headers}
-  );
+    }),
+    { headers }
+  )
 };
 
 export const config = {
