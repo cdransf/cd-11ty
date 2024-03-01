@@ -123,7 +123,6 @@ export default async function (eleventyConfig) {
         noNewlinesBeforeTagClose: true,
         quoteCharacter: '"',
         removeComments: true,
-        removeRedundantAttributes: true,
         sortAttributes: true,
         sortClassName: true,
         useShortDoctype: true,
