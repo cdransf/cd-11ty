@@ -155,7 +155,7 @@ nav ul li {
 }
 
 nav ul li:not(:last-child) {
-  margin-right: .75rem;
+  margin-right: .6rem;
 }
 
 nav svg {
@@ -504,6 +504,10 @@ footer nav {
 
   .main__title h1 {
     padding-bottom: 0;
+  }
+
+  nav ul li:not(:last-child) {
+    margin-right: .75rem;
   }
 
   .now__topper h2 {
