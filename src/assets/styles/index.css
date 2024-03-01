@@ -395,11 +395,6 @@ li {
   text-align: center !important;
 }
 
-.text--blurred {
-  color: transparent;
-  text-shadow: 0 0 6px var(--text-color);
-}
-
 .fade {
   transition-property: opacity;
   transition-timing-function: var(--transition-ease-in-out);
