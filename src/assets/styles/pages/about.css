@@ -4,6 +4,7 @@
 
 .avatar__wrapper {
   margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 .avatar__wrapper .avatar__wrapper--interior {
@@ -22,14 +23,9 @@
   overflow: hidden;
 }
 
-.avatar__wrapper,
 .avatar__wrapper .avatar__wrapper--interior picture > *,
 .avatar__wrapper .avatar__wrapper--interior img {
   width: 100%;
-}
-
-.avatar__wrapper .avatar__wrapper--interior picture > *,
-.avatar__wrapper .avatar__wrapper--interior img {
   height: 100%;
 }
 

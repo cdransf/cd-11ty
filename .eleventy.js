@@ -1,6 +1,5 @@
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import tablerIcons from 'eleventy-plugin-tabler-icons'
-import pluginRss from '@11ty/eleventy-plugin-rss'
 import postGraph from '@rknightuk/eleventy-plugin-post-graph'
 import embedEverything from 'eleventy-plugin-embed-everything'
 
@@ -12,7 +11,7 @@ import htmlmin from 'html-minifier-terser'
 import filters from './config/filters/index.js'
 import { slugifyString } from './config/utils/index.js'
 import { svgToJpeg } from './config/events/index.js'
-import { tagList, tagMap, postStats } from './config/collections/index.js'
+import { tagList, tagMap, postStats, tagsSortedByCount } from './config/collections/index.js'
 import { img } from './config/shortcodes/index.js'
 
 import { execSync } from 'child_process'
@@ -84,6 +83,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('tagList', tagList)
   eleventyConfig.addCollection('tagMap', tagMap)
   eleventyConfig.addCollection('postStats', postStats)
+  eleventyConfig.addCollection('tagsSortedByCount', tagsSortedByCount)
 
   const md = markdownIt({ html: true, linkify: true })
   md.use(markdownItAnchor, {

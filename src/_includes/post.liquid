@@ -11,22 +11,22 @@ schema: blog
 <style>{{ css }}</style>
 <div class="default__wrapper">
   <article class="h-entry" data-pagefind-body>
-    <h2 class="p-name" data-pagefind-meta="title">{{ title }}</h2>
-    <span class="p-author h-card hidden">{{ meta.author }}</span>
     <div class="flex--centered">
       <time class="dt-published" datetime="{{ date }}">
-        {{ date | readableDate }}
+        {{ date | date: "%B %d, %Y" }}
         <span class="client-side"> • </span>
       </time>
-      {% render "partials/share-button.liquid", url: postUrl, title: title, tagMap: collections.tagMap %}
+      {% render "partials/share-button.liquid", url:postUrl, title:title, tagMap:collections.tagMap %}
     </div>
+    <h2 class="p-name" data-pagefind-meta="title">{{ title }}</h2>
+    <span class="p-author h-card hidden">{{ meta.author }}</span>
     <div class="p-summary hidden">{{ post_excerpt }}</div>
     <div class="e-content">
-      {% render "partials/banner-old-post.liquid", date: date %}
+      {% render "partials/banners/old-post.liquid", date:date %}
       {{ content }}
     </div>
   </article>
 </div>
-{% render "partials/mastodon-post.liquid", postUrl: postUrl, linkPosts: linkPosts %}
-{% render "partials/post-tags.liquid", tags: tags %}
-{% render "partials/popular-posts.liquid", posts: collections.posts, analytics: analytics %}
+{% render "partials/mastodon-post.liquid", postUrl:postUrl, linkPosts:linkPosts %}
+{% render "partials/tags.liquid", tags:tags %}
+{% render "partials/popular-posts.liquid", posts:collections.posts, analytics:analytics %}

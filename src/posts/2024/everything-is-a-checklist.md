@@ -4,31 +4,31 @@ title: 'Everything is a checklist'
 description: 'The author ruminates on routine, mental health and productibity.'
 tags: ['health', 'productivity']
 ---
-- [x] Wake up at 4:15am
-- [x] Start exercising by 4:30am
-  - [x] Throw TV or movie on in the background
-  - [x] Aim for 1600+ calories, be satisfied with anything over 800
-- [x] Finish exercising by 6:35am
+- &check; Wake up at 4:15am
+- &check; Start exercising by 4:30am
+  - &check; Throw TV or movie on in the background
+  - &check; Aim for 1600+ calories, be satisfied with anything over 800
+- &check; Finish exercising by 6:35am
 <!-- excerpt -->
-- [x] Check off what was watched on [Trackt](https://trakt.tv)
-- [x] AirPods in, start an audiobook or text to speech in [Readwise Reader](https://readwise.io/read)[^1]
-- [x] Check [Todoist](https://todoist.com)
-  - [x] Make coffee
-  - [x] Feed all 4 dogs
-  - [x] Feed the guinea pig
-  - [x] Do dishes
-  - [x] Start laundry
-  - [x] Take medication
-  - [x] Drop the kiddo off at school
-- [x] Check my calendar
-- [x] Start music
-- [x] Start work
-  - [x] Meetings
-  - [x] Code reviews
-  - [x] Tickets in, tickets out
-- [x] Pick the kiddo up from school
-- [x] Finish work
-- [x] Hang out with the family[^2]
+- &check; Check off what was watched on [Trackt](https://trakt.tv)
+- &check; AirPods in, start an audiobook or text to speech in [Readwise Reader](https://readwise.io/read)[^1]
+- &check; Check [Todoist](https://todoist.com)
+  - &check; Make coffee
+  - &check; Feed all 4 dogs
+  - &check; Feed the guinea pig
+  - &check; Do dishes
+  - &check; Start laundry
+  - &check; Take medication
+  - &check; Drop the kiddo off at school
+- &check; Check my calendar
+- &check; Start music
+- &check; Start work
+  - &check; Meetings
+  - &check; Code reviews
+  - &check; Tickets in, tickets out
+- &check; Pick the kiddo up from school
+- &check; Finish work
+- &check; Hang out with the family[^2]
 
 *Check, check, check, clear the queue, close the rings, get to zero.*
 

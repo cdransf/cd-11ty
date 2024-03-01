@@ -8,19 +8,17 @@ permalink: /tags/{{ tag }}/
 image: /assets/img/ogi/tags.jpg
 eleventyComputed:
   title: '{{ tag }}'
-templateEngineOverride: liquid,md
 ---
 {% assign posts = collections[tag] | reverse %}
 {% for post in posts %}
 <article class="h-entry">
-  <a class="no-underline" href="{{ post.url }}">
-    <h2 class="flex--centered">{{ post.data.title }}</h2>
-  </a>
   <time class="dt-published" datetime="{{ post.date }}">
     {{ post.date | date: "%m.%Y" }}
   </time>
-  {%- if post.data.post_excerpt %}
-    <p class="p-summary">{{ post.data.post_excerpt | markdown }}</p>
-  {% endif -%}
+  <a class="no-underline" href="{{ post.url }}">
+    <h2 class="flex--centered">{{ post.data.title }}</h2>
+  </a>
+  <p class="p-summary">{{ post.data.post_excerpt | markdown }}</p>
+  <p><a class="no-underline" href="{{ post.url }}">Read more →</a></p>
 </article>
 {% endfor %}

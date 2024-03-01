@@ -38,6 +38,23 @@ export const tagMap = (collection) => {
   return tags
 }
 
+export const tagsSortedByCount = (collectionApi) => {
+  const tagStats = {};
+  const posts = collectionApi.getFilteredByGlob('src/posts/**/*.md').sort((a, b) => {
+    return a.date - b.date;
+  });
+  posts.forEach((post) => {
+    post.data.tags.forEach((tag) => {
+      if (!tagStats[tag]) tagStats[tag] = 1;
+      if (tagStats[tag]) tagStats[tag] = tagStats[tag] + 1;
+    });
+  });
+  const deletedTags = ['posts', 'politics', 'net neutrality'];
+  deletedTags.forEach(tag => delete tagStats[tag]);
+  const tagStatsArr = Object.entries(tagStats);
+  return tagStatsArr.sort((a, b) => b[1] - a[1]).map(([key, value]) => `${key}`);
+}
+
 export const postStats = (collectionApi) => {
   const oneDayMilliseconds = 1000 * 60 * 60 * 24
   const statsObject = {

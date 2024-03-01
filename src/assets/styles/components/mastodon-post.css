@@ -1,7 +1,7 @@
 .mastodon-post-wrapper {
   border-bottom: 1px solid var(--gray-light);
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: .25rem;
 }
 
 dl {

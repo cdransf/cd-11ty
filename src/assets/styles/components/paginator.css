@@ -8,12 +8,12 @@
   padding-right: 0;
 }
 
-.pagination button > svg {
+.pagination a > svg {
   stroke: var(--accent-color);
   cursor: pointer;
 }
 
-.pagination button.disabled > svg {
+.pagination span.disabled svg {
   cursor: not-allowed;
   stroke: color-mix(in srgb, var(--text-color), transparent 50%);
   stroke-width: var(--stroke-width-default);

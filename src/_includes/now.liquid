@@ -8,7 +8,7 @@ layout: default
 {% endcapture %}
 <style>{{ css }}</style>
 {{ content }}
-{% render "partials/now/media-grid.liquid", data:artists, icon: "microphone-2", title: "Artists", shape: "square", count: 8, loading: 'eager' %}
+{% render "partials/now/media-grid.liquid", data:artists, icon: "microphone-2", title: "Artists", shape: "square", count: 8, loading: "eager" %}
 {% render "partials/now/media-grid.liquid", data:albums, icon: "vinyl", title: "Albums", shape: "square", count: 8 %}
 {% render "partials/now/albumReleases.liquid", albumReleases:albumReleases %}
 {% render "partials/now/media-grid.liquid", data:books, icon: "books", title: "Books", shape: "vertical", count: 6 %}

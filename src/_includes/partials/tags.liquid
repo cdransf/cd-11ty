@@ -1,0 +1,3 @@
+{% for tag in tags limit: 10 %}
+  <a class="tag no-underline" href="/tags/{{ tag | downcase }}" data-pagefind-filter="tags">{{ tag | formatTag }}</a>
+{% endfor %}

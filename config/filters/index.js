@@ -184,4 +184,14 @@ export default {
       }
       return normalized
     }),
+
+    // posts
+  formatTag: (string) => {
+    const capitalizeFirstLetter = (string) => {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+    if (string === 'iOS' || string === 'macOS') return `#${string}`
+    if (!string.includes(' ')) return `#${capitalizeFirstLetter(string)}`
+    return `#${string.split(' ').map(s => capitalizeFirstLetter(s)).join('')}`
+  }
 }

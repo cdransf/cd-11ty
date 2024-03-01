@@ -4,34 +4,30 @@
 <style>{{ css }}</style>
 <nav aria-label="Blog pagination" class="pagination flex--centered">
   {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}">
-      <button aria-label="Previous page [&>svg]:h-5 [&>svg]:w-5">
-        {% tablericon "arrow-left" "Previous" %}
-      </button>
+    <a href="{{ pagination.href.previous }}" aria-label="Previous page">
+      {% tablericon "arrow-left" "Previous" %}
     </a>
   {% else %}
-    <button
+    <span
       class="disabled"
       aria-label="Previous page (disabled)"
       disabled>
       {% tablericon "arrow-left" "Prevous" %}
-    </button>
+    </span>
   {% endif %}
   <div class="text--centered">
     <span aria-current="page">{{ pagination.pageNumber | plus: 1 }}</span> of {{ pagination.links.size }}
   </div>
   {% if pagination.href.next %}
-    <a href="{{ pagination.href.next }}">
-      <button aria-label="Next page">
-        {% tablericon "arrow-right" "Next" %}
-      </button>
+    <a href="{{ pagination.href.next }}" aria-label="Next page">
+      {% tablericon "arrow-right" "Next" %}
     </a>
   {% else %}
-    <button
+    <span
       class="disabled"
       aria-label="Next page (disabled)"
       disabled>
       {% tablericon "arrow-right" "Next" %}
-    </button>
+    </span>
   {% endif %}
 </nav>

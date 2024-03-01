@@ -34,6 +34,8 @@ description: 'How to contact me.'
       <input type="email" name="email" placeholder="Email" required />
     </label>
     <textarea name="message" placeholder="Message" required></textarea>
-    <button class="pill--button" type="submit">Send message</button>
+    <div class="flex--centered justify--centered">
+      <button type="submit">Send message</button>
+    </div>
   </form>
 </div>

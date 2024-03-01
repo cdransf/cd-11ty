@@ -19,4 +19,5 @@ image: /assets/img/ogi/search.jpg
   <input type="hidden" placeholder="Search" name="sites" value="coryd.dev">
   </form>
 </pagefind-search>
-{% render "partials/popular-posts.liquid", posts: collections.posts, analytics: analytics %}
+{% render "partials/tags.liquid", tags:collections.tagsSortedByCount %}
+{% render "partials/popular-posts.liquid", posts:collections.posts, analytics:analytics %}

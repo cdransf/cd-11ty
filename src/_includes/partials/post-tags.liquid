@@ -1,9 +1,0 @@
-{% for tag in tags %}
-  {% if tag != "posts" %}
-    <a href="/tags/{{ tag }}">
-      <div
-        class="pill--button pill--button__small"
-        data-pagefind-filter="tags">{{ tag }}</div>
-    </a>
-  {% endif %}
-{% endfor %}

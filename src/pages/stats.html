@@ -6,6 +6,8 @@ image: /assets/img/ogi/stats.jpg
 ---
 <p>My first post was published on <strong class="highlight-text">{{ collections.postStats.firstPostDate | dateToReadableDate }}</strong> and my most recent one was published on <strong class="highlight-text">{{ collections.postStats.lastPostDate | dateToReadableDate }}</strong>. I've published <strong class="highlight-text">{{ collections.postStats.postCount }} posts</strong> containing <strong class="highlight-text">{{ collections.postStats.totalWordCount }} words</strong> and <strong class="highlight-text">{{ collections.postStats.totalCodeBlockCount }} code samples</strong>.</p>
 <p>Posts have, on average, <strong class="highlight-text">{{ collections.postStats.avgWordCount | round }} words</strong> and a gap of <strong class="highlight-text">{{ collections.postStats.avgDays | round }} days</strong> between them.</p>
+<p><strong>Top tags</strong></p>
+{% render "partials/tags.liquid", tags:collections.tagsSortedByCount %}
 <p><strong>Popular posts</strong></p>
 <ol class="link__list">
   {% assign posts = collections.posts | getPopularPosts: analytics %}

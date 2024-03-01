@@ -1,5 +1,5 @@
 .pagefind-ui {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   --pagefind-ui-primary: var(--accent-color);
   --pagefind-ui-text: var(--text-color);
   --pagefind-ui-background: var(--color-lightest);
@@ -58,6 +58,12 @@
 .pagefind-ui__search-clear {
   color: var(--text-color);
   background-color: transparent !important;
+}
+
+.pagefind-ui__search-clear:hover,
+.pagefind-ui__search-clear:focus,
+.pagefind-ui__search-clear:active {
+  color: var(--accent-color-hover) !important;
 }
 
 .pagefind-ui__result-title {

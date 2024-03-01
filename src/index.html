@@ -7,21 +7,21 @@ pagination:
   alias: posts
 ---
 {% if pagination.pageNumber == 0 %}
-  {% render "partials/now/topper.liquid" status:status %}
+  {% render "partials/now/topper.liquid" status:status, artists:artists, books:books, tv:tv %}
 {% endif %}
 {% for post in pagination.items %}
-  {% if post.data.published %}
-  <article class="h-entry">
-    <a class="no-underline" href="{{ post.url }}">
-      <h2 class="flex--centered">{{ post.data.title }}</h2>
-    </a>
-    <span class="p-author h-card hidden">{{ meta.siteName }}</span>
-    <time class="dt-published" datetime="{{ post.date }}">
-      {{ post.date | date: "%m.%Y" }}
-    </time>
-    <div class="p-summary hidden">{{ post.data.post_excerpt }}</div>
-    {{ post.data.post_excerpt | markdown }}
-  </article>
-  {% endif %}
+<article class="h-entry">
+  <time class="dt-published" datetime="{{ post.date }}">
+    {{ post.date | date: "%B %d, %Y" }}
+  </time>
+  <a class="no-underline" href="{{ post.url }}">
+    <h2 class="flex--centered">{{ post.data.title }}</h2>
+  </a>
+  <div class="text--small">{% render "partials/tags.liquid", tags:post.data.tags %}</div>
+  <span class="p-author h-card hidden">{{ meta.siteName }}</span>
+  <div class="p-summary hidden">{{ post.data.post_excerpt }}</div>
+  {{ post.data.post_excerpt | markdown }}
+  <p><a class="no-underline" href="{{ post.url }}">Read more →</a></p>
+</article>
 {% endfor %}
 {% render "partials/paginator.liquid", pagination:pagination %}

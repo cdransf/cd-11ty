@@ -1,10 +1,8 @@
+{%- assign artist = artists | first -%}
+{%- assign book = books | first -%}
+{%- assign show = tv | first -%}
 <div class="now__topper">
-  <h2>
-    <a class="no-underline" href="/now">Now</a>
-  </h2>
-  <div class="dark:text-white text-gray-800">
-    <p>I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, <a href="https://last.fm/user/coryd_" rel="noopener noreferrer">music</a>, writing, <a href="https://app.thestorygraph.com/profile/coryd" rel="noopener noreferrer">reading</a>, <a href="https://trakt.tv/users/cdransf" rel="noopener noreferrer">tv</a> and <a href="https://trakt.tv/users/cdransf" rel="noopener noreferrer">movies</a>.</p>
-    {% render "partials/now/status.liquid", status:status %}
-    {% render "partials/now-playing.liquid" %}
-  </div>
+  <p><strong class="highlight-text">I'm a software developer in Camarillo, California.</strong> I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, <a href="https://coryd.dev/now#artists">music</a>, writing, <a href="https://coryd.dev/now#books">reading</a>, <a href="https://coryd.dev/now#tv">tv</a> and <a href="https://coryd.dev/now#movies">movies</a>. Lately I've been{% if artist %} listening to a lot of <strong class="highlight-text">{{ artist.title }}</strong>,{% endif %} reading <strong class="highlight-text">{{ book.title }}</strong> and watching <strong class="highlight-text">{{ show.name }}</strong>.</p>
+  {% render "partials/now/status.liquid", status:status %}
+  {% render "partials/now-playing.liquid" %}
 </div>

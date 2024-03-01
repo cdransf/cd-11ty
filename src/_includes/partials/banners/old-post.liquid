@@ -1,10 +1,10 @@
 {% assign isOldPost = date | oldPost %}
 {% if isOldPost %}
   {% capture css %}
-    {% render "../../assets/styles/components/banner-old-post.css" %}
+    {% render "../../../assets/styles/components/banners.css" %}
   {% endcapture %}
   <style>{{ css }}</style>
-  <div class="banner__old-post">
+  <div class="banner old-post">
     <p>{% tablericon "clock-x" "Old post" %} This post is over 3 years old. I've probably changed my mind since it was written and it <em>could</em> be out of date.</p>
   </div>
 {% endif %}

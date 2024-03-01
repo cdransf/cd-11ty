@@ -30,6 +30,7 @@
 /tags/.env /tags/env 301!
 
 # 404s
+/sitemap.txt /sitemap.xml 301!
 /assets/img/social-preview/adding-a-light/dark-theme-toggle-preview.jpeg /assets/img/social-preview/adding-a-light-dark-theme-toggle-preview.jpeg 301!
 /assets/img/social-card.jpg /assets/img/ogi/default.jpg 301!
 /posts / 301!
@@ -48,7 +49,7 @@
 
 # general
 /articles/ / 301!
-/sitemap.txt /sitemap.xml 301!
+/tags /search 301!
 /mastodon https://social.lol/@cory 301!
 /coffee https://www.buymeacoffee.com/cory 301!
 /speedlify https://speedlify.coryd.dev 301!

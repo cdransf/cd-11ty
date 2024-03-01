@@ -1,0 +1,7 @@
+{% capture css %}
+  {% render "../../../assets/styles/components/banners.css" %}
+{% endcapture %}
+<style>{{ css }}</style>
+<div class="banner npm">
+  <p>{% tablericon "brand-npm" "NPM package" %} <a class="no-underline" href="{{ url }}">You can take a look at this package on NPM</a> or install it by running <code>{{ command }}</code>.</p>
+</div>
