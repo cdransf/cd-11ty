@@ -10774,5 +10774,16 @@
       "https://social.lol/users/cory/statuses/112018446820159115"
     ],
     "lastTootTimestamp": 1709265851183
+  },
+  "https://alistapart.com/article/the-wax-and-the-wane-of-the-web/": {
+    "id": "aHR0cHM6Ly9hbGlzdGFwYXJ0LmNvbS9hcnRpY2xlL3RoZS13YXgtYW5kLXRoZS13YW5lLW9mLXRoZS13ZWIv",
+    "title": "🔗: The Wax and the Wane of the Web",
+    "url": "https://alistapart.com/article/the-wax-and-the-wane-of-the-web/",
+    "content_text": "🔗: The Wax and the Wane of the Web #Tech #WebDev https://alistapart.com/article/the-wax-and-the-wane-of-the-web/",
+    "date_published": "Fri, 01 Mar 2024 03:39:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112018915766180679"
+    ],
+    "lastTootTimestamp": 1709273006729
   }
 }
