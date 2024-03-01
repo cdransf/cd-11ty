@@ -40,9 +40,7 @@ export const tagMap = (collection) => {
 
 export const tagsSortedByCount = (collectionApi) => {
   const tagStats = {};
-  const posts = collectionApi.getFilteredByGlob('src/posts/**/*.md').sort((a, b) => {
-    return a.date - b.date;
-  });
+  const posts = collectionApi.getFilteredByGlob('src/posts/**/*.*').sort((a, b) => a.date - b.date);
   posts.forEach((post) => {
     post.data.tags.forEach((tag) => {
       if (!tagStats[tag]) tagStats[tag] = 1;
@@ -89,7 +87,7 @@ export const postStats = (collectionApi) => {
   let highPostCount = 0
   let yearProgress = 0
 
-  const posts = collectionApi.getFilteredByGlob('src/posts/**/*.md').sort((a, b) => {
+  const posts = collectionApi.getFilteredByGlob('src/posts/**/*.*').sort((a, b) => {
     return a.date - b.date
   })
 
