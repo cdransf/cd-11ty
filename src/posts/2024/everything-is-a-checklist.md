@@ -4,6 +4,8 @@ title: 'Everything is a checklist'
 description: 'The author ruminates on routine, mental health and productibity.'
 tags: ['health', 'productivity']
 ---
+Everything, *everything*, can be a checklist.
+
 - &check; Wake up at 4:15am
 - &check; Start exercising by 4:30am
   - &check; Throw TV or movie on in the background
