@@ -14,6 +14,9 @@ image: /assets/img/404.jpg
     <h2 class="page__header">{{ title }}</h2>
     What kind of idiots do you have working here? <a href="/">Hurry up and skip out on the room service bill!</a>
   </div>
+  <hr class="large__spacing" />
+  {% render "partials/tags.liquid", tags:collections.tagsSortedByCount %}
+  {% render "partials/popular-posts.liquid", posts:collections.posts, analytics:analytics %}
 </div>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
