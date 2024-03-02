@@ -335,7 +335,7 @@ article [rel="author"] {
   margin-bottom: .25rem;
 }
 
-article p:first-child {
+article p:first-of-type {
   margin-top: .4rem;
 }
 
@@ -473,7 +473,7 @@ li {
     margin: 0 0 .25rem;
   }
 
-  article p:first-child {
+  article p:first-of-type {
   margin-top: .75rem;
 }
 
