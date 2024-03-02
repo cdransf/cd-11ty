@@ -1,10 +1,8 @@
-<nav aria-label="Primary site navigation">
-  <ul class="flex--centered flex--wrap">
-    {% for link in nav.menu %}
-      <li>
-        {% render "partials/nav/link.liquid", page:page, link:link.name, icon:link.icon %}
-      </li>
-    {% endfor %}
-    {% render "partials/nav/theme-toggle.liquid" %}
-  </ul>
+<nav
+  class="menu--primary flex--centered flex--wrap justify--center"
+  aria-label="Primary site navigation">
+  {% for link in nav.menu %}
+    {% render "partials/nav/link.liquid", page:page, link:link.name, icon:link.icon %}
+  {% endfor %}
+  {% render "partials/nav/theme-toggle.liquid" %}
 </nav>

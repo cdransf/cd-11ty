@@ -175,23 +175,15 @@ th {
 }
 
 /* nav */
-nav ul {
+.main__title nav {
   margin: 0;
   padding: 0;
-  list-style: none;
+  gap: var(--sizing-sm);
 }
 
-nav ul li {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-nav ul li:not(:last-child) {
-  margin-right: calc(var(--sizing-sm) * 1.225);
-}
-
-nav svg {
-  margin-top: var(--sizing-sm);
+.main__title nav a,
+.main__title nav span {
+  height: var(--sizing-xl);
 }
 
 :is(a:hover, a:active, a:focus) svg,
