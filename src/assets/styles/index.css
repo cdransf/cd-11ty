@@ -21,7 +21,7 @@ html {
 p,
 blockquote {
   line-height: var(--line-height-lg);
-  margin: 1.25rem 0;
+  margin: var(--spacing-base) 0;
 }
 
 blockquote {

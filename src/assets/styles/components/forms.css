@@ -19,7 +19,7 @@ textarea {
   /* necessary for pagefind overrides */
 
   outline: none;
-  margin-bottom: 1.25rem;
+  margin-bottom: var(--spacing-base);
   font-weight: 400 !important;
   line-height: var(--line-height-base);
   transition-property: border-color;

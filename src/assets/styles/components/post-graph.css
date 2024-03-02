@@ -1,6 +1,6 @@
 .post-graph {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+  margin-top: var(--spacing-base);
+  margin-bottom: var(--spacing-base);
 }
 
 .post-graph__wrapper {

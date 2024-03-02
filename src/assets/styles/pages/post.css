@@ -5,7 +5,7 @@
 
 /* footnotes */
 hr.footnotes-sep {
-  margin: 1.25rem 0;
+  margin: var(--spacing-base) 0;
 }
 
 .footnotes-list {

@@ -1,6 +1,6 @@
 .mastodon-post-wrapper {
   border-bottom: 1px solid var(--gray-light);
-  margin-bottom: 1.25rem;
+  margin-bottom: var(--spacing-base);
   padding-bottom: .25rem;
 }
 

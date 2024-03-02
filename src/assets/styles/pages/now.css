@@ -11,8 +11,8 @@
 .now__section--text p > svg {
   display: inline;
   vertical-align: middle;
-  height: 1.25rem;
-  width: 1.25rem;
+  height: var(--spacing-base);
+  width: var(--spacing-base);
 }
 
 .now__section--header {
