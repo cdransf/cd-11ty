@@ -368,8 +368,9 @@ svg {
 
 /* lists */
 ul, ol {
-  padding-left: 1.25rem;
   list-style-position: inside;
+  margin: var(--spacing-base) 0;
+  padding-left: var(--spacing-base);
 }
 
 li {
