@@ -425,8 +425,8 @@ li {
 }
 
 .text--small {
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-sm);
+  font-size: var(--font-size-sm) !important;
+  line-height: var(--line-height-sm) !important;
 }
 
 .flex--centered {
