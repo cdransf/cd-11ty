@@ -10796,5 +10796,24 @@
       "https://social.lol/users/cory/statuses/112019858619638124"
     ],
     "lastTootTimestamp": 1709287393584
+  },
+  "https://app.thestorygraph.com/books/51c9c4e8-b1b8-42db-920c-60a49067f664": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvNTFjOWM0ZTgtYjFiOC00MmRiLTkyMGMtNjBhNDkwNjdmNjY0",
+    "title": "📖: The Colonel",
+    "url": "https://app.thestorygraph.com/books/51c9c4e8-b1b8-42db-920c-60a49067f664",
+    "content_text": "📖: The Colonel #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/51c9c4e8-b1b8-42db-920c-60a49067f664",
+    "date_published": "Thu, 29 Feb 2024 16:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112024577470681439"
+    ],
+    "lastTootTimestamp": 1709359397508
+  },
+  "https://app.thestorygraph.com/books/4b2d7fae-0a0f-4263-a281-55eb54897d55": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvNGIyZDdmYWUtMGEwZi00MjYzLWEyODEtNTVlYjU0ODk3ZDU1",
+    "title": "📖: Means of Control: How the Hidden Alliance of Tech and Government Is Creating a New American Surveillance State",
+    "url": "https://app.thestorygraph.com/books/4b2d7fae-0a0f-4263-a281-55eb54897d55",
+    "content_text": "📖: Means of Control: How the Hidden Alliance of Tech and Government Is Creating a New American Surveillance State #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/4b2d7fae-0a0f-4263-a281-55eb54897d55",
+    "date_published": "Thu, 29 Feb 2024 16:00:00 GMT",
+    "toots": []
   }
 }
