@@ -14,6 +14,7 @@ export default [
   'FacebookBot',
   'Google-Extended',
   'GPTBot',
+  'ImagesiftBot',
   'magpie-crawler',
   'omgili',
   'omgilibot',

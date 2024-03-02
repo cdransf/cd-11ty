@@ -83,6 +83,9 @@ Disallow: /
 User-agent: GPTBot
 Disallow: /
 
+User-agent: ImagesiftBot
+Disallow: /
+
 User-agent: magpie-crawler
 Disallow: /
 
@@ -104,5 +107,9 @@ Disallow: /
 User-agent: YouBot
 Disallow: /
 ```
+
+**Other great posts on the subject:**
+- [I’m blocking AI-crawlers](https://roelant.net/en/2023/im-blocking-ai-crawlers/)
+- [Block the Bots that Feed “AI” Models by Scraping Your Website](https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/)
 
 [^1]: I've yet to definitively identify Arc Search's user agent but I'd like to, so I can block it and share it — but that assumes they respect `robots.txt` declarations.
