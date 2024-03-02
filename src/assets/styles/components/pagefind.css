@@ -1,5 +1,5 @@
 .pagefind-ui {
-  margin-bottom: var(--spacing-base);
+  margin-bottom: var(--sizing-base);
   --pagefind-ui-primary: var(--accent-color);
   --pagefind-ui-text: var(--text-color);
   --pagefind-ui-background: var(--color-lightest);
@@ -67,7 +67,7 @@
 }
 
 .pagefind-ui__result-title {
-  margin-bottom: .25rem !important;
+  margin-bottom: var(--sizing-xs) !important;
 }
 
 .pagefind-ui__result-link {
@@ -86,8 +86,8 @@
   color: var(--color-lightest) !important;
   line-height: var(--line-height-base);
   border-radius: var(--rounded-full) !important;
-  padding: .5rem 1rem !important;
-  margin: 0 .25rem .75rem 0;
+  padding: var(--sizing-sm) var(--sizing-lg) !important;
+  margin: 0 var(--sizing-xs) var(--sizing-md) 0;
   cursor: pointer !important;
   height: unset !important;
   text-decoration: none;

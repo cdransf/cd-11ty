@@ -5,12 +5,12 @@
 }
 
 .now__section--header {
-  margin: 2rem 0 1rem;
+  margin: var(--sizing-3xl) 0 var(--sizing-lg);
 }
 
 .media__grid {
   display: grid;
-  gap: .5rem;
+  gap: var(--sizing-sm);
 }
 
 .media__grid.square {

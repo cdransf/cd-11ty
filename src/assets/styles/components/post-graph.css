@@ -1,12 +1,12 @@
 .post-graph {
-  margin-top: var(--spacing-base);
-  margin-bottom: var(--spacing-base);
+  margin-top: var(--sizing-base);
+  margin-bottom: var(--sizing-base);
 }
 
 .post-graph__wrapper {
   display: flex;
   align-items: center;
-  height: 2rem;
+  height: var(--sizing-3xl);
   margin-bottom: .375rem;
 }
 

@@ -1,16 +1,15 @@
 :root {
   --grid: repeat(1,minmax(0,1fr));
-  --blog-roll-spacing: .75rem;
 }
 
 .blog__banner--grid {
   display: grid;
-  gap: .5rem;
+  gap: var(--sizing-sm);
   grid-template-columns: var(--grid);
 }
 
 .blog__banner {
-  padding: var(--blog-roll-spacing);
+  padding: var(--sizing-md);
   border: 1px solid var(--gray-light);
   border-radius: var(--rounded-lg);
   display: flex;
@@ -21,7 +20,7 @@
 .blog__banner > p,
 .blog__banner .meta {
   margin-top: 0;
-  margin-bottom: var(--blog-roll-spacing);
+  margin-bottom: var(--sizing-md);
 }
 
 .blog__banner > strong {

@@ -80,9 +80,16 @@
 
   --font-size-3xl: 1.875rem;
   --line-height-3xl: 2.25rem;
-  
+
   /* spacing */
-  --spacing-base: 1.25rem; 
+  --sizing-xs: .25rem;
+  --sizing-sm: .5rem;
+  --sizing-md: .75rem;
+  --sizing-lg: 1rem;
+  --sizing-base: 1.25rem;
+  --sizing-xl: 1.5rem;
+  --sizing-2xl: 1.75rem;
+  --sizing-3xl: 2rem;
 
   /* radii */
   --rounded-none: 0;

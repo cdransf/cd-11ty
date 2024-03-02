@@ -1,7 +1,7 @@
 .mastodon-post-wrapper {
   border-bottom: 1px solid var(--gray-light);
-  margin-bottom: var(--spacing-base);
-  padding-bottom: .25rem;
+  margin-bottom: var(--sizing-base);
+  padding-bottom: var(--sizing-xs);
 }
 
 dl {
@@ -10,9 +10,9 @@ dl {
 }
 
 dd {
-  margin-left: .25rem;
+  margin-left: var(--sizing-xs);
 }
 
 dd:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: var(--sizing-lg);
 }

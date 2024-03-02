@@ -21,14 +21,14 @@ html {
 p,
 blockquote {
   line-height: var(--line-height-lg);
-  margin: var(--spacing-base) 0;
+  margin: var(--sizing-base) 0;
 }
 
 blockquote {
   font-size: var(--font-size-lg);
   padding-left: .875rem;
   color: var(--gray-dark);
-  border-left: .25rem solid var(--gray-dark);
+  border-left: var(--sizing-xs) solid var(--gray-dark);
   word-break: break-word;
 }
 
@@ -37,7 +37,7 @@ blockquote {
 }
 
 :is(h1, h2, h3, h4, h5, h6) > svg {
-  margin-right: .25rem;
+  margin-right: var(--sizing-xs);
   stroke-width: var(--stroke-width-bold) !important;
 }
 
@@ -111,7 +111,7 @@ hr {
 }
 
 hr.large__spacing {
-  margin: 1.25rem 0;
+  margin: var(--sizing-base) 0;
 }
 
 /* tables */
@@ -161,7 +161,7 @@ th {
 /* header */
 .main__title {
   width: 100%;
-  padding-top: 2rem;
+  padding-top: var(--sizing-3xl);
   display: flex;
   flex-direction: column;
 }
@@ -236,7 +236,7 @@ nav ul li .active svg:hover {
 
 /* layout */
 .default__wrapper {
-  padding-top: 2rem;
+  padding-top: var(--sizing-3xl);
 }
 
 .main__wrapper {
@@ -256,7 +256,7 @@ main {
 .now__topper,
 article {
   border-bottom: 1px solid var(--gray-light);
-  margin-bottom: 1.25rem;
+  margin-bottom: var(--sizing-base);
 }
 
 .now__topper p:first-child {
@@ -265,8 +265,8 @@ article {
 
 footer nav:first-child {
   gap: .6rem;
-  margin-top: 2rem;
-  padding: 2rem 0 1rem;
+  margin-top: var(--sizing-3xl);
+  padding: var(--sizing-3xl) 0 var(--sizing-lg);
   width: 100%;
 }
 
@@ -275,19 +275,19 @@ footer nav:first-child svg {
 }
 
 footer nav:first-child a {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: var(--sizing-xl);
+  height: var(--sizing-xl);
 }
 
 footer nav:last-child {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
-  padding-bottom: 2rem;
+  padding-bottom: var(--sizing-3xl);
 }
 
 footer nav:last-child span:not(.active) {
-  margin-left: .25rem;
-  margin-right: .25rem;
+  margin-left: var(--sizing-xs);
+  margin-right: var(--sizing-xs);
 }
 
 :is(.main__title, footer nav:last-child) a {
@@ -298,11 +298,11 @@ footer nav:last-child span:not(.active) {
 .highlight-text {
   color: var(--color-lightest);
   background-color: var(--accent-color);
-  padding: .25rem;
+  padding: var(--sizing-xs);
 }
 
 code {
-  padding: .25rem;
+  padding: var(--sizing-xs);
   color: var(--text-color-inverted);
   background-color: var(--background-color-inverted);
 }
@@ -328,11 +328,11 @@ article time {
   color: var(--gray-dark);
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
-  margin-right: .25rem;
+  margin-right: var(--sizing-xs);
 }
 
 article [rel="author"] {
-  margin-bottom: .25rem;
+  margin-bottom: var(--sizing-xs);
 }
 
 article p:first-of-type {
@@ -357,8 +357,8 @@ svg {
 }
 
 .icon--small > svg {
-  width: 1rem;
-  height: 1rem;
+  width: var(--sizing-lg);
+  height: var(--sizing-lg);
 }
 
 .icon--center__vertical > svg {
@@ -369,13 +369,13 @@ svg {
 /* lists */
 ul, ol {
   list-style-position: inside;
-  margin: var(--spacing-base) 0;
-  padding-left: var(--spacing-base);
+  margin: var(--sizing-base) 0;
+  padding-left: var(--sizing-base);
 }
 
 li {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: var(--sizing-lg);
+  margin-bottom: var(--sizing-lg);
 }
 
 .link__list li {
@@ -457,7 +457,7 @@ li {
   }
 
   nav ul li:not(:last-child) {
-    margin-right: .75rem;
+    margin-right: var(--sizing-md);
   }
 
   main {
@@ -471,19 +471,19 @@ li {
   }
 
   article h2 {
-    margin: 0 0 .25rem;
+    margin: 0 0 var(--sizing-xs);
   }
 
   article p:first-of-type {
-    margin-top: .75rem;
+    margin-top: var(--sizing-md);
   }
 
   .tag:not(:last-child) {
-    margin-right: .5rem;
-    margin-bottom: .5rem;
+    margin-right: var(--sizing-sm);
+    margin-bottom: var(--sizing-sm);
   }
 
   footer nav:first-child {
-    gap: .75rem;
+    gap: var(--sizing-md);
   }
 }

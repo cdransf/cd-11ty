@@ -12,14 +12,14 @@ textarea {
   color: var(--text-color) !important;
   background-color: var(--background-color) !important;
   border: 1px solid var(--accent-color) !important;
-  padding: .5rem !important;
+  padding: var(--sizing-sm) !important;
   font-size: var(--font-size-base) !important;
   width: 100% !important;
   border-radius: var(--rounded-md) !important;
   /* necessary for pagefind overrides */
 
   outline: none;
-  margin-bottom: var(--spacing-base);
+  margin-bottom: var(--sizing-base);
   font-weight: 400 !important;
   line-height: var(--line-height-base);
   transition-property: border-color;
@@ -36,8 +36,8 @@ textarea:focus {
 
 button:not(.theme__toggle, .share, .pagefind-ui__search-clear) {
   border-radius: var(--rounded-full);
-  padding: .5rem 1rem;
-  margin: 0 .25rem .75rem 0;
+  padding: var(--sizing-sm) var(--sizing-lg);
+  margin: 0 var(--sizing-xs) var(--sizing-md) 0;
   cursor: pointer;
   display: inline-flex;
   flex-direction: row;

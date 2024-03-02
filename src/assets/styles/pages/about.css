@@ -3,7 +3,7 @@
 }
 
 .avatar__wrapper {
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--sizing-xl);
   width: 100%;
 }
 
@@ -13,7 +13,7 @@
   border: 1px solid var(--accent-color);
   border-radius: var(--rounded-full);
   display: flex;
-  padding: 1rem;
+  padding: var(--sizing-lg);
   background-color: var(--color-lightest);
 }
 

@@ -1,11 +1,11 @@
 /* embeds */
 .eleventy-plugin-youtube-embed {
-  margin-bottom: 1rem;
+  margin-bottom: var(--sizing-lg);
 }
 
 /* footnotes */
 hr.footnotes-sep {
-  margin: var(--spacing-base) 0;
+  margin: var(--sizing-base) 0;
 }
 
 .footnotes-list {
@@ -18,7 +18,7 @@ hr.footnotes-sep {
 }
 
 .footnotes {
-  padding-bottom: 1.25rem;
+  padding-bottom: var(--sizing-base);
 }
 
 .footnote-item > p {
