@@ -81,3 +81,5 @@ The component is then included via a `playing.liquid` template:
 Now, instead of having a separate template for the component and script, I'm able to quite simply consolidate the two and provide the same experience. You can view the full source of the component [here](https://github.com/cdransf/coryd.dev/blob/main/src/assets/scripts/components/now-playing.js) and the source of the edge function powering the `/api/now-playing` endpoint [here](https://github.com/cdransf/coryd.dev/blob/main/netlify/edge-functions/now-playing.js).
 
 Building this first component was pretty straightforward and, frankly, fun — it encapsulates the rendering logic and data fetching in one place without any external dependencies.
+
+{% render "partials/banners/npm.liquid", url: 'https://www.npmjs.com/package/@cdransf/api-text', command: 'npm i @cdransf/api-text' %}
