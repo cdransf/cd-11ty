@@ -26,7 +26,7 @@ blockquote {
 
 blockquote {
   font-size: var(--font-size-lg);
-  padding-left: .875rem;
+  padding-left: var(--sizing-lg);
   color: var(--gray-dark);
   border-left: var(--sizing-xs) solid var(--gray-dark);
   word-break: break-word;
@@ -147,8 +147,8 @@ tr:not(:last-child) {
 
 th,
 td {
-  padding: .375rem;
-  min-width: 4rem;
+  padding: var(--sizing-sm);
+  min-width: calc(var(--sizing-3xl) * 2);
   word-break: break-word;
 }
 
@@ -169,7 +169,7 @@ th {
 .main__title h1 {
   line-height: 1.25;
   margin: 0;
-  padding-bottom: .625rem;
+  padding-bottom: var(--sizing-md);
   font-size: var(--font-size-2xl);
   line-height: var(--line-height-2xl);
 }
@@ -187,11 +187,11 @@ nav ul li {
 }
 
 nav ul li:not(:last-child) {
-  margin-right: .6rem;
+  margin-right: calc(var(--sizing-sm) * 1.225);
 }
 
 nav svg {
-  margin-top: .125rem;
+  margin-top: var(--sizing-sm);
 }
 
 :is(a:hover, a:active, a:focus) svg,
@@ -264,7 +264,7 @@ article {
 }
 
 footer nav:first-child {
-  gap: .6rem;
+  gap: var(--sizing-sm);
   margin-top: var(--sizing-3xl);
   padding: var(--sizing-3xl) 0 var(--sizing-lg);
   width: 100%;
@@ -311,7 +311,7 @@ code {
 article h2 {
   color: var(--text-color);
   line-height: var(--line-height-2xl);
-  margin: 0 0 .85rem;
+  margin: 0 0 var(--sizing-lg);
   transition-property: color;
 }
 
@@ -336,12 +336,12 @@ article [rel="author"] {
 }
 
 article p:first-of-type {
-  margin-top: .4rem;
+  margin-top: var(--sizing-sm);
 }
 
 .tag:not(:last-child) {
-  margin-right: .85rem;
-  margin-bottom: .85rem;
+  margin-right: var(--sizing-lg);
+  margin-bottom: var(--sizing-lg);
   display: inline-block;
 }
 
@@ -379,8 +379,8 @@ li {
 }
 
 .link__list li {
-  margin-top: .375rem;
-  margin-bottom: .375rem;
+  margin-top: var(--sizing-sm);
+  margin-bottom: var(--sizing-sm);
 }
 
 .link__list,

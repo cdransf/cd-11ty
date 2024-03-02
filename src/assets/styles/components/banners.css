@@ -26,7 +26,7 @@
 .banner p > svg {
   display: inline;
   vertical-align: middle;
-  height: .875rem;
-  width: .875rem;
-  margin-right: .125rem;
+  height: var(--sizing-lg);
+  width: var(--sizing-lg);
+  margin-right: var(--sizing-xs);
 }

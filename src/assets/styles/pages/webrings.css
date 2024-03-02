@@ -1,6 +1,5 @@
 .webring__wrapper {
-  margin-top: 3rem;
-  margin-bottom: 2.5rem;
+  margin: var(--sizing-base) 0;
 }
 
 .webring__wrapper > .webring__centered {

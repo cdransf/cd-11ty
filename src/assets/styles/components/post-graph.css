@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   height: var(--sizing-3xl);
-  margin-bottom: .375rem;
+  margin-bottom: var(--sizing-sm);
 }
 
 .post-graph__progress {
@@ -21,5 +21,5 @@
 
 .post-graph__progress,
 .post-graph__data {
-  margin-left: .625rem;
+  margin-left: var(--sizing-sm);
 }
