@@ -40,7 +40,7 @@ export const tagMap = (collection) => {
 
 export const tagsSortedByCount = (collectionApi) => {
   const tagStats = {};
-  const posts = collectionApi.getFilteredByGlob('src/posts/**/*.*').sort((a, b) => a.date - b.date);
+  const posts = collectionApi.getFilteredByGlob('src/posts/**/*.*');
   posts.forEach((post) => {
     post.data.tags.forEach((tag) => {
       if (!tagStats[tag]) tagStats[tag] = 1;
