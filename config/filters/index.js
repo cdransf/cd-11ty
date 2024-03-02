@@ -185,7 +185,10 @@ export default {
       return normalized
     }),
 
-    // posts
+    // tags
+  filterTags: (tags) => {
+    return tags.filter((tag) => tag.toLowerCase() !== 'posts')
+  },
   formatTag: (string) => {
     const capitalizeFirstLetter = (string) => {
         return string.charAt(0).toUpperCase() + string.slice(1);
