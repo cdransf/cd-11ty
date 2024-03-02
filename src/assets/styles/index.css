@@ -176,8 +176,6 @@ th {
 
 /* nav */
 .main__title nav {
-  margin: 0;
-  padding: 0;
   gap: var(--sizing-sm);
 }
 
@@ -446,6 +444,10 @@ li {
 
   .main__title h1 {
     padding-bottom: 0;
+  }
+
+  .main__title nav {
+    gap: var(--sizing-md);
   }
 
   nav ul li:not(:last-child) {
