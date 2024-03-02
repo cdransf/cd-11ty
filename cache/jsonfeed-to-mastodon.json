@@ -10818,5 +10818,32 @@
       "https://social.lol/users/cory/statuses/112025049000945948"
     ],
     "lastTootTimestamp": 1709366592467
+  },
+  "https://abookapart.com/blogs/press/a-new-chapter-for-a-book-apart": {
+    "id": "aHR0cHM6Ly9hYm9va2FwYXJ0LmNvbS9ibG9ncy9wcmVzcy9hLW5ldy1jaGFwdGVyLWZvci1hLWJvb2stYXBhcnQ=",
+    "title": "🔗: A New Chapter for A Book Apart",
+    "url": "https://abookapart.com/blogs/press/a-new-chapter-for-a-book-apart",
+    "content_text": "🔗: A New Chapter for A Book Apart #WebDev https://abookapart.com/blogs/press/a-new-chapter-for-a-book-apart",
+    "date_published": "Sat, 02 Mar 2024 16:34:00 GMT",
+    "toots": []
+  },
+  "https://www.404media.co/wordpress-firehose-allows-ai-companies-to-buy-access-to-a-million-posts-a-day/": {
+    "id": "aHR0cHM6Ly93d3cuNDA0bWVkaWEuY28vd29yZHByZXNzLWZpcmVob3NlLWFsbG93cy1haS1jb21wYW5pZXMtdG8tYnV5LWFjY2Vzcy10by1hLW1pbGxpb24tcG9zdHMtYS1kYXkv",
+    "title": "🔗: A WordPress ‘Firehose’ Allows AI Companies to Buy Access to a Million Posts a Day",
+    "url": "https://www.404media.co/wordpress-firehose-allows-ai-companies-to-buy-access-to-a-million-posts-a-day/",
+    "content_text": "🔗: A WordPress ‘Firehose’ Allows AI Companies to Buy Access to a Million Posts a Day #AI #Tech https://www.404media.co/wordpress-firehose-allows-ai-companies-to-buy-access-to-a-million-posts-a-day/",
+    "date_published": "Sat, 02 Mar 2024 16:32:00 GMT",
+    "toots": []
+  },
+  "https://coryd.dev/posts/2024/go-ahead-and-block-ai-web-crawlers/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9nby1haGVhZC1hbmQtYmxvY2stYWktd2ViLWNyYXdsZXJzLw==",
+    "title": "📝: Go ahead and block AI web crawlers",
+    "url": "https://coryd.dev/posts/2024/go-ahead-and-block-ai-web-crawlers/",
+    "content_text": "📝: Go ahead and block AI web crawlers #AI #Tech #WebDev https://coryd.dev/posts/2024/go-ahead-and-block-ai-web-crawlers/",
+    "date_published": "Sat, 02 Mar 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112027408367241420"
+    ],
+    "lastTootTimestamp": 1709402593546
   }
 }
