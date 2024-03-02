@@ -474,8 +474,8 @@ li {
   }
 
   article p:first-of-type {
-  margin-top: .75rem;
-}
+    margin-top: .75rem;
+  }
 
   .tag:not(:last-child) {
     margin-right: .5rem;
