@@ -76,8 +76,8 @@
 .media__grid .item__meta-text .header,
 .media__grid .item__meta-text .subheader {
   color: var(--color-lightest);
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-sm);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
   text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
 }
 
