@@ -10851,5 +10851,16 @@
       "https://social.lol/users/cory/statuses/112027408367241420"
     ],
     "lastTootTimestamp": 1709402593546
+  },
+  "https://app.thestorygraph.com/books/c4624d75-786f-478c-ab08-46a44bbf725b": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvYzQ2MjRkNzUtNzg2Zi00NzhjLWFiMDgtNDZhNDRiYmY3MjVi",
+    "title": "📖: Machine Vendetta",
+    "url": "https://app.thestorygraph.com/books/c4624d75-786f-478c-ab08-46a44bbf725b",
+    "content_text": "📖: Machine Vendetta #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/c4624d75-786f-478c-ab08-46a44bbf725b",
+    "date_published": "Fri, 01 Mar 2024 16:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112029768218107468"
+    ],
+    "lastTootTimestamp": 1709438602020
   }
 }
