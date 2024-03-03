@@ -16,7 +16,7 @@ const filterDuplicates = array => {
   return array.filter(obj => !seenIds.has(obj.id) && seenIds.add(obj.id));
 };
 
-export default async function () {
+export default async function ({ constants }) {
   //  const client = new S3Client({
   //    credentials: {
   //      accessKeyId: process.env.ACCESS_KEY_B2,
@@ -51,8 +51,8 @@ export default async function () {
 
   if (process.env.ELEVENTY_PRODUCTION) {
     const store = getDeployStore({
-      siteID: process.env.SITE_ID_NETLIFY,
-      token: process.env.API_TOKEN_NETLIFY_BLOBS,
+      siteID: constants.SITE_ID,
+      token: constants.NETLIFY_API_TOKEN,
     });
     READWISE_LINKS_STORE = await store.getStore("readwise-links");
     await READWISE_LINKS_STORE.get('cached-links');
