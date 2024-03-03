@@ -10862,5 +10862,16 @@
       "https://social.lol/users/cory/statuses/112029768218107468"
     ],
     "lastTootTimestamp": 1709438602020
+  },
+  "https://coryd.dev/posts/2024/im-going-to-keep-opting-out/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9pbS1nb2luZy10by1rZWVwLW9wdGluZy1vdXQv",
+    "title": "📝: I'm going to keep opting out",
+    "url": "https://coryd.dev/posts/2024/im-going-to-keep-opting-out/",
+    "content_text": "📝: I'm going to keep opting out #Tech #Privacy https://coryd.dev/posts/2024/im-going-to-keep-opting-out/",
+    "date_published": "Sun, 03 Mar 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112033398519693962"
+    ],
+    "lastTootTimestamp": 1709493996046
   }
 }
