@@ -68,9 +68,9 @@
 
 .media__grid .item__meta-text {
   position: absolute;
-  padding: 0 var(--sizing-xs);
+  padding: 0 var(--sizing-sm);
   width: 90%;
-  bottom: var(--sizing-xs);
+  bottom: var(--sizing-sm);
 }
 
 .media__grid .item__meta-text .header,
