@@ -12,7 +12,7 @@ pagination:
 {% for post in pagination.items %}
 <article class="h-entry">
   <time class="dt-published" datetime="{{ post.date }}">
-    {{ post.date | date: "%B %d, %Y" }}
+    {{ post.date | date: "%B %e, %Y" }}
   </time>
   <a class="no-underline" href="{{ post.url }}">
     <h2 class="flex--centered">{{ post.data.title }}</h2>

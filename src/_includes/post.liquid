@@ -13,7 +13,7 @@ schema: blog
   <article class="h-entry" data-pagefind-body>
     <div class="flex--centered">
       <time class="dt-published" datetime="{{ date }}">
-        {{ date | date: "%B %d, %Y" }}
+        {{ date | date: "%B %e, %Y" }}
         <span class="client-side"> • </span>
       </time>
       {% render "partials/share-button.liquid", url:postUrl, title:title, tagMap:collections.tagMap %}
