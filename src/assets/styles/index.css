@@ -58,6 +58,7 @@ blockquote {
 /* links */
 a {
   transition-property: color;
+  text-decoration: none;
 }
 
 a,
@@ -124,10 +125,6 @@ table {
   white-space: nowrap;
   border-radius: var(--rounded-lg);
   border: 1px solid var(--gray-light);
-}
-
-table a {
-  text-decoration: none;
 }
 
 table,
@@ -282,7 +279,6 @@ footer nav:last-child span:not(.active) {
 
 :is(.main__title, footer nav:last-child) a {
   color: var(--text-color);
-  text-decoration: none;
 }
 
 .highlight-text {
@@ -405,10 +401,6 @@ li {
 /* utilities */
 .hidden {
   display: none !important;
-}
-
-.no-underline {
-  text-decoration: none !important;
 }
 
 .text--centered {

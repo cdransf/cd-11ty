@@ -15,10 +15,10 @@ eleventyComputed:
   <time class="dt-published" datetime="{{ post.date }}">
     {{ post.date | date: "%m.%Y" }}
   </time>
-  <a class="no-underline" href="{{ post.url }}">
+  <a href="{{ post.url }}">
     <h2 class="flex--centered">{{ post.data.title }}</h2>
   </a>
   <p class="p-summary">{{ post.data.post_excerpt | markdown }}</p>
-  <p><a class="no-underline" href="{{ post.url }}">Read more →</a></p>
+  <p><a href="{{ post.url }}">Read more →</a></p>
 </article>
 {% endfor %}

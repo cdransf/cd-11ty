@@ -1,4 +1,4 @@
 {% assign filteredTags = tags | filterTags %}
 {% for tag in filteredTags limit: 10 %}
-  <a class="tag no-underline" href="/tags/{{ tag | downcase }}" data-pagefind-filter="tags">{{ tag | formatTag }}</a>
+  <a class="tag" href="/tags/{{ tag | downcase }}" data-pagefind-filter="tags">{{ tag | formatTag }}</a>
 {% endfor %}

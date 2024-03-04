@@ -13,7 +13,7 @@ image: /assets/img/ogi/stats.jpg
   {% assign posts = collections.posts | getPopularPosts: analytics %}
   {% for post in posts limit: 10 %}
   <li>
-    <a class="no-underline" href="{{post.url}}" title="{{ post.data.title | escape}}">
+    <a href="{{post.url}}" title="{{ post.data.title | escape}}">
       {{ post.data.title }}
     </a>
   </li>

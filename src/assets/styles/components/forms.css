@@ -49,7 +49,6 @@ button:not(.theme__toggle, .share, .pagefind-ui__search-clear) {
   background-color: var(--accent-color);
   appearance: none;
   border: none;
-  text-decoration: none;
   transition-property: background-color;
 }
 

@@ -6,7 +6,7 @@
   <ul class="link__list">
     {% for link in links limit: 5 %}
       <li>
-        <a class="no-underline" href="{{link.url}}" title="{{link.title | escape}}">
+        <a href="{{link.url}}" title="{{link.title | escape}}">
           {{ link.title }}
         </a>
       </li>

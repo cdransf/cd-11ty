@@ -16,8 +16,8 @@ description: 'These are awesome blogs that I enjoy and you may enjoy too.'
   <div class="blog__banner">
     <strong>{{ blog.name }}</strong>
     <div class="meta">
-      <a class="no-underline" href="{{blog.url}}">Website</a>
-      {% if blog.feed %} • <a class="no-underline" href="{{ blog.feed }}">Feed</a>{% endif %}
+      <a href="{{blog.url}}">Website</a>
+      {% if blog.feed %} • <a href="{{ blog.feed }}">Feed</a>{% endif %}
     </div>
     {%- if blog.description %}
     <p>{{ blog.description }}</p>

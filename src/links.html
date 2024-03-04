@@ -13,7 +13,7 @@ image: /assets/img/ogi/links.jpg
 <ul class="link__list">
   {% for link in pagination.items %}
     <li>
-      <a class="no-underline" href="{{ link.url }}">{{ link.title }}</a>
+      <a href="{{ link.url }}">{{ link.title }}</a>
       {% if link.author and link.author != 'undefined' %}by {{ link.author }}{% endif %}
     </li>
   {% endfor %}
