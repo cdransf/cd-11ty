@@ -1,0 +1,20 @@
+:root {
+  --grid: repeat(3,minmax(0,1fr));
+}
+
+.badge__grid {
+  display: grid;
+  gap: var(--sizing-md);
+  grid-template-columns: var(--grid);
+}
+
+.badge__grid > * {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --grid: repeat(4,minmax(0,1fr));
+  }
+}
