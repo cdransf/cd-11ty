@@ -14,6 +14,7 @@ export default async function () {
       { name: 'Search', icon: 'search' },
       { name: 'Feeds', icon: 'rss' },
       { name: 'Mastodon', icon: 'brand-mastodon' },
+      { name: 'Coffee', icon: 'coffee' },
     ],
     social: [
       { name: 'Email', url: '/contact', icon: 'at' },
@@ -23,7 +24,6 @@ export default async function () {
       { name: 'Last.fm', url: 'https://www.last.fm/user/coryd_', icon: 'brand-lastfm' },
       { name: 'Trakt', url: 'https://trakt.tv/users/cdransf', icon: 'device-tv' },
       { name: 'The StoryGraph', url: 'https://app.thestorygraph.com/profile/coryd', icon: 'books' },
-      { name: 'Buy Me a Coffee', url: 'https://www.buymeacoffee.com/cory', icon: 'cup' },
       { name: 'Webrings', url: '/webrings', icon: 'heart-handshake' },
     ],
   }
