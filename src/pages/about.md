@@ -11,7 +11,7 @@ image: /assets/img/ogi/about.jpg
 <div class="avatar__wrapper flex--centered">
   <div class="avatar__wrapper--interior">
   {%- capture about_alt -%}{{ meta.siteName }} - image by David Neal / @reverentgeek{%- endcapture -%}
-  {% image './src/assets/img/avatar.webp', about_alt %}
+  {% image './src/assets/img/avatar.webp', about_alt, '', 'eager' %}
   </div>
 </div>
 <h2 class="page__header text--centered">Hi, I'm Cory</h2>
