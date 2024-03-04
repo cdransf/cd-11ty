@@ -1,15 +1,14 @@
-import { getStore } from "@netlify/blobs";
 import EleventyFetch from '@11ty/eleventy-fetch'
-// import { S3Client, GetObjectCommand, PutObjectCommand } from '@aws-sdk/client-s3'
+import { S3Client, GetObjectCommand, PutObjectCommand } from '@aws-sdk/client-s3'
 
-// const getReadableData = (readable) => {
-//   return new Promise((resolve, reject) => {
-//     const chunks = []
-//     readable.once('error', (err) => reject(err))
-//     readable.on('data', (chunk) => chunks.push(chunk))
-//     readable.once('end', () => resolve(chunks.join('')))
-//   })
-// }
+const getReadableData = (readable) => {
+  return new Promise((resolve, reject) => {
+    const chunks = []
+    readable.once('error', (err) => reject(err))
+    readable.on('data', (chunk) => chunks.push(chunk))
+    readable.once('end', () => resolve(chunks.join('')))
+  })
+}
 
 const filterDuplicates = array => {
   const seenIds = new Set();
@@ -17,18 +16,17 @@ const filterDuplicates = array => {
 };
 
 export default async function () {
-  //  const client = new S3Client({
-  //    credentials: {
-  //      accessKeyId: process.env.ACCESS_KEY_B2,
-  //      secretAccessKey: process.env.SECRET_KEY_B2,
-  //    },
-  //    endpoint: {
-  //      url: 'https://s3.us-west-001.backblazeb2.com',
-  //    },
-  //    region: 'us-west-1',
-  //  })
-  // const BUCKET_B2 = process.env.BUCKET_B2
-  let READWISE_LINKS_STORE;
+   const client = new S3Client({
+     credentials: {
+       accessKeyId: process.env.ACCESS_KEY_B2,
+       secretAccessKey: process.env.SECRET_KEY_B2,
+     },
+     endpoint: {
+       url: 'https://s3.us-west-001.backblazeb2.com',
+     },
+     region: 'us-west-1',
+   })
+  const BUCKET_B2 = process.env.BUCKET_B2
   const API_TOKEN_READWISE = process.env.API_TOKEN_READWISE
   const formatLinkData = (links) => links.map((link) => {
     return {
@@ -50,20 +48,15 @@ export default async function () {
   let cachedLinks;
 
   if (process.env.ELEVENTY_PRODUCTION) {
-    READWISE_LINKS_STORE = getStore("readwise-links");
-    await READWISE_LINKS_STORE.get('cached-links');
+    const cachedLinksOutput = await client.send(
+        new GetObjectCommand({
+          Bucket: BUCKET_B2,
+          Key: 'links.json',
+       })
+    )
+    const cachedLinksData = getReadableData(cachedLinksOutput.Body)
+    cachedLinks = await cachedLinksData.then((tracks) => JSON.parse(tracks)).catch()
   }
-
-  // if (process.env.ELEVENTY_PRODUCTION) {
-  //   const cachedLinksOutput = await client.send(
-  //       new GetObjectCommand({
-  //         Bucket: BUCKET_B2,
-  //         Key: 'links.json',
-  //      })
-  //   )
-  //   const cachedLinksData = getReadableData(cachedLinksOutput.Body)
-  //   cachedLinks = await cachedLinksData.then((tracks) => JSON.parse(tracks)).catch()
-  // }
 
   while (true) {
     const queryParams = new URLSearchParams()
@@ -84,27 +77,19 @@ export default async function () {
     if (!nextPageCursor || requestCount === maxRequests) break;
   }
 
-  // if (process.env.ELEVENTY_PRODUCTION) {
-  //   const mergedData = filterDuplicates([
-  //     ...formatLinkData(fullData).filter((link) => link.tags.includes('share')),
-  //     ...Object.values(cachedLinks)
-  //   ]).sort((a,b) => new Date(b.date) - new Date(a.date));
-
-  //   await client.send(
-  //     new PutObjectCommand({
-  //       Bucket: BUCKET_B2,
-  //       Key: 'links.json',
-  //       Body: JSON.stringify(mergedData),
-  //     })
-  //    )
-  //   return mergedData
-  // }
   if (process.env.ELEVENTY_PRODUCTION) {
     const mergedData = filterDuplicates([
       ...formatLinkData(fullData).filter((link) => link.tags.includes('share')),
       ...Object.values(cachedLinks)
     ]).sort((a,b) => new Date(b.date) - new Date(a.date));
-    await READWISE_LINKS_STORE.setJSON('cached-links', mergedData);
+
+    await client.send(
+      new PutObjectCommand({
+        Bucket: BUCKET_B2,
+        Key: 'links.json',
+        Body: JSON.stringify(mergedData),
+      })
+     )
     return mergedData
   }
 
