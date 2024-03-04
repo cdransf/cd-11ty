@@ -1,4 +1,4 @@
-import { getStore, getDeployStore } from "@netlify/blobs";
+import { getStore } from "@netlify/blobs";
 import EleventyFetch from '@11ty/eleventy-fetch'
 // import { S3Client, GetObjectCommand, PutObjectCommand } from '@aws-sdk/client-s3'
 
@@ -16,7 +16,7 @@ const filterDuplicates = array => {
   return array.filter(obj => !seenIds.has(obj.id) && seenIds.add(obj.id));
 };
 
-export default async function ({ constants }) {
+export default async function () {
   //  const client = new S3Client({
   //    credentials: {
   //      accessKeyId: process.env.ACCESS_KEY_B2,
@@ -50,11 +50,7 @@ export default async function ({ constants }) {
   let cachedLinks;
 
   if (process.env.ELEVENTY_PRODUCTION) {
-    const store = getDeployStore({
-      siteID: constants.SITE_ID,
-      token: constants.NETLIFY_API_TOKEN,
-    });
-    READWISE_LINKS_STORE = await store.getStore("readwise-links");
+    READWISE_LINKS_STORE = getStore("readwise-links");
     await READWISE_LINKS_STORE.get('cached-links');
   }
 
