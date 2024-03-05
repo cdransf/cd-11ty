@@ -20,7 +20,7 @@ const emojiMap = (genre, artist) => {
   // early return for bad input
   if (!genre) return DEFAULT;
 
-  if (genre.includes("death metal")) return "💀";
+  if (genre.includes("death metal") || genre.includes("death-doom")) return "💀";
   if (genre.includes("black metal") || genre.includes("blackgaze")) return "🪦";
   if (genre.includes("metal")) return "🤘";
   if (genre.includes("emo") || genre.includes("blues")) return "😢";
