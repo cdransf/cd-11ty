@@ -13,6 +13,10 @@
   justify-content: center;
 }
 
+.badge__grid img {
+  image-rendering: pixelated;
+}
+
 @media screen and (min-width: 768px) {
   :root {
     --grid: repeat(4,minmax(0,1fr));
