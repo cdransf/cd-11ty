@@ -8,8 +8,8 @@
 }
 
 .avatar__wrapper .avatar__wrapper--interior {
-  max-width: var(--avatar-size);
-  height: auto;
+  width: var(--avatar-size);
+  height: var(--avatar-size);;
   border: 1px solid var(--accent-color);
   border-radius: var(--rounded-full);
   display: flex;
