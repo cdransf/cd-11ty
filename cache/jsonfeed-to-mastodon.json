@@ -10939,5 +10939,24 @@
       "https://social.lol/users/cory/statuses/112044867238335312"
     ],
     "lastTootTimestamp": 1709668996240
+  },
+  "https://gomakethings.com/boilerplates-vs.-frameworks/": {
+    "id": "aHR0cHM6Ly9nb21ha2V0aGluZ3MuY29tL2JvaWxlcnBsYXRlcy12cy4tZnJhbWV3b3Jrcy8=",
+    "title": "🔗: Boilerplates vs. frameworks",
+    "url": "https://gomakethings.com/boilerplates-vs.-frameworks/",
+    "content_text": "🔗: Boilerplates vs. frameworks #WebDev https://gomakethings.com/boilerplates-vs.-frameworks/",
+    "date_published": "Tue, 05 Mar 2024 23:17:00 GMT",
+    "toots": []
+  },
+  "https://coryd.dev/posts/2024/a-music-workflow-for-2024/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9hLW11c2ljLXdvcmtmbG93LWZvci0yMDI0Lw==",
+    "title": "📝: A music workflow for 2024",
+    "url": "https://coryd.dev/posts/2024/a-music-workflow-for-2024/",
+    "content_text": "📝: A music workflow for 2024 #Music #Tech https://coryd.dev/posts/2024/a-music-workflow-for-2024/",
+    "date_published": "Tue, 05 Mar 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112046301269510659"
+    ],
+    "lastTootTimestamp": 1709690877147
   }
 }
