@@ -8,10 +8,6 @@
   resize: none;
 }
 
-.contact__wrapper .column.contact__description {
-  margin-bottom: var(--sizing-xl);
-}
-
 .contact__wrapper .column.contact__description p:first-child {
   margin-top: 0;
 }
@@ -27,6 +23,5 @@
 
   .contact__wrapper .column.contact__description {
     padding-right: var(--sizing-xl);
-    margin-bottom: 0;
   }
 }
