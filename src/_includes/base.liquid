@@ -1,12 +1,13 @@
 {%- capture fullUrl %}{{ meta.url }}{{ page.url }}{% endcapture -%}
+{%- capture pageTitle %}{% if title %}{{ title }} • {% endif %}{{meta.siteName}}{% endcapture -%}
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{%- if title %}{{ title }} • {% endif -%}{{ meta.siteName }}</title>
+    <title>{{ pageTitle }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="{{ fullUrl }}" />
-    <meta property="og:title" content="{% if title %}{{ title }} • {% endif %}{{meta.siteName}}" />
+    <meta property="og:title" content="{{ pageTitle }}" />
     <meta name="description" content="{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}" />
     <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}" />
     <meta property="og:type" content="article" />
@@ -46,7 +47,7 @@
             "@id": "{{ meta.url }}#website"
           },
           "@id": "{{ fullUrl }}",
-          "headline": "{%- if title %}{{ title }} • {% endif -%}{{ meta.siteName }}",
+          "headline": "{{ pageTitle }}",
           "description": "{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}",
           "image": "{% if image %}{{ image }}{% else %}{{ meta.meta_data.opengraph_default }}{% endif %}",
           "inLanguage": "{{ meta.locale }}",
@@ -71,7 +72,7 @@
               "@type": "WebSite",
               "@id": "{{ meta.url }}#website",
               "url": "{{ meta.url }}",
-              "name": "{%- if title %}{{ title }} • {% endif -%}{{ meta.siteName }}",
+              "name": "{{ pageTitle }}",
               "description": "{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}",
               "inLanguage": "{{ meta.locale }}"
             }
