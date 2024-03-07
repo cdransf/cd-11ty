@@ -5,6 +5,7 @@ export default {
   'black metal': '#BlackMetal',
   blogging: '#Blogging',
   books: '#Books',
+  climate: '#Climate',
   css: '#CSS',
   'death metal': '#DeathMetal',
   development: '#WebDev',
