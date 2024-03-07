@@ -32,7 +32,7 @@
           {%- capture loadingStrategy -%}
             {%- if loading -%}{{ loading }}{%- else -%}lazy{%- endif -%}
           {%- endcapture -%}
-          {% image item.image, alt, '', loadingStrategy %}
+          {% image item.image, alt, '', loadingStrategy, 320 %}
         </div>
       </a>
     {% endfor %}

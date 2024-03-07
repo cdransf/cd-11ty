@@ -16,10 +16,11 @@ export const img = async (
   alt = '',
   className,
   loading = 'lazy',
+  maxWidth = 1248,
   sizes = '90vw',
   formats = ['avif', 'webp', 'jpeg']
 ) => {
-  const widths = [320, 570, 880, 1024, 1248];
+  const widths = [320, 570, 880, 1024, 1248].filter(width => width <= maxWidth);
   const metadata = await Image(src, {
     widths: [...widths],
     formats: [...formats],
