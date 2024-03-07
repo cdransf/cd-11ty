@@ -11005,5 +11005,16 @@
       "https://social.lol/users/cory/statuses/112053361230534338"
     ],
     "lastTootTimestamp": 1709798602817
+  },
+  "https://piccalil.li/blog/some-little-ways-im-using-css-has-in-the-real-world/": {
+    "id": "aHR0cHM6Ly9waWNjYWxpbC5saS9ibG9nL3NvbWUtbGl0dGxlLXdheXMtaW0tdXNpbmctY3NzLWhhcy1pbi10aGUtcmVhbC13b3JsZC8=",
+    "title": "🔗: Some little ways I’m using CSS :has() in the real world",
+    "url": "https://piccalil.li/blog/some-little-ways-im-using-css-has-in-the-real-world/",
+    "content_text": "🔗: Some little ways I’m using CSS :has() in the real world #WebDev https://piccalil.li/blog/some-little-ways-im-using-css-has-in-the-real-world/",
+    "date_published": "Thu, 07 Mar 2024 20:31:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112056662455072543"
+    ],
+    "lastTootTimestamp": 1709848975521
   }
 }
