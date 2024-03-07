@@ -197,7 +197,7 @@ button svg:hover,
 }
 
 a svg,
-.active svg,
+nav .active svg,
 nav ul li .active svg {
   stroke: var(--accent-color);
 }
