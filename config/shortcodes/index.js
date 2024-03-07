@@ -20,7 +20,7 @@ export const img = async (
   sizes = '90vw',
   formats = ['avif', 'webp', 'jpeg']
 ) => {
-  const widths = [320, 570, 880, 1024, 1248].filter(width => width <= maxWidth);
+  const widths = [200, 320, 570, 880, 1024, 1248].filter(width => width <= maxWidth);
   const metadata = await Image(src, {
     widths: [...widths],
     formats: [...formats],
@@ -45,7 +45,7 @@ export const img = async (
     })
     .join('\n');
 
-  const imgageAttributes = stringifyAttributes({
+  const imageAttributes = stringifyAttributes({
     src: lowsrc.url,
     width: lowsrc.width,
     height: lowsrc.height,
@@ -55,10 +55,7 @@ export const img = async (
     decoding: 'async',
   });
 
-  const imageElement = `<picture>
-    ${imageSources}
-    <img ${imgageAttributes} />
-  </picture>`;
+  const imageElement = `<picture>${imageSources}<img ${imageAttributes} /></picture>`;
 
   return htmlmin.minify(imageElement, { collapseWhitespace: true });
 };

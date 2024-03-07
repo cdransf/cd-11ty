@@ -32,7 +32,11 @@
           {%- capture loadingStrategy -%}
             {%- if loading -%}{{ loading }}{%- else -%}lazy{%- endif -%}
           {%- endcapture -%}
-          {% image item.image, alt, '', loadingStrategy, 320 %}
+          {% if shape == 'square' %}
+            {% image item.image, alt, '', loadingStrategy, 320 %}
+          {% else %}
+            {% image item.image, alt, '', loadingStrategy, 200 %}
+          {% endif %}
         </div>
       </a>
     {% endfor %}
