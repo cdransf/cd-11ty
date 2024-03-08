@@ -11038,5 +11038,16 @@
       "https://social.lol/users/cory/statuses/112059495020649010"
     ],
     "lastTootTimestamp": 1709892197032
+  },
+  "https://joshcollinsworth.com/blog/devaluing-frontend": {
+    "id": "aHR0cHM6Ly9qb3NoY29sbGluc3dvcnRoLmNvbS9ibG9nL2RldmFsdWluZy1mcm9udGVuZA==",
+    "title": "🔗: The quiet, pervasive devaluation of frontend",
+    "url": "https://joshcollinsworth.com/blog/devaluing-frontend",
+    "content_text": "🔗: The quiet, pervasive devaluation of frontend #WebDev https://joshcollinsworth.com/blog/devaluing-frontend",
+    "date_published": "Fri, 08 Mar 2024 15:13:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112061383399208127"
+    ],
+    "lastTootTimestamp": 1709921011389
   }
 }
