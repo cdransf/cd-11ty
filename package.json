@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "7.7.0",
+  "version": "7.8.0",
   "description": "The source for my personal site. Built using 11ty.",
   "type": "module",
   "scripts": {
@@ -26,7 +26,9 @@
     "@daviddarnes/mastodon-post": "^1.1.1",
     "@remy/webmention": "^1.5.0",
     "@zachleat/pagefind-search": "^1.0.3",
-    "@zachleat/webcare-webshare": "^1.0.3"
+    "@zachleat/webcare-webshare": "^1.0.3",
+    "terser": "^5.29.1",
+    "youtube-video-element": "^1.0.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.0.0-alpha.5",
@@ -39,7 +41,6 @@
     "@rknightuk/eleventy-plugin-post-graph": "^1.0.6",
     "child_process": "^1.0.2",
     "dotenv-flow": "^4.1.0",
-    "eleventy-plugin-embed-everything": "^1.18.2",
     "eleventy-plugin-tabler-icons": "^2.5.2",
     "html-minifier-terser": "^7.2.0",
     "ics-to-json-extended": "^1.1.4",

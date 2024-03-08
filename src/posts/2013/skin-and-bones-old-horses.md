@@ -9,4 +9,4 @@ Beautiful, stripped down song from a musician with a strong voice and truly hear
 
 [Grab his album here »](http://skinandbonesmusic.bandcamp.com)
 
-https://www.youtube.com/watch?v=wB52fQkjZkE
+{% render "partials/youtube-player.liquid", url:"https://www.youtube.com/watch?v=wB52fQkjZkE" %}

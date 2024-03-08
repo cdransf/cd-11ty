@@ -12,7 +12,7 @@ textarea {
   color: var(--text-color) !important;
   background-color: var(--background-color) !important;
   border: 1px solid var(--accent-color) !important;
-  padding: var(--sizing-sm) !important;
+  padding: var(--sizing-sm);
   font-size: var(--font-size-base) !important;
   width: 100% !important;
   border-radius: var(--rounded-md) !important;

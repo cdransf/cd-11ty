@@ -1,7 +1,6 @@
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import tablerIcons from 'eleventy-plugin-tabler-icons'
 import postGraph from '@rknightuk/eleventy-plugin-post-graph'
-import embedEverything from 'eleventy-plugin-embed-everything'
 
 import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
@@ -11,6 +10,7 @@ import htmlmin from 'html-minifier-terser'
 import filters from './config/filters/index.js'
 import { slugifyString } from './config/utils/index.js'
 import { svgToJpeg } from './config/events/index.js'
+import { minifyJsComponents } from './config/events/index.js'
 import { tagList, tagMap, postStats, tagsSortedByCount } from './config/collections/index.js'
 import { img } from './config/shortcodes/index.js'
 
@@ -40,7 +40,6 @@ export default async function (eleventyConfig) {
     highlightColorDark: '#60a5fa',
     textColorDark: '#fff',
   })
-  eleventyConfig.addPlugin(embedEverything);
 
   // quiet build output
   eleventyConfig.setQuietMode(true)
@@ -67,6 +66,9 @@ export default async function (eleventyConfig) {
   })
   eleventyConfig.addPassthroughCopy({
     'node_modules/@zachleat/webcare-webshare/webcare-webshare.js': 'assets/scripts/components/webcare-webshare.js'
+  })
+  eleventyConfig.addPassthroughCopy({
+    'node_modules/youtube-video-element/youtube-video-element.js': 'assets/scripts/components/youtube-video-element.js'
   })
 
   // enable merging of tags
@@ -134,6 +136,7 @@ export default async function (eleventyConfig) {
 
   // events
   eleventyConfig.on('afterBuild', svgToJpeg)
+  eleventyConfig.on('afterBuild', minifyJsComponents)
   eleventyConfig.on('eleventy.after', () => {
     execSync(`npx pagefind --site _site --glob "**/*.html"`, { encoding: 'utf-8' })
   })

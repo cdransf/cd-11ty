@@ -6,6 +6,6 @@ tags: ['music']
 ---
 I could not be more excited for this release.<!-- excerpt -->
 
-https://www.youtube.com/watch?v=V8ia-nyd_K8
+{% render "partials/youtube-player.liquid", url:"https://www.youtube.com/watch?v=V8ia-nyd_K8" %}
 
 Kudos to Roadburn Festival [for commissioning the piece](https://roadburn.com/premiere-waste-of-space-orchestra-seekers-reflection/).

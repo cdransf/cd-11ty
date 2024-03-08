@@ -7,4 +7,4 @@ tags: ['video', 'music']
 
 Not out of place at all at an open mic night. Excellent.<!-- excerpt -->
 
-https://www.youtube.com/watch?v=_GnemKx1tlk
+{% render "partials/youtube-player.liquid", url:"https://www.youtube.com/watch?v=_GnemKx1tlk" %}

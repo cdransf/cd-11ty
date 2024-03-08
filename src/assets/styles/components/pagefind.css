@@ -55,7 +55,7 @@
   padding-left: 2.375rem !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  height: calc(53px * var(--pagefind-ui-scale)) !important;
+  height: 42px !important;
 }
 
 .pagefind-ui__search-clear {
@@ -107,4 +107,9 @@
 .pagefind-ui__button:focus {
   color: var(--color-lightest) !important;
   background-color: var(--accent-color-hover) !important;
+}
+
+.pagefind__placeholder {
+  height: 42px !important;
+  font-weight: var(--font-weight-heavy);
 }
