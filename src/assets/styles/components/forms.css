@@ -20,7 +20,7 @@ textarea {
 
   outline: none;
   margin-bottom: var(--sizing-base);
-  font-weight: 400 !important;
+  font-weight: var(--font-weight-base) !important;
   line-height: var(--line-height-base);
   transition-property: border-color;
   transition-timing-function: var(--transition-ease-in-out);
@@ -43,7 +43,7 @@ button:not(.theme__toggle, .share, .pagefind-ui__search-clear) {
   flex-direction: row;
   justify-content: center;
   font-size: var(--font-size-base);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   line-height: var(--line-height-base);
   color: var(--color-lightest);
   background-color: var(--accent-color);

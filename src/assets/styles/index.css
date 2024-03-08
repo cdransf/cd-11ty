@@ -47,7 +47,7 @@ sup.footnote-ref {
 
 strong,
 blockquote {
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 em,
@@ -95,7 +95,7 @@ a:active {
 
 /* headers */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 900;
+  font-weight: var(--font-weight-heavy);
 }
 
 h1 { font-size: var(--font-size-3xl) }
@@ -150,7 +150,7 @@ td {
 }
 
 th {
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   background-color: var(--gray-lighter);
   text-align: center;
 }

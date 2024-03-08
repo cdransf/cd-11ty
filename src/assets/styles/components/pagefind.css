@@ -34,7 +34,7 @@
   color: var(--accent-color);
   font-size: var(--font-size-2xl);
   line-height: var(--line-height-2xl);
-  font-weight: 900;
+  font-weight: var(--font-weight-heavy);
   margin: 0;
   transition-property: color;
   transition-timing-function: var(--transition-ease-in-out);

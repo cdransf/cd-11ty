@@ -81,6 +81,10 @@
   --font-size-3xl: 1.875rem;
   --line-height-3xl: 2.25rem;
 
+  --font-weight-base: 400;
+  --font-weight-bold: 700;
+  --font-weight-heavy: 900;
+
   /* spacing */
   --sizing-xs: .25rem;
   --sizing-sm: .5rem;
