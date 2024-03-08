@@ -11049,5 +11049,16 @@
       "https://social.lol/users/cory/statuses/112061383399208127"
     ],
     "lastTootTimestamp": 1709921011389
+  },
+  "https://thathtml.blog/2024/03/superpowered-container-style-queries/": {
+    "id": "aHR0cHM6Ly90aGF0aHRtbC5ibG9nLzIwMjQvMDMvc3VwZXJwb3dlcmVkLWNvbnRhaW5lci1zdHlsZS1xdWVyaWVzLw==",
+    "title": "🔗: Add Superpowers to Your CSS Variables with Style Queries",
+    "url": "https://thathtml.blog/2024/03/superpowered-container-style-queries/",
+    "content_text": "🔗: Add Superpowers to Your CSS Variables with Style Queries #CSS #WebDev https://thathtml.blog/2024/03/superpowered-container-style-queries/",
+    "date_published": "Fri, 08 Mar 2024 17:32:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112061852994825311"
+    ],
+    "lastTootTimestamp": 1709928176861
   }
 }
