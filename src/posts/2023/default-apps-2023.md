@@ -14,7 +14,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Launcher: [Alfred](https://alfredapp.com)
 - Cloud storage: iCloud
 - Photo library: iCloud
-- Web browser: Safari
+- Web browser: [Orion](https://kagi.com/orion/)
 - Calendar: [HEY](https://hey.com)
 - Weather: Weather.app
 - Podcasts: N/A
@@ -26,5 +26,5 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Notes: [Bear](https://bear.app)
 - Code: [Sublime Text](https://www.sublimetext.com)
 - Terminal: Terminal.app
-- Search: Kagi
+- Search: [Kagi](https://kagi.com)
 - Package tracking: [Parcel](https://parcelapp.net)
