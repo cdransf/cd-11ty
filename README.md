@@ -6,7 +6,7 @@ Hi! I'm Cory. 👋🏻
 
 This is the code for my personal website and portfolio. Built using [11ty](https://www.11ty.dev).
 
-[![Follow @cory@social.lol](https://img.shields.io/mastodon/follow/109606224363698309?domain=https%3A%2F%2Fsocial.lol&style=for-the-badge&logo=Mastodon&logoColor=white&labelColor=6364FF)](https://social.lol/@cory)
+[![Follow @cory@social.lol on Mastodon](/src/assets/img/badges/mastodon.png)](https://social.lol/@cory) [![Buy me a Coffee](/src/assets/img/badges/buymeacoffee.png)](https://www.buymeacoffee.com/cory) [![Made with 11ty](/src/assets/img/badges/eleventy.png)](https://eleventy.dev)
 
 [Now](https://coryd.dev/now) • [About](https://coryd.dev/about) • [Uses](https://coryd.dev/uses) • [Referrals](https://coryd.dev/referrals) • [Blogroll](https://coryd.dev/blogroll) • [Speedlify](https://coryd.dev/speedlify) • [Stats](https://coryd.dev/stats)
 
