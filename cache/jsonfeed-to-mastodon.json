@@ -11060,5 +11060,16 @@
       "https://social.lol/users/cory/statuses/112061852994825311"
     ],
     "lastTootTimestamp": 1709928176861
+  },
+  "https://coryd.dev/posts/2024/surfacing-most-used-tags-in-eleventy/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9zdXJmYWNpbmctbW9zdC11c2VkLXRhZ3MtaW4tZWxldmVudHkv",
+    "title": "📝: Surfacing most used tags in Eleventy",
+    "url": "https://coryd.dev/posts/2024/surfacing-most-used-tags-in-eleventy/",
+    "content_text": "📝: Surfacing most used tags in Eleventy #Eleventy #WebDev #JavaScript https://coryd.dev/posts/2024/surfacing-most-used-tags-in-eleventy/",
+    "date_published": "Sat, 09 Mar 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112067044278284531"
+    ],
+    "lastTootTimestamp": 1710007389579
   }
 }
