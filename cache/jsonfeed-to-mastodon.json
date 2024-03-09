@@ -11082,5 +11082,24 @@
       "https://social.lol/users/cory/statuses/112067516044177268"
     ],
     "lastTootTimestamp": 1710014588118
+  },
+  "https://yatil.net/blog/access-by-a-thousand-curb-cuts": {
+    "id": "aHR0cHM6Ly95YXRpbC5uZXQvYmxvZy9hY2Nlc3MtYnktYS10aG91c2FuZC1jdXJiLWN1dHM=",
+    "title": "🔗: Access by a thousand curb cuts",
+    "url": "https://yatil.net/blog/access-by-a-thousand-curb-cuts",
+    "content_text": "🔗: Access by a thousand curb cuts #WebDev https://yatil.net/blog/access-by-a-thousand-curb-cuts",
+    "date_published": "Sat, 09 Mar 2024 19:25:00 GMT",
+    "toots": []
+  },
+  "https://www.scientificamerican.com/article/ai-generated-data-can-poison-future-ai-models/": {
+    "id": "aHR0cHM6Ly93d3cuc2NpZW50aWZpY2FtZXJpY2FuLmNvbS9hcnRpY2xlL2FpLWdlbmVyYXRlZC1kYXRhLWNhbi1wb2lzb24tZnV0dXJlLWFpLW1vZGVscy8=",
+    "title": "🔗: AI-Generated Data Can Poison Future AI Models",
+    "url": "https://www.scientificamerican.com/article/ai-generated-data-can-poison-future-ai-models/",
+    "content_text": "🔗: AI-Generated Data Can Poison Future AI Models #AI #Tech https://www.scientificamerican.com/article/ai-generated-data-can-poison-future-ai-models/",
+    "date_published": "Sat, 09 Mar 2024 18:55:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112067990627109019"
+    ],
+    "lastTootTimestamp": 1710021829713
   }
 }
