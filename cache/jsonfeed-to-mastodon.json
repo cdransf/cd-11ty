@@ -11115,5 +11115,16 @@
       "https://social.lol/users/cory/statuses/112069875097321195"
     ],
     "lastTootTimestamp": 1710050584449
+  },
+  "https://coryd.dev/posts/2024/using-an-eleventy-event-to-optimize-component-javascript/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC91c2luZy1hbi1lbGV2ZW50eS1ldmVudC10by1vcHRpbWl6ZS1jb21wb25lbnQtamF2YXNjcmlwdC8=",
+    "title": "📝: Using an Eleventy event to optimise component JavaScript",
+    "url": "https://coryd.dev/posts/2024/using-an-eleventy-event-to-optimize-component-javascript/",
+    "content_text": "📝: Using an Eleventy event to optimise component JavaScript #WebDev #JavaScript #Eleventy https://coryd.dev/posts/2024/using-an-eleventy-event-to-optimize-component-javascript/",
+    "date_published": "Sun, 10 Mar 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112072234732398817"
+    ],
+    "lastTootTimestamp": 1710086589594
   }
 }
