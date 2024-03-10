@@ -11159,5 +11159,16 @@
       "https://social.lol/users/cory/statuses/112073178847427815"
     ],
     "lastTootTimestamp": 1710100995636
+  },
+  "https://coryd.dev/posts/2024/of-course-ai-is-extractive-everything-is-lately/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9vZi1jb3Vyc2UtYWktaXMtZXh0cmFjdGl2ZS1ldmVyeXRoaW5nLWlzLWxhdGVseS8=",
+    "title": "📝: Of course AI is extractive, everything is lately",
+    "url": "https://coryd.dev/posts/2024/of-course-ai-is-extractive-everything-is-lately/",
+    "content_text": "📝: Of course AI is extractive, everything is lately #Tech #AI https://coryd.dev/posts/2024/of-course-ai-is-extractive-everything-is-lately/",
+    "date_published": "Sun, 10 Mar 2024 23:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112073651058302605"
+    ],
+    "lastTootTimestamp": 1710108201006
   }
 }
