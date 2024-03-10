@@ -10527,7 +10527,7 @@
     "title": "🔗: The Subversive Hyperlink",
     "url": "https://blog.jim-nielsen.com/2024/the-subversive-hyperlink/",
     "content_text": "🔗: The Subversive Hyperlink #Tech #WebDev https://blog.jim-nielsen.com/2024/the-subversive-hyperlink/",
-    "date_published": "Mon, 26 Feb 2024 18:43:00 GMT",
+    "date_published": "Sun, 10 Mar 2024 16:52:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/111999569390973273"
     ],
@@ -11118,13 +11118,32 @@
   },
   "https://coryd.dev/posts/2024/using-an-eleventy-event-to-optimize-component-javascript/": {
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC91c2luZy1hbi1lbGV2ZW50eS1ldmVudC10by1vcHRpbWl6ZS1jb21wb25lbnQtamF2YXNjcmlwdC8=",
-    "title": "📝: Using an Eleventy event to optimise component JavaScript",
+    "title": "📝: Using an Eleventy event to optimize component JavaScript",
     "url": "https://coryd.dev/posts/2024/using-an-eleventy-event-to-optimize-component-javascript/",
-    "content_text": "📝: Using an Eleventy event to optimise component JavaScript #WebDev #JavaScript #Eleventy https://coryd.dev/posts/2024/using-an-eleventy-event-to-optimize-component-javascript/",
-    "date_published": "Sun, 10 Mar 2024 00:00:00 GMT",
+    "content_text": "📝: Using an Eleventy event to optimize component JavaScript #WebDev #JavaScript #Eleventy https://coryd.dev/posts/2024/using-an-eleventy-event-to-optimize-component-javascript/",
+    "date_published": "Sun, 10 Mar 2024 16:53:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112072234732398817"
     ],
     "lastTootTimestamp": 1710086589594
+  },
+  "https://coryd.dev/posts/2024/sharing-links-via-rss-sharing-links-via-apis/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9zaGFyaW5nLWxpbmtzLXZpYS1yc3Mtc2hhcmluZy1saW5rcy12aWEtYXBpcy8=",
+    "title": "📝: Sharing links via RSS, sharing links via APIs",
+    "url": "https://coryd.dev/posts/2024/sharing-links-via-rss-sharing-links-via-apis/",
+    "content_text": "📝: Sharing links via RSS, sharing links via APIs #WebDev #Eleventy #JavaScript #RSS #AI https://coryd.dev/posts/2024/sharing-links-via-rss-sharing-links-via-apis/",
+    "date_published": "Sun, 10 Mar 2024 18:00:00 GMT",
+    "toots": []
+  },
+  "https://robinrendle.com/notes/be-kind-be-cool/": {
+    "id": "aHR0cHM6Ly9yb2JpbnJlbmRsZS5jb20vbm90ZXMvYmUta2luZC1iZS1jb29sLw==",
+    "title": "🔗: Be kind, be cool",
+    "url": "https://robinrendle.com/notes/be-kind-be-cool/",
+    "content_text": "🔗: Be kind, be cool #Tech https://robinrendle.com/notes/be-kind-be-cool/",
+    "date_published": "Sun, 10 Mar 2024 17:25:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112072705819990832"
+    ],
+    "lastTootTimestamp": 1710093777820
   }
 }
