@@ -1,5 +1,5 @@
 ---
-date: '2024-03-10'
+date: '2024-03-10T08:53-08:00'
 title: 'Using an Eleventy event to optimize component JavaScript'
 description: "I've added a small event to optimize web component JavaScript when my site builds."
 tags: ['development', 'javascript', 'Eleventy']
