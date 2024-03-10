@@ -4,7 +4,7 @@ title: 'Of course AI is extractive, everything is lately'
 description: "It's easy to pick on AI, because, well, it's costing a whole lot and providing, at best, dubious benefits. One of the easiest criticisms to lob at it is that it's extractive — whether you're pointing at public knowledge, creative work or resources and I think that's all quite fair. But it's not unique to AI and it's not particularly unique to the tech industry."
 tags: ['tech', 'AI']
 ---
-It's easy to pick on AI, because, well, it's costing a whole lot and providing, at best, dubious benefits. One of the easiest criticisms to lob at it is that it's extractive — whether you're pointing at public knowledge, creative work or resources and I think that's all quite fair. But it's not unique to AI and it's not particularly unique to the tech industry.<!— excerpt —>
+It's easy to pick on AI, because, well, it's costing a whole lot and providing, at best, dubious benefits. One of the easiest criticisms to lob at it is that it's extractive — whether you're pointing at public knowledge, creative work or resources and I think that's all quite fair. But it's not unique to AI and it's not particularly unique to the tech industry.<!-- excerpt -->
 
 We seem to, hopefully, be able to place crypto in the rearview mirror[^1]. It was similarly extractive of energy and funneled money from well-meaning personal investors and users to owners, investors and advocates that were already rich.
 
