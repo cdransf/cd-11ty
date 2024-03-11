@@ -11170,5 +11170,32 @@
       "https://social.lol/users/cory/statuses/112073651058302605"
     ],
     "lastTootTimestamp": 1710108201006
+  },
+  "https://infrequently.org/2024/03/why-browsers-get-built/": {
+    "id": "aHR0cHM6Ly9pbmZyZXF1ZW50bHkub3JnLzIwMjQvMDMvd2h5LWJyb3dzZXJzLWdldC1idWlsdC8=",
+    "title": "🔗: Why Browsers Get Built",
+    "url": "https://infrequently.org/2024/03/why-browsers-get-built/",
+    "content_text": "🔗: Why Browsers Get Built #Tech #WebDev https://infrequently.org/2024/03/why-browsers-get-built/",
+    "date_published": "Mon, 11 Mar 2024 18:22:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112078840543238085"
+    ],
+    "lastTootTimestamp": 1710187386308
+  },
+  "https://gomakethings.com/ice-farming-and-web-development/": {
+    "id": "aHR0cHM6Ly9nb21ha2V0aGluZ3MuY29tL2ljZS1mYXJtaW5nLWFuZC13ZWItZGV2ZWxvcG1lbnQv",
+    "title": "🔗: Ice farming and web development",
+    "url": "https://gomakethings.com/ice-farming-and-web-development/",
+    "content_text": "🔗: Ice farming and web development #Tech #WebDev https://gomakethings.com/ice-farming-and-web-development/",
+    "date_published": "Mon, 11 Mar 2024 18:21:00 GMT",
+    "toots": []
+  },
+  "https://www.alexhyett.com/newsletter/the-indie-web-is-the-new-and-the-old-web/": {
+    "id": "aHR0cHM6Ly93d3cuYWxleGh5ZXR0LmNvbS9uZXdzbGV0dGVyL3RoZS1pbmRpZS13ZWItaXMtdGhlLW5ldy1hbmQtdGhlLW9sZC13ZWIv",
+    "title": "🔗: The IndieWeb is the new and the old web",
+    "url": "https://www.alexhyett.com/newsletter/the-indie-web-is-the-new-and-the-old-web/",
+    "content_text": "🔗: The IndieWeb is the new and the old web #Tech #WebDev https://www.alexhyett.com/newsletter/the-indie-web-is-the-new-and-the-old-web/",
+    "date_published": "Mon, 11 Mar 2024 18:21:00 GMT",
+    "toots": []
   }
 }
