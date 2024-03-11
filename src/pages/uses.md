@@ -29,7 +29,7 @@ Software and services that I use for work and my own enjoyment.
 - [Orion](https://kagi.com/orion/): Kagi's Webkit-based browser. It's fast, has a built in ad-blocker and works with their search engine.
 - [Bear](https://bear.app): native, fast and flexible — it's a breeze to use across Apple's ecosystem.
 - [Doppler](https://brushedtype.com/doppler): a beautiful, simple native music player that supports scrobbling to Last.fm.
-- [Mona](https://mastodon.social/@MonaApp): an extremely customizable and yet easy to use Mastodon client. It's reliable and syncs well across devices.
+- [Ivory](https://tapbots.com/ivory/): the best, most polished Mastodon client for macOS and iOS.
 - [Parcel](https://parcelapp.net): the most flexible and reliable package tracker for Apple's ecosystem.
 - [Flighty](https://flightyapp.com): I don't travel a ton but Flighty makes doing so a fair bit less stressful.
 
