@@ -11197,5 +11197,32 @@
     "content_text": "🔗: The IndieWeb is the new and the old web #Tech #WebDev https://www.alexhyett.com/newsletter/the-indie-web-is-the-new-and-the-old-web/",
     "date_published": "Mon, 11 Mar 2024 18:21:00 GMT",
     "toots": []
+  },
+  "https://blog.lukaszwojcik.net/eleventy-custom-markup-alongside-item-contents/": {
+    "id": "aHR0cHM6Ly9ibG9nLmx1a2FzendvamNpay5uZXQvZWxldmVudHktY3VzdG9tLW1hcmt1cC1hbG9uZ3NpZGUtaXRlbS1jb250ZW50cy8=",
+    "title": "🔗: Eleventy: custom markup alongside item contents",
+    "url": "https://blog.lukaszwojcik.net/eleventy-custom-markup-alongside-item-contents/",
+    "content_text": "🔗: Eleventy: custom markup alongside item contents #JavaScript #WebDev https://blog.lukaszwojcik.net/eleventy-custom-markup-alongside-item-contents/",
+    "date_published": "Mon, 11 Mar 2024 20:16:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112079312119057886"
+    ],
+    "lastTootTimestamp": 1710194581975
+  },
+  "https://www.zachleat.com/web/good-bad-web-components/": {
+    "id": "aHR0cHM6Ly93d3cuemFjaGxlYXQuY29tL3dlYi9nb29kLWJhZC13ZWItY29tcG9uZW50cy8=",
+    "title": "🔗: The Good, The Bad, The Web Components",
+    "url": "https://www.zachleat.com/web/good-bad-web-components/",
+    "content_text": "🔗: The Good, The Bad, The Web Components #WebDev https://www.zachleat.com/web/good-bad-web-components/",
+    "date_published": "Mon, 11 Mar 2024 20:15:00 GMT",
+    "toots": []
+  },
+  "https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/": {
+    "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJldmlldy5jb20vMjAyNC8wMy8xMS8xMDg5NjgzL2xsbXMtYmVjb21lLW1vcmUtY292ZXJ0bHktcmFjaXN0LXdpdGgtaHVtYW4taW50ZXJ2ZW50aW9uLw==",
+    "title": "🔗: LLMs become more covertly racist with human intervention",
+    "url": "https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/",
+    "content_text": "🔗: LLMs become more covertly racist with human intervention #AI #Tech https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/",
+    "date_published": "Mon, 11 Mar 2024 20:13:00 GMT",
+    "toots": []
   }
 }
