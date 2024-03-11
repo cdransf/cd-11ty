@@ -22,7 +22,7 @@ All of this leaves me wanting simpler businesses with simpler motives — I'll p
 
 I want tools that solve demonstrated problems, not speculative products that externalize problems.[^5] I'm not sure I'll be getting that. Instead, we'll likely accelerate towards a future pushed by the same folks that built, well, all of this. I expect all of this acceleration will work out about as well as all that altruism did.
 
-[^1]: It still pains me that the Lakers' arena is now named after Crypto.com. It will until it changes 
+[^1]: It still pains me that the Lakers' arena is now named after [Crypto.com](https://www.web3isgoinggreat.com). It will until it changes
 [^2]: This is somewhat sarcastic — is keeping up with everyone from high school objectively beneficial? I have my doubts.
 [^3]: It's  convenient though! Don't worry about it.
 [^4]: Apple's headset is technically impressive, but I don't understand what, if any, problems it solves.
