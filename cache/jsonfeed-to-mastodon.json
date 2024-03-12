@@ -11188,7 +11188,10 @@
     "url": "https://gomakethings.com/ice-farming-and-web-development/",
     "content_text": "🔗: Ice farming and web development #Tech #WebDev https://gomakethings.com/ice-farming-and-web-development/",
     "date_published": "Mon, 11 Mar 2024 18:21:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112079813282800657"
+    ],
+    "lastTootTimestamp": 1710202229115
   },
   "https://www.alexhyett.com/newsletter/the-indie-web-is-the-new-and-the-old-web/": {
     "id": "aHR0cHM6Ly93d3cuYWxleGh5ZXR0LmNvbS9uZXdzbGV0dGVyL3RoZS1pbmRpZS13ZWItaXMtdGhlLW5ldy1hbmQtdGhlLW9sZC13ZWIv",
@@ -11223,6 +11226,22 @@
     "url": "https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/",
     "content_text": "🔗: LLMs become more covertly racist with human intervention #AI #Tech https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/",
     "date_published": "Mon, 11 Mar 2024 20:13:00 GMT",
+    "toots": []
+  },
+  "https://thenewstack.io/the-state-of-jamstack-developers-want-return-to-simplicity/": {
+    "id": "aHR0cHM6Ly90aGVuZXdzdGFjay5pby90aGUtc3RhdGUtb2YtamFtc3RhY2stZGV2ZWxvcGVycy13YW50LXJldHVybi10by1zaW1wbGljaXR5Lw==",
+    "title": "🔗: The State of Jamstack: Developers Want Return to Simplicity",
+    "url": "https://thenewstack.io/the-state-of-jamstack-developers-want-return-to-simplicity/",
+    "content_text": "🔗: The State of Jamstack: Developers Want Return to Simplicity #WebDev https://thenewstack.io/the-state-of-jamstack-developers-want-return-to-simplicity/",
+    "date_published": "Mon, 11 Mar 2024 20:59:00 GMT",
+    "toots": []
+  },
+  "https://www.mayank.co/blog/declarative-shadow-dom-guide": {
+    "id": "aHR0cHM6Ly93d3cubWF5YW5rLmNvL2Jsb2cvZGVjbGFyYXRpdmUtc2hhZG93LWRvbS1ndWlkZQ==",
+    "title": "🔗: A practical guide to using shadow DOM",
+    "url": "https://www.mayank.co/blog/declarative-shadow-dom-guide",
+    "content_text": "🔗: A practical guide to using shadow DOM #JavaScript #WebDev https://www.mayank.co/blog/declarative-shadow-dom-guide",
+    "date_published": "Mon, 11 Mar 2024 20:58:00 GMT",
     "toots": []
   }
 }
