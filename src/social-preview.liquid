@@ -10,56 +10,47 @@ eleventyExcludeFromCollections: true
 <svg width="1200" height="628" viewBox="0 0 1200 628" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 >
   {% assign titleInLines = preview.data.title | splitLines: 40 %}
-    {% assign numberOfLines = titleInLines.length %}
-  {% if numberOfLines == 2 %}
-    {% assign verticalStartingPoint = 250 %}
-  {% elsif numberOfLines == 3 %}
-    {% assign verticalStartingPoint = 210 %}
-  {% elsif numberOfLines == 4 %}
-    {% assign verticalStartingPoint = 170 %}
-  {% elsif numberOfLines == 5 %}
-    {% assign verticalStartingPoint = 130 %}
-  {% else %}
+  {% assign numberOfLines = titleInLines.length %}
+  {% if numberOfLines == 1 %}
+    {% assign verticalStartingPoint = 340 %}
+  {% elsif numberOfLines == 2 %}
     {% assign verticalStartingPoint = 290 %}
+  {% elsif numberOfLines == 3 %}
+    {% assign verticalStartingPoint = 250 %}
+  {% elsif numberOfLines == 4 %}
+    {% assign verticalStartingPoint = 210 %}
+  {% elsif numberOfLines == 5 %}
+    {% assign verticalStartingPoint = 170 %}
   {% endif %}
 
-  <svg id="visual" viewBox="0 0 1200 628" width="1200" height="628" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="1200" height="628" fill="#111827"></rect><path d="M0 525L28.5 508C57 491 114 457 171.2 460.2C228.3 463.3 285.7 503.7 342.8 507.8C400 512 457 480 514.2 469.3C571.3 458.7 628.7 469.3 685.8 462C743 454.7 800 429.3 857.2 422.7C914.3 416 971.7 428 1028.8 439C1086 450 1143 460 1171.5 465L1200 470L1200 629L1171.5 629C1143 629 1086 629 1028.8 629C971.7 629 914.3 629 857.2 629C800 629 743 629 685.8 629C628.7 629 571.3 629 514.2 629C457 629 400 629 342.8 629C285.7 629 228.3 629 171.2 629C114 629 57 629 28.5 629L0 629Z" fill="#3b82f6" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+  <!-- background -->
+  <svg height="628" viewBox="0 0 1200 628" width="1200" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h1200v628h-1200z"/><path d="m0 482 33.3-3.2c33.4-3.1 100-9.5 166.7-9.6 66.7-.2 133.3 5.8 200 14.3s133.3 19.5 200 30.5 133.3 22 200 20 133.3-17 200-30.2c66.7-13.1 133.3-24.5 166.7-30.1l33.3-5.7v161h-33.3c-33.4 0-100 0-166.7 0s-133.3 0-200 0-133.3 0-200 0-133.3 0-200 0-133.3 0-200 0-133.3 0-166.7 0h-33.3z" fill="#3b82f6" stroke-linecap="round"/></svg>
 
   <!-- date -->
   <text
-    font-family="Redhat, Roboto, 'Helvetica Neue', sans-serif"
+    font-family="-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif"
     font-size="24"
     font-weight="bold"
     fill="#fff"
   >
-    <tspan x="160" y="{{ verticalStartingPoint | minus: 120 }}">
-      {{ preview.date | dateToReadableDate}}
+    <tspan x="80" y="{{ verticalStartingPoint | minus: 120 }}">
+      {{ preview.date | date: "%B %e, %Y" }}
     </tspan>
   </text>
 
   <!-- title -->
   <text
     id="text"
-    font-family="Redhat, Roboto, 'Helvetica Neue', sans-serif"
+    font-family="-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif"
     font-size="40"
     font-weight="900"
     fill="#fff"
   >
     {% for line in titleInLines %}
     {% capture spacing %}{{ forloop.index0 | times: 50 }}{% endcapture %}
-    <tspan x="160" y="{{ verticalStartingPoint | minus: 20 | plus: spacing }}">
+    <tspan x="80" y="{{ verticalStartingPoint | minus: 20 | plus: spacing }}">
       {{ line }}
     </tspan>
     {% endfor %}
-  </text>
-
-  <!-- sitename -->
-  <text
-  font-family="Redhat, Roboto, 'Helvetica Neue', sans-serif"
-    font-size="24"
-    font-weight="bold"
-    fill="#fff"
-  >
-    <tspan x="160" y="600">{{ meta.siteName }} • {{ meta.url | replace: "https://", "" | replace: "http://", "" }}</tspan>
   </text>
 </svg>
