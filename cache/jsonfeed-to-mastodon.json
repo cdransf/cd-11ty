@@ -11199,7 +11199,10 @@
     "url": "https://www.alexhyett.com/newsletter/the-indie-web-is-the-new-and-the-old-web/",
     "content_text": "🔗: The IndieWeb is the new and the old web #Tech #WebDev https://www.alexhyett.com/newsletter/the-indie-web-is-the-new-and-the-old-web/",
     "date_published": "Mon, 11 Mar 2024 18:21:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112082143080391104"
+    ],
+    "lastTootTimestamp": 1710237779020
   },
   "https://blog.lukaszwojcik.net/eleventy-custom-markup-alongside-item-contents/": {
     "id": "aHR0cHM6Ly9ibG9nLmx1a2FzendvamNpay5uZXQvZWxldmVudHktY3VzdG9tLW1hcmt1cC1hbG9uZ3NpZGUtaXRlbS1jb250ZW50cy8=",
