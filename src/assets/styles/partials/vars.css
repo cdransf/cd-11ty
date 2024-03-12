@@ -27,15 +27,13 @@
   --white: #fff;
   --black: #000;
 
-  --grey-lightest: #f4f4f4;
   --gray-light: var(--gray-200);
   --gray-lighter: var(--gray-50);
   --gray-dark: var(--gray-700);
-  --gray-darkest: #1d1a1a;
 
   /* base theme */
-  --color-lightest: var(--grey-lightest);
-  --color-darkest: var(--gray-darkest);
+  --color-lightest: var(--white);
+  --color-darkest: var(--black);
   --text-color: var(--color-darkest);
   --background-color: var(--color-lightest);
   --text-color-inverted: var(--color-lightest);
