@@ -11280,5 +11280,16 @@
       "https://social.lol/users/cory/statuses/112082619094636454"
     ],
     "lastTootTimestamp": 1710245042374
+  },
+  "https://coryd.dev/posts/2024/the-internet-isnt-dying-its-changing/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC90aGUtaW50ZXJuZXQtaXNudC1keWluZy1pdHMtY2hhbmdpbmcv",
+    "title": "📝: The internet isn't dying, it's changing",
+    "url": "https://coryd.dev/posts/2024/the-internet-isnt-dying-its-changing/",
+    "content_text": "📝: The internet isn't dying, it's changing #Tech #SocialMedia #Blogging #Mastodon https://coryd.dev/posts/2024/the-internet-isnt-dying-its-changing/",
+    "date_published": "Tue, 12 Mar 2024 22:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112084746052658834"
+    ],
+    "lastTootTimestamp": 1710277497223
   }
 }
