@@ -11199,7 +11199,10 @@
     "url": "https://www.alexhyett.com/newsletter/the-indie-web-is-the-new-and-the-old-web/",
     "content_text": "🔗: The IndieWeb is the new and the old web #Tech #WebDev https://www.alexhyett.com/newsletter/the-indie-web-is-the-new-and-the-old-web/",
     "date_published": "Mon, 11 Mar 2024 18:21:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112082143080391104"
+    ],
+    "lastTootTimestamp": 1710237779020
   },
   "https://blog.lukaszwojcik.net/eleventy-custom-markup-alongside-item-contents/": {
     "id": "aHR0cHM6Ly9ibG9nLmx1a2FzendvamNpay5uZXQvZWxldmVudHktY3VzdG9tLW1hcmt1cC1hbG9uZ3NpZGUtaXRlbS1jb250ZW50cy8=",
@@ -11218,7 +11221,10 @@
     "url": "https://www.zachleat.com/web/good-bad-web-components/",
     "content_text": "🔗: The Good, The Bad, The Web Components #WebDev https://www.zachleat.com/web/good-bad-web-components/",
     "date_published": "Mon, 11 Mar 2024 20:15:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112083086797339636"
+    ],
+    "lastTootTimestamp": 1710252178953
   },
   "https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/": {
     "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJldmlldy5jb20vMjAyNC8wMy8xMS8xMDg5NjgzL2xsbXMtYmVjb21lLW1vcmUtY292ZXJ0bHktcmFjaXN0LXdpdGgtaHVtYW4taW50ZXJ2ZW50aW9uLw==",
@@ -11237,7 +11243,10 @@
     "url": "https://thenewstack.io/the-state-of-jamstack-developers-want-return-to-simplicity/",
     "content_text": "🔗: The State of Jamstack: Developers Want Return to Simplicity #WebDev https://thenewstack.io/the-state-of-jamstack-developers-want-return-to-simplicity/",
     "date_published": "Mon, 11 Mar 2024 20:59:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112080729394796759"
+    ],
+    "lastTootTimestamp": 1710216207852
   },
   "https://www.mayank.co/blog/declarative-shadow-dom-guide": {
     "id": "aHR0cHM6Ly93d3cubWF5YW5rLmNvL2Jsb2cvZGVjbGFyYXRpdmUtc2hhZG93LWRvbS1ndWlkZQ==",
@@ -11245,7 +11254,10 @@
     "url": "https://www.mayank.co/blog/declarative-shadow-dom-guide",
     "content_text": "🔗: A practical guide to using shadow DOM #JavaScript #WebDev https://www.mayank.co/blog/declarative-shadow-dom-guide",
     "date_published": "Mon, 11 Mar 2024 20:58:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112081672524321037"
+    ],
+    "lastTootTimestamp": 1710230598872
   },
   "https://www.wheresyoured.at/are-we-watching-the-internet-die/?ref=ed-zitrons-wheres-your-ed-at-newsletter": {
     "id": "aHR0cHM6Ly93d3cud2hlcmVzeW91cmVkLmF0L2FyZS13ZS13YXRjaGluZy10aGUtaW50ZXJuZXQtZGllLz9yZWY9ZWQteml0cm9ucy13aGVyZXMteW91ci1lZC1hdC1uZXdzbGV0dGVy",
@@ -11253,6 +11265,20 @@
     "url": "https://www.wheresyoured.at/are-we-watching-the-internet-die/?ref=ed-zitrons-wheres-your-ed-at-newsletter",
     "content_text": "🔗: Are We Watching The Internet Die? #Tech https://www.wheresyoured.at/are-we-watching-the-internet-die/?ref=ed-zitrons-wheres-your-ed-at-newsletter",
     "date_published": "Tue, 12 Mar 2024 00:25:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112081201273012504"
+    ],
+    "lastTootTimestamp": 1710223408174
+  },
+  "https://lmnt.me/blog/web-independence.html": {
+    "id": "aHR0cHM6Ly9sbW50Lm1lL2Jsb2cvd2ViLWluZGVwZW5kZW5jZS5odG1s",
+    "title": "🔗: Web Independence",
+    "url": "https://lmnt.me/blog/web-independence.html",
+    "content_text": "🔗: Web Independence #Tech https://lmnt.me/blog/web-independence.html",
+    "date_published": "Tue, 12 Mar 2024 02:58:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112082619094636454"
+    ],
+    "lastTootTimestamp": 1710245042374
   }
 }
