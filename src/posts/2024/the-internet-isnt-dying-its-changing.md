@@ -1,0 +1,17 @@
+---
+date: '2024-03-12T14:00-08:00'
+title: "The internet isn't dying, it's changing"
+description: "Ok, maybe some of it's dying. I believe it's too far reaching and too deeply-embedded to really, truly be dying. What we're seeing is a bust cycle for commercial social media and information-driven platforms. It's pretty clear that traditional social media is on the wane — growth has plateaued for Facebook, cratered for Twitter (X — whatever) and Reddit's besieged users are being fed into the gaping maw of yet another AI product. They're not alone — so many of these platform companies are “evolving” to mine captive user data for AI models."
+tags: ['tech', 'social media', 'blogging', 'Mastodon']
+---
+[Ok, maybe some of it's dying.](https://www.wheresyoured.at/are-we-watching-the-internet-die/) I believe it's too far reaching and too deeply-embedded to really, truly be dying. What we're seeing is a bust cycle for commercial social media and information-driven platforms. It's pretty clear that traditional social media is on the wane — growth has plateaued for Facebook, cratered for Twitter (X — whatever) and Reddit's besieged users are being fed into the gaping maw of yet another AI product. They're not alone — so many of these platform companies are “evolving” to mine captive user data for AI models.<!-- excerpt -->
+
+These platforms have been around for years now and their original promise of convenient, open community has proven to be either an outright lie or an easily abandoned promise as they cast about in search of any revenue they can find. We traded privacy and attention for convenience, allowing that convenience to evolve into lock-in and captivity.
+
+What we have no is an opening to allow smaller, decentralized communities to flourish. I *love* Mastodon and the community there — warts and all. It's imperfect, there are growing pains but there is also agency, openness, portability and user control. It may not scale to the global heights that some of these commercial enterprises have, but it's under no pressure to succumb to the same malign, financial imperatives.
+
+The old guard of social platforms are looking more and more like AOL, Prodigy and similar walled-garden gatekeepers. We've been through this in that dial-up-enabled heyday and have followed a similar cycle once again. We can let these companies and gatekeepers fade because they aren't — and never were — the platform. The web has always been open and continues to be.
+
+So, yes, there are challenges and it's on us to rebuild communities, hold them together, tend to them and keep them open and supportive. We can do that on ActivityPub-based platforms, we can cast a wary eye towards BlueSky and hope that they keep to their decentralized approach (I remain concerned about funding and monetization), we can rebuild forums and we can make it easier for blogs to be built. Communication can be slower, smaller in scale and healthier. Write a blog post, read another and author a thoughtful response. We don't need to scroll endlessly and we don't need content to be infinitely available.
+
+There will be challenges and, sadly, I'm not quite sure how we navigate the growing wave of AI-generated content sludge — but — I remain hopeful. We have the tools to keep the internet open, compelling, kind and as weird as we'd like it to be. Gatekeepers stumbling, fading and grasping on their way out represents a change, not a death. I hope it's a last gasp of winter before a thaw and we can turn our attention towards tending to newer, healthier growth.

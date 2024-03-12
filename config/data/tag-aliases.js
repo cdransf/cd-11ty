@@ -24,6 +24,7 @@ export default {
   labor: '#Work',
   lastfm: '#Music',
   macos: '#macOS #Apple',
+  mastodon: '#Mastodon',
   music: '#Music',
   privacy: '#Privacy',
   productivity: '#Productivity',
