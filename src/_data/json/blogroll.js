@@ -17,6 +17,7 @@ export default [
   { "name": "Raymond Camden", "url": "https://raymondcamden.com", "feed": "https://www.raymondcamden.com/feed.xml", "description": "Raymond covers a wide, wide range of web development topics and never fails to provide both insight and clarity." },
   { "name": "Robb Knight", "url": "https://rknight.me", "feed": "https://rknight.me/subscribe/posts/rss.xml", "description": "Robb has the coolest site on the web and is an all around awesome dude." },
   { "name": "Sia Karamalegos", "url": "https://sia.codes", "feed": "https://sia.codes/feed/feed.xml", "description": "An accomplished speaker and writer, Sia's blog is full of useful posts on a wide array of development topics." },
+  { "name": "Sophie Koonin", "url": "https://localghost.dev", "feed": "https://localghost.dev/rss", "description": "Sophie's a talented developer, speaker and an excellent writer — I enjoy everything she writes, plus she has one of the best domain names and designs around." },
   { "name": "Stephanie Eckles", "url": "https://thinkdobecreate.com", "feed": "https://thinkdobecreate.com/feed", "description": "Myriad helpful and easy to understand resources to learn CSS and numerous other web development topics." },
   { "name": "Zach Leatherman", "url": "https://www.zachleat.com", "feed": "https://www.zachleat.com/web/feed/", "description": "Eleventy's creator who posts handy content about the framework, web components and web development writ large." }
 ]
