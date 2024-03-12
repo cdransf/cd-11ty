@@ -11226,7 +11226,10 @@
     "url": "https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/",
     "content_text": "🔗: LLMs become more covertly racist with human intervention #AI #Tech https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/",
     "date_published": "Mon, 11 Mar 2024 20:13:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112080274315632331"
+    ],
+    "lastTootTimestamp": 1710209263926
   },
   "https://thenewstack.io/the-state-of-jamstack-developers-want-return-to-simplicity/": {
     "id": "aHR0cHM6Ly90aGVuZXdzdGFjay5pby90aGUtc3RhdGUtb2YtamFtc3RhY2stZGV2ZWxvcGVycy13YW50LXJldHVybi10by1zaW1wbGljaXR5Lw==",
@@ -11242,6 +11245,14 @@
     "url": "https://www.mayank.co/blog/declarative-shadow-dom-guide",
     "content_text": "🔗: A practical guide to using shadow DOM #JavaScript #WebDev https://www.mayank.co/blog/declarative-shadow-dom-guide",
     "date_published": "Mon, 11 Mar 2024 20:58:00 GMT",
+    "toots": []
+  },
+  "https://www.wheresyoured.at/are-we-watching-the-internet-die/?ref=ed-zitrons-wheres-your-ed-at-newsletter": {
+    "id": "aHR0cHM6Ly93d3cud2hlcmVzeW91cmVkLmF0L2FyZS13ZS13YXRjaGluZy10aGUtaW50ZXJuZXQtZGllLz9yZWY9ZWQteml0cm9ucy13aGVyZXMteW91ci1lZC1hdC1uZXdzbGV0dGVy",
+    "title": "🔗: Are We Watching The Internet Die?",
+    "url": "https://www.wheresyoured.at/are-we-watching-the-internet-die/?ref=ed-zitrons-wheres-your-ed-at-newsletter",
+    "content_text": "🔗: Are We Watching The Internet Die? #Tech https://www.wheresyoured.at/are-we-watching-the-internet-die/?ref=ed-zitrons-wheres-your-ed-at-newsletter",
+    "date_published": "Tue, 12 Mar 2024 00:25:00 GMT",
     "toots": []
   }
 }
