@@ -301,9 +301,9 @@ article h2 {
   transition-property: color;
 }
 
-article h2:hover,
-article h2:focus,
-article h2:active {
+article a h2:hover,
+article a h2:focus,
+article a h2:active {
   color: var(--accent-color-hover);
   transition-timing-function: var(--transition-ease-in-out);
   transition-duration: var(--transition-duration-default);
