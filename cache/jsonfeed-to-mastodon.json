@@ -11291,5 +11291,56 @@
       "https://social.lol/users/cory/statuses/112084746052658834"
     ],
     "lastTootTimestamp": 1710277497223
+  },
+  "https://12daysofweb.dev/2023/css-scope/": {
+    "id": "aHR0cHM6Ly8xMmRheXNvZndlYi5kZXYvMjAyMy9jc3Mtc2NvcGUv",
+    "title": "🔗: 12 Days of Web",
+    "url": "https://12daysofweb.dev/2023/css-scope/",
+    "content_text": "🔗: 12 Days of Web #WebDev https://12daysofweb.dev/2023/css-scope/",
+    "date_published": "Tue, 12 Mar 2024 22:54:00 GMT",
+    "toots": []
+  },
+  "https://www.htmhell.dev/adventcalendar/2023/13/": {
+    "id": "aHR0cHM6Ly93d3cuaHRtaGVsbC5kZXYvYWR2ZW50Y2FsZW5kYXIvMjAyMy8xMy8=",
+    "title": "🔗: HTML: The Bad Parts",
+    "url": "https://www.htmhell.dev/adventcalendar/2023/13/",
+    "content_text": "🔗: HTML: The Bad Parts #WebDev https://www.htmhell.dev/adventcalendar/2023/13/",
+    "date_published": "Tue, 12 Mar 2024 22:40:00 GMT",
+    "toots": []
+  },
+  "https://frontside.com/blog/2023-12-11-await-event-horizon/": {
+    "id": "aHR0cHM6Ly9mcm9udHNpZGUuY29tL2Jsb2cvMjAyMy0xMi0xMS1hd2FpdC1ldmVudC1ob3Jpem9uLw==",
+    "title": "🔗: The await event horizon in JavaScript",
+    "url": "https://frontside.com/blog/2023-12-11-await-event-horizon/",
+    "content_text": "🔗: The await event horizon in JavaScript #WebDev https://frontside.com/blog/2023-12-11-await-event-horizon/",
+    "date_published": "Tue, 12 Mar 2024 22:35:00 GMT",
+    "toots": []
+  },
+  "https://nuejs.org/blog/tailwind-misinformation-engine/": {
+    "id": "aHR0cHM6Ly9udWVqcy5vcmcvYmxvZy90YWlsd2luZC1taXNpbmZvcm1hdGlvbi1lbmdpbmUv",
+    "title": "🔗: Tailwind marketing and misinformation engine",
+    "url": "https://nuejs.org/blog/tailwind-misinformation-engine/",
+    "content_text": "🔗: Tailwind marketing and misinformation engine #CSS #WebDev https://nuejs.org/blog/tailwind-misinformation-engine/",
+    "date_published": "Tue, 12 Mar 2024 22:34:00 GMT",
+    "toots": []
+  },
+  "https://mxstbr.com/thoughts/margin/": {
+    "id": "aHR0cHM6Ly9teHN0YnIuY29tL3Rob3VnaHRzL21hcmdpbi8=",
+    "title": "🔗: Margin considered harmful",
+    "url": "https://mxstbr.com/thoughts/margin/",
+    "content_text": "🔗: Margin considered harmful #CSS #WebDev https://mxstbr.com/thoughts/margin/",
+    "date_published": "Tue, 12 Mar 2024 22:12:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112085942762832163"
+    ],
+    "lastTootTimestamp": 1710295757543
+  },
+  "https://kyleshevlin.com/no-outer-margin/": {
+    "id": "aHR0cHM6Ly9reWxlc2hldmxpbi5jb20vbm8tb3V0ZXItbWFyZ2luLw==",
+    "title": "🔗: Kyle Shevlin",
+    "url": "https://kyleshevlin.com/no-outer-margin/",
+    "content_text": "🔗: Kyle Shevlin #CSS #WebDev https://kyleshevlin.com/no-outer-margin/",
+    "date_published": "Tue, 12 Mar 2024 22:12:00 GMT",
+    "toots": []
   }
 }
