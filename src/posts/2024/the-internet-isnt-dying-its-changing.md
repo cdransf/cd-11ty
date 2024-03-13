@@ -8,7 +8,7 @@ tags: ['tech', 'social media', 'blogging', 'Mastodon']
 
 These platforms have been around for years now and their original promise of convenient, open community has proven to be either an outright lie or an easily abandoned promise as they cast about in search of any revenue they can find. We traded privacy and attention for convenience, allowing that convenience to evolve into lock-in and captivity.
 
-What we have no is an opening to allow smaller, decentralized communities to flourish. I *love* Mastodon and the community there — warts and all. It's imperfect, there are growing pains but there is also agency, openness, portability and user control. It may not scale to the global heights that some of these commercial enterprises have, but it's under no pressure to succumb to the same malign, financial imperatives.
+What we have now is an opening to allow smaller, decentralized communities to flourish. I *love* Mastodon and the community there — warts and all. It's imperfect, there are growing pains but there is also agency, openness, portability and user control. It may not scale to the global heights that some of these commercial enterprises have, but it's under no pressure to succumb to the same malign, financial imperatives.
 
 The old guard of social platforms are looking more and more like AOL, Prodigy and similar walled-garden gatekeepers. We've been through this in that dial-up-enabled heyday and have followed a similar cycle once again. We can let these companies and gatekeepers fade because they aren't — and never were — the platform. The web has always been open and continues to be.
 
