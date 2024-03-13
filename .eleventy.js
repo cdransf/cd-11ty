@@ -1,5 +1,5 @@
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
-import tablerIcons from '@cdransf/eleventy-plugin-tablericons'
+import tablerIcons from '@cdransf/eleventy-plugin-tabler-icons'
 import postGraph from '@rknightuk/eleventy-plugin-post-graph'
 
 import markdownIt from 'markdown-it'
