@@ -16,7 +16,6 @@
       property="og:image"
       content="{%- if schema == 'blog' %}{{ meta.url }}/assets/img/social-preview/{{ title | slugify }}-preview.jpeg{%- else -%}{{ meta.meta_data.opengraph_default }}{% endif -%}"
     />
-    <meta property="og:image" content="{{ image | getPostImage }}">
     <meta name="theme-color" content="{{ meta.themeColor }}" />
     <meta name="generator" content="{{ eleventy.generator }}">
     <meta name="robots" content="noai, noimageai">

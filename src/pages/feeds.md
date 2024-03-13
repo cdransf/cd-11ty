@@ -2,7 +2,6 @@
 title: Feeds
 layout: default
 permalink: /feeds.html
-image: /assets/img/ogi/feeds.jpg
 description: 'Content feeds exposed by and generated from my site.'
 ---
 

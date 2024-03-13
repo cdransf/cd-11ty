@@ -38,10 +38,8 @@ export default {
     if (!string) return
     return string.replace(utmPattern, '')
   },
-  getPostImage: (image) => {
-    if (image && image !== '') return image
-    return `${BASE_URL}/assets/img/ogi/default.jpg`
-  },
+
+  // analytics
   getPopularPosts: (posts, analytics) => {
     return posts
       .filter((post) => {
@@ -52,6 +50,8 @@ export default {
         return visitors(b) - visitors(a)
       })
   },
+
+  // tags
   tagLookup: (url, tagMap) => {
     if (!url) return
     if (url.includes('thestorygraph.com')) return '#Books #NowReading #TheStoryGraph'

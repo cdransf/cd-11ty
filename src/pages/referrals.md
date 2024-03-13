@@ -2,7 +2,6 @@
 title: Referrals
 layout: default
 permalink: /referrals.html
-image: /assets/img/ogi/referrals.jpg
 description: 'Referral links for services that I use.'
 ---
 <h2 class="page__header">{{ title }}</h2>

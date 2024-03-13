@@ -3,7 +3,6 @@ title: Webrings
 layout: default
 permalink: /webrings.html
 description: "Webrings are awesome! These are the ones I'm a member of."
-image: /assets/img/ogi/webrings.jpg
 ---
 {% capture css %}
   {% render "../assets/styles/pages/webrings.css" %}
