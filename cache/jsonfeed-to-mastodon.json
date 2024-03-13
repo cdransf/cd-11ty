@@ -11317,7 +11317,10 @@
     "url": "https://frontside.com/blog/2023-12-11-await-event-horizon/",
     "content_text": "🔗: The await event horizon in JavaScript #WebDev https://frontside.com/blog/2023-12-11-await-event-horizon/",
     "date_published": "Tue, 12 Mar 2024 22:35:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112087335628162987"
+    ],
+    "lastTootTimestamp": 1710317011016
   },
   "https://nuejs.org/blog/tailwind-misinformation-engine/": {
     "id": "aHR0cHM6Ly9udWVqcy5vcmcvYmxvZy90YWlsd2luZC1taXNpbmZvcm1hdGlvbi1lbmdpbmUv",
