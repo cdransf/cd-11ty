@@ -1,4 +1,3 @@
-.four-oh-four__wrapper .image__banner,
-.four-oh-four__wrapper a {
+.four-oh-four__wrapper .image__banner {
   margin-bottom: var(--sizing-base);
 }

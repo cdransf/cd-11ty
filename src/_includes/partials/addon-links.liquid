@@ -1,0 +1,8 @@
+{% capture css %}
+  {% render "../../assets/styles/components/addon-links.css" %}
+{% endcapture %}
+<style>{{ css }}</style>
+<div class="addon-links__wrapper">
+  <div>{% render "partials/popular-posts.liquid", posts:posts, analytics:analytics %}</div>
+  <div>{% render "partials/recent-links.liquid", links:links %}</div>
+</div>

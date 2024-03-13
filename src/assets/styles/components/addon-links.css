@@ -1,0 +1,19 @@
+:root {
+  --grid: repeat(1,minmax(0,1fr));
+}
+
+.addon-links__wrapper {
+  display: grid;
+  gap: var(--sizing-sm);
+  grid-template-columns: var(--grid);
+}
+
+.addon-links__wrapper h2 {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --grid: repeat(2,minmax(0,1fr));
+  }
+}

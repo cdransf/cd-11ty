@@ -325,10 +325,13 @@ article p:first-of-type {
   margin-top: var(--sizing-sm);
 }
 
-.tag:not(:last-child) {
-  margin-right: var(--sizing-lg);
+.tag {
   margin-bottom: var(--sizing-lg);
   display: inline-block;
+}
+
+.tag:not(:last-child) {
+  margin-right: var(--sizing-lg);
 }
 
 /* buttons */
@@ -464,9 +467,12 @@ li {
     margin-top: var(--sizing-md);
   }
 
+  .tag {
+    margin-bottom: var(--sizing-sm);
+  }
+
   .tag:not(:last-child) {
     margin-right: var(--sizing-sm);
-    margin-bottom: var(--sizing-sm);
   }
 
   footer nav:first-child {

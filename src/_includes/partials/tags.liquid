@@ -1,4 +1,6 @@
 {% assign filteredTags = tags | filterTags %}
-{% for tag in filteredTags limit: 10 %}
+<div{% if hasSpace %} style="margin-bottom:var(--sizing-md)"{% endif %}>
+  {% for tag in filteredTags limit: 10 %}
   <a class="tag" href="/tags/{{ tag | downcase }}" data-pagefind-filter="tags">{{ tag | formatTag }}</a>
-{% endfor %}
+  {% endfor %}
+</div>

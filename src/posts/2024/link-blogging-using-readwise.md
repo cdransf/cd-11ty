@@ -47,7 +47,7 @@ This fetches links from my archive (so that it's much more likely that I've read
 {% raw %}
 ```liquid
 {% if links.size > 0 %}
-  <h2 class="now__section--header flex--centered">
+  <h2 class="flex--centered">
     {% tablericon "link" "Links" %}
     Links
   </h2>

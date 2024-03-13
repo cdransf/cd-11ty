@@ -14,11 +14,15 @@
   width: var(--sizing-base);
 }
 
-.now__section--header {
+h2 {
   margin: var(--sizing-3xl) 0 var(--sizing-lg);
 }
 
-.now__section--header:first-of-type {
+h2:first-of-type {
+  margin-top: 0;
+}
+
+.link__list {
   margin-top: 0;
 }
 

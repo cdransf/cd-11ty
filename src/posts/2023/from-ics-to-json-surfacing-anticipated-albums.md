@@ -46,7 +46,7 @@ Rendering the output is as simple as:
 
 ```liquid
 {% if albumReleases.size > 0 %}
-  <h2 class="now__section--header flex--centered">
+  <h2 class="flex--centered">
     {% tablericon "calendar-time" "Anticipated albums" %}
     Anticipated albums
   </h2>

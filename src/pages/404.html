@@ -15,8 +15,8 @@ image: /assets/img/404.jpg
     What kind of idiots do you have working here? <a href="/">Hurry up and skip out on the room service bill!</a>
   </div>
   <hr class="large__spacing" />
-  {% render "partials/tags.liquid", tags:collections.tagsSortedByCount %}
-  {% render "partials/popular-posts.liquid", posts:collections.posts, analytics:analytics %}
+  {% render "partials/tags.liquid", tags:collections.tagsSortedByCount, hasSpace:true %}
+  {% render "partials/addon-links.liquid", posts:collections.posts, analytics:analytics, links:links %}
 </div>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
