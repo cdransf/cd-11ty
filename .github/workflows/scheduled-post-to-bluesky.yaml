@@ -1,0 +1,21 @@
+name: Scheduled post to Bluesky
+on:
+  workflow_dispatch:
+
+jobs:
+  Feed2SocialMedia:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Feed to social media
+        uses: lwojcik/github-action-feed-to-social-media@v2
+        with:
+          feedUrl: 'https://feedpress.me/coryd'
+          newestItemStrategy: 'latestDate'
+          postFormat: "📝: {title}\n\n{link}"
+          # Bluesky settings
+          blueskyEnable: true
+          blueskyPostFormat: "📝: {title}\n\n{link}"
+          blueskyHandle: 'cdransf.bsky.social'
+          blueskyAppPassword: ${{ secrets.BLUESKY_TOKEN }}
+          blueskyOwnerHandle: 'cdransf.bsky.social'
+          blueskyOwnerContact: 'coryd@hey.com'
