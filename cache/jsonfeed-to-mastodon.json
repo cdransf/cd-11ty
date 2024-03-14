@@ -11368,5 +11368,16 @@
       "https://social.lol/users/cory/statuses/112092052791324019"
     ],
     "lastTootTimestamp": 1710388989199
+  },
+  "https://coryd.dev/posts/2024/building-a-reactive-website/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9idWlsZGluZy1hLXJlYWN0aXZlLXdlYnNpdGUv",
+    "title": "📝: Building a reactive website",
+    "url": "https://coryd.dev/posts/2024/building-a-reactive-website/",
+    "content_text": "📝: Building a reactive website #WebDev #IndieWeb #Eleventy #RSS https://coryd.dev/posts/2024/building-a-reactive-website/",
+    "date_published": "Thu, 14 Mar 2024 17:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112095035024149832"
+    ],
+    "lastTootTimestamp": 1710434494453
   }
 }
