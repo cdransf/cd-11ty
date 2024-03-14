@@ -17,6 +17,7 @@ export default {
   gmail: '#Email',
   grindcore: '#Grindcore',
   health: '#Health',
+  'indie web': '#IndieWeb',
   ios: '#iOS #Apple',
   javascript: '#JavaScript',
   'last.fm': '#Music',
