@@ -11386,7 +11386,10 @@
     "url": "https://matthiasott.com/notes/links-worth-sharing",
     "content_text": "🔗: Links Worth Sharing #Tech #IndieWeb https://matthiasott.com/notes/links-worth-sharing",
     "date_published": "Thu, 14 Mar 2024 16:43:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112095827607691562"
+    ],
+    "lastTootTimestamp": 1710446588323
   },
   "https://matthiasott.com/notes/welcome-to-the-indieweb": {
     "id": "aHR0cHM6Ly9tYXR0aGlhc290dC5jb20vbm90ZXMvd2VsY29tZS10by10aGUtaW5kaWV3ZWI=",
@@ -11406,5 +11409,13 @@
       "https://social.lol/users/cory/statuses/112095356540763437"
     ],
     "lastTootTimestamp": 1710439400408
+  },
+  "https://nicolasgallagher.com/about-html-semantics-front-end-architecture/": {
+    "id": "aHR0cHM6Ly9uaWNvbGFzZ2FsbGFnaGVyLmNvbS9hYm91dC1odG1sLXNlbWFudGljcy1mcm9udC1lbmQtYXJjaGl0ZWN0dXJlLw==",
+    "title": "🔗: About HTML semantics and front-end architecture",
+    "url": "https://nicolasgallagher.com/about-html-semantics-front-end-architecture/",
+    "content_text": "🔗: About HTML semantics and front-end architecture #CSS #WebDev https://nicolasgallagher.com/about-html-semantics-front-end-architecture/",
+    "date_published": "Thu, 14 Mar 2024 17:12:00 GMT",
+    "toots": []
   }
 }
