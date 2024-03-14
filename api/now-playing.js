@@ -49,7 +49,8 @@ const emojiMap = (genre, artist) => {
     genre.includes("alternative") ||
     genre.includes("rock") ||
     genre.includes("shoegaze") ||
-    genre.includes("screamo")
+    genre.includes("screamo") ||
+    genre.includes("grunge")
   )
     return "🎸";
   return DEFAULT;
