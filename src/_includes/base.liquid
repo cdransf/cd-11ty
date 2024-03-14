@@ -3,9 +3,17 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{{ pageTitle }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ pageTitle }}</title>
+    <script defer data-domain="coryd.dev" src="/js/script.js"></script>
+    <script>window.plausible = window.plausible || function() {(window.plausible.q = window.plausible.q || []).push(arguments)}</script>
+    {% capture css %}
+      {% render "../assets/styles/partials/vars.css" %}
+      {% render "../assets/styles/partials/animations.css" %}
+      {% render "../assets/styles/index.css" %}
+    {% endcapture %}
+    <style>{{ css }}</style>
     <link rel="canonical" href="{{ fullUrl }}" />
     <meta property="og:title" content="{{ pageTitle }}" />
     <meta name="description" content="{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}" />
@@ -22,12 +30,6 @@
     <link href="/assets/icons/favicon.ico?v={% appVersion %}" rel="icon" sizes="any">
     <link href="/assets/icons/favicon.svg?v={% appVersion %}" rel="icon" type="image/svg+xml">
     <link href="/assets/icons/apple-touch-icon.png?v={% appVersion %}" rel="apple-touch-icon">
-    {% capture css %}
-      {% render "../assets/styles/partials/vars.css" %}
-      {% render "../assets/styles/partials/animations.css" %}
-      {% render "../assets/styles/index.css" %}
-    {% endcapture %}
-    <style>{{ css }}</style>
     <link rel="webmention" href="https://webmention.io/coryd.dev/webmention" />
     <link rel="pingback" href="https://webmention.io/coryd.dev/xmlrpc" />
     <link type="application/atom+xml" rel="alternate" title="{{ meta.siteName }}" href="https://feedpress.me/coryd">
@@ -79,8 +81,6 @@
         }
       </script>
       {% endif %}
-    <script defer data-domain="coryd.dev" src="/js/script.js"></script>
-    <script>window.plausible = window.plausible || function() {(window.plausible.q = window.plausible.q || []).push(arguments)}</script>
     <noscript>
       <style>.client-side {display:none}</style>
     </noscript>
