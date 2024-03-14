@@ -12,10 +12,10 @@ jobs:
         with:
           feedUrl: 'https://feedpress.me/coryd'
           newestItemStrategy: 'latestDate'
-          postFormat: "📝: {title}\n\n{link}"
+          postFormat: "📝: {title} {link}"
           # Bluesky settings
           blueskyEnable: true
-          blueskyPostFormat: "📝: {title}\n\n{link}"
+          blueskyPostFormat: "📝: {title} {link}"
           blueskyHandle: 'cdransf.bsky.social'
           blueskyAppPassword: ${{ secrets.BLUESKY_TOKEN }}
           blueskyOwnerHandle: 'cdransf.bsky.social'
