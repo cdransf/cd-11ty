@@ -1,7 +1,8 @@
 name: Scheduled post to Bluesky
 on:
   workflow_dispatch:
-
+  schedule:
+    - cron: '0 */2 * * *'
 jobs:
   Feed2SocialMedia:
     runs-on: ubuntu-latest
