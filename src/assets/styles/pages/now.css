@@ -14,11 +14,12 @@
   width: var(--sizing-base);
 }
 
-.media__grid--header {
+.now__section--header,
+.recent__links-header {
   margin: var(--sizing-3xl) 0 var(--sizing-lg);
 }
 
-.media__grid--header:first-of-type {
+.now__section--header:first-of-type {
   margin-top: 0;
 }
 
