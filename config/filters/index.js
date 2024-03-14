@@ -187,10 +187,13 @@ export default {
     return tags.filter((tag) => tag.toLowerCase() !== 'posts')
   },
   formatTag: (string) => {
-    const capitalizeFirstLetter = (string) => {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
-    if (string === 'iOS' || string === 'macOS' || string === 'RSS') return `#${string}`
+    const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1)
+    const normalizedString = string.toLowerCase()
+    if (
+      normalizedString === 'ios' ||
+      normalizedString === 'macos' ||
+      normalizedString === 'rss'
+    ) return `#${string}`
     if (!string.includes(' ')) return `#${capitalizeFirstLetter(string)}`
     return `#${string.split(' ').map(s => capitalizeFirstLetter(s)).join('')}`
   }
