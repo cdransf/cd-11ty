@@ -11,9 +11,6 @@ const BASE_URL = 'https://coryd.dev'
 
 export default {
   // general
-  trim: (string, limit) => {
-    return string.length <= limit ? string : `${string.slice(0, limit)}...`
-  },
   btoa: (string) => {
     return btoa(string)
   },
@@ -193,7 +190,7 @@ export default {
     const capitalizeFirstLetter = (string) => {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
-    if (string === 'iOS' || string === 'macOS') return `#${string}`
+    if (string === 'iOS' || string === 'macOS' || string === 'RSS') return `#${string}`
     if (!string.includes(' ')) return `#${capitalizeFirstLetter(string)}`
     return `#${string.split(' ').map(s => capitalizeFirstLetter(s)).join('')}`
   }

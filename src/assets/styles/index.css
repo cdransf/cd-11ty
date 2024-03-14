@@ -57,7 +57,6 @@ blockquote {
 
 /* links */
 a {
-  transition-property: color;
   text-decoration: none;
 }
 
@@ -73,11 +72,7 @@ a:active,
 :is(.main__title, footer nav:last-child) a:focus,
 :is(.main__title, footer nav:last-child) a:active {
   color: var(--accent-color-hover);
-}
-
-a:hover,
-a:focus,
-a:active {
+  transition-property: color;
   transition-timing-function: var(--transition-ease-in-out);
   transition-duration: var(--transition-duration-default);
 }
@@ -172,12 +167,12 @@ th {
 }
 
 /* nav */
-.main__title nav {
+nav.menu__primary {
   gap: var(--sizing-sm);
 }
 
-.main__title nav a,
-.main__title nav span {
+nav.menu__primary a,
+nav.menu__primary span {
   height: var(--sizing-xl);
 }
 
@@ -441,7 +436,7 @@ li {
     padding-bottom: 0;
   }
 
-  .main__title nav {
+  nav.menu__primary {
     gap: var(--sizing-md);
   }
 
