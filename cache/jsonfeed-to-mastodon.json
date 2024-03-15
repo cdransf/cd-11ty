@@ -11445,5 +11445,16 @@
       "https://social.lol/users/cory/statuses/112097718851504187"
     ],
     "lastTootTimestamp": 1710475446428
+  },
+  "https://coryd.dev/now#artists?ts=1710417600000#artists": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93I2FydGlzdHM/dHM9MTcxMDQxNzYwMDAwMCNhcnRpc3Rz",
+    "title": "🎧: My top artists for the week: Carcass @ 59 plays, AFI @ 51 plays, NoMeansNo @ 46 plays, Convulsing @ 45 plays, Edge of Sanity @ 44 plays, Autopsy @ 42 plays, Propagandhi @ 39 plays, Tomb Mold @ 34 plays #Music #LastFM",
+    "url": "https://coryd.dev/now#artists?ts=1710417600000#artists",
+    "content_text": "🎧: My top artists for the week: Carcass @ 59 plays, AFI @ 51 plays, NoMeansNo @ 46 plays, Convulsing @ 45 plays, Edge of Sanity @ 44 plays, Autopsy @ 42 plays, Propagandhi @ 39 plays, Tomb Mold @ 34 plays #Music #LastFM  https://coryd.dev/now#artists?ts=1710417600000#artists",
+    "date_published": "Thu, 14 Mar 2024 12:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112099130091638105"
+    ],
+    "lastTootTimestamp": 1710496980211
   }
 }
