@@ -11434,5 +11434,16 @@
       "https://social.lol/users/cory/statuses/112096800722192961"
     ],
     "lastTootTimestamp": 1710461436912
+  },
+  "https://read.engineerscodex.com/p/how-apple-built-icloud-to-store-billions": {
+    "id": "aHR0cHM6Ly9yZWFkLmVuZ2luZWVyc2NvZGV4LmNvbS9wL2hvdy1hcHBsZS1idWlsdC1pY2xvdWQtdG8tc3RvcmUtYmlsbGlvbnM=",
+    "title": "🔗: How Apple built iCloud to store billions of databases",
+    "url": "https://read.engineerscodex.com/p/how-apple-built-icloud-to-store-billions",
+    "content_text": "🔗: How Apple built iCloud to store billions of databases #Tech #WebDev https://read.engineerscodex.com/p/how-apple-built-icloud-to-store-billions",
+    "date_published": "Fri, 15 Mar 2024 00:58:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112097718851504187"
+    ],
+    "lastTootTimestamp": 1710475446428
   }
 }
