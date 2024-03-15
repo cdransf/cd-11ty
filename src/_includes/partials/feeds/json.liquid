@@ -8,9 +8,9 @@
   "items": [{% for entry in entries limit: 20 -%}
     {
     "id": "{{ entry.url | btoa }}",
-    "title": "{{ entry.title }}",
+    "title": "{{ entry.title | escape }}",
     "url": "{{ entry.url }}",
-    "content_text": "{{ entry.title }}{% if tagMap %} {{ entry.url | tagLookup: tagMap }}{% endif %} {{ entry.url }}",
+    "content_text": "{{ entry.title | escape }}{% if tagMap %} {{ entry.url | tagLookup: tagMap }}{% endif %} {{ entry.url }}",
     "date_published": "{{ entry.date | stringToRFC822Date }}"
     }{% if not forloop.last %},{% endif %}
   {%- endfor %}
