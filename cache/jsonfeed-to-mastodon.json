@@ -11397,7 +11397,10 @@
     "url": "https://matthiasott.com/notes/welcome-to-the-indieweb",
     "content_text": "🔗: Welcome to the IndieWeb #Tech #IndieWeb https://matthiasott.com/notes/welcome-to-the-indieweb",
     "date_published": "Thu, 14 Mar 2024 16:42:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112097265271157716"
+    ],
+    "lastTootTimestamp": 1710468525301
   },
   "https://rknight.me/blog/eleventy-post-dates/": {
     "id": "aHR0cHM6Ly9ya25pZ2h0Lm1lL2Jsb2cvZWxldmVudHktcG9zdC1kYXRlcy8=",
