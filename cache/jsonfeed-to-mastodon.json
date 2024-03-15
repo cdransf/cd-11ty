@@ -11330,7 +11330,7 @@
     "title": "🔗: Tailwind marketing and misinformation engine",
     "url": "https://nuejs.org/blog/tailwind-misinformation-engine/",
     "content_text": "🔗: Tailwind marketing and misinformation engine #CSS #WebDev https://nuejs.org/blog/tailwind-misinformation-engine/",
-    "date_published": "Tue, 12 Mar 2024 22:34:00 GMT",
+    "date_published": "Thu, 14 Mar 2024 22:17:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112088284382915131"
     ],
@@ -11415,10 +11415,21 @@
     "title": "🔗: About HTML semantics and front-end architecture",
     "url": "https://nicolasgallagher.com/about-html-semantics-front-end-architecture/",
     "content_text": "🔗: About HTML semantics and front-end architecture #CSS #WebDev https://nicolasgallagher.com/about-html-semantics-front-end-architecture/",
-    "date_published": "Thu, 14 Mar 2024 17:12:00 GMT",
+    "date_published": "Thu, 14 Mar 2024 22:17:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112096298409930084"
     ],
     "lastTootTimestamp": 1710453772212
+  },
+  "https://thathtml.blog/2024/03/more-fun-with-web-components-and-mutationobserver/": {
+    "id": "aHR0cHM6Ly90aGF0aHRtbC5ibG9nLzIwMjQvMDMvbW9yZS1mdW4td2l0aC13ZWItY29tcG9uZW50cy1hbmQtbXV0YXRpb25vYnNlcnZlci8=",
+    "title": "🔗: More Fun with Web Components and MutationObserver",
+    "url": "https://thathtml.blog/2024/03/more-fun-with-web-components-and-mutationobserver/",
+    "content_text": "🔗: More Fun with Web Components and MutationObserver #JavaScript #WebDev https://thathtml.blog/2024/03/more-fun-with-web-components-and-mutationobserver/",
+    "date_published": "Thu, 14 Mar 2024 23:02:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112096800722192961"
+    ],
+    "lastTootTimestamp": 1710461436912
   }
 }
