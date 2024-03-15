@@ -19,7 +19,7 @@ export default async function () {
     content += ' #Music #LastFM'
     return {
       title: content,
-      url: `https://coryd.dev/now#artists?ts=${date}#artists`,
+      url: `https://coryd.dev/now?ts=${date}#artists`,
       date: new Date(date),
       description: `My top artists for the last week, ending ${
         new Date(date).toLocaleString().split(',')[0]
