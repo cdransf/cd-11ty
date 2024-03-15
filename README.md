@@ -13,9 +13,9 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 ## 📝 Recent posts
 
 <!-- BLOGPOSTS:START -->
+- [Building a reactive website](https://coryd.dev/posts/2024/building-a-reactive-website/)
 - [The internet isn't dying, it's changing](https://coryd.dev/posts/2024/the-internet-isnt-dying-its-changing/)
 - [Of course AI is extractive, everything is lately](https://coryd.dev/posts/2024/of-course-ai-is-extractive-everything-is-lately/)
 - [Sharing links via RSS, sharing links via APIs](https://coryd.dev/posts/2024/sharing-links-via-rss-sharing-links-via-apis/)
 - [Using an Eleventy event to optimize component JavaScript](https://coryd.dev/posts/2024/using-an-eleventy-event-to-optimize-component-javascript/)
-- [Surfacing most used tags in Eleventy](https://coryd.dev/posts/2024/surfacing-most-used-tags-in-eleventy/)
 <!-- BLOGPOSTS:END -->
