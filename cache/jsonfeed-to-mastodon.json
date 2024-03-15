@@ -11330,7 +11330,7 @@
     "title": "🔗: Tailwind marketing and misinformation engine",
     "url": "https://nuejs.org/blog/tailwind-misinformation-engine/",
     "content_text": "🔗: Tailwind marketing and misinformation engine #CSS #WebDev https://nuejs.org/blog/tailwind-misinformation-engine/",
-    "date_published": "Tue, 12 Mar 2024 22:34:00 GMT",
+    "date_published": "Thu, 14 Mar 2024 22:17:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112088284382915131"
     ],
@@ -11397,7 +11397,10 @@
     "url": "https://matthiasott.com/notes/welcome-to-the-indieweb",
     "content_text": "🔗: Welcome to the IndieWeb #Tech #IndieWeb https://matthiasott.com/notes/welcome-to-the-indieweb",
     "date_published": "Thu, 14 Mar 2024 16:42:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112097265271157716"
+    ],
+    "lastTootTimestamp": 1710468525301
   },
   "https://rknight.me/blog/eleventy-post-dates/": {
     "id": "aHR0cHM6Ly9ya25pZ2h0Lm1lL2Jsb2cvZWxldmVudHktcG9zdC1kYXRlcy8=",
@@ -11415,10 +11418,43 @@
     "title": "🔗: About HTML semantics and front-end architecture",
     "url": "https://nicolasgallagher.com/about-html-semantics-front-end-architecture/",
     "content_text": "🔗: About HTML semantics and front-end architecture #CSS #WebDev https://nicolasgallagher.com/about-html-semantics-front-end-architecture/",
-    "date_published": "Thu, 14 Mar 2024 17:12:00 GMT",
+    "date_published": "Thu, 14 Mar 2024 22:17:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112096298409930084"
     ],
     "lastTootTimestamp": 1710453772212
+  },
+  "https://thathtml.blog/2024/03/more-fun-with-web-components-and-mutationobserver/": {
+    "id": "aHR0cHM6Ly90aGF0aHRtbC5ibG9nLzIwMjQvMDMvbW9yZS1mdW4td2l0aC13ZWItY29tcG9uZW50cy1hbmQtbXV0YXRpb25vYnNlcnZlci8=",
+    "title": "🔗: More Fun with Web Components and MutationObserver",
+    "url": "https://thathtml.blog/2024/03/more-fun-with-web-components-and-mutationobserver/",
+    "content_text": "🔗: More Fun with Web Components and MutationObserver #JavaScript #WebDev https://thathtml.blog/2024/03/more-fun-with-web-components-and-mutationobserver/",
+    "date_published": "Thu, 14 Mar 2024 23:02:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112096800722192961"
+    ],
+    "lastTootTimestamp": 1710461436912
+  },
+  "https://read.engineerscodex.com/p/how-apple-built-icloud-to-store-billions": {
+    "id": "aHR0cHM6Ly9yZWFkLmVuZ2luZWVyc2NvZGV4LmNvbS9wL2hvdy1hcHBsZS1idWlsdC1pY2xvdWQtdG8tc3RvcmUtYmlsbGlvbnM=",
+    "title": "🔗: How Apple built iCloud to store billions of databases",
+    "url": "https://read.engineerscodex.com/p/how-apple-built-icloud-to-store-billions",
+    "content_text": "🔗: How Apple built iCloud to store billions of databases #Tech #WebDev https://read.engineerscodex.com/p/how-apple-built-icloud-to-store-billions",
+    "date_published": "Fri, 15 Mar 2024 00:58:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112097718851504187"
+    ],
+    "lastTootTimestamp": 1710475446428
+  },
+  "https://coryd.dev/now#artists?ts=1710417600000#artists": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93I2FydGlzdHM/dHM9MTcxMDQxNzYwMDAwMCNhcnRpc3Rz",
+    "title": "🎧: My top artists for the week: Carcass @ 59 plays, AFI @ 51 plays, NoMeansNo @ 46 plays, Convulsing @ 45 plays, Edge of Sanity @ 44 plays, Autopsy @ 42 plays, Propagandhi @ 39 plays, Tomb Mold @ 34 plays #Music #LastFM",
+    "url": "https://coryd.dev/now#artists?ts=1710417600000#artists",
+    "content_text": "🎧: My top artists for the week: Carcass @ 59 plays, AFI @ 51 plays, NoMeansNo @ 46 plays, Convulsing @ 45 plays, Edge of Sanity @ 44 plays, Autopsy @ 42 plays, Propagandhi @ 39 plays, Tomb Mold @ 34 plays #Music #LastFM  https://coryd.dev/now#artists?ts=1710417600000#artists",
+    "date_published": "Thu, 14 Mar 2024 12:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112099130091638105"
+    ],
+    "lastTootTimestamp": 1710496980211
   }
 }
