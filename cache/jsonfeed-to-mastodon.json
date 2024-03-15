@@ -11283,9 +11283,9 @@
   },
   "https://coryd.dev/posts/2024/the-internet-isnt-dying-its-changing/": {
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC90aGUtaW50ZXJuZXQtaXNudC1keWluZy1pdHMtY2hhbmdpbmcv",
-    "title": "📝: The internet isn't dying, it's changing",
+    "title": "📝: The internet isn&#39;t dying, it&#39;s changing",
     "url": "https://coryd.dev/posts/2024/the-internet-isnt-dying-its-changing/",
-    "content_text": "📝: The internet isn't dying, it's changing #Tech #SocialMedia #Blogging #Mastodon https://coryd.dev/posts/2024/the-internet-isnt-dying-its-changing/",
+    "content_text": "📝: The internet isn&#39;t dying, it&#39;s changing #Tech #SocialMedia #Blogging #Mastodon https://coryd.dev/posts/2024/the-internet-isnt-dying-its-changing/",
     "date_published": "Tue, 12 Mar 2024 22:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112084746052658834"
@@ -11467,5 +11467,24 @@
       "https://social.lol/users/cory/statuses/112100549802278745"
     ],
     "lastTootTimestamp": 1710518643276
+  },
+  "https://coryd.dev/posts/2024/look-for-longevity/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9sb29rLWZvci1sb25nZXZpdHkv",
+    "title": "📝: Look for longevity",
+    "url": "https://coryd.dev/posts/2024/look-for-longevity/",
+    "content_text": "📝: Look for longevity #Tech https://coryd.dev/posts/2024/look-for-longevity/",
+    "date_published": "Fri, 15 Mar 2024 22:00:00 GMT",
+    "toots": []
+  },
+  "https://daught.me/blog/2024/indie-web/": {
+    "id": "aHR0cHM6Ly9kYXVnaHQubWUvYmxvZy8yMDI0L2luZGllLXdlYi8=",
+    "title": "🔗: The &#34;IndieWeb&#34; feels like coming home",
+    "url": "https://daught.me/blog/2024/indie-web/",
+    "content_text": "🔗: The &#34;IndieWeb&#34; feels like coming home #Tech #IndieWeb #WebDev https://daught.me/blog/2024/indie-web/",
+    "date_published": "Fri, 15 Mar 2024 18:17:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112101358457864897"
+    ],
+    "lastTootTimestamp": 1710530982388
   }
 }
