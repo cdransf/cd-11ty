@@ -11481,9 +11481,9 @@
   },
   "https://daught.me/blog/2024/indie-web/": {
     "id": "aHR0cHM6Ly9kYXVnaHQubWUvYmxvZy8yMDI0L2luZGllLXdlYi8=",
-    "title": "🔗: The &#34;IndieWeb&#34; feels like coming home",
+    "title": "🔗: The 'IndieWeb' feels like coming home",
     "url": "https://daught.me/blog/2024/indie-web/",
-    "content_text": "🔗: The &#34;IndieWeb&#34; feels like coming home #Tech #IndieWeb #WebDev https://daught.me/blog/2024/indie-web/",
+    "content_text": "🔗: The 'IndieWeb' feels like coming home #Tech #IndieWeb #WebDev https://daught.me/blog/2024/indie-web/",
     "date_published": "Fri, 15 Mar 2024 19:26:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112101358457864897"
@@ -11492,13 +11492,32 @@
   },
   "https://app.thestorygraph.com/books/feab914d-ceb9-4a03-a0d6-ec0d15df105b": {
     "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvZmVhYjkxNGQtY2ViOS00YTAzLWEwZDYtZWMwZDE1ZGYxMDVi",
-    "title": "📖: When Crack Was King: A People&#39;s History of a Misunderstood Era",
+    "title": "📖: When Crack Was King: A People's History of a Misunderstood Era",
     "url": "https://app.thestorygraph.com/books/feab914d-ceb9-4a03-a0d6-ec0d15df105b",
-    "content_text": "📖: When Crack Was King: A People&#39;s History of a Misunderstood Era #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/feab914d-ceb9-4a03-a0d6-ec0d15df105b",
+    "content_text": "📖: When Crack Was King: A People's History of a Misunderstood Era #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/feab914d-ceb9-4a03-a0d6-ec0d15df105b",
     "date_published": "Thu, 14 Mar 2024 17:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112102461845137083"
     ],
     "lastTootTimestamp": 1710547818772
+  },
+  "https://theinternet.review/2024/03/15/w3c-investigating-ethics-of-ai/": {
+    "id": "aHR0cHM6Ly90aGVpbnRlcm5ldC5yZXZpZXcvMjAyNC8wMy8xNS93M2MtaW52ZXN0aWdhdGluZy1ldGhpY3Mtb2YtYWkv",
+    "title": "🔗: The W3C is Now Investigating the Ethics of Generative AI",
+    "url": "https://theinternet.review/2024/03/15/w3c-investigating-ethics-of-ai/",
+    "content_text": "🔗: The W3C is Now Investigating the Ethics of Generative AI #AI #Tech https://theinternet.review/2024/03/15/w3c-investigating-ethics-of-ai/",
+    "date_published": "Sat, 16 Mar 2024 17:17:00 GMT",
+    "toots": []
+  },
+  "https://hamatti.org/posts/on-content-creation-and-personal-web/": {
+    "id": "aHR0cHM6Ly9oYW1hdHRpLm9yZy9wb3N0cy9vbi1jb250ZW50LWNyZWF0aW9uLWFuZC1wZXJzb25hbC13ZWIv",
+    "title": "🔗: On content creation and personal web",
+    "url": "https://hamatti.org/posts/on-content-creation-and-personal-web/",
+    "content_text": "🔗: On content creation and personal web #IndieWeb #WebDev https://hamatti.org/posts/on-content-creation-and-personal-web/",
+    "date_published": "Sat, 16 Mar 2024 17:12:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112107151793557588"
+    ],
+    "lastTootTimestamp": 1710619381676
   }
 }
