@@ -35,6 +35,7 @@ export default {
     if (!string) return
     return string.replace(utmPattern, '')
   },
+  replaceQuotes: (string) => string.replace(/"/g, "'"),
 
   // analytics
   getPopularPosts: (posts, analytics) => {
