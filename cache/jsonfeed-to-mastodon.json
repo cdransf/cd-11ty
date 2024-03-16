@@ -11519,5 +11519,16 @@
       "https://social.lol/users/cory/statuses/112107151793557588"
     ],
     "lastTootTimestamp": 1710619381676
+  },
+  "https://zeldman.com/2024/03/16/heal-an-ailing-web/": {
+    "id": "aHR0cHM6Ly96ZWxkbWFuLmNvbS8yMDI0LzAzLzE2L2hlYWwtYW4tYWlsaW5nLXdlYi8=",
+    "title": "🔗: Heal an ailing web",
+    "url": "https://zeldman.com/2024/03/16/heal-an-ailing-web/",
+    "content_text": "🔗: Heal an ailing web #Tech #Economics https://zeldman.com/2024/03/16/heal-an-ailing-web/",
+    "date_published": "Sat, 16 Mar 2024 20:42:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112107622795388167"
+    ],
+    "lastTootTimestamp": 1710626568601
   }
 }
