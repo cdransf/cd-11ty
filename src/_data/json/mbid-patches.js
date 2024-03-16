@@ -29,6 +29,7 @@ export default {
   mefitis: '5d2b3f1a-e206-4ba8-adf5-d3547542266b',
   nirvana: '5b11f4ce-a62d-471e-81fc-a69a8278c7da',
   nomeansno: '37e9d7b2-7779-41b2-b2eb-3685351caad3',
+  nothing: 'e86b5e8c-8a11-40ea-9bb0-551df95e99d4',
   nucleus: '9eefaa74-8dea-41af-8bb3-0d9616bec16f',
   oasis: '39ab1aed-75e0-4140-bd47-540276886b60',
   obliteration: '5c241a91-d7e9-447a-807c-e4a8435f10ef',
