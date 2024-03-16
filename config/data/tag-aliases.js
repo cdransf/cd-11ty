@@ -31,6 +31,7 @@ export default {
   productivity: '#Productivity',
   react: '#JavaScript',
   rss: '#RSS',
+  shoegaze: '#Shoegaze',
   'social media': '#SocialMedia',
   spotify: '#Music',
   'surveillance capitalism': '#SurveillanceCapitalism',
