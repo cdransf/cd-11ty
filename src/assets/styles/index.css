@@ -280,6 +280,8 @@ footer nav:last-child span:not(.active) {
   color: var(--color-lightest);
   background-color: var(--accent-color);
   padding: var(--sizing-xs);
+  -webkit-clip-path: polygon(1px 2px,99.5% 0,100% 95%,0px 100%);
+  clip-path: polygon(1px 2px,99.5% 0,100% 95%,0px 100%);
 }
 
 code {
