@@ -108,7 +108,7 @@ export default {
 
   // links
   findPost: (url, posts) => {
-    if (!url || !posts) return null;
+    if (!url || !posts || !posts[url]?.toots?.[0]?.includes('https')) return null;
     const BASE_URL = 'https://social.lol/users/cory/statuses/'
     const STATUS_URL = 'https://social.lol/@cory/'
     return posts[url]?.toots?.[0]?.replace(BASE_URL, STATUS_URL) || null;
