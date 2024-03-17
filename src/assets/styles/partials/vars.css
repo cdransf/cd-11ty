@@ -56,7 +56,7 @@
   --sun: #ffa700;
 
   /* fonts */
-  --font-sans: "Poppins", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;
 
   /* text */
@@ -83,6 +83,7 @@
 
   --font-weight-base: 400;
   --font-weight-bold: 700;
+  --font-weight-heavy: 900;
 
   /* spacing */
   --sizing-xs: .25rem;
