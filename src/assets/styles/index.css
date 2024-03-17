@@ -168,7 +168,7 @@ th {
 
 /* nav */
 nav.menu__primary {
-  gap: var(--sizing-sm);
+  gap: var(--sizing-md);
 }
 
 nav.menu__primary a,
@@ -434,14 +434,6 @@ li {
 
   .main__title h1 {
     padding-bottom: 0;
-  }
-
-  nav.menu__primary {
-    gap: var(--sizing-md);
-  }
-
-  nav ul li:not(:last-child) {
-    margin-right: var(--sizing-md);
   }
 
   main {
