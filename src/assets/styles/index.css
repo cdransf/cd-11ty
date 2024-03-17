@@ -283,23 +283,28 @@ footer nav:last-child span:not(.active) {
 }
 
 p .highlight-text:nth-child(even) {
-  -webkit-clip-path: polygon(2px 0px,99.5% 0,100% 93%,0px 100%);
-  clip-path: polygon(2px 0px,99.5% 0,100% 93%,0px 100%);
+  -webkit-clip-path: polygon(2px 0, 99.5% 0,100% 93%, 0 100%);
+  clip-path: polygon(2px 0, 99.5% 0, 100% 93%, 0 100%);
 }
 
 p .highlight-text:nth-child(odd) {
-  -webkit-clip-path: polygon(2px 0px,99.5% 0,98.5% 95%,0px 100%);
-  clip-path: polygon(2px 0px,99.5% 0,98.5% 95%,0px 100%);
+  -webkit-clip-path: polygon(2px 0, 99.5% 0, 98.5% 95%, 0 100%);
+  clip-path: polygon(2px 0, 99.5% 0, 98.5% 95%, 0 100%);
 }
 
-p .highlight-text:first-of-type {
-  -webkit-clip-path: polygon(1px 2px,99.5% 0,100% 95%,0px 100%);
-  clip-path: polygon(1px 2px,99.5% 0,100% 95%,0px 100%);
+p .highlight-text:nth-of-type(3n+1) {
+  -webkit-clip-path: polygon(1px 2px, 99.5% 0, 100% 95%, 0 100%);
+  clip-path: polygon(1px 2px, 99.5% 0, 100% 95%, 0 100%);
 }
 
-p .highlight-text:last-of-type {
-  -webkit-clip-path: polygon(0 0,100% 0,100% 90%,0px 95%);
-  clip-path: polygon(0 0,100% 0,100% 90%,0px 95%);
+p .highlight-text:nth-of-type(3n+2) {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 95%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 95%);
+}
+
+p .highlight-text:nth-of-type(3n) {
+  -webkit-clip-path: polygon(2px 1px, 100% 0, 100% 90%, 0 97%);
+  clip-path: polygon(2px 1px, 100% 0, 100% 90%, 0 97%);
 }
 
 
