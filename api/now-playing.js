@@ -18,6 +18,7 @@ const emojiMap = (genre, artist) => {
   if (artist === "Minor Threat") return "👨🏻‍🦲";
   if (artist === "Panopticon") return "🪕🪦";
   if (artist === "Taylor Swift") return "👸🏼";
+  if (artist === "Webbed Wing") return "🤡";
 
   // early return for bad input
   if (!genre) return DEFAULT;
