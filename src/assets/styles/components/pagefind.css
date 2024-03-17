@@ -34,7 +34,7 @@
   color: var(--accent-color);
   font-size: var(--font-size-2xl);
   line-height: var(--line-height-2xl);
-  font-weight: var(--font-weight-heavy);
+  font-weight: var(--font-weight-bold);
   margin: 0;
   transition-property: color;
   transition-timing-function: var(--transition-ease-in-out);
@@ -111,5 +111,5 @@
 
 .pagefind__placeholder {
   height: 42px !important;
-  font-weight: var(--font-weight-heavy);
+  font-weight: var(--font-weight-bold);
 }
