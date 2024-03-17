@@ -11566,5 +11566,24 @@
       "https://social.lol/users/cory/statuses/112108591965872893"
     ],
     "lastTootTimestamp": 1710641356980
+  },
+  "https://boehs.org/node/npm-everything": {
+    "id": "aHR0cHM6Ly9ib2Vocy5vcmcvbm9kZS9ucG0tZXZlcnl0aGluZw==",
+    "title": "🔗: Npm Install Everything, and the Complete and Utter Chaos That Follows",
+    "url": "https://boehs.org/node/npm-everything",
+    "content_text": "🔗: Npm Install Everything, and the Complete and Utter Chaos That Follows #Tech #JavaScript #WebDev https://boehs.org/node/npm-everything",
+    "date_published": "Sun, 17 Mar 2024 20:56:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112113285529578266"
+    ],
+    "lastTootTimestamp": 1710712975051
+  },
+  "https://kyleshevlin.com/two-types-of-composition/": {
+    "id": "aHR0cHM6Ly9reWxlc2hldmxpbi5jb20vdHdvLXR5cGVzLW9mLWNvbXBvc2l0aW9uLw==",
+    "title": "🔗: Two Types of Composition",
+    "url": "https://kyleshevlin.com/two-types-of-composition/",
+    "content_text": "🔗: Two Types of Composition #CSS #JavaScript #WebDev https://kyleshevlin.com/two-types-of-composition/",
+    "date_published": "Sun, 17 Mar 2024 20:45:00 GMT",
+    "toots": []
   }
 }
