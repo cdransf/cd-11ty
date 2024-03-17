@@ -14,8 +14,8 @@ export default async function () {
       artist: album['artist']['name'],
       plays: album['playcount'],
       rank: album['@attr']['rank'],
-      image: `https://cdn.coryd.dev/albums/${removeAccents(album['artist']['name']).replace(/\s+/g, '-').toLowerCase()}-${removeAccents(album['name'].replace(/[:\/\\,'']+/g
-, '').replace(/\s+/g, '-').toLowerCase())}.jpg`,
+      image: `https://cdn.coryd.dev/albums/${encodeURIComponent(removeAccents(album['artist']['name']).replace(/\s+/g, '-').toLowerCase())}-${encodeURIComponent(removeAccents(album['name'].replace(/[:\/\\,'']+/g
+      , '').replace(/\s+/g, '-').toLowerCase()))}.jpg`,
       url: album['mbid']
         ? `https://musicbrainz.org/album/${album['mbid']}`
         : `https://musicbrainz.org/taglookup/index?tag-lookup.artist=${album['artist'][
