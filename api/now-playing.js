@@ -1,24 +1,27 @@
 const emojiMap = (genre, artist) => {
   const DEFAULT = "🎧";
-  if (artist === "Augury") return "☄️";
-  if (artist === "Autopsy") return "🧟";
-  if (artist === "Bedsore") return "🛏️";
-  if (artist === "Black Flag") return "🏴";
-  if (artist === "Blood Incantation") return "👽";
-  if (artist === "Bolt Thrower") return "⚔️"
-  if (artist === "Bruce Springsteen") return "🇺🇸";
-  if (artist === "Carcass") return "🥼";
-  if (artist === "Counting Crows") return "🐦‍⬛";
-  if (artist === "David Bowie") return "👨🏻‍🎤";
-  if (artist === "Devoid of Thought") return "🚫💭";
-  if (artist === "Drug Church") return "💊⛪️"
-  if (artist === "Full of Hell & Nothing") return "🫨🎸";
-  if (artist === "Imperial Triumphant") return "🎭";
-  if (artist === "Mastodon") return "🐋";
-  if (artist === "Minor Threat") return "👨🏻‍🦲";
-  if (artist === "Panopticon") return "🪕🪦";
-  if (artist === "Taylor Swift") return "👸🏼";
-  if (artist === "Webbed Wing") return "🤡";
+  const normalizedArtist = artist?.toLowerCase();
+  if (normalizedArtist === "agalloch") return "🏔️";
+  if (normalizedArtist === "augury") return "☄️";
+  if (normalizedArtist === "autopsy") return "🧟";
+  if (normalizedArtist === "bedsore") return "🛏️";
+  if (normalizedArtist === "black flag") return "🏴";
+  if (normalizedArtist === "blood incantation") return "👽";
+  if (normalizedArtist === "bolt thrower") return "⚔️"
+  if (normalizedArtist === "bruce springsteen") return "🇺🇸";
+  if (normalizedArtist === "carcass") return "🥼";
+  if (normalizedArtist === "counting crows") return "🐦‍⬛";
+  if (normalizedArtist === "david bowie") return "👨🏻‍🎤";
+  if (normalizedArtist === "cevoid of thought") return "🚫💭";
+  if (normalizedArtist === "drug church") return "💊⛪️";
+  if (normalizedArtist === "fleshwater") return "🐤";
+  if (normalizedArtist === "full of hell & nothing") return "🫨🎸";
+  if (normalizedArtist === "imperial triumphant") return "🎭";
+  if (normalizedArtist === "mastodon") return "🐋";
+  if (normalizedArtist === "minor threat") return "👨🏻‍🦲";
+  if (normalizedArtist === "panopticon") return "🪕🪦";
+  if (normalizedArtist === "taylor swift") return "👸🏼";
+  if (normalizedArtist === "webbed wing") return "🤡";
 
   // early return for bad input
   if (!genre) return DEFAULT;
