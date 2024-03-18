@@ -8040,8 +8040,8 @@
     "id": "aHR0cHM6Ly93aGVyZXN5b3VyZWQuYXQvcC9zb2Z0d2FyZS1oYXMtYmVhdGVuLXRoZS13b3JsZA==",
     "title": "🔗: Software Is Beating The World",
     "url": "https://wheresyoured.at/p/software-has-beaten-the-world",
-    "content_text": "🔗: Software Is Beating The World #Tech https://wheresyoured.at/p/software-has-beaten-the-world",
-    "date_published": "Wed, 20 Dec 2023 01:18:59 +0000",
+    "content_text": "🔗: Software Is Beating The World #Tech #Economics https://wheresyoured.at/p/software-has-beaten-the-world",
+    "date_published": "Mon, 18 Mar 2024 22:52:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/111610755865308612"
     ],
@@ -11610,5 +11610,16 @@
       "https://social.lol/users/cory/statuses/112119128763810570"
     ],
     "lastTootTimestamp": 1710802135750
+  },
+  "https://coryd.dev/posts/2024/its-not-ai-generated-music-its-ai-generated-noise/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9pdHMtbm90LWFpLWdlbmVyYXRlZC1tdXNpYy1pdHMtYWktZ2VuZXJhdGVkLW5vaXNlLw==",
+    "title": "📝: It's not AI generated music, it's AI generated noise",
+    "url": "https://coryd.dev/posts/2024/its-not-ai-generated-music-its-ai-generated-noise/",
+    "content_text": "📝: It's not AI generated music, it's AI generated noise #AI #Music #Tech https://coryd.dev/posts/2024/its-not-ai-generated-music-its-ai-generated-noise/",
+    "date_published": "Tue, 19 Mar 2024 00:06:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112119228809754630"
+    ],
+    "lastTootTimestamp": 1710803662334
   }
 }
