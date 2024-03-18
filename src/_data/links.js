@@ -33,7 +33,7 @@ export default async function () {
       title: link['title'],
       url: link['source_url'],
       tags: [...new Set(Object.keys(link['tags']))],
-      date: `${link['updated_at'] || link['created_at']}`,
+      date: `${link['created_at'] || link['updated_at']}`,
       author: link['author'],
       summary: link['summary'],
       note: link['notes'],
