@@ -3,37 +3,37 @@ import tagAliases from '../data/tag-aliases.js'
 import { makeYearStats, processPostFile } from './utils.js'
 
 export const searchIndex = (collection) => {
-    const searchIndex = []
-    let id = 0
-    const collectionData = collection.getAll()[0]
-    const posts = collectionData.data.collections.posts
-    const links = collectionData.data.links
-    if (posts) {
-      posts.forEach((post) => {
-        const url = post.url.includes('http') ? post.url : `https://coryd.dev${post.url}`
-        searchIndex.push({
-          id,
-          url,
-          title: `📝: ${post.data.title}`,
-          text: post.data.description,
-          tags: post.data.tags.filter((tag) => tag !== 'posts'),
-        })
-        id++;
+  const searchIndex = []
+  let id = 0
+  const collectionData = collection.getAll()[0]
+  const posts = collectionData.data.collections.posts
+  const links = collectionData.data.links
+  if (posts) {
+    posts.forEach((post) => {
+      const url = post.url.includes('http') ? post.url : `https://coryd.dev${post.url}`
+      searchIndex.push({
+        id,
+        url,
+        title: `📝: ${post.data.title}`,
+        text: post.data.description,
+        tags: post.data.tags.filter((tag) => tag !== 'posts'),
       })
-    }
-    if (links) {
-      links.forEach((link) => {
-        searchIndex.push({
-          id,
-          url: link.url,
-          title: `🔗: ${link.title}`,
-          text: link.summary,
-          tags: link.tags,
-        })
-        id++;
+      id++;
+    })
+  }
+  if (links) {
+    links.forEach((link) => {
+      searchIndex.push({
+        id,
+        url: link.url,
+        title: `🔗: ${link.title}`,
+        text: link.summary,
+        tags: link.tags,
       })
-    }
-    return searchIndex
+      id++;
+    })
+  }
+  return searchIndex
 }
 
 export const tagList = (collection) => {

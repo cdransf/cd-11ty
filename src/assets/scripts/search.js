@@ -8,7 +8,7 @@
   const $fallback = document.querySelector('.search__form--fallback')
   const $results = document.querySelector('.search__results')
 
-  // remove no-js fallbacks
+  // remove noscript fallbacks
   $form.removeAttribute('action')
   $form.removeAttribute('method')
   $fallback.remove()
