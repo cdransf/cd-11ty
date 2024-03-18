@@ -11594,10 +11594,21 @@
     "title": "🔗: A Society That Lost Focus",
     "url": "https://ploum.net/2024-03-18-lost-focus.html",
     "content_text": "🔗: A Society That Lost Focus #Tech #SocialMedia #SurveillanceCapitalism https://ploum.net/2024-03-18-lost-focus.html",
-    "date_published": "Mon, 18 Mar 2024 14:56:00 GMT",
+    "date_published": "Mon, 18 Mar 2024 16:05:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112117533481235585"
     ],
     "lastTootTimestamp": 1710777793656
+  },
+  "https://coryd.dev/posts/2024/lightweight-search-in-eleventy/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9saWdodHdlaWdodC1zZWFyY2gtaW4tZWxldmVudHkv",
+    "title": "📝: Lightweight search in Eleventy",
+    "url": "https://coryd.dev/posts/2024/lightweight-search-in-eleventy/",
+    "content_text": "📝: Lightweight search in Eleventy #WebDev #Eleventy #JavaScript https://coryd.dev/posts/2024/lightweight-search-in-eleventy/",
+    "date_published": "Mon, 18 Mar 2024 23:30:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112119128763810570"
+    ],
+    "lastTootTimestamp": 1710802135750
   }
 }
