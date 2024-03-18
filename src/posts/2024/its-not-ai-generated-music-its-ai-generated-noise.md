@@ -5,14 +5,14 @@ description: "I'm going to harp on this again but, yes, yes AI-generated content
 tags: ['AI', 'music', 'tech']
 ---
 [**Wikipedia** (emphasis mine)](https://en.wikipedia.org/wiki/Music)
-> In the most general of terms, music is the arrangement of sound to create some combination of form, harmony, melody, rhythm, or otherwise **expressive** content.
+> In the most general of terms, music is the arrangement of sound to create some combination of form, harmony, melody, rhythm, or otherwise <strong class="highlight-text">expressive</strong> content.
 
 I'm going to harp on this again but, yes, yes AI-generated content is derivative. Music is appealing *because* it is an innately human, creative act. It could be something as ugly as death metal, as soothing as ambient music or as joyful as pop can tend to be.<!-- excerpt -->
 
 An AI application will mimic these characteristics but will fail to capture what it sets out to devalue.
 
 **[Rolling Stone manages to disappoint in their uncritical coverage of a startup in this space:](https://www.rollingstone.com/music/music-features/suno-ai-chatgpt-for-music-1234982307/)**
-> Suno's founders **decline to reveal details of just what data they're shoveling into their own model**, other than the fact that its ability to generate convincing human vocals comes in part because it's learning from recordings of speech, in addition to music.
+> Suno's founders <strong class="highlight-text">decline to reveal details of just what data they're shoveling into their own model</strong>, other than the fact that its ability to generate convincing human vocals comes in part because it's learning from recordings of speech, in addition to music.
 
 I don't want AI created art, there is no value there. Generative AI will increase the volume of available content and data, but we already have a glut of that. The original creators of art and music are already struggling to make a living.
 
