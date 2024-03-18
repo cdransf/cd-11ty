@@ -2,6 +2,40 @@ import { DateTime } from 'luxon'
 import tagAliases from '../data/tag-aliases.js'
 import { makeYearStats, processPostFile } from './utils.js'
 
+export const searchIndex = (collection) => {
+    const searchIndex = []
+    let id = 0
+    const collectionData = collection.getAll()[0]
+    const posts = collectionData.data.collections.posts
+    const links = collectionData.data.links
+    if (posts) {
+      posts.forEach((post) => {
+        const url = post.url.includes('http') ? post.url : `https://coryd.dev${post.url}`
+        searchIndex.push({
+          id,
+          url,
+          title: `📝: ${post.data.title}`,
+          text: post.data.description,
+          tags: post.data.tags.filter((tag) => tag !== 'posts'),
+        })
+        id++;
+      })
+    }
+    if (links) {
+      links.forEach((link) => {
+        searchIndex.push({
+          id,
+          url: link.url,
+          title: `🔗: ${link.title}`,
+          text: link.summary,
+          tags: link.tags,
+        })
+        id++;
+      })
+    }
+    return searchIndex
+}
+
 export const tagList = (collection) => {
   const tagsSet = new Set()
   collection.getAll().forEach((item) => {
@@ -15,45 +49,45 @@ export const tagList = (collection) => {
 
 export const tagMap = (collection) => {
   const tags = {}
-  collection.getAll().forEach((item) => {
-    if (item.data.collections.posts) {
-      item.data.collections.posts.forEach((post) => {
-        const url = post.url.includes('http') ? post.url : `https://coryd.dev${post.url}`
-        const tagString = [...new Set(post.data.tags.map((tag) => tagAliases[tag.toLowerCase()]))]
-          .join(' ')
-          .trim()
-        if (tagString) tags[url] = tagString.replace(/\s+/g,' ')
-      })
-    }
-    if (item.data.links) {
-      item.data.links.forEach((link) => {
-        const tagString = link['tags']
-          .map((tag) => tagAliases[tag.toLowerCase()])
-          .join(' ')
-          .trim()
-        if (tagString) tags[link.url] = tagString.replace(/\s+/g,' ')
-      })
-    }
-  })
+  const collectionData = collection.getAll()[0]
+  const posts = collectionData.data.collections.posts
+  const links = collectionData.data.links
+  if (posts) {
+    posts.forEach((post) => {
+      const url = post.url.includes('http') ? post.url : `https://coryd.dev${post.url}`
+      const tagString = [...new Set(post.data.tags.map((tag) => tagAliases[tag.toLowerCase()]))]
+        .join(' ')
+        .trim()
+      if (tagString) tags[url] = tagString.replace(/\s+/g,' ')
+    })
+  }
+  if (links) {
+    links.forEach((link) => {
+      const tagString = link['tags']
+        .map((tag) => tagAliases[tag.toLowerCase()])
+        .join(' ')
+        .trim()
+      if (tagString) tags[link.url] = tagString.replace(/\s+/g,' ')
+    })
+  }
   return tags
 }
 
-export const tagsSortedByCount = (collectionApi) => {
+export const tagsSortedByCount = (collection) => {
   const tagStats = {};
-  const posts = collectionApi.getFilteredByGlob('src/posts/**/*.*');
-  posts.forEach((post) => {
-    post.data.tags.forEach((tag) => {
+  collection.getFilteredByGlob('src/posts/**/*.*').forEach((item) => {
+    if (!item.data.tags) return;
+    item.data.tags
+      .filter((tag) => !['posts', 'all', 'politics', 'net neutrality'].includes(tag))
+      .forEach((tag) => {
       if (!tagStats[tag]) tagStats[tag] = 1;
       if (tagStats[tag]) tagStats[tag] = tagStats[tag] + 1;
     });
   });
-  const deletedTags = ['posts', 'politics', 'net neutrality'];
-  deletedTags.forEach(tag => delete tagStats[tag]);
-  const tagStatsArr = Object.entries(tagStats);
-  return tagStatsArr.sort((a, b) => b[1] - a[1]).map(([key, value]) => `${key}`);
+  return Object.entries(tagStats).sort((a, b) => b[1] - a[1]).map(([key, value]) => `${key}`);
 }
 
-export const postStats = (collectionApi) => {
+export const postStats = (collection) => {
   const oneDayMilliseconds = 1000 * 60 * 60 * 24
   const statsObject = {
     avgDays: 0,
@@ -87,7 +121,7 @@ export const postStats = (collectionApi) => {
   let highPostCount = 0
   let yearProgress = 0
 
-  const posts = collectionApi.getFilteredByGlob('src/posts/**/*.*').sort((a, b) => {
+  const posts = collection.getFilteredByGlob('src/posts/**/*.*').sort((a, b) => {
     return a.date - b.date
   })
 

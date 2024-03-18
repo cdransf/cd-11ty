@@ -11,7 +11,7 @@ import filters from './config/filters/index.js'
 import { slugifyString } from './config/utils/index.js'
 import { svgToJpeg } from './config/events/index.js'
 import { minifyJsComponents } from './config/events/index.js'
-import { tagList, tagMap, postStats, tagsSortedByCount } from './config/collections/index.js'
+import { searchIndex, tagList, tagMap, postStats, tagsSortedByCount } from './config/collections/index.js'
 import { img } from './config/shortcodes/index.js'
 
 import { execSync } from 'child_process'
@@ -56,7 +56,7 @@ export default async function (eleventyConfig) {
     'node_modules/@daviddarnes/mastodon-post/mastodon-post.js': 'assets/scripts/components/mastodon-post.js'
   })
   eleventyConfig.addPassthroughCopy({
-    'node_modules/@zachleat/pagefind-search/pagefind-search.js': 'assets/scripts/components/pagefind-search.js',
+    'node_modules/minisearch/dist/umd/index.js': 'assets/scripts/components/minisearch.js',
   })
   eleventyConfig.addPassthroughCopy({
     'node_modules/@cdransf/api-text/api-text.js': 'assets/scripts/components/api-text.js',
@@ -82,6 +82,7 @@ export default async function (eleventyConfig) {
   })
 
   // collections
+  eleventyConfig.addCollection('searchIndex', searchIndex)
   eleventyConfig.addCollection('tagList', tagList)
   eleventyConfig.addCollection('tagMap', tagMap)
   eleventyConfig.addCollection('postStats', postStats)
@@ -137,9 +138,6 @@ export default async function (eleventyConfig) {
   // events
   eleventyConfig.on('afterBuild', svgToJpeg)
   eleventyConfig.on('afterBuild', minifyJsComponents)
-  eleventyConfig.on('eleventy.after', () => {
-    execSync(`npx pagefind --site _site --glob "**/*.html"`, { encoding: 'utf-8' })
-  })
 
   return {
     passthroughFileCopy: true,

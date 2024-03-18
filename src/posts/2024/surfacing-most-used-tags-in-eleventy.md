@@ -51,7 +51,7 @@ The partial displays up to `10` tags:
 ```liquid
 {% assign filteredTags = tags | filterTags %}
 {% for tag in filteredTags limit: 10 %}
-  <a class="tag" href="/tags/{{ tag | downcase }}" data-pagefind-filter="tags">{{ tag | formatTag }}</a>
+  <a class="tag" href="/tags/{{ tag | downcase }}">{{ tag | formatTag }}</a>
 {% endfor %}
 ```
 {% endraw %}

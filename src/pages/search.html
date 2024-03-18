@@ -4,19 +4,19 @@ description: "Search through and find the posts on my site."
 layout: default
 permalink: /search.html
 ---
-<script type="module" src="/assets/scripts/components/pagefind-search.js"></script>
 {% capture css %}
 {% render "../assets/styles/components/forms.css" %}
-{% render "../assets/styles/components/pagefind.css" %}
 {% endcapture %}
 <style>{{ css }}</style>
-<pagefind-search _show_images="false" _show_empty_filters="false">
-  <form action="https://duckduckgo.com/" method="get" style="min-height: 3.2em;">
-  <label>
-    <input class="pagefind__placeholder" placeholder="Search" type="search" name="q" autocomplete="off" autofocus>
-  </label>
-  <input type="hidden" placeholder="Search" name="sites" value="coryd.dev">
-  </form>
-</pagefind-search>
+<script src="/assets/scripts/components/minisearch.js"></script>
+{% capture js %}
+{% render "../assets/scripts/search.js" %}
+{% endcapture %}
+<script type="module">{{ js }}</script>
+<form class="search__form" action="https://duckduckgo.com" method="get">
+  <input class="search__form--input" placeholder="Search" type="search" name="q" autocomplete="off" autofocus>
+  <input class="search__form--fallback" type="hidden" placeholder="Search" name="sites" value="coryd.dev">
+</form>
+<ul class="search__results hidden"></ul>
 {% render "partials/tags.liquid", tags:collections.tagsSortedByCount, hasSpace:true %}
 {% render "partials/addon-links.liquid", posts:collections.posts, analytics:analytics, links:links %}

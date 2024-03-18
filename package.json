@@ -1,15 +1,13 @@
 {
   "name": "coryd.dev",
-  "version": "7.11.11",
+  "version": "8.0.0",
   "description": "The source for my personal site. Built using 11ty.",
   "type": "module",
   "scripts": {
     "start": "eleventy --serve",
     "start:search": "run-s build:11ty index:local",
     "start:quick": "eleventy --serve --incremental --ignore-initial",
-    "build": "ELEVENTY_PRODUCTION=true eleventy && npm run build:index",
-    "build:index": "npx -y pagefind --site _site",
-    "index:serve": "npx -y pagefind --site _site --serve",
+    "build": "ELEVENTY_PRODUCTION=true eleventy",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "postbuild": "webmention _site/feeds/posts --limit 1 --send && webmention _site/feeds/links --limit 1 --send"
   },
@@ -25,8 +23,8 @@
     "@cdransf/theme-toggle": "^1.2.3",
     "@daviddarnes/mastodon-post": "^1.1.1",
     "@remy/webmention": "^1.5.0",
-    "@zachleat/pagefind-search": "^1.0.3",
     "@zachleat/webcare-webshare": "^1.0.3",
+    "minisearch": "^6.3.0",
     "terser": "^5.29.1",
     "youtube-video-element": "^1.0.0"
   },

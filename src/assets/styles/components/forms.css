@@ -1,26 +1,23 @@
 ::placeholder {
-  color: var(--text-color) !important;
-  opacity: .5 !important;
+  color: var(--text-color);
+  opacity: .5;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="search"],
 textarea {
-  /* necessary for pagefind overrides */
-  font-family: var(--font-sans) !important;
-  color: var(--text-color) !important;
-  background-color: var(--background-color) !important;
-  border: 1px solid var(--accent-color) !important;
+  font-family: var(--font-sans);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border: 1px solid var(--accent-color);
   padding: var(--sizing-sm);
-  font-size: var(--font-size-base) !important;
-  width: 100% !important;
-  border-radius: var(--rounded-md) !important;
-  /* necessary for pagefind overrides */
-
+  font-size: var(--font-size-base);
+  width: 100%;
+  border-radius: var(--rounded-md);
   outline: none;
   margin-bottom: var(--sizing-base);
-  font-weight: var(--font-weight-base) !important;
+  font-weight: var(--font-weight-base);
   line-height: var(--line-height-base);
   transition-property: border-color;
   transition-timing-function: var(--transition-ease-in-out);
@@ -31,10 +28,10 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-  border: 1px solid var(--accent-color-hover) !important;
+  border: 1px solid var(--accent-color-hover);
 }
 
-button:not(.theme__toggle, .share, .pagefind-ui__search-clear) {
+button:not(.theme__toggle, .share) {
   border-radius: var(--rounded-full);
   padding: var(--sizing-sm) var(--sizing-lg);
   margin: 0 var(--sizing-xs) var(--sizing-md) 0;
@@ -52,11 +49,22 @@ button:not(.theme__toggle, .share, .pagefind-ui__search-clear) {
   transition-property: background-color;
 }
 
-button:not(.theme__toggle, .share, .pagefind-ui__search-clear):hover,
-button:not(.theme__toggle, .share, .pagefind-ui__search-clear):active,
-button:not(.theme__toggle, .share, .pagefind-ui__search-clear):focus {
+button:not(.theme__toggle, .share):hover,
+button:not(.theme__toggle, .share):active,
+button:not(.theme__toggle, .share):focus {
   color: var(--color-lightest);
-  background-color: var(--accent-color-hover) !important;
+  background-color: var(--accent-color-hover);
   transition-timing-function: var(--transition-ease-in-out);
   transition-duration: var(--transition-duration-default);
+}
+
+.search__results {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.search__results li {
+  margin-top: var(--sizing-sm);
+  margin-bottom: var(--sizing-sm);
 }
