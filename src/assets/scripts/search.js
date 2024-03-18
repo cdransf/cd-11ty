@@ -32,7 +32,7 @@
     renderSearchResults(results)
   })
 
-  const getSearchResults = (query) => miniSearch.search(query, {}).map(({ id }) => resultsById[id])
+  const getSearchResults = (query) => miniSearch.search(query, { prefix: true, fuzzy: 0.2, boost: { title: 2 } }).map(({ id }) => resultsById[id])
   const renderSearchResults = (results) => {
     $results.innerHTML = results.map(({ title, url }) => {
       return `<li class="search__results--result"><a href="${url}">${title}</a></li>`
