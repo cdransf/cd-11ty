@@ -1,9 +1,8 @@
 import EleventyFetch from '@11ty/eleventy-fetch';
 import mbidPatches from './json/mbid-patches.js';
+import { artistCapitalization } from './helpers/music.js'
 
-const mbidMap = (artist) => {
-  return mbidPatches[artist.toLowerCase()] || '';
-};
+const mbidMap = (artist) => mbidPatches[artist.toLowerCase()] || ''
 
 const removeAccents = (inputStr) => {
   const normalizedStr = inputStr.normalize('NFD');
@@ -14,13 +13,13 @@ export default async function () {
   const MUSIC_KEY = process.env.API_KEY_LASTFM;
   const url = `https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=coryd_&api_key=${MUSIC_KEY}&limit=8&format=json&period=7day`;
   const formatArtistData = (artists) => artists.map((artist) => {
-    let mbid = artist['mbid'];
+    let mbid = artist['mbid']
 
     // mbid mismatches
     if (mbidMap(artist['name']) !== '') mbid = mbidMap(artist['name']);
 
     return {
-      title: artist['name'],
+      title: artistCapitalization(artist['name']),
       plays: artist['playcount'],
       rank: artist['@attr']['rank'],
       image: `https://cdn.coryd.dev/artists/${encodeURIComponent(removeAccents(artist['name']).replace(/\s+/g, '-').toLowerCase())}.jpg`,

@@ -1,4 +1,5 @@
 import EleventyFetch from '@11ty/eleventy-fetch'
+import { artistCapitalization } from './helpers/music.js'
 
 const removeAccents = (inputStr) => {
   const normalizedStr = inputStr.normalize('NFD');
@@ -11,7 +12,7 @@ export default async function () {
   const formatAlbumData = (albums) => albums.map((album) => {
     return {
       title: album['name'],
-      artist: album['artist']['name'],
+      artist: artistCapitalization(album['artist']['name']),
       plays: album['playcount'],
       rank: album['@attr']['rank'],
       image: `https://cdn.coryd.dev/albums/${encodeURIComponent(removeAccents(album['artist']['name']).replace(/\s+/g, '-').toLowerCase())}-${encodeURIComponent(removeAccents(album['name'].replace(/[:\/\\,'']+/g
