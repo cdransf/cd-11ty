@@ -1,5 +1,5 @@
-{%- capture pageUrl %}/{{ link | downcase }}/{% endcapture -%}
-{% if pageUrl contains page.fileSlug and page.fileSlug %}
+{%- capture categoryUrl %}/{{ link | downcase }}/{% endcapture -%}
+{% if categoryUrl | isLinkActive: page.url %}
   <span class="active {{ class }}" aria-current="page">
     {% if icon %}
       {% tablericon icon link %}

@@ -37,6 +37,12 @@ export default {
   },
   replaceQuotes: (string) => string.replace(/"/g, "'"),
 
+  // navigation
+  isLinkActive: (category, page) => {
+    const normalizedPage = page.includes('.html') ? page.replace('.html', '/') : page
+    return !!normalizedPage && normalizedPage.includes(category) && !/\d+/.test(normalizedPage);
+  },
+
   // analytics
   getPopularPosts: (posts, analytics) => {
     return posts
