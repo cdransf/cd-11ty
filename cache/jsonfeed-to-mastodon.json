@@ -11669,6 +11669,17 @@
     "url": "https://www.schneier.com/blog/archives/2024/03/ai-and-the-evolution-of-social-media.html",
     "content_text": "🔗: AI and the Evolution of Social Media #AI #Tech #SocialMedia https://www.schneier.com/blog/archives/2024/03/ai-and-the-evolution-of-social-media.html",
     "date_published": "Tue, 19 Mar 2024 11:07:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112124139560493104"
+    ],
+    "lastTootTimestamp": 1710878594445
+  },
+  "https://gittings.studio/blog/10-reasons-why-static-site-generators-are-perfect-for-modern-web-development/": {
+    "id": "aHR0cHM6Ly9naXR0aW5ncy5zdHVkaW8vYmxvZy8xMC1yZWFzb25zLXdoeS1zdGF0aWMtc2l0ZS1nZW5lcmF0b3JzLWFyZS1wZXJmZWN0LWZvci1tb2Rlcm4td2ViLWRldmVsb3BtZW50Lw==",
+    "title": "🔗: 10 Reasons Why Static Site Generators Are Perfect for Modern Web Development",
+    "url": "https://gittings.studio/blog/10-reasons-why-static-site-generators-are-perfect-for-modern-web-development/",
+    "content_text": "🔗: 10 Reasons Why Static Site Generators Are Perfect for Modern Web Development #JavaScript #WebDev https://gittings.studio/blog/10-reasons-why-static-site-generators-are-perfect-for-modern-web-development/",
+    "date_published": "Tue, 19 Mar 2024 17:47:00 GMT",
     "toots": []
   }
 }
