@@ -8,6 +8,7 @@ export default {
   'carnal tomb': 'e24534dc-d29e-4e0b-84fa-26d487b0790a',
   'carpe noctem': 'aa349181-1cb9-4340-bb3f-82eefba3e697',
   'chapel of disease': '27a3ffb1-b3c6-422f-88a0-463a497f2d6f',
+  civerous: 'f7579430-af4b-42e6-86c7-4c24a8411b58',
   contaminated: '11f7a795-25b1-4f25-8b23-734cba19f8a5',
   cruciamentum: '9a783663-db0c-4237-a3a9-afe72d055ddc',
   'dead bob': 'd39ffe1a-ef5d-4f01-8a14-8f7195b4ce86',
