@@ -133,14 +133,14 @@ export default async () => {
       return {}
     });
   const track = trackRes["recenttracks"]["track"][0];
-  const artist = artistCapitalization(track["artist"]["#text"]);
   let mbid = track["artist"]["mbid"];
   let genre = '';
-  const mbidMap = (artist) => mbidRes[artist.toLowerCase()] || "";
   const artistCapitalization = (artist) => artistCapitalzationRes[artist?.toLowerCase()] || artist
+  const artist = artistCapitalization(track["artist"]["#text"]);
+  const mbidMap = () => mbidRes[track["artist"]["#text"].toLowerCase()] || "";
 
   // mbid mismatches
-  if (mbidMap(artist) !== "") mbid = mbidMap(artist);
+  if (mbidMap() !== "") mbid = mbidMap();
 
   const artistUrl = mbid
     ? `https://musicbrainz.org/artist/${mbid}`
