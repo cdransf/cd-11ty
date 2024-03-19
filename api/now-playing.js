@@ -123,11 +123,21 @@ export default async () => {
       console.log(err);
       return {}
     });
+  const artistCapitalzationRes = await fetch("https://coryd.dev/api/artist-capitalization", {
+    type: "json",
+  }).then((data) => {
+    if (data.ok) return data.json()
+    throw new Error('Something went wrong with the artist capitalization endpoint.');
+  }).catch(err => {
+      console.log(err);
+      return {}
+    });
   const track = trackRes["recenttracks"]["track"][0];
-  const artist = track["artist"]["#text"];
+  const artist = artistCapitalization(track["artist"]["#text"]);
   let mbid = track["artist"]["mbid"];
-  let genre = "";
+  let genre = '';
   const mbidMap = (artist) => mbidRes[artist.toLowerCase()] || "";
+  const artistCapitalization = (artist) => artistCapitalzationRes[artist?.toLowerCase()] || artist
 
   // mbid mismatches
   if (mbidMap(artist) !== "") mbid = mbidMap(artist);
@@ -162,9 +172,9 @@ export default async () => {
   return new Response(JSON.stringify({
       content: `${emojiMap(
         genre,
-        track["artist"]["#text"]
+        artist
       )} <a href="${trackUrl}">${track["name"]}</a> by <a href="${artistUrl}">${
-        track["artist"]["#text"]
+        artist
       }</a>`,
     }),
     { headers }
