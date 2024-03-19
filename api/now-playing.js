@@ -144,16 +144,10 @@ export default async () => {
 
   const artistUrl = mbid
     ? `https://musicbrainz.org/artist/${mbid}`
-    : `https://musicbrainz.org/search?query=${track["artist"]["#text"].replace(
-        /\s+/g,
-        "+"
-      )}&type=artist`;
+    : `https://last.fm/music/${track["artist"]["#text"].toLowerCase().replace(/\s+/g, "+")}`;
   const trackUrl = track["mbid"]
     ? `https://musicbrainz.org/track/${track["mbid"]}`
-    : `https://musicbrainz.org/search?query=${track["artist"]["#text"].replace(
-      /\s+/g,
-      '+'
-    )}&type=artist`;
+    : track['url'];
 
   if (mbid && mbid !== "") {
     const genreUrl = `https://musicbrainz.org/ws/2/artist/${mbid}?inc=aliases+genres&fmt=json`;
