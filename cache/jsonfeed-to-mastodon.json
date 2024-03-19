@@ -11643,5 +11643,32 @@
       "https://social.lol/users/cory/statuses/112119913337870275"
     ],
     "lastTootTimestamp": 1710814107371
+  },
+  "https://adactio.com/journal/20996": {
+    "id": "aHR0cHM6Ly9hZGFjdGlvLmNvbS9qb3VybmFsLzIwOTk2",
+    "title": "🔗: What the world needs",
+    "url": "https://adactio.com/journal/20996",
+    "content_text": "🔗: What the world needs #Tech #Blogging https://adactio.com/journal/20996",
+    "date_published": "Tue, 19 Mar 2024 15:42:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112123667777690721"
+    ],
+    "lastTootTimestamp": 1710871395577
+  },
+  "https://gomakethings.com/the-problem-with-ai/": {
+    "id": "aHR0cHM6Ly9nb21ha2V0aGluZ3MuY29tL3RoZS1wcm9ibGVtLXdpdGgtYWkv",
+    "title": "🔗: The problem with AI",
+    "url": "https://gomakethings.com/the-problem-with-ai/",
+    "content_text": "🔗: The problem with AI #AI #Tech #WebDev https://gomakethings.com/the-problem-with-ai/",
+    "date_published": "Tue, 19 Mar 2024 15:33:00 GMT",
+    "toots": []
+  },
+  "https://www.schneier.com/blog/archives/2024/03/ai-and-the-evolution-of-social-media.html": {
+    "id": "aHR0cHM6Ly93d3cuc2NobmVpZXIuY29tL2Jsb2cvYXJjaGl2ZXMvMjAyNC8wMy9haS1hbmQtdGhlLWV2b2x1dGlvbi1vZi1zb2NpYWwtbWVkaWEuaHRtbA==",
+    "title": "🔗: AI and the Evolution of Social Media",
+    "url": "https://www.schneier.com/blog/archives/2024/03/ai-and-the-evolution-of-social-media.html",
+    "content_text": "🔗: AI and the Evolution of Social Media #AI #Tech #SocialMedia https://www.schneier.com/blog/archives/2024/03/ai-and-the-evolution-of-social-media.html",
+    "date_published": "Tue, 19 Mar 2024 11:07:00 GMT",
+    "toots": []
   }
 }
