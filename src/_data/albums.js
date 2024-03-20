@@ -1,10 +1,5 @@
 import EleventyFetch from '@11ty/eleventy-fetch'
-import { artistCapitalization } from './helpers/music.js'
-
-const removeAccents = (inputStr) => {
-  const normalizedStr = inputStr.normalize('NFD');
-  return normalizedStr.replace(/[\u0300-\u036f]/g, '');
-};
+import { artistCapitalization, sanitizeMediaString } from './helpers/music.js'
 
 export default async function () {
   const MUSIC_KEY = process.env.API_KEY_LASTFM
@@ -15,7 +10,7 @@ export default async function () {
       artist: artistCapitalization(album['artist']['name']),
       plays: album['playcount'],
       rank: album['@attr']['rank'],
-      image: `https://cdn.coryd.dev/albums/${encodeURIComponent(removeAccents(album['artist']['name']).replace(/\s+/g, '-').toLowerCase())}-${encodeURIComponent(removeAccents(album['name'].replace(/[:\/\\,'']+/g
+      image: `https://cdn.coryd.dev/albums/${encodeURIComponent(sanitizeMediaString(album['artist']['name']).replace(/\s+/g, '-').toLowerCase())}-${encodeURIComponent(sanitizeMediaString(album['name'].replace(/[:\/\\,'']+/g
       , '').replace(/\s+/g, '-').toLowerCase()))}.jpg`,
       url: album['mbid']
         ? `https://musicbrainz.org/album/${album['mbid']}`

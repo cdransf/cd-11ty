@@ -1,13 +1,5 @@
 import EleventyFetch from '@11ty/eleventy-fetch';
-import mbidPatches from './json/mbid-patches.js';
-import { artistCapitalization } from './helpers/music.js'
-
-const mbidMap = (artist) => mbidPatches[artist.toLowerCase()] || ''
-
-const removeAccents = (inputStr) => {
-  const normalizedStr = inputStr.normalize('NFD');
-  return normalizedStr.replace(/[\u0300-\u036f]/g, '');
-};
+import { artistCapitalization, sanitizeMediaString, mbidMap } from './helpers/music.js'
 
 export default async function () {
   const MUSIC_KEY = process.env.API_KEY_LASTFM;
@@ -22,7 +14,7 @@ export default async function () {
       title: artistCapitalization(artist['name']),
       plays: artist['playcount'],
       rank: artist['@attr']['rank'],
-      image: `https://cdn.coryd.dev/artists/${encodeURIComponent(removeAccents(artist['name']).replace(/\s+/g, '-').toLowerCase())}.jpg`,
+      image: `https://cdn.coryd.dev/artists/${encodeURIComponent(sanitizeMediaString(artist['name']).replace(/\s+/g, '-').toLowerCase())}.jpg`,
       url: mbid
         ? `https://musicbrainz.org/artist/${mbid}`
         : `https://musicbrainz.org/search?query=${artist['name'].replace(
