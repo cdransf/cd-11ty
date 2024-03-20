@@ -74,7 +74,7 @@ You can find detailed information about myriad Webmention sending and receiving 
 **Pages and ideas:**
 
 So you have tools, blogging options and syndication in place — what else can you do?
-- **Build a [now page](https://nownownow.com/about):** [I've automated](https://coryd.dev/posts/2023/building-my-now-page-using-eleventy/) [mine](https://coryd.dev/now), but you can do as much or as little as you'd like with yours.
+- Build a [now page](https://nownownow.com/about): [I've automated](https://coryd.dev/posts/2023/building-my-now-page-using-eleventy/) [mine](https://coryd.dev/now), but you can do as much or as little as you'd like with yours.
 - Build a uses page
 - Build a referrals page
 - Build a [blogroll](https://indieweb.org/blogroll) to help share your favorite blogs and discover others.
