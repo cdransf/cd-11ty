@@ -11687,5 +11687,16 @@
       "https://social.lol/users/cory/statuses/112125111525831270"
     ],
     "lastTootTimestamp": 1710893425493
+  },
+  "https://coryd.dev/posts/2024/an-indie-web-primer/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9hbi1pbmRpZS13ZWItcHJpbWVyLw==",
+    "title": "📝: An indie web primer",
+    "url": "https://coryd.dev/posts/2024/an-indie-web-primer/",
+    "content_text": "📝: An indie web primer #Tech #WebDev #IndieWeb https://coryd.dev/posts/2024/an-indie-web-primer/",
+    "date_published": "Wed, 20 Mar 2024 20:23:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112129713139546240"
+    ],
+    "lastTootTimestamp": 1710963640486
   }
 }
