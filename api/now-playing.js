@@ -123,7 +123,7 @@ export default async () => {
       console.log(err);
       return {}
     });
-  const artistCapitalzationRes = await fetch("https://coryd.dev/api/artist-capitalization", {
+  const artistCapitalizationRes = await fetch("https://coryd.dev/api/artist-capitalization", {
     type: "json",
   }).then((data) => {
     if (data.ok) return data.json()
@@ -135,7 +135,7 @@ export default async () => {
   const track = trackRes["recenttracks"]["track"][0];
   let mbid = track["artist"]["mbid"];
   let genre = '';
-  const artistCapitalization = (artist) => artistCapitalzationRes[artist?.toLowerCase()] || artist
+  const artistCapitalization = (artist) => artistCapitalizationRes[artist?.toLowerCase()] || artist
   const artist = artistCapitalization(track["artist"]["#text"]);
   const mbidMap = () => mbidRes[track["artist"]["#text"].toLowerCase()] || "";
 
