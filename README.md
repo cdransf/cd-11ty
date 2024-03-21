@@ -13,9 +13,9 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 ## 📝 Recent posts
 
 <!-- BLOGPOSTS:START -->
+- [An indie web primer](https://coryd.dev/posts/2024/an-indie-web-primer/)
 - [It's not AI generated music, it's AI generated noise](https://coryd.dev/posts/2024/its-not-ai-generated-music-its-ai-generated-noise/)
 - [Lightweight search in Eleventy](https://coryd.dev/posts/2024/lightweight-search-in-eleventy/)
 - [Look for longevity](https://coryd.dev/posts/2024/look-for-longevity/)
 - [Building a reactive website](https://coryd.dev/posts/2024/building-a-reactive-website/)
-- [The internet isn't dying, it's changing](https://coryd.dev/posts/2024/the-internet-isnt-dying-its-changing/)
 <!-- BLOGPOSTS:END -->
