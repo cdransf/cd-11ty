@@ -6,6 +6,7 @@ const emojiMap = (genre, artist) => {
   if (normalizedArtist === "autopsy") return "🧟";
   if (normalizedArtist === "bedsore") return "🛏️";
   if (normalizedArtist === "black flag") return "🏴";
+  if (normalizedArtist === "blink-182") return "😵";
   if (normalizedArtist === "blood incantation") return "👽";
   if (normalizedArtist === "bolt thrower") return "⚔️"
   if (normalizedArtist === "bruce springsteen") return "🇺🇸";
