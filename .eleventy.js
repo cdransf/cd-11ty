@@ -52,7 +52,6 @@ export default async function (eleventyConfig) {
   // passthrough
   eleventyConfig.addPassthroughCopy('src/assets')
   eleventyConfig.addPassthroughCopy('_redirects')
-  eleventyConfig.addPassthroughCopy('admin')
   eleventyConfig.addPassthroughCopy({
     'node_modules/@daviddarnes/mastodon-post/mastodon-post.js': 'assets/scripts/components/mastodon-post.js'
   })
