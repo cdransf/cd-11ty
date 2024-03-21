@@ -15,7 +15,6 @@ export const searchIndex = (collection) => {
         id,
         url,
         title: `📝: ${post.data.title}`,
-        text: post.data.description,
         tags: post.data.tags.filter((tag) => tag !== 'posts'),
       })
       id++;
@@ -27,7 +26,6 @@ export const searchIndex = (collection) => {
         id,
         url: link.url,
         title: `🔗: ${link.title}`,
-        text: link.summary,
         tags: link.tags,
       })
       id++;

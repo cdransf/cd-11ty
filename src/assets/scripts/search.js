@@ -16,7 +16,7 @@
   let resultsById = {}
 
   // fetch index
-  const results = fetch('/api/search').then(response => response.json())
+  fetch('/api/search').then(response => response.json())
   .then((results) => {
     resultsById = results.reduce((byId, result) => {
       byId[result.id] = result
@@ -25,7 +25,7 @@
     return miniSearch.addAll(results)
   })
 
-  $input.addEventListener('input', (event) => {
+  $input.addEventListener('input', () => {
     const query = $input.value
     const results = (query.length > 1) ? getSearchResults(query) : []
     if (query === '') renderSearchResults([])
