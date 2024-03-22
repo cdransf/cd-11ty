@@ -29,6 +29,7 @@
     const query = $input.value
     const results = (query.length > 1) ? getSearchResults(query) : []
     if (query === '') renderSearchResults([])
+    if (results && plausible) plausible(`Search query: ${query}`)
     renderSearchResults(results)
   })
 
