@@ -14,7 +14,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Launcher: [Alfred](https://alfredapp.com)
 - Cloud storage: iCloud
 - Photo library: iCloud
-- Web browser: [Orion](https://kagi.com/orion/)
+- Web browser: Safari
 - Calendar: [HEY](https://hey.com)
 - Weather: Weather.app
 - Podcasts: N/A
