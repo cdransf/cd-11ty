@@ -30,6 +30,7 @@
 /tags/.env /tags/env 301!
 
 # 404s
+/api/artist-capitalization/* /api/artist-capitalization 301!
 /sitemap.txt /sitemap.xml 301!
 /assets/img/social-preview/adding-a-light/dark-theme-toggle-preview.jpeg /assets/img/social-preview/adding-a-light-dark-theme-toggle-preview.jpeg 301!
 /assets/img/social-card.jpg /assets/img/ogi/default.jpg 301!
