@@ -115,6 +115,7 @@ export default [
   'Demon',
   'Deusu',
   'Devil',
+  'Diffbot',
   'Digincore',
   'DigitalPebble',
   'Dirbuster',
