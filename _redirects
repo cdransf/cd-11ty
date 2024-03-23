@@ -42,10 +42,6 @@
 /robot.txt /robots.txt 301!
 /-want-anything-your-ai-generates/ /posts/2024/i-dont-want-anything-your-ai-generates/ 301!
 
-# 400s
-/wp-admin /400/ 400
-/index.php /400/ 400
-
 # assets
 /static/images/avatar.webp /assets/img/avatar.webp 301!
 /assets/img/favicon/apple-touch-icon.png /assets/icons/apple-touch-icon.png 301!
