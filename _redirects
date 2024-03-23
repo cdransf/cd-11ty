@@ -43,14 +43,8 @@
 /-want-anything-your-ai-generates/ /posts/2024/i-dont-want-anything-your-ai-generates/ 301!
 
 # 400s
-/wp-* /400/ 400
-/blog/wp-* /400/ 400
-/cms/wp-* /400/ 400
-/site/wp-* /400/ 400
-/wordpress/wp-* /400/ 400
-/wp/wp-* /400/ 400
-/wp2/wp-* /400/ 400
-/index.php* /400/ 400
+/wp-admin /400/ 400
+/index.php /400/ 400
 
 # assets
 /static/images/avatar.webp /assets/img/avatar.webp 301!
