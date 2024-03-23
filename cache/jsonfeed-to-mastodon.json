@@ -11753,5 +11753,24 @@
       "https://social.lol/users/cory/statuses/112138767361348173"
     ],
     "lastTootTimestamp": 1711101796983
+  },
+  "https://darthmall.net/weblog/2024/indieweb-is-for-devs/": {
+    "id": "aHR0cHM6Ly9kYXJ0aG1hbGwubmV0L3dlYmxvZy8yMDI0L2luZGlld2ViLWlzLWZvci1kZXZzLw==",
+    "title": "🔗: The IndieWeb is for Developers",
+    "url": "https://darthmall.net/weblog/2024/indieweb-is-for-devs/",
+    "content_text": "🔗: The IndieWeb is for Developers #Tech #IndieWeb #WebDev https://darthmall.net/weblog/2024/indieweb-is-for-devs/",
+    "date_published": "Fri, 22 Mar 2024 04:11:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112143016370697009"
+    ],
+    "lastTootTimestamp": 1711166631700
+  },
+  "https://joanwestenberg.com/blog/the-creator-economy-trap-why-building-on-someone-elses-platform-is-a-dead-end": {
+    "id": "aHR0cHM6Ly9qb2Fud2VzdGVuYmVyZy5jb20vYmxvZy90aGUtY3JlYXRvci1lY29ub215LXRyYXAtd2h5LWJ1aWxkaW5nLW9uLXNvbWVvbmUtZWxzZXMtcGxhdGZvcm0taXMtYS1kZWFkLWVuZA==",
+    "title": "🔗: The creator economy trap: why building on someone else's platform is a dead end",
+    "url": "https://joanwestenberg.com/blog/the-creator-economy-trap-why-building-on-someone-elses-platform-is-a-dead-end",
+    "content_text": "🔗: The creator economy trap: why building on someone else's platform is a dead end #Tech https://joanwestenberg.com/blog/the-creator-economy-trap-why-building-on-someone-elses-platform-is-a-dead-end",
+    "date_published": "Thu, 21 Mar 2024 02:01:00 GMT",
+    "toots": []
   }
 }
