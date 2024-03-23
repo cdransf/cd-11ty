@@ -1,6 +1,7 @@
 const emojiMap = (genre, artist) => {
   const DEFAULT = "🎧";
   const normalizedArtist = artist?.toLowerCase();
+  if (normalizedArtist === "afi") return "⛵️🌅";
   if (normalizedArtist === "agalloch") return "🏔️";
   if (normalizedArtist === "augury") return "☄️";
   if (normalizedArtist === "autopsy") return "🧟";
