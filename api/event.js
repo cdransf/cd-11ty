@@ -1,5 +1,5 @@
 import crypto from 'node:crypto'
-import { getStore } from '@netlify/blobs';
+import { getStore, listStores } from '@netlify/blobs';
 
 export default async (request, context) => {
   const ns = new URL(request['url']).searchParams.get('ns')
