@@ -19,8 +19,8 @@ export default async (request, context) => {
         "Authorization": `Bearer ${FATHOM_KEY}`
       },
     })
-      .then(() => {})
-      .catch(() => {})
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err))
   }
 
   if (ig) return;
@@ -31,10 +31,10 @@ export default async (request, context) => {
     if (!userId) await ids.set(id, id)
     const idVal = await ids.get(id)
     url = `https://cdn.usefathom.com/?h=${encodeURIComponent(page)}&sid=CWSVCDJC&cid=${idVal}`
-    fathomEvent(`no-script-visit-id: ${idVal}`)
+    await fathomEvent(`no-script-visit-id: ${idVal}`)
   } else {
     url = `https://cdn.usefathom.com/?h=${encodeURIComponent(page)}&sid=CWSVCDJC&cid=${num}`
-    fathomEvent(`blocked-visit-id: ${num}`)
+    await fathomEvent(`blocked-visit-id: ${num}`)
   }
 
   fetch(url, { headers })
