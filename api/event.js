@@ -2,14 +2,13 @@ import crypto from 'node:crypto'
 import { getStore } from '@netlify/blobs';
 
 export default async (request, context) => {
-  const FATHOM_KEY = Netlify.env.get("API_KEY_FATHOM_EVENTING")
-  const FATHOM_EVENT_URL = 'https://api.usefathom.com/v1/sites/CWSVCDJC/events/'
   const ns = new URL(request['url']).searchParams.get('ns')
   const page = new URL(request['url']).searchParams.get('page')
   const num = new URL(request['url']).searchParams.get('num')
   const lang = decodeURIComponent(new URL(request['url']).searchParams.get('lang'))
   const nav = decodeURIComponent(new URL(request['url']).searchParams.get('nav'))
   const ig = new URL(request['url']).searchParams.get('ig')
+  const setUrl = (id, event) => `https://cdn.usefathom.com/?h=${encodeURIComponent(page)}&sid=CWSVCDJC&cid=${id}&name=${encodeURIComponent(event)}`
   const headers = {}
   if (lang) headers['Accept-Language'] = lang;
   if (nav) headers['User-Agent'] = nav;
@@ -22,11 +21,9 @@ export default async (request, context) => {
     const userId = await ids.get(id)
     if (!userId) await ids.set(id, id)
     const idVal = await ids.get(id)
-    url = `https://cdn.usefathom.com/?h=${encodeURIComponent(page)}&sid=CWSVCDJC&cid=${idVal}`
-    fetch(`${FATHOM_EVENT_URL}no-script-visit-id-${idVal}`, { headers: { "Authorization": `Bearer ${FATHOM_KEY}` }})
+    url = setUrl(idVal, `[noscript visit] ID: ${idVal}`)
   } else {
-    url = `https://cdn.usefathom.com/?h=${encodeURIComponent(page)}&sid=CWSVCDJC&cid=${num}`
-    fetch(`${FATHOM_EVENT_URL}blocked-visit-id-${num}`, { headers: { "Authorization": `Bearer ${FATHOM_KEY}` }})
+    url = setUrl(num, `[Blocked visit] ID: ${num}`)
   }
 
   fetch(url, { headers })

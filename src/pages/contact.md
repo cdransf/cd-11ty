@@ -20,7 +20,7 @@ description: 'How to contact me.'
       <li>File an issue on the appropriate repo over at <a href="https://github.com/cdransf">GitHub</a></li>
     </ul>
   </div>
-  <form class="column" method="POST" action="/contact/success" name="contact" netlify netlify-honeypot="bot-field">
+  <form onsubmit="fathom.trackEvent('Contact form submitted');" class="column" method="POST" action="/contact/success" name="contact" netlify netlify-honeypot="bot-field">
     <label class="hidden">
       Don't fill this out if you're human: <input name="bot-field" />
     </label>
