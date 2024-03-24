@@ -34,13 +34,23 @@
 /assets/img/social-preview/adding-a-light/dark-theme-toggle-preview.jpeg /assets/img/social-preview/adding-a-light-dark-theme-toggle-preview.jpeg 301!
 /assets/img/social-card.jpg /assets/img/ogi/default.jpg 301!
 /posts / 301!
+/blog / 301!
 /posts/2024 / 301!
 /blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301!
 /assets/img/social-preview/your-site-your-home-your-web- /assets/img/social-preview/your-site-your-home-your-web-preview.jpeg 301!
 /assets/img/social-preview/go-ahead-and-block-ai-web- /assets/img/social-preview/go-ahead-and-block-ai-web-crawlers-preview.jpeg 301!
 /tags/chatgpt/ /tags/ai/ 301!
+/tags/socialmedia /tags/social%20media/ 301!
 /robot.txt /robots.txt 301!
 /-want-anything-your-ai-generates/ /posts/2024/i-dont-want-anything-your-ai-generates/ 301!
+/static/images/avatar.png /assets/img/avatar.png 301!
+/assets/img/logo.webp /assets/img/avatar.webp 301!
+/apple-touch-icon-precomposed.png /assets/icons/apple-touch-icon.png 301!
+/apple-touch-icon /assets/icons/apple-touch-icon.png 301!
+/static/favicons/apple-touch-icon.png /assets/icons/apple-touch-icon.png 301!
+/favicon.ico /assets/icons/favicon.ico 301!
+/assets/img/cache/avatar-800w.webp /assets/img/cache/avatar-880w.webp 301!
+/assets/img/ogi/default.jpg /assets/img/avatar.webp 301!
 
 # 400s
 /wp-* /400/ 400
@@ -51,6 +61,13 @@
 /wp/wp-* /400/ 400
 /wp2/wp-* /400/ 400
 /index.php* /400/ 400
+/admin.php* /400/ 400
+/api/artist-capitalization/* /400/ 400
+/fetch/* /400/ 400
+/.env /400/ 400
+//cms/* /400/ 400
+//wp/* /400/ 400
+//test/ /400/ 400
 
 # assets
 /static/images/avatar.webp /assets/img/avatar.webp 301!
