@@ -23,7 +23,7 @@ export default async (request, context) => {
     const idVal = await ids.get(id)
     url = setUrl(idVal, `[noscript visit] ID: ${idVal}`)
   } else {
-    url = setUrl(num, `[Blocked visit] ID: ${num}`)
+    url = setUrl(num, `[Blocked visit] ID: ${num || 'unknown'}`)
   }
 
   fetch(url, { headers })
