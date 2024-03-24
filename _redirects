@@ -56,6 +56,7 @@
 //cms/* /400/ 400
 //wp/* /400/ 400
 //test/ /400/ 400
+/api/v* /400/ 400
 
 # assets
 /favicon.ico /assets/icons/favicon.ico 200!
