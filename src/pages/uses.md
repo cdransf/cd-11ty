@@ -63,7 +63,7 @@ Software and services that I use for work and my own enjoyment.
 - [NextDNS](https://nextdns.io/?from=m56mt3z6): a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.
 - [DNSimple](https://dnsimple.com/r/3a7cbb9e15df8f): a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
 - [Bunny.net](https://bunny.net?ref=revw3mehej): a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
-- [Netlify](https://netlify.com):I use their hosting, forms, webhooks and analytics. It's a reliable and feature-rich platform.
+- [Netlify](https://netlify.com): I use their hosting, forms, webhooks and analytics. It's a reliable and feature-rich platform.
 - [Feedpress](https://feedpress.com/?affid=34370): they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
 - [Kagi](https://kagi.com): the only search engine at this point (or so it seems) that's interested in surfacing quality results.
 - [Readwise Reader](https://readwise.io/read): an impressive RSS reader that handles all the functionality you'd expect from a read it later app beautifully. It's as powerful as it is flexible.
