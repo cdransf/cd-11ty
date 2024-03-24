@@ -8,6 +8,7 @@ export default async (request, context) => {
   const lang = decodeURIComponent(new URL(request['url']).searchParams.get('lang'))
   const nav = decodeURIComponent(new URL(request['url']).searchParams.get('nav'))
   const ig = new URL(request['url']).searchParams.get('ig')
+  const ids = getStore('ids')
   const headers = {}
   if (lang) headers['Accept-Language'] = lang;
   if (nav) headers['User-Agent'] = nav;
@@ -20,7 +21,6 @@ export default async (request, context) => {
     console.log(stores)
     console.log('### STORES')
     const id = crypto.createHash('md5').update(`${context['ip']}${context['geo']['city']}`).digest('hex');
-    const ids = getStore('ids')
     if (!ids.get(id)) await ids.set(id, id)
     const idVal = await ids.get(id)
     url = `https://cdn.usefathom.com/?h=${encodeURIComponent(page)}&sid=CWSVCDJC&cid=${idVal}`
