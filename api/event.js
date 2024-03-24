@@ -15,7 +15,6 @@ export default async (request, context) => {
   let url;
 
   if (i) return;
-
   if (ns) {
     const ids = getStore('ids')
     if (!ids.get(id)) ids.set(id, '')
