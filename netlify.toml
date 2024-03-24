@@ -60,6 +60,26 @@ for = "/contribute.json"
   Content-Type = "application/json"
 
 [[headers]]
+for = "/api/now-playing"
+  [headers.values]
+  Content-Type = "application/json"
+
+[[headers]]
+for = "/api/mbids"
+  [headers.values]
+  Content-Type = "application/json"
+
+[[headers]]
+for = "/api/artist-capitalization"
+  [headers.values]
+  Content-Type = "application/json"
+
+[[headers]]
+for = "/api/search"
+  [headers.values]
+  Content-Type = "application/json"
+
+[[headers]]
 for = "/blogroll.opml"
   [headers.values]
   Content-Disposition = "attachment; filename=cory-dransfeldt-blogroll.opml"
