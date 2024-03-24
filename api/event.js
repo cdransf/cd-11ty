@@ -17,8 +17,8 @@ export default async (request, context) => {
   if (ns) {
     const id = crypto.createHash('md5').update(`${context['ip']}${context['geo']['city']}`).digest('hex');
     const ids = getStore('ids')
-    if (!ids.get(id)) ids.set(id, id)
-    const idVal = ids.get(id)
+    if (!ids.get(id)) await ids.set(id, id)
+    const idVal = await ids.get(id)
     url = `https://cdn.usefathom.com/?h=${encodeURIComponent(page)}&sid=CWSVCDJC&cid=${idVal}`
   } else {
     url = `https://cdn.usefathom.com/?h=${encodeURIComponent(page)}&sid=CWSVCDJC&cid=${num}`
