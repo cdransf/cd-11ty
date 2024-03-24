@@ -60,11 +60,11 @@ Software and services that I use for work and my own enjoyment.
 <h3>Services</h3>
 
 - [HEY](https://hey.com): it's the email service that works best for me and I quite enjoy their calendar.
-- <a class="plausible-event-name=NextDNS+referral" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>: a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.
-- <a class="plausible-event-name=DNSimple+referral" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>: a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
-- <a class="plausible-event-name=bunny+referral" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>: a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
-- [Plausible](https://plausible.io): powerful, well-designed and privacy-respecting analytics.
-- <a class="plausible-event-name=Feedpress+referral" href="https://feedpress.com/?affid=34370">Feedpress</a>: they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
+- [NextDNS](https://nextdns.io/?from=m56mt3z6): a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.
+- [DNSimple](https://dnsimple.com/r/3a7cbb9e15df8f): a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
+- [Bunny.net](https://bunny.net?ref=revw3mehej): a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
+- [Netlify](https://netlify.com):I use their hosting, forms, webhooks and analytics. It's a reliable and feature-rich platform.
+- [Feedpress](https://feedpress.com/?affid=34370): they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
 - [Kagi](https://kagi.com): the only search engine at this point (or so it seems) that's interested in surfacing quality results.
 - [Readwise Reader](https://readwise.io/read): an impressive RSS reader that handles all the functionality you'd expect from a read it later app beautifully. It's as powerful as it is flexible.
 - [Todoist](https://todoist.com): the task manager I always return to for it's flexibility and endless integrations.
@@ -75,6 +75,6 @@ Software and services that I use for work and my own enjoyment.
 - [Slack](http://slack.com): I have a family Slack set up to avoid group text messages and am in a few other community Slacks.
 - [Discord](http://discord.com): I don't _like_ Discord but, for better or worse, it's where some communities I frequent are.
 - [Backblaze](https://backblaze.com): It backs up my MacBook Air and attached storage drive and I don't have to think about it.
-- <a class="no-underline plausible-event-name=Proton+referral" href="https://pr.tn/ref/X775YX40Z50G">Proton VPN</a>: a reliable, trustworthy VPN with all of the features you'd expect from such a service.
+- [Proton VPN](https://pr.tn/ref/X775YX40Z50G): a reliable, trustworthy VPN with all of the features you'd expect from such a service.
 
 Check out [uses.tech](https://uses.tech) for more lists like this one.

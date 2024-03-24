@@ -134,7 +134,7 @@ This is most impactful on [my now page](https://coryd.dev/now) which is populate
 ```
 
 {% endraw %}
-For this page in particular, the images that are rendered above the fold are set to load as `eager` to mitigate performance impacts related to [too much lazy loading](https://web.dev/lcp-lazy-loading/). These images are fetched from caches hosted at <a class="plausible-event-name=bunny+referral" href="https://bunny.net?ref=revw3mehej">Bunny.net</a> when the site is built.
+For this page in particular, the images that are rendered above the fold are set to load as `eager` to mitigate performance impacts related to [too much lazy loading](https://web.dev/lcp-lazy-loading/). These images are fetched from caches hosted at [Bunny.net](https://bunny.net?ref=revw3mehej) when the site is built.
 
 All of these boilerplate steps leave us with a quick to load, accessible and resilient site:
 

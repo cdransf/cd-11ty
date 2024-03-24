@@ -18,8 +18,3 @@ image: /assets/img/404.jpg
   {% render "partials/tags.liquid", tags:collections.tagsSortedByCount, hasSpace:true %}
   {% render "partials/addon-links.liquid", posts:collections.posts, analytics:analytics, links:links %}
 </div>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    plausible('404', { props: { path: document.location.pathname } })
-  })
-</script>

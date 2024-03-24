@@ -47,11 +47,11 @@ export default {
   getPopularPosts: (posts, analytics) => {
     return posts
       .filter((post) => {
-        if (analytics.find((p) => p.page === post.url)) return true
+        if (analytics.find((p) => p.resource === post.url)) return true
       })
       .sort((a, b) => {
-        const visitors = (page) => analytics.filter((p) => p.page === page.url).pop().visitors
-        return visitors(b) - visitors(a)
+        const count = (page) => analytics.filter((p) => p.resource === page.url).pop().count
+        return count(b) - count(a)
       })
   },
 

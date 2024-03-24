@@ -24,7 +24,7 @@ These are reasons why I find this all so compelling and some pointers, tips and 
 
 **Register a domain[^1]:**
 
- I'm partial to <a class="plausible-event-name=DNSimple+referral" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>, but there are many other awesome options like  [porkbun](https://porkbun.com) and [hover](https://www.hover.com).
+ I'm partial to [DNSimple](https://dnsimple.com/r/3a7cbb9e15df8f), but there are many other awesome options like  [porkbun](https://porkbun.com) and [hover](https://www.hover.com).
 
 **Choose a blogging service[^2]:**
 

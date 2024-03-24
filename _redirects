@@ -2,12 +2,6 @@
 /.well-known/host-meta* https://social.lol/.well-known/host-meta:splat 301
 /.well-known/nodeinfo* https://social.lol/.well-known/nodeinfo:splat 301
 
-# rewrites
-/favicon.ico /assets/img/favicon/favicon.ico 200!
-/apple-touch-icon.png /assets/img/favicon/apple-touch-icon.png 200!
-/apple-touch-icon-precomposed.png /assets/img/favicon/apple-touch-icon.png 200!
-/static/favicons/apple-touch-icon.png /assets/img/favicon/apple-touch-icon.png 200!
-
 # blog posts
 /blog/fixing-safari-icloud-syncing  /posts/2022/fixing-safari-icloud-syncing/ 301!
 /blog/migrating-to-fastmail /posts/2022/migrating-to-fastmail/ 301!
@@ -27,30 +21,22 @@
 /posts/2023/webmentions-in-eleventy/null /posts/2023/webmentions-in-eleventy/ 301!
 /posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/null /posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/ 301!
 /posts/2023/hacking-together-a-tweeklyfm-replacement/ /posts/2023/hacking-together-a-tweeklyfm-repalcement/
-/tags/.env /tags/env 301!
 
 # 404s
+/robot.txt /robots.txt 301!
 /sitemap.txt /sitemap.xml 301!
-/assets/img/social-preview/adding-a-light/dark-theme-toggle-preview.jpeg /assets/img/social-preview/adding-a-light-dark-theme-toggle-preview.jpeg 301!
-/assets/img/social-card.jpg /assets/img/ogi/default.jpg 301!
 /posts / 301!
 /blog / 301!
 /posts/2024 / 301!
-/blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301!
-/assets/img/social-preview/your-site-your-home-your-web- /assets/img/social-preview/your-site-your-home-your-web-preview.jpeg 301!
-/assets/img/social-preview/go-ahead-and-block-ai-web- /assets/img/social-preview/go-ahead-and-block-ai-web-crawlers-preview.jpeg 301!
+/tags/.env /tags/env 301!
 /tags/chatgpt/ /tags/ai/ 301!
 /tags/socialmedia /tags/social%20media/ 301!
-/robot.txt /robots.txt 301!
+/blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301!
+/assets/img/social-card.jpg /assets/img/ogi/default.jpg 301!
+/assets/img/social-preview/your-site-your-home-your-web- /assets/img/social-preview/your-site-your-home-your-web-preview.jpeg 301!
+/assets/img/social-preview/adding-a-light/dark-theme-toggle-preview.jpeg /assets/img/social-preview/adding-a-light-dark-theme-toggle-preview.jpeg 301!
+/assets/img/social-preview/go-ahead-and-block-ai-web- /assets/img/social-preview/go-ahead-and-block-ai-web-crawlers-preview.jpeg 301!
 /-want-anything-your-ai-generates/ /posts/2024/i-dont-want-anything-your-ai-generates/ 301!
-/static/images/avatar.png /assets/img/avatar.png 301!
-/assets/img/logo.webp /assets/img/avatar.webp 301!
-/apple-touch-icon-precomposed.png /assets/icons/apple-touch-icon.png 301!
-/apple-touch-icon /assets/icons/apple-touch-icon.png 301!
-/static/favicons/apple-touch-icon.png /assets/icons/apple-touch-icon.png 301!
-/favicon.ico /assets/icons/favicon.ico 301!
-/assets/img/cache/avatar-800w.webp /assets/img/cache/avatar-880w.webp 301!
-/assets/img/ogi/default.jpg /assets/img/avatar.webp 301!
 
 # 400s
 /wp-* /400/ 400
@@ -70,13 +56,19 @@
 //test/ /400/ 400
 
 # assets
+/favicon.ico /assets/icons/favicon.ico 200!
+/apple-touch-icon.png /assets/icons/apple-touch-icon.png 200!
+/apple-touch-icon /assets/icons/apple-touch-icon.png 200!
+/apple-touch-icon-precomposed.png /assets/icons/apple-touch-icon.png 200!
+/static/favicons/apple-touch-icon.png /assets/icons/apple-touch-icon.png 200!
+/static/images/avatar.png /assets/img/avatar.png 301!
 /static/images/avatar.webp /assets/img/avatar.webp 301!
+/assets/img/cache/avatar-800w.webp /assets/img/cache/avatar-880w.webp 301!
 /assets/img/favicon/apple-touch-icon.png /assets/icons/apple-touch-icon.png 301!
-/apple-touch-icon.png /assets/icons/apple-touch-icon.png 301!
-/apple-touch-icon-precomposed.png /assets/icons/apple-touch-icon.png 301!
-/favicon.ico /assets/icons/favicon.ico 301!
 /assets/img/favicon/favicon-32x32.png /assets/icons/favicon.ico 301!
 /assets/img/favicon/favicon-16x16.png /assets/icons/favicon.ico 301!
+/assets/img/logo.webp /assets/img/avatar.webp 301!
+/assets/img/ogi/default.jpg /assets/img/avatar.webp 301!
 
 # general
 /articles/ / 301!
@@ -102,7 +94,3 @@ https://cdme.netlify.app https://coryd.dev 301!
 /links.json https://feedpress.me/coryd-links.json
 /follow.xml https://feedpress.me/coryd-follow
 /follow.json https://feedpress.me/coryd-follow.json
-
-# analytics
-/js/script.js https://plausible.io/js/script.outbound-links.tagged-events.js 200
-/api/event https://plausible.io/api/event 200
