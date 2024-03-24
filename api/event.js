@@ -15,6 +15,10 @@ export default async (request, context) => {
 
   if (ig) return;
   if (ns) {
+    const { stores } = await listStores();
+    console.log('### STORES')
+    console.log(stores)
+    console.log('### STORES')
     const id = crypto.createHash('md5').update(`${context['ip']}${context['geo']['city']}`).digest('hex');
     const ids = getStore('ids')
     if (!ids.get(id)) await ids.set(id, id)
