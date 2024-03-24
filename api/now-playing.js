@@ -21,6 +21,7 @@ const emojiMap = (genre, artist) => {
   if (normalizedArtist === "imperial triumphant") return "🎭";
   if (normalizedArtist === "mastodon") return "🐋";
   if (normalizedArtist === "minor threat") return "👨🏻‍🦲";
+  if (normalizedArtist === "nothing") return "🏳️";
   if (normalizedArtist === "panopticon") return "🪕🪦";
   if (normalizedArtist === "radiohead") return "📻";
   if (normalizedArtist === "taylor swift") return "👸🏼";
