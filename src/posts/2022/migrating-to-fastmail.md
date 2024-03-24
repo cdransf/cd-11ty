@@ -11,7 +11,7 @@ I've used (and/or tried) nearly every email service I've heard of and have stuck
 
 ### Kicking things off
 
-Register for an account at [Fastmail](https://ref.fm/u30190984)[^3] — you'll be run through their lightweight onboarding process which allows you to select an address at a domain they own or use your own. If you use your own, they'll guide you through configuring the DNS records for it, often with registrar specific instructions.
+Register for an account at <a onclick="fathom?.trackEvent('Fastmail referral') href="https://ref.fm/u30190984">Fastmail</a>[^3] — you'll be run through their lightweight onboarding process which allows you to select an address at a domain they own or use your own. If you use your own, they'll guide you through configuring the DNS records for it, often with registrar specific instructions.
 
 They also offer [extensive documentation](https://www.fastmail.com/help/domain_management_custom_dns.html) on this process and offer a UI that validates that the records you have set are correct. For example, your finalized records would look like the following:
 

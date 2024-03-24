@@ -3,6 +3,10 @@
 {% endcapture %}
 <style>{{ css }}</style>
 <div class="addon-links__wrapper">
+  {%- if analytics.size > 0 -%}
   <div>{% render "partials/popular-posts.liquid", posts:posts, analytics:analytics %}</div>
+  {%- endif -%}
+  {%- if links.size > 0 -%}
   <div>{% render "partials/recent-links.liquid", links:links %}</div>
+  {%- endif -%}
 </div>
