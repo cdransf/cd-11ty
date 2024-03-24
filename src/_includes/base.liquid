@@ -90,7 +90,7 @@
       {% endif %}
     <noscript>
       <style>.client-side {display:none}</style>
-      <img src="/api/event?page={{ fullUrl }}&ns=true" />
+      <img style="display:none" src="/api/event?page={{ fullUrl | url_encode }}&ns=true" />
     </noscript>
   </head>
   <body>
