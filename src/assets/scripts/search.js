@@ -29,7 +29,7 @@
     const query = $input.value
     const results = (query.length > 1) ? getSearchResults(query) : []
     if (query === '') renderSearchResults([])
-    if (results && fathom) fathom?.trackEvent(`Search query: ${query}`)
+    if (results && window.fathom) fathom?.trackEvent(`Search query: ${query}`)
     renderSearchResults(results)
   })
 
