@@ -57,9 +57,6 @@
 //wp/* /400/ 400
 //test/ /400/ 400
 
-# blocks
-/* /400/ 400 Country=af,cn,ir,kp,ru
-
 # assets
 /favicon.ico /assets/icons/favicon.ico 200!
 /apple-touch-icon.png /assets/icons/apple-touch-icon.png 200!
