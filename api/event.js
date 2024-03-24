@@ -8,13 +8,13 @@ export default async (request, context) => {
   const num = new URL(request['url']).searchParams.get('num')
   const lang = decodeURIComponent(new URL(request['url']).searchParams.get('lang'))
   const nav = decodeURIComponent(new URL(request['url']).searchParams.get('nav'))
-  const i = new URL(request['url']).searchParams.get('i')
+  const ig = new URL(request['url']).searchParams.get('ig')
   const headers = {}
   if (lang) headers['Accept-Language'] = lang;
   if (nav) headers['User-Agent'] = nav;
   let url;
 
-  if (i) return;
+  if (ig) return;
   if (ns) {
     const ids = getStore('ids')
     if (!ids.get(id)) ids.set(id, '')
