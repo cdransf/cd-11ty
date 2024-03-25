@@ -11841,5 +11841,16 @@
       "https://social.lol/users/cory/statuses/112156696821659163"
     ],
     "lastTootTimestamp": 1711375378819
+  },
+  "https://www.nytimes.com/2024/03/18/opinion/private-equity-music-spotify.html": {
+    "id": "aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAyNC8wMy8xOC9vcGluaW9uL3ByaXZhdGUtZXF1aXR5LW11c2ljLXNwb3RpZnkuaHRtbA==",
+    "title": "🔗: Same Old Song: Private Equity Is Destroying Our Music Ecosystem",
+    "url": "https://www.nytimes.com/2024/03/18/opinion/private-equity-music-spotify.html",
+    "content_text": "🔗: Same Old Song: Private Equity Is Destroying Our Music Ecosystem  https://www.nytimes.com/2024/03/18/opinion/private-equity-music-spotify.html",
+    "date_published": "Mon, 25 Mar 2024 15:04:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112157641329833825"
+    ],
+    "lastTootTimestamp": 1711389790834
   }
 }
