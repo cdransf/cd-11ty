@@ -6,7 +6,7 @@ export default async (request, context) => {
   const ns = params.get('ns')
   const site = params.get('site')
   const page = params.get('page')
-  const na = params.get('ignore')
+  const ignore = params.get('ignore')
 
   const setUrl = (id, event) => `https://cdn.usefathom.com/?h=${encodeURIComponent(site)}&p=${encodeURIComponent(page)}&sid=CWSVCDJC&cid=${id}&name=${encodeURIComponent(event)}`
 
