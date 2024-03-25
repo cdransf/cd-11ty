@@ -11830,5 +11830,16 @@
       "https://social.lol/users/cory/statuses/112154338650472410"
     ],
     "lastTootTimestamp": 1711339395965
+  },
+  "https://trakt.tv/movies/inglourious-basterds-2009": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvaW5nbG91cmlvdXMtYmFzdGVyZHMtMjAwOQ==",
+    "title": "🎥: Inglourious Basterds",
+    "url": "https://trakt.tv/movies/inglourious-basterds-2009",
+    "content_text": "🎥: Inglourious Basterds #Movies #Watching #Trakt https://trakt.tv/movies/inglourious-basterds-2009",
+    "date_published": "Mon, 25 Mar 2024 14:04:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112156696821659163"
+    ],
+    "lastTootTimestamp": 1711375378819
   }
 }
