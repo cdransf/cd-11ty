@@ -80,6 +80,11 @@ for = "/api/search"
   Content-Type = "application/json"
 
 [[headers]]
+for = "/api/event"
+  [headers.values]
+  Content-Type = "application/json"
+
+[[headers]]
 for = "/blogroll.opml"
   [headers.values]
   Content-Disposition = "attachment; filename=cory-dransfeldt-blogroll.opml"
