@@ -5,7 +5,7 @@ export default async (request, context) => {
   const params = new URL(request['url']).searchParams
   const ns = params.get('ns')
   const page = params.get('page')
-  const ig = params.get('ig')
+  const ignore = params.get('ignore')
 
   const setUrl = (id, event) => `https://cdn.usefathom.com/?h=${encodeURIComponent(page)}&sid=CWSVCDJC&cid=${id}&name=${encodeURIComponent(event)}`
 
@@ -28,7 +28,7 @@ export default async (request, context) => {
   if (!userId) await ids.set(id, id)
   const idVal = await ids.get(id)
 
-  if (ig) return
+  if (ignore) return
   if (ns) {
     url = setUrl(idVal, 'noscript visit')
   } else {
