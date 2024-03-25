@@ -8,11 +8,16 @@ export default async (request, context) => {
   const num = params.get('num') || 'unknown'
   const lang = decodeURIComponent(params.get('lang'))
   const nav = decodeURIComponent(params.get('nav'))
+  const notLang = !lang || lang === 'null' || lang === 'undefined'
+  const notNav = !nav || nav === 'null' || nav === 'undefined'
   const ig = params.get('ig')
   const setUrl = (id, event) => `https://cdn.usefathom.com/?h=${encodeURIComponent(page)}&sid=CWSVCDJC&cid=${id}&name=${encodeURIComponent(event)}`
-  const headers = {}
-  if (lang) headers['Accept-Language'] = lang
-  if (nav) headers['User-Agent'] = nav
+  const acceptLanguage = notLang ? request['headers'].get('accept-language') : lang
+  const userAgent = notNav ? request['headers'].get('user-agent') : nav
+  const headers = {
+    'Accept-Language': acceptLanguage,
+    'User-Agent': userAgent
+  }
   let url
 
   if (ig) return
