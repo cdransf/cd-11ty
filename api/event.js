@@ -4,10 +4,11 @@ import { getStore } from '@netlify/blobs'
 export default async (request, context) => {
   const params = new URL(request['url']).searchParams
   const ns = params.get('ns')
+  const site = params.get('site')
   const page = params.get('page')
   const ignore = params.get('ignore')
 
-  const setUrl = (id, event) => `https://cdn.usefathom.com/?h=${encodeURIComponent(page)}&sid=CWSVCDJC&cid=${id}&name=${encodeURIComponent(event)}`
+  const setUrl = (id, event) => `https://cdn.usefathom.com/?h=${encodeURIComponent(site)}&p=${encodeURIComponent(page)}&sid=CWSVCDJC&cid=${id}&name=${encodeURIComponent(event)}`
 
   const lang = decodeURIComponent(params.get('lang'))
   const nav = decodeURIComponent(params.get('nav'))
