@@ -9,7 +9,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 
 - Mail service: [HEY](https://hey.com)
 - Mail client: [HEY](https://hey.com)
-- Tasks: [Todoist](https://todoist.com)
+- Tasks: [HEY](https://hey.com)'s do this week functionality
 - RSS service/client/bookmarking: [Readwise Reader](https://readwise.io/read) + clips sent to [Bear](https://bear.app)
 - Launcher: [Alfred](https://alfredapp.com)
 - Cloud storage: iCloud
