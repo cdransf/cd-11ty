@@ -11808,5 +11808,38 @@
       "https://social.lol/users/cory/statuses/112153997879379075"
     ],
     "lastTootTimestamp": 1711334196223
+  },
+  "https://chrisburnell.com/article/memoizing-asset-bundles/": {
+    "id": "aHR0cHM6Ly9jaHJpc2J1cm5lbGwuY29tL2FydGljbGUvbWVtb2l6aW5nLWFzc2V0LWJ1bmRsZXMv",
+    "title": "🔗: How I shaved 1.5 minutes off my Eleventy build time",
+    "url": "https://chrisburnell.com/article/memoizing-asset-bundles/",
+    "content_text": "🔗: How I shaved 1.5 minutes off my Eleventy build time #Eleventy #JavaScript #WebDev https://chrisburnell.com/article/memoizing-asset-bundles/",
+    "date_published": "Sun, 24 Mar 2024 15:30:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112154813078145282"
+    ],
+    "lastTootTimestamp": 1711346635179
+  },
+  "https://doctorow.medium.com/https-pluralistic-net-2024-03-23-evacuate-the-platforms-let-the-platforms-burn-1ebbb7b9c982?source=rss-eba9888d741b------2": {
+    "id": "aHR0cHM6Ly9kb2N0b3Jvdy5tZWRpdW0uY29tL2h0dHBzLXBsdXJhbGlzdGljLW5ldC0yMDI0LTAzLTIzLWV2YWN1YXRlLXRoZS1wbGF0Zm9ybXMtbGV0LXRoZS1wbGF0Zm9ybXMtYnVybi0xZWJiYjdiOWM5ODI/c291cmNlPXJzcy1lYmE5ODg4ZDc0MWItLS0tLS0y",
+    "title": "🔗: Someday, we’ll all take comfort in the internet’s “dark corners”",
+    "url": "https://doctorow.medium.com/https-pluralistic-net-2024-03-23-evacuate-the-platforms-let-the-platforms-burn-1ebbb7b9c982?source=rss-eba9888d741b------2",
+    "content_text": "🔗: Someday, we’ll all take comfort in the internet’s “dark corners” #Tech https://doctorow.medium.com/https-pluralistic-net-2024-03-23-evacuate-the-platforms-let-the-platforms-burn-1ebbb7b9c982?source=rss-eba9888d741b------2",
+    "date_published": "Sat, 23 Mar 2024 16:17:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112154338650472410"
+    ],
+    "lastTootTimestamp": 1711339395965
+  },
+  "https://trakt.tv/movies/inglourious-basterds-2009": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvaW5nbG91cmlvdXMtYmFzdGVyZHMtMjAwOQ==",
+    "title": "🎥: Inglourious Basterds",
+    "url": "https://trakt.tv/movies/inglourious-basterds-2009",
+    "content_text": "🎥: Inglourious Basterds #Movies #Watching #Trakt https://trakt.tv/movies/inglourious-basterds-2009",
+    "date_published": "Mon, 25 Mar 2024 14:04:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112156696821659163"
+    ],
+    "lastTootTimestamp": 1711375378819
   }
 }
