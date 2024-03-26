@@ -1,3 +1,4 @@
 export default {
-  civerous: 'Civerous'
+  civerous: 'Civerous',
+  aset: 'ASET'
 }
