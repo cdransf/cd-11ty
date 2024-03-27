@@ -33,16 +33,14 @@ export default async (request, context) => {
     { headers: { "Content-Type": "application/json" } }
   )
 
-  if (!userId) {
-    await ids.set(id, id)
-    if (ns) {
-      url = setUrl(id, 'noscript visit')
-    } else {
-      url = setUrl(id, 'Blocked visit')
-    }
-  }
-
+  if (!userId) await ids.set(id, id)
   userId = await ids.get(id)
+
+  if (ns) {
+    url = setUrl(userId, 'noscript visit')
+  } else {
+    url = setUrl(userId, 'Blocked visit')
+  }
 
   fetch(url, { headers })
   .then((data) => {
