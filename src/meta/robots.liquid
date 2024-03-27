@@ -7,7 +7,8 @@ Sitemap: https://coryd.dev/sitemap.xml
 
 User-agent: *
 Disallow:
-{% for robot in robots %}
+
+{% for robot in robots -%}
 User-agent: {{ robot }}
+{% endfor -%}
 Disallow: /
-{% endfor %}
