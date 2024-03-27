@@ -22,7 +22,7 @@ export default async (request, context) => {
     'Accept-Language': acceptLanguage,
     'User-Agent': userAgent
   }
-  const id = crypto.createHash('md5').update(`${context['ip']}${context['geo']['city']}${context['geo']['latitude']}${context['geo']['longitude']}`).digest('hex')
+  const id = crypto.createHash('md5').update(`${context['ip']}${context['geo']['city']}${context['geo']['latitude']}${context['geo']['longitude']}${userAgent}`).digest('hex')
   let url = setUrl(id)
   const ids = getStore('ids')
   let userId = await ids.get(id)
