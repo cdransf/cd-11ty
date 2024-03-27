@@ -41,6 +41,7 @@ Disallow:
 User-agent: AdsBot-Google
 User-agent: Amazonbot
 User-agent: anthropic-ai
+User-agent: Applebot
 User-agent: AwarioRssBot
 User-agent: AwarioSmartBot
 User-agent: Bytespider

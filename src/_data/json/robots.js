@@ -30,6 +30,7 @@ export default [
   'Anthill',
   'anthropic-ai',
   'Apexoo',
+  'Applebot',
   'Aspiegel',
   'Asterias',
   'Atomseobot',
