@@ -37,9 +37,9 @@ export default async (request, context) => {
   userId = await ids.get(id)
 
   if (ns) {
-    url = setUrl(userId, 'noscript visit')
+    url = setUrl(userId, `noscript visit: ${page}`)
   } else {
-    url = setUrl(userId, 'Blocked visit')
+    url = setUrl(userId, `Blocked visit: ${page}`)
   }
 
   fetch(url, { headers })
