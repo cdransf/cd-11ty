@@ -12,7 +12,6 @@ export default [
   { "name": "Łukasz Wójcik", "url": "https://lukaszwojcik.net", "feed": "https://blog.lukaszwojcik.net/full.xml", "description": "Posts about tech, web development and Eleventy. Łukasz is a talented and kind engineer." },
   { "name": "Matt Birchler", "url": "https://birchtree.me", "feed": "https://birchtree.me/rss/", "description": "Matt is exceedingly kind and also posts about Apple, tech and other topics." },
   { "name": "Mike Haynes", "url": "https://crashthearcade.com", "feed": "https://crashthearcade.com/feed/rss", "description": "A beautifully-designed site and I enjoy Mike's commentary and writing." },
-  { "name": "Nick Heer", "url": "https://pxlnv.com", "feed": "https://feedpress.me/pxlnv", "description": "A must-follow for anyone interested in Apple and tech." },
   { "name": "Paul Anthony Webb", "url": "https://webb.page", "description": "One of the coolest, most unique personal sites around." },
   { "name": "Raymond Camden", "url": "https://raymondcamden.com", "feed": "https://www.raymondcamden.com/feed.xml", "description": "Raymond covers a wide, wide range of web development topics and never fails to provide both insight and clarity." },
   { "name": "Robb Knight", "url": "https://rknight.me", "feed": "https://rknight.me/subscribe/posts/rss.xml", "description": "Robb has the coolest site on the web and is an all around awesome dude." },
