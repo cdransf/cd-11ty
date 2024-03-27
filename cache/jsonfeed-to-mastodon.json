@@ -11874,5 +11874,54 @@
       "https://social.lol/users/cory/statuses/112163304021530663"
     ],
     "lastTootTimestamp": 1711476196675
+  },
+  "https://css-irl.info/has-has-landed-in-safari/": {
+    "id": "aHR0cHM6Ly9jc3MtaXJsLmluZm8vaGFzLWhhcy1sYW5kZWQtaW4tc2FmYXJpLw==",
+    "title": "🔗: :has() Has Landed in Safari",
+    "url": "https://css-irl.info/has-has-landed-in-safari/",
+    "content_text": "🔗: :has() Has Landed in Safari #CSS #WebDev https://css-irl.info/has-has-landed-in-safari/",
+    "date_published": "Tue, 26 Mar 2024 16:43:00 GMT",
+    "toots": []
+  },
+  "https://ar.al/notes/how-web-2-0-killed-the-internet/": {
+    "id": "aHR0cHM6Ly9hci5hbC9ub3Rlcy9ob3ctd2ViLTItMC1raWxsZWQtdGhlLWludGVybmV0Lw==",
+    "title": "🔗: How Web 2.0 killed the Internet",
+    "url": "https://ar.al/notes/how-web-2-0-killed-the-internet/",
+    "content_text": "🔗: How Web 2.0 killed the Internet #Tech #WebDev https://ar.al/notes/how-web-2-0-killed-the-internet/",
+    "date_published": "Tue, 26 Mar 2024 15:34:00 GMT",
+    "toots": []
+  },
+  "https://notes.neatnik.net/2024/03/a-fediverse-if-you-can-keep-it": {
+    "id": "aHR0cHM6Ly9ub3Rlcy5uZWF0bmlrLm5ldC8yMDI0LzAzL2EtZmVkaXZlcnNlLWlmLXlvdS1jYW4ta2VlcC1pdA==",
+    "title": "🔗: A Fediverse, if you can keep it",
+    "url": "https://notes.neatnik.net/2024/03/a-fediverse-if-you-can-keep-it",
+    "content_text": "🔗: A Fediverse, if you can keep it #Tech #SocialMedia https://notes.neatnik.net/2024/03/a-fediverse-if-you-can-keep-it",
+    "date_published": "Tue, 26 Mar 2024 13:58:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112164249356677715"
+    ],
+    "lastTootTimestamp": 1711490621346
+  },
+  "https://robinrendle.com/notes/has-roundup/": {
+    "id": "aHR0cHM6Ly9yb2JpbnJlbmRsZS5jb20vbm90ZXMvaGFzLXJvdW5kdXAv",
+    "title": "🔗: :has roundup",
+    "url": "https://robinrendle.com/notes/has-roundup/",
+    "content_text": "🔗: :has roundup #CSS #WebDev https://robinrendle.com/notes/has-roundup/",
+    "date_published": "Mon, 25 Mar 2024 01:48:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112164748170710447"
+    ],
+    "lastTootTimestamp": 1711498232666
+  },
+  "https://blog.jim-nielsen.com/2024/allure-of-sync-engines/": {
+    "id": "aHR0cHM6Ly9ibG9nLmppbS1uaWVsc2VuLmNvbS8yMDI0L2FsbHVyZS1vZi1zeW5jLWVuZ2luZXMv",
+    "title": "🔗: The Allure of Local-First Sync Engines",
+    "url": "https://blog.jim-nielsen.com/2024/allure-of-sync-engines/",
+    "content_text": "🔗: The Allure of Local-First Sync Engines #Tech #WebDev https://blog.jim-nielsen.com/2024/allure-of-sync-engines/",
+    "date_published": "Mon, 25 Mar 2024 05:28:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112165211660963891"
+    ],
+    "lastTootTimestamp": 1711505304954
   }
 }
