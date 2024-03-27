@@ -7,9 +7,11 @@ export default async (request, context) => {
   const site = params.get('site')
   const page = params.get('page')
   const ignore = params.get('ignore')
-
-  const setUrl = (id, event) => `https://cdn.usefathom.com/?h=${encodeURIComponent(site)}&p=${encodeURIComponent(page)}&sid=CWSVCDJC&cid=${id}&name=${encodeURIComponent(event)}`
-
+  const setUrl = (id, event) => {
+    let url = `https://cdn.usefathom.com/?h=${encodeURIComponent(site)}&p=${encodeURIComponent(page)}&sid=CWSVCDJC&cid=${id}`
+    if (event) url = `${url}&name=${encodeURIComponent(event)}`
+    return url
+  }
   const lang = decodeURIComponent(params.get('lang'))
   const nav = decodeURIComponent(params.get('nav'))
   const notLang = !lang || lang === 'null' || lang === 'undefined'
@@ -20,25 +22,27 @@ export default async (request, context) => {
     'Accept-Language': acceptLanguage,
     'User-Agent': userAgent
   }
-
-  let url
-
-  const id = crypto.createHash('md5').update(`${context['ip']}${context['geo']['city']}`).digest('hex')
+  const id = crypto.createHash('md5').update(`${context['ip']}${context['geo']['city']}${context['geo']['latitude']}${context['geo']['longitude']}`).digest('hex')
+  let url = setUrl(id)
   const ids = getStore('ids')
-  const userId = await ids.get(id)
-  if (!userId) await ids.set(id, id)
-  const idVal = await ids.get(id)
+  let userId = await ids.get(id)
 
   if (ignore) return new Response(JSON.stringify({
       status: 'accepted',
     }),
     { headers: { "Content-Type": "application/json" } }
   )
-  if (ns) {
-    url = setUrl(idVal, 'noscript visit')
-  } else {
-    url = setUrl(idVal, 'Blocked visit')
+
+  if (!userId) {
+    await ids.set(id, id)
+    if (ns) {
+      url = setUrl(id, 'noscript visit')
+    } else {
+      url = setUrl(id, 'Blocked visit')
+    }
   }
+
+  userId = await ids.get(id)
 
   fetch(url, { headers })
   .then((data) => {
