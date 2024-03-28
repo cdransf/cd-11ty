@@ -11951,5 +11951,27 @@
       "https://social.lol/users/cory/statuses/112169437876000074"
     ],
     "lastTootTimestamp": 1711569791871
+  },
+  "https://coryd.dev/posts/2024/i-like-safari-but-nobody-should-be-required-to-use-it/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9pLWxpa2Utc2FmYXJpLWJ1dC1ub2JvZHktc2hvdWxkLWJlLXJlcXVpcmVkLXRvLXVzZS1pdC8=",
+    "title": "📝: I like Safari, but nobody should be required to use it",
+    "url": "https://coryd.dev/posts/2024/i-like-safari-but-nobody-should-be-required-to-use-it/",
+    "content_text": "📝: I like Safari, but nobody should be required to use it #Tech #WebDev https://coryd.dev/posts/2024/i-like-safari-but-nobody-should-be-required-to-use-it/",
+    "date_published": "Thu, 28 Mar 2024 02:30:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112170772957624949"
+    ],
+    "lastTootTimestamp": 1711590163615
+  },
+  "https://theconversation.com/weve-been-here-before-ai-promised-humanlike-machines-in-1958-222700": {
+    "id": "aHR0cHM6Ly90aGVjb252ZXJzYXRpb24uY29tL3dldmUtYmVlbi1oZXJlLWJlZm9yZS1haS1wcm9taXNlZC1odW1hbmxpa2UtbWFjaGluZXMtaW4tMTk1OC0yMjI3MDA=",
+    "title": "🔗: We’ve been here before: AI promised humanlike machines – in 1958",
+    "url": "https://theconversation.com/weve-been-here-before-ai-promised-humanlike-machines-in-1958-222700",
+    "content_text": "🔗: We’ve been here before: AI promised humanlike machines – in 1958 #AI #Tech https://theconversation.com/weve-been-here-before-ai-promised-humanlike-machines-in-1958-222700",
+    "date_published": "Thu, 28 Mar 2024 04:39:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112174628474515995"
+    ],
+    "lastTootTimestamp": 1711648994114
   }
 }
