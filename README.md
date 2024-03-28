@@ -13,9 +13,9 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 ## 📝 Recent posts
 
 <!-- BLOGPOSTS:START -->
+- [I like Safari, but nobody should be required to use it](https://coryd.dev/posts/2024/i-like-safari-but-nobody-should-be-required-to-use-it/)
+- [Thoughts on permanence](https://coryd.dev/posts/2024/thoughts-on-permanence/)
 - [We have a content quality problem, not a content quantity problem](https://coryd.dev/posts/2024/we-have-a-content-quality-problem-not-a-content-quantity-problem/)
 - [An indie web primer](https://coryd.dev/posts/2024/an-indie-web-primer/)
 - [It's not AI generated music, it's AI generated noise](https://coryd.dev/posts/2024/its-not-ai-generated-music-its-ai-generated-noise/)
-- [Lightweight search in Eleventy](https://coryd.dev/posts/2024/lightweight-search-in-eleventy/)
-- [Look for longevity](https://coryd.dev/posts/2024/look-for-longevity/)
 <!-- BLOGPOSTS:END -->
