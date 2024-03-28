@@ -1,8 +1,30 @@
 import { getStore } from '@netlify/blobs'
 
 export default async (request, context) => {
-  console.log(request)
-  console.log(context)
+  const ACCOUNT_ID_PLEX = Netlify.env.get("ACCOUNT_ID_PLEX");
+  const id = params.get('id')
+  const params = new URL(request['url']).searchParams
+  const data = await request.formData()
+  const payload = data['payload']
+  console.log(data)
+  console.log(payload)
+
+  if (!id) return new Response(JSON.stringify({
+      status: 'Bad request',
+    }),
+    { headers: { "Content-Type": "application/json" } }
+  )
+
+  if (id !== ACCOUNT_ID_PLEX) return new Response(JSON.stringify({
+      status: 'Forbidden',
+    }),
+    { headers: { "Content-Type": "application/json" } }
+  )
+
+  if (payload?.event === 'media.scrobble') {
+    console.log('scrobble')
+  }
+
   return new Response(JSON.stringify({
       status: 'success',
     }),

@@ -3,6 +3,7 @@ export default {
   'aesop rock': 'aba64937-3334-4c65-90a1-4e6b9d4d7ada',
   afi: '1c3919b2-43ca-4a4a-935d-9d50135ec0ef',
   aset: '5dac39d3-beb8-4c99-9cdc-3e647a594af6',
+  ataraxy: 'f17a2c62-51cf-4e7e-9640-a5da5b1178a3',
   augury: 'd651baba-5ce1-4315-b884-d951e0435418',
   autopsy: '1d097d38-d5ca-4cd4-9200-7f08eedd0875',
   basement: 'a8c7ff7a-ebc0-42c7-8828-475decf0ccdd',
