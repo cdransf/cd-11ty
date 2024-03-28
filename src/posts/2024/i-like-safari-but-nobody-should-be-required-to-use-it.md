@@ -4,7 +4,7 @@ title: 'I like Safari, but nobody should be required to use it'
 description: "I've tried all the browsers and I always return to Safari. I've been a longtime resident of Apple's walled garden/prison, my grandmother bought stock during Apple's IPO and my whole family uses, well, all of it. I'm technical support and firmly tethered by familial and financial bonds here."
 tags: ['tech', 'Apple', 'development']
 ---
-I've tried all the browsers (not Arc, but that's a big stack of nonsense dressing up Chromium) and I always return to Safari. I've been a longtime resident of Apple's walled garden/prison, my grandmother bought stock during Apple's IPO and my whole family uses, well, all of it. I'm technical support and firmly tethered by familial and financial bonds here.
+I've tried all the browsers (not Arc, but that's a big stack of nonsense dressing up Chromium) and I always return to Safari. I've been a longtime resident of Apple's walled garden/prison, my grandmother bought stock during Apple's IPO and my whole family uses, well, all of it. I'm technical support and firmly tethered by familial and financial bonds here.<!-- excerpt -->
 
 Chrome is — still — a memory hog and getting inexorably worse as Google bolts on AI, hampers ad blocking and tacks on gimmicky shopping features. Firefox feels unsteady as Mozilla shuffles about, aimlessly looking for a plan — any plan. Additionally, as anyone will readily tell you, on iOS, they're both just cosmetic wrappers around WebKit/Safari and that is untenable.
 
