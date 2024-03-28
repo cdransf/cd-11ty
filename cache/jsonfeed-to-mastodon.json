@@ -11951,5 +11951,16 @@
       "https://social.lol/users/cory/statuses/112169437876000074"
     ],
     "lastTootTimestamp": 1711569791871
+  },
+  "https://coryd.dev/posts/2024/i-like-safari-but-nobody-should-be-required-to-use-it/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9pLWxpa2Utc2FmYXJpLWJ1dC1ub2JvZHktc2hvdWxkLWJlLXJlcXVpcmVkLXRvLXVzZS1pdC8=",
+    "title": "📝: I like Safari, but nobody should be required to use it",
+    "url": "https://coryd.dev/posts/2024/i-like-safari-but-nobody-should-be-required-to-use-it/",
+    "content_text": "📝: I like Safari, but nobody should be required to use it #Tech #WebDev https://coryd.dev/posts/2024/i-like-safari-but-nobody-should-be-required-to-use-it/",
+    "date_published": "Thu, 28 Mar 2024 02:30:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112170772957624949"
+    ],
+    "lastTootTimestamp": 1711590163615
   }
 }
