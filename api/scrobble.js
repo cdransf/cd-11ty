@@ -14,8 +14,6 @@ const weekStop = () => {
   return nextSunday.toMillis()
 }
 
-weekStop()
-
 export default async (request, context) => {
   const ACCOUNT_ID_PLEX = Netlify.env.get("ACCOUNT_ID_PLEX");
   const MUSIC_KEY = Netlify.env.get("API_KEY_LASTFM");
@@ -92,6 +90,8 @@ export default async (request, context) => {
       }
       await artists.setJSON(artistKey, JSON.stringify(artistData))
     }
+
+    weekStop()
   }
 
   return new Response(JSON.stringify({
