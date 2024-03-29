@@ -14,7 +14,7 @@ const weekStop = () => {
   return nextSunday.toMillis()
 }
 
-export default async (request, context) => {
+export default async (request) => {
   const ACCOUNT_ID_PLEX = Netlify.env.get("ACCOUNT_ID_PLEX");
   const MUSIC_KEY = Netlify.env.get("API_KEY_LASTFM");
   const params = new URL(request['url']).searchParams
@@ -22,6 +22,7 @@ export default async (request, context) => {
   const data = await request.formData()
   const payload = JSON.parse(data.get('payload'))
   const artists = getStore('artists')
+  const scrobbles = getStore('scrobbles')
 
   if (!id) return new Response(JSON.stringify({
       status: 'Bad request',
@@ -39,8 +40,10 @@ export default async (request, context) => {
     const artist = payload['Metadata']['grandparentTitle']
     const album = payload['Metadata']['parentTitle']
     const track = payload['Metadata']['title']
+    const trackNumber = payload['Metadata']['index']
+    const timestamp = DateTime.now()
     const artistKey = sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()
-    const artistInfo = await artists.get(artistKey, { type: 'json'}) // get the artist blob
+    let artistInfo = await artists.get(artistKey, { type: 'json'}) // get the artist blob
 
     // if there is no artist blob, populate one
     if (!artistInfo) {
@@ -91,7 +94,81 @@ export default async (request, context) => {
       await artists.setJSON(artistKey, JSON.stringify(artistData))
     }
 
-    weekStop()
+    // scrobble logic
+    artistInfo = await artists.get(artistKey, { type: 'json'})
+    const artistUrl = `https://musicbrainz.org/artist/${artistInfo['mbid']}`
+    const trackScrobbleData = {
+      track,
+      album,
+      artist,
+      trackNumber,
+      timestamp,
+      artistUrl
+    }
+    const scrobbleData = await scrobbles.get(weekStop(), { type: 'json'})
+    let scrobbles = scrobbleData;
+    scrobbleData.setJSON('now-playing', JSON.stringify(trackScrobbleData))
+    const trackKey = `${sanitizeMediaString(track).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}`
+    const artistInit = {
+      name: artist,
+      artistUrl,
+      count: 1
+    }
+    const albumInit = {
+      name: album,
+      count: 1
+    }
+    const trackInit = {
+        key: trackKey,
+        data: {
+          timestamp,
+          total: 1,
+          artist,
+          title,
+          artistUrl,
+          art: `https://cdn.coryd.dev/albums/${encodeURIComponent(sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase())}-${encodeURIComponent(sanitizeMediaString(album.replace(/[:\/\\,'']+/g, '').replace(/\s+/g, '-').toLowerCase()))}.jpg`
+        }
+      }
+
+    // 1st scrobble! Let's set up
+    if (!scrobbles) {
+      scrobbles = {
+        chart: {
+          total: 1,
+          artists: [artistInit],
+          albums: [albumInit],
+          tracks: [trackInit]
+        }
+      }
+    } else {
+      // increment total
+      scrobbles['chart']['total']++
+
+      // update artist plays
+      if (scrobbles['chart']['artists'].find(a => a.name === artist)) {
+        scrobbles['chart']['artists'][scrobbles['chart']['artists'].findIndex(a => a.name === artist)]['count']++
+      } else {
+        scrobbles['chart']['artists'].push(artistInit)
+      }
+
+      // update album plays
+      if (scrobbles['chart']['albums'].find(a => a.name === album)) {
+        scrobbles['chart']['albums'][scrobbles['chart']['albums'].findIndex(a => a.name === album)]['count']++
+      } else {
+        scrobbles['chart']['albums'].push(albumInit)
+      }
+
+      // update track plays
+      if (scrobbles['chart']['tracks'].find(t => t.key === trackKey)) {
+        const track = scrobbles['chart']['tracks'][scrobbles['chart']['tracks'].findIndex(t => t.key === key)]
+        track[total]++
+        track[timestamp] = timestamp
+      } else {
+        scrobbles['chart']['tracks'].push(trackInit)
+      }
+
+      scrobbleData.setJSON(weekStop(), JSON.stringify(scrobbles))
+    }
   }
 
   return new Response(JSON.stringify({
