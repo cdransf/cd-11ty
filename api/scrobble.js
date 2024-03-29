@@ -11,7 +11,7 @@ export default async (request, context) => {
   const params = new URL(request['url']).searchParams
   const id = params.get('id')
   const data = await request.formData()
-  const payload = data.get('payload')
+  const payload = JSON.parse(data.get('payload'))
   console.log(payload)
   console.log(payload['Metadata'])
   const artists = getStore('artists')
