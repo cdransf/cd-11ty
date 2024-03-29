@@ -7,6 +7,9 @@ export default async (request, context) => {
   const data = await request.formData()
   const payload = data['payload']
 
+  const debug = getStore('debug')
+  await debug.set('debug', payload)
+
   if (!id) return new Response(JSON.stringify({
       status: 'Bad request',
     }),
