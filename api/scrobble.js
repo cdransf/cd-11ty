@@ -96,13 +96,12 @@ export default async (request) => {
         genre,
         image: `https://cdn.coryd.dev/artists/${encodeURIComponent(sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase())}.jpg`
       }
-      await artists.setJSON(artistKey, JSON.stringify(artistData))
+      await artists.setJSON(artistKey, artistData)
     }
 
     // scrobble logic
-    artistInfo = await artists.get(artistKey)
+    artistInfo = await artists.get(artistKey, { type: 'json'})
     console.log(JSON.parse(artistInfo))
-    console.log('artistInfo["mbid"]', JSON.parse(artistInfo)["mbid"])
     const artistUrl = `https://musicbrainz.org/artist/${artistInfo?.['mbid']}`
     const trackScrobbleData = {
       track,
@@ -114,24 +113,16 @@ export default async (request) => {
     }
     const scrobbleData = await scrobbles.get(`${weekStop()}`, { type: 'json'})
     const windowData = await scrobbles.get('window', { type: 'json'})
-    await scrobbles.setJSON('now-playing', JSON.stringify(trackScrobbleData))
+    await scrobbles.setJSON('now-playing', trackScrobbleData)
     let scrobbleUpdate = scrobbleData
     let windowUpdate = windowData;
-    console.log('### SCROBBLE')
-    console.log(scrobbleUpdate)
-    console.log('scrobbleUpdate["data"].length', scrobbleUpdate["data"].length)
-    console.log('### SCROBBLE')
-    console.log('### WINDOW')
-    console.log(windowUpdate)
-    console.log('windowUpdate["data"].length', windowUpdate["data"].length)
-    console.log('### WINDOW')
     if (scrobbleUpdate['data']) scrobbleUpdate['data'].push(trackScrobbleData)
     if (!scrobbleUpdate['data']) scrobbleUpdate = { data: [trackScrobbleData] }
     if (windowData['data']) windowUpdate['data'].push(trackScrobbleData)
     if (!windowData['data']) windowUpdate = { data: [trackScrobbleData] }
     windowUpdate = { data: filterOldScrobbles(windowUpdate.data) }
-    await scrobbles.setJSON(`${weekStop()}`, JSON.stringify(scrobbleUpdate))
-    await scrobbles.setJSON('window', JSON.stringify(windowUpdate))
+    await scrobbles.setJSON(`${weekStop()}`, scrobbleUpdate)
+    await scrobbles.setJSON('window', windowUpdate)
   }
 
   return new Response(JSON.stringify({
