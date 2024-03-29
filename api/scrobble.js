@@ -34,6 +34,9 @@ export default async (request, context) => {
     const artistKey = sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()
     const artistInfo = await artists.get(artistKey, { type: 'json'}) // get the artist blob
 
+    console.log('artist', artist)
+    console.log('track', track)
+
     // if there is no artist blob, populate one
     if (!artistInfo) {
       const trackRes = await fetch(
@@ -57,6 +60,7 @@ export default async (request, context) => {
           console.log(err);
           return {}
         });
+      console.log(trackRes)
       const trackData = trackRes["recenttracks"]["track"][0];
       let mbid = trackRes['track']['artist']['mbid']
       const mbidMap = () => mbidRes[trackData['artist']['#text'].toLowerCase()] || "";
