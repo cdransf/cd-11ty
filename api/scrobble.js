@@ -8,11 +8,16 @@ const sanitizeMediaString = (string) => {
 
 const weekStop = () => {
   const currentDate = DateTime.now()
-  let nextSunday = currentDate.plus({ days: (7 - currentDate.weekday) % 7 })
+  let nextSunday = currentDate.plus({ 7: (7 - currentDate.weekday) % 7 })
   nextSunday = nextSunday.set({ hour: 0, minute: 0, second: 0, millisecond: 0 })
-  console.log(nextSunday.toMillis());
   return nextSunday.toMillis()
 }
+
+const twoWeeksAgo = DateTime.now().minus({ weeks: 2 });
+const filterOldScrobbles = (scrobbles) => scrobbles.filter(scrobble => {
+    let timestamp = DateTime.fromISO(scrobble.timestamp)
+    return timestamp.diff(twoWeeksAgo).as('weeks') <= -2
+});
 
 export default async (request) => {
   const ACCOUNT_ID_PLEX = Netlify.env.get("ACCOUNT_ID_PLEX");
@@ -105,70 +110,16 @@ export default async (request) => {
       timestamp,
       artistUrl
     }
-    const scrobbleData = await scrobbles.get(weekStop(), { type: 'json'})
-    let scrobbles = scrobbleData;
-    scrobbleData.setJSON('now-playing', JSON.stringify(trackScrobbleData))
-    const trackKey = `${sanitizeMediaString(track).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}`
-    const artistInit = {
-      name: artist,
-      artistUrl,
-      count: 1
-    }
-    const albumInit = {
-      name: album,
-      count: 1
-    }
-    const trackInit = {
-        key: trackKey,
-        data: {
-          timestamp,
-          total: 1,
-          artist,
-          title,
-          artistUrl,
-          art: `https://cdn.coryd.dev/albums/${encodeURIComponent(sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase())}-${encodeURIComponent(sanitizeMediaString(album.replace(/[:\/\\,'']+/g, '').replace(/\s+/g, '-').toLowerCase()))}.jpg`
-        }
-      }
-
-    // 1st scrobble! Let's set up
-    if (!scrobbles) {
-      scrobbles = {
-        chart: {
-          total: 1,
-          artists: [artistInit],
-          albums: [albumInit],
-          tracks: [trackInit]
-        }
-      }
-    } else {
-      // increment total
-      scrobbles['chart']['total']++
-
-      // update artist plays
-      if (scrobbles['chart']['artists'].find(a => a.name === artist)) {
-        scrobbles['chart']['artists'][scrobbles['chart']['artists'].findIndex(a => a.name === artist)]['count']++
-      } else {
-        scrobbles['chart']['artists'].push(artistInit)
-      }
-
-      // update album plays
-      if (scrobbles['chart']['albums'].find(a => a.name === album)) {
-        scrobbles['chart']['albums'][scrobbles['chart']['albums'].findIndex(a => a.name === album)]['count']++
-      } else {
-        scrobbles['chart']['albums'].push(albumInit)
-      }
-
-      // update track plays
-      if (scrobbles['chart']['tracks'].find(t => t.key === trackKey)) {
-        const track = scrobbles['chart']['tracks'][scrobbles['chart']['tracks'].findIndex(t => t.key === key)]
-        track[total]++
-        track[timestamp] = timestamp
-      } else {
-        scrobbles['chart']['tracks'].push(trackInit)
-      }
-
-      scrobbleData.setJSON(weekStop(), JSON.stringify(scrobbles))
-    }
+    const scrobbleData = await scrobbles.get(weekStop(1), { type: 'json'})
+    const windowData = await scrobbles.get('window', { type: 'json'})
+    let scrobbleUpdate = scrobbleData
+    let windowUpdate = windowData;
+    if (scrobbleUpdate) scrobbleUpdate['data'].push(trackScrobbleData)
+    if (!scrobbleUpdate) scrobbleUpdate = { data: [trackScrobbleData] }
+    if (windowData) windowUpdate['data'].push(trackScrobbleData)
+    if (!windowData) windowUpdate = { data: [trackScrobbleData] }
+    scrobbleData.setJSON('now-playing', JSON.stringify(scrobbleUpdate))
+    windowData.setJSON('window-data', JSON.stringify(filterOldScrobbles(windowUpdate)))
   }
 
   return new Response(JSON.stringify({
