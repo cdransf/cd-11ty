@@ -13,9 +13,7 @@ export default async (request, context) => {
   const data = await request.formData()
   const payload = data.get('payload')
   console.log(payload)
-  const artist = payload['Metadata']['grandparentTitle']
-  const album = payload['Metadata']['parentTitle']
-  const track = payload['Metadata']['title']
+  console.log(payload['Metadata'])
   const artists = getStore('artists')
 
 
@@ -36,6 +34,9 @@ export default async (request, context) => {
 
 
   if (payload?.event === 'media.scrobble') {
+    const artist = payload['Metadata']['grandparentTitle']
+    const album = payload['Metadata']['parentTitle']
+    const track = payload['Metadata']['title']
     const artistKey = sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()
     const artistInfo = await artists.getJSON(artistKey)
     if (!artistInfo) {
