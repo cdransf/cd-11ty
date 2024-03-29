@@ -1,9 +1,20 @@
 import { getStore } from '@netlify/blobs'
+import { DateTime } from 'luxon'
 
 const sanitizeMediaString = (string) => {
   const normalizedStr = string.normalize('NFD');
   return normalizedStr.replace(/[\u0300-\u036f]/g, '').replace(/\.{3}/g, '');
 };
+
+const weekStop = () => {
+  const currentDate = DateTime.now()
+  let nextSunday = currentDate.plus({ days: (7 - currentDate.weekday) % 7 })
+  nextSunday = nextSunday.set({ hour: 0, minute: 0, second: 0, millisecond: 0 })
+  console.log(nextSunday.toMillis());
+  return nextSunday.toMillis()
+}
+
+weekStop()
 
 export default async (request, context) => {
   const ACCOUNT_ID_PLEX = Netlify.env.get("ACCOUNT_ID_PLEX");
@@ -25,7 +36,6 @@ export default async (request, context) => {
     }),
     { headers: { "Content-Type": "application/json" } }
   )
-
 
   if (payload?.event === 'media.scrobble') {
     const artist = payload['Metadata']['grandparentTitle']
@@ -80,7 +90,6 @@ export default async (request, context) => {
         genre,
         image: `https://cdn.coryd.dev/artists/${encodeURIComponent(sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase())}.jpg`
       }
-      console.log(artistData)
       await artists.setJSON(artistKey, JSON.stringify(artistData))
     }
   }
