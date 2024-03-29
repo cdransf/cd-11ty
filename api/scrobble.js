@@ -2,8 +2,8 @@ import { getStore } from '@netlify/blobs'
 
 export default async (request, context) => {
   const ACCOUNT_ID_PLEX = Netlify.env.get("ACCOUNT_ID_PLEX");
-  const id = params.get('id')
   const params = new URL(request['url']).searchParams
+  const id = params.get('id')
   const data = await request.formData()
   const payload = data['payload']
   console.log(data)
