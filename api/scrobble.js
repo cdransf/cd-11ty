@@ -116,6 +116,12 @@ export default async (request) => {
     await scrobbles.setJSON('now-playing', JSON.stringify(trackScrobbleData))
     let scrobbleUpdate = scrobbleData
     let windowUpdate = windowData;
+    console.log('### SCROBBLE')
+    console.log(scrobbleUpdate)
+    console.log('### SCROBBLE')
+    console.log('### WINDOW')
+    console.log(windowUpdate)
+    console.log('### WINDOW')
     if (scrobbleUpdate['data']) scrobbleUpdate['data'].push(trackScrobbleData)
     if (!scrobbleUpdate['data']) scrobbleUpdate = { data: [trackScrobbleData] }
     if (windowData['data']) windowUpdate['data'].push(trackScrobbleData)
