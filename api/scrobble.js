@@ -74,7 +74,7 @@ export default async (request, context) => {
         console.log(err);
         return {}
       });
-      genre = genreRes['genres'].sort((a, b) => b.count - a.count)[0]?.["name"] || "";
+      const genre = genreRes['genres'].sort((a, b) => b.count - a.count)[0]?.['name'] || '';
       const artistData = {
         mbid,
         genre,
