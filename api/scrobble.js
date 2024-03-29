@@ -6,8 +6,6 @@ export default async (request, context) => {
   const id = params.get('id')
   const data = await request.formData()
   const payload = data['payload']
-  console.log(data)
-  console.log(payload)
 
   if (!id) return new Response(JSON.stringify({
       status: 'Bad request',
