@@ -57,9 +57,9 @@ export default async (request, context) => {
           console.log(err);
           return {}
         });
-      const track = trackRes["recenttracks"]["track"][0];
+      const trackData = trackRes["recenttracks"]["track"][0];
       let mbid = trackRes['track']['artist']['mbid']
-      const mbidMap = () => mbidRes[track["artist"]["#text"].toLowerCase()] || "";
+      const mbidMap = () => mbidRes[trackData['artist']['#text'].toLowerCase()] || "";
 
       // mbid mismatches
       if (mbidMap() !== "") mbid = mbidMap();
