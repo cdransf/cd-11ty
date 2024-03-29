@@ -7,7 +7,7 @@ export default async (request, context) => {
   const data = await request.formData()
   const payload = data['payload']
 
-  console.log(payload)
+  console.log(data)
 
   const debug = getStore('debug')
   await debug.setJSON('debug', JSON.stringify(payload))
