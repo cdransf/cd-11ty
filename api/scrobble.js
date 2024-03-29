@@ -12,10 +12,12 @@ export default async (request, context) => {
   const id = params.get('id')
   const data = await request.formData()
   const payload = data.get('payload')
+  console.log(payload)
   const artist = payload['Metadata']['grandparentTitle']
   const album = payload['Metadata']['parentTitle']
   const track = payload['Metadata']['title']
   const artists = getStore('artists')
+
 
   const debug = getStore('debug')
   await debug.setJSON('debug', JSON.stringify(payload))
