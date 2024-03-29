@@ -5,11 +5,7 @@ export default async (request, context) => {
   const params = new URL(request['url']).searchParams
   const id = params.get('id')
   const data = await request.formData()
-  const payload = data['payload']
-
-  console.log(data)
-  console.log(payload)
-  console.log(typeof payload)
+  const payload = data.get('payload')
 
   const debug = getStore('debug')
   await debug.setJSON('debug', JSON.stringify(payload))
@@ -28,6 +24,9 @@ export default async (request, context) => {
 
   if (payload?.event === 'media.scrobble') {
     console.log('scrobble')
+      console.log(data)
+    console.log(payload)
+    console.log(typeof payload)
   }
 
   return new Response(JSON.stringify({
