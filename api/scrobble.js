@@ -116,10 +116,10 @@ export default async (request) => {
     await scrobbles.setJSON('now-playing', JSON.stringify(trackScrobbleData))
     let scrobbleUpdate = scrobbleData
     let windowUpdate = windowData;
-    if (scrobbleUpdate) scrobbleUpdate['data'].push(trackScrobbleData)
-    if (!scrobbleUpdate) scrobbleUpdate = { data: [trackScrobbleData] }
-    if (windowData) windowUpdate['data'].push(trackScrobbleData)
-    if (!windowData) windowUpdate = { data: [trackScrobbleData] }
+    if (scrobbleUpdate['data']) scrobbleUpdate['data'].push(trackScrobbleData)
+    if (!scrobbleUpdate['data']) scrobbleUpdate = { data: [trackScrobbleData] }
+    if (windowData['data']) windowUpdate['data'].push(trackScrobbleData)
+    if (!windowData['data']) windowUpdate = { data: [trackScrobbleData] }
     await scrobbles.setJSON(`${weekStop()}`, JSON.stringify(scrobbleUpdate))
     await scrobbles.setJSON('window', JSON.stringify(filterOldScrobbles(windowUpdate.data)))
   }
