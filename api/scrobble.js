@@ -13,11 +13,13 @@ const weekStop = () => {
   return nextSunday.toMillis()
 }
 
-const twoWeeksAgo = DateTime.now().minus({ weeks: 2 });
-const filterOldScrobbles = (scrobbles) => scrobbles.filter(scrobble => {
-  let timestamp = DateTime.fromISO(scrobble.timestamp)
-  return timestamp.diff(twoWeeksAgo).as('weeks') <= -2
-});
+const filterOldScrobbles = (scrobbles) => {
+    const twoWeeksAgo = DateTime.now().minus({ weeks: 2 });
+    return scrobbles.filter(obj => {
+        const timestamp = DateTime.fromISO(obj.timestamp);
+        return timestamp >= twoWeeksAgo;
+    });
+}
 
 export default async (request) => {
   const ACCOUNT_ID_PLEX = Netlify.env.get("ACCOUNT_ID_PLEX");
@@ -123,10 +125,6 @@ export default async (request) => {
     if (windowData?.['data']) windowUpdate['data'].push(trackScrobbleData)
     if (!windowData?.['data']) windowUpdate = { data: [trackScrobbleData] }
     windowUpdate = { data: filterOldScrobbles(windowUpdate.data) }
-    console.log('### SCROBBLE SET')
-    console.log(scrobbleUpdate);
-    console.log('### WINDOW SET')
-    console.log(windowUpdate);
     await scrobbles.setJSON(`${weekStop()}`, scrobbleUpdate)
     await scrobbles.setJSON('window', windowUpdate)
   }
