@@ -119,8 +119,8 @@ export default async (request) => {
     if (!scrobbleUpdate) scrobbleUpdate = { data: [trackScrobbleData] }
     if (windowData) windowUpdate['data'].push(trackScrobbleData)
     if (!windowData) windowUpdate = { data: [trackScrobbleData] }
-    await scrobbleData.setJSON(`${weekStop()}`, JSON.stringify(scrobbleUpdate))
-    await windowData.setJSON('window-data', JSON.stringify(filterOldScrobbles(windowUpdate)))
+    await scrobbles.setJSON(`${weekStop()}`, JSON.stringify(scrobbleUpdate))
+    await scrobbles.setJSON('window', JSON.stringify(filterOldScrobbles(windowUpdate)))
   }
 
   return new Response(JSON.stringify({
