@@ -9,7 +9,7 @@ export default async (request, context) => {
 
   console.log(data)
   console.log(payload)
-  console.log(JSON.stringify(payload))
+  console.log(typeof payload)
 
   const debug = getStore('debug')
   await debug.setJSON('debug', JSON.stringify(payload))
