@@ -110,15 +110,16 @@ export default async (request) => {
       timestamp,
       artistUrl
     }
-    const scrobbleData = await scrobbles.get(weekStop(1), { type: 'json'})
+    const scrobbleData = await scrobbles.get(`${weekStop()}`, { type: 'json'})
     const windowData = await scrobbles.get('window', { type: 'json'})
+    scrobbleData.setJSON('now-playing', JSON.stringify(scrobbleUpdate))
     let scrobbleUpdate = scrobbleData
     let windowUpdate = windowData;
     if (scrobbleUpdate) scrobbleUpdate['data'].push(trackScrobbleData)
     if (!scrobbleUpdate) scrobbleUpdate = { data: [trackScrobbleData] }
     if (windowData) windowUpdate['data'].push(trackScrobbleData)
     if (!windowData) windowUpdate = { data: [trackScrobbleData] }
-    scrobbleData.setJSON('now-playing', JSON.stringify(scrobbleUpdate))
+    scrobbleData.setJSON(`${weekStop()}`, JSON.stringify(scrobbleUpdate))
     windowData.setJSON('window-data', JSON.stringify(filterOldScrobbles(windowUpdate)))
   }
 
