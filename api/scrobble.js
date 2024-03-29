@@ -15,8 +15,8 @@ const weekStop = () => {
 
 const twoWeeksAgo = DateTime.now().minus({ weeks: 2 });
 const filterOldScrobbles = (scrobbles) => scrobbles.filter(scrobble => {
-    let timestamp = DateTime.fromISO(scrobble.timestamp)
-    return timestamp.diff(twoWeeksAgo).as('weeks') <= -2
+  let timestamp = DateTime.fromISO(scrobble.timestamp)
+  return timestamp.diff(twoWeeksAgo).as('weeks') <= -2
 });
 
 export default async (request) => {
@@ -101,7 +101,7 @@ export default async (request) => {
 
     // scrobble logic
     artistInfo = await artists.get(artistKey, { type: 'json'})
-    console.log(artistInfo)
+    console.log(artistInfo['mbid'])
     const artistUrl = `https://musicbrainz.org/artist/${artistInfo['mbid']}`
     const trackScrobbleData = {
       track,
