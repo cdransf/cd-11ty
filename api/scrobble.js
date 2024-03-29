@@ -114,10 +114,10 @@ export default async (request) => {
     await scrobbles.setJSON('now-playing', {...trackScrobbleData, ...{ url: `https://musicbrainz.org/artist/${artistInfo?.['mbid']}`}})
     let scrobbleUpdate = scrobbleData
     let windowUpdate = windowData;
-    if (scrobbleUpdate['data']) scrobbleUpdate['data'].push(trackScrobbleData)
-    if (!scrobbleUpdate['data']) scrobbleUpdate = { data: [trackScrobbleData] }
-    if (windowData['data']) windowUpdate['data'].push(trackScrobbleData)
-    if (!windowData['data']) windowUpdate = { data: [trackScrobbleData] }
+    if (scrobbleUpdate?.['data']) scrobbleUpdate['data'].push(trackScrobbleData)
+    if (!scrobbleUpdate?.['data']) scrobbleUpdate = { data: [trackScrobbleData] }
+    if (windowData?.['data']) windowUpdate['data'].push(trackScrobbleData)
+    if (!windowData?.['data']) windowUpdate = { data: [trackScrobbleData] }
     windowUpdate = { data: filterOldScrobbles(windowUpdate.data) }
     await scrobbles.setJSON(`${weekStop()}`, scrobbleUpdate)
     await scrobbles.setJSON('window', windowUpdate)
