@@ -8,7 +8,7 @@ const sanitizeMediaString = (string) => {
 
 const weekStop = () => {
   const currentDate = DateTime.now()
-  let nextSunday = currentDate.plus({ 7: (7 - currentDate.weekday) % 7 })
+  let nextSunday = currentDate.plus({ days: (7 - currentDate.weekday) % 7 })
   nextSunday = nextSunday.set({ hour: 0, minute: 0, second: 0, millisecond: 0 })
   return nextSunday.toMillis()
 }
