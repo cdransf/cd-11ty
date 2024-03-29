@@ -12,8 +12,6 @@ export default async (request, context) => {
   const id = params.get('id')
   const data = await request.formData()
   const payload = JSON.parse(data.get('payload'))
-  console.log(payload)
-  console.log(payload['Metadata'])
   const artists = getStore('artists')
 
 
@@ -80,8 +78,10 @@ export default async (request, context) => {
       genre = genreRes['genres'].sort((a, b) => b.count - a.count)[0]?.["name"] || "";
       const artistData = {
         mbid,
-        genre
+        genre,
+        image: `https://cdn.coryd.dev/artists/${encodeURIComponent(sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase())}.jpg`
       }
+      console.log(artistData)
       await artists.setJSON(artistKey, JSON.stringify(artistData))
     }
   }
