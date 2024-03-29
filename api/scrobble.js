@@ -111,6 +111,10 @@ export default async (request) => {
     }
     const scrobbleData = await scrobbles.get(`${weekStop()}`, { type: 'json'})
     const windowData = await scrobbles.get('window', { type: 'json'})
+    console.log('### SCROBBLE START')
+    console.log(scrobbleData);
+    console.log('### WINDOW START')
+    console.log(windowData);
     await scrobbles.setJSON('now-playing', {...trackScrobbleData, ...{ url: `https://musicbrainz.org/artist/${artistInfo?.['mbid']}`}})
     let scrobbleUpdate = scrobbleData
     let windowUpdate = windowData;
@@ -119,6 +123,10 @@ export default async (request) => {
     if (windowData?.['data']) windowUpdate['data'].push(trackScrobbleData)
     if (!windowData?.['data']) windowUpdate = { data: [trackScrobbleData] }
     windowUpdate = { data: filterOldScrobbles(windowUpdate.data) }
+    console.log('### SCROBBLE SET')
+    console.log(scrobbleUpdate);
+    console.log('### WINDOW SET')
+    console.log(windowUpdate);
     await scrobbles.setJSON(`${weekStop()}`, scrobbleUpdate)
     await scrobbles.setJSON('window', windowUpdate)
   }
