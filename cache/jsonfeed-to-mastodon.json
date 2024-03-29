@@ -11973,5 +11973,16 @@
       "https://social.lol/users/cory/statuses/112174628474515995"
     ],
     "lastTootTimestamp": 1711648994114
+  },
+  "https://app.thestorygraph.com/books/a77dc6e1-8809-480f-b9ab-0a5ca707104d": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvYTc3ZGM2ZTEtODgwOS00ODBmLWI5YWItMGE1Y2E3MDcxMDRk",
+    "title": "📖: Finding Me",
+    "url": "https://app.thestorygraph.com/books/a77dc6e1-8809-480f-b9ab-0a5ca707104d",
+    "content_text": "📖: Finding Me #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/a77dc6e1-8809-480f-b9ab-0a5ca707104d",
+    "date_published": "Wed, 27 Mar 2024 17:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112177460647263707"
+    ],
+    "lastTootTimestamp": 1711692209628
   }
 }
