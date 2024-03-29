@@ -11,8 +11,4 @@ node_modules
 .DS_Store
 
 # netlify
-!.netlify/
-.netlify/*
-!.netlify/blobs
-.netlify/blobs/*
-!.netlify/blobs/deploy
+.netlify
