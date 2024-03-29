@@ -100,8 +100,9 @@ export default async (request) => {
     }
 
     // scrobble logic
-    artistInfo = await artists.get(artistKey, { type: 'json'})
-    console.log('artistInfo', artistInfo)
+    artistInfo = await artists.get(artistKey)
+    console.log(JSON.parse(artistInfo))
+    console.log('artistInfo["mbid"]', JSON.parse(artistInfo)["mbid"])
     const artistUrl = `https://musicbrainz.org/artist/${artistInfo?.['mbid']}`
     const trackScrobbleData = {
       track,
