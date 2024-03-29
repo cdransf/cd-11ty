@@ -24,10 +24,6 @@ export default async (request) => {
   const MUSIC_KEY = Netlify.env.get("API_KEY_LASTFM");
   const params = new URL(request['url']).searchParams
   const id = params.get('id')
-  const data = await request.formData()
-  const payload = JSON.parse(data.get('payload'))
-  const artists = getStore('artists')
-  const scrobbles = getStore('scrobbles')
 
   if (!id) return new Response(JSON.stringify({
       status: 'Bad request',
@@ -40,6 +36,11 @@ export default async (request) => {
     }),
     { headers: { "Content-Type": "application/json" } }
   )
+
+  const data = await request.formData()
+  const payload = JSON.parse(data.get('payload'))
+  const artists = getStore('artists')
+  const scrobbles = getStore('scrobbles')
 
   if (payload?.event === 'media.scrobble') {
     const artist = payload['Metadata']['grandparentTitle']
@@ -101,19 +102,16 @@ export default async (request) => {
 
     // scrobble logic
     artistInfo = await artists.get(artistKey, { type: 'json'})
-    console.log(JSON.parse(artistInfo))
-    const artistUrl = `https://musicbrainz.org/artist/${artistInfo?.['mbid']}`
     const trackScrobbleData = {
       track,
       album,
       artist,
       trackNumber,
-      timestamp,
-      artistUrl
+      timestamp
     }
     const scrobbleData = await scrobbles.get(`${weekStop()}`, { type: 'json'})
     const windowData = await scrobbles.get('window', { type: 'json'})
-    await scrobbles.setJSON('now-playing', trackScrobbleData)
+    await scrobbles.setJSON('now-playing', {...trackScrobbleData, ...{ url: `https://musicbrainz.org/artist/${artistInfo?.['mbid']}`}})
     let scrobbleUpdate = scrobbleData
     let windowUpdate = windowData;
     if (scrobbleUpdate['data']) scrobbleUpdate['data'].push(trackScrobbleData)
