@@ -112,15 +112,15 @@ export default async (request) => {
     }
     const scrobbleData = await scrobbles.get(`${weekStop()}`, { type: 'json'})
     const windowData = await scrobbles.get('window', { type: 'json'})
-    scrobbleData.setJSON('now-playing', JSON.stringify(trackScrobbleData))
+    await scrobbles.setJSON('now-playing', JSON.stringify(trackScrobbleData))
     let scrobbleUpdate = scrobbleData
     let windowUpdate = windowData;
     if (scrobbleUpdate) scrobbleUpdate['data'].push(trackScrobbleData)
     if (!scrobbleUpdate) scrobbleUpdate = { data: [trackScrobbleData] }
     if (windowData) windowUpdate['data'].push(trackScrobbleData)
     if (!windowData) windowUpdate = { data: [trackScrobbleData] }
-    scrobbleData.setJSON(`${weekStop()}`, JSON.stringify(scrobbleUpdate))
-    windowData.setJSON('window-data', JSON.stringify(filterOldScrobbles(windowUpdate)))
+    await scrobbleData.setJSON(`${weekStop()}`, JSON.stringify(scrobbleUpdate))
+    await windowData.setJSON('window-data', JSON.stringify(filterOldScrobbles(windowUpdate)))
   }
 
   return new Response(JSON.stringify({
