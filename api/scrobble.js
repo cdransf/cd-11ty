@@ -112,7 +112,7 @@ export default async (request) => {
     }
     const scrobbleData = await scrobbles.get(`${weekStop()}`, { type: 'json'})
     const windowData = await scrobbles.get('window', { type: 'json'})
-    scrobbleData.setJSON('now-playing', JSON.stringify(scrobbleUpdate))
+    scrobbleData.setJSON('now-playing', JSON.stringify(trackScrobbleData))
     let scrobbleUpdate = scrobbleData
     let windowUpdate = windowData;
     if (scrobbleUpdate) scrobbleUpdate['data'].push(trackScrobbleData)
