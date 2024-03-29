@@ -14,10 +14,6 @@ export default async (request, context) => {
   const payload = JSON.parse(data.get('payload'))
   const artists = getStore('artists')
 
-
-  const debug = getStore('debug')
-  await debug.setJSON('debug', JSON.stringify(payload))
-
   if (!id) return new Response(JSON.stringify({
       status: 'Bad request',
     }),
@@ -36,7 +32,9 @@ export default async (request, context) => {
     const album = payload['Metadata']['parentTitle']
     const track = payload['Metadata']['title']
     const artistKey = sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()
-    const artistInfo = await artists.getJSON(artistKey)
+    const artistInfo = await artists.get(artistKey, { type: 'json'}) // get the artist blob
+
+    // if there is no artist blob, populate one
     if (!artistInfo) {
       const trackRes = await fetch(
         `https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=${MUSIC_KEY}&artist=${artist}&track=${track}&format=json`,
