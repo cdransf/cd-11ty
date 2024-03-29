@@ -101,7 +101,8 @@ export default async (request) => {
 
     // scrobble logic
     artistInfo = await artists.get(artistKey, { type: 'json'})
-    console.log(artistInfo?.['mbid'])
+    console.log(artistInfo)
+    console.log(typeof artistInfo)
     const artistUrl = `https://musicbrainz.org/artist/${artistInfo?.['mbid']}`
     const trackScrobbleData = {
       track,
@@ -126,8 +127,9 @@ export default async (request) => {
     if (!scrobbleUpdate['data']) scrobbleUpdate = { data: [trackScrobbleData] }
     if (windowData['data']) windowUpdate['data'].push(trackScrobbleData)
     if (!windowData['data']) windowUpdate = { data: [trackScrobbleData] }
+    windowUpdate = { data: filterOldScrobbles(windowUpdate.data) }
     await scrobbles.setJSON(`${weekStop()}`, JSON.stringify(scrobbleUpdate))
-    await scrobbles.setJSON('window', JSON.stringify(filterOldScrobbles(windowUpdate.data)))
+    await scrobbles.setJSON('window', JSON.stringify(windowUpdate))
   }
 
   return new Response(JSON.stringify({
