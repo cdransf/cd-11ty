@@ -111,7 +111,7 @@ export default async () => {
     }
   }
 
-  const scrobbleData = await scrobbles.get('window', { type: 'json'})
+  const scrobbleData = await scrobbles.get('now-playing', { type: 'json'})
 
   return new Response(JSON.stringify({
       content: `${emojiMap(
