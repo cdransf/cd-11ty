@@ -14,3 +14,42 @@ export const sanitizeMediaString = (string) => {
 }
 
 export const mbidMap = (artist) => mbidPatches[artist.toLowerCase()] || ''
+
+export const buildChart = (tracks) => {
+  const artistsData = {}
+  const albumsData = {}
+  const tracksData = {}
+
+  const objectToArray = (inputObject) => {
+    return Object.keys(inputObject).map(key => ({
+      name: key,
+      count: inputObject[key]
+    }));
+  };
+
+  tracks.forEach(track => {
+    if (!tracksData[track['track']]) {
+      tracksData[track['track']] = 1
+    } else {
+      tracksData[track['track']]++
+    }
+
+    if (!artistsData[track['artist']]) {
+      artistsData[track['artist']] = 1
+    } else {
+      artistsData[track['artist']]++
+    }
+
+    if (!albumsData[track['album']]) {
+      albumsData[track['album']] = 1
+    } else {
+      albumsData[track['album']]++
+    }
+  })
+
+  return {
+    artists: objectToArray(artistsData).sort((a, b) => b.count - a.count),
+    albums: objectToArray(albumsData).sort((a, b) => b.count - a.count),
+    tracks: objectToArray(tracksData).sort((a, b) => b.count - a.count),
+  }
+}
