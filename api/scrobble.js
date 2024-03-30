@@ -15,11 +15,6 @@ const weekStop = () => {
 
 const filterOldScrobbles = (scrobbles) => {
     const twoWeeksAgo = DateTime.now().minus({ weeks: 2 });
-    console.log(scrobbles)
-    console.log(scrobbles.filter(scrobble => {
-        const timestamp = DateTime.fromISO(scrobble.timestamp);
-        return timestamp >= twoWeeksAgo;
-    }))
     return scrobbles.filter(scrobble => {
         const timestamp = DateTime.fromISO(scrobble.timestamp);
         return timestamp >= twoWeeksAgo;
@@ -104,11 +99,11 @@ export default async (request) => {
         genre,
         image: `https://cdn.coryd.dev/artists/${encodeURIComponent(sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase())}.jpg`
       }
+      artistInfo = artistData
       await artists.setJSON(artistKey, artistData)
     }
 
     // scrobble logic
-    artistInfo = await artists.get(artistKey, { type: 'json'})
     const trackScrobbleData = {
       track,
       album,
@@ -118,10 +113,6 @@ export default async (request) => {
     }
     const scrobbleData = await scrobbles.get(`${weekStop()}`, { type: 'json'})
     const windowData = await scrobbles.get('window', { type: 'json'})
-    console.log('### SCROBBLE START')
-    console.log(scrobbleData);
-    console.log('### WINDOW START')
-    console.log(windowData);
     await scrobbles.setJSON('now-playing', {...trackScrobbleData, ...{ url: `https://musicbrainz.org/artist/${artistInfo?.['mbid']}`}})
     let scrobbleUpdate = scrobbleData
     let windowUpdate = windowData;
