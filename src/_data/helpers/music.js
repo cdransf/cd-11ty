@@ -34,10 +34,10 @@ export const buildChart = (tracks) => {
       tracksData[track['track']]++
     }
 
-    if (!artistsData[track['artist']]) {
-      artistsData[track['artist']] = 1
+    if (!artistsData[artistCapitalization(track['artist'])]) {
+      artistsData[artistCapitalization(track['artist'])] = 1
     } else {
-      artistsData[track['artist']]++
+      artistsData[artistCapitalization(track['artist'])]++
     }
 
     if (!albumsData[track['album']]) {

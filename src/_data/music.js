@@ -1,5 +1,5 @@
 import EleventyFetch from '@11ty/eleventy-fetch';
-import { artistCapitalization, buildChart } from './helpers/music.js'
+import { buildChart } from './helpers/music.js'
 
 export default async function () {
   const API_KEY_MUSIC = process.env.API_KEY_MUSIC;
@@ -9,6 +9,5 @@ export default async function () {
     type: 'json',
   }).catch();
   const resObj = await res;
-  console.log(buildChart(resObj['data']))
   return buildChart(resObj['data'])
 }
