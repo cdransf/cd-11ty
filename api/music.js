@@ -29,7 +29,7 @@ export default async (request) => {
   const scrobbles = getStore('scrobbles')
   const scrobbleData = []
   if (weeksArr.length > 0) {
-    weeks.forEach(async (week) => {
+    weeksArr.forEach(async (week) => {
       const weekData = await scrobbles.get(week, { type: 'json'})
       scrobbleData.push(weekData['data'])
     })
