@@ -11,19 +11,17 @@ const sanitizeMediaString = (string) => {
     .replace(/[\(\)\[\]\{\}]/g, '')
 }
 
-const weekStop = () => {
-  const currentDate = DateTime.now()
-  let nextSunday = currentDate.plus({ days: (7 - currentDate.weekday) % 7 })
-  nextSunday = nextSunday.set({ hour: 0, minute: 0, second: 0, millisecond: 0 })
-  return nextSunday.toMillis()
+const weekKey = () => {
+  const currentDate = DateTime.now();
+  return `${currentDate.year}-${currentDate.weekNumber}`
 }
 
 const filterOldScrobbles = (scrobbles) => {
-    const twoWeeksAgo = DateTime.now().minus({ weeks: 2 });
-    return scrobbles.filter(scrobble => {
-        const timestamp = DateTime.fromISO(scrobble.timestamp);
-        return timestamp >= twoWeeksAgo;
-    });
+  const twoWeeksAgo = DateTime.now().minus({ weeks: 2 });
+  return scrobbles.filter(scrobble => {
+    const timestamp = DateTime.fromISO(scrobble.timestamp);
+    return timestamp >= twoWeeksAgo;
+  });
 }
 
 export default async (request) => {
@@ -142,7 +140,7 @@ export default async (request) => {
       trackNumber,
       timestamp
     }
-    const scrobbleData = await scrobbles.get(`${weekStop()}`, { type: 'json'})
+    const scrobbleData = await scrobbles.get(`${weekKey()}`, { type: 'json'})
     const windowData = await scrobbles.get('window', { type: 'json'})
     await scrobbles.setJSON('now-playing', {...trackScrobbleData, ...{ url: `https://musicbrainz.org/artist/${artistInfo?.['mbid']}`}})
     let scrobbleUpdate = scrobbleData
@@ -152,7 +150,7 @@ export default async (request) => {
     if (windowData?.['data']) windowUpdate['data'].push(trackScrobbleData)
     if (!windowData?.['data']) windowUpdate = { data: [trackScrobbleData] }
     windowUpdate = { data: filterOldScrobbles(windowUpdate.data) }
-    await scrobbles.setJSON(`${weekStop()}`, scrobbleUpdate)
+    await scrobbles.setJSON(`${weekKey()}`, scrobbleUpdate)
     await scrobbles.setJSON('window', windowUpdate)
   }
 
