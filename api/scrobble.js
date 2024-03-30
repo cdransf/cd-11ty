@@ -3,8 +3,13 @@ import { DateTime } from 'luxon'
 
 const sanitizeMediaString = (string) => {
   const normalizedStr = string.normalize('NFD');
-  return normalizedStr.replace(/[\u0300-\u036f]/g, '').replace(/\.{3}/g, '');
-};
+  return normalizedStr
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[\u2010]/g, '-')
+    .replace(/\.{3}/g, '')
+    .replace(/\?/g, '')
+    .replace(/[\(\)\[\]\{\}]/g, '')
+}
 
 const weekStop = () => {
   const currentDate = DateTime.now()
@@ -59,7 +64,7 @@ export default async (request) => {
     // if there is no artist blob, populate one
     if (!artistInfo) {
       const artistRes = await fetch(
-        `https://ws.audioscrobbler.com/2.0/?method=artist.getInfo&api_key=${MUSIC_KEY}&artist=${encodeURIComponent(sanitizeMediaString(artist).replace(/\s+/g, '+').toLowerCase())}&format=json`,
+        `https://ws.audioscrobbler.com/2.0/?method=artist.getInfo&api_key=${MUSIC_KEY}&artist=${sanitizeMediaString(artist).replace(/\s+/g, '+').toLowerCase()}&format=json`,
         {
           type: "json",
         }
@@ -123,8 +128,8 @@ export default async (request) => {
       const mbid = albumRes['album']['mbid'] || ''
       const albumObj = {
         mbid,
-        image: `https://cdn.coryd.dev/albums/${encodeURIComponent(sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase())}-${encodeURIComponent(sanitizeMediaString(album.replace(/[:\/\\,'']+/g
-      , '').replace(/\s+/g, '-').toLowerCase()))}.jpg`
+        image: `https://cdn.coryd.dev/albums/${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
+      , '').replace(/\s+/g, '-').toLowerCase())}.jpg`
       }
       await albums.setJSON(albumKey, albumObj)
     }

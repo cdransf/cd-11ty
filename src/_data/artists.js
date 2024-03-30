@@ -14,7 +14,7 @@ export default async function () {
       title: artistCapitalization(artist['name']),
       plays: artist['playcount'],
       rank: artist['@attr']['rank'],
-      image: `https://cdn.coryd.dev/artists/${encodeURIComponent(sanitizeMediaString(artist['name']).replace(/\s+/g, '-').toLowerCase())}.jpg`,
+      image: `https://cdn.coryd.dev/artists/${sanitizeMediaString(artist['name']).replace(/\s+/g, '-').toLowerCase()}.jpg`,
       url: mbid
         ? `https://musicbrainz.org/artist/${mbid}`
         : `https://musicbrainz.org/search?query=${artist['name'].replace(

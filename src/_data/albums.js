@@ -10,8 +10,8 @@ export default async function () {
       artist: artistCapitalization(album['artist']['name']),
       plays: album['playcount'],
       rank: album['@attr']['rank'],
-      image: `https://cdn.coryd.dev/albums/${encodeURIComponent(sanitizeMediaString(album['artist']['name']).replace(/\s+/g, '-').toLowerCase())}-${encodeURIComponent(sanitizeMediaString(album['name'].replace(/[:\/\\,'']+/g
-      , '').replace(/\s+/g, '-').toLowerCase()))}.jpg`,
+      image: `https://cdn.coryd.dev/albums/${sanitizeMediaString(album['artist']['name']).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album['name'].replace(/[:\/\\,'']+/g
+      , '').replace(/\s+/g, '-').toLowerCase())}.jpg`,
       url: album['mbid']
         ? `https://musicbrainz.org/album/${album['mbid']}`
         : `https://musicbrainz.org/taglookup/index?tag-lookup.artist=${album['artist'][
