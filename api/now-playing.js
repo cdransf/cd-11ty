@@ -1,3 +1,5 @@
+import { getStore } from '@netlify/blobs'
+
 const emojiMap = (genre, artist) => {
   const DEFAULT = "🎧";
   const normalizedArtist = artist?.toLowerCase();
@@ -69,6 +71,7 @@ const emojiMap = (genre, artist) => {
 export default async () => {
   const TV_KEY = Netlify.env.get("API_KEY_TRAKT");
   const MUSIC_KEY = Netlify.env.get("API_KEY_LASTFM");
+  const scrobbles = getStore('scrobbles')
   const headers = {
     "Content-Type": "application/json",
     "Cache-Control": "public, s-maxage=360, stale-while-revalidate=1080",
@@ -108,73 +111,14 @@ export default async () => {
     }
   }
 
-  const trackRes = await fetch(
-    `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=coryd_&api_key=${MUSIC_KEY}&limit=1&format=json`,
-    {
-      type: "json",
-    }
-  ).then((data) => {
-    if (data.ok) return data.json()
-    throw new Error('Something went wrong with the Last.fm endpoint.');
-  }).catch(err => {
-      console.log(err);
-      return {}
-    });
-  const mbidRes = await fetch("https://coryd.dev/api/mbids", {
-    type: "json",
-  }).then((data) => {
-    if (data.ok) return data.json()
-    throw new Error('Something went wrong with the mbid endpoint.');
-  }).catch(err => {
-      console.log(err);
-      return {}
-    });
-  const artistCapitalizationRes = await fetch("https://coryd.dev/api/artist-capitalization", {
-    type: "json",
-  }).then((data) => {
-    if (data.ok) return data.json()
-    throw new Error('Something went wrong with the artist capitalization endpoint.');
-  }).catch(err => {
-      console.log(err);
-      return {}
-    });
-  const track = trackRes["recenttracks"]["track"][0];
-  let mbid = track["artist"]["mbid"];
-  let genre = '';
-  const artistCapitalization = (artist) => artistCapitalizationRes[artist?.toLowerCase()] || artist
-  const artist = artistCapitalization(track["artist"]["#text"]);
-  const mbidMap = () => mbidRes[track["artist"]["#text"].toLowerCase()] || "";
-
-  // mbid mismatches
-  if (mbidMap() !== "") mbid = mbidMap();
-
-  const artistUrl = mbid
-    ? `https://musicbrainz.org/artist/${mbid}`
-    : `https://last.fm/music/${track["artist"]["#text"].toLowerCase().replace(/\s+/g, "+")}`;
-  const trackUrl = track["mbid"]
-    ? `https://musicbrainz.org/track/${track["mbid"]}`
-    : track['url'];
-
-  if (mbid && mbid !== "") {
-    const genreUrl = `https://musicbrainz.org/ws/2/artist/${mbid}?inc=aliases+genres&fmt=json`;
-    const genreRes = await fetch(genreUrl, {
-      type: "json",
-    }).then((data) => {
-      if (data.ok) return data.json()
-      throw new Error('Something went wrong with the MusicBrainz endpoint.');
-    }).catch(err => {
-      console.log(err);
-      return {}
-    });
-    genre = genreRes['genres'].sort((a, b) => b.count - a.count)[0]?.["name"] || "";
-  }
+  const scrobbleData = await scrobbles.get('window', { type: 'json'})
 
   return new Response(JSON.stringify({
       content: `${emojiMap(
-        genre,
-        artist
-      )} <a href="${trackUrl}">${track["name"]}</a> by <a href="${artistUrl}">${
-        artist
+        scrobbleData['genre'],
+        scrobbleData['artist']
+      )} ${track["name"]} by <a href="${scrobbleData['url']}">${
+        scrobbleData['artist']
       }</a>`,
     }),
     { headers }
