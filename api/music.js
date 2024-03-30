@@ -4,7 +4,7 @@ export default async (request) => {
   const API_KEY_MUSIC = Netlify.env.get('API_KEY_MUSIC');
   const params = new URL(request['url']).searchParams
   const key = params.get('key')
-  const weeks = params.get('key').split(',')
+  const weeks = params.get('key')?.split(',')
 
   if (!key) return new Response(JSON.stringify({
       status: 'Bad request',
@@ -26,8 +26,10 @@ export default async (request) => {
       scrobbleData.push(weekData['data'])
     })
   } else {
-    const weekData = await scrobbles.get('window', { type: 'json'})
-    scrobbleData.push(weekData['data'])
+    const windowData = await scrobbles.get('window', { type: 'json'})
+    console.log(windowData)
+    console.log(scrobbleData)
+    scrobbleData.push(windowData['data'])
   }
 
   return new Response(JSON.stringify({ data: scrobbleData }),
