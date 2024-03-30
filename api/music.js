@@ -31,14 +31,14 @@ export default async (request) => {
   if (weeksArr.length > 0) {
     weeksArr.forEach(async (week) => {
       const weekData = await scrobbles.get(week, { type: 'json'})
-      scrobbleData.push(weekData['data'])
+      scrobbleData.push(...weekData['data'])
     })
   } else if (weeksString) {
     const weekData = await scrobbles.get(weeksString, { type: 'json'})
-    scrobbleData.push(weekData['data'])
+    scrobbleData.push(...weekData['data'])
   } else {
     const windowData = await scrobbles.get('window', { type: 'json'})
-    scrobbleData.push(windowData['data'])
+    scrobbleData.push(...windowData['data'])
   }
 
   return new Response(JSON.stringify({ data: scrobbleData }),
