@@ -19,10 +19,6 @@ export default async (request) => {
   )
 
   const scrobbles = getStore('scrobbles')
-  const weekKey = () => {
-    const currentDate = DateTime.now();
-    return `${currentDate.year}-${currentDate.weekNumber}`
-  }
   const scrobbleData = []
   if (weeks) {
     weeks.forEach(async (week) => {
@@ -30,7 +26,7 @@ export default async (request) => {
       scrobbleData.push(weekData['data'])
     })
   } else {
-    const weekData = await scrobbles.get(weekKey(), { type: 'json'})
+    const weekData = await scrobbles.get('window', { type: 'json'})
     scrobbleData.push(weekData['data'])
   }
 
