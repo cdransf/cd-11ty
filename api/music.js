@@ -4,7 +4,15 @@ export default async (request) => {
   const API_KEY_MUSIC = Netlify.env.get('API_KEY_MUSIC');
   const params = new URL(request['url']).searchParams
   const key = params.get('key')
-  const weeks = params.get('key')?.split(',')
+  const weeks = params.get('weeks')
+  let weeksArr = []
+  let weeksString
+
+  if (weeks.includes(',')) {
+    weeksArr = weeks.split(',')
+  } else {
+    weeksString = weeks
+  }
 
   if (!key) return new Response(JSON.stringify({
       status: 'Bad request',
@@ -20,15 +28,16 @@ export default async (request) => {
 
   const scrobbles = getStore('scrobbles')
   const scrobbleData = []
-  if (weeks) {
+  if (weeksArr.length > 0) {
     weeks.forEach(async (week) => {
       const weekData = await scrobbles.get(week, { type: 'json'})
       scrobbleData.push(weekData['data'])
     })
+  } else if (weeksString) {
+    const weekData = await scrobbles.get(weeksString, { type: 'json'})
+    scrobbleData.push(weekData['data'])
   } else {
     const windowData = await scrobbles.get('window', { type: 'json'})
-    console.log(windowData)
-    console.log(scrobbleData)
     scrobbleData.push(windowData['data'])
   }
 
