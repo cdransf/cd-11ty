@@ -40,8 +40,15 @@ export default async (request) => {
     const windowData = await scrobbles.get('window', { type: 'json'})
     scrobbleData.push(...windowData['data'])
   }
+  const artists = getStore('artists')
+  const artistData = await artists.list()
 
-  return new Response(JSON.stringify({ data: scrobbleData }),
+  console.log(artistData)
+
+  return new Response(JSON.stringify({ data: {
+    scrobbles: scrobbleData,
+    artists: artistData,
+  } }),
     { headers: { "Content-Type": "application/json" } }
   )
 }
