@@ -42,6 +42,7 @@ export default async (request) => {
   const data = await request.formData()
   const payload = JSON.parse(data.get('payload'))
   const artists = getStore('artists')
+  const albums = getStore('albums')
   const scrobbles = getStore('scrobbles')
 
   if (payload?.event === 'media.scrobble') {
@@ -51,12 +52,14 @@ export default async (request) => {
     const trackNumber = payload['Metadata']['index']
     const timestamp = DateTime.now()
     const artistKey = sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()
+    const albumKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album).replace(/\s+/g, '-').toLowerCase()}`
     let artistInfo = await artists.get(artistKey, { type: 'json'}) // get the artist blob
+    let albumInfo = await albums.get(albumKey, { type: 'json'}) // get the album blob
 
     // if there is no artist blob, populate one
     if (!artistInfo) {
-      const trackRes = await fetch(
-        `https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=${MUSIC_KEY}&artist=${artist}&track=${track}&format=json`,
+      const artistRes = await fetch(
+        `https://ws.audioscrobbler.com/2.0/?method=artist.getInfo&api_key=${MUSIC_KEY}&artist=${encodeURIComponent(sanitizeMediaString(artist).replace(/\s+/g, '+').toLowerCase())}&format=json`,
         {
           type: "json",
         }
@@ -76,9 +79,9 @@ export default async (request) => {
           console.log(err);
           return {}
         });
-      const trackData = trackRes['track'];
-      let mbid = trackRes['track']['artist']['mbid']
-      const mbidMap = () => mbidRes[trackData['artist']['name'].toLowerCase()] || '';
+      const artistData = artistRes['artist'];
+      let mbid = artistData['mbid']
+      const mbidMap = () => mbidRes[artistData['name'].toLowerCase()] || '';
 
       // mbid mismatches
       if (mbidMap() !== "") mbid = mbidMap();
@@ -94,13 +97,36 @@ export default async (request) => {
         return {}
       });
       const genre = genreRes['genres'].sort((a, b) => b.count - a.count)[0]?.['name'] || '';
-      const artistData = {
+      const artistObj = {
         mbid,
         genre,
         image: `https://cdn.coryd.dev/artists/${encodeURIComponent(sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase())}.jpg`
       }
-      artistInfo = artistData
-      await artists.setJSON(artistKey, artistData)
+      artistInfo = artistObj
+      await artists.setJSON(artistKey, artistObj)
+    }
+
+    // if there is no album blob, populate one
+    if (!albumInfo) {
+      const albumRes = await fetch(
+        `https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${MUSIC_KEY}&artist=${encodeURIComponent(sanitizeMediaString(artist).replace(/\s+/g, '+').toLowerCase())}&album=${encodeURIComponent(sanitizeMediaString(album).replace(/\s+/g, '+').toLowerCase())}&format=json`,
+        {
+          type: "json",
+        }
+      ).then((data) => {
+        if (data.ok) return data.json()
+        throw new Error('Something went wrong with the Last.fm endpoint.');
+      }).catch(err => {
+          console.log(err);
+          return {}
+        });
+      const mbid = albumRes['album']['mbid']
+      const albumObj = {
+        mbid,
+        image: `https://cdn.coryd.dev/albums/${encodeURIComponent(sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase())}-${encodeURIComponent(sanitizeMediaString(album.replace(/[:\/\\,'']+/g
+      , '').replace(/\s+/g, '-').toLowerCase()))}.jpg`
+      }
+      await albums.setJSON(albumKey, albumObj)
     }
 
     // scrobble logic
