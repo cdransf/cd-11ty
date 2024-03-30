@@ -8,7 +8,7 @@ export default async (request) => {
   let weeksArr = []
   let weeksString
 
-  if (weeks.includes(',')) {
+  if (weeks?.includes(',')) {
     weeksArr = weeks.split(',')
   } else {
     weeksString = weeks
