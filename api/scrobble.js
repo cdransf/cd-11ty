@@ -25,8 +25,8 @@ const filterOldScrobbles = (scrobbles) => {
 }
 
 export default async (request) => {
-  const ACCOUNT_ID_PLEX = Netlify.env.get("ACCOUNT_ID_PLEX");
-  const MUSIC_KEY = Netlify.env.get("API_KEY_LASTFM");
+  const ACCOUNT_ID_PLEX = Netlify.env.get('ACCOUNT_ID_PLEX');
+  const MUSIC_KEY = Netlify.env.get('API_KEY_LASTFM');
   const params = new URL(request['url']).searchParams
   const id = params.get('id')
 
@@ -162,5 +162,5 @@ export default async (request) => {
 }
 
 export const config = {
-  path: "/api/scrobble",
+  path: '/api/scrobble',
 }
