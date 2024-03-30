@@ -120,7 +120,7 @@ export default async (request) => {
           console.log(err);
           return {}
         });
-      const mbid = albumRes['album']['mbid']
+      const mbid = albumRes['album']['mbid'] || ''
       const albumObj = {
         mbid,
         image: `https://cdn.coryd.dev/albums/${encodeURIComponent(sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase())}-${encodeURIComponent(sanitizeMediaString(album.replace(/[:\/\\,'']+/g
