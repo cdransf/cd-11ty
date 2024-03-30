@@ -117,7 +117,7 @@ export default async () => {
       content: `${emojiMap(
         scrobbleData['genre'],
         scrobbleData['artist']
-      )} ${track["name"]} by <a href="${scrobbleData['url']}">${
+      )} ${scrobbleData['track']} by <a href="${scrobbleData['url']}">${
         scrobbleData['artist']
       }</a>`,
     }),
