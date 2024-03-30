@@ -108,12 +108,14 @@ export default async (request) => {
 
     // if there is no album blob, populate one
     if (!albumInfo) {
+      console.log(`https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${MUSIC_KEY}&artist=${encodeURIComponent(sanitizeMediaString(artist).replace(/\s+/g, '+').toLowerCase())}&album=${encodeURIComponent(sanitizeMediaString(album).replace(/\s+/g, '+').toLowerCase())}&format=json`)
       const albumRes = await fetch(
         `https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${MUSIC_KEY}&artist=${encodeURIComponent(sanitizeMediaString(artist).replace(/\s+/g, '+').toLowerCase())}&album=${encodeURIComponent(sanitizeMediaString(album).replace(/\s+/g, '+').toLowerCase())}&format=json`,
         {
           type: "json",
         }
       ).then((data) => {
+        console.log(data)
         if (data.ok) return data.json()
         throw new Error('Something went wrong with the Last.fm endpoint.');
       }).catch(err => {
