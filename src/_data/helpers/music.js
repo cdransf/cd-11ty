@@ -20,11 +20,11 @@ export const buildChart = (tracks) => {
   const albumsData = {}
   const tracksData = {}
 
-  const objectToArray = (inputObject) => {
+  const objectToArraySorted = (inputObject) => {
     return Object.keys(inputObject).map(key => ({
       name: key,
       count: inputObject[key]
-    }));
+    })).sort((a, b) => b.count - a.count);
   };
 
   tracks.forEach(track => {
@@ -48,8 +48,8 @@ export const buildChart = (tracks) => {
   })
 
   return {
-    artists: objectToArray(artistsData).sort((a, b) => b.count - a.count),
-    albums: objectToArray(albumsData).sort((a, b) => b.count - a.count),
-    tracks: objectToArray(tracksData).sort((a, b) => b.count - a.count),
+    artists: objectToArraySorted(artistsData),
+    albums: objectToArraySorted(albumsData),
+    tracks: objectToArraySorted(tracksData),
   }
 }
