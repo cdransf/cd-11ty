@@ -46,6 +46,7 @@ export default async (request) => {
     scrobbleData.push(...windowData['data'])
   }
 
+  console.log(scrobbleData)
   return new Response(JSON.stringify({
     scrobbles: scrobbleData,
     artists: artistsMap,
