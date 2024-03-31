@@ -28,6 +28,11 @@ export default async (request) => {
 
   const scrobbles = getStore('scrobbles')
   const scrobbleData = []
+  const artists = getStore('artists')
+  const albums = getStore('albums')
+  const artistsMap = await artists.get('artists-map', { type: 'json' })
+  const albumsMap = await albums.get('albums-map', { type: 'json' })
+
   if (weeksArr.length > 0) {
     weeksArr.forEach(async (week) => {
       const weekData = await scrobbles.get(week, { type: 'json'})
@@ -41,7 +46,11 @@ export default async (request) => {
     scrobbleData.push(...windowData['data'])
   }
 
-  return new Response(JSON.stringify({ data: scrobbleData }),
+  return new Response(JSON.stringify({
+    scrobbles: scrobbleData,
+    artists: artistsMap,
+    albums: albumsMap
+  }),
     { headers: { "Content-Type": "application/json" } }
   )
 }
