@@ -12006,5 +12006,40 @@
       "https://social.lol/users/cory/statuses/112187872712494790"
     ],
     "lastTootTimestamp": 1711851085175
+  },
+  "https://lasso-security.webflow.io/blog/ai-package-hallucinations": {
+    "id": "aHR0cHM6Ly9sYXNzby1zZWN1cml0eS53ZWJmbG93LmlvL2Jsb2cvYWktcGFja2FnZS1oYWxsdWNpbmF0aW9ucw==",
+    "title": "🔗: Heads up: Hallucinated packages in the wild?",
+    "url": "https://lasso-security.webflow.io/blog/ai-package-hallucinations",
+    "content_text": "🔗: Heads up: Hallucinated packages in the wild? #AI #Tech https://lasso-security.webflow.io/blog/ai-package-hallucinations",
+    "date_published": "Sat, 30 Mar 2024 21:41:00 GMT",
+    "toots": []
+  },
+  "https://hamatti.org/posts/full-text-rss-feed-is-offline-friendly-act/": {
+    "id": "aHR0cHM6Ly9oYW1hdHRpLm9yZy9wb3N0cy9mdWxsLXRleHQtcnNzLWZlZWQtaXMtb2ZmbGluZS1mcmllbmRseS1hY3Qv",
+    "title": "🔗: Full-text RSS feed is an offline-friendly act",
+    "url": "https://hamatti.org/posts/full-text-rss-feed-is-offline-friendly-act/",
+    "content_text": "🔗: Full-text RSS feed is an offline-friendly act #Tech #WebDev https://hamatti.org/posts/full-text-rss-feed-is-offline-friendly-act/",
+    "date_published": "Sat, 30 Mar 2024 08:18:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112188315193375737"
+    ],
+    "lastTootTimestamp": 1711857836893
+  },
+  "https://www.independent.com/2024/03/29/santa-barbaras-collective-memory-sold-for-kindling/": {
+    "id": "aHR0cHM6Ly93d3cuaW5kZXBlbmRlbnQuY29tLzIwMjQvMDMvMjkvc2FudGEtYmFyYmFyYXMtY29sbGVjdGl2ZS1tZW1vcnktc29sZC1mb3Ita2luZGxpbmcv",
+    "title": "🔗: Santa Barbara’s Collective Memory, Sold for Kindling",
+    "url": "https://www.independent.com/2024/03/29/santa-barbaras-collective-memory-sold-for-kindling/",
+    "content_text": "🔗: Santa Barbara’s Collective Memory, Sold for Kindling #Tech #Journalism https://www.independent.com/2024/03/29/santa-barbaras-collective-memory-sold-for-kindling/",
+    "date_published": "Sat, 30 Mar 2024 01:42:00 GMT",
+    "toots": []
+  },
+  "https://shellsharks.com/own-my-social": {
+    "id": "aHR0cHM6Ly9zaGVsbHNoYXJrcy5jb20vb3duLW15LXNvY2lhbA==",
+    "title": "🔗: Owning My Own Social",
+    "url": "https://shellsharks.com/own-my-social",
+    "content_text": "🔗: Owning My Own Social #Tech #IndieWeb #SmallWeb #SocialMedia https://shellsharks.com/own-my-social",
+    "date_published": "Fri, 29 Mar 2024 14:28:00 GMT",
+    "toots": []
   }
 }
