@@ -59,7 +59,7 @@ export default async (request) => {
     const artistSanitizedKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}`
     const albumSanitizedKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
       , '').replace(/\s+/g, '-').toLowerCase())}`
-    let artistInfo = {}
+    let artistInfo = artistsMap[artistSanitizedKey]
 
     // if there is no artist blob, populate one
     if (!artistsMap[artistSanitizedKey]) {
