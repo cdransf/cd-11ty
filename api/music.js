@@ -36,8 +36,6 @@ export default async (request) => {
   if (weeksArr.length > 0) {
     weeksArr.forEach(async (week) => {
       const weekData = await scrobbles.get(week, { type: 'json'})
-      console.log(week)
-      console.log(week)
       scrobbleData.push(...weekData['data'])
     })
   } else if (weeksString) {
