@@ -60,9 +60,12 @@ export default async (request) => {
     const albumsMap = await albums.get('albums-map', { type: 'json' })
     let artistInfo = {}
     let albumInfo = {}
+    const artistSanitizedKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}`
+    const albumSanitizedKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
+      , '').replace(/\s+/g, '-').toLowerCase())}`
 
     // if there is no artist blob, populate one
-    if (!artistsMap[artist]) {
+    if (!artistsMap[artistSanitizedKey]) {
       const artistRes = await fetch(
         `https://ws.audioscrobbler.com/2.0/?method=artist.getInfo&api_key=${MUSIC_KEY}&artist=${sanitizeMediaString(artist).replace(/\s+/g, '+').toLowerCase()}&format=json`,
         {
@@ -108,12 +111,12 @@ export default async (request) => {
         image: `https://cdn.coryd.dev/artists/${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}.jpg`
       }
       artistInfo = artistObj
-      artistsMap[`${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}`] = artistObj
+      artistsMap[artistSanitizedKey] = artistObj
       await artists.setJSON('artists-map', artistsMap)
     }
 
     // if there is no album blob, populate one
-    if (!albumsMap[album]) {
+    if (!albumsMap[albumSanitizedKey]) {
       const albumRes = await fetch(
         `https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${MUSIC_KEY}&artist=${sanitizeMediaString(artist).replace(/\s+/g, '+').toLowerCase()}&album=${sanitizeMediaString(album).replace(/\s+/g, '+').toLowerCase()}&format=json`,
         {
@@ -132,8 +135,7 @@ export default async (request) => {
         image: `https://cdn.coryd.dev/albums/${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
       , '').replace(/\s+/g, '-').toLowerCase())}.jpg`
       }
-      albumsMap[`${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
-      , '').replace(/\s+/g, '-').toLowerCase())}`] = albumObj
+      albumsMap[albumSanitizedKey] = albumObj
       await albums.setJSON('albums-map', albumsMap)
     }
 
