@@ -36,6 +36,8 @@ export default async (request) => {
   if (weeksArr.length > 0) {
     weeksArr.forEach(async (week) => {
       const weekData = await scrobbles.get(week, { type: 'json'})
+      console.log(week)
+      console.log(week)
       scrobbleData.push(...weekData['data'])
     })
   } else if (weeksString) {
@@ -46,7 +48,6 @@ export default async (request) => {
     scrobbleData.push(...windowData['data'])
   }
 
-  console.log(scrobbleData)
   return new Response(JSON.stringify({
     scrobbles: scrobbleData,
     artists: artistsMap,
