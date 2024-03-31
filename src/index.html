@@ -7,7 +7,7 @@ pagination:
   alias: posts
 ---
 {% if pagination.pageNumber == 0 %}
-  {% render "partials/now/topper.liquid" status:status, artists:artists, books:books, tv:tv %}
+  {% render "partials/now/topper.liquid" status:status, artists:music.artists, books:books, tv:tv %}
 {% endif %}
 {% for post in pagination.items %}
 <article class="h-entry">
