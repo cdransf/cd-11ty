@@ -55,7 +55,7 @@ export const buildChart = (tracks, artists, albums) => {
     if (!albumsData[track['album']]) {
       albumsData[track['album']] = {
         title: track['album'],
-        artist: track['artist'],
+        artist: artistCapitalization(track['artist']),
         plays: 1,
         mbid: albums[albumSanitizedKey(track['album'])]?.['mbid'] || '',
         url: albums[albumSanitizedKey(track['album'])]?.['url'] || `https://musicbrainz.org/taglookup/index?tag-lookup.artist=${track['artist'].replace(/\s+/g, '+')}&tag-lookup.release=${track['album'].replace(/\s+/g, '+')}`,

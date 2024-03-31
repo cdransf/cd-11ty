@@ -12013,7 +12013,10 @@
     "url": "https://lasso-security.webflow.io/blog/ai-package-hallucinations",
     "content_text": "🔗: Heads up: Hallucinated packages in the wild? #AI #Tech https://lasso-security.webflow.io/blog/ai-package-hallucinations",
     "date_published": "Sat, 30 Mar 2024 21:41:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112189727353000791"
+    ],
+    "lastTootTimestamp": 1711879384717
   },
   "https://hamatti.org/posts/full-text-rss-feed-is-offline-friendly-act/": {
     "id": "aHR0cHM6Ly9oYW1hdHRpLm9yZy9wb3N0cy9mdWxsLXRleHQtcnNzLWZlZWQtaXMtb2ZmbGluZS1mcmllbmRseS1hY3Qv",
@@ -12032,7 +12035,10 @@
     "url": "https://www.independent.com/2024/03/29/santa-barbaras-collective-memory-sold-for-kindling/",
     "content_text": "🔗: Santa Barbara’s Collective Memory, Sold for Kindling #Tech #Journalism https://www.independent.com/2024/03/29/santa-barbaras-collective-memory-sold-for-kindling/",
     "date_published": "Sat, 30 Mar 2024 01:42:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112188783779645663"
+    ],
+    "lastTootTimestamp": 1711864986922
   },
   "https://shellsharks.com/own-my-social": {
     "id": "aHR0cHM6Ly9zaGVsbHNoYXJrcy5jb20vb3duLW15LXNvY2lhbA==",
@@ -12040,6 +12046,9 @@
     "url": "https://shellsharks.com/own-my-social",
     "content_text": "🔗: Owning My Own Social #Tech #IndieWeb #SmallWeb #SocialMedia https://shellsharks.com/own-my-social",
     "date_published": "Fri, 29 Mar 2024 14:28:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112189256123404950"
+    ],
+    "lastTootTimestamp": 1711872194333
   }
 }
