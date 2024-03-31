@@ -17,6 +17,14 @@
   stroke: var(--brand-npm);
 }
 
+.banner.github {
+  border-color: var(--brand-github);
+}
+
+.banner.github svg {
+  stroke: var(--brand-github);
+}
+
 .banner p {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
