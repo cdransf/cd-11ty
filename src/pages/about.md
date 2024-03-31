@@ -3,7 +3,7 @@ title: About
 layout: default
 permalink: /about.html
 ---
-{%- assign artist = artists | first -%}
+{%- assign artist = music.artists | first -%}
 {%- assign book = books | first -%}
 {%- assign show = tv | first -%}
 {% capture css %}
