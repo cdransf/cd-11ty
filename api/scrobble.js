@@ -108,7 +108,7 @@ export default async (request) => {
         image: `https://cdn.coryd.dev/artists/${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}.jpg`
       }
       artistInfo = artistObj
-      artistsMap[artist] = artistObj
+      artistsMap[`${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}`] = artistObj
       await artists.setJSON('artists-map', artistsMap)
     }
 
@@ -132,7 +132,8 @@ export default async (request) => {
         image: `https://cdn.coryd.dev/albums/${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
       , '').replace(/\s+/g, '-').toLowerCase())}.jpg`
       }
-      albumsMap[album] = albumObj
+      albumsMap[`${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
+      , '').replace(/\s+/g, '-').toLowerCase())}`] = albumObj
       await albums.setJSON('albums-map', albumsMap)
     }
 
