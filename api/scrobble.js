@@ -145,6 +145,8 @@ export default async (request) => {
       timestamp,
       genre: artistInfo?.['genre'] || ''
     }
+    console.log(artistInfo)
+    console.log(artistInfo?.['genre'])
     const scrobbleData = await scrobbles.get(`${weekKey()}`, { type: 'json'})
     const windowData = await scrobbles.get('window', { type: 'json'})
     await scrobbles.setJSON('now-playing', {...trackScrobbleData, ...{ url: `https://musicbrainz.org/artist/${artistInfo?.['mbid']}`}})
