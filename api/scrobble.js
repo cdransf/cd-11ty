@@ -143,7 +143,7 @@ export default async (request) => {
       artist,
       trackNumber,
       timestamp,
-      genre
+      genre: artistInfo?.['genre'] || ''
     }
     const scrobbleData = await scrobbles.get(`${weekKey()}`, { type: 'json'})
     const windowData = await scrobbles.get('window', { type: 'json'})
