@@ -27,7 +27,7 @@ Software and services that I use for work and my own enjoyment.
 <h3>macOS + iOS</h3>
 
 - [Bear](https://bear.app): native, fast and flexible — it's a breeze to use across Apple's ecosystem.
-- [Doppler](https://brushedtype.com/doppler): a beautiful, simple native music player that supports scrobbling to Last.fm.
+- [Plexamp](https://www.plex.tv/plexamp/): Plex's flexible and, while not native, still delightful music player.
 - [Ivory](https://tapbots.com/ivory/): the best, most polished Mastodon client for macOS and iOS.
 - [Parcel](https://parcelapp.net): the most flexible and reliable package tracker for Apple's ecosystem.
 - [Flighty](https://flightyapp.com): I don't travel a ton but Flighty makes doing so a fair bit less stressful.

@@ -18,7 +18,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Calendar: [HEY](https://hey.com)
 - Weather: Weather.app
 - Podcasts: N/A
-- Music: [Doppler](https://brushedtype.com/doppler) + [Last.fm](https://last.fm)
+- Music: [Plexamp](https://www.plex.tv/plexamp/) + [Last.fm](https://last.fm) + [ListenBrainz](https://listenbrainz.org)
 - Passwords: [1Password.com](https://1password.com)
 - Budgeting: [YNAB](https://ynab.com)
 - Mastodon: [Ivory](https://tapbots.com/ivory/)
