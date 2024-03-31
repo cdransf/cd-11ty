@@ -6,6 +6,7 @@ const sanitizeMediaString = (string) => {
   return normalizedStr
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/[\u2010]/g, '-')
+    .replace(/—/g, '-')
     .replace(/\.{3}/g, '')
     .replace(/\?/g, '')
     .replace(/[\(\)\[\]\{\}]/g, '')
