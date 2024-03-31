@@ -54,15 +54,12 @@ export default async (request) => {
     const track = payload['Metadata']['title']
     const trackNumber = payload['Metadata']['index']
     const timestamp = DateTime.now()
-    const artistKey = sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()
-    const albumKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album).replace(/\s+/g, '-').toLowerCase()}`
     const artistsMap = await artists.get('artists-map', { type: 'json' })
     const albumsMap = await albums.get('albums-map', { type: 'json' })
-    let artistInfo = {}
-    let albumInfo = {}
     const artistSanitizedKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}`
     const albumSanitizedKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
       , '').replace(/\s+/g, '-').toLowerCase())}`
+    let artistInfo = {}
 
     // if there is no artist blob, populate one
     if (!artistsMap[artistSanitizedKey]) {
