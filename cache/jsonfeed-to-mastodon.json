@@ -12050,5 +12050,38 @@
       "https://social.lol/users/cory/statuses/112189256123404950"
     ],
     "lastTootTimestamp": 1711872194333
+  },
+  "https://www.ellyloel.com/blog/front-end-development-s-identity-crisis/": {
+    "id": "aHR0cHM6Ly93d3cuZWxseWxvZWwuY29tL2Jsb2cvZnJvbnQtZW5kLWRldmVsb3BtZW50LXMtaWRlbnRpdHktY3Jpc2lzLw==",
+    "title": "🔗: Front-end development’s identity crisis",
+    "url": "https://www.ellyloel.com/blog/front-end-development-s-identity-crisis/",
+    "content_text": "🔗: Front-end development’s identity crisis #WebDev https://www.ellyloel.com/blog/front-end-development-s-identity-crisis/",
+    "date_published": "Mon, 01 Apr 2024 13:34:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112197278091663239"
+    ],
+    "lastTootTimestamp": 1711994599839
+  },
+  "https://manuelmoreale.com/@/page/1sYvCjdE8qvE2Isu": {
+    "id": "aHR0cHM6Ly9tYW51ZWxtb3JlYWxlLmNvbS9AL3BhZ2UvMXNZdkNqZEU4cXZFMklzdQ==",
+    "title": "🔗: Pay per scroll",
+    "url": "https://manuelmoreale.com/@/page/1sYvCjdE8qvE2Isu",
+    "content_text": "🔗: Pay per scroll #Tech https://manuelmoreale.com/@/page/1sYvCjdE8qvE2Isu",
+    "date_published": "Mon, 01 Apr 2024 06:42:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112198220861214524"
+    ],
+    "lastTootTimestamp": 1712008985351
+  },
+  "https://ishadeed.com/article/css-has-parent-selector/": {
+    "id": "aHR0cHM6Ly9pc2hhZGVlZC5jb20vYXJ0aWNsZS9jc3MtaGFzLXBhcmVudC1zZWxlY3Rvci8=",
+    "title": "🔗: CSS Parent Selector",
+    "url": "https://ishadeed.com/article/css-has-parent-selector/",
+    "content_text": "🔗: CSS Parent Selector #CSS #WebDev https://ishadeed.com/article/css-has-parent-selector/",
+    "date_published": "Tue, 26 Mar 2024 16:44:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112197748921487138"
+    ],
+    "lastTootTimestamp": 1712001784171
   }
 }
