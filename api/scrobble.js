@@ -18,7 +18,7 @@ const weekKey = () => {
 }
 
 const filterOldScrobbles = (scrobbles) => {
-  const twoWeeksAgo = DateTime.now().minus({ weeks: 2 });
+  const twoWeeksAgo = DateTime.now().minus({ days: 10 });
   return scrobbles.filter(scrobble => {
     const timestamp = DateTime.fromISO(scrobble.timestamp);
     return timestamp >= twoWeeksAgo;
