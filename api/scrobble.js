@@ -1,16 +1,7 @@
 import { getStore } from '@netlify/blobs'
 import { DateTime } from 'luxon'
 
-const sanitizeMediaString = (string) => {
-  const normalizedStr = string.normalize('NFD');
-  return normalizedStr
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[\u2010]/g, '-')
-    .replace(/—/g, '-')
-    .replace(/\.{3}/g, '')
-    .replace(/\?/g, '')
-    .replace(/[\(\)\[\]\{\}]/g, '')
-}
+const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '');
 
 const weekKey = () => {
   const currentDate = DateTime.now();
@@ -18,10 +9,10 @@ const weekKey = () => {
 }
 
 const filterOldScrobbles = (scrobbles) => {
-  const twoWeeksAgo = DateTime.now().minus({ days: 7 });
+  const windowEnd = DateTime.now().minus({ days: 7 });
   return scrobbles.filter(scrobble => {
     const timestamp = DateTime.fromISO(scrobble.timestamp);
-    return timestamp >= twoWeeksAgo;
+    return timestamp >= windowEnd;
   });
 }
 
