@@ -24,7 +24,7 @@ We won't support smaller artists — we'll throw some novel tools at them and go
 
 ---
 
-We're discarding quality in pursuit of scale. I know this sounds like gatekeeping, like I preferred the past model and, well, it too was deeply flawed in many respects. There is still compelling writing, art, movies and music being made and the tools used to do so will evolve. We're putting ever more wait on producing and creating *more* with little thought given to quality. It's easy to play on nostalgia and churn out ever more sludge. Who's excited for the next super hero movie? Want one about your favorite video game? How about 12?
+We're discarding quality in pursuit of scale. I know this sounds like gatekeeping, like I preferred the past model and, well, it too was deeply flawed in many respects. There is still compelling writing, art, movies and music being made and the tools used to do so will evolve. We're putting ever more weight on producing and creating *more* with little thought given to quality. It's easy to play on nostalgia and churn out ever more sludge. Who's excited for the next super hero movie? Want one about your favorite video game? How about 12?
 
 We can't use algorithms to filter for quality because they're not designed to. They're designed to steer you towards whatever's most profitable for their creators.
 
