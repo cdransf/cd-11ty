@@ -12094,5 +12094,16 @@
       "https://social.lol/users/cory/statuses/112199638746454324"
     ],
     "lastTootTimestamp": 1712030620600
+  },
+  "https://coryd.dev/posts/2024/building-a-scrobbler-using-plex-webhooks-edge-functions-and-blob-storage/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9idWlsZGluZy1hLXNjcm9iYmxlci11c2luZy1wbGV4LXdlYmhvb2tzLWVkZ2UtZnVuY3Rpb25zLWFuZC1ibG9iLXN0b3JhZ2Uv",
+    "title": "📝: Building a scrobbler using Plex webhooks, edge functions and blob storage",
+    "url": "https://coryd.dev/posts/2024/building-a-scrobbler-using-plex-webhooks-edge-functions-and-blob-storage/",
+    "content_text": "📝: Building a scrobbler using Plex webhooks, edge functions and blob storage #Eleventy #WebDev #Music #IndieWeb #SmallWeb #JavaScript https://coryd.dev/posts/2024/building-a-scrobbler-using-plex-webhooks-edge-functions-and-blob-storage/",
+    "date_published": "Tue, 02 Apr 2024 17:30:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112202930570496361"
+    ],
+    "lastTootTimestamp": 1712080849838
   }
 }
