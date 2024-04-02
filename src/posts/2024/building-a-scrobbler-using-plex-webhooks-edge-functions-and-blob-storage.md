@@ -4,6 +4,7 @@ title: 'Building a scrobbler using Plex webhooks, edge functions and blob storag
 '
 description: "I've written before about embedding music into my site and I've largely used Last.fm to do so. Their API is rather extensive, though it is showing its age — the default response format is XML, they've dropped artist images and have intermittently failed to return album art. ListenBrainz is great, but client support is still lacking. I've also tried charting Apple Music data from their (quite limited) API."
 tags: ['Eleventy', 'development', 'music', 'indie web', 'javascript', 'Plex', 'Plexamp', 'Netlify']
+image: https://cdn.coryd.dev/blog/scrobbler.png
 ---
 I've written before about [embedding music into my site](https://coryd.dev/posts/2024/weaving-music-in-and-out-of-my-personal-site/) and I've largely used Last.fm to do so. Their API is rather extensive, though it is showing its age — the default response format is XML, they've dropped artist images and have intermittently failed to return album art. ListenBrainz is *great*, but client support is still lacking. [I've also tried charting Apple Music data from their (quite limited) API.](https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/)<!-- excerpt -->
 
