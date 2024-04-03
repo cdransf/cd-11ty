@@ -9,5 +9,5 @@ export default async function () {
     type: 'json',
   }).catch();
   const resObj = await res;
-  return buildChart(resObj['scrobbles'], resObj['artists'], resObj['albums'])
+  return buildChart(resObj['scrobbles'], resObj['artists'], resObj['albums'], resObj['nowPlaying'])
 }

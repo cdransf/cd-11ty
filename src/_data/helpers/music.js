@@ -7,7 +7,7 @@ const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300
 
 export const mbidMap = (artist) => mbidPatches[artist.toLowerCase()] || ''
 
-export const buildChart = (tracks, artists, albums) => {
+export const buildChart = (tracks, artists, albums, nowPlaying) => {
   const artistsData = {}
   const albumsData = {}
   const tracksData = {}
@@ -63,5 +63,6 @@ export const buildChart = (tracks, artists, albums) => {
     artists: objectToArraySorted(artistsData),
     albums: objectToArraySorted(albumsData),
     tracks: objectToArraySorted(tracksData),
+    nowPlaying
   }
 }
