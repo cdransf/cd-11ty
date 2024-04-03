@@ -12,7 +12,7 @@ description: "See what I'm doing now."
     {% render "partials/now/status.liquid", status:status %}
   <p>
     {% tablericon "map-2" "Map" %}
-    Living in Camarillo, California with my beautiful family, 4 rescue dogs and a guinea pig.
+    Living in Camarillo, California with my beautiful family, 3 rescue dogs and a guinea pig.
   </p>
   <p>
     {% tablericon "play-basketball" "NBA - Lakers" %}
@@ -20,7 +20,7 @@ description: "See what I'm doing now."
   </p>
   <p>
     {% tablericon "headphones" "Listening to" %}
-    The last track I listened to was <strong class="highlight-text">{{ music.nowPlaying.track }}</strong> by <strong class="highlight-text">{{ music.nowPlaying.artist }}</strong>.
+    The last track I listened to was {{ music.nowPlaying.track }} by <a href="{{ music.nowPlaying.url }}">{{ music.nowPlaying.artist }}</a></strong>.
   </p>
 </div>
 <h2 class="now__section--header flex--centered">
