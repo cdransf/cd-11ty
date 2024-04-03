@@ -32,7 +32,7 @@ export const buildChart = (tracks, artists, albums) => {
         title: artistCapitalization(track['artist']),
         plays: 1,
         mbid: artists[artistSanitizedKey(track['artist'])]?.['mbid'] || '',
-        url: artists[artistSanitizedKey(track['artist'])]?.['url'] || `https://musicbrainz.org/search?query=${track['artist'].replace(
+        url: (artists[artistSanitizedKey(track['artist'])]?.['mbid'] && artists[artistSanitizedKey(track['artist'])]?.['mbid'] !== '') ? `http://musicbrainz.org/artist/${artists[artistSanitizedKey(track['artist'])]?.['mbid']}` : `https://musicbrainz.org/search?query=${track['artist'].replace(
             /\s+/g,
             '+'
           )}&type=artist`,
@@ -49,7 +49,7 @@ export const buildChart = (tracks, artists, albums) => {
         artist: artistCapitalization(track['artist']),
         plays: 1,
         mbid: albums[albumSanitizedKey(track['album'])]?.['mbid'] || '',
-        url: albums[albumSanitizedKey(track['album'])]?.['url'] || `https://musicbrainz.org/taglookup/index?tag-lookup.artist=${track['artist'].replace(/\s+/g, '+')}&tag-lookup.release=${track['album'].replace(/\s+/g, '+')}`,
+        url: (albums[albumSanitizedKey(track['album'])]?.['mbid'] && albums[albumSanitizedKey(track['album'])]?.['mbid'] !== '') ? `https://musicbrainz.org/release-group/${albums[albumSanitizedKey(track['album'])]?.['mbid']}` : `https://musicbrainz.org/taglookup/index?tag-lookup.artist=${track['artist'].replace(/\s+/g, '+')}&tag-lookup.release=${track['album'].replace(/\s+/g, '+')}`,
         image: albums[albumSanitizedKey(track['album'])]?.['image'] || `https://cdn.coryd.dev/albums/${sanitizeMediaString(track['artist']).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(track['album'].replace(/[:\/\\,'']+/g
       , '').replace(/\s+/g, '-').toLowerCase())}.jpg`,
         type: 'album'
