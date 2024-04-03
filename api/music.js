@@ -24,6 +24,7 @@ export default async (request) => {
   const albums = getStore('albums')
   const artistsMap = await artists.get('artists-map', { type: 'json' })
   const albumsMap = await albums.get('albums-map', { type: 'json' })
+  const nowPlaying = await scrobbles.get('now-playing', { type: 'json'})
 
   if (week) {
     const weekData = await scrobbles.get(week, { type: 'json'})
@@ -35,6 +36,7 @@ export default async (request) => {
 
   return new Response(JSON.stringify({
     scrobbles: scrobbleData,
+    nowPlaying,
     artists: artistsMap,
     albums: albumsMap
   }),
