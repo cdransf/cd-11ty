@@ -91,11 +91,7 @@ export default async (request) => {
         throw new Error('Something went wrong with the MusicBrainz endpoint.');
       }).catch(err => {
         console.log(err);
-        return {
-          mbid: '',
-          genre: '',
-          image: `https://cdn.coryd.dev/artists/${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}.jpg`
-        }
+        return []
       });
       const genre = genreRes['genres']?.sort((a, b) => b.count - a.count)[0]?.['name'] || '';
       const artistObj = {
