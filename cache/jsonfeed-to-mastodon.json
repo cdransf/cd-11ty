@@ -12105,5 +12105,16 @@
       "https://social.lol/users/cory/statuses/112202930570496361"
     ],
     "lastTootTimestamp": 1712080849838
+  },
+  "https://app.thestorygraph.com/books/dcf2196c-070c-4045-90ff-f547b497ffa0": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvZGNmMjE5NmMtMDcwYy00MDQ1LTkwZmYtZjU0N2I0OTdmZmEw",
+    "title": "📖: Sideways: The City Google Couldn't Buy",
+    "url": "https://app.thestorygraph.com/books/dcf2196c-070c-4045-90ff-f547b497ffa0",
+    "content_text": "📖: Sideways: The City Google Couldn't Buy #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/dcf2196c-070c-4045-90ff-f547b497ffa0",
+    "date_published": "Tue, 02 Apr 2024 17:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112208130804878097"
+    ],
+    "lastTootTimestamp": 1712160199102
   }
 }
