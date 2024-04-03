@@ -53,14 +53,17 @@ User-agent: cohere-ai
 User-agent: DataForSeoBot
 User-agent: FacebookBot
 User-agent: Google-Extended
+User-agent: GoogleOther
 User-agent: GPTBot
 User-agent: ImagesiftBot
 User-agent: magpie-crawler
+User-agent: Meltwater
 User-agent: omgili
 User-agent: omgilibot
 User-agent: peer39_crawler
 User-agent: peer39_crawler/1.0
 User-agent: PerplexityBot
+User-agent: Seekr
 User-agent: YouBot
 Disallow: /
 ```
