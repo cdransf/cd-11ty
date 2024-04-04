@@ -1,12 +1,13 @@
 import fs from 'fs'
 
 export default async function () {
-  const window = fs.readFileSync('./src/_data/json/scrobbles-window.json', (error, data) => {
+  let window;
+  fs.readFileSync('./src/_data/json/scrobbles-window.json', (error, data) => {
     if (error) {
       console.log(error);
       return;
     }
-    return JSON.parse(data)
+    window = JSON.parse(data)
   })
   console.log(window)
   return window
