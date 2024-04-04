@@ -8,8 +8,6 @@
 
 [[plugins]]
 package = "/plugins/fetch-scrobbles"
-  [plugins.inputs]
-    dirOutput = "/src/_data/json"
 
 ###
 # URLs

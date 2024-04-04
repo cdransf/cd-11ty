@@ -1,10 +1,7 @@
 import { getStore, setEnvironmentContext } from '@netlify/blobs'
 import fs from 'fs'
 
-export const onPreBuild = async ({
-  constants,
-  inputs: { dirOutput }
-}) => {
+export const onPreBuild = async ({ constants }) => {
   setEnvironmentContext({
     siteID: constants.SITE_ID,
     token: constants.NETLIFY_API_TOKEN,
@@ -16,8 +13,8 @@ export const onPreBuild = async ({
   const artistsMap = await artists.get('artists-map', { type: 'json' })
   const albumsMap = await albums.get('albums-map', { type: 'json' })
   const nowPlaying = await scrobbles.get('now-playing', { type: 'json'})
-  fs.writeFileSync(`${dirOutput}scrobbles-window.json`, JSON.stringify(windowData))
-  fs.writeFileSync(`${dirOutput}artists-map.json`, JSON.stringify(artistsMap))
-  fs.writeFileSync(`${dirOutput}albums-map.json`, JSON.stringify(albumsMap))
-  fs.writeFileSync(`${dirOutput}now-playing.json`, JSON.stringify(nowPlaying))
+  fs.writeFileSync('src/_data/json/scrobbles-window.json', JSON.stringify(windowData))
+  fs.writeFileSync('src/_data/json/artists-map.json', JSON.stringify(artistsMap))
+  fs.writeFileSync('src/_data/json/albums-map.json', JSON.stringify(albumsMap))
+  fs.writeFileSync('src/_data/json/now-playing.json', JSON.stringify(nowPlaying))
 }
