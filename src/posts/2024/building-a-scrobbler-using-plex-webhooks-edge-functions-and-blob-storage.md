@@ -17,7 +17,7 @@ What I've long wanted is something that sits on infrastructure I control, stores
 Next, I went to work developing the edge function that would receive and deal with the data. I'm leveraging `luxon` for dealing with dates and [Netlify Blobs](https://docs.netlify.com/blobs/overview/) for persistence. I have a few different helper functions on hand as well:
 
 ```javascript
-const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '');
+const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '').replace(/A©|Ã©/g, 'e');
 
 const weekKey = () => {
   const currentDate = DateTime.now();

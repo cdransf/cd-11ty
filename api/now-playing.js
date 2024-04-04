@@ -70,7 +70,6 @@ const emojiMap = (genre, artist) => {
 
 export default async () => {
   const TV_KEY = Netlify.env.get("API_KEY_TRAKT");
-  const MUSIC_KEY = Netlify.env.get("API_KEY_LASTFM");
   const scrobbles = getStore('scrobbles')
   const headers = {
     "Content-Type": "application/json",
@@ -85,7 +84,7 @@ export default async () => {
     },
   })
     .then((data) => {
-      if (data.ok) return data.json();
+      if (data.ok) return data?.json();
       throw new Error('Something went wrong with the Trakt endpoint.');
     })
     .catch(err => {

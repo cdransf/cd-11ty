@@ -1,7 +1,7 @@
 import { getStore } from '@netlify/blobs'
 import { DateTime } from 'luxon'
 
-const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '');
+const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '').replace(/A©|Ã©/g, 'e');
 
 const weekKey = () => {
   const currentDate = DateTime.now();
@@ -77,12 +77,7 @@ export default async (request) => {
           return {}
         });
       const artistData = artistRes['artist'];
-      let mbid = artistData['mbid']
-      const mbidMap = () => mbidRes[artistData['name'].toLowerCase()] || '';
-
-      // mbid mismatches
-      if (mbidMap() !== "") mbid = mbidMap();
-
+      const mbid = artistData['mbid']
       const genreUrl = `https://musicbrainz.org/ws/2/artist/${mbid}?inc=aliases+genres&fmt=json`;
       const genreRes = await fetch(genreUrl, {
         type: "json",

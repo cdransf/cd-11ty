@@ -1,11 +1,8 @@
 import artistCapitalizationPatches from '../json/artist-capitalization-patches.js';
-import mbidPatches from '../json/mbid-patches.js';
 
 export const artistCapitalization = (artist) => artistCapitalizationPatches[artist?.toLowerCase()] || artist
 
-const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '');
-
-export const mbidMap = (artist) => mbidPatches[artist.toLowerCase()] || ''
+const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '').replace(/A©|Ã©/g, 'e');
 
 export const buildChart = (tracks, artists, albums, nowPlaying) => {
   const artistsData = {}
