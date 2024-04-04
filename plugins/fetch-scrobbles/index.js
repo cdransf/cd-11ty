@@ -1,16 +1,16 @@
-import { getDeployStore } from '@netlify/blobs'
+import { getStore } from '@netlify/blobs'
 import fs from 'fs'
 
-export const onPreBuild = async ({ constants }) => {
-  const scrobbles = store.get('scrobbles', {
+export const onPreBuild = async ({ context }) => {
+  const scrobbles = getStore('scrobbles', {
     siteID: constants.SITE_ID,
     token: constants.NETLIFY_API_TOKEN,
   })
-  const artists = store.get('artists', {
+  const artists = getStore('artists', {
     siteID: constants.SITE_ID,
     token: constants.NETLIFY_API_TOKEN,
   })
-  const albums = store.get('albums', {
+  const albums = getStore('albums', {
     siteID: constants.SITE_ID,
     token: constants.NETLIFY_API_TOKEN,
   })
@@ -19,7 +19,8 @@ export const onPreBuild = async ({ constants }) => {
   const albumsMap = await albums.get('albums-map', { type: 'json' })
   const nowPlaying = await scrobbles.get('now-playing', { type: 'json'})
 
-  console.log(windowData)
+  console.log(artistsMap)
+  console.log(albumsMap)
 
   fs.writeFileSync('/src/_data/json/scrobbles-window.json', windowData)
   fs.writeFileSync('/src/_data/json/artists-map.json', artistsMap)
