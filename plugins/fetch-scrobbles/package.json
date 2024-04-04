@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "devDependencies": {
-    "@netlify/blobs": "^7.3.0"
+    "@netlify/blobs": "^7.3.0",
+    "luxon": "^3.4.4"
   }
 }
