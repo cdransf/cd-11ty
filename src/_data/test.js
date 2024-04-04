@@ -6,5 +6,5 @@ export default async function () {
   const artists = JSON.parse(await readFile('./src/_data/json/artists-map.json', 'utf8'));
   const albums = JSON.parse(await readFile('./src/_data/json/albums-map.json', 'utf8'));
   const nowPlaying = JSON.parse(await readFile('./src/_data/json/now-playing.json', 'utf8'));
-  return buildChart(window, artists, albums, nowPlaying)
+  return buildChart(window['data'], artists, albums, nowPlaying)
 }
