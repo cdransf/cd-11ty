@@ -2,6 +2,10 @@
   {% render "../../assets/styles/components/paginator.css" %}
 {% endcapture %}
 <style>{{ css }}</style>
+{% capture js %}
+  {% render "../../assets/scripts/paginator.js" %}
+{% endcapture %}
+<script>{{ js }}</script>
 <nav aria-label="Blog pagination" class="pagination flex--centered">
   {% if pagination.href.previous %}
     <a href="{{ pagination.href.previous }}" aria-label="Previous page">
@@ -15,8 +19,17 @@
       {% tablericon "arrow-left" "Prevous" %}
     </span>
   {% endif %}
-  <div class="text--centered">
-    <span aria-current="page">{{ pagination.pageNumber | plus: 1 }}</span> of {{ pagination.links.size }}
+  <noscript>
+    <div class="text--centered">
+      <span aria-current="page">{{ pagination.pageNumber | plus: 1 }}</span> of {{ pagination.links.size }}
+    </div>
+  </noscript>
+  <div class="select client-side">
+    <select id="pagination">
+      {% for pageEntry in pagination.pages %}
+      <option value="{{ forloop.index | minus: 1 }}">{{ forloop.index }} of {{ pagination.links.size }}</option>
+      {% endfor %}
+    </select>
   </div>
   {% if pagination.href.next %}
     <a href="{{ pagination.href.next }}" aria-label="Next page">

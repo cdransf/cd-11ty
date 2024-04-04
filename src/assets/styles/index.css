@@ -396,6 +396,56 @@ li {
   margin-top: 0;
 }
 
+/* selects */
+select {
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  width: 100%;
+  z-index: 1;
+  outline: none;
+  appearance: none;
+  border: none;
+  color: var(--color-lightest);
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-base);
+}
+
+.select {
+  border-radius: var(--rounded-full);
+  background-color: var(--accent-color);
+  padding: 0 var(--sizing-lg);
+  display: grid;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  text-align-last: center;
+  -moz-text-align-last: center;
+}
+
+.select,
+.select select {
+  min-height: calc(var(--sizing-3xl) * 1.25);
+  min-width:  calc(var(--sizing-3xl) * 4);;
+}
+
+.select select,
+.select::after {
+  grid-area: select;
+}
+
+.select::after {
+  content: '';
+  width: var(--sizing-md);
+  height: var(--sizing-sm);
+  display: inline-block;
+  background-color: var(--color-lightest);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  justify-self: end;
+}
+
 /* utilities */
 .hidden {
   display: none !important;
