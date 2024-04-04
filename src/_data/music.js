@@ -1,13 +1,10 @@
-import EleventyFetch from '@11ty/eleventy-fetch';
+import { readFile } from 'fs/promises'
 import { buildChart } from './helpers/music.js'
 
 export default async function () {
-  const API_KEY_MUSIC = process.env.API_KEY_MUSIC;
-  const url = `https://coryd.dev/api/music?key=${API_KEY_MUSIC}`;
-  const res = EleventyFetch(url, {
-    duration: '1h',
-    type: 'json',
-  }).catch();
-  const resObj = await res;
-  return buildChart(resObj['scrobbles'], resObj['artists'], resObj['albums'], resObj['nowPlaying'])
+  const window = JSON.parse(await readFile('./src/_data/json/scrobbles-window.json', 'utf8'));
+  const artists = JSON.parse(await readFile('./src/_data/json/artists-map.json', 'utf8'));
+  const albums = JSON.parse(await readFile('./src/_data/json/albums-map.json', 'utf8'));
+  const nowPlaying = JSON.parse(await readFile('./src/_data/json/now-playing.json', 'utf8'));
+  return buildChart(window['data'], artists, albums, nowPlaying)
 }
