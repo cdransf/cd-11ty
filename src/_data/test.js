@@ -8,8 +8,8 @@ export default async function () {
       return;
     }
     window = JSON.parse(data)
-  })
   console.log(window)
+  })
   return window
 
   // fs.readdir('./src/_data/json/', (err, files) => {
