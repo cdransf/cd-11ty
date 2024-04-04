@@ -2,6 +2,7 @@ import { getStore } from '@netlify/blobs'
 import fs from 'fs'
 
 export const onPreBuild = async ({ constants }) => {
+  console.log(constants)
   const scrobbles = getStore('scrobbles', {
     siteID: constants.SITE_ID,
     token: constants.NETLIFY_API_TOKEN,
