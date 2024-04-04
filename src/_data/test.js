@@ -11,7 +11,7 @@ export default async function () {
   // console.log(window)
   // return window
 
-  fs.readdir('./json/', (err, files) => {
+  fs.readdir('./src/_data/json/', (err, files) => {
     files.forEach(file => {
       console.log(file);
     });
