@@ -9,10 +9,51 @@ permalink: /search.html
 {% endcapture %}
 <style>{{ css }}</style>
 <script src="/assets/scripts/components/minisearch.js"></script>
-{% capture js %}
-{% render "../assets/scripts/search.js" %}
-{% endcapture %}
-<script type="module">{{ js }}</script>
+<script type="module">
+  (() => {
+    const miniSearch = new MiniSearch({
+      fields: ['title', 'text', 'tags']
+    })
+
+    const $form = document.querySelector('.search__form')
+    const $input = document.querySelector('.search__form--input')
+    const $fallback = document.querySelector('.search__form--fallback')
+    const $results = document.querySelector('.search__results')
+
+    // remove noscript fallbacks
+    $form.removeAttribute('action')
+    $form.removeAttribute('method')
+    $fallback.remove()
+
+    const index = {{ collections.searchIndex | json }}
+    const resultsById = index.reduce((byId, result) => {
+      byId[result.id] = result
+      return byId
+    }, {})
+    miniSearch.addAll(index)
+
+    $input.addEventListener('input', () => {
+      const query = $input.value
+      const results = (query.length > 1) ? getSearchResults(query) : []
+      if (query === '') renderSearchResults([])
+      if (results && window.fathom) fathom?.trackEvent(`Search query: ${query}`)
+      renderSearchResults(results)
+    })
+
+    const getSearchResults = (query) => miniSearch.search(query, { prefix: true, fuzzy: 0.2, boost: { title: 2 } }).map(({ id }) => resultsById[id])
+    const renderSearchResults = (results) => {
+      $results.innerHTML = results.map(({ title, url }) => {
+        return `<li class="search__results--result"><a href="${url}">${title}</a></li>`
+      }).join('\n')
+
+      if (results.length > 0) {
+        $results.classList.remove('hidden')
+      } else {
+        $results.classList.add('hidden')
+      }
+    }
+  })();
+</script>
 <form class="search__form" action="https://duckduckgo.com" method="get">
   <input class="search__form--input" placeholder="Search" type="search" name="q" autocomplete="off" autofocus>
   <input class="search__form--fallback" type="hidden" placeholder="Search" name="sites" value="coryd.dev">
