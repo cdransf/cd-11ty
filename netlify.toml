@@ -6,6 +6,9 @@
   publish = "_site"
   edge_functions = "api"
 
+[[plugins]]
+package = "/plugins/fetch-scrobbles"
+
 ###
 # URLs
 ###
