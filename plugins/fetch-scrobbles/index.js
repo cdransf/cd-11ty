@@ -2,16 +2,18 @@ import { getStore } from '@netlify/blobs'
 import fs from 'fs'
 
 export const onPreBuild = async ({ constants }) => {
-  console.log(constants)
-  const scrobbles = getStore('scrobbles', {
+  const scrobbles = getStore({
+    name: 'scrobbles',
     siteID: constants.SITE_ID,
     token: constants.NETLIFY_API_TOKEN,
   })
-  const artists = getStore('artists', {
+  const artists = getStore({
+    name: 'artists',
     siteID: constants.SITE_ID,
     token: constants.NETLIFY_API_TOKEN,
   })
-  const albums = getStore('albums', {
+  const albums = getStore({
+    name: 'albums',
     siteID: constants.SITE_ID,
     token: constants.NETLIFY_API_TOKEN,
   })
