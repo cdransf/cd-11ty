@@ -67,15 +67,6 @@ export default async (request) => {
           console.log(err);
           return {}
         });
-      const mbidRes = await fetch("https://coryd.dev/api/mbids", {
-        type: "json",
-      }).then((data) => {
-        if (data.ok) return data.json()
-        throw new Error('Something went wrong with the mbid endpoint.');
-      }).catch(err => {
-          console.log(err);
-          return {}
-        });
       const artistData = artistRes['artist'];
       const mbid = artistData['mbid']
       const genreUrl = `https://musicbrainz.org/ws/2/artist/${mbid}?inc=aliases+genres&fmt=json`;

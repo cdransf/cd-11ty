@@ -68,11 +68,6 @@ for = "/api/now-playing"
   Content-Type = "application/json"
 
 [[headers]]
-for = "/api/mbids"
-  [headers.values]
-  Content-Type = "application/json"
-
-[[headers]]
 for = "/api/artist-capitalization"
   [headers.values]
   Content-Type = "application/json"
