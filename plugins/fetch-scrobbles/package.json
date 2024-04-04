@@ -1,7 +1,7 @@
 {
-  "name": "netlify-plugin-rss",
+  "name": "netlify-plugin-fetch-scrobbles",
   "version": "0.0.8",
-  "description": "netlify-plugin-rss",
+  "description": "netlify-plugin-fetch-scrobbles",
   "main": "index.js",
   "type": "module",
   "devDependencies": {
