@@ -1,0 +1,10 @@
+{
+  "name": "netlify-plugin-rss",
+  "version": "0.0.8",
+  "description": "netlify-plugin-rss",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@netlify/blobs": "^7.3.0"
+  }
+}
