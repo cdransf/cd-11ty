@@ -1,19 +1,19 @@
 import fs from 'fs'
 
 export default async function () {
-  // const window = fs.readFileSync('./json/scrobbles-window.json', (error, data) => {
-  //   if (error) {
-  //     console.log(error);
-  //     return;
-  //   }
-  //   return JSON.parse(data)
-  // })
-  // console.log(window)
-  // return window
+  const window = fs.readFileSync('./src/_data/json/scrobbles-window.json', (error, data) => {
+    if (error) {
+      console.log(error);
+      return;
+    }
+    return JSON.parse(data)
+  })
+  console.log(window)
+  return window
 
-  fs.readdir('./src/_data/json/', (err, files) => {
-    files.forEach(file => {
-      console.log(file);
-    });
-  });
+  // fs.readdir('./src/_data/json/', (err, files) => {
+  //   files.forEach(file => {
+  //     console.log(file);
+  //   });
+  // });
 }
