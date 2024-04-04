@@ -12116,5 +12116,27 @@
       "https://social.lol/users/cory/statuses/112208130804878097"
     ],
     "lastTootTimestamp": 1712160199102
+  },
+  "https://www.wheresyoured.at/bubble-trouble/?ref=ed-zitrons-wheres-your-ed-at-newsletter": {
+    "id": "aHR0cHM6Ly93d3cud2hlcmVzeW91cmVkLmF0L2J1YmJsZS10cm91YmxlLz9yZWY9ZWQteml0cm9ucy13aGVyZXMteW91ci1lZC1hdC1uZXdzbGV0dGVy",
+    "title": "🔗: Bubble Trouble",
+    "url": "https://www.wheresyoured.at/bubble-trouble/?ref=ed-zitrons-wheres-your-ed-at-newsletter",
+    "content_text": "🔗: Bubble Trouble #AI #Tech https://www.wheresyoured.at/bubble-trouble/?ref=ed-zitrons-wheres-your-ed-at-newsletter",
+    "date_published": "Thu, 04 Apr 2024 19:13:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112215256806134464"
+    ],
+    "lastTootTimestamp": 1712268933248
+  },
+  "https://coryd.dev/posts/2024/access-to-data-isnt-a-grant-to-exploit-it/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9hY2Nlc3MtdG8tZGF0YS1pc250LWEtZ3JhbnQtdG8tZXhwbG9pdC1pdC8=",
+    "title": "📝: Access to data isn't a grant to exploit it",
+    "url": "https://coryd.dev/posts/2024/access-to-data-isnt-a-grant-to-exploit-it/",
+    "content_text": "📝: Access to data isn't a grant to exploit it #AI #Tech https://coryd.dev/posts/2024/access-to-data-isnt-a-grant-to-exploit-it/",
+    "date_published": "Thu, 04 Apr 2024 23:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112215293943424924"
+    ],
+    "lastTootTimestamp": 1712269499952
   }
 }
