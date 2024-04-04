@@ -1,10 +1,14 @@
-import { getStore } from '@netlify/blobs'
+import { getDeployStore } from '@netlify/blobs'
 import fs from 'fs'
 
-export const onPreBuild = async () => {
-  const scrobbles = getStore('scrobbles')
-  const artists = getStore('artists')
-  const albums = getStore('albums')
+export const onPreBuild = async ({ constants }) => {
+  const store = getDeployStore({
+    siteID: constants.SITE_ID,
+    token: constants.NETLIFY_API_TOKEN,
+  });
+  const scrobbles = store.get('scrobbles')
+  const artists = store.get('artists')
+  const albums = store.get('albums')
   const windowData = await scrobbles.get('window', { type: 'json'})
   const artistsMap = await artists.get('artists-map', { type: 'json' })
   const albumsMap = await albums.get('albums-map', { type: 'json' })
