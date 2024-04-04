@@ -12127,5 +12127,16 @@
       "https://social.lol/users/cory/statuses/112215256806134464"
     ],
     "lastTootTimestamp": 1712268933248
+  },
+  "https://coryd.dev/posts/2024/access-to-data-isnt-a-grant-to-exploit-it/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9hY2Nlc3MtdG8tZGF0YS1pc250LWEtZ3JhbnQtdG8tZXhwbG9pdC1pdC8=",
+    "title": "📝: Access to data isn't a grant to exploit it",
+    "url": "https://coryd.dev/posts/2024/access-to-data-isnt-a-grant-to-exploit-it/",
+    "content_text": "📝: Access to data isn't a grant to exploit it #AI #Tech https://coryd.dev/posts/2024/access-to-data-isnt-a-grant-to-exploit-it/",
+    "date_published": "Thu, 04 Apr 2024 23:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112215293943424924"
+    ],
+    "lastTootTimestamp": 1712269499952
   }
 }
