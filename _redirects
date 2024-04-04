@@ -48,7 +48,6 @@
 /wp2/wp-* /400/ 400
 /index.php* /400/ 400
 /admin.php* /400/ 400
-/api/artist-capitalization/* /400/ 400
 /fetch/* /400/ 400
 /.env /400/ 400
 /.git /400/ 400
