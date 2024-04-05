@@ -23,6 +23,7 @@ export const onPreBuild = async ({ constants }) => {
     siteID: constants.SITE_ID,
     token: constants.NETLIFY_API_TOKEN,
   })
+
   const keys = getKeys()
   const chartData = { data: [] }
   const scrobbles = getStore('scrobbles')
