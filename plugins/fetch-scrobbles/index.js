@@ -4,13 +4,17 @@ import fs from 'fs'
 
 const getKeys = () => {
   const currentDate = DateTime.now()
-  return [
-    `${currentDate.year}-${currentDate.weekNumber}`
-    `${currentDate.minus({ weeks: 1 }).year}-${currentDate.minus({ weeks: 1 }).weekNumber}`,
-    `${currentDate.minus({ weeks: 2 }).year}-${currentDate.minus({ weeks: 2 }).weekNumber}`,
-    `${currentDate.minus({ weeks: 3 }).year}-${currentDate.minus({ weeks: 3 }).weekNumber}`,
-    `${currentDate.minus({ weeks: 4 }).year}-${currentDate.minus({ weeks: 4 }).weekNumber}`,
-  ]
+  const weeks = Math.floor(currentDate.daysInMonth / 7)
+  let count = 0
+  const keys = []
+  while (count < weeks) {
+    const weeks = 1 * (count + 1)
+    const date = DateTime.now().minus({ weeks })
+    keys.push(`${date.year}-${date.weekNumber}`)
+    count++;
+  }
+  console.log(keys)
+  return keys
 }
 
 export const onPreBuild = async ({ constants }) => {
