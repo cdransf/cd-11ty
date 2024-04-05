@@ -24,7 +24,7 @@ export const onPreBuild = async ({ constants }) => {
     token: constants.NETLIFY_API_TOKEN,
   })
   const keys = getKeys()
-  const chartData = []
+  const chartData = { data: [] }
   const scrobbles = getStore('scrobbles')
   const artists = getStore('artists')
   const albums = getStore('albums')
@@ -34,7 +34,7 @@ export const onPreBuild = async ({ constants }) => {
   const nowPlaying = await scrobbles.get('now-playing', { type: 'json'})
   for (const key of keys) {
     const scrobbleData = await scrobbles.get(key, { type: 'json'})
-    chartData.push(scrobbleData['data'])
+    chartData['data'].push(...scrobbleData['data'])
   }
   console.log(chartData)
   fs.writeFileSync('./src/_data/json/scrobbles-window.json', JSON.stringify(windowData))
