@@ -32,11 +32,12 @@ export const onPreBuild = async ({ constants }) => {
   const artistsMap = await artists.get('artists-map', { type: 'json' })
   const albumsMap = await albums.get('albums-map', { type: 'json' })
   const nowPlaying = await scrobbles.get('now-playing', { type: 'json'})
+
   for (const key of keys) {
     const scrobbleData = await scrobbles.get(key, { type: 'json'})
     chartData['data'].push(...scrobbleData['data'])
   }
-  console.log(chartData)
+
   fs.writeFileSync('./src/_data/json/scrobbles-window.json', JSON.stringify(windowData))
   fs.writeFileSync('./src/_data/json/artists-map.json', JSON.stringify(artistsMap))
   fs.writeFileSync('./src/_data/json/albums-map.json', JSON.stringify(albumsMap))
