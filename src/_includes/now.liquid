@@ -53,6 +53,26 @@ layout: default
 <div class="hidden" id="albums-three-months">
   {% render "partials/now/media-grid.liquid", data:musicCharts.threeMonthChart.albums, shape: "square", count: 8 %}
 </div>
+<div class="now__section--header-wrapper">
+  <h2 id="tracks" class="now__section--header flex--centered">
+    {% tablericon "playlist" "Tracks" %}
+    Tracks
+  </h2>
+  <div class="now__section--header-buttons client-side">
+    <button class="small active" data-toggle="tracks-window">This week</button>
+    <button class="small secondary" data-toggle="tracks-month">This month</button>
+    <button class="small secondary" data-toggle="tracks-three-months">3 months</button>
+  </div>
+</div>
+<div id="tracks-window">
+  {% render "partials/now/track-chart.liquid", data:music.topTracks.data, mostPlayed:music.topTracks.mostPlayed %}
+</div>
+<div class="hidden" id="tracks-month">
+  {% render "partials/now/track-chart.liquid", data:musicCharts.month.topTracks.data, mostPlayed:musicCharts.month.topTracks.mostPlayed %}
+</div>
+<div class="hidden" id="tracks-three-months">
+  {% render "partials/now/track-chart.liquid", data:musicCharts.threeMonthChart.topTracks.data, mostPlayed:musicCharts.threeMonthChart.topTracks.mostPlayed %}
+</div>
 {% render "partials/now/albumReleases.liquid", albumReleases:albumReleases %}
 <h2 id="books" class="now__section--header flex--centered">
   {% tablericon "books" "Books" %}

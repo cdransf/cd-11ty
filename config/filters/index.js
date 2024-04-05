@@ -188,6 +188,7 @@ export default {
       }
       return normalized
     }),
+  calculatePlayPercentage: (plays, mostPlayed) => `${plays/mostPlayed * 100}%`,
 
     // tags
   filterTags: (tags) => {

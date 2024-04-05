@@ -1,0 +1,24 @@
+{% if data.size > 0 %}
+  {% capture css %}
+    {% render "../../../assets/styles/components/track-chart.css" %}
+    {% render "../../../assets/styles/components/progress-bar.css" %}
+  {% endcapture %}
+  <style>{{ css}}</style>
+{% endif %}
+<div class="track__chart">
+  {% for item in data limit: 10 %}
+  {%- assign percentage = item.plays | calculatePlayPercentage: mostPlayed -%}
+  <div class="track__chart--item">
+    <div class="track__chart--presentation">
+      <div class="track__chart--count">{{ forloop.index }}.</div>
+      <div class="track__chart--info">
+        <div class="track__chart--title">{{ item.title }}</div>
+        <div class="track__chart--artists">
+          <a href="{{ track.url }}">{{ item.artist }}</a> • {{ item.plays }} plays
+        </div>
+      </div>
+    </div>
+    {% render "partials/now/progress-bar.liquid", percentage:percentage %}
+  </div>
+  {% endfor %}
+</div>

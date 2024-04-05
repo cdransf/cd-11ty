@@ -16,9 +16,14 @@ export const buildChart = (tracks, artists, albums, nowPlaying = {}) => {
   tracks.forEach(track => {
     if (!tracksData[track['track']]) {
       tracksData[track['track']] = {
+        artist: artistCapitalization(track['artist']),
         title: track['track'],
         plays: 1,
-        type: 'track'
+        type: 'track',
+        url: (artists[artistSanitizedKey(track['artist'])]?.['mbid'] && artists[artistSanitizedKey(track['artist'])]?.['mbid'] !== '') ? `http://musicbrainz.org/artist/${artists[artistSanitizedKey(track['artist'])]?.['mbid']}` : `https://musicbrainz.org/search?query=${track['artist'].replace(
+            /\s+/g,
+            '+'
+          )}&type=artist`,
       }
     } else {
       tracksData[track['track']]['plays']++
@@ -56,10 +61,17 @@ export const buildChart = (tracks, artists, albums, nowPlaying = {}) => {
     }
   })
 
+  const topTracks = objectToArraySorted(tracksData).splice(0, 10)
+  const topTracksData = {
+    data: topTracks,
+    mostPlayed: Math.max(...topTracks.map(track => track.plays))
+  }
+
   return {
     artists: objectToArraySorted(artistsData),
     albums: objectToArraySorted(albumsData),
     tracks: objectToArraySorted(tracksData),
+    topTracks: topTracksData,
     nowPlaying
   }
 }
