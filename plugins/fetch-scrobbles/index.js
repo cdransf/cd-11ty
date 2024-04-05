@@ -34,7 +34,7 @@ export const onPreBuild = async ({ constants }) => {
   const nowPlaying = await scrobbles.get('now-playing', { type: 'json'})
   for (const key of keys) {
     const scrobbleData = await scrobbles.get(key, { type: 'json'})
-    data.push(scrobbleData['data'])
+    chartData.push(scrobbleData['data'])
   }
   console.log(chartData)
   fs.writeFileSync('./src/_data/json/scrobbles-window.json', JSON.stringify(windowData))
