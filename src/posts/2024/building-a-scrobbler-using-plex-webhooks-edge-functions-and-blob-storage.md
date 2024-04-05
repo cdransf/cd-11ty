@@ -39,48 +39,48 @@ Next, in a basic declaration for the edge function `(export default async (reque
 
 ```javascript
 const ACCOUNT_ID_PLEX = Netlify.env.get('ACCOUNT_ID_PLEX');
-  const MUSIC_KEY = Netlify.env.get('API_KEY_LASTFM');
-  const params = new URL(request['url']).searchParams
-  const id = params.get('id')
+const MUSIC_KEY = Netlify.env.get('API_KEY_LASTFM');
+const params = new URL(request['url']).searchParams
+const id = params.get('id')
 
-  if (!id) return new Response(JSON.stringify({
-      status: 'Bad request',
-    }),
-    { headers: { "Content-Type": "application/json" } }
-  )
+if (!id) return new Response(JSON.stringify({
+    status: 'Bad request',
+  }),
+  { headers: { "Content-Type": "application/json" } }
+)
 
-  if (id !== ACCOUNT_ID_PLEX) return new Response(JSON.stringify({
-      status: 'Forbidden',
-    }),
-    { headers: { "Content-Type": "application/json" } }
-  )
+if (id !== ACCOUNT_ID_PLEX) return new Response(JSON.stringify({
+    status: 'Forbidden',
+  }),
+  { headers: { "Content-Type": "application/json" } }
+)
 ```
 
 Moving on, we handle the webhook form data and set up our blob store variables:
 
 ```javascript
 const data = await request.formData()
-  const payload = JSON.parse(data.get('payload'))
-  const artists = getStore('artists')
-  const albums = getStore('albums')
-  const scrobbles = getStore('scrobbles')
+const payload = JSON.parse(data.get('payload'))
+const artists = getStore('artists')
+const albums = getStore('albums')
+const scrobbles = getStore('scrobbles')
 ```
 
 If the event sent from Plex is of the type `media.scrobble` we need to handle it:
 
 ```javascript
 if (payload?.event === 'media.scrobble') {
-    const artist = payload['Metadata']['grandparentTitle']
-    const album = payload['Metadata']['parentTitle']
-    const track = payload['Metadata']['title']
-    const trackNumber = payload['Metadata']['index']
-    const timestamp = DateTime.now()
-    const artistsMap = await artists.get('artists-map', { type: 'json' })
-    const albumsMap = await albums.get('albums-map', { type: 'json' })
-    const artistSanitizedKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}`
-    const albumSanitizedKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
-      , '').replace(/\s+/g, '-').toLowerCase())}`
-    let artistInfo = artistsMap[artistSanitizedKey]
+  const artist = payload['Metadata']['grandparentTitle']
+  const album = payload['Metadata']['parentTitle']
+  const track = payload['Metadata']['title']
+  const trackNumber = payload['Metadata']['index']
+  const timestamp = DateTime.now()
+  const artistsMap = await artists.get('artists-map', { type: 'json' })
+  const albumsMap = await albums.get('albums-map', { type: 'json' })
+  const artistSanitizedKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}`
+  const albumSanitizedKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
+    , '').replace(/\s+/g, '-').toLowerCase())}`
+  let artistInfo = artistsMap[artistSanitizedKey]
 ```
 
 This caches the basic track info for the scrobble that we need to record it, creates sanitized keys and gets the objects we've stored to persist artist and album metadata (`artistsMap` and `albumsMap`, respectively).
@@ -89,81 +89,81 @@ If we don't yet have metadata cached for an artist or an album, we use the Last.
 
 ```javascript
 // if there is no artist blob, populate one
-    if (!artistsMap[artistSanitizedKey]) {
-      const artistRes = await fetch(
-        `https://ws.audioscrobbler.com/2.0/?method=artist.getInfo&api_key=${MUSIC_KEY}&artist=${sanitizeMediaString(artist).replace(/\s+/g, '+').toLowerCase()}&format=json`,
-        {
-          type: "json",
-        }
-      ).then((data) => {
-        if (data.ok) return data.json()
-        throw new Error('Something went wrong with the Last.fm endpoint.');
-      }).catch(err => {
-          console.log(err);
-          return {}
-        });
-      const mbidRes = await fetch("https://coryd.dev/api/mbids", {
-        type: "json",
-      }).then((data) => {
-        if (data.ok) return data.json()
-        throw new Error('Something went wrong with the mbid endpoint.');
-      }).catch(err => {
-          console.log(err);
-          return {}
-        });
-      const artistData = artistRes['artist'];
-      let mbid = artistData['mbid']
-      const mbidMap = () => mbidRes[artistData['name'].toLowerCase()] || '';
-
-      // mbid mismatches
-      if (mbidMap() !== "") mbid = mbidMap();
-
-      const genreUrl = `https://musicbrainz.org/ws/2/artist/${mbid}?inc=aliases+genres&fmt=json`;
-      const genreRes = await fetch(genreUrl, {
-        type: "json",
-      }).then((data) => {
-        if (data.ok) return data.json()
-        throw new Error('Something went wrong with the MusicBrainz endpoint.');
-      }).catch(err => {
-        console.log(err);
-        return {}
-      });
-      const genre = genreRes['genres'].sort((a, b) => b.count - a.count)[0]?.['name'] || '';
-      const artistObj = {
-        mbid,
-        genre,
-        image: `https://cdn.coryd.dev/artists/${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}.jpg`
-      }
-      artistInfo = artistObj
-      artistsMap[artistSanitizedKey] = artistObj
-      await artists.setJSON('artists-map', artistsMap)
+if (!artistsMap[artistSanitizedKey]) {
+  const artistRes = await fetch(
+    `https://ws.audioscrobbler.com/2.0/?method=artist.getInfo&api_key=${MUSIC_KEY}&artist=${sanitizeMediaString(artist).replace(/\s+/g, '+').toLowerCase()}&format=json`,
+    {
+      type: "json",
     }
+  ).then((data) => {
+    if (data.ok) return data.json()
+    throw new Error('Something went wrong with the Last.fm endpoint.');
+  }).catch(err => {
+      console.log(err);
+      return {}
+    });
+  const mbidRes = await fetch("https://coryd.dev/api/mbids", {
+    type: "json",
+  }).then((data) => {
+    if (data.ok) return data.json()
+    throw new Error('Something went wrong with the mbid endpoint.');
+  }).catch(err => {
+      console.log(err);
+      return {}
+    });
+  const artistData = artistRes['artist'];
+  let mbid = artistData['mbid']
+  const mbidMap = () => mbidRes[artistData['name'].toLowerCase()] || '';
+
+  // mbid mismatches
+  if (mbidMap() !== "") mbid = mbidMap();
+
+  const genreUrl = `https://musicbrainz.org/ws/2/artist/${mbid}?inc=aliases+genres&fmt=json`;
+  const genreRes = await fetch(genreUrl, {
+    type: "json",
+  }).then((data) => {
+    if (data.ok) return data.json()
+    throw new Error('Something went wrong with the MusicBrainz endpoint.');
+  }).catch(err => {
+    console.log(err);
+    return {}
+  });
+  const genre = genreRes['genres'].sort((a, b) => b.count - a.count)[0]?.['name'] || '';
+  const artistObj = {
+    mbid,
+    genre,
+    image: `https://cdn.coryd.dev/artists/${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}.jpg`
+  }
+  artistInfo = artistObj
+  artistsMap[artistSanitizedKey] = artistObj
+  await artists.setJSON('artists-map', artistsMap)
+}
 ```
 
 This will be skipped on subsequent plays for the artist as we'll already have the information we need. Finally, we store our data:
 
 ```javascript
-    // scrobble logic
-    const trackScrobbleData = {
-      track,
-      album,
-      artist,
-      trackNumber,
-      timestamp,
-      genre: artistInfo?.['genre'] || ''
-    }
-    const scrobbleData = await scrobbles.get(`${weekKey()}`, { type: 'json'})
-    const windowData = await scrobbles.get('window', { type: 'json'})
-    await scrobbles.setJSON('now-playing', {...trackScrobbleData, ...{ url: `https://musicbrainz.org/artist/${artistInfo?.['mbid']}`}})
-    let scrobbleUpdate = scrobbleData
-    let windowUpdate = windowData;
-    if (scrobbleUpdate?.['data']) scrobbleUpdate['data'].push(trackScrobbleData)
-    if (!scrobbleUpdate?.['data']) scrobbleUpdate = { data: [trackScrobbleData] }
-    if (windowData?.['data']) windowUpdate['data'].push(trackScrobbleData)
-    if (!windowData?.['data']) windowUpdate = { data: [trackScrobbleData] }
-    windowUpdate = { data: filterOldScrobbles(windowUpdate.data) }
-    await scrobbles.setJSON(`${weekKey()}`, scrobbleUpdate)
-    await scrobbles.setJSON('window', windowUpdate)
+// scrobble logic
+const trackScrobbleData = {
+  track,
+  album,
+  artist,
+  trackNumber,
+  timestamp,
+  genre: artistInfo?.['genre'] || ''
+}
+const scrobbleData = await scrobbles.get(`${weekKey()}`, { type: 'json'})
+const windowData = await scrobbles.get('window', { type: 'json'})
+await scrobbles.setJSON('now-playing', {...trackScrobbleData, ...{ url: `https://musicbrainz.org/artist/${artistInfo?.['mbid']}`}})
+let scrobbleUpdate = scrobbleData
+let windowUpdate = windowData;
+if (scrobbleUpdate?.['data']) scrobbleUpdate['data'].push(trackScrobbleData)
+if (!scrobbleUpdate?.['data']) scrobbleUpdate = { data: [trackScrobbleData] }
+if (windowData?.['data']) windowUpdate['data'].push(trackScrobbleData)
+if (!windowData?.['data']) windowUpdate = { data: [trackScrobbleData] }
+windowUpdate = { data: filterOldScrobbles(windowUpdate.data) }
+await scrobbles.setJSON(`${weekKey()}`, scrobbleUpdate)
+await scrobbles.setJSON('window', windowUpdate)
 ```
 
 We construct a `trackScrobbleData` object, merge our new scrobble with the data for the moving window of plays and current week and populate a `now-playing` blob that is now retrieved to populate [the dynamic check in component on my home page](https://coryd.dev/posts/2023/check-in-to-your-personal-site/).
