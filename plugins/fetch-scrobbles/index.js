@@ -28,8 +28,6 @@ export const onPreBuild = async ({ constants }) => {
   const monthChartData = { data: [] }
   const threeMonthKeys = getKeys(3)
   const threeMonthChartData = { data: [] }
-  const sixMonthKeys = getKeys(6)
-  const sixMonthChartData = { data: [] }
   const scrobbles = getStore('scrobbles')
   const artists = getStore('artists')
   const albums = getStore('albums')
@@ -48,16 +46,10 @@ export const onPreBuild = async ({ constants }) => {
     threeMonthChartData['data'].push(...scrobbleData['data'])
   }
 
-  for (const key of sixMonthKeys) {
-    const scrobbleData = await scrobbles.get(key, { type: 'json'})
-    sixMonthChartData['data'].push(...scrobbleData['data'])
-  }
-
   fs.writeFileSync('./src/_data/json/scrobbles-window.json', JSON.stringify(windowData))
   fs.writeFileSync('./src/_data/json/artists-map.json', JSON.stringify(artistsMap))
   fs.writeFileSync('./src/_data/json/albums-map.json', JSON.stringify(albumsMap))
   fs.writeFileSync('./src/_data/json/now-playing.json', JSON.stringify(nowPlaying))
   fs.writeFileSync('./src/_data/json/scrobbles-month-chart.json', JSON.stringify(monthChartData))
   fs.writeFileSync('./src/_data/json/scrobbles-three-month-chart.json', JSON.stringify(threeMonthChartData))
-  fs.writeFileSync('./src/_data/json/scrobbles-six-month-chart.json', JSON.stringify(sixMonthChartData))
 }
