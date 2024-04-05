@@ -25,7 +25,7 @@
     </div>
   </noscript>
   <div class="select client-side">
-    <select id="pagination">
+    <select id="pagination" aria-label="Page selection">
       {% for pageEntry in pagination.pages %}
       <option value="{{ forloop.index | minus: 1 }}">{{ forloop.index }} of {{ pagination.links.size }}</option>
       {% endfor %}
