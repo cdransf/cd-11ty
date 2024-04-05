@@ -27,7 +27,7 @@ layout: default
   {% render "partials/now/media-grid.liquid", data:music.artists, shape: "square", count: 8, loading: "eager" %}
 </div>
 <div class="hidden" id="artists-month">
-  {% render "partials/now/media-grid.liquid", data:musicCharts.month.artists, shape: "square", count: 8, loading: "eager" %}
+  {% render "partials/now/media-grid.liquid", data:musicCharts.month.artists, shape: "square", count: 8 %}
 </div>
 <div class="now__section--header-wrapper">
   <h2 id="albums" class="now__section--header flex--centered">
