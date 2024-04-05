@@ -23,7 +23,6 @@ layout: default
     <button class="small secondary" data-toggle="artists-month">This month</button>
     <button class="small secondary" data-toggle="artists-three-months">3 months</button>
     <button class="small secondary" data-toggle="artists-six-months">6 months</button>
-    <button class="small secondary" data-toggle="artists-one-year">1 year</button>
   </div>
 </div>
 <div id="artists-window">
@@ -38,9 +37,6 @@ layout: default
 <div class="hidden" id="artists-six-months">
   {% render "partials/now/media-grid.liquid", data:musicCharts.sixMonthChart.artists, shape: "square", count: 8 %}
 </div>
-<div class="hidden" id="artists-one-year">
-  {% render "partials/now/media-grid.liquid", data:musicCharts.oneYearChart.artists, shape: "square", count: 8 %}
-</div>
 <div class="now__section--header-wrapper">
   <h2 id="albums" class="now__section--header flex--centered">
     {% tablericon "vinyl" "Albums" %}
@@ -51,7 +47,6 @@ layout: default
     <button class="small secondary" data-toggle="albums-month">This month</button>
     <button class="small secondary" data-toggle="albums-three-months">3 months</button>
     <button class="small secondary" data-toggle="albums-six-months">6 months</button>
-    <button class="small secondary" data-toggle="albums-one-year">1 year</button>
   </div>
 </div>
 <div id="albums-window">
@@ -65,9 +60,6 @@ layout: default
 </div>
 <div class="hidden" id="albums-six-months">
   {% render "partials/now/media-grid.liquid", data:musicCharts.sixMonthChart.albums, shape: "square", count: 8 %}
-</div>
-<div class="hidden" id="albums-one-year">
-  {% render "partials/now/media-grid.liquid", data:musicCharts.oneYearChart.albums, shape: "square", count: 8 %}
 </div>
 {% render "partials/now/albumReleases.liquid", albumReleases:albumReleases %}
 <h2 id="books" class="now__section--header flex--centered">
