@@ -19,3 +19,5 @@ If I'm looking for news, I want something I can trust, something with an ounce o
 Search has become bad enough as ads have become more pervasive and SEO abuse has grown. AI-powered search stands to offer worse, more expensive results that you can trust even less.
 
 <strong class="highlight-text">The best answer to a query AI can provide me with is the URL of a search engine uncluttered by its nonsense.</strong>
+
+{% render "partials/banners/github.liquid", url: 'https://github.com/ai-robots-txt/ai.robots.txt' %}
