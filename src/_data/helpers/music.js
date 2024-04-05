@@ -4,7 +4,7 @@ export const artistCapitalization = (artist) => artistCapitalizationPatches[arti
 
 const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '').replace(/A©|Ã©/g, 'e');
 
-export const buildChart = (tracks, artists, albums, nowPlaying) => {
+export const buildChart = (tracks, artists, albums, nowPlaying = {}) => {
   const artistsData = {}
   const albumsData = {}
   const tracksData = {}
