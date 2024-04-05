@@ -18,7 +18,7 @@ permalink: /about.html
 </div>
 <h2 class="page__header text--centered">Hi, I'm Cory</h2>
 
-<strong class="highlight-text">I'm a software developer based in Camarillo, California</strong>. I enjoy hanging out with my beautiful family and 4 rescue dogs, technology, automation, [music](https://coryd.dev/now#artists), writing, [reading](https://coryd.dev/now#books), [tv](https://coryd.dev/now#tv) and [movies](https://coryd.dev/now#movies). Lately I've been{% if artist %} listening to a lot of <strong class="highlight-text">{{ artist.title }}</strong>,{% endif %} reading <strong class="highlight-text">{{ book.title }}</strong> and watching <strong class="highlight-text">{{ show.name }}</strong>.
+<strong class="highlight-text">I'm a software developer based in Camarillo, California</strong>. I enjoy hanging out with my beautiful family and 3 rescue dogs, technology, automation, [music](https://coryd.dev/now#artists), writing, [reading](https://coryd.dev/now#books), [tv](https://coryd.dev/now#tv) and [movies](https://coryd.dev/now#movies). Lately I've been{% if artist %} listening to a lot of <strong class="highlight-text">{{ artist.title }}</strong>,{% endif %} reading <strong class="highlight-text">{{ book.title }}</strong> and watching <strong class="highlight-text">{{ show.name }}</strong>.
 
 I build, maintain and design web applications. I've been coding professionally since 2010 with a focus on frontend technologies. I help organize [the Eleventy Meetup](https://11tymeetup.dev) and mentor through [Underdog Devs](https://www.underdogdevs.org).
 

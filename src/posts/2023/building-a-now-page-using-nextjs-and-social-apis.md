@@ -64,7 +64,7 @@ export default function Now(props) {
             <Status status={status} />
             <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-100">
               <MapPinIcon className="mr-1 inline h-6 w-6" />
-              Living in Camarillo, California with my beautiful family, 4 rescue dogs and a guinea pig.
+              Living in Camarillo, California with my beautiful family, 3 rescue dogs and a guinea pig.
             </p>
             <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-100">
               <CodeBracketIcon className="mr-1 inline h-6 w-6" />
