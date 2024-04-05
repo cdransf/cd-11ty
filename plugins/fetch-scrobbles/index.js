@@ -7,13 +7,14 @@ const getKeys = () => {
   const weeks = Math.floor(currentDate.daysInMonth / 7)
   let count = 0
   const keys = []
+
   while (count < weeks) {
     const weeks = 1 * (count + 1)
     const date = DateTime.now().minus({ weeks })
     keys.push(`${date.year}-${date.weekNumber}`)
     count++;
   }
-  console.log(keys)
+
   return keys
 }
 
@@ -31,10 +32,10 @@ export const onPreBuild = async ({ constants }) => {
   const artistsMap = await artists.get('artists-map', { type: 'json' })
   const albumsMap = await albums.get('albums-map', { type: 'json' })
   const nowPlaying = await scrobbles.get('now-playing', { type: 'json'})
-  keys.forEach(async key => {
+  for (const key of keys) {
     const scrobbleData = await scrobbles.get(key, { type: 'json'})
     data.push(scrobbleData['data'])
-  })
+  }
   console.log(chartData)
   fs.writeFileSync('./src/_data/json/scrobbles-window.json', JSON.stringify(windowData))
   fs.writeFileSync('./src/_data/json/artists-map.json', JSON.stringify(artistsMap))
