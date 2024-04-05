@@ -7,10 +7,6 @@
   <style>{{ css }}</style>
   {% endif %}
   {% assign media = data | normalizeMedia %}
-  <h2 id="{{ title | downcase }}" class="now__section--header flex--centered">
-    {% tablericon icon title %}
-    {{ title }}
-  </h2>
   <div class="media__grid {% if shape == 'square' %}square{% else %}vertical{% endif %}">
     {% for item in media limit: count %}
       {% assign alt = item.alt | strip | escape %}

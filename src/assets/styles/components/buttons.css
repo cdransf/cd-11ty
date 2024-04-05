@@ -1,0 +1,48 @@
+button:not(.theme__toggle, .share) {
+  border-radius: var(--rounded-full);
+  padding: var(--sizing-sm) var(--sizing-lg);
+  margin: 0 var(--sizing-xs) var(--sizing-md) 0;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-base);
+  color: var(--color-lightest);
+  background-color: var(--accent-color);
+  appearance: none;
+  border: 2px solid var(--accent-color);
+  transition-property: all;
+}
+
+button:not(.theme__toggle, .share, .active):hover,
+button:not(.theme__toggle, .share, .active):active,
+button:not(.theme__toggle, .share, .active):focus {
+  background-color: var(--accent-color-hover);
+  border-color: var(--accent-color-hover);
+  transition-timing-function: var(--transition-ease-in-out);
+  transition-duration: var(--transition-duration-default);
+}
+
+button.small {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  padding: var(--sizing-xs) var(--sizing-sm);
+}
+
+button.secondary {
+  color: var(--accent-color);
+  background: transparent;
+}
+
+button.secondary:not(.theme__toggle, .share):hover,
+button.secondary:not(.theme__toggle, .share):active,
+button.secondary:not(.theme__toggle, .share):focus {
+  color: var(--accent-color-hover);
+  background: transparent;
+}
+
+button.active {
+  cursor: not-allowed;
+}

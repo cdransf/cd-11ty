@@ -6,6 +6,7 @@ description: 'How to contact me.'
 ---
 {% capture css %}
   {% render "../assets/styles/components/forms.css" %}
+  {% render "../assets/styles/components/buttons.css" %}
   {% render "../assets/styles/pages/contact.css" %}
 {% endcapture %}
 <style>{{ css }}</style>

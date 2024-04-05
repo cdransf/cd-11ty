@@ -31,33 +31,6 @@ textarea:focus {
   border: 1px solid var(--accent-color-hover);
 }
 
-button:not(.theme__toggle, .share) {
-  border-radius: var(--rounded-full);
-  padding: var(--sizing-sm) var(--sizing-lg);
-  margin: 0 var(--sizing-xs) var(--sizing-md) 0;
-  cursor: pointer;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-base);
-  color: var(--color-lightest);
-  background-color: var(--accent-color);
-  appearance: none;
-  border: none;
-  transition-property: background-color;
-}
-
-button:not(.theme__toggle, .share):hover,
-button:not(.theme__toggle, .share):active,
-button:not(.theme__toggle, .share):focus {
-  color: var(--color-lightest);
-  background-color: var(--accent-color-hover);
-  transition-timing-function: var(--transition-ease-in-out);
-  transition-duration: var(--transition-duration-default);
-}
-
 .search__results {
   margin-top: 0;
   padding: 0;

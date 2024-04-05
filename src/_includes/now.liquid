@@ -5,15 +5,62 @@ layout: default
   {% render "../assets/styles/pages/now.css" %}
   {% render "../assets/styles/components/media-grid.css" %}
   {% render "../assets/styles/components/progress-bar.css" %}
+  {% render "../assets/styles/components/buttons.css" %}
 {% endcapture %}
 <style>{{ css }}</style>
+{% capture js %}
+  {% render "../assets/scripts/media-toggles.js" %}
+{% endcapture %}
+<script>{{ js }}</script>
 {{ content }}
-{% render "partials/now/media-grid.liquid", data:music.artists, icon: "microphone-2", title: "Artists", shape: "square", count: 8, loading: "eager" %}
-{% render "partials/now/media-grid.liquid", data:music.albums, icon: "vinyl", title: "Albums", shape: "square", count: 8 %}
+<div class="now__section--header-wrapper">
+  <h2 id="artists" class="now__section--header flex--centered">
+    {% tablericon "microphone-2" "Artists" %}
+    Artists
+  </h2>
+  <div class="now__section--header-buttons client-side">
+    <button class="small active" data-toggle="artists-window">This week</button>
+    <button class="small secondary" data-toggle="artists-month">This month</button>
+  </div>
+</div>
+<div id="artists-window">
+  {% render "partials/now/media-grid.liquid", data:music.artists, shape: "square", count: 8, loading: "eager" %}
+</div>
+<div class="hidden" id="artists-month">
+  {% render "partials/now/media-grid.liquid", data:musicCharts.month.artists, shape: "square", count: 8, loading: "eager" %}
+</div>
+<div class="now__section--header-wrapper">
+  <h2 id="albums" class="now__section--header flex--centered">
+    {% tablericon "vinyl" "Albums" %}
+    Albums
+  </h2>
+  <div class="now__section--header-buttons client-side">
+    <button class="small active" data-toggle="albums-window">This week</button>
+    <button class="small secondary" data-toggle="albums-month">This month</button>
+  </div>
+</div>
+<div id="albums-window">
+  {% render "partials/now/media-grid.liquid", data:music.albums, shape: "square", count: 8 %}
+</div>
+<div class="hidden" id="albums-month">
+  {% render "partials/now/media-grid.liquid", data:musicCharts.month.albums, shape: "square", count: 8 %}
+</div>
 {% render "partials/now/albumReleases.liquid", albumReleases:albumReleases %}
-{% render "partials/now/media-grid.liquid", data:books, icon: "books", title: "Books", shape: "vertical", count: 6 %}
+<h2 id="books" class="now__section--header flex--centered">
+  {% tablericon "books" "Books" %}
+  Books
+</h2>
+{% render "partials/now/media-grid.liquid", data:books, shape: "vertical", count: 6 %}
 {% render "partials/recent-links.liquid", links:links %}
+<h2 id="movies" class="now__section--header flex--centered">
+  {% tablericon "movie" "Movies" %}
+  Movies
+</h2>
 {% render "partials/now/media-grid.liquid", data:movies, icon: "movie", title: "Movies", shape: "vertical", count: 6 %}
+<h2 id="tv" class="now__section--header flex--centered">
+  {% tablericon "device-tv" "TV" %}
+  TV
+</h2>
 {% render "partials/now/media-grid.liquid", data:tv, icon: "device-tv", title: "TV", shape: "vertical", count: 6 %}
 <p class="now__explainer text--centered">
   This is a <a href="https://nownownow.com/about">now page</a>, and if you have your own site, <a href="https://nownownow.com/about">you should make one too</a>.
