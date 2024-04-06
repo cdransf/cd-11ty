@@ -60,11 +60,12 @@ Software and services that I use for work and my own enjoyment.
 <h3>Services</h3>
 
 - [HEY](https://hey.com): it's the email service that works best for me and I quite enjoy their calendar.
-- <a onclick="clicky?.log('/referrals','NextDNS referral', 'click')" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>: a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.
-- <a onclick="clicky?.log('/referrals','DNSimple referral', 'click')" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>: a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
-- <a onclick="clicky?.log('/referrals','Bunny.net referral', 'click')" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>: a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
+- <a onclick="clicky?.log('/uses','NextDNS referral', 'click')" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>: a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.
+- <a onclick="clicky?.log('/uses','DNSimple referral', 'click')" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>: a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
+- <a onclick="clicky?.log('/uses','Bunny.net referral', 'click')" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>: a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
 - [Netlify](https://netlify.com): I use their hosting, forms and webhooks. It's a reliable and feature-rich platform.
-- <a onclick="clicky?.log('/referrals','Feedpress referral', 'click')" href="https://feedpress.com/?affid=34370">Feedpress</a>: they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
+- <a onclick="clicky?.log('/uses', 'Clicky referral', 'click')" href="https://clicky.com/101449513">Clicky</a>: not the *prettiest* analytics, but very feature rich.
+- <a onclick="clicky?.log('/uses','Feedpress referral', 'click')" href="https://feedpress.com/?affid=34370">Feedpress</a>: they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
 - [Kagi](https://kagi.com): the only search engine at this point (or so it seems) that's interested in surfacing quality results.
 - [Readwise Reader](https://readwise.io/read): an impressive RSS reader that handles all the functionality you'd expect from a read it later app beautifully. It's as powerful as it is flexible.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.
@@ -74,6 +75,6 @@ Software and services that I use for work and my own enjoyment.
 - [Slack](http://slack.com): I have a family Slack set up to avoid group text messages and am in a few other community Slacks.
 - [Discord](http://discord.com): I don't _like_ Discord but, for better or worse, it's where some communities I frequent are.
 - [Backblaze](https://backblaze.com): It backs up my MacBook Air and attached storage drive and I don't have to think about it.
-- <a onclick="clicky?.log('/referrals','Proton referral', 'click')" href="https://pr.tn/ref/X775YX40Z50G">Proton</a>: a reliable, trustworthy VPN with all of the features you'd expect from such a service.
+- <a onclick="clicky?.log('/uses','Proton referral', 'click')" href="https://pr.tn/ref/X775YX40Z50G">Proton</a>: a reliable, trustworthy VPN with all of the features you'd expect from such a service.
 
 Check out [uses.tech](https://uses.tech) for more lists like this one.
