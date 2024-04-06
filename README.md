@@ -13,9 +13,9 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 ## 📝 Recent posts
 
 <!-- BLOGPOSTS:START -->
+- [AI cannot and should not replace search](https://coryd.dev/posts/2024/ai-cannot-and-should-not-replace-search/)
+- [Enhancing pagination with a page selector](https://coryd.dev/posts/2024/enhancing-pagination-with-a-page-selector/)
 - [Access to data isn't a grant to exploit it](https://coryd.dev/posts/2024/access-to-data-isnt-a-grant-to-exploit-it/)
 - [Building a scrobbler using Plex webhooks, edge functions and blob storage ](https://coryd.dev/posts/2024/building-a-scrobbler-using-plex-webhooks-edge-functions-and-blob-storage/)
 - [I like Safari, but nobody should be required to use it](https://coryd.dev/posts/2024/i-like-safari-but-nobody-should-be-required-to-use-it/)
-- [Thoughts on permanence](https://coryd.dev/posts/2024/thoughts-on-permanence/)
-- [We have a content quality problem, not a content quantity problem](https://coryd.dev/posts/2024/we-have-a-content-quality-problem-not-a-content-quantity-problem/)
 <!-- BLOGPOSTS:END -->
