@@ -68,7 +68,7 @@ export default async (request) => {
           return {}
         });
       const artistData = artistRes['artist'];
-      const mbid = artistData['mbid']
+      const mbid = artistData['mbid'] || ''
       const genreUrl = `https://musicbrainz.org/ws/2/artist/${mbid}?inc=aliases+genres&fmt=json`;
       const genreRes = await fetch(genreUrl, {
         type: "json",
@@ -125,7 +125,11 @@ export default async (request) => {
     }
     const scrobbleData = await scrobbles.get(`${weekKey()}`, { type: 'json'})
     const windowData = await scrobbles.get('window', { type: 'json'})
-    await scrobbles.setJSON('now-playing', {...trackScrobbleData, ...{ url: `https://musicbrainz.org/artist/${artistInfo?.['mbid']}`}})
+    const artistUrl = (artistInfo?.['mbid'] && artistInfo?.['mbid'] !== '') ? `http://musicbrainz.org/artist/${artistInfo?.['mbid']}` : `https://musicbrainz.org/search?query=${artist.replace(
+            /\s+/g,
+            '+'
+          )}&type=artist`
+    await scrobbles.setJSON('now-playing', {...trackScrobbleData, ...{ url: artistUrl }})
     let scrobbleUpdate = scrobbleData
     let windowUpdate = windowData;
     if (scrobbleUpdate?.['data']) scrobbleUpdate['data'].push(trackScrobbleData)
