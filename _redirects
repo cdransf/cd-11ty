@@ -37,6 +37,9 @@
 /assets/img/social-preview/adding-a-light/dark-theme-toggle-preview.jpeg /assets/img/social-preview/adding-a-light-dark-theme-toggle-preview.jpeg 301!
 /assets/img/social-preview/go-ahead-and-block-ai-web- /assets/img/social-preview/go-ahead-and-block-ai-web-crawlers-preview.jpeg 301!
 /-want-anything-your-ai-generates/ /posts/2024/i-dont-want-anything-your-ai-generates/ 301!
+/4afe62271e477e.js http://static.getclicky.com/js?in=/2842c5ddc46e5 200
+/4dcb93321b2a3b https://in.getclicky.com/in.php 200
+/404ca498061b54 http://in.getclicky.com/101449513ns.gif 200
 
 # 400s
 /wp-* /400/ 400
@@ -96,3 +99,8 @@ https://cdme.netlify.app https://coryd.dev 301!
 /links.json https://feedpress.me/coryd-links.json
 /follow.xml https://feedpress.me/coryd-follow
 /follow.json https://feedpress.me/coryd-follow.json
+
+# analytics
+/23af0256fe76a.js http://static.getclicky.com/js?in=/2842c5ddc46e5 200
+/2842c5ddc46e5 https://in.getclicky.com/in.php 200
+/7afb285ad050d http://in.getclicky.com/101449513ns.gif 200

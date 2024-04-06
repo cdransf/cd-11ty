@@ -36,7 +36,7 @@ permalink: /search.html
       const query = $input.value
       const results = (query.length > 1) ? getSearchResults(query) : []
       if (query === '') renderSearchResults([])
-      if (results && window.fathom) fathom?.trackEvent(`Search query: ${query}`)
+      if (results && window.clicky) clicky.log('/search', query, 'click')
       renderSearchResults(results)
     })
 

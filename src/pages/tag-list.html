@@ -12,7 +12,7 @@ eleventyComputed:
 {% for post in posts %}
 <article class="h-entry">
   <time class="dt-published" datetime="{{ post.date }}">
-    {{ post.date | date: "%m.%Y" }}
+    {{ post.date | date: "%B %e, %Y" }}
   </time>
   <a href="{{ post.url }}">
     <h2 class="flex--centered">{{ post.data.title }}</h2>
