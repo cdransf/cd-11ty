@@ -19,7 +19,7 @@
 }
 
 .now__section--header-buttons > button {
-  margin-bottom: 0 !important;
+  margin-bottom: var(--sizing-sm) !important;
 }
 
 .now__section--header-buttons > button:last-of-type {
@@ -119,5 +119,9 @@
 
   .now__section--header-buttons {
     margin: var(--sizing-3xl) 0 var(--sizing-lg);
+  }
+
+  .now__section--header-buttons > button {
+    margin-bottom: 0 !important;
   }
 }
