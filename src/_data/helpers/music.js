@@ -76,7 +76,7 @@ export const buildChart = (tracks, artists, albums, nowPlaying = {}) => {
   }
 }
 
-export const buildTracksWithArt = (tracks, albums) => {
+export const buildTracksWithArt = (tracks, artists, albums) => {
   tracks.forEach(track => {
     track['image'] = albums[albumSanitizedKey(track['album'])]?.['image'] || `https://cdn.coryd.dev/albums/${sanitizeMediaString(track['artist']).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(track['album'].replace(/[:\/\\,'']+/g
       , '').replace(/\s+/g, '-').toLowerCase())}.jpg`

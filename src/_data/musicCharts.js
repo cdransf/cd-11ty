@@ -8,7 +8,7 @@ export default async function () {
   const albums = JSON.parse(await readFile('./src/_data/json/albums-map.json', 'utf8'));
   const recent = JSON.parse(await readFile('./src/_data/json/scrobbles-window.json', 'utf8'))['data'].reverse().splice(0,10)
   return {
-    recent: buildTracksWithArt(recent, albums),
+    recent: buildTracksWithArt(recent, artists, albums),
     month: buildChart(monthChart['data'], artists, albums),
     threeMonthChart: buildChart(threeMonthChart['data'], artists, albums),
   }
