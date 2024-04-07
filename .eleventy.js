@@ -65,6 +65,9 @@ export default async function (eleventyConfig) {
     'node_modules/@cdransf/theme-toggle/theme-toggle.js': 'assets/scripts/components/theme-toggle.js',
   })
   eleventyConfig.addPassthroughCopy({
+    'node_modules/@cdransf/select-pagination/select-pagination.js': 'assets/scripts/components/select-pagination.js',
+  })
+  eleventyConfig.addPassthroughCopy({
     'node_modules/@zachleat/webcare-webshare/webcare-webshare.js': 'assets/scripts/components/webcare-webshare.js'
   })
   eleventyConfig.addPassthroughCopy({
