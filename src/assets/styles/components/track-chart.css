@@ -1,7 +1,12 @@
 .track__chart--item {
+  justify-content: space-between;
+}
+
+.track__chart--item,
+.track__chart--meta {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .track__chart--item:not(:last-of-type) {
@@ -29,12 +34,46 @@
 
 .track__chart--title {
   font-weight: var(--font-weight-bold);
+}
+
+.track__chart--title,
+.track__chart--artists {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-.track__chart--artists {
+.track__chart--artists,
+.track__chart--timestamp {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
+}
+
+.track__chart--item img {
+  border: 1px solid var(--accent-color);
+  border-radius: var(--rounded-md);
+}
+
+.track__chart--item img,
+.track__chart--item picture {
+  width: calc(var(--sizing-3xl) * 1.5);
+  height: calc(var(--sizing-3xl) * 1.5);
+}
+
+.track__chart--meta {
+  justify-content: start;
+  gap: var(--sizing-md);
+  max-width: calc(70% - var(--sizing-lg));
+}
+
+.track__chart--meta--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-width: 85%;
+}
+
+.track__chart--timestamp {
+  margin-left: var(--sizing-lg);
+  text-align: right;
 }

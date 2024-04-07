@@ -3,14 +3,14 @@ import artistCapitalizationPatches from '../json/artist-capitalization-patches.j
 export const artistCapitalization = (artist) => artistCapitalizationPatches[artist?.toLowerCase()] || artist
 
 const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '').replace(/A©|Ã©/g, 'e');
+const artistSanitizedKey = (artist) => `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}`
+const albumSanitizedKey = (album) => `${sanitizeMediaString(album).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
+      , '').replace(/\s+/g, '-').toLowerCase())}`
 
 export const buildChart = (tracks, artists, albums, nowPlaying = {}) => {
   const artistsData = {}
   const albumsData = {}
   const tracksData = {}
-  const artistSanitizedKey = (artist) => `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}`
-  const albumSanitizedKey = (album) => `${sanitizeMediaString(album).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
-      , '').replace(/\s+/g, '-').toLowerCase())}`
   const objectToArraySorted = (inputObject) => Object.values(inputObject).sort((a, b) => b.plays - a.plays)
 
   tracks.forEach(track => {
@@ -74,4 +74,16 @@ export const buildChart = (tracks, artists, albums, nowPlaying = {}) => {
     topTracks: topTracksData,
     nowPlaying
   }
+}
+
+export const buildTracksWithArt = (tracks, albums) => {
+  tracks.forEach(track => {
+    track['image'] = albums[albumSanitizedKey(track['album'])]?.['image'] || `https://cdn.coryd.dev/albums/${sanitizeMediaString(track['artist']).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(track['album'].replace(/[:\/\\,'']+/g
+      , '').replace(/\s+/g, '-').toLowerCase())}.jpg`
+    track['url'] = (artists[artistSanitizedKey(track['artist'])]?.['mbid'] && artists[artistSanitizedKey(track['artist'])]?.['mbid'] !== '') ? `http://musicbrainz.org/artist/${artists[artistSanitizedKey(track['artist'])]?.['mbid']}` : `https://musicbrainz.org/search?query=${track['artist'].replace(
+            /\s+/g,
+            '+'
+          )}&type=artist`
+  })
+  return tracks
 }
