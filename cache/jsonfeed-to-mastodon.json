@@ -12182,5 +12182,24 @@
       "https://social.lol/users/cory/statuses/112231722207668276"
     ],
     "lastTootTimestamp": 1712520175372
+  },
+  "https://joanwestenberg.com/blog/curation-is-the-last-best-hope-of-intelligent-discourse": {
+    "id": "aHR0cHM6Ly9qb2Fud2VzdGVuYmVyZy5jb20vYmxvZy9jdXJhdGlvbi1pcy10aGUtbGFzdC1iZXN0LWhvcGUtb2YtaW50ZWxsaWdlbnQtZGlzY291cnNl",
+    "title": "🔗: Curation is the last best hope of intelligent discourse.",
+    "url": "https://joanwestenberg.com/blog/curation-is-the-last-best-hope-of-intelligent-discourse",
+    "content_text": "🔗: Curation is the last best hope of intelligent discourse. #AI #Tech #IndieWeb #SmallWeb #SocialMedia https://joanwestenberg.com/blog/curation-is-the-last-best-hope-of-intelligent-discourse",
+    "date_published": "Mon, 08 Apr 2024 00:29:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112233610884767203"
+    ],
+    "lastTootTimestamp": 1712548994279
+  },
+  "https://tylersticka.com/journal/git-fresh/": {
+    "id": "aHR0cHM6Ly90eWxlcnN0aWNrYS5jb20vam91cm5hbC9naXQtZnJlc2gv",
+    "title": "🔗: Git Fresh",
+    "url": "https://tylersticka.com/journal/git-fresh/",
+    "content_text": "🔗: Git Fresh #WebDev https://tylersticka.com/journal/git-fresh/",
+    "date_published": "Sun, 07 Apr 2024 17:50:00 GMT",
+    "toots": []
   }
 }
