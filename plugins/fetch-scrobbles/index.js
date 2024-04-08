@@ -43,7 +43,7 @@ export const onPreBuild = async ({ constants }) => {
   const scrobbles = getStore('scrobbles')
   const artists = getStore('artists')
   const albums = getStore('albums')
-  const weeklyChartData = await scrobbles.get(`${lastWeek.year}-${lastWeek.weekNumber}`)
+  const weeklyChartData = await scrobbles.get(`${lastWeek.year}-${lastWeek.weekNumber}`, { type: 'json'})
   const windowData = await scrobbles.get('window', { type: 'json'})
   const artistsMap = await artists.get('artists-map', { type: 'json' })
   const albumsMap = await albums.get('albums-map', { type: 'json' })
