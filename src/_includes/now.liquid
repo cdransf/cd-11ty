@@ -59,12 +59,16 @@ layout: default
     Tracks
   </h2>
   <div class="now__section--header-buttons client-side">
-    <button class="small active" data-toggle="tracks-window">This week</button>
+    <button class="small active" data-toggle="tracks-recent">Recent</button>
+    <button class="small secondary" data-toggle="tracks-window">This week</button>
     <button class="small secondary" data-toggle="tracks-month">This month</button>
     <button class="small secondary" data-toggle="tracks-three-months">3 months</button>
   </div>
 </div>
-<div id="tracks-window">
+<div id="tracks-recent">
+  {% render "partials/now/tracks-recent.liquid", data:musicCharts.recent %}
+</div>
+<div class="hidden" id="tracks-window">
   {% render "partials/now/track-chart.liquid", data:music.topTracks.data, mostPlayed:music.topTracks.mostPlayed %}
 </div>
 <div class="hidden" id="tracks-month">

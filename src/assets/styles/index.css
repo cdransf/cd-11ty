@@ -413,7 +413,8 @@ select {
   line-height: var(--line-height-base);
 }
 
-.select {
+.select,
+select-pagination {
   border-radius: var(--rounded-full);
   background-color: var(--accent-color);
   padding: 0 var(--sizing-lg);
@@ -426,17 +427,22 @@ select {
 }
 
 .select,
-.select select {
+.select select,
+select-pagination,
+select-pagination select {
   min-height: calc(var(--sizing-3xl) * 1.25);
   min-width:  calc(var(--sizing-3xl) * 4);;
 }
 
 .select select,
-.select::after {
+.select::after,
+select-pagination select,
+select-pagination::after {
   grid-area: select;
 }
 
-.select::after {
+.select::after,
+select-pagination::after {
   content: '';
   width: var(--sizing-md);
   height: var(--sizing-sm);
