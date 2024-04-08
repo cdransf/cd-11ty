@@ -25,6 +25,7 @@ export default [
   { "name": "Robb Knight", "url": "https://rknight.me", "feed": "https://rknight.me/subscribe/posts/rss.xml", "json": "https://rknight.me/subscribe/posts/feed.json" },
   { "name": "Robin Rendle", "url": "https://robinrendle.com", "feed": "https://robinrendle.com/feed.xml", "newsletter": "https://robinrendle.com/the-cascade" },
   { "name": "Ryan Broderick", "url": "https://www.garbageday.email", "feed": "https://rss.beehiiv.com/feeds/99VTTjt0N1.xml", "newsletter": "https://www.garbageday.email/subscribe" },
+  { "name": "Sara Joy", "url": "https://sarajoy.dev", "feed": "https://sarajoy.dev/rss.xml" },
   { "name": "Sia Karamalegos", "url": "https://sia.codes", "feed": "https://sia.codes/feed/feed.xml", "newsletter": "https://sia.codes#inform" },
   { "name": "Sophie Koonin", "url": "https://localghost.dev", "feed": "https://localghost.dev/rss" },
   { "name": "Stephanie Eckles", "url": "https://thinkdobecreate.com", "feed": "https://thinkdobecreate.com/feed" },
