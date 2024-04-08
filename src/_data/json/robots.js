@@ -164,6 +164,7 @@ export default [
   'Flunky',
   'Foobot',
   'Freeuploader',
+  'FriendlyCrawler',
   'FrontPage',
   'Fuzz',
   'FyberSpider',
