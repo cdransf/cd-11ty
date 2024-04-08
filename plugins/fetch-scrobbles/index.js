@@ -18,6 +18,16 @@ const getKeys = (months = 1) => {
   return keys
 }
 
+const filterOldScrobbles = (scrobbles, months = 1) => {
+  const currentDate = DateTime.now()
+  const weeks = Math.floor((currentDate.daysInMonth * months) / 7)
+  const windowEnd = DateTime.now().minus({ weeks });
+  return scrobbles.filter(scrobble => {
+    const timestamp = DateTime.fromISO(scrobble.timestamp);
+    return timestamp >= windowEnd;
+  });
+}
+
 export const onPreBuild = async ({ constants }) => {
   setEnvironmentContext({
     siteID: constants.SITE_ID,
@@ -50,6 +60,6 @@ export const onPreBuild = async ({ constants }) => {
   fs.writeFileSync('./src/_data/json/artists-map.json', JSON.stringify(artistsMap))
   fs.writeFileSync('./src/_data/json/albums-map.json', JSON.stringify(albumsMap))
   fs.writeFileSync('./src/_data/json/now-playing.json', JSON.stringify(nowPlaying))
-  fs.writeFileSync('./src/_data/json/scrobbles-month-chart.json', JSON.stringify(monthChartData))
-  fs.writeFileSync('./src/_data/json/scrobbles-three-month-chart.json', JSON.stringify(threeMonthChartData))
+  fs.writeFileSync('./src/_data/json/scrobbles-month-chart.json', JSON.stringify({ data: filterOldScrobbles(monthChartData.data) }))
+  fs.writeFileSync('./src/_data/json/scrobbles-three-month-chart.json', JSON.stringify({ data: filterOldScrobbles(threeMonthChartData.data, 3) }))
 }
