@@ -59,7 +59,7 @@ export const onPreBuild = async ({ constants }) => {
     threeMonthChartData['data'].push(...scrobbleData['data'])
   }
 
-  if (currentDate.weekday === 1) fs.writeFileSync('./src/_data/json/weekly-top-artists-chart.json', JSON.stringify({...weeklyChartData, timestamp: `${lastWeek.toMillis()}` }))
+  fs.writeFileSync('./src/_data/json/weekly-top-artists-chart.json', JSON.stringify({...weeklyChartData, timestamp: `${lastWeek.set({ hour: 8, minute: 0, second: 0, millisecond: 0 }).toMillis()}` }))
   fs.writeFileSync('./src/_data/json/scrobbles-window.json', JSON.stringify(windowData))
   fs.writeFileSync('./src/_data/json/artists-map.json', JSON.stringify(artistsMap))
   fs.writeFileSync('./src/_data/json/albums-map.json', JSON.stringify(albumsMap))
