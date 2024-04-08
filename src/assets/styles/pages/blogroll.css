@@ -1,0 +1,11 @@
+.blog--roll__icons {
+  display: flex;
+  flex-direction: row;
+  gap: var(--sizing-xs);
+}
+
+.blog--roll__icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

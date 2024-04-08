@@ -4,6 +4,10 @@ layout: default
 permalink: /blogroll.html
 description: 'These are awesome blogs that I enjoy and you may enjoy too.'
 ---
+{% capture css %}
+  {% render "../assets/styles/pages/blogroll.css" %}
+{% endcapture %}
+<style>{{ css }}</style>
 <h2 class="page__header">{{ title }}</h2>
 <p>You can <a onclick="clicky?.log('/blogroll','OPML download', 'download');" href="/blogroll.opml">download an OPML file</a> containing all of these feeds and import them into your RSS reader.</p>
 <table>
