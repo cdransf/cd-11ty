@@ -147,7 +147,7 @@ td {
 th {
   font-weight: var(--font-weight-bold);
   background-color: var(--gray-lighter);
-  text-align: center;
+  text-align: left;
 }
 
 /* header */

@@ -10,18 +10,30 @@ description: 'These are awesome blogs that I enjoy and you may enjoy too.'
 <style>{{ css }}</style>
 <h2 class="page__header">{{ title }}</h2>
 <p>You can <a onclick="clicky?.log('/blogroll','OPML download', 'download');" href="/blogroll.opml">download an OPML file</a> containing all of these feeds and import them into your RSS reader.</p>
-<div class="blog__banner--grid">
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Link</th>
+    <th>Subscribe</th>
+  </tr>
   {% for blog in blogroll %}
-  <div class="blog__banner">
-    <strong>{{ blog.name }}</strong>
-    <div class="meta">
-      <a href="{{blog.url}}">Website</a>
-      {% if blog.feed %} • <a href="{{ blog.feed }}">Feed</a>{% endif %}
-    </div>
-    {%- if blog.description %}
-    <p>{{ blog.description }}</p>
-    {% endif -%}
-  </div>
+  <tr>
+    <td>{{ blog.name }}</td>
+    <td><a href="{{ blog.url }}">{{ blog.url | replace: "https://", "" }}</a></td>
+    <td class="blog--roll__icons">
+      {%- if blog.feed -%}
+      <a href="{{ blog.feed }}">{% tablericon "rss" "Subscribe via RSS" %}</a>
+      {%- else -%}
+      —
+      {%- endif -%}
+      {%- if blog.newsletter -%}
+      • <a href="{{ blog.newsletter }}">{% tablericon "mail-plus" "Newsletter subscription" %}</a>
+      {%- endif -%}
+      {%- if blog.json -%}
+      • <a href="{{ blog.json }}">{% tablericon "json" "Subscribe via JSON" %}</a>
+      {%- endif -%}
+    </td>
+  </tr>
   {% endfor %}
-</div>
+</table>
 <p>Head on over to <a href="https://blogroll.org">blogroll.org</a> to find more blogs to follow or search for feeds using <a href="https://feedle.world">feedle</a>.</p>
