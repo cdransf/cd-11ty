@@ -34,6 +34,8 @@ export const onPreBuild = async ({ constants }) => {
     token: constants.NETLIFY_API_TOKEN,
   })
 
+  const currentDate = DateTime.now()
+  const lastWeek = currentDate.minus({ weeks: 1 })
   const monthKeys = getKeys()
   const monthChartData = { data: [] }
   const threeMonthKeys = getKeys(3)
@@ -41,6 +43,7 @@ export const onPreBuild = async ({ constants }) => {
   const scrobbles = getStore('scrobbles')
   const artists = getStore('artists')
   const albums = getStore('albums')
+  const weeklyChartData = await scrobbles.get(`${lastWeek.year}-${lastWeek.weekNumber}`)
   const windowData = await scrobbles.get('window', { type: 'json'})
   const artistsMap = await artists.get('artists-map', { type: 'json' })
   const albumsMap = await albums.get('albums-map', { type: 'json' })
@@ -56,6 +59,7 @@ export const onPreBuild = async ({ constants }) => {
     threeMonthChartData['data'].push(...scrobbleData['data'])
   }
 
+  if (currentDate.weekday === 1) fs.writeFileSync('./src/_data/json/weekly-top-artists-chart.json', JSON.stringify({...weeklyChartData, timestamp: `${lastWeek.toMillis()}` }))
   fs.writeFileSync('./src/_data/json/scrobbles-window.json', JSON.stringify(windowData))
   fs.writeFileSync('./src/_data/json/artists-map.json', JSON.stringify(artistsMap))
   fs.writeFileSync('./src/_data/json/albums-map.json', JSON.stringify(albumsMap))
