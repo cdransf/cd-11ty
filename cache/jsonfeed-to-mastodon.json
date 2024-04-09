@@ -12289,5 +12289,24 @@
       "https://social.lol/users/cory/statuses/112243042995532954"
     ],
     "lastTootTimestamp": 1712692916869
+  },
+  "https://coryd.dev/posts/2024/data-collection-should-always-be-opt-in/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9kYXRhLWNvbGxlY3Rpb24tc2hvdWxkLWFsd2F5cy1iZS1vcHQtaW4v",
+    "title": "📝: Data collection should always be opt in",
+    "url": "https://coryd.dev/posts/2024/data-collection-should-always-be-opt-in/",
+    "content_text": "📝: Data collection should always be opt in #Tech #AI #Privacy https://coryd.dev/posts/2024/data-collection-should-always-be-opt-in/",
+    "date_published": "Tue, 09 Apr 2024 21:00:00 GMT",
+    "toots": []
+  },
+  "https://bored.horse/post/opt-out-is-always-wrong/": {
+    "id": "aHR0cHM6Ly9ib3JlZC5ob3JzZS9wb3N0L29wdC1vdXQtaXMtYWx3YXlzLXdyb25nLw==",
+    "title": "🔗: Opt-out is always wrong",
+    "url": "https://bored.horse/post/opt-out-is-always-wrong/",
+    "content_text": "🔗: Opt-out is always wrong #AI #Tech https://bored.horse/post/opt-out-is-always-wrong/",
+    "date_published": "Tue, 09 Apr 2024 19:18:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112243088211427564"
+    ],
+    "lastTootTimestamp": 1712693606787
   }
 }
