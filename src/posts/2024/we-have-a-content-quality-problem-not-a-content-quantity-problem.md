@@ -34,4 +34,4 @@ I have 490 artists in my music library and 2660 albums from them. Discounting th
 
 I remain committed to dropping shows, books — you name it — that lose my interest. If you're no longer enjoying something, set it aside and move on. You're under no obligation to see it through and you're better served saving the time.
 
-I'm more and more concerned that we're heading to a place that will make it ever more difficult to find anything that's actually worth our time.
+<strong class="highlight-text">I'm more and more concerned that we're heading to a place that will make it ever more difficult to find anything that's actually worth our time.</strong>
