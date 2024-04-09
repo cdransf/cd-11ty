@@ -12241,7 +12241,10 @@
     "url": "https://hidde.blog/links/ai-uses-too-much-energy/",
     "content_text": "🔗: AI uses too much energy #AI #Tech https://hidde.blog/links/ai-uses-too-much-energy/",
     "date_published": "Tue, 09 Apr 2024 02:27:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112239745924452843"
+    ],
+    "lastTootTimestamp": 1712642607542
   },
   "https://hidde.blog/redundant-ai/": {
     "id": "aHR0cHM6Ly9oaWRkZS5ibG9nL3JlZHVuZGFudC1haS8=",
@@ -12259,6 +12262,14 @@
     "title": "🎧: My top artists for the week: Witch Vomit @ 41 plays, Contaminated @ 38 plays, Knuckle Puck @ 31 plays, Touché Amoré @ 29 plays, Cantique Lépreux @ 26 plays, Porcupine Tree @ 22 plays, Verberis @ 20 plays, PUP @ 16 plays #Music",
     "url": "https://coryd.dev/now?ts=1712631849295#artists",
     "content_text": "🎧: My top artists for the week: Witch Vomit @ 41 plays, Contaminated @ 38 plays, Knuckle Puck @ 31 plays, Touché Amoré @ 29 plays, Cantique Lépreux @ 26 plays, Porcupine Tree @ 22 plays, Verberis @ 20 plays, PUP @ 16 plays #Music  https://coryd.dev/now?ts=1712631849295#artists",
+    "date_published": "Tue, 02 Apr 2024 08:00:00 GMT",
+    "toots": []
+  },
+  "https://coryd.dev/now?ts=1712635596234#artists": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MTI2MzU1OTYyMzQjYXJ0aXN0cw==",
+    "title": "🎧: My top artists for the week: Witch Vomit @ 41 plays, Contaminated @ 38 plays, Knuckle Puck @ 31 plays, Touché Amoré @ 29 plays, Cantique Lépreux @ 26 plays, Porcupine Tree @ 22 plays, Verberis @ 20 plays, PUP @ 16 plays #Music",
+    "url": "https://coryd.dev/now?ts=1712635596234#artists",
+    "content_text": "🎧: My top artists for the week: Witch Vomit @ 41 plays, Contaminated @ 38 plays, Knuckle Puck @ 31 plays, Touché Amoré @ 29 plays, Cantique Lépreux @ 26 plays, Porcupine Tree @ 22 plays, Verberis @ 20 plays, PUP @ 16 plays #Music  https://coryd.dev/now?ts=1712635596234#artists",
     "date_published": "Tue, 02 Apr 2024 08:00:00 GMT",
     "toots": []
   }
