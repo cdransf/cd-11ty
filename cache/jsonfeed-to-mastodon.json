@@ -12234,5 +12234,32 @@
       "https://social.lol/users/cory/statuses/112238824499043472"
     ],
     "lastTootTimestamp": 1712628547721
+  },
+  "https://hidde.blog/links/ai-uses-too-much-energy/": {
+    "id": "aHR0cHM6Ly9oaWRkZS5ibG9nL2xpbmtzL2FpLXVzZXMtdG9vLW11Y2gtZW5lcmd5Lw==",
+    "title": "🔗: AI uses too much energy",
+    "url": "https://hidde.blog/links/ai-uses-too-much-energy/",
+    "content_text": "🔗: AI uses too much energy #AI #Tech https://hidde.blog/links/ai-uses-too-much-energy/",
+    "date_published": "Tue, 09 Apr 2024 02:27:00 GMT",
+    "toots": []
+  },
+  "https://hidde.blog/redundant-ai/": {
+    "id": "aHR0cHM6Ly9oaWRkZS5ibG9nL3JlZHVuZGFudC1haS8=",
+    "title": "🔗: Clippy returned (as an unnecessary “AI”)",
+    "url": "https://hidde.blog/redundant-ai/",
+    "content_text": "🔗: Clippy returned (as an unnecessary “AI”) #AI #Tech https://hidde.blog/redundant-ai/",
+    "date_published": "Tue, 09 Apr 2024 02:27:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112239276643405340"
+    ],
+    "lastTootTimestamp": 1712635446911
+  },
+  "https://coryd.dev/now?ts=1712631849295#artists": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MTI2MzE4NDkyOTUjYXJ0aXN0cw==",
+    "title": "🎧: My top artists for the week: Witch Vomit @ 41 plays, Contaminated @ 38 plays, Knuckle Puck @ 31 plays, Touché Amoré @ 29 plays, Cantique Lépreux @ 26 plays, Porcupine Tree @ 22 plays, Verberis @ 20 plays, PUP @ 16 plays #Music",
+    "url": "https://coryd.dev/now?ts=1712631849295#artists",
+    "content_text": "🎧: My top artists for the week: Witch Vomit @ 41 plays, Contaminated @ 38 plays, Knuckle Puck @ 31 plays, Touché Amoré @ 29 plays, Cantique Lépreux @ 26 plays, Porcupine Tree @ 22 plays, Verberis @ 20 plays, PUP @ 16 plays #Music  https://coryd.dev/now?ts=1712631849295#artists",
+    "date_published": "Tue, 02 Apr 2024 08:00:00 GMT",
+    "toots": []
   }
 }
