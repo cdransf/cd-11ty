@@ -12269,7 +12269,7 @@
     "lastTootTimestamp": 1712671372544
   },
   "https://coryd.dev/now?ts=2024-14#artists": {
-    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MTI2Njc4MjM3NzkjYXJ0aXN0cw==",
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTIwMjQtMTQjYXJ0aXN0cw==",
     "title": "🎧: My top artists for the week: Witch Vomit @ 41 plays, Contaminated @ 38 plays, Knuckle Puck @ 31 plays, Touché Amoré @ 29 plays, Cantique Lépreux @ 26 plays, Porcupine Tree @ 22 plays, Verberis @ 20 plays, PUP @ 16 plays #Music",
     "url": "https://coryd.dev/now?ts=2024-14#artists",
     "content_text": "🎧: My top artists for the week: Witch Vomit @ 41 plays, Contaminated @ 38 plays, Knuckle Puck @ 31 plays, Touché Amoré @ 29 plays, Cantique Lépreux @ 26 plays, Porcupine Tree @ 22 plays, Verberis @ 20 plays, PUP @ 16 plays #Music  https://coryd.dev/now?ts=2024-14#artists",
@@ -12278,5 +12278,16 @@
       "https://social.lol/users/cory/statuses/112241631067242097"
     ],
     "lastTootTimestamp": 1712671372544
+  },
+  "https://www.baldurbjarnason.com/2024/you-should-not-be-using-llms/": {
+    "id": "aHR0cHM6Ly93d3cuYmFsZHVyYmphcm5hc29uLmNvbS8yMDI0L3lvdS1zaG91bGQtbm90LWJlLXVzaW5nLWxsbXMv",
+    "title": "🔗: Again, my position on LLMs is that you absolutely shouldn’t be using them with very, very few exceptions",
+    "url": "https://www.baldurbjarnason.com/2024/you-should-not-be-using-llms/",
+    "content_text": "🔗: Again, my position on LLMs is that you absolutely shouldn’t be using them with very, very few exceptions #AI #Tech https://www.baldurbjarnason.com/2024/you-should-not-be-using-llms/",
+    "date_published": "Tue, 09 Apr 2024 15:09:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112243042995532954"
+    ],
+    "lastTootTimestamp": 1712692916869
   }
 }
