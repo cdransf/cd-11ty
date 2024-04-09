@@ -4,6 +4,7 @@ import { DateTime } from 'luxon'
 
 export default async function () {
   const currentDate = DateTime.now()
+  const lastWeek = currentDate.minus({ weeks: 1 })
   const artists = JSON.parse(await readFile('./src/_data/json/artists-map.json', 'utf8'));
   const albums = JSON.parse(await readFile('./src/_data/json/albums-map.json', 'utf8'));
   const chartData = JSON.parse(await readFile('./src/_data/json/weekly-top-artists-chart.json', 'utf8'))
@@ -17,8 +18,8 @@ export default async function () {
 
   return [{
       title: content,
-      url: `https://coryd.dev/now?ts=${parseInt(chartData['timestamp'])}#artists`,
+      url: `https://coryd.dev/now?ts=${lastWeek.year}-${lastWeek.weekNumber}#artists`,
       date: DateTime.fromMillis(parseInt(chartData['timestamp'])).toISO(),
-      description: `My top artists for the last week ending ${currentDate.minus({ days: 1 }).toLocaleString(DateTime.DATE_FULL)}.<br/><br/>`
+      description: `My top artists for the last week.<br/><br/>`
     }]
 }
