@@ -12305,5 +12305,16 @@
       "https://social.lol/users/cory/statuses/112241166919801045"
     ],
     "lastTootTimestamp": 1712664290226
+  },
+  "https://coryd.dev/now?ts=1712667823779#artists": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTE3MTI2Njc4MjM3NzkjYXJ0aXN0cw==",
+    "title": "🎧: My top artists for the week: Witch Vomit @ 41 plays, Contaminated @ 38 plays, Knuckle Puck @ 31 plays, Touché Amoré @ 29 plays, Cantique Lépreux @ 26 plays, Porcupine Tree @ 22 plays, Verberis @ 20 plays, PUP @ 16 plays #Music",
+    "url": "https://coryd.dev/now?ts=1712667823779#artists",
+    "content_text": "🎧: My top artists for the week: Witch Vomit @ 41 plays, Contaminated @ 38 plays, Knuckle Puck @ 31 plays, Touché Amoré @ 29 plays, Cantique Lépreux @ 26 plays, Porcupine Tree @ 22 plays, Verberis @ 20 plays, PUP @ 16 plays #Music  https://coryd.dev/now?ts=1712667823779#artists",
+    "date_published": "Tue, 02 Apr 2024 08:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112241631067242097"
+    ],
+    "lastTootTimestamp": 1712671372544
   }
 }
