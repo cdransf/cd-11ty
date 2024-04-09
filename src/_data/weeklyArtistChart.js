@@ -17,7 +17,7 @@ export default async function () {
 
   return [{
       title: content,
-      url: `https://coryd.dev/now?ts=${currentDate.toMillis()}#artists`,
+      url: `https://coryd.dev/now?ts=${parseInt(chartData['timestamp'])}#artists`,
       date: DateTime.fromMillis(parseInt(chartData['timestamp'])).toISO(),
       description: `My top artists for the last week ending ${currentDate.minus({ days: 1 }).toLocaleString(DateTime.DATE_FULL)}.<br/><br/>`
     }]
