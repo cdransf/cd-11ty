@@ -9,15 +9,15 @@ tags: ['tech', 'music']
 <strong class="highlight-text">Let's get one thing out of the way up front: streaming music is bad for artists.</strong>[^1]
 
 **[Trent Reznor, via NME:](https://www.nme.com/news/music/nine-inch-nails-trent-reznor-says-streaming-has-mortally-wounded-many-artists-its-great-if-youre-drake-its-not-great-if-youre-3614437)**
-> “I think the terrible payout of streaming services has mortally wounded a whole tier of artists that make being an artist unsustainable,” he said.
+> "I think the terrible payout of streaming services has mortally wounded a whole tier of artists that make being an artist unsustainable," he said.
 >
-> “And it's great if you're Drake, and it's not great if you're Grizzly Bear. And the reality is: Take a look around. We've had enough time for the whole ‘All the boats rise' argument to see they don't all rise. Those boats rise. These boats don't. They can't make money in any means. And I think that's bad for art.”
+> "And it's great if you're Drake, and it's not great if you're Grizzly Bear. And the reality is: Take a look around. We've had enough time for the whole ‘All the boats rise' argument to see they don't all rise. Those boats rise. These boats don't. They can't make money in any means. And I think that's bad for art."
 
 It was hard enough to make a living as an artist before streaming and it's nearly impossible to now. Recorded music has become a loss-leader for tours and touring is grueling[^2].
 
 Artists were better off when we were toting around iPods, Zunes, Dell Digital Jukeboxes and buying mp3s one at a time. I think we were too.
 
-I've always been a fan of manual curation and the care that goes into maintaining a collection, but instead of subsidizing a streaming “collection” to fill in gaps, I've retaken ownership of the whole thing. This has been both limiting and empowering — I can't turn on a radio station but I can remember what's in my collection and what I want to throw on[^3].
+I've always been a fan of manual curation and the care that goes into maintaining a collection, but instead of subsidizing a streaming "collection" to fill in gaps, I've retaken ownership of the whole thing. This has been both limiting and empowering — I can't turn on a radio station but I can remember what's in my collection and what I want to throw on[^3].
 
 I track album releases via [MusicHarbor](https://apps.apple.com/us/app/musicharbor-track-new-music/id1440405750), [RateYourMusic](https://rateyourmusic.com) and RSS. Anything I care about goes on an `Albums` calendar, and [that ICS feed gets parsed and displayed on my site](https://coryd.dev/now.html). Recommendations come from friends, Last.fm and, again [RateYourMusic](https://rateyourmusic.com). I buy music from Bandcamp, 7digital and a few other retailers as availability dictates. I pick up vinyl and have too many band shirts[^4].
 
