@@ -12311,5 +12311,16 @@
       "https://social.lol/users/cory/statuses/112243088211427564"
     ],
     "lastTootTimestamp": 1712693606787
+  },
+  "https://coryd.dev/posts/2024/a-retrospective-on-a-year-without-streaming-music/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9hLXJldHJvc3BlY3RpdmUtb24tYS15ZWFyLXdpdGhvdXQtc3RyZWFtaW5nLW11c2ljLw==",
+    "title": "📝: A retrospective on a year without streaming music",
+    "url": "https://coryd.dev/posts/2024/a-retrospective-on-a-year-without-streaming-music/",
+    "content_text": "📝: A retrospective on a year without streaming music #Tech #Music https://coryd.dev/posts/2024/a-retrospective-on-a-year-without-streaming-music/",
+    "date_published": "Tue, 09 Apr 2024 23:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112243669714260016"
+    ],
+    "lastTootTimestamp": 1712702479827
   }
 }
