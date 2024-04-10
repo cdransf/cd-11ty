@@ -136,7 +136,7 @@ export default {
       const dateKey = Object.keys(entry).find((key) => key.includes('date'))
       const date = new Date(entry[dateKey])
       let excerpt = ''
-      const feedNote = '<hr/><p>This is a full text feed, but not all content can be rendered perfeclty within the feed. If something looks off, feel free to visit my site for the original post.</p>'
+      const feedNote = '<hr/><p>This is a full text feed, but not all content can be rendered perfeclty within the feed. If something looks off, feel free to <a href="https://coryd.dev">visit my site</a> for the original post.</p>'
 
       // set the entry excerpt
       if (entry.description) excerpt = entry.description
