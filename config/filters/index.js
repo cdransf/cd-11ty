@@ -138,7 +138,7 @@ export default {
 
       // set the entry excerpt
       if (entry.description) excerpt = entry.description
-      if (entry.data?.post_excerpt) excerpt = md.render(entry.data.post_excerpt)
+      if (entry.content) excerpt = entry.content
 
       // if there's a valid entry return a normalized object
       if (entry)
