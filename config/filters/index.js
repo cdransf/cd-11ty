@@ -2,6 +2,7 @@ import { DateTime } from 'luxon'
 import markdownIt from 'markdown-it'
 import { URL } from 'url'
 import { createRequire } from 'module'
+import sanitizeHtml from 'sanitize-html';
 
 const require = createRequire(import.meta.url)
 const metaData = require('../../src/_data/json/meta.json')
@@ -135,10 +136,13 @@ export default {
       const dateKey = Object.keys(entry).find((key) => key.includes('date'))
       const date = new Date(entry[dateKey])
       let excerpt = ''
+      const feedNote = '<hr/><p>This is a full text feed, but not all content can be rendered perfeclty within the feed. If something looks off, feel free to visit my site for the original post.</p>'
 
       // set the entry excerpt
       if (entry.description) excerpt = entry.description
-      if (entry.content) excerpt = entry.content
+      if (entry.content) excerpt = sanitizeHtml(`${entry.content}${feedNote}`, {
+        disallowedTagsMode: 'completelyDiscard'
+      })
 
       // if there's a valid entry return a normalized object
       if (entry)
