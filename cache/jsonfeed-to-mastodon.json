@@ -12349,11 +12349,22 @@
     "id": "aHR0cHM6Ly90aGVpbnRlcmNlcHQuY29tLzIwMjQvMDQvMTAvbWljcm9zb2Z0LW9wZW5haS1kYWxsZS1haS1taWxpdGFyeS11c2Uv",
     "title": "🔗: Microsoft Pitched OpenAI’s DALL-E as Battlefield Tool for U.S. Military",
     "url": "https://theintercept.com/2024/04/10/microsoft-openai-dalle-ai-military-use/",
-    "content_text": "🔗: Microsoft Pitched OpenAI’s DALL-E as Battlefield Tool for U.S. Military #Tech https://theintercept.com/2024/04/10/microsoft-openai-dalle-ai-military-use/",
+    "content_text": "🔗: Microsoft Pitched OpenAI’s DALL-E as Battlefield Tool for U.S. Military #AI #Tech https://theintercept.com/2024/04/10/microsoft-openai-dalle-ai-military-use/",
     "date_published": "Wed, 10 Apr 2024 17:23:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112248414756050236"
     ],
     "lastTootTimestamp": 1712774883408
+  },
+  "https://coryd.dev/posts/2024/dont-be-afraid-to-admin-when-you-dont-know-something/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9kb250LWJlLWFmcmFpZC10by1hZG1pbi13aGVuLXlvdS1kb250LWtub3ctc29tZXRoaW5nLw==",
+    "title": "📝: Don’t be afraid to admit when you don’t know something",
+    "url": "https://coryd.dev/posts/2024/dont-be-afraid-to-admin-when-you-dont-know-something/",
+    "content_text": "📝: Don’t be afraid to admit when you don’t know something #Tech #WebDev https://coryd.dev/posts/2024/dont-be-afraid-to-admin-when-you-dont-know-something/",
+    "date_published": "Wed, 10 Apr 2024 19:40:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112248709657425809"
+    ],
+    "lastTootTimestamp": 1712779383285
   }
 }
