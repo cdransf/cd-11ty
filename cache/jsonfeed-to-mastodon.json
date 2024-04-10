@@ -12344,5 +12344,16 @@
       "https://social.lol/users/cory/statuses/112245409164176698"
     ],
     "lastTootTimestamp": 1712729021746
+  },
+  "https://theintercept.com/2024/04/10/microsoft-openai-dalle-ai-military-use/": {
+    "id": "aHR0cHM6Ly90aGVpbnRlcmNlcHQuY29tLzIwMjQvMDQvMTAvbWljcm9zb2Z0LW9wZW5haS1kYWxsZS1haS1taWxpdGFyeS11c2Uv",
+    "title": "🔗: Microsoft Pitched OpenAI’s DALL-E as Battlefield Tool for U.S. Military",
+    "url": "https://theintercept.com/2024/04/10/microsoft-openai-dalle-ai-military-use/",
+    "content_text": "🔗: Microsoft Pitched OpenAI’s DALL-E as Battlefield Tool for U.S. Military #Tech https://theintercept.com/2024/04/10/microsoft-openai-dalle-ai-military-use/",
+    "date_published": "Wed, 10 Apr 2024 17:23:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112248414756050236"
+    ],
+    "lastTootTimestamp": 1712774883408
   }
 }
