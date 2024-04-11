@@ -12366,5 +12366,32 @@
       "https://social.lol/users/cory/statuses/112248709657425809"
     ],
     "lastTootTimestamp": 1712779383285
+  },
+  "https://daverupert.com/2024/04/download-our-native-app/": {
+    "id": "aHR0cHM6Ly9kYXZlcnVwZXJ0LmNvbS8yMDI0LzA0L2Rvd25sb2FkLW91ci1uYXRpdmUtYXBwLw==",
+    "title": "🔗: The native app install experience",
+    "url": "https://daverupert.com/2024/04/download-our-native-app/",
+    "content_text": "🔗: The native app install experience #Tech https://daverupert.com/2024/04/download-our-native-app/",
+    "date_published": "Wed, 10 Apr 2024 21:59:00 GMT",
+    "toots": []
+  },
+  "https://underlap.org/i-dont-understand": {
+    "id": "aHR0cHM6Ly91bmRlcmxhcC5vcmcvaS1kb250LXVuZGVyc3RhbmQ=",
+    "title": "🔗: I don't understand",
+    "url": "https://underlap.org/i-dont-understand",
+    "content_text": "🔗: I don't understand #Tech #WebDev https://underlap.org/i-dont-understand",
+    "date_published": "Wed, 10 Apr 2024 21:53:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112250153581448580"
+    ],
+    "lastTootTimestamp": 1712801415781
+  },
+  "https://app.thestorygraph.com/books/4fcbfa56-4cec-495f-a002-d3f4989bc7e8": {
+    "id": "aHR0cHM6Ly9hcHAudGhlc3RvcnlncmFwaC5jb20vYm9va3MvNGZjYmZhNTYtNGNlYy00OTVmLWEwMDItZDNmNDk4OWJjN2U4",
+    "title": "📖: Starkweather: The Untold Story of the Killing Spree that Changed America",
+    "url": "https://app.thestorygraph.com/books/4fcbfa56-4cec-495f-a002-d3f4989bc7e8",
+    "content_text": "📖: Starkweather: The Untold Story of the Killing Spree that Changed America #Books #NowReading #TheStoryGraph https://app.thestorygraph.com/books/4fcbfa56-4cec-495f-a002-d3f4989bc7e8",
+    "date_published": "Tue, 09 Apr 2024 17:00:00 GMT",
+    "toots": []
   }
 }
