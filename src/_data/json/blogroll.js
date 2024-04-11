@@ -2,6 +2,7 @@ export default [
   { "name": "Adam Newbold", "url": "https://notes.neatnik.net", "feed": "https://notes.neatnik.net" },
   { "name": "Adrianna Tan", "url": "https://popagandhi.com", "feed": "https://popagandhi.com/feed.xml", "newsletter": "https://buttondown.email/skinnylatte" },
   { "name": "Ashur Cabrera", "url": "https://multiline.co/mment", "feed": "https://multiline.co/mment/feed.xml" },
+  { "name": "BinaryDigit", "url": "https://binarydigit.cafe", "feed": "https://binarydigit.cafe/feed.xml" },
   { "name": "Chris Burnell", "url": "https://chrisburnell.com", "feed": "https://chrisburnell.com/feed.xml" },
   { "name": "Chris Coyier", "url": "https://chriscoyier.net", "feed": "https://chriscoyier.net/feed/" },
   { "name": "Chris Ferdinandi", "url": "https://gomakethings.com", "feed": "https://gomakethings.com/feed/index.xml", "newsletter": "https://gomakethings.com" },
