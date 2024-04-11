@@ -12421,5 +12421,16 @@
       "https://social.lol/users/cory/statuses/112254303708780453"
     ],
     "lastTootTimestamp": 1712864741694
+  },
+  "https://coryd.dev/posts/2024/weve-stopped-making-things-anyone-wants/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC93ZXZlLXN0b3BwZWQtbWFraW5nLXRoaW5ncy1hbnlvbmUtd2FudHMv",
+    "title": "📝: We've stopped making things anyone wants",
+    "url": "https://coryd.dev/posts/2024/weve-stopped-making-things-anyone-wants/",
+    "content_text": "📝: We've stopped making things anyone wants #Tech #SocialMedia #AI https://coryd.dev/posts/2024/weve-stopped-making-things-anyone-wants/",
+    "date_published": "Thu, 11 Apr 2024 20:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112254372345103571"
+    ],
+    "lastTootTimestamp": 1712865789010
   }
 }
