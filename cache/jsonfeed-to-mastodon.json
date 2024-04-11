@@ -12396,5 +12396,16 @@
       "https://social.lol/users/cory/statuses/112250597307747360"
     ],
     "lastTootTimestamp": 1712808186516
+  },
+  "https://softwarecrisis.dev/letters/llmentalist/": {
+    "id": "aHR0cHM6Ly9zb2Z0d2FyZWNyaXNpcy5kZXYvbGV0dGVycy9sbG1lbnRhbGlzdC8=",
+    "title": "🔗: The LLMentalist Effect: how chat-based Large Language Models replicate the mechanisms of a psychic’s con",
+    "url": "https://softwarecrisis.dev/letters/llmentalist/",
+    "content_text": "🔗: The LLMentalist Effect: how chat-based Large Language Models replicate the mechanisms of a psychic’s con #AI #Tech https://softwarecrisis.dev/letters/llmentalist/",
+    "date_published": "Wed, 10 Apr 2024 20:56:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112251071144957967"
+    ],
+    "lastTootTimestamp": 1712815416681
   }
 }
