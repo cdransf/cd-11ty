@@ -12443,5 +12443,24 @@
       "https://social.lol/users/cory/statuses/112256259878163285"
     ],
     "lastTootTimestamp": 1712894590484
+  },
+  "https://ethanmarcotte.com/wrote/blockin-bots/": {
+    "id": "aHR0cHM6Ly9ldGhhbm1hcmNvdHRlLmNvbS93cm90ZS9ibG9ja2luLWJvdHMv",
+    "title": "🔗: Blockin’ bots.",
+    "url": "https://ethanmarcotte.com/wrote/blockin-bots/",
+    "content_text": "🔗: Blockin’ bots. #AI #Tech https://ethanmarcotte.com/wrote/blockin-bots/",
+    "date_published": "Fri, 12 Apr 2024 16:13:00 GMT",
+    "toots": []
+  },
+  "https://www.aalto.fi/en/news/keeping-your-data-from-apple-is-harder-than-expected": {
+    "id": "aHR0cHM6Ly93d3cuYWFsdG8uZmkvZW4vbmV3cy9rZWVwaW5nLXlvdXItZGF0YS1mcm9tLWFwcGxlLWlzLWhhcmRlci10aGFuLWV4cGVjdGVk",
+    "title": "🔗: Keeping your data from Apple is harder than expected",
+    "url": "https://www.aalto.fi/en/news/keeping-your-data-from-apple-is-harder-than-expected",
+    "content_text": "🔗: Keeping your data from Apple is harder than expected #Tech #Privacy https://www.aalto.fi/en/news/keeping-your-data-from-apple-is-harder-than-expected",
+    "date_published": "Thu, 11 Apr 2024 22:21:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112259562368044686"
+    ],
+    "lastTootTimestamp": 1712944982473
   }
 }
