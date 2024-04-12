@@ -66,7 +66,6 @@ Software and services that I use for work and my own enjoyment.
 - [Netlify](https://netlify.com): I use their hosting, forms and webhooks. It's a reliable and feature-rich platform.
 - <a onclick="clicky?.log('/uses', 'Clicky referral', 'click')" href="https://clicky.com/101449513">Clicky</a>: not the *prettiest* analytics, but very feature rich.
 - <a onclick="clicky?.log('/uses','Feedpress referral', 'click')" href="https://feedpress.com/?affid=34370">Feedpress</a>: they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
-- [Kagi](https://kagi.com): the only search engine at this point (or so it seems) that's interested in surfacing quality results.
 - [Readwise Reader](https://readwise.io/read): an impressive RSS reader that handles all the functionality you'd expect from a read it later app beautifully. It's as powerful as it is flexible.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.
 - [Last.fm](https://last.fm): as it turns out, the best music recommendations still come from dedicated fans.
