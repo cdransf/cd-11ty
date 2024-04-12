@@ -43,6 +43,6 @@ I don't miss playlists, I've kept up with artists I care about and I've discover
 [^2]: There are ever more hands out looking for a cut of merch sales on tour as well.
 [^3]: My wife made the comment that I'm one of the few people that still listens to albums and I think there's a lot to be said for respecting the artist's intent and effort that went into sequencing the release.
 [^4]: I'm down to buying shirts from [Bifocal Media](https://bifocalmedia.com/) when they print something for [NoMeansNo](https://en.wikipedia.org/wiki/Nomeansno) or [Pyre Press](https://www.pyrepressmerch.com/) and [20 Buck Spin](https://www.20buckspin.com/) (because they use Pyre Press for all their shirts).
-[^5]: [This isn't a bad thing, necessarily.](https://coryd.dev/posts/2023/locally-stored-music-and-storage-as-a-meaningful-constraint/)
+[^5]: [This isn't a bad thing, necessarily.](https://coryd.dev/posts/2023/locally-stored-music-and-storage-as-a-meaningful-constraint/) Constraints can be meaningful and helpful.
 [^6]: If things go sideways, Jellyfin is the runner up.
 [^7]: I can do it, so I must.
