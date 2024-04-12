@@ -6,8 +6,17 @@
   publish = "_site"
   edge_functions = "api"
 
+###
+# PLUGINS
+###
 [[plugins]]
 package = "/plugins/fetch-scrobbles"
+
+###
+# IMAGES
+###
+[images]
+  remote_images = [https://f001.backblazeb2.com/file/coryd-dev-images/.*, https://image.tmdb.org/.*, https://cdn.thestorygraph.com/.*]
 
 ###
 # URLs
