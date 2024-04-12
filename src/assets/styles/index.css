@@ -118,7 +118,7 @@ table {
   max-width: fit-content;
   margin: 0 auto;
   white-space: nowrap;
-  border-radius: var(--rounded-lg);
+  border-radius: var(--sizing-xs);
   border: 1px solid var(--gray-light);
 }
 
@@ -375,7 +375,7 @@ li {
 /* images */
 .image__banner {
   border: 1px solid var(--accent-color);
-  border-radius: var(--rounded-lg);
+  border-radius: var(--sizing-xs);
   height: auto;
 }
 

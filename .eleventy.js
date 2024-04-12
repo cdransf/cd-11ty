@@ -73,6 +73,9 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     'node_modules/youtube-video-element/youtube-video-element.js': 'assets/scripts/components/youtube-video-element.js'
   })
+  eleventyConfig.addPassthroughCopy({
+    'node_modules/@daviddarnes/link-peek/link-peek.js': 'assets/scripts/components/link-peek.js'
+  })
 
   // enable merging of tags
   eleventyConfig.setDataDeepMerge(true)

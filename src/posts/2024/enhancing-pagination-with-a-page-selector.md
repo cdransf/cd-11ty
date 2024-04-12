@@ -38,8 +38,8 @@ window.onload = () => {
 
 We wait for the document to load, select the pagination DOM node, get the current `pathname`, split it at '/' delimited segments, filter empty values and look for a number representing the current page. We then set the `selected` attribute on the appropriate `<option>` node for the current page.
 
-  Within the `change` event listener I check whether we've extracted a url segment *and* that the last segment is a valid number — if not, we add a new numeric segment. If it is numeric, we replace it with the new page number. Finally, we have special handling for the root section — because my first page is at `/` and the second is at `/1/` we need to correctly navigate the user should the pageNumber be `0`.
+Within the `change` event listener I check whether we've extracted a url segment *and* that the last segment is a valid number — if not, we add a new numeric segment. If it is numeric, we replace it with the new page number. Finally, we have special handling for the root section — because my first page is at `/` and the second is at `/1/` we need to correctly navigate the user should the pageNumber be `0`.
 
-  With that, we have quicker and more convenient page navigation for users that have JavaScript enabled and a handy page count for users that have disabled JavaScript in their browser.
+With that, we have quicker and more convenient page navigation for users that have JavaScript enabled and a handy page count for users that have disabled JavaScript in their browser.
 
-  {% render "partials/banners/npm.liquid", url: 'https://www.npmjs.com/package/@cdransf/select-pagination', command: 'npm i @cdransf/select-pagination' %}
+{% render "partials/banners/npm.liquid", url: 'https://www.npmjs.com/package/@cdransf/select-pagination', command: 'npm i @cdransf/select-pagination' %}

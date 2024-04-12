@@ -51,7 +51,7 @@
 
 .track__chart--item img {
   border: 1px solid var(--accent-color);
-  border-radius: var(--rounded-md);
+  border-radius: var(--sizing-xs);
 }
 
 .track__chart--item img,

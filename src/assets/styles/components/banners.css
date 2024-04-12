@@ -2,7 +2,7 @@
   margin: var(--sizing-base) 0;
   padding: var(--sizing-md);
   border: 1px solid;
-  border-radius: var(--rounded-lg);
+  border-radius: var(--sizing-xs);
 }
 
 .banner.old-post {

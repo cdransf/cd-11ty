@@ -1,0 +1,20 @@
+{% capture css %}
+  {% render "../../assets/styles/components/link-peek.css" %}
+{% endcapture %}
+<style>{{ css }}</style>
+<script type="module" src="/assets/scripts/components/link-peek.js"></script>
+<template id="link-peek-template">
+  <figure>
+    <figcaption>
+      <a data-key="data.title, link"></a>
+      <p data-key="data.description"></p>
+      <img data-key="data.logo.url" />
+      <small data-key="data.publisher"></small>
+    </figcaption>
+    <img data-key="data.image.url" />
+  </figure>
+</template>
+
+<link-peek api="https://api.microlink.io/?url={{ url }}">
+  <a href="{{ url }}">{{ title }}</a>
+</link-peek>
