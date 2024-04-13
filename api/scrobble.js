@@ -83,7 +83,7 @@ export default async (request) => {
       const artistObj = {
         mbid,
         genre,
-        image: `https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}.jpg&w=320&h=320&fit=fill`
+        image: `https://coryd.dev/.netlify/images/?url=/media/artists/${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}.jpg&w=320&h=320&fit=fill`
       }
       artistInfo = artistObj
       artistsMap[artistSanitizedKey] = artistObj
@@ -107,7 +107,7 @@ export default async (request) => {
       const mbid = albumRes['album']['mbid'] || ''
       const albumObj = {
         mbid,
-        image: `https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/albums/${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
+        image: `https://coryd.dev/.netlify/images/?url=/media/albums/${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
       , '').replace(/\s+/g, '-').toLowerCase())}.jpg&w=320&h=320&fit=fill`
       }
       albumsMap[albumSanitizedKey] = albumObj

@@ -137,6 +137,6 @@ For this page in particular, the images that are rendered above the fold are set
 
 All of these boilerplate steps leave us with a quick to load, accessible and resilient site:
 
-{% image 'https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/blog/page-speed.jpg&w=1000', 'Pagespeed scores for coryd.dev/now', 'image__banner' %}
+{% image 'https://coryd.dev/.netlify/images/?url=/media/blog/page-speed.jpg&w=1000', 'Pagespeed scores for coryd.dev/now', 'image__banner' %}
 
 [^1]: It's easy, flexible and helps mitigate my lack of an eye for design by providing safe baselines.
