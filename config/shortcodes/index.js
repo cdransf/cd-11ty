@@ -1,5 +1,4 @@
 import Image from '@11ty/eleventy-img'
-import path from 'path'
 import htmlmin from 'html-minifier-terser'
 
 const stringifyAttributes = (attributeMap) => {
