@@ -13,7 +13,7 @@ permalink: /about.html
 <div class="avatar__wrapper flex--centered">
   <div class="avatar__wrapper--interior">
   {%- capture about_alt -%}{{ meta.siteName }} - image by David Neal / @reverentgeek{%- endcapture -%}
-  {% image './src/assets/img/avatar.png', about_alt, '', 'eager' %}
+  {% image 'https://coryd.dev/.netlify/images/?url=/assets/img/avatar.png&w=600', about_alt, '', 'eager' %}
   </div>
 </div>
 <h2 class="page__header text--centered">Hi, I'm Cory</h2>

@@ -203,7 +203,7 @@ The templating for my site is all written in [liquid.js](https://liquidjs.com) a
 
 We have an object containing arrays of objects — we iterate through each object for the appropriate section (tracks aren't displayed at the moment) and build the resulting display[^3]. This isn't perfect by any means, but, it does provide a nice little visualization of what I'm listening to and `240` tracks feels adequate as a rolling window into that activity.
 
-{% image 'https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/blog/albums-artists.jpg&w=1200', 'Albums and artists', 'image__banner', 'lazy' %}
+{% image 'https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/blog/albums-artists.jpg&w=1000', 'Albums and artists', 'image__banner', 'lazy' %}
 
 [^1]: There are some good options to do this, but there aren't a _ton_ and the age of some of the apps is concerning. [Marvis](https://appaddy.wixsite.com/marvis) is far and away your best choice here.
 [^2]: Making sure that you update the values you obtained, including the path to your downloaded `.p8` file.
