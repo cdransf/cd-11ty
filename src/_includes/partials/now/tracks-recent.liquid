@@ -9,7 +9,7 @@
   {% capture alt %}{{ item.track }} by {{ item.track }}{% endcapture %}
     <div class="track__chart--item">
       <div class="track__chart--meta">
-        {% image item.image, alt, '', 'lazy', 80 %}
+        {% image item.image, alt, '', 'lazy' %}
         <div class="track__chart--meta--text">
           <div class="track__chart--title">{{ item.track }}</div>
           <div class="track__chart--artists">
