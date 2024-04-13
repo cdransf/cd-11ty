@@ -36,10 +36,7 @@ export default async function () {
         if (!data[i]) {
           data.push({ title: titles[i]?.textContent })
           data.push({ author: authors[i]?.textContent })
-          data.push({ image: images[i].src.replace(
-              'https://cdn.thestorygraph.com',
-              'https://cd-books.b-cdn.net'
-            ),
+          data.push({ image: `https://coryd.dev/.netlify/images/?url=${images[i]?.src}&fit=cover&w=200&h=307`,
           })
           data.push({ url: `https://app.thestorygraph.com${urls[i].href}` })
           data.push({ percentage: percentages[i]?.textContent })
@@ -52,10 +49,7 @@ export default async function () {
         if (data[i]) {
           data[i]['title'] = titles[i]?.textContent
           data[i]['author'] = authors[i]?.textContent
-          data[i]['image'] = images[i]?.src.replace(
-            'https://cdn.thestorygraph.com',
-            'https://cd-books.b-cdn.net'
-          ),
+          data[i]['image'] = `https://coryd.dev/.netlify/images/?url=${images[i]?.src}&fit=cover&w=200&h=307`,
           data[i]['url'] = `https://app.thestorygraph.com${urls[i]?.href}`
           data[i]['percentage'] = percentages[i]?.textContent
           data[i]['dateAdded'] = date

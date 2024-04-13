@@ -16,21 +16,15 @@ export const img = async (
   alt = '',
   className,
   loading = 'lazy',
-  maxWidth = 1248,
   sizes = '90vw',
-  formats = ['avif', 'webp', 'jpeg']
+  formats = ['avif', 'webp', 'jpg', 'jpeg']
 ) => {
-  const widths = [80, 200, 320, 570, 880, 1024, 1248].filter(width => width <= maxWidth);
+  const widths = [80, 200, 320, 570, 880, 1024, 1248];
   const metadata = await Image(src, {
     widths: [...widths],
     formats: [...formats],
     outputDir: './_site/assets/img/cache/',
-    urlPath: '/assets/img/cache/',
-    filenameFormat: (id, src, width, format, options) => {
-      const extension = path.extname(src);
-      const name = path.basename(src, extension);
-      return `${encodeURIComponent(name)}-${width}w.${format}`;
-    },
+    urlPath: '/assets/img/cache/'
   });
 
   const lowsrc = metadata.jpeg[metadata.jpeg.length - 1];

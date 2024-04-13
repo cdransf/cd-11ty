@@ -3,14 +3,13 @@ date: '2023-02-17'
 title: 'Workflows: handling inbound email on Fastmail with regular expressions (now featuring ChatGPT)'
 description: "I've been using Fastmail for years now and have explored a number of different approaches to handling mail. I've approached it by creating rules targeting lists of top level domains, I've gone with no rules at all and a heavy-handed approach to unsubscribing from messages (operating under the idea that _everything_ warrants being seen and triaged)."
 tags: ['Email', 'Fastmail', 'regular expressions', 'workflows', 'AI']
-image: https://cdn.coryd.dev/blog/fastmail-workflow.jpg
 ---
 
 I've been using Fastmail for years now and have explored a number of different approaches to handling mail. I've approached it by creating rules targeting lists of top level domains, I've gone with no rules at all and a heavy-handed approach to unsubscribing from messages (operating under the idea that _everything_ warrants being seen and triaged) and I've even used HEY.<!-- excerpt -->[^1]
 
 For now, I've approached filtering my mail by applying regular expressions to reasonably broad categories of incoming mail[^2]. My thinking with this approach is that will scale better over the long term by applying heuristics to common phrases and patterns in incoming mail without the need to apply rules to senders on a per address or domain basis.
 
-{% image 'https://cdn.coryd.dev/blog/fastmail-workflow.jpg', 'A diagram of my Fastmail workflow', 'image__banner', 'eager' %}
+{% image 'https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/blog/fastmail-workflow.jpg&w=1200', 'A diagram of my Fastmail workflow', 'image__banner', 'eager' %}
 
 ## Alias-specific rules
 

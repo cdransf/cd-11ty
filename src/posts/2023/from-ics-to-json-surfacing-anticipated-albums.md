@@ -3,7 +3,6 @@ date: '2023-06-08'
 title: 'From ICS to JSON: surfacing anticipated albums'
 description: "I use MusicHarbor by Marcos Tanaka to track upcoming albums from my favorite artists (typically by syncing my last.fm data with the app.) When I see something new that I want to add to my collection I throw it on a calendar creatively titled Albums."
 tags: ['development', 'music', 'automation', 'API']
-image: https://cdn.coryd.dev/blog/album-releases.jpg
 ---
 
 I use MusicHarbor by [Marcos Tanaka](https://marcosatanaka.com) to track upcoming albums from my favorite artists (typically by syncing [my last.fm data](https://www.last.fm/user/cdme_) with the app.) When I see something new that I want to add to my collection I throw it on a calendar creatively titled `Albums`.<!-- excerpt -->
@@ -65,6 +64,6 @@ Rendering the output is as simple as:
 
 {% endraw %}
 Leaving us with:
-{% image 'https://cdn.coryd.dev/blog/album-releases.jpg', 'Albums I\'m looking forward to', 'image__banner', 'eager' %}
+{% image 'https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/blog/album-releases.jpg&w=1200', 'Albums I\'m looking forward to', 'image__banner', 'eager' %}
 
 [^1]: At this point, a dev playground.

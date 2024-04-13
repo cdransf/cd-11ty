@@ -3,7 +3,6 @@ date: '2024-02-07'
 title: 'On getting tattooed'
 description: "I got my first tattoo over ten years ago. It was a few lines from Tom Waits' *[Coney Island Baby](https://www.youtube.com/watch?v=A-Tod1_tZdU)* set on the inside of my left bicep as a dedication to my then fiancé and now wife of ten years. I was told recently that that's a really painful spot but, I suppose, I didn't know what I was getting into outside of having an artist recommended by a dear friend that I trust implicitly."
 tags: ['tattoos', 'music']
-image: https://cdn.coryd.dev/blog/half-sleeve.jpg
 ---
 I got my first tattoo over ten years ago. It was a few lines from Tom Waits' *[Coney Island Baby](https://www.youtube.com/watch?v=A-Tod1_tZdU)* set on the inside of my left bicep as a dedication to my then fiancé and now wife of ten years. I was told recently that that's a really painful spot but, I suppose, I didn't know what I was getting into outside of having an artist recommended by a dear friend that I trust implicitly.<!-- excerpt -->
 
@@ -28,7 +27,7 @@ My parents started getting tattooed in their 50s, thinking it would be a cheaper
 Each piece was important to me when I got it and remains important to me now. They're references to and reminders of important moments and I enjoy every session[^6]. But, for now, my shoulder is sore.
 
 {% capture fallbackIcon %}{% tablericon "photo" "A photo of the Sturgill Simpson-inspired half sleeve referenced above." %}{% endcapture %}
-{% image 'https://cdn.coryd.dev/blog/half-sleeve.jpg', 'A photo of the Sturgill Simpson-inspired half sleeve referenced above.', 'image__banner', 'eager' %}
+{% image 'https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/blog/half-sleeve.jpg&w=1200', 'A photo of the Sturgill Simpson-inspired half sleeve referenced above.', 'image__banner', 'eager' %}
 
 [^1]: My wife got the same piece done — there was one pointing to the driveway of the house we got married at. It burned down in the Butte fire.
 [^2]: She got elected!

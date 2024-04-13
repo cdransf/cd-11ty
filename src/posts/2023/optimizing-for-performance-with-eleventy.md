@@ -3,7 +3,6 @@ date: '2023-06-07'
 title: 'Optimizing for performance with Eleventy'
 description: "In the interest of over-engineering my personal site I've gone out of my way to optimize it for performance."
 tags: ['Eleventy', 'development']
-image: https://cdn.coryd.dev/blog/page-speed.jpg
 ---
 
 In the interest of over-engineering my personal site I've gone out of my way to optimize it for performance. It started out fairly quick as it's static, built using [Eleventy](https://www.11ty.dev) and is hosted with Vercel but, beyond the basic setup, I've taken some additional measures to drive the [pagespeed](https://pagespeed.web.dev) scores to `100` across the board.<!-- excerpt -->
@@ -138,6 +137,6 @@ For this page in particular, the images that are rendered above the fold are set
 
 All of these boilerplate steps leave us with a quick to load, accessible and resilient site:
 
-{% image 'https://cdn.coryd.dev/blog/page-speed.jpg', 'Pagespeed scores for coryd.dev/now', 'image__banner' %}
+{% image 'https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/blog/page-speed.jpg&w=1200', 'Pagespeed scores for coryd.dev/now', 'image__banner' %}
 
 [^1]: It's easy, flexible and helps mitigate my lack of an eye for design by providing safe baselines.

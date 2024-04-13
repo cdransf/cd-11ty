@@ -81,7 +81,7 @@ export default async function () {
     })
     const tmdbData = await tmdbRes
     const posterPath = tmdbData['poster_path']
-    episode.image = `https://cd-movies.b-cdn.net/t/p/w500${posterPath}`
+    episode.image = `https://coryd.dev/.netlify/images/?url=https://image.tmdb.org//t/p/w500${posterPath}&w=200&h=307&fit=fill`
   }
 
   return episodes;

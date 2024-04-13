@@ -168,6 +168,6 @@ Finally, if the page this all lives on is loaded by a client without JavaScript 
 
 All of this, yields the single line at the bottom of this image — updated on each visit.
 
-{% image 'https://cdn.coryd.dev/blog/now-playing.jpg', 'Now playing', 'image__banner', 'lazy' %}
+{% image 'https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/blog/now-playing.jpg&w=1200', 'Now playing', 'image__banner', 'lazy' %}
 
 [^1]: Plus explicit conditions matching David Bowie and Minor Threat.

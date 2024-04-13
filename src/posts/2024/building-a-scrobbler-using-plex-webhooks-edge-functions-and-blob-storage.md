@@ -4,13 +4,12 @@ title: 'Building a scrobbler using Plex webhooks, edge functions and blob storag
 '
 description: "I've written before about embedding music into my site and I've largely used Last.fm to do so. Their API is rather extensive, though it is showing its age — the default response format is XML, they've dropped artist images and have intermittently failed to return album art. ListenBrainz is great, but client support is still lacking. I've also tried charting Apple Music data from their (quite limited) API."
 tags: ['Eleventy', 'development', 'music', 'indie web', 'javascript', 'Plex', 'Plexamp', 'Netlify']
-image: https://cdn.coryd.dev/blog/scrobbler.png
 ---
 I've written before about [embedding music into my site](https://coryd.dev/posts/2024/weaving-music-in-and-out-of-my-personal-site/) and I've largely used Last.fm to do so. Their API is rather extensive, though it is showing its age — the default response format is XML, they've dropped artist images and have intermittently failed to return album art. ListenBrainz is *great*, but client support is still lacking. [I've also tried charting Apple Music data from their (quite limited) API.](https://coryd.dev/posts/2023/road-to-madness-apple-music-charts/)<!-- excerpt -->
 
 I could have kept depending on Last.fm and — don't get me wrong — I love Last.fm. It's one of those valuable, legacy services that's hanging on with a rich user base and historical recommendations. I'm going to keep scrobbling data there and to ListenBrainz[^1].
 
-{% image 'https://cdn.coryd.dev/blog/scrobbler.png', 'A diagram of the scrobbling architecture', 'image__banner', 'eager' %}
+{% image 'https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/blog/scrobbler.png&w=1200', 'A diagram of the scrobbling architecture', 'image__banner', 'eager' %}
 
 What I've long wanted is something that sits on infrastructure I control, stores my own data and lets me present roughly the same data. Given that Plex will issue outbound webhooks, I thought I'd set up an edge function over at Netlify and point a webhook at it to see what I could do with the inbound payload. What Plex sends is fairly lightweight and ended up needing to be read in from form data on the `POST`, but it was enough to work with.
 
