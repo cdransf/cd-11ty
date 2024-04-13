@@ -101,6 +101,9 @@ https://cdme.netlify.app https://coryd.dev 301!
 /follow.xml https://feedpress.me/coryd-follow
 /follow.json https://feedpress.me/coryd-follow.json
 
+# media
+/media/* https://f001.backblazeb2.com/file/coryd-dev-images/:splat
+
 # analytics
 /23af0256fe76a.js http://static.getclicky.com/js?in=/2842c5ddc46e5 200
 /2842c5ddc46e5 https://in.getclicky.com/in.php 200
