@@ -12487,5 +12487,24 @@
       "https://social.lol/users/cory/statuses/112267248945790971"
     ],
     "lastTootTimestamp": 1713062270354
+  },
+  "https://boehs.org/node/llms-destroying-internet": {
+    "id": "aHR0cHM6Ly9ib2Vocy5vcmcvbm9kZS9sbG1zLWRlc3Ryb3lpbmctaW50ZXJuZXQ=",
+    "title": "🔗: LLMs Are This Close To Destroying The Internet",
+    "url": "https://boehs.org/node/llms-destroying-internet",
+    "content_text": "🔗: LLMs Are This Close To Destroying The Internet #AI #Tech https://boehs.org/node/llms-destroying-internet",
+    "date_published": "Sun, 14 Apr 2024 01:09:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112270943873698435"
+    ],
+    "lastTootTimestamp": 1713118650473
+  },
+  "https://scottwillsey.com/small-web/": {
+    "id": "aHR0cHM6Ly9zY290dHdpbGxzZXkuY29tL3NtYWxsLXdlYi8=",
+    "title": "🔗: Small Web, Indie Web",
+    "url": "https://scottwillsey.com/small-web/",
+    "content_text": "🔗: Small Web, Indie Web #Tech #Blogging #IndieWeb #SmallWeb https://scottwillsey.com/small-web/",
+    "date_published": "Sat, 13 Apr 2024 23:01:00 GMT",
+    "toots": []
   }
 }
