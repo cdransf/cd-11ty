@@ -38,7 +38,7 @@ export const buildChart = (tracks, artists, albums, nowPlaying = {}) => {
             /\s+/g,
             '+'
           )}&type=artist`,
-        image: artists[artistSanitizedKey(track['artist'])]?.['image'] || `https://coryd.dev/.netlify/images/?url=/media/artists/${sanitizeMediaString(track['artist']).replace(/\s+/g, '-').toLowerCase()}.jpg&fit=cover&w=320&h=320`,
+        image: artists[artistSanitizedKey(track['artist'])]?.['image'] || `https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/artists/${sanitizeMediaString(track['artist']).replace(/\s+/g, '-').toLowerCase()}.jpg&fit=cover&w=320&h=320`,
         type: 'artist'
       }
     } else {
@@ -52,7 +52,7 @@ export const buildChart = (tracks, artists, albums, nowPlaying = {}) => {
         plays: 1,
         mbid: albums[albumSanitizedKey(track['album'])]?.['mbid'] || '',
         url: (albums[albumSanitizedKey(track['album'])]?.['mbid'] && albums[albumSanitizedKey(track['album'])]?.['mbid'] !== '') ? `https://musicbrainz.org/release-group/${albums[albumSanitizedKey(track['album'])]?.['mbid']}` : `https://musicbrainz.org/taglookup/index?tag-lookup.artist=${track['artist'].replace(/\s+/g, '+')}&tag-lookup.release=${track['album'].replace(/\s+/g, '+')}`,
-        image: albums[albumSanitizedKey(track['album'])]?.['image'] || `https://coryd.dev/.netlify/images/?url=/media/albums/${sanitizeMediaString(track['artist']).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(track['album'].replace(/[:\/\\,'']+/g
+        image: albums[albumSanitizedKey(track['album'])]?.['image'] || `https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/albums/${sanitizeMediaString(track['artist']).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(track['album'].replace(/[:\/\\,'']+/g
       , '').replace(/\s+/g, '-').toLowerCase())}.jpg&fit=cover&w=320&h=320`,
         type: 'album'
       }
@@ -78,7 +78,7 @@ export const buildChart = (tracks, artists, albums, nowPlaying = {}) => {
 
 export const buildTracksWithArt = (tracks, artists, albums) => {
   tracks.forEach(track => {
-    track['image'] = albums[albumSanitizedKey(track['album'])]?.['image'] || `https://coryd.dev/.netlify/images/?url=/media/albums/${sanitizeMediaString(track['artist']).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(track['album'].replace(/[:\/\\,'']+/g
+    track['image'] = albums[albumSanitizedKey(track['album'])]?.['image'] || `https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/albums/${sanitizeMediaString(track['artist']).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(track['album'].replace(/[:\/\\,'']+/g
       , '').replace(/\s+/g, '-').toLowerCase())}.jpg&fit=cover&w=320&h=320`
     track['url'] = (artists[artistSanitizedKey(track['artist'])]?.['mbid'] && artists[artistSanitizedKey(track['artist'])]?.['mbid'] !== '') ? `http://musicbrainz.org/artist/${artists[artistSanitizedKey(track['artist'])]?.['mbid']}` : `https://musicbrainz.org/search?query=${track['artist'].replace(
             /\s+/g,

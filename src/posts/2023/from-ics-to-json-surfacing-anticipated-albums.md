@@ -64,6 +64,6 @@ Rendering the output is as simple as:
 
 {% endraw %}
 Leaving us with:
-{% image 'https://coryd.dev/.netlify/images/?url=/media/blog/album-releases.jpg&w=1000', 'Albums I\'m looking forward to', 'image__banner', 'eager' %}
+{% image 'https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/album-releases.jpg&w=1000', 'Albums I\'m looking forward to', 'image__banner', 'eager' %}
 
 [^1]: At this point, a dev playground.
