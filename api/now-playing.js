@@ -7,6 +7,7 @@ const emojiMap = (genre, artist) => {
   if (normalizedArtist === "agalloch") return "🏔️";
   if (normalizedArtist === "augury") return "☄️";
   if (normalizedArtist === "autopsy") return "🧟";
+  if (normalizedArtist === "balance and composure") return "🪂";
   if (normalizedArtist === "bedsore") return "🛏️";
   if (normalizedArtist === "birds in row") return "🦅🦉🦢";
   if (normalizedArtist === "black flag") return "🏴";
