@@ -85,6 +85,7 @@ export default async () => {
     },
   })
     .then((data) => {
+      if (data.status) return {}
       if (data.ok) return data?.json();
       throw new Error('Something went wrong with the Trakt endpoint.');
     })
@@ -112,6 +113,8 @@ export default async () => {
   }
 
   const scrobbleData = await scrobbles.get('now-playing', { type: 'json'})
+
+  if (!scrobbleData) return new Response(JSON.stringify({}, { headers }))
 
   return new Response(JSON.stringify({
       content: `${emojiMap(
