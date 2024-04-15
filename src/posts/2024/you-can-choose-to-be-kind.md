@@ -1,5 +1,5 @@
 ---
-date: '2024-04-16T18:00-08:00'
+date: '2024-04-14T18:00-08:00'
 title: 'You can choose to be kind'
 description: "It's trite, but it's true and maybe, just maybe, the phrase has been burned into my brain from my kids watching Daniel Tiger on repeat. I've found it to be the best way to approach interactions in life and online — you can and should be kind to yourself too."
 tags: ['health']
