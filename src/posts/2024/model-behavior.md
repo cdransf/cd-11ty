@@ -21,3 +21,5 @@ AI generated code? Don't review it.
 New AI feature in your favorite app? Look for something new.
 
 It's a tool, but it's an exploitative one. If you want your work valued, if you want your time valued (as you should!) then you shouldn't be engaging with tools that devalues the creative work of anyone.
+
+{% render "partials/banners/github.liquid", url: 'https://github.com/ai-robots-txt/ai.robots.txt' %}
