@@ -1,10 +1,4 @@
 {% if data.size > 0 %}
-  {% capture css %}
-    {% render "../../../assets/styles/components/track-chart.css" %}
-    {% render "../../../assets/styles/components/progress-bar.css" %}
-  {% endcapture %}
-  <style>{{ css}}</style>
-{% endif %}
 <div class="track__chart">
   {% for item in data limit: 10 %}
   {%- assign percentage = item.plays | calculatePlayPercentage: mostPlayed -%}
@@ -22,3 +16,4 @@
   </div>
   {% endfor %}
 </div>
+{% endif %}

@@ -1,36 +1,42 @@
-link-peek:defined a:not([data-key]) {
-  display: none;
-}
+link-peek {
+  &:defined {
+    & a:not([data-key]) {
+      display: none;
+    }
 
-link-peek:defined figure {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
-  gap: 1rem;
-  max-inline-size: max-content;
-  border: 1px solid var(--gray-light);
-  border-radius: var(--rounded);
-  padding: 1rem;
-  margin: 0 0 var(--sizing-base);
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-sm);
-}
+    & figure {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+      gap: 1rem;
+      max-inline-size: max-content;
+      border: 1px solid var(--gray-light);
+      border-radius: var(--rounded);
+      padding: 1rem;
+      margin: 0 0 var(--sizing-base);
+      font-size: var(--font-size-sm);
+      line-height: var(--line-height-sm);
+    }
 
-link-peek:defined a[data-key="data.title.link"],
-link-peek:defined figure p {
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-sm);
-}
+    & a[data-key="data.title.link"],
+    & figure p {
+      font-size: var(--font-size-sm);
+      line-height: var(--line-height-sm);
+    }
+  }
 
-link-peek img[data-key="data.logo.url"] {
-  margin-right: var(--sizing-xs);
-  inline-size: var(--sizing-lg);
-  block-size: var(--sizing-lg);
-  vertical-align: middle;
-}
+  & img {
+    &[data-key="data.logo.url"] {
+      margin-right: var(--sizing-xs);
+      inline-size: var(--sizing-lg);
+      block-size: var(--sizing-lg);
+      vertical-align: middle;
+    }
 
-link-peek img[data-key="data.image.url"] {
-  max-inline-size: 100%;
-  block-size: auto;
-  border-radius: var(--rounded);
+    &[data-key="data.image.url"] {
+      max-inline-size: 100%;
+      block-size: auto;
+      border-radius: var(--rounded);
+    }
+  }
 }

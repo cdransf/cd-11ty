@@ -1,5 +1,4 @@
-.link__list {
-  padding-left: 0;
+.default__wrapper > .link__list {
   margin-top: 0;
   margin-bottom: var(--sizing-3xl);
 }

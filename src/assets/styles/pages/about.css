@@ -5,28 +5,26 @@
 .avatar__wrapper {
   margin-bottom: var(--sizing-xl);
   width: 100%;
-}
-
-.avatar__wrapper .avatar__wrapper--interior {
-  width: var(--avatar-size);
-  height: var(--avatar-size);;
-  border: 1px solid var(--accent-color);
-  border-radius: var(--rounded-full);
-  display: flex;
-  padding: var(--sizing-lg);
-  background-color: var(--color-lightest);
-}
-
-.avatar__wrapper,
-.avatar__wrapper .avatar__wrapper--interior {
   justify-content: center;
   overflow: hidden;
-}
 
-.avatar__wrapper .avatar__wrapper--interior picture > *,
-.avatar__wrapper .avatar__wrapper--interior img {
-  width: 100%;
-  height: 100%;
+  & .avatar__wrapper--interior {
+    width: var(--avatar-size);
+    height: var(--avatar-size);;
+    border: 1px solid var(--accent-color);
+    border-radius: var(--rounded-full);
+    display: flex;
+    padding: var(--sizing-lg);
+    background-color: var(--color-lightest);
+    justify-content: center;
+    overflow: hidden;
+
+    & picture > *,
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {

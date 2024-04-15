@@ -1,19 +1,16 @@
 webcare-webshare {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-xs);
-}
 
-webcare-webshare button {
-  color: var(--gray-dark);
-  background: transparent;
-  padding: 0;
-}
+  & button {
+    color: var(--gray-dark);
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
 
-webcare-webshare button > svg {
-  stroke: var(--gray-dark) !important;
-}
-
-webcare-webshare button,
-webcare-webshare button > svg {
-  cursor: pointer;
+    & > svg {
+      stroke: var(--gray-dark) !important;
+      cursor: pointer;
+    }
+  }
 }

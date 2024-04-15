@@ -3,8 +3,7 @@
   --grid-vertical: repeat(3,minmax(0,1fr));
 }
 
-.now__section--header,
-.recent__links-header {
+.now__section--header {
   margin: var(--sizing-3xl) 0 var(--sizing-lg);
 }
 

@@ -1,11 +1,11 @@
 .blog--roll__icons {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   gap: var(--sizing-xs);
-}
 
-.blog--roll__icons a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  & a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

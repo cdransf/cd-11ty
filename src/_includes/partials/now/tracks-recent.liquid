@@ -1,9 +1,4 @@
 {% if data.size > 0 %}
-  {% capture css %}
-    {% render "../../../assets/styles/components/track-chart.css" %}
-  {% endcapture %}
-  <style>{{ css}}</style>
-{% endif %}
 <div class="track__chart">
   {% for item in data limit: 10 %}
   {% capture alt %}{{ item.track }} by {{ item.track }}{% endcapture %}
@@ -23,3 +18,4 @@
     </div>
   {% endfor %}
 </div>
+{% endif %}

@@ -6,10 +6,6 @@ permalink: /about.html
 {%- assign artist = music.artists | first -%}
 {%- assign book = books | first -%}
 {%- assign show = tv | first -%}
-{% capture css %}
-  {% render "../assets/styles/pages/about.css" %}
-{% endcapture %}
-<style>{{ css }}</style>
 <div class="avatar__wrapper flex--centered">
   <div class="avatar__wrapper--interior">
   {%- capture about_alt -%}{{ meta.siteName }} - image by David Neal / @reverentgeek{%- endcapture -%}

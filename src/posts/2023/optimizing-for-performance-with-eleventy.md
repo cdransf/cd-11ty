@@ -57,18 +57,7 @@ I use [Tailwind](https://tailwindcss.com) for CSS styles[^1] which is minified a
 ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./tailwind.css -c ./tailwind.config.js -o _site/assets/styles/tailwind.css --minify
 ```
 
-The site include's Prism for code syntax highlighting and this is embedded and minified in the `<head>` of each page at build time:
-{% raw %}
-
-```liquid
-{% capture css %}
-  {% include "../assets/styles/prism.css" %}
-{% endcapture %}
-<style>{{ css }}</style>
-```
-
-{% endraw %}
-This is made possible by leveraging CleanCSS in (you guessed it) `.eleventy.js`:
+The site include's Prism for code syntax highlighting and this is embedded and minified in the `<head>` of each page at build time. This is made possible by leveraging CleanCSS in (you guessed it) `.eleventy.js`:
 {% raw %}
 
 ```javascript

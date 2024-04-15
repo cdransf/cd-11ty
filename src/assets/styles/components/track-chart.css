@@ -1,5 +1,14 @@
 .track__chart--item {
   justify-content: space-between;
+
+  &:not(:last-of-type) {
+    margin-bottom: var(--sizing-md);
+  }
+
+  & .progress-bar__wrapper {
+    max-width: 40%;
+    margin-left: var(--sizing-lg);
+  }
 }
 
 .track__chart--item,
@@ -7,15 +16,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.track__chart--item:not(:last-of-type) {
-  margin-bottom: var(--sizing-md);
-}
-
-.track__chart--item .progress-bar__wrapper {
-  max-width: 40%;
-  margin-left: var(--sizing-lg);
 }
 
 .track__chart--presentation {
@@ -49,15 +49,17 @@
   line-height: var(--line-height-sm);
 }
 
-.track__chart--item img {
-  border: 1px solid var(--accent-color);
-  border-radius: var(--rounded);
-}
+.track__chart--item {
+  & img {
+    border: 1px solid var(--accent-color);
+    border-radius: var(--rounded);
+  }
 
-.track__chart--item img,
-.track__chart--item picture {
-  width: calc(var(--sizing-3xl) * 1.5);
-  height: calc(var(--sizing-3xl) * 1.5);
+  & img,
+  & picture {
+    width: calc(var(--sizing-3xl) * 1.5);
+    height: calc(var(--sizing-3xl) * 1.5);
+  }
 }
 
 .track__chart--meta {

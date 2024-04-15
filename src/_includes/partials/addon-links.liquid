@@ -1,7 +1,3 @@
-{% capture css %}
-  {% render "../../assets/styles/components/addon-links.css" %}
-{% endcapture %}
-<style>{{ css }}</style>
 <div class="addon-links__wrapper">
   {%- if analytics.size > 0 -%}
   <div>{% render "partials/popular-posts.liquid", posts:posts, analytics:analytics %}</div>

@@ -35,9 +35,9 @@ textarea:focus {
   margin-top: 0;
   padding: 0;
   list-style: none;
-}
 
-.search__results li {
-  margin-top: var(--sizing-sm);
-  margin-bottom: var(--sizing-sm);
+  & li {
+    margin-top: var(--sizing-sm);
+    margin-bottom: var(--sizing-sm);
+  }
 }

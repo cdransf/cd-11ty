@@ -1,7 +1,11 @@
 .webring__wrapper {
   margin: var(--sizing-base) 0;
-}
 
-.webring__wrapper > .webring__centered {
-  justify-content: center;
+  h3 {
+    margin: var(--sizing-2xl) 0 var(--sizing-lg);
+  }
+
+  & > .webring__centered {
+    justify-content: center;
+  }
 }

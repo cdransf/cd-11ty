@@ -1,3 +1,9 @@
-.four-oh-four__wrapper .image__banner {
-  margin-bottom: var(--sizing-base);
+.four-oh-four__wrapper {
+  & .image__banner {
+    margin-bottom: var(--sizing-base);
+  }
+
+  & .page__header {
+    margin-bottom: var(--sizing-xs);
+  }
 }

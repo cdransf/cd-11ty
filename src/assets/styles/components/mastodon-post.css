@@ -1,18 +1,18 @@
 .mastodon-post-wrapper {
   border-bottom: 1px solid var(--gray-light);
   margin-bottom: var(--sizing-base);
-  padding-bottom: var(--sizing-xs);
-}
+  padding-bottom: var(--sizing-base);
 
-dl {
-  display: flex;
-  flex-direction: row;
-}
+  & dl {
+    display: flex;
+    flex-direction: row;
+  }
 
-dd {
-  margin-left: var(--sizing-xs);
-}
+  & dd {
+    margin-left: var(--sizing-xs);
 
-dd:not(:last-child) {
-  margin-right: var(--sizing-lg);
+    &:not(:last-child) {
+      margin-right: var(--sizing-lg);
+    }
+  }
 }

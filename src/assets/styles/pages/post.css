@@ -11,10 +11,10 @@ hr.footnotes-sep {
 .footnotes-list {
   margin-bottom: 0 !important;
   padding-left: 0 !important;
-}
 
-.footnotes-list li:last-child {
-  margin-bottom: 0;
+  & li:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .footnotes {

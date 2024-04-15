@@ -1,11 +1,4 @@
 {% if data.size > 0 %}
-  {% if embeddedStyles == true %}
-  {% capture css %}
-    {% render "../../../assets/styles/components/media-grid.css" %}
-    {% render "../../../assets/styles/components/progress-bar.css" %}
-  {% endcapture %}
-  <style>{{ css }}</style>
-  {% endif %}
   {% assign media = data | normalizeMedia %}
   <div class="media__grid {% if shape == 'square' %}square{% else %}vertical{% endif %}">
     {% for item in media limit: count %}

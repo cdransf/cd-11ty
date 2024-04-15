@@ -118,10 +118,6 @@ The final template that leverages the component looks like this:
 {% raw %}
 ```liquid
 <script type="module" src="/assets/scripts/components/theme-toggle.js"></script>
-{% capture css %}
-  {% render "../../../assets/styles/components/theme-toggle.css" %}
-{% endcapture %}
-<style>{{ css }}</style>
 <template id="theme-toggle-template">
   <button class="theme__toggle">
     <span class="light">

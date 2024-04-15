@@ -1,27 +1,31 @@
-:root {
-  --grid: repeat(1,minmax(0,1fr));
-}
-
 .addon-links__wrapper {
   display: grid;
   gap: var(--sizing-sm);
-  grid-template-columns: var(--grid);
-}
+  grid-template-columns: repeat(1,minmax(0,1fr));
 
-.addon-links__wrapper h2 {
-  margin-top: 0;
-}
+  & h2 {
+    margin-top: 0;
+  }
 
-.addon-links__wrapper div:last-of-type h2 {
-  margin-top: var(--sizing-base);
+  & div:last-of-type h2 {
+    margin-top: var(--sizing-base);
+  }
+
+  &.link__list {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  :root {
-    --grid: repeat(2,minmax(0,1fr));
-  }
+  .addon-links__wrapper {
+    grid-template-columns: repeat(2,minmax(0,1fr));
 
-  .addon-links__wrapper div h2 {
-    margin-top: 0 !important;
+    & div:first-of-type {
+      margin-right: var(--sizing-lg);
+    }
+
+    & div h2 {
+      margin-top: 0 !important;
+    }
   }
 }

@@ -1,27 +1,31 @@
 .contact__wrapper {
   display: flex;
   flex-direction: column;
+
+  & textarea {
+    height: calc(var(--sizing-3xl) * 5);
+    resize: none;
+  }
+
+  & .column.contact__description p:first-child {
+    margin-top: 0;
+  }
 }
 
-.contact__wrapper textarea {
-  height: calc(var(--sizing-3xl) * 5);
-  resize: none;
-}
-
-.contact__wrapper .column.contact__description p:first-child {
-  margin-top: 0;
+.contact__success--header {
+  margin: 0 0 var(--sizing-lg);
 }
 
 @media screen and (min-width: 768px) {
   .contact__wrapper {
     flex-direction: row;
-  }
 
-  .contact__wrapper .column {
-    width: 50%;
-  }
+    & .column {
+      width: 50%;
+    }
 
-  .contact__wrapper .column.contact__description {
-    padding-right: var(--sizing-xl);
+    & .column.contact__description {
+      padding-right: var(--sizing-xl);
+    }
   }
 }

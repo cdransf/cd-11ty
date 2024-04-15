@@ -35,10 +35,6 @@ This all lands in a `mastodon-post.liquid` partial that I render inside my post 
 ```liquid
 {%- assign shareLink = postUrl | findPost: linkPosts -%}
 {%- if shareLink %}
-{% capture css %}
-  {% render "../../assets/styles/components/mastodon-post.css" %}
-{% endcapture %}
-<style>{{ css }}</style>
 <script type="module" src="/assets/scripts/components/mastodon-post.js"></script>
 <template id="mastodon-post-template">
   <div class="mastodon-post-wrapper">

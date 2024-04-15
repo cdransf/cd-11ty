@@ -5,10 +5,6 @@ pagination:
   data: links
   size: 30
 ---
-{% capture css %}
-  {% render "./assets/styles/pages/links.css" %}
-{% endcapture %}
-<style>{{ css }}</style>
 <ul class="link__list">
   {% for link in pagination.items %}
     <li>

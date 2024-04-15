@@ -16,13 +16,7 @@
     <title>{{ pageTitle }}</title>
     <link rel="preload" href="/assets/fonts/Poppins-Bold.min.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/Poppins-Regular.min.woff2" as="font" type="font/woff2" crossorigin>
-    {% capture css %}
-      {% render "../assets/styles/partials/fonts.css" %}
-      {% render "../assets/styles/partials/vars.css" %}
-      {% render "../assets/styles/partials/animations.css" %}
-      {% render "../assets/styles/index.css" %}
-    {% endcapture %}
-    <style>{{ css }}</style>
+    <link rel="stylesheet" href="/assets/styles/index.css?v={% appVersion %}" type="text/css" />
     <script async data-id="101449513" src="/23af0256fe76a.js"></script>
     <link rel="canonical" href="{{ fullUrl }}" />
     <meta property="og:title" content="{{ pageTitle }}" />

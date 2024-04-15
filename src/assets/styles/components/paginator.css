@@ -1,24 +1,24 @@
 .pagination {
   justify-content: space-between;
-}
 
-.pagination button {
-  background: none;
-  padding-left: 0;
-  padding-right: 0;
-}
+  & button {
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-.pagination a {
-  display: flex;
-}
+  & a {
+    display: flex;
 
-.pagination a > svg {
-  stroke: var(--accent-color);
-  cursor: pointer;
-}
+    & > svg {
+      stroke: var(--accent-color);
+      cursor: pointer;
+    }
+  }
 
-.pagination span.disabled svg {
-  cursor: not-allowed;
-  stroke: color-mix(in srgb, var(--text-color), transparent 50%);
-  stroke-width: var(--stroke-width-default);
+  & span.disabled svg {
+    cursor: not-allowed;
+    stroke: color-mix(in srgb, var(--text-color), transparent 50%);
+    stroke-width: var(--stroke-width-default);
+  }
 }

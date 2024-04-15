@@ -3,38 +3,38 @@
   padding: var(--sizing-md);
   border: 1px solid;
   border-radius: var(--rounded);
-}
 
-.banner.old-post {
-  border-color: var(--gray-light);
-}
+  & p {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+    margin: 0 !important;
 
-.banner.npm {
-  border-color: var(--brand-npm);
-}
+    & > svg {
+      display: inline;
+      vertical-align: middle;
+      height: var(--sizing-lg);
+      width: var(--sizing-lg);
+      margin-right: var(--sizing-xs);
+    }
+  }
 
-.banner.npm svg {
-  stroke: var(--brand-npm);
-}
+  &.old-post {
+    border-color: var(--gray-light);
+  }
 
-.banner.github {
-  border-color: var(--brand-github);
-}
+  &.npm {
+    border-color: var(--brand-npm);
 
-.banner.github svg {
-  stroke: var(--brand-github);
-}
+    & svg {
+      stroke: var(--brand-npm);
+    }
+  }
 
-.banner p {
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-sm);
-  margin: 0 !important;
-}
+  &.github {
+    border-color: var(--brand-github);
 
-.banner p > svg {
-  display: inline;
-  vertical-align: middle;
-  height: var(--sizing-lg);
-  width: var(--sizing-lg);
-  margin-right: var(--sizing-xs);
+    & svg {
+      stroke: var(--brand-github);
+    }
+  }
 }

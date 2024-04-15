@@ -1,37 +1,41 @@
 .theme__toggle {
   background: transparent;
   padding: 0;
+
+  & svg {
+    cursor: pointer;
+  }
+
+  &:hover,
+  & svg:hover {
+    stroke-width: var(--stroke-width-bold);
+  }
+
+  & > .light svg { stroke: var(--sun) !important; }
+  & > .dark svg { stroke: var(--moon) !important; }
+
+  & > .light ,
+  & > .dark {
+    display: none;
+  }
 }
 
-.theme__toggle svg {
-  cursor: pointer;
+.theme__dark {
+  & .theme__toggle > .light {
+    display: inline;
+  }
+
+  & .theme__toggle > .dark {
+    display: none;
+  }
 }
 
-.theme__toggle:hover,
-.theme__toggle svg:hover {
-  stroke-width: var(--stroke-width-bold);
-}
+.theme__light {
+  & .theme__toggle > .light {
+    display: none;
+  }
 
-.theme__toggle > .light svg { stroke: var(--sun) !important; }
-.theme__toggle > .dark svg { stroke: var(--moon) !important; }
-
-.theme__toggle > .light ,
-.theme__toggle > .dark {
-  display: none;
-}
-
-.theme__dark .theme__toggle > .light {
-  display: inline;
-}
-
-.theme__dark .theme__toggle > .dark {
-  display: none;
-}
-
-.theme__light .theme__toggle > .light {
-  display: none;
-}
-
-.theme__light .theme__toggle > .dark {
-  display: inline;
+  & .theme__toggle > .dark {
+    display: inline;
+  }
 }
