@@ -1,5 +1,5 @@
 /* now */
-.now__section--text {
+.now-text {
   padding-left: var(--sizing-base);
 
   & p {
@@ -14,20 +14,18 @@
   }
 }
 
-.now__section--header {
+.now-header {
   margin: var(--sizing-3xl) 0 var(--sizing-lg);
 }
 
-.default__wrapper > .now__section--header:first-of-type {
+.default-wrapper > .now-header:first-of-type {
   margin-top: 0 !important;
 }
 
-.link__list {
+.link-list {
   margin-top: 0;
 }
 
-.now__explainer {
-  font-size: var(--font-size-xs);
-  line-height: var(--line-height-xs);
+.now-explainer {
   padding-top: var(--sizing-lg);
 }

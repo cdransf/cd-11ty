@@ -57,7 +57,7 @@ This is then implemented in the `links.html` page template:
 {%- assign shareLink = link.url | findPost: linkPosts -%}
 <!-- template stuff -->
 {%- if shareLink %}
-  <a class="brand-mastodon icon--small" href="{{ shareLink }}">
+  <a class="brand-mastodon icon-small" href="{{ shareLink }}">
     {% tablericon "brand-mastodon" "Mastodon post" %}
   </a>
 {% endif -%}

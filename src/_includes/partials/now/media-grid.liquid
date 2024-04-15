@@ -5,7 +5,7 @@
       {% assign alt = item.alt | strip | escape %}
       <a href="{{ item.url | stripUtm }}" title="{{ alt }}">
         <div class="item__wrapper{% if item.subtext %} shadow{% endif %}">
-          <div class="item__meta-text">
+          <div class="meta-text">
             {% if item.title %}
               <div class="header">{{ item.title }}</div>
             {% endif %}

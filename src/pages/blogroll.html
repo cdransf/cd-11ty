@@ -8,7 +8,7 @@ description: 'These are awesome blogs that I enjoy and you may enjoy too.'
   {% render "../assets/styles/pages/blogroll.css" %}
 {% endcapture %}
 <style>{{ css }}</style>
-<h2 class="page__header">{{ title }}</h2>
+<h2 class="page-header">{{ title }}</h2>
 <p>You can <a onclick="clicky?.log('/blogroll','OPML download', 'download');" href="/blogroll.opml">download an OPML file</a> containing all of these feeds and import them into your RSS reader.</p>
 <table>
   <tr>
@@ -20,7 +20,7 @@ description: 'These are awesome blogs that I enjoy and you may enjoy too.'
   <tr>
     <td>{{ blog.name }}</td>
     <td><a href="{{ blog.url }}">{{ blog.url | replace: "https://", "" }}</a></td>
-    <td class="blog--roll__icons">
+    <td class="blog-roll-icons">
       {%- if blog.feed -%}
       <a href="{{ blog.feed }}">{% tablericon "rss" "Subscribe via RSS" %}</a>
       {%- else -%}

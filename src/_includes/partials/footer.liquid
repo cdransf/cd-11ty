@@ -1,10 +1,10 @@
 <footer>
-  <nav aria-label="Social icons" class="flex--centered justify--centered text--centered">
+  <nav aria-label="Social icons" class="flex-centered justify-centered text-centered">
     {% for link in nav.social %}
       {% render "partials/nav/linked-icon.liquid", name:link.name, link:link.url, icon:link.icon %}
     {% endfor %}
   </nav>
-  <nav aria-label="Secondary site navigation" class="flex--centered justify--centered text--centered">
+  <nav aria-label="Secondary site navigation" class="flex-centered justify-centered text-centered">
     {% for link in nav.footer %}
       {% render "partials/nav/link.liquid", page:page, link:link.name, icon:link.icon %}
       {% if not forloop.last %}<span>•</span>{% endif %}

@@ -4,9 +4,9 @@ layout: default
 permalink: /contact.html
 description: 'How to contact me.'
 ---
-<h2 class="page__header">{{ title }}</h2>
-<div class="contact__wrapper">
-  <div class="column contact__description">
+<h2 class="page-header">{{ title }}</h2>
+<div class="contact-wrapper">
+  <div class="column description">
     <p>Fill out the form to get in touch. Or I've got other options 👇🏻</p>
     <ul>
       <li>Ping me on <a href="https://social.lol/@cory">Mastodon</a></li>
@@ -28,7 +28,7 @@ description: 'How to contact me.'
       <input type="email" name="email" placeholder="Email" required />
     </label>
     <textarea name="message" placeholder="Message" required></textarea>
-    <div class="flex--centered justify--centered">
+    <div class="flex-centered justify-centered">
       <button type="submit">Send message</button>
     </div>
   </form>

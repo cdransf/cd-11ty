@@ -1,25 +1,25 @@
 .post-graph {
   margin-top: var(--sizing-base);
   margin-bottom: var(--sizing-base);
-}
 
-.post-graph__wrapper {
-  display: flex;
-  align-items: center;
-  height: var(--sizing-3xl);
-  margin-bottom: var(--sizing-sm);
-}
+  & .wrapper {
+    display: flex;
+    align-items: center;
+    height: var(--sizing-3xl);
+    margin-bottom: var(--sizing-sm);
 
-.post-graph__progress {
-  background-color: var(--accent-color);
-  height: 100%;
-}
+    & .year {
+      font-family: var(--font-mono);
+    }
 
-.post-graph__year {
-  font-family: var(--font-mono);
-}
+    & .progress {
+      background-color: var(--accent-color);
+      height: 100%;
+    }
 
-.post-graph__progress,
-.post-graph__data {
-  margin-left: var(--sizing-sm);
+    & .progress,
+    & .data {
+      margin-left: var(--sizing-sm);
+    }
+  }
 }

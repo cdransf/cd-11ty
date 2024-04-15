@@ -6,13 +6,13 @@ permalink: /about.html
 {%- assign artist = music.artists | first -%}
 {%- assign book = books | first -%}
 {%- assign show = tv | first -%}
-<div class="avatar__wrapper flex--centered">
-  <div class="avatar__wrapper--interior">
+<div class="avatar-wrapper flex-centered">
+  <div class="interior">
   {%- capture about_alt -%}{{ meta.siteName }} - image by David Neal / @reverentgeek{%- endcapture -%}
   {% image 'https://coryd.dev/.netlify/images/?url=/assets/img/avatar.png&w=600', about_alt, '', 'eager' %}
   </div>
 </div>
-<h2 class="page__header text--centered">Hi, I'm Cory</h2>
+<h2 class="page-header text-centered">Hi, I'm Cory</h2>
 
 <strong class="highlight-text">I'm a software developer based in Camarillo, California</strong>. I enjoy hanging out with my beautiful family and 3 rescue dogs, technology, automation, [music](https://coryd.dev/now#artists), writing, [reading](https://coryd.dev/now#books), [tv](https://coryd.dev/now#tv) and [movies](https://coryd.dev/now#movies). Lately I've been{% if artist %} listening to a lot of <strong class="highlight-text">{{ artist.title }}</strong>,{% endif %} reading <strong class="highlight-text">{{ book.title }}</strong> and watching <strong class="highlight-text">{{ show.name }}</strong>.
 

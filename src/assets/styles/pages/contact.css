@@ -1,4 +1,4 @@
-.contact__wrapper {
+.contact-wrapper {
   display: flex;
   flex-direction: column;
 
@@ -7,24 +7,24 @@
     resize: none;
   }
 
-  & .column.contact__description p:first-child {
+  & .column.description p:first-child {
     margin-top: 0;
   }
 }
 
-.contact__success--header {
+.contact-success-header {
   margin: 0 0 var(--sizing-lg);
 }
 
 @media screen and (min-width: 768px) {
-  .contact__wrapper {
+  .contact-wrapper {
     flex-direction: row;
 
     & .column {
       width: 50%;
     }
 
-    & .column.contact__description {
+    & .column.description {
       padding-right: var(--sizing-xl);
     }
   }

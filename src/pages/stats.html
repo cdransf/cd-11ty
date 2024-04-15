@@ -9,7 +9,7 @@ permalink: /stats.html
 <p><strong>Top tags</strong></p>
 {% render "partials/tags.liquid", tags:collections.tagsSortedByCount %}
 <p><strong>Popular posts</strong></p>
-<ol class="link__list">
+<ol class="link-list">
   {% assign posts = collections.posts | getPopularPosts: analytics %}
   {% for post in posts limit: 10 %}
   <li>

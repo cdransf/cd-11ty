@@ -111,7 +111,7 @@ export default function Now(props) {
           <Reading books={books} />
           <Movies movies={movies} />
           <TV tv={tv} />
-          <p className="pt-8 text--centered text-xs text-gray-900 dark:text-gray-100">
+          <p className="pt-8 text-centered text-xs text-gray-900 dark:text-gray-100">
             (This is a{' '}
             <Link
               className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"

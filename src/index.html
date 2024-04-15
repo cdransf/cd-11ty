@@ -15,9 +15,9 @@ pagination:
     {{ post.date | date: "%B %e, %Y" }}
   </time>
   <a href="{{ post.url }}">
-    <h2 class="flex--centered">{{ post.data.title }}</h2>
+    <h2 class="flex-centered">{{ post.data.title }}</h2>
   </a>
-  <div class="text--small">{% render "partials/tags.liquid", tags:post.data.tags %}</div>
+  <div class="text-small">{% render "partials/tags.liquid", tags:post.data.tags %}</div>
   <span class="p-author h-card hidden">{{ meta.siteName }}</span>
   <div class="p-summary hidden">{{ post.data.post_excerpt }}</div>
   {{ post.data.post_excerpt | markdown }}

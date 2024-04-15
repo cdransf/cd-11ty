@@ -15,7 +15,7 @@ eleventyComputed:
     {{ post.date | date: "%B %e, %Y" }}
   </time>
   <a href="{{ post.url }}">
-    <h2 class="flex--centered">{{ post.data.title }}</h2>
+    <h2 class="flex-centered">{{ post.data.title }}</h2>
   </a>
   <p class="p-summary">{{ post.data.post_excerpt | markdown }}</p>
   <p><a href="{{ post.url }}">Read more →</a></p>

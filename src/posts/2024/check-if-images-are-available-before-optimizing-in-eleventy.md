@@ -99,7 +99,7 @@ export const img = async (
 
   const generatePlaceholder = async () => {
     return htmlmin.minify(
-      `<div class="flex--centered image__placeholder ${shape}">${icon}</div>`,
+      `<div class="flex-centered image__placeholder ${shape}">${icon}</div>`,
       { collapseWhitespace: true }
     );
   };

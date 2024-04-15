@@ -1,9 +1,9 @@
 {% if links.size > 0 %}
-<h2 id="links" class="link__list--header flex--centered">
+<h2 id="links" class="link-list-header flex-centered">
   {% tablericon "link" "Links" %}
   Recent links
 </h2>
-<ul class="link__list">
+<ul class="link-list">
   {% for link in links limit: 5 %}
     <li>
       <a href="{{link.url}}" title="{{link.title | escape}}">

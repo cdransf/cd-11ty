@@ -6,12 +6,12 @@ layout: default
 {% endcapture %}
 <script>{{ js }}</script>
 {{ content }}
-<div class="now__section--header-wrapper">
-  <h2 id="artists" class="now__section--header flex--centered">
+<div class="now-header-wrapper">
+  <h2 id="artists" class="now-header flex-centered">
     {% tablericon "microphone-2" "Artists" %}
     Artists
   </h2>
-  <div class="now__section--header-buttons client-side">
+  <div class="now-header-buttons client-side">
     <button class="small active" data-toggle="artists-window">This week</button>
     <button class="small secondary" data-toggle="artists-month">This month</button>
     <button class="small secondary" data-toggle="artists-three-months">3 months</button>
@@ -26,12 +26,12 @@ layout: default
 <div class="hidden" id="artists-three-months">
   {% render "partials/now/media-grid.liquid", data:musicCharts.threeMonthChart.artists, shape: "square", count: 8 %}
 </div>
-<div class="now__section--header-wrapper">
-  <h2 id="albums" class="now__section--header flex--centered">
+<div class="now-header-wrapper">
+  <h2 id="albums" class="now-header flex-centered">
     {% tablericon "vinyl" "Albums" %}
     Albums
   </h2>
-  <div class="now__section--header-buttons client-side">
+  <div class="now-header-buttons client-side">
     <button class="small active" data-toggle="albums-window">This week</button>
     <button class="small secondary" data-toggle="albums-month">This month</button>
     <button class="small secondary" data-toggle="albums-three-months">3 months</button>
@@ -46,12 +46,12 @@ layout: default
 <div class="hidden" id="albums-three-months">
   {% render "partials/now/media-grid.liquid", data:musicCharts.threeMonthChart.albums, shape: "square", count: 8 %}
 </div>
-<div class="now__section--header-wrapper">
-  <h2 id="tracks" class="now__section--header flex--centered">
+<div class="now-header-wrapper">
+  <h2 id="tracks" class="now-header flex-centered">
     {% tablericon "playlist" "Tracks" %}
     Tracks
   </h2>
-  <div class="now__section--header-buttons client-side">
+  <div class="now-header-buttons client-side">
     <button class="small active" data-toggle="tracks-recent">Recent</button>
     <button class="small secondary" data-toggle="tracks-window">This week</button>
     <button class="small secondary" data-toggle="tracks-month">This month</button>
@@ -71,22 +71,22 @@ layout: default
   {% render "partials/now/track-chart.liquid", data:musicCharts.threeMonthChart.topTracks.data, mostPlayed:musicCharts.threeMonthChart.topTracks.mostPlayed %}
 </div>
 {% render "partials/now/albumReleases.liquid", albumReleases:albumReleases %}
-<h2 id="books" class="now__section--header flex--centered">
+<h2 id="books" class="now-header flex-centered">
   {% tablericon "books" "Books" %}
   Books
 </h2>
 {% render "partials/now/media-grid.liquid", data:books, shape: "vertical", count: 6 %}
 {% render "partials/recent-links.liquid", links:links %}
-<h2 id="movies" class="now__section--header flex--centered">
+<h2 id="movies" class="now-header flex-centered">
   {% tablericon "movie" "Movies" %}
   Movies
 </h2>
 {% render "partials/now/media-grid.liquid", data:movies, icon: "movie", title: "Movies", shape: "vertical", count: 6 %}
-<h2 id="tv" class="now__section--header flex--centered">
+<h2 id="tv" class="now-header flex-centered">
   {% tablericon "device-tv" "TV" %}
   TV
 </h2>
 {% render "partials/now/media-grid.liquid", data:tv, icon: "device-tv", title: "TV", shape: "vertical", count: 6 %}
-<p class="now__explainer text--centered">
+<p class="now-explainer text-small text-centered">
   This is a <a href="https://nownownow.com/about">now page</a>, and if you have your own site, <a href="https://nownownow.com/about">you should make one too</a>.
 </p>

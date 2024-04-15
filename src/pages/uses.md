@@ -5,11 +5,11 @@ permalink: /uses.html
 description: 'Software, tools and services that I use regularly.'
 image: /assets/img/pages/uses.jpg
 ---
-<h2 class="page__header">{{ title }}</h2>
+<h2 class="page-header">{{ title }}</h2>
 
 Software and services that I use for work and my own enjoyment.
 
-{% image 'https://coryd.dev/assets/img/pages/uses.jpg', 'My desk', 'image__banner', 'eager' %}
+{% image 'https://coryd.dev/assets/img/pages/uses.jpg', 'My desk', 'image-banner', 'eager' %}
 
 <h3>Computer setup</h3>
 

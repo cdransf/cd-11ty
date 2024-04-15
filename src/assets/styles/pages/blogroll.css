@@ -1,4 +1,4 @@
-.blog--roll__icons {
+.blog-roll-icons {
   display: flex;
   flex-direction: row !important;
   gap: var(--sizing-xs);

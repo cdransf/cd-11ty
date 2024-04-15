@@ -5,7 +5,7 @@ pagination:
   data: links
   size: 30
 ---
-<ul class="link__list">
+<ul class="link-list">
   {% for link in pagination.items %}
     <li>
       <a href="{{ link.url }}">{{ link.title }}</a>

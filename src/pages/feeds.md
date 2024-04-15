@@ -5,7 +5,7 @@ permalink: /feeds.html
 description: 'Content feeds exposed by and generated from my site.'
 ---
 
-<h2 class="page__header">{{ title }}</h2>
+<h2 class="page-header">{{ title }}</h2>
 
 These are web feeds, also known as [RSS](https://en.wikipedia.org/wiki/RSS) or [Atom](https://en.wikipedia.org/wiki/Atom_(web_standard)) feeds. Subscribe by copying the URL from the address bar into your newsreader. Visit [About Feeds](https://aboutfeeds.com) to get started with newsreaders and subscribing. It's free.
 

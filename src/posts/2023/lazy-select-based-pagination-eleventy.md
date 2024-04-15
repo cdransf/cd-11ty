@@ -15,7 +15,7 @@ Given that I was already iterating through all pages in my posts collection, my 
   <div class="flex flex-row items-center">
     <select
       id="pagination"
-      class="block w-12 h-12 rounded-full text-white dark:text-gray-900 bg-blue-500 hover:bg-blue-500 dark:hover:bg-blue-300 mr-1 focus-visible:outline-none focus-visible:bg-blue-400 appearance-none text--centered"
+      class="block w-12 h-12 rounded-full text-white dark:text-gray-900 bg-blue-500 hover:bg-blue-500 dark:hover:bg-blue-300 mr-1 focus-visible:outline-none focus-visible:bg-blue-400 appearance-none text-centered"
       style="text-align-last:center">
       {% for pageEntry in pagination.pages %}
         <option {% if page.url == pagination.hrefs[forloop.index0] %}selected{% endif %} value="{{ forloop.index }}">{{ forloop.index }}</option>

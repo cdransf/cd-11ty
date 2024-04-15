@@ -4,9 +4,9 @@ schema: blog
 ---
 {% render "partials/header.liquid", meta: meta, page: page, nav: nav %}
 {%- capture postUrl %}{{ meta.url }}{{ page.url }}{% endcapture -%}
-<div class="default__wrapper">
+<div class="default-wrapper">
   <article class="h-entry">
-    <div class="flex--centered">
+    <div class="flex-centered">
       <time class="dt-published" datetime="{{ date }}">
         {{ date | date: "%B %e, %Y" }}
         <span class="client-side"> • </span>
@@ -14,7 +14,7 @@ schema: blog
       {% render "partials/share-button.liquid", url:postUrl, title:title, tagMap:collections.tagMap %}
     </div>
     <h2 class="p-name">{{ title }}</h2>
-    <div class="text--small">{% render "partials/tags.liquid", tags:tags %}</div>
+    <div class="text-small">{% render "partials/tags.liquid", tags:tags %}</div>
     <span class="p-author h-card hidden">{{ meta.author }}</span>
     <div class="p-summary hidden">{{ post_excerpt }}</div>
     <div class="e-content">

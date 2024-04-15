@@ -1,4 +1,4 @@
-.addon-links__wrapper {
+.addon-links {
   display: grid;
   gap: var(--sizing-sm);
   grid-template-columns: repeat(1,minmax(0,1fr));
@@ -11,13 +11,13 @@
     margin-top: var(--sizing-base);
   }
 
-  &.link__list {
+  &.link-list {
     margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .addon-links__wrapper {
+  .addon-links {
     grid-template-columns: repeat(2,minmax(0,1fr));
 
     & div:first-of-type {

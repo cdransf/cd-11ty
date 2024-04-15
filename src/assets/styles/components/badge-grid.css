@@ -1,4 +1,4 @@
-.badge__grid {
+.badge-grid {
   display: grid;
   gap: var(--sizing-md);
   grid-template-columns: repeat(3,minmax(0,1fr));
@@ -14,7 +14,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .badge__grid {
+  .badge-grid {
     grid-template-columns: repeat(4,minmax(0,1fr));
   }
 }

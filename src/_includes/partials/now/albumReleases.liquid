@@ -1,9 +1,9 @@
 {% if albumReleases.size > 0 %}
-  <h2 id="album-releases" class="now__section--header flex--centered">
+  <h2 id="album-releases" class="now-header flex-centered">
     {% tablericon "calendar-time" "Anticipated albums" %}
     Anticipated albums
   </h2>
-  <ul class="link__list">
+  <ul class="link-list">
     {% for album in albumReleases %}
       <li>
         <strong>{{ album.date | readableDate }}: </strong>

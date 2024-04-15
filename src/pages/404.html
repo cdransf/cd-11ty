@@ -4,13 +4,13 @@ layout: default
 permalink: /404.html
 image: /assets/img/404.jpg
 ---
-<div class="four-oh-four__wrapper">
-  {% image 'https://coryd.dev/.netlify/images/?url=/assets/img/404.jpg&w=1000', title, 'image__banner', 'eager' %}
-  <div class="text--centered">
-    <h2 class="page__header">{{ title }}</h2>
+<div class="four-oh-four-wrapper">
+  {% image 'https://coryd.dev/.netlify/images/?url=/assets/img/404.jpg&w=1000', title, 'image-banner', 'eager' %}
+  <div class="text-centered">
+    <h2 class="page-header">{{ title }}</h2>
     What kind of idiots do you have working here? <a href="/">Hurry up and skip out on the room service bill!</a>
   </div>
-  <hr class="large__spacing" />
+  <hr class="large-spacing" />
   {% render "partials/tags.liquid", tags:collections.tagsSortedByCount, hasSpace:true %}
   {% render "partials/addon-links.liquid", posts:collections.posts, analytics:analytics, links:links %}
 </div>

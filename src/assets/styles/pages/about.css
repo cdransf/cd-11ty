@@ -2,15 +2,15 @@
   --avatar-size: 16rem;
 }
 
-.avatar__wrapper {
+.avatar-wrapper {
   margin-bottom: var(--sizing-xl);
   width: 100%;
   justify-content: center;
   overflow: hidden;
 
-  & .avatar__wrapper--interior {
+  & .interior {
     width: var(--avatar-size);
-    height: var(--avatar-size);;
+    height: var(--avatar-size);
     border: 1px solid var(--accent-color);
     border-radius: var(--rounded-full);
     display: flex;

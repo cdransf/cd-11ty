@@ -47,11 +47,11 @@ This fetches links from my archive (so that it's much more likely that I've read
 {% raw %}
 ```liquid
 {% if links.size > 0 %}
-  <h2 class="flex--centered">
+  <h2 class="flex-centered">
     {% tablericon "link" "Links" %}
     Links
   </h2>
-  <ul class="link__list">
+  <ul class="link-list">
     {% for link in links limit: 5 %}
       <li>
         <a class="no-underline" href="{{link.url}}" title="{{link.title | escape}}">
@@ -78,7 +78,7 @@ pagination:
 {% for link in pagination.items %}
 <article class="h-entry">
   <a class="no-underline" href="{{ link.url }}">
-    <h2 class="flex--centered">{{ link.title }}</h2>
+    <h2 class="flex-centered">{{ link.title }}</h2>
   </a>
   <time class="dt-published" datetime="{{ link.date }}">
     {{ link.date | date: "%m.%Y" }}

@@ -4,11 +4,11 @@ layout: default
 permalink: /referrals.html
 description: 'Referral links for services that I use.'
 ---
-<h2 class="page__header">{{ title }}</h2>
+<h2 class="page-header">{{ title }}</h2>
 
 Referral links for services I use. I save some money, and you do as well if you choose to use them.
 
-<ul>
+<ul class="link-list">
   <li><a onclick="clicky?.log('/referrals', 'Clicky referral', 'click')" href="https://clicky.com/101449513">Clicky</a></li>
   <li><a onclick="clicky?.log('/referrals','NextDNS referral', 'click')" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a></li>
   <li><a onclick="clicky?.log('/referrals','DNSimple referral', 'click')" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a></li>
