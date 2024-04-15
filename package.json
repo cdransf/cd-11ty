@@ -53,6 +53,7 @@
     "markdown-it-footnote": "^4.0.0",
     "sanitize-html": "^2.13.0",
     "slugify": "^1.6.6",
+    "string-sanitizer": "^2.0.2",
     "terser": "^5.30.1",
     "writing-stats": "^1.0.6"
   }

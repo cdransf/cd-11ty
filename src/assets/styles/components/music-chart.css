@@ -1,4 +1,4 @@
-.track__chart {
+.music-chart {
   & .item {
     justify-content: space-between;
 
@@ -40,13 +40,13 @@
     }
 
     & .title,
-    & .artists {
+    & .subtext {
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
     }
 
-    & .artists,
+    & .subtext,
     & .timestamp {
       font-size: var(--font-size-sm);
       line-height: var(--line-height-sm);
@@ -82,7 +82,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .track__chart .item .meta-text {
+  .music-chart .item .meta-text {
     max-width: 85%;
   }
 }

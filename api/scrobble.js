@@ -1,7 +1,7 @@
 import { getStore } from '@netlify/blobs'
 import { DateTime } from 'luxon'
 
-const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '').replace(/A©|Ã©/g, 'e');
+const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '')
 
 const weekKey = () => {
   const currentDate = DateTime.now();

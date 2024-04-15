@@ -38,4 +38,4 @@
 @import url('./components/progress-bar.css') layer(components.media);
 @import url('./components/share-button.css') layer(components);
 @import url('./components/theme-toggle.css') layer(components);
-@import url('./components/track-chart.css') layer(components.media);
+@import url('./components/music-chart.css') layer(components.media);

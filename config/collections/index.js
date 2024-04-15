@@ -34,6 +34,10 @@ export const searchIndex = (collection) => {
   return searchIndex
 }
 
+export const artistsIndex = (collection) => collection.getAll()[0].data.musicCharts.year.artists
+
+export const albumsIndex = (collection) => collection.getAll()[0].data.musicCharts.year.albums
+
 export const tagList = (collection) => {
   const tagsSet = new Set()
   collection.getAll().forEach((item) => {

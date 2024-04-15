@@ -1,5 +1,5 @@
 {% if data.size > 0 %}
-<div class="track__chart">
+<div class="music-chart">
   {% for item in data limit: 10 %}
   {% capture alt %}{{ item.track }} by {{ item.track }}{% endcapture %}
     <div class="item">
@@ -7,7 +7,7 @@
         {% image item.image, alt, '', 'lazy' %}
         <div class="meta-text">
           <div class="title">{{ item.track }}</div>
-          <div class="artists">
+          <div class="subtext">
             <a href="{{ item.url }}">{{ item.artist }}</a>
           </div>
         </div>

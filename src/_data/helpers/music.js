@@ -2,7 +2,7 @@ import artistCapitalizationPatches from '../json/artist-capitalization-patches.j
 
 export const artistCapitalization = (artist) => artistCapitalizationPatches[artist?.toLowerCase()] || artist
 
-const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '').replace(/A©|Ã©/g, 'e');
+const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '')
 const artistSanitizedKey = (artist) => `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}`
 const albumSanitizedKey = (album) => `${sanitizeMediaString(album).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
       , '').replace(/\s+/g, '-').toLowerCase())}`
