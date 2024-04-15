@@ -12537,7 +12537,7 @@
     "title": "📝: You can choose to be kind",
     "url": "https://coryd.dev/posts/2024/you-can-choose-to-be-kind/",
     "content_text": "📝: You can choose to be kind #Health https://coryd.dev/posts/2024/you-can-choose-to-be-kind/",
-    "date_published": "Wed, 17 Apr 2024 02:00:00 GMT",
+    "date_published": "Mon, 15 Apr 2024 02:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112272651482178343"
     ],
@@ -12549,6 +12549,17 @@
     "url": "https://bjhess.com/posts/you-re-a-blogger-not-an-essayist",
     "content_text": "🔗: You’re a Blogger, Not an Essayist #Tech #Blogging https://bjhess.com/posts/you-re-a-blogger-not-an-essayist",
     "date_published": "Sun, 14 Apr 2024 14:56:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112272874544212620"
+    ],
+    "lastTootTimestamp": 1713148110182
+  },
+  "https://coryd.dev/posts/2024/model-behavior/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9tb2RlbC1iZWhhdmlvci8=",
+    "title": "📝: Model behavior",
+    "url": "https://coryd.dev/posts/2024/model-behavior/",
+    "content_text": "📝: Model behavior #Tech #AI https://coryd.dev/posts/2024/model-behavior/",
+    "date_published": "Mon, 15 Apr 2024 03:00:00 GMT",
     "toots": []
   }
 }
