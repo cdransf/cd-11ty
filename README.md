@@ -13,9 +13,9 @@ This is the code for my personal website and portfolio. Built using [11ty](https
 ## 📝 Recent posts
 
 <!-- BLOGPOSTS:START -->
+- [Model behavior](https://coryd.dev/posts/2024/model-behavior/)
+- [You can choose to be kind](https://coryd.dev/posts/2024/you-can-choose-to-be-kind/)
 - [We've stopped making things anyone wants](https://coryd.dev/posts/2024/weve-stopped-making-things-anyone-wants/)
 - [Don’t be afraid to admit when you don’t know something](https://coryd.dev/posts/2024/dont-be-afraid-to-admin-when-you-dont-know-something/)
 - [A retrospective on a year without streaming music](https://coryd.dev/posts/2024/a-retrospective-on-a-year-without-streaming-music/)
-- [Data collection should always be opt in](https://coryd.dev/posts/2024/data-collection-should-always-be-opt-in/)
-- [AI cannot and should not replace search](https://coryd.dev/posts/2024/ai-cannot-and-should-not-replace-search/)
 <!-- BLOGPOSTS:END -->
