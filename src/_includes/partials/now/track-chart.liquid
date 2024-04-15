@@ -2,12 +2,12 @@
 <div class="track__chart">
   {% for item in data limit: 10 %}
   {%- assign percentage = item.plays | calculatePlayPercentage: mostPlayed -%}
-  <div class="track__chart--item">
-    <div class="track__chart--presentation">
-      <div class="track__chart--count">{{ forloop.index }}.</div>
-      <div class="track__chart--info">
-        <div class="track__chart--title">{{ item.title }}</div>
-        <div class="track__chart--artists">
+  <div class="item">
+    <div class="presentation">
+      <div class="count">{{ forloop.index }}.</div>
+      <div class="info">
+        <div class="title">{{ item.title }}</div>
+        <div class="artists">
           <a href="{{ item.url }}">{{ item.artist }}</a> • {{ item.plays }} plays
         </div>
       </div>

@@ -2,17 +2,17 @@
 <div class="track__chart">
   {% for item in data limit: 10 %}
   {% capture alt %}{{ item.track }} by {{ item.track }}{% endcapture %}
-    <div class="track__chart--item">
-      <div class="track__chart--meta">
+    <div class="item">
+      <div class="meta">
         {% image item.image, alt, '', 'lazy' %}
-        <div class="track__chart--meta--text">
-          <div class="track__chart--title">{{ item.track }}</div>
-          <div class="track__chart--artists">
+        <div class="meta-text">
+          <div class="title">{{ item.track }}</div>
+          <div class="artists">
             <a href="{{ item.url }}">{{ item.artist }}</a>
           </div>
         </div>
       </div>
-      <div class="track__chart--timestamp">
+      <div class="timestamp">
         {{ item.timestamp | date: "%B %-d, %-I:%M%p", "America/Los_Angeles" }}
       </div>
     </div>

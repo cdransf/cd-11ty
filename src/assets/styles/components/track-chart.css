@@ -1,91 +1,88 @@
-.track__chart--item {
-  justify-content: space-between;
+.track__chart {
+  & .item {
+    justify-content: space-between;
 
-  &:not(:last-of-type) {
-    margin-bottom: var(--sizing-md);
+    &:not(:last-of-type) {
+      margin-bottom: var(--sizing-md);
+    }
+
+    & .progress-bar__wrapper {
+      max-width: 40%;
+      margin-left: var(--sizing-lg);
+    }
+
+    & img {
+      border: 1px solid var(--accent-color);
+      border-radius: var(--rounded);
+    }
+
+    & img,
+    & picture {
+      width: calc(var(--sizing-3xl) * 1.5);
+      height: calc(var(--sizing-3xl) * 1.5);
+    }
+
+    & .meta {
+      justify-content: start;
+      gap: var(--sizing-md);
+      max-width: calc(70% - var(--sizing-lg));
+    }
+
+    & .meta-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      max-width: 80%;
+    }
+
+    & .title {
+      font-weight: var(--font-weight-bold);
+    }
+
+    & .title,
+    & .artists {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    & .artists,
+    & .timestamp {
+      font-size: var(--font-size-sm);
+      line-height: var(--line-height-sm);
+    }
+
+    & .timestamp {
+      margin-left: var(--sizing-lg);
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    & .presentation {
+      display: flex;
+      flex-direction: row;
+      max-width: calc(60% - var(--sizing-lg));
+    }
+
+    & .count {
+      margin-right: var(--sizing-sm);
+    }
+
+    & .info {
+      max-width: calc(100% - var(--sizing-lg));
+    }
   }
 
-  & .progress-bar__wrapper {
-    max-width: 40%;
-    margin-left: var(--sizing-lg);
+  & .item,
+  & .meta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
-}
-
-.track__chart--item,
-.track__chart--meta {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.track__chart--presentation {
-  display: flex;
-  flex-direction: row;
-  max-width: calc(60% - var(--sizing-lg));
-}
-
-.track__chart--count {
-  margin-right: var(--sizing-sm);
-}
-
-.track__chart--info {
-  max-width: calc(100% - var(--sizing-lg));
-}
-
-.track__chart--title {
-  font-weight: var(--font-weight-bold);
-}
-
-.track__chart--title,
-.track__chart--artists {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.track__chart--artists,
-.track__chart--timestamp {
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-sm);
-}
-
-.track__chart--timestamp {
-  white-space: nowrap;
-}
-
-.track__chart--item {
-  & img {
-    border: 1px solid var(--accent-color);
-    border-radius: var(--rounded);
-  }
-
-  & img,
-  & picture {
-    width: calc(var(--sizing-3xl) * 1.5);
-    height: calc(var(--sizing-3xl) * 1.5);
-  }
-}
-
-.track__chart--meta {
-  justify-content: start;
-  gap: var(--sizing-md);
-  max-width: calc(70% - var(--sizing-lg));
-}
-
-.track__chart--meta--text {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  max-width: 80%;
-}
-
-.track__chart--timestamp {
-  margin-left: var(--sizing-lg);
-  text-align: right;
 }
 
 @media screen and (min-width: 768px) {
-  .track__chart--meta--text {
+  .track__chart .item .meta-text {
     max-width: 85%;
   }
 }
