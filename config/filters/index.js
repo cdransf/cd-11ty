@@ -43,6 +43,10 @@ export default {
     const normalizedPage = page.includes('.html') ? page.replace('.html', '/') : page
     return !!normalizedPage && normalizedPage.includes(category) && !/\d+/.test(normalizedPage);
   },
+  isPost: (url) => {
+    if (url.includes('post')) return true;
+    return false
+  },
 
   // analytics
   getPopularPosts: (posts, analytics) => {
