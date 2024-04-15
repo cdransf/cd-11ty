@@ -1,6 +1,7 @@
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import tablerIcons from '@cdransf/eleventy-plugin-tabler-icons'
 import postGraph from '@rknightuk/eleventy-plugin-post-graph'
+import lightningCSS from '@11tyrocks/eleventy-plugin-lightningcss'
 
 import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
@@ -13,8 +14,6 @@ import { svgToJpeg } from './config/events/index.js'
 import { minifyJsComponents } from './config/events/index.js'
 import { searchIndex, tagList, tagMap, postStats, tagsSortedByCount } from './config/collections/index.js'
 import { img } from './config/shortcodes/index.js'
-
-import { execSync } from 'child_process'
 
 // load .env
 import dotenvFlow from 'dotenv-flow'
@@ -40,6 +39,7 @@ export default async function (eleventyConfig) {
     highlightColorDark: '#60a5fa',
     textColorDark: '#fff',
   })
+  eleventyConfig.addPlugin(lightningCSS)
 
   // quiet build output
   eleventyConfig.setQuietMode(true)
