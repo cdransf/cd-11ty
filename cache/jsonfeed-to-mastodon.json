@@ -12505,7 +12505,10 @@
     "url": "https://scottwillsey.com/small-web/",
     "content_text": "🔗: Small Web, Indie Web #Tech #Blogging #IndieWeb #SmallWeb https://scottwillsey.com/small-web/",
     "date_published": "Sat, 13 Apr 2024 23:01:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112272570126956094"
+    ],
+    "lastTootTimestamp": 1713143465132
   },
   "https://trakt.tv/movies/road-house-2024": {
     "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvcm9hZC1ob3VzZS0yMDI0",
