@@ -15,6 +15,7 @@ layout: default
     <button class="small active" data-toggle="artists-window">This week</button>
     <button class="small secondary" data-toggle="artists-month">This month</button>
     <button class="small secondary" data-toggle="artists-three-months">3 months</button>
+    <button class="small secondary" data-toggle="artists-year">This year</button>
   </div>
 </div>
 <div id="artists-window">
@@ -24,7 +25,10 @@ layout: default
   {% render "partials/now/media-grid.liquid", data:musicCharts.month.artists, shape: "square", count: 8 %}
 </div>
 <div class="hidden" id="artists-three-months">
-  {% render "partials/now/media-grid.liquid", data:musicCharts.threeMonthChart.artists, shape: "square", count: 8 %}
+  {% render "partials/now/media-grid.liquid", data:musicCharts.threeMonth.artists, shape: "square", count: 8 %}
+</div>
+<div class="hidden" id="artists-year">
+  {% render "partials/now/media-grid.liquid", data:musicCharts.year.artists, shape: "square", count: 8 %}
 </div>
 <div class="now-header-wrapper">
   <h2 id="albums" class="now-header flex-centered">
@@ -35,6 +39,7 @@ layout: default
     <button class="small active" data-toggle="albums-window">This week</button>
     <button class="small secondary" data-toggle="albums-month">This month</button>
     <button class="small secondary" data-toggle="albums-three-months">3 months</button>
+    <button class="small secondary" data-toggle="albums-year">This year</button>
   </div>
 </div>
 <div id="albums-window">
@@ -44,7 +49,10 @@ layout: default
   {% render "partials/now/media-grid.liquid", data:musicCharts.month.albums, shape: "square", count: 8 %}
 </div>
 <div class="hidden" id="albums-three-months">
-  {% render "partials/now/media-grid.liquid", data:musicCharts.threeMonthChart.albums, shape: "square", count: 8 %}
+  {% render "partials/now/media-grid.liquid", data:musicCharts.threeMonth.albums, shape: "square", count: 8 %}
+</div>
+<div class="hidden" id="albums-year">
+  {% render "partials/now/media-grid.liquid", data:musicCharts.year.albums, shape: "square", count: 8 %}
 </div>
 <div class="now-header-wrapper">
   <h2 id="tracks" class="now-header flex-centered">
@@ -56,6 +64,7 @@ layout: default
     <button class="small secondary" data-toggle="tracks-window">This week</button>
     <button class="small secondary" data-toggle="tracks-month">This month</button>
     <button class="small secondary" data-toggle="tracks-three-months">3 months</button>
+    <button class="small secondary" data-toggle="tracks-year">This year</button>
   </div>
 </div>
 <div id="tracks-recent">
@@ -68,7 +77,10 @@ layout: default
   {% render "partials/now/track-chart.liquid", data:musicCharts.month.topTracks.data, mostPlayed:musicCharts.month.topTracks.mostPlayed %}
 </div>
 <div class="hidden" id="tracks-three-months">
-  {% render "partials/now/track-chart.liquid", data:musicCharts.threeMonthChart.topTracks.data, mostPlayed:musicCharts.threeMonthChart.topTracks.mostPlayed %}
+  {% render "partials/now/track-chart.liquid", data:musicCharts.threeMonth.topTracks.data, mostPlayed:musicCharts.threeMonth.topTracks.mostPlayed %}
+</div>
+<div class="hidden" id="tracks-year">
+  {% render "partials/now/track-chart.liquid", data:musicCharts.year.topTracks.data, mostPlayed:musicCharts.year.topTracks.mostPlayed %}
 </div>
 {% render "partials/now/albumReleases.liquid", albumReleases:albumReleases %}
 <h2 id="books" class="now-header flex-centered">
