@@ -12528,5 +12528,24 @@
     "content_text": "🔗: Blockin' bots on Netlify #AI #WebDev https://www.jeremiak.com/blog/block-bots-netlify-edge-functions/",
     "date_published": "Sun, 14 Apr 2024 13:43:00 GMT",
     "toots": []
+  },
+  "https://coryd.dev/posts/2024/you-can-choose-to-be-kind/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC95b3UtY2FuLWNob29zZS10by1iZS1raW5kLw==",
+    "title": "📝: You can choose to be kind",
+    "url": "https://coryd.dev/posts/2024/you-can-choose-to-be-kind/",
+    "content_text": "📝: You can choose to be kind #Health https://coryd.dev/posts/2024/you-can-choose-to-be-kind/",
+    "date_published": "Wed, 17 Apr 2024 02:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112272651482178343"
+    ],
+    "lastTootTimestamp": 1713144706499
+  },
+  "https://bjhess.com/posts/you-re-a-blogger-not-an-essayist": {
+    "id": "aHR0cHM6Ly9iamhlc3MuY29tL3Bvc3RzL3lvdS1yZS1hLWJsb2dnZXItbm90LWFuLWVzc2F5aXN0",
+    "title": "🔗: You’re a Blogger, Not an Essayist",
+    "url": "https://bjhess.com/posts/you-re-a-blogger-not-an-essayist",
+    "content_text": "🔗: You’re a Blogger, Not an Essayist #Tech #Blogging https://bjhess.com/posts/you-re-a-blogger-not-an-essayist",
+    "date_published": "Sun, 14 Apr 2024 14:56:00 GMT",
+    "toots": []
   }
 }
