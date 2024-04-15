@@ -62,7 +62,13 @@ export const onPreBuild = async ({ constants }) => {
   }
 
   for (const key of yearKeys) {
-    const scrobbleData = await scrobbles.get(key, { type: 'json'})
+    let scrobbleData;
+    try {
+      scrobbleData = await scrobbles?.get(key, { type: 'json'})
+    } catch (error) {
+      console.log("Error: can't get more scrobbles.")
+      break;
+    }
     yearChartData['data'].push(...scrobbleData['data'])
   }
 
