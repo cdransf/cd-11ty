@@ -9,7 +9,7 @@ link-peek:defined figure {
   gap: 1rem;
   max-inline-size: max-content;
   border: 1px solid var(--gray-light);
-  border-radius: var(--sizing-xs);
+  border-radius: var(--rounded);
   padding: 1rem;
   margin: 0 0 var(--sizing-base);
   font-size: var(--font-size-sm);
@@ -32,5 +32,5 @@ link-peek img[data-key="data.logo.url"] {
 link-peek img[data-key="data.image.url"] {
   max-inline-size: 100%;
   block-size: auto;
-  border-radius: var(--sizing-xs);
+  border-radius: var(--rounded);
 }

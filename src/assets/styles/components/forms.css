@@ -14,7 +14,7 @@ textarea {
   padding: var(--sizing-sm);
   font-size: var(--font-size-base);
   width: 100%;
-  border-radius: var(--sizing-xs);
+  border-radius: var(--rounded);
   outline: none;
   margin-bottom: var(--sizing-base);
   font-weight: var(--font-weight-base);

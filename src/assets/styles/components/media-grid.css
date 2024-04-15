@@ -84,7 +84,7 @@
 
 .media__grid img {
   border: 1px solid var(--accent-color);
-  border-radius: var(--sizing-xs);
+  border-radius: var(--rounded);
   transition-property: border-color;
   transition-timing-function: var(--transition-ease-in-out);
   transition-duration: 300ms;
