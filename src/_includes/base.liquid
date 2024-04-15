@@ -2,8 +2,10 @@
 {%- capture pageTitle -%}
   {% if page.url | isPost %}
     {{ title }}
+  {% elsif title %}
+    {{ title }} • {{ meta.siteName }}
   {% else %}
-    {{ title }} • {{meta.siteName}}
+    {{ meta.siteName }}
   {% endif %}
 {%- endcapture -%}
 <!doctype html>
