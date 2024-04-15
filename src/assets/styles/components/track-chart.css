@@ -49,6 +49,10 @@
   line-height: var(--line-height-sm);
 }
 
+.track__chart--timestamp {
+  white-space: nowrap;
+}
+
 .track__chart--item {
   & img {
     border: 1px solid var(--accent-color);
