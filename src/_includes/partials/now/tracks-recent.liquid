@@ -1,7 +1,7 @@
 {% if data.size > 0 %}
 <div class="music-chart">
   {% for item in data limit: 10 %}
-  {% capture alt %}{{ item.track }} by {{ item.track }}{% endcapture %}
+  {% capture alt %}{{ item.track | escape }} by {{ item.artist }}{% endcapture %}
     <div class="item">
       <div class="meta">
         {% image item.image, alt, '', 'lazy' %}
