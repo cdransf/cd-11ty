@@ -9,7 +9,7 @@ webcare-webshare {
     cursor: pointer;
 
     & > svg {
-      stroke: var(--gray-dark) !important;
+      stroke: var(--gray-dark);
       cursor: pointer;
     }
   }
