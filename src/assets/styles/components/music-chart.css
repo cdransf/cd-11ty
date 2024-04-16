@@ -55,6 +55,7 @@
     & .timestamp {
       margin-left: var(--sizing-lg);
       text-align: right;
+      white-space: nowrap;
     }
 
     & .presentation {
