@@ -12,7 +12,7 @@ import filters from './config/filters/index.js'
 import { slugifyString } from './config/utils/index.js'
 import { svgToJpeg } from './config/events/index.js'
 import { minifyJsComponents } from './config/events/index.js'
-import { searchIndex, tagList, tagMap, postStats, tagsSortedByCount, artistsIndex, albumsIndex } from './config/collections/index.js'
+import { searchIndex, tagList, tagMap, postStats, tagsSortedByCount } from './config/collections/index.js'
 import { img } from './config/shortcodes/index.js'
 
 // load .env
@@ -93,8 +93,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('tagMap', tagMap)
   eleventyConfig.addCollection('postStats', postStats)
   eleventyConfig.addCollection('tagsSortedByCount', tagsSortedByCount)
-  eleventyConfig.addCollection('artistsIndex', artistsIndex)
-  eleventyConfig.addCollection('albumsIndex', albumsIndex)
 
   const md = markdownIt({ html: true, linkify: true })
   md.use(markdownItAnchor, {
