@@ -3,7 +3,7 @@
   gap: var(--sizing-sm);
   grid-template-columns: repeat(1,minmax(0,1fr));
 
-  & h2 {
+  & div > h2 {
     margin-top: 0;
   }
 
@@ -20,12 +20,8 @@
   .addon-links {
     grid-template-columns: repeat(2,minmax(0,1fr));
 
-    & div:first-of-type {
-      margin-right: var(--sizing-lg);
-    }
-
-    & div h2 {
-      margin-top: 0 !important;
+    & div:last-of-type h2 {
+      margin-top: 0;
     }
   }
 }
