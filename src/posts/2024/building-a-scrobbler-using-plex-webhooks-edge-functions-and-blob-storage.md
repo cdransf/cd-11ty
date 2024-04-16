@@ -9,7 +9,7 @@ I've written before about [embedding music into my site](https://coryd.dev/posts
 
 I could have kept depending on Last.fm and — don't get me wrong — I love Last.fm. It's one of those valuable, legacy services that's hanging on with a rich user base and historical recommendations. I'm going to keep scrobbling data there and to ListenBrainz[^1].
 
-{% image 'https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/scrobbler.png&w=1000', 'A diagram of the scrobbling architecture', 'image-banner', 'eager' %}
+{% image 'https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/blog/scrobbler.png&w=1000', 'A diagram of the scrobbling architecture', 'image-banner', 'eager' %}
 
 What I've long wanted is something that sits on infrastructure I control, stores my own data and lets me present roughly the same data. Given that Plex will issue outbound webhooks, I thought I'd set up an edge function over at Netlify and point a webhook at it to see what I could do with the inbound payload. What Plex sends is fairly lightweight and ended up needing to be read in from form data on the `POST`, but it was enough to work with.
 
