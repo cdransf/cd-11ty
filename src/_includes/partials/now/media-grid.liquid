@@ -1,10 +1,10 @@
 {% if data.size > 0 %}
   {% assign media = data | normalizeMedia %}
-  <div class="media__grid {% if shape == 'square' %}square{% else %}vertical{% endif %}">
+  <div class="media-grid {% if shape == 'square' %}square{% else %}vertical{% endif %}">
     {% for item in media limit: count %}
       {% assign alt = item.alt | strip | escape %}
       <a href="{{ item.url | stripUtm }}" title="{{ alt }}">
-        <div class="item__wrapper{% if item.subtext %} shadow{% endif %}">
+        <div class="item-wrapper{% if item.subtext %} shadow{% endif %}">
           <div class="meta-text">
             {% if item.title %}
               <div class="header">{{ item.title }}</div>

@@ -25,7 +25,7 @@
   justify-content: space-between;
 }
 
-.media__grid {
+.media-grid {
   display: grid;
   gap: var(--sizing-sm);
 
@@ -47,7 +47,7 @@
     }
   }
 
-  & .item__wrapper {
+  & .item-wrapper {
     position: relative;
 
     &.shadow picture::after {
@@ -58,7 +58,7 @@
       left: 1px;
       border-radius: calc(var(--sizing-xs) * .85);
       box-shadow: inset 0 -70px 50px -40px #000;
-      width: 100%;
+      width: calc(100% - 2px);
       height: calc(100% - 1px);
     }
 
