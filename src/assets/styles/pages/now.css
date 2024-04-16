@@ -14,14 +14,6 @@
   }
 }
 
-.now-header {
-  margin: var(--sizing-3xl) 0 var(--sizing-lg);
-}
-
-.default-wrapper > .now-header:first-of-type {
-  margin-top: 0 !important;
-}
-
 .link-list {
   margin-top: 0;
 }

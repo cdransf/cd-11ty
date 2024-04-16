@@ -7,6 +7,10 @@
   margin: var(--sizing-3xl) 0 var(--sizing-lg);
 }
 
+.default-wrapper > .now-header:first-of-type {
+  margin-top: 0;
+}
+
 .now-header-buttons {
   margin: 0 0 var(--sizing-lg);
 

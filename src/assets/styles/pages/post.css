@@ -9,8 +9,8 @@ hr.footnotes-sep {
 }
 
 .footnotes-list {
-  margin-bottom: 0 !important;
-  padding-left: 0 !important;
+  margin-bottom: 0;
+  padding-left: 0;
 
   & li:last-child {
     margin-bottom: 0;
