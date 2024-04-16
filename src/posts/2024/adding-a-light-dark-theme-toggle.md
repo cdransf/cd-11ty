@@ -10,7 +10,7 @@ I built the button as a short Liquid partial:
 
 {% raw %}
 ```liquid
-<li class="theme__toggle client-side">
+<li class="theme-toggle client-side">
   <span class="placeholder">
     {% tablericon "placeholder" "Toggle theme placeholder" %}
   </span>
@@ -70,7 +70,7 @@ With the following JavaScript set in `assets/scripts/index.js` to add the `click
 
 ```javascript
 ;(async function() {
-  const btn = document.querySelector('.theme__toggle');
+  const btn = document.querySelector('.theme-toggle');
   btn.addEventListener('click', () => {
     document.body.classList.toggle('theme__light');
     document.body.classList.toggle('theme__dark');
@@ -95,36 +95,36 @@ Finally, the theme is updated based on the body class applied by the JavaScript,
 
 ```css
 /* theme toggle */
-.theme__toggle,
-.theme__toggle svg {
+.theme-toggle,
+.theme-toggle svg {
   cursor: pointer;
 }
 
-.theme__toggle > .light svg { stroke: var(--sun) !important; }
-.theme__toggle > .dark svg { stroke: var(--moon) !important; }
+.theme-toggle > .light svg { stroke: var(--sun) !important; }
+.theme-toggle > .dark svg { stroke: var(--moon) !important; }
 
-.theme__toggle > .light ,
-.theme__toggle > .dark {
+.theme-toggle > .light ,
+.theme-toggle > .dark {
   display: none;
 }
 
-:is(.theme__light, .theme__dark) .theme__toggle > .placeholder {
+:is(.theme__light, .theme__dark) .theme-toggle > .placeholder {
   display: none;
 }
 
-.theme__dark .theme__toggle > .light {
+.theme__dark .theme-toggle > .light {
   display: inline;
 }
 
-.theme__dark .theme__toggle > .dark {
+.theme__dark .theme-toggle > .dark {
   display: none;
 }
 
-.theme__light .theme__toggle > .light {
+.theme__light .theme-toggle > .light {
   display: none;
 }
 
-.theme__light .theme__toggle > .dark {
+.theme__light .theme-toggle > .dark {
   display: inline;
 }
 ...

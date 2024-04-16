@@ -1,4 +1,4 @@
-.theme__toggle {
+.theme-toggle {
   background: transparent;
   padding: 0;
 
@@ -21,21 +21,21 @@
 }
 
 .theme__dark {
-  & .theme__toggle > .light {
+  & .theme-toggle > .light {
     display: inline;
   }
 
-  & .theme__toggle > .dark {
+  & .theme-toggle > .dark {
     display: none;
   }
 }
 
 .theme__light {
-  & .theme__toggle > .light {
+  & .theme-toggle > .light {
     display: none;
   }
 
-  & .theme__toggle > .dark {
+  & .theme-toggle > .dark {
     display: inline;
   }
 }
