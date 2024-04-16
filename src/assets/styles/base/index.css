@@ -72,6 +72,14 @@ blockquote {
   stroke-width: var(--stroke-width-bold) !important;
 }
 
+a.linked-header {
+  display: flex;
+
+  & svg {
+    stroke: var(--accent-color);
+  }
+}
+
 sup.footnote-ref {
   line-height: var(--line-height-xs);
 }
