@@ -32,10 +32,10 @@
 @import url('./components/forms.css') layer(components);
 @import url('./components/link-peek.css') layer(components);
 @import url('./components/mastodon-post.css') layer(components);
-@import url('./components/media-grid.css') layer(components.media);
+@import url('./components/media-grid.css') layer(components);
 @import url('./components/paginator.css') layer(components);
 @import url('./components/post-graph.css') layer(components);
-@import url('./components/progress-bar.css') layer(components.media);
+@import url('./components/progress-bar.css') layer(components);
 @import url('./components/share-button.css') layer(components);
 @import url('./components/theme-toggle.css') layer(components);
-@import url('./components/music-chart.css') layer(components.media);
+@import url('./components/music-chart.css') layer(components);

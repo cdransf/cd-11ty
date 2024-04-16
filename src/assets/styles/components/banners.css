@@ -7,7 +7,7 @@
   & p {
     font-size: var(--font-size-sm);
     line-height: var(--line-height-sm);
-    margin: 0 !important;
+    margin: 0;
 
     & > svg {
       display: inline;

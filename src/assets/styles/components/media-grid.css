@@ -11,10 +11,10 @@
   margin: 0 0 var(--sizing-lg);
 
   & > button {
-    margin-bottom: var(--sizing-sm) !important;
+    margin-bottom: var(--sizing-sm);
 
     &:last-of-type {
-      margin-right: 0 !important;
+      margin-right: 0;
     }
   }
 }
@@ -120,7 +120,7 @@
     margin: var(--sizing-3xl) 0 var(--sizing-lg);
 
     & > button {
-      margin-bottom: 0 !important;
+      margin-bottom: 0;
     }
   }
 }
