@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "11.4.11",
+  "version": "11.4.12",
   "description": "The source for my personal site. Built using 11ty.",
   "type": "module",
   "scripts": {
@@ -38,7 +38,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@11tyrocks/eleventy-plugin-lightningcss": "^1.4.0",
     "@aws-sdk/client-s3": "^3.554.0",
-    "@cdransf/eleventy-plugin-tabler-icons": "^1.1.0",
+    "@cdransf/eleventy-plugin-tabler-icons": "^1.2.0",
     "@netlify/blobs": "^7.2.0",
     "@rknightuk/eleventy-plugin-post-graph": "^1.0.6",
     "child_process": "^1.0.2",
