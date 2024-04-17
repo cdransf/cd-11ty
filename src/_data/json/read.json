@@ -1,0 +1,19 @@
+[
+  {
+    "isbn": "1640095411",
+    "dateStarted": "2024-04-10",
+    "status": "started",
+    "rating": "unrated",
+    "title": "Starkweather",
+    "authors": [
+      "Harry N. Maclean"
+    ],
+    "publishedDate": "2023",
+    "description": "The Untold Story of the Killing Spree That Changed America",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [],
+    "thumbnail": "https://covers.openlibrary.org/b/id/14544652-S.jpg",
+    "language": "en"
+  }
+]
