@@ -12597,5 +12597,16 @@
       "https://social.lol/users/cory/statuses/112282213047331601"
     ],
     "lastTootTimestamp": 1713290604404
+  },
+  "https://www.sandofsky.com/humane/": {
+    "id": "aHR0cHM6Ly93d3cuc2FuZG9mc2t5LmNvbS9odW1hbmUv",
+    "title": "🔗: Oh the Humanity",
+    "url": "https://www.sandofsky.com/humane/",
+    "content_text": "🔗: Oh the Humanity #AI #Tech https://www.sandofsky.com/humane/",
+    "date_published": "Tue, 16 Apr 2024 20:39:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112284128347721930"
+    ],
+    "lastTootTimestamp": 1713319829567
   }
 }
