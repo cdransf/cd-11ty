@@ -59,6 +59,7 @@ jobs:
         with:
           filename: src/_data/json/read.json
           time-zone: America/Los_Angeles
+          providers: openlibrary
 
       - name: Commit updated read file
         run: |
