@@ -142,7 +142,7 @@ export default {
 
       // set the entry excerpt
       if (entry.description) excerpt = entry.description
-      if (entry?.data?.description) excerpt = entry?.data?.description
+      if (entry?.data?.description) excerpt = `${entry?.data?.description}<br/><br/>`
       if (entry.content) excerpt = sanitizeHtml(`${entry.content}${feedNote}`, {
         disallowedTagsMode: 'completelyDiscard'
       })
