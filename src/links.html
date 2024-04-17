@@ -2,14 +2,15 @@
 title: Links
 layout: default
 pagination:
-  data: links
+  data: collections.links
   size: 30
 ---
 <ul class="link-list reduced-spacing">
   {% for link in pagination.items %}
     <li>
-      <a href="{{ link.url }}">{{ link.title }}</a>
-      {% if link.author and link.author != 'undefined' %}by {{ link.author }}{% endif %}
+      <a href="{{ link.url }}" title="{{ link.data.title | escape }}">
+        {{ link.data.title }}
+      </a>
     </li>
   {% endfor %}
 </ul>

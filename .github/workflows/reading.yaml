@@ -1,0 +1,57 @@
+name: Update book
+run-name: Book (${{ inputs.isbn }})
+permissions:
+  contents: write
+on:
+  workflow_dispatch:
+    inputs:
+      isbn:
+        description: The book's ISBN. Required.
+        required: true
+        type: string
+      notes:
+        description: Notes about the book. Optional.
+        type: string
+      rating:
+        description: Rate the book. Optional.
+        type: choice
+        default: "unrated"
+        options:
+          - "unrated"
+          - ⭐️
+          - ⭐️⭐️
+          - ⭐️⭐️⭐️
+          - ⭐️⭐️⭐️⭐️
+          - ⭐️⭐️⭐️⭐️⭐️
+      # Tags are optional.
+      tags:
+        description: Add tags to categorize the book. Separate each tag with a comma. Optional.
+        type: string
+      # If you do not submit date-started or date-finished, the book status will be set to "want to read"
+      date-started:
+        description: Date you started the book (YYYY-MM-DD). Optional.
+        type: string
+      date-finished:
+        description: Date you finished the book (YYYY-MM-DD). Optional.
+        type: string
+jobs:
+  update-library:
+    runs-on: macOS-latest
+    name: Read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Read
+        uses: katydecorah/read-action@v7.1.0
+        with:
+          filename: src/_data/json/read.json
+          time-zone: America/Los_Angeles
+
+      - name: Commit updated read file
+        run: |
+          git pull
+          git config --local user.email "coryd@hey.com"
+          git config --local user.name "Cory Dransfeldt"
+          git add -A && git commit -m "📚 “${{ env.BookTitle }}” (${{ env.BookStatus }})"
+          git push

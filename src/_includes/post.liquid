@@ -23,5 +23,4 @@ schema: blog
     </div>
   </article>
 </div>
-{% render "partials/mastodon-post.liquid", postUrl:postUrl, linkPosts:linkPosts %}
-{% render "partials/addon-links.liquid", posts:collections.posts, analytics:analytics, links:links %}
+{% render "partials/addon-links.liquid", posts:collections.posts, analytics:analytics, links:collections.links %}

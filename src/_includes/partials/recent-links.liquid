@@ -6,8 +6,8 @@
 <ul class="link-list">
   {% for link in links limit: 5 %}
     <li>
-      <a href="{{link.url}}" title="{{link.title | escape}}">
-        {{ link.title }}
+      <a href="{{ link.url }}" title="{{ link.data.title | escape }}">
+        {{ link.data.title }}
       </a>
     </li>
   {% endfor %}

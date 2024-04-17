@@ -60,14 +60,6 @@ export default {
       })
   },
 
-  // tags
-  tagLookup: (url, tagMap) => {
-    if (!url) return
-    if (url.includes('thestorygraph.com')) return '#Books #NowReading #TheStoryGraph'
-    if (url.includes('trakt.tv')) return '#Movies #Watching #Trakt'
-    return tagMap[url] || ''
-  },
-
   // dates
   readableDate: (date) => {
     return DateTime.fromISO(date).toFormat('LLLL d, yyyy')
@@ -144,6 +136,7 @@ export default {
 
       // set the entry excerpt
       if (entry.description) excerpt = entry.description
+      if (entry?.data?.description) excerpt = entry?.data?.description
       if (entry.content) excerpt = sanitizeHtml(`${entry.content}${feedNote}`, {
         disallowedTagsMode: 'completelyDiscard'
       })
@@ -153,7 +146,7 @@ export default {
         posts.push({
           title: entry.data?.title || entry.title,
           url: entry.url.includes('http') ? entry.url : new URL(entry.url, BASE_URL).toString(),
-          content: entry.description,
+          content: entry?.description || entry?.data?.description,
           date,
           excerpt,
         })

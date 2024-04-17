@@ -12,7 +12,7 @@ import filters from './config/filters/index.js'
 import { slugifyString } from './config/utils/index.js'
 import { svgToJpeg } from './config/events/index.js'
 import { minifyJsComponents } from './config/events/index.js'
-import { searchIndex, tagList, tagMap, postStats, tagsSortedByCount } from './config/collections/index.js'
+import { searchIndex, tagList, postStats, tagsSortedByCount, links } from './config/collections/index.js'
 import { img } from './config/shortcodes/index.js'
 
 // load .env
@@ -53,9 +53,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets')
   eleventyConfig.addPassthroughCopy('_redirects')
   eleventyConfig.addPassthroughCopy({
-    'node_modules/@daviddarnes/mastodon-post/mastodon-post.js': 'assets/scripts/components/mastodon-post.js'
-  })
-  eleventyConfig.addPassthroughCopy({
     'node_modules/minisearch/dist/umd/index.js': 'assets/scripts/components/minisearch.js',
   })
   eleventyConfig.addPassthroughCopy({
@@ -90,9 +87,9 @@ export default async function (eleventyConfig) {
   // collections
   eleventyConfig.addCollection('searchIndex', searchIndex)
   eleventyConfig.addCollection('tagList', tagList)
-  eleventyConfig.addCollection('tagMap', tagMap)
   eleventyConfig.addCollection('postStats', postStats)
   eleventyConfig.addCollection('tagsSortedByCount', tagsSortedByCount)
+  eleventyConfig.addCollection('links', links)
 
   const md = markdownIt({ html: true, linkify: true })
   md.use(markdownItAnchor, {

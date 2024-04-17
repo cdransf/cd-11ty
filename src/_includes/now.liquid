@@ -88,7 +88,7 @@ layout: default
   Books
 </h2>
 {% render "partials/now/media-grid.liquid", data:books, shape: "vertical", count: 6 %}
-{% render "partials/recent-links.liquid", links:links %}
+{% render "partials/recent-links.liquid", links:collections.links %}
 <h2 id="movies" class="now-header flex-centered">
   {% tablericon "movie" "Movies" %}
   Movies

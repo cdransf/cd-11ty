@@ -1,5 +1,4 @@
 import { DateTime } from 'luxon'
-import tagAliases from '../data/tag-aliases.js'
 import { makeYearStats, processPostFile } from './utils.js'
 
 export const searchIndex = (collection) => {
@@ -45,32 +44,6 @@ export const tagList = (collection) => {
   return Array.from(tagsSet).sort()
 }
 
-export const tagMap = (collection) => {
-  const tags = {}
-  const collectionData = collection.getAll()[0]
-  const posts = collectionData.data.collections.posts
-  const links = collectionData.data.links
-  if (posts) {
-    posts.forEach((post) => {
-      const url = post.url.includes('http') ? post.url : `https://coryd.dev${post.url}`
-      const tagString = [...new Set(post.data.tags.map((tag) => tagAliases[tag.toLowerCase()]))]
-        .join(' ')
-        .trim()
-      if (tagString) tags[url] = tagString.replace(/\s+/g,' ')
-    })
-  }
-  if (links) {
-    links.forEach((link) => {
-      const tagString = link['tags']
-        .map((tag) => tagAliases[tag.toLowerCase()])
-        .join(' ')
-        .trim()
-      if (tagString) tags[link.url] = tagString.replace(/\s+/g,' ')
-    })
-  }
-  return tags
-}
-
 export const tagsSortedByCount = (collection) => {
   const tagStats = {};
   collection.getFilteredByGlob('src/posts/**/*.*').forEach((item) => {
@@ -84,6 +57,8 @@ export const tagsSortedByCount = (collection) => {
   });
   return Object.entries(tagStats).sort((a, b) => b[1] - a[1]).map(([key, value]) => `${key}`);
 }
+
+export const links = (collection) => collection.getFilteredByGlob('src/links/**/*.*').reverse()
 
 export const postStats = (collection) => {
   const oneDayMilliseconds = 1000 * 60 * 60 * 24

@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "11.4.16",
+  "version": "12.0.0",
   "description": "The source for my personal site. Built using 11ty.",
   "type": "module",
   "scripts": {
@@ -23,8 +23,6 @@
     "@cdransf/select-pagination": "^1.0.4",
     "@cdransf/theme-toggle": "^1.2.3",
     "@daviddarnes/link-peek": "^1.0.0",
-    "@daviddarnes/mastodon-post": "^1.1.1",
-    "@remy/webmention": "^1.5.0",
     "@zachleat/webcare-webshare": "^1.0.3",
     "minisearch": "^6.3.0",
     "youtube-video-element": "^1.0.0"

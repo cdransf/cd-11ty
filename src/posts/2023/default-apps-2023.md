@@ -10,7 +10,7 @@ In the spirit of following a trend, here are my default apps as of now (the end 
 - Mail service: [HEY](https://hey.com)
 - Mail client: [HEY](https://hey.com)
 - Tasks: [HEY](https://hey.com)'s do this week functionality
-- RSS service/client/bookmarking: [Readwise Reader](https://readwise.io/read) + clips sent to [Bear](https://bear.app)
+- RSS service/client/bookmarking: [Feedbin](https://feedbin.com) with [NetNewsWire](https://netnewswire.com) + articles sent to [Instapaper](https://instapaper.com) and clips sent to [Bear](https://bear.app)
 - Launcher: [Alfred](https://alfredapp.com)
 - Cloud storage: iCloud
 - Photo library: iCloud
