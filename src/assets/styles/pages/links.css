@@ -2,4 +2,8 @@
   margin-top: 0;
   margin-bottom: var(--sizing-3xl);
   padding-left: 0;
+
+  & li:first-of-type {
+    margin-top: 0;
+  }
 }
