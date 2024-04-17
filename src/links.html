@@ -8,7 +8,7 @@ pagination:
 <ul class="link-list reduced-spacing">
   {% for link in pagination.items %}
     <li>
-      <a href="{{ link.url }}" title="{{ link.data.title | escape }}">
+      <a href="{{ link.data.link }}" title="{{ link.data.title | escape }}">
         {{ link.data.title }}
       </a>
     </li>
