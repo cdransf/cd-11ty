@@ -7,12 +7,10 @@ layout: default
 <script>{{ js }}</script>
 {{ content }}
 <div class="now-header-wrapper">
-  <a class="linked-header" href="/artists">
-    <h2 id="artists" class="now-header flex-centered">
-      {% tablericon "microphone-2" "Artists" %}
-      Artists
-    </h2>
-  </a>
+  <h2 id="artists" class="now-header flex-centered">
+    {% tablericon "microphone-2" "Artists" %}
+    Artists
+  </h2>
   <div class="now-header-buttons client-side">
     <button class="small active" data-toggle="artists-window">This week</button>
     <button class="small secondary" data-toggle="artists-month">This month</button>
@@ -33,12 +31,10 @@ layout: default
   {% render "partials/now/media-grid.liquid", data:musicCharts.year.artists, shape: "square", count: 8 %}
 </div>
 <div class="now-header-wrapper">
-  <a class="linked-header" href="/albums">
-    <h2 id="albums" class="now-header flex-centered">
-      {% tablericon "vinyl" "Albums" %}
-      Albums
-    </h2>
-  </a>
+  <h2 id="albums" class="now-header flex-centered">
+    {% tablericon "vinyl" "Albums" %}
+    Albums
+  </h2>
   <div class="now-header-buttons client-side">
     <button class="small active" data-toggle="albums-window">This week</button>
     <button class="small secondary" data-toggle="albums-month">This month</button>
