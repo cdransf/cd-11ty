@@ -12608,5 +12608,24 @@
       "https://social.lol/users/cory/statuses/112284128347721930"
     ],
     "lastTootTimestamp": 1713319829567
+  },
+  "https://flamedfury.com/posts/instant-messaging/": {
+    "id": "aHR0cHM6Ly9mbGFtZWRmdXJ5LmNvbS9wb3N0cy9pbnN0YW50LW1lc3NhZ2luZy8=",
+    "title": "🔗: Instant Messaging",
+    "url": "https://flamedfury.com/posts/instant-messaging/",
+    "content_text": "🔗: Instant Messaging #Tech https://flamedfury.com/posts/instant-messaging/",
+    "date_published": "Wed, 17 Apr 2024 08:51:00 GMT",
+    "toots": []
+  },
+  "https://www.tbray.org/ongoing/When/202x/2024/03/09/DeGoogling": {
+    "id": "aHR0cHM6Ly93d3cudGJyYXkub3JnL29uZ29pbmcvV2hlbi8yMDJ4LzIwMjQvMDMvMDkvRGVHb29nbGluZw==",
+    "title": "🔗: The De-Google Project",
+    "url": "https://www.tbray.org/ongoing/When/202x/2024/03/09/DeGoogling",
+    "content_text": "🔗: The De-Google Project #Tech https://www.tbray.org/ongoing/When/202x/2024/03/09/DeGoogling",
+    "date_published": "Tue, 16 Apr 2024 16:01:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112287878581791621"
+    ],
+    "lastTootTimestamp": 1713377053602
   }
 }
