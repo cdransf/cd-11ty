@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "12.0.0",
+  "version": "12.0.1",
   "description": "The source for my personal site. Built using 11ty.",
   "type": "module",
   "scripts": {
@@ -8,8 +8,7 @@
     "start:search": "run-s build:11ty index:local",
     "start:quick": "eleventy --serve --incremental --ignore-initial",
     "build": "ELEVENTY_PRODUCTION=true eleventy",
-    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
-    "postbuild": "webmention _site/feeds/posts --limit 1 --send && webmention _site/feeds/links --limit 1 --send"
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve"
   },
   "keywords": [
     "11ty",
