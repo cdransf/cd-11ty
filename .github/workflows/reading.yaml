@@ -1,13 +1,30 @@
-name: Update book
-run-name: Book (${{ inputs.isbn }})
+name: Reading
+run-name: 📚 ${{ inputs['book-status'] }} book ${{ inputs.isbn }}
+
+# Grant the action permission to write to the repository
 permissions:
   contents: write
+
+# Trigger the action
 on:
   workflow_dispatch:
     inputs:
       isbn:
         description: The book's ISBN. Required.
         required: true
+        type: string
+      book-status:
+        description: What is the status of the book? Required.
+        required: true
+        type: choice
+        default: "want to read"
+        options:
+          - "want to read"
+          - "started"
+          - "finished"
+          - "abandoned"
+      date:
+        description: Date to record the status of the book (YYYY-MM-DD). Leave blank for today. Optional.
         type: string
       notes:
         description: Notes about the book. Optional.
@@ -27,23 +44,18 @@ on:
       tags:
         description: Add tags to categorize the book. Separate each tag with a comma. Optional.
         type: string
-      # If you do not submit date-started or date-finished, the book status will be set to "want to read"
-      date-started:
-        description: Date you started the book (YYYY-MM-DD). Optional.
-        type: string
-      date-finished:
-        description: Date you finished the book (YYYY-MM-DD). Optional.
-        type: string
+
+# Set up the steps to run the action
 jobs:
   update-library:
     runs-on: macOS-latest
     name: Read
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Read
-        uses: katydecorah/read-action@v7.1.0
+        uses: katydecorah/read-action@v8.1.0
         with:
           filename: src/_data/json/read.json
           time-zone: America/Los_Angeles
