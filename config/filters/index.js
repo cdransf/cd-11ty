@@ -132,7 +132,13 @@ export default {
       const dateKey = Object.keys(entry).find((key) => key.includes('date'))
       const date = new Date(entry[dateKey])
       let excerpt = ''
+      let url = ''
       const feedNote = '<hr/><p>This is a full text feed, but not all content can be rendered perfeclty within the feed. If something looks off, feel free to <a href="https://coryd.dev">visit my site</a> for the original post.</p>'
+
+      // set the entry url
+      if (entry.url.includes('http')) url = entry.url
+      if (!entry.url.includes('http')) url = new URL(entry.url, BASE_URL).toString()
+      if (entry?.data?.link) url = entry.data.link
 
       // set the entry excerpt
       if (entry.description) excerpt = entry.description
@@ -145,7 +151,7 @@ export default {
       if (entry)
         posts.push({
           title: entry.data?.title || entry.title,
-          url: entry.url.includes('http') ? entry.url : new URL(entry.url, BASE_URL).toString(),
+          url,
           content: entry?.description || entry?.data?.description,
           date,
           excerpt,
