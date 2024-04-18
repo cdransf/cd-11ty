@@ -15,6 +15,8 @@ const getKeys = (months = 1) => {
     count++;
   }
 
+  keys.push(`${currentDate.year}-${currentDate.weekNumber}`)
+
   return keys
 }
 
