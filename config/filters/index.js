@@ -141,8 +141,11 @@ export default {
       if (entry?.data?.link) url = entry.data.link
 
       // set the entry excerpt
-      if (entry.description) excerpt = entry.description
-      if (entry?.data?.description) excerpt = `${entry?.data?.description}<br/><br/>`
+      if (entry.description) excerpt = entry.description // general case
+      if (entry?.data?.description) excerpt = `${entry?.data?.description}<br/><br/>` // links where description is stored in frontmatter
+      if (entry.type === 'book') excerpt = `${entry.description}<br/><br/>` // books
+
+      // send full post content to rss
       if (entry.content) excerpt = sanitizeHtml(`${entry.content}${feedNote}`, {
         disallowedTagsMode: 'completelyDiscard'
       })
