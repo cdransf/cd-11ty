@@ -250,7 +250,7 @@ nav ul li .active svg:hover {
 .brand-mastodon svg { stroke: var(--brand-mastodon) !important; }
 .brand-lastfm svg { stroke: var(--brand-lastfm) !important; }
 .device-tv svg { stroke: var(--brand-trakt) !important; }
-.books svg { stroke: var(--brand-storygraph) !important; }
+.news svg { stroke: var(--brand-instapaper) !important; }
 .coffee svg { stroke: var(--brand-buy-me-a-coffee) !important; }
 .heart-handshake svg { stroke: var(--webrings) !important; }
 .rss svg { stroke: var(--brand-rss) !important; }
