@@ -3,21 +3,21 @@
   <div class="media-grid {% if shape == 'square' %}square{% else %}vertical{% endif %}">
     {% for item in media limit: count %}
       {% assign alt = item.alt | strip | escape %}
+      {% assign hasMeta = item.type != 'book' and item.type != 'movie' %}
       <a href="{{ item.url | stripUtm }}" title="{{ alt }}">
-        <div class="item-wrapper{% if item.subtext %} shadow{% endif %}">
-          <div class="meta-text">
-            {% if item.title %}
-              <div class="header">{{ item.title }}</div>
-            {% endif %}
-            {% if item.percentage %}
-              {% render "partials/now/progress-bar.liquid", percentage:item.percentage %}
-            {% endif %}
-            {% if item.subtext %}
-              <div class="subheader">
-                {{ item.subtext }}
-              </div>
-            {% endif %}
-          </div>
+        <div class="item-wrapper{% if hasMeta %} shadow{% endif %}">
+          {% if hasMeta %}
+            <div class="meta-text">
+              {% if item.title %}
+                <div class="header">{{ item.title }}</div>
+              {% endif %}
+              {% if item.subtext %}
+                <div class="subheader">
+                  {{ item.subtext }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
           {%- capture loadingStrategy -%}
             {%- if loading -%}{{ loading }}{%- else -%}lazy{%- endif -%}
           {%- endcapture -%}

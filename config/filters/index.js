@@ -166,6 +166,7 @@ export default {
       let normalized = {
         image: item['image'],
         url: item['url'],
+        type: item.type
       }
       if (item.type === 'album') {
         normalized['title'] = item['title']
@@ -196,6 +197,7 @@ export default {
       return normalized
     }),
   calculatePlayPercentage: (plays, mostPlayed) => `${plays/mostPlayed * 100}%`,
+  bookStatus: (books, status) => books.filter(book => book.status === status),
 
     // tags
   filterTags: (tags) => {
