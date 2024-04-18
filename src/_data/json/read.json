@@ -2,7 +2,7 @@
   {
     "isbn": "1640095411",
     "dateStarted": "2024-04-10",
-    "status": "started",
+    "status": "want to read",
     "rating": "unrated",
     "title": "Starkweather",
     "authors": [
@@ -14,7 +14,11 @@
     "printType": "BOOK",
     "categories": [],
     "thumbnail": "https://covers.openlibrary.org/b/id/14544652-S.jpg",
-    "language": "en"
+    "language": "en",
+    "dateAdded": "2024-04-17",
+    "tags": [
+      "nonfiction"
+    ]
   },
   {
     "isbn": "0316462845",
