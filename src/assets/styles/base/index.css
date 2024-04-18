@@ -376,6 +376,12 @@ button {
   border: none;
 }
 
+/* selects */
+select {
+  border-radius: var(--rounded-full);
+  padding: var(--sizing-xs) var(--sizing-sm);
+}
+
 /* icons */
 svg {
   stroke-width: var(--stroke-width-default);
