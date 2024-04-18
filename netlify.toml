@@ -16,7 +16,7 @@ package = "/plugins/fetch-scrobbles"
 # IMAGES
 ###
 [images]
-  remote_images = ["https://f001.backblazeb2.com/file/coryd-dev-images/.*", "https://image.tmdb.org/.*", "https://cdn.thestorygraph.com/.*"]
+  remote_images = ["https://f001.backblazeb2.com/file/coryd-dev-images/.*", "https://image.tmdb.org/.*", "https://covers.openlibrary.org/.*", "https://cdn.thestorygraph.com/.*",]
 
 ###
 # URLs
