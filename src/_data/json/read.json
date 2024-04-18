@@ -21,5 +21,28 @@
     "thumbnail": "https://books.google.com/books/content?id=VvOxEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Starkweather.html?hl=&id=VvOxEAAAQBAJ"
+  },
+  {
+    "isbn": "0316462845",
+    "dateStarted": "2024-03-02",
+    "status": "started",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Machine Vendetta",
+    "authors": [
+      "Alastair Reynolds"
+    ],
+    "publishedDate": "2024-01-16",
+    "description": "From the king of modern space opera comes a new adventure in the Prefect Dreyfus series--Machine Vendetta is a thrilling tale of deadly conspiracies and old enemies that refuse to die. Panoply is a small, efficient police force, dedicated to maintaining the rule of democracy among the ten thousand disparate city-states orbiting the planet Yellowstone. Ingvar Tench was one of Panoply's most experienced operatives. So why did she walk alone and unarmed into a habitat with a vicious grudge against her organization? As his colleagues pick up the pieces following her death, Prefect Tom Dreyfus must face his conscience. Four years ago, when an investigation linked to one of his most dangerous adversaries got a little too personal, Dreyfus arranged for Tench to continue the inquiry by proxy. In using her, did Dreyfus also put her in the line of fire? And what does Tench's attack tell him about an enemy he had hoped was dormant? The Prefect Dreyfus Emergencies Aurora Rising Elysium Fire Machine Vendetta",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=AGqYzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Machine_Vendetta.html?hl=&id=AGqYzwEACAAJ"
   }
 ]
