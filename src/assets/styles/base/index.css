@@ -248,7 +248,7 @@ nav ul li .active svg:hover {
 .brand-github svg { stroke: var(--brand-github) !important; }
 .brand-npm svg { stroke: var(--brand-npm) !important; }
 .brand-mastodon svg { stroke: var(--brand-mastodon) !important; }
-.brand-lastfm svg { stroke: var(--brand-lastfm) !important; }
+.brain svg { stroke: var(--brand-listenbrainz) !important; }
 .device-tv svg { stroke: var(--brand-trakt) !important; }
 .news svg { stroke: var(--brand-instapaper) !important; }
 .coffee svg { stroke: var(--brand-buy-me-a-coffee) !important; }
