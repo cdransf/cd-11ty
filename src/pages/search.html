@@ -56,4 +56,4 @@ permalink: /search.html
 </form>
 <ul class="search__results hidden"></ul>
 {% render "partials/tags.liquid", tags:collections.tagsSortedByCount, hasSpace:true %}
-{% render "partials/addon-links.liquid", posts:collections.posts, analytics:analytics, links:links %}
+{% render "partials/addon-links.liquid", posts:collections.posts, analytics:analytics, links:collections.links %}
