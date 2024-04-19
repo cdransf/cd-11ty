@@ -60,6 +60,9 @@ export default {
       })
   },
 
+  // authors
+  authorLookup: (url, authorMap) => authorMap[url] || '',
+
   // dates
   readableDate: (date) => {
     return DateTime.fromISO(date).toFormat('LLLL d, yyyy')
