@@ -7,10 +7,12 @@ pagination:
 ---
 <ul class="link-list reduced-spacing">
   {% for link in pagination.items %}
+    {% assign author = link.data.link | stripUtm | authorLookup %}
     <li>
       <a href="{{ link.data.link }}" title="{{ link.data.title | escape }}">
-        {{ link.data.title }}
+        <strong>{{ link.data.title }}</strong>
       </a>
+      {% if author %} via {{ author }}{% endif %}
     </li>
   {% endfor %}
 </ul>

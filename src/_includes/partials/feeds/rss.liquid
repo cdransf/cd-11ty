@@ -15,8 +15,9 @@
       <height>144</height>
     </image>
     {% for entry in entries limit: 20 -%}
+      {% assign author = entry.url | stripUtm | authorLookup %}
       <item>
-        <title>{{ entry.title | escape }}</title>
+        <title>{{ entry.title | escape }}{% if author %} via {{ author }}{% endif %}</title>
         <link>{{ entry.url | stripUtm | encodeAmp }}</link>
         <pubDate>{{ entry.date | stringToRFC822Date }}</pubDate>
         <guid>{{ entry.url | stripUtm | encodeAmp }}</guid>

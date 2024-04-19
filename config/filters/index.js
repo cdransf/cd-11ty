@@ -3,6 +3,7 @@ import markdownIt from 'markdown-it'
 import { URL } from 'url'
 import { createRequire } from 'module'
 import sanitizeHtml from 'sanitize-html';
+import authors from '../json/author-map.js'
 
 const require = createRequire(import.meta.url)
 const metaData = require('../../src/_data/json/meta.json')
@@ -61,7 +62,12 @@ export default {
   },
 
   // authors
-  authorLookup: (url, authorMap) => authorMap[url] || '',
+  authorLookup: (url) => {
+    if (!url) return null
+    const urlObject = new URL(url)
+    const baseUrl = urlObject.origin
+    return authors?.[baseUrl] || null
+  },
 
   // dates
   readableDate: (date) => {
