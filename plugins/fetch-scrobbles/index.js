@@ -6,7 +6,7 @@ const getKeys = (months = 1) => {
   const currentDate = DateTime.now()
   const weeks = Math.floor((currentDate.daysInMonth * months) / 7)
   let count = 0
-  const keys = []
+  const keys = [`${currentDate.year}-${currentDate.weekNumber}`]
 
   while (count < weeks) {
     const weeks = 1 * (count + 1)
@@ -14,8 +14,6 @@ const getKeys = (months = 1) => {
     keys.push(`${date.year}-${date.weekNumber}`)
     count++;
   }
-
-  keys.push(`${currentDate.year}-${currentDate.weekNumber}`)
 
   return keys
 }
