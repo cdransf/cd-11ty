@@ -211,5 +211,7 @@ export default {
   "https://www.jeremiak.com": "Jeremia Kimelman",
   "https://bjhess.com": "Barry Hess",
   "https://www.sandofsky.com": "Benjamin Sandofsky",
-  "https://www.noemamag.com": "Noema Magazine"
+  "https://www.noemamag.com": "Noema Magazine",
+  "https://sixcolors.com" :"Six Colors",
+  "https://www.sixcolors.com" :"Six Colors"
 }
