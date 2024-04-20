@@ -71,6 +71,30 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9780735211759",
+    "dateFinished": "2024-01-14",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Broad Band",
+    "authors": [
+      "Claire L. Evans"
+    ],
+    "publishedDate": "2018-03-06",
+    "description": "If you loved Hidden Figures or The Rise of the Rocket Girls, you'll love Claire Evans' breakthrough book on the women who brought you the internet--written out of history, until now. \"This is a radically important, timely work,\" says Miranda July, filmmaker and author of The First Bad Man. The history of technology you probably know is one of men and machines, garages and riches, alpha nerds and brogrammers--but from Ada Lovelace, who wrote the first computer program in the Victorian Age, to the cyberpunk Web designers of the 1990s, female visionaries have always been at the vanguard of technology and innovation. In fact, women turn up at the very beginning of every important wave in technology. They may have been hidden in plain sight, their inventions and contributions touching our lives in ways we don't even realize, but they have always been part of the story. VICE reporter and YACHT lead singer Claire L. Evans finally gives these unsung female heroes their due with her insightful social history of the Broad Band, the women who made the internet what it is today. Seek inspiration from Grace Hopper, the tenacious mathematician who democratized computing by leading the charge for machine-independent programming languages after World War II. Meet Elizabeth \"Jake\" Feinler, the one-woman Google who kept the earliest version of the Internet online, and Stacy Horn, who ran one of the first-ever social networks on a shoestring out of her New York City apartment in the 1980s. Join the ranks of the pioneers who defied social convention to become database poets, information-wranglers, hypertext dreamers, and glass ceiling-shattering dot com-era entrepreneurs. This inspiring call to action shines a light on the bright minds whom history forgot, and shows us how they will continue to shape our world in ways we can no longer ignore. Welcome to the Broad Band. You're next.",
+    "pageCount": 290,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=DddLDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Broad_Band.html?hl=&id=DddLDwAAQBAJ"
+  },
+  {
     "isbn": "9780063230477",
     "dateFinished": "2024-01-16",
     "status": "finished",
