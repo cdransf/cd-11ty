@@ -3253,5 +3253,28 @@
     "thumbnail": "https://books.google.com/books/content?id=oC6XCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=oC6XCgAAQBAJ"
+  },
+  {
+    "isbn": "9780316217651",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Gods of Risk",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "publishedDate": "2012-09-15",
+    "description": "A novella set in the hard-scrabble world of James S. A. Corey's NYT-bestselling Expanse series, Gods of Risk tells the story of Bobbie Draper following the events of Caliban's War. This story will be available in the complete Expanse story collection, Memory’s Legion. HUGO AWARD WINNER FOR BEST SERIES As tension between Mars and Earth mounts, and terrorism plagues the Martian city of Londres Nova, sixteen-year-old David Draper is fighting his own lonely war. A gifted chemist vying for a place at the university, David leads a secret life as a manufacturer for a ruthless drug dealer. When his friend Leelee goes missing, leaving signs of the dealer's involvement, David takes it upon himself to save her. But first he must shake his aunt Bobbie Draper, an ex-marine who has been set adrift in her own life after a mysterious series of events nobody is talking about. The Expanse Leviathan Wakes Caliban's War Abaddon's Gate Cibola Burn Nemesis Games Babylon's Ashes Persepolis Rising Tiamat's Wrath ​Leviathan Falls Memory's Legion The Expanse Short Fiction Drive The Butcher of Anderson Station Gods of Risk The Churn The Vital Abyss Strange Dogs Auberon The Sins of Our Fathers",
+    "pageCount": 73,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=_V1ZXdibLlgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=_V1ZXdibLlgC"
   }
 ]
