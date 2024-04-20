@@ -71,6 +71,30 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9781926743271",
+    "dateFinished": "2024-01-01",
+    "status": "finished",
+    "rating": "⭐️⭐️⭐️⭐️",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "NoMeansNo",
+    "authors": [
+      "Mark Black"
+    ],
+    "publishedDate": "2012",
+    "description": "Invisible Publishing's Bibliophonic Series returns, this time focusing on unsung Canadian punk rock heroes NoMeansNo.NoMeansNo: Going Nowhere, will look at a band whose career has spanned three decades, 14 albums and produced an alter ego that's become as much a part of the Canadian consciousness as SCTV. Through interviews with band members, bit players and fans, the book will explore how one punk band from Victoria, B.C. influenced musicians across the world and continue to be force in punk rock.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=4BtGLgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/NoMeansNo.html?hl=&id=4BtGLgEACAAJ"
+  },
+  {
     "isbn": "9780345539786",
     "dateFinished": "2024-01-03",
     "status": "finished",
