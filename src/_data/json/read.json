@@ -1,5 +1,29 @@
 [
   {
+    "isbn": "9780393322231",
+    "dateFinished": "2023-09-14",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Helter Skelter: The True Story of the Manson Murders",
+    "authors": [
+      "Vincent Bugliosi",
+      "Curt Gentry"
+    ],
+    "publishedDate": "2001-12-04",
+    "description": "The inside story behind the Manson killings explains how Charles Manson was able to make his \"family\" murder for him, chronicles the investigation, and describes in detail the court trial that brought him and his accomplices to justice. Winner of the Edgar Allan Poe Award. Reprint.",
+    "pageCount": 698,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=Fiyw_LeL51MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Helter_Skelter_The_True_Story_of_the_Man.html?hl=&id=Fiyw_LeL51MC"
+  },
+  {
     "isbn": "9781952616624",
     "dateFinished": "2023-09-15",
     "status": "finished",
