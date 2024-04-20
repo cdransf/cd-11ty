@@ -2511,5 +2511,29 @@
     "thumbnail": "https://books.google.com/books/content?id=T_PsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Mastermind.html?hl=&id=T_PsDwAAQBAJ"
+  },
+  {
+    "isbn": "9781982156152",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Red Roulette",
+    "authors": [
+      "Desmond Shum"
+    ],
+    "publishedDate": "2021-09-07",
+    "description": "\"THE BOOK CHINA DOESN'T WANT YOU TO READ.\"--CNN​ A riveting insider's story of how the Party and big money work in China today, by a man who, with his wife, Whitney Duan, rose to the zenith of power and wealth--and then fell out of favor. She was disappeared four years ago. News of this book led to a phone call from Whitney, proof that she's alive. As Desmond Shum was growing up impoverished in China, he vowed his life would be different. Through hard work and sheer tenacity he earned an American college degree and returned to his native country to establish himself in business. There, he met his future wife, the highly intelligent and equally ambitious Whitney Duan who was determined to make her mark within China's male-dominated society. Whitney and Desmond formed an effective team and, aided by relationships they formed with top members of China's Communist Party, the so-called red aristocracy, he vaulted into China's billionaire class. Soon they were developing the massive air cargo facility at Beijing International Airport, and they followed that feat with the creation of one of Beijing's premier hotels. They were dazzlingly successful, traveling in private jets, funding multi-million-dollar buildings and endowments, and purchasing expensive homes, vehicles, and art. But in 2017, their fates diverged irrevocably when Desmond, while residing overseas with his son, learned that his now ex-wife Whitney had vanished along with three coworkers. This is both Desmond's story and Whitney's, because she has not been able to tell it herself.",
+    "pageCount": 320,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=v788EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Red_Roulette.html?hl=&id=v788EAAAQBAJ"
   }
 ]
