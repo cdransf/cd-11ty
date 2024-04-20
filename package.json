@@ -8,7 +8,8 @@
     "start:search": "run-s build:11ty index:local",
     "start:quick": "eleventy --serve --incremental --ignore-initial",
     "build": "ELEVENTY_PRODUCTION=true eleventy",
-    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve"
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
+    "postbuild": "webmention _site/feeds/posts --limit 1 --send"
   },
   "keywords": [
     "11ty",
