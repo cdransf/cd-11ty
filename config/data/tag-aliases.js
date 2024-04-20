@@ -41,6 +41,7 @@ export default {
   scifi: '#SciFi',
   'science-fiction': '#SciFi',
   'social media': '#SocialMedia',
+  sports: '#Sports',
   spotify: '#Music',
   'surveillance capitalism': '#SurveillanceCapitalism',
   'tattoos': '#Tattoos',
