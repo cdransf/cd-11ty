@@ -2223,5 +2223,29 @@
     "thumbnail": "https://books.google.com/books/content?id=hDYtmQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Assassination_of_Fred_Hampton.html?hl=&id=hDYtmQEACAAJ"
+  },
+  {
+    "isbn": "9780593652886",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "The Creative Act",
+    "authors": [
+      "Rick Rubin"
+    ],
+    "publishedDate": "2023-01-17",
+    "description": "The #1 New York Times bestseller. From the legendary music producer, a master at helping people connect with the wellsprings of their creativity, comes a beautifully crafted book many years in the making that offers that same deep wisdom to all of us. \"A gorgeous and inspiring work of art on creation, creativity, the work of the artist. It will gladden the hearts of writers and artists everywhere, and get them working again with a new sense of meaning and direction. A stunning accomplishment.” —Anne Lamott “I set out to write a book about what to do to make a great work of art. Instead, it revealed itself to be a book on how to be.” —Rick Rubin Many famed music producers are known for a particular sound that has its day. Rick Rubin is known for something else: creating a space where artists of all different genres and traditions can home in on who they really are and what they really offer. He has made a practice of helping people transcend their self-imposed expectations in order to reconnect with a state of innocence from which the surprising becomes inevitable. Over the years, as he has thought deeply about where creativity comes from and where it doesn’t, he has learned that being an artist isn’t about your specific output, it’s about your relationship to the world. Creativity has a place in everyone’s life, and everyone can make that place larger. In fact, there are few more important responsibilities. The Creative Act is a beautiful and generous course of study that illuminates the path of the artist as a road we all can follow. It distills the wisdom gleaned from a lifetime’s work into a luminous reading experience that puts the power to create moments—and lifetimes—of exhilaration and transcendence within closer reach for all of us.",
+    "pageCount": 433,
+    "printType": "BOOK",
+    "categories": [
+      "Self-Help"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=l3dtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Creative_Act.html?hl=&id=l3dtEAAAQBAJ"
   }
 ]
