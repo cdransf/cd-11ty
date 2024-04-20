@@ -2793,5 +2793,28 @@
     "thumbnail": "https://books.google.com/books/content?id=Y_B7OEueYuUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Jumper.html?hl=&id=Y_B7OEueYuUC"
+  },
+  {
+    "isbn": "9781429952408",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Shade",
+    "authors": [
+      "Steven Gould"
+    ],
+    "publishedDate": "2010-07-20",
+    "description": "Steven Gould's classic SF novel Jumper is the story of a young man with a single mysterious superpower: he can teleport anywhere, in the blink of an eye. Now, in a story set after Jumper's sequel Reflex, we see that a single mysterious superpower can add up to a lot of different kinds of miracle... In 2008 Jumper was brought to the screen as a big-budget SF adventure of the same name, directed by Doug Liman and starring Hayden Christiansen and Samuel L. Jackson. The movie rearranged the story line and gave the protagonist a teleporting sidekick. When the movie's producers expressed a desire to see a novel published about the sidekick's backstory, Gould chose to write the book himself; it was published as Jumper: Griffin's Story (2007), and is not canonical with the other two \"Jumper\" novels. \"Shade\" takes place in the world of the novels, not the alternate continuity of the movie. At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+    "pageCount": 32,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=G4_DjO5ZHUYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=G4_DjO5ZHUYC"
   }
 ]
