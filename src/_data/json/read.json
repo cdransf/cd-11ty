@@ -1,5 +1,29 @@
 [
   {
+    "isbn": "9781324005896",
+    "dateFinished": "2023-10-28",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction",
+      "science"
+    ],
+    "title": "Crossings",
+    "authors": [
+      "Ben Goldfarb"
+    ],
+    "publishedDate": "2023-09-12",
+    "description": "An eye-opening account of the global ecological transformations wrought by roads, from the award-winning author of Eager.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Nature"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=xuKczwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Crossings.html?hl=&id=xuKczwEACAAJ"
+  },
+  {
     "isbn": "1640095411",
     "dateStarted": "2024-04-10",
     "status": "finished",
