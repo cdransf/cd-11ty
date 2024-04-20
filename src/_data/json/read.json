@@ -2677,5 +2677,29 @@
     "thumbnail": "https://books.google.com/books/content?id=2mVkEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Indelible_City.html?hl=&id=2mVkEAAAQBAJ"
+  },
+  {
+    "isbn": "9781984880758",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Seek and Hide",
+    "authors": [
+      "Amy Gajda"
+    ],
+    "publishedDate": "2022-04-12",
+    "description": "“Gajda’s chronicle reveals an enduring tension between principles of free speech and respect for individuals’ private lives. …just the sort of road map we could use right now.”—The Atlantic “Wry and fascinating…Gajda is a nimble storyteller [and] an insightful guide to a rich and textured history that gets easily caricatured, especially when a culture war is raging.”—The New York Times An urgent book for today's privacy wars, and essential reading on how the courts have--for centuries--often protected privileged men's rights at the cost of everyone else's. Should everyone have privacy in their personal lives? Can privacy exist in a public place? Is there a right to be left alone even in the United States? You may be startled to realize that the original framers were sensitive to the importance of privacy interests relating to sexuality and intimate life, but mostly just for powerful and privileged (and usually white) men. The battle between an individual’s right to privacy and the public’s right to know has been fought for centuries. The founders demanded privacy for all the wrong press-quashing reasons. Supreme Court jus­tice Louis Brandeis famously promoted First Amend­ment freedoms but argued strongly for privacy too; and presidents from Thomas Jefferson through Don­ald Trump confidently hid behind privacy despite intense public interest in their lives. Today privacy seems simultaneously under siege and surging. And that’s doubly dangerous, as legal expert Amy Gajda argues. Too little privacy leaves ordinary people vulnerable to those who deal in and publish soul-crushing secrets. Too much means the famous and infamous can cloak themselves in secrecy and dodge accountability. Seek and Hide carries us from the very start, when privacy concepts first entered American law and society, to now, when the law al­lows a Silicon Valley titan to destroy a media site like Gawker out of spite. Muckraker Upton Sinclair, like Nellie Bly before him, pushed the envelope of privacy and propriety and then became a privacy advocate when journalists used the same techniques against him. By the early 2000s we were on our way to today’s full-blown crisis in the digital age, worrying that smartphones, webcams, basement publishers, and the forever internet had erased the right to privacy completely.",
+    "pageCount": 401,
+    "printType": "BOOK",
+    "categories": [
+      "Law"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=bfE3EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=bfE3EAAAQBAJ"
   }
 ]
