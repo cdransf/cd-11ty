@@ -95,6 +95,29 @@
     "link": "https://books.google.com/books/about/Extremely_Hardcore.html?hl=&id=FsTlEAAAQBAJ"
   },
   {
+    "isbn": "9781524760595",
+    "dateFinished": "2024-02-25",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Between Two Fires",
+    "authors": [
+      "Joshua Yaffa"
+    ],
+    "publishedDate": "2020",
+    "description": "From a leading journalist in Moscow and correspondent for The New Yorker, a groundbreaking portrait of modern Russia and the inner struggles of the people who sustain Vladimir Putin's rule \"Unforgettable. . . . This is a book about Putin's Russia that is unlike any other.\" --Patrick Radden Keefe, author of Say Nothing In this rich and novelistic tour of contemporary Russia, Joshua Yaffa introduces readers to some of the country's most remarkable figures--from politicians and entrepreneurs to artists and historians--who have built their careers and constructed their identities in the shadow of the Putin system. Torn between their own ambitions and the omnipresent demands of the state, each walks an individual path of compromise. Some muster cunning and cynicism to extract all manner of benefits and privileges from those in power. Others, finding themselves to be less adept, are left broken and demoralized. What binds them together is the tangled web of dilemmas and contradictions they face. Between Two Fires chronicles the lives of a number of strivers who understand that their dreams are best--or only--realized through varying degrees of cooperation with the Russian government. With sensitivity and depth, Yaffa profiles the director of the country's main television channel, an Orthodox priest at war with the church hierarchy, a Chechen humanitarian who turns a blind eye to persecutions, and many others. The result is an intimate and probing portrait of a nation that is much discussed yet little understood. By showing how citizens shape their lives around the demands of a capricious and frequently repressive state--as often by choice as under threat of force--Yaffa offers urgent lessons about the true nature of modern authoritarianism.",
+    "pageCount": 372,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=H-jEDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Between_Two_Fires.html?hl=&id=H-jEDwAAQBAJ"
+  },
+  {
     "isbn": "9781523004775",
     "dateFinished": "2024-02-26",
     "status": "finished",
