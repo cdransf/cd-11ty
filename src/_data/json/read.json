@@ -2153,5 +2153,28 @@
     "thumbnail": "https://books.google.com/books/content?id=iyPQDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=iyPQDwAAQBAJ"
+  },
+  {
+    "isbn": "1839762039",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech"
+    ],
+    "title": "Internet for the People",
+    "authors": [
+      "Ben Tarnoff"
+    ],
+    "publishedDate": "2022-06-14",
+    "description": "In Internet for the People, leading tech writer Ben Tarnoff offers an answer. The internet is broken, he argues, because it is owned by private firms and run for profit. Google annihilates your privacy and Facebook amplifies right-wing propaganda because it is profitable to do so. But the internet wasn't always like this-it had to be remade for the purposes of profit maximization, through a years-long process of privatization that turned a small research network into a powerhouse of global capitalism. Tarnoff tells the story of the privatization that made the modern internet, and which set in motion the crises that consume it today. The solution to those crises is straightforward: deprivatize the internet. Deprivatization aims at creating an internet where people, and not profit, rule. It calls for shrinking the space of the market and diminishing the power of the profit motive. It calls for abolishing the walled gardens of Google, Facebook, and the other giants that dominate our digital lives and developing publicly and cooperatively owned alternatives that encode real democratic control. To build a better internet, we need to change how it is owned and organized. Not with an eye towards making markets work better, but towards making them less dominant. Not in order to create a more competitive or more rule-bound version of privatization, but to overturn it. Otherwise, a small number of executives and investors will continue to make choices on everyone's behalf, and these choices will remain tightly bound by the demands of the market. It's time to demand an internet by, and for, the people now.",
+    "pageCount": 245,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=Lj1xEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Internet_for_the_People.html?hl=&id=Lj1xEAAAQBAJ"
   }
 ]
