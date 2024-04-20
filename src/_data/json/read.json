@@ -71,6 +71,29 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9781466876477",
+    "dateFinished": "2024-03-02",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "The Colonel",
+    "authors": [
+      "Peter Watts"
+    ],
+    "publishedDate": "2014-07-29",
+    "description": "Colonel Keaton is in trouble. His wife has retreated into a virtual heaven and his son remains missing after joining an extrasolar mission to track down an alien race. He is presently tasked by his superiors with the threat assessment of hived human intelligences, one of which successfully attacks a compound under his watch. Now, one of the strongest hive minds in the world approaches Keaton with an offer that could completely change his world. At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+    "pageCount": 32,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=PWvfAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=PWvfAwAAQBAJ"
+  },
+  {
     "isbn": "9780593443224",
     "dateFinished": "2024-03-03",
     "status": "finished",
