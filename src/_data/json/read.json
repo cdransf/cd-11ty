@@ -1,5 +1,28 @@
 [
   {
+    "isbn": "9780679745587",
+    "dateFinished": "2023-10-22",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "In Cold Blood",
+    "authors": [
+      "Truman Capote"
+    ],
+    "publishedDate": "1994-02-01",
+    "description": "NATIONAL BESTSELLER • The most famous true crime novel of all time \"chills the blood and exercises the intelligence\" (The New York Review of Books)—and haunted its author long after he finished writing it. On November 15, 1959, in the small town of Holcomb, Kansas, four members of the Clutter family were savagely murdered by blasts from a shotgun held a few inches from their faces. There was no apparent motive for the crime, and there were almost no clues. In one of the first non-fiction novels ever written, Truman Capote reconstructs the murder and the investigation that led to the capture, trial, and execution of the killers, generating both mesmerizing suspense and astonishing empathy. In Cold Blood is a work that transcends its moment, yielding poignant insights into the nature of American violence.",
+    "pageCount": 370,
+    "printType": "BOOK",
+    "categories": [
+      "True Crime"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=mYC3yRvvXxMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/In_Cold_Blood.html?hl=&id=mYC3yRvvXxMC"
+  },
+  {
     "isbn": "9781324005896",
     "dateFinished": "2023-10-28",
     "status": "finished",
