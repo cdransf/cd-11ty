@@ -2770,5 +2770,28 @@
     "thumbnail": "https://books.google.com/books/content?id=0xpvOtMEhvMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=0xpvOtMEhvMC"
+  },
+  {
+    "isbn": "9780765357694",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Jumper",
+    "authors": [
+      "Steven Gould"
+    ],
+    "publishedDate": "2008-02-05",
+    "description": "Story of Davy, a young man, who discovers he has a power that sets him apart from others, teleporting.",
+    "pageCount": 356,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=Y_B7OEueYuUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Jumper.html?hl=&id=Y_B7OEueYuUC"
   }
 ]
