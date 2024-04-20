@@ -24,6 +24,27 @@
     "link": "https://books.google.com/books/about/Our_Band_Could_Be_Your_Life.html?hl=&id=suH3q3OJ3qoC"
   },
   {
+    "isbn": "1952616603",
+    "dateFinished": "2023-09-03",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "labor"
+    ],
+    "title": "You Deserve a Tech Union",
+    "authors": [
+      "Ethan Marcotte"
+    ],
+    "publishedDate": "2023-08-15",
+    "description": "There's a resurgent labor movement in the tech industry. Tech workers-designers, engineers, writers, and many others-have learned that when they stand together, they're poised to build a better version of the tech industry. They haven't stopped there: at companies from Kickstarter to Google, workers have formed unions. And you should, too. But what are unions? And why do they matter? Ethan Marcotte answers these questions through extensive research and by interviewing tech workers with real-world union-building experience. Ethan shares these workers' insights and stories, weaving them together to outline the process for forming a union of your very own. Because you-yes, you-deserve a tech union. THIS BOOK EXPLORES: What it means to be a \"tech worker,\" and what it means to do tech work A brief history of worker-led activism, inside and outside the tech industry What unions are, why they matter, and how they function An overview of how to form a union in the United States How to use unions to build a more sustainable future for tech work and tech workers",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=CQoX0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/You_Deserve_a_Tech_Union.html?hl=&id=CQoX0AEACAAJ"
+  },
+  {
     "isbn": "9781804291245",
     "dateFinished": "2023-09-13",
     "status": "finished",
