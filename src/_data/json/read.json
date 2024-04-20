@@ -71,6 +71,29 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9780765312181",
+    "dateFinished": "2024-03-01",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Blindsight",
+    "authors": [
+      "Peter Watts"
+    ],
+    "publishedDate": "2006-10-03",
+    "description": "Two months since the stars fell... Two months since sixty-five thousand alien objects clenched around the Earth like a luminous fist, screaming to the heavens as the atmosphere burned them to ash. Two months since that moment of brief, bright surveillance by agents unknown. Two months of silence, while a world holds its breath. Now some half-derelict space probe, sparking fitfully past Neptune's orbit, hears a whisper from the edge of the solar system: a faint signal sweeping the cosmos like a lighthouse beam. Whatever's out there isn't talking to us. It's talking to some distant star, perhaps. Or perhaps to something closer, something en route. So who do you send to force introductions on an intelligence with motives unknown, maybe unknowable? Who do you send to meet the alien when the alien doesn't want to meet? You send a linguist with multiple personalities, her brain surgically partitioned into separate, sentient processing cores. You send a biologist so radically interfaced with machinery that he sees x-rays and tastes ultrasound, so compromised by grafts and splices he no longer feels his own flesh. You send a pacifist warrior in the faint hope she won't be needed, and the fainter one she'll do any good if she is. You send a monster to command them all, an extinct hominid predator once called vampire, recalled from the grave with the voodoo of recombinant genetics and the blood of sociopaths. And you send a synthesist--an informational topologist with half his mind gone--as an interface between here and there, a conduit through which the Dead Center might hope to understand the Bleeding Edge. You send them all to the edge of interstellar space, praying you can trust such freaks and retrofits with the fate of a world. You fear they may be more alien than the thing they've been sent to find. But you'd give anything for that to be true, if you only knew what was waiting for them...",
+    "pageCount": 384,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=th7gwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Blindsight.html?hl=&id=th7gwAEACAAJ"
+  },
+  {
     "isbn": "9781466876477",
     "dateFinished": "2024-03-02",
     "status": "finished",
