@@ -3069,5 +3069,28 @@
     "thumbnail": "https://books.google.com/books/content?id=A_-zBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=A_-zBAAAQBAJ"
+  },
+  {
+    "isbn": "9780316332934",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Leviathan Falls",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "publishedDate": "2021-11-30",
+    "description": "The biggest science fiction series of the decade comes to an incredible conclusion in the ninth and final novel in James S.A. Corey’s Hugo-award winning space opera that inspired the Prime Original series. “An all-time genre classic.” –Publishers Weekly (starred review) Hugo Award Winner for Best Series The Laconian Empire has fallen, setting the thirteen hundred solar systems free from the rule of Winston Duarte. But the ancient enemy that killed the gate builders is awake, and the war against our universe has begun again. In the dead system of Adro, Elvi Okoye leads a desperate scientific mission to understand what the gate builders were and what destroyed them, even if it means compromising herself and the half-alien children who bear the weight of her investigation. Through the wide-flung systems of humanity, Colonel Aliana Tanaka hunts for Duarte’s missing daughter. . . and the shattered emperor himself. And on the Rocinante, James Holden and his crew struggle to build a future for humanity out of the shards and ruins of all that has come before. As nearly unimaginable forces prepare to annihilate all human life, Holden and a group of unlikely allies discover a last, desperate chance to unite all of humanity, with the promise of a vast galactic civilization free from wars, factions, lies, and secrets if they win. But the price of victory may be worse than the cost of defeat. \"Interplanetary adventure the way it ought to be written.\" —George R. R. Martin The Expanse Leviathan Wakes Caliban's War Abaddon's Gate Cibola Burn Nemesis Games Babylon's Ashes Persepolis Rising Tiamat's Wrath ​Leviathan Falls Memory's Legion The Expanse Short Fiction Drive The Butcher of Anderson Station Gods of Risk The Churn The Vital Abyss Strange Dogs Auberon The Sins of Our Fathers",
+    "pageCount": 509,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=XA4iEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=XA4iEAAAQBAJ"
   }
 ]
