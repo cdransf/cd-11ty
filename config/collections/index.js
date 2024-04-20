@@ -60,7 +60,7 @@ export const tagMap = (collection) => {
     })
     links.forEach((link) => {
       const url = link.data.link
-      const tagString = [...new Set(link.data.tags.map((tag) => tagAliases[tag.toLowerCase()]))]
+      const tagString = [...new Set(link.data.tags?.map((tag) => tagAliases[tag.toLowerCase()]))]
         .join(' ')
         .trim()
       if (tagString) tags[url] = tagString.replace(/\s+/g,' ')
