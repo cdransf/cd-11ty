@@ -1,5 +1,31 @@
 [
   {
+    "isbn": "9780593492673",
+    "dateFinished": "2023-10-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction",
+      "politics",
+      "economics"
+    ],
+    "title": "The Big Con",
+    "authors": [
+      "Mariana Mazzucato",
+      "Rosie Collington"
+    ],
+    "publishedDate": "2023-03-07",
+    "description": "A vital and timely investigation into the opaque and powerful consulting industry—and what to do about it There is an entrenched relationship between the consulting industry and the way business and government are managed today that must change. Mariana Mazzucato and Rosie Collington show that our economies’ reliance on companies such as McKinsey & Company, Boston Consulting Group, Bain & Company, PwC, Deloitte, KPMG, and EY stunts innovation, obfuscates corporate and political accountability, and impedes our collective mission of halting climate breakdown. The “Big Con” describes the confidence trick the consulting industry performs in contracts with hollowed-out and risk-averse governments and shareholder value-maximizing firms. It grew from the 1980s and 1990s in the wake of reforms by the neoliberal right and Third Way progressives, and it thrives on the ills of modern capitalism, from financialization and privatization to the climate crisis. It is possible because of the unique power that big consultancies wield through extensive contracts and networks—as advisors, legitimators, and outsourcers—and the illusion that they are objective sources of expertise and capacity. In the end, the Big Con weakens our businesses, infantilizes our governments, and warps our economies. In The Big Con, Mazzucato and Collington throw back the curtain on the consulting industry. They dive deep into important case studies of consultants taking the reins with disastrous results, such as the debacle of the roll out of HealthCare.gov and the tragic failures of governments to respond adequately to the COVID-19 pandemic. The result is an important and exhilarating intellectual journey into the modern economy’s beating heart. With peerless scholarship, and a wealth of original research, Mazzucato and Collington argue brilliantly for building a new system in which public and private sectors work innovatively for the common good.",
+    "pageCount": 353,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=PAmBEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Big_Con.html?hl=&id=PAmBEAAAQBAJ"
+  },
+  {
     "isbn": "9780679745587",
     "dateFinished": "2023-10-22",
     "status": "finished",
