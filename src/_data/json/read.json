@@ -71,6 +71,30 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9781770415201",
+    "dateFinished": "2024-01-05",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Anthem",
+    "authors": [
+      "Martin Popoff"
+    ],
+    "publishedDate": "2020",
+    "description": "Covering Rush's first eight albums, this volume is the first in a three-part series celebrating Canada's iconic rock band. Based on extensive first-hand interviews with family, friends, musicians, and the boys in the band, Anthem offers the most comprehensive biography ever, combining cultural context and canon analysis.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Rock groups"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=tRXhyQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Anthem.html?hl=&id=tRXhyQEACAAJ"
+  },
+  {
     "isbn": "9781101986769",
     "dateFinished": "2024-01-10",
     "status": "finished",
