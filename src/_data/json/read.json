@@ -2058,5 +2058,29 @@
     "thumbnail": "https://books.google.com/books/content?id=myUyzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Blockchain_Chicken_Farm.html?hl=&id=myUyzQEACAAJ"
+  },
+  {
+    "isbn": "1568589395",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "labor"
+    ],
+    "title": "Work Won't Love You Back",
+    "authors": [
+      "Sarah Jaffe"
+    ],
+    "publishedDate": "2021",
+    "description": "A preeminent voice on labor, inequality, and social movements examines this \"labor of love\" myth--the idea that certain work is not really work, and therefore should be done out of passion instead of pay. pay.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "BUSINESS & ECONOMICS"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=UGt8zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Work_Won_t_Love_You_Back.html?hl=&id=UGt8zQEACAAJ"
   }
 ]
