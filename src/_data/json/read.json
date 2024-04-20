@@ -2129,5 +2129,29 @@
     "thumbnail": "https://books.google.com/books/content?id=nbWYEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Fancy_Bear_Goes_Phishing.html?hl=&id=nbWYEAAAQBAJ"
+  },
+  {
+    "isbn": "0374721246",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "economics"
+    ],
+    "title": "Subprime Attention Crisis",
+    "authors": [
+      "Tim Hwang"
+    ],
+    "publishedDate": "2020-10-13",
+    "description": "From FSGO x Logic: a revealing examination of digital advertising and the internet's precarious foundation In Subprime Attention Crisis, Tim Hwang investigates the way big tech financializes attention. In the process, he shows us how digital advertising—the beating heart of the internet—is at risk of collapsing, and that its potential demise bears an uncanny resemblance to the housing crisis of 2008. From the unreliability of advertising numbers and the unregulated automation of advertising bidding wars, to the simple fact that online ads mostly fail to work, Hwang demonstrates that while consumers’ attention has never been more prized, the true value of that attention itself—much like subprime mortgages—is wildly misrepresented. And if online advertising goes belly-up, the internet—and its free services—will suddenly be accessible only to those who can afford it. Deeply researched, convincing, and alarming, Subprime Attention Crisis will change the way you look at the internet, and its precarious future. FSG Originals × Logic dissects the way technology functions in everyday lives. The titans of Silicon Valley, for all their utopian imaginings, never really had our best interests at heart: recent threats to democracy, truth, privacy, and safety, as a result of tech’s reckless pursuit of progress, have shown as much. We present an alternate story, one that delights in capturing technology in all its contradictions and innovation, across borders and socioeconomic divisions, from history through the future, beyond platitudes and PR hype, and past doom and gloom. Our collaboration features four brief but provocative forays into the tech industry’s many worlds, and aspires to incite fresh conversations about technology focused on nuanced and accessible explorations of the emerging tools that reorganize and redefine life today.",
+    "pageCount": 176,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=iyPQDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=iyPQDwAAQBAJ"
   }
 ]
