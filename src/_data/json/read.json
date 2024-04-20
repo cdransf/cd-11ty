@@ -2606,5 +2606,28 @@
     "thumbnail": "https://books.google.com/books/content?id=zVuyzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Raising_Them_Right.html?hl=&id=zVuyzgEACAAJ"
+  },
+  {
+    "isbn": "9780425212738",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Zodiac Unmasked",
+    "authors": [
+      "Robert Graysmith"
+    ],
+    "publishedDate": "2007-01-02",
+    "description": "Robert Graysmith reveals the true identity of Zodiac—America's most elusive serial killer. Between December 1968 and October 1969 a hooded serial killer called Zodiac terrorized San Francisco. Claiming responsibility for thirty-seven murders, he manipulated the media with warnings, dares, and bizarre cryptograms that baffled FBI code-breakers. Then as suddenly as the murders began, Zodiac disappeared into the Bay Area fog. After painstaking investigation and more than thirty years of research, Robert Graysmith finally exposes Zodiac’s true identity. With overwhelming evidence he reveals the twisted private life that led to the crimes, and provides startling theories as to why they stopped. America’s greatest unsolved mystery has finally been solved. INCLUDES PHOTOS AND A COMPLETE REPRODUCTION OF ZODIAC’S LETTERS",
+    "pageCount": 564,
+    "printType": "BOOK",
+    "categories": [
+      "True Crime"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=8Wm6fvRvEqIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Zodiac_Unmasked.html?hl=&id=8Wm6fvRvEqIC"
   }
 ]
