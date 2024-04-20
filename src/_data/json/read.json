@@ -1,5 +1,28 @@
 [
   {
+    "isbn": "9781952616624",
+    "dateFinished": "2023-09-15",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "labor"
+    ],
+    "title": "Surviving Change at Work",
+    "authors": [
+      "Vanessa Gennarelli"
+    ],
+    "publishedDate": "2023-09-12",
+    "description": "Good design systems can help you create digital products with efficiency and consistency. But great design systems will support and strengthen your team's creativity at the same time. In Expressive Design Systems, Yesenia Perez-Cruz shows you how to build useful, dependable systems that not only maintain harmony across your products, but also flex to accommodate inspiration and experimentation. Learn to communicate your brand, collaborate across teams-and do so much more than standardize components.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=dqMn0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Surviving_Change_at_Work.html?hl=&id=dqMn0AEACAAJ"
+  },
+  {
     "isbn": "9781620975411",
     "dateFinished": "2023-09-19",
     "status": "finished",
