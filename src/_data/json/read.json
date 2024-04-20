@@ -71,6 +71,30 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9781847927279",
+    "dateFinished": "2024-02-16",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "economics"
+    ],
+    "title": "Technofeudalism",
+    "authors": [
+      "Yanis Varoufakis"
+    ],
+    "publishedDate": "2023-09-28",
+    "description": "Capitalism is dead. The #1 bestselling economist shows how the owners of big tech have become the world's feudal overlords. 'What an amazing piece of work this is. Everyone should read it. 100 out of 100' IRVINE WELSH In his boldest and most far-reaching book yet, world-famous economist Yanis Varoufakis argues that capitalism is dead and a new economic era has begun. Insane sums of money that were supposed to re-float our economies in the wake of the financial crisis and the pandemic have ended up supercharging big tech's hold over every aspect of the economy. Capitalism's twin pillars - markets and profit - have been replaced with big tech's platforms and rents. Meanwhile, with every click and scroll, we labour like serfs to increase its power. Welcome to technofeudalism. Drawing on stories from Greek Myth and pop culture, from Homer to Mad Men, Varoufakis explains this revolutionary transformation: how it enslaves our minds, how it rewrites the rules of global power and ultimately what it will take overthrow it. 'An important new book' Carole Cadwalladr, Observer 'With superb storytelling, Varoufakis shows how capitalism has eaten itself alive' Brett Scott, author of Cloudmoney 'Provocative and accessible, this is sure to be a key touchstone in debates about the future of the global economy' Nick Srnicek, co-author of Inventing the Future",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Big data"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=tbqazwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Technofeudalism.html?hl=&id=tbqazwEACAAJ"
+  },
+  {
     "isbn": "9780593593950",
     "dateFinished": "2024-02-17",
     "status": "finished",
