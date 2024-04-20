@@ -3161,5 +3161,28 @@
     "thumbnail": "https://books.google.com/books/content?id=xP6yDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=xP6yDwAAQBAJ"
+  },
+  {
+    "isbn": "9780316217668",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "The Churn: An Expanse Novella",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "publishedDate": "2014-04-29",
+    "description": "A novella set in the hard-scrabble world of James S. A. Corey's NYT-bestselling Expanse series, The Churn takes the bestselling sci-fi series to the dark world of organized crime, drugs, secrets, and murder that shaped the Rocinante's mechanic, Amos. Now a Prime Original series. This story will be available in the complete Expanse story collection, Memory’s Legion. HUGO AWARD WINNER FOR BEST SERIES Before his trip to the stars, before the Rocinante, Timmy was confined to a Baltimore where crime paid you or killed you. Unless the authorities got to you first. On a future Earth beset by overpopulation, pollution, and poverty, people do what they must to survive. The Churn follows a crime boss named Burton as his organization is threatened by a new private security force tasked with cleaning up the city. When the police start cracking down, Burton and his footsoldiers-loyal lieutenant Erich, former prostitute Lydia, and young enforcer Timmy-become increasingly desperate to find a way out. The Expanse Leviathan Wakes Caliban's War Abaddon's Gate Cibola Burn Nemesis Games Babylon's Ashes Persepolis Rising Tiamat's Wrath ​Leviathan Falls Memory's Legion The Expanse Short Fiction Drive The Butcher of Anderson Station Gods of Risk The Churn The Vital Abyss Strange Dogs Auberon The Sins of Our Fathers",
+    "pageCount": 63,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=f2n5AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=f2n5AgAAQBAJ"
   }
 ]
