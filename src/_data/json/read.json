@@ -2653,5 +2653,29 @@
     "thumbnail": "https://books.google.com/books/content?id=UwfuzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Rest_Is_Resistance.html?hl=&id=UwfuzgEACAAJ"
+  },
+  {
+    "isbn": "9781922458513",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Indelible City",
+    "authors": [
+      "Louisa Lim"
+    ],
+    "publishedDate": "2022-05-03",
+    "description": "An award-winning journalist takes to the protest-riven streets of Hong Kong to write this startling landmark account of the island city’s complex past and precarious future.",
+    "pageCount": 321,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=2mVkEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Indelible_City.html?hl=&id=2mVkEAAAQBAJ"
   }
 ]
