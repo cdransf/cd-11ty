@@ -1939,5 +1939,30 @@
     "thumbnail": "https://books.google.com/books/content?id=YjuWzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Corporate_Rock_Sucks.html?hl=&id=YjuWzgEACAAJ"
+  },
+  {
+    "isbn": "9781952616037",
+    "dateAdded": "2024-04-20",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "development",
+      "climate"
+    ],
+    "title": "Sustainable Web Design",
+    "authors": [
+      "Tom Greenwood"
+    ],
+    "publishedDate": "2021",
+    "description": "Make greener design choices for better experiences and a healthier planet.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Sites Web"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=VdduzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Sustainable_Web_Design.html?hl=&id=VdduzgEACAAJ"
   }
 ]
