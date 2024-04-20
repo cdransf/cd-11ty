@@ -2176,5 +2176,29 @@
     "thumbnail": "https://books.google.com/books/content?id=Lj1xEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Internet_for_the_People.html?hl=&id=Lj1xEAAAQBAJ"
+  },
+  {
+    "isbn": "0520293282",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Black Against Empire",
+    "authors": [
+      "Joshua Bloom",
+      "Waldo E. Martin"
+    ],
+    "publishedDate": "2016-10-25",
+    "description": "15 Rupture -- 16 The Limits of Heroism -- Conclusion -- Notes -- Acknowledgments -- Index -- A -- B -- C -- D -- E -- F -- G -- H -- I -- J -- K -- L -- M -- N -- O -- P -- Q -- R -- S -- T -- U -- V -- W -- Y -- Z -- Figures",
+    "pageCount": 562,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=D7UwDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Black_Against_Empire.html?hl=&id=D7UwDwAAQBAJ"
   }
 ]
