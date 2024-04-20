@@ -2437,5 +2437,31 @@
     "thumbnail": "https://books.google.com/books/content?id=iHVTlwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Operation_Paperclip.html?hl=&id=iHVTlwEACAAJ"
+  },
+  {
+    "isbn": "9780062996213",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "The Key Man",
+    "authors": [
+      "Simon Clark",
+      "Will Louch"
+    ],
+    "publishedDate": "2021",
+    "description": "In this compelling story of greed, theft, and the dark underbelly of globalization and impact investing, two Wall Street Journal financial reporters investigate the shocking collapse of Abraaj-the largest private-equity failure in history-and the face behind its glimmering rise and catastrophic fall…",
+    "pageCount": 352,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ZZMGzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Key_Man.html?hl=&id=ZZMGzgEACAAJ"
   }
 ]
