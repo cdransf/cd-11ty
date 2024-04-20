@@ -884,5 +884,26 @@
     "thumbnail": "https://books.google.com/books/content?id=l6DYzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Driven_Rush_in_the_90s_and_in_the_End.html?hl=&id=l6DYzQEACAAJ"
+  },
+  {
+    "isbn": "9781770415362",
+    "dateFinished": "2024-01-06",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Limelight: Rush in The '80s",
+    "authors": [
+      "Martin Popoff"
+    ],
+    "publishedDate": "2020-10-13",
+    "description": "Part two of the definitive biography of the rock 'n' roll kings of the North In the follow-up to Anthem: Rush in the '70s, Martin Popoff brings together canon analysis, cultural context, and extensive firsthand interviews to celebrate Geddy Lee, Alex Lifeson, and Neil Peart at the peak of their persuasive power. Rush was one of the most celebrated hard rock acts of the '80s, and the second book of Popoff's staggeringly comprehensive three-part series takes readers from Permanent Waves to Presto, while bringing new insight to Moving Pictures, their crowning glory. Limelight: Rush in the '80s is a celebration of fame, of the pushback against that fame, of fortunes made -- and spent ... In the latter half of the decade, as Rush adopts keyboard technology and gets pert and poppy, there's an uproar amongst diehards, but the band finds a whole new crop of listeners. Limelight charts a dizzying period in the band's career, built of explosive excitement but also exhaustion, a state that would lead, as the '90s dawned, to the band questioning everything they previously believed, and each member eying the oncoming decade with trepidation and suspicion.",
+    "pageCount": 375,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=MpFczQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Limelight_Rush_in_The_80s.html?hl=&id=MpFczQEACAAJ"
   }
 ]
