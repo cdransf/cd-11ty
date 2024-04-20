@@ -2816,5 +2816,28 @@
     "thumbnail": "https://books.google.com/books/content?id=G4_DjO5ZHUYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=G4_DjO5ZHUYC"
+  },
+  {
+    "isbn": "9780385263481",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Hyperion",
+    "authors": [
+      "Dan Simmons"
+    ],
+    "publishedDate": "1989-05-26",
+    "description": "A stunning tour de force filled with transcendent awe and wonder, Hyperion is a masterwork of science fiction that resonates with excitement and invention, the first volume in a remarkable epic by the multiple-award-winning author of The Hollow Man. On the world called Hyperion, beyond the reach of galactic law, waits a creature called the Shrike. There are those who worship it. There are those who fear it. And there are those who have vowed to destroy it. In the Valley of the Time Tombs, where huge, brooding structures move backward through time, the Shrike waits for them all. On the eve of Armageddon, with the entire galaxy at war, seven pilgrims set forth on a final voyage to Hyperion seeking the answers to the unsolved riddles of their lives. Each carries a desperate hope—and a terrible secret. And one may hold the fate of humanity in his hands. Praise for Dan Simmons and Hyperion “Dan Simmons has brilliantly conceptualized a future 700 years distant. In sheer scope and complexity it matches, and perhaps even surpasses, those of Isaac Asimov and James Blish.”—The Washington Post Book World “An unfailingly inventive narrative . . . generously conceived and stylistically sure-handed.”—The New York Times Book Review “Simmons’s own genius transforms space opera into a new kind of poetry.”—The Denver Post “An essential part of any science fiction collection.”—Booklist",
+    "pageCount": 492,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=8nsmEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Hyperion.html?hl=&id=8nsmEAAAQBAJ"
   }
 ]
