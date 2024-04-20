@@ -71,6 +71,31 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9780241443903",
+    "dateFinished": "2024-01-24",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "television",
+      "economics",
+      "tech"
+    ],
+    "title": "Pandora's Box",
+    "authors": [
+      "Peter Biskind"
+    ],
+    "publishedDate": "2023-11-07",
+    "description": "Cultural critic Peter Biskind turns his eye toward the new golden age of television, sparked by the fall of play-it-safe network TV and the rise of boundary-busting cable, followed by streaming, which overturned bothbased on exclusive, candid, and colorful interviews with executives, writers, showrunners, directors, and actors.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Television broadcasting"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=6_pfzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Pandora_s_Box.html?hl=&id=6_pfzwEACAAJ"
+  },
+  {
     "isbn": "9780306827341",
     "dateFinished": "2024-01-28",
     "status": "finished",
