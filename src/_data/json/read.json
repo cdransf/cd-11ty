@@ -2629,5 +2629,29 @@
     "thumbnail": "https://books.google.com/books/content?id=8Wm6fvRvEqIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Zodiac_Unmasked.html?hl=&id=8Wm6fvRvEqIC"
+  },
+  {
+    "isbn": "9780316365215",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "labor",
+      "health"
+    ],
+    "title": "Rest Is Resistance",
+    "authors": [
+      "Tricia Hersey"
+    ],
+    "publishedDate": "2022-10-11",
+    "description": "Far too many of us have claimed productivity as the cornerstone of success. Brainwashed by capitalism, we subject our bodies and minds to work at an unrealistic, damaging, and machine‑level pace of work -- feeding into the same engine that enslaved millions into brutal labor for its virtuous benefit. Our worth does not reside in how much we produce, especially for a system that exploits and dehumanizes us. Rest, in its simplest form, becomes an act of resistance and a reclaiming of power because it disrupts and pushes back against capitalism and white supremacy. From the founder and creator of The Nap Ministry, Rest Is Resistance is a battle cry, a guidebook, a map for a movement, and a field guide for the weary and hopeful. It is rooted in spiritual energy and centered in Black liberation, womanism, somatics, and Afrofuturism. With captivating storytelling and practical advice, all delivered in Hersey's lyrical voice and informed by her deep experience in theology, activism, and performance art, Rest Is Resistance is a call to action and manifesto for those who are sleep deprived, searching for justice, and longing to be liberated from the oppressive grip of Grind Culture.",
+    "pageCount": 272,
+    "printType": "BOOK",
+    "categories": [
+      "Body, Mind & Spirit"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=UwfuzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Rest_Is_Resistance.html?hl=&id=UwfuzgEACAAJ"
   }
 ]
