@@ -1,5 +1,27 @@
 [
   {
+    "isbn": "9780316487740",
+    "dateFinished": "2023-10-04",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "Blood in the Machine",
+    "authors": [
+      "Brian Merchant"
+    ],
+    "publishedDate": "2023-09-05",
+    "description": "The true story of what happened the first time machines came for human jobs, when an underground network of 19th century rebels, the Luddites, took up arms against the industrialists that were automating their work--and how it explains the power, threat, and toll of big tech today. The most pressing story in modern tech begins not in Silicon Valley, Seattle, or even Shenzhen. It begins two hundred years ago in rural England, when working men and women rose up en masse rather than starve at the hands of the factory owners who were using machines to erase and degrade their livelihoods. They organized guerilla raids, smashed those machines, and embarked on full-scale assaults against the wealthy machine owners. They won the support of Lord Byron, inspired Mary Shelley, and enraged the Prince Regent and his bloodthirsty government. Before it was over, much blood would be spilled--of rich and poor, of the invisible and of the powerful. This all-but-forgotten and deeply misunderstood class struggle nearly brought 19th century England to its knees. We live now in the second machine age, when similar fears that big tech is dominating our lives and machines replacing human labor run high. We worry that technology imperils millions of jobs, robots are ousting workers from factories, and artificial intelligence will soon remove drivers from cars. How will this all reshape our economy and the way we live? And what can we do about it? The answers lie in the story of our first machine age, when mechanization first came to British factories at the beginning of the industrial revolution. Intertwined with a lucid examination of our current age, the story of the Luddites, the working-class insurgency that took up arms against automation (at a time when it was punishable by death to break a machine), Blood in the Machine reaches through time and space to tell a story about how technology changed our world--and how it's already changing our future.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=QvPDzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Blood_in_the_Machine.html?hl=&id=QvPDzgEACAAJ"
+  },
+  {
     "isbn": "9781982146863",
     "dateFinished": "2023-10-08",
     "status": "finished",
