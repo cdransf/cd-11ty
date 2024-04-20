@@ -1,5 +1,30 @@
 [
   {
+    "isbn": "0306818795",
+    "dateFinished": "2023-08-19",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction",
+      "biography"
+    ],
+    "title": "Trouble Boys",
+    "authors": [
+      "Bob Mehr"
+    ],
+    "publishedDate": "2016-03-01",
+    "description": "Trouble Boys is the first definitive, no-holds-barred biography of one of the last great bands of the twentieth century: The Replacements. With full participation from reclusive singer and chief songwriter Paul Westerberg, bassist Tommy Stinson, guitarist Slim Dunlap, and the family of late band co-founder Bob Stinson, author Bob Mehr is able to tell the real story of this highly influential group, capturing their chaotic, tragic journey from the basements of Minneapolis to rock legend. Drawing on years of research and access to the band's archives at Twin/Tone Records and Warner Bros. Mehr also discovers previously unrevealed details from those in the group's inner circle, including family, managers, musical friends and collaborators.",
+    "pageCount": 521,
+    "printType": "BOOK",
+    "categories": [
+      "Music"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=xQ9SCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Trouble_Boys.html?hl=&id=xQ9SCwAAQBAJ"
+  },
+  {
     "isbn": "9780316787536",
     "dateFinished": "2023-08-27",
     "status": "finished",
