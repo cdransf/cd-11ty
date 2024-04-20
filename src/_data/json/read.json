@@ -1,5 +1,29 @@
 [
   {
+    "isbn": "9780316787536",
+    "dateFinished": "2023-08-27",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Our Band Could Be Your Life",
+    "authors": [
+      "Michael Azerrad"
+    ],
+    "publishedDate": "2002-07-02",
+    "description": "\"This book will be fresh even for those whose lives these bands were...All thirteen profiles are page-turners.\" --Robert Christgau, Village Voice This is the never-before-told story of the musical revolution that happened right under the nose of the Reagan Eighties--when a small but sprawling network of bands, labels, fanzines, radio stations, and other subversives reenergized American rock with punk rock's do-it-yourself credo and created music that was deeply personal, often brilliant, always challenging, and immensely influential. This sweeping chronicle of music, politics, drugs, fear, loathing, and faith has been recognized as an indie rock classic in its own right. Among the bands profiled: Mission of Burma, Butthole Surfers, The Minutemen, Sonic Youth, Black Flag, Big Black, Hüsker Dü, Fugazi, Minor Threat, Mudhoney, The Replacements, Beat Happening, and Dinosaur Jr.",
+    "pageCount": 532,
+    "printType": "BOOK",
+    "categories": [
+      "Music"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=suH3q3OJ3qoC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Our_Band_Could_Be_Your_Life.html?hl=&id=suH3q3OJ3qoC"
+  },
+  {
     "isbn": "9781804291245",
     "dateFinished": "2023-09-13",
     "status": "finished",
