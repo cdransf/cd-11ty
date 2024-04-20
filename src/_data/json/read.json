@@ -2,7 +2,7 @@
   {
     "isbn": "1640095411",
     "dateStarted": "2024-04-10",
-    "status": "started",
+    "status": "finished",
     "rating": "unrated",
     "tags": [
       "nonfiction"
@@ -20,7 +20,8 @@
     ],
     "thumbnail": "https://books.google.com/books/content?id=VvOxEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
-    "link": "https://books.google.com/books/about/Starkweather.html?hl=&id=VvOxEAAAQBAJ"
+    "link": "https://books.google.com/books/about/Starkweather.html?hl=&id=VvOxEAAAQBAJ",
+    "dateFinished": "2024-04-20"
   },
   {
     "isbn": "0316462845",
