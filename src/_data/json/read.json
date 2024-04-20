@@ -3230,5 +3230,28 @@
     "thumbnail": "https://books.google.com/books/content?id=pP02EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=pP02EAAAQBAJ"
+  },
+  {
+    "isbn": "9780316217569",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "The Vital Abyss",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "publishedDate": "2015-10-15",
+    "description": "A novella set in the hard-scrabble world of James S. A. Corey's NYT-bestselling Expanse series, The Vital Abyss is the secret history of the cataclysmic events that occurred on Eros station, and the revelation of what came after. . . Now a Prime Original series. This story will be available in the complete Expanse story collection, Memory’s Legion. HUGO AWARD WINNER FOR BEST SERIES Somewhere in the vast expanse of space, a group of prisoners lives in permanent captivity. The only company they have is each other and the Belters who guard them. The only stories they know are the triumphs and crimes that brought them there. The only future they see is an empty life in an enormous room. And then the man from Mars came along . . . The Expanse Leviathan Wakes Caliban's War Abaddon's Gate Cibola Burn Nemesis Games Babylon's Ashes Persepolis Rising Tiamat's Wrath ​Leviathan Falls Memory's Legion The Expanse Short Fiction Drive The Butcher of Anderson Station Gods of Risk The Churn The Vital Abyss Strange Dogs Auberon The Sins of Our Fathers",
+    "pageCount": 67,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=oC6XCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=oC6XCgAAQBAJ"
   }
 ]
