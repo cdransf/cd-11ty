@@ -12639,7 +12639,10 @@
     "url": "https://kevquirk.com/cross-posting-with-echofeed",
     "content_text": "🔗: Cross-Posting with EchoFeed via Kev Quirk  https://kevquirk.com/cross-posting-with-echofeed",
     "date_published": "Fri, 19 Apr 2024 15:36:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112305503684799998"
+    ],
+    "lastTootTimestamp": 1713645991312
   },
   "https://trakt.tv/movies/dune-part-two-2024": {
     "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvZHVuZS1wYXJ0LXR3by0yMDI0",
