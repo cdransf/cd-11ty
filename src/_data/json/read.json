@@ -3000,5 +3000,28 @@
     "thumbnail": "https://books.google.com/books/content?id=yud-foXqGUEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=yud-foXqGUEC"
+  },
+  {
+    "isbn": "9780316217637",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Babylon's Ashes",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "publishedDate": "2016-12-06",
+    "description": "The sixth book in the NYT bestselling Expanse series, Babylon's Ashes has the galaxy in full revolution, and it's up to the crew of the Rocinante to make a desperate mission to the gate network and thin hope of victory. Now a Prime Original series. HUGO AWARD WINNER FOR BEST SERIES ​ A revolution brewing for generations has begun in fire. It will end in blood. The Free Navy -- a violent group of Belters in black-market military ships -- has crippled the Earth and begun a campaign of piracy and violence among the outer planets. The colony ships heading for the thousand new worlds on the far side of the alien ring gates are easy prey, and no single navy remains strong enough to protect them. James Holden and his crew know the strengths and weaknesses of this new force better than anyone. Outnumbered and outgunned, the embattled remnants of the old political powers call on the Rocinante for a desperate mission to reach Medina Station at the heart of the gate network. But the new alliances are as flawed as the old, and the struggle for power has only just begun. Babylon's Ashes is a breakneck science fiction adventure following the bestselling Nemesis Games. The Expanse Leviathan Wakes Caliban's War Abaddon's Gate Cibola Burn Nemesis Games Babylon's Ashes Persepolis Rising Tiamat's Wrath ​Leviathan Falls Memory's Legion The Expanse Short Fiction Drive The Butcher of Anderson Station Gods of Risk The Churn The Vital Abyss Strange Dogs Auberon The Sins of Our Fathers",
+    "pageCount": 484,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=3jsYCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=3jsYCwAAQBAJ"
   }
 ]
