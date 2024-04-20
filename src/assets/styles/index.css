@@ -30,6 +30,7 @@
 @import url('./components/buttons.css') layer(components);
 @import url('./components/forms.css') layer(components);
 @import url('./components/link-peek.css') layer(components);
+@import url('./components/mastodon-post.css') layer(components);
 @import url('./components/media-grid.css') layer(components);
 @import url('./components/paginator.css') layer(components);
 @import url('./components/post-graph.css') layer(components);

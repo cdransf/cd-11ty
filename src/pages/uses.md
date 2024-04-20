@@ -67,7 +67,6 @@ Software and services that I use for work and my own enjoyment.
 - [Netlify](https://netlify.com): I use their hosting, forms and webhooks. It's a reliable and feature-rich platform.
 - <a onclick="clicky?.log('/uses', 'Clicky referral', 'click')" href="https://clicky.com/101449513">Clicky</a>: not the *prettiest* analytics, but very feature rich.
 - <a onclick="clicky?.log('/uses','Feedpress referral', 'click')" href="https://feedpress.com/?affid=34370">Feedpress</a>: they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
-- [EchoFeed](https://echofeed.app): [Robb Knight](https://rknight.me)'s beautifully designed and easy to use content syndication service — it makes the [POSSE](https://indieweb.org/POSSE) concept effortless to put into practice.
 - [Feedbin](https://feedbin.com): performant, open and super reliable RSS.
 - [Instapaper](https://instapaper.com): slow to change and often better for it — a reliable and steady read it later service.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.

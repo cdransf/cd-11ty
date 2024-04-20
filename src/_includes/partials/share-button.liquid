@@ -1,4 +1,4 @@
 <script type="module" src="/assets/scripts/components/webcare-webshare.js"></script>
-<webcare-webshare share-text="{{ title }} {{ url }}" share-url="{{ url }}" copy-text="{{ title }} {{ url }} {{ url }}">
+<webcare-webshare share-text="{{ title }} {{ url | tagLookup: tagMap }}" share-url="{{ url }}" copy-text="{{ title }} {{ url | tagLookup: tagMap }} {{ url }}">
   <button class="share icon-small icon-center-vertical" disabled>{% tablericon "share" "Share" %}</button>
 </webcare-webshare>

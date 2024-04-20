@@ -1,5 +1,6 @@
 import { DateTime } from 'luxon'
 import { makeYearStats, processPostFile } from './utils.js'
+import tagAliases from '../data/tag-aliases.js'
 
 export const searchIndex = (collection) => {
   const searchIndex = []
@@ -42,6 +43,23 @@ export const tagList = (collection) => {
       .forEach((tag) => tagsSet.add(tag))
   })
   return Array.from(tagsSet).sort()
+}
+
+export const tagMap = (collection) => {
+  const tags = {}
+  const collectionData = collection.getAll()[0]
+  const posts = collectionData.data.collections.posts
+  const links = collectionData.data.links
+  if (posts) {
+    posts.forEach((post) => {
+      const url = post.url.includes('http') ? post.url : `https://coryd.dev${post.url}`
+      const tagString = [...new Set(post.data.tags.map((tag) => tagAliases[tag.toLowerCase()]))]
+        .join(' ')
+        .trim()
+      if (tagString) tags[url] = tagString.replace(/\s+/g,' ')
+    })
+  }
+  return tags
 }
 
 export const tagsSortedByCount = (collection) => {

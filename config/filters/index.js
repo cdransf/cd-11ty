@@ -60,6 +60,13 @@ export default {
         return visitors(b) - visitors(a)
       })
   },
+  
+  tagLookup: (url, tagMap) => {
+    if (!url) return
+    if (url.includes('openlibrary.org')) return '#Books #NowReading'
+    if (url.includes('trakt.tv')) return '#Movies #Watching #Trakt'
+    return tagMap[url] || ''
+  },
 
   // authors
   authorLookup: (url) => {
