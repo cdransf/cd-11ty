@@ -2391,5 +2391,28 @@
     "thumbnail": "https://books.google.com/books/content?id=4R3gEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Climate_Book.html?hl=&id=4R3gEAAAQBAJ"
+  },
+  {
+    "isbn": "0316509841",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "fantasy"
+    ],
+    "title": "The City We Became",
+    "authors": [
+      "N. K. Jemisin"
+    ],
+    "publishedDate": "2020-03-24",
+    "description": "Five New Yorkers must come together in order to defend their city from an ancient evil in the first book of a stunning new novel by Hugo Award-winning and NYT bestselling author N. K. Jemisin. Every great city has a soul. Some are as ancient as myths, and others are as new and destructive as children. New York City? She's got six. But every city also has a dark side. A roiling, ancient evil stirs in the halls of power, threatening to destroy the city and her six newborn avatars unless they can come together and stop it once and for all. For more from N. K. Jemisin, check out: The Inheritance TrilogyThe Hundred Thousand KingdomsThe Broken KingdomsThe Kingdom of Gods The Inheritance Trilogy (omnibus edition)Shades in Shadow: An Inheritance Triptych (e-only short fiction)The Awakened Kingdom (e-only novella) Dreamblood DuologyThe Killing MoonThe Shadowed Sun The Dreamblood Duology (omnibus) The Broken EarthThe Fifth SeasonThe Obelisk GateThe Stone Sky How Long 'til Black Future Month? (short story collection)",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=qyPZwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_City_We_Became.html?hl=&id=qyPZwAEACAAJ"
   }
 ]
