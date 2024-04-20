@@ -71,6 +71,31 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9781984881731",
+    "dateFinished": "2023-11-28",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "A City on Mars",
+    "authors": [
+      "Kelly Weinersmith",
+      "Zach Weinersmith"
+    ],
+    "publishedDate": "2023-11-07",
+    "description": "* THE INSTANT NEW YORK TIMES BESTSELLER * Scientific American’s #1 Book for 2023 * A New York Times Book Review Editors' Choice * A Times Best Science and Environment Book of 2023 * “Exceptional. . . Forceful, engaging and funny . . . This book will make you happy to live on this planet — a good thing, because you’re not leaving anytime soon.” —New York Times Book Review From the bestselling authors of Soonish, a brilliant and hilarious off-world investigation into space settlement Earth is not well. The promise of starting life anew somewhere far, far away—no climate change, no war, no Twitter—beckons, and settling the stars finally seems within our grasp. Or is it? Critically acclaimed, bestselling authors Kelly and Zach Weinersmith set out to write the essential guide to a glorious future of space settlements, but after years of research, they aren’t so sure it’s a good idea. Space technologies and space business are progressing fast, but we lack the knowledge needed to have space kids, build space farms, and create space nations in a way that doesn’t spark conflict back home. In a world hurtling toward human expansion into space, A City on Mars investigates whether the dream of new worlds won’t create nightmares, both for settlers and the people they leave behind. In the process, the Weinersmiths answer every question about space you’ve ever wondered about, and many you’ve never considered: Can you make babies in space? Should corporations govern space settlements? What about space war? Are we headed for a housing crisis on the Moon’s Peaks of Eternal Light—and what happens if you’re left in the Craters of Eternal Darkness? Why do astronauts love taco sauce? Speaking of meals, what’s the legal status of space cannibalism? With deep expertise, a winning sense of humor, and art from the beloved creator of Saturday Morning Breakfast Cereal, the Weinersmiths investigate perhaps the biggest questions humanity will ever ask itself—whether and how to become multiplanetary. Get in, we’re going to Mars.",
+    "pageCount": 449,
+    "printType": "BOOK",
+    "categories": [
+      "Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ImmvEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=ImmvEAAAQBAJ"
+  },
+  {
     "isbn": "9781250850096",
     "dateFinished": "2023-12-03",
     "status": "finished",
