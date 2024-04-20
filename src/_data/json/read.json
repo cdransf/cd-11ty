@@ -71,6 +71,29 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "009953293X",
+    "dateFinished": "2024-02-03",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "fiction"
+    ],
+    "title": "Red Dragon",
+    "authors": [
+      "Thomas Harris"
+    ],
+    "publishedDate": "2009",
+    "description": "Special agent Will Graham has been assigned to cases before where he was able to see and feel with the madmen, anticipate their moves, and be vulnerable to their horrific brutality. Now after being forced out of retiring, he meets another evil mind.",
+    "pageCount": 434,
+    "printType": "BOOK",
+    "categories": [
+      "Criminal investigation"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=WXaLBEMd3-sC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Red_Dragon.html?hl=&id=WXaLBEMd3-sC"
+  },
+  {
     "isbn": "9780099446781",
     "dateFinished": "2024-02-05",
     "status": "finished",
