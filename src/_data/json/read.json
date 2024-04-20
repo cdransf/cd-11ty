@@ -71,6 +71,30 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9780593299456",
+    "dateFinished": "2024-03-07",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction",
+      "politics"
+    ],
+    "title": "Under the Eye of Power",
+    "authors": [
+      "Colin Dickey"
+    ],
+    "publishedDate": "2023-07-11",
+    "description": "From beloved cultural historian and acclaimed author of Ghostland comes a history of America's obsession with secret societies and the conspiracies of hidden power The United States was born in paranoia. From the American Revolution (thought by some to be a conspiracy organized by the French) to the Salem witch trials to the Satanic Panic, the Illuminati, and QAnon, one of the most enduring narratives that defines the United States is simply this: secret groups are conspiring to pervert the will of the people and the rule of law. We’d like to assume these panics exist only at the fringes of society, or are unique features of the internet age. But history tells us, in fact, that they are woven into the fabric of American democracy. Cultural historian Colin Dickey has built a career studying how our most irrational beliefs reach the mainstream, why, and what they tell us about ourselves. In Under the Eye of Power, Dickey charts the history of America through its paranoias and fears of secret societies, while seeking to explain why so many people—including some of the most powerful people in the country—continue to subscribe to these conspiracy theories. Paradoxically, he finds, belief in the fantastical and conspiratorial can be more soothing than what we fear the most: the chaos and randomness of history, the rising and falling of fortunes in America, and the messiness of democracy. Only in seeing the cycle of this history, Dickey says, can we break it.",
+    "pageCount": 369,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=H86UEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Under_the_Eye_of_Power.html?hl=&id=H86UEAAAQBAJ"
+  },
+  {
     "isbn": "9780525561019",
     "dateFinished": "2024-03-15",
     "status": "finished",
