@@ -2011,5 +2011,28 @@
     "thumbnail": "https://books.google.com/books/content?id=vO5KEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Ludicrous.html?hl=&id=vO5KEAAAQBAJ"
+  },
+  {
+    "isbn": "9781473223363",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Aurora Rising",
+    "authors": [
+      "Alastair Reynolds"
+    ],
+    "publishedDate": "2017-11-02",
+    "description": "Previously published as THE PREFECT. A rollercoaster ride through the dark and turbulent universe of REVELATION SPACE: an interstellar thriller where nothing - and no one - is what they seem ... Tom Dreyfus is a Prefect, a policeman of sorts, and one of the best. His force is Panoply, and his beat is the multi-faceted utopian society of the Glitter Band, that vast swirl of space habitats orbiting the planet Yellowstone. These days, his job is his life. A murderous attack against a Glitter Band habitat is nasty, but it looks to be an open-and-shut case - until Dreyfus starts looking under some stones that some very powerful people would really rather stayed unturned. What he uncovers is far more serious than mere gruesome murder: a covert takeover bid by a shadowy figure, Aurora (who may once have been human but certainly isn't now), who believes the people of the Glitter Band should no longer be in charge of their own destiny. Dreyfus discovers that to save something precious, you may have to destroy part of it. 'An adroit and fast-paced blend of space opera and police procedural, original and exciting' George R. R. Martin",
+    "pageCount": 528,
+    "printType": "BOOK",
+    "categories": [
+      "Space colonies"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ZdbetAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Aurora_Rising.html?hl=&id=ZdbetAEACAAJ"
   }
 ]
