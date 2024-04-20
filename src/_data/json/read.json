@@ -71,6 +71,27 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9780385548281",
+    "dateFinished": "2024-01-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Filterworld",
+    "authors": [
+      "Kyle Chayka"
+    ],
+    "publishedDate": "2024-01-16",
+    "description": "From New Yorker staff writer and author of The Longing for Less Kyle Chayka comes a timely history and investigation of a world ruled by algorithms, which determine the shape of culture itself. From coffee shops to rental apartments to social media posts the world round, a sleek and deceptively simple aesthetic has come to predominate. It's in the neon signs and exposed brick of an Internet cafe in Nairobi or the skeletal, modern furniture of an Airbnb in Portland. These designs are easy to identify, but even more crucially, they photograph well. In their simplicity and studied airiness, these images fit seamlessly into the Instagram grid. But this aesthetic is only one small aspect of a broader program of curation that is determined by the algorithm--a network of mathematically determined choices that ramify into the development of city grids and music playlists alike. To have our tastes, behaviors, and emotions governed by computers, does nothing short of call the very notion of free will into question. Over the last decade, Kyle Chayka has studied the homogeneity of this curation of reality. Working as a contributor for The New Yorker, The New York Times Magazine, and The New Republic, he has traveled to Berlin, Reykjavik, and Los Angeles tracing the algorithm's lineage. In Filterworld, Chayka lucidly examines how this deeply filtered aesthetic--spanning digital and physical spaces--creates an uncanny blend of work, home, and social life. As the algorithm determines our choices, other important questions arise: What happens when shareability supersedes messiness, innovation, and creativity--the very nature of being human? What does the notion of choice mean when the available options have been so carefully arranged for us? Filterworld offers a way out. Kyle Chayka shows us how to disconnect from the tyranny of the algorithms that continue to override our sensibilities, and inform even our most intimate, real-world interactions. Most importantly, he shows us how to reclaim our individual freedom.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=Lz3ZzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Filterworld.html?hl=&id=Lz3ZzwEACAAJ"
+  },
+  {
     "isbn": "9780241443903",
     "dateFinished": "2024-01-24",
     "status": "finished",
