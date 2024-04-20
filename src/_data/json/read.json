@@ -2247,5 +2247,29 @@
     "thumbnail": "https://books.google.com/books/content?id=l3dtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Creative_Act.html?hl=&id=l3dtEAAAQBAJ"
+  },
+  {
+    "isbn": "1912248700",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "economics"
+    ],
+    "title": "Abolish Silicon Valley",
+    "authors": [
+      "Wendy Liu"
+    ],
+    "publishedDate": "2020-03-23",
+    "description": "Former insider turned critic Wendy Liu busts the myths of the tech industry, and offers a galvanising argument for why and how we must reclaim technology's potential for the public good. Former insider turned critic Wendy Liu busts the myths of the tech industry, and offers a galvanising argument for why and how we must reclaim technology's potential for the public good. \"Lucid, probing and urgent. Wendy Liu manages to be both optimistic about the emancipatory potential of tech and scathing about the industry that has harnessed it for bleak and self-serving ends.\" -- Naomi Klein, author of On Fire: The Burning Case for a Green New Deal \"An inspiring memoir manifesto...Technologists all over the world are realizing that no amount of code can substitute for political engagement. Liu's memoir is a road map for that journey of realization.\" -- Cory Doctorow, author of Radicalized and Little Brother Innovation. Meritocracy. The possibility of overnight success. What's not to love about Silicon Valley? These days, it's hard to be unambiguously optimistic about the growth-at-all-costs ethos of the tech industry. Public opinion is souring in the wake of revelations about Cambridge Analytica, Theranos, and the workplace conditions of Amazon workers or Uber drivers. It's becoming clear that the tech industry's promised \"innovation\" is neither sustainable nor always desirable. Abolish Silicon Valley is both a heartfelt personal story about the wasteful inequality of Silicon Valley, and a rallying call to engage in the radical politics needed to upend the status quo. Going beyond the idiosyncrasies of the individual founders and companies that characterise the industry today, Wendy Liu delves into the structural factors of the economy that gave rise to Silicon Valley as we know it. Ultimately, she proposes a more radical way of developing technology, where innovation is conducted for the benefit of society at large, and not just to enrich a select few.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Technology & Engineering"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=JhiREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Abolish_Silicon_Valley.html?hl=&id=JhiREAAAQBAJ"
   }
 ]
