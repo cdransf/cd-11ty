@@ -74,7 +74,7 @@ export const tagMap = (collection) => {
   
   if (books) {
     books.forEach((book) => {
-      const tagString = book?.['tags']
+      const tagString = book.['tags']?
         .map((tag) => tagAliases[tag.toLowerCase()])
         .join(' ')
         .trim()
