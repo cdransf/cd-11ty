@@ -2082,5 +2082,29 @@
     "thumbnail": "https://books.google.com/books/content?id=UGt8zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Work_Won_t_Love_You_Back.html?hl=&id=UGt8zQEACAAJ"
+  },
+  {
+    "isbn": "1591847087",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Hatching Twitter",
+    "authors": [
+      "Nick Bilton"
+    ],
+    "publishedDate": "2014-09-30",
+    "description": "The dramatic, unlikely story behind the founding of Twitter, by New York Times bestselling author and Vanity Fair special correspondent The San Francisco-based technology company Twitter has become a powerful force in less than ten years. Today it’s everything from a tool for fighting political oppression in the Middle East to a marketing must-have to the world’s living room during live TV events to President Trump’s preferred method of communication. It has hundreds of millions of active users all over the world. But few people know that it nearly fell to pieces early on. In this rousing history that reads like a novel, Hatching Twitter takes readers behind the scenes of Twitter’s early exponential growth, following the four hackers—Ev Williams, Jack Dorsey, Biz Stone, and Noah Glass, who created the cultural juggernaut practically by accident. It’s a drama of betrayed friendships and high-stakes power struggles over money, influence, and control over a company that was growing faster than they could ever imagine. Drawing on hundreds of sources, documents, and internal e-mails, Bilton offers a rarely-seen glimpse of the inner workings of technology startups, venture capital, and Silicon Valley culture.",
+    "pageCount": 319,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=GX8ODAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Hatching_Twitter.html?hl=&id=GX8ODAAAQBAJ"
   }
 ]
