@@ -3092,5 +3092,28 @@
     "thumbnail": "https://books.google.com/books/content?id=XA4iEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=XA4iEAAAQBAJ"
+  },
+  {
+    "isbn": "9780316669078",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "The Sins of Our Fathers",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "publishedDate": "2022-03-15",
+    "description": "The final novella set in the universe of James S. A. Corey's NYT-bestselling Expanse series. Now a Prime Original series. This story is also available in the complete Expanse story collection, Memory’s Legion. HUGO AWARD WINNER FOR BEST SERIES Through one of the gates, a colony stands alone. Their supplies are low. Their defenses, weak. The leadership is uncertain, and the community fragile. Huge alien beasts threaten the little they have left. But the worst monsters are human, and the greatest dangers are the past they brought. The Expanse Leviathan Wakes Caliban's War Abaddon's Gate Cibola Burn Nemesis Games Babylon's Ashes Persepolis Rising Tiamat's Wrath ​Leviathan Falls Memory's Legion The Expanse Short Fiction Drive The Butcher of Anderson Station Gods of Risk The Churn The Vital Abyss Strange Dogs Auberon The Sins of Our Fathers",
+    "pageCount": 65,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=f_02EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=f_02EAAAQBAJ"
   }
 ]
