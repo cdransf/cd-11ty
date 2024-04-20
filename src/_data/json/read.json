@@ -1,5 +1,29 @@
 [
   {
+    "isbn": "9781982146863",
+    "dateFinished": "2023-10-08",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Extremely Online",
+    "authors": [
+      "Taylor Lorenz"
+    ],
+    "publishedDate": "2023-10-03",
+    "description": "For over a decade, Taylor Lorenz has been the authority on Internet culture, documenting its far-reaching effects on all corners of our lives. Her reporting is serious yet entertaining and illuminates deep truths about ourselves and the lives we create online. In her debut book, Extremely Online, she reveals how online influence came to upend the world, demolishing traditional barriers and creating whole new sectors of the economy. Lorenz shows this phenomenon to be one of the most disruptive changes in modern capitalism. By tracing how the Internet has changed what we want and how we go about getting it, Lorenz unearths how social platforms' power users radically altered our expectations of content, connection, purchasing, and power. Lorenz documents how moms who started blogging were among the first to monetize their personal brands online, how bored teens who began posting selfie videos reinvented fame as we know it, and how young creators on TikTok are leveraging opportunities to opt out of the traditional career pipeline. It's the real social history of the Internet. Emerging seemingly out of nowhere, these shifts in how we use the Internet seem easy to dismiss as fads. However, these social and economic transformations have resulted in a digital dynamic so unappreciated and insurgent that it ultimately created new approaches to work, entertainment, fame, and ambition in the 21st century. Extremely Online is the inside, untold story of what we have done to the Internet, and what it has done to us…",
+    "pageCount": 384,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=aHDVEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Extremely_Online.html?hl=&id=aHDVEAAAQBAJ"
+  },
+  {
     "isbn": "9781631497513",
     "dateFinished": "2023-10-17",
     "status": "finished",
