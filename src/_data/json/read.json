@@ -71,6 +71,30 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9781250850096",
+    "dateFinished": "2023-12-03",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction",
+      "tech"
+    ],
+    "title": "The Bill Gates Problem",
+    "authors": [
+      "Tim Schwab"
+    ],
+    "publishedDate": "2023-11-14",
+    "description": "A powerful investigation of Bill Gates and the Gates Foundation, showing how he uses philanthropy to exercise enormous political power without accountability Through his vaunted philanthropy, Bill Gates transformed himself from a tech villain into one of the most admired people on the planet. Even as divorce proceedings and allegations of misconduct have recently tarnished his public image, the beneficence of the Gates Foundation, celebrated for spending billions to save lives around the globe, is taken as a given. But as Tim Schwab shows in this fearless investigation, Gates is still exactly who he was at Microsoft: a bully and monopolist, convinced of his own righteousness and intent on imposing his ideas, his solutions, and his leadership on everyone else. At the core, he is not a selfless philanthropist but a power broker, a clever engineer who has innovated a way to turn extreme wealth into immense political influence—and who has made us believe we should applaud his acquisition of power, not challenge it. Piercing the blinding halo that has for too long shielded the world’s most powerful (and most secretive) charitable organization from public scrutiny, The Bill Gates Problem shows how Gates’s billions have purchased a stunning level of control over public policy, private markets, scientific research, and the news media. Whether he is pushing new educational standards in America, health reforms in India, global vaccine policy during the pandemic, or Western industrialized agriculture throughout Africa, Gates’s heady social experimentation has shown itself to be not only undemocratic, but also ineffective. In many places, Bill Gates is hurting the very people he intends to help. No less than dark-money campaign contributions or big-business political lobbying, Bill Gates’s philanthropic empire needs to be seen as a problem of money in politics. It is a dangerous model of unconstrained power that threatens democracy and demands our attention.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=veq_EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Bill_Gates_Problem.html?hl=&id=veq_EAAAQBAJ"
+  },
+  {
     "isbn": "9780345404473",
     "dateFinished": "2023-12-06",
     "status": "finished",
