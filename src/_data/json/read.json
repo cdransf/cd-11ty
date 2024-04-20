@@ -2295,5 +2295,28 @@
     "thumbnail": "https://books.google.com/books/content?id=89E_zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Capital_in_the_Twenty_First_Century.html?hl=&id=89E_zQEACAAJ"
+  },
+  {
+    "isbn": "1455574139",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "The Good Nurse",
+    "authors": [
+      "Charles Graeber"
+    ],
+    "publishedDate": "2014-07-29",
+    "description": "\"CHILLING.\" -- Stephen King An intimate -- and frightening -- glimpse inside the mind of America's most prolific serial killer, Charles Cullen, whose 16-year long \"nursing\" career left as many as 400 dead. When nurse Charlie Cullen was arrested in 2003, journalists were quick to dub him \"The Angel of Death.\" But Cullen was neither a mercy killer nor a simple monster. He was a son, a husband, a father, a best friend, and a valued caregiver. He was also implicated in the deaths of as many as 400 people, and may be the most prolific serial killer in American history. Cullen's career in the world's most trusted profession spanned sixteen years, across nine hospitals. In this riveting work of investigative journalism, Charles Graeber-the only person Cullen chose to speak with following his arrest-reveals how Cullen got away with murder for so long. Based on hundreds of hours of previously unseen and unheard footage, recordings, and records, as well as extensive interviews with homicide detectives, Cullen's friends, family, coworkers, and confidential informants and whistleblowers, plus exclusive, one-on-one interviews with Cullen, himself, THE GOOD NURSE paints a dramatic portrait of madness and the bounds of friendship, and shines a spotlight on America's medical system. A harrowing and irresistibly paced book, you'll never look at a hospital the same way again.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "True Crime"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=6sUZnwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Good_Nurse.html?hl=&id=6sUZnwEACAAJ"
   }
 ]
