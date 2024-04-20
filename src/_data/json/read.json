@@ -2701,5 +2701,28 @@
     "thumbnail": "https://books.google.com/books/content?id=bfE3EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=bfE3EAAAQBAJ"
+  },
+  {
+    "isbn": "9781429925051",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Jumper: Griffin's Story",
+    "authors": [
+      "Steven Gould"
+    ],
+    "publishedDate": "2008-02-05",
+    "description": "An original novel from Steven Gould, creator of the Jumper series, that tells the back story of Griffin O'Connor, a character created for the film of Jumper. What if you could jump? Go anywhere in the world in the blink of an eye? What would you do? Where would you go? What if you were only five years old? Griffin has a secret. It's a secret that he's sworn to his parents to keep, and never tell. Griffin is a Jumper: a person who can teleport to any place he has ever been. The first time was when he was five, and his parents crossed an ocean to protect the secret. The most important time was when he was nine. That was the day that the men came to his house and murdered his parents. Griffin knows that the men were looking for him, and he must never let them find him. Griffin grows up with only two goals: to survive, and to kill the people who want him dead. And a Jumper bent on revenge is not going to let anything stand in his way. Jumper is a major motion picture from 20th Century Fox/New Regency Productions, starring Hayden Christensen, Samuel L. Jackson, Diane Lane, and Jamie Bell. At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+    "pageCount": 288,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=pUPwoQrLtQUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=pUPwoQrLtQUC"
   }
 ]
