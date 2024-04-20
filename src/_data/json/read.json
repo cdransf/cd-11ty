@@ -1987,5 +1987,29 @@
     "thumbnail": "https://books.google.com/books/content?id=eZVUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Myth_of_Normal.html?hl=&id=eZVUEAAAQBAJ"
+  },
+  {
+    "isbn": "9781950665655",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Ludicrous",
+    "authors": [
+      "Edward Niedermeyer"
+    ],
+    "publishedDate": "2021-01-12",
+    "description": "Tesla is the most exciting car company in a generation . . . but can it live up to the hype? Tesla Motors and CEO Elon Musk have become household names, shaking up the staid auto industry by creating a set of innovative electric vehicles that have wowed the marketplace and defied conventional wisdom. The company's market valuation now rivals that of long-established automakers, and, to many industry observers, Tesla is defining the future of the industry. But behind the hype, Tesla has some serious deficiencies that raise questions about its sky-high valuation, and even its ultimate survival. Tesla's commitment to innovation has led it to reject the careful, zero-defects approach of other car manufacturers, even as it struggles to mass-produce cars reliably, and with minimal defects. While most car manufacturers struggle with the razor-thin margins of mid-priced sedans, Tesla's strategy requires that the Model 3 finally bring it to profitability, even as the high-priced Roadster and Model S both lost money. And Tesla's approach of continually focusing on the future, even as commitments and deadlines are repeatedly missed, may ultimately test the patience of all but its most devoted fans. In Ludicrous, journalist and auto industry analyst Edward Niedermeyer lays bare the disconnect between the popular perception of Tesla and the day-to-day realities of the company—and the cars it produces. Blending original reporting and never-before-published insider accounts with savvy industry analysis, Niedermeyer tells the story of Tesla as it's never been told before—with clear eyes, objectivity and insight.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=vO5KEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Ludicrous.html?hl=&id=vO5KEAAAQBAJ"
   }
 ]
