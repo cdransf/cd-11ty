@@ -1,5 +1,29 @@
 [
   {
+    "isbn": "9781620975411",
+    "dateFinished": "2023-09-19",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "economics",
+      "politics"
+    ],
+    "title": "Monopolized",
+    "authors": [
+      "David Dayen"
+    ],
+    "publishedDate": "2020",
+    "description": "\"David Dayen explains how a narrow interpretation of the Sherman Act four decades ago spawned an age of unprecedented deregulation and corporate dominance. Dayen offers a riveting account of what it means to live in this period--and how we might resist this corporate hegemony.\"--Dust jacket flap.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=KN5OxwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Monopolized.html?hl=&id=KN5OxwEACAAJ"
+  },
+  {
     "isbn": "9780593443811",
     "dateFinished": "2023-09-24",
     "status": "finished",
