@@ -2106,5 +2106,28 @@
     "thumbnail": "https://books.google.com/books/content?id=GX8ODAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Hatching_Twitter.html?hl=&id=GX8ODAAAQBAJ"
+  },
+  {
+    "isbn": "0374601178",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech"
+    ],
+    "title": "Fancy Bear Goes Phishing",
+    "authors": [
+      "Scott J. Shapiro"
+    ],
+    "publishedDate": "2023-05-23",
+    "description": "\"Unsettling, absolutely riveting, and—for better or worse—necessary reading.\" —Brian Christian, author of Algorithms to Live By and The Alignment Problem An entertaining account of the philosophy and technology of hacking—and why we all need to understand it. It’s a signal paradox of our times that we live in an information society but do not know how it works. And without understanding how our information is stored, used, and protected, we are vulnerable to having it exploited. In Fancy Bear Goes Phishing, Scott J. Shapiro draws on his popular Yale University class about hacking to expose the secrets of the digital age. With lucidity and wit, he establishes that cybercrime has less to do with defective programming than with the faulty wiring of our psyches and society. And because hacking is a human-interest story, he tells the fascinating tales of perpetrators, including Robert Morris Jr., the graduate student who accidentally crashed the internet in the 1980s, and the Bulgarian “Dark Avenger,” who invented the first mutating computer-virus engine. We also meet a sixteen-year-old from South Boston who took control of Paris Hilton’s cell phone, the Russian intelligence officers who sought to take control of a US election, and others. In telling their stories, Shapiro exposes the hackers’ tool kits and gives fresh answers to vital questions: Why is the internet so vulnerable? What can we do in response? Combining the philosophical adventure of Gödel, Escher, Bach with dramatic true-crime narrative, the result is a lively and original account of the future of hacking, espionage, and war, and of how to live in an era of cybercrime. Includes black-and-white images",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Computers"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=nbWYEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Fancy_Bear_Goes_Phishing.html?hl=&id=nbWYEAAAQBAJ"
   }
 ]
