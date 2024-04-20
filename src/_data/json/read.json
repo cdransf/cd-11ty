@@ -1,5 +1,31 @@
 [
   {
+    "isbn": "9781631497513",
+    "dateFinished": "2023-10-17",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "television",
+      "nonfiction"
+    ],
+    "title": "Mcu",
+    "authors": [
+      "Joanna Robinson",
+      "Dave Gonzales",
+      "Gavin Edwards"
+    ],
+    "publishedDate": "2023-11-07",
+    "description": "The unauthorized, behind-the-scenes story of the stunning rise--and suddenly uncertain reign--of the most transformative cultural phenomenon of our time: the Marvel Cinematic Universe.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Comics & Graphic Novels"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=xs2czwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Mcu.html?hl=&id=xs2czwEACAAJ"
+  },
+  {
     "isbn": "9780593492673",
     "dateFinished": "2023-10-20",
     "status": "finished",
