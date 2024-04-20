@@ -49,11 +49,18 @@ export const tagMap = (collection) => {
   const tags = {}
   const collectionData = collection.getAll()[0]
   const posts = collectionData.data.collections.posts
-  const links = collectionData.data.links
+  const links = collectionData.data.collections.links
   if (posts) {
     posts.forEach((post) => {
       const url = post.url.includes('http') ? post.url : `https://coryd.dev${post.url}`
       const tagString = [...new Set(post.data.tags.map((tag) => tagAliases[tag.toLowerCase()]))]
+        .join(' ')
+        .trim()
+      if (tagString) tags[url] = tagString.replace(/\s+/g,' ')
+    })
+    links.forEach((link) => {
+      const url = link.data.link
+      const tagString = [...new Set(link.data.tags.map((tag) => tagAliases[tag.toLowerCase()]))]
         .join(' ')
         .trim()
       if (tagString) tags[url] = tagString.replace(/\s+/g,' ')
