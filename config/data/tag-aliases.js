@@ -15,6 +15,7 @@ export default {
   eleventy: '#Eleventy',
   email: '#Email',
   emo: '#Emo',
+  fantasy: '#Fantasy',
   fastmail: '#Email',
   fiction: '#Fiction',
   gmail: '#Email',
