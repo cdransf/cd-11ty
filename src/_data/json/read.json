@@ -2034,5 +2034,29 @@
     "thumbnail": "https://books.google.com/books/content?id=ZdbetAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Aurora_Rising.html?hl=&id=ZdbetAEACAAJ"
+  },
+  {
+    "isbn": "9780374538668",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Blockchain Chicken Farm",
+    "authors": [
+      "Xiaowei Wang"
+    ],
+    "publishedDate": "2020-10-13",
+    "description": "From FSGO x Logic: stories about rural China, food, and tech that reveal new truths about the globalized world In Blockchain Chicken Farm, the technologist and writer Xiaowei Wang explores the political and social entanglements of technology in rural China. Their discoveries force them to challenge the standard idea that rural culture and people are backward, conservative, and intolerant. Instead, they find that rural China has not only adapted to rapid globalization but has actually innovated the technology we all use today. From pork farmers using AI to produce the perfect pig, to disruptive luxury counterfeits and the political intersections of e-commerce villages, Wang unravels the ties between globalization, technology, agriculture, and commerce in unprecedented fashion. Accompanied by humorous “Sinofuturist” recipes that frame meals as they transform under new technology, Blockchain Chicken Farm is an original and probing look into innovation, connectivity, and collaboration in the digitized rural world. FSG Originals × Logic dissects the way technology functions in everyday lives. The titans of Silicon Valley, for all their utopian imaginings, never really had our best interests at heart: recent threats to democracy, truth, privacy, and safety, as a result of tech’s reckless pursuit of progress, have shown as much. We present an alternate story, one that delights in capturing technology in all its contradictions and innovation, across borders and socioeconomic divisions, from history through the future, beyond platitudes and PR hype, and past doom and gloom. Our collaboration features four brief but provocative forays into the tech industry’s many worlds, and aspires to incite fresh conversations about technology focused on nuanced and accessible explorations of the emerging tools that reorganize and redefine life today.",
+    "pageCount": 256,
+    "printType": "BOOK",
+    "categories": [
+      "Computers"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=myUyzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Blockchain_Chicken_Farm.html?hl=&id=myUyzQEACAAJ"
   }
 ]
