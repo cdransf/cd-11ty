@@ -71,6 +71,29 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9780385519250",
+    "dateFinished": "2024-02-14",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "The Siege of Mecca",
+    "authors": [
+      "Yaroslav Trofimov"
+    ],
+    "publishedDate": "2007",
+    "description": "On November 20, 1979, hundreds of gunmen stunned the world by seizing Islams holiest shrine, the Grand Mosque in Mecca. Trofimov interviews for the first time scores of direct participants in the siege, including former terrorists, and draws on hundreds of once-classified documents.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Mecca (Saudi Arabia)"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=R84lmAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Siege_of_Mecca.html?hl=&id=R84lmAEACAAJ"
+  },
+  {
     "isbn": "9781847927279",
     "dateFinished": "2024-02-16",
     "status": "finished",
@@ -159,7 +182,7 @@
     "categories": [
       "Mountaineering"
     ],
-        "thumbnail": "https://books.google.com/books/content?id=gt7EQgH8-b4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "thumbnail": "https://books.google.com/books/content?id=gt7EQgH8-b4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Into_Thin_Air.html?hl=&id=nEVCPgAACAAJ"
   },
