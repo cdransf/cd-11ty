@@ -2341,5 +2341,30 @@
     "thumbnail": "https://books.google.com/books/content?id=8o8IzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_World_We_Make.html?hl=&id=8o8IzgEACAAJ"
+  },
+  {
+    "isbn": "1786070472",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics"
+    ],
+    "title": "The Panama Papers",
+    "authors": [
+      "Bastian Obermayer",
+      "Frederik Obermaier"
+    ],
+    "publishedDate": "2016",
+    "description": "\"With precision and purpose, THE PANAMA PAPERS is what 'Follow the Money' means.\" --Bob Woodward,The Washington Post Late one evening, investigative journalist Bastian Obermayer receives an anonymous message offering him access to secret data. Through encrypted channels, he then receives documents revealing how the president of Argentina has sequestered millions of dollars of state money for private use. This is just the beginning. Obermayer and fellowSüddeutsche journalist Frederik Obermaier find themselves immersed in the secret world where complex networks of letterbox companies help the super-rich to hide their money. Faced with the contents of the largest data leak in history, they activate an international network of journalists to follow every possible line of inquiry. Operating in the strictest secrecy for over a year, they uncover cases involving European prime ministers and international dictators, emirs and kings, celebrities and aristocrats. The real-life thriller behind the story of the century,The Panama Papers is an intense, unputdownable account that proves, once and for all, that there exists a small elite living by a different set of rules and blows their secret world wide open.",
+    "pageCount": 366,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=jNLhjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Panama_Papers.html?hl=&id=jNLhjwEACAAJ"
   }
 ]
