@@ -2908,5 +2908,28 @@
     "thumbnail": "https://books.google.com/books/content?id=DaN3-r0EXOcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=DaN3-r0EXOcC"
+  },
+  {
+    "isbn": "9780307781925",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Rise of Endymion",
+    "authors": [
+      "Dan Simmons"
+    ],
+    "publishedDate": "2011-01-12",
+    "description": "The magnificent conclusion to one of the greatest science fiction sagas of our time The time of reckoning has arrived. As a final genocidal Crusade threatens to enslave humanity forever, a new messiah has come of age. She is Aenea and she has undergone a strange apprenticeship to those known as the Others. Now her protector, Raul Endymion, one-time shepherd and convicted murderer, must help her deliver her startling message to her growing army of disciples. But first they must embark on a final spectacular mission to discover the underlying meaning of the universe itself. They have been followed on their journey by the mysterious Shrike--monster, angel, killing machine--who is about to reveal the long-held secret of its origin and purpose. And on the planet of Hyperion, where the story first began, the final revelation will be delivered--an apocalyptic message that unlocks the secrets of existence and the fate of humankind in the galaxy.",
+    "pageCount": 1066,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=rsSPgjg5O9IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=rsSPgjg5O9IC"
   }
 ]
