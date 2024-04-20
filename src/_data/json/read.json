@@ -96,6 +96,30 @@
     "link": "https://play.google.com/store/books/details?id=ImmvEAAAQBAJ"
   },
   {
+    "isbn": "9780593793190",
+    "dateFinished": "2023-12-01",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Broken Code",
+    "authors": [
+      "Jeff Horwitz"
+    ],
+    "publishedDate": "2023-11-14",
+    "description": "By an award-winning technology reporter for The Wall Street Journal, a behind-the-scenes look at the manipulative tactics Facebook used to grow its business, how it distorted the way we connect online, and the company insiders who found the courage to speak out \"A page-turning narrative of immense importance.” —James B. Stewart, Pulitzer Prize-winning investigative journalist and New York Times bestselling author Once the unrivaled titan of social media, Facebook held a singular place in culture and politics. Along with its sister platforms Instagram and WhatsApp, it was a daily destination for billions of users around the world. Inside and outside the company, Facebook extolled its products as bringing people closer together and giving them voice. But in the wake of the 2016 election, even some of the company’s own senior executives came to consider those claims pollyannaish and simplistic. As a succession of scandals rocked Facebook, they—and the world—had to ask whether the company could control, or even understood, its own platforms. Facebook employees set to work in pursuit of answers. They discovered problems that ran far deeper than politics. Facebook was peddling and amplifying anger, looking the other way at human trafficking, enabling drug cartels and authoritarians, allowing VIP users to break the platform’s supposedly inviolable rules. They even raised concerns about whether the product was safe for teens. Facebook was distorting behavior in ways no one inside or outside the company understood. Enduring personal trauma and professional setbacks, employees successfully identified the root causes of Facebook's viral harms and drew up concrete plans to address them. But the costs of fixing the platform—often measured in tenths of a percent of user engagement—were higher than Facebook's leadership was willing to pay. With their work consistently delayed, watered down, or stifled, those who best understood Facebook’s damaging effect on users were left with a choice: to keep silent or go against their employer. Broken Code tells the story of these employees and their explosive discoveries. Expanding on “The Facebook Files,” his blockbuster, award-winning series for The Wall Street Journal, reporter Jeff Horwitz lays out in sobering detail not just the architecture of Facebook’s failures, but what the company knew (and often disregarded) about its societal impact. In 2021, the company would rebrand itself Meta, promoting a techno-utopian wonderland. But as Broken Code shows, the problems spawned around the globe by social media can’t be resolved by strapping on a headset.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=JuytEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Broken_Code.html?hl=&id=JuytEAAAQBAJ"
+  },
+  {
     "isbn": "9781250850096",
     "dateFinished": "2023-12-03",
     "status": "finished",
