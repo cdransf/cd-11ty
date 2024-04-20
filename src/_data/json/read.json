@@ -1,5 +1,29 @@
 [
   {
+    "isbn": "9780062295897",
+    "dateFinished": "2023-09-28",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Girl in a Band",
+    "authors": [
+      "Kim Gordon"
+    ],
+    "publishedDate": "2015-02-24",
+    "description": "NEW YORK TIMES BESTSELLER Kim Gordon, founding member of Sonic Youth, fashion icon, and role model for a generation of women, now tells her story—a memoir of life as an artist, of music, marriage, motherhood, independence, and as one of the first women of rock and roll, written with the lyricism and haunting beauty of Patti Smith's Just Kids. Often described as aloof, Kim Gordon opens up as never before in Girl in a Band. Telling the story of her family, growing up in California in the '60s and '70s, her life in visual art, her move to New York City, the men in her life, her marriage, her relationship with her daughter, her music, and her band, Girl in a Band is a rich and beautifully written memoir. Gordon takes us back to the lost New York of the 1980s and '90s that gave rise to Sonic Youth, and the Alternative revolution in popular music. The band helped build a vocabulary of music—paving the way for Nirvana, Hole, Smashing Pumpkins and many other acts. But at its core, Girl in a Band examines the route from girl to woman in uncharted territory, music, art career, what partnership means—and what happens when that identity dissolves. Evocative and edgy, filled with the sights and sounds of a changing world and a transformative life, Girl in a Band is the fascinating chronicle of a remarkable journey and an extraordinary artist.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=gK6SrgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Girl_in_a_Band.html?hl=&id=gK6SrgEACAAJ"
+  },
+  {
     "isbn": "9780316487740",
     "dateFinished": "2023-10-04",
     "status": "finished",
