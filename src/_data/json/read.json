@@ -71,6 +71,30 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9780369700018",
+    "dateFinished": "2023-10-30",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction",
+      "science"
+    ],
+    "title": "The Possibility of Life",
+    "authors": [
+      "Jaime Green"
+    ],
+    "publishedDate": "2023-04-18",
+    "description": "*An NPR Science Friday Book Club Pick* *A \"Next Big Idea Book Club\" Must Read?* *A Gizmodo New Release Pick for April* *A BookRiot Science Book to Add to Your TBR* *A Wired Book to Read for Spring* *A TODAY Show Summer Book* *A Washington Post Book to Read This Summer* *One of the Chicago Tribune's 52 Books for Summer 2023* \"A dazzling feat of imagination and synthesis.\"—Ed Yong, Pulitzer Prize winner and author of An Immense World A spellbinding exploration of alien life and the cosmos, examining how the possibility of life on other planets shapes our understanding of humanity One of the most powerful questions humans ask about the cosmos is: Are we alone? While the science behind this inquiry is fascinating, it doesn’t exist in a vacuum. It is a reflection of our values, our fears, and most importantly, our enduring sense of hope. In The Possibility of Life, acclaimed science journalist Jaime Green traces the history of our understanding, from the days of Galileo and Copernicus to our contemporary quest for exoplanets. Along the way, she interweaves insights from science fiction writers who construct worlds that in turn inspire scientists. Incorporating expert interviews, cutting-edge astronomy research, philosophical inquiry, and pop culture touchstones ranging from A Wrinkle in Time to Star Trek to Arrival, The Possibility of Life explores our evolving conception of the cosmos to ask an even deeper question: What does it mean to be human?",
+    "pageCount": 286,
+    "printType": "BOOK",
+    "categories": [
+      "Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=cHNwEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=cHNwEAAAQBAJ"
+  },
+  {
     "isbn": "9780525655497",
     "dateFinished": "2023-11-01",
     "status": "finished",
