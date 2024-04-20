@@ -1,5 +1,29 @@
 [
   {
+    "isbn": "9781804291245",
+    "dateFinished": "2023-09-13",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "The Internet Con",
+    "authors": [
+      "Cory Doctorow"
+    ],
+    "publishedDate": "2023-09-05",
+    "description": "A detailed disassembly manual for people who want to dismantle Big Tech We have recently seen the enshittification of the internet. The tech platforms have created monopolies whose high walls make it expensive to move freely online. They built self-serving, artificial barriers to maintaining connections across platforms. The cost of leaving X or Facebook grew higher, holding hostage the people you love, the communities that matter to you, and the audiences and customers you rely on. None of this is caused by technological limitations: it was a business decision, intended to commodify every part of your personal life. We can choose otherwise: we can dismantle the tech platforms. In The Internet Con, Cory Doctorow explains how to seize the means of computation. We must force upon Silicon Valley the thing it fears most: interoperability. That means tearing down the walls between platforms, allowing users to mix, match, plug in, and repair without restrictions. Interoperability is the only route to the rapid and total annihilation of the platforms. The Internet Con is the disassembly manual we need to fix tech for good, and take back our Internet.",
+    "pageCount": 193,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=pbetEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Internet_Con.html?hl=&id=pbetEAAAQBAJ"
+  },
+  {
     "isbn": "9780393322231",
     "dateFinished": "2023-09-14",
     "status": "finished",
