@@ -2414,5 +2414,28 @@
     "thumbnail": "https://books.google.com/books/content?id=qyPZwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_City_We_Became.html?hl=&id=qyPZwAEACAAJ"
+  },
+  {
+    "isbn": "9780316221047",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Operation Paperclip",
+    "authors": [
+      "Annie Jacobsen"
+    ],
+    "publishedDate": "2014-02-11",
+    "description": "The explosive story of America's secret post-WWII science programs, from the author of the New York Times bestseller Area 51 In the chaos following World War II, the U.S. government faced many difficult decisions, including what to do with the Third Reich's scientific minds. These were the brains behind the Nazis' once-indomitable war machine. So began Operation Paperclip, a decades-long, covert project to bring Hitler's scientists and their families to the United States. Many of these men were accused of war crimes, and others had stood trial at Nuremberg; one was convicted of mass murder and slavery. They were also directly responsible for major advances in rocketry, medical treatments, and the U.S. space program. Was Operation Paperclip a moral outrage, or did it help America win the Cold War? Drawing on exclusive interviews with dozens of Paperclip family members, colleagues, and interrogators, and with access to German archival documents (including previously unseen papers made available by direct descendants of the Third Reich's ranking members), files obtained through the Freedom of Information Act, and dossiers discovered in government archives and at Harvard University, Annie Jacobsen follows more than a dozen German scientists through their postwar lives and into a startling, complex, nefarious, and jealously guarded government secret of the twentieth century. In this definitive, controversial look at one of America's most strategic, and disturbing, government programs, Jacobsen shows just how dark government can get in the name of national security.",
+    "pageCount": 592,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=iHVTlwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Operation_Paperclip.html?hl=&id=iHVTlwEACAAJ"
   }
 ]
