@@ -1305,5 +1305,28 @@
     "thumbnail": "https://books.google.com/books/content?id=te9EzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Black_Ball.html?hl=&id=te9EzwEACAAJ"
+  },
+  {
+    "isbn": "9780593085172",
+    "dateFinished": "2023-11-16",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Providence",
+    "authors": [
+      "Max Barry"
+    ],
+    "publishedDate": "2020",
+    "description": "Seven years after first contact, Providence Five launches. An enormous warship, built to protect humanity, it has a crew of four. Gilly, Talia, Anders, and Jackson will be confined to the ship for years, monitoring the AI-powered ship and reporting the war's progress to a global audience by way of social media. When their communications are cut, their ship becomes decreasingly trustworthy. To survive, they must win a fight that is suddenly and terrifyingly real. -- adapted from jacket",
+    "pageCount": 322,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=yfLsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Providence.html?hl=&id=yfLsDwAAQBAJ"
   }
 ]
