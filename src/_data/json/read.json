@@ -1924,6 +1924,10 @@
     "dateFinished": "2024-04-20",
     "status": "finished",
     "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
     "title": "Corporate Rock Sucks",
     "authors": [
       "Jim Ruland"
