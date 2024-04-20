@@ -50,14 +50,19 @@ export const tagMap = (collection) => {
   const collectionData = collection.getAll()[0]
   const posts = collectionData.data.collections.posts
   const links = collectionData.data.collections.links
+  const books = collectionData.data.books
+
   if (posts) {
     posts.forEach((post) => {
       const url = post.url.includes('http') ? post.url : `https://coryd.dev${post.url}`
-      const tagString = [...new Set(post.data.tags.map((tag) => tagAliases[tag.toLowerCase()]))]
+      const tagString = [...new Set(post.data.tags?.map((tag) => tagAliases[tag.toLowerCase()]))]
         .join(' ')
         .trim()
       if (tagString) tags[url] = tagString.replace(/\s+/g,' ')
     })
+  }
+  
+  if (links) {
     links.forEach((link) => {
       const url = link.data.link
       const tagString = [...new Set(link.data.tags?.map((tag) => tagAliases[tag.toLowerCase()]))]
@@ -66,6 +71,17 @@ export const tagMap = (collection) => {
       if (tagString) tags[url] = tagString.replace(/\s+/g,' ')
     })
   }
+  
+  if (books) {
+    books.forEach((book) => {
+      const tagString = book?.['tags']
+        .map((tag) => tagAliases[tag.toLowerCase()])
+        .join(' ')
+        .trim()
+      if (tagString) tags[book.url] = tagString.replace(/\s+/g,' ')
+    })
+  }
+  
   return tags
 }
 

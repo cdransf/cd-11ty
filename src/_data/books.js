@@ -12,6 +12,7 @@ export default async function () {
       url: `https://openlibrary.org/isbn/${book['isbn']}`,
       dateAdded: book?.['dateStarted'] || book?.['dateFinished'],
       status: book['status'],
+      tags: book['tags'],
       type: 'book',
     }
   ))

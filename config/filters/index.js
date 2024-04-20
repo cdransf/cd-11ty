@@ -63,7 +63,7 @@ export default {
   
   tagLookup: (url, tagMap) => {
     if (!url) return
-    if (url.includes('openlibrary.org')) return '#Books #NowReading'
+    if (url.includes('openlibrary.org')) return `#Books #NowReading ${tagMap[url]}`
     if (url.includes('trakt.tv')) return '#Movies #Watching #Trakt'
     return tagMap[url] || ''
   },
