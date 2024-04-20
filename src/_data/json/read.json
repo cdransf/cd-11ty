@@ -2862,5 +2862,28 @@
     "thumbnail": "https://books.google.com/books/content?id=WqkIdLAEgfYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=WqkIdLAEgfYC"
+  },
+  {
+    "isbn": "9780765336545",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Exo",
+    "authors": [
+      "Steven Gould"
+    ],
+    "publishedDate": "2014-09-09",
+    "description": "A sequel to Impulse returns readers to the world of Jumper and follows the experiences of a teen girl whose teleporting abilities subject her to the illicit agendas of corrupt and violent factions.",
+    "pageCount": 462,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=wnItBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Exo.html?hl=&id=wnItBAAAQBAJ"
   }
 ]
