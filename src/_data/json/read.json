@@ -71,6 +71,29 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9780306827341",
+    "dateFinished": "2024-01-28",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech"
+    ],
+    "title": "The Algorithm",
+    "authors": [
+      "Hilke Schellmann"
+    ],
+    "publishedDate": "2024-01-02",
+    "description": "Based on exclusive information from whistleblowers, internal documents, and real world test results, Emmy‑award winning Wall Street Journal contributor Hilke Schellmann delivers a shocking and illuminating expose on the next civil rights issue of our time: how AI has already taken over the workplace and shapes our future. Hilke Schellmann, is an Emmy‑award winning investigative reporter, Wall Street Journal and Guardian contributor and Journalism Professor at NYU. In The Algorithm, she investigates the rise of artificial intelligence (AI) in the world of work. AI is now being used to decide who has access to an education, who gets hired, who gets fired, and who receives a promotion. Drawing on exclusive information from whistleblowers, internal documents and real‑world tests, Schellmann discovers that many of the algorithms making high‑stakes decisions are biased, racist, and do more harm than good. Algorithms are on the brink of dominating our lives and threaten our human future--if we don't fight back. Schellmann takes readers on a journalistic detective story testing algorithms that have secretly analyzed job candidates' facial expressions and tone of voice. She investigates algorithms that scan our online activity including Twitter and LinkedIn to construct personality profiles à la Cambridge Analytica. Her reporting reveals how employers track the location of their employees, the keystrokes they make, access everything on their screens and, during meetings, analyze group discussions to diagnose problems in a team. Even universities are now using predictive analytics for admission offers and financial aid.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=KBDwzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Algorithm.html?hl=&id=KBDwzwEACAAJ"
+  },
+  {
     "isbn": "9798887440149",
     "dateFinished": "2024-01-31",
     "status": "finished",
