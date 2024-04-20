@@ -3046,5 +3046,28 @@
     "thumbnail": "https://books.google.com/books/content?id=cxNVDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=cxNVDgAAQBAJ"
+  },
+  {
+    "isbn": "9780316217590",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Nemesis Games",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "publishedDate": "2015-06-02",
+    "description": "The fifth book in the NYT bestselling Expanse series, Nemesis Games drives the crew of the Rocinante apart, and as they struggle to survive, the inner planets fall victim to an enemy's catastrophic plan. Now a Prime Original series. HUGO AWARD WINNER FOR BEST SERIES A thousand worlds have opened, and the greatest land rush in human history has begun. As wave after wave of colonists leave, the power structures of the old solar system begin to buckle. Ships are disappearing without a trace. Private armies are being secretly formed. The sole remaining protomolecule sample is stolen. Terrorist attacks previously considered impossible bring the inner planets to their knees. The sins of the past are returning to exact a terrible price. And as a new human order is struggling to be born in blood and fire, James Holden and the crew of the Rocinante must struggle to survive and get back to the only home they have left. Nemesis Games is a breakneck science fiction adventure following the bestselling Cibola Burn. The Expanse Leviathan Wakes Caliban's War Abaddon's Gate Cibola Burn Nemesis Games Babylon's Ashes Persepolis Rising Tiamat's Wrath ​Leviathan Falls Memory's Legion The Expanse Short Fiction Drive The Butcher of Anderson Station Gods of Risk The Churn The Vital Abyss Strange Dogs Auberon The Sins of Our Fathers",
+    "pageCount": 479,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=A_-zBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=A_-zBAAAQBAJ"
   }
 ]
