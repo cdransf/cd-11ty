@@ -10,7 +10,7 @@ export default async function () {
       description: book['description'],
       image: `https://coryd.dev/.netlify/images/?url=${encodeURIComponent(book['thumbnail'].replace('&edge=curl', ''))}&fit=cover&w=200&h=307`,
       url: `https://openlibrary.org/isbn/${book['isbn']}`,
-      dateAdded: book['dateStarted'],
+      dateAdded: book?.['dateStarted'] || book?.['dateFinished'],
       status: book['status'],
       type: 'book',
     }
