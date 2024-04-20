@@ -863,5 +863,26 @@
     "thumbnail": "https://books.google.com/books/content?id=GJKTEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Sideways.html?hl=&id=GJKTEAAAQBAJ"
+  },
+  {
+    "isbn": "9781770415379",
+    "dateAdded": "2024-01-07",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Driven: Rush in the '90s and in the End",
+    "authors": [
+      "Martin Popoff"
+    ],
+    "publishedDate": "2021-04-27",
+    "description": "The conclusion to the definitive biography of the rock 'n' roll kings of the North. Includes two full-color photo inserts, with unearthed photos of the band. \"A must for Rush fans.\" -- Library Journal on Anthem, book one of the Rush Across the Decades trilogy In this conclusion to his trilogy of authoritative books on Canada's most beloved and successful rock band, Martin Popoff takes us through three decades of \"life at the top\" for Rush's Geddy Lee, Alex Lifeson, and Neil Peart. Though this era begins with the brisk-selling Roll the Bones and sees throngs of fans sell out international tours, there is also unimaginable tragedy, with Peart losing his daughter and his wife within the space of ten months and, two decades later, succumbing to cancer himself. In between, however, there is a gorgeous and heartbreaking album of reflection and bereavement, as well as a triumphant trip to Brazil, a Rock and Roll Hall of Fame induction, and -- some say surprisingly -- the band's first full-blown concept album to close an immense career marked by integrity and idealism.",
+    "pageCount": 368,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=l6DYzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Driven_Rush_in_the_90s_and_in_the_End.html?hl=&id=l6DYzQEACAAJ"
   }
 ]
