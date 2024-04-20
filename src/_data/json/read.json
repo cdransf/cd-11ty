@@ -3115,5 +3115,28 @@
     "thumbnail": "https://books.google.com/books/content?id=f_02EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=f_02EAAAQBAJ"
+  },
+  {
+    "isbn": "9780316235426",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Abaddon's Gate",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "publishedDate": "2013-06-04",
+    "description": "The third book in the NYT bestselling Expanse series, Abaddon's Gate opens the door to the ruins of an alien gate network, and the crew of the Rocinante may hold the key to unlocking its secrets. Now a Prime Original series. HUGO AWARD WINNER FOR BEST SERIES For generations, the solar system -- Mars, the Moon, the Asteroid Belt -- was humanity's great frontier. Until now. The alien artifact working through its program under the clouds of Venus has appeared in Uranus's orbit, where it has built a massive gate that leads to a starless dark. Jim Holden and the crew of the Rocinante are part of a vast flotilla of scientific and military ships going out to examine the artifact. But behind the scenes, a complex plot is unfolding, with the destruction of Holden at its core. As the emissaries of the human race try to find whether the gate is an opportunity or a threat, the greatest danger is the one they brought with them. Abaddon's Gate is a breakneck science fiction adventure following the critically acclaimed Caliban's War. The Expanse Leviathan Wakes Caliban's War Abaddon's Gate Cibola Burn Nemesis Games Babylon's Ashes Persepolis Rising Tiamat's Wrath ​Leviathan Falls Memory's Legion The Expanse Short Fiction Drive The Butcher of Anderson Station Gods of Risk The Churn The Vital Abyss Strange Dogs Auberon The Sins of Our Fathers",
+    "pageCount": 502,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=rIWWl_bA0z4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=rIWWl_bA0z4C"
   }
 ]
