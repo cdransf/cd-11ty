@@ -1964,5 +1964,28 @@
     "thumbnail": "https://books.google.com/books/content?id=VdduzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Sustainable_Web_Design.html?hl=&id=VdduzgEACAAJ"
+  },
+  {
+    "isbn": "9780593083888",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "health"
+    ],
+    "title": "The Myth of Normal",
+    "authors": [
+      "Gabor Maté, MD"
+    ],
+    "publishedDate": "2022-09-13",
+    "description": "The instant New York Times bestseller By the acclaimed author of In the Realm of Hungry Ghosts, a groundbreaking investigation into the causes of illness, a bracing critique of how our society breeds disease, and a pathway to health and healing. In this revolutionary book, renowned physician Gabor Maté eloquently dissects how in Western countries that pride themselves on their healthcare systems, chronic illness and general ill health are on the rise. Nearly 70 percent of Americans are on at least one prescription drug; more than half take two. In Canada, every fifth person has high blood pressure. In Europe, hypertension is diagnosed in more than 30 percent of the population. And everywhere, adolescent mental illness is on the rise. So what is really “normal” when it comes to health? Over four decades of clinical experience, Maté has come to recognize the prevailing understanding of “normal” as false, neglecting the roles that trauma and stress, and the pressures of modern-day living, exert on our bodies and our minds at the expense of good health. For all our expertise and technological sophistication, Western medicine often fails to treat the whole person, ignoring how today’s culture stresses the body, burdens the immune system, and undermines emotional balance. Now Maté brings his perspective to the great untangling of common myths about what makes us sick, connects the dots between the maladies of individuals and the declining soundness of society—and offers a compassionate guide for health and healing. Cowritten with his son Daniel, The Myth Of Normal is Maté’s most ambitious and urgent book yet.",
+    "pageCount": 577,
+    "printType": "BOOK",
+    "categories": [
+      "Psychology"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=eZVUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Myth_of_Normal.html?hl=&id=eZVUEAAAQBAJ"
   }
 ]
