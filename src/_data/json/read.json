@@ -2558,5 +2558,30 @@
     "thumbnail": "https://books.google.com/books/content?id=_EGNEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Stay_True.html?hl=&id=_EGNEAAAQBAJ"
+  },
+  {
+    "isbn": "0593315618",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "politics",
+      "economics"
+    ],
+    "title": "Tracers in the Dark",
+    "authors": [
+      "Andy Greenberg"
+    ],
+    "publishedDate": "2024-01-16",
+    "description": "From the award-winning author of Sandworm comes the propulsive story of a new breed of investigators who have cracked the Bitcoin blockchain, exposing once-anonymous realms of money, drugs, and violence. “I love the book… It reads like a thriller… These stories are amazing.” (Michael Lewis) Over the last decade, a single innovation has massively fueled digital black markets: cryptocurrency. Crime lords inhabiting lawless corners of the internet have operated more freely—whether in drug dealing, money laundering, or human trafficking—than their analog counterparts could have ever dreamed of. By transacting not in dollars or pounds but in currencies with anonymous ledgers, overseen by no government, beholden to no bankers, these black marketeers have sought to rob law enforcement of their chief method of cracking down on illicit finance: following the money. But what if the centerpiece of this dark economy held a secret, fatal flaw? What if their currency wasn’t so cryptic after all? An investigator using the right mixture of technical wizardry, financial forensics, and old-fashioned persistence could uncover an entire world of wrongdoing. Tracers in the Dark is a story of crime and pursuit unlike any other. With unprecedented access to the major players in federal law enforcement and private industry, veteran cybersecurity reporter Andy Greenberg tells an astonishing saga of criminal empires built and destroyed. He introduces an IRS agent with a defiant streak, a Bitcoin-tracing Danish entrepreneur, and a colorful ensemble of hardboiled agents and prosecutors as they delve deep into the crypto-underworld. The result is a thrilling, globe-spanning story of dirty cops, drug bazaars, trafficking rings, and the biggest takedown of an online narcotics market in the history of the Internet. Utterly of our time, Tracers in the Dark is a cat-and-mouse story and a tale of a technological one-upmanship. Filled with canny maneuvering and shocking twists, it answers a provocative question: How would some of the world’s most brazen criminals behave if they were sure they could never get caught?",
+    "pageCount": 385,
+    "printType": "BOOK",
+    "categories": [
+      "True Crime"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=hL_BEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Tracers_in_the_Dark.html?hl=&id=hL_BEAAAQBAJ"
   }
 ]
