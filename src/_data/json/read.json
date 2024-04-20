@@ -1898,5 +1898,21 @@
     "thumbnail": "https://books.google.com/books/content?id=GGWNEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Survival_of_the_Richest.html?hl=&id=GGWNEAAAQBAJ"
+  },
+  {
+    "isbn": "9780008466770",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "title": "Trust the Plan",
+    "authors": [
+      "Will Sommer"
+    ],
+    "publishedDate": "2022-03-08",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=zZqEzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Trust_the_Plan.html?hl=&id=zZqEzgEACAAJ"
   }
 ]
