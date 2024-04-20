@@ -94,6 +94,32 @@
     "link": "https://books.google.com/books/about/A_Heart_That_Works.html?hl=&id=S6E4zwEACAAJ"
   },
   {
+    "isbn": "9781635573572",
+    "dateFinished": "2023-11-25",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "economics",
+      "politics",
+      "nonfiction"
+    ],
+    "title": "The Big Myth",
+    "authors": [
+      "Naomi Oreskes",
+      "Erik M. Conway"
+    ],
+    "publishedDate": "2023-02-21",
+    "description": "The bestselling authors of Merchants of Doubt offer a profound, startling history of one of America’s most tenacious—and destructive—false ideas: the “magic of the marketplace.”",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=dHB3EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Big_Myth.html?hl=&id=dHB3EAAAQBAJ"
+  },
+  {
     "isbn": "9781984881731",
     "dateFinished": "2023-11-28",
     "status": "finished",
