@@ -999,5 +999,28 @@
     "thumbnail": "https://books.google.com/books/content?id=MpFczQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Limelight_Rush_in_The_80s.html?hl=&id=MpFczQEACAAJ"
+  },
+  {
+    "isbn": "9780374279295",
+    "dateFinished": "2024-12-29",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "King: A Life",
+    "authors": [
+      "Jonathan Eig"
+    ],
+    "publishedDate": "2023-05-16",
+    "description": "The first full biography in decades, King mixes revelatory and exhaustive new research with brisk and accessible storytelling to forge the definitive life for our times. Vividly written and exhaustively researched, Jonathan Eig’s King: A Life is the first major biography in decades of the civil rights icon Martin Luther King Jr.—and the first to include recently declassified FBI files. In this revelatory new portrait of the preacher and activist who shook the world, the bestselling biographer gives us an intimate view of the courageous and often emotionally troubled human being who demanded peaceful protest for his movement but was rarely at peace with himself. He casts fresh light on the King family’s origins as well as MLK’s complex relationships with his wife, father, and fellow activists. King reveals a minister wrestling with his own human frailties and dark moods, a citizen hunted by his own government, and a man determined to fight for justice even if it proved to be a fight to the death. As he follows MLK from the classroom to the pulpit to the streets of Birmingham, Selma, and Memphis, Eig dramatically re-creates the journey of a man who recast American race relations and became our only modern-day founding father—as well as the nation’s most mourned martyr. In this landmark biography, Eig gives us an MLK for our times: a deep thinker, a brilliant strategist, a perplexing husband and father, and a committed radical who led one of history’s greatest movements, and whose demands for racial and economic justice remain as urgent today as they were in his lifetime. Includes 8 pages of black-and-white photographs",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=vXSaEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/King_A_Life.html?hl=&id=vXSaEAAAQBAJ"
   }
 ]
