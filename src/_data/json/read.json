@@ -71,6 +71,29 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9780593593950",
+    "dateFinished": "2024-02-17",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech"
+    ],
+    "title": "The Coming Wave",
+    "authors": [
+      "Mustafa Suleyman"
+    ],
+    "publishedDate": "2023-09-05",
+    "description": "NEW YORK TIMES BESTSELLER • An urgent warning of the unprecedented risks that AI and other fast-developing technologies pose to global order, and how we might contain them while we have the chance—from a co-founder of the pioneering artificial intelligence company DeepMind “A fascinating, well-written, and important book.”—Yuval Noah Harari “Essential reading.”—Daniel Kahneman “An excellent guide for navigating unprecedented times.”—Bill Gates A Best Book of the Year: Economist, Financial Times, CEO Magazine • Winner of the Inc. Non-Obvious Book Award • Finalist for the Porchlight Business Book Award and the Financial Times and Schroders Business Book of the Year Award We are approaching a critical threshold in the history of our species. Everything is about to change. Soon you will live surrounded by AIs. They will organise your life, operate your business, and run core government services. You will live in a world of DNA printers and quantum computers, engineered pathogens and autonomous weapons, robot assistants and abundant energy. None of us are prepared. As co-founder of the pioneering AI company DeepMind, part of Google, Mustafa Suleyman has been at the centre of this revolution. The coming decade, he argues, will be defined by this wave of powerful, fast-proliferating new technologies. In The Coming Wave, Suleyman shows how these forces will create immense prosperity but also threaten the nation-state, the foundation of global order. As our fragile governments sleepwalk into disaster, we face an existential dilemma: unprecedented harms on one side, the threat of overbearing surveillance on the other. Can we forge a narrow path between catastrophe and dystopia? This groundbreaking book from the ultimate AI insider establishes “the containment problem”—the task of maintaining control over powerful technologies—as the essential challenge of our age.",
+    "pageCount": 353,
+    "printType": "BOOK",
+    "categories": [
+      "Technology & Engineering"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=a-26EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Coming_Wave.html?hl=&id=a-26EAAAQBAJ"
+  },
+  {
     "isbn": "9780333717523",
     "dateFinished": "2024-02-19",
     "status": "finished",
