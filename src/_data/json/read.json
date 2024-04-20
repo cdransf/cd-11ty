@@ -2839,5 +2839,28 @@
     "thumbnail": "https://books.google.com/books/content?id=8nsmEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Hyperion.html?hl=&id=8nsmEAAAQBAJ"
+  },
+  {
+    "isbn": "9780307781918",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Endymion",
+    "authors": [
+      "Dan Simmons"
+    ],
+    "publishedDate": "2011-01-05",
+    "description": "The multiple-award-winning science fiction master returns to the universe that is his greatest triumph--the world of Hyperion and The Fall of Hyperion --with a novel even more magnificent than its predecessors. Dan Simmons's Hyperion was an immediate sensation on its first publication in 1989. This staggering multifaceted tale of the far future heralded the conquest of the science fiction field by a man who had already won the World Fantasy Award for his first novel (Song of Kali) and had also published one of the most well-received horror novels in the field, Carrion Comfort. Hyperion went on to win the Hugo Award as Best Novel, and it and its companion volume, The Fall of Hyperion, took their rightful places in the science fiction pantheon of new classics. Now, six years later, Simmons returns to this richly imagined world of technological achievement, excitement, wonder and fear. Endymion is a story about love and memory, triumph and terror--an instant candidate for the field's highest honors.",
+    "pageCount": 815,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=WqkIdLAEgfYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=WqkIdLAEgfYC"
   }
 ]
