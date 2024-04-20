@@ -2885,5 +2885,28 @@
     "thumbnail": "https://books.google.com/books/content?id=wnItBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Exo.html?hl=&id=wnItBAAAQBAJ"
+  },
+  {
+    "isbn": "9780307781895",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "The Fall of Hyperion",
+    "authors": [
+      "Dan Simmons"
+    ],
+    "publishedDate": "2011-02-02",
+    "description": "“State of the art science fiction . . . a landmark novel.”—Isaac Asimov's Science Fiction Magazine Now, in the stunning continuation of the epic adventure begun in Hyperion, Simmons returns us to a far future resplendent with drama and invention. On the world of Hyperion, the mysterious Time Tombs are opening. And the secrets they contain mean that nothing—nothing anywhere in the universe—will ever be the same. Praise for The Fall of Hyperion “One of the finest SF novels published in the past few years.”—Science Fiction Eye “A magnificently original blend of themes and styles.”—The Denver Post",
+    "pageCount": 786,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=DaN3-r0EXOcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=DaN3-r0EXOcC"
   }
 ]
