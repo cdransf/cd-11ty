@@ -14,6 +14,7 @@ export default {
   email: '#Email',
   emo: '#Emo',
   fastmail: '#Email',
+  fiction: '#Fiction',
   gmail: '#Email',
   grindcore: '#Grindcore',
   health: '#Health',
@@ -28,6 +29,7 @@ export default {
   mastodon: '#Mastodon',
   music: '#Music',
   nonfiction: '#NonFiction',
+  politics: '#Politics',
   privacy: '#Privacy',
   productivity: '#Productivity',
   react: '#JavaScript',
@@ -39,6 +41,8 @@ export default {
   'surveillance capitalism': '#SurveillanceCapitalism',
   'tattoos': '#Tattoos',
   tech: '#Tech',
+  television: '#TV',
   technology: '#Tech',
+  tv: '#TV',
   'web components': '#WebComponents'
 }

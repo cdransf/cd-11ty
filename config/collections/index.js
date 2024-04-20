@@ -61,7 +61,7 @@ export const tagMap = (collection) => {
       if (tagString) tags[url] = tagString.replace(/\s+/g,' ')
     })
   }
-  
+
   if (links) {
     links.forEach((link) => {
       const url = link.data.link
@@ -71,17 +71,16 @@ export const tagMap = (collection) => {
       if (tagString) tags[url] = tagString.replace(/\s+/g,' ')
     })
   }
-  
+
   if (books) {
     books.forEach((book) => {
-      const tagString = book.['tags']?
-        .map((tag) => tagAliases[tag.toLowerCase()])
+      const tagString = book['tags']?.map((tag) => tagAliases[tag.toLowerCase()])
         .join(' ')
         .trim()
       if (tagString) tags[book.url] = tagString.replace(/\s+/g,' ')
     })
   }
-  
+
   return tags
 }
 
