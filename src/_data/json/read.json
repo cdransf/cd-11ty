@@ -2931,5 +2931,28 @@
     "thumbnail": "https://books.google.com/books/content?id=rsSPgjg5O9IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=rsSPgjg5O9IC"
+  },
+  {
+    "isbn": "9780380978939",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Ilium",
+    "authors": [
+      "Dan Simmons"
+    ],
+    "publishedDate": "2003-07-22",
+    "description": "The first installment of a new saga based on themes from \"The Iliad\" and \"The Tempest\" places classical characters and gods in such settings as the Plains of Ilium, the terraformed oceans of Mars, and Jupiter space.",
+    "pageCount": 596,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=-lz30EVpBkoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Ilium.html?hl=&id=-lz30EVpBkoC"
   }
 ]
