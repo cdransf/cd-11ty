@@ -45,5 +45,29 @@
     "thumbnail": "https://books.google.com/books/content?id=AGqYzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Machine_Vendetta.html?hl=&id=AGqYzwEACAAJ"
+  },
+  {
+    "isbn": "9780593237410",
+    "dateStarted": "2024-04-20",
+    "status": "started",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Deliver Me from Nowhere",
+    "authors": [
+      "Warren Zanes"
+    ],
+    "publishedDate": "2023-05-02",
+    "description": "The fascinating story behind the making of Bruce Springsteen’s most surprising album, Nebraska, revealing its pivotal role in Springsteen’s career Without Nebraska, Bruce Springsteen might not be who he is today. The natural follow-up to Springsteen’s hugely successful The River should have been the hit-packed album Born in the U.S.A, but instead, in 1982, he came out with Nebraska, an album consisting of a series of dark songs he had recorded exclusively by himself, for himself. But almost forty years later, Nebraska is arguably Springsteen’s most important record--the lasting clue if you’re looking to understand not just the artist’s career and the vision behind it but the man himself. Nebraska is rough and unfinished, recorded on a cassette tape with a simple four-track recorder by Springsteen, alone in his bedroom, just as the digital future was announcing itself. And yet Springsteen now considers it his best album. Nebraska expressed a turmoil that was reflective of a mood in the country but was also a symptom of trouble in the artist's life, the beginnings of a mental breakdown that Springsteen would only talk about openly decades after the album’s release. Warren Zanes spoke to many people involved with making Nebraska, including Bruce Springsteen. He also interviewed more than a dozen celebrated artists, from Rosanne Cash to Steven Van Zandt, about their reaction to the album. He interweaves these conversations with inquiries into the myriad cultural touchpoints, including Terence Malick’s Badlands, that influenced Springsteen as he was writing the album’s haunting songs. The result is a textured and revelatory account of not only a crucial moment in the career of an icon but also a recording that upended all expectations and predicted a home recording revolution.",
+    "pageCount": 329,
+    "printType": "BOOK",
+    "categories": [
+      "Music"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=dJ-WEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   }
 ]
