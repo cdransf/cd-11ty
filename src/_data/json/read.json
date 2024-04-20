@@ -3276,5 +3276,28 @@
     "thumbnail": "https://books.google.com/books/content?id=_V1ZXdibLlgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=_V1ZXdibLlgC"
+  },
+  {
+    "isbn": "9780316217576",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Strange Dogs",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "publishedDate": "2017-07-18",
+    "description": "A novella set in the hard-scrabble world of James S. A. Corey's NYT-bestselling Expanse series, Strange Dogs follows a family of colonists on Laconia where a new generation of humanity struggles with the profound changes that come with making a home on an alien world. Now a Prime Original series. This story will be available in the complete Expanse story collection, Memory’s Legion. HUGO AWARD WINNER FOR BEST SERIES Like many before them, Cara and her family ventured through the gates as scientists and researchers, driven to carve out a new life and uncover the endless possibilities of the unexplored alien worlds now within reach. But soon the soldiers followed and under this new order Cara makes a discovery that will change everything. The Expanse Leviathan Wakes Caliban's War Abaddon's Gate Cibola Burn Nemesis Games Babylon's Ashes Persepolis Rising Tiamat's Wrath ​Leviathan Falls Memory's Legion The Expanse Short Fiction Drive The Butcher of Anderson Station Gods of Risk The Churn The Vital Abyss Strange Dogs Auberon The Sins of Our Fathers",
+    "pageCount": 94,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=no-vDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=no-vDgAAQBAJ"
   }
 ]
