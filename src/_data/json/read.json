@@ -71,6 +71,26 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9780345404473",
+    "dateFinished": "2023-12-06",
+    "status": "finished",
+    "rating": "unrated",
+    "title": "Do Androids Dream of Electric Sheep?",
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "publishedDate": "1996-05-28",
+    "description": "A masterpiece ahead of its time, a prescient rendering of a dark future, and the inspiration for the blockbuster film Blade Runner By 2021, the World War has killed millions, driving entire species into extinction and sending mankind off-planet. Those who remain covet any living creature, and for people who can’t afford one, companies built incredibly realistic simulacra: horses, birds, cats, sheep. They’ve even built humans. Immigrants to Mars receive androids so sophisticated they are indistinguishable from true men or women. Fearful of the havoc these artificial humans can wreak, the government bans them from Earth. Driven into hiding, unauthorized androids live among human beings, undetected. Rick Deckard, an officially sanctioned bounty hunter, is commissioned to find rogue androids and “retire” them. But when cornered, androids fight back—with lethal force. Praise for Philip K. Dick “The most consistently brilliant science fiction writer in the world.”—John Brunner “A kind of pulp-fiction Kafka, a prophet.”—The New York Times “[Philip K. Dick] sees all the sparkling—and terrifying—possibilities . . . that other authors shy away from.”—Rolling Stone",
+    "pageCount": 258,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=3vExWrUnJB0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Do_Androids_Dream_of_Electric_Sheep.html?hl=&id=3vExWrUnJB0C"
+  },
+  {
     "isbn": "9780553380958",
     "dateFinished": "2023-12-11",
     "status": "finished",
