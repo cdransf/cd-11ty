@@ -1,6 +1,8 @@
 export default {
   '11ty': '#Eleventy',
   accessibility: '#Accessibility',
+  action: '#Action',
+  adventure: '#Adventure',
   ai: '#AI',
   'black metal': '#BlackMetal',
   blogging: '#Blogging',
@@ -19,6 +21,7 @@ export default {
   grindcore: '#Grindcore',
   health: '#Health',
   'indie web': '#IndieWeb #SmallWeb',
+  'horror': '#Horror',
   ios: '#iOS #Apple',
   javascript: '#JavaScript',
   'last.fm': '#Music',
@@ -36,6 +39,7 @@ export default {
   rss: '#RSS',
   shoegaze: '#Shoegaze',
   scifi: '#SciFi',
+  'science-fiction': '#SciFi',
   'social media': '#SocialMedia',
   spotify: '#Music',
   'surveillance capitalism': '#SurveillanceCapitalism',
@@ -43,6 +47,7 @@ export default {
   tech: '#Tech',
   television: '#TV',
   technology: '#Tech',
+  thriller: '#Thriller',
   tv: '#TV',
   'web components': '#WebComponents'
 }

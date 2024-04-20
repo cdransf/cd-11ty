@@ -60,11 +60,11 @@ export default {
         return visitors(b) - visitors(a)
       })
   },
-  
+
   tagLookup: (url, tagMap) => {
     if (!url) return
-    if (url.includes('openlibrary.org')) return `#Books #NowReading ${tagMap[url]}`
-    if (url.includes('trakt.tv')) return '#Movies #Watching #Trakt'
+    if (url.includes('openlibrary.org')) return `#Books #NowReading ${tagMap[url]}`.trim()
+    if (url.includes('trakt.tv')) return `#Movies #Watching  ${tagMap[url]}`.trim()
     return tagMap[url] || ''
   },
 

@@ -51,6 +51,7 @@ export const tagMap = (collection) => {
   const posts = collectionData.data.collections.posts
   const links = collectionData.data.collections.links
   const books = collectionData.data.books
+  const movies = collectionData.data.movies
 
   if (posts) {
     posts.forEach((post) => {
@@ -78,6 +79,15 @@ export const tagMap = (collection) => {
         .join(' ')
         .trim()
       if (tagString) tags[book.url] = tagString.replace(/\s+/g,' ')
+    })
+  }
+
+  if (movies) {
+    movies.forEach((movie) => {
+      const tagString = movie['tags']?.map((tag) => tagAliases[tag.toLowerCase()])
+        .join(' ')
+        .trim()
+      if (tagString) tags[movie.url] = tagString.replace(/\s+/g,' ')
     })
   }
 

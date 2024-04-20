@@ -12,9 +12,9 @@ export default async function () {
       id: item['movie']['ids']['trakt'],
       tmdbId: item['movie']['ids']['tmdb'],
       description: `${item['movie']['overview']}<br/><br/>`,
+      tags: item['movie']['genres'],
       type: 'movie',
     }
-    if (process.env.ELEVENTY_PRODUCTION === 'false') movie.image = 'https://cd-movies.b-cdn.net'
     return movie;
   })
 
@@ -41,7 +41,7 @@ export default async function () {
     })
     const tmdbData = await tmdbRes
     const posterPath = tmdbData['poster_path']
-    movie.image = `https://cd-movies.b-cdn.net/t/p/w500${posterPath}`
+    movie.image = `https://image.tmdb.org/t/p/w500/${posterPath}`
   }
   return movies;
 }

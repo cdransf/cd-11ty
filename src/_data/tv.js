@@ -53,7 +53,6 @@ export default async function () {
           type: 'tv',
         })
       }
-      if (process.env.ELEVENTY_PRODUCTION === 'false') episodeData[episodeData.length - 1].image = 'https://cd-movies.b-cdn.net'
     })
 
     return episodeData.reverse()
