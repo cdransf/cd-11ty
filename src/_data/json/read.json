@@ -3138,5 +3138,28 @@
     "thumbnail": "https://books.google.com/books/content?id=rIWWl_bA0z4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=rIWWl_bA0z4C"
+  },
+  {
+    "isbn": "9780316217675",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Auberon",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "publishedDate": "2019-11-12",
+    "description": "A novella set in the universe of James S. A. Corey's NYT-bestselling Expanse series, Auberon explores a new and alien world and the age-old dangers that humanity has carried with it to the stars. Now a Prime Original series. This story will be available in the complete Expanse story collection, Memory’s Legion. Hugo Award Winner for Best Series Auberon is one of the first and most important colony worlds in humanity's reach, and the new conquering faction has come to claim it. Governor Rittenaur has come to bring civilization and order to the far outpost and guarantee the wealth and power of the Empire. But Auberon already has its own history, a complex culture, and a criminal kingpin named Erich with very different plans. In a world of deceit, violence, and corruption, the greatest danger Rittenaur faces is love. The Expanse Leviathan Wakes Caliban's War Abaddon's Gate Cibola Burn Nemesis Games Babylon's Ashes Persepolis Rising Tiamat's Wrath ​Leviathan Falls Memory's Legion The Expanse Short Fiction Drive The Butcher of Anderson Station Gods of Risk The Churn The Vital Abyss Strange Dogs Auberon The Sins of Our Fathers",
+    "pageCount": 75,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=xP6yDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=xP6yDwAAQBAJ"
   }
 ]
