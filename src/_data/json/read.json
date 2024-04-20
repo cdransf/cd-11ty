@@ -3299,5 +3299,28 @@
     "thumbnail": "https://books.google.com/books/content?id=no-vDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=no-vDgAAQBAJ"
+  },
+  {
+    "isbn": "9780316332866",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Tiamat's Wrath",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "publishedDate": "2019-03-26",
+    "description": "The eighth book in the NYT bestselling Expanse series, Tiamat's Wrath finds the crew of the Rocinante fighting an underground war against a nearly invulnerable authoritarian empire, with James Holden a prisoner of the enemy. Now a Prime Original series. HUGO AWARD WINNER FOR BEST SERIES Thirteen hundred gates have opened to solar systems around the galaxy. But as humanity builds its interstellar empire in the alien ruins, the mysteries and threats grow deeper. In the dead systems where gates lead to stranger things than alien planets, Elvi Okoye begins a desperate search to discover the nature of a genocide that happened before the first human beings existed, and to find weapons to fight a war against forces at the edge of the imaginable. But the price of that knowledge may be higher than she can pay. At the heart of the empire, Teresa Duarte prepares to take on the burden of her father's godlike ambition. The sociopathic scientist Paolo Cordozar and the Mephistophelian prisoner James Holden are only two of the dangers in a palace thick with intrigue, but Teresa has a mind of her own and secrets even her father the emperor doesn't guess. And throughout the wide human empire, the scattered crew of the Rocinante fights a brave rear-guard action against Duarte's authoritarian regime. Memory of the old order falls away, and a future under Laconia's eternal rule -- and with it, a battle that humanity can only lose -- seems more and more certain. Because against the terrors that lie between worlds, courage and ambition will not be enough. . . The Expanse Leviathan Wakes Caliban's War Abaddon's Gate Cibola Burn Nemesis Games Babylon's Ashes Persepolis Rising Tiamat's Wrath ​Leviathan Falls Memory's Legion The Expanse Short Fiction Drive The Butcher of Anderson Station Gods of Risk The Churn The Vital Abyss Strange Dogs Auberon The Sins of Our Fathers",
+    "pageCount": 524,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=JQdUDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=JQdUDwAAQBAJ"
   }
 ]
