@@ -2271,5 +2271,29 @@
     "thumbnail": "https://books.google.com/books/content?id=JhiREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Abolish_Silicon_Valley.html?hl=&id=JhiREAAAQBAJ"
+  },
+  {
+    "isbn": "9780674430006",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics"
+    ],
+    "title": "Capital in the Twenty-First Century",
+    "authors": [
+      "Thomas Piketty"
+    ],
+    "publishedDate": "2014-04-15",
+    "description": "The main driver of inequality--returns on capital that exceed the rate of economic growth--is again threatening to generate extreme discontent and undermine democratic values. Thomas Piketty's findings in this ambitious, original, rigorous work will transform debate and set the agenda for the next generation of thought about wealth and inequality.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=89E_zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Capital_in_the_Twenty_First_Century.html?hl=&id=89E_zQEACAAJ"
   }
 ]
