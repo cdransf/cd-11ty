@@ -2954,5 +2954,28 @@
     "thumbnail": "https://books.google.com/books/content?id=-lz30EVpBkoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Ilium.html?hl=&id=-lz30EVpBkoC"
+  },
+  {
+    "isbn": "9780380978946",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Olympos",
+    "authors": [
+      "Dan Simmons"
+    ],
+    "publishedDate": "2005-06-28",
+    "description": "Science fiction-roman.",
+    "pageCount": 708,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=VSnCKaLwQuEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Olympos.html?hl=&id=VSnCKaLwQuEC"
   }
 ]
