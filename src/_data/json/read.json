@@ -1281,5 +1281,29 @@
     "thumbnail": "https://books.google.com/books/content?id=N4t-EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/We_Were_Once_a_Family.html?hl=&id=N4t-EAAAQBAJ"
+  },
+  {
+    "isbn": "9781645036951",
+    "dateFinished": "2023-11-16",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction",
+      "sports"
+    ],
+    "title": "Black Ball",
+    "authors": [
+      "Theresa Runstedtler"
+    ],
+    "publishedDate": "2023",
+    "description": "Against the backdrop of ongoing massive resistance to racial desegregation and increasingly strident calls for Black Power, the NBA in the 1970s embodied the nation's imagined descent into disorder. The press and the public blamed young Black players for the chaos in the NBA, citing drugs, violence, greed, and criminality. The supposed decline of pro basketball became a metaphor for the first decades of integration in America: the rules of the game had changed, allowing more Black people onto a formerly white playing field, and now they were ruining everything. But Black Ball argues that this much-maligned period was pivotal to the rise of the NBA as the star-laden powerhouse we know today, thanks largely to the efforts of Black players in challenging the white basketball establishment of owners, coaches, and spectators. Spotlighting legendary players like Kareem Abdul-Jabbar, Bernard King, and Connie Hawkins, scholar Theresa Runstedtler expertly rewrites basketball's \"Dark Ages,\" weaving together her deep knowledge of the game's key icons and institutions with incisive social and political analysis of the era. Black ballers created an aerial, improvisational, and creative style derived from the playground courts of their neighborhoods, laying the foundation for the explosive popularity and profitability of the league in subsequent decades. They also transformed labor in the pro-basketball world, filing lawsuits and organizing unions to demand better salaries and greater autonomy. Without their skills, style, and savvy, there would be no Michael Jordan, Allen Iverson, or LeBron James today…",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=te9EzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Black_Ball.html?hl=&id=te9EzwEACAAJ"
   }
 ]
