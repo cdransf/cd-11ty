@@ -2487,5 +2487,29 @@
     "thumbnail": "https://books.google.com/books/content?id=6xlZDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/American_Kingpin.html?hl=&id=6xlZDwAAQBAJ"
+  },
+  {
+    "isbn": "9780399590436",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "The Mastermind",
+    "authors": [
+      "Evan Ratliff"
+    ],
+    "publishedDate": "2020-07-21",
+    "description": "The incredible true story of the decade-long quest to bring down Paul Le Roux—the creator of a frighteningly powerful Internet-enabled cartel who merged the ruthlessness of a drug lord with the technological savvy of a Silicon Valley entrepreneur. “A tour de force of shoe-leather reporting—undertaken, amid threats and menacing, at considerable personal risk.”—Los Angeles Times NAMED ONE OF THE BEST BOOKS OF THE YEAR BY The New York Times Book Review • NPR • Evening Standard • Kirkus Reviews It all started as an online prescription drug network, supplying hundreds of millions of dollars’ worth of painkillers to American customers. It would not stop there. Before long, the business had turned into a sprawling multinational conglomerate engaged in almost every conceivable aspect of criminal mayhem. Yachts carrying $100 million in cocaine. Safe houses in Hong Kong filled with gold bars. Shipments of methamphetamine from North Korea. Weapons deals with Iran. Mercenary armies in Somalia. Teams of hit men in the Philippines. Encryption programs so advanced that the government could not break them. The man behind it all, pulling the strings from a laptop in Manila, was Paul Calder Le Roux—a reclusive programmer turned criminal genius who could only exist in the networked world of the twenty-first century, and the kind of self-made crime boss that American law enforcement had never imagined. For half a decade, DEA agents played a global game of cat-and-mouse with Le Roux as he left terror and chaos in his wake. Each time they came close, he would slip away. It would take relentless investigative work, and a shocking betrayal from within his organization, to catch him. And when he was finally caught, the story turned again, as Le Roux struck a deal to bring down his own organization and the people he had once employed. Award-winning investigative journalist Evan Ratliff spent four years piecing together this intricate puzzle, chasing Le Roux’s empire and his shadowy henchmen around the world, conducting hundreds of interviews and uncovering thousands of documents. The result is a riveting, unprecedented account of a crime boss built by and for the digital age. Praise for The Mastermind “The Mastermind is true crime at its most stark and vivid depiction. Evan Ratliff’s work is well done from beginning to end, paralleling his investigative work with the work of the many federal agents developing the case against LeRoux.”—San Francisco Book Review (five stars) “A wholly engrossing story that joins the worlds of El Chapo and Edward Snowden; both disturbing and memorable.”—Kirkus Reviews (starred review)",
+    "pageCount": 498,
+    "printType": "BOOK",
+    "categories": [
+      "True Crime"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=T_PsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Mastermind.html?hl=&id=T_PsDwAAQBAJ"
   }
 ]
