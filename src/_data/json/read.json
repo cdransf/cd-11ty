@@ -69,5 +69,29 @@
     "thumbnail": "https://books.google.com/books/content?id=dJ-WEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
+  },
+  {
+    "isbn": "9781039000780",
+    "dateFinished": "2024-04-10",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Sideways",
+    "authors": [
+      "Josh O'Kane"
+    ],
+    "publishedDate": "2022-09-13",
+    "description": "NATIONAL BESTSELLER From the Globe and Mail tech reporter who revealed countless controversies while following the Sidewalk Labs fiasco in Toronto, an uncompromising investigation into the bigger story and what the Google sister company's failure there reveals about Big Tech, data privacy and the monetization of everything. When former New York deputy mayor Dan Doctoroff landed in Toronto, promising a revolution in better living through technology, the locals were starstruck. In 2017 a small parcel of land on the city's woefully underdeveloped lakeshore was available for development, and with Google co-founder Larry Page and his trusted chairman Eric Schmidt leaning into Sidewalk Labs' pitch for the long-forsaken property—with Doctoroff as the urban-planning company's CEO—Sidewalk's bid crushed the competition. But as soon as the bid was won, cracks appeared in the partnership between Doctoroff's team and Waterfront Toronto, the government-sponsored organization behind the contest. There were hundreds more acres of undeveloped former port lands nearby that kept creeping into conversation with Sidewalk, and more questions were emerging than answers about how much the public would actually benefit from the Alphabet-owned company's vision for the high-tech neighbourhood—and the data it could harvest from the people living there. Alarm bells began ringing in the city's corridors of power and activism. To Torontonians accustomed to big promises with little follow-through, the fiasco that unfolded seemed at first like just another city-building sideshow. But the pained battle to reel in the power of Sidewalk Labs became a crucible moment in the worldwide battle for privacy rights and against the extension of Big Tech’s digital might into the physical world around us. With extensive contacts on all sides of the debacle, O'Kane tells a story of global consequence fought over a small, forgotten parcel of mud and pavement, taking readers from California to New York to Toronto to Berlin and back again. In the tradition of extraordinary boardroom dramas like Bad Blood and Super Pumped, Sideways vividly recreates the corporate drama and epic personalities in this David-and-Goliath battle that signalled to the world that all may not be lost in the effort to contain the rapidly growing power of Big Tech.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=GJKTEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Sideways.html?hl=&id=GJKTEAAAQBAJ"
   }
 ]
