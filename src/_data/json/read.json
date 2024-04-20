@@ -71,6 +71,29 @@
     "link": "https://books.google.com/books/about/Deliver_Me_from_Nowhere.html?hl=&id=dJ-WEAAAQBAJ"
   },
   {
+    "isbn": "9780099446781",
+    "dateFinished": "2024-02-05",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "fiction"
+    ],
+    "title": "The Silence of the Lambs",
+    "authors": [
+      "Thomas Harris"
+    ],
+    "publishedDate": "2002",
+    "description": "There'S A Killer On The Loose Who Knows That Beauty Is Only Skin Deep, And A Trainee Investigator Who'S Trying To Save Her Own Hide. The Only Man That Can Help Is Locked In An Asylum. But He'S Willing To Put A Brave Face On - If It Will Help Him Escape.",
+    "pageCount": 436,
+    "printType": "BOOK",
+    "categories": [
+      "Government investigators"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=2x5ceEACyeQC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Silence_of_the_Lambs.html?hl=&id=2x5ceEACyeQC"
+  },
+  {
     "isbn": "9780393866513",
     "dateFinished": "2024-02-08",
     "status": "finished",
