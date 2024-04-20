@@ -2366,5 +2366,30 @@
     "thumbnail": "https://books.google.com/books/content?id=jNLhjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Panama_Papers.html?hl=&id=jNLhjwEACAAJ"
+  },
+  {
+    "isbn": "9780593492321",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "climate"
+    ],
+    "title": "The Climate Book",
+    "authors": [
+      "Greta Thunberg"
+    ],
+    "publishedDate": "2024-02-13",
+    "description": "A NEW YORK TIMES BESTSELLER We still have time to change the world. From climate activist Greta Thunberg, comes the essential handbook for making it happen. You might think it's an impossible task: secure a safe future for life on Earth, at a scale and speed never seen, against all the odds. There is hope—but only if we listen to the science before it's too late. In The Climate Book, Greta Thunberg has gathered the wisdom of over one hundred experts—geophysicists, oceanographers and meteorologists; engineers, economists and mathematicians; historians, philosophers and Indigenous leaders—to equip us all with the knowledge we need to combat climate disaster. Throughout, illuminating and often shocking grayscale charts, graphs, diagrams, photographs, and illustrations underscore their research and their arguments. Alongside them, she shares her own stories of demonstrating and uncovering greenwashing around the world, revealing how much we have been kept in the dark. This is one of our biggest challenges, she shows, but also our greatest source of hope. Once we are given the full picture, how can we not act? And if a schoolchild's strike could ignite a global protest, what could we do collectively if we tried? We are alive at the most decisive time in the history of humanity. Together, we can do the seemingly impossible. But it has to be us, and it has to be now.",
+    "pageCount": 465,
+    "printType": "BOOK",
+    "categories": [
+      "Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=4R3gEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Climate_Book.html?hl=&id=4R3gEAAAQBAJ"
   }
 ]
