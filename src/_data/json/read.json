@@ -1873,5 +1873,30 @@
     "thumbnail": "https://books.google.com/books/content?id=yfLsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Providence.html?hl=&id=yfLsDwAAQBAJ"
+  },
+  {
+    "isbn": "0393881067",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "Survival of the Richest",
+    "authors": [
+      "Douglas Rushkoff"
+    ],
+    "publishedDate": "2022-09-06",
+    "description": "Named One of the Most Anticipated Books of 2022 by Kirkus and Literary Hub The tech elite have a plan to survive the apocalypse: they want to leave us all behind. Five mysterious billionaires summoned theorist Douglas Rushkoff to a desert resort for a private talk. The topic? How to survive the “Event”: the societal catastrophe they know is coming. Rushkoff came to understand that these men were under the influence of The Mindset, a Silicon Valley–style certainty that they and their cohort can break the laws of physics, economics, and morality to escape a disaster of their own making—as long as they have enough money and the right technology. In Survival of the Richest, Rushkoff traces the origins of The Mindset in science and technology through its current expression in missions to Mars, island bunkers, AI futurism, and the metaverse. In a dozen urgent, electrifying chapters, he confronts tech utopianism, the datafication of all human interaction, and the exploitation of that data by corporations. Through fascinating characters—master programmers who want to remake the world from scratch as if redesigning a video game and bankers who return from Burning Man convinced that incentivized capitalism is the solution to environmental disasters—Rushkoff explains why those with the most power to change our current trajectory have no interest in doing so. And he shows how recent forms of anti-mainstream rebellion—QAnon, for example, or meme stocks—reinforce the same destructive order. This mind-blowing work of social analysis shows us how to transcend the landscape The Mindset created—a world alive with algorithms and intelligences actively rewarding our most selfish tendencies—and rediscover community, mutual aid, and human interdependency. In a thundering conclusion, Survival of the Richest argues that the only way to survive the coming catastrophe is to ensure it doesn’t happen in the first place.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=GGWNEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Survival_of_the_Richest.html?hl=&id=GGWNEAAAQBAJ"
   }
 ]
