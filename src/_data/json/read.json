@@ -5235,5 +5235,28 @@
     "thumbnail": "https://books.google.com/books/content?id=Qw1aDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=Qw1aDwAAQBAJ"
+  },
+  {
+    "isbn": "9780385526845",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "The Beautiful Struggle",
+    "authors": [
+      "Ta-Nehisi Coates"
+    ],
+    "publishedDate": "2008-05-06",
+    "description": "An exceptional father-son story from the National Book Award–winning author of Between the World and Me about the reality that tests us, the myths that sustain us, and the love that saves us. Paul Coates was an enigmatic god to his sons: a Vietnam vet who rolled with the Black Panthers, an old-school disciplinarian and new-age believer in free love, an autodidact who launched a publishing company in his basement dedicated to telling the true history of African civilization. Most of all, he was a wily tactician whose mission was to carry his sons across the shoals of inner-city adolescence—and through the collapsing civilization of Baltimore in the Age of Crack—and into the safe arms of Howard University, where he worked so his children could attend for free. Among his brood of seven, his main challenges were Ta-Nehisi, spacey and sensitive and almost comically miscalibrated for his environment, and Big Bill, charismatic and all-too-ready for the challenges of the streets. The Beautiful Struggle follows their divergent paths through this turbulent period, and their father’s steadfast efforts—assisted by mothers, teachers, and a body of myths, histories, and rituals conjured from the past to meet the needs of a troubled present—to keep them whole in a world that seemed bent on their destruction. With a remarkable ability to reimagine both the lost world of his father’s generation and the terrors and wonders of his own youth, Coates offers readers a small and beautiful epic about boys trying to become men in black America and beyond. Praise for The Beautiful Struggle “I grew up in a Maryland that lay years, miles and worlds away from the one whose summers and sorrows Ta-Nehisi Coates evokes in this memoir with such tenderness and science; and the greatest proof of the power of this work is the way that, reading it, I felt that time, distance and barriers of race and class meant nothing. That in telling his story he was telling my own story, for me.”—Michael Chabon, bestselling author of The Yiddish Policemen’s Union and The Amazing Adventures of Kavalier & Clay “Ta-Nehisi Coates is the young James Joyce of the hip hop generation.”—Walter Mosley",
+    "pageCount": 242,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=hxIZP9gHs-EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=hxIZP9gHs-EC"
   }
 ]
