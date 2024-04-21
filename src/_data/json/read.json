@@ -6756,5 +6756,29 @@
     "thumbnail": "https://books.google.com/books/content?id=TJGwEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=TJGwEAAAQBAJ"
+  },
+  {
+    "isbn": "9780374720742",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "The Wounded World",
+    "authors": [
+      "Chad L. Williams"
+    ],
+    "publishedDate": "2023-04-04",
+    "description": "A Washington Post Notable Book of 2023 The dramatic story of W. E. B. Du Bois's reckoning with the betrayal of Black soldiers during World War I—and a new understanding of one of the great twentieth-century writers. When W. E. B. Du Bois, believing in the possibility of full citizenship and democratic change, encouraged African Americans to “close ranks” and support the Allied cause in World War I, he made a decision that would haunt him for the rest of his life. Seeking both intellectual clarity and personal atonement, for more than two decades Du Bois attempted to write the definitive history of Black participation in World War I. His book, however, remained unfinished. In The Wounded World, Chad Williams offers the dramatic account of Du Bois’s failed efforts to complete what would have been one of his most significant works. The surprising story of this unpublished book offers new insight into Du Bois’s struggles to reckon with both the history and the troubling memory of the war, along with the broader meanings of race and democracy for Black people in the twentieth century. Drawing on a broad range of sources, most notably Du Bois’s unpublished manuscript and research materials, Williams tells a sweeping story of hope, betrayal, disillusionment, and transformation, setting into motion a fresh understanding of the life and mind of arguably the most significant scholar-activist in African American history. In uncovering what happened to Du Bois’s largely forgotten book, Williams offers a captivating reminder of the importance of World War I, why it mattered to Du Bois, and why it continues to matter today.",
+    "pageCount": 327,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=pYRrEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=pYRrEAAAQBAJ"
   }
 ]
