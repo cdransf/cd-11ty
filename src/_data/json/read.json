@@ -3874,5 +3874,25 @@
     "thumbnail": "https://books.google.com/books/content?id=rIy9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=rIy9DwAAQBAJ"
+  },
+  {
+    "isbn": "9781472270399",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Unmasked",
+    "authors": [
+      "Paul Holes"
+    ],
+    "publishedDate": "2023-02-16",
+    "description": "From the detective who helped catch the Golden State Killer, a memoir about investigating America's toughest cold cases, and the rewards - and toll - of a life spent solving crime. For a decade, from 1973, The Golden State Killer stalked and murdered Californians in the dead of night, leaving entire communities afraid to turn off the lights. Then he vanished, and the case remained unsolved. In 1994, when cold-case investigator Paul Holes came across the old file, he swore he would unmask GSK and finally give these families closure. Twenty-four years later, Holes fulfilled that promise, identifying 73-year-old Joseph J. DeAngelo. Headlines blasted around the world: one of America's most prolific serial killers had been caught. That case launched Paul's career into the stratosphere, turning him into an icon in the true-crime world. But while many know the story of the capture of GSK, until now, no one has truly known the man behind it all. In UNMASKED, Paul takes us through his memories of a storied career and provides an insider account of some of the most notorious cases in contemporary American history, including Laci Peterson's murder and Jaycee Dugard's kidnapping. But this is also a revelatory profile of a complex man and what makes him tick: the drive to find closure for victims and their loved ones; the inability to walk away from a challenge - even at the expense of his own happiness. This is a story about the gritty truth of crime solving when there are no 'case closed' headlines. It is the story of a man and his commitment to his cases, and to the people who might have otherwise been forgotten.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=J4ruzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Unmasked.html?hl=&id=J4ruzgEACAAJ"
   }
 ]
