@@ -8205,5 +8205,28 @@
     "thumbnail": "https://books.google.com/books/content?id=obAHf43THvQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=obAHf43THvQC"
+  },
+  {
+    "isbn": "9780316290241",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Translation State",
+    "authors": [
+      "Ann Leckie"
+    ],
+    "publishedDate": "2023-06-06",
+    "description": "The mystery of a missing translator sets three lives on a collision course that will have a ripple effect across the stars in this powerful novel from a Hugo, Nebula, and Arthur C. Clarke award-winning author. \"There are few who write science fiction like Ann Leckie can. There are few who ever could.\" —John Scalzi Qven was created to be a Presger translator. The pride of their Clade, they always had a clear path before them: learn human ways, and eventually, make a match and serve as an intermediary between the dangerous alien Presger and the human worlds. The realization that they might want something else isn't \"optimal behavior\". It's the type of behavior that results in elimination. But Qven rebels. And in doing so, their path collides with those of two others. Enae, a reluctant diplomat whose dead grandmaman has left hir an impossible task as an inheritance: hunting down a fugitive who has been missing for over 200 years. And Reet, an adopted mechanic who is increasingly desperate to learn about his genetic roots—or anything that might explain why he operates so differently from those around him. As a Conclave of the various species approaches—and the long-standing treaty between the humans and the Presger is on the line—the decisions of all three will have ripple effects across the stars. Masterfully merging space adventure and mystery, and a poignant exploration about relationships and belonging, Translation State is a triumphant new standalone story set in the celebrated Imperial Radch universe. \"Leckie’s humane, emotionally intelligent, and deeply perceptive writing makes this tautly plotted adventure feel fundamentally true while also offering longtime fans a much anticipated glimpse into the Radch’s most mysterious species. Readers will be thrilled.\" —Publishers Weekly (starred review) \"Another of Leckie’s beautiful mergings of the political, philosophical, and personal.\" —Kirkus (starred review)",
+    "pageCount": 327,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=q3KSEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=q3KSEAAAQBAJ"
   }
 ]
