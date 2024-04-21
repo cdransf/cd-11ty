@@ -4284,5 +4284,29 @@
     "thumbnail": "https://books.google.com/books/content?id=0O5PDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Moneyland.html?hl=&id=0O5PDwAAQBAJ"
+  },
+  {
+    "isbn": "9780544947665",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "culture",
+      "nonfiction"
+    ],
+    "title": "The Extended Mind",
+    "authors": [
+      "Annie Murphy Paul"
+    ],
+    "publishedDate": "2021",
+    "description": "A bold new book reveals how we can tap the intelligence that exists beyond our brains--in our bodies, our surroundings, and our relationships Use your head. That's what we tell ourselves when facing a tricky problem or a difficult project. But a growing body of research indicates that we've got it exactly backwards. What we need to do, says acclaimed science writer Annie Murphy Paul, is think outside the brain. A host of \"extra-neural\" resources--the feelings and movements of our bodies, the physical spaces in which we learn and work, and the minds of those around us-- can help us focus more intently, comprehend more deeply, and create more imaginatively. The Extended Mind outlines the research behind this exciting new vision of human ability, exploring the findings of neuroscientists, cognitive scientists, psychologists, and examining the practices of educators, managers, and leaders who are already reaping the benefits of thinking outside the brain. She excavates the untold history of how artists, scientists, and authors--from Jackson Pollock to Jonas Salk to Robert Caro--have used mental extensions to solve problems, make discoveries, and create new works. In the tradition of Howard Gardner's Frames of Mind or Daniel Goleman's Emotional Intelligence, The Extended Mind offers a dramatic new view of how our minds work, full of practical advice on how we can all think better.",
+    "pageCount": 357,
+    "printType": "BOOK",
+    "categories": [
+      "Psychology"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=Dk-_DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Extended_Mind.html?hl=&id=Dk-_DwAAQBAJ"
   }
 ]
