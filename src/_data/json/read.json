@@ -5676,5 +5676,30 @@
     "thumbnail": "https://books.google.com/books/content?id=7_LsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Dark_Mirror.html?hl=&id=7_LsDwAAQBAJ"
+  },
+  {
+    "isbn": "9781953953322",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "culture"
+    ],
+    "title": "Get Together",
+    "authors": [
+      "Bailey Richardson ",
+      "Kevin Huynh ",
+      "Kai Elmer Sotto"
+    ],
+    "publishedDate": "2019-08-20",
+    "description": "A practical and heartfelt guide to cultivating a community, online or IRL. Although communities feel magical, they don’t come together by magic. Get Together is a practical and heartfelt guide to cultivating a community. Whether starting a run crew, connecting with fans online, or sparking a movement of K–12 teachers, the secret to getting people together is this: build your community with people, not for them. In Get Together, Bailey Richardson, Kevin Huynh, and Kai Elmer Sotto of People & Company share true stories of everyday people who have created thriving communities, both in person and online. They provide clear steps to untangle the challenge of getting passionate people together, helping individuals and organizations navigate the intricacies of leading a community, including: - How to rally the first people - How to get people talking - How to attract new, authentic folks - How to develop leaders and expand globally. The People & Company team reminds us that we each hold the potential to spark a community. Get Together shows readers that if we join forces—as company and customers, artist and fans, organizer and advocates—we’ll do more together than we ever could alone.",
+    "pageCount": 169,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=BRnBEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=BRnBEAAAQBAJ"
   }
 ]
