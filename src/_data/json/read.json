@@ -4063,5 +4063,30 @@
     "thumbnail": "https://books.google.com/books/content?id=2ZNUDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Chosen_Country.html?hl=&id=2ZNUDwAAQBAJ"
+  },
+  {
+    "isbn": "9780241554258",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "politics",
+      "nonfiction"
+    ],
+    "title": "The Lazarus Heist",
+    "authors": [
+      "Geoff White"
+    ],
+    "publishedDate": "2022-09-27",
+    "description": "BASED ON THE NO 1 HIT PODCAST 'The Lazarus Heist' 'You'll never see North Korea the same way again' Oliver Bullough, author of Moneyland 'One of the most incredible cyber-espionage stories I've ever heard, told by one of the UK's best tech journalists' Jamie Bartlett, author of The Missing Crypto Queen 'Pacy and eye-popping, this book shows us what happens when the world of Barbara Demick's Nothing to Envy meets the world of Misha Glenny's McMafia' - Tom Burgis, author of Kleptopia Meet the Lazarus Group, a shadowy cabal of hackers accused of working on behalf of the North Korean state. It's claimed that they form one of the most dangerous criminal enterprises on the planet, having stolen more than $1bn in an international crime spree. Their targets allegedly include central banks, Hollywood film studios and even the British National Health Service. North Korea denies the allegations, saying the accusations are American attempts to tarnish its image. In this staggering, global investigation, award-winning journalist Geoff White examines how the hackers have harnessed cutting-edge technology to launch a decade-long campaign of brazen and merciless raids on its richer, more powerful adversaries. It's not just money they're after. The Lazarus Group's tactics have been used to threaten democracies, gag North Korea's critics and destabilize global peace. From the bustling streets of Dhaka, to the glamorous studios of Hollywood, to the glittering casinos of Macau and the secretive dynastic court of Pyongyang, this shocking story uncovers the secret world of the Lazarus Group, their victims and the people who have tried - and ultimately, so far failed - to stop them. 'Madly intriguing' Guardian 'Cyber warfare and criminal hacking has never been more pertinent. This a must read to understand the threats currently facing all of us globally' Annie Machon, author of Spies, Lies and Whistleblowers",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "True Crime"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=jseMEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Lazarus_Heist.html?hl=&id=jseMEAAAQBAJ"
   }
 ]
