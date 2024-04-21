@@ -8136,5 +8136,28 @@
     "thumbnail": "https://books.google.com/books/content?id=fNzVswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Aurora.html?hl=&id=fNzVswEACAAJ"
+  },
+  {
+    "isbn": "9780316246675",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Ancillary Mercy",
+    "authors": [
+      "Ann Leckie"
+    ],
+    "publishedDate": "2015-10-06",
+    "description": "Breq and her crew must stand against an old and powerful enemy and fight for their own destinies in the stunning conclusion to the New York Times bestselling trilogy. A must read for fans of Ursula K. Le Guin and James S. A. Corey. For a moment, things seemed to be under control for Breq, the soldier who used to be a warship. Then a search of Athoek Station's slums turns up someone who shouldn't exist, and a messenger from the mysterious Presger empire arrives, as does Breq's enemy, the divided and quite possibly insane Anaander Mianaai -- ruler of an empire at war with itself. Breq refuses to flee with her ship and crew, because that would leave the people of Athoek in terrible danger. The odds aren't good, but that's never stopped her before. \"There are few who write science fiction like Ann Leckie can. There are few who ever could.\" -- John Scalzi",
+    "pageCount": 302,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=jlazBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=jlazBgAAQBAJ"
   }
 ]
