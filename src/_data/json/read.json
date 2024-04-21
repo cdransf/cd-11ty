@@ -4624,5 +4624,29 @@
     "thumbnail": "https://books.google.com/books/content?id=qQDdCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=qQDdCgAAQBAJ"
+  },
+  {
+    "isbn": "0593136381",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "climate",
+      "nonfiction"
+    ],
+    "title": "Paradise",
+    "authors": [
+      "Lizzie Johnson"
+    ],
+    "publishedDate": "2021",
+    "description": "The definitive firsthand account of California's Camp Fire-the nation's deadliest wildfire in a century-and a riveting examination of what went wrong and how to avert future tragedies as the climate crisis unfolds ... A cautionary tale for a new era of megafires, Paradise is the gripping story of a town wiped off the map and the determination of its people to rise again…",
+    "pageCount": 433,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=qSk5EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Paradise.html?hl=&id=qSk5EAAAQBAJ"
   }
 ]
