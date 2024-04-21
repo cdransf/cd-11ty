@@ -8228,5 +8228,28 @@
     "thumbnail": "https://books.google.com/books/content?id=q3KSEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=q3KSEAAAQBAJ"
+  },
+  {
+    "isbn": "9780399587320",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Before Mars",
+    "authors": [
+      "Emma Newman"
+    ],
+    "publishedDate": "2018-04-17",
+    "description": "Hugo Award winner Emma Newman returns to the captivating Planetfall universe with a dark tale of a woman stationed on Mars who starts to have doubts about everything around her. After months of travel, Anna Kubrin finally arrives on Mars for her new job as a geologist and de facto artist in residence--and already she feels she is losing the connection with her husband and baby at home on Earth. In her room on the base, Anna finds a mysterious note, painted in her own hand, warning her not to trust the colony psychiatrist. A note she can't remember painting. When she finds a footprint in a place that the colony AI claims has never been visited by humans, Anna begins to suspect that she is caught up in an elaborate corporate conspiracy. Or is she losing her grip on reality? Anna must find the truth, regardless of what horrors she might discover or what they might do to her mind.",
+    "pageCount": 353,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=eU1SDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Before_Mars.html?hl=&id=eU1SDwAAQBAJ"
   }
 ]
