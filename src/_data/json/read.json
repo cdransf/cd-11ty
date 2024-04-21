@@ -5967,5 +5967,29 @@
     "thumbnail": "https://books.google.com/books/content?id=kaqEDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=kaqEDwAAQBAJ"
+  },
+  {
+    "isbn": "9781510764705",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Disloyal: A Memoir",
+    "authors": [
+      "Michael Cohen"
+    ],
+    "publishedDate": "2020-09-08",
+    "description": "A #1 New York Times Bestseller! \"I read it cover-to-cover. I did not intend to, but I started at the beginning and didn’t put it down until it was over.\"—Rachel Maddow, MSNBC This book almost didn’t see the light of day as government officials tried to bar its publication. The Inside Story of the Real President Trump, by His Former Attorney and Personal Advisor—The Man Who Helped Get Him Into the Oval Office Once Donald Trump’s fiercest surrogate, closest confidant, and staunchest defender, Michael Cohen knows where the skeletons are buried. This is the most devastating business and political horror story of the century. As Trump’s lawyer and “fixer,” Cohen not only witnessed firsthand but was also an active participant in the inner workings of Trump’s business empire, political campaign, and presidential administration. This is a story that you have not read in newspapers, or on social media, or watched on television. These are accounts that only someone who worked for Trump around the clock for over a decade—not a few months or even a couple of years—could know. Cohen describes Trump’s racist rants against President Barack Obama, Nelson Mandela, and Black and Hispanic people in general, as well as the cruelty, humiliation, and abuse he leveled at family and staff. Whether he’s exposing the fact that Trump engaged in tax fraud by inflating his wealth or electronic fraud by rigging an online survey, or outing Trump’s Neanderthal views towards women or his hush-money payments to clandestine lovers, Cohen pulls no punches. He shows Trump’s relentless willingness to lie, exaggerate, mislead, or manipulate. Trump emerges as a man without a soul—a man who courts evangelicals and then trashes them, panders to the common man, but then rips off small business owners, a con man who will do or say absolutely anything to win, regardless of the cost to his family, his associates, or his country. At the heart of Disloyal, we see how Cohen came under the spell of his charismatic \"Boss\" and, as a result, lost all sense of his moral compass. The real \"real\" Donald Trump who permeates these pages—the racist, sexist, homophobic, lying, cheating President—will be discussed, written about, and analyzed for years to come.",
+    "pageCount": 415,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=RX33DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=RX33DwAAQBAJ"
   }
 ]
