@@ -7402,5 +7402,28 @@
     "thumbnail": "https://books.google.com/books/content?id=FrZHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=FrZHEAAAQBAJ"
+  },
+  {
+    "isbn": "9781929069248",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Loser",
+    "authors": [
+      "Clark Humphrey"
+    ],
+    "publishedDate": "1999",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Rock groups"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=6dwCAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Loser.html?hl=&id=6dwCAAAACAAJ"
   }
 ]
