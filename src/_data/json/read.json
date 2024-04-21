@@ -6162,5 +6162,29 @@
     "thumbnail": "https://books.google.com/books/content?id=fcukDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=fcukDwAAQBAJ"
+  },
+  {
+    "isbn": "9781631495748",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Jesus and John Wayne: How White Evangelicals Corrupted a Faith and Fractured a Nation",
+    "authors": [
+      "Kristin Kobes Du Mez"
+    ],
+    "publishedDate": "2020-06-23",
+    "description": "NEW YORK TIMES BESTSELLER The “paradigm-influencing” book (Christianity Today) that is fundamentally transforming our understanding of white evangelicalism in America. Jesus and John Wayne is a sweeping, revisionist history of the last seventy-five years of white evangelicalism, revealing how evangelicals have worked to replace the Jesus of the Gospels with an idol of rugged masculinity and Christian nationalism—or in the words of one modern chaplain, with “a spiritual badass.” As acclaimed scholar Kristin Du Mez explains, the key to understanding this transformation is to recognize the centrality of popular culture in contemporary American evangelicalism. Many of today’s evangelicals might not be theologically astute, but they know their VeggieTales, they’ve read John Eldredge’s Wild at Heart, and they learned about purity before they learned about sex—and they have a silver ring to prove it. Evangelical books, films, music, clothing, and merchandise shape the beliefs of millions. And evangelical culture is teeming with muscular heroes—mythical warriors and rugged soldiers, men like Oliver North, Ronald Reagan, Mel Gibson, and the Duck Dynasty clan, who assert white masculine power in defense of “Christian America.” Chief among these evangelical legends is John Wayne, an icon of a lost time when men were uncowed by political correctness, unafraid to tell it like it was, and did what needed to be done. Challenging the commonly held assumption that the “moral majority” backed Donald Trump in 2016 and 2020 for purely pragmatic reasons, Du Mez reveals that Trump in fact represented the fulfillment, rather than the betrayal, of white evangelicals’ most deeply held values: patriarchy, authoritarian rule, aggressive foreign policy, fear of Islam, ambivalence toward #MeToo, and opposition to Black Lives Matter and the LGBTQ community. A much-needed reexamination of perhaps the most influential subculture in this country, Jesus and John Wayne shows that, far from adhering to biblical principles, modern white evangelicals have remade their faith, with enduring consequences for all Americans.",
+    "pageCount": 384,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=nau6DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=nau6DwAAQBAJ"
   }
 ]
