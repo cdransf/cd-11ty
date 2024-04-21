@@ -4480,5 +4480,31 @@
     "thumbnail": "https://books.google.com/books/content?id=UHMEwgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Compatriots.html?hl=&id=UHMEwgEACAAJ"
+  },
+  {
+    "isbn": "9780922915941",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Lords of Chaos",
+    "authors": [
+      "Michael Moynihan",
+      "Didrik Soderlind",
+      "Didrik Søderlind"
+    ],
+    "publishedDate": "2003",
+    "description": "\"* * * * * *! The most incredible story in the history of music a?| a heavyweight book.\"-Kerrang! \"An unusual combination of true crime journalism, rock and roll reporting and underground obsessiveness, Lords of Chaos turns into one of the more fascinating reads in a long time.\"-Denver Post A narrative feature film based on this award-winning book has just gone into production.",
+    "pageCount": 428,
+    "printType": "BOOK",
+    "categories": [
+      "Architecture"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=5J1fCHvHfosC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Lords_of_Chaos.html?hl=&id=5J1fCHvHfosC"
   }
 ]
