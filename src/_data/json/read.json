@@ -5475,5 +5475,31 @@
     "thumbnail": "https://books.google.com/books/content?id=xj7rDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/This_Is_How_They_Tell_Me_the_World_Ends.html?hl=&id=xj7rDwAAQBAJ"
+  },
+  {
+    "isbn": "9780307594655",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "The Master Switch",
+    "authors": [
+      "Tim Wu"
+    ],
+    "publishedDate": "2010-11-02",
+    "description": "A New Yorker and Fortune Best Book of the Year \"A must-read for all Americans who want to remain the ones deciding what they can read, watch, and listen to.” —Arianna Huffington Analyzing the strategic maneuvers of today’s great information powers—Apple, Google, and an eerily resurgent AT&T—Tim Wu uncovers a time-honored pattern in which invention begets industry and industry begets empire. It is easy to forget that every development in the history of the American information industry—from the telephone to radio to film—once existed in an open and chaotic marketplace inhabited by entrepreneurs and utopians, just as the Internet does today. Each of these, however, grew to be dominated by a monopolist or cartel. In this pathbreaking book, Tim Wu asks: will the Internet follow the same fate? Could the Web—the entire flow of American information—come to be ruled by a corporate leviathan in possession of \"the master switch\"? Here, Tim Wu shows how a battle royale for the Internet’s future is brewing, and this is one war we dare not tune out.",
+    "pageCount": 384,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=6Dp4FoEEo6IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=6Dp4FoEEo6IC"
   }
 ]
