@@ -6681,5 +6681,30 @@
     "thumbnail": "https://books.google.com/books/content?id=h4y9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=h4y9DwAAQBAJ"
+  },
+  {
+    "isbn": "9780691244914",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Algorithms for the People",
+    "authors": [
+      "Josh Simons"
+    ],
+    "publishedDate": "2023-01-10",
+    "description": "How to put democracy at the heart of AI governance Artificial intelligence and machine learning are reshaping our world. Police forces use them to decide where to send police officers, judges to decide whom to release on bail, welfare agencies to decide which children are at risk of abuse, and Facebook and Google to rank content and distribute ads. In these spheres, and many others, powerful prediction tools are changing how decisions are made, narrowing opportunities for the exercise of judgment, empathy, and creativity. In Algorithms for the People, Josh Simons flips the narrative about how we govern these technologies. Instead of examining the impact of technology on democracy, he explores how to put democracy at the heart of AI governance. Drawing on his experience as a research fellow at Harvard University, a visiting research scientist on Facebook’s Responsible AI team, and a policy advisor to the UK’s Labour Party, Simons gets under the hood of predictive technologies, offering an accessible account of how they work, why they matter, and how to regulate the institutions that build and use them. He argues that prediction is political: human choices about how to design and use predictive tools shape their effects. Approaching predictive technologies through the lens of political theory casts new light on how democracies should govern political choices made outside the sphere of representative politics. Showing the connection between technology regulation and democratic reform, Simons argues that we must go beyond conventional theorizing of AI ethics to wrestle with fundamental moral and political questions about how the governance of technology can support the flourishing of democracy.",
+    "pageCount": 321,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=hoKIEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Algorithms_for_the_People.html?hl=&id=hoKIEAAAQBAJ"
   }
 ]
