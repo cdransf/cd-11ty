@@ -4829,5 +4829,31 @@
     "thumbnail": "https://books.google.com/books/content?id=kRjzDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=kRjzDwAAQBAJ"
+  },
+  {
+    "isbn": "9780141185439",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "autobiography",
+      "nonfiction"
+    ],
+    "title": "The Autobiography of Malcolm X",
+    "authors": [
+      "Malcolm X",
+      "Alex Haley"
+    ],
+    "publishedDate": "1965",
+    "description": "Malcolm X's blazing, legendary autobiography, completed shortly before his assassination in 1965, depicts a remarkable life: a child born into rage and despair, who turned to street-hustling and cocaine in the Harlem ghetto, followed by prison, where he converted to the Black Muslims and honed the energy and brilliance that made him one of the most important political figures of his time - and an icon in ours. It also charts the spiritual journey that took him beyond militancy, and led to his murder, a powerful story of transformation, redemption and betrayal. Vilified by his critics as an anti-white demagogue, Malcolm X gave a voice to unheard African-Americans, bringing them pride, hope and fearlessness, and remains an inspirational and controversial figure today.",
+    "pageCount": 512,
+    "printType": "BOOK",
+    "categories": [
+      "African Americans"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=aLSePwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Autobiography_of_Malcolm_X.html?hl=&id=aLSePwAACAAJ"
   }
 ]
