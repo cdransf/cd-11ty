@@ -5376,5 +5376,29 @@
     "thumbnail": "https://books.google.com/books/content?id=dctwBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Corruption_in_America.html?hl=&id=dctwBAAAQBAJ"
+  },
+  {
+    "isbn": "9780999745465",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "economics",
+      "nonfiction"
+    ],
+    "title": "The Curse of Bigness",
+    "authors": [
+      "Tim Wu"
+    ],
+    "publishedDate": "2018",
+    "description": "From the man who coined the term \"net neutrality\" and who has made significant contributions to our understanding of antitrust policy and wireless communications, comes a call for tighter antitrust enforcement and an end to corporate bigness.",
+    "pageCount": 154,
+    "printType": "BOOK",
+    "categories": [
+      "BUSINESS & ECONOMICS"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=30sLtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Curse_of_Bigness.html?hl=&id=30sLtAEACAAJ"
   }
 ]
