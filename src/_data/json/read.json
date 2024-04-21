@@ -8113,5 +8113,28 @@
     "thumbnail": "https://books.google.com/books/content?id=MAqyDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=MAqyDAAAQBAJ"
+  },
+  {
+    "isbn": "9780316526999",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Aurora",
+    "authors": [
+      "Kim Stanley Robinson"
+    ],
+    "publishedDate": "2018-06-05",
+    "description": "From one of science fiction's most powerful voices, Aurora tells the incredible story of our first voyage beyond the solar system. Brilliantly imagined and beautifully told, it is the work of a writer at the height of his powers. Our voyage from Earth began generations ago. Now, we approach our new home. AURORA. For more from Kim Stanley Robinson, check out: 2312ShamanNew York 2140",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=fNzVswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Aurora.html?hl=&id=fNzVswEACAAJ"
   }
 ]
