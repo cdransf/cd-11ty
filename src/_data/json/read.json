@@ -3439,5 +3439,30 @@
     "thumbnail": "https://books.google.com/books/content?id=SfmxC37lSWUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=SfmxC37lSWUC"
+  },
+  {
+    "isbn": "9780804137515",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "labor",
+      "culture"
+    ],
+    "title": "Remote",
+    "authors": [
+      "Jason Fried",
+      "David Heinemeier Hansson"
+    ],
+    "publishedDate": "2013-10-29",
+    "description": "The classic guide to working from home and why we should embrace a virtual office, from the bestselling authors of Rework “A paradigm-smashing, compulsively readable case for a radically remote workplace.”—Susan Cain, New York Times bestselling author of Quiet Does working from home—or anywhere else but the office—make sense? In Remote, Jason Fried and David Heinemeier Hansson, the founders of Basecamp, bring new insight to the hotly debated argument. While providing a complete overview of remote work’s challenges, Jason and David persuasively argue that, often, the advantages of working “off-site” far outweigh the drawbacks. In the past decade, the “under one roof” model of conducting work has been steadily declining, owing to technology that is rapidly creating virtual workspaces. Today the new paradigm is “move work to the workers, rather than workers to the workplace.” Companies see advantages in the way remote work increases their talent pool, reduces turnover, lessens their real estate footprint, and improves their ability to conduct business across multiple time zones. But what about the workers? Jason and David point out that remote work means working at the best job (not just one that is nearby) and achieving a harmonious work-life balance while increasing productivity. And those are just some of the perks to be gained from leaving the office behind. Remote reveals a multitude of other benefits, along with in-the-trenches tips for easing your way out of the office door where you control how your workday will unfold. Whether you’re a manager fretting over how to manage workers who “want out” or a worker who wants to achieve a lifestyle upgrade while still being a top performer professionally, this book is your indispensable guide.",
+    "pageCount": 258,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=KeJE7Tyl6o8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=KeJE7Tyl6o8C"
   }
 ]
