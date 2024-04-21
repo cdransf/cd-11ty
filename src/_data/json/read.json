@@ -6516,5 +6516,28 @@
     "thumbnail": "https://books.google.com/books/content?id=KvP1EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=KvP1EAAAQBAJ"
+  },
+  {
+    "isbn": "9781466853447",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "The Three-Body Problem",
+    "authors": [
+      "Cixin Liu"
+    ],
+    "publishedDate": "2014-11-11",
+    "description": "The inspiration for the Netflix series 3 Body Problem! WINNER OF THE HUGO AWARD FOR BEST NOVEL Over 1 million copies sold in North America “A mind-bending epic.”—The New York Times • “War of the Worlds for the 21st century.”—The Wall Street Journal • “Fascinating.”—TIME • “Extraordinary.”—The New Yorker • “Wildly imaginative.”—Barack Obama • “Provocative.”—Slate • “A breakthrough book.”—George R. R. Martin • “Impossible to put down.”—GQ • “Absolutely mind-unfolding.”—NPR • “You should be reading Liu Cixin.”—The Washington Post The Three-Body Problem is the first novel in the groundbreaking, Hugo Award-winning series from China's most beloved science fiction author, Cixin Liu. Set against the backdrop of China's Cultural Revolution, a secret military project sends signals into space to establish contact with aliens. An alien civilization on the brink of destruction captures the signal and plans to invade Earth. Meanwhile, on Earth, different camps start forming, planning to either welcome the superior beings and help them take over a world seen as corrupt, or to fight against the invasion. The result is a science fiction masterpiece of enormous scope and vision. The Three-Body Problem Series The Three-Body Problem The Dark Forest Death's End Other Books by Cixin Liu Ball Lightning Supernova Era To Hold Up the Sky The Wandering Earth A View from the Stars At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+    "pageCount": 400,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ZrNzAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=ZrNzAwAAQBAJ"
   }
 ]
