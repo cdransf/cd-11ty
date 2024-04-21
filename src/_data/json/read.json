@@ -3940,5 +3940,28 @@
     "thumbnail": "https://books.google.com/books/content?id=5PbUDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Adnan_s_Story.html?hl=&id=5PbUDAAAQBAJ"
+  },
+  {
+    "isbn": "9780698191068",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "American Predator",
+    "authors": [
+      "Maureen Callahan"
+    ],
+    "publishedDate": "2019-07-02",
+    "description": "INSTANT NEW YORK TIMES BESTSELLER An Amazon “Best Book of 2019” A Washington Post “10 Books To Read in July” A Los Angeles Times “Seven Highly Anticipated Books for Summer Reading” A USA Today “20 of the Season’s Hottest New Books” A New York Post “25 Best Beach Reads of 2019 You Need to Pre-Order Now” A Bustle “The Best New True Crime Books You Can Read Right Now” “Maureen Callahan’s deft reporting and stylish writing have created one of the all-time-great serial-killer books: sensitive, chilling, and completely impossible to put down.” —Ada Calhoun, author of St. Marks Is Dead Ted Bundy. John Wayne Gacy. Jeffrey Dahmer. The names of notorious serial killers are usually well-known; they echo in the news and in public consciousness. But most people have never heard of Israel Keyes, one of the most ambitious and terrifying serial killers in modern history. The FBI considered his behavior unprecedented. Described by a prosecutor as \"a force of pure evil,\" Keyes was a predator who struck all over the United States. He buried \"kill kits\"--cash, weapons, and body-disposal tools--in remote locations across the country. Over the course of fourteen years, Keyes would fly to a city, rent a car, and drive thousands of miles in order to use his kits. He would break into a stranger's house, abduct his victims in broad daylight, and kill and dispose of them in mere hours. And then he would return home to Alaska, resuming life as a quiet, reliable construction worker devoted to his only daughter. When journalist Maureen Callahan first heard about Israel Keyes in 2012, she was captivated by how a killer of this magnitude could go undetected by law enforcement for over a decade. And so began a project that consumed her for the next several years--uncovering the true story behind how the FBI ultimately caught Israel Keyes, and trying to understand what it means for a killer like Keyes to exist. A killer who left a path of monstrous, randomly committed crimes in his wake--many of which remain unsolved to this day. American Predator is the ambitious culmination of years of interviews with key figures in law enforcement and in Keyes's life, and research uncovered from classified FBI files. Callahan takes us on a journey into the chilling, nightmarish mind of a relentless killer, and to the limitations of traditional law enforcement.",
+    "pageCount": 304,
+    "printType": "BOOK",
+    "categories": [
+      "True Crime"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=2uV8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=2uV8DwAAQBAJ"
   }
 ]
