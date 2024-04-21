@@ -3561,5 +3561,29 @@
     "thumbnail": "https://books.google.com/books/content?id=sxRJEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=sxRJEAAAQBAJ"
+  },
+  {
+    "isbn": "9780525511847",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "How Fascism Works",
+    "authors": [
+      "Jason Stanley"
+    ],
+    "publishedDate": "2018-09-04",
+    "description": "“No single book is as relevant to the present moment.”—Claudia Rankine, author of Citizen “One of the defining books of the decade.”—Elizabeth Hinton, author of From the War on Poverty to the War on Crime NEW YORK TIMES BOOK REVIEW EDITORS’ CHOICE • With a new preface • Fascist politics are running rampant in America today—and spreading around the world. A Yale philosopher identifies the ten pillars of fascist politics, and charts their horrifying rise and deep history. As the child of refugees of World War II Europe and a renowned philosopher and scholar of propaganda, Jason Stanley has a deep understanding of how democratic societies can be vulnerable to fascism: Nations don’t have to be fascist to suffer from fascist politics. In fact, fascism’s roots have been present in the United States for more than a century. Alarmed by the pervasive rise of fascist tactics both at home and around the globe, Stanley focuses here on the structures that unite them, laying out and analyzing the ten pillars of fascist politics—the language and beliefs that separate people into an “us” and a “them.” He knits together reflections on history, philosophy, sociology, and critical race theory with stories from contemporary Hungary, Poland, India, Myanmar, and the United States, among other nations. He makes clear the immense danger of underestimating the cumulative power of these tactics, which include exploiting a mythic version of a nation’s past; propaganda that twists the language of democratic ideals against themselves; anti-intellectualism directed against universities and experts; law and order politics predicated on the assumption that members of minority groups are criminals; and fierce attacks on labor groups and welfare. These mechanisms all build on one another, creating and reinforcing divisions and shaping a society vulnerable to the appeals of authoritarian leadership. By uncovering disturbing patterns that are as prevalent today as ever, Stanley reveals that the stuff of politics—charged by rhetoric and myth—can quickly become policy and reality. Only by recognizing fascists politics, he argues, may we resist its most harmful effects and return to democratic ideals. “With unsettling insight and disturbing clarity, How Fascism Works is an essential guidebook to our current national dilemma of democracy vs. authoritarianism.”—William Jelani Cobb, author of The Substance of Hope",
+    "pageCount": 258,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=NARIDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=NARIDwAAQBAJ"
   }
 ]
