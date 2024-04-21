@@ -3825,5 +3825,31 @@
     "thumbnail": "https://books.google.com/books/content?id=00LQBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Spam_Nation.html?hl=&id=00LQBAAAQBAJ"
+  },
+  {
+    "isbn": "9780061739118",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Bind, Torture, Kill",
+    "authors": [
+      "Roy Wenzl",
+      "Tim Potter",
+      "L. Kelly",
+      "Hurst Laviana"
+    ],
+    "publishedDate": "2009-10-13",
+    "description": "For thirty-one years, a monster terrorized the residents of Wichita, Kansas. A bloodthirsty serial killer, self-named \"BTK\"—for \"bind them, torture them, kill them\"—he slaughtered men, women, and children alike, eluding the police for decades while bragging of his grisly exploits to the media. The nation was shocked when the fiend who was finally apprehended turned out to be Dennis Rader—a friendly neighbor . . . a devoted husband . . . a helpful Boy Scout dad . . . the respected president of his church. Written by four award-winning crime reporters who covered the story for more than twenty years, Bind, Torture, Kill is the most intimate and complete account of the BTK nightmare told by the people who were there from the beginning. With newly released documents, evidence, and information—and with the full cooperation, for the very first time, of the Wichita Police Department’s BTK Task Force—the authors have put all the pieces of the grisly puzzle into place, thanks to their unparalleled access to the families of the killer and his victims.",
+    "pageCount": 573,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=fhiH-9uV5PQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=fhiH-9uV5PQC"
   }
 ]
