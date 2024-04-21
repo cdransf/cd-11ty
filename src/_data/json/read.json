@@ -4431,5 +4431,29 @@
     "thumbnail": "https://books.google.com/books/content?id=-XGKFJq4eccC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=-XGKFJq4eccC"
+  },
+  {
+    "isbn": "9781643752198",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Off the Edge",
+    "authors": [
+      "Kelly Weill"
+    ],
+    "publishedDate": "2022-02-22",
+    "description": "“A deep dive into the world of Flat Earth conspiracy theorists . . . that brilliantly reveals how people fall into illogical beliefs, reject reason, destroy relationships, and connect with a broad range of conspiracy theories in the social media age. Beautiful, probing, and often empathetic . . . An insightful, human look at what fuels conspiracy theories.” —Science Since 2015, there has been a spectacular boom in a centuries-old delusion: that the earth is flat. More and more people believe that we all live on a pancake-shaped planet, capped by a solid dome and ringed by an impossible wall of ice. How? Why? In Off the Edge, journalist Kelly Weill draws a direct line from today’s conspiratorial moment, brimming not just with Flat Earthers but also anti-vaxxers and QAnon followers, back to the early days of Flat Earth theory in the 1830s. We learn the natural impulses behind these beliefs: when faced with a complicated world out of our control, humans have always sought patterns to explain the inexplicable. This psychology doesn’t change. But with the dawn of the twenty-first century, something else has shifted. Powered by Facebook and YouTube algorithms, the Flat Earth movement is growing. At once a definitive history of the movement and an essential look at its unbelievable present, Off the Edge introduces us to a cast of larger-than-life characters. We meet historical figures like the nineteenth-century grifter who first popularized the theory, as well as the many modern-day Flat Earthers Weill herself gets to know, from moms on vacation to determined creationists to neo-Nazi rappers. We discover what, and who, converts people to Flat Earth belief, and what happens inside the rabbit hole. And we even meet a man determined to fly into space in a homemade rocket-powered balloon—whose tragic death is as senseless and absurd as the theory he sets out to prove. In this incisive and powerful story about belief, Kelly Weill explores how we arrived at this moment of polarized realities and explains what needs to happen so that we might all return to the same spinning globe.",
+    "pageCount": 289,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=IGEfEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=IGEfEAAAQBAJ"
   }
 ]
