@@ -4673,5 +4673,29 @@
     "thumbnail": "https://books.google.com/books/content?id=D0M3EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=D0M3EAAAQBAJ"
+  },
+  {
+    "isbn": "9781984879790",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Reign of Terror",
+    "authors": [
+      "Spencer Ackerman"
+    ],
+    "publishedDate": "2022-08-09",
+    "description": "A New York Times Critics’ Top Book of 2021 \"An impressive combination of diligence and verve, deploying Ackerman’s deep stores of knowledge as a national security journalist to full effect. The result is a narrative of the last 20 years that is upsetting, discerning and brilliantly argued.\" —The New York Times \"One of the most illuminating books to come out of the Trump era.\" —New York Magazine An examination of the profound impact that the War on Terror had in pushing American politics and society in an authoritarian direction For an entire generation, at home and abroad, the United States has waged an endless conflict known as the War on Terror. In addition to multiple ground wars, the era pioneered drone strikes and industrial-scale digital surveillance; weakened the rule of law through indefinite detentions; sanctioned torture; and manipulated the truth about it all. These conflicts have yielded neither peace nor victory, but they have transformed America. What began as the persecution of Muslims and immigrants has become a normalized feature of American politics and national security, expanding the possibilities for applying similar or worse measures against other targets at home, as the summer of 2020 showed. A politically divided and economically destabilized country turned the War on Terror into a cultural—and then a tribal—struggle. It began on the ideological frontiers of the Republican Party before expanding to conquer the GOP, often with the acquiescence of the Democratic Party. Today’s nativist resurgence walked through a door opened by the 9/11 era. And that door remains open. Reign of Terror shows how these developments created an opportunity for American authoritarianism and gave rise to Donald Trump. It shows that Barack Obama squandered an opportunity to dismantle the War on Terror after killing Osama bin Laden. By the end of his tenure, the war had metastasized into a bitter, broader cultural struggle in search of a demagogue like Trump to lead it. Reign of Terror is a pathbreaking and definitive union of journalism and intellectual history with the power to transform how America understands its national security policies and their catastrophic impact on civic life.",
+    "pageCount": 449,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=BmtuEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Reign_of_Terror.html?hl=&id=BmtuEAAAQBAJ"
   }
 ]
