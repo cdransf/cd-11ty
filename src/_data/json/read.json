@@ -6454,6 +6454,9 @@
       "nonfiction"
     ],
     "title": "Design is a Job",
+    "authors": [
+      "Mike Monteiro"
+    ],
     "publishedDate": "2012",
     "description": "From contracts to selling design, from working with clients to working with each other, this brief book is packed with knowledge you cant afford not to know.",
     "pageCount": 137,
@@ -6461,6 +6464,7 @@
     "categories": [
       "Designer"
     ],
+    "thumbnail": "https://books.google.com/books/content?id=xZWbzwEACAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Design_is_a_Job.html?hl=&id=OoMwMwEACAAJ"
   },
