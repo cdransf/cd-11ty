@@ -8251,5 +8251,28 @@
     "thumbnail": "https://books.google.com/books/content?id=eU1SDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Before_Mars.html?hl=&id=eU1SDwAAQBAJ"
+  },
+  {
+    "isbn": "9780316388634",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Provenance",
+    "authors": [
+      "Ann Leckie"
+    ],
+    "publishedDate": "2017-09-26",
+    "description": "An ambitious young woman has just one chance to secure her future and reclaim her family's priceless lost artifacts in this stand-alone novel set in the world of the award-winning, New York Times bestselling Imperial Radch trilogy. Though she knows her brother holds her mother's favor, Ingrid is determined to at least be considered as heir to the family name. She hatches an audacious plan -- free a thief from a prison planet from which no one has ever returned, and use them to help steal back a priceless artifact. But Ingray and her charge return to her home to find their planet in political turmoil, at the heart of an escalating interstellar conflict. Together, they must make a new plan to salvage Ingray's future and her world, before they are lost to her for good.",
+    "pageCount": 336,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=B2CHDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=B2CHDgAAQBAJ"
   }
 ]
