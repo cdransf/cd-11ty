@@ -3917,5 +3917,28 @@
     "thumbnail": "https://books.google.com/books/content?id=0DQaTU7Opq0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=0DQaTU7Opq0C"
+  },
+  {
+    "isbn": "9781250087102",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Adnan's Story",
+    "authors": [
+      "Rabia Chaudry"
+    ],
+    "publishedDate": "2016-08-09",
+    "description": "With intimate details and newly-uncovered evidence Adnan's Story goes beyond what the hit podcast Serial covered in it's investigation of Adnan Syed's case.",
+    "pageCount": 417,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=5PbUDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Adnan_s_Story.html?hl=&id=5PbUDAAAQBAJ"
   }
 ]
