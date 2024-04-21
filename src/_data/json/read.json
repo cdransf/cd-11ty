@@ -6443,5 +6443,25 @@
     "thumbnail": "https://books.google.com/books/content?id=5wBQEp6ruIAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=5wBQEp6ruIAC"
+  },
+  {
+    "isbn": "1937557049",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "design",
+      "nonfiction"
+    ],
+    "title": "Design is a Job",
+    "publishedDate": "2012",
+    "description": "From contracts to selling design, from working with clients to working with each other, this brief book is packed with knowledge you cant afford not to know.",
+    "pageCount": 137,
+    "printType": "BOOK",
+    "categories": [
+      "Designer"
+    ],
+    "language": "en",
+    "link": "https://books.google.com/books/about/Design_is_a_Job.html?hl=&id=OoMwMwEACAAJ"
   }
 ]
