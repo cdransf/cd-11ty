@@ -6804,5 +6804,29 @@
     "thumbnail": "https://books.google.com/books/content?id=eu5-EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=eu5-EAAAQBAJ"
+  },
+  {
+    "isbn": "9781982114121",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Saying It Loud",
+    "authors": [
+      "Mark Whitaker"
+    ],
+    "publishedDate": "2023-02-07",
+    "description": "Journalist and author Mark Whitaker explores the momentous year that redefined the civil rights movement as a new sense of Black identity expressed in the slogan “Black Power” challenged the nonviolent philosophy of Martin Luther King, Jr. and John Lewis. In gripping, novelistic detail, Saying It Loud tells the story of how the Black Power phenomenon began to challenge the traditional civil rights movement in the turbulent year of 1966. Saying It Loud takes you inside the dramatic events in this seminal year, from Stokely Carmichael’s middle-of-the-night ouster of moderate icon John Lewis as chairman of the Student Nonviolent Coordinating Committee (SNCC) to Carmichael’s impassioned cry of “Black Power!” during a protest march in rural Mississippi. From Julian Bond’s humiliating and racist ouster from the Georgia state legislature because of his antiwar statements to Ronald Reagan’s election as California governor riding a “white backlash” vote against Black Power and urban unrest. From the founding of the Black Panther Party for Self-Defense by Huey Newton and Bobby Seale in Oakland, California, to the origins of Kwanzaa, the Black Arts Movement, and the first Black studies programs. From Reverend Martin Luther King, Jr.’s ill-fated campaign to take the civil rights movement north to Chicago to the wrenching ousting of the white members of SNCC. Deeply researched and widely reported, Saying It Loud offers brilliant portraits of the major characters in the yearlong drama, and provides new details and insights from key players and journalists who covered the story. It also makes a compelling case for why the lessons from 1966 still resonate in the era of Black Lives Matter and the fierce contemporary battles over voting rights, identity politics, and the teaching of Black history.",
+    "pageCount": 400,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=x6umEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Saying_It_Loud.html?hl=&id=x6umEAAAQBAJ"
   }
 ]
