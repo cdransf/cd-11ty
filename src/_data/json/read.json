@@ -5097,5 +5097,29 @@
     "thumbnail": "https://books.google.com/books/content?id=GIy9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=GIy9DwAAQBAJ"
+  },
+  {
+    "isbn": "9781784780463",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Radical Technologies",
+    "authors": [
+      "Adam Greenfield"
+    ],
+    "publishedDate": "2017-06-01",
+    "description": "A field manual to the technologies that are transforming our lives Everywhere we turn, a startling new device promises to transfigure our lives. But at what cost? In this urgent and revelatory excavation of our Information Age, leading technology thinker Adam Greenfield forces us to reconsider our relationship with the networked objects, services and spaces that define us. It is time to re-evaluate the Silicon Valley consensus determining the future. We already depend on the smartphone to navigate every aspect of our existence. We’re told that innovations—from augmented-reality interfaces and virtual assistants to autonomous delivery drones and self-driving cars—will make life easier, more convenient and more productive. 3D printing promises unprecedented control over the form and distribution of matter, while the blockchain stands to revolutionize everything from the recording and exchange of value to the way we organize the mundane realities of the day to day. And, all the while, fiendishly complex algorithms are operating quietly in the background, reshaping the economy, transforming the fundamental terms of our politics and even redefining what it means to be human. Having successfully colonized everyday life, these radical technologies are now conditioning the choices available to us in the years to come. How do they work? What challenges do they present to us, as individuals and societies? Who benefits from their adoption? In answering these questions, Greenfield’s timely guide clarifies the scale and nature of the crisis we now confront —and offers ways to reclaim our stake in the future.",
+    "pageCount": 396,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=Rm3nDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Radical_Technologies.html?hl=&id=Rm3nDwAAQBAJ"
   }
 ]
