@@ -6899,5 +6899,29 @@
     "thumbnail": "https://books.google.com/books/content?id=USCUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=USCUEAAAQBAJ"
+  },
+  {
+    "isbn": "9781501198069",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction",
+      "health"
+    ],
+    "title": "The People's Hospital",
+    "authors": [
+      "Ricardo Nuila"
+    ],
+    "publishedDate": "2023-03-14",
+    "description": "“Nuila’s storytelling gifts place him alongside colleagues like Atul Gawande.” —Los Angeles Times This “compelling mixture of health care policy and gripping stories from the frontlines of medicine” (The Guardian) explores the question: where does an uninsured person go when turned away by hospitals, clinics, and doctors? Here, we follow the lives of five uninsured Houstonians as their struggle for survival leads them to a hospital that prioritizes people over profit. First, we meet Stephen, the restaurant franchise manager who signed up for his company’s lowest priced plan, only to find himself facing insurmountable costs after a cancer diagnosis. Then Christian—a young college student and retail worker who can’t seem to get an accurate diagnosis, let alone treatment, for his debilitating knee pain. Geronimo, thirty-six years old, has liver failure, but his meager disability check disqualifies him for Medicaid—and puts a life-saving transplant just out of reach. Roxana, who’s lived in the community without a visa for more than two decades, suffers from complications related to her cancer treatment. And finally, there’s Ebonie, a young mother whose high-risk pregnancy endangers her life. Whether due to immigration status, income, or the vagaries of state Medicaid law, all five are denied access to care. For all five, this exclusion could prove life-threatening. Each patient eventually lands at Ben Taub, the county hospital where Dr. Nuila has worked for over a decade. Nuila delves with empathy into the experiences of his patients, braiding their dramas into a singular narrative that contradicts the established idea that the only way to receive good health care is with good insurance. As readers follow the moving twists and turns in each patient’s story, it’s impossible to deny that our system is broken—and that Ben Taub’s innovative model, where patient care is more important than insurance payments, could help light the path forward.",
+    "pageCount": 384,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=KsZ0EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=KsZ0EAAAQBAJ"
   }
 ]
