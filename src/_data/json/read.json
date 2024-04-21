@@ -6585,5 +6585,28 @@
     "thumbnail": "https://books.google.com/books/content?id=w19z8-u1dl0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Chasm_City.html?hl=&id=w19z8-u1dl0C"
+  },
+  {
+    "isbn": "9780316462693",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Pushing Ice",
+    "authors": [
+      "Alastair Reynolds"
+    ],
+    "publishedDate": "2020-04-21",
+    "description": "Pushing Ice is the brilliant tale of extraordinary aliens, glittering technologies, and sweeping space opera from award-winning science fiction author Alastair Reynolds. 2057. Humanity has raised exploiting the solar system to an art form. Bella Lind and the crew of her nuclear-powered ship, the Rockhopper, push ice. They mine comets. And they're good at it. The Rockhopper is nearing the end of its current mission cycle, and everyone is desperate for some much-needed R & R, when startling news arrives from Saturn: Janus, one of Saturn's ice moons, has inexplicably left its natural orbit and is now heading out of the solar system at high speed. As layers of camouflage fall away, it becomes clear that Janus was never a moon in the first place. It's some kind of machine -- and it is now headed toward a fuzzily glimpsed artifact 260 light-years away. The Rockhopper is the only ship anywhere near Janus, and Bella Lind is ordered to shadow it for the few vital days before it falls forever out of reach. In accepting this mission, she sets her ship and her crew on a collision course with destiny -- for Janus has more surprises in store, and not all of them are welcome.",
+    "pageCount": 602,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=9oy9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=9oy9DwAAQBAJ"
   }
 ]
