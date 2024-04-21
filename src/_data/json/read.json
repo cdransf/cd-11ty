@@ -6090,5 +6090,29 @@
     "thumbnail": "https://books.google.com/books/content?id=LvLlCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=LvLlCgAAQBAJ"
+  },
+  {
+    "isbn": "9781250196699",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Ten Arguments for Deleting Your Social Media Accounts Right Now",
+    "authors": [
+      "Jaron Lanier"
+    ],
+    "publishedDate": "2018-05-29",
+    "description": "AS SEEN IN THE NETFLIX DOCUMENTARY THE SOCIAL DILEMMA A WIRED \"ALL-TIME FAVORITE BOOK\" A FINANCIAL TIMES BEST BOOK \"THE CONSCIENCE OF SILICON VALLEY\"- GQ “Profound . . . Lanier shows the tactical value of appealing to the conscience of the individual. In the face of his earnest argument, I felt a piercing shame about my own presence on Facebook. I heeded his plea and deleted my account.” - Franklin Foer, The New York Times Book Review “Mixes prophetic wisdom with a simple practicality . . . Essential reading.” - The New York Times (Summer Reading Preview) You might have trouble imagining life without your social media accounts, but virtual reality pioneer Jaron Lanier insists that we’re better off without them. In Ten Arguments for Deleting Your Social Media Accounts Right Now, Lanier, who participates in no social media, offers powerful and personal reasons for all of us to leave these dangerous online platforms. Lanier’s reasons for freeing ourselves from social media’s poisonous grip include its tendency to bring out the worst in us, to make politics terrifying, to trick us with illusions of popularity and success, to twist our relationship with the truth, to disconnect us from other people even as we are more “connected” than ever, to rob us of our free will with relentless targeted ads. How can we remain autonomous in a world where we are under continual surveillance and are constantly being prodded by algorithms run by some of the richest corporations in history that have no way of making money other than being paid to manipulate our behavior? How could the benefits of social media possibly outweigh the catastrophic losses to our personal dignity, happiness, and freedom? Lanier remains a tech optimist, so while demonstrating the evil that rules social media business models today, he also envisions a humanistic setting for social networking that can direct us toward a richer and fuller way of living and connecting with our world.",
+    "pageCount": 160,
+    "printType": "BOOK",
+    "categories": [
+      "Computers"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=NZVJDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=NZVJDwAAQBAJ"
   }
 ]
