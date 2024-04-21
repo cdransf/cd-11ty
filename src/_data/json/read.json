@@ -6923,5 +6923,29 @@
     "thumbnail": "https://books.google.com/books/content?id=KsZ0EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=KsZ0EAAAQBAJ"
+  },
+  {
+    "isbn": "9780593653166",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "An Inconvenient Cop",
+    "authors": [
+      "Edwin Raymond",
+      "Jon Sternfeld"
+    ],
+    "publishedDate": "2023-10-17",
+    "description": "“With illuminating, vivid, and meticulous prose, Edwin Raymond delivers an extraordinary exposé on policing in America . . . An essential, exceptional work.” —Toluse Olorunnipa, Pulitzer Prize–winning author of His Name Is George Floyd From the highest-ranking whistleblower in NYPD history, a gripping insider look at the complexities of modern policing and the urgent need for reform Over his decade and a half with the New York Police Department, Edwin Raymond consistently exposed the dark underbelly of modern policing, becoming the highest-ranking whistleblower in the history of the force and one of the country’s leading voices against police injustice. Offering a rare, often shocking view of American policing, An Inconvenient Cop pulls back the curtain on the many flaws woven into the NYPD’s training, data, and practices, which have since been repackaged and repurposed by police departments across the country. Gravitating toward law enforcement in the hope of being a positive influence in his community, Raymond quickly learned that the problem with policing is a lot deeper than merely “a few bad apples”—the entire mechanism is set up to ensure that racial profiling is rewarded, and there are weighty consequences for cops who don’t play along. Struggling with the moral dilemma of policing impartially while witnessing his fellow officers go with the flow, Raymond’s journey takes him to the precipice of personal and professional ruin. Yet, through it all, he remains steadfast in his commitment to justice and his belief in the potential for change. At once revelatory and galvanizing, An Inconvenient Cop courageously bears witness to and exposes institutional violence. It presents a vision of radical hope and makes the case for a world in which the police’s responsibility is not to arrest numbers but to the people.",
+    "pageCount": 353,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=lcaqEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/An_Inconvenient_Cop.html?hl=&id=lcaqEAAAQBAJ"
   }
 ]
