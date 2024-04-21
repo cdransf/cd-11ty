@@ -4235,5 +4235,29 @@
     "thumbnail": "https://books.google.com/books/content?id=ZlU_DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=ZlU_DwAAQBAJ"
+  },
+  {
+    "isbn": "9780735217959",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction",
+      "culture"
+    ],
+    "title": "The Nineties",
+    "authors": [
+      "Chuck Klosterman"
+    ],
+    "publishedDate": "2022-02-08",
+    "description": "An instant New York Times bestseller! From the bestselling author of But What if We’re Wrong, a wise and funny reckoning with the decade that gave us slacker/grunge irony about the sin of trying too hard, during the greatest shift in human consciousness of any decade in American history. It was long ago, but not as long as it seems: The Berlin Wall fell and the Twin Towers collapsed. In between, one presidential election was allegedly decided by Ross Perot while another was plausibly decided by Ralph Nader. In the beginning, almost every name and address was listed in a phone book, and everyone answered their landlines because you didn’t know who it was. By the end, exposing someone’s address was an act of emotional violence, and nobody picked up their new cell phone if they didn’t know who it was. The 90s brought about a revolution in the human condition we’re still groping to understand. Happily, Chuck Klosterman is more than up to the job. Beyond epiphenomena like \"Cop Killer\" and Titanic and Zima, there were wholesale shifts in how society was perceived: the rise of the internet, pre-9/11 politics, and the paradoxical belief that nothing was more humiliating than trying too hard. Pop culture accelerated without the aid of a machine that remembered everything, generating an odd comfort in never being certain about anything. On a 90’s Thursday night, more people watched any random episode of Seinfeld than the finale of Game of Thrones. But nobody thought that was important; if you missed it, you simply missed it. It was the last era that held to the idea of a true, hegemonic mainstream before it all began to fracture, whether you found a home in it or defined yourself against it. In The Nineties, Chuck Klosterman makes a home in all of it: the film, the music, the sports, the TV, the politics, the changes regarding race and class and sexuality, the yin/yang of Oprah and Alan Greenspan. In perhaps no other book ever written would a sentence like, “The video for ‘Smells Like Teen Spirit’ was not more consequential than the reunification of Germany” make complete sense. Chuck Klosterman has written a multi-dimensional masterpiece, a work of synthesis so smart and delightful that future historians might well refer to this entire period as Klostermanian.",
+    "pageCount": 385,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=sqhPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Nineties.html?hl=&id=sqhPEAAAQBAJ"
   }
 ]
