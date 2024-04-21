@@ -4648,5 +4648,29 @@
     "thumbnail": "https://books.google.com/books/content?id=qSk5EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Paradise.html?hl=&id=qSk5EAAAQBAJ"
+  },
+  {
+    "isbn": "9780393867749",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Free: A Child and a Country at the End of History",
+    "authors": [
+      "Lea Ypi"
+    ],
+    "publishedDate": "2022-01-18",
+    "description": "Shortlisted for the 2021 Baillie Gifford Prize for Non-Fiction Shortlisted for the 2021 Costa Biography Award The Sunday Times Best Book of the Year in Biography and Memoir A Financial Times Best Book of 2021 (Critics' Picks) The New Yorker, Best Books We Read in 2021 Times Literary Supplement Book of the Year 2021 A Guardian Best Book of the Year A reflection on \"freedom\" in a dramatic, beautifully written memoir of the end of Communism in the Balkans. For precocious 11-year-old Lea Ypi, Albania’s Soviet-style socialism held the promise of a preordained future, a guarantee of security among enthusiastic comrades. That is, until she found herself clinging to a stone statue of Joseph Stalin, newly beheaded by student protests. Communism had failed to deliver the promised utopia. One’s “biography”—class status and other associations long in the past—put strict boundaries around one’s individual future. When Lea’s parents spoke of relatives going to “university” or “graduating,” they were speaking of grave secrets Lea struggled to unveil. And when the early ’90s saw Albania and other Balkan countries exuberantly begin a transition to the “free market,” Western ideals of freedom delivered chaos: a dystopia of pyramid schemes, organized crime, and sex trafficking. With her elegant, intellectual, French-speaking grandmother; her radical-chic father; and her staunchly anti-socialist, Thatcherite mother to guide her through these disorienting times, Lea had a political education of the most colorful sort—here recounted with outstanding literary talent. Now one of the world’s most dynamic young political thinkers and a prominent leftist voice in the United Kingdom, Lea offers a fresh and invigorating perspective on the relation between the personal and the political, between values and identity, posing urgent questions about the cost of freedom.",
+    "pageCount": 288,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=D0M3EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=D0M3EAAAQBAJ"
   }
 ]
