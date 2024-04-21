@@ -7610,5 +7610,29 @@
     "thumbnail": "https://books.google.com/books/content?id=Y98oPkGTCKQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=Y98oPkGTCKQC"
+  },
+  {
+    "isbn": "9781324020981",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "culture",
+      "nonfiction"
+    ],
+    "title": "Imagination: A Manifesto (A Norton Short)",
+    "authors": [
+      "Ruha Benjamin"
+    ],
+    "publishedDate": "2024-02-06",
+    "description": "One of The Millions Most-Anticipated titles for Winter 2024. In this revelatory work, Ruha Benjamin calls on us to take imagination seriously as a site of struggle and a place of possibility for reshaping the future. A world without prisons? Ridiculous. Schools that foster the genius of every child? Impossible. Work that doesn’t strangle the life out of people? Naive. A society where everyone has food, shelter, love? In your dreams. Exactly. Ruha Benjamin, Princeton University professor, insists that imagination isn’t a luxury. It is a vital resource and powerful tool for collective liberation. Imagination: A Manifesto is her proclamation that we have the power to use our imaginations to challenge systems of oppression and to create a world in which everyone can thrive. But obstacles abound. We have inherited destructive ideas that trap us inside a dominant imagination. Consider how racism, sexism, and classism make hierarchies, exploitation, and violence seem natural and inevitable—but all emerged from the human imagination. The most effective way to disrupt these deadly systems is to do so collectively. Benjamin highlights the educators, artists, activists, and many others who are refuting powerful narratives that justify the status quo, crafting new stories that reflect our interconnection, and offering creative approaches to seemingly intractable problems. Imagination: A Manifesto offers visionary examples and tactics to push beyond the constraints of what we think, and are told, is possible. This book is for anyone who is ready to take to heart Toni Morrison’s instruction: “Dream a little before you think.”",
+    "pageCount": 133,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=1wjHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=1wjHEAAAQBAJ"
   }
 ]
