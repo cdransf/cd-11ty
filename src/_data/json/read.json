@@ -6463,5 +6463,29 @@
     ],
     "language": "en",
     "link": "https://books.google.com/books/about/Design_is_a_Job.html?hl=&id=OoMwMwEACAAJ"
+  },
+  {
+    "isbn": "9781501191961",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Mindhunter",
+    "authors": [
+      "John E. Douglas",
+      "Mark Olshaker"
+    ],
+    "publishedDate": "2017-10-24",
+    "description": "Includes material on \"the Trailside Killer in San Francisco, the Atlanta child murderer, the Tylenol poisoner, the man who hunted prostitutes for sport in the woods of Alaska, and Seattle's Green River killer ...\"",
+    "pageCount": 448,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=s2c6DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Mindhunter.html?hl=&id=s2c6DwAAQBAJ"
   }
 ]
