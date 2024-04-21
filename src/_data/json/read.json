@@ -4406,5 +4406,30 @@
     "thumbnail": "https://books.google.com/books/content?id=616rzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Cryptopians.html?hl=&id=616rzwEACAAJ"
+  },
+  {
+    "isbn": "9780802198853",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "The Wretched of the Earth",
+    "authors": [
+      "Frantz Fanon"
+    ],
+    "publishedDate": "2007-12-01",
+    "description": "The sixtieth anniversary edition of Frantz Fanon’s landmark text, now with a new introduction by Cornel West First published in 1961, and reissued in this sixtieth anniversary edition with a powerful new introduction by Cornel West, Frantz Fanon’s The Wretched of the Earth is a masterfuland timeless interrogation of race, colonialism, psychological trauma, and revolutionary struggle, and a continuing influence on movements from Black Lives Matter to decolonization. A landmark text for revolutionaries and activists, The Wretched of the Earth is an eternal touchstone for civil rights, anti-colonialism, psychiatric studies, and Black consciousness movements around the world. Alongside Cornel West’s introduction, the book features critical essays by Jean-Paul Sartre and Homi K. Bhabha. This sixtieth anniversary edition of Fanon’s most famous text stands proudly alongside such pillars of anti-colonialism and anti-racism as Edward Said’s Orientalism and The Autobiography of Malcolm X.",
+    "pageCount": 328,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=-XGKFJq4eccC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=-XGKFJq4eccC"
   }
 ]
