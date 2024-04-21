@@ -5943,5 +5943,29 @@
     "thumbnail": "https://books.google.com/books/content?id=cRPKOzWlOfUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Handmaid_s_Tale.html?hl=&id=cRPKOzWlOfUC"
+  },
+  {
+    "isbn": "9780374716325",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Lurking",
+    "authors": [
+      "Joanne McNeil"
+    ],
+    "publishedDate": "2020-02-25",
+    "description": "One of Esquire’s Best Books to Elevate Your Reading List in 2020, , and a OneZero Best Tech Book of 2020. Named one of the 100 Notable books of 2020 by the End of the World Review. A concise but wide-ranging personal history of the internet from—for the first time—the point of view of the user In a shockingly short amount of time, the internet has bound people around the world together and torn us apart and changed not just the way we communicate but who we are and who we can be. It has created a new, unprecedented cultural space that we are all a part of—even if we don’t participate, that is how we participate—but by which we’re continually surprised, betrayed, enriched, befuddled. We have churned through platforms and technologies and in turn been churned by them. And yet, the internet is us and always has been. In Lurking, Joanne McNeil digs deep and identifies the primary (if sometimes contradictory) concerns of people online: searching, safety, privacy, identity, community, anonymity, and visibility. She charts what it is that brought people online and what keeps us here even as the social equations of digital life—what we’re made to trade, knowingly or otherwise, for the benefits of the internet—have shifted radically beneath us. It is a story we are accustomed to hearing as tales of entrepreneurs and visionaries and dynamic and powerful corporations, but there is a more profound, intimate story that hasn’t yet been told. Long one of the most incisive, ferociously intelligent, and widely respected cultural critics online, McNeil here establishes a singular vision of who we are now, tells the stories of how we became us, and helps us start to figure out what we do now.",
+    "pageCount": 163,
+    "printType": "BOOK",
+    "categories": [
+      "Computers"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=kaqEDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=kaqEDwAAQBAJ"
   }
 ]
