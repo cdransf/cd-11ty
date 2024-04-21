@@ -4949,5 +4949,30 @@
     "thumbnail": "https://books.google.com/books/content?id=ouY9EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Genius_of_Jesus.html?hl=&id=ouY9EAAAQBAJ"
+  },
+  {
+    "isbn": "9780063076112",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "autobiography",
+      "music",
+      "nonfiction"
+    ],
+    "title": "The Storyteller",
+    "authors": [
+      "Dave Grohl"
+    ],
+    "publishedDate": "2021-10-05",
+    "description": "The #1 New York Times Bestseller * Named one of Variety's Best Music Books of 2021 * Included in Audible's Best of The Year list * A Business Insider Best Memoirs of 2021 * One of NME's Best Music Books of 2021 So, I've written a book. Having entertained the idea for years, and even offered a few questionable opportunities (\"It's a piece of cake! Just do 4 hours of interviews, find someone else to write it, put your face on the cover, and voila!\") I have decided to write these stories just as I have always done, in my own hand. The joy that I have felt from chronicling these tales is not unlike listening back to a song that I've recorded and can't wait to share with the world, or reading a primitive journal entry from a stained notebook, or even hearing my voice bounce between the Kiss posters on my wall as a child. This certainly doesn't mean that I'm quitting my day job, but it does give me a place to shed a little light on what it's like to be a kid from Springfield, Virginia, walking through life while living out the crazy dreams I had as young musician. From hitting the road with Scream at 18 years old, to my time in Nirvana and the Foo Fighters, jamming with Iggy Pop or playing at the Academy Awards or dancing with AC/DC and the Preservation Hall Jazz Band, drumming for Tom Petty or meeting Sir Paul McCartney at Royal Albert Hall, bedtime stories with Joan Jett or a chance meeting with Little Richard, to flying halfway around the world for one epic night with my daughters…the list goes on. I look forward to focusing the lens through which I see these memories a little sharper for you with much excitement.",
+    "pageCount": 431,
+    "printType": "BOOK",
+    "categories": [
+      "Music"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=3FcnEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=3FcnEAAAQBAJ"
   }
 ]
