@@ -5749,5 +5749,30 @@
     "thumbnail": "https://books.google.com/books/content?id=2xqSDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=2xqSDwAAQBAJ"
+  },
+  {
+    "isbn": "9780241991411",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction",
+      "autobiography"
+    ],
+    "title": "A Promised Land",
+    "authors": [
+      "Barack Obama"
+    ],
+    "publishedDate": "2020-11-17",
+    "description": "THE #1 SUNDAY TIMES BESTSELLER A riveting, deeply personal account of history in the making-from the president who inspired us to believe in the power of democracy - and the perfect gift this Christmas! 'Gorgeously written, humorous, compelling, life affirming' Justin Webb, Mail on Sunday In the stirring, highly anticipated first volume of his presidential memoirs, Barack Obama tells the story of his improbable odyssey from young man searching for his identity to leader of the free world, describing in strikingly personal detail both his political education and the landmark moments of the first term of his historic presidency-a time of dramatic transformation and turmoil. Obama takes readers on a compelling journey from his earliest political aspirations to the pivotal Iowa caucus victory that demonstrated the power of grassroots activism to the watershed night of November 4, 2008, when he was elected 44th president of the United States, becoming the first African American to hold the nation's highest office. Reflecting on the presidency, he offers a unique and thoughtful exploration of both the awesome reach and the limits of presidential power, as well as singular insights into the dynamics of U.S. partisan politics and international diplomacy. Obama brings readers inside the Oval Office and the White House Situation Room, and to Moscow, Cairo, Beijing, and points beyond. We are privy to his thoughts as he assembles his cabinet, wrestles with a global financial crisis, takes the measure of Vladimir Putin, overcomes seemingly insurmountable odds to secure passage of the Affordable Care Act, clashes with generals about U.S. strategy in Afghanistan, tackles Wall Street reform, responds to the devastating Deepwater Horizon blowout, and authorizes Operation Neptune's Spear, which leads to the death of Osama bin Laden. A Promised Land is extraordinarily intimate and introspective-the story of one man's bet with history, the faith of a community organizer tested on the world stage. Obama is candid about the balancing act of running for office as a Black American, bearing the expectations of a generation buoyed by messages of \"hope and change,\" and meeting the moral challenges of high-stakes decision-making. He is frank about the forces that opposed him at home and abroad, open about how living in the White House affected his wife and daughters, and unafraid to reveal self-doubt and disappointment. Yet he never wavers from his belief that inside the great, ongoing American experiment, progress is always possible. This beautifully written and powerful book captures Barack Obama's conviction that democracy is not a gift from on high but something founded on empathy and common understanding and built together, day by day. 'What is unexpected in A Promised Land is the former president's candour' David Olusoga, Observer",
+    "pageCount": 768,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ypb9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/A_Promised_Land.html?hl=&id=ypb9DwAAQBAJ"
   }
 ]
