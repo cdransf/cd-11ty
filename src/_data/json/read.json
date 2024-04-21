@@ -6875,5 +6875,29 @@
     "thumbnail": "https://books.google.com/books/content?id=jtGwEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=jtGwEAAAQBAJ"
+  },
+  {
+    "isbn": "9781639364282",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "The Red Hotel",
+    "authors": [
+      "Alan Philps"
+    ],
+    "publishedDate": "2023-07-04",
+    "description": "The untold history of Moscow's Metropol hotel—a fervent spot of intrigue, secrets, and the center of Stalin's nefarious propaganda during WWII. In 1941, when German armies were marching towards Moscow, Lenin’s body was moved from his tomb on Red Square and taken to Siberia. By1945, a victorious Stalin had turned a poor country into a victorious superpower. Over the course of those four years, Stalin, at Churchill's insistence, accepted an Anglo-American press corps in Moscow to cover the Eastern Front. To turn these reporters into Kremlin mouthpieces, Stalin imposed the most draconian controls – unbending censorship, no visits to the battlefront, and a ban on contact with ordinary citizens. The Red Hotel explores this gilded cage of the Metropol Hotel. They enjoyed lavish supplies of caviar and had their choice of young women to employ as translators and share their beds. On the surface, this regime served Stalin well: his plans to control Eastern Europe as a Sovietised ‘outer empire’ were never reported and the most outrageous Soviet lies went unchallenged. But beneath the surface, the Metropol was roiling with intrigue. While some of the translators turned journalists into robotic conveyors of Kremlin propaganda, others were secret dissidents who whispered to reporters the reality of Soviet life and were punished with sentences in the Gulag. Using British archives and Soviet sources, the unique role of the women of the Metropol, both as consummate propagandists and secret dissenters, is told for the first time. At the end of the war when Lenin returned to Red Square, the reporters went home, but the memory of Stalin’s ruthless control of the wartime narrative lived on in the Kremlin. From the weaponization of disinformation to the falsification of history, from the moving of borders to the neutralization of independent states, the story of the Metropol mirrors the struggles of our own modern era.",
+    "pageCount": 289,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=USCUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=USCUEAAAQBAJ"
   }
 ]
