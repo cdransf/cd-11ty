@@ -7232,5 +7232,28 @@
     "thumbnail": "https://books.google.com/books/content?id=JDCqEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/When_the_Hood_Comes_Off.html?hl=&id=JDCqEAAAQBAJ"
+  },
+  {
+    "isbn": "9781960146090",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "All the Memories That Remain: War, Alzheimer's, and the Search for a Way Home",
+    "authors": [
+      "E. M. Liddick"
+    ],
+    "publishedDate": "2023-04-11",
+    "description": "Dad's eyes peer into an infinite black hole. He's lost ... and I with him. When E.M. Liddick, a legal advisor to a special operations task force, returns from another tour in Afghanistan, he finds his formerly idyllic life in shambles. He's haunted by the decisions he made overseas, he's just told his wife of eleven years he's no longer in love with her, and his father--the person whom he would have turned to for advice-is ten-years deep into a battle with younger-onset Alzheimer's. Broken and lost, Liddick wonders, How can I possibly find my way without you, Dad? Then he remembers his father's letters to him during Marine Corps bootcamp. In those letters, scrawled in indelible script, he discovers old memories and new ways to heal, along with the enduring image of his father--and, perhaps, Liddick's old self as well. An unflinchingly vulnerable memoir, All the Memories That Remain stands witness to one man's fall from grace and his journey to find meaning in what remains.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=V5OuzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/All_the_Memories_That_Remain_War_Alzheim.html?hl=&id=V5OuzwEACAAJ"
   }
 ]
