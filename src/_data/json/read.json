@@ -4781,5 +4781,30 @@
     "categories": [],
     "thumbnail": "https://covers.openlibrary.org/b/id/7343168-S.jpg",
     "language": "unknown"
+  },
+  {
+    "isbn": "9781585059744",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics"
+    ],
+    "title": "The Communist Manifesto",
+    "authors": [
+      "Karl Marx",
+      "Friedrich Engels"
+    ],
+    "publishedDate": "2022-06-13",
+    "description": "The Communist Manifesto is an 1848 pamphlet by German philosophers Karl Marx and Friedrich Engels commissioned by the Communist League to chart their main ideas and beliefs. In later times, this work was recognized as one of the world's most influential political documents.",
+    "pageCount": 45,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=SAJ2EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=SAJ2EAAAQBAJ"
   }
 ]
