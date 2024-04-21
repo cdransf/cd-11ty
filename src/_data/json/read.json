@@ -5526,5 +5526,30 @@
     "thumbnail": "https://books.google.com/books/content?id=U77um_h_dgcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=U77um_h_dgcC"
+  },
+  {
+    "isbn": "9780008323455",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction",
+      "labor"
+    ],
+    "title": "It Doesn’t Have to Be Crazy at Work",
+    "authors": [
+      "Jason Fried",
+      "David Heinemeier Hansson"
+    ],
+    "publishedDate": "2018-10-04",
+    "description": "Jason Fried and David Heinemeier Hansson, the authors of the New York Times bestseller Rework, are back with a manifesto to combat all your modern workplace worries and fears.",
+    "pageCount": 240,
+    "printType": "BOOK",
+    "categories": [
+      "Self-Help"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=LsplDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/It_Doesn_t_Have_to_Be_Crazy_at_Work.html?hl=&id=LsplDwAAQBAJ"
   }
 ]
