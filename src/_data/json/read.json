@@ -7207,5 +7207,30 @@
     "thumbnail": "https://books.google.com/books/content?id=SyJ1EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/More_than_a_Glitch.html?hl=&id=SyJ1EAAAQBAJ"
+  },
+  {
+    "isbn": "9780520379725",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction",
+      "tech"
+    ],
+    "title": "When the Hood Comes Off",
+    "authors": [
+      "Rob Eschmann"
+    ],
+    "publishedDate": "2023",
+    "description": "This timely, comprehensive study examines how racism manifests online and highlights the antiracist tactics rising to oppose it From cell phone footage of police killing unarmed Black people to leaked racist messages and even comments from friends and family on social media, online communication exposes how racism operates in a world that pretends to be colorblind. In When the Hood Comes Off, Rob Eschmann blends rigorous research and engaging personal narrative to examine the effects of online racism on communities of color and society, and the unexpected ways that digital technologies enable innovative everyday tools of antiracist resistance. Drawing on a wealth of data, including interviews with students of Color around the country and analyses of millions of social media posts over the past decade, Eschmann investigates the influence of online communication on face-to-face interactions. When the Hood Comes Off highlights the power of the internet as an organizing tool, and shows that online racism can be a profound wake-up call. How will we respond?",
+    "pageCount": 312,
+    "printType": "BOOK",
+    "categories": [
+      "African Americans in mass media"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=JDCqEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/When_the_Hood_Comes_Off.html?hl=&id=JDCqEAAAQBAJ"
   }
 ]
