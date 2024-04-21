@@ -5701,5 +5701,30 @@
     "thumbnail": "https://books.google.com/books/content?id=BRnBEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=BRnBEAAAQBAJ"
+  },
+  {
+    "isbn": "9780525561378",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction",
+      "politics"
+    ],
+    "title": "Zucked",
+    "authors": [
+      "Roger McNamee"
+    ],
+    "publishedDate": "2020-02-04",
+    "description": "One of the Financial Times' Best Business Books of 2019 The New York Times bestseller about a noted tech venture capitalist, early mentor to Mark Zuckerberg, and Facebook investor, who wakes up to the serious damage Facebook is doing to our society—and sets out to try to stop it. If you had told Roger McNamee even three years ago that he would soon be devoting himself to stopping Facebook from destroying our democracy, he would have howled with laughter. He had mentored many tech leaders in his illustrious career as an investor, but few things had made him prouder, or been better for his fund's bottom line, than his early service to Mark Zuckerberg. Still a large shareholder in Facebook, he had every good reason to stay on the bright side. Until he simply couldn't. Zucked is McNamee's intimate reckoning with the catastrophic failure of the head of one of the world's most powerful companies to face up to the damage he is doing. It's a story that begins with a series of rude awakenings. First there is the author's dawning realization that the platform is being manipulated by some very bad actors. Then there is the even more unsettling realization that Zuckerberg and Sheryl Sandberg are unable or unwilling to share his concerns, polite as they may be to his face. And then comes the election of Donald Trump, and the emergence of one horrific piece of news after another about the malign ends to which the Facebook platform has been put. To McNamee's shock, even still Facebook's leaders duck and dissemble, viewing the matter as a public relations problem. Now thoroughly alienated, McNamee digs into the issue, and fortuitously meets up with some fellow travelers who share his concern, and help him sharpen its focus. Soon he and a dream team of Silicon Valley technologists are charging into the fray, to raise consciousness about the existential threat of Facebook, and the persuasion architecture of the attention economy more broadly—to our public health and to our political order. Zucked is both an enthralling personal narrative and a masterful explication of the forces that have conspired to place us all on the horns of this dilemma. This is the story of a company and its leadership, but it's also a larger tale of a business sector unmoored from normal constraints, just at a moment of political and cultural crisis, the worst possible time to be given new tools for summoning the darker angels of our nature and whipping them into a frenzy. Like Jimmy Stewart in Rear Window, Roger McNamee happened to be in the right place to witness a crime, and it took him some time to make sense of what he was seeing and what we ought to do about it. The result of that effort is a wise, hard-hitting, and urgently necessary account that crystallizes the issue definitively for the rest of us.",
+    "pageCount": 402,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=DzHJDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Zucked.html?hl=&id=DzHJDwAAQBAJ"
   }
 ]
