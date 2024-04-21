@@ -8087,5 +8087,31 @@
     "thumbnail": "https://books.google.com/books/content?id=AmNDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=AmNDDwAAQBAJ"
+  },
+  {
+    "isbn": "9780698407183",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "health",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "An American Sickness",
+    "authors": [
+      "Elisabeth Rosenthal"
+    ],
+    "publishedDate": "2017-04-11",
+    "description": "A New York Times bestseller/Washington Post Notable Book of 2017/NPR Best Books of 2017/Wall Street Journal Best Books of 2017 \"This book will serve as the definitive guide to the past and future of health care in America.”—Siddhartha Mukherjee, Pulitzer Prize-winning author of The Emperor of All Maladies and The Gene At a moment of drastic political upheaval, An American Sickness is a shocking investigation into our dysfunctional healthcare system - and offers practical solutions to its myriad problems. In these troubled times, perhaps no institution has unraveled more quickly and more completely than American medicine. In only a few decades, the medical system has been overrun by organizations seeking to exploit for profit the trust that vulnerable and sick Americans place in their healthcare. Our politicians have proven themselves either unwilling or incapable of reining in the increasingly outrageous costs faced by patients, and market-based solutions only seem to funnel larger and larger sums of our money into the hands of corporations. Impossibly high insurance premiums and inexplicably large bills have become facts of life; fatalism has set in. Very quickly Americans have been made to accept paying more for less. How did things get so bad so fast? Breaking down this monolithic business into the individual industries—the hospitals, doctors, insurance companies, and drug manufacturers—that together constitute our healthcare system, Rosenthal exposes the recent evolution of American medicine as never before. How did healthcare, the caring endeavor, become healthcare, the highly profitable industry? Hospital systems, which are managed by business executives, behave like predatory lenders, hounding patients and seizing their homes. Research charities are in bed with big pharmaceutical companies, which surreptitiously profit from the donations made by working people. Patients receive bills in code, from entrepreneurial doctors they never even saw. The system is in tatters, but we can fight back. Dr. Elisabeth Rosenthal doesn't just explain the symptoms, she diagnoses and treats the disease itself. In clear and practical terms, she spells out exactly how to decode medical doublespeak, avoid the pitfalls of the pharmaceuticals racket, and get the care you and your family deserve. She takes you inside the doctor-patient relationship and to hospital C-suites, explaining step-by-step the workings of a system badly lacking transparency. This is about what we can do, as individual patients, both to navigate the maze that is American healthcare and also to demand far-reaching reform. An American Sickness is the frontline defense against a healthcare system that no longer has our well-being at heart.",
+    "pageCount": 434,
+    "printType": "BOOK",
+    "categories": [
+      "Medical"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=MAqyDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=MAqyDAAAQBAJ"
   }
 ]
