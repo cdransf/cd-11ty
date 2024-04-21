@@ -3464,5 +3464,29 @@
     "thumbnail": "https://books.google.com/books/content?id=KeJE7Tyl6o8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=KeJE7Tyl6o8C"
+  },
+  {
+    "isbn": "1984877925",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction",
+      "autobiography"
+    ],
+    "title": "Will",
+    "authors": [
+      "Will Smith"
+    ],
+    "publishedDate": "2021-11-09",
+    "description": "The instant #1 New York Times bestseller! “It's the best memoir I've ever read.” —Oprah Winfrey “Will Smith isn't holding back in his bravely inspiring new memoir . . . An ultimately heartwarming read, Will provides a humane glimpse of the man behind the actor, producer and musician, as he bares all his insecurities and trauma.” —USA Today Winner of the NAACP Image Award for Outstanding Literary Achievement One of the most dynamic and globally recognized entertainment forces of our time opens up fully about his life, in a brave and inspiring book that traces his learning curve to a place where outer success, inner happiness, and human connection are aligned. Along the way, Will tells the story in full of one of the most amazing rides through the worlds of music and film that anyone has ever had. Will Smith’s transformation from a West Philadelphia kid to one of the biggest rap stars of his era, and then one of the biggest movie stars in Hollywood history, is an epic tale—but it’s only half the story. Will Smith thought, with good reason, that he had won at life: not only was his own success unparalleled, his whole family was at the pinnacle of the entertainment world. Only they didn't see it that way: they felt more like star performers in his circus, a seven-days-a-week job they hadn't signed up for. It turned out Will Smith's education wasn't nearly over. This memoir is the product of a profound journey of self-knowledge, a reckoning with all that your will can get you and all that it can leave behind. Written with the help of Mark Manson, author of the multi-million-copy bestseller The Subtle Art of Not Giving a F*ck, Will is the story of how one person mastered his own emotions, written in a way that can help everyone else do the same. Few of us will know the pressure of performing on the world's biggest stages for the highest of stakes, but we can all understand that the fuel that works for one stage of our journey might have to be changed if we want to make it all the way home. The combination of genuine wisdom of universal value and a life story that is preposterously entertaining, even astonishing, puts Will the book, like its author, in a category by itself.",
+    "pageCount": 433,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=S2ZNEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Will.html?hl=&id=S2ZNEAAAQBAJ"
   }
 ]
