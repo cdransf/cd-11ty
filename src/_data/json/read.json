@@ -7732,5 +7732,56 @@
     "thumbnail": "https://books.google.com/books/content?id=zYjgEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=zYjgEAAAQBAJ"
+  },
+  {
+    "isbn": "9781604868388",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Punk Rock",
+    "authors": [
+      "John Robb"
+    ],
+    "publishedDate": "2012-07-17",
+    "description": "With its own fashion, culture, and chaotic energy, punk rock boasted a do-it-yourself ethos that allowed anyone to take part. Vibrant and volatile, the punk scene left an extraordinary legacy of music and cultural change. John Robb talks to many of those who cultivated the movement, such as John Lydon, Lemmy, Siouxsie Sioux, Mick Jones, Chrissie Hynde, Malcolm McLaren, Henry Rollins, and Glen Matlock, weaving together their accounts to create a raw and unprecedented oral history of UK punk. All the main players are here: from The Clash to Crass, from The Sex Pistols to the Stranglers, from the UK Subs to Buzzcocks—over 150 interviews capture the excitement of the most thrilling wave of rock ’n’ roll pop culture ever. Ranging from its widely debated roots in the late 1960s to its enduring influence on the bands, fashion, and culture of today, this history brings to life the energy and the anarchy as no other book has done.",
+    "pageCount": 630,
+    "printType": "BOOK",
+    "categories": [
+      "Music"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=WbVHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=WbVHEAAAQBAJ"
+  },
+  {
+    "isbn": "9798888901410",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Resisting Borders and Technologies of Violence",
+    "authors": [
+      "Mizue Aizeki",
+      "Matt Mahmoudi",
+      "Coline Schupfer"
+    ],
+    "publishedDate": "2024-02-13",
+    "description": "The border regimes of imperialist states have brutally oppressed migrants throughout the world. To enforce their borders, these states have constructed a new digital fortress with far-reaching and ever-evolving new technologies. This pathbreaking volume exposes these insidious means of surveillance, control, and violence. In the name of “smart” borders, the U.S. and Europe have turned to private companies to develop a neocolonial laboratory now deployed against the Global South, borderlands, and routes of migration. They have established immigrant databases, digital IDs, electronic tracking systems, facial recognition software, data fusion centers, and more, all to more “efficiently” categorize and control human beings and their movement. These technologies rarely capture widespread public attention or outrage, but they are quietly remaking our world, scaling up colonial efforts of times past to divide desirables from undesirables, rich from poor, expat from migrant, and citizen from undocumented. The essays and case studies in Resisting Borders and Technologies of Violence shed light on this new threat, offering analyses of how the high-tech system of borders developed and inspiring stories of resistance to it. The organizers, journalists, and scholars in these pages are charting a new path forward, employing creative tools to subvert the status quo, organize globally against high-tech border imperialism, and help us imagine a world without borders.",
+    "pageCount": 376,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=cR7QEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=cR7QEAAAQBAJ"
   }
 ]
