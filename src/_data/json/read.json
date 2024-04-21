@@ -7328,5 +7328,31 @@
     "thumbnail": "https://books.google.com/books/content?id=_pzEEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=_pzEEAAAQBAJ"
+  },
+  {
+    "isbn": "9781629638201",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Queercore",
+    "authors": [
+      "Liam Warfield",
+      "Walter Crasshole",
+      "Yony Leyser"
+    ],
+    "publishedDate": "2021-07-13",
+    "description": "Queercore: How to Punk a Revolution: An Oral History is the very first comprehensive overview of the movement that defied both the music underground and the LGBT mainstream community—queercore. Through exclusive interviews with protagonists like Bruce LaBruce, G.B. Jones, Jayne County, Kathleen Hanna of Bikini Kill and Le Tigre, film director and author John Waters, Lynn Breedlove of Tribe 8, Jon Ginoli of Pansy Division, and many more, alongside a treasure trove of never-before-seen photographs and reprinted zines from the time, Queercore traces the history of a scene originally “fabricated” in the bedrooms and coffee shops of Toronto and San Francisco by a few young, queer punks to its emergence as a relevant and real revolution. Queercore gets a down-to-details firsthand account of the movement explored through the people that lived it—from punk’s early queer elements, to the moments Toronto kids decided they needed to create a scene that didn’t exist, to the infiltration of the mainstream by Pansy Division, and the emergence of riot grrrl as a sister movement—as well as the clothes, zines, art, film, and music that made this movement an exciting in-your-face middle finger to complacent gay and straight society. Queercore will stand as both a testament to radically gay politics and culture and an important reference for those who wish to better understand this explosive movement.",
+    "pageCount": 291,
+    "printType": "BOOK",
+    "categories": [
+      "Music"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ebRHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=ebRHEAAAQBAJ"
   }
 ]
