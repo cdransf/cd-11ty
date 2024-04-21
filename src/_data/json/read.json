@@ -7470,5 +7470,25 @@
     "thumbnail": "https://books.google.com/books/content?id=dLAEswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Let_s_Go_to_Hell.html?hl=&id=dLAEswEACAAJ"
+  },
+  {
+    "isbn": "9781940213200",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Anarchy at the Circle K",
+    "authors": [
+      "Patrick O'Neil"
+    ],
+    "publishedDate": "2022-05-05",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=CO8qzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Anarchy_at_the_Circle_K.html?hl=&id=CO8qzwEACAAJ"
   }
 ]
