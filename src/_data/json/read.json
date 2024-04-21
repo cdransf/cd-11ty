@@ -5797,5 +5797,29 @@
     "thumbnail": "https://books.google.com/books/content?id=qYNIN3Vhe84C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=qYNIN3Vhe84C"
+  },
+  {
+    "isbn": "9780358237068",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Compromised",
+    "authors": [
+      "Peter Strzok"
+    ],
+    "publishedDate": "2020-09",
+    "description": "The FBI veteran behind the Russia investigation draws on decades of experience hunting foreign agents in the United States to lay bare the threat posed by President Trump.",
+    "pageCount": 387,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=jYvzDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Compromised.html?hl=&id=jYvzDwAAQBAJ"
   }
 ]
