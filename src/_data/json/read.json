@@ -7183,5 +7183,29 @@
     "thumbnail": "https://books.google.com/books/content?id=jpvEEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=jpvEEAAAQBAJ"
+  },
+  {
+    "isbn": "9780262047654",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "More than a Glitch",
+    "authors": [
+      "Meredith Broussard"
+    ],
+    "publishedDate": "2023-03-14",
+    "description": "When technology reinforces inequality, it’s not just a glitch—it’s a signal that we need to redesign our systems to create a more equitable world. The word “glitch” implies an incidental error, as easy to patch up as it is to identify. But what if racism, sexism, and ableism aren’t just bugs in mostly functional machinery—what if they’re coded into the system itself? In the vein of heavy hitters such as Safiya Umoja Noble, Cathy O’Neil, and Ruha Benjamin, Meredith Broussard demonstrates in More Than a Glitch how neutrality in tech is a myth and why algorithms need to be held accountable. Broussard, a data scientist and one of the few Black female researchers in artificial intelligence, masterfully synthesizes concepts from computer science and sociology. She explores a range of examples: from facial recognition technology trained only to recognize lighter skin tones, to mortgage-approval algorithms that encourage discriminatory lending, to the dangerous feedback loops that arise when medical diagnostic algorithms are trained on insufficiently diverse data. Even when such technologies are designed with good intentions, Broussard shows, fallible humans develop programs that can result in devastating consequences. Broussard argues that the solution isn’t to make omnipresent tech more inclusive, but to root out the algorithms that target certain demographics as “other” to begin with. With sweeping implications for fields ranging from jurisprudence to medicine, the ground-breaking insights of More Than a Glitch are essential reading for anyone invested in building a more equitable future.",
+    "pageCount": 243,
+    "printType": "BOOK",
+    "categories": [
+      "Technology & Engineering"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=SyJ1EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/More_than_a_Glitch.html?hl=&id=SyJ1EAAAQBAJ"
   }
 ]
