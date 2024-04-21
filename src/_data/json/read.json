@@ -7538,5 +7538,30 @@
     "thumbnail": "https://books.google.com/books/content?id=hpvEEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=hpvEEAAAQBAJ"
+  },
+  {
+    "isbn": "9781101145005",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Gimme Something Better",
+    "authors": [
+      "Jack Boulware",
+      "Silke Tudor"
+    ],
+    "publishedDate": "2009-09-29",
+    "description": "An oral history of the modern punk-revival?s West Coast Birthplace Outside of New York and London, California?s Bay Area claims the oldest continuous punk-rock scene in the world. Gimme Something Better brings this outrageous and influential punk scene to life, from the notorious final performance of the Sex Pistols, to Jello Biafra?s bid for mayor, the rise of Maximum RocknRoll magazine, and the East Bay pop-punk sound that sold millions around the globe. Throngs of punks, including members of the Dead Kennedys, Avengers, Flipper, MDC, Green Day, Rancid, NOFX, and AFI, tell their own stories in this definitive account, from the innovative art-damage of San Francisco?s Fab Mab in North Beach, to the still vibrant all-ages DIY ethos of Berkeley?s Gilman Street. Compiled by longtime Bay Area journalists Jack Boulware and Silke Tudor, Gimme Something Better chronicles more than two decades of punk music, progressive politics, social consciousness, and divine decadence, told by the people who made it happen.",
+    "pageCount": 512,
+    "printType": "BOOK",
+    "categories": [
+      "Music"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ixyhqFqgqVIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=ixyhqFqgqVIC"
   }
 ]
