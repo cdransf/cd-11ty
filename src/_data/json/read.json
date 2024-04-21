@@ -6327,5 +6327,25 @@
     "thumbnail": "https://books.google.com/books/content?id=PEpoEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=PEpoEAAAQBAJ"
+  },
+  {
+    "isbn": "9798465995368",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "parenting"
+    ],
+    "title": "Raising Lions",
+    "authors": [
+      "Joe Newman"
+    ],
+    "publishedDate": "2021-09-28",
+    "description": "The second edition of Joe Newman's acclaimed book Raising Lions is an essential guide for parents and teachers raising strong-willed, precocious children. It offers clear insights into what motivates the most challenging behaviors, and what kinds of responses turn these behaviors around. \"One of the best books on child-rearing I've ever read. Joe Newman describes a cultural shift that has reinforced anxiety and behavior disorders in children by negating parental authority. Even more important, he provides specific, non-punitive ways for parents to help their kids by taking back their authority. Filled with examples and experiences from the author's own life as a child with A.D.H.D., the book is a treasure-trove of useful information.\" Barry Michels, psychotherapist and New York Times bestselling author of The Tools. \"This book is packed with useful information. It is an insightful and practical guide for managing children. I would recommend it to any parent.\" L. Alan Sroufe, Professor Emeritus Ph.D. University of Minnesota Current childrearing techniques seek to develop children who are confident, self-assured, and unafraid to speak their minds-lions instead of lambs. Although largely positive, this shift has brought with it some very serious problems in our children's behavior. Without going back to an authoritarian model, Joe Newman has developed new ways of helping children develop the ability to self-regulate without undermining their confidence and individuality. Raising Lions challenges us to re-examine our interactions and relationships with children, re-think the root causes of behavior problems and find new ways to support healthy, happy development. For over 20 years Joe Newman has worked with children, parents, teachers, and administrators to help them understand and improve child behavior.",
+    "pageCount": 218,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=TEOszgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Raising_Lions.html?hl=&id=TEOszgEACAAJ"
   }
 ]
