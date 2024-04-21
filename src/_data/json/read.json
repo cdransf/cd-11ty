@@ -6852,5 +6852,28 @@
     "thumbnail": "https://books.google.com/books/content?id=nCGlEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=nCGlEAAAQBAJ"
+  },
+  {
+    "isbn": "9780300271249",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "The Rediscovery of America",
+    "authors": [
+      "Ned Blackhawk"
+    ],
+    "publishedDate": "2023-04-25",
+    "description": "A sweeping and overdue retelling of U.S. history that recognizes that Native Americans are essential to understanding the evolution of modern America The most enduring feature of U.S. history is the presence of Native Americans, yet most histories focus on Europeans and their descendants. This long practice of ignoring Indigenous history is changing, however, with a new generation of scholars insists that any full American history address the struggle, survival, and resurgence of American Indian nations. Indigenous history is essential to understanding the evolution of modern America. Ned Blackhawk interweaves five centuries of Native and non‑Native histories, from Spanish colonial exploration to the rise of Native American self-determination in the late twentieth century. In this transformative synthesis he shows that • European colonization in the 1600s was never a predetermined success; • Native nations helped shape England’s crisis of empire; • the first shots of the American Revolution were prompted by Indian affairs in the interior; • California Indians targeted by federally funded militias were among the first casualties of the Civil War; • the Union victory forever recalibrated Native communities across the West; • twentieth-century reservation activists refashioned American law and policy. Blackhawk’s retelling of U.S. history acknowledges the enduring power, agency, and survival of Indigenous peoples, yielding a truer account of the United States and revealing anew the varied meanings of America.",
+    "pageCount": 611,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=jtGwEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=jtGwEAAAQBAJ"
   }
 ]
