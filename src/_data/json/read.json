@@ -7354,5 +7354,29 @@
     "thumbnail": "https://books.google.com/books/content?id=ebRHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=ebRHEAAAQBAJ"
+  },
+  {
+    "isbn": "1770410651",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Perfect Youth",
+    "authors": [
+      "Sam Sutherland"
+    ],
+    "publishedDate": "2012",
+    "description": "While many volumes devoted to the punk and hardcore scenes in America grace bookstore shelves, Canada's contributions to the genre remain largely unacknowledged. For the first time, the birth of Canadian punk—a transformative cultural force that spread across the country at the end of the 1970s—is captured between the pages of this important resource. Delving deeper than standard band biographies, this book articulates how the advent of punk reshaped the culture of cities across Canada, speeding along the creation of alternative means of cultural production, consumption, and distribution. Describing the origins of bands such as D.O.A., the Subhumans, the Viletones, and Teenage Head alongside lesser-known regional acts from all over Canada, it is the first published account of the first wave of punk in places like Regina, Ottawa, Halifax, and Victoria. Proudly staking Canada's claim as the starting point for many internationally famous bands, this book unearths a forgotten musical and cultural history of drunks and miscreants, future country stars, and political strategists.",
+    "pageCount": 341,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=tgnZBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Perfect_Youth.html?hl=&id=tgnZBAAAQBAJ"
   }
 ]
