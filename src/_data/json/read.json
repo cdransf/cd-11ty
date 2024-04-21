@@ -6139,5 +6139,28 @@
     "thumbnail": "https://books.google.com/books/content?id=0XCcDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=0XCcDwAAQBAJ"
+  },
+  {
+    "isbn": "9781682192009",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "A Year Inside MS-13",
+    "authors": [
+      "Juan José Martínez d´Aubuisson"
+    ],
+    "publishedDate": "2019-08-06",
+    "description": "This short, intense book exposes life inside the largest, most violent gang in the world, Mara Salvatrucha 13, more commonly known as MS-13. Right in the heart of El Salvador’s capital San Salvador, anthropologist Juan José Martínez d´Aubuisson observes firsthand an escalating cycle of brutality between MS-13 and its sworn enemies from Barrio 18 as it becomes a war fought on a professional scale with grenades and machine guns. For the better part of a year, d´Aubuisson was embedded in one of the cells of MS-13, where he learned its moral codes, rules, legends, and contradictions. His journey into the heart of the gang is guided by an enigmatic character, Destino, a veteran leader of MS-13. After many conversations with Destino, a strange kind of friendship emerges between the two, and the anthropologist understands not only the origin of the gang and its war with Barrio 18 but the deep-seated reasons for the regional violence. The book culminates in one of the most violent acts ever in an area that has seen more than its share: a full-scale attack on a public bus with thirty-two passengers on board. Fourteen people were killed and twenty-eight wounded. Almost all the principal characters in this book end up dying: some are killed in the war, while others fall to the state security forces. Those that do escape the war are imprisoned, exiled or murdered by their own gang. This is a true testimony of life inside a wild gang, in a neighborhood governed by abandoned boys. Juan José Martínez d´Aubuisson is a Salvadoran socio-cultural anthropologist committed to understanding violence in Central America. His uncle was one of Latin America’s most notoriously brutal military officers during the 1980s.",
+    "pageCount": 128,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=fcukDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=fcukDwAAQBAJ"
   }
 ]
