@@ -3754,5 +3754,28 @@
     "thumbnail": "https://books.google.com/books/content?id=UOhOEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Silicon_Values.html?hl=&id=UOhOEAAAQBAJ"
+  },
+  {
+    "isbn": "9780593199657",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Zodiac",
+    "authors": [
+      "Robert Graysmith"
+    ],
+    "publishedDate": "2020-05-05",
+    "description": "Robert Graysmith’s New York Times bestselling account of the desperate hunt for a serial killer and his own investigation of California’s unsolved Zodiac murders. A sexual sadist, the Zodiac killer took pleasure in torture and murder. His first victims were a teenage couple, stalked and shot dead in a lovers’ lane. After another slaying, he sent his first mocking note to authorities, promising he would kill more. The official tally of his victims was six. He claimed thirty-seven dead. The real toll may have reached fifty. Robert Graysmith was on staff at the San Francisco Chronicle in 1969 when Zodiac first struck, triggering in the resolute reporter an unrelenting obsession with seeing the hooded killer brought to justice. In this gripping account of Zodiac’s eleven-month reign of terror, Graysmith reveals hundreds of facts previously unreleased, including the complete text of the killer’s letters.",
+    "pageCount": 434,
+    "printType": "BOOK",
+    "categories": [
+      "True Crime"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=0-LbDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Zodiac.html?hl=&id=0-LbDwAAQBAJ"
   }
 ]
