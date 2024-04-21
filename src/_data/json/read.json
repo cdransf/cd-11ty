@@ -4506,5 +4506,28 @@
     "thumbnail": "https://books.google.com/books/content?id=5J1fCHvHfosC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Lords_of_Chaos.html?hl=&id=5J1fCHvHfosC"
+  },
+  {
+    "isbn": "9780385350273",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Going Clear",
+    "authors": [
+      "Lawrence Wright"
+    ],
+    "publishedDate": "2013-01-17",
+    "description": "NATIONAL BESTSELLER • NATIONAL BOOK AWARD AND NATIONAL BOOK CRITICS CIRCLE AWARD FINALIST • From the Pulitzer Prize-winning author of The Looming Tower comes “an utterly necessary story” (The Wall Street Journal) that pulls back the curtain on the church of Scientology: one of the most secretive organizations at work today. • The Basis for the HBO Documentary. Scientology presents itself as a scientific approach to spiritual enlightenment, but its practices have long been shrouded in mystery. Now Lawrence Wright—armed with his investigative talents, years of archival research, and more than two hundred personal interviews with current and former Scientologists—uncovers the inner workings of the church. We meet founder L. Ron Hubbard, the highly imaginative but mentally troubled science-fiction writer, and his tough, driven successor, David Miscavige. We go inside their specialized cosmology and language. We learn about the church’s legal attacks on the IRS, its vindictive treatment of critics, and its phenomenal wealth. We see the church court celebrities such as Tom Cruise while consigning its clergy to hard labor under billion-year contracts. Through it all, Wright asks what fundamentally comprises a religion, and if Scientology in fact merits this Constitutionally-protected label.",
+    "pageCount": 359,
+    "printType": "BOOK",
+    "categories": [
+      "Religion"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=z4IDPV2hZL0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=z4IDPV2hZL0C"
   }
 ]
