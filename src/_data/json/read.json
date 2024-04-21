@@ -3894,5 +3894,28 @@
     "thumbnail": "https://books.google.com/books/content?id=J4ruzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Unmasked.html?hl=&id=J4ruzgEACAAJ"
+  },
+  {
+    "isbn": "9781400078998",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Under the Banner of Heaven",
+    "authors": [
+      "Jon Krakauer"
+    ],
+    "publishedDate": "2004-06-08",
+    "description": "NATIONAL BESTSELLER • From the author of Into the Wild and Into Thin Air, this extraordinary work of investigative journalism takes readers inside America’s isolated Mormon Fundamentalist communities. • Now an acclaimed FX limited series streaming on HULU. “Fantastic.... Right up there with In Cold Blood and The Executioner’s Song.” —San Francisco Chronicle Defying both civil authorities and the Mormon establishment in Salt Lake City, the renegade leaders of these Taliban-like theocracies are zealots who answer only to God; some 40,000 people still practice polygamy in these communities. At the core of Krakauer’s book are brothers Ron and Dan Lafferty, who insist they received a commandment from God to kill a blameless woman and her baby girl. Beginning with a meticulously researched account of this appalling double murder, Krakauer constructs a multi-layered, bone-chilling narrative of messianic delusion, polygamy, savage violence, and unyielding faith. Along the way he uncovers a shadowy offshoot of America’s fastest growing religion, and raises provocative questions about the nature of religious belief.",
+    "pageCount": 434,
+    "printType": "BOOK",
+    "categories": [
+      "True Crime"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=0DQaTU7Opq0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=0DQaTU7Opq0C"
   }
 ]
