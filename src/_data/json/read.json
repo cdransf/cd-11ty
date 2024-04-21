@@ -5991,5 +5991,29 @@
     "thumbnail": "https://books.google.com/books/content?id=RX33DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=RX33DwAAQBAJ"
+  },
+  {
+    "isbn": "9781524745738",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "American Rule",
+    "authors": [
+      "Jared Yates Sexton"
+    ],
+    "publishedDate": "2021-09-14",
+    "description": "From writer and political analyst Jared Yates Sexton comes an eye-opening journey through American history that unearths and debunks the myths we've always told ourselves. Recent years have brought a reckoning in America. As rampant political corruption, stark inequality, and violent bigotry have come to the fore, many have faced two vital questions: How did we get here? And how do we move forward? An honest look at the past—and how it’s been covered up—is the only way to find the answers. Americans in power have abused and subjugated others since the nation’s very beginning, and myths of America’s unique goodness have both enabled that injustice and buried the truth for generations. In American Rule, Jared Yates Sexton blends deep research with stunning storytelling, digging into each era of growth and change that led us here—and laying bare the foundational myths at the heart of the American imagination. Stirring, unequivocal, and impossible to put down, American Rule tells the truth about what this nation has always been—and challenges us to forge a new path.",
+    "pageCount": 385,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=QOY9EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/American_Rule.html?hl=&id=QOY9EAAAQBAJ"
   }
 ]
