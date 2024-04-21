@@ -7425,5 +7425,29 @@
     "thumbnail": "https://books.google.com/books/content?id=6dwCAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Loser.html?hl=&id=6dwCAAAACAAJ"
+  },
+  {
+    "isbn": "9781402779374",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "The Encyclopedia of Punk",
+    "authors": [
+      "Brian Cogan"
+    ],
+    "publishedDate": "2010",
+    "description": "An alphabetically arranged resource covers the rebellious musical genre and the cultural movement it inspired.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Punk rock music"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=zkSIRAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Encyclopedia_of_Punk.html?hl=&id=zkSIRAAACAAJ"
   }
 ]
