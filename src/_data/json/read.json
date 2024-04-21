@@ -4455,5 +4455,30 @@
     "thumbnail": "https://books.google.com/books/content?id=IGEfEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=IGEfEAAAQBAJ"
+  },
+  {
+    "isbn": "9781541730168",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "The Compatriots",
+    "authors": [
+      "Andrei Soldatov",
+      "Irina Borogan"
+    ],
+    "publishedDate": "2019-10-08",
+    "description": "The authors of The Red Web examine the shifting role of Russian expatriates throughout history, and their complicated, unbreakable relationship with the mother country--be it antagonistic or far too chummy. The history of Russian espionage is soaked in blood, from a spontaneous pistol shot that killed a secret policeman in Romania in 1924 to the attempt to poison an exiled KGB colonel in Salisbury, England, in 2017. Russian émigrés have found themselves continually at the center of the mayhem. Russians began leaving the country in big numbers in the late nineteenth century, fleeing pogroms, tsarist secret police persecution, and the Revolution, then Stalin and the KGB--and creating the third-largest diaspora in the world. The exodus created a rare opportunity for the Kremlin. Moscow's masters and spymasters fostered networks of spies, many of whom were emigrants driven from Russia. By the 1930s and 1940s, dozens of spies were in New York City gathering information for Moscow. But the story did not end with the collapse of the Soviet Union. Some émigrés have turned into assets of the resurgent Russian nationalist state, while others have taken up the dissident challenge once more--at their personal peril. From Trotsky to Litvinenko, The Compatriots is the gripping history of Russian score-settling around the world.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=UHMEwgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Compatriots.html?hl=&id=UHMEwgEACAAJ"
   }
 ]
