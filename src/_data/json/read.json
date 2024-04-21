@@ -4259,5 +4259,30 @@
     "thumbnail": "https://books.google.com/books/content?id=sqhPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Nineties.html?hl=&id=sqhPEAAAQBAJ"
+  },
+  {
+    "isbn": "9781782833338",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "Moneyland",
+    "authors": [
+      "Oliver Bullough"
+    ],
+    "publishedDate": "2018-09-06",
+    "description": "A SUNDAY TIMES BESTSELLER PRESENTER OF THE BBC RADIO 4 SERIES 'HOW TO STEAL A TRILLION' SHORTLISTED FOR THE ORWELL PRIZE 2019 SUNDAY TIMES BUSINESS BOOK OF THE YEAR AN ECONOMIST POLITICS AND CURRENT AFFAIRS BOOK OF THE YEAR A DAILY MAIL AND TIMES BOOK OF THE YEAR 'You cannot understand power, wealth and poverty without knowing about Moneyland.' Simon Kuper, New Statesman 2019: democracy is eating itself, inequality is skyrocketing, the system is breaking apart. Why? Because in 1962, some bankers in London had an idea that changed the world. That idea was called 'offshore'. It meant that, for the first time, thieves could dream big. They could take everything. Join investigative journalist Oliver Bullough on a journey into the hidden world of the new global kleptocrats. See the poor countries where public money is stolen and the rich ones where it is laundered and invested. Watch the crooks at work and at play, and meet their respectable, white-collar enablers. Learn how the new system works and begin to see how we can tackle it.",
+    "pageCount": 298,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=0O5PDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Moneyland.html?hl=&id=0O5PDwAAQBAJ"
   }
 ]
