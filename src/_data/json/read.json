@@ -3682,5 +3682,30 @@
     "thumbnail": "https://books.google.com/books/content?id=3TYGEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=3TYGEAAAQBAJ"
+  },
+  {
+    "isbn": "9780300252989",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "Seeing Like a State",
+    "authors": [
+      "James C. Scott"
+    ],
+    "publishedDate": "2020-03-17",
+    "description": "“One of the most profound and illuminating studies of this century to have been published in recent decades.”—John Gray, New York Times Book Review Hailed as “a magisterial critique of top-down social planning” by the New York Times, this essential work analyzes disasters from Russia to Tanzania to uncover why states so often fail—sometimes catastrophically—in grand efforts to engineer their society or their environment, and uncovers the conditions common to all such planning disasters. “Beautifully written, this book calls into sharp relief the nature of the world we now inhabit.”—New Yorker “A tour de force.”— Charles Tilly, Columbia University",
+    "pageCount": 462,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=CA7UDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=CA7UDwAAQBAJ"
   }
 ]
