@@ -4743,5 +4743,24 @@
     "thumbnail": "https://books.google.com/books/content?id=FwwDEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=FwwDEAAAQBAJ"
+  },
+  {
+    "isbn": "9781635578584",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "The Least of Us",
+    "authors": [
+      "Sam Quinones"
+    ],
+    "publishedDate": "2021",
+    "pageCount": 433,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=Y3M_EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Least_of_Us.html?hl=&id=Y3M_EAAAQBAJ"
   }
 ]
