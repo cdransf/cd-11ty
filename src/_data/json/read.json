@@ -6731,5 +6731,30 @@
     "thumbnail": "https://books.google.com/books/content?id=xXxwEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=xXxwEAAAQBAJ"
+  },
+  {
+    "isbn": "9781643755656",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "It's Not You, It's Capitalism",
+    "authors": [
+      "Malaika Jabali"
+    ],
+    "publishedDate": "2023-10-24",
+    "description": "A biting, brilliant, often hilarious guide to socialism for budding anti-capitalists who know it’s time to dump their toxic ex (Capitalism) and try something finer. Journalist Malaika Jabali debunks myths, centers forgotten socialists of color who have shaped our world, and shows socialism is not all Marx and Bernie Bros—it can be pretty sexy. We’ve all dated someone who took control of the relationship—you know, someone who makes you feel like you’re unhappy because you’re just not putting in the work, or it’s all in your head. But when you think about trying to meet new people, it feels terrifying. Like, have you looked at Tinder recently? It’s rough out there! Your tough-love new best friend, award-winning journalist, policy attorney, and life-long socialist Malaika Jabali is here to say: we are all in a generations-long toxic relationship with Capitalism, and it is time to get the h*ll out of there and move ALONG. She gives you everything you need to know about what a healthy relationship could actually look like, issue by issue—from healthcare and housing to the whole concept of American democracy—with our new boo: Socialism. And no, Socialism isn’t the boring, grey, authoritarian, Cold-War-era monster that you’ve heard about. With accessible explanations and illustrations, often surprising graphs and stats, and some Drake memes, this book will show you that we NEED to build a world that’s safer, kinder, cleaner, healthier, and more equal. And that this isn’t a utopian dream – it’s within our grasp, if we collectively decide to call out Capitalism for what it really is and wake up to a better future. Fun, smart, and inspiring, It’s Not You It’s Capitalism is the hottest new relationship in your life!",
+    "pageCount": 199,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=TJGwEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=TJGwEAAAQBAJ"
   }
 ]
