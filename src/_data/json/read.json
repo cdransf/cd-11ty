@@ -3416,5 +3416,28 @@
     "thumbnail": "https://books.google.com/books/content?id=LCxeEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/A_Brief_History_of_Equality.html?hl=&id=LCxeEAAAQBAJ"
+  },
+  {
+    "isbn": "9780345540096",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "The Iceman",
+    "authors": [
+      "Anthony Bruno"
+    ],
+    "publishedDate": "2013-03-26",
+    "description": "Soon to be a major motion picture starring Michael Shannon, Winona Ryder, with Ray Liotta and Chris Evans He was smart, merciless, and deadly. And it took someone just as tough to bring him down. A mob contract killer known as “The Iceman” for hiding a body in an ice-cream truck freezer, Richard Kuklinski boasted a personal body count of more than a hundred victims. Using guns, knives, poison, ice picks, tire irons, baseball bats, and bombs, the family man from New Jersey killed for fun, for money, to cover up his own crimes, and to satisfy his inner rage. Law enforcement officials knew all about Kuklinski and had a list of his victims, but couldn’t get near him—until undercover agent Dominick Polifrone posed as a mobster and began a deadly game of cat and mouse. In this harrowing true-crime account, Anthony Bruno delves into the mind of a cold-blooded killer, chronicling the Iceman’s grisly crimes and probing the bizarre dynamics of Agent Polifrone’s dangerous liaison with him. For as Polifrone carefully built up a case against Kuklinksi, he knew he was running out of time—because the Iceman was planning to kill him too. “Bruno puts his writing talents to white-knuckle use with a tight focus on a killer with no human feelings.”—Kirkus Reviews “Excellent . . . [re-creates] the tension and stress Polifrone experienced in fulfilling his risky undercover assignment.”—Publishers Weekly",
+    "pageCount": 320,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=SfmxC37lSWUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=SfmxC37lSWUC"
   }
 ]
