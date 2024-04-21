@@ -7514,5 +7514,29 @@
     "thumbnail": "https://books.google.com/books/content?id=q7VHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=q7VHEAAAQBAJ"
+  },
+  {
+    "isbn": "9781982180874",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics"
+    ],
+    "title": "Vulture Capitalism",
+    "authors": [
+      "Grace Blakeley"
+    ],
+    "publishedDate": "2024-03-12",
+    "description": "A Next Big Idea Book Club Must-Read for March 2024 In the vein of The Shock Doctrine and Evil Geniuses, this timely manifesto from an acclaimed journalist illustrates how corporate and political power brokers have used planned capitalism to advance their own interests at the expense of the rest of us—and how we can take back our economy for all. It’s easy to look at the state of the world around us and feel hopeless. We live in an era marked by war, climate crisis, political polarization, and acute inequality—and yet many of us feel powerless to do anything about these profound issues. We’ve been assured that unfettered capitalism is necessary to ensure our freedom and prosperity, even as we see its corrosive effects proliferating daily. Why, in our age of unchecked corporate power, are most of us living paycheck to paycheck? When the economy falters, why do governments bail out corporations and shareholders but leave everyday people in the dust? Now, economic and political journalist and progressive star on the rise Grace Blakeley exposes the corrupt system that is failing all around us, pulling back the curtain on the free market mythology we have been sold, and showing how, as corporate interests have taken hold, governments have historically been shifting away from competition and democracy and towards monopoly and oligarchy. Tracing over a century of neoliberal planning and backdoor bailouts, Blakeley takes us on a deeply reported tour of the corporate crimes, political maneuvering, and economic manipulation that elites have used to enshrine a global system of “vulture capitalism”—planned capitalist economies that benefit corporations and the uber-wealthy at the expense of the rest of us—at every level, from states to empires. Blakeley exposes the cracks already emerging within capitalism, lighting a path forward for how we can democratize our economy, not just our politics, to ensure true freedom for all.",
+    "pageCount": 281,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=hpvEEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=hpvEEAAAQBAJ"
   }
 ]
