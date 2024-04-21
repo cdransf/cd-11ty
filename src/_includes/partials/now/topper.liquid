@@ -1,7 +1,8 @@
 {%- assign artist = artists | first -%}
+{%- assign book = books | first -%}
 {%- assign show = tv | first -%}
 <div class="now-topper">
-  <p><strong class="highlight-text">I'm a software developer based in Camarillo, California</strong>. I enjoy hanging out with my beautiful family and 3 rescue dogs, technology, automation, <a href="https://coryd.dev/now#artists">music</a>, writing, <a href="https://coryd.dev/now#books">reading</a>, <a href="https://coryd.dev/now#tv">tv</a> and <a href="https://coryd.dev/now#movies">movies</a>. Lately I've been listening to a lot of <strong class="highlight-text">{{ artist.title }}</strong> and watching <strong class="highlight-text">{{ show.name }}</strong>.</p>
+  <p><strong class="highlight-text">I'm a software developer based in Camarillo, California</strong>. I enjoy hanging out with my beautiful family and 3 rescue dogs, technology, automation, <a href="https://coryd.dev/now#artists">music</a>, writing, <a href="https://coryd.dev/now#books">reading</a>, <a href="https://coryd.dev/now#tv">tv</a> and <a href="https://coryd.dev/now#movies">movies</a>. Lately I've been{% if artist %} listening to a lot of <strong class="highlight-text">{{ artist.title }}</strong>,{% endif %} reading <strong class="highlight-text">{{ book.title }}</strong> and watching <strong class="highlight-text">{{ show.name }}</strong>.</p>
   {% render "partials/now/status.liquid", status:status %}
   {% render "partials/now-playing.liquid" %}
 </div>
