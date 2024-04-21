@@ -5074,5 +5074,28 @@
     "thumbnail": "https://books.google.com/books/content?id=lRqrDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=lRqrDQAAQBAJ"
+  },
+  {
+    "isbn": "9780316462433",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Revelation Space",
+    "authors": [
+      "Alastair Reynolds"
+    ],
+    "publishedDate": "2020-04-21",
+    "description": "This highly acclaimed first novel in the Revelation Space universe has redefined the space opera with a staggering journey across vast gulfs of time and space to confront the very nature of reality itself . . . Nine hundred thousand years ago, something annihilated the Amarantin civilization just as it was on the verge of discovering space flight. Now one scientist, Dan Sylveste, will stop at nothing to solve the Amarantin riddle before ancient history repeats itself. With no other resources at his disposal, Sylveste forges a dangerous alliance with the cyborg crew of the starship Nostalgia for Infinity. But as he closes in on the secret, a killer closes in on him. Because the Amarantin were destroyed for a reason, and if that reason is uncovered, the universe and reality itself could be irrevocably altered . . . \"[A] tour de force... Ravishingly inventive.\" -- Publishers Weekly",
+    "pageCount": 630,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=GIy9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=GIy9DwAAQBAJ"
   }
 ]
