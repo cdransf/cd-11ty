@@ -6371,5 +6371,29 @@
     "thumbnail": "https://books.google.com/books/content?id=65WYDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=65WYDgAAQBAJ"
+  },
+  {
+    "isbn": "9781529418736",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "The Storm is Here",
+    "authors": [
+      "Luke Mogelson"
+    ],
+    "publishedDate": "2023-09-14",
+    "description": "The New Yorker's award-winning war correspondent returns to his own country to chronicle a story of mounting civic breakdown and violent disorder, in a vivid eyewitness narrative of revelatory explanatory power. 'This is a searing book, exquisitely reported, lyrically told, and so vivid it will make your heart stop-a dark journey into what ails America' Patrick Radden Keefe On the morning of January 6, a gallows was erected on the National Mall in Washington, D.C. A little after noon, as thousands of Trump supporters marched past the structure, some paused to climb its wooden steps and take pictures of the US Capitol framed within an oval noose. Up ahead, the dull thud of stun grenades could be heard, accompanied by bright flashes. Several people carried Confederate flags. Others had Tasers, baseball bats, bear spray, and truncheons. 'They need help!' a man shouted. 'It's us versus the cops!' No one seemed surprised by what was taking place. There was an eerie sense of inexorability, mixed with nervous hesitation. It reminded me of combat: the slightly shocked, almost bashful moment when bravado, fantasy, and training crash against reality. In early 2020, Luke Mogelson, who had been living in France and covering the Global War on Terrorism, returned home to report on the social discord that the pandemic was bringing to the fore in the US. Soon, he found himself embedded with militias descending on the Michigan state capitol. From there, the story swept him on to Minneapolis, then to Portland, and ultimately to Washington, D.C. His stories for The New Yorker were hailed as essential first drafts of history. They were just the tip of the iceberg. The Storm Is Here is the definitive eyewitness account of how--during a season of sickness, economic uncertainty, and violence--a large segment of Americans became convinced that they needed to rise up against dark forces plotting to take their country away from them, and then did just that. It builds month by month, through vivid depictions of events on the ground, from the onset of the pandemic to the attack on the US Capitol--during which Mogelson was in the Senate chamber with the insurrectionists--and its aftermath. Bravely reported and beautifully written, Mogelson's book follows the tradition of some of the essential chronicles of war and unrest of our time.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Capitol Riot, Washington, D.C., 2021"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=L7-GzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Storm_is_Here.html?hl=&id=L7-GzwEACAAJ"
   }
 ]
