@@ -4878,5 +4878,29 @@
     "thumbnail": "https://books.google.com/books/content?id=Sl02tAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/A_River_in_Darkness.html?hl=&id=Sl02tAEACAAJ"
+  },
+  {
+    "isbn": "9781400060344",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction",
+      "politics"
+    ],
+    "title": "Chatter",
+    "authors": [
+      "Patrick Radden Keefe"
+    ],
+    "publishedDate": "2005",
+    "description": "A look inside the secret world of the American intelligence establishment and its link to the global eavesdropping network \"Echelon\" assesses how much privacy Americans have unwittingly sacrificed in favor of national security.",
+    "pageCount": 322,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=DiRaaJBJcicC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Chatter.html?hl=&id=DiRaaJBJcicC"
   }
 ]
