@@ -7634,5 +7634,31 @@
     "thumbnail": "https://books.google.com/books/content?id=1wjHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=1wjHEAAAQBAJ"
+  },
+  {
+    "isbn": "9781478059219",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "Silicon Valley Imperialism",
+    "authors": [
+      "Erin McElroy"
+    ],
+    "publishedDate": "2024-02-02",
+    "description": "In Silicon Valley Imperialism, Erin McElroy maps the processes of gentrification, racial dispossession, and economic predation that drove the development of Silicon Valley in the San Francisco Bay Area and how that logic has become manifest in postsocialist Romania. Drawing on ethnographic fieldwork and archival research in Romania and the United States, McElroy exposes the mechanisms through which the appeal of Silicon Valley technocapitalism devours space and societies, displaces residents, and generates extreme income inequality in order to expand its reach. In Romania, dreams of privatization updated fascist and anti-Roma pasts and socialist-era underground computing practices. At the same time, McElroy accounts for the ways Romanians are resisting Silicon Valley capitalist logics, where anticapitalist and anti-imperialist activists and protesters build on socialist-era worldviews not to restore state socialism but rather to establish more just social formations. Attending to the violence of Silicon Valley imperialism, McElroy reveals technocapitalism as an ultimately unsustainable model of rapacious economic and geographic growth.",
+    "pageCount": 176,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=1sHxEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=1sHxEAAAQBAJ"
   }
 ]
