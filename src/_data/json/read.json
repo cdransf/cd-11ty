@@ -5774,5 +5774,28 @@
     "thumbnail": "https://books.google.com/books/content?id=ypb9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/A_Promised_Land.html?hl=&id=ypb9DwAAQBAJ"
+  },
+  {
+    "isbn": "9780061809613",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "The Sundering",
+    "authors": [
+      "Walter Jon Williams"
+    ],
+    "publishedDate": "2009-10-13",
+    "description": "“Space opera the way it ought to be [...] Bujold and Weber, bend the knee; interstellar adventure has a new king, and his name is Walter Jon Williams.” -- George R.R. Martin Following The Praxis, Walter Jon Williams’ critically-acclaimed mix of space opera and military science fiction, the conflict grows for the fate of humanity…and the universe. The Dread Empire of the Shaa is no more, following the death of the last oppressor. But freedom remains elusive for the myriad sentient races enslaved for ten centuries, as an even greater terror arises. The Naxids—a powerful insectoid species themselves subjugated until the recent Shaa demise—plan to fill the vacuum with their own bloody domination, and have already won a shattering victory with superior force and unimaginable cruelty. But two heroes survived the carnage at Magaria: Lord Gareth Martinez and the fiery, mysterious gun pilot Lady Caroline Sula, whose courageous exploits are becoming legend in the new history of galactic civil war. Yet their cunning, skill, and bravery may be no match for the overwhelming enemy descending upon the loyalist stronghold of Zanshaa, as the horrific battle looms that will determine the structure of the universe—and who shall live to inhabit it—for millennia to come.",
+    "pageCount": 448,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=qYNIN3Vhe84C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=qYNIN3Vhe84C"
   }
 ]
