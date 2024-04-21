@@ -6706,5 +6706,30 @@
     "thumbnail": "https://books.google.com/books/content?id=hoKIEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Algorithms_for_the_People.html?hl=&id=hoKIEAAAQBAJ"
+  },
+  {
+    "isbn": "9781324006749",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "How Data Happened: A History from the Age of Reason to the Age of Algorithms",
+    "authors": [
+      "Chris Wiggins",
+      "Matthew L. Jones"
+    ],
+    "publishedDate": "2023-03-21",
+    "description": "“Fascinating.” —Jill Lepore, The New Yorker A sweeping history of data and its technical, political, and ethical impact on our world. From facial recognition—capable of checking people into flights or identifying undocumented residents—to automated decision systems that inform who gets loans and who receives bail, each of us moves through a world determined by data-empowered algorithms. But these technologies didn’t just appear: they are part of a history that goes back centuries, from the census enshrined in the US Constitution to the birth of eugenics in Victorian Britain to the development of Google search. Expanding on the popular course they created at Columbia University, Chris Wiggins and Matthew L. Jones illuminate the ways in which data has long been used as a tool and a weapon in arguing for what is true, as well as a means of rearranging or defending power. They explore how data was created and curated, as well as how new mathematical and computational techniques developed to contend with that data serve to shape people, ideas, society, military operations, and economies. Although technology and mathematics are at its heart, the story of data ultimately concerns an unstable game among states, corporations, and people. How were new technical and scientific capabilities developed; who supported, advanced, or funded these capabilities or transitions; and how did they change who could do what, from what, and to whom? Wiggins and Jones focus on these questions as they trace data’s historical arc, and look to the future. By understanding the trajectory of data—where it has been and where it might yet go—Wiggins and Jones argue that we can understand how to bend it to ends that we collectively choose, with intentionality and purpose.",
+    "pageCount": 289,
+    "printType": "BOOK",
+    "categories": [
+      "Technology & Engineering"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=xXxwEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=xXxwEAAAQBAJ"
   }
 ]
