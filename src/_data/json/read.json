@@ -8064,5 +8064,28 @@
     "thumbnail": "https://books.google.com/books/content?id=GJqVBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=GJqVBgAAQBAJ"
+  },
+  {
+    "isbn": "9780425285954",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Dark Age",
+    "authors": [
+      "Pierce Brown"
+    ],
+    "publishedDate": "2019-07-30",
+    "description": "NEW YORK TIMES BESTSELLER • The bestselling author of Morning Star returns to the Red Rising universe with the thrilling sequel to Iron Gold. “Brown’s plots are like a depth charge of nitromethane dropped in a bucket of gasoline. His pacing is 100% him standing over it all with a lit match and a smile, waiting for us to dare him to drop it.”—NPR (Best Books of the Year) He broke the chains. Then he broke the world…. A decade ago Darrow led a revolution, and laid the foundations for a new world. Now he’s an outlaw. Cast out of the very Republic he founded, with half his fleet destroyed, he wages a rogue war on Mercury. Outnumbered and outgunned, is he still the hero who broke the chains? Or will he become the very evil he fought to destroy? In his darkening shadow, a new hero rises. Lysander au Lune, the displaced heir to the old empire, has returned to bridge the divide between the Golds of the Rim and Core. If united, their combined might may prove fatal to the fledgling Republic. On Luna, the embattled Sovereign of the Republic, Virginia au Augustus, fights to preserve her precious demokracy and her exiled husband. But one may cost her the other, and her son is not yet returned. Abducted by enemy agents, Pax au Augustus must trust in a Gray thief, Ephraim, for his salvation. Far across the void, Lyria, a Red refugee accused of treason, makes a desperate bid for freedom with the help of two unlikely new allies. Fear dims the hopes of the Rising, and as power is seized, lost, and reclaimed, the worlds spin on and on toward a new Dark Age. Don’t miss any of Pierce Brown’s Red Rising Saga: RED RISING • GOLDEN SON • MORNING STAR • IRON GOLD • DARK AGE • LIGHT BRINGER",
+    "pageCount": 907,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=AmNDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=AmNDDwAAQBAJ"
   }
 ]
