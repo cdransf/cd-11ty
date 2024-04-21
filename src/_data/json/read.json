@@ -7136,5 +7136,29 @@
     "thumbnail": "https://books.google.com/books/content?id=Gg0IEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=Gg0IEAAAQBAJ"
+  },
+  {
+    "isbn": "9781646221349",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "climate",
+      "nonfiction"
+    ],
+    "title": "The Age of Deer",
+    "authors": [
+      "Erika Howsare"
+    ],
+    "publishedDate": "2024-01-02",
+    "description": "A masterful hybrid of nature writing and cultural studies that investigates our connection with deer—from mythology to biology, from forests to cities, from coexistence to control and extermination—and invites readers to contemplate the paradoxes of how humans interact with and shape the natural world Deer have been an important part of the world that humans occupy for millennia. They’re one of the only large animals that can thrive in our presence. In the 21st century, our relationship is full of contradictions: We hunt and protect them, we cull them from suburbs while making them an icon of wilderness, we see them both as victims and as pests. But there is no doubt that we have a connection to deer: in mythology and story, in ecosystems biological and digital, in cities and in forests. Delving into the historical roots of these tangled attitudes and how they play out in the present, Erika Howsare observes scientists capture and collar fawns, hunters show off their trophies, a museum interpreter teaching American history while tanning a deer hide, an animal-control officer collecting the carcasses of deer killed by sharpshooters, and a woman bottle-raising orphaned fawns in her backyard. As she reports these stories, Howsare’s eye is always on the bigger picture: Why do we look at deer in the ways we do, and what do these animals reveal about human involvement in the natural world? For readers of H is for Hawk and Fox & I, The Age of Deer offers a unique and intimate perspective on a very human relationship.",
+    "pageCount": 369,
+    "printType": "BOOK",
+    "categories": [
+      "Nature"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=VyK3EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Age_of_Deer.html?hl=&id=VyK3EAAAQBAJ"
   }
 ]
