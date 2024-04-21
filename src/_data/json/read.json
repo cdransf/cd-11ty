@@ -5894,5 +5894,30 @@
     "thumbnail": "https://books.google.com/books/content?id=XFfODwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=XFfODwAAQBAJ"
+  },
+  {
+    "isbn": "9781785355448",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Kill All Normies",
+    "authors": [
+      "Angela Nagle"
+    ],
+    "publishedDate": "2017-06-07",
+    "description": "Recent years have seen a revival of the heated culture wars of the 1990s, but this time its battle ground is the internet. On one side the \"alt right\" ranges from the once obscure neo-reactionary and white separatist movements, to geeky subcultures like 4chan, to more mainstream manifestations such as the Trump-supporting gay libertarian Milo Yiannopolous. On the other side, a culture of struggle sessions and virtue signalling lurks behind a therapeutic language of trigger warnings and safe spaces. The feminist side of the online culture wars has its equally geeky subcultures right through to its mainstream expression. Kill All Normies explores some of the cultural genealogies and past parallels of these styles and subcultures, drawing from transgressive styles of 60s libertinism and conservative movements, to make the case for a rejection of the perpetual cultural turn.",
+    "pageCount": 136,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=y-MlDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=y-MlDwAAQBAJ"
   }
 ]
