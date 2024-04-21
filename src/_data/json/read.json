@@ -3537,5 +3537,29 @@
     "thumbnail": "https://books.google.com/books/content?id=QSiUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=QSiUEAAAQBAJ"
+  },
+  {
+    "isbn": "9781982140465",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "biography",
+      "nonfiction"
+    ],
+    "title": "Down and Out in Paradise",
+    "authors": [
+      "Charles Leerhsen"
+    ],
+    "publishedDate": "2022-10-11",
+    "description": "The bestselling, “unvarnished” (The New York Times), “engrossing” (The Guardian), “gritty, well-researched” (The Economist)—and definitely unauthorized—biography of the celebrity chef and TV star Anthony Bourdain, based on extensive interviews with those who knew the real story. Anthony Bourdain’s death by suicide in June 2018 shocked people around the world. Bourdain seemed to have it all: an irresistible personality, a dream job, a beautiful family, and international fame. The reality, though, was more complicated than it seemed. Bourdain became a celebrity with his bestselling book Kitchen Confidential. He parlayed it into a series of hit television shows, including the Food Channel’s Anthony Bourdain: No Reservations and CNN’s Parts Unknown. But his bad boy charisma belied a troubled spirit. Addiction and an obsession with perfection and personal integrity ruined two marriages and turned him into a boss from hell, even as millions of fans became enamored of the quick-witted and genuinely empathetic traveler they saw on TV. At the height of his success Bourdain was already running out of steam, physically and emotionally, when he fell hard for an Italian actress who could be even colder to him than he sometimes was to others, and who effectively drove a wedge between him and his young daughter. Down and Out in Paradise is the first book to tell the full Bourdain story, and to show how Bourdain’s never-before-reported childhood traumas fueled both the creativity and insecurities that would lead him to a place of despair. “Filled with fresh, intimate details” (The New York Times), this is the real story behind an extraordinary life.",
+    "pageCount": 189,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=sxRJEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=sxRJEAAAQBAJ"
   }
 ]
