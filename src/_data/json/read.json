@@ -5651,5 +5651,30 @@
     "thumbnail": "https://books.google.com/books/content?id=tgLnBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=tgLnBAAAQBAJ"
+  },
+  {
+    "isbn": "9781594206016",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Dark Mirror",
+    "authors": [
+      "Barton Gellman"
+    ],
+    "publishedDate": "2020-05-19",
+    "description": "“Engrossing. . . . Gellman [is] a thorough, exacting reporter . . . a marvelous narrator for this particular story, as he nimbly guides us through complex technical arcana and some stubborn ethical questions. . . . Dark Mirror would be simply pleasurable to read if the story it told didn’t also happen to be frighteningly real.” —Jennifer Szalai, The New York Times From the three-time Pulitzer Prize winner and author of the New York Times bestseller Angler, the definitive master narrative of Edward Snowden and the modern surveillance state, based on unique access to Snowden and groundbreaking reportage around the world. Edward Snowden touched off a global debate in 2013 when he gave Barton Gellman, Laura Poitras and Glenn Greenwald each a vast and explosive archive of highly classified files revealing the extent of the American government’s access to our every communication. They shared the Pulitzer Prize that year for public service. For Gellman, who never stopped reporting, that was only the beginning. He jumped off from what Snowden gave him to track the reach and methodology of the U.S. surveillance state and bring it to light with astonishing new clarity. Along the way, he interrogated Snowden’s own history and found important ways in which myth and reality do not line up. Gellman treats Snowden with respect, but this is no hagiographic account, and Dark Mirror sets the record straight in ways that are both fascinating and important. Dark Mirror is the story that Gellman could not tell before, a gripping inside narrative of investigative reporting as it happened and a deep dive into the machinery of the surveillance state. Gellman recounts the puzzles, dilemmas and tumultuous events behind the scenes of his work – in top secret intelligence facilities, in Moscow hotel rooms, in huddles with Post lawyers and editors, in Silicon Valley executive suites, and in encrypted messages from anonymous accounts. Within the book is a compelling portrait of national security journalism under pressure from legal threats, government investigations, and foreign intelligence agencies intent on stealing Gellman’s files. Throughout Dark Mirror, Gellman wages an escalating battle against unknown adversaries who force him to mimic their tradecraft in self-defense. With the vivid and insightful style that is the author’s trademark, Dark Mirror is a true-life spy tale about the surveillance-industrial revolution and its discontents. Along the way, with the benefit of fresh reporting, it tells the full story of a government leak unrivaled in drama since All the President’s Men.",
+    "pageCount": 450,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=7_LsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Dark_Mirror.html?hl=&id=7_LsDwAAQBAJ"
   }
 ]
