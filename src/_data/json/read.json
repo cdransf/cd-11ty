@@ -5352,5 +5352,29 @@
     "thumbnail": "https://books.google.com/books/content?id=nLNVd8ZkW0UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Big_Sort.html?hl=&id=nLNVd8ZkW0UC"
+  },
+  {
+    "isbn": "9780674050402",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Corruption in America",
+    "authors": [
+      "Zephyr Teachout"
+    ],
+    "publishedDate": "2014-09-15",
+    "description": "When Louis XVI gave Ben Franklin a diamond-encrusted snuffbox, the gift troubled Americans: it threatened to corrupt him by clouding his judgment. By contrast, in 2010 the Supreme Court gave corporations the right to spend unlimited money to influence elections. Zephyr Teachout shows that Citizens United was both bad law and bad history.",
+    "pageCount": 385,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=dctwBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Corruption_in_America.html?hl=&id=dctwBAAAQBAJ"
   }
 ]
