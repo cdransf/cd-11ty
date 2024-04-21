@@ -4855,5 +4855,28 @@
     "thumbnail": "https://books.google.com/books/content?id=aLSePwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Autobiography_of_Malcolm_X.html?hl=&id=aLSePwAACAAJ"
+  },
+  {
+    "isbn": "9781542047197",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "A River in Darkness",
+    "authors": [
+      "Masaji Ishikawa"
+    ],
+    "publishedDate": "2018-06",
+    "description": "Previously published in Japan in 2000. Translated from Japanese by Risa Kobayashi and Martin Brown. First published in English by AmazonCrossing in 2017.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Caste-based discrimination"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=Sl02tAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/A_River_in_Darkness.html?hl=&id=Sl02tAEACAAJ"
   }
 ]
