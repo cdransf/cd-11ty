@@ -6304,5 +6304,28 @@
     "thumbnail": "https://books.google.com/books/content?id=YHDOtwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Praxis.html?hl=&id=YHDOtwEACAAJ"
+  },
+  {
+    "isbn": "9783753145136",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Nineteen Eighty-Four",
+    "authors": [
+      "George Orwell"
+    ],
+    "publishedDate": "2021-01-09",
+    "description": "\"Nineteen Eighty-Four: A Novel\", often published as \"1984\", is a dystopian social science fiction novel by English novelist George Orwell. It was published on 8 June 1949 by Secker & Warburg as Orwell's ninth and final book completed in his lifetime. Thematically, \"Nineteen Eighty-Four\" centres on the consequences of totalitarianism, mass surveillance, and repressive regimentation of persons and behaviours within society. Orwell, himself a democratic socialist, modelled the authoritarian government in the novel after Stalinist Russia. More broadly, the novel examines the role of truth and facts within politics and the ways in which they are manipulated. The story takes place in an imagined future, the year 1984, when much of the world has fallen victim to perpetual war, omnipresent government surveillance, historical negationism, and propaganda. Great Britain, known as Airstrip One, has become a province of a totalitarian superstate named Oceania that is ruled by the Party who employ the Thought Police to persecute individuality and independent thinking. Big Brother, the leader of the Party, enjoys an intense cult of personality despite the fact that he may not even exist. The protagonist, Winston Smith, is a diligent and skillful rank-and-file worker and Outer Party member who secretly hates the Party and dreams of rebellion. He enters into a forbidden relationship with a colleague, Julia, and starts to remember what life was like before the Party came to power.",
+    "pageCount": 327,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=PEpoEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=PEpoEAAAQBAJ"
   }
 ]
