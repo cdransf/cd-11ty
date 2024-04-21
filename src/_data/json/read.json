@@ -4762,5 +4762,24 @@
     "thumbnail": "https://books.google.com/books/content?id=Y3M_EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Least_of_Us.html?hl=&id=Y3M_EAAAQBAJ"
+  },
+  {
+    "isbn": "1595581030",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "The New Jim Crow",
+    "authors": [],
+    "publishedDate": "Jan 5, 2010",
+    "description": "Mass Incarceration in the Age of Colorblindness",
+    "pageCount": 290,
+    "printType": "BOOK",
+    "categories": [],
+    "thumbnail": "https://covers.openlibrary.org/b/id/7343168-S.jpg",
+    "language": "unknown"
   }
 ]
