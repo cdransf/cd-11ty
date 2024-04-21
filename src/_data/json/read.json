@@ -6281,5 +6281,28 @@
     "thumbnail": "https://books.google.com/books/content?id=i4yFDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Way_of_the_Warrior.html?hl=&id=i4yFDwAAQBAJ"
+  },
+  {
+    "isbn": "9780062884770",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "The Praxis",
+    "authors": [
+      "Walter Jon Williams"
+    ],
+    "publishedDate": "2019-02-26",
+    "description": "“Space opera the way it ought to be [...] Bujold and Weber, bend the knee; interstellar adventure has a new king, and his name is Walter Jon Williams.” -- George R.R. Martin The first book in the completed Dread Empire's Fall trilogy, followed by The Sundering and Conventions of War. All will must bend to the perfect truth of The Praxis For millennia, the Shaa have subjugated the universe, forcing the myriad sentient races to bow to their joyless tyranny. But the Shaa will soon be no more. The dread empire is in its rapidly fading twilight, and with its impending fall comes the promise of a new galactic order . . . and bloody chaos. A young Terran naval officer marked by his lowly birth, Lt. Gareth Martinez is the first to recognize the insidious plot of the Naxid -- the powerful, warlike insectoid society that was enslaved before all others -- to replace the masters’ despotic rule with their own. Barely escaping a swarming surprise attack, Martinez and Caroline Sula, a pilot whose beautiful face conceals a deadly secret, are now the last hope for freedom for every being who ever languished in Shaa chains -- as the interstellar battle begins against a merciless foe whose only perfect truth is annihilation.",
+    "pageCount": 448,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=YHDOtwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Praxis.html?hl=&id=YHDOtwEACAAJ"
   }
 ]
