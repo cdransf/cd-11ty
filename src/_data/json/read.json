@@ -7972,5 +7972,28 @@
     "thumbnail": "https://books.google.com/books/content?id=pxWWHQ8O9usC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=pxWWHQ8O9usC"
+  },
+  {
+    "isbn": "9780425285992",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Light Bringer",
+    "authors": [
+      "Pierce Brown"
+    ],
+    "publishedDate": "2024-04-23",
+    "description": "NEW YORK TIMES BESTSELLER • Darrow returns as Pierce Brown’s New York Times bestselling Red Rising series continues in the thrilling sequel to Dark Age. The Reaper is a legend, more myth than man: the savior of worlds, the leader of the Rising, the breaker of chains. But the Reaper is also Darrow, born of the red soil of Mars: a husband, a father, a friend. Marooned far from home after a devastating defeat on the battlefields of Mercury, Darrow longs to return to his wife and sovereign, Virginia, to defend Mars from its bloodthirsty would-be conqueror Lysander. Lysander longs to destroy the Rising and restore the supremacy of Gold, and will raze the worlds to realize his ambitions. The worlds once needed the Reaper. But now they need Darrow, and Darrow needs the people he loves—Virginia, Cassius, Sevro—in order to defend the Republic. So begins Darrow’s long voyage home, an interplanetary adventure where old friends will reunite, new alliances will be forged, and rivals will clash on the battlefield. Because Eo’s dream is still alive—and after the dark age will come a new age: of light, of victory, of hope. Don’t miss any of Pierce Brown’s Red Rising Saga: RED RISING • GOLDEN SON • MORNING STAR • IRON GOLD • DARK AGE • LIGHT BRINGER",
+    "pageCount": 705,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=LdDsEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Light_Bringer.html?hl=&id=LdDsEAAAQBAJ"
   }
 ]
