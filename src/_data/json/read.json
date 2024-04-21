@@ -5304,5 +5304,28 @@
     "thumbnail": "https://books.google.com/books/content?id=TV05BgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=TV05BgAAQBAJ"
+  },
+  {
+    "isbn": "0307279278",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "The Snakehead",
+    "authors": [
+      "Patrick Radden Keefe"
+    ],
+    "publishedDate": "2010-07-27",
+    "description": "In this thrilling panorama of real-life events, the bestselling author of Empire of Pain investigates a secret world run by a surprising criminal: a charismatic middle-aged grandmother, who from a tiny noodle shop in New York’s Chinatown managed a multi-million dollar business smuggling people. “Reads like a mashup of The Godfather and Chinatown, complete with gun battles, a ruthless kingpin and a mountain of cash. Except that it’s all true.” —Time Keefe reveals the inner workings of Sister Ping’s complex empire and recounts the decade-long FBI investigation that eventually brought her down. He follows an often incompetent and sometimes corrupt INS as it pursues desperate immigrants risking everything to come to America, and along the way, he paints a stunning portrait of a generation of illegal immigrants and the intricate underground economy that sustains and exploits them. Grand in scope yet propulsive in narrative force, The Snakehead is both a kaleidoscopic crime story and a brilliant exploration of the ironies of immigration in America.",
+    "pageCount": 434,
+    "printType": "BOOK",
+    "categories": [
+      "True Crime"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=6LByqlMGrAEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Snakehead.html?hl=&id=6LByqlMGrAEC"
   }
 ]
