@@ -5600,5 +5600,30 @@
     "thumbnail": "https://books.google.com/books/content?id=zxjBEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=zxjBEAAAQBAJ"
+  },
+  {
+    "isbn": "9781101201220",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "labor",
+      "climate",
+      "nonfiction"
+    ],
+    "title": "Let My People Go Surfing",
+    "authors": [
+      "Yvon Chouinard"
+    ],
+    "publishedDate": "2006-09-05",
+    "description": "Yvon Chouinard-legendary climber, businessman, environmentalist, and founder of Patagonia, Inc.-shares the persistence and courage that have gone into being head of one of the most respected and environmentally responsible companies on earth. From his youth as the son of a French Canadian blacksmith to the thrilling, ambitious climbing expeditions that inspired his innovative designs for the sport's equipment, Let My People Go Surfing is the story of a man who brought doing good and having grand adventures into the heart of his business life-a book that will deeply affect entrepreneurs and outdoor enthusiasts alike. A newly revised edition of Let My People Go Surfing is available now. From the Trade Paperback edition.",
+    "pageCount": 284,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=Om98RYbp-8sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Let_My_People_Go_Surfing.html?hl=&id=Om98RYbp-8sC"
   }
 ]
