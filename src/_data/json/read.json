@@ -7305,5 +7305,28 @@
     "thumbnail": "https://books.google.com/books/content?id=qbVHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=qbVHEAAAQBAJ"
+  },
+  {
+    "isbn": "9781668006542",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "culture"
+    ],
+    "title": "Fluke",
+    "authors": [
+      "Brian Klaas"
+    ],
+    "publishedDate": "2024-01-23",
+    "description": "In the perspective-altering tradition of Malcolm Gladwell’s The Tipping Point and Nassim Nicholas Taleb’s The Black Swan comes a provocative challenge to how we think our world works—and why small, chance events can divert our lives and change everything, by social scientist and Atlantic writer Brian Klaas. If you could rewind your life to the very beginning and then press play, would everything turn out the same? Or could making an accidental phone call or missing an exit off the highway change not just your life, but history itself? And would you remain blind to the radically different possible world you unknowingly left behind? In Fluke, myth-shattering social scientist Brian Klaas dives deeply into the phenomenon of random chance and the chaos it can sow, taking aim at most people’s neat and tidy storybook version of reality. The book’s argument is that we willfully ignore a bewildering truth: but for a few small changes, our lives—and our societies—could be radically different. Offering an entirely new lens, Fluke explores how our world really works, driven by strange interactions and apparently random events. How did one couple’s vacation cause 100,000 people to die? Does our decision to hit the snooze button in the morning radically alter the trajectory of our lives? And has the evolution of humans been inevitable, or are we simply the product of a series of freak accidents? Drawing on social science, chaos theory, history, evolutionary biology, and philosophy, Klaas provides a brilliantly fresh look at why things happen—all while providing mind-bending lessons on how we can live smarter, be happier, and lead more fulfilling lives.",
+    "pageCount": 336,
+    "printType": "BOOK",
+    "categories": [
+      "Self-Help"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=_pzEEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=_pzEEAAAQBAJ"
   }
 ]
