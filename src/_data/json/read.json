@@ -4088,5 +4088,29 @@
     "thumbnail": "https://books.google.com/books/content?id=jseMEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Lazarus_Heist.html?hl=&id=jseMEAAAQBAJ"
+  },
+  {
+    "isbn": "9781524731663",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Bad Blood",
+    "authors": [
+      "John Carreyrou"
+    ],
+    "publishedDate": "2018-05-21",
+    "description": "NATIONAL BESTSELLER • The gripping story of Elizabeth Holmes and Theranos—one of the biggest corporate frauds in history—a tale of ambition and hubris set amid the bold promises of Silicon Valley, rigorously reported by the prize-winning journalist. With a new Afterword covering her trial and sentencing, bringing the story to a close. “Chilling ... Reads like a thriller ... Carreyrou tells [the Theranos story] virtually to perfection.” —The New York Times Book Review In 2014, Theranos founder and CEO Elizabeth Holmes was widely seen as the next Steve Jobs: a brilliant Stanford dropout whose startup “unicorn” promised to revolutionize the medical industry with its breakthrough device, which performed the whole range of laboratory tests from a single drop of blood. Backed by investors such as Larry Ellison and Tim Draper, Theranos sold shares in a fundraising round that valued the company at more than $9 billion, putting Holmes’s worth at an estimated $4.5 billion. There was just one problem: The technology didn’t work. Erroneous results put patients in danger, leading to misdiagnoses and unnecessary treatments. All the while, Holmes and her partner, Sunny Balwani, worked to silence anyone who voiced misgivings—from journalists to their own employees.",
+    "pageCount": 354,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=CcJFDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=CcJFDwAAQBAJ"
   }
 ]
