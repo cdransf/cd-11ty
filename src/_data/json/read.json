@@ -7949,5 +7949,28 @@
     "thumbnail": "https://books.google.com/books/content?id=LOIQc_ALD8YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=LOIQc_ALD8YC"
+  },
+  {
+    "isbn": "9780345522580",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Retribution Falls",
+    "authors": [
+      "Chris Wooding"
+    ],
+    "publishedDate": "2011-04-26",
+    "description": "Sky piracy is a bit out of Darian Frey’s league. Fate has not been kind to the captain of the airship Ketty Jay—or his motley crew. They are all running from something. Crake is a daemonist in hiding, traveling with an armored golem and burdened by guilt. Jez is the new navigator, desperate to keep her secret from the rest of the crew. Malvery is a disgraced doctor, drinking himself to death. So when an opportunity arises to steal a chest of gems from a vulnerable airship, Frey can’t pass it up. It’s an easy take—and the payoff will finally make him a rich man. But when the attack goes horribly wrong, Frey suddenly finds himself the most wanted man in Vardia, trailed by bounty hunters, the elite Century Knights, and the dread queen of the skies, Trinica Dracken. Frey realizes that they’ve been set up to take a fall but doesn’t know the endgame. And the ultimate answer for captain and crew may lie in the legendary hidden pirate town of Retribution Falls. That’s if they can get there without getting blown out of the sky.",
+    "pageCount": 482,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=pxWWHQ8O9usC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=pxWWHQ8O9usC"
   }
 ]
