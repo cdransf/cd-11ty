@@ -4112,5 +4112,30 @@
     "thumbnail": "https://books.google.com/books/content?id=CcJFDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=CcJFDwAAQBAJ"
+  },
+  {
+    "isbn": "9780525522287",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Antisocial",
+    "authors": [
+      "Andrew Marantz"
+    ],
+    "publishedDate": "2020-09-15",
+    "description": "\"Trenchant and intelligent.\" --The New York Times As seen/heard on NPR, New Yorker Radio Hour, The New York Book Review Podcast, PBS Newshour, CNBC, and more. A New York Times Book Review Editors' Choice A New York Times Notable Book of 2019 From a rising star at The New Yorker, a deeply immersive chronicle of how the optimistic entrepreneurs of Silicon Valley set out to create a free and democratic internet--and how the cynical propagandists of the alt-right exploited that freedom to propel the extreme into the mainstream. For several years, Andrew Marantz, a New Yorker staff writer, has been embedded in two worlds. The first is the world of social-media entrepreneurs, who, acting out of naïvete and reckless ambition, upended all traditional means of receiving and transmitting information. The second is the world of the people he calls \"the gate crashers\"--the conspiracists, white supremacists, and nihilist trolls who have become experts at using social media to advance their corrosive agenda. Antisocial ranges broadly--from the first mass-printed books to the trending hashtags of the present; from secret gatherings of neo-Fascists to the White House press briefing room--and traces how the unthinkable becomes thinkable, and then how it becomes reality. Combining the keen narrative detail of Bill Buford's Among the Thugs and the sweep of George Packer's The Unwinding, Antisocial reveals how the boundaries between technology, media, and politics have been erased, resulting in a deeply broken informational landscape--the landscape in which we all now live. Marantz shows how alienated young people are led down the rabbit hole of online radicalization, and how fringe ideas spread--from anonymous corners of social media to cable TV to the President's Twitter feed. Marantz also sits with the creators of social media as they start to reckon with the forces they've unleashed. Will they be able to solve the communication crisis they helped bring about, or are their interventions too little too late?",
+    "pageCount": 402,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=j5QFEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Antisocial.html?hl=&id=j5QFEAAAQBAJ"
   }
 ]
