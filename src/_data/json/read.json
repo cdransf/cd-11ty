@@ -7255,5 +7255,31 @@
     "thumbnail": "https://books.google.com/books/content?id=V5OuzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/All_the_Memories_That_Remain_War_Alzheim.html?hl=&id=V5OuzwEACAAJ"
+  },
+  {
+    "isbn": "9780226832319",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction",
+      "economics"
+    ],
+    "title": "Data Grab",
+    "authors": [
+      "Ulises A. Mejias",
+      "Nick Couldry"
+    ],
+    "publishedDate": "2024-03-14",
+    "description": "A compelling argument that the extractive practices of today’s tech giants are the continuation of colonialism—and a crucial guide to collective resistance. Large technology companies like Meta, Amazon, and Alphabet have unprecedented access to our daily lives, collecting information when we check our email, count our steps, shop online, and commute to and from work. Current events are concerning—both the changing owners (and names) of billion-dollar tech companies and regulatory concerns about artificial intelligence underscore the sweeping nature of Big Tech’s surveillance and the influence such companies hold over the people who use their apps and platforms. As trusted tech experts Ulises A. Mejias and Nick Couldry show in this eye-opening and convincing book, this vast accumulation of data is not the accidental stockpile of a fast-growing industry. Just as nations stole territories for ill-gotten minerals and crops, wealth, and dominance, tech companies steal personal data important to our lives. It’s only within the framework of colonialism, Mejias and Couldry argue, that we can comprehend the full scope of this heist. Like the land grabs of the past, today’s data grab converts our data into raw material for the generation of corporate profit against our own interests. Like historical colonialism, today’s tech corporations have engineered an extractive form of doing business that builds a new social and economic order, leads to job precarity, and degrades the environment. These methods deepen global inequality, consolidating corporate wealth in the Global North and engineering discriminatory algorithms. Promising convenience, connection, and scientific progress, tech companies enrich themselves by encouraging us to relinquish details about our personal interactions, our taste in movies or music, and even our health and medical records. Do we have any other choice? Data Grab affirms that we do. To defy this new form of colonialism we will need to learn from previous forms of resistance and work together to imagine entirely new ones. Mejias and Couldry share the stories of voters, workers, activists, and marginalized communities who have successfully opposed unscrupulous tech practices. An incisive discussion of the digital media that’s transformed our world, Data Grab is a must-read for anyone concerned about privacy, self-determination, and justice in the internet age.",
+    "pageCount": 314,
+    "printType": "BOOK",
+    "categories": [
+      "Technology & Engineering"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=8M_lEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=8M_lEAAAQBAJ"
   }
 ]
