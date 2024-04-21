@@ -3658,5 +3658,29 @@
     "thumbnail": "https://books.google.com/books/content?id=1eGCDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Digital_Minimalism.html?hl=&id=1eGCDwAAQBAJ"
+  },
+  {
+    "isbn": "9781612199160",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Privacy is Power",
+    "authors": [
+      "Carissa Veliz"
+    ],
+    "publishedDate": "2021-04-06",
+    "description": "An Economist Book of the Year Every minute of every day, our data is harvested and exploited… It is time to pull the plug on the surveillance economy. Governments and hundreds of corporations are spying on you, and everyone you know. They're not just selling your data. They're selling the power to influence you and decide for you. Even when you've explicitly asked them not to. Reclaiming privacy is the only way we can regain control of our lives and our societies. These governments and corporations have too much power, and their power stems from us--from our data. Privacy is as collective as it is personal, and it's time to take back control. Privacy Is Power tells you how to do exactly that. It calls for the end of the data economy and proposes concrete measures to bring that end about, offering practical solutions, both for policymakers and ordinary citizens.",
+    "pageCount": 304,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=3TYGEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=3TYGEAAAQBAJ"
   }
 ]
