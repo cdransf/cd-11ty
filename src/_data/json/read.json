@@ -3730,5 +3730,29 @@
     "thumbnail": "https://books.google.com/books/content?id=WwPJDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Midnight_in_Chernobyl.html?hl=&id=WwPJDwAAQBAJ"
+  },
+  {
+    "isbn": "9781788738811",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Silicon Values",
+    "authors": [
+      "Jillian C. York"
+    ],
+    "publishedDate": "2022-03-15",
+    "description": "The battle for online rights and for the future of democracy Who decides what is permissible on the internet: Politicians? Mark Zuckerberg? Users? Who determines when political debate becomes hate speech? How does this impact our identity or our ability to create communities and to protest? Silicon Values reports on the war for digital rights and how major corporations—Facebook, Twitter, Google and Tiktok—threaten democracy as they harvest our personal data in the pursuit of profit.",
+    "pageCount": 305,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=UOhOEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Silicon_Values.html?hl=&id=UOhOEAAAQBAJ"
   }
 ]
