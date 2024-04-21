@@ -6658,5 +6658,28 @@
     "thumbnail": "https://books.google.com/books/content?id=i4o0EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Indentured_Students.html?hl=&id=i4o0EAAAQBAJ"
+  },
+  {
+    "isbn": "9780316462617",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "House of Suns",
+    "authors": [
+      "Alastair Reynolds"
+    ],
+    "publishedDate": "2020-04-21",
+    "description": "An \"engaging and awe-inspiring\"(SF Signal) space opera from the critically-acclaimed author of the Revelation Space series. Six million years ago, at the dawn of the star-faring era, Abigail Gentian fractured herself into a thousand male and female clones, which she called shatterlings. She sent them out into the galaxy to observe and document the rise and fall of countless human empires. Since then, every two hundred thousand years, they gather to exchange news and memories of their travels. Only there is no Gathering. Someone is eliminating the Gentian line. And now Campion and Purslane -- two shatterlings who have fallen in love and shared forbidden experiences -- must determine exactly who, or what, their enemy is, before they are wiped out of existence . . .",
+    "pageCount": 553,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=h4y9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=h4y9DwAAQBAJ"
   }
 ]
