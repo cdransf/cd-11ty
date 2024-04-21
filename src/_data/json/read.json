@@ -5551,5 +5551,29 @@
     "thumbnail": "https://books.google.com/books/content?id=LsplDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/It_Doesn_t_Have_to_Be_Crazy_at_Work.html?hl=&id=LsplDwAAQBAJ"
+  },
+  {
+    "isbn": "9781631497780",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Kill Switch: The Rise of the Modern Senate and the Crippling of American Democracy",
+    "authors": [
+      "Adam Jentleson"
+    ],
+    "publishedDate": "2021-01-12",
+    "description": "With a new epilogue on filibuster battles under the Biden administration THE CASE FOR ENDING THE FILIBUSTER \"A truly excellent book… blistering and persuasive.” —Ezra Klein, New York Times An insider’s account of how politicians representing a radical white minority of Americans have used “the world’s greatest deliberative body” to hijack our democracy. Our democracy is under assault from homegrown authoritarians, with most observers blaming Donald Trump and the Republican Party that submitted to him. Yet as Adam Jentleson shows, the problem not only goes back to the nineteenth century, but is less about the presidency than it is about our nation’s most venerated institution: the United States Senate. A revelatory history of minority rule in America as expressed through the Senate filibuster, Kill Switch shows that white conservatives have long relied on the filibuster—which is not featured in the Constitution, and which, as Jentleson demonstrates, the Framers would have opposed—to shut down attempts to create a multiracial democracy. Featuring a new epilogue on filibuster battles under the Biden administration, Kill Switch will remain an essential warning about the costs of empowering this nation’s right-wing minority. • “Jentleson understands the inner workings of the institution, down to the most granular details, showing precisely how arcane procedural rules can be leveraged to dramatic effect.” —Jennifer Szalai, New York Times • “Careful and thorough and exacting.” —Michael Tomasky, New York Review of Books • “[An] excellent, surprising new book.” —Benjamin Wallace-Wells, The New Yorker",
+    "pageCount": 301,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=i5HxDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=i5HxDwAAQBAJ"
   }
 ]
