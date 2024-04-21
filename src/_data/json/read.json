@@ -4185,5 +4185,31 @@
     "thumbnail": "https://books.google.com/books/content?id=TWqGDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=TWqGDwAAQBAJ"
+  },
+  {
+    "isbn": "9780671725822",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction",
+      "biography"
+    ],
+    "title": "Miles",
+    "authors": [
+      "Miles Davis",
+      "Quincy Troupe"
+    ],
+    "publishedDate": "1990-09-15",
+    "description": "Miles discusses his life and music from playing trumpet in high school to the new instruments and sounds from the Caribbean.",
+    "pageCount": 452,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=xgAVXHhuNYgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Miles.html?hl=&id=xgAVXHhuNYgC"
   }
 ]
