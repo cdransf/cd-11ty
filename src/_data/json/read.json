@@ -4529,5 +4529,30 @@
     "thumbnail": "https://books.google.com/books/content?id=z4IDPV2hZL0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=z4IDPV2hZL0C"
+  },
+  {
+    "isbn": "9781501305320",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "Pedagogy of the Oppressed",
+    "authors": [
+      "Paulo Freire"
+    ],
+    "publishedDate": "2014-08-18",
+    "description": "First published in Portuguese in 1968, Pedagogy of the Oppressed was translated and published in English in 1970. The methodology of the late Paulo Freire has helped to empower countless impoverished and illiterate people throughout the world. Freire's work has taken on especial urgency in the United States and Western Europe, where the creation of a permanent underclass among the underprivileged and minorities in cities and urban centers is increasingly accepted as the norm. With a substantive new introduction on Freire's life and the remarkable impact of this book by writer and Freire confidant and authority Donaldo Macedo, this anniversary edition of Pedagogy of the Oppressed will inspire a new generation of educators, students, and general readers for years to come.",
+    "pageCount": 138,
+    "printType": "BOOK",
+    "categories": [
+      "Education"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=oKQMBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Pedagogy_of_the_Oppressed.html?hl=&id=oKQMBAAAQBAJ"
   }
 ]
