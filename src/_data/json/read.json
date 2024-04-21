@@ -5625,5 +5625,31 @@
     "thumbnail": "https://books.google.com/books/content?id=Om98RYbp-8sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Let_My_People_Go_Surfing.html?hl=&id=Om98RYbp-8sC"
+  },
+  {
+    "isbn": "9781938340109",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "labor",
+      "climate",
+      "nonfiction"
+    ],
+    "title": "The Responsible Company",
+    "authors": [
+      "Yvon Chouinard",
+      "Vincent Stanley"
+    ],
+    "publishedDate": "2013-10-06",
+    "description": "The Responsible Company, by Yvon Chouinard, founder and owner of Patagonia, and Vincent Stanley, co-editor of its Footprint Chronicles, draw on the their 40 years' experience at Patagonia – and knowledge of current efforts by other companies – to articulate the elements of responsible business for our time. Patagonia, named by Fortune in 2007 as the coolest company on the planet, has earned a reputation as much for its ground-breaking environmental and social practices as for the quality of its clothes. In this exceptionally frank account, Chouinard and Stanley recount how the company and its culture gained the confidence, by step and misstep, to make its work progressively more responsible, and to ultimately share its discoveries with companies as large as Wal-Mart or as small as the corner bakery. In plain, compelling prose, the authors describe the current impact of manufacturing and commerce on the planet’s natural systems and human communities, and how that impact now forces business to change its ways. The Responsible Company shows companies how to reduce the harm they cause, improve the quality of their business, and provide the kind of meaningful work everyone seeks. It concludes with specific, practical steps every business can undertake, as well as advice on what to do, in what order. This is the first book to show companies how to thread their way through economic sea change and slow the drift toward ecological bankruptcy. Its advice is simple but powerful: reduce your environmental footprint (and its skyrocketing cost), make legitimate products that last, reclaim deep knowledge of your business and its supply chain to make the most of opportunities in the years to come, and earn the trust you’ll need by treating your workers, customers and communities with respect.",
+    "pageCount": 160,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=tgLnBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=tgLnBAAAQBAJ"
   }
 ]
