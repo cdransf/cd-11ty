@@ -6491,5 +6491,30 @@
     "thumbnail": "https://books.google.com/books/content?id=s2c6DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Mindhunter.html?hl=&id=s2c6DwAAQBAJ"
+  },
+  {
+    "isbn": "9781478027874",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "music",
+      "nonfiction"
+    ],
+    "title": "Streaming Music, Streaming Capital",
+    "authors": [
+      "Eric Drott"
+    ],
+    "publishedDate": "2023-12-29",
+    "description": "In Streaming Music, Streaming Capital, Eric Drott analyzes the political economy of online music streaming platforms. Attentive to the way streaming has reordered the production, circulation, and consumption of music, Drott examines key features of this new musical economy, including the roles played by data collection, playlisting, new methods of copyright enforcement, and the calculation of listening metrics. Yet because streaming underscores how uneasily music sits within existing regimes of private property, its rise calls for a broader reconsideration of music’s complex and contradictory relation to capitalism. Drott's analysis is not simply a matter of how music is formatted in line with dominant measures of economic value; equally important is how music eludes such measures, a situation that threatens to reduce music to a cheap, abundant resource. By interrogating the tensions between streaming’s benefits and pitfalls, Drott sheds light on music’s situation within digital capitalism, from growing concentrations of monopoly power and music’s use in corporate surveillance to issues of musical value, labor, and artist pay.",
+    "pageCount": 230,
+    "printType": "BOOK",
+    "categories": [
+      "Music"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=KvP1EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=KvP1EAAAQBAJ"
   }
 ]
