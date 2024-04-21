@@ -7112,5 +7112,29 @@
     "thumbnail": "https://books.google.com/books/content?id=YMXEEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=YMXEEAAAQBAJ"
+  },
+  {
+    "isbn": "9781635577310",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "We Are Bellingcat",
+    "authors": [
+      "Eliot Higgins"
+    ],
+    "publishedDate": "2021-03-02",
+    "description": "INTERNATIONAL BESTSELLER \"We Are Bellingcat is Higgins's gripping account of how he reinvented reporting for the internet age . . . A manifesto for optimism in a dark age.\"-Luke Harding, Observer The page-turning inside story of the global team wielding the internet to fight for facts and combat autocracy-revealing the extraordinary ability of ordinary people to hold the powerful to account. In 2018, Russian exile Sergei Skripal and his daughter were nearly killed in an audacious poisoning attempt in Salisbury, England. Soon, the identity of one of the suspects was revealed: he was a Russian spy. This huge investigative coup wasn't pulled off by an intelligence agency or a traditional news outlet. Instead, the scoop came from Bellingcat, the open-source investigative team that is redefining the way we think about news, politics, and the digital future. We Are Bellingcat tells the inspiring story of how a college dropout pioneered a new category of reporting and galvanized citizen journalists-working together from their computer screens around the globe-to crack major cases, at a time when fact-based journalism is under assault from authoritarian forces. Founder Eliot Higgins introduces readers to the tools Bellingcat investigators use, tools available to anyone, from software that helps you pinpoint the location of an image, to an app that can nail down the time that photo was taken. This book digs deep into some of Bellingcat's most important investigations-the downing of flight MH17 over Ukraine, Assad's use of chemical weapons in Syria, the identities of alt-right protestors in Charlottesville-with the drama and gripping detail of a spy novel.",
+    "pageCount": 288,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=Gg0IEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=Gg0IEAAAQBAJ"
   }
 ]
