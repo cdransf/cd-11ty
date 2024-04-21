@@ -5327,5 +5327,30 @@
     "thumbnail": "https://books.google.com/books/content?id=6LByqlMGrAEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Snakehead.html?hl=&id=6LByqlMGrAEC"
+  },
+  {
+    "isbn": "9780547237725",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "The Big Sort",
+    "authors": [
+      "Bill Bishop",
+      "Robert G. Cushing"
+    ],
+    "publishedDate": "2009",
+    "description": "In 2004, journalist Bill Bishop coined the term \"the big sort.\" Armed with startling new demographic data, he made national news in a series of articles showing how Americans have been sorting themselves into alarmingly homogeneous communities -- not by region or by state, but by city and even neighborhood. Over the past three decades, we have been choosing the neighborhood (and church and news show) compatible with our lifestyle and beliefs. The result is a country that has become so polarized, so ideologically inbred that people don't know and can't understand those who live a few miles away. How this came to be, and its dire implications for our country, is the subject of this ground-breaking work. In The Big Sort, Bishop has taken his analysis to a new level. He begins with stories about how we live today and then draws on history, economics and our changing political landscape to create one of the most compelling big-picture accounts of America in recent memory.",
+    "pageCount": 388,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=nLNVd8ZkW0UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Big_Sort.html?hl=&id=nLNVd8ZkW0UC"
   }
 ]
