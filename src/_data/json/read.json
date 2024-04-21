@@ -4926,5 +4926,28 @@
     "thumbnail": "https://books.google.com/books/content?id=y_uTDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=y_uTDwAAQBAJ"
+  },
+  {
+    "isbn": "9780593137383",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "religion"
+    ],
+    "title": "The Genius of Jesus",
+    "authors": [
+      "Erwin Raphael McManus"
+    ],
+    "publishedDate": "2021-09-14",
+    "description": "A groundbreaking manifesto decoding the phenomenon of genius through the life of Jesus of Nazareth, revealing the untapped potential within every human being—from the bestselling author of The Artisan Soul, The Last Arrow, and The Way of the Warrior. “IF ALL GENIUS IS TOUCHED BY MADNESS, THEN IT IS ALSO TOUCHED BY THE DIVINE.” In every realm of our existence—art, science, technology, mathematics—we are captivated by stories of genius. Geniuses violate the status quo, destabilize conventional ways of thinking, and ultimately disrupt history by making us see the world differently. Genius is that rare expression of human capacity that seems to touch the divine. Jesus of Nazareth is undeniably one of the most influential figures ever to have walked the face of the earth. Yet his life as a work of genius has yet to be excavated and explored. In The Genius of Jesus, Erwin Raphael McManus examines the person of Jesus not simply through the lens of his divinity, but as a man who radically changed the possibility of what it means to be human. Drawing on the phenomenon of genius and the phenomenon of Jesus, McManus leads us to see this momentous figure in a new and life-altering way. Genius always leaves clues, and The Genius of Jesus follows those clues so that you can discover your own personal genius. McManus dives into the nuances of Jesus’s words and actions, showing how they can not only inspire us but revolutionize how we think about power, empathy, meaning, beauty, and truth. This work is for anyone who seeks to transform their life from the mundane to the transcendent—for anyone who longs to awaken the genius within. The Genius of Jesus is a thought-provoking exploration of the most controversial and influential figure who ever lived, and a guide for you to discover how his genius can live in you.",
+    "pageCount": 209,
+    "printType": "BOOK",
+    "categories": [
+      "Religion"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ouY9EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Genius_of_Jesus.html?hl=&id=ouY9EAAAQBAJ"
   }
 ]
