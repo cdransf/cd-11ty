@@ -6633,5 +6633,30 @@
     "thumbnail": "https://books.google.com/books/content?id=Ij64EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=Ij64EAAAQBAJ"
+  },
+  {
+    "isbn": "9780674251489",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "economics",
+      "education",
+      "nonfiction"
+    ],
+    "title": "Indentured Students",
+    "authors": [
+      "Elizabeth Tandy Shermer"
+    ],
+    "publishedDate": "2021-08-03",
+    "description": "The untold history of how AmericaÕs student-loan program turned the pursuit of higher education into a pathway to poverty. It didnÕt always take thirty years to pay off the cost of a bachelorÕs degree. Elizabeth Tandy Shermer untangles the history that brought us here and discovers that the story of skyrocketing college debt is not merely one of good intentions gone wrong. In fact, the federal student loan program was never supposed to make college affordable. The earliest federal proposals for college affordability sought to replace tuition with taxpayer funding of institutions. But Southern whites feared that lower costs would undermine segregation, Catholic colleges objected to state support of secular institutions, professors worried that federal dollars would come with regulations hindering academic freedom, and elite-university presidents recoiled at the idea of mass higher education. Cold War congressional fights eventually made access more important than affordability. Rather than freeing colleges from their dependence on tuition, the government created a loan instrument that made college accessible in the short term but even costlier in the long term by charging an interest penalty only to needy students. In the mid-1960s, as bankers wavered over the prospect of uncollected debt, Congress backstopped the loans, provoking runaway inflation in college tuition and resulting in immense lender profits. Today 45 million Americans owe more than $1.5 trillion in college debt, with the burdens falling disproportionately on borrowers of color, particularly women. Reformers, meanwhile, have been frustrated by colleges and lenders too rich and powerful to contain. Indentured Students makes clear that these are not unforeseen consequences. The federal student loan system is working as designed.",
+    "pageCount": 401,
+    "printType": "BOOK",
+    "categories": [
+      "Education"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=i4o0EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Indentured_Students.html?hl=&id=i4o0EAAAQBAJ"
   }
 ]
