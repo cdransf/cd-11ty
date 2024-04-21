@@ -3512,5 +3512,30 @@
     "thumbnail": "https://books.google.com/books/content?id=WqIPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Sellout.html?hl=&id=WqIPEAAAQBAJ"
+  },
+  {
+    "isbn": "9781803414317",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "Capitalist Realism",
+    "authors": [
+      "Mark Fisher"
+    ],
+    "publishedDate": "2022-11-25",
+    "description": "An analysis of the ways in which capitalism has presented itself as the only realistic political-economic system.",
+    "pageCount": 116,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=QSiUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=QSiUEAAAQBAJ"
   }
 ]
