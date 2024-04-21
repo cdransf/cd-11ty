@@ -4332,5 +4332,29 @@
     "thumbnail": "https://books.google.com/books/content?id=RimrDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=RimrDwAAQBAJ"
+  },
+  {
+    "isbn": "9780374712785",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Putin's People",
+    "authors": [
+      "Catherine Belton"
+    ],
+    "publishedDate": "2020-06-23",
+    "description": "A New York Times and Sunday Times bestseller | A New York Times Book Review Editors' Choice Named a best book of the year by The Economist | Financial Times | New Statesman | The Telegraph \"[Putin's People] will surely now become the definitive account of the rise of Putin and Putinism.\" —Anne Applebaum, The Atlantic \"This riveting, immaculately researched book is arguably the best single volume written about Putin, the people around him and perhaps even about contemporary Russia itself in the past three decades.\" —Peter Frankopan, Financial Times Interference in American elections. The sponsorship of extremist politics in Europe. War in Ukraine. In recent years, Vladimir Putin’s Russia has waged a concerted campaign to expand its influence and undermine Western institutions. But how and why did all this come about, and who has orchestrated it? In Putin’s People, the investigative journalist and former Moscow correspondent Catherine Belton reveals the untold story of how Vladimir Putin and the small group of KGB men surrounding him rose to power and looted their country. Delving deep into the workings of Putin’s Kremlin, Belton accesses key inside players to reveal how Putin replaced the freewheeling tycoons of the Yeltsin era with a new generation of loyal oligarchs, who in turn subverted Russia’s economy and legal system and extended the Kremlin's reach into the United States and Europe. The result is a chilling and revelatory exposé of the KGB’s revanche—a story that begins in the murk of the Soviet collapse, when networks of operatives were able to siphon billions of dollars out of state enterprises and move their spoils into the West. Putin and his allies subsequently completed the agenda, reasserting Russian power while taking control of the economy for themselves, suppressing independent voices, and launching covert influence operations abroad. Ranging from Moscow and London to Switzerland and Brooklyn’s Brighton Beach—and assembling a colorful cast of characters to match—Putin’s People is the definitive account of how hopes for the new Russia went astray, with stark consequences for its inhabitants and, increasingly, the world.",
+    "pageCount": 405,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=pKilDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=pKilDwAAQBAJ"
   }
 ]
