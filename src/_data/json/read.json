@@ -8182,5 +8182,28 @@
     "thumbnail": "https://books.google.com/books/content?id=N9cNAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=N9cNAwAAQBAJ"
+  },
+  {
+    "isbn": "9780316246637",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Ancillary Justice",
+    "authors": [
+      "Ann Leckie"
+    ],
+    "publishedDate": "2013-10-01",
+    "description": "Winner of the Hugo, Nebula, and Arthur C. Clarke Awards: This record-breaking novel follows a warship trapped in a human body on a quest for revenge. A must read for fans of Ursula K. Le Guin and James S. A. Corey. \"There are few who write science fiction like Ann Leckie can. There are few who ever could.\" -- John Scalzi On a remote, icy planet, the soldier known as Breq is drawing closer to completing her quest. Once, she was the Justice of Toren -- a colossal starship with an artificial intelligence linking thousands of soldiers in the service of the Radch, the empire that conquered the galaxy. Now, an act of treachery has ripped it all away, leaving her with one fragile human body, unanswered questions, and a burning desire for vengeance.",
+    "pageCount": 304,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=obAHf43THvQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=obAHf43THvQC"
   }
 ]
