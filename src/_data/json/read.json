@@ -4720,5 +4720,28 @@
     "thumbnail": "https://books.google.com/books/content?id=J7qdDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=J7qdDwAAQBAJ"
+  },
+  {
+    "isbn": "9781631498848",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "On Juneteenth",
+    "authors": [
+      "Annette Gordon-Reed"
+    ],
+    "publishedDate": "2021-05-04",
+    "description": "NEW YORK TIMES • 10 BEST BOOKS OF 2021 New York Times • Times Critics Top Books of 2021 New York Times Bestseller Best Books of the Year • Washington Post, TIME, NPR, Oprah Daily, Boston Globe, Christian Science Monitor, Kansas City Independent, Los Angeles Public Library, Washington Independent Review of Books, Spy, Audile, Biblioracle, AbeBooks The essential, sweeping story of Juneteenth’s integral importance to American history, as told by a Pulitzer Prize–winning historian and Texas native. Weaving together American history, dramatic family chronicle, and searing episodes of memoir, Annette Gordon-Reed’s On Juneteenth provides a historian’s view of the country’s long road to Juneteenth, recounting both its origins in Texas and the enormous hardships that African-Americans have endured in the century since, from Reconstruction through Jim Crow and beyond. All too aware of the stories of cowboys, ranchers, and oilmen that have long dominated the lore of the Lone Star State, Gordon-Reed—herself a Texas native and the descendant of enslaved people brought to Texas as early as the 1820s—forges a new and profoundly truthful narrative of her home state, with implications for us all. Combining personal anecdotes with poignant facts gleaned from the annals of American history, Gordon-Reed shows how, from the earliest presence of Black people in Texas to the day in Galveston on June 19, 1865, when Major General Gordon Granger announced the end of legalized slavery in the state, African-Americans played an integral role in the Texas story. Reworking the traditional “Alamo” framework, she powerfully demonstrates, among other things, that the slave- and race-based economy not only defined the fractious era of Texas independence but precipitated the Mexican-American War and, indeed, the Civil War itself. In its concision, eloquence, and clear presentation of history, On Juneteenth vitally revises conventional renderings of Texas and national history. As our nation verges on recognizing June 19 as a national holiday, On Juneteenth is both an essential account and a stark reminder that the fight for equality is exigent and ongoing.",
+    "pageCount": 111,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=FwwDEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=FwwDEAAAQBAJ"
   }
 ]
