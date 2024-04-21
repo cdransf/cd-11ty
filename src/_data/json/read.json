@@ -6539,5 +6539,28 @@
     "thumbnail": "https://books.google.com/books/content?id=ZrNzAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=ZrNzAwAAQBAJ"
+  },
+  {
+    "isbn": "9798887440507",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics"
+    ],
+    "title": "A People’s Guide to Abolition and Disability Justice",
+    "authors": [
+      "Katie Tastrom"
+    ],
+    "publishedDate": "2024-05-07",
+    "description": "Disability justice and prison abolition are two increasingly popular theories that overlap but whose intersection has rarely been explored in depth. A People’s Guide to Abolition and Disability Justice explains the history and theories behind abolition and disability justice in a way that is easy to understand for those new to these concepts yet also gives insights that will be useful to seasoned activists. The book uses extensive research and professional and lived experience to illuminate the way the State uses disability and its power to disable to incarcerate multiply marginalized disabled people, especially those who are queer, trans, Black, or Indigenous. Because disabled people are much more likely than nondisabled people to be locked up in prisons, jails, and other sites of incarceration, abolitionists, and others critical of carceral systems must incorporate a disability justice perspective into our work. A People’s Guide to Abolition and Disability Justice gives personal and policy examples of how and why disabled people are disproportionately caught up in the carceral net, and how we can use this information to work toward prison and police abolition more effectively. This book includes practical tools and strategies that will be useful for anyone who cares about disability justice or abolition and explains why we can’t have one without the other.",
+    "pageCount": 257,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=9gfKEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/A_People_s_Guide_to_Abolition_and_Disabi.html?hl=&id=9gfKEAAAQBAJ"
   }
 ]
