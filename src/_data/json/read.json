@@ -3963,5 +3963,34 @@
     "thumbnail": "https://books.google.com/books/content?id=2uV8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=2uV8DwAAQBAJ"
+  },
+  {
+    "isbn": "9781501187292",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "The Chapo Guide to Revolution",
+    "authors": [
+      "Chapo Trap House",
+      "Felix Biederman",
+      "Matt Christman",
+      "Brendan James",
+      "Will Menaker",
+      "Virgil Texas"
+    ],
+    "publishedDate": "2019-10-15",
+    "description": "Instant New York Times bestseller “Howard Zinn on acid or some bullsh*t like that.” —Tim Heidecker The creators of the cult-hit podcast Chapo Trap House deliver a manifesto for everyone who feels orphaned and alienated—politically, culturally, and economically—by the lanyard-wearing Wall Street centrism of the left and the lizard-brained atavism of the right: there is a better way, the Chapo Way. In a guide that reads like “a weirder, smarter, and deliciously meaner version of The Daily Show’s 2004 America (The Book)” (Paste), Chapo Trap House shows you that you don’t have to side with either sinking ships. These self-described “assholes from the internet” offer a fully ironic ideology for all who feel politically hopeless and prefer broadsides and tirades to reasoned debate. Learn the “secret” history of the world, politics, media, and everything in-between that THEY don’t want you to know and chart a course from our wretched present to a utopian future where one can post in the morning, game in the afternoon, and podcast after dinner without ever becoming a poster, gamer, or podcaster. A book that’s “as intellectually serious and analytically original as it is irreverent and funny” (Glenn Greenwald, New York Times bestselling author of No Place to Hide) The Chapo Guide to Revolution features illustrated taxonomies of contemporary liberal and conservative characters, biographies of important thought leaders, “never before seen” drafts of Aaron Sorkin’s Newsroom manga, and the ten new laws that govern Chapo Year Zero (everyone gets a dog, billionaires are turned into Soylent, and logic is outlawed). If you’re a fan of sacred cows, prisoners being taken, and holds being barred, then this book is NOT for you. However, if you feel disenfranchised from the political and cultural nightmare we’re in, then Chapo, let’s go…",
+    "pageCount": 320,
+    "printType": "BOOK",
+    "categories": [
+      "Humor"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=1SKwDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Chapo_Guide_to_Revolution.html?hl=&id=1SKwDwAAQBAJ"
   }
 ]
