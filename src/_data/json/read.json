@@ -7783,5 +7783,30 @@
     "thumbnail": "https://books.google.com/books/content?id=cR7QEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=cR7QEAAAQBAJ"
+  },
+  {
+    "isbn": "9781478027720",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction",
+      "climate"
+    ],
+    "title": "Brutalism",
+    "authors": [
+      "Achille Mbembe"
+    ],
+    "publishedDate": "2023-11-24",
+    "description": "In Brutalism, eminent social and critical theorist Achille Mbembe invokes the architectural aesthetic of brutalism to describe our moment, caught up in the pathos of demolition and production on a planetary scale. Just as brutalist architecture creates an affect of overwhelming weight and destruction, Mbembe contends that contemporary capitalism crushes and dominates all spheres of existence. In our digital, technologically focused era, capitalism has produced a becoming-artificial of humanity and the becoming-human of machines. This blurring of the natural and artificial presents a planetary existential threat in which contemporary society’s goal is to precipitate the mutation of the human species into a condition that is at once plastic and synthetic. Mbembe argues that Afro-diasporic thought presents the only solution for breaking the totalizing logic of contemporary capitalism: repairing that which is broken, developing a new planetary consciousness, and reforming a community of humans in solidarity with all living things.",
+    "pageCount": 121,
+    "printType": "BOOK",
+    "categories": [
+      "Philosophy"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=_AnmEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=_AnmEAAAQBAJ"
   }
 ]
