@@ -5870,5 +5870,29 @@
     "thumbnail": "https://books.google.com/books/content?id=JgLlDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=JgLlDwAAQBAJ"
+  },
+  {
+    "isbn": "9780306846441",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Culture Warlords",
+    "authors": [
+      "Talia Lavin"
+    ],
+    "publishedDate": "2020-10-13",
+    "description": "One reporter takes an immersive dive into white supremacy's explosive online presence, exploring the undercurrents of propaganda, racism, misogyny, and history that led us to where we are now. Talia Lavin is every skinhead's worst nightmare: a loud and unapologetic Jewish woman, acerbic, smart, and profoundly antiracist, with the investigative chops to expose the tactics and ideologies of online hatemongers. Culture Warlords is the story of how Lavin, a frequent target of extremist trolls (including those at Fox News), dove into a byzantine online culture of hate and learned the intricacies of how white supremacy proliferates online. Within these pages, she reveals the extremists hiding in plain sight online: Incels. White nationalists. White supremacists. National Socialists. Proud Boys. Christian extremists. In order to showcase them in their natural habitat, Talia assumes a range of identities, going undercover as a blonde Nazi babe, a forlorn incel, and a violent Aryan femme fatale. Along the way, she discovers a whites-only dating site geared toward racists looking for love, a disturbing extremist YouTube channel run by a fourteen-year-old girl with over 800,000 followers, the everyday heroes of the antifascist movement, and much more. By combining compelling stories chock-full of catfishing and gate-crashing with her own in-depth, gut-wrenching research, she also turns the lens of anti-Semitism, racism, and white power back on itself in an attempt to dismantle and decimate the online hate movement from within. Shocking, humorous, and merciless in equal measure, Culture Warlords explores some of the vilest subcultures on the Web-and shows us how we can fight back.",
+    "pageCount": 288,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=XFfODwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=XFfODwAAQBAJ"
   }
 ]
