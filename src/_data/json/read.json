@@ -3851,5 +3851,28 @@
     "thumbnail": "https://books.google.com/books/content?id=fhiH-9uV5PQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=fhiH-9uV5PQC"
+  },
+  {
+    "isbn": "9780316462655",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Absolution Gap",
+    "authors": [
+      "Alastair Reynolds"
+    ],
+    "publishedDate": "2020-04-21",
+    "description": "In the third book of the legendary Revelation Space trilogy, the last remnants of humanity realize that forging an alliance with a greater and even more mysterious alien force may be their only chance for survival. The Inhibitors were designed to eliminate any life form reaching a certain level of intelligence -- and they've targeted Humanity. War veteran Clavain and a ragtag group of refugees have fled into hiding. Their leadership is faltering, and their situation is growing more desperate. But their little colony has just received an unexpected visitor: an avenging angel with the power to lead mankind to safety -- or draw down its darkest enemy. And as she leads them to an apparently insignificant moon light-years away, it begins to dawn on Clavain and his companions that to beat one enemy, it may be necessary to forge an alliance with something much worse . . . \"Absolution Gap is a good as it gets, and should solidify Alastair Reynolds' reputation as one of the best hard SF writers in the field.\" -- SF Site",
+    "pageCount": 807,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=rIy9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=rIy9DwAAQBAJ"
   }
 ]
