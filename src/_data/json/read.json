@@ -4554,5 +4554,28 @@
     "thumbnail": "https://books.google.com/books/content?id=oKQMBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Pedagogy_of_the_Oppressed.html?hl=&id=oKQMBAAAQBAJ"
+  },
+  {
+    "isbn": "9780804170567",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Missoula",
+    "authors": [
+      "Jon Krakauer"
+    ],
+    "publishedDate": "2016-01-12",
+    "description": "NATIONAL BESTSELLER • “A devastating exposé of colleges and local law enforcement.... A substantive deep dive into the morass of campus sex crimes, where the victim is too often treated like the accused.” —Entertainment Weekly Missoula, Montana, is a typical college town, home to a highly regarded state university whose beloved football team inspires a passionately loyal fan base. Between January 2008 and May 2012, hundreds of students reported sexual assaults to the local police. Few of the cases were properly handled by either the university or local authorities. In this, Missoula is also typical. In these pages, acclaimed journalist Jon Krakauer investigates a spate of campus rapes that occurred in Missoula over a four-year period. Taking the town as a case study for a crime that is sadly prevalent throughout the nation, Krakauer documents the experiences of five victims: their fear and self-doubt in the aftermath; the skepticism directed at them by police, prosecutors, and the public; their bravery in pushing forward and what it cost them. These stories cut through abstract ideological debate about acquaintance rape to demonstrate that it does not happen because women are sending mixed signals or seeking attention. They are victims of a terrible crime, deserving of fairness from our justice system. Rigorously researched, rendered in incisive prose, Missoula stands as an essential call to action.",
+    "pageCount": 418,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ICzZCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Missoula.html?hl=&id=ICzZCwAAQBAJ"
   }
 ]
