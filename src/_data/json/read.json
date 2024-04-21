@@ -3368,5 +3368,28 @@
     "thumbnail": "https://books.google.com/books/content?id=Hn41AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=Hn41AgAAQBAJ"
+  },
+  {
+    "isbn": "9780316462778",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Inhibitor Phase",
+    "authors": [
+      "Alastair Reynolds"
+    ],
+    "publishedDate": "2021-10-12",
+    "description": "A stellar new science fiction adventure from the author who redefined space opera, set in his bestselling Revelation Space universe. For thirty years a tiny band of humans has been sheltering in the caverns of an airless, crater-pocked world called Michaelmas. Beyond their solar system lie the ruins of human interstellar civilization, stalked by a ruthless, infinitely patient cybernetic entity determined to root out the last few bands of survivors. One man has guided the people of Michaelmas through the hardest of times, and given them hope against the wolves: Miguel de Ruyter. When a lone human ship blunders into their system, and threatens to lead the wolves to Michaelmas, de Ruyter embarks on a desperate, near-suicide mission to prevent catastrophe. But an encounter with a refugee from the ship—the enigmatic woman who calls herself only Glass—leads to de Ruyter's world being turned upside down.",
+    "pageCount": 564,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=HrL7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=HrL7DwAAQBAJ"
   }
 ]
