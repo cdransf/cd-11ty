@@ -3488,5 +3488,29 @@
     "thumbnail": "https://books.google.com/books/content?id=S2ZNEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Will.html?hl=&id=S2ZNEAAAQBAJ"
+  },
+  {
+    "isbn": "9780358244301",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction",
+      "music"
+    ],
+    "title": "Sellout",
+    "authors": [
+      "Dan Ozzi"
+    ],
+    "publishedDate": "2021",
+    "description": "From celebrated music writer Dan Ozzi comes a comprehensive chronicle of the punk music scene's evolution from the early nineties to the mid-aughts, following eleven bands as they dissolved, \"sold out,\" and rose to surprise stardom. From its inception, punk music has been identified by two factors: its proximity to \"authenticity,\" and its reliance on an antiestablishment ethos. Yet, in the mid- to late '90s, major record labels sought to capitalize on punk's rebellious undertones, leading to a schism in the scene: to accept the cash flow of the majors, or stick to indie cred?Sellout chronicles the evolution of the punk scene during this era, focusing on prominent bands as they experienced the last \"gold rush\" of the music industry. Within it, music writer Dan Ozzi follows the rise of successful bands like Green Day and Jimmy Eat World, as well as the implosion of groups like Jawbreaker and At the Drive-In, who buckled under the pressure of their striving labels. Featuring original interviews and personal stories from members of eleven of modern punk's most (in)famous bands, Sellout is the history of the evolution of the music industry, and a punk rock lover's guide to the chaotic darlings of the post-grunge era. …",
+    "pageCount": 429,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=WqIPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Sellout.html?hl=&id=WqIPEAAAQBAJ"
   }
 ]
