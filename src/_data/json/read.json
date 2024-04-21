@@ -5501,5 +5501,30 @@
     "thumbnail": "https://books.google.com/books/content?id=6Dp4FoEEo6IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=6Dp4FoEEo6IC"
+  },
+  {
+    "isbn": "9780307463760",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction",
+      "labor"
+    ],
+    "title": "Rework",
+    "authors": [
+      "Jason Fried",
+      "David Heinemeier Hansson"
+    ],
+    "publishedDate": "2010-03-09",
+    "description": "Rework shows you a better, faster, easier way to succeed in business. Most business books give you the same old advice: Write a business plan, study the competition, seek investors, yadda yadda. If you're looking for a book like that, put this one back on the shelf. Read it and you'll know why plans are actually harmful, why you don't need outside investors, and why you're better off ignoring the competition. The truth is, you need less than you think. You don't need to be a workaholic. You don't need to staff up. You don't need to waste time on paperwork or meetings. You don't even need an office. Those are all just excuses. What you really need to do is stop talking and start working. This book shows you the way. You'll learn how to be more productive, how to get exposure without breaking the bank, and tons more counterintuitive ideas that will inspire and provoke you. With its straightforward language and easy-is-better approach, Rework is the perfect playbook for anyone who’s ever dreamed of doing it on their own. Hardcore entrepreneurs, small-business owners, people stuck in day jobs they hate, victims of \"downsizing,\" and artists who don’t want to starve anymore will all find valuable guidance in these pages.",
+    "pageCount": 290,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=U77um_h_dgcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=U77um_h_dgcC"
   }
 ]
