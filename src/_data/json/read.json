@@ -7660,5 +7660,29 @@
     "thumbnail": "https://books.google.com/books/content?id=1sHxEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=1sHxEAAAQBAJ"
+  },
+  {
+    "isbn": "9781839760570",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Systems Ultra",
+    "authors": [
+      "Georgina Voss"
+    ],
+    "publishedDate": "2024-01-30",
+    "description": "A TOOLBOX FOR COMPREHENDING — AND CHANGING — THE WORLD Systems Ultra explores how we experience complex systems: the mesh of things, people, and ideas interacting to produce their own patterns and behaviours. What does it mean when a car which runs on code drives dangerously? What does massmarket graphics software tell us about the workplace politics of architects? And, in these human-made systems, which phenomena are designed, and which are emergent? In a world of networked technologies, global supply chains, and supranational regulations, there are growing calls for a new kind of literacy around systems and their ramifications. At the same time, we are often told these systems are impossible to fully comprehend and are far beyond our control. Drawing on field research and artistic practice around the industrial settings of ports, air traffic control, architectural software, payment platforms in adult entertainment, and car crash testing, Georgina Voss argues that complex systems can be approached as sites of revelation around scale, time, materiality, deviance, and breakages. With humour and guile, she tells the story of what ‘systems’ have come to mean, how they have been sold to us, and the real-world consequences of the power that flows through them. Systems Ultra goes beyond narratives of technological exceptionalism to explore how we experience the complex systems which influence our lives, how to understand them more clearly, and, perhaps, how to change them.",
+    "pageCount": 225,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=pRC7EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=pRC7EAAAQBAJ"
   }
 ]
