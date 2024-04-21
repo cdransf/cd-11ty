@@ -5146,5 +5146,23 @@
     "thumbnail": "https://books.google.com/books/content?id=eOR-EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Afghanistan_Papers.html?hl=&id=eOR-EAAAQBAJ"
+  },
+  {
+    "isbn": "1931498717",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Don't Think of an Elephant!",
+    "authors": [],
+    "publishedDate": "2004-09",
+    "pageCount": 124,
+    "printType": "BOOK",
+    "categories": [],
+    "thumbnail": "https://covers.openlibrary.org/b/id/12039210-S.jpg",
+    "language": "en"
   }
 ]
