@@ -3585,5 +3585,29 @@
     "thumbnail": "https://books.google.com/books/content?id=NARIDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=NARIDwAAQBAJ"
+  },
+  {
+    "isbn": "9780306827488",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "We Are Proud Boys",
+    "authors": [
+      "Andy B. Campbell"
+    ],
+    "publishedDate": "2022-09-20",
+    "description": "A gripping investigation into the nation’s most notorious far-right group, revealing how they created a new blueprint for extremism and turned American politics into a blood sport After the 2016 election, Americans witnessed a frightening trend: the sudden rise of a host of new extremist groups across the country. Emboldened by a new president, they flooded political rallies and built fervent online presences, expanding rapidly until they were a regular sight at everyday demonstrations. Amid the chaos, one group emerged as a leader among the others, with matching outfits, bizarre rituals, and a reputation for violence: the Proud Boys. From leading extremism reporter Andy Campbell, We Are Proud Boys is the definitive narrative exploration of this notorious street gang and all the far-right movements they’re connected to. Through groundbreaking new reporting, Campbell delivers the untold story of a gang of blundering, punch-happy goons who grew to become the centerpiece of American extremism and positioned themselves as the unofficial enforcement arm of the GOP. Beginning with their founding by Gavin McInnes, the media personality best known for co-founding VICE, Campbell takes us deep into the Proud Boys, laying bare their origins and their rise to prominence. As he exposes the group's noxious culture and strange rituals, he reveals how the ultimate project of the Proud Boys–to desensitize Americans to political violence–has succeeded entirely, culminating with Republicans calling the January 6 insurrection \"legitimate political discourse.\" The bizarre, frightening story of the Proud Boys reveals the playbook they have created for domestic extremism, giving us the necessary insight to push back against radicalism in America before it swallows our democracy whole.",
+    "pageCount": 259,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=JCRdEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=JCRdEAAAQBAJ"
   }
 ]
