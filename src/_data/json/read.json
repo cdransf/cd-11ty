@@ -6971,5 +6971,29 @@
     "thumbnail": "https://books.google.com/books/content?id=Gx-UEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=Gx-UEAAAQBAJ"
+  },
+  {
+    "isbn": "9781469674971",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Gun Country",
+    "authors": [
+      "Andrew C. McKevitt"
+    ],
+    "publishedDate": "2023-09-18",
+    "description": "Just as World War II transformed the United States into a global military and economic superpower, so too did it forge the gun country America is today. After 1945, war-ravaged European nations possessed large surpluses of mass-produced weapons, and American entrepreneurs seized the opportunity to buy used munitions for pennies on the dollar and resell them stateside. A booming consumer market made cheap guns accessible to millions of Americans, and rates of gun ownership and violence began to climb. Andrew C. McKevitt tells the history of this gun boom through the dynamics of consumer capitalism and Cold War ideology, the combination of which resulted in a vast number of Americans arming themselves to the teeth and centering their political identity on their guns. When gun control legislation emerged in the 1960s, many Americans, accustomed to the unregulated postwar bounty of cheap guns and fearful of Soviet invasion, domestic subversion, and urban uprisings, fiercely challenged it. Meanwhile, gun control groups were diverted from their abolitionist roots toward a conciliatory, fundraising-focused strategy that struggled to limit the stockpiling of firearms. Gun Country recasts the story of guns in postwar America as one of Cold War and racial anxieties, unfettered capitalism, and exceptional violence that continues to haunt us to this day.",
+    "pageCount": 332,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=nIK2EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=nIK2EAAAQBAJ"
   }
 ]
