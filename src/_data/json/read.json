@@ -6039,5 +6039,31 @@
     "thumbnail": "https://books.google.com/books/content?id=P6F7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=P6F7DwAAQBAJ"
+  },
+  {
+    "isbn": "9781250200891",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction",
+      "tech",
+      "economics"
+    ],
+    "title": "Break 'Em Up",
+    "authors": [
+      "Zephyr Teachout"
+    ],
+    "publishedDate": "2020-05-19",
+    "description": "A passionate attack on the monopolies that are throttling American democracy. Every facet of American life is being overtaken by big platform monopolists like Facebook, Google, and Bayer (which has merged with the former agricultural giant Monsanto), resulting in a greater concentration of wealth and power than we've seen since the Gilded Age. They are evolving into political entities that often have more influence than the actual government, bending state and federal legislatures to their will and even creating arbitration courts that circumvent the US justice system. How can we recover our freedom from these giants? Anti-corruption scholar and activist Zephyr Teachout has the answer: Break 'Em Up. This book is a clarion call for liberals and leftists looking to find a common cause. Teachout makes a compelling case that monopolies are the root cause of many of the issues that today's progressives care about; they drive economic inequality, harm the planet, limit the political power of average citizens, and historically-disenfranchised groups bear the brunt of their shameful and irresponsible business practices. In order to build a better future, we must eradicate monopolies from the private sector and create new safeguards that prevent new ones from seizing power. Through her expert analysis of monopolies in several sectors and their impact on courts, journalism, inequality, and politics, Teachout offers a concrete path toward thwarting these enemies of working Americans and reclaiming our democracy before it’s too late.",
+    "pageCount": 320,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=MPQ5yAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Break_Em_Up.html?hl=&id=MPQ5yAEACAAJ"
   }
 ]
