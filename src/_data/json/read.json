@@ -4577,5 +4577,29 @@
     "thumbnail": "https://books.google.com/books/content?id=ICzZCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Missoula.html?hl=&id=ICzZCwAAQBAJ"
+  },
+  {
+    "isbn": "9780593136409",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "climate",
+      "nonfiction"
+    ],
+    "title": "Paradise",
+    "authors": [
+      "Lizzie Johnson"
+    ],
+    "publishedDate": "2022-08-16",
+    "description": "The definitive firsthand account of California’s Camp Fire, the nation’s deadliest wildfire in a century, Paradise is a riveting examination of what went wrong and how to avert future tragedies as the climate crisis unfolds. “A tour de force story of wildfire and a terrifying look at what lies ahead.”—San Francisco Chronicle (Best Books of the Year) On November 8, 2018, the people of Paradise, California, awoke to a mottled gray sky and gusty winds. Soon the Camp Fire was upon them, gobbling an acre a second. Less than two hours after the fire ignited, the town was engulfed in flames, the residents trapped in their homes and cars. By the next morning, eighty-five people were dead. As a reporter for the San Francisco Chronicle, Lizzie Johnson was there as the town of Paradise burned. She saw the smoldering rubble of a historic covered bridge and the beloved Black Bear Diner and she stayed long afterward, visiting shelters, hotels, and makeshift camps. Drawing on years of on-the-ground reporting and reams of public records, including 911 calls and testimony from a grand jury investigation, Johnson provides a minute-by-minute account of the Camp Fire, following residents and first responders as they fight to save themselves and their town. We see a young mother fleeing with her newborn; a school bus full of children in search of an escape route; and a group of paramedics, patients, and nurses trapped in a cul-de-sac, fending off the fire with rakes and hoses. In Paradise, Johnson documents the unfolding tragedy with empathy and nuance. But she also investigates the root causes, from runaway climate change to a deeply flawed alert system to Pacific Gas and Electric’s decades-long neglect of critical infrastructure. A cautionary tale for a new era of megafires, Paradise is the gripping story of a town wiped off the map and the determination of its people to rise again.",
+    "pageCount": 449,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=D798EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Paradise.html?hl=&id=D798EAAAQBAJ"
   }
 ]
