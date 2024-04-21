@@ -12657,7 +12657,7 @@
     "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvZHVuZS1wYXJ0LXR3by0yMDI0",
     "title": "🎥: Dune: Part Two",
     "url": "https://trakt.tv/movies/dune-part-two-2024",
-    "content_text": "🎥: Dune: Part Two #Movies #Watching #Trakt https://trakt.tv/movies/dune-part-two-2024",
+    "content_text": "🎥: Dune: Part Two #Movies #Watching  #SciFi #Adventure https://trakt.tv/movies/dune-part-two-2024",
     "date_published": "Fri, 19 Apr 2024 14:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112305063432909748"
@@ -12729,5 +12729,16 @@
       "https://social.lol/users/cory/statuses/112305502106912327"
     ],
     "lastTootTimestamp": 1713645967648
+  },
+  "https://coryd.dev/links/2024/2024-04-20-blocking-ai-web-crawlers-update/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbGlua3MvMjAyNC8yMDI0LTA0LTIwLWJsb2NraW5nLWFpLXdlYi1jcmF3bGVycy11cGRhdGUv",
+    "title": "🔗: April 20, 2024 at 12:00:00 AM UTC",
+    "url": "https://coryd.dev/links/2024/2024-04-20-blocking-ai-web-crawlers-update/",
+    "content_text": "🔗: April 20, 2024 at 12:00:00 AM UTC  https://coryd.dev/links/2024/2024-04-20-blocking-ai-web-crawlers-update/",
+    "date_published": "Sat, 20 Apr 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112307697747270589"
+    ],
+    "lastTootTimestamp": 1713679470057
   }
 }
