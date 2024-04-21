@@ -6608,5 +6608,30 @@
     "thumbnail": "https://books.google.com/books/content?id=9oy9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=9oy9DwAAQBAJ"
+  },
+  {
+    "isbn": "9781662602351",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "climate",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "Slow Down",
+    "authors": [
+      "Kohei Saito"
+    ],
+    "publishedDate": "2024-01-09",
+    "description": "\"[A] well-reasoned and eye-opening treatise . . . [Kohei Saito makes] a provocative and visionary proposal.\" —Publishers Weekly, (starred review) \"Saito’s clarity of thought, plethora of evidence, and conversational, gentle, yet urgent tone . . . are sure to win over open-minded readers who understand the dire nature of our global. . . . A cogently structured anti-capitalist approach to the climate crisis.\" —Kirkus Reviews (starred review) Why, in our affluent society, do so many people live in poverty, without access to health care, working multiple jobs and are nevertheless unable to make ends meet, with no future prospects, while the planet is burning? In his international bestseller, Kohei Saito argues that while unfettered capitalism is often blamed for inequality and climate change, subsequent calls for “sustainable growth” and a “Green New Deal” are a dangerous compromise. Capitalism creates artificial scarcity by pursuing profit based on the value of products rather than their usefulness and by putting perpetual growth above all else. It is therefore impossible to reverse climate change in a capitalist society—more: the system that caused the problem in the first place cannot be an integral part of the solution. Instead, Saito advocates for degrowth and deceleration, which he conceives as the slowing of economic activity through the democratic reform of labor and production. In practical terms, he argues for: the end of mass production and mass consumption decarbonization through shorter working hours the prioritization of essential labor over corporate profits By returning to a system of social ownership, he argues, we can restore abundance and focus on those activities that are essential for human life, effectively reversing climate change and saving the planet.",
+    "pageCount": 290,
+    "printType": "BOOK",
+    "categories": [
+      "Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=Ij64EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=Ij64EAAAQBAJ"
   }
 ]
