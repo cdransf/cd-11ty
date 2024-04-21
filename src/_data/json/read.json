@@ -6995,5 +6995,28 @@
     "thumbnail": "https://books.google.com/books/content?id=nIK2EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=nIK2EAAAQBAJ"
+  },
+  {
+    "isbn": "9780593134382",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Built from the Fire",
+    "authors": [
+      "Victor Luckerson"
+    ],
+    "publishedDate": "2023-05-23",
+    "description": "A multigenerational saga of a family and a community in Tulsa’s Greenwood district, known as “Black Wall Street,” that in one century survived the 1921 Tulsa Race Massacre, urban renewal, and gentrification “Ambitious . . . absorbing . . . By the end of Luckerson’s outstanding book, the idea of building something new from the ashes of what has been destroyed becomes comprehensible, even hopeful.”—Marcia Chatelain, The New York Times WINNER OF THE SABEW BEST IN BUSINESS BOOK AWARD • A NEW YORK TIMES BOOK REVIEW AND WASHINGTON POST BEST BOOK OF THE YEAR When Ed Goodwin moved with his parents to the Greenwood neighborhood in Tulsa, Oklahoma, his family joined a community soon to become the center of black life in the West. But just a few years later, on May 31, 1921, the teenaged Ed hid in a bathtub as a white mob descended on his neighborhood, laying waste to thirty-five blocks and murdering as many as three hundred people in one of the worst acts of racist violence in U.S. history. The Goodwins and their neighbors soon rebuilt the district into “a Mecca,” in Ed’s words, where nightlife thrived and small businesses flourished. Ed bought a newspaper to chronicle Greenwood’s resurgence and battles against white bigotry, and his son Jim, an attorney, embodied the family’s hopes for the civil rights movement. But by the 1970s urban renewal policies had nearly emptied the neighborhood. Today the newspaper remains, and Ed’s granddaughter Regina represents the neighborhood in the Oklahoma state legislature, working alongside a new generation of local activists to revive it once again. In Built from the Fire, journalist Victor Luckerson tells the true story behind a potent national symbol of success and solidarity and weaves an epic tale about a neighborhood that refused, more than once, to be erased.",
+    "pageCount": 673,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=mcaGEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=mcaGEAAAQBAJ"
   }
 ]
