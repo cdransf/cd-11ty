@@ -4162,5 +4162,28 @@
     "thumbnail": "https://books.google.com/books/content?id=eFg1EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=eFg1EAAAQBAJ"
+  },
+  {
+    "isbn": "9781982114114",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "My Friend Anna",
+    "authors": [
+      "Rachel DeLoache Williams"
+    ],
+    "publishedDate": "2019-07-23",
+    "description": "NEW YORK TIMES BESTSELLER​ ONE OF TIME’S 100 BEST BOOKS OF THE YEAR Sex and the City meets Bad Blood and Catch Me if You Can in the astonishing true story of Anna Delvey, a young con artist posing as an heiress in New York City—as told by the former Vanity Fair photo editor who got seduced by her friendship and then scammed out of more than $62,000. Rachel DeLoache Williams’s new friend Anna Delvey, a self-proclaimed German heiress, was worldly and ambitious. She was also generous—picking up the tab for lavish dinners at Le Coucou, infrared sauna sessions at HigherDOSE, drinks at the 11 Howard Library bar, and regular workout sessions with a celebrity personal trainer. When Anna proposed an all-expenses-paid trip to Marrakech at the five-star La Mamounia hotel, Rachel jumped at the chance. But when Anna’s credit cards mysteriously stopped working, the dream vacation quickly took a dark turn. Anna asked Rachel to begin fronting costs—first for flights, then meals and shopping, and, finally, for their $7,500-per-night private villa. Before Rachel knew it, more than $62,000 had been charged to her credit cards. Anna swore she would reimburse Rachel the moment they returned to New York. Back in Manhattan, the repayment never materialized, and a shocking pattern of deception emerged. Rachel learned that Anna had left a trail of deceit—and unpaid bills—wherever she’d been. Mortified, Rachel contacted the district attorney, and in a stunning turn of events, found herself helping to bring down one of the city’s most notorious con artists. With breathless pacing and in-depth reporting from the person who experienced it firsthand, My Friend Anna is an unforgettable true story of “glamour, greed, lust for power” (The New York Times), and female friendship.",
+    "pageCount": 292,
+    "printType": "BOOK",
+    "categories": [
+      "True Crime"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=TWqGDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=TWqGDwAAQBAJ"
   }
 ]
