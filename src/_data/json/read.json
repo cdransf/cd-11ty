@@ -6562,5 +6562,28 @@
     "thumbnail": "https://books.google.com/books/content?id=9gfKEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/A_People_s_Guide_to_Abolition_and_Disabi.html?hl=&id=9gfKEAAAQBAJ"
+  },
+  {
+    "isbn": "9780441010646",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Chasm City",
+    "authors": [
+      "Alastair Reynolds"
+    ],
+    "publishedDate": "2003",
+    "description": "Tanner Mirabel ventures through the dark underside of Chasm City, a once utopian city overrun by a vicious virus known as the Melding Plague, in pursuit of a lowlife postmortal and comes face to face with a centuries-old atrocity that everyone would do anything to keep hidden. Reprint.",
+    "pageCount": 708,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=w19z8-u1dl0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Chasm_City.html?hl=&id=w19z8-u1dl0C"
   }
 ]
