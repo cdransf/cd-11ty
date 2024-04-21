@@ -5450,5 +5450,30 @@
     "thumbnail": "https://books.google.com/books/content?id=NgIHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Sandworm.html?hl=&id=NgIHEAAAQBAJ"
+  },
+  {
+    "isbn": "9781526629838",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "politic",
+      "nonfiction"
+    ],
+    "title": "This Is How They Tell Me the World Ends",
+    "authors": [
+      "Nicole Perlroth"
+    ],
+    "publishedDate": "2021-02-18",
+    "description": "WINNER OF THE FT & McKINSEY BUSINESS BOOK OF THE YEAR AWARD 2021 The instant New York Times bestseller A Financial Times and The Times Book of the Year 'A terrifying exposé' The Times 'Part John le Carré . . . Spellbinding' New Yorker We plug in anything we can to the internet. We can control our entire lives, economy and grid via a remote web control. But over the past decade, as this transformation took place, we never paused to think that we were also creating the world's largest attack surface. And that the same nation that maintains the greatest cyber advantage on earth could also be among its most vulnerable. Filled with spies, hackers, arms dealers and a few unsung heroes, This Is How They Tell Me the World Ends is an astonishing and gripping feat of journalism. Drawing on years of reporting and hundreds of interviews, Nicole Perlroth lifts the curtain on a market in shadow, revealing the urgent threat faced by us all if we cannot bring the global cyber arms race to heel.",
+    "pageCount": 529,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=xj7rDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/This_Is_How_They_Tell_Me_the_World_Ends.html?hl=&id=xj7rDwAAQBAJ"
   }
 ]
