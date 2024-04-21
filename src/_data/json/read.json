@@ -7924,5 +7924,30 @@
     "thumbnail": "https://books.google.com/books/content?id=BTekEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Wellness.html?hl=&id=BTekEAAAQBAJ"
+  },
+  {
+    "isbn": "9780520957039",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "Thank You, Anarchy",
+    "authors": [
+      "Nathan Schneider"
+    ],
+    "publishedDate": "2013-09-17",
+    "description": "Thank You, Anarchy is an up-close, inside account of Occupy Wall Street’s first year in New York City, written by one of the first reporters to cover the phenomenon. Nathan Schneider chronicles the origins and explosive development of the Occupy movement through the eyes of the organizers who tried to give shape to an uprising always just beyond their control. Capturing the voices, encounters, and beliefs that powered the movement, Schneider brings to life the General Assembly meetings, the chaotic marches, the split-second decisions, and the moments of doubt as Occupy swelled from a hashtag online into a global phenomenon. A compelling study of the spirit that drove this watershed movement, Thank You, Anarchy vividly documents how the Occupy experience opened new social and political possibilities and registered a chilling indictment of the status quo. It was the movement’s most radical impulses, this account shows, that shook millions out of a failed tedium and into imagining, and fighting for, a better kind of future.",
+    "pageCount": 211,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=LOIQc_ALD8YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=LOIQc_ALD8YC"
   }
 ]
