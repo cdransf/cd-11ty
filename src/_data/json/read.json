@@ -7281,5 +7281,29 @@
     "thumbnail": "https://books.google.com/books/content?id=8M_lEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=8M_lEAAAQBAJ"
+  },
+  {
+    "isbn": "9781604869880",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Day the Country Died",
+    "authors": [
+      "Ian Glasper"
+    ],
+    "publishedDate": "2014-07-01",
+    "description": "The Day the Country Died features author, historian, and musician Ian Glasper (Burning Britain) exploring in minute detail the influential, esoteric, UK anarcho punk scene of the early Eighties. If the colorful ’80s punk bands captured in Burning Britain were loud, political, and uncompromising, those examined in The Day the Country Died were even more so, totally prepared to risk their liberty to communicate the ideals they believed in so passionately. With Crass and Poison Girls opening the floodgates, the arrival of bands such as Zounds, Flux of Pink Indians, Conflict, Subhumans, Chumbawamba, Amebix, Rudimentary Peni, Antisect, Omega Tribe, and Icons of Filth heralded a brand new age of honesty and integrity in underground music. With a backdrop of Thatcher’s Britain, punk music became self-sufficient and considerably more aggressive, blending a DIY ethos with activism to create the perfectly bleak soundtrack to the zeitgeist of a discontented British youth. It was a time when punk stopped being merely a radical fashion statement, and became a force for real social change; a genuine revolutionary movement, driven by some of the most challenging noises ever committed to tape. Anarchy, as regards punk rock, no longer meant “cash from chaos.” It meant “freedom, peace, and unity.“ Anarcho punk took the rebellion inherent in punk from the beginning to a whole new level of personal awareness. All the scene’s biggest names, and most of the smaller ones, are comprehensively covered with new, exclusive interviews and hundreds of previously unseen photographs.",
+    "pageCount": 688,
+    "printType": "BOOK",
+    "categories": [
+      "Music"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=qbVHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=qbVHEAAAQBAJ"
   }
 ]
