@@ -7563,5 +7563,29 @@
     "thumbnail": "https://books.google.com/books/content?id=ixyhqFqgqVIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=ixyhqFqgqVIC"
+  },
+  {
+    "isbn": "9780745349343",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "climate",
+      "nonfiction"
+    ],
+    "title": "The Geopolitics of Green Colonialism",
+    "authors": [
+      "Miriam Lang",
+      "Mary Ann Manahan",
+      "Breno. Bringel"
+    ],
+    "publishedDate": "2024-03-20",
+    "description": "The age of denial is over. Across the global North, how we should respond to the climate crisis has been answered: with carbon trading, green hydrogen, a shift to renewables, and electric cars. Green New Deals across Europe and North America promise to reduce emissions while creating new jobs. But these climate 'solutions' beneath the sustainability branding lead to new environmental injustices and green colonialism. The green growth and clean energy plans of the Global North require the large-scale extraction of strategic minerals from the Global South. The geopolitics of transition implies sacrificing territories and genuinely sustainable ways of inhabiting this world. A new subordination in the global energy economy prevents societies in the South from developing sovereign strategies to foster a dignified life. This book platforms the voices conspicuously absent in debates around energy and climate in the Global North. Drawing on case studies from across the Global South, the authors provide incisive critiques of green colonialism in its material, political, and symbolic dimensions, discuss the multiple entanglements that forcefully connect the transitions of different world regions in a globalized economy, and explore alternative pathways toward a liveable and globally just future for all.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=JoMP0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Geopolitics_of_Green_Colonialism.html?hl=&id=JoMP0AEACAAJ"
   }
 ]
