@@ -4040,5 +4040,28 @@
     "thumbnail": "https://books.google.com/books/content?id=055xDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=055xDwAAQBAJ"
+  },
+  {
+    "isbn": "9781250169129",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Chosen Country",
+    "authors": [
+      "James Pogue"
+    ],
+    "publishedDate": "2018-05-22",
+    "description": "Given unprecedented access to those participating in the armed occupation of the Malheur National Wildlife Refuge, a journalist reveals how politics and uncompromising religious belief divided communities.",
+    "pageCount": 304,
+    "printType": "BOOK",
+    "categories": [
+      "Nature"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=2ZNUDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Chosen_Country.html?hl=&id=2ZNUDwAAQBAJ"
   }
 ]
