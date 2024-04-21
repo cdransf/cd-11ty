@@ -5121,5 +5121,30 @@
     "thumbnail": "https://books.google.com/books/content?id=Rm3nDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Radical_Technologies.html?hl=&id=Rm3nDwAAQBAJ"
+  },
+  {
+    "isbn": "9781982159016",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "The Afghanistan Papers",
+    "authors": [
+      "Craig Whitlock",
+      "The Washington Post"
+    ],
+    "publishedDate": "2022-08-30",
+    "description": "A Washington Post Best Book of 2021 ​The #1 New York Times bestselling investigative story of how three successive presidents and their military commanders deceived the public year after year about America’s longest war, foreshadowing the Taliban’s recapture of Afghanistan, by Washington Post reporter and three-time Pulitzer Prize finalist Craig Whitlock. Unlike the wars in Vietnam and Iraq, the US invasion of Afghanistan in 2001 had near-unanimous public support. At first, the goals were straightforward and clear: defeat al-Qaeda and prevent a repeat of 9/11. Yet soon after the United States and its allies removed the Taliban from power, the mission veered off course and US officials lost sight of their original objectives. Distracted by the war in Iraq, the US military become mired in an unwinnable guerrilla conflict in a country it did not understand. But no president wanted to admit failure, especially in a war that began as a just cause. Instead, the Bush, Obama, and Trump administrations sent more and more troops to Afghanistan and repeatedly said they were making progress, even though they knew there was no realistic prospect for an outright victory. Just as the Pentagon Papers changed the public’s understanding of Vietnam, The Afghanistan Papers contains “fast-paced and vivid” (The New York Times Book Review) revelation after revelation from people who played a direct role in the war from leaders in the White House and the Pentagon to soldiers and aid workers on the front lines. In unvarnished language, they admit that the US government’s strategies were a mess, that the nation-building project was a colossal failure, and that drugs and corruption gained a stranglehold over their allies in the Afghan government. All told, the account is based on interviews with more than 1,000 people who knew that the US government was presenting a distorted, and sometimes entirely fabricated, version of the facts on the ground. Documents unearthed by The Washington Post reveal that President Bush didn’t know the name of his Afghanistan war commander—and didn’t want to meet with him. Secretary of Defense Donald Rumsfeld admitted that he had “no visibility into who the bad guys are.” His successor, Robert Gates, said: “We didn’t know jack shit about al-Qaeda.” The Afghanistan Papers is a “searing indictment of the deceit, blunders, and hubris of senior military and civilian officials” (Tom Bowman, NRP Pentagon Correspondent) that will supercharge a long-overdue reckoning over what went wrong and forever change the way the conflict is remembered.",
+    "pageCount": 384,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=eOR-EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Afghanistan_Papers.html?hl=&id=eOR-EAAAQBAJ"
   }
 ]
