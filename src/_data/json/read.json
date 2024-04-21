@@ -6347,5 +6347,29 @@
     "thumbnail": "https://books.google.com/books/content?id=TEOszgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Raising_Lions.html?hl=&id=TEOszgEACAAJ"
+  },
+  {
+    "isbn": "9781610398039",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "politics"
+    ],
+    "title": "Surveillance Valley",
+    "authors": [
+      "Yasha Levine"
+    ],
+    "publishedDate": "2018-02-06",
+    "description": "The internet is the most effective weapon the government has ever built. In this fascinating book, investigative reporter Yasha Levine uncovers the secret origins of the internet, tracing it back to a Pentagon counterinsurgency surveillance project. A visionary intelligence officer, William Godel, realized that the key to winning the war in Vietnam was not outgunning the enemy, but using new information technology to understand their motives and anticipate their movements. This idea -- using computers to spy on people and groups perceived as a threat, both at home and abroad -- drove ARPA to develop the internet in the 1960s, and continues to be at the heart of the modern internet we all know and use today. As Levine shows, surveillance wasn't something that suddenly appeared on the internet; it was woven into the fabric of the technology. But this isn't just a story about the NSA or other domestic programs run by the government. As the book spins forward in time, Levine examines the private surveillance business that powers tech-industry giants like Google, Facebook, and Amazon, revealing how these companies spy on their users for profit, all while doing double duty as military and intelligence contractors. Levine shows that the military and Silicon Valley are effectively inseparable: a military-digital complex that permeates everything connected to the internet, even coopting and weaponizing the antigovernment privacy movement that sprang up in the wake of Edward Snowden. With deep research, skilled storytelling, and provocative arguments, Surveillance Valley will change the way you think about the news -- and the device on which you read it.",
+    "pageCount": 384,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=65WYDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=65WYDgAAQBAJ"
   }
 ]
