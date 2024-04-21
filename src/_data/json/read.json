@@ -7708,5 +7708,29 @@
     "thumbnail": "https://books.google.com/books/content?id=Onh6EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=Onh6EAAAQBAJ"
+  },
+  {
+    "isbn": "9781509558070",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Foreverism",
+    "authors": [
+      "Grafton Tanner"
+    ],
+    "publishedDate": "2023-10-30",
+    "description": "What do cinematic “universes,” cloud archiving, and voice cloning have in common? They’re in the business of foreverizing – the process of revitalizing things that have degraded, failed, or disappeared so that they can remain active in the present. To foreverize something is to reanimate it, to enclose and protect it from time and the elements, and to eradicate the feeling of nostalgia that accompanies loss. Foreverizing is a bulwark against instability, but it isn’t an infallible enterprise. That which is promised to last forever often does not, and that which is disposed of can sometimes last, disturbingly, forever. In this groundbreaking book, American philosopher Grafton Tanner develops his theory of foreverism: an anti-nostalgic discourse that promises growth without change and life without loss. Engaging with pressing issues from the ecological impact of data storage to the rise of reboot culture, Tanner tracks the implications of a society averse to nostalgia and reveals the new weapons we have for eliminating it.",
+    "pageCount": 70,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=zYjgEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=zYjgEAAAQBAJ"
   }
 ]
