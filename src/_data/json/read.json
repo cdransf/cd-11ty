@@ -6780,5 +6780,29 @@
     "thumbnail": "https://books.google.com/books/content?id=pYRrEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=pYRrEAAAQBAJ"
+  },
+  {
+    "isbn": "9780525656869",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Winnie and Nelson",
+    "authors": [
+      "Jonny Steinberg"
+    ],
+    "publishedDate": "2023-05-02",
+    "description": "A deeply researched, shattering new account of Nelson Mandela’s relationship with Winnie Madikizela-Mandela that “does justice both to the couple’s political heroism and to the betrayals and the secrets that hounded their union” (The New Yorker). Drawing on never-before-seen material, Steinberg—one of South Africa’s foremost nonfiction writers—reveals the fractures and stubborn bonds at the heart of a volatile and groundbreaking union, a very modern political marriage that played out on the world stage. “Powerful, intimate.” —The Washington Post One of the most celebrated political leaders of a century, Nelson Mandela has been written about by many biographers and historians. But in one crucial area, his life remains largely untold: his marriage to Winnie Madikizela-Mandela. During his years in prison, Nelson grew ever more in love with an idealized version of his wife, courting her in his letters as if they were young lovers frozen in time. But Winnie, every bit his political equal, found herself increasingly estranged from her jailed husband’s politics. Behind his back, she was trying to orchestrate an armed seizure of power, a path he feared would lead to an endless civil war. Jonny Steinberg tells the tale of this unique marriage—its longings, its obsessions, its deceits—making South African history a page-turning political biography. Winnie and Nelson is a modern epic in which trauma doesn’t affect just the couple at its center, but an entire nation. It is also a Shakespearean drama in which bonds of love and commitment mingle with timeless questions of revolution, such as whether to seek retribution or a negotiated peace. Steinberg reveals, with power and tender emotional insight, how far these forever-entwined leaders would go for each other and where they drew the line. For in the end, both knew theirs was not simply a marriage, but a contest to decide how apartheid should be fought.",
+    "pageCount": 593,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=eu5-EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=eu5-EAAAQBAJ"
   }
 ]
