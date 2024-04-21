@@ -7378,5 +7378,29 @@
     "thumbnail": "https://books.google.com/books/content?id=tgnZBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Perfect_Youth.html?hl=&id=tgnZBAAAQBAJ"
+  },
+  {
+    "isbn": "9781629632421",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Going Underground",
+    "authors": [
+      "George Hurchalla"
+    ],
+    "publishedDate": "2016-04-01",
+    "description": "The product of decades of work and multiple self-published editions, Going Underground, written by 1980s scene veteran George Hurchalla, is the most comprehensive look yet at America’s nationwide underground punk scene. Despite the mainstream press declarations that “punk died with Sid Vicious” or that “punk was reborn with Nirvana,” author Hurchalla followed the DIY spirit of punk underground, where it not only survived but thrived nationally as a self-sustaining grassroots movement rooted in seedy clubs, rented fire halls, Xeroxed zines, and indie record shops. Rather than dwell solely on well-documented scenes from Los Angeles, New York, and Washington, DC, Hurchalla delves deep into the counterculture, rooting out stories from Chicago, Philadelphia, Austin, Cincinnati, Miami, and elsewhere. The author seamlessly mixes his personal experiences with the oral history of dozens of band members, promoters, artists, zinesters, and scenesters. Some of the countless bands covered include Articles of Faith, Big Boys, Necros, Hüsker Dü, Bad Brains, Government Issue, and Minutemen, as well as many of the essential zines of the time such as Big Takeover, Maximum RocknRoll, Flipside, and Forced Exposure. Going Underground features over a hundred unique photos from Marie Kanger-Born of Chicago, Dixon Coulbourn of Austin, Brian Trudell of LA, Malcolm Riviera of DC, Justina Davies of New York, Ed Arnaud of Arizona, and many others, along with flyers from across the nation.",
+    "pageCount": 540,
+    "printType": "BOOK",
+    "categories": [
+      "Music"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=FrZHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=FrZHEAAAQBAJ"
   }
 ]
