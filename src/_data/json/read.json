@@ -6065,5 +6065,30 @@
     "thumbnail": "https://books.google.com/books/content?id=MPQ5yAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Break_Em_Up.html?hl=&id=MPQ5yAEACAAJ"
+  },
+  {
+    "isbn": "9780316261234",
+    "dateFinished": "2024-04-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi",
+      "mystery",
+      "thriller"
+    ],
+    "title": "Underground Airlines",
+    "authors": [
+      "Ben H. Winters"
+    ],
+    "publishedDate": "2016-07-05",
+    "description": "The bestselling book that asks the question: what would present-day America look like if the Civil War never happened? A New York Times bestseller; a Goodreads Choice finalist; named one of the Best Books of the Year by NPR, Slate, Publishers Weekly, Hudson Bookseller, St. Louis Post-Dispatch, Kirkus Reviews, AudioFile Magazine, and Amazon A young black man calling himself Victor has struck a bargain with federal law enforcement, working as a bounty hunter for the US Marshall Service in exchange for his freedom. He's got plenty of work. In this version of America, slavery continues in four states called \"the Hard Four.\" On the trail of a runaway known as Jackdaw, Victor arrives in Indianapolis knowing that something isn't right -- with the case file, with his work, and with the country itself. As he works to infiltrate the local cell of a abolitionist movement called the Underground Airlines, tracking Jackdaw through the back rooms of churches, empty parking garages, hotels, and medical offices, Victor believes he's hot on the trail. But his strange, increasingly uncanny pursuit is complicated by a boss who won't reveal the extraordinary stakes of Jackdaw's case, as well as by a heartbreaking young woman and her child -- who may be Victor's salvation. Victor believes himself to be a good man doing bad work, unwilling to give up the freedom he has worked so hard to earn. But in pursuing Jackdaw, Victor discovers secrets at the core of the country's arrangement with the Hard Four, secrets the government will preserve at any cost. Underground Airlines is a ground-breaking novel, a wickedly imaginative thriller, and a story of an America that is more like our own than we'd like to believe.",
+    "pageCount": 355,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=LvLlCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=LvLlCgAAQBAJ"
   }
 ]
