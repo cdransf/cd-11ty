@@ -4356,5 +4356,29 @@
     "thumbnail": "https://books.google.com/books/content?id=pKilDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=pKilDwAAQBAJ"
+  },
+  {
+    "isbn": "9780316281935",
+    "dateFinished": "2024-04-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "climate",
+      "nonfiction"
+    ],
+    "title": "The Intersectional Environmentalist",
+    "authors": [
+      "Leah Thomas"
+    ],
+    "publishedDate": "2022-03-08",
+    "description": "From the 2022 TIME100 Next honoree and the activist who coined the term comes a primer on intersectional environmentalism for the next generation of activists looking to create meaningful, inclusive, and sustainable change. The Intersectional Environmentalist examines the inextricable link between environmentalism, racism, and privilege, and promotes awareness of the fundamental truth that we cannot save the planet without uplifting the voices of its people -- especially those most often unheard. Written by Leah Thomas, a prominent voice in the field and the activist who coined the term \"Intersectional Environmentalism,\" this book is simultaneously a call to action, a guide to instigating change for all, and a pledge to work towards the empowerment of all people and the betterment of the planet. Thomas shows how not only are Black, Indigenous and people of color unequally and unfairly impacted by environmental injustices, but she argues that the fight for the planet lies in tandem to the fight for civil rights; and in fact, that one cannot exist without the other. An essential read, this book addresses the most pressing issues that the people and our planet face, examines and dismantles privilege, and looks to the future as the voice of a movement that will define a generation.",
+    "pageCount": 182,
+    "printType": "BOOK",
+    "categories": [
+      "Nature"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=uIY1EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=uIY1EAAAQBAJ"
   }
 ]
