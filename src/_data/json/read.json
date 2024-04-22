@@ -8748,5 +8748,32 @@
     "thumbnail": "https://books.google.com/books/content?id=pvyoEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=pvyoEAAAQBAJ"
+  },
+  {
+    "isbn": "9781408828779",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "climate",
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "Merchants of Doubt",
+    "authors": [
+      "Naomi Oreskes",
+      "Erik M. Conway"
+    ],
+    "publishedDate": "2011-10-03",
+    "description": "The U.S. scientific community has long led the world in research on such areas as public health, environmental science, and issues affecting quality of life. These scientists have produced landmark studies on the dangers of DDT, tobacco smoke, acid rain, and global warming. But at the same time, a small yet potent subset of this community leads the world in vehement denial of these dangers. Merchants of Doubt tells the story of how a loose-knit group of high-level scientists and scientific advisers, with deep connections in politics and industry, ran effective campaigns to mislead the public and deny well-established scientific knowledge over four decades. Remarkably, the same individuals surface repeatedly-some of the same figures who have claimed that the science of global warming is \"not settled\" denied the truth of studies linking smoking to lung cancer, coal smoke to acid rain, and CFCs to the ozone hole. \"Doubt is our product,\" wrote one tobacco executive. These \"experts\" supplied it. Naomi Oreskes and Erik M. Conway, historians of science, roll back the rug on this dark corner of the American scientific community, showing how ideology and corporate interests, aided by a too-compliant media, have skewed public understanding of some of the most pressing issues of our era.",
+    "pageCount": 368,
+    "printType": "BOOK",
+    "categories": [
+      "Technology & Engineering"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=CrtoNFTuPwwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Merchants_of_Doubt.html?hl=&id=CrtoNFTuPwwC"
   }
 ]
