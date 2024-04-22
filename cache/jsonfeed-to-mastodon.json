@@ -12765,13 +12765,24 @@
   },
   "https://www.theverge.com/c/24070570/internet-cables-undersea-deep-repair-ships": {
     "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29tL2MvMjQwNzA1NzAvaW50ZXJuZXQtY2FibGVzLXVuZGVyc2VhLWRlZXAtcmVwYWlyLXNoaXBz",
-    "title": "🔗: The invisible seafaring industry that keeps the internet afloat",
+    "title": "🔗: The invisible seafaring industry that keeps the internet afloat via The Verge",
     "url": "https://www.theverge.com/c/24070570/internet-cables-undersea-deep-repair-ships",
-    "content_text": "🔗: The invisible seafaring industry that keeps the internet afloat #Tech https://www.theverge.com/c/24070570/internet-cables-undersea-deep-repair-ships",
+    "content_text": "🔗: The invisible seafaring industry that keeps the internet afloat via The Verge #Tech https://www.theverge.com/c/24070570/internet-cables-undersea-deep-repair-ships",
     "date_published": "Mon, 22 Apr 2024 04:08:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112312952204947648"
     ],
     "lastTootTimestamp": 1713759646723
+  },
+  "https://coryd.dev/posts/2024/2024-minimalism-as-self-preservation/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC8yMDI0LW1pbmltYWxpc20tYXMtc2VsZi1wcmVzZXJ2YXRpb24v",
+    "title": "📝: Minimalism as self-preservation",
+    "url": "https://coryd.dev/posts/2024/2024-minimalism-as-self-preservation/",
+    "content_text": "📝: Minimalism as self-preservation #Tech #WebDev https://coryd.dev/posts/2024/2024-minimalism-as-self-preservation/",
+    "date_published": "Mon, 22 Apr 2024 21:35:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112316815907563621"
+    ],
+    "lastTootTimestamp": 1713818602166
   }
 }
