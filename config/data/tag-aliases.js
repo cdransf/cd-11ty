@@ -32,6 +32,7 @@ export default {
   macos: '#macOS #Apple',
   mastodon: '#Mastodon',
   music: '#Music',
+  mystery: '#Mystery',
   nonfiction: '#NonFiction',
   politics: '#Politics',
   privacy: '#Privacy',
