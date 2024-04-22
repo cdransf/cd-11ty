@@ -9404,5 +9404,32 @@
     "thumbnail": "https://books.google.com/books/content?id=wuxkEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=wuxkEAAAQBAJ"
+  },
+  {
+    "isbn": "9781538707142",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction",
+      "autobiography"
+    ],
+    "title": "Carry On",
+    "authors": [
+      "John Lewis",
+      "Andrew Young",
+      "Kabir Sehgal"
+    ],
+    "publishedDate": "2021-07-13",
+    "description": "*National Bestseller* A brilliant and empowering collection of final reflections and words of wisdom from venerable civil rights champion, the late Congressman John Lewis at the end of his remarkable life. Congressman John Lewis was a paragon of the Civil Rights Movement and political leadership for decades. A hero we won’t soon forget, Lewis was a beacon of hope and a model of humility whose invocation to “good trouble” continues to inspire millions across our nation. In his last months on earth, even while battling cancer, he dedicated time to share his memories, beliefs, and advice—exclusively immortalized in these pages—as a message to the generations to come. Organized by topic ranging from justice, courage, faith, mentorship, and forgiveness to the protests and the pandemic, and many more besides, Carry On collects the late Congressman’s thoughts for readers to draw on whenever they are in need of guidance. John Lewis had great confidence in our future, even as he died in the midst of one of our country’s most challenging years to date. With this book, he performs that crucial passing of the baton, empowering us to live up to the legacy he has left us with his perseverance, dedication, profound insight, and unwavering ability to see the good in life.",
+    "pageCount": 192,
+    "printType": "BOOK",
+    "categories": [
+      "Self-Help"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=9jEeEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=9jEeEAAAQBAJ"
   }
 ]
