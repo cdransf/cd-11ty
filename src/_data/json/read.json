@@ -8578,5 +8578,30 @@
     "thumbnail": "https://books.google.com/books/content?id=NxpdEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=NxpdEAAAQBAJ"
+  },
+  {
+    "isbn": "9780553447453",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "Evicted",
+    "authors": [
+      "Matthew Desmond"
+    ],
+    "publishedDate": "2017-02-28",
+    "description": "NEW YORK TIMES BESTSELLER • WINNER OF THE PULITZER PRIZE • NAMED ONE OF TIME’S TEN BEST NONFICTION BOOKS OF THE DECADE • One of the most acclaimed books of our time, this modern classic “has set a new standard for reporting on poverty” (Barbara Ehrenreich, The New York Times Book Review). In Evicted, Princeton sociologist and MacArthur “Genius” Matthew Desmond follows eight families in Milwaukee as they each struggle to keep a roof over their heads. Hailed as “wrenching and revelatory” (The Nation), “vivid and unsettling” (New York Review of Books), Evicted transforms our understanding of poverty and economic exploitation while providing fresh ideas for solving one of twenty-first-century America’s most devastating problems. Its unforgettable scenes of hope and loss remind us of the centrality of home, without which nothing else is possible. NAMED ONE OF THE BEST BOOKS OF THE YEAR BY President Barack Obama • The New York Times Book Review • The Boston Globe • The Washington Post • NPR • Entertainment Weekly • The New Yorker • Bloomberg • Esquire • BuzzFeed • Fortune • San Francisco Chronicle • Milwaukee Journal Sentinel • St. Louis Post-Dispatch • Politico • The Week • Chicago Public Library • BookPage • Kirkus Reviews • Library Journal • Publishers Weekly • Booklist • Shelf Awareness WINNER OF: The National Book Critics Circle Award for Nonfiction • The PEN/John Kenneth Galbraith Award for Nonfiction • The Andrew Carnegie Medal for Excellence in Nonfiction • The Hillman Prize for Book Journalism • The PEN/New England Award • The Chicago Tribune Heartland Prize FINALIST FOR THE LOS ANGELES TIMES BOOK PRIZE AND THE KIRKUS PRIZE “Evicted stands among the very best of the social justice books.”—Ann Patchett, author of Bel Canto and Commonwealth “Gripping and moving—tragic, too.”—Jesmyn Ward, author of Salvage the Bones “Evicted is that rare work that has something genuinely new to say about poverty.”—San Francisco Chronicle",
+    "pageCount": 450,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=SEcdDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Evicted.html?hl=&id=SEcdDgAAQBAJ"
   }
 ]
