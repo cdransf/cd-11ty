@@ -8482,5 +8482,28 @@
     "thumbnail": "https://books.google.com/books/content?id=yHb7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=yHb7DwAAQBAJ"
+  },
+  {
+    "isbn": "9781250236357",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "The Exiled Fleet",
+    "authors": [
+      "J. S. Dewes"
+    ],
+    "publishedDate": "2021-08-17",
+    "description": "J. S. Dewes continues her fast paced, science fiction action adventure series, the Divide, with The Exiled Fleet, where The Expanse meets The Black Company—the survivors of The Last Watch refuse to die. The Sentinels narrowly escaped the collapsing edge of the Divide. They have mustered a few other surviving Sentinels, but with no engines they have no way to leave the edge of the universe before they starve. Adequin Rake has gathered a team to find the materials they'll need to get everyone out. To do that they're going to need new allies and evade a ruthless enemy. Some of them will not survive. The Divide series The Last Watch The Exiled Fleet At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+    "pageCount": 304,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=pQP6DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=pQP6DwAAQBAJ"
   }
 ]
