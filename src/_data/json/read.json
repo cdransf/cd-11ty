@@ -9714,5 +9714,28 @@
     "thumbnail": "https://books.google.com/books/content?id=n4t2EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=n4t2EAAAQBAJ"
+  },
+  {
+    "isbn": "9780525619499",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "The Ferryman",
+    "authors": [
+      "Justin Cronin"
+    ],
+    "publishedDate": "2024-05-07",
+    "description": "NEW YORK TIMES BESTSELLER • “Next to impossible to put down . . . exciting, mysterious, and totally satisfying.”—STEPHEN KING From the author of The Passage comes a riveting standalone novel about a group of survivors on a hidden island utopia—where the truth isn’t what it seems. A POLYGON BEST BOOK OF THE YEAR The islands of Prospera lie in a vast ocean, in splendid isolation from the rest of humanity—or whatever remains of it. Citizens of the main island enjoy privileged lives. They are attended to by support staff who live on a cramped neighboring island, where whispers of revolt are brewing—but for the Prosperans, life is perfection. And when the end of life approaches, they’re sent to a mysterious third island, where their bodies are refreshed, their memories are wiped away, and they return to start life anew. Proctor Bennett is a ferryman, whose job it is to enforce the retirement process when necessary. He never questions his work, until the day he receives a cryptic message: “The world is not the world.” These simple words unlock something he has secretly suspected. They seep into strange dreams of the stars and the sea. They give him the unshakable feeling that someone is trying to tell him something important. Something no one could possibly imagine, something that could change the fate of humanity itself.",
+    "pageCount": 561,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=NdDsEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Ferryman.html?hl=&id=NdDsEAAAQBAJ"
   }
 ]
