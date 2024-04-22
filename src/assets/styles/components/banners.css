@@ -9,6 +9,11 @@
     line-height: var(--line-height-sm);
     margin: 0;
 
+    a {
+      color: var(--text-color);
+      text-decoration: underline;
+    }
+
     & > svg {
       display: inline;
       vertical-align: middle;
@@ -25,6 +30,12 @@
   &.npm {
     border-color: var(--brand-npm);
 
+    & p a:hover,
+    & p a:active,
+    & p a:focus {
+      color: var(--brand-npm);
+    }
+
     & svg {
       stroke: var(--brand-npm);
     }
@@ -33,8 +44,28 @@
   &.github {
     border-color: var(--brand-github);
 
+    & p a:hover,
+    & p a:active,
+    & p a:focus {
+      color: var(--brand-github);
+    }
+
     & svg {
       stroke: var(--brand-github);
+    }
+  }
+
+  &.rss {
+    border-color: var(--brand-rss);
+
+    & p a:hover,
+    & p a:active,
+    & p a:focus {
+      color: var(--brand-rss);
+    }
+
+    & svg {
+      stroke: var(--brand-rss);
     }
   }
 }

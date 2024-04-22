@@ -5,6 +5,12 @@ pagination:
   data: collections.links
   size: 30
 ---
+{% if pagination.pageNumber == 0 %}
+<h2 class="page-header">Links</h2>
+{% render "partials/banners/rss.liquid", url: "https://feedpress.me/coryd-links", text: "Subscribe to my links feed or follow along on this page" %}
+<p>These are links I've liked or otherwise found interesting.</p>
+<hr class="large-spacing" />
+{% endif %}
 <ul class="link-list reduced-spacing">
   {% for link in pagination.items %}
     {% assign author = link.data.link | stripUtm | authorLookup %}

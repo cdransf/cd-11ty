@@ -5,6 +5,7 @@ permalink: "/books/index.html"
 ---
 {%- assign bookData = books | bookStatus: 'started' -%}
 <h2 class="page-header">Currently reading</h2>
+{% render "partials/banners/rss.liquid", url: "https://feedpress.me/coryd-books", text: "Subscribe to my books feed or follow along on this page" %}
 <p>Here's what I'm reading at the moment. <a href="/books/want-to-read/">You can also take a look at what I'm planning to read (eventually).</a></p>
 <hr class="large-spacing" />
 {% for book in bookData %}
