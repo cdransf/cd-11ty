@@ -12,7 +12,9 @@ permalink: "/books/index.html"
 <article class="book-entry">
   {% image book.image, alt %}
   <div class="book-meta">
-    <p class="title"><strong>{{ book.title }}</strong></p>
+    <a href="{{ book.url }}">
+      <p class="title"><strong>{{ book.title }}</strong></p>
+    </a>
     {% if book.authors or book.categories %}
     <p class="author-categories">{% if book.authors %}By {{ book.authors }}{% endif %}{% if book.categories %}{% if book.authors %}• {% endif %}<em>{{ book.categories }}</em>{% endif %}</p>
     {% endif %}
