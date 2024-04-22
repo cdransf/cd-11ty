@@ -9075,5 +9075,28 @@
     "thumbnail": "https://books.google.com/books/content?id=CzuAEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=CzuAEAAAQBAJ"
+  },
+  {
+    "isbn": "9780374610678",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech"
+    ],
+    "title": "Wrong Way",
+    "authors": [
+      "Joanne McNeil"
+    ],
+    "publishedDate": "2023-11-14",
+    "description": "For years, Teresa has passed from one job to the next, settling into long stretches of time, struggling to build her career in any field or unstick herself from an endless cycle of labor. The dreaded move from one gig to another is starting to feel unbearable. When a recruiter connects her with a contract position at AllOver, it appears to check all her prerequisites for a “good” job. It’s a fintech corporation with progressive hiring policies and a social justice-minded mission statement. Their new service for premium members: a functional fleet of driverless cars. The future of transportation. As her new-hire orientation reveals, the distance between AllOver’s claims and its actions is wide, but the lure of financial stability and a flexible schedule is enough to keep Teresa driving forward. Joanne McNeil, who often reports on how the human experience intersects with labor and technology brings blazing compassion and criticism to Wrong Way, examining the treacherous gaps between the working and middle classes wrought by the age of AI. Within these divides, McNeil turns the unsaid into the unignorable, and captures the existential perils imposed by a nonstop, full-service gig economy.",
+    "pageCount": 172,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=RL-iEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=RL-iEAAAQBAJ"
   }
 ]
