@@ -87,7 +87,6 @@ export default async () => {
     },
   })
     .then((data) => {
-      if (data.status) return {}
       if (data.ok) return data?.json();
       throw new Error('Something went wrong with the Trakt endpoint.');
     })
