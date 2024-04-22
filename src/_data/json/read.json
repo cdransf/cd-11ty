@@ -8675,5 +8675,30 @@
     "thumbnail": "https://books.google.com/books/content?id=5rW-EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=5rW-EAAAQBAJ"
+  },
+  {
+    "isbn": "9781524761042",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction",
+      "biography"
+    ],
+    "title": "Tupac Shakur",
+    "authors": [
+      "Staci Robinson"
+    ],
+    "publishedDate": "2023-10-24",
+    "description": "The authorized biography of the legendary artist, Tupac Shakur, a “touching, empathetic portrait” (The New York Times) of his life and powerful legacy, fully illustrated with photos, mementos, handwritten poetry, musings, and more Artist, poet, actor, revolutionary, legend Tupac Shakur is one of the greatest and most controversial artists of all time. More than a quarter of a century after his tragic death in 1996 at the age of just twenty-five, he continues to be one of the most misunderstood, complicated, and influential figures in modern history. Drawing on exclusive access to Tupac’s private notebooks, letters, and uncensored conversations with those who loved and knew him best, this estate-authorized biography paints the fullest and most intimate picture to date of the young man who became a legend for generations to come. In Tupac Shakur, author and screenwriter Staci Robinson—who knew Tupac from their shared circle of high school friends in Marin City, California, and who was entrusted by his mother, Afeni Shakur, to share his story—unravels the myths and unpacks the complexities that have shadowed Tupac’s existence. Decades in the making, this book pulls back the curtain to reveal a powerful story of a life defined by politics and art—a man driven by equal parts brilliance and impulsiveness, steeped in the rich intellectual tradition of Black empowerment, and unafraid to utter raw truths about race in America. It is a story of a mother and son bound together by a love for each other and for their people, and the relationship that endured through their darkest times. It is a political story that begins in the whirlwind of the 1960s civil rights movement and unfolds through a young artist’s awakening to rage and purpose in the ’90s era of Rodney King. It is a story of dizzying success and its devastating consequences. And, of course, it is the story of Tupac’s music, his timeless, undying message as it continues to touch and inspire us today.",
+    "pageCount": 465,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=qcaqEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Tupac_Shakur.html?hl=&id=qcaqEAAAQBAJ"
   }
 ]
