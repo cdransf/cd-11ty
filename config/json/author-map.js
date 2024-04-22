@@ -1,4 +1,6 @@
 export default {
+  "https://theverge.com": "The Verge",
+  "https://www.theverge.com": "The Verge",
   "https://www.theguardian.com": "The Guardian",
   "https://www.newyorker.com": "The New Yorker",
   "https://ploum.net": "Ploum.net",
