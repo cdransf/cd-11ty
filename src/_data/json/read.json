@@ -8551,5 +8551,31 @@
     "thumbnail": "https://books.google.com/books/content?id=8UWoEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=8UWoEAAAQBAJ"
+  },
+  {
+    "isbn": "9781982186555",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "culture",
+      "movies",
+      "nonfiction"
+    ],
+    "title": "The Black Guy Dies First",
+    "authors": [
+      "Robin R. Means Coleman",
+      "Mark H. Harris"
+    ],
+    "publishedDate": "2023-02-07",
+    "description": "A definitive and surprising exploration of the history of Black horror films, after the rising success of Get Out, Candyman, and Lovecraft Country from creators behind the acclaimed documentary, Horror Noire. The Black Guy Dies First explores the Black journey in modern horror cinema, from the fodder epitomized by Spider Baby to the Oscar-​winning cinematic heights of Get Out and beyond. This eye-opening book delves into the themes, tropes, and traits that have come to characterize Black roles in horror since 1968, a year in which race made national headlines in iconic moments from the enactment of the 1968 Civil Rights Act and Martin Luther King Jr.’s assassination in April. This timely book is a must-read for cinema and horror fans alike.",
+    "pageCount": 336,
+    "printType": "BOOK",
+    "categories": [
+      "Performing Arts"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=NxpdEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=NxpdEAAAQBAJ"
   }
 ]
