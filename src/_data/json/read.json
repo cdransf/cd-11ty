@@ -9026,5 +9026,28 @@
     "thumbnail": "https://books.google.com/books/content?id=oZCzEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=oZCzEAAAQBAJ"
+  },
+  {
+    "isbn": "9781683359524",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "The Phantom Prince",
+    "authors": [
+      "Elizabeth Kendall"
+    ],
+    "publishedDate": "2020-01-07",
+    "description": "The inspiration for the five-part Amazon Original docuseries Ted Bundy: Falling for a Killer This updated, expanded edition of The Phantom Prince, Elizabeth Kendall’s 1981 memoir detailing her six-year relationship with serial killer Ted Bundy, includes a new introduction and a new afterword by the author, never-before-seen photos, and a startling new chapter from the author’s daughter, Molly, who has not previously shared her story. Bundy is one of the most notorious serial killers in American history and one of the most publicized to this day. However, very rarely do we hear from the women he left behind—the ones forgotten as mere footnotes in this tragedy. The Phantom Prince chronicles Elizabeth Kendall’s intimate relationship with Ted Bundy and its eventual unraveling. As much as has been written about Bundy, it’s remarkable to hear the perspective of people who shared their daily lives with him for years. This gripping account presents a remarkable examination of a charismatic personality that masked unimaginable darkness.",
+    "pageCount": 252,
+    "printType": "BOOK",
+    "categories": [
+      "True Crime"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=-7qhDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=-7qhDwAAQBAJ"
   }
 ]
