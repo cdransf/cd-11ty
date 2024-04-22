@@ -9049,5 +9049,31 @@
     "thumbnail": "https://books.google.com/books/content?id=-7qhDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=-7qhDwAAQBAJ"
+  },
+  {
+    "isbn": "9780807007075",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "Chokepoint Capitalism",
+    "authors": [
+      "Rebecca Giblin",
+      "Cory Doctorow"
+    ],
+    "publishedDate": "2022-09-27",
+    "description": "A call to action for the creative class and labor movement to rally against the power of Big Tech and Big Media Corporate concentration has breached the stratosphere, as have corporate profits. An ever-expanding constellation of industries are now monopolies (where sellers have excessive power over buyers) or monopsonies (where buyers hold the whip hand over sellers)—or both. In Chokepoint Capitalism, scholar Rebecca Giblin and writer and activist Cory Doctorow argue we’re in a new era of “chokepoint capitalism,” with exploitative businesses creating insurmountable barriers to competition that enable them to capture value that should rightfully go to others. All workers are weakened by this, but the problem is especially well-illustrated by the plight of creative workers. From Amazon’s use of digital rights management and bundling to radically change the economics of book publishing, to Google and Facebook’s siphoning away of ad revenues from news media, and the Big Three record labels’ use of inordinately long contracts to up their own margins at the cost of artists, chokepoints are everywhere. By analyzing book publishing and news, live music and music streaming, screenwriting, radio and more, Giblin and Doctorow deftly show how powerful corporations construct “anti-competitive flywheels” designed to lock in users and suppliers, make their markets hostile to new entrants, and then force workers and suppliers to accept unfairly low prices. In the book’s second half, Giblin and Doctorow then explain how to batter through those chokepoints, with tools ranging from transparency rights to collective action and ownership, radical interoperability, contract terminations, job guarantees, and minimum wages for creative work. Chokepoint Capitalism is a call to workers of all sectors to unite to help smash these chokepoints and take back the power and profit that’s being heisted away—before it’s too late.",
+    "pageCount": 398,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=CzuAEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=CzuAEAAAQBAJ"
   }
 ]
