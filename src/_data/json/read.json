@@ -9325,5 +9325,31 @@
     "thumbnail": "https://books.google.com/books/content?id=kUNGDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=kUNGDwAAQBAJ"
+  },
+  {
+    "isbn": "9780062908612",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "labor",
+      "nonfiction"
+    ],
+    "title": "A Collective Bargain",
+    "authors": [
+      "Jane McAlevey"
+    ],
+    "publishedDate": "2020-01-07",
+    "description": "From longtime labor organizer Jane McAlevey, a vital call-to-arms in favor of unions, a key force capable of defending our democracy For decades, racism, corporate greed, and a skewed political system have been eating away at the social and political fabric of the United States. Yet as McAlevey reminds us, there is one weapon whose effectiveness has been proven repeatedly throughout U.S. history: unions. In A Collective Bargain, longtime labor organizer, environmental activist, and political campaigner Jane McAlevey makes the case that unions are a key institution capable of taking effective action against today’s super-rich corporate class. Since the 1930s, when unions flourished under New Deal protections, corporations have waged a stealthy and ruthless war against the labor movement. And they’ve been winning. Until today. Because, as McAlevey shows, unions are making a comeback. Want to reverse the nation’s mounting wealth gap? Put an end to sexual harassment in the workplace? End racial disparities on the job? Negotiate climate justice? Bring back unions. As McAlevey travels from Pennsylvania hospitals, where nurses are building a new kind of patient-centered unionism, to Silicon Valley, where tech workers have turned to old-fashioned collective action, to the battle being waged by America’s teachers, readers have a ringside seat at the struggles that will shape our country—and our future.",
+    "pageCount": 317,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=TkKSDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=TkKSDwAAQBAJ"
   }
 ]
