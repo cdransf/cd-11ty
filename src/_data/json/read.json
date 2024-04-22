@@ -9666,5 +9666,28 @@
     "thumbnail": "https://books.google.com/books/content?id=WtqKCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=WtqKCgAAQBAJ"
+  },
+  {
+    "isbn": "9780316466516",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Children of Memory",
+    "authors": [
+      "Adrian Tchaikovsky"
+    ],
+    "publishedDate": "2023-01-31",
+    "description": "Winner of the 2023 Hugo Award for Best Series! The modern classic of space opera that began with Children of Time continues in this extraordinary novel of humanity's battle for survival on a terraformed planet. Earth failed. In a desperate bid to escape, the spaceship Enkidu and its captain, Heorest Holt, carried its precious human cargo to a potential new paradise. Generations later, this fragile colony has managed to survive, eking out a hardy existence. Yet life is tough, and much technological knowledge has been lost. Then strangers appear. They possess unparalleled knowledge and thrilling technology – and they've arrived from another world to help humanity’s colonies. But not all is as it seems, and the price of the strangers' help may be the colony itself. Children of Memory by Arthur C. Clarke Award-winning author Adrian Tchaikovsky is a far-reaching space opera spanning generations, species and galaxies.",
+    "pageCount": 410,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=SuBuEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=SuBuEAAAQBAJ"
   }
 ]
