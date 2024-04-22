@@ -9098,5 +9098,32 @@
     "thumbnail": "https://books.google.com/books/content?id=RL-iEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=RL-iEAAAQBAJ"
+  },
+  {
+    "isbn": "9781839764578",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "labor",
+      "economics",
+      "nonfiction",
+      "politics"
+    ],
+    "title": "Own This!",
+    "authors": [
+      "R. Trebor Scholz"
+    ],
+    "publishedDate": "2023-09-19",
+    "description": "What if taxi drivers in New York City or rickshaw operators in Bangalore could start a worker-owned and-operated alternative to Uber with stable hourly wages? Platform cooperatives reimagine a world where domestic workers can double their income by establishing their own platform—an internet where platforms such as Twitch, Twitter, and Roblox were owned by their streamers, users, and creators. What if small fishing communities in Mexico or farmers in Kerala had the power to determine what data they collected about their work and how they utilized that data? Platform cooperatives are not a figment of the utopian imagination, but rather a reality that is transforming industries today. Collectives that leverage technology offer an urgent and practical solution to shift how businesses are owned and controlled, allowing workers to make decisions together. In this book, researcher and activist Trebor Scholz explores how these new forms of business, powered by peer principles, are paving the way for a more equitable economy that benefits everyone. Own This! sets out a program that could change the ways we live, work, and organize.",
+    "pageCount": 241,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=pAmjEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=pAmjEAAAQBAJ"
   }
 ]
