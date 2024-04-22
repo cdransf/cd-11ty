@@ -9224,5 +9224,29 @@
     "thumbnail": "https://books.google.com/books/content?id=IQS7EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=IQS7EAAAQBAJ"
+  },
+  {
+    "isbn": "9780465063758",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Consent of the Networked",
+    "authors": [
+      "Rebecca MacKinnon"
+    ],
+    "publishedDate": "2013-04-23",
+    "description": "The future of your freedom depends on whether you assert your rights within the digital spaces you inhabit. But, as corporations and countries square off onÑand overÑthe internet, the likely losers are us.",
+    "pageCount": 354,
+    "printType": "BOOK",
+    "categories": [
+      "Computers"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=9QXTDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Consent_of_the_Networked.html?hl=&id=9QXTDQAAQBAJ"
   }
 ]
