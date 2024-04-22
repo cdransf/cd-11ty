@@ -22,7 +22,7 @@
     "@cdransf/api-text": "^1.2.2",
     "@cdransf/select-pagination": "^1.0.4",
     "@cdransf/theme-toggle": "^1.2.3",
-    "@daviddarnes/link-peek": "^1.0.0",
+    "@daviddarnes/link-peek": "^1.1.0",
     "@daviddarnes/mastodon-post": "^1.2.0",
     "@zachleat/webcare-webshare": "^1.0.3",
     "minisearch": "^6.3.0",
