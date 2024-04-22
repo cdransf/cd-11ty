@@ -8505,5 +8505,28 @@
     "thumbnail": "https://books.google.com/books/content?id=pQP6DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=pQP6DwAAQBAJ"
+  },
+  {
+    "isbn": "9781529051902",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Shards of Earth: the Final Architecture Book 1",
+    "authors": [
+      "Adrian Tchaikovsky"
+    ],
+    "publishedDate": "2022-03-17",
+    "description": "The first high-octane installment in the Final Architecture Trilogy, from Arthur C. Clarke Award-winner Adrian Tchaikovsky.The war is over. Its heroes forgotten. Until one chance discovery...Idris has neither aged nor slept since they remade his mind in the war. And one of humanity's heroes now scrapes by on a freelance salvage vessel, to avoid the attention of greater powers.Eighty years ago, Earth was destroyed by an alien enemy. Many escaped, but millions more died. So mankind created enhanced humans such as Idris - who could communicate mind-to-mind with our aggressors. Then these 'Architects' simply disappeared and Idris and his kind became obsolete.Now, Idris and his crew have something strange, abandoned in space. It's clearly the work of the Architects - but are they really returning? And if so, why? Hunted by gangsters, cults and governments, Idris and his crew race across the galaxy as they search for answers. For they now possess something of incalculable value, and many would kill to obtain it.Praise for Adrian Tchaikovsky:\"Enthralling, epic, immersive and hugely intelligent.\"Stephen Baxter on Shards of Earth \"He writes incredibly enjoyable sci-fi, full of life and ideas.\"Patrick Ness\"Brilliant science fiction.\"James McAvoy on Children of Time \"One of the most interesting and accomplished writers in speculative fiction.\"Christopher Paolini",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=GLeXzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Shards_of_Earth_the_Final_Architecture_B.html?hl=&id=GLeXzgEACAAJ"
   }
 ]
