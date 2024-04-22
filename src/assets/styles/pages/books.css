@@ -11,6 +11,15 @@
   & img {
     border: 1px solid var(--accent-color);
     border-radius: var(--rounded);
+    transition-property: border-color;
+    transition-timing-function: var(--transition-ease-in-out);
+    transition-duration: 300ms;
+  }
+
+  & a:hover img,
+  & a:focus img,
+  & a:active img {
+    border-color: var(--accent-color-hover)
   }
 
   & img,

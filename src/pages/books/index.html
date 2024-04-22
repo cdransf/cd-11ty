@@ -10,7 +10,9 @@ permalink: "/books/index.html"
 {% for book in bookData %}
 {% capture alt %}{{ book.title }} by {{ book.authors }}{% endcapture %}
 <article class="book-entry">
-  {% image book.image, alt %}
+  <a href="{{ book.url }}">
+    {% image book.image, alt %}
+  </a>
   <div class="book-meta">
     <a href="{{ book.url }}">
       <p class="title"><strong>{{ book.title }}</strong></p>
