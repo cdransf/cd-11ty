@@ -251,6 +251,7 @@ nav ul li .active svg:hover {
 .brain svg { stroke: var(--brand-listenbrainz) !important; }
 .device-tv svg { stroke: var(--brand-trakt) !important; }
 .news svg { stroke: var(--brand-instapaper) !important; }
+.books svg { stroke: var(--brand-books) !important; }
 .coffee svg { stroke: var(--brand-buy-me-a-coffee) !important; }
 .heart-handshake svg { stroke: var(--webrings) !important; }
 .rss svg { stroke: var(--brand-rss) !important; }

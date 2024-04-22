@@ -24,6 +24,7 @@ export default async function () {
       { name: 'ListenBrainz', url: 'https://listenbrainz.org/user/cdransf/', icon: 'brain' },
       { name: 'Trakt', url: 'https://trakt.tv/users/cdransf', icon: 'device-tv' },
       { name: 'Instapaper', url: 'https://www.instapaper.com/p/coryd', icon: 'news' },
+      { name: 'Books', url: '/books', icon: 'books' },
       { name: 'Webrings', url: '/webrings', icon: 'heart-handshake' },
     ],
   }

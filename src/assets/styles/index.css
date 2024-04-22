@@ -17,6 +17,7 @@
 /* page styles */
 @import url('./pages/404.css') layer(page);
 @import url('./pages/about.css') layer(page);
+@import url('./pages/books.css') layer(page);
 @import url('./pages/blogroll.css') layer(page);
 @import url('./pages/contact.css') layer(page);
 @import url('./pages/now.css') layer(page);

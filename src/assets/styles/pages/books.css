@@ -1,0 +1,70 @@
+.book-entry {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sizing-sm);
+  align-items: center;
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
+
+  & img {
+    border: 1px solid var(--accent-color);
+    border-radius: var(--rounded);
+  }
+
+  & img,
+  & picture {
+    max-width: calc(var(--sizing-3xl) * 4);
+    height: auto;
+  }
+
+  & .book-meta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sizing-xs);
+    align-items: center;
+
+    & p {
+      margin: 0;
+      overflow: hidden;
+      max-width: 100%;
+      text-overflow: ellipsis;
+      width: fit-content;
+      margin-bottom: 0;
+
+      &.title {
+        font-size: var(--font-size-xl);
+      }
+
+      &.author-categories {
+        font-size: var(--font-size-xs);
+        line-height: var(--line-height-xs);
+      }
+    }
+
+    & blockquote.description {
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+      margin-bottom: var(--sizing-base);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .book-entry {
+    flex-direction: row;
+    gap: var(--sizing-base);
+    align-items: start;
+
+    & picture {
+      margin-bottom: var(--sizing-md);
+    }
+
+    & .book-meta {
+      align-items: start;
+    }
+  }
+}

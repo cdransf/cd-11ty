@@ -1,0 +1,22 @@
+---
+title: Currently reading • Books
+layout: default
+permalink: "/books/index.html"
+---
+{%- assign bookData = books | bookStatus: 'started' -%}
+<h2 class="page-header">Currently reading</h2>
+<p>Here's what I'm reading at the moment. <a href="/books/want-to-read/">You can also take a look at what I'm planning to read (eventually).</a></p>
+<hr class="large-spacing" />
+{% for book in bookData %}
+{% capture alt %}{{ book.title }} by {{ book.authors }}{% endcapture %}
+<article class="book-entry">
+  {% image book.image, alt %}
+  <div class="book-meta">
+    <p class="title"><strong>{{ book.title }}</strong></p>
+    {% if book.authors or book.categories %}
+    <p class="author-categories">{% if book.authors %}By {{ book.authors }}{% endif %}{% if book.categories %}{% if book.authors %}• {% endif %}<em>{{ book.categories }}</em>{% endif %}</p>
+    {% endif %}
+    {% if book.description %}<blockquote class="description">{{ book.description }}</blockquote>{% endif %}
+  </div>
+</article>
+{% endfor %}
