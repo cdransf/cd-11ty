@@ -8603,5 +8603,29 @@
     "thumbnail": "https://books.google.com/books/content?id=SEcdDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Evicted.html?hl=&id=SEcdDgAAQBAJ"
+  },
+  {
+    "isbn": "9781603587396",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction",
+      "climate"
+    ],
+    "title": "Eager",
+    "authors": [
+      "Ben Goldfarb"
+    ],
+    "publishedDate": "2018",
+    "description": "Our modern idea of what a healthy landscape looks like and how it functions is distorted by the fur trade that once trapped out millions of beavers from North America's lakes and rivers. Goldfarb shares the powerful story about one of the world's most influential species. He explains how North America was colonized, how our landscapes have changed over the centuries, and how beavers can help us fight drought, flooding, wildfire, extinction, and the ravages of climate change. -- adapted from jacket",
+    "pageCount": 314,
+    "printType": "BOOK",
+    "categories": [
+      "NATURE"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=n_pcDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Eager.html?hl=&id=n_pcDwAAQBAJ"
   }
 ]
