@@ -8651,5 +8651,29 @@
     "thumbnail": "https://books.google.com/books/content?id=IS6CEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=IS6CEAAAQBAJ"
+  },
+  {
+    "isbn": "9781324074342",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Going Infinite: The Rise and Fall of a New Tycoon",
+    "authors": [
+      "Michael Lewis"
+    ],
+    "publishedDate": "2023-10-03",
+    "description": "AN INSTANT #1 NEW YORK TIMES BESTSELLER One of the New Yorker's Best Books of 2023 • One of Pure Wow's 42 Book to Gift This Year • One of Fortune's Best Crypto Books of 2023 \"Going Infinite is in many ways Lewis at his best. He marshals a complex global story without losing sight of the delightful and revealing human details. He is a world-class noticer.\"—Jesse Armstrong, writer and creator of HBO’s Succession, Times Literary Supplement \"A stupefyingly pleasurable book to read.\" —Gideon Lewis-Kraus, The New Yorker \"Going Infinite is an instant classic.\" — Helen Lewis, The Atlantic \"Going Infinite is wildly entertaining, surprising multiple times on pretty much every page, but it adds up to a sad story, even a tragedy, for its central character and for all the people who lost so much thanks to his actions.\" —John Lanchester, London Review of Books \"Will join Digital Gold as one of the all-time best crypto books.\"—Jeff John Roberts, Fortune \"A wry, engaging writer and a gifted storyteller.\" —Julia M. Klein, Los Angeles Times \"It may be easy to take for granted how entertainingly [Michael Lewis] pulls it off again in Going Infinite.\" —Brett Martin, GQ From the best-selling author of The Big Short and Flash Boys, the story of FTX’s spectacular collapse and the enigmatic founder at its center. When Michael Lewis first met him, Sam Bankman-Fried was the world’s youngest billionaire and crypto’s Gatsby. CEOs, celebrities, and leaders of small countries all vied for his time and cash after he catapulted, practically overnight, onto the Forbes billionaire list. Who was this rumpled guy in cargo shorts and limp white socks, whose eyes twitched across Zoom meetings as he played video games on the side? In Going Infinite Lewis sets out to answer this question, taking readers into the mind of Bankman-Fried, whose rise and fall offers an education in high-frequency trading, cryptocurrencies, philanthropy, bankruptcy, and the justice system. Both psychological portrait and financial roller-coaster ride, Going Infinite is Michael Lewis at the top of his game, tracing the mind-bending trajectory of a character who never liked the rules and was allowed to live by his own—until it all came undone.",
+    "pageCount": 311,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=5rW-EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=5rW-EAAAQBAJ"
   }
 ]
