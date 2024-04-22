@@ -8321,5 +8321,28 @@
     "thumbnail": "https://books.google.com/books/content?id=K_NuAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=K_NuAwAAQBAJ"
+  },
+  {
+    "isbn": "9781250237040",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "The Martian Contingency",
+    "authors": [
+      "Mary Robinette Kowal"
+    ],
+    "publishedDate": "2025-03-18",
+    "description": "The fourth and final title in Mary Robinette Kowal’s Lady Astronaut series! “Kowal masters both science and historical accuracy in this alternate history adventure.”—Andy Weir, author of The Martian, on The Calculating Stars Years after a meteorite strike obliterated Washington, D.C.—triggering an extinction-level global warming event—Earth’s survivors have started an international effort to establish homes on space stations and the Moon. The next step – Mars. Elma York, the Lady Astronaut, lands on the Red Planet, optimistic about preparing for the first true wave of inhabitants. The mission objective is more than just building the infrastructure of a habitat – they are trying to preserve the many cultures and nuances of life on Earth without importing the hate. But from the moment she arrives, something is off. Disturbing signs hint at a hidden disaster during the First Mars Expedition that never made it into the official transcript. As Elma and her crew try to investigate, they face a wall of silence and obfuscation. Their attempts to build a thriving Martian community grind to a halt. What you don’t know CAN harm you. And if the truth doesn’t come to light, the ripple effects could leave humanity stranded on a dying Earth...",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=evv_EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Martian_Contingency.html?hl=&id=evv_EAAAQBAJ"
   }
 ]
