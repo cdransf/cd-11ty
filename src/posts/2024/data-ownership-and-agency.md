@@ -30,6 +30,8 @@ The baseline approach to the internet at this point should be that the companies
 
 Put your guard up, cede less and [work towards a better web](https://coryd.dev/posts/2024/towards-a-quieter-friendlier-web/).
 
+{% render "partials/banners/github.liquid", url: 'https://github.com/ai-robots-txt/ai.robots.txt' %}
+
 [^1]: I send data to ListenBrainz and Last.fm but Last.fm's ownership, age and general state of maintenance or lack thereof makes me nervous.
 [^2]: I'm not going to trust GoodReads — I'll reference it. The data itself is simple enough to stored.
 [^3]: Ok — I don't own the hardware, but I'm going to avoid that rabbit hole for the sake of getting my thoughts out here.
