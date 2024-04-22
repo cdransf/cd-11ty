@@ -9617,5 +9617,29 @@
     "thumbnail": "https://books.google.com/books/content?id=bqfbyQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/What_Lies_Between_Us.html?hl=&id=bqfbyQEACAAJ"
+  },
+  {
+    "isbn": "9780369742032",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi",
+      "thriller"
+    ],
+    "title": "The Marriage Act",
+    "authors": [
+      "John Marrs"
+    ],
+    "publishedDate": "2023-05-02",
+    "description": "What if marriage was the law? Dare you disobey? Black Mirror meets thriller with a dash of Naomi Alderman’s The Power in this dark, high-concept novel by the bestselling author of The One. Britain. The near-future. A right-wing government believes it has the answer to society’s ills—the Sanctity of Marriage Act, which actively encourages marriage as the norm, punishing those who choose to remain single. But four couples are about to discover just how impossible relationships can be when the government is monitoring every aspect of our personal lives—monitoring every word, every minor disagreement…and will use every tool in its arsenal to ensure everyone will love, honor and obey.",
+    "pageCount": 473,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=tjOUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=tjOUEAAAQBAJ"
   }
 ]
