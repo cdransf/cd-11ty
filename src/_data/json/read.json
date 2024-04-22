@@ -9523,5 +9523,28 @@
     "thumbnail": "https://books.google.com/books/content?id=n7JfDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=n7JfDwAAQBAJ"
+  },
+  {
+    "isbn": "9789393701688",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Meru",
+    "authors": [
+      "S. B. Divya"
+    ],
+    "publishedDate": "2023-02-13",
+    "description": "One woman and her pilot are about to change the future of the species in an epic space opera about aspiration, compassion, and redemption by Hugo and Nebula Award finalist S.B. Divya. For five centuries, human life has been restricted to Earth, while posthuman descendants called alloys freely explore the galaxy. But when the Earthlike planet of Meru is discovered, two unlikely companions venture forth to test the habitability of this unoccupied new world and the future of human-alloy relations. For Jayanthi, the adopted human child of alloy parents, it's an opportunity to rectify the ancient reputation of her species as avaricious and destructive, and to give humanity a new place in the universe. For Vaha, Jayanthi's alloy pilot, it's a daunting yet irresistible adventure to find success as an individual. As the journey challenges their resolve in unexpected ways, the two form a bond that only deepens with their time alone on Meru. But how can Jayanthi succeed at freeing humanity from its past when she and Vaha have been set up to fail? Against all odds, hope is human, too.",
+    "pageCount": 450,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=DOWnEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Meru.html?hl=&id=DOWnEAAAQBAJ"
   }
 ]
