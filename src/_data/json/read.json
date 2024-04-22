@@ -8982,5 +8982,25 @@
     "thumbnail": "https://books.google.com/books/content?id=GTRQDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=GTRQDwAAQBAJ"
+  },
+  {
+    "isbn": "0063012952",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Lost Girls",
+    "authors": [
+      "Robert Kolker"
+    ],
+    "publishedDate": "2020-01-28",
+    "description": "New York Times Bestseller Soon to be a Netflix film. The bestselling account of the lives of five young women whose fates converged in the perplexing case of the Long Island Serial Killer. Now updated, with a new afterword by the author. \"Rich, tragic...monumental...true-crime reporting at its best.\"--Washington Post One late spring evening in 2010, Shannan Gilbert--after running through the oceanfront community of Oak Beach screaming for her life--went missing. No one who had heard of her disappearance thought much about what had happened to the twenty-four-year-old: she was a Craigslist escort who had been fleeing a scene--of what, no one could be sure. The Suffolk County police, too, seemed to have paid little attention--until seven months later, when an unexpected discovery in a bramble alongside a nearby highway turned up four bodies, all evenly spaced, all wrapped in burlap. But none of them Shannan's. There was Maureen Brainard-Barnes, last seen at Penn Station in Manhattan three years earlier, and Melissa Barthelemy, last seen in the Bronx in 2009. There was Megan Waterman, last seen leaving a hotel in Hauppauge, Long Island, just a month after Shannon's disappearance in 2010, and Amber Lynn Costello, last seen leaving a house in West Babylon a few months later that same year. Like Shannan, all four women were petite, in their twenties, and had come from out of town to work as escorts, and they all had advertised on Craigslist and its competitor, Backpage. Lost Girls is a portrait of unsolved murders in an idyllic part of America, of the underside of the Internet, and of the secrets we keep without admitting to ourselves that we keep them. Long considered \"one of the best true-crime books of all time\" (Time), this edition is now updated, with an afterword about developments in the case, including the shocking fate of Mari Gilbert, Shannan's mother, for whom this case became the crusade of a lifetime.",
+    "pageCount": 432,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=yAnwygEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Lost_Girls.html?hl=&id=yAnwygEACAAJ"
   }
 ]
