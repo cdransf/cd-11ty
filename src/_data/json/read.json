@@ -9151,5 +9151,30 @@
     "thumbnail": "https://books.google.com/books/content?id=aWLFEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=aWLFEAAAQBAJ"
+  },
+  {
+    "isbn": "9781324036678",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "development",
+      "nonfiction"
+    ],
+    "title": "Against Technoableism: Rethinking Who Needs Improvement (A Norton Short)",
+    "authors": [
+      "Ashley Shew"
+    ],
+    "publishedDate": "2023-09-19",
+    "description": "A manifesto exploding what we think we know about disability, and arguing that disabled people are the real experts when it comes to technology and disability. When bioethicist and professor Ashley Shew became a self-described “hard-of-hearing chemobrained amputee with Crohn’s disease and tinnitus,” there was no returning to “normal.” Suddenly well-meaning people called her an “inspiration” while grocery shopping or viewed her as a needy recipient of technological wizardry. Most disabled people don’t want what the abled assume they want—nor are they generally asked. Almost everyone will experience disability at some point in their lives, yet the abled persistently frame disability as an individual’s problem rather than a social one. In a warm, feisty voice and vibrant prose, Shew shows how we can create better narratives and more accessible futures by drawing from the insights of the cross-disability community. To forge a more equitable world, Shew argues that we must eliminate “technoableism”—the harmful belief that technology is a “solution” for disability; that the disabled simply await being “fixed” by technological wizardry; that making society more accessible and equitable is somehow a lesser priority. This badly needed introduction to disability expertise considers mobility devices, medical infrastructure, neurodivergence, and the crucial relationship between disability and race. The future, Shew points out, is surely disabled—whether through changing climate, new diseases, or even through space travel. It’s time we looked closely at how we all think about disability technologies and learn to envision disabilities not as liabilities, but as skill sets enabling all of us to navigate a challenging world.",
+    "pageCount": 132,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=goGpEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=goGpEAAAQBAJ"
   }
 ]
