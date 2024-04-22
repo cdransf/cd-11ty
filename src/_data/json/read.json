@@ -9273,5 +9273,31 @@
     "thumbnail": "https://books.google.com/books/content?id=uGtYEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Right_to_Repair.html?hl=&id=uGtYEAAAQBAJ"
+  },
+  {
+    "isbn": "9781608469185",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "economics",
+      "labor",
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Subterranean Fire",
+    "authors": [
+      "Sharon Smith"
+    ],
+    "publishedDate": "2018-07-17",
+    "description": "“A concise, well-written history of U.S. working-class struggle and radicalism” from the author of Women and Socialism: Class, Race, and Capital (Solidarity). Smith explores how the connection between the U.S. labor movement and the Democratic Party, with its extensive corporate ties, has repeatedly held back working-class struggles. And she closely examines the role of the labor movement in the 2004 presidential election, tracing the shrinking electoral influence of organized labor and the failure of labor-management cooperation, “business unionism,” and reliance on the Democrats to deliver any real gains. “Sharon Smith brings that history to life once again, blasting through the myths of the working class that Trump-era narratives cling to in order to connect us once again to the possibility of building broad solidarity.” —Sarah Jaffe, author of Work Won’t Love You Back “A veteran worker-intellectual brilliantly addresses the crisis of the labor movement, skewering those who believe that renewal can come from the top down, and encouraging those who are fighting to rebuild it from the bottom up.” —Mike Davis, author of Planet of Slums",
+    "pageCount": 384,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=8i9ZDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=8i9ZDwAAQBAJ"
   }
 ]
