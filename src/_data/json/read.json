@@ -9569,5 +9569,30 @@
     "thumbnail": "https://books.google.com/books/content?id=HjmvtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Good_Samaritan.html?hl=&id=HjmvtAEACAAJ"
+  },
+  {
+    "isbn": "9780385669528",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi",
+      "fantasy",
+      "horror"
+    ],
+    "title": "The Passage",
+    "authors": [
+      "Justin Cronin"
+    ],
+    "publishedDate": "2010-06-08",
+    "description": "The Andromeda Strain meets The Stand in this startling and stunning thriller that brings to life a unique vision of the apocalypse and plays brilliantly with vampire mythology, revealing what becomes of human society when a top-secret government experiment spins wildly out of control. At an army research station in Colorado, an experiment is being conducted by the U.S. Government: twelve men are exposed to a virus meant to weaponize the human form by super-charging the immune system. But when the experiment goes terribly wrong, terror is unleashed. Amy, a young girl abandoned by her mother and set to be the thirteenth test subject, is rescued by Brad Wolgast, the FBI agent who has been tasked with handing her over, and together they escape to the mountains of Oregon. As civilization crumbles around them, Brad and Amy struggle to keep each other alive, clinging to hope and unable to comprehend the nightmare that approaches with great speed and no mercy. . .",
+    "pageCount": 785,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=4E3cp9P_SskC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Passage.html?hl=&id=4E3cp9P_SskC"
   }
 ]
