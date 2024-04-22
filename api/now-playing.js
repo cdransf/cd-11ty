@@ -32,6 +32,7 @@ const emojiMap = (genre, artist) => {
   if (normalizedArtist === "taylor swift") return "👸🏼";
   if (normalizedArtist === "the mars volta") return "💡😮";
   if (normalizedArtist === "thrice") return "👨‍🎨🚑";
+  if (normalizedArtist === "tom waits") return "🤹🏻"
   if (normalizedArtist === "webbed wing") return "🤡";
 
   // early return for bad input
