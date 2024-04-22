@@ -9477,5 +9477,28 @@
     "thumbnail": "https://books.google.com/books/content?id=01aMEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Ascension.html?hl=&id=01aMEAAAQBAJ"
+  },
+  {
+    "isbn": "9780316452540",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Children of Ruin",
+    "authors": [
+      "Adrian Tchaikovsky"
+    ],
+    "publishedDate": "2019-05-14",
+    "description": "The astonishing sequel to Children of Time, the award-winning novel of humanity's battle for survival on a terraformed planet. Thousands of years ago, Earth's terraforming program took to the stars. On the world they called Nod, scientists discovered alien life -- but it was their mission to overwrite it with the memory of Earth. Then humanity's great empire fell, and the program's decisions were lost to time. Aeons later, humanity and its new spider allies detected fragmentary radio signals between the stars. They dispatched an exploration vessel, hoping to find cousins from old Earth. But those ancient terraformers woke something on Nod better left undisturbed.",
+    "pageCount": 493,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=NtNsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=NtNsDwAAQBAJ"
   }
 ]
