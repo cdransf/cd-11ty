@@ -9351,5 +9351,32 @@
     "thumbnail": "https://books.google.com/books/content?id=TkKSDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=TkKSDwAAQBAJ"
+  },
+  {
+    "isbn": "9781604865691",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "labor",
+      "nonfiction"
+    ],
+    "title": "Labor Law for the Rank & Filer",
+    "authors": [
+      "Staughton Lynd",
+      "Daniel Gross"
+    ],
+    "publishedDate": "2011-06-01",
+    "description": "Have you ever felt your blood boil at work but lacked the tools to fight back and win? Or have you acted together with your co-workers, made progress, but wondered what to do next? If you are in a union, do you find that it operates top-down just like the boss and ignores the will of its members? Labor Law for the Rank and Filer: Building Solidarity While Staying Clear of the Law is a guerrilla legal handbook for workers in a precarious global economy. It demonstrates how a powerful model of organizing called “solidarity unionism” can help workers avoid the pitfalls of the legal system and use direct action to win. Blending cutting-edge legal strategies for winning justice at work with a theory of dramatic social change from below, Staughton Lynd and Daniel Gross deliver a practical guide for making work better while reinvigorating the labor movement. The book examines specific cases concerning fundamental labor rights and includes a section on tactics and principles of practicing solidarity unionism. Illustrative stories of workers’ struggles make the legal principles come alive. The New York Times has reported on the book’s importance in recent and ongoing labor organizing in the tech industry—for example among employees of Google, Kickstarter, and Uber, whose union campaigns were influenced by ideas gleaned from Labor Law for the Rank and Filer. Meredith Whittaker, a former Google research scientist who was one of the organizers of the 2018 Google employee walkout, said that the book has been “incredibly helpful in thinking through options for action, ways of building collective power, and giving workers who often aren’t familiar with labor law some working knowledge that can guide decision making.”",
+    "pageCount": 129,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=dbdHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=dbdHEAAAQBAJ"
   }
 ]
