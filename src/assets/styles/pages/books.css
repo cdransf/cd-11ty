@@ -69,6 +69,7 @@
     align-items: start;
 
     & picture {
+      display: block;
       margin-bottom: var(--sizing-md);
     }
 
