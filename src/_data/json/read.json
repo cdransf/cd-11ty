@@ -8822,5 +8822,28 @@
     "thumbnail": "https://books.google.com/books/content?id=zm1zEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=zm1zEAAAQBAJ"
+  },
+  {
+    "isbn": "9781631680687",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Without a Doubt",
+    "authors": [
+      "Marcia Clark"
+    ],
+    "publishedDate": "2016-04-28",
+    "description": "In \"a mesmerizing account of the trial and of her complicated life before she entered O.J. Hell\" (\"The Boston Globe\"), Marcia Clark takes readers inside her head and her heart to tell a story that is both sweeping and deeply personal--and shocking in its honesty. of photos.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=C16UDAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Without_a_Doubt.html?hl=&id=C16UDAEACAAJ"
   }
 ]
