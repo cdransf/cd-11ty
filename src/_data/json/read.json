@@ -9248,5 +9248,30 @@
     "thumbnail": "https://books.google.com/books/content?id=9QXTDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Consent_of_the_Networked.html?hl=&id=9QXTDQAAQBAJ"
+  },
+  {
+    "isbn": "9781108837651",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "The Right to Repair",
+    "authors": [
+      "Aaron Perzanowski"
+    ],
+    "publishedDate": "2022-02-08",
+    "description": "The Right to Repair reveals how companies stop us from fixing our devices and explains how we can fight back.",
+    "pageCount": 367,
+    "printType": "BOOK",
+    "categories": [
+      "Law"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=uGtYEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Right_to_Repair.html?hl=&id=uGtYEAAAQBAJ"
   }
 ]
