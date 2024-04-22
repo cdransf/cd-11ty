@@ -9176,5 +9176,30 @@
     "thumbnail": "https://books.google.com/books/content?id=goGpEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=goGpEAAAQBAJ"
+  },
+  {
+    "isbn": "9780745348216",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "Let Them Eat Crypto",
+    "authors": [
+      "Peter Howson"
+    ],
+    "publishedDate": "2023-10-20",
+    "description": "A shocking exposé of the huge social, political and environmental costs of cryptocurrencies",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=Cl-5zwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Let_Them_Eat_Crypto.html?hl=&id=Cl-5zwEACAAJ"
   }
 ]
