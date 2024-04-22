@@ -17,6 +17,7 @@ export default async function () {
       dateAdded: book?.['dateStarted'] || book?.['dateFinished'],
       status: book['status'],
       tags: book['tags'],
+      categories: book['categories']?.length > 1 ? book['categories'].join(', ') : book['categories']?.[0],
       type: 'book',
     }
   })

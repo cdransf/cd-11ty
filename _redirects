@@ -82,6 +82,7 @@
 /mastodon https://social.lol/@cory 301!
 /coffee https://www.buymeacoffee.com/cory 301!
 /speedlify https://speedlify.coryd.dev 301!
+/books/want-to-read/ /books/want-to-read/0/ 200
 
 # netlify app domain
 https://cdme.netlify.app https://coryd.dev 301!

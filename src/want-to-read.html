@@ -1,0 +1,25 @@
+---
+title: Want to read • Books
+layout: default
+pagination:
+  data: collections.booksToRead
+  alias: books
+  size: 30
+permalink: "/books/want-to-read/{{ pagination.pageNumber }}/index.html"
+---
+{% if pagination.pageNumber == 0 %}
+<h2 class="page-header">Want to read</h2>
+<p>These are books I want to read, sorted in alphabetical order. As one would expect, it will change as I navigate through and add to it.</p>
+<hr class="large-spacing" />
+{% endif %}
+<ul class="link-list reduced-spacing">
+  {% for book in pagination.items %}
+    <li>
+      <a href="{{ book.url }}" title="{{ book.title | escape }}">
+        <strong>{{ book.title }}</strong>
+      </a>
+      {% if book.authors %}by {{ book.authors }}{% endif %}{% if book.categories %} • <em>{{ book.categories }}</em>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% render "partials/paginator.liquid", pagination:pagination %}

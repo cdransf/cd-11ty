@@ -143,10 +143,10 @@ hr {
   height: 1px;
   background-color: var(--gray-light);
   border: 0;
-}
 
-hr.large-spacing {
-  margin: var(--sizing-base) 0;
+  &.large-spacing {
+    margin: var(--sizing-base) 0;
+  }
 }
 
 /* tables */

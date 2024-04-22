@@ -110,6 +110,8 @@ export const tagsSortedByCount = (collection) => {
 
 export const links = (collection) => collection.getFilteredByGlob('src/links/**/*.*').reverse()
 
+export const booksToRead = (collection) => collection.getAll()[0].data.books.filter(book => book.status === 'want to read').sort((a, b) => a['title'].toLowerCase().localeCompare(b['title'].toLowerCase()))
+
 export const postStats = (collection) => {
   const oneDayMilliseconds = 1000 * 60 * 60 * 24
   const statsObject = {
