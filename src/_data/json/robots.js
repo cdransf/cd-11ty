@@ -17,6 +17,7 @@ export default [
   'Google-Extended',
   'GoogleOther',
   'GPTBot',
+  'img2dataset',
   'ImagesiftBot',
   'magpie-crawler',
   'Meltwater',
