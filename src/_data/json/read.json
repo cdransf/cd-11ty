@@ -9378,5 +9378,31 @@
     "thumbnail": "https://books.google.com/books/content?id=dbdHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=dbdHEAAAQBAJ"
+  },
+  {
+    "isbn": "9781641606615",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "books",
+      "music",
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Top Eight",
+    "authors": [
+      "Michael Tedder"
+    ],
+    "publishedDate": "2023-08-15",
+    "description": "\"A brilliant and addictive chronicle of a pop explosion that helped shape our moment. An absolute delight to read.\" —Rob Sheffield, bestselling author of Love is a Mix Tape, Dreaming the Beatles, and other books In extensive interviews with scene pioneers and mainstays including Chris Carrabba (Dashboard Confessional), Geoff Rickly (Thursday), Frank Iero (My Chemical Romance), Gabe Saporta (Midtown/Cobra Starship), and Max Bemis (Say Anything), veteran music journalist Michael Tedder has crafted a once-in-a-generation exploration of emo and The Scene that is as forthright as it is tenderly nostalgic, taking to task the elements of toxic masculinity and crass consumerism that bled out of the early 2000s cultural milieu and ultimately led to the implosion of emo's first home and the best social media network, MySpace. When MySpace thrived, the Internet was still fun. Top Eight recalls the excitement and freedom of the era, an unprecedented time when a generation of fans were able to connect directly with the bands and musicians they idolized, from Colbie Caillat to Lil Jon. MySpace changed everything, and Top Eight gives major voices of the era the chance to tell us why it couldn't last.",
+    "pageCount": 384,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=wuxkEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=wuxkEAAAQBAJ"
   }
 ]
