@@ -8724,5 +8724,29 @@
     "thumbnail": "https://books.google.com/books/content?id=KyipEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=KyipEAAAQBAJ"
+  },
+  {
+    "isbn": "9781541602588",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "history",
+      "nonfiction"
+    ],
+    "title": "Beyond the Wall",
+    "authors": [
+      "Katja Hoyer"
+    ],
+    "publishedDate": "2023-09-05",
+    "description": "AN INTERNATIONAL BESTSELLER • From the ashes of the Second World War to the fall of the Berlin Wall, the definitive history of East Germany, \"a fascinating, sparkling book, filled with insights\" (Peter Frankopan) In 1990, a country disappeared. When the Iron Curtain fell, East Germany ceased to be. For over forty years, from the ruin of the Second World War to the cusp of a new millennium, the German Democratic Republic presented a radically different Germany than what had come before and what exists today. Socialist solidarity, secret police, central planning, barbed wire: this was a Germany forged on the fault lines of ideology and geopolitics. In Beyond the Wall, acclaimed historian Katja Hoyer sets aside the usual Cold War caricatures of the GDR to offer a kaleidoscopic new vision of this vanished country, revealing the rich political, social, and cultural landscape that existed amid oppression and hardship. Drawing on a vast array of never-before-seen interviews and documents, this is the definitive history of the other Germany, beyond the Wall.",
+    "pageCount": 489,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=pvyoEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=pvyoEAAAQBAJ"
   }
 ]
