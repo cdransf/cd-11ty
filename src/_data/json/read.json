@@ -8627,5 +8627,29 @@
     "thumbnail": "https://books.google.com/books/content?id=n_pcDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Eager.html?hl=&id=n_pcDwAAQBAJ"
+  },
+  {
+    "isbn": "9781718503137",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Hacks, Leaks, and Revelations",
+    "authors": [
+      "Micah Lee"
+    ],
+    "publishedDate": "2024-01-09",
+    "description": "Data-science investigations have brought journalism into the 21st century, and—guided by The Intercept’s infosec expert Micah Lee— this book is your blueprint for uncovering hidden secrets in hacked datasets. Unlock the internet’s treasure trove of public interest data with Hacks, Leaks, and Revelations by Micah Lee, an investigative reporter and security engineer. This hands-on guide blends real-world techniques for researching large datasets with lessons on coding, data authentication, and digital security. All of this is spiced up with gripping stories from the front lines of investigative journalism. Dive into exposed datasets from a wide array of sources: the FBI, the DHS, police intelligence agencies, extremist groups like the Oath Keepers, and even a Russian ransomware gang. Lee’s own in-depth case studies on disinformation-peddling pandemic profiteers and neo-Nazi chatrooms serve as blueprints for your research. Gain practical skills in searching massive troves of data for keywords like “antifa” and pinpointing documents with newsworthy revelations. Get a crash course in Python to automate the analysis of millions of files. You will also learn how to: Master encrypted messaging to safely communicate with whistleblowers. Secure datasets over encrypted channels using Signal, Tor Browser, OnionShare, and SecureDrop. Harvest data from the BlueLeaks collection of internal memos, financial records, and more from over 200 state, local, and federal agencies. Probe leaked email archives about offshore detention centers and the Heritage Foundation. Analyze metadata from videos of the January 6 attack on the US Capitol, sourced from the Parler social network. We live in an age where hacking and whistleblowing can unearth secrets that alter history. Hacks, Leaks, and Revelations is your toolkit for uncovering new stories and hidden truths. Crack open your laptop, plug in a hard drive, and get ready to change history.",
+    "pageCount": 546,
+    "printType": "BOOK",
+    "categories": [
+      "Computers"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=IS6CEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=IS6CEAAAQBAJ"
   }
 ]
