@@ -8775,5 +8775,28 @@
     "thumbnail": "https://books.google.com/books/content?id=CrtoNFTuPwwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Merchants_of_Doubt.html?hl=&id=CrtoNFTuPwwC"
+  },
+  {
+    "isbn": "9781101902752",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "A Mother's Reckoning",
+    "authors": [
+      "Sue Klebold"
+    ],
+    "publishedDate": "2016",
+    "description": "\"The mother of one of the two shooters at Columbine High School draws on personal recollections, journal entries and video recordings to piece together what led to her son's unpredicted breakdown and share insights into how other families might recognize warning signs,\"--NoveList.",
+    "pageCount": 337,
+    "printType": "BOOK",
+    "categories": [
+      "Autobiographies"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=8TTZCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/A_Mother_s_Reckoning.html?hl=&id=8TTZCwAAQBAJ"
   }
 ]
