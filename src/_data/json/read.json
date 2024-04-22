@@ -8274,5 +8274,29 @@
     "thumbnail": "https://books.google.com/books/content?id=B2CHDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=B2CHDgAAQBAJ"
+  },
+  {
+    "isbn": "9781444725018",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "fantasy",
+      "horror"
+    ],
+    "title": "Red Moon",
+    "authors": [
+      "Benjamin Percy"
+    ],
+    "publishedDate": "2013-05-09",
+    "description": "*Benjamin Percy's brand new speculative thriller, The Ninth Metal, is available to pre-order now* Every teenage girl thinks she's different. When government agents kick down Claire Forrester's front door and murder her parents, Claire realises just how different she is. Patrick Gamble was nothing special until the day he got on a plane and, hours later, stepped off it, the only passenger left alive. A hero. President Chase Williams has vowed to eradicate the menace. Unknown to the electorate, however, he is becoming the very thing he has sworn to destroy. Each of them is caught up in a war that so far has been controlled with laws and violence and drugs. But an uprising is about to leave them damaged, lost, and tied to one another for ever. The night of the red moon is coming, when an unrecognizable world will emerge, and the battle for humanity will begin.",
+    "pageCount": 344,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ffN3pkcqYGAC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Red_Moon.html?hl=&id=ffN3pkcqYGAC"
   }
 ]
