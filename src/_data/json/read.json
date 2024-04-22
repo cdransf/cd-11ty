@@ -9689,5 +9689,30 @@
     "thumbnail": "https://books.google.com/books/content?id=SuBuEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=SuBuEAAAQBAJ"
+  },
+  {
+    "isbn": "9780593239926",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "Poverty, by America",
+    "authors": [
+      "Matthew Desmond"
+    ],
+    "publishedDate": "2023-03-21",
+    "description": "#1 NEW YORK TIMES BESTSELLER • The Pulitzer Prize–winning author of Evicted reimagines the debate on poverty, making a “provocative and compelling” (NPR) argument about why it persists in America: because the rest of us benefit from it. A BEST BOOK OF THE YEAR: The New Yorker, The New York Times Book Review, NPR, Oprah Daily, Time, The Star Tribune, Vulture, The Christian Science Monitor, Chicago Public Library, Esquire, California Review of Books, She Reads, Library Journal “Urgent and accessible . . . Its moral force is a gut punch.”—The New Yorker Longlisted for the Inc. Non-Obvious Book Award • Longlisted for the Andrew Carnegie Medal The United States, the richest country on earth, has more poverty than any other advanced democracy. Why? Why does this land of plenty allow one in every eight of its children to go without basic necessities, permit scores of its citizens to live and die on the streets, and authorize its corporations to pay poverty wages? In this landmark book, acclaimed sociologist Matthew Desmond draws on history, research, and original reporting to show how affluent Americans knowingly and unknowingly keep poor people poor. Those of us who are financially secure exploit the poor, driving down their wages while forcing them to overpay for housing and access to cash and credit. We prioritize the subsidization of our wealth over the alleviation of poverty, designing a welfare state that gives the most to those who need the least. And we stockpile opportunity in exclusive communities, creating zones of concentrated riches alongside those of concentrated despair. Some lives are made small so that others may grow. Elegantly written and fiercely argued, this compassionate book gives us new ways of thinking about a morally urgent problem. It also helps us imagine solutions. Desmond builds a startlingly original and ambitious case for ending poverty. He calls on us all to become poverty abolitionists, engaged in a politics of collective belonging to usher in a new age of shared prosperity and, at last, true freedom.",
+    "pageCount": 305,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=n4t2EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=n4t2EAAAQBAJ"
   }
 ]
