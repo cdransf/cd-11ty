@@ -9762,5 +9762,29 @@
     "thumbnail": "https://books.google.com/books/content?id=LnqAPMlTfVMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=LnqAPMlTfVMC"
+  },
+  {
+    "isbn": "9780063043060",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi",
+      "thriller"
+    ],
+    "title": "The Endless Vessel",
+    "authors": [
+      "Charles Soule"
+    ],
+    "publishedDate": "2023-06-06",
+    "description": "Combining the wonder of The Midnight Library , the inventiveness of Ready Player One, and the artistry of Cloud Atlas, this novel by the bestselling author of The Oracle Year and Anyone explores the way we’re all connected—and what can happen when we lose our capacity for joy. A few years from now, in a world similar to ours, there exists a sort of “depression plague” that people refer to simply as “The Grey.” No one can predict whom it will afflict, or how, but once infected, there’s no coming back. A young Hong Kong based scientist, Lily Barnes, is trying to maintain her inner light in an increasingly dark world. The human race is dwindling, and people fighting to push forward are increasingly rare. One day, Lily comes across something that seems to be addressing her directly, calling to her, asking her to follow a path to whatever lies at its end. Is this the Endless Vessel to happiness? She leaves her life behind and sets out through time and space to find out. From its opening heart-stopping scene in the present day at the Louvre in Paris, through the earthly meetings between Lily and her loved ones past and present, to a shocking and satisfying conclusion in a truly enchanted forest, Charles Soule has channeled history, science and drama to create a story for the ages—a story of hope and love and possibility. This is a novel you will not soon forget.",
+    "pageCount": 488,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=GjSEEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=GjSEEAAAQBAJ"
   }
 ]
