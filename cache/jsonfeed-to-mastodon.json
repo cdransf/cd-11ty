@@ -12784,5 +12784,16 @@
       "https://social.lol/users/cory/statuses/112316815907563621"
     ],
     "lastTootTimestamp": 1713818602166
+  },
+  "https://coryd.dev/posts/2024/data-ownership-and-agency/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9kYXRhLW93bmVyc2hpcC1hbmQtYWdlbmN5Lw==",
+    "title": "📝: Data ownership and agency",
+    "url": "https://coryd.dev/posts/2024/data-ownership-and-agency/",
+    "content_text": "📝: Data ownership and agency #Tech #AI #Privacy #SocialMedia https://coryd.dev/posts/2024/data-ownership-and-agency/",
+    "date_published": "Mon, 22 Apr 2024 22:44:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112317129289409429"
+    ],
+    "lastTootTimestamp": 1713823383984
   }
 }
