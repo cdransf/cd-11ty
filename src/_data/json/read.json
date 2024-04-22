@@ -8891,5 +8891,28 @@
     "thumbnail": "https://books.google.com/books/content?id=NOP1CQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=NOP1CQAAQBAJ"
+  },
+  {
+    "isbn": "9780446345217",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "The Executioner's Song",
+    "authors": [
+      "Norman Mailer"
+    ],
+    "publishedDate": "1980",
+    "description": "A reconstruction of the crime and fate of Gary Gilmore, the convicted murderer who sought his own execution in Utah where he was imprisoned, is based on taped interviews with relatives, friends, lawyers, and law-enforcement officials",
+    "pageCount": 1024,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=2WM9PgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Executioner_s_Song.html?hl=&id=2WM9PgAACAAJ"
   }
 ]
