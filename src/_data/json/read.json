@@ -8390,5 +8390,28 @@
     "thumbnail": "https://books.google.com/books/content?id=jvoyDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=jvoyDwAAQBAJ"
+  },
+  {
+    "isbn": "9781250236487",
+    "dateAdded": "2024-04-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "The Relentless Moon",
+    "authors": [
+      "Mary Robinette Kowal"
+    ],
+    "publishedDate": "2020-07-14",
+    "description": "Finalist 2021 Hugo Award for Best Novel! Finalist 2021 Hugo Award for Best Series! A 2021 Locus Award Finalist! Mary Robinette Kowal continues her Hugo and Nebula award-winning Lady Astronaut series, following The Calculating Stars and The Fated Sky, with The Relentless Moon. The Earth is coming to the boiling point as the climate disaster of the Meteor strike becomes more and more clear, but the political situation is already overheated. Riots and sabotage plague the space program. The IAC’s goal of getting as many people as possible off Earth before it becomes uninhabitable is being threatened. Elma York is on her way to Mars, but the Moon colony is still being established. Her friend and fellow Lady Astronaut Nicole Wargin is thrilled to be one of those pioneer settlers, using her considerable flight and political skills to keep the program on track. But she is less happy that her husband, the Governor of Kansas, is considering a run for President. At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+    "pageCount": 462,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=iQKrDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=iQKrDwAAQBAJ"
   }
 ]
