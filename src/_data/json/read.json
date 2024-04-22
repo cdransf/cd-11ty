@@ -8914,5 +8914,27 @@
     "thumbnail": "https://books.google.com/books/content?id=2WM9PgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/The_Executioner_s_Song.html?hl=&id=2WM9PgAACAAJ"
+  },
+  {
+    "isbn": "9781622095841",
+    "dateAdded": "2024-04-22",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "The Stranger Beside Me",
+    "authors": [
+      "Ann Rule"
+    ],
+    "publishedDate": "2012-11-28",
+    "pageCount": 488,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=zMtMKtg3yI4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Stranger_Beside_Me.html?hl=&id=zMtMKtg3yI4C"
   }
 ]
