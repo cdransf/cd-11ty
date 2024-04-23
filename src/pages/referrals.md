@@ -16,4 +16,5 @@ Referral links for services I use. I save some money, and you do as well if you 
   <li><a onclick="clicky?.log('/referrals','Feedpress referral', 'click')" href="https://feedpress.com/?affid=34370">Feedpress</a></li>
   <li><a onclick="clicky?.log('/referrals','Proton referral', 'click')" href="https://pr.tn/ref/X775YX40Z50G">Proton</a></li>
   <li><a onclick="clicky?.log('/referrals','DigitalOcean referral', 'click')" href="https://m.do.co/c/3635bf99aee2">DigitalOcean</a></li>
+  <li><a onclick=“clicky?.log(‘/referrals’,’Garbage Day referral’, ‘click’)” href=“https://www.garbageday.email/subscribe?ref=4JeD4bFKQE”>Garbage Day newsletter</a></li>
 </ul>
