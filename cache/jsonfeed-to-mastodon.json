@@ -12757,7 +12757,7 @@
     "title": "🎧: My top artists for the week: Witch Vomit @ 52 plays, Acephalix @ 44 plays, NoMeansNo @ 41 plays, blink-182 @ 38 plays, Tom Waits @ 37 plays, Joyce Manor @ 35 plays, Necrot @ 27 plays, Free Throw @ 27 plays #Music",
     "url": "https://coryd.dev/now?ts=2024-16#artists",
     "content_text": "🎧: My top artists for the week: Witch Vomit @ 52 plays, Acephalix @ 44 plays, NoMeansNo @ 41 plays, blink-182 @ 38 plays, Tom Waits @ 37 plays, Joyce Manor @ 35 plays, Necrot @ 27 plays, Free Throw @ 27 plays #Music  https://coryd.dev/now?ts=2024-16#artists",
-    "date_published": "Mon, 15 Apr 2024 08:00:00 GMT",
+    "date_published": "Tue, 16 Apr 2024 08:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112312447133174926"
     ],
@@ -12795,5 +12795,16 @@
       "https://social.lol/users/cory/statuses/112317129289409429"
     ],
     "lastTootTimestamp": 1713823383984
+  },
+  "https://www.theverge.com/2024/4/22/24137296/ghost-newsletter-activitypub-fediverse-support": {
+    "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29tLzIwMjQvNC8yMi8yNDEzNzI5Ni9naG9zdC1uZXdzbGV0dGVyLWFjdGl2aXR5cHViLWZlZGl2ZXJzZS1zdXBwb3J0",
+    "title": "🔗: Newsletter platform Ghost adopts ActivityPub to 'bring back the open web' via The Verge",
+    "url": "https://www.theverge.com/2024/4/22/24137296/ghost-newsletter-activitypub-fediverse-support",
+    "content_text": "🔗: Newsletter platform Ghost adopts ActivityPub to 'bring back the open web' via The Verge #Tech https://www.theverge.com/2024/4/22/24137296/ghost-newsletter-activitypub-fediverse-support",
+    "date_published": "Tue, 23 Apr 2024 01:23:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112318548103287761"
+    ],
+    "lastTootTimestamp": 1713845033359
   }
 }
