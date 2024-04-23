@@ -54,16 +54,16 @@ export default async (request) => {
       artist,
       trackNumber,
       timestamp,
-      genre: artistsMap[artistSanitizedKey(artist)]?.['genre'] || ''
+      genre: artistsMap[artistSanitizedKey]?.['genre'] || ''
     }
 
-    console.log(artistsMap[artistSanitizedKey(artist)])
-    console.log(artistsMap[artistSanitizedKey(artist)]?.['genre'])
-    console.log(artistsMap[artistSanitizedKey(artist)]?.['mbid'])
+    console.log(artistsMap[artistSanitizedKey])
+    console.log(artistsMap[artistSanitizedKey]?.['genre'])
+    console.log(artistsMap[artistSanitizedKey]?.['mbid'])
 
     const scrobbleData = await scrobbles.get(`${weekKey()}`, { type: 'json'})
     const windowData = await scrobbles.get('window', { type: 'json'})
-    const artistUrl = (artistsMap[artistSanitizedKey(artist)]?.['mbid'] && artistsMap[artistSanitizedKey(artist)]?.['mbid'] !== '') ? `http://musicbrainz.org/artist/${artistsMap[artistSanitizedKey(artist)]?.['mbid']}` : `https://musicbrainz.org/search?query=${artist.replace(
+    const artistUrl = (artistsMap[artistSanitizedKey]?.['mbid'] && artistsMap[artistSanitizedKey]?.['mbid'] !== '') ? `http://musicbrainz.org/artist/${artistsMap[artistSanitizedKey]?.['mbid']}` : `https://musicbrainz.org/search?query=${artist.replace(
             /\s+/g,
             '+'
           )}&type=artist`
