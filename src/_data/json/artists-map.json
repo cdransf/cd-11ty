@@ -614,6 +614,11 @@
     "genre": "grindcore",
     "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/full-of-hell.jpg&fit=cover&w=320&h=320"
   },
+  "full-of-hell-&-nothing": {
+    "mbid": "af2373bf-4b18-4e06-954c-ab83946992c9",
+    "genre": "blackgaze",
+    "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/full-of-hell-nothing.jpg&fit=cover&w=320&h=320"
+  },
   "funebrarum": {
     "mbid": "f5a19292-1b45-466b-8732-a80d0eb4eec2",
     "genre": "death metal",
