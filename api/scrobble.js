@@ -56,11 +56,11 @@ export default async (request) => {
       artist,
       trackNumber,
       timestamp,
-      genre: artistsMap?.['genre'] || ''
+      genre: artistsMap[artistSanitizedKey(artist)]?.['genre'] || ''
     }
     const scrobbleData = await scrobbles.get(`${weekKey()}`, { type: 'json'})
     const windowData = await scrobbles.get('window', { type: 'json'})
-    const artistUrl = (artistsMap?.['mbid'] && artistsMap?.['mbid'] !== '') ? `http://musicbrainz.org/artist/${artistsMap?.['mbid']}` : `https://musicbrainz.org/search?query=${artist.replace(
+    const artistUrl = (artistsMap[artistSanitizedKey(artist)]?.['mbid'] && artistsMap[artistSanitizedKey(artist)]?.['mbid'] !== '') ? `http://musicbrainz.org/artist/${artistsMap[artistSanitizedKey(artist)]?.['mbid']}` : `https://musicbrainz.org/search?query=${artist.replace(
             /\s+/g,
             '+'
           )}&type=artist`
