@@ -48,8 +48,6 @@ export default async (request) => {
     const timestamp = DateTime.now()
     const artistsMap = await artists.get('artists-map', { type: 'json' })
     const artistSanitizedKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}`
-    const albumSanitizedKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
-      , '').replace(/\s+/g, '-').toLowerCase())}`
     const trackScrobbleData = {
       track,
       album,
