@@ -999,6 +999,11 @@
     "genre": "death metal",
     "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/mortuary.jpg&fit=cover&w=320&h=320"
   },
+  "mortuous": {
+    "mbid": "b71571b2-cd6f-46ac-9adf-870bf0166d2f",
+    "genre": "death metal",
+    "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/mortuous.jpg&fit=cover&w=320&h=320"
+  },
   "my-bloody-valentine": {
     "mbid": "8ca01f46-53ac-4af2-8516-55a909c0905e",
     "genre": "shoegaze",
