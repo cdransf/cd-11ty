@@ -57,10 +57,6 @@ export default async (request) => {
       genre: artistsMap[artistSanitizedKey]?.['genre'] || ''
     }
 
-    console.log(artistsMap[artistSanitizedKey])
-    console.log(artistsMap[artistSanitizedKey]?.['genre'])
-    console.log(artistsMap[artistSanitizedKey]?.['mbid'])
-
     const scrobbleData = await scrobbles.get(`${weekKey()}`, { type: 'json'})
     const windowData = await scrobbles.get('window', { type: 'json'})
     const artistUrl = (artistsMap[artistSanitizedKey]?.['mbid'] && artistsMap[artistSanitizedKey]?.['mbid'] !== '') ? `http://musicbrainz.org/artist/${artistsMap[artistSanitizedKey]?.['mbid']}` : `https://musicbrainz.org/search?query=${artist.replace(
