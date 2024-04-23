@@ -574,6 +574,11 @@
     "genre": "black metal",
     "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/falls-of-rauros.jpg&fit=cover&w=320&h=320"
   },
+  "fawn-limbs": {
+    "mbid": "91cd46b7-30ef-4b99-a332-89512c02df2e",
+    "genre": "grindcore",
+    "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/fawn-limbs.jpg&fit=cover&w=320&h=320"
+  },
   "fen": {
     "mbid": "1d86a19b-8ddd-448c-a815-4f41350bea53",
     "genre": "atmospheric black metal",
