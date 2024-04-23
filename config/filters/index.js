@@ -228,7 +228,8 @@ export default {
     if (
       normalizedString === 'ios' ||
       normalizedString === 'macos' ||
-      normalizedString === 'rss'
+      normalizedString === 'rss' ||
+      normalizedString === 'ai'
     ) return `#${string}`
     if (!string.includes(' ')) return `#${capitalizeFirstLetter(string)}`
     return `#${string.split(' ').map(s => capitalizeFirstLetter(s)).join('')}`
