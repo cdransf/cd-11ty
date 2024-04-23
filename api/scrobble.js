@@ -47,96 +47,35 @@ export default async (request) => {
     const trackNumber = payload['Metadata']['index']
     const timestamp = DateTime.now()
     const artistsMap = await artists.get('artists-map', { type: 'json' })
-    const albumsMap = await albums.get('albums-map', { type: 'json' })
     const artistSanitizedKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}`
     const albumSanitizedKey = `${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
       , '').replace(/\s+/g, '-').toLowerCase())}`
-    let artistInfo = artistsMap[artistSanitizedKey]
-
-    // if there is no artist blob, populate one
-    if (!artistsMap[artistSanitizedKey]) {
-      const artistRes = await fetch(
-        `https://ws.audioscrobbler.com/2.0/?method=artist.getInfo&api_key=${MUSIC_KEY}&artist=${sanitizeMediaString(artist).replace(/\s+/g, '+').toLowerCase()}&format=json`,
-        {
-          type: "json",
-        }
-      ).then((data) => {
-        if (data.ok) return data.json()
-        throw new Error('Something went wrong with the Last.fm endpoint.');
-      }).catch(err => {
-          console.log(err);
-          return {}
-        });
-      const artistData = artistRes['artist'];
-      const mbid = artistData['mbid'] || ''
-      const genreUrl = `https://musicbrainz.org/ws/2/artist/${mbid}?inc=aliases+genres&fmt=json`;
-      const genreRes = await fetch(genreUrl, {
-        type: "json",
-      }).then((data) => {
-        if (data.ok) return data.json()
-        throw new Error('Something went wrong with the MusicBrainz endpoint.');
-      }).catch(err => {
-        console.log(err);
-        return []
-      });
-      const genre = genreRes['genres']?.sort((a, b) => b.count - a.count)[0]?.['name'] || '';
-      const artistObj = {
-        mbid,
-        genre,
-        image: `https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}.jpg&w=320&h=320&fit=fill`
-      }
-      artistInfo = artistObj
-      artistsMap[artistSanitizedKey] = artistObj
-      await artists.setJSON('artists-map', artistsMap)
-    }
-
-    // if there is no album blob, populate one
-    if (!albumsMap[albumSanitizedKey]) {
-      const albumRes = await fetch(
-        `https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${MUSIC_KEY}&artist=${sanitizeMediaString(artist).replace(/\s+/g, '+').toLowerCase()}&album=${sanitizeMediaString(album).replace(/\s+/g, '+').toLowerCase()}&format=json`,
-        {
-          type: "json",
-        }
-      ).then((data) => {
-        if (data.ok) return data.json()
-        throw new Error('Something went wrong with the Last.fm endpoint.');
-      }).catch(err => {
-          console.log(err);
-          return {}
-        });
-      const mbid = albumRes['album']['mbid'] || ''
-      const albumObj = {
-        mbid,
-        image: `https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/albums/${sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()}-${sanitizeMediaString(album.replace(/[:\/\\,'']+/g
-      , '').replace(/\s+/g, '-').toLowerCase())}.jpg&w=320&h=320&fit=fill`
-      }
-      albumsMap[albumSanitizedKey] = albumObj
-      await albums.setJSON('albums-map', albumsMap)
-    }
-
-    // scrobble logic
     const trackScrobbleData = {
       track,
       album,
       artist,
       trackNumber,
       timestamp,
-      genre: artistInfo?.['genre'] || ''
+      genre: artistsMap?.['genre'] || ''
     }
     const scrobbleData = await scrobbles.get(`${weekKey()}`, { type: 'json'})
     const windowData = await scrobbles.get('window', { type: 'json'})
-    const artistUrl = (artistInfo?.['mbid'] && artistInfo?.['mbid'] !== '') ? `http://musicbrainz.org/artist/${artistInfo?.['mbid']}` : `https://musicbrainz.org/search?query=${artist.replace(
+    const artistUrl = (artistsMap?.['mbid'] && artistsMap?.['mbid'] !== '') ? `http://musicbrainz.org/artist/${artistsMap?.['mbid']}` : `https://musicbrainz.org/search?query=${artist.replace(
             /\s+/g,
             '+'
           )}&type=artist`
+
     await scrobbles.setJSON('now-playing', {...trackScrobbleData, ...{ url: artistUrl }})
+
     let scrobbleUpdate = scrobbleData
     let windowUpdate = windowData;
+
     if (scrobbleUpdate?.['data']) scrobbleUpdate['data'].push(trackScrobbleData)
     if (!scrobbleUpdate?.['data']) scrobbleUpdate = { data: [trackScrobbleData] }
     if (windowData?.['data']) windowUpdate['data'].push(trackScrobbleData)
     if (!windowData?.['data']) windowUpdate = { data: [trackScrobbleData] }
     windowUpdate = { data: filterOldScrobbles(windowUpdate.data) }
+
     await scrobbles.setJSON(`${weekKey()}`, scrobbleUpdate)
     await scrobbles.setJSON('window', windowUpdate)
   }
