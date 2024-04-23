@@ -2,7 +2,7 @@
 date: '2024-04-22T14:44-08:00'
 title: 'Data ownership and agency'
 description: "I've been shuffling more of the data I display and present on my site around recently and I've been thinking about the agency or lack thereof associated with that data."
-tags: ['tech', 'ai', 'privacy', 'social media']
+tags: ['tech', 'AI', 'privacy', 'social media']
 ---
 I've been shuffling more of the data I display and present on my site around recently and I've been thinking about the agency or lack thereof associated with that data.<!-- excerpt -->
 
