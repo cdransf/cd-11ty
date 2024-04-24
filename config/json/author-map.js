@@ -1,4 +1,6 @@
 export default {
+  "https://bradfrost.com": "Brad Frost",
+  "https://www.bradfrost.com": "Brad Frost",
   "https://theverge.com": "The Verge",
   "https://www.theverge.com": "The Verge",
   "https://www.theguardian.com": "The Guardian",
