@@ -11,5 +11,5 @@ These are web feeds, also known as [RSS](https://en.wikipedia.org/wiki/RSS) or [
 
 - Posts ([RSS](https://feedpress.me/coryd) • [JSON](https://feedpress.me/coryd.json)): posts from my site.
 - Links ([RSS](https://feedpress.me/coryd-links) • [JSON](https://feedpress.me/coryd-links.json)): links I've liked.
-- Books ([RSS](https://feedpress.me/coryd-books) • [JSON](https://feedpress.me/coryd-books.json)): books I'm currently reading or have finished recently.
+- Books ([RSS](https://feedpress.me/coryd-books) • [JSON](https://feedpress.me/coryd-books.json)): books I'm currently reading.
 - Movies ([RSS](https://feedpress.me/coryd-movies) • [JSON](https://feedpress.me/coryd-books.json)): movies I've watched recently.
