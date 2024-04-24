@@ -7519,7 +7519,7 @@
   {
     "isbn": "9781982180874",
     "dateAdded": "2024-04-21",
-    "status": "want to read",
+    "status": "started",
     "rating": "unrated",
     "tags": [
       "politics",
@@ -7538,7 +7538,8 @@
     ],
     "thumbnail": "https://books.google.com/books/content?id=hpvEEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
-    "link": "https://play.google.com/store/books/details?id=hpvEEAAAQBAJ"
+    "link": "https://play.google.com/store/books/details?id=hpvEEAAAQBAJ",
+    "dateStarted": "2024-04-23"
   },
   {
     "isbn": "9781101145005",
