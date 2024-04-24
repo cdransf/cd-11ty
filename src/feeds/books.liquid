@@ -3,7 +3,7 @@ layout: null
 eleventyExcludeFromCollections: true
 permalink: /feeds/books
 ---
-{%- assign bookData = books | bookStatus: 'started' -%}
+{%- assign bookData = books | bookStatus: 'started' | reverse -%}
 {% render "partials/feeds/rss.liquid"
   permalink:"/feeds/books"
   title:"Books • Cory Dransfeldt"
