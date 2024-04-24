@@ -12817,5 +12817,16 @@
       "https://social.lol/users/cory/statuses/112324053076231843"
     ],
     "lastTootTimestamp": 1713929032605
+  },
+  "https://bradfrost.com/blog/link/its-the-end-of-the-web-as-we-know-it/": {
+    "id": "aHR0cHM6Ly9icmFkZnJvc3QuY29tL2Jsb2cvbGluay9pdHMtdGhlLWVuZC1vZi10aGUtd2ViLWFzLXdlLWtub3ctaXQv",
+    "title": "🔗: It's the End of the Web as We Know It via Brad Frost",
+    "url": "https://bradfrost.com/blog/link/its-the-end-of-the-web-as-we-know-it/",
+    "content_text": "🔗: It's the End of the Web as We Know It via Brad Frost #AI #Tech https://bradfrost.com/blog/link/its-the-end-of-the-web-as-we-know-it/",
+    "date_published": "Wed, 24 Apr 2024 15:22:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112327513597319436"
+    ],
+    "lastTootTimestamp": 1713981835960
   }
 }
