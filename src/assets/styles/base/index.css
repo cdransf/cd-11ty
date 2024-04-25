@@ -5,7 +5,7 @@ html {
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   background: var(--background-color);
-  margin: 0;
+  accent-color: var(--accent-color)
 }
 
 ::-moz-selection {
