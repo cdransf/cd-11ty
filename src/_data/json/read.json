@@ -9788,5 +9788,25 @@
     "thumbnail": "https://books.google.com/books/content?id=GjSEEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=GjSEEAAAQBAJ"
+  },
+  {
+    "isbn": "9780262378925",
+    "dateAdded": "2024-04-25",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Tor",
+    "authors": [
+      "Ben Collier"
+    ],
+    "publishedDate": "2024",
+    "description": "Through a social history of the Tor network (often known as the \"Dark Web\"), this book develops a rich and novel approach to understanding privacy technologies and their implication in crime, harm, control, and resistance",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Tor.html?hl=&id=L59e0AEACAAJ"
   }
 ]
