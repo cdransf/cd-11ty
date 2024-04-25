@@ -484,7 +484,11 @@ li {
 }
 
 .flex-wrap {
-  flex-wrap: wrap
+  flex-wrap: wrap;
+}
+
+.bottom-explainer {
+  margin-top: var(--sizing-lg);
 }
 
 /* screens: md */
