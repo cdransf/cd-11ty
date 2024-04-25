@@ -12757,7 +12757,7 @@
     "title": "🎧: My top artists for the week: Witch Vomit @ 52 plays, Acephalix @ 44 plays, NoMeansNo @ 41 plays, blink-182 @ 38 plays, Tom Waits @ 37 plays, Joyce Manor @ 35 plays, Necrot @ 27 plays, Free Throw @ 27 plays #Music",
     "url": "https://coryd.dev/now?ts=2024-16#artists",
     "content_text": "🎧: My top artists for the week: Witch Vomit @ 52 plays, Acephalix @ 44 plays, NoMeansNo @ 41 plays, blink-182 @ 38 plays, Tom Waits @ 37 plays, Joyce Manor @ 35 plays, Necrot @ 27 plays, Free Throw @ 27 plays #Music  https://coryd.dev/now?ts=2024-16#artists",
-    "date_published": "Wed, 17 Apr 2024 08:00:00 GMT",
+    "date_published": "Thu, 18 Apr 2024 08:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112312447133174926"
     ],
@@ -12839,5 +12839,24 @@
       "https://social.lol/users/cory/statuses/112328455422041088"
     ],
     "lastTootTimestamp": 1713996207052
+  },
+  "https://512pixels.net/2024/04/ai-overlay-tmp-home-folder-mac-os/": {
+    "id": "aHR0cHM6Ly81MTJwaXhlbHMubmV0LzIwMjQvMDQvYWktb3ZlcmxheS10bXAtaG9tZS1mb2xkZXItbWFjLW9zLw==",
+    "title": "🔗: Logitech’s Mouse Software Now Includes ChatGPT Support, Adds Janky ‘ai_overlay_tmp’ Directory to Users’ Home Folders via Stephen Hackett",
+    "url": "https://512pixels.net/2024/04/ai-overlay-tmp-home-folder-mac-os/",
+    "content_text": "🔗: Logitech’s Mouse Software Now Includes ChatGPT Support, Adds Janky ‘ai_overlay_tmp’ Directory to Users’ Home Folders via Stephen Hackett #Tech #AI https://512pixels.net/2024/04/ai-overlay-tmp-home-folder-mac-os/",
+    "date_published": "Thu, 25 Apr 2024 18:13:00 GMT",
+    "toots": []
+  },
+  "https://www.theverge.com/2024/4/25/24140157/fcc-vote-restore-net-neutrality-rosenworcel-biden": {
+    "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29tLzIwMjQvNC8yNS8yNDE0MDE1Ny9mY2Mtdm90ZS1yZXN0b3JlLW5ldC1uZXV0cmFsaXR5LXJvc2Vud29yY2VsLWJpZGVu",
+    "title": "🔗: FCC votes to restore net neutrality via The Verge",
+    "url": "https://www.theverge.com/2024/4/25/24140157/fcc-vote-restore-net-neutrality-rosenworcel-biden",
+    "content_text": "🔗: FCC votes to restore net neutrality via The Verge #Tech https://www.theverge.com/2024/4/25/24140157/fcc-vote-restore-net-neutrality-rosenworcel-biden",
+    "date_published": "Thu, 25 Apr 2024 18:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112333647626679550"
+    ],
+    "lastTootTimestamp": 1714075433794
   }
 }
