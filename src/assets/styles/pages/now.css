@@ -17,3 +17,7 @@
 .link-list {
   margin-top: 0;
 }
+
+.now-explainer {
+  padding-top: var(--sizing-lg);
+}

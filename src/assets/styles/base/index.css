@@ -487,10 +487,6 @@ li {
   flex-wrap: wrap;
 }
 
-.bottom-explainer {
-  margin-top: var(--sizing-lg);
-}
-
 /* screens: md */
 @media screen and (min-width: 768px) {
   .main-title {
