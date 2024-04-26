@@ -26,6 +26,7 @@ I built the button as a short Liquid partial:
 
 The `client-side` class above hides the button should the user have JavaScript disabled:
 
+{% raw %]}
 ```html
 <noscript>
   <style>
@@ -35,6 +36,7 @@ The `client-side` class above hides the button should the user have JavaScript d
   </style>
 </noscript>
 ```
+{% endraw %}
 
 And JavaScript is used to control the behavior of the toggle — first, in the `<body>` of my base template:
 
