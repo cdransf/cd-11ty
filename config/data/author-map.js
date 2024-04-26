@@ -1,5 +1,5 @@
 export default {
-  "https://fy.blackhats.net.au", "Firstyear",
+  "https://fy.blackhats.net.au": "Firstyear",
   "https://512pixels.net" : "Stephen Hackett",
   "https://bradfrost.com": "Brad Frost",
   "https://theverge.com": "The Verge",
