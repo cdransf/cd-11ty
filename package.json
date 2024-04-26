@@ -26,6 +26,7 @@
     "@daviddarnes/mastodon-post": "^1.2.0",
     "@zachleat/webcare-webshare": "^1.0.3",
     "minisearch": "^6.3.0",
+    "netlify-cli": "^17.23.1",
     "youtube-video-element": "^1.0.0"
   },
   "devDependencies": {
