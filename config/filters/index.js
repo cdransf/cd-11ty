@@ -3,7 +3,7 @@ import markdownIt from 'markdown-it'
 import { URL } from 'url'
 import { createRequire } from 'module'
 import sanitizeHtml from 'sanitize-html';
-import authors from '../json/author-map.js'
+import authors from '../data/author-map.js'
 
 const require = createRequire(import.meta.url)
 const metaData = require('../../src/_data/json/meta.json')
