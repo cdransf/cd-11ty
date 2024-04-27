@@ -12883,5 +12883,16 @@
       "https://social.lol/users/cory/statuses/112344028847617358"
     ],
     "lastTootTimestamp": 1714233838679
+  },
+  "https://trakt.tv/movies/late-night-with-the-devil-2024": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvbGF0ZS1uaWdodC13aXRoLXRoZS1kZXZpbC0yMDI0",
+    "title": "🎥: Late Night with the Devil",
+    "url": "https://trakt.tv/movies/late-night-with-the-devil-2024",
+    "content_text": "🎥: Late Night with the Devil #Movies #Watching  #Horror https://trakt.tv/movies/late-night-with-the-devil-2024",
+    "date_published": "Sat, 27 Apr 2024 18:07:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112345809656993382"
+    ],
+    "lastTootTimestamp": 1714261011656
   }
 }
