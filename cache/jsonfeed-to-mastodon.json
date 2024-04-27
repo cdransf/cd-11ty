@@ -12757,7 +12757,7 @@
     "title": "🎧: My top artists for the week: Witch Vomit @ 52 plays, Acephalix @ 44 plays, NoMeansNo @ 41 plays, blink-182 @ 38 plays, Tom Waits @ 37 plays, Joyce Manor @ 35 plays, Necrot @ 27 plays, Free Throw @ 27 plays #Music",
     "url": "https://coryd.dev/now?ts=2024-16#artists",
     "content_text": "🎧: My top artists for the week: Witch Vomit @ 52 plays, Acephalix @ 44 plays, NoMeansNo @ 41 plays, blink-182 @ 38 plays, Tom Waits @ 37 plays, Joyce Manor @ 35 plays, Necrot @ 27 plays, Free Throw @ 27 plays #Music  https://coryd.dev/now?ts=2024-16#artists",
-    "date_published": "Thu, 18 Apr 2024 08:00:00 GMT",
+    "date_published": "Fri, 19 Apr 2024 08:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112312447133174926"
     ],
@@ -12861,5 +12861,16 @@
       "https://social.lol/users/cory/statuses/112333647626679550"
     ],
     "lastTootTimestamp": 1714075433794
+  },
+  "https://fy.blackhats.net.au/blog/2024-04-26-passkeys-a-shattered-dream/": {
+    "id": "aHR0cHM6Ly9meS5ibGFja2hhdHMubmV0LmF1L2Jsb2cvMjAyNC0wNC0yNi1wYXNza2V5cy1hLXNoYXR0ZXJlZC1kcmVhbS8=",
+    "title": "🔗: Passkeys: A Shattered Dream via Firstyear",
+    "url": "https://fy.blackhats.net.au/blog/2024-04-26-passkeys-a-shattered-dream/",
+    "content_text": "🔗: Passkeys: A Shattered Dream via Firstyear #Tech https://fy.blackhats.net.au/blog/2024-04-26-passkeys-a-shattered-dream/",
+    "date_published": "Fri, 26 Apr 2024 20:08:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112339780402502306"
+    ],
+    "lastTootTimestamp": 1714169012551
   }
 }

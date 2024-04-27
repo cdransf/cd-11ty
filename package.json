@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "12.9.8",
+  "version": "12.9.11",
   "description": "The source for my personal site. Built using 11ty.",
   "type": "module",
   "scripts": {
@@ -9,12 +9,13 @@
     "start:quick": "eleventy --serve --incremental --ignore-initial",
     "build": "ELEVENTY_PRODUCTION=true eleventy",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
-    "postbuild": "webmention _site/feeds/posts --limit 1 --send"
+    "postbuild": "webmention _site/feeds/posts --limit 1 --send && webmention _site/feeds/links --limit 1 --send"
   },
   "keywords": [
     "11ty",
     "Eleventy",
-    "Web components"
+    "Web components",
+    "Blog"
   ],
   "author": "Cory Dransfeldt",
   "license": "MIT",
@@ -26,7 +27,6 @@
     "@daviddarnes/mastodon-post": "^1.2.0",
     "@zachleat/webcare-webshare": "^1.0.3",
     "minisearch": "^6.3.0",
-    "netlify-cli": "^17.23.1",
     "youtube-video-element": "^1.0.0"
   },
   "devDependencies": {
@@ -37,16 +37,13 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@11tyrocks/eleventy-plugin-lightningcss": "^1.4.0",
-    "@aws-sdk/client-s3": "^3.564.0",
     "@cdransf/eleventy-plugin-tabler-icons": "^1.2.0",
     "@netlify/blobs": "^7.2.0",
     "@remy/webmention": "^1.5.0",
     "@rknightuk/eleventy-plugin-post-graph": "^1.0.6",
-    "child_process": "^1.0.2",
     "dotenv-flow": "^4.1.0",
     "html-minifier-terser": "^7.2.0",
     "ics-to-json-extended": "^1.1.4",
-    "jsdom": "^24.0.0",
     "liquidjs": "^10.10.0",
     "luxon": "^3.4.4",
     "markdown-it": "^14.0.0",

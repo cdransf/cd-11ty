@@ -200,8 +200,8 @@ th {
     line-height: 1.25;
     margin: 0;
     padding-bottom: var(--sizing-md);
-    font-size: var(--font-size-2xl);
-    line-height: var(--line-height-2xl);
+    font-size: var(--font-size-3xl);
+    line-height: var(--line-height-3xl);
   }
 }
 
@@ -258,7 +258,7 @@ nav ul li .active svg:hover {
 
 /* layout */
 .default-wrapper {
-  padding-top: var(--sizing-3xl);
+  padding-top: var(--sizing-2xl);
 }
 
 .main-wrapper {
@@ -499,12 +499,6 @@ li {
 
   main {
     max-width: 768px;
-  }
-
-  .main-title h1,
-  .page-header {
-    font-size: var(--font-size-3xl);
-    line-height: var(--line-height-3xl);
   }
 
   article {
