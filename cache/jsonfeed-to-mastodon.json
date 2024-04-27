@@ -12757,7 +12757,7 @@
     "title": "🎧: My top artists for the week: Witch Vomit @ 52 plays, Acephalix @ 44 plays, NoMeansNo @ 41 plays, blink-182 @ 38 plays, Tom Waits @ 37 plays, Joyce Manor @ 35 plays, Necrot @ 27 plays, Free Throw @ 27 plays #Music",
     "url": "https://coryd.dev/now?ts=2024-16#artists",
     "content_text": "🎧: My top artists for the week: Witch Vomit @ 52 plays, Acephalix @ 44 plays, NoMeansNo @ 41 plays, blink-182 @ 38 plays, Tom Waits @ 37 plays, Joyce Manor @ 35 plays, Necrot @ 27 plays, Free Throw @ 27 plays #Music  https://coryd.dev/now?ts=2024-16#artists",
-    "date_published": "Fri, 19 Apr 2024 08:00:00 GMT",
+    "date_published": "Sat, 20 Apr 2024 08:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112312447133174926"
     ],
@@ -12872,5 +12872,16 @@
       "https://social.lol/users/cory/statuses/112339780402502306"
     ],
     "lastTootTimestamp": 1714169012551
+  },
+  "https://www.statsignificant.com/p/when-do-we-stop-finding-new-music": {
+    "id": "aHR0cHM6Ly93d3cuc3RhdHNpZ25pZmljYW50LmNvbS9wL3doZW4tZG8td2Utc3RvcC1maW5kaW5nLW5ldy1tdXNpYw==",
+    "title": "🔗: When Do We Stop Finding New Music? A Statistical Analysis  via Daniel Parris",
+    "url": "https://www.statsignificant.com/p/when-do-we-stop-finding-new-music",
+    "content_text": "🔗: When Do We Stop Finding New Music? A Statistical Analysis  via Daniel Parris #Tech #Music https://www.statsignificant.com/p/when-do-we-stop-finding-new-music",
+    "date_published": "Sat, 27 Apr 2024 14:40:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112344028847617358"
+    ],
+    "lastTootTimestamp": 1714233838679
   }
 }
