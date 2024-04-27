@@ -1,4 +1,6 @@
 export default {
+  "https://www.statsignificant.com": "Daniel Parris",
+  "https://statsignificant.com": "Daniel Parris",
   "https://fy.blackhats.net.au": "Firstyear",
   "https://512pixels.net" : "Stephen Hackett",
   "https://bradfrost.com": "Brad Frost",
