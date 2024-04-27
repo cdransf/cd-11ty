@@ -454,8 +454,6 @@ li {
 
 /* pages */
 .page-header {
-  font-size: var(--font-size-2xl);
-  line-height: var(--line-height-2xl);
   margin-top: 0;
 }
 
