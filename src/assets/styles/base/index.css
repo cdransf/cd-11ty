@@ -258,7 +258,7 @@ nav ul li .active svg:hover {
 
 /* layout */
 .default-wrapper {
-  padding-top: var(--sizing-3xl);
+  padding-top: var(--sizing-2xl);
 }
 
 .main-wrapper {
