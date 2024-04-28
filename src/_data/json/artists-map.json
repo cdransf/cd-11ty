@@ -639,6 +639,11 @@
     "genre": "death metal",
     "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/ghastly.jpg&fit=cover&w=320&h=320"
   },
+  "glassing": {
+    "mbid": "e652c211-44cf-4a4e-9ef5-57ea4a9fb2db",
+    "genre": "black metal",
+    "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/glassing.jpg&fit=cover&w=320&h=320"
+  },
   "god-macabre": {
     "mbid": "ffb307e6-123f-4186-ba03-491c17cd7992",
     "genre": "death metal",
