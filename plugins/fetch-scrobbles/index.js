@@ -52,18 +52,36 @@ export const onPreBuild = async ({ constants }) => {
   const nowPlaying = await scrobbles.get('now-playing', { type: 'json'})
 
   for (const key of monthKeys) {
-    const scrobbleData = await scrobbles.get(key, { type: 'json'})
-    if (scrobbleData) monthChartData?.['data']?.push(...scrobbleData?.['data'])
+    let scrobbleData
+    try {
+      scrobbleData = await scrobbles.get(key, { type: 'json'})
+    } catch (err) {
+      console.log('Error fetching scrobble data using monthKeys')
+      break
+    }
+    monthChartData?.['data']?.push(...scrobbleData?.['data'])
   }
 
   for (const key of threeMonthKeys) {
-    const scrobbleData = await scrobbles.get(key, { type: 'json'})
-    if (scrobbleData) threeMonthChartData?.['data']?.push(...scrobbleData?.['data'])
+    let scrobbleData
+    try {
+      scrobbleData = await scrobbles.get(key, { type: 'json'})
+    } catch (err) {
+      console.log('Error fetching scrobble data using threeMonthKeys')
+      break
+    } 
+    threeMonthChartData?.['data']?.push(...scrobbleData?.['data'])
   }
 
   for (const key of yearKeys) {
-    const scrobbleData = await scrobbles?.get(key, { type: 'json'})
-    if (scrobbleData) yearChartData?.['data']?.push(...scrobbleData?.['data'])
+    let scrobbleData
+    try {
+      scrobbleData = await scrobbles?.get(key, { type: 'json'})
+    } catch (err) {
+      console.log('Error fetching scrobble data using yearKeys')
+      break
+    }
+    yearChartData?.['data']?.push(...scrobbleData?.['data'])
   }
 
   fs.writeFileSync('./src/_data/json/weekly-top-artists-chart.json', JSON.stringify({...weeklyChartData, timestamp: `${lastWeek.set({ hour: 8, minute: 0, second: 0, millisecond: 0 }).toMillis()}` }))
