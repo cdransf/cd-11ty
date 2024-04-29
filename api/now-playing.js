@@ -73,45 +73,10 @@ const emojiMap = (genre, artist) => {
 }
 
 export default async () => {
-  const TV_KEY = Netlify.env.get("API_KEY_TRAKT")
   const scrobbles = getStore('scrobbles')
   const headers = {
     "Content-Type": "application/json",
     "Cache-Control": "public, s-maxage=360, stale-while-revalidate=1080",
-  }
-  const traktRes = await fetch("https://api.trakt.tv/users/cdransf/watching", {
-    headers: {
-      "Content-Type": "application/json",
-      "trakt-api-version": 2,
-      "trakt-api-key": TV_KEY,
-    },
-  })
-    .then((data) => {
-      if (data.status === 204) return {}
-      if (data.ok) return data?.json()
-      throw new Error('Something went wrong with the Trakt endpoint.')
-    })
-    .catch(err => {
-      console.log(err)
-      return {}
-    })
-
-  if (Object.keys(traktRes).length) {
-    if (traktRes["type"] === "episode") {
-      return new Response(JSON.stringify({
-          content: `📺 <a href="https://trakt.tv/shows/${traktRes["show"]["ids"]["slug"]}">${traktRes["show"]["title"]}</a> • <a href="https://trakt.tv/shows/${traktRes["show"]["ids"]["slug"]}/seasons/${traktRes["episode"]["season"]}/episodes/${traktRes["episode"]["number"]}">${traktRes["episode"]["title"]}</a>`,
-        }),
-        { headers }
-      )
-    }
-
-    if (traktRes["type"] === "movie") {
-      return new Response(JSON.stringify({
-          content: `🎥 <a href="https://trakt.tv/movies/${traktRes["movie"]["ids"]["slug"]}">${traktRes["movie"]["title"]}</a>`,
-        }),
-        { headers }
-      )
-    }
   }
   const scrobbleData = await scrobbles.get('now-playing', { type: 'json'})
 
