@@ -3,7 +3,7 @@ layout: null
 eleventyExcludeFromCollections: true
 permalink: /feeds/posts
 ---
-{%- assign posts = collections.posts | reverse -%}
+{%- assign posts = collections.posts -%}
 {% render "partials/feeds/rss.liquid"
   permalink:"/feeds/posts"
   title:"Cory Dransfeldt"
