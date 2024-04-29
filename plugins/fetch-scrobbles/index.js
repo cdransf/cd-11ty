@@ -59,7 +59,7 @@ export const onPreBuild = async ({ constants }) => {
       console.log('Error fetching scrobble data using monthKeys')
       break
     }
-    monthChartData?.['data']?.push(...scrobbleData?.['data'])
+    if (scrobbleData) monthChartData?.['data']?.push(...scrobbleData?.['data'])
   }
 
   for (const key of threeMonthKeys) {
@@ -70,7 +70,7 @@ export const onPreBuild = async ({ constants }) => {
       console.log('Error fetching scrobble data using threeMonthKeys')
       break
     } 
-    threeMonthChartData?.['data']?.push(...scrobbleData?.['data'])
+    if (scrobbleData) threeMonthChartData?.['data']?.push(...scrobbleData?.['data'])
   }
 
   for (const key of yearKeys) {
@@ -81,7 +81,7 @@ export const onPreBuild = async ({ constants }) => {
       console.log('Error fetching scrobble data using yearKeys')
       break
     }
-    yearChartData?.['data']?.push(...scrobbleData?.['data'])
+    if (scrobbleData) yearChartData?.['data']?.push(...scrobbleData?.['data'])
   }
 
   fs.writeFileSync('./src/_data/json/weekly-top-artists-chart.json', JSON.stringify({...weeklyChartData, timestamp: `${lastWeek.set({ hour: 8, minute: 0, second: 0, millisecond: 0 }).toMillis()}` }))
