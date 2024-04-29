@@ -239,6 +239,7 @@ export default {
     if (
       normalizedString === 'ios' ||
       normalizedString === 'macos' ||
+      normalizedString === 'css' ||
       normalizedString === 'rss' ||
       normalizedString === 'ai'
     ) return `#${string}`
