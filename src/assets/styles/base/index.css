@@ -149,11 +149,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
 }
 
-h1 { font-size: var(--font-size-3xl) }
-h2 { font-size: var(--font-size-2xl) }
-h3 { font-size: var(--font-size-xl) }
-h4 { font-size: var(--font-size-lg) }
-h5 { font-size: var(--font-size-base) }
+h1 { font-size: var(--font-size-2xl) }
+h2 { font-size: var(--font-size-xl) }
+h3 { font-size: var(--font-size-lg) }
+h4 { font-size: var(--font-size-base) }
+h5 { font-size: var(--font-size-md) }
 h6 { font-size: var(--font-size-sm) }
 
 .section-header-wrapper {
@@ -249,9 +249,9 @@ th {
     line-height: 1.25;
     margin: 0;
     padding-bottom: 0;
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-extrabold);
-    line-height: var(--line-height-3xl);
+    line-height: var(--line-height-2xl);
 
     & a {
       text-decoration: none;
@@ -298,16 +298,20 @@ a.view-all:focus svg {
   stroke-width: var(--stroke-width-bold);
 }
 
-.active,
-.active svg {
+.menu-primary .active,
+.menu-primary .active svg,
+nav .active,
+nav .active svg {
   cursor: not-allowed;
 }
 
-.active {
+.menu-primary .active,
+nav .active {
   color: var(--accent-color) !important;
 }
 
-.active svg {
+.menu-primary .active svg,
+nav .active svg {
   stroke: var(--accent-color) !important;
 }
 

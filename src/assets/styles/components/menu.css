@@ -22,6 +22,7 @@
   }
 }
 
+.menu-button-container,
 theme-toggle {
   margin-left: var(--sizing-md)
 }
