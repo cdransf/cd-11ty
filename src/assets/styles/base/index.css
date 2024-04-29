@@ -113,12 +113,12 @@ blockquote {
 
 /* links */
 a {
-  text-decoration: none;
-}
-
-a,
-.active {
   color: var(--accent-color);
+  text-decoration: none;
+
+  & svg {
+    stroke: var(--accent-color);
+  }
 }
 
 a:hover,
@@ -303,10 +303,12 @@ a.view-all:focus svg {
   cursor: not-allowed;
 }
 
-a svg,
-nav .active svg,
-nav ul li .active svg {
-  stroke: var(--accent-color);
+.active {
+  color: var(--accent-color) !important;
+}
+
+.active svg {
+  stroke: var(--accent-color) !important;
 }
 
 /* social icons */

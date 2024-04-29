@@ -10,11 +10,13 @@
     overflow: hidden;
     margin: 0;
 
-    & .icon > svg {
+    & .icon > svg,
+    & .active > svg {
       display: block;
     }
 
-    & .icon > span {
+    & .icon > span,
+    & .active > span {
       display: none;
     }
   }
@@ -78,6 +80,7 @@ theme-toggle {
     justify-content: center;
     align-items: center;
     gap: 0;
+    z-index: 1;
 
     & > li {
       display: flex;
@@ -89,11 +92,13 @@ theme-toggle {
       color: var(--text-color);
       background: var(--background-color);
 
-      & .icon > svg {
+      & .icon > svg,
+      & .active > svg {
         display: none;
       }
 
-      & .icon > span {
+      & .icon > span,
+      & .active > span {
         display: inline;
       }
     }

@@ -3,6 +3,7 @@
   <span class="active {{ class }}" aria-current="page">
     {% if icon %}
       {% tablericon icon link %}
+      <span>{{ link }}</span>
     {% else %}
       {{ link }}
     {% endif %}
@@ -14,7 +15,7 @@
       <span>{{ link }}</span>
     </a>
   {% else %}
-    <a class="icon" href="/{{ link | downcase }}">
+    <a href="/{{ link | downcase }}">
       {{ link }}
     </a>
   {% endif %}
