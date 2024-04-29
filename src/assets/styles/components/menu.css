@@ -29,45 +29,49 @@ theme-toggle {
 
 .menu-button-container {
   display: none;
+
+  & .menu-open,
+  & .menu-closed {
+    cursor: pointer;
+  }
+
+  & svg {
+    transform: rotate(0deg);
+    transition-property: transform;
+    transition-timing-function: var(--transition-ease-in-out);
+    transition-duration: var(--transition-duration-default);
+  }
+
+  & svg:hover,
+  & svg:active,
+  & svg:focus {
+    stroke: var(--accent-color-hover);
+    transform: rotate(8deg);
+  }
 }
 
 #menu-toggle {
   display: none;
 }
 
-.menu-button-container .menu-open,
-.menu-button-container .menu-closed {
-  cursor: pointer;
+#menu-toggle:checked + .menu-button-container {
+  & .menu-closed {
+    display: none;
+  }
+
+  & .menu-open {
+    display: block;
+  }
 }
 
-.menu-button-container svg {
-  transform: rotate(0deg);
-  transition-property: transform;
-  transition-timing-function: var(--transition-ease-in-out);
-  transition-duration: var(--transition-duration-default);
-}
+#menu-toggle:not(:checked) + .menu-button-container {
+  & .menu-closed {
+    display: block;
+  }
 
-.menu-button-container svg:hover,
-.menu-button-container svg:active,
-.menu-button-container svg:focus {
-  stroke: var(--accent-color-hover);
-  transform: rotate(8deg);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-closed {
-  display: none;
-}
-
-#menu-toggle:checked + .menu-button-container .menu-open {
-  display: block;
-}
-
-#menu-toggle:not(:checked) + .menu-button-container .menu-closed {
-  display: block;
-}
-
-#menu-toggle:not(:checked) + .menu-button-container .menu-open {
-  display: none;
+  & .menu-open {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
