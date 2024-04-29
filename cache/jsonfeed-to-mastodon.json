@@ -12894,5 +12894,16 @@
       "https://social.lol/users/cory/statuses/112345809656993382"
     ],
     "lastTootTimestamp": 1714261011656
+  },
+  "https://coryd.dev/now?ts=2024-17#artists": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTIwMjQtMTcjYXJ0aXN0cw==",
+    "title": "🎧: My top artists for the week: Full of Hell @ 48 plays, Replicant @ 39 plays, Portrayal of Guilt @ 18 plays, Bruce Springsteen @ 17 plays, Mortuous @ 16 plays, Anxious @ 15 plays, Civerous @ 14 plays, Nothing @ 14 plays #Music",
+    "url": "https://coryd.dev/now?ts=2024-17#artists",
+    "content_text": "🎧: My top artists for the week: Full of Hell @ 48 plays, Replicant @ 39 plays, Portrayal of Guilt @ 18 plays, Bruce Springsteen @ 17 plays, Mortuous @ 16 plays, Anxious @ 15 plays, Civerous @ 14 plays, Nothing @ 14 plays #Music  https://coryd.dev/now?ts=2024-17#artists",
+    "date_published": "Mon, 22 Apr 2024 08:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112352083701336133"
+    ],
+    "lastTootTimestamp": 1714356745990
   }
 }
