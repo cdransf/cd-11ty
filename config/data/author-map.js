@@ -136,6 +136,7 @@ export default {
   "https://www.wheresyoured.at": "Ed Zitron",
   "https://httpster.io": "Sami",
   "https://www.tylerjfisher.com": "Tyler Fisher",
+  "https://baldurbjarnason.com": "Baldur Bjarnason",
   "https://www.baldurbjarnason.com": "Baldur Bjarnason",
   "https://lmnt.me": "Louie Mantia",
   "https://www.lrb.co.uk": "London Review of Books",
