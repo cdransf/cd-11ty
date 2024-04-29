@@ -53,12 +53,12 @@ export const onPreBuild = async ({ constants }) => {
 
   for (const key of monthKeys) {
     const scrobbleData = await scrobbles.get(key, { type: 'json'})
-    monthChartData['data'].push(...scrobbleData['data'])
+    monthChartData?.['data'].push(...scrobbleData?.['data'])
   }
 
   for (const key of threeMonthKeys) {
     const scrobbleData = await scrobbles.get(key, { type: 'json'})
-    threeMonthChartData['data'].push(...scrobbleData['data'])
+    threeMonthChartData?.['data'].push(...scrobbleData?.['data'])
   }
 
   for (const key of yearKeys) {
