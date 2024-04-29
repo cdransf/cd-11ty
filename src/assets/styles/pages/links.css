@@ -1,0 +1,21 @@
+.link-grid {
+  display: grid;
+  gap: var(--sizing-sm);
+  grid-template-columns: repeat(1,minmax(0,1fr));
+  margin-bottom: var(--sizing-base);
+
+  & .link {
+    border: 1px solid var(--gray-light);
+    padding: var(--sizing-xs) var(--sizing-sm) 0;
+
+    & button {
+      margin-right: var(--sizing-xs);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .link-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}

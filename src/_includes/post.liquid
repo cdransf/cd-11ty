@@ -6,12 +6,12 @@ schema: blog
 {%- capture postUrl %}{{ meta.url }}{{ page.url }}{% endcapture -%}
 <div class="default-wrapper">
   <article class="h-entry">
-    <div class="flex-centered">
+    <div class="flex-centered gap-xs icon-small icon-light">
+      {% render "partials/share-button.liquid", url:postUrl, title:title, tagMap:collections.tagMap %}
+      {% tablericon "calendar-month" "Date" %}
       <time class="dt-published" datetime="{{ date }}">
         {{ date | date: "%B %e, %Y" }}
-        <span class="client-side"> • </span>
       </time>
-      {% render "partials/share-button.liquid", url:postUrl, title:title, tagMap:collections.tagMap %}
     </div>
     <h2 class="p-name">{{ title }}</h2>
     <div class="text-small">{% render "partials/tags.liquid", tags:tags %}</div>

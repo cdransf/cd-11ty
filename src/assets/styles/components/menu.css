@@ -1,0 +1,124 @@
+.menu-primary {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: var(--sizing-md);
+
+  & > li {
+    overflow: hidden;
+    margin: 0;
+
+    & .icon > svg {
+      display: block;
+    }
+
+    & .icon > span {
+      display: none;
+    }
+  }
+}
+
+theme-toggle {
+  margin-left: var(--sizing-md)
+}
+
+.menu-button-container {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button-container .menu-open,
+.menu-button-container .menu-closed {
+  cursor: pointer;
+}
+
+.menu-button-container svg {
+  transform: rotate(0deg);
+  transition-property: transform;
+  transition-timing-function: var(--transition-ease-in-out);
+  transition-duration: var(--transition-duration-default);
+}
+
+.menu-button-container svg:hover,
+.menu-button-container svg:active,
+.menu-button-container svg:focus {
+  stroke: var(--accent-color-hover);
+  transform: rotate(8deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-closed {
+  display: none;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-open {
+  display: block;
+}
+
+#menu-toggle:not(:checked) + .menu-button-container .menu-closed {
+  display: block;
+}
+
+#menu-toggle:not(:checked) + .menu-button-container .menu-open {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-primary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: calc(var(--sizing-3xl) * 2.25);
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+
+    & > li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: var(--sizing-sm) 0;
+      width: 100%;
+      color: var(--text-color);
+      background: var(--background-color);
+
+      & .icon > svg {
+        display: none;
+      }
+
+      & .icon > span {
+        display: inline;
+      }
+    }
+  }
+
+  #menu-toggle ~ .menu-primary li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  #menu-toggle:checked ~ .menu-primary li {
+    border-bottom: 1px solid var(--gray-light);
+    height: var(--sizing-3xl);
+    padding: var(--sizing-sm);
+
+    &:first-child {
+      border-top: 1px solid var(--gray-light);
+    }
+  }
+
+  .menu-button-container {
+    display: unset;
+    width: var(--sizing-svg-base);
+    height: var(--sizing-svg-base);
+  }
+}

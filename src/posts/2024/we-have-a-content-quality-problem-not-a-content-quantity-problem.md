@@ -3,6 +3,7 @@ date: '2024-03-26T09:15-08:00'
 title: 'We have a content quality problem, not a content quantity problem'
 description: 'Are you short on things to read? Things to watch? Things to listen to? Things to scroll through? Me neither.'
 tags: ['tech', 'AI', 'music']
+featured: true
 ---
 Are you short on things to read? Things to watch? Things to listen to? Things to scroll through? Me neither.<!-- excerpt -->
 

@@ -20,6 +20,7 @@
 @import url('./pages/books.css') layer(page);
 @import url('./pages/blogroll.css') layer(page);
 @import url('./pages/contact.css') layer(page);
+@import url('./pages/links.css') layer(page);
 @import url('./pages/now.css') layer(page);
 @import url('./pages/post.css') layer(page);
 @import url('./pages/webrings.css') layer(page);
@@ -33,6 +34,7 @@
 @import url('./components/link-peek.css') layer(components);
 @import url('./components/mastodon-post.css') layer(components);
 @import url('./components/media-grid.css') layer(components);
+@import url('./components/menu.css') layer(components);
 @import url('./components/paginator.css') layer(components);
 @import url('./components/post-graph.css') layer(components);
 @import url('./components/progress-bar.css') layer(components);

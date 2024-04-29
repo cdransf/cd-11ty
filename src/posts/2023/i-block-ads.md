@@ -4,6 +4,7 @@ title: 'I block ads'
 description: "I block ads in the browser. I block ads at the DNS level."
 tags: ['advertising', 'privacy', 'tech']
 image: /assets/img/og/adblocks.webp
+featured: true
 ---
 
 I block ads in the browser.

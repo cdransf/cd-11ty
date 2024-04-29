@@ -68,6 +68,17 @@ export default {
     return tagMap[url] || ''
   },
 
+  // posts
+  filterByPostType: (posts, postType) => {
+    if (postType === 'featured') return posts.reverse().filter(post => post.data.featured === true).splice(0, 3)
+    return posts.splice(0, 5)
+  },
+  truncateByWordCount: (text, wordCount) => {
+    const words = sanitizeHtml(text, { allowedTags: ['']}).split(/\s+/);
+    if (words.length > wordCount) return `<p>${words.slice(0, wordCount).join(' ')}...</p>`
+    return text
+  },
+
   // authors
   authorLookup: (url) => {
     if (!url) return null

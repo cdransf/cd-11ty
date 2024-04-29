@@ -19,7 +19,7 @@
       vertical-align: middle;
       height: var(--sizing-lg);
       width: var(--sizing-lg);
-      margin-right: var(--sizing-xs);
+      margin-right: var(--sizing-sm);
     }
   }
 

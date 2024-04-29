@@ -6,10 +6,6 @@
     height: calc(var(--sizing-3xl) * 5);
     resize: none;
   }
-
-  & .column.description p:first-child {
-    margin-top: 0;
-  }
 }
 
 .contact-success-header {
@@ -27,5 +23,9 @@
     & .column.description {
       padding-right: var(--sizing-xl);
     }
+  }
+
+  form {
+    margin-top: var(--sizing-base);
   }
 }

@@ -12,6 +12,7 @@
   --blue-900: #1e478a;
   --blue-950: #172e54;
 
+  --gray-lightest: #fafafa;
   --gray-50: #f6f7f8;
   --gray-100: #eaecef;
   --gray-200: #d9dee4;
@@ -23,6 +24,7 @@
   --gray-800: #5a6173;
   --gray-900: #4b515d;
   --gray-950: #30333b;
+  --gray-darkest: #191919;
 
   --white: #fff;
   --black: #000;
@@ -32,8 +34,8 @@
   --gray-dark: var(--gray-700);
 
   /* base theme */
-  --color-lightest: var(--white);
-  --color-darkest: var(--black);
+  --color-lightest: var(--gray-lightest);
+  --color-darkest: var(--gray-darkest);
   --text-color: var(--color-darkest);
   --background-color: var(--color-lightest);
   --text-color-inverted: var(--color-lightest);
@@ -57,21 +59,20 @@
   --sun: #ffa700;
 
   /* fonts */
-  --font-sans: "Poppins", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;
+  --font-mono: MonoLisa, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;
 
   /* text */
-  --font-size-xs: .75rem;
-  --line-height-xs: 1rem;
+  --font-size-xs: .725rem;
+  --line-height-xs: 1.225rem;
 
-  --font-size-sm: .875rem;
-  --line-height-sm: 1.25rem;
+  --font-size-sm: .825rem;
+  --line-height-sm: 1.325rem;
 
-  --font-size-base: 1rem;
-  --line-height-base: 1.5rem;
+  --font-size-base: .95rem;
+  --line-height-base: 1.45rem;
 
   --font-size-lg: 1.125rem;
-  --line-height-lg: 1.75rem;
+  --line-height-lg: 1.5rem;
 
   --font-size-xl: 1.25rem;
   --line-height-xl: 1.75rem;
@@ -79,21 +80,24 @@
   --font-size-2xl: 1.5rem;
   --line-height-2xl: 2rem;
 
-  --font-size-3xl: 1.875rem;
+  --font-size-3xl: 1.7rem;
   --line-height-3xl: 2.25rem;
 
   --font-weight-base: 400;
-  --font-weight-bold: 700;
+  --font-weight-bold: 600;
+  --font-weight-extrabold: 800;
 
   /* spacing */
   --sizing-xs: .25rem;
   --sizing-sm: .5rem;
   --sizing-md: .75rem;
   --sizing-lg: 1rem;
-  --sizing-base: 1.25rem;
-  --sizing-xl: 1.5rem;
-  --sizing-2xl: 1.75rem;
-  --sizing-3xl: 2rem;
+  --sizing-base: 1.5rem;
+  --sizing-xl: 1.75rem;
+  --sizing-2xl: 2rem;
+  --sizing-3xl: 2.25rem;
+
+  --sizing-svg-base: 24px;
 
   /* radii */
   --rounded-none: 0;

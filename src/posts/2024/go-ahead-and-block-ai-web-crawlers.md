@@ -3,6 +3,7 @@ date: '2024-03-02'
 title: 'Go ahead and block AI web crawlers'
 description: 'AI companies are crawling the open web to, ostensibly, improve the quality of their models and products. This process is extractive and accrues the benefit to said companies, not the owners of sites both small and large.'
 tags: ['AI', 'tech', 'development']
+featured: true
 ---
 AI companies are crawling the open web to, ostensibly, improve the quality of their models and products. This process is extractive and accrues the benefit to said companies, not the owners of sites both small and large.<!-- excerpt -->
 

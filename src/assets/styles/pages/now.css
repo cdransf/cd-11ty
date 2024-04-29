@@ -3,7 +3,7 @@
   padding-left: var(--sizing-base);
 
   & p {
-    margin: var(--sizing-xs) 0;
+    margin: var(--sizing-sm) 0;
 
     & > svg {
       display: inline;

@@ -1,0 +1,28 @@
+{%- assign posts = postData | filterByPostType: postType %}
+<div class="article-widget-wrapper">
+  <div class="section-header-wrapper">
+    <h2 id="artists" class="section-header posts flex-centered">
+      {% tablericon icon title %}
+      {{ title }}
+    </h2>
+  </div>
+  {% for post in posts %}
+  <article class="h-entry">
+    <div class="flex-centered gap-xs icon-small icon-light">
+      {% tablericon "calendar-month" "Date" %}
+      <time class="dt-published" datetime="{{ post.date }}">
+        {{ post.date | date: "%B %e, %Y" }}
+      </time>
+    </div>
+    <a href="{{ post.url }}">
+      <h3 class="flex-centered">{{ post.data.title }}</h3>
+    </a>
+    <span class="p-author h-card hidden">{{ meta.siteName }}</span>
+    <div class="p-summary hidden">{{ post.data.post_excerpt }}</div>
+    {{ post.data.post_excerpt | markdown | truncateByWordCount: 25 }}
+  </article>
+  {% endfor %}
+  {% if postType != 'featured' %}
+    <a class="view-all flex-centered" href="/posts">View all posts {% tablericon "arrow-right" "View all posts" %}</a>
+  {% endif %}
+</div>

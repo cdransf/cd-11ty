@@ -1,13 +1,5 @@
 @font-face {
-  font-family: Poppins;
-  src: url('/assets/fonts/Poppins-Bold.min.woff2') format("woff2");
-  font-weight: 700;
-  font-display: optional
-}
-
-@font-face {
-  font-family: Poppins;
-  src: url('/assets/fonts/Poppins-Regular.min.woff2') format("woff2");
-  font-weight: 400;
+  font-family: MonoLisa;
+  src: url('/assets/fonts/MonoLisa.min.woff2') format("woff2");
   font-display: optional
 }

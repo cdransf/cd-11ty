@@ -25,6 +25,6 @@ window.onload = () => {
     })
   }
 
-  const buttonSets = document.querySelectorAll('.now-header-buttons')
+  const buttonSets = document.querySelectorAll('.section-header-buttons')
   buttonSets.forEach(initializeButtonSet)
 }

@@ -13,7 +13,6 @@
 
     & img {
       border: 1px solid var(--accent-color);
-      border-radius: var(--rounded);
     }
 
     & img,

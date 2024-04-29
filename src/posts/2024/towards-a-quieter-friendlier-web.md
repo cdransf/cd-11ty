@@ -3,6 +3,7 @@ date: '2024-02-27'
 title: 'Towards a quieter, friendlier web'
 description: "I love the internet, I grew up on it and (probably) spend too much time on it. I found the music I love on it, I've made friends on it, I went to school for business but built a career on the web instead. I often have a hard time reconciling where the web is now with what it was like when I first dove into it."
 tags: ['tech', 'social media', 'privacy', 'AI']
+featured: true
 ---
 I *love* the internet, I grew up on it and (probably) spend too much time on it. [I found the music I love on it](https://coryd.dev/posts/2024/i-found-the-music-i-love-on-the-internet/), I've made friends on it, I went to school for business but built a career on the web instead. I often have a hard time reconciling where the web is now with what it was like when I first dove into it.<!-- excerpt -->
 

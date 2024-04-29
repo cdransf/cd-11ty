@@ -3,6 +3,7 @@ date: '2023-04-05'
 title: "I don't want streaming music, I just want to stream my music"
 description: "I don't want your streaming music service, I just want the music I've collected and care about available to stream."
 tags: ['music', 'streaming']
+featured: true
 ---
 
 I don't want your streaming music service, I just want the music I've collected and care about available to stream.<!-- excerpt -->

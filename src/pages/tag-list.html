@@ -11,11 +11,14 @@ eleventyComputed:
 {% assign posts = collections[tag] | reverse %}
 {% for post in posts %}
 <article class="h-entry">
-  <time class="dt-published" datetime="{{ post.date }}">
-    {{ post.date | date: "%B %e, %Y" }}
-  </time>
+  <div class="flex-centered gap-xs icon-small icon-light">
+    {% tablericon "calendar-month" "Date" %}
+    <time class="dt-published" datetime="{{ post.date }}">
+      {{ post.date | date: "%B %e, %Y" }}
+    </time>
+  </div>
   <a href="{{ post.url }}">
-    <h2 class="flex-centered">{{ post.data.title }}</h2>
+    <h3 class="flex-centered">{{ post.data.title }}</h3>
   </a>
   <p class="p-summary">{{ post.data.post_excerpt | markdown }}</p>
   <p><a href="{{ post.url }}">Read more →</a></p>

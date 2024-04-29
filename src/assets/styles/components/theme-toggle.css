@@ -1,14 +1,15 @@
+theme-toggle {
+  width: var(--sizing-svg-base);
+  height: var(--sizing-svg-base);
+  display: flex;
+}
+
 .theme-toggle {
   background: transparent;
   padding: 0;
 
   & svg {
     cursor: pointer;
-  }
-
-  &:hover,
-  & svg:hover {
-    stroke-width: var(--stroke-width-bold);
   }
 
   & > .light svg { stroke: var(--sun) !important; }
