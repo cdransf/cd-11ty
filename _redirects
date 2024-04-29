@@ -26,7 +26,6 @@
 # 404s
 /robot.txt /robots.txt 301!
 /sitemap.txt /sitemap.xml 301!
-/posts / 301!
 /blog / 301!
 /posts/2024 / 301!
 /tags/.env /tags/env 301!
