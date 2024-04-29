@@ -476,7 +476,6 @@ button {
 
 /* selects */
 select {
-  border-radius: var(--rounded-full);
   padding: var(--sizing-xs) var(--sizing-sm);
 }
 
@@ -541,7 +540,6 @@ li {
 /* images */
 .image-banner {
   border: 1px solid var(--accent-color);
-  border-radius: var(--rounded);
   height: auto;
   display: block;
   width: 100%;
