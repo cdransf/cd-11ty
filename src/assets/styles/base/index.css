@@ -4,6 +4,7 @@ html {
   font-family: var(--font-mono);
   font-size: var(--font-size-base);
   letter-spacing: -.05rem;
+  word-spacing: -.125rem;
   line-height: var(--line-height-base);
   background: var(--background-color);
   accent-color: var(--accent-color)
