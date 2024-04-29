@@ -12932,5 +12932,32 @@
     "content_text": "🔗: Minimizing via Thord D. Hedengren #Health https://bored.horse/post/minimizing/",
     "date_published": "Mon, 29 Apr 2024 15:25:00 GMT",
     "toots": []
+  },
+  "https://coryd.dev/posts/2024/some-site-updates/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9zb21lLXNpdGUtdXBkYXRlcy8=",
+    "title": "📝: Some site updates",
+    "url": "https://coryd.dev/posts/2024/some-site-updates/",
+    "content_text": "📝: Some site updates #WebDev #CSS #JavaScript https://coryd.dev/posts/2024/some-site-updates/",
+    "date_published": "Mon, 29 Apr 2024 17:16:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112355616599195208"
+    ],
+    "lastTootTimestamp": 1714410653721
+  },
+  "https://www.baldurbjarnason.com/2024/the-unsustainability-of-the-ai-bubble/": {
+    "id": "aHR0cHM6Ly93d3cuYmFsZHVyYmphcm5hc29uLmNvbS8yMDI0L3RoZS11bnN1c3RhaW5hYmlsaXR5LW9mLXRoZS1haS1idWJibGUv",
+    "title": "🔗: The unsustainability of the AI Bubble via Baldur Bjarnason",
+    "url": "https://www.baldurbjarnason.com/2024/the-unsustainability-of-the-ai-bubble/",
+    "content_text": "🔗: The unsustainability of the AI Bubble via Baldur Bjarnason #Tech #AI https://www.baldurbjarnason.com/2024/the-unsustainability-of-the-ai-bubble/",
+    "date_published": "Mon, 29 Apr 2024 15:29:00 GMT",
+    "toots": []
+  },
+  "https://www.baldurbjarnason.com/2024/self-serving-tech-social-media/": {
+    "id": "aHR0cHM6Ly93d3cuYmFsZHVyYmphcm5hc29uLmNvbS8yMDI0L3NlbGYtc2VydmluZy10ZWNoLXNvY2lhbC1tZWRpYS8=",
+    "title": "🔗: The self-serving nature of most tech social media via Baldur Bjarnason",
+    "url": "https://www.baldurbjarnason.com/2024/self-serving-tech-social-media/",
+    "content_text": "🔗: The self-serving nature of most tech social media via Baldur Bjarnason #Tech #SocialMedia https://www.baldurbjarnason.com/2024/self-serving-tech-social-media/",
+    "date_published": "Mon, 29 Apr 2024 15:28:00 GMT",
+    "toots": []
   }
 }
