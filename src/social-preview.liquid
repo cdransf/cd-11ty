@@ -22,14 +22,14 @@ eleventyExcludeFromCollections: true
     {% assign verticalStartingPoint = 170 %}
   {% endif %}
 
-  <svg id="visual" viewBox="0 0 1200 630" width="1200" height="630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="1200" height="630" fill="#191919"></rect></svg>
+  <svg id="visual" viewBox="0 0 1200 630" width="1200" height="630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="1200" height="630" fill="#000"></rect></svg>
 
   <!-- date -->
   <text
     font-family="MonoLisa, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace"
     font-size="24"
     font-weight="800"
-    fill="#fafafa"
+    fill="#fff"
   >
     <tspan x="80" y="{{ verticalStartingPoint | minus: 120 }}">
       {{ preview.date | date: "%B %e, %Y" }}
@@ -42,7 +42,7 @@ eleventyExcludeFromCollections: true
     font-family="MonoLisa, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace"
     font-size="40"
     font-weight="800"
-    fill="#fafafa"
+    fill="#fff"
   >
     {% for line in titleInLines %}
     {% capture spacing %}{{ forloop.index0 | times: 50 }}{% endcapture %}

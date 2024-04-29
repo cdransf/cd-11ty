@@ -12,7 +12,6 @@
   --blue-900: #1e478a;
   --blue-950: #172e54;
 
-  --gray-lightest: #fafafa;
   --gray-50: #f6f7f8;
   --gray-100: #eaecef;
   --gray-200: #d9dee4;
@@ -24,7 +23,6 @@
   --gray-800: #5a6173;
   --gray-900: #4b515d;
   --gray-950: #30333b;
-  --gray-darkest: #191919;
 
   --white: #fff;
   --black: #000;
@@ -34,8 +32,8 @@
   --gray-dark: var(--gray-700);
 
   /* base theme */
-  --color-lightest: var(--gray-lightest);
-  --color-darkest: var(--gray-darkest);
+  --color-lightest: var(--white);
+  --color-darkest: var(--black);
   --text-color: var(--color-darkest);
   --background-color: var(--color-lightest);
   --text-color-inverted: var(--color-lightest);
