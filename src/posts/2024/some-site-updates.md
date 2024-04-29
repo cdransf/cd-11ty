@@ -40,7 +40,7 @@ I added a timestamp to the very bottom of my now page indicating when it was las
 
 ### Design
 
-I changed the typeface I'm using to [MonoLisa](https://www.monolisa.dev), which I also use in [Sublime Text](https://www.sublimetext.com) and Terminal.app, with the letter and word spacing tightened up slightly from the default. Links within paragraphs are underlined to stand out and the base spacing value I use for — well, most things – has been increased.
+I changed the typeface I'm using to [MonoLisa](https://www.monolisa.dev), which I also use in [Sublime Text](https://www.sublimetext.com) and Terminal.app, with the letter and word spacing tightened up slightly from the default. Links within paragraphs are underlined to stand out and the base spacing value I use for — well, most things – has been increased. I dropped rounded corners for (most) of my images, form inputs and scrollbar styles.
 
 ### Image loading
 
