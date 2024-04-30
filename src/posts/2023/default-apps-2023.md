@@ -7,15 +7,15 @@ tags: ['tech', 'macOS']
 
 In the spirit of following a trend, here are my default apps as of now (the end of 2023).<!-- excerpt -->
 
-- Mail service: [HEY](https://hey.com)
-- Mail client: [HEY](https://hey.com)
-- Tasks: [HEY](https://hey.com)'s do this week functionality
+- Mail service: <a onclick="clicky?.log('/posts/2023/default-apps-2023/','Fastmail referral', 'click')" href="https://ref.fm/u30190984">Fastmail</a>
+- Mail client: Mail.app
+- Tasks: calendars for timed, repeating chores and a note for one-off tasks.
 - RSS service/client/bookmarking: [Feedbin](https://feedbin.com) with [NetNewsWire](https://netnewswire.com) + articles sent to [Instapaper](https://instapaper.com) and clips sent to [Bear](https://bear.app)
 - Launcher: [Alfred](https://alfredapp.com)
 - Cloud storage: iCloud
 - Photo library: iCloud
 - Web browser: Safari
-- Calendar: [HEY](https://hey.com)
+- Calendar: Calendar.app + [Dato](https://sindresorhus.com/dato) on macOS
 - Weather: Weather.app
 - Podcasts: N/A
 - Music: [Plexamp](https://www.plex.tv/plexamp/) + [Last.fm](https://last.fm) + [ListenBrainz](https://listenbrainz.org)

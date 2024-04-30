@@ -42,6 +42,7 @@ Software and services that I use for work and my own enjoyment.
 <h3>macOS</h3>
 
 - [Rectangle](https://rectangleapp.com): to quickly move around/organize/snap application windows. Using a Mac without it now feels like it's broken.
+- [Dato](https://sindresorhus.com/dato): an option-rich calendar utility that lives in your menubar.
 - [Alfred](https://alfredapp.com): a flexible, extensible and reliable Spotlight replacement.
 - [Keyboard Maestro](https://www.keyboardmaestro.com): an endlessly flexible app that I underutilize for quick macros and keyboard shortcuts in a number of different apps.
 - [AirBuddy](https://v2.airbuddy.app): finer-grained control over AirPods and other wireless devices.
@@ -58,7 +59,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3>Services</h3>
 
-- [HEY](https://hey.com): it's the email service that works best for me and I quite enjoy their calendar.
+- <a onclick="clicky?.log('/uses','Fastmail referral', 'click')" href="https://ref.fm/u30190984">Fastmail</a>: the best, most reliable email, calendar and contacts provider around.
 - <a onclick="clicky?.log('/uses','NextDNS referral', 'click')" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>: a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.
 - <a onclick="clicky?.log('/uses','DNSimple referral', 'click')" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>: a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
 - <a onclick="clicky?.log('/uses','Bunny.net referral', 'click')" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>: a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
