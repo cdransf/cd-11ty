@@ -12900,7 +12900,7 @@
     "title": "🎧: My top artists for the week: Full of Hell @ 48 plays, Replicant @ 39 plays, Portrayal of Guilt @ 18 plays, Bruce Springsteen @ 17 plays, Mortuous @ 16 plays, Anxious @ 15 plays, Civerous @ 14 plays, Nothing @ 14 plays #Music",
     "url": "https://coryd.dev/now?ts=2024-17#artists",
     "content_text": "🎧: My top artists for the week: Full of Hell @ 48 plays, Replicant @ 39 plays, Portrayal of Guilt @ 18 plays, Bruce Springsteen @ 17 plays, Mortuous @ 16 plays, Anxious @ 15 plays, Civerous @ 14 plays, Nothing @ 14 plays #Music  https://coryd.dev/now?ts=2024-17#artists",
-    "date_published": "Mon, 22 Apr 2024 08:00:00 GMT",
+    "date_published": "Tue, 23 Apr 2024 08:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112352083701336133"
     ],
@@ -12971,5 +12971,16 @@
       "https://social.lol/users/cory/statuses/112357274130347372"
     ],
     "lastTootTimestamp": 1714435945640
+  },
+  "https://bradfrost.com/blog/post/just/": {
+    "id": "aHR0cHM6Ly9icmFkZnJvc3QuY29tL2Jsb2cvcG9zdC9qdXN0Lw==",
+    "title": "🔗: 'Just' via Brad Frost",
+    "url": "https://bradfrost.com/blog/post/just/",
+    "content_text": "🔗: 'Just' via Brad Frost #Tech #WebDev https://bradfrost.com/blog/post/just/",
+    "date_published": "Tue, 30 Apr 2024 02:50:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112358187674190154"
+    ],
+    "lastTootTimestamp": 1714449885234
   }
 }
