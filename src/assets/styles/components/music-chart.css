@@ -49,7 +49,12 @@
     & .subtext,
     & .timestamp {
       font-size: var(--font-size-xs);
-      line-height: var(--line-height-xs);
+    }
+
+    & .title,
+    & .subtext,
+    & .timestamp {
+      line-height: 1.5;
     }
 
     & .timestamp {

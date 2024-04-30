@@ -5,7 +5,7 @@ html {
   font-size: var(--font-size-base);
   letter-spacing: -.05rem;
   word-spacing: -.125rem;
-  line-height: var(--line-height-xl);
+  line-height: var(--line-height-base);
   background: var(--background-color);
   accent-color: var(--accent-color)
 }
@@ -50,7 +50,6 @@ body::-webkit-scrollbar {
 }
 
 blockquote {
-  line-height: var(--line-height-lg);
   margin: var(--sizing-base) 0;
 }
 
@@ -523,6 +522,7 @@ li {
   & li {
     margin-top: var(--sizing-sm);
     margin-bottom: var(--sizing-sm);
+    line-height: var(--line-height-sm);
 
     &:last-child {
       margin-bottom: 0;
