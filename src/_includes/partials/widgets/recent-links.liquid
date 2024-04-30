@@ -5,10 +5,12 @@
 </h2>
 <ul class="link-list">
   {% for link in links limit: 5 %}
+  {% assign author = link.data.link | stripUtm | authorLookup %}
     <li>
       <a href="{{ link.data.link }}" title="{{ link.data.title | escape }}">
         {{ link.data.title }}
       </a>
+      {% if author %} via {{ author }}{% endif %}
     </li>
   {% endfor %}
 </ul>
