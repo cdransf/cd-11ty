@@ -429,10 +429,20 @@
     "genre": "punk",
     "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/deep-turtle.jpg&fit=cover&w=320&h=320"
   },
+  "defacement": {
+    "mbid": "4a3b94ea-7e64-427a-ae20-eac3c0d71246",
+    "genre": "death metal",
+    "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/defacement.jpg&fit=cover&w=320&h=320"
+  },
   "defeated-sanity": {
     "mbid": "47a9a488-a721-4d0e-88bc-2452701fb9c9",
     "genre": "brutal death metal",
     "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/defeated-sanity.jpg&fit=cover&w=320&h=320"
+  },
+  "deftones": {
+    "mbid": "7527f6c2-d762-4b88-b5e2-9244f1e34c46",
+    "genre": "alternative rock",
+    "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/IMAGE.jpg&fit=cover&w=320&h=320"
   },
   "degial": {
     "mbid": "14f2169c-3d26-43c2-b86c-98ffcd388bac",
@@ -908,6 +918,11 @@
     "mbid": "2aaf7396-6ab8-40f3-9776-a41c42c8e26b",
     "genre": "dance-punk",
     "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/lcd-soundsystem.jpg&fit=cover&w=320&h=320"
+  },
+  "loathe": {
+    "mbid": "56eb02c4-1f16-4613-8bb3-b4a752283fc3",
+    "genre": "alternative rock",
+    "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/loathe.jpg&fit=cover&w=320&h=320"
   },
   "loma-prieta": {
     "mbid": "d6d553f5-53d4-4d51-9875-1722b7a4c88c",
