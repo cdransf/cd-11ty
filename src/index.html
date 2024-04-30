@@ -1,6 +1,6 @@
 ---
 layout: default
 ---
-{% render "partials/now/topper.liquid" status:status, artists:music.artists, books:books, tv:tv %}
-{% render "partials/posts.liquid" icon: "star", title: "Featured", postData:collections.posts, postType: "featured" %}
-{% render "partials/posts.liquid" icon: "clock-2", title: "Recent posts", postData:collections.posts %}
+{% render "partials/home/now.liquid" status:status, artists:music.artists, books:books, tv:tv %}
+{% render "partials/home/posts.liquid" icon: "star", title: "Featured", postData:collections.posts, postType: "featured" %}
+{% render "partials/home/posts.liquid" icon: "clock-2", title: "Recent posts", postData:collections.posts %}

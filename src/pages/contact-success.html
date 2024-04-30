@@ -8,5 +8,5 @@ permalink: /contact/success.html
     I'll be in touch soon! <a href="/">Head home</a>
 </div>
 <hr class="large-spacing" />
-{% render "partials/tags.liquid", tags:collections.tagsSortedByCount, hasSpace:true %}
-{% render "partials/addon-links.liquid", posts:collections.posts, analytics:analytics, links:links %}
+{% render "partials/widgets/tags.liquid", tags:collections.tagsSortedByCount, hasSpace:true %}
+{% render "partials/widgets/addon-links.liquid", posts:collections.posts, analytics:analytics, links:links %}

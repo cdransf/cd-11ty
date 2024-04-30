@@ -6,4 +6,4 @@ tags: ['music']
 ---
 Absolutely classic.<!-- excerpt -->
 
-{% render "partials/youtube-player.liquid", url:"https://www.youtube.com/watch?v=gzC0RNkBXM0" %}
+{% render "partials/widgets/youtube-player.liquid", url:"https://www.youtube.com/watch?v=gzC0RNkBXM0" %}

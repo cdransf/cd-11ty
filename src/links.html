@@ -15,13 +15,13 @@ pagination:
   {% for link in pagination.items %}
   {% assign author = link.data.link | stripUtm | authorLookup %}
   <div class="link">
-    {% render "partials/share-button.liquid", url:link.data.link, title:link.data.title, tagMap:collections.tagMap %}
+    {% render "partials/widgets/share-button.liquid", url:link.data.link, title:link.data.title, tagMap:collections.tagMap %}
     <a href="{{ link.data.link }}" title="{{ link.data.title | escape }}">
       <strong>{{ link.data.title }}</strong>
     </a>
     {% if author %} via {{ author }}{% endif %}
-    <div class="text-small">{% render "partials/tags.liquid", tags:link.data.tags %}</div>
+    <div class="text-small">{% render "partials/widgets/tags.liquid", tags:link.data.tags %}</div>
   </div>
   {% endfor %}
 </div>
-{% render "partials/paginator.liquid", pagination:pagination %}
+{% render "partials/widgets/paginator.liquid", pagination:pagination %}

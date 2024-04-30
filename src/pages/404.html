@@ -11,6 +11,6 @@ image: /assets/img/404.jpg
     What kind of idiots do you have working here? <a href="/">Hurry up and skip out on the room service bill!</a>
   </div>
   <hr class="large-spacing" />
-  {% render "partials/tags.liquid", tags:collections.tagsSortedByCount, hasSpace:true %}
-  {% render "partials/addon-links.liquid", posts:collections.posts, analytics:analytics, links:collections.links %}
+  {% render "partials/widgets/tags.liquid", tags:collections.tagsSortedByCount, hasSpace:true %}
+  {% render "partials/widgets/addon-links.liquid", posts:collections.posts, analytics:analytics, links:collections.links %}
 </div>

@@ -41,7 +41,7 @@ And can then be leveraged in my Liquid partial as follows:
 
 {% raw %}
 ```liquid
-{% render "partials/tags.liquid", tags:collections.tagsSortedByCount %}
+{% render "partials/widgets/tags.liquid", tags:collections.tagsSortedByCount %}
 ```
 {% endraw %}
 

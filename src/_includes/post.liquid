@@ -7,14 +7,14 @@ schema: blog
 <div class="default-wrapper">
   <article class="h-entry">
     <div class="flex-centered gap-xs icon-small icon-light">
-      {% render "partials/share-button.liquid", url:postUrl, title:title, tagMap:collections.tagMap %}
+      {% render "partials/widgets/share-button.liquid", url:postUrl, title:title, tagMap:collections.tagMap %}
       {% tablericon "calendar-month" "Date" %}
       <time class="dt-published" datetime="{{ date }}">
         {{ date | date: "%B %e, %Y" }}
       </time>
     </div>
     <h2 class="p-name">{{ title }}</h2>
-    <div class="text-small">{% render "partials/tags.liquid", tags:tags %}</div>
+    <div class="text-small">{% render "partials/widgets/tags.liquid", tags:tags %}</div>
     <span class="p-author h-card hidden">{{ meta.author }}</span>
     <div class="p-summary hidden">{{ post_excerpt }}</div>
     <div class="e-content">
@@ -23,5 +23,5 @@ schema: blog
     </div>
   </article>
 </div>
-{% render "partials/mastodon-post.liquid", postUrl:postUrl, linkPosts:linkPosts %}
-{% render "partials/addon-links.liquid", posts:collections.posts, analytics:analytics, links:collections.links %}
+{% render "partials/widgets/mastodon-post.liquid", postUrl:postUrl, linkPosts:linkPosts %}
+{% render "partials/widgets/addon-links.liquid", posts:collections.posts, analytics:analytics, links:collections.links %}
