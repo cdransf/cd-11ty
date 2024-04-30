@@ -12,7 +12,7 @@ I made a minor update to how I'm normalizing TV data for display on my now page.
 
 By _minor_ I mean one of those things that may well break inexplicably depending on where the data lands. Instead of returning a normalized array based directly off the data returned by [Trakt](https://trakt.tv)'s API I'm instead collecting episodes in an array, checking as I iterate through the response to see if an episode of the same show exists and replacing that object with a mutated object designed to display the range of episodes watched for the show.
 
-{% image 'https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/blog/grouped-tv.jpg&w=1000', 'Grouped TV episodes', 'image-banner' %}
+{% image 'https://coryd.dev/.netlify/images/?url=/media/blog/grouped-tv.jpg&w=1000', 'Grouped TV episodes', 'image-banner' %}
 
 {% raw %}
 
