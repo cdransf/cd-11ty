@@ -4494,6 +4494,31 @@
     "link": "https://books.google.com/books/about/Dreamland.html?hl=&id=wpfKBwAAQBAJ"
   },
   {
+    "isbn": "9780063275836",
+    "dateFinished": "2022-01-11",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "An Ugly Truth",
+    "authors": [
+      "Sheera Frenkel",
+      "Cecilia Kang"
+    ],
+    "publishedDate": "2022-07-05",
+    "description": "INSTANT NEW YORK TIMES BESTSELLER// WINNER OF THE SABEW BEST IN BUSINESS AWARD A Book of the Year: Fortune, Foreign Affairs, The Times (London), Cosmopolitan, TechCrunch, WIRED “The ultimate takedown.” –New York Times Book Review Award-winning New York Times reporters Sheera Frenkel and Cecilia Kang unveil the tech story of our times in a riveting, behind-the-scenes exposé that offers the definitive account of Facebook’s fall from grace. Once one of Silicon Valley’s greatest success stories, Facebook has been under constant fire for the past five years, roiled by controversies and crises. It turns out that while the tech giant was connecting the world, they were also mishandling users’ data, spreading fake news, and amplifying dangerous, polarizing hate speech. The company, many said, had simply lost its way. But the truth is far more complex. Leadership decisions enabled, and then attempted to deflect attention from, the crises. Time after time, Facebook’s engineers were instructed to create tools that encouraged people to spend as much time on the platform as possible, even as those same tools boosted inflammatory rhetoric, conspiracy theories, and partisan filter bubbles. And while consumers and lawmakers focused their outrage on privacy breaches and misinformation, Facebook solidified its role as the world’s most voracious data-mining machine, posting record profits, and shoring up its dominance via aggressive lobbying efforts. Drawing on their unrivaled sources, Sheera Frenkel and Cecilia Kang take readers inside the complex court politics, alliances and rivalries within the company to shine a light on the fatal cracks in the architecture of the tech behemoth. Their explosive, exclusive reporting led them to a shocking conclusion: The missteps of the last five years were not an anomaly but an inevitability—this is how Facebook was built to perform. In a period of great upheaval, growth has remained the one constant under the leadership of Mark Zuckerberg and Sheryl Sandberg. Both have been held up as archetypes of uniquely 21st century executives—he the tech “boy genius” turned billionaire, she the ultimate woman in business, an inspiration to millions through her books and speeches. But sealed off in tight circles of advisers and hobbled by their own ambition and hubris, each has stood by as their technology is coopted by hate-mongers, criminals and corrupt political regimes across the globe, with devastating consequences. In An Ugly Truth, they are at last held accountable.",
+    "pageCount": 391,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ShZxEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=ShZxEAAAQBAJ"
+  },
+  {
     "isbn": "9780063251281",
     "dateFinished": "2023-08-11",
     "status": "finished",
