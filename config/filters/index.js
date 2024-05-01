@@ -210,7 +210,7 @@ export default {
       }
       if (item.type === 'movie') normalized['alt'] = item['title']
       if (item.type === 'book') {
-        normalized['alt'] = `${item['title']} by ${item['author']}`
+        normalized['alt'] = `${item['title']} by ${item['authors']}`
         normalized['subtext'] = `${item['percentage']} finished`
         normalized['percentage'] = item['percentage']
       }
@@ -228,6 +228,14 @@ export default {
     }),
   calculatePlayPercentage: (plays, mostPlayed) => `${plays/mostPlayed * 100}%`,
   bookStatus: (books, status) => books.filter(book => book.status === status),
+  bookFinishedYear: (books, year) => books.filter(book => {
+    if (book.status === 'finished' && book.dateAdded) return parseInt(book.dateAdded.split('-')[0]) === year
+    return ''
+  }).sort((a, b) => {
+    const dateA = DateTime.fromISO(a.dateAdded)
+    const dateB = DateTime.fromISO(b.dateAdded)
+    return dateB - dateA
+  }),
 
     // tags
   filterTags: (tags) => {

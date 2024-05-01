@@ -1,0 +1,7 @@
+---
+layout: default
+---
+<h2 class="page-header">{{ title }}</h2>
+{{ content }}
+{% assign bookData = books | bookStatus: 'finished' | bookFinishedYear: year %}
+{% render "partials/now/media-grid.liquid", data:bookData, shape: "vertical", count: 200 %}

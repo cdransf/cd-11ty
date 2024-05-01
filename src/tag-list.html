@@ -19,7 +19,11 @@ eleventyComputed:
       {{ post.date | date: "%B %e, %Y" }}
     </time>
   </div>
+  {% if author %}
+  <a href="{{ post.data.link }}">
+  {% else %}
   <a href="{{ post.url }}">
+  {% endif %}
     <h2 class="flex-centered">{{ post.data.title }}</h2>
   </a>
   {% if author %}via {{ author }}{% endif %}
