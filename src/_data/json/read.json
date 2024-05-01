@@ -236,6 +236,31 @@
     "link": "https://books.google.com/books/about/Too_Much_and_Never_Enough.html?hl=&id=LY7rDwAAQBAJ"
   },
   {
+    "isbn": "9780199839667",
+    "dateFinished": "2021-05-30",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Who Controls the Internet?",
+    "authors": [
+      "Jack Goldsmith",
+      "Tim Wu"
+    ],
+    "publishedDate": "2006-03-17",
+    "description": "Is the Internet erasing national borders? Will the future of the Net be set by Internet engineers, rogue programmers, the United Nations, or powerful countries? Who's really in control of what's happening on the Net? In this provocative new book, Jack Goldsmith and Tim Wu tell the fascinating story of the Internet's challenge to governmental rule in the 1990s, and the ensuing battles with governments around the world. It's a book about the fate of one idea--that the Internet might liberate us forever from government, borders, and even our physical selves. We learn of Google's struggles with the French government and Yahoo's capitulation to the Chinese regime; of how the European Union sets privacy standards on the Net for the entire world; and of eBay's struggles with fraud and how it slowly learned to trust the FBI. In a decade of events the original vision is uprooted, as governments time and time again assert their power to direct the future of the Internet. The destiny of the Internet over the next decades, argue Goldsmith and Wu, will reflect the interests of powerful nations and the conflicts within and between them. While acknowledging the many attractions of the earliest visions of the Internet, the authors describe the new order, and speaking to both its surprising virtues and unavoidable vices. Far from destroying the Internet, the experience of the last decade has lead to a quiet rediscovery of some of the oldest functions and justifications for territorial government. While territorial governments have unavoidable problems, it has proven hard to replace what legitimacy governments have, and harder yet to replace the system of rule of law that controls the unchecked evils of anarchy. While the Net will change some of the ways that territorial states govern, it will not diminish the oldest and most fundamental roles of government and challenges of governance. Well written and filled with fascinating examples, including colorful portraits of many key players in Internet history, this is a work that is bound to stir heated debate in the cyberspace community.",
+    "pageCount": 238,
+    "printType": "BOOK",
+    "categories": [
+      "Law"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=zxj00JRRtEcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=zxj00JRRtEcC"
+  },
+  {
     "isbn": "9781631495748",
     "dateFinished": "2024-04-21",
     "status": "finished",
