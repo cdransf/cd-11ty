@@ -4470,6 +4470,30 @@
     "link": "https://play.google.com/store/books/details?id=zou9DwAAQBAJ"
   },
   {
+    "isbn": "9781620402504",
+    "dateFinished": "2021-12-09",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Dreamland",
+    "authors": [
+      "Sam Quinones"
+    ],
+    "publishedDate": "2015-04-21",
+    "description": "An explosive true account of addiction, marketing and the making of an epidemic weaves together the story of Purdue Pharma's campaign to market OxyContin, while, at the same time, a massive influx of black tar heroin took the county by storm through an almost unbreakable marking and distribution system.",
+    "pageCount": 385,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=wpfKBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Dreamland.html?hl=&id=wpfKBwAAQBAJ"
+  },
+  {
     "isbn": "9780063251281",
     "dateFinished": "2023-08-11",
     "status": "finished",
