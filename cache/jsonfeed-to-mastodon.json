@@ -12993,5 +12993,16 @@
       "https://social.lol/users/cory/statuses/112364796498005793"
     ],
     "lastTootTimestamp": 1714550727867
+  },
+  "https://coryd.dev/posts/2024/handling-images-with-b2-netlify-image-cdn-hazel-mountain-duck/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9oYW5kbGluZy1pbWFnZXMtd2l0aC1iMi1uZXRsaWZ5LWltYWdlLWNkbi1oYXplbC1tb3VudGFpbi1kdWNrLw==",
+    "title": "📝: Handling images with B2, Netlify's image CDN, Hazel and Mountain Duck",
+    "url": "https://coryd.dev/posts/2024/handling-images-with-b2-netlify-image-cdn-hazel-mountain-duck/",
+    "content_text": "📝: Handling images with B2, Netlify's image CDN, Hazel and Mountain Duck #WebDev #JavaScript #Netlify #Backblaze #macOS #Apple https://coryd.dev/posts/2024/handling-images-with-b2-netlify-image-cdn-hazel-mountain-duck/",
+    "date_published": "Wed, 01 May 2024 17:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112366988846397790"
+    ],
+    "lastTootTimestamp": 1714584180464
   }
 }
