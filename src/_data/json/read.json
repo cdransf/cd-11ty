@@ -261,6 +261,30 @@
     "link": "https://play.google.com/store/books/details?id=zxj00JRRtEcC"
   },
   {
+    "isbn": "9781101593585",
+    "dateFinished": "2021-07-05",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "This Machine Kills Secrets",
+    "authors": [
+      "Andy Greenberg"
+    ],
+    "publishedDate": "2012-09-13",
+    "description": "At last, the first full account of the cypherpunks who aim to free the world’s institutional secrets, by Forbes journalist Andy Greenberg who has traced their shadowy history from the cryptography revolution of the 1970s to Wikileaks founding hacker Julian Assange, Anonymous, and beyond. WikiLeaks brought to light a new form of whistleblowing, using powerful cryptographic code to hide leakers’ identities while they spill the private data of government agencies and corporations. But that technology has been evolving for decades in the hands of hackers and radical activists, from the libertarian enclaves of Northern California to Berlin to the Balkans. And the secret-killing machine continues to evolve beyond WikiLeaks, as a movement of hacktivists aims to obliterate the world’s institutional secrecy. This is the story of the code and the characters—idealists, anarchists, extremists—who are transforming the next generation’s notion of what activism can be. With unrivaled access to such major players as Julian Assange, Daniel Domscheit-Berg, and WikiLeaks’ shadowy engineer known as the Architect, never before interviewed, reporter Andy Greenberg unveils the world of politically-motivated hackers—who they are and how they operate.",
+    "pageCount": 400,
+    "printType": "BOOK",
+    "categories": [
+      "Computers"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=vVU-l_DpZaIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=vVU-l_DpZaIC"
+  },
+  {
     "isbn": "9781631495748",
     "dateFinished": "2024-04-21",
     "status": "finished",
