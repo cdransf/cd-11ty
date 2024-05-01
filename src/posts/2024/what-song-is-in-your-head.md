@@ -3,7 +3,6 @@ date: '2024-05-01T11:15-08:00'
 title: 'What song is in your head?'
 description: "I saw this carved into a table in Austin once and it — like many songs — has been stuck in my head ever since. I'll get hooked on a song and circle back to that roughly carved message."
 tags: ['music']
-image: https://coryd.dev/media/blog/what-song.png
 ---
 I saw this carved into a table in Austin once and it — like many songs — has been stuck in my head ever since. I'll get hooked on a song and circle back to that roughly carved message.<!-- excerpt -->
 
