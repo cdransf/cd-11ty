@@ -1,5 +1,28 @@
 [
   {
+    "isbn": "978-1-952616-50-1",
+    "dateFinished": "2011-06-07",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "development"
+    ],
+    "title": "Responsive Web Design",
+    "authors": [
+      "Ethan Marcotte"
+    ],
+    "publishedDate": "2014-12-02",
+    "description": "Think beyond the desktop, and craft designs that respond to your users' needs-no matter how large or small the display.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Computers"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=8Q7bzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Responsive_Web_Design.html?hl=&id=8Q7bzwEACAAJ"
+  },
+  {
     "isbn": "9780132119177",
     "dateFinished": "2018-02-23",
     "status": "finished",
