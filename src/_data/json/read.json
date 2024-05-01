@@ -309,6 +309,31 @@
     "link": "https://books.google.com/books/about/Empire_of_Pain.html?hl=&id=tN8OEAAAQBAJ"
   },
   {
+    "isbn": "9780451497918",
+    "dateFinished": "2021-09-04",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction",
+      "politics"
+    ],
+    "title": "The Perfect Weapon",
+    "authors": [
+      "David E. Sanger"
+    ],
+    "publishedDate": "2018-06-19",
+    "description": "NOW AN HBO® DOCUMENTARY FROM AWARD-WINNING DIRECTOR JOHN MAGGIO • “An important—and deeply sobering—new book about cyberwarfare” (Nicholas Kristof, New York Times), now updated with a new chapter. The Perfect Weapon is the startling inside story of how the rise of cyberweapons transformed geopolitics like nothing since the invention of the atomic bomb. Cheap to acquire, easy to deny, and usable for a variety of malicious purposes, cyber is now the weapon of choice for democracies, dictators, and terrorists. Two presidents—Bush and Obama—drew first blood with Operation Olympic Games, which used malicious code to blow up Iran’s nuclear centrifuges, and yet America proved remarkably unprepared when its own weapons were stolen from its arsenal and, during President Trump’s first year, turned back on the United States and its allies. And if Obama would begin his presidency by helping to launch the new era of cyberwar, he would end it struggling unsuccessfully to defend the 2016 U.S. election from interference by Russia, with Vladimir Putin drawing on the same playbook he used to destabilize Ukraine. Moving from the White House Situation Room to the dens of Chinese government hackers to the boardrooms of Silicon Valley, New York Times national security correspondent David Sanger reveals a world coming face-to-face with the perils of technological revolution, where everyone is a target. “Timely and bracing . . . With the deep knowledge and bright clarity that have long characterized his work, Sanger recounts the cunning and dangerous development of cyberspace into the global battlefield of the twenty-first century.”—Washington Post",
+    "pageCount": 402,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=htc7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=htc7DwAAQBAJ"
+  },
+  {
     "isbn": "9781631495748",
     "dateFinished": "2024-04-21",
     "status": "finished",
