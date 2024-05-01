@@ -12900,7 +12900,7 @@
     "title": "🎧: My top artists for the week: Full of Hell @ 48 plays, Replicant @ 39 plays, Portrayal of Guilt @ 18 plays, Bruce Springsteen @ 17 plays, Mortuous @ 16 plays, Anxious @ 15 plays, Civerous @ 14 plays, Nothing @ 14 plays #Music",
     "url": "https://coryd.dev/now?ts=2024-17#artists",
     "content_text": "🎧: My top artists for the week: Full of Hell @ 48 plays, Replicant @ 39 plays, Portrayal of Guilt @ 18 plays, Bruce Springsteen @ 17 plays, Mortuous @ 16 plays, Anxious @ 15 plays, Civerous @ 14 plays, Nothing @ 14 plays #Music  https://coryd.dev/now?ts=2024-17#artists",
-    "date_published": "Tue, 23 Apr 2024 08:00:00 GMT",
+    "date_published": "Wed, 24 Apr 2024 08:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112352083701336133"
     ],
@@ -12982,5 +12982,16 @@
       "https://social.lol/users/cory/statuses/112358187674190154"
     ],
     "lastTootTimestamp": 1714449885234
+  },
+  "https://trakt.tv/movies/john-mulaney-kid-gorgeous-at-radio-city-2018": {
+    "id": "aHR0cHM6Ly90cmFrdC50di9tb3ZpZXMvam9obi1tdWxhbmV5LWtpZC1nb3JnZW91cy1hdC1yYWRpby1jaXR5LTIwMTg=",
+    "title": "🎥: John Mulaney: Kid Gorgeous at Radio City",
+    "url": "https://trakt.tv/movies/john-mulaney-kid-gorgeous-at-radio-city-2018",
+    "content_text": "🎥: John Mulaney: Kid Gorgeous at Radio City #Movies #Watching  undefined https://trakt.tv/movies/john-mulaney-kid-gorgeous-at-radio-city-2018",
+    "date_published": "Wed, 01 May 2024 05:36:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112364796498005793"
+    ],
+    "lastTootTimestamp": 1714550727867
   }
 }
