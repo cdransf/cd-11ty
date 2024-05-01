@@ -4760,6 +4760,27 @@
     "link": "https://play.google.com/store/books/details?id=mcETEAAAQBAJ"
   },
   {
+    "isbn": "9781952616112",
+    "dateFinished": "2023-07-04",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "development",
+      "nonfiction"
+    ],
+    "title": "Responsible JavaScript",
+    "authors": [
+      "Jeremy Wagner"
+    ],
+    "publishedDate": "2021-10-26",
+    "description": "Learn how to use JavaScript responsibly and create resilient experiences that are more accessible and inclusive.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=SAfNzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Responsible_JavaScript.html?hl=&id=SAfNzgEACAAJ"
+  },
+  {
     "isbn": "9780063251281",
     "dateFinished": "2023-08-11",
     "status": "finished",
