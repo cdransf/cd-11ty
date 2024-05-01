@@ -37,9 +37,6 @@
 /assets/img/social-preview/adding-a-light/dark-theme-toggle-preview.jpeg /assets/img/social-preview/adding-a-light-dark-theme-toggle-preview.jpeg 301!
 /assets/img/social-preview/go-ahead-and-block-ai-web- /assets/img/social-preview/go-ahead-and-block-ai-web-crawlers-preview.jpeg 301!
 /-want-anything-your-ai-generates/ /posts/2024/i-dont-want-anything-your-ai-generates/ 301!
-/4afe62271e477e.js http://static.getclicky.com/js?in=/2842c5ddc46e5 200
-/4dcb93321b2a3b https://in.getclicky.com/in.php 200
-/404ca498061b54 http://in.getclicky.com/101449513ns.gif 200
 
 # 400s
 /wp-* /400/ 400
@@ -62,19 +59,18 @@
 
 # assets
 /favicon.ico /assets/icons/favicon.ico 200!
-/apple-touch-icon.png /assets/icons/apple-touch-icon.png 200!
-/apple-touch-icon /assets/icons/apple-touch-icon.png 200!
-/apple-touch-icon-precomposed.png /assets/icons/apple-touch-icon.png 200!
-/static/favicons/apple-touch-icon.png /assets/icons/apple-touch-icon.png 200!
-/static/images/default.png /assets/img/default.png 301!
-/static/images/avatar.webp https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=500&h=500&fm=webp 301!
-/assets/img/cache/avatar-800w.webp /assets/img/cache/avatar-880w.webp 301!
-/assets/img/favicon/apple-touch-icon.png /assets/icons/apple-touch-icon.png 301!
-/assets/img/favicon/favicon-32x32.png /assets/icons/favicon.ico 301!
-/assets/img/favicon/favicon-16x16.png /assets/icons/favicon.ico 301!
-/assets/img/logo.webp https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=500&h=500&fm=webp 301!
-/assets/img/ogi/default.jpg https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=500&h=500&fm=webp 301!
-https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=144&h=144 https://coryd.dev/assets/img/feed-icon.png
+/apple-touch-icon.png https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=144&h=144 200!
+/apple-touch-icon https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=144&h=144 200!
+/apple-touch-icon-precomposed.png https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=144&h=144 200!
+/static/favicons/apple-touch-icon.png https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=144&h=144 200!
+/static/images/default.png /assets/img/default.png 200
+https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=500&h=500&fm=webp /static/images/avatar.webp 200!
+https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=144&h=144 /assets/icons/apple-touch-icon.png 200!
+/assets/img/favicon/favicon-32x32.png /assets/icons/favicon.ico 200!
+/assets/img/favicon/favicon-16x16.png /assets/icons/favicon.ico 200!
+https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=500&h=500&fm=webp /assets/img/logo.webp 200!
+/assets/img/ogi/default.jpg https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=500&h=500&fm=jpg 200!
+/assets/img/feed-icon.png https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=144&h=144 200!
 
 # general
 /articles/ / 301!
@@ -82,7 +78,7 @@ https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=144&h=144 https
 /mastodon https://social.lol/@cory 301!
 /coffee https://www.buymeacoffee.com/cory 301!
 /speedlify https://speedlify.coryd.dev 301!
-/books/want-to-read/ /books/want-to-read/0/ 200
+/books/want-to-read/ /books/want-to-read/0/ 200!
 
 # netlify app domain
 https://cdme.netlify.app https://coryd.dev 301!
@@ -103,9 +99,9 @@ https://cdme.netlify.app https://coryd.dev 301!
 /follow.json https://feedpress.me/coryd-follow.json
 
 # media
-/media/* https://f001.backblazeb2.com/file/coryd-dev-images/:splat 200
+/media/* https://f001.backblazeb2.com/file/coryd-dev-images/:splat 200!
 
 # analytics
-/23af0256fe76a.js http://static.getclicky.com/js?in=/2842c5ddc46e5 200
-/2842c5ddc46e5 https://in.getclicky.com/in.php 200
-/7afb285ad050d http://in.getclicky.com/101449513ns.gif 200
+/23af0256fe76a.js http://static.getclicky.com/js?in=/2842c5ddc46e5 200!
+/2842c5ddc46e5 https://in.getclicky.com/in.php 200!
+/7afb285ad050d http://in.getclicky.com/101449513ns.gif 200!
