@@ -4591,6 +4591,30 @@
     "link": "https://play.google.com/store/books/details?id=L-n8DwAAQBAJ"
   },
   {
+    "isbn": "9781541724013",
+    "dateFinished": "2022-07-10",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "The Jakarta Method",
+    "authors": [
+      "Vincent Bevins"
+    ],
+    "publishedDate": "2020-05-19",
+    "description": "NAMED ONE OF THE BEST BOOKS OF 2020 BY NPR, THE FINANCIAL TIMES, AND GQ The hidden story of the wanton slaughter -- in Indonesia, Latin America, and around the world -- backed by the United States. In 1965, the U.S. government helped the Indonesian military kill approximately one million innocent civilians. This was one of the most important turning points of the twentieth century, eliminating the largest communist party outside China and the Soviet Union and inspiring copycat terror programs in faraway countries like Brazil and Chile. But these events remain widely overlooked, precisely because the CIA's secret interventions were so successful. In this bold and comprehensive new history, Vincent Bevins builds on his incisive reporting for the Washington Post, using recently declassified documents, archival research and eye-witness testimony collected across twelve countries to reveal a shocking legacy that spans the globe. For decades, it's been believed that parts of the developing world passed peacefully into the U.S.-led capitalist system. The Jakarta Method demonstrates that the brutal extermination of unarmed leftists was a fundamental part of Washington's final triumph in the Cold War.",
+    "pageCount": 362,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ifusDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=ifusDwAAQBAJ"
+  },
+  {
     "isbn": "9780063251281",
     "dateFinished": "2023-08-11",
     "status": "finished",
