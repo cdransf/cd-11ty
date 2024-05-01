@@ -334,6 +334,30 @@
     "link": "https://play.google.com/store/books/details?id=htc7DwAAQBAJ"
   },
   {
+    "isbn": "9781509526437",
+    "dateFinished": "2021-10-26",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "politics"
+    ],
+    "title": "Race After Technology",
+    "authors": [
+      "Ruha Benjamin"
+    ],
+    "publishedDate": "2019-07-09",
+    "description": "From everyday apps to complex algorithms, Ruha Benjamin cuts through tech-industry hype to understand how emerging technologies can reinforce White supremacy and deepen social inequity. Benjamin argues that automation, far from being a sinister story of racist programmers scheming on the dark web, has the potential to hide, speed up, and deepen discrimination while appearing neutral and even benevolent when compared to the racism of a previous era. Presenting the concept of the “New Jim Code,” she shows how a range of discriminatory designs encode inequity by explicitly amplifying racial hierarchies; by ignoring but thereby replicating social divisions; or by aiming to fix racial bias but ultimately doing quite the opposite. Moreover, she makes a compelling case for race itself as a kind of technology, designed to stratify and sanctify social injustice in the architecture of everyday life. This illuminating guide provides conceptual tools for decoding tech promises with sociologically informed skepticism. In doing so, it challenges us to question not only the technologies we are sold but also the ones we ourselves manufacture. Visit the book's free Discussion Guide here.",
+    "pageCount": 172,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=G6-hDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=G6-hDwAAQBAJ"
+  },
+  {
     "isbn": "9781631495748",
     "dateFinished": "2024-04-21",
     "status": "finished",
