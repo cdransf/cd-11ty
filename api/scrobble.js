@@ -37,7 +37,6 @@ export default async (request) => {
   const data = await request.formData()
   const payload = JSON.parse(data.get('payload'))
   const artists = getStore('artists')
-  const albums = getStore('albums')
   const scrobbles = getStore('scrobbles')
 
   if (payload?.event === 'media.scrobble') {
