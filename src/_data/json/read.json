@@ -4735,6 +4735,31 @@
     "link": "https://books.google.com/books/about/The_Impossible_City.html?hl=&id=hrhPEAAAQBAJ"
   },
   {
+    "isbn": "9781984878540",
+    "dateFinished": "2023-05-27",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "politics",
+      "nonfiction"
+    ],
+    "title": "The Contrarian",
+    "authors": [
+      "Max Chafkin"
+    ],
+    "publishedDate": "2021-09-21",
+    "description": "A New York Times Notable Book A biography of venture capitalist and entrepreneur Peter Thiel, the enigmatic, controversial, and hugely influential power broker who sits at the dynamic intersection of tech, business, and politics “Max Chafkin’s The Contrarian is much more than a consistently shocking biography of Peter Thiel, the most important investor in tech and a key supporter of the Donald Trump presidency. It’s also a disturbing history of Silicon Valley that will make you reconsider the ideological foundations of America’s relentless engine of creative destruction.”—Brad Stone, author of The Everything Store and Amazon Unbound Since the days of the dot-com bubble in the late 1990s, no industry has made a greater impact on the world than Silicon Valley. And few individuals have done more to shape Silicon Valley than Peter Thiel. The billionaire venture capitalist and entrepreneur has been a behind-the-scenes operator influencing countless aspects of our contemporary way of life, from the technologies we use every day to the delicate power balance between Silicon Valley, Wall Street, and Washington. But despite his power and the ubiquity of his projects, no public figure is quite so mysterious. In the first major biography of Thiel, Max Chafkin traces the trajectory of the innovator's singular life and worldview, from his upbringing as the child of immigrant parents and years at Stanford as a burgeoning conservative thought leader to his founding of PayPal and Palantir, early investment in Facebook and SpaceX, and relationships with fellow tech titans Mark Zuckerberg, Elon Musk, and Eric Schmidt. The Contrarian illuminates the extent to which Thiel has sought to export his values to the corridors of power beyond Silicon Valley, including funding the lawsuit that destroyed the blog Gawker and strenuously backing far-right political candidates, notably Donald Trump for president in 2016. Eye-opening and deeply reported, The Contrarian is a revelatory biography of a one-of-a-kind leader and an incisive portrait of a tech industry whose explosive growth and power is both thrilling and fraught with controversy.",
+    "pageCount": 400,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=mcETEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=mcETEAAAQBAJ"
+  },
+  {
     "isbn": "9780063251281",
     "dateFinished": "2023-08-11",
     "status": "finished",
