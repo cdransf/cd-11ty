@@ -4519,6 +4519,30 @@
     "link": "https://play.google.com/store/books/details?id=ShZxEAAAQBAJ"
   },
   {
+    "isbn": "1328663795",
+    "dateFinished": "2022-02-09",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Blitzed",
+    "authors": [
+      "Norman Ohler"
+    ],
+    "publishedDate": "2017",
+    "description": "A fast-paced, highly original history that uncovers the full extent of drug use in Nazi Germany--from Hitler's all-consuming reliance on a slew of substances, to the drugs that permeated the regime and played an integral role in Germany's military performance and ultimate downfall in World War II",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Anti-communist movements"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=DzQ8vgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Blitzed.html?hl=&id=DzQ8vgAACAAJ"
+  },
+  {
     "isbn": "9780063251281",
     "dateFinished": "2023-08-11",
     "status": "finished",
