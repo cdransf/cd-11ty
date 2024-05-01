@@ -9833,5 +9833,27 @@
     "thumbnail": "https://books.google.com/books/content?id=PWU0wwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/From_the_Basement.html?hl=&id=PWU0wwEACAAJ"
+  },
+  {
+    "isbn": "9781541702691",
+    "dateAdded": "2024-04-30",
+    "status": "want to read",
+    "rating": "unrated",
+    "notes": "2024-04-30",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Dark Wire",
+    "authors": [
+      "Joseph Cox"
+    ],
+    "publishedDate": "2024-06-04",
+    "description": "This cat-and-mouse story of a vast FBI sting operation reveals​ how the criminal underworld has become a globalized economy in its own right--one that can't be policed without crossing complicated ethical boundaries. Beginning in 2018, a powerful app for secure communications, called Anom, began to take root among drug dealers and other criminals. It had extraordinary safeguards to keep out prying eyes--the power to quickly wipe data, voice-masking technology, and more. It was better than other apps popular among organized crime syndicates, except for one thing: it was secretly run by law enforcement. Over the next few years, the FBI, along with law enforcement partners in Australia and parts of Europe, got a front row seat to the global criminal underworld. They watched drug deals and hits being planned in real time, making arrests where they could without blowing their cover. For a period of years, some one hundred thousand criminals worldwide, including members of South American drug cartels, the Calabrian mafia, and the Chinese Triad, did their business in full view of the officers they were trying to evade. It was a sprawling global economy as efficient and interconnected as the legal one. But a surveillance operation like this couldn't last. It was too dangerous, too ethically fraught, too large. And it all ended in spectacular fashion. Dark Wire is more than the story of this enormous sting operation--it shows the fundamental problems of policing in such a vast and high-speed economy. This is a caper for our modern world, where everyone is connected and no one is completely free.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "thumbnail": "https://books.google.com/books/content?id=fZ460AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Dark_Wire.html?hl=&id=fZ460AEACAAJ"
   }
 ]
