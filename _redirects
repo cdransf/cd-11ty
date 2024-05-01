@@ -32,7 +32,6 @@
 /tags/chatgpt/ /tags/ai/ 301!
 /tags/socialmedia /tags/social%20media/ 301!
 /blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301!
-/assets/img/social-card.jpg /assets/img/ogi/default.jpg 301!
 /assets/img/social-preview/your-site-your-home-your-web- /assets/img/social-preview/your-site-your-home-your-web-preview.jpeg 301!
 /assets/img/social-preview/adding-a-light/dark-theme-toggle-preview.jpeg /assets/img/social-preview/adding-a-light-dark-theme-toggle-preview.jpeg 301!
 /assets/img/social-preview/go-ahead-and-block-ai-web- /assets/img/social-preview/go-ahead-and-block-ai-web-crawlers-preview.jpeg 301!
@@ -59,18 +58,16 @@
 
 # assets
 /favicon.ico /assets/icons/favicon.ico 200!
-/apple-touch-icon.png https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=144&h=144 200!
-/apple-touch-icon https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=144&h=144 200!
-/apple-touch-icon-precomposed.png https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=144&h=144 200!
-/static/favicons/apple-touch-icon.png https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=144&h=144 200!
-/static/images/default.png /assets/img/default.png 200
-https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=500&h=500&fm=webp /static/images/avatar.webp 200!
-https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=144&h=144 /assets/icons/apple-touch-icon.png 200!
+/apple-touch-icon.png /assets/icons/apple-touch-icon.png 200!
+/apple-touch-icon /assets/icons/apple-touch-icon.png 200!
+/apple-touch-icon-precomposed.png /assets/icons/apple-touch-icon.png 200!
+/static/favicons/apple-touch-icon.png /assets/icons/apple-touch-icon.png 200!
+/static/images/avatar.png /assets/img/default.png 200!
+/static/images/avatar.webp /assets/img/default.webp 200!
 /assets/img/favicon/favicon-32x32.png /assets/icons/favicon.ico 200!
 /assets/img/favicon/favicon-16x16.png /assets/icons/favicon.ico 200!
-https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=500&h=500&fm=webp /assets/img/logo.webp 200!
-/assets/img/ogi/default.jpg https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=500&h=500&fm=jpg 200!
-/assets/img/feed-icon.png https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=144&h=144 200!
+/assets/img/logo.webp /assets/img/default.webp 200!
+/assets/img/feed-icon.png /assets/icons/apple-touch-icon.png 200!
 
 # general
 /articles/ / 301!
