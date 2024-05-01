@@ -1774,6 +1774,11 @@
     "genre": "grindcore",
     "image": "https://coryd.dev/.netlify/images/?url=/media/artists/wormrot.jpg&fit=cover&w=320&h=320"
   },
+  "worst-party-ever": {
+    "mbid": "24947203-c6e2-46f3-b84a-f9f8c8cabc8e",
+    "genre": "emo",
+    "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/worst-party-ever.jpg&fit=cover&w=320&h=320"
+  },
   "xenomorph": {
     "mbid": "507a85c8-49c9-4518-ad38-eafcefbdd156",
     "genre": "death metal",
