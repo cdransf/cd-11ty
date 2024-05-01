@@ -1,5 +1,28 @@
 [
   {
+    "isbn": "978-1-952616-50-1",
+    "dateFinished": "2011-06-07",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "development"
+    ],
+    "title": "Responsive Web Design",
+    "authors": [
+      "Ethan Marcotte"
+    ],
+    "publishedDate": "2014-12-02",
+    "description": "Think beyond the desktop, and craft designs that respond to your users' needs-no matter how large or small the display.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Computers"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=8Q7bzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Responsive_Web_Design.html?hl=&id=8Q7bzwEACAAJ"
+  },
+  {
     "isbn": "9780132119177",
     "dateFinished": "2018-02-23",
     "status": "finished",
@@ -6585,51 +6608,942 @@
     "link": "https://books.google.com/books/about/We_Were_Once_a_Family.html?hl=&id=N4t-EAAAQBAJ"
   },
   {
-    "isbn": "9781645036951",
-    "dateFinished": "2023-11-16",
+    "isbn": "9780802147950",
+    "dateFinished": "2020-01-16",
     "status": "finished",
     "rating": "unrated",
     "tags": [
-      "nonfiction",
-      "sports"
+      "nonfiction"
     ],
-    "title": "Black Ball",
+    "title": "Fentanyl, Inc.",
     "authors": [
-      "Theresa Runstedtler"
+      "Ben Westhoff"
     ],
-    "publishedDate": "2023",
-    "description": "Against the backdrop of ongoing massive resistance to racial desegregation and increasingly strident calls for Black Power, the NBA in the 1970s embodied the nation's imagined descent into disorder. The press and the public blamed young Black players for the chaos in the NBA, citing drugs, violence, greed, and criminality. The supposed decline of pro basketball became a metaphor for the first decades of integration in America: the rules of the game had changed, allowing more Black people onto a formerly white playing field, and now they were ruining everything. But Black Ball argues that this much-maligned period was pivotal to the rise of the NBA as the star-laden powerhouse we know today, thanks largely to the efforts of Black players in challenging the white basketball establishment of owners, coaches, and spectators. Spotlighting legendary players like Kareem Abdul-Jabbar, Bernard King, and Connie Hawkins, scholar Theresa Runstedtler expertly rewrites basketball's \"Dark Ages,\" weaving together her deep knowledge of the game's key icons and institutions with incisive social and political analysis of the era. Black ballers created an aerial, improvisational, and creative style derived from the playground courts of their neighborhoods, laying the foundation for the explosive popularity and profitability of the league in subsequent decades. They also transformed labor in the pro-basketball world, filing lawsuits and organizing unions to demand better salaries and greater autonomy. Without their skills, style, and savvy, there would be no Michael Jordan, Allen Iverson, or LeBron James today…",
-    "pageCount": 0,
+    "publishedDate": "2019-09-03",
+    "description": "A four-year investigation into the world of synthetic drugs—from black market factories to users & dealers to harm reduction activists—and what it revealed. A deeply human story, Fentanyl, Inc. is the first deep-dive investigation of a hazardous and illicit industry that has created a worldwide epidemic, ravaging communities and overwhelming and confounding government agencies that are challenged to combat it. “A whole new crop of chemicals is radically changing the recreational drug landscape,” writes Ben Westhoff. “These are known as Novel Psychoactive Substances (NPS) and they include replacements for known drugs like heroin, cocaine, ecstasy, and marijuana. They are synthetic, made in a laboratory, and are much more potent than traditional drugs” —and all-too-often tragically lethal. Drugs like fentanyl, K2, and Spice—and those with arcane acronyms like 25i-NBOMe—were all originally conceived in legitimate laboratories for proper scientific and medicinal purposes. Their formulas were then hijacked and manufactured by rogue chemists, largely in China, who change their molecular structures to stay ahead of the law, making the drugs’ effects impossible to predict. Westhoff has infiltrated this shadowy world. He tracks down the little-known scientists who invented these drugs and inadvertently killed thousands, as well as a mysterious drug baron who turned the law upside down in his home country of New Zealand. Westhoff visits the shady factories in China from which these drugs emanate, providing startling and original reporting on how China’s vast chemical industry operates, and how the Chinese government subsidizes it. Poignantly, he chronicles the lives of addicted users and dealers, families of victims, law enforcement officers, and underground drug awareness organizers in the United States and Europe. Together they represent the shocking and riveting full anatomy of a calamity we are just beginning to understand. From its depths, as Westhoff relates, are emerging new strategies that may provide essential long-term solutions to the drug crisis that has affected so many. “Timely and agonizing. . . . An impressive work of investigative journalism.” —USA Today “Westhoff explores the many-tentacled world of illicit opioids, from the streets of East St. Louis to Chinese pharmaceutical companies, from music festivals deep in the Michigan woods to sanctioned ‘shooting up rooms’ in Barcelona, in this frank, insightful, and occasionally searing exposé. . . . Westhoff’s well-reported and researched work will likely open eyes, slow knee-jerk responses, and start much needed conversations.” —Publishers Weekly “Our 25 Favorite Books of 2019” —St. Louis Post-Dispatch “Best Books of 2019” —Buzzfeed “Best Nonfiction of 2019” —Kirkus Reviews “50 Best Books of 2019” —Daily Telegraph “Best Nonfiction Books of 2019” —Tyler Cowen “Best Books of 2019” —Yahoo Finance",
+    "pageCount": 365,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=2xqSDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=2xqSDwAAQBAJ"
+  },
+  {
+    "isbn": "9780374716325",
+    "dateFinished": "2020-09-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Lurking",
+    "authors": [
+      "Joanne McNeil"
+    ],
+    "publishedDate": "2020-02-25",
+    "description": "One of Esquire’s Best Books to Elevate Your Reading List in 2020, , and a OneZero Best Tech Book of 2020. Named one of the 100 Notable books of 2020 by the End of the World Review. A concise but wide-ranging personal history of the internet from—for the first time—the point of view of the user In a shockingly short amount of time, the internet has bound people around the world together and torn us apart and changed not just the way we communicate but who we are and who we can be. It has created a new, unprecedented cultural space that we are all a part of—even if we don’t participate, that is how we participate—but by which we’re continually surprised, betrayed, enriched, befuddled. We have churned through platforms and technologies and in turn been churned by them. And yet, the internet is us and always has been. In Lurking, Joanne McNeil digs deep and identifies the primary (if sometimes contradictory) concerns of people online: searching, safety, privacy, identity, community, anonymity, and visibility. She charts what it is that brought people online and what keeps us here even as the social equations of digital life—what we’re made to trade, knowingly or otherwise, for the benefits of the internet—have shifted radically beneath us. It is a story we are accustomed to hearing as tales of entrepreneurs and visionaries and dynamic and powerful corporations, but there is a more profound, intimate story that hasn’t yet been told. Long one of the most incisive, ferociously intelligent, and widely respected cultural critics online, McNeil here establishes a singular vision of who we are now, tells the stories of how we became us, and helps us start to figure out what we do now.",
+    "pageCount": 163,
+    "printType": "BOOK",
+    "categories": [
+      "Computers"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=kaqEDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=kaqEDwAAQBAJ"
+  },
+  {
+    "isbn": "9781510764705",
+    "dateFinished": "2020-09-23",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Disloyal: A Memoir",
+    "authors": [
+      "Michael Cohen"
+    ],
+    "publishedDate": "2020-09-08",
+    "description": "A #1 New York Times Bestseller! \"I read it cover-to-cover. I did not intend to, but I started at the beginning and didn’t put it down until it was over.\"—Rachel Maddow, MSNBC This book almost didn’t see the light of day as government officials tried to bar its publication. The Inside Story of the Real President Trump, by His Former Attorney and Personal Advisor—The Man Who Helped Get Him Into the Oval Office Once Donald Trump’s fiercest surrogate, closest confidant, and staunchest defender, Michael Cohen knows where the skeletons are buried. This is the most devastating business and political horror story of the century. As Trump’s lawyer and “fixer,” Cohen not only witnessed firsthand but was also an active participant in the inner workings of Trump’s business empire, political campaign, and presidential administration. This is a story that you have not read in newspapers, or on social media, or watched on television. These are accounts that only someone who worked for Trump around the clock for over a decade—not a few months or even a couple of years—could know. Cohen describes Trump’s racist rants against President Barack Obama, Nelson Mandela, and Black and Hispanic people in general, as well as the cruelty, humiliation, and abuse he leveled at family and staff. Whether he’s exposing the fact that Trump engaged in tax fraud by inflating his wealth or electronic fraud by rigging an online survey, or outing Trump’s Neanderthal views towards women or his hush-money payments to clandestine lovers, Cohen pulls no punches. He shows Trump’s relentless willingness to lie, exaggerate, mislead, or manipulate. Trump emerges as a man without a soul—a man who courts evangelicals and then trashes them, panders to the common man, but then rips off small business owners, a con man who will do or say absolutely anything to win, regardless of the cost to his family, his associates, or his country. At the heart of Disloyal, we see how Cohen came under the spell of his charismatic \"Boss\" and, as a result, lost all sense of his moral compass. The real \"real\" Donald Trump who permeates these pages—the racist, sexist, homophobic, lying, cheating President—will be discussed, written about, and analyzed for years to come.",
+    "pageCount": 415,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=RX33DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=RX33DwAAQBAJ"
+  },
+  {
+    "isbn": "9781524745738",
+    "dateFinished": "2020-09-29",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "American Rule",
+    "authors": [
+      "Jared Yates Sexton"
+    ],
+    "publishedDate": "2021-09-14",
+    "description": "From writer and political analyst Jared Yates Sexton comes an eye-opening journey through American history that unearths and debunks the myths we've always told ourselves. Recent years have brought a reckoning in America. As rampant political corruption, stark inequality, and violent bigotry have come to the fore, many have faced two vital questions: How did we get here? And how do we move forward? An honest look at the past—and how it’s been covered up—is the only way to find the answers. Americans in power have abused and subjugated others since the nation’s very beginning, and myths of America’s unique goodness have both enabled that injustice and buried the truth for generations. In American Rule, Jared Yates Sexton blends deep research with stunning storytelling, digging into each era of growth and change that led us here—and laying bare the foundational myths at the heart of the American imagination. Stirring, unequivocal, and impossible to put down, American Rule tells the truth about what this nation has always been—and challenges us to forge a new path.",
+    "pageCount": 385,
     "printType": "BOOK",
     "categories": [
       "History"
     ],
-    "thumbnail": "https://books.google.com/books/content?id=te9EzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "thumbnail": "https://books.google.com/books/content?id=QOY9EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
-    "link": "https://books.google.com/books/about/Black_Ball.html?hl=&id=te9EzwEACAAJ"
+    "link": "https://books.google.com/books/about/American_Rule.html?hl=&id=QOY9EAAAQBAJ"
   },
   {
-    "isbn": "9780593085172",
-    "dateFinished": "2023-11-16",
+    "isbn": "9780771008795",
+    "dateFinished": "2020-10-13",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi",
+      "fantasy"
+    ],
+    "title": "The Handmaid's Tale",
+    "authors": [
+      "Margaret Atwood"
+    ],
+    "publishedDate": "2011-09-06",
+    "description": "An instant classic and eerily prescient cultural phenomenon, from “the patron saint of feminist dystopian fiction” (New York Times). Now an award-winning Hulu series starring Elizabeth Moss. In this multi-award-winning, bestselling novel, Margaret Atwood has created a stunning Orwellian vision of the near future. This is the story of Offred, one of the unfortunate “Handmaids” under the new social order who have only one purpose: to breed. In Gilead, where women are prohibited from holding jobs, reading, and forming friendships, Offred’s persistent memories of life in the “time before” and her will to survive are acts of rebellion. Provocative, startling, prophetic, and with Margaret Atwood’s devastating irony, wit, and acute perceptive powers in full force, The Handmaid’s Tale is at once a mordant satire and a dire warning.",
+    "pageCount": 370,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=cRPKOzWlOfUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Handmaid_s_Tale.html?hl=&id=cRPKOzWlOfUC"
+  },
+  {
+    "isbn": "9781785355448",
+    "dateFinished": "2020-10-18",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Kill All Normies",
+    "authors": [
+      "Angela Nagle"
+    ],
+    "publishedDate": "2017-06-07",
+    "description": "Recent years have seen a revival of the heated culture wars of the 1990s, but this time its battle ground is the internet. On one side the \"alt right\" ranges from the once obscure neo-reactionary and white separatist movements, to geeky subcultures like 4chan, to more mainstream manifestations such as the Trump-supporting gay libertarian Milo Yiannopolous. On the other side, a culture of struggle sessions and virtue signalling lurks behind a therapeutic language of trigger warnings and safe spaces. The feminist side of the online culture wars has its equally geeky subcultures right through to its mainstream expression. Kill All Normies explores some of the cultural genealogies and past parallels of these styles and subcultures, drawing from transgressive styles of 60s libertinism and conservative movements, to make the case for a rejection of the perpetual cultural turn.",
+    "pageCount": 136,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=y-MlDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=y-MlDwAAQBAJ"
+  },
+  {
+    "isbn": "9781250200891",
+    "dateFinished": "2020-10-29",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction",
+      "tech",
+      "economics"
+    ],
+    "title": "Break 'Em Up",
+    "authors": [
+      "Zephyr Teachout"
+    ],
+    "publishedDate": "2020-05-19",
+    "description": "A passionate attack on the monopolies that are throttling American democracy. Every facet of American life is being overtaken by big platform monopolists like Facebook, Google, and Bayer (which has merged with the former agricultural giant Monsanto), resulting in a greater concentration of wealth and power than we've seen since the Gilded Age. They are evolving into political entities that often have more influence than the actual government, bending state and federal legislatures to their will and even creating arbitration courts that circumvent the US justice system. How can we recover our freedom from these giants? Anti-corruption scholar and activist Zephyr Teachout has the answer: Break 'Em Up. This book is a clarion call for liberals and leftists looking to find a common cause. Teachout makes a compelling case that monopolies are the root cause of many of the issues that today's progressives care about; they drive economic inequality, harm the planet, limit the political power of average citizens, and historically-disenfranchised groups bear the brunt of their shameful and irresponsible business practices. In order to build a better future, we must eradicate monopolies from the private sector and create new safeguards that prevent new ones from seizing power. Through her expert analysis of monopolies in several sectors and their impact on courts, journalism, inequality, and politics, Teachout offers a concrete path toward thwarting these enemies of working Americans and reclaiming our democracy before it’s too late.",
+    "pageCount": 320,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=MPQ5yAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Break_Em_Up.html?hl=&id=MPQ5yAEACAAJ"
+  },
+  {
+    "isbn": "9780306846441",
+    "dateFinished": "2020-11-07",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Culture Warlords",
+    "authors": [
+      "Talia Lavin"
+    ],
+    "publishedDate": "2020-10-13",
+    "description": "One reporter takes an immersive dive into white supremacy's explosive online presence, exploring the undercurrents of propaganda, racism, misogyny, and history that led us to where we are now. Talia Lavin is every skinhead's worst nightmare: a loud and unapologetic Jewish woman, acerbic, smart, and profoundly antiracist, with the investigative chops to expose the tactics and ideologies of online hatemongers. Culture Warlords is the story of how Lavin, a frequent target of extremist trolls (including those at Fox News), dove into a byzantine online culture of hate and learned the intricacies of how white supremacy proliferates online. Within these pages, she reveals the extremists hiding in plain sight online: Incels. White nationalists. White supremacists. National Socialists. Proud Boys. Christian extremists. In order to showcase them in their natural habitat, Talia assumes a range of identities, going undercover as a blonde Nazi babe, a forlorn incel, and a violent Aryan femme fatale. Along the way, she discovers a whites-only dating site geared toward racists looking for love, a disturbing extremist YouTube channel run by a fourteen-year-old girl with over 800,000 followers, the everyday heroes of the antifascist movement, and much more. By combining compelling stories chock-full of catfishing and gate-crashing with her own in-depth, gut-wrenching research, she also turns the lens of anti-Semitism, racism, and white power back on itself in an attempt to dismantle and decimate the online hate movement from within. Shocking, humorous, and merciless in equal measure, Culture Warlords explores some of the vilest subcultures on the Web-and shows us how we can fight back.",
+    "pageCount": 288,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=XFfODwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=XFfODwAAQBAJ"
+  },
+  {
+    "isbn": "9780525509691",
+    "dateFinished": "2020-11-14",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "The Purpose of Power",
+    "authors": [
+      "Alicia Garza"
+    ],
+    "publishedDate": "2020-10-20",
+    "description": "An essential guide to building transformative movements to address the challenges of our time, from one of the country’s leading organizers and a co-creator of Black Lives Matter “Excellent and provocative . . . a gateway [to] urgent debates.”—Keeanga-Yamahtta Taylor, The New Yorker NAMED ONE OF THE BEST BOOK OF THE YEAR BY Time • Marie Claire • Kirkus Reviews In 2013, Alicia Garza wrote what she called “a love letter to Black people” on Facebook, in the aftermath of the acquittal of the man who murdered seventeen-year-old Trayvon Martin. Garza wrote: Black people. I love you. I love us. Our lives matter. With the speed and networking capacities of social media, #BlackLivesMatter became the hashtag heard ’round the world. But Garza knew even then that hashtags don’t start movements—people do. Long before #BlackLivesMatter became a rallying cry for this generation, Garza had spent the better part of two decades learning and unlearning some hard lessons about organizing. The lessons she offers are different from the “rules for radicals” that animated earlier generations of activists, and diverge from the charismatic, patriarchal model of the American civil rights movement. She reflects instead on how making room amongst the woke for those who are still awakening can inspire and activate more people to fight for the world we all deserve. This is the story of one woman’s lessons through years of bringing people together to create change. Most of all, it is a new paradigm for change for a new generation of changemakers, from the mind and heart behind one of the most important movements of our time.",
+    "pageCount": 353,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=JgLlDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=JgLlDwAAQBAJ"
+  },
+  {
+    "isbn": "9780804170048",
+    "dateFinished": "2020-11-30",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "The Attention Merchants",
+    "authors": [
+      "Tim Wu"
+    ],
+    "publishedDate": "2017-09-19",
+    "description": "From the author of the award-winning The Master Switch, who coined the term \"net neutrality”—a revelatory, ambitious and urgent account of how the capture and re-sale of human attention became the defining industry of our time. \"Dazzling.\" —Financial Times Ours is often called an information economy, but at a moment when access to information is virtually unlimited, our attention has become the ultimate commodity. In nearly every moment of our waking lives, we face a barrage of efforts to harvest our attention. This condition is not simply the byproduct of recent technological innovations but the result of more than a century's growth and expansion in the industries that feed on human attention. Wu’s narrative begins in the nineteenth century, when Benjamin Day discovered he could get rich selling newspapers for a penny. Since then, every new medium—from radio to television to Internet companies such as Google and Facebook—has attained commercial viability and immense riches by turning itself into an advertising platform. Since the early days, the basic business model of “attention merchants” has never changed: free diversion in exchange for a moment of your time, sold in turn to the highest-bidding advertiser. Full of lively, unexpected storytelling and piercing insight, The Attention Merchants lays bare the true nature of a ubiquitous reality we can no longer afford to accept at face value.",
+    "pageCount": 434,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=mNkxDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Attention_Merchants.html?hl=&id=mNkxDwAAQBAJ"
+  },
+  {
+    "isbn": "9780358237068",
+    "dateFinished": "2020-12-01",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Compromised",
+    "authors": [
+      "Peter Strzok"
+    ],
+    "publishedDate": "2020-09",
+    "description": "The FBI veteran behind the Russia investigation draws on decades of experience hunting foreign agents in the United States to lay bare the threat posed by President Trump.",
+    "pageCount": 387,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=jYvzDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Compromised.html?hl=&id=jYvzDwAAQBAJ"
+  },
+  {
+    "isbn": "9780061809613",
+    "dateFinished": "2020-12-16",
     "status": "finished",
     "rating": "unrated",
     "tags": [
       "scifi"
     ],
-    "title": "Providence",
+    "title": "The Sundering",
     "authors": [
-      "Max Barry"
+      "Walter Jon Williams"
     ],
-    "publishedDate": "2020",
-    "description": "Seven years after first contact, Providence Five launches. An enormous warship, built to protect humanity, it has a crew of four. Gilly, Talia, Anders, and Jackson will be confined to the ship for years, monitoring the AI-powered ship and reporting the war's progress to a global audience by way of social media. When their communications are cut, their ship becomes decreasingly trustworthy. To survive, they must win a fight that is suddenly and terrifyingly real. -- adapted from jacket",
-    "pageCount": 322,
+    "publishedDate": "2009-10-13",
+    "description": "“Space opera the way it ought to be [...] Bujold and Weber, bend the knee; interstellar adventure has a new king, and his name is Walter Jon Williams.” -- George R.R. Martin Following The Praxis, Walter Jon Williams’ critically-acclaimed mix of space opera and military science fiction, the conflict grows for the fate of humanity…and the universe. The Dread Empire of the Shaa is no more, following the death of the last oppressor. But freedom remains elusive for the myriad sentient races enslaved for ten centuries, as an even greater terror arises. The Naxids—a powerful insectoid species themselves subjugated until the recent Shaa demise—plan to fill the vacuum with their own bloody domination, and have already won a shattering victory with superior force and unimaginable cruelty. But two heroes survived the carnage at Magaria: Lord Gareth Martinez and the fiery, mysterious gun pilot Lady Caroline Sula, whose courageous exploits are becoming legend in the new history of galactic civil war. Yet their cunning, skill, and bravery may be no match for the overwhelming enemy descending upon the loyalist stronghold of Zanshaa, as the horrific battle looms that will determine the structure of the universe—and who shall live to inhabit it—for millennia to come.",
+    "pageCount": 448,
     "printType": "BOOK",
     "categories": [
       "Fiction"
     ],
-    "thumbnail": "https://books.google.com/books/content?id=yfLsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "thumbnail": "https://books.google.com/books/content?id=qYNIN3Vhe84C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
-    "link": "https://books.google.com/books/about/Providence.html?hl=&id=yfLsDwAAQBAJ"
+    "link": "https://play.google.com/store/books/details?id=qYNIN3Vhe84C"
+  },
+  {
+    "isbn": "9780241991411",
+    "dateFinished": "2021-01-03",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction",
+      "autobiography"
+    ],
+    "title": "A Promised Land",
+    "authors": [
+      "Barack Obama"
+    ],
+    "publishedDate": "2020-11-17",
+    "description": "THE #1 SUNDAY TIMES BESTSELLER A riveting, deeply personal account of history in the making-from the president who inspired us to believe in the power of democracy - and the perfect gift this Christmas! 'Gorgeously written, humorous, compelling, life affirming' Justin Webb, Mail on Sunday In the stirring, highly anticipated first volume of his presidential memoirs, Barack Obama tells the story of his improbable odyssey from young man searching for his identity to leader of the free world, describing in strikingly personal detail both his political education and the landmark moments of the first term of his historic presidency-a time of dramatic transformation and turmoil. Obama takes readers on a compelling journey from his earliest political aspirations to the pivotal Iowa caucus victory that demonstrated the power of grassroots activism to the watershed night of November 4, 2008, when he was elected 44th president of the United States, becoming the first African American to hold the nation's highest office. Reflecting on the presidency, he offers a unique and thoughtful exploration of both the awesome reach and the limits of presidential power, as well as singular insights into the dynamics of U.S. partisan politics and international diplomacy. Obama brings readers inside the Oval Office and the White House Situation Room, and to Moscow, Cairo, Beijing, and points beyond. We are privy to his thoughts as he assembles his cabinet, wrestles with a global financial crisis, takes the measure of Vladimir Putin, overcomes seemingly insurmountable odds to secure passage of the Affordable Care Act, clashes with generals about U.S. strategy in Afghanistan, tackles Wall Street reform, responds to the devastating Deepwater Horizon blowout, and authorizes Operation Neptune's Spear, which leads to the death of Osama bin Laden. A Promised Land is extraordinarily intimate and introspective-the story of one man's bet with history, the faith of a community organizer tested on the world stage. Obama is candid about the balancing act of running for office as a Black American, bearing the expectations of a generation buoyed by messages of \"hope and change,\" and meeting the moral challenges of high-stakes decision-making. He is frank about the forces that opposed him at home and abroad, open about how living in the White House affected his wife and daughters, and unafraid to reveal self-doubt and disappointment. Yet he never wavers from his belief that inside the great, ongoing American experiment, progress is always possible. This beautifully written and powerful book captures Barack Obama's conviction that democracy is not a gift from on high but something founded on empathy and common understanding and built together, day by day. 'What is unexpected in A Promised Land is the former president's candour' David Olusoga, Observer",
+    "pageCount": 768,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ypb9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/A_Promised_Land.html?hl=&id=ypb9DwAAQBAJ"
+  },
+  {
+    "isbn": "9780525561378",
+    "dateFinished": "2021-01-23",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction",
+      "politics"
+    ],
+    "title": "Zucked",
+    "authors": [
+      "Roger McNamee"
+    ],
+    "publishedDate": "2020-02-04",
+    "description": "One of the Financial Times' Best Business Books of 2019 The New York Times bestseller about a noted tech venture capitalist, early mentor to Mark Zuckerberg, and Facebook investor, who wakes up to the serious damage Facebook is doing to our society—and sets out to try to stop it. If you had told Roger McNamee even three years ago that he would soon be devoting himself to stopping Facebook from destroying our democracy, he would have howled with laughter. He had mentored many tech leaders in his illustrious career as an investor, but few things had made him prouder, or been better for his fund's bottom line, than his early service to Mark Zuckerberg. Still a large shareholder in Facebook, he had every good reason to stay on the bright side. Until he simply couldn't. Zucked is McNamee's intimate reckoning with the catastrophic failure of the head of one of the world's most powerful companies to face up to the damage he is doing. It's a story that begins with a series of rude awakenings. First there is the author's dawning realization that the platform is being manipulated by some very bad actors. Then there is the even more unsettling realization that Zuckerberg and Sheryl Sandberg are unable or unwilling to share his concerns, polite as they may be to his face. And then comes the election of Donald Trump, and the emergence of one horrific piece of news after another about the malign ends to which the Facebook platform has been put. To McNamee's shock, even still Facebook's leaders duck and dissemble, viewing the matter as a public relations problem. Now thoroughly alienated, McNamee digs into the issue, and fortuitously meets up with some fellow travelers who share his concern, and help him sharpen its focus. Soon he and a dream team of Silicon Valley technologists are charging into the fray, to raise consciousness about the existential threat of Facebook, and the persuasion architecture of the attention economy more broadly—to our public health and to our political order. Zucked is both an enthralling personal narrative and a masterful explication of the forces that have conspired to place us all on the horns of this dilemma. This is the story of a company and its leadership, but it's also a larger tale of a business sector unmoored from normal constraints, just at a moment of political and cultural crisis, the worst possible time to be given new tools for summoning the darker angels of our nature and whipping them into a frenzy. Like Jimmy Stewart in Rear Window, Roger McNamee happened to be in the right place to witness a crime, and it took him some time to make sense of what he was seeing and what we ought to do about it. The result of that effort is a wise, hard-hitting, and urgently necessary account that crystallizes the issue definitively for the rest of us.",
+    "pageCount": 402,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=DzHJDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Zucked.html?hl=&id=DzHJDwAAQBAJ"
+  },
+  {
+    "isbn": "9781953953322",
+    "dateFinished": "2021-01-24",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "culture"
+    ],
+    "title": "Get Together",
+    "authors": [
+      "Bailey Richardson ",
+      "Kevin Huynh ",
+      "Kai Elmer Sotto"
+    ],
+    "publishedDate": "2019-08-20",
+    "description": "A practical and heartfelt guide to cultivating a community, online or IRL. Although communities feel magical, they don’t come together by magic. Get Together is a practical and heartfelt guide to cultivating a community. Whether starting a run crew, connecting with fans online, or sparking a movement of K–12 teachers, the secret to getting people together is this: build your community with people, not for them. In Get Together, Bailey Richardson, Kevin Huynh, and Kai Elmer Sotto of People & Company share true stories of everyday people who have created thriving communities, both in person and online. They provide clear steps to untangle the challenge of getting passionate people together, helping individuals and organizations navigate the intricacies of leading a community, including: - How to rally the first people - How to get people talking - How to attract new, authentic folks - How to develop leaders and expand globally. The People & Company team reminds us that we each hold the potential to spark a community. Get Together shows readers that if we join forces—as company and customers, artist and fans, organizer and advocates—we’ll do more together than we ever could alone.",
+    "pageCount": 169,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=BRnBEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=BRnBEAAAQBAJ"
+  },
+  {
+    "isbn": "9781594206016",
+    "dateFinished": "2021-01-29",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Dark Mirror",
+    "authors": [
+      "Barton Gellman"
+    ],
+    "publishedDate": "2020-05-19",
+    "description": "“Engrossing. . . . Gellman [is] a thorough, exacting reporter . . . a marvelous narrator for this particular story, as he nimbly guides us through complex technical arcana and some stubborn ethical questions. . . . Dark Mirror would be simply pleasurable to read if the story it told didn’t also happen to be frighteningly real.” —Jennifer Szalai, The New York Times From the three-time Pulitzer Prize winner and author of the New York Times bestseller Angler, the definitive master narrative of Edward Snowden and the modern surveillance state, based on unique access to Snowden and groundbreaking reportage around the world. Edward Snowden touched off a global debate in 2013 when he gave Barton Gellman, Laura Poitras and Glenn Greenwald each a vast and explosive archive of highly classified files revealing the extent of the American government’s access to our every communication. They shared the Pulitzer Prize that year for public service. For Gellman, who never stopped reporting, that was only the beginning. He jumped off from what Snowden gave him to track the reach and methodology of the U.S. surveillance state and bring it to light with astonishing new clarity. Along the way, he interrogated Snowden’s own history and found important ways in which myth and reality do not line up. Gellman treats Snowden with respect, but this is no hagiographic account, and Dark Mirror sets the record straight in ways that are both fascinating and important. Dark Mirror is the story that Gellman could not tell before, a gripping inside narrative of investigative reporting as it happened and a deep dive into the machinery of the surveillance state. Gellman recounts the puzzles, dilemmas and tumultuous events behind the scenes of his work – in top secret intelligence facilities, in Moscow hotel rooms, in huddles with Post lawyers and editors, in Silicon Valley executive suites, and in encrypted messages from anonymous accounts. Within the book is a compelling portrait of national security journalism under pressure from legal threats, government investigations, and foreign intelligence agencies intent on stealing Gellman’s files. Throughout Dark Mirror, Gellman wages an escalating battle against unknown adversaries who force him to mimic their tradecraft in self-defense. With the vivid and insightful style that is the author’s trademark, Dark Mirror is a true-life spy tale about the surveillance-industrial revolution and its discontents. Along the way, with the benefit of fresh reporting, it tells the full story of a government leak unrivaled in drama since All the President’s Men.",
+    "pageCount": 450,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=7_LsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Dark_Mirror.html?hl=&id=7_LsDwAAQBAJ"
+  },
+  {
+    "isbn": "9780316365215",
+    "dateFinished": "2023-01-12",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "labor",
+      "health"
+    ],
+    "title": "Rest Is Resistance",
+    "authors": [
+      "Tricia Hersey"
+    ],
+    "publishedDate": "2022-10-11",
+    "description": "Far too many of us have claimed productivity as the cornerstone of success. Brainwashed by capitalism, we subject our bodies and minds to work at an unrealistic, damaging, and machine‑level pace of work -- feeding into the same engine that enslaved millions into brutal labor for its virtuous benefit. Our worth does not reside in how much we produce, especially for a system that exploits and dehumanizes us. Rest, in its simplest form, becomes an act of resistance and a reclaiming of power because it disrupts and pushes back against capitalism and white supremacy. From the founder and creator of The Nap Ministry, Rest Is Resistance is a battle cry, a guidebook, a map for a movement, and a field guide for the weary and hopeful. It is rooted in spiritual energy and centered in Black liberation, womanism, somatics, and Afrofuturism. With captivating storytelling and practical advice, all delivered in Hersey's lyrical voice and informed by her deep experience in theology, activism, and performance art, Rest Is Resistance is a call to action and manifesto for those who are sleep deprived, searching for justice, and longing to be liberated from the oppressive grip of Grind Culture.",
+    "pageCount": 272,
+    "printType": "BOOK",
+    "categories": [
+      "Body, Mind & Spirit"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=UwfuzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Rest_Is_Resistance.html?hl=&id=UwfuzgEACAAJ"
+  },
+  {
+    "isbn": "9781982156152",
+    "dateFinished": "2023-01-14",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "nonfiction"
+    ],
+    "title": "Red Roulette",
+    "authors": [
+      "Desmond Shum"
+    ],
+    "publishedDate": "2021-09-07",
+    "description": "\"THE BOOK CHINA DOESN'T WANT YOU TO READ.\"--CNN A riveting insider's story of how the Party and big money work in China today, by a man who, with his wife, Whitney Duan, rose to the zenith of power and wealth--and then fell out of favor. She was disappeared four years ago. News of this book led to a phone call from Whitney, proof that she's alive. As Desmond Shum was growing up impoverished in China, he vowed his life would be different. Through hard work and sheer tenacity he earned an American college degree and returned to his native country to establish himself in business. There, he met his future wife, the highly intelligent and equally ambitious Whitney Duan who was determined to make her mark within China's male-dominated society. Whitney and Desmond formed an effective team and, aided by relationships they formed with top members of China's Communist Party, the so-called red aristocracy, he vaulted into China's billionaire class. Soon they were developing the massive air cargo facility at Beijing International Airport, and they followed that feat with the creation of one of Beijing's premier hotels. They were dazzlingly successful, traveling in private jets, funding multi-million-dollar buildings and endowments, and purchasing expensive homes, vehicles, and art. But in 2017, their fates diverged irrevocably when Desmond, while residing overseas with his son, learned that his now ex-wife Whitney had vanished along with three coworkers. This is both Desmond's story and Whitney's, because she has not been able to tell it herself.",
+    "pageCount": 320,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=v788EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Red_Roulette.html?hl=&id=v788EAAAQBAJ"
+  },
+  {
+    "isbn": "9780399590436",
+    "dateFinished": "2023-01-18",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "The Mastermind",
+    "authors": [
+      "Evan Ratliff"
+    ],
+    "publishedDate": "2020-07-21",
+    "description": "The incredible true story of the decade-long quest to bring down Paul Le Roux—the creator of a frighteningly powerful Internet-enabled cartel who merged the ruthlessness of a drug lord with the technological savvy of a Silicon Valley entrepreneur. “A tour de force of shoe-leather reporting—undertaken, amid threats and menacing, at considerable personal risk.”—Los Angeles Times NAMED ONE OF THE BEST BOOKS OF THE YEAR BY The New York Times Book Review • NPR • Evening Standard • Kirkus Reviews It all started as an online prescription drug network, supplying hundreds of millions of dollars’ worth of painkillers to American customers. It would not stop there. Before long, the business had turned into a sprawling multinational conglomerate engaged in almost every conceivable aspect of criminal mayhem. Yachts carrying $100 million in cocaine. Safe houses in Hong Kong filled with gold bars. Shipments of methamphetamine from North Korea. Weapons deals with Iran. Mercenary armies in Somalia. Teams of hit men in the Philippines. Encryption programs so advanced that the government could not break them. The man behind it all, pulling the strings from a laptop in Manila, was Paul Calder Le Roux—a reclusive programmer turned criminal genius who could only exist in the networked world of the twenty-first century, and the kind of self-made crime boss that American law enforcement had never imagined. For half a decade, DEA agents played a global game of cat-and-mouse with Le Roux as he left terror and chaos in his wake. Each time they came close, he would slip away. It would take relentless investigative work, and a shocking betrayal from within his organization, to catch him. And when he was finally caught, the story turned again, as Le Roux struck a deal to bring down his own organization and the people he had once employed. Award-winning investigative journalist Evan Ratliff spent four years piecing together this intricate puzzle, chasing Le Roux’s empire and his shadowy henchmen around the world, conducting hundreds of interviews and uncovering thousands of documents. The result is a riveting, unprecedented account of a crime boss built by and for the digital age. Praise for The Mastermind “The Mastermind is true crime at its most stark and vivid depiction. Evan Ratliff’s work is well done from beginning to end, paralleling his investigative work with the work of the many federal agents developing the case against LeRoux.”—San Francisco Book Review (five stars) “A wholly engrossing story that joins the worlds of El Chapo and Edward Snowden; both disturbing and memorable.”—Kirkus Reviews (starred review)",
+    "pageCount": 498,
+    "printType": "BOOK",
+    "categories": [
+      "True Crime"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=T_PsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Mastermind.html?hl=&id=T_PsDwAAQBAJ"
+  },
+  {
+    "isbn": "9780062996213",
+    "dateFinished": "2023-01-26",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "The Key Man",
+    "authors": [
+      "Simon Clark",
+      "Will Louch"
+    ],
+    "publishedDate": "2021",
+    "description": "In this compelling story of greed, theft, and the dark underbelly of globalization and impact investing, two Wall Street Journal financial reporters investigate the shocking collapse of Abraaj-the largest private-equity failure in history-and the face behind its glimmering rise and catastrophic fall…",
+    "pageCount": 352,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ZZMGzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Key_Man.html?hl=&id=ZZMGzgEACAAJ"
+  },
+  {
+    "isbn": "9780316221047",
+    "dateFinished": "2023-02-12",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Operation Paperclip",
+    "authors": [
+      "Annie Jacobsen"
+    ],
+    "publishedDate": "2014-02-11",
+    "description": "The explosive story of America's secret post-WWII science programs, from the author of the New York Times bestseller Area 51 In the chaos following World War II, the U.S. government faced many difficult decisions, including what to do with the Third Reich's scientific minds. These were the brains behind the Nazis' once-indomitable war machine. So began Operation Paperclip, a decades-long, covert project to bring Hitler's scientists and their families to the United States. Many of these men were accused of war crimes, and others had stood trial at Nuremberg; one was convicted of mass murder and slavery. They were also directly responsible for major advances in rocketry, medical treatments, and the U.S. space program. Was Operation Paperclip a moral outrage, or did it help America win the Cold War? Drawing on exclusive interviews with dozens of Paperclip family members, colleagues, and interrogators, and with access to German archival documents (including previously unseen papers made available by direct descendants of the Third Reich's ranking members), files obtained through the Freedom of Information Act, and dossiers discovered in government archives and at Harvard University, Annie Jacobsen follows more than a dozen German scientists through their postwar lives and into a startling, complex, nefarious, and jealously guarded government secret of the twentieth century. In this definitive, controversial look at one of America's most strategic, and disturbing, government programs, Jacobsen shows just how dark government can get in the name of national security.",
+    "pageCount": 592,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=iHVTlwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Operation_Paperclip.html?hl=&id=iHVTlwEACAAJ"
+  },
+  {
+    "isbn": "1786070472",
+    "dateFinished": "2023-02-27",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics"
+    ],
+    "title": "The Panama Papers",
+    "authors": [
+      "Bastian Obermayer",
+      "Frederik Obermaier"
+    ],
+    "publishedDate": "2016",
+    "description": "\"With precision and purpose, THE PANAMA PAPERS is what 'Follow the Money' means.\" --Bob Woodward,The Washington Post Late one evening, investigative journalist Bastian Obermayer receives an anonymous message offering him access to secret data. Through encrypted channels, he then receives documents revealing how the president of Argentina has sequestered millions of dollars of state money for private use. This is just the beginning. Obermayer and fellowSüddeutsche journalist Frederik Obermaier find themselves immersed in the secret world where complex networks of letterbox companies help the super-rich to hide their money. Faced with the contents of the largest data leak in history, they activate an international network of journalists to follow every possible line of inquiry. Operating in the strictest secrecy for over a year, they uncover cases involving European prime ministers and international dictators, emirs and kings, celebrities and aristocrats. The real-life thriller behind the story of the century,The Panama Papers is an intense, unputdownable account that proves, once and for all, that there exists a small elite living by a different set of rules and blows their secret world wide open.",
+    "pageCount": 366,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=jNLhjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Panama_Papers.html?hl=&id=jNLhjwEACAAJ"
+  },
+  {
+    "isbn": "9780593492321",
+    "dateFinished": "2023-03-14",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "climate"
+    ],
+    "title": "The Climate Book",
+    "authors": [
+      "Greta Thunberg"
+    ],
+    "publishedDate": "2024-02-13",
+    "description": "A NEW YORK TIMES BESTSELLER We still have time to change the world. From climate activist Greta Thunberg, comes the essential handbook for making it happen. You might think it's an impossible task: secure a safe future for life on Earth, at a scale and speed never seen, against all the odds. There is hope—but only if we listen to the science before it's too late. In The Climate Book, Greta Thunberg has gathered the wisdom of over one hundred experts—geophysicists, oceanographers and meteorologists; engineers, economists and mathematicians; historians, philosophers and Indigenous leaders—to equip us all with the knowledge we need to combat climate disaster. Throughout, illuminating and often shocking grayscale charts, graphs, diagrams, photographs, and illustrations underscore their research and their arguments. Alongside them, she shares her own stories of demonstrating and uncovering greenwashing around the world, revealing how much we have been kept in the dark. This is one of our biggest challenges, she shows, but also our greatest source of hope. Once we are given the full picture, how can we not act? And if a schoolchild's strike could ignite a global protest, what could we do collectively if we tried? We are alive at the most decisive time in the history of humanity. Together, we can do the seemingly impossible. But it has to be us, and it has to be now.",
+    "pageCount": 465,
+    "printType": "BOOK",
+    "categories": [
+      "Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=4R3gEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Climate_Book.html?hl=&id=4R3gEAAAQBAJ"
+  },
+  {
+    "isbn": "0316509841",
+    "dateFinished": "2023-03-26",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "fantasy"
+    ],
+    "title": "The City We Became",
+    "authors": [
+      "N. K. Jemisin"
+    ],
+    "publishedDate": "2020-03-24",
+    "description": "Five New Yorkers must come together in order to defend their city from an ancient evil in the first book of a stunning new novel by Hugo Award-winning and NYT bestselling author N. K. Jemisin. Every great city has a soul. Some are as ancient as myths, and others are as new and destructive as children. New York City? She's got six. But every city also has a dark side. A roiling, ancient evil stirs in the halls of power, threatening to destroy the city and her six newborn avatars unless they can come together and stop it once and for all. For more from N. K. Jemisin, check out: The Inheritance TrilogyThe Hundred Thousand KingdomsThe Broken KingdomsThe Kingdom of Gods The Inheritance Trilogy (omnibus edition)Shades in Shadow: An Inheritance Triptych (e-only short fiction)The Awakened Kingdom (e-only novella) Dreamblood DuologyThe Killing MoonThe Shadowed Sun The Dreamblood Duology (omnibus) The Broken EarthThe Fifth SeasonThe Obelisk GateThe Stone Sky How Long 'til Black Future Month? (short story collection)",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=qyPZwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_City_We_Became.html?hl=&id=qyPZwAEACAAJ"
+  },
+  {
+    "isbn": "9780356512693",
+    "dateFinished": "2023-04-03",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "fantasy"
+    ],
+    "title": "The World We Make",
+    "authors": [
+      "N. K. Jemisin"
+    ],
+    "publishedDate": "2022",
+    "description": "From the record-breaking, four-time Hugo Award-winning N. K. Jemisin comes 'a glorious fantasy' (Neil Gaiman) - a story of culture, identity, magic and myths in contemporary New York City. The sequel to the critically acclaimed The City We Became, this is the final book of the Great Cities Duology. Every great city has a soul. A human avatar that embodies their city's heart and wields its magic. New York? She's got six. But all is not well in the city that never sleeps. Though Brooklyn, Manny, Bronca, Venezia, Padmini, and Neek have temporarily managed to stop the Woman in White from invading--and destroying the entire universe in the process--the mysterious capital \"E\" Enemy has more subtle powers at her disposal. A new candidate for mayor wielding the populist rhetoric of gentrification, xenophobia, and \"law and order\" may have what it takes to change the very nature of New York itself and take it down from the inside. In order to defeat him, and the Enemy who holds his purse strings, the avatars will have to join together with the other Great Cities of the world in order to bring her down for good and protect their world from complete destruction. 'Hopeful and enthralling, The World We Make is more evidence of [Jemisin's] ferocious talent' Esquire 'Jemisin brings her living-city saga to a satisfying conclusion, maintaining a sense of energy and excitement throughout' Booklist 'Jemisin embodies the spirit of the city in as lush and lively a voice as ever and does a masterful job incorporating even more history and magic' Publishers Weekly 'The conclusion to Jemisin's Great Cities duology is a searing commentary on present-day politics as manipulated by a primordial evil...This riveting and powerful urban fantasy duology is masterfully written' BuzzFeed News The Great Cities Duology The City We Became The World We Make",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=8o8IzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_World_We_Make.html?hl=&id=8o8IzgEACAAJ"
+  },
+  {
+    "isbn": "9780593652886",
+    "dateFinished": "2023-04-09",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "The Creative Act",
+    "authors": [
+      "Rick Rubin"
+    ],
+    "publishedDate": "2023-01-17",
+    "description": "The #1 New York Times bestseller. From the legendary music producer, a master at helping people connect with the wellsprings of their creativity, comes a beautifully crafted book many years in the making that offers that same deep wisdom to all of us. \"A gorgeous and inspiring work of art on creation, creativity, the work of the artist. It will gladden the hearts of writers and artists everywhere, and get them working again with a new sense of meaning and direction. A stunning accomplishment.” —Anne Lamott “I set out to write a book about what to do to make a great work of art. Instead, it revealed itself to be a book on how to be.” —Rick Rubin Many famed music producers are known for a particular sound that has its day. Rick Rubin is known for something else: creating a space where artists of all different genres and traditions can home in on who they really are and what they really offer. He has made a practice of helping people transcend their self-imposed expectations in order to reconnect with a state of innocence from which the surprising becomes inevitable. Over the years, as he has thought deeply about where creativity comes from and where it doesn’t, he has learned that being an artist isn’t about your specific output, it’s about your relationship to the world. Creativity has a place in everyone’s life, and everyone can make that place larger. In fact, there are few more important responsibilities. The Creative Act is a beautiful and generous course of study that illuminates the path of the artist as a road we all can follow. It distills the wisdom gleaned from a lifetime’s work into a luminous reading experience that puts the power to create moments—and lifetimes—of exhilaration and transcendence within closer reach for all of us.",
+    "pageCount": 433,
+    "printType": "BOOK",
+    "categories": [
+      "Self-Help"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=l3dtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Creative_Act.html?hl=&id=l3dtEAAAQBAJ"
+  },
+  {
+    "isbn": "1455574139",
+    "dateFinished": "2023-04-25",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "The Good Nurse",
+    "authors": [
+      "Charles Graeber"
+    ],
+    "publishedDate": "2014-07-29",
+    "description": "\"CHILLING.\" -- Stephen King An intimate -- and frightening -- glimpse inside the mind of America's most prolific serial killer, Charles Cullen, whose 16-year long \"nursing\" career left as many as 400 dead. When nurse Charlie Cullen was arrested in 2003, journalists were quick to dub him \"The Angel of Death.\" But Cullen was neither a mercy killer nor a simple monster. He was a son, a husband, a father, a best friend, and a valued caregiver. He was also implicated in the deaths of as many as 400 people, and may be the most prolific serial killer in American history. Cullen's career in the world's most trusted profession spanned sixteen years, across nine hospitals. In this riveting work of investigative journalism, Charles Graeber-the only person Cullen chose to speak with following his arrest-reveals how Cullen got away with murder for so long. Based on hundreds of hours of previously unseen and unheard footage, recordings, and records, as well as extensive interviews with homicide detectives, Cullen's friends, family, coworkers, and confidential informants and whistleblowers, plus exclusive, one-on-one interviews with Cullen, himself, THE GOOD NURSE paints a dramatic portrait of madness and the bounds of friendship, and shines a spotlight on America's medical system. A harrowing and irresistibly paced book, you'll never look at a hospital the same way again.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "True Crime"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=6sUZnwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Good_Nurse.html?hl=&id=6sUZnwEACAAJ"
+  },
+  {
+    "isbn": "9781556527654",
+    "dateFinished": "2023-05-03",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "The Assassination of Fred Hampton",
+    "authors": [
+      "Jeffrey Haas"
+    ],
+    "publishedDate": "2010",
+    "description": "Uncovering a cold-blooded execution at the hands of a conspiring police force, this title pursues the murderers of Black Panther Fred Hampton. Documenting the 14-year process of bringing the killers to justice, this chronicle also depicts the 18-month court trial.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Assassination"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=hDYtmQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Assassination_of_Fred_Hampton.html?hl=&id=hDYtmQEACAAJ"
+  },
+  {
+    "isbn": "0520293282",
+    "dateFinished": "2023-05-17",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction"
+    ],
+    "title": "Black Against Empire",
+    "authors": [
+      "Joshua Bloom",
+      "Waldo E. Martin"
+    ],
+    "publishedDate": "2016-10-25",
+    "description": "This timely special edition, published on the fiftieth anniversary of the founding of the Black Panther Party, features a new preface by the authors that places the Party in a contemporary political landscape, especially as it relates to Black Lives Matter and other struggles to fight police brutality against black communities.",
+    "pageCount": 562,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=D7UwDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Black_Against_Empire.html?hl=&id=D7UwDwAAQBAJ"
+  },
+  {
+    "isbn": "1912248700",
+    "dateFinished": "2023-05-20",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "economics"
+    ],
+    "title": "Abolish Silicon Valley",
+    "authors": [
+      "Wendy Liu"
+    ],
+    "publishedDate": "2020-03-23",
+    "description": "Former insider turned critic Wendy Liu busts the myths of the tech industry, and offers a galvanising argument for why and how we must reclaim technology's potential for the public good. Former insider turned critic Wendy Liu busts the myths of the tech industry, and offers a galvanising argument for why and how we must reclaim technology's potential for the public good. \"Lucid, probing and urgent. Wendy Liu manages to be both optimistic about the emancipatory potential of tech and scathing about the industry that has harnessed it for bleak and self-serving ends.\" -- Naomi Klein, author of On Fire: The Burning Case for a Green New Deal \"An inspiring memoir manifesto...Technologists all over the world are realizing that no amount of code can substitute for political engagement. Liu's memoir is a road map for that journey of realization.\" -- Cory Doctorow, author of Radicalized and Little Brother Innovation. Meritocracy. The possibility of overnight success. What's not to love about Silicon Valley? These days, it's hard to be unambiguously optimistic about the growth-at-all-costs ethos of the tech industry. Public opinion is souring in the wake of revelations about Cambridge Analytica, Theranos, and the workplace conditions of Amazon workers or Uber drivers. It's becoming clear that the tech industry's promised \"innovation\" is neither sustainable nor always desirable. Abolish Silicon Valley is both a heartfelt personal story about the wasteful inequality of Silicon Valley, and a rallying call to engage in the radical politics needed to upend the status quo. Going beyond the idiosyncrasies of the individual founders and companies that characterise the industry today, Wendy Liu delves into the structural factors of the economy that gave rise to Silicon Valley as we know it. Ultimately, she proposes a more radical way of developing technology, where innovation is conducted for the benefit of society at large, and not just to enrich a select few.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Technology & Engineering"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=JhiREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Abolish_Silicon_Valley.html?hl=&id=JhiREAAAQBAJ"
+  },
+  {
+    "isbn": "1839762039",
+    "dateFinished": "2023-05-21",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech"
+    ],
+    "title": "Internet for the People",
+    "authors": [
+      "Ben Tarnoff"
+    ],
+    "publishedDate": "2022-06-14",
+    "description": "In Internet for the People, leading tech writer Ben Tarnoff offers an answer. The internet is broken, he argues, because it is owned by private firms and run for profit. Google annihilates your privacy and Facebook amplifies right-wing propaganda because it is profitable to do so. But the internet wasn't always like this-it had to be remade for the purposes of profit maximization, through a years-long process of privatization that turned a small research network into a powerhouse of global capitalism. Tarnoff tells the story of the privatization that made the modern internet, and which set in motion the crises that consume it today. The solution to those crises is straightforward: deprivatize the internet. Deprivatization aims at creating an internet where people, and not profit, rule. It calls for shrinking the space of the market and diminishing the power of the profit motive. It calls for abolishing the walled gardens of Google, Facebook, and the other giants that dominate our digital lives and developing publicly and cooperatively owned alternatives that encode real democratic control. To build a better internet, we need to change how it is owned and organized. Not with an eye towards making markets work better, but towards making them less dominant. Not in order to create a more competitive or more rule-bound version of privatization, but to overturn it. Otherwise, a small number of executives and investors will continue to make choices on everyone's behalf, and these choices will remain tightly bound by the demands of the market. It's time to demand an internet by, and for, the people now.",
+    "pageCount": 245,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=Lj1xEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Internet_for_the_People.html?hl=&id=Lj1xEAAAQBAJ"
+  },
+  {
+    "isbn": "0374721246",
+    "dateFinished": "2023-05-23",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "economics"
+    ],
+    "title": "Subprime Attention Crisis",
+    "authors": [
+      "Tim Hwang"
+    ],
+    "publishedDate": "2020-10-13",
+    "description": "From FSGO x Logic: a revealing examination of digital advertising and the internet's precarious foundation In Subprime Attention Crisis, Tim Hwang investigates the way big tech financializes attention. In the process, he shows us how digital advertising—the beating heart of the internet—is at risk of collapsing, and that its potential demise bears an uncanny resemblance to the housing crisis of 2008. From the unreliability of advertising numbers and the unregulated automation of advertising bidding wars, to the simple fact that online ads mostly fail to work, Hwang demonstrates that while consumers’ attention has never been more prized, the true value of that attention itself—much like subprime mortgages—is wildly misrepresented. And if online advertising goes belly-up, the internet—and its free services—will suddenly be accessible only to those who can afford it. Deeply researched, convincing, and alarming, Subprime Attention Crisis will change the way you look at the internet, and its precarious future. FSG Originals × Logic dissects the way technology functions in everyday lives. The titans of Silicon Valley, for all their utopian imaginings, never really had our best interests at heart: recent threats to democracy, truth, privacy, and safety, as a result of tech’s reckless pursuit of progress, have shown as much. We present an alternate story, one that delights in capturing technology in all its contradictions and innovation, across borders and socioeconomic divisions, from history through the future, beyond platitudes and PR hype, and past doom and gloom. Our collaboration features four brief but provocative forays into the tech industry’s many worlds, and aspires to incite fresh conversations about technology focused on nuanced and accessible explorations of the emerging tools that reorganize and redefine life today.",
+    "pageCount": 176,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=iyPQDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=iyPQDwAAQBAJ"
+  },
+  {
+    "isbn": "0374601178",
+    "dateFinished": "2023-06-02",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech"
+    ],
+    "title": "Fancy Bear Goes Phishing",
+    "authors": [
+      "Scott J. Shapiro"
+    ],
+    "publishedDate": "2023-05-23",
+    "description": "\"Unsettling, absolutely riveting, and—for better or worse—necessary reading.\" —Brian Christian, author of Algorithms to Live By and The Alignment Problem An entertaining account of the philosophy and technology of hacking—and why we all need to understand it. It’s a signal paradox of our times that we live in an information society but do not know how it works. And without understanding how our information is stored, used, and protected, we are vulnerable to having it exploited. In Fancy Bear Goes Phishing, Scott J. Shapiro draws on his popular Yale University class about hacking to expose the secrets of the digital age. With lucidity and wit, he establishes that cybercrime has less to do with defective programming than with the faulty wiring of our psyches and society. And because hacking is a human-interest story, he tells the fascinating tales of perpetrators, including Robert Morris Jr., the graduate student who accidentally crashed the internet in the 1980s, and the Bulgarian “Dark Avenger,” who invented the first mutating computer-virus engine. We also meet a sixteen-year-old from South Boston who took control of Paris Hilton’s cell phone, the Russian intelligence officers who sought to take control of a US election, and others. In telling their stories, Shapiro exposes the hackers’ tool kits and gives fresh answers to vital questions: Why is the internet so vulnerable? What can we do in response? Combining the philosophical adventure of Gödel, Escher, Bach with dramatic true-crime narrative, the result is a lively and original account of the future of hacking, espionage, and war, and of how to live in an era of cybercrime. Includes black-and-white images",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Computers"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=nbWYEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Fancy_Bear_Goes_Phishing.html?hl=&id=nbWYEAAAQBAJ"
+  },
+  {
+    "isbn": "9780374538668",
+    "dateFinished": "2023-06-10",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Blockchain Chicken Farm",
+    "authors": [
+      "Xiaowei Wang"
+    ],
+    "publishedDate": "2020-10-13",
+    "description": "From FSGO x Logic: stories about rural China, food, and tech that reveal new truths about the globalized world In Blockchain Chicken Farm, the technologist and writer Xiaowei Wang explores the political and social entanglements of technology in rural China. Their discoveries force them to challenge the standard idea that rural culture and people are backward, conservative, and intolerant. Instead, they find that rural China has not only adapted to rapid globalization but has actually innovated the technology we all use today. From pork farmers using AI to produce the perfect pig, to disruptive luxury counterfeits and the political intersections of e-commerce villages, Wang unravels the ties between globalization, technology, agriculture, and commerce in unprecedented fashion. Accompanied by humorous “Sinofuturist” recipes that frame meals as they transform under new technology, Blockchain Chicken Farm is an original and probing look into innovation, connectivity, and collaboration in the digitized rural world. FSG Originals × Logic dissects the way technology functions in everyday lives. The titans of Silicon Valley, for all their utopian imaginings, never really had our best interests at heart: recent threats to democracy, truth, privacy, and safety, as a result of tech’s reckless pursuit of progress, have shown as much. We present an alternate story, one that delights in capturing technology in all its contradictions and innovation, across borders and socioeconomic divisions, from history through the future, beyond platitudes and PR hype, and past doom and gloom. Our collaboration features four brief but provocative forays into the tech industry’s many worlds, and aspires to incite fresh conversations about technology focused on nuanced and accessible explorations of the emerging tools that reorganize and redefine life today.",
+    "pageCount": 256,
+    "printType": "BOOK",
+    "categories": [
+      "Computers"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=myUyzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Blockchain_Chicken_Farm.html?hl=&id=myUyzQEACAAJ"
+  },
+  {
+    "isbn": "1568589395",
+    "dateFinished": "2023-06-18",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "labor"
+    ],
+    "title": "Work Won't Love You Back",
+    "authors": [
+      "Sarah Jaffe"
+    ],
+    "publishedDate": "2021",
+    "description": "A preeminent voice on labor, inequality, and social movements examines this \"labor of love\" myth--the idea that certain work is not really work, and therefore should be done out of passion instead of pay. pay.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "BUSINESS & ECONOMICS"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=UGt8zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Work_Won_t_Love_You_Back.html?hl=&id=UGt8zQEACAAJ"
+  },
+  {
+    "isbn": "1591847087",
+    "dateFinished": "2023-06-25",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Hatching Twitter",
+    "authors": [
+      "Nick Bilton"
+    ],
+    "publishedDate": "2014-09-30",
+    "description": "The dramatic, unlikely story behind the founding of Twitter, by New York Times bestselling author and Vanity Fair special correspondent The San Francisco-based technology company Twitter has become a powerful force in less than ten years. Today it’s everything from a tool for fighting political oppression in the Middle East to a marketing must-have to the world’s living room during live TV events to President Trump’s preferred method of communication. It has hundreds of millions of active users all over the world. But few people know that it nearly fell to pieces early on. In this rousing history that reads like a novel, Hatching Twitter takes readers behind the scenes of Twitter’s early exponential growth, following the four hackers—Ev Williams, Jack Dorsey, Biz Stone, and Noah Glass, who created the cultural juggernaut practically by accident. It’s a drama of betrayed friendships and high-stakes power struggles over money, influence, and control over a company that was growing faster than they could ever imagine. Drawing on hundreds of sources, documents, and internal e-mails, Bilton offers a rarely-seen glimpse of the inner workings of technology startups, venture capital, and Silicon Valley culture.",
+    "pageCount": 319,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=GX8ODAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Hatching_Twitter.html?hl=&id=GX8ODAAAQBAJ"
+  },
+  {
+    "isbn": "9781473223363",
+    "dateFinished": "2023-06-27",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Aurora Rising",
+    "authors": [
+      "Alastair Reynolds"
+    ],
+    "publishedDate": "2017-11-02",
+    "description": "Previously published as THE PREFECT. A rollercoaster ride through the dark and turbulent universe of REVELATION SPACE: an interstellar thriller where nothing - and no one - is what they seem ... Tom Dreyfus is a Prefect, a policeman of sorts, and one of the best. His force is Panoply, and his beat is the multi-faceted utopian society of the Glitter Band, that vast swirl of space habitats orbiting the planet Yellowstone. These days, his job is his life. A murderous attack against a Glitter Band habitat is nasty, but it looks to be an open-and-shut case - until Dreyfus starts looking under some stones that some very powerful people would really rather stayed unturned. What he uncovers is far more serious than mere gruesome murder: a covert takeover bid by a shadowy figure, Aurora (who may once have been human but certainly isn't now), who believes the people of the Glitter Band should no longer be in charge of their own destiny. Dreyfus discovers that to save something precious, you may have to destroy part of it. 'An adroit and fast-paced blend of space opera and police procedural, original and exciting' George R. R. Martin",
+    "pageCount": 528,
+    "printType": "BOOK",
+    "categories": [
+      "Space colonies"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ZdbetAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Aurora_Rising.html?hl=&id=ZdbetAEACAAJ"
+  },
+  {
+    "isbn": "9781950665655",
+    "dateFinished": "2023-07-01",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Ludicrous",
+    "authors": [
+      "Edward Niedermeyer"
+    ],
+    "publishedDate": "2021-01-12",
+    "description": "Tesla is the most exciting car company in a generation . . . but can it live up to the hype? Tesla Motors and CEO Elon Musk have become household names, shaking up the staid auto industry by creating a set of innovative electric vehicles that have wowed the marketplace and defied conventional wisdom. The company's market valuation now rivals that of long-established automakers, and, to many industry observers, Tesla is defining the future of the industry. But behind the hype, Tesla has some serious deficiencies that raise questions about its sky-high valuation, and even its ultimate survival. Tesla's commitment to innovation has led it to reject the careful, zero-defects approach of other car manufacturers, even as it struggles to mass-produce cars reliably, and with minimal defects. While most car manufacturers struggle with the razor-thin margins of mid-priced sedans, Tesla's strategy requires that the Model 3 finally bring it to profitability, even as the high-priced Roadster and Model S both lost money. And Tesla's approach of continually focusing on the future, even as commitments and deadlines are repeatedly missed, may ultimately test the patience of all but its most devoted fans. In Ludicrous, journalist and auto industry analyst Edward Niedermeyer lays bare the disconnect between the popular perception of Tesla and the day-to-day realities of the company—and the cars it produces. Blending original reporting and never-before-published insider accounts with savvy industry analysis, Niedermeyer tells the story of Tesla as it's never been told before—with clear eyes, objectivity and insight.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=vO5KEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Ludicrous.html?hl=&id=vO5KEAAAQBAJ"
+  },
+  {
+    "isbn": "9780674430006",
+    "dateFinished": "2023-07-23",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics"
+    ],
+    "title": "Capital in the Twenty-First Century",
+    "authors": [
+      "Thomas Piketty"
+    ],
+    "publishedDate": "2014-04-15",
+    "description": "The main driver of inequality--returns on capital that exceed the rate of economic growth--is again threatening to generate extreme discontent and undermine democratic values. Thomas Piketty's findings in this ambitious, original, rigorous work will transform debate and set the agenda for the next generation of thought about wealth and inequality.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=89E_zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Capital_in_the_Twenty_First_Century.html?hl=&id=89E_zQEACAAJ"
   },
   {
     "isbn": "9780008466770",
@@ -8186,554 +9100,6 @@
     "link": "https://books.google.com/books/about/The_Myth_of_Normal.html?hl=&id=eZVUEAAAQBAJ"
   },
   {
-    "isbn": "9781950665655",
-    "dateFinished": "2023-07-01",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "tech",
-      "nonfiction"
-    ],
-    "title": "Ludicrous",
-    "authors": [
-      "Edward Niedermeyer"
-    ],
-    "publishedDate": "2021-01-12",
-    "description": "Tesla is the most exciting car company in a generation . . . but can it live up to the hype? Tesla Motors and CEO Elon Musk have become household names, shaking up the staid auto industry by creating a set of innovative electric vehicles that have wowed the marketplace and defied conventional wisdom. The company's market valuation now rivals that of long-established automakers, and, to many industry observers, Tesla is defining the future of the industry. But behind the hype, Tesla has some serious deficiencies that raise questions about its sky-high valuation, and even its ultimate survival. Tesla's commitment to innovation has led it to reject the careful, zero-defects approach of other car manufacturers, even as it struggles to mass-produce cars reliably, and with minimal defects. While most car manufacturers struggle with the razor-thin margins of mid-priced sedans, Tesla's strategy requires that the Model 3 finally bring it to profitability, even as the high-priced Roadster and Model S both lost money. And Tesla's approach of continually focusing on the future, even as commitments and deadlines are repeatedly missed, may ultimately test the patience of all but its most devoted fans. In Ludicrous, journalist and auto industry analyst Edward Niedermeyer lays bare the disconnect between the popular perception of Tesla and the day-to-day realities of the company—and the cars it produces. Blending original reporting and never-before-published insider accounts with savvy industry analysis, Niedermeyer tells the story of Tesla as it's never been told before—with clear eyes, objectivity and insight.",
-    "pageCount": 0,
-    "printType": "BOOK",
-    "categories": [
-      "Business & Economics"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=vO5KEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Ludicrous.html?hl=&id=vO5KEAAAQBAJ"
-  },
-  {
-    "isbn": "9781473223363",
-    "dateFinished": "2023-06-27",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "scifi"
-    ],
-    "title": "Aurora Rising",
-    "authors": [
-      "Alastair Reynolds"
-    ],
-    "publishedDate": "2017-11-02",
-    "description": "Previously published as THE PREFECT. A rollercoaster ride through the dark and turbulent universe of REVELATION SPACE: an interstellar thriller where nothing - and no one - is what they seem ... Tom Dreyfus is a Prefect, a policeman of sorts, and one of the best. His force is Panoply, and his beat is the multi-faceted utopian society of the Glitter Band, that vast swirl of space habitats orbiting the planet Yellowstone. These days, his job is his life. A murderous attack against a Glitter Band habitat is nasty, but it looks to be an open-and-shut case - until Dreyfus starts looking under some stones that some very powerful people would really rather stayed unturned. What he uncovers is far more serious than mere gruesome murder: a covert takeover bid by a shadowy figure, Aurora (who may once have been human but certainly isn't now), who believes the people of the Glitter Band should no longer be in charge of their own destiny. Dreyfus discovers that to save something precious, you may have to destroy part of it. 'An adroit and fast-paced blend of space opera and police procedural, original and exciting' George R. R. Martin",
-    "pageCount": 528,
-    "printType": "BOOK",
-    "categories": [
-      "Space colonies"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=ZdbetAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Aurora_Rising.html?hl=&id=ZdbetAEACAAJ"
-  },
-  {
-    "isbn": "9780374538668",
-    "dateFinished": "2023-06-10",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "tech",
-      "nonfiction"
-    ],
-    "title": "Blockchain Chicken Farm",
-    "authors": [
-      "Xiaowei Wang"
-    ],
-    "publishedDate": "2020-10-13",
-    "description": "From FSGO x Logic: stories about rural China, food, and tech that reveal new truths about the globalized world In Blockchain Chicken Farm, the technologist and writer Xiaowei Wang explores the political and social entanglements of technology in rural China. Their discoveries force them to challenge the standard idea that rural culture and people are backward, conservative, and intolerant. Instead, they find that rural China has not only adapted to rapid globalization but has actually innovated the technology we all use today. From pork farmers using AI to produce the perfect pig, to disruptive luxury counterfeits and the political intersections of e-commerce villages, Wang unravels the ties between globalization, technology, agriculture, and commerce in unprecedented fashion. Accompanied by humorous “Sinofuturist” recipes that frame meals as they transform under new technology, Blockchain Chicken Farm is an original and probing look into innovation, connectivity, and collaboration in the digitized rural world. FSG Originals × Logic dissects the way technology functions in everyday lives. The titans of Silicon Valley, for all their utopian imaginings, never really had our best interests at heart: recent threats to democracy, truth, privacy, and safety, as a result of tech’s reckless pursuit of progress, have shown as much. We present an alternate story, one that delights in capturing technology in all its contradictions and innovation, across borders and socioeconomic divisions, from history through the future, beyond platitudes and PR hype, and past doom and gloom. Our collaboration features four brief but provocative forays into the tech industry’s many worlds, and aspires to incite fresh conversations about technology focused on nuanced and accessible explorations of the emerging tools that reorganize and redefine life today.",
-    "pageCount": 256,
-    "printType": "BOOK",
-    "categories": [
-      "Computers"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=myUyzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Blockchain_Chicken_Farm.html?hl=&id=myUyzQEACAAJ"
-  },
-  {
-    "isbn": "1568589395",
-    "dateFinished": "2023-06-18",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "tech",
-      "labor"
-    ],
-    "title": "Work Won't Love You Back",
-    "authors": [
-      "Sarah Jaffe"
-    ],
-    "publishedDate": "2021",
-    "description": "A preeminent voice on labor, inequality, and social movements examines this \"labor of love\" myth--the idea that certain work is not really work, and therefore should be done out of passion instead of pay. pay.",
-    "pageCount": 0,
-    "printType": "BOOK",
-    "categories": [
-      "BUSINESS & ECONOMICS"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=UGt8zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Work_Won_t_Love_You_Back.html?hl=&id=UGt8zQEACAAJ"
-  },
-  {
-    "isbn": "1591847087",
-    "dateFinished": "2023-06-25",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "tech",
-      "nonfiction"
-    ],
-    "title": "Hatching Twitter",
-    "authors": [
-      "Nick Bilton"
-    ],
-    "publishedDate": "2014-09-30",
-    "description": "The dramatic, unlikely story behind the founding of Twitter, by New York Times bestselling author and Vanity Fair special correspondent The San Francisco-based technology company Twitter has become a powerful force in less than ten years. Today it’s everything from a tool for fighting political oppression in the Middle East to a marketing must-have to the world’s living room during live TV events to President Trump’s preferred method of communication. It has hundreds of millions of active users all over the world. But few people know that it nearly fell to pieces early on. In this rousing history that reads like a novel, Hatching Twitter takes readers behind the scenes of Twitter’s early exponential growth, following the four hackers—Ev Williams, Jack Dorsey, Biz Stone, and Noah Glass, who created the cultural juggernaut practically by accident. It’s a drama of betrayed friendships and high-stakes power struggles over money, influence, and control over a company that was growing faster than they could ever imagine. Drawing on hundreds of sources, documents, and internal e-mails, Bilton offers a rarely-seen glimpse of the inner workings of technology startups, venture capital, and Silicon Valley culture.",
-    "pageCount": 319,
-    "printType": "BOOK",
-    "categories": [
-      "Business & Economics"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=GX8ODAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Hatching_Twitter.html?hl=&id=GX8ODAAAQBAJ"
-  },
-  {
-    "isbn": "0374601178",
-    "dateFinished": "2023-06-02",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "tech"
-    ],
-    "title": "Fancy Bear Goes Phishing",
-    "authors": [
-      "Scott J. Shapiro"
-    ],
-    "publishedDate": "2023-05-23",
-    "description": "\"Unsettling, absolutely riveting, and—for better or worse—necessary reading.\" —Brian Christian, author of Algorithms to Live By and The Alignment Problem An entertaining account of the philosophy and technology of hacking—and why we all need to understand it. It’s a signal paradox of our times that we live in an information society but do not know how it works. And without understanding how our information is stored, used, and protected, we are vulnerable to having it exploited. In Fancy Bear Goes Phishing, Scott J. Shapiro draws on his popular Yale University class about hacking to expose the secrets of the digital age. With lucidity and wit, he establishes that cybercrime has less to do with defective programming than with the faulty wiring of our psyches and society. And because hacking is a human-interest story, he tells the fascinating tales of perpetrators, including Robert Morris Jr., the graduate student who accidentally crashed the internet in the 1980s, and the Bulgarian “Dark Avenger,” who invented the first mutating computer-virus engine. We also meet a sixteen-year-old from South Boston who took control of Paris Hilton’s cell phone, the Russian intelligence officers who sought to take control of a US election, and others. In telling their stories, Shapiro exposes the hackers’ tool kits and gives fresh answers to vital questions: Why is the internet so vulnerable? What can we do in response? Combining the philosophical adventure of Gödel, Escher, Bach with dramatic true-crime narrative, the result is a lively and original account of the future of hacking, espionage, and war, and of how to live in an era of cybercrime. Includes black-and-white images",
-    "pageCount": 0,
-    "printType": "BOOK",
-    "categories": [
-      "Computers"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=nbWYEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Fancy_Bear_Goes_Phishing.html?hl=&id=nbWYEAAAQBAJ"
-  },
-  {
-    "isbn": "0374721246",
-    "dateFinished": "2023-05-23",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "tech",
-      "economics"
-    ],
-    "title": "Subprime Attention Crisis",
-    "authors": [
-      "Tim Hwang"
-    ],
-    "publishedDate": "2020-10-13",
-    "description": "From FSGO x Logic: a revealing examination of digital advertising and the internet's precarious foundation In Subprime Attention Crisis, Tim Hwang investigates the way big tech financializes attention. In the process, he shows us how digital advertising—the beating heart of the internet—is at risk of collapsing, and that its potential demise bears an uncanny resemblance to the housing crisis of 2008. From the unreliability of advertising numbers and the unregulated automation of advertising bidding wars, to the simple fact that online ads mostly fail to work, Hwang demonstrates that while consumers’ attention has never been more prized, the true value of that attention itself—much like subprime mortgages—is wildly misrepresented. And if online advertising goes belly-up, the internet—and its free services—will suddenly be accessible only to those who can afford it. Deeply researched, convincing, and alarming, Subprime Attention Crisis will change the way you look at the internet, and its precarious future. FSG Originals × Logic dissects the way technology functions in everyday lives. The titans of Silicon Valley, for all their utopian imaginings, never really had our best interests at heart: recent threats to democracy, truth, privacy, and safety, as a result of tech’s reckless pursuit of progress, have shown as much. We present an alternate story, one that delights in capturing technology in all its contradictions and innovation, across borders and socioeconomic divisions, from history through the future, beyond platitudes and PR hype, and past doom and gloom. Our collaboration features four brief but provocative forays into the tech industry’s many worlds, and aspires to incite fresh conversations about technology focused on nuanced and accessible explorations of the emerging tools that reorganize and redefine life today.",
-    "pageCount": 176,
-    "printType": "BOOK",
-    "categories": [
-      "Social Science"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=iyPQDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://play.google.com/store/books/details?id=iyPQDwAAQBAJ"
-  },
-  {
-    "isbn": "1839762039",
-    "dateFinished": "2023-05-21",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "tech"
-    ],
-    "title": "Internet for the People",
-    "authors": [
-      "Ben Tarnoff"
-    ],
-    "publishedDate": "2022-06-14",
-    "description": "In Internet for the People, leading tech writer Ben Tarnoff offers an answer. The internet is broken, he argues, because it is owned by private firms and run for profit. Google annihilates your privacy and Facebook amplifies right-wing propaganda because it is profitable to do so. But the internet wasn't always like this-it had to be remade for the purposes of profit maximization, through a years-long process of privatization that turned a small research network into a powerhouse of global capitalism. Tarnoff tells the story of the privatization that made the modern internet, and which set in motion the crises that consume it today. The solution to those crises is straightforward: deprivatize the internet. Deprivatization aims at creating an internet where people, and not profit, rule. It calls for shrinking the space of the market and diminishing the power of the profit motive. It calls for abolishing the walled gardens of Google, Facebook, and the other giants that dominate our digital lives and developing publicly and cooperatively owned alternatives that encode real democratic control. To build a better internet, we need to change how it is owned and organized. Not with an eye towards making markets work better, but towards making them less dominant. Not in order to create a more competitive or more rule-bound version of privatization, but to overturn it. Otherwise, a small number of executives and investors will continue to make choices on everyone's behalf, and these choices will remain tightly bound by the demands of the market. It's time to demand an internet by, and for, the people now.",
-    "pageCount": 245,
-    "printType": "BOOK",
-    "categories": [
-      "Political Science"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=Lj1xEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Internet_for_the_People.html?hl=&id=Lj1xEAAAQBAJ"
-  },
-  {
-    "isbn": "0520293282",
-    "dateFinished": "2023-05-17",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "nonfiction"
-    ],
-    "title": "Black Against Empire",
-    "authors": [
-      "Joshua Bloom",
-      "Waldo E. Martin"
-    ],
-    "publishedDate": "2016-10-25",
-    "description": "This timely special edition, published on the fiftieth anniversary of the founding of the Black Panther Party, features a new preface by the authors that places the Party in a contemporary political landscape, especially as it relates to Black Lives Matter and other struggles to fight police brutality against black communities.",
-    "pageCount": 562,
-    "printType": "BOOK",
-    "categories": [
-      "History"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=D7UwDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Black_Against_Empire.html?hl=&id=D7UwDwAAQBAJ"
-  },
-  {
-    "isbn": "9781556527654",
-    "dateFinished": "2023-05-03",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "nonfiction"
-    ],
-    "title": "The Assassination of Fred Hampton",
-    "authors": [
-      "Jeffrey Haas"
-    ],
-    "publishedDate": "2010",
-    "description": "Uncovering a cold-blooded execution at the hands of a conspiring police force, this title pursues the murderers of Black Panther Fred Hampton. Documenting the 14-year process of bringing the killers to justice, this chronicle also depicts the 18-month court trial.",
-    "pageCount": 0,
-    "printType": "BOOK",
-    "categories": [
-      "Assassination"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=hDYtmQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/The_Assassination_of_Fred_Hampton.html?hl=&id=hDYtmQEACAAJ"
-  },
-  {
-    "isbn": "9780593652886",
-    "dateFinished": "2023-04-09",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "music",
-      "nonfiction"
-    ],
-    "title": "The Creative Act",
-    "authors": [
-      "Rick Rubin"
-    ],
-    "publishedDate": "2023-01-17",
-    "description": "The #1 New York Times bestseller. From the legendary music producer, a master at helping people connect with the wellsprings of their creativity, comes a beautifully crafted book many years in the making that offers that same deep wisdom to all of us. \"A gorgeous and inspiring work of art on creation, creativity, the work of the artist. It will gladden the hearts of writers and artists everywhere, and get them working again with a new sense of meaning and direction. A stunning accomplishment.” —Anne Lamott “I set out to write a book about what to do to make a great work of art. Instead, it revealed itself to be a book on how to be.” —Rick Rubin Many famed music producers are known for a particular sound that has its day. Rick Rubin is known for something else: creating a space where artists of all different genres and traditions can home in on who they really are and what they really offer. He has made a practice of helping people transcend their self-imposed expectations in order to reconnect with a state of innocence from which the surprising becomes inevitable. Over the years, as he has thought deeply about where creativity comes from and where it doesn’t, he has learned that being an artist isn’t about your specific output, it’s about your relationship to the world. Creativity has a place in everyone’s life, and everyone can make that place larger. In fact, there are few more important responsibilities. The Creative Act is a beautiful and generous course of study that illuminates the path of the artist as a road we all can follow. It distills the wisdom gleaned from a lifetime’s work into a luminous reading experience that puts the power to create moments—and lifetimes—of exhilaration and transcendence within closer reach for all of us.",
-    "pageCount": 433,
-    "printType": "BOOK",
-    "categories": [
-      "Self-Help"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=l3dtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/The_Creative_Act.html?hl=&id=l3dtEAAAQBAJ"
-  },
-  {
-    "isbn": "1912248700",
-    "dateFinished": "2023-05-20",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "tech",
-      "economics"
-    ],
-    "title": "Abolish Silicon Valley",
-    "authors": [
-      "Wendy Liu"
-    ],
-    "publishedDate": "2020-03-23",
-    "description": "Former insider turned critic Wendy Liu busts the myths of the tech industry, and offers a galvanising argument for why and how we must reclaim technology's potential for the public good. Former insider turned critic Wendy Liu busts the myths of the tech industry, and offers a galvanising argument for why and how we must reclaim technology's potential for the public good. \"Lucid, probing and urgent. Wendy Liu manages to be both optimistic about the emancipatory potential of tech and scathing about the industry that has harnessed it for bleak and self-serving ends.\" -- Naomi Klein, author of On Fire: The Burning Case for a Green New Deal \"An inspiring memoir manifesto...Technologists all over the world are realizing that no amount of code can substitute for political engagement. Liu's memoir is a road map for that journey of realization.\" -- Cory Doctorow, author of Radicalized and Little Brother Innovation. Meritocracy. The possibility of overnight success. What's not to love about Silicon Valley? These days, it's hard to be unambiguously optimistic about the growth-at-all-costs ethos of the tech industry. Public opinion is souring in the wake of revelations about Cambridge Analytica, Theranos, and the workplace conditions of Amazon workers or Uber drivers. It's becoming clear that the tech industry's promised \"innovation\" is neither sustainable nor always desirable. Abolish Silicon Valley is both a heartfelt personal story about the wasteful inequality of Silicon Valley, and a rallying call to engage in the radical politics needed to upend the status quo. Going beyond the idiosyncrasies of the individual founders and companies that characterise the industry today, Wendy Liu delves into the structural factors of the economy that gave rise to Silicon Valley as we know it. Ultimately, she proposes a more radical way of developing technology, where innovation is conducted for the benefit of society at large, and not just to enrich a select few.",
-    "pageCount": 0,
-    "printType": "BOOK",
-    "categories": [
-      "Technology & Engineering"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=JhiREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Abolish_Silicon_Valley.html?hl=&id=JhiREAAAQBAJ"
-  },
-  {
-    "isbn": "9780674430006",
-    "dateFinished": "2023-07-23",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "politics",
-      "economics"
-    ],
-    "title": "Capital in the Twenty-First Century",
-    "authors": [
-      "Thomas Piketty"
-    ],
-    "publishedDate": "2014-04-15",
-    "description": "The main driver of inequality--returns on capital that exceed the rate of economic growth--is again threatening to generate extreme discontent and undermine democratic values. Thomas Piketty's findings in this ambitious, original, rigorous work will transform debate and set the agenda for the next generation of thought about wealth and inequality.",
-    "pageCount": 0,
-    "printType": "BOOK",
-    "categories": [
-      "Business & Economics"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=89E_zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Capital_in_the_Twenty_First_Century.html?hl=&id=89E_zQEACAAJ"
-  },
-  {
-    "isbn": "1455574139",
-    "dateFinished": "2023-04-25",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "nonfiction"
-    ],
-    "title": "The Good Nurse",
-    "authors": [
-      "Charles Graeber"
-    ],
-    "publishedDate": "2014-07-29",
-    "description": "\"CHILLING.\" -- Stephen King An intimate -- and frightening -- glimpse inside the mind of America's most prolific serial killer, Charles Cullen, whose 16-year long \"nursing\" career left as many as 400 dead. When nurse Charlie Cullen was arrested in 2003, journalists were quick to dub him \"The Angel of Death.\" But Cullen was neither a mercy killer nor a simple monster. He was a son, a husband, a father, a best friend, and a valued caregiver. He was also implicated in the deaths of as many as 400 people, and may be the most prolific serial killer in American history. Cullen's career in the world's most trusted profession spanned sixteen years, across nine hospitals. In this riveting work of investigative journalism, Charles Graeber-the only person Cullen chose to speak with following his arrest-reveals how Cullen got away with murder for so long. Based on hundreds of hours of previously unseen and unheard footage, recordings, and records, as well as extensive interviews with homicide detectives, Cullen's friends, family, coworkers, and confidential informants and whistleblowers, plus exclusive, one-on-one interviews with Cullen, himself, THE GOOD NURSE paints a dramatic portrait of madness and the bounds of friendship, and shines a spotlight on America's medical system. A harrowing and irresistibly paced book, you'll never look at a hospital the same way again.",
-    "pageCount": 0,
-    "printType": "BOOK",
-    "categories": [
-      "True Crime"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=6sUZnwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/The_Good_Nurse.html?hl=&id=6sUZnwEACAAJ"
-  },
-  {
-    "isbn": "9780356512693",
-    "dateFinished": "2023-04-03",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "fantasy"
-    ],
-    "title": "The World We Make",
-    "authors": [
-      "N. K. Jemisin"
-    ],
-    "publishedDate": "2022",
-    "description": "From the record-breaking, four-time Hugo Award-winning N. K. Jemisin comes 'a glorious fantasy' (Neil Gaiman) - a story of culture, identity, magic and myths in contemporary New York City. The sequel to the critically acclaimed The City We Became, this is the final book of the Great Cities Duology. Every great city has a soul. A human avatar that embodies their city's heart and wields its magic. New York? She's got six. But all is not well in the city that never sleeps. Though Brooklyn, Manny, Bronca, Venezia, Padmini, and Neek have temporarily managed to stop the Woman in White from invading--and destroying the entire universe in the process--the mysterious capital \"E\" Enemy has more subtle powers at her disposal. A new candidate for mayor wielding the populist rhetoric of gentrification, xenophobia, and \"law and order\" may have what it takes to change the very nature of New York itself and take it down from the inside. In order to defeat him, and the Enemy who holds his purse strings, the avatars will have to join together with the other Great Cities of the world in order to bring her down for good and protect their world from complete destruction. 'Hopeful and enthralling, The World We Make is more evidence of [Jemisin's] ferocious talent' Esquire 'Jemisin brings her living-city saga to a satisfying conclusion, maintaining a sense of energy and excitement throughout' Booklist 'Jemisin embodies the spirit of the city in as lush and lively a voice as ever and does a masterful job incorporating even more history and magic' Publishers Weekly 'The conclusion to Jemisin's Great Cities duology is a searing commentary on present-day politics as manipulated by a primordial evil...This riveting and powerful urban fantasy duology is masterfully written' BuzzFeed News The Great Cities Duology The City We Became The World We Make",
-    "pageCount": 0,
-    "printType": "BOOK",
-    "categories": [
-      "Fiction"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=8o8IzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/The_World_We_Make.html?hl=&id=8o8IzgEACAAJ"
-  },
-  {
-    "isbn": "1786070472",
-    "dateFinished": "2023-02-27",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "politics",
-      "economics"
-    ],
-    "title": "The Panama Papers",
-    "authors": [
-      "Bastian Obermayer",
-      "Frederik Obermaier"
-    ],
-    "publishedDate": "2016",
-    "description": "\"With precision and purpose, THE PANAMA PAPERS is what 'Follow the Money' means.\" --Bob Woodward,The Washington Post Late one evening, investigative journalist Bastian Obermayer receives an anonymous message offering him access to secret data. Through encrypted channels, he then receives documents revealing how the president of Argentina has sequestered millions of dollars of state money for private use. This is just the beginning. Obermayer and fellowSüddeutsche journalist Frederik Obermaier find themselves immersed in the secret world where complex networks of letterbox companies help the super-rich to hide their money. Faced with the contents of the largest data leak in history, they activate an international network of journalists to follow every possible line of inquiry. Operating in the strictest secrecy for over a year, they uncover cases involving European prime ministers and international dictators, emirs and kings, celebrities and aristocrats. The real-life thriller behind the story of the century,The Panama Papers is an intense, unputdownable account that proves, once and for all, that there exists a small elite living by a different set of rules and blows their secret world wide open.",
-    "pageCount": 366,
-    "printType": "BOOK",
-    "categories": [
-      "Political Science"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=jNLhjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/The_Panama_Papers.html?hl=&id=jNLhjwEACAAJ"
-  },
-  {
-    "isbn": "9780593492321",
-    "dateFinished": "2023-03-14",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "politics",
-      "economics",
-      "climate"
-    ],
-    "title": "The Climate Book",
-    "authors": [
-      "Greta Thunberg"
-    ],
-    "publishedDate": "2024-02-13",
-    "description": "A NEW YORK TIMES BESTSELLER We still have time to change the world. From climate activist Greta Thunberg, comes the essential handbook for making it happen. You might think it's an impossible task: secure a safe future for life on Earth, at a scale and speed never seen, against all the odds. There is hope—but only if we listen to the science before it's too late. In The Climate Book, Greta Thunberg has gathered the wisdom of over one hundred experts—geophysicists, oceanographers and meteorologists; engineers, economists and mathematicians; historians, philosophers and Indigenous leaders—to equip us all with the knowledge we need to combat climate disaster. Throughout, illuminating and often shocking grayscale charts, graphs, diagrams, photographs, and illustrations underscore their research and their arguments. Alongside them, she shares her own stories of demonstrating and uncovering greenwashing around the world, revealing how much we have been kept in the dark. This is one of our biggest challenges, she shows, but also our greatest source of hope. Once we are given the full picture, how can we not act? And if a schoolchild's strike could ignite a global protest, what could we do collectively if we tried? We are alive at the most decisive time in the history of humanity. Together, we can do the seemingly impossible. But it has to be us, and it has to be now.",
-    "pageCount": 465,
-    "printType": "BOOK",
-    "categories": [
-      "Science"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=4R3gEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/The_Climate_Book.html?hl=&id=4R3gEAAAQBAJ"
-  },
-  {
-    "isbn": "0316509841",
-    "dateFinished": "2023-03-26",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "fantasy"
-    ],
-    "title": "The City We Became",
-    "authors": [
-      "N. K. Jemisin"
-    ],
-    "publishedDate": "2020-03-24",
-    "description": "Five New Yorkers must come together in order to defend their city from an ancient evil in the first book of a stunning new novel by Hugo Award-winning and NYT bestselling author N. K. Jemisin. Every great city has a soul. Some are as ancient as myths, and others are as new and destructive as children. New York City? She's got six. But every city also has a dark side. A roiling, ancient evil stirs in the halls of power, threatening to destroy the city and her six newborn avatars unless they can come together and stop it once and for all. For more from N. K. Jemisin, check out: The Inheritance TrilogyThe Hundred Thousand KingdomsThe Broken KingdomsThe Kingdom of Gods The Inheritance Trilogy (omnibus edition)Shades in Shadow: An Inheritance Triptych (e-only short fiction)The Awakened Kingdom (e-only novella) Dreamblood DuologyThe Killing MoonThe Shadowed Sun The Dreamblood Duology (omnibus) The Broken EarthThe Fifth SeasonThe Obelisk GateThe Stone Sky How Long 'til Black Future Month? (short story collection)",
-    "pageCount": 0,
-    "printType": "BOOK",
-    "categories": [
-      "Fiction"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=qyPZwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/The_City_We_Became.html?hl=&id=qyPZwAEACAAJ"
-  },
-  {
-    "isbn": "9780316221047",
-    "dateFinished": "2023-02-12",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "nonfiction"
-    ],
-    "title": "Operation Paperclip",
-    "authors": [
-      "Annie Jacobsen"
-    ],
-    "publishedDate": "2014-02-11",
-    "description": "The explosive story of America's secret post-WWII science programs, from the author of the New York Times bestseller Area 51 In the chaos following World War II, the U.S. government faced many difficult decisions, including what to do with the Third Reich's scientific minds. These were the brains behind the Nazis' once-indomitable war machine. So began Operation Paperclip, a decades-long, covert project to bring Hitler's scientists and their families to the United States. Many of these men were accused of war crimes, and others had stood trial at Nuremberg; one was convicted of mass murder and slavery. They were also directly responsible for major advances in rocketry, medical treatments, and the U.S. space program. Was Operation Paperclip a moral outrage, or did it help America win the Cold War? Drawing on exclusive interviews with dozens of Paperclip family members, colleagues, and interrogators, and with access to German archival documents (including previously unseen papers made available by direct descendants of the Third Reich's ranking members), files obtained through the Freedom of Information Act, and dossiers discovered in government archives and at Harvard University, Annie Jacobsen follows more than a dozen German scientists through their postwar lives and into a startling, complex, nefarious, and jealously guarded government secret of the twentieth century. In this definitive, controversial look at one of America's most strategic, and disturbing, government programs, Jacobsen shows just how dark government can get in the name of national security.",
-    "pageCount": 592,
-    "printType": "BOOK",
-    "categories": [
-      "History"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=iHVTlwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Operation_Paperclip.html?hl=&id=iHVTlwEACAAJ"
-  },
-  {
-    "isbn": "9780062996213",
-    "dateFinished": "2023-01-26",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "politics",
-      "economics",
-      "nonfiction"
-    ],
-    "title": "The Key Man",
-    "authors": [
-      "Simon Clark",
-      "Will Louch"
-    ],
-    "publishedDate": "2021",
-    "description": "In this compelling story of greed, theft, and the dark underbelly of globalization and impact investing, two Wall Street Journal financial reporters investigate the shocking collapse of Abraaj-the largest private-equity failure in history-and the face behind its glimmering rise and catastrophic fall…",
-    "pageCount": 352,
-    "printType": "BOOK",
-    "categories": [
-      "Business & Economics"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=ZZMGzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/The_Key_Man.html?hl=&id=ZZMGzgEACAAJ"
-  },
-  {
-    "isbn": "9780399590436",
-    "dateFinished": "2023-01-18",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "tech",
-      "nonfiction"
-    ],
-    "title": "The Mastermind",
-    "authors": [
-      "Evan Ratliff"
-    ],
-    "publishedDate": "2020-07-21",
-    "description": "The incredible true story of the decade-long quest to bring down Paul Le Roux—the creator of a frighteningly powerful Internet-enabled cartel who merged the ruthlessness of a drug lord with the technological savvy of a Silicon Valley entrepreneur. “A tour de force of shoe-leather reporting—undertaken, amid threats and menacing, at considerable personal risk.”—Los Angeles Times NAMED ONE OF THE BEST BOOKS OF THE YEAR BY The New York Times Book Review • NPR • Evening Standard • Kirkus Reviews It all started as an online prescription drug network, supplying hundreds of millions of dollars’ worth of painkillers to American customers. It would not stop there. Before long, the business had turned into a sprawling multinational conglomerate engaged in almost every conceivable aspect of criminal mayhem. Yachts carrying $100 million in cocaine. Safe houses in Hong Kong filled with gold bars. Shipments of methamphetamine from North Korea. Weapons deals with Iran. Mercenary armies in Somalia. Teams of hit men in the Philippines. Encryption programs so advanced that the government could not break them. The man behind it all, pulling the strings from a laptop in Manila, was Paul Calder Le Roux—a reclusive programmer turned criminal genius who could only exist in the networked world of the twenty-first century, and the kind of self-made crime boss that American law enforcement had never imagined. For half a decade, DEA agents played a global game of cat-and-mouse with Le Roux as he left terror and chaos in his wake. Each time they came close, he would slip away. It would take relentless investigative work, and a shocking betrayal from within his organization, to catch him. And when he was finally caught, the story turned again, as Le Roux struck a deal to bring down his own organization and the people he had once employed. Award-winning investigative journalist Evan Ratliff spent four years piecing together this intricate puzzle, chasing Le Roux’s empire and his shadowy henchmen around the world, conducting hundreds of interviews and uncovering thousands of documents. The result is a riveting, unprecedented account of a crime boss built by and for the digital age. Praise for The Mastermind “The Mastermind is true crime at its most stark and vivid depiction. Evan Ratliff’s work is well done from beginning to end, paralleling his investigative work with the work of the many federal agents developing the case against LeRoux.”—San Francisco Book Review (five stars) “A wholly engrossing story that joins the worlds of El Chapo and Edward Snowden; both disturbing and memorable.”—Kirkus Reviews (starred review)",
-    "pageCount": 498,
-    "printType": "BOOK",
-    "categories": [
-      "True Crime"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=T_PsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/The_Mastermind.html?hl=&id=T_PsDwAAQBAJ"
-  },
-  {
-    "isbn": "9781982156152",
-    "dateFinished": "2023-01-14",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "politics",
-      "nonfiction"
-    ],
-    "title": "Red Roulette",
-    "authors": [
-      "Desmond Shum"
-    ],
-    "publishedDate": "2021-09-07",
-    "description": "\"THE BOOK CHINA DOESN'T WANT YOU TO READ.\"--CNN A riveting insider's story of how the Party and big money work in China today, by a man who, with his wife, Whitney Duan, rose to the zenith of power and wealth--and then fell out of favor. She was disappeared four years ago. News of this book led to a phone call from Whitney, proof that she's alive. As Desmond Shum was growing up impoverished in China, he vowed his life would be different. Through hard work and sheer tenacity he earned an American college degree and returned to his native country to establish himself in business. There, he met his future wife, the highly intelligent and equally ambitious Whitney Duan who was determined to make her mark within China's male-dominated society. Whitney and Desmond formed an effective team and, aided by relationships they formed with top members of China's Communist Party, the so-called red aristocracy, he vaulted into China's billionaire class. Soon they were developing the massive air cargo facility at Beijing International Airport, and they followed that feat with the creation of one of Beijing's premier hotels. They were dazzlingly successful, traveling in private jets, funding multi-million-dollar buildings and endowments, and purchasing expensive homes, vehicles, and art. But in 2017, their fates diverged irrevocably when Desmond, while residing overseas with his son, learned that his now ex-wife Whitney had vanished along with three coworkers. This is both Desmond's story and Whitney's, because she has not been able to tell it herself.",
-    "pageCount": 320,
-    "printType": "BOOK",
-    "categories": [
-      "Biography & Autobiography"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=v788EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Red_Roulette.html?hl=&id=v788EAAAQBAJ"
-  },
-  {
-    "isbn": "9780316365215",
-    "dateFinished": "2023-01-12",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "labor",
-      "health"
-    ],
-    "title": "Rest Is Resistance",
-    "authors": [
-      "Tricia Hersey"
-    ],
-    "publishedDate": "2022-10-11",
-    "description": "Far too many of us have claimed productivity as the cornerstone of success. Brainwashed by capitalism, we subject our bodies and minds to work at an unrealistic, damaging, and machine‑level pace of work -- feeding into the same engine that enslaved millions into brutal labor for its virtuous benefit. Our worth does not reside in how much we produce, especially for a system that exploits and dehumanizes us. Rest, in its simplest form, becomes an act of resistance and a reclaiming of power because it disrupts and pushes back against capitalism and white supremacy. From the founder and creator of The Nap Ministry, Rest Is Resistance is a battle cry, a guidebook, a map for a movement, and a field guide for the weary and hopeful. It is rooted in spiritual energy and centered in Black liberation, womanism, somatics, and Afrofuturism. With captivating storytelling and practical advice, all delivered in Hersey's lyrical voice and informed by her deep experience in theology, activism, and performance art, Rest Is Resistance is a call to action and manifesto for those who are sleep deprived, searching for justice, and longing to be liberated from the oppressive grip of Grind Culture.",
-    "pageCount": 272,
-    "printType": "BOOK",
-    "categories": [
-      "Body, Mind & Spirit"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=UwfuzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Rest_Is_Resistance.html?hl=&id=UwfuzgEACAAJ"
-  },
-  {
     "isbn": "9781429925051",
     "dateFinished": "2005-08",
     "status": "finished",
@@ -9082,394 +9448,27 @@
     "language": "en"
   },
   {
-    "isbn": "9780802147950",
-    "dateFinished": "2020-01-16",
+    "isbn": "0062270273",
+    "dateFinished": "2017-01-15",
     "status": "finished",
     "rating": "unrated",
     "tags": [
-      "nonfiction"
+      "religion"
     ],
-    "title": "Fentanyl, Inc.",
+    "title": "The Artisan Soul",
     "authors": [
-      "Ben Westhoff"
+      "Erwin Raphael McManus"
     ],
-    "publishedDate": "2019-09-03",
-    "description": "A four-year investigation into the world of synthetic drugs—from black market factories to users & dealers to harm reduction activists—and what it revealed. A deeply human story, Fentanyl, Inc. is the first deep-dive investigation of a hazardous and illicit industry that has created a worldwide epidemic, ravaging communities and overwhelming and confounding government agencies that are challenged to combat it. “A whole new crop of chemicals is radically changing the recreational drug landscape,” writes Ben Westhoff. “These are known as Novel Psychoactive Substances (NPS) and they include replacements for known drugs like heroin, cocaine, ecstasy, and marijuana. They are synthetic, made in a laboratory, and are much more potent than traditional drugs” —and all-too-often tragically lethal. Drugs like fentanyl, K2, and Spice—and those with arcane acronyms like 25i-NBOMe—were all originally conceived in legitimate laboratories for proper scientific and medicinal purposes. Their formulas were then hijacked and manufactured by rogue chemists, largely in China, who change their molecular structures to stay ahead of the law, making the drugs’ effects impossible to predict. Westhoff has infiltrated this shadowy world. He tracks down the little-known scientists who invented these drugs and inadvertently killed thousands, as well as a mysterious drug baron who turned the law upside down in his home country of New Zealand. Westhoff visits the shady factories in China from which these drugs emanate, providing startling and original reporting on how China’s vast chemical industry operates, and how the Chinese government subsidizes it. Poignantly, he chronicles the lives of addicted users and dealers, families of victims, law enforcement officers, and underground drug awareness organizers in the United States and Europe. Together they represent the shocking and riveting full anatomy of a calamity we are just beginning to understand. From its depths, as Westhoff relates, are emerging new strategies that may provide essential long-term solutions to the drug crisis that has affected so many. “Timely and agonizing. . . . An impressive work of investigative journalism.” —USA Today “Westhoff explores the many-tentacled world of illicit opioids, from the streets of East St. Louis to Chinese pharmaceutical companies, from music festivals deep in the Michigan woods to sanctioned ‘shooting up rooms’ in Barcelona, in this frank, insightful, and occasionally searing exposé. . . . Westhoff’s well-reported and researched work will likely open eyes, slow knee-jerk responses, and start much needed conversations.” —Publishers Weekly “Our 25 Favorite Books of 2019” —St. Louis Post-Dispatch “Best Books of 2019” —Buzzfeed “Best Nonfiction of 2019” —Kirkus Reviews “50 Best Books of 2019” —Daily Telegraph “Best Nonfiction Books of 2019” —Tyler Cowen “Best Books of 2019” —Yahoo Finance",
-    "pageCount": 365,
+    "publishedDate": "2014-02-25",
+    "description": "In The Artisan Soul, Erwin Raphael McManus, author, thought leader, and founder of MOSAIC in Los Angeles, pens a manifesto for human creativity and the beginning of a new renaissance. McManus not only calls us to reclaim our creative essence but reveals how we can craft our lives into a work of art. There are no shortcuts to quality, and McManus celebrates the spiritual process that can help us discover our true selves. McManus demonstrates that we all carry within us the essence of an artist. We all need to create, to be a part of a process that brings to the world something beautiful, good, and true, in order to allow our souls to come to life. It's not only the quality of the ingredients we use to build our lives that matter, but the care we bring to the process itself. Just like baking artisan bread, it's a process that's crafted over time. And God has something to say about how we craft our lives. With poignant, inspirational stories and insights from art, life, history, and scripture interspersed throughout, McManus walks readers through the process of crafting a life of beauty and wonder.",
+    "pageCount": 0,
     "printType": "BOOK",
     "categories": [
-      "Business & Economics"
+      "Religion"
     ],
-    "thumbnail": "https://books.google.com/books/content?id=2xqSDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "thumbnail": "https://books.google.com/books/content?id=WTNlnQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
-    "link": "https://play.google.com/store/books/details?id=2xqSDwAAQBAJ"
-  },
-  {
-    "isbn": "9780374716325",
-    "dateFinished": "2020-09-21",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "tech",
-      "nonfiction"
-    ],
-    "title": "Lurking",
-    "authors": [
-      "Joanne McNeil"
-    ],
-    "publishedDate": "2020-02-25",
-    "description": "One of Esquire’s Best Books to Elevate Your Reading List in 2020, , and a OneZero Best Tech Book of 2020. Named one of the 100 Notable books of 2020 by the End of the World Review. A concise but wide-ranging personal history of the internet from—for the first time—the point of view of the user In a shockingly short amount of time, the internet has bound people around the world together and torn us apart and changed not just the way we communicate but who we are and who we can be. It has created a new, unprecedented cultural space that we are all a part of—even if we don’t participate, that is how we participate—but by which we’re continually surprised, betrayed, enriched, befuddled. We have churned through platforms and technologies and in turn been churned by them. And yet, the internet is us and always has been. In Lurking, Joanne McNeil digs deep and identifies the primary (if sometimes contradictory) concerns of people online: searching, safety, privacy, identity, community, anonymity, and visibility. She charts what it is that brought people online and what keeps us here even as the social equations of digital life—what we’re made to trade, knowingly or otherwise, for the benefits of the internet—have shifted radically beneath us. It is a story we are accustomed to hearing as tales of entrepreneurs and visionaries and dynamic and powerful corporations, but there is a more profound, intimate story that hasn’t yet been told. Long one of the most incisive, ferociously intelligent, and widely respected cultural critics online, McNeil here establishes a singular vision of who we are now, tells the stories of how we became us, and helps us start to figure out what we do now.",
-    "pageCount": 163,
-    "printType": "BOOK",
-    "categories": [
-      "Computers"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=kaqEDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://play.google.com/store/books/details?id=kaqEDwAAQBAJ"
-  },
-  {
-    "isbn": "9781510764705",
-    "dateFinished": "2020-09-23",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "politics",
-      "nonfiction"
-    ],
-    "title": "Disloyal: A Memoir",
-    "authors": [
-      "Michael Cohen"
-    ],
-    "publishedDate": "2020-09-08",
-    "description": "A #1 New York Times Bestseller! \"I read it cover-to-cover. I did not intend to, but I started at the beginning and didn’t put it down until it was over.\"—Rachel Maddow, MSNBC This book almost didn’t see the light of day as government officials tried to bar its publication. The Inside Story of the Real President Trump, by His Former Attorney and Personal Advisor—The Man Who Helped Get Him Into the Oval Office Once Donald Trump’s fiercest surrogate, closest confidant, and staunchest defender, Michael Cohen knows where the skeletons are buried. This is the most devastating business and political horror story of the century. As Trump’s lawyer and “fixer,” Cohen not only witnessed firsthand but was also an active participant in the inner workings of Trump’s business empire, political campaign, and presidential administration. This is a story that you have not read in newspapers, or on social media, or watched on television. These are accounts that only someone who worked for Trump around the clock for over a decade—not a few months or even a couple of years—could know. Cohen describes Trump’s racist rants against President Barack Obama, Nelson Mandela, and Black and Hispanic people in general, as well as the cruelty, humiliation, and abuse he leveled at family and staff. Whether he’s exposing the fact that Trump engaged in tax fraud by inflating his wealth or electronic fraud by rigging an online survey, or outing Trump’s Neanderthal views towards women or his hush-money payments to clandestine lovers, Cohen pulls no punches. He shows Trump’s relentless willingness to lie, exaggerate, mislead, or manipulate. Trump emerges as a man without a soul—a man who courts evangelicals and then trashes them, panders to the common man, but then rips off small business owners, a con man who will do or say absolutely anything to win, regardless of the cost to his family, his associates, or his country. At the heart of Disloyal, we see how Cohen came under the spell of his charismatic \"Boss\" and, as a result, lost all sense of his moral compass. The real \"real\" Donald Trump who permeates these pages—the racist, sexist, homophobic, lying, cheating President—will be discussed, written about, and analyzed for years to come.",
-    "pageCount": 415,
-    "printType": "BOOK",
-    "categories": [
-      "Political Science"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=RX33DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://play.google.com/store/books/details?id=RX33DwAAQBAJ"
-  },
-  {
-    "isbn": "9781524745738",
-    "dateFinished": "2020-09-29",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "politics",
-      "nonfiction"
-    ],
-    "title": "American Rule",
-    "authors": [
-      "Jared Yates Sexton"
-    ],
-    "publishedDate": "2021-09-14",
-    "description": "From writer and political analyst Jared Yates Sexton comes an eye-opening journey through American history that unearths and debunks the myths we've always told ourselves. Recent years have brought a reckoning in America. As rampant political corruption, stark inequality, and violent bigotry have come to the fore, many have faced two vital questions: How did we get here? And how do we move forward? An honest look at the past—and how it’s been covered up—is the only way to find the answers. Americans in power have abused and subjugated others since the nation’s very beginning, and myths of America’s unique goodness have both enabled that injustice and buried the truth for generations. In American Rule, Jared Yates Sexton blends deep research with stunning storytelling, digging into each era of growth and change that led us here—and laying bare the foundational myths at the heart of the American imagination. Stirring, unequivocal, and impossible to put down, American Rule tells the truth about what this nation has always been—and challenges us to forge a new path.",
-    "pageCount": 385,
-    "printType": "BOOK",
-    "categories": [
-      "History"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=QOY9EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/American_Rule.html?hl=&id=QOY9EAAAQBAJ"
-  },
-  {
-    "isbn": "9780771008795",
-    "dateFinished": "2020-10-13",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "scifi",
-      "fantasy"
-    ],
-    "title": "The Handmaid's Tale",
-    "authors": [
-      "Margaret Atwood"
-    ],
-    "publishedDate": "2011-09-06",
-    "description": "An instant classic and eerily prescient cultural phenomenon, from “the patron saint of feminist dystopian fiction” (New York Times). Now an award-winning Hulu series starring Elizabeth Moss. In this multi-award-winning, bestselling novel, Margaret Atwood has created a stunning Orwellian vision of the near future. This is the story of Offred, one of the unfortunate “Handmaids” under the new social order who have only one purpose: to breed. In Gilead, where women are prohibited from holding jobs, reading, and forming friendships, Offred’s persistent memories of life in the “time before” and her will to survive are acts of rebellion. Provocative, startling, prophetic, and with Margaret Atwood’s devastating irony, wit, and acute perceptive powers in full force, The Handmaid’s Tale is at once a mordant satire and a dire warning.",
-    "pageCount": 370,
-    "printType": "BOOK",
-    "categories": [
-      "Fiction"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=cRPKOzWlOfUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/The_Handmaid_s_Tale.html?hl=&id=cRPKOzWlOfUC"
-  },
-  {
-    "isbn": "9781785355448",
-    "dateFinished": "2020-10-18",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "politics",
-      "tech",
-      "nonfiction"
-    ],
-    "title": "Kill All Normies",
-    "authors": [
-      "Angela Nagle"
-    ],
-    "publishedDate": "2017-06-07",
-    "description": "Recent years have seen a revival of the heated culture wars of the 1990s, but this time its battle ground is the internet. On one side the \"alt right\" ranges from the once obscure neo-reactionary and white separatist movements, to geeky subcultures like 4chan, to more mainstream manifestations such as the Trump-supporting gay libertarian Milo Yiannopolous. On the other side, a culture of struggle sessions and virtue signalling lurks behind a therapeutic language of trigger warnings and safe spaces. The feminist side of the online culture wars has its equally geeky subcultures right through to its mainstream expression. Kill All Normies explores some of the cultural genealogies and past parallels of these styles and subcultures, drawing from transgressive styles of 60s libertinism and conservative movements, to make the case for a rejection of the perpetual cultural turn.",
-    "pageCount": 136,
-    "printType": "BOOK",
-    "categories": [
-      "Social Science"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=y-MlDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://play.google.com/store/books/details?id=y-MlDwAAQBAJ"
-  },
-  {
-    "isbn": "9781250200891",
-    "dateFinished": "2020-10-29",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "politics",
-      "nonfiction",
-      "tech",
-      "economics"
-    ],
-    "title": "Break 'Em Up",
-    "authors": [
-      "Zephyr Teachout"
-    ],
-    "publishedDate": "2020-05-19",
-    "description": "A passionate attack on the monopolies that are throttling American democracy. Every facet of American life is being overtaken by big platform monopolists like Facebook, Google, and Bayer (which has merged with the former agricultural giant Monsanto), resulting in a greater concentration of wealth and power than we've seen since the Gilded Age. They are evolving into political entities that often have more influence than the actual government, bending state and federal legislatures to their will and even creating arbitration courts that circumvent the US justice system. How can we recover our freedom from these giants? Anti-corruption scholar and activist Zephyr Teachout has the answer: Break 'Em Up. This book is a clarion call for liberals and leftists looking to find a common cause. Teachout makes a compelling case that monopolies are the root cause of many of the issues that today's progressives care about; they drive economic inequality, harm the planet, limit the political power of average citizens, and historically-disenfranchised groups bear the brunt of their shameful and irresponsible business practices. In order to build a better future, we must eradicate monopolies from the private sector and create new safeguards that prevent new ones from seizing power. Through her expert analysis of monopolies in several sectors and their impact on courts, journalism, inequality, and politics, Teachout offers a concrete path toward thwarting these enemies of working Americans and reclaiming our democracy before it’s too late.",
-    "pageCount": 320,
-    "printType": "BOOK",
-    "categories": [
-      "Political Science"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=MPQ5yAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Break_Em_Up.html?hl=&id=MPQ5yAEACAAJ"
-  },
-  {
-    "isbn": "9780306846441",
-    "dateFinished": "2020-11-07",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "tech",
-      "nonfiction"
-    ],
-    "title": "Culture Warlords",
-    "authors": [
-      "Talia Lavin"
-    ],
-    "publishedDate": "2020-10-13",
-    "description": "One reporter takes an immersive dive into white supremacy's explosive online presence, exploring the undercurrents of propaganda, racism, misogyny, and history that led us to where we are now. Talia Lavin is every skinhead's worst nightmare: a loud and unapologetic Jewish woman, acerbic, smart, and profoundly antiracist, with the investigative chops to expose the tactics and ideologies of online hatemongers. Culture Warlords is the story of how Lavin, a frequent target of extremist trolls (including those at Fox News), dove into a byzantine online culture of hate and learned the intricacies of how white supremacy proliferates online. Within these pages, she reveals the extremists hiding in plain sight online: Incels. White nationalists. White supremacists. National Socialists. Proud Boys. Christian extremists. In order to showcase them in their natural habitat, Talia assumes a range of identities, going undercover as a blonde Nazi babe, a forlorn incel, and a violent Aryan femme fatale. Along the way, she discovers a whites-only dating site geared toward racists looking for love, a disturbing extremist YouTube channel run by a fourteen-year-old girl with over 800,000 followers, the everyday heroes of the antifascist movement, and much more. By combining compelling stories chock-full of catfishing and gate-crashing with her own in-depth, gut-wrenching research, she also turns the lens of anti-Semitism, racism, and white power back on itself in an attempt to dismantle and decimate the online hate movement from within. Shocking, humorous, and merciless in equal measure, Culture Warlords explores some of the vilest subcultures on the Web-and shows us how we can fight back.",
-    "pageCount": 288,
-    "printType": "BOOK",
-    "categories": [
-      "Political Science"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=XFfODwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://play.google.com/store/books/details?id=XFfODwAAQBAJ"
-  },
-  {
-    "isbn": "9780525509691",
-    "dateFinished": "2020-11-14",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "politics",
-      "nonfiction"
-    ],
-    "title": "The Purpose of Power",
-    "authors": [
-      "Alicia Garza"
-    ],
-    "publishedDate": "2020-10-20",
-    "description": "An essential guide to building transformative movements to address the challenges of our time, from one of the country’s leading organizers and a co-creator of Black Lives Matter “Excellent and provocative . . . a gateway [to] urgent debates.”—Keeanga-Yamahtta Taylor, The New Yorker NAMED ONE OF THE BEST BOOK OF THE YEAR BY Time • Marie Claire • Kirkus Reviews In 2013, Alicia Garza wrote what she called “a love letter to Black people” on Facebook, in the aftermath of the acquittal of the man who murdered seventeen-year-old Trayvon Martin. Garza wrote: Black people. I love you. I love us. Our lives matter. With the speed and networking capacities of social media, #BlackLivesMatter became the hashtag heard ’round the world. But Garza knew even then that hashtags don’t start movements—people do. Long before #BlackLivesMatter became a rallying cry for this generation, Garza had spent the better part of two decades learning and unlearning some hard lessons about organizing. The lessons she offers are different from the “rules for radicals” that animated earlier generations of activists, and diverge from the charismatic, patriarchal model of the American civil rights movement. She reflects instead on how making room amongst the woke for those who are still awakening can inspire and activate more people to fight for the world we all deserve. This is the story of one woman’s lessons through years of bringing people together to create change. Most of all, it is a new paradigm for change for a new generation of changemakers, from the mind and heart behind one of the most important movements of our time.",
-    "pageCount": 353,
-    "printType": "BOOK",
-    "categories": [
-      "Social Science"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=JgLlDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://play.google.com/store/books/details?id=JgLlDwAAQBAJ"
-  },
-  {
-    "isbn": "9780804170048",
-    "dateFinished": "2020-11-30",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "tech",
-      "economics",
-      "nonfiction"
-    ],
-    "title": "The Attention Merchants",
-    "authors": [
-      "Tim Wu"
-    ],
-    "publishedDate": "2017-09-19",
-    "description": "From the author of the award-winning The Master Switch, who coined the term \"net neutrality”—a revelatory, ambitious and urgent account of how the capture and re-sale of human attention became the defining industry of our time. \"Dazzling.\" —Financial Times Ours is often called an information economy, but at a moment when access to information is virtually unlimited, our attention has become the ultimate commodity. In nearly every moment of our waking lives, we face a barrage of efforts to harvest our attention. This condition is not simply the byproduct of recent technological innovations but the result of more than a century's growth and expansion in the industries that feed on human attention. Wu’s narrative begins in the nineteenth century, when Benjamin Day discovered he could get rich selling newspapers for a penny. Since then, every new medium—from radio to television to Internet companies such as Google and Facebook—has attained commercial viability and immense riches by turning itself into an advertising platform. Since the early days, the basic business model of “attention merchants” has never changed: free diversion in exchange for a moment of your time, sold in turn to the highest-bidding advertiser. Full of lively, unexpected storytelling and piercing insight, The Attention Merchants lays bare the true nature of a ubiquitous reality we can no longer afford to accept at face value.",
-    "pageCount": 434,
-    "printType": "BOOK",
-    "categories": [
-      "Business & Economics"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=mNkxDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/The_Attention_Merchants.html?hl=&id=mNkxDwAAQBAJ"
-  },
-  {
-    "isbn": "9780358237068",
-    "dateFinished": "2020-12-01",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "politics",
-      "nonfiction"
-    ],
-    "title": "Compromised",
-    "authors": [
-      "Peter Strzok"
-    ],
-    "publishedDate": "2020-09",
-    "description": "The FBI veteran behind the Russia investigation draws on decades of experience hunting foreign agents in the United States to lay bare the threat posed by President Trump.",
-    "pageCount": 387,
-    "printType": "BOOK",
-    "categories": [
-      "Biography & Autobiography"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=jYvzDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Compromised.html?hl=&id=jYvzDwAAQBAJ"
-  },
-  {
-    "isbn": "9780061809613",
-    "dateFinished": "2020-12-16",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "scifi"
-    ],
-    "title": "The Sundering",
-    "authors": [
-      "Walter Jon Williams"
-    ],
-    "publishedDate": "2009-10-13",
-    "description": "“Space opera the way it ought to be [...] Bujold and Weber, bend the knee; interstellar adventure has a new king, and his name is Walter Jon Williams.” -- George R.R. Martin Following The Praxis, Walter Jon Williams’ critically-acclaimed mix of space opera and military science fiction, the conflict grows for the fate of humanity…and the universe. The Dread Empire of the Shaa is no more, following the death of the last oppressor. But freedom remains elusive for the myriad sentient races enslaved for ten centuries, as an even greater terror arises. The Naxids—a powerful insectoid species themselves subjugated until the recent Shaa demise—plan to fill the vacuum with their own bloody domination, and have already won a shattering victory with superior force and unimaginable cruelty. But two heroes survived the carnage at Magaria: Lord Gareth Martinez and the fiery, mysterious gun pilot Lady Caroline Sula, whose courageous exploits are becoming legend in the new history of galactic civil war. Yet their cunning, skill, and bravery may be no match for the overwhelming enemy descending upon the loyalist stronghold of Zanshaa, as the horrific battle looms that will determine the structure of the universe—and who shall live to inhabit it—for millennia to come.",
-    "pageCount": 448,
-    "printType": "BOOK",
-    "categories": [
-      "Fiction"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=qYNIN3Vhe84C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://play.google.com/store/books/details?id=qYNIN3Vhe84C"
-  },
-  {
-    "isbn": "9780241991411",
-    "dateFinished": "2021-01-03",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "politics",
-      "nonfiction",
-      "autobiography"
-    ],
-    "title": "A Promised Land",
-    "authors": [
-      "Barack Obama"
-    ],
-    "publishedDate": "2020-11-17",
-    "description": "THE #1 SUNDAY TIMES BESTSELLER A riveting, deeply personal account of history in the making-from the president who inspired us to believe in the power of democracy - and the perfect gift this Christmas! 'Gorgeously written, humorous, compelling, life affirming' Justin Webb, Mail on Sunday In the stirring, highly anticipated first volume of his presidential memoirs, Barack Obama tells the story of his improbable odyssey from young man searching for his identity to leader of the free world, describing in strikingly personal detail both his political education and the landmark moments of the first term of his historic presidency-a time of dramatic transformation and turmoil. Obama takes readers on a compelling journey from his earliest political aspirations to the pivotal Iowa caucus victory that demonstrated the power of grassroots activism to the watershed night of November 4, 2008, when he was elected 44th president of the United States, becoming the first African American to hold the nation's highest office. Reflecting on the presidency, he offers a unique and thoughtful exploration of both the awesome reach and the limits of presidential power, as well as singular insights into the dynamics of U.S. partisan politics and international diplomacy. Obama brings readers inside the Oval Office and the White House Situation Room, and to Moscow, Cairo, Beijing, and points beyond. We are privy to his thoughts as he assembles his cabinet, wrestles with a global financial crisis, takes the measure of Vladimir Putin, overcomes seemingly insurmountable odds to secure passage of the Affordable Care Act, clashes with generals about U.S. strategy in Afghanistan, tackles Wall Street reform, responds to the devastating Deepwater Horizon blowout, and authorizes Operation Neptune's Spear, which leads to the death of Osama bin Laden. A Promised Land is extraordinarily intimate and introspective-the story of one man's bet with history, the faith of a community organizer tested on the world stage. Obama is candid about the balancing act of running for office as a Black American, bearing the expectations of a generation buoyed by messages of \"hope and change,\" and meeting the moral challenges of high-stakes decision-making. He is frank about the forces that opposed him at home and abroad, open about how living in the White House affected his wife and daughters, and unafraid to reveal self-doubt and disappointment. Yet he never wavers from his belief that inside the great, ongoing American experiment, progress is always possible. This beautifully written and powerful book captures Barack Obama's conviction that democracy is not a gift from on high but something founded on empathy and common understanding and built together, day by day. 'What is unexpected in A Promised Land is the former president's candour' David Olusoga, Observer",
-    "pageCount": 768,
-    "printType": "BOOK",
-    "categories": [
-      "Biography & Autobiography"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=ypb9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/A_Promised_Land.html?hl=&id=ypb9DwAAQBAJ"
-  },
-  {
-    "isbn": "9780525561378",
-    "dateFinished": "2021-01-23",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "tech",
-      "nonfiction",
-      "politics"
-    ],
-    "title": "Zucked",
-    "authors": [
-      "Roger McNamee"
-    ],
-    "publishedDate": "2020-02-04",
-    "description": "One of the Financial Times' Best Business Books of 2019 The New York Times bestseller about a noted tech venture capitalist, early mentor to Mark Zuckerberg, and Facebook investor, who wakes up to the serious damage Facebook is doing to our society—and sets out to try to stop it. If you had told Roger McNamee even three years ago that he would soon be devoting himself to stopping Facebook from destroying our democracy, he would have howled with laughter. He had mentored many tech leaders in his illustrious career as an investor, but few things had made him prouder, or been better for his fund's bottom line, than his early service to Mark Zuckerberg. Still a large shareholder in Facebook, he had every good reason to stay on the bright side. Until he simply couldn't. Zucked is McNamee's intimate reckoning with the catastrophic failure of the head of one of the world's most powerful companies to face up to the damage he is doing. It's a story that begins with a series of rude awakenings. First there is the author's dawning realization that the platform is being manipulated by some very bad actors. Then there is the even more unsettling realization that Zuckerberg and Sheryl Sandberg are unable or unwilling to share his concerns, polite as they may be to his face. And then comes the election of Donald Trump, and the emergence of one horrific piece of news after another about the malign ends to which the Facebook platform has been put. To McNamee's shock, even still Facebook's leaders duck and dissemble, viewing the matter as a public relations problem. Now thoroughly alienated, McNamee digs into the issue, and fortuitously meets up with some fellow travelers who share his concern, and help him sharpen its focus. Soon he and a dream team of Silicon Valley technologists are charging into the fray, to raise consciousness about the existential threat of Facebook, and the persuasion architecture of the attention economy more broadly—to our public health and to our political order. Zucked is both an enthralling personal narrative and a masterful explication of the forces that have conspired to place us all on the horns of this dilemma. This is the story of a company and its leadership, but it's also a larger tale of a business sector unmoored from normal constraints, just at a moment of political and cultural crisis, the worst possible time to be given new tools for summoning the darker angels of our nature and whipping them into a frenzy. Like Jimmy Stewart in Rear Window, Roger McNamee happened to be in the right place to witness a crime, and it took him some time to make sense of what he was seeing and what we ought to do about it. The result of that effort is a wise, hard-hitting, and urgently necessary account that crystallizes the issue definitively for the rest of us.",
-    "pageCount": 402,
-    "printType": "BOOK",
-    "categories": [
-      "Political Science"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=DzHJDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Zucked.html?hl=&id=DzHJDwAAQBAJ"
-  },
-  {
-    "isbn": "9781953953322",
-    "dateFinished": "2021-01-24",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "culture"
-    ],
-    "title": "Get Together",
-    "authors": [
-      "Bailey Richardson ",
-      "Kevin Huynh ",
-      "Kai Elmer Sotto"
-    ],
-    "publishedDate": "2019-08-20",
-    "description": "A practical and heartfelt guide to cultivating a community, online or IRL. Although communities feel magical, they don’t come together by magic. Get Together is a practical and heartfelt guide to cultivating a community. Whether starting a run crew, connecting with fans online, or sparking a movement of K–12 teachers, the secret to getting people together is this: build your community with people, not for them. In Get Together, Bailey Richardson, Kevin Huynh, and Kai Elmer Sotto of People & Company share true stories of everyday people who have created thriving communities, both in person and online. They provide clear steps to untangle the challenge of getting passionate people together, helping individuals and organizations navigate the intricacies of leading a community, including: - How to rally the first people - How to get people talking - How to attract new, authentic folks - How to develop leaders and expand globally. The People & Company team reminds us that we each hold the potential to spark a community. Get Together shows readers that if we join forces—as company and customers, artist and fans, organizer and advocates—we’ll do more together than we ever could alone.",
-    "pageCount": 169,
-    "printType": "BOOK",
-    "categories": [
-      "Business & Economics"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=BRnBEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://play.google.com/store/books/details?id=BRnBEAAAQBAJ"
-  },
-  {
-    "isbn": "9781594206016",
-    "dateFinished": "2021-01-29",
-    "status": "finished",
-    "rating": "unrated",
-    "tags": [
-      "tech",
-      "politics",
-      "nonfiction"
-    ],
-    "title": "Dark Mirror",
-    "authors": [
-      "Barton Gellman"
-    ],
-    "publishedDate": "2020-05-19",
-    "description": "“Engrossing. . . . Gellman [is] a thorough, exacting reporter . . . a marvelous narrator for this particular story, as he nimbly guides us through complex technical arcana and some stubborn ethical questions. . . . Dark Mirror would be simply pleasurable to read if the story it told didn’t also happen to be frighteningly real.” —Jennifer Szalai, The New York Times From the three-time Pulitzer Prize winner and author of the New York Times bestseller Angler, the definitive master narrative of Edward Snowden and the modern surveillance state, based on unique access to Snowden and groundbreaking reportage around the world. Edward Snowden touched off a global debate in 2013 when he gave Barton Gellman, Laura Poitras and Glenn Greenwald each a vast and explosive archive of highly classified files revealing the extent of the American government’s access to our every communication. They shared the Pulitzer Prize that year for public service. For Gellman, who never stopped reporting, that was only the beginning. He jumped off from what Snowden gave him to track the reach and methodology of the U.S. surveillance state and bring it to light with astonishing new clarity. Along the way, he interrogated Snowden’s own history and found important ways in which myth and reality do not line up. Gellman treats Snowden with respect, but this is no hagiographic account, and Dark Mirror sets the record straight in ways that are both fascinating and important. Dark Mirror is the story that Gellman could not tell before, a gripping inside narrative of investigative reporting as it happened and a deep dive into the machinery of the surveillance state. Gellman recounts the puzzles, dilemmas and tumultuous events behind the scenes of his work – in top secret intelligence facilities, in Moscow hotel rooms, in huddles with Post lawyers and editors, in Silicon Valley executive suites, and in encrypted messages from anonymous accounts. Within the book is a compelling portrait of national security journalism under pressure from legal threats, government investigations, and foreign intelligence agencies intent on stealing Gellman’s files. Throughout Dark Mirror, Gellman wages an escalating battle against unknown adversaries who force him to mimic their tradecraft in self-defense. With the vivid and insightful style that is the author’s trademark, Dark Mirror is a true-life spy tale about the surveillance-industrial revolution and its discontents. Along the way, with the benefit of fresh reporting, it tells the full story of a government leak unrivaled in drama since All the President’s Men.",
-    "pageCount": 450,
-    "printType": "BOOK",
-    "categories": [
-      "Political Science"
-    ],
-    "thumbnail": "https://books.google.com/books/content?id=7_LsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
-    "language": "en",
-    "link": "https://books.google.com/books/about/Dark_Mirror.html?hl=&id=7_LsDwAAQBAJ"
+    "link": "https://books.google.com/books/about/The_Artisan_Soul.html?hl=&id=WTNlnQEACAAJ"
   },
   {
     "isbn": "9781938340109",
@@ -10152,6 +10151,53 @@
     "thumbnail": "https://books.google.com/books/content?id=y_uTDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=y_uTDwAAQBAJ"
+  },
+  {
+    "isbn": "9781645036951",
+    "dateFinished": "2023-11-16",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "nonfiction",
+      "sports"
+    ],
+    "title": "Black Ball",
+    "authors": [
+      "Theresa Runstedtler"
+    ],
+    "publishedDate": "2023",
+    "description": "Against the backdrop of ongoing massive resistance to racial desegregation and increasingly strident calls for Black Power, the NBA in the 1970s embodied the nation's imagined descent into disorder. The press and the public blamed young Black players for the chaos in the NBA, citing drugs, violence, greed, and criminality. The supposed decline of pro basketball became a metaphor for the first decades of integration in America: the rules of the game had changed, allowing more Black people onto a formerly white playing field, and now they were ruining everything. But Black Ball argues that this much-maligned period was pivotal to the rise of the NBA as the star-laden powerhouse we know today, thanks largely to the efforts of Black players in challenging the white basketball establishment of owners, coaches, and spectators. Spotlighting legendary players like Kareem Abdul-Jabbar, Bernard King, and Connie Hawkins, scholar Theresa Runstedtler expertly rewrites basketball's \"Dark Ages,\" weaving together her deep knowledge of the game's key icons and institutions with incisive social and political analysis of the era. Black ballers created an aerial, improvisational, and creative style derived from the playground courts of their neighborhoods, laying the foundation for the explosive popularity and profitability of the league in subsequent decades. They also transformed labor in the pro-basketball world, filing lawsuits and organizing unions to demand better salaries and greater autonomy. Without their skills, style, and savvy, there would be no Michael Jordan, Allen Iverson, or LeBron James today…",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "History"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=te9EzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Black_Ball.html?hl=&id=te9EzwEACAAJ"
+  },
+  {
+    "isbn": "9780593085172",
+    "dateFinished": "2023-11-16",
+    "status": "finished",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Providence",
+    "authors": [
+      "Max Barry"
+    ],
+    "publishedDate": "2020",
+    "description": "Seven years after first contact, Providence Five launches. An enormous warship, built to protect humanity, it has a crew of four. Gilly, Talia, Anders, and Jackson will be confined to the ship for years, monitoring the AI-powered ship and reporting the war's progress to a global audience by way of social media. When their communications are cut, their ship becomes decreasingly trustworthy. To survive, they must win a fight that is suddenly and terrifyingly real. -- adapted from jacket",
+    "pageCount": 322,
+    "printType": "BOOK",
+    "categories": [
+      "Fiction"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=yfLsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Providence.html?hl=&id=yfLsDwAAQBAJ"
   },
   {
     "isbn": "9780593238738",
