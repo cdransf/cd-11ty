@@ -66,14 +66,14 @@
 /apple-touch-icon /assets/icons/apple-touch-icon.png 200!
 /apple-touch-icon-precomposed.png /assets/icons/apple-touch-icon.png 200!
 /static/favicons/apple-touch-icon.png /assets/icons/apple-touch-icon.png 200!
-/static/images/default.png /assets/img/default.png 301!
-/static/images/avatar.webp https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=500&h=500&fm=webp 301!
+/static/images/avatar.png /assets/img/avatar.png 301!
+/static/images/avatar.webp https://coryd.dev/.netlify/images/?url=/assets/img/avatar.png&w=500&h=500&fm=webp 301!
 /assets/img/cache/avatar-800w.webp /assets/img/cache/avatar-880w.webp 301!
 /assets/img/favicon/apple-touch-icon.png /assets/icons/apple-touch-icon.png 301!
 /assets/img/favicon/favicon-32x32.png /assets/icons/favicon.ico 301!
 /assets/img/favicon/favicon-16x16.png /assets/icons/favicon.ico 301!
-/assets/img/logo.webp https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=500&h=500&fm=webp 301!
-/assets/img/ogi/default.jpg https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=500&h=500&fm=webp 301!
+/assets/img/logo.webp https://coryd.dev/.netlify/images/?url=/assets/img/avatar.png&w=500&h=500&fm=webp 301!
+/assets/img/ogi/default.jpg https://coryd.dev/.netlify/images/?url=/assets/img/avatar.png&w=500&h=500&fm=webp 301!
 
 # general
 /articles/ / 301!
