@@ -2,7 +2,7 @@
 {
   "version": "https://jsonfeed.org/version/1",
   "title": "{{ title }}",
-  "icon": "https://coryd.dev/.netlify/images/?url=/assets/img/avatar.png&w=500&h=500",
+  "icon": "https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=500&h=500",
   "home_page_url": "{{ meta.url }}",
   "feed_url": "{{ permalink | absoluteUrl: meta.url }}",
   "items": [{% for entry in entries limit: 20 -%}
