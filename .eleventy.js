@@ -13,7 +13,6 @@ import { slugifyString } from './config/utils/index.js'
 import { svgToJpeg } from './config/events/index.js'
 import { minifyJsComponents } from './config/events/index.js'
 import { searchIndex, tagList, postStats, tagsSortedByCount, links, tagMap, booksToRead } from './config/collections/index.js'
-import { img } from './config/shortcodes/index.js'
 
 // load .env
 import dotenvFlow from 'dotenv-flow'
