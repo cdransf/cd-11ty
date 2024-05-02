@@ -28,6 +28,11 @@ package = "/plugins/fetch-scrobbles"
 # HEADERS
 ###
 [[headers]]
+  for = "/media/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, must-revalidate"
+
+[[headers]]
 for = "/feeds/posts"
   [headers.values]
   Content-Type = "application/xml; charset=utf-8"
