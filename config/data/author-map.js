@@ -1,4 +1,5 @@
 export default {
+  "https://janmaarten.com": "Jan Maarten",
   "https://sheep.horse": "Andrew Stephens",
   "https://nautil.us": "Nautilus",
   "https://www.takahe.org.nz": "takahē magazine",
