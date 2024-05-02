@@ -9,7 +9,7 @@ permalink: /about.html
 <div class="avatar-wrapper flex-centered">
   <div class="interior">
   {%- capture about_alt -%}{{ meta.siteName }} - image by David Neal / @reverentgeek{%- endcapture -%}
-  <img src="https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=600" alt="{{ about_alt }}" loading="eager" decoding="async" />
+  <img src="https://coryd.dev/.netlify/images/?url=/assets/img/default.png&w=600" alt="{{ about_alt }}" loading="eager" decoding="async" width="600" height="600" />
   </div>
 </div>
 <h2 class="page-header text-centered">Hi, I'm Cory</h2>
