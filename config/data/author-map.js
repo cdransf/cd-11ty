@@ -1,4 +1,5 @@
 export default {
+  "https://www.takahe.org.nz": "takahē magazine",
   "https://shkspr.mobi": "Terence Eden",
   "https://www.statsignificant.com": "Daniel Parris",
   "https://statsignificant.com": "Daniel Parris",
