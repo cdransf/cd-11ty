@@ -31,7 +31,7 @@
     position: relative;
     display: flex;
 
-    &.shadow image::after {
+    &.shadow::after {
       position: absolute;
       z-index: 1;
       content: '';
