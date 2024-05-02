@@ -97,8 +97,8 @@ https://cdme.netlify.app https://coryd.dev 301!
 
 # media
 /media/* https://f001.backblazeb2.com/file/coryd-dev-images/:splat 200!
-/media/square/* /.netlify/images?url=https://f001.backblazeb2.com/file/coryd-dev-images/:splat&fit=cover&w=240&h=240&fm=webp&q=75 200!
-/media/vertical/* /.netlify/images?url=https://f001.backblazeb2.com/file/coryd-dev-images/:splat&fit=cover&w=200&h=307&fm=webp&q=75 200!
+/media-square/* /.netlify/images?url=https://f001.backblazeb2.com/file/coryd-dev-images/:splat&fit=cover&w=240&h=240&fm=webp&q=75 200!
+/media-vertical/* /.netlify/images?url=https://f001.backblazeb2.com/file/coryd-dev-images/:splat&fit=cover&w=200&h=307&fm=webp&q=75 200!
 
 # analytics
 /23af0256fe76a.js http://static.getclicky.com/js?in=/2842c5ddc46e5 200!
