@@ -22,9 +22,9 @@
             {%- if loading -%}{{ loading }}{%- else -%}lazy{%- endif -%}
           {%- endcapture -%}
           {% if shape == 'square' %}
-            <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=240&h=240&fm=webp&q=65" alt="{{ alt }}" loading="{{ loadingStrategy }}" decoding="async" />
+            <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=240&h=240&fm=webp&q=65" alt="{{ alt }}" loading="{{ loadingStrategy }}" decoding="async" width="240" height="240" />
           {% else %}
-            <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=200&h=307&fm=webp&q=65" alt="{{ alt }}" loading="{{ loadingStrategy }}" decoding="async" />
+            <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=200&h=307&fm=webp&q=65" alt="{{ alt }}" loading="{{ loadingStrategy }}" decoding="async" width="200" height="307" />
           {% endif %}
         </div>
       </a>
