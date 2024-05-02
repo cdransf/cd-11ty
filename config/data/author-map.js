@@ -1,4 +1,6 @@
 export default {
+  "https://sheep.horse": "Andrew Stephens",
+  "https://nautil.us": "Nautilus",
   "https://www.takahe.org.nz": "takahē magazine",
   "https://shkspr.mobi": "Terence Eden",
   "https://www.statsignificant.com": "Daniel Parris",
