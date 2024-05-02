@@ -22,8 +22,7 @@
     border-color: var(--accent-color-hover)
   }
 
-  & img,
-  & picture {
+  & img {
     max-width: calc(var(--sizing-3xl) * 4);
     height: auto;
   }
@@ -67,11 +66,6 @@
     flex-direction: row;
     gap: var(--sizing-base);
     align-items: start;
-
-    & picture {
-      display: block;
-      margin-bottom: var(--sizing-md);
-    }
 
     & .book-meta {
       align-items: start;

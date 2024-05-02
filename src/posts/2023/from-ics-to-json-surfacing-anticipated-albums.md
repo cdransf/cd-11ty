@@ -63,7 +63,9 @@ Rendering the output is as simple as:
 ```
 
 {% endraw %}
+
 Leaving us with:
-{% image 'https://coryd.dev/.netlify/images/?url=/media/blog/album-releases.jpg&w=1000', 'Albums I\'m looking forward to', 'image-banner', 'eager' %}
+
+<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/album-releases.jpg&w=1000&fm=webp&q=85" class="image-banner" alt="Albums I'm looking forward to" loading="lazy" decoding="async" />
 
 [^1]: At this point, a dev playground.

@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "13.3.0",
+  "version": "13.4.0",
   "description": "The source for my personal site. Built using 11ty.",
   "type": "module",
   "scripts": {
@@ -33,7 +33,6 @@
     "@11ty/eleventy": "3.0.0-alpha.10",
     "@11ty/eleventy-activity-feed": "^1.0.9",
     "@11ty/eleventy-fetch": "^4.0.1",
-    "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@11tyrocks/eleventy-plugin-lightningcss": "^1.4.0",

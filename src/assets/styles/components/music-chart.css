@@ -15,8 +15,7 @@
       border: 1px solid var(--accent-color);
     }
 
-    & img,
-    & picture {
+    & img {
       width: calc(var(--sizing-3xl) * 1.5);
       height: calc(var(--sizing-3xl) * 1.5);
     }
@@ -117,12 +116,9 @@
     &.grid {
       grid-template-columns: repeat(3,minmax(0,1fr));
 
-      & .item {
-        & img,
-        & picture {
-          width: calc(var(--sizing-3xl) * 2);
-          height: calc(var(--sizing-3xl) * 2);
-        }
+      & .item img {
+        width: calc(var(--sizing-3xl) * 2);
+        height: calc(var(--sizing-3xl) * 2);
       }
     }
   }

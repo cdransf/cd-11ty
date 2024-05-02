@@ -19,7 +19,6 @@
     justify-content: center;
     overflow: hidden;
 
-    & picture > *,
     & img {
       width: 100%;
       height: 100%;

@@ -21,7 +21,11 @@
           {%- capture loadingStrategy -%}
             {%- if loading -%}{{ loading }}{%- else -%}lazy{%- endif -%}
           {%- endcapture -%}
-          {% image item.image, alt, '', loadingStrategy %}
+          {% if shape == 'square' %}
+            <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=320&h=320&fm=webp&q=85" class="image-banner" alt="{{ alt }}" loading="{{ loadingStrategy }}" decoding="async" />
+          {% else %}
+            <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=200&h=307&fm=webp&q=85" class="image-banner" alt="{{ alt }}" loading="{{ loadingStrategy }}" decoding="async" />
+          {% endif %}
         </div>
       </a>
     {% endfor %}

@@ -9,7 +9,7 @@ I've been using Fastmail for years now and have explored a number of different a
 
 For now, I've approached filtering my mail by applying regular expressions to reasonably broad categories of incoming mail[^2]. My thinking with this approach is that will scale better over the long term by applying heuristics to common phrases and patterns in incoming mail without the need to apply rules to senders on a per address or domain basis.
 
-{% image 'https://coryd.dev/.netlify/images/?url=/media/blog/fastmail-workflow.jpg&w=1000', 'A diagram of my Fastmail workflow', 'image-banner', 'eager' %}
+<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/fastmail-workflow.jpg&w=1000&fm=webp&q=85" class="image-banner" alt="A diagram of my Fastmail workflow" />
 
 ## Alias-specific rules
 

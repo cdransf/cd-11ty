@@ -6,4 +6,4 @@ layout: default
 <h2 class="page-header">{{ title }}</h2>
 {{ content }}
 <hr class="large-spacing" />
-{% render "partials/now/media-grid.liquid", data:bookData, shape: "vertical", count: 200 %}
+{% render "partials/now/media-grid.liquid", data:bookData, shape: "vertical", count: 200, loading: "eager" %}

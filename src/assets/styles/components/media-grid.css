@@ -28,7 +28,7 @@
   & .item-wrapper {
     position: relative;
 
-    &.shadow picture::after {
+    &.shadow image::after {
       position: absolute;
       z-index: 1;
       content: '';
@@ -39,7 +39,7 @@
       height: calc(100% - 1px);
     }
 
-    & picture {
+    & image {
       width: 100%;
       height: 100%;
       position: relative;

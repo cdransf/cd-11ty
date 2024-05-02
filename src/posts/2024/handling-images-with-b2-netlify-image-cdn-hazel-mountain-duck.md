@@ -14,7 +14,7 @@ To simplify file uploads to B2, I mount the bucket for my site using [Mountain D
 
 My music charting feature relies on JSON maps of artist and album metadata — if a new artist or album isn't present in either, it assumes that the image it needs is in the format of `artist-name.jpg` or `artist-name-album-name.jpg`. I store the canonical copies of these image files in a separate GitHub repo and have Hazel watch the `artist` and `album` directories contained therein. It renames the files to match the aforementioned format, strips characters that typically break URLs and copies them to my mounted B2 Bucket.
 
-{% image 'https://coryd.dev/media/blog/albums-hazel-rule-example.png', 'An example of my album art Hazel workflow', 'image-banner' %}
+<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/albums-hazel-rule-example.png&w=1000&fm=webp&q=85" class="image-banner" alt="An example of my album art Hazel workflow" />
 
 ---
 
@@ -39,7 +39,7 @@ You'll also need to set an array of allowed domains that you intend to source im
 
 I'm primarily leveraging my B2 bucket, but also use the [The Movie Database](https://www.themoviedb.org/) for TV/movie posters displayed on my now page and fetch book covers from Google books.
 
-When I access an image, it's then done via [Netlify's image CDN](https://docs.netlify.com/image-cdn/overview/), allowing me to set optimal dimensions, fit and format: `https://coryd.dev/.netlify/images/?url=/media/albums/IMAGE.jpg&fit=cover&w=320&h=320`. I apply similar parameters to book and TV/movie images to preserve a consistent aspect ratio, without coercing these images into a consistent shape with CSS[^1].
+When I access an image, it's then done via [Netlify's image CDN](https://docs.netlify.com/image-cdn/overview/), allowing me to set optimal dimensions, fit and format: `https://coryd.dev/media/albums/IMAGE.jpg`. I apply similar parameters to book and TV/movie images to preserve a consistent aspect ratio, without coercing these images into a consistent shape with CSS[^1].
 
 Once I have my Netlify CDN URLs, I *still* process them via an 11ty image shortcode:
 
