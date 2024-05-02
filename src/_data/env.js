@@ -1,3 +1,5 @@
 export default async function () {
-  return process.env.NODE_ENV
+  return {
+    production: process.env.ELEVENTY_RUN_MODE === 'build'
+  }
 }
