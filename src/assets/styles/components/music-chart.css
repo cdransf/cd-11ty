@@ -73,7 +73,7 @@
     }
 
     & .info {
-      max-width: calc(100% - var(--sizing-lg));
+      max-width: calc(95% - var(--sizing-lg));
     }
   }
 
