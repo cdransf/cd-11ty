@@ -6,7 +6,7 @@ tags: ['music']
 ---
 I saw this carved into a table in Austin once and it — like many songs — has been stuck in my head ever since. I'll get hooked on a song and circle back to that roughly carved message.<!-- excerpt -->
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fm=webp&q=70&w=1000" alt="What song is in your head?" class="image-banner" loading="eager" decoding="async" />
+<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fm=webp&q=65&w=1000" alt="What song is in your head?" class="image-banner" loading="eager" decoding="async" />
 
 I've had songs and albums stuck in my head dating back to my childhood, primarily tracks from [*The Traveling Wilburys Vol. 1*](https://en.wikipedia.org/wiki/Traveling_Wilburys_Vol._1) — Tweeter and the Monkey Man, Handle With Care — they all take turns getting stuck in my head.
 

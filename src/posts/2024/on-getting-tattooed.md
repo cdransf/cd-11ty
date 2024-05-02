@@ -28,7 +28,7 @@ Each piece was important to me when I got it and remains important to me now. Th
 
 {% capture fallbackIcon %}{% tablericon "photo" "A photo of the Sturgill Simpson-inspired half sleeve referenced above." %}{% endcapture %}
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&w=1000&fm=webp&q=70" class="image-banner" alt="A photo of the Sturgill Simpson-inspired half sleeve referenced above." loading="lazy" decoding="async" />
+<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&w=1000&fm=webp&q=65" class="image-banner" alt="A photo of the Sturgill Simpson-inspired half sleeve referenced above." loading="lazy" decoding="async" />
 
 [^1]: My wife got the same piece done — there was one pointing to the driveway of the house we got married at. It burned down in the Butte fire.
 [^2]: She got elected!
