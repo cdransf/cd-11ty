@@ -10,7 +10,6 @@ import htmlmin from 'html-minifier-terser'
 
 import filters from './config/filters/index.js'
 import { slugifyString } from './config/utils/index.js'
-import { svgToJpeg } from './config/events/index.js'
 import { minifyJsComponents } from './config/events/index.js'
 import { searchIndex, tagList, postStats, tagsSortedByCount, links, tagMap, booksToRead } from './config/collections/index.js'
 
@@ -142,7 +141,6 @@ export default async function (eleventyConfig) {
   })
 
   // events
-  eleventyConfig.on('afterBuild', svgToJpeg)
   eleventyConfig.on('afterBuild', minifyJsComponents)
 
   return {
