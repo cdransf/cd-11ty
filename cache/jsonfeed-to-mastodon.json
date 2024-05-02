@@ -13037,5 +13037,48 @@
       "https://social.lol/users/cory/statuses/112369981950307140"
     ],
     "lastTootTimestamp": 1714629851578
+  },
+  "https://janmaarten.com/polywork/": {
+    "id": "aHR0cHM6Ly9qYW5tYWFydGVuLmNvbS9wb2x5d29yay8=",
+    "title": "🔗: How social networks prey on our longing to be known via Jan Maarten",
+    "url": "https://janmaarten.com/polywork/",
+    "content_text": "🔗: How social networks prey on our longing to be known via Jan Maarten #Tech #SocialMedia https://janmaarten.com/polywork/",
+    "date_published": "Thu, 02 May 2024 15:01:00 GMT",
+    "toots": []
+  },
+  "https://sheep.horse/2024/4/save_the_web_by_being_nice.html": {
+    "id": "aHR0cHM6Ly9zaGVlcC5ob3JzZS8yMDI0LzQvc2F2ZV90aGVfd2ViX2J5X2JlaW5nX25pY2UuaHRtbA==",
+    "title": "🔗: Save the Web by Being Nice via Andrew Stephens",
+    "url": "https://sheep.horse/2024/4/save_the_web_by_being_nice.html",
+    "content_text": "🔗: Save the Web by Being Nice via Andrew Stephens #Tech https://sheep.horse/2024/4/save_the_web_by_being_nice.html",
+    "date_published": "Thu, 02 May 2024 14:54:00 GMT",
+    "toots": []
+  },
+  "https://adactio.com/journal/21098": {
+    "id": "aHR0cHM6Ly9hZGFjdGlvLmNvbS9qb3VybmFsLzIxMDk4",
+    "title": "🔗: Our web via Jeremy Keith",
+    "url": "https://adactio.com/journal/21098",
+    "content_text": "🔗: Our web via Jeremy Keith #Tech https://adactio.com/journal/21098",
+    "date_published": "Thu, 02 May 2024 14:52:00 GMT",
+    "toots": []
+  },
+  "https://nautil.us/viva-la-library-543293/": {
+    "id": "aHR0cHM6Ly9uYXV0aWwudXMvdml2YS1sYS1saWJyYXJ5LTU0MzI5My8=",
+    "title": "🔗: Viva la Library! via Nautilus",
+    "url": "https://nautil.us/viva-la-library-543293/",
+    "content_text": "🔗: Viva la Library! via Nautilus #Tech https://nautil.us/viva-la-library-543293/",
+    "date_published": "Thu, 02 May 2024 14:51:00 GMT",
+    "toots": []
+  },
+  "https://www.citationneeded.news/we-can-have-a-different-web/": {
+    "id": "aHR0cHM6Ly93d3cuY2l0YXRpb25uZWVkZWQubmV3cy93ZS1jYW4taGF2ZS1hLWRpZmZlcmVudC13ZWIv",
+    "title": "🔗: We can have a different web via Molly White",
+    "url": "https://www.citationneeded.news/we-can-have-a-different-web/",
+    "content_text": "🔗: We can have a different web via Molly White #Tech https://www.citationneeded.news/we-can-have-a-different-web/",
+    "date_published": "Thu, 02 May 2024 14:50:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112372338946343321"
+    ],
+    "lastTootTimestamp": 1714665816483
   }
 }
