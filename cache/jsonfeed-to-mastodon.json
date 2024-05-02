@@ -13015,5 +13015,16 @@
       "https://social.lol/users/cory/statuses/112367404563982446"
     ],
     "lastTootTimestamp": 1714590523786
+  },
+  "https://chrisburnell.com/note/slash-interests/": {
+    "id": "aHR0cHM6Ly9jaHJpc2J1cm5lbGwuY29tL25vdGUvc2xhc2gtaW50ZXJlc3RzLw==",
+    "title": "🔗: What are you interested in? via Chris Burnell",
+    "url": "https://chrisburnell.com/note/slash-interests/",
+    "content_text": "🔗: What are you interested in? via Chris Burnell #IndieWeb #SmallWeb #WebDev #Tech https://chrisburnell.com/note/slash-interests/",
+    "date_published": "Wed, 01 May 2024 23:15:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112368600878459788"
+    ],
+    "lastTootTimestamp": 1714608778108
   }
 }
