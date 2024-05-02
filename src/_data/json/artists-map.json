@@ -307,7 +307,7 @@
   "civerous": {
     "mbid": "f7579430-af4b-42e6-86c7-4c24a8411b58",
     "genre": "death metal",
-    "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/civerous.jpg"
+    "image": "https://coryd.dev/media/artists/civerous.jpg"
   },
   "cloakroom": {
     "mbid": "d419f6da-298a-40ea-ba0c-1757edd218b7",
@@ -1777,7 +1777,7 @@
   "worst-party-ever": {
     "mbid": "24947203-c6e2-46f3-b84a-f9f8c8cabc8e",
     "genre": "emo",
-    "image": "https://coryd.dev/.netlify/images/?url=https://f001.backblazeb2.com/file/coryd-dev-images/artists/worst-party-ever.jpg"
+    "image": "https://coryd.dev/media/artists/worst-party-ever.jpg"
   },
   "xenomorph": {
     "mbid": "507a85c8-49c9-4518-ad38-eafcefbdd156",
