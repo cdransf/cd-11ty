@@ -22,7 +22,7 @@ Within the Netlify `_redirects` file for my site I have the following rule set:
 
 ```text
 # media
-/media/* https://f001.backblazeb2.com/file/coryd-dev-images/:splat 200
+/media/* https://f001.backblazeb2.com/file/coryd-dev/:splat 200
 ```
 
 I have the bucket in my source as it *is* public but the actual directories don't list their contents. Rewriting the URL to `/media/` keeps image references a bit tidier.
@@ -34,7 +34,7 @@ You'll also need to set an array of allowed domains that you intend to source im
 # IMAGES
 ###
 [images]
-  remote_images = ["https://f001.backblazeb2.com/file/coryd-dev-images/.*", "https://image.tmdb.org/.*", "https://books.google.com/.*"]
+  remote_images = ["https://f001.backblazeb2.com/file/coryd-dev/.*", "https://image.tmdb.org/.*", "https://books.google.com/.*"]
 ```
 
 I'm primarily leveraging my B2 bucket, but also use the [The Movie Database](https://www.themoviedb.org/) for TV/movie posters displayed on my now page and fetch book covers from Google books.
@@ -101,5 +101,7 @@ export const img = async (
 ```
 
 All of this yields automated image naming, easier uploading, properly sized, formatted and cropped images that are then used to generate `<picture>` and `<img … />` elements in the final markup.
+
+**UPDATE:** I'm currently giving some thought to moving image optimization to the CDN altogether and serving the resulting `.webp` file. This simplifies my markup and yields build times down from 2+ minutes to less than or just about one.
 
 [^1]: I could display them at the source aspect ratio, but I prefer the visual consistency this approach allows.
