@@ -12900,7 +12900,7 @@
     "title": "🎧: My top artists for the week: Full of Hell @ 48 plays, Replicant @ 39 plays, Portrayal of Guilt @ 18 plays, Bruce Springsteen @ 17 plays, Mortuous @ 16 plays, Anxious @ 15 plays, Civerous @ 14 plays, Nothing @ 14 plays #Music",
     "url": "https://coryd.dev/now?ts=2024-17#artists",
     "content_text": "🎧: My top artists for the week: Full of Hell @ 48 plays, Replicant @ 39 plays, Portrayal of Guilt @ 18 plays, Bruce Springsteen @ 17 plays, Mortuous @ 16 plays, Anxious @ 15 plays, Civerous @ 14 plays, Nothing @ 14 plays #Music  https://coryd.dev/now?ts=2024-17#artists",
-    "date_published": "Wed, 24 Apr 2024 08:00:00 GMT",
+    "date_published": "Thu, 25 Apr 2024 08:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112352083701336133"
     ],
@@ -13026,5 +13026,16 @@
       "https://social.lol/users/cory/statuses/112368600878459788"
     ],
     "lastTootTimestamp": 1714608778108
+  },
+  "https://www.takahe.org.nz/heat-death-of-the-internet/": {
+    "id": "aHR0cHM6Ly93d3cudGFrYWhlLm9yZy5uei9oZWF0LWRlYXRoLW9mLXRoZS1pbnRlcm5ldC8=",
+    "title": "🔗: Heat Death of the Internet via takahē magazine",
+    "url": "https://www.takahe.org.nz/heat-death-of-the-internet/",
+    "content_text": "🔗: Heat Death of the Internet via takahē magazine #Tech #AI https://www.takahe.org.nz/heat-death-of-the-internet/",
+    "date_published": "Thu, 02 May 2024 05:22:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112369981950307140"
+    ],
+    "lastTootTimestamp": 1714629851578
   }
 }
