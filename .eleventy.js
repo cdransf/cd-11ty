@@ -117,7 +117,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('slugify', slugifyString)
 
   // shortcodes
-  eleventyConfig.addShortcode('image', img)
   eleventyConfig.addShortcode('appVersion', () => appVersion)
 
   // transforms
