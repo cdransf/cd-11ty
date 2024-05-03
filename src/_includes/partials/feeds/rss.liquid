@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <atom:link href="{{ permalink | absoluteUrl: meta.url }}" rel="self" type="application/rss+xml" />
-    {%- assign entries = data | normalizeEntries | reverse -%}
+    {%- assign entries = data | normalizeEntries -%}
     <title>{{ title }}</title>
     <description>{{ description }}</description>
     <link>{{ permalink | absoluteUrl: meta.url }}</link>
