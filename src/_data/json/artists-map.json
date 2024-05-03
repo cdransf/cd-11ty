@@ -299,6 +299,11 @@
     "genre": "emo",
     "image": "https://coryd.dev/media/artists/charmer.jpg"
   },
+  "christie-front-drive": {
+    "mbid": "7eb44228-a4bd-4275-a495-608f424f9525",
+    "genre": "emo",
+    "image": "https://coryd.dev/media/artists/christie-front-drive.jpg"
+  },
   "chthe'ilist": {
     "mbid": "a2e2957b-92d2-40c2-ba49-9fa6369b0711",
     "genre": "death metal",
@@ -544,6 +549,11 @@
     "genre": "death metal",
     "image": "https://coryd.dev/media/artists/edge-of-sanity.jpg"
   },
+  "elliott": {
+    "mbid": "b3250fd8-d202-4d4a-8fb3-1fdf88176aff",
+    "genre": "emo",
+    "image": "https://coryd.dev/media/artists/elliott.jpg"
+  },
   "elliott-smith": {
     "mbid": "03ad1736-b7c9-412a-b442-82536d63a5c4",
     "genre": "indie folk",
@@ -573,6 +583,11 @@
     "mbid": "c0eb58e1-efc5-4930-b579-58a24f9e86d5",
     "genre": "death metal",
     "image": "https://coryd.dev/media/artists/eucharist.jpg"
+  },
+  "evergreen": {
+    "mbid": "1850f75e-91dd-4e33-9bf9-5821561e938c",
+    "genre": "emo",
+    "image": "https://coryd.dev/media/artists/evergreen.jpg"
   },
   "execration": {
     "mbid": "cd956e47-4b34-4a3d-b053-1d8dc5a36f49",
@@ -989,6 +1004,11 @@
     "genre": "jazz",
     "image": "https://coryd.dev/media/artists/miles-davis.jpg"
   },
+  "mineral": {
+    "mbid": "b12a70be-abea-4c27-9e99-201841a0da6b",
+    "genre": "emo",
+    "image": "https://coryd.dev/media/artists/mineral.jpg"
+  },
   "minor-threat": {
     "mbid": "09037f07-42bc-46ac-a1ee-37f834451fee",
     "genre": "hardcore punk",
@@ -1043,6 +1063,11 @@
     "mbid": "b71571b2-cd6f-46ac-9adf-870bf0166d2f",
     "genre": "death metal",
     "image": "https://coryd.dev/media/artists/mortuous.jpg"
+  },
+  "moss-icon": {
+    "mbid": "5617ff4f-8fb5-46e7-a498-cb055f087bb3",
+    "genre": "emo",
+    "image": "https://coryd.dev/media/artists/moss-icon.jpg"
   },
   "my-bloody-valentine": {
     "mbid": "8ca01f46-53ac-4af2-8516-55a909c0905e",
@@ -1484,6 +1509,11 @@
     "genre": "bluegrass",
     "image": "https://coryd.dev/media/artists/sunday-valley.jpg"
   },
+  "sunny-day-real-estate": {
+    "mbid": "86b24e8f-a4d9-4c84-83ee-fde0d14ad9fa",
+    "genre": "emo",
+    "image": "https://coryd.dev/media/artists/sunny-day-real-estate.jpg"
+  },
   "superheaven": {
     "mbid": "16f7e748-59b4-4705-959c-9276be0ebf6a",
     "genre": "alternative rock",
@@ -1534,6 +1564,11 @@
     "genre": "grindcore",
     "image": "https://coryd.dev/media/artists/terrorizer.jpg"
   },
+  "texas-is-the-reason": {
+    "mbid": "b93c736f-a82f-4cae-9e57-a60b12d7055f",
+    "genre": "emo",
+    "image": "https://coryd.dev/media/artists/texas-is-the-reason.jpg"
+  },
   "thanatos": {
     "mbid": "48596ba1-8fac-4e81-bbf4-c7a38648dce8",
     "genre": "death metal",
@@ -1568,6 +1603,16 @@
     "mbid": "1b54e90c-638e-4fdd-a20e-4ab09db9fdaf",
     "genre": "emo",
     "image": "https://coryd.dev/media/artists/the-get-up-kids.jpg"
+  },
+  "the-gloria-record": {
+    "mbid": "fd8eac96-cdc3-49c0-80ec-a0f8a12be444",
+    "genre": "emo",
+    "image": "https://coryd.dev/media/artists/the-gloria-record.jpg"
+  },
+  "the-hated": {
+    "mbid": "b80366d8-9c52-4beb-9c07-04688a5a37b9",
+    "genre": "punk",
+    "image": "https://coryd.dev/media/artists/the-hated.jpg"
   },
   "the-hotelier": {
     "mbid": "af63ec4d-9fe4-4001-bcb6-8dd160ee6451",
