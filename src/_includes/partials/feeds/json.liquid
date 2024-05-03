@@ -1,4 +1,4 @@
-{%- assign entries = data | normalizeEntries -%}
+{%- assign entries = data | normalizeEntries | reverse -%}
 {
   "version": "https://jsonfeed.org/version/1",
   "title": "{{ title }}",
