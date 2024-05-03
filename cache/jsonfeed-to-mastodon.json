@@ -13092,5 +13092,16 @@
       "https://social.lol/users/cory/statuses/112372338946343321"
     ],
     "lastTootTimestamp": 1714665816483
+  },
+  "https://openlibrary.org/isbn/9781642501148": {
+    "id": "aHR0cHM6Ly9vcGVubGlicmFyeS5vcmcvaXNibi85NzgxNjQyNTAxMTQ4",
+    "title": "📖: From the Basement",
+    "url": "https://openlibrary.org/isbn/9781642501148",
+    "content_text": "📖: From the Basement #Books #NowReading #Music #NonFiction https://openlibrary.org/isbn/9781642501148",
+    "date_published": "Fri, 03 May 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112378001364153552"
+    ],
+    "lastTootTimestamp": 1714752218129
   }
 }
