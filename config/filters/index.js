@@ -59,9 +59,8 @@ export default {
 
   // posts
   filterByPostType: (posts, postType) => {
-    const postData = [...posts]
-    if (postType === 'featured') return postData.reverse().filter(post => post.data.featured === true).splice(0, 3)
-    return postData.splice(0, 5)
+    if (postType === 'featured') return posts.filter(post => post.data.featured === true).splice(0, 3)
+    return posts.slice(0, 5)
   },
   truncateByWordCount: (text, wordCount) => {
     const words = sanitizeHtml(text, { allowedTags: ['']}).split(/\s+/);
