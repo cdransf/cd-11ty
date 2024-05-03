@@ -10346,5 +10346,30 @@
     "thumbnail": "https://books.google.com/books/content?id=PWU0wwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/From_the_Basement.html?hl=&id=PWU0wwEACAAJ"
+  },
+  {
+    "isbn": "9781501182891",
+    "dateAdded": "2024-05-03",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "politics",
+      "economics",
+      "nonfiction"
+    ],
+    "title": "Goliath",
+    "authors": [
+      "Matt Stoller"
+    ],
+    "publishedDate": "2020-10-06",
+    "description": "“Every thinking American must read” (The Washington Book Review) this startling and “insightful” (The New York Times) look at how concentrated financial power and consumerism has transformed American politics, and business. Going back to our country’s founding, Americans once had a coherent and clear understanding of political tyranny, one crafted by Thomas Jefferson and updated for the industrial age by Louis Brandeis. A concentration of power—whether by government or banks—was understood as autocratic and dangerous to individual liberty and democracy. In the 1930s, people observed that the Great Depression was caused by financial concentration in the hands of a few whose misuse of their power induced a financial collapse. They drew on this tradition to craft the New Deal. In Goliath, Matt Stoller explains how authoritarianism and populism have returned to American politics for the first time in eighty years, as the outcome of the 2016 election shook our faith in democratic institutions. It has brought to the fore dangerous forces that many modern Americans never even knew existed. Today’s bitter recriminations and panic represent more than just fear of the future, they reflect a basic confusion about what is happening and the historical backstory that brought us to this moment. The true effects of populism, a shrinking middle class, and concentrated financial wealth are only just beginning to manifest themselves under the current administrations. The lessons of Stoller’s study will only grow more relevant as time passes. “An engaging call to arms,” (Kirkus Reviews) Stoller illustrates here in rich detail how we arrived at this tenuous moment, and the steps we must take to create a new democracy.",
+    "pageCount": 608,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=mwL8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Goliath.html?hl=&id=mwL8DwAAQBAJ"
   }
 ]
