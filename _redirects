@@ -28,6 +28,7 @@
 /sitemap.txt /sitemap.xml 301!
 /blog / 301!
 /posts/2024 / 301!
+/posts/0 /posts/1 200!
 /tags/.env /tags/env 301!
 /tags/chatgpt/ /tags/ai/ 301!
 /tags/socialmedia /tags/social%20media/ 301!
