@@ -225,6 +225,13 @@ export default {
     const dateB = DateTime.fromISO(b.dateAdded)
     return dateB - dateA
   }),
+  currentBookCount: (books) => {
+    const year = DateTime.now().year
+    return books.filter(book => {
+      if (book.status === 'finished' && book.dateAdded) return parseInt(book.dateAdded.split('-')[0]) === year
+      return ''
+    }).length
+  },
 
     // tags
   filterTags: (tags) => {
