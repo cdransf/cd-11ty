@@ -549,6 +549,11 @@
     "genre": "indie folk",
     "image": "https://coryd.dev/media/artists/elliott-smith.jpg"
   },
+  "embrace": {
+    "mbid": "9d1ad8e3-8740-429a-bdc5-52f96a9c4431",
+    "genre": "emo",
+    "image": "https://coryd.dev/media/artists/embrace.jpg"
+  },
   "enslaved": {
     "mbid": "29bb04d6-5602-464c-8577-f55a27511b27",
     "genre": "black metal",
