@@ -7,10 +7,11 @@ import { Liquid } from 'liquidjs'
 import { DateTime } from 'luxon'
 import { fileURLToPath } from 'url'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-const baseDir = path.join(__dirname, '../../src/posts')
-const outputDir = path.join(__dirname, '../../src/assets/img/ogi/')
+const FILE_NAME = fileURLToPath(import.meta.url)
+const DIR_NAME = path.dirname(FILE_NAME)
+
+const baseDir = path.join(DIR_NAME, '../../src/posts')
+const outputDir = path.join(DIR_NAME, '../../src/assets/img/ogi/')
 const engine = new Liquid({ extname: '.liquid' })
 
 engine.registerFilter('date', (isoDateString, formatString = 'MMMM d, yyyy') => {
@@ -31,11 +32,11 @@ engine.registerFilter('splitLines', (input, maxCharLength) => {
 
 engine.registerFilter('slugify', (input) => slugify(input, { lower: true, strict: true, remove: /[*+~.()'"!:@]/g }))
 
-const generateSVGAndConvertToPNG = async (filePath) => {
+const svgToPNG = async (filePath) => {
   try {
     const fileContent = await fs.readFile(filePath, 'utf8')
     const { data } = matter(fileContent)
-    const svgTemplatePath = path.resolve(__dirname, 'index.liquid')
+    const svgTemplatePath = path.resolve(DIR_NAME, 'index.liquid')
     const templateContent = await fs.readFile(svgTemplatePath, 'utf8')
     const svgContent = await engine.parseAndRender(templateContent, { preview: { data: data, date: data.date }})
     const outputFile = path.join(outputDir, `${engine.filters.slugify(data.title)}-preview.png`)
@@ -49,7 +50,7 @@ const generateSVGAndConvertToPNG = async (filePath) => {
   }
 }
 
-const processYearDirectories = async (baseDir) => {
+const processPostDirectories = async (baseDir) => {
   try {
     const yearDirs = await fs.readdir(baseDir, { withFileTypes: true })
     for (const dirent of yearDirs) {
@@ -59,7 +60,7 @@ const processYearDirectories = async (baseDir) => {
         for (const file of markdownFiles) {
           if (file.isFile() && file.name.endsWith('.md')) {
             const filePath = path.join(yearPath, file.name)
-            await generateSVGAndConvertToPNG(filePath)
+            await svgToPNG(filePath)
           }
         }
       }
@@ -69,6 +70,6 @@ const processYearDirectories = async (baseDir) => {
   }
 }
 
-const generateOgImages = async () => await processYearDirectories(baseDir)
+const generateOgImages = async () => await processPostDirectories(baseDir)
 
 generateOgImages()
