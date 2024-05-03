@@ -12,6 +12,7 @@ import filters from './config/filters/index.js'
 import { slugifyString } from './config/utils/index.js'
 import { minifyJsComponents } from './config/events/index.js'
 import { searchIndex, tagList, postStats, tagsSortedByCount, links, tagMap, booksToRead } from './config/collections/index.js'
+import { DateTime } from 'luxon'
 
 // load .env
 import dotenvFlow from 'dotenv-flow'
@@ -116,6 +117,7 @@ export default async function (eleventyConfig) {
 
   // shortcodes
   eleventyConfig.addShortcode('appVersion', () => appVersion)
+  eleventyConfig.addShortcode('currentYear', () => DateTime.now().year)
 
   // transforms
   eleventyConfig.addTransform('html-minify', (content, path) => {
