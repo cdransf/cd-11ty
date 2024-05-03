@@ -64,7 +64,7 @@ export default {
   },
   truncateByWordCount: (text, wordCount) => {
     const words = sanitizeHtml(text, { allowedTags: ['']}).split(/\s+/);
-    if (words.length > wordCount) return `<p>${words.slice(0, wordCount).join(' ')}...</p>`
+    if (words.length > wordCount) return `<p>${words.slice(0, wordCount).join(' ').replace(/[^a-zA-Z0-9]+$/, '')}...</p>`
     return text
   },
 
