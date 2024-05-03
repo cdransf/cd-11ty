@@ -13103,5 +13103,16 @@
       "https://social.lol/users/cory/statuses/112378001364153552"
     ],
     "lastTootTimestamp": 1714752218129
+  },
+  "https://coryd.dev/posts/2024/2024-adblocker-required/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC8yMDI0LWFkYmxvY2tlci1yZXF1aXJlZC8=",
+    "title": "📝: Adblocker required",
+    "url": "https://coryd.dev/posts/2024/2024-adblocker-required/",
+    "content_text": "📝: Adblocker required #Tech #Privacy #SurveillanceCapitalism https://coryd.dev/posts/2024/2024-adblocker-required/",
+    "date_published": "Fri, 03 May 2024 21:15:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112379226090084426"
+    ],
+    "lastTootTimestamp": 1714770905964
   }
 }
