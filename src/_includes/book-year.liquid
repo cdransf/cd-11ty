@@ -5,5 +5,6 @@ layout: default
 <p><a class="link-arrow flex-centered" href="/books">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
 <h2 class="page-header">{{ title }}</h2>
 {{ content }}
+<p><strong>Books finished:</strong> {{ bookData.size }}
 <hr class="large-spacing" />
 {% render "partials/now/media-grid.liquid", data:bookData, shape: "vertical", count: 200, loading: "eager" %}
