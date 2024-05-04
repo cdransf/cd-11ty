@@ -15,7 +15,7 @@
   package = "netlify-plugin-webmentions"
   [plugins.inputs]
     baseUrl = "https://coryd.dev"
-    feedPath = "/feeds/posts"
+    feedPath = "feeds/posts"
     limit = 1
 
 ###
