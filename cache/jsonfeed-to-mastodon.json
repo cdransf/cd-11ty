@@ -13114,5 +13114,16 @@
       "https://social.lol/users/cory/statuses/112379226090084426"
     ],
     "lastTootTimestamp": 1714770905964
+  },
+  "https://adamjones.me/blog/dont-use-contact-forms/": {
+    "id": "aHR0cHM6Ly9hZGFtam9uZXMubWUvYmxvZy9kb250LXVzZS1jb250YWN0LWZvcm1zLw==",
+    "title": "🔗: No, I don’t want to fill out your contact form via Adam Jones",
+    "url": "https://adamjones.me/blog/dont-use-contact-forms/",
+    "content_text": "🔗: No, I don’t want to fill out your contact form via Adam Jones #Tech https://adamjones.me/blog/dont-use-contact-forms/",
+    "date_published": "Sat, 04 May 2024 19:43:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112384610837477428"
+    ],
+    "lastTootTimestamp": 1714853070688
   }
 }
