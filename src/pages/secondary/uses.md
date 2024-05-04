@@ -24,7 +24,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3>macOS + iOS</h3>
 
-- [Bear](https://bear.app): native, fast and flexible — it's a breeze to use across Apple's ecosystem.
+- [Obsidian](https://obsidian.md): fast, flexible and configurable (or minimal) as you'd like.
 - [Plexamp](https://www.plex.tv/plexamp/): Plex's flexible and delightful music player.
 - [Ivory](https://tapbots.com/ivory/): the best, most polished Mastodon client for macOS and iOS.
 - [NetNewsWire](https://netnewswire.com): an open source, simple and reliable RSS reader.
