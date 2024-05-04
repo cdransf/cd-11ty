@@ -118,11 +118,14 @@ theme-toggle {
 
   #menu-toggle:checked ~ .menu-primary li {
     border-bottom: 1px solid var(--gray-light);
-    height: var(--sizing-3xl);
-    padding: var(--sizing-sm);
+    height:calc(var(--sizing-3xl) * 1.5);
 
     &:first-child {
       border-top: 1px solid var(--gray-light);
+    }
+
+    & a {
+      font-size: var(--font-size-lg);
     }
   }
 
