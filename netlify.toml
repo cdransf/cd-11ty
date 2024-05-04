@@ -10,7 +10,17 @@
 # PLUGINS
 ###
 [[plugins]]
-package = "/plugins/fetch-scrobbles"
+  package = "/plugins/fetch-scrobbles"
+[[plugins]]
+  package = "netlify-plugin-webmentions"
+  [plugins.inputs]
+    baseUrl = "https://coryd.dev"
+    feedPath = "/feeds/posts"
+    limit = 1
+  [plugins.inputs]
+    baseUrl = "https://coryd.dev"
+    feedPath = "/feeds/links"
+    limit = 1
 
 ###
 # IMAGES
