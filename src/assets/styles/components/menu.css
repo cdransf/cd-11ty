@@ -124,7 +124,8 @@ theme-toggle {
       border-top: 1px solid var(--gray-light);
     }
 
-    & a {
+    & a,
+    & .active > span {
       font-size: var(--font-size-lg);
     }
   }
