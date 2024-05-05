@@ -13,6 +13,7 @@ export default async function () {
     'Claude-Web',
     'cohere-ai',
     'DataForSeoBot',
+    'Diffbot',
     'FacebookBot',
     'FriendlyCrawler',
     'Google-Extended',
