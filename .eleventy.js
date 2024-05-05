@@ -29,14 +29,6 @@ const appVersion = require('./package.json').version
 export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight)
   eleventyConfig.addPlugin(tablerIcons)
-  eleventyConfig.addPlugin(postGraph, {
-    boxColorLight: '#d9dee4',
-    highlightColorLight: '#2563eb',
-    textColorLight: '#1f2937',
-    boxColorDark: '#4b515d',
-    highlightColorDark: '#60a5fa',
-    textColorDark: '#fff',
-  })
   eleventyConfig.addPlugin(lightningCSS)
 
   // quiet build output
