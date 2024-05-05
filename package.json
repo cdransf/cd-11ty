@@ -4,10 +4,9 @@
   "description": "The source for my personal site. Built using 11ty.",
   "type": "module",
   "scripts": {
-    "start": "eleventy --serve",
-    "start:search": "run-s build:11ty index:local",
+    "start": "node ./scripts/og-images/index.js && eleventy --serve",
     "start:quick": "eleventy --serve --incremental --ignore-initial",
-    "build": "ELEVENTY_PRODUCTION=true eleventy",
+    "build": "node ./scripts/og-images/index.js && ELEVENTY_PRODUCTION=true eleventy",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "build:ogi": "node ./scripts/og-images/index.js"
   },
