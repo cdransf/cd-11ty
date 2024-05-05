@@ -1,7 +1,6 @@
 import { DateTime } from 'luxon'
 import { URL } from 'url'
 import slugify from 'slugify'
-import markdownIt from 'markdown-it'
 import sanitizeHtml from 'sanitize-html';
 import authors from '../data/author-map.js'
 
@@ -83,13 +82,6 @@ export default {
   readableDate: (date) => {
     return DateTime.fromISO(date).toFormat('LLLL d, yyyy')
   },
-  dateToReadableDate: (date) => {
-    return new Date(date)
-      .toLocaleString('en-US', {
-        timeZone: 'America/Los_Angeles',
-      })
-      .split(',')[0]
-  },
   isoDateOnly: (date, separator) => {
     let d = new Date(date)
     let month = '' + (d.getMonth() + 1)
@@ -146,7 +138,6 @@ export default {
 
   // feeds
   normalizeEntries: (entries) => {
-    const md = markdownIt({ html: true, linkify: true })
     const posts = []
     entries.forEach((entry) => {
       const dateKey = Object.keys(entry).find((key) => key.includes('date'))
