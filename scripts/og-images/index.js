@@ -43,8 +43,6 @@ const svgToPNG = async (filePath) => {
 
     await fs.mkdir(outputDir, { recursive: true })
     await sharp(Buffer.from(svgContent)).png().toFile(outputFile)
-
-    console.log(`Generated png at ${outputFile}`)
   } catch (error) {
     console.error('Error processing file:', error)
   }

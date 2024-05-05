@@ -1,12 +1,8 @@
 import { DateTime } from 'luxon'
 import markdownIt from 'markdown-it'
 import { URL } from 'url'
-import { createRequire } from 'module'
 import sanitizeHtml from 'sanitize-html';
 import authors from '../data/author-map.js'
-
-const require = createRequire(import.meta.url)
-const metaData = require('../../src/_data/json/meta.json')
 
 const utmPattern = /[?&](utm_[^&=]+=[^&#]*)/gi
 const BASE_URL = 'https://coryd.dev'
@@ -132,11 +128,12 @@ export default {
     const STATUS_URL = 'https://social.lol/@cory/'
     return posts[url]?.toots?.[0]?.replace(BASE_URL, STATUS_URL) || null;
   },
-  absoluteUrl: (url, base) => {
-    if (!base) base = metaData.url
+  absoluteUrl: (url) => {
     try {
-      return (new URL(url, base)).toString()
-    } catch(e) {}
+      return (new URL(url, BASE_URL)).toString()
+    } catch(e) {
+      console.log('Error generating absoluteUrl.')
+    }
     return url;
   },
 

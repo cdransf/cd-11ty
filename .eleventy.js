@@ -74,7 +74,7 @@ export default async function (eleventyConfig) {
   })
   eleventyConfig.addPassthroughCopy({
      'node_modules/@daviddarnes/mastodon-post/mastodon-post.js': 'assets/scripts/components/mastodon-post.js'
-   }) 
+   })
 
   // enable merging of tags
   eleventyConfig.setDataDeepMerge(true)
