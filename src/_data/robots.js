@@ -29,6 +29,7 @@ export default async function () {
     'peer39_crawler/1.0',
     'PerplexityBot',
     'PiplBot',
+    'scoop.it',
     'Seekr',
     'YouBot',
   ]
