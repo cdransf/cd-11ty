@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./scripts/og-images/index.js && eleventy --serve",
     "start:quick": "eleventy --serve --incremental --ignore-initial",
-    "build": "node ./scripts/og-images/index.js && ELEVENTY_PRODUCTION=true eleventy",
+    "build": "ELEVENTY_PRODUCTION=true eleventy",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "build:ogi": "node ./scripts/og-images/index.js"
   },
