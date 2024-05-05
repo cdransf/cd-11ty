@@ -57,12 +57,6 @@ for = "/feeds/books"
   x-content-type-options = "nosniff"
 
 [[headers]]
-for = "/feeds/follow"
-  [headers.values]
-  Content-Type = "application/xml; charset=utf-8"
-  x-content-type-options = "nosniff"
-
-[[headers]]
 for = "/.well-known/webfinger"
   [headers.values]
   Content-Type = "application/jrd+json; charset=utf-8"
