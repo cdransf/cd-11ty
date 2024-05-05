@@ -23,9 +23,6 @@ import { createRequire } from 'module'
 const require = createRequire(import.meta.url)
 const appVersion = require('./package.json').version
 
-/**
- *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
- */
 export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight)
   eleventyConfig.addPlugin(tablerIcons)
