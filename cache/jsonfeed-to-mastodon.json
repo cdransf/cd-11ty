@@ -13125,5 +13125,16 @@
       "https://social.lol/users/cory/statuses/112384610837477428"
     ],
     "lastTootTimestamp": 1714853070688
+  },
+  "https://openlibrary.org/isbn/9781501182891": {
+    "id": "aHR0cHM6Ly9vcGVubGlicmFyeS5vcmcvaXNibi85NzgxNTAxMTgyODkx",
+    "title": "📖: Goliath",
+    "url": "https://openlibrary.org/isbn/9781501182891",
+    "content_text": "📖: Goliath #Books #NowReading #Politics #Economics #NonFiction https://openlibrary.org/isbn/9781501182891",
+    "date_published": "Sat, 04 May 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112386485783145916"
+    ],
+    "lastTootTimestamp": 1714881680093
   }
 }
