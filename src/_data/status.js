@@ -7,5 +7,6 @@ export default async function () {
     type: 'json',
   }).catch()
   const status = await res
+
   return status.response['statuses'][0]
 }
