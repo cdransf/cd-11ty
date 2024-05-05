@@ -10326,8 +10326,8 @@
   {
     "isbn": "9781642501148",
     "dateStarted": "2024-05-03",
-    "status": "started",
-    "rating": "unrated",
+    "status": "finished",
+    "rating": "⭐️⭐️⭐️",
     "tags": [
       "music",
       "nonfiction"
@@ -10345,12 +10345,13 @@
     ],
     "thumbnail": "https://books.google.com/books/content?id=PWU0wwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
-    "link": "https://books.google.com/books/about/From_the_Basement.html?hl=&id=PWU0wwEACAAJ"
+    "link": "https://books.google.com/books/about/From_the_Basement.html?hl=&id=PWU0wwEACAAJ",
+    "dateFinished": "2024-05-04"
   },
   {
     "isbn": "9781501182891",
     "dateAdded": "2024-05-03",
-    "status": "want to read",
+    "status": "started",
     "rating": "unrated",
     "tags": [
       "politics",
@@ -10370,7 +10371,8 @@
     ],
     "thumbnail": "https://books.google.com/books/content?id=mwL8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
-    "link": "https://books.google.com/books/about/Goliath.html?hl=&id=mwL8DwAAQBAJ"
+    "link": "https://books.google.com/books/about/Goliath.html?hl=&id=mwL8DwAAQBAJ",
+    "dateStarted": "2024-05-04"
   },
   {
     "isbn": "9780306824098",
