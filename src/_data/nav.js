@@ -5,7 +5,6 @@ export default async function () {
       { name: 'Referrals' },
       { name: 'Blogroll' },
       { name: 'Speedlify' },
-      { name: 'Stats' },
     ],
     menu: [
       { name: 'Now' },
