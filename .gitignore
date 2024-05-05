@@ -1,14 +1,13 @@
 # build output
 _site
 node_modules
-.env.local
 .cache
 
-# logs
-*-error.log
-
-# system files
-.DS_Store
+# local dependencies
+.env.local
 
 # netlify
 .netlify
+
+# system files
+.DS_Store
