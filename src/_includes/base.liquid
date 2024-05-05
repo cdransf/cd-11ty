@@ -25,7 +25,7 @@
     <meta property="og:url" content="{{ fullUrl }}" />
     <meta
       property="og:image"
-      content="{%- if schema == 'blog' %}{{ meta.url }}/assets/img/ogi/{{ title | slugify }}-preview.png{%- else -%}{{ meta.meta_data.opengraph_default }}{% endif -%}"
+      content="{%- if schema == 'blog' %}{{ meta.url }}/assets/img/ogi/{{ title | slugifyString }}-preview.png{%- else -%}{{ meta.meta_data.opengraph_default }}{% endif -%}"
     />
     <meta name="theme-color" content="{{ meta.themeColor }}" />
     <meta name="generator" content="Eleventy">

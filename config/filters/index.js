@@ -1,6 +1,7 @@
 import { DateTime } from 'luxon'
-import markdownIt from 'markdown-it'
 import { URL } from 'url'
+import slugify from 'slugify'
+import markdownIt from 'markdown-it'
 import sanitizeHtml from 'sanitize-html';
 import authors from '../data/author-map.js'
 
@@ -23,6 +24,13 @@ export default {
     return string.replace(utmPattern, '')
   },
   replaceQuotes: (string) => string.replace(/"/g, "'"),
+  slugifyString: (str) => {
+    return slugify(str, {
+      replacement: '-',
+      remove: /[#,&,+()$~%.'":*?<>{}]/g,
+      lower: true,
+    })
+  },
 
   // navigation
   isLinkActive: (category, page) => {
@@ -45,7 +53,6 @@ export default {
         return visitors(b) - visitors(a)
       })
   },
-
   tagLookup: (url, tagMap) => {
     if (!url) return
     if (url.includes('openlibrary.org')) return `#Books #NowReading ${tagMap[url]}`.trim()

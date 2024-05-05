@@ -8,7 +8,6 @@ import markdownItFootnote from 'markdown-it-footnote'
 import htmlmin from 'html-minifier-terser'
 
 import filters from './config/filters/index.js'
-import { slugifyString } from './config/utils/index.js'
 import { minifyJsComponents } from './config/events/index.js'
 import { searchIndex, tagList, tagsSortedByCount, links, tagMap, booksToRead } from './config/collections/index.js'
 import { DateTime } from 'luxon'
@@ -97,10 +96,10 @@ export default async function (eleventyConfig) {
     if (!content) return
     return md.render(content)
   })
+
   Object.keys(filters).forEach((filterName) => {
     eleventyConfig.addLiquidFilter(filterName, filters[filterName])
   })
-  eleventyConfig.addFilter('slugify', slugifyString)
 
   // shortcodes
   eleventyConfig.addShortcode('appVersion', () => appVersion)
