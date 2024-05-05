@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: var(--sizing-sm);
   align-items: center;
+  padding-bottom: var(--sizing-base);
 
   &:last-of-type {
     border-bottom: 0;
