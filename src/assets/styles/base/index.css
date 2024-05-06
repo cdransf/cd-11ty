@@ -201,6 +201,7 @@ hr {
 table {
   display: block;
   overflow-x: scroll;
+  overscroll-behavior: contain;
   width: 100%;
   max-width: fit-content;
   margin: 0 auto;
