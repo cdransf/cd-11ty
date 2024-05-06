@@ -26,6 +26,7 @@ const emojiMap = (genre, artist) => {
   if (normalizedArtist === "full of hell & nothing") return "🫨🎸"
   if (normalizedArtist === "imperial triumphant") return "🎭"
   if (normalizedArtist === "mastodon") return "🐋"
+  if (normalizedArtist === "mineral") return "🪨"
   if (normalizedArtist === "minor threat") return "👨🏻‍🦲"
   if (normalizedArtist === "nomeansno") return "🐵🐮🚬"
   if (normalizedArtist === "nothing") return "🏳️"
