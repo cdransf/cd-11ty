@@ -31,6 +31,7 @@ const emojiMap = (genre, artist) => {
   if (normalizedArtist === "nomeansno") return "🐵🐮🚬"
   if (normalizedArtist === "nothing") return "🏳️"
   if (normalizedArtist === "panopticon") return "🪕🪦"
+  if (normalizedArtist === "plunger") return "🪠"
   if (normalizedArtist === "radiohead") return "📻"
   if (normalizedArtist === "taylor swift") return "👸🏼"
   if (normalizedArtist === "the mars volta") return "💡😮"
