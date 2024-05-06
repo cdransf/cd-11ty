@@ -204,6 +204,11 @@
     "genre": "black metal",
     "image": "https://coryd.dev/media/artists/bosse-de-nage.jpg"
   },
+  "boys-life": {
+    "mbid": "5e647820-2453-4fd2-a58a-29af75bc343a",
+    "genre": "emo",
+    "image": "https://coryd.dev/media/artists/boys-life.jpg"
+  },
   "box-car-racer": {
     "mbid": "1cae523b-fbf3-4312-a5c9-e569a6d4bd74",
     "genre": "punk",
@@ -1194,6 +1199,11 @@
     "genre": "death metal",
     "image": "https://coryd.dev/media/artists/obscure-infinity.jpg"
   },
+  "one-last-wish": {
+    "mbid": "94f18045-7fe2-41df-bf24-0bed21c88eb8",
+    "genre": "emo",
+    "image": "https://coryd.dev/media/artists/one-last-wish.jpg"
+  },
   "opeth": {
     "mbid": "c14b4180-dc87-481e-b17a-64e4150f90f6",
     "genre": "progressive metal",
@@ -1223,6 +1233,11 @@
     "mbid": "2f360fd9-6440-4896-9f45-8156e8b0b204",
     "genre": "indie rock",
     "image": "https://coryd.dev/media/artists/pedro-the-lion.jpg"
+  },
+  "penfold": {
+    "mbid": "0285eca9-08bf-470e-be93-4e14384b2e60",
+    "genre": "emo",
+    "image": "https://coryd.dev/media/artists/penfold.jpg"
   },
   "pestilence": {
     "mbid": "1dbc1f29-19b7-49de-950d-e7b7391f56f0",
@@ -1628,6 +1643,11 @@
     "mbid": "664c3e0e-42d8-48c1-b209-1efca19c0325",
     "genre": "indie rock",
     "image": "https://coryd.dev/media/artists/the-national.jpg"
+  },
+  "the-promise-ring": {
+    "mbid": "63a6fae8-d39e-4de6-bfd4-9bcbf489a565",
+    "genre": "emo",
+    "image": "https://coryd.dev/media/artists/the-promise-ring.jpg"
   },
   "the-postal-service": {
     "mbid": "299278d3-25dd-4f30-bae4-5b571c28034d",

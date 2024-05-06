@@ -11867,7 +11867,7 @@
     "mbid": "5bbc3740-8f86-4bee-90e8-54bd1a673c7f",
     "image": "https://coryd.dev/media/albums/embrace-embrace.jpg"
   },
-    "christie-front-drive-4010--away": {
+  "christie-front-drive-4010--away": {
     "mbid": "",
     "image": "https://coryd.dev/media/albums/christie-front-drive-4010-away.jpg"
   },
@@ -12050,5 +12050,85 @@
   "the-hated-wedge": {
     "mbid": "",
     "image": "https://coryd.dev/media/albums/the-hated-wedge.jpg"
+  },
+  "boys-life-boys-life": {
+    "mbid": "546520e9-6bfb-4d6e-b0ac-87bee619a711",
+    "image": "https://coryd.dev/media/albums/boys-life-boys-life.jpg"
+  },
+  "boys-life-boys-life---christie-front-drive-split-ep": {
+    "mbid": "1c9f504c-c705-3751-abdc-a5d834dd1af6",
+    "image": "https://coryd.dev/media/albums/boys-life-boys-life-christie-front-drive-split-ep.jpg"
+  },
+  "boys-life-boys-life--giants-chair": {
+    "mbid": "99ecef65-6131-4050-b27e-e77a551b894c",
+    "image": "https://coryd.dev/media/albums/boys-life-boys-life--giants-chair.jpg"
+  },
+  "boys-life-boys-life--secular-theme": {
+    "mbid": "db9af139-5f7a-4d19-849d-15d8637b9697",
+    "image": "https://coryd.dev/media/albums/boys-life-boys-life-secular-theme.jpg"
+  },
+  "boys-life-boys-life--vitreous-humor": {
+    "mbid": "c8bcb2fc-bf48-4517-8f65-971e23da7237",
+    "image": "https://coryd.dev/media/albums/boys-life-boys-life-vitreous-humor.jpg"
+  },
+  "boys-life-departures-and-landfalls": {
+    "mbid": "1dde0da1-bc1c-35b0-93ae-f01812123489",
+    "image": "https://coryd.dev/media/albums/boys-life-departures-and-landfalls.jpg"
+  },
+  "boys-life-lister--without-doubt": {
+    "mbid": "3003653c-9703-43df-9ef9-9e926a0b0c6e",
+    "image": "https://coryd.dev/media/albums/boys-life-lister-without-doubt.jpg"
+  },
+  "one-last-wish-1986": {
+    "mbid": "dfb3e8f4-6707-439a-87d0-4e827d8f7e29",
+    "image": "https://coryd.dev/media/albums/one-last-wish-1986.jpg"
+  },
+  "penfold-amateurs-and-professionals": {
+    "mbid": "17644754-a959-408a-987e-167df4b212ff",
+    "image": "https://coryd.dev/media/albums/penfold-amateurs-and-professionals.jpg"
+  },
+  "penfold-our-first-taste-of-escape": {
+    "mbid": "cf7d1381-6667-4cb6-9909-82d91fb32d7c",
+    "image": "https://coryd.dev/media/albums/penfold-our-first-taste-of-escape.jpg"
+  },
+  "penfold-your-eyes-have-all-the-answers": {
+    "mbid": "19c51c19-26f0-44cb-ae7e-a5f1dd0e03ca",
+    "image": "https://coryd.dev/media/albums/penfold-your-eyes-have-all-the-answers.jpg"
+  },
+  "the-promise-ring-30-everywhere": {
+    "mbid": "6aa6cdee-8a52-474c-9ba8-79590336b393",
+    "image": "https://coryd.dev/media/albums/the-promise-ring-30-everywhere.jpg"
+  },
+  "the-promise-ring-boys--girls": {
+    "mbid": "b44c0d9c-fac4-47e1-bd4c-0625a5e4662e",
+    "image": "https://coryd.dev/media/albums/the-promise-ring-boys--girls.jpg"
+  },
+  "the-promise-ring-demo-tape": {
+    "mbid": "",
+    "image": "https://coryd.dev/media/albums/the-promise-ring-demo-tape.jpg"
+  },
+  "the-promise-ring-electric-pink": {
+    "mbid": "5fe06b39-0367-40f5-aee7-f868d9a8844c",
+    "image": "https://coryd.dev/media/albums/the-promise-ring-electric-pink.jpg"
+  },
+  "the-promise-ring-falsetto-keeps-time": {
+    "mbid": "da32aee8-bae2-45dd-8097-472c3c0a1201",
+    "image": "https://coryd.dev/media/albums/the-promise-ring-falsetto-keeps-time.jpg"
+  },
+  "the-promise-ring-nothing-feels-good": {
+    "mbid": "aaf31fd4-9867-323b-a8ed-a4eacfa987c9",
+    "image": "https://coryd.dev/media/albums/the-promise-ring-nothing-feels-good.jpg"
+  },
+  "the-promise-ring-the-horse-latitudes": {
+    "mbid": "2feeb28e-b828-4713-b89f-f346eeba4cf9",
+    "image": "https://coryd.dev/media/albums/the-promise-ring-the-horse-latitudes.jpg"
+  },
+  "the-promise-ring-very-emergency": {
+    "mbid": "81977edd-aace-4d1e-b77c-941bf95e795c",
+    "image": "https://coryd.dev/media/albums/the-promise-ring-very-emergency.jpg"
+  },
+  "the-promise-ring-woodwater": {
+    "mbid": "",
+    "image": "https://coryd.dev/media/albums/the-promise-ring-woodwater.jpg"
   }
 }
