@@ -22,7 +22,7 @@ export default async (request) => {
     const artist = payload.Metadata.grandparentTitle
     const album = payload.Metadata.parentTitle
     const track = payload.Metadata.title
-    const listenedAt = DateTime.now().toISO()
+    const listenedAt = DateTime.now().toSeconds()
     const artistKey = sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()
     const albumKey = `${artistKey}-${sanitizeMediaString(album).replace(/\s+/g, '-').toLowerCase()}`
 

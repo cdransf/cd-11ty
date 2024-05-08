@@ -15,7 +15,7 @@ const fetchDataForPeriod = async (startPeriod, fields, table) => {
       .from(table)
       .select(fields)
       .order('listened_at', { ascending: false })
-      .gte('listened_at', startPeriod.toUTC().toSeconds())
+      .gte('listened_at', startPeriod.toSeconds())
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
 
     if (error) {
