@@ -22,7 +22,7 @@ export default async (request) => {
     const artist = payload['Metadata']['grandparentTitle']
     const album = payload['Metadata']['parentTitle']
     const track = payload['Metadata']['title']
-    const listenedAt = DateTime.now().toSeconds()
+    const listenedAt = Math.floor(DateTime.now().toSeconds())
     const artistKey = sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()
     const albumKey = `${artistKey}-${sanitizeMediaString(album).replace(/\s+/g, '-').toLowerCase()}`
 
@@ -54,16 +54,6 @@ export default async (request) => {
       return new Response(JSON.stringify({ status: 'error', message: albumError.message }), { headers: { "Content-Type": "application/json" } })
     }
 
-    console.log('### TRACK INSERT')
-    console.log({
-      artist_name: artist,
-      album_name: album,
-      track_name: track,
-      listened_at: listenedAt,
-      album_key: albumKey
-    })
-    console.log('### TRACK INSERT')
-
     const { error: listenError } = await supabase.from('listens').insert([
       {
         artist_name: artist,
@@ -76,6 +66,13 @@ export default async (request) => {
 
     if (listenError) {
       console.error('Error inserting data into Supabase:', listenError.message)
+      console.log('Track with the error:', {
+        artist_name: artist,
+        album_name: album,
+        track_name: track,
+        listened_at: listenedAt,
+        album_key: albumKey
+      })
       return new Response(JSON.stringify({ status: 'error', message: listenError.message }), { headers: { "Content-Type": "application/json" } })
     }
   }
