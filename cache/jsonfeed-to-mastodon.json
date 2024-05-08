@@ -13202,5 +13202,16 @@
       "https://social.lol/users/cory/statuses/112406790255093239"
     ],
     "lastTootTimestamp": 1715191501763
+  },
+  "https://coryd.dev/posts/2024/improving-my-self-hosted-scrobbling-implementation/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9pbXByb3ZpbmctbXktc2VsZi1ob3N0ZWQtc2Nyb2JibGluZy1pbXBsZW1lbnRhdGlvbi8=",
+    "title": "📝: Improving my self-hosted scrobbling implementation",
+    "url": "https://coryd.dev/posts/2024/improving-my-self-hosted-scrobbling-implementation/",
+    "content_text": "📝: Improving my self-hosted scrobbling implementation #Music #Plex #Tech #Supabase #MusicBrainz https://coryd.dev/posts/2024/improving-my-self-hosted-scrobbling-implementation/",
+    "date_published": "Wed, 08 May 2024 19:48:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112407173386814320"
+    ],
+    "lastTootTimestamp": 1715197347878
   }
 }
