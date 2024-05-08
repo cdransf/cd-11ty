@@ -33,12 +33,10 @@ export default async (request) => {
       .single()
 
     if (albumError && albumError.code === 'PGRST116') {
-      const albumImageUrl = `https://coryd.dev/media/albums/${albumKey}.jpg`
-      const albumMBID = null
       const { error: insertAlbumError } = await supabase.from('albums').insert([
         {
-          mbid: albumMBID,
-          image: albumImageUrl,
+          mbid: null,
+          image: `https://coryd.dev/media/albums/${albumKey}.jpg`,
           key: albumKey,
           name: album,
           tentative: true
@@ -52,6 +50,32 @@ export default async (request) => {
     } else if (albumError) {
       console.error('Error querying album from Supabase:', albumError.message)
       return new Response(JSON.stringify({ status: 'error', message: albumError.message }), { headers: { "Content-Type": "application/json" } })
+    }
+
+    const { data: artistData, error: artistError } = await supabase
+      .from('artists')
+      .select('*')
+      .eq('key', artistKey)
+      .single()
+
+    if (artistError && artistError.code === 'PGRST116') {
+      const { error: insertArtistError } = await supabase.from('artists').insert([
+        {
+          mbid: null,
+          image: `https://coryd.dev/media/artists/${artistKey}.jpg`,
+          key: albumKey,
+          name: album,
+          tentative: true
+        }
+      ])
+
+      if (insertArtistError) {
+        console.error('Error inserting artist into Supabase:', insertArtistError.message)
+        return new Response(JSON.stringify({ status: 'error', message: insertArtistError.message }), { headers: { "Content-Type": "application/json" } })
+      }
+    } else if (artistError) {
+      console.error('Error querying artist from Supabase:', artistError.message)
+      return new Response(JSON.stringify({ status: 'error', message: artistError.message }), { headers: { "Content-Type": "application/json" } })
     }
 
     const { error: listenError } = await supabase.from('listens').insert([
