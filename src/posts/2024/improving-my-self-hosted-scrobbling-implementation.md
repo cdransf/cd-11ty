@@ -32,7 +32,7 @@ I imported those CSVs into their respective tables, and worked my way to connect
 
 The connections between the tables allow me to query data specific to a given listen's artist or album — data is stored in a given table where it makes the most sense: artist `mbid`s with artists, `genre`s with artists and so forth. I can then retrieve that data, provided I have a valid listen, using Supabase's select syntax: `artists (mbid, image)` or `albums (mbid, image)`.
 
-Plex's webhooks send out a fair bit of data, but most of that data is Plex-specific. What I'm able to use from that payload is the art, album and track names. These are stored in the listens table with a timestamp derived when I receive a webhook payload containing a `media.scrobble` event. These webhooks are sent to a `scrobble` endpoint (read: edge function:
+Plex's webhooks send out a fair bit of data, but most of that data is Plex-specific. What I'm able to use from that payload is the artist, album and track names. These are stored in the listens table with a timestamp derived when I receive a webhook payload containing a `media.scrobble` event. These webhooks are sent to a `scrobble` endpoint (read: edge function:
 
 ```javascript
 import { createClient } from '@supabase/supabase-js'
