@@ -10635,5 +10635,29 @@
     "thumbnail": "https://books.google.com/books/content?id=5frTEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Cyberboss.html?hl=&id=5frTEAAAQBAJ"
+  },
+  {
+    "isbn": "0745349862",
+    "dateAdded": "2024-05-08",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Digital Degrowth",
+    "authors": [
+      "Michael Kwet"
+    ],
+    "publishedDate": "2024-06-20",
+    "description": "A new framework for the digital society that merges the science of degrowth with a global analysis of the high-tech economy",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Business & Economics"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=_Lso0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Digital_Degrowth.html?hl=&id=_Lso0AEACAAJ"
   }
 ]
