@@ -3,6 +3,7 @@ import { URL } from 'url'
 import slugify from 'slugify'
 import sanitizeHtml from 'sanitize-html';
 import authors from '../data/author-map.js'
+import { shuffleArray } from '../utilities/index.js'
 
 const utmPattern = /[?&](utm_[^&=]+=[^&#]*)/gi
 const BASE_URL = 'https://coryd.dev'
@@ -61,7 +62,7 @@ export default {
 
   // posts
   filterByPostType: (posts, postType) => {
-    if (postType === 'featured') return posts.filter(post => post.data.featured === true).splice(0, 3)
+    if (postType === 'featured') return shuffleArray(posts.filter(post => post.data.featured === true)).slice(0, 3)
     return posts.slice(0, 5)
   },
   truncateByWordCount: (text, wordCount) => {
