@@ -3,6 +3,7 @@ date: '2024-04-09T15:00-08:00'
 title: 'A retrospective on a year without streaming music'
 description: "I wrote, roughly a year ago, about wanting to stream my own music and I've spent that time exploring and settling into options. I still don't want streaming music and I don't miss it, but I've learned a few things along the way."
 tags: ['tech', 'music']
+featured: true
 ---
 [I wrote, roughly a year ago, about wanting to stream my own music](https://coryd.dev/posts/2023/i-dont-want-streaming-music/) and I've spent that time exploring and settling into options. I still don't want streaming music and I don't miss it, but I've learned a few things along the way.<!-- excerpt -->
 
