@@ -10611,5 +10611,29 @@
     "thumbnail": "https://books.google.com/books/content?id=P9HbEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Lifehouse.html?hl=&id=P9HbEAAAQBAJ"
+  },
+  {
+    "isbn": "9781839768552",
+    "dateAdded": "2024-05-08",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Cyberboss",
+    "authors": [
+      "Craig Gent"
+    ],
+    "publishedDate": "2024-08-27",
+    "description": "How surveillance and new management technologies are changing the nature of work, and how workers are fighting for more control over their workplaces All around us, algorithms are changing the nature of work, even of workers themselves. Nowhere is this clearer than in the logistics and distribution sectors, where workers are tracked, monitored and surveyed by increasingly dystopian management technologies. Yet, no one is sure what to do about it. In The Politics of Algorithmic Management, based on seven years of original research, Craig Gent takes us deep into the dark underbelly of contemporary work, and asks how these new forms of workplace management affect the workers who bare its brunt. Empirically rich, with testimony from workers at the frontlines of this new world of work, riding for Deliveroo or picking for Amazon. Theoretically lucid, The Politics of Algorithmic Management is a bold new conceptualisation of contemporary capitalism, and offers a guide for how workers may be able to crack the facade of algorithmic control and enact their own political agency in the workplace.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=5frTEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Cyberboss.html?hl=&id=5frTEAAAQBAJ"
   }
 ]
