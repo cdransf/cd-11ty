@@ -10515,5 +10515,29 @@
     "thumbnail": "https://books.google.com/books/content?id=fZ460AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Dark_Wire.html?hl=&id=fZ460AEACAAJ"
+  },
+  {
+    "isbn": "1250867398",
+    "dateAdded": "2024-05-08",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Code Dependent",
+    "authors": [
+      "Madhumita Murgia"
+    ],
+    "publishedDate": "2024-06-18",
+    "description": "A riveting story of what it means to be human in a world changed by artificial intelligence, revealing the perils and inequities of our growing reliance on automated decision-making On the surface, a British poet, an UberEats courier in Pittsburgh, an Indian doctor, and a Chinese activist in exile have nothing in common. But they are in fact linked by a profound common experience—unexpected encounters with artificial intelligence. In Code-Dependent, Murgia shows how automated systems are reshaping our lives all over the world, from technology that marks children as future criminals, to an app that is helping to give diagnoses to a remote tribal community. AI has already infiltrated our day-to-day, through language-generating chatbots like ChatGPT and social media. But it’s also affecting us in more insidious ways. It touches everything from our interpersonal relationships, to our kids’ education, work, finances, public services, and even our human rights. By highlighting the voices of ordinary people in places far removed from the cozy enclave of Silicon Valley, Code-Dependent explores the impact of a set of powerful, flawed, and often-exploitative technologies on individuals, communities, and our wider society. Murgia exposes how AI can strip away our collective and individual sense of agency, and shatter our illusion of free will. The ways in which algorithms and their effects are governed over the coming years will profoundly impact us all. Yet we can’t agree on a common path forward. We cannot decide what preferences and morals we want to encode in these entities—or what controls we may want to impose on them. And thus, we are collectively relinquishing our moral authority to machines. In Code-Dependent, Murgia not only sheds light on this chilling phenomenon, but also charts a path of resistance. AI is already changing what it means to be human, in ways large and small, and Murgia reveals what could happen if we fail to reclaim our humanity.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Computers"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=gWLPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Code_Dependent.html?hl=&id=gWLPEAAAQBAJ"
   }
 ]
