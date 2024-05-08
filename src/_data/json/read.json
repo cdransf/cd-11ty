@@ -10470,5 +10470,29 @@
     "thumbnail": "https://books.google.com/books/content?id=jgnOEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Crowded_Out.html?hl=&id=jgnOEAAAQBAJ"
+  },
+  {
+    "isbn": "0262047519",
+    "dateAdded": "2024-05-08",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "The Chinese Computer",
+    "authors": [
+      "Thomas S. Mullaney"
+    ],
+    "publishedDate": "2024-05-28",
+    "description": "The fascinating, untold story of how the Chinese language overcame unparalleled challenges and revolutionized the world of computing. A standard QWERTY keyboard has a few dozen keys. How can Chinese—a language with tens of thousands of characters and no alphabet—be input on such a device? In The Chinese Computer, Thomas S. Mullaney sets out to resolve this paradox, and in doing so, discovers that the key to this seemingly impossible riddle has given rise to a new epoch in the history of writing—a form of writing he calls “hypography.” Based on fifteen years of research, this pathbreaking history of the Chinese language charts the beginnings of electronic Chinese technology in the wake of World War II up through to its many iterations in the present day. Mullaney takes the reader back through the history and evolution of Chinese language computing technology, showing the development of electronic Chinese input methods—software programs that enable Chinese characters to be produced using alphanumeric symbols—and the profound impact they have had on the way Chinese is written. Along the way, Mullaney introduces a cast of brilliant and eccentric personalities drawn from the ranks of IBM, MIT, the CIA, the Pentagon, the Taiwanese military, and the highest rungs of mainland Chinese establishment, to name a few, and the unexpected roles they played in developing Chinese language computing. Finally, he shows how China and the non-Western world—because of the hypographic technologies they had to invent in order to join the personal computing revolution—“saved” the Western computer from its deep biases, enabling it to achieve a meaningful presence in markets outside of the Americas and Europe. An eminently engaging and artfully told history, The Chinese Computer is a must-read for anyone interested in how culture informs computing and how computing, in turn, shapes culture.",
+    "pageCount": 372,
+    "printType": "BOOK",
+    "categories": [
+      "Technology & Engineering"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=jmDTEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/The_Chinese_Computer.html?hl=&id=jmDTEAAAQBAJ"
   }
 ]
