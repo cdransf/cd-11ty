@@ -6,6 +6,7 @@ tags:
   - tech
   - AI
   - 'social media'
+featured: true
 ---
 Take a step back look around at the tech products you use, the industry and its impact on society more broadly and ask yourself: does its track record warrant optimism or have they earned a healthy degree of skepticism?<!-- excerpt -->
 
