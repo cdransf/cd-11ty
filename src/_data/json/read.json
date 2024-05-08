@@ -10587,5 +10587,29 @@
     "thumbnail": "https://books.google.com/books/content?id=GvDfEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Nuclear_is_Not_the_Solution.html?hl=&id=GvDfEAAAQBAJ"
+  },
+  {
+    "isbn": "1788738357",
+    "dateAdded": "2024-05-08",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Lifehouse",
+    "authors": [
+      "Adam Greenfield"
+    ],
+    "publishedDate": "2024-07-09",
+    "description": "How to reclaim power in a time of perpetual crisis We are living through a Long Emergency: a near-continuous train of pandemics, heatwaves, droughts, resource wars and other climate-driven disasters. In Lifehouse, Adam Greenfield asks what might happen if the tactics and networks of care that spring up in response to these times might be brought together in a single, coherent way of life? Using examples from the Black Panthers’ “survival programs,” the astonishingly effective Occupy Sandy disaster-relief effort and the neighborhood-based mutual aid groups that sustained many during COVID lockdowns to the large-scale, self-organised polities of municipalist Spain and Kurdish Rojava, Greenfield argues for rethinking local power as a bulwark against despair — a way to discover and develop the individual and collective capacities that have gone underutilized during all the long years of late capitalism, and a means for thriving in the face of impending catastrophe.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=P9HbEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Lifehouse.html?hl=&id=P9HbEAAAQBAJ"
   }
 ]
