@@ -9,6 +9,7 @@ export default {
   blogging: '#Blogging',
   books: '#Books',
   climate: '#Climate',
+  crypto: '#Crypto',
   css: '#CSS',
   'death metal': '#DeathMetal',
   development: '#WebDev',
