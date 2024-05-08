@@ -10422,5 +10422,29 @@
     "thumbnail": "https://books.google.com/books/content?id=UMLQEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Drive.html?hl=&id=UMLQEAAAQBAJ"
+  },
+  {
+    "isbn": "1839762802",
+    "dateAdded": "2024-05-08",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Black Meme",
+    "authors": [
+      "Legacy Russell"
+    ],
+    "publishedDate": "2024-05-07",
+    "description": "\"Unsettles, expands and deepens our understanding of the black meme...necessary reading; brilliant and utterly convincing.\" –Christina Sharpe, author of Ordinary Notes \"You will be galvanized by Legacy Russell’s analytic brilliance and visceral eloquence.\" –Margo Jefferson, author of Constructing a Nervous System A history of Black imagery that recasts our understanding of visual culture and technology In Black Meme, Legacy Russell, award-winning author of the groundbreaking Glitch Feminism, explores the “meme” as mapped to Black visual culture from 1900 to the present, mining both archival and contemporary media. Russell argues that without the contributions of Black people, digital culture would not exist in its current form. These meditations include the circulation of lynching postcards; why a mother allowed Jet magazine to publish a picture of her dead son, Emmett Till; and how the televised broadcast of protesters in Selma changed the debate on civil rights. Questions of the media representation of Blackness come to the fore as Russell considers how a citizen-recorded footage of the LAPD beating Rodney King became the first viral video. And the Anita Hill hearings shed light on the media’s creation of the Black icon. The ownership of Black imagery and death is considered in the story of Tamara Lanier’s fight to reclaim the daguerreotypes of her enslaved ancestors from Harvard. Meanwhile the live broadcast on Facebook of the murder of Philando Castile by the police after he was stopped for a broken taillight forces us to bear witness to the persistent legacy of the Black meme. Through imagery, memory and technology Black Meme shows us how images of Blackness have always been central to our understanding of the modern world.",
+    "pageCount": 209,
+    "printType": "BOOK",
+    "categories": [
+      "Social Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=GdLPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Black_Meme.html?hl=&id=GdLPEAAAQBAJ"
   }
 ]
