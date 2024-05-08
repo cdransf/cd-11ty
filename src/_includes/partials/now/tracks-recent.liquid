@@ -1,12 +1,12 @@
 {% if data.size > 0 %}
 <div class="music-chart">
   {% for item in data limit: 10 %}
-  {% capture alt %}{{ item.track | escape }} by {{ item.artist }}{% endcapture %}
+  {% capture alt %}{{ item.title | escape }} by {{ item.artist }}{% endcapture %}
     <div class="item">
       <div class="meta">
         <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=64&h=64&fm=webp&q=65" class="image-banner" alt="{{ alt }}" loading="lazy" decoding="async" width="64" height="64" />
         <div class="meta-text">
-          <div class="title">{{ item.track }}</div>
+          <div class="title">{{ item.title }}</div>
           <div class="subtext">
             <a href="{{ item.url }}">{{ item.artist }}</a>
           </div>

@@ -1,4 +1,8 @@
-import { getStore } from '@netlify/blobs'
+import { createClient } from '@supabase/supabase-js';
+
+const SUPABASE_URL = process.env.SUPABASE_URL
+const SUPABASE_KEY = process.env.SUPABASE_KEY
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 const emojiMap = (genre, artist) => {
   const DEFAULT = "🎧"
@@ -77,28 +81,43 @@ const emojiMap = (genre, artist) => {
 }
 
 export default async () => {
-  const scrobbles = getStore('scrobbles')
+  const { data, error } = await supabase
+    .from('listens')
+    .select(`
+      track_name,
+      artist_name,
+      artists (mbid, genre),
+    `)
+    .order('listened_at', { ascending: false })
+    .limit(1);
+
   const headers = {
     "Content-Type": "application/json",
     "Cache-Control": "public, s-maxage=360, stale-while-revalidate=1080",
-  }
-  const scrobbleData = await scrobbles.get('now-playing', { type: 'json'})
+  };
 
-  if (!scrobbleData) return new Response(JSON.stringify({}, { headers }))
+  if (error) {
+    console.error('Error fetching data:', error);
+    return new Response(JSON.stringify({ error: "Failed to fetch the latest track" }), { headers });
+  }
+
+  if (data.length === 0) {
+    return new Response(JSON.stringify({ message: "No recent tracks found" }), { headers });
+  }
+
+  const scrobbleData = data[0]
 
   return new Response(JSON.stringify({
-      content: `${emojiMap(
-        scrobbleData['genre'],
-        scrobbleData['artist']
-      )} ${scrobbleData['track']} by <a href="${scrobbleData['url']}">${
-        scrobbleData['artist']
-      }</a>`,
-    }),
-    { headers }
-  )
-}
+    content: `${emojiMap(
+      scrobbleData.artists.genre,
+      scrobbleData.artist_name
+    )} ${scrobbleData.track_name} by <a href="http://musicbrainz.org/artist/${scrobbleData.artists.mbid}">${
+      scrobbleData.artist_name
+    }</a>`,
+  }), { headers });
+};
 
 export const config = {
   cache: "manual",
   path: "/api/now-playing"
-}
+};

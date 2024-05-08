@@ -5,31 +5,18 @@ const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
-const fetchDataForPeriod = async (startPeriod, fields, table) => {
-  const PAGE_SIZE = 1000
-  let rows = []
-  let rangeStart = 0
+const fetchDataForPeriod = async (startPeriod, fields, table, allTime = false) => {
+  let query = supabase.from(table).select(fields).order('listened_at', { ascending: false })
 
-  while (true) {
-    const { data, error } = await supabase
-      .from(table)
-      .select(fields)
-      .order('listened_at', { ascending: false })
-      .gte('listened_at', startPeriod.toUTC().toSeconds())
-      .range(rangeStart, rangeStart + PAGE_SIZE - 1)
+  if (!allTime) query = query.gte('listened_at', startPeriod.toUTC().toSeconds())
 
-    if (error) {
-      console.error(error)
-      break
-    }
-
-    rows = rows.concat(data)
-
-    if (data.length < PAGE_SIZE) break
-    rangeStart += PAGE_SIZE
+  const { data, error } = await query
+  if (error) {
+    console.error('Error fetching data:', error)
+    return []
   }
 
-  return rows
+  return data
 }
 
 const aggregateData = (data, groupByField, groupByType) => {
@@ -44,7 +31,6 @@ const aggregateData = (data, groupByField, groupByType) => {
           mbid: item['albums']?.mbid || '',
           url: item['albums']?.mbid ? `https://musicbrainz.org/release/${item['albums'].mbid}` : `https://musicbrainz.org/search?query=${encodeURIComponent(item['album_name'])}&type=release`,
           image: item['albums']?.image || '',
-          timestamp: item['listened_at'],
           type: groupByType
         }
       } else {
@@ -57,10 +43,6 @@ const aggregateData = (data, groupByField, groupByType) => {
           type: groupByType
         }
       }
-      if (
-        groupByType === 'track' ||
-        groupByType === 'albums'
-      ) aggregation[key]['artist'] = item['artist_name']
     }
     aggregation[key].plays++
   })
@@ -74,6 +56,7 @@ export default async function() {
     month: DateTime.now().minus({ days: 30 }).startOf('day'), // Last 30 days
     threeMonth: DateTime.now().minus({ months: 3 }).startOf('day'), // Last three months
     year: DateTime.now().minus({ years: 1 }).startOf('day'), // Last 365 days
+    allTime: null  // Null indicates no start period constraint
   }
 
   const results = {}
@@ -82,13 +65,13 @@ export default async function() {
     artist_name,
     album_name,
     album_key,
-    listened_at,
     artists (mbid, image),
     albums (mbid, image)
   `
 
   for (const [period, startPeriod] of Object.entries(periods)) {
-    const periodData = await fetchDataForPeriod(startPeriod, selectFields, 'listens')
+    const isAllTime = period === 'allTime'
+    const periodData = await fetchDataForPeriod(startPeriod, selectFields, 'listens', isAllTime)
     results[period] = {
       artists: aggregateData(periodData, 'artist_name', 'artists'),
       albums: aggregateData(periodData, 'album_name', 'albums'),
@@ -103,8 +86,6 @@ export default async function() {
     albums: aggregateData(recentData, 'album_name', 'albums'),
     tracks: aggregateData(recentData, 'track_name', 'track')
   }
-
-  results.nowPlaying = results.recent.tracks[0]
 
   return results
 }

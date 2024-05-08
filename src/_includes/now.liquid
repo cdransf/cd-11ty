@@ -19,16 +19,16 @@ layout: default
   </div>
 </div>
 <div id="artists-window">
-  {% render "partials/now/media-grid.liquid", data:music.artists, shape: "square", count: 8, loading: "eager" %}
+  {% render "partials/now/media-grid.liquid", data:music.week.artists, shape: "square", count: 8, loading: "eager" %}
 </div>
 <div class="hidden" id="artists-month">
-  {% render "partials/now/media-grid.liquid", data:musicCharts.month.artists, shape: "square", count: 8 %}
+  {% render "partials/now/media-grid.liquid", data:music.month.artists, shape: "square", count: 8 %}
 </div>
 <div class="hidden" id="artists-three-months">
-  {% render "partials/now/media-grid.liquid", data:musicCharts.threeMonth.artists, shape: "square", count: 8 %}
+  {% render "partials/now/media-grid.liquid", data:music.threeMonth.artists, shape: "square", count: 8 %}
 </div>
 <div class="hidden" id="artists-year">
-  {% render "partials/now/media-grid.liquid", data:musicCharts.year.artists, shape: "square", count: 8 %}
+  {% render "partials/now/media-grid.liquid", data:music.year.artists, shape: "square", count: 8 %}
 </div>
 <div class="section-header-wrapper">
   <h2 id="albums" class="section-header flex-centered">
@@ -43,16 +43,16 @@ layout: default
   </div>
 </div>
 <div id="albums-window">
-  {% render "partials/now/media-grid.liquid", data:music.albums, shape: "square", count: 8 %}
+  {% render "partials/now/media-grid.liquid", data:music.week.albums, shape: "square", count: 8 %}
 </div>
 <div class="hidden" id="albums-month">
-  {% render "partials/now/media-grid.liquid", data:musicCharts.month.albums, shape: "square", count: 8 %}
+  {% render "partials/now/media-grid.liquid", data:music.month.albums, shape: "square", count: 8 %}
 </div>
 <div class="hidden" id="albums-three-months">
-  {% render "partials/now/media-grid.liquid", data:musicCharts.threeMonth.albums, shape: "square", count: 8 %}
+  {% render "partials/now/media-grid.liquid", data:music.threeMonth.albums, shape: "square", count: 8 %}
 </div>
 <div class="hidden" id="albums-year">
-  {% render "partials/now/media-grid.liquid", data:musicCharts.year.albums, shape: "square", count: 8 %}
+  {% render "partials/now/media-grid.liquid", data:music.year.albums, shape: "square", count: 8 %}
 </div>
 <div class="section-header-wrapper">
   <h2 id="tracks" class="section-header flex-centered">
@@ -68,19 +68,19 @@ layout: default
   </div>
 </div>
 <div id="tracks-recent">
-  {% render "partials/now/tracks-recent.liquid", data:musicCharts.recent %}
+  {% render "partials/now/tracks-recent.liquid", data:music.recent.tracks %}
 </div>
 <div class="hidden" id="tracks-window">
-  {% render "partials/now/track-chart.liquid", data:music.topTracks.data, mostPlayed:music.topTracks.mostPlayed %}
+  {% render "partials/now/track-chart.liquid", data:music.week.tracks, mostPlayed:music.week.tracks[0].plays %}
 </div>
 <div class="hidden" id="tracks-month">
-  {% render "partials/now/track-chart.liquid", data:musicCharts.month.topTracks.data, mostPlayed:musicCharts.month.topTracks.mostPlayed %}
+  {% render "partials/now/track-chart.liquid", data:music.month.tracks, mostPlayed:music.month.tracks[0].plays %}
 </div>
 <div class="hidden" id="tracks-three-months">
-  {% render "partials/now/track-chart.liquid", data:musicCharts.threeMonth.topTracks.data, mostPlayed:musicCharts.threeMonth.topTracks.mostPlayed %}
+  {% render "partials/now/track-chart.liquid", data:music.threeMonth.tracks, mostPlayed:music.threeMonth.tracks[0].plays %}
 </div>
 <div class="hidden" id="tracks-year">
-  {% render "partials/now/track-chart.liquid", data:musicCharts.year.topTracks.data, mostPlayed:musicCharts.year.topTracks.mostPlayed %}
+  {% render "partials/now/track-chart.liquid", data:music.year.tracks, mostPlayed:music.year.tracks[0].plays %}
 </div>
 {% render "partials/now/album-releases.liquid", albumReleases:albumReleases %}
 <h2 id="books" class="section-header flex-centered">
