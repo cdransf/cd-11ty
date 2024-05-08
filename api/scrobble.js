@@ -2,7 +2,7 @@ import { createClient } from '@supabase/supabase-js'
 import { DateTime } from 'luxon'
 
 const SUPABASE_URL = Netlify.env.get('SUPABASE_URL')
-const SUPABASE_KEY = Netlify.env.get('SUPABASE_API_KEY')
+const SUPABASE_KEY = Netlify.env.get('SUPABASE_KEY')
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '')
