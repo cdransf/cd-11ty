@@ -86,10 +86,11 @@ export default async () => {
     .select(`
       track_name,
       artist_name,
-      artists (mbid, genre),
+      listened_at,
+      artists (mbid, genre)
     `)
     .order('listened_at', { ascending: false })
-    .limit(1);
+    .range(0, 1)
 
   const headers = {
     "Content-Type": "application/json",
