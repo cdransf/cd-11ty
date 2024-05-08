@@ -19,9 +19,9 @@ export default async (request) => {
   const payload = JSON.parse(data.get('payload'))
 
   if (payload?.event === 'media.scrobble') {
-    const artist = payload.Metadata.grandparentTitle
-    const album = payload.Metadata.parentTitle
-    const track = payload.Metadata.title
+    const artist = payload['Metadata']['grandparentTitle']
+    const album = payload['Metadata']['parentTitle']
+    const track = payload['Metadata']['title']
     const listenedAt = DateTime.now().toSeconds()
     const artistKey = sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()
     const albumKey = `${artistKey}-${sanitizeMediaString(album).replace(/\s+/g, '-').toLowerCase()}`
@@ -53,6 +53,16 @@ export default async (request) => {
       console.error('Error querying album from Supabase:', albumError.message)
       return new Response(JSON.stringify({ status: 'error', message: albumError.message }), { headers: { "Content-Type": "application/json" } })
     }
+
+    console.log('### TRACK INSERT')
+    console.log({
+      artist_name: artist,
+      album_name: album,
+      track_name: track,
+      listened_at: listenedAt,
+      album_key: albumKey
+    })
+    console.log('### TRACK INSERT')
 
     const { error: listenError } = await supabase.from('listens').insert([
       {
