@@ -10539,5 +10539,29 @@
     "thumbnail": "https://books.google.com/books/content?id=gWLPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Code_Dependent.html?hl=&id=gWLPEAAAQBAJ"
+  },
+  {
+    "isbn": "978-1-83976-550-6",
+    "dateAdded": "2024-05-08",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Happy Apocalypse",
+    "authors": [
+      "Jean-Baptiste Fressoz"
+    ],
+    "publishedDate": "2023-11-07",
+    "description": "The story of how risk, disasters and pollution were managed and made acceptable during the ‘industrial revolution’ Why do we accept pollution in the name of progress? Why has the pursuit of modernity permitted increasing exposure to environmental catastrophe. In Happy Apocalypse, Jean-Baptiste Fressoz, co-author of the highly successful The Shock of the Anthropocene, shows how debates on risk and profit in the Industrial Revolution set the foundations of our own precarious times. This book plunges us into the controversies and struggles around vaccines and factories, railways and urban infrastructure, steam engines and chemical industries. Presenting the dangers of progress as everyday hazards to be tolerated. For instance, the 'polluter pays principle' is often seen as a 1970s invention aimed at curbing pollution. In fact, it was established in the early 19th century under the pressure of industrial capitalists themselves and it replaced a far more stringent way of regulating pollution based on police. Furthermore Fressoz argues that the determination of risk management has been used to suppress protests and alternative models of economic advancement.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Political Science"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=6Ju1EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Happy_Apocalypse.html?hl=&id=6Ju1EAAAQBAJ"
   }
 ]
