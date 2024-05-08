@@ -10446,5 +10446,29 @@
     "thumbnail": "https://books.google.com/books/content?id=GdLPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Black_Meme.html?hl=&id=GdLPEAAAQBAJ"
+  },
+  {
+    "isbn": "0262548038",
+    "dateAdded": "2024-05-08",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Crowded Out",
+    "authors": [
+      "Nora Kenworthy"
+    ],
+    "publishedDate": "2024-05-21",
+    "description": "An eye-opening investigation into charitable crowdfunding for healthcare in the United States—and the consequences of allowing health care access to be decided by the digital crowd. Over the past decade, charitable crowdfunding has exploded in popularity across the globe. Sites such as GoFundMe, which now boasts a “global community of over 100 million” users, have transformed the ways we seek and offer help. When faced with crises—especially medical ones—Americans are turning to online platforms that promise to connect them to the charity of the crowd. What does this new phenomenon reveal about the changing ways we seek and provide healthcare? In Crowded Out, Nora Kenworthy examines how charitable crowdfunding so quickly overtook public life, where it is taking us, and who gets left behind by this new platformed economy. Although crowdfunding has become ubiquitous in our lives, it is often misunderstood: rather than a friendly free market “powered by the kindness” of strangers, crowdfunding is powerfully reinforcing inequalities and changing the way Americans think about and access healthcare. Drawing on extensive research and rich storytelling, Crowded Out demonstrates how crowdfunding for health is fueled by—and further reinforces—financial and moral “toxicities” in market-based healthcare systems. It offers a unique and distressing look beneath the surface of some of the most popular charitable platforms and helps to foster thoughtful discussions of how we can better respond to healthcare crises both small and large.",
+    "pageCount": 232,
+    "printType": "BOOK",
+    "categories": [
+      "Medical"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=jgnOEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Crowded_Out.html?hl=&id=jgnOEAAAQBAJ"
   }
 ]
