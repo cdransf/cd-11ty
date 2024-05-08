@@ -13180,5 +13180,27 @@
       "https://social.lol/users/cory/statuses/112397393943415021"
     ],
     "lastTootTimestamp": 1715048125444
+  },
+  "https://rknight.me/blog/please-rate-your-experience/": {
+    "id": "aHR0cHM6Ly9ya25pZ2h0Lm1lL2Jsb2cvcGxlYXNlLXJhdGUteW91ci1leHBlcmllbmNlLw==",
+    "title": "🔗: Please Rate Your Experience via Robb Knight",
+    "url": "https://rknight.me/blog/please-rate-your-experience/",
+    "content_text": "🔗: Please Rate Your Experience via Robb Knight #Tech https://rknight.me/blog/please-rate-your-experience/",
+    "date_published": "Wed, 08 May 2024 16:23:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112407132293237497"
+    ],
+    "lastTootTimestamp": 1715196720817
+  },
+  "https://www.wheresyoured.at/rabbit-holed/": {
+    "id": "aHR0cHM6Ly93d3cud2hlcmVzeW91cmVkLmF0L3JhYmJpdC1ob2xlZC8=",
+    "title": "🔗: Rabbit Holed via Ed Zitron",
+    "url": "https://www.wheresyoured.at/rabbit-holed/",
+    "content_text": "🔗: Rabbit Holed via Ed Zitron #Tech #AI #Crypto https://www.wheresyoured.at/rabbit-holed/",
+    "date_published": "Wed, 08 May 2024 16:20:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112406790255093239"
+    ],
+    "lastTootTimestamp": 1715191501763
   }
 }
