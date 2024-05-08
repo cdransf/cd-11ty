@@ -92,7 +92,7 @@ export default async (request) => {
     const { data: artistData, error: artistError } = await supabase
       .from('artists')
       .select('*')
-      .eq('key', artistKey)
+      .eq('name_key', artistKey)
       .single()
 
     if (artistError && artistError.code === 'PGRST116') {
