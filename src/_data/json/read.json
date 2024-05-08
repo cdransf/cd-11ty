@@ -10398,5 +10398,29 @@
     "thumbnail": "https://books.google.com/books/content?id=O0EoCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://play.google.com/store/books/details?id=O0EoCwAAQBAJ"
+  },
+  {
+    "isbn": "0807007935",
+    "dateAdded": "2024-05-08",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Drive",
+    "authors": [
+      "Jonathan Rigsby"
+    ],
+    "publishedDate": "2024-05-14",
+    "description": "One father, three years, and thousands of rides Poverty, By America meets Maid in this dad’s darkly humorous yet humanizing story of working long hours and late nights behind the wheel as a rideshare driver Jonathan Rigsby spends his days as a crime intelligence analyst and his nights as an Uber driver. Reeling from his divorce and struggling to pay rent while caring for his autistic son, Rigsby became a rideshare driver, joining the millions of people with a side hustle just to make ends meet. With a compelling blend of honesty and sardonic wit, Rigsby invites readers into his car to reveal the harsh reality of gig work for so many: grueling hours, living paycheck to paycheck, and hoping to avoid disaster long enough to prepare for the next bill. Along the way, he showcases the humor and humanity in the private moments of vulnerability that happen when people are left alone with a stranger — from the amusing tales of drunk college students to a passenger getting sick on the dashboard, a mother expressing distress about her son’s addiction, and a violent encounter on the job. Unflinching and raw, Drive exposes an ugly truth that hides in the gaudy background of the American dream: you can do everything right and still fail. Buckle up.",
+    "pageCount": 202,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=UMLQEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Drive.html?hl=&id=UMLQEAAAQBAJ"
   }
 ]
