@@ -10563,5 +10563,29 @@
     "thumbnail": "https://books.google.com/books/content?id=6Ju1EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Happy_Apocalypse.html?hl=&id=6Ju1EAAAQBAJ"
+  },
+  {
+    "isbn": "1804290009",
+    "dateAdded": "2024-05-08",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "tech",
+      "nonfiction"
+    ],
+    "title": "Nuclear is Not the Solution",
+    "authors": [
+      "M.V. Ramana"
+    ],
+    "publishedDate": "2024-07-30",
+    "description": "An urgent critique of nuclear power laid out in clear arguments with suggestions for decarbonizing our energy systems with renewable energy technologies The climate crisis has propelled nuclear energy back into fashion. Proponents of nuclear argue that we already have the technology of the green future and that it only needs perfection and deployment. Not a Solution demonstrates why this sort of thinking is not only naïve but dangerous. Even beyond the horrific implications of meltdown and the intractable problem of waste disposal, nuclear is not feasible. Any appraisal of green energy technology depends on two important parameters: cost and time. Nuclear fails on both counts. It is more costly than its green competitors and thus a dollar spent on nuclear energy results in fewer megawatts than a dollar spent on wind or solar. And, importantly given the need for rapid transformation, by 2030, it is slow. A plant takes a decade to come online. If you include permits and fundraising, this adds another decade. And we should not forget the deep connection to the defense industry. Ramana’s powerful book breaks any illusions in the hope of nuclear, untangling the technical elements into simple and sensible arguments. Importantly, Not a Solution also unmasks the powerful groups with deep interests in the maintenance of the status quo who have worked so hard to greenwash one of the dirtiest industries in the history of our species.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Nature"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=GvDfEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Nuclear_is_Not_the_Solution.html?hl=&id=GvDfEAAAQBAJ"
   }
 ]
