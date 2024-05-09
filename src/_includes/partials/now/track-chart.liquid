@@ -6,10 +6,10 @@
     <div class="presentation">
       <div class="count">{{ forloop.index }}.</div>
       <div class="info">
-        <div class="title">{{ item.title }}</div>
-        <div class="subtext">
-          <a href="{{ item.url }}">{{ item.artist }}</a> • {{ item.plays }} plays
+        <div class="title">
+          <a href="{{ item.url }}">{{ item.title }}</a>
         </div>
+        <div class="subtext">{{ item.artist }} • {{ item.plays }} plays</div>
       </div>
     </div>
     {% render "partials/now/progress-bar.liquid", percentage:percentage %}

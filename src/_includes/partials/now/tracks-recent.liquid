@@ -6,10 +6,10 @@
       <div class="meta">
         <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=64&h=64&fm=webp&q=65" alt="{{ alt }}" loading="lazy" decoding="async" width="64" height="64" />
         <div class="meta-text">
-          <div class="title">{{ item.title }}</div>
-          <div class="subtext">
-            <a href="{{ item.url }}">{{ item.artist }}</a>
+          <div class="title">
+            <a href="{{ item.url }}">{{ item.title }}</a>
           </div>
+          <div class="subtext">{{ item.artist }}</div>
         </div>
       </div>
       <div class="timestamp">
