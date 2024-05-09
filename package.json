@@ -26,7 +26,7 @@
     "@daviddarnes/mastodon-post": "^1.2.0",
     "@zachleat/webcare-webshare": "^1.0.3",
     "minisearch": "^6.3.0",
-    "youtube-video-element": "^1.0.0"
+    "youtube-video-element": "^1.1.1"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.0.0-alpha.10",
