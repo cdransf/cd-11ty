@@ -13224,5 +13224,16 @@
       "https://social.lol/users/cory/statuses/112408715906047797"
     ],
     "lastTootTimestamp": 1715220884835
+  },
+  "https://simonwillison.net/2024/May/8/slop/": {
+    "id": "aHR0cHM6Ly9zaW1vbndpbGxpc29uLm5ldC8yMDI0L01heS84L3Nsb3Av",
+    "title": "🔗: Slop is the new name for unwanted AI-generated content via Simon Willison",
+    "url": "https://simonwillison.net/2024/May/8/slop/",
+    "content_text": "🔗: Slop is the new name for unwanted AI-generated content via Simon Willison  https://simonwillison.net/2024/May/8/slop/",
+    "date_published": "Thu, 09 May 2024 17:03:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112412447388157782"
+    ],
+    "lastTootTimestamp": 1715277822754
   }
 }
