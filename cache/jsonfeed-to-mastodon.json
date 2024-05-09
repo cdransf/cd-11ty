@@ -13207,11 +13207,22 @@
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9pbXByb3ZpbmctbXktc2VsZi1ob3N0ZWQtc2Nyb2JibGluZy1pbXBsZW1lbnRhdGlvbi8=",
     "title": "📝: Improving my self-hosted scrobbling implementation",
     "url": "https://coryd.dev/posts/2024/improving-my-self-hosted-scrobbling-implementation/",
-    "content_text": "📝: Improving my self-hosted scrobbling implementation #Music #Plex #Tech #Supabase #MusicBrainz https://coryd.dev/posts/2024/improving-my-self-hosted-scrobbling-implementation/",
+    "content_text": "📝: Improving my self-hosted scrobbling implementation #Music #Plex #Tech #Supabase #MusicBrainz #Eleventy https://coryd.dev/posts/2024/improving-my-self-hosted-scrobbling-implementation/",
     "date_published": "Wed, 08 May 2024 19:48:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112407173386814320"
     ],
     "lastTootTimestamp": 1715197347878
+  },
+  "https://futurism.com/advon-ai-content": {
+    "id": "aHR0cHM6Ly9mdXR1cmlzbS5jb20vYWR2b24tYWktY29udGVudA==",
+    "title": "🔗: Meet AdVon, the AI-Powered Content Monster Infecting the Media Industry via Futurism",
+    "url": "https://futurism.com/advon-ai-content",
+    "content_text": "🔗: Meet AdVon, the AI-Powered Content Monster Infecting the Media Industry via Futurism #Tech #AI #Journalism https://futurism.com/advon-ai-content",
+    "date_published": "Thu, 09 May 2024 02:15:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112408715906047797"
+    ],
+    "lastTootTimestamp": 1715220884835
   }
 }
