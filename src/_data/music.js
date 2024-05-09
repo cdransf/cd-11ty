@@ -32,7 +32,7 @@ const fetchDataForPeriod = async (startPeriod, fields, table) => {
   return rows
 }
 
-const aggregateData = (data, groupByField, groupByType) => {
+const aggregateData = (data, groupByField, groupByType, sort = true) => {
   const aggregation = {}
   data.forEach(item => {
     const key = item[groupByField]
@@ -64,7 +64,8 @@ const aggregateData = (data, groupByField, groupByType) => {
     }
     aggregation[key].plays++
   })
-  return Object.values(aggregation).sort((a, b) => b.plays - a.plays)
+  const aggregatedData = sort ? Object.values(aggregation).sort((a, b) => b.plays - a.plays) : Object.values(aggregation)
+  return aggregatedData
 }
 
 
@@ -101,9 +102,9 @@ export default async function() {
   results.recent = {
     artists: aggregateData(recentData, 'artist_name', 'artists'),
     albums: aggregateData(recentData, 'album_name', 'albums'),
-    tracks: aggregateData(recentData, 'track_name', 'track')
+    tracks: aggregateData(recentData, 'track_name', 'track'),
+    trackChart: aggregateData(recentData, 'track_name', 'track', false),
   }
-
   results.nowPlaying = results.recent.tracks[0]
 
   return results

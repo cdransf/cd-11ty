@@ -68,7 +68,7 @@ layout: default
   </div>
 </div>
 <div id="tracks-recent">
-  {% render "partials/now/tracks-recent.liquid", data:music.recent.tracks %}
+  {% render "partials/now/tracks-recent.liquid", data:music.recent.trackChart %}
 </div>
 <div class="hidden" id="tracks-window">
   {% render "partials/now/track-chart.liquid", data:music.week.tracks, mostPlayed:music.week.tracks[0].plays %}
