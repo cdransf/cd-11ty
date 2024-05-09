@@ -1,4 +1,5 @@
 export default {
+  "https://futurism.com": "Futurism",
   "https://adamjones.me": "Adam Jones",
   "https://janmaarten.com": "Jan Maarten",
   "https://sheep.horse": "Andrew Stephens",
