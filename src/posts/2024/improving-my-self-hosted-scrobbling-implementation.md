@@ -8,6 +8,7 @@ tags:
   - tech
   - supabase
   - musicbrainz
+  - eleventy
 ---
 [I wrote (fairly) recently about implementing my own scrobbler using Plex webhooks, edge functions and blob storage.](https://coryd.dev/posts/2024/building-a-scrobbler-using-plex-webhooks-edge-functions-and-blob-storage/) So far — so far — this has worked quite well.<!-- excerpt -->
 
