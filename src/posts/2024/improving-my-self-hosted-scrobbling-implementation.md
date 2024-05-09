@@ -336,4 +336,4 @@ export default async () => {
 2. We query our listens table and grab our `mbid` and `genre` via our foreign key connection to the artists table.
 3. In much the same way as we did before, we pass the artist `genre` and `name` through our absurd `emojiMap` function and send back HTML to display.
 
-All of the music data used to present artist and album grids and track charts is now retrieved from Supabase on each build. It's much easier to add, modify or deal with artist and album metadata (and even update listen data if needed).
+[All of the music data used to present artist and album grids and track charts on my site](https://coryd.dev/now) is now retrieved from Supabase on each build. It's much easier to add, modify or deal with artist and album metadata (and even update listen data if needed).
