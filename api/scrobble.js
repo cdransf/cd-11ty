@@ -55,7 +55,7 @@ export default async (request) => {
     const { data: artistData, error: artistError } = await supabase
       .from('artists')
       .select('*')
-      .eq('name_key', artistKey)
+      .eq('name_string', artist)
       .single()
 
     if (artistError && artistError.code === 'PGRST116') {
@@ -63,8 +63,8 @@ export default async (request) => {
         {
           mbid: null,
           image: `https://coryd.dev/media/artists/${artistKey}.jpg`,
-          key: albumKey,
-          name: album,
+          key: artistKey,
+          name: artist,
           tentative: true
         }
       ])
