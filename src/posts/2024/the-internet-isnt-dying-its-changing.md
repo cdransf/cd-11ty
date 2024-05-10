@@ -3,6 +3,7 @@ date: '2024-03-12T14:00-08:00'
 title: "The internet isn't dying, it's changing"
 description: "Ok, maybe some of it's dying. I believe it's too far reaching and too deeply-embedded to really, truly be dying. What we're seeing is a bust cycle for commercial social media and information-driven platforms. It's pretty clear that traditional social media is on the wane — growth has plateaued for Facebook, cratered for Twitter (X — whatever) and Reddit's besieged users are being fed into the gaping maw of yet another AI product. They're not alone — so many of these platform companies are “evolving” to mine captive user data for AI models."
 tags: ['tech', 'social media', 'blogging', 'Mastodon']
+featured: true
 ---
 [Ok, maybe some of it's dying.](https://www.wheresyoured.at/are-we-watching-the-internet-die/) I believe it's too far reaching and too deeply-embedded to really, truly be dying. What we're seeing is a bust cycle for commercial social media and information-driven platforms. It's pretty clear that traditional social media is on the wane — growth has plateaued for Facebook, cratered for Twitter (X — whatever) and Reddit's besieged users are being fed into the gaping maw of yet another AI product. They're not alone — so many of these platform companies are “evolving” to mine captive user data for AI models.<!-- excerpt -->
 
