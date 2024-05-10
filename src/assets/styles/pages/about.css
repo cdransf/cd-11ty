@@ -3,7 +3,7 @@
 }
 
 .avatar-wrapper {
-  margin-bottom: var(--sizing-xl);
+  margin-bottom: var(--sizing-md);
   width: 100%;
   justify-content: center;
   overflow: hidden;
@@ -12,7 +12,6 @@
     width: var(--avatar-size);
     height: var(--avatar-size);
     display: flex;
-    padding: var(--sizing-lg);
     justify-content: center;
     overflow: hidden;
 
