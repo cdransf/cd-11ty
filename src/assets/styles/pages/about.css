@@ -11,11 +11,8 @@
   & .interior {
     width: var(--avatar-size);
     height: var(--avatar-size);
-    border: 1px solid var(--accent-color);
-    border-radius: var(--rounded-full);
     display: flex;
     padding: var(--sizing-lg);
-    background-color: var(--white);
     justify-content: center;
     overflow: hidden;
 
