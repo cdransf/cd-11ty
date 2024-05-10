@@ -13257,5 +13257,16 @@
       "https://social.lol/users/cory/statuses/112417638574279524"
     ],
     "lastTootTimestamp": 1715357033968
+  },
+  "https://coryd.dev/posts/2024/against-the-commercial-web/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9hZ2FpbnN0LXRoZS1jb21tZXJjaWFsLXdlYi8=",
+    "title": "📝: Against the commercial internet",
+    "url": "https://coryd.dev/posts/2024/against-the-commercial-web/",
+    "content_text": "📝: Against the commercial internet #Tech #AI #SocialMedia https://coryd.dev/posts/2024/against-the-commercial-web/",
+    "date_published": "Fri, 10 May 2024 19:20:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112418391050866652"
+    ],
+    "lastTootTimestamp": 1715368515834
   }
 }
