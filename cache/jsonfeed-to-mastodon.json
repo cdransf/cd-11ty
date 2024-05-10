@@ -13246,5 +13246,16 @@
       "https://social.lol/users/cory/statuses/112412918544716061"
     ],
     "lastTootTimestamp": 1715285012028
+  },
+  "https://humanewebmanifesto.com": {
+    "id": "aHR0cHM6Ly9odW1hbmV3ZWJtYW5pZmVzdG8uY29t",
+    "title": "🔗: Manifesto for a Humane Web",
+    "url": "https://humanewebmanifesto.com",
+    "content_text": "🔗: Manifesto for a Humane Web #Tech #IndieWeb #SmallWeb https://humanewebmanifesto.com",
+    "date_published": "Fri, 10 May 2024 15:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112417638574279524"
+    ],
+    "lastTootTimestamp": 1715357033968
   }
 }
