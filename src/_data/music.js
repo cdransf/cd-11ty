@@ -103,9 +103,9 @@ export default async function() {
     artists: aggregateData(recentData, 'artist_name', 'artists'),
     albums: aggregateData(recentData, 'album_name', 'albums'),
     tracks: aggregateData(recentData, 'track_name', 'track'),
-    trackChart: aggregateData(recentData, 'track_name', 'track', false),
+    tracksChronological: aggregateData(recentData, 'track_name', 'track', false),
   }
-  results.nowPlaying = results.recent.trackChart[0]
+  results.nowPlaying = results.recent.tracksChronological[0]
 
   return results
 }
