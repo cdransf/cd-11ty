@@ -13279,5 +13279,16 @@
       "https://social.lol/users/cory/statuses/112423302503497532"
     ],
     "lastTootTimestamp": 1715443458649
+  },
+  "https://joshcollinsworth.com/blog/ten-years-of-code": {
+    "id": "aHR0cHM6Ly9qb3NoY29sbGluc3dvcnRoLmNvbS9ibG9nL3Rlbi15ZWFycy1vZi1jb2Rl",
+    "title": "🔗: A decade of code via Josh Collinsworth",
+    "url": "https://joshcollinsworth.com/blog/ten-years-of-code",
+    "content_text": "🔗: A decade of code via Josh Collinsworth #Tech #WebDev #Design https://joshcollinsworth.com/blog/ten-years-of-code",
+    "date_published": "Sat, 11 May 2024 16:27:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112423772717124217"
+    ],
+    "lastTootTimestamp": 1715450633554
   }
 }
