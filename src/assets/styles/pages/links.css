@@ -9,7 +9,7 @@
     padding: var(--sizing-xs) var(--sizing-sm) 0;
 
     & button {
-      margin-right: var(--sizing-xs);
+      margin-right: var(--sizing-sm);
     }
   }
 }
