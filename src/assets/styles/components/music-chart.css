@@ -23,7 +23,7 @@
     & .meta {
       justify-content: start;
       gap: var(--sizing-md);
-      max-width: calc(70% - var(--sizing-lg));
+      width: calc(55% - var(--sizing-lg));
     }
 
     & .meta-text {
@@ -65,7 +65,7 @@
     & .presentation {
       display: flex;
       flex-direction: row;
-      max-width: calc(60% - var(--sizing-lg));
+      width: calc(55% - var(--sizing-lg));
     }
 
     & .count {
@@ -109,6 +109,11 @@
 
 @media screen and (min-width: 768px) {
   .music-chart {
+    & .meta,
+    & .presentation {
+      width: calc(80% - var(--sizing-lg));
+    }
+
     & .item .meta-text {
       max-width: 85%;
     }

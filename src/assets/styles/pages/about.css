@@ -3,7 +3,7 @@
 }
 
 .avatar-wrapper {
-  margin-bottom: var(--sizing-md);
+  margin-bottom: var(--sizing-sm);
   width: 100%;
   justify-content: center;
   overflow: hidden;
