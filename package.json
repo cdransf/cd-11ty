@@ -1,14 +1,15 @@
 {
   "name": "coryd.dev",
-  "version": "14.1.0",
+  "version": "14.1.1",
   "description": "The source for my personal site. Built using 11ty.",
   "type": "module",
   "scripts": {
     "start": "node ./scripts/og-images/index.js && eleventy --serve",
     "start:quick": "eleventy --serve --incremental --ignore-initial",
     "build": "ELEVENTY_PRODUCTION=true eleventy",
-    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
-    "build:ogi": "node ./scripts/og-images/index.js"
+    "build:ogi": "node ./scripts/og-images/index.js",
+    "deps:upgrade": "npm upgrade && ncu",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve"
   },
   "keywords": [
     "11ty",
