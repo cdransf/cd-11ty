@@ -12,6 +12,7 @@ export default {
   crypto: '#Crypto',
   css: '#CSS',
   'death metal': '#DeathMetal',
+  design: '#Design',
   development: '#WebDev',
   economics: '#Economics',
   eleventy: '#Eleventy',
