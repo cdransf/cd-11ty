@@ -6,9 +6,9 @@
   <ul class="link-list">
     {% for album in albumReleases %}
       <li>
-        <strong>{{ album.date | readableDate }}: </strong>
-        <a href="https://{{album.url}}" title="{{album.title | escape}}">
-          {{album.title}}
+        <strong>{{ album.date }}: </strong>
+        <a href="{{ album.url}}" title="{{ album.title | escape}} by {{ album.artist | escape}}">
+          {{ album.title }} by {{ album.artist }}
         </a>
       </li>
     {% endfor %}

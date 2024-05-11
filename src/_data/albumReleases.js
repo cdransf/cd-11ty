@@ -1,25 +1,48 @@
-import { AssetCache } from '@11ty/eleventy-fetch'
-import ics from 'ics-to-json-extended'
+import { createClient } from '@supabase/supabase-js'
 import { DateTime } from 'luxon'
 
+const SUPABASE_URL = process.env.SUPABASE_URL
+const SUPABASE_KEY = process.env.SUPABASE_KEY
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+
+const deriveArtistName = (albumName, key) => {
+  const normalizedInput = albumName.toLowerCase().replace(/[\s.]+/g, '-').replace(/[^a-z0-9-]/g, '')
+  if (key.endsWith(normalizedInput)) {
+    const nonMatchingPart = key.slice(0, key.length - normalizedInput.length).replace(/-$/, '')
+    const capitalized = nonMatchingPart
+      .split('-')
+      .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+      .join(' ')
+    return capitalized
+  } else {
+    return ''
+  }
+}
+
 export default async function () {
-  const URL = process.env.SECRET_FEED_ALBUM_RELEASES
-  const icsToJson = ics.default
-  const asset = new AssetCache('album_release_data')
-  if (asset.isCacheValid('1h')) return await asset.getCachedValue()
-  const icsRes = await fetch(URL)
-  const icsData = await icsRes.text()
-  const data = icsToJson(icsData)
-  const albumReleases = data
-    .filter((d) => DateTime.fromISO(d.startDate) > DateTime.now())
-    .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
-    .map((release) => {
-      return {
-        date: release.startDate,
-        url: release.location,
-        title: release.summary.replace(/\\/g, ''),
-      }
-    })
-  await asset.save(albumReleases, 'json')
-  return albumReleases
+  const today = DateTime.utc().toISO()
+  const { data, error } = await supabase
+    .from('albums')
+    .select(`
+       name,
+       key,
+       image,
+       release_date,
+       release_link
+    `)
+    .gt('release_date', today)
+
+  if (error) {
+    console.error('Error fetching data:', error)
+    return
+  }
+
+  return data.map(album => {
+    return {
+      artist: deriveArtistName(album['name'], album['key']),
+      title: album['name'],
+      date: DateTime.fromISO(album['release_date']).toLocaleString(DateTime.DATE_FULL),
+      url: album['release_link']
+    }
+  })
 }
