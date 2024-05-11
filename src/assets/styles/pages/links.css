@@ -8,6 +8,10 @@
     border: 1px solid var(--gray-light);
     padding: var(--sizing-xs) var(--sizing-sm);
   }
+
+  & button {
+    margin-left: var(--sizing-sm);
+  }
 }
 
 @media screen and (min-width: 768px) {
