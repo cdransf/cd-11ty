@@ -9,6 +9,8 @@
   & > li {
     overflow: hidden;
     margin: 0;
+    direction: flex;
+    align-items: center;
 
     & .icon > svg,
     & .active > svg {
