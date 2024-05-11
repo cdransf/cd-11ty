@@ -105,7 +105,7 @@ export default async function() {
     tracks: aggregateData(recentData, 'track_name', 'track'),
     trackChart: aggregateData(recentData, 'track_name', 'track', false),
   }
-  results.nowPlaying = results.recent.tracks[0]
+  results.nowPlaying = results.recent.trackChart[0]
 
   return results
 }
