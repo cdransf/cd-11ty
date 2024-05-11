@@ -9,7 +9,7 @@
   & > li {
     overflow: hidden;
     margin: 0;
-    direction: flex;
+    display: flex;
     align-items: center;
 
     & .icon > svg,
