@@ -6,11 +6,7 @@
 
   & .link {
     border: 1px solid var(--gray-light);
-    padding: var(--sizing-xs) var(--sizing-sm) 0;
-
-    & button {
-      margin-right: var(--sizing-sm);
-    }
+    padding: var(--sizing-xs) var(--sizing-sm);
   }
 }
 

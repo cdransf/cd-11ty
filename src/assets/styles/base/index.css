@@ -584,6 +584,12 @@ li {
   align-items: center;
 }
 
+.flex-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .justify-centered {
   justify-content: center;
 }
