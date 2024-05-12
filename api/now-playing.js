@@ -64,6 +64,7 @@ const emojiMap = (genre, artist) => {
   if (genre.includes("dance-punk")) return "🪩"
   if (genre.includes("punk") || genre.includes("hardcore")) return "✊"
   if (genre.includes("hip hop")) return "🎤"
+  if (genre.includes("hip-hop")) return "🎤"
   if (genre.includes("progressive") || genre.includes("experimental"))
     return "🤓"
   if (genre.includes("jazz")) return "🎺"
