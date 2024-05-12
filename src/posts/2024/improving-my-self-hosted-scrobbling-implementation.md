@@ -29,7 +29,7 @@ I had data for each, structured as JSON. I wrote some ugly node scripts (I'll sp
 
 I imported those CSVs into their respective tables, and worked my way to connections between the tables that look like this:
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/supabase-schema.png&w=1000&fm=webp&q=65" class="image-banner" loading="eager" decoding="async" alt="A diagram of my scrobbling tables" width="1000" height="886" />
+<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/supabase-schema.png&w=1000&fm=webp&q=75" class="image-banner" loading="eager" decoding="async" alt="A diagram of my scrobbling tables" width="1000" height="886" />
 
 The connections between the tables allow me to query data specific to a given listen's artist or album — data is stored in a given table where it makes the most sense: artist `mbid`s with artists, `genre`s with artists and so forth. I can then retrieve that data, provided I have a valid listen, using Supabase's select syntax: `artists (mbid, image)` or `albums (mbid, image)`.
 

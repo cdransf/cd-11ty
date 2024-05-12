@@ -126,6 +126,6 @@ For this page in particular, the images that are rendered above the fold are set
 
 All of these boilerplate steps leave us with a quick to load, accessible and resilient site:
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&w=1000&fm=webp&q=65" class="image-banner" alt="Pagespeed scores for coryd.dev/now" loading="lazy" decoding="async" width="1000" height="484" />
+<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&w=1000&fm=webp&q=75" class="image-banner" alt="Pagespeed scores for coryd.dev/now" loading="lazy" decoding="async" width="1000" height="484" />
 
 [^1]: It's easy, flexible and helps mitigate my lack of an eye for design by providing safe baselines.
