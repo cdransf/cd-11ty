@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "14.2.0",
+  "version": "14.3.0",
   "description": "The source for my personal site. Built using 11ty.",
   "type": "module",
   "scripts": {
@@ -43,7 +43,7 @@
     "dotenv-flow": "^4.1.0",
     "gray-matter": "^4.0.3",
     "html-minifier-terser": "^7.2.0",
-    "liquidjs": "^10.12.0",
+    "liquidjs": "^10.13.0",
     "luxon": "^3.4.4",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^8.6.7",

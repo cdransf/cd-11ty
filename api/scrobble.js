@@ -26,32 +26,6 @@ export default async (request) => {
     const artistKey = sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()
     const albumKey = `${artistKey}-${sanitizeMediaString(album).replace(/\s+/g, '-').toLowerCase()}`
 
-    const { data: albumData, error: albumError } = await supabase
-      .from('albums')
-      .select('*')
-      .eq('key', albumKey)
-      .single()
-
-    if (albumError && albumError.code === 'PGRST116') {
-      const { error: insertAlbumError } = await supabase.from('albums').insert([
-        {
-          mbid: null,
-          image: `https://coryd.dev/media/albums/${albumKey}.jpg`,
-          key: albumKey,
-          name: album,
-          tentative: true
-        }
-      ])
-
-      if (insertAlbumError) {
-        console.error('Error inserting album into Supabase:', insertAlbumError.message)
-        return new Response(JSON.stringify({ status: 'error', message: insertAlbumError.message }), { headers: { "Content-Type": "application/json" } })
-      }
-    } else if (albumError) {
-      console.error('Error querying album from Supabase:', albumError.message)
-      return new Response(JSON.stringify({ status: 'error', message: albumError.message }), { headers: { "Content-Type": "application/json" } })
-    }
-
     const { data: artistData, error: artistError } = await supabase
       .from('artists')
       .select('*')
@@ -76,6 +50,32 @@ export default async (request) => {
     } else if (artistError) {
       console.error('Error querying artist from Supabase:', artistError.message)
       return new Response(JSON.stringify({ status: 'error', message: artistError.message }), { headers: { "Content-Type": "application/json" } })
+    }
+
+    const { data: albumData, error: albumError } = await supabase
+      .from('albums')
+      .select('*')
+      .eq('key', albumKey)
+      .single()
+
+    if (albumError && albumError.code === 'PGRST116') {
+      const { error: insertAlbumError } = await supabase.from('albums').insert([
+        {
+          mbid: null,
+          image: `https://coryd.dev/media/albums/${albumKey}.jpg`,
+          key: albumKey,
+          name: album,
+          tentative: true
+        }
+      ])
+
+      if (insertAlbumError) {
+        console.error('Error inserting album into Supabase:', insertAlbumError.message)
+        return new Response(JSON.stringify({ status: 'error', message: insertAlbumError.message }), { headers: { "Content-Type": "application/json" } })
+      }
+    } else if (albumError) {
+      console.error('Error querying album from Supabase:', albumError.message)
+      return new Response(JSON.stringify({ status: 'error', message: albumError.message }), { headers: { "Content-Type": "application/json" } })
     }
 
     const { error: listenError } = await supabase.from('listens').insert([

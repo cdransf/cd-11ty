@@ -5,20 +5,6 @@ const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
-const deriveArtistName = (albumName, key) => {
-  const normalizedAlbumName = albumName.toLowerCase().replace(/[\s.]+/g, '-').replace(/[^a-z0-9-]/g, '')
-  if (key.endsWith(normalizedAlbumName)) {
-    const artistName = key.slice(0, key.length - normalizedAlbumName.length).replace(/-$/, '')
-    const formattedArtistName = artistName
-      .split('-')
-      .map(part => part.charAt(0).toUpperCase() + part.slice(1))
-      .join(' ')
-    return formattedArtistName
-  } else {
-    return ''
-  }
-}
-
 export default async function () {
   const today = DateTime.utc().toISO()
   const { data, error } = await supabase
@@ -28,7 +14,8 @@ export default async function () {
        key,
        image,
        release_date,
-       release_link
+       release_link,
+       artists (name_string, genre, mbid)
     `)
     .gt('release_date', today)
 
@@ -39,10 +26,12 @@ export default async function () {
 
   return data.map(album => {
     return {
-      artist: deriveArtistName(album['name'], album['key']),
+      artist: album['artists']['name_string'],
       title: album['name'],
       date: DateTime.fromISO(album['release_date']).toLocaleString(DateTime.DATE_FULL),
-      url: album['release_link']
+      url: album['release_link'],
+      genre: album['artists']['genre'],
+      mbid: album['artists']['mbid'],
     }
   })
 }

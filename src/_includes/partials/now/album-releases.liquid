@@ -8,8 +8,13 @@
       <li>
         <strong>{{ album.date }}: </strong>
         <a href="{{ album.url}}" title="{{ album.title | escape}} by {{ album.artist | escape}}">
-          {{ album.title }} by {{ album.artist }}
+          {{ album.title }}
         </a>
+        <span> by </span>
+        <a href="https://musicbrainz.org/artist/{{ album.mbid }}">
+          {{ album.artist }}
+        </a>
+        <span> • {{ album.genre }}</span>
       </li>
     {% endfor %}
   </ul>
