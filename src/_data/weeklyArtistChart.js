@@ -46,20 +46,22 @@ export default async function() {
     const endOfWeekSeconds = endOfWeek.toSeconds()
     const weekNumber = now.toFormat('kkkk-WW')
 
-    let { data: existingRecord } = await supabase
+    let { data: recentCharts } = await supabase
       .from('weekly_charts')
       .select('*')
-      .eq('week', weekNumber)
-      .single();
+      .order('date', { ascending: false })
+      .limit(10);
 
-    if (existingRecord) {
-      const formattedData = formatData(JSON.parse(existingRecord['data']))
-      return [{
-        title: formattedData['content'],
-        description: formattedData['description'],
-        url: `https://coryd.dev/now?ts=${existingRecord['week']}#artists`,
-        date: existingRecord['date']
-      }]
+    if (recentCharts.some(chart => chart['week'] === weekNumber)) {
+      return recentCharts.map(chart => {
+        const formattedData = formatData(JSON.parse(chart['data']))
+        return {
+          title: formattedData['content'],
+          description: formattedData['description'],
+          url: `https://coryd.dev/now?ts=${chart['week']}#artists`,
+          date: chart['date']
+        }
+      })
     }
 
     // Fetch the listens data for the past week
@@ -99,12 +101,24 @@ export default async function() {
       .insert([{ week: weekNumber, date: now.toISODate(), data: JSON.stringify(topArtists) }])
     if (insertError) throw insertError
     const formattedData = formatData(topArtists)
-    return [{
-      title: formattedData['content'],
-      description: formattedData['description'],
-      url: `https://coryd.dev/now?ts=${weekNumber}#artists`,
-      date: now.toISODate()
-    }]
+    const recentChartData = recentCharts.map(chart => {
+      const formattedData = formatData(JSON.parse(chart['data']))
+      return {
+        title: formattedData['content'],
+        description: formattedData['description'],
+        url: `https://coryd.dev/now?ts=${chart['week']}#artists`,
+        date: chart['date']
+      }
+    })
+    return [
+      {
+        title: formattedData['content'],
+        description: formattedData['description'],
+        url: `https://coryd.dev/now?ts=${weekNumber}#artists`,
+        date: now.toISODate()
+      },
+      ...recentChartData
+    ]
   } catch (error) {
     console.error('Error:', error.message)
   }
