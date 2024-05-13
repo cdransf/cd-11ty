@@ -64,7 +64,6 @@ export default async function() {
       })
     }
 
-    // Fetch the listens data for the past week
     let { data: listens, error } = await supabase
       .from('listens')
       .select(`
