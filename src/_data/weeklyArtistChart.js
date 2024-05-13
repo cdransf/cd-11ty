@@ -30,7 +30,7 @@ const formatData = (data) => {
     description+= `<li>${artist['name']} @ ${artist['plays']} • ${artist['genre']}</li>`
     if (index !== data.length - 1) content += ', '
   })
-  description += '</ul><br/><br/>'
+  description += '</ul>'
   return { content, description }
 }
 
