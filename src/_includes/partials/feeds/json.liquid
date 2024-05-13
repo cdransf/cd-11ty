@@ -10,7 +10,7 @@
     "id": "{{ entry.url | btoa }}",
     "title": "{{ entry.title | replaceQuotes }}",
     "url": "{{ entry.url }}",
-    "content_text": "{{ entry.title | replaceQuotes }}{% if tagMap %} {{ entry.url | tagLookup: tagMap }}{% endif %} {{ entry.url }}",
+    "content_text": "{{ entry.title | replaceQuotes }}{% if entry.url | tagLookup: tagMap %} {{ entry.url | tagLookup: tagMap }} {{ entry.url }}{% else %} {{ entry.url }}{% endif %}",
     "date_published": "{{ entry.date | stringToRFC822Date }}"
     }{% if not forloop.last %},{% endif %}
   {%- endfor %}
