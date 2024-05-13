@@ -41,7 +41,7 @@ export default async function() {
     if (now.weekday !== 1) return // only run on monday
 
     const startOfWeek = now.minus({ days: now.weekday + 1 }).startOf('day')
-    const endOfWeek = now.minus({ days: now.weekday - 5 }).endOf('day')
+    const endOfWeek = now.minus({ days: now.weekday - 7 }).endOf('day')
     const startOfWeekSeconds = startOfWeek.toSeconds()
     const endOfWeekSeconds = endOfWeek.toSeconds()
     const weekNumber = now.toFormat('kkkk-WW')
