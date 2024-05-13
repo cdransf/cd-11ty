@@ -6,6 +6,7 @@ export default async function () {
   feed.addSource('rss', '🎥', 'https://coryd.dev/feeds/movies')
   feed.addSource('rss', '📖', 'https://coryd.dev/feeds/books')
   feed.addSource('rss', '🔗', 'https://coryd.dev/feeds/links')
+  feed.addSource('rss', '🎧', 'https://coryd.dev/feeds/weekly-artist-chart')
 
   const entries = feed.getEntries().catch()
   const res = await entries
