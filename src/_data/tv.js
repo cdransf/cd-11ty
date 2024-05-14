@@ -1,87 +1,116 @@
-import EleventyFetch from '@11ty/eleventy-fetch'
+import { createClient } from '@supabase/supabase-js'
+
+const SUPABASE_URL = process.env.SUPABASE_URL
+const SUPABASE_KEY = process.env.SUPABASE_KEY
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 export default async function () {
-  const TV_KEY = process.env.API_KEY_TRAKT
-  const MOVIEDB_KEY = process.env.API_KEY_MOVIEDB
-  const url = 'https://api.trakt.tv/users/cdransf/history/shows?page=1&limit=75'
-  const formatEpisodeData = (shows) => {
+  const { data: shows, error } = await supabase
+    .from('shows')
+    .select(`
+      title,
+      tmdb_id,
+      collected,
+      favorite,
+      episodes (
+        episode_number,
+        season_number,
+        last_watched_at
+      )
+    `)
+
+  if (error) return []
+
+  let episodes = []
+  shows.forEach(show => {
+    show.episodes.forEach(episode => {
+      episodes.push({
+        ...episode,
+        show_title: show.title,
+        show_tmdb_id: show.tmdb_id,
+        collected: show.collected,
+        favorite: show.favorite
+      })
+    })
+  })
+
+  episodes.sort((a, b) => new Date(b.last_watched_at) - new Date(a.last_watched_at))
+  const allEpisodes = episodes
+  episodes = episodes.slice(0, 75)
+
+  const formatEpisodeData = (episodes) => {
     const episodeData = []
-    const startingEpisodes = []
-    const startingSeasons = []
-    shows.reverse().forEach((episode) => {
-      const episodeNumber = episode['episode']['number']
-      const seasonNumber = episode['episode']['season']
-      if (!startingEpisodes.find((e) => e.show === episode['show']['title'])) startingEpisodes.push({ show: episode['show']['title'], episode: episodeNumber })
-      if (!startingSeasons.find((e) => e.show === episode['show']['title'])) startingSeasons.push({ show: episode['show']['title'], season: seasonNumber })
+    const showEpisodesMap = {}
 
-      if (episodeData.find((e) => e.name === episode?.['show']?.['title'])) {
-        // cache the matched episode reference
-        const matchedEpisode = episodeData.find((e) => e.name === episode?.['show']?.['title'])
-        const startingEpisode = startingEpisodes.find((e) => e.show === episode['show']['title'])['episode']
-        const startingSeason = startingSeasons.find((e) => e.show === episode['show']['title'])['season']
+    episodes.forEach((episode) => {
+      const showTitle = episode.show_title
+      const showTmdbId = episode.show_tmdb_id
+      const episodeNumber = episode.episode_number
+      const seasonNumber = episode.season_number
+      const lastWatchedAt = episode.last_watched_at
+      const collected = episode.collected
+      const favorite = episode.favorite
 
-        // remove the matched episode from the array
-        episodeData.splice(
-          episodeData.findIndex((e) => e.name === episode['show']['title']),
-          1
-        )
+      if (!showEpisodesMap[showTmdbId]) {
+        showEpisodesMap[showTmdbId] = {
+          title: showTitle,
+          tmdbId: showTmdbId,
+          collected: collected,
+          favorite: favorite,
+          episodes: []
+        }
+      }
 
-        // push the new episode to the array
+      showEpisodesMap[showTmdbId].episodes.push({
+        name: showTitle,
+        url: `https://www.themoviedb.org/tv/${showTmdbId}/season/${seasonNumber}/episode/${episodeNumber}`,
+        subtext: `${showTitle} • S${seasonNumber}E${episodeNumber}`,
+        episode: episodeNumber,
+        season: seasonNumber,
+        tmdbId: showTmdbId,
+        type: 'tv',
+        image: `https://coryd.dev/media/shows/poster-${showTmdbId}.jpg`,
+        lastWatchedAt: lastWatchedAt
+      })
+    })
+
+    const sortedShows = Object.values(showEpisodesMap).sort((a, b) => new Date(b.episodes[0].lastWatchedAt) - new Date(a.episodes[0].lastWatchedAt))
+
+    sortedShows.forEach((show) => {
+      const startingEpisode = show.episodes[show.episodes.length - 1].episode
+      const startingSeason = show.episodes[show.episodes.length - 1].season
+      const endingEpisode = show.episodes[0].episode
+      const endingSeason = show.episodes[0].season
+
+      if (show.episodes.length > 1) {
         episodeData.push({
-          name: matchedEpisode['name'],
-          url: `https://trakt.tv/shows/${episode['show']['ids']['slug']}`,
-          subtext: `S${startingSeason}E${startingEpisode} - S${episode['episode']['season']}E${episode['episode']['number']}`,
+          name: show.title,
+          url: `https://www.themoviedb.org/tv/${show.tmdbId}`,
+          subtext: `S${startingSeason}E${startingEpisode} - S${endingSeason}E${endingEpisode}`,
           startingEpisode,
           startingSeason,
-          episode: episodeNumber,
-          season: seasonNumber,
-          id: episode['show']['ids']['trakt'],
-          tmdbId: episode['show']['ids']['tmdb'],
+          episode: endingEpisode,
+          season: endingSeason,
+          tmdbId: show.tmdbId,
+          collected: show.collected,
+          favorite: show.favorite,
           type: 'tv-range',
+          image: `https://coryd.dev/media/shows/poster-${show.tmdbId}.jpg`,
         })
       } else {
-        // if an episode with the same show name doesn't exist, push it to the array
-        episodeData.push({
-          name: episode['show']['title'],
-          title: episode['episode']['title'],
-          url: `https://trakt.tv/shows/${episode['show']['ids']['slug']}/seasons/${episode['episode']['season']}/episodes/${episode['episode']['number']}`,
-          subtext: `${episode['show']['title']} • S${episode['episode']['season']}E${episode['episode']['number']}`,
-          episode: episodeNumber,
-          season: seasonNumber,
-          id: episode['show']['ids']['trakt'],
-          tmdbId: episode['show']['ids']['tmdb'],
-          type: 'tv',
-        })
+        const singleEpisode = show.episodes[0]
+        singleEpisode.collected = show.collected
+        singleEpisode.favorite = show.favorite
+        episodeData.push(singleEpisode)
       }
     })
 
-    return episodeData.reverse()
+    return episodeData
   }
 
-  const res = EleventyFetch(url, {
-    duration: '1h',
-    type: 'json',
-    fetchOptions: {
-      headers: {
-        'Content-Type': 'application/json',
-        'trakt-api-version': 2,
-        'trakt-api-key': TV_KEY,
-      },
-    },
-  }).catch()
-  const shows = await res
-  const episodes = formatEpisodeData(shows)
-  for (const episode of episodes) {
-    const tmdbId = episode['tmdbId']
-    const tmdbUrl = `https://api.themoviedb.org/3/tv/${tmdbId}?api_key=${MOVIEDB_KEY}`
-    const tmdbRes = EleventyFetch(tmdbUrl, {
-      duration: '1h',
-      type: 'json',
-    })
-    const tmdbData = await tmdbRes
-    const posterPath = tmdbData['poster_path']
-    episode.image = `https://coryd.dev/.netlify/images/?url=https://image.tmdb.org//t/p/w500${posterPath}&w=200&h=307&fit=fill`
+  return {
+    shows,
+    watchHistory: formatEpisodeData(allEpisodes),
+    recentlyWatched: formatEpisodeData(episodes)
   }
-
-  return episodes;
 }

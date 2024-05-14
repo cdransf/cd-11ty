@@ -1,47 +1,46 @@
-import EleventyFetch from '@11ty/eleventy-fetch'
+import { createClient } from '@supabase/supabase-js'
+import { DateTime } from 'luxon'
+
+const SUPABASE_URL = process.env.SUPABASE_URL
+const SUPABASE_KEY = process.env.SUPABASE_KEY
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 export default async function () {
-  const TV_KEY = process.env.API_KEY_TRAKT
-  const MOVIEDB_KEY = process.env.API_KEY_MOVIEDB
-  const url = 'https://api.trakt.tv/users/cdransf/history/movies?page=1&limit=6&extended=full'
+  const { data: movies, error } = await supabase
+    .from('movies')
+    .select(`
+      tmdb_id,
+      slug,
+      last_watched,
+      title,
+      year,
+      collected,
+      plays,
+      favorite
+    `)
+    .order('last_watched', { ascending: false })
+
+  if (error) return []
+
+
   const formatMovieData = (movies) => movies.map((item) => {
     const movie = {
-      title: item['movie']['title'],
-      dateAdded: item['watched_at'],
-      url: `https://trakt.tv/movies/${item['movie']['ids']['slug']}`,
-      id: item['movie']['ids']['trakt'],
-      tmdbId: item['movie']['ids']['tmdb'],
-      description: `${item['movie']['overview']}<br/><br/>`,
-      tags: item['movie']['genres'],
+      title: item['title'],
+      dateAdded: item['last_watched'],
+      url: `https://www.themoviedb.org/movie/${item['tmdb_id']}`,
+      description: `<p>${item['title']} (${item['year']})</p><p>Watched at: ${DateTime.fromISO(item['last_watched'], { zone: 'utc' }).setZone('America/Los_Angeles').toFormat('MMMM d, yyyy, h:mma')}</p>`,
       type: 'movie',
+      image: `https://coryd.dev/media/movies/poster-${item['tmdb_id']}.jpg`,
+      plays: item['plays'],
+      collected: item['collected'],
+      favorite: item['favorite'],
     }
     return movie;
   })
 
-  const res = EleventyFetch(url, {
-    duration: '1h',
-    type: 'json',
-    fetchOptions: {
-      headers: {
-        'Content-Type': 'application/json',
-        'trakt-api-version': 2,
-        'trakt-api-key': TV_KEY,
-      },
-    },
-  }).catch()
-  const data = await res
-  const movies = formatMovieData(data)
-
-  for (const movie of movies) {
-    const tmdbId = movie['tmdbId']
-    const tmdbUrl = `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${MOVIEDB_KEY}`
-    const tmdbRes = EleventyFetch(tmdbUrl, {
-      duration: '1h',
-      type: 'json',
-    })
-    const tmdbData = await tmdbRes
-    const posterPath = tmdbData['poster_path']
-    movie.image = `https://image.tmdb.org/t/p/w500/${posterPath}`
+  return {
+    movies,
+    watchHistory: formatMovieData(movies),
+    recentlyWatched: formatMovieData(movies.slice(0, 6)),
   }
-  return movies;
 }

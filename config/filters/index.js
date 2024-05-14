@@ -57,7 +57,7 @@ export default {
     if (!url) return
     if (url.includes('#artists')) return `#Music`
     if (url.includes('openlibrary.org')) return `#Books #NowReading ${tagMap[url]}`.trim()
-    if (url.includes('trakt.tv')) return `#Movies #Watching  ${tagMap[url]}`.trim()
+    if (url.includes('themoviedb.org/movie')) return `#Movies #Watching`
     return tagMap[url] || ''
   },
 

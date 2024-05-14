@@ -5,7 +5,7 @@ permalink: /about.html
 ---
 {%- assign artist = music.week.artists | first -%}
 {%- assign book = books | bookStatus: 'started' | reverse | first -%}
-{%- assign show = tv | first -%}
+{%- assign show = tv.recentlyWatched | first -%}
 <div class="avatar-wrapper flex-centered">
   <div class="interior">
   {%- capture about_alt -%}{{ meta.siteName }} - image by David Neal / @reverentgeek{%- endcapture -%}
