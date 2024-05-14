@@ -22,7 +22,6 @@ export default async function () {
 
   if (error) return []
 
-
   const formatMovieData = (movies) => movies.map((item) => {
     const movie = {
       title: item['title'],
@@ -31,6 +30,7 @@ export default async function () {
       description: `<p>${item['title']} (${item['year']})</p><p>Watched at: ${DateTime.fromISO(item['last_watched'], { zone: 'utc' }).setZone('America/Los_Angeles').toFormat('MMMM d, yyyy, h:mma')}</p>`,
       type: 'movie',
       image: `https://coryd.dev/media/movies/poster-${item['tmdb_id']}.jpg`,
+      backdrop: `https://coryd.dev/media/movies/backdrops/backdrop-${item['tmdb_id']}.jpg`,
       plays: item['plays'],
       collected: item['collected'],
       favorite: item['favorite'],
@@ -38,9 +38,14 @@ export default async function () {
     return movie;
   })
 
+  const favoriteMovies = movies.filter(movie => movie['favorite'])
+  const collectedMovies = movies.filter(movie => movie['collected'])
+
   return {
     movies,
     watchHistory: formatMovieData(movies),
     recentlyWatched: formatMovieData(movies.slice(0, 6)),
+    favorites: formatMovieData(favoriteMovies),
+    collection: formatMovieData(collectedMovies),
   }
 }
