@@ -72,6 +72,9 @@ export default {
     return text
   },
 
+  // watching
+  featuredWatching: (watching, count) => shuffleArray(watching.filter(watch => watch.favorite === true)).slice(0, count),
+
   // authors
   authorLookup: (url) => {
     if (!url) return null

@@ -4,22 +4,45 @@ const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
-export default async function () {
-  const { data: shows, error } = await supabase
-    .from('shows')
-    .select(`
-      title,
-      tmdb_id,
-      collected,
-      favorite,
-      episodes (
-        episode_number,
-        season_number,
-        last_watched_at
-      )
-    `)
+const PAGE_SIZE = 1000
 
-  if (error) return []
+const fetchAllShows = async () => {
+  let shows = []
+  let rangeStart = 0
+
+  while (true) {
+    const { data, error } = await supabase
+      .from('shows')
+      .select(`
+        title,
+        tmdb_id,
+        collected,
+        favorite,
+        year,
+        episodes (
+          episode_number,
+          season_number,
+          last_watched_at
+        )
+      `)
+      .range(rangeStart, rangeStart + PAGE_SIZE - 1)
+
+    if (error) {
+      console.error(error)
+      break
+    }
+
+    shows = shows.concat(data)
+
+    if (data.length < PAGE_SIZE) break
+    rangeStart += PAGE_SIZE
+  }
+
+  return shows
+}
+
+export default async function () {
+  const shows = await fetchAllShows()
 
   let episodes = []
   shows.forEach(show => {
@@ -29,14 +52,15 @@ export default async function () {
         show_title: show['title'],
         show_tmdb_id: show['tmdb_id'],
         collected: show['collected'],
-        favorite: show['favorite']
+        favorite: show['favorite'],
+        year: show['year']
       })
     })
   })
 
   episodes.sort((a, b) => new Date(b['last_watched_at']) - new Date(a['last_watched_at']))
   const allEpisodes = episodes
-  episodes = episodes.slice(0, 75)
+  const recentlyWatchedEpisodes = episodes.slice(0, 75)
 
   const formatEpisodeData = (episodes) => {
     const episodeData = []
@@ -55,8 +79,9 @@ export default async function () {
         showEpisodesMap[showTmdbId] = {
           title: showTitle,
           tmdbId: showTmdbId,
-          collected: collected,
-          favorite: favorite,
+          collected,
+          favorite,
+          lastWatchedAt,
           episodes: []
         }
       }
@@ -71,7 +96,7 @@ export default async function () {
         type: 'tv',
         image: `https://coryd.dev/media/shows/poster-${showTmdbId}.jpg`,
         backdrop: `https://coryd.dev/media/shows/backdrops/backdrop-${showTmdbId}.jpg`,
-        lastWatchedAt: lastWatchedAt
+        lastWatchedAt
       })
     })
 
@@ -101,8 +126,8 @@ export default async function () {
         })
       } else {
         const singleEpisode = show['episodes'][0]
-        singleEpisode.collected = show['collected']
-        singleEpisode.favorite = show['favorite']
+        singleEpisode['collected'] = show['collected']
+        singleEpisode['favorite'] = show['favorite']
         episodeData.push(singleEpisode)
       }
     })
@@ -112,24 +137,26 @@ export default async function () {
 
   const favoriteShows = shows.filter(show => show['favorite'])
   const collectedShows = shows.filter(show => show['collected'])
+  const toWatch = shows.filter(show => !show.episodes.some(episode => episode.last_watched_at)).sort((a, b) => a['title'].localeCompare(b['title']))
 
   return {
     shows,
     watchHistory: formatEpisodeData(allEpisodes),
-    recentlyWatched: formatEpisodeData(episodes),
+    recentlyWatched: formatEpisodeData(recentlyWatchedEpisodes),
     favorites: formatEpisodeData(favoriteShows.flatMap(show => show['episodes'].map(episode => ({
       ...episode,
       show_title: show['title'],
       show_tmdb_id: show['tmdb_id'],
       collected: show['collected'],
       favorite: show['favorite']
-    })))),
+    })))).sort((a, b) => a['name'].localeCompare(b['name'])),
     collection: formatEpisodeData(collectedShows.flatMap(show => show['episodes'].map(episode => ({
       ...episode,
       show_title: show['title'],
       show_tmdb_id: show['tmdb_id'],
       collected: show['collected'],
       favorite: show['favorite']
-    }))))
+    })))),
+    toWatch
   }
 }

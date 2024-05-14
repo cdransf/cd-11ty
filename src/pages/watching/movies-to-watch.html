@@ -1,0 +1,26 @@
+---
+title: Movies to watch
+layout: default
+pagination:
+  data: movies.toWatch
+  alias: movies
+  size: 30
+permalink: "/watching/movies-to-watch/{{ pagination.pageNumber }}/index.html"
+---
+<p><a class="link-icon flex-centered" href="/watching">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
+{% if pagination.pageNumber == 0 %}
+<h2 class="page-header">{{ title }}</h2>
+<p>These are movies I want to watch, sorted in alphabetical order. As one would expect, it will change as I navigate through and add to it.</p>
+<hr class="large-spacing" />
+{% endif %}
+<ul class="link-list reduced-spacing">
+  {% for movie in pagination.items %}
+    <li>
+      <a href="{{ movie.url }}">
+        <strong>{{ movie.title }}</strong>
+      </a>
+      ({{ movie.year }})
+    </li>
+  {% endfor %}
+</ul>
+{% render "partials/widgets/paginator.liquid", pagination:pagination %}

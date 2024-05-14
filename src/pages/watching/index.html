@@ -1,0 +1,35 @@
+---
+title: Watching
+layout: default
+permalink: "/watching/index.html"
+---
+{% assign featuredMovie = movies.favorites | featuredWatching: 1 | first %}
+<h2 class="watching page-header">{{ title }}</h2>
+{% render "partials/watching/hero.liquid" movie:featuredMovie %}
+<p>Here's all of the TV and movies I've been watching recently presented in what is (hopefully) an organized fashion. You can also take a look at the <a href="/watching/movies-to-watch/0">movies</a> and <a href="/watching/shows-to-watch/0">shows</a> I'm planning to watch.</p>
+<h2 id="movies" class="section-header flex-centered">
+  {% tablericon "movie" "Recent movies" %}
+  Recent movies
+</h2>
+{% render "partials/now/media-grid.liquid", data:movies.recentlyWatched, shape: "vertical", count: 6 %}
+<h2 id="tv" class="section-header flex-centered">
+  {% tablericon "device-tv" "Recent shows" %}
+  Recent shows
+</h2>
+{% render "partials/now/media-grid.liquid", data:tv.recentlyWatched, shape: "vertical", count: 6 %}
+<a class="link-icon flex-centered" href="/watching/favorite-movies">
+  <h2 class="section-header flex-centered">
+    {% tablericon "star" "Favorite movies" %}
+    Favorite movies
+  </h2>
+</a>
+{% assign favoriteMovies = movies.favorites | featuredWatching: 6 %}
+{% render "partials/watching/favorites-grid.liquid", favorites:favoriteMovies, count: 6 %}
+<a class="link-icon flex-centered" href="/watching/favorite-shows">
+  <h2 class="section-header flex-centered">
+    {% tablericon "star" "Favorite shows" %}
+    Favorite shows
+  </h2>
+</a>
+{% assign favoriteShows = tv.favorites | featuredWatching: 6 %}
+{% render "partials/watching/favorites-grid.liquid", favorites:favoriteShows, count: 6 %}

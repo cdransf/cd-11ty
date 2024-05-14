@@ -284,13 +284,13 @@ a svg:focus {
   stroke: var(--accent-color-hover);
 }
 
-a.link-arrow svg {
+a.link-icon svg {
   stroke: var(--accent-color);
 }
 
-a.link-arrow:hover svg,
-a.link-arrow:active svg,
-a.link-arrow:focus svg {
+a.link-icon:hover svg,
+a.link-icon:active svg,
+a.link-icon:focus svg {
   transform: rotate(0deg);
   stroke: var(--accent-color-hover);
 }

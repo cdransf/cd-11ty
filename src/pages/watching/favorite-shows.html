@@ -1,0 +1,9 @@
+---
+title: Favorite shows
+layout: default
+permalink: "/watching/favorite-shows/index.html"
+---
+<p><a class="link-icon flex-centered" href="/watching">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
+<h2 class="watching page-header">{{ title }}</h2>
+<p>These are my favorite shows. There are many like them, but these are mine.</p>
+{% render "partials/watching/favorites-grid.liquid", favorites:tv.favorites, count: 99 %}

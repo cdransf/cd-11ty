@@ -15,7 +15,7 @@ layout: default
     <button class="small active" data-toggle="artists-window">This week</button>
     <button class="small secondary" data-toggle="artists-month">This month</button>
     <button class="small secondary" data-toggle="artists-three-months">3 months</button>
-    <button class="small secondary" data-toggle="artists-year">This year</button>
+    <button class="small secondary" data-toggle="artists-all-time">All time</button>
   </div>
 </div>
 <div id="artists-window">
@@ -27,8 +27,8 @@ layout: default
 <div class="hidden" id="artists-three-months">
   {% render "partials/now/media-grid.liquid", data:music.threeMonth.artists, shape: "square", count: 8 %}
 </div>
-<div class="hidden" id="artists-year">
-  {% render "partials/now/media-grid.liquid", data:music.year.artists, shape: "square", count: 8 %}
+<div class="hidden" id="artists-all-time">
+  {% render "partials/now/media-grid.liquid", data:music.allTime.artists, shape: "square", count: 8 %}
 </div>
 <div class="section-header-wrapper">
   <h2 id="albums" class="section-header flex-centered">
@@ -39,7 +39,7 @@ layout: default
     <button class="small active" data-toggle="albums-window">This week</button>
     <button class="small secondary" data-toggle="albums-month">This month</button>
     <button class="small secondary" data-toggle="albums-three-months">3 months</button>
-    <button class="small secondary" data-toggle="albums-year">This year</button>
+    <button class="small secondary" data-toggle="albums-all-time">All time</button>
   </div>
 </div>
 <div id="albums-window">
@@ -51,8 +51,8 @@ layout: default
 <div class="hidden" id="albums-three-months">
   {% render "partials/now/media-grid.liquid", data:music.threeMonth.albums, shape: "square", count: 8 %}
 </div>
-<div class="hidden" id="albums-year">
-  {% render "partials/now/media-grid.liquid", data:music.year.albums, shape: "square", count: 8 %}
+<div class="hidden" id="albums-all-time">
+  {% render "partials/now/media-grid.liquid", data:music.allTime.albums, shape: "square", count: 8 %}
 </div>
 <div class="section-header-wrapper">
   <h2 id="tracks" class="section-header flex-centered">
@@ -83,22 +83,28 @@ layout: default
   {% render "partials/now/track-chart.liquid", data:music.year.tracks, mostPlayed:music.year.tracks[0].plays %}
 </div>
 {% render "partials/now/album-releases.liquid", albumReleases:albumReleases %}
-<h2 id="books" class="section-header flex-centered">
-  {% tablericon "books" "Books" %}
-  Books
-</h2>
+<a class="link-icon flex-centered" href="/books">
+  <h2 id="books" class="section-header flex-centered">
+    {% tablericon "books" "Books" %}
+    Books
+  </h2>
+</a>
 {% assign bookData = books | bookStatus: 'started' | reverse %}
 {% render "partials/now/media-grid.liquid", data:bookData, shape: "vertical", count: 6 %}
 {% render "partials/widgets/recent-links.liquid", links:collections.links %}
-<h2 id="movies" class="section-header flex-centered">
-  {% tablericon "movie" "Movies" %}
-  Movies
-</h2>
-{% render "partials/now/media-grid.liquid", data:movies.recentlyWatched, icon: "movie", title: "Movies", shape: "vertical", count: 6 %}
-<h2 id="tv" class="section-header flex-centered">
-  {% tablericon "device-tv" "TV" %}
-  TV
-</h2>
-{% render "partials/now/media-grid.liquid", data:tv.recentlyWatched, icon: "device-tv", title: "TV", shape: "vertical", count: 6 %}
+<a class="link-icon flex-centered" href="/watching#movies">
+  <h2 id="movies" class="section-header flex-centered">
+    {% tablericon "movie" "Movies" %}
+    Movies
+  </h2>
+</a>
+{% render "partials/now/media-grid.liquid", data:movies.recentlyWatched, shape: "vertical", count: 6 %}
+<a class="link-icon flex-centered" href="/watching#tv">
+  <h2 id="tv" class="section-header flex-centered">
+    {% tablericon "device-tv" "TV" %}
+    TV
+  </h2>
+</a>
+{% render "partials/now/media-grid.liquid", data:tv.recentlyWatched, shape: "vertical", count: 6 %}
 <p class="now-explainer text-small text-centered">This is a <a href="https://nownownow.com/about">now page</a>, and if you have your own site, <a href="https://nownownow.com/about">you should make one too</a>.</p>
 <p class="text-small text-centered"><em>This page was last updated on {{ "now"  | date: "%B %-d, %-I:%M%p", "America/Los_Angeles" }}.</em></p>

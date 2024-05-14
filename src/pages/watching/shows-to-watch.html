@@ -1,0 +1,26 @@
+---
+title: Shows to watch
+layout: default
+pagination:
+  data: tv.toWatch
+  alias: shows
+  size: 30
+permalink: "/watching/shows-to-watch/{{ pagination.pageNumber }}/index.html"
+---
+<p><a class="link-icon flex-centered" href="/watching">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
+{% if pagination.pageNumber == 0 %}
+<h2 class="page-header">{{ title }}</h2>
+<p>These are shpws I want to watch, sorted in alphabetical order. As one would expect, it will change as I navigate through and add to it.</p>
+<hr class="large-spacing" />
+{% endif %}
+<ul class="link-list reduced-spacing">
+  {% for show in pagination.items %}
+    <li>
+      <a href="{{ show.url }}">
+        <strong>{{ show.title }}</strong>
+      </a>
+      {% if show.year %}({{ show.year }}){% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% render "partials/widgets/paginator.liquid", pagination:pagination %}

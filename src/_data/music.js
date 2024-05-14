@@ -32,6 +32,32 @@ const fetchDataForPeriod = async (startPeriod, fields, table) => {
   return rows
 }
 
+const fetchAllTimeData = async (fields, table) => {
+  const PAGE_SIZE = 1000
+  let rows = []
+  let rangeStart = 0
+
+  while (true) {
+    const { data, error } = await supabase
+      .from(table)
+      .select(fields)
+      .order('listened_at', { ascending: false })
+      .range(rangeStart, rangeStart + PAGE_SIZE - 1)
+
+    if (error) {
+      console.error(error)
+      break
+    }
+
+    rows = rows.concat(data)
+
+    if (data.length < PAGE_SIZE) break
+    rangeStart += PAGE_SIZE
+  }
+
+  return rows
+}
+
 const aggregateData = (data, groupByField, groupByType, sort = true) => {
   const aggregation = {}
   data.forEach(item => {
@@ -65,16 +91,14 @@ const aggregateData = (data, groupByField, groupByType, sort = true) => {
     aggregation[key].plays++
   })
   const aggregatedData = sort ? Object.values(aggregation).sort((a, b) => b.plays - a.plays) : Object.values(aggregation)
-  return aggregatedData
+  return aggregatedData.filter(item => item.plays > 0)
 }
-
 
 export default async function() {
   const periods = {
-    week: DateTime.now().minus({ days: 7 }).startOf('day'), // Last week
-    month: DateTime.now().minus({ days: 30 }).startOf('day'), // Last 30 days
-    threeMonth: DateTime.now().minus({ months: 3 }).startOf('day'), // Last three months
-    year: DateTime.now().minus({ years: 1 }).startOf('day'), // Last 365 days
+    week: DateTime.now().minus({ days: 7 }).startOf('day'), // last week
+    month: DateTime.now().minus({ days: 30 }).startOf('day'), // last 30 days
+    threeMonth: DateTime.now().minus({ months: 3 }).startOf('day'), // last three months
   }
 
   const results = {}
@@ -97,15 +121,23 @@ export default async function() {
     }
   }
 
+  // Fetch and aggregate all-time data
+  const allTimeData = await fetchAllTimeData(selectFields, 'listens')
+  results['allTime'] = {
+    artists: aggregateData(allTimeData, 'artist_name', 'artists'),
+    albums: aggregateData(allTimeData, 'album_name', 'albums'),
+    tracks: aggregateData(allTimeData, 'track_name', 'track')
+  }
+
   const recentData = await fetchDataForPeriod(DateTime.now().minus({ days: 7 }), selectFields, 'listens')
 
-  results.recent = {
+  results['recent'] = {
     artists: aggregateData(recentData, 'artist_name', 'artists'),
     albums: aggregateData(recentData, 'album_name', 'albums'),
     tracks: aggregateData(recentData, 'track_name', 'track'),
     tracksChronological: aggregateData(recentData, 'track_name', 'track', false),
   }
-  results.nowPlaying = results.recent.tracksChronological[0]
+  results['nowPlaying'] = results['recent']['tracksChronological'][0]
 
   return results
 }

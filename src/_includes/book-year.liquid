@@ -5,7 +5,7 @@ layout: default
 {%- capture currentYear -%}{% currentYear %}{%- endcapture -%}
 {%- assign yearString = year | append: '' -%}
 {%- assign currentYearString = currentYear | append: '' -%}
-<p><a class="link-arrow flex-centered" href="/books">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
+<p><a class="link-icon flex-centered" href="/books">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
 <h2 class="page-header">{{ title }}</h2>
 {{ content }}
 {% if yearString == currentYearString %}

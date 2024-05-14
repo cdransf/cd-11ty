@@ -1,0 +1,23 @@
+{% if favorites.size > 0 %}
+  <div class="watching grid">
+    {% for favorite in favorites limit: count %}
+      {% capture alt %}{{ favorite.title | escape }} ({{ favorite.year }}){% endcapture %}
+      <a href="{{ favorite.url }}">
+        <div class="watching item shadow">
+          <div class="meta-text">
+            {% if favorite.type == 'movie' %}
+              <div class="header">{{ favorite.title }}</div>
+              <div class="subheader">{{ favorite.year }}</div>
+            {% else %}
+              <div class="header">{{ favorite.name }}</div>
+            {% endif %}
+          </div>
+          {%- capture loadingStrategy -%}
+            {%- if loading -%}{{ loading }}{%- else -%}lazy{%- endif -%}
+          {%- endcapture -%}
+          <img src="https://coryd.dev/.netlify/images/?url={{ favorite.backdrop }}&fit=cover&w=256&h=144&fm=webp&q=75" alt="{{ alt }}" loading="{{ loadingStrategy }}" decoding="async" width="256" height="144" />
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

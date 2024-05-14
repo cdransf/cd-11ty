@@ -23,6 +23,7 @@
 @import url('./pages/links.css') layer(page);
 @import url('./pages/now.css') layer(page);
 @import url('./pages/post.css') layer(page);
+@import url('./pages/watching.css') layer(page);
 @import url('./pages/webrings.css') layer(page);
 
 /* component styles */

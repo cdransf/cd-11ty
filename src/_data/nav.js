@@ -21,7 +21,7 @@ export default async function () {
       { name: 'npm', url: 'https://www.npmjs.com/~cdransf', icon: 'brand-npm'},
       { name: 'Mastodon', url: 'https://social.lol/@cory', icon: 'brand-mastodon' },
       { name: 'ListenBrainz', url: 'https://listenbrainz.org/user/cdransf/', icon: 'brain' },
-      { name: 'Trakt', url: 'https://trakt.tv/users/cdransf', icon: 'device-tv' },
+      { name: 'Watching', url: '/watching', icon: 'device-tv' },
       { name: 'Instapaper', url: 'https://www.instapaper.com/p/coryd', icon: 'news' },
       { name: 'Books', url: '/books', icon: 'books' },
       { name: 'Webrings', url: '/webrings', icon: 'heart-handshake' },

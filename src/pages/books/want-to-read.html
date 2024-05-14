@@ -15,7 +15,7 @@ permalink: "/books/want-to-read/{{ pagination.pageNumber }}/index.html"
 <ul class="link-list reduced-spacing">
   {% for book in pagination.items %}
     <li>
-      <a href="{{ book.url }}" title="{{ book.title | escape }}">
+      <a href="{{ book.url }}">
         <strong>{{ book.title }}</strong>
       </a>
       {% if book.authors %}by {{ book.authors }}{% endif %}{% if book.categories %} • <em>{{ book.categories }}</em>{% endif %}

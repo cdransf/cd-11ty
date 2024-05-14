@@ -75,6 +75,8 @@
 /tags /search 301!
 /posts/0 /posts/ 200!
 /links/0 /links/ 200!
+/watching/movies-to-watch/0 /watching/movies-to-watch/ 200!
+/watching/shows-to-watch/0 /watching/shows-to-watch/ 200!
 /mastodon https://social.lol/@cory 301!
 /coffee https://www.buymeacoffee.com/cory 301!
 /speedlify https://speedlify.coryd.dev 301!
