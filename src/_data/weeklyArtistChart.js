@@ -37,9 +37,6 @@ const formatData = (data) => {
 export default async function() {
   try {
     const now = DateTime.now()
-
-    if (now.weekday !== 1) return // only run on monday
-
     const startOfWeek = now.minus({ days: now.weekday + 1 }).startOf('day')
     const endOfWeek = now.minus({ days: now.weekday - 7 }).endOf('day')
     const startOfWeekSeconds = startOfWeek.toSeconds()
@@ -51,6 +48,16 @@ export default async function() {
       .select('*')
       .order('date', { ascending: false })
       .limit(10);
+
+    if (now.weekday !== 1) return recentCharts.map(chart => {
+      const formattedData = formatData(JSON.parse(chart['data']))
+      return {
+        title: formattedData['content'],
+        description: formattedData['description'],
+        url: `https://coryd.dev/now?ts=${chart['week']}#artists`,
+        date: chart['date']
+      }
+    })
 
     if (recentCharts.some(chart => chart['week'] === weekNumber)) {
       return recentCharts.map(chart => {
