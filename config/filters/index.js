@@ -141,7 +141,7 @@ export default {
   // feeds
   normalizeEntries: (entries) => {
     const posts = []
-    if (!entries.length) return posts
+    if (!entries) return posts
     entries.forEach((entry) => {
       const dateKey = Object.keys(entry).find((key) => key.includes('date'))
       const date = new Date(entry[dateKey])
