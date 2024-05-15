@@ -64,7 +64,6 @@ layout: default
     <button class="small secondary" data-toggle="tracks-window">This week</button>
     <button class="small secondary" data-toggle="tracks-month">This month</button>
     <button class="small secondary" data-toggle="tracks-three-months">3 months</button>
-    <button class="small secondary" data-toggle="tracks-year">This year</button>
   </div>
 </div>
 <div id="tracks-recent">
@@ -78,9 +77,6 @@ layout: default
 </div>
 <div class="hidden" id="tracks-three-months">
   {% render "partials/now/track-chart.liquid", data:music.threeMonth.tracks, mostPlayed:music.threeMonth.tracks[0].plays %}
-</div>
-<div class="hidden" id="tracks-year">
-  {% render "partials/now/track-chart.liquid", data:music.year.tracks, mostPlayed:music.year.tracks[0].plays %}
 </div>
 {% render "partials/now/album-releases.liquid", albumReleases:albumReleases %}
 <a class="link-icon flex-centered" href="/books">
