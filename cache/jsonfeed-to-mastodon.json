@@ -13293,13 +13293,24 @@
   },
   "https://coryd.dev/now?ts=2024-20#artists": {
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTIwMjQtMjAjYXJ0aXN0cw==",
-    "title": "🎧: My top artists for the week: The National @ 33 plays, Elliott @ 13 plays, Oasis @ 10 plays, Deafheaven @ 6 plays, LCD Soundsystem @ 4 plays, Aesop Rock @ 1 play",
+    "title": "🎧: My top artists for the week: The National @ 33 plays, Elliott @ 13 plays, Oasis @ 10 plays, Defeated Sanity @ 7 plays, Deafheaven @ 6 plays, LCD Soundsystem @ 4 plays, Aesop Rock @ 1 play",
     "url": "https://coryd.dev/now?ts=2024-20#artists",
-    "content_text": "🎧: My top artists for the week: The National @ 33 plays, Elliott @ 13 plays, Oasis @ 10 plays, Deafheaven @ 6 plays, LCD Soundsystem @ 4 plays, Aesop Rock @ 1 play #Music https://coryd.dev/now?ts=2024-20#artists",
+    "content_text": "🎧: My top artists for the week: The National @ 33 plays, Elliott @ 13 plays, Oasis @ 10 plays, Defeated Sanity @ 7 plays, Deafheaven @ 6 plays, LCD Soundsystem @ 4 plays, Aesop Rock @ 1 play #Music https://coryd.dev/now?ts=2024-20#artists",
     "date_published": "Mon, 13 May 2024 00:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112435866769648108"
     ],
     "lastTootTimestamp": 1715635174159
+  },
+  "https://joe-steel.com/2024-05-14-Gemini-In-Gemini-Out.html": {
+    "id": "aHR0cHM6Ly9qb2Utc3RlZWwuY29tLzIwMjQtMDUtMTQtR2VtaW5pLUluLUdlbWluaS1PdXQuaHRtbA==",
+    "title": "🔗: Gemini In, Gemini Out via Joe Rosensteel",
+    "url": "https://joe-steel.com/2024-05-14-Gemini-In-Gemini-Out.html",
+    "content_text": "🔗: Gemini In, Gemini Out via Joe Rosensteel #Tech #AI https://joe-steel.com/2024-05-14-Gemini-In-Gemini-Out.html",
+    "date_published": "Wed, 15 May 2024 01:20:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112442693528785645"
+    ],
+    "lastTootTimestamp": 1715739342229
   }
 }
