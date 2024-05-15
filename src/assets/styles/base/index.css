@@ -322,7 +322,7 @@ nav .active svg {
 .brand-npm svg { stroke: var(--brand-npm) !important; }
 .brand-mastodon svg { stroke: var(--brand-mastodon) !important; }
 .brain svg { stroke: var(--brand-listenbrainz) !important; }
-.device-tv svg { stroke: var(--brand-trakt) !important; }
+.device-tv svg { stroke: var(--brand-tv) !important; }
 .news svg { stroke: var(--brand-instapaper) !important; }
 .books svg { stroke: var(--brand-books) !important; }
 .coffee svg { stroke: var(--brand-buy-me-a-coffee) !important; }
