@@ -13323,5 +13323,16 @@
       "https://social.lol/users/cory/statuses/112445950066979635"
     ],
     "lastTootTimestamp": 1715789033056
+  },
+  "https://coryd.dev/posts/2024/adventures-in-self-hosting-data/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9hZHZlbnR1cmVzLWluLXNlbGYtaG9zdGluZy1kYXRhLw==",
+    "title": "📝: Adventures in self-hosting data",
+    "url": "https://coryd.dev/posts/2024/adventures-in-self-hosting-data/",
+    "content_text": "📝: Adventures in self-hosting data #Tech #WebDev #Privacy #Plex #Music #MusicBrainz https://coryd.dev/posts/2024/adventures-in-self-hosting-data/",
+    "date_published": "Wed, 15 May 2024 19:31:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112446802538878114"
+    ],
+    "lastTootTimestamp": 1715802040785
   }
 }
