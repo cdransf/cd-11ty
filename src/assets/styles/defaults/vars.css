@@ -48,14 +48,14 @@
   --brand-npm: #cc3534;
   --brand-mastodon: #6364ff;
   --brand-listenbrainz: #e97941;
-  --brand-trakt: #ed1c24;
+  --brand-tv: #d63031;
   --brand-instapaper: var(--text-color);
-  --brand-books: #12c28e;
+  --brand-books: #10b582;
   --brand-buy-me-a-coffee: #40dca5;
   --brand-rss: #f26522;
-  --webrings: #ec8fd0;
-  --moon: #655ad2;
-  --sun: #ffa700;
+  --webrings: #e68abb;
+  --moon: #5a4ac4;
+  --sun: #ffb200;
 
   /* fonts */
   --font-mono: MonoLisa, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;
