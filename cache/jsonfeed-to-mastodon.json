@@ -13334,5 +13334,16 @@
       "https://social.lol/users/cory/statuses/112446802538878114"
     ],
     "lastTootTimestamp": 1715802040785
+  },
+  "https://coryd.dev/posts/2024/search-is-dead-long-live-curation/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9zZWFyY2gtaXMtZGVhZC1sb25nLWxpdmUtY3VyYXRpb24v",
+    "title": "📝: Search is dead — long live curation",
+    "url": "https://coryd.dev/posts/2024/search-is-dead-long-live-curation/",
+    "content_text": "📝: Search is dead — long live curation #Tech #AI https://coryd.dev/posts/2024/search-is-dead-long-live-curation/",
+    "date_published": "Wed, 15 May 2024 21:23:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112447058421528667"
+    ],
+    "lastTootTimestamp": 1715805945220
   }
 }
