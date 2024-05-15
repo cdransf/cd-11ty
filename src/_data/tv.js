@@ -139,7 +139,7 @@ export default async function () {
 
   const favoriteShows = shows.filter(show => show['favorite'])
   const collectedShows = shows.filter(show => show['collected'])
-  const toWatch = shows.filter(show => !show.episodes.some(episode => episode.last_watched_at)).sort((a, b) => a['title'].localeCompare(b['title']))
+  const toWatch = shows.map(show => ({...show, url: `https://www.themoviedb.org/tv/${show['tmdb_id']}`})).filter(show => !show.episodes.some(episode => episode.last_watched_at)).sort((a, b) => a['title'].localeCompare(b['title']))
 
   return {
     shows,
