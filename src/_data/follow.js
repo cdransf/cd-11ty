@@ -3,7 +3,7 @@ export default async function () {
   const feed = new ActivityFeed()
 
   feed.addSource('rss', '📝', 'https://coryd.dev/feeds/posts')
-  feed.addSource('rss', '🎥', 'https://coryd.dev/feeds/movies')
+  // feed.addSource('rss', '🎥', 'https://coryd.dev/feeds/movies')
   feed.addSource('rss', '📖', 'https://coryd.dev/feeds/books')
   feed.addSource('rss', '🔗', 'https://coryd.dev/feeds/links')
   feed.addSource('rss', '🎧', 'https://coryd.dev/feeds/weekly-artist-chart')

@@ -81,6 +81,7 @@ export default async function () {
           tmdbId: showTmdbId,
           collected,
           favorite,
+          dateAdded: lastWatchedAt,
           lastWatchedAt,
           episodes: []
         }
@@ -96,6 +97,7 @@ export default async function () {
         type: 'tv',
         image: `https://coryd.dev/media/shows/poster-${showTmdbId}.jpg`,
         backdrop: `https://coryd.dev/media/shows/backdrops/backdrop-${showTmdbId}.jpg`,
+        dateAdded: lastWatchedAt,
         lastWatchedAt
       })
     })

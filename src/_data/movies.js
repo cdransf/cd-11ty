@@ -47,6 +47,7 @@ export default async function () {
     const movie = {
       title: item['title'],
       lastWatched: item['last_watched'],
+      dateAdded: item['last_watched'],
       year: item['year'],
       url: `https://www.themoviedb.org/movie/${item['tmdb_id']}`,
       description: `<p>${item['title']} (${item['year']})</p><p>Watched at: ${DateTime.fromISO(item['last_watched'], { zone: 'utc' }).setZone('America/Los_Angeles').toFormat('MMMM d, yyyy, h:mma')}</p>`,
