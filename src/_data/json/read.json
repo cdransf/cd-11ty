@@ -10662,5 +10662,28 @@
     "thumbnail": "https://coryd.dev/media/books/1503639797-constant-disconnection.jpg",
     "language": "en",
     "link": "https://books.google.com/books/about/Constant_Disconnection.html?hl=&id=_NEY0AEACAAJ"
+  },
+  {
+    "isbn": "0-575-07438-8",
+    "dateStarted": "2024-05-15",
+    "status": "started",
+    "rating": "unrated",
+    "tags": [
+      "scifi"
+    ],
+    "title": "Pushing Ice",
+    "authors": [
+      "Alastair Reynolds"
+    ],
+    "publishedDate": "2005",
+    "description": "Some centuries from now, the exploration and exploitation of the Solar System is in full swing. On the cold edge of the system, Bella Lind, captain of the huge commercial spacecraft Rockhopper IV, helps fuel this new gold rush by attaching mass-driver motors to organic-rich water-ice comets to move them back to the inner worlds. Her crew are tough, blue-collar miners, engineers and demolition experts. Around Saturn, something inexplicable happens: one of the moons leaves its orbit and accelerates out of the Solar System. The icy mantle peels away to reveal that it was never a moon in the first place, just a parked spacecraft, millions of years old, that has now decided to move on. Rockhopper IV, trapped in the pull, is hurled across time and space into the deep, distant future, arriving in a vast, alien-constructed chamber. And the crew are not alone, for each chamber contains an alien culture dragged into this cosmic menagerie at the end of time. The crew of the Rockhopper IV know a lot about blowing up comets, but not much about first contact with ultra-advanced aliens. They have two things to worry about: can they (and their new alien allies) negotiate their way through each harrying contact? And can they assimilate the avalanche of knowledge about their own future - including all the glittering, dangerous technologies that are now theirs for the taking - without destroying themselves in the process?",
+    "pageCount": 457,
+    "printType": "BOOK",
+    "categories": [
+      "Human-alien encounters"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=1bElHAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Pushing_Ice.html?hl=&id=1bElHAAACAAJ"
   }
 ]
