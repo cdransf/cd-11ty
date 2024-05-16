@@ -6,8 +6,11 @@ const books = require('./json/read.json')
 export default async function () {
   return books.map(book => {
     let authors = ''
+    let date = book?.['dateAdded']
     if (book['authors']?.length > 1) authors = book['authors'].join(', ')
     if (book['authors']?.length === 1) authors = book['authors'][0]
+    if (book?.['dateStarted']) date = book['dateStarted']
+    if (book?.['dateFinished']) date = book['dateFinished']
 
     return {
       title: book['title'],
@@ -15,7 +18,7 @@ export default async function () {
       description: book['description'],
       image: encodeURIComponent(book['thumbnail'].replace('&edge=curl', '')),
       url: `https://openlibrary.org/isbn/${book['isbn']}`,
-      dateAdded: book?.['dateStarted'] || book?.['dateFinished'],
+      date,
       status: book['status'],
       tags: book['tags'],
       categories: book['categories']?.length > 1 ? book['categories'].join(', ') : book['categories']?.[0],

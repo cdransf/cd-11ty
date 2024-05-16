@@ -218,17 +218,17 @@ export default {
   calculatePlayPercentage: (plays, mostPlayed) => `${plays/mostPlayed * 100}%`,
   bookStatus: (books, status) => books.filter(book => book.status === status),
   bookFinishedYear: (books, year) => books.filter(book => {
-    if (book.status === 'finished' && book.dateAdded) return parseInt(book.dateAdded.split('-')[0]) === year
+    if (book.status === 'finished' && book.date) return parseInt(book.date.split('-')[0]) === year
     return ''
   }).sort((a, b) => {
-    const dateA = DateTime.fromISO(a.dateAdded)
-    const dateB = DateTime.fromISO(b.dateAdded)
+    const dateA = DateTime.fromISO(a.date)
+    const dateB = DateTime.fromISO(b.date)
     return dateB - dateA
   }),
   currentBookCount: (books) => {
     const year = DateTime.now().year
     return books.filter(book => {
-      if (book.status === 'finished' && book.dateAdded) return parseInt(book.dateAdded.split('-')[0]) === year
+      if (book.status === 'finished' && book.date) return parseInt(book.date.split('-')[0]) === year
       return ''
     }).length
   },
