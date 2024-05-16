@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "15.1.8",
+  "version": "15.1.9",
   "description": "The source for my personal site. Built using 11ty.",
   "type": "module",
   "scripts": {
