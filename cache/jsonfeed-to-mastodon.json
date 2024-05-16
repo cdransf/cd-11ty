@@ -13345,5 +13345,16 @@
       "https://social.lol/users/cory/statuses/112447058421528667"
     ],
     "lastTootTimestamp": 1715805945220
+  },
+  "https://openlibrary.org/isbn/0-575-07438-8": {
+    "id": "aHR0cHM6Ly9vcGVubGlicmFyeS5vcmcvaXNibi8wLTU3NS0wNzQzOC04",
+    "title": "📖: Pushing Ice",
+    "url": "https://openlibrary.org/isbn/0-575-07438-8",
+    "content_text": "📖: Pushing Ice #Books #NowReading #SciFi https://openlibrary.org/isbn/0-575-07438-8",
+    "date_published": "Wed, 15 May 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112448781731640908"
+    ],
+    "lastTootTimestamp": 1715832240855
   }
 }

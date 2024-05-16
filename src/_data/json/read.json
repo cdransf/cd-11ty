@@ -10330,12 +10330,12 @@
   {
     "isbn": "9781501182891",
     "dateAdded": "2024-05-03",
-    "status": "started",
+    "status": "finished",
     "rating": "unrated",
     "tags": [
-      "politics",
-      "economics",
-      "nonfiction"
+      "\"politics\"",
+      "\"economics\"",
+      "\"nonfiction\""
     ],
     "title": "Goliath",
     "authors": [
@@ -10351,7 +10351,8 @@
     "thumbnail": "https://coryd.dev/media/books/9781501182891-goliath.jpg",
     "language": "en",
     "link": "https://books.google.com/books/about/Goliath.html?hl=&id=mwL8DwAAQBAJ",
-    "dateStarted": "2024-05-04"
+    "dateStarted": "2024-05-04",
+    "dateFinished": "2024-05-16"
   },
   {
     "isbn": "9780306824098",
@@ -10381,7 +10382,7 @@
   {
     "isbn": "0807007935",
     "dateAdded": "2024-05-08",
-    "status": "want to read",
+    "status": "started",
     "rating": "unrated",
     "tags": [
       "tech",
@@ -10400,7 +10401,8 @@
     ],
     "thumbnail": "https://coryd.dev/media/books/0807007935-drive.jpg",
     "language": "en",
-    "link": "https://books.google.com/books/about/Drive.html?hl=&id=UMLQEAAAQBAJ"
+    "link": "https://books.google.com/books/about/Drive.html?hl=&id=UMLQEAAAQBAJ",
+    "dateStarted": "2024-05-16"
   },
   {
     "isbn": "1839762802",
