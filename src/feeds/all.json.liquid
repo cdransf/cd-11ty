@@ -1,13 +1,13 @@
 ---
 layout: null
 eleventyExcludeFromCollections: true
-permalink: /feeds/follow.json
+permalink: /feeds/all.json
 ---
 {% render "partials/feeds/json.liquid"
-  permalink:'/feeds/follow.json'
+  permalink:'/feeds/all.json'
   title:'Follow • Cory Dransfeldt'
-  data:collections.followContent
-  updated:collections.followContent[0].date
+  data:collections.allContent
+  updated:collections.allContent[0].date
   site:site
   tagMap:collections.tagMap
 %}

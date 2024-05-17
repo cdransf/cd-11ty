@@ -27,7 +27,7 @@ export const searchIndex = (collection) => {
   return searchIndex
 }
 
-export const followContent = (collection) => {
+export const allContent = (collection) => {
   const aggregateContent = []
   const collectionData = collection.getAll()[0]
   const { data } = collectionData
