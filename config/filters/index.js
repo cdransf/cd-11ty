@@ -206,8 +206,9 @@ export default {
       }
       if (item.type === 'book') {
         normalized['alt'] = `${item['title']} by ${item['authors']}`
-        normalized['subtext'] = `${item['percentage']} finished`
-        normalized['percentage'] = item['percentage']
+        normalized['title'] = `${item['title']} by ${item['authors']}`
+        normalized['rating'] = item['rating']
+        if (item['rating']) normalized['subtext'] = item['rating']
       }
       if (item.type === 'tv') {
         normalized['title'] = item['title']
