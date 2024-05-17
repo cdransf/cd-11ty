@@ -174,6 +174,7 @@ export default {
           content: entry?.description || entry?.data?.description,
           date,
           excerpt,
+          rating: entry?.rating || ''
         })
     })
     return posts
@@ -197,7 +198,12 @@ export default {
         normalized['alt'] = `${item['plays']} plays of ${item['title']}`
         normalized['subtext'] = `${item['plays']} plays`
       }
-      if (item.type === 'movie') normalized['alt'] = item['title']
+      if (item.type === 'movie') {
+        normalized['title'] = `${item['title']} (${item['year']})`
+        normalized['alt'] = item['title']
+        normalized['rating'] = item['rating']
+        normalized['subtext'] = item['rating']
+      }
       if (item.type === 'book') {
         normalized['alt'] = `${item['title']} by ${item['authors']}`
         normalized['subtext'] = `${item['percentage']} finished`
@@ -217,13 +223,14 @@ export default {
     }),
   calculatePlayPercentage: (plays, mostPlayed) => `${plays/mostPlayed * 100}%`,
   bookStatus: (books, status) => books.filter(book => book.status === status),
-  bookFinishedYear: (books, year) => books.filter(book => {
-    if (book.status === 'finished' && book.date) return parseInt(book.date.split('-')[0]) === year
-    return ''
-  }).sort((a, b) => {
+  bookSortDescending: (books) => books.sort((a, b) => {
     const dateA = DateTime.fromISO(a.date)
     const dateB = DateTime.fromISO(b.date)
     return dateB - dateA
+  }),
+  bookFinishedYear: (books, year) => books.filter(book => {
+    if (book.status === 'finished' && book.date) return parseInt(book.date.split('-')[0]) === year
+    return ''
   }),
   currentBookCount: (books) => {
     const year = DateTime.now().year

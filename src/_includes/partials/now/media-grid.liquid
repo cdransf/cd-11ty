@@ -3,7 +3,7 @@
   <div class="media-grid {% if shape == 'square' %}square{% else %}vertical{% endif %}">
     {% for item in media limit: count %}
       {% assign alt = item.alt | strip | escape %}
-      {% assign hasMeta = item.type != 'book' and item.type != 'movie' %}
+      {% assign hasMeta = item.type != 'book' %}
       <a href="{{ item.url | stripUtm }}" title="{{ alt }}">
         <div class="item-wrapper{% if hasMeta %} shadow{% endif %}">
           {% if hasMeta %}

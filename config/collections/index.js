@@ -45,12 +45,11 @@ export const followContent = (collection) => {
     if (!parsedDate.isValid) parsedDate = DateTime.fromFormat(date, 'dd-MM-yyyy')
     return parsedDate.isValid ? parsedDate.toISO() : null
   }
-
   const addContent = (items, icon, getTitle, getDate) => {
     if (items) {
       items.forEach(item => {
         const content = {
-          url: item.url.includes('http') ? item.url : `https://coryd.dev${item.url}`,
+          url: item.url?.includes('http') ? item.url : `https://coryd.dev${item.url}`,
           title: `${icon}: ${getTitle(item)}`
         }
         if (item.data?.link) content.url = item.data?.link
@@ -63,8 +62,8 @@ export const followContent = (collection) => {
 
   addContent(posts, '📝', item => item.data.title, item => item.data.date)
   addContent(links, '🔗', item => item.data.title, item => item.data.date)
-  addContent(books.filter(book => book.status === 'started'), '📖', item => item.title, item => item.date)
-  addContent(movies, '🎥', item => item.title, item => item.lastWatched)
+  addContent(books.filter(book => book.status === 'finished'), '📖', item => item.title, item => item.date)
+  addContent(movies, '🎥', item => `${item.title}${item.rating ? ' (' + item.rating + ')' : ''}`, item => item.lastWatched)
   addContent(weeklyArtistChart, '🎧', item => item.title, item => item.date)
 
   return aggregateContent.sort((a, b) => {

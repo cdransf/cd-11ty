@@ -22,6 +22,7 @@ export default async function () {
       status: book['status'],
       tags: book['tags'],
       categories: book['categories']?.length > 1 ? book['categories'].join(', ') : book['categories']?.[0],
+      rating: book['rating'] !== 'unrated' ? book['rating'] : '',
       type: 'book',
     }
   })

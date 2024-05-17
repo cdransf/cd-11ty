@@ -1,7 +1,10 @@
 {% capture alt %}{{ movie.title | escape }} ({{ movie.year }}){% endcapture %}
 <a href="{{ movie.url }}">
   <div class="watching hero shadow">
-    <span>{{ movie.title }} ({{ movie.year }})</span>
+    <div class="meta-text">
+      <div class="header">{{ movie.title }} ({{ movie.year }})</div>
+      <div class="subheader">Last watched @ {{ movie.dateAdded | date: "%B %e, %Y" }}</div>
+    </div>
     <img src="https://coryd.dev/.netlify/images/?url={{ movie.backdrop }}&fit=cover&w=1200&h=675&fm=webp&q=80" alt="{{ alt }}" loading="eager" decoding="async" width="1200" height="765" />
   </div>
 </a>

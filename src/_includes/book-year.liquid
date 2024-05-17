@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{%- assign bookData = books | bookStatus: 'finished' | bookFinishedYear: year -%}
+{%- assign bookData = books | bookStatus: 'finished' | bookFinishedYear: year | bookSortDescending -%}
 {%- capture currentYear -%}{% currentYear %}{%- endcapture -%}
 {%- assign yearString = year | append: '' -%}
 {%- assign currentYearString = currentYear | append: '' -%}

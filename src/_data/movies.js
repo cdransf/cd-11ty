@@ -22,7 +22,8 @@ const fetchAllMovies = async () => {
         year,
         collected,
         plays,
-        favorite
+        favorite,
+        rating
       `)
       .order('last_watched', { ascending: false })
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
@@ -51,12 +52,13 @@ export default async function () {
       year: item['year'],
       url: `https://www.themoviedb.org/movie/${item['tmdb_id']}`,
       description: `<p>${item['title']} (${item['year']})</p><p>Watched at: ${DateTime.fromISO(item['last_watched'], { zone: 'utc' }).setZone('America/Los_Angeles').toFormat('MMMM d, yyyy, h:mma')}</p>`,
-      type: 'movie',
       image: `https://coryd.dev/media/movies/poster-${item['tmdb_id']}.jpg`,
       backdrop: `https://coryd.dev/media/movies/backdrops/backdrop-${item['tmdb_id']}.jpg`,
       plays: item['plays'],
       collected: item['collected'],
       favorite: item['favorite'],
+      rating: item['rating'],
+      type: 'movie'
     }
     return movie
   }).filter(movie => watched ? movie['lastWatched'] : !movie['lastWatched'])

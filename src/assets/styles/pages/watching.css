@@ -7,13 +7,28 @@
     position: relative;
     overflow: hidden;
 
-    span {
-      color: white;
-      font-weight: var(--font-weight-bold);
-      position: absolute;
-      left: var(--sizing-sm);
-      bottom: var(--sizing-md);
-      z-index: 2;
+    div {
+      &.meta-text{
+        color: white;
+        position: absolute;
+        left: var(--sizing-sm);
+        bottom: var(--sizing-lg);
+        z-index: 2;
+
+        & .header {
+          font-weight: var(--font-weight-bold);
+        }
+
+        & .subheader {
+          font-size: var(--font-size-sm);
+        }
+
+        & .header,
+        & .subheader {
+          line-height: 1.5;
+          text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
+        }
+      }
     }
 
     & img {
