@@ -14,7 +14,7 @@ To simplify file uploads to B2, I mount the bucket for my site using [Mountain D
 
 My music charting feature relies on JSON maps of artist and album metadata — if a new artist or album isn't present in either, it assumes that the image it needs is in the format of `artist-name.jpg` or `artist-name-album-name.jpg`. I store the canonical copies of these image files in a separate GitHub repo and have Hazel watch the `artist` and `album` directories contained therein. It renames the files to match the aforementioned format, strips characters that typically break URLs and copies them to my mounted B2 Bucket.
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/albums-hazel-rule-example.png&w=1000&fm=webp&q=75" class="image-banner" alt="An example of my album art Hazel workflow" />
+<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/albums-hazel-rule-example.png&w=1000&fm=webp&q=80" class="image-banner" alt="An example of my album art Hazel workflow" />
 
 ---
 
