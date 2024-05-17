@@ -1,0 +1,13 @@
+---
+layout: null
+eleventyExcludeFromCollections: true
+permalink: /feeds/follow
+---
+{% render "partials/feeds/rss.liquid"
+  permalink:"/feeds/follow"
+  title:"Follow • Cory Dransfeldt"
+  description:"My activity from around the web (ok, mainly this site)."
+  data:collections.followContent
+  updated:collections.followContent[0].date
+  site:site
+%}

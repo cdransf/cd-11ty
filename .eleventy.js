@@ -9,7 +9,7 @@ import htmlmin from 'html-minifier-terser'
 
 import filters from './config/filters/index.js'
 import { minifyJsComponents } from './config/events/index.js'
-import { searchIndex, tagList, tagsSortedByCount, links, tagMap, booksToRead } from './config/collections/index.js'
+import { followContent, searchIndex, tagList, tagsSortedByCount, links, tagMap, booksToRead } from './config/collections/index.js'
 import { DateTime } from 'luxon'
 
 // load .env
@@ -74,6 +74,7 @@ export default async function (eleventyConfig) {
   })
 
   // collections
+  eleventyConfig.addCollection('followContent', followContent)
   eleventyConfig.addCollection('searchIndex', searchIndex)
   eleventyConfig.addCollection('tagList', tagList)
   eleventyConfig.addCollection('tagsSortedByCount', tagsSortedByCount)

@@ -65,7 +65,7 @@ export default async function () {
   const recentlyWatchedMovies = movies.filter(movie => movie['last_watched']).sort((a, b) => new Date(b['last_watched']) - new Date(a['last_watched'])).slice(0, 6)
 
   return {
-    movies,
+    movies: [...formatMovieData(movies), ...formatMovieData(movies, false)],
     watchHistory: formatMovieData(movies),
     recentlyWatched: formatMovieData(recentlyWatchedMovies),
     favorites: formatMovieData(favoriteMovies).sort((a, b) => a['title'].localeCompare(b['title'])),
