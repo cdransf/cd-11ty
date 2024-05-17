@@ -53,6 +53,8 @@ export const followContent = (collection) => {
           title: `${icon}: ${getTitle(item)}`
         }
         if (item.data?.link) content.url = item.data?.link
+        if (item.data?.description) content.description = item.data.description
+        if (item?.description) content.description = item.description
         const date = getDate ? parseDate(getDate(item)) : null
         if (date) content.date = date
         aggregateContent.push(content)
