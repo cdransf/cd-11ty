@@ -55,9 +55,9 @@ export default {
   },
   tagLookup: (url, tagMap) => {
     if (!url) return
-    if (url.includes('#artists')) return `#Music`
-    if (url.includes('openlibrary.org')) return `#Books #NowReading ${tagMap[url]}`.trim()
-    if (url.includes('themoviedb.org/movie')) return `#Movies #Watching`
+    if (url.includes('#artists')) return '#Music'
+    if (url.includes('openlibrary.org')) return '#Books #NowReading'
+    if (url.includes('themoviedb.org/movie')) return '#Movies #Watching'
     return tagMap[url] || ''
   },
 
