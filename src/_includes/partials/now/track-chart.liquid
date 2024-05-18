@@ -4,7 +4,7 @@
   {%- assign percentage = item.plays | calculatePlayPercentage: mostPlayed -%}
   <div class="item">
     <div class="presentation">
-      <div class="count">{{ forloop.index }}.</div>
+      <div class="count">{{ item.rank | formatNumber }}.</div>
       <div class="info">
         <div class="title">
           <a href="{{ item.url }}">{{ item.title }}</a>

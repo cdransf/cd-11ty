@@ -93,6 +93,11 @@ const aggregateData = (data, groupByField, groupByType, sort = true) => {
     aggregation[key].plays++
   })
   const aggregatedData = sort ? Object.values(aggregation).sort((a, b) => b.plays - a.plays) : Object.values(aggregation)
+
+  aggregatedData.forEach((item, index) => {
+    item.rank = index + 1
+  })
+
   return aggregatedData.filter(item => item.plays > 0)
 }
 

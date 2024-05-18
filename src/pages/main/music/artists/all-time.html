@@ -9,6 +9,7 @@ permalink: "/music/artists/all-time/{% if pagination.pageNumber > 0 %}{{ paginat
 <p><a class="link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
 <h2 class="page-header">{{ title }}</h2>
 <p>I've listened to <strong class="highlight-text">{{ music.allTime.artists.size }} artists</strong> and most of what I listen to is <strong class="highlight-text">{{ music.allTime.genres | genresToString: 5 }}</strong>.</p>
+<p><strong class="highlight-text">See my</strong> <a href="/music/albums/all-time/">albums</a> or <a href="/music/tracks/all-time/">tracks</a> for this period.</p>
 <hr class="large-spacing" />
 <div class="media-grid square">
   {% for item in pagination.items %}

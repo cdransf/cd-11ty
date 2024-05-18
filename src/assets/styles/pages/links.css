@@ -4,13 +4,16 @@
   grid-template-columns: repeat(1,minmax(0,1fr));
   margin-bottom: var(--sizing-base);
 
-  & .link {
+  & .link-box {
     border: 1px solid var(--gray-light);
     padding: var(--sizing-xs) var(--sizing-sm);
+    position: relative;
   }
 
   & button {
-    margin-left: var(--sizing-sm);
+    position: absolute;
+    bottom: var(--sizing-sm);
+    right: var(--sizing-sm);
   }
 }
 

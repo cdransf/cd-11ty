@@ -9,6 +9,7 @@ permalink: "/music/artists/this-week/{% if pagination.pageNumber > 0 %}{{ pagina
 <p><a class="link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
 <h2 class="page-header">{{ title }}</h2>
 <p>I've listened to <strong class="highlight-text">{{ music.week.artists.size }} artists</strong> this week and most of what I've listened to has been <strong class="highlight-text">{{ music.week.genres | genresToString: 5 }}</strong>.</p>
+<p><strong class="highlight-text">See my</strong> <a href="/music/albums/this-week/">albums</a> or <a href="/music/tracks/this-week/">tracks</a> for this period.</p>
 <hr class="large-spacing" />
 <div class="media-grid square">
   {% for item in pagination.items %}

@@ -10,6 +10,7 @@ permalink: "/music/index.html"
 <h2 class="page-header">{{ title }}</h2>
 <p>This is everything I've been listening to recently — it's collected in a database as I listen to it and displayed here. <a href="https://coryd.dev/posts/2024/improving-my-self-hosted-scrobbling-implementation/">You can read more about the technical details, if you'd like.</a></p>
 <p>I mostly listen to <strong class="highlight-text">{{ music.allTime.genres | genresToString: 5 }}</strong>. This week I've listened to <strong class="highlight-text">{{ music.week.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.week.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.week.tracks.size }} tracks</strong>.</p>
+{% render "partials/banners/rss.liquid", url: "https://feedpress.me/coryd-artist-charts", text: "I also have a feed of weekly artist charts I generate from this data" %}
 <div class="section-header-wrapper">
   <h2 id="artists" class="section-header reduced-margin flex-centered">
     {% tablericon "microphone-2" "Artists" %}
@@ -70,6 +71,7 @@ permalink: "/music/index.html"
     <button class="small secondary" data-toggle="tracks-window">This week</button>
     <button class="small secondary" data-toggle="tracks-month">This month</button>
     <button class="small secondary" data-toggle="tracks-three-months">3 months</button>
+    <button class="small secondary" data-toggle="tracks-all-time">All time</button>
   </div>
 </div>
 <div id="tracks-recent">
@@ -84,5 +86,9 @@ permalink: "/music/index.html"
 <div class="hidden" id="tracks-three-months">
   {% render "partials/now/track-chart.liquid", data:music.threeMonth.tracks, mostPlayed:music.threeMonth.tracks[0].plays %}
 </div>
+<div class="hidden" id="tracks-all-time">
+  {% render "partials/now/track-chart.liquid", data:music.allTime.tracks, mostPlayed:music.allTime.tracks[0].plays %}
+</div>
+<p><strong class="highlight-text">More:</strong> <a href="/music/tracks/this-week/">This week</a> • <a href="/music/tracks/this-month/">This month</a> • <a href="/music/tracks/three-months/">3 months</a> • <a href="/music/tracks/all-time/">All time</a></p>
 {% render "partials/now/album-releases.liquid", albumReleases:albumReleases %}
-<p class="text-small text-centered"><em>This page was last updated on {{ "now"  | date: "%B %-d, %-I:%M%p", "America/Los_Angeles" }}. It typically updates about once an hour.</em></p>
+<p class="explainer text-small text-centered"><em>This page was last updated on {{ "now" | date: "%B %-d, %-I:%M%p", "America/Los_Angeles" }}. It typically updates about once an hour.</em></p>

@@ -1,4 +1,6 @@
 .music-chart {
+  margin-bottom: var(--sizing-base);
+
   & .item {
     justify-content: space-between;
 

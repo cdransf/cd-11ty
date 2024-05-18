@@ -31,6 +31,7 @@ export default {
       lower: true,
     })
   },
+  formatNumber: (number) => number.toLocaleString('en-US'),
 
   // navigation
   isLinkActive: (category, page) => {

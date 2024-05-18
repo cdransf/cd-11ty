@@ -34,3 +34,4 @@ permalink: "/watching/index.html"
 </a>
 {% assign favoriteShows = tv.favorites | featuredWatching: 6 %}
 {% render "partials/watching/favorites-grid.liquid", favorites:favoriteShows, count: 6 %}
+<p class="explainer text-small text-centered"><em>This page was last updated on {{ "now" | date: "%B %-d, %-I:%M%p", "America/Los_Angeles" }}. It typically updates about once an hour.</em></p>

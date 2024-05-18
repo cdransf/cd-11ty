@@ -48,15 +48,18 @@
   --brand-npm: #cc3534;
   --brand-mastodon: #6364ff;
   --brand-listenbrainz: #e97941;
-  --brand-music: #00bcd4;
-  --brand-tv: #d63031;
+  --brand-music: #1e90ff;
+  --brand-tv: #ff4500;
+  --brand-books: #32cd32;
+  --brand-links: #9370db;
+  --brand-about: #ff6347;
+  --brand-search: #4682b4;
   --brand-instapaper: var(--text-color);
-  --brand-books: #10b582;
   --brand-buy-me-a-coffee: #40dca5;
   --brand-rss: #f26522;
-  --webrings: #e68abb;
-  --moon: #5a4ac4;
-  --sun: #ffb200;
+  --webrings: #da70d6;
+  --moon: #6a5acd;
+  --sun: #ffa500;
 
   /* fonts */
   --font-mono: MonoLisa, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;

@@ -1,18 +1,19 @@
 export default async function () {
   return {
     footer: [
+      { name: 'Now' },
       { name: 'Uses' },
       { name: 'Referrals' },
       { name: 'Blogroll' },
       { name: 'Speedlify' },
     ],
     menu: [
-      { name: 'Now' },
-      { name: 'About' },
-      { name: 'Links', icon: 'link' },
-      { name: 'Search', icon: 'search' },
+      { name: 'Music', url: '/music', icon: 'headphones' },
       { name: 'Watching', url: '/watching', icon: 'device-tv' },
       { name: 'Books', url: '/books', icon: 'books' },
+      { name: 'Links', icon: 'link' },
+      { name: 'About', url: '/about', icon: 'info-square' },
+      { name: 'Search', icon: 'search' },
       { name: 'Feeds', icon: 'rss' },
       { name: 'Mastodon', icon: 'brand-mastodon' },
     ],

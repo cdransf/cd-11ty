@@ -15,15 +15,13 @@ permalink: "/links/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | 
 <div class="link-grid">
   {% for link in pagination.items %}
   {% assign author = link.data.link | stripUtm | authorLookup %}
-  <div class="link">
+  <div class="link-box">
     <a href="{{ link.data.link }}" title="{{ link.data.title | escape }}">
       <strong>{{ link.data.title }}</strong>
     </a>
     {% if author %} via {{ author }}{% endif %}
-    <div class="flex-between">
-      {% render "partials/widgets/tags.liquid", tags:link.data.tags %}
-      {% render "partials/widgets/share-button.liquid", url:link.data.link, title:link.data.title, tagMap:collections.tagMap %}
-    </div>
+    {% render "partials/widgets/tags.liquid", tags:link.data.tags %}
+    {% render "partials/widgets/share-button.liquid", url:link.data.link, title:link.data.title, tagMap:collections.tagMap %}
   </div>
   {% endfor %}
 </div>

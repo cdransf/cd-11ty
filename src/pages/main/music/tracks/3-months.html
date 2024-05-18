@@ -9,13 +9,14 @@ permalink: "/music/tracks/three-months/{% if pagination.pageNumber > 0 %}{{ pagi
 <p><a class="link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
 <h2 class="page-header">{{ title }}</h2>
 <p>I've listened to <strong class="highlight-text">{{ music.threeMonth.tracks.size }} tracks</strong> over the last 3 months and most of what I've listened to has been <strong class="highlight-text">{{ music.threeMonth.genres | genresToString: 5 }}</strong>.</p>
+<p><strong class="highlight-text">See my</strong> <a href="/music/artists/three-months/">artists</a> or <a href="/music/albums/three-months/">albums</a> for this period.</p>
 <hr class="large-spacing" />
 <div class="music-chart">
   {% for item in pagination.items %}
   {%- assign percentage = item.plays | calculatePlayPercentage: music.threeMonth.tracks[0].plays -%}
   <div class="item">
     <div class="presentation">
-      <div class="count">{{ forloop.index }}.</div>
+      <div class="count">{{ item.rank | formatNumber }}.</div>
       <div class="info">
         <div class="title">
           <a href="{{ item.url }}">{{ item.title }}</a>
