@@ -13128,9 +13128,9 @@
   },
   "https://openlibrary.org/isbn/9781501182891": {
     "id": "aHR0cHM6Ly9vcGVubGlicmFyeS5vcmcvaXNibi85NzgxNTAxMTgyODkx",
-    "title": "📖: Goliath",
+    "title": "📖: Goliath (⭐️⭐️⭐️⭐️)",
     "url": "https://openlibrary.org/isbn/9781501182891",
-    "content_text": "📖: Goliath #Books #NowReading undefined https://openlibrary.org/isbn/9781501182891",
+    "content_text": "📖: Goliath (⭐️⭐️⭐️⭐️) #Books #NowReading https://openlibrary.org/isbn/9781501182891",
     "date_published": "Thu, 16 May 2024 00:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112386485783145916"
@@ -13359,10 +13359,10 @@
   },
   "https://openlibrary.org/isbn/0807007935": {
     "id": "aHR0cHM6Ly9vcGVubGlicmFyeS5vcmcvaXNibi8wODA3MDA3OTM1",
-    "title": "📖: Drive",
+    "title": "📖: Drive (⭐️⭐️⭐️⭐️)",
     "url": "https://openlibrary.org/isbn/0807007935",
-    "content_text": "📖: Drive #Books #NowReading #Tech #NonFiction https://openlibrary.org/isbn/0807007935",
-    "date_published": "Thu, 16 May 2024 00:00:00 GMT",
+    "content_text": "📖: Drive (⭐️⭐️⭐️⭐️) #Books #NowReading https://openlibrary.org/isbn/0807007935",
+    "date_published": "Sat, 18 May 2024 00:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112451611288696783"
     ],
@@ -13381,13 +13381,24 @@
   },
   "https://openlibrary.org/isbn/0316462845": {
     "id": "aHR0cHM6Ly9vcGVubGlicmFyeS5vcmcvaXNibi8wMzE2NDYyODQ1",
-    "title": "📖: Machine Vendetta",
+    "title": "📖: Machine Vendetta (⭐️⭐️⭐️⭐️)",
     "url": "https://openlibrary.org/isbn/0316462845",
-    "content_text": "📖: Machine Vendetta #Books #NowReading undefined https://openlibrary.org/isbn/0316462845",
+    "content_text": "📖: Machine Vendetta (⭐️⭐️⭐️⭐️) #Books #NowReading https://openlibrary.org/isbn/0316462845",
     "date_published": "Wed, 15 May 2024 00:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112458364539141769"
     ],
     "lastTootTimestamp": 1715978462887
+  },
+  "https://coryd.dev/posts/2024/delete-your-slack-workspace/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9kZWxldGUteW91ci1zbGFjay13b3Jrc3BhY2Uv",
+    "title": "📝: Delete your Slack workspace",
+    "url": "https://coryd.dev/posts/2024/delete-your-slack-workspace/",
+    "content_text": "📝: Delete your Slack workspace #Tech #AI #Privacy #Slack https://coryd.dev/posts/2024/delete-your-slack-workspace/",
+    "date_published": "Sat, 18 May 2024 19:20:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112463690425042421"
+    ],
+    "lastTootTimestamp": 1716059729435
   }
 }
