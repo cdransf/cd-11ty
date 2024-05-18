@@ -45,6 +45,7 @@ export default {
   science: "Science",
   'science-fiction': '#SciFi',
   scifi: '#SciFi',
+  slack: '#Slack',
   'social media': '#SocialMedia',
   sports: '#Sports',
   spotify: '#Music',
