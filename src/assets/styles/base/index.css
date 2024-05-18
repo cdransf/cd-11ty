@@ -165,6 +165,10 @@ h6 { font-size: var(--font-size-xs) }
 .section-header {
   margin: var(--sizing-3xl) 0 var(--sizing-lg);
 
+  &.reduced-margin {
+    margin: var(--sizing-md) 0 var(--sizing-lg);
+  }
+
   &.posts {
     margin: 0 0 var(--sizing-lg);
   }
@@ -175,13 +179,17 @@ h6 { font-size: var(--font-size-xs) }
 }
 
 .section-header-buttons {
-  margin: 0 0 var(--sizing-lg);
+  margin: var(--sizing-3xl) 0 var(--sizing-lg);
+
+  &.reduced-margin {
+    margin: var(--sizing-md) 0 var(--sizing-lg);
+  }
 
   & > button {
-    margin-bottom: var(--sizing-sm);
+    margin-bottom: var(--sizing-sm) !important;
 
     &:last-of-type {
-      margin-right: 0;
+      margin-right: 0 !important;
     }
   }
 }
@@ -322,6 +330,7 @@ nav .active svg {
 .brand-npm svg { stroke: var(--brand-npm) !important; }
 .brand-mastodon svg { stroke: var(--brand-mastodon) !important; }
 .brain svg { stroke: var(--brand-listenbrainz) !important; }
+.headphones svg { stroke: var(--brand-music) !important; }
 .device-tv svg { stroke: var(--brand-tv) !important; }
 .news svg { stroke: var(--brand-instapaper) !important; }
 .books svg { stroke: var(--brand-books) !important; }
@@ -614,14 +623,6 @@ li {
 
   .section-header-wrapper {
     flex-direction: row;
-  }
-
-  .section-header-buttons {
-    margin: var(--sizing-3xl) 0 var(--sizing-lg);
-
-    & > button {
-      margin-bottom: 0;
-    }
   }
 
   article {

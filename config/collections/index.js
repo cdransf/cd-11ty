@@ -64,7 +64,7 @@ export const allContent = (collection) => {
 
   addContent(posts, '📝', item => item.data.title, item => item.data.date)
   addContent(links, '🔗', item => item.data.title, item => item.data.date)
-  addContent(books.filter(book => book.status === 'finished'), '📖', item => item.title, item => item.date)
+  addContent(books.filter(book => book.status === 'finished'), '📖', item => `${item.title}${item.rating ? ' (' + item.rating + ')' : ''}`, item => item.date)
   addContent(movies, '🎥', item => `${item.title}${item.rating ? ' (' + item.rating + ')' : ''}`, item => item.lastWatched)
   addContent(weeklyArtistChart, '🎧', item => item.title, item => item.date)
 

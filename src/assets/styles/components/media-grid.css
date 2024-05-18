@@ -6,6 +6,7 @@
 .media-grid {
   display: grid;
   gap: var(--sizing-sm);
+  margin-bottom: var(--sizing-base);
 
   &.square {
     grid-template-columns: var(--grid-square);

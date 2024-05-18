@@ -5,7 +5,7 @@ pagination:
   data: movies.toWatch
   alias: movies
   size: 30
-permalink: "/watching/movies-to-watch/{{ pagination.pageNumber }}/index.html"
+permalink: "/watching/movies-to-watch/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 ---
 <p><a class="link-icon flex-centered" href="/watching">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
 {% if pagination.pageNumber == 0 %}

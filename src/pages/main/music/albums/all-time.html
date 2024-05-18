@@ -1,0 +1,27 @@
+---
+title: Albums • all time
+layout: default
+pagination:
+  data: music.allTime.albums
+  size: 24
+permalink: "/music/albums/all-time/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
+---
+<p><a class="link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
+<h2 class="page-header">{{ title }}</h2>
+<p>I've listened to <strong class="highlight-text">{{ music.allTime.albums.size }} albums</strong> and most of what I listen to is <strong class="highlight-text">{{ music.allTime.genres | genresToString: 5 }}</strong>.</p>
+<hr class="large-spacing" />
+<div class="media-grid square">
+  {% for item in pagination.items %}
+  {% assign alt = item.alt | strip | escape %}
+  <a href="{{ item.url | stripUtm }}" title="{{ alt }}">
+    <div class="item-wrapper shadow">
+      <div class="meta-text">
+          <div class="header">{{ item.title }}</div>
+          <div class="subheader">{{ item.plays }} plays</div>
+      </div>
+      <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=240&h=240&fm=webp&q=80"{% if alt %} alt="{{ alt }}"{% endif %} loading="eager" decoding="async" width="240" height="240" />
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% render "partials/widgets/paginator.liquid", pagination:pagination %}

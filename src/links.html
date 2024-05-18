@@ -4,6 +4,7 @@ layout: default
 pagination:
   data: collections.links
   size: 30
+permalink: "/links/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 ---
 {% if pagination.pageNumber == 0 %}
 <h2 class="page-header">Links</h2>

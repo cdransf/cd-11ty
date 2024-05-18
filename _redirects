@@ -71,11 +71,6 @@
 /assets/img/feed-icon.png /assets/icons/apple-touch-icon.png 200!
 
 # general
-/posts/0/ /posts/ 200!
-/links/0/ /links/ 200!
-/watching/movies-to-watch/ /watching/movies-to-watch/0/ 200!
-/watching/shows-to-watch/ /watching/shows-to-watch/0/ 200!
-/books/want-to-read/ /books/want-to-read/0/ 200!
 /articles/ / 301!
 /tags /search 301!
 /mastodon https://social.lol/@cory 301!

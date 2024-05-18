@@ -1,0 +1,30 @@
+---
+title: Artists • all time
+layout: default
+pagination:
+  data: music.allTime.tracks
+  size: 50
+permalink: "/music/tracks/all-time/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
+---
+<p><a class="link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
+<h2 class="page-header">{{ title }}</h2>
+<p>I've listened to <strong class="highlight-text">{{ music.allTime.tracks.size }} tracks</strong> and most of what I've listened to has been <strong class="highlight-text">{{ music.allTime.genres | genresToString: 5 }}</strong>.</p>
+<hr class="large-spacing" />
+<div class="music-chart">
+  {% for item in pagination.items %}
+  {%- assign percentage = item.plays | calculatePlayPercentage: music.allTime.tracks[0].plays -%}
+  <div class="item">
+    <div class="presentation">
+      <div class="count">{{ forloop.index }}.</div>
+      <div class="info">
+        <div class="title">
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        </div>
+        <div class="subtext">{{ item.artist }} • {{ item.plays }} plays</div>
+      </div>
+    </div>
+    {% render "partials/now/progress-bar.liquid", percentage:percentage %}
+  </div>
+  {% endfor %}
+</div>
+{% render "partials/widgets/paginator.liquid", pagination:pagination %}

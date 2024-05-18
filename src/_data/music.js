@@ -71,7 +71,8 @@ const aggregateData = (data, groupByField, groupByType, sort = true) => {
           url: item['albums']?.mbid ? `https://musicbrainz.org/release/${item['albums'].mbid}` : `https://musicbrainz.org/search?query=${encodeURIComponent(item['album_name'])}&type=release`,
           image: item['albums']?.image || '',
           timestamp: item['listened_at'],
-          type: groupByType
+          type: groupByType,
+          genre: item['artists']?.genre || 'Unknown'
         }
       } else {
         aggregation[key] = {
@@ -80,7 +81,8 @@ const aggregateData = (data, groupByField, groupByType, sort = true) => {
           mbid: item[groupByType]?.mbid || '',
           url: item[groupByType]?.mbid ? `https://musicbrainz.org/${groupByType === 'albums' ? 'release' : 'artist'}/${item[groupByType].mbid}` : `https://musicbrainz.org/search?query=${encodeURIComponent(item[groupByField])}&type=${groupByType === 'albums' ? 'release' : 'artist'}`,
           image: item[groupByType]?.image || '',
-          type: groupByType
+          type: groupByType,
+          genre: item['artists']?.genre || 'Unknown'
         }
       }
       if (
@@ -92,6 +94,18 @@ const aggregateData = (data, groupByField, groupByType, sort = true) => {
   })
   const aggregatedData = sort ? Object.values(aggregation).sort((a, b) => b.plays - a.plays) : Object.values(aggregation)
   return aggregatedData.filter(item => item.plays > 0)
+}
+
+const aggregateGenres = (data) => {
+  const genreAggregation = {}
+  data.forEach(item => {
+    const genre = item.artists.genre
+    if (!genreAggregation[genre]) {
+      genreAggregation[genre] = { genre, plays: 0 }
+    }
+    genreAggregation[genre].plays++
+  })
+  return Object.values(genreAggregation).sort((a, b) => b.plays - a.plays)
 }
 
 export default async function() {
@@ -108,7 +122,7 @@ export default async function() {
     album_name,
     album_key,
     listened_at,
-    artists (mbid, image),
+    artists (mbid, image, genre),
     albums (mbid, image)
   `
 
@@ -117,7 +131,8 @@ export default async function() {
     results[period] = {
       artists: aggregateData(periodData, 'artist_name', 'artists'),
       albums: aggregateData(periodData, 'album_name', 'albums'),
-      tracks: aggregateData(periodData, 'track_name', 'track')
+      tracks: aggregateData(periodData, 'track_name', 'track'),
+      genres: aggregateGenres(periodData)
     }
   }
 
@@ -126,7 +141,8 @@ export default async function() {
   results['allTime'] = {
     artists: aggregateData(allTimeData, 'artist_name', 'artists'),
     albums: aggregateData(allTimeData, 'album_name', 'albums'),
-    tracks: aggregateData(allTimeData, 'track_name', 'track')
+    tracks: aggregateData(allTimeData, 'track_name', 'track'),
+    genres: aggregateGenres(allTimeData)
   }
 
   const recentData = await fetchDataForPeriod(DateTime.now().minus({ days: 7 }), selectFields, 'listens')
@@ -136,6 +152,7 @@ export default async function() {
     albums: aggregateData(recentData, 'album_name', 'albums'),
     tracks: aggregateData(recentData, 'track_name', 'track'),
     tracksChronological: aggregateData(recentData, 'track_name', 'track', false),
+    genres: aggregateGenres(recentData)
   }
   results['nowPlaying'] = results['recent']['tracksChronological'][0]
 

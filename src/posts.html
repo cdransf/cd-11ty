@@ -6,6 +6,7 @@ pagination:
   size: 8
   reverse: true
   alias: posts
+permalink: "/posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 ---
 <div class="posts-wrapper">
   {% for post in pagination.items %}

@@ -222,6 +222,14 @@ export default {
       return normalized
     }),
   calculatePlayPercentage: (plays, mostPlayed) => `${plays/mostPlayed * 100}%`,
+  genresToString: (genres, count = 10) => {
+    const genreData = genres.slice(0, count)
+    if (genreData.length === 0) return ''
+    if (genreData.length === 1) return genreData[0].genre
+    const allButLast = genreData.slice(0, -1).map(g => g.genre).join(', ')
+    const last = genreData[genreData.length - 1].genre
+    return `${allButLast} and ${last}`
+  },
   bookStatus: (books, status) => books.filter(book => book.status === status),
   bookSortDescending: (books) => books.sort((a, b) => {
     const dateA = DateTime.fromISO(a.date)
