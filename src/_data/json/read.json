@@ -10386,7 +10386,7 @@
   {
     "isbn": "1839762802",
     "dateAdded": "2024-05-08",
-    "status": "want to read",
+    "status": "started",
     "rating": "unrated",
     "tags": [
       "tech",
@@ -10405,7 +10405,8 @@
     ],
     "thumbnail": "https://coryd.dev/media/books/1839762802-black-meme.jpg",
     "language": "en",
-    "link": "https://books.google.com/books/about/Black_Meme.html?hl=&id=GdLPEAAAQBAJ"
+    "link": "https://books.google.com/books/about/Black_Meme.html?hl=&id=GdLPEAAAQBAJ",
+    "dateStarted": "2024-05-18"
   },
   {
     "isbn": "0262548038",
