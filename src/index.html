@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% render "partials/home/now.liquid" status:status, artists:music.week.artists, books:books, tv:tv %}
+{% render "partials/home/status.liquid" status:status, artists:music.week.artists, books:books, tv:tv %}
 {% render "partials/home/posts.liquid" icon: "star", title: "Featured", postData:collections.posts, postType: "featured" %}
 {% assign posts = collections.posts | reverse %}
 {% render "partials/home/posts.liquid" icon: "clock-2", title: "Recent posts", postData:posts %}

@@ -1,0 +1,8 @@
+{%- assign artist = artists | first -%}
+{%- assign book = books | bookStatus: 'started' | reverse | first -%}
+{%- assign show = tv.recentlyWatched | first -%}
+<div class="now-topper">
+  <p><strong class="highlight-text">I'm a software developer based in Camarillo, California</strong>. I enjoy hanging out with my beautiful family and 3 rescue dogs, technology, automation, <a href="https://coryd.dev/music">music</a>, writing, <a href="https://coryd.dev/books">reading</a>, <a href="https://coryd.dev/watching#tv">tv</a> and <a href="https://coryd.dev/watching#movies">movies</a>. Lately I've been listening to a lot of <strong class="highlight-text">{{ artist.title }}</strong>, reading <strong class="highlight-text">{{ book.title }}</strong> and watching <strong class="highlight-text">{{ show.name }}</strong>.</p>
+  {% render "partials/now/status.liquid", status:status %}
+  {% render "partials/widgets/now-playing.liquid" %}
+</div>
