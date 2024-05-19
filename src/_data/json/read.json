@@ -10669,5 +10669,29 @@
     "thumbnail": "https://coryd.dev/media/books/0-575-07438-8-pushing-ice.jpg",
     "language": "en",
     "link": "https://books.google.com/books/about/Pushing_Ice.html?hl=&id=1bElHAAACAAJ"
+  },
+  {
+    "isbn": "0385471998",
+    "dateAdded": "2024-05-19",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Come As You Are",
+    "authors": [
+      "Michael Azerrad"
+    ],
+    "publishedDate": "1993-09-01",
+    "description": "“Amazingly raw and candid . . . Come As You Are is as good as rock bios get” —Billboard Nirvana came out of nowhere in 1991 to sell nearly five million copies of their landmark album Nevermind, whose thunderous sound and indelible melodies embodied all the confusion, frustration, and passion of the emerging Generation X. Come As You Are is the close-up, intimate story of Nirvana—the only book with exclusive in-depth interviews with bandmembers Kurt Cobain, Krist Noveselic, and Dave Grohl, as well as friends, relatives, former bandmembers, and associates—now updated to include a final chapter detailing the last year of Kurt Cobain's life, before his tragic suicide in April 1994.",
+    "pageCount": 368,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=ZEI_X-bDWQwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Come_As_You_Are.html?hl=&id=ZEI_X-bDWQwC"
   }
 ]
