@@ -18,12 +18,12 @@ tags: ['books', 'music', 'development', 'Eleventy']
   {% tablericon "books" "Favorite books" %}
   Favorite books
 </h2>
-{% render "partials/now/media-grid.liquid", data:roundups['2023'].books, shape: "vertical", count: 6 %}
+{% render "partials/media/grid.liquid", data:roundups['2023'].books, shape: "vertical", count: 6 %}
 <h2 class="section-header flex-centered">
   {% tablericon "vinyl" "Favorite albums" %}
   Favorite books
 </h2>
-{% render "partials/now/media-grid.liquid", data:roundups['2023'].albums, shape: "square", count: 8 %}
+{% render "partials/media/grid.liquid", data:roundups['2023'].albums, shape: "square", count: 8 %}
 
 <p><strong><a href="https://coryd.dev">I wrote some things:</a></strong></p>
 <ul>

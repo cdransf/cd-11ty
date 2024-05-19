@@ -24,16 +24,16 @@ permalink: "/music/index.html"
   </div>
 </div>
 <div id="artists-window">
-  {% render "partials/now/media-grid.liquid", data:music.week.artists, shape: "square", count: 8, loading: "eager" %}
+  {% render "partials/media/grid.liquid", data:music.week.artists, shape: "square", count: 8, loading: "eager" %}
 </div>
 <div class="hidden" id="artists-month">
-  {% render "partials/now/media-grid.liquid", data:music.month.artists, shape: "square", count: 8 %}
+  {% render "partials/media/grid.liquid", data:music.month.artists, shape: "square", count: 8 %}
 </div>
 <div class="hidden" id="artists-three-months">
-  {% render "partials/now/media-grid.liquid", data:music.threeMonth.artists, shape: "square", count: 8 %}
+  {% render "partials/media/grid.liquid", data:music.threeMonth.artists, shape: "square", count: 8 %}
 </div>
 <div class="hidden" id="artists-all-time">
-  {% render "partials/now/media-grid.liquid", data:music.allTime.artists, shape: "square", count: 8 %}
+  {% render "partials/media/grid.liquid", data:music.allTime.artists, shape: "square", count: 8 %}
 </div>
 <p><strong class="highlight-text">More:</strong> <a href="/music/artists/this-week/">This week</a> • <a href="/music/artists/this-month/">This month</a> • <a href="/music/artists/three-months/">3 months</a> • <a href="/music/artists/all-time/">All time</a></p>
 <div class="section-header-wrapper">
@@ -49,16 +49,16 @@ permalink: "/music/index.html"
   </div>
 </div>
 <div id="albums-window">
-  {% render "partials/now/media-grid.liquid", data:music.week.albums, shape: "square", count: 8 %}
+  {% render "partials/media/grid.liquid", data:music.week.albums, shape: "square", count: 8 %}
 </div>
 <div class="hidden" id="albums-month">
-  {% render "partials/now/media-grid.liquid", data:music.month.albums, shape: "square", count: 8 %}
+  {% render "partials/media/grid.liquid", data:music.month.albums, shape: "square", count: 8 %}
 </div>
 <div class="hidden" id="albums-three-months">
-  {% render "partials/now/media-grid.liquid", data:music.threeMonth.albums, shape: "square", count: 8 %}
+  {% render "partials/media/grid.liquid", data:music.threeMonth.albums, shape: "square", count: 8 %}
 </div>
 <div class="hidden" id="albums-all-time">
-  {% render "partials/now/media-grid.liquid", data:music.allTime.albums, shape: "square", count: 8 %}
+  {% render "partials/media/grid.liquid", data:music.allTime.albums, shape: "square", count: 8 %}
 </div>
 <p><strong class="highlight-text">More:</strong> <a href="/music/albums/this-week/">This week</a> • <a href="/music/albums/this-month/">This month</a> • <a href="/music/albums/three-months/">3 months</a> • <a href="/music/albums/all-time/">All time</a></p>
 <div class="section-header-wrapper">
@@ -75,20 +75,20 @@ permalink: "/music/index.html"
   </div>
 </div>
 <div id="tracks-recent">
-  {% render "partials/now/tracks-recent.liquid", data:music.recent.tracksChronological %}
+  {% render "partials/media/tracks-recent.liquid", data:music.recent.tracksChronological %}
 </div>
 <div class="hidden" id="tracks-window">
-  {% render "partials/now/track-chart.liquid", data:music.week.tracks, mostPlayed:music.week.tracks[0].plays %}
+  {% render "partials/media/track-chart.liquid", data:music.week.tracks, mostPlayed:music.week.tracks[0].plays %}
 </div>
 <div class="hidden" id="tracks-month">
-  {% render "partials/now/track-chart.liquid", data:music.month.tracks, mostPlayed:music.month.tracks[0].plays %}
+  {% render "partials/media/track-chart.liquid", data:music.month.tracks, mostPlayed:music.month.tracks[0].plays %}
 </div>
 <div class="hidden" id="tracks-three-months">
-  {% render "partials/now/track-chart.liquid", data:music.threeMonth.tracks, mostPlayed:music.threeMonth.tracks[0].plays %}
+  {% render "partials/media/track-chart.liquid", data:music.threeMonth.tracks, mostPlayed:music.threeMonth.tracks[0].plays %}
 </div>
 <div class="hidden" id="tracks-all-time">
-  {% render "partials/now/track-chart.liquid", data:music.allTime.tracks, mostPlayed:music.allTime.tracks[0].plays %}
+  {% render "partials/media/track-chart.liquid", data:music.allTime.tracks, mostPlayed:music.allTime.tracks[0].plays %}
 </div>
 <p><strong class="highlight-text">More:</strong> <a href="/music/tracks/this-week/">This week</a> • <a href="/music/tracks/this-month/">This month</a> • <a href="/music/tracks/three-months/">3 months</a> • <a href="/music/tracks/all-time/">All time</a></p>
-{% render "partials/now/album-releases.liquid", albumReleases:albumReleases %}
+{% render "partials/media/album-releases.liquid", albumReleases:albumReleases %}
 <p class="explainer text-small text-centered"><em>This page was last updated on {{ "now" | date: "%B %-d, %-I:%M%p", "America/Los_Angeles" }}. It typically updates once an hour.</em></p>

@@ -14,4 +14,4 @@ layout: default
 <p>I finished <strong class="highlight-text">{{ bookData.size }} books</strong> in {{ year }}</p>
 {% endif %}
 <hr class="large-spacing" />
-{% render "partials/now/media-grid.liquid", data:bookData, shape: "vertical", count: 200, loading: "eager" %}
+{% render "partials/media/grid.liquid", data:bookData, shape: "vertical", count: 200, loading: "eager" %}

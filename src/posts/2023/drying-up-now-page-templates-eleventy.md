@@ -119,7 +119,7 @@ Now, leveraging this looks like the following:
 {% raw %}
 
 ```liquid
-{% render "partials/now/media-grid.liquid", data:artists, icon: "microphone-2", title: "Artists", shape: "square", count: 8, loading: 'eager' %}
+{% render "partials/media/grid.liquid", data:artists, icon: "microphone-2", title: "Artists", shape: "square", count: 8, loading: 'eager' %}
 ```
 
 {% endraw %}
@@ -134,13 +134,13 @@ layout: main
 ---
 {% render "partials/header.liquid", meta: meta, page: page, nav: nav %}
 {{ content }}
-{% render "partials/now/media-grid.liquid", data:artists, icon: "microphone-2", title: "Artists", shape: "square", count: 8, loading: 'eager' %}
-{% render "partials/now/media-grid.liquid", data:albums, icon: "vinyl", title: "Albums", shape: "square", count: 8, loading: 'lazy' %}
-{% render "partials/now/album-releases.liquid", albumReleases:albumReleases %}
-{% render "partials/now/media-grid.liquid", data:books, icon: "books", title: "Books", shape: "vertical", count: 6, loading: 'lazy' %}
+{% render "partials/media/grid.liquid", data:artists, icon: "microphone-2", title: "Artists", shape: "square", count: 8, loading: 'eager' %}
+{% render "partials/media/grid.liquid", data:albums, icon: "vinyl", title: "Albums", shape: "square", count: 8, loading: 'lazy' %}
+{% render "partials/media/album-releases.liquid", albumReleases:albumReleases %}
+{% render "partials/media/grid.liquid", data:books, icon: "books", title: "Books", shape: "vertical", count: 6, loading: 'lazy' %}
 {% render "partials/now/links.liquid", links:links %}
-{% render "partials/now/media-grid.liquid", data:movies, icon: "movie", title: "Movies", shape: "vertical", count: 6, loading: 'lazy' %}
-{% render "partials/now/media-grid.liquid", data:tv, icon: "device-tv", title: "TV", shape: "vertical", count: 6, loading: 'lazy' %}
+{% render "partials/media/grid.liquid", data:movies, icon: "movie", title: "Movies", shape: "vertical", count: 6, loading: 'lazy' %}
+{% render "partials/media/grid.liquid", data:tv, icon: "device-tv", title: "TV", shape: "vertical", count: 6, loading: 'lazy' %}
 <p class="text-xs text-centered pt-6">This is a
   <a href="https://nownownow.com/about">now page</a>, and if you have your own site,
   <a href="https://nownownow.com/about">you should make one too</a>.</p>

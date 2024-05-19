@@ -12,12 +12,12 @@ permalink: "/watching/index.html"
   {% tablericon "movie" "Recent movies" %}
   Recent movies
 </h2>
-{% render "partials/now/media-grid.liquid", data:movies.recentlyWatched, shape: "vertical", count: 6 %}
+{% render "partials/media/grid.liquid", data:movies.recentlyWatched, shape: "vertical", count: 6 %}
 <h2 id="tv" class="section-header flex-centered">
   {% tablericon "device-tv" "Recent shows" %}
   Recent shows
 </h2>
-{% render "partials/now/media-grid.liquid", data:tv.recentlyWatched, shape: "vertical", count: 6 %}
+{% render "partials/media/grid.liquid", data:tv.recentlyWatched, shape: "vertical", count: 6 %}
 <a class="link-icon flex-centered" href="/watching/favorite-movies">
   <h2 class="section-header flex-centered">
     {% tablericon "star" "Favorite movies" %}

@@ -24,7 +24,7 @@ permalink: "/music/tracks/this-week/{% if pagination.pageNumber > 0 %}{{ paginat
         <div class="subtext">{{ item.artist }} • {{ item.plays }} plays</div>
       </div>
     </div>
-    {% render "partials/now/progress-bar.liquid", percentage:percentage %}
+    {% render "partials/media/progress-bar.liquid", percentage:percentage %}
   </div>
   {% endfor %}
 </div>
