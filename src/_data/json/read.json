@@ -10693,5 +10693,29 @@
     "thumbnail": "https://books.google.com/books/content?id=ZEI_X-bDWQwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=512",
     "language": "en",
     "link": "https://books.google.com/books/about/Come_As_You_Are.html?hl=&id=ZEI_X-bDWQwC"
+  },
+  {
+    "isbn": "0306924595",
+    "dateAdded": "2024-05-19",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Punk Paradox",
+    "authors": [
+      "Greg Graffin"
+    ],
+    "publishedDate": "2023-11-07",
+    "description": "A historical memoir and cultural criticism of punk rock's evolution, by the legendary singer-songwriter of Bad Religion Greg Graffin is the lead vocalist and songwriter of Bad Religion, recently described as \"America's most significant punk band.\" Since its inception in Los Angeles in 1980, Bad Religion has produced 18 studio albums, become a long-running global touring powerhouse, and has established a durable legacy as one of the most influential punk rock bands of all time. Punk Paradox is Graffin's life narrative before and during L.A. punk's early years, detailing his observations on the genre's explosive growth and his band's steady rise in importance. The book begins by exploring Graffin's Midwestern roots and his life-changing move to Southern California in the mid-'70s. Swept up into the burgeoning punk scene in the exhilarating and often-violent streets of Los Angeles, Graffin and his friends formed Bad Religion, built a fanbase, and became a touring institution. All these activities took place in parallel with Graffin's never ceasing quest for intellectual enlightenment. Despite the demands of global tours, recording sessions, and dedication to songwriting, the author also balanced a budding academic career. In so doing, he managed to reconcile an improbable double-life as an iconic punk rock front man and University Lecturer in evolution. Graffin's unique experiences mirror the paradoxical elements that define the punk genre--the pop influence, the quest for society's betterment, music's unifying power--all of which are prime ingredients in its surprising endurance. Fittingly, this book argues against the traditional narrative of the popular perception of punk. As Bad Religion changed from year to year, the spirit of punk--and its sonic significance--lived on while Graffin was ever willing to challenge convention, debunk mythology, and liberate listeners from the chains of indoctrination. As insightful as it is exciting, this thought-provoking memoir provides both a fly on the wall history of the punk scene and astute commentary on its endurance and evolution.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=qi66zwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/Punk_Paradox.html?hl=&id=qi66zwEACAAJ"
   }
 ]
