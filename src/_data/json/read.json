@@ -10334,7 +10334,7 @@
   {
     "isbn": "9780306824098",
     "dateAdded": "2024-05-04",
-    "status": "want to read",
+    "status": "started",
     "rating": "unrated",
     "tags": [
       "music",
@@ -10354,7 +10354,8 @@
     ],
     "thumbnail": "https://coryd.dev/media/books/9780306824098-under-the-big-black-sun.jpg",
     "language": "en",
-    "link": "https://play.google.com/store/books/details?id=O0EoCwAAQBAJ"
+    "link": "https://play.google.com/store/books/details?id=O0EoCwAAQBAJ",
+    "dateStarted": "2024-05-19"
   },
   {
     "isbn": "0807007935",
