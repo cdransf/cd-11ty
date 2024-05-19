@@ -13433,5 +13433,16 @@
       "https://social.lol/users/cory/statuses/112464524447203970"
     ],
     "lastTootTimestamp": 1716072455634
+  },
+  "https://openlibrary.org/isbn/1839762802": {
+    "id": "aHR0cHM6Ly9vcGVubGlicmFyeS5vcmcvaXNibi8xODM5NzYyODAy",
+    "title": "📖: Black Meme",
+    "url": "https://openlibrary.org/isbn/1839762802",
+    "content_text": "📖: Black Meme #Books #NowReading https://openlibrary.org/isbn/1839762802",
+    "date_published": "Sun, 19 May 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112468881007775327"
+    ],
+    "lastTootTimestamp": 1716138931464
   }
 }
