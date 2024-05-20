@@ -1,12 +1,10 @@
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import tablerIcons from '@cdransf/eleventy-plugin-tabler-icons'
 import lightningCSS from '@11tyrocks/eleventy-plugin-lightningcss'
-
 import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItFootnote from 'markdown-it-footnote'
 import htmlmin from 'html-minifier-terser'
-
 import filters from './config/filters/index.js'
 import { minifyJsComponents } from './config/events/index.js'
 import { allContent, searchIndex, tagList, tagsSortedByCount, links, tagMap, booksToRead } from './config/collections/index.js'
@@ -18,7 +16,6 @@ dotenvFlow.config()
 
 // get app version
 import { createRequire } from 'module'
-
 const require = createRequire(import.meta.url)
 const appVersion = require('./package.json').version
 

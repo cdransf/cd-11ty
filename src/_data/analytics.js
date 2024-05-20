@@ -10,5 +10,6 @@ export default async function () {
   }).catch()
   const data = await res
   const pages = data[0].dates[0].items
+
   return pages.filter((p) => p.url.includes('posts'))
 }
