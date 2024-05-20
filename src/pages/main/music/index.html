@@ -14,6 +14,7 @@ schema: music
 <p>I mostly listen to <strong class="highlight-text">{{ music.allTime.genres | genresToString: 5 }}</strong>. This week I've listened to <strong class="highlight-text">{{ music.week.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.week.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.week.tracks.size }} tracks</strong>.</p>
 {% render "partials/widgets/now-playing.liquid" %}
 {% render "partials/banners/rss.liquid", url: "https://feedpress.me/coryd-artist-charts", text: "I also have a feed of weekly artist charts I generate from this data" %}
+<hr class="large-spacing" />
 <div class="section-header-wrapper">
   <h2 id="artists" class="section-header reduced-margin flex-centered">
     {% tablericon "microphone-2" "Artists" %}
