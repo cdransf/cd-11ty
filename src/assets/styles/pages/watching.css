@@ -7,27 +7,25 @@
     position: relative;
     overflow: hidden;
 
-    div {
-      &.meta-text{
-        color: white;
-        position: absolute;
-        left: var(--sizing-sm);
-        bottom: var(--sizing-lg);
-        z-index: 2;
+    div.meta-text {
+      color: white;
+      position: absolute;
+      left: var(--sizing-sm);
+      bottom: var(--sizing-lg);
+      z-index: 2;
 
-        & .header {
-          font-weight: var(--font-weight-bold);
-        }
+      & .header {
+        font-weight: var(--font-weight-bold);
+      }
 
-        & .subheader {
-          font-size: var(--font-size-sm);
-        }
+      & .subheader {
+        font-size: var(--font-size-sm);
+      }
 
-        & .header,
-        & .subheader {
-          line-height: 1.5;
-          text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
-        }
+      & .header,
+      & .subheader {
+        line-height: 1.5;
+        text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
       }
     }
 
@@ -74,11 +72,16 @@
       flex-direction: column;
 
       & .header,
-      & .subheader {
+      & .subheader,
+      & .rating {
         color: var(--color-lightest);
         font-size: var(--font-size-xs);
         line-height: 1.5;
         text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
+      }
+
+      & .rating {
+        font-size: calc(var(--font-size-xs) * .75);
       }
 
       & .header {

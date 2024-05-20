@@ -1,0 +1,28 @@
+{% if mediaItems.size > 0 %}
+  <div class="watching grid">
+    {% for media in mediaItems limit: count %}
+      {% capture alt %}{{ media.title | escape }} ({{ media.year }}){% endcapture %}
+      <a href="{{ media.url }}">
+        <div class="watching item shadow">
+          <div class="meta-text">
+            {% if media.type == 'movie' %}
+              <div class="header">{{ media.title }}</div>
+              <div class="subheader flex-centered gap-xs">
+                {{ media.year }}
+                {% if rating and media.rating %}
+                  <span class="rating"> ({{ media.rating }})</span>
+                {% endif %}
+              </div>
+            {% else %}
+              <div class="header">{{ media.name }}</div>
+            {% endif %}
+          </div>
+          {%- capture loadingStrategy -%}
+            {%- if loading -%}{{ loading }}{%- else -%}lazy{%- endif -%}
+          {%- endcapture -%}
+          <img src="https://coryd.dev/.netlify/images/?url={{ media.backdrop }}&fit=cover&w=256&h=144&fm=webp&q=75" alt="{{ alt }}" loading="{{ loadingStrategy }}" decoding="async" width="256" height="144" />
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

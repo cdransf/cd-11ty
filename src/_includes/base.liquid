@@ -9,19 +9,19 @@
   {% endif %}
 {%- endcapture -%}
 {%- capture ogImage -%}
-  {% if schema == 'blog' %}
+  {%- if schema == 'blog' -%}
     {{ meta.url }}/assets/img/ogi/{{ title | slugifyString }}-preview.png
-  {% elsif schema == 'music' %}
+  {%- elsif schema == 'music' -%}
     {{ music.recent.artists[0].image }}
-  {% elsif schema == 'watching' %}
+  {%- elsif schema == 'watching' -%}
     {%- assign featuredMovie = movies.recentlyWatched | first -%}
     {{ featuredMovie.backdrop }}
-  {% elsif schema == 'books' %}
+  {%- elsif schema == 'books' -%}
     {%- assign featuredBook = books | bookStatus: 'started' | reverse | first -%}
     {{ featuredBook.image }}
-  {% else %}
+  {%- else -%}
     {{ meta.meta_data.opengraph_default }}
-{% endif %}
+{%- endif -%}
 {%- endcapture -%}
 <!doctype html>
 <html lang="en">

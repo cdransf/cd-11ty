@@ -1,0 +1,11 @@
+---
+title: Recent movies
+layout: default
+permalink: "/recent/movies/index.html"
+schema: watching
+---
+<p><a class="link-icon flex-centered" href="/watching">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
+<h2 class="watching page-header">{{ title }}</h2>
+<p>These are the movies I've watched recently. There are many like them, but these are mine.</p>
+<hr class="large-spacing" />
+{% render "partials/media/watching/backdrop-grid.liquid", mediaItems:movies.recentlyWatched, count: 99, rating: true %}
