@@ -2,6 +2,7 @@
 title: Currently reading • Books
 layout: default
 permalink: "/books/index.html"
+updated: "now"
 schema: books
 ---
 {%- assign bookData = books | bookStatus: 'started' | reverse -%}
@@ -29,4 +30,3 @@ schema: books
   </div>
 </article>
 {% endfor %}
-<p class="explainer text-small text-centered"><em>This page was last updated on {{ "now" | date: "%B %-d, %-I:%M%p", "America/Los_Angeles" }}. It typically updates once an hour.</em></p>

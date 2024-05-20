@@ -76,4 +76,6 @@ Software and services that I use for work and my own enjoyment.
 - [Backblaze](https://backblaze.com): It backs up my MacBook Air and attached storage drive and I don't have to think about it.
 - <a onclick="clicky?.log('/uses','Proton referral', 'click')" href="https://pr.tn/ref/X775YX40Z50G">Proton</a>: a reliable, trustworthy VPN with all of the features you'd expect from such a service.
 
+<hr class="large-spacing" />
+
 Check out [uses.tech](https://uses.tech) for more lists like this one.
