@@ -15,7 +15,7 @@
           {%- capture loadingStrategy -%}
             {%- if loading -%}{{ loading }}{%- else -%}lazy{%- endif -%}
           {%- endcapture -%}
-          <img src="https://coryd.dev/.netlify/images/?url={{ favorite.backdrop }}&fit=cover&w=256&h=144&fm=webp&q=80" alt="{{ alt }}" loading="{{ loadingStrategy }}" decoding="async" width="256" height="144" />
+          <img src="https://coryd.dev/.netlify/images/?url={{ favorite.backdrop }}&fit=cover&w=256&h=144&fm=webp&q=75" alt="{{ alt }}" loading="{{ loadingStrategy }}" decoding="async" width="256" height="144" />
         </div>
       </a>
     {% endfor %}

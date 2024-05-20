@@ -24,7 +24,7 @@ Trakt's backups are in JSON so I went to work coercing them into CSVs to upload 
 - For movies I wanted to track when I last watched them, title, year, my play count and whether I'd collected it or considered it a favorite.
 - For TV shows I kept a similar data set and linked it to an episodes table via the `tmdb_id`. I used this ID to link out to [TMDB](http://themoviedb.org) and simplify my image URLs.
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&w=1000&fm=webp&q=80" class="image-banner" loading="lazy" decoding="async" alt="A diagram of my watched media tables" width="1000" height="434" />
+<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&w=768&fm=webp&q=75" class="image-banner" loading="lazy" decoding="async" alt="A diagram of my watched media tables" width="768" height="333" />
 
 The watched data for [my now page](https://coryd.dev/now) is now sourced from these tables and I've built out [a dedicated watching page](https://coryd.dev/watching/). The hero image is randomly selected from my favorite movies at built time, as are the 6 TV shows and movies in their respective favorite sections.
 
