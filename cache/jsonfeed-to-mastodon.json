@@ -13458,9 +13458,9 @@
   },
   "https://coryd.dev/music?ts=2024-21": {
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbXVzaWM/dHM9MjAyNC0yMQ==",
-    "title": "🎧: My top artists for the week: Fugazi @ 20 plays, fleshwater @ 16 plays, NoMeansNo @ 14 plays, American Football @ 4 plays",
+    "title": "🎧: My top artists for the week: Disillusion @ 36 plays, Glassing @ 35 plays, Nucleus @ 30 plays, NoMeansNo @ 30 plays, Built to Spill @ 27 plays, blink-182 @ 24 plays, Gravenchalice @ 22 plays, Fugazi @ 20 plays",
     "url": "https://coryd.dev/music?ts=2024-21",
-    "content_text": "🎧: My top artists for the week: Fugazi @ 20 plays, fleshwater @ 16 plays, NoMeansNo @ 14 plays, American Football @ 4 plays https://coryd.dev/music?ts=2024-21",
+    "content_text": "🎧: My top artists for the week: Disillusion @ 36 plays, Glassing @ 35 plays, Nucleus @ 30 plays, NoMeansNo @ 30 plays, Built to Spill @ 27 plays, blink-182 @ 24 plays, Gravenchalice @ 22 plays, Fugazi @ 20 plays https://coryd.dev/music?ts=2024-21",
     "date_published": "Mon, 20 May 2024 00:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112471430916148154"
@@ -13477,5 +13477,16 @@
       "https://social.lol/users/cory/statuses/112471003827867579"
     ],
     "lastTootTimestamp": 1716171323109
+  },
+  "https://www.themoviedb.org/movie/29427": {
+    "id": "aHR0cHM6Ly93d3cudGhlbW92aWVkYi5vcmcvbW92aWUvMjk0Mjc=",
+    "title": "🎥: The Crazies (⭐️⭐️⭐️)",
+    "url": "https://www.themoviedb.org/movie/29427",
+    "content_text": "🎥: The Crazies (⭐️⭐️⭐️) #Movies #Watching https://www.themoviedb.org/movie/29427",
+    "date_published": "Mon, 20 May 2024 15:15:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112474735239294133"
+    ],
+    "lastTootTimestamp": 1716228259924
   }
 }
