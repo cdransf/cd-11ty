@@ -13455,5 +13455,27 @@
       "https://social.lol/users/cory/statuses/112470524335862859"
     ],
     "lastTootTimestamp": 1716164006650
+  },
+  "https://coryd.dev/music?ts=2024-21": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbXVzaWM/dHM9MjAyNC0yMQ==",
+    "title": "🎧: My top artists for the week: Fugazi @ 20 plays, fleshwater @ 16 plays, NoMeansNo @ 14 plays, American Football @ 4 plays",
+    "url": "https://coryd.dev/music?ts=2024-21",
+    "content_text": "🎧: My top artists for the week: Fugazi @ 20 plays, fleshwater @ 16 plays, NoMeansNo @ 14 plays, American Football @ 4 plays https://coryd.dev/music?ts=2024-21",
+    "date_published": "Mon, 20 May 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112471430916148154"
+    ],
+    "lastTootTimestamp": 1716177839945
+  },
+  "https://coryd.dev/music?ts=2024-20": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbXVzaWM/dHM9MjAyNC0yMA==",
+    "title": "🎧: My top artists for the week: The National @ 33 plays, Elliott @ 13 plays, Oasis @ 10 plays, Defeated Sanity @ 7 plays, Deafheaven @ 6 plays, LCD Soundsystem @ 4 plays, Aesop Rock @ 1 play",
+    "url": "https://coryd.dev/music?ts=2024-20",
+    "content_text": "🎧: My top artists for the week: The National @ 33 plays, Elliott @ 13 plays, Oasis @ 10 plays, Defeated Sanity @ 7 plays, Deafheaven @ 6 plays, LCD Soundsystem @ 4 plays, Aesop Rock @ 1 play https://coryd.dev/music?ts=2024-20",
+    "date_published": "Mon, 13 May 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112471003827867579"
+    ],
+    "lastTootTimestamp": 1716171323109
   }
 }
