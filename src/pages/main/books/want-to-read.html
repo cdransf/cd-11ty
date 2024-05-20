@@ -6,6 +6,7 @@ pagination:
   alias: books
   size: 30
 permalink: "/books/want-to-read/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
+schema: books
 ---
 {% if pagination.pageNumber == 0 %}
 <h2 class="page-header">Want to read</h2>

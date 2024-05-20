@@ -16,7 +16,7 @@ export default async function () {
       title: book['title'],
       authors,
       description: book['description'],
-      image: encodeURIComponent(book['thumbnail'].replace('&edge=curl', '')),
+      image: book['thumbnail'],
       url: `https://openlibrary.org/isbn/${book['isbn']}`,
       date,
       status: book['status'],

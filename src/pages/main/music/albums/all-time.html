@@ -5,6 +5,7 @@ pagination:
   data: music.allTime.albums
   size: 24
 permalink: "/music/albums/all-time/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
+schema: music
 ---
 <p><a class="link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
 <h2 class="page-header">{{ title }}</h2>

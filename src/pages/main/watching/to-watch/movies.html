@@ -6,6 +6,7 @@ pagination:
   alias: movies
   size: 30
 permalink: "/watching/movies-to-watch/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
+schema: watching
 ---
 <p><a class="link-icon flex-centered" href="/watching">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
 {% if pagination.pageNumber == 0 %}

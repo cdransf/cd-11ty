@@ -2,6 +2,7 @@
 title: Currently reading • Books
 layout: default
 permalink: "/books/index.html"
+schema: books
 ---
 {%- assign bookData = books | bookStatus: 'started' | reverse -%}
 {%- assign currentBookCount = books | currentBookCount -%}
