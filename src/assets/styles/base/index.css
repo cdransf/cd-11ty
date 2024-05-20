@@ -404,8 +404,8 @@ footer {
       padding-bottom: var(--sizing-3xl);
 
       & span:not(.active) {
-        margin-left: var(--sizing-xs);
-        margin-right: var(--sizing-xs);
+        margin-left: var(--sizing-sm);
+        margin-right: var(--sizing-sm);
       }
     }
   }
