@@ -36,13 +36,12 @@ const formatData = (data) => {
 
 export default async function() {
   try {
-    const now = DateTime.now()
-    const startOfWeek = now.minus({ days: now.weekday + 1 }).startOf('day')
-    const endOfWeek = now.minus({ days: now.weekday - 7 }).endOf('day')
-    const startOfWeekSeconds = startOfWeek.toSeconds()
-    const endOfWeekSeconds = endOfWeek.toSeconds()
-    const weekNumber = now.toFormat('kkkk-WW')
-
+    const now = DateTime.now();
+    const startOfWeek = now.minus({ days: now.weekday % 7 }).startOf('day');
+    const endOfWeek = startOfWeek.plus({ days: 6 }).endOf('day');
+    const startOfWeekSeconds = startOfWeek.toSeconds();
+    const endOfWeekSeconds = endOfWeek.toSeconds();
+    const weekNumber = now.toFormat('kkkk-WW');
     let { data: recentCharts } = await supabase
       .from('weekly_charts')
       .select('*')
@@ -54,7 +53,7 @@ export default async function() {
       return {
         title: formattedData['content'],
         description: formattedData['description'],
-        url: `https://coryd.dev/now?ts=${chart['week']}#artists`,
+        url: `https://coryd.dev/music?ts=${chart['week']}`,
         date: chart['date']
       }
     })
@@ -65,7 +64,7 @@ export default async function() {
         return {
           title: formattedData['content'],
           description: formattedData['description'],
-          url: `https://coryd.dev/now?ts=${chart['week']}#artists`,
+          url: `https://coryd.dev/music?ts=${chart['week']}`,
           date: chart['date']
         }
       })
