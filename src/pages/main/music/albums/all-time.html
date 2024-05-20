@@ -7,7 +7,7 @@ pagination:
 permalink: "/music/albums/all-time/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html"
 schema: music
 ---
-<p><a class="link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
+<a class="back-link-header link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a>
 <h2 class="page-header">{{ title }}</h2>
 <p>I've listened to <strong class="highlight-text">{{ music.allTime.albums.size }} albums</strong> and most of what I listen to is <strong class="highlight-text">{{ music.allTime.genres | genresToString: 5 }}</strong>.</p>
 <p><strong class="highlight-text">See my</strong> <a href="/music/artists/all-time/">artists</a> or <a href="/music/tracks/all-time/">tracks</a> for this period.</p>
