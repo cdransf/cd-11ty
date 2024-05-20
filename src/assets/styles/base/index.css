@@ -7,7 +7,9 @@ html {
   word-spacing: -.125rem;
   line-height: var(--line-height-base);
   background: var(--background-color);
-  accent-color: var(--accent-color)
+  accent-color: var(--accent-color);
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) var(--gray-light);
 }
 
 ::-moz-selection {
@@ -18,13 +20,6 @@ html {
 ::selection {
   color: var(--color-lightest);
   background: var(--selection-color);
-}
-
-/* scrollbars */
-body,
-html {
-  scrollbar-width: thin;
-  scrollbar-color: var(--accent-color) var(--gray-light);
 }
 
 ::-webkit-scrollbar {
@@ -49,10 +44,6 @@ body::-webkit-scrollbar {
   background-color: var(--accent-color);
 }
 
-blockquote {
-  margin: var(--sizing-base) 0;
-}
-
 p {
   margin: var(--sizing-base) 0;
 
@@ -66,10 +57,11 @@ p {
 
 blockquote {
   font-size: var(--font-size-lg);
-  padding-left: var(--sizing-lg);
-  color: var(--gray-dark);
-  border-left: var(--sizing-xs) solid var(--gray-dark);
   word-break: break-word;
+  color: var(--gray-dark);
+  padding-left: var(--sizing-lg);
+  border-left: var(--sizing-xs) solid var(--gray-dark);
+  margin: var(--sizing-base) 0;
 }
 
 :is(body, html, nav .search) svg {
@@ -342,24 +334,6 @@ nav .active svg {
 .heart-handshake svg { stroke: var(--webrings) !important; }
 .rss svg { stroke: var(--brand-rss) !important; }
 
-.coffee:hover,
-.coffee:active,
-.coffee:focus {
-  color: var(--brand-buy-me-a-coffee) !important;
-}
-
-.brand-mastodon:hover,
-.brand-mastodon:active,
-.brand-mastodon:focus {
-  color: var(--brand-mastodon) !important;
-}
-
-.rss:hover,
-.rss:active,
-.rss:focus {
-  color: var(--brand-rss) !important;
-}
-
 /* layout */
 .default-wrapper {
   padding-top: var(--sizing-2xl);
@@ -384,13 +358,13 @@ main {
 }
 
 /* now */
-.now-topper,
+.home-status,
 article {
   border-bottom: 1px solid var(--gray-light);
   margin-bottom: var(--sizing-base);
 }
 
-.now-topper p:first-child {
+.home-status p:first-child {
   margin-top: 0;
 }
 
