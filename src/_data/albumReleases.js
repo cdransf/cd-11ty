@@ -32,6 +32,7 @@ export default async function () {
       url: album['release_link'],
       genre: album['artists']['genre'],
       mbid: album['artists']['mbid'],
+      timestamp: DateTime.fromISO(album['release_date']).toSeconds()
     }
-  })
+  }).sort((a, b) => a.timestamp - b.timestamp)
 }
