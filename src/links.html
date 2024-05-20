@@ -8,8 +8,8 @@ permalink: "/links/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}
 ---
 {% if pagination.pageNumber == 0 %}
 <h2 class="page-header">Links</h2>
+<p>These are links I've liked or otherwise found interesting. They're all added manually, after having been read and, I suppose, properly considered. Authors are associated with domains using a simple key-value map.</p>
 {% render "partials/banners/rss.liquid", url: "https://feedpress.me/coryd-links", text: "Subscribe to my links feed or follow along on this page" %}
-<p>These are links I've liked or otherwise found interesting.</p>
 <hr class="large-spacing" />
 {% endif %}
 <div class="link-grid">
