@@ -37,11 +37,11 @@ const formatData = (data) => {
 export default async function() {
   try {
     const now = DateTime.now();
-    const startOfWeek = now.minus({ days: now.weekday % 7 }).startOf('day');
-    const endOfWeek = startOfWeek.plus({ days: 6 }).endOf('day');
-    const startOfWeekSeconds = startOfWeek.toSeconds();
-    const endOfWeekSeconds = endOfWeek.toSeconds();
-    const weekNumber = now.toFormat('kkkk-WW');
+    const startOfWeek = now.minus({ days: 7 }).startOf('day')
+    const endOfWeek = now.endOf('day')
+    const startOfWeekSeconds = startOfWeek.toSeconds()
+    const endOfWeekSeconds = endOfWeek.toSeconds()
+    const weekNumber = now.toFormat('kkkk-WW')
     let { data: recentCharts } = await supabase
       .from('weekly_charts')
       .select('*')
