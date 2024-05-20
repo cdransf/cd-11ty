@@ -13499,5 +13499,16 @@
       "https://social.lol/users/cory/statuses/112475206172454411"
     ],
     "lastTootTimestamp": 1716235445817
+  },
+  "https://coryd.dev/posts/2024/ai-free-products/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9haS1mcmVlLXByb2R1Y3RzLw==",
+    "title": "📝: AI-free products",
+    "url": "https://coryd.dev/posts/2024/ai-free-products/",
+    "content_text": "📝: AI-free products #AI #Tech https://coryd.dev/posts/2024/ai-free-products/",
+    "date_published": "Mon, 20 May 2024 22:02:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112475675676551595"
+    ],
+    "lastTootTimestamp": 1716242609871
   }
 }
