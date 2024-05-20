@@ -9,6 +9,6 @@ schema: music
 ---
 <a class="back-link-header link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a>
 <h2 class="page-header">{{ title }}</h2>
-<p>I've listened to <strong class="highlight-text">{{ music.week.tracks.size }} tracks</strong> this week and most of what I've listened to has been <strong class="highlight-text">{{ music.week.genres | genresToString: 5 }}</strong>.</p>
+<p>I've listened to <strong class="highlight-text">{{ music.week.totalTracks }} tracks</strong> this week and most of what I've listened to has been <strong class="highlight-text">{{ music.week.genres | genresToString: 5 }}</strong>.</p>
 <p><strong class="highlight-text">See my</strong> <a href="/music/artists/this-week/">artists</a> or <a href="/music/albums/this-week/">albums</a> for this period.</p>
 {% render "partials/media/music/period/chart.liquid" data:pagination, playTotal: music.week.tracks[0].plays %}

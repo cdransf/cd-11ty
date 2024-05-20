@@ -137,7 +137,8 @@ export default async function() {
       artists: aggregateData(periodData, 'artist_name', 'artists'),
       albums: aggregateData(periodData, 'album_name', 'albums'),
       tracks: aggregateData(periodData, 'track_name', 'track'),
-      genres: aggregateGenres(periodData)
+      genres: aggregateGenres(periodData),
+      totalTracks: periodData?.length?.toLocaleString('en-US')
     }
   }
 
@@ -147,7 +148,8 @@ export default async function() {
     artists: aggregateData(allTimeData, 'artist_name', 'artists'),
     albums: aggregateData(allTimeData, 'album_name', 'albums'),
     tracks: aggregateData(allTimeData, 'track_name', 'track'),
-    genres: aggregateGenres(allTimeData)
+    genres: aggregateGenres(allTimeData),
+    totalTracks: allTimeData?.length?.toLocaleString('en-US')
   }
 
   const recentData = await fetchDataForPeriod(DateTime.now().minus({ days: 7 }), selectFields, 'listens')
@@ -157,7 +159,8 @@ export default async function() {
     albums: aggregateData(recentData, 'album_name', 'albums'),
     tracks: aggregateData(recentData, 'track_name', 'track'),
     tracksChronological: aggregateData(recentData, 'track_name', 'track', false),
-    genres: aggregateGenres(recentData)
+    genres: aggregateGenres(recentData),
+    totalTracks: recentData?.length?.toLocaleString('en-US')
   }
   results['nowPlaying'] = results['recent']['tracksChronological'][0]
 
