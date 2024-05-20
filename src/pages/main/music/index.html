@@ -16,11 +16,11 @@ schema: music
 {% render "partials/banners/rss.liquid", url: "https://feedpress.me/coryd-artist-charts", text: "I also have a feed of weekly artist charts I generate from this data" %}
 <hr class="large-spacing" />
 <div class="section-header-wrapper">
-  <h2 id="artists" class="section-header reduced-margin flex-centered">
+  <h2 id="artists" class="section-header no-top-margin flex-centered">
     {% tablericon "microphone-2" "Artists" %}
     Artists
   </h2>
-  <div class="section-header-buttons reduced-margin client-side">
+  <div class="section-header-buttons no-top-margin client-side">
     <button class="small active" data-toggle="artists-window">This week</button>
     <button class="small secondary" data-toggle="artists-month">This month</button>
     <button class="small secondary" data-toggle="artists-three-months">3 months</button>

@@ -166,13 +166,13 @@ h6 { font-size: var(--font-size-xs) }
     margin: var(--sizing-md) 0 var(--sizing-lg);
   }
 
+  &.no-top-margin {
+    margin: 0 0 var(--sizing-lg);
+  }
+
   &.posts {
     margin: 0 0 var(--sizing-lg);
   }
-}
-
-.default-wrapper > .section-header:first-of-type {
-  margin-top: 0;
 }
 
 .section-header-buttons {
@@ -180,6 +180,10 @@ h6 { font-size: var(--font-size-xs) }
 
   &.reduced-margin {
     margin: var(--sizing-md) 0 var(--sizing-lg);
+  }
+
+  &.no-top-margin {
+    margin: 0 0 var(--sizing-lg);
   }
 
   & > button {

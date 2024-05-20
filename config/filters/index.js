@@ -200,7 +200,7 @@ export default {
         normalized['subtext'] = `${item['plays']} plays`
       }
       if (item.type === 'movie') {
-        normalized['title'] = `${item['title']} (${item['year']})`
+        normalized['title'] = item['title']
         normalized['alt'] = item['title']
         normalized['rating'] = item['rating']
         normalized['subtext'] = item['rating']
