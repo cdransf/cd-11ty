@@ -136,7 +136,7 @@ layout: main
 {{ content }}
 {% render "partials/media/grid.liquid", data:artists, icon: "microphone-2", title: "Artists", shape: "square", count: 8, loading: 'eager' %}
 {% render "partials/media/grid.liquid", data:albums, icon: "vinyl", title: "Albums", shape: "square", count: 8, loading: 'lazy' %}
-{% render "partials/media/album-releases.liquid", albumReleases:albumReleases %}
+{% render "partials/media/music/releases.liquid", albumReleases:albumReleases %}
 {% render "partials/media/grid.liquid", data:books, icon: "books", title: "Books", shape: "vertical", count: 6, loading: 'lazy' %}
 {% render "partials/now/links.liquid", links:links %}
 {% render "partials/media/grid.liquid", data:movies, icon: "movie", title: "Movies", shape: "vertical", count: 6, loading: 'lazy' %}

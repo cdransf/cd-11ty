@@ -5,7 +5,7 @@ pagination:
   data: tv.toWatch
   alias: shows
   size: 30
-permalink: "/watching/shows-to-watch/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
+permalink: "/watching/shows-to-watch/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html"
 schema: watching
 ---
 <p><a class="link-icon flex-centered" href="/watching">{% tablericon "arrow-left" "Go back" %} Go back</a></p>

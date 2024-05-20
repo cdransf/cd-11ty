@@ -4,26 +4,11 @@ layout: default
 pagination:
   data: music.week.artists
   size: 24
-permalink: "/music/artists/this-week/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
+permalink: "/music/artists/this-week/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html"
 schema: music
 ---
 <p><a class="link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a></p>
 <h2 class="page-header">{{ title }}</h2>
 <p>I've listened to <strong class="highlight-text">{{ music.week.artists.size }} artists</strong> this week and most of what I've listened to has been <strong class="highlight-text">{{ music.week.genres | genresToString: 5 }}</strong>.</p>
 <p><strong class="highlight-text">See my</strong> <a href="/music/albums/this-week/">albums</a> or <a href="/music/tracks/this-week/">tracks</a> for this period.</p>
-<hr class="large-spacing" />
-<div class="media-grid square">
-  {% for item in pagination.items %}
-  {% assign alt = item.alt | strip | escape %}
-  <a href="{{ item.url | stripUtm }}" title="{{ alt }}">
-    <div class="item-wrapper shadow">
-      <div class="meta-text">
-          <div class="header">{{ item.title }}</div>
-          <div class="subheader">{{ item.plays }} plays</div>
-      </div>
-      <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=240&h=240&fm=webp&q=80"{% if alt %} alt="{{ alt }}"{% endif %} loading="eager" decoding="async" width="240" height="240" />
-    </div>
-  </a>
-  {% endfor %}
-</div>
-{% render "partials/widgets/paginator.liquid", pagination:pagination %}
+{% render "partials/media/music/period/grid.liquid" data:pagination %}

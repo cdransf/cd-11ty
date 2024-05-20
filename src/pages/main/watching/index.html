@@ -6,7 +6,7 @@ schema: watching
 ---
 {% assign featuredMovie = movies.favorites | featuredWatching: 1 | first %}
 <h2 class="watching page-header">{{ title }}</h2>
-{% render "partials/watching/hero.liquid" movie:featuredMovie %}
+{% render "partials/media/watching/hero.liquid" movie:featuredMovie %}
 <p>Here's all of the TV and movies I've been watching presented in what is (hopefully) an organized fashion. You can also take a look at the <a href="/watching/movies-to-watch">movies</a> and <a href="/watching/shows-to-watch">shows</a> I'm planning to watch.</p>
 {% render "partials/banners/rss.liquid", url: "https://feedpress.me/coryd-movies", text: "Subscribe to my movies feed or follow along on this page" %}
 <h2 id="movies" class="section-header flex-centered">
@@ -26,7 +26,7 @@ schema: watching
   </h2>
 </a>
 {% assign favoriteMovies = movies.favorites | featuredWatching: 6 %}
-{% render "partials/watching/favorites-grid.liquid", favorites:favoriteMovies, count: 6 %}
+{% render "partials/media/watching/favorites-grid.liquid", favorites:favoriteMovies, count: 6 %}
 <a class="link-icon flex-centered" href="/watching/favorite-shows">
   <h2 class="section-header flex-centered">
     {% tablericon "star" "Favorite shows" %}
@@ -34,5 +34,5 @@ schema: watching
   </h2>
 </a>
 {% assign favoriteShows = tv.favorites | featuredWatching: 6 %}
-{% render "partials/watching/favorites-grid.liquid", favorites:favoriteShows, count: 6 %}
+{% render "partials/media/watching/favorites-grid.liquid", favorites:favoriteShows, count: 6 %}
 <p class="explainer text-small text-centered"><em>This page was last updated on {{ "now" | date: "%B %-d, %-I:%M%p", "America/Los_Angeles" }}. It typically updates once an hour.</em></p>

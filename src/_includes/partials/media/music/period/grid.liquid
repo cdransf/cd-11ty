@@ -1,0 +1,16 @@
+<hr class="large-spacing" />
+<div class="media-grid square">
+  {% for item in data.items %}
+  {% assign alt = item.alt | strip | escape %}
+  <a href="{{ item.url | stripUtm }}" title="{{ alt }}">
+    <div class="item-wrapper shadow">
+      <div class="meta-text">
+          <div class="header">{{ item.title }}</div>
+          <div class="subheader">{{ item.plays }} plays</div>
+      </div>
+      <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=240&h=240&fm=webp&q=80"{% if alt %} alt="{{ alt }}"{% endif %} loading="eager" decoding="async" width="240" height="240" />
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% render "partials/widgets/paginator.liquid", pagination:data %}
