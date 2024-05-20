@@ -13444,5 +13444,16 @@
       "https://social.lol/users/cory/statuses/112468881007775327"
     ],
     "lastTootTimestamp": 1716138931464
+  },
+  "https://coryd.dev/now?ts=2024-21#artists": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbm93P3RzPTIwMjQtMjEjYXJ0aXN0cw==",
+    "title": "🎧: My top artists for the week: Fugazi @ 20 plays, fleshwater @ 16 plays, NoMeansNo @ 14 plays, American Football @ 4 plays",
+    "url": "https://coryd.dev/now?ts=2024-21#artists",
+    "content_text": "🎧: My top artists for the week: Fugazi @ 20 plays, fleshwater @ 16 plays, NoMeansNo @ 14 plays, American Football @ 4 plays #Music https://coryd.dev/now?ts=2024-21#artists",
+    "date_published": "Mon, 20 May 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112470524335862859"
+    ],
+    "lastTootTimestamp": 1716164006650
   }
 }
