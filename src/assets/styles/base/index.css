@@ -156,7 +156,7 @@ h6 { font-size: var(--font-size-xs) }
 }
 
 .section-header {
-  margin: var(--sizing-3xl) 0 var(--sizing-lg);
+  margin: var(--sizing-xl) 0 var(--sizing-lg);
 
   &.reduced-margin {
     margin: var(--sizing-md) 0 var(--sizing-lg);

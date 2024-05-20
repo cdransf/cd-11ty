@@ -11,21 +11,21 @@ schema: watching
 <p>Here's all of the TV and movies I've been watching presented in what is (hopefully) an organized fashion. You can also take a look at the <a href="/watching/movies-to-watch">movies</a> and <a href="/watching/shows-to-watch">shows</a> I'm planning to watch.</p>
 {% render "partials/banners/rss.liquid", url: "https://feedpress.me/coryd-movies", text: "Subscribe to my movies feed or follow along on this page" %}
 <a class="link-icon flex-centered" href="/recent/movies">
-  <h2 id="movies" class="section-header flex-centered">
+  <h2 id="movies" class="section-header reduced-margin flex-centered">
     {% tablericon "movie" "Recent movies" %}
     Recent movies
   </h2>
 </a>
 {% render "partials/media/grid.liquid", data:movies.recentlyWatched, shape: "vertical", count: 6 %}
 <a class="link-icon flex-centered" href="/recent/shows">
-  <h2 id="tv" class="section-header flex-centered">
+  <h2 id="tv" class="section-header reduced-margin flex-centered">
     {% tablericon "device-tv" "Recent shows" %}
     Recent shows
   </h2>
 </a>
 {% render "partials/media/grid.liquid", data:tv.recentlyWatched, shape: "vertical", count: 6 %}
 <a class="link-icon flex-centered" href="/watching/favorite-movies">
-  <h2 class="section-header flex-centered">
+  <h2 id="favorite-movies" class="section-header reduced-margin flex-centered">
     {% tablericon "star" "Favorite movies" %}
     Favorite movies
   </h2>
@@ -33,7 +33,7 @@ schema: watching
 {% assign favoriteMovies = movies.favorites | featuredWatching: 6 %}
 {% render "partials/media/watching/backdrop-grid.liquid", mediaItems:favoriteMovies, count: 6 %}
 <a class="link-icon flex-centered" href="/watching/favorite-shows">
-  <h2 class="section-header flex-centered">
+  <h2 id="favorite-shows" class="section-header reduced-margin flex-centered">
     {% tablericon "star" "Favorite shows" %}
     Favorite shows
   </h2>

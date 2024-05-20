@@ -51,6 +51,7 @@
     display: grid;
     gap: var(--sizing-sm);
     grid-template-columns: repeat(2,minmax(0,1fr));
+    margin-bottom: var(--sizing-base);
 
     & a,
     & div {
