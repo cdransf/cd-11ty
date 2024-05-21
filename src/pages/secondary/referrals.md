@@ -2,7 +2,7 @@
 title: Referrals
 layout: default
 permalink: /referrals.html
-description: 'Referral links for services that I use.'
+description: Referral links for services that I use.
 ---
 <h2 class="page-header">{{ title }}</h2>
 

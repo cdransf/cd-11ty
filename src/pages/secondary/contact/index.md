@@ -2,7 +2,7 @@
 title: Contact
 layout: default
 permalink: /contact.html
-description: 'How to contact me.'
+description: How to contact me.
 ---
 <h2 class="page-header">{{ title }}</h2>
 <div class="contact-wrapper">

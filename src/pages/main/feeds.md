@@ -2,7 +2,7 @@
 title: Feeds
 layout: default
 permalink: /feeds.html
-description: 'Content feeds exposed by and generated from my site.'
+description: Content feeds exposed by and generated from my site.
 ---
 
 <h2 class="page-header">{{ title }}</h2>

@@ -11,7 +11,7 @@ layout: default
 {% if yearString == currentYearString %}
 <p>I've finished <strong class="highlight-text">{{ bookData.size }} books</strong> this year.</p>
 {% else %}
-<p>I finished <strong class="highlight-text">{{ bookData.size }} books</strong> in {{ year }}</p>
+<p>I finished <strong class="highlight-text">{{ bookData.size }} books</strong> in {{ year }}.</p>
 {% endif %}
 <hr class="large-spacing" />
 {% render "partials/media/grid.liquid", data:bookData, shape: "vertical", count: 200, loading: "eager" %}

@@ -8,7 +8,18 @@
     Books • {{ book.title }} • {{ meta.siteName }}
   {% else %}
     {{ meta.siteName }}
-  {% endif %}
+  {%- endif -%}
+{%- endcapture -%}
+{%- capture pageDescription -%}
+  {%- if schema == 'blog' -%}
+    {{ post_excerpt | markdown | strip_html }}
+  {% elsif book.description %}
+    {{ book.description }}
+  {% elsif description %}
+    {{ description }}
+  {% else %}
+    {{ meta.siteDescription }}
+  {%- endif -%}
 {%- endcapture -%}
 {%- capture ogImage -%}
   {%- if schema == 'blog' -%}
@@ -25,7 +36,7 @@
     {{ book.image }}
   {%- else -%}
     {{ meta.meta_data.opengraph_default }}
-{%- endif -%}
+  {%- endif -%}
 {%- endcapture -%}
 <!doctype html>
 <html lang="en">
@@ -38,8 +49,8 @@
     <script async data-id="101449513" src="/23af0256fe76a.js"></script>
     <link rel="canonical" href="{{ fullUrl }}" />
     <meta property="og:title" content="{{ pageTitle }}" />
-    <meta name="description" content="{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}" />
-    <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}" />
+    <meta name="description" content="{{ pageDescription | escape | strip }}" />
+    <meta property="og:description" content="{{ pageDescription | escape | strip }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ fullUrl }}" />
     <meta property="og:image" content="{{ ogImage }}" />

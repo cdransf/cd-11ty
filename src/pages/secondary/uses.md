@@ -2,8 +2,7 @@
 title: Uses
 layout: default
 permalink: /uses.html
-description: 'Software, tools and services that I use regularly.'
-image: /assets/img/pages/uses.jpg
+description: Software, tools and services that I use regularly.
 ---
 <h2 class="page-header">{{ title }}</h2>
 
