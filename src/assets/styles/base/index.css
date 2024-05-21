@@ -1,3 +1,4 @@
+
 body,
 html {
   color: var(--text-color);
@@ -374,6 +375,10 @@ article {
 
 .home-status p:first-child {
   margin-top: 0;
+}
+
+article.tag-post:last-of-type {
+  border-bottom: none;
 }
 
 .article-widget-wrapper {
