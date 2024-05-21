@@ -10742,5 +10742,30 @@
     "thumbnail": "https://coryd.dev/media/books/0306922223-do-what-you-want.jpg",
     "language": "en",
     "link": "https://books.google.com/books/about/Do_What_You_Want.html?hl=&id=gJItzQEACAAJ"
+  },
+  {
+    "isbn": "0306922126",
+    "dateAdded": "2024-05-21",
+    "status": "want to read",
+    "rating": "unrated",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "More Fun in the New World",
+    "authors": [
+      "John Doe",
+      "Tom DeSavia"
+    ],
+    "publishedDate": "2019-06-04",
+    "description": "Sequel to Grammy-nominated bestseller Under the Big Black Sun, continuing the up-close and personal account of the L.A. punk scene, with 50 rare photos Picking up where Under the Big Black Sun left off, More Fun in the New World explores the years 1982 to 1987, covering the dizzying pinnacle of L.A.'s punk rock movement as its stars took to the national -- and often international -- stage. Detailing the eventual splintering of punk into various sub-genres, the second volume of John Doe and Tom DeSavia's west coast punk history portrays the rich cultural diversity of the movement and its characters, the legacy of the scene, how it affected other art forms, and ultimately influenced mainstream pop culture. The book also pays tribute to many of the fallen soldiers of punk rock, the pioneers who left the world much too early but whose influence hasn't faded. As with Under the Big Black Sun, the book features stories of triumph, failure, stardom, addiction, recovery, and loss as told by the people who were influential in the scene, with a cohesive narrative from authors Doe and DeSavia. Along with many returning voices, More Fun in the New World weaves in the perspectives of musicians Henry Rollins, Fishbone, Billy Zoom, Mike Ness, Jane Weidlin, Keith Morris, Dave Alvin, Louis Pérez, Charlotte Caffey, Peter Case, Chip Kinman, Maria McKee, and Jack Grisham, among others. And renowned artist/illustrator Shepard Fairey, filmmaker Allison Anders, actor Tim Robbins, and pro-skater Tony Hawk each contribute chapters on punk's indelible influence on the artistic spirit. In addition to stories of success, the book also offers a cautionary tale of an art movement that directly inspired commercially diverse acts such as Green Day, Rancid, Red Hot Chili Peppers, Wilco, and Neko Case. Readers will find themselves rooting for the purists of punk juxtaposed with the MTV-dominating rock superstars of the time who flaunted a \"born to do this, it couldn't be easier\" attitude that continued to fuel the flames of new music. More Fun in the New World follows the progression of the first decade of L.A. punk, its conclusion, and its cultural rebirth.",
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+      "Music"
+    ],
+    "thumbnail": "https://books.google.com/books/content?id=NMeovAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=512",
+    "language": "en",
+    "link": "https://books.google.com/books/about/More_Fun_in_the_New_World.html?hl=&id=NMeovAEACAAJ"
   }
 ]
