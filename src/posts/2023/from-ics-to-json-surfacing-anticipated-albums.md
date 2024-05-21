@@ -66,6 +66,6 @@ Rendering the output is as simple as:
 
 Leaving us with:
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/album-releases.jpg&w=768&fm=webp&q=75" class="image-banner" alt="Albums I'm looking forward to" loading="lazy" decoding="async" width="768" height="383" />
+<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/album-releases.jpg&w=768&fm=webp&q=85" class="image-banner" alt="Albums I'm looking forward to" loading="lazy" decoding="async" width="768" height="383" />
 
 [^1]: At this point, a dev playground.

@@ -7,7 +7,7 @@ tags:
 ---
 I've called the same band my favorite for a long time and, the older I get, the less likely I feel that designation is to change.<!-- excerpt -->
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/nmn.jpg&w=768&fm=webp&q=75" class="image-banner" alt="Albums and artists" loading="eager" decoding="async" width="768" height="512" />
+<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/nmn.jpg&w=768&fm=webp&q=85" class="image-banner" alt="Albums and artists" loading="eager" decoding="async" width="768" height="512" />
 
 This is my favorite band: [NoMeansNo](https://en.wikipedia.org/wiki/Nomeansno).
 

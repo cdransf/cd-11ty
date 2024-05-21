@@ -168,6 +168,6 @@ Finally, if the page this all lives on is loaded by a client without JavaScript 
 
 All of this, yields the single line at the bottom of this image — updated on each visit.
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/now-playing.jpg&w=768&fm=webp&q=75" class="image-banner" alt="Now playing" loading="lazy" decoding="async" width="768" height="235" />
+<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/now-playing.jpg&w=768&fm=webp&q=85" class="image-banner" alt="Now playing" loading="lazy" decoding="async" width="768" height="235" />
 
 [^1]: Plus explicit conditions matching David Bowie and Minor Threat.
