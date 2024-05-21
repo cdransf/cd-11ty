@@ -10332,32 +10332,6 @@
     "dateFinished": "2024-05-16"
   },
   {
-    "isbn": "9780306824098",
-    "dateAdded": "2024-05-04",
-    "status": "started",
-    "rating": "unrated",
-    "tags": [
-      "music",
-      "nonfiction"
-    ],
-    "title": "Under the Big Black Sun",
-    "authors": [
-      "John Doe",
-      "Tom DeSavia"
-    ],
-    "publishedDate": "2016-04-26",
-    "description": "Under the Big Black Sun explores the nascent Los Angeles punk rock movement and its evolution to hardcore punk as it's never been told before. John Doe of the legendary band X and co-author Tom DeSavia have woven together an enthralling story of the legendary West Coast scene from 1977-1982 by enlisting the voices of people who were there. The book shares chapter-length tales from the authors along with personal essays from famous (and infamous) players in the scene. Through interstitial commentary, John Doe \"narrates\" this journey through the land of film noir sunshine, Hollywood back alleys, and suburban sprawl. Illustrated with 50 rare photos, this is the story of the art that was born under the big black sun.",
-    "pageCount": 336,
-    "printType": "BOOK",
-    "categories": [
-      "Biography & Autobiography"
-    ],
-    "thumbnail": "https://coryd.dev/media/books/9780306824098-under-the-big-black-sun.jpg",
-    "language": "en",
-    "link": "https://play.google.com/store/books/details?id=O0EoCwAAQBAJ",
-    "dateStarted": "2024-05-19"
-  },
-  {
     "isbn": "0807007935",
     "dateAdded": "2024-05-08",
     "status": "finished",
@@ -10409,6 +10383,33 @@
     "link": "https://books.google.com/books/about/Black_Meme.html?hl=&id=GdLPEAAAQBAJ",
     "dateStarted": "2024-05-18",
     "dateFinished": "2024-05-19"
+  },
+  {
+    "isbn": "9780306824098",
+    "dateAdded": "2024-05-04",
+    "status": "finished",
+    "rating": "⭐️⭐️⭐️⭐️",
+    "tags": [
+      "music",
+      "nonfiction"
+    ],
+    "title": "Under the Big Black Sun",
+    "authors": [
+      "John Doe",
+      "Tom DeSavia"
+    ],
+    "publishedDate": "2016-04-26",
+    "description": "Under the Big Black Sun explores the nascent Los Angeles punk rock movement and its evolution to hardcore punk as it's never been told before. John Doe of the legendary band X and co-author Tom DeSavia have woven together an enthralling story of the legendary West Coast scene from 1977-1982 by enlisting the voices of people who were there. The book shares chapter-length tales from the authors along with personal essays from famous (and infamous) players in the scene. Through interstitial commentary, John Doe \"narrates\" this journey through the land of film noir sunshine, Hollywood back alleys, and suburban sprawl. Illustrated with 50 rare photos, this is the story of the art that was born under the big black sun.",
+    "pageCount": 336,
+    "printType": "BOOK",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "thumbnail": "https://coryd.dev/media/books/9780306824098-under-the-big-black-sun.jpg",
+    "language": "en",
+    "link": "https://play.google.com/store/books/details?id=O0EoCwAAQBAJ",
+    "dateStarted": "2024-05-19",
+    "dateFinished": "2024-05-21"
   },
   {
     "isbn": "0262548038",
