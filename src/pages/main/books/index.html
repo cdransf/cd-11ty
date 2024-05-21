@@ -24,7 +24,7 @@ schema: books
       <p class="title"><strong>{{ book.title }}</strong></p>
     </a>
     {% if book.authors or book.categories %}
-    <p class="sub-meta">{% if book.authors %}By {{ book.authors }}{% endif %}{% if book.categories %}{% if book.authors %} • {% endif %}<em>{{ book.categories }}</em>{% endif %}</p>
+    <p class="sub-meta">{% if book.authors %}By {{ book.authors }}{% endif %}{% if book.categories %}{% if book.authors %} • {% endif %}{{ book.categories }}{% endif %}</p>
     {% endif %}
     {% if book.description %}<blockquote class="description">{{ book.description }}</blockquote>{% endif %}
   </div>
