@@ -10,8 +10,6 @@
   }
 
   & img {
-    border: 1px solid var(--accent-color);
-    border-radius: var(--rounded);
     transition-property: border-color;
     transition-timing-function: var(--transition-ease-in-out);
     transition-duration: 300ms;
@@ -29,9 +27,6 @@
   }
 
   & .book-meta {
-    display: flex;
-    flex-direction: column;
-    gap: var(--sizing-xs);
     align-items: center;
 
     & p {
@@ -40,16 +35,6 @@
       max-width: 100%;
       text-overflow: ellipsis;
       width: fit-content;
-      margin-bottom: 0;
-
-      &.title {
-        font-size: var(--font-size-xl);
-      }
-
-      &.author-categories {
-        font-size: var(--font-size-xs);
-        line-height: var(--line-height-xs);
-      }
     }
 
     & blockquote.description {
@@ -59,6 +44,53 @@
       overflow: hidden;
       margin-bottom: var(--sizing-base);
     }
+  }
+}
+
+.book-entry,
+.book-focus {
+  & img {
+    border: 1px solid var(--accent-color);
+  }
+
+  & .book-meta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sizing-xs);
+
+    & p {
+      &.title {
+        font-size: var(--font-size-xl);
+      }
+
+      &.sub-meta {
+        font-size: var(--font-size-xs);
+        line-height: var(--line-height-xs);
+      }
+
+      &.title,
+      &.sub-meta {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.book-focus {
+  border-bottom: 0;
+
+  & .book-display {
+    display: flex;
+    flex-direction: row;
+    gap: var(--sizing-base);
+  }
+
+  p {
+    margin: var(--sizing-base) 0;
+  }
+
+  & .book-meta p {
+    margin: 0;
   }
 }
 

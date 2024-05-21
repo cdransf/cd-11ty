@@ -17,12 +17,13 @@ export default async function () {
       authors,
       description: book['description'],
       image: book['thumbnail'],
-      url: `https://openlibrary.org/isbn/${book['isbn']}`,
+      url: `https://coryd.dev/books/${book['isbn']}`,
       date,
       status: book['status'],
       tags: book['tags'],
       categories: book['categories']?.length > 1 ? book['categories'].join(', ') : book['categories']?.[0],
       rating: book['rating'] !== 'unrated' ? book['rating'] : '',
+      isbn: book['isbn'],
       type: 'book',
     }
   })

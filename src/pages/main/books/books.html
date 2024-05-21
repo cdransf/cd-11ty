@@ -1,0 +1,24 @@
+---
+layout: default
+pagination:
+  data: books
+  size: 1
+  alias: book
+permalink: /books/{{ book.isbn }}/
+---
+<a class="back-link-header link-icon flex-centered" href="/books">{% tablericon "arrow-left" "Go back" %} Go back</a>
+<article class="book-focus">
+  <div class="book-display">
+    <img src="https://coryd.dev/.netlify/images/?url={{ book.image }}&fm=webp&q=85&w=137&h=209&fit=cover" alt="{{ alt }}" loading="eager" decoding="async" width="137" height="209" />
+    <div class="book-meta">
+      <p class="title"><strong>{{ book.title }}</strong></p>
+      {% if book.rating %}<p>{{ book.rating }}</p>{% endif %}
+      {% if book.authors or book.categories %}
+      <p class="sub-meta">{% if book.authors %}By {{ book.authors }}{% endif %}{% if book.categories %}{% if book.authors %} • {% endif %}{{ book.categories }}{% endif %}</p>
+      {% endif %}
+      {% if book.status == 'finished' %}<p class="sub-meta">Finished on: {{ book.date | date: "%B %e, %Y" }}</p>{% endif %}
+      <p class="sub-meta"><a href="https://openlibrary.org/isbn/{{ book.isbn }}">View on Open Library</a></p>
+    </div>
+  </div>
+  {% if book.description %}<p><em>{{ book.description }}</em></p>{% endif %}
+</article>
