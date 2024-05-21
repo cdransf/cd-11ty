@@ -49,6 +49,7 @@ Software and services that I use for work and my own enjoyment.
 - [Meta](https://www.nightbirdsevolve.com/meta): the _best_ utility for tagging and organizing music files on macOS.
 - [Permute](https://software.charliemonroe.net/permute): a useful utility for quickly converting files to different formats.
 - [SoundSource](https://rogueamoeba.com/soundsource): a handy utility for better, more granular control on macOS.
+- [noTunes](https://github.com/tombonez/noTunes): a lightweight utility that prevents Music.app from launching. It also allows you to set a new default music player.
 
 <h3>Dev tools</h3>
 
@@ -69,7 +70,6 @@ Software and services that I use for work and my own enjoyment.
 - [Feedbin](https://feedbin.com): performant, open and super reliable RSS.
 - [Instapaper](https://instapaper.com): slow to change and often better for it — a reliable and steady read it later service.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.
-- [Last.fm](https://last.fm): as it turns out, the best music recommendations still come from dedicated fans.
 - [Trakt](https://trakt.tv): my preferred TV and movie tracking service — it has a strong community (and isn't owned by a private equity firm).
 - [Slack](http://slack.com): I have a family Slack set up to avoid group text messages and am in a few other community Slacks.
 - [Discord](http://discord.com): I don't _like_ Discord but, for better or worse, it's where some communities I frequent are.
