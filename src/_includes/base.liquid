@@ -1,9 +1,11 @@
 {%- capture fullUrl -%}{{ meta.url }}{{ page.url }}{%- endcapture -%}
 {%- capture pageTitle -%}
-  {% if page.url | isPost %}
+  {%- if schema == 'blog' -%}
     {{ title }}
   {% elsif title %}
     {{ title }} • {{ meta.siteName }}
+  {% elsif book.title %}
+    Books • {{ book.title }} • {{ meta.siteName }}
   {% else %}
     {{ meta.siteName }}
   {% endif %}
@@ -19,6 +21,8 @@
   {%- elsif schema == 'books' -%}
     {%- assign featuredBook = books | bookStatus: 'started' | reverse | first -%}
     {{ featuredBook.image }}
+  {%- elsif schema == 'book' -%}
+    {{ book.image }}
   {%- else -%}
     {{ meta.meta_data.opengraph_default }}
 {%- endif -%}

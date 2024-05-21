@@ -5,6 +5,8 @@ pagination:
   size: 1
   alias: book
 permalink: /books/{{ book.isbn }}/
+isbn: {{ book.isbn }}
+schema: book
 ---
 <a class="back-link-header link-icon flex-centered" href="/books">{% tablericon "arrow-left" "Go back" %} Go back</a>
 <article class="book-focus">
