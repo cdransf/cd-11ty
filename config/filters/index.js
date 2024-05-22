@@ -248,6 +248,7 @@ export default {
       return ''
     }).length
   },
+  getLastWatched: (show) => show?.['episodes'][show['episodes']?.length - 1]?.['last_watched_at'],
 
     // tags
   filterTags: (tags) => {
