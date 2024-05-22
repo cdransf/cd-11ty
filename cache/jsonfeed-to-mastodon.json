@@ -13543,5 +13543,16 @@
       "https://social.lol/users/cory/statuses/112481847051335228"
     ],
     "lastTootTimestamp": 1716336777577
+  },
+  "https://rachsmith.com/my-own-little-patch/": {
+    "id": "aHR0cHM6Ly9yYWNoc21pdGguY29tL215LW93bi1saXR0bGUtcGF0Y2gv",
+    "title": "🔗: My own little patch",
+    "url": "https://rachsmith.com/my-own-little-patch/",
+    "content_text": "🔗: My own little patch #Tech #WebDev https://rachsmith.com/my-own-little-patch/",
+    "date_published": "Wed, 22 May 2024 16:51:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112485587537517839"
+    ],
+    "lastTootTimestamp": 1716393852868
   }
 }
