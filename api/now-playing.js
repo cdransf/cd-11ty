@@ -21,6 +21,7 @@ const emojiMap = (genre, artist) => {
   if (normalizedArtist === "bolt thrower") return "⚔️"
   if (normalizedArtist === "bruce springsteen") return "🇺🇸"
   if (normalizedArtist === "carcass") return "🥼"
+  if (normalizedArtist === "cloud") return "☁️🐀"
   if (normalizedArtist === "counting crows") return "🐦‍⬛"
   if (normalizedArtist === "david bowie") return "👨🏻‍🎤"
   if (normalizedArtist === "devoid of thought") return "🚫💭"
