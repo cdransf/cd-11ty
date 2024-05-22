@@ -58,8 +58,9 @@ const fetchAllTimeData = async (fields, table) => {
   return rows
 }
 
-const aggregateData = (data, groupByField, groupByType, sort = true) => {
+const aggregateData = (data, groupByField, groupByType) => {
   const aggregation = {}
+
   data.forEach(item => {
     const key = item[groupByField]
     if (!aggregation[key]) {
@@ -92,7 +93,8 @@ const aggregateData = (data, groupByField, groupByType, sort = true) => {
     }
     aggregation[key].plays++
   })
-  const aggregatedData = sort ? Object.values(aggregation).sort((a, b) => b.plays - a.plays) : Object.values(aggregation)
+
+  const aggregatedData = Object.values(aggregation).sort((a, b) => b.plays - a.plays)
 
   aggregatedData.forEach((item, index) => {
     item.rank = index + 1
@@ -158,7 +160,7 @@ export default async function() {
     artists: aggregateData(recentData, 'artist_name', 'artists'),
     albums: aggregateData(recentData, 'album_name', 'albums'),
     tracks: aggregateData(recentData, 'track_name', 'track'),
-    tracksChronological: aggregateData(recentData, 'track_name', 'track', false),
+    tracksChronological: aggregateData(recentData, 'track_name', 'track').sort((a, b) => b.timestamp - a.timestamp),
     genres: aggregateGenres(recentData),
     totalTracks: recentData?.length?.toLocaleString('en-US')
   }
