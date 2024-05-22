@@ -13304,9 +13304,9 @@
   },
   "https://joe-steel.com/2024-05-14-Gemini-In-Gemini-Out.html": {
     "id": "aHR0cHM6Ly9qb2Utc3RlZWwuY29tLzIwMjQtMDUtMTQtR2VtaW5pLUluLUdlbWluaS1PdXQuaHRtbA==",
-    "title": "🔗: Gemini In, Gemini Out",
+    "title": "🔗: Gemini In, Gemini Out via Joe Rosensteel",
     "url": "https://joe-steel.com/2024-05-14-Gemini-In-Gemini-Out.html",
-    "content_text": "🔗: Gemini In, Gemini Out #Tech #AI https://joe-steel.com/2024-05-14-Gemini-In-Gemini-Out.html",
+    "content_text": "🔗: Gemini In, Gemini Out via Joe Rosensteel #Tech #AI https://joe-steel.com/2024-05-14-Gemini-In-Gemini-Out.html",
     "date_published": "Wed, 15 May 2024 01:20:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112442693528785645"
@@ -13315,9 +13315,9 @@
   },
   "https://www.newyorker.com/culture/infinite-scroll/the-revenge-of-the-home-page": {
     "id": "aHR0cHM6Ly93d3cubmV3eW9ya2VyLmNvbS9jdWx0dXJlL2luZmluaXRlLXNjcm9sbC90aGUtcmV2ZW5nZS1vZi10aGUtaG9tZS1wYWdl",
-    "title": "🔗: The Revenge of the Home Page",
+    "title": "🔗: The Revenge of the Home Page via The New Yorker",
     "url": "https://www.newyorker.com/culture/infinite-scroll/the-revenge-of-the-home-page",
-    "content_text": "🔗: The Revenge of the Home Page #Tech #Journalism #SocialMedia https://www.newyorker.com/culture/infinite-scroll/the-revenge-of-the-home-page",
+    "content_text": "🔗: The Revenge of the Home Page via The New Yorker #Tech #Journalism #SocialMedia https://www.newyorker.com/culture/infinite-scroll/the-revenge-of-the-home-page",
     "date_published": "Wed, 15 May 2024 15:38:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112445950066979635"
@@ -13403,9 +13403,9 @@
   },
   "https://derekkedziora.com/notes/20240518-customers-and-users-in-2024": {
     "id": "aHR0cHM6Ly9kZXJla2tlZHppb3JhLmNvbS9ub3Rlcy8yMDI0MDUxOC1jdXN0b21lcnMtYW5kLXVzZXJzLWluLTIwMjQ=",
-    "title": "🔗: Customers and users in 2024",
+    "title": "🔗: Customers and users in 2024 via Derek Kedziora",
     "url": "https://derekkedziora.com/notes/20240518-customers-and-users-in-2024",
-    "content_text": "🔗: Customers and users in 2024 #Tech https://derekkedziora.com/notes/20240518-customers-and-users-in-2024",
+    "content_text": "🔗: Customers and users in 2024 via Derek Kedziora #Tech https://derekkedziora.com/notes/20240518-customers-and-users-in-2024",
     "date_published": "Sat, 18 May 2024 21:16:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112464351252839621"
@@ -13414,9 +13414,9 @@
   },
   "https://zicklepop.com/post/that-site-you-use-is-dead": {
     "id": "aHR0cHM6Ly96aWNrbGVwb3AuY29tL3Bvc3QvdGhhdC1zaXRlLXlvdS11c2UtaXMtZGVhZA==",
-    "title": "🔗: That site you use is dead",
+    "title": "🔗: That site you use is dead via zicklepop",
     "url": "https://zicklepop.com/post/that-site-you-use-is-dead",
-    "content_text": "🔗: That site you use is dead #Tech https://zicklepop.com/post/that-site-you-use-is-dead",
+    "content_text": "🔗: That site you use is dead via zicklepop #Tech https://zicklepop.com/post/that-site-you-use-is-dead",
     "date_published": "Sat, 18 May 2024 21:15:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112463972916703397"
@@ -13546,13 +13546,24 @@
   },
   "https://rachsmith.com/my-own-little-patch/": {
     "id": "aHR0cHM6Ly9yYWNoc21pdGguY29tL215LW93bi1saXR0bGUtcGF0Y2gv",
-    "title": "🔗: My own little patch",
+    "title": "🔗: My own little patch via Rach Smith",
     "url": "https://rachsmith.com/my-own-little-patch/",
-    "content_text": "🔗: My own little patch #Tech #WebDev https://rachsmith.com/my-own-little-patch/",
+    "content_text": "🔗: My own little patch via Rach Smith #Tech #WebDev https://rachsmith.com/my-own-little-patch/",
     "date_published": "Wed, 22 May 2024 16:51:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112485587537517839"
     ],
     "lastTootTimestamp": 1716393852868
+  },
+  "https://coryd.dev/posts/2024/boring-is-good/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9ib3JpbmctaXMtZ29vZC8=",
+    "title": "📝: Boring is good",
+    "url": "https://coryd.dev/posts/2024/boring-is-good/",
+    "content_text": "📝: Boring is good #Tech https://coryd.dev/posts/2024/boring-is-good/",
+    "date_published": "Wed, 22 May 2024 16:47:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112485933433076040"
+    ],
+    "lastTootTimestamp": 1716399130811
   }
 }
