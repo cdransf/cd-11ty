@@ -13127,10 +13127,10 @@
     "lastTootTimestamp": 1714853070688
   },
   "https://coryd.dev/books/9781501182891": {
-    "id": "aHR0cHM6Ly9vcGVubGlicmFyeS5vcmcvaXNibi85NzgxNTAxMTgyODkx",
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvYm9va3MvOTc4MTUwMTE4Mjg5MQ==",
     "title": "📖: Goliath (⭐️⭐️⭐️⭐️)",
     "url": "https://coryd.dev/books/9781501182891",
-    "content_text": "📖: Goliath (⭐️⭐️⭐️⭐️) #Books #NowReading https://coryd.dev/books/9781501182891",
+    "content_text": "📖: Goliath (⭐️⭐️⭐️⭐️) https://coryd.dev/books/9781501182891",
     "date_published": "Thu, 16 May 2024 00:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112386485783145916"
@@ -13358,10 +13358,10 @@
     "lastTootTimestamp": 1715832240855
   },
   "https://coryd.dev/books/0807007935": {
-    "id": "aHR0cHM6Ly9vcGVubGlicmFyeS5vcmcvaXNibi8wODA3MDA3OTM1",
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvYm9va3MvMDgwNzAwNzkzNQ==",
     "title": "📖: Drive (⭐️⭐️⭐️⭐️)",
     "url": "https://coryd.dev/books/0807007935",
-    "content_text": "📖: Drive (⭐️⭐️⭐️⭐️) #Books #NowReading https://coryd.dev/books/0807007935",
+    "content_text": "📖: Drive (⭐️⭐️⭐️⭐️) https://coryd.dev/books/0807007935",
     "date_published": "Sat, 18 May 2024 00:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112451611288696783"
@@ -13380,10 +13380,10 @@
     "lastTootTimestamp": 1715961850286
   },
   "https://coryd.dev/books/0316462845": {
-    "id": "aHR0cHM6Ly9vcGVubGlicmFyeS5vcmcvaXNibi8wMzE2NDYyODQ1",
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvYm9va3MvMDMxNjQ2Mjg0NQ==",
     "title": "📖: Machine Vendetta (⭐️⭐️⭐️⭐️)",
     "url": "https://coryd.dev/books/0316462845",
-    "content_text": "📖: Machine Vendetta (⭐️⭐️⭐️⭐️) #Books #NowReading https://coryd.dev/books/0316462845",
+    "content_text": "📖: Machine Vendetta (⭐️⭐️⭐️⭐️) https://coryd.dev/books/0316462845",
     "date_published": "Wed, 15 May 2024 00:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112458364539141769"
@@ -13435,10 +13435,10 @@
     "lastTootTimestamp": 1716072455634
   },
   "https://coryd.dev/books/1839762802": {
-    "id": "aHR0cHM6Ly9vcGVubGlicmFyeS5vcmcvaXNibi8xODM5NzYyODAy",
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvYm9va3MvMTgzOTc2MjgwMg==",
     "title": "📖: Black Meme",
     "url": "https://coryd.dev/books/1839762802",
-    "content_text": "📖: Black Meme #Books #NowReading https://coryd.dev/books/1839762802",
+    "content_text": "📖: Black Meme https://coryd.dev/books/1839762802",
     "date_published": "Sun, 19 May 2024 00:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112468881007775327"
@@ -13512,10 +13512,10 @@
     "lastTootTimestamp": 1716242609871
   },
   "https://coryd.dev/books/9780306824098": {
-    "id": "aHR0cHM6Ly9vcGVubGlicmFyeS5vcmcvaXNibi85NzgwMzA2ODI0MDk4",
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvYm9va3MvOTc4MDMwNjgyNDA5OA==",
     "title": "📖: Under the Big Black Sun (⭐️⭐️⭐️⭐️)",
     "url": "https://coryd.dev/books/9780306824098",
-    "content_text": "📖: Under the Big Black Sun (⭐️⭐️⭐️⭐️) #Books #NowReading https://coryd.dev/books/9780306824098",
+    "content_text": "📖: Under the Big Black Sun (⭐️⭐️⭐️⭐️) https://coryd.dev/books/9780306824098",
     "date_published": "Tue, 21 May 2024 00:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112479923811123549"
@@ -13532,5 +13532,16 @@
       "https://social.lol/users/cory/statuses/112480396568749721"
     ],
     "lastTootTimestamp": 1716314644945
+  },
+  "https://coryd.dev/posts/2024/data-sharing-should-always-be-opt-in/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9kYXRhLXNoYXJpbmctc2hvdWxkLWFsd2F5cy1iZS1vcHQtaW4v",
+    "title": "📝: Date sharing should always be opt in",
+    "url": "https://coryd.dev/posts/2024/data-sharing-should-always-be-opt-in/",
+    "content_text": "📝: Date sharing should always be opt in #Tech #AI #Privacy https://coryd.dev/posts/2024/data-sharing-should-always-be-opt-in/",
+    "date_published": "Tue, 21 May 2024 23:59:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112481847051335228"
+    ],
+    "lastTootTimestamp": 1716336777577
   }
 }
