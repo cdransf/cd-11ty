@@ -1,4 +1,5 @@
 export default {
+  "https://knowler.dev": "Nathan Knowler",
   "https://zicklepop.com": "zicklepop",
   "https://simonwillison.net": "Simon Willison",
   "https://futurism.com": "Futurism",
