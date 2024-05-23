@@ -74,6 +74,7 @@
 # general
 /articles/ / 301!
 /tags /search 301!
+/referrals /save 301!
 /mastodon https://social.lol/@cory 301!
 /coffee https://www.buymeacoffee.com/cory 301!
 /speedlify https://speedlify.coryd.dev 301!
