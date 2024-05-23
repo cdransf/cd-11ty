@@ -1,3 +1,4 @@
+import authors from '../data/author-map.js'
 import tagAliases from '../data/tag-aliases.js'
 import { DateTime } from 'luxon'
 
@@ -45,12 +46,19 @@ export const allContent = (collection) => {
     if (!parsedDate.isValid) parsedDate = DateTime.fromFormat(date, 'dd-MM-yyyy')
     return parsedDate.isValid ? parsedDate.toISO() : null
   }
+  const authorLookup = (url) => {
+    if (!url) return null
+    const urlObject = new URL(url)
+    const baseUrl = urlObject.origin
+    return authors?.[baseUrl] || null
+  }
   const addContent = (items, icon, getTitle, getDate) => {
     if (items) {
       items.forEach(item => {
+        const author = authorLookup(item.data?.link)
         const content = {
           url: item.url?.includes('http') ? item.url : `https://coryd.dev${item.url}`,
-          title: `${icon}: ${getTitle(item)}`
+          title: `${icon}: ${getTitle(item)}${author ? ' via ' + author : ''}`
         }
         if (item.data?.link) content.url = item.data?.link
         if (item.data?.description) content.description = `${item.data.description}<br/><br/>`

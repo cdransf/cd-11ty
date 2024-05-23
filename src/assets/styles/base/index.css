@@ -490,6 +490,8 @@ button {
 
 /* selects */
 select {
+  color: var(--text-color);
+  background-color: var(--background-color);
   padding: var(--sizing-xs) var(--sizing-sm);
 }
 

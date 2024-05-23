@@ -6,6 +6,10 @@
     {{ title }} • {{ meta.siteName }}
   {% elsif book.title %}
     Books • {{ book.title }} • {{ meta.siteName }}
+  {% elsif movie.title %}
+    Movies • {{ movie.title }}{% if movie.rating %} ({{ movie.rating }}){% endif %} • {{ meta.siteName }}
+  {% elsif movie.title %}
+    Shows • {{ show.title }} • {{ meta.siteName }}
   {% else %}
     {{ meta.siteName }}
   {%- endif -%}
@@ -15,6 +19,10 @@
     {{ post_excerpt | markdown | strip_html }}
   {% elsif book.description %}
     {{ book.description }}
+  {% elsif movie.description %}
+    {% if movie.review %}{{ movie.review }}{% else %}{{ movie.description }}{% endif %}
+  {% elsif show.description %}
+    {% if show.review %}{{ show.review }}{% else %}{{ show.description }}{% endif %}
   {% elsif description %}
     {{ description }}
   {% else %}
@@ -34,6 +42,10 @@
     {{ featuredBook.image }}
   {%- elsif schema == 'book' -%}
     {{ book.image }}
+  {%- elsif schema == 'movie' -%}
+    {{ movie.backdrop }}
+  {%- elsif schema == 'show' -%}
+    {{ meta.url }}/media/shows/backdrops/backdrop-{{ show.tmdb_id }}.jpg
   {%- else -%}
     {{ meta.meta_data.opengraph_default }}
   {%- endif -%}

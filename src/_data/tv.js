@@ -18,6 +18,8 @@ const fetchAllShows = async () => {
         collected,
         favorite,
         year,
+        description,
+        review,
         episodes (
           episode_number,
           season_number,
@@ -88,7 +90,7 @@ export default async function () {
 
       showEpisodesMap[showTmdbId].episodes.push({
         name: showTitle,
-        url: `https://www.themoviedb.org/tv/${showTmdbId}/season/${seasonNumber}/episode/${episodeNumber}`,
+        url: `https://coryd.dev/shows/${showTmdbId}`,
         subtext: `${showTitle} • S${seasonNumber}E${episodeNumber}`,
         episode: episodeNumber,
         season: seasonNumber,
@@ -112,7 +114,7 @@ export default async function () {
       if (show.episodes.length > 1) {
         episodeData.push({
           name: show.title,
-          url: `https://www.themoviedb.org/tv/${show['tmdbId']}`,
+          url: `https://coryd.dev/shows/${show['tmdbId']}`,
           subtext: `S${startingSeason}E${startingEpisode} - S${endingSeason}E${endingEpisode}`,
           startingEpisode,
           startingSeason,
@@ -138,7 +140,7 @@ export default async function () {
 
   const favoriteShows = shows.filter(show => show['favorite'])
   const collectedShows = shows.filter(show => show['collected'])
-  const toWatch = shows.map(show => ({...show, url: `https://www.themoviedb.org/tv/${show['tmdb_id']}`})).filter(show => !show.episodes.some(episode => episode.last_watched_at)).sort((a, b) => a['title'].localeCompare(b['title']))
+  const toWatch = shows.map(show => ({...show, url: `https://coryd.dev/shows/${show['tmdb_id']}`})).filter(show => !show.episodes.some(episode => episode.last_watched_at)).sort((a, b) => a['title'].localeCompare(b['title']))
 
   return {
     shows,

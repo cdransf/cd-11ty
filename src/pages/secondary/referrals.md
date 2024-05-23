@@ -1,8 +1,8 @@
 ---
-title: Referrals
+title: Save
 layout: default
-permalink: /referrals.html
-description: Referral links for services that I use.
+permalink: /save.html
+description: Save a little bit on services that I also use.
 ---
 <h2 class="page-header">{{ title }}</h2>
 

@@ -22,7 +22,9 @@ const fetchAllMovies = async () => {
         collected,
         plays,
         favorite,
-        rating
+        rating,
+        description,
+        review
       `)
       .order('last_watched', { ascending: false })
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
@@ -49,7 +51,7 @@ export default async function () {
       lastWatched: item['last_watched'],
       dateAdded: item['last_watched'],
       year: item['year'],
-      url: `https://www.themoviedb.org/movie/${item['tmdb_id']}`,
+      url: `https://coryd.dev/movies/${item['tmdb_id']}`,
       description: `${item['title']} (${item['year']})<br/>Watched at: ${DateTime.fromISO(item['last_watched'], { zone: 'utc' }).setZone('America/Los_Angeles').toFormat('MMMM d, yyyy, h:mma')}`,
       image: `https://coryd.dev/media/movies/poster-${item['tmdb_id']}.jpg`,
       backdrop: `https://coryd.dev/media/movies/backdrops/backdrop-${item['tmdb_id']}.jpg`,
@@ -57,6 +59,8 @@ export default async function () {
       collected: item['collected'],
       favorite: item['favorite'],
       rating: item['rating'],
+      description: item['description'],
+      id: item['tmdb_id'],
       type: 'movie'
     }
     return movie

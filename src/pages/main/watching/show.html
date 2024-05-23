@@ -1,0 +1,27 @@
+---
+layout: default
+pagination:
+  data: tv.shows
+  size: 1
+  alias: show
+permalink: /shows/{{ show.tmdb_id }}/
+schema: show
+---
+{%- capture alt -%}
+  {{ show.title }} • {{ show.year }}
+{%- endcapture -%}
+{% assign lastWatched = show | getLastWatched %}
+<a class="back-link-header link-icon flex-centered" href="/watching">{% tablericon "arrow-left" "Go back" %} Go back</a>
+<article class="watching-focus">
+  <img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/shows/backdrops/backdrop-{{ show.tmdb_id }}.jpg&fm=webp&q=85&w=768&h=432" alt="{{ alt }}" class="image-banner" loading="eager" decoding="async" width="768" height="432" />
+  <div class="watching-meta">
+    <p class="title"><strong>{{ show.title }}</strong></p>
+    {% if lastWatched %}<p class="sub-meta">Last watched on: {{ lastWatched | date: "%B %e, %Y" }}</p>{% endif %}
+    <p class="sub-meta"><a href="https://themoviedb.org/tv/{{ show.tmdb_id }}">View on TMDB</a></p>
+  </div>
+  {% if show.review %}
+    <p>{{ show.review | markdown }}</p>
+    <hr class="large-spacing" />
+  {% endif %}
+  {% if show.description %}<p><em>{{ show.description }}</em></p>{% endif %}
+</article>

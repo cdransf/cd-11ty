@@ -118,6 +118,34 @@
   }
 }
 
+.watching-focus {
+  border-bottom: 0;
+
+  & .watching-meta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sizing-xs);
+    margin-top: var(--sizing-base);
+
+    & p {
+      &.title {
+        font-size: var(--font-size-xl);
+      }
+
+      &.sub-meta {
+        font-size: var(--font-size-xs);
+        line-height: var(--line-height-xs);
+      }
+
+      &.title,
+      &.rating,
+      &.sub-meta {
+        margin: 0;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   .watching.grid {
     grid-template-columns: repeat(3,minmax(0,1fr))
