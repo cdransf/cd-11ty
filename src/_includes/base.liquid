@@ -7,7 +7,7 @@
   {% elsif book.title %}
     Books • {{ book.title }} • {{ meta.siteName }}
   {% elsif movie.title %}
-    Movies • {{ movie.title }} • {{ meta.siteName }}
+    Movies • {{ movie.title }}{% if movie.rating %} ({{ movie.rating }}){% endif %} • {{ meta.siteName }}
   {% elsif movie.title %}
     Shows • {{ show.title }} • {{ meta.siteName }}
   {% else %}
@@ -20,9 +20,9 @@
   {% elsif book.description %}
     {{ book.description }}
   {% elsif movie.description %}
-    {{ movie.description }}
+    {% if movie.review %}{{ movie.review }}{% else %}{{ movie.description }}{% endif %}
   {% elsif show.description %}
-    {{ show.description }}
+    {% if show.review %}{{ show.review }}{% else %}{{ show.description }}{% endif %}
   {% elsif description %}
     {{ description }}
   {% else %}

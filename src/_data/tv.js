@@ -19,6 +19,7 @@ const fetchAllShows = async () => {
         favorite,
         year,
         description,
+        review,
         episodes (
           episode_number,
           season_number,

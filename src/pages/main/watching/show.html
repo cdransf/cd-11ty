@@ -19,5 +19,9 @@ schema: show
     {% if lastWatched %}<p class="sub-meta">Last watched on: {{ lastWatched | date: "%B %e, %Y" }}</p>{% endif %}
     <p class="sub-meta"><a href="https://themoviedb.org/tv/{{ show.tmdb_id }}">View on TMDB</a></p>
   </div>
+  {% if show.review %}
+    <p>{{ show.review | markdown }}</p>
+    <hr class="large-spacing" />
+  {% endif %}
   {% if show.description %}<p><em>{{ show.description }}</em></p>{% endif %}
 </article>

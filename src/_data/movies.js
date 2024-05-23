@@ -23,7 +23,8 @@ const fetchAllMovies = async () => {
         plays,
         favorite,
         rating,
-        description
+        description,
+        review
       `)
       .order('last_watched', { ascending: false })
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
