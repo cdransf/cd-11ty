@@ -210,19 +210,17 @@ hr {
 /* tables */
 table {
   display: block;
-  overflow-x: scroll;
-  overscroll-behavior: contain;
+  overflow-x: auto;
   width: 100%;
-  max-width: fit-content;
-  margin: 0 auto;
-  white-space: nowrap;
   border: 1px solid var(--gray-light);
+  white-space: nowrap;
 }
 
 table,
 th,
 td {
   border-collapse: collapse;
+  width: 100%;
 }
 
 :is(th, td):not(:last-child) {
@@ -237,8 +235,13 @@ tr:not(:last-child) {
 th,
 td {
   padding: var(--sizing-sm);
-  min-width: calc(var(--sizing-3xl) * 2);
+  min-width: max-content;
   word-break: break-word;
+  width: 100%;
+}
+
+td {
+  min-width: calc(var(--sizing-3xl) * 2);
 }
 
 th {
@@ -342,6 +345,7 @@ nav .active svg {
 .coffee svg { stroke: var(--brand-buy-me-a-coffee) !important; }
 .heart-handshake svg { stroke: var(--webrings) !important; }
 .rss svg { stroke: var(--brand-rss) !important; }
+.favorite svg { stroke: var(--favorite) !important }
 
 /* layout */
 .default-wrapper {

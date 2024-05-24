@@ -1,0 +1,21 @@
+[data-toggle-content].text-toggle-hidden {
+  position: relative;
+  height: calc(var(--sizing-3xl) * 5);
+  overflow: hidden;
+  margin-bottom: var(--sizing-base);
+}
+
+[data-toggle-content].text-toggle-hidden::after {
+  position: absolute;
+  z-index: 1;
+  content: '';
+  top: 0;
+  left: 0;
+  box-shadow: inset 0 -100px 50px -60px var(--background-color);
+  width: 100%;
+  height: 100%;
+}
+
+[data-toggle-button] {
+  margin-bottom: var(--sizing-base) !important;
+}

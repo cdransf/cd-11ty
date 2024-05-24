@@ -1,9 +1,31 @@
 import { createClient } from '@supabase/supabase-js'
 import { DateTime } from 'luxon'
+import slugify from 'slugify'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+
+const slugifyString = (str) => slugify(str, {
+  replacement: '-',
+  remove: /[#,&,+()$~%.'":*?<>{}]/g,
+  lower: true,
+})
+
+const regionNames = new Intl.DisplayNames(['en'], { type: 'region' })
+const getCountryName = (countryCode) => regionNames.of(countryCode.trim()) || countryCode.trim()
+const parseCountryField = (countryField) => {
+  if (!countryField) return null
+
+  const delimiters = [',', '/', '&', 'and']
+  let countries = [countryField]
+
+  delimiters.forEach(delimiter => {
+    countries = countries.flatMap(country => country.split(delimiter))
+  })
+
+  return countries.map(getCountryName).join(', ')
+}
 
 const fetchDataForPeriod = async (startPeriod, fields, table) => {
   const PAGE_SIZE = 1000
@@ -68,22 +90,22 @@ const aggregateData = (data, groupByField, groupByType) => {
         aggregation[key] = {
           title: item[groupByField],
           plays: 0,
-          mbid: item['albums']?.mbid || '',
-          url: item['albums']?.mbid ? `https://musicbrainz.org/release/${item['albums'].mbid}` : `https://musicbrainz.org/search?query=${encodeURIComponent(item['album_name'])}&type=release`,
-          image: item['albums']?.image || '',
+          mbid: item['albums']['mbid'],
+          url: `https://coryd.dev/music/artists/${slugifyString(item['artist_name'])}-${slugifyString(parseCountryField(item['artists']['country']))}`,
+          image: item['albums']?.['image'] || '',
           timestamp: item['listened_at'],
           type: groupByType,
-          genre: item['artists']?.genre || 'Unknown'
+          genre: item['artists']?.['genre'] || ''
         }
       } else {
         aggregation[key] = {
           title: item[groupByField],
           plays: 0,
-          mbid: item[groupByType]?.mbid || '',
-          url: item[groupByType]?.mbid ? `https://musicbrainz.org/${groupByType === 'albums' ? 'release' : 'artist'}/${item[groupByType].mbid}` : `https://musicbrainz.org/search?query=${encodeURIComponent(item[groupByField])}&type=${groupByType === 'albums' ? 'release' : 'artist'}`,
+          mbid: item[groupByType]?.['mbid'] || '',
+          url: `https://coryd.dev/music/artists/${slugifyString(item['artist_name'])}-${slugifyString(parseCountryField(item['artists']['country']))}`,
           image: item[groupByType]?.image || '',
           type: groupByType,
-          genre: item['artists']?.genre || 'Unknown'
+          genre: item['artists']?.['genre'] || ''
         }
       }
       if (
@@ -129,7 +151,7 @@ export default async function() {
     album_name,
     album_key,
     listened_at,
-    artists (mbid, image, genre),
+    artists (mbid, image, genre, country),
     albums (mbid, image)
   `
 

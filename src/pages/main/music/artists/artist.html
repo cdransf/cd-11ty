@@ -1,0 +1,54 @@
+---
+layout: default
+pagination:
+  data: artists
+  size: 1
+  alias: artist
+permalink: /music/artists/{{ artist.name_string | slugify | downcase }}-{{ artist.country | slugify | downcase}}/
+schema: artist
+---
+{%- capture alt -%}
+  {{ artist.name_string }} • {{ artist.country }}
+{%- endcapture -%}
+{% capture js %}
+  {% render "../../../../assets/scripts/text-toggle.js" %}
+{% endcapture %}
+<script>{{ js }}</script>
+<noscript><style>[data-toggle-content].text-toggle-hidden {height: unset !important;overflow: unset !important;margin-bottom: unset !important;}[data-toggle-content].text-toggle-hidden::after {display: none !important;}</style></noscript>
+<a class="back-link-header link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a>
+<article class="artist-focus">
+  <div class="artist-display">
+    <img src="https://coryd.dev/.netlify/images/?url={{ artist.image }}&fm=webp&q=85&w=240&h=240&fit=cover" alt="{{ alt }}" loading="eager" decoding="async" width="240" height="240" />
+    <div class="artist-meta">
+      <p class="title"><strong>{{ artist.name_string }}</strong></p>
+      {%- if artist.favorite -%}
+        <p class="sub-meta favorite flex-centered">{% tablericon "heart" "Favorite" %} This is one of my favorite artists!</p>
+      {%- endif -%}
+      {%- if artist.total_plays > 0 -%}
+        <p class="sub-meta"><strong class="highlight-text">{{ artist.total_plays }} plays</strong></p>
+      {%- endif -%}
+      <p class="sub-meta">{{ artist.genre }}</p>
+      <p class="sub-meta">
+        <a class="brain" href="https://musicbrainz.org/artist/{{ artist.mbid }}">{% tablericon "brain" "MusicBrainz" %}</a>
+      </p>
+    </div>
+  </div>
+  {%- if artist.description -%}
+  <div data-toggle-content class="text-toggle-hidden">{{ artist.description | markdown }}</div>
+  <button data-toggle-button>Show more</button>
+  {%- endif -%}
+  <table>
+    <tr>
+      <th>Year</th>
+      <th>Title</th>
+      <th>Plays</th>
+    </tr>
+    {% for album in artist.albums %}
+    <tr>
+      <td>{{ album.release_year }}</td>
+      <td>{{ album.name }}</td>
+      <td>{{ album.total_plays }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</article>

@@ -51,7 +51,7 @@ export default async function () {
       lastWatched: item['last_watched'],
       dateAdded: item['last_watched'],
       year: item['year'],
-      url: `https://coryd.dev/movies/${item['tmdb_id']}`,
+      url: `https://coryd.dev/watching/movies/${item['tmdb_id']}`,
       description: `${item['title']} (${item['year']})<br/>Watched at: ${DateTime.fromISO(item['last_watched'], { zone: 'utc' }).setZone('America/Los_Angeles').toFormat('MMMM d, yyyy, h:mma')}`,
       image: `https://coryd.dev/media/movies/poster-${item['tmdb_id']}.jpg`,
       backdrop: `https://coryd.dev/media/movies/backdrops/backdrop-${item['tmdb_id']}.jpg`,

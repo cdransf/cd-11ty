@@ -1,11 +1,20 @@
 import { createClient } from '@supabase/supabase-js'
 import { DateTime } from 'luxon'
+import slugify from 'slugify'
 
 const SUPABASE_URL = Netlify.env.get('SUPABASE_URL')
 const SUPABASE_KEY = Netlify.env.get('SUPABASE_KEY')
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
-const sanitizeMediaString = (string) => string.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '')
+const sanitizeMediaString = (str) => {
+  const sanitizedString = str.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '')
+
+  return slugify(sanitizedString, {
+    replacement: '-',
+    remove: /[#,&,+()$~%.'":*?<>{}]/g,
+    lower: true,
+  })
+}
 
 export default async (request) => {
   const ACCOUNT_ID_PLEX = process.env.ACCOUNT_ID_PLEX
@@ -23,10 +32,10 @@ export default async (request) => {
     const album = payload['Metadata']['parentTitle']
     const track = payload['Metadata']['title']
     const listenedAt = Math.floor(DateTime.now().toSeconds())
-    const artistKey = sanitizeMediaString(artist).replace(/\s+/g, '-').toLowerCase()
-    const albumKey = `${artistKey}-${sanitizeMediaString(album).replace(/\s+/g, '-').toLowerCase()}`
+    const artistKey = sanitizeMediaString(artist)
+    const albumKey = `${artistKey}-${sanitizeMediaString(album)}`
 
-    const { data: artistData, error: artistError } = await supabase
+    const { error: artistError } = await supabase
       .from('artists')
       .select('*')
       .eq('name_string', artist)
@@ -52,7 +61,7 @@ export default async (request) => {
       return new Response(JSON.stringify({ status: 'error', message: artistError.message }), { headers: { "Content-Type": "application/json" } })
     }
 
-    const { data: albumData, error: albumError } = await supabase
+    const { error: albumError } = await supabase
       .from('albums')
       .select('*')
       .eq('key', albumKey)

@@ -1,0 +1,57 @@
+.artist-focus {
+  border-bottom: 0;
+
+  & img {
+    border: 1px solid var(--accent-color);
+  }
+
+  & .artist-display {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sizing-xs);
+    margin-top: var(--sizing-base);
+    margin-bottom: var(--sizing-base);
+
+    .artist-meta {
+      display: flex;
+      flex-direction: column;
+      gap: var(--sizing-xs);
+
+      & p {
+        &.title {
+          font-size: var(--font-size-xl);
+        }
+
+        &.sub-meta {
+          font-size: var(--font-size-xs);
+          line-height: var(--line-height-xs);
+        }
+
+        &.title,
+        &.sub-meta {
+          margin: 0;
+        }
+
+        &.sub-meta svg {
+          width: 16px;
+          height: 16px;
+          margin-right: var(--sizing-xs);
+        }
+
+        &.favorite {
+          color: var(--favorite);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .artist-focus {
+    & .artist-display {
+      margin-top: 0;
+      flex-direction: row;
+      gap: var(--sizing-md);
+    }
+  }
+}
