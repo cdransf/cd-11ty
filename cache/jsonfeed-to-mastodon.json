@@ -13479,10 +13479,10 @@
     "lastTootTimestamp": 1716171323109
   },
   "https://coryd.dev/watching/movies/29427": {
-    "id": "aHR0cHM6Ly93d3cudGhlbW92aWVkYi5vcmcvbW92aWUvMjk0Mjc=",
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvd2F0Y2hpbmcvbW92aWVzLzI5NDI3",
     "title": "🎥: The Crazies (⭐️⭐️⭐️)",
     "url": "https://coryd.dev/watching/movies/29427",
-    "content_text": "🎥: The Crazies (⭐️⭐️⭐️) #Movies #Watching https://coryd.dev/watching/movies/29427",
+    "content_text": "🎥: The Crazies (⭐️⭐️⭐️) https://coryd.dev/watching/movies/29427",
     "date_published": "Mon, 20 May 2024 15:15:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112474735239294133"
@@ -13523,10 +13523,10 @@
     "lastTootTimestamp": 1716307431247
   },
   "https://coryd.dev/watching/movies/384018": {
-    "id": "aHR0cHM6Ly93d3cudGhlbW92aWVkYi5vcmcvbW92aWUvMzg0MDE4",
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvd2F0Y2hpbmcvbW92aWVzLzM4NDAxOA==",
     "title": "🎥: Fast & Furious Presents: Hobbs & Shaw (⭐️⭐️⭐️)",
     "url": "https://coryd.dev/watching/movies/384018",
-    "content_text": "🎥: Fast & Furious Presents: Hobbs & Shaw (⭐️⭐️⭐️) #Movies #Watching https://coryd.dev/watching/movies/384018",
+    "content_text": "🎥: Fast & Furious Presents: Hobbs & Shaw (⭐️⭐️⭐️) https://coryd.dev/watching/movies/384018",
     "date_published": "Tue, 21 May 2024 15:49:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112480396568749721"
@@ -13598,5 +13598,24 @@
       "https://social.lol/users/cory/statuses/112492662805269929"
     ],
     "lastTootTimestamp": 1716501812869
+  },
+  "https://coryd.dev/watching/movies/1148027": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvd2F0Y2hpbmcvbW92aWVzLzExNDgwMjc=",
+    "title": "🎥: New Life (⭐️⭐️⭐️⭐️)",
+    "url": "https://coryd.dev/watching/movies/1148027",
+    "content_text": "🎥: New Life (⭐️⭐️⭐️⭐️) https://coryd.dev/watching/movies/1148027",
+    "date_published": "Sat, 18 May 2024 20:13:00 GMT",
+    "toots": []
+  },
+  "https://coryd.dev/watching/movies/1051896": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvd2F0Y2hpbmcvbW92aWVzLzEwNTE4OTY=",
+    "title": "🎥: Arcadian (⭐️⭐️⭐️)",
+    "url": "https://coryd.dev/watching/movies/1051896",
+    "content_text": "🎥: Arcadian (⭐️⭐️⭐️) https://coryd.dev/watching/movies/1051896",
+    "date_published": "Fri, 17 May 2024 16:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112493650821635894"
+    ],
+    "lastTootTimestamp": 1716516888797
   }
 }
