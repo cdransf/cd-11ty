@@ -37,7 +37,7 @@
     }
 
     & svg {
-      stroke: var(--error);
+      stroke: var(--warning);
     }
   }
 
