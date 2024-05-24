@@ -44,6 +44,11 @@
       }
     }
   }
+
+  table th:first-of-type,
+  table td:first-of-type {
+    width: calc(var(--sizing-3xl) * 6);
+  }
 }
 
 @media screen and (min-width: 768px) {
