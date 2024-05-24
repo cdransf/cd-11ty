@@ -5,6 +5,7 @@ pagination:
   size: 1
   alias: artist
 permalink: /music/artists/{{ artist.name_string | slugify | downcase }}-{{ artist.country | slugify | downcase}}/
+updated: "now"
 schema: artist
 ---
 {%- capture alt -%}
@@ -51,4 +52,5 @@ schema: artist
     </tr>
     {% endfor %}
   </table>
+  <p class="text-small text-centered"><em>These are the album by this artist that are in my collection, not necessarily a comprehensive discography.</em></p>
 </article>
