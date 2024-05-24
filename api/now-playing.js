@@ -141,7 +141,7 @@ export default async () => {
     content: `${emojiMap(
       scrobbleData.artists.genre,
       scrobbleData.artist_name
-    )} ${scrobbleData.track_name} by <a href="https://coryd.dev/music/artists/${sanitizeMediaString(scrobbleData.artist_name)}-${sanitizeMediaString(parseCountryField(scrobbleData.country))}">${
+    )} ${scrobbleData.track_name} by <a href="https://coryd.dev/music/artists/${sanitizeMediaString(scrobbleData.artist_name)}-${sanitizeMediaString(parseCountryField(scrobbleData.artists.country))}">${
       scrobbleData.artist_name
     }</a>`,
   }), { headers });
