@@ -13664,5 +13664,16 @@
       "https://social.lol/users/cory/statuses/112497385968918899"
     ],
     "lastTootTimestamp": 1716573882634
+  },
+  "https://niclake.me/ai": {
+    "id": "aHR0cHM6Ly9uaWNsYWtlLm1lL2Fp",
+    "title": "🔗: AI Is Not Ready For The World via Nic Lake",
+    "url": "https://niclake.me/ai",
+    "content_text": "🔗: AI Is Not Ready For The World via Nic Lake #Tech #AI https://niclake.me/ai",
+    "date_published": "Fri, 24 May 2024 20:23:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112497853545764750"
+    ],
+    "lastTootTimestamp": 1716581017296
   }
 }
