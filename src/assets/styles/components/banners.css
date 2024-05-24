@@ -27,6 +27,34 @@
     border-color: var(--gray-light);
   }
 
+  &.warning {
+    border-color: var(--warning);
+
+    & p a:hover,
+    & p a:active,
+    & p a:focus {
+      color: var(--warning);
+    }
+
+    & svg {
+      stroke: var(--error);
+    }
+  }
+
+  &.error {
+    border-color: var(--error);
+
+    & p a:hover,
+    & p a:active,
+    & p a:focus {
+      color: var(--error);
+    }
+
+    & svg {
+      stroke: var(--error);
+    }
+  }
+
   &.npm {
     border-color: var(--brand-npm);
 
