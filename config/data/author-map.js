@@ -1,4 +1,5 @@
 export default {
+  "https://www.anildash.com": "Anil Dash",
   "https://knowler.dev": "Nathan Knowler",
   "https://www.vox.com": "Vox",
   "https://rachsmith.com": "Rach Smith",
@@ -86,7 +87,7 @@ export default {
   "https://pdx.su": "Jeff Sandberg",
   "https://chrismcleod.dev": "Chris McLeod",
   "https://flamedfury.com": "fLaMEd",
-  "https://www.rollingstone.com": "Anil Dash",
+  "https://www.rollingstone.com": "Rolling Stone",
   "https://multiline.co": "Multiline Comment",
   "https://thebaffler.com": "The Baffler",
   "https://www.mayank.co": "Mayank",

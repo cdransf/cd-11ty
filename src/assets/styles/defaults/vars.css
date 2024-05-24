@@ -61,6 +61,8 @@
   --moon: #6a5acd;
   --sun: #ffa500;
   --favorite: #ff69b4;
+  --warning: #ff8c00;
+  --error: #d92525;
 
   /* fonts */
   --font-mono: MonoLisa, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;
