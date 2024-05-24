@@ -6,11 +6,15 @@ const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
-const slugifyString = (str) => slugify(str, {
-  replacement: '-',
-  remove: /[#,&,+()$~%.'":*?<>{}]/g,
-  lower: true,
-})
+const sanitizeMediaString = (str) => {
+  const sanitizedString = str.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '')
+
+  return slugify(sanitizedString, {
+    replacement: '-',
+    remove: /[#,&,+()$~%.'":*?<>{}]/g,
+    lower: true,
+  })
+}
 
 const regionNames = new Intl.DisplayNames(['en'], { type: 'region' })
 const getCountryName = (countryCode) => regionNames.of(countryCode.trim()) || countryCode.trim()
@@ -91,7 +95,7 @@ const aggregateData = (data, groupByField, groupByType) => {
           title: item[groupByField],
           plays: 0,
           mbid: item['albums']['mbid'],
-          url: `https://coryd.dev/music/artists/${slugifyString(item['artist_name'])}-${slugifyString(parseCountryField(item['artists']['country']))}`,
+          url: `https://coryd.dev/music/artists/${sanitizeMediaString(item['artist_name'])}-${sanitizeMediaString(parseCountryField(item['artists']['country']))}`,
           image: item['albums']?.['image'] || '',
           timestamp: item['listened_at'],
           type: groupByType,
@@ -102,7 +106,7 @@ const aggregateData = (data, groupByField, groupByType) => {
           title: item[groupByField],
           plays: 0,
           mbid: item[groupByType]?.['mbid'] || '',
-          url: `https://coryd.dev/music/artists/${slugifyString(item['artist_name'])}-${slugifyString(parseCountryField(item['artists']['country']))}`,
+          url: `https://coryd.dev/music/artists/${sanitizeMediaString(item['artist_name'])}-${sanitizeMediaString(parseCountryField(item['artists']['country']))}`,
           image: item[groupByType]?.image || '',
           type: groupByType,
           genre: item['artists']?.['genre'] || ''
