@@ -24,9 +24,9 @@
   {% elsif book.description %}
     {{ book.description }}
   {% elsif movie.description %}
-    {% if movie.review %}{{ movie.review }}{% else %}{{ movie.description }}{% endif %}
+    {% if movie.review %}{{ movie.review | truncate: 300 }}{% else %}{{ movie.description }}{% endif %}
   {% elsif show.description %}
-    {% if show.review %}{{ show.review }}{% else %}{{ show.description }}{% endif %}
+    {% if show.review %}{{ show.review | truncate: 300 }}{% else %}{{ show.description }}{% endif %}
   {% elsif description %}
     {{ description }}
   {% else %}
