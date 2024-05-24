@@ -7,7 +7,8 @@ export const searchIndex = (collection) => {
   let id = 0
   const collectionData = collection.getAll()[0]
   const { data } = collectionData
-  const { collections: { posts, links } } = data
+  const { collections: { posts, links }, movies } = data
+  const movieData = movies.movies.filter(movie => (movie.review?.length && movie.review?.length > 0 && movie.rating))
   const addItemToIndex = (items, icon, getUrl, getTitle, getTags) => {
     if (items) {
       items.forEach((item) => {
@@ -15,7 +16,7 @@ export const searchIndex = (collection) => {
           id,
           url: getUrl(item),
           title: `${icon}: ${getTitle(item)}`,
-          tags: getTags(item),
+          tags: getTags ? getTags(item) : [],
         })
         id++
       })
@@ -24,6 +25,7 @@ export const searchIndex = (collection) => {
 
   addItemToIndex(posts, '📝', item => item.url.includes('http') ? item.url : `https://coryd.dev${item.url}`, item => item.data.title, item => item.data.tags.filter(tag => tag !== 'posts'))
   addItemToIndex(links, '🔗', item => item.data.link, item => item.data.title, item => item.data.tags)
+  if (movieData) addItemToIndex(movieData, '🎥', item => item.url, item => `${item.title} (${item.rating})`)
 
   return searchIndex
 }
