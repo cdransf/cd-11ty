@@ -4,11 +4,13 @@
     {{ title }}
   {% elsif title %}
     {{ title }} • {{ meta.siteName }}
+  {% elsif artist.name_string %}
+    Artists • {{ artist.name_string }} • {{ meta.siteName }}
   {% elsif book.title %}
     Books • {{ book.title }} • {{ meta.siteName }}
   {% elsif movie.title %}
     Movies • {{ movie.title }}{% if movie.rating %} ({{ movie.rating }}){% endif %} • {{ meta.siteName }}
-  {% elsif movie.title %}
+  {% elsif show.title %}
     Shows • {{ show.title }} • {{ meta.siteName }}
   {% else %}
     {{ meta.siteName }}
@@ -17,6 +19,8 @@
 {%- capture pageDescription -%}
   {%- if schema == 'blog' -%}
     {{ post_excerpt | markdown | strip_html }}
+  {% elsif artist.description %}
+    {{ artist.description | truncate: 300 }}
   {% elsif book.description %}
     {{ book.description }}
   {% elsif movie.description %}
@@ -34,6 +38,8 @@
     {{ meta.url }}/assets/img/ogi/{{ title | slugifyString }}-preview.png
   {%- elsif schema == 'music' -%}
     {{ music.recent.artists[0].image }}
+  {%- elsif schema == 'artist' -%}
+    {{ artist.image }}
   {%- elsif schema == 'watching' -%}
     {%- assign featuredMovie = movies.recentlyWatched | first -%}
     {{ featuredMovie.backdrop }}
