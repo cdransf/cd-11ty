@@ -13368,8 +13368,8 @@
     ],
     "lastTootTimestamp": 1715875416427
   },
-  "https://coryd.dev/watching/movies/1051896": {
-    "id": "aHR0cHM6Ly93d3cudGhlbW92aWVkYi5vcmcvbW92aWUvMTA1MTg5Ng==",
+  "https://coryd.dev/movies/1051896": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbW92aWVzLzEwNTE4OTY=",
     "title": "🎥: Arcadian (⭐️⭐️⭐️)",
     "url": "https://coryd.dev/watching/movies/1051896",
     "content_text": "🎥: Arcadian (⭐️⭐️⭐️) #Movies #Watching https://coryd.dev/watching/movies/1051896",
@@ -13423,7 +13423,7 @@
     ],
     "lastTootTimestamp": 1716064039940
   },
-  "https://coryd.dev/watching/movies/1148027": {
+  "https://coryd.dev/movies/1148027": {
     "id": "aHR0cHM6Ly93d3cudGhlbW92aWVkYi5vcmcvbW92aWUvMTE0ODAyNw==",
     "title": "🎥: New Life (⭐️⭐️⭐️⭐️)",
     "url": "https://coryd.dev/watching/movies/1148027",
@@ -13565,5 +13565,38 @@
       "https://social.lol/users/cory/statuses/112485933433076040"
     ],
     "lastTootTimestamp": 1716399130811
+  },
+  "https://www.vox.com/culture/351041/ai-art-chatgpt-dall-e-sora-suno-human-creativity": {
+    "id": "aHR0cHM6Ly93d3cudm94LmNvbS9jdWx0dXJlLzM1MTA0MS9haS1hcnQtY2hhdGdwdC1kYWxsLWUtc29yYS1zdW5vLWh1bWFuLWNyZWF0aXZpdHk=",
+    "title": "🔗: Why AI art will always kind of suck via Vox",
+    "url": "https://www.vox.com/culture/351041/ai-art-chatgpt-dall-e-sora-suno-human-creativity",
+    "content_text": "🔗: Why AI art will always kind of suck via Vox #Tech #AI https://www.vox.com/culture/351041/ai-art-chatgpt-dall-e-sora-suno-human-creativity",
+    "date_published": "Thu, 23 May 2024 16:40:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112491252976972854"
+    ],
+    "lastTootTimestamp": 1716480300614
+  },
+  "https://rachsmith.com/ai-is-for-the-idea-guys/": {
+    "id": "aHR0cHM6Ly9yYWNoc21pdGguY29tL2FpLWlzLWZvci10aGUtaWRlYS1ndXlzLw==",
+    "title": "🔗: Generative AI is for the idea guys via Rach Smith",
+    "url": "https://rachsmith.com/ai-is-for-the-idea-guys/",
+    "content_text": "🔗: Generative AI is for the idea guys via Rach Smith #Tech #AI https://rachsmith.com/ai-is-for-the-idea-guys/",
+    "date_published": "Thu, 23 May 2024 16:35:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112491722478816346"
+    ],
+    "lastTootTimestamp": 1716487464636
+  },
+  "https://knowler.dev/blog/the-web-is-not-inevitable": {
+    "id": "aHR0cHM6Ly9rbm93bGVyLmRldi9ibG9nL3RoZS13ZWItaXMtbm90LWluZXZpdGFibGU=",
+    "title": "🔗: The Web Is Not Inevitable via Nathan Knowler",
+    "url": "https://knowler.dev/blog/the-web-is-not-inevitable",
+    "content_text": "🔗: The Web Is Not Inevitable via Nathan Knowler #Tech https://knowler.dev/blog/the-web-is-not-inevitable",
+    "date_published": "Thu, 23 May 2024 21:22:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112492662805269929"
+    ],
+    "lastTootTimestamp": 1716501812869
   }
 }
