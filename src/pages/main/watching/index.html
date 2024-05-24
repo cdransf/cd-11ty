@@ -12,14 +12,14 @@ schema: watching
 <p>Here's all of the TV and movies I've been watching presented in what is (hopefully) an organized fashion. You can also take a look at the <a href="/watching/movies-to-watch">movies</a> and <a href="/watching/shows-to-watch">shows</a> I'm planning to watch.</p>
 {% render "partials/banners/rss.liquid", url: "https://feedpress.me/coryd-movies", text: "Subscribe to my movies feed or follow along on this page" %}
 <hr class="large-spacing" />
-<a class="link-icon flex-centered" href="/recent/movies">
+<a class="link-icon flex-centered" href="/watching/recent/movies">
   <h2 id="movies" class="section-header no-top-margin flex-centered">
     {% tablericon "movie" "Recent movies" %}
     Recent movies
   </h2>
 </a>
 {% render "partials/media/grid.liquid", data:movies.recentlyWatched, shape: "vertical", count: 6 %}
-<a class="link-icon flex-centered" href="/recent/shows">
+<a class="link-icon flex-centered" href="/watching/recent/shows">
   <h2 id="tv" class="section-header reduced-margin flex-centered">
     {% tablericon "device-tv" "Recent shows" %}
     Recent shows
