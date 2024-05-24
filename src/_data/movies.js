@@ -60,6 +60,7 @@ export default async function () {
       favorite: item['favorite'],
       rating: item['rating'],
       description: item['description'],
+      review: item['review'],
       id: item['tmdb_id'],
       type: 'movie'
     }
