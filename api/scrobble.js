@@ -35,10 +35,10 @@ export default async (request) => {
     const artistKey = sanitizeMediaString(artist)
     const albumKey = `${artistKey}-${sanitizeMediaString(album)}`
 
-    const { error: artistError } = await supabase
+    let { data: artistData, error: artistError } = await supabase
       .from('artists')
       .select('*')
-      .eq('name_string', artist)
+      .ilike('name_string', artist)
       .single()
 
     if (artistError && artistError.code === 'PGRST116') {
@@ -56,15 +56,21 @@ export default async (request) => {
         console.error('Error inserting artist into Supabase:', insertArtistError.message)
         return new Response(JSON.stringify({ status: 'error', message: insertArtistError.message }), { headers: { "Content-Type": "application/json" } })
       }
+
+      ({ data: artistData, error: artistError } = await supabase
+        .from('artists')
+        .select('*')
+        .ilike('name_string', artist)
+        .single())
     } else if (artistError) {
       console.error('Error querying artist from Supabase:', artistError.message)
       return new Response(JSON.stringify({ status: 'error', message: artistError.message }), { headers: { "Content-Type": "application/json" } })
     }
 
-    const { error: albumError } = await supabase
+    let { data: albumData, error: albumError } = await supabase
       .from('albums')
       .select('*')
-      .eq('key', albumKey)
+      .ilike('key', albumKey)
       .single()
 
     if (albumError && albumError.code === 'PGRST116') {
@@ -82,6 +88,12 @@ export default async (request) => {
         console.error('Error inserting album into Supabase:', insertAlbumError.message)
         return new Response(JSON.stringify({ status: 'error', message: insertAlbumError.message }), { headers: { "Content-Type": "application/json" } })
       }
+
+      ({ data: albumData, error: albumError } = await supabase
+        .from('albums')
+        .select('*')
+        .ilike('key', albumKey)
+        .single())
     } else if (albumError) {
       console.error('Error querying album from Supabase:', albumError.message)
       return new Response(JSON.stringify({ status: 'error', message: albumError.message }), { headers: { "Content-Type": "application/json" } })
@@ -89,8 +101,8 @@ export default async (request) => {
 
     const { error: listenError } = await supabase.from('listens').insert([
       {
-        artist_name: artist,
-        album_name: album,
+        artist_name: artistData.name_string,
+        album_name: albumData.name,
         track_name: track,
         listened_at: listenedAt,
         album_key: albumKey
@@ -100,8 +112,8 @@ export default async (request) => {
     if (listenError) {
       console.error('Error inserting data into Supabase:', listenError.message)
       console.log('Track with the error:', {
-        artist_name: artist,
-        album_name: album,
+        artist_name: artistData.name_string,
+        album_name: albumData.name,
         track_name: track,
         listened_at: listenedAt,
         album_key: albumKey
