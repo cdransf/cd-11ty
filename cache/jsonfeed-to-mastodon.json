@@ -13620,5 +13620,24 @@
       "https://social.lol/users/cory/statuses/112493650821635894"
     ],
     "lastTootTimestamp": 1716516888797
+  },
+  "https://coryd.dev/posts/2024/your-new-tool-will-be-used-in-the-worst-possible-way/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC95b3VyLW5ldy10b29sLXdpbGwtYmUtdXNlZC1pbi10aGUtd29yc3QtcG9zc2libGUtd2F5Lw==",
+    "title": "📝: Your new tool will be used in the worst possible way",
+    "url": "https://coryd.dev/posts/2024/your-new-tool-will-be-used-in-the-worst-possible-way/",
+    "content_text": "📝: Your new tool will be used in the worst possible way #Tech #AI https://coryd.dev/posts/2024/your-new-tool-will-be-used-in-the-worst-possible-way/",
+    "date_published": "Fri, 24 May 2024 15:25:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112496910342761455"
+    ],
+    "lastTootTimestamp": 1716566625140
+  },
+  "https://www.anildash.com//2019/12/10/link-in-bio-is-how-they-tried-to-kill-the-web/": {
+    "id": "aHR0cHM6Ly93d3cuYW5pbGRhc2guY29tLy8yMDE5LzEyLzEwL2xpbmstaW4tYmlvLWlzLWhvdy10aGV5LXRyaWVkLXRvLWtpbGwtdGhlLXdlYi8=",
+    "title": "🔗: 'Link In Bio' is a slow knife via Anil Dash",
+    "url": "https://www.anildash.com//2019/12/10/link-in-bio-is-how-they-tried-to-kill-the-web/",
+    "content_text": "🔗: 'Link In Bio' is a slow knife via Anil Dash #Tech #SocialMedia https://www.anildash.com//2019/12/10/link-in-bio-is-how-they-tried-to-kill-the-web/",
+    "date_published": "Fri, 24 May 2024 15:23:00 GMT",
+    "toots": []
   }
 }
