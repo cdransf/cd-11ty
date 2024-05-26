@@ -32,6 +32,7 @@ export default {
     })
   },
   formatNumber: (number) => number.toLocaleString('en-US'),
+  shuffleArray,
 
   // navigation
   isLinkActive: (category, page) => {
@@ -249,7 +250,7 @@ export default {
     }).length
   },
   getLastWatched: (show) => show?.['episodes'][show['episodes']?.length - 1]?.['last_watched_at'],
-  sortByPlaysDescending: (data) => data.sort((a, b) => (b['total_plays'] || b['plays']) - (a['total_plays'] || a['plays'])),
+  sortByPlaysDescending: (data, key) => data.sort((a, b) => b[key] - a[key]),
   genreStrings: (genres, key) => genres.map(genre => genre[key]),
   mediaLinks: (data, type, count = 10) => {
     const dataSlice = data.slice(0, count)

@@ -12,6 +12,8 @@
     Movies • {{ movie.title }}{% if movie.rating %} ({{ movie.rating }}){% endif %} • {{ meta.siteName }}
   {% elsif show.title %}
     Shows • {{ show.title }} • {{ meta.siteName }}
+  {% elsif genre.title %}
+    Music • {{ genre.title }} • {{ meta.siteName }}
   {% else %}
     {{ meta.siteName }}
   {%- endif -%}
@@ -27,6 +29,8 @@
     {% if movie.review %}{{ movie.review | truncate: 300 }}{% else %}{{ movie.description }}{% endif %}
   {% elsif show.description %}
     {% if show.review %}{{ show.review | truncate: 300 }}{% else %}{{ show.description }}{% endif %}
+  {% elsif genre.description %}
+    {{ genre.description | markdown | strip_html | truncate: 300 }}
   {% elsif description %}
     {{ description }}
   {% else %}
@@ -52,6 +56,9 @@
     {{ movie.backdrop }}
   {%- elsif schema == 'show' -%}
     {{ meta.url }}/media/shows/backdrops/backdrop-{{ show.tmdb_id }}.jpg
+  {%- elsif schema == 'genre' -%}
+    {%- assign genreArtist = genre.artists | shuffleArray | first -%}
+    {{ genreArtist.image }}
   {%- else -%}
     {{ meta.meta_data.opengraph_default }}
   {%- endif -%}
