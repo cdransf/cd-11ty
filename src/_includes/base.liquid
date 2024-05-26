@@ -12,8 +12,8 @@
     Movies • {{ movie.title }}{% if movie.rating %} ({{ movie.rating }}){% endif %} • {{ meta.siteName }}
   {% elsif show.title %}
     Shows • {{ show.title }} • {{ meta.siteName }}
-  {% elsif genre.title %}
-    Music • {{ genre.title }} • {{ meta.siteName }}
+  {% elsif genre.name %}
+    Music • {{ genre.name }} • {{ meta.siteName }}
   {% else %}
     {{ meta.siteName }}
   {%- endif -%}
