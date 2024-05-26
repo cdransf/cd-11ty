@@ -219,7 +219,6 @@ table {
 table,
 th,
 td {
-  font-size: var(--font-size-base);
   border-collapse: collapse;
   width: 100%;
 }
