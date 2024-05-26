@@ -76,6 +76,7 @@
 /tags /search 301!
 /referrals /save 301!
 /genre/* /genres/:splat 301!
+/genre /genres 301!
 /recent/movies /watching/recent/movies 301!
 /recent/shows /watching/recent/shows 301!
 /mastodon https://social.lol/@cory 301!
