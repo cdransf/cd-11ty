@@ -477,7 +477,7 @@ article {
   }
 }
 
-.post-tag {
+.tag-element {
   margin-bottom: var(--sizing-lg);
   display: inline-block;
 
@@ -639,7 +639,7 @@ li {
     }
   }
 
-  .post-tag {
+  .tag-element {
     margin-bottom: var(--sizing-sm);
 
     &:not(:last-child) {

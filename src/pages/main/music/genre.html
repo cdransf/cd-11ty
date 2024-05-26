@@ -1,0 +1,30 @@
+---
+layout: default
+pagination:
+  data: genres
+  size: 1
+  alias: genre
+permalink: /music/genre/{{ genre.name | slugify | downcase }}/index.html
+updated: "now"
+schema: genre
+---
+{% assign artists = pagination.artists %}
+{% capture js %}
+  {% render "../../../assets/scripts/text-toggle.js" %}
+{% endcapture %}
+<script>{{ js }}</script>
+<noscript><style>[data-toggle-content].text-toggle-hidden {height: unset !important;overflow: unset !important;margin-bottom: unset !important;}[data-toggle-content].text-toggle-hidden::after {display: none !important;}</style></noscript>
+<a class="back-link-header link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a>
+<h2 class="page-header">{{ genre.name }}</h2>
+<article class="genre-focus">
+  <p>My top <strong class="highlight-text">{{ genre.name }}</strong> artists are <strong class="highlight-text">{{ genre.artists | sortByPlaysDescending | listToString: "name_string", 5 }}</strong>. I've listened to <strong class="highlight-text">{{ genre.name }}</strong> tracks <strong class="highlight-text">{{ genre.total_plays | formatNumber }}</strong> times.</p>
+  <hr class="large-spacing" />
+  {%- if genre.description -%}
+  <div data-toggle-content class="text-toggle-hidden">
+    <em>{{ genre.description | markdown }}</em>
+    <p><a href="{{ genre.wiki_link }}">Continue reading at Wikipedia.</a></p>
+    <p class="text-small"><em>Wikipedia content provided under the terms of the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons BY-SA license</a></em></p>
+  </div>
+  <button data-toggle-button>Show more</button>
+  {%- endif -%}
+</article>

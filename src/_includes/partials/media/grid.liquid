@@ -1,30 +1,28 @@
-{% if data.size > 0 %}
-  {% assign media = data | normalizeMedia %}
-  <div class="media-grid {% if shape == 'square' %}square{% else %}vertical{% endif %}">
-    {% for item in media limit: count %}
-      {% assign alt = item.alt | strip | escape %}
-      <a href="{{ item.url | stripUtm }}" title="{{ alt }}">
-        <div class="item-wrapper shadow">
-          <div class="meta-text">
-            {% if item.title %}
-              <div class="header">{{ item.title }}</div>
-            {% endif %}
-            {% if item.subtext %}
-              <div class="subheader">
-                {{ item.subtext }}
-              </div>
-            {% endif %}
-          </div>
-          {%- capture loadingStrategy -%}
-            {%- if loading -%}{{ loading }}{%- else -%}lazy{%- endif -%}
-          {%- endcapture -%}
-          {% if shape == 'square' %}
-            <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=240&h=240&fm=webp&q=85"{% if alt %} alt="{{ alt }}"{% endif %} loading="{{ loadingStrategy }}" decoding="async" width="240" height="240" />
-          {% else %}
-            <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=200&h=307&fm=webp&q=85"{% if alt %} alt="{{ alt }}"{% endif %} loading="{{ loadingStrategy }}" decoding="async" width="200" height="307" />
+{% assign media = data | normalizeMedia %}
+<div class="media-grid {% if shape == 'square' %}square{% else %}vertical{% endif %}">
+  {% for item in media limit: count %}
+    {% assign alt = item.alt | strip | escape %}
+    <a href="{{ item.url | stripUtm }}" title="{{ alt }}">
+      <div class="item-wrapper shadow">
+        <div class="meta-text">
+          {% if item.title %}
+            <div class="header">{{ item.title }}</div>
+          {% endif %}
+          {% if item.subtext %}
+            <div class="subheader">
+              {{ item.subtext }}
+            </div>
           {% endif %}
         </div>
-      </a>
-    {% endfor %}
-  </div>
-{% endif %}
+        {%- capture loadingStrategy -%}
+          {%- if loading -%}{{ loading }}{%- else -%}lazy{%- endif -%}
+        {%- endcapture -%}
+        {% if shape == 'square' %}
+          <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=240&h=240&fm=webp&q=85"{% if alt %} alt="{{ alt }}"{% endif %} loading="{{ loadingStrategy }}" decoding="async" width="240" height="240" />
+        {% else %}
+          <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=200&h=307&fm=webp&q=85"{% if alt %} alt="{{ alt }}"{% endif %} loading="{{ loadingStrategy }}" decoding="async" width="200" height="307" />
+        {% endif %}
+      </div>
+    </a>
+  {% endfor %}
+</div>

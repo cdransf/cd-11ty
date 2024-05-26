@@ -1,6 +1,4 @@
 .artist-focus {
-  border-bottom: 0;
-
   & img {
     border: 1px solid var(--accent-color);
   }
@@ -49,6 +47,11 @@
   table td:first-of-type {
     width: calc(var(--sizing-3xl) * 6);
   }
+}
+
+.artist-focus,
+.genre-focus {
+  border-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {

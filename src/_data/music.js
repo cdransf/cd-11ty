@@ -111,9 +111,9 @@ const aggregateGenres = (data) => {
     if (!genreAggregation[genre]) {
       genreAggregation[genre] = { genre, plays: 0 }
     }
-    genreAggregation[genre].plays++
+    genreAggregation[genre]['plays']++
   })
-  return Object.values(genreAggregation).sort((a, b) => b.plays - a.plays)
+  return Object.values(genreAggregation).sort((a, b) => b['plays'] - a['plays'])
 }
 
 export default async function() {

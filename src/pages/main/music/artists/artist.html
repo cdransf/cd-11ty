@@ -4,7 +4,7 @@ pagination:
   data: artists
   size: 1
   alias: artist
-permalink: /music/artists/{{ artist.name_string | slugify | downcase }}-{{ artist.country | slugify | downcase}}/
+permalink: /music/artists/{{ artist.name_string | slugify | downcase }}-{{ artist.country | slugify | downcase}}/index.html
 updated: "now"
 schema: artist
 ---
@@ -28,14 +28,18 @@ schema: artist
       {%- if artist.total_plays > 0 -%}
         <p class="sub-meta"><strong class="highlight-text">{{ artist.total_plays }} plays</strong></p>
       {%- endif -%}
-      <p class="sub-meta">{{ artist.genre }}</p>
+      <p class="sub-meta">
+        <a href="https://coryd.dev/music/genre/{{ artist.genre | slugify | downcase }}">
+          {{ artist.genre }}
+        </a>
+      </p>
       <p class="sub-meta">
         <a class="brain" href="https://musicbrainz.org/artist/{{ artist.mbid }}">{% tablericon "brain" "MusicBrainz" %}</a>
       </p>
     </div>
   </div>
   {%- if artist.description -%}
-  <div data-toggle-content class="text-toggle-hidden">{{ artist.description | markdown }}</div>
+  <div data-toggle-content class="text-toggle-hidden"><em>{{ artist.description | markdown }}</em></div>
   <button data-toggle-button>Show more</button>
   {%- endif -%}
   <table>

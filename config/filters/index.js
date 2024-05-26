@@ -3,7 +3,7 @@ import { URL } from 'url'
 import slugify from 'slugify'
 import sanitizeHtml from 'sanitize-html';
 import authors from '../data/author-map.js'
-import { shuffleArray } from '../utilities/index.js'
+import { shuffleArray, sanitizeMediaString } from '../utilities/index.js'
 
 const utmPattern = /[?&](utm_[^&=]+=[^&#]*)/gi
 const BASE_URL = 'https://coryd.dev'
@@ -223,12 +223,12 @@ export default {
       return normalized
     }),
   calculatePlayPercentage: (plays, mostPlayed) => `${plays/mostPlayed * 100}%`,
-  genresToString: (genres, count = 10) => {
-    const genreData = genres.slice(0, count)
-    if (genreData.length === 0) return ''
-    if (genreData.length === 1) return genreData[0].genre
-    const allButLast = genreData.slice(0, -1).map(g => g.genre).join(', ')
-    const last = genreData[genreData.length - 1].genre
+  listToString: (items, key, count = 10) => {
+    const itemData = items.slice(0, count)
+    if (itemData.length === 0) return ''
+    if (itemData.length === 1) return itemData[0][key]
+    const allButLast = itemData.slice(0, -1).map(item => item[key]).join(', ')
+    const last = itemData[itemData.length - 1][key]
     return `${allButLast} and ${last}`
   },
   bookStatus: (books, status) => books.filter(book => book.status === status),
@@ -249,11 +249,19 @@ export default {
     }).length
   },
   getLastWatched: (show) => show?.['episodes'][show['episodes']?.length - 1]?.['last_watched_at'],
+  sortByPlaysDescending: (data) => data.sort((a, b) => (b['total_plays'] || b['plays']) - (a['total_plays'] || a['plays'])),
+  genreStrings: (genres, key) => genres.map(genre => genre[key]),
+  genreLinks: (genres, count = 10) => {
+    const genreData = genres.slice(0, count)
+    if (genreData.length === 0) return ''
+    if (genreData.length === 1) return genreData[0]
+    const allButLast = genreData.slice(0, -1).map(genre => `<a href="/music/genre/${sanitizeMediaString(genre)}">${genre}</a>`).join(', ')
+    const last = `<a href="/music/genre/${sanitizeMediaString(genreData[genreData.length - 1])}">${genreData[genreData.length - 1]}</a>`
+    return `${allButLast} and ${last}`
+  },
 
     // tags
-  filterTags: (tags) => {
-    return tags.filter((tag) => tag.toLowerCase() !== 'posts')
-  },
+  filterTags: (tags) => tags.filter((tag) => tag.toLowerCase() !== 'posts'),
   formatTag: (string) => {
     const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1)
     const normalizedString = string.toLowerCase()
