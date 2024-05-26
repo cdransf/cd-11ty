@@ -259,14 +259,14 @@ export default {
 
     const allButLast = dataSlice.slice(0, -1).map(item => {
       if (type === 'genre') {
-        return `<a href="/music/genre/${sanitizeMediaString(item)}">${item}</a>`
+        return `<a href="/music/genres/${sanitizeMediaString(item)}">${item}</a>`
       } else if (type === 'artist') {
         return `<a href="/music/artists/${sanitizeMediaString(item['name_string'])}-${sanitizeMediaString(item['country'].toLowerCase())}">${item['name_string']}</a>`
       }
     }).join(', ')
 
     const last = type === 'genre'
-      ? `<a href="/music/genre/${sanitizeMediaString(dataSlice[dataSlice.length - 1])}">${dataSlice[dataSlice.length - 1]}</a>`
+      ? `<a href="/music/genres/${sanitizeMediaString(dataSlice[dataSlice.length - 1])}">${dataSlice[dataSlice.length - 1]}</a>`
       : `<a href="/music/artists/${sanitizeMediaString(dataSlice[dataSlice.length - 1]['name_string'])}-${sanitizeMediaString(dataSlice[dataSlice.length - 1]['country'].toLowerCase())}">${dataSlice[dataSlice.length - 1]['name_string']}</a>`
 
     return `${allButLast} and ${last}`
