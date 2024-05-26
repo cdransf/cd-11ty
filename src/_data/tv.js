@@ -61,7 +61,7 @@ export default async function () {
 
   episodes.sort((a, b) => new Date(b['last_watched_at']) - new Date(a['last_watched_at']))
   const allEpisodes = episodes
-  const recentlyWatchedEpisodes = episodes.slice(0, 75)
+  const recentlyWatchedEpisodes = episodes.slice(0, 150)
 
   const formatEpisodeData = (episodes) => {
     const episodeData = []

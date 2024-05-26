@@ -10,6 +10,6 @@ schema: music
 ---
 <a class="back-link-header link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a>
 <h2 class="page-header">{{ title }}</h2>
-<p>I've listened to <strong class="highlight-text">{{ music.threeMonth.albums.size }} albums</strong> over the last 3 months and most of what I've listened to has been {{ music.threeMonth.genres | sortByPlaysDescending | genreStrings: "genre" | genreLinks: 5 }}.</p>
+<p>I've listened to <strong class="highlight-text">{{ music.threeMonth.albums.size }} albums</strong> over the last 3 months and most of what I've listened to has been {{ music.threeMonth.genres | sortByPlaysDescending | genreStrings: "genre" | mediaLinks: "genre", 5 }}.</p>
 <p><strong class="highlight-text">See my</strong> <a href="/music/artists/three-months/">artists</a> or <a href="/music/tracks/three-months/">tracks</a> for this period.</p>
 {% render "partials/media/music/period/grid.liquid" data:pagination %}

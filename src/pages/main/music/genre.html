@@ -8,7 +8,14 @@ permalink: /music/genre/{{ genre.name | slugify | downcase }}/index.html
 updated: "now"
 schema: genre
 ---
-{% assign artists = pagination.artists %}
+{% assign artistCount = genre.artists.size %}
+{%- capture connectingWord -%}
+  {% if artistCount > 1 %}
+    are
+  {% else %}
+    is
+  {% endif %}
+{%- endcapture -%}
 {% capture js %}
   {% render "../../../assets/scripts/text-toggle.js" %}
 {% endcapture %}
@@ -17,7 +24,7 @@ schema: genre
 <a class="back-link-header link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a>
 <h2 class="page-header">{{ genre.name }}</h2>
 <article class="genre-focus">
-  <p>My top <strong class="highlight-text">{{ genre.name }}</strong> artists are <strong class="highlight-text">{{ genre.artists | sortByPlaysDescending | listToString: "name_string", 5 }}</strong>. I've listened to <strong class="highlight-text">{{ genre.name }}</strong> tracks <strong class="highlight-text">{{ genre.total_plays | formatNumber }}</strong> times.</p>
+  <p>My top <strong class="highlight-text">{{ genre.name }}</strong> artists {{ connectingWord }} {{ genre.artists | sortByPlaysDescending | mediaLinks: "artist", 5 }}. I've listened to <strong class="highlight-text">{{ genre.total_plays | formatNumber }}</strong> tracks form this genre.</p>
   <hr class="large-spacing" />
   {%- if genre.description -%}
   <div data-toggle-content class="text-toggle-hidden">

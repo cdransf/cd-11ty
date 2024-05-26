@@ -1,6 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
 import { DateTime } from 'luxon'
-import { sanitizeMediaString, parseCountryField } from './utilities/index.js'
+import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY

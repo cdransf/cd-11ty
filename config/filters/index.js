@@ -251,12 +251,23 @@ export default {
   getLastWatched: (show) => show?.['episodes'][show['episodes']?.length - 1]?.['last_watched_at'],
   sortByPlaysDescending: (data) => data.sort((a, b) => (b['total_plays'] || b['plays']) - (a['total_plays'] || a['plays'])),
   genreStrings: (genres, key) => genres.map(genre => genre[key]),
-  genreLinks: (genres, count = 10) => {
-    const genreData = genres.slice(0, count)
-    if (genreData.length === 0) return ''
-    if (genreData.length === 1) return genreData[0]
-    const allButLast = genreData.slice(0, -1).map(genre => `<a href="/music/genre/${sanitizeMediaString(genre)}">${genre}</a>`).join(', ')
-    const last = `<a href="/music/genre/${sanitizeMediaString(genreData[genreData.length - 1])}">${genreData[genreData.length - 1]}</a>`
+  mediaLinks: (data, type, count = 10) => {
+    const dataSlice = data.slice(0, count)
+    if (dataSlice.length === 0) return ''
+    if (dataSlice.length === 1) return type === 'genre' ? dataSlice[0] : dataSlice[0]['artist_name']
+
+    const allButLast = dataSlice.slice(0, -1).map(item => {
+      if (type === 'genre') {
+        return `<a href="/music/genre/${sanitizeMediaString(item)}">${item}</a>`
+      } else if (type === 'artist') {
+        return `<a href="/music/artists/${sanitizeMediaString(item['name_string'])}-${sanitizeMediaString(item['country'].toLowerCase())}">${item['name_string']}</a>`
+      }
+    }).join(', ')
+
+    const last = type === 'genre'
+      ? `<a href="/music/genre/${sanitizeMediaString(dataSlice[dataSlice.length - 1])}">${dataSlice[dataSlice.length - 1]}</a>`
+      : `<a href="/music/artists/${sanitizeMediaString(dataSlice[dataSlice.length - 1]['name_string'])}-${sanitizeMediaString(dataSlice[dataSlice.length - 1]['country'].toLowerCase())}">${dataSlice[dataSlice.length - 1]['name_string']}</a>`
+
     return `${allButLast} and ${last}`
   },
 

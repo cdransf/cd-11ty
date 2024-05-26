@@ -1,0 +1,27 @@
+<div class="watching grid">
+  {% for item in data.items %}
+    {% capture alt %}{{ item.title | escape }} ({{ item.year }}){% endcapture %}
+    <a href="{{ item.url }}">
+      <div class="watching item shadow">
+        <div class="meta-text">
+          {% if item.type == 'movie' %}
+            <div class="header">{{ item.title }}</div>
+            <div class="subheader flex-centered gap-xs">
+              {{ item.year }}
+              {% if rating and item.rating %}
+                <span class="rating"> ({{ item.rating }})</span>
+              {% endif %}
+            </div>
+          {% else %}
+            <div class="header">{{ item.name }}</div>
+          {% endif %}
+        </div>
+        {%- capture loadingStrategy -%}
+          {%- if loading -%}{{ loading }}{%- else -%}lazy{%- endif -%}
+        {%- endcapture -%}
+        <img src="https://coryd.dev/.netlify/images/?url={{ item.backdrop }}&fit=cover&w=256&h=144&fm=webp&q=85" alt="{{ alt }}" loading="{{ loadingStrategy }}" decoding="async" width="256" height="144" />
+      </div>
+    </a>
+  {% endfor %}
+</div>
+{% render "partials/widgets/paginator.liquid", pagination:data %}
