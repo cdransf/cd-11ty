@@ -13438,7 +13438,7 @@
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvYm9va3MvMTgzOTc2MjgwMg==",
     "title": "📖: Black Meme",
     "url": "https://coryd.dev/books/1839762802",
-    "content_text": "📖: Black Meme https://coryd.dev/books/1839762802",
+    "content_text": "📖: Black Meme #Books #FinishedReading https://coryd.dev/books/1839762802",
     "date_published": "Sun, 19 May 2024 00:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112468881007775327"
@@ -13482,7 +13482,7 @@
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvd2F0Y2hpbmcvbW92aWVzLzI5NDI3",
     "title": "🎥: The Crazies (⭐️⭐️⭐️)",
     "url": "https://coryd.dev/watching/movies/29427",
-    "content_text": "🎥: The Crazies (⭐️⭐️⭐️) https://coryd.dev/watching/movies/29427",
+    "content_text": "🎥: The Crazies (⭐️⭐️⭐️) #Movies #Watched https://coryd.dev/watching/movies/29427",
     "date_published": "Mon, 20 May 2024 15:15:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112474735239294133"
@@ -13515,7 +13515,7 @@
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvYm9va3MvOTc4MDMwNjgyNDA5OA==",
     "title": "📖: Under the Big Black Sun (⭐️⭐️⭐️⭐️)",
     "url": "https://coryd.dev/books/9780306824098",
-    "content_text": "📖: Under the Big Black Sun (⭐️⭐️⭐️⭐️) https://coryd.dev/books/9780306824098",
+    "content_text": "📖: Under the Big Black Sun (⭐️⭐️⭐️⭐️) #Books #FinishedReading https://coryd.dev/books/9780306824098",
     "date_published": "Tue, 21 May 2024 00:00:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112479923811123549"
@@ -13526,7 +13526,7 @@
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvd2F0Y2hpbmcvbW92aWVzLzM4NDAxOA==",
     "title": "🎥: Fast & Furious Presents: Hobbs & Shaw (⭐️⭐️⭐️)",
     "url": "https://coryd.dev/watching/movies/384018",
-    "content_text": "🎥: Fast & Furious Presents: Hobbs & Shaw (⭐️⭐️⭐️) https://coryd.dev/watching/movies/384018",
+    "content_text": "🎥: Fast & Furious Presents: Hobbs & Shaw (⭐️⭐️⭐️) #Movies #Watched https://coryd.dev/watching/movies/384018",
     "date_published": "Tue, 21 May 2024 15:49:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112480396568749721"
@@ -13647,7 +13647,7 @@
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvd2F0Y2hpbmcvbW92aWVzLzkyOTU5MA==",
     "title": "🎥: Civil War (⭐️⭐️⭐️⭐️)",
     "url": "https://coryd.dev/watching/movies/929590",
-    "content_text": "🎥: Civil War (⭐️⭐️⭐️⭐️) https://coryd.dev/watching/movies/929590",
+    "content_text": "🎥: Civil War (⭐️⭐️⭐️⭐️) #Movies #Watched https://coryd.dev/watching/movies/929590",
     "date_published": "Fri, 24 May 2024 13:30:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112497262947153852"
@@ -13680,11 +13680,22 @@
     "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvd2F0Y2hpbmcvbW92aWVzLzEwMjU1OTY=",
     "title": "🎥: Blood for Dust (⭐️⭐️⭐️)",
     "url": "https://coryd.dev/watching/movies/1025596",
-    "content_text": "🎥: Blood for Dust (⭐️⭐️⭐️) https://coryd.dev/watching/movies/1025596",
+    "content_text": "🎥: Blood for Dust (⭐️⭐️⭐️) #Movies #Watched https://coryd.dev/watching/movies/1025596",
     "date_published": "Sat, 25 May 2024 23:40:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112504979907592405"
     ],
     "lastTootTimestamp": 1716689756932
+  },
+  "https://coryd.dev/watching/movies/948": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvd2F0Y2hpbmcvbW92aWVzLzk0OA==",
+    "title": "🎥: Halloween (⭐️⭐️⭐️⭐️)",
+    "url": "https://coryd.dev/watching/movies/948",
+    "content_text": "🎥: Halloween (⭐️⭐️⭐️⭐️) #Movies #Watched https://coryd.dev/watching/movies/948",
+    "date_published": "Mon, 27 May 2024 02:19:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112509177840235810"
+    ],
+    "lastTootTimestamp": 1716753812307
   }
 }
