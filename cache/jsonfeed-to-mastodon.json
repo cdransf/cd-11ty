@@ -13708,5 +13708,16 @@
       "https://social.lol/users/cory/statuses/112510161462605024"
     ],
     "lastTootTimestamp": 1716768821218
+  },
+  "https://coryd.dev/music?ts=2024-22": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvbXVzaWM/dHM9MjAyNC0yMg==",
+    "title": "🎧: My top artists for the week: Fawn Limbs @ 50 plays, blink-182 @ 45 plays, Home Is Where @ 38 plays, Deftones @ 36 plays, Cloud Rat @ 33 plays, The Get Up Kids @ 32 plays, Spawn of Possession @ 31 plays, Ataraxy @ 29 plays",
+    "url": "https://coryd.dev/music?ts=2024-22",
+    "content_text": "🎧: My top artists for the week: Fawn Limbs @ 50 plays, blink-182 @ 45 plays, Home Is Where @ 38 plays, Deftones @ 36 plays, Cloud Rat @ 33 plays, The Get Up Kids @ 32 plays, Spawn of Possession @ 31 plays, Ataraxy @ 29 plays https://coryd.dev/music?ts=2024-22",
+    "date_published": "Mon, 27 May 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112510639001676450"
+    ],
+    "lastTootTimestamp": 1716776107843
   }
 }
