@@ -11,10 +11,10 @@
           {{ album.title }}
         </a>
         <span> by </span>
-        <a href="https://musicbrainz.org/artist/{{ album.mbid }}">
+        <a href="{{ album.artist_url }}">
           {{ album.artist }}
         </a>
-        <span> • {{ album.genre }}</span>
+        <span> • <a href="https://coryd.dev/music/genres/{{ album.genre | slugify | downcase }}">{{ album.genre }}</a></span>
       </li>
     {% endfor %}
   </ul>

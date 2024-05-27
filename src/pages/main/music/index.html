@@ -13,7 +13,6 @@ schema: music
 <p>This is everything I've been listening to recently — it's collected in a database as I listen to it and displayed here. <a href="https://coryd.dev/posts/2024/improving-my-self-hosted-scrobbling-implementation/">You can read more about the technical details, if you'd like.</a></p>
 <p>I mostly listen to {{ genres | sortByPlaysDescending: "total_plays" | genreStrings: "name" | mediaLinks: "genre", 5 }}. This week I've listened to <strong class="highlight-text">{{ music.week.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.week.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.week.totalTracks }} tracks</strong>.</p>
 {% render "partials/widgets/now-playing.liquid" %}
-{% render "partials/banners/rss.liquid", url: "https://feedpress.me/coryd-artist-charts", text: "I also have a feed of weekly artist charts I generate from this data" %}
 <hr class="large-spacing" />
 <div class="section-header-wrapper">
   <h2 id="artists" class="section-header no-top-margin flex-centered">

@@ -7,20 +7,10 @@
   edge_functions = "api"
 
 ###
-# PLUGINS
-###
-[[plugins]]
-  package = "netlify-plugin-webmentions"
-  [plugins.inputs]
-    baseUrl = "https://coryd.dev"
-    feedPath = "feeds/posts"
-    limit = 1
-
-###
 # IMAGES
 ###
 [images]
-  remote_images = ["https://f001.backblazeb2.com/file/coryd-dev/.*", "https://image.tmdb.org/.*", "https://books.google.com/.*", "https://covers.openlibrary.org/*"]
+  remote_images = ["https://f001.backblazeb2.com/file/coryd-dev/.*", "https://books.google.com/.*"]
 
 ###
 # URLs

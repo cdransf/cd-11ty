@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
 import { DateTime } from 'luxon'
+import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
@@ -15,7 +16,7 @@ export default async function () {
        image,
        release_date,
        release_link,
-       artists (name_string, genre, mbid)
+       artists (name_string, genre, mbid, country)
     `)
     .gt('release_date', today)
 
@@ -30,6 +31,7 @@ export default async function () {
       title: album['name'],
       date: DateTime.fromISO(album['release_date']).toLocaleString(DateTime.DATE_FULL),
       url: album['release_link'],
+      artist_url: `https://coryd.dev/music/artists/${sanitizeMediaString(album['artists']['name_string'])}-${sanitizeMediaString(parseCountryField(album['artists']['country']))}`,
       genre: album['artists']['genre'],
       mbid: album['artists']['mbid'],
       timestamp: DateTime.fromISO(album['release_date']).toSeconds()
