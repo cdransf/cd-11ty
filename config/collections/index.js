@@ -37,8 +37,7 @@ export const allContent = (collection) => {
   const {
     collections: { posts, links },
     books,
-    movies: { movies },
-    weeklyArtistChart
+    movies: { movies }
   } = data
   const parseDate = (date) => {
     if (!date) return null
@@ -76,7 +75,6 @@ export const allContent = (collection) => {
   addContent(links, '🔗', item => item.data.title, item => item.data.date)
   addContent(books.filter(book => book.status === 'finished'), '📖', item => `${item.title}${item.rating ? ' (' + item.rating + ')' : ''}`, item => item.date)
   addContent(movies, '🎥', item => `${item.title}${item.rating ? ' (' + item.rating + ')' : ''}`, item => item.lastWatched)
-  addContent(weeklyArtistChart, '🎧', item => item.title, item => item.date)
 
   return aggregateContent.sort((a, b) => {
     const dateA = a.date ? DateTime.fromISO(a.date) : DateTime.fromMillis(0)
