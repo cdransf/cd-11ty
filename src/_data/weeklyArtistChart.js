@@ -64,7 +64,7 @@ export default async function() {
         return {
           title: formattedData['content'],
           description: formattedData['description'],
-          url: `https://coryd.dev/music?ts=${chart['week']}`,
+          url: `https://coryd.dev/music?ts=${chart['week']}#artists`,
           date: chart['date']
         }
       })
@@ -85,7 +85,7 @@ export default async function() {
 
     const aggregatedData = aggregateData(listens)
     const artistNames = aggregatedData.map(artist => artist.name)
-    let { data: artistsData, error: artistsError } = await supabase
+    let { error: artistsError } = await supabase
       .from('artists')
       .select('name_string, genre, mbid')
       .in('name_string', artistNames)
