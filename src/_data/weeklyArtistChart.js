@@ -111,7 +111,7 @@ export default async function() {
       return {
         title: formattedData['content'],
         description: formattedData['description'],
-        url: `https://coryd.dev/now?ts=${chart['week']}#artists`,
+        url: `https://coryd.dev/music?ts=${chart['week']}#artists`,
         date: chart['date']
       }
     })
@@ -119,7 +119,7 @@ export default async function() {
       {
         title: formattedData['content'],
         description: formattedData['description'],
-        url: `https://coryd.dev/now?ts=${weekNumber}#artists`,
+        url: `https://coryd.dev/music?ts=${weekNumber}#artists`,
         date: now.toISODate()
       },
       ...recentChartData
