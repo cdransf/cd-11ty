@@ -13763,5 +13763,16 @@
       "https://social.lol/users/cory/statuses/112515822892521690"
     ],
     "lastTootTimestamp": 1716855207778
+  },
+  "https://mxb.dev/blog/old-dogs-new-css-tricks/": {
+    "id": "aHR0cHM6Ly9teGIuZGV2L2Jsb2cvb2xkLWRvZ3MtbmV3LWNzcy10cmlja3Mv",
+    "title": "🔗: Old Dogs, new CSS Tricks",
+    "url": "https://mxb.dev/blog/old-dogs-new-css-tricks/",
+    "content_text": "🔗: Old Dogs, new CSS Tricks #WebDev #CSS https://mxb.dev/blog/old-dogs-new-css-tricks/",
+    "date_published": "Tue, 28 May 2024 00:14:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112516301556267900"
+    ],
+    "lastTootTimestamp": 1716862511581
   }
 }
