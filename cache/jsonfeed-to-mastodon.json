@@ -13766,13 +13766,24 @@
   },
   "https://mxb.dev/blog/old-dogs-new-css-tricks/": {
     "id": "aHR0cHM6Ly9teGIuZGV2L2Jsb2cvb2xkLWRvZ3MtbmV3LWNzcy10cmlja3Mv",
-    "title": "🔗: Old Dogs, new CSS Tricks",
+    "title": "🔗: Old Dogs, new CSS Tricks via Max Böck",
     "url": "https://mxb.dev/blog/old-dogs-new-css-tricks/",
-    "content_text": "🔗: Old Dogs, new CSS Tricks #WebDev #CSS https://mxb.dev/blog/old-dogs-new-css-tricks/",
+    "content_text": "🔗: Old Dogs, new CSS Tricks via Max Böck #WebDev #CSS https://mxb.dev/blog/old-dogs-new-css-tricks/",
     "date_published": "Tue, 28 May 2024 00:14:00 GMT",
     "toots": [
       "https://social.lol/users/cory/statuses/112516301556267900"
     ],
     "lastTootTimestamp": 1716862511581
+  },
+  "https://adactio.com/journal/21160": {
+    "id": "aHR0cHM6Ly9hZGFjdGlvLmNvbS9qb3VybmFsLzIxMTYw",
+    "title": "🔗: Trust via Jeremy Keith",
+    "url": "https://adactio.com/journal/21160",
+    "content_text": "🔗: Trust via Jeremy Keith #Tech #AI https://adactio.com/journal/21160",
+    "date_published": "Tue, 28 May 2024 14:19:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112519559144207661"
+    ],
+    "lastTootTimestamp": 1716912218471
   }
 }
