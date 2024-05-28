@@ -78,19 +78,19 @@ schema: music
   </div>
 </div>
 <div id="tracks-recent">
-  {% render "partials/media/music/tracks/recent", data:music.recent.tracksChronological %}
+  {% render "partials/media/music/recent", data:music.recent.tracksChronological %}
 </div>
 <div class="hidden" id="tracks-window">
-  {% render "partials/media/music/tracks/chart.liquid", data:music.week.tracks, mostPlayed:music.week.tracks[0].plays %}
+  {% render "partials/media/music/chart.liquid", data:music.week.tracks, mostPlayed:music.week.tracks[0].plays, count: 10 %}
 </div>
 <div class="hidden" id="tracks-month">
-  {% render "partials/media/music/tracks/chart.liquid", data:music.month.tracks, mostPlayed:music.month.tracks[0].plays %}
+  {% render "partials/media/music/chart.liquid", data:music.month.tracks, mostPlayed:music.month.tracks[0].plays, count: 10 %}
 </div>
 <div class="hidden" id="tracks-three-months">
-  {% render "partials/media/music/tracks/chart.liquid", data:music.threeMonth.tracks, mostPlayed:music.threeMonth.tracks[0].plays %}
+  {% render "partials/media/music/chart.liquid", data:music.threeMonth.tracks, mostPlayed:music.threeMonth.tracks[0].plays, count: 10 %}
 </div>
 <div class="hidden" id="tracks-all-time">
-  {% render "partials/media/music/tracks/chart.liquid", data:music.allTime.tracks, mostPlayed:music.allTime.tracks[0].plays %}
+  {% render "partials/media/music/chart.liquid", data:music.allTime.tracks, mostPlayed:music.allTime.tracks[0].plays, count: 10 %}
 </div>
 <p><strong class="highlight-text">More:</strong> <a href="/music/tracks/this-week/">This week</a> • <a href="/music/tracks/this-month/">This month</a> • <a href="/music/tracks/three-months/">3 months</a> • <a href="/music/tracks/all-time/">All time</a></p>
 {% render "partials/media/music/releases.liquid", albumReleases:albumReleases %}

@@ -1,21 +1,19 @@
-{% if albumReleases.size > 0 %}
-  <h2 id="album-releases" class="section-header flex-centered">
-    {% tablericon "calendar-time" "Anticipated albums" %}
-    Anticipated albums
-  </h2>
-  <ul class="link-list">
-    {% for album in albumReleases %}
-      <li>
-        <strong>{{ album.date }}: </strong>
-        <a href="{{ album.url}}" title="{{ album.title | escape}} by {{ album.artist | escape}}">
-          {{ album.title }}
-        </a>
-        <span> by </span>
-        <a href="{{ album.artist_url }}">
-          {{ album.artist }}
-        </a>
-        <span> • <a href="https://coryd.dev/music/genres/{{ album.genre | slugify | downcase }}">{{ album.genre }}</a></span>
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
+<h2 id="album-releases" class="section-header flex-centered">
+  {% tablericon "calendar-time" "Anticipated albums" %}
+  Anticipated albums
+</h2>
+<ul class="link-list">
+  {% for album in albumReleases %}
+    <li>
+      <strong>{{ album.date }}: </strong>
+      <a href="{{ album.url}}" title="{{ album.title | escape}} by {{ album.artist | escape}}">
+        {{ album.title }}
+      </a>
+      <span> by </span>
+      <a href="{{ album.artist_url }}">
+        {{ album.artist }}
+      </a>
+      <span> • <a href="https://coryd.dev/music/genres/{{ album.genre | slugify | downcase }}">{{ album.genre }}</a></span>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,4 +1,3 @@
-{% if data.size > 0 %}
 <div class="music-chart">
   {% for item in data limit: 10 %}
   {% capture alt %}{{ item.title | escape }} by {{ item.artist }}{% endcapture %}
@@ -18,4 +17,3 @@
     </div>
   {% endfor %}
 </div>
-{% endif %}

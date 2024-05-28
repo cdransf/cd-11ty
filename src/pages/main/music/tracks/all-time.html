@@ -9,7 +9,10 @@ permalink: "/music/tracks/all-time/{% if pagination.pageNumber > 0 %}{{ paginati
 schema: music
 ---
 <a class="back-link-header link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a>
+{% if pagination.pageNumber == 0 %}
 <h2 class="page-header">{{ title }}</h2>
 <p>I've listened to <strong class="highlight-text">{{ music.allTime.totalTracks }} tracks</strong> and most of what I've listened to has been <strong class="highlight-text">{{ music.allTime.genres | listToString: "genre", 5 }}</strong>.</p>
 <p><strong class="highlight-text">See my</strong> <a href="/music/artists/all-time/">artists</a> or <a href="/music/albums/all-time/">albums</a> for this period.</p>
-{% render "partials/media/music/period/chart.liquid" data:pagination, playTotal: music.allTime.tracks[0].plays %}
+<hr class="large-spacing" />
+{% endif %}
+{% render "partials/media/music/chart.liquid" data:pagination, playTotal: music.allTime.tracks[0].plays %}

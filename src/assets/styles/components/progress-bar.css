@@ -1,4 +1,4 @@
-.progress-bar__wrapper {
+.progress-bar-wrapper {
   display: flex;
   background-color: rgba(217, 222, 228, .6);
   border-radius: var(--rounded-lg);

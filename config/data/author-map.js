@@ -1,4 +1,5 @@
 export default {
+  "https://keithjgrant.com": "Keith J. Grant",
   "https://mxb.dev": "Max Böck",
   "https://niclake.me": "Nic Lake",
   "https://www.anildash.com": "Anil Dash",

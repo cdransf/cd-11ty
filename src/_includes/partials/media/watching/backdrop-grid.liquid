@@ -1,26 +1,30 @@
 <div class="watching grid">
-  {% for media in mediaItems limit: count %}
-    {% capture alt %}{{ media.title | escape }} ({{ media.year }}){% endcapture %}
-    <a href="{{ media.url }}">
+  {% assign items = data.items | default: mediaItems %}
+  {% for item in items limit: count %}
+    {% capture alt %}{{ item.title | escape }} ({{ item.year }}){% endcapture %}
+    <a href="{{ item.url }}">
       <div class="watching item shadow">
         <div class="meta-text">
-          {% if media.type == 'movie' %}
-            <div class="header">{{ media.title }}</div>
+          {% if item.type == 'movie' %}
+            <div class="header">{{ item.title }}</div>
             <div class="subheader flex-centered gap-xs">
-              {{ media.year }}
-              {% if rating and media.rating %}
-                <span class="rating"> ({{ media.rating }})</span>
+              {{ item.year }}
+              {% if rating and item.rating %}
+                <span class="rating"> ({{ item.rating }})</span>
               {% endif %}
             </div>
           {% else %}
-            <div class="header">{{ media.name }}</div>
+            <div class="header">{{ item.name }}</div>
           {% endif %}
         </div>
         {%- capture loadingStrategy -%}
           {%- if loading -%}{{ loading }}{%- else -%}lazy{%- endif -%}
         {%- endcapture -%}
-        <img src="https://coryd.dev/.netlify/images/?url={{ media.backdrop }}&fit=cover&w=256&h=144&fm=webp&q=85" alt="{{ alt }}" loading="{{ loadingStrategy }}" decoding="async" width="256" height="144" />
+        <img src="https://coryd.dev/.netlify/images/?url={{ item.backdrop }}&fit=cover&w=256&h=144&fm=webp&q=85" alt="{{ alt }}" loading="{{ loadingStrategy }}" decoding="async" width="256" height="144" />
       </div>
     </a>
   {% endfor %}
 </div>
+{% unless count %}
+  {% render "partials/widgets/paginator.liquid", pagination:data %}
+{% endunless %}

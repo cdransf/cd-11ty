@@ -1,68 +1,68 @@
-{%- capture fullUrl -%}{{ meta.url }}{{ page.url }}{%- endcapture -%}
-{%- capture pageTitle -%}
-  {%- if schema == 'blog' -%}
-    {{ title }}
-  {% elsif title %}
-    {{ title }} • {{ meta.siteName }}
-  {% elsif artist.name_string %}
-    Artists • {{ artist.name_string }} • {{ meta.siteName }}
-  {% elsif book.title %}
-    Books • {{ book.title }} • {{ meta.siteName }}
-  {% elsif movie.title %}
-    Movies • {{ movie.title }}{% if movie.rating %} ({{ movie.rating }}){% endif %} • {{ meta.siteName }}
-  {% elsif show.title %}
-    Shows • {{ show.title }} • {{ meta.siteName }}
-  {% elsif genre.name %}
-    Music • {{ genre.name }} • {{ meta.siteName }}
-  {% else %}
-    {{ meta.siteName }}
+{%- assign fullUrl = meta.url | append: page.url -%}
+
+{%- assign pageTitle = meta.siteName -%}
+{%- if schema == 'blog' -%}
+  {%- assign pageTitle = title -%}
+{%- elsif title -%}
+  {%- assign pageTitle = title | append: ' • ' | append: meta.siteName -%}
+{%- elsif artist.name_string -%}
+  {%- assign pageTitle = 'Artists • ' | append: artist.name_string | append: ' • ' | append: meta.siteName -%}
+{%- elsif book.title -%}
+  {%- assign pageTitle = 'Books • ' | append: book.title | append: ' • ' | append: meta.siteName -%}
+{%- elsif movie.title -%}
+  {%- assign pageTitle = 'Movies • ' | append: movie.title -%}
+  {%- if movie.rating -%}
+    {%- assign pageTitle = pageTitle | append: ' (' | append: movie.rating | append: ')' -%}
   {%- endif -%}
-{%- endcapture -%}
-{%- capture pageDescription -%}
-  {%- if schema == 'blog' -%}
-    {{ post_excerpt | markdown | strip_html }}
-  {% elsif artist.description %}
-    {{ artist.description | truncate: 300 }}
-  {% elsif book.description %}
-    {{ book.description }}
-  {% elsif movie.description %}
-    {% if movie.review %}{{ movie.review | truncate: 300 }}{% else %}{{ movie.description }}{% endif %}
-  {% elsif show.description %}
-    {% if show.review %}{{ show.review | truncate: 300 }}{% else %}{{ show.description }}{% endif %}
-  {% elsif genre.description %}
-    {{ genre.description | markdown | strip_html | truncate: 300 }}
-  {% elsif description %}
-    {{ description }}
-  {% else %}
-    {{ meta.siteDescription }}
-  {%- endif -%}
-{%- endcapture -%}
-{%- capture ogImage -%}
-  {%- if schema == 'blog' -%}
-    {{ meta.url }}/assets/img/ogi/{{ title | slugifyString }}-preview.png
-  {%- elsif schema == 'music' -%}
-    {{ music.recent.artists[0].image }}
-  {%- elsif schema == 'artist' -%}
-    {{ artist.image }}
-  {%- elsif schema == 'watching' -%}
+  {%- assign pageTitle = pageTitle | append: ' • ' | append: meta.siteName -%}
+{%- elsif show.title -%}
+  {%- assign pageTitle = 'Shows • ' | append: show.title | append: ' • ' | append: meta.siteName -%}
+{%- elsif genre.name -%}
+  {%- assign pageTitle = 'Music • ' | append: genre.name | append: ' • ' | append: meta.siteName -%}
+{%- endif -%}
+
+{%- assign pageDescription = meta.siteDescription -%}
+{%- if schema == 'blog' -%}
+  {%- assign pageDescription = post_excerpt | markdown | strip_html -%}
+{%- elsif artist.description -%}
+  {%- assign pageDescription = artist.description | truncate: 300 -%}
+{%- elsif book.description -%}
+  {%- assign pageDescription = book.description -%}
+{%- elsif movie.description -%}
+  {%- assign pageDescription = movie.review | default: movie.description | truncate: 300 -%}
+{%- elsif show.description -%}
+  {%- assign pageDescription = show.review | default: show.description | truncate: 300 -%}
+{%- elsif genre.description -%}
+  {%- assign pageDescription = genre.description | markdown | strip_html | truncate: 300 -%}
+{%- elsif description -%}
+  {%- assign pageDescription = description -%}
+{%- endif -%}
+
+{%- assign ogImage = meta.meta_data.opengraph_default -%}
+{%- case schema -%}
+  {%- when 'blog' -%}
+    {%- assign ogImage = meta.url | append: '/assets/img/ogi/' | append: title | slugifyString | append: '-preview.png' -%}
+  {%- when 'music' -%}
+    {%- assign ogImage = music.recent.artists[0].image -%}
+  {%- when 'artist' -%}
+    {%- assign ogImage = artist.image -%}
+  {%- when 'watching' -%}
     {%- assign featuredMovie = movies.recentlyWatched | first -%}
-    {{ featuredMovie.backdrop }}
-  {%- elsif schema == 'books' -%}
+    {%- assign ogImage = featuredMovie.backdrop -%}
+  {%- when 'books' -%}
     {%- assign featuredBook = books | bookStatus: 'started' | reverse | first -%}
-    {{ featuredBook.image }}
-  {%- elsif schema == 'book' -%}
-    {{ book.image }}
-  {%- elsif schema == 'movie' -%}
-    {{ movie.backdrop }}
-  {%- elsif schema == 'show' -%}
-    {{ meta.url }}/media/shows/backdrops/backdrop-{{ show.tmdb_id }}.jpg
-  {%- elsif schema == 'genre' -%}
+    {%- assign ogImage = featuredBook.image -%}
+  {%- when 'book' -%}
+    {%- assign ogImage = book.image -%}
+  {%- when 'movie' -%}
+    {%- assign ogImage = movie.backdrop -%}
+  {%- when 'show' -%}
+    {%- assign ogImage = meta.url | append: '/media/shows/backdrops/backdrop-' | append: show.tmdb_id | append: '.jpg' -%}
+  {%- when 'genre' -%}
     {%- assign genreArtist = genre.artists | shuffleArray | first -%}
-    {{ genreArtist.image }}
-  {%- else -%}
-    {{ meta.meta_data.opengraph_default }}
-  {%- endif -%}
-{%- endcapture -%}
+    {%- assign ogImage = genreArtist.image -%}
+{%- endcase -%}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -95,51 +95,36 @@
     <link rel="alternate" href="https://feedpress.me/coryd-artist-charts" title="{{ meta.siteName }}'s artist charts feed" type="application/rss+xml">
     <link rel="alternate" href="https://feedpress.me/coryd-all" title="{{ meta.siteName }}'s activity feed" type="application/rss+xml">
     <link type="text/plain" rel="author" href="/humans.txt" />
-      {% if schema == 'blog' %}
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage"
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "{{ meta.url }}#website",
+            "url": "{{ meta.url }}",
+            "name": "{{ pageTitle }}",
+            "description": "{{ pageDescription }}",
+            "inLanguage": "{{ meta.locale }}"
           },
-          "isPartOf": {
-            "@id": "{{ meta.url }}#website"
-          },
-          "@id": "{{ fullUrl }}",
-          "headline": "{{ pageTitle }}",
-          "description": "{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}",
-          "image": "{% if image %}{{ image }}{% else %}{{ meta.meta_data.opengraph_default }}{% endif %}",
-          "inLanguage": "{{ meta.locale }}",
-          "publisher": {
-            "@type": "{{ meta.siteType }}",
-            "name": "{{ meta.author }}",
-            "url": "{{ meta.url }}"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "{{ meta.author }}"
-          },
-          "datePublished": "{{ page.date | isoDateOnly: '.' }}"
-        }
-      </script>
-      {% else %}
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@graph": [
+          {%- if schema == 'blog' -%}
             {
-              "@type": "WebSite",
-              "@id": "{{ meta.url }}#website",
-              "url": "{{ meta.url }}",
-              "name": "{{ pageTitle }}",
-              "description": "{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}",
-              "inLanguage": "{{ meta.locale }}"
+              "@type": "BlogPosting",
+              "mainEntityOfPage": { "@type": "WebPage" },
+              "isPartOf": { "@id": "{{ meta.url }}#website" },
+              "@id": "{{ fullUrl }}",
+              "headline": "{{ pageTitle }}",
+              "description": "{{ pageDescription }}",
+              "image": "{{ image | default: meta.meta_data.opengraph_default }}",
+              "inLanguage": "{{ meta.locale }}",
+              "publisher": { "@type": "{{ meta.siteType }}", "name": "{{ meta.author }}", "url": "{{ meta.url }}" },
+              "author": { "@type": "Person", "name": "{{ meta.author }}" },
+              "datePublished": "{{ page.date | isoDateOnly: '.' }}"
             }
-          ]
-        }
-      </script>
-      {% endif %}
+          {%- endif -%}
+        ]
+      }
+    </script>
     <noscript>
       <style>.client-side {display:none}</style>
       <p><img width="1" height="1" src="/7afb285ad050d" /></p>
@@ -148,20 +133,12 @@
   <body>
     <script>
       (() => {
-        const currentTheme = sessionStorage?.getItem('theme');
-        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const root = document.getElementsByTagName('html')[0];
+        const currentTheme = sessionStorage?.getItem('theme')
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+        const root = document.getElementsByTagName('html')[0]
         if (!currentTheme) sessionStorage?.setItem('theme', (prefersDarkScheme ? 'dark' : 'light'))
-        if (currentTheme === 'dark') {
-          root.classList.add('theme__dark')
-        } else if (currentTheme === 'light') {
-          root.classList.add('theme__light')
-        } else if (prefersDarkScheme) {
-          root.classList.add('theme__dark')
-        } else if (!prefersDarkScheme) {
-          root.classList.add('theme__light')
-        }
-      })();
+        root.classList.add(`theme__${currentTheme || (prefersDarkScheme ? 'dark' : 'light')}`)
+      })()
     </script>
     {{ content }}
   </body>

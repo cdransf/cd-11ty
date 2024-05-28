@@ -8,7 +8,7 @@
       margin-bottom: var(--sizing-md);
     }
 
-    & .progress-bar__wrapper {
+    & .progress-bar-wrapper {
       max-width: 40%;
       margin-left: var(--sizing-lg);
     }

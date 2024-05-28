@@ -9,7 +9,10 @@ permalink: "/music/artists/this-week/{% if pagination.pageNumber > 0 %}{{ pagina
 schema: music
 ---
 <a class="back-link-header link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a>
+{% if pagination.pageNumber == 0 %}
 <h2 class="page-header">{{ title }}</h2>
 <p>I've listened to <strong class="highlight-text">{{ music.week.artists.size }} artists</strong> this week and most of what I've listened to has been {{ music.week.genres | sortByPlaysDescending: "plays" | genreStrings: "genre" | mediaLinks: "genre", 5 }}.</p>
 <p><strong class="highlight-text">See my</strong> <a href="/music/albums/this-week/">albums</a> or <a href="/music/tracks/this-week/">tracks</a> for this period.</p>
-{% render "partials/media/music/period/grid.liquid" data:pagination %}
+<hr class="large-spacing" />
+{% endif %}
+{% render "partials/media/grid.liquid" data:pagination, shape: "square" %}
