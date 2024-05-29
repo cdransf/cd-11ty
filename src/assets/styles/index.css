@@ -21,9 +21,8 @@
 @import url('./pages/blogroll.css') layer(page);
 @import url('./pages/contact.css') layer(page);
 @import url('./pages/links.css') layer(page);
-@import url('./pages/music.css') layer(page);
+@import url('./pages/media.css') layer(page);
 @import url('./pages/post.css') layer(page);
-@import url('./pages/watching.css') layer(page);
 @import url('./pages/webrings.css') layer(page);
 
 /* component styles */
