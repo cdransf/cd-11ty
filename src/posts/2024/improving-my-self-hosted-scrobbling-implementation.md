@@ -31,16 +31,16 @@ I imported those CSVs into their respective tables, and worked my way to connect
 
 <img
   srcset="
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/supabase-schema.png&fit=cover&w=250&h=221&fm=webp&q=85 250w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/supabase-schema.png&fit=cover&w=500&h=443&fm=webp&q=85 500w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/supabase-schema.png&fit=cover&w=1000&h=886&fm=webp&q=85 1000w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/supabase-schema.png&fit=cover&w=2000&h=1772&fm=webp&q=85 2000w
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/supabase-schema.png&fit=cover&w=250&h=221&fm=webp&q=50 250w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/supabase-schema.png&fit=cover&w=500&h=443&fm=webp&q=50 500w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/supabase-schema.png&fit=cover&w=1000&h=886&fm=webp&q=50 1000w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/supabase-schema.png&fit=cover&w=2000&h=1772&fm=webp&q=50 2000w
   "
   sizes="(max-width: 450px) 250px,
     (max-width: 850px) 500px,
     (max-width: 1000px) 1000px,
     2000px"
-  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/supabase-schema.png&fit=cover&w=2000&h=1772&fm=webp&q=85"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/supabase-schema.png&fit=cover&w=2000&h=1772&fm=webp&q=50"
   alt="A diagram of my scrobbling tables"
   class="image-banner"
   loading="eager"

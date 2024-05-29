@@ -170,16 +170,16 @@ All of this, yields the single line at the bottom of this image — updated on e
 
 <img
   srcset="
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/now-playing.jpg&fit=cover&w=200&h=61&fm=webp&q=85 200w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/now-playing.jpg&fit=cover&w=400&h=122&fm=webp&q=85 400w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/now-playing.jpg&fit=cover&w=800&h=245&fm=webp&q=85 800w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/now-playing.jpg&fit=cover&w=1600&h=490&fm=webp&q=85 1600w
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/now-playing.jpg&fit=cover&w=200&h=61&fm=webp&q=50 200w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/now-playing.jpg&fit=cover&w=400&h=122&fm=webp&q=50 400w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/now-playing.jpg&fit=cover&w=800&h=245&fm=webp&q=50 800w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/now-playing.jpg&fit=cover&w=1600&h=490&fm=webp&q=50 1600w
   "
   sizes="(max-width: 450px) 200px,
     (max-width: 850px) 400px,
     (max-width: 1000px) 800px,
     1600px"
-  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/now-playing.jpg&fit=cover&w=1600&h=490&fm=webp&q=85"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/now-playing.jpg&fit=cover&w=1600&h=490&fm=webp&q=50"
   alt="Now playing"
   class="image-banner"
   loading="lazy"

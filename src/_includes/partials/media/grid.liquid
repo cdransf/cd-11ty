@@ -19,16 +19,16 @@
         {% if shape == 'square' %}
           <img
             srcset="
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=200&h=200&fm=webp&q=85 200w,
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=400&h=400&fm=webp&q=85 400w,
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=800&h=800&fm=webp&q=85 800w,
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=1200&h=1200&fm=webp&q=85 1200w
+              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=200&h=200&fm=webp&q=50 200w,
+              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=400&h=400&fm=webp&q=50 400w,
+              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=800&h=800&fm=webp&q=50 800w,
+              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=1200&h=1200&fm=webp&q=50 1200w
             "
             sizes="(max-width: 450px) 200px,
               (max-width: 850px) 400px,
               (max-width: 100px) 800px,
               1200px"
-            src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=1200&h=1200&fm=webp&q=85"
+            src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=1200&h=1200&fm=webp&q=50"
             alt="{{ alt }}"
             loading="{{ loadingStrategy }}"
             decoding="async"
@@ -38,16 +38,16 @@
         {% else %}
           <img
             srcset="
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=200&h=307&fm=webp&q=85 200w,
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=400&h=614&fm=webp&q=85 400w,
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=800&h=1228&fm=webp&q=85 800w,
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=1200&h=1842&fm=webp&q=85 1200w
+              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=200&h=307&fm=webp&q=50 200w,
+              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=400&h=614&fm=webp&q=50 400w,
+              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=800&h=1228&fm=webp&q=50 800w,
+              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=1200&h=1842&fm=webp&q=50 1200w
             "
             sizes="(max-width: 450px) 200px,
               (max-width: 850px) 400px,
               (max-width: 1000px) 800px,
               1200px"
-            src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=1200&h=1842&fm=webp&q=85"
+            src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=1200&h=1842&fm=webp&q=50"
             alt="{{ alt }}"
             loading="{{ loadingStrategy }}"
             decoding="async"

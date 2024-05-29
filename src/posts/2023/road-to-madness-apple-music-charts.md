@@ -134,16 +134,16 @@ There are some significant issues with this approach: it doesn't capture listens
 
 <img
   srcset="
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&fit=cover&w=200&h=127&fm=webp&q=85 200w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&fit=cover&w=400&h=254&fm=webp&q=85 400w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&fit=cover&w=800&h=508&fm=webp&q=85 800w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&fit=cover&w=1600&h=1016&fm=webp&q=85 1600w
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&fit=cover&w=200&h=127&fm=webp&q=50 200w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&fit=cover&w=400&h=254&fm=webp&q=50 400w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&fit=cover&w=800&h=508&fm=webp&q=50 800w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&fit=cover&w=1600&h=1016&fm=webp&q=50 1600w
   "
   sizes="(max-width: 450px) 200px,
     (max-width: 850px) 400px,
     (max-width: 1000px) 800px,
     1600px"
-  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&fit=cover&w=1600&h=1016&fm=webp&q=85"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&fit=cover&w=1600&h=1016&fm=webp&q=50"
   alt="Charlie Day standing in front of charts"
   class="image-banner"
   loading="lazy"

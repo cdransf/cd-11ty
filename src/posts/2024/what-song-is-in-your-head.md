@@ -8,16 +8,16 @@ I saw this carved into a table in Austin once and it — like many songs — has
 
 <img
   srcset="
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fit=cover&w=200&h=67&fm=webp&q=85 200w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fit=cover&w=400&h=133&fm=webp&q=85 400w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fit=cover&w=800&h=267&fm=webp&q=85 800w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fit=cover&w=1600&h=533&fm=webp&q=85 1600w
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fit=cover&w=200&h=67&fm=webp&q=50 200w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fit=cover&w=400&h=133&fm=webp&q=50 400w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fit=cover&w=800&h=267&fm=webp&q=50 800w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fit=cover&w=1600&h=533&fm=webp&q=50 1600w
   "
   sizes="(max-width: 450px) 200px,
     (max-width: 850px) 400px,
     (max-width: 1000px) 800px,
     1600px"
-  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fit=cover&w=1600&h=533&fm=webp&q=85"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fit=cover&w=1600&h=533&fm=webp&q=50"
   alt="What song is in your head?"
   class="image-banner"
   loading="eager"

@@ -128,16 +128,16 @@ All of these boilerplate steps leave us with a quick to load, accessible and res
 
 <img
   srcset="
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&fit=cover&w=250&h=121&fm=webp&q=85 250w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&fit=cover&w=500&h=242&fm=webp&q=85 500w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&fit=cover&w=1000&h=484&fm=webp&q=85 1000w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&fit=cover&w=2000&h=968&fm=webp&q=85 2000w
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&fit=cover&w=250&h=121&fm=webp&q=50 250w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&fit=cover&w=500&h=242&fm=webp&q=50 500w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&fit=cover&w=1000&h=484&fm=webp&q=50 1000w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&fit=cover&w=2000&h=968&fm=webp&q=50 2000w
   "
   sizes="(max-width: 450px) 250px,
     (max-width: 850px) 500px,
     (max-width: 1000px) 1000px,
     2000px"
-  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&fit=cover&w=2000&h=968&fm=webp&q=85"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&fit=cover&w=2000&h=968&fm=webp&q=50"
   alt="Pagespeed scores for coryd.dev/now"
   class="image-banner"
   loading="lazy"
