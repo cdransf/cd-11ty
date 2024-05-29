@@ -30,16 +30,16 @@ Each piece was important to me when I got it and remains important to me now. Th
 
 <img
   srcset="
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&fit=cover&w=200&h=179&fm=webp&q=50 200w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&fit=cover&w=400&h=358&fm=webp&q=50 400w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&fit=cover&w=800&h=715&fm=webp&q=50 800w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&fit=cover&w=1600&h=1430&fm=webp&q=50 1600w
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&fit=cover&w=200&h=179&fm=webp&q=40 200w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&fit=cover&w=400&h=358&fm=webp&q=40 400w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&fit=cover&w=800&h=715&fm=webp&q=40 800w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&fit=cover&w=1600&h=1430&fm=webp&q=40 1600w
   "
   sizes="(max-width: 450px) 200px,
     (max-width: 850px) 400px,
     (max-width: 1000px) 800px,
     1600px"
-  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&fit=cover&w=1600&h=1430&fm=webp&q=50"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&fit=cover&w=1600&h=1430&fm=webp&q=40"
   alt="A photo of the Sturgill Simpson-inspired half sleeve referenced above."
   class="image-banner"
   loading="lazy"

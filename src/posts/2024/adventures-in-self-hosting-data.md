@@ -26,16 +26,16 @@ Trakt's backups are in JSON so I went to work coercing them into CSVs to upload 
 
 <img
   srcset="
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&fit=cover&w=200&h=87&fm=webp&q=50 200w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&fit=cover&w=400&h=174&fm=webp&q=50 400w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&fit=cover&w=800&h=347&fm=webp&q=50 800w,
-    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&fit=cover&w=1600&h=694&fm=webp&q=50 1600w
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&fit=cover&w=200&h=87&fm=webp&q=40 200w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&fit=cover&w=400&h=174&fm=webp&q=40 400w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&fit=cover&w=800&h=347&fm=webp&q=40 800w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&fit=cover&w=1600&h=694&fm=webp&q=40 1600w
   "
   sizes="(max-width: 450px) 200px,
     (max-width: 850px) 400px,
     (max-width: 1000px) 800px,
     1600px"
-  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&fit=cover&w=1600&h=694&fm=webp&q=50"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&fit=cover&w=1600&h=694&fm=webp&q=40"
   alt="A diagram of my watched media tables"
   class="image-banner"
   loading="lazy"
