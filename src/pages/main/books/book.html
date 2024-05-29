@@ -11,7 +11,7 @@ schema: book
 {%- capture alt -%}
   {{ book.title }}{% if book.authors %}By {{ book.authors }}{% endif %}
 {%- endcapture -%}
-<a class="back-link-header link-icon flex-centered" href="/books">{% tablericon "arrow-left" "Go back" %} Go back</a>
+<a class="back-link-header link-icon flex-centered" href="/books" title="Go back to the books index page">{% tablericon "arrow-left" "Go back" %} Go back</a>
 <article class="book-focus">
   <div class="book-display">
     <img
@@ -39,7 +39,7 @@ schema: book
       <p class="sub-meta">{% if book.authors %}By {{ book.authors }}{% endif %}{% if book.categories %}{% if book.authors %} • {% endif %}{{ book.categories }}{% endif %}</p>
       {% endif %}
       {% if book.status == 'finished' %}<p class="sub-meta">Finished on: {{ book.date | date: "%B %e, %Y" }}</p>{% endif %}
-      <p class="sub-meta"><a href="https://openlibrary.org/isbn/{{ book.isbn }}">View on Open Library</a></p>
+      <p class="sub-meta"><a href="https://openlibrary.org/isbn/{{ book.isbn }}" title="View {{ book.title | escape }} on Open Library">View on Open Library</a></p>
     </div>
   </div>
   {% if book.description %}<p><em>{{ book.description }}</em></p>{% endif %}

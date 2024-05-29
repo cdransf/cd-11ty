@@ -10,7 +10,7 @@ schema: movie
 {%- capture alt -%}
   {{ movie.title }} • {{ movie.year }}{% if move.rating %} ({{ movie.rating }}){% endif %}
 {%- endcapture -%}
-<a class="back-link-header link-icon flex-centered" href="/watching">{% tablericon "arrow-left" "Go back" %} Go back</a>
+<a class="back-link-header link-icon flex-centered" href="/watching" title="Go back to the watching index page">{% tablericon "arrow-left" "Go back" %} Go back</a>
 <article class="watching-focus">
   <img
     srcset="
@@ -35,7 +35,7 @@ schema: movie
     <p class="title"><strong>{{ movie.title }}</strong></p>
     {% if movie.rating %}<p class="rating">{{ movie.rating }}</p>{% endif %}
     {% if movie.lastWatched %}<p class="sub-meta">Last watched on: {{ movie.lastWatched | date: "%B %e, %Y" }}</p>{% endif %}
-    <p class="sub-meta"><a href="https://themoviedb.org/movie/{{ movie.id }}">View on TMDB</a></p>
+    <p class="sub-meta"><a href="https://themoviedb.org/movie/{{ movie.id }}" title="View {{ movie.title | escape }} on TMDB">View on TMDB</a></p>
   </div>
   {% if movie.review %}
     {% render "partials/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}

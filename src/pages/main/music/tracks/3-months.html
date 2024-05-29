@@ -8,7 +8,7 @@ pagination:
 permalink: "/music/tracks/three-months/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html"
 schema: music
 ---
-<a class="back-link-header link-icon flex-centered" href="/music">{% tablericon "arrow-left" "Go back" %} Go back</a>
+<a class="back-link-header link-icon flex-centered" href="/music" title="Go back to the music index page">{% tablericon "arrow-left" "Go back" %} Go back</a>
 {% if pagination.pageNumber == 0 %}
 <h2 class="page-header">{{ title }}</h2>
 <p>I've listened to <strong class="highlight-text">{{ music.threeMonth.totalTracks }} tracks</strong> over the last 3 months and most of what I've listened to has been <strong class="highlight-text">{{ music.threeMonth.genres | listToString: "genre", 5 }}</strong>.</p>
