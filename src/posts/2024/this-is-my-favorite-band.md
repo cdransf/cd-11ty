@@ -7,7 +7,25 @@ tags:
 ---
 I've called the same band my favorite for a long time and, the older I get, the less likely I feel that designation is to change.<!-- excerpt -->
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/nmn.jpg&w=768&fm=webp&q=85" class="image-banner" alt="Albums and artists" loading="eager" decoding="async" width="768" height="512" />
+<img
+  srcset="
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/nmn.jpg&fit=cover&w=200&h=133&fm=webp&q=85 200w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/nmn.jpg&fit=cover&w=400&h=267&fm=webp&q=85 400w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/nmn.jpg&fit=cover&w=800&h=533&fm=webp&q=85 800w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/nmn.jpg&fit=cover&w=1600&h=1067&fm=webp&q=85 1600w
+  "
+  sizes="(max-width: 450px) 200px,
+    (max-width: 850px) 400px,
+    (max-width: 1000px) 800px,
+    1600px"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/nmn.jpg&fit=cover&w=1600&h=1067&fm=webp&q=85"
+  alt="Albums and artists"
+  class="image-banner"
+  loading="eager"
+  decoding="async"
+  width="768"
+  height="512"
+/>
 
 This is my favorite band: [NoMeansNo](https://en.wikipedia.org/wiki/Nomeansno).
 

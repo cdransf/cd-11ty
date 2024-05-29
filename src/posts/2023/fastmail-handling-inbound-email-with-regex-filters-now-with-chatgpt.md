@@ -9,7 +9,25 @@ I've been using Fastmail for years now and have explored a number of different a
 
 For now, I've approached filtering my mail by applying regular expressions to reasonably broad categories of incoming mail[^2]. My thinking with this approach is that will scale better over the long term by applying heuristics to common phrases and patterns in incoming mail without the need to apply rules to senders on a per address or domain basis.
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/fastmail-workflow.jpg&w=1000&fm=webp&q=85" class="image-banner" loading="eager" decoding="async" alt="A diagram of my Fastmail workflow" width="1000" height="733" />
+<img
+  srcset="
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/fastmail-workflow.jpg&fit=cover&w=250&h=183&fm=webp&q=85 250w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/fastmail-workflow.jpg&fit=cover&w=500&h=367&fm=webp&q=85 500w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/fastmail-workflow.jpg&fit=cover&w=1000&h=733&fm=webp&q=85 1000w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/fastmail-workflow.jpg&fit=cover&w=2000&h=1466&fm=webp&q=85 2000w
+  "
+  sizes="(max-width: 450px) 250px,
+    (max-width: 850px) 500px,
+    (max-width: 1000px) 1000px,
+    2000px"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/fastmail-workflow.jpg&fit=cover&w=2000&h=1466&fm=webp&q=85"
+  alt="A diagram of my Fastmail workflow"
+  class="image-banner"
+  loading="eager"
+  decoding="async"
+  width="1000"
+  height="733"
+/>
 
 ## Alias-specific rules
 

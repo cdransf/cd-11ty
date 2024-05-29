@@ -5,6 +5,23 @@
       <div class="header">{{ movie.title }} ({{ movie.year }})</div>
       <div class="subheader">Last watched @ {{ movie.dateAdded | date: "%B %e, %Y" }}</div>
     </div>
-    <img src="https://coryd.dev/.netlify/images/?url={{ movie.backdrop }}&fit=cover&w=768&h=432&fm=webp&q=85" alt="{{ alt }}" loading="eager" decoding="async" width="768" height="432" />
+    <img
+      srcset="
+        https://coryd.dev/.netlify/images/?url={{ movie.backdrop }}&fit=cover&w=256&h=144&fm=webp&q=85 256w,
+        https://coryd.dev/.netlify/images/?url={{ movie.backdrop }}&fit=cover&w=512&h=288&fm=webp&q=85 512w,
+        https://coryd.dev/.netlify/images/?url={{ movie.backdrop }}&fit=cover&w=1024&h=576&fm=webp&q=85 1024w,
+        https://coryd.dev/.netlify/images/?url={{ movie.backdrop }}&fit=cover&w=2048&h=1152&fm=webp&q=85 2048w
+      "
+      sizes="(max-width: 450px) 256px,
+        (max-width: 850px) 512px,
+        (max-width: 1000px) 1024px,
+        2048px"
+      src="https://coryd.dev/.netlify/images/?url={{ movie.backdrop }}&fit=cover&w=2048&h=1152&fm=webp&q=85"
+      alt="{{ alt }}"
+      loading="eager"
+      decoding="async"
+      width="768"
+      height="432"
+    />
   </div>
 </a>

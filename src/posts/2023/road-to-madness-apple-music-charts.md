@@ -132,7 +132,25 @@ _Cool_[^4]. GitHub triggers a rebuild of the site every hour, Netlify builds it,
 
 There are some significant issues with this approach: it doesn't capture listens to an album in a loop (like me playing the new Outer Heaven record today — hails 🤘). It can get wonky when my diff function hits a track order that elicits a false positive return value.
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&w=768&fm=webp&q=85" class="image-banner" alt="Charlie Day standing in front of charts" loading="lazy" decoding="async" width="768" height="488" />
+<img
+  srcset="
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&fit=cover&w=200&h=127&fm=webp&q=85 200w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&fit=cover&w=400&h=254&fm=webp&q=85 400w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&fit=cover&w=800&h=508&fm=webp&q=85 800w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&fit=cover&w=1600&h=1016&fm=webp&q=85 1600w
+  "
+  sizes="(max-width: 450px) 200px,
+    (max-width: 850px) 400px,
+    (max-width: 1000px) 800px,
+    1600px"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/charlie.jpg&fit=cover&w=1600&h=1016&fm=webp&q=85"
+  alt="Charlie Day standing in front of charts"
+  class="image-banner"
+  loading="lazy"
+  decoding="async"
+  width="768"
+  height="488"
+/>
 
 "But Cory there's last.fm." I hear this, I love last.fm, but I've got concerns about its age, ownership and maintenance. I don't want to be on the wrong end of a scream test when the wrong (right?) server rack gets decommissioned.
 

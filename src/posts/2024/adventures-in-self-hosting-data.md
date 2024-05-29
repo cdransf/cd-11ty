@@ -24,7 +24,25 @@ Trakt's backups are in JSON so I went to work coercing them into CSVs to upload 
 - For movies I wanted to track when I last watched them, title, year, my play count and whether I'd collected it or considered it a favorite.
 - For TV shows I kept a similar data set and linked it to an episodes table via the `tmdb_id`. I used this ID to link out to [TMDB](http://themoviedb.org) and simplify my image URLs.
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&w=768&fm=webp&q=85" class="image-banner" loading="lazy" decoding="async" alt="A diagram of my watched media tables" width="768" height="333" />
+<img
+  srcset="
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&fit=cover&w=200&h=87&fm=webp&q=85 200w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&fit=cover&w=400&h=174&fm=webp&q=85 400w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&fit=cover&w=800&h=347&fm=webp&q=85 800w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&fit=cover&w=1600&h=694&fm=webp&q=85 1600w
+  "
+  sizes="(max-width: 450px) 200px,
+    (max-width: 850px) 400px,
+    (max-width: 1000px) 800px,
+    1600px"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/watched-media-schema.png&fit=cover&w=1600&h=694&fm=webp&q=85"
+  alt="A diagram of my watched media tables"
+  class="image-banner"
+  loading="lazy"
+  decoding="async"
+  width="768"
+  height="333"
+/>
 
 The watched data for [my now page](https://coryd.dev/now) is now sourced from these tables and I've built out [a dedicated watching page](https://coryd.dev/watching/). The hero image is randomly selected from my favorite movies at built time, as are the 6 TV shows and movies in their respective favorite sections.
 

@@ -9,7 +9,24 @@ permalink: /about.html
 <div class="avatar-wrapper flex-centered">
   <div class="interior">
   {%- capture about_alt -%}{{ meta.siteName }} - image by David Neal / @reverentgeek{%- endcapture -%}
-  <img src="https://coryd.dev/.netlify/images/?url=/assets/img/avatar-transparent.png&w=600" alt="{{ about_alt }}" loading="eager" decoding="async" width="600" height="600" />
+  <img
+    srcset="
+      https://coryd.dev/.netlify/images/?url=/assets/img/avatar-transparent.png&fit=cover&w=200&h=200&fm=webp&q=85 200w,
+      https://coryd.dev/.netlify/images/?url=/assets/img/avatar-transparent.png&fit=cover&w=400&h=400&fm=webp&q=85 400w,
+      https://coryd.dev/.netlify/images/?url=/assets/img/avatar-transparent.png&fit=cover&w=800&h=800&fm=webp&q=85 800w,
+      https://coryd.dev/.netlify/images/?url=/assets/img/avatar-transparent.png&fit=cover&w=1200&h=1200&fm=webp&q=85 1200w
+    "
+    sizes="(max-width: 450px) 200px,
+      (max-width: 850px) 400px,
+      (max-width: 1000px) 800px,
+      1200px"
+    src="https://coryd.dev/.netlify/images/?url=/assets/img/avatar-transparent.png&fit=cover&w=1200&h=1200&fm=webp&q=85"
+    alt="{{ about_alt }}"
+    loading="eager"
+    decoding="async"
+    width="600"
+    height="600"
+  />
   </div>
 </div>
 <h2 class="page-header text-centered">Hi, I'm Cory</h2>

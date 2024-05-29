@@ -203,7 +203,25 @@ The templating for my site is all written in [liquid.js](https://liquidjs.com) a
 
 We have an object containing arrays of objects — we iterate through each object for the appropriate section (tracks aren't displayed at the moment) and build the resulting display[^3]. This isn't perfect by any means, but, it does provide a nice little visualization of what I'm listening to and `240` tracks feels adequate as a rolling window into that activity.
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/albums-artists.jpg&w=768&fm=webp&q=85" class="image-banner" alt="Albums and artists" loading="lazy" decoding="async" width="768" height="869" />
+<img
+  srcset="
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/albums-artists.jpg&fit=cover&w=200&h=226&fm=webp&q=85 200w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/albums-artists.jpg&fit=cover&w=400&h=452&fm=webp&q=85 400w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/albums-artists.jpg&fit=cover&w=800&h=904&fm=webp&q=85 800w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/albums-artists.jpg&fit=cover&w=1200&h=1356&fm=webp&q=85 1200w
+  "
+  sizes="(max-width: 450px) 200px,
+    (max-width: 850px) 400px,
+    (max-width: 1000px) 800px,
+    1200px"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/albums-artists.jpg&fit=cover&w=1200&h=1356&fm=webp&q=85"
+  alt="Albums and artists"
+  class="image-banner"
+  loading="lazy"
+  decoding="async"
+  width="768"
+  height="869"
+/>
 
 [^1]: There are some good options to do this, but there aren't a _ton_ and the age of some of the apps is concerning. [Marvis](https://appaddy.wixsite.com/marvis) is far and away your best choice here.
 [^2]: Making sure that you update the values you obtained, including the path to your downloaded `.p8` file.

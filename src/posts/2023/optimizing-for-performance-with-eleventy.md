@@ -126,6 +126,24 @@ For this page in particular, the images that are rendered above the fold are set
 
 All of these boilerplate steps leave us with a quick to load, accessible and resilient site:
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&w=1000&fm=webp&q=85" class="image-banner" alt="Pagespeed scores for coryd.dev/now" loading="lazy" decoding="async" width="1000" height="484" />
+<img
+  srcset="
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&fit=cover&w=250&h=121&fm=webp&q=85 250w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&fit=cover&w=500&h=242&fm=webp&q=85 500w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&fit=cover&w=1000&h=484&fm=webp&q=85 1000w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&fit=cover&w=2000&h=968&fm=webp&q=85 2000w
+  "
+  sizes="(max-width: 450px) 250px,
+    (max-width: 850px) 500px,
+    (max-width: 1000px) 1000px,
+    2000px"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/page-speed.jpg&fit=cover&w=2000&h=968&fm=webp&q=85"
+  alt="Pagespeed scores for coryd.dev/now"
+  class="image-banner"
+  loading="lazy"
+  decoding="async"
+  width="1000"
+  height="484"
+/>
 
 [^1]: It's easy, flexible and helps mitigate my lack of an eye for design by providing safe baselines.

@@ -28,7 +28,25 @@ Each piece was important to me when I got it and remains important to me now. Th
 
 {% capture fallbackIcon %}{% tablericon "photo" "A photo of the Sturgill Simpson-inspired half sleeve referenced above." %}{% endcapture %}
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&w=768&fm=webp&q=85" class="image-banner" alt="A photo of the Sturgill Simpson-inspired half sleeve referenced above." loading="lazy" decoding="async" width="768" height="686" />
+<img
+  srcset="
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&fit=cover&w=200&h=179&fm=webp&q=85 200w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&fit=cover&w=400&h=358&fm=webp&q=85 400w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&fit=cover&w=800&h=715&fm=webp&q=85 800w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&fit=cover&w=1600&h=1430&fm=webp&q=85 1600w
+  "
+  sizes="(max-width: 450px) 200px,
+    (max-width: 850px) 400px,
+    (max-width: 1000px) 800px,
+    1600px"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/half-sleeve.jpg&fit=cover&w=1600&h=1430&fm=webp&q=85"
+  alt="A photo of the Sturgill Simpson-inspired half sleeve referenced above."
+  class="image-banner"
+  loading="lazy"
+  decoding="async"
+  width="768"
+  height="686"
+/>
 
 [^1]: My wife got the same piece done — there was one pointing to the driveway of the house we got married at. It burned down in the Butte fire.
 [^2]: She got elected!

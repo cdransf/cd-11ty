@@ -14,7 +14,24 @@ schema: book
 <a class="back-link-header link-icon flex-centered" href="/books">{% tablericon "arrow-left" "Go back" %} Go back</a>
 <article class="book-focus">
   <div class="book-display">
-    <img src="https://coryd.dev/.netlify/images/?url={{ book.image }}&fm=webp&q=85&w=137&h=209&fit=cover" alt="{{ alt }}" loading="eager" decoding="async" width="137" height="209" />
+    <img
+      srcset="
+        https://coryd.dev/.netlify/images/?url={{ book.image }}&fit=cover&w=203&h=309&fm=webp&q=85 203w,
+        https://coryd.dev/.netlify/images/?url={{ book.image }}&fit=cover&w=406&h=618&fm=webp&q=85 406w,
+        https://coryd.dev/.netlify/images/?url={{ book.image }}&fit=cover&w=812&h=1236&fm=webp&q=85 812w,
+        https://coryd.dev/.netlify/images/?url={{ book.image }}&fit=cover&w=1624&h=2472&fm=webp&q=85 1624w
+      "
+      sizes="(max-width: 450px) 203px,
+        (max-width: 850px) 406px,
+        (max-width: 1000px) 812px,
+        1624px"
+      src="https://coryd.dev/.netlify/images/?url={{ book.image }}&fit=cover&w=1624&h=2472&fm=webp&q=85"
+      alt="{{ alt }}"
+      loading="eager"
+      decoding="async"
+      width="203"
+      height="309"
+    />
     <div class="book-meta">
       <p class="title"><strong>{{ book.title }}</strong></p>
       {% if book.rating %}<p>{{ book.rating }}</p>{% endif %}

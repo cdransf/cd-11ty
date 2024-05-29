@@ -6,7 +6,25 @@ tags: ['music']
 ---
 I saw this carved into a table in Austin once and it — like many songs — has been stuck in my head ever since. I'll get hooked on a song and circle back to that roughly carved message.<!-- excerpt -->
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fm=webp&q=85&w=768" alt="What song is in your head?" class="image-banner" loading="eager" decoding="async" width="768" height="256" />
+<img
+  srcset="
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fit=cover&w=200&h=67&fm=webp&q=85 200w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fit=cover&w=400&h=133&fm=webp&q=85 400w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fit=cover&w=800&h=267&fm=webp&q=85 800w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fit=cover&w=1600&h=533&fm=webp&q=85 1600w
+  "
+  sizes="(max-width: 450px) 200px,
+    (max-width: 850px) 400px,
+    (max-width: 1000px) 800px,
+    1600px"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/what-song.png&fit=cover&w=1600&h=533&fm=webp&q=85"
+  alt="What song is in your head?"
+  class="image-banner"
+  loading="eager"
+  decoding="async"
+  width="768"
+  height="256"
+/>
 
 I've had songs and albums stuck in my head dating back to my childhood, primarily tracks from [*The Traveling Wilburys Vol. 1*](https://en.wikipedia.org/wiki/Traveling_Wilburys_Vol._1) — Tweeter and the Monkey Man, Handle With Care — they all take turns getting stuck in my head.
 

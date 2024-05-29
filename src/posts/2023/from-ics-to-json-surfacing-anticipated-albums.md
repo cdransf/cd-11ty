@@ -66,6 +66,24 @@ Rendering the output is as simple as:
 
 Leaving us with:
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/album-releases.jpg&w=768&fm=webp&q=85" class="image-banner" alt="Albums I'm looking forward to" loading="lazy" decoding="async" width="768" height="383" />
+<img
+  srcset="
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/album-releases.jpg&fit=cover&w=200&h=100&fm=webp&q=85 200w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/album-releases.jpg&fit=cover&w=400&h=200&fm=webp&q=85 400w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/album-releases.jpg&fit=cover&w=800&h=400&fm=webp&q=85 800w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/album-releases.jpg&fit=cover&w=1600&h=800&fm=webp&q=85 1600w
+  "
+  sizes="(max-width: 450px) 200px,
+    (max-width: 850px) 400px,
+    (max-width: 1000px) 800px,
+    1600px"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/album-releases.jpg&fit=cover&w=1600&h=800&fm=webp&q=85"
+  alt="Albums I'm looking forward to"
+  class="image-banner"
+  loading="lazy"
+  decoding="async"
+  width="768"
+  height="383"
+/>
 
 [^1]: At this point, a dev playground.

@@ -14,7 +14,23 @@ To simplify file uploads to B2, I mount the bucket for my site using [Mountain D
 
 My music charting feature relies on JSON maps of artist and album metadata — if a new artist or album isn't present in either, it assumes that the image it needs is in the format of `artist-name.jpg` or `artist-name-album-name.jpg`. I store the canonical copies of these image files in a separate GitHub repo and have Hazel watch the `artist` and `album` directories contained therein. It renames the files to match the aforementioned format, strips characters that typically break URLs and copies them to my mounted B2 Bucket.
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/albums-hazel-rule-example.png&w=768&fm=webp&q=85" class="image-banner" alt="An example of my album art Hazel workflow" width="786" height="295" />
+<img
+  srcset="
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/albums-hazel-rule-example.png&fit=cover&w=200&h=75&fm=webp&q=85 200w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/albums-hazel-rule-example.png&fit=cover&w=400&h=150&fm=webp&q=85 400w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/albums-hazel-rule-example.png&fit=cover&w=800&h=300&fm=webp&q=85 800w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/albums-hazel-rule-example.png&fit=cover&w=1600&h=600&fm=webp&q=85 1600w
+  "
+  sizes="(max-width: 450px) 200px,
+    (max-width: 850px) 400px,
+    (max-width: 1000px) 800px,
+    1600px"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/albums-hazel-rule-example.png&fit=cover&w=1600&h=600&fm=webp&q=85"
+  alt="An example of my album art Hazel workflow"
+  class="image-banner"
+  width="786"
+  height="295"
+/>
 
 ---
 

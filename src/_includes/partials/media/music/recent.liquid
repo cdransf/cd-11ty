@@ -3,7 +3,24 @@
   {% capture alt %}{{ item.title | escape }} by {{ item.artist }}{% endcapture %}
     <div class="item">
       <div class="meta">
-        <img src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=64&h=64&fm=webp&q=85" alt="{{ alt }}" loading="lazy" decoding="async" width="64" height="64" />
+        <img
+          srcset="
+            https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=64&h=64&fm=webp&q=85 64w,
+            https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=128&h=128&fm=webp&q=85 128w,
+            https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=256&h=256&fm=webp&q=85 256w,
+            https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=512&h=512&fm=webp&q=85 512w
+          "
+          sizes="(max-width: 450px) 64px,
+            (max-width: 850px) 128px,
+            (max-width: 1000px) 256px,
+            512px"
+          src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=512&h=512&fm=webp&q=85"
+          alt="{{ alt }}"
+          loading="lazy"
+          decoding="async"
+          width="64"
+          height="64"
+        />
         <div class="meta-text">
           <div class="title">
             <a href="{{ item.url }}">{{ item.title }}</a>

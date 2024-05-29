@@ -12,7 +12,23 @@ I made a minor update to how I'm normalizing TV data for display on my now page.
 
 By _minor_ I mean one of those things that may well break inexplicably depending on where the data lands. Instead of returning a normalized array based directly off the data returned by [Trakt](https://trakt.tv)'s API I'm instead collecting episodes in an array, checking as I iterate through the response to see if an episode of the same show exists and replacing that object with a mutated object designed to display the range of episodes watched for the show.
 
-<img src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/grouped-tv.jpg&w=768&fm=webp&q=85" class="image-banner" alt="Grouped TV episodes" width="768" height="286" />
+<img
+  srcset="
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/grouped-tv.jpg&fit=cover&w=200&h=75&fm=webp&q=85 200w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/grouped-tv.jpg&fit=cover&w=400&h=150&fm=webp&q=85 400w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/grouped-tv.jpg&fit=cover&w=800&h=300&fm=webp&q=85 800w,
+    https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/grouped-tv.jpg&fit=cover&w=1600&h=600&fm=webp&q=85 1600w
+  "
+  sizes="(max-width: 450px) 200px,
+    (max-width: 850px) 400px,
+    (max-width: 1000px) 800px,
+    1600px"
+  src="https://coryd.dev/.netlify/images/?url=https://coryd.dev/media/blog/grouped-tv.jpg&fit=cover&w=1600&h=600&fm=webp&q=85"
+  alt="Grouped TV episodes"
+  class="image-banner"
+  width="768"
+  height="286"
+/>
 
 {% raw %}
 
