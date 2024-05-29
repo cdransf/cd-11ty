@@ -7,13 +7,6 @@
   & .link-box {
     border: 1px solid var(--gray-light);
     padding: var(--sizing-xs) var(--sizing-sm);
-    position: relative;
-  }
-
-  & button {
-    position: absolute;
-    bottom: var(--sizing-sm);
-    right: var(--sizing-sm);
   }
 }
 

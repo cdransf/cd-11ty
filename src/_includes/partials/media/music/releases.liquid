@@ -13,7 +13,6 @@
       <a href="{{ album.artist_url }}" title="Learn more about {{ album.artist | escape }}">
         {{ album.artist }}
       </a>
-      <span> • <a href="https://coryd.dev/music/genres/{{ album.genre | slugify | downcase }}" title="Learn more about {{ album.genre | escape }}">{{ album.genre }}</a></span>
     </li>
   {% endfor %}
 </ul>
