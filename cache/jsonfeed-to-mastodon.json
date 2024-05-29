@@ -13825,7 +13825,10 @@
     "url": "https://www.mayank.co/blog/web-components-considered-harmful/",
     "content_text": "🔗: 'Web components' considered harmful via Mayank #Tech #WebDev #JavaScript https://www.mayank.co/blog/web-components-considered-harmful/",
     "date_published": "Wed, 29 May 2024 17:47:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112526636930211664"
+    ],
+    "lastTootTimestamp": 1717020216882
   },
   "https://www.todayintabs.com/p/fracking-web": {
     "id": "aHR0cHM6Ly93d3cudG9kYXlpbnRhYnMuY29tL3AvZnJhY2tpbmctd2Vi",
@@ -13837,5 +13840,21 @@
       "https://social.lol/users/cory/statuses/112526164660375290"
     ],
     "lastTootTimestamp": 1717013010622
+  },
+  "https://coryd.dev/posts/2024/partnering-with-an-ai-company-means-i-can-no-longer-trust-your-output/": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9wYXJ0bmVyaW5nLXdpdGgtYW4tYWktY29tcGFueS1tZWFucy1pLWNhbi1uby1sb25nZXItdHJ1c3QteW91ci1vdXRwdXQv",
+    "title": "📝: Partnering with an AI company means I can no longer trust your output",
+    "url": "https://coryd.dev/posts/2024/partnering-with-an-ai-company-means-i-can-no-longer-trust-your-output/",
+    "content_text": "📝: Partnering with an AI company means I can no longer trust your output #Tech #AI #Journalism https://coryd.dev/posts/2024/partnering-with-an-ai-company-means-i-can-no-longer-trust-your-output/",
+    "date_published": "Wed, 29 May 2024 21:58:00 GMT",
+    "toots": []
+  },
+  "https://aworkinglibrary.com/writing/against-optimization": {
+    "id": "aHR0cHM6Ly9hd29ya2luZ2xpYnJhcnkuY29tL3dyaXRpbmcvYWdhaW5zdC1vcHRpbWl6YXRpb24=",
+    "title": "🔗: Against optimization via Mandy Brown",
+    "url": "https://aworkinglibrary.com/writing/against-optimization",
+    "content_text": "🔗: Against optimization via Mandy Brown #Tech https://aworkinglibrary.com/writing/against-optimization",
+    "date_published": "Wed, 29 May 2024 21:21:00 GMT",
+    "toots": []
   }
 }
