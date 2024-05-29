@@ -1,5 +1,5 @@
 export default {
-  "https://www.todayintabs.com": "Rusty Foster",
+  "https://www.todayintabs.com": "Today in Tabs",
   "https://keithjgrant.com": "Keith J. Grant",
   "https://mxb.dev": "Max Böck",
   "https://niclake.me": "Nic Lake",
