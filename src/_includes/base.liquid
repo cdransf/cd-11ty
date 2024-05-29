@@ -43,7 +43,8 @@
 {%- assign ogImage = meta.meta_data.opengraph_default -%}
 {%- case schema -%}
   {%- when 'blog' -%}
-    {%- assign ogImage = meta.url | append: '/assets/img/ogi/' | append: title | slugifyString | append: '-preview.png' -%}
+    {%- assign ogBlogSlug = title | slugifyString -%}
+    {%- assign ogImage = meta.url | append: '/assets/img/ogi/' | append: ogBlogSlug | append: '-preview.png' -%}
   {%- when 'music' -%}
     {%- assign ogImage = music.recent.artists[0].image -%}
   {%- when 'music-index' -%}
