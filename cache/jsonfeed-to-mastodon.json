@@ -13807,5 +13807,32 @@
       "https://social.lol/users/cory/statuses/112520502770015735"
     ],
     "lastTootTimestamp": 1716926617037
+  },
+  "https://daverupert.com/2024/05/cold-turkey-wont-fix-your-javascript-addiction/": {
+    "id": "aHR0cHM6Ly9kYXZlcnVwZXJ0LmNvbS8yMDI0LzA1L2NvbGQtdHVya2V5LXdvbnQtZml4LXlvdXItamF2YXNjcmlwdC1hZGRpY3Rpb24v",
+    "title": "🔗: A common web component learning blunder via Dave Rupert",
+    "url": "https://daverupert.com/2024/05/cold-turkey-wont-fix-your-javascript-addiction/",
+    "content_text": "🔗: A common web component learning blunder via Dave Rupert #Tech #WebDev #JavaScript https://daverupert.com/2024/05/cold-turkey-wont-fix-your-javascript-addiction/",
+    "date_published": "Wed, 29 May 2024 17:51:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112525695131695776"
+    ],
+    "lastTootTimestamp": 1717005846177
+  },
+  "https://www.mayank.co/blog/web-components-considered-harmful/": {
+    "id": "aHR0cHM6Ly93d3cubWF5YW5rLmNvL2Jsb2cvd2ViLWNvbXBvbmVudHMtY29uc2lkZXJlZC1oYXJtZnVsLw==",
+    "title": "🔗: 'Web components' considered harmful via Mayank",
+    "url": "https://www.mayank.co/blog/web-components-considered-harmful/",
+    "content_text": "🔗: 'Web components' considered harmful via Mayank #Tech #WebDev #JavaScript https://www.mayank.co/blog/web-components-considered-harmful/",
+    "date_published": "Wed, 29 May 2024 17:47:00 GMT",
+    "toots": []
+  },
+  "https://www.todayintabs.com/p/fracking-web": {
+    "id": "aHR0cHM6Ly93d3cudG9kYXlpbnRhYnMuY29tL3AvZnJhY2tpbmctd2Vi",
+    "title": "🔗: Fracking The Web via Today in Tabs",
+    "url": "https://www.todayintabs.com/p/fracking-web",
+    "content_text": "🔗: Fracking The Web via Today in Tabs #Tech #AI https://www.todayintabs.com/p/fracking-web",
+    "date_published": "Wed, 29 May 2024 17:46:00 GMT",
+    "toots": []
   }
 }
