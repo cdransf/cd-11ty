@@ -1,7 +1,7 @@
 export default async function () {
   return {
     "siteName": "Cory Dransfeldt",
-    "siteDescription": "I'm a software developer in Camarillo, California. I enjoy hanging out with my beautiful family and 3 rescue dogs, technology, automation, music, writing, reading and tv and movies.",
+    "siteDescription": "I'm a software developer in Camarillo, California. I write about software development, technology and music.",
     "author": "Cory Dransfeldt",
     "email": "hi@coryd.dev",
     "url": "https://coryd.dev",

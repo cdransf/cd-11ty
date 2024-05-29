@@ -58,6 +58,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .artist-focus img {
+    max-width: 240px;
+  }
+
   .artist-focus {
     & .artist-display {
       flex-direction: row;

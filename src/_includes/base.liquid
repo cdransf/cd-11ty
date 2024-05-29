@@ -7,6 +7,10 @@
   {%- assign pageTitle = title | append: ' • ' | append: meta.siteName -%}
 {%- elsif artist.name_string -%}
   {%- assign pageTitle = 'Artists • ' | append: artist.name_string | append: ' • ' | append: meta.siteName -%}
+{%- elsif schema == 'music-index' -%}
+  {%- assign pageTitle = 'Music • ' | append: meta.siteName -%}
+{%- elsif genre.name -%}
+  {%- assign pageTitle = 'Music • ' | append: genre.name | append: ' • ' | append: meta.siteName -%}
 {%- elsif book.title -%}
   {%- assign pageTitle = 'Books • ' | append: book.title | append: ' • ' | append: meta.siteName -%}
 {%- elsif movie.title -%}
@@ -17,8 +21,6 @@
   {%- assign pageTitle = pageTitle | append: ' • ' | append: meta.siteName -%}
 {%- elsif show.title -%}
   {%- assign pageTitle = 'Shows • ' | append: show.title | append: ' • ' | append: meta.siteName -%}
-{%- elsif genre.name -%}
-  {%- assign pageTitle = 'Music • ' | append: genre.name | append: ' • ' | append: meta.siteName -%}
 {%- endif -%}
 
 {%- assign pageDescription = meta.siteDescription -%}
@@ -44,8 +46,13 @@
     {%- assign ogImage = meta.url | append: '/assets/img/ogi/' | append: title | slugifyString | append: '-preview.png' -%}
   {%- when 'music' -%}
     {%- assign ogImage = music.recent.artists[0].image -%}
+  {%- when 'music-index' -%}
+    {%- assign ogImage = music.recent.artists[0].image -%}
   {%- when 'artist' -%}
     {%- assign ogImage = artist.image -%}
+  {%- when 'genre' -%}
+    {%- assign sortedGenreArtists = genre.artists | sortByPlaysDescending: "total_plays" -%}
+    {%- assign ogImage =  sortedGenreArtists[0].image -%}
   {%- when 'watching' -%}
     {%- assign featuredMovie = movies.recentlyWatched | first -%}
     {%- assign ogImage = featuredMovie.backdrop -%}
