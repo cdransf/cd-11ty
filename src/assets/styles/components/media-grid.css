@@ -8,6 +8,10 @@
   gap: var(--sizing-sm);
   margin-bottom: var(--sizing-base);
 
+  &.no-pagination {
+    margin-bottom: 0;
+  }
+
   &.square {
     grid-template-columns: var(--grid-square);
 

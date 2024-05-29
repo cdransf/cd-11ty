@@ -3,6 +3,7 @@ import { createClient } from '@supabase/supabase-js'
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+
 const PAGE_SIZE = 1000
 
 const fetchAllShows = async () => {
@@ -61,8 +62,7 @@ export default async function () {
 
   episodes.sort((a, b) => new Date(b['last_watched_at']) - new Date(a['last_watched_at']))
   const allEpisodes = episodes
-  const recentlyWatchedEpisodes = episodes.slice(0, 150)
-
+  const recentlyWatchedEpisodes = episodes.slice(0, 225)
   const formatEpisodeData = (episodes) => {
     const episodeData = []
     const showEpisodesMap = {}
