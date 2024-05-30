@@ -8,6 +8,7 @@ export default async function () {
       { name: 'Speedlify' },
     ],
     menu: [
+      { name: 'Posts', url: '/posts', icon: 'article'},
       { name: 'Music', url: '/music', icon: 'headphones' },
       { name: 'Watching', url: '/watching', icon: 'device-tv' },
       { name: 'Books', url: '/books', icon: 'books' },

@@ -51,12 +51,13 @@
   --brand-music: #1e90ff;
   --brand-tv: #ff4500;
   --brand-books: #32cd32;
-  --brand-links: #9370db;
-  --brand-about: #ff6347;
-  --brand-search: #4682b4;
   --brand-instapaper: var(--text-color);
   --brand-buy-me-a-coffee: #40dca5;
   --brand-rss: #f26522;
+  --posts: #008080;
+  --links: #9370db;
+  --about: #ff6347;
+  --search: #4682b4;
   --webrings: #da70d6;
   --moon: #6a5acd;
   --sun: #ffa500;

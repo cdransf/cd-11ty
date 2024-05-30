@@ -338,9 +338,10 @@ nav .active svg {
 .headphones svg { stroke: var(--brand-music) !important; }
 .device-tv svg { stroke: var(--brand-tv) !important; }
 .books svg { stroke: var(--brand-books) !important; }
-.link svg { stroke: var(--brand-links) !important; }
-.info-square svg { stroke: var(--brand-about) !important }
-.search svg { stroke: var(--brand-search) !important }
+.article svg { stroke: var(--posts) !important }
+.link svg { stroke: var(--links) !important; }
+.info-square svg { stroke: var(--about) !important }
+.search svg { stroke: var(--search) !important }
 .news svg { stroke: var(--brand-instapaper) !important; }
 .coffee svg { stroke: var(--brand-buy-me-a-coffee) !important; }
 .heart-handshake svg { stroke: var(--webrings) !important; }
