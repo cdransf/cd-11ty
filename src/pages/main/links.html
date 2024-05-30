@@ -21,7 +21,6 @@ permalink: "/links/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}
     </a>
     {% if author %} via {{ author }}{% endif %}
     {% render "partials/widgets/tags.liquid", tags:link.data.tags %}
-    {% render "partials/widgets/share-button.liquid", url:link.data.link, title:link.data.title, tagMap:collections.tagMap %}
   </div>
   {% endfor %}
 </div>
