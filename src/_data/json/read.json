@@ -10722,7 +10722,7 @@
   {
     "isbn": "0306922223",
     "dateAdded": "2024-05-19",
-    "status": "want to read",
+    "status": "started",
     "rating": "unrated",
     "tags": [
       "music",
@@ -10742,7 +10742,8 @@
     ],
     "thumbnail": "https://coryd.dev/media/books/0306922223-do-what-you-want.jpg",
     "language": "en",
-    "link": "https://books.google.com/books/about/Do_What_You_Want.html?hl=&id=gJItzQEACAAJ"
+    "link": "https://books.google.com/books/about/Do_What_You_Want.html?hl=&id=gJItzQEACAAJ",
+    "dateStarted": "2024-05-30"
   },
   {
     "isbn": "0306922126",
