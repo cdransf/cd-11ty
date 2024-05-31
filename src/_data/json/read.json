@@ -10747,11 +10747,11 @@
   {
     "isbn": "0306922126",
     "dateAdded": "2024-05-21",
-    "status": "started",
-    "rating": "unrated",
+    "status": "finished",
+    "rating": "⭐️⭐️⭐️⭐️",
     "tags": [
-      "music",
-      "nonfiction"
+      "nonfiction",
+      "music"
     ],
     "title": "More Fun in the New World",
     "authors": [
@@ -10768,7 +10768,8 @@
     "thumbnail": "https://coryd.dev/media/books/0306922126-more-fun-in-the-new-world.jpg",
     "language": "en",
     "link": "https://books.google.com/books/about/More_Fun_in_the_New_World.html?hl=&id=NMeovAEACAAJ",
-    "dateStarted": "2024-05-21"
+    "dateStarted": "2024-05-21",
+    "dateFinished": "2024-05-30"
   },
   {
     "isbn": "1573449709",
