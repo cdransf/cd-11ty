@@ -1,0 +1,5 @@
+{% for block in blocks %}
+  {% if block.type == 'youtube_player' %}
+    {% render "partials/widgets/youtube-player.liquid", url:block.url %}
+  {% endif %}
+{% endfor %}

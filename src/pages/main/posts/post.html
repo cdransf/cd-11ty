@@ -22,6 +22,7 @@ schema: blog
     <div class="e-content">
       {% render "partials/banners/old-post.liquid", date:post.date %}
       {{ post.content | markdown }}
+      {% render "partials/posts/blocks.liquid", blocks:post.blocks %}
     </div>
   </article>
 </div>

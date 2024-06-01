@@ -8,6 +8,43 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 const PAGE_SIZE = 50
 
+const fetchBlockData = async (collection, itemId) => {
+  const { data, error } = await supabase
+    .from(collection)
+    .select('*')
+    .eq('id', itemId)
+    .single()
+
+  if (error) {
+    console.error(`Error fetching data from ${collection} for item ${itemId}:`, error)
+    return null
+  }
+
+  return data
+}
+
+const fetchBlocksForPost = async (postId) => {
+  const { data, error } = await supabase
+    .from('posts_blocks')
+    .select('collection, item')
+    .eq('posts_id', postId)
+
+  if (error) {
+    console.error(`Error fetching blocks for post ${postId}:`, error)
+    return []
+  }
+
+  const blocks = await Promise.all(data.map(async block => {
+    const blockData = await fetchBlockData(block.collection, block.item)
+    return {
+      type: block.collection,
+      ...blockData
+    }
+  }))
+
+  return blocks
+}
+
 const fetchTagsForPost = async (postId) => {
   const { data, error } = await supabase
     .from('posts_tags')
@@ -43,6 +80,7 @@ const fetchAllPosts = async () => {
 
     for (const post of data) {
       post.tags = await fetchTagsForPost(post.id)
+      post.blocks = await fetchBlocksForPost(post.id)
       post.url = `/posts/${DateTime.fromISO(post.date).year}/${slugify(post.title, {
         replacement: '-',
         remove: /[#,&,+()$~%.'":*?<>{}\[\]\/\\|`!@\^\—]/g,
