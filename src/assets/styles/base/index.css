@@ -65,6 +65,12 @@ blockquote {
   margin: var(--sizing-base) 0;
 }
 
+code {
+  padding: var(--sizing-xs);
+  color: var(--text-color-inverted);
+  background-color: var(--background-color-inverted);
+}
+
 :is(body, html, nav .search) svg {
   stroke: var(--text-color);
 }
@@ -371,7 +377,6 @@ main {
   margin-right: auto;
 }
 
-/* now */
 .home-status,
 article {
   border-bottom: 1px solid var(--gray-light);
@@ -429,18 +434,6 @@ footer {
   color: var(--text-color);
 }
 
-.highlight-text {
-  color: var(--color-lightest);
-  background-color: var(--accent-color);
-  padding: var(--sizing-xs);
-}
-
-code {
-  padding: var(--sizing-xs);
-  color: var(--text-color-inverted);
-  background-color: var(--background-color-inverted);
-}
-
 /* articles */
 article {
   & h2 {
@@ -472,6 +465,10 @@ article {
   & p:first-of-type {
     margin-top: var(--sizing-sm);
   }
+}
+
+.footnotes + .banner {
+  margin-top: 0 !important;
 }
 
 /* buttons */
@@ -566,6 +563,12 @@ li {
 }
 
 /* utilities */
+.highlight-text {
+  color: var(--color-lightest);
+  background-color: var(--accent-color);
+  padding: var(--sizing-xs);
+}
+
 .hidden {
   display: none !important;
 }

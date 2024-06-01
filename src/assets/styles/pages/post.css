@@ -16,10 +16,6 @@ hr.footnotes-sep {
   padding-bottom: var(--sizing-base);
 }
 
-.footnotes + .banner {
-  margin-top: 0;
-}
-
 .footnote-item > p {
   display: inline;
 }

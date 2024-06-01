@@ -2,7 +2,7 @@
 
 {%- assign pageTitle = meta.siteName -%}
 {%- if schema == 'blog' -%}
-  {%- assign pageTitle = title -%}
+  {%- assign pageTitle = post.title -%}
 {%- elsif title -%}
   {%- assign pageTitle = title | append: ' • ' | append: meta.siteName -%}
 {%- elsif artist.name_string -%}
