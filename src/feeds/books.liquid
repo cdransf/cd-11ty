@@ -1,7 +1,7 @@
 ---
 layout: null
 eleventyExcludeFromCollections: true
-permalink: /feeds/books
+permalink: "/feeds/books"
 ---
 {%- assign bookData = books | bookStatus: 'finished' | bookSortDescending -%}
 {% render "partials/feeds/rss.liquid"

@@ -1,7 +1,9 @@
 import { DateTime } from 'luxon'
 import { URL } from 'url'
 import slugify from 'slugify'
+import markdownIt from 'markdown-it'
 import sanitizeHtml from 'sanitize-html';
+
 import { shuffleArray, sanitizeMediaString } from '../utilities/index.js'
 
 const BASE_URL = 'https://coryd.dev'
@@ -94,7 +96,7 @@ export default {
     try {
       return (new URL(url, BASE_URL)).toString()
     } catch(e) {
-      console.log('Error generating absoluteUrl.')
+      console.error('Error generating absoluteUrl.')
     }
     return url;
   },
@@ -105,6 +107,7 @@ export default {
     entries.forEach((entry) => {
       const dateKey = Object.keys(entry).find((key) => key.includes('date'))
       const date = new Date(entry[dateKey])
+      const md = markdownIt({ html: true, linkify: true })
       let excerpt = ''
       let url = ''
       const feedNote = '<hr/><p>This is a full text feed, but not all content can be rendered perfectly within the feed. If something looks off, feel free to <a href="https://coryd.dev">visit my site</a> for the original post.</p>'
@@ -116,20 +119,20 @@ export default {
 
       // set the entry excerpt
       if (entry.description) excerpt = entry.description // general case
-      if (entry?.data?.description) excerpt = `${entry?.data?.description}<br/><br/>` // links where description is stored in frontmatter
       if (entry.type === 'book' || entry.type === 'movie') excerpt = `${entry.description}<br/><br/>` // books
 
       // send full post content to rss
-      if (entry.content) excerpt = sanitizeHtml(`${entry.content}${feedNote}`, {
-        disallowedTagsMode: 'completelyDiscard'
-      })
+      if (entry?.url?.includes('/posts/') && entry.content) excerpt = sanitizeHtml(`${md.render(entry.content)}${feedNote}`, {
+          disallowedTagsMode: 'completelyDiscard'
+        })
+
 
       // if there's a valid entry return a normalized object
       if (entry)
         posts.push({
-          title: entry.data?.title || entry.title,
+          title: entry.title,
           url,
-          content: entry?.description || entry?.data?.description,
+          content: entry.description,
           date,
           excerpt,
           rating: entry?.rating || ''
