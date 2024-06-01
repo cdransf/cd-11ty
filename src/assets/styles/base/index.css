@@ -382,10 +382,6 @@ article {
   margin-top: 0;
 }
 
-article.tag-post:last-of-type {
-  border-bottom: none;
-}
-
 .article-widget-wrapper {
   border-bottom: 1px solid var(--gray-light);
   margin-bottom: var(--sizing-base);
@@ -475,15 +471,6 @@ article {
 
   & p:first-of-type {
     margin-top: var(--sizing-sm);
-  }
-}
-
-.tag-element {
-  margin-bottom: var(--sizing-lg);
-  display: inline-block;
-
-  &:not(:last-child) {
-    margin-right: var(--sizing-lg);
   }
 }
 
@@ -637,14 +624,6 @@ li {
 
     & p:first-of-type {
       margin-top: var(--sizing-md);
-    }
-  }
-
-  .tag-element {
-    margin-bottom: var(--sizing-sm);
-
-    &:not(:last-child) {
-      margin-right: var(--sizing-sm);
     }
   }
 
