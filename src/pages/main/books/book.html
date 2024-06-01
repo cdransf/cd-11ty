@@ -35,8 +35,8 @@ schema: book
     <div class="book-meta">
       <p class="title"><strong>{{ book.title }}</strong></p>
       {% if book.rating %}<p>{{ book.rating }}</p>{% endif %}
-      {% if book.authors or book.categories %}
-      <p class="sub-meta">{% if book.authors %}By {{ book.authors }}{% endif %}{% if book.categories %}{% if book.authors %} • {% endif %}{{ book.categories }}{% endif %}</p>
+      {% if book.author %}
+        <p class="sub-meta">By {{ book.author }}</p>
       {% endif %}
       {% if book.status == 'finished' %}<p class="sub-meta">Finished on: {{ book.date | date: "%B %e, %Y" }}</p>{% endif %}
       <p class="sub-meta"><a href="https://openlibrary.org/isbn/{{ book.isbn }}" title="View {{ book.title | escape }} on Open Library">View on Open Library</a></p>
