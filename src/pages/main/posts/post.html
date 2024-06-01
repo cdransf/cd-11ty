@@ -8,23 +8,21 @@ permalink: "/posts/{{ post.date | date: '%Y' }}/{{ post.title | slugify | downca
 schema: blog
 ---
 {%- capture postUrl %}{{ meta.url }}{{ post.url }}{% endcapture -%}
-<div class="default-wrapper">
-  <article class="h-entry">
-    <div class="flex-centered gap-xs icon-small icon-light">
-      {% tablericon "calendar-month" "Date" %}
-      <time class="dt-published" datetime="{{ date }}">
-        {{ post.date | date: "%B %e, %Y" }}
-      </time>
-    </div>
-    <h2 class="p-name">{{ post.title }}</h2>
-    <span class="p-author h-card hidden">{{ meta.author }}</span>
-    <div class="p-summary hidden">{{ post.description }}</div>
-    <div class="e-content">
-      {% render "partials/banners/old-post.liquid", date:post.date %}
-      {{ post.content | markdown }}
-      {% render "partials/posts/blocks.liquid", blocks:post.blocks %}
-    </div>
-  </article>
-</div>
+<article class="h-entry">
+  <div class="flex-centered gap-xs icon-small icon-light">
+    {% tablericon "calendar-month" "Date" %}
+    <time class="dt-published" datetime="{{ date }}">
+      {{ post.date | date: "%B %e, %Y" }}
+    </time>
+  </div>
+  <h2 class="p-name">{{ post.title }}</h2>
+  <span class="p-author h-card hidden">{{ meta.author }}</span>
+  <div class="p-summary hidden">{{ post.description }}</div>
+  <div class="e-content">
+    {% render "partials/banners/old-post.liquid", date:post.date %}
+    {{ post.content | markdown }}
+    {% render "partials/posts/blocks.liquid", blocks:post.blocks %}
+  </div>
+</article>
 {% render "partials/widgets/mastodon-post.liquid", postUrl:postUrl, linkPosts:linkPosts %}
 {% render "partials/widgets/addon-links.liquid", posts:posts, analytics:analytics, links:links %}
