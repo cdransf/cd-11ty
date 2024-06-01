@@ -166,7 +166,7 @@ export default {
         normalized['subtext'] = item['rating']
       }
       if (item.type === 'book') {
-        normalized['title'] = `${item['title']} by ${item['authors']}`
+        normalized['title'] = `${item['title']} by ${item['author']}`
         normalized['rating'] = item['rating']
         if (item['rating']) normalized['subtext'] = item['rating']
       }
