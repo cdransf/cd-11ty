@@ -41,6 +41,7 @@ const fetchAllLinks = async () => {
 
     for (const link of data) {
       link.tags = await fetchTagsForLink(link.id)
+      link.type = 'link'
     }
 
     links = links.concat(data)

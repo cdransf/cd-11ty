@@ -115,11 +115,11 @@ export default {
       // set the entry url
       if (entry.url?.includes('http')) url = entry.url
       if (!entry.url?.includes('http')) url = new URL(entry.url, BASE_URL).toString()
-      if (entry?.data?.link) url = entry.data.link
+      if (entry?.link) url = entry.link
 
       // set the entry excerpt
       if (entry.description) excerpt = entry.description // general case
-      if (entry.type === 'book' || entry.type === 'movie') excerpt = `${entry.description}<br/><br/>` // books
+      if (entry.type === 'book' || entry.type === 'movie' || entry.type === 'link') excerpt = `${entry.description}<br/><br/>` // books
 
       // send full post content to rss
       if (entry?.url?.includes('/posts/') && entry.content) excerpt = sanitizeHtml(`${md.render(entry.content)}${feedNote}`, {
