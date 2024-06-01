@@ -2,7 +2,7 @@
 title: Links
 layout: default
 pagination:
-  data: collections.links
+  data: links
   size: 30
 permalink: "/links/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html"
 ---
@@ -14,13 +14,11 @@ permalink: "/links/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}
 {% endif %}
 <div class="link-grid">
   {% for link in pagination.items %}
-  {% assign author = link.data.link | stripUtm | authorLookup %}
   <div class="link-box">
-    <a href="{{ link.data.link }}" title="{{ link.data.title | escape }}">
-      <strong>{{ link.data.title }}</strong>
+    <a href="{{ link.link }}" title="{{ link.title | escape }}">
+      <strong>{{ link.title }}</strong>
     </a>
-    {% if author %} via {{ author }}{% endif %}
-    {% render "partials/widgets/tags.liquid", tags:link.data.tags %}
+    {% if link.authors %} via <a href="{{ link.authors.url }}">{{ link.authors.name }}</a>{% endif %}
   </div>
   {% endfor %}
 </div>

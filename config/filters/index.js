@@ -2,10 +2,8 @@ import { DateTime } from 'luxon'
 import { URL } from 'url'
 import slugify from 'slugify'
 import sanitizeHtml from 'sanitize-html';
-import authors from '../data/author-map.js'
 import { shuffleArray, sanitizeMediaString } from '../utilities/index.js'
 
-const utmPattern = /[?&](utm_[^&=]+=[^&#]*)/gi
 const BASE_URL = 'https://coryd.dev'
 
 export default {
@@ -19,18 +17,7 @@ export default {
     const replacement = '&amp;'
     return string.replace(pattern, replacement)
   },
-  stripUtm: (string) => {
-    if (!string) return
-    return string.replace(utmPattern, '')
-  },
   replaceQuotes: (string) => string.replace(/"/g, "'"),
-  slugifyString: (str) => {
-    return slugify(str, {
-      replacement: '-',
-      remove: /[#,&,+()$~%.'":*?<>{}]/g,
-      lower: true,
-    })
-  },
   formatNumber: (number) => number.toLocaleString('en-US'),
   shuffleArray,
 
@@ -39,56 +26,29 @@ export default {
     const normalizedPage = page.includes('.html') ? page.replace('.html', '/') : page
     return !!normalizedPage && normalizedPage.includes(category) && !/\d+/.test(normalizedPage);
   },
-  isPost: (url) => {
-    if (url.includes('post')) return true;
-    return false
-  },
 
   // analytics
   getPopularPosts: (posts, analytics) => {
     return posts
       .filter((post) => {
-        if (analytics.find((p) => p.url.includes(post.url))) return true
+        if (analytics.find((p) => p.url.includes(slugify(post.title).toLowerCase()))) return true
       })
       .sort((a, b) => {
-        const visitors = (page) => analytics.filter((p) => p.url.includes(page.url)).pop().value
+        const visitors = (page) => analytics.filter((p) => p.url.includes(slugify(page.title).toLowerCase())).pop().value
         return visitors(b) - visitors(a)
       })
-  },
-  tagLookup: (url, tagMap) => {
-    if (!url) return
-    if (url.includes('#artists')) return '#Music'
-    if (url.includes('https://coryd.dev/books')) return '#Books #FinishedReading'
-    if (url.includes('https://coryd.dev/watching')) return '#Movies #Watched'
-    return tagMap[url] || ''
   },
 
   // posts
   filterByPostType: (posts, postType) => {
-    if (postType === 'featured') return shuffleArray(posts.filter(post => post.data.featured === true)).slice(0, 3)
+    if (postType === 'featured') return shuffleArray(posts.filter(post => post.featured === true)).slice(0, 3)
     return posts.slice(0, 5)
-  },
-  truncateByWordCount: (text, wordCount) => {
-    const words = sanitizeHtml(text, { allowedTags: ['']}).split(/\s+/);
-    if (words.length > wordCount) return `<p>${words.slice(0, wordCount).join(' ').replace(/[^a-zA-Z0-9]+$/, '')}...</p>`
-    return text
   },
 
   // watching
   featuredWatching: (watching, count) => shuffleArray(watching.filter(watch => watch.favorite === true)).slice(0, count),
 
-  // authors
-  authorLookup: (url) => {
-    if (!url) return null
-    const urlObject = new URL(url)
-    const baseUrl = urlObject.origin
-    return authors?.[baseUrl] || null
-  },
-
   // dates
-  readableDate: (date) => {
-    return DateTime.fromISO(date).toFormat('LLLL d, yyyy')
-  },
   isoDateOnly: (date, separator) => {
     let d = new Date(date)
     let month = '' + (d.getMonth() + 1)
@@ -99,10 +59,6 @@ export default {
     if (day.length < 2) day = '0' + day
 
     return [year, month, day].join(separator)
-  },
-  stringToDate: (string) => {
-    if (!string) return
-    return new Date(string)
   },
   oldPost: (date) => {
     return DateTime.now().diff(DateTime.fromJSDate(new Date(date)), 'years').years > 3;
@@ -154,8 +110,8 @@ export default {
       const feedNote = '<hr/><p>This is a full text feed, but not all content can be rendered perfectly within the feed. If something looks off, feel free to <a href="https://coryd.dev">visit my site</a> for the original post.</p>'
 
       // set the entry url
-      if (entry.url.includes('http')) url = entry.url
-      if (!entry.url.includes('http')) url = new URL(entry.url, BASE_URL).toString()
+      if (entry.url?.includes('http')) url = entry.url
+      if (!entry.url?.includes('http')) url = new URL(entry.url, BASE_URL).toString()
       if (entry?.data?.link) url = entry.data.link
 
       // set the entry excerpt
@@ -270,21 +226,5 @@ export default {
       : `<a href="/music/artists/${sanitizeMediaString(dataSlice[dataSlice.length - 1]['name_string'])}-${sanitizeMediaString(dataSlice[dataSlice.length - 1]['country'].toLowerCase())}">${dataSlice[dataSlice.length - 1]['name_string']}</a>`
 
     return `${allButLast} and ${last}`
-  },
-
-    // tags
-  filterTags: (tags) => tags.filter((tag) => tag.toLowerCase() !== 'posts'),
-  formatTag: (string) => {
-    const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1)
-    const normalizedString = string.toLowerCase()
-    if (
-      normalizedString === 'ios' ||
-      normalizedString === 'macos' ||
-      normalizedString === 'css' ||
-      normalizedString === 'rss' ||
-      normalizedString === 'ai'
-    ) return `#${string}`
-    if (!string.includes(' ')) return `#${capitalizeFirstLetter(string)}`
-    return `#${string.split(' ').map(s => capitalizeFirstLetter(s)).join('')}`
   }
 }

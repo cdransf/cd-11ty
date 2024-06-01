@@ -90,14 +90,14 @@ export default async function () {
 
       showEpisodesMap[showTmdbId].episodes.push({
         name: showTitle,
-        url: `https://coryd.dev/watching/shows/${showTmdbId}`,
+        url: `/watching/shows/${showTmdbId}`,
         subtext: `${showTitle} • S${seasonNumber}E${episodeNumber}`,
         episode: episodeNumber,
         season: seasonNumber,
         tmdbId: showTmdbId,
         type: 'tv',
-        image: `https://coryd.dev/media/shows/poster-${showTmdbId}.jpg`,
-        backdrop: `https://coryd.dev/media/shows/backdrops/backdrop-${showTmdbId}.jpg`,
+        image: `/media/shows/poster-${showTmdbId}.jpg`,
+        backdrop: `/media/shows/backdrops/backdrop-${showTmdbId}.jpg`,
         dateAdded: lastWatchedAt,
         lastWatchedAt
       })
@@ -114,7 +114,7 @@ export default async function () {
       if (show.episodes.length > 1) {
         episodeData.push({
           name: show.title,
-          url: `https://coryd.dev/watching/shows/${show['tmdbId']}`,
+          url: `/watching/shows/${show['tmdbId']}`,
           subtext: `S${startingSeason}E${startingEpisode} - S${endingSeason}E${endingEpisode}`,
           startingEpisode,
           startingSeason,
@@ -124,8 +124,8 @@ export default async function () {
           collected: show['collected'],
           favorite: show['favorite'],
           type: 'tv-range',
-          image: `https://coryd.dev/media/shows/poster-${show['tmdbId']}.jpg`,
-          backdrop: `https://coryd.dev/media/shows/backdrops/backdrop-${show['tmdbId']}.jpg`,
+          image: `/media/shows/poster-${show['tmdbId']}.jpg`,
+          backdrop: `/media/shows/backdrops/backdrop-${show['tmdbId']}.jpg`,
         })
       } else {
         const singleEpisode = show['episodes'][0]
@@ -140,7 +140,7 @@ export default async function () {
 
   const favoriteShows = shows.filter(show => show['favorite'])
   const collectedShows = shows.filter(show => show['collected'])
-  const toWatch = shows.map(show => ({...show, url: `https://coryd.dev/watching/shows/${show['tmdb_id']}`})).filter(show => !show.episodes.some(episode => episode.last_watched_at)).sort((a, b) => a['title'].localeCompare(b['title']))
+  const toWatch = shows.map(show => ({...show, url: `/watching/shows/${show['tmdb_id']}`})).filter(show => !show.episodes.some(episode => episode.last_watched_at)).sort((a, b) => a['title'].localeCompare(b['title']))
 
   return {
     shows,

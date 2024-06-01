@@ -59,8 +59,25 @@ const fetchAllTimeData = async (fields, table) => {
   return rows
 }
 
+const fetchGenreMapping = async () => {
+  const { data, error } = await supabase
+    .from('genres')
+    .select('id, name')
+
+  if (error) {
+    console.error('Error fetching genres:', error)
+    return {}
+  }
+
+  return data.reduce((acc, genre) => {
+    acc[genre.id] = genre.name
+    return acc
+  }, {})
+}
+
 const aggregateData = (data, groupByField, groupByType) => {
   const aggregation = {}
+  const genreMapping = fetchGenreMapping()
 
   data.forEach(item => {
     const key = item[groupByField]
@@ -70,21 +87,21 @@ const aggregateData = (data, groupByField, groupByType) => {
           title: item[groupByField],
           plays: 0,
           mbid: item['albums']['mbid'],
-          url: `https://coryd.dev/music/artists/${sanitizeMediaString(item['artist_name'])}-${sanitizeMediaString(parseCountryField(item['artists']['country']))}`,
+          url: `/music/artists/${sanitizeMediaString(item['artist_name'])}-${sanitizeMediaString(parseCountryField(item['artists']['country']))}`,
           image: item['albums']?.['image'] || '',
           timestamp: item['listened_at'],
           type: groupByType,
-          genre: item['artists']?.['genre'] || ''
+          genre: genreMapping[item['artists']['genre']] || ''
         }
       } else {
         aggregation[key] = {
           title: item[groupByField],
           plays: 0,
           mbid: item[groupByType]?.['mbid'] || '',
-          url: `https://coryd.dev/music/artists/${sanitizeMediaString(item['artist_name'])}-${sanitizeMediaString(parseCountryField(item['artists']['country']))}`,
+          url: `/music/artists/${sanitizeMediaString(item['artist_name'])}-${sanitizeMediaString(parseCountryField(item['artists']['country']))}`,
           image: item[groupByType]?.image || '',
           type: groupByType,
-          genre: item['artists']?.['genre'] || ''
+          genre: genreMapping[item['artists']['genre']] || ''
         }
       }
       if (
@@ -106,11 +123,11 @@ const aggregateData = (data, groupByField, groupByType) => {
 
 const aggregateGenres = (data) => {
   const genreAggregation = {}
+  const genreMapping = fetchGenreMapping()
+
   data.forEach(item => {
-    const genre = item.artists.genre
-    if (!genreAggregation[genre]) {
-      genreAggregation[genre] = { genre, plays: 0 }
-    }
+    const genre = genreMapping[item['artists']['genre']] || ''
+    if (!genreAggregation[genre]) genreAggregation[genre] = { genre, plays: 0 }
     genreAggregation[genre]['plays']++
   })
   return Object.values(genreAggregation).sort((a, b) => b['plays'] - a['plays'])
@@ -130,7 +147,7 @@ export default async function() {
     album_name,
     album_key,
     listened_at,
-    artists (mbid, image, genre, country),
+    artists (mbid, image, genres, country),
     albums (mbid, image)
   `
 

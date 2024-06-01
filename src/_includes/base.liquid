@@ -25,7 +25,7 @@
 
 {%- assign pageDescription = meta.siteDescription -%}
 {%- if schema == 'blog' -%}
-  {%- assign pageDescription = post_excerpt | markdown | strip_html -%}
+  {%- assign pageDescription = post.description | markdown | strip_html -%}
 {%- elsif artist.description -%}
   {%- assign pageDescription = artist.description | truncate: 300 -%}
 {%- elsif book.description -%}
@@ -42,9 +42,6 @@
 
 {%- assign ogImage = meta.meta_data.opengraph_default -%}
 {%- case schema -%}
-  {%- when 'blog' -%}
-    {%- assign ogBlogSlug = title | slugifyString -%}
-    {%- assign ogImage = meta.url | append: '/assets/img/ogi/' | append: ogBlogSlug | append: '-preview.png' -%}
   {%- when 'music' -%}
     {%- assign ogImage = music.recent.artists[0].image -%}
   {%- when 'music-index' -%}

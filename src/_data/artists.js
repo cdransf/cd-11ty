@@ -1,8 +1,8 @@
 import { createClient } from '@supabase/supabase-js'
 import { parseCountryField } from '../../config/utilities/index.js'
 
-const SUPABASE_URL = process.env.SUPABASE_URL || 'YOUR_SUPABASE_URL'
-const SUPABASE_KEY = process.env.SUPABASE_KEY || 'YOUR_SUPABASE_KEY'
+const SUPABASE_URL = process.env.SUPABASE_URL
+const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 const PAGE_SIZE = 50
@@ -36,13 +36,29 @@ const fetchPaginatedData = async (table, selectFields) => {
   return data
 }
 
-export default async function () {
-  const artists = await fetchPaginatedData('artists', 'mbid, name_string, image, genre, total_plays, country, description, favorite')
-  const albums = await fetchPaginatedData('albums', 'mbid, name, release_year, artist_mbid, total_plays')
+const fetchGenreMapping = async () => {
+  const { data, error } = await supabase
+    .from('genres')
+    .select('id, name')
 
+  if (error) {
+    console.error('Error fetching genres:', error)
+    return {}
+  }
+
+  return data.reduce((acc, genre) => {
+    acc[genre.id] = genre.name
+    return acc
+  }, {})
+}
+
+export default async function () {
+  const genreMapping = await fetchGenreMapping()
+  const artists = await fetchPaginatedData('artists', 'id, mbid, name_string, image, total_plays, country, description, favorite, genres')
+  const albums = await fetchPaginatedData('albums', 'mbid, name, release_year, total_plays, artist')
   const albumsByArtist = albums.reduce((acc, album) => {
-    if (!acc[album.artist_mbid]) acc[album.artist_mbid] = []
-    acc[album.artist_mbid].push({
+    if (!acc[album.artist]) acc[album.artist] = []
+    acc[album.artist].push({
       id: album.id,
       name: album.name,
       release_year: album.release_year,
@@ -51,10 +67,11 @@ export default async function () {
     return acc
   }, {})
 
-  artists.forEach(artist => {
-    artist.albums = albumsByArtist[artist.mbid]?.sort((a, b) => a['release_year'] - b['release_year']) || []
+  for (const artist of artists) {
+    artist.albums = albumsByArtist[artist.id]?.sort((a, b) => a['release_year'] - b['release_year']) || []
     artist.country = parseCountryField(artist.country)
-  })
+    artist.genres = genreMapping[artist.genres] || ''
+  }
 
   return artists
 }

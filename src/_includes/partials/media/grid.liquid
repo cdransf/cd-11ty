@@ -3,7 +3,7 @@
 <div class="media-grid {% if shape == 'square' %}square{% else %}vertical{% endif %}">
   {% for item in media limit: count | default: media.size %}
     {% assign alt = item.alt | strip | escape %}
-    <a href="{{ item.url | stripUtm }}" title="{{ alt }}">
+    <a href="{{ item.url }}" title="{{ alt }}">
       <div class="item-wrapper shadow">
         <div class="meta-text">
           {% if item.title %}

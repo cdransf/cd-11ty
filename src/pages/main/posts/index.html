@@ -1,0 +1,28 @@
+---
+title: All posts
+layout: default
+pagination:
+  data: posts
+  size: 8
+  alias: posts
+permalink: "/posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html"
+---
+<div class="posts-wrapper">
+  {% for post in pagination.items %}
+  <article class="h-entry">
+    <div class="flex-centered gap-xs icon-small icon-light">
+      {% tablericon "calendar-month" "Date" %}
+      <time class="dt-published" datetime="{{ post.date }}">
+        {{ post.date | date: "%B %e, %Y" }}
+      </time>
+    </div>
+    <a href="{{ post.url }}">
+      <h2 class="flex-centered">{{ post.title }}</h2>
+    </a>
+    <span class="p-author h-card hidden">{{ meta.siteName }}</span>
+    <div class="p-summary hidden">{{ post.description }}</div>
+    <p>{{ post.description }}</p>
+  </article>
+  {% endfor %}
+</div>
+{% render "partials/widgets/paginator.liquid", pagination:pagination %}

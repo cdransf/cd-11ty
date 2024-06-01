@@ -7,7 +7,7 @@ import markdownItFootnote from 'markdown-it-footnote'
 import htmlmin from 'html-minifier-terser'
 import filters from './config/filters/index.js'
 import { minifyJsComponents } from './config/events/index.js'
-import { allContent, searchIndex, tagList, tagsSortedByCount, links, tagMap, booksToRead } from './config/collections/index.js'
+import { allContent, searchIndex } from './config/collections/index.js'
 import { DateTime } from 'luxon'
 
 // load .env
@@ -48,33 +48,15 @@ export default async function (eleventyConfig) {
     'node_modules/@cdransf/select-pagination/select-pagination.js': 'assets/scripts/components/select-pagination.js',
   })
   eleventyConfig.addPassthroughCopy({
-    'node_modules/@zachleat/webcare-webshare/webcare-webshare.js': 'assets/scripts/components/webcare-webshare.js'
-  })
-  eleventyConfig.addPassthroughCopy({
     'node_modules/youtube-video-element/youtube-video-element.js': 'assets/scripts/components/youtube-video-element.js'
   })
   eleventyConfig.addPassthroughCopy({
      'node_modules/@daviddarnes/mastodon-post/mastodon-post.js': 'assets/scripts/components/mastodon-post.js'
    })
 
-  // enable merging of tags
-  eleventyConfig.setDataDeepMerge(true)
-
-  // create excerpts
-  eleventyConfig.setFrontMatterParsingOptions({
-    excerpt: true,
-    excerpt_alias: 'post_excerpt',
-    excerpt_separator: '<!-- excerpt -->',
-  })
-
   // collections
   eleventyConfig.addCollection('allContent', allContent)
   eleventyConfig.addCollection('searchIndex', searchIndex)
-  eleventyConfig.addCollection('tagList', tagList)
-  eleventyConfig.addCollection('tagsSortedByCount', tagsSortedByCount)
-  eleventyConfig.addCollection('links', links)
-  eleventyConfig.addCollection('tagMap', tagMap)
-  eleventyConfig.addCollection('booksToRead', booksToRead)
 
   const md = markdownIt({ html: true, linkify: true })
   md.use(markdownItAnchor, {

@@ -48,13 +48,13 @@
   --brand-npm: #cc3534;
   --brand-mastodon: #6364ff;
   --brand-listenbrainz: #e97941;
-  --brand-music: #1e90ff;
-  --brand-tv: #ff4500;
-  --brand-books: #32cd32;
   --brand-instapaper: var(--text-color);
   --brand-buy-me-a-coffee: #40dca5;
   --brand-rss: #f26522;
   --posts: #008080;
+  --music: #1e90ff;
+  --tv: #ff4500;
+  --books: #32cd32;
   --links: #9370db;
   --about: #ff6347;
   --search: #4682b4;

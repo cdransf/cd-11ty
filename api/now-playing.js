@@ -109,6 +109,21 @@ const emojiMap = (genre, artist) => {
   return DEFAULT
 }
 
+const fetchGenreById = async (genreId) => {
+  const { data, error } = await supabase
+    .from('genres')
+    .select('name')
+    .eq('id', genreId)
+    .single()
+
+  if (error) {
+    console.error('Error fetching genre:', error)
+    return null
+  }
+
+  return data.name
+}
+
 export default async () => {
   const { data, error } = await supabase
     .from('listens')
@@ -116,7 +131,7 @@ export default async () => {
       track_name,
       artist_name,
       listened_at,
-      artists (mbid, genre, country)
+      artists (mbid, genres, country)
     `)
     .order('listened_at', { ascending: false })
     .range(0, 1)
@@ -136,10 +151,11 @@ export default async () => {
   }
 
   const scrobbleData = data[0]
+  scrobbleData.genre = await fetchGenreById(data[0].artists.genres)
 
   return new Response(JSON.stringify({
     content: `${emojiMap(
-      scrobbleData.artists.genre,
+      scrobbleData.genre,
       scrobbleData.artist_name
     )} ${scrobbleData.track_name} by <a href="https://coryd.dev/music/artists/${sanitizeMediaString(scrobbleData.artist_name)}-${sanitizeMediaString(parseCountryField(scrobbleData.artists.country))}">${
       scrobbleData.artist_name

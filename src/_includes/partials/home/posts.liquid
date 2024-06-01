@@ -1,7 +1,7 @@
 {%- assign posts = postData | filterByPostType: postType %}
 <div class="article-widget-wrapper">
   <div class="section-header-wrapper">
-    <h2 id="artists" class="section-header posts flex-centered">
+    <h2 class="section-header posts flex-centered">
       {% tablericon icon title %}
       {{ title }}
     </h2>
@@ -15,11 +15,11 @@
       </time>
     </div>
     <a href="{{ post.url }}">
-      <h2 class="flex-centered">{{ post.data.title }}</h2>
+      <h2 class="flex-centered">{{ post.title }}</h2>
     </a>
     <span class="p-author h-card hidden">{{ meta.siteName }}</span>
     <div class="p-summary hidden">{{ post.data.post_excerpt }}</div>
-    {{ post.data.post_excerpt | markdown | truncateByWordCount: 25 }}
+    {{ post.description | truncate: 300 }}
   </article>
   {% endfor %}
   {% if postType != 'featured' %}

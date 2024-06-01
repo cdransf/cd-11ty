@@ -29,9 +29,6 @@
 /sitemap.txt /sitemap.xml 301!
 /blog / 301!
 /posts/2024 / 301!
-/tags/.env /tags/env 301!
-/tags/chatgpt/ /tags/ai/ 301!
-/tags/socialmedia /tags/social%20media/ 301!
 /blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301!
 /assets/img/social-preview/your-site-your-home-your-web- /assets/img/social-preview/your-site-your-home-your-web-preview.jpeg 301!
 /assets/img/social-preview/adding-a-light/dark-theme-toggle-preview.jpeg /assets/img/social-preview/adding-a-light-dark-theme-toggle-preview.jpeg 301!
@@ -74,6 +71,7 @@
 # general
 /articles/ / 301!
 /tags /search 301!
+/tags/* /search 301!
 /referrals /save 301!
 /music/genre/* /music/genres/:splat 301!
 /recent/movies /watching/recent/movies 301!

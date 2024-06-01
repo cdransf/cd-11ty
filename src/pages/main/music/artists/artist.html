@@ -46,8 +46,8 @@ schema: artist
         <p class="sub-meta"><strong class="highlight-text">{{ artist.total_plays }} plays</strong></p>
       {%- endif -%}
       <p class="sub-meta">
-        <a href="https://coryd.dev/music/genres/{{ artist.genre | slugify | downcase }}" title="Learn more about {{ artist.genre | escape }}">
-          {{ artist.genre }}
+        <a href="https://coryd.dev/music/genres/{{ artist.genres | slugify | downcase }}" title="Learn more about {{ artist.genres | escape }}">
+          {{ artist.genres }}
         </a>
       </p>
       <p class="sub-meta">

@@ -1,27 +1,74 @@
-import { createRequire } from 'module'
+import { createClient } from '@supabase/supabase-js'
 
-const require = createRequire(import.meta.url)
-const books = require('./json/read.json')
+const SUPABASE_URL = process.env.SUPABASE_URL
+const SUPABASE_KEY = process.env.SUPABASE_KEY
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+
+const PAGE_SIZE = 1000
+
+const fetchTagsForBook = async (bookId) => {
+  const { data, error } = await supabase
+    .from('books_tags')
+    .select('tags(id, name)')
+    .eq('books_id', bookId)
+
+  if (error) {
+    console.error(`Error fetching tags for book ${bookId}:`, error)
+    return []
+  }
+
+  return data.map(bt => bt.tags.name)
+}
+
+async function fetchAllBooks() {
+  let books = []
+  let from = 0
+  let to = PAGE_SIZE - 1
+
+  while (true) {
+    const { data, error } = await supabase
+      .from('books')
+      .select('*')
+      .range(from, to)
+
+    if (error) {
+      console.error('Error fetching data from Supabase:', error)
+      break
+    }
+
+    for (const book of data) {
+      book.tags = await fetchTagsForBook(book.id)
+    }
+
+    books = books.concat(data)
+
+    if (data.length < PAGE_SIZE) break
+
+    from += PAGE_SIZE
+    to += PAGE_SIZE
+  }
+
+  return books
+}
 
 export default async function () {
+  const books = await fetchAllBooks()
+
   return books.map(book => {
-    let authors = ''
-    let date = book?.['dateAdded']
-    if (book['authors']?.length > 1) authors = book['authors'].join(', ')
-    if (book['authors']?.length === 1) authors = book['authors'][0]
-    if (book?.['dateStarted']) date = book['dateStarted']
-    if (book?.['dateFinished']) date = book['dateFinished']
+    const author = book['author'] || ''
+    let date = book?.['date_finished']
+    if (book?.['date_started']) date = book['date_started']
+    if (book?.['date_finished']) date = book['date_finished']
 
     return {
       title: book['title'],
-      authors,
+      author,
       description: book['description'],
       image: book['thumbnail'],
-      url: `https://coryd.dev/books/${book['isbn']}`,
+      url: `/books/${book['isbn']}`,
       date,
       status: book['status'],
       tags: book['tags'],
-      categories: book['categories']?.length > 1 ? book['categories'].join(', ') : book['categories']?.[0],
       rating: book['rating'] !== 'unrated' ? book['rating'] : '',
       isbn: book['isbn'],
       type: 'book',
