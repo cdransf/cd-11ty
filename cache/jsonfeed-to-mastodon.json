@@ -13884,5 +13884,16 @@
       "https://social.lol/users/cory/statuses/112543623088558494"
     ],
     "lastTootTimestamp": 1717279405076
+  },
+  "https://coryd.dev/watching/movies/9659": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvd2F0Y2hpbmcvbW92aWVzLzk2NTk=",
+    "title": "🎥: Mad Max (⭐️⭐️⭐️)",
+    "url": "https://coryd.dev/watching/movies/9659",
+    "content_text": "🎥: Mad Max (⭐️⭐️⭐️) https://coryd.dev/watching/movies/9659",
+    "date_published": "Sun, 02 Jun 2024 02:27:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112545041080925277"
+    ],
+    "lastTootTimestamp": 1717301041932
   }
 }
