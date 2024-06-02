@@ -110,12 +110,16 @@ export default {
       const md = markdownIt({ html: true, linkify: true })
       let excerpt = ''
       let url = ''
+      let title = entry.title
       const feedNote = '<hr/><p>This is a full text feed, but not all content can be rendered perfectly within the feed. If something looks off, feel free to <a href="https://coryd.dev">visit my site</a> for the original post.</p>'
 
       // set the entry url
       if (entry.url?.includes('http')) url = entry.url
       if (!entry.url?.includes('http')) url = new URL(entry.url, BASE_URL).toString()
-      if (entry?.link) url = entry.link
+      if (entry?.link) {
+        title = `${entry.title} via ${entry.authors.name}`
+        url = entry.link
+      }
 
       // set the entry excerpt
       if (entry.description) excerpt = entry.description // general case
@@ -130,7 +134,7 @@ export default {
       // if there's a valid entry return a normalized object
       if (entry)
         posts.push({
-          title: entry.title,
+          title,
           url,
           content: entry.description,
           date,
