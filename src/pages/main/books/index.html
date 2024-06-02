@@ -44,6 +44,10 @@ schema: books
     {% if book.author %}
       <p class="sub-meta">By {{ book.author }}</p>
     {% endif %}
+    {% if book.progress %}
+      {%- assign percentage = book.progress | append: '%' -%}
+      {% render "partials/media/progress-bar.liquid", percentage:percentage %}
+    {% endif %}
     {% if book.description %}<blockquote class="description">{{ book.description }}</blockquote>{% endif %}
   </div>
 </article>

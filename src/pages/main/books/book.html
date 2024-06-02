@@ -38,7 +38,13 @@ schema: book
       {% if book.author %}
         <p class="sub-meta">By {{ book.author }}</p>
       {% endif %}
-      {% if book.status == 'finished' %}<p class="sub-meta">Finished on: {{ book.date | date: "%B %e, %Y" }}</p>{% endif %}
+      {% if book.status == 'finished' %}
+        <p class="sub-meta">Finished on: {{ book.date | date: "%B %e, %Y" }}</p>
+      {% endif %}
+      {% unless book.status == 'finished' %}
+        {%- assign percentage = book.progress | append: '%' -%}
+        {% render "partials/media/progress-bar.liquid", percentage:percentage %}
+      {% endunless %}
       <p class="sub-meta"><a href="https://openlibrary.org/isbn/{{ book.isbn }}" title="View {{ book.title | escape }} on Open Library">View on Open Library</a></p>
     </div>
   </div>

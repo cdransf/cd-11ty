@@ -37,6 +37,10 @@
       width: fit-content;
     }
 
+    & .progress-bar-wrapper {
+      max-width: 75%;
+    }
+
     & blockquote.description {
       -webkit-box-orient: vertical;
       display: -webkit-box;
@@ -102,6 +106,10 @@
 
     & .book-meta {
       align-items: start;
+
+      & .progress-bar-wrapper {
+        max-width: 40%;
+      }
     }
   }
 }
