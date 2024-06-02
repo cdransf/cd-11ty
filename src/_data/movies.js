@@ -22,7 +22,7 @@ const fetchAllMovies = async () => {
         collected,
         plays,
         favorite,
-        rating,
+        star_rating,
         description,
         review
       `)
@@ -58,7 +58,7 @@ export default async function () {
       plays: item['plays'],
       collected: item['collected'],
       favorite: item['favorite'],
-      rating: item['rating'],
+      rating: item['star_rating'],
       description: item['description'],
       review: item['review'],
       id: item['tmdb_id'],

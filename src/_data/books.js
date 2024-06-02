@@ -70,7 +70,7 @@ export default async function () {
       status: book['read_status'],
       progress: book['progress'],
       tags: book['tags'],
-      rating: book['rating'] !== 'unrated' ? book['rating'] : '',
+      rating: book['star_rating'] !== 'unrated' ? book['star_rating'] : '',
       isbn: book['isbn'],
       type: 'book',
     }
