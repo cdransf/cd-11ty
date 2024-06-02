@@ -4,7 +4,7 @@ pagination:
   data: posts
   size: 1
   alias: post
-permalink: "/posts/{{ post.date | date: '%Y' }}/{{ post.title | slugify | downcase }}/index.html"
+permalink: "/posts/{{ post.date | date: '%Y' }}/{{ post.title | slugifyPost }}/index.html"
 schema: blog
 ---
 {%- capture postUrl %}{{ meta.url }}{{ post.url }}{% endcapture -%}

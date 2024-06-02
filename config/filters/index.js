@@ -46,6 +46,11 @@ export default {
     if (postType === 'featured') return shuffleArray(posts.filter(post => post.featured === true)).slice(0, 3)
     return posts.slice(0, 5)
   },
+  slugifyPost: (title) => slugify(title, {
+    replacement: '-',
+    remove: /[#,&,+()$~%.'":*?<>{}\[\]\/\\|`!@\^\—]/g,
+    lower: true,
+  }),
 
   // watching
   featuredWatching: (watching, count) => shuffleArray(watching.filter(watch => watch.favorite === true)).slice(0, count),
