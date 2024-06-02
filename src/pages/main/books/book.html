@@ -48,5 +48,6 @@ schema: book
       <p class="sub-meta"><a href="https://openlibrary.org/isbn/{{ book.isbn }}" title="View {{ book.title | escape }} on Open Library">View on Open Library</a></p>
     </div>
   </div>
+  {% if book.review %}{{ book.review | markdown }}{% endif %}
   {% if book.description %}<p><em>{{ book.description }}</em></p>{% endif %}
 </article>

@@ -63,6 +63,8 @@ export default async function () {
     return {
       title: book['title'],
       author,
+      review: book['review'],
+      rating: book['star_rating'] !== 'unrated' ? book['star_rating'] : '',
       description: book['description'],
       image: book['thumbnail'],
       url: `/books/${book['isbn']}`,
@@ -70,7 +72,6 @@ export default async function () {
       status: book['read_status'],
       progress: book['progress'],
       tags: book['tags'],
-      rating: book['star_rating'] !== 'unrated' ? book['star_rating'] : '',
       isbn: book['isbn'],
       type: 'book',
     }
