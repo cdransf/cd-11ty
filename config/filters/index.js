@@ -3,11 +3,10 @@ import { URL } from 'url'
 import slugify from 'slugify'
 import markdownIt from 'markdown-it'
 import sanitizeHtml from 'sanitize-html';
+
 import { shuffleArray, sanitizeMediaString } from '../utilities/index.js'
 
 const BASE_URL = 'https://coryd.dev'
-const md = markdownIt({ html: true, linkify: true })
-
 
 export default {
   // general
@@ -23,9 +22,6 @@ export default {
   replaceQuotes: (string) => string.replace(/"/g, "'"),
   formatNumber: (number) => number.toLocaleString('en-US'),
   shuffleArray,
-
-  // markdown
-  markdown: (content) => md.render(content),
 
   // navigation
   isLinkActive: (category, page) => {
@@ -116,6 +112,7 @@ export default {
     entries.forEach((entry) => {
       const dateKey = Object.keys(entry).find((key) => key.includes('date'))
       const date = new Date(entry[dateKey])
+      const md = markdownIt({ html: true, linkify: true })
       let excerpt = ''
       let url = ''
       let title = entry.title

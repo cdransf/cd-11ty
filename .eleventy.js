@@ -69,6 +69,11 @@ export default async function (eleventyConfig) {
   eleventyConfig.setLibrary('md', md)
 
   // filters
+  eleventyConfig.addLiquidFilter('markdown', (content) => {
+    if (!content) return
+    return md.render(content)
+  })
+
   Object.keys(filters).forEach((filterName) => {
     eleventyConfig.addLiquidFilter(filterName, filters[filterName])
   })
