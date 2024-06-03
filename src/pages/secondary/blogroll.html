@@ -17,16 +17,16 @@ description: These are awesome blogs that I enjoy and you may enjoy too.
     <td>{{ blog.name }}</td>
     <td><a href="{{ blog.url }}">{{ blog.url | replace: "https://", "" }}</a></td>
     <td class="blog-roll-icons">
-      {%- if blog.feed -%}
-      <a href="{{ blog.feed }}">{% tablericon "rss" "Subscribe via RSS" %}</a>
+      {%- if blog.rss_feed -%}
+      <a href="{{ blog.rss_feed }}">{% tablericon "rss" "Subscribe via RSS" %}</a>
       {%- else -%}
       —
       {%- endif -%}
+      {%- if blog.json_feed -%}
+      • <a href="{{ blog.json_feed }}">{% tablericon "json" "Subscribe via JSON" %}</a>
+      {%- endif -%}
       {%- if blog.newsletter -%}
       • <a href="{{ blog.newsletter }}">{% tablericon "mail-plus" "Newsletter subscription" %}</a>
-      {%- endif -%}
-      {%- if blog.json -%}
-      • <a href="{{ blog.json }}">{% tablericon "json" "Subscribe via JSON" %}</a>
       {%- endif -%}
     </td>
   </tr>
