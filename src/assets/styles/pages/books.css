@@ -38,6 +38,7 @@
     }
 
     & .progress-bar-wrapper {
+      margin-top: var(--font-size-xs);
       max-width: 75%;
     }
 
