@@ -16,5 +16,5 @@ export default async function fetchGenresWithArtists() {
     return []
   }
 
-  return data
+  return data.sort((a, b) => a['name'].toLowerCase().localeCompare(b['name'].toLowerCase()))
 }
