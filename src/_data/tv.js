@@ -152,14 +152,6 @@ export default async function () {
       show_tmdb_id: show['tmdb_id'],
       collected: show['collected'],
       favorite: show['favorite']
-    })))).sort((a, b) => a['name'].localeCompare(b['name'])),
-    collection: formatEpisodeData(collectedShows.flatMap(show => show['episodes'].map(episode => ({
-      ...episode,
-      show_title: show['title'],
-      show_tmdb_id: show['tmdb_id'],
-      collected: show['collected'],
-      favorite: show['favorite']
-    })))),
-    toWatch
+    })))).sort((a, b) => a['name'].localeCompare(b['name']))
   }
 }
