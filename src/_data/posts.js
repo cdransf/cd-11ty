@@ -1,6 +1,4 @@
 import { createClient } from '@supabase/supabase-js'
-import { DateTime } from 'luxon'
-import slugify from 'slugify'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
@@ -81,11 +79,6 @@ const fetchAllPosts = async () => {
     for (const post of data) {
       post.tags = await fetchTagsForPost(post.id)
       post.blocks = await fetchBlocksForPost(post.id)
-      post.url = `/posts/${DateTime.fromISO(post.date).year}/${slugify(post.title, {
-        replacement: '-',
-        remove: /[#,&,+()$~%.'":*?<>{}\[\]\/\\|`!@\^\—]/g,
-        lower: true,
-      })}/`
     }
 
     posts = posts.concat(data)

@@ -121,6 +121,7 @@ export default {
       // set the entry url
       if (entry.url?.includes('http')) url = entry.url
       if (!entry.url?.includes('http')) url = new URL(entry.url, BASE_URL).toString()
+      if (entry?.slug)  url = new URL(entry.slug, BASE_URL).toString()
       if (entry?.link) {
         title = `${entry.title} via ${entry.authors.name}`
         url = entry.link
@@ -131,7 +132,7 @@ export default {
       if (entry.type === 'book' || entry.type === 'movie' || entry.type === 'link') excerpt = `${entry.description}<br/><br/>` // books
 
       // send full post content to rss
-      if (entry?.url?.includes('/posts/') && entry.content) excerpt = sanitizeHtml(`${md.render(entry.content)}${feedNote}`, {
+      if (entry?.slug && entry.content) excerpt = sanitizeHtml(`${md.render(entry.content)}${feedNote}`, {
           disallowedTagsMode: 'completelyDiscard'
         })
 

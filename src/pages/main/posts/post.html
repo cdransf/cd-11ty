@@ -4,10 +4,10 @@ pagination:
   data: posts
   size: 1
   alias: post
-permalink: "/posts/{{ post.date | date: '%Y' }}/{{ post.title | slugifyPost }}/index.html"
+permalink: "{{ post.slug }}/index.html"
 schema: blog
 ---
-{%- capture postUrl %}{{ meta.url }}{{ post.url }}{% endcapture -%}
+{%- capture postUrl %}{{ meta.url }}{{ post.slug }}{% endcapture -%}
 <article class="h-entry">
   <div class="flex-centered gap-xs icon-small icon-light">
     {% tablericon "calendar-month" "Date" %}

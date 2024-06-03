@@ -7,7 +7,7 @@
 <ul class="link-list">
   {% for post in postData limit: 5 %}
     <li>
-      <a class="no-underline" href="{{ post.url }}" title="{{ post.title | escape}}">
+      <a class="no-underline" href="{{ post.slug }}" title="{{ post.title | escape}}">
         {{ post.title }}
       </a>
     </li>

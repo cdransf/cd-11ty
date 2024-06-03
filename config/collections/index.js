@@ -1,5 +1,7 @@
 import { DateTime } from 'luxon'
 
+const BASE_URL = 'https://coryd.dev'
+
 export const searchIndex = (collection) => {
   const searchIndex = []
   let id = 0
@@ -22,7 +24,7 @@ export const searchIndex = (collection) => {
     }
   }
 
-  addItemToIndex(posts, '📝', item => item['url'], item => item['title'], item => item['tags'])
+  addItemToIndex(posts, '📝', item => new URL(item['slug'], BASE_URL).toString(), item => item['title'], item => item['tags'])
   addItemToIndex(links, '🔗', item => item['link'], item => item['title'], item => item['tags'])
   if (movieData) addItemToIndex(movieData, '🎥', item => item['url'], item => `${item['title']} (${item['rating']})`, item => item['tags'])
   if (bookData) addItemToIndex(bookData, '📖', item => item['url'], item => `${item['title']} (${item['rating']})`, item => item['tags'])
@@ -52,10 +54,11 @@ export const allContent = (collection) => {
     if (items) {
       items.forEach(item => {
         const content = {
-          url: `https://coryd.dev${item['url']}`,
+          url: `${BASE_URL}${item['url']}`,
           title: `${icon}: ${getTitle(item)}${item?.['authors']?.['name'] ? ' via ' + item['authors']['name'] : ''}`
         }
         if (item?.['link']) content['url'] = item?.['link']
+        if (item?.['slug']) content['url'] = new URL(item['slug'], BASE_URL).toString()
         if (item?.['description']) content['description'] = `${item['description']}<br/><br/>`
         const date = getDate ? parseDate(getDate(item)) : null
         if (date) content['date'] = date

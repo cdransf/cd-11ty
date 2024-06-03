@@ -14,7 +14,7 @@
         {{ post.date | date: "%B %e, %Y" }}
       </time>
     </div>
-    <a href="{{ post.url }}">
+    <a href="{{ post.slug }}">
       <h2 class="flex-centered">{{ post.title }}</h2>
     </a>
     <span class="p-author h-card hidden">{{ meta.siteName }}</span>
