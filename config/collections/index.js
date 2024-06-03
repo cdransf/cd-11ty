@@ -2,6 +2,26 @@ import { DateTime } from 'luxon'
 
 const BASE_URL = 'https://coryd.dev'
 
+const tagsToHashtags = (tags) => {
+  const hashtags = tags.map(tag => {
+    const words = tag.split(' ')
+    const hashtag = words.map(word => {
+      const normalizedWord = word.toLowerCase()
+      const wordMap = {
+        'ai': 'AI',
+        'css': 'CSS',
+        'ios': 'iOS',
+        'javascript': 'JavaScript',
+        'macos': 'macOS'
+      }
+      if (wordMap[normalizedWord]) return wordMap[normalizedWord]
+      return word.charAt(0).toUpperCase() + word.slice(1)
+    }).join('')
+    return '#' + hashtag
+  })
+  return hashtags.join(' ');
+}
+
 export const searchIndex = (collection) => {
   const searchIndex = []
   let id = 0
@@ -55,7 +75,7 @@ export const allContent = (collection) => {
       items.forEach(item => {
         const content = {
           url: `${BASE_URL}${item['url']}`,
-          title: `${icon}: ${getTitle(item)}${item?.['authors']?.['name'] ? ' via ' + item['authors']['name'] : ''}`
+          title: `${icon}: ${getTitle(item)}${item?.['authors']?.['name'] ? ' via ' + item['authors']['name'] : ''}${item?.['tags'] ? ' ' + tagsToHashtags(item['tags']) : ''}`
         }
         if (item?.['link']) content['url'] = item?.['link']
         if (item?.['slug']) content['url'] = new URL(item['slug'], BASE_URL).toString()
