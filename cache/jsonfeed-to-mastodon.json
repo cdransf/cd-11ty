@@ -13939,5 +13939,16 @@
       "https://social.lol/users/cory/statuses/112554455802857932"
     ],
     "lastTootTimestamp": 1717444699224
+  },
+  "https://coryd.dev/posts/2024/integrating-a-somewhat-custom-cms-with-eleventy": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvcG9zdHMvMjAyNC9pbnRlZ3JhdGluZy1hLXNvbWV3aGF0LWN1c3RvbS1jbXMtd2l0aC1lbGV2ZW50eQ==",
+    "title": "📝: Integrating a (somewhat) custom CMS with Eleventy #Eleventy #Markdown #Supabase #Webdev #JavaScript",
+    "url": "https://coryd.dev/posts/2024/integrating-a-somewhat-custom-cms-with-eleventy",
+    "content_text": "📝: Integrating a (somewhat) custom CMS with Eleventy #Eleventy #Markdown #Supabase #Webdev #JavaScript https://coryd.dev/posts/2024/integrating-a-somewhat-custom-cms-with-eleventy",
+    "date_published": "Mon, 03 Jun 2024 22:02:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112555018810934612"
+    ],
+    "lastTootTimestamp": 1717453290020
   }
 }
