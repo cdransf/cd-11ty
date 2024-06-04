@@ -521,7 +521,6 @@ li {
   & li {
     margin-top: var(--sizing-sm);
     margin-bottom: var(--sizing-sm);
-    line-height: var(--line-height-sm);
 
     &:last-child {
       margin-bottom: 0;
