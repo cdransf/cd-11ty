@@ -13969,5 +13969,16 @@
     "content_text": "🔗: Witnessing the death of the web as a news medium via Christian Heilmann #Tech #Journalism #AI #SocialMedia https://christianheilmann.com/2024/06/03/witnessing-the-death-of-the-web-as-a-news-medium/",
     "date_published": "Mon, 03 Jun 2024 22:37:00 GMT",
     "toots": []
+  },
+  "https://blog.jim-nielsen.com/2024/just-one-line/": {
+    "id": "aHR0cHM6Ly9ibG9nLmppbS1uaWVsc2VuLmNvbS8yMDI0L2p1c3Qtb25lLWxpbmUv",
+    "title": "🔗: 'Just' One Line via Jim Nielsen #Development #Webdev",
+    "url": "https://blog.jim-nielsen.com/2024/just-one-line/",
+    "content_text": "🔗: 'Just' One Line via Jim Nielsen #Development #Webdev https://blog.jim-nielsen.com/2024/just-one-line/",
+    "date_published": "Tue, 04 Jun 2024 01:21:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112555939010930614"
+    ],
+    "lastTootTimestamp": 1717467331170
   }
 }
