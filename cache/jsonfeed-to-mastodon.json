@@ -13950,5 +13950,24 @@
       "https://social.lol/users/cory/statuses/112555018810934612"
     ],
     "lastTootTimestamp": 1717453290020
+  },
+  "https://ishadeed.com/article/the-gap/": {
+    "id": "aHR0cHM6Ly9pc2hhZGVlZC5jb20vYXJ0aWNsZS90aGUtZ2FwLw==",
+    "title": "🔗: The Gap via Ahmad Shadeed #Webdev #CSS",
+    "url": "https://ishadeed.com/article/the-gap/",
+    "content_text": "🔗: The Gap via Ahmad Shadeed #Webdev #CSS https://ishadeed.com/article/the-gap/",
+    "date_published": "Mon, 03 Jun 2024 22:59:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112555458382179301"
+    ],
+    "lastTootTimestamp": 1717459997332
+  },
+  "https://christianheilmann.com/2024/06/03/witnessing-the-death-of-the-web-as-a-news-medium/": {
+    "id": "aHR0cHM6Ly9jaHJpc3RpYW5oZWlsbWFubi5jb20vMjAyNC8wNi8wMy93aXRuZXNzaW5nLXRoZS1kZWF0aC1vZi10aGUtd2ViLWFzLWEtbmV3cy1tZWRpdW0v",
+    "title": "🔗: Witnessing the death of the web as a news medium via Christian Heilmann #Tech #Journalism #AI #SocialMedia",
+    "url": "https://christianheilmann.com/2024/06/03/witnessing-the-death-of-the-web-as-a-news-medium/",
+    "content_text": "🔗: Witnessing the death of the web as a news medium via Christian Heilmann #Tech #Journalism #AI #SocialMedia https://christianheilmann.com/2024/06/03/witnessing-the-death-of-the-web-as-a-news-medium/",
+    "date_published": "Mon, 03 Jun 2024 22:37:00 GMT",
+    "toots": []
   }
 }
