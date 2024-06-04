@@ -82,4 +82,10 @@ schema: music-index
   {% render "partials/media/music/chart.liquid", data:music.threeMonth.tracks, mostPlayed:music.threeMonth.tracks[0].plays, count: 10 %}
 </div>
 <p><strong class="highlight-text">More:</strong> <a href="/music/tracks/this-week/" title="Tracks listened to this week">This week</a> • <a href="/music/tracks/this-month/" title="Tracks listened to this month">This month</a> • <a href="/music/tracks/three-months/" title="Tracks listened to in the last 3 months">3 months</a></p>
-{% render "partials/media/music/releases.liquid", albumReleases:albumReleases %}
+{% if albumReleases.size > 0 %}
+<h2 id="album-releases" class="section-header flex-centered">
+  {% tablericon "calendar-time" "Anticipated albums" %}
+  Anticipated albums
+</h2>
+{% render "partials/media/grid.liquid", data:albumReleases, shape: "square", count: 8 %}
+{% endif %}
