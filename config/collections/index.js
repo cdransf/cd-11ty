@@ -1,4 +1,5 @@
 import { DateTime } from 'luxon'
+import slugify from 'slugify'
 
 const BASE_URL = 'https://coryd.dev'
 
@@ -97,4 +98,19 @@ export const allContent = (collection) => {
     const dateB = b['date'] ? DateTime.fromISO(b['date']) : DateTime.fromMillis(0)
     return dateB - dateA
   })
+}
+
+export const popularPosts = (collection) => {
+  const collectionData = collection.getAll()[0]
+  const { data } = collectionData
+  const { posts, analytics } = data
+
+  return posts
+    .filter((post) => {
+      if (analytics.find((p) => p.url.includes(post.slug))) return true
+    })
+    .sort((a, b) => {
+      const visitors = (page) => analytics.filter((p) => p.url.includes(page.slug)).pop()?.value
+      return visitors(b) - visitors(a)
+    })
 }

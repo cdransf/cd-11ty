@@ -1,6 +1,5 @@
 import { DateTime } from 'luxon'
 import { URL } from 'url'
-import slugify from 'slugify'
 import markdownIt from 'markdown-it'
 import sanitizeHtml from 'sanitize-html';
 
@@ -29,28 +28,11 @@ export default {
     return !!normalizedPage && normalizedPage.includes(category) && !/\d+/.test(normalizedPage);
   },
 
-  // analytics
-  getPopularPosts: (posts, analytics) => {
-    return posts
-      .filter((post) => {
-        if (analytics.find((p) => p.url.includes(slugify(post.title).toLowerCase()))) return true
-      })
-      .sort((a, b) => {
-        const visitors = (page) => analytics.filter((p) => p.url.includes(slugify(page.title).toLowerCase())).pop().value
-        return visitors(b) - visitors(a)
-      })
-  },
-
   // posts
   filterByPostType: (posts, postType) => {
     if (postType === 'featured') return shuffleArray(posts.filter(post => post.featured === true)).slice(0, 3)
     return posts.slice(0, 5)
   },
-  slugifyPost: (title) => slugify(title, {
-    replacement: '-',
-    remove: /[#,&,+()$~%.'":*?<>{}\[\]\/\\|`!@\^\—]/g,
-    lower: true,
-  }),
 
   // watching
   featuredWatching: (watching, count) => shuffleArray(watching.filter(watch => watch.favorite === true)).slice(0, count),

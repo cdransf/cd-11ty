@@ -23,3 +23,4 @@ schema: blog
     {% render "partials/posts/blocks.liquid", blocks:post.blocks %}
   </div>
 </article>
+{% render "partials/widgets/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}

@@ -380,9 +380,6 @@ main {
 .home-status,
 article {
   margin-bottom: var(--sizing-base);
-}
-
-.home-status {
   border-bottom: 1px solid var(--gray-light);
 }
 

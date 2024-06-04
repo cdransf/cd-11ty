@@ -1,11 +1,10 @@
-{% assign postData = posts | getPopularPosts: analytics %}
-{% if postData.size > 0 %}
+{% if popularPosts.size > 0 %}
 <h2 class="link-list-header flex-centered">
   {% tablericon "flame" "Popular" %}
   Popular posts
 </h2>
 <ul class="link-list">
-  {% for post in postData limit: 5 %}
+  {% for post in popularPosts limit: 5 %}
     <li>
       <a class="no-underline" href="{{ post.slug }}" title="{{ post.title | escape}}">
         {{ post.title }}
