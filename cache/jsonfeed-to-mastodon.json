@@ -13968,7 +13968,10 @@
     "url": "https://christianheilmann.com/2024/06/03/witnessing-the-death-of-the-web-as-a-news-medium/",
     "content_text": "🔗: Witnessing the death of the web as a news medium via Christian Heilmann #Tech #Journalism #AI #SocialMedia https://christianheilmann.com/2024/06/03/witnessing-the-death-of-the-web-as-a-news-medium/",
     "date_published": "Mon, 03 Jun 2024 22:37:00 GMT",
-    "toots": []
+    "toots": [
+      "https://social.lol/users/cory/statuses/112556365546061003"
+    ],
+    "lastTootTimestamp": 1717473839590
   },
   "https://blog.jim-nielsen.com/2024/just-one-line/": {
     "id": "aHR0cHM6Ly9ibG9nLmppbS1uaWVsc2VuLmNvbS8yMDI0L2p1c3Qtb25lLWxpbmUv",
@@ -13980,5 +13983,16 @@
       "https://social.lol/users/cory/statuses/112555939010930614"
     ],
     "lastTootTimestamp": 1717467331170
+  },
+  "https://davidgerard.co.uk/blockchain/2024/05/10/jack-dorsey-bluesky-decentralised-social-networks-and-the-very-common-crowd/": {
+    "id": "aHR0cHM6Ly9kYXZpZGdlcmFyZC5jby51ay9ibG9ja2NoYWluLzIwMjQvMDUvMTAvamFjay1kb3JzZXktYmx1ZXNreS1kZWNlbnRyYWxpc2VkLXNvY2lhbC1uZXR3b3Jrcy1hbmQtdGhlLXZlcnktY29tbW9uLWNyb3dkLw==",
+    "title": "🔗: Jack Dorsey, Bluesky, decentralised social networks and the very common crowd via David Gerard #Tech #SocialMedia",
+    "url": "https://davidgerard.co.uk/blockchain/2024/05/10/jack-dorsey-bluesky-decentralised-social-networks-and-the-very-common-crowd/",
+    "content_text": "🔗: Jack Dorsey, Bluesky, decentralised social networks and the very common crowd via David Gerard #Tech #SocialMedia https://davidgerard.co.uk/blockchain/2024/05/10/jack-dorsey-bluesky-decentralised-social-networks-and-the-very-common-crowd/",
+    "date_published": "Tue, 04 Jun 2024 01:38:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112556839479247837"
+    ],
+    "lastTootTimestamp": 1717481071206
   }
 }
