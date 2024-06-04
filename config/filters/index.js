@@ -91,20 +91,7 @@ export default {
   },
 
   // links
-  findPost: (url, posts) => {
-    if (!url || !posts || !posts[url]?.toots?.[0]?.includes('https')) return null;
-    const BASE_URL = 'https://social.lol/users/cory/statuses/'
-    const STATUS_URL = 'https://social.lol/@cory/'
-    return posts[url]?.toots?.[0]?.replace(BASE_URL, STATUS_URL) || null;
-  },
-  absoluteUrl: (url) => {
-    try {
-      return (new URL(url, BASE_URL)).toString()
-    } catch(e) {
-      console.error('Error generating absoluteUrl.')
-    }
-    return url;
-  },
+  absoluteUrl: (url) => (new URL(url, BASE_URL)).toString(),
 
   // feeds
   normalizeEntries: (entries) => {

@@ -379,8 +379,11 @@ main {
 
 .home-status,
 article {
-  border-bottom: 1px solid var(--gray-light);
   margin-bottom: var(--sizing-base);
+}
+
+.home-status {
+  border-bottom: 1px solid var(--gray-light);
 }
 
 .home-status p:first-child {

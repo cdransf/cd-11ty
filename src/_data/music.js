@@ -33,32 +33,6 @@ const fetchDataForPeriod = async (startPeriod, fields, table) => {
   return rows
 }
 
-const fetchAllTimeData = async (fields, table) => {
-  const PAGE_SIZE = 1000
-  let rows = []
-  let rangeStart = 0
-
-  while (true) {
-    const { data, error } = await supabase
-      .from(table)
-      .select(fields)
-      .order('listened_at', { ascending: false })
-      .range(rangeStart, rangeStart + PAGE_SIZE - 1)
-
-    if (error) {
-      console.error(error)
-      break
-    }
-
-    rows = rows.concat(data)
-
-    if (data.length < PAGE_SIZE) break
-    rangeStart += PAGE_SIZE
-  }
-
-  return rows
-}
-
 const fetchGenreMapping = async () => {
   const { data, error } = await supabase
     .from('genres')
@@ -160,16 +134,6 @@ export default async function() {
       genres: aggregateGenres(periodData),
       totalTracks: periodData?.length?.toLocaleString('en-US')
     }
-  }
-
-  // Fetch and aggregate all-time data
-  const allTimeData = await fetchAllTimeData(selectFields, 'listens')
-  results['allTime'] = {
-    artists: aggregateData(allTimeData, 'artist_name', 'artists'),
-    albums: aggregateData(allTimeData, 'album_name', 'albums'),
-    tracks: aggregateData(allTimeData, 'track_name', 'track'),
-    genres: aggregateGenres(allTimeData),
-    totalTracks: allTimeData?.length?.toLocaleString('en-US')
   }
 
   const recentData = await fetchDataForPeriod(DateTime.now().minus({ days: 7 }), selectFields, 'listens')

@@ -7,7 +7,6 @@ pagination:
 permalink: "{{ post.slug }}/index.html"
 schema: blog
 ---
-{%- capture postUrl %}{{ meta.url }}{{ post.slug }}/{% endcapture -%}
 <article class="h-entry">
   <div class="flex-centered gap-xs icon-small icon-light">
     {% tablericon "calendar-month" "Date" %}
@@ -24,5 +23,3 @@ schema: blog
     {% render "partials/posts/blocks.liquid", blocks:post.blocks %}
   </div>
 </article>
-{% render "partials/widgets/mastodon-post.liquid", postUrl:postUrl, linkPosts:linkPosts %}
-{% render "partials/widgets/addon-links.liquid", posts:posts, analytics:analytics, links:links %}

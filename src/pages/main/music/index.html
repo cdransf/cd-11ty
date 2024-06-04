@@ -24,7 +24,6 @@ schema: music-index
     <button class="small active" data-toggle="artists-window">This week</button>
     <button class="small secondary" data-toggle="artists-month">This month</button>
     <button class="small secondary" data-toggle="artists-three-months">3 months</button>
-    <button class="small secondary" data-toggle="artists-all-time">All time</button>
   </div>
 </div>
 <div id="artists-window">
@@ -36,10 +35,7 @@ schema: music-index
 <div class="hidden" id="artists-three-months">
   {% render "partials/media/grid.liquid", data:music.threeMonth.artists, shape: "square", count: 8 %}
 </div>
-<div class="hidden" id="artists-all-time">
-  {% render "partials/media/grid.liquid", data:music.allTime.artists, shape: "square", count: 8 %}
-</div>
-<p><strong class="highlight-text">More:</strong> <a href="/music/artists/this-week/" title="Artists listened to this week">This week</a> • <a href="/music/artists/this-month/" title="Artists listened to this month">This month</a> • <a href="/music/artists/three-months/" title="Artists listened to in the last 3 months">3 months</a> • <a href="/music/artists/all-time/" title="All of the artists I've listened to">All time</a></p>
+<p><strong class="highlight-text">More:</strong> <a href="/music/artists/this-week/" title="Artists listened to this week">This week</a> • <a href="/music/artists/this-month/" title="Artists listened to this month">This month</a> • <a href="/music/artists/three-months/" title="Artists listened to in the last 3 months">3 months</a></p>
 <div class="section-header-wrapper">
   <h2 id="albums" class="section-header reduced-margin flex-centered">
     {% tablericon "vinyl" "Albums" %}
@@ -49,7 +45,6 @@ schema: music-index
     <button class="small active" data-toggle="albums-window">This week</button>
     <button class="small secondary" data-toggle="albums-month">This month</button>
     <button class="small secondary" data-toggle="albums-three-months">3 months</button>
-    <button class="small secondary" data-toggle="albums-all-time">All time</button>
   </div>
 </div>
 <div id="albums-window">
@@ -61,10 +56,7 @@ schema: music-index
 <div class="hidden" id="albums-three-months">
   {% render "partials/media/grid.liquid", data:music.threeMonth.albums, shape: "square", count: 8 %}
 </div>
-<div class="hidden" id="albums-all-time">
-  {% render "partials/media/grid.liquid", data:music.allTime.albums, shape: "square", count: 8 %}
-</div>
-<p><strong class="highlight-text">More:</strong> <a href="/music/albums/this-week/" title="Albums listened to this week">This week</a> • <a href="/music/albums/this-month/" title="Albums listened to this month">This month</a> • <a href="/music/albums/three-months/" title="Albums listened to in the last 3 months">3 months</a> • <a href="/music/albums/all-time/" title="All of the albums I've listened to">All time</a></p>
+<p><strong class="highlight-text">More:</strong> <a href="/music/albums/this-week/" title="Albums listened to this week">This week</a> • <a href="/music/albums/this-month/" title="Albums listened to this month">This month</a> • <a href="/music/albums/three-months/" title="Albums listened to in the last 3 months">3 months</a></p>
 <div class="section-header-wrapper">
   <h2 id="tracks" class="section-header reduced-margin flex-centered">
     {% tablericon "playlist" "Tracks" %}
@@ -75,7 +67,6 @@ schema: music-index
     <button class="small secondary" data-toggle="tracks-window">This week</button>
     <button class="small secondary" data-toggle="tracks-month">This month</button>
     <button class="small secondary" data-toggle="tracks-three-months">3 months</button>
-    <button class="small secondary" data-toggle="tracks-all-time">All time</button>
   </div>
 </div>
 <div id="tracks-recent">
@@ -90,8 +81,5 @@ schema: music-index
 <div class="hidden" id="tracks-three-months">
   {% render "partials/media/music/chart.liquid", data:music.threeMonth.tracks, mostPlayed:music.threeMonth.tracks[0].plays, count: 10 %}
 </div>
-<div class="hidden" id="tracks-all-time">
-  {% render "partials/media/music/chart.liquid", data:music.allTime.tracks, mostPlayed:music.allTime.tracks[0].plays, count: 10 %}
-</div>
-<p><strong class="highlight-text">More:</strong> <a href="/music/tracks/this-week/" title="Tracks listened to this week">This week</a> • <a href="/music/tracks/this-month/" title="Tracks listened to this month">This month</a> • <a href="/music/tracks/three-months/" title="Tracks listened to in the last 3 months">3 months</a> • <a href="/music/tracks/all-time/" title="All of the tracks I've listened to">All time</a></p>
+<p><strong class="highlight-text">More:</strong> <a href="/music/tracks/this-week/" title="Tracks listened to this week">This week</a> • <a href="/music/tracks/this-month/" title="Tracks listened to this month">This month</a> • <a href="/music/tracks/three-months/" title="Tracks listened to in the last 3 months">3 months</a></p>
 {% render "partials/media/music/releases.liquid", albumReleases:albumReleases %}
