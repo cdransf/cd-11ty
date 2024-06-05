@@ -42,16 +42,15 @@ const fetchGenreMapping = async () => {
     console.error('Error fetching genres:', error)
     return {}
   }
-
   return data.reduce((acc, genre) => {
     acc[genre.id] = genre.name
     return acc
   }, {})
 }
 
-const aggregateData = (data, groupByField, groupByType) => {
+const aggregateData = async (data, groupByField, groupByType) => {
   const aggregation = {}
-  const genreMapping = fetchGenreMapping()
+  const genreMapping = await fetchGenreMapping()
 
   data.forEach(item => {
     const key = item[groupByField]
@@ -65,7 +64,7 @@ const aggregateData = (data, groupByField, groupByType) => {
           image: item['albums']?.['image'] || '',
           timestamp: item['listened_at'],
           type: groupByType,
-          genre: genreMapping[item['artists']['genre']] || ''
+          genre: genreMapping[item['artists']['genres']] || ''
         }
       } else {
         aggregation[key] = {
@@ -75,13 +74,10 @@ const aggregateData = (data, groupByField, groupByType) => {
           url: `/music/artists/${sanitizeMediaString(item['artist_name'])}-${sanitizeMediaString(parseCountryField(item['artists']['country']))}`,
           image: item[groupByType]?.image || '',
           type: groupByType,
-          genre: genreMapping[item['artists']['genre']] || ''
+          genre: genreMapping[item['artists']['genres']] || ''
         }
       }
-      if (
-        groupByType === 'track' ||
-        groupByType === 'albums'
-      ) aggregation[key]['artist'] = item['artist_name']
+      if (groupByType === 'track' || groupByType === 'albums') aggregation[key]['artist'] = item['artist_name']
     }
     aggregation[key].plays++
   })
@@ -95,12 +91,13 @@ const aggregateData = (data, groupByField, groupByType) => {
   return aggregatedData.filter(item => item.plays > 0)
 }
 
-const aggregateGenres = (data) => {
+const aggregateGenres = async (data) => {
   const genreAggregation = {}
-  const genreMapping = fetchGenreMapping()
+  const genreMapping = await fetchGenreMapping()
 
   data.forEach(item => {
-    const genre = genreMapping[item['artists']['genre']] || ''
+    const genre = genreMapping[item['artists']['genres']] || ''
+
     if (!genreAggregation[genre]) genreAggregation[genre] = { genre, plays: 0 }
     genreAggregation[genre]['plays']++
   })
@@ -128,10 +125,10 @@ export default async function() {
   for (const [period, startPeriod] of Object.entries(periods)) {
     const periodData = await fetchDataForPeriod(startPeriod, selectFields, 'listens')
     results[period] = {
-      artists: aggregateData(periodData, 'artist_name', 'artists'),
-      albums: aggregateData(periodData, 'album_name', 'albums'),
-      tracks: aggregateData(periodData, 'track_name', 'track'),
-      genres: aggregateGenres(periodData),
+      artists: await aggregateData(periodData, 'artist_name', 'artists'),
+      albums: await aggregateData(periodData, 'album_name', 'albums'),
+      tracks: await aggregateData(periodData, 'track_name', 'track'),
+      genres: await aggregateGenres(periodData),
       totalTracks: periodData?.length?.toLocaleString('en-US')
     }
   }
@@ -139,11 +136,11 @@ export default async function() {
   const recentData = await fetchDataForPeriod(DateTime.now().minus({ days: 7 }), selectFields, 'listens')
 
   results['recent'] = {
-    artists: aggregateData(recentData, 'artist_name', 'artists'),
-    albums: aggregateData(recentData, 'album_name', 'albums'),
-    tracks: aggregateData(recentData, 'track_name', 'track'),
-    tracksChronological: aggregateData(recentData, 'track_name', 'track').sort((a, b) => b.timestamp - a.timestamp),
-    genres: aggregateGenres(recentData),
+    artists: await aggregateData(recentData, 'artist_name', 'artists'),
+    albums: await aggregateData(recentData, 'album_name', 'albums'),
+    tracks: await aggregateData(recentData, 'track_name', 'track'),
+    tracksChronological: (await aggregateData(recentData, 'track_name', 'track')).sort((a, b) => b.timestamp - a.timestamp),
+    genres: await aggregateGenres(recentData),
     totalTracks: recentData?.length?.toLocaleString('en-US')
   }
   results['nowPlaying'] = results['recent']['tracksChronological'][0]
