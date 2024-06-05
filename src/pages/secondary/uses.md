@@ -42,7 +42,6 @@ Software and services that I use for work and my own enjoyment.
 
 - [Rectangle](https://rectangleapp.com): to quickly move around/organize/snap application windows. Using a Mac without it now feels like it's broken.
 - [Dato](https://sindresorhus.com/dato): an option-rich calendar utility that lives in your menubar.
-- [Alfred](https://alfredapp.com): a flexible, extensible and reliable Spotlight replacement.
 - [Keyboard Maestro](https://www.keyboardmaestro.com): an endlessly flexible app that I underutilize for quick macros and keyboard shortcuts in a number of different apps.
 - [AirBuddy](https://v2.airbuddy.app): finer-grained control over AirPods and other wireless devices.
 - [Meta](https://www.nightbirdsevolve.com/meta): the _best_ utility for tagging and organizing music files on macOS.
