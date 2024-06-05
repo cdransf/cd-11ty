@@ -26,7 +26,7 @@ Software and services that I use for work and my own enjoyment.
 - [Obsidian](https://obsidian.md): fast, flexible and configurable (or minimal) as you'd like.
 - [Plexamp](https://www.plex.tv/plexamp/): Plex's flexible and delightful music player.
 - [Ivory](https://tapbots.com/ivory/): the best, most polished Mastodon client for macOS and iOS.
-- [Feedbin](https://feedbin.com): I use Feedbin's mobile app on iOS and their web client added to my dock via Safari on macOS. It's a fantastic app, native or not.
+- [Readkit](https://readkit.app): super flexible and universal — it makes it easy to triage my feeds and save things over to Instapaper.
 - [Parcel](https://parcelapp.net): the most flexible and reliable package tracker for Apple's ecosystem.
 - [Flighty](https://flightyapp.com): I don't travel a ton but Flighty makes doing so a fair bit less stressful.
 
