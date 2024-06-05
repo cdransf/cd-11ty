@@ -26,7 +26,7 @@ Software and services that I use for work and my own enjoyment.
 - [Obsidian](https://obsidian.md): fast, flexible and configurable (or minimal) as you'd like.
 - [Plexamp](https://www.plex.tv/plexamp/): Plex's flexible and delightful music player.
 - [Ivory](https://tapbots.com/ivory/): the best, most polished Mastodon client for macOS and iOS.
-- [NetNewsWire](https://netnewswire.com): an open source, simple and reliable RSS reader.
+- [Feedbin](https://feedbin.com): I use Feedbin's mobile app on iOS and their web client added to my dock via Safari on macOS. It's a fantastic app, native or not.
 - [Parcel](https://parcelapp.net): the most flexible and reliable package tracker for Apple's ecosystem.
 - [Flighty](https://flightyapp.com): I don't travel a ton but Flighty makes doing so a fair bit less stressful.
 
@@ -42,7 +42,6 @@ Software and services that I use for work and my own enjoyment.
 
 - [Rectangle](https://rectangleapp.com): to quickly move around/organize/snap application windows. Using a Mac without it now feels like it's broken.
 - [Dato](https://sindresorhus.com/dato): an option-rich calendar utility that lives in your menubar.
-- [Keyboard Maestro](https://www.keyboardmaestro.com): an endlessly flexible app that I underutilize for quick macros and keyboard shortcuts in a number of different apps.
 - [AirBuddy](https://v2.airbuddy.app): finer-grained control over AirPods and other wireless devices.
 - [Meta](https://www.nightbirdsevolve.com/meta): the _best_ utility for tagging and organizing music files on macOS.
 - [Permute](https://software.charliemonroe.net/permute): a useful utility for quickly converting files to different formats.
@@ -52,7 +51,6 @@ Software and services that I use for work and my own enjoyment.
 <h3>Dev tools</h3>
 
 - [Sublime Text](https://www.sublimetext.com): super snappy and as reliable as ever for text editing and web development.
-- [TablePlus](https://tableplus.com): for managing databases and tables.
 - [Catppuccin](https://github.com/catppuccin): nearly as ubiquitous as Dracula but lighter and more playful, I've started using this theme wherever I'm looking at/reading/writing code.
 - [Mono Lisa](https://monolisa.dev): a relatively new find, I've been enjoying how pleasant and readable this font is (and have even gone so far as to install it on iOS via [FontCase](https://apps.apple.com/us/app/fontcase-manage-your-type/id1205074470)).
 
@@ -68,9 +66,6 @@ Software and services that I use for work and my own enjoyment.
 - [Feedbin](https://feedbin.com): performant, open and super reliable RSS.
 - [Instapaper](https://instapaper.com): slow to change and often better for it — a reliable and steady read it later service.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.
-- [Trakt](https://trakt.tv): my preferred TV and movie tracking service — it has a strong community (and isn't owned by a private equity firm).
-- [Slack](http://slack.com): I have a family Slack set up to avoid group text messages and am in a few other community Slacks.
-- [Discord](http://discord.com): I don't _like_ Discord but, for better or worse, it's where some communities I frequent are.
 - [Backblaze](https://backblaze.com): It backs up my MacBook Air and attached storage drive and I don't have to think about it.
 - <a onclick="clicky?.log('/uses','Proton referral', 'click')" href="https://pr.tn/ref/X775YX40Z50G">Proton</a>: a reliable, trustworthy VPN with all of the features you'd expect from such a service.
 
