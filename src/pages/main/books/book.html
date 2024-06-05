@@ -48,6 +48,9 @@ schema: book
       <p class="sub-meta"><a href="https://openlibrary.org/isbn/{{ book.isbn }}" title="View {{ book.title | escape }} on Open Library">View on Open Library</a></p>
     </div>
   </div>
-  {% if book.review %}{{ book.review | markdown }}{% endif %}
-  {% if book.description %}<p><em>{{ book.description }}</em></p>{% endif %}
+  {% if book.review %}
+    {{ book.review | markdown }}
+    <hr class="large-spacing" />
+  {% endif %}
+  {% if book.description %}<em>{{ book.description }}</em>{% endif %}
 </article>

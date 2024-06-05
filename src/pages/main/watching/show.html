@@ -38,8 +38,8 @@ schema: show
     <p class="sub-meta"><a href="https://themoviedb.org/tv/{{ show.tmdb_id }}" title="View {{ show.title | escape }} on TMDB">View on TMDB</a></p>
   </div>
   {% if show.review %}
-    <p>{{ show.review | markdown }}</p>
+    {{ show.review | markdown }}
     <hr class="large-spacing" />
   {% endif %}
-  {% if show.description %}<p><em>{{ show.description }}</em></p>{% endif %}
+  {% if show.description %}<em>{{ show.description }}</em>{% endif %}
 </article>
