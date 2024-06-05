@@ -14005,5 +14005,16 @@
       "https://social.lol/users/cory/statuses/112561120452810315"
     ],
     "lastTootTimestamp": 1717546393683
+  },
+  "https://coryd.dev/books/0306922223": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvYm9va3MvMDMwNjkyMjIyMw==",
+    "title": "📖: Do What You Want (⭐⭐⭐⭐) ",
+    "url": "https://coryd.dev/books/0306922223",
+    "content_text": "📖: Do What You Want (⭐⭐⭐⭐)  https://coryd.dev/books/0306922223",
+    "date_published": "Wed, 05 Jun 2024 00:00:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112565330544895042"
+    ],
+    "lastTootTimestamp": 1717610634570
   }
 }
