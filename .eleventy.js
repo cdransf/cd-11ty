@@ -51,8 +51,8 @@ export default async function (eleventyConfig) {
     'node_modules/youtube-video-element/youtube-video-element.js': 'assets/scripts/components/youtube-video-element.js'
   })
   eleventyConfig.addPassthroughCopy({
-     'node_modules/@daviddarnes/mastodon-post/mastodon-post.js': 'assets/scripts/components/mastodon-post.js'
-   })
+    'node_modules/@daviddarnes/mastodon-post/mastodon-post.js': 'assets/scripts/components/mastodon-post.js'
+  })
 
   // collections
   eleventyConfig.addCollection('allContent', allContent)
