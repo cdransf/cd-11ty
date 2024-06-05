@@ -34,7 +34,7 @@ Software and services that I use for work and my own enjoyment.
 
 - [status.log](https://apps.apple.com/us/app/status-log/id6444921793): a fantastic client for status.lol that provides an outstanding native experience for the service.
 - [Working Copy](https://workingcopy.app): an incredible, fully-featured git client.
-- [Secure Shellfish](https://secureshellfish.app): the *best* ssh client for iOS, complete with Codeapaces support and Files.app integration.
+- [Secure Shellfish](https://secureshellfish.app): the _best_ ssh client for iOS, complete with Codeapaces support and Files.app integration.
 - [Runestone](https://runestone.app): a superb, lightweight text editor for iOS that works beautifully with Working Copy and Secure Shellfish via Files.app.
 - [FontCase](https://apps.apple.com/us/app/fontcase-manage-your-type/id1205074470): for managing/installing fonts.
 
@@ -49,7 +49,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3>Dev tools</h3>
 
-- [Sublime Text](https://www.sublimetext.com): super snappy and as reliable as ever for text editing and web development.
+- [VS Code](https://code.visualstudio.com): it's the industry standard — for better or worse.
 - [Catppuccin](https://github.com/catppuccin): nearly as ubiquitous as Dracula but lighter and more playful, I've started using this theme wherever I'm looking at/reading/writing code.
 - [Mono Lisa](https://monolisa.dev): a relatively new find, I've been enjoying how pleasant and readable this font is (and have even gone so far as to install it on iOS via [FontCase](https://apps.apple.com/us/app/fontcase-manage-your-type/id1205074470)).
 
@@ -60,7 +60,7 @@ Software and services that I use for work and my own enjoyment.
 - <a onclick="clicky?.log('/uses','DNSimple referral', 'click')" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>: a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
 - <a onclick="clicky?.log('/uses','Bunny.net referral', 'click')" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>: a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
 - [Netlify](https://netlify.com): I use their hosting, forms and webhooks. It's a reliable and feature-rich platform.
-- <a onclick="clicky?.log('/uses', 'Clicky referral', 'click')" href="https://clicky.com/101449513">Clicky</a>: not the *prettiest* analytics, but very feature rich.
+- <a onclick="clicky?.log('/uses', 'Clicky referral', 'click')" href="https://clicky.com/101449513">Clicky</a>: not the _prettiest_ analytics, but very feature rich.
 - <a onclick="clicky?.log('/uses','Feedpress referral', 'click')" href="https://feedpress.com/?affid=34370">Feedpress</a>: they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
 - [Feedbin](https://feedbin.com): performant, open and super reliable RSS.
 - [Instapaper](https://instapaper.com): slow to change and often better for it — a reliable and steady read it later service.
