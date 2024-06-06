@@ -1,0 +1,48 @@
+# media caching
+/media/*
+  Cache-Control: public, max-age=15552000, must-revalidate
+
+# feeds
+/feeds/posts
+  Content-Type: application/xml; charset=utf-8
+  x-content-type-options: nosniff
+
+/feeds/links
+  Content-Type: application/xml; charset=utf-8
+  x-content-type-options: nosniff
+
+/feeds/books
+  Content-Type: application/xml; charset=utf-8
+  x-content-type-options: nosniff
+
+# .well-known
+/.well-known/webfinger
+  Content-Type: application/jrd+json; charset=utf-8
+
+/.well-known/gpc.json
+  Content-Type: application/jrd+json; charset=utf-8
+
+/.well-known/traffic-advice
+  Content-Type: application/trafficadvice+json
+
+# json
+/contribute.json
+  Content-Type: application/json
+
+/api/now-playing
+  Content-Type: application/json
+
+/api/search
+  Content-Type: application/json
+
+# blogroll
+/blogroll.opml
+  Content-Disposition: attachment; filename=cory-dransfeldt-blogroll.opml
+
+# security headers
+/*
+  Content-Security-Policy: upgrade-insecure-requests; block-all-mixed-content;
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin, no-referrer-when-downgrade
+  Permissions-Policy: autoplay=(), camera=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), publickey-credentials-get=()
