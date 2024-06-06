@@ -14038,5 +14038,16 @@
       "https://social.lol/users/cory/statuses/112567690181554105"
     ],
     "lastTootTimestamp": 1717646639783
+  },
+  "https://coryd.dev/watching/movies/9355": {
+    "id": "aHR0cHM6Ly9jb3J5ZC5kZXYvd2F0Y2hpbmcvbW92aWVzLzkzNTU=",
+    "title": "🎥: Mad Max: Beyond Thunderdome (⭐⭐⭐⭐⭐)",
+    "url": "https://coryd.dev/watching/movies/9355",
+    "content_text": "🎥: Mad Max: Beyond Thunderdome (⭐⭐⭐⭐⭐) https://coryd.dev/watching/movies/9355",
+    "date_published": "Thu, 06 Jun 2024 18:40:00 GMT",
+    "toots": [
+      "https://social.lol/users/cory/statuses/112571465467660195"
+    ],
+    "lastTootTimestamp": 1717704246096
   }
 }
