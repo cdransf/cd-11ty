@@ -147,10 +147,6 @@ a:active,
   stroke: var(--accent-color-hover);
 }
 
-picture {
-  display: flex;
-}
-
 /* headers */
 h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);

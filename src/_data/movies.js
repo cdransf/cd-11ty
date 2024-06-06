@@ -40,8 +40,6 @@ const fetchAllMovies = async () => {
     rangeStart += PAGE_SIZE
   }
 
-  movies = movies.filter(movie => movie.last_watched)
-
   return movies
 }
 
@@ -68,7 +66,6 @@ export default async function () {
     }
     return movie
   }).filter(movie => watched ? movie['lastWatched'] : !movie['lastWatched'])
-
   const favoriteMovies = movies.filter(movie => movie['favorite'])
   const collectedMovies = movies.filter(movie => movie['collected'])
   const recentlyWatchedMovies = movies.filter(movie => movie['last_watched']).sort((a, b) => new Date(b['last_watched']) - new Date(a['last_watched']))

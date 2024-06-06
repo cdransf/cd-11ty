@@ -1,7 +1,6 @@
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import tablerIcons from '@cdransf/eleventy-plugin-tabler-icons'
 import lightningCSS from '@11tyrocks/eleventy-plugin-lightningcss'
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItFootnote from 'markdown-it-footnote'
@@ -24,14 +23,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight)
   eleventyConfig.addPlugin(tablerIcons)
   eleventyConfig.addPlugin(lightningCSS)
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		extensions: 'html',
-		formats: ['webp', 'jpeg'],
-		defaultAttributes: {
-			loading: 'lazy',
-			decoding: 'async',
-		},
-	});
 
   // quiet build output
   eleventyConfig.setQuietMode(true)
@@ -44,7 +35,6 @@ export default async function (eleventyConfig) {
   // passthrough
   eleventyConfig.addPassthroughCopy('src/assets')
   eleventyConfig.addPassthroughCopy('_redirects')
-  eleventyConfig.addPassthroughCopy('_headers')
   eleventyConfig.addPassthroughCopy({
     'node_modules/minisearch/dist/umd/index.js': 'assets/scripts/components/minisearch.js',
   })

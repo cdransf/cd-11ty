@@ -15,7 +15,17 @@ schema: book
 <article class="book-focus">
   <div class="book-display">
     <img
-      src="{{ book.image }}"
+      srcset="
+        https://coryd.dev/.netlify/images/?url={{ book.image }}&fit=cover&w=203&h=309&fm=webp&q=40 203w,
+        https://coryd.dev/.netlify/images/?url={{ book.image }}&fit=cover&w=406&h=618&fm=webp&q=40 406w,
+        https://coryd.dev/.netlify/images/?url={{ book.image }}&fit=cover&w=812&h=1236&fm=webp&q=40 812w,
+        https://coryd.dev/.netlify/images/?url={{ book.image }}&fit=cover&w=1624&h=2472&fm=webp&q=40 1624w
+      "
+      sizes="(max-width: 450px) 203px,
+        (max-width: 850px) 406px,
+        (max-width: 1000px) 812px,
+        1624px"
+      src="https://coryd.dev/.netlify/images/?url={{ book.image }}&fit=cover&w=1624&h=2472&fm=webp&q=40"
       alt="{{ alt }}"
       loading="eager"
       decoding="async"

@@ -40,10 +40,6 @@ const fetchAllShows = async () => {
     rangeStart += PAGE_SIZE
   }
 
-  shows = shows.filter(show => 
-    show.episodes.some(episode => episode.last_watched_at)
-  )
-
   return shows
 }
 
@@ -100,8 +96,8 @@ export default async function () {
         season: seasonNumber,
         tmdbId: showTmdbId,
         type: 'tv',
-        image: `https://coryd.dev/media/shows/poster-${showTmdbId}.jpg`,
-        backdrop: `https://coryd.dev/media/shows/backdrops/backdrop-${showTmdbId}.jpg`,
+        image: `/media/shows/poster-${showTmdbId}.jpg`,
+        backdrop: `/media/shows/backdrops/backdrop-${showTmdbId}.jpg`,
         dateAdded: lastWatchedAt,
         lastWatchedAt
       })
@@ -128,8 +124,8 @@ export default async function () {
           collected: show['collected'],
           favorite: show['favorite'],
           type: 'tv-range',
-          image: `https://coryd.dev/media/shows/poster-${show['tmdbId']}.jpg`,
-          backdrop: `https://coryd.dev/media/shows/backdrops/backdrop-${show['tmdbId']}.jpg`,
+          image: `/media/shows/poster-${show['tmdbId']}.jpg`,
+          backdrop: `/media/shows/backdrops/backdrop-${show['tmdbId']}.jpg`,
         })
       } else {
         const singleEpisode = show['episodes'][0]
@@ -143,6 +139,8 @@ export default async function () {
   }
 
   const favoriteShows = shows.filter(show => show['favorite'])
+  const collectedShows = shows.filter(show => show['collected'])
+  const toWatch = shows.map(show => ({...show, url: `/watching/shows/${show['tmdb_id']}`})).filter(show => !show.episodes.some(episode => episode.last_watched_at)).sort((a, b) => a['title'].localeCompare(b['title']))
 
   return {
     shows,
