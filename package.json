@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "18.11.13",
+  "version": "18.12.13",
   "description": "The source for my personal site. Built using 11ty.",
   "type": "module",
   "scripts": {
@@ -41,6 +41,6 @@
     "markdown-it-footnote": "^4.0.0",
     "sanitize-html": "^2.13.0",
     "slugify": "^1.6.6",
-    "terser": "^5.31.0"
+    "terser": "^5.31.1"
   }
 }

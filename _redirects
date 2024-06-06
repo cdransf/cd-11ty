@@ -106,6 +106,5 @@ https://cdme.netlify.app https://coryd.dev 301!
 /media/* https://f001.backblazeb2.com/file/coryd-dev/:splat 200!
 
 # analytics
-/23af0256fe76a.js http://static.getclicky.com/js?in=/2842c5ddc46e5 200!
-/2842c5ddc46e5 https://in.getclicky.com/in.php 200!
-/7afb285ad050d http://in.getclicky.com/101449513ns.gif 200!
+/js/script.js https://plausible.io/js/script.tagged-events.outbound-links.js 200
+/api/event https://plausible.io/api/event 200

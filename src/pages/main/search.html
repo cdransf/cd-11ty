@@ -32,7 +32,7 @@ permalink: /search.html
       const query = $input.value
       const results = (query.length > 1) ? getSearchResults(query) : []
       if (query === '') renderSearchResults([])
-      if (results && window.clicky) clicky.log('/search', query, 'click')
+      if (results && typeof plausible === 'function') plausible('Search', { props: { query: query } });
       renderSearchResults(results)
     })
 

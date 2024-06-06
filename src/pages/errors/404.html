@@ -32,3 +32,4 @@ image: /assets/img/404.jpg
   <hr class="large-spacing" />
   {% render "partials/widgets/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}
 </div>
+<script>document.addEventListener('DOMContentLoaded', function () { plausible('404', { props: { path: document.location.pathname } }); });</script>

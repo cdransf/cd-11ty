@@ -56,18 +56,17 @@ Software and services that I use for work and my own enjoyment.
 
 <h3>Services</h3>
 
-- <a onclick="clicky?.log('/uses','Fastmail referral', 'click')" href="https://ref.fm/u30190984">Fastmail</a>: the best, most reliable email, calendar and contacts provider around.
-- <a onclick="clicky?.log('/uses','NextDNS referral', 'click')" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>: a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.
-- <a onclick="clicky?.log('/uses','DNSimple referral', 'click')" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>: a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
-- <a onclick="clicky?.log('/uses','Bunny.net referral', 'click')" href="https://bunny.net?ref=revw3mehej">Bunny.net</a>: a powerful and affordable CDN. I use it to serve assets on my personal site (most notable my now page — raw assets are fetched by Eleventy and then optimized to webp).
+- <a class="plausible-event-name=Fastmail+referral" href="https://ref.fm/u30190984">Fastmail</a>: the best, most reliable email, calendar and contacts provider around.
+- <a class="plausible-event-name=NextDNS+referral" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>: a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.
+- <a class="plausible-event-name=DNSimple+referral" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>: a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
 - [Netlify](https://netlify.com): I use their hosting, forms and webhooks. It's a reliable and feature-rich platform.
-- <a onclick="clicky?.log('/uses', 'Clicky referral', 'click')" href="https://clicky.com/101449513">Clicky</a>: not the _prettiest_ analytics, but very feature rich.
-- <a onclick="clicky?.log('/uses','Feedpress referral', 'click')" href="https://feedpress.com/?affid=34370">Feedpress</a>: they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
+- [Plausible](https://plausible.io): lightweight, privacy-friendly analytics.
+- <a class="plausible-event-name=Feedpress+referral" href="https://feedpress.com/?affid=34370">Feedpress</a>: they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
 - [Feedbin](https://feedbin.com): performant, open and super reliable RSS.
 - [Instapaper](https://instapaper.com): slow to change and often better for it — a reliable and steady read it later service.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.
 - [Backblaze](https://backblaze.com): It backs up my MacBook Air and attached storage drive and I don't have to think about it.
-- <a onclick="clicky?.log('/uses','Proton referral', 'click')" href="https://pr.tn/ref/X775YX40Z50G">Proton</a>: a reliable, trustworthy VPN with all of the features you'd expect from such a service.
+- <a class="plausible-event-name=Proton+referral" href="https://pr.tn/ref/X775YX40Z50G">Proton</a>: a reliable, trustworthy VPN with all of the features you'd expect from such a service.
 
 <hr class="large-spacing" />
 

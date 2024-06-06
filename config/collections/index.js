@@ -107,10 +107,10 @@ export const popularPosts = (collection) => {
 
   return posts
     .filter((post) => {
-      if (analytics.find((p) => p.url.includes(post.slug))) return true
+      if (analytics.find((p) => p.page.includes(post.slug))) return true
     })
     .sort((a, b) => {
-      const visitors = (page) => analytics.filter((p) => p.url.includes(page.slug)).pop()?.value
+      const visitors = (page) => analytics.filter((p) => p.page.includes(page.slug)).pop()?.visitors
       return visitors(b) - visitors(a)
     })
 }

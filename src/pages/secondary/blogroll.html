@@ -5,7 +5,8 @@ permalink: /blogroll.html
 description: These are awesome blogs that I enjoy and you may enjoy too.
 ---
 <h2 class="page-header">{{ title }}</h2>
-<p>You can <a onclick="clicky?.log('/blogroll','OPML download', 'download');" href="/blogroll.opml">download an OPML file</a> containing all of these feeds and import them into your RSS reader.</p>
+<p>You can <a onclick="if (typeof plausible === 'function') { plausible('OPML download', { props: { action: 'download' } }) }" href="/blogroll.opml">Download OPML</a>
+  download an OPML file</a> containing all of these feeds and import them into your RSS reader.</p>
 <table>
   <tr>
     <th>Name</th>
