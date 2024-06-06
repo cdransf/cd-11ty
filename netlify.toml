@@ -10,7 +10,7 @@
 # IMAGES
 ###
 [images]
-  remote_images = ["https://f001.backblazeb2.com/file/coryd-dev/.*", "https://books.google.com/.*"]
+  remote_images = ["https://f001.backblazeb2.com/file/coryd-dev/.*"]
 
 ###
 # URLs
