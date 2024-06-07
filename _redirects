@@ -62,17 +62,19 @@
 /api/v* /400/ 400
 
 # assets
-/favicon.ico /assets/icons/favicon.ico 200!
+/favicon.ico https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 200!
+/assets/icons/favicon.ico https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 200!
 /apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
 /apple-touch-icon https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
 /apple-touch-icon-precomposed.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
+/assets/icons/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
+/assets/img/feed-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
 /static/favicons/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
 /static/images/avatar.png https://coryd-dev.b-cdn.net/assets/avatar.png 200!
 /static/images/avatar.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 200!
 /assets/img/favicon/favicon-32x32.png https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 200!
 /assets/img/favicon/favicon-16x16.png https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 200!
 /assets/img/logo.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 200!
-/assets/img/feed-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
 
 # general
 /articles/ / 301!
@@ -84,6 +86,7 @@
 /recent/shows /watching/recent/shows 301!
 /mastodon https://social.lol/@cory 301!
 /coffee https://www.buymeacoffee.com/cory 301!
+/undefined 301!
 
 # netlify app domain
 https://cdme.netlify.app https://coryd.dev 301!
