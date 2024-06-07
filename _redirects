@@ -60,6 +60,7 @@
 //wp/* /400/ 400
 //test/ /400/ 400
 /api/v* /400/ 400
+/undefined /400 301!
 
 # assets
 /favicon.ico https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 200!
@@ -86,7 +87,6 @@
 /recent/shows /watching/recent/shows 301!
 /mastodon https://social.lol/@cory 301!
 /coffee https://www.buymeacoffee.com/cory 301!
-/undefined 301!
 
 # netlify app domain
 https://cdme.netlify.app https://coryd.dev 301!
