@@ -62,7 +62,7 @@
   {%- when 'movie' -%}
     {%- assign ogImage = movie.backdrop -%}
   {%- when 'show' -%}
-    {%- assign ogImage = meta.url | append: '/media/shows/backdrops/backdrop-' | append: show.tmdb_id | append: '.jpg' -%}
+    {%- assign ogImage = 'https://coryd-dev.b-cdn.net/shows/backdrops/backdrop-' | append: show.tmdb_id | append: '.jpg' -%}
   {%- when 'genre' -%}
     {%- assign genreArtist = genre.artists | shuffleArray | first -%}
     {%- assign ogImage = genreArtist.image -%}

@@ -96,8 +96,8 @@ export default async function () {
         season: seasonNumber,
         tmdbId: showTmdbId,
         type: 'tv',
-        image: `/media/shows/poster-${showTmdbId}.jpg`,
-        backdrop: `/media/shows/backdrops/backdrop-${showTmdbId}.jpg`,
+        image: `/shows/poster-${showTmdbId}.jpg`,
+        backdrop: `/shows/backdrops/backdrop-${showTmdbId}.jpg`,
         dateAdded: lastWatchedAt,
         lastWatchedAt
       })
@@ -124,8 +124,8 @@ export default async function () {
           collected: show['collected'],
           favorite: show['favorite'],
           type: 'tv-range',
-          image: `/media/shows/poster-${show['tmdbId']}.jpg`,
-          backdrop: `/media/shows/backdrops/backdrop-${show['tmdbId']}.jpg`,
+          image: `/shows/poster-${show['tmdbId']}.jpg`,
+          backdrop: `/shows/backdrops/backdrop-${show['tmdbId']}.jpg`,
         })
       } else {
         const singleEpisode = show['episodes'][0]

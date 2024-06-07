@@ -19,16 +19,16 @@
         {% if shape == 'square' %}
           <img
             srcset="
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=200&h=200&fm=webp&q=40 200w,
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=400&h=400&fm=webp&q=40 400w,
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=800&h=800&fm=webp&q=40 800w,
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=1200&h=1200&fm=webp&q=40 1200w
+              https://coryd-dev.b-cdn.net{{ item.image }}?width=200&h=200&aspect_ratio=1:1 200w,
+              https://coryd-dev.b-cdn.net{{ item.image }}?width=400&h=400&aspect_ratio=1:1 400w,
+              https://coryd-dev.b-cdn.net{{ item.image }}?width=800&h=800&aspect_ratio=1:1 800w,
+              https://coryd-dev.b-cdn.net{{ item.image }}?width=1200&h=1200&aspect_ratio=1:1 1200w
             "
             sizes="(max-width: 450px) 200px,
               (max-width: 850px) 400px,
               (max-width: 100px) 800px,
               1200px"
-            src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=1200&h=1200&fm=webp&q=40"
+            src="https://coryd-dev.b-cdn.net{{ item.image }}?width=1200&h=1200&aspect_ratio=1:1"
             alt="{{ alt }}"
             loading="{{ loadingStrategy }}"
             decoding="async"
@@ -38,16 +38,16 @@
         {% else %}
           <img
             srcset="
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=200&h=307&fm=webp&q=40 200w,
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=400&h=614&fm=webp&q=40 400w,
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=800&h=1228&fm=webp&q=40 800w,
-              https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=1200&h=1842&fm=webp&q=40 1200w
+              https://coryd-dev.b-cdn.net{{ item.image }}?w=200&aspect_ratio=2:3 200w,
+              https://coryd-dev.b-cdn.net{{ item.image }}?w=400&aspect_ratio=2:3 400w,
+              https://coryd-dev.b-cdn.net{{ item.image }}?w=800&aspect_ratio=2:3 800w,
+              https://coryd-dev.b-cdn.net{{ item.image }}?w=1200&aspect_ratio=2:3 1200w
             "
             sizes="(max-width: 450px) 200px,
               (max-width: 850px) 400px,
               (max-width: 1000px) 800px,
               1200px"
-            src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=1200&h=1842&fm=webp&q=40"
+            src="https://coryd-dev.b-cdn.net{{ item.image }}?w=1200&aspect_ratio=2:3"
             alt="{{ alt }}"
             loading="{{ loadingStrategy }}"
             decoding="async"

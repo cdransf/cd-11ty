@@ -45,7 +45,7 @@ export default async (request) => {
       const { error: insertArtistError } = await supabase.from('artists').insert([
         {
           mbid: null,
-          image: `https://coryd.dev/media/artists/${artistKey}.jpg`,
+          image: `/artists/${artistKey}.jpg`,
           key: artistKey,
           name: artist,
           tentative: true
@@ -77,7 +77,7 @@ export default async (request) => {
       const { error: insertAlbumError } = await supabase.from('albums').insert([
         {
           mbid: null,
-          image: `https://coryd.dev/media/albums/${albumKey}.jpg`,
+          image: `/albums/${albumKey}.jpg`,
           key: albumKey,
           name: album,
           tentative: true

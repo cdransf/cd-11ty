@@ -5,16 +5,16 @@
       <div class="meta">
         <img
           srcset="
-            https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=64&h=64&fm=webp&q=40 64w,
-            https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=128&h=128&fm=webp&q=40 128w,
-            https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=256&h=256&fm=webp&q=40 256w,
-            https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=512&h=512&fm=webp&q=40 512w
+            https://coryd-dev.b-cdn.net{{ item.image }}?aspect_ratio=1:1&width=64 256w 64w,
+            https://coryd-dev.b-cdn.net{{ item.image }}?aspect_ratio=1:1&width=128 128w,
+            https://coryd-dev.b-cdn.net{{ item.image }}?aspect_ratio=1:1&width=256 256w,
+            https://coryd-dev.b-cdn.net{{ item.image }}?aspect_ratio=1:1&width=512 512w
           "
           sizes="(max-width: 450px) 64px,
             (max-width: 850px) 128px,
             (max-width: 1000px) 256px,
             512px"
-          src="https://coryd.dev/.netlify/images/?url={{ item.image }}&fit=cover&w=512&h=512&fm=webp&q=40"
+          src="https://coryd-dev.b-cdn.net{{ item.image }}?aspect_ratio=1:1&width=512"
           alt="{{ alt }}"
           loading="lazy"
           decoding="async"
