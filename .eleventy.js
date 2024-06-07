@@ -35,6 +35,7 @@ export default async function (eleventyConfig) {
   // passthrough
   eleventyConfig.addPassthroughCopy('src/assets')
   eleventyConfig.addPassthroughCopy('_redirects')
+  eleventyConfig.addPassthroughCopy('_headers')
   eleventyConfig.addPassthroughCopy({
     'node_modules/minisearch/dist/umd/index.js': 'assets/scripts/components/minisearch.js',
   })
