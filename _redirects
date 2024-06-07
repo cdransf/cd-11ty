@@ -40,10 +40,6 @@
 /posts/2024 / 301!
 /books/want-to-read/ /books 301!
 /blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301!
-/assets/img/social-preview/your-site-your-home-your-web- /assets/img/social-preview/your-site-your-home-your-web-preview.jpeg 301!
-/assets/img/social-preview/adding-a-light/dark-theme-toggle-preview.jpeg /assets/img/social-preview/adding-a-light-dark-theme-toggle-preview.jpeg 301!
-/assets/img/social-preview/go-ahead-and-block-ai-web- /assets/img/social-preview/go-ahead-and-block-ai-web-crawlers-preview.jpeg 301!
-/assets/img/social-preview/automatic-mastodon-post-embeds-preview.jpeg /assets/img/ogi/automatic-mastodon-post-embeds-preview.png 301!
 /assets/img/logo.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 301!
 
 # 400s
@@ -67,16 +63,16 @@
 
 # assets
 /favicon.ico /assets/icons/favicon.ico 200!
-/apple-touch-icon.png /assets/icons/apple-touch-icon.png 200!
-/apple-touch-icon /assets/icons/apple-touch-icon.png 200!
-/apple-touch-icon-precomposed.png /assets/icons/apple-touch-icon.png 200!
-/static/favicons/apple-touch-icon.png /assets/icons/apple-touch-icon.png 200!
-/static/images/avatar.png /assets/img/default.png 200!
-/static/images/avatar.webp /assets/img/default.webp 200!
-/assets/img/favicon/favicon-32x32.png /assets/icons/favicon.ico 200!
-/assets/img/favicon/favicon-16x16.png /assets/icons/favicon.ico 200!
-/assets/img/logo.webp /assets/img/default.webp 200!
-/assets/img/feed-icon.png /assets/icons/apple-touch-icon.png 200!
+/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
+/apple-touch-icon https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
+/apple-touch-icon-precomposed.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
+/static/favicons/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
+/static/images/avatar.png https://coryd-dev.b-cdn.net/assets/avatar.png 200!
+/static/images/avatar.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 200!
+/assets/img/favicon/favicon-32x32.png https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 200!
+/assets/img/favicon/favicon-16x16.png https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 200!
+/assets/img/logo.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 200!
+/assets/img/feed-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
 
 # general
 /articles/ / 301!
