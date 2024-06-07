@@ -124,10 +124,6 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-bottom: var(--sizing-base);
 
-    &.no-pagination {
-      margin-bottom: 0;
-    }
-
     & a,
     & div {
       display: flex;
