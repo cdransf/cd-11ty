@@ -6,6 +6,20 @@ const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 const PAGE_SIZE = 1000
 
+const fetchTagsForMovie = async (movieId) => {
+  const { data, error } = await supabase
+    .from('movies_tags')
+    .select('tags(id, name)')
+    .eq('movies_id', movieId)
+
+  if (error) {
+    console.error(`Error fetching tags for movie ${movieId}:`, error)
+    return []
+  }
+
+  return data.map(mt => mt.tags.name)
+}
+
 const fetchAllMovies = async () => {
   let movies = []
   let rangeStart = 0
@@ -14,6 +28,7 @@ const fetchAllMovies = async () => {
     const { data, error } = await supabase
       .from('movies')
       .select(`
+        id,
         tmdb_id,
         slug,
         last_watched,
@@ -32,6 +47,10 @@ const fetchAllMovies = async () => {
     if (error) {
       console.error(error)
       break
+    }
+
+    for (const movie of data) {
+      movie.tags = await fetchTagsForMovie(movie.id)
     }
 
     movies = movies.concat(data)
@@ -62,8 +81,10 @@ export default async function () {
       description: item['description'],
       review: item['review'],
       id: item['tmdb_id'],
-      type: 'movie'
+      type: 'movie',
+      tags: item['tags']
     }
+
     return movie
   }).filter(movie => watched ? movie['lastWatched'] : !movie['lastWatched'])
   const favoriteMovies = movies.filter(movie => movie['favorite'])

@@ -76,7 +76,7 @@ export const allContent = (collection) => {
       items.forEach(item => {
         const content = {
           url: `${BASE_URL}${item['url']}`,
-          title: `${icon}: ${getTitle(item)}${item?.['authors']?.['name'] ? ' via ' + item['authors']['name'] : ''}${item?.['tags'] ? ' ' + tagsToHashtags(item['tags']) : ''}`
+          title: `${icon}: ${getTitle(item)}${item?.['authors']?.['name'] ? ' via ' + item['authors']['name'] : ''}${item?.['tags']?.length > 0 ? ' ' + tagsToHashtags(item['tags']) : ''}`
         }
         if (item?.['link']) content['url'] = item?.['link']
         if (item?.['slug']) content['url'] = new URL(item['slug'], BASE_URL).toString()
