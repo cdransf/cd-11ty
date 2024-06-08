@@ -109,7 +109,7 @@ export default {
       // if there's a valid entry return a normalized object
       if (entry)
         posts.push({
-          title,
+          title: title.trim(),
           url,
           content: entry.description,
           date,
