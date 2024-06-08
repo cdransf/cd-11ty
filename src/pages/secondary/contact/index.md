@@ -15,9 +15,9 @@ description: How to contact me.
       <li>File an issue on the appropriate repo over at <a href="https://github.com/cdransf">GitHub</a></li>
     </ul>
   </div>
-  <form onsubmit="if (typeof plausible === 'function') { plausible('Contact form submitted', { props: { name: this.name.value, email: this.email.value, message: this.message.value } }) }" class="column" method="POST" action="/contact/success" name="contact" netlify netlify-honeypot="bot-field">
+  <form onsubmit="if (typeof plausible === 'function') { plausible('Contact form submitted', { props: { name: this.name.value, email: this.email.value, message: this.message.value } }) }" class="column" method="POST" action="https://coryd.dev/api/contact" name="contact">
     <label class="hidden">
-      Don't fill this out if you're human: <input name="bot-field" />
+      Don't fill this out if you're human: <input type="text" name="hp_name">
     </label>
     <label>
       <span class="hidden">Name</span>
