@@ -53,7 +53,6 @@
 /static/images/avatar.webp https://cdn.coryd.dev/assets/avatar.webp 301
 /assets/img/favicon/favicon-32x32.png https://cdn.coryd.dev/assets/icons/favicon.ico 301
 /assets/img/favicon/favicon-16x16.png https://cdn.coryd.dev/assets/icons/favicon.ico 301
-/assets/img/logo.webp https://cdn.coryd.dev/assets/avatar.webp 301
 
 # feeds
 /rss https://feedpress.me/coryd 301
