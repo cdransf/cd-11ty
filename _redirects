@@ -43,26 +43,6 @@
 /books/want-to-read/ /books 301!
 /blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301!
 
-# 400s
-/wp-* /400/ 400
-/blog/wp-* /400/ 400
-/cms/wp-* /400/ 400
-/site/wp-* /400/ 400
-/wordpress/wp-* /400/ 400
-/wp/wp-* /400/ 400
-/wp2/wp-* /400/ 400
-/index.php* /400/ 400
-/admin.php* /400/ 400
-/fetch/* /400/ 400
-/.env /400/ 400
-/.git /400/ 400
-/.git/* /400/ 400
-//cms/* /400/ 400
-//wp/* /400/ 400
-//test/ /400/ 400
-/api/v* /400/ 400
-/undefined /400 400
-
 # assets
 /favicon.ico https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301
 /assets/icons/favicon.ico https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301!
