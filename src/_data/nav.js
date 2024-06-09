@@ -3,7 +3,6 @@ export default async function () {
     footer: [
       { name: 'Now' },
       { name: 'Uses' },
-      { name: 'Save' },
       { name: 'Blogroll' },
     ],
     menu: [
