@@ -42,7 +42,6 @@
 /posts/2024 / 301!
 /books/want-to-read/ /books 301!
 /blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301!
-/assets/img/logo.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 301!
 
 # 400s
 /wp-* /400/ 400
@@ -62,22 +61,23 @@
 //wp/* /400/ 400
 //test/ /400/ 400
 /api/v* /400/ 400
-/undefined /400 301!
+/undefined /400 400
 
 # assets
-/favicon.ico https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 200!
-/assets/icons/favicon.ico https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 200!
-/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
-/apple-touch-icon https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
-/apple-touch-icon-precomposed.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
-/assets/icons/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
-/assets/img/feed-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
-/static/favicons/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 200!
-/static/images/avatar.png https://coryd-dev.b-cdn.net/assets/avatar.png 200!
-/static/images/avatar.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 200!
-/assets/img/favicon/favicon-32x32.png https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 200!
-/assets/img/favicon/favicon-16x16.png https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 200!
-/assets/img/logo.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 200!
+/favicon.ico https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301
+/assets/icons/favicon.ico https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301!
+/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301!
+/apple-touch-icon https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301!
+/apple-touch-icon-precomposed.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301!
+/assets/icons/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301!
+/assets/img/feed-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301!
+/assets/img/logo.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 301!
+/static/favicons/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301!
+/static/images/avatar.png https://coryd-dev.b-cdn.net/assets/avatar.png 301!
+/static/images/avatar.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 301!
+/assets/img/favicon/favicon-32x32.png https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301!
+/assets/img/favicon/favicon-16x16.png https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301!
+/assets/img/logo.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 301!
 
 # general
 /articles/ / 301!
@@ -89,9 +89,6 @@
 /recent/shows /watching/recent/shows 301!
 /mastodon https://social.lol/@cory 301!
 /coffee https://www.buymeacoffee.com/cory 301!
-
-# netlify app domain
-https://cdme.netlify.app https://coryd.dev 301!
 
 # feeds
 /rss https://feedpress.me/coryd 301!
@@ -105,12 +102,5 @@ https://cdme.netlify.app https://coryd.dev 301!
 /books.json https://feedpress.me/coryd-books.json
 /links.xml https://feedpress.me/coryd-links
 /links.json https://feedpress.me/coryd-links.json
-/follow.xml https://feedpress.me/coryd-follow
-/follow.json https://feedpress.me/coryd-follow.json
-
-# media
-/media/* https://f001.backblazeb2.com/file/coryd-dev/:splat 200!
-
-# analytics
-/js/script.js https://plausible.io/js/script.tagged-events.outbound-links.js 200
-/api/event https://plausible.io/api/event 200
+/follow.xml https://feedpress.me/coryd-all
+/follow.json https://feedpress.me/coryd-all.json
