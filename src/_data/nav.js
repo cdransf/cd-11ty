@@ -1,11 +1,5 @@
 export default async function () {
   return {
-    footer: [
-      { name: 'Now' },
-      { name: 'Uses' },
-      { name: 'Save' },
-      { name: 'Blogroll' },
-    ],
     menu: [
       { name: 'Posts', url: '/posts', icon: 'article'},
       { name: 'Music', url: '/music', icon: 'headphones' },
@@ -16,6 +10,11 @@ export default async function () {
       { name: 'Search', icon: 'search' },
       { name: 'Feeds', icon: 'rss' },
       { name: 'Mastodon', icon: 'brand-mastodon' },
+    ],
+    footer: [
+      { name: 'Now' },
+      { name: 'Uses' },
+      { name: 'Blogroll' },
     ],
     social: [
       { name: 'Email', url: '/contact', icon: 'at' },
