@@ -36,6 +36,7 @@
 /sitemap.txt /sitemap.xml 301
 /blog / 301
 /posts/2024 / 301
+/stats /search 301
 /books/want-to-read/ /books 301
 /blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301
 
