@@ -1,66 +1,66 @@
 # blog posts
-/blog/fixing-safari-icloud-syncing  /posts/2022/fixing-safari-icloud-syncing/ 301!
-/blog/migrating-to-fastmail /posts/2022/migrating-to-fastmail/ 301!
-/blog/client-side-webmentions-in-nextjs /posts/2023/client-side-webmentions-in-nextjs/ 301!
-/blog/apple-centric-digital-privacy-tools /posts/2022/apple-centric-digital-privacy-tools/ 301!
-/blog/automating-rss-syndication-with-nextjs-github /posts/2023/automating-rss-syndication-with-nextjs-github/ 301!
-/blog/apple-music-a-tale-of-woe /posts/2021/apple-music-a-tale-of-woe/ 301!
-/blog/adding-client-side-rendered-webmentions-to-my-blog /posts/2023/client-side-webmentions-in-nextjs/ 301!
-/blog/automating-email-cleanup-in-gmail /posts/2022/automating-email-cleanup-in-gmail/ 301!
-/blog/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt /posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/ 301!
-/blog/simple-api-fetch-hooks-with-swr /posts/2022/simple-api-fetch-hooks-with-swr/ 301!
-/2023/02/automatingandprobablyoverengineeringmy-nowpage /posts/2023/automating-and-overengineering-my-now-page/ 301!
-/2023/01/workflows-handling-inbound-email-on-fastmail-with-regular-expressions /posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/ 301!
-/posts/2023/i-block-ads/null /posts/2023/i-block-ads/ 301!
-/posts/2023/i-dont-want-streaming-music/null /posts/2023/i-dont-want-streaming-music/ 301!
-/posts/2022/migrating-to-fastmail/null /posts/2022/migrating-to-fastmail/ 301!
-/posts/2023/webmentions-in-eleventy/null /posts/2023/webmentions-in-eleventy/ 301!
-/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/null /posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/ 301!
+/blog/fixing-safari-icloud-syncing  /posts/2022/fixing-safari-icloud-syncing/ 301
+/blog/migrating-to-fastmail /posts/2022/migrating-to-fastmail/ 301
+/blog/client-side-webmentions-in-nextjs /posts/2023/client-side-webmentions-in-nextjs/ 301
+/blog/apple-centric-digital-privacy-tools /posts/2022/apple-centric-digital-privacy-tools/ 301
+/blog/automating-rss-syndication-with-nextjs-github /posts/2023/automating-rss-syndication-with-nextjs-github/ 301
+/blog/apple-music-a-tale-of-woe /posts/2021/apple-music-a-tale-of-woe/ 301
+/blog/adding-client-side-rendered-webmentions-to-my-blog /posts/2023/client-side-webmentions-in-nextjs/ 301
+/blog/automating-email-cleanup-in-gmail /posts/2022/automating-email-cleanup-in-gmail/ 301
+/blog/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt /posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/ 301
+/blog/simple-api-fetch-hooks-with-swr /posts/2022/simple-api-fetch-hooks-with-swr/ 301
+/2023/02/automatingandprobablyoverengineeringmy-nowpage /posts/2023/automating-and-overengineering-my-now-page/ 301
+/2023/01/workflows-handling-inbound-email-on-fastmail-with-regular-expressions /posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/ 301
+/posts/2023/i-block-ads/null /posts/2023/i-block-ads/ 301
+/posts/2023/i-dont-want-streaming-music/null /posts/2023/i-dont-want-streaming-music/ 301
+/posts/2022/migrating-to-fastmail/null /posts/2022/migrating-to-fastmail/ 301
+/posts/2023/webmentions-in-eleventy/null /posts/2023/webmentions-in-eleventy/ 301
+/posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/null /posts/2023/a-safari-specific-guide-to-making-the-modern-web-suck-less/ 301
 /posts/2023/hacking-together-a-tweeklyfm-replacement/ /posts/2023/hacking-together-a-tweeklyfm-repalcement/
-/posts/2024/dont-be-afraid-to-admit-when-you-dont-know-something/ /posts/2024/dont-be-afraid-to-admin-when-you-dont-know-something/ 301!
-/posts/2024/data-sharing-should-always-be-opt-in/ /posts/2024/access-to-data-isnt-a-grant-to-exploit-it/ 301!
-/posts/2023/popular-posts-widget-using-eleventy-plausible/ /posts/2023/building-a-popular-posts-widget-in-eleventy-using-plausible-analytics/ 301!
-/posts/2023/i-dont-want-streaming-music/ /posts/2023/i-dont-want-streaming-music-i-just-want-to-stream-my-music/ 301!
-/posts/2021/apple-music-a-tale-of-woe/ /posts/2022/apple-music-a-tale-of-woe/ 301!
-/posts/2024/weaving-music-in-and-out-of-my-personal-site/ /posts/2024/weaving-music-data-in-and-out-of-my-personal-website/ 301!
-/posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/ /posts/2023/workflows-handling-inbound-email-on-fastmail-with-regular-expressions-now-featuring-chatgpt/ 301!
-/-want-anything-your-ai-generates/ /posts/2024/i-dont-want-anything-your-ai-generates/ 301!
-/posts/2023/default-apps-2023/ /posts/2023/my-default-apps-2023-edition/ 301!
-/posts/2024/dont-be-afraid-to-admin-when-you-dont-know-something/ /posts/2024/dont-be-afraid-to-admin-when-you-dont-know-something/ 301!
+/posts/2024/dont-be-afraid-to-admit-when-you-dont-know-something/ /posts/2024/dont-be-afraid-to-admin-when-you-dont-know-something/ 301
+/posts/2024/data-sharing-should-always-be-opt-in/ /posts/2024/access-to-data-isnt-a-grant-to-exploit-it/ 301
+/posts/2023/popular-posts-widget-using-eleventy-plausible/ /posts/2023/building-a-popular-posts-widget-in-eleventy-using-plausible-analytics/ 301
+/posts/2023/i-dont-want-streaming-music/ /posts/2023/i-dont-want-streaming-music-i-just-want-to-stream-my-music/ 301
+/posts/2021/apple-music-a-tale-of-woe/ /posts/2022/apple-music-a-tale-of-woe/ 301
+/posts/2024/weaving-music-in-and-out-of-my-personal-site/ /posts/2024/weaving-music-data-in-and-out-of-my-personal-website/ 301
+/posts/2023/fastmail-handling-inbound-email-with-regex-filters-now-with-chatgpt/ /posts/2023/workflows-handling-inbound-email-on-fastmail-with-regular-expressions-now-featuring-chatgpt/ 301
+/-want-anything-your-ai-generates/ /posts/2024/i-dont-want-anything-your-ai-generates/ 301
+/posts/2023/default-apps-2023/ /posts/2023/my-default-apps-2023-edition/ 301
+/posts/2024/dont-be-afraid-to-admin-when-you-dont-know-something/ /posts/2024/dont-be-afraid-to-admin-when-you-dont-know-something/ 301
 
 # music
-/music/artists/hyperdontia-denmark-turkiye /music/artists/hyperdontia-denmark-tuerkiye 301!
+/music/artists/hyperdontia-denmark-turkiye /music/artists/hyperdontia-denmark-tuerkiye 301
 
 # 404s
-/robot.txt /robots.txt 301!
-/sitemap.txt /sitemap.xml 301!
-/blog / 301!
-/posts/2024 / 301!
-/books/want-to-read/ /books 301!
-/blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301!
+/robot.txt /robots.txt 301
+/sitemap.txt /sitemap.xml 301
+/blog / 301
+/posts/2024 / 301
+/books/want-to-read/ /books 301
+/blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301
 
 # assets
 /favicon.ico https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301
-/assets/icons/favicon.ico https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301!
-/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301!
-/apple-touch-icon https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301!
-/apple-touch-icon-precomposed.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301!
-/assets/icons/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301!
-/assets/img/feed-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301!
-/assets/img/logo.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 301!
-/static/favicons/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301!
-/static/images/avatar.png https://coryd-dev.b-cdn.net/assets/avatar.png 301!
-/static/images/avatar.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 301!
-/assets/img/favicon/favicon-32x32.png https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301!
-/assets/img/favicon/favicon-16x16.png https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301!
-/assets/img/logo.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 301!
+/assets/icons/favicon.ico https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301
+/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301
+/apple-touch-icon https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301
+/apple-touch-icon-precomposed.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301
+/assets/icons/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301
+/assets/img/feed-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301
+/assets/img/logo.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 301
+/static/favicons/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301
+/static/images/avatar.png https://coryd-dev.b-cdn.net/assets/avatar.png 301
+/static/images/avatar.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 301
+/assets/img/favicon/favicon-32x32.png https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301
+/assets/img/favicon/favicon-16x16.png https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301
+/assets/img/logo.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 301
 
 # feeds
-/rss https://feedpress.me/coryd 301!
-/atom https://feedpress.me/coryd 301!
-/rss.xml https://feedpress.me/coryd 301!
-/atom.xml https://feedpress.me/coryd 301!
-/feeds/all.xml https://feedpress.me/coryd 301!
+/rss https://feedpress.me/coryd 301
+/atom https://feedpress.me/coryd 301
+/rss.xml https://feedpress.me/coryd 301
+/atom.xml https://feedpress.me/coryd 301
+/feeds/all.xml https://feedpress.me/coryd 301
 /feed.xml https://feedpress.me/coryd
 /feed.json https://feedpress.me/coryd.json
 /books.xml https://feedpress.me/coryd-books
@@ -71,15 +71,15 @@
 /follow.json https://feedpress.me/coryd-all.json
 
 # general
-/articles/ / 301!
-/tags /search 301!
-/tags/* /search 301!
-/referrals /save 301!
-/recent/movies /watching/recent/movies 301!
-/recent/shows /watching/recent/shows 301!
-/mastodon https://social.lol/@cory 301!
-/coffee https://www.buymeacoffee.com/cory 301!
-/music/genre/* /music/genres/:splat 301!
+/articles/ / 301
+/tags /search 301
+/tags/* /search 301
+/referrals /save 301
+/recent/movies /watching/recent/movies 301
+/recent/shows /watching/recent/shows 301
+/mastodon https://social.lol/@cory 301
+/coffee https://www.buymeacoffee.com/cory 301
+/music/genre/* /music/genres/:splat 301
 
 # mastodon
 /.well-known/host-meta* https://social.lol/.well-known/host-meta:splat 301
