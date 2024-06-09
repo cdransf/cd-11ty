@@ -11,16 +11,16 @@ permalink: /about.html
   {%- capture about_alt -%}{{ meta.siteName }} - image by David Neal / @reverentgeek{%- endcapture -%}
   <img
     srcset="
-      https://coryd-dev.b-cdn.net/assets/avatar-transparent.png?width=200&h=200&aspect_ratio=1:1 200w,
-      https://coryd-dev.b-cdn.net/assets/avatar-transparent.png?width=400&h=400&aspect_ratio=1:1 400w,
-      https://coryd-dev.b-cdn.net/assets/avatar-transparent.png?width=800&h=800&aspect_ratio=1:1 800w,
-      https://coryd-dev.b-cdn.net/assets/avatar-transparent.png?width=1200&h=1200&aspect_ratio=1:1 1200w
+      https://cdn.coryd.dev/assets/avatar-transparent.png?width=200&h=200&aspect_ratio=1:1 200w,
+      https://cdn.coryd.dev/assets/avatar-transparent.png?width=400&h=400&aspect_ratio=1:1 400w,
+      https://cdn.coryd.dev/assets/avatar-transparent.png?width=800&h=800&aspect_ratio=1:1 800w,
+      https://cdn.coryd.dev/assets/avatar-transparent.png?width=1200&h=1200&aspect_ratio=1:1 1200w
     "
     sizes="(max-width: 450px) 200px,
       (max-width: 850px) 400px,
       (max-width: 1000px) 800px,
       1200px"
-    src="https://coryd-dev.b-cdn.net/assets/avatar-transparent.png?width=1200&h=1200&aspect_ratio=1:1"
+    src="https://cdn.coryd.dev/assets/avatar-transparent.png?width=1200&h=1200&aspect_ratio=1:1"
     alt="{{ about_alt }}"
     loading="eager"
     decoding="async"

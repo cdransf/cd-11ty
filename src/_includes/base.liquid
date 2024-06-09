@@ -62,7 +62,7 @@
   {%- when 'movie' -%}
     {%- assign ogImage = movie.backdrop -%}
   {%- when 'show' -%}
-    {%- assign ogImage = 'https://coryd-dev.b-cdn.net/shows/backdrops/backdrop-' | append: show.tmdb_id | append: '.jpg' -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev/shows/backdrops/backdrop-' | append: show.tmdb_id | append: '.jpg' -%}
   {%- when 'genre' -%}
     {%- assign genreArtist = genre.artists | shuffleArray | first -%}
     {%- assign ogImage = genreArtist.image -%}
@@ -86,9 +86,9 @@
     <meta name="theme-color" content="{{ meta.themeColor }}" />
     <meta name="generator" content="Eleventy">
     <meta name="robots" content="noai, noimageai">
-    <link href="https://coryd-dev.b-cdn.net/assets/icons/favicon.ico?v={% appVersion %}" rel="icon" sizes="any">
-    <link href="https://coryd-dev.b-cdn.net/assets/icons/favicon.svg?v={% appVersion %}" rel="icon" type="image/svg+xml">
-    <link href="https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png?v={% appVersion %}" rel="apple-touch-icon">
+    <link href="https://cdn.coryd.dev/assets/icons/favicon.ico?v={% appVersion %}" rel="icon" sizes="any">
+    <link href="https://cdn.coryd.dev/assets/icons/favicon.svg?v={% appVersion %}" rel="icon" type="image/svg+xml">
+    <link href="https://cdn.coryd.dev/assets/icons/apple-touch-icon.png?v={% appVersion %}" rel="apple-touch-icon">
     <link rel="webmention" href="https://webmention.io/coryd.dev/webmention" />
     <link rel="pingback" href="https://webmention.io/coryd.dev/xmlrpc" />
     <link type="application/atom+xml" rel="alternate" title="{{ meta.siteName }}" href="https://feedpress.me/coryd">

@@ -40,20 +40,20 @@
 /blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301
 
 # assets
-/favicon.ico https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301
-/assets/icons/favicon.ico https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301
-/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301
-/apple-touch-icon https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301
-/apple-touch-icon-precomposed.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301
-/assets/icons/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301
-/assets/img/feed-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301
-/assets/img/logo.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 301
-/static/favicons/apple-touch-icon.png https://coryd-dev.b-cdn.net/assets/icons/apple-touch-icon.png 301
-/static/images/avatar.png https://coryd-dev.b-cdn.net/assets/avatar.png 301
-/static/images/avatar.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 301
-/assets/img/favicon/favicon-32x32.png https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301
-/assets/img/favicon/favicon-16x16.png https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301
-/assets/img/logo.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 301
+/favicon.ico https://cdn.coryd.dev/assets/icons/favicon.ico 301
+/assets/icons/favicon.ico https://cdn.coryd.dev/assets/icons/favicon.ico 301
+/apple-touch-icon.png https://cdn.coryd.dev/assets/icons/apple-touch-icon.png 301
+/apple-touch-icon https://cdn.coryd.dev/assets/icons/apple-touch-icon.png 301
+/apple-touch-icon-precomposed.png https://cdn.coryd.dev/assets/icons/apple-touch-icon.png 301
+/assets/icons/apple-touch-icon.png https://cdn.coryd.dev/assets/icons/apple-touch-icon.png 301
+/assets/img/feed-icon.png https://cdn.coryd.dev/assets/icons/apple-touch-icon.png 301
+/assets/img/logo.webp https://cdn.coryd.dev/assets/avatar.webp 301
+/static/favicons/apple-touch-icon.png https://cdn.coryd.dev/assets/icons/apple-touch-icon.png 301
+/static/images/avatar.png https://cdn.coryd.dev/assets/avatar.png 301
+/static/images/avatar.webp https://cdn.coryd.dev/assets/avatar.webp 301
+/assets/img/favicon/favicon-32x32.png https://cdn.coryd.dev/assets/icons/favicon.ico 301
+/assets/img/favicon/favicon-16x16.png https://cdn.coryd.dev/assets/icons/favicon.ico 301
+/assets/img/logo.webp https://cdn.coryd.dev/assets/avatar.webp 301
 
 # feeds
 /rss https://feedpress.me/coryd 301
@@ -73,12 +73,12 @@
 # general
 /articles/ / 301
 /tags /search 301
-/tags/* /search 301
 /referrals /save 301
 /recent/movies /watching/recent/movies 301
 /recent/shows /watching/recent/shows 301
 /mastodon https://social.lol/@cory 301
 /coffee https://www.buymeacoffee.com/cory 301
+/tags/* /search 301
 /music/genre/* /music/genres/:splat 301
 
 # mastodon

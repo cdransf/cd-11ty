@@ -23,16 +23,16 @@
         {%- endcapture -%}
         <img
           srcset="
-            https://coryd-dev.b-cdn.net{{ item.backdrop }}?aspect_ratio=1:.5625&width=256 256w,
-            https://coryd-dev.b-cdn.net{{ item.backdrop }}?aspect_ratio=1:.5625&width=512 512w,
-            https://coryd-dev.b-cdn.net{{ item.backdrop }}?aspect_ratio=1:.5625&width=1024 1024w,
-            https://coryd-dev.b-cdn.net{{ item.backdrop }}?aspect_ratio=1:.5625&width=2048 2048w
+            https://cdn.coryd.dev{{ item.backdrop }}?aspect_ratio=1:.5625&width=256 256w,
+            https://cdn.coryd.dev{{ item.backdrop }}?aspect_ratio=1:.5625&width=512 512w,
+            https://cdn.coryd.dev{{ item.backdrop }}?aspect_ratio=1:.5625&width=1024 1024w,
+            https://cdn.coryd.dev{{ item.backdrop }}?aspect_ratio=1:.5625&width=2048 2048w
           "
           sizes="(max-width: 450px) 256px,
             (max-width: 850px) 512px,
             (max-width: 1000px) 1024px,
             2048px"
-          src="https://coryd-dev.b-cdn.net{{ item.backdrop }}?aspect_ratio=1:.5625&width=2048"
+          src="https://cdn.coryd.dev{{ item.backdrop }}?aspect_ratio=1:.5625&width=2048"
           alt="{{ alt }}"
           loading="{{ loadingStrategy }}"
           decoding="async"

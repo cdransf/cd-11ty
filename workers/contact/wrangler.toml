@@ -1,0 +1,12 @@
+name = "contact-form-worker"
+main = "./index.js"
+compatibility_date = "2023-01-01"
+
+account_id = ""
+workers_dev = true
+
+[env.production]
+name = "contact-form-worker-production"
+routes = [
+  { pattern = "coryd.dev/api/contact", zone_id = "" }
+]

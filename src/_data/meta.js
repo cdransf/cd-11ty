@@ -10,7 +10,7 @@ export default async function () {
     "locale": "en_US",
     "lang": "en",
     "meta_data": {
-      "opengraph_default": "https://coryd-dev.b-cdn.net/assets/avatar.png"
+      "opengraph_default": "https://cdn.coryd.dev/assets/avatar.png"
     }
   }
 }

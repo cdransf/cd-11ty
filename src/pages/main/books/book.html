@@ -16,16 +16,16 @@ schema: book
   <div class="book-display">
     <img
       srcset="
-        https://coryd-dev.b-cdn.net{{ book.image }}?w=203&aspect_ratio=2:3 203w,
-        https://coryd-dev.b-cdn.net{{ book.image }}?w=406&aspect_ratio=2:3 406w,
-        https://coryd-dev.b-cdn.net{{ book.image }}?w=812&aspect_ratio=2:3 812w,
-        https://coryd-dev.b-cdn.net{{ book.image }}?w=1624&aspect_ratio=2:3 1624w
+        https://cdn.coryd.dev{{ book.image }}?w=203&aspect_ratio=2:3 203w,
+        https://cdn.coryd.dev{{ book.image }}?w=406&aspect_ratio=2:3 406w,
+        https://cdn.coryd.dev{{ book.image }}?w=812&aspect_ratio=2:3 812w,
+        https://cdn.coryd.dev{{ book.image }}?w=1624&aspect_ratio=2:3 1624w
       "
       sizes="(max-width: 450px) 203px,
         (max-width: 850px) 406px,
         (max-width: 1000px) 812px,
         1624px"
-      src="https://coryd-dev.b-cdn.net{{ book.image }}?w=1624&aspect_ratio=2:3"
+      src="https://cdn.coryd.dev{{ book.image }}?w=1624&aspect_ratio=2:3"
       alt="{{ alt }}"
       loading="eager"
       decoding="async"
