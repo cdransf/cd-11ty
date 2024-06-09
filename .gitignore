@@ -2,13 +2,9 @@
 _site
 node_modules
 .cache
-.wrangler
 
 # local dependencies
 .env.local
-
-# netlify
-.netlify
 
 # system files
 .DS_Store
