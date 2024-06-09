@@ -1,7 +1,3 @@
-# mastodon
-/.well-known/host-meta* https://social.lol/.well-known/host-meta:splat 301
-/.well-known/nodeinfo* https://social.lol/.well-known/nodeinfo:splat 301
-
 # blog posts
 /blog/fixing-safari-icloud-syncing  /posts/2022/fixing-safari-icloud-syncing/ 301!
 /blog/migrating-to-fastmail /posts/2022/migrating-to-fastmail/ 301!
@@ -59,17 +55,6 @@
 /assets/img/favicon/favicon-16x16.png https://coryd-dev.b-cdn.net/assets/icons/favicon.ico 301!
 /assets/img/logo.webp https://coryd-dev.b-cdn.net/assets/avatar.webp 301!
 
-# general
-/articles/ / 301!
-/tags /search 301!
-/tags/* /search 301!
-/referrals /save 301!
-/music/genre/* /music/genres/:splat 301!
-/recent/movies /watching/recent/movies 301!
-/recent/shows /watching/recent/shows 301!
-/mastodon https://social.lol/@cory 301!
-/coffee https://www.buymeacoffee.com/cory 301!
-
 # feeds
 /rss https://feedpress.me/coryd 301!
 /atom https://feedpress.me/coryd 301!
@@ -84,3 +69,18 @@
 /links.json https://feedpress.me/coryd-links.json
 /follow.xml https://feedpress.me/coryd-all
 /follow.json https://feedpress.me/coryd-all.json
+
+# general
+/articles/ / 301!
+/tags /search 301!
+/tags/* /search 301!
+/referrals /save 301!
+/recent/movies /watching/recent/movies 301!
+/recent/shows /watching/recent/shows 301!
+/mastodon https://social.lol/@cory 301!
+/coffee https://www.buymeacoffee.com/cory 301!
+/music/genre/* /music/genres/:splat 301!
+
+# mastodon
+/.well-known/host-meta* https://social.lol/.well-known/host-meta:splat 301
+/.well-known/nodeinfo* https://social.lol/.well-known/nodeinfo:splat 301
