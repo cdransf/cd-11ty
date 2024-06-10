@@ -141,7 +141,7 @@ export default {
       if (item.type === 'album-release') {
         normalized['title'] = item['title']
         normalized['alt'] = `${item['title']} by ${item['artist']}`
-        normalized['subtext'] = `${item['artist']} • ${item['date']}`
+        normalized['subtext'] = `${item['artist']} &middot; ${item['date']}`
       }
       if (item.type === 'movie') {
         normalized['title'] = item['title']

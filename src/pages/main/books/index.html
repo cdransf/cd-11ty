@@ -1,5 +1,5 @@
 ---
-title: Currently reading • Books
+title: Currently reading &middot; Books
 description: Here's what I'm reading at the moment.
 layout: default
 permalink: "/books/index.html"
@@ -10,7 +10,7 @@ schema: books
 {%- assign currentBookCount = books | currentBookCount -%}
 <h2 class="page-header">Currently reading</h2>
 <p>Here's what I'm reading at the moment. I've finished <strong class="highlight-text">{{ currentBookCount }} books</strong> this year.</p>
-<p><a href="/books/years/2024">2024</a> • <a href="/books/years/2023">2023</a> • <a href="/books/years/2022">2022</a> • <a href="/books/years/2021">2021</a> • <a href="/books/years/2020">2020</a></p>
+<p><a href="/books/years/2024">2024</a> &middot; <a href="/books/years/2023">2023</a> &middot; <a href="/books/years/2022">2022</a> &middot; <a href="/books/years/2021">2021</a> &middot; <a href="/books/years/2020">2020</a></p>
 {% render "partials/banners/rss.liquid", url: "https://feedpress.me/coryd-books", text: "Subscribe to my books feed or follow along on this page" %}
 <hr class="large-spacing" />
 {% for book in bookData %}
