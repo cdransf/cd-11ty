@@ -34,6 +34,7 @@ export default async function (eleventyConfig) {
 
   // passthrough
   eleventyConfig.addPassthroughCopy('src/assets')
+  eleventyConfig.addPassthroughCopy('.well-known')
   eleventyConfig.addPassthroughCopy('_redirects')
   eleventyConfig.addPassthroughCopy('_headers')
   eleventyConfig.addPassthroughCopy({
