@@ -91,7 +91,7 @@ export default async function () {
       showEpisodesMap[showTmdbId].episodes.push({
         name: showTitle,
         url: `/watching/shows/${showTmdbId}`,
-        subtext: `${showTitle} • S${seasonNumber}E${episodeNumber}`,
+        subtext: `${showTitle} / S${seasonNumber}E${episodeNumber}`,
         episode: episodeNumber,
         season: seasonNumber,
         tmdbId: showTmdbId,

@@ -8,7 +8,7 @@
   <nav aria-label="Secondary site navigation" class="sub-pages flex-centered justify-centered text-centered">
     {% for link in nav.footer %}
       {% render "partials/nav/link.liquid", page:page, link:link.name, icon:link.icon %}
-      {% if not forloop.last %}<span>•</span>{% endif %}
+      {% if not forloop.last %}<span>/</span>{% endif %}
     {% endfor %}
   </nav>
 </footer>

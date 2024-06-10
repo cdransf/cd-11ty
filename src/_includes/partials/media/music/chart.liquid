@@ -10,7 +10,7 @@
           <div class="title">
             <a href="{{ item.url }}">{{ item.title }}</a>
           </div>
-          <div class="subtext">{{ item.artist }} • {{ item.plays }} plays</div>
+          <div class="subtext">{{ item.artist }}: {{ item.plays }} plays</div>
         </div>
       </div>
       {% render "partials/media/progress-bar.liquid", percentage:percentage %}

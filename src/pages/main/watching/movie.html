@@ -8,7 +8,7 @@ permalink: /watching/movies/{{ movie.id }}/index.html
 schema: movie
 ---
 {%- capture alt -%}
-  {{ movie.title }} • {{ movie.year }}{% if move.rating %} ({{ movie.rating }}){% endif %}
+  {{ movie.title }} / {{ movie.year }}{% if move.rating %} ({{ movie.rating }}){% endif %}
 {%- endcapture -%}
 <a class="back-link-header link-icon flex-centered" href="/watching" title="Go back to the watching index page">{% tablericon "arrow-left" "Go back" %} Go back</a>
 <article class="watching-focus">
