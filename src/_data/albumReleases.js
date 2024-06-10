@@ -11,12 +11,12 @@ export default async function () {
   const { data, error } = await supabase
     .from('albums')
     .select(`
-       name,
-       key,
-       image,
-       release_date,
-       release_link,
-       artists (name_string, mbid, country)
+      name,
+      key,
+      image,
+      release_date,
+      release_link,
+      artists (name_string, mbid, country)
     `)
     .gt('release_date', today)
 

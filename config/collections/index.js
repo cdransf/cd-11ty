@@ -1,5 +1,4 @@
 import { DateTime } from 'luxon'
-import slugify from 'slugify'
 
 const BASE_URL = 'https://coryd.dev'
 
