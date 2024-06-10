@@ -9,7 +9,7 @@ updated: "now"
 schema: artist
 ---
 {%- capture alt -%}
-  {{ artist.name_string }} &middot; {{ artist.country }}
+  {{ artist.name_string }} • {{ artist.country }}
 {%- endcapture -%}
 {% capture js %}
   {% render "../../../../assets/scripts/text-toggle.js" %}

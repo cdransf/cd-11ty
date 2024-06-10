@@ -4,23 +4,23 @@
 {%- if schema == 'blog' -%}
   {%- assign pageTitle = post.title -%}
 {%- elsif title -%}
-  {%- assign pageTitle = title | append: ' &middot; ' | append: meta.siteName -%}
+  {%- assign pageTitle = title | append: ' / ' | append: meta.siteName -%}
 {%- elsif artist.name_string -%}
-  {%- assign pageTitle = 'Artists &middot; ' | append: artist.name_string | append: ' &middot; ' | append: meta.siteName -%}
+  {%- assign pageTitle = 'Artists / ' | append: artist.name_string | append: ' / ' | append: meta.siteName -%}
 {%- elsif schema == 'music-index' -%}
-  {%- assign pageTitle = 'Music &middot; ' | append: meta.siteName -%}
+  {%- assign pageTitle = 'Music / ' | append: meta.siteName -%}
 {%- elsif genre.name -%}
-  {%- assign pageTitle = 'Music &middot; ' | append: genre.name | append: ' &middot; ' | append: meta.siteName -%}
+  {%- assign pageTitle = 'Music / ' | append: genre.name | append: ' / ' | append: meta.siteName -%}
 {%- elsif book.title -%}
-  {%- assign pageTitle = 'Books &middot; ' | append: book.title | append: ' &middot; ' | append: meta.siteName -%}
+  {%- assign pageTitle = 'Books / ' | append: book.title | append: ' / ' | append: meta.siteName -%}
 {%- elsif movie.title -%}
-  {%- assign pageTitle = 'Movies &middot; ' | append: movie.title -%}
+  {%- assign pageTitle = 'Movies / ' | append: movie.title -%}
   {%- if movie.rating -%}
     {%- assign pageTitle = pageTitle | append: ' (' | append: movie.rating | append: ')' -%}
   {%- endif -%}
-  {%- assign pageTitle = pageTitle | append: ' &middot; ' | append: meta.siteName -%}
+  {%- assign pageTitle = pageTitle | append: ' / ' | append: meta.siteName -%}
 {%- elsif show.title -%}
-  {%- assign pageTitle = 'Shows &middot; ' | append: show.title | append: ' &middot; ' | append: meta.siteName -%}
+  {%- assign pageTitle = 'Shows / ' | append: show.title | append: ' / ' | append: meta.siteName -%}
 {%- endif -%}
 
 {%- assign pageDescription = meta.siteDescription -%}

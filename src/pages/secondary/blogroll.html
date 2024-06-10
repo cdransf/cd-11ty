@@ -24,10 +24,10 @@ description: These are awesome blogs that I enjoy and you may enjoy too.
       —
       {%- endif -%}
       {%- if blog.json_feed -%}
-      &middot; <a href="{{ blog.json_feed }}">{% tablericon "json" "Subscribe via JSON" %}</a>
+      • <a href="{{ blog.json_feed }}">{% tablericon "json" "Subscribe via JSON" %}</a>
       {%- endif -%}
       {%- if blog.newsletter -%}
-      &middot; <a href="{{ blog.newsletter }}">{% tablericon "mail-plus" "Newsletter subscription" %}</a>
+      • <a href="{{ blog.newsletter }}">{% tablericon "mail-plus" "Newsletter subscription" %}</a>
       {%- endif -%}
     </td>
   </tr>

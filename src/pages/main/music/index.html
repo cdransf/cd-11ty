@@ -35,7 +35,7 @@ schema: music-index
 <div class="hidden" id="artists-three-months">
   {% render "partials/media/grid.liquid", data:music.threeMonth.artists, shape: "square", count: 8 %}
 </div>
-<p><strong class="highlight-text">More:</strong> <a href="/music/artists/this-week/" title="Artists listened to this week">This week</a> &middot; <a href="/music/artists/this-month/" title="Artists listened to this month">This month</a> &middot; <a href="/music/artists/three-months/" title="Artists listened to in the last 3 months">3 months</a></p>
+<p><strong class="highlight-text">More:</strong> <a href="/music/artists/this-week/" title="Artists listened to this week">This week</a> • <a href="/music/artists/this-month/" title="Artists listened to this month">This month</a> • <a href="/music/artists/three-months/" title="Artists listened to in the last 3 months">3 months</a></p>
 <div class="section-header-wrapper">
   <h2 id="albums" class="section-header reduced-margin flex-centered">
     {% tablericon "vinyl" "Albums" %}
@@ -56,7 +56,7 @@ schema: music-index
 <div class="hidden" id="albums-three-months">
   {% render "partials/media/grid.liquid", data:music.threeMonth.albums, shape: "square", count: 8 %}
 </div>
-<p><strong class="highlight-text">More:</strong> <a href="/music/albums/this-week/" title="Albums listened to this week">This week</a> &middot; <a href="/music/albums/this-month/" title="Albums listened to this month">This month</a> &middot; <a href="/music/albums/three-months/" title="Albums listened to in the last 3 months">3 months</a></p>
+<p><strong class="highlight-text">More:</strong> <a href="/music/albums/this-week/" title="Albums listened to this week">This week</a> • <a href="/music/albums/this-month/" title="Albums listened to this month">This month</a> • <a href="/music/albums/three-months/" title="Albums listened to in the last 3 months">3 months</a></p>
 <div class="section-header-wrapper">
   <h2 id="tracks" class="section-header reduced-margin flex-centered">
     {% tablericon "playlist" "Tracks" %}
@@ -81,7 +81,7 @@ schema: music-index
 <div class="hidden" id="tracks-three-months">
   {% render "partials/media/music/chart.liquid", data:music.threeMonth.tracks, mostPlayed:music.threeMonth.tracks[0].plays, count: 10 %}
 </div>
-<p><strong class="highlight-text">More:</strong> <a href="/music/tracks/this-week/" title="Tracks listened to this week">This week</a> &middot; <a href="/music/tracks/this-month/" title="Tracks listened to this month">This month</a> &middot; <a href="/music/tracks/three-months/" title="Tracks listened to in the last 3 months">3 months</a></p>
+<p><strong class="highlight-text">More:</strong> <a href="/music/tracks/this-week/" title="Tracks listened to this week">This week</a> • <a href="/music/tracks/this-month/" title="Tracks listened to this month">This month</a> • <a href="/music/tracks/three-months/" title="Tracks listened to in the last 3 months">3 months</a></p>
 {% if albumReleases.size > 0 %}
 <h2 id="album-releases" class="section-header flex-centered">
   {% tablericon "calendar-time" "Anticipated albums" %}

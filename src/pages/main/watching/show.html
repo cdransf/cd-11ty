@@ -8,7 +8,7 @@ permalink: /watching/shows/{{ show.tmdb_id }}/index.html
 schema: show
 ---
 {%- capture alt -%}
-  {{ show.title }} &middot; {{ show.year }}
+  {{ show.title }} • {{ show.year }}
 {%- endcapture -%}
 {% assign lastWatched = show | getLastWatched %}
 <a class="back-link-header link-icon flex-centered" href="/watching" title="Go back to the watching index page">{% tablericon "arrow-left" "Go back" %} Go back</a>
