@@ -80,7 +80,3 @@
 /tags /search 301
 /tags/* /search 301
 /music/genre/* /music/genres/:splat 301
-
-# mastodon
-/.well-known/host-meta* https://social.lol/.well-known/host-meta:splat 301
-/.well-known/nodeinfo* https://social.lol/.well-known/nodeinfo:splat 301

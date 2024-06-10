@@ -22,7 +22,7 @@
   x-content-type-options: nosniff
 
 /.well-known/webfinger
-  Content-Type: application/json
+  Content-Type: application/jrd+json; charset=utf-8
 
 /blogroll.opml
   Content-Disposition: attachment; filename=cory-dransfeldt-blogroll.opml
