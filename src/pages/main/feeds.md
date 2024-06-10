@@ -1,6 +1,6 @@
 ---
 title: Feeds
-layout: default
+layout: page
 permalink: /feeds.html
 description: Content feeds exposed by and generated from my site.
 ---

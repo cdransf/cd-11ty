@@ -1,6 +1,6 @@
 ---
 title: Webrings
-layout: default
+layout: page
 permalink: /webrings.html
 description: Webrings are awesome! These are the ones I'm a member of.
 ---

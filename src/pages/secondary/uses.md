@@ -1,6 +1,6 @@
 ---
 title: Uses
-layout: default
+layout: page
 permalink: /uses.html
 description: Software, tools and services that I use regularly.
 ---

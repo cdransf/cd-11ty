@@ -15,6 +15,7 @@ export default async function () {
       { name: 'Now' },
       { name: 'Uses' },
       { name: 'Blogroll' },
+      { name: 'Save' },
     ],
     social: [
       { name: 'Email', url: '/contact', icon: 'at' },
