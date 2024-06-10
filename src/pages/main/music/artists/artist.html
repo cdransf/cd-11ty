@@ -56,7 +56,7 @@ schema: artist
     </div>
   </div>
   {%- if artist.description -%}
-  <div data-toggle-content class="text-toggle-hidden">{{ artist.description | markdown }}</div>
+  <div data-toggle-content class="text-toggle-hidden"><em>{{ artist.description | markdown }}</em></div>
   <button data-toggle-button>Show more</button>
   {%- endif -%}
   <table>
