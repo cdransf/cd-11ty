@@ -22,15 +22,6 @@
   x-content-type-options: nosniff
 
 /.well-known/webfinger
-  Content-Type: application/jrd+json; charset=utf-8
-
-/.well-known/gpc.json
-  Content-Type: application/jrd+json; charset=utf-8
-
-/.well-known/traffic-advice
-  Content-Type: application/trafficadvice+json
-
-/contribute.json
   Content-Type: application/json
 
 /blogroll.opml
