@@ -105,17 +105,15 @@ export default {
           disallowedTagsMode: 'completelyDiscard'
         })
 
-
       // if there's a valid entry return a normalized object
-      if (entry)
-        posts.push({
-          title: title.trim(),
-          url,
-          content: entry.description,
-          date,
-          excerpt,
-          rating: entry?.rating || ''
-        })
+      if (entry) posts.push({
+        title: title.trim(),
+        url,
+        content: entry.description,
+        date,
+        excerpt,
+        rating: entry?.rating || ''
+      })
     })
     return posts
   },

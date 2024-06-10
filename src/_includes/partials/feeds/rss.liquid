@@ -16,12 +16,13 @@
     </image>
     {% for entry in entries limit: 20 -%}
       {% assign rating = entry.rating %}
+      {%- capture entryTitle -%}
+        {{ entry.title | escape }}
+        {%- if entry.authors -%}&nbsp;via {{ entry.authors.name }}{%- endif -%}
+        {%- if rating -%}&nbsp;({{ rating }}){%- endif -%}
+      {%- endcapture -%}
       <item>
-        <title>
-          {{ entry.title | escape }}
-          {% if entry.authors %} via {{ entry.authors.name }}{% endif %}
-          {% if rating %} ({{ rating }}){% endif %}
-        </title>
+        <title>{{ entryTitle }}</title>
         <link>{{ entry.url | encodeAmp }}</link>
         <pubDate>{{ entry.date | stringToRFC822Date }}</pubDate>
         <guid>{{ entry.url | encodeAmp }}</guid>
