@@ -41,5 +41,5 @@ schema: show
     {{ show.review | markdown }}
     <hr class="large-spacing" />
   {% endif %}
-  {% if show.description %}<em>{{ show.description }}</em>{% endif %}
+  {% if show.description %}{{ show.description | markdown }}{% endif %}
 </article>
