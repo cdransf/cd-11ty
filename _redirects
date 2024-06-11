@@ -43,6 +43,7 @@ robotx.txt /robots.txt 301
 /posts/2024 / 301
 /stats /search 301
 /books/want-to-read /books 301
+/watching/movies-to-watch /watching 301
 /blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301
 
 # assets
