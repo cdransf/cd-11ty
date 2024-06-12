@@ -43,9 +43,9 @@
 {%- assign ogImage = meta.meta_data.opengraph_default -%}
 {%- case schema -%}
   {%- when 'music' -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: music.recent.artists[0].image -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: music.week.artists[0].image -%}
   {%- when 'music-index' -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: music.recent.artists[0].image -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: music.week.artists[0].image -%}
   {%- when 'artist' -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: artist.image -%}
   {%- when 'genre' -%}

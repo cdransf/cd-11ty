@@ -91,6 +91,16 @@ const aggregateData = async (data, groupByField, groupByType) => {
   return aggregatedData.filter(item => item.plays > 0)
 }
 
+const buildRecents = async (data) => {
+  return data.map(listen => ({
+    title: listen['track_name'],
+    artist: listen['artist_name']
+    url: `/music/artists/${sanitizeMediaString(listen['artist_name'])}-${sanitizeMediaString(parseCountryField(listen['artists']['country']))}`,
+    timestamp: listen['listened_at'],
+    image: listen['albums']?.['image'] || ''
+  }))
+}
+
 const aggregateGenres = async (data) => {
   const genreAggregation = {}
   const genreMapping = await fetchGenreMapping()
@@ -139,11 +149,10 @@ export default async function() {
     artists: await aggregateData(recentData, 'artist_name', 'artists'),
     albums: await aggregateData(recentData, 'album_name', 'albums'),
     tracks: await aggregateData(recentData, 'track_name', 'track'),
-    tracksChronological: (await aggregateData(recentData, 'track_name', 'track')).sort((a, b) => b.timestamp - a.timestamp),
+    tracksChronological: (await buildRecents(recentData)).sort((a, b) => b.timestamp - a.timestamp),
     genres: await aggregateGenres(recentData),
     totalTracks: recentData?.length?.toLocaleString('en-US')
   }
-  results['nowPlaying'] = results['recent']['tracksChronological'][0]
 
   return results
 }
