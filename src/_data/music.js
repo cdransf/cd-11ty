@@ -94,7 +94,7 @@ const aggregateData = async (data, groupByField, groupByType) => {
 const buildRecents = async (data) => {
   return data.map(listen => ({
     title: listen['track_name'],
-    artist: listen['artist_name']
+    artist: listen['artist_name'],
     url: `/music/artists/${sanitizeMediaString(listen['artist_name'])}-${sanitizeMediaString(parseCountryField(listen['artists']['country']))}`,
     timestamp: listen['listened_at'],
     image: listen['albums']?.['image'] || ''
