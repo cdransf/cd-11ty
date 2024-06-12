@@ -46,7 +46,7 @@ schema: artist
         <p class="sub-meta"><strong class="highlight-text">{{ artist.total_plays }} plays</strong></p>
       {%- endif -%}
       <p class="sub-meta">
-        <a href="https://coryd.dev/music/genres/{{ artist.genres | slugify | downcase }}" title="Learn more about {{ artist.genres | escape }}">
+        <a href="/music/genres/{{ artist.genres | slugify | downcase }}" title="Learn more about {{ artist.genres | escape }}">
           {{ artist.genres }}
         </a>
       </p>
@@ -73,5 +73,5 @@ schema: artist
     </tr>
     {% endfor %}
   </table>
-  <p class="text-small text-centered"><em>These are the album by this artist that are in my collection, not necessarily a comprehensive discography.</em></p>
+  <p class="text-small"><em>These are the album by this artist that are in my collection, not necessarily a comprehensive discography.</em></p>
 </article>

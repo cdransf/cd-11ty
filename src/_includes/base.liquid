@@ -29,11 +29,11 @@
 {%- elsif artist.description -%}
   {%- assign pageDescription = artist.description | truncate: 300 -%}
 {%- elsif book.description -%}
-  {%- assign pageDescription = book.description -%}
+  {%- assign pageDescription = book.review | markdown |  strip_html | default: book.description | truncate: 300 -%}
 {%- elsif movie.description -%}
-  {%- assign pageDescription = movie.review | default: movie.description | truncate: 300 -%}
+  {%- assign pageDescription = movie.review | markdown |  strip_html | default: movie.description | truncate: 300 -%}
 {%- elsif show.description -%}
-  {%- assign pageDescription = show.review | default: show.description | truncate: 300 -%}
+  {%- assign pageDescription = show.review | markdown |  strip_html | default: show.description | truncate: 300 -%}
 {%- elsif genre.description -%}
   {%- assign pageDescription = genre.description | markdown | strip_html | truncate: 300 -%}
 {%- elsif description -%}
@@ -43,29 +43,29 @@
 {%- assign ogImage = meta.meta_data.opengraph_default -%}
 {%- case schema -%}
   {%- when 'music' -%}
-    {%- assign ogImage = music.recent.artists[0].image -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: music.recent.artists[0].image -%}
   {%- when 'music-index' -%}
-    {%- assign ogImage = music.recent.artists[0].image -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: music.recent.artists[0].image -%}
   {%- when 'artist' -%}
-    {%- assign ogImage = artist.image -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: artist.image -%}
   {%- when 'genre' -%}
     {%- assign sortedGenreArtists = genre.artists | sortByPlaysDescending: "total_plays" -%}
-    {%- assign ogImage =  sortedGenreArtists[0].image -%}
+    {%- assign ogImage =  'https://cdn.coryd.dev' | append: sortedGenreArtists[0].image -%}
   {%- when 'watching' -%}
     {%- assign featuredMovie = movies.recentlyWatched | first -%}
-    {%- assign ogImage = featuredMovie.backdrop -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredMovie.backdrop -%}
   {%- when 'books' -%}
     {%- assign featuredBook = books | bookStatus: 'started' | reverse | first -%}
-    {%- assign ogImage = featuredBook.image -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredBook.image -%}
   {%- when 'book' -%}
-    {%- assign ogImage = book.image -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: book.image -%}
   {%- when 'movie' -%}
-    {%- assign ogImage = movie.backdrop -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: movie.backdrop -%}
   {%- when 'show' -%}
     {%- assign ogImage = 'https://cdn.coryd.dev/shows/backdrops/backdrop-' | append: show.tmdb_id | append: '.jpg' -%}
   {%- when 'genre' -%}
     {%- assign genreArtist = genre.artists | shuffleArray | first -%}
-    {%- assign ogImage = genreArtist.image -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: genreArtist.image -%}
 {%- endcase -%}
 
 <!doctype html>
