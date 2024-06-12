@@ -215,7 +215,11 @@ hr {
 
 /* tables */
 table {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
   border: 1px solid var(--gray-light);
+  white-space: nowrap;
 }
 
 table,
@@ -237,7 +241,12 @@ tr:not(:last-child) {
 th,
 td {
   padding: var(--sizing-sm);
+  min-width: max-content;
+  word-break: break-word;
   width: 100%;
+}
+
+td {
   min-width: calc(var(--sizing-3xl) * 2);
 }
 
