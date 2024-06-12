@@ -161,9 +161,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: var(--sizing-base) 0;
 }
 
-h1 { font-size: var(--font-size-3xl) }
-h2 { font-size: var(--font-size-2xl) }
-h3 { font-size: var(--font-size-xl) }
+h1 { font-size: var(--font-size-2xl) }
+h2 { font-size: var(--font-size-xl) }
+h3 { font-size: var(--font-size-lg) }
 h4 { font-size: var(--font-size-base) }
 h5 { font-size: var(--font-size-md) }
 h6 { font-size: var(--font-size-sm) }
@@ -274,7 +274,6 @@ th {
   justify-content: space-between;
 
   & h1 {
-    font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-extrabold);
     margin: 0;
     padding: 0;
@@ -613,12 +612,15 @@ li {
 
 /* screens: md */
 @media screen and (min-width: 768px) {
+  h1 { font-size: var(--font-size-3xl) }
+  h2 { font-size: var(--font-size-2xl) }
+  h3 { font-size: var(--font-size-xl) }
+  h4 { font-size: var(--font-size-lg) }
+  h5 { font-size: var(--font-size-base) }
+  h6 { font-size: var(--font-size-md) }
+
   main {
     max-width: 768px;
-  }
-
-  .main-title h1 {
-    font-size: var(--font-size-3xl);
   }
 
   .section-header-wrapper {
