@@ -34,12 +34,12 @@
         }
 
         &.sub-meta {
-          font-size: var(--font-size-xs);
-          line-height: var(--line-height-xs);
+          font-size: var(--font-size-sm);
+          line-height: var(--line-height-sm);
 
           svg {
-            width: 16px;
-            height: 16px;
+            width: 18px;
+            height: 18px;
             margin-right: var(--sizing-xs);
           }
         }
@@ -146,13 +146,13 @@
         & .subheader,
         & .rating {
           color: var(--color-lightest);
-          font-size: var(--font-size-xs);
+          font-size: var(--font-size-sm);
           line-height: 1.5;
           text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
         }
 
         & .rating {
-          font-size: calc(var(--font-size-xs) * .75);
+          font-size: calc(var(--font-size-sm) * .75);
         }
 
         & .header {
@@ -195,8 +195,8 @@
       }
 
       &.sub-meta {
-        font-size: var(--font-size-xs);
-        line-height: var(--line-height-xs);
+        font-size: var(--font-size-sm);
+        line-height: var(--line-height-sm);
       }
     }
   }

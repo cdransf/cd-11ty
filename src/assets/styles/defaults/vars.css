@@ -69,26 +69,13 @@
   --font-mono: MonoLisa, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;
 
   /* text */
-  --font-size-xs: .725rem;
-  --line-height-xs: 1.45rem;
-
-  --font-size-sm: .825rem;
-  --line-height-sm: 1.65rem;
-
-  --font-size-base: .95rem;
-  --line-height-base: 1.9rem;
-
-  --font-size-lg: 1.125rem;
-  --line-height-lg: 2.25rem;
-
-  --font-size-xl: 1.25rem;
-  --line-height-xl: 2.5rem;
-
-  --font-size-2xl: 1.5rem;
-  --line-height-2xl: 3rem;
-
-  --font-size-3xl: 1.7rem;
-  --line-height-3xl: 3.4rem;
+  --font-size-xs: .7rem;
+  --font-size-sm: .85rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.15rem;
+  --font-size-xl: 1.3rem;
+  --font-size-2xl: 1.45rem;
+  --font-size-3xl: 1.6rem;
 
   --font-weight-base: 400;
   --font-weight-bold: 600;

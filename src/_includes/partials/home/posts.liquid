@@ -19,7 +19,7 @@
     </a>
     <span class="p-author h-card hidden">{{ meta.siteName }}</span>
     <div class="p-summary hidden">{{ post.data.post_excerpt }}</div>
-    {{ post.description | truncate: 300 }}
+    {{ post.description | markdown | truncate: 300 }}
   </article>
   {% endfor %}
   {% if postType != 'featured' %}

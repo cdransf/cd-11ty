@@ -1,16 +1,23 @@
-
-body,
-html {
+html
+body {
   color: var(--text-color);
   font-family: var(--font-mono);
-  font-size: var(--font-size-base);
   letter-spacing: -.05rem;
   word-spacing: -.125rem;
-  line-height: var(--line-height-base);
   background: var(--background-color);
   accent-color: var(--accent-color);
   scrollbar-width: thin;
   scrollbar-color: var(--accent-color) var(--gray-light);
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  font-size: var(--font-size-base);
+  line-height: 2;
 }
 
 ::-moz-selection {
@@ -150,15 +157,16 @@ a:active,
 /* headers */
 h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
+  line-height: 1.5;
   margin: var(--sizing-base) 0;
 }
 
-h1 { font-size: var(--font-size-xl) }
-h2 { font-size: var(--font-size-lg) }
-h3 { font-size: var(--font-size-base) }
-h4 { font-size: var(--font-size-md) }
-h5 { font-size: var(--font-size-sm) }
-h6 { font-size: var(--font-size-xs) }
+h1 { font-size: var(--font-size-3xl) }
+h2 { font-size: var(--font-size-2xl) }
+h3 { font-size: var(--font-size-xl) }
+h4 { font-size: var(--font-size-base) }
+h5 { font-size: var(--font-size-md) }
+h6 { font-size: var(--font-size-sm) }
 
 .section-header-wrapper {
   display: flex;
@@ -266,12 +274,10 @@ th {
   justify-content: space-between;
 
   & h1 {
-    line-height: 1.25;
-    margin: 0;
-    padding-bottom: 0;
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-extrabold);
-    line-height: var(--line-height-2xl);
+    margin: 0;
+    padding: 0;
 
     & a {
       text-decoration: none;
@@ -419,7 +425,6 @@ footer {
 
     &.sub-pages {
       font-size: var(--font-size-sm);
-      line-height: var(--line-height-sm);
       padding-bottom: var(--sizing-3xl);
 
       & span:not(.active) {
@@ -437,7 +442,6 @@ footer {
 /* articles */
 article {
   & h2 {
-    line-height: var(--line-height-lg);
     margin: 0 0 var(--sizing-lg);
     transition-property: color;
   }
@@ -454,7 +458,6 @@ article {
   & time {
     color: var(--gray-dark);
     font-size: var(--font-size-sm);
-    line-height: var(--line-height-sm);
     margin-right: var(--sizing-xs);
   }
 
@@ -578,7 +581,6 @@ li {
 
 .text-small {
   font-size: var(--font-size-sm) !important;
-  line-height: var(--line-height-sm) !important;
 }
 
 .flex-centered {
@@ -613,6 +615,10 @@ li {
 @media screen and (min-width: 768px) {
   main {
     max-width: 768px;
+  }
+
+  .main-title h1 {
+    font-size: var(--font-size-3xl);
   }
 
   .section-header-wrapper {

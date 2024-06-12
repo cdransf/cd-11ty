@@ -16,6 +16,7 @@ export default async function () {
       image,
       release_date,
       release_link,
+      total_plays,
       artists (name_string, mbid, country)
     `)
     .gt('release_date', today)
@@ -25,7 +26,7 @@ export default async function () {
     return
   }
 
-  return data.map(album => {
+  return data.filter(album => !album['total_plays'] || !album['total_plays'] > 0).map(album => {
     return {
       artist: album['artists']['name_string'],
       title: album['name'],
