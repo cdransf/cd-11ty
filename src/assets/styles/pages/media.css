@@ -185,7 +185,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--sizing-xs);
-    margin-top: var(--sizing-base);
+    margin: var(--sizing-base) 0;
 
     & p {
       margin: 0;
