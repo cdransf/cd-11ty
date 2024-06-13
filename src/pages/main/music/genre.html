@@ -28,7 +28,7 @@ schema: genre
   <hr class="large-spacing" />
   {%- if genre.description -%}
   <div data-toggle-content class="text-toggle-hidden">
-    <em>{{ genre.description | markdown }}</em>
+    {{ genre.description | markdown }}
     <p><a href="{{ genre.wiki_link }}">Continue reading at Wikipedia.</a></p>
     <p class="text-small"><em>Wikipedia content provided under the terms of the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons BY-SA license</a></em></p>
   </div>
