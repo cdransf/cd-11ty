@@ -52,5 +52,8 @@ schema: book
     {{ book.review | markdown }}
     <hr class="large-spacing" />
   {% endif %}
-  {% if book.description %}{{ book.description | markdown }}{% endif %}
+  {% if book.description %}
+    <h2>Overview</h2>
+    {{ book.description | markdown }}
+  {% endif %}
 </article>

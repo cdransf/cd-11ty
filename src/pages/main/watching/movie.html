@@ -42,5 +42,8 @@ schema: movie
     {{ movie.review | markdown }}
     <hr class="large-spacing" />
   {% endif %}
-  {% if movie.description %}{{ movie.description | markdown }}{% endif %}
+  {% if movie.description %}
+    <h2>Overview</h2>
+    {{ movie.description | markdown }}
+  {% endif %}
 </article>
