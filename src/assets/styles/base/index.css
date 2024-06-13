@@ -518,7 +518,7 @@ li {
 }
 
 .link-list {
-  margin-bottom: 0;
+  margin: 0;
 
   & li {
     margin-top: var(--sizing-sm);
