@@ -41,7 +41,6 @@
   --background-color-inverted: var(--color-darkest);
   --accent-color: var(--blue-600);
   --accent-color-hover: var(--blue-800);
-  --selection-color: var(--accent-color);
 
   --brand-fastmail: #0067b9;
   --brand-github: #333;
@@ -137,7 +136,6 @@
   --background-color-inverted: var(--color-darkest);
   --accent-color: var(--blue-600);
   --accent-color-hover: var(--blue-800);
-  --selection-color: var(--accent-color);
   --gray-light: var(--gray-200);
   --gray-lighter: var(--gray-50);
   --gray-dark: var(--gray-950);

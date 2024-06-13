@@ -22,12 +22,12 @@ body {
 
 ::-moz-selection {
   color: var(--color-lightest);
-  background: var(--selection-color);
+  background: var(--accent-color);
 }
 
 ::selection {
   color: var(--color-lightest);
-  background: var(--selection-color);
+  background: var(--accent-color);
 }
 
 ::-webkit-scrollbar {
