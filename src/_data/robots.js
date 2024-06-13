@@ -4,6 +4,7 @@ export default async function () {
     'Amazonbot',
     'anthropic-ai',
     'Applebot',
+    'Applebot-Extended',
     'AwarioRssBot',
     'AwarioSmartBot',
     'Bytespider',
