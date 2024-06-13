@@ -116,8 +116,14 @@
       width: calc(80% - var(--sizing-lg));
     }
 
-    & .item .meta-text {
-      max-width: 85%;
+    & .item {
+      & .meta {
+        width: calc(75% - var(--sizing-lg));
+      }
+
+      & .meta-text {
+        max-width: 85%;
+      }
     }
 
     &.grid {

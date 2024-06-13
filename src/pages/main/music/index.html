@@ -70,7 +70,7 @@ schema: music-index
   </div>
 </div>
 <div id="tracks-recent">
-  {% render "partials/media/music/recent", data:music.recent.tracksChronological %}
+  {% render "partials/media/music/recent", data:music.recent %}
 </div>
 <div class="hidden" id="tracks-window">
   {% render "partials/media/music/chart.liquid", data:music.week.tracks, mostPlayed:music.week.tracks[0].plays, count: 10 %}

@@ -145,14 +145,7 @@ export default async function() {
 
   const recentData = await fetchDataForPeriod(DateTime.now().minus({ days: 7 }), selectFields, 'listens')
 
-  results['recent'] = {
-    artists: await aggregateData(recentData, 'artist_name', 'artists'),
-    albums: await aggregateData(recentData, 'album_name', 'albums'),
-    tracks: await aggregateData(recentData, 'track_name', 'track'),
-    tracksChronological: (await buildRecents(recentData)).sort((a, b) => b.timestamp - a.timestamp),
-    genres: await aggregateGenres(recentData),
-    totalTracks: recentData?.length?.toLocaleString('en-US')
-  }
+  results['recent'] = (await buildRecents(recentData)).sort((a, b) => b.timestamp - a.timestamp)
 
   return results
 }
