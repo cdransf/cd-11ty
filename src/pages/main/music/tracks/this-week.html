@@ -13,7 +13,7 @@ schema: music
 {% if pagination.pageNumber == 0 %}
 <h2 class="page-header">{{ title }}</h2>
 <p>I've listened to <strong class="highlight-text">{{ music.week.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.week.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.week.totalTracks }} tracks</strong> this week. Most of that has been {{ music.week.genres | sortByPlaysDescending: "plays" | genreStrings: "genre" | mediaLinks: "genre", 5 }}.</p>
-<p><strong class="highlight-text">See the</strong> <a href="/music/artists/this-week/">artists</a> or <a href="/music/albums/this-week/">albums</a> I've listened to this week.</p>
+<p><strong class="highlight-text">See the</strong> <a href="/music/artists/this-week/">artists</a> or <a href="/music/albums/this-week/">albums</a> I've listened to this week. <strong class="highlight-text">Or take a look at what I've listened to</strong> <a href="/music/this-month">this month</a> or <a href="/music/three-months">over the last 3 months</a>.</p>
 <hr />
 {% endif %}
 {% render "partials/media/music/chart.liquid" data:pagination, playTotal: music.week.tracks[0].plays %}

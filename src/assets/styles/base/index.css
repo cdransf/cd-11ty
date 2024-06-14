@@ -463,10 +463,6 @@ article {
   & [rel="author"] {
     margin-bottom: var(--sizing-xs);
   }
-
-  & p:first-of-type {
-    margin-top: var(--sizing-sm);
-  }
 }
 
 .footnotes + .banner {
@@ -594,14 +590,8 @@ li {
     flex-direction: row;
   }
 
-  article {
-    & h2 {
-      margin: 0 0 var(--sizing-xs);
-    }
-
-    & p:first-of-type {
-      margin-top: var(--sizing-md);
-    }
+  article h2 {
+    margin: 0 0 var(--sizing-xs);
   }
 
   footer nav.social {

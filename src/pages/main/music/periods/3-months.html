@@ -9,7 +9,7 @@ schema: music-period
 ---
 <h2 class="page-header">{{ title }}</h2>
 <p>I've listened to <strong class="highlight-text">{{ music.threeMonth.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.threeMonth.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.threeMonth.totalTracks }} tracks</strong> over the last 3 months. Most of that has been {{ music.threeMonth.genres | sortByPlaysDescending: "plays" | genreStrings: "genre" | mediaLinks: "genre", 5 }}.</p>
-<p><strong class="highlight-text">See more of the</strong> <a href="/music/artists/three-months/">artists</a>, <a href="/music/albums/three-months/">albums</a> or <a href="/music/tracks/three-months/">tracks</a> I've listened to over the last 3 months.</p>
+<p><strong class="highlight-text">See more of the</strong> <a href="/music/artists/three-months/">artists</a>, <a href="/music/albums/three-months/">albums</a> or <a href="/music/tracks/three-months/">tracks</a> I've listened to over the last 3 months. <strong class="highlight-text">Or take a look at what I've listened to</strong> <a href="/music">this week</a> or <a href="/music/this-month">this month</a>.</p>
 <hr />
 <a class="link-icon flex-centered" href="/music/artists/three-months">
   <h2 id="artists" class="section-header no-top-margin flex-centered">

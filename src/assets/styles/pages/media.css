@@ -66,7 +66,6 @@
     & .artist-display {
       flex-direction: row;
       gap: var(--sizing-md);
-      margin: 0 0 var(--sizing-base) 0;
 
       & .artist-meta {
         margin-top: 0;
