@@ -22,6 +22,10 @@
       height: calc(var(--sizing-3xl) * 1.5);
     }
 
+    & .presentation {
+      display: flex;
+    }
+
     & .meta,
     & .presentation {
       justify-content: start;
