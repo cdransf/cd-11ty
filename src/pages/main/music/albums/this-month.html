@@ -12,7 +12,7 @@ schema: music
 <a class="back-link-header link-icon flex-centered" href="/music" title="Go back to the music index page">{% tablericon "arrow-left" "Go back to the music index page" %} Back to music</a>
 {% if pagination.pageNumber == 0 %}
 <h2 class="page-header">{{ title }}</h2>
-<p>I've listened to <strong class="highlight-text">{{ music.month.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.month.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.month.totalTracks }} tracks</strong> this month. Most of what I've listened to has been {{ music.month.genres | sortByPlaysDescending: "plays" | genreStrings: "genre" | mediaLinks: "genre", 5 }}.</p>
+<p>I've listened to <strong class="highlight-text">{{ music.month.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.month.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.month.totalTracks }} tracks</strong> this month. Most of that has been {{ music.month.genres | sortByPlaysDescending: "plays" | genreStrings: "genre" | mediaLinks: "genre", 5 }}.</p>
 <p><strong class="highlight-text">See the</strong> <a href="/music/artists/this-month/">artists</a> or <a href="/music/tracks/this-month/">tracks</a> I've listened to this month.</p>
 <hr class="large-spacing" />
 {% endif %}

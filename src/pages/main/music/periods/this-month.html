@@ -8,7 +8,7 @@ image: music.month.artists[0].image
 schema: music-period
 ---
 <h2 class="page-header">{{ title }}</h2>
-<p>I've listened to <strong class="highlight-text">{{ music.month.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.month.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.month.totalTracks }} tracks</strong> this month. Most of what I've listened to has been {{ music.month.genres | sortByPlaysDescending: "plays" | genreStrings: "genre" | mediaLinks: "genre", 5 }}.</p>
+<p>I've listened to <strong class="highlight-text">{{ music.month.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.month.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.month.totalTracks }} tracks</strong> this month. Most of that has been {{ music.month.genres | sortByPlaysDescending: "plays" | genreStrings: "genre" | mediaLinks: "genre", 5 }}.</p>
 <p><strong class="highlight-text">See more of the</strong> <a href="/music/artists/this-month/">artists</a>, <a href="/music/albums/this-month/">albums</a> or <a href="/music/tracks/this-month/">tracks</a> I've listened to this month.</p>
 <hr class="large-spacing" />
 <a class="link-icon flex-centered" href="/music/artists/this-month">
