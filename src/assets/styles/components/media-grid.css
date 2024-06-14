@@ -43,7 +43,7 @@
       content: '';
       top: 0;
       left: 1px;
-      box-shadow: inset 0 -70px 50px -40px #000;
+      box-shadow: inset 0 -70px 50px -40px var(--black);
       width: calc(100% - 2px);
       height: calc(100% - 1px);
     }

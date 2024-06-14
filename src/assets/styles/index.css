@@ -6,7 +6,6 @@
 /* core defaults */
 @import url('./defaults/fonts.css') layer(defaults);
 @import url('./defaults/vars.css') layer(defaults);
-@import url('./defaults/animations.css') layer(defaults);
 
  /* base styles */
 @import url('./base/index.css') layer(base);
@@ -31,7 +30,6 @@
 @import url('./components/banners.css') layer(components);
 @import url('./components/buttons.css') layer(components);
 @import url('./components/forms.css') layer(components);
-@import url('./components/mastodon-post.css') layer(components);
 @import url('./components/media-grid.css') layer(components);
 @import url('./components/menu.css') layer(components);
 @import url('./components/music-chart.css') layer(components);

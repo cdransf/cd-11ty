@@ -36,7 +36,6 @@ textarea:focus {
   list-style: none;
 
   & li {
-    margin-top: var(--sizing-sm);
-    margin-bottom: var(--sizing-sm);
+    margin: var(--sizing-sm) 0;
   }
 }

@@ -8,7 +8,7 @@ permalink: "{{ post.slug }}/index.html"
 schema: blog
 ---
 <article class="h-entry">
-  <div class="flex-centered gap-xs icon-small icon-light">
+  <div class="time-wrapper flex-centered">
     {% tablericon "calendar-month" "Date" %}
     <time class="dt-published" datetime="{{ date }}">
       {{ post.date | date: "%B %e, %Y" }}

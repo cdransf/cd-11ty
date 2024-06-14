@@ -13,5 +13,5 @@ layout: default
 {% else %}
 <p>I finished <strong class="highlight-text">{{ bookData.size }} books</strong> in {{ year }}.</p>
 {% endif %}
-<hr class="large-spacing" />
+<hr />
 {% render "partials/media/grid.liquid", data:bookData, shape: "vertical", count: 200, loading: "eager" %}

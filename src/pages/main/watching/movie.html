@@ -40,7 +40,7 @@ schema: movie
   {% if movie.review %}
     {% render "partials/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
     {{ movie.review | markdown }}
-    <hr class="large-spacing" />
+    <hr />
   {% endif %}
   {% if movie.description %}
     <h2>Overview</h2>

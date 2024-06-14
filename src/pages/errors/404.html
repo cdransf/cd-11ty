@@ -29,7 +29,7 @@ image: https://cdn.coryd.dev/assets/404.jpg
     <h2 class="page-header">{{ title }}</h2>
     What kind of idiots do you have working here? <a href="/">Hurry up and skip out on the room service bill!</a>
   </div>
-  <hr class="large-spacing" />
+  <hr />
   {% render "partials/widgets/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}
 </div>
 <script>document.addEventListener('DOMContentLoaded', function () { plausible('404', { props: { path: document.location.pathname } }); });</script>

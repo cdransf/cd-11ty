@@ -2,6 +2,9 @@
   margin-bottom: var(--sizing-base);
 
   & .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 
     &:not(:last-of-type) {
@@ -15,17 +18,21 @@
 
     & img {
       border: 1px solid var(--accent-color);
-    }
-
-    & img {
       width: calc(var(--sizing-3xl) * 1.5);
       height: calc(var(--sizing-3xl) * 1.5);
     }
 
-    & .meta {
+    & .meta,
+    & .presentation {
       justify-content: start;
       gap: var(--sizing-md);
       width: calc(55% - var(--sizing-lg));
+    }
+
+    & .meta {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
 
     & .meta-text {
@@ -37,37 +44,28 @@
 
     & .title {
       font-weight: var(--font-weight-bold);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      line-height: 1.5;
     }
 
     & .title,
     & .subtext,
-    & .subtext p {
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
+    & .subtext p,
+    & .timestamp {
+      line-height: 1.5;
     }
 
     & .subtext,
     & .timestamp {
       font-size: var(--font-size-sm);
-    }
-
-    & .title,
-    & .subtext,
-    & .timestamp {
-      line-height: 1.5;
+      white-space: nowrap;
     }
 
     & .timestamp {
       margin-left: var(--sizing-lg);
       text-align: right;
-      white-space: nowrap;
-    }
-
-    & .presentation {
-      display: flex;
-      flex-direction: row;
-      width: calc(55% - var(--sizing-lg));
     }
 
     & .count {
@@ -79,17 +77,10 @@
     }
   }
 
-  & .item,
-  & .meta {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
   &.grid {
     display: grid;
     gap: var(--sizing-sm);
-    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-columns: repeat(2, 1fr);
     margin-bottom: var(--sizing-base);
 
     & .item {
@@ -127,7 +118,7 @@
     }
 
     &.grid {
-      grid-template-columns: repeat(3,minmax(0,1fr));
+      grid-template-columns: repeat(3, 1fr);
 
       & .item img {
         width: calc(var(--sizing-3xl) * 2);

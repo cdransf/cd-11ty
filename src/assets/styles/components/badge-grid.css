@@ -1,21 +1,21 @@
 .badge-grid {
   display: grid;
   gap: var(--sizing-md);
-  grid-template-columns: repeat(3,minmax(0,1fr));
+  grid-template-columns: repeat(3, 1fr);
   margin-top: var(--sizing-2xl);
 
-  &  > * {
+  & > * {
     display: flex;
     justify-content: center;
   }
 
-  img {
+  & img {
     image-rendering: pixelated;
   }
 }
 
 @media screen and (min-width: 768px) {
   .badge-grid {
-    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-template-columns: repeat(4, 1fr);
   }
 }

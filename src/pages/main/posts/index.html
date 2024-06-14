@@ -10,7 +10,7 @@ permalink: "/posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}
 <div class="posts-wrapper">
   {% for post in pagination.items %}
   <article class="h-entry">
-    <div class="flex-centered gap-xs icon-small icon-light">
+    <div class="time-wrapper flex-centered">
       {% tablericon "calendar-month" "Date" %}
       <time class="dt-published" datetime="{{ post.date }}">
         {{ post.date | date: "%B %e, %Y" }}

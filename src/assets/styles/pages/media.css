@@ -97,6 +97,7 @@
 
       & .subheader {
         font-size: var(--font-size-sm);
+        gap: var(--sizing-xs)
       }
 
       & .header,

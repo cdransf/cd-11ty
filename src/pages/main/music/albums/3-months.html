@@ -14,6 +14,6 @@ schema: music
 <h2 class="page-header">{{ title }}</h2>
 <p>I've listened to <strong class="highlight-text">{{ music.threeMonth.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.threeMonth.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.threeMonth.totalTracks }} tracks</strong> over the last 3 months. Most of that has been {{ music.threeMonth.genres | sortByPlaysDescending: "plays" | genreStrings: "genre" | mediaLinks: "genre", 5 }}.</p>
 <p><strong class="highlight-text">See the</strong> <a href="/music/artists/three-months/">artists</a> or <a href="/music/tracks/three-months/">tracks</a> I've listened to over the last 3 months.</p>
-<hr class="large-spacing" />
+<hr />
 {% endif %}
 {% render "partials/media/grid.liquid" data:pagination, shape: "square" %}

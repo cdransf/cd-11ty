@@ -12,6 +12,6 @@ schema: watching
 {% if pagination.pageNumber == 0 %}
 <h2 class="watching page-header">{{ title }}</h2>
 <p>These are the movies I've watched recently. There are many like them, but these are mine. (Or well, all the movies I've watched — they're ordered latest watched, descending, hence the recent part).</p>
-<hr class="large-spacing" />
+<hr />
 {% endif %}
 {% render "partials/media/watching/grid.liquid", data:pagination %}

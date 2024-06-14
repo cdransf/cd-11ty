@@ -27,73 +27,41 @@
     border-color: var(--gray-light);
   }
 
-  &.warning {
-    border-color: var(--warning);
-
-    & p a:hover,
-    & p a:active,
-    & p a:focus {
-      color: var(--warning);
-    }
-
-    & svg {
-      stroke: var(--warning);
-    }
-  }
-
-  &.error {
-    border-color: var(--error);
-
-    & p a:hover,
-    & p a:active,
-    & p a:focus {
-      color: var(--error);
-    }
-
-    & svg {
-      stroke: var(--error);
-    }
-  }
-
-  &.npm {
-    border-color: var(--brand-npm);
-
-    & p a:hover,
-    & p a:active,
-    & p a:focus {
-      color: var(--brand-npm);
-    }
-
-    & svg {
-      stroke: var(--brand-npm);
-    }
-  }
-
-  &.github {
-    border-color: var(--brand-github);
-
-    & p a:hover,
-    & p a:active,
-    & p a:focus {
-      color: var(--brand-github);
-    }
-
-    & svg {
-      stroke: var(--brand-github);
-    }
-  }
-
+  &.warning,
+  &.error,
+  &.npm,
+  &.github,
   &.rss {
-    border-color: var(--brand-rss);
+    &.warning {
+      --border-color: var(--warning);
+    }
+
+    &.error {
+      --border-color: var(--error);
+    }
+
+    &.npm {
+      --border-color: var(--brand-npm);
+    }
+
+    &.github {
+      --border-color: var(--brand-github);
+    }
+
+    &.rss {
+      --border-color: var(--brand-rss);
+    }
+
+    border-color: var(--border-color);
 
     & p a:hover,
     & p a:active,
     & p a:focus {
-      color: var(--brand-rss);
+      color: var(--border-color);
     }
 
     & svg {
-      stroke: var(--brand-rss);
+      stroke: var(--border-color);
     }
   }
 }

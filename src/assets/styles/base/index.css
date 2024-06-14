@@ -95,10 +95,6 @@ sup.footnote-ref {
   }
 }
 
-.footnote-item a {
-  text-decoration: none;
-}
-
 strong,
 blockquote {
   font-weight: var(--font-weight-bold);
@@ -191,15 +187,7 @@ h6 { font-size: var(--font-size-sm) }
 }
 
 .section-header-buttons {
-  margin: var(--sizing-3xl) 0 var(--sizing-lg);
-
-  &.reduced-margin {
-    margin: var(--sizing-md) 0 var(--sizing-lg);
-  }
-
-  &.no-top-margin {
-    margin: 0 0 var(--sizing-lg);
-  }
+  margin: var(--sizing-md) 0 var(--sizing-lg);
 
   & > button {
     margin-bottom: var(--sizing-sm) !important;
@@ -215,10 +203,7 @@ hr {
   height: 1px;
   background-color: var(--gray-light);
   border: 0;
-
-  &.large-spacing {
-    margin: var(--sizing-base) 0;
-  }
+  margin: var(--sizing-base) 0;
 }
 
 /* tables */
@@ -460,6 +445,16 @@ article {
     margin-right: var(--sizing-xs);
   }
 
+  & .time-wrapper {
+    gap: var(--sizing-xs);
+
+    & > svg {
+      width: var(--sizing-lg);
+      height: var(--sizing-lg);
+      stroke: var(--gray-dark) !important;
+    }
+  }
+
   & [rel="author"] {
     margin-bottom: var(--sizing-xs);
   }
@@ -491,18 +486,9 @@ svg {
   stroke-width: var(--stroke-width-default);
 }
 
-.icon-small > svg {
-  width: var(--sizing-lg);
-  height: var(--sizing-lg);
-}
-
 .icon-center-vertical > svg {
   display: inline;
   vertical-align: middle;
-}
-
-.icon-light > svg {
-  stroke: var(--gray-dark) !important;
 }
 
 /* lists */
@@ -528,16 +514,6 @@ li {
       margin-bottom: 0;
     }
   }
-
-  &.reduced-spacing {
-    margin-top: 0;
-    margin-bottom: var(--sizing-3xl);
-    padding-left: 0;
-
-    & li:first-of-type {
-      margin-top: 0;
-    }
-  }
 }
 
 .link-list-header {
@@ -550,12 +526,6 @@ li {
   height: auto;
   display: block;
   width: 100%;
-
-  & > * {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
 }
 
 /* pages */
@@ -601,14 +571,6 @@ li {
 .flex-wrap {
   flex-wrap: wrap;
 }
-
-.gap-xs { gap: var(--sizing-xs) }
-.gap-sm { gap: var(--sizing-sm) }
-.gap-md { gap: var(--sizing-md) }
-.gap-base { gap: var(--sizing-base) }
-.gap-xl { gap: var(--sizing-xl) }
-.gap-2xl { gap: var(--sizing-2xl) }
-.gap-3xl { gap: var(--sizing-3xl) }
 
 /* screens: md */
 @media screen and (min-width: 768px) {

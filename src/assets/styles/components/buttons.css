@@ -1,5 +1,5 @@
 button {
-  &:not(.theme-toggle, .share) {
+  &:not(.theme-toggle) {
     border-radius: var(--rounded-full);
     padding: var(--sizing-sm) var(--sizing-lg);
     margin: 0 var(--sizing-xs) var(--sizing-md) 0;
@@ -17,9 +17,9 @@ button {
     transition-property: all;
   }
 
-  &:not(.theme-toggle, .share, .active):hover,
-  &:not(.theme-toggle, .share, .active):active,
-  &:not(.theme-toggle, .share, .active):focus {
+  &:not(.theme-toggle, .active):hover,
+  &:not(.theme-toggle, .active):active,
+  &:not(.theme-toggle, .active):focus {
     background-color: var(--accent-color-hover);
     border-color: var(--accent-color-hover);
     transition-timing-function: var(--transition-ease-in-out);
@@ -37,9 +37,9 @@ button {
     background: transparent;
   }
 
-  &.secondary:not(.theme-toggle, .share):hover,
-  &.secondary:not(.theme-toggle, .share):active,
-  &.secondary:not(.theme-toggle, .share):focus {
+  &.secondary:not(.theme-toggle):hover,
+  &.secondary:not(.theme-toggle):active,
+  &.secondary:not(.theme-toggle):focus {
     color: var(--accent-color-hover);
     background: transparent;
   }

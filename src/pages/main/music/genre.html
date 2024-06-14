@@ -25,7 +25,7 @@ schema: genre
 <h2 class="page-header">{{ genre.name }}</h2>
 <article class="genre-focus">
   <p>My top <strong class="highlight-text">{{ genre.name }}</strong> artists {{ connectingWord }} {{ genre.artists | sortByPlaysDescending: "total_plays" | mediaLinks: "artist", 5 }}. I've listened to <strong class="highlight-text">{{ genre.total_plays | formatNumber }}</strong> tracks form this genre.</p>
-  <hr class="large-spacing" />
+  <hr />
   {%- if genre.description -%}
   <div data-toggle-content class="text-toggle-hidden">
     {{ genre.description | markdown }}
