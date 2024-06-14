@@ -13,14 +13,14 @@
     </span>
   {% endif %}
   <select-pagination>
-    <select aria-label="Page selection">
+    <select class="client-side" aria-label="Page selection">
       {% for pageEntry in pagination.pages %}
       <option value="{{ forloop.index | minus: 1 }}">{{ forloop.index }} of {{ pagination.links.size }}</option>
       {% endfor %}
     </select>
     <noscript>
       <div class="text-centered">
-        <span aria-current="page">{{ pagination.pageNumber }}</span> of {{ pagination.links.size }}
+        <span aria-current="page">{{ pagination.pageNumber | plus: 1 }}</span> of {{ pagination.links.size }}
       </div>
     </noscript>
   </select-pagination>
