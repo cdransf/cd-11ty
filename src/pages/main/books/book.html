@@ -11,7 +11,7 @@ schema: book
 {%- capture alt -%}
   {{ book.title }}{% if book.authors %}By {{ book.authors }}{% endif %}
 {%- endcapture -%}
-<a class="back-link-header link-icon flex-centered" href="/books" title="Go back to the books index page">{% tablericon "arrow-left" "Go back" %} Go back</a>
+<a class="back-link-header link-icon flex-centered" href="/books" title="Go back to the books index page">{% tablericon "arrow-left" "Go back to the books index page" %} Back to books</a>
 <article class="book-focus">
   <div class="book-display">
     <img

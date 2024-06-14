@@ -9,6 +9,8 @@
   {%- assign pageTitle = 'Artists / ' | append: artist.name_string | append: ' / ' | append: meta.siteName -%}
 {%- elsif schema == 'music-index' -%}
   {%- assign pageTitle = 'Music / ' | append: meta.siteName -%}
+{%- elsif schema == 'music-period' -%}
+    {%- assign pageTitle = 'Music / ' | append: page.title | append: meta.siteName -%}
 {%- elsif genre.name -%}
   {%- assign pageTitle = 'Music / ' | append: genre.name | append: ' / ' | append: meta.siteName -%}
 {%- elsif book.title -%}
@@ -43,7 +45,7 @@
 {%- assign ogImage = meta.meta_data.opengraph_default -%}
 {%- case schema -%}
   {%- when 'music' -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: music.week.artists[0].image -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: page.image -%}
   {%- when 'music-index' -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: music.week.artists[0].image -%}
   {%- when 'artist' -%}

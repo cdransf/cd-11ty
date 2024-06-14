@@ -23,10 +23,7 @@ export default {
   shuffleArray,
 
   // navigation
-  isLinkActive: (category, page) => {
-    const normalizedPage = page.includes('.html') ? page.replace('.html', '/') : page
-    return !!normalizedPage && normalizedPage.includes(category) && !/\d+/.test(normalizedPage);
-  },
+  isLinkActive: (category, page) => page.includes(category) && page.split('/').filter(a => a !== '').length <= 1,
 
   // posts
   filterByPostType: (posts, postType) => {
