@@ -60,7 +60,7 @@
   & .book-meta {
     display: flex;
     flex-direction: column;
-    gap: var(--sizing-xs);
+    gap: var(--sizing-sm);
 
     & p {
       &.title {
