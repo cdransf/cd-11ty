@@ -105,6 +105,11 @@ blockquote {
   font-style: italic;
 }
 
+svg {
+  width: 24px;
+  height: 24px;
+}
+
 /* links */
 a {
   color: var(--accent-color);
