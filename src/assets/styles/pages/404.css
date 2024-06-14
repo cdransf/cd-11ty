@@ -1,9 +1,0 @@
-.four-oh-four-wrapper {
-  & .image-banner {
-    margin-bottom: var(--sizing-base);
-  }
-
-  & .page-header {
-    margin-bottom: var(--sizing-xs);
-  }
-}

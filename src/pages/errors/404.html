@@ -5,31 +5,29 @@ layout: default
 permalink: /404.html
 image: https://cdn.coryd.dev/assets/404.jpg
 ---
-<div class="four-oh-four-wrapper">
-  <img
-    srcset="
-      https://cdn.coryd.dev/assets/404.jpg?aspect_ratio=1:.5625&width=256 256w,
-      https://cdn.coryd.dev/assets/404.jpg?aspect_ratio=1:.5625&width=512 512w,
-      https://cdn.coryd.dev/assets/404.jpg?aspect_ratio=1:.5625&width=1024 1024w,
-      https://cdn.coryd.dev/assets/404.jpg?aspect_ratio=1:.5625&width=2048 2048w
-    "
-    sizes="(max-width: 450px) 256px,
-      (max-width: 850px) 512px,
-      (max-width: 1000px) 1024px,
-      2048px"
-    src="https://cdn.coryd.dev/assets/404.jpg?aspect_ratio=1:.5625&width=2048"
-    alt="{{ alt }}"
-    class="image-banner"
-    loading="eager"
-    decoding="async"
-    width="768"
-    height="432"
-  />
-  <div class="text-centered">
-    <h2 class="page-header">{{ title }}</h2>
-    What kind of idiots do you have working here? <a href="/">Hurry up and skip out on the room service bill!</a>
-  </div>
-  <hr />
-  {% render "partials/widgets/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}
+<img
+  srcset="
+    https://cdn.coryd.dev/assets/404.jpg?aspect_ratio=1:.5625&width=256 256w,
+    https://cdn.coryd.dev/assets/404.jpg?aspect_ratio=1:.5625&width=512 512w,
+    https://cdn.coryd.dev/assets/404.jpg?aspect_ratio=1:.5625&width=1024 1024w,
+    https://cdn.coryd.dev/assets/404.jpg?aspect_ratio=1:.5625&width=2048 2048w
+  "
+  sizes="(max-width: 450px) 256px,
+    (max-width: 850px) 512px,
+    (max-width: 1000px) 1024px,
+    2048px"
+  src="https://cdn.coryd.dev/assets/404.jpg?aspect_ratio=1:.5625&width=2048"
+  alt="{{ alt }}"
+  class="image-banner"
+  loading="eager"
+  decoding="async"
+  width="768"
+  height="432"
+/>
+<div class="text-centered">
+  <h2>{{ title }}</h2>
+  What kind of idiots do you have working here? <a href="/">Hurry up and skip out on the room service bill!</a>
 </div>
+<hr />
+{% render "partials/widgets/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}
 <script>document.addEventListener('DOMContentLoaded', function () { plausible('404', { props: { path: document.location.pathname } }); });</script>
