@@ -12,7 +12,7 @@ schema: music-index
 <script>{{ js }}</script>
 <h2 class="page-header">{{ title }}</h2>
 <p>This is everything I've been listening to recently — it's collected in a database as I listen to it and displayed here. <a href="/posts/2024/improving-my-self-hosted-scrobbling-implementation/">You can read more about the technical details, if you'd like.</a></p>
-<p>I mostly listen to {{ genres | sortByPlaysDescending: "total_plays" | genreStrings: "name" | mediaLinks: "genre", 5 }}. This week I've listened to <strong class="highlight-text">{{ music.week.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.week.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.week.totalTracks }} tracks</strong>.</p>
+<p>I've listened to <strong class="highlight-text">{{ music.week.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.week.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.week.totalTracks }} tracks</strong> this week. Most of what I've listened to has been {{ music.week.genres | sortByPlaysDescending: "plays" | genreStrings: "genre" | mediaLinks: "genre", 5 }}.</p>
 <p><strong class="highlight-text">See more of the</strong> <a href="/music/artists/this-week/">artists</a>, <a href="/music/albums/this-week/">albums</a> or <a href="/music/tracks/this-week/">tracks</a> I've listened to this week.</p>
 {% render "partials/widgets/now-playing.liquid" %}
 <hr class="large-spacing" />
