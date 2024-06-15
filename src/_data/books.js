@@ -54,26 +54,19 @@ async function fetchAllBooks() {
 export default async function () {
   const books = await fetchAllBooks()
 
-  return books.map(book => {
-    const author = book['author'] || ''
-    let date = book?.['date_finished']
-    if (book?.['date_started']) date = book['date_started']
-    if (book?.['date_finished']) date = book['date_finished']
-
-    return {
+  return books.map(book => ({
       title: book['title'],
-      author,
+      author: book['author'] || '',
       review: book['review'],
       rating: book['star_rating'] !== 'unrated' ? book['star_rating'] : '',
       description: book['description'],
       image: book['thumbnail'],
       url: `/books/${book['isbn']}`,
-      date,
+      date: book['date_finished'],
       status: book['read_status'],
       progress: book['progress'],
       tags: book['tags'],
       isbn: book['isbn'],
       type: 'book',
-    }
-  })
+    }))
 }
