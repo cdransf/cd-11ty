@@ -171,7 +171,7 @@ export default {
     return `${allButLast} and ${last}`
   },
   bookStatus: (books, status) => books.filter(book => book.status === status),
-  bookSortDescending: (books) => books.sort((a, b) => {
+  bookSortDescending: (books) => books.filter(book => !isNaN(DateTime.fromISO(book.date).toMillis())).sort((a, b) => {
     const dateA = DateTime.fromISO(a.date)
     const dateB = DateTime.fromISO(b.date)
     return dateB - dateA
