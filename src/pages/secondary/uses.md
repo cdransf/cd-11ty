@@ -24,6 +24,7 @@ Software and services that I use for work and my own enjoyment.
 <h3>macOS + iOS</h3>
 
 - [Vivaldi](https://vivaldi.net): a flexible, reliable and privacy focused browser.
+- [Fantastical](https://flexibits.com/fantastical): a powerful calendar app that continues to outpace Apple's calendar app.
 - [Obsidian](https://obsidian.md): fast, flexible and configurable (or minimal) as you'd like.
 - [Plexamp](https://www.plex.tv/plexamp/): Plex's flexible and delightful music player.
 - [Ivory](https://tapbots.com/ivory/): the best, most polished Mastodon client for macOS and iOS.
