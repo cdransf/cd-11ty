@@ -62,7 +62,7 @@ Software and services that I use for work and my own enjoyment.
 - <a class="plausible-event-name=NextDNS+referral" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>: a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.
 - <a class="plausible-event-name=DNSimple+referral" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>: a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
 - [Cloudflare](https://cloudfllare.com): I use their pages hosting, workers and myriad other features.
-- <li><a class="plausible-event-name=bunny.net+referral" href="https://bunny.net?ref=revw3mehej">bunny.net</a></li>: an affordable and altogether user-friendly CDN. I host the images for my site with them and use their optimizer/transforms heavily.
+- <a class="plausible-event-name=bunny.net+referral" href="https://bunny.net?ref=revw3mehej">bunny.net</a>: an affordable and altogether user-friendly CDN. I host the images for my site with them and use their optimizer/transforms heavily.
 - [Plausible](https://plausible.io): lightweight, privacy-friendly analytics.
 - <a class="plausible-event-name=Feedpress+referral" href="https://feedpress.com/?affid=34370">Feedpress</a>: they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
 - [Feedbin](https://feedbin.com): performant, open and super reliable RSS.
