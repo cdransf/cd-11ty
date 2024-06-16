@@ -17,7 +17,8 @@
               play
             {% endif %}
           {% endcapture %}
-          <div class="subtext">{{ item.artist }} / {{ item.plays }} {{ playsLabel }}</div>
+          <div class="subtext">{{ item.artist }}</div>
+          <div class="subtext">{{ item.plays }} {{ playsLabel }}</div>
         </div>
       </div>
       {% render "partials/media/progress-bar.liquid", percentage:percentage %}
