@@ -23,6 +23,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3>macOS + iOS</h3>
 
+- [Vivaldi](https://vivaldi.net): a flexible, reliable and privacy focused browser.
 - [Obsidian](https://obsidian.md): fast, flexible and configurable (or minimal) as you'd like.
 - [Plexamp](https://www.plex.tv/plexamp/): Plex's flexible and delightful music player.
 - [Ivory](https://tapbots.com/ivory/): the best, most polished Mastodon client for macOS and iOS.
@@ -45,7 +46,6 @@ Software and services that I use for work and my own enjoyment.
 - [AirBuddy](https://v2.airbuddy.app): finer-grained control over AirPods and other wireless devices.
 - [Meta](https://www.nightbirdsevolve.com/meta): the _best_ utility for tagging and organizing music files on macOS.
 - [Permute](https://software.charliemonroe.net/permute): a useful utility for quickly converting files to different formats.
-- [SoundSource](https://rogueamoeba.com/soundsource): a handy utility for better, more granular control on macOS.
 - [noTunes](https://github.com/tombonez/noTunes): a lightweight utility that prevents Music.app from launching. It also allows you to set a new default music player.
 
 <h3>Dev tools</h3>
