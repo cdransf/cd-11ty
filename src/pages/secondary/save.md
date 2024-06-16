@@ -9,7 +9,7 @@ description: Save a little bit on services that I also use.
 Referral links for services I use. I save some money, and you do as well if you choose to use them.
 
 <ul class="link-list">
-  <li><a class="plausible-event-name=Fastmail+referral" href="https://ref.fm/u30190984">Fastmail</a></li>
+  <li><a class="plausible-event-name=Fastmail+referral" href="https://join.fastmail.com/5363c193">Fastmail</a></li>
   <li><a class="plausible-event-name=NextDNS+referral" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a></li>
   <li><a class="plausible-event-name=DNSimple+referral" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a></li>
   <li><a class="plausible-event-name=bunny.net+referral" href="https://bunny.net?ref=revw3mehej">bunny.net</a></li>
