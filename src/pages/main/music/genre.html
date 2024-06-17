@@ -16,22 +16,22 @@ schema: genre
     is
   {% endif %}
 {%- endcapture -%}
+{% capture js %}
+  {% render "../../../assets/scripts/text-toggle.js" %}
+{% endcapture %}
+<script>{{ js }}</script>
+<noscript><style>[data-toggle-content].text-toggle-hidden {height: unset !important;overflow: unset !important;margin-bottom: unset !important;}[data-toggle-content].text-toggle-hidden::after {display: none !important;}</style></noscript>
 <a class="back-link-header link-icon flex-centered" href="/music" title="Go back to the music index page">{% tablericon "arrow-left" "Go back to the music index page" %} Back to music</a>
 <h2 class="page-header">{{ genre.name }}</h2>
 <article class="genre-focus">
   <p>My top <strong class="highlight-text">{{ genre.name }}</strong> artists {{ connectingWord }} {{ genre.artists | sortByPlaysDescending: "total_plays" | mediaLinks: "artist", 5 }}. I've listened to <strong class="highlight-text">{{ genre.total_plays | formatNumber }}</strong> tracks form this genre.</p>
   <hr />
   {%- if genre.description -%}
-  <div class="toggle-wrapper">
-    <input id="toggle-checkbox" class="toggle-checkbox" type="checkbox">
-    <label class="toggle-label" for="toggle-checkbox">
-      <div aria-role="button"></div>
-    </label>
-    <div data-toggle-content class="text-toggle-hidden">
-      {{ genre.description | markdown }}
-      <p><a href="{{ genre.wiki_link }}">Continue reading at Wikipedia.</a></p>
-      <p class="text-small"><em>Wikipedia content provided under the terms of the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons BY-SA license</a></em></p>
-    </div>
+  <div data-toggle-content class="text-toggle-hidden">
+    {{ genre.description | markdown }}
+    <p><a href="{{ genre.wiki_link }}">Continue reading at Wikipedia.</a></p>
+    <p class="text-small"><em>Wikipedia content provided under the terms of the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons BY-SA license</a></em></p>
   </div>
+  <button data-toggle-button>Show more</button>
   {%- endif -%}
 </article>

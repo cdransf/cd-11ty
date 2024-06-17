@@ -4,8 +4,6 @@
 }
 
 .artist-focus {
-  margin-bottom: var(--sizing-base);
-
   & img {
     border: 1px solid var(--accent-color);
     width: 100%;

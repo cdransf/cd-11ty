@@ -1,5 +1,4 @@
-button,
-[aria-role="button"] {
+button {
   &:not(.theme-toggle) {
     border-radius: var(--rounded-full);
     padding: var(--sizing-sm) var(--sizing-lg);
