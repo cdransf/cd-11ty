@@ -1,4 +1,5 @@
 .toggle-wrapper {
+  display: flex;
   position: relative;
   margin-bottom: calc(var(--sizing-base) + 44px);
 

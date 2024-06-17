@@ -1,80 +1,10 @@
-.artist-focus,
-.genre-focus,
-.watching-focus {
-  border-bottom: 0;
-}
-
-.artist-focus,
 .watching {
   & img {
     border: 1px solid var(--accent-color);
     width: 100%;
     height: auto;
   }
-}
 
-.artist-focus {
-  & .artist-display {
-    display: flex;
-    flex-direction: column;
-    gap: var(--sizing-xs);
-    margin-top: var(--sizing-base);
-
-    & .artist-meta {
-      display: flex;
-      flex-direction: column;
-      gap: var(--sizing-sm);
-      margin-top: var(--sizing-md);
-
-      & p {
-        margin: 0;
-
-        &.title {
-          font-size: var(--font-size-xl);
-        }
-
-        &.sub-meta {
-          font-size: var(--font-size-sm);
-          line-height: var(--line-height-sm);
-
-          svg {
-            width: 18px;
-            height: 18px;
-            margin-right: var(--sizing-xs);
-          }
-        }
-
-        &.favorite {
-          color: var(--favorite);
-        }
-      }
-    }
-  }
-
-  table th:first-of-type,
-  table td:first-of-type {
-    width: calc(var(--sizing-3xl) * 6);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .artist-focus img {
-    max-width: 240px;
-  }
-
-  .artist-focus {
-    & .artist-display {
-      flex-direction: row;
-      gap: var(--sizing-md);
-
-      & .artist-meta {
-        margin-top: 0;
-      }
-    }
-  }
-}
-
-.watching {
   &.page-header {
     margin-bottom: var(--sizing-base);
   }
@@ -181,6 +111,8 @@
 }
 
 .watching-focus {
+  border-bottom: 0;
+
   & .watching-meta {
     display: flex;
     flex-direction: column;
