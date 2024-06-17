@@ -1,7 +1,7 @@
 .toggle-wrapper {
   display: flex;
   position: relative;
-  margin-bottom: calc(var(--sizing-base) + 44px);
+  margin-bottom: calc(var(--sizing-base) + 20px);
 
   & p:first-of-type {
     margin-top: 0;
@@ -50,7 +50,7 @@
   & .toggle-label [aria-role="button"] {
     position: absolute;
     z-index: 2;
-    bottom: -44px;
+    bottom: -20px;
     left: 0;
     margin-bottom: 0;
   }
