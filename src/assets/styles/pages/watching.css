@@ -124,6 +124,7 @@
 
       &.title {
         font-size: var(--font-size-xl);
+        line-height: 1;
       }
 
       &.sub-meta {

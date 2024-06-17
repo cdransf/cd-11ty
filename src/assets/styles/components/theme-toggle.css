@@ -1,7 +1,8 @@
 theme-toggle {
+  display: flex;
   width: var(--sizing-svg-base);
   height: var(--sizing-svg-base);
-  display: flex;
+  margin-left: var(--sizing-md);
 }
 
 .theme-toggle {
