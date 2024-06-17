@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "19.3.22",
+  "version": "19.3.23",
   "description": "The source for my personal site. Built using 11ty.",
   "type": "module",
   "scripts": {
@@ -31,10 +31,10 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@11tyrocks/eleventy-plugin-lightningcss": "^1.4.0",
     "@cdransf/eleventy-plugin-tabler-icons": "^1.6.0",
-    "@supabase/supabase-js": "^2.43.4",
+    "@supabase/supabase-js": "^2.43.5",
     "dotenv-flow": "^4.1.0",
     "html-minifier-terser": "^7.2.0",
-    "liquidjs": "^10.13.1",
+    "liquidjs": "^10.14.0",
     "luxon": "^3.4.4",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.0.1",

@@ -91,7 +91,7 @@ export default async function () {
       showEpisodesMap[showTmdbId].episodes.push({
         name: showTitle,
         url: `/watching/shows/${showTmdbId}`,
-        subtext: `${showTitle} / S${seasonNumber}E${episodeNumber}`,
+        subtext: `S${seasonNumber}E${episodeNumber}`,
         episode: episodeNumber,
         season: seasonNumber,
         tmdbId: showTmdbId,
@@ -113,7 +113,7 @@ export default async function () {
 
       if (show.episodes.length > 1) {
         episodeData.push({
-          name: show.title,
+          name: show['title'],
           url: `/watching/shows/${show['tmdbId']}`,
           subtext: `S${startingSeason}E${startingEpisode} - S${endingSeason}E${endingEpisode}`,
           startingEpisode,

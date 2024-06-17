@@ -89,10 +89,11 @@ code {
 
 sup.footnote-ref {
   line-height: var(--line-height-xs);
+}
 
-  & a {
-    text-decoration: none;
-  }
+sup.footnote-ref a,
+.footnote-backref {
+  text-decoration: none;
 }
 
 strong,

@@ -150,8 +150,8 @@ export default {
         if (item['rating']) normalized['subtext'] = item['rating']
       }
       if (item.type === 'tv') {
-        normalized['title'] = item['title']
-        normalized['alt'] = `${item['title']} from ${item['name']}`
+        normalized['title'] = item['name']
+        normalized['alt'] = `${item['subtext']} of ${item['name']}`
         normalized['subtext'] = item['subtext']
       }
       if (item.type === 'tv-range') {
