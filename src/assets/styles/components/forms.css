@@ -24,7 +24,13 @@ input:focus,
 input:focus-within,
 textarea:focus,
 textarea:focus-within {
+  border: 0;
   outline: 2px dashed var(--accent-color);
+  padding: calc(var(--sizing-sm) + 1px);
+}
+
+.search__form {
+  margin-top: 0;
 }
 
 .search__results {
