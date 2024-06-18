@@ -105,7 +105,6 @@
   #menu-toggle ~ .menu-primary li {
     height: 0;
     border: 0;
-    padding: 0;
   }
 
   #menu-toggle:checked ~ .menu-primary li {
