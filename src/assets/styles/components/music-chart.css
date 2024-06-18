@@ -48,10 +48,14 @@
 
     & .title {
       font-weight: var(--font-weight-bold);
+      line-height: 1.5;
+    }
+
+    & .title,
+    & .subtext {
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
-      line-height: 1.5;
     }
 
     & .title,
@@ -64,12 +68,12 @@
     & .subtext,
     & .timestamp {
       font-size: var(--font-size-sm);
-      white-space: nowrap;
     }
 
     & .timestamp {
       margin-left: var(--sizing-lg);
       text-align: right;
+      white-space: nowrap;
     }
 
     & .count {
@@ -77,7 +81,7 @@
     }
 
     & .info {
-      max-width: calc(95% - var(--sizing-lg));
+      max-width: calc(75% - var(--sizing-lg));
     }
   }
 
