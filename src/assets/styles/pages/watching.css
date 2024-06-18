@@ -81,12 +81,16 @@
           text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
         }
 
-        & .rating {
-          font-size: calc(var(--font-size-sm) * .75);
-        }
-
         & .header {
           font-weight: var(--font-weight-bold);
+        }
+
+        .subheader {
+          gap: var(--sizing-xs);
+        }
+
+        & .rating {
+          font-size: calc(var(--font-size-sm) * .75);
         }
       }
     }
