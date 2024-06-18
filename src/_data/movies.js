@@ -63,6 +63,7 @@ const fetchAllMovies = async () => {
 }
 
 export default async function () {
+  const year = DateTime.now().year
   const movies = await fetchAllMovies()
   const formatMovieData = (movies, watched = true) => movies.map((item) => {
     const movie = {
@@ -89,7 +90,7 @@ export default async function () {
   }).filter(movie => watched ? movie['lastWatched'] : !movie['lastWatched'])
   const favoriteMovies = movies.filter(movie => movie['favorite'])
   const collectedMovies = movies.filter(movie => movie['collected'])
-  const recentlyWatchedMovies = movies.filter(movie => movie['last_watched']).sort((a, b) => new Date(b['last_watched']) - new Date(a['last_watched']))
+  const recentlyWatchedMovies = movies.filter(movie => movie['last_watched'] && year - DateTime.fromISO(movie['last_watched']).year <= 3).sort((a, b) => new Date(b['last_watched']) - new Date(a['last_watched']))
 
   return {
     movies: [...formatMovieData(movies), ...formatMovieData(movies, false)],
