@@ -36,6 +36,10 @@ permalink: /search.html
       renderSearchResults(results)
     })
 
+    $input.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') event.preventDefault()
+    })
+
     const getSearchResults = (query) => miniSearch.search(query, { prefix: true, fuzzy: 0.2, boost: { title: 2 } }).map(({ id }) => resultsById[id])
     const renderSearchResults = (results) => {
       $results.innerHTML = results.map(({ title, url }) => {
@@ -48,7 +52,7 @@ permalink: /search.html
         $results.classList.add('hidden')
       }
     }
-  })();
+  })()
 </script>
 <form class="search__form" action="https://duckduckgo.com" method="get">
   <input class="search__form--input" placeholder="Search" type="search" name="q" autocomplete="off" autofocus>

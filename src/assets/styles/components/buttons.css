@@ -1,4 +1,9 @@
 button {
+  &:focus,
+  &:focus-within {
+    outline: 2px dashed var(--accent-color);
+  }
+
   &:not(.theme-toggle) {
     border-radius: var(--rounded-full);
     padding: var(--sizing-sm) var(--sizing-lg);

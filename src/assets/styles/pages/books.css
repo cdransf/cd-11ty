@@ -37,8 +37,8 @@
     }
 
     & .progress-bar-wrapper {
-      margin-top: var(--font-size-xs);
       max-width: 75%;
+      margin-bottom: 0;
     }
 
     & blockquote.description {
@@ -65,6 +65,7 @@
     & p {
       &.title {
         font-size: var(--font-size-xl);
+        line-height: 1;
       }
 
       &.sub-meta {
@@ -109,6 +110,7 @@
       align-items: start;
 
       & .progress-bar-wrapper {
+        margin-top: 0;
         max-width: 40%;
       }
     }

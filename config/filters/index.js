@@ -142,6 +142,7 @@ export default {
         normalized['title'] = item['title']
         normalized['alt'] = item['title']
         normalized['rating'] = item['rating']
+        normalized['favorite'] = item['favorite']
         normalized['subtext'] = item['rating']
       }
       if (item.type === 'book') {

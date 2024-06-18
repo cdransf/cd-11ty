@@ -18,16 +18,13 @@ textarea {
   margin-bottom: var(--sizing-base);
   font-weight: var(--font-weight-base);
   line-height: var(--line-height-base);
-  transition-property: border-color;
-  transition-timing-function: var(--transition-ease-in-out);
-  transition-duration: var(--transition-duration-default);
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="search"]:focus,
-textarea:focus {
-  border: 1px solid var(--accent-color-hover);
+input:focus,
+input:focus-within,
+textarea:focus,
+textarea:focus-within {
+  outline: 2px dashed var(--accent-color);
 }
 
 .search__results {

@@ -35,6 +35,11 @@ body {
   height: var(--sizing-xs);
 }
 
+a:focus,
+a:focus-within {
+  outline: 2px dashed var(--accent-color);
+}
+
 body::-webkit-scrollbar {
   width: var(--sizing-md);
   height: var(--sizing-md);

@@ -1,4 +1,4 @@
-window.onload = () => {
+window.addEventListener('load', () => {
   const button = document.querySelector('[data-toggle-button]')
   const content = document.querySelector('[data-toggle-content]')
   const text = document.querySelectorAll('[data-toggle-content] p')
@@ -21,4 +21,4 @@ window.onload = () => {
       button.textContent = 'Show more'
     }
   });
-}
+})

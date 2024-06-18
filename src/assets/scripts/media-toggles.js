@@ -1,4 +1,4 @@
-window.onload = () => {
+window.addEventListener('load', () => {
   const initializeButtonSet = (buttonSet) => {
     const buttons = buttonSet.querySelectorAll('button')
     const buttonIds = Array.from(buttons).map(button => button.getAttribute('data-toggle'))
@@ -27,4 +27,4 @@ window.onload = () => {
 
   const buttonSets = document.querySelectorAll('.section-header-buttons')
   buttonSets.forEach(initializeButtonSet)
-}
+})
