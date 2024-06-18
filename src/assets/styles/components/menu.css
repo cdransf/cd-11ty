@@ -6,10 +6,8 @@
   gap: var(--sizing-md);
 
   & > li {
-    overflow: hidden;
     margin: 0;
     display: flex;
-    align-items: center;
 
     & .icon > svg,
     & .active > svg {
@@ -24,11 +22,8 @@
 }
 
 .menu-button-container {
-  margin-left: var(--sizing-md)
-}
-
-.menu-button-container {
   display: none;
+  margin-left: var(--sizing-md);
 
   & .menu-open,
   & .menu-closed {
@@ -79,13 +74,15 @@
     position: absolute;
     top: 0;
     left: 0;
+    gap: 0;
     margin-top: calc(var(--sizing-3xl) * 2.25);
     flex-direction: column;
     width: 100%;
-    gap: 0;
     z-index: 3;
 
     & > li {
+      overflow: hidden;
+      align-items: center;
       justify-content: center;
       margin: 0;
       padding: var(--sizing-sm) 0;
@@ -107,14 +104,12 @@
 
   #menu-toggle ~ .menu-primary li {
     height: 0;
-    margin: 0;
-    padding: 0;
     border: 0;
   }
 
   #menu-toggle:checked ~ .menu-primary li {
     border-bottom: 1px solid var(--gray-light);
-    height:calc(var(--sizing-3xl) * 1.5);
+    height: calc(var(--sizing-3xl) * 1.5);
 
     &:first-child {
       border-top: 1px solid var(--gray-light);

@@ -107,8 +107,8 @@ blockquote {
 }
 
 svg {
-  width: 24px;
-  height: 24px;
+  width: var(--sizing-svg-base);
+  height: var(--sizing-svg-base);
 }
 
 /* links */
