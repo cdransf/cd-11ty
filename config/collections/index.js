@@ -12,7 +12,8 @@ const tagsToHashtags = (tags) => {
         'css': 'CSS',
         'ios': 'iOS',
         'javascript': 'JavaScript',
-        'macos': 'macOS'
+        'macos': 'macOS',
+        'tv': 'TV'
       }
       if (wordMap[normalizedWord]) return wordMap[normalizedWord]
       return word.charAt(0).toUpperCase() + word.slice(1)
