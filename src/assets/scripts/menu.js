@@ -13,14 +13,9 @@ window.addEventListener('load', () => {
       const link = item.querySelector('a')
       if (link) link.setAttribute('tabindex', isMobile() && !isExpanded ? '-1' : '0')
     })
-    if(isExpanded) {
-      menuLabelText.textContent = 'Close mobile menu'
-    }
 
-    if (!isExpanded) {
-      menuLabelText.textContent = 'Open mobile menu'
-      menuButtonContainer.focus()
-    }
+    if(isExpanded) menuLabelText.textContent = 'Close mobile menu'
+    if (!isExpanded) menuLabelText.textContent = 'Open mobile menu'
   }
 
   updateTabIndex()
