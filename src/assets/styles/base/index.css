@@ -554,6 +554,16 @@ li {
   display: none !important;
 }
 
+.screen-readers-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .text-centered {
   text-align: center !important;
 }

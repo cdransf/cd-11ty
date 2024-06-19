@@ -1,5 +1,6 @@
 window.addEventListener('load', () => {
   const menuInput = document.getElementById('menu-toggle')
+  const menuLabelText = document.getElementById('menu-label-text')
   const menuButtonContainer = document.querySelector('.menu-button-container')
   const menuItems = document.querySelectorAll('.menu-primary li[role="menu-item"]')
   const isMobile = () => window.innerWidth <= 768
@@ -12,6 +13,14 @@ window.addEventListener('load', () => {
       const link = item.querySelector('a')
       if (link) link.setAttribute('tabindex', isMobile() && !isExpanded ? '-1' : '0')
     })
+    if(isExpanded) {
+      menuLabelText.textContent = 'Close mobile menu'
+    }
+
+    if (!isExpanded) {
+      menuLabelText.textContent = 'Open mobile menu'
+      menuButtonContainer.focus()
+    }
   }
 
   updateTabIndex()
