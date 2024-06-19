@@ -5,28 +5,23 @@ window.addEventListener('load', () => {
   const menuItems = document.querySelectorAll('.menu-primary li[role="menu-item"]')
   const isMobile = () => window.innerWidth <= 768
 
-  const updateTabIndex = () => {
+  const udpateMenuState = () => {
     const isExpanded = menuInput.checked
     menuButtonContainer.setAttribute('aria-expanded', isExpanded)
-
-    menuItems.forEach(item => {
-      const link = item.querySelector('a')
-      if (link) link.setAttribute('tabindex', isMobile() && !isExpanded ? '-1' : '0')
-    })
 
     if(isExpanded) menuLabelText.textContent = 'Close mobile menu'
     if (!isExpanded) menuLabelText.textContent = 'Open mobile menu'
   }
 
-  updateTabIndex()
+  udpateMenuState()
 
-  menuInput.addEventListener('change', updateTabIndex)
+  menuInput.addEventListener('change', udpateMenuState)
 
   menuButtonContainer.addEventListener('keydown', e => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault()
       menuInput.checked = !menuInput.checked
-      updateTabIndex()
+      udpateMenuState()
     }
   })
 
@@ -42,7 +37,7 @@ window.addEventListener('load', () => {
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && isMobile() && menuInput.checked) {
       menuInput.checked = false
-      updateTabIndex()
+      udpateMenuState()
     }
   })
 })

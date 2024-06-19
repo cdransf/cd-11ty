@@ -51,22 +51,26 @@
 
 #menu-toggle {
   display: none;
-}
 
-#menu-toggle:checked + .menu-button-container .menu-closed {
-  display: none;
-}
+  &:checked + .menu-button-container {
+    & .menu-closed {
+      display: none;
+    }
 
-#menu-toggle:checked + .menu-button-container .menu-open {
-  display: block;
-}
+    & .menu-open {
+      display: block;
+    }
+  }
 
-#menu-toggle:not(:checked) + .menu-button-container .menu-closed {
-  display: block;
-}
+  &:not(:checked) + .menu-button-container {
+    & .menu-closed {
+      display: block;
+    }
 
-#menu-toggle:not(:checked) + .menu-button-container .menu-open {
-  display: none;
+    & .menu-open {
+      display: none;
+    }
+  }
 }
 
 a[role="menu-item"]:focus {
