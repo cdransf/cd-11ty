@@ -38,6 +38,7 @@ body {
 a:focus,
 a:focus-within {
   outline: 2px dashed var(--accent-color);
+  text-decoration: none;
 }
 
 body::-webkit-scrollbar {
@@ -134,6 +135,9 @@ a {
   }
 
   &.back-link-header {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: var(--sizing-base);
   }
 }

@@ -11,7 +11,7 @@ schema: show
   {{ show.title }} / {{ show.year }}
 {%- endcapture -%}
 {% assign lastWatched = show | getLastWatched %}
-<a class="back-link-header link-icon flex-centered" href="/watching" title="Go back to the watching index page">{% tablericon "arrow-left" "Go back to the watching index page" %} Back to watching</a>
+<a class="back-link-header link-icon" href="/watching" title="Go back to the watching index page">{% tablericon "arrow-left" "Go back to the watching index page" %} Back to watching</a>
 <article class="watching-focus">
   <img
     srcset="
