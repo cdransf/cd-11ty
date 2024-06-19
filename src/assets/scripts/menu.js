@@ -3,7 +3,6 @@ window.addEventListener('load', () => {
   const menuButtonContainer = document.querySelector('.menu-button-container')
   const menuItems = document.querySelectorAll('.menu-primary li[role="menu-item"]')
   const isMobile = () => window.innerWidth <= 768
-
   const updateTabIndex = () => {
     const isExpanded = menuInput.checked
     menuButtonContainer.setAttribute('aria-expanded', isExpanded)
@@ -13,16 +12,7 @@ window.addEventListener('load', () => {
       if (link) link.setAttribute('tabindex', isMobile() && !isExpanded ? '-1' : '0')
     })
   }
-
-  const handleMenuChange = () => {
-    updateTabIndex()
-    if (menuInput.checked) {
-      const firstLink = menuItems[0].querySelector('a')
-      if (firstLink) firstLink.focus()
-    } else {
-      menuButtonContainer.focus()
-    }
-  }
+  const handleMenuChange = () => updateTabIndex()
 
   updateTabIndex()
 
