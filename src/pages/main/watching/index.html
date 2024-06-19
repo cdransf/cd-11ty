@@ -12,33 +12,33 @@ schema: watching
 <p>Here's all of the TV and movies I've been watching presented in what is (hopefully) an organized fashion. You can also take a look at the <a href="/watching/movies-to-watch">movies</a> and <a href="/watching/shows-to-watch">shows</a> I'm planning to watch.</p>
 {% render "partials/banners/rss.liquid", url: "https://feedpress.me/coryd-movies", text: "Subscribe to my movies feed or follow along on this page" %}
 <hr />
-<a class="link-icon flex-centered" href="/watching/recent/movies">
-  <h2 id="movies" class="section-header no-top-margin flex-centered">
+<h2 id="movies" class="section-header no-top-margin">
+  <a class="link-icon" href="/watching/recent/movies">
     {% tablericon "movie" "Recent movies" %}
     Recent movies
-  </h2>
-</a>
+  </a>
+</h2>
 {% render "partials/media/grid.liquid", data:movies.recentlyWatched, shape: "vertical", count: 6 %}
-<a class="link-icon flex-centered" href="/watching/recent/shows">
-  <h2 id="tv" class="section-header reduced-margin flex-centered">
+<h2 id="tv" class="section-header reduced-margin">
+  <a class="link-icon" href="/watching/recent/shows">
     {% tablericon "device-tv" "Recent shows" %}
     Recent shows
-  </h2>
-</a>
+  </a>
+</h2>
 {% render "partials/media/grid.liquid", data:tv.recentlyWatched, shape: "vertical", count: 6 %}
-<a class="link-icon flex-centered" href="/watching/favorite-movies">
-  <h2 id="favorite-movies" class="section-header reduced-margin flex-centered">
+<h2 id="favorite-movies" class="section-header reduced-margin">
+  <a class="link-icon" href="/watching/favorite-movies">
     {% tablericon "star" "Favorite movies" %}
     Favorite movies
-  </h2>
-</a>
+  </a>
+</h2>
 {% assign favoriteMovies = movies.favorites | featuredWatching: 6 %}
 {% render "partials/media/watching/grid.liquid", mediaItems:favoriteMovies, count: 6 %}
-<a class="link-icon flex-centered" href="/watching/favorite-shows">
-  <h2 id="favorite-shows" class="section-header reduced-margin flex-centered">
+<h2 id="favorite-shows" class="section-header reduced-margin">
+  <a class="link-icon" href="/watching/favorite-shows">
     {% tablericon "star" "Favorite shows" %}
     Favorite shows
-  </h2>
-</a>
+  </a>
+</h2>
 {% assign favoriteShows = tv.favorites | featuredWatching: 6 %}
 {% render "partials/media/watching/grid.liquid", mediaItems:favoriteShows, count: 6 %}

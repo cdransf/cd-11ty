@@ -82,6 +82,7 @@
 }
 
 .book-focus {
+  margin-top: var(--sizing-base);
   border-bottom: 0;
 
   & .book-display {

@@ -15,27 +15,27 @@ schema: music-index
 <p><strong class="highlight-text">See more of the</strong> <a href="/music/artists/this-week/">artists</a>, <a href="/music/albums/this-week/">albums</a> or <a href="/music/tracks/this-week/">tracks</a> I've listened to this week. <strong class="highlight-text">Or take a look at what I've listened to</strong> <a href="/music/this-month">this month</a> or <a href="/music/three-months">over the last 3 months</a></p>
 {% render "partials/widgets/now-playing.liquid" %}
 <hr />
-<a class="link-icon flex-centered" href="/music/artists/this-week">
-  <h2 id="artists" class="section-header no-top-margin flex-centered">
+<h2 id="artists" class="section-header no-top-margin">
+  <a class="link-icon" href="/music/artists/this-week">
     {% tablericon "microphone-2" "Artists" %}
     Artists
-  </h2>
-</a>
+  </a>
+</h2>
 {% render "partials/media/grid.liquid", data:music.week.artists, shape: "square", count: 8, loading: "eager" %}
-<a class="link-icon flex-centered" href="/music/albums/this-week">
-  <h2 id="albums" class="section-header reduced-margin flex-centered">
+<h2 id="albums" class="section-header reduced-margin">
+  <a class="link-icon" href="/music/albums/this-week">
     {% tablericon "vinyl" "Albums" %}
     Albums
-  </h2>
-</a>
+  </a>
+</h2>
 {% render "partials/media/grid.liquid", data:music.week.albums, shape: "square", count: 8 %}
 <div class="section-header-wrapper">
-  <a class="link-icon flex-centered" href="/music/tracks/this-week">
-    <h2 id="tracks" class="section-header reduced-margin flex-centered">
+  <h2 id="tracks" class="section-header reduced-margin">
+    <a class="link-icon" href="/music/tracks/this-week">
       {% tablericon "playlist" "Tracks" %}
       Tracks
-    </h2>
-  </a>
+    </a>
+  </h2>
   <div class="section-header-buttons reduced-margin client-side">
     <button class="small active" data-toggle="tracks-recent">Recent</button>
     <button class="small secondary" data-toggle="tracks-window">This week</button>

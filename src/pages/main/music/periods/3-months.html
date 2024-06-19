@@ -11,24 +11,24 @@ schema: music-period
 <p>I've listened to <strong class="highlight-text">{{ music.threeMonth.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.threeMonth.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.threeMonth.totalTracks }} tracks</strong> over the last 3 months. Most of that has been {{ music.threeMonth.genres | sortByPlaysDescending: "plays" | genreStrings: "genre" | mediaLinks: "genre", 5 }}.</p>
 <p><strong class="highlight-text">See more of the</strong> <a href="/music/artists/three-months/">artists</a>, <a href="/music/albums/three-months/">albums</a> or <a href="/music/tracks/three-months/">tracks</a> I've listened to over the last 3 months. <strong class="highlight-text">Or take a look at what I've listened to</strong> <a href="/music">this week</a> or <a href="/music/this-month">this month</a>.</p>
 <hr />
-<a class="link-icon flex-centered" href="/music/artists/three-months">
-  <h2 id="artists" class="section-header no-top-margin flex-centered">
+<h2 id="artists" class="section-header no-top-margin">
+  <a class="link-icon" href="/music/artists/three-months">
     {% tablericon "microphone-2" "Artists" %}
     Artists
-  </h2>
-</a>
+  </a>
+</h2>
 {% render "partials/media/grid.liquid", data:music.threeMonth.artists, shape: "square", count: 8, loading: "eager" %}
-<a class="link-icon flex-centered" href="/music/albums/three-months">
-  <h2 id="albums" class="section-header reduced-margin flex-centered">
+<h2 id="albums" class="section-header reduced-margin">
+  <a class="link-icon" href="/music/albums/three-months">
     {% tablericon "vinyl" "Albums" %}
     Albums
-  </h2>
-</a>
+  </a>
+</h2>
 {% render "partials/media/grid.liquid", data:music.threeMonth.albums, shape: "square", count: 8 %}
-<a class="link-icon flex-centered" href="/music/tracks/three-months">
-  <h2 id="tracks" class="section-header reduced-margin flex-centered">
+<h2 id="tracks" class="section-header reduced-margin">
+  <a class="link-icon" href="/music/tracks/three-months">
     {% tablericon "playlist" "Tracks" %}
     Tracks
-  </h2>
-</a>
+  </a>
+</h2>
 {% render "partials/media/music/chart.liquid", data:music.threeMonth.tracks, mostPlayed:music.threeMonth.tracks[0].plays, count: 10 %}

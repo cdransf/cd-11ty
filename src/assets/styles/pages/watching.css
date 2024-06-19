@@ -115,6 +115,7 @@
 }
 
 .watching-focus {
+  margin-top: var(--sizing-base);
   border-bottom: 0;
 
   & .watching-meta {
