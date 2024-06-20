@@ -32,7 +32,10 @@ export default {
   },
 
   // watching
-  featuredWatching: (watching, count) => shuffleArray(watching).slice(0, count),
+  featuredWatching: (watching, count) => {
+    const data = [...watching]
+    return shuffleArray(data).slice(0, count)
+  },
 
   // dates
   isoDateOnly: (date, separator) => {
