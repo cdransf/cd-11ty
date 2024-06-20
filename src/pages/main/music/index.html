@@ -15,28 +15,28 @@ schema: music-index
 <p><strong class="highlight-text">See more of the</strong> <a href="/music/artists/this-week/">artists</a>, <a href="/music/albums/this-week/">albums</a> or <a href="/music/tracks/this-week/">tracks</a> I've listened to this week. <strong class="highlight-text">Or take a look at what I've listened to</strong> <a href="/music/this-month">this month</a> or <a href="/music/three-months">over the last 3 months</a></p>
 {% render "partials/widgets/now-playing.liquid" %}
 <hr />
-<h2 id="artists" class="section-header no-top-margin">
+<h3 id="artists" class="section-header no-top-margin">
   <a class="link-icon" href="/music/artists/this-week">
     {% tablericon "microphone-2" "Artists" %}
     Artists
   </a>
-</h2>
+</h3>
 {% render "partials/media/grid.liquid", data:music.week.artists, shape: "square", count: 8, loading: "eager" %}
-<h2 id="albums" class="section-header reduced-margin">
+<h3 id="albums" class="section-header">
   <a class="link-icon" href="/music/albums/this-week">
     {% tablericon "vinyl" "Albums" %}
     Albums
   </a>
-</h2>
+</h3>
 {% render "partials/media/grid.liquid", data:music.week.albums, shape: "square", count: 8 %}
 <div class="section-header-wrapper">
-  <h2 id="tracks" class="section-header reduced-margin">
+  <h3 id="tracks" class="section-header">
     <a class="link-icon" href="/music/tracks/this-week">
       {% tablericon "playlist" "Tracks" %}
       Tracks
     </a>
-  </h2>
-  <div class="section-header-buttons reduced-margin client-side">
+  </h3>
+  <div class="section-header-buttons client-side">
     <button class="small active" data-toggle="tracks-recent">Recent</button>
     <button class="small secondary" data-toggle="tracks-window">This week</button>
   </div>
@@ -48,9 +48,9 @@ schema: music-index
   {% render "partials/media/music/chart.liquid", data:music.week.tracks, mostPlayed:music.week.tracks[0].plays, count: 10 %}
 </div>
 {% if albumReleases.size > 0 %}
-<h2 id="album-releases" class="section-header flex-centered">
+<h3 id="album-releases" class="section-header flex-centered">
   {% tablericon "calendar-time" "Anticipated albums" %}
   Anticipated albums
-</h2>
+</h3>
 {% render "partials/media/grid.liquid", data:albumReleases, shape: "square", count: 8 %}
 {% endif %}

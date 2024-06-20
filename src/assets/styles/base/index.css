@@ -187,10 +187,6 @@ h6 { font-size: var(--font-size-sm) }
 .section-header {
   margin: var(--sizing-xl) 0 var(--sizing-lg);
 
-  &.reduced-margin {
-    margin: var(--sizing-md) 0 var(--sizing-lg);
-  }
-
   &.no-top-margin {
     margin: 0 0 var(--sizing-lg);
   }
@@ -611,7 +607,7 @@ li {
     flex-direction: row;
   }
 
-  article h2 {
+  article h3 {
     margin: 0 0 var(--sizing-xs);
   }
 

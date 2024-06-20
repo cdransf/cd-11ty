@@ -1,8 +1,8 @@
 {% if popularPosts.size > 0 %}
-<h2 class="link-list-header flex-centered">
+<h3 class="link-list-header flex-centered">
   {% tablericon "flame" "Popular" %}
   Popular posts
-</h2>
+</h3>
 <ul class="link-list">
   {% for post in popularPosts limit: 5 %}
     <li>
