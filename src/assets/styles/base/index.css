@@ -197,7 +197,7 @@ h6 { font-size: var(--font-size-sm) }
 }
 
 .section-header-buttons {
-  margin: var(--sizing-md) 0 var(--sizing-lg);
+  margin: 0 0 var(--sizing-lg);
 
   & > button {
     margin-bottom: var(--sizing-sm) !important;
@@ -398,6 +398,10 @@ article {
   }
 }
 
+article h3 {
+  margin: 0;
+}
+
 footer {
   & .explainer {
     margin: var(--sizing-3xl) 0 var(--sizing-lg);
@@ -590,7 +594,6 @@ li {
   flex-wrap: wrap;
 }
 
-/* screens: md */
 @media screen and (min-width: 768px) {
   h1 { font-size: var(--font-size-3xl) }
   h2 { font-size: var(--font-size-2xl) }
@@ -607,8 +610,8 @@ li {
     flex-direction: row;
   }
 
-  article h3 {
-    margin: 0 0 var(--sizing-xs);
+  .section-header-buttons {
+    margin: var(--sizing-md) 0 var(--sizing-lg);
   }
 
   footer nav.social {
