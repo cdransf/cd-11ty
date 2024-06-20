@@ -32,7 +32,7 @@ export default {
   },
 
   // watching
-  featuredWatching: (watching, count) => shuffleArray(watching.filter(watch => watch.favorite === true)).slice(0, count),
+  featuredWatching: (watching, count) => shuffleArray(watching).slice(0, count),
 
   // dates
   isoDateOnly: (date, separator) => {
