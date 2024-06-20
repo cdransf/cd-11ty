@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
   const menuInput = document.getElementById('menu-toggle')
   const menuLabelText = document.getElementById('menu-label-text')
   const menuButtonContainer = document.querySelector('.menu-button-container')
-  const menuItems = document.querySelectorAll('.menu-primary li[role="menu-item"]')
+  const menuItems = document.querySelectorAll('.menu-primary li')
   const isMobile = () => window.innerWidth <= 768
 
   const udpateMenuState = () => {

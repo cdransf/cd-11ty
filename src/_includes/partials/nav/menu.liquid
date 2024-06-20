@@ -4,16 +4,14 @@
 <script>{{ js }}</script>
 <div class="flex-centered">
   <input id="menu-toggle" type="checkbox" aria-hidden="true" />
-  <label class="menu-button-container" for="menu-toggle" aria-controls="primary-navigation" aria-expanded="false" tabindex="0">
+  <label class="menu-button-container" for="menu-toggle" aria-expanded="false" tabindex="0">
     <span id="menu-label-text" class="screen-readers-only">Toggle mobile menu</span>
     <div class="menu-closed" aria-hidden="true">{% tablericon "menu" "Menu closed" %}</div>
     <div class="menu-open" aria-hidden="true">{% tablericon "x" "Menu open" %}</div>
   </label>
   <ul class="menu-primary" aria-label="Primary site navigation" id="primary-navigation" role="menu">
     {% for link in nav.menu %}
-    <li role="menu-item">
-      {% render "partials/nav/link.liquid", page:page, link:link.name, icon:link.icon %}
-    </li>
+      <li>{% render "partials/nav/link.liquid", page:page, link:link.name, icon:link.icon %}</li>
     {% endfor %}
   </ul>
   {% render "partials/nav/theme-toggle.liquid" %}

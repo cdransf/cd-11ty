@@ -73,10 +73,6 @@
   }
 }
 
-a[role="menu-item"]:focus {
-  outline: none;
-}
-
 @media (max-width: 768px) {
   .menu-primary {
     position: absolute;
