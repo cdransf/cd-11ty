@@ -3,7 +3,12 @@
   <div class="watching hero shadow">
     <div class="meta-text">
       <div class="header">{{ movie.title }} ({{ movie.year }})</div>
-      <div class="subheader">Last watched @ {{ movie.dateAdded | date: "%B %e, %Y" }}</div>
+      <div class="subheader">
+        Last watched @ {{ movie.dateAdded | date: "%B %e, %Y" }}
+        {%- if movie.rating -%}
+          <span class="rating">({{ movie.rating }})</span>
+        {%- endif -%}
+      </div>
     </div>
     <img
       srcset="

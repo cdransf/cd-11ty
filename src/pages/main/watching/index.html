@@ -6,7 +6,7 @@ permalink: "/watching/index.html"
 updated: "now"
 schema: watching
 ---
-{% assign featuredMovie = movies.favorites | featuredWatching: 1 | first %}
+{% assign featuredMovie = movies.recentlyWatched | featuredWatching: 1 | first %}
 <h2 class="watching page-header">{{ title }}</h2>
 {% render "partials/media/watching/hero.liquid" movie:featuredMovie %}
 <p>Here's all of the TV and movies I've been watching presented in what is (hopefully) an organized fashion. You can also take a look at the <a href="/watching/movies-to-watch">movies</a> and <a href="/watching/shows-to-watch">shows</a> I'm planning to watch.</p>

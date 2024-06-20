@@ -80,7 +80,12 @@ export const allContent = (collection) => {
         }
         if (item?.['link']) content['url'] = item?.['link']
         if (item?.['slug']) content['url'] = new URL(item['slug'], BASE_URL).toString()
-        if (item?.['description']) content['description'] = `${item['description'].split(' ').slice(0, 100).join(' ')}...<br/><br/>`
+        if (item?.['description']) {
+          content['description'] = `${item['description'].split(' ').slice(0, 25).join(' ')}...<br/><br/>`
+        } else {
+          content['description'] = ''
+        }
+
         const date = getDate ? parseDate(getDate(item)) : null
         if (date) content['date'] = date
         aggregateContent.push(content)
