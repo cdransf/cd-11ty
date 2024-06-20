@@ -4,7 +4,7 @@
     <div class="meta-text">
       <div class="header">{{ movie.title }} ({{ movie.year }})</div>
       <div class="subheader">
-        Last watched @ {{ movie.dateAdded | date: "%B %e, %Y" }}
+        Last watched on {{ movie.dateAdded | date: "%B %e, %Y" }}
         {%- if movie.rating -%}
           <span class="rating">({{ movie.rating }})</span>
         {%- endif -%}
