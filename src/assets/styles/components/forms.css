@@ -31,10 +31,14 @@ textarea:focus-within {
 
 .search__form {
   margin-top: 0;
+
+  & .search__form--input {
+    margin-bottom: 0;
+  }
 }
 
 .search__results {
-  margin-top: 0;
+  margin: var(--sizing-base) 0 0;
   padding: 0;
   list-style: none;
 

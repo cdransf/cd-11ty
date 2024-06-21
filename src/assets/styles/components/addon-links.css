@@ -11,10 +11,6 @@
     margin-top: var(--sizing-base);
   }
 
-  & .link-list-header {
-    margin: var(--sizing-base) 0;
-  }
-
   & .link-list {
     margin-bottom: 0;
   }
