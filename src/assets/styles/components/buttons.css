@@ -1,9 +1,4 @@
 button {
-  &:focus,
-  &:focus-within {
-    outline: 2px dashed var(--accent-color);
-  }
-
   &:not(.theme-toggle) {
     border-radius: var(--rounded-full);
     padding: var(--sizing-sm) var(--sizing-lg);
@@ -24,7 +19,9 @@ button {
 
   &:not(.theme-toggle, .active):hover,
   &:not(.theme-toggle, .active):active,
-  &:not(.theme-toggle, .active):focus {
+  &:not(.theme-toggle, .active):focus,
+  &:not(.theme-toggle, .active):focus-within {
+    outline: 2px dashed var(--accent-color);
     background-color: var(--accent-color-hover);
     border-color: var(--accent-color-hover);
     transition-timing-function: var(--transition-ease-in-out);
