@@ -23,7 +23,6 @@ export default async function () {
       { name: 'npm', url: 'https://www.npmjs.com/~cdransf', icon: 'brand-npm'},
       { name: 'Mastodon', url: 'https://social.lol/@cory', icon: 'brand-mastodon' },
       { name: 'ListenBrainz', url: 'https://listenbrainz.org/user/cdransf/', icon: 'brain' },
-      { name: 'Instapaper', url: 'https://www.instapaper.com/p/coryd', icon: 'news' },
       { name: 'Coffee', url: 'https://buymeacoffee.com/cory', icon: 'coffee' },
       { name: 'Webrings', url: '/webrings', icon: 'heart-handshake' },
     ],
