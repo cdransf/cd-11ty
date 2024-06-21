@@ -528,10 +528,6 @@ li {
   }
 }
 
-.link-list-header {
-  margin: var(--sizing-3xl) 0 var(--sizing-lg);
-}
-
 /* images */
 .image-banner {
   border: 1px solid var(--accent-color);
