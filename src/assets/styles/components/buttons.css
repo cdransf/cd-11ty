@@ -21,11 +21,17 @@ button {
   &:not(.theme-toggle, .active):active,
   &:not(.theme-toggle, .active):focus,
   &:not(.theme-toggle, .active):focus-within {
-    outline: 2px dashed var(--accent-color);
     background-color: var(--accent-color-hover);
     border-color: var(--accent-color-hover);
     transition-timing-function: var(--transition-ease-in-out);
     transition-duration: var(--transition-duration-default);
+  }
+
+  &:not(.active):hover,
+  &:not(.active):active,
+  &:not(.active):focus,
+  &:not(.active):focus-within {
+    outline: 2px dashed var(--accent-color);
   }
 
   &.small {
