@@ -138,6 +138,10 @@ a {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
+
+    & + .page-header {
+      margin-top: var(--sizing-base);
+    }
   }
 }
 
