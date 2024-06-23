@@ -14,7 +14,7 @@ button {
     background-color: var(--accent-color);
     appearance: none;
     border: 2px solid var(--accent-color);
-    transition-property: all;
+    transition-property: border;
   }
 
   &:not(.theme-toggle, .active):hover,
@@ -27,17 +27,23 @@ button {
     transition-duration: var(--transition-duration-default);
   }
 
-  &:not(.active):hover,
-  &:not(.active):active,
   &:not(.active):focus,
   &:not(.active):focus-within {
+    transition-property: none;
     outline: 2px dashed var(--accent-color);
+    padding: calc(var(--sizing-sm) + 2px) calc(var(--sizing-lg) + 2px);
+    border: 0;
   }
 
   &.small {
     font-size: var(--font-size-sm);
     line-height: var(--line-height-sm);
     padding: var(--sizing-xs) var(--sizing-sm);
+
+    &:not(.active):focus,
+    &:not(.active):focus-within {
+      padding: var(--sizing-xs) calc(var(--sizing-sm) + 2px);
+    }
   }
 
   &.secondary {

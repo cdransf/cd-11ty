@@ -50,9 +50,13 @@
   }
 
   & a:hover img,
-  & a:focus img,
   & a:active img {
     border-color: var(--accent-color-hover)
+  }
+
+  & a:focus img,
+  & a:focus-within img {
+    border: 0
   }
 
   & .meta-text {

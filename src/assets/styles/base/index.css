@@ -183,9 +183,12 @@ h5 { font-size: var(--font-size-md) }
 h6 { font-size: var(--font-size-sm) }
 
 .section-header-wrapper {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  margin: var(--sizing-xl) 0 var(--sizing-lg);
+
+  & .section-header {
+    margin: 0;
+  }
 }
 
 .section-header {
@@ -201,14 +204,12 @@ h6 { font-size: var(--font-size-sm) }
 }
 
 .section-header-buttons {
-  margin: 0 0 var(--sizing-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--sizing-sm);
 
   & > button {
-    margin-bottom: var(--sizing-sm) !important;
-
-    &:last-of-type {
-      margin-right: 0 !important;
-    }
+    margin-bottom: 0 !important;
   }
 }
 
@@ -602,14 +603,6 @@ li {
 
   main {
     max-width: 768px;
-  }
-
-  .section-header-wrapper {
-    flex-direction: row;
-  }
-
-  .section-header-buttons {
-    margin: var(--sizing-md) 0 var(--sizing-lg);
   }
 
   footer nav.social {
