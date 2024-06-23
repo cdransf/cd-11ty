@@ -48,6 +48,7 @@
 # 404s
 /robot.txt /robots.txt 301
 robotx.txt /robots.txt 301
+/sitemap /sitemap.xml 301
 /sitemap.txt /sitemap.xml 301
 /blog / 301
 /posts/2024 / 301

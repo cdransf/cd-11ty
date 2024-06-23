@@ -342,7 +342,7 @@ nav .active svg {
 }
 
 /* social icons */
-.at svg { stroke: var(--brand-fastmail) !important; }
+.at svg { stroke: var(--brand-proton) !important; }
 .brand-github svg { stroke: var(--brand-github) !important; }
 .brand-npm svg { stroke: var(--brand-npm) !important; }
 .brand-mastodon svg { stroke: var(--brand-mastodon) !important; }
