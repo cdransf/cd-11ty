@@ -421,8 +421,7 @@ footer {
       }
 
       & a {
-        width: var(--sizing-xl);
-        height: var(--sizing-xl);
+        display: flex;
       }
     }
 
