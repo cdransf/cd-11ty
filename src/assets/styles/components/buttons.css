@@ -27,12 +27,17 @@ button {
     transition-duration: var(--transition-duration-default);
   }
 
-  &:not(.active):focus,
-  &:not(.active):focus-within {
+  &:not(.theme-toggle, .active):focus,
+  &:not(.theme-toggle, .active):focus-within {
     transition-property: none;
     outline: 2px dashed var(--accent-color);
     padding: calc(var(--sizing-sm) + 2px) calc(var(--sizing-lg) + 2px);
     border: 0;
+  }
+
+  &.theme-toggle:focus,
+  &.theme-toggle:focus-within {
+    outline: 2px dashed var(--accent-color);
   }
 
   &.small {
