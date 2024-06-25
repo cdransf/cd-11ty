@@ -14,6 +14,7 @@ export default async function () {
     footer: [
       { name: 'Now' },
       { name: 'Uses' },
+      { name: 'Colophon' },
       { name: 'Blogroll' },
       { name: 'Save' },
     ],
