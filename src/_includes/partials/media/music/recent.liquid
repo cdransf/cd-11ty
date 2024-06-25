@@ -5,15 +5,11 @@
       <div class="meta">
         <img
           srcset="
-            https://cdn.coryd.dev{{ item.image }}?aspect_ratio=1:1&width=64 256w 64w,
+            https://cdn.coryd.dev{{ item.image }}?aspect_ratio=1:1&width=64 64w,
             https://cdn.coryd.dev{{ item.image }}?aspect_ratio=1:1&width=128 128w,
-            https://cdn.coryd.dev{{ item.image }}?aspect_ratio=1:1&width=256 256w,
-            https://cdn.coryd.dev{{ item.image }}?aspect_ratio=1:1&width=512 512w
           "
-          sizes="(max-width: 450px) 64px,
-            (max-width: 850px) 128px,
-            (max-width: 1000px) 256px,
-            512px"
+          sizes="(max-width: 1000px) 64px,
+            128px"
           src="https://cdn.coryd.dev{{ item.image }}?aspect_ratio=1:1&width=512"
           alt="{{ alt }}"
           loading="lazy"
