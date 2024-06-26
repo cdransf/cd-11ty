@@ -1,6 +1,15 @@
 .music-chart {
   margin-bottom: var(--sizing-base);
 
+  & ol {
+    padding-left: 0;
+    margin-top: 0;
+
+    & li:first-of-type {
+      margin-top: 0;
+    }
+  }
+
   & .item {
     display: flex;
     flex-direction: row;
@@ -76,10 +85,6 @@
       white-space: nowrap;
     }
 
-    & .count {
-      margin-right: var(--sizing-sm);
-    }
-
     & .info {
       max-width: calc(75% - var(--sizing-lg));
     }
@@ -110,6 +115,10 @@
 
 @media screen and (min-width: 768px) {
   .music-chart {
+    & ol {
+      list-style-position: outside;
+    }
+
     & .meta,
     & .presentation {
       width: calc(80% - var(--sizing-lg));

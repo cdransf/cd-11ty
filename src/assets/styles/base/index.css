@@ -139,7 +139,8 @@ a {
     flex-direction: row;
     align-items: center;
 
-    & + .page-header {
+    & + .page-header,
+    & + .music-chart {
       margin-top: var(--sizing-base);
     }
   }
