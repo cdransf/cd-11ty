@@ -211,6 +211,10 @@ h6 { font-size: var(--font-size-sm) }
 
   & > button {
     margin-bottom: 0 !important;
+
+    &:last-of-type {
+      margin-right: 0 !important;
+    }
   }
 }
 
