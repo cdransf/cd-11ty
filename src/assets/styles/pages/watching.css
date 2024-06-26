@@ -1,3 +1,7 @@
+:root {
+  --aspect-ratio-banner: 1 / 0.5625;
+}
+
 .watching {
   & img {
     border: 1px solid var(--accent-color);
@@ -12,12 +16,13 @@
   &.hero {
     position: relative;
     overflow: hidden;
+    aspect-ratio: var(--aspect-ratio-banner);
 
     div.meta-text {
       color: white;
       position: absolute;
       left: var(--sizing-sm);
-      bottom: var(--sizing-lg);
+      bottom: var(--sizing-sm);
       z-index: 2;
       display: flex;
       flex-direction: column;
@@ -43,11 +48,11 @@
       position: absolute;
       z-index: 1;
       content: '';
-      bottom: 11px;
+      bottom: 0;
       left: 1px;
       box-shadow: inset 0 -70px 75px -40px #000;
       width: calc(100% - 2px);
-      height: calc(100% - 11px);
+      height: 100%;
     }
   }
 
@@ -57,9 +62,9 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-bottom: var(--sizing-base);
 
-    & a,
-    & div {
+    & a {
       display: flex;
+      aspect-ratio: var(--aspect-ratio-banner);
     }
 
     & div {
@@ -103,6 +108,7 @@
     position: relative;
     display: flex;
     overflow: hidden;
+    aspect-ratio: var(--aspect-ratio-banner);
 
     &.shadow::after {
       position: absolute;
