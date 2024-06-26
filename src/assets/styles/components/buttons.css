@@ -10,6 +10,7 @@ button {
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-base);
+    white-space: nowrap;
     color: var(--color-lightest);
     background-color: var(--accent-color);
     appearance: none;
