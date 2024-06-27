@@ -40,6 +40,8 @@
 /posts/2024/link-blogging-using-readwise/ /posts/2024/link-blogging-using-readwise-reader/ 301
 /2022/12/automating-email-cleanup-in-gmail /posts/2022/automating-email-cleanup-in-gmail/ 301
 /posts/2023/automate-syndicate-content-mastodon-eleventy/ /posts/2023/automate-and-syndicate-content-from-eleventy-to-mastodon/ 301
+/posts/2023/road-to-madness-apple-music-charts/ /posts/2023/road-to-madness-charting-apple-music-listening-data/ 301
+/posts/2023/semi-automated-hashtags-syndicated-posts/ /posts/2023/semi-automated-hashtags-for-syndicated-posts/ 301
 
 # music
 /music/artists/hyperdontia-denmark-turkiye /music/artists/hyperdontia-denmark-tuerkiye 301
@@ -47,6 +49,7 @@
 # 404s
 /robot.txt /robots.txt 301
 robotx.txt /robots.txt 301
+/sitemap /sitemap.xml 301
 /sitemap.txt /sitemap.xml 301
 /blog / 301
 /posts/2024 / 301

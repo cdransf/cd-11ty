@@ -1,6 +1,8 @@
 :root {
   --grid-square: repeat(2,minmax(0,1fr));
   --grid-vertical: repeat(3,minmax(0,1fr));
+  --aspect-ratio-square: 1/1;
+  --aspect-ratio-vertical: 2/3;
 }
 
 .media-grid {
@@ -15,6 +17,10 @@
   &.square {
     grid-template-columns: var(--grid-square);
 
+    & a {
+      aspect-ratio: var(--aspect-ratio-square);
+    }
+
     & img {
       width: 100%;
       height: 100%;
@@ -23,6 +29,10 @@
 
   &.vertical {
     grid-template-columns: var(--grid-vertical);
+
+    & a {
+      aspect-ratio: var(--aspect-ratio-vertical);
+    }
 
     & img {
       width: 100%;
@@ -50,9 +60,13 @@
   }
 
   & a:hover img,
-  & a:focus img,
   & a:active img {
     border-color: var(--accent-color-hover)
+  }
+
+  & a:focus img,
+  & a:focus-within img {
+    border: 0
   }
 
   & .meta-text {

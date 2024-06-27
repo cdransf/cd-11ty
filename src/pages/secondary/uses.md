@@ -28,7 +28,7 @@ Software and services that I use for work and my own enjoyment.
 - [Obsidian](https://obsidian.md): fast, flexible and configurable (or minimal) as you'd like.
 - [Plexamp](https://www.plex.tv/plexamp/): Plex's flexible and delightful music player.
 - [Ivory](https://tapbots.com/ivory/): the best, most polished Mastodon client for macOS and iOS.
-- [ReadKit](https://readkit.app): super flexible and universal — it makes it easy to triage my feeds and save things over to Instapaper.
+- [Reeder](https://reeder.app): flexible and universal — it makes it easy to triage my feeds and save things over to Instapaper.
 - [Parcel](https://parcelapp.net): the most flexible and reliable package tracker for Apple's ecosystem.
 - [Flighty](https://flightyapp.com): I don't travel a ton but Flighty makes doing so a fair bit less stressful.
 
@@ -42,9 +42,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3>macOS</h3>
 
-- [FMail2](https://fmail-app.fr): a lightweight wrapper around the Fastmail web app.
 - [Rectangle](https://rectangleapp.com): to quickly move around/organize/snap application windows. Using a Mac without it now feels like it's broken.
-- [Dato](https://sindresorhus.com/dato): an option-rich calendar utility that lives in your menubar.
 - [AirBuddy](https://v2.airbuddy.app): finer-grained control over AirPods and other wireless devices.
 - [Meta](https://www.nightbirdsevolve.com/meta): the _best_ utility for tagging and organizing music files on macOS.
 - [Permute](https://software.charliemonroe.net/permute): a useful utility for quickly converting files to different formats.
@@ -58,7 +56,7 @@ Software and services that I use for work and my own enjoyment.
 
 <h3>Services</h3>
 
-- <a class="plausible-event-name=Fastmail+referral" href="https://join.fastmail.com/5363c193">Fastmail</a>: the best, most reliable email, calendar and contacts provider around.
+- <a class="plausible-event-name=Proton+referral" href="https://pr.tn/ref/X775YX40Z50G">Proton</a>: the premier encrypted mail service with a number of other features like calendars and a reliable VPN.
 - <a class="plausible-event-name=NextDNS+referral" href="https://nextdns.io/?from=m56mt3z6">NextDNS</a>: a privacy-focused, set it and forget it DNS service. I use their security features on my home network and a profile with strict ad-blocking rules on all of my devices.
 - <a class="plausible-event-name=DNSimple+referral" href="https://dnsimple.com/r/3a7cbb9e15df8f">DNSimple</a>: a robust, user-friendly DNS provider and registrar. I moved my domains here after my old provider was acquired.
 - [Cloudflare](https://cloudfllare.com): I use their pages hosting, workers and myriad other features.
@@ -66,10 +64,9 @@ Software and services that I use for work and my own enjoyment.
 - [Plausible](https://plausible.io): lightweight, privacy-friendly analytics.
 - <a class="plausible-event-name=Feedpress+referral" href="https://feedpress.com/?affid=34370">Feedpress</a>: they've been around for a while now and don't change much (nor do they need to), but look no further for reliable, helpful feed analytics.
 - [Feedbin](https://feedbin.com): performant, open and super reliable RSS.
-- [Instapaper](https://instapaper.com): slow to change and often better for it — a reliable and steady read it later service.
+- <a class="plausible-event-name=Matter+referral" href="https://web.getmatter.com/referral/ss6td795">Matter</a>: a newer read it later service, but a rapidly developed and extremely powerful one. It's text to speech features are _excellent_.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.
 - [Backblaze](https://backblaze.com): It backs up my MacBook Air and attached storage drive and I don't have to think about it.
-- <a class="plausible-event-name=Proton+referral" href="https://pr.tn/ref/X775YX40Z50G">Proton</a>: a reliable, trustworthy VPN with all of the features you'd expect from such a service.
 
 <hr />
 

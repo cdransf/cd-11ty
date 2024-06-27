@@ -14,6 +14,10 @@
     transition-duration: 300ms;
   }
 
+  a {
+    display: flex;
+  }
+
   & a:hover img,
   & a:focus img,
   & a:active img {
@@ -65,7 +69,7 @@
     & p {
       &.title {
         font-size: var(--font-size-xl);
-        line-height: 1;
+        line-height: 1.25;
       }
 
       &.sub-meta {

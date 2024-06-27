@@ -1,29 +1,32 @@
 <div class="music-chart">
   {% assign items = data.items | default: data %}
-  {% for item in items limit: count | default: items.size %}
-    {%- assign playTotal = playTotal | default: mostPlayed -%}
-    {%- assign percentage = item.plays | calculatePlayPercentage: playTotal -%}
-    <div class="item">
-      <div class="presentation">
-        <div class="count">{{ item.rank | formatNumber }}.</div>
-        <div class="info">
-          <div class="title">
-            <a href="{{ item.url }}">{{ item.title }}</a>
+  <ol type="1">
+    {% for item in items limit: count | default: items.size %}
+      {%- assign playTotal = playTotal | default: mostPlayed -%}
+      {%- assign percentage = item.plays | calculatePlayPercentage: playTotal -%}
+      <li value="{{ item.rank }}">
+        <div class="item">
+          <div class="presentation">
+            <div class="info">
+              <div class="title">
+                <a href="{{ item.url }}">{{ item.title }}</a>
+              </div>
+              {% capture playsLabel %}
+                {% if item.plays > 1 %}
+                  plays
+                {% else %}
+                  play
+                {% endif %}
+              {% endcapture %}
+              <div class="subtext">{{ item.artist }}</div>
+              <div class="subtext">{{ item.plays }} {{ playsLabel }}</div>
+            </div>
           </div>
-          {% capture playsLabel %}
-            {% if item.plays > 1 %}
-              plays
-            {% else %}
-              play
-            {% endif %}
-          {% endcapture %}
-          <div class="subtext">{{ item.artist }}</div>
-          <div class="subtext">{{ item.plays }} {{ playsLabel }}</div>
+          {% render "partials/media/progress-bar.liquid", percentage:percentage %}
         </div>
-      </div>
-      {% render "partials/media/progress-bar.liquid", percentage:percentage %}
-    </div>
-  {% endfor %}
+      </li>
+    {% endfor %}
+  </ol>
 </div>
 {% unless count %}
   {% render "partials/widgets/paginator.liquid", pagination:data %}

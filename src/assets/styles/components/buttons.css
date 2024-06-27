@@ -10,28 +10,46 @@ button {
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-base);
+    white-space: nowrap;
     color: var(--color-lightest);
     background-color: var(--accent-color);
     appearance: none;
     border: 2px solid var(--accent-color);
-    transition-property: all;
+    transition-property: border;
   }
 
   &:not(.theme-toggle, .active):hover,
   &:not(.theme-toggle, .active):active,
   &:not(.theme-toggle, .active):focus,
   &:not(.theme-toggle, .active):focus-within {
-    outline: 2px dashed var(--accent-color);
     background-color: var(--accent-color-hover);
     border-color: var(--accent-color-hover);
     transition-timing-function: var(--transition-ease-in-out);
     transition-duration: var(--transition-duration-default);
   }
 
+  &:not(.theme-toggle, .active):focus,
+  &:not(.theme-toggle, .active):focus-within {
+    transition-property: none;
+    outline: 2px dashed var(--accent-color);
+    padding: calc(var(--sizing-sm) + 2px) calc(var(--sizing-lg) + 2px);
+    border: 0;
+  }
+
+  &.theme-toggle:focus,
+  &.theme-toggle:focus-within {
+    outline: 2px dashed var(--accent-color);
+  }
+
   &.small {
     font-size: var(--font-size-sm);
     line-height: var(--line-height-sm);
     padding: var(--sizing-xs) var(--sizing-sm);
+
+    &:not(.active):focus,
+    &:not(.active):focus-within {
+      padding: var(--sizing-xs) calc(var(--sizing-sm) + 2px);
+    }
   }
 
   &.secondary {

@@ -138,6 +138,11 @@ a {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
+
+    & + .page-header,
+    & + .music-chart {
+      margin-top: var(--sizing-base);
+    }
   }
 }
 
@@ -179,9 +184,12 @@ h5 { font-size: var(--font-size-md) }
 h6 { font-size: var(--font-size-sm) }
 
 .section-header-wrapper {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  margin: var(--sizing-xl) 0 var(--sizing-lg);
+
+  & .section-header {
+    margin: 0;
+  }
 }
 
 .section-header {
@@ -197,10 +205,12 @@ h6 { font-size: var(--font-size-sm) }
 }
 
 .section-header-buttons {
-  margin: 0 0 var(--sizing-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--sizing-sm);
 
   & > button {
-    margin-bottom: var(--sizing-sm) !important;
+    margin-bottom: 0 !important;
 
     &:last-of-type {
       margin-right: 0 !important;
@@ -338,23 +348,23 @@ nav .active svg {
 }
 
 /* social icons */
-.at svg { stroke: var(--brand-fastmail) !important; }
+.at svg { stroke: var(--brand-proton) !important; }
 .brand-github svg { stroke: var(--brand-github) !important; }
 .brand-npm svg { stroke: var(--brand-npm) !important; }
 .brand-mastodon svg { stroke: var(--brand-mastodon) !important; }
-.brain svg { stroke: var(--brand-listenbrainz) !important; }
 .article svg { stroke: var(--posts) !important }
-.headphones svg { stroke: var(--music) !important; }
-.device-tv svg { stroke: var(--tv) !important; }
 .books svg { stroke: var(--books) !important; }
-.link svg { stroke: var(--links) !important; }
-.info-square svg { stroke: var(--about) !important }
-.search svg { stroke: var(--search) !important }
-.news svg { stroke: var(--brand-instapaper) !important; }
+.brain svg { stroke: var(--brand-listenbrainz) !important; }
+.clock-hour-3 svg { stroke: var(--now) !important; }
 .coffee svg { stroke: var(--brand-buy-me-a-coffee) !important; }
-.heart-handshake svg { stroke: var(--webrings) !important; }
-.rss svg { stroke: var(--brand-rss) !important; }
+.device-tv svg { stroke: var(--tv) !important; }
 .favorite svg { stroke: var(--favorite) !important }
+.headphones svg { stroke: var(--music) !important; }
+.heart-handshake svg { stroke: var(--webrings) !important; }
+.info-circle svg { stroke: var(--about) !important }
+.link svg { stroke: var(--links) !important; }
+.rss svg { stroke: var(--brand-rss) !important; }
+.search svg { stroke: var(--search) !important }
 
 /* layout */
 .default-wrapper {
@@ -418,8 +428,7 @@ footer {
       }
 
       & a {
-        width: var(--sizing-xl);
-        height: var(--sizing-xl);
+        display: flex;
       }
     }
 
@@ -528,10 +537,6 @@ li {
   }
 }
 
-.link-list-header {
-  margin: var(--sizing-3xl) 0 var(--sizing-lg);
-}
-
 /* images */
 .image-banner {
   border: 1px solid var(--accent-color);
@@ -615,14 +620,6 @@ li {
 
   main {
     max-width: 768px;
-  }
-
-  .section-header-wrapper {
-    flex-direction: row;
-  }
-
-  .section-header-buttons {
-    margin: var(--sizing-md) 0 var(--sizing-lg);
   }
 
   footer nav.social {
