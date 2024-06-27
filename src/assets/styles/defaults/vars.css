@@ -49,19 +49,21 @@
   --brand-listenbrainz: #e97941;
   --brand-buy-me-a-coffee: #40dca5;
   --brand-rss: #f26522;
-  --posts: #008080;
-  --music: #1e90ff;
-  --tv: #ff4500;
-  --books: #32cd32;
-  --links: #9370db;
+
   --about: #ff6347;
-  --search: #4682b4;
-  --webrings: #da70d6;
-  --moon: #6a5acd;
-  --sun: #ffa500;
-  --favorite: #ff69b4;
-  --warning: #ff8c00;
+  --books: #32cd32;
   --error: #d92525;
+  --favorite: #ff69b4;
+  --links: #9370db;
+  --moon: #6a5acd;
+  --music: #1e90ff;
+  --now: #ff1493;
+  --posts: #008080;
+  --search: #4682b4;
+  --sun: #ffa500;
+  --tv: #ff4500;
+  --warning: #ff8c00;
+  --webrings: #da70d6;
 
   /* fonts */
   --font-mono: MonoLisa, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;

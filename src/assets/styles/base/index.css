@@ -352,18 +352,19 @@ nav .active svg {
 .brand-github svg { stroke: var(--brand-github) !important; }
 .brand-npm svg { stroke: var(--brand-npm) !important; }
 .brand-mastodon svg { stroke: var(--brand-mastodon) !important; }
-.brain svg { stroke: var(--brand-listenbrainz) !important; }
 .article svg { stroke: var(--posts) !important }
-.headphones svg { stroke: var(--music) !important; }
-.device-tv svg { stroke: var(--tv) !important; }
 .books svg { stroke: var(--books) !important; }
-.link svg { stroke: var(--links) !important; }
-.info-square svg { stroke: var(--about) !important }
-.search svg { stroke: var(--search) !important }
+.brain svg { stroke: var(--brand-listenbrainz) !important; }
+.clock-hour-3 svg { stroke: var(--now) !important; }
 .coffee svg { stroke: var(--brand-buy-me-a-coffee) !important; }
-.heart-handshake svg { stroke: var(--webrings) !important; }
-.rss svg { stroke: var(--brand-rss) !important; }
+.device-tv svg { stroke: var(--tv) !important; }
 .favorite svg { stroke: var(--favorite) !important }
+.headphones svg { stroke: var(--music) !important; }
+.heart-handshake svg { stroke: var(--webrings) !important; }
+.info-circle svg { stroke: var(--about) !important }
+.link svg { stroke: var(--links) !important; }
+.rss svg { stroke: var(--brand-rss) !important; }
+.search svg { stroke: var(--search) !important }
 
 /* layout */
 .default-wrapper {
