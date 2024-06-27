@@ -127,6 +127,10 @@
   margin-top: var(--sizing-base);
   border-bottom: 0;
 
+  & img {
+    aspect-ratio: var(--aspect-ratio-banner);
+  }
+
   & .watching-meta {
     display: flex;
     flex-direction: column;
