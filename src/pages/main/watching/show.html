@@ -34,7 +34,7 @@ schema: show
   />
   <div class="watching-meta">
     <p class="title"><strong>{{ show.title }}</strong></p>
-    {% if lastWatched %}<p class="sub-meta">Last watched on: {{ lastWatched | date: "%B %e, %Y" }}</p>{% endif %}
+    {% if lastWatched %}<p class="sub-meta">Last watched on {{ lastWatched | date: "%B %e, %Y" }}</p>{% endif %}
     <p class="sub-meta"><a href="https://themoviedb.org/tv/{{ show.tmdb_id }}" title="View {{ show.title | escape }} on TMDB">View on TMDB</a></p>
   </div>
   {% if show.review %}
