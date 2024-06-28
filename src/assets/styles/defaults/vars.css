@@ -101,6 +101,11 @@
   --rounded-lg: .5rem;
   --rounded-full: 9999px;
 
+  /* aspect ratios */
+  --aspect-ratio-square: 1/1;
+  --aspect-ratio-vertical: 2/3;
+  --aspect-ratio-banner: 1 / 0.5625;
+
   /* transitions */
   --transition-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-duration-default: 300ms;

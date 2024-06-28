@@ -1,7 +1,3 @@
-:root {
-  --aspect-ratio-banner: 1 / 0.5625;
-}
-
 .watching {
   & img {
     border: 1px solid var(--accent-color);

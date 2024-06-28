@@ -10,6 +10,7 @@
     border: 1px solid var(--accent-color);
     width: 100%;
     height: auto;
+    aspect-ratio: var(--aspect-ratio-square);
   }
 
   & .artist-display {
