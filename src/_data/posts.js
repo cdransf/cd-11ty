@@ -21,6 +21,20 @@ const fetchBlockData = async (collection, itemId) => {
   return data
 }
 
+const fetchTagsForPost = async (postId) => {
+  const { data, error } = await supabase
+    .from('posts_tags')
+    .select('tags(id, name)')
+    .eq('posts_id', postId)
+
+  if (error) {
+    console.error(`Error fetching tags for post ${postId}:`, error)
+    return []
+  }
+
+  return data.map(pt => pt.tags.name)
+}
+
 const fetchBlocksForPost = async (postId) => {
   const { data, error } = await supabase
     .from('posts_blocks')
@@ -43,24 +57,11 @@ const fetchBlocksForPost = async (postId) => {
   return blocks
 }
 
-const fetchTagsForPost = async (postId) => {
-  const { data, error } = await supabase
-    .from('posts_tags')
-    .select('tags(id, name)')
-    .eq('posts_id', postId)
-
-  if (error) {
-    console.error(`Error fetching tags for post ${postId}:`, error)
-    return []
-  }
-
-  return data.map(pt => pt.tags.name)
-}
-
 const fetchAllPosts = async () => {
   let posts = []
   let page = 0
   let fetchMore = true
+  const uniqueSlugs = new Set()
 
   while (fetchMore) {
     const { data, error } = await supabase
@@ -77,11 +78,14 @@ const fetchAllPosts = async () => {
     if (data.length < PAGE_SIZE) fetchMore = false
 
     for (const post of data) {
+      if (uniqueSlugs.has(post.slug)) continue
+
+      uniqueSlugs.add(post.slug)
       post.tags = await fetchTagsForPost(post.id)
       post.blocks = await fetchBlocksForPost(post.id)
+      posts.push(post)
     }
 
-    posts = posts.concat(data)
     page++
   }
 
