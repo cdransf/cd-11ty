@@ -99,7 +99,7 @@ export default {
       )
       md.renderer.rules.footnote_open = (tokens, idx) => {
         const id = tokens[idx].meta.id + 1
-        return `<li id="fn${id}" class="footnote-item">${id}. `
+        return `<li id="fn${id}" class="footnote-item"> `
       }
       md.renderer.rules.footnote_anchor = () => ''
 
