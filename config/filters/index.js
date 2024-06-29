@@ -1,6 +1,8 @@
 import { DateTime } from 'luxon'
 import { URL } from 'url'
 import markdownIt from 'markdown-it'
+import markdownItAnchor from 'markdown-it-anchor'
+import markdownItFootnote from 'markdown-it-footnote'
 import sanitizeHtml from 'sanitize-html';
 
 import { shuffleArray, sanitizeMediaString } from '../utilities/index.js'
@@ -86,6 +88,14 @@ export default {
       let url = ''
       let title = entry.title
       const feedNote = '<hr/><p>This is a full text feed, but not all content can be rendered perfectly within the feed. If something looks off, feel free to <a href="https://coryd.dev">visit my site</a> for the original post.</p>'
+
+      md.use(markdownItAnchor, {
+        level: [1, 2],
+        permalink: markdownItAnchor.permalink.headerLink({
+          safariReaderFix: true,
+        }),
+      })
+      md.use(markdownItFootnote)
 
       // set the entry url
       if (entry.url?.includes('http')) url = entry.url
