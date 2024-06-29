@@ -80,42 +80,54 @@ export default {
   // feeds
   normalizeEntries: (entries) => {
     const posts = []
-    entries.forEach((entry) => {
-      const dateKey = Object.keys(entry).find((key) => key.includes('date'))
-      const date = new Date(entry[dateKey])
+    const mdGenerator = () => {
       const md = markdownIt({ html: true, linkify: true })
+
+      md.use(markdownItAnchor, {
+        level: [1, 2],
+        permalink: markdownItAnchor.permalink.headerLink({
+          safariReaderFix: true
+        })
+      })
+      md.use(markdownItFootnote)
+      md.renderer.rules.footnote_ref = (tokens, idx) => {
+        const id = tokens[idx].meta.id + 1
+        return `<sup>${id}</sup>`
+      }
+      md.renderer.rules.footnote_block_open = () => (
+        '<hr class="footnotes-sep">\n<section class="footnotes">\n<ol class="footnotes-list">\n'
+      )
+      md.renderer.rules.footnote_open = (tokens, idx) => {
+        const id = tokens[idx].meta.id + 1
+        return `<li id="fn${id}" class="footnote-item">${id}. `
+      }
+      md.renderer.rules.footnote_anchor = () => ''
+
+      return md
+    }
+
+    entries.forEach((entry) => {
+      const dateKey = Object.keys(entry).find(key => key.includes('date'))
+      const date = new Date(entry[dateKey])
+      const md = mdGenerator()
       let excerpt = ''
       let url = ''
       let title = entry.title
       const feedNote = '<hr/><p>This is a full text feed, but not all content can be rendered perfectly within the feed. If something looks off, feel free to <a href="https://coryd.dev">visit my site</a> for the original post.</p>'
 
-      md.use(markdownItAnchor, {
-        level: [1, 2],
-        permalink: markdownItAnchor.permalink.headerLink({
-          safariReaderFix: true,
-        }),
-      })
-      md.use(markdownItFootnote)
-
-      // set the entry url
       if (entry.url?.includes('http')) url = entry.url
       if (!entry.url?.includes('http')) url = new URL(entry.url, BASE_URL).toString()
-      if (entry?.slug)  url = new URL(entry.slug, BASE_URL).toString()
+      if (entry?.slug) url = new URL(entry.slug, BASE_URL).toString()
       if (entry?.link) {
         title = `${entry.title} via ${entry.authors.name}`
         url = entry.link
       }
-
-      // set the entry excerpt
-      if (entry.description) excerpt = entry.description // general case
-      if (entry.type === 'book' || entry.type === 'movie' || entry.type === 'link') excerpt = `${entry.description}<br/><br/>` // books
-
-      // send full post content to rss
+      if (entry.description) excerpt = entry.description
+      if (entry.type === 'book' || entry.type === 'movie' || entry.type === 'link') excerpt = `${entry.description}<br/><br/>`
       if (entry?.slug && entry.content) excerpt = sanitizeHtml(`${md.render(entry.content)}${feedNote}`, {
-          disallowedTagsMode: 'completelyDiscard'
-        })
+        disallowedTagsMode: 'completelyDiscard'
+      })
 
-      // if there's a valid entry return a normalized object
       if (entry) posts.push({
         title: title.trim(),
         url,
