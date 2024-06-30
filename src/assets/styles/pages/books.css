@@ -44,10 +44,6 @@
     }
 
     & .description {
-      -webkit-box-orient: vertical;
-      display: -webkit-box;
-      -webkit-line-clamp: 6;
-      overflow: hidden;
       margin-bottom: var(--sizing-base);
     }
   }
