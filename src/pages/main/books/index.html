@@ -47,7 +47,7 @@ schema: books
       {%- assign percentage = book.progress | append: '%' -%}
       {% render "partials/media/progress-bar.liquid", percentage:percentage %}
     {% endif %}
-    {% if book.description %}<blockquote class="description">{{ book.description }}</blockquote>{% endif %}
+    {% if book.description %}<div class="description">{{ book.description | markdown }}</div>{% endif %}
   </div>
 </article>
 {% endfor %}

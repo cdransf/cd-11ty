@@ -43,10 +43,10 @@
       margin-bottom: 0;
     }
 
-    & blockquote.description {
+    & .description {
       -webkit-box-orient: vertical;
       display: -webkit-box;
-      -webkit-line-clamp: 4;
+      -webkit-line-clamp: 6;
       overflow: hidden;
       margin-bottom: var(--sizing-base);
     }
