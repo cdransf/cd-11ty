@@ -89,7 +89,7 @@
   }
 
   & img {
-    border: 1px solid var(--accent-color);
+    border: var(--border-default);
     transition-property: border-color;
     transition-timing-function: var(--transition-ease-in-out);
     transition-duration: 300ms;

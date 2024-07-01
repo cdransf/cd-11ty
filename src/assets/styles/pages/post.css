@@ -1,4 +1,3 @@
-/* footnotes */
 .footnotes-list {
   margin-bottom: 0;
   padding-left: 0;
@@ -14,4 +13,17 @@
 
 .footnote-item > p {
   display: inline;
+}
+
+sup.footnote-ref {
+  line-height: var(--line-height-xs);
+}
+
+sup.footnote-ref a,
+.footnote-backref {
+  text-decoration: none;
+}
+
+.footnotes + .banner {
+  margin-top: 0 !important;
 }

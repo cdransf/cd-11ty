@@ -1,6 +1,6 @@
 .watching {
   & img {
-    border: 1px solid var(--accent-color);
+    border: var(--border-default);
     width: 100%;
     height: auto;
   }

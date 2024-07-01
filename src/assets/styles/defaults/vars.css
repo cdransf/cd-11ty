@@ -65,6 +65,12 @@
   --warning: #ff8c00;
   --webrings: #da70d6;
 
+  /* outline */
+  --outline: 2px dashed var(--accent-color);
+
+  /* borders */
+  --border-default: 1px solid var(--accent-color);
+
   /* fonts */
   --font-mono: MonoLisa, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;
 

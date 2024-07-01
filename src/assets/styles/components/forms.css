@@ -10,7 +10,7 @@ textarea {
   font-family: var(--font-mono);
   color: var(--text-color);
   background-color: var(--background-color);
-  border: 1px solid var(--accent-color);
+  border: var(--border-default);
   padding: var(--sizing-sm);
   font-size: var(--font-size-base);
   width: 100%;
@@ -27,6 +27,12 @@ textarea:focus-within {
   border: 0;
   outline: 2px dashed var(--accent-color);
   padding: calc(var(--sizing-sm) + 1px);
+}
+
+select {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  padding: var(--sizing-xs) var(--sizing-sm);
 }
 
 .search__form {

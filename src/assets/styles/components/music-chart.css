@@ -26,7 +26,7 @@
     }
 
     & img {
-      border: 1px solid var(--accent-color);
+      border: var(--border-default);
       width: calc(var(--sizing-3xl) * 1.5);
       height: calc(var(--sizing-3xl) * 1.5);
     }
@@ -58,6 +58,14 @@
     & .title {
       font-weight: var(--font-weight-bold);
       line-height: 1.5;
+
+      &:focus-within {
+        outline: var(--outline);
+      }
+
+      & a {
+        outline: 0;
+      }
     }
 
     & .title,

@@ -52,7 +52,7 @@
 .book-entry,
 .book-focus {
   & img {
-    border: 1px solid var(--accent-color);
+    border: var(--border-default);
   }
 
   & .book-meta {

@@ -7,7 +7,7 @@
   margin-top: var(--sizing-base);
 
   & img {
-    border: 1px solid var(--accent-color);
+    border: var(--border-default);
     width: 100%;
     height: auto;
     aspect-ratio: var(--aspect-ratio-square);
@@ -58,11 +58,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  .artist-focus img {
-    max-width: 240px;
-  }
-
   .artist-focus {
+    & img {
+      max-width: 240px;
+    }
+
     & .artist-display {
       flex-direction: row;
       gap: var(--sizing-md);
