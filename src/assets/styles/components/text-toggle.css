@@ -7,19 +7,19 @@
   & p:first-of-type {
     margin-top: 0;
   }
+
+  &::after {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    top: 0;
+    left: 0;
+    box-shadow: inset 0 -120px 50px -60px var(--background-color);
+    width: 100%;
+    height: 100%;
+  }
 }
 
-[data-toggle-content].text-toggle-hidden::after {
-  position: absolute;
-  z-index: 1;
-  content: '';
-  top: 0;
-  left: 0;
-  box-shadow: inset 0 -120px 50px -60px var(--background-color);
-  width: 100%;
-  height: 100%;
-}
-
-[data-toggle-button] {
-  margin-bottom: var(--sizing-base) !important;
+button[data-toggle-button] {
+  margin-bottom: var(--sizing-base);
 }

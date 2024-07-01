@@ -1,3 +1,7 @@
+.footnotes + .banner {
+  margin-top: 0;
+}
+
 .banner {
   margin: var(--sizing-base) 0;
   padding: var(--sizing-md);
@@ -22,33 +26,34 @@
     }
   }
 
-  &.old-post {
-    border-color: var(--gray-light);
-  }
-
-  &.warning,
   &.error,
-  &.npm,
   &.github,
-  &.rss {
-    &.warning {
-      --border-color: var(--warning);
-    }
-
+  &.npm,
+  &.old-post,
+  &.rss,
+  &.warning {
     &.error {
       --border-color: var(--error);
-    }
-
-    &.npm {
-      --border-color: var(--brand-npm);
     }
 
     &.github {
       --border-color: var(--brand-github);
     }
 
+    &.npm {
+      --border-color: var(--brand-npm);
+    }
+
+    &.old-post {
+      --border-color: var(--gray-light);
+    }
+
     &.rss {
       --border-color: var(--brand-rss);
+    }
+
+    &.warning {
+      --border-color: var(--warning);
     }
 
     border-color: var(--border-color);

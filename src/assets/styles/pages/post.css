@@ -1,18 +1,18 @@
-.footnotes-list {
-  margin-bottom: 0;
-  padding-left: 0;
-
-  & li:last-child {
-    margin-bottom: 0;
-  }
-}
-
 .footnotes {
   padding-bottom: var(--sizing-base);
-}
 
-.footnote-item > p {
-  display: inline;
+  & .footnotes-list {
+    margin-bottom: 0;
+    padding-left: 0;
+
+    & li:last-child {
+      margin-bottom: 0;
+    }
+
+    & .footnote-item > p {
+      display: inline;
+    }
+  }
 }
 
 sup.footnote-ref {
@@ -22,8 +22,4 @@ sup.footnote-ref {
 sup.footnote-ref a,
 .footnote-backref {
   text-decoration: none;
-}
-
-.footnotes + .banner {
-  margin-top: 0 !important;
 }

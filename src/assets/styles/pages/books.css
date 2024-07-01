@@ -1,8 +1,8 @@
 .book-entry {
   display: flex;
   flex-direction: column;
-  gap: var(--sizing-sm);
   align-items: center;
+  gap: var(--sizing-sm);
 
   &:last-of-type {
     border-bottom: 0;

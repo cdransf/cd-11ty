@@ -1,8 +1,23 @@
+.section-header-buttons {
+  display: flex;
+  align-items: center;
+  gap: var(--sizing-sm);
+
+  & > button {
+    margin-bottom: 0;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
 button {
   appearance: none;
   border: none;
 
   &:not(.theme-toggle) {
+    border: 2px solid var(--accent-color);
     border-radius: var(--rounded-full);
     padding: var(--sizing-sm) var(--sizing-lg);
     margin: 0 var(--sizing-xs) var(--sizing-md) 0;
@@ -17,7 +32,6 @@ button {
     color: var(--color-lightest);
     background-color: var(--accent-color);
     appearance: none;
-    border: 2px solid var(--accent-color);
     transition-property: border;
   }
 

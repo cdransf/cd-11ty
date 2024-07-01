@@ -5,7 +5,6 @@ body {
   letter-spacing: -.05rem;
   word-spacing: -.125rem;
   background: var(--background-color);
-  accent-color: var(--accent-color);
   scrollbar-width: thin;
   scrollbar-color: var(--accent-color) var(--gray-light);
 }
@@ -84,13 +83,34 @@ code {
   background-color: var(--background-color-inverted);
 }
 
+/* social icons */
+:is(body, html, nav) a {
+  &.at > svg { stroke: var(--brand-proton); }
+  &.brand-github > svg { stroke: var(--brand-github); }
+  &.brand-npm > svg { stroke: var(--brand-npm); }
+  &.brand-mastodon > svg { stroke: var(--brand-mastodon); }
+  &.article > svg { stroke: var(--posts) }
+  &.books > svg { stroke: var(--books); }
+  &.brain > svg { stroke: var(--brand-listenbrainz); }
+  &.clock-hour-3 > svg { stroke: var(--now); }
+  &.coffee > svg { stroke: var(--brand-buy-me-a-coffee); }
+  &.device-tv > svg { stroke: var(--tv); }
+  &.favorite > svg { stroke: var(--favorite) }
+  &.headphones > svg { stroke: var(--music); }
+  &.heart-handshake > svg { stroke: var(--webrings); }
+  &.info-circle > svg { stroke: var(--about) }
+  &.link > svg { stroke: var(--links); }
+  &.rss > svg { stroke: var(--brand-rss); }
+  &.search > svg { stroke: var(--search) }
+}
+
 :is(body, html, nav .search) svg {
   stroke: var(--text-color);
 }
 
-:is(h1, h2, h3, h4, h5, h6) > svg {
+:is(h1, h2, h3, h4, h5, h6) svg {
   margin-right: var(--sizing-xs);
-  stroke-width: var(--stroke-width-bold) !important;
+  stroke-width: var(--stroke-width-bold);
 }
 
 strong,
@@ -193,20 +213,6 @@ h6 { font-size: var(--font-size-sm) }
 
   &.posts {
     margin: 0 0 var(--sizing-lg);
-  }
-}
-
-.section-header-buttons {
-  display: flex;
-  align-items: center;
-  gap: var(--sizing-sm);
-
-  & > button {
-    margin-bottom: 0 !important;
-
-    &:last-of-type {
-      margin-right: 0 !important;
-    }
   }
 }
 
@@ -331,32 +337,13 @@ nav .active svg {
 
 .menu-primary .active,
 nav .active {
-  color: var(--accent-color) !important;
+  color: var(--accent-color);
 }
 
 .menu-primary .active svg,
 nav .active svg {
-  stroke: var(--accent-color-hover) !important;
+  stroke: var(--accent-color-hover);
 }
-
-/* social icons */
-.at svg { stroke: var(--brand-proton) !important; }
-.brand-github svg { stroke: var(--brand-github) !important; }
-.brand-npm svg { stroke: var(--brand-npm) !important; }
-.brand-mastodon svg { stroke: var(--brand-mastodon) !important; }
-.article svg { stroke: var(--posts) !important }
-.books svg { stroke: var(--books) !important; }
-.brain svg { stroke: var(--brand-listenbrainz) !important; }
-.clock-hour-3 svg { stroke: var(--now) !important; }
-.coffee svg { stroke: var(--brand-buy-me-a-coffee) !important; }
-.device-tv svg { stroke: var(--tv) !important; }
-.favorite svg { stroke: var(--favorite) !important }
-.headphones svg { stroke: var(--music) !important; }
-.heart-handshake svg { stroke: var(--webrings) !important; }
-.info-circle svg { stroke: var(--about) !important }
-.link svg { stroke: var(--links) !important; }
-.rss svg { stroke: var(--brand-rss) !important; }
-.search svg { stroke: var(--search) !important }
 
 /* layout */
 .default-wrapper {
@@ -398,10 +385,6 @@ article {
   & article {
     border-bottom: none;
   }
-}
-
-article h3 {
-  margin: 0;
 }
 
 footer {
@@ -447,6 +430,10 @@ article {
     transition-property: color;
   }
 
+  & h3 {
+    margin: 0;
+  }
+
   & a h2:hover,
   & a h2:focus,
   & a h2:active {
@@ -468,7 +455,7 @@ article {
     & > svg {
       width: var(--sizing-lg);
       height: var(--sizing-lg);
-      stroke: var(--gray-dark) !important;
+      stroke: var(--gray-dark);
     }
   }
 
@@ -544,12 +531,6 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.flex-between {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .justify-centered {

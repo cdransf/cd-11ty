@@ -3,12 +3,14 @@
   gap: var(--sizing-sm);
   grid-template-columns: repeat(1, 1fr);
 
-  & div > h2 {
-    margin-top: 0;
-  }
+  & div {
+    & > h2 {
+      margin-top: 0;
+    }
 
-  &  div:last-of-type h2 {
-    margin-top: var(--sizing-base);
+    &:last-of-type h2 {
+      margin-top: var(--sizing-base);
+    }
   }
 
   & .link-list {
