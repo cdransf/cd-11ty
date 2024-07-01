@@ -18,8 +18,8 @@
       {% assign rating = entry.rating %}
       {%- capture entryTitle -%}
         {{ entry.title | escape }}
-        {%- if entry.authors -%} via {{ entry.authors.name }}{%- endif -%}
-        {%- if rating -%} ({{ rating }}){%- endif -%}
+        {%- if entry.authors %} via {{ entry.authors.name }}{%- endif -%}
+        {%- if rating %} ({{ rating }}){%- endif -%}
       {%- endcapture -%}
       <item>
         <title>{{ entryTitle }}</title>
