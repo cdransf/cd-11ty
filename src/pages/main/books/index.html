@@ -19,21 +19,21 @@ schema: books
   <a href="{{ book.url }}">
     <img
       srcset="
-        https://cdn.coryd.dev{{ book.image }}?width=203&aspect_ratio=.65:1 203w,
-        https://cdn.coryd.dev{{ book.image }}?width=406&aspect_ratio=.65:1 406w,
-        https://cdn.coryd.dev{{ book.image }}?width=812&aspect_ratio=.65:1 812w,
-        https://cdn.coryd.dev{{ book.image }}?width=1624&aspect_ratio=.65:1 1624w
+        https://cdn.coryd.dev{{ book.image }}?class=verticalsm 200w,
+        https://cdn.coryd.dev{{ book.image }}?class=verticalmd 400w,
+        https://cdn.coryd.dev{{ book.image }}?class=verticalbase 800w,
+        https://cdn.coryd.dev{{ book.image }}?class=verticallg 1200w
       "
-      sizes="(max-width: 450px) 203px,
-        (max-width: 850px) 406px,
-        (max-width: 1000px) 812px,
-        1624px"
-      src="https://cdn.coryd.dev{{ book.image }}?width=1624&aspect_ratio=.65:1"
+      sizes="(max-width: 450px) 200px,
+        (max-width: 850px) 400px,
+        (max-width: 1000px) 800px,
+        1200px"
+      src="https://cdn.coryd.dev{{ book.image }}?class=verticallg 1200w"
       alt="{{ alt }}"
       loading="eager"
       decoding="async"
-      width="203"
-      height="309"
+      width="200"
+      height="307"
     />
   </a>
   <div class="book-meta">

@@ -15,22 +15,22 @@ schema: show
 <article class="watching-focus">
   <img
     srcset="
-      https://cdn.coryd.dev/shows/backdrops/backdrop-{{ show.tmdb_id }}.jpg?aspect_ratio=1:.5625&width=256 256w,
-      https://cdn.coryd.dev/shows/backdrops/backdrop-{{ show.tmdb_id }}.jpg?aspect_ratio=1:.5625&width=512 512w,
-      https://cdn.coryd.dev/shows/backdrops/backdrop-{{ show.tmdb_id }}.jpg?aspect_ratio=1:.5625&width=1024 1024w,
-      https://cdn.coryd.dev/shows/backdrops/backdrop-{{ show.tmdb_id }}.jpg?aspect_ratio=1:.5625&width=2048 2048w
+      https://cdn.coryd.dev/shows/backdrops/backdrop-{{ show.tmdb_id }}.jpg?class=bannersm 256w,
+      https://cdn.coryd.dev/shows/backdrops/backdrop-{{ show.tmdb_id }}.jpg?class=bannermd 512w,
+      https://cdn.coryd.dev/shows/backdrops/backdrop-{{ show.tmdb_id }}.jpg?class=bannerbase 1024w,
+      https://cdn.coryd.dev/shows/backdrops/backdrop-{{ show.tmdb_id }}.jpg?class=bannerlg 2048w
     "
     sizes="(max-width: 450px) 256px,
       (max-width: 850px) 512px,
       (max-width: 1000px) 1024px,
       2048px"
-    src="https://cdn.coryd.dev/shows/backdrops/backdrop-{{ show.tmdb_id }}.jpg?aspect_ratio=1:.5625&width=2048"
+    src="https://cdn.coryd.dev/shows/backdrops/backdrop-{{ show.tmdb_id }}.jpg?class=bannerlg"
     alt="{{ alt }}"
     class="image-banner"
     loading="eager"
     decoding="async"
-    width="768"
-    height="432"
+    width="1080"
+    height="720"
   />
   <div class="watching-meta">
     <p class="title"><strong>{{ show.title }}</strong></p>
