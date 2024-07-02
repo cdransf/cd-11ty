@@ -43,6 +43,10 @@
 /posts/2023/road-to-madness-apple-music-charts/ /posts/2023/road-to-madness-charting-apple-music-listening-data/ 301
 /posts/2023/semi-automated-hashtags-syndicated-posts/ /posts/2023/semi-automated-hashtags-for-syndicated-posts/ 301
 /posts/2023/automating-rss-syndication-with-nextjs-github/ /posts/2023/automating-rss-syndication-and-sharing-with-nextjs-and-github/ 301
+/feeds/posts/2024/i-removed-tailwind-from-my-site/ /posts/2024/i-removed-tailwind-from-my-site/ 301
+/feeds/posts/2024/improving-my-self-hosted-scrobbling-implementation/ /posts/2024/improving-my-self-hosted-scrobbling-implementation/ 301
+/feeds/posts/2024/integrating-a-somewhat-custom-cms-with-eleventy/ /posts/2024/integrating-a-somewhat-custom-cms-with-eleventy/ 301
+/feeds/not-allowed /not-allowed 301
 
 # music
 /music/artists/hyperdontia-denmark-turkiye /music/artists/hyperdontia-denmark-tuerkiye 301
