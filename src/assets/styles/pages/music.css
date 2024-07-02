@@ -38,9 +38,10 @@
           line-height: var(--line-height-sm);
 
           svg {
-            width: 18px;
-            height: 18px;
+            width: var(--sizing-svg-sm);
+            height: var(--sizing-svg-sm);
             margin-right: var(--sizing-xs);
+            stroke: var(--favorite);
           }
         }
 
