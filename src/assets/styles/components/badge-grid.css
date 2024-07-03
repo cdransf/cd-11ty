@@ -9,6 +9,15 @@
     justify-content: center;
   }
 
+  & a {
+    outline: 0;
+
+    &:focus img,
+    &:focus-within img {
+      outline: var(--outline)
+    }
+  }
+
   & img {
     image-rendering: pixelated;
   }
