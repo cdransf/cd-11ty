@@ -41,12 +41,24 @@
             width: var(--sizing-svg-sm);
             height: var(--sizing-svg-sm);
             margin-right: var(--sizing-xs);
-            stroke: var(--favorite);
           }
         }
 
         &.favorite {
           color: var(--favorite);
+
+          & svg {
+            stroke: var(--favorite);
+          }
+        }
+
+        &.brain:focus,
+        &.brain:focus-within {
+          outline: 0;
+
+          & svg {
+            outline: var(--outline);
+          }
         }
       }
     }
