@@ -4,7 +4,7 @@ pagination:
   data: artists
   size: 1
   alias: artist
-permalink: "/music/artists/{{ artist.name_string | slugify | downcase }}-{{ artist.country | slugify | downcase}}/index.html"
+permalink: "/music/artists/{{ artist.name_string | sanitizeMediaString }}-{{ artist.country | sanitizeMediaString }}/index.html"
 updated: "now"
 schema: artist
 ---

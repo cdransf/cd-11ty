@@ -23,6 +23,7 @@ export default {
   replaceQuotes: (string) => string.replace(/"/g, "'"),
   formatNumber: (number) => number.toLocaleString('en-US'),
   shuffleArray,
+  sanitizeMediaString,
 
   // navigation
   isLinkActive: (category, page) => page.includes(category) && page.split('/').filter(a => a !== '').length <= 1,
