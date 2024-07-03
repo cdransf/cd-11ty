@@ -42,6 +42,9 @@ schema: artist
       {%- if artist.favorite -%}
         <p class="sub-meta favorite flex-centered">{% tablericon "heart" "Favorite" %} This is one of my favorite artists!</p>
       {%- endif -%}
+      {%- if artist.tattoo -%}
+        <p class="sub-meta tattoo flex-centered">{% tablericon "needle" "Tattoo" %} I have a tattoo inspired by this artist!</p>
+      {%- endif -%}
       {%- if artist.total_plays > 0 -%}
         <p class="sub-meta"><strong class="highlight-text">{{ artist.total_plays }} plays</strong></p>
       {%- endif -%}

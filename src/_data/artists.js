@@ -54,7 +54,7 @@ const fetchGenreMapping = async () => {
 
 export default async function () {
   const genreMapping = await fetchGenreMapping()
-  const artists = await fetchPaginatedData('artists', 'id, mbid, name_string, image, total_plays, country, description, favorite, genres')
+  const artists = await fetchPaginatedData('artists', 'id, mbid, name_string, image, total_plays, country, description, favorite, tattoo, genres')
   const albums = await fetchPaginatedData('albums', 'mbid, name, release_year, total_plays, artist')
   const albumsByArtist = albums.reduce((acc, album) => {
     if (!acc[album.artist]) acc[album.artist] = []
