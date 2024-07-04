@@ -58,14 +58,6 @@
     & .title {
       font-weight: var(--font-weight-bold);
       line-height: 1.5;
-
-      &:focus-within {
-        outline: var(--outline);
-      }
-
-      & a {
-        outline: 0;
-      }
     }
 
     & .title,
