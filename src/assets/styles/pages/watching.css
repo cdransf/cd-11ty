@@ -134,7 +134,7 @@
   & .watching-meta {
     display: flex;
     flex-direction: column;
-    gap: var(--sizing-xs);
+    gap: var(--sizing-sm);
     margin: var(--sizing-base) 0;
 
     & p {
