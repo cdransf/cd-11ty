@@ -74,9 +74,18 @@ export const allContent = (collection) => {
   const addContent = (items, icon, getTitle, getDate) => {
     if (items) {
       items.forEach(item => {
+        let attribution;
+
+        if (item?.['authors']?.['mastodon']) {
+          const mastoUrl = new URL(item['authors']['mastodon'])
+          attribution = `${mastoUrl.pathname.replace('/', '')}@${mastoUrl.host}`
+        } else if (!item?.['authors']?.['mastodon'] && item?.['authors']?.['name']) {
+          attribution = item['authors']['name']
+        }
+
         const content = {
           url: `${BASE_URL}${item['url']}`,
-          title: `${icon}: ${getTitle(item)}${item?.['authors']?.['name'] ? ' via ' + item['authors']['name'] : ''}${item?.['tags']?.length > 0 ? ' ' + tagsToHashtags(item['tags']) : ''}`
+          title: `${icon}: ${getTitle(item)}${attribution ? ' via ' + attribution : ''}${item?.['tags']?.length > 0 ? ' ' + tagsToHashtags(item['tags']) : ''}`
         }
         if (item?.['link']) content['url'] = item?.['link']
         if (item?.['slug']) content['url'] = new URL(item['slug'], BASE_URL).toString()

@@ -20,14 +20,15 @@ description: These are awesome blogs that I enjoy and you may enjoy too.
     <td class="blog-roll-icons">
       {%- if blog.rss_feed -%}
       <a href="{{ blog.rss_feed }}">{% tablericon "rss" "Subscribe via RSS" %}</a>
-      {%- else -%}
-      —
       {%- endif -%}
       {%- if blog.json_feed -%}
       / <a href="{{ blog.json_feed }}">{% tablericon "json" "Subscribe via JSON" %}</a>
       {%- endif -%}
       {%- if blog.newsletter -%}
       / <a href="{{ blog.newsletter }}">{% tablericon "mail-plus" "Newsletter subscription" %}</a>
+      {%- endif -%}
+      {%- if blog.mastodon -%}
+      / <a href="{{ blog.mastodon }}">{% tablericon "brand-mastodon" "Mastodon" %}</a>
       {%- endif -%}
     </td>
   </tr>

@@ -28,7 +28,7 @@ const fetchAllLinks = async () => {
   while (fetchMore) {
     const { data, error } = await supabase
       .from('links')
-      .select('*, authors (name, url)')
+      .select('*, authors (name, url, mastodon)')
       .order('date', { ascending: false })
       .range(page * PAGE_SIZE, (page + 1) * PAGE_SIZE - 1)
 
