@@ -80,8 +80,8 @@ export default {
 
   // mastodon
   mastoUsername: (url) => {
-    const url = new URL(post.author.mastodon)
-    return `${url.pathname.replace('/', '')}@${url.host}`
+    const parsedUrl = new URL(url)
+    return `${parsedUrl.pathname.replace('/', '')}@${parsedUrl.host}`
   },
 
   // feeds
