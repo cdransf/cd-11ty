@@ -78,6 +78,12 @@ export default {
   // links
   absoluteUrl: (url) => (new URL(url, BASE_URL)).toString(),
 
+  // mastodon
+  mastoUsername: (url) => {
+    const url = new URL(post.author.mastodon)
+    return `${url.pathname.replace('/', '')}@${url.host}`
+  },
+
   // feeds
   normalizeEntries: (entries) => {
     const posts = []
