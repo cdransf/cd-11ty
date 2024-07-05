@@ -60,7 +60,7 @@
           }
         }
 
-        &.brain {
+        & .brain {
           outline: 0;
 
           &:focus svg,
