@@ -396,7 +396,7 @@ footer {
 
   & nav {
     &.social {
-      gap: var(--sizing-sm);
+      gap: var(--sizing-md);
       margin-bottom: var(--sizing-lg);
       width: 100%;
 
@@ -554,9 +554,5 @@ li {
 
   main {
     max-width: 768px;
-  }
-
-  footer nav.social {
-    gap: var(--sizing-md);
   }
 }
