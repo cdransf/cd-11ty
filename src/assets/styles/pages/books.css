@@ -63,7 +63,7 @@
     & p {
       &.title {
         font-size: var(--font-size-xl);
-        line-height: 1.25;
+        line-height: 1.5;
       }
 
       &.sub-meta {
