@@ -85,25 +85,25 @@ code {
 
 /* social icons */
 :is(body, html, nav) a {
-  &.at > svg { stroke: var(--brand-proton) !important; }
-  &.brand-github > svg { stroke: var(--brand-github) !important; }
-  &.brand-npm > svg { stroke: var(--brand-npm) !important; }
-  &.brand-mastodon > svg { stroke: var(--brand-mastodon) !important; }
-  &.article > svg { stroke: var(--posts) !important; }
-  &.books > svg { stroke: var(--books) !important; }
-  &.brain > svg { stroke: var(--brand-listenbrainz) !important; }
-  &.clock-hour-3 > svg { stroke: var(--now) !important; }
-  &.coffee > svg { stroke: var(--brand-buy-me-a-coffee) !important; }
-  &.device-tv > svg { stroke: var(--tv) !important; }
-  &.favorite > svg { stroke: var(--favorite) !important; }
-  &.headphones > svg { stroke: var(--music) !important; }
-  &.heart-handshake > svg { stroke: var(--webrings) !important; }
-  &.info-circle > svg { stroke: var(--about) !important; }
-  &.json > svg { stroke: var(--json) !important; }
-  &.link > svg { stroke: var(--links) !important; }
-  &.mail-plus > svg { stroke: var(--newsletter) !important; }
-  &.rss > svg { stroke: var(--brand-rss) !important; }
-  &.search > svg { stroke: var(--search) !important; }
+  &.at > svg { stroke: var(--brand-proton); }
+  &.brand-github > svg { stroke: var(--brand-github); }
+  &.brand-npm > svg { stroke: var(--brand-npm); }
+  &.brand-mastodon > svg { stroke: var(--brand-mastodon); }
+  &.article > svg { stroke: var(--posts); }
+  &.books > svg { stroke: var(--books); }
+  &.brain > svg { stroke: var(--brand-listenbrainz); }
+  &.clock-hour-3 > svg { stroke: var(--now); }
+  &.coffee > svg { stroke: var(--brand-buy-me-a-coffee); }
+  &.device-tv > svg { stroke: var(--tv); }
+  &.favorite > svg { stroke: var(--favorite); }
+  &.headphones > svg { stroke: var(--music); }
+  &.heart-handshake > svg { stroke: var(--webrings); }
+  &.info-circle > svg { stroke: var(--about); }
+  &.json > svg { stroke: var(--json); }
+  &.link > svg { stroke: var(--links); }
+  &.mail-plus > svg { stroke: var(--newsletter); }
+  &.rss > svg { stroke: var(--brand-rss); }
+  &.search > svg { stroke: var(--search); }
 }
 
 :is(body, html, nav .search) svg {
@@ -190,12 +190,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: var(--sizing-base) 0;
 }
 
-h1 { font-size: var(--font-size-2xl) }
-h2 { font-size: var(--font-size-xl) }
-h3 { font-size: var(--font-size-lg) }
-h4 { font-size: var(--font-size-base) }
-h5 { font-size: var(--font-size-md) }
-h6 { font-size: var(--font-size-sm) }
+h1 { font-size: var(--font-size-2xl); }
+h2 { font-size: var(--font-size-xl); }
+h3 { font-size: var(--font-size-lg); }
+h4 { font-size: var(--font-size-base); }
+h5 { font-size: var(--font-size-md); }
+h6 { font-size: var(--font-size-sm); }
 
 .section-header-wrapper {
   justify-content: space-between;
@@ -545,12 +545,12 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  h1 { font-size: var(--font-size-3xl) }
-  h2 { font-size: var(--font-size-2xl) }
-  h3 { font-size: var(--font-size-xl) }
-  h4 { font-size: var(--font-size-lg) }
-  h5 { font-size: var(--font-size-base) }
-  h6 { font-size: var(--font-size-md) }
+  h1 { font-size: var(--font-size-3xl); }
+  h2 { font-size: var(--font-size-2xl); }
+  h3 { font-size: var(--font-size-xl); }
+  h4 { font-size: var(--font-size-lg); }
+  h5 { font-size: var(--font-size-base); }
+  h6 { font-size: var(--font-size-md); }
 
   main {
     max-width: 768px;
