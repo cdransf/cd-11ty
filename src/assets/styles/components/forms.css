@@ -33,6 +33,12 @@ select {
   color: var(--text-color);
   background-color: var(--background-color);
   padding: var(--sizing-xs) var(--sizing-sm);
+
+  &:focus,
+  &:focus-within {
+    border: 0;
+    outline: var(--outline)
+  }
 }
 
 .search__form {
