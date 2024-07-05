@@ -1,17 +1,3 @@
-.section-header-buttons {
-  display: flex;
-  align-items: center;
-  gap: var(--sizing-sm);
-
-  & > button {
-    margin-bottom: 0;
-
-    &:last-of-type {
-      margin-right: 0;
-    }
-  }
-}
-
 button {
   appearance: none;
   border: none;

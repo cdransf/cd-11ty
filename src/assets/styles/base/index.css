@@ -204,10 +204,25 @@ h6 { font-size: var(--font-size-sm); }
   & .section-header {
     margin: 0;
   }
+
+  & .section-header-buttons {
+    display: flex;
+    align-items: center;
+    gap: var(--sizing-sm);
+
+    & > button {
+      margin-bottom: 0 !important;
+
+      &:last-of-type {
+        margin-right: 0 !important;
+      }
+    }
+  }
 }
 
 .section-header {
   margin: var(--sizing-xl) 0 var(--sizing-lg);
+  line-height: 1;
 
   &.no-top-margin {
     margin: 0 0 var(--sizing-lg);
