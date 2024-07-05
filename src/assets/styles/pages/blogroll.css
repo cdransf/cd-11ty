@@ -1,10 +1,15 @@
 .blog-roll-icons {
   display: flex;
   flex-direction: row;
-  gap: var(--sizing-xs);
 
   & a {
     display: flex;
     align-items: center;
+    outline: 0;
+
+    &:focus svg,
+    &:focus-within svg {
+      outline: var(--outline)
+    }
   }
 }

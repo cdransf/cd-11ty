@@ -19,16 +19,16 @@ description: These are awesome blogs that I enjoy and you may enjoy too.
     <td><a href="{{ blog.url }}">{{ blog.url | replace: "https://", "" }}</a></td>
     <td class="blog-roll-icons">
       {%- if blog.rss_feed -%}
-      <a href="{{ blog.rss_feed }}">{% tablericon "rss" "Subscribe via RSS" %}</a>
+      <a class="rss" href="{{ blog.rss_feed }}">{% tablericon "rss" "Subscribe via RSS" %}</a>&nbsp;
       {%- endif -%}
       {%- if blog.json_feed -%}
-      / <a href="{{ blog.json_feed }}">{% tablericon "json" "Subscribe via JSON" %}</a>
+      <a class="json" href="{{ blog.json_feed }}">{% tablericon "json" "Subscribe via JSON" %}</a>&nbsp;
       {%- endif -%}
       {%- if blog.newsletter -%}
-      / <a href="{{ blog.newsletter }}">{% tablericon "mail-plus" "Newsletter subscription" %}</a>
+      <a class="mail-plus" href="{{ blog.newsletter }}">{% tablericon "mail-plus" "Newsletter subscription" %}</a>&nbsp;
       {%- endif -%}
       {%- if blog.mastodon -%}
-      / <a href="{{ blog.mastodon }}">{% tablericon "brand-mastodon" "Mastodon" %}</a>
+      <a class="brand-mastodon" href="{{ blog.mastodon }}">{% tablericon "brand-mastodon" "Mastodon" %}</a>&nbsp;
       {%- endif -%}
     </td>
   </tr>
