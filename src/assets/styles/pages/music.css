@@ -59,6 +59,15 @@
             stroke: var(--tattoo);
           }
         }
+
+        &.brain {
+          outline: 0;
+
+          &:focus svg,
+          &:focus-within svg {
+            outline: var(--outline)
+          }
+        }
       }
     }
   }
