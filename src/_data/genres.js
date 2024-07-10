@@ -16,7 +16,6 @@ export default async function fetchGenresWithArtists() {
       artists (
         mbid,
         name_string,
-        image,
         total_plays,
         country,
         description,
