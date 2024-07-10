@@ -47,8 +47,8 @@ const fetchAllShows = async () => {
 const prepareShowData = (show) => {
   return {
     ...show,
-    image: show.art?.filename_disk ? show.art.filename_disk : '',
-    backdrop: show.backdrop?.filename_disk ? show.backdrop.filename_disk : ''
+    image: show.art?.filename_disk ? `/${show.art.filename_disk}` : '',
+    backdrop: show.backdrop?.filename_disk ? `/${show.backdrop.filename_disk}` : ''
   }
 }
 
