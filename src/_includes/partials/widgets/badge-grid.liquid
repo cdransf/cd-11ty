@@ -1,5 +1,5 @@
 <div class="badge-grid">
-  {% for badge in badges %}
+  {% for badge in badges limit: 8 %}
   <a href="{{ badge.url }}">
     <img srcset="
         https://cdn.coryd.dev/{{ badge.image }}?class=w50 50w,
