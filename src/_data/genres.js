@@ -5,7 +5,7 @@ const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
-export default async function fetchGenresWithArtists() {
+const fetchGenresWithArtists = async () => {
   const { data, error } = await supabase
     .from('genres')
     .select(`
@@ -37,4 +37,8 @@ export default async function fetchGenresWithArtists() {
   })
 
   return data
+}
+
+export default async function () {
+  return await fetchGenresWithArtists()
 }

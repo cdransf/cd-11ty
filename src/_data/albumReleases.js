@@ -6,7 +6,7 @@ const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
-export default async function () {
+const fetchAlbumReleases = async () => {
   const today = DateTime.utc().toISO()
   const { data, error } = await supabase
     .from('albums')
@@ -38,4 +38,8 @@ export default async function () {
       type: 'album-release'
     }
   )).sort((a, b) => a.timestamp - b.timestamp)
+}
+
+export default async function () {
+  return await fetchAlbumReleases()
 }

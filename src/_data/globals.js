@@ -4,7 +4,7 @@ const SUPABASE_URL = process.env['SUPABASE_URL']
 const SUPABASE_KEY = process.env['SUPABASE_KEY']
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
-export default async function () {
+const fetchGlobals = async () => {
   const { data, error } = await supabase
     .from('globals')
     .select(`
@@ -49,4 +49,8 @@ export default async function () {
   })
 
   return globalData
+}
+
+export default async function () {
+  return await fetchGlobals()
 }

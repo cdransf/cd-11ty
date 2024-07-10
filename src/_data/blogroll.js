@@ -4,7 +4,7 @@ const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
-export default async function fetchGenresWithArtists() {
+const fetchBlogroll = async () => {
   const { data, error } = await supabase
     .from('authors')
     .select('*')
@@ -17,4 +17,8 @@ export default async function fetchGenresWithArtists() {
   }
 
   return data.sort((a, b) => a['name'].toLowerCase().localeCompare(b['name'].toLowerCase()))
+}
+
+export default async function () {
+  return await fetchBlogroll()
 }
