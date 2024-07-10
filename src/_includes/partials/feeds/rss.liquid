@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <atom:link href="{{ permalink | absoluteUrl: meta.url }}" rel="self" type="application/rss+xml" />
+    <atom:link href="{{ permalink | absoluteUrl: globals.url }}" rel="self" type="application/rss+xml" />
     {%- assign entries = data | normalizeEntries -%}
     <title>{{ title }}</title>
     <description>{{ description }}</description>
-    <link>{{ permalink | absoluteUrl: meta.url }}</link>
+    <link>{{ permalink | absoluteUrl: globals.url }}</link>
     <lastBuildDate>{{ updated | stringToRFC822Date }}</lastBuildDate>
     <image>
       <title>{{ title }}</title>
-      <link>{{ permalink | absoluteUrl: meta.url }}</link>
-      <url>https://cdn.coryd.dev/assets/avatar.png</url>
+      <link>{{ permalink | absoluteUrl: globals.url }}</link>
+      <url>https://cdn.coryd.dev/{{ globals.feed_image }}</url>
       <width>144</width>
       <height>144</height>
     </image>

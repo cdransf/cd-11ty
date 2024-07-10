@@ -3,20 +3,20 @@ title: 404
 description: What kind of idiots do you have working here? Hurry up and skip out on the room service bill!
 layout: default
 permalink: /404.html
-image: https://cdn.coryd.dev/assets/404.jpg
+image: https://cdn.coryd.dev/{{ globals.page_404 }}
 ---
 <img
   srcset="
-    https://cdn.coryd.dev/assets/404.jpg?class=bannersm 256w,
-    https://cdn.coryd.dev/assets/404.jpg?class=bannermd 512w,
-    https://cdn.coryd.dev/assets/404.jpg?class=bannerbase 1024w,
-    https://cdn.coryd.dev/assets/404.jpg?class=bannerlg 2048w
+    https://cdn.coryd.dev/{{ globals.page_404 }}?class=bannersm 256w,
+    https://cdn.coryd.dev/{{ globals.page_404 }}?class=bannermd 512w,
+    https://cdn.coryd.dev/{{ globals.page_404 }}?class=bannerbase 1024w,
+    https://cdn.coryd.dev/{{ globals.page_404 }}?class=bannerlg 2048w
   "
   sizes="(max-width: 450px) 256px,
     (max-width: 850px) 512px,
     (max-width: 1000px) 1024px,
     2048px"
-  src="https://cdn.coryd.dev/assets/404.jpg?class=bannerlg"
+  src="https://cdn.coryd.dev/{{ globals.page_404 }}?class=bannerlg"
   alt="{{ alt }}"
   class="image-banner"
   loading="eager"

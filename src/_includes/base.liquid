@@ -1,31 +1,31 @@
-{%- assign fullUrl = meta.url | append: page.url -%}
+{%- assign fullUrl = globals.url | append: page.url -%}
 
-{%- assign pageTitle = meta.siteName -%}
+{%- assign pageTitle = globals.site_name -%}
 {%- if schema == 'blog' -%}
   {%- assign pageTitle = post.title -%}
 {%- elsif title -%}
-  {%- assign pageTitle = title | append: ' / ' | append: meta.siteName -%}
+  {%- assign pageTitle = title | append: ' / ' | append: globals.site_name -%}
 {%- elsif artist.name_string -%}
-  {%- assign pageTitle = 'Artists / ' | append: artist.name_string | append: ' / ' | append: meta.siteName -%}
+  {%- assign pageTitle = 'Artists / ' | append: artist.name_string | append: ' / ' | append: globals.site_name -%}
 {%- elsif schema == 'music-index' -%}
-  {%- assign pageTitle = 'Music / ' | append: meta.siteName -%}
+  {%- assign pageTitle = 'Music / ' | append: globals.site_name -%}
 {%- elsif schema == 'music-period' -%}
-    {%- assign pageTitle = 'Music / ' | append: page.title | append: meta.siteName -%}
+    {%- assign pageTitle = 'Music / ' | append: page.title | append: globals.site_name -%}
 {%- elsif genre.name -%}
-  {%- assign pageTitle = 'Music / ' | append: genre.name | append: ' / ' | append: meta.siteName -%}
+  {%- assign pageTitle = 'Music / ' | append: genre.name | append: ' / ' | append: globals.site_name -%}
 {%- elsif book.title -%}
-  {%- assign pageTitle = 'Books / ' | append: book.title | append: ' / ' | append: meta.siteName -%}
+  {%- assign pageTitle = 'Books / ' | append: book.title | append: ' / ' | append: globals.site_name -%}
 {%- elsif movie.title -%}
   {%- assign pageTitle = 'Movies / ' | append: movie.title -%}
   {%- if movie.rating -%}
     {%- assign pageTitle = pageTitle | append: ' (' | append: movie.rating | append: ')' -%}
   {%- endif -%}
-  {%- assign pageTitle = pageTitle | append: ' / ' | append: meta.siteName -%}
+  {%- assign pageTitle = pageTitle | append: ' / ' | append: globals.site_name -%}
 {%- elsif show.title -%}
-  {%- assign pageTitle = 'Shows / ' | append: show.title | append: ' / ' | append: meta.siteName -%}
+  {%- assign pageTitle = 'Shows / ' | append: show.title | append: ' / ' | append: globals.site_name -%}
 {%- endif -%}
 
-{%- assign pageDescription = meta.siteDescription -%}
+{%- assign pageDescription = globals.site_description -%}
 {%- if schema == 'blog' -%}
   {%- assign pageDescription = post.description | markdown | strip_html -%}
 {%- elsif artist.description -%}
@@ -42,7 +42,7 @@
   {%- assign pageDescription = description -%}
 {%- endif -%}
 
-{%- assign ogImage = meta.meta_data.opengraph_default -%}
+{%- assign ogImage = globals.opengraph_default -%}
 {%- case schema -%}
   {%- when 'music' -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: page.image -%}
@@ -64,7 +64,7 @@
   {%- when 'movie' -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: movie.backdrop -%}
   {%- when 'show' -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev/shows/backdrops/backdrop-' | append: show.tmdb_id | append: '.jpg' -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev/shows/backdrops/backdrop-' | append: show.backdrop -%}
   {%- when 'genre' -%}
     {%- assign genreArtist = genre.artists | shuffleArray | first -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: genreArtist.image -%}
@@ -85,21 +85,21 @@
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ fullUrl }}" />
     <meta property="og:image" content="{{ ogImage }}?class=w800" />
-    <meta name="theme-color" content="{{ meta.themeColor }}" />
+    <meta name="theme-color" content="{{ globals.theme_color }}" />
     <meta name="fediverse:creator" content="@cory@social.lol" />
     <meta name="generator" content="Eleventy">
     <meta name="robots" content="noai, noimageai">
-    <link href="https://cdn.coryd.dev/assets/icons/favicon.ico?v={% appVersion %}" rel="icon" sizes="any">
-    <link href="https://cdn.coryd.dev/assets/icons/favicon.svg?v={% appVersion %}" rel="icon" type="image/svg+xml">
-    <link href="https://cdn.coryd.dev/assets/icons/apple-touch-icon.png?v={% appVersion %}" rel="apple-touch-icon">
+    <link href="https://cdn.coryd.dev/{{ globals.favicon_ico }}?v={% appVersion %}" rel="icon" sizes="any">
+    <link href="https://cdn.coryd.dev/{{ globals.favicon_svg }}?v={% appVersion %}" rel="icon" type="image/svg+xml">
+    <link href="https://cdn.coryd.dev/{{ globals.apple_touch_icon }}?v={% appVersion %}" rel="apple-touch-icon">
     <link rel="webmention" href="https://webmention.io/coryd.dev/webmention" />
     <link rel="pingback" href="https://webmention.io/coryd.dev/xmlrpc" />
-    <link type="application/atom+xml" rel="alternate" title="{{ meta.siteName }}" href="https://feedpress.me/coryd">
-    <link rel="alternate" type="application/json" title="{{ meta.siteName }}" href="https://feedpress.me/coryd.json" />
-    <link rel="alternate" href="https://feedpress.me/coryd-links" title="{{ meta.siteName }}'s links feed" type="application/rss+xml">
-    <link rel="alternate" href="https://feedpress.me/coryd-movies" title="{{ meta.siteName }}'s movies feed" type="application/rss+xml">
-    <link rel="alternate" href="https://feedpress.me/coryd-books" title="{{ meta.siteName }}'s books feed" type="application/rss+xml">
-    <link rel="alternate" href="https://feedpress.me/coryd-all" title="{{ meta.siteName }}'s activity feed" type="application/rss+xml">
+    <link type="application/atom+xml" rel="alternate" title="{{ globals.site_name }}" href="https://feedpress.me/coryd">
+    <link rel="alternate" type="application/json" title="{{ globals.site_name }}" href="https://feedpress.me/coryd.json" />
+    <link rel="alternate" href="https://feedpress.me/coryd-links" title="{{ globals.site_name }}'s links feed" type="application/rss+xml">
+    <link rel="alternate" href="https://feedpress.me/coryd-movies" title="{{ globals.site_name }}'s movies feed" type="application/rss+xml">
+    <link rel="alternate" href="https://feedpress.me/coryd-books" title="{{ globals.site_name }}'s books feed" type="application/rss+xml">
+    <link rel="alternate" href="https://feedpress.me/coryd-all" title="{{ globals.site_name }}'s activity feed" type="application/rss+xml">
     <script defer data-domain="coryd.dev" src="/js/script.outbound-links.tagged-events.js"></script>
     <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
     <script type="application/ld+json">
@@ -108,24 +108,24 @@
         "@graph": [
           {
             "@type": "WebSite",
-            "@id": "{{ meta.url }}#website",
-            "url": "{{ meta.url }}",
+            "@id": "{{ globals.url }}#website",
+            "url": "{{ globals.url }}",
             "name": "{{ pageTitle }}",
             "description": "{{ pageDescription }}",
-            "inLanguage": "{{ meta.locale }}"
+            "inLanguage": "{{ globals.locale }}"
           },
           {%- if schema == 'blog' -%}
             {
               "@type": "BlogPosting",
               "mainEntityOfPage": { "@type": "WebPage" },
-              "isPartOf": { "@id": "{{ meta.url }}#website" },
+              "isPartOf": { "@id": "{{ globals.url }}#website" },
               "@id": "{{ fullUrl }}",
               "headline": "{{ pageTitle }}",
               "description": "{{ pageDescription }}",
-              "image": "{{ image | default: meta.meta_data.opengraph_default }}",
-              "inLanguage": "{{ meta.locale }}",
-              "publisher": { "@type": "{{ meta.siteType }}", "name": "{{ meta.author }}", "url": "{{ meta.url }}" },
-              "author": { "@type": "Person", "name": "{{ meta.author }}" },
+              "image": "{{ image | default: globals.meta_data.opengraph_default }}",
+              "inLanguage": "{{ globals.locale }}",
+              "publisher": { "@type": "{{ globals.site_type }}", "name": "{{ globals.author }}", "url": "{{ globals.url }}" },
+              "author": { "@type": "Person", "name": "{{ globals.author }}" },
               "datePublished": "{{ page.date | isoDateOnly: '.' }}"
             }
           {%- endif -%}

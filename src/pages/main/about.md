@@ -8,19 +8,19 @@ permalink: /about.html
 {%- assign show = tv.recentlyWatched | first -%}
 <div class="avatar-wrapper flex-centered">
   <div class="interior">
-  {%- capture about_alt -%}{{ meta.siteName }} - image by David Neal / @reverentgeek{%- endcapture -%}
+  {%- capture about_alt -%}{{ globals.siteName }} - image by David Neal / @reverentgeek{%- endcapture -%}
   <img
     srcset="
-      https://cdn.coryd.dev/assets/avatar-transparent.png?class=squaresm 200w,
-      https://cdn.coryd.dev/assets/avatar-transparent.png?class=squaremd 400w,
-      https://cdn.coryd.dev/assets/avatar-transparent.png?class=squarebase 800w,
-      https://cdn.coryd.dev/assets/avatar-transparent.png?class=squarelg 1200w
+      https://cdn.coryd.dev/{{ globals.about }}?class=squaresm 200w,
+      https://cdn.coryd.dev/{{ globals.about }}?class=squaremd 400w,
+      https://cdn.coryd.dev/{{ globals.about }}?class=squarebase 800w,
+      https://cdn.coryd.dev/{{ globals.about }}?class=squarelg 1200w
     "
     sizes="(max-width: 450px) 200px,
       (max-width: 850px) 400px,
       (max-width: 1000px) 800px,
       1200px"
-    src="https://cdn.coryd.dev/assets/avatar-transparent.png?class=squarelg"
+    src="https://cdn.coryd.dev/{{ globals.about }}?class=squarelg"
     alt="{{ about_alt }}"
     loading="eager"
     decoding="async"
@@ -39,4 +39,4 @@ I tend to write about whatever strikes me, with a focus on development, technolo
 
 [You can also see what I'm doing now](/now), [take a look at the links I've shared recently](/links) or [check out the webrings I'm a member of](/webrings).
 
-{% render "partials/widgets/badge-grid.liquid" %}
+{% render "partials/widgets/badge-grid.liquid", badges: badges %}

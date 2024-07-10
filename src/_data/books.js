@@ -28,7 +28,7 @@ async function fetchAllBooks() {
   while (true) {
     const { data, error } = await supabase
       .from('books')
-      .select('*')
+      .select(`*, art(filename_disk)`)
       .range(from, to)
 
     if (error) {
@@ -60,7 +60,7 @@ export default async function () {
       review: book['review'],
       rating: book['star_rating'] !== 'unrated' ? book['star_rating'] : '',
       description: book['description'],
-      image: book['thumbnail'],
+      image: `/${book?.['art']?.['filename_disk']}`,
       url: `/books/${book['isbn']}`,
       date: book['date_finished'],
       status: book['read_status'],

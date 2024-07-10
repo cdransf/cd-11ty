@@ -154,7 +154,8 @@ a {
     align-items: center;
 
     & + .page-header,
-    & + .music-chart {
+    & + .music-chart,
+    & + .media-grid {
       margin-top: var(--sizing-base);
     }
   }

@@ -66,7 +66,10 @@ const fetchAllPosts = async () => {
   while (fetchMore) {
     const { data, error } = await supabase
       .from('posts')
-      .select('*')
+      .select(`
+        *,
+        image(filename_disk)
+      `)
       .order('date', { ascending: false })
       .range(page * PAGE_SIZE, (page + 1) * PAGE_SIZE - 1)
 
@@ -78,17 +81,17 @@ const fetchAllPosts = async () => {
     if (data.length < PAGE_SIZE) fetchMore = false
 
     for (const post of data) {
-      if (uniqueSlugs.has(post.slug)) continue
+      if (uniqueSlugs.has(post['slug'])) continue
 
       uniqueSlugs.add(post.slug)
-      post.tags = await fetchTagsForPost(post.id)
-      post.blocks = await fetchBlocksForPost(post.id)
+      post['tags'] = await fetchTagsForPost(post['id'])
+      post['blocks'] = await fetchBlocksForPost(post['id'])
+      if (post?.['image']?.['filename_disk']) post['image'] = post['image']['filename_disk']
       posts.push(post)
     }
 
     page++
   }
-
   return posts
 }
 

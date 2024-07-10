@@ -61,7 +61,7 @@ const aggregateData = async (data, groupByField, groupByType) => {
           plays: 0,
           mbid: item['albums']['mbid'],
           url: `/music/artists/${sanitizeMediaString(item['artist_name'])}-${sanitizeMediaString(parseCountryField(item['artists']['country']))}`,
-          image: item['albums']?.['image'] || '',
+          image: `/${item['albums']?.['art']?.['filename_disk']}` || '',
           timestamp: item['listened_at'],
           type: groupByType,
           genre: genreMapping[item['artists']['genres']] || ''
@@ -72,7 +72,7 @@ const aggregateData = async (data, groupByField, groupByType) => {
           plays: 0,
           mbid: item[groupByType]?.['mbid'] || '',
           url: `/music/artists/${sanitizeMediaString(item['artist_name'])}-${sanitizeMediaString(parseCountryField(item['artists']['country']))}`,
-          image: item[groupByType]?.image || '',
+          image: `/${item[groupByType]?.['art']?.['filename_disk']}` || '',
           type: groupByType,
           genre: genreMapping[item['artists']['genres']] || ''
         }
@@ -97,7 +97,7 @@ const buildRecents = async (data) => {
     artist: listen['artist_name'],
     url: `/music/artists/${sanitizeMediaString(listen['artist_name'])}-${sanitizeMediaString(parseCountryField(listen['artists']['country']))}`,
     timestamp: listen['listened_at'],
-    image: listen['albums']?.['image'] || ''
+    image: `/${listen['albums']?.['art']?.['filename_disk']}` || ''
   }))
 }
 
@@ -128,8 +128,8 @@ export default async function() {
     album_name,
     album_key,
     listened_at,
-    artists (mbid, image, genres, country),
-    albums (mbid, image)
+    artists (mbid, art(filename_disk), genres, country),
+    albums (mbid, art(filename_disk))
   `
 
   for (const [period, startPeriod] of Object.entries(periods)) {

@@ -30,7 +30,6 @@ const fetchAllMovies = async () => {
       .select(`
         id,
         tmdb_id,
-        slug,
         last_watched,
         title,
         year,
@@ -39,7 +38,9 @@ const fetchAllMovies = async () => {
         favorite,
         star_rating,
         description,
-        review
+        review,
+        art(filename_disk),
+        backdrop(filename_disk)
       `)
       .order('last_watched', { ascending: false })
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
@@ -73,8 +74,8 @@ export default async function () {
       year: item['year'],
       url: `/watching/movies/${item['tmdb_id']}`,
       description: `${item['title']} (${item['year']})<br/>Watched at: ${DateTime.fromISO(item['last_watched'], { zone: 'utc' }).setZone('America/Los_Angeles').toFormat('MMMM d, yyyy, h:mma')}`,
-      image: `/movies/poster-${item['tmdb_id']}.jpg`,
-      backdrop: `/movies/backdrops/backdrop-${item['tmdb_id']}.jpg`,
+      image: `/${item?.['art']?.['filename_disk']}`,
+      backdrop: `/${item?.['backdrop']?.['filename_disk']}`,
       plays: item['plays'],
       collected: item['collected'],
       favorite: item['favorite'],
