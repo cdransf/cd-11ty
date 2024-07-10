@@ -13,11 +13,11 @@ export default async function () {
     .select(`
       name,
       key,
-      image,
       release_date,
       release_link,
       total_plays,
-      artists (name_string, mbid, country)
+      art(filename_disk),
+      artists(name_string, mbid, country)
     `)
     .gt('release_date', today)
 
@@ -26,17 +26,16 @@ export default async function () {
     return
   }
 
-  return data.filter(album => !album['total_plays'] || !album['total_plays'] > 0).map(album => {
-    return {
+  return data.filter(album => !album['total_plays'] || !album['total_plays'] > 0).map(album => ({
       artist: album['artists']['name_string'],
       title: album['name'],
       date: DateTime.fromISO(album['release_date']).toLocaleString(DateTime.DATE_FULL),
       url: album['release_link'],
-      image: album['image'],
+      image: `/${album?.['art']?.['filename_disk']}` || '',
       artist_url: `/music/artists/${sanitizeMediaString(album['artists']['name_string'])}-${sanitizeMediaString(parseCountryField(album['artists']['country']))}`,
       mbid: album['artists']['mbid'],
       timestamp: DateTime.fromISO(album['release_date']).toSeconds(),
       type: 'album-release'
     }
-  }).sort((a, b) => a.timestamp - b.timestamp)
+  )).sort((a, b) => a.timestamp - b.timestamp)
 }
