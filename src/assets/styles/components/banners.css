@@ -6,7 +6,6 @@
   margin: var(--sizing-base) 0;
   padding: var(--sizing-md);
   border: 1px solid;
-  border-radius: var(--rounded);
 
   & p {
     font-size: var(--font-size-sm);

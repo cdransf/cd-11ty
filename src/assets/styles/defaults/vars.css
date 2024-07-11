@@ -103,14 +103,6 @@
   --sizing-svg-sm: 18px;
   --sizing-svg-base: 24px;
 
-  /* radii */
-  --rounded-none: 0;
-  --rounded-sm: .125rem;
-  --rounded: .25rem;
-  --rounded-md: .375rem;
-  --rounded-lg: .5rem;
-  --rounded-full: 9999px;
-
   /* aspect ratios */
   --aspect-ratio-square: 1/1;
   --aspect-ratio-vertical: 2/3;
