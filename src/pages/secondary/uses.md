@@ -25,15 +25,16 @@ Software and services that I use for work and my own enjoyment.
 
 - [Vivaldi](https://vivaldi.net): a flexible, reliable and privacy focused browser.
 - [Fantastical](https://flexibits.com/fantastical): a powerful calendar app that continues to outpace Apple's calendar app.
-- [Obsidian](https://obsidian.md): fast, flexible and configurable (or minimal) as you'd like.
+- [Obsidian](https://obsidian.md): fast and configurable (or minimal) as you'd like, I use it for all of my notes and writing.
 - [Plexamp](https://www.plex.tv/plexamp/): Plex's flexible and delightful music player.
 - [Ivory](https://tapbots.com/ivory/): the best, most polished Mastodon client for macOS and iOS.
-- [Reeder](https://reeder.app): flexible and universal — it makes it easy to triage my feeds and save things over to Instapaper.
+- [Reeder](https://reeder.app): flexible and universal — it makes it easy to triage my feeds and save things over to Matter.
 - [Parcel](https://parcelapp.net): the most flexible and reliable package tracker for Apple's ecosystem.
 - [Flighty](https://flightyapp.com): I don't travel a ton but Flighty makes doing so a fair bit less stressful.
 
 <h3>iOS</h3>
 
+- [Matter](https://getmatter.com): my favorite read it later service. It's thoughtful, beautifully designed and it's text to speech features are the best out there.
 - [status.log](https://apps.apple.com/us/app/status-log/id6444921793): a fantastic client for status.lol that provides an outstanding native experience for the service.
 - [Working Copy](https://workingcopy.app): an incredible, fully-featured git client.
 - [Secure Shellfish](https://secureshellfish.app): the _best_ ssh client for iOS, complete with Codeapaces support and Files.app integration.
@@ -68,7 +69,7 @@ Software and services that I use for work and my own enjoyment.
 - [Feedbin](https://feedbin.com): performant, open and super reliable RSS.
 - <a class="plausible-event-name=Matter+referral" href="https://web.getmatter.com/referral/ss6td795">Matter</a>: a newer read it later service, but a rapidly developed and extremely powerful one. It's text to speech features are _excellent_.
 - [forwardemail.net](https://forwardemail.net): a simple and reliable service for forwarding and routing emails from a few of the domains I own.
-- [Backblaze](https://backblaze.com): It backs up my MacBook Air and attached storage drive and I don't have to think about it.
+- [Arq](https://arqbackup.com): It backs up my MacBook Air and attached storage drive to Backblaze B2 and a Hetzner storage box.
 
 <hr />
 
