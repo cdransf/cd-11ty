@@ -1,6 +1,6 @@
 <footer{% unless updated %} style="margin-top:var(--sizing-3xl)"{% endunless %}>
   {% if updated %}
-    <p class="explainer text-small text-centered"><em>This page was last updated on {{ updated | date: "%B %-d, %-I:%M%p", "America/Los_Angeles" }}.</em></p>
+    <p class="explainer text-small text-centered"><em>This page was last updated on {{ updated | strip }}.</em></p>
   {% endif %}
   <nav aria-label="Social icons" class="social flex-centered justify-centered text-centered">
     {% for link in nav.footer_icons %}
