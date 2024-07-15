@@ -15,10 +15,6 @@ const fetchGlobals = async () => {
       feed_image(filename_disk),
       apple_touch_icon(filename_disk),
       about(filename_disk),
-      page_404(filename_disk),
-      page_broken(filename_disk),
-      page_not_allowed(filename_disk),
-      page_stop(filename_disk),
       logo_the_claw(filename_disk)
     `)
 
@@ -35,10 +31,6 @@ const fetchGlobals = async () => {
     'feed_image',
     'apple_touch_icon',
     'about',
-    'page_404',
-    'page_broken',
-    'page_not_allowed',
-    'page_stop',
     'logo_the_claw'
   ]
 
