@@ -43,10 +43,6 @@ select {
 
 .search__form {
   margin-top: 0;
-
-  & .search__form--input {
-    margin-bottom: 0;
-  }
 }
 
 .search__results {
