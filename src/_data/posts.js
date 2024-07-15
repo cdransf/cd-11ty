@@ -38,7 +38,7 @@ const fetchTagsForPost = async (postId) => {
 const fetchBlocksForPost = async (postId) => {
   const { data, error } = await supabase
     .from('posts_blocks')
-    .select('collection, item')
+    .select('collection, item, sort')
     .eq('posts_id', postId)
 
   if (error) {
@@ -48,8 +48,10 @@ const fetchBlocksForPost = async (postId) => {
 
   const blocks = await Promise.all(data.map(async block => {
     const blockData = await fetchBlockData(block.collection, block.item)
+
     return {
-      type: block.collection,
+      type: block['collection'],
+      sort: block['sort'],
       ...blockData
     }
   }))

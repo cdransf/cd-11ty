@@ -24,7 +24,7 @@ const fetchBlockData = async (collection, itemId) => {
 const fetchBlocksForPage = async (pageId) => {
   const { data, error } = await supabase
     .from('pages_blocks')
-    .select('collection, item')
+    .select('collection, item, sort')
     .eq('pages_id', pageId)
 
   if (error) {
@@ -37,11 +37,12 @@ const fetchBlocksForPage = async (pageId) => {
 
     return {
       type: block['collection'],
+      sort: block['sort'],
       ...blockData
     }
   }))
 
-  return blocks
+  return blocks.sort((a, b) => a.sort - b.sort)
 }
 
 const fetchAllPages = async () => {
