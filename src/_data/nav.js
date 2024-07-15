@@ -23,12 +23,12 @@ const fetchAllNavigation = async () => {
       title: item.pages.title,
       permalink: item.pages.permalink,
       icon: item.icon,
-      position: item.position
+      sort: item.sort
     } : {
       title: item.title,
       permalink: item.permalink,
       icon: item.icon,
-      position: item.position
+      sort: item.sort
     }
 
     if (!menu[item.menu_location]) {
@@ -39,7 +39,7 @@ const fetchAllNavigation = async () => {
   })
 
   Object.keys(menu).forEach(location => {
-    menu[location].sort((a, b) => a.position - b.position)
+    menu[location].sort((a, b) => a.sort - b.sort)
   })
 
   return menu
