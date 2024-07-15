@@ -15,6 +15,8 @@
   {%- assign pageTitle = 'Music / ' | append: genre.name | append: ' / ' | append: globals.site_name -%}
 {%- elsif book.title -%}
   {%- assign pageTitle = 'Books / ' | append: book.title | append: ' / ' | append: globals.site_name -%}
+{%- elsif year.value -%}
+  {%- assign pageTitle = ' / Books ' | prepend: year.value | append: ' / ' | append: globals.site_name -%}
 {%- elsif movie.title -%}
   {%- assign pageTitle = 'Movies / ' | append: movie.title -%}
   {%- if movie.rating -%}
@@ -57,7 +59,10 @@
     {%- assign featuredMovie = movies.recentlyWatched | first -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredMovie.backdrop -%}
   {%- when 'books' -%}
-    {%- assign featuredBook = books | bookStatus: 'started' | reverse | first -%}
+    {%- assign featuredBook = books.all | bookStatus: 'started' | reverse | first -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredBook.image -%}
+  {%- when 'books-year' -%}
+    {%- assign featuredBook = books.all | bookStatus: 'finished' | bookFinishedYear: year.value | bookSortDescending | first -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredBook.image -%}
   {%- when 'book' -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: book.image -%}

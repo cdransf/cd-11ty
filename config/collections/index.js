@@ -30,7 +30,7 @@ export const searchIndex = (collection) => {
   const { data } = collectionData
   const { posts, links, movies, books } = data
   const movieData = movies['movies'].filter(movie => (movie['review']?.length && movie['review']?.length > 0 && movie['rating']))
-  const bookData = books.filter(book => (book['review']?.length && book['review']?.length > 0 && book['rating']))
+  const bookData = books.all.filter(book => (book['review']?.length && book['review']?.length > 0 && book['rating']))
   const addItemToIndex = (items, icon, getUrl, getTitle, getTags) => {
     if (items) {
       items.forEach((item) => {
@@ -104,7 +104,7 @@ export const allContent = (collection) => {
 
   addContent(posts, '📝', item => item['title'], item => item['date'])
   addContent(links, '🔗', item => item['title'], item => item['date'])
-  addContent(books.filter(book => book['status'] === 'finished'), '📖', item => `${item['title']}${item['rating'] ? ' (' + item['rating'] + ')' : ''}`, item => item['date'])
+  addContent(books.all.filter(book => book['status'] === 'finished'), '📖', item => `${item['title']}${item['rating'] ? ' (' + item['rating'] + ')' : ''}`, item => item['date'])
   addContent(movies, '🎥', item => `${item['title']}${item['rating'] ? ' (' + item['rating'] + ')' : ''}`, item => item['lastWatched'])
 
   return aggregateContent.sort((a, b) => {

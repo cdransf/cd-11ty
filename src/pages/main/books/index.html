@@ -6,8 +6,8 @@ permalink: "/books/index.html"
 updated: "now"
 schema: books
 ---
-{%- assign bookData = books | bookStatus: 'started' | reverse -%}
-{%- assign currentBookCount = books | currentBookCount -%}
+{%- assign bookData = books.all | bookStatus: 'started' | reverse -%}
+{%- assign currentBookCount = books.all | currentBookCount -%}
 <h2 class="page-header">Currently reading</h2>
 <p>Here's what I'm reading at the moment. I've finished <strong class="highlight-text">{{ currentBookCount }} books</strong> this year.</p>
 <p><a href="/books/years/2024">2024</a> / <a href="/books/years/2023">2023</a> / <a href="/books/years/2022">2022</a> / <a href="/books/years/2021">2021</a> / <a href="/books/years/2020">2020</a></p>

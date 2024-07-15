@@ -4,7 +4,7 @@ layout: page
 permalink: /about.html
 ---
 {%- assign artist = music.week.artists | first -%}
-{%- assign book = books | bookStatus: 'started' | reverse | first -%}
+{%- assign book = books.all | bookStatus: 'started' | reverse | first -%}
 {%- assign show = tv.recentlyWatched | first -%}
 <div class="avatar-wrapper flex-centered">
   <div class="interior">

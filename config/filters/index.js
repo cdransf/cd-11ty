@@ -204,6 +204,7 @@ export default {
     return `${allButLast} and ${last}`
   },
   bookStatus: (books, status) => books.filter(book => book.status === status),
+  bookFavorites: (books) => books.filter(book => book.favorite === true),
   bookSortDescending: (books) => books.filter(book => !isNaN(DateTime.fromISO(book.date).toMillis())).sort((a, b) => {
     const dateA = DateTime.fromISO(a.date)
     const dateB = DateTime.fromISO(b.date)
@@ -225,6 +226,8 @@ export default {
   genreStrings: (genres, key) => genres.map(genre => genre[key]),
   mediaLinks: (data, type, count = 10) => {
     const dataSlice = data.slice(0, count)
+    let last;
+
     if (dataSlice.length === 0) return ''
     if (dataSlice.length === 1) return type === 'genre' ? dataSlice[0] : dataSlice[0]['artist_name']
 
@@ -233,12 +236,18 @@ export default {
         return `<a href="/music/genres/${sanitizeMediaString(item)}">${item}</a>`
       } else if (type === 'artist') {
         return `<a href="/music/artists/${sanitizeMediaString(item['name_string'])}-${sanitizeMediaString(item['country'].toLowerCase())}">${item['name_string']}</a>`
+      } else if (type === 'book') {
+        return `<a href="/books/${item['isbn']}">${item['title']}</a>`
       }
     }).join(', ')
 
-    const last = type === 'genre'
-      ? `<a href="/music/genres/${sanitizeMediaString(dataSlice[dataSlice.length - 1])}">${dataSlice[dataSlice.length - 1]}</a>`
-      : `<a href="/music/artists/${sanitizeMediaString(dataSlice[dataSlice.length - 1]['name_string'])}-${sanitizeMediaString(dataSlice[dataSlice.length - 1]['country'].toLowerCase())}">${dataSlice[dataSlice.length - 1]['name_string']}</a>`
+    if (type === 'genre') {
+      last = `<a href="/music/genres/${sanitizeMediaString(dataSlice[dataSlice.length - 1])}">${dataSlice[dataSlice.length - 1]}</a>`
+    } else if (type === 'artist') {
+      last = `<a href="/music/artists/${sanitizeMediaString(dataSlice[dataSlice.length - 1]['name_string'])}-${sanitizeMediaString(dataSlice[dataSlice.length - 1]['country'].toLowerCase())}">${dataSlice[dataSlice.length - 1]['name_string']}</a>`
+    } else if (type === 'book') {
+      last = `<a href="/books/${dataSlice[dataSlice.length - 1]['isbn']}">${dataSlice[dataSlice.length - 1]['title']}</a>`
+    }
 
     return `${allButLast} and ${last}`
   }
