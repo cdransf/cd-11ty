@@ -39,7 +39,7 @@ schema: blog
     />
     {%- endif -%}
     {{ post.content | markdown }}
-    {% render "partials/posts/blocks.liquid", blocks:post.blocks %}
+    {% render "partials/blocks/index.liquid", blocks:post.blocks %}
   </div>
 </article>
 {% render "partials/widgets/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}

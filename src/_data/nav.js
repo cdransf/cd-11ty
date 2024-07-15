@@ -1,30 +1,50 @@
-export default async function () {
-  return {
-    menu: [
-      { name: 'Posts', url: '/posts', icon: 'article'},
-      { name: 'Music', url: '/music', icon: 'headphones' },
-      { name: 'Watching', url: '/watching', icon: 'device-tv' },
-      { name: 'Books', url: '/books', icon: 'books' },
-      { name: 'Links', icon: 'link' },
-      { name: 'About', url: '/about', icon: 'info-circle' },
-      { name: 'Search', icon: 'search' },
-      { name: 'Feeds', icon: 'rss' },
-      { name: 'Mastodon', icon: 'brand-mastodon' },
-    ],
-    footer: [
-      { name: 'Uses' },
-      { name: 'Colophon' },
-      { name: 'Blogroll' },
-      { name: 'Save' },
-    ],
-    social: [
-      { name: 'Email', url: '/contact', icon: 'at' },
-      { name: 'GitHub', url: 'https://github.com/cdransf', icon: 'brand-github' },
-      { name: 'npm', url: 'https://www.npmjs.com/~cdransf', icon: 'brand-npm'},
-      { name: 'Mastodon', url: 'https://social.lol/@cory', icon: 'brand-mastodon' },
-      { name: 'Coffee', url: 'https://buymeacoffee.com/cory', icon: 'coffee' },
-      { name: 'Now', url: '/now', icon: 'clock-hour-3' },
-      { name: 'Webrings', url: '/webrings', icon: 'heart-handshake' },
-    ],
+import { createClient } from '@supabase/supabase-js'
+
+const SUPABASE_URL = process.env.SUPABASE_URL
+const SUPABASE_KEY = process.env.SUPABASE_KEY
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+
+const fetchAllNavigation = async () => {
+  const { data, error } = await supabase
+    .from('navigation')
+    .select(`
+      *,
+      pages(title, permalink)
+    `)
+
+  if (error) {
+    console.error('Error fetching navigation data:', error)
+    return null
   }
+
+  const menu = {}
+  data.forEach(item => {
+    const menuItem = item.pages ? {
+      title: item.pages.title,
+      permalink: item.pages.permalink,
+      icon: item.icon,
+      position: item.position
+    } : {
+      title: item.title,
+      permalink: item.permalink,
+      icon: item.icon,
+      position: item.position
+    }
+
+    if (!menu[item.menu_location]) {
+      menu[item.menu_location] = [menuItem]
+    } else {
+      menu[item.menu_location].push(menuItem)
+    }
+  })
+
+  Object.keys(menu).forEach(location => {
+    menu[location].sort((a, b) => a.position - b.position)
+  })
+
+  return menu
+}
+
+export default async function () {
+  return await fetchAllNavigation()
 }

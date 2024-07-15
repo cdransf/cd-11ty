@@ -7,5 +7,11 @@
     {% render "partials/banners/npm.liquid", url:block.url, command:block.command %}
   {% elsif block.type == 'rss_banner' %}
     {% render "partials/banners/rss.liquid", url:block.url, text:block.text %}
+  {% elsif block.type == 'hero' %}
+    {% render "partials/blocks/hero.liquid", image:block.image.filename_disk, alt:block.alt_text %}
+  {% elsif block.type == 'markdown' %}
+    {{ block.text | markdown }}
+  {% elsif block.type == 'addon_links' %}
+    <hr />{% render "partials/widgets/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}
   {% endif %}
 {% endfor %}

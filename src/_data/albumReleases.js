@@ -37,7 +37,7 @@ const fetchAlbumReleases = async () => {
       timestamp: DateTime.fromISO(album['release_date']).toSeconds(),
       type: 'album-release'
     }
-  )).sort((a, b) => a.timestamp - b.timestamp)
+  )).sort((a, b) => a['timestamp'] - b['timestamp'])
 }
 
 export default async function () {

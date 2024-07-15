@@ -40,8 +40,8 @@ const fetchAllLinks = async () => {
     if (data.length < PAGE_SIZE) fetchMore = false
 
     for (const link of data) {
-      link.tags = await fetchTagsForLink(link.id)
-      link.type = 'link'
+      link['tags'] = await fetchTagsForLink(link.id)
+      link['type'] = 'link'
     }
 
     links = links.concat(data)

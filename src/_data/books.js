@@ -37,7 +37,7 @@ async function fetchAllBooks() {
     }
 
     for (const book of data) {
-      book.tags = await fetchTagsForBook(book.id)
+      book.tags = await fetchTagsForBook(book['id'])
     }
 
     books = books.concat(data)

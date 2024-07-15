@@ -26,7 +26,7 @@ const fetchAllRobots = async () => {
     if (data.length < PAGE_SIZE) break
   }
 
-  return robots.map(robot => robot.user_agent)
+  return robots.map(robot => robot['user_agent'])
 }
 
 export default async function () {

@@ -47,20 +47,20 @@ const fetchAllShows = async () => {
 const prepareShowData = (show) => {
   return {
     ...show,
-    image: show.art?.filename_disk ? `/${show.art.filename_disk}` : '',
-    backdrop: show.backdrop?.filename_disk ? `/${show.backdrop.filename_disk}` : ''
+    image: show['art']?.['filename_disk'] ? `/${show['art']['filename_disk']}` : '',
+    backdrop: show['backdrop']?.['filename_disk'] ? `/${show['backdrop']['filename_disk']}` : ''
   }
 }
 
 const prepareEpisodeData = (show) => {
-  return show.episodes.map(episode => ({
+  return show['episodes'].map(episode => ({
     ...episode,
-    show_title: show.title,
-    show_tmdb_id: show.tmdb_id,
-    collected: show.collected,
-    favorite: show.favorite,
-    image: show.image,
-    backdrop: show.backdrop
+    show_title: show['title'],
+    show_tmdb_id: show['tmdb_id'],
+    collected: show['collected'],
+    favorite: show['favorite'],
+    image: show['image'],
+    backdrop: show['backdrop']
   }))
 }
 
@@ -76,15 +76,15 @@ export default async function () {
     const showEpisodesMap = {}
 
     episodes.forEach(episode => {
-      const showTitle = episode.show_title
-      const showTmdbId = episode.show_tmdb_id
-      const episodeNumber = episode.episode_number
-      const seasonNumber = episode.season_number
-      const lastWatchedAt = episode.last_watched_at
-      const collected = episode.collected
-      const favorite = episode.favorite
-      const image = episode.image
-      const backdrop = episode.backdrop
+      const showTitle = episode['show_title']
+      const showTmdbId = episode['show_tmdb_id']
+      const episodeNumber = episode['episode_number']
+      const seasonNumber = episode['season_number']
+      const lastWatchedAt = episode['last_watched_at']
+      const collected = episode['collected']
+      const favorite = episode['favorite']
+      const image = episode['image']
+      const backdrop = episode['backdrop']
 
       if (!showEpisodesMap[showTmdbId]) {
         showEpisodesMap[showTmdbId] = {
@@ -115,16 +115,16 @@ export default async function () {
       })
     })
 
-    const sortedShows = Object.values(showEpisodesMap).sort((a, b) => new Date(b.episodes[0].lastWatchedAt) - new Date(a.episodes[0].lastWatchedAt))
+    const sortedShows = Object.values(showEpisodesMap).sort((a, b) => new Date(b.episodes[0]['lastWatchedAt']) - new Date(a.episodes[0]['lastWatchedAt']))
 
     const episodeData = []
     sortedShows.forEach(show => {
-      const startingEpisode = show.episodes[show.episodes.length - 1].episode
-      const startingSeason = show.episodes[show.episodes.length - 1].season
-      const endingEpisode = show.episodes[0].episode
-      const endingSeason = show.episodes[0].season
+      const startingEpisode = show['episodes'][show['episodes'].length - 1]['episode']
+      const startingSeason = show['episodes'][show['episodes'].length - 1]['season']
+      const endingEpisode = show['episodes'][0].episode
+      const endingSeason = show['episodes'][0].season
 
-      if (show.episodes.length > 1) {
+      if (show['episodes'].length > 1) {
         episodeData.push({
           name: show.title,
           url: `/watching/shows/${show.tmdbId}`,
@@ -141,11 +141,11 @@ export default async function () {
           backdrop: show.backdrop
         })
       } else {
-        const singleEpisode = show.episodes[0]
-        singleEpisode.collected = show.collected
-        singleEpisode.favorite = show.favorite
-        singleEpisode.image = show.image
-        singleEpisode.backdrop = show.backdrop
+        const singleEpisode = show['episodes'][0]
+        singleEpisode.collected = show['collected']
+        singleEpisode.favorite = show['favorite']
+        singleEpisode.image = show['image']
+        singleEpisode.backdrop = show['backdrop']
         episodeData.push(singleEpisode)
       }
     })
@@ -153,12 +153,12 @@ export default async function () {
     return episodeData
   }
 
-  const favoriteShows = shows.filter(show => show.favorite)
+  const favoriteShows = shows.filter(show => show['favorite'])
 
   return {
     shows,
     watchHistory: formatEpisodeData(episodes),
     recentlyWatched: formatEpisodeData(episodes.slice(0, 225)),
-    favorites: formatEpisodeData(favoriteShows.flatMap(prepareEpisodeData)).sort((a, b) => a.name.localeCompare(b.name))
+    favorites: formatEpisodeData(favoriteShows.flatMap(prepareEpisodeData)).sort((a, b) => a['name'].localeCompare(b['name']))
   }
 }

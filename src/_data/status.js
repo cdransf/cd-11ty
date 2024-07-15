@@ -8,5 +8,5 @@ export default async function () {
   }).catch()
   const status = await res
 
-  return status.response['statuses'][0]
+  return status['response']['statuses'][0]
 }

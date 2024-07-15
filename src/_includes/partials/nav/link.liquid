@@ -1,20 +1,20 @@
-{%- assign categoryUrl = "/" | append: link | downcase -%}
+{%- assign categoryUrl = url | downcase -%}
 {% if categoryUrl | isLinkActive: page.url %}
   <span class="active {{ class }}" aria-current="page">
     {% if icon %}
-      {% tablericon icon link %}
-      <span>{{ link }}</span>
+      {% tablericon icon title %}
+      <span>{{ title }}</span>
     {% else %}
-      {{ link }}
+      {{ title }}
     {% endif %}
   </span>
 {% else %}
   <a class="{% if icon %}{{ icon | downcase }} icon {% endif %}{{ class }}" href="{{ categoryUrl }}" tabindex="0">
     {% if icon %}
-      {% tablericon icon link %}
-      <span>{{ link }}</span>
+      {% tablericon icon title %}
+      <span>{{ title }}</span>
     {% else %}
-      {{ link }}
+      {{ title }}
     {% endif %}
   </a>
 {% endif %}

@@ -14,5 +14,5 @@ export default async function () {
     },
   }).catch()
   const pages = await res
-  return pages.results.filter((p) => p.page.includes('posts'))
+  return pages['results'].filter((p) => p['page'].includes('posts'))
 }

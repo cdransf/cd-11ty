@@ -30,9 +30,9 @@ const fetchGenresWithArtists = async () => {
   }
 
   data.forEach(genre => {
-    genre.artists = genre.artists.map(artist => ({
+    genre['artists'] = genre['artists'].map(artist => ({
       ...artist,
-      country: parseCountryField(artist.country)
+      country: parseCountryField(artist['country'])
     }))
   })
 
