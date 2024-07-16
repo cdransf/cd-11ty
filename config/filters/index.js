@@ -205,6 +205,10 @@ export default {
   },
   bookStatus: (books, status) => books.filter(book => book.status === status),
   bookFavorites: (books) => books.filter(book => book.favorite === true),
+  bookYearLinks: (years) => years.sort((a, b) => b.value - a.value).map((year, index) => {
+    const separator = index < years.length - 1 ? ' / ' : '';
+    return `<a href="/books/years/${year.value}">${year.value}</a>${separator}`;
+  }).join(''),
   bookSortDescending: (books) => books.filter(book => !isNaN(DateTime.fromISO(book.date).toMillis())).sort((a, b) => {
     const dateA = DateTime.fromISO(a.date)
     const dateB = DateTime.fromISO(b.date)
