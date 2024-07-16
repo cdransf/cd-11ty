@@ -44,18 +44,6 @@
 /posts/2023/semi-automated-hashtags-syndicated-posts/ /posts/2023/semi-automated-hashtags-for-syndicated-posts/ 301
 /posts/2023/automating-rss-syndication-with-nextjs-github/ /posts/2023/automating-rss-syndication-and-sharing-with-nextjs-and-github/ 301
 /posts/2023/locally-stored-music-and-storage-as-a-meaningful-constraint/ /posts/2023/doppler-locally-stored-music-and-storage-as-a-beneficial-constraint/ 301
-
-# 404s
-/* /404.html 404
-/robot.txt /robots.txt 301
-robotx.txt /robots.txt 301
-/sitemap /sitemap.xml 301
-/sitemap.txt /sitemap.xml 301
-/blog / 301
-/posts/2024 / 301
-/stats /search 301
-/books/want-to-read /books 301
-/watching/movies-to-watch /watching 301
 /blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301
 
 # feeds
@@ -74,7 +62,7 @@ robotx.txt /robots.txt 301
  /follow.json https://feedpress.me/coryd-all.json
 
 # general
-/articles/ / 301
+/articles/ /posts/ 301
 /recent/movies /watching/recent/movies 301
 /recent/shows /watching/recent/shows 301
 /mastodon https://social.lol/@cory 301
@@ -83,3 +71,4 @@ robotx.txt /robots.txt 301
 /tags/* /search 301
 /music/genre/* /music/genres/:splat 301
 /reading /books
+/stats /search 301

@@ -6,7 +6,7 @@ import markdownItAnchor from 'markdown-it-anchor'
 import markdownItFootnote from 'markdown-it-footnote'
 import htmlmin from 'html-minifier-terser'
 import filters from './config/filters/index.js'
-import { minifyJsComponents } from './config/events/index.js'
+import { copy404Page, minifyJsComponents } from './config/events/index.js'
 import { allContent, popularPosts, searchIndex, siteMap } from './config/collections/index.js'
 import { DateTime } from 'luxon'
 
@@ -106,6 +106,7 @@ export default async function (eleventyConfig) {
   })
 
   // events
+  eleventyConfig.on('afterBuild', copy404Page)
   eleventyConfig.on('afterBuild', minifyJsComponents)
 
   return {
