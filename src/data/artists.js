@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
-import { parseCountryField } from '../../config/utilities/index.js'
+import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
@@ -72,6 +72,7 @@ export default async function () {
     artist['image'] = `/${artist['art']['filename_disk']}`
     artist['country'] = parseCountryField(artist['country'])
     artist['genres'] = genreMapping[artist['genres']] || ''
+    artist['url'] = `/music/artists/${sanitizeMediaString(artist['name_string'])}-${sanitizeMediaString(artist['country'])}`
   }
 
   return artists

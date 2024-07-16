@@ -4,7 +4,7 @@ pagination:
   data: books.all
   size: 1
   alias: book
-permalink: "/books/{{ book.isbn }}/index.html"
+permalink: "{{ book.url }}/index.html"
 isbn: {{ book.isbn }}
 schema: book
 ---
@@ -50,6 +50,7 @@ schema: book
   </div>
   {% if book.review %}
     {% render "partials/blocks/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
+    <h3>My thoughts</h3>
     {{ book.review | markdown }}
     <hr />
   {% endif %}

@@ -48,7 +48,8 @@ const prepareShowData = (show) => {
   return {
     ...show,
     image: show['art']?.['filename_disk'] ? `/${show['art']['filename_disk']}` : '',
-    backdrop: show['backdrop']?.['filename_disk'] ? `/${show['backdrop']['filename_disk']}` : ''
+    backdrop: show['backdrop']?.['filename_disk'] ? `/${show['backdrop']['filename_disk']}` : '',
+    url: `/watching/shows/${show['tmdb_id']}`,
   }
 }
 
@@ -121,24 +122,24 @@ export default async function () {
     sortedShows.forEach(show => {
       const startingEpisode = show['episodes'][show['episodes'].length - 1]['episode']
       const startingSeason = show['episodes'][show['episodes'].length - 1]['season']
-      const endingEpisode = show['episodes'][0].episode
-      const endingSeason = show['episodes'][0].season
+      const endingEpisode = show['episodes'][0]['episode']
+      const endingSeason = show['episodes'][0]['season']
 
       if (show['episodes'].length > 1) {
         episodeData.push({
-          name: show.title,
-          url: `/watching/shows/${show.tmdbId}`,
+          name: show['title'],
+          url: `/watching/shows/${show['tmdbId']}`,
           subtext: `S${startingSeason}E${startingEpisode} - S${endingSeason}E${endingEpisode}`,
           startingEpisode,
           startingSeason,
           episode: endingEpisode,
           season: endingSeason,
-          tmdbId: show.tmdbId,
-          collected: show.collected,
-          favorite: show.favorite,
+          tmdbId: show['tmdbId'],
+          collected: show['collected'],
+          favorite: show['favorite'],
           type: 'tv-range',
-          image: show.image,
-          backdrop: show.backdrop
+          image: show['image'],
+          backdrop: show['backdrop']
         })
       } else {
         const singleEpisode = show['episodes'][0]

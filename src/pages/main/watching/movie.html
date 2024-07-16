@@ -4,7 +4,7 @@ pagination:
   data: movies.movies
   size: 1
   alias: movie
-permalink: /watching/movies/{{ movie.id }}/index.html
+permalink: "{{ movie.url }}/index.html"
 schema: movie
 ---
 {%- capture alt -%}
@@ -39,6 +39,7 @@ schema: movie
   </div>
   {% if movie.review %}
     {% render "partials/blocks/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
+    <h3>My thoughts</h3>
     {{ movie.review | markdown }}
     <hr />
   {% endif %}

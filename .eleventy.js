@@ -7,7 +7,7 @@ import markdownItFootnote from 'markdown-it-footnote'
 import htmlmin from 'html-minifier-terser'
 import filters from './config/filters/index.js'
 import { minifyJsComponents } from './config/events/index.js'
-import { allContent, popularPosts, searchIndex } from './config/collections/index.js'
+import { allContent, popularPosts, searchIndex, siteMap } from './config/collections/index.js'
 import { DateTime } from 'luxon'
 
 // load .env
@@ -56,6 +56,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('allContent', allContent)
   eleventyConfig.addCollection('popularPosts', popularPosts)
   eleventyConfig.addCollection('searchIndex', searchIndex)
+  eleventyConfig.addCollection('siteMap', siteMap)
 
   const md = markdownIt({ html: true, linkify: true })
   md.use(markdownItAnchor, {
@@ -111,8 +112,8 @@ export default async function (eleventyConfig) {
     passthroughFileCopy: true,
     dir: {
       input: 'src',
-      includes: '_includes',
-      data: '_data',
+      includes: 'includes',
+      data: 'data',
       output: '_site',
     },
   }

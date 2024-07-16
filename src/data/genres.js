@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
+import slugify from 'slugify'
 import { parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
@@ -34,6 +35,7 @@ const fetchGenresWithArtists = async () => {
       ...artist,
       country: parseCountryField(artist['country'])
     }))
+    genre['url'] = `/music/genres/${slugify(genre['name'].toLowerCase())}`
   })
 
   return data

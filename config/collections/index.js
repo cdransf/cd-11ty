@@ -128,3 +128,59 @@ export const popularPosts = (collection) => {
       return visitors(b) - visitors(a)
     })
 }
+
+export const siteMap = (collection) => {
+  const aggregateContent = []
+  const collectionData = collection.getAll()[0]
+  const { data } = collectionData
+  const { posts, pages, artists, genres, movies, tv, books } = data
+
+  const parseDate = (date) => {
+    if (!date) return null
+    let parsedDate = DateTime.fromISO(date)
+    if (!parsedDate.isValid) parsedDate = DateTime.fromFormat(date, 'yyyy-MM-dd')
+    if (!parsedDate.isValid) parsedDate = DateTime.fromFormat(date, 'MM/dd/yyyy')
+    if (!parsedDate.isValid) parsedDate = DateTime.fromFormat(date, 'dd-MM-yyyy')
+    return parsedDate.isValid ? parsedDate.toISO() : null
+  }
+
+  const addedUrls = new Set()
+
+  const addContent = (items, getTitle, getDate) => {
+    if (items) {
+      items.forEach(item => {
+        let url
+        if (item?.['url']) url = item['url']
+        if (item?.['permalink']) url = item['permalink']
+        if (item?.['slug']) url = item['slug']
+        if (!url || addedUrls.has(url)) return
+
+        const content = {
+          url,
+          title: getTitle(item),
+          date: getDate ? parseDate(getDate(item)) : null
+        }
+        aggregateContent.push(content)
+        addedUrls.add(url)
+      })
+    }
+  }
+
+  if (posts) addContent(posts, item => item.title, item => item.date)
+  if (pages) addContent(pages, item => item.title, item => item.date)
+  if (artists) addContent(artists, item => item.name, item => item.date)
+  if (genres) addContent(genres, item => item.name, item => item.date)
+  if (movies?.['movies']) addContent(movies['movies'], item => item.title, item => item.date)
+  if (books?.['all']) addContent(books['all'], item => item.title, item => item.date)
+  if (tv?.['shows']) addContent(tv['shows'], item => item.title, item => item.date)
+
+  collection.getAll().forEach(item => {
+    if (item.data.pages) addContent(item.data.pages, item => item.title, item => item.date)
+  })
+
+  return aggregateContent.sort((a, b) => {
+    const dateA = a.date ? DateTime.fromISO(a.date) : DateTime.fromMillis(0)
+    const dateB = b.date ? DateTime.fromISO(b.date) : DateTime.fromMillis(0)
+    return dateB - dateA
+  })
+}
