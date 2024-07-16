@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
 import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
+import { DateTime } from 'luxon'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
@@ -55,7 +56,12 @@ const fetchGenreMapping = async () => {
 export default async function () {
   const genreMapping = await fetchGenreMapping()
   const artists = await fetchPaginatedData('artists', 'id, mbid, name_string, art(filename_disk), total_plays, country, description, favorite, tattoo, genres')
-  const albums = await fetchPaginatedData('albums', 'mbid, name, release_year, total_plays, artist')
+  const allAlbums = await fetchPaginatedData('albums', 'id, mbid, name, release_year, total_plays, artist, release_date')
+  const albums = allAlbums.filter(album =>
+    !album['release_date'] ||
+    DateTime.fromISO(album['release_date']) <= DateTime.now() ||
+    (DateTime.fromISO(album['release_date']) > DateTime.now() && album['total_plays'] > 0)
+  )
   const albumsByArtist = albums.reduce((acc, album) => {
     if (!acc[album['artist']]) acc[album['artist']] = []
     acc[album['artist']].push({
