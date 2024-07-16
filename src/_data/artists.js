@@ -47,7 +47,7 @@ const fetchGenreMapping = async () => {
   }
 
   return data.reduce((acc, genre) => {
-    acc[genre.id] = genre.name
+    acc[genre['id']] = genre['name']
     return acc
   }, {})
 }
@@ -57,21 +57,21 @@ export default async function () {
   const artists = await fetchPaginatedData('artists', 'id, mbid, name_string, art(filename_disk), total_plays, country, description, favorite, tattoo, genres')
   const albums = await fetchPaginatedData('albums', 'mbid, name, release_year, total_plays, artist')
   const albumsByArtist = albums.reduce((acc, album) => {
-    if (!acc[album.artist]) acc[album.artist] = []
-    acc[album.artist].push({
-      id: album.id,
-      name: album.name,
-      release_year: album.release_year,
-      total_plays: album.total_plays > 0 ? album.total_plays : '-'
+    if (!acc[album['artist']]) acc[album['artist']] = []
+    acc[album['artist']].push({
+      id: album['id'],
+      name: album['name'],
+      release_year: album['release_year'],
+      total_plays: album['total_plays'] > 0 ? album['total_plays'] : '-'
     })
     return acc
   }, {})
 
   for (const artist of artists) {
-    artist.albums = albumsByArtist[artist['id']]?.sort((a, b) => a['release_year'] - b['release_year']) || []
-    artist.image = `/${artist['art']['filename_disk']}`
-    artist.country = parseCountryField(artist['country'])
-    artist.genres = genreMapping[artist['genres']] || ''
+    artist['albums'] = albumsByArtist[artist['id']]?.sort((a, b) => a['release_year'] - b['release_year']) || []
+    artist['image'] = `/${artist['art']['filename_disk']}`
+    artist['country'] = parseCountryField(artist['country'])
+    artist['genres'] = genreMapping[artist['genres']] || ''
   }
 
   return artists
