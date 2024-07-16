@@ -49,6 +49,7 @@ schema: book
     </div>
   </div>
   {% if book.review %}
+    {% render "partials/blocks/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
     {{ book.review | markdown }}
     <hr />
   {% endif %}
