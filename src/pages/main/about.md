@@ -39,4 +39,4 @@ I tend to write about whatever strikes me, with a focus on development, technolo
 
 [You can also see what I'm doing now](/now), [take a look at the links I've shared recently](/links) or [check out the webrings I'm a member of](/webrings).
 
-{% render "partials/widgets/badge-grid.liquid", badges: badges %}
+{% render "partials/blocks/badge-grid.liquid", badges: badges %}

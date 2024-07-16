@@ -38,7 +38,7 @@ schema: movie
     <p class="sub-meta"><a href="https://themoviedb.org/movie/{{ movie.id }}" title="View {{ movie.title | escape }} on TMDB">View on TMDB</a></p>
   </div>
   {% if movie.review %}
-    {% render "partials/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
+    {% render "partials/blocks/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
     {{ movie.review | markdown }}
     <hr />
   {% endif %}

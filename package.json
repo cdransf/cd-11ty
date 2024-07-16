@@ -1,7 +1,7 @@
 {
   "name": "coryd.dev",
-  "version": "20.7.1",
-  "description": "The source for my personal site. Built using 11ty.",
+  "version": "20.8.0",
+  "description": "The source for my personal site. Built using 11ty (and other tools).",
   "type": "module",
   "scripts": {
     "start": "eleventy --serve",

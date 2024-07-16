@@ -1,12 +1,12 @@
 {% for block in blocks %}
   {% if block.type == 'youtube_player' %}
-    {% render "partials/widgets/youtube-player.liquid", url:block.url %}
+    {% render "partials/blocks/youtube-player.liquid", url:block.url %}
   {% elsif block.type == 'github_banner' %}
-    {% render "partials/banners/github.liquid", url:block.url %}
+    {% render "partials/blocks/banners/github.liquid", url:block.url %}
   {% elsif block.type == 'npm_banner' %}
-    {% render "partials/banners/npm.liquid", url:block.url, command:block.command %}
+    {% render "partials/blocks/banners/npm.liquid", url:block.url, command:block.command %}
   {% elsif block.type == 'rss_banner' %}
-    {% render "partials/banners/rss.liquid", url:block.url, text:block.text %}
+    {% render "partials/blocks/banners/rss.liquid", url:block.url, text:block.text %}
   {% elsif block.type == 'hero' %}
     {% render "partials/blocks/hero.liquid", image:block.image.filename_disk, alt:block.alt_text %}
   {% elsif block.type == 'markdown' %}
@@ -14,6 +14,6 @@
   {% elsif block.type == 'divider' %}
     {{ block.markup | markdown }}
   {% elsif block.type == 'addon_links' %}
-    {% render "partials/widgets/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}
+    {% render "partials/blocks/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}
   {% endif %}
 {% endfor %}

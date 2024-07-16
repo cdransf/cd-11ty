@@ -9,22 +9,9 @@
 
   & a {
     display: flex;
-
-    & > svg {
-      stroke: var(--accent-color);
-      cursor: pointer;
-    }
   }
 
-  & :is(a:hover, a:active, a:focus) svg,
-  & a svg:hover,
-  & a svg:active,
-  & a svg:focus {
-    transform: rotate(0deg);
-    stroke: var(--accent-color-hover);
-  }
-
-  & span.disabled svg {
+  & span.disabled svg[data-tablericon-name^="arrow-"] {
     cursor: not-allowed;
     stroke: color-mix(in srgb, var(--text-color), transparent 50%);
     stroke-width: var(--stroke-width-default);

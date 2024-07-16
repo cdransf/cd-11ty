@@ -138,6 +138,13 @@ a {
 
   & svg {
     stroke: var(--accent-color);
+
+    &[data-tablericon-name^="arrow-"]:hover,
+    &[data-tablericon-name^="arrow-"]:active,
+    &[data-tablericon-name^="arrow-"]:focus {
+      transform: rotate(0deg);
+      stroke: var(--accent-color-hover);
+    }
   }
 
   &.linked-header {
@@ -159,6 +166,11 @@ a {
       margin-top: var(--sizing-base);
     }
   }
+}
+
+:is(a:hover, a:active, a:focus) svg[data-tablericon-name^="arrow-"] {
+  transform: rotate(0deg);
+  stroke: var(--accent-color-hover);
 }
 
 a:hover,

@@ -18,7 +18,7 @@ schema: blog
   <span class="p-author h-card hidden">{{ globals.author }}</span>
   <div class="p-summary hidden">{{ post.description }}</div>
   <div class="e-content">
-    {% render "partials/banners/old-post.liquid", date:post.date %}
+    {% render "partials/blocks/banners/old-post.liquid", date:post.date %}
     {%- if post.image -%}
     <img
       srcset="
@@ -42,4 +42,4 @@ schema: blog
     {% render "partials/blocks/index.liquid", blocks:post.blocks %}
   </div>
 </article>
-{% render "partials/widgets/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}
+{% render "partials/blocks/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}
