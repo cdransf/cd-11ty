@@ -1,6 +1,6 @@
 :root {
-  --grid-square: repeat(2,minmax(0,1fr));
-  --grid-vertical: repeat(3,minmax(0,1fr));
+  --grid-square: repeat(2, minmax(0, 1fr));
+  --grid-vertical: repeat(3, minmax(0, 1fr));
 }
 
 .media-grid {
@@ -98,7 +98,7 @@
 
 @media screen and (min-width: 768px) {
   :root {
-    --grid-square: repeat(4,minmax(0,1fr));
-    --grid-vertical: repeat(6,minmax(0,1fr));
+    --grid-square: repeat(4, minmax(0, 1fr));
+    --grid-vertical: repeat(6, minmax(0, 1fr));
   }
 }

@@ -1,39 +1,34 @@
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
+/* use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
 }
-/*
-  2. Remove default margin
-*/
+
+/* remove default margin */
 * {
   margin: 0;
 }
+
 /*
-  Typographic tweaks!
-  3. Add accessible line-height
-  4. Improve text rendering
+  typographic tweaks
+  - add accessible line-height
+  - improve text rendering
 */
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-/*
-  5. Remove built-in form typography styles
-*/
+
+/* remove built-in form typography styles */
 input, button, textarea, select {
   font: inherit;
 }
-/*
-  6. Avoid text overflows
-*/
+
+/* avoid text overflows */
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
-/*
-  7. Create a root stacking context
-*/
+
+/* create a root stacking context */
 #root, #__next {
   isolation: isolate;
 }

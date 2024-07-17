@@ -1,6 +1,6 @@
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #b0cfff;
+  color: var(--blue-200);
   background: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   font-family: var(--font-mono);
@@ -18,87 +18,92 @@ pre[class*="language-"] {
   padding: var(--sizing-lg);
   margin: var(--sizing-xl) 0;
   overflow: auto;
-  background: #1a1d22;
-  border: 1px solid #dfe3e8;
+  background: var(--gray-darkest);
+  border: 1px solid var(--gray-200);
 }
 
 :not(pre) > code[class*="language-"] {
   padding: var(--sizing-xs);
   white-space: normal;
-  background: #1a1d22;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #7f899b;
-}
-
-.token.punctuation {
-  color: #dfe3e8;
+  background: var(--gray-darkest);
 }
 
 .namespace {
   opacity: 0.7;
 }
 
-.token.property,
-.token.tag,
-.token.constant,
-.token.symbol,
-.token.deleted {
-  color: #4b88ff;
-}
-
-.token.boolean,
-.token.number {
-  color: #2458d4;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-  color: #2ecc71;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
 .language-css .token.string,
-.style .token.string,
-.token.variable {
+.style .token.string {
   color: #3498db;
 }
 
-.token.atrule,
-.token.attr-value,
-.token.function,
-.token.class-name {
-  color: #e67e22;
-}
+.token {
+  &.comment,
+  &.prolog,
+  &.doctype,
+  &.cdata {
+    color: var(--gray-600);
+  }
 
-.token.keyword {
-  color: #1abc9c;
-}
+  &.punctuation {
+    color: var(--gray-200);
+  }
 
-.token.regex,
-.token.important {
-  color: #e74c3c;
-}
+  &.property,
+  &.tag,
+  &.constant,
+  &.symbol,
+  &.deleted {
+    color: var(--blue-500);
+  }
 
-.token.important,
-.token.bold {
-  font-weight: var(--font-weight-bold);
-}
+  &.boolean,
+  &.number {
+    color: var(--blue-700);
+  }
 
-.token.italic {
-  font-style: italic;
-}
+  &.selector,
+  &.attr-name,
+  &.string,
+  &.char,
+  &.builtin,
+  &.inserted {
+    color: #2ecc71;
+  }
 
-.token.entity {
-  cursor: help;
+  &.operator,
+  &.entity,
+  &.url,
+  &.variable {
+    color: #3498db;
+  }
+
+  &.atrule,
+  &.attr-value,
+  &.function,
+  &.class-name {
+    color: #e67e22;
+  }
+
+  &.keyword {
+    color: #1abc9c;
+  }
+
+  &.regex,
+  &.important {
+    color: #e74c3c;
+  }
+
+  &.italic {
+    font-style: italic;
+  }
+
+  &.entity {
+    cursor: help;
+  }
+
+  &.important,
+  &.bold {
+    font-weight: var(--font-weight-bold);
+  }
 }
