@@ -44,7 +44,7 @@
   {%- assign pageDescription = description -%}
 {%- endif -%}
 
-{%- assign ogImage = globals.opengraph_default -%}
+{%- assign ogImage = 'https://cdn.coryd.dev/' | append: globals.opengraph_default -%}
 {%- case schema -%}
   {%- when 'music' -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: page.image -%}
