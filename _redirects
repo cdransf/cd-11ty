@@ -46,6 +46,9 @@
 /posts/2023/locally-stored-music-and-storage-as-a-meaningful-constraint/ /posts/2023/doppler-locally-stored-music-and-storage-as-a-beneficial-constraint/ 301
 /blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301
 
+# 404s
+/now.html /now 301
+
 # feeds
  /rss https://feedpress.me/coryd 301
  /atom https://feedpress.me/coryd 301
