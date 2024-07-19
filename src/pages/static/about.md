@@ -8,7 +8,7 @@ permalink: /about.html
 {%- assign show = tv.recentlyWatched | first -%}
 <div class="avatar-wrapper flex-centered">
   <div class="interior">
-  {%- capture about_alt -%}{{ globals.siteName }} - image by David Neal / @reverentgeek{%- endcapture -%}
+  {%- capture about_alt -%}{{ globals.site_name }} - image by @joel@fosstodon.org{%- endcapture -%}
   <img
     srcset="
       https://cdn.coryd.dev/{{ globals.about }}?class=squaresm 200w,

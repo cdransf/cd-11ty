@@ -17,7 +17,7 @@
     <a href="{{ post.slug }}">
       <h3>{{ post.title }}</h3>
     </a>
-    <span class="p-author h-card hidden">{{ globals.siteName }}</span>
+    <span class="p-author h-card hidden">{{ globals.site_name }}</span>
     <div class="p-summary hidden">{{ post.data.post_excerpt }}</div>
     {{ post.description | markdown | truncate: 300 }}
   </article>
