@@ -20,7 +20,7 @@ const tagsToHashtags = (tags) => {
     }).join('')
     return '#' + hashtag
   })
-  return hashtags.join(' ');
+  return hashtags.join(' ')
 }
 
 export const popularPosts = (collection) => {
@@ -53,8 +53,36 @@ export const processContent = (collection) => {
     if (!parsedDate.isValid) parsedDate = DateTime.fromFormat(date, 'yyyy-MM-dd')
     if (!parsedDate.isValid) parsedDate = DateTime.fromFormat(date, 'MM/dd/yyyy')
     if (!parsedDate.isValid) parsedDate = DateTime.fromFormat(date, 'dd-MM-yyyy')
-    return parsedDate.isValid ? parsedDate.toISO() : null
+    return parsedDate.isValid ? parsedDate : null
   }
+
+  const addSiteMapContent = (items, getTitle, getDate) => {
+    const addedUrls = new Set()
+
+    if (items) {
+      items.forEach((item) => {
+        let url
+        if (item?.['url']) url = item['url']
+        if (item?.['permalink']) url = item['permalink']
+        if (item?.['slug']) url = item['slug']
+        if (!url || addedUrls.has(url)) return
+
+        const parsedDate = getDate ? parseDate(getDate(item)) : null
+        const formattedDate = parsedDate ? parsedDate.toFormat("yyyy-MM-dd'T'HH:mm:ssZZ") : null
+
+        const content = {
+          url,
+          title: getTitle(item),
+          date: formattedDate
+        }
+        siteMapContent.push(content)
+        addedUrls.add(url)
+      })
+    }
+  }
+
+  const movieData = movies['movies'].filter((movie) => movie['review']?.length && movie['rating'])
+  const bookData = books.all.filter((book) => book['review']?.length && book['rating'])
 
   const addItemToIndex = (items, icon, getUrl, getTitle, getTags) => {
     if (items) {
@@ -100,31 +128,6 @@ export const processContent = (collection) => {
       })
     }
   }
-
-  const addSiteMapContent = (items, getTitle, getDate) => {
-    const addedUrls = new Set()
-
-    if (items) {
-      items.forEach((item) => {
-        let url
-        if (item?.['url']) url = item['url']
-        if (item?.['permalink']) url = item['permalink']
-        if (item?.['slug']) url = item['slug']
-        if (!url || addedUrls.has(url)) return
-
-        const content = {
-          url,
-          title: getTitle(item),
-          date: getDate ? parseDate(getDate(item)) : null
-        }
-        siteMapContent.push(content)
-        addedUrls.add(url)
-      })
-    }
-  }
-
-  const movieData = movies['movies'].filter((movie) => movie['review']?.length && movie['rating'])
-  const bookData = books.all.filter((book) => book['review']?.length && book['rating'])
 
   addItemToIndex(posts, '📝', (item) => new URL(item['slug'], BASE_URL).toString(), (item) => item['title'], (item) => item['tags'])
   addItemToIndex(links, '🔗', (item) => item['link'], (item) => item['title'], (item) => item['tags'])
