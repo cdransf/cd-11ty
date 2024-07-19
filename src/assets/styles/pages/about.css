@@ -9,15 +9,13 @@
   overflow: hidden;
 
   & .interior {
-    width: var(--avatar-size);
-    height: var(--avatar-size);
     display: flex;
     justify-content: center;
     overflow: hidden;
 
     & img {
-      width: 100%;
-      height: 100%;
+      width: var(--avatar-size);
+      height: var(--avatar-size);
       image-rendering: pixelated;
     }
   }
