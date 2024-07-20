@@ -43,6 +43,8 @@
 /posts/2023/automating-rss-syndication-with-nextjs-github/ /posts/2023/automating-rss-syndication-and-sharing-with-nextjs-and-github/ 301
 /posts/2023/locally-stored-music-and-storage-as-a-meaningful-constraint/ /posts/2023/doppler-locally-stored-music-and-storage-as-a-beneficial-constraint/ 301
 /blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301
+/posts/2023/now-page-update-matter-favorites/ /posts/2023/now-page-update-favorite-articles-from-matter/ 301
+/posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/ /posts/2023/displaying-now-playing-data-with-matching-emoji-using-netlify-edge-functions-and-eleventy/ 301
 
 # 404s
 /now.html /now 301
