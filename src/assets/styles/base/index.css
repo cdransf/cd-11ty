@@ -85,7 +85,7 @@ code {
 
 /* social icons */
 :is(body, html, nav) a {
-  &.at > svg { stroke: var(--brand-proton); }
+  &.brand-gmail > svg { stroke: var(--brand-gmail); }
   &.brand-github > svg { stroke: var(--brand-github); }
   &.brand-npm > svg { stroke: var(--brand-npm); }
   &.brand-mastodon > svg { stroke: var(--brand-mastodon); }
