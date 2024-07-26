@@ -64,15 +64,15 @@ schema: artist
   {%- endif -%}
   <table>
     <tr>
-      <th>Year</th>
-      <th>Title</th>
+      <th>Album</th>
       <th>Plays</th>
+      <th>Year</th>
     </tr>
     {% for album in artist.albums %}
     <tr>
-      <td>{{ album.release_year }}</td>
       <td>{{ album.name }}</td>
       <td>{{ album.total_plays }}</td>
+      <td>{{ album.release_year }}</td>
     </tr>
     {% endfor %}
   </table>

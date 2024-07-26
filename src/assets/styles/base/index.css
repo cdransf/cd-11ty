@@ -1,10 +1,10 @@
 html
 body {
   color: var(--text-color);
+  background: var(--background-color);
   font-family: var(--font-mono);
   letter-spacing: -.05rem;
   word-spacing: -.125rem;
-  background: var(--background-color);
   scrollbar-width: thin;
   scrollbar-color: var(--accent-color) var(--gray-light);
 }
@@ -261,6 +261,7 @@ table {
   width: 100%;
   border: 1px solid var(--gray-light);
   white-space: nowrap;
+  caption-side: bottom;
 }
 
 table,
@@ -285,10 +286,35 @@ td {
   min-width: max-content;
   word-break: break-word;
   width: 100%;
+
+  &:first-child {
+    position: sticky;
+    left: 0;
+    border-inline-end: none;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset-block-start: 0;
+      inset-inline-end: 0;
+      width: 1px;
+      height: 100%;
+      background: var(--gray-light);
+    }
+  }
 }
 
 td {
   min-width: calc(var(--sizing-3xl) * 2);
+
+  &:first-child {
+    background-color: var(--background-color);
+  }
+}
+
+td::first-of-type,
+:where(thead, tfoot) th:nth-child(2) {
+	border-inline-start: none;
 }
 
 th {
