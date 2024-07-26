@@ -271,7 +271,7 @@ td {
   width: 100%;
 }
 
-:is(th, td):not(:last-child) {
+:is(th, td):not(:first-child, :last-child) {
   border-right: 1px solid var(--gray-light);
 }
 
@@ -291,6 +291,9 @@ td {
     position: sticky;
     left: 0;
     border-inline-end: none;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 
     &::after {
       content: '';
