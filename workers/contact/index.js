@@ -14,7 +14,7 @@ export default {
 
       const submissions = ipSubmissions.get(ip).filter(time => currentTime - time < TIME_FRAME)
 
-      if (submissions.length >= RATE_LIMIT) return Response.redirect('https://coryd.dev/rate-limit', 429)
+      if (submissions.length >= RATE_LIMIT) return Response.redirect('https://coryd.dev/rate-limit', 301)
 
       submissions.push(currentTime)
       ipSubmissions.set(ip, submissions)
