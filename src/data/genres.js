@@ -35,7 +35,7 @@ const fetchGenresWithArtists = async () => {
       ...artist,
       country: parseCountryField(artist['country'])
     }))
-    genre['url'] = `/music/genres/${slugify(genre['name'].toLowerCase())}`
+    genre['url'] = `/music/genres/${slugify(genre['name'].replace('/', '-').toLowerCase())}`
   })
 
   return data

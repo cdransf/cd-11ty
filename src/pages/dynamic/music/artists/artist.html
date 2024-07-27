@@ -49,7 +49,7 @@ schema: artist
         <p class="sub-meta"><strong class="highlight-text">{{ artist.total_plays }} plays</strong></p>
       {%- endif -%}
       <p class="sub-meta">
-        <a href="/music/genres/{{ artist.genres | slugify | downcase }}" title="Learn more about {{ artist.genres | escape }}">
+        <a href="/music/genres/{{ artist.genres | replace: '/', '-' | slugify | downcase }}" title="Learn more about {{ artist.genres | escape }}">
           {{ artist.genres }}
         </a>
       </p>
