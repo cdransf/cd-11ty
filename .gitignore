@@ -8,3 +8,7 @@ node_modules
 
 # system files
 .DS_Store
+
+# workers
+wrangler.toml
+.wrangler

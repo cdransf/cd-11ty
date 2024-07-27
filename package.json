@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "20.12.15",
+  "version": "20.13.0",
   "description": "The source for my personal site. Built using 11ty (and other tools).",
   "type": "module",
   "scripts": {
@@ -8,7 +8,12 @@
     "start:quick": "eleventy --serve --incremental --ignore-initial",
     "build": "ELEVENTY_PRODUCTION=true eleventy",
     "update:deps": "npm upgrade && ncu",
-    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve"
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
+    "publish:analytics": "node scripts/worker-build.mjs analytics && wrangler deploy --env production --config workers/analytics/wrangler.toml",
+    "publish:contact": "node scripts/worker-build.mjs contact && wrangler deploy --env production --config workers/contact/wrangler.toml",
+    "publish:playing": "node scripts/worker-build.mjs playing && wrangler deploy --env production --config workers/playing/wrangler.toml",
+    "publish:rebuild": "node scripts/worker-build.mjs rebuild && wrangler deploy --env production --config workers/rebuild/wrangler.toml",
+    "publish:scrobble": "node scripts/worker-build.mjs scrobble && wrangler deploy --env production --config workers/scrobble/wrangler.toml"
   },
   "keywords": [
     "11ty",

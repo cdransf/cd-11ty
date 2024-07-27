@@ -1,0 +1,12 @@
+name = "now-playing-worker"
+main = "./index.js"  # Specify the entry point
+compatibility_date = "2023-01-01"
+
+account_id = "${CF_ACCOUNT_ID}"
+workers_dev = true
+
+[env.production]
+name = "now-playing-worker-production"
+routes = [
+  { pattern = "coryd.dev/api/now-playing", zone_id = "${CF_ZONE_ID}" }
+]
