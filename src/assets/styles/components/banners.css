@@ -44,7 +44,7 @@
     }
 
     &.old-post {
-      --border-color: var(--gray-light);
+      --border-color: var(--gray-dark);
     }
 
     &.rss {
