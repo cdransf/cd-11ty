@@ -155,12 +155,12 @@ export default {
         url: item['url'],
         type: item.type
       }
-      if (item.type === 'artists') {
+      if (item.type === 'artist') {
         normalized['title'] = item['title']
         normalized['alt'] = `${item['plays']} plays of ${item['title']}`
         normalized['subtext'] = `${item['plays']} plays`
       }
-      if (item.type === 'albums') {
+      if (item.type === 'album') {
         normalized['title'] = item['title']
         normalized['alt'] = `${item['title']} by ${item['artist']}`
         normalized['subtext'] = `${item['artist']}`

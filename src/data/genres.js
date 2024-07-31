@@ -30,17 +30,21 @@ const fetchGenresWithArtists = async () => {
     return []
   }
 
-  data.forEach(genre => {
-    genre['artists'] = genre['artists'].map(artist => ({
+  return data.map(genre => ({
+    ...genre,
+    artists: genre['artists'].map(artist => ({
       ...artist,
       country: parseCountryField(artist['country'])
-    }))
-    genre['url'] = `/music/genres/${slugify(genre['name'].replace('/', '-').toLowerCase())}`
-  })
-
-  return data
+    })),
+    url: `/music/genres/${slugify(genre['name'].replace('/', '-').toLowerCase())}`
+  }))
 }
 
 export default async function () {
-  return await fetchGenresWithArtists()
+  try {
+    return await fetchGenresWithArtists()
+  } catch (error) {
+    console.error('Error fetching and processing genres:', error)
+    return []
+  }
 }

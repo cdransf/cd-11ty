@@ -6,18 +6,22 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 const PAGE_SIZE = 50
 
-const fetchTagsForLink = async (linkId) => {
+const fetchAllTags = async () => {
   const { data, error } = await supabase
     .from('links_tags')
-    .select('tags(id, name)')
-    .eq('links_id', linkId)
+    .select('links_id, tags(name)')
 
   if (error) {
-    console.error(`Error fetching tags for link ${linkId}:`, error)
-    return []
+    console.error('Error fetching all tags from Supabase:', error)
+    return {}
   }
 
-  return data.map((lt) => lt.tags.name)
+  return data.reduce((acc, { links_id, tags }) => {
+    if (!tags || !tags.name) return acc
+    if (!acc[links_id]) acc[links_id] = []
+    acc[links_id].push(tags['name'])
+    return acc
+  }, {})
 }
 
 const fetchAllLinks = async () => {
@@ -39,11 +43,6 @@ const fetchAllLinks = async () => {
 
     if (data.length < PAGE_SIZE) fetchMore = false
 
-    for (const link of data) {
-      link['tags'] = await fetchTagsForLink(link.id)
-      link['type'] = 'link'
-    }
-
     links = links.concat(data)
     page++
   }
@@ -51,6 +50,15 @@ const fetchAllLinks = async () => {
   return links
 }
 
+const processLinks = (links, tagsByLinkId) => {
+  return links.map(link => {
+    link['tags'] = tagsByLinkId[link['id']] || []
+    link['type'] = 'link'
+    return link
+  })
+}
+
 export default async function () {
-  return await fetchAllLinks()
+  const [links, tagsByLinkId] = await Promise.all([fetchAllLinks(), fetchAllTags()])
+  return processLinks(links, tagsByLinkId)
 }

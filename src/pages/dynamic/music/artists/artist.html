@@ -9,7 +9,7 @@ updated: "now"
 schema: artist
 ---
 {%- capture alt -%}
-  {{ artist.name_string }} / {{ artist.country }}
+  {{ artist.name }} / {{ artist.country }}
 {%- endcapture -%}
 {% capture js %}
   {% render "../../../../assets/scripts/text-toggle.js" %}
@@ -38,23 +38,23 @@ schema: artist
       height="480"
     />
     <div class="artist-meta">
-      <p class="title"><strong>{{ artist.name_string }}</strong></p>
+      <p class="title"><strong>{{ artist.name }}</strong></p>
       {%- if artist.favorite -%}
         <p class="sub-meta favorite flex-centered">{% tablericon "heart" "Favorite" %} This is one of my favorite artists!</p>
       {%- endif -%}
       {%- if artist.tattoo -%}
         <p class="sub-meta tattoo flex-centered">{% tablericon "needle" "Tattoo" %} I have a tattoo inspired by this artist!</p>
       {%- endif -%}
-      {%- if artist.total_plays > 0 -%}
-        <p class="sub-meta"><strong class="highlight-text">{{ artist.total_plays }} plays</strong></p>
+      {%- if artist.totalPlays > 0 -%}
+        <p class="sub-meta"><strong class="highlight-text">{{ artist.totalPlays }} plays</strong></p>
       {%- endif -%}
       <p class="sub-meta">
-        <a href="/music/genres/{{ artist.genres | replace: '/', '-' | slugify | downcase }}" title="Learn more about {{ artist.genres | escape }}">
-          {{ artist.genres }}
+        <a href="/music/genres/{{ artist.genre | replace: '/', '-' | slugify | downcase }}" title="Learn more about {{ artist.genre | escape }}">
+          {{ artist.genre }}
         </a>
       </p>
       <p class="sub-meta">
-        <a class="brain" href="https://musicbrainz.org/artist/{{ artist.mbid }}" title="View {{ artist.name_string | escape }} on MusicBrainz">{% tablericon "brain" "MusicBrainz" %}</a>
+        <a class="brain" href="https://musicbrainz.org/artist/{{ artist.mbid }}" title="View {{ artist.name | escape }} on MusicBrainz">{% tablericon "brain" "MusicBrainz" %}</a>
       </p>
     </div>
   </div>
@@ -71,8 +71,8 @@ schema: artist
     {% for album in artist.albums %}
     <tr>
       <td>{{ album.name }}</td>
-      <td>{{ album.total_plays }}</td>
-      <td>{{ album.release_year }}</td>
+      <td>{{ album.totalPlays }}</td>
+      <td>{{ album.releaseYear }}</td>
     </tr>
     {% endfor %}
   </table>

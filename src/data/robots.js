@@ -9,26 +9,31 @@ const PAGE_SIZE = 100
 const fetchAllRobots = async () => {
   let robots = []
   let from = 0
-  let to = PAGE_SIZE - 1
 
   while (true) {
     const { data, error } = await supabase
       .from('robots')
       .select('user_agent')
-      .range(from, to)
+      .range(from, from + PAGE_SIZE - 1)
 
     if (error) {
       console.error('Error fetching robot data:', error)
-      return null
+      return []
     }
 
     robots = robots.concat(data)
     if (data.length < PAGE_SIZE) break
+    from += PAGE_SIZE
   }
 
-  return robots.map(robot => robot['user_agent']).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+  return robots.map(robot => robot.user_agent).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
 }
 
 export default async function () {
-  return await fetchAllRobots()
+  try {
+    return await fetchAllRobots()
+  } catch (error) {
+    console.error('Error fetching and processing robot data:', error)
+    return []
+  }
 }

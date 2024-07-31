@@ -6,45 +6,43 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 const fetchAllNavigation = async () => {
   const { data, error } = await supabase
-    .from('navigation')
-    .select(`
-      *,
-      pages(title, permalink)
-    `)
+    .from('optimized_navigation')
+    .select('*')
 
   if (error) {
     console.error('Error fetching navigation data:', error)
-    return null
+    return {}
   }
 
-  const menu = {}
-  data.forEach(item => {
-    const menuItem = item.pages ? {
-      title: item.pages.title,
-      permalink: item.pages.permalink,
-      icon: item.icon,
-      sort: item.sort
-    } : {
-      title: item.title,
-      permalink: item.permalink,
-      icon: item.icon,
-      sort: item.sort
+  const menu = data.reduce((acc, item) => {
+    const menuItem = {
+      title: item['title'] || item['page_title'],
+      permalink: item['permalink'] || item ['page_permalink'],
+      icon: item['icon'],
+      sort: item['sort']
     }
 
-    if (!menu[item.menu_location]) {
-      menu[item.menu_location] = [menuItem]
+    if (!acc[item['menu_location']]) {
+      acc[item['menu_location']] = [menuItem]
     } else {
-      menu[item.menu_location].push(menuItem)
+      acc[item['menu_location']].push(menuItem)
     }
-  })
+
+    return acc
+  }, {})
 
   Object.keys(menu).forEach(location => {
-    menu[location].sort((a, b) => a.sort - b.sort)
+    menu[location].sort((a, b) => a['sort'] - b['sort'])
   })
 
   return menu
 }
 
 export default async function () {
-  return await fetchAllNavigation()
+  try {
+    return await fetchAllNavigation()
+  } catch (error) {
+    console.error('Error fetching and processing navigation data:', error)
+    return {}
+  }
 }

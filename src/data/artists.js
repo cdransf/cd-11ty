@@ -1,85 +1,81 @@
 import { createClient } from '@supabase/supabase-js'
 import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
-import { DateTime } from 'luxon'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+const PAGE_SIZE = 500
 
-const PAGE_SIZE = 50
+const fetchAllArtists = async () => {
+  let artists = []
+  let rangeStart = 0
 
-const fetchPaginatedData = async (table, selectFields) => {
-  let data = []
-  let page = 0
-  let hasMoreRecords = true
-
-  while (hasMoreRecords) {
-    const { data: pageData, error } = await supabase
-      .from(table)
-      .select(selectFields)
-      .order('id', { ascending: true })
-      .range(page * PAGE_SIZE, (page + 1) * PAGE_SIZE - 1)
+  while (true) {
+    const { data, error } = await supabase
+      .from('optimized_artists')
+      .select(`
+        id,
+        mbid,
+        name_string,
+        tentative,
+        total_plays,
+        country,
+        description,
+        favorite,
+        genre,
+        emoji,
+        tattoo,
+        art,
+        albums,
+        concerts
+      `)
+      .range(rangeStart, rangeStart + PAGE_SIZE - 1)
 
     if (error) {
-      console.error(`Error fetching ${table}:`, error)
+      console.error('Error fetching artists:', error)
       break
     }
 
-    data = data.concat(pageData)
-
-    if (pageData.length < PAGE_SIZE) {
-      hasMoreRecords = false
-    } else {
-      page++
-    }
-  }
-
-  return data
-}
-
-const fetchGenreMapping = async () => {
-  const { data, error } = await supabase
-    .from('genres')
-    .select('id, name')
-
-  if (error) {
-    console.error('Error fetching genres:', error)
-    return {}
-  }
-
-  return data.reduce((acc, genre) => {
-    acc[genre['id']] = genre['name']
-    return acc
-  }, {})
-}
-
-export default async function () {
-  const genreMapping = await fetchGenreMapping()
-  const artists = await fetchPaginatedData('artists', 'id, mbid, name_string, art(filename_disk), total_plays, country, description, favorite, tattoo, genres')
-  const allAlbums = await fetchPaginatedData('albums', 'id, mbid, name, release_year, total_plays, artist, release_date')
-  const albums = allAlbums.filter(album =>
-    !album['release_date'] ||
-    DateTime.fromISO(album['release_date']) <= DateTime.now() ||
-    (DateTime.fromISO(album['release_date']) > DateTime.now() && album['total_plays'] > 0)
-  )
-  const albumsByArtist = albums.reduce((acc, album) => {
-    if (!acc[album['artist']]) acc[album['artist']] = []
-    acc[album['artist']].push({
-      id: album['id'],
-      name: album['name'],
-      release_year: album['release_year'],
-      total_plays: album['total_plays'] > 0 ? album['total_plays'] : '-'
-    })
-    return acc
-  }, {})
-
-  for (const artist of artists) {
-    artist['albums'] = albumsByArtist[artist['id']]?.sort((a, b) => a['release_year'] - b['release_year']) || []
-    artist['image'] = `/${artist['art']['filename_disk']}`
-    artist['country'] = parseCountryField(artist['country'])
-    artist['genres'] = genreMapping[artist['genres']] || ''
-    artist['url'] = `/music/artists/${sanitizeMediaString(artist['name_string'])}-${sanitizeMediaString(artist['country'])}`
+    artists = artists.concat(data)
+    if (data.length < PAGE_SIZE) break
+    rangeStart += PAGE_SIZE
   }
 
   return artists
+}
+
+const processArtists = (artists) => {
+  return artists.map(artist => ({
+    id: artist['id'],
+    mbid: artist['mbid'],
+    name: artist['name_string'],
+    tentative: artist['tentative'],
+    totalPlays: artist['total_plays'],
+    country: parseCountryField(artist['country']),
+    description: artist['description'],
+    favorite: artist['favorite'],
+    genre: artist['genre'],
+    emoji: artist['emoji'],
+    tattoo: artist['tattoo'],
+    image: artist['art'] ? `/${artist['art']}` : '',
+    url: `/music/artists/${sanitizeMediaString(artist['name_string'])}-${sanitizeMediaString(parseCountryField(artist['country']))}`,
+    albums: (artist['albums'] || []).map(album => ({
+      id: album['id'],
+      name: album['name'],
+      releaseYear: album['release_year'],
+      totalPlays: album['total_plays'],
+      art: album.art ? `/${album['art']}` : ''
+    })).sort((a, b) => a['release_year'] - b['release_year']),
+    concerts: artist['concerts'] || []
+  }))
+}
+
+export default async function () {
+  try {
+    const artists = await fetchAllArtists()
+    return processArtists(artists)
+  } catch (error) {
+    console.error('Error fetching and processing artists data:', error)
+    return []
+  }
 }

@@ -6,43 +6,23 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 const fetchGlobals = async () => {
   const { data, error } = await supabase
-    .from('globals')
-    .select(`
-      *,
-      favicon_ico(filename_disk),
-      favicon_svg(filename_disk),
-      opengraph_default(filename_disk),
-      feed_image(filename_disk),
-      apple_touch_icon(filename_disk),
-      about(filename_disk),
-      logo_the_claw(filename_disk)
-    `)
+    .from('optimized_globals')
+    .select('*')
+    .single()
 
   if (error) {
     console.error('Error fetching globals:', error)
     return {}
   }
 
-  const globalData = data.pop()
-  const keysToProcess = [
-    'favicon_ico',
-    'favicon_svg',
-    'opengraph_default',
-    'feed_image',
-    'apple_touch_icon',
-    'about',
-    'logo_the_claw'
-  ]
-
-  keysToProcess.forEach(key => {
-    if (globalData[key] && globalData[key].filename_disk) {
-      globalData[key] = globalData[key].filename_disk
-    }
-  })
-
-  return globalData
+  return data
 }
 
 export default async function () {
-  return await fetchGlobals()
+  try {
+    return await fetchGlobals()
+  } catch (error) {
+    console.error('Error fetching and processing globals:', error)
+    return {}
+  }
 }

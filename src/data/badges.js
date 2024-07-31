@@ -14,17 +14,22 @@ const fetchAllBadges = async () => {
 
   if (error) {
     console.error('Error fetching badge data:', error)
-    return null
+    return []
   }
 
   const transformedData = data.map(badge => ({
     ...badge,
-    image: badge['image']['filename_disk'],
+    image: badge.image?.filename_disk || '',
   })).sort((a, b) => a.sort - b.sort)
 
   return transformedData
 }
 
 export default async function () {
-  return await fetchAllBadges()
+  try {
+    return await fetchAllBadges()
+  } catch (error) {
+    console.error('Error fetching and processing badge data:', error)
+    return []
+  }
 }

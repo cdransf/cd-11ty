@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
 
-const SUPABASE_URL = process.env.SUPABASE_URL
-const SUPABASE_KEY = process.env.SUPABASE_KEY
+const SUPABASE_URL = process.env['SUPABASE_URL']
+const SUPABASE_KEY = process.env['SUPABASE_KEY']
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 const PAGE_SIZE = 50
@@ -21,28 +21,23 @@ const fetchBlockData = async (collection, itemId) => {
   return data
 }
 
-const fetchBlocksForPage = async (pageId) => {
+const fetchAllBlocks = async () => {
   const { data, error } = await supabase
     .from('pages_blocks')
-    .select('collection, item, sort')
-    .eq('pages_id', pageId)
+    .select('pages_id, collection, item, sort')
 
   if (error) {
-    console.error(`Error fetching blocks for page ${pageId}:`, error)
-    return []
+    console.error('Error fetching all blocks from Supabase:', error)
+    return {}
   }
 
-  const blocks = await Promise.all(data.map(async block => {
-    const blockData = await fetchBlockData(block.collection, block.item)
-
-    return {
-      type: block['collection'],
-      sort: block['sort'],
-      ...blockData
+  return data.reduce((acc, block) => {
+    if (!acc[block['pages_id']]) {
+      acc[block['pages_id']] = []
     }
-  }))
-
-  return blocks.sort((a, b) => a.sort - b.sort)
+    acc[block['pages_id']].push(block)
+    return acc
+  }, {})
 }
 
 const fetchAllPages = async () => {
@@ -52,11 +47,8 @@ const fetchAllPages = async () => {
 
   while (fetchMore) {
     const { data, error } = await supabase
-      .from('pages')
-      .select(`
-        *,
-        open_graph_image(filename_disk)
-      `)
+      .from('optimized_pages')
+      .select('*')
       .range(page * PAGE_SIZE, (page + 1) * PAGE_SIZE - 1)
 
     if (error) {
@@ -66,18 +58,50 @@ const fetchAllPages = async () => {
 
     if (data.length < PAGE_SIZE) fetchMore = false
 
-    for (const page of data) {
-      page['blocks'] = await fetchBlocksForPage(page['id'])
-      if (page['open_graph_image']) page['open_graph_image'] = page['open_graph_image']['filename_disk']
-      pages.push(page)
-    }
-
+    pages = pages.concat(data)
     page++
   }
 
   return pages
 }
 
+const processPages = async (pages, blocksByPageId) => {
+  return Promise.all(pages.map(async page => {
+    const blocks = blocksByPageId[page['id']] || []
+
+    page['blocks'] = await Promise.all(blocks.map(async block => {
+      const blockData = await fetchBlockData(block['collection'], block['item'])
+
+      if (!blockData) return {
+        'type': block['collection'],
+        'sort': block['sort']
+      }
+
+      return {
+        'type': block['collection'],
+        'sort': block['sort'],
+        ...blockData
+      }
+    })).then(blocks => blocks.filter(block => block !== null))
+
+    page['blocks'].sort((a, b) => a['sort'] - b['sort'])
+
+    if (page['open_graph_image']) page['open_graph_image'] = page['open_graph_image']['filename_disk']
+
+    return page
+  }))
+}
+
 export default async function () {
-  return await fetchAllPages()
+  try {
+    const [pages, blocksByPageId] = await Promise.all([
+      fetchAllPages(),
+      fetchAllBlocks()
+    ])
+
+    return await processPages(pages, blocksByPageId)
+  } catch (error) {
+    console.error('Error fetching and processing pages:', error)
+    return []
+  }
 }

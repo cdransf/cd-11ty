@@ -6,8 +6,9 @@ const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
+const PAGE_SIZE = 1000
+
 const fetchDataForPeriod = async (startPeriod, fields, table) => {
-  const PAGE_SIZE = 1000
   let rows = []
   let rangeStart = 0
 
@@ -20,7 +21,7 @@ const fetchDataForPeriod = async (startPeriod, fields, table) => {
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
 
     if (error) {
-      console.error(error)
+      console.error(`Error fetching data from ${table}:`, error)
       break
     }
 
@@ -43,70 +44,49 @@ const fetchGenreMapping = async () => {
     return {}
   }
   return data.reduce((acc, genre) => {
-    acc[genre.id] = genre.name
+    acc[genre['id']] = genre['name']
     return acc
   }, {})
 }
 
-const aggregateData = async (data, groupByField, groupByType) => {
+const aggregateData = (data, groupByField, groupByType, genreMapping) => {
   const aggregation = {}
-  const genreMapping = await fetchGenreMapping()
 
   data.forEach(item => {
     const key = item[groupByField]
     if (!aggregation[key]) {
-      if (groupByType === 'track') {
-        aggregation[key] = {
-          title: item[groupByField],
-          plays: 0,
-          mbid: item['albums']['mbid'],
-          url: `/music/artists/${sanitizeMediaString(item['artist_name'])}-${sanitizeMediaString(parseCountryField(item['artists']['country']))}`,
-          image: `/${item['albums']?.['art']?.['filename_disk']}` || '',
-          timestamp: item['listened_at'],
-          type: groupByType,
-          genre: genreMapping[item['artists']['genres']] || ''
-        }
-      } else {
-        aggregation[key] = {
-          title: item[groupByField],
-          plays: 0,
-          mbid: item[groupByType]?.['mbid'] || '',
-          url: `/music/artists/${sanitizeMediaString(item['artist_name'])}-${sanitizeMediaString(parseCountryField(item['artists']['country']))}`,
-          image: `/${item[groupByType]?.['art']?.['filename_disk']}` || '',
-          type: groupByType,
-          genre: genreMapping[item['artists']['genres']] || ''
-        }
+      aggregation[key] = {
+        title: item[groupByField],
+        plays: 0,
+        mbid: item[groupByType]?.['mbid'] || '',
+        url: `/music/artists/${sanitizeMediaString(item['artist_name'])}-${sanitizeMediaString(parseCountryField(item['artist_country']))}`,
+        image: `/${item[groupByType]}`,
+        type: groupByType === 'artist_art' ? 'artist' : groupByType === 'album_art' ? 'album' : groupByType,
+        genre: genreMapping[item['artist_genres']] || ''
       }
-      if (groupByType === 'track' || groupByType === 'albums') aggregation[key]['artist'] = item['artist_name']
+      if (groupByType === 'track' || groupByType === 'album_art') aggregation[key]['artist'] = item['artist_name']
     }
     aggregation[key].plays++
   })
 
-  const aggregatedData = Object.values(aggregation).sort((a, b) => b.plays - a.plays)
-
-  aggregatedData.forEach((item, index) => {
-    item.rank = index + 1
-  })
-
-  return aggregatedData.filter(item => item.plays > 0)
+  return Object.values(aggregation).sort((a, b) => b.plays - a.plays).map((item, index) => ({ ...item, rank: index + 1 }))
 }
 
-const buildRecents = async (data) => {
+const buildRecents = (data) => {
   return data.map(listen => ({
     title: listen['track_name'],
     artist: listen['artist_name'],
-    url: `/music/artists/${sanitizeMediaString(listen['artist_name'])}-${sanitizeMediaString(parseCountryField(listen['artists']['country']))}`,
+    url: `/music/artists/${sanitizeMediaString(listen['artist_name'])}-${sanitizeMediaString(parseCountryField(listen['artist_country']))}`,
     timestamp: listen['listened_at'],
-    image: `/${listen['albums']?.['art']?.['filename_disk']}` || ''
-  }))
+    image: `/${listen['album_art']}`
+  })).sort((a, b) => b.timestamp - a.timestamp)
 }
 
-const aggregateGenres = async (data) => {
+const aggregateGenres = (data, genreMapping) => {
   const genreAggregation = {}
-  const genreMapping = await fetchGenreMapping()
 
   data.forEach(item => {
-    const genre = genreMapping[item['artists']['genres']] || ''
+    const genre = genreMapping[item['artist_genres']] || ''
 
     if (!genreAggregation[genre]) genreAggregation[genre] = { genre, plays: 0 }
     genreAggregation[genre]['plays']++
@@ -114,38 +94,51 @@ const aggregateGenres = async (data) => {
   return Object.values(genreAggregation).sort((a, b) => b['plays'] - a['plays'])
 }
 
-export default async function() {
+export default async function () {
   const periods = {
-    week: DateTime.now().minus({ days: 7 }).startOf('day'), // last week
-    month: DateTime.now().minus({ days: 30 }).startOf('day'), // last 30 days
-    threeMonth: DateTime.now().minus({ months: 3 }).startOf('day'), // last three months
+    week: DateTime.now().minus({ days: 7 }).startOf('day'),
+    month: DateTime.now().minus({ days: 30 }).startOf('day'),
+    threeMonth: DateTime.now().minus({ months: 3 }).startOf('day')
   }
 
-  const results = {}
   const selectFields = `
+    id,
+    listened_at,
     track_name,
     artist_name,
     album_name,
     album_key,
-    listened_at,
-    artists (mbid, art(filename_disk), genres, country),
-    albums (mbid, art(filename_disk))
+    artist_mbid,
+    artist_art,
+    artist_genres,
+    artist_country,
+    album_mbid,
+    album_art
   `
 
-  for (const [period, startPeriod] of Object.entries(periods)) {
-    const periodData = await fetchDataForPeriod(startPeriod, selectFields, 'listens')
-    results[period] = {
-      artists: await aggregateData(periodData, 'artist_name', 'artists'),
-      albums: await aggregateData(periodData, 'album_name', 'albums'),
-      tracks: await aggregateData(periodData, 'track_name', 'track'),
-      genres: await aggregateGenres(periodData),
-      totalTracks: periodData?.length?.toLocaleString('en-US')
-    }
+  try {
+    const genreMapping = await fetchGenreMapping()
+
+    const results = await Promise.all(Object.entries(periods).map(async ([period, startPeriod]) => {
+      const periodData = await fetchDataForPeriod(startPeriod, selectFields, 'optimized_listens')
+      return {
+        [period]: {
+          artists: aggregateData(periodData, 'artist_name', 'artist_art', genreMapping),
+          albums: aggregateData(periodData, 'album_name', 'album_art', genreMapping),
+          tracks: aggregateData(periodData, 'track_name', 'track', genreMapping),
+          genres: aggregateGenres(periodData, genreMapping),
+          totalTracks: periodData.length.toLocaleString('en-US')
+        }
+      }
+    }))
+
+    const recentData = await fetchDataForPeriod(DateTime.now().minus({ days: 7 }), selectFields, 'optimized_listens')
+
+    results.push({ recent: buildRecents(recentData) })
+
+    return Object.assign({}, ...results)
+  } catch (error) {
+    console.error('Error in fetching and processing music data:', error)
+    return {}
   }
-
-  const recentData = await fetchDataForPeriod(DateTime.now().minus({ days: 7 }), selectFields, 'listens')
-
-  results['recent'] = (await buildRecents(recentData)).sort((a, b) => b.timestamp - a.timestamp)
-
-  return results
 }

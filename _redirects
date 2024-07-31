@@ -50,19 +50,20 @@
 /now.html /now 301
 
 # feeds
- /rss https://feedpress.me/coryd 301
- /atom https://feedpress.me/coryd 301
- /rss.xml https://feedpress.me/coryd 301
- /atom.xml https://feedpress.me/coryd 301
- /feeds/all.xml https://feedpress.me/coryd 301
- /feed.xml https://feedpress.me/coryd
- /feed.json https://feedpress.me/coryd.json
- /books.xml https://feedpress.me/coryd-books
- /books.json https://feedpress.me/coryd-books.json
- /links.xml https://feedpress.me/coryd-links
- /links.json https://feedpress.me/coryd-links.json
- /follow.xml https://feedpress.me/coryd-all
- /follow.json https://feedpress.me/coryd-all.json
+/feed https://feedpress.me/coryd 301
+/rss https://feedpress.me/coryd 301
+/atom https://feedpress.me/coryd 301
+/rss.xml https://feedpress.me/coryd 301
+/atom.xml https://feedpress.me/coryd 301
+/feeds/all.xml https://feedpress.me/coryd 301
+/feed.xml https://feedpress.me/coryd
+/feed.json https://feedpress.me/coryd.json
+/books.xml https://feedpress.me/coryd-books
+/books.json https://feedpress.me/coryd-books.json
+/links.xml https://feedpress.me/coryd-links
+/links.json https://feedpress.me/coryd-links.json
+/follow.xml https://feedpress.me/coryd-all
+/follow.json https://feedpress.me/coryd-all.json
 
 # general
 /articles/ /posts/ 301

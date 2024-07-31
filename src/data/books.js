@@ -1,50 +1,49 @@
 import { createClient } from '@supabase/supabase-js'
 
-const { SUPABASE_URL, SUPABASE_KEY } = process.env
+const SUPABASE_URL = process.env.SUPABASE_URL
+const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+const PAGE_SIZE = 500
 
-const PAGE_SIZE = 1000
-
-const fetchTagsForBook = async (bookId) => {
-  const { data, error } = await supabase
-    .from('books_tags')
-    .select('tags(id, name)')
-    .eq('books_id', bookId)
-
-  if (error) {
-    console.error(`Error fetching tags for book ${bookId}:`, error)
-    return []
-  }
-
-  return data.map(bt => bt['tags']['name'])
-}
-
-async function fetchAllBooks() {
+const fetchAllBooks = async () => {
   let books = []
-  let from = 0
+  let rangeStart = 0
 
   while (true) {
     const { data, error } = await supabase
-      .from('books')
-      .select(`*, art(filename_disk)`)
-      .range(from, from + PAGE_SIZE - 1)
+      .from('optimized_books')
+      .select(`
+        id,
+        isbn,
+        date_finished,
+        author,
+        description,
+        title,
+        progress,
+        read_status,
+        star_rating,
+        review,
+        art,
+        favorite,
+        tags
+      `)
+      .order('date_finished', { ascending: false })
+      .range(rangeStart, rangeStart + PAGE_SIZE - 1)
 
     if (error) {
       console.error('Error fetching data from Supabase:', error)
       break
     }
 
-    for (const book of data) {
-      book['tags'] = await fetchTagsForBook(book['id'])
-    }
-
     books = books.concat(data)
-
     if (data.length < PAGE_SIZE) break
-
-    from += PAGE_SIZE
+    rangeStart += PAGE_SIZE
   }
 
+  return books
+}
+
+const processBooks = (books) => {
   return books.map(book => {
     const dateFinished = new Date(book['date_finished'])
     const year = dateFinished.getUTCFullYear()
@@ -55,12 +54,12 @@ async function fetchAllBooks() {
       rating: book['star_rating'] !== 'unrated' ? book['star_rating'] : '',
       favorite: book['favorite'],
       description: book['description'],
-      image: `/${book?.['art']?.['filename_disk']}`,
+      image: `/${book['art']}`,
       url: `/books/${book['isbn']}`,
       date: book['date_finished'],
       status: book['read_status'],
       progress: book['progress'],
-      tags: book['tags'],
+      tags: book['tags'] ? book['tags'].split(',') : [],
       isbn: book['isbn'],
       type: 'book',
       year,
@@ -83,5 +82,6 @@ const sortBooksByYear = (books) => {
 
 export default async function () {
   const books = await fetchAllBooks()
-  return { all: books, years: sortBooksByYear(books) }
+  const processedBooks = processBooks(books)
+  return { all: processedBooks, years: sortBooksByYear(processedBooks) }
 }

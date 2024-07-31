@@ -6,27 +6,13 @@ const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 const PAGE_SIZE = 1000
 
-const fetchTagsForMovie = async (movieId) => {
-  const { data, error } = await supabase
-    .from('movies_tags')
-    .select('tags(id, name)')
-    .eq('movies_id', movieId)
-
-  if (error) {
-    console.error(`Error fetching tags for movie ${movieId}:`, error)
-    return []
-  }
-
-  return data.map(mt => mt.tags.name)
-}
-
 const fetchAllMovies = async () => {
   let movies = []
   let rangeStart = 0
 
   while (true) {
     const { data, error } = await supabase
-      .from('movies')
+      .from('optimized_movies')
       .select(`
         id,
         tmdb_id,
@@ -39,8 +25,9 @@ const fetchAllMovies = async () => {
         star_rating,
         description,
         review,
-        art(filename_disk),
-        backdrop(filename_disk)
+        art,
+        backdrop,
+        tags
       `)
       .order('last_watched', { ascending: false })
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
@@ -48,10 +35,6 @@ const fetchAllMovies = async () => {
     if (error) {
       console.error(error)
       break
-    }
-
-    for (const movie of data) {
-      movie.tags = await fetchTagsForMovie(movie.id)
     }
 
     movies = movies.concat(data)
@@ -63,41 +46,61 @@ const fetchAllMovies = async () => {
   return movies
 }
 
-export default async function () {
-  const year = DateTime.now().year
-  const movies = await fetchAllMovies()
-  const formatMovieData = (movies, watched = true) => movies.map((item) => {
-    const movie = {
+const processMovies = (movies) => {
+  return movies.map(item => {
+    const lastWatched = DateTime.fromISO(item['last_watched'], { zone: 'utc' })
+    const year = DateTime.now().year
+
+    return {
       title: item['title'],
       lastWatched: item['last_watched'],
       dateAdded: item['last_watched'],
       year: item['year'],
       url: `/watching/movies/${item['tmdb_id']}`,
-      description: `${item['title']} (${item['year']})<br/>Watched at: ${DateTime.fromISO(item['last_watched'], { zone: 'utc' }).setZone('America/Los_Angeles').toFormat('MMMM d, yyyy, h:mma')}`,
-      image: `/${item?.['art']?.['filename_disk']}`,
-      backdrop: `/${item?.['backdrop']?.['filename_disk']}`,
+      description: item['description'],
+      image: item['art'] ? `/${item['art']}` : '',
+      backdrop: item['backdrop'] ? `/${item['backdrop']}` : '',
       plays: item['plays'],
       collected: item['collected'],
       favorite: item['favorite'],
       rating: item['star_rating'],
-      description: item['description'],
       review: item['review'],
       id: item['tmdb_id'],
       type: 'movie',
-      tags: item['tags']
+      tags: item['tags'] ? item['tags'].split(',') : [],
     }
+  })
+}
 
-    return movie
-  }).filter(movie => watched ? movie['lastWatched'] : !movie['lastWatched'])
-  const favoriteMovies = movies.filter(movie => movie['favorite'])
-  const collectedMovies = movies.filter(movie => movie['collected'])
-  const recentlyWatchedMovies = movies.filter(movie => movie['last_watched'] && year - DateTime.fromISO(movie['last_watched']).year <= 3).sort((a, b) => new Date(b['last_watched']) - new Date(a['last_watched']))
+export default async function () {
+  const year = DateTime.now().year
 
-  return {
-    movies: [...formatMovieData(movies), ...formatMovieData(movies, false)],
-    watchHistory: formatMovieData(movies),
-    recentlyWatched: formatMovieData(recentlyWatchedMovies),
-    favorites: formatMovieData(favoriteMovies).sort((a, b) => a['title'].localeCompare(b['title'])),
-    collection: formatMovieData(collectedMovies),
+  try {
+    const movies = await fetchAllMovies()
+    const processedMovies = processMovies(movies)
+
+    const filterMovies = (condition) => processedMovies.filter(condition)
+    const formatMovieData = (movies) => movies.map(movie => movie)
+
+    const favoriteMovies = filterMovies(movie => movie['favorite'])
+    const collectedMovies = filterMovies(movie => movie['collected'])
+    const recentlyWatchedMovies = filterMovies(movie => movie['lastWatched'] && year - DateTime.fromISO(movie['lastWatched']).year <= 3).sort((a, b) => new Date(b['lastWatched']) - new Date(a['lastWatched']))
+
+    return {
+      movies: formatMovieData(processedMovies),
+      watchHistory: formatMovieData(filterMovies(movie => movie['lastWatched'])),
+      recentlyWatched: formatMovieData(recentlyWatchedMovies),
+      favorites: formatMovieData(favoriteMovies).sort((a, b) => a['title'].localeCompare(b['title'])),
+      collection: formatMovieData(collectedMovies),
+    }
+  } catch (error) {
+    console.error('Error fetching and processing movies data:', error)
+    return {
+      movies: [],
+      watchHistory: [],
+      recentlyWatched: [],
+      favorites: [],
+      collection: [],
+    }
   }
 }

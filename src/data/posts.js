@@ -1,10 +1,46 @@
 import { createClient } from '@supabase/supabase-js'
 
-const SUPABASE_URL = process.env.SUPABASE_URL
-const SUPABASE_KEY = process.env.SUPABASE_KEY
+const SUPABASE_URL = process.env['SUPABASE_URL']
+const SUPABASE_KEY = process.env['SUPABASE_KEY']
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
-
 const PAGE_SIZE = 50
+
+const fetchAllTags = async () => {
+  const { data, error } = await supabase
+    .from('posts_tags')
+    .select('posts_id, tags(name)')
+
+  if (error) {
+    console.error('Error fetching all tags from Supabase:', error)
+    return {}
+  }
+
+  return data.reduce((acc, { posts_id, tags }) => {
+    if (!tags || !tags['name']) return acc
+    if (!acc[posts_id]) acc[posts_id] = []
+    acc[posts_id].push(tags['name'])
+    return acc
+  }, {})
+}
+
+const fetchAllBlocks = async () => {
+  const { data, error } = await supabase
+    .from('posts_blocks')
+    .select('posts_id, collection, item, sort')
+
+  if (error) {
+    console.error('Error fetching all blocks from Supabase:', error)
+    return {}
+  }
+
+  return data.reduce((acc, block) => {
+    if (!acc[block['posts_id']]) {
+      acc[block['posts_id']] = []
+    }
+    acc[block['posts_id']].push(block)
+    return acc
+  }, {})
+}
 
 const fetchBlockData = async (collection, itemId) => {
   const { data, error } = await supabase
@@ -21,44 +57,6 @@ const fetchBlockData = async (collection, itemId) => {
   return data
 }
 
-const fetchTagsForPost = async (postId) => {
-  const { data, error } = await supabase
-    .from('posts_tags')
-    .select('tags(id, name)')
-    .eq('posts_id', postId)
-
-  if (error) {
-    console.error(`Error fetching tags for post ${postId}:`, error)
-    return []
-  }
-
-  return data.map(pt => pt.tags.name)
-}
-
-const fetchBlocksForPost = async (postId) => {
-  const { data, error } = await supabase
-    .from('posts_blocks')
-    .select('collection, item, sort')
-    .eq('posts_id', postId)
-
-  if (error) {
-    console.error(`Error fetching blocks for post ${postId}:`, error)
-    return []
-  }
-
-  const blocks = await Promise.all(data.map(async block => {
-    const blockData = await fetchBlockData(block.collection, block.item)
-
-    return {
-      type: block['collection'],
-      sort: block['sort'],
-      ...blockData
-    }
-  }))
-
-  return blocks
-}
-
 const fetchAllPosts = async () => {
   let posts = []
   let page = 0
@@ -67,11 +65,8 @@ const fetchAllPosts = async () => {
 
   while (fetchMore) {
     const { data, error } = await supabase
-      .from('posts')
-      .select(`
-        *,
-        image(filename_disk)
-      `)
+      .from('optimized_posts')
+      .select('*')
       .order('date', { ascending: false })
       .range(page * PAGE_SIZE, (page + 1) * PAGE_SIZE - 1)
 
@@ -85,18 +80,42 @@ const fetchAllPosts = async () => {
     for (const post of data) {
       if (uniqueSlugs.has(post['slug'])) continue
 
-      uniqueSlugs.add(post.slug)
-      post['tags'] = await fetchTagsForPost(post['id'])
-      post['blocks'] = await fetchBlocksForPost(post['id'])
-      if (post?.['image']?.['filename_disk']) post['image'] = post['image']['filename_disk']
+      uniqueSlugs.add(post['slug'])
       posts.push(post)
     }
 
     page++
   }
+
   return posts
 }
 
+const processPosts = async (posts, tagsByPostId, blocksByPostId) => {
+  return Promise.all(posts.map(async post => {
+    post['tags'] = tagsByPostId[post['id']] || []
+    const blocks = blocksByPostId[post['id']] || []
+
+    post['blocks'] = await Promise.all(blocks.map(async block => {
+      const blockData = await fetchBlockData(block['collection'], block['item'])
+      if (!blockData) return null
+      return {
+        'type': block['collection'],
+        'sort': block['sort'],
+        ...blockData
+      }
+    })).then(blocks => blocks.filter(block => block !== null))
+
+    if (post['image']) post['image'] = post['image']['filename_disk']
+    return post
+  }))
+}
+
 export default async function () {
-  return await fetchAllPosts()
+  const [posts, tagsByPostId, blocksByPostId] = await Promise.all([
+    fetchAllPosts(),
+    fetchAllTags(),
+    fetchAllBlocks()
+  ])
+
+  return await processPosts(posts, tagsByPostId, blocksByPostId)
 }

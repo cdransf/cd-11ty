@@ -12,13 +12,18 @@ const fetchBlogroll = async () => {
     .order('name', { ascending: true })
 
   if (error) {
-    console.error('Error fetching authors with for the blogroll:', error)
+    console.error('Error fetching authors for the blogroll:', error)
     return []
   }
 
-  return data.sort((a, b) => a['name'].toLowerCase().localeCompare(b['name'].toLowerCase()))
+  return data.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()))
 }
 
 export default async function () {
-  return await fetchBlogroll()
+  try {
+    return await fetchBlogroll()
+  } catch (error) {
+    console.error('Error fetching and processing the blogroll:', error)
+    return []
+  }
 }
