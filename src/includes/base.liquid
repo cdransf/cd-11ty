@@ -1,12 +1,11 @@
 {%- assign fullUrl = globals.url | append: page.url -%}
-
 {%- assign pageTitle = globals.site_name -%}
 {%- if schema == 'blog' -%}
   {%- assign pageTitle = post.title -%}
 {%- elsif title -%}
   {%- assign pageTitle = title | append: ' / ' | append: globals.site_name -%}
-{%- elsif artist.name_string -%}
-  {%- assign pageTitle = 'Artists / ' | append: artist.name_string | append: ' / ' | append: globals.site_name -%}
+{%- elsif artist.name -%}
+  {%- assign pageTitle = 'Artists / ' | append: artist.name | append: ' / ' | append: globals.site_name -%}
 {%- elsif schema == 'music-index' -%}
   {%- assign pageTitle = 'Music / ' | append: globals.site_name -%}
 {%- elsif schema == 'music-period' -%}
