@@ -16,7 +16,7 @@ const fetchBlogroll = async () => {
     return []
   }
 
-  return data.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()))
+  return data.sort((a, b) => a['name'].toLowerCase().localeCompare(b['name'].toLowerCase()))
 }
 
 export default async function () {

@@ -19,8 +19,8 @@ const fetchAllBadges = async () => {
 
   const transformedData = data.map(badge => ({
     ...badge,
-    image: badge.image?.filename_disk || '',
-  })).sort((a, b) => a.sort - b.sort)
+    image: badge.image?.['filename_disk'] || '',
+  })).sort((a, b) => a['sort'] - b['sort'])
 
   return transformedData
 }

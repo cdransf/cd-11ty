@@ -69,7 +69,7 @@ const aggregateData = (data, groupByField, groupByType, genreMapping) => {
     aggregation[key].plays++
   })
 
-  return Object.values(aggregation).sort((a, b) => b.plays - a.plays).map((item, index) => ({ ...item, rank: index + 1 }))
+  return Object.values(aggregation).sort((a, b) => b['plays'] - a['plays']).map((item, index) => ({ ...item, rank: index + 1 }))
 }
 
 const buildRecents = (data) => {

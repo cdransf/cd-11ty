@@ -129,7 +129,7 @@ export default async function () {
   try {
     const rawShows = await fetchAllShows()
     const shows = rawShows.map(prepareShowData)
-    const episodes = shows.flatMap(prepareEpisodeData).sort((a, b) => new Date(b.last_watched_at) - new Date(a.last_watched_at))
+    const episodes = shows.flatMap(prepareEpisodeData).sort((a, b) => new Date(b['last_watched_at']) - new Date(a['last_watched_at']))
 
     const favoriteShows = shows.filter(show => show.favorite)
 
@@ -137,7 +137,7 @@ export default async function () {
       shows,
       watchHistory: formatEpisodeData(episodes),
       recentlyWatched: formatEpisodeData(episodes.slice(0, 225)),
-      favorites: formatEpisodeData(favoriteShows.flatMap(prepareEpisodeData)).sort((a, b) => a.name.localeCompare(b.name)),
+      favorites: formatEpisodeData(favoriteShows.flatMap(prepareEpisodeData)).sort((a, b) => a['name'].localeCompare(b['name'])),
     }
   } catch (error) {
     console.error('Error fetching and processing shows data:', error)
