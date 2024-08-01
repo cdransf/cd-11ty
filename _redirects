@@ -46,6 +46,9 @@
 /posts/2023/now-page-update-matter-favorites/ /posts/2023/now-page-update-favorite-articles-from-matter/ 301
 /posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/ /posts/2023/displaying-now-playing-data-with-matching-emoji-using-netlify-edge-functions-and-eleventy/ 301
 
+# media
+/watching/movies/999999/ /watching/movies/942199/ 301
+
 # 404s
 /now.html /now 301
 
