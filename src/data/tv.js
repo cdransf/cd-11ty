@@ -53,6 +53,7 @@ const prepareEpisodeData = (show) => show['episodes'].map(episode => ({
   ...episode,
   show_title: show['title'],
   show_tmdb_id: show['tmdb_id'],
+  show_year: show['year'],
   collected: show['collected'],
   favorite: show['favorite'],
   image: show['image'],
@@ -66,12 +67,14 @@ const formatEpisodeData = (episodes) => {
   const showEpisodesMap = {}
 
   episodes.forEach(episode => {
-    const showTmdbId = episode.show_tmdb_id
+    const showTmdbId = episode['show_tmdb_id']
+    const showYear = episode['show_year']
 
     if (!showEpisodesMap[showTmdbId]) {
       showEpisodesMap[showTmdbId] = {
         title: episode['show_title'],
         tmdbId: showTmdbId,
+        year: showYear,
         collected: episode['collected'],
         favorite: episode['favorite'],
         dateAdded: episode['last_watched_at'],
@@ -89,6 +92,7 @@ const formatEpisodeData = (episodes) => {
       episode: episode['episode_number'],
       season: episode['season_number'],
       tmdbId: showTmdbId,
+      year: showYear,
       type: 'tv',
       dateAdded: episode['last_watched_at'],
       lastWatchedAt: episode['last_watched_at'],
@@ -113,6 +117,7 @@ const formatEpisodeData = (episodes) => {
         episode: endingEpisode,
         season: endingSeason,
         tmdbId: show['tmdbId'],
+        year: show['year'],
         collected: show['collected'],
         favorite: show['favorite'],
         type: 'tv-range',
@@ -130,7 +135,6 @@ export default async function () {
     const rawShows = await fetchAllShows()
     const shows = rawShows.map(prepareShowData)
     const episodes = shows.flatMap(prepareEpisodeData).sort((a, b) => new Date(b['last_watched_at']) - new Date(a['last_watched_at']))
-
     const favoriteShows = shows.filter(show => show.favorite)
 
     return {

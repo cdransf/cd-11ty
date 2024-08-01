@@ -75,7 +75,7 @@
 /mastodon https://social.lol/@cory 301
 /coffee https://www.buymeacoffee.com/cory 301
 /tags /search 301
-/tags/* /search 301
-/music/genre/* /music/genres/:splat 301
 /reading /books
 /stats /search 301
+/tags/* /search 301
+/music/genre/* /music/genres/:splat 301
