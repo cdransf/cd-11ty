@@ -13,6 +13,15 @@
     aspect-ratio: var(--aspect-ratio-square);
   }
 
+  & p.concerts {
+    color: var(--concerts);
+
+    & svg {
+      stroke: var(--concerts);
+      margin-right: var(--sizing-xs);
+    }
+  }
+
   & .artist-display {
     display: flex;
     flex-direction: column;
@@ -71,6 +80,11 @@
       }
     }
   }
+}
+
+.concert-list {
+  margin-top: 0;
+  padding-left: 0;
 }
 
 @media screen and (min-width: 768px) {

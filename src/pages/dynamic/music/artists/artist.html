@@ -62,6 +62,19 @@ schema: artist
   <div data-toggle-content class="text-toggle-hidden">{{ artist.description | markdown }}</div>
   <button data-toggle-button>Show more</button>
   {%- endif -%}
+  {%- if artist.concerts -%}
+    <hr />
+    <p class="concerts flex-centered">
+      {% tablericon "device-speaker" "concert" %}
+      I've seen this artist live!
+    </p>
+    <ul>
+      {% for concert in artist.concerts %}
+        <li>On <strong class="highlight-text">{{ concert.date | date: "%B %e, %Y" }}</strong> at <a href="https://www.openstreetmap.org/?mlat={{ concert.venue_latitude }}&mlon={{ concert.venue_longitude }}#map=18/{{ concert.venue_latitude }}/{{ concert.venue_longitude }}">{{ concert.venue | formatVenue }}</a></li>
+      {% endfor %}
+    </ul>
+    <hr />
+  {%- endif -%}
   <table>
     <tr>
       <th>Album</th>

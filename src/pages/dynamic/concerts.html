@@ -1,0 +1,29 @@
+---
+title: Concerts
+layout: default
+pagination:
+  data: concerts
+  size: 30
+permalink: "/music/concerts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html"
+---
+{% if pagination.pageNumber == 0 %}
+<h2 class="page-header">Concerts</h2>
+<p>These are concerts I've attended (not all of them — just the ones I could remember or glean from emails, photo metadata et al). I've been to at least <strong class="highlight-text">{{ concerts | size }}</strong> shows. <a href="/music">You can also take a look at the music I've been listening to lately</a>.</p>
+<hr />
+{% endif %}
+<ul class="concert-list">
+  {% for concert in pagination.items %}
+    {%- capture artistName -%}
+      {% if concert.artistNameString %}
+        {{ concert.artistNameString }}
+      {% else %}
+        <a href="{{ concert.artistUrl }}">{{ concert.artist.name }}</a>
+      {% endif %}
+    {%- endcapture -%}
+    <li>
+      {{ artistName }} on <strong class="highlight-text">{{ concert.date | date: "%B %e, %Y" }}</strong>
+      {% if concert.venue.name %} at <a href="https://www.openstreetmap.org/?mlat={{ concert.venue.latitude }}&mlon={{ concert.venue.longitude }}#map=18/{{ concert.venue.latitude }}/{{ concert.venue.longitude }}">{{ concert.venue.name | formatVenue }}</a>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% render "partials/nav/paginator.liquid", pagination:pagination %}

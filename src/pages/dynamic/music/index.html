@@ -12,7 +12,8 @@ schema: music-index
 <script>{{ js }}</script>
 <h2 class="page-header">{{ title }}</h2>
 <p>I've listened to <strong class="highlight-text">{{ music.week.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.week.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.week.totalTracks }} tracks</strong> this week. Most of that has been {{ music.week.genres | sortByPlaysDescending: "plays" | genreStrings: "genre" | mediaLinks: "genre", 5 }}.</p>
-<p><strong class="highlight-text">See more of the</strong> <a href="/music/artists/this-week/">artists</a>, <a href="/music/albums/this-week/">albums</a> or <a href="/music/tracks/this-week/">tracks</a> I've listened to this week. <strong class="highlight-text">Or take a look at what I've listened to</strong> <a href="/music/this-month">this month</a> or <a href="/music/three-months">over the last 3 months</a></p>
+<p><strong class="highlight-text">See more of the</strong> <a href="/music/artists/this-week/">artists</a>, <a href="/music/albums/this-week/">albums</a> or <a href="/music/tracks/this-week/">tracks</a> I've listened to this week. <strong class="highlight-text">Or take a look at what I've listened to</strong> <a href="/music/this-month">this month</a> or <a href="/music/three-months">over the last 3 months</a>.</p>
+<p><a href="/music/concerts">You can also take a look at the concerts I've been to.</a></p>
 {% render "partials/blocks/now-playing.liquid" %}
 <hr />
 <h3 id="artists" class="section-header no-top-margin">
