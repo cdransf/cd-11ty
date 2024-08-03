@@ -21,9 +21,18 @@ permalink: "/music/concerts/{% if pagination.pageNumber > 0 %}{{ pagination.page
         <a href="{{ concert.artistUrl }}">{{ concert.artist.name }}</a>
       {% endif %}
     {%- endcapture -%}
+    {%- capture venue -%}
+      {% if concert.venue.name %}
+        {% if concert.venue.latitude and concert.venue.longitude %}
+          <a href="https://www.openstreetmap.org/?mlat={{ concert.venue.latitude }}&mlon={{ concert.venue.longitude }}#map=18/{{ concert.venue.latitude }}/{{ concert.venue.longitude }}">{{ concert.venue.name | formatVenue }}</a>
+        {% else %}
+          {{ concert.venue.name | formatVenue }}
+        {% endif %}
+      {% endif %}
+    {%- endcapture -%}
     <li>
       {{ artistName }} on <strong class="highlight-text">{{ concert.date | date: "%B %e, %Y" }}</strong>
-      {% if concert.venue.name %} at <a href="https://www.openstreetmap.org/?mlat={{ concert.venue.latitude }}&mlon={{ concert.venue.longitude }}#map=18/{{ concert.venue.latitude }}/{{ concert.venue.longitude }}">{{ concert.venue.name | formatVenue }}</a>{% endif %}
+      {% if venue %} at {{ venue }}{% endif %}
     </li>
   {% endfor %}
 </ul>
