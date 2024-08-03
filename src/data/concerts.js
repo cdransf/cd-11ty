@@ -46,6 +46,7 @@ const fetchAllConcerts = async () => {
 
 const processConcerts = (concerts) => {
   return concerts.map(concert => ({
+    id: concert['id'],
     date: concert['date'],
     artistNameString: concert['artist_name_string'],
     venue: {

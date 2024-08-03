@@ -33,6 +33,10 @@ permalink: "/music/concerts/{% if pagination.pageNumber > 0 %}{{ pagination.page
     <li>
       {{ artistName }} on <strong class="highlight-text">{{ concert.date | date: "%B %e, %Y" }}</strong>
       {% if venue %} at {{ venue }}{% endif %}
+      {% if concert.notes %}
+        {% assign notes = concert.notes | prepend: "### Notes\n" | markdown %}
+        {% render "partials/blocks/modal.liquid", label:"Concert info", icon:"info-circle", content:notes, id:concert.id %}
+      {% endif %}
     </li>
   {% endfor %}
 </ul>

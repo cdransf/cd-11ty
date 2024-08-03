@@ -85,6 +85,10 @@
 .concert-list {
   margin-top: 0;
   padding-left: 0;
+
+  & li .modal-toggle {
+    height: calc(var(--sizing-lg) * 1.6);
+  }
 }
 
 @media screen and (min-width: 768px) {
