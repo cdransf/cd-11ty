@@ -21,15 +21,15 @@
       right: var(--sizing-lg);
       cursor: pointer;
 
+      &:focus,
+      &:focus-within {
+        outline: var(--outline)
+      }
+
       & svg {
         stroke: var(--accent-color);
         transform: rotate(0deg);
         transition: transform var(--transition-duration-default) var(--transition-ease-in-out);
-
-        &:focus,
-        &:focus-within {
-          outline: var(--outline)
-        }
 
         &:hover,
         &:focus,
@@ -59,16 +59,16 @@
   display: inline-flex;
   vertical-align: middle;
 
+  &:focus,
+  &:focus-within {
+    outline: var(--outline)
+  }
+
   & svg {
     cursor: pointer;
     stroke: var(--accent-color);
     transform: rotate(0deg);
     transition: transform var(--transition-duration-default) var(--transition-ease-in-out);
-
-    &:focus,
-    &:focus-within {
-      outline: var(--outline)
-    }
 
     &:hover,
     &:focus,
