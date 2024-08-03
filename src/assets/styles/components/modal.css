@@ -9,7 +9,6 @@
   & .modal-body {
     position: fixed;
     background: var(--background-color);
-    border: 1px solid var(--gray-light);
     height: 100%;
     width: 100%;
     inset: 0;
@@ -85,5 +84,6 @@
     max-height: 75%;
     max-width: 75%;
     inset: 12.5%;
+    border: 1px solid var(--gray-light);
   }
 }
