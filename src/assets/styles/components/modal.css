@@ -27,6 +27,11 @@
         transform: rotate(0deg);
         transition: transform var(--transition-duration-default) var(--transition-ease-in-out);
 
+        &:focus,
+        &:focus-within {
+          outline: var(--outline)
+        }
+
         &:hover,
         &:focus,
         &:active {
@@ -60,6 +65,11 @@
     stroke: var(--accent-color);
     transform: rotate(0deg);
     transition: transform var(--transition-duration-default) var(--transition-ease-in-out);
+
+    &:focus,
+    &:focus-within {
+      outline: var(--outline)
+    }
 
     &:hover,
     &:focus,
