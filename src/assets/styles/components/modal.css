@@ -10,9 +10,9 @@
     position: fixed;
     background: var(--background-color);
     border: 1px solid var(--gray-light);
-    max-height: 75%;
-    max-width: 75%;
-    inset: 12.5%;
+    height: 100%;
+    width: 100%;
+    inset: 0;
     overflow: scroll;
     padding: var(--sizing-lg) var(--sizing-2xl);
 
@@ -77,5 +77,13 @@
       stroke: var(--accent-color-hover);
       transform: rotate(8deg);
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-wrapper .modal-body {
+    max-height: 75%;
+    max-width: 75%;
+    inset: 12.5%;
   }
 }
