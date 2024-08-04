@@ -1,3 +1,7 @@
+{% capture js %}
+  {% render "../../../assets/scripts/modal.js" %}
+{% endcapture %}
+<script>{{ js }}</script>
 {%- capture labelContent -%}
   {% if icon %}
     {% tablericon icon label %}

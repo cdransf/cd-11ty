@@ -25,7 +25,7 @@
 
       &:focus svg,
       &:focus-within svg {
-        outline: var(--outline)
+        outline: var(--outline);
       }
 
       & svg {
@@ -34,7 +34,7 @@
         transition: transform var(--transition-duration-default) var(--transition-ease-in-out);
 
         &:focus {
-          outline: var(--outline)
+          outline: var(--outline);
         }
 
         &:hover,
@@ -44,6 +44,15 @@
           transform: rotate(8deg);
         }
       }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .modal-body {
+      max-height: 75%;
+      max-width: 75%;
+      inset: 12.5%;
+      border: 1px solid var(--gray-light);
     }
   }
 }
@@ -67,7 +76,7 @@
 
   &:focus svg,
   &:focus-within svg {
-    outline: var(--outline)
+    outline: var(--outline);
   }
 
   & svg {
@@ -77,7 +86,7 @@
     transition: transform var(--transition-duration-default) var(--transition-ease-in-out);
 
     &:focus {
-      outline: var(--outline)
+      outline: var(--outline);
     }
 
     &:hover,
@@ -86,14 +95,5 @@
       stroke: var(--accent-color-hover);
       transform: rotate(8deg);
     }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .modal-wrapper .modal-body {
-    max-height: 75%;
-    max-width: 75%;
-    inset: 12.5%;
-    border: 1px solid var(--gray-light);
   }
 }
