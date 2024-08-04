@@ -20,9 +20,11 @@
       top: var(--sizing-lg);
       right: var(--sizing-lg);
       cursor: pointer;
+      height: var(--sizing-svg-base);
+      width: var(--sizing-svg-base);
 
-      &:focus,
-      &:focus-within {
+      &:focus svg,
+      &:focus-within svg {
         outline: var(--outline)
       }
 
@@ -30,6 +32,10 @@
         stroke: var(--accent-color);
         transform: rotate(0deg);
         transition: transform var(--transition-duration-default) var(--transition-ease-in-out);
+
+        &:focus {
+          outline: var(--outline)
+        }
 
         &:hover,
         &:focus,
@@ -59,8 +65,8 @@
   display: inline-flex;
   vertical-align: middle;
 
-  &:focus,
-  &:focus-within {
+  &:focus svg,
+  &:focus-within svg {
     outline: var(--outline)
   }
 
@@ -69,6 +75,10 @@
     stroke: var(--accent-color);
     transform: rotate(0deg);
     transition: transform var(--transition-duration-default) var(--transition-ease-in-out);
+
+    &:focus {
+      outline: var(--outline)
+    }
 
     &:hover,
     &:focus,
