@@ -24,6 +24,8 @@
   {%- assign pageTitle = pageTitle | append: ' / ' | append: globals.site_name -%}
 {%- elsif show.title -%}
   {%- assign pageTitle = 'Shows / ' | append: show.title | append: ' / ' | append: globals.site_name -%}
+{%- elsif page.description -%}
+  {%- assign pageTitle = page.title | append: ' / ' | append: globals.site_name -%}
 {%- endif -%}
 
 {%- assign pageDescription = globals.site_description -%}
