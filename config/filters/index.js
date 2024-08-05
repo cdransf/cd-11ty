@@ -85,7 +85,7 @@ export default {
   },
 
   // feeds
-  normalizeEntries: (entries) => {
+  normalizeEntries: (entries, limit) => {
     const posts = []
     const mdGenerator = () => {
       const md = markdownIt({ html: true, linkify: true })
@@ -112,8 +112,9 @@ export default {
 
       return md
     }
+    const entryData = limit ? entries.slice(0, limit) : entries
 
-    entries.forEach((entry) => {
+    entryData.forEach((entry) => {
       const dateKey = Object.keys(entry).find(key => key.includes('date'))
       const date = new Date(entry[dateKey])
       const md = mdGenerator()

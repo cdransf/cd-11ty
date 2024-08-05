@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <atom:link href="{{ permalink | absoluteUrl: globals.url }}" rel="self" type="application/rss+xml" />
-    {%- assign entries = data | normalizeEntries -%}
+    {%- assign entries = data | normalizeEntries: 20 -%}
     <title>{{ title }}</title>
     <description>{{ description }}</description>
     <link>{{ permalink | absoluteUrl: globals.url }}</link>
@@ -14,7 +14,7 @@
       <width>144</width>
       <height>144</height>
     </image>
-    {% for entry in entries limit: 20 -%}
+    {% for entry in entries -%}
       {%- assign rating = entry.rating -%}
       {%- capture entryTitle -%}
         {{ entry.title | escape }}
