@@ -39,6 +39,8 @@
   {%- assign pageDescription = show.review | markdown |  strip_html | default: show.description | truncate: 300 -%}
 {%- elsif genre.description -%}
   {%- assign pageDescription = genre.description | markdown | strip_html | truncate: 300 -%}
+{%- elsif page.description -%}
+  {%- assign pageDescription = page.description -%}
 {%- elsif description -%}
   {%- assign pageDescription = description -%}
 {%- endif -%}
@@ -84,8 +86,8 @@
     <link rel="stylesheet" href="/assets/styles/index.css?v={% appVersion %}" type="text/css" />
     <link rel="canonical" href="{{ fullUrl }}" />
     <meta property="og:title" content="{{ pageTitle }}" />
-    <meta name="description" content="{{ pageDescription | escape | strip }}" />
-    <meta property="og:description" content="{{ pageDescription | escape | strip }}" />
+    <meta name="description" content="{{ pageDescription }}" />
+    <meta property="og:description" content="{{ pageDescription }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ fullUrl }}" />
     <meta property="og:image" content="{{ ogImage }}?class=w800" />

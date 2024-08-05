@@ -1,26 +1,30 @@
 import fs from 'fs'
 import path from 'path'
-import { minify } from 'terser'
 
-export const minifyJsComponents = async () => {
-  const jsComponentsDir = '_site/assets/scripts/components';
-  const files = fs.readdirSync(jsComponentsDir);
-  for (const fileName of files) {
-    if (fileName.endsWith('.js')) {
-      const filePath = `${jsComponentsDir}/${fileName}`;
-      const minified = await minify(fs.readFileSync(filePath, 'utf8'));
-      fs.writeFileSync(filePath, minified.code);
-    } else {
-      console.log('⚠ No js components found')
-    }
-  }
-}
+const errorPages = ['404', '500', '1000', 'broken', 'error', 'js-challenge', 'not-allowed', 'rate-limit']
 
-export const copy404Page = () => {
-  const sourcePath = path.join('_site', '404', 'index.html')
-  const destinationPath = path.join('_site', '404.html')
+export const copyErrorPages = () => {
+  errorPages.forEach((errorPage) => {
+    const sourcePath = path.join('_site', errorPage, 'index.html')
+    const destinationPath = path.join('_site', `${errorPage}.html`)
+    const directoryPath = path.join('_site', errorPage)
 
-  fs.copyFile(sourcePath, destinationPath, (err) => {
-    if (err) console.error('Error copying 404 page:', err)
+    fs.copyFile(sourcePath, destinationPath, (err) => {
+      if (err) {
+        console.error(`Error copying ${errorPage} page:`, err)
+        return
+      }
+
+      fs.unlink(sourcePath, (unlinkErr) => {
+        if (unlinkErr) {
+          console.error(`Error deleting source file for ${errorPage} page:`, unlinkErr)
+          return
+        }
+
+        fs.rmdir(directoryPath, (rmdirErr) => {
+          if (rmdirErr) console.error(`Error removing directory for ${errorPage} page:`, rmdirErr)
+        })
+      })
+    })
   })
 }

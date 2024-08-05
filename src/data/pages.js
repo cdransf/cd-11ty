@@ -98,7 +98,6 @@ export default async function () {
       fetchAllPages(),
       fetchAllBlocks()
     ])
-
     return await processPages(pages, blocksByPageId)
   } catch (error) {
     console.error('Error fetching and processing pages:', error)
