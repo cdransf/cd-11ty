@@ -4,7 +4,7 @@ const SUPABASE_URL = process.env['SUPABASE_URL']
 const SUPABASE_KEY = process.env['SUPABASE_KEY']
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
-const PAGE_SIZE = 50
+const PAGE_SIZE = 250
 
 const fetchBlockData = async (collection, itemId) => {
   const { data, error } = await supabase
