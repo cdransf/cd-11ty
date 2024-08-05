@@ -5,8 +5,7 @@ import { sanitizeMediaString, parseCountryField } from '../../config/utilities/i
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
-
-const PAGE_SIZE = 1000
+const PAGE_SIZE = 10000
 
 const fetchDataForPeriod = async (startPeriod, fields, table) => {
   let rows = []

@@ -3,7 +3,7 @@ import { createClient } from '@supabase/supabase-js'
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
-const PAGE_SIZE = 500
+const PAGE_SIZE = 1000
 
 const fetchAllBooks = async () => {
   let books = []
