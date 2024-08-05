@@ -1,6 +1,6 @@
 <div class="music-chart">
-  {% for item in data limit: 10 %}
-  {% capture alt %}{{ item.title | escape }} by {{ item.artist }}{% endcapture %}
+  {%- for item in data limit: 10 -%}
+  {%- capture alt -%}{{ item.title | escape }} by {{ item.artist }}{%- endcapture -%}
     <div class="item">
       <div class="meta">
         <img
@@ -28,5 +28,5 @@
         {{ item.timestamp | date: "%B %-d, %-I:%M%p", "America/Los_Angeles" }}
       </div>
     </div>
-  {% endfor %}
+  {%- endfor -%}
 </div>

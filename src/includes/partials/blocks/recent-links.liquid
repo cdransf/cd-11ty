@@ -1,16 +1,16 @@
-{% if links.size > 0 %}
+{%- if links.size > 0 -%}
 <h3 id="links" class="flex-centered">
   {% tablericon "link" "Links" %}
   Recent links
 </h3>
 <ul class="link-list">
-  {% for link in links limit: 5 %}
+  {%- for link in links limit: 5 -%}
     <li>
       <a href="{{ link.link }}" title="{{ link.title | escape }}">
         {{ link.title }}
       </a>
       {% if link.authors %} via <a href="{{ link.authors.url }}">{{ link.authors.name }}</a>{% endif %}
     </li>
-  {% endfor %}
+  {%- endfor -%}
 </ul>
-{% endif %}
+{%- endif -%}

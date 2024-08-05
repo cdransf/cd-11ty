@@ -1,27 +1,25 @@
-{% assign hidePagination = count or data.pages.size <= 1 %}
+{%- assign hidePagination = count or data.pages.size <= 1 -%}
 <div class="watching grid{% if hidePagination %} no-pagination {% endif %}">
-  {% assign items = data.items | default: mediaItems %}
-  {% for item in items limit: count %}
-    {% capture alt %}{{ item.title | escape }} ({{ item.year }}){% endcapture %}
+  {%- assign items = data.items | default: mediaItems -%}
+  {%- for item in items limit: count -%}
+    {%- capture alt -%}{{ item.title | escape }} ({{ item.year }}){% endcapture %}
     <a href="{{ item.url }}">
       <div class="watching item shadow">
         <div class="meta-text">
-          {% if item.type == 'movie' %}
+          {%- if item.type == 'movie' -%}
             <div class="header">{{ item.title }}</div>
             <div class="subheader flex-centered">
               {{ item.year }}
-              {% if item.rating %}
+              {%- if item.rating -%}
                 <span class="rating"> ({{ item.rating }})</span>
-              {% endif %}
+              {%- endif -%}
             </div>
-          {% else %}
+          {%- else -%}
             <div class="header">{{ item.name }}</div>
             <div class="subheader flex-centered">{{ item.year }}</div>
-          {% endif %}
+          {%- endif -%}
         </div>
-        {%- capture loadingStrategy -%}
-          {%- if loading -%}{{ loading }}{%- else -%}lazy{%- endif -%}
-        {%- endcapture -%}
+        {%- assign loadingStrategy = loading | default: 'lazy' -%}
         <img
           srcset="
             https://cdn.coryd.dev{{ item.backdrop }}?class=bannersm 256w,
@@ -42,8 +40,8 @@
         />
       </div>
     </a>
-  {% endfor %}
+  {%- endfor -%}
 </div>
-{% unless hidePagination %}
+{%- unless hidePagination -%}
   {% render "partials/nav/paginator.liquid", pagination:data %}
-{% endunless %}
+{%- endunless -%}

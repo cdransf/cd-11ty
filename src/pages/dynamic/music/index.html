@@ -6,9 +6,9 @@ permalink: "/music/index.html"
 updated: "now"
 schema: music-index
 ---
-{% capture js %}
+{%- capture js -%}
   {% render "../../../assets/scripts/media-toggles.js" %}
-{% endcapture %}
+{%- endcapture -%}
 <script>{{ js }}</script>
 <h2 class="page-header">{{ title }}</h2>
 <p>I've listened to <strong class="highlight-text">{{ music.week.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.week.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.week.totalTracks }} tracks</strong> this week. Most of that has been {{ music.week.genres | sortByPlaysDescending: "plays" | genreStrings: "genre" | mediaLinks: "genre", 5 }}.</p>

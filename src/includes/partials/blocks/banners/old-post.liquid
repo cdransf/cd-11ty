@@ -1,6 +1,6 @@
-{% assign isOldPost = date | oldPost %}
-{% if isOldPost %}
+{%- assign isOldPost = date | oldPost -%}
+{%- if isOldPost -%}
   <div class="banner old-post">
     <p>{% tablericon "clock-x" "Old post" %}This post is over 3 years old. I've probably changed my mind since it was written and it <em>could</em> be out of date.</p>
   </div>
-{% endif %}
+{%- endif -%}

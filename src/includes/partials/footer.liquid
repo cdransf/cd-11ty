@@ -1,16 +1,16 @@
 <footer{% unless updated %} style="margin-top:var(--sizing-3xl)"{% endunless %}>
-  {% if updated %}
+  {%- if updated -%}
     <p class="explainer text-small text-centered"><em>This page was last updated on {{ updated | strip }}.</em></p>
-  {% endif %}
+  {%- endif -%}
   <nav aria-label="Social icons" class="social flex-centered justify-centered text-centered">
-    {% for link in nav.footer_icons %}
+    {%- for link in nav.footer_icons -%}
       {% render "partials/nav/linked-icon.liquid", title:link.title, url:link.permalink, icon:link.icon %}
-    {% endfor %}
+    {%- endfor -%}
   </nav>
   <nav aria-label="Secondary site navigation" class="sub-pages flex-centered justify-centered text-centered">
-    {% for link in nav.footer_text %}
+    {%- for link in nav.footer_text -%}
       {% render "partials/nav/link.liquid", page:page, title:link.title, url:link.permalink, icon:link.icon %}
       {% if not forloop.last %}<span>/</span>{% endif %}
-    {% endfor %}
+    {%- endfor -%}
   </nav>
 </footer>

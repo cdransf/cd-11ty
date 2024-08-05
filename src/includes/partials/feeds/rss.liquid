@@ -15,7 +15,7 @@
       <height>144</height>
     </image>
     {% for entry in entries limit: 20 -%}
-      {% assign rating = entry.rating %}
+      {%- assign rating = entry.rating -%}
       {%- capture entryTitle -%}
         {{ entry.title | escape }}
         {%- if entry.authors %} via {{ entry.authors.name }}{%- endif -%}

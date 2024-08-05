@@ -1,6 +1,6 @@
-{% capture js %}
+{%- capture js -%}
   {% render "../../../assets/scripts/menu.js" %}
-{% endcapture %}
+{%- endcapture -%}
 <script>{{ js }}</script>
 <div class="flex-centered">
   <input id="menu-toggle" type="checkbox" aria-hidden="true" />
@@ -9,9 +9,9 @@
     <div class="menu-open" aria-hidden="true">{% tablericon "x" "Menu open" %}</div>
   </label>
   <ul class="menu-primary" aria-label="Primary site navigation" id="primary-navigation">
-    {% for link in nav.primary %}
+    {%- for link in nav.primary -%}
       <li>{% render "partials/nav/link.liquid", page:page, title:link.title, url:link.permalink, icon:link.icon %}</li>
-    {% endfor %}
+    {%- endfor -%}
   </ul>
   {% render "partials/nav/theme-toggle.liquid" %}
 </div>

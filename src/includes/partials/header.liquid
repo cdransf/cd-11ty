@@ -1,10 +1,10 @@
 <section class="main-title">
   <h1>
-    {% if page.url != '/' %}
+    {%- if page.url != '/' -%}
     <a href="/" tabindex="0">{{ globals.site_name }}</a>
-    {% else %}
+    {%- else -%}
     {{ globals.site_name }}
-    {% endif %}
+    {%- endif -%}
   </h1>
   {% render "partials/nav/menu.liquid", page:page, nav:nav %}
 </section>

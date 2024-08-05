@@ -1,22 +1,23 @@
-{% assign hidePagination = count or data.pages.size <= 1 %}
-{% assign media = data.items | default: data | normalizeMedia %}
-<div class="media-grid {% if shape == 'square' %}square{% else %}vertical{% endif %}">
-  {% for item in media limit: count | default: media.size %}
-    {% assign alt = item.alt | strip | escape %}
+{%- assign hidePagination = count or data.pages.size <= 1 -%}
+{%- assign media = data.items | default: data | normalizeMedia -%}
+<div class="media-grid {% if shape == 'square' -%}square{%- else -%}vertical{%- endif -%}">
+  {%- for item in media limit: count | default: media.size -%}
+    {%- capture alt -%}{{ item.title | escape }} ({{ item.year }}){% endcapture %}
+    {%- assign alt = item.alt | strip | escape -%}
     <a href="{{ item.url }}" title="{{ alt }}">
       <div class="item-wrapper shadow">
         <div class="meta-text">
-          {% if item.title %}
+          {%- if item.title -%}
             <div class="header">{{ item.title }}</div>
-          {% endif %}
-          {% if item.plays %}
+          {%- endif -%}
+          {%- if item.plays -%}
             <div class="subheader">{{ item.plays }} plays</div>
-          {% elsif item.subtext %}
+          {%- elsif item.subtext -%}
             <div class="subheader">{{ item.subtext }}</div>
-          {% endif %}
+          {%- endif -%}
         </div>
-        {% assign loadingStrategy = loading | default: 'lazy' %}
-        {% if shape == 'square' %}
+        {%- assign loadingStrategy = loading | default: 'lazy' -%}
+        {%- if shape == 'square' -%}
           <img
             srcset="
               https://cdn.coryd.dev{{ item.image }}?class=squaresm 200w,
@@ -35,7 +36,7 @@
             width="240"
             height="240"
           />
-        {% else %}
+        {%- else -%}
           <img
             srcset="
               https://cdn.coryd.dev{{ item.image }}?class=verticalsm 200w,
@@ -54,11 +55,11 @@
             width="200"
             height="307"
           />
-        {% endif %}
+        {%- endif -%}
       </div>
     </a>
-  {% endfor %}
+  {%- endfor -%}
 </div>
-{% unless hidePagination %}
+{%- unless hidePagination -%}
   {% render "partials/nav/paginator.liquid", pagination:data %}
-{% endunless %}
+{%- endunless -%}

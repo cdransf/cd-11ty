@@ -2,11 +2,11 @@
 layout: base
 ---
 {%- capture updateTime -%}
-  {% if updated == "now" %}
+  {%- if updated == "now" -%}
     {{ 'now' | date: "%B %-d, %l:%M %P", "America/Los_Angeles" }}
-  {% elsif page.updated %}
+  {%- elsif page.updated -%}
     {{ page.updated | date: "%B %-d, %l:%M %P", "America/Los_Angeles" }}
-  {% endif %}
+  {%- endif -%}
 {%- endcapture -%}
 <div class="main-wrapper">
   <main>{{ content }}</main>

@@ -1,13 +1,13 @@
-{% capture js %}
+{%- capture js -%}
   {% render "../../../assets/scripts/modal.js" %}
-{% endcapture %}
+{%- endcapture -%}
 <script>{{ js }}</script>
 {%- capture labelContent -%}
-  {% if icon %}
+  {%- if icon -%}
     {% tablericon icon label %}
-  {% elsif label %}
+  {%- elsif label -%}
     {{ label }}
-  {% endif %}
+  {%- endif -%}
 {%- endcapture -%}
 {% assign modalId = id | default: "modal-controls" %}
 <input class="modal-input" id="{{ id }}" type="checkbox" tabindex="0" />

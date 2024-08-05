@@ -1,7 +1,7 @@
 <div class="music-chart">
-  {% assign items = data.items | default: data %}
+  {%- assign items = data.items | default: data -%}
   <ol type="1">
-    {% for item in items limit: count | default: items.size %}
+    {%- for item in items limit: count | default: items.size -%}
       {%- assign playTotal = playTotal | default: mostPlayed -%}
       {%- assign percentage = item.plays | calculatePlayPercentage: playTotal -%}
       <li value="{{ item.rank }}">
@@ -11,13 +11,13 @@
               <div class="title">
                 <a href="{{ item.url }}">{{ item.title }}</a>
               </div>
-              {% capture playsLabel %}
-                {% if item.plays > 1 %}
+              {%- capture playsLabel -%}
+                {%- if item.plays > 1 -%}
                   plays
-                {% else %}
+                {%- else -%}
                   play
-                {% endif %}
-              {% endcapture %}
+                {%- endif -%}
+              {%- endcapture -%}
               <div class="subtext">{{ item.artist }}</div>
               <div class="subtext">{{ item.plays }} {{ playsLabel }}</div>
             </div>
@@ -25,9 +25,9 @@
           {% render "partials/media/progress-bar.liquid", percentage:percentage %}
         </div>
       </li>
-    {% endfor %}
+    {%- endfor -%}
   </ol>
 </div>
-{% unless count %}
+{%- unless count -%}
   {% render "partials/nav/paginator.liquid", pagination:data %}
-{% endunless %}
+{%- endunless -%}

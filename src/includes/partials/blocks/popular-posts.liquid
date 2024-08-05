@@ -1,15 +1,15 @@
-{% if popularPosts.size > 0 %}
+{%- if popularPosts.size > 0 -%}
 <h3 class="flex-centered">
   {% tablericon "flame" "Popular" %}
   Popular posts
 </h3>
 <ul class="link-list">
-  {% for post in popularPosts limit: 5 %}
+  {%- for post in popularPosts limit: 5 -%}
     <li>
       <a class="no-underline" href="{{ post.slug }}" title="{{ post.title | escape}}">
         {{ post.title }}
       </a>
     </li>
-  {% endfor %}
+  {%- endfor -%}
 </ul>
-{% endif %}
+{%- endif -%}

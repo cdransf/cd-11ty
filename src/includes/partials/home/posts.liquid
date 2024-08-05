@@ -6,7 +6,7 @@
       {{ title }}
     </h2>
   </div>
-  {% for post in posts %}
+  {%- for post in posts -%}
   <article class="h-entry">
     <div class="time-wrapper flex-centered">
       {% tablericon "calendar-month" "Date" %}
@@ -21,8 +21,8 @@
     <div class="p-summary hidden">{{ post.data.post_excerpt }}</div>
     {{ post.description | markdown | truncate: 300 }}
   </article>
-  {% endfor %}
-  {% if postType != 'featured' %}
+  {%- endfor -%}
+  {%- if postType != 'featured' -%}
     <a class="link-icon flex-centered" href="/posts">View all posts {% tablericon "arrow-right" "View all posts" %}</a>
-  {% endif %}
+  {%- endif -%}
 </div>

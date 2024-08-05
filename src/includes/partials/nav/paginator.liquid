@@ -1,22 +1,22 @@
 <script type="module" src="/assets/scripts/components/select-pagination.js"></script>
 <nav aria-label="Pagination" class="pagination flex-centered">
-  {% if pagination.href.previous %}
+  {%- if pagination.href.previous -%}
     <a href="{{ pagination.href.previous }}" aria-label="Previous page">
       {% tablericon "arrow-left" "Previous" %}
     </a>
-  {% else %}
+  {%- else -%}
     <span
       class="disabled"
       aria-label="Previous page (disabled)"
       disabled>
       {% tablericon "arrow-left" "Prevous" %}
     </span>
-  {% endif %}
+  {%- endif -%}
   <select-pagination>
     <select class="client-side" aria-label="Page selection">
-      {% for pageEntry in pagination.pages %}
+      {%- for pageEntry in pagination.pages -%}
       <option value="{{ forloop.index | minus: 1 }}">{{ forloop.index }} of {{ pagination.links.size }}</option>
-      {% endfor %}
+      {%- endfor -%}
     </select>
     <noscript>
       <div class="text-centered">
@@ -24,16 +24,16 @@
       </div>
     </noscript>
   </select-pagination>
-  {% if pagination.href.next %}
+  {%- if pagination.href.next -%}
     <a href="{{ pagination.href.next }}" aria-label="Next page">
       {% tablericon "arrow-right" "Next" %}
     </a>
-  {% else %}
+  {%- else -%}
     <span
       class="disabled"
       aria-label="Next page (disabled)"
       disabled>
       {% tablericon "arrow-right" "Next" %}
     </span>
-  {% endif %}
+  {%- endif -%}
 </nav>
