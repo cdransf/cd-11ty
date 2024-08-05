@@ -90,17 +90,27 @@
 
   & .book-display {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     gap: var(--sizing-base);
     margin-bottom: var(--sizing-base);
+
+    & .book-meta {
+      width: 100%;
+      align-items: center;
+
+      & p {
+        margin: 0;
+      }
+
+      & .progress-bar-wrapper {
+        max-width: 50%;
+      }
+    }
   }
 
   p {
     margin: var(--sizing-base) 0;
-  }
-
-  & .book-meta p {
-    margin: 0;
   }
 }
 
@@ -115,7 +125,21 @@
 
       & .progress-bar-wrapper {
         margin-top: 0;
-        max-width: 40%;
+        max-width: 50%;
+      }
+    }
+  }
+
+  .book-focus .book-display {
+    flex-direction: row;
+    align-items: start;
+
+    & .book-meta {
+      width: auto;
+      align-items: start;
+
+      & .progress-bar-wrapper {
+        max-width: none;
       }
     }
   }
