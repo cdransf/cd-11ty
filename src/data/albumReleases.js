@@ -12,14 +12,11 @@ const fetchAlbumReleases = async () => {
     .from('optimized_album_releases')
     .select(`
       name,
-      key,
       release_date,
       release_link,
       total_plays,
       art,
-      artist_name,
-      artist_mbid,
-      artist_country
+      artist_name
     `)
     .gt('release_date', today)
 
@@ -36,9 +33,6 @@ const fetchAlbumReleases = async () => {
       date: DateTime.fromISO(album['release_date']).toLocaleString(DateTime.DATE_FULL),
       url: album['release_link'],
       image: album['art'] ? `/${album['art']}` : '',
-      artist_url: `/music/artists/${sanitizeMediaString(album['artist_name'])}-${sanitizeMediaString(parseCountryField(album['artist_country']))}`,
-      mbid: album['artist_mbid'],
-      timestamp: DateTime.fromISO(album['release_date']).toSeconds(),
       type: 'album-release'
     }))
     .sort((a, b) => a['timestamp'] - b['timestamp'])
