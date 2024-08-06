@@ -32,14 +32,14 @@ schema: movie
     height="720"
   />
   <div class="watching-meta">
-    <p class="title"><strong>{{ movie.title }}</strong></p>
+    <p class="title"><strong>{{ movie.title }}</strong>{%- if movie.year and not movie.rating %} ({{ movie.year }}){%- endif -%}</p>
     <p>
       {%- if movie.rating -%}
         {{ movie.rating }}
+        {%- if movie.year %}
+          ({{ movie.year }})
+        {%- endif -%}
       {% endif -%}
-      {%- if movie.year %}
-        ({{ movie.year }})
-      {%- endif -%}
     </p>
     {% if movie.lastWatched %}<p class="sub-meta">Last watched on {{ movie.lastWatched | date: "%B %e, %Y" }}</p>{% endif %}
     <p class="sub-meta"><a href="https://themoviedb.org/movie/{{ movie.id }}" title="View {{ movie.title | escape }} on TMDB">View on TMDB</a></p>
