@@ -9,10 +9,10 @@
           {%- if item.type == 'movie' -%}
             <div class="header">{{ item.title }}</div>
             <div class="subheader flex-centered">
-              {{ item.year }}
               {%- if item.rating -%}
-                <span class="rating"> ({{ item.rating }})</span>
+                <span class="rating"> {{ item.rating }}</span>
               {%- endif -%}
+              ({{ item.year }})
             </div>
           {%- else -%}
             <div class="header">{{ item.name }}</div>

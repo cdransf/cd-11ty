@@ -1,7 +1,7 @@
 {%- assign hidePagination = count or data.pages.size <= 1 -%}
-{%- assign media = data.items | default: data | normalizeMedia -%}
+{%- assign media = data.items | default: data | normalizeMedia: count -%}
 <div class="media-grid {% if shape == 'square' -%}square{%- else -%}vertical{%- endif -%}">
-  {%- for item in media limit: count | default: media.size -%}
+  {%- for item in media | default: media.size -%}
     {%- capture alt -%}{{ item.title | escape }} ({{ item.year }}){% endcapture %}
     {%- assign alt = item.alt | strip | escape -%}
     <a href="{{ item.url }}" title="{{ alt }}">

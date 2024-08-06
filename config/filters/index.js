@@ -149,8 +149,9 @@ export default {
   },
 
   // media
-  normalizeMedia: (media) =>
-    media.map((item) => {
+  normalizeMedia: (media, limit) => {
+    const mediaData = limit ? media.slice(0, limit) : media
+    return mediaData.map((item) => {
       let normalized = {
         image: item['image'],
         url: item['url'],
@@ -176,7 +177,7 @@ export default {
         normalized['alt'] = item['title']
         normalized['rating'] = item['rating']
         normalized['favorite'] = item['favorite']
-        normalized['subtext'] = item['rating']
+        normalized['subtext'] = `${item['rating']} (${item['year']})`
       }
       if (item.type === 'book') {
         normalized['title'] = `${item['title']} by ${item['author']}`
@@ -194,7 +195,8 @@ export default {
         normalized['subtext'] = item['subtext']
       }
       return normalized
-    }),
+    })
+  },
   calculatePlayPercentage: (plays, mostPlayed) => `${plays/mostPlayed * 100}%`,
   listToString: (items, key, count = 10) => {
     const itemData = items.slice(0, count)
