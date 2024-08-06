@@ -77,7 +77,7 @@ const sortBooksByYear = (books) => {
       years[year]['data'].push(book)
     }
   })
-  return Object.values(years).filter(year => year.value > 2019)
+  return Object.values(years).filter(year => year.value > 2017)
 }
 
 export default async function () {

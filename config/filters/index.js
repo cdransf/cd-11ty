@@ -235,7 +235,7 @@ export default {
     const dataSlice = data.slice(0, count)
     let last;
 
-    if (dataSlice.length === 0) return ''
+    if (dataSlice.length === 0) return null
     if (dataSlice.length === 1) return type === 'genre' ? dataSlice[0] : dataSlice[0]['artist_name']
 
     const allButLast = dataSlice.slice(0, -1).map(item => {

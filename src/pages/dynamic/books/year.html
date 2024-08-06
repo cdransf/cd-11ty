@@ -16,9 +16,9 @@ schema: books-year
 <a class="back-link-header link-icon" href="/books" title="Go back to the books index page">{% tablericon "arrow-left" "Go back to the books index page" %} Back to books</a>
 <h2 class="page-header">{{ year.value }} / Books</h2>
 {% if yearString == currentYearString %}
-<p>I've finished <strong class="highlight-text">{{ bookData.size }} books</strong> this year. Among my favorites are {{ favoriteBooks }}.</p>
+<p>I've finished <strong class="highlight-text">{{ bookData.size }} books</strong> this year.{%- if favoriteBooks %} Among my favorites are {{ favoriteBooks }}.{%- endif -%}</p>
 {% else %}
-<p>I finished <strong class="highlight-text">{{ bookData.size }} books</strong> in <strong class="highlight-text">{{ year.value }}</strong>. Among my favorites were {{ favoriteBooks }}.</p>
+<p>I finished <strong class="highlight-text">{{ bookData.size }} books</strong> in <strong class="highlight-text">{{ year.value }}</strong>.{%- if favoriteBooks %}  Among my favorites were {{ favoriteBooks }}.{%- endif -%}</p>
 {% endif %}
 <hr />
 {% render "partials/media/grid.liquid", data:bookData, shape: "vertical", count: 200, loading: "eager" %}
