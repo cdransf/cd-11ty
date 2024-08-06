@@ -27,6 +27,12 @@
 /blogroll.opml
   Content-Disposition: attachment; filename=cory-dransfeldt-blogroll.opml
 
+/music/releases.ics
+  Content-Type: text/calendar
+  Cache-Control: public, max-age=0, must-revalidate
+  Access-Control-Allow-Origin: *
+  Content-Disposition: inline; filename="releases.ics"
+
 /*
   Content-Security-Policy: upgrade-insecure-requests; block-all-mixed-content;
   X-Frame-Options: DENY
