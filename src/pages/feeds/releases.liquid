@@ -3,16 +3,4 @@ layout: null
 eleventyExcludeFromCollections: true
 permalink: "/music/releases.ics"
 ---
-BEGIN:VCALENDAR
-VERSION:2.0
-CALSCALE:GREGORIAN
-PRODID:-//coryd.dev//Album Releases//EN
-{%- for album in albumReleases %}
-BEGIN:VEVENT
-SUMMARY:Release: {{ album.artist }} / {{ album.title }}
-DTSTART;VALUE=DATE:{{ album.date }}
-DESCRIPTION:Check out this new album release: {{ album.url }}
-URL;VALUE=URI:{{ album.url }}
-END:VEVENT
-{%- endfor -%}
-END:VCALENDAR
+{{ collections.albumReleasesCalendar }}

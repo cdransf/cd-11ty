@@ -1,4 +1,5 @@
 import { DateTime } from 'luxon'
+import ics from 'ics'
 
 const BASE_URL = 'https://coryd.dev'
 
@@ -160,4 +161,40 @@ export const processContent = (collection) => {
       return dateB - dateA
     })
   }
+}
+
+export const albumReleasesCalendar = (collection) => {
+  const collectionData = collection.getAll()[0]
+  const { data } = collectionData
+  const { albumReleases } = data
+  if (!albumReleases || albumReleases.length === 0) return ''
+  const events = albumReleases.map(album => {
+    const date = DateTime.fromFormat(album.date, 'MMMM d, yyyy')
+    if (!date.isValid) return null
+
+    return {
+      start: [
+        date.year,
+        date.month,
+        date.day,
+        0, 0
+      ],
+      title: `Release: ${album.artist} / ${album.title}`,
+      description: `Check out this new album release: ${album.url}`,
+      url: album.url,
+      uid: `${date.toFormat('yyyyMMdd')}-${album.artist}-${album.title}@coryd.dev`,
+      timestamp: DateTime.now().toUTC().toFormat('yyyyMMdd\'T\'HHmmss\'Z\'')  // Correctly format DTSTAMP
+    }
+  }).filter(event => event !== null)
+
+  const { error, value } = ics.createEvents(events)
+  if (error) {
+    console.error('Error creating ICS events:', error)
+    events.forEach((event, index) => {
+      console.error(`Event ${index}:`, event)
+    })
+    return ''
+  }
+
+  return value
 }

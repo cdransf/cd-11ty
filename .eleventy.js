@@ -6,7 +6,7 @@ import markdownItAnchor from 'markdown-it-anchor'
 import markdownItFootnote from 'markdown-it-footnote'
 import filters from './config/filters/index.js'
 import { copyErrorPages } from './config/events/index.js'
-import { popularPosts, processContent } from './config/collections/index.js'
+import { popularPosts, processContent, albumReleasesCalendar } from './config/collections/index.js'
 import { DateTime } from 'luxon'
 
 // load .env
@@ -65,6 +65,7 @@ export default async function (eleventyConfig) {
     const { siteMap } = processContent(collection)
     return siteMap
   })
+  eleventyConfig.addCollection('albumReleasesCalendar', albumReleasesCalendar)
 
   const md = markdownIt({ html: true, linkify: true })
   md.use(markdownItAnchor, {
