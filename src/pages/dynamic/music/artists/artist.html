@@ -82,8 +82,8 @@ schema: artist
         <li>
           On <strong class="highlight-text">{{ concert.date | date: "%B %e, %Y" }}</strong>
           {% if venue %} at {{ venue }}{% endif %}
-          {%- if concert.concert_notes -%}
-            {% assign notes = concert.concert_notes | prepend: "### Notes\n" | markdown %}
+          {%- if concert.notes -%}
+            {% assign notes = concert.notes | prepend: "### Notes\n" | markdown %}
             {% render "partials/blocks/modal.liquid", label:"Concert info", icon:"info-circle", content:notes, id:concert.id %}
           {%- endif -%}
         </li>
