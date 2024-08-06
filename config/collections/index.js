@@ -171,31 +171,27 @@ export const albumReleasesCalendar = (collection) => {
   const events = albumReleases.map(album => {
     const date = DateTime.fromFormat(album.date, 'MMMM d, yyyy')
     if (!date.isValid) return null
+
     return {
-      start: [
-        date.year,
-        date.month,
-        date.day
-      ],
+      start: [date.year, date.month, date.day],
       startInputType: 'local',
       startOutputType: 'local',
-      duration: { days: 1 },
-      title: `Release: ${album.artist} / ${album.title}`,
+      title: `Release: ${album.artist} - ${album.title}`,
       description: `Check out this new album release: ${album.url}`,
       url: album.url,
       uid: `${date.toFormat('yyyyMMdd')}-${album.artist}-${album.title}@coryd.dev`,
-      timestamp: DateTime.now().toUTC().toFormat('yyyyMMdd\'T\'HHmmss\'Z\'')  // Correctly format DTSTAMP
-    }
+      timestamp: DateTime.now().toUTC().toFormat("yyyyMMdd'T'HHmmss'Z'")
+    };
   }).filter(event => event !== null)
 
   const { error, value } = ics.createEvents(events)
   if (error) {
-    console.error('Error creating events:', error)
+    console.error('Error creating events: ', error)
     events.forEach((event, index) => {
       console.error(`Event ${index}:`, event)
     })
     return ''
   }
 
-  return value;
+  return value
 }
