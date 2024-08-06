@@ -101,7 +101,6 @@ export default async function () {
   }
 
   const selectFields = `
-    id,
     listened_at,
     track_name,
     artist_name,

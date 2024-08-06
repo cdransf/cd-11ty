@@ -7,13 +7,13 @@ pagination:
   size: 30
 permalink: "/music/concerts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html"
 ---
-{% if pagination.pageNumber == 0 %}
+{%- if pagination.pageNumber == 0 -%}
 <h2 class="page-header">Concerts</h2>
 <p>These are concerts I've attended (not all of them — just the ones I could remember or glean from emails, photo metadata et al). I've been to at least <strong class="highlight-text">{{ concerts | size }}</strong> shows. <a href="/music">You can also take a look at the music I've been listening to lately</a>.</p>
 <hr />
-{% endif %}
+{%- endif -%}
 <ul class="concert-list">
-  {% for concert in pagination.items %}
+  {%- for concert in pagination.items -%}
     {%- capture artistName -%}
       {% if concert.artistNameString %}
         {{ concert.artistNameString }}
@@ -33,11 +33,11 @@ permalink: "/music/concerts/{% if pagination.pageNumber > 0 %}{{ pagination.page
     <li>
       {{ artistName }} on <strong class="highlight-text">{{ concert.date | date: "%B %e, %Y" }}</strong>
       {% if venue %} at {{ venue }}{% endif %}
-      {% if concert.notes %}
+      {%- if concert.notes -%}
         {% assign notes = concert.notes | prepend: "### Notes\n" | markdown %}
         {% render "partials/blocks/modal.liquid", label:"Concert info", icon:"info-circle", content:notes, id:concert.id %}
-      {% endif %}
+      {%- endif -%}
     </li>
-  {% endfor %}
+  {%- endfor -%}
 </ul>
 {% render "partials/nav/paginator.liquid", pagination:pagination %}

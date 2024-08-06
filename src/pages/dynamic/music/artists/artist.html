@@ -70,7 +70,23 @@ schema: artist
     </p>
     <ul>
       {% for concert in artist.concerts %}
-        <li>On <strong class="highlight-text">{{ concert.date | date: "%B %e, %Y" }}</strong> at <a href="https://www.openstreetmap.org/?mlat={{ concert.venue_latitude }}&mlon={{ concert.venue_longitude }}#map=18/{{ concert.venue_latitude }}/{{ concert.venue_longitude }}">{{ concert.venue | formatVenue }}</a></li>
+        {%- capture venue -%}
+          {% if concert.venue %}
+            {% if concert.venue_latitude and concert.venue_longitude %}
+              <a href="https://www.openstreetmap.org/?mlat={{ concert.venue_latitude }}&mlon={{ concert.venue_longitude }}#map=18/{{ concert.venue_latitude }}/{{ concert.venue_longitude }}">{{ concert.venue | formatVenue }}</a>
+            {% else %}
+              {{ concert.venue | formatVenue }}
+            {% endif %}
+          {% endif %}
+        {%- endcapture -%}
+        <li>
+          On <strong class="highlight-text">{{ concert.date | date: "%B %e, %Y" }}</strong>
+          {% if venue %} at {{ venue }}{% endif %}
+          {%- if concert.concert_notes -%}
+            {% assign notes = concert.concert_notes | prepend: "### Notes\n" | markdown %}
+            {% render "partials/blocks/modal.liquid", label:"Concert info", icon:"info-circle", content:notes, id:concert.id %}
+          {%- endif -%}
+        </li>
       {% endfor %}
     </ul>
     <hr />
