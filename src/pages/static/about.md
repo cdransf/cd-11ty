@@ -33,7 +33,7 @@ permalink: /about.html
 
 <strong class="highlight-text">I'm a software developer based in Camarillo, California</strong>. I enjoy hanging out with my beautiful family and 3 rescue dogs, technology, automation, [music](https://coryd.dev/music), [writing](https://coryd.dev/posts), [reading](https://coryd.dev/books), [tv](https://coryd.dev/watching#tv) and [movies](https://coryd.dev/watching#movies). Lately I've been listening to a lot of <strong class="highlight-text">{{ artist.title }}</strong>, reading <strong class="highlight-text">{{ book.title }}</strong> and watching <strong class="highlight-text">{{ show.name }}</strong>.
 
-I build, maintain and design web applications. I've been coding professionally since 2010 with a focus on frontend technologies. I help organize [the Eleventy Meetup](https://11tymeetup.dev) and mentor through [Underdog Devs](https://www.underdogdevs.org).
+I build, maintain and design web applications. I've been coding professionally since 2010 with a focus on frontend technologies. I also mentor through [Underdog Devs](https://www.underdogdevs.org).
 
 I tend to write about whatever strikes me, with a focus on development, technology, automation or issues I run into with these things. This is all typically light on editing with and heavy on spur of the moment thoughts.
 
