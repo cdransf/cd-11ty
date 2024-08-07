@@ -129,11 +129,10 @@ export const processContent = (collection) => {
       })
     }
   }
-
   addItemToIndex(posts, '📝', (item) => new URL(item['slug'], BASE_URL).toString(), (item) => item['title'], (item) => item['tags'])
   addItemToIndex(links, '🔗', (item) => item['link'], (item) => item['title'], (item) => item['tags'])
-  addItemToIndex(artists, '🎙️', (item) => item['url'], (item) => `${item['name']} (${item['country']}) - ${item['genre']}`, () => [])
-  addItemToIndex(genres, '🎵', (item) => item['url'], (item) => item['name'], () => [])
+  addItemToIndex(artists, '🎙️', (item) => item['url'], (item) => `${item['name']} (${item['country']}) - ${item['genre']}`, (item) => `['${item['genre']}']`)
+  addItemToIndex(genres, '🎵', (item) => item['url'], (item) => item['name'], (item) => item.artists.map(artist => artist['name_string']))
   if (movieData) addItemToIndex(movieData, '🎥', (item) => item['url'], (item) => `${item['title']} (${item['rating']})`, (item) => item['tags'])
   if (bookData) addItemToIndex(bookData, '📖', (item) => item['url'], (item) => `${item['title']} (${item['rating']})`, (item) => item['tags'])
 
