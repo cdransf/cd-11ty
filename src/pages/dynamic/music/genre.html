@@ -16,6 +16,7 @@ schema: genre
     is
   {% endif %}
 {%- endcapture -%}
+{%- assign mediaLinks = genre.artists | sortByPlaysDescending: "total_plays" | mediaLinks: "artist", 5 -%}
 {%- capture js -%}
   {% render "../../../assets/scripts/text-toggle.js" %}
 {%- endcapture -%}
@@ -24,8 +25,8 @@ schema: genre
 <a class="back-link-header link-icon" href="/music" title="Go back to the music index page">{% tablericon "arrow-left" "Go back to the music index page" %} Back to music</a>
 <h2 class="page-header">{{ genre.name }}</h2>
 <article class="genre-focus">
-  {%- if genre.total_plays > 0 -%}
-  <p>My top <strong class="highlight-text">{{ genre.name }}</strong> artists {{ connectingWord }} {{ genre.artists | sortByPlaysDescending: "total_plays" | mediaLinks: "artist", 5 }}. I've listened to <strong class="highlight-text">{{ genre.total_plays | formatNumber }}</strong> tracks form this genre.</p>
+  {%- if mediaLinks -%}
+  <p>My top <strong class="highlight-text">{{ genre.name }}</strong> artists {{ connectingWord }} {{ mediaLinks }}. I've listened to <strong class="highlight-text">{{ genre.total_plays | formatNumber }}</strong> tracks form this genre.</p>
   <hr />
   {% endif %}
   {%- if genre.description -%}
