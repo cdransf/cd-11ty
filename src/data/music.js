@@ -1,28 +1,28 @@
 import { createClient } from '@supabase/supabase-js'
-import { DateTime } from 'luxon'
 import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
-const PAGE_SIZE = 10000
+const PAGE_SIZE = 1000
 
-const fetchDataForPeriod = async (startPeriod, fields, table) => {
+const fetchDataFromView = async (viewName, fields) => {
   let rows = []
   let rangeStart = 0
 
   while (true) {
     const { data, error } = await supabase
-      .from(table)
+      .from(viewName)
       .select(fields)
       .order('listened_at', { ascending: false })
-      .gte('listened_at', startPeriod.toSeconds())
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
 
     if (error) {
-      console.error(`Error fetching data from ${table}:`, error)
+      console.error(`Error fetching data from view ${viewName}:`, error)
       break
     }
+
+    if (data.length === 0) break
 
     rows = rows.concat(data)
 
@@ -50,7 +50,6 @@ const fetchGenreMapping = async () => {
 
 const aggregateData = (data, groupByField, groupByType, genreMapping) => {
   const aggregation = {}
-
   data.forEach(item => {
     const key = item[groupByField]
     if (!aggregation[key]) {
@@ -94,12 +93,6 @@ const aggregateGenres = (data, genreMapping) => {
 }
 
 export default async function () {
-  const periods = {
-    week: DateTime.now().minus({ days: 7 }).startOf('day'),
-    month: DateTime.now().minus({ days: 30 }).startOf('day'),
-    threeMonth: DateTime.now().minus({ months: 3 }).startOf('day')
-  }
-
   const selectFields = `
     listened_at,
     track_name,
@@ -117,24 +110,36 @@ export default async function () {
   try {
     const genreMapping = await fetchGenreMapping()
 
-    const results = await Promise.all(Object.entries(periods).map(async ([period, startPeriod]) => {
-      const periodData = await fetchDataForPeriod(startPeriod, selectFields, 'optimized_listens')
-      return {
-        [period]: {
-          artists: aggregateData(periodData, 'artist_name', 'artist_art', genreMapping),
-          albums: aggregateData(periodData, 'album_name', 'album_art', genreMapping),
-          tracks: aggregateData(periodData, 'track_name', 'track', genreMapping),
-          genres: aggregateGenres(periodData, genreMapping),
-          totalTracks: periodData.length.toLocaleString('en-US')
-        }
+    const [recentTracks, monthTracks, threeMonthTracks] = await Promise.all([
+      fetchDataFromView('recent_tracks', selectFields),
+      fetchDataFromView('month_tracks', selectFields),
+      fetchDataFromView('three_month_tracks', selectFields)
+    ])
+
+    return {
+      recent: buildRecents(recentTracks),
+      week: {
+        artists: aggregateData(recentTracks, 'artist_name', 'artist_art', genreMapping),
+        albums: aggregateData(recentTracks, 'album_name', 'album_art', genreMapping),
+        tracks: aggregateData(recentTracks, 'track_name', 'track', genreMapping),
+        genres: aggregateGenres(recentTracks, genreMapping),
+        totalTracks: recentTracks.length.toLocaleString('en-US')
+      },
+      month: {
+        artists: aggregateData(monthTracks, 'artist_name', 'artist_art', genreMapping),
+        albums: aggregateData(monthTracks, 'album_name', 'album_art', genreMapping),
+        tracks: aggregateData(monthTracks, 'track_name', 'track', genreMapping),
+        genres: aggregateGenres(monthTracks, genreMapping),
+        totalTracks: monthTracks.length.toLocaleString('en-US')
+      },
+      threeMonth: {
+        artists: aggregateData(threeMonthTracks, 'artist_name', 'artist_art', genreMapping),
+        albums: aggregateData(threeMonthTracks, 'album_name', 'album_art', genreMapping),
+        tracks: aggregateData(threeMonthTracks, 'track_name', 'track', genreMapping),
+        genres: aggregateGenres(threeMonthTracks, genreMapping),
+        totalTracks: threeMonthTracks.length.toLocaleString('en-US')
       }
-    }))
-
-    const recentData = await fetchDataForPeriod(DateTime.now().minus({ days: 7 }), selectFields, 'optimized_listens')
-
-    results.push({ recent: buildRecents(recentData) })
-
-    return Object.assign({}, ...results)
+    }
   } catch (error) {
     console.error('Error in fetching and processing music data:', error)
     return {}
