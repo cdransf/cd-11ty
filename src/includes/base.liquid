@@ -72,7 +72,7 @@
   {%- when 'movie' -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: movie.backdrop -%}
   {%- when 'show' -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev/shows/backdrops/backdrop-' | append: show.backdrop -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: show.backdrop -%}
   {%- when 'genre' -%}
     {%- assign genreArtist = genre.artists | shuffleArray | first -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: genreArtist.image -%}
