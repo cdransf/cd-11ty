@@ -62,7 +62,7 @@ const processConcerts = (concerts) => {
       mbid: concert['artist_mbid'],
       country: parseCountryField(concert['artist_country'])
     } : null,
-    url: `/concerts/${concert['id']}`,
+    url: `/music/concerts?id=${concert['id']}`,
     artistUrl: concert['artist'] ? `/music/artists/${sanitizeMediaString(concert['artist_name'])}-${sanitizeMediaString(parseCountryField(concert['artist_country']))}` : null
   })).sort((a, b) => new Date(b['date']) - new Date(a['date']))
 }
