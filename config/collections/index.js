@@ -123,6 +123,7 @@ export const processContent = (collection) => {
       })
     }
   }
+
   addItemToIndex(posts, '📝', (item) => new URL(item['slug'], BASE_URL).toString(), (item) => item['title'], (item) => item['tags'])
   addItemToIndex(links, '🔗', (item) => item['link'], (item) => item['title'], (item) => item['tags'])
   addItemToIndex(artists, '🎙️', (item) => item['url'], (item) => `${item['name']} (${item['country']}) - ${item['genre']}`, (item) => `['${item['genre']}']`)
