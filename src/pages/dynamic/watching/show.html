@@ -34,7 +34,16 @@ schema: show
   />
   <div class="watching-meta">
     <p class="title"><strong>{{ show.title }}</strong>{%- if show.year %} ({{ show.year }}){%- endif -%}</p>
-    {%- if lastWatched -%}<p class="sub-meta">Last watched on {{ lastWatched | date: "%B %e, %Y" }}</p>{%- endif -%}
+    {%- if lastWatched -%}
+      {%- capture lastWatchedText -%}
+        {%- if show.episodes -%}
+          I last watched <strong class="highlight-text">{{ show.episodes | lastEpisode }}</strong> on {{ lastWatched | date: "%B %e, %Y" }}.
+        {%- else -%}
+          Last watched on {{ lastWatched | date: "%B %e, %Y" }}.
+        {%- endif -%}
+      {%- endcapture -%}
+      <p class="sub-meta">{{ lastWatchedText }}</p>
+    {%- endif -%}
     <p class="sub-meta"><a href="https://themoviedb.org/tv/{{ show.tmdb_id }}" title="View {{ show.title | escape }} on TMDB">View on TMDB</a></p>
   </div>
   {% if show.review %}

@@ -258,5 +258,6 @@ export default {
 
     return `${allButLast} and ${last}`
   },
-  formatVenue: (venue) => venue.split(',')[0].trim()
+  formatVenue: (venue) => venue.split(',')[0].trim(),
+  lastEpisode: (episodes) => `S${episodes[episodes.length - 1]['season_number']}E${episodes[episodes.length - 1]['episode_number']}`
 }
