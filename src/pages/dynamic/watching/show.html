@@ -37,7 +37,7 @@ schema: show
     {%- if lastWatched -%}
       {%- capture lastWatchedText -%}
         {%- if show.episodes -%}
-          I last watched <strong class="highlight-text">{{ show.episodes | lastEpisode }}</strong> on {{ lastWatched | date: "%B %e, %Y" }}.
+          I last watched <strong class="highlight-text">{{ show.episodes | lastWatchedEpisode }}</strong> on {{ lastWatched | date: "%B %e, %Y" }}.
         {%- else -%}
           Last watched on {{ lastWatched | date: "%B %e, %Y" }}.
         {%- endif -%}
