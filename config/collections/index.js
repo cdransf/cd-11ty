@@ -3,40 +3,23 @@ import ics from 'ics'
 
 const BASE_URL = 'https://coryd.dev'
 
-const tagsToHashtags = (tags) => {
-  const hashtags = tags.map(tag => {
-    const words = tag.split(' ')
-    const hashtag = words.map(word => {
-      const normalizedWord = word.toLowerCase()
-      const wordMap = {
-        'ai': 'AI',
-        'css': 'CSS',
-        'ios': 'iOS',
-        'javascript': 'JavaScript',
-        'macos': 'macOS',
-        'tv': 'TV'
-      }
-      if (wordMap[normalizedWord]) return wordMap[normalizedWord]
-      return word.charAt(0).toUpperCase() + word.slice(1)
-    }).join('')
-    return '#' + hashtag
-  })
-  return hashtags.join(' ')
+const normalizeWord = (word) => {
+  const wordMap = {
+    'ai': 'AI',
+    'css': 'CSS',
+    'ios': 'iOS',
+    'javascript': 'JavaScript',
+    'macos': 'macOS',
+    'tv': 'TV'
+  }
+  return wordMap[word.toLowerCase()] || word.charAt(0).toUpperCase() + word.slice(1)
 }
 
-export const popularPosts = (collection) => {
-  const collectionData = collection.getAll()[0]
-  const { data } = collectionData
-  const { posts, analytics } = data
-
-  return posts
-    .filter((post) => {
-      if (analytics.find((p) => p.page.includes(post.slug))) return true
-    })
-    .sort((a, b) => {
-      const visitors = (page) => analytics.filter((p) => p.page.includes(page.slug)).pop()?.visitors
-      return visitors(b) - visitors(a)
-    })
+const tagsToHashtags = (item) => {
+  const tags = item?.tags || []
+  if (tags.length) return tags.map(tag => '#' + tag.split(' ').map(normalizeWord).join('')).join(' ')
+  const artistName = item?.artistName || item?.artist?.name
+  return artistName ? `#${artistName.charAt(0).toUpperCase() + artistName.slice(1).toLowerCase()} #Music #Concert ` : ''
 }
 
 export const processContent = (collection) => {
@@ -103,6 +86,7 @@ export const processContent = (collection) => {
     if (items) {
       items.forEach((item) => {
         let attribution
+        let hashTags = tagsToHashtags(item) ? ' ' + tagsToHashtags(item) : ''
 
         // link attribution if properties exist
         if (item?.['authors']?.['mastodon']) {
@@ -114,7 +98,7 @@ export const processContent = (collection) => {
 
         const content = {
           url: `${BASE_URL}${item['url']}`,
-          title: `${icon}: ${getTitle(item)}${attribution ? ' via ' + attribution : ''}${item?.['tags']?.length > 0 ? ' ' + tagsToHashtags(item['tags']) : ''}`
+          title: `${icon}: ${getTitle(item)}${attribution ? ' via ' + attribution : ''}${hashTags}`
         }
 
         // set url for link posts
@@ -123,7 +107,7 @@ export const processContent = (collection) => {
         // set url for posts - identified as slugs here
         if (item?.['slug']) content['url'] = new URL(item['slug'], BASE_URL).toString()
 
-          // link to artist concerts section if available - artistUrl is only present on concert objects here
+        // link to artist concerts section if available - artistUrl is only present on concert objects here
         if (item?.['artistUrl']) content['url'] = `${item['artistUrl']}#concerts`
         if (item?.['description']) {
           content['description'] = `${item['description'].split(' ').slice(0, 25).join(' ')}...<br/><br/>`
@@ -206,4 +190,17 @@ export const albumReleasesCalendar = (collection) => {
   }
 
   return value
+}
+
+export const popularPosts = (collection) => {
+  const collectionData = collection.getAll()[0]
+  const { data } = collectionData
+  const { posts, analytics } = data
+
+  return posts
+    .filter((post) => analytics.find((p) => p.page.includes(post.slug)))
+    .sort((a, b) => {
+      const visitors = (page) => analytics.filter((p) => p.page.includes(page.slug)).pop()?.visitors
+      return visitors(b) - visitors(a)
+    })
 }
