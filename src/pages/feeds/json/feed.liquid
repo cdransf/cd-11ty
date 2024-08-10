@@ -1,0 +1,13 @@
+---
+layout: null
+eleventyExcludeFromCollections: true
+permalink: "/feeds/posts.json"
+---
+{% render "partials/feeds/json.liquid"
+  permalink:"/feeds/posts"
+  title:"Cory Dransfeldt"
+  description:"Posts from my site."
+  data:posts
+  updated:posts[0].date
+  site:site
+%}

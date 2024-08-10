@@ -1,0 +1,13 @@
+---
+layout: null
+eleventyExcludeFromCollections: true
+permalink: "/feeds/all.json"
+---
+{% render "partials/feeds/json.liquid"
+  permalink:"/feeds/all"
+  title:"Cory Dransfeldt: all activity"
+  description:"All of the posts and activity from my site."
+  data:collections.allContent
+  updated:collections.allContent[0].date
+  site:site
+%}

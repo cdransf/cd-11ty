@@ -1,0 +1,21 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "{{ title }}",
+  "home_page_url": "{{ permalink | absoluteUrl: globals.url }}",
+  "feed_url": "{{ permalink | absoluteUrl: globals.url }}.json",
+  "description": "{{ description }}",
+  "icon": "https://cdn.coryd.dev/{{ globals.feed_image }}?class=w200&v={% appVersion %}",
+  "favicon": "https://cdn.coryd.dev/{{ globals.favicon_ico }}?class=w50&v={% appVersion %}",
+  "items": [
+    {%- assign entries = data | normalizeEntries: 20 -%}
+    {%- for entry in entries -%}
+    {
+      "id": "{{ entry.url | encodeAmp }}",
+      "url": "{{ entry.url | encodeAmp }}",
+      "title": "{{ entry.title | escape }}{%- if entry.authors %} via {{ entry.authors.name }}{%- endif %}{%- if entry.rating %} ({{ entry.rating }}){%- endif %}",
+      "content_text": "{{ entry.excerpt | escape }}",
+      "date_published": "{{ entry.date | stringToRFC822Date }}"
+    }{%- if forloop.last == false %},{%- endif -%}
+    {%- endfor %}
+  ]
+}

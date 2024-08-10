@@ -1,0 +1,14 @@
+---
+layout: null
+eleventyExcludeFromCollections: true
+permalink: "/feeds/books.json"
+---
+{%- assign bookData = books.all | bookStatus: 'finished' | bookSortDescending -%}
+{% render "partials/feeds/json.liquid"
+  permalink:"/feeds/books"
+  title:"Cory Dransfeldt: books"
+  description:"Books I'm currently reading."
+  data:bookData
+  updated:bookData[0].date
+  site:site
+%}
