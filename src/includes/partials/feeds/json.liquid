@@ -6,13 +6,11 @@
     "description": "{{ globals.site_description | escape }}",
     "icon": "https://cdn.coryd.dev/{{ globals.feed_image | escape }}?class=w200&v={% appVersion %}",
     "favicon": "https://cdn.coryd.dev/{{ globals.favicon_ico | escape }}?class=w50&v={% appVersion %}",
-    "authors": [
-        {
-            "name": "{{ globals.site_name }}",
-            "url": "{{ globals.url | escape }}",
-            "avatar": "https://cdn.coryd.dev/{{ globals.avatar | escape }}?class=w200&v={% appVersion %}"
-        }
-    ],
+    "authors": [{
+      "name": "{{ globals.site_name }}",
+      "url": "{{ globals.url | escape }}",
+      "avatar": "https://cdn.coryd.dev/{{ globals.avatar | escape }}?class=w200&v={% appVersion %}"
+    }],
     "items": [
         {%- assign entries = data | normalizeEntries: 20 -%}
         {%- for entry in entries -%}
@@ -25,16 +23,14 @@
             "summary": "{{ summary }}",
             {%- if entry.author -%}
             "external_url": "{{ entry.url | encodeAmp | escape }}",
-            "authors": [
-                {
-                  "name": "{{ entry.author.name | escape }}",
-                  "url": "{{ entry.author.url | escape }}",
-                  "mastodon": "{{ entry.author.mastodon | escape }}",
-                  "rss": "{{ entry.author.feed | escape }}"
-                }
-            ],
+            "authors": [{
+              "name": "{{ entry.author.name | escape }}",
+              "url": "{{ entry.author.url | escape }}",
+              "mastodon": "{{ entry.author.mastodon | escape }}",
+              "rss": "{{ entry.author.feed | escape }}"
+            }],
             {%- endif %}
-            "date_published": "{{ entry.date | stringToRFC822Date }}"{%- if entry.tags -%},
+            "date_published": "{{ entry.date | date: '%Y-%m-%dT%H:%M:%S%:z' }}"{%- if entry.tags -%},
             "tags": [
               {%- for tag in entry.tags -%}
               "{{ tag | escape }}"{%- unless forloop.last -%}, {% endunless -%}
