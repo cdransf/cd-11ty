@@ -233,6 +233,20 @@
             margin-bottom: 0;
           }
 
+          strong,
+          blockquote {
+            font-weight: var(--font-weight-bold);
+          }
+
+          blockquote {
+            font-size: var(--font-size-lg);
+            word-break: break-word;
+            color: var(--gray-dark);
+            padding-left: var(--sizing-lg);
+            border-left: var(--sizing-xs) solid var(--gray-dark);
+            margin: var(--sizing-base) 0;
+          }
+
           hr {
             height: 1px;
             background-color: var(--border-color);
