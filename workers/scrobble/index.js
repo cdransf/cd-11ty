@@ -14,7 +14,7 @@ const sanitizeMediaString = (str) => {
   })
 }
 
-const sendEmail = async (subject, text, authHeader) => {
+const sendEmail = async (subject, text, authHeader, maxRetries = 3) => {
   const emailData = new URLSearchParams({
     from: 'hi@admin.coryd.dev',
     to: 'hi@coryd.dev',
@@ -22,27 +22,41 @@ const sendEmail = async (subject, text, authHeader) => {
     text: text,
   }).toString()
 
-  try {
-    const response = await fetch('https://api.forwardemail.net/v1/emails', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Authorization': authHeader,
-      },
-      body: emailData,
-    })
+  let attempt = 0
+  let success = false
 
-    const responseText = await response.text()
+  while (attempt < maxRetries && !success) {
+    attempt++
+    try {
+      const response = await fetch('https://api.forwardemail.net/v1/emails', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Authorization': authHeader,
+        },
+        body: emailData,
+      })
 
-    if (!response.ok) {
-      console.error('Email API response error:', response.status, responseText)
-      throw new Error(`Failed to send email: ${responseText}`)
-    } else {
-      console.log('Email sent successfully')
+      if (!response.ok) {
+        const responseText = await response.text()
+        console.error(`Attempt ${attempt}: Email API response error:`, response.status, responseText)
+        throw new Error(`Failed to send email: ${responseText}`)
+      }
+
+      console.log('Email sent successfully on attempt', attempt)
+      success = true
+    } catch (error) {
+      console.error(`Attempt ${attempt}: Error sending email:`, error.message)
+
+      if (attempt < maxRetries) {
+        console.log(`Retrying email send (attempt ${attempt + 1}/${maxRetries})...`)
+      } else {
+        console.error('All attempts to send email failed.')
+      }
     }
-  } catch (error) {
-    console.error('Error sending email:', error.message)
   }
+
+  return success
 }
 
 export default {
@@ -51,7 +65,6 @@ export default {
     const SUPABASE_KEY = env.SUPABASE_KEY
     const FORWARDEMAIL_API_KEY = env.FORWARDEMAIL_API_KEY
     const ACCOUNT_ID_PLEX = env.ACCOUNT_ID_PLEX
-
     const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
     const authHeader = 'Basic ' + btoa(`${FORWARDEMAIL_API_KEY}:`)
     const url = new URL(request.url)
@@ -80,17 +93,17 @@ export default {
       const payload = JSON.parse(data.get('payload'))
 
       if (payload?.event === 'media.scrobble') {
-        const artist = payload['Metadata']['grandparentTitle']
-        const album = payload['Metadata']['parentTitle']
-        const track = payload['Metadata']['title']
+        const artistName = payload['Metadata']['grandparentTitle']
+        const albumName = payload['Metadata']['parentTitle']
+        const trackName = payload['Metadata']['title']
         const listenedAt = Math.floor(DateTime.now().toSeconds())
-        const artistKey = sanitizeMediaString(artist)
-        const albumKey = `${artistKey}-${sanitizeMediaString(album)}`
+        const artistKey = sanitizeMediaString(artistName)
+        const albumKey = `${artistKey}-${sanitizeMediaString(albumName)}`
 
         let { data: artistData, error: artistError } = await supabase
           .from('artists')
           .select('*')
-          .ilike('name_string', artist)
+          .ilike('name_string', artistName)
           .single()
 
         if (artistError && artistError.code === 'PGRST116') {
@@ -100,14 +113,14 @@ export default {
               {
                 mbid: null,
                 art: '4cef75db-831f-4f5d-9333-79eaa5bb55ee',
-                name: artist,
+                name: artistName,
                 tentative: true,
                 total_plays: 0,
               },
             ])
 
           if (insertArtistError) {
-            console.error('Error inserting artist:', insertArtistError.message)
+            console.error('Error inserting artist: ', insertArtistError.message)
             return new Response(
               JSON.stringify({
                 status: 'error',
@@ -119,16 +132,18 @@ export default {
 
           await sendEmail(
             'New tentative artist record',
-            `A new tentative artist record was inserted:\n\nArtist: ${artist}\nKey: ${artistKey}`,
+            `A new tentative artist record was inserted:\n\nArtist: ${artistName}\nKey: ${artistKey}`,
             authHeader
           )
 
-          ({ data: artistData, error: artistError } = await supabase
+          ;({ data: artistData, error: artistError } = await supabase
             .from('artists')
             .select('*')
-            .ilike('name_string', artist)
+            .ilike('name_string', artistName)
             .single())
-        } else if (artistError) {
+        }
+
+        if (artistError) {
           console.error('Error fetching artist:', artistError.message)
           return new Response(
             JSON.stringify({ status: 'error', message: artistError.message }),
@@ -150,9 +165,10 @@ export default {
                 mbid: null,
                 art: '4cef75db-831f-4f5d-9333-79eaa5bb55ee',
                 key: albumKey,
-                name: album,
+                name: albumName,
                 tentative: true,
                 total_plays: 0,
+                artist: artistData.id,
               },
             ])
 
@@ -169,16 +185,18 @@ export default {
 
           await sendEmail(
             'New tentative album record',
-            `A new tentative album record was inserted:\n\nAlbum: ${album}\nKey: ${albumKey}`,
+            `A new tentative album record was inserted:\n\nAlbum: ${albumName}\nKey: ${albumKey}\nArtist: ${artistName}`,
             authHeader
           )
 
-          ({ data: albumData, error: albumError } = await supabase
+          ;({ data: albumData, error: albumError } = await supabase
             .from('albums')
             .select('*')
             .ilike('key', albumKey)
             .single())
-        } else if (albumError) {
+        }
+
+        if (albumError) {
           console.error('Error fetching album:', albumError.message)
           return new Response(
             JSON.stringify({ status: 'error', message: albumError.message }),
@@ -188,9 +206,9 @@ export default {
 
         const { error: listenError } = await supabase.from('listens').insert([
           {
-            artist_name: artist,
-            album_name: album,
-            track_name: track,
+            artist_name: artistData['name_string'] || artistName,
+            album_name: albumData['name'] || albumName,
+            track_name: trackName,
             listened_at: listenedAt,
             album_key: albumKey,
           },
