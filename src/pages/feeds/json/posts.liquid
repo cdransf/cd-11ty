@@ -1,13 +1,12 @@
 ---
 layout: null
 eleventyExcludeFromCollections: true
-permalink: "/feeds/posts"
+permalink: "/feeds/posts.json"
 ---
-{% render "partials/feeds/rss.liquid"
+{% render "partials/feeds/json.liquid"
   permalink:"/feeds/posts"
   title:"Posts / Cory Dransfeldt"
-  description:globals.site_description
+  globals:globals
   data:posts
   updated:posts[0].date
-  site:site
 %}

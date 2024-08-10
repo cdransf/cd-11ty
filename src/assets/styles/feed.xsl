@@ -303,7 +303,7 @@
               <p><a href="/feeds">View more of the feeds from my site.</a> <strong class="highlight-text">Or subscribe by adding the URL below to your feed reader of choice.</strong></p>
               <p>
                 <pre class="small">
-                  <code><xsl:value-of select="/rss/channel/feedUrl"/></code>
+                  <code><xsl:value-of select="rss/channel/atom:link/@href"/></code>
                 </pre>
               </p>
               <hr />

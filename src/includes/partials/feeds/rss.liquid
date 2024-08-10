@@ -2,16 +2,15 @@
 <?xml-stylesheet href="/assets/styles/feed.xsl" type="text/xsl" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <atom:link href="{{ permalink | absoluteUrl: globals.url }}" rel="self" type="application/rss+xml" />
-    <feedUrl>{{ permalink | absoluteUrl: globals.url }}</feedUrl>
+    <atom:link href="{{ permalink | absoluteUrl }}" rel="self" type="application/rss+xml" />
     {%- assign entries = data | normalizeEntries: 20 -%}
     <title><![CDATA[{{ title }}]]></title>
-    <description><![CDATA[{{ description }}]]></description>
-    <link>{{ permalink | absoluteUrl: globals.url }}</link>
+    <description><![CDATA[{{ globals.site_description }}]]></description>
+    <link>{{ permalink | absoluteUrl }}</link>
     <lastBuildDate>{{ updated | stringToRFC822Date }}</lastBuildDate>
     <image>
       <title><![CDATA[{{ title }}]]></title>
-      <link>{{ permalink | absoluteUrl: globals.url }}</link>
+      <link>{{ permalink | absoluteUrl }}</link>
       <url>{{ "https://cdn.coryd.dev/" | append: globals.feed_image | append: "?class=w200&amp;v=" | append: appVersion }}</url>
       <width>144</width>
       <height>144</height>

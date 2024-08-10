@@ -120,6 +120,7 @@ export default {
       const md = mdGenerator()
       let excerpt = ''
       let url = ''
+      let author
       let title = entry.title
       const feedNote = '<hr/><p>This is a full text feed, but not all content can be rendered perfectly within the feed. If something looks off, feel free to <a href="https://coryd.dev">visit my site</a> for the original post.</p>'
 
@@ -128,7 +129,13 @@ export default {
       if (entry?.slug) url = new URL(entry.slug, BASE_URL).toString()
       if (entry?.link) {
         title = `${entry.title} via ${entry.authors.name}`
-        url = entry.link
+        url = entry.link,
+        author = {
+          name: entry.authors.name,
+          url: entry.authors.url,
+          mastodon: entry.authors?.mastodon || '',
+          rss: entry.authors?.rss_feed || ''
+        }
       }
       if (entry.description) excerpt = entry.description
       if (entry.type === 'book' || entry.type === 'movie' || entry.type === 'link') excerpt = `${entry.description}`
@@ -142,7 +149,9 @@ export default {
         content: entry.description,
         date,
         excerpt,
-        rating: entry?.rating || ''
+        rating: entry?.rating || '',
+        tags: entry?.tags || '',
+        author
       })
     })
     return posts

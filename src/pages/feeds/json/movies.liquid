@@ -6,8 +6,7 @@ permalink: "/feeds/movies.json"
 {% render "partials/feeds/json.liquid"
   permalink:"/feeds/movies"
   title:"Movies / Cory Dransfeldt"
-  description:globals.site_description
+  globals:globals
   data:movies.recentlyWatched
   updated:movies.recentlyWatched[0].lastWatched
-  site:site
 %}

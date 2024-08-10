@@ -6,8 +6,7 @@ permalink: "/feeds/all"
 {% render "partials/feeds/rss.liquid"
   permalink:"/feeds/all"
   title:"All activity / Cory Dransfeldt"
-  description:globals.site_description
+  globals:globals
   data:collections.allContent
   updated:collections.allContent[0].date
-  site:site
 %}
