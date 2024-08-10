@@ -110,9 +110,9 @@ export const processContent = (collection) => {
         // link to artist concerts section if available - artistUrl is only present on concert objects here
         if (item?.['artistUrl']) content['url'] = `${item['artistUrl']}#concerts`
         if (item?.['description']) {
-          content['description'] = `${item['description'].split(' ').slice(0, 25).join(' ')}...<br/><br/>`
+          content['description'] = `${item['description'].split(' ').slice(0, 25).join(' ')}...`
         } else if (item?.['notes']) {
-          content['notes'] = `${item['notes'].split(' ').slice(0, 25).join(' ')}...<br/><br/>`
+          content['notes'] = `${item['notes'].split(' ').slice(0, 25).join(' ')}...`
         } else {
           content['description'] = ''
         }

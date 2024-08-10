@@ -131,7 +131,7 @@ export default {
         url = entry.link
       }
       if (entry.description) excerpt = entry.description
-      if (entry.type === 'book' || entry.type === 'movie' || entry.type === 'link') excerpt = `${entry.description}<br/><br/>`
+      if (entry.type === 'book' || entry.type === 'movie' || entry.type === 'link') excerpt = `${entry.description}`
       if (entry?.slug && entry.content) excerpt = sanitizeHtml(`${md.render(entry.content)}${feedNote}`, {
         disallowedTagsMode: 'completelyDiscard'
       })

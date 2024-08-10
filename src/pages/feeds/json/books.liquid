@@ -6,8 +6,8 @@ permalink: "/feeds/books.json"
 {%- assign bookData = books.all | bookStatus: 'finished' | bookSortDescending -%}
 {% render "partials/feeds/json.liquid"
   permalink:"/feeds/books"
-  title:"Cory Dransfeldt: books"
-  description:"Books I'm currently reading."
+  title:"Books / Cory Dransfeldt"
+  description:globals.site_description
   data:bookData
   updated:bookData[0].date
   site:site
