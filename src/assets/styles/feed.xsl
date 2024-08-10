@@ -8,12 +8,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <style type="text/css">
-          @font-face {
-            font-family: 'MonoLisa';
-            src: url('/assets/fonts/MonoLisa.min.woff2') format('woff2');
-            font-display: optional
-          }
-
           :root {
             --sizing-xs: .25rem;
             --sizing-sm: .5rem;
@@ -24,7 +18,7 @@
             --sizing-2xl: 2rem;
             --sizing-3xl: 2.25rem;
 
-            --font-mono: 'MonoLisa', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;
+            --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;
 
             --blue-50: #eff5ff;
             --blue-100: #e2ecff;
@@ -300,12 +294,13 @@
             </section>
             <div class="default-wrapper">
               <p><xsl:value-of select="/rss/channel/description"/></p>
-              <p><a href="/feeds">View more of the feeds from my site.</a> <strong class="highlight-text">Or subscribe by adding the URL below to your feed reader of choice.</strong></p>
+              <p><strong class="highlight-text">Subscribe by adding the URL below to your feed reader of choice.</strong></p>
               <p>
                 <pre class="small">
                   <code><xsl:value-of select="rss/channel/atom:link/@href"/></code>
                 </pre>
               </p>
+              <p><a href="/feeds">View more of the feeds from my site.</a></p>
               <hr />
               <section>
                 <xsl:for-each select="/rss/channel/item">
