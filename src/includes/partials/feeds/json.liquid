@@ -15,7 +15,7 @@
       "title": "{{ entry.title | escape }}{%- if entry.authors %} via {{ entry.authors.name }}{%- endif %}{%- if entry.rating %} ({{ entry.rating }}){%- endif %}",
       "content_text": "{{ entry.excerpt | escape }}",
       "date_published": "{{ entry.date | stringToRFC822Date }}"
-    }{%- if forloop.last == false %},{%- endif -%}
+    }}{% if forloop.last == false %},{% endif %}
     {%- endfor %}
   ]
 }
