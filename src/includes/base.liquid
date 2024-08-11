@@ -107,8 +107,7 @@
     <link rel="alternate" href="https://coryd.dev/feeds/movies" title="Movies / {{ globals.site_name }}'s movies feed" type="application/rss+xml">
     <link rel="alternate" href="https://coryd.dev/feeds/books" title="Books / {{ globals.site_name }}" type="application/rss+xml">
     <link rel="alternate" href="https://coryd.dev/feeds/all" title="All activity / {{ globals.site_name }}" type="application/rss+xml">
-    <script defer data-domain="coryd.dev" src="/js/script.js"></script>
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    <script defer src="/assets/scripts/index.js?v={% appVersion %}"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -154,6 +153,5 @@
       })()
     </script>
     {{ content }}
-    <script src="/assets/scripts/index.js?v={% appVersion %}" defer></script>
   </body>
 </html>

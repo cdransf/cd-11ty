@@ -13,7 +13,5 @@
     {{ block.text | markdown }}
   {%- elsif block.type == 'divider' -%}
     {{ block.markup | markdown }}
-  {%- elsif block.type == 'addon_links' -%}
-    {% render "partials/blocks/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}
   {%- endif -%}
 {%- endfor -%}

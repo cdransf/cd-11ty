@@ -33,16 +33,3 @@ description: How to contact me.
     </div>
   </form>
 </div>
-<script>
-  document.querySelector('[data-form="contact"]').addEventListener('submit', function(event) {
-    if (typeof plausible === 'function') {
-      plausible('Contact form submitted', {
-        props: {
-          name: this.name.value,
-          email: this.email.value,
-          message: this.message.value
-        }
-      })
-    }
-  })
-</script>

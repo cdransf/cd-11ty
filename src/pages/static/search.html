@@ -32,7 +32,6 @@ permalink: /search.html
       const query = $input.value
       const results = (query.length > 1) ? getSearchResults(query) : []
       if (query === '') renderSearchResults([])
-      if (results && typeof plausible === 'function') plausible('Search', { props: { query: query } });
       renderSearchResults(results)
     })
 
@@ -59,4 +58,3 @@ permalink: /search.html
   <input class="search__form--fallback" type="hidden" placeholder="Search" name="sites" value="coryd.dev">
 </form>
 <ul class="search__results hidden"></ul>
-{% render "partials/blocks/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}

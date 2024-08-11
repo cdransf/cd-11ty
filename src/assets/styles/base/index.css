@@ -430,6 +430,10 @@ main {
 .home-status,
 article {
   margin-bottom: var(--sizing-base);
+}
+
+.home-status,
+.posts-wrapper article {
   border-bottom: 1px solid var(--gray-light);
 }
 

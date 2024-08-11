@@ -192,16 +192,3 @@ export const albumReleasesCalendar = (collection) => {
 
   return value
 }
-
-export const popularPosts = (collection) => {
-  const collectionData = collection.getAll()[0]
-  const { data } = collectionData
-  const { posts, analytics } = data
-
-  return posts
-    .filter((post) => analytics.find((p) => p.page.includes(post.slug)))
-    .sort((a, b) => {
-      const visitors = (page) => analytics.filter((p) => p.page.includes(page.slug)).pop()?.visitors
-      return visitors(b) - visitors(a)
-    })
-}

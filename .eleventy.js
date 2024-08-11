@@ -6,7 +6,7 @@ import markdownItAnchor from 'markdown-it-anchor'
 import markdownItFootnote from 'markdown-it-footnote'
 import filters from './config/filters/index.js'
 import { copyErrorPages } from './config/events/index.js'
-import { popularPosts, processContent, albumReleasesCalendar } from './config/collections/index.js'
+import { processContent, albumReleasesCalendar } from './config/collections/index.js'
 import { DateTime } from 'luxon'
 
 // load .env
@@ -52,7 +52,6 @@ export default async function (eleventyConfig) {
   })
 
   // collections
-  eleventyConfig.addCollection('popularPosts', popularPosts)
   eleventyConfig.addCollection('allContent', (collection) => {
     const { allContent } = processContent(collection)
     return allContent

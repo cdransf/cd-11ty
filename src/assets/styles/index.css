@@ -25,7 +25,6 @@
 @import url('./pages/webrings.css') layer(page);
 
 /* component styles */
-@import url('./components/addon-links.css') layer(components);
 @import url('./components/badge-grid.css') layer(components);
 @import url('./components/banners.css') layer(components);
 @import url('./components/buttons.css') layer(components);

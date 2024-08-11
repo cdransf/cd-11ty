@@ -7,7 +7,7 @@ pagination:
 permalink: "{{ post.slug }}/index.html"
 schema: blog
 ---
-<article class="h-entry">
+<article class="h-entry standalone">
   <div class="time-wrapper flex-centered">
     {% tablericon "calendar-month" "Date" %}
     <time class="dt-published" datetime="{{ date }}">
@@ -42,4 +42,3 @@ schema: blog
     {% render "partials/blocks/index.liquid", blocks:post.blocks %}
   </div>
 </article>
-{% render "partials/blocks/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}
