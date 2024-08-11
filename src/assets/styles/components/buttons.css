@@ -1,4 +1,52 @@
-button {
+/* music - chart toggle styles */
+#tracks-recent ~ .tracks-recent,
+#tracks-window ~ .tracks-window {
+  display: none;
+}
+
+#tracks-recent:checked ~ .tracks-recent,
+#tracks-window:checked ~ .tracks-window {
+  display: block;
+}
+
+input[id="tracks-recent"] ~ [for="tracks-recent"],
+input[id="tracks-window"] ~ [for="tracks-window"] {
+  margin-bottom: var(--sizing-lg);
+}
+
+#tracks-recent:not(:checked) ~ [for="tracks-recent"]:hover,
+#tracks-recent:not(:checked) ~ [for="tracks-recent"]:active,
+#tracks-window:not(:checked) ~ [for="tracks-window"]:hover,
+#tracks-window:not(:checked) ~ [for="tracks-window"]:active {
+  color: var(--accent-color-hover);
+  background: transparent;
+}
+
+#tracks-recent:not(:checked) ~ [for="tracks-recent"]:focus,
+#tracks-recent:not(:checked) ~ [for="tracks-recent"]:focus-within,
+#tracks-window:not(:checked) ~ [for="tracks-window"]:focus,
+#tracks-window:not(:checked) ~ [for="tracks-window"]:focus-within {
+  transition-property: none;
+  outline: 2px dashed var(--accent-color);
+  border: 0;
+}
+
+#tracks-recent:checked ~ [for="tracks-recent"],
+#tracks-window:checked ~ [for="tracks-window"] {
+  cursor: not-allowed;
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+
+#tracks-recent:not(:checked) ~ [for="tracks-recent"],
+#tracks-window:not(:checked) ~ [for="tracks-window"] {
+  color: var(--accent-color);
+  background: transparent;
+}
+
+/* generic button styles */
+button,
+.button {
   appearance: none;
   border: none;
 

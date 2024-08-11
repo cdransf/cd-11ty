@@ -6,10 +6,6 @@ permalink: "/music/index.html"
 updated: "now"
 schema: music-index
 ---
-{%- capture js -%}
-  {% render "../../../assets/scripts/media-toggles.js" %}
-{%- endcapture -%}
-<script>{{ js }}</script>
 <h2 class="page-header">{{ title }}</h2>
 <p>I've listened to <strong class="highlight-text">{{ music.week.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.week.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.week.totalTracks }} tracks</strong> this week. Most of that has been {{ music.week.genres | sortByPlaysDescending: "plays" | genreStrings: "genre" | mediaLinks: "genre", 5 }}.</p>
 <p><strong class="highlight-text">See more of the</strong> <a href="/music/artists/this-week/">artists</a>, <a href="/music/albums/this-week/">albums</a> or <a href="/music/tracks/this-week/">tracks</a> I've listened to this week. <strong class="highlight-text">Or take a look at what I've listened to</strong> <a href="/music/this-month">this month</a> or <a href="/music/three-months">over the last 3 months</a>.</p>
@@ -37,16 +33,18 @@ schema: music-index
       Tracks
     </a>
   </h3>
-  <div class="section-header-buttons client-side">
-    <button class="small active" data-toggle="tracks-recent">Recent</button>
-    <button class="small secondary" data-toggle="tracks-window">This week</button>
+</div>
+<div class="track-display">
+  <input id="tracks-recent" name="track-options" class="hidden" type="radio" aria-hidden="true" checked />
+  <input id="tracks-window" name="track-options" class="hidden" type="radio" aria-hidden="true" />
+  <label for="tracks-recent" class="button small" data-toggle="tracks-recent">Recent</label>
+  <label for="tracks-window" class="button small" data-toggle="tracks-window">This week</label>
+  <div class="tracks-recent">
+    {% render "partials/media/music/recent", data:music.recent %}
   </div>
-</div>
-<div id="tracks-recent">
-  {% render "partials/media/music/recent", data:music.recent %}
-</div>
-<div class="hidden" id="tracks-window">
-  {% render "partials/media/music/chart.liquid", data:music.week.tracks, mostPlayed:music.week.tracks[0].plays, count: 10 %}
+  <div class="tracks-window">
+    {% render "partials/media/music/chart.liquid", data:music.week.tracks, mostPlayed:music.week.tracks[0].plays, count: 10 %}
+  </div>
 </div>
 {% if albumReleases.size > 0 %}
 <h3 id="album-releases" class="section-header flex-centered">
