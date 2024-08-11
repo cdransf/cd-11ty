@@ -1,5 +1,9 @@
 <script type="module" src="/assets/scripts/components/api-text.js" crossorigin="anonymous"></script>
-<api-text class="client-side" api-url="/api/now-playing">
+<api-text api-url="/api/now-playing">
   <p class="loading">🎧 Loading...</p>
   <p class="content"></p>
+  <noscript>
+    {%- assign track = music.recent | first -%}
+    <p>🎧 {{ track.title }} <a href="{{ track.url }}">{{ track.artist }}</a></p>
+  </noscript>
 </api-text>
