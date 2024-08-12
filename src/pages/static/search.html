@@ -54,8 +54,14 @@ permalink: /search.html
     }
   })()
 </script>
+<h2 class="page-header">Search</h2>
+<p>You can find <a href="/posts">posts</a>, <a href="/links">links</a>, <a href="/music/#artists">artists</a>, genres, <a href="/watching#movies">movies</a> and <a href="/books">books</a> via the field below (though it only surfaces movies and books I've written something about).</p>
+<noscript>
+  <p><strong class="highlight-text">If you're seeing this it means that you've (quite likely) disabled JavaScript (that's a totally valid choice!).</strong> You can search for anything on my site using the form below, but your query will be routed through <a href="https://duckduckgo.com">DuckDuckGo</a>.</p>
+  <p><strong class="highlight-text">Type something in and hit enter.</strong></p>
+</noscript>
 <form class="search__form" action="https://duckduckgo.com" method="get">
   <input class="search__form--input" placeholder="Search" type="search" name="q" autocomplete="off" autofocus>
-  <input class="search__form--fallback" type="hidden" placeholder="Search" name="sites" value="coryd.dev">
+  <input class="search__form--fallback" type="hidden" placeholder="Type away..." name="sites" value="coryd.dev">
 </form>
 <ul class="search__results hidden"></ul>
