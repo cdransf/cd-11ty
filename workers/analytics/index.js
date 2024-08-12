@@ -20,5 +20,21 @@ async function handleRequest(request) {
       headers: newHeaders
     })
   }
+
+  if (url.pathname === '/js/api/send') {
+    const targetUrl = 'https://dashboard.coryd.dev/api/send'
+    const response = await fetch(targetUrl, {
+      method: request.method,
+      headers: request.headers,
+      body: request.body
+    })
+
+    return new Response(response.body, {
+      status: response.status,
+      statusText: response.statusText,
+      headers: response.headers
+    })
+  }
+
   return fetch(request)
 }

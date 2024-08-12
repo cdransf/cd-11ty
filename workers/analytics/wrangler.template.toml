@@ -8,5 +8,6 @@ workers_dev = true
 [env.production]
 name = "analytics-worker-production"
 routes = [
-  { pattern = "coryd.dev/js/script.js", zone_id = "${CF_ZONE_ID}" }
+  { pattern = "coryd.dev/js/script.js", zone_id = "${CF_ZONE_ID}" },
+  { pattern = "coryd.dev/js/api/send", zone_id = "${CF_ZONE_ID}" }
 ]

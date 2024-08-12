@@ -22,14 +22,13 @@
             srcset="
               https://cdn.coryd.dev{{ item.image }}?class=squaresm 200w,
               https://cdn.coryd.dev{{ item.image }}?class=squaremd 400w,
-              https://cdn.coryd.dev{{ item.image }}?class=squarebase 800w,
-              https://cdn.coryd.dev{{ item.image }}?class=squarelg 1200w
+              https://cdn.coryd.dev{{ item.image }}?class=squarebase 800w
             "
             sizes="(max-width: 450px) 200px,
               (max-width: 850px) 400px,
-              (max-width: 100px) 800px,
-              1200px"
-            src="https://cdn.coryd.dev{{ item.image }}?class=squarelg"
+              (max-width: 1000px) 800px,
+              800px"
+            src="https://cdn.coryd.dev{{ item.image }}?class=squarebase"
             alt="{{ alt }}"
             loading="{{ loadingStrategy }}"
             decoding="async"
@@ -41,14 +40,13 @@
             srcset="
               https://cdn.coryd.dev{{ item.image }}?class=verticalsm 200w,
               https://cdn.coryd.dev{{ item.image }}?class=verticalmd 400w,
-              https://cdn.coryd.dev{{ item.image }}?class=verticalbase 800w,
-              https://cdn.coryd.dev{{ item.image }}?class=verticallg 1200w
+              https://cdn.coryd.dev{{ item.image }}?class=verticalbase 800w
             "
             sizes="(max-width: 450px) 200px,
               (max-width: 850px) 400px,
               (max-width: 1000px) 800px,
-              1200px"
-            src="https://cdn.coryd.dev{{ item.image }}?class=verticallg"
+              800px"
+            src="https://cdn.coryd.dev{{ item.image }}?class=verticalbase"
             alt="{{ alt }}"
             loading="{{ loadingStrategy }}"
             decoding="async"
