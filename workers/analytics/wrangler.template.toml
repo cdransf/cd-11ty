@@ -1,0 +1,12 @@
+name = "analytics-worker"
+main = "./index.js"
+compatibility_date = "2023-01-01"
+
+account_id = "${CF_ACCOUNT_ID}"
+workers_dev = true
+
+[env.production]
+name = "analytics-worker-production"
+routes = [
+  { pattern = "coryd.dev/js/script.js", zone_id = "${CF_ZONE_ID}" }
+]

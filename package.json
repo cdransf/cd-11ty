@@ -9,6 +9,7 @@
     "build": "ELEVENTY_PRODUCTION=true eleventy",
     "update:deps": "npm upgrade && ncu",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
+    "publish:analytics": "node scripts/worker-build.mjs analytics && wrangler deploy --env production --config workers/analytics/wrangler.toml",
     "publish:contact": "node scripts/worker-build.mjs contact && wrangler deploy --env production --config workers/contact/wrangler.toml",
     "publish:playing": "node scripts/worker-build.mjs playing && wrangler deploy --env production --config workers/playing/wrangler.toml",
     "publish:rebuild": "node scripts/worker-build.mjs rebuild && wrangler deploy --env production --config workers/rebuild/wrangler.toml",
