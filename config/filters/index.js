@@ -121,36 +121,40 @@ export default {
       let excerpt = ''
       let url = ''
       let author
-      let title = entry.title
+      let title = entry['title']
+      let image = entry['image']
       const feedNote = '<hr/><p>This is a full text feed, but not all content can be rendered perfectly within the feed. If something looks off, feel free to <a href="https://coryd.dev">visit my site</a> for the original post.</p>'
 
-      if (entry.url?.includes('http')) url = entry.url
-      if (!entry.url?.includes('http')) url = new URL(entry.url, BASE_URL).toString()
-      if (entry?.slug) url = new URL(entry.slug, BASE_URL).toString()
-      if (entry?.link) {
-        title = `${entry.title} via ${entry.authors.name}`
-        url = entry.link,
+      if (entry['url']?.includes('http')) url = entry.url
+      if (!entry['url']?.includes('http')) url = new URL(entry['url'], BASE_URL).toString()
+      if (entry?.['slug']) url = new URL(entry['slug'], BASE_URL).toString()
+      if (entry?.['link']) {
+        title = `${entry['title']} via ${entry['authors']['name']}`
+        url = entry['link'],
         author = {
-          name: entry.authors.name,
-          url: entry.authors.url,
-          mastodon: entry.authors?.mastodon || '',
-          rss: entry.authors?.rss_feed || ''
+          name: entry['authors']['name'],
+          url: entry['authors']['url'],
+          mastodon: entry['.authors']?.['mastodon'] || '',
+          rss: entry['authors']?.['rss_feed'] || ''
         }
       }
-      if (entry.description) excerpt = entry.description
-      if (entry.type === 'book' || entry.type === 'movie' || entry.type === 'link') excerpt = `${entry.description}`
-      if (entry?.slug && entry.content) excerpt = sanitizeHtml(`${md.render(entry.content)}${feedNote}`, {
+      if (entry['description']) excerpt = entry['description']
+      if (entry['type'] === 'book' || entry['type'] === 'movie' || entry['type'] === 'link') excerpt = sanitizeHtml(`${md.render(entry.description)}`)
+      if (entry?.['slug'] && entry['content']) excerpt = sanitizeHtml(`${md.render(entry['content'])}${feedNote}`, {
         disallowedTagsMode: 'completelyDiscard'
       })
+
+      if (entry['backdrop']) image = entry['backdrop']
 
       if (entry) posts.push({
         title: title.trim(),
         url,
-        content: entry.description,
+        image,
+        content: entry['description'],
         date,
         excerpt,
-        rating: entry?.rating || '',
-        tags: entry?.tags || '',
+        rating: entry?.['rating'] || '',
+        tags: entry?.['tags'] || '',
         author
       })
     })
@@ -164,41 +168,41 @@ export default {
       let normalized = {
         image: item['image'],
         url: item['url'],
-        type: item.type
+        type: item['type']
       }
-      if (item.type === 'artist') {
+      if (item['type'] === 'artist') {
         normalized['title'] = item['title']
         normalized['alt'] = `${item['plays']} plays of ${item['title']}`
         normalized['subtext'] = `${item['plays']} plays`
       }
-      if (item.type === 'album') {
+      if (item['type'] === 'album') {
         normalized['title'] = item['title']
         normalized['alt'] = `${item['title']} by ${item['artist']}`
         normalized['subtext'] = `${item['artist']}`
       }
-      if (item.type === 'album-release') {
+      if (item['type'] === 'album-release') {
         normalized['title'] = item['title']
         normalized['alt'] = `${item['title']} by ${item['artist']}`
         normalized['subtext'] = `${item['artist']} / ${item['date']}`
       }
-      if (item.type === 'movie') {
+      if (item['type'] === 'movie') {
         normalized['title'] = item['title']
         normalized['alt'] = item['title']
         normalized['rating'] = item['rating']
         normalized['favorite'] = item['favorite']
         normalized['subtext'] = `${item['rating']} (${item['year']})`
       }
-      if (item.type === 'book') {
+      if (item['type'] === 'book') {
         normalized['title'] = `${item['title']} by ${item['author']}`
         normalized['rating'] = item['rating']
         if (item['rating']) normalized['subtext'] = item['rating']
       }
-      if (item.type === 'tv') {
+      if (item['type'] === 'tv') {
         normalized['title'] = item['name']
         normalized['alt'] = `${item['subtext']} of ${item['name']}`
         normalized['subtext'] = item['subtext']
       }
-      if (item.type === 'tv-range') {
+      if (item['type'] === 'tv-range') {
         normalized['title'] = item['name']
         normalized['alt'] = `${item['subtext']} from ${item['name']}`
         normalized['subtext'] = item['subtext']

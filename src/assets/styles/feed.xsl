@@ -75,6 +75,9 @@
             --font-weight-base: 400;
             --font-weight-bold: 600;
             --font-weight-extrabold: 800;
+
+            /* borders */
+            --border-default: 1px solid var(--accent-color);
           }
 
           @media (prefers-color-scheme: dark) {
@@ -132,6 +135,14 @@
             width: 80%;
             margin-left: auto;
             margin-right: auto;
+          }
+
+          main footer {
+            margin-bottom: var(--sizing-base);
+          }
+
+          main footer hr {
+            margin-top: 0;
           }
 
           .default-wrapper {
@@ -214,8 +225,12 @@
             border-bottom: 0;
           }
 
-          .description {
-            margin-bottom: var(--sizing-base);
+          .item img {
+            border: var(--border-default);
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: var(--sizing-base);
           }
 
           p {
@@ -329,10 +344,17 @@
                       </a>
                     </h3>
                     <xsl:value-of select="description" disable-output-escaping="yes"/>
+                    <xsl:if test="enclosure">
+                      <img src="{enclosure/@url}" alt="{title}" />
+                    </xsl:if>
                   </div>
                 </xsl:for-each>
               </section>
             </div>
+            <footer>
+              <hr />
+              <p>Subscribe by adding <code><xsl:value-of select="rss/channel/atom:link/@href"/></code> to your feed reader of choice.</p>
+            </footer>
           </main>
         </div>
       </body>

@@ -27,6 +27,9 @@
         <link>{{ entry.url | encodeAmp }}</link>
         <pubDate>{{ entry.date | stringToRFC822Date }}</pubDate>
         <guid isPermaLink="false">{{ entry.url | encodeAmp }}</guid>
+        {%- if entry.image -%}
+          <enclosure url="https://cdn.coryd.dev{{ entry.image }}?class=w800" type="image/jpeg" />
+        {%- endif -%}
         <description>{{ entry.excerpt | escape }}</description>
       </item>
     {%- endfor %}
