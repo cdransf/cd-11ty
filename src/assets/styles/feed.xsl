@@ -288,9 +288,9 @@
 
           code {
             background-color: var(--code-bg-color);
+            border: 1px solid var(--border-color);
             color: var(--code-text-color);
             padding: 2px 4px;
-            border-radius: 3px;
             font-family: var(--font-mono);
           }
 
