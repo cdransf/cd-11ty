@@ -12,7 +12,7 @@ async function handleRequest(request) {
       headers: request.headers
     })
     const newHeaders = new Headers(response.headers)
-    newHeaders.set('Cache-Control', 'max-age=2592000')
+    newHeaders.set('Cache-Control', 'max-age=15552000')
 
     return new Response(response.body, {
       status: response.status,
