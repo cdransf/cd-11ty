@@ -47,10 +47,6 @@
       max-width: 75%;
       margin-bottom: 0;
     }
-
-    & .description {
-      margin-bottom: var(--sizing-base);
-    }
   }
 }
 
@@ -126,6 +122,10 @@
       & .progress-bar-wrapper {
         margin-top: 0;
         max-width: 50%;
+      }
+
+      & .description {
+        margin-bottom: var(--sizing-base);
       }
     }
   }
