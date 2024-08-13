@@ -9,7 +9,6 @@ button,
   &:not(.theme-toggle) {
     border: 2px solid var(--accent-color);
     padding: var(--sizing-sm) var(--sizing-lg);
-    margin: 0 var(--sizing-xs) var(--sizing-md) 0;
     cursor: pointer;
     display: inline-flex;
     flex-direction: row;

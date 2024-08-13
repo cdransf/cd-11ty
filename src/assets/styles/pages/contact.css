@@ -6,10 +6,14 @@
     height: calc(var(--sizing-3xl) * 5);
     resize: none;
   }
+
+  & .column.description p:first-of-type {
+    margin-top: 0;
+  }
 }
 
 .contact-success-header {
-  margin: 0 0 var(--sizing-lg);
+  margin: 0 0 var(--sizing-base);
 }
 
 @media screen and (min-width: 768px) {
@@ -23,9 +27,5 @@
     & .column.description {
       padding-right: var(--sizing-xl);
     }
-  }
-
-  form {
-    margin-top: var(--sizing-base);
   }
 }

@@ -13,6 +13,10 @@ input[id="tracks-window"] ~ [for="tracks-window"] {
   margin-bottom: var(--sizing-lg);
 }
 
+input[id="tracks-recent"] ~ [for="tracks-recent"]:has(+ [for="tracks-window"]) {
+  margin-right: var(--sizing-xs);
+}
+
 #tracks-recent:not(:checked) ~ [for="tracks-recent"]:hover,
 #tracks-recent:not(:checked) ~ [for="tracks-recent"]:active,
 #tracks-window:not(:checked) ~ [for="tracks-window"]:hover,

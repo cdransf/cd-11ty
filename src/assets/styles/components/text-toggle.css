@@ -20,6 +20,6 @@
   }
 }
 
-[data-toggle-content]+button[data-toggle-button]:has(+ table) {
+[data-toggle-content] + button[data-toggle-button]:has(+ table) {
   margin: 0 0 var(--sizing-base);
 }

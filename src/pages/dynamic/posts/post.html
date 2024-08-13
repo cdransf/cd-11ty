@@ -14,7 +14,7 @@ schema: blog
       {{ post.date | date: "%B %e, %Y" }}
     </time>
   </div>
-  <h2 class="p-name">{{ post.title }}</h2>
+  <h3 class="p-name">{{ post.title }}</h3>
   <span class="p-author h-card hidden">{{ globals.author }}</span>
   <div class="p-summary hidden">{{ post.description }}</div>
   <div class="e-content">

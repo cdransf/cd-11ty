@@ -4,7 +4,7 @@ layout: page
 permalink: /webrings.html
 description: Webrings are awesome! These are the ones I'm a member of.
 ---
-<h2 class="page-header">{{ title }}</h2>
+<h2>{{ title }}</h2>
 
 [Webrings](https://en.wikipedia.org/wiki/Webring) are _awesome_. I'm a member of a few that follow. Check them out!
 

@@ -8,7 +8,7 @@ schema: books
 ---
 {%- assign bookData = books.all | bookStatus: 'started' | reverse -%}
 {%- assign currentBookCount = books.all | currentBookCount -%}
-<h2 class="page-header">Currently reading</h2>
+<h2>Currently reading</h2>
 <p>Here's what I'm reading at the moment. I've finished <strong class="highlight-text">{{ currentBookCount }} books</strong> this year.</p>
 <p>{{ books.years | bookYearLinks }}</p>
 {% render "partials/blocks/banners/rss.liquid", url: "https://coryd.dev/feeds/books", text: "Subscribe to my books feed or follow along on this page" %}

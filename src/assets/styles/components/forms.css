@@ -15,9 +15,16 @@ textarea {
   font-size: var(--font-size-base);
   width: 100%;
   border-radius: 0;
-  margin-bottom: var(--sizing-base);
   font-weight: var(--font-weight-base);
   line-height: var(--line-height-base);
+}
+
+label:has(input):has(+ *) input,
+input[type="text"]:has(+ *),
+input[type="email"]:has(+ *),
+input[type="search"]:has(+ *),
+textarea:has(+ *) {
+  margin-bottom: var(--sizing-base);
 }
 
 input:focus,
