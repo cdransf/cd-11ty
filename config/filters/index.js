@@ -190,7 +190,7 @@ export default {
         normalized['alt'] = item['title']
         normalized['rating'] = item['rating']
         normalized['favorite'] = item['favorite']
-        normalized['subtext'] = `${item['rating']} (${item['year']})`
+        normalized['subtext'] = item.rating ? `${item['rating']} (${item['year']})` : `(${item['year']})`
       }
       if (item['type'] === 'book') {
         normalized['title'] = `${item['title']} by ${item['author']}`
