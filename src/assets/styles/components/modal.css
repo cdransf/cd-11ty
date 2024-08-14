@@ -30,8 +30,6 @@
 
       & svg {
         stroke: var(--accent-color);
-        transform: rotate(0deg);
-        transition: transform var(--transition-duration-default) var(--transition-ease-in-out);
 
         &:focus {
           outline: var(--outline-default);
@@ -41,7 +39,6 @@
         &:focus,
         &:active {
           stroke: var(--accent-color-hover);
-          transform: rotate(8deg);
         }
       }
     }
@@ -82,8 +79,6 @@
   & svg {
     cursor: pointer;
     stroke: var(--accent-color);
-    transform: rotate(0deg);
-    transition: transform var(--transition-duration-default) var(--transition-ease-in-out);
 
     &:focus {
       outline: var(--outline-default);
@@ -93,7 +88,6 @@
     &:focus,
     &:active {
       stroke: var(--accent-color-hover);
-      transform: rotate(8deg);
     }
   }
 }
