@@ -554,13 +554,6 @@ li {
   text-align: center !important;
 }
 
-.text-centered-vertically {
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .text-small {
   font-size: var(--font-size-sm) !important;
 }

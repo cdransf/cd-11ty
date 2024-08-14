@@ -1,10 +1,6 @@
 .webring-wrapper {
   margin: var(--sizing-base) 0;
 
-  & h3 {
-    margin: var(--sizing-2xl) 0 var(--sizing-lg);
-  }
-
   & .webring-navigation {
     gap: var(--sizing-sm);
 
