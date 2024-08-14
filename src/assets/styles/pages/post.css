@@ -1,6 +1,4 @@
 .footnotes {
-  padding-bottom: var(--sizing-base);
-
   & .footnotes-list {
     margin-bottom: 0;
     padding-left: 0;

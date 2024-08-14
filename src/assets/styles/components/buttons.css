@@ -8,7 +8,7 @@ button,
 
   &:not(.theme-toggle) {
     border: 2px solid var(--accent-color);
-    padding: var(--sizing-sm) var(--sizing-lg);
+    padding: var(--sizing-xs) var(--sizing-md);
     cursor: pointer;
     display: inline-flex;
     flex-direction: row;
@@ -36,25 +36,14 @@ button,
   &:not(.theme-toggle, .active):focus,
   &:not(.theme-toggle, .active):focus-within {
     transition-property: none;
-    outline: 2px dashed var(--accent-color);
-    padding: calc(var(--sizing-sm) + 2px) calc(var(--sizing-lg) + 2px);
+    outline: var(--outline-default);
+    padding: calc(var(--sizing-xs) + 2px) calc(var(--sizing-md) + 2px);
     border: 0;
   }
 
   &.theme-toggle:focus,
   &.theme-toggle:focus-within {
-    outline: 2px dashed var(--accent-color);
-  }
-
-  &.small {
-    font-size: var(--font-size-sm);
-    line-height: var(--line-height-sm);
-    padding: var(--sizing-xs) var(--sizing-sm);
-
-    &:not(.active):focus,
-    &:not(.active):focus-within {
-      padding: var(--sizing-xs) calc(var(--sizing-sm) + 2px);
-    }
+    outline: var(--outline-default);
   }
 
   &.secondary {

@@ -36,7 +36,7 @@ body {
 
 a:focus,
 a:focus-within {
-  outline: 2px dashed var(--accent-color);
+  outline: var(--outline-default);
   text-decoration: none;
 }
 
@@ -91,7 +91,6 @@ code {
   &.brand-mastodon > svg { stroke: var(--brand-mastodon); }
   &.article > svg { stroke: var(--posts); }
   &.books > svg { stroke: var(--books); }
-  &.brain > svg { stroke: var(--brand-listenbrainz); }
   &.clock-hour-3 > svg { stroke: var(--now); }
   &.coffee > svg { stroke: var(--brand-buy-me-a-coffee); }
   &.device-tv > svg { stroke: var(--tv); }
@@ -106,13 +105,12 @@ code {
   &.search > svg { stroke: var(--search); }
 }
 
-:is(body, html, nav .search) svg {
-  stroke: var(--text-color);
+:is(h1, h2, h3, h4, h5, h6) svg {
+  stroke-width: var(--stroke-width-bold);
 }
 
-:is(h1, h2, h3, h4, h5, h6) svg {
-  margin-right: var(--sizing-xs);
-  stroke-width: var(--stroke-width-bold);
+:is(h1, h2, h3, h4, h5, h6):has(svg) {
+  gap: var(--sizing-xs)
 }
 
 strong,
@@ -301,7 +299,7 @@ td {
   }
 }
 
-td::first-of-type,
+td:first-of-type,
 :where(thead, tfoot) th:nth-child(2) {
 	border-inline-start: none;
 }
@@ -325,10 +323,6 @@ th {
     font-weight: var(--font-weight-extrabold);
     margin: 0;
     padding: 0;
-
-    & a {
-      text-decoration: none;
-    }
   }
 }
 
@@ -356,7 +350,7 @@ a svg:focus {
   stroke: var(--accent-color-hover);
 }
 
-a.link-icon {
+a:has(svg) {
   display: inline-flex;
   align-items: center;
   gap: var(--sizing-xs);
@@ -441,8 +435,9 @@ article {
 }
 
 footer {
-  & .explainer {
+  & p:first-of-type {
     margin: var(--sizing-3xl) 0 var(--sizing-lg);
+    font-size: var(--font-size-sm);
   }
 
   & nav {
@@ -552,10 +547,6 @@ li {
 
 .text-centered {
   text-align: center !important;
-}
-
-.text-small {
-  font-size: var(--font-size-sm) !important;
 }
 
 .flex-centered {

@@ -30,7 +30,7 @@ input[id="tracks-recent"] ~ [for="tracks-recent"]:has(+ [for="tracks-window"]) {
 #tracks-window:not(:checked) ~ [for="tracks-window"]:focus,
 #tracks-window:not(:checked) ~ [for="tracks-window"]:focus-within {
   transition-property: none;
-  outline: 2px dashed var(--accent-color);
+  outline: var(--outline-default);
   border: 0;
 }
 

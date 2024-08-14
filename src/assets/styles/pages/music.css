@@ -3,6 +3,10 @@
   border-bottom: 0;
 }
 
+.genre-focus [data-toggle-content] p:last-of-type {
+  font-size: var(--font-size-sm);
+}
+
 .artist-focus {
   margin-top: var(--sizing-base);
 
@@ -72,13 +76,21 @@
         & .brain {
           outline: 0;
 
+          & > svg {
+            stroke: var(--brand-listenbrainz);
+          }
+
           &:focus svg,
           &:focus-within svg {
-            outline: var(--outline)
+            outline: var(--outline-default)
           }
         }
       }
     }
+  }
+
+  & table + p {
+    font-size: var(--font-size-sm);
   }
 }
 

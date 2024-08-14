@@ -14,7 +14,7 @@
 
     &:focus img,
     &:focus-within img {
-      outline: var(--outline)
+      outline: var(--outline-default)
     }
   }
 

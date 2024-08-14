@@ -29,7 +29,7 @@
 
   &:focus,
   &:focus-within {
-    outline: 2px dashed var(--accent-color);
+    outline: var(--outline-default);
   }
 
   & svg {
@@ -132,8 +132,8 @@
 
     &:focus,
     &:focus-within {
-      border-top: 2px dashed var(--accent-color);
-      border-bottom: 2px dashed var(--accent-color);
+      border-top: var(--outline-default);
+      border-bottom: var(--outline-default);
     }
   }
 

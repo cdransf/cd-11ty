@@ -9,7 +9,7 @@
 
     &:focus svg,
     &:focus-within svg {
-      outline: var(--outline)
+      outline: var(--outline-default)
     }
   }
 }

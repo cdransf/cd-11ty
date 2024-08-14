@@ -1,9 +1,12 @@
-.footnotes + .banner {
-  margin-top: 0;
+* + .banner {
+  margin-top: var(--sizing-base);
+}
+
+.banner:has(+ *) {
+  margin-bottom: var(--sizing-base);
 }
 
 .banner {
-  margin: var(--sizing-base) 0;
   padding: var(--sizing-md);
   border: 1px solid;
 

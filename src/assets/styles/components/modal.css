@@ -25,7 +25,7 @@
 
       &:focus svg,
       &:focus-within svg {
-        outline: var(--outline);
+        outline: var(--outline-default);
       }
 
       & svg {
@@ -34,7 +34,7 @@
         transition: transform var(--transition-duration-default) var(--transition-ease-in-out);
 
         &:focus {
-          outline: var(--outline);
+          outline: var(--outline-default);
         }
 
         &:hover,
@@ -76,7 +76,7 @@
 
   &:focus svg,
   &:focus-within svg {
-    outline: var(--outline);
+    outline: var(--outline-default);
   }
 
   & svg {
@@ -86,7 +86,7 @@
     transition: transform var(--transition-duration-default) var(--transition-ease-in-out);
 
     &:focus {
-      outline: var(--outline);
+      outline: var(--outline-default);
     }
 
     &:hover,

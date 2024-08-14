@@ -13,21 +13,21 @@ schema: watching
 {% render "partials/blocks/banners/rss.liquid", url: "https://coryd.dev/feeds/movies", text: "Subscribe to my movies feed or follow along on this page" %}
 <hr />
 <h3 id="movies" class="section-header">
-  <a class="link-icon" href="/watching/recent/movies">
+  <a href="/watching/recent/movies">
     {% tablericon "movie" "Recent movies" %}
     Recent movies
   </a>
 </h3>
 {% render "partials/media/grid.liquid", data:movies.recentlyWatched, shape: "vertical", count: 6 %}
 <h3 id="tv" class="section-header">
-  <a class="link-icon" href="/watching/recent/shows">
+  <a href="/watching/recent/shows">
     {% tablericon "device-tv" "Recent shows" %}
     Recent shows
   </a>
 </h3>
 {% render "partials/media/grid.liquid", data:tv.recentlyWatched, shape: "vertical", count: 6 %}
 <h3 id="favorite-movies" class="section-header">
-  <a class="link-icon" href="/watching/favorite-movies">
+  <a href="/watching/favorite-movies">
     {% tablericon "star" "Favorite movies" %}
     Favorite movies
   </a>
@@ -35,7 +35,7 @@ schema: watching
 {% assign favoriteMovies = movies.favorites | featuredWatching: 6 %}
 {% render "partials/media/watching/grid.liquid", mediaItems:favoriteMovies, count: 6 %}
 <h3 id="favorite-shows" class="section-header">
-  <a class="link-icon" href="/watching/favorite-shows">
+  <a href="/watching/favorite-shows">
     {% tablericon "star" "Favorite shows" %}
     Favorite shows
   </a>

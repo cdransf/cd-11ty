@@ -76,6 +76,9 @@
             --font-weight-bold: 600;
             --font-weight-extrabold: 800;
 
+            /* outline */
+            --outline-default: var(--outline-default);
+
             /* borders */
             --border-default: 1px solid var(--accent-color);
           }
@@ -184,7 +187,7 @@
 
           a:focus,
           a:focus-within {
-            outline: 2px dashed var(--accent-color);
+            outline: var(--outline-default);
             text-decoration: none;
           }
 

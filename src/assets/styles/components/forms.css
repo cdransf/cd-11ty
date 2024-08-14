@@ -32,7 +32,7 @@ input:focus-within,
 textarea:focus,
 textarea:focus-within {
   border: 0;
-  outline: 2px dashed var(--accent-color);
+  outline: var(--outline-default);
   padding: calc(var(--sizing-sm) + 1px);
 }
 
@@ -46,7 +46,7 @@ select {
   &:focus,
   &:focus-within {
     border: 0;
-    outline: var(--outline)
+    outline: var(--outline-default)
   }
 }
 
