@@ -17,10 +17,6 @@
     height: auto;
   }
 
-  &.page-header {
-    margin-bottom: var(--sizing-base);
-  }
-
   &.hero {
     position: relative;
     overflow: hidden;

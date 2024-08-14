@@ -11,10 +11,6 @@ theme-toggle {
 
   & svg {
     cursor: pointer;
-    transform: rotate(0deg);
-    transition-property: transform;
-    transition-timing-function: var(--transition-ease-in-out);
-    transition-duration: var(--transition-duration-default);
   }
 
   &:hover svg,
@@ -22,7 +18,6 @@ theme-toggle {
   &:focus-within svg,
   &:active svg {
     stroke: var(--accent-color-hover);
-    transform: rotate(8deg);
   }
 
   & > .light svg { stroke: var(--sun); }

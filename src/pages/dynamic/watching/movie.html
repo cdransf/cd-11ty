@@ -10,7 +10,7 @@ schema: movie
 {%- capture alt -%}
   {{ movie.title }} / {{ movie.year }}{% if move.rating %} ({{ movie.rating }}){% endif %}
 {%- endcapture -%}
-<a class="back-link-header" href="/watching" title="Go back to the watching index page">{% tablericon "arrow-left" "Go back to the watching index page" %} Back to watching</a>
+<a href="/watching" title="Go back to the watching index page">{% tablericon "arrow-left" "Go back to the watching index page" %} Back to watching</a>
 <article class="watching-focus">
   <img
     srcset="

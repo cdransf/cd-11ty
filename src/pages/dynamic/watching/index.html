@@ -7,7 +7,7 @@ updated: "now"
 schema: watching
 ---
 {% assign featuredMovie = movies.recentlyWatched | featuredWatching: 1 | first %}
-<h2 class="watching page-header">{{ title }}</h2>
+<h2 class="watching">{{ title }}</h2>
 {% render "partials/media/watching/hero.liquid" movie:featuredMovie %}
 <p>Here's all of the TV and movies I've been watching presented in what is (hopefully) an organized fashion.</p>
 {% render "partials/blocks/banners/rss.liquid", url: "https://coryd.dev/feeds/movies", text: "Subscribe to my movies feed or follow along on this page" %}
