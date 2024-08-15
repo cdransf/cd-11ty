@@ -22,9 +22,14 @@
         {%- if entry.authors %} via {{ entry.authors.name }}{%- endif -%}
         {%- if rating %} ({{ rating }}){%- endif -%}
       {%- endcapture -%}
+      {%- assign utm_parameters = "utm_source=rss&utm_medium=feed&utm_campaign=" | append: utm_campaign -%}
       <item>
         <title><![CDATA[{{ entryTitle }}]]></title>
+        {%- if utm_campaign -%}
+        <link>{{ entry.url | append: '?' | append: utm_parameters | encodeAmp }}</link>
+        {%- else -%}
         <link>{{ entry.url | encodeAmp }}</link>
+        {%- endif -%}
         <pubDate>{{ entry.date | stringToRFC822Date }}</pubDate>
         <guid isPermaLink="false">{{ entry.url | encodeAmp }}</guid>
         {%- if entry.image -%}

@@ -15,10 +15,15 @@
         {%- assign entries = data | normalizeEntries: 20 -%}
         {%- for entry in entries -%}
         {%- assign summary = entry.content | strip_html | normalize_whitespace | escape -%}
+        {%- assign utm_parameters = "utm_source=rss&utm_medium=feed&utm_campaign=" | append: utm_campaign -%}
         {
             "id": "{{ entry.url | encodeAmp | escape }}",
             "title": "{{ entry.title | escape }}{% if entry.authors %} via {{ entry.authors.name | escape }}{% endif %}{% if entry.rating %} ({{ entry.rating | escape }}){% endif %}",
-            "url": "{{ entry.url | encodeAmp | escape }}",
+            {%- if utm_campaign -%}
+            "url": "{{ entry.url | append: '?' | append: utm_parameters }}",
+            {%- else -%}
+            "url": "{{ entry.url | encodeAmp }}",
+            {%- endif -%}
             "content_html": "{{ summary }}",
             "summary": "{{ summary }}",
             {%- if entry.author -%}
