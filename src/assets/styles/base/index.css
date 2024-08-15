@@ -43,8 +43,8 @@ body {
 
 ::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  width: var(--sizing-sm);
-  height: var(--sizing-sm);
+  width: var(--sizing-md);
+  height: var(--sizing-md);
 }
 
 a:focus,
