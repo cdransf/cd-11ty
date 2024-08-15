@@ -8,12 +8,9 @@ permalink: "{{ post.slug }}/index.html"
 schema: blog
 ---
 <article class="h-entry standalone">
-  <div class="time-wrapper flex-centered">
-    {% tablericon "calendar-month" "Date" %}
-    <time class="dt-published" datetime="{{ date }}">
-      {{ post.date | date: "%B %e, %Y" }}
-    </time>
-  </div>
+  <time class="dt-published" datetime="{{ date }}">
+    {{ post.date | date: "%B %e, %Y" }}
+  </time>
   <h3 class="p-name">{{ post.title }}</h3>
   <span class="p-author h-card hidden">{{ globals.author }}</span>
   <div class="p-summary hidden">{{ post.description }}</div>

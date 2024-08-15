@@ -84,7 +84,7 @@ schema: artist
           {% if venue %} at {{ venue }}{% endif %}
           {%- if concert.notes -%}
             {% assign notes = concert.notes | prepend: "### Notes\n" | markdown %}
-            {% render "partials/blocks/modal.liquid", label:"Concert info", icon:"info-circle", content:notes, id:concert.id %}
+            {% render "partials/blocks/modal.liquid", label:"Concert info", icon:"info-square", content:notes, id:concert.id %}
           {%- endif -%}
         </li>
       {% endfor %}

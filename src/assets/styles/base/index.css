@@ -88,11 +88,11 @@ code {
   &.books > svg { stroke: var(--books); }
   &.clock-hour-3 > svg { stroke: var(--now); }
   &.coffee > svg { stroke: var(--brand-buy-me-a-coffee); }
-  &.device-tv > svg { stroke: var(--tv); }
+  &.device-tv-old > svg { stroke: var(--tv); }
   &.favorite > svg { stroke: var(--favorite); }
   &.headphones > svg { stroke: var(--music); }
   &.heart-handshake > svg { stroke: var(--webrings); }
-  &.info-circle > svg { stroke: var(--about); }
+  &.info-square > svg { stroke: var(--about); }
   &.json > svg { stroke: var(--json); }
   &.link > svg { stroke: var(--links); }
   &.mail-plus > svg { stroke: var(--newsletter); }
@@ -453,14 +453,8 @@ article {
     margin-right: var(--sizing-xs);
   }
 
-  & .time-wrapper {
-    gap: var(--sizing-xs);
-
-    & > svg {
-      width: var(--sizing-lg);
-      height: var(--sizing-lg);
-      stroke: var(--gray-dark);
-    }
+  & time {
+    display: block;
   }
 
   & [rel="author"] {

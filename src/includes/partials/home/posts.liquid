@@ -8,12 +8,9 @@
   </div>
   {%- for post in posts -%}
   <article class="h-entry">
-    <div class="time-wrapper flex-centered">
-      {% tablericon "calendar-month" "Date" %}
-      <time class="dt-published" datetime="{{ post.date }}">
-        {{ post.date | date: "%B %e, %Y" }}
-      </time>
-    </div>
+    <time class="dt-published" datetime="{{ post.date }}">
+      {{ post.date | date: "%B %e, %Y" }}
+    </time>
     <a href="{{ post.slug }}">
       <h3>{{ post.title }}</h3>
     </a>
