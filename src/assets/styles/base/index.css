@@ -80,13 +80,13 @@ code {
 
 /* social icons */
 :is(body, html, nav) a {
-  &.brand-gmail > svg { stroke: var(--brand-gmail); }
+  &.mail > svg { stroke: var(--brand-gmail); }
   &.brand-github > svg { stroke: var(--brand-github); }
   &.brand-npm > svg { stroke: var(--brand-npm); }
   &.brand-mastodon > svg { stroke: var(--brand-mastodon); }
   &.article > svg { stroke: var(--posts); }
   &.books > svg { stroke: var(--books); }
-  &.clock-hour-3 > svg { stroke: var(--now); }
+  &.device-watch > svg { stroke: var(--now); }
   &.coffee > svg { stroke: var(--brand-buy-me-a-coffee); }
   &.device-tv-old > svg { stroke: var(--tv); }
   &.favorite > svg { stroke: var(--favorite); }
