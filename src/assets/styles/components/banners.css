@@ -1,8 +1,10 @@
-* + .banner {
+* + .banner,
+:not(* + .banner) .banner:first-of-type {
   margin-top: var(--sizing-base);
 }
 
-.banner:has(+ *) {
+.banner:has(+ *),
+:not(* + .banner) .banner:last-of-type {
   margin-bottom: var(--sizing-base);
 }
 
