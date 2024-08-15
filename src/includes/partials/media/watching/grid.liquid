@@ -16,7 +16,7 @@
             </div>
           {%- else -%}
             <div class="header">{{ item.name }}</div>
-            <div class="subheader flex-centered">{{ item.year }}</div>
+            <div class="subheader flex-centered">({{ item.year }})</div>
           {%- endif -%}
         </div>
         {%- assign loadingStrategy = loading | default: 'lazy' -%}
