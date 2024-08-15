@@ -4,8 +4,8 @@
   overflow: hidden;
   height: var(--sizing-lg);
   width: 100%;
-}
 
-.progress-bar {
-  background-color: var(--accent-color);
+  & .progress-bar {
+    background-color: var(--accent-color);
+  }
 }

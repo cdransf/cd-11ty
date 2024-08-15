@@ -51,7 +51,7 @@
       content: '';
       top: 0;
       left: 1px;
-      box-shadow: inset 0 -85px 60px -65px var(--black);
+      box-shadow: inset 0 -85px 60px -60px var(--black);
       width: calc(100% - 2px);
       height: calc(100% - 1px);
     }
@@ -87,7 +87,7 @@
       color: var(--color-lightest);
       font-size: var(--font-size-sm);
       line-height: 1.5;
-      text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
+      text-shadow: var(--black) 0px 0px 10px;
     }
 
     & .header {

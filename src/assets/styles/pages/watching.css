@@ -4,8 +4,8 @@
     border: 0
   }
 
-  & a:focus .shadow::after,
-  & a:focus-within .shadow::after {
+  & a:focus .shadow:after,
+  & a:focus-within .shadow:after {
     left: 0;
     width: 100%;
     height: 100%

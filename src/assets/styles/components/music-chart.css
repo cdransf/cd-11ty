@@ -12,17 +12,18 @@
 
   & .item {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    overflow: hidden;
 
     &:not(:last-of-type) {
       margin-bottom: var(--sizing-md);
     }
 
     & .progress-bar-wrapper {
+      margin-top: var(--sizing-sm);
       max-width: 40%;
-      margin-left: var(--sizing-lg);
     }
 
     & img {
@@ -39,13 +40,13 @@
     & .presentation {
       justify-content: start;
       gap: var(--sizing-md);
-      width: calc(55% - var(--sizing-lg));
     }
 
     & .meta {
       display: flex;
       flex-direction: row;
       align-items: center;
+      max-width: 95%;
     }
 
     & .meta-text {
@@ -89,13 +90,8 @@
     }
 
     & .timestamp {
-      margin-left: var(--sizing-lg);
-      text-align: right;
-      white-space: nowrap;
-    }
-
-    & .info {
-      max-width: calc(75% - var(--sizing-lg));
+      margin-top: var(--sizing-sm);
+      margin-left: 0;
     }
   }
 
@@ -105,18 +101,16 @@
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: var(--sizing-base);
 
-    & .item {
-      & .meta {
-        max-width: 80%;
+    & .item .meta {
+      max-width: 80%;
 
-        & .title {
-          line-height: var(--line-height-sm);
-        }
+      & .title {
+        line-height: var(--line-height-sm);
+      }
 
-        & .subtext p {
-          margin: 0;
-          line-height: var(--line-height-sm);
-        }
+      & .subtext p {
+        margin: 0;
+        line-height: var(--line-height-sm);
       }
     }
   }
@@ -134,12 +128,30 @@
     }
 
     & .item {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
       & .meta {
         width: calc(75% - var(--sizing-lg));
       }
 
       & .meta-text {
         max-width: 85%;
+      }
+
+      & .timestamp {
+        margin-left: var(--sizing-lg);
+        text-align: right;
+        white-space: nowrap;
+      }
+
+      & .info {
+        max-width: calc(75% - var(--sizing-lg));
+      }
+
+      & .progress-bar-wrapper {
+        margin-left: var(--sizing-lg);
       }
     }
 
