@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "22.4.1",
+  "version": "22.4.2",
   "description": "The source for my personal site. Built using 11ty (and other tools).",
   "type": "module",
   "scripts": {
@@ -39,7 +39,7 @@
     "@supabase/supabase-js": "^2.45.1",
     "dotenv-flow": "^4.1.0",
     "ics": "^3.7.6",
-    "liquidjs": "^10.16.2",
+    "liquidjs": "^10.16.3",
     "luxon": "^3.5.0",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.0.1",
