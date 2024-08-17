@@ -23,7 +23,8 @@ label:has(input):has(+ *) input,
 input[type="text"]:has(+ *),
 input[type="email"]:has(+ *),
 input[type="search"]:has(+ *),
-textarea:has(+ *) {
+textarea:has(+ *),
+form:has(+ *) {
   margin-bottom: var(--sizing-base);
 }
 
