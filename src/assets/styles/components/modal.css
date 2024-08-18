@@ -43,15 +43,6 @@
       }
     }
   }
-
-  @media screen and (min-width: 768px) {
-    .modal-body {
-      max-height: 75%;
-      max-width: 75%;
-      inset: 12.5%;
-      border: 1px solid var(--gray-light);
-    }
-  }
 }
 
 .modal-input {
@@ -89,5 +80,14 @@
     &:active {
       stroke: var(--accent-color-hover);
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-wrapper .modal-body {
+    max-height: 75%;
+    max-width: 75%;
+    inset: 12.5%;
+    border: 1px solid var(--gray-light);
   }
 }
