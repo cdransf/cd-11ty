@@ -516,6 +516,6 @@ ul, ol {
   h6 { font-size: var(--font-size-md); }
 
   main {
-    max-width: 1024px;
+    max-width: 768px;
   }
 }

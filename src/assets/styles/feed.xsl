@@ -313,7 +313,7 @@
             h3 { font-size: var(--font-size-xl); }
 
             main {
-              max-width: 1024px;
+              max-width: 768px;
             }
           }
         </style>
