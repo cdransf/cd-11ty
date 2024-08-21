@@ -120,6 +120,7 @@
             word-spacing: -.125rem;
             color: var(--text-color);
             background-color: var(--background-color);
+            margin: 0;
           }
 
           html {
