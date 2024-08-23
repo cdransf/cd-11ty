@@ -98,7 +98,8 @@ export const processContent = (collection) => {
 
         const content = {
           url: `${BASE_URL}${item['url']}`,
-          title: `${icon}: ${getTitle(item)}${attribution ? ' via ' + attribution : ''}${hashTags}`
+          title: `${icon}: ${getTitle(item)}${attribution ? ' via ' + attribution : ''}${hashTags}`,
+          type: item['type']
         }
 
         // set url for link posts

@@ -3,7 +3,7 @@ import { URL } from 'url'
 import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItFootnote from 'markdown-it-footnote'
-import sanitizeHtml from 'sanitize-html';
+import sanitizeHtml from 'sanitize-html'
 
 import { shuffleArray, sanitizeMediaString } from '../utilities/index.js'
 
@@ -143,9 +143,7 @@ export default {
       if (entry?.['slug'] && entry['content']) excerpt = sanitizeHtml(`${md.render(entry['content'])}${feedNote}`, {
         disallowedTagsMode: 'completelyDiscard'
       })
-
       if (entry['backdrop']) image = entry['backdrop']
-
       if (entry) posts.push({
         title: title.trim(),
         url,
