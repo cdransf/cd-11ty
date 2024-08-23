@@ -13,6 +13,11 @@
     }
   }
 
+  & a:has(img) {
+    display: flex;
+  }
+
+
   & img {
     max-width: calc(var(--sizing-3xl) * 4);
     height: auto;
@@ -22,8 +27,12 @@
     transition-duration: 300ms;
   }
 
-  & a:hover img,
   & a:focus img,
+  & a:focus-within img {
+    border: 0
+  }
+
+  & a:hover img,
   & a:active img {
     border-color: var(--accent-color-hover)
   }
