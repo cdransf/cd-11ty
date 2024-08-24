@@ -40,10 +40,10 @@ schema: artist
     <div class="artist-meta">
       <p class="title"><strong>{{ artist.name }}</strong></p>
       {%- if artist.favorite -%}
-        <p class="sub-meta favorite flex-centered">{% tablericon "heart" "Favorite" %} This is one of my favorite artists!</p>
+        <p class="sub-meta favorite">{% tablericon "heart" "Favorite" %} This is one of my favorite artists!</p>
       {%- endif -%}
       {%- if artist.tattoo -%}
-        <p class="sub-meta tattoo flex-centered">{% tablericon "needle" "Tattoo" %} I have a tattoo inspired by this artist!</p>
+        <p class="sub-meta tattoo">{% tablericon "needle" "Tattoo" %} I have a tattoo inspired by this artist!</p>
       {%- endif -%}
       {%- if artist.totalPlays > 0 -%}
         <p class="sub-meta"><strong class="highlight-text">{{ artist.totalPlays }} plays</strong></p>
