@@ -89,8 +89,20 @@ schema: artist
         </li>
       {% endfor %}
     </ul>
-    <hr />
   {%- endif -%}
+  {%- if artist.books -%}
+  <hr />
+  <p id="books" class="books flex-centered">
+    {% tablericon "books" "books" %}
+    I've read about this artist!
+  </p>
+  <ul>
+    {% for book in artist.books %}
+      <li><a href="{{ book.url }}">{{ book.title }}</a> by {{ book.author }}</li>
+    {% endfor %}
+  </ul>
+  {%- endif -%}
+  {%- if artist.books or artist.concerts -%}<hr />{%- endif -%}
   <table>
     <tr>
       <th>Album</th>

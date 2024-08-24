@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
+import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
@@ -25,7 +26,8 @@ const fetchAllBooks = async () => {
         review,
         art,
         favorite,
-        tags
+        tags,
+        artists
       `)
       .order('date_finished', { ascending: false })
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
@@ -47,6 +49,11 @@ const processBooks = (books) => {
   return books.map(book => {
     const dateFinished = new Date(book['date_finished'])
     const year = dateFinished.getUTCFullYear()
+    const artists = book?.['artists']?.map(artist => {
+      artist['url'] = `/music/artists/${sanitizeMediaString(artist['name'])}-${sanitizeMediaString(parseCountryField(artist['country']))}`
+      return artist
+    }).sort((a, b) => a['name'].localeCompare(b['name']))
+
     return {
       title: book['title'],
       author: book['author'] || '',
@@ -59,9 +66,10 @@ const processBooks = (books) => {
       date: book['date_finished'],
       status: book['read_status'],
       progress: book['progress'],
-      tags: book['tags'] ? book['tags'].split(',') : [],
+      tags: Array.isArray(book['tags']) ? book['tags'] : book['tags']?.split(',') || [], // Ensure tags is an array
       isbn: book['isbn'],
       type: 'book',
+      artists,
       year,
     }
   })

@@ -6,6 +6,10 @@ button,
   appearance: none;
   border: none;
 
+  & + hr {
+    margin-top: 0;
+  }
+
   &:not(.theme-toggle) {
     border: 2px solid var(--accent-color);
     padding: var(--sizing-xs) var(--sizing-md);

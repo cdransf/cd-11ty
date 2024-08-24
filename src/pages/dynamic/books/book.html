@@ -54,6 +54,25 @@ schema: book
     {{ book.review | markdown }}
     <hr />
   {% endif %}
+  {%- if book.artists -%}
+    {%- capture sectionTitle -%}
+      {% if book.artists.size > 1 %}
+        I listen to artists featured in this book!
+      {% else %}
+      I listen to the artist featured in this book!
+      {%- endif -%}
+    {%- endcapture -%}
+    <p id="artists" class="music flex-centered">
+      {% tablericon "headphones" "Music" %}
+      {{ sectionTitle }}
+    </p>
+    <ul>
+      {% for artist in book.artists %}
+        <li><a href="{{ artist.url }}">{{ artist.name }}</a>{%- if artist.total_plays > 0 -%}: <strong class="highlight-text">{{ artist.total_plays }} plays</strong>{%- endif -%}</li>
+      {% endfor %}
+    </ul>
+    <hr />
+  {%- endif -%}
   {% if book.description %}
     <h3>Overview</h3>
     {{ book.description | markdown }}

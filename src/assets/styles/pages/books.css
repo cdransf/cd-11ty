@@ -112,6 +112,15 @@
 
   p {
     margin: var(--sizing-base) 0;
+
+    &.music {
+      color: var(--music);
+
+      & svg {
+        stroke: var(--music);
+        margin-right: var(--sizing-xs);
+      }
+    }
   }
 }
 

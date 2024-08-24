@@ -26,6 +26,15 @@
     }
   }
 
+  & p.books {
+    color: var(--books);
+
+    & svg {
+      stroke: var(--books);
+      margin-right: var(--sizing-xs);
+    }
+  }
+
   & .artist-display {
     display: flex;
     flex-direction: column;

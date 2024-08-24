@@ -27,7 +27,8 @@ const fetchAllArtists = async () => {
         tattoo,
         art,
         albums,
-        concerts
+        concerts,
+        books
       `)
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
 
@@ -66,7 +67,14 @@ const processArtists = (artists) => {
       totalPlays: album['total_plays'],
       art: album.art ? `/${album['art']}` : ''
     })).sort((a, b) => a['release_year'] - b['release_year']),
-    concerts: artist['concerts']?.[0]?.id ? artist['concerts'].sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null
+    concerts: artist['concerts']?.[0]?.id ? artist['concerts'].sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
+    books: artist['books']?.[0]?.id ? artist['books'].map(book => ({
+      title: book['title'],
+      author: book['author'],
+      isbn: book['isbn'],
+      description: book['description'],
+      url: `/books/${book['isbn']}`,
+    })).sort((a, b) => a['title'].localeCompare(b['title'])) : null
   }))
 }
 
