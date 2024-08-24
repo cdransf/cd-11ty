@@ -66,7 +66,7 @@ const processMovies = (movies) => {
     id: item['tmdb_id'],
     type: 'movie',
     tags: item['tags'] ? item['tags'].split(',') : [],
-    artists: item['artists']?.[0]?.['name'] ? item['artists'].map(artist => {
+    artists: item['artists']?.[0]?.['id'] ? item['artists'].map(artist => {
       artist['url'] = `/music/artists/${sanitizeMediaString(artist['name'])}-${sanitizeMediaString(parseCountryField(artist['country']))}`
       return artist
     }).sort((a, b) => a['name'].localeCompare(b['name'])) : null,
