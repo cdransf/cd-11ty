@@ -57,9 +57,9 @@ schema: book
   {%- if book.artists -%}
     {%- capture sectionTitle -%}
       {% if book.artists.size > 1 %}
-        I listen to artists featured in this book!
+        I listen to artists in this book!
       {% else %}
-      I listen to the artist featured in this book!
+      I listen to the artist in this book!
       {%- endif -%}
     {%- endcapture -%}
     <p id="artists" class="music flex-centered">
