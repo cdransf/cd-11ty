@@ -22,7 +22,7 @@
 
     & svg {
       stroke: var(--concerts);
-      margin-right: var(--sizing-xs);
+      margin-bottom: -6px;
     }
   }
 
@@ -31,7 +31,7 @@
 
     & svg {
       stroke: var(--books);
-      margin-right: var(--sizing-xs);
+      margin-bottom: -6px;
     }
   }
 

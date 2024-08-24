@@ -64,7 +64,7 @@ schema: artist
   {%- endif -%}
   {%- if artist.concerts -%}
     <hr />
-    <p id="concerts" class="concerts flex-centered">
+    <p id="concerts" class="concerts">
       {% tablericon "device-speaker" "concert" %}
       I've seen this artist live!
     </p>
@@ -92,7 +92,7 @@ schema: artist
   {%- endif -%}
   {%- if artist.books -%}
   <hr />
-  <p id="books" class="books flex-centered">
+  <p id="books" class="books">
     {% tablericon "books" "books" %}
     I've read about this artist!
   </p>
