@@ -49,10 +49,6 @@ const processBooks = (books) => {
   return books.map(book => {
     const dateFinished = new Date(book['date_finished'])
     const year = dateFinished.getUTCFullYear()
-    const artists = book?.['artists']?.map(artist => {
-      artist['url'] = `/music/artists/${sanitizeMediaString(artist['name'])}-${sanitizeMediaString(parseCountryField(artist['country']))}`
-      return artist
-    }).sort((a, b) => a['name'].localeCompare(b['name']))
 
     return {
       title: book['title'],
@@ -69,7 +65,10 @@ const processBooks = (books) => {
       tags: Array.isArray(book['tags']) ? book['tags'] : book['tags']?.split(',') || [], // Ensure tags is an array
       isbn: book['isbn'],
       type: 'book',
-      artists,
+      artists: book['artists']?.[0]?.['id'] ? book['artists'].map(artist => {
+        artist['url'] = `/music/artists/${sanitizeMediaString(artist['name'])}-${sanitizeMediaString(parseCountryField(artist['country']))}`
+        return artist
+      }).sort((a, b) => a['name'].localeCompare(b['name'])) : null,
       year,
     }
   })

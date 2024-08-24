@@ -93,7 +93,7 @@ schema: artist
   {%- if artist.books -%}
   <hr />
   <p id="books" class="books">
-    {% tablericon "books" "books" %}
+    {% tablericon "books" "Books" %}
     I've read about this artist!
   </p>
   <ul>
@@ -102,7 +102,26 @@ schema: artist
     {% endfor %}
   </ul>
   {%- endif -%}
-  {%- if artist.books or artist.concerts -%}<hr />{%- endif -%}
+  {%- if artist.movies -%}
+    {%- capture sectionTitle -%}
+      {% if artist.movies.size > 1 %}
+        I've watched a movie about this artist!
+      {% else %}
+        I've watched a movie about this artist!
+      {%- endif -%}
+    {%- endcapture -%}
+    <hr />
+    <p id="movies" class="movies">
+      {% tablericon "device-tv-old" "Movies" %}
+      {{ sectionTitle}}
+    </p>
+    <ul>
+      {% for movie in artist.movies %}
+        <li><a href="{{ movie.url }}">{{ movie.title }}</a> ({{ movie.year }})</li>
+      {% endfor %}
+    </ul>
+  {%- endif -%}
+  {%- if artist.books or artist.concerts or artist.movies -%}<hr />{%- endif -%}
   <table>
     <tr>
       <th>Album</th>

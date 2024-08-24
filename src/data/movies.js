@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
 import { DateTime } from 'luxon'
+import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
@@ -27,7 +28,8 @@ const fetchAllMovies = async () => {
         review,
         art,
         backdrop,
-        tags
+        tags,
+        artists
       `)
       .order('last_watched', { ascending: false })
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
@@ -47,29 +49,28 @@ const fetchAllMovies = async () => {
 }
 
 const processMovies = (movies) => {
-  return movies.map(item => {
-    const lastWatched = DateTime.fromISO(item['last_watched'], { zone: 'utc' })
-    const year = DateTime.now().year
-
-    return {
-      title: item['title'],
-      lastWatched: item['last_watched'],
-      dateAdded: item['last_watched'],
-      year: item['year'],
-      url: `/watching/movies/${item['tmdb_id']}`,
-      description: item['description'],
-      image: item['art'] ? `/${item['art']}` : '',
-      backdrop: item['backdrop'] ? `/${item['backdrop']}` : '',
-      plays: item['plays'],
-      collected: item['collected'],
-      favorite: item['favorite'],
-      rating: item['star_rating'],
-      review: item['review'],
-      id: item['tmdb_id'],
-      type: 'movie',
-      tags: item['tags'] ? item['tags'].split(',') : [],
-    }
-  })
+  return movies.map(item => ({
+    title: item['title'],
+    lastWatched: item['last_watched'],
+    dateAdded: item['last_watched'],
+    year: item['year'],
+    url: `/watching/movies/${item['tmdb_id']}`,
+    description: item['description'],
+    image: item['art'] ? `/${item['art']}` : '',
+    backdrop: item['backdrop'] ? `/${item['backdrop']}` : '',
+    plays: item['plays'],
+    collected: item['collected'],
+    favorite: item['favorite'],
+    rating: item['star_rating'],
+    review: item['review'],
+    id: item['tmdb_id'],
+    type: 'movie',
+    tags: item['tags'] ? item['tags'].split(',') : [],
+    artists: item['artists']?.[0]?.['name'] ? item['artists'].map(artist => {
+      artist['url'] = `/music/artists/${sanitizeMediaString(artist['name'])}-${sanitizeMediaString(parseCountryField(artist['country']))}`
+      return artist
+    }).sort((a, b) => a['name'].localeCompare(b['name'])) : null,
+  }))
 }
 
 export default async function () {

@@ -32,7 +32,15 @@
       stroke: var(--books);
     }
   }
-  
+
+  & p.movies {
+    color: var(--tv);
+
+    & svg {
+      stroke: var(--tv);
+    }
+  }
+
   & p > svg {
     margin-bottom:  var(--inline-margin-bottom);
   }

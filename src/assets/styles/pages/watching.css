@@ -139,6 +139,15 @@
     aspect-ratio: var(--aspect-ratio-banner);
   }
 
+  & p.music {
+    color: var(--music);
+
+    & svg {
+      stroke: var(--music);
+      margin-bottom: var(--inline-margin-bottom);
+    }
+  }
+
   & .watching-meta {
     display: flex;
     flex-direction: column;

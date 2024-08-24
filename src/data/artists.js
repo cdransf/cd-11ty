@@ -28,7 +28,8 @@ const fetchAllArtists = async () => {
         art,
         albums,
         concerts,
-        books
+        books,
+        movies
       `)
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
 
@@ -67,14 +68,20 @@ const processArtists = (artists) => {
       totalPlays: album['total_plays'],
       art: album.art ? `/${album['art']}` : ''
     })).sort((a, b) => a['release_year'] - b['release_year']),
-    concerts: artist['concerts']?.[0]?.id ? artist['concerts'].sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
-    books: artist['books']?.[0]?.id ? artist['books'].map(book => ({
+    concerts: artist['concerts']?.[0]?.['id'] ? artist['concerts'].sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
+    books: artist['books']?.[0]?.['id'] ? artist['books'].map(book => ({
       title: book['title'],
       author: book['author'],
       isbn: book['isbn'],
       description: book['description'],
       url: `/books/${book['isbn']}`,
-    })).sort((a, b) => a['title'].localeCompare(b['title'])) : null
+    })).sort((a, b) => a['title'].localeCompare(b['title'])) : null,
+    movies: artist['movies']?.[0]?.['id'] ? artist['movies'].map(movie => ({
+      title: movie['title'],
+      year: movie['year'],
+      tmdb_id: movie['tmdb_id'],
+      url: `/watching/movies/${movie['tmdb_id']}`,
+    })).sort((a, b) => b['year'] - a['year']) : null,
   }))
 }
 
