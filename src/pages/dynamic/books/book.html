@@ -73,6 +73,25 @@ schema: book
     </ul>
     <hr />
   {%- endif -%}
+  {%- if book.movies -%}
+    {%- capture sectionTitle -%}
+      {% if book.movies.size > 1 %}
+        I've watched movies related to this book!
+      {% else %}
+        I've watched a movie related to this book!
+      {%- endif -%}
+    {%- endcapture -%}
+    <hr />
+    <p id="movies" class="movies">
+      {% tablericon "device-tv-old" "Movies" %}
+      {{ sectionTitle }}
+    </p>
+    <ul>
+      {% for movie in book.movies %}
+        <li><a href="{{ movie.url }}">{{ movie.title }}</a> ({{ movie.year }})</li>
+      {% endfor %}
+    </ul>
+  {%- endif -%}
   {% if book.description %}
     <h3>Overview</h3>
     {{ book.description | markdown }}

@@ -113,12 +113,23 @@
   p {
     margin: var(--sizing-base) 0;
 
+    & svg {
+      margin-bottom: var(--inline-margin-bottom);
+    }
+
     &.music {
       color: var(--music);
 
       & svg {
         stroke: var(--music);
-        margin-bottom: var(--inline-margin-bottom);
+      }
+    }
+
+    &.movies {
+      color: var(--tv);
+
+      & svg {
+        stroke: var(--tv);
       }
     }
   }

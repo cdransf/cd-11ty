@@ -139,12 +139,23 @@
     aspect-ratio: var(--aspect-ratio-banner);
   }
 
+  & p > svg {
+    margin-bottom: var(--inline-margin-bottom);
+  }
+
   & p.music {
     color: var(--music);
 
     & svg {
       stroke: var(--music);
-      margin-bottom: var(--inline-margin-bottom);
+    }
+  }
+
+  & p.books {
+    color: var(--books);
+
+    & svg {
+      stroke: var(--books);
     }
   }
 

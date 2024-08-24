@@ -27,7 +27,8 @@ const fetchAllBooks = async () => {
         art,
         favorite,
         tags,
-        artists
+        artists,
+        movies
       `)
       .order('date_finished', { ascending: false })
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
@@ -69,6 +70,10 @@ const processBooks = (books) => {
         artist['url'] = `/music/artists/${sanitizeMediaString(artist['name'])}-${sanitizeMediaString(parseCountryField(artist['country']))}`
         return artist
       }).sort((a, b) => a['name'].localeCompare(b['name'])) : null,
+      movies: book['movies']?.[0]?.['id'] ? book['movies'].map(movie => {
+        movie['url'] =`/watching/movies/${movie['tmdb_id']}`
+        return movie
+      }).sort((a, b) => b['year'] - a['year']) : null,
       year,
     }
   })

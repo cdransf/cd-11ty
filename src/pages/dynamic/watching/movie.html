@@ -55,7 +55,7 @@ schema: movie
       {% if movie.artists.size > 1 %}
         I listen to artists featured in this movie!
       {% else %}
-      I listen to the artist featured in this movie!
+        I listen to the artist featured in this movie!
       {%- endif -%}
     {%- endcapture -%}
     <p id="artists" class="music">
@@ -65,6 +65,18 @@ schema: movie
     <ul>
       {% for artist in movie.artists %}
         <li><a href="{{ artist.url }}">{{ artist.name }}</a>{%- if artist.total_plays > 0 -%}: <strong class="highlight-text">{{ artist.total_plays }} plays</strong>{%- endif -%}</li>
+      {% endfor %}
+    </ul>
+    <hr />
+  {%- endif -%}
+  {%- if movie.books -%}
+    <p id="books" class="books">
+      {% tablericon "books" "Books" %}
+      I've read about this movie!
+    </p>
+    <ul>
+      {% for book in movie.books %}
+        <li><a href="{{ book.url }}">{{ book.title }}</a> by {{ book.author }}</li>
       {% endfor %}
     </ul>
     <hr />
