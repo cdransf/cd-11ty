@@ -22,7 +22,6 @@
 
     & svg {
       stroke: var(--concerts);
-      margin-bottom: -6px;
     }
   }
 
@@ -31,8 +30,11 @@
 
     & svg {
       stroke: var(--books);
-      margin-bottom: -6px;
     }
+  }
+  
+  & p > svg {
+    margin-bottom: -6px;
   }
 
   & .artist-display {
