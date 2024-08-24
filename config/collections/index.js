@@ -65,8 +65,8 @@ export const processContent = (collection) => {
     }
   }
 
-  const movieData = movies['movies'].filter((movie) => movie['review']?.length && movie['rating'])
-  const bookData = books.all.filter((book) => book['review']?.length && book['rating'])
+  const movieData = movies['movies'].filter((movie) => movie['rating'])
+  const bookData = books.all.filter((book) => book['rating'])
 
   const addItemToIndex = (items, icon, getUrl, getTitle, getTags) => {
     if (items) {
