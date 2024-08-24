@@ -34,7 +34,7 @@
   }
   
   & p > svg {
-    margin-bottom: -6px;
+    margin-bottom:  var(--inline-margin-bottom);
   }
 
   & .artist-display {
@@ -64,7 +64,6 @@
           svg {
             width: var(--sizing-svg-sm);
             height: var(--sizing-svg-sm);
-            margin-right: var(--sizing-xs);
           }
         }
 

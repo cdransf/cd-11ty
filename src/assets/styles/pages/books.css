@@ -118,7 +118,7 @@
 
       & svg {
         stroke: var(--music);
-        margin-bottom: -6px;
+        margin-bottom: var(--inline-margin-bottom);
       }
     }
   }
