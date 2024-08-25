@@ -8,7 +8,7 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 const fetchGenresWithArtists = async () => {
   const { data, error } = await supabase
-    .from('genres')
+    .from('optimized_genres')
     .select(`
       name,
       description,
@@ -21,7 +21,9 @@ const fetchGenresWithArtists = async () => {
         country,
         description,
         favorite
-      )
+      ),
+      books,
+      movies
     `)
     .order('id', { ascending: true })
 
@@ -36,7 +38,20 @@ const fetchGenresWithArtists = async () => {
       ...artist,
       country: parseCountryField(artist['country'])
     })),
-    url: `/music/genres/${slugify(genre['name'].replace('/', '-').toLowerCase())}`
+    url: `/music/genres/${slugify(genre['name'].replace('/', '-').toLowerCase())}`,
+    books: genre['books']?.[0]?.['id'] ? genre['books'].map(book => ({
+      title: book['title'],
+      author: book['author'],
+      isbn: book['isbn'],
+      description: book['description'],
+      url: `/books/${book['isbn']}`,
+    })).sort((a, b) => a['title'].localeCompare(b['title'])) : null,
+    movies: genre['movies']?.[0]?.['id'] ? genre['movies'].map(movie => ({
+      title: movie['title'],
+      year: movie['year'],
+      tmdb_id: movie['tmdb_id'],
+      url: `/watching/movies/${movie['tmdb_id']}`,
+    })).sort((a, b) => b['year'] - a['year']) : null,
   }))
 }
 

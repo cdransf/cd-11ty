@@ -14,35 +14,35 @@
     "items": [
         {%- assign entries = data | normalizeEntries: 20 -%}
         {%- for entry in entries -%}
-        {%- assign summary = entry.content | strip_html | normalize_whitespace | escape -%}
-        {%- assign utm_parameters = "utm_source=rss&utm_medium=feed&utm_campaign=" | append: utm_campaign -%}
-        {
-            "id": "{{ entry.url | encodeAmp | escape }}",
-            "title": "{{ entry.title | escape }}{% if entry.authors %} via {{ entry.authors.name | escape }}{% endif %}{% if entry.rating %} ({{ entry.rating | escape }}){% endif %}",
-            {%- if utm_campaign -%}
-            "url": "{{ entry.url | append: '?' | append: utm_parameters }}",
-            {%- else -%}
-            "url": "{{ entry.url | encodeAmp }}",
-            {%- endif -%}
-            "content_html": "{{ summary }}",
-            "summary": "{{ summary }}",
-            {%- if entry.author -%}
-            "external_url": "{{ entry.url | encodeAmp | escape }}",
-            "authors": [{
-              "name": "{{ entry.author.name | escape }}",
-              "url": "{{ entry.author.url | escape }}",
-              "mastodon": "{{ entry.author.mastodon | escape }}",
-              "rss": "{{ entry.author.feed | escape }}"
-            }],
-            {%- endif %}
-            "date_published": "{{ entry.date | date: '%Y-%m-%dT%H:%M:%S%:z' }}"{%- if entry.tags -%},
-            "tags": [
-              {%- for tag in entry.tags -%}
-              "{{ tag | escape }}"{%- unless forloop.last -%}, {% endunless -%}
-              {%- endfor -%}
-            ]
-            {%- endif -%}
-        }{%- if forloop.last == false -%},{%- endif -%}
+          {%- assign summary = entry.content | strip_html | normalize_whitespace | escape -%}
+          {%- assign utm_parameters = "utm_source=rss&utm_medium=feed&utm_campaign=" | append: utm_campaign -%}
+          {
+              "id": "{{ entry.url | encodeAmp | escape }}",
+              "title": "{{ entry.title | escape }}{% if entry.authors %} via {{ entry.authors.name | escape }}{% endif %}{% if entry.rating %} ({{ entry.rating | escape }}){% endif %}",
+              {%- if utm_campaign -%}
+              "url": "{{ entry.url | append: '?' | append: utm_parameters }}",
+              {%- else -%}
+              "url": "{{ entry.url | encodeAmp }}",
+              {%- endif -%}
+              "content_html": "{{ summary }}",
+              "summary": "{{ summary }}",
+              {%- if entry.author -%}
+              "external_url": "{{ entry.url | encodeAmp | escape }}",
+              "authors": [{
+                "name": "{{ entry.author.name | escape }}",
+                "url": "{{ entry.author.url | escape }}",
+                "mastodon": "{{ entry.author.mastodon | escape }}",
+                "rss": "{{ entry.author.feed | escape }}"
+              }],
+              {%- endif %}
+              "date_published": "{{ entry.date | date: '%Y-%m-%dT%H:%M:%S%:z' }}"{%- if entry.tags -%},
+              "tags": [
+                {%- for tag in entry.tags -%}
+                "{{ tag | escape }}"{%- unless forloop.last -%}, {% endunless -%}
+                {%- endfor -%}
+              ]
+              {%- endif -%}
+          }{%- if forloop.last == false -%},{%- endif -%}
         {%- endfor -%}
     ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "22.8.0",
+  "version": "23.0.0",
   "description": "The source for my personal site. Built using 11ty (and other tools).",
   "type": "module",
   "scripts": {
@@ -41,7 +41,7 @@
     "liquidjs": "^10.16.4",
     "luxon": "^3.5.0",
     "markdown-it": "^14.1.0",
-    "markdown-it-anchor": "^9.0.1",
+    "markdown-it-anchor": "^9.1.0",
     "markdown-it-footnote": "^4.0.0",
     "sanitize-html": "^2.13.0",
     "slugify": "^1.6.6"

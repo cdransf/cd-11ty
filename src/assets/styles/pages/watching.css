@@ -139,26 +139,6 @@
     aspect-ratio: var(--aspect-ratio-banner);
   }
 
-  & p > svg {
-    margin-bottom: var(--inline-margin-bottom);
-  }
-
-  & p.music {
-    color: var(--music);
-
-    & svg {
-      stroke: var(--music);
-    }
-  }
-
-  & p.books {
-    color: var(--books);
-
-    & svg {
-      stroke: var(--books);
-    }
-  }
-
   & .watching-meta {
     display: flex;
     flex-direction: column;
@@ -176,6 +156,11 @@
       &.sub-meta {
         font-size: var(--font-size-sm);
         line-height: var(--line-height-sm);
+
+        & svg {
+          width: var(--sizing-svg-sm);
+          height: var(--sizing-svg-sm);
+        }
       }
     }
   }

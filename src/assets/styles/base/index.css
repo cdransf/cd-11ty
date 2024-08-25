@@ -100,6 +100,59 @@ code {
   &.search > svg { stroke: var(--search); }
 }
 
+p.books {
+  color: var(--books);
+
+  & svg {
+    stroke: var(--books);
+  }
+}
+
+p.concerts {
+  color: var(--concerts);
+
+  & svg {
+    stroke: var(--concerts);
+  }
+}
+
+p.favorite {
+  color: var(--favorite);
+
+  & svg {
+    stroke: var(--favorite);
+  }
+}
+
+p.movies,
+p.tv {
+  color: var(--tv);
+
+  & svg {
+    stroke: var(--tv);
+  }
+}
+
+p.music {
+  color: var(--music);
+
+  & svg {
+    stroke: var(--music);
+  }
+}
+
+p.tattoo {
+  color: var(--tattoo);
+
+  & svg {
+    stroke: var(--tattoo);
+  }
+}
+
+p:not(.flex-centered):not(.banner p) > svg {
+  margin-bottom: var(--inline-margin-bottom);
+}
+
 :is(h1, h2, h3, h4, h5, h6) svg {
   stroke-width: var(--stroke-width-bold);
 }

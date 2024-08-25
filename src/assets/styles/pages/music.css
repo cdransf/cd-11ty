@@ -17,34 +17,6 @@
     aspect-ratio: var(--aspect-ratio-square);
   }
 
-  & p.concerts {
-    color: var(--concerts);
-
-    & svg {
-      stroke: var(--concerts);
-    }
-  }
-
-  & p.books {
-    color: var(--books);
-
-    & svg {
-      stroke: var(--books);
-    }
-  }
-
-  & p.movies {
-    color: var(--tv);
-
-    & svg {
-      stroke: var(--tv);
-    }
-  }
-
-  & p > svg {
-    margin-bottom:  var(--inline-margin-bottom);
-  }
-
   & .artist-display {
     display: flex;
     flex-direction: column;
@@ -69,25 +41,9 @@
           font-size: var(--font-size-sm);
           line-height: var(--line-height-sm);
 
-          svg {
+          & svg {
             width: var(--sizing-svg-sm);
             height: var(--sizing-svg-sm);
-          }
-        }
-
-        &.favorite {
-          color: var(--favorite);
-
-          & svg {
-            stroke: var(--favorite);
-          }
-        }
-
-        &.tattoo {
-          color: var(--tattoo);
-
-          & svg {
-            stroke: var(--tattoo);
           }
         }
 

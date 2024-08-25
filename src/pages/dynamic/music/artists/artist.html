@@ -58,7 +58,10 @@ schema: artist
       </p>
     </div>
   </div>
+  {% render "partials/blocks/associated-media.liquid", books:artist.books %}
+  {% render "partials/blocks/associated-media.liquid", movies:artist.movies %}
   {%- if artist.description -%}
+  <h3>Overview</h3>
   <div data-toggle-content class="text-toggle-hidden">{{ artist.description | markdown }}</div>
   <button data-toggle-button>Show more</button>
   {%- endif -%}
@@ -87,37 +90,6 @@ schema: artist
             {% render "partials/blocks/modal.liquid", label:"Concert info", icon:"info-square", content:notes, id:concert.id %}
           {%- endif -%}
         </li>
-      {% endfor %}
-    </ul>
-  {%- endif -%}
-  {%- if artist.books -%}
-  <hr />
-  <p id="books" class="books">
-    {% tablericon "books" "Books" %}
-    I've read about this artist!
-  </p>
-  <ul>
-    {% for book in artist.books %}
-      <li><a href="{{ book.url }}">{{ book.title }}</a> by {{ book.author }}</li>
-    {% endfor %}
-  </ul>
-  {%- endif -%}
-  {%- if artist.movies -%}
-    {%- capture sectionTitle -%}
-      {% if artist.movies.size > 1 %}
-        I've watched movies about this artist!
-      {% else %}
-        I've watched a movie about this artist!
-      {%- endif -%}
-    {%- endcapture -%}
-    <hr />
-    <p id="movies" class="movies">
-      {% tablericon "device-tv-old" "Movies" %}
-      {{ sectionTitle}}
-    </p>
-    <ul>
-      {% for movie in artist.movies %}
-        <li><a href="{{ movie.url }}">{{ movie.title }}</a> ({{ movie.year }})</li>
       {% endfor %}
     </ul>
   {%- endif -%}

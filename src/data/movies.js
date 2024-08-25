@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
 import { DateTime } from 'luxon'
+import slugify from 'slugify'
 import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
@@ -23,6 +24,7 @@ const fetchAllMovies = async () => {
         collected,
         plays,
         favorite,
+        tattoo,
         star_rating,
         description,
         review,
@@ -30,7 +32,9 @@ const fetchAllMovies = async () => {
         backdrop,
         tags,
         artists,
-        books
+        books,
+        genres,
+        shows
       `)
       .order('last_watched', { ascending: false })
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
@@ -75,6 +79,14 @@ const processMovies = (movies) => {
       book['url'] = `/books/${book['isbn']}`
       return book
     }).sort((a, b) => a['title'].localeCompare(b['title'])) : null,
+    genres: item['genres']?.[0]?.['id'] ? item['genres'].map(genre => {
+      genre['url'] = `/music/genres/${slugify(genre['name'].replace('/', '-').toLowerCase())}`
+      return genre
+    }).sort((a, b) => a['title'].localeCompare(b['title'])) : null,
+    shows: item['shows']?.[0]?.['id'] ? item['shows'].map(show => {
+      show['url'] = `/watching/shows/${show['tmdb_id']}`
+      return show
+    }).sort((a, b) => b['year'] - a['year']) : null,
   }))
 }
 

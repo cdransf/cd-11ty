@@ -41,46 +41,25 @@ schema: movie
         {%- endif -%}
       {% endif -%}
     </p>
+    {%- if movie.favorite -%}
+      <p class="sub-meta favorite">{% tablericon "heart" "Favorite" %} This is one of my favorite movies!</p>
+    {%- endif -%}
+    {%- if movie.tattoo -%}
+      <p class="sub-meta tattoo">{% tablericon "needle" "Tattoo" %} I have a tattoo inspired by this movie!</p>
+    {%- endif -%}
     {% if movie.lastWatched %}<p class="sub-meta">Last watched on {{ movie.lastWatched | date: "%B %e, %Y" }}.</p>{% endif %}
     <p class="sub-meta"><a href="https://themoviedb.org/movie/{{ movie.id }}" title="View {{ movie.title | escape }} on TMDB">View on TMDB</a></p>
   </div>
   {% if movie.review %}
-    {% render "partials/blocks/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
-    <h3>My thoughts</h3>
-    {{ movie.review | markdown }}
-    <hr />
+  {% render "partials/blocks/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
+  <h3>My thoughts</h3>
+  {{ movie.review | markdown }}
+  <hr />
   {% endif %}
-  {%- if movie.artists -%}
-    {%- capture sectionTitle -%}
-      {% if movie.artists.size > 1 %}
-        I listen to artists featured in this movie!
-      {% else %}
-        I listen to the artist featured in this movie!
-      {%- endif -%}
-    {%- endcapture -%}
-    <p id="artists" class="music">
-      {% tablericon "headphones" "Music" %}
-      {{ sectionTitle }}
-    </p>
-    <ul>
-      {% for artist in movie.artists %}
-        <li><a href="{{ artist.url }}">{{ artist.name }}</a>{%- if artist.total_plays > 0 -%}: <strong class="highlight-text">{{ artist.total_plays }} plays</strong>{%- endif -%}</li>
-      {% endfor %}
-    </ul>
-    <hr />
-  {%- endif -%}
-  {%- if movie.books -%}
-    <p id="books" class="books">
-      {% tablericon "books" "Books" %}
-      I've read about this movie!
-    </p>
-    <ul>
-      {% for book in movie.books %}
-        <li><a href="{{ book.url }}">{{ book.title }}</a> by {{ book.author }}</li>
-      {% endfor %}
-    </ul>
-    <hr />
-  {%- endif -%}
+  {% render "partials/blocks/associated-media.liquid", shows:movie.shows %}
+  {% render "partials/blocks/associated-media.liquid", artists:movie.artists %}
+  {% render "partials/blocks/associated-media.liquid", books:movie.books %}
+  {% render "partials/blocks/associated-media.liquid", genres:movie.genres %}
   {% if movie.description %}
     <h3>Overview</h3>
     {{ movie.description | markdown }}

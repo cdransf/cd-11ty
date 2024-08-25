@@ -3,7 +3,7 @@
     position: relative;
     height: 500px;
     overflow: hidden;
-    margin-bottom: var(--sizing-base);
+    margin: var(--sizing-base) 0;
 
     & p:first-of-type {
       margin-top: 0;

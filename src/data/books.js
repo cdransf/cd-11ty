@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
+import slugify from 'slugify'
 import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
@@ -26,9 +27,12 @@ const fetchAllBooks = async () => {
         review,
         art,
         favorite,
+        tattoo,
         tags,
         artists,
-        movies
+        movies,
+        genres,
+        shows
       `)
       .order('date_finished', { ascending: false })
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
@@ -57,6 +61,7 @@ const processBooks = (books) => {
       review: book['review'],
       rating: book['star_rating'] !== 'unrated' ? book['star_rating'] : '',
       favorite: book['favorite'],
+      tattoo: book['tattoo'],
       description: book['description'],
       image: `/${book['art']}`,
       url: `/books/${book['isbn']}`,
@@ -73,6 +78,14 @@ const processBooks = (books) => {
       movies: book['movies']?.[0]?.['id'] ? book['movies'].map(movie => {
         movie['url'] =`/watching/movies/${movie['tmdb_id']}`
         return movie
+      }).sort((a, b) => b['year'] - a['year']) : null,
+      genres: book['genres']?.[0]?.['id'] ? book['genres'].map(genre => {
+        genre['url'] = `/music/genres/${slugify(genre['name'].replace('/', '-').toLowerCase())}`
+        return genre
+      }).sort((a, b) => a['name'].localeCompare(b['name'])) : null,
+      shows: book['shows']?.[0]?.['id'] ? book['shows'].map(show => {
+        show['url'] = `/watching/shows/${show['tmdb_id']}`
+        return show
       }).sort((a, b) => b['year'] - a['year']) : null,
       year,
     }

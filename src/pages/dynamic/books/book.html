@@ -38,6 +38,12 @@ schema: book
       {% if book.author %}
         <p class="sub-meta">By {{ book.author }}</p>
       {% endif %}
+      {%- if book.favorite -%}
+        <p class="sub-meta favorite">{% tablericon "heart" "Favorite" %} This is one of my favorite books!</p>
+      {%- endif -%}
+      {%- if book.tattoo -%}
+        <p class="sub-meta tattoo">{% tablericon "needle" "Tattoo" %} I have a tattoo inspired by this book!</p>
+      {%- endif -%}
       {% if book.status == 'finished' %}
         <p class="sub-meta">Finished on: {{ book.date | date: "%B %e, %Y" }}</p>
       {% endif %}
@@ -49,49 +55,15 @@ schema: book
     </div>
   </div>
   {% if book.review %}
-    {% render "partials/blocks/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
-    <h3>My thoughts</h3>
-    {{ book.review | markdown }}
-    <hr />
+  {% render "partials/blocks/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
+  <h3>My thoughts</h3>
+  {{ book.review | markdown }}
+  <hr />
   {% endif %}
-  {%- if book.artists -%}
-    {%- capture sectionTitle -%}
-      {% if book.artists.size > 1 %}
-        I listen to artists featured in this book!
-      {% else %}
-      I listen to the artist featured in this book!
-      {%- endif -%}
-    {%- endcapture -%}
-    <p id="artists" class="music">
-      {% tablericon "headphones" "Music" %}
-      {{ sectionTitle }}
-    </p>
-    <ul>
-      {% for artist in book.artists %}
-        <li><a href="{{ artist.url }}">{{ artist.name }}</a>{%- if artist.total_plays > 0 -%}: <strong class="highlight-text">{{ artist.total_plays }} plays</strong>{%- endif -%}</li>
-      {% endfor %}
-    </ul>
-    <hr />
-  {%- endif -%}
-  {%- if book.movies -%}
-    {%- capture sectionTitle -%}
-      {% if book.movies.size > 1 %}
-        I've watched movies related to this book!
-      {% else %}
-        I've watched a movie related to this book!
-      {%- endif -%}
-    {%- endcapture -%}
-    <hr />
-    <p id="movies" class="movies">
-      {% tablericon "device-tv-old" "Movies" %}
-      {{ sectionTitle }}
-    </p>
-    <ul>
-      {% for movie in book.movies %}
-        <li><a href="{{ movie.url }}">{{ movie.title }}</a> ({{ movie.year }})</li>
-      {% endfor %}
-    </ul>
-  {%- endif -%}
+  {% render "partials/blocks/associated-media.liquid", artists:book.artists %}
+  {% render "partials/blocks/associated-media.liquid", movies:book.movies %}
+  {% render "partials/blocks/associated-media.liquid", shows:book.shows %}
+  {% render "partials/blocks/associated-media.liquid", genres:book.genres %}
   {% if book.description %}
     <h3>Overview</h3>
     {{ book.description | markdown }}

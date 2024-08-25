@@ -34,6 +34,12 @@ schema: show
   />
   <div class="watching-meta">
     <p class="title"><strong>{{ show.title }}</strong>{%- if show.year %} ({{ show.year }}){%- endif -%}</p>
+    {%- if show.favorite -%}
+      <p class="sub-meta favorite">{% tablericon "heart" "Favorite" %} This is one of my favorite shows!</p>
+    {%- endif -%}
+    {%- if show.tattoo -%}
+      <p class="sub-meta tattoo">{% tablericon "needle" "Tattoo" %} I have a tattoo inspired by this show!</p>
+    {%- endif -%}
     {%- if lastWatched -%}
       {%- capture lastWatchedText -%}
         {%- if show.episodes -%}
@@ -47,11 +53,13 @@ schema: show
     <p class="sub-meta"><a href="https://themoviedb.org/tv/{{ show.tmdb_id }}" title="View {{ show.title | escape }} on TMDB">View on TMDB</a></p>
   </div>
   {% if show.review %}
-    {% render "partials/blocks/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
-    <h3>My thoughts</h3>
-    {{ show.review | markdown }}
-    <hr />
+  {% render "partials/blocks/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
+  <h3>My thoughts</h3>
+  {{ show.review | markdown }}
+  <hr />
   {% endif %}
+  {% render "partials/blocks/associated-media.liquid", movies:show.movies %}
+  {% render "partials/blocks/associated-media.liquid", books:show.books %}
   {% if show.description %}
     <h3>Overview</h3>
     {{ show.description | markdown }}
