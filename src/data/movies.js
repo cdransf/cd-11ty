@@ -66,6 +66,7 @@ const processMovies = (movies) => {
     plays: item['plays'],
     collected: item['collected'],
     favorite: item['favorite'],
+    tattoo: item['tattoo'],
     rating: item['star_rating'],
     review: item['review'],
     id: item['tmdb_id'],
