@@ -93,7 +93,6 @@ code {
   &.headphones > svg { stroke: var(--music); }
   &.heart-handshake > svg { stroke: var(--webrings); }
   &.info-square > svg { stroke: var(--about); }
-  &.json > svg { stroke: var(--json); }
   &.link > svg { stroke: var(--links); }
   &.mail-plus > svg { stroke: var(--newsletter); }
   &.rss > svg { stroke: var(--brand-rss); }
