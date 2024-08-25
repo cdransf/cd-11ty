@@ -115,6 +115,6 @@ const sortBooksByYear = (books) => {
 
 export default async function () {
   const books = await fetchAllBooks()
-  const processedBooks = processBooks(books)
+  const processedBooks = processBooks(books).filter(book => book['status'] !== 'want to read')
   return { all: processedBooks, years: sortBooksByYear(processedBooks) }
 }

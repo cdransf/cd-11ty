@@ -65,7 +65,7 @@ export const processContent = (collection) => {
     }
   }
 
-  const movieData = movies['movies'].filter((movie) => movie['rating'])
+  const movieData = movies['watchHistory'].filter((movie) => movie['rating'])
   const bookData = books.all.filter((book) => book['rating'])
 
   const addItemToIndex = (items, icon, getUrl, getTitle, getTags) => {
@@ -135,14 +135,14 @@ export const processContent = (collection) => {
   addContent(posts, '📝', (item) => item['title'], (item) => item['date'])
   addContent(links, '🔗', (item) => item['title'], (item) => item['date'])
   addContent(books.all.filter((book) => book['status'] === 'finished'), '📖', (item) => `${item['title']}${item['rating'] ? ' (' + item['rating'] + ')' : ''}`, (item) => item['date'])
-  addContent(movies['movies'], '🎥', (item) => `${item['title']}${item['rating'] ? ' (' + item['rating'] + ')' : ''}`, (item) => item['lastWatched'])
+  addContent(movies['watchHistory'], '🎥', (item) => `${item['title']}${item['rating'] ? ' (' + item['rating'] + ')' : ''}`, (item) => item['lastWatched'])
   addContent(concerts, '🎤', (item) => `${item['artistNameString'] ? item['artistNameString'] : item['artist']['name']} at ${item['venue']['name'].split(',')[0].trim()}`, (item) => item['date'])
 
   addSiteMapContent(posts, (item) => item.title, (item) => item.date)
   addSiteMapContent(pages, (item) => item.title, (item) => item.date)
   addSiteMapContent(artists, (item) => item.name, (item) => item.date)
   addSiteMapContent(genres, (item) => item.name, (item) => item.date)
-  addSiteMapContent(movies['movies'], (item) => item.title, (item) => item.date)
+  addSiteMapContent(movies['watchHistory'], (item) => item.title, (item) => item.date)
   addSiteMapContent(books.all, (item) => item.title, (item) => item.date)
   addSiteMapContent(tv?.['shows'], (item) => item.title, (item) => item.date)
 
