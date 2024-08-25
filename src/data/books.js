@@ -32,7 +32,8 @@ const fetchAllBooks = async () => {
         artists,
         movies,
         genres,
-        shows
+        shows,
+        posts
       `)
       .order('date_finished', { ascending: false })
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
@@ -68,7 +69,7 @@ const processBooks = (books) => {
       date: book['date_finished'],
       status: book['read_status'],
       progress: book['progress'],
-      tags: Array.isArray(book['tags']) ? book['tags'] : book['tags']?.split(',') || [], // Ensure tags is an array
+      tags: Array.isArray(book['tags']) ? book['tags'] : book['tags']?.split(',') || [],
       isbn: book['isbn'],
       type: 'book',
       artists: book['artists']?.[0]?.['id'] ? book['artists'].map(artist => {
@@ -87,6 +88,13 @@ const processBooks = (books) => {
         show['url'] = `/watching/shows/${show['tmdb_id']}`
         return show
       }).sort((a, b) => b['year'] - a['year']) : null,
+      posts: book['posts']?.[0]?.['id'] ? book['posts'].map(post => ({
+        id: post['id'],
+        title: post['title'],
+        date: post['date'],
+        slug: post['slug'],
+        url: post['slug'],
+      })).sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
       year,
     }
   })

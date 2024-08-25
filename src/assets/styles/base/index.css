@@ -141,6 +141,14 @@ p.music {
   }
 }
 
+p.posts {
+  color: var(--posts);
+
+  & svg {
+    stroke: var(--posts);
+  }
+}
+
 p.tattoo {
   color: var(--tattoo);
 

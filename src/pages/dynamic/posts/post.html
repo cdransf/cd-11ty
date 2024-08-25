@@ -37,5 +37,10 @@ schema: blog
     {%- endif -%}
     {{ post.content | markdown }}
     {% render "partials/blocks/index.liquid", blocks:post.blocks %}
+    {% render "partials/blocks/associated-media.liquid", artists:post.artists %}
+    {% render "partials/blocks/associated-media.liquid", books:post.books %}
+    {% render "partials/blocks/associated-media.liquid", genres:post.genres %}
+    {% render "partials/blocks/associated-media.liquid", movie:post.movies %}
+    {% render "partials/blocks/associated-media.liquid", shows:post.shows %}
   </div>
 </article>

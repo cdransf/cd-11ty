@@ -1,3 +1,15 @@
+article.standalone .associated-media:last-of-type > hr {
+  display: none;
+}
+
+p + .associated-media,
+img + .associated-media,
+.banner + .associated-media,
+youtube-video + .associated-media {
+  margin-top: var(--sizing-base);
+  border-top: var(--border-gray)
+}
+
 .footnotes {
   & .footnotes-list {
     margin-bottom: 0;
@@ -10,6 +22,15 @@
     & .footnote-item > p {
       display: inline;
     }
+  }
+
+  & ~ youtube-video {
+    margin-top: var(--sizing-base);
+  }
+
+  & + .associated-media {
+    margin-top: var(--sizing-base);
+    border-top: var(--border-gray);
   }
 }
 

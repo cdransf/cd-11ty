@@ -56,6 +56,7 @@ schema: movie
   {{ movie.review | markdown }}
   <hr />
   {% endif %}
+  {% render "partials/blocks/associated-media.liquid", posts:movie.posts %}
   {% render "partials/blocks/associated-media.liquid", shows:movie.shows %}
   {% render "partials/blocks/associated-media.liquid", artists:movie.artists %}
   {% render "partials/blocks/associated-media.liquid", books:movie.books %}

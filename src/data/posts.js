@@ -1,4 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
+import slugify from 'slugify'
+import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env['SUPABASE_URL']
 const SUPABASE_KEY = process.env['SUPABASE_KEY']
@@ -92,9 +94,11 @@ const fetchAllPosts = async () => {
 
 const processPosts = async (posts, tagsByPostId, blocksByPostId) => {
   return Promise.all(posts.map(async post => {
+    // tags
     post['tags'] = tagsByPostId[post['id']] || []
-    const blocks = blocksByPostId[post['id']] || []
 
+    // blocks
+    const blocks = blocksByPostId[post['id']] || []
     post['blocks'] = await Promise.all(blocks.map(async block => {
       const blockData = await fetchBlockData(block['collection'], block['item'])
       if (!blockData) return null
@@ -105,7 +109,42 @@ const processPosts = async (posts, tagsByPostId, blocksByPostId) => {
       }
     })).then(blocks => blocks.filter(block => block !== null))
 
+    // artists
+    post['artists'] = post['artists']?.[0]?.['id'] ? post['artists'].map(artist => {
+      artist['url'] = `/music/artists/${sanitizeMediaString(artist['name'])}-${sanitizeMediaString(parseCountryField(artist['country']))}`
+      return artist
+    }).sort((a, b) => a['name'].localeCompare(b['name'])) : null
+
+    // books
+    post['books'] = post['books']?.[0]?.['id'] ? post['books'].map(book => ({
+      title: book['title'],
+      author: book['author'],
+      isbn: book['isbn'],
+      description: book['description'],
+      url: `/books/${book['isbn']}`,
+    })).sort((a, b) => a['title'].localeCompare(b['title'])) : null
+
+    // movies
+    post['movies'] = post['movies']?.[0]?.['id'] ? post['movies'].map(movie => {
+      movie['url'] = `/watching/movies/${movie['tmdb_id']}`
+      return movie
+    }).sort((a, b) => b['year'] - a['year']) : null
+
+    // genres
+    post['genres'] = post['genres']?.[0]?.['id'] ? post['genres'].map(genre => {
+      genre['url'] = `/music/genres/${slugify(genre['name'].replace('/', '-').toLowerCase())}`
+      return genre
+    }).sort((a, b) => a['name'].localeCompare(b['name'])) : null
+
+    // shows
+    post['shows'] = post['shows']?.[0]?.['id'] ? post['shows'].map(show => {
+      show['url'] = `/watching/shows/${show['tmdb_id']}`
+      return show
+    }).sort((a, b) => b['year'] - a['year']) : null
+
+    // image
     if (post['image']) post['image'] = post['image']['filename_disk']
+
     return post
   }))
 }

@@ -29,7 +29,8 @@ const fetchAllArtists = async () => {
         albums,
         concerts,
         books,
-        movies
+        movies,
+        posts
       `)
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
 
@@ -82,6 +83,13 @@ const processArtists = (artists) => {
       tmdb_id: movie['tmdb_id'],
       url: `/watching/movies/${movie['tmdb_id']}`,
     })).sort((a, b) => b['year'] - a['year']) : null,
+    posts: artist['posts']?.[0]?.['id'] ? artist['posts'].map(post => ({
+      id: post['id'],
+      title: post['title'],
+      date: post['date'],
+      slug: post['slug'],
+      url: post['slug'],
+    })).sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
   }))
 }
 

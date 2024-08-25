@@ -23,7 +23,8 @@ const fetchGenresWithArtists = async () => {
         favorite
       ),
       books,
-      movies
+      movies,
+      posts
     `)
     .order('id', { ascending: true })
 
@@ -52,6 +53,13 @@ const fetchGenresWithArtists = async () => {
       tmdb_id: movie['tmdb_id'],
       url: `/watching/movies/${movie['tmdb_id']}`,
     })).sort((a, b) => b['year'] - a['year']) : null,
+    posts: genre['posts']?.[0]?.['id'] ? genre['posts'].map(post => ({
+      id: post['id'],
+      title: post['title'],
+      date: post['date'],
+      slug: post['slug'],
+      url: post['slug'],
+    })).sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
   }))
 }
 

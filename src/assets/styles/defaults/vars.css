@@ -74,6 +74,7 @@
 
   /* borders */
   --border-default: 1px solid var(--accent-color);
+  --border-gray: 1px solid var(--gray-light);
 
   /* fonts */
   --font-mono: MonoLisa, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;

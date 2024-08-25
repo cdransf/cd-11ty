@@ -25,9 +25,11 @@ const fetchAllShows = async () => {
         review,
         art,
         backdrop,
+        tags,
         episodes,
         movies,
-        books
+        books,
+        posts
       `)
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
 
@@ -51,6 +53,7 @@ const prepareShowData = (show) => ({
   url: `/watching/shows/${show['tmdb_id']}`,
   episodes: show['episodes'] || [],
   tattoo: show['tattoo'],
+  tags: Array.isArray(show['tags']) ? show['tags'] : show['tags']?.split(',') || [],
   movies: show['movies']?.[0]?.['id'] ? show['movies'].map(movie => {
     movie['url'] = `/watching/movies/${movie['tmdb_id']}`
     return movie
@@ -62,6 +65,13 @@ const prepareShowData = (show) => ({
     description: book['description'],
     url: `/books/${book['isbn']}`,
   })).sort((a, b) => a['title'].localeCompare(b['title'])) : null,
+  posts: show['posts']?.[0]?.['id'] ? show['posts'].map(post => ({
+    id: post['id'],
+    title: post['title'],
+    date: post['date'],
+    slug: post['slug'],
+    url: post['slug'],
+  })).sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
 })
 
 const prepareEpisodeData = (show) => show['episodes'].map(episode => ({

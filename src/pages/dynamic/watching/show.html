@@ -58,6 +58,7 @@ schema: show
   {{ show.review | markdown }}
   <hr />
   {% endif %}
+  {% render "partials/blocks/associated-media.liquid", posts:show.posts %}
   {% render "partials/blocks/associated-media.liquid", movies:show.movies %}
   {% render "partials/blocks/associated-media.liquid", books:show.books %}
   {% if show.description %}

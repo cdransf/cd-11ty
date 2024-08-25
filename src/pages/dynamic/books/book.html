@@ -60,6 +60,7 @@ schema: book
   {{ book.review | markdown }}
   <hr />
   {% endif %}
+  {% render "partials/blocks/associated-media.liquid", posts:book.posts %}
   {% render "partials/blocks/associated-media.liquid", artists:book.artists %}
   {% render "partials/blocks/associated-media.liquid", movies:book.movies %}
   {% render "partials/blocks/associated-media.liquid", shows:book.shows %}

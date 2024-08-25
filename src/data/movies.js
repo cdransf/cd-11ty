@@ -34,7 +34,8 @@ const fetchAllMovies = async () => {
         artists,
         books,
         genres,
-        shows
+        shows,
+        posts
       `)
       .order('last_watched', { ascending: false })
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
@@ -88,6 +89,13 @@ const processMovies = (movies) => {
       show['url'] = `/watching/shows/${show['tmdb_id']}`
       return show
     }).sort((a, b) => b['year'] - a['year']) : null,
+    posts: item['posts']?.[0]?.['id'] ? item['posts'].map(post => ({
+      id: post['id'],
+      title: post['title'],
+      date: post['date'],
+      slug: post['slug'],
+      url: post['slug'],
+    })).sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
   }))
 }
 

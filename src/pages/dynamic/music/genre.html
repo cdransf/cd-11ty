@@ -29,6 +29,7 @@ schema: genre
     <p>My top <strong class="highlight-text">{{ genre.name }}</strong> artists {{ connectingWord }} {{ mediaLinks }}. I've listened to <strong class="highlight-text">{{ genre.total_plays | formatNumber }}</strong> tracks form this genre.</p>
     <hr />
   {%- endif -%}
+  {% render "partials/blocks/associated-media.liquid", posts:genre.posts %}
   {% render "partials/blocks/associated-media.liquid", books:genre.books %}
   {% render "partials/blocks/associated-media.liquid", movies:genre.movies %}
   {%- if genre.description -%}

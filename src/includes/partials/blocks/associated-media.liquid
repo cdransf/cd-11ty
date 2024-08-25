@@ -1,65 +1,80 @@
-{% comment %} render related artists {% endcomment %}
-{%- if artists -%}
-  <p id="artists" class="music">
-    {% tablericon "headphones" "Related artist(s)" %}
-    Related artist(s)
-  </p>
-  <ul>
-    {% for artist in artists %}
-      <li><a href="{{ artist.url }}">{{ artist.name }}</a>{%- if artist.total_plays > 0 -%}: <strong class="highlight-text">{{ artist.total_plays }} plays</strong>{%- endif -%}</li>
-    {% endfor %}
-  </ul>
-  <hr />
-{%- endif -%}
-{% comment %} render related books {% endcomment %}
-{%- if books -%}
-  <p id="books" class="books">
-    {% tablericon "books" "Related book(s)" %}
-    Related book(s)
-  </p>
-  <ul>
-    {% for book in books %}
-      <li><a href="{{ book.url }}">{{ book.title }}</a> by {{ book.author }}</li>
-    {% endfor %}
-  </ul>
-  <hr />
-{%- endif -%}
-{% comment %} render related genres {% endcomment %}
-{%- if genres -%}
-  <p id="genres" class="music">
-    {% tablericon "headphones" "Genre(s)" %}
-    Related genre(s)
-  </p>
-  <ul>
-    {% for genre in genres %}
-      <li><a href="{{ genre.url }}">{{ genre.name }}</a></li>
-    {% endfor %}
-  </ul>
-  <hr />
-{%- endif -%}
-{% comment %} render related movies {% endcomment %}
-{%- if movies -%}
-  <p id="movies" class="movies">
-    {% tablericon "movie" "Related movie(s)" %}
-    Related movie(s)
-  </p>
-  <ul>
-    {% for movie in movies %}
-      <li><a href="{{ movie.url }}">{{ movie.title }}</a> ({{ movie.year }})</li>
-    {% endfor %}
-  </ul>
-  <hr />
-{%- endif -%}
-{% comment %} render related shows {% endcomment %}
-{%- if shows -%}
-  <p id="tv" class="tv">
-    {% tablericon "device-tv-old" "Related show(s)" %}
-    Related show(s)
-  </p>
-  <ul>
-    {% for show in shows %}
-      <li><a href="{{ show.url }}">{{ show.title }}</a> ({{ show.year }})</li>
-    {% endfor %}
-  </ul>
-  <hr />
-{%- endif -%}
+{% if artists or books or genres or movies or posts or shows %}<div class="associated-media">{% endif %}
+  {% comment %} render related artists {% endcomment %}
+  {%- if artists -%}
+    <p id="artists" class="music">
+      {% tablericon "headphones" "Related artist(s)" %}
+      Related artist(s)
+    </p>
+    <ul>
+      {% for artist in artists %}
+        <li><a href="{{ artist.url }}">{{ artist.name }}</a>{%- if artist.total_plays > 0 -%}: <strong class="highlight-text">{{ artist.total_plays }} plays</strong>{%- endif -%}</li>
+      {% endfor %}
+    </ul>
+    <hr />
+  {%- endif -%}
+  {% comment %} render related books {% endcomment %}
+  {%- if books -%}
+    <p id="books" class="books">
+      {% tablericon "books" "Related book(s)" %}
+      Related book(s)
+    </p>
+    <ul>
+      {% for book in books %}
+        <li><a href="{{ book.url }}">{{ book.title }}</a> by {{ book.author }}</li>
+      {% endfor %}
+    </ul>
+    <hr />
+  {%- endif -%}
+  {% comment %} render related genres {% endcomment %}
+  {%- if genres -%}
+    <p id="genres" class="music">
+      {% tablericon "headphones" "Genre(s)" %}
+      Related genre(s)
+    </p>
+    <ul>
+      {% for genre in genres %}
+        <li><a href="{{ genre.url }}">{{ genre.name }}</a></li>
+      {% endfor %}
+    </ul>
+    <hr />
+  {%- endif -%}
+  {% comment %} render related movies {% endcomment %}
+  {%- if movies -%}
+    <p id="movies" class="movies">
+      {% tablericon "movie" "Related movie(s)" %}
+      Related movie(s)
+    </p>
+    <ul>
+      {% for movie in movies %}
+        <li><a href="{{ movie.url }}">{{ movie.title }}</a> ({{ movie.year }})</li>
+      {% endfor %}
+    </ul>
+    <hr />
+  {%- endif -%}
+  {% comment %} render related posts {% endcomment %}
+  {%- if posts -%}
+    <p id="posts" class="posts">
+      {% tablericon "article" "Related post(s)" %}
+      Related post(s)
+    </p>
+    <ul>
+      {% for post in posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%B %e, %Y" }})</li>
+      {% endfor %}
+    </ul>
+    <hr />
+  {%- endif -%}
+  {% comment %} render related shows {% endcomment %}
+  {%- if shows -%}
+    <p id="tv" class="tv">
+      {% tablericon "device-tv-old" "Related show(s)" %}
+      Related show(s)
+    </p>
+    <ul>
+      {% for show in shows %}
+        <li><a href="{{ show.url }}">{{ show.title }}</a> ({{ show.year }})</li>
+      {% endfor %}
+    </ul>
+    <hr />
+  {%- endif -%}
+{% if artists or books or genres or movies or posts or shows %}</div>{% endif %}
