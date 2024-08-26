@@ -30,10 +30,11 @@ const fetchAllBooks = async () => {
         tattoo,
         tags,
         artists,
-        movies,
         genres,
+        movies,
+        posts,
         shows,
-        posts
+        related_books
       `)
       .order('date_finished', { ascending: false })
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
@@ -77,7 +78,7 @@ const processBooks = (books) => {
         return artist
       }).sort((a, b) => a['name'].localeCompare(b['name'])) : null,
       movies: book['movies']?.[0]?.['id'] ? book['movies'].map(movie => {
-        movie['url'] =`/watching/movies/${movie['tmdb_id']}`
+        movie['url'] = `/watching/movies/${movie['tmdb_id']}`
         return movie
       }).sort((a, b) => b['year'] - a['year']) : null,
       genres: book['genres']?.[0]?.['id'] ? book['genres'].map(genre => {
@@ -95,6 +96,13 @@ const processBooks = (books) => {
         slug: post['slug'],
         url: post['slug'],
       })).sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
+      relatedBooks: book['related_books']?.[0]?.['id'] ? book['related_books'].map(relatedBook => ({
+        title: relatedBook['title'],
+        author: relatedBook['author'],
+        isbn: relatedBook['isbn'],
+        description: relatedBook['description'],
+        url: `/books/${relatedBook['isbn']}`,
+      })).sort((a, b) => a['title'].localeCompare(b['title'])) : null, // Add related books processing
       year,
     }
   })

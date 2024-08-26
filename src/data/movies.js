@@ -35,7 +35,8 @@ const fetchAllMovies = async () => {
         books,
         genres,
         shows,
-        posts
+        posts,
+        related_movies
       `)
       .order('last_watched', { ascending: false })
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
@@ -96,6 +97,10 @@ const processMovies = (movies) => {
       slug: post['slug'],
       url: post['slug'],
     })).sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
+    relatedMovies: item['related_movies']?.[0]?.['id'] ? item['related_movies'].map(movie => {
+      movie['url'] = `/watching/movies/${movie['tmdb_id']}`
+      return movie
+    }).sort((a, b) => b['year'] - a['year']) : null,
   }))
 }
 
@@ -105,19 +110,15 @@ export default async function () {
   try {
     const movies = await fetchAllMovies()
     const processedMovies = processMovies(movies)
-
     const filterMovies = (condition) => processedMovies.filter(condition)
     const formatMovieData = (movies) => movies.map(movie => movie)
-
     const favoriteMovies = filterMovies(movie => movie['favorite'])
-    const collectedMovies = filterMovies(movie => movie['collected'])
     const recentlyWatchedMovies = filterMovies(movie => movie['lastWatched'] && year - DateTime.fromISO(movie['lastWatched']).year <= 3).sort((a, b) => new Date(b['lastWatched']) - new Date(a['lastWatched']))
 
     return {
       watchHistory: formatMovieData(filterMovies(movie => movie['lastWatched'])),
       recentlyWatched: formatMovieData(recentlyWatchedMovies),
       favorites: formatMovieData(favoriteMovies).sort((a, b) => a['title'].localeCompare(b['title'])),
-      collection: formatMovieData(collectedMovies),
     }
   } catch (error) {
     console.error('Error fetching and processing movies data:', error)
@@ -125,7 +126,6 @@ export default async function () {
       watchHistory: [],
       recentlyWatched: [],
       favorites: [],
-      collection: [],
     }
   }
 }

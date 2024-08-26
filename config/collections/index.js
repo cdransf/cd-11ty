@@ -179,7 +179,7 @@ export const albumReleasesCalendar = (collection) => {
       url: album.url,
       uid: `${date.toFormat('yyyyMMdd')}-${album.artist}-${album.title}@coryd.dev`,
       timestamp: DateTime.now().toUTC().toFormat("yyyyMMdd'T'HHmmss'Z'")
-    };
+    }
   }).filter(event => event !== null)
 
   const { error, value } = ics.createEvents(events)

@@ -30,7 +30,9 @@ const fetchAllArtists = async () => {
         concerts,
         books,
         movies,
-        posts
+        posts,
+        related_artists,
+        shows
       `)
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
 
@@ -83,6 +85,12 @@ const processArtists = (artists) => {
       tmdb_id: movie['tmdb_id'],
       url: `/watching/movies/${movie['tmdb_id']}`,
     })).sort((a, b) => b['year'] - a['year']) : null,
+    shows: artist['shows']?.[0]?.['id'] ? artist['shows'].map(show => ({
+      title: show['title'],
+      year: show['year'],
+      tmdb_id: show['tmdb_id'],
+      url: `/watching/shows/${show['tmdb_id']}`,
+    })).sort((a, b) => b['year'] - a['year']) : null,
     posts: artist['posts']?.[0]?.['id'] ? artist['posts'].map(post => ({
       id: post['id'],
       title: post['title'],
@@ -90,6 +98,10 @@ const processArtists = (artists) => {
       slug: post['slug'],
       url: post['slug'],
     })).sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
+    relatedArtists: artist['related_artists']?.[0]?.['id'] ? artist['related_artists'].map(relatedArtist => {
+      relatedArtist['url'] = `/music/artists/${sanitizeMediaString(relatedArtist['name'])}-${sanitizeMediaString(parseCountryField(relatedArtist['country']))}`
+      return relatedArtist
+    }).sort((a, b) => a['name'].localeCompare(b['name'])) : null,
   }))
 }
 

@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
+import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
@@ -27,9 +28,11 @@ const fetchAllShows = async () => {
         backdrop,
         tags,
         episodes,
-        movies,
+        artists,
         books,
-        posts
+        movies,
+        posts,
+        related_shows
       `)
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
 
@@ -72,6 +75,17 @@ const prepareShowData = (show) => ({
     slug: post['slug'],
     url: post['slug'],
   })).sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
+  relatedShows: show['related_shows']?.[0]?.['id'] ? show['related_shows'].map(relatedShow => ({
+    id: relatedShow['id'],
+    title: relatedShow['title'],
+    year: relatedShow['year'],
+    tmdb_id: relatedShow['tmdb_id'],
+    url: `/watching/shows/${relatedShow['tmdb_id']}`,
+  })).sort((a, b) => b['year'] - a['year']) : null,
+  artists: show['artists']?.[0]?.['id'] ? show['artists'].map(artist => {
+    artist['url'] = `/music/artists/${sanitizeMediaString(artist['name'])}-${sanitizeMediaString(parseCountryField(artist['country']))}`
+    return artist
+  }).sort((a, b) => a['name'].localeCompare(b['name'])) : null, // Add artists processing
 })
 
 const prepareEpisodeData = (show) => show['episodes'].map(episode => ({
