@@ -116,6 +116,7 @@ export default async function () {
     const recentlyWatchedMovies = filterMovies(movie => movie['lastWatched'] && year - DateTime.fromISO(movie['lastWatched']).year <= 3).sort((a, b) => new Date(b['lastWatched']) - new Date(a['lastWatched']))
 
     return {
+      movies: formatMovieData(processedMovies),
       watchHistory: formatMovieData(filterMovies(movie => movie['lastWatched'])),
       recentlyWatched: formatMovieData(recentlyWatchedMovies),
       favorites: formatMovieData(favoriteMovies).sort((a, b) => a['title'].localeCompare(b['title'])),
@@ -123,6 +124,7 @@ export default async function () {
   } catch (error) {
     console.error('Error fetching and processing movies data:', error)
     return {
+      movies: [],
       watchHistory: [],
       recentlyWatched: [],
       favorites: [],

@@ -1,7 +1,7 @@
 ---
 layout: default
 pagination:
-  data: movies.watchHistory
+  data: movies.movies
   size: 1
   alias: movie
 permalink: "{{ movie.url }}/index.html"
@@ -57,7 +57,7 @@ schema: movie
   <hr />
   {% endif %}
   {% render "partials/blocks/associated-media.liquid", posts:movie.posts %}
-  {% render "partials/blocks/associated-media.liquid", posts:movie.relatedMovies %}
+  {% render "partials/blocks/associated-media.liquid", movies:movie.relatedMovies %}
   {% render "partials/blocks/associated-media.liquid", shows:movie.shows %}
   {% render "partials/blocks/associated-media.liquid", artists:movie.artists %}
   {% render "partials/blocks/associated-media.liquid", books:movie.books %}
