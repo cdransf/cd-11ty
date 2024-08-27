@@ -50,7 +50,6 @@ schema: show
       {%- endcapture -%}
       <p class="sub-meta">{{ lastWatchedText }}</p>
     {%- endif -%}
-    <p class="sub-meta"><a href="https://themoviedb.org/tv/{{ show.tmdb_id }}" title="View {{ show.title | escape }} on TMDB">View on TMDB</a></p>
   </div>
   {% if show.review %}
   {% render "partials/blocks/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}

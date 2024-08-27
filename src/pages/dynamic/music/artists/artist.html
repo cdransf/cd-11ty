@@ -53,9 +53,6 @@ schema: artist
           {{ artist.genre }}
         </a>
       </p>
-      <p class="sub-meta">
-        <a class="brain" href="https://musicbrainz.org/artist/{{ artist.mbid }}" title="View {{ artist.name | escape }} on MusicBrainz">{% tablericon "brain" "MusicBrainz" %}</a>
-      </p>
     </div>
   </div>
   {% render "partials/blocks/associated-media.liquid", posts:artist.posts %}

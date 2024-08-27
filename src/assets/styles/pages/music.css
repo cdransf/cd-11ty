@@ -46,19 +46,6 @@
             height: var(--sizing-svg-sm);
           }
         }
-
-        & .brain {
-          outline: 0;
-
-          & > svg {
-            stroke: var(--brand-listenbrainz);
-          }
-
-          &:focus svg,
-          &:focus-within svg {
-            outline: var(--outline-default)
-          }
-        }
       }
     }
   }
