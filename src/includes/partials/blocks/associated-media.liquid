@@ -7,7 +7,14 @@
     </p>
     <ul>
       {% for artist in artists %}
-        <li><a href="{{ artist.url }}">{{ artist.name }}</a>{%- if artist.total_plays > 0 -%}: <strong class="highlight-text">{{ artist.total_plays }} plays</strong>{%- endif -%}</li>
+        {%- capture playLabel -%}
+          {%- if artist.total_plays == 1 -%}
+            play
+          {%- else -%}
+            plays
+          {%- endif -%}
+        {%- endcapture -%}
+        <li><a href="{{ artist.url }}">{{ artist.name }}</a>{%- if artist.total_plays > 0 -%}: <strong class="highlight-text">{{ artist.total_plays }} {{ playLabel }}</strong>{%- endif -%}</li>
       {% endfor %}
     </ul>
     <hr />
