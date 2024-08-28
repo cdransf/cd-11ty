@@ -37,7 +37,7 @@
     "@supabase/supabase-js": "^2.45.2",
     "dotenv-flow": "^4.1.0",
     "ics": "^3.7.6",
-    "liquidjs": "^10.16.4",
+    "liquidjs": "10.16.4",
     "luxon": "^3.5.0",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.1.0",
