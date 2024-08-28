@@ -1,6 +1,5 @@
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import tablerIcons from '@cdransf/eleventy-plugin-tabler-icons'
-import lightningCSS from '@11tyrocks/eleventy-plugin-lightningcss'
 import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItFootnote from 'markdown-it-footnote'
@@ -21,7 +20,6 @@ const appVersion = require('./package.json').version
 export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight)
   eleventyConfig.addPlugin(tablerIcons)
-  eleventyConfig.addPlugin(lightningCSS)
 
   // quiet build output
   eleventyConfig.setQuietMode(true)
