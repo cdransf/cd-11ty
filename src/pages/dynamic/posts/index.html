@@ -9,15 +9,11 @@ permalink: "/posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}
 ---
 <div class="posts-wrapper">
   {% for post in pagination.items %}
-  <article class="h-entry">
-    <time class="dt-published" datetime="{{ post.date }}">
-      {{ post.date | date: "%B %e, %Y" }}
-    </time>
+  <article>
+    <time>{{ post.date | date: "%B %e, %Y" }}</time>
     <a href="{{ post.slug }}">
       <h3>{{ post.title }}</h3>
     </a>
-    <span class="p-author h-card hidden">{{ globals.site_name }}</span>
-    <div class="p-summary hidden">{{ post.description }}</div>
     <p>{{ post.description }}</p>
   </article>
   {% endfor %}

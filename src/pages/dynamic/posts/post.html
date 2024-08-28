@@ -7,14 +7,10 @@ pagination:
 permalink: "{{ post.slug }}/index.html"
 schema: blog
 ---
-<article class="h-entry standalone">
-  <time class="dt-published" datetime="{{ date }}">
-    {{ post.date | date: "%B %e, %Y" }}
-  </time>
-  <h3 class="p-name">{{ post.title }}</h3>
-  <span class="p-author h-card hidden">{{ globals.author }}</span>
-  <div class="p-summary hidden">{{ post.description }}</div>
-  <div class="e-content">
+<article class="standalone">
+  <time>{{ post.date | date: "%B %e, %Y" }}</time>
+  <h3>{{ post.title }}</h3>
+  <div>
     {% render "partials/blocks/banners/old-post.liquid", date:post.date %}
     {%- if post.image -%}
     <img
