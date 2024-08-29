@@ -32,7 +32,6 @@ export const copyErrorPages = () => {
 
 export const minifyJsComponents = async () => {
   const scriptsDir = '_site/assets/scripts'
-  let combinedJs = ''
 
   const minifyJsFilesInDir = async (dir) => {
     const files = fs.readdirSync(dir)
@@ -41,33 +40,20 @@ export const minifyJsComponents = async () => {
       const stat = fs.statSync(filePath)
 
       if (stat.isDirectory()) {
-        if (fileName === 'components') {
-          const componentFiles = fs.readdirSync(filePath)
-          for (const componentFile of componentFiles) {
-            const componentFilePath = path.join(filePath, componentFile)
-            if (componentFile.endsWith('.js')) {
-              const componentContent = fs.readFileSync(componentFilePath, 'utf8')
-              const minified = await minify(componentContent)
-              fs.writeFileSync(componentFilePath, minified.code)
-            }
-          }
-        } else {
-          await minifyJsFilesInDir(filePath)
-        }
+        await minifyJsFilesInDir(filePath)
       } else if (fileName.endsWith('.js')) {
         const fileContent = fs.readFileSync(filePath, 'utf8')
         const minified = await minify(fileContent)
-        fs.writeFileSync(filePath, minified.code)
-        combinedJs += minified.code + ';\n'
+        if (minified.error) {
+          console.error(`Error minifying ${filePath}:`, minified.error)
+        } else {
+          fs.writeFileSync(filePath, minified.code)
+        }
       } else {
-        console.log(`⚠ No .js files to minify in ${filePath}`)
+        console.log(`No .js files to minify in ${filePath}`)
       }
     }
   }
 
   await minifyJsFilesInDir(scriptsDir)
-  const outputFilePath = path.join(scriptsDir, 'index.js')
-  fs.writeFileSync(outputFilePath, combinedJs)
-
-  console.log(`Combined and minified .js files into ${outputFilePath}`)
 }
