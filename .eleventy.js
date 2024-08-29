@@ -6,6 +6,7 @@ import markdownItFootnote from 'markdown-it-footnote'
 import filters from './config/filters/index.js'
 import { copyErrorPages } from './config/events/index.js'
 import { processContent, albumReleasesCalendar } from './config/collections/index.js'
+import { cssConfig } from './config/plugins/css-config.js'
 import { DateTime } from 'luxon'
 
 // load .env
@@ -20,6 +21,7 @@ const appVersion = require('./package.json').version
 export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight)
   eleventyConfig.addPlugin(tablerIcons)
+  eleventyConfig.addPlugin(cssConfig)
 
   // quiet build output
   eleventyConfig.setQuietMode(true)
