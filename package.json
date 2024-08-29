@@ -42,7 +42,6 @@
     "html-entities": "^2.5.2",
     "html-minifier-terser": "^7.2.0",
     "ics": "^3.7.6",
-    "liquidjs": "10.16.4",
     "luxon": "^3.5.0",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.1.0",
