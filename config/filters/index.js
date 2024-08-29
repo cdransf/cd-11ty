@@ -24,6 +24,9 @@ export default {
   formatNumber: (number) => number.toLocaleString('en-US'),
   shuffleArray,
   sanitizeMediaString,
+  sanitizeHtml: (html) => sanitizeHtml(html, {
+    textFilter: (text) => text.replace(/"/g, '')
+  }),
 
   // navigation
   isLinkActive: (category, page) => page.includes(category) && page.split('/').filter(a => a !== '').length <= 1,

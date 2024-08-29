@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import { minify } from 'terser'
 
 const errorPages = ['404', '500', '1000', 'broken', 'error', 'js-challenge', 'not-allowed', 'rate-limit']
 
@@ -27,4 +28,27 @@ export const copyErrorPages = () => {
       })
     })
   })
+}
+
+export const minifyJsComponents = async () => {
+  const scriptsDir = '_site/assets/scripts'
+
+  const minifyJsFilesInDir = async (dir) => {
+    const files = fs.readdirSync(dir)
+    for (const fileName of files) {
+      const filePath = path.join(dir, fileName)
+      const stat = fs.statSync(filePath)
+
+      if (stat.isDirectory()) {
+        await minifyJsFilesInDir(filePath)
+      } else if (fileName.endsWith('.js')) {
+        const minified = await minify(fs.readFileSync(filePath, 'utf8'))
+        fs.writeFileSync(filePath, minified.code)
+      } else {
+        console.log(`⚠ No .js file to minify in ${filePath}`)
+      }
+    }
+  }
+
+  await minifyJsFilesInDir(scriptsDir)
 }
