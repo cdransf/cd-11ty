@@ -15,7 +15,6 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    overflow: hidden;
 
     &:not(:last-of-type) {
       margin-bottom: var(--sizing-md);
