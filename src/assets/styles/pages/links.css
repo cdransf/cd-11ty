@@ -6,6 +6,7 @@
 
   & .link-box {
     border: 1px solid var(--gray-light);
+    border-radius: var(--border-radius-slight);
     padding: var(--sizing-xs) var(--sizing-sm);
   }
 }

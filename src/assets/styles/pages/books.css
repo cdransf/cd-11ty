@@ -59,6 +59,7 @@
 .book-focus {
   & img {
     border: var(--border-default);
+    border-radius: var(--border-radius-slight);
   }
 
   & .book-meta {

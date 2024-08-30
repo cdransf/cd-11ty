@@ -12,6 +12,7 @@ button,
 
   &:not(.theme-toggle) {
     border: 2px solid var(--accent-color);
+    border-radius: var(--border-radius-full);
     padding: var(--sizing-xs) var(--sizing-md);
     cursor: pointer;
     display: inline-flex;
@@ -48,6 +49,7 @@ button,
   &.theme-toggle:focus,
   &.theme-toggle:focus-within {
     outline: var(--outline-default);
+    border-radius: var(--border-radius-slight);
   }
 
   &.secondary {
@@ -60,9 +62,5 @@ button,
   &.secondary:not(.theme-toggle):focus {
     color: var(--accent-color-hover);
     background: transparent;
-  }
-
-  &.active {
-    cursor: not-allowed;
   }
 }

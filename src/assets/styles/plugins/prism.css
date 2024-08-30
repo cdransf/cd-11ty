@@ -2,6 +2,7 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: var(--blue-200);
   background: none;
+  border-radius: var(--border-radius-slight);
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   font-family: var(--font-mono);
   text-align: left;
@@ -26,6 +27,7 @@ pre[class*="language-"] {
   padding: var(--sizing-xs);
   white-space: normal;
   background: var(--gray-darkest);
+  border-radius: var(--border-radius-slight);
 }
 
 .namespace {

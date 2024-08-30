@@ -11,6 +11,7 @@
 .banner {
   padding: var(--sizing-md);
   border: 1px solid;
+  border-radius: var(--border-radius-slight);
 
   & p {
     font-size: var(--font-size-sm);
@@ -36,29 +37,12 @@
   &.old-post,
   &.rss,
   &.warning {
-    &.error {
-      --border-color: var(--error);
-    }
-
-    &.github {
-      --border-color: var(--brand-github);
-    }
-
-    &.npm {
-      --border-color: var(--brand-npm);
-    }
-
-    &.old-post {
-      --border-color: var(--gray-dark);
-    }
-
-    &.rss {
-      --border-color: var(--brand-rss);
-    }
-
-    &.warning {
-      --border-color: var(--warning);
-    }
+    &.error { --border-color: var(--error); }
+    &.github { --border-color: var(--brand-github); }
+    &.npm { --border-color: var(--brand-npm); }
+    &.old-post { --border-color: var(--gray-dark); }
+    &.rss { --border-color: var(--brand-rss); }
+    &.warning { --border-color: var(--warning); }
 
     border-color: var(--border-color);
 
@@ -66,6 +50,11 @@
     & p a:active,
     & p a:focus {
       color: var(--border-color);
+    }
+
+    & p a:focus,
+    & p a:focus-within {
+      outline: 2px dashed var(--border-color);
     }
 
     & svg {

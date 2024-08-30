@@ -12,6 +12,7 @@
 
   & img {
     border: var(--border-default);
+    border-radius: var(--border-radius-slight);
     width: 100%;
     height: auto;
     aspect-ratio: var(--aspect-ratio-square);

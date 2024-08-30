@@ -29,12 +29,13 @@ body {
   background: var(--accent-color);
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--accent-color);
-}
-
 ::-webkit-scrollbar-track {
   background-color: var(--gray-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: var(--border-radius-full);
 }
 
 ::-webkit-scrollbar-button {
@@ -47,14 +48,33 @@ body::-webkit-scrollbar {
   height: var(--sizing-md);
 }
 
-a:focus,
-a:focus-within {
-  outline: var(--outline-default);
-  text-decoration: none;
-}
-
 p {
   margin: var(--sizing-base) 0;
+
+  &.books,
+  &.concerts,
+  &.country,
+  &.favorite,
+  &.movies,
+  &.tv,
+  &.music,
+  &.posts,
+  &.tattoo {
+    &.books { --section-color: var(--books); }
+    &.concerts { --section-color: var(--concerts); }
+    &.country { --section-color: var(--country); }
+    &.favorite { --section-color: var(--favorite); }
+    &.movies, &.tv { --section-color: var(--tv); }
+    &.music { --section-color: var(--music); }
+    &.posts { --section-color: var(--posts); }
+    &.tattoo { --section-color: var(--tattoo); }
+
+    color: var(--section-color);
+
+    & svg {
+      stroke: var(--section-color);
+    }
+  }
 
   & a {
     text-decoration: underline;
@@ -76,84 +96,7 @@ code {
   padding: var(--sizing-xs);
   color: var(--text-color-inverted);
   background-color: var(--background-color-inverted);
-}
-
-/* social icons */
-:is(body, html, nav) a {
-  &.mail > svg { stroke: var(--brand-gmail); }
-  &.brand-github > svg { stroke: var(--brand-github); }
-  &.brand-npm > svg { stroke: var(--brand-npm); }
-  &.brand-mastodon > svg { stroke: var(--brand-mastodon); }
-  &.article > svg { stroke: var(--posts); }
-  &.books > svg { stroke: var(--books); }
-  &.device-watch > svg { stroke: var(--now); }
-  &.coffee > svg { stroke: var(--brand-buy-me-a-coffee); }
-  &.device-tv-old > svg { stroke: var(--tv); }
-  &.favorite > svg { stroke: var(--favorite); }
-  &.headphones > svg { stroke: var(--music); }
-  &.heart-handshake > svg { stroke: var(--webrings); }
-  &.info-square > svg { stroke: var(--about); }
-  &.link > svg { stroke: var(--links); }
-  &.mail-plus > svg { stroke: var(--newsletter); }
-  &.rss > svg { stroke: var(--brand-rss); }
-  &.search > svg { stroke: var(--search); }
-}
-
-p.books {
-  color: var(--books);
-
-  & svg {
-    stroke: var(--books);
-  }
-}
-
-p.concerts {
-  color: var(--concerts);
-
-  & svg {
-    stroke: var(--concerts);
-  }
-}
-
-p.favorite {
-  color: var(--favorite);
-
-  & svg {
-    stroke: var(--favorite);
-  }
-}
-
-p.movies,
-p.tv {
-  color: var(--tv);
-
-  & svg {
-    stroke: var(--tv);
-  }
-}
-
-p.music {
-  color: var(--music);
-
-  & svg {
-    stroke: var(--music);
-  }
-}
-
-p.posts {
-  color: var(--posts);
-
-  & svg {
-    stroke: var(--posts);
-  }
-}
-
-p.tattoo {
-  color: var(--tattoo);
-
-  & svg {
-    stroke: var(--tattoo);
-  }
+  border-radius: var(--border-radius-slight);
 }
 
 p:not(.flex-centered):not(.banner p) > svg {
@@ -189,6 +132,24 @@ a {
   color: var(--accent-color);
   text-decoration: none;
 
+  &.mail > svg { stroke: var(--brand-gmail); }
+  &.brand-github > svg { stroke: var(--brand-github); }
+  &.brand-npm > svg { stroke: var(--brand-npm); }
+  &.brand-mastodon > svg { stroke: var(--brand-mastodon); }
+  &.article > svg { stroke: var(--posts); }
+  &.books > svg { stroke: var(--books); }
+  &.device-watch > svg { stroke: var(--now); }
+  &.coffee > svg { stroke: var(--brand-buy-me-a-coffee); }
+  &.device-tv-old > svg { stroke: var(--tv); }
+  &.favorite > svg { stroke: var(--favorite); }
+  &.headphones > svg { stroke: var(--music); }
+  &.heart-handshake > svg { stroke: var(--webrings); }
+  &.info-circle > svg { stroke: var(--about); }
+  &.link > svg { stroke: var(--links); }
+  &.mail-plus > svg { stroke: var(--newsletter); }
+  &.rss > svg { stroke: var(--brand-rss); }
+  &.search > svg { stroke: var(--search); }
+
   & svg {
     stroke: var(--accent-color);
 
@@ -202,6 +163,13 @@ a {
 
 :is(a:hover, a:active, a:focus) svg[data-tablericon-name^="arrow-"] {
   stroke: var(--accent-color-hover);
+}
+
+a:focus,
+a:focus-within {
+  outline: var(--outline-default);
+  border-radius: var(--border-radius-slight);
+  text-decoration: none;
 }
 
 a:hover,
@@ -222,6 +190,22 @@ a:active,
     a:has(svg):focus
 ) svg {
   stroke: var(--accent-color-hover);
+}
+
+:is(a):has(svg) {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sizing-xs);
+
+  & svg {
+    stroke: var(--accent-color);
+  }
+
+  &:hover svg,
+  &:active svg,
+  &:focus svg {
+    stroke: var(--accent-color-hover);
+  }
 }
 
 /* headers */
@@ -274,8 +258,10 @@ table {
   overflow-x: auto;
   width: 100%;
   border: 1px solid var(--gray-light);
+  border-radius: var(--border-radius-slight);
   white-space: nowrap;
   caption-side: bottom;
+  overscroll-behavior: none;
 }
 
 table,
@@ -356,47 +342,11 @@ th {
   }
 }
 
-a:hover svg,
-a:active svg,
-a:focus svg {
-  stroke: var(--accent-color-hover);
-}
-
-a svg {
-  stroke: var(--accent-color);
-}
-
-a:has(svg) {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--sizing-xs);
-
-  & svg {
-    stroke: var(--accent-color);
-  }
-
-  &:hover svg,
-  &:active svg,
-  &:focus svg {
-    stroke: var(--accent-color-hover);
-  }
-}
-
 /* nav */
-.menu-primary .active,
-.menu-primary .active svg,
-nav .active,
-nav .active svg {
+.active,
+.active svg {
   cursor: not-allowed;
-}
-
-.menu-primary .active,
-nav .active {
   color: var(--accent-color);
-}
-
-.menu-primary .active svg,
-nav .active svg {
   stroke: var(--accent-color-hover);
 }
 
@@ -498,27 +448,11 @@ article {
     display: inline-block;
   }
 
-  & a h2:hover,
-  & a h2:focus,
-  & a h2:active {
-    color: var(--accent-color-hover);
-    transition-timing-function: var(--transition-ease-in-out);
-    transition-duration: var(--transition-duration-default);
-  }
-
-  & [rel="author"],
   & time {
+    display: block;
     color: var(--gray-dark);
     font-size: var(--font-size-sm);
     margin-right: var(--sizing-xs);
-  }
-
-  & time {
-    display: block;
-  }
-
-  & [rel="author"] {
-    margin-bottom: var(--sizing-xs);
   }
 }
 
@@ -547,6 +481,7 @@ ul, ol {
   color: var(--color-lightest);
   background-color: var(--accent-color);
   padding: var(--sizing-xs);
+  border-radius: var(--border-radius-slight);
 }
 
 .hidden {

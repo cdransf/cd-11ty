@@ -1,29 +1,29 @@
+a:focus > .watching.hero.shadow::after,
+a:focus-within > .watching.hero.shadow::after {
+  border: 0;
+  outline: var(--outline-default);
+}
+
+a:hover > .watching.hero.shadow::after,
+a:active > .watching.hero.shadow::after {
+  border-color: var(--accent-color-hover);
+}
+
 .watching {
-  & a:focus img,
-  & a:focus-within img {
-    border: 0
-  }
-
-  & a:focus .shadow:after,
-  & a:focus-within .shadow:after {
-    left: 0;
-    width: 100%;
-    height: 100%
-  }
-
   & img {
-    border: var(--border-default);
+    border-radius: var(--border-radius-slight);
     width: 100%;
     height: auto;
   }
 
   &.hero {
     position: relative;
-    overflow: hidden;
+    display: flex;
     aspect-ratio: var(--aspect-ratio-banner);
 
     & img {
       aspect-ratio: var(--aspect-ratio-banner);
+      border-radius: var(--border-radius-slight);
     }
 
     & div.meta-text {
@@ -56,11 +56,16 @@
       position: absolute;
       z-index: 1;
       content: '';
-      bottom: 1px;
-      left: 1px;
-      box-shadow: inset 0 -85px 60px -65px var(--black);
-      width: calc(100% - 2px);
-      height: calc(100% - 1px);
+      top: 0;
+      left: 0;
+      box-shadow: inset 0 -85px 60px -60px var(--black);
+      width: 100%;
+      height: 100%;
+      border: var(--border-default);
+      border-radius: var(--border-radius-slight);
+      transition-property: border-color;
+      transition-timing-function: var(--transition-ease-in-out);
+      transition-duration: 300ms;
     }
   }
 
@@ -73,6 +78,17 @@
     & a {
       display: flex;
       aspect-ratio: var(--aspect-ratio-banner);
+    }
+
+    & a:hover .item.shadow::after,
+    & a:active .item-wrapper.shadow::after {
+      border-color: var(--accent-color-hover)
+    }
+
+    & a:focus .item.shadow::after,
+    & a:focus-within .item.shadow::after {
+      border: 0;
+      outline: var(----outline-default);
     }
 
     & div {
@@ -123,10 +139,15 @@
       z-index: 1;
       content: '';
       top: 0;
-      left: 1px;
-      box-shadow: inset 0 -85px 60px -65px var(--black);
-      width: calc(100% - 2px);
-      height: calc(100% - 1px);
+      left: 0;
+      box-shadow: inset 0 -85px 60px -60px var(--black);
+      width: 100%;
+      height: 100%;
+      border: var(--border-default);
+      border-radius: var(--border-radius-slight);
+      transition-property: border-color;
+      transition-timing-function: var(--transition-ease-in-out);
+      transition-duration: 300ms;
     }
   }
 }

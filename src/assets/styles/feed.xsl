@@ -18,6 +18,9 @@
             --sizing-2xl: 2rem;
             --sizing-3xl: 2.25rem;
 
+            --border-radius-slight: var(--sizing-xs);
+            --border-radius-full: 9999px;
+
             --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;
 
             --blue-50: #eff5ff;
@@ -106,9 +109,23 @@
             background: var(--accent-color);
           }
 
-          ::-webkit-scrollbar {
-            width: var(--sizing-xs);
-            height: var(--sizing-xs);
+          ::-webkit-scrollbar-track {
+            background-color: var(--gray-light);
+          }
+
+          ::-webkit-scrollbar-thumb {
+            background: var(--accent-color);
+            border-radius: var(--border-radius-full);
+          }
+
+          ::-webkit-scrollbar-button {
+            background-color: var(--accent-color);
+          }
+
+          ::-webkit-scrollbar,
+          body::-webkit-scrollbar {
+            width: var(--sizing-md);
+            height: var(--sizing-md);
           }
 
           body {
@@ -189,6 +206,7 @@
           a:focus,
           a:focus-within {
             outline: var(--outline-default);
+            border-radius: var(--border-radius-slight);
             text-decoration: none;
           }
 
@@ -231,6 +249,7 @@
 
           .item img {
             border: var(--border-default);
+            border-radius: var(--border-radius-slight);
             width: 100%;
             height: auto;
             display: block;
@@ -280,22 +299,28 @@
           }
 
           pre {
-            background-color: var(--code-bg-color);
-            color: var(--code-text-color);
             padding: var(--sizing-base);
-            border: 1px solid var(--border-color);
             overflow: auto;
             margin: var(--sizing-base) 0;
-            font-family: var(--font-mono);
             font-size: var(--body-font-size);
           }
 
           code {
-            background-color: var(--code-bg-color);
-            border: 1px solid var(--border-color);
-            color: var(--code-text-color);
             padding: 2px 4px;
+          }
+
+          .highlight-text,
+          pre,
+          code {
+            border-radius: var(--border-radius-slight);
+          }
+
+          pre, code {
             font-family: var(--font-mono);
+            background-color: var(--code-bg-color);
+            color: var(--code-text-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-slight);
           }
 
           pre code {
@@ -327,7 +352,7 @@
             </section>
             <div class="default-wrapper">
               <p><xsl:value-of select="/rss/channel/description"/></p>
-              <p><strong class="highlight-text">Subscribe by adding the URL below to your feed reader of choice.</strong></p>
+              <p><span class="highlight-text">Subscribe by adding the URL below to your feed reader of choice.</span></p>
               <p>
                 <pre class="small">
                   <code><xsl:value-of select="rss/channel/atom:link/@href"/></code>

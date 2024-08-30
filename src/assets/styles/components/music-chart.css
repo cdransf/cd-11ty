@@ -27,6 +27,7 @@
 
     & img {
       border: var(--border-default);
+      border-radius: var(--border-radius-slight);
       width: calc(var(--sizing-3xl) * 1.5);
       height: calc(var(--sizing-3xl) * 1.5);
     }
@@ -66,6 +67,7 @@
       &:focus,
       &:focus-within {
         outline: var(--outline-default);
+        border-radius: var(--border-radius-slight);
       }
     }
 

@@ -1,6 +1,7 @@
 .progress-bar-wrapper {
   display: flex;
   background-color: rgba(217, 222, 228, .6);
+  border-radius: var(--border-radius-full);
   overflow: hidden;
   height: var(--sizing-lg);
   width: 100%;

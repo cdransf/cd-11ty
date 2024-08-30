@@ -42,6 +42,7 @@ schema: artist
     />
     <div class="artist-meta">
       <p class="title"><strong>{{ artist.name }}</strong></p>
+      <p class="sub-meta country">{% tablericon "map-pin" "Country" %} {{ artist.country }}</p>
       {%- if artist.favorite -%}
         <p class="sub-meta favorite">{% tablericon "heart" "Favorite" %} This is one of my favorite artists!</p>
       {%- endif -%}
@@ -90,7 +91,7 @@ schema: artist
           {% if venue %} at {{ venue }}{% endif %}
           {%- if concert.notes -%}
             {% assign notes = concert.notes | prepend: "### Notes\n" | markdown %}
-            {% render "partials/blocks/modal.liquid", label:"Concert info", icon:"info-square", content:notes, id:concert.id %}
+            {% render "partials/blocks/modal.liquid", label:"Concert info", icon:"info-circle", content:notes, id:concert.id %}
           {%- endif -%}
         </li>
       {% endfor %}

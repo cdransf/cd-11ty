@@ -53,6 +53,7 @@
   --about: #ff6347;
   --books: #32cd32;
   --concerts: #e75480;
+  --country: #20b2aa;
   --error: #d92525;
   --favorite: #ff69b4;
   --links: #9370db;
@@ -103,6 +104,10 @@
 
   --sizing-svg-sm: 18px;
   --sizing-svg-base: 24px;
+
+  /* radii */
+  --border-radius-slight: var(--sizing-xs);
+  --border-radius-full: 9999px;
 
   /* aspect ratios */
   --aspect-ratio-square: 1/1;

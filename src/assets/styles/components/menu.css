@@ -30,6 +30,7 @@
   &:focus,
   &:focus-within {
     outline: var(--outline-default);
+    border-radius: var(--border-radius-slight);
   }
 
   & svg {
