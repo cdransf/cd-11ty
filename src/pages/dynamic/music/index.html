@@ -51,5 +51,5 @@ schema: music-index
   {% tablericon "calendar-time" "Anticipated albums" %}
   Anticipated albums
 </h3>
-{% render "partials/media/grid.liquid", data:albumReleases, shape: "square", count: 8 %}
+{% render "partials/media/grid.liquid", data:albumReleases.upcoming, shape: "square", count: 8 %}
 {% endif %}

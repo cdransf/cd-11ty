@@ -6,7 +6,7 @@ const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 const fetchAlbumReleases = async () => {
-  const today = DateTime.utc().toISO()
+  const today = DateTime.utc().startOf('day')
   const { data, error } = await supabase
     .from('optimized_album_releases')
     .select(`
@@ -17,24 +17,30 @@ const fetchAlbumReleases = async () => {
       art,
       artist_name
     `)
-    .gt('release_date', today)
 
   if (error) {
     console.error('Error fetching data:', error)
     return []
   }
 
-  return data
-    .filter(album => !album['total_plays'] || album['total_plays'] <= 0)
-    .map(album => ({
+  const all = data.map(album => {
+    const releaseDate = DateTime.fromISO(album['release_date']).toUTC().startOf('day')
+
+    return {
       artist: album['artist_name'],
       title: album['name'],
-      date: DateTime.fromISO(album['release_date']).toLocaleString(DateTime.DATE_FULL),
+      date: releaseDate.toLocaleString(DateTime.DATE_FULL),
       url: album['release_link'],
       image: album['art'] ? `/${album['art']}` : '',
-      type: 'album-release'
-    }))
-    .sort((a, b) => a['timestamp'] - b['timestamp'])
+      total_plays: album['total_plays'],
+      release_date: releaseDate,
+      type: 'album-release',
+      timestamp: releaseDate.toSeconds(),
+    }
+  }).sort((a, b) => a['timestamp'] - b['timestamp'])
+  const upcoming = all.filter(album => (!album['total_plays'] || album['total_plays'] <= 0) && album['release_date'] > today);
+
+  return { all, upcoming }
 }
 
 export default async function () {

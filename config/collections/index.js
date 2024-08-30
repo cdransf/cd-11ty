@@ -164,9 +164,9 @@ export const processContent = (collection) => {
 export const albumReleasesCalendar = (collection) => {
   const collectionData = collection.getAll()[0]
   const { data } = collectionData
-  const { albumReleases } = data
-  if (!albumReleases || albumReleases.length === 0) return ''
-  const events = albumReleases.map(album => {
+  const { albumReleases: { all } } = data;
+  if (!all || all.length === 0) return ''
+  const events = all.map(album => {
     const date = DateTime.fromFormat(album.date, 'MMMM d, yyyy')
     if (!date.isValid) return null
 
@@ -183,6 +183,7 @@ export const albumReleasesCalendar = (collection) => {
   }).filter(event => event !== null)
 
   const { error, value } = ics.createEvents(events)
+
   if (error) {
     console.error('Error creating events: ', error)
     events.forEach((event, index) => {
