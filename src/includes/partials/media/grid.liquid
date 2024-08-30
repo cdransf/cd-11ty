@@ -5,7 +5,7 @@
     {%- capture alt -%}{{ item.title | escape }} ({{ item.year }}){% endcapture %}
     {%- assign alt = item.alt | strip | escape -%}
     <a href="{{ item.url }}" title="{{ alt }}">
-      <div class="item-wrapper shadow">
+      <div class="item">
         <div class="meta-text">
           {%- if item.title -%}
             <div class="header">{{ item.title }}</div>

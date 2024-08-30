@@ -4,7 +4,7 @@
   {%- for item in items limit: count -%}
     {%- capture alt -%}{{ item.title | escape }} ({{ item.year }}){% endcapture %}
     <a href="{{ item.url }}">
-      <div class="watching item shadow">
+      <div class="watching item">
         <div class="meta-text">
           {%- if item.type == 'movie' -%}
             <div class="header">{{ item.title }}</div>

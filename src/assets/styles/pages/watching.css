@@ -1,11 +1,11 @@
-a:focus > .watching.hero.shadow::after,
-a:focus-within > .watching.hero.shadow::after {
+a:focus > .watching.hero::after,
+a:focus-within > .watching.hero::after {
   border: 0;
   outline: var(--outline-default);
 }
 
-a:hover > .watching.hero.shadow::after,
-a:active > .watching.hero.shadow::after {
+a:hover > .watching.hero::after,
+a:active > .watching.hero::after {
   border-color: var(--accent-color-hover);
 }
 
@@ -52,7 +52,7 @@ a:active > .watching.hero.shadow::after {
       }
     }
 
-    &.shadow::after {
+    &::after {
       position: absolute;
       z-index: 1;
       content: '';
@@ -80,13 +80,13 @@ a:active > .watching.hero.shadow::after {
       aspect-ratio: var(--aspect-ratio-banner);
     }
 
-    & a:hover .item.shadow::after,
-    & a:active .item-wrapper.shadow::after {
+    & a:hover .item::after,
+    & a:active .item::after {
       border-color: var(--accent-color-hover)
     }
 
-    & a:focus .item.shadow::after,
-    & a:focus-within .item.shadow::after {
+    & a:focus .item::after,
+    & a:focus-within .item::after {
       border: 0;
       outline: var(----outline-default);
     }
@@ -134,7 +134,7 @@ a:active > .watching.hero.shadow::after {
     overflow: hidden;
     aspect-ratio: var(--aspect-ratio-banner);
 
-    &.shadow::after {
+    &::after {
       position: absolute;
       z-index: 1;
       content: '';
