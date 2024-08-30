@@ -11,16 +11,12 @@ const BASE_URL = 'https://coryd.dev'
 
 export default {
   // general
-  btoa: (string) => {
-    return btoa(string)
-  },
   encodeAmp: (string) => {
     if (!string) return
     const pattern = /&(?!(?:[a-zA-Z]+|#[0-9]+|#x[0-9a-fA-F]+);)/g
     const replacement = '&amp;'
     return string.replace(pattern, replacement)
   },
-  replaceQuotes: (string) => string.replace(/"/g, "'"),
   formatNumber: (number) => number.toLocaleString('en-US'),
   shuffleArray,
   sanitizeMediaString,
@@ -80,12 +76,6 @@ export default {
 
   // links
   absoluteUrl: (url) => (new URL(url, BASE_URL)).toString(),
-
-  // mastodon
-  mastoUsername: (url) => {
-    const parsedUrl = new URL(url)
-    return `${parsedUrl.pathname.replace('/', '')}@${parsedUrl.host}`
-  },
 
   // feeds
   normalizeEntries: (entries, limit) => {
@@ -212,14 +202,6 @@ export default {
     })
   },
   calculatePlayPercentage: (plays, mostPlayed) => `${plays/mostPlayed * 100}%`,
-  listToString: (items, key, count = 10) => {
-    const itemData = items.slice(0, count)
-    if (itemData.length === 0) return ''
-    if (itemData.length === 1) return itemData[0][key]
-    const allButLast = itemData.slice(0, -1).map(item => item[key]).join(', ')
-    const last = itemData[itemData.length - 1][key]
-    return `${allButLast} and ${last}`
-  },
   bookStatus: (books, status) => books.filter(book => book.status === status),
   bookFavorites: (books) => books.filter(book => book.favorite === true),
   bookYearLinks: (years) => years.sort((a, b) => b.value - a.value).map((year, index) => {
