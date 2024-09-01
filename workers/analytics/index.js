@@ -6,7 +6,7 @@ async function handleRequest(request) {
   const url = new URL(request.url)
 
   if (url.pathname === '/js/script.js') {
-    const targetUrl = 'https://dashboard.coryd.dev/script.js'
+    const targetUrl = 'https://stats.coryd.dev/script.js'
     const response = await fetch(targetUrl, {
       method: request.method,
       headers: request.headers
@@ -22,7 +22,7 @@ async function handleRequest(request) {
   }
 
   if (url.pathname === '/js/api/send') {
-    const targetUrl = 'https://dashboard.coryd.dev/api/send'
+    const targetUrl = 'https://stats.coryd.dev/api/send'
     const response = await fetch(targetUrl, {
       method: request.method,
       headers: request.headers,
