@@ -10,7 +10,7 @@
 
 input[id="tracks-recent"] ~ [for="tracks-recent"],
 input[id="tracks-window"] ~ [for="tracks-window"] {
-  margin-bottom: var(--sizing-lg);
+  margin-bottom: var(--sizing-base);
 }
 
 input[id="tracks-recent"] ~ [for="tracks-recent"]:has(+ [for="tracks-window"]) {

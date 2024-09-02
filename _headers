@@ -1,3 +1,10 @@
+/feeds/album-releases
+  Content-Type: application/xml; charset=utf-8
+  x-content-type-options: nosniff
+
+/feeds/album-releases.json
+  Content-Type: application/json
+
 /feeds/all
   Content-Type: application/xml; charset=utf-8
   x-content-type-options: nosniff

@@ -137,8 +137,8 @@ export default {
       if (rating) processedEntry['rating'] = rating
       if (tags) processedEntry['tags'] = tags
       if (type === 'album-release') {
-        processedEntry['excerpt'] = `Check out the new release: <a href="${url}">${url}</a>`
-        processedEntry['content'] = `Check out the new release: ${url}`
+        processedEntry['excerpt'] = 'Check out the new release!'
+        processedEntry['content'] = 'Check out the new release!'
       }
 
       if (entry) posts.push(processedEntry)
