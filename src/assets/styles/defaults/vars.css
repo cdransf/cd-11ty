@@ -33,6 +33,8 @@
   --gray-dark: var(--gray-950);
 
   /* base theme */
+  --color-theme: light;
+
   --color-lightest: var(--gray-50);
   --color-darkest: var(--gray-darkest);
   --text-color: var(--color-darkest);
@@ -147,7 +149,17 @@
 }
 
 /* dark theme */
+:root.theme__dark {
+  --color-theme: dark;
+}
+
 @media (prefers-color-scheme: dark) {
+  :root {
+    --color-theme: dark;
+  }
+}
+
+@container style(--color-theme: dark) {
   :root {
     --text-color: var(--color-lightest);
     --background-color: var(--color-darkest);
@@ -160,32 +172,4 @@
     --gray-dark: var(--gray-200);
     --brand-github: #f5f5f5;
   }
-}
-
-/* light theme */
-:root.theme__light {
-  --text-color: var(--color-darkest);
-  --background-color: var(--color-lightest);
-  --text-color-inverted: var(--color-lightest);
-  --background-color-inverted: var(--color-darkest);
-  --accent-color: var(--blue-600);
-  --accent-color-hover: var(--blue-800);
-  --gray-light: var(--gray-200);
-  --gray-lighter: var(--gray-100);
-  --gray-dark: var(--gray-950);
-  --brand-github: #333;
-}
-
-/* dark theme */
-:root.theme__dark {
-  --text-color: var(--color-lightest);
-  --background-color: var(--color-darkest);
-  --text-color-inverted: var(--color-darkest);
-  --background-color-inverted: var(--color-lightest);
-  --accent-color: var(--blue-400);
-  --accent-color-hover: var(--blue-200);
-  --gray-light: var(--gray-800);
-  --gray-lighter: var(--gray-900);
-  --gray-dark: var(--gray-200);
-  --brand-github: #f5f5f5;
 }
