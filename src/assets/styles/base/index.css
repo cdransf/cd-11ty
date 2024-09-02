@@ -16,7 +16,7 @@ html {
 
 body {
   font-size: var(--font-size-base);
-  line-height: 2;
+  line-height: var(--line-height-default);
 }
 
 ::-moz-selection {
@@ -49,7 +49,7 @@ body::-webkit-scrollbar {
 }
 
 p {
-  margin: var(--sizing-base) 0;
+  margin: var(--margin-top-base-horizontal-zero);
 
   &.books,
   &.concerts,
@@ -78,7 +78,6 @@ p {
 
   & a {
     text-decoration: underline;
-    text-decoration-line: underline;
     text-decoration-style: dashed;
     text-underline-offset: var(--sizing-xs);
   }
@@ -89,7 +88,7 @@ blockquote {
   color: var(--gray-dark);
   padding-left: var(--sizing-lg);
   border-left: var(--sizing-xs) solid var(--gray-dark);
-  margin: var(--sizing-base) 0;
+  margin: var(--margin-top-base-horizontal-zero);
 }
 
 code {
@@ -166,10 +165,17 @@ a {
 }
 
 a:focus,
-a:focus-within {
+a:focus-within
+a:focus > svg,
+a:focus-within > svg {
   outline: var(--outline-default);
   border-radius: var(--border-radius-slight);
   text-decoration: none;
+}
+
+a:has(svg):focus,
+a:has(svg):focus-within {
+  outline: none;
 }
 
 a:hover,
@@ -211,8 +217,8 @@ a:active,
 /* headers */
 h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
-  line-height: 1.5;
-  margin: var(--sizing-base) 0;
+  line-height: var(--line-height-reduced);
+  margin: var(--margin-top-base-horizontal-zero);
 }
 
 h1 { font-size: var(--font-size-2xl); }
@@ -245,7 +251,7 @@ hr {
   height: 1px;
   background-color: var(--gray-light);
   border: 0;
-  margin: var(--sizing-base) 0;
+  margin: var(--margin-top-base-horizontal-zero);
 
   & + .section-header {
     margin-top: 0;
@@ -459,7 +465,7 @@ article {
 /* lists */
 ul, ol {
   list-style-position: inside;
-  margin: var(--sizing-base) 0;
+  margin: var(--margin-top-base-horizontal-zero);
   padding-left: var(--sizing-base);
 
   & li {

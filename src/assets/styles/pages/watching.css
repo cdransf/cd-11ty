@@ -26,7 +26,7 @@ a:active > .watching.hero::after {
       border-radius: var(--border-radius-slight);
     }
 
-    & div.meta-text {
+    & .meta-text {
       color: white;
       position: absolute;
       left: var(--sizing-sm);
@@ -47,8 +47,8 @@ a:active > .watching.hero::after {
 
       & .header,
       & .subheader {
-        line-height: 1.5;
-        text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
+        line-height: var(--line-height-reduced);
+        text-shadow: var(--text-shadow-default);
       }
     }
 
@@ -88,7 +88,7 @@ a:active > .watching.hero::after {
     & a:focus .item::after,
     & a:focus-within .item::after {
       border: 0;
-      outline: var(----outline-default);
+      outline: var(--outline-default);
     }
 
     & div {
@@ -109,8 +109,8 @@ a:active > .watching.hero::after {
         & .rating {
           color: var(--color-lightest);
           font-size: var(--font-size-sm);
-          line-height: 1.5;
-          text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
+          line-height: var(--line-height-reduced);
+          text-shadow: var(--text-shadow-default);
         }
 
         & .header {
@@ -164,14 +164,14 @@ a:active > .watching.hero::after {
     display: flex;
     flex-direction: column;
     gap: var(--sizing-sm);
-    margin: var(--sizing-base) 0;
+    margin: var(--margin-top-base-horizontal-zero);
 
     & p {
       margin: 0;
 
       &.title {
         font-size: var(--font-size-xl);
-        line-height: 1.5;
+        line-height: var(--line-height-reduced);
       }
 
       &.sub-meta {

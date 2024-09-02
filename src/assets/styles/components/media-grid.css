@@ -71,7 +71,7 @@
   & a:focus .item::after,
   & a:focus-within .item::after {
     border: 0;
-    outline: var(----outline-default);
+    outline: var(--outline-default);
   }
 
   & .meta-text {
@@ -86,8 +86,8 @@
     & .subheader {
       color: var(--color-lightest);
       font-size: var(--font-size-sm);
-      line-height: 1.5;
-      text-shadow: var(--black) 0px 0px 10px;
+      line-height: var(--line-height-reduced);
+      text-shadow: var(--text-shadow-default);
     }
 
     & .header {

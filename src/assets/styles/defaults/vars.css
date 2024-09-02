@@ -92,6 +92,9 @@
   --font-weight-bold: 600;
   --font-weight-extrabold: 800;
 
+  --line-height-reduced: 1.5;
+  --line-height-default: 2;
+
   /* spacing */
   --sizing-xs: .25rem;
   --sizing-sm: .5rem;
@@ -104,6 +107,8 @@
 
   --sizing-svg-sm: 18px;
   --sizing-svg-base: 24px;
+
+  --margin-top-base-horizontal-zero: var(--sizing-base) 0;
 
   /* radii */
   --border-radius-slight: var(--sizing-xs);
@@ -126,6 +131,7 @@
   /* shadows */
   --box-shadow-media: inset 0 -85px 60px -60px var(--black);
   --box-shadow-text-toggle: inset 0 -120px 60px -60px var(--background-color);
+  --text-shadow-default: rgba(0, 0, 0, 0.7) 0px 0px 10px;
 
   /* input accent color */
   accent-color: var(--accent-color);

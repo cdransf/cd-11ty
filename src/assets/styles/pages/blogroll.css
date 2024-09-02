@@ -1,16 +1,4 @@
 .blog-roll-icons {
   display: flex;
   flex-direction: row;
-
-  & a {
-    display: flex;
-    align-items: center;
-    outline: none;
-
-    &:focus svg,
-    &:focus-within svg {
-      outline: var(--outline-default);
-      border-radius: var(--border-radius-slight);
-    }
-  }
 }

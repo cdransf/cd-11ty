@@ -1,5 +1,5 @@
 .webring-wrapper {
-  margin: var(--sizing-base) 0;
+  margin: var(--margin-top-base-horizontal-zero);
 
   & .webring-navigation {
     gap: var(--sizing-sm);

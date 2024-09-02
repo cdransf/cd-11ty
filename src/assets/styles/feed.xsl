@@ -18,6 +18,8 @@
             --sizing-2xl: 2rem;
             --sizing-3xl: 2.25rem;
 
+            --margin-top-base-horizontal-zero: var(--sizing-base) 0;
+
             --border-radius-slight: var(--sizing-xs);
             --border-radius-full: 9999px;
 
@@ -79,6 +81,9 @@
             --font-weight-bold: 600;
             --font-weight-extrabold: 800;
 
+            --line-height-reduced: 1.5;
+            --line-height-default: 2;
+
             /* outline */
             --outline-default: var(--outline-default);
 
@@ -132,7 +137,7 @@
             font-family: var(--font-mono);
             font-size: var(--font-size-base);
             font-weight: var(--font-weight-base);
-            line-height: 2;
+            line-height: var(--line-height-default);
             letter-spacing: -.05rem;
             word-spacing: -.125rem;
             color: var(--text-color);
@@ -194,7 +199,7 @@
 
           h1, h2, h3 {
             font-weight: var(--font-weight-bold);
-            line-height: 1.5;
+            line-height: var(--line-height-reduced);
             margin-bottom: var(--sizing-base);
           }
 
@@ -204,10 +209,17 @@
           }
 
           a:focus,
-          a:focus-within {
+          a:focus-within
+          a:focus > svg,
+          a:focus-within > svg {
             outline: var(--outline-default);
             border-radius: var(--border-radius-slight);
             text-decoration: none;
+          }
+
+          a:has(svg):focus,
+          a:has(svg):focus-within {
+            outline: none;
           }
 
           a:hover,
@@ -226,7 +238,7 @@
           }
 
           .item {
-            padding: var(--sizing-base) 0;
+            padding: var(--margin-top-base-horizontal-zero);
             border-bottom: 1px solid var(--border-color);
           }
 
@@ -262,7 +274,6 @@
 
           p a {
             text-decoration: underline;
-            text-decoration-line: underline;
             text-decoration-style: dashed;
             text-underline-offset: var(--sizing-xs);
           }
@@ -282,14 +293,14 @@
             color: var(--gray-dark);
             padding-left: var(--sizing-lg);
             border-left: var(--sizing-xs) solid var(--gray-dark);
-            margin: var(--sizing-base) 0;
+            margin: var(--margin-top-base-horizontal-zero);
           }
 
           hr {
             height: 1px;
             background-color: var(--border-color);
             border: 0;
-            margin: var(--sizing-base) 0;
+            margin: var(--margin-top-base-horizontal-zero);
           }
 
           .highlight-text {
@@ -301,7 +312,7 @@
           pre {
             padding: var(--sizing-base);
             overflow: auto;
-            margin: var(--sizing-base) 0;
+            margin: var(--margin-top-base-horizontal-zero);
             font-size: var(--body-font-size);
           }
 
