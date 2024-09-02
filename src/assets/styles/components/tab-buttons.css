@@ -10,11 +10,11 @@
 
 input[id="tracks-recent"] ~ [for="tracks-recent"],
 input[id="tracks-window"] ~ [for="tracks-window"] {
-  margin-bottom: var(--sizing-base);
+  margin-bottom: var(--spacing-base);
 }
 
 input[id="tracks-recent"] ~ [for="tracks-recent"]:has(+ [for="tracks-window"]) {
-  margin-right: var(--sizing-xs);
+  margin-right: var(--spacing-xs);
 }
 
 #tracks-recent:not(:checked) ~ [for="tracks-recent"]:hover,

@@ -4,7 +4,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: var(--sizing-md);
+  gap: var(--spacing-md);
 
   & > li {
     margin: 0;
@@ -25,7 +25,7 @@
 .menu-button-container {
   display: none;
   outline: none;
-  margin-left: var(--sizing-md);
+  margin-left: var(--spacing-md);
 
   & svg {
     cursor: pointer;
@@ -75,7 +75,7 @@
     top: 0;
     left: 0;
     gap: 0;
-    margin-top: calc(var(--sizing-3xl) * 2.25);
+    margin-top: calc(var(--spacing-3xl) * 2.25);
     flex-direction: column;
     width: 100%;
     z-index: 3;
@@ -85,7 +85,7 @@
       align-items: center;
       justify-content: center;
       margin: 0;
-      padding: var(--sizing-sm) 0;
+      padding: var(--spacing-sm) 0;
       width: 100%;
       color: var(--text-color);
       background: var(--background-color);

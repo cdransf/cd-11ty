@@ -33,7 +33,7 @@
     }
 
     & .column.description {
-      padding-right: var(--sizing-xl);
+      padding-right: var(--spacing-xl);
     }
   }
 }

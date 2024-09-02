@@ -6,7 +6,7 @@ p + .associated-media,
 img + .associated-media,
 .banner + .associated-media,
 youtube-video + .associated-media {
-  margin-top: var(--sizing-base);
+  margin-top: var(--spacing-base);
   border-top: var(--border-gray)
 }
 
@@ -25,11 +25,11 @@ youtube-video + .associated-media {
   }
 
   & ~ youtube-video {
-    margin-top: var(--sizing-base);
+    margin-top: var(--spacing-base);
   }
 
   & + .associated-media {
-    margin-top: var(--sizing-base);
+    margin-top: var(--spacing-base);
     border-top: var(--border-gray);
   }
 }

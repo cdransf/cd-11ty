@@ -18,12 +18,16 @@
             --sizing-2xl: 2rem;
             --sizing-3xl: 2.25rem;
 
-            --padding-xs: var(--sizing-xs);
-            --padding-sm: var(--sizing-sm);
-            --padding-md: var(--sizing-md);
-            --padding-lg: var(--sizing-lg);
+            --spacing-xs: var(--sizing-xs);
+            --spacing-sm: var(--sizing-sm);
+            --spacing-md: var(--sizing-md);
+            --spacing-lg: var(--sizing-lg);
+            --spacing-base: var(--sizing-base);
+            --spacing-xl: var(--sizing-xl);
+            --spacing-2xl: var(--sizing-2xl);
+            --spacing-3xl: var(--sizing-3xl);
 
-            --margin-top-base-horizontal-zero: var(--sizing-base) 0;
+            --margin-vertical-base-horizontal-zero: var(--sizing-base) 0;
 
             --border-radius-slight: var(--sizing-xs);
             --border-radius-full: 9999px;
@@ -169,7 +173,7 @@
           }
 
           main footer {
-            margin-bottom: var(--sizing-base);
+            margin-bottom: var(--spacing-base);
           }
 
           main footer hr {
@@ -177,7 +181,7 @@
           }
 
           .default-wrapper {
-            padding-top: var(--sizing-2xl);
+            padding-top: var(--spacing-2xl);
           }
 
           .default-wrapper > p:first-of-type {
@@ -185,7 +189,7 @@
           }
 
           .main-title {
-            padding-top: var(--sizing-3xl);
+            padding-top: var(--spacing-3xl);
           }
 
           .main-title h1 {
@@ -205,7 +209,7 @@
           h1, h2, h3 {
             font-weight: var(--font-weight-bold);
             line-height: var(--line-height-reduced);
-            margin-bottom: var(--sizing-base);
+            margin-bottom: var(--spacing-base);
           }
 
           a {
@@ -243,13 +247,13 @@
           }
 
           .item {
-            padding: var(--margin-top-base-horizontal-zero);
+            padding: var(--spacing-base) 0;
             border-bottom: 1px solid var(--border-color);
           }
 
           .item h3 {
             margin-top: 0;
-            margin-bottom: var(--sizing-base);
+            margin-bottom: var(--spacing-base);
           }
 
           .item p:first-of-type {
@@ -270,17 +274,17 @@
             width: 100%;
             height: auto;
             display: block;
-            margin-top: var(--sizing-base);
+            margin-top: var(--spacing-base);
           }
 
           p {
-            margin-bottom: var(--sizing-base)
+            margin-bottom: var(--spacing-base)
           }
 
           p a {
             text-decoration: underline;
             text-decoration-style: dashed;
-            text-underline-offset: var(--sizing-xs);
+            text-underline-offset: var(--spacing-xs);
           }
 
           p:last-of-type {
@@ -296,28 +300,28 @@
             font-size: var(--font-size-lg);
             word-break: break-word;
             color: var(--gray-dark);
-            padding-left: var(--sizing-lg);
+            padding-left: var(--spacing-lg);
             border-left: var(--sizing-xs) solid var(--gray-dark);
-            margin: var(--margin-top-base-horizontal-zero);
+            margin: var(--margin-vertical-base-horizontal-zero);
           }
 
           hr {
             height: 1px;
             background-color: var(--border-color);
             border: 0;
-            margin: var(--margin-top-base-horizontal-zero);
+            margin: var(--margin-vertical-base-horizontal-zero);
           }
 
           .highlight-text {
             color: var(--color-lightest);
             background-color: var(--accent-color);
-            padding: var(--padding-xs);
+            padding: var(--spacing-xs);
           }
 
           pre {
-            padding: var(--sizing-base);
+            padding: var(--spacing-base);
             overflow: auto;
-            margin: var(--margin-top-base-horizontal-zero);
+            margin: var(--margin-vertical-base-horizontal-zero);
             font-size: var(--body-font-size);
           }
 
@@ -346,7 +350,7 @@
           }
 
           pre.small {
-            padding: var(--padding-md);
+            padding: var(--spacing-md);
           }
 
           @media screen and (min-width: 768px) {

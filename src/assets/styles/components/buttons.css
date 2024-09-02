@@ -13,7 +13,7 @@ button,
   &:not(.theme-toggle) {
     border: 2px solid var(--accent-color);
     border-radius: var(--border-radius-full);
-    padding: var(--sizing-xs) var(--sizing-md);
+    padding: var(--spacing-xs) var(--spacing-md);
     cursor: pointer;
     display: inline-flex;
     flex-direction: row;
@@ -42,7 +42,7 @@ button,
   &:not(.theme-toggle, .active):focus-within {
     transition-property: none;
     outline: var(--outline-default);
-    padding: calc(var(--sizing-xs) + 2px) calc(var(--sizing-md) + 2px);
+    padding: calc(var(--spacing-xs) + 2px) calc(var(--spacing-md) + 2px);
     border: 0;
   }
 

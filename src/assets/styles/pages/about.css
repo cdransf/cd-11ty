@@ -3,7 +3,7 @@
 }
 
 .avatar-wrapper {
-  margin-bottom: var(--sizing-sm);
+  margin-bottom: var(--spacing-sm);
   width: 100%;
   justify-content: center;
 

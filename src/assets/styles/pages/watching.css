@@ -29,8 +29,8 @@ a:active > .watching.hero::after {
     & .meta-text {
       color: white;
       position: absolute;
-      left: var(--sizing-sm);
-      bottom: var(--sizing-sm);
+      left: var(--spacing-sm);
+      bottom: var(--spacing-sm);
       z-index: 2;
       display: flex;
       flex-direction: column;
@@ -42,7 +42,7 @@ a:active > .watching.hero::after {
       & .subheader {
         font-size: var(--font-size-sm);
         display: inline-flex;
-        gap: var(--sizing-xs)
+        gap: var(--spacing-xs)
       }
 
       & .header,
@@ -71,9 +71,9 @@ a:active > .watching.hero::after {
 
   &.grid {
     display: grid;
-    gap: var(--sizing-sm);
+    gap: var(--spacing-sm);
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-bottom: var(--sizing-base);
+    margin-bottom: var(--spacing-base);
 
     & a {
       display: flex;
@@ -97,8 +97,8 @@ a:active > .watching.hero::after {
       & .meta-text {
         position: absolute;
         z-index: 2;
-        padding: 0 var(--sizing-sm);
-        bottom: var(--sizing-sm);
+        padding: 0 var(--spacing-sm);
+        bottom: var(--spacing-sm);
         width: 100%;
         box-sizing: border-box;
         display: flex;
@@ -118,7 +118,7 @@ a:active > .watching.hero::after {
         }
 
         .subheader {
-          gap: var(--sizing-xs);
+          gap: var(--spacing-xs);
         }
 
         & .rating {
@@ -153,7 +153,7 @@ a:active > .watching.hero::after {
 }
 
 .watching-focus {
-  margin-top: var(--sizing-base);
+  margin-top: var(--spacing-base);
   border-bottom: 0;
 
   & img {
@@ -163,8 +163,8 @@ a:active > .watching.hero::after {
   & .watching-meta {
     display: flex;
     flex-direction: column;
-    gap: var(--sizing-sm);
-    margin: var(--margin-top-base-horizontal-zero);
+    gap: var(--spacing-sm);
+    margin: var(--margin-vertical-base-horizontal-zero);
 
     & p {
       margin: 0;

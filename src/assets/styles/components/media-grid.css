@@ -5,8 +5,8 @@
 
 .media-grid {
   display: grid;
-  gap: var(--sizing-sm);
-  margin-bottom: var(--sizing-base);
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-base);
 
   &.no-pagination {
     margin-bottom: 0;
@@ -77,8 +77,8 @@
   & .meta-text {
     position: absolute;
     z-index: 2;
-    padding: 0 var(--sizing-sm);
-    bottom: var(--sizing-sm);
+    padding: 0 var(--spacing-sm);
+    bottom: var(--spacing-sm);
     width: 100%;
     box-sizing: border-box;
 

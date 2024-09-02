@@ -1,13 +1,13 @@
 .link-grid {
   display: grid;
-  gap: var(--sizing-sm);
+  gap: var(--spacing-sm);
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  margin-bottom: var(--sizing-base);
+  margin-bottom: var(--spacing-base);
 
   & .link-box {
     border: 1px solid var(--gray-light);
     border-radius: var(--border-radius-slight);
-    padding: var(--sizing-xs) var(--sizing-sm);
+    padding: var(--spacing-xs) var(--spacing-sm);
   }
 }
 

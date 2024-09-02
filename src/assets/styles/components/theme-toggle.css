@@ -2,7 +2,7 @@ theme-toggle {
   display: flex;
   width: var(--sizing-svg-base);
   height: var(--sizing-svg-base);
-  margin-left: var(--sizing-md);
+  margin-left: var(--spacing-md);
 }
 
 .theme-toggle {

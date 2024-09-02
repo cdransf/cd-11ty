@@ -8,7 +8,7 @@
 }
 
 .artist-focus {
-  margin-top: var(--sizing-base);
+  margin-top: var(--spacing-base);
 
   & img {
     border: var(--border-default);
@@ -21,14 +21,14 @@
   & .artist-display {
     display: flex;
     flex-direction: column;
-    gap: var(--sizing-xs);
-    margin-bottom: var(--sizing-base);
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-base);
 
     & .artist-meta {
       display: flex;
       flex-direction: column;
-      gap: var(--sizing-sm);
-      margin-top: var(--sizing-base);
+      gap: var(--spacing-sm);
+      margin-top: var(--spacing-base);
 
       & p {
         margin: 0;
@@ -77,7 +77,7 @@ p.concerts + ul + hr {
 
     & .artist-display {
       flex-direction: row;
-      gap: var(--sizing-md);
+      gap: var(--spacing-md);
 
       & .artist-meta {
         margin-top: 0;

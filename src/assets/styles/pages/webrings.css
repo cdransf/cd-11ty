@@ -1,8 +1,8 @@
 .webring-wrapper {
-  margin: var(--margin-top-base-horizontal-zero);
+  margin: var(--margin-vertical-base-horizontal-zero);
 
   & .webring-navigation {
-    gap: var(--sizing-sm);
+    gap: var(--spacing-sm);
 
     & a {
       display: flex;

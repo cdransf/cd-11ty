@@ -15,7 +15,7 @@ textarea {
   background-color: var(--background-color);
   border: var(--border-default);
   border-radius: var(--border-radius-slight);
-  padding: var(--padding-sm);
+  padding: var(--spacing-sm);
   width: 100%;
 }
 
@@ -25,14 +25,14 @@ input[type="email"]:has(+ *),
 input[type="search"]:has(+ *),
 textarea:has(+ *),
 form:has(+ *) {
-  margin-bottom: var(--sizing-base);
+  margin-bottom: var(--spacing-base);
 }
 
 input:focus,
 input:focus-within,
 textarea:focus,
 textarea:focus-within {
-  padding: calc(var(--sizing-sm) + 1px);
+  padding: calc(var(--spacing-sm) + 1px);
 }
 
 input:focus,
@@ -50,7 +50,7 @@ select {
   border: 1px solid var(--text-color);
   border-radius: var(--border-radius-slight);
   background-color: var(--background-color);
-  padding: var(--sizing-xs) var(--sizing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
 }
 
 .search__form {
@@ -58,11 +58,11 @@ select {
 }
 
 .search__results {
-  margin: 0 0 var(--sizing-base);
+  margin: 0 0 var(--spacing-base);
   padding: 0;
   list-style: none;
 
   & li {
-    margin: var(--sizing-sm) 0;
+    margin: var(--spacing-sm) 0;
   }
 }

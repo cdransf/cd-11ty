@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--sizing-sm);
+  gap: var(--spacing-sm);
 
   &:last-of-type {
     border-bottom: 0;
@@ -64,7 +64,7 @@
   & .book-meta {
     display: flex;
     flex-direction: column;
-    gap: var(--sizing-sm);
+    gap: var(--spacing-sm);
 
     & p {
       &.title {
@@ -91,15 +91,15 @@
 }
 
 .book-focus {
-  margin-top: var(--sizing-base);
+  margin-top: var(--spacing-base);
   border-bottom: 0;
 
   & .book-display {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--sizing-base);
-    margin-bottom: var(--sizing-base);
+    gap: var(--spacing-base);
+    margin-bottom: var(--spacing-base);
 
     & .book-meta {
       width: 100%;
@@ -119,7 +119,7 @@
 @media screen and (min-width: 768px) {
   .book-entry {
     flex-direction: row;
-    gap: var(--sizing-base);
+    gap: var(--spacing-base);
     align-items: start;
 
     & .book-meta {
@@ -131,7 +131,7 @@
       }
 
       & .description {
-        margin-bottom: var(--sizing-base);
+        margin-bottom: var(--spacing-base);
       }
     }
   }

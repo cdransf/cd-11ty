@@ -16,7 +16,7 @@ pre[class*="language-"] {
 }
 
 pre[class*="language-"] {
-  padding: var(--padding-lg);
+  padding: var(--spacing-lg);
   margin: var(--sizing-xl) 0;
   overflow: auto;
   background: var(--gray-darkest);
@@ -24,7 +24,7 @@ pre[class*="language-"] {
 }
 
 :not(pre) > code[class*="language-"] {
-  padding: var(--padding-xs);
+  padding: var(--spacing-xs);
   white-space: normal;
   background: var(--gray-darkest);
   border-radius: var(--border-radius-slight);

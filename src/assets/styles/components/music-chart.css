@@ -1,5 +1,5 @@
 .music-chart {
-  margin-bottom: var(--sizing-base);
+  margin-bottom: var(--spacing-base);
 
   & ol {
     padding-left: 0;
@@ -17,11 +17,11 @@
     align-items: start;
 
     &:not(:last-of-type) {
-      margin-bottom: var(--sizing-md);
+      margin-bottom: var(--spacing-md);
     }
 
     & .progress-bar-wrapper {
-      margin-top: var(--sizing-sm);
+      margin-top: var(--spacing-sm);
       max-width: 40%;
     }
 
@@ -39,7 +39,7 @@
     & .meta,
     & .presentation {
       justify-content: start;
-      gap: var(--sizing-md);
+      gap: var(--spacing-md);
     }
 
     & .meta {
@@ -91,16 +91,16 @@
     }
 
     & .timestamp {
-      margin-top: var(--sizing-sm);
+      margin-top: var(--spacing-sm);
       margin-left: 0;
     }
   }
 
   &.grid {
     display: grid;
-    gap: var(--sizing-sm);
+    gap: var(--spacing-sm);
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: var(--sizing-base);
+    margin-bottom: var(--spacing-base);
 
     & .item .meta {
       max-width: 80%;
@@ -142,7 +142,7 @@
       }
 
       & .timestamp {
-        margin-left: var(--sizing-lg);
+        margin-left: var(--spacing-lg);
         text-align: right;
         white-space: nowrap;
       }
@@ -152,7 +152,7 @@
       }
 
       & .progress-bar-wrapper {
-        margin-left: var(--sizing-lg);
+        margin-left: var(--spacing-lg);
       }
     }
 

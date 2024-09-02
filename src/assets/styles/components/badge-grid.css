@@ -1,8 +1,8 @@
 .badge-grid {
   display: grid;
-  gap: var(--sizing-md);
+  gap: var(--spacing-md);
   grid-template-columns: repeat(3, 1fr);
-  margin-top: var(--sizing-2xl);
+  margin-top: var(--spacing-2xl);
 
   & > * {
     display: flex;

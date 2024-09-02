@@ -1,15 +1,15 @@
 * + .banner,
 :not(* + .banner) .banner:first-of-type {
-  margin-top: var(--sizing-base);
+  margin-top: var(--spacing-base);
 }
 
 .banner:has(+ *),
 :not(* + .banner) .banner:last-of-type {
-  margin-bottom: var(--sizing-base);
+  margin-bottom: var(--spacing-base);
 }
 
 .banner {
-  padding: var(--padding-md);
+  padding: var(--spacing-md);
   border: 1px solid;
   border-radius: var(--border-radius-slight);
 
@@ -27,7 +27,7 @@
       vertical-align: middle;
       height: var(--sizing-lg);
       width: var(--sizing-lg);
-      margin-right: var(--sizing-sm);
+      margin-right: var(--spacing-sm);
     }
   }
 

@@ -14,12 +14,12 @@
     inset: 0;
     overflow: scroll;
     border-radius: var(--border-radius-slight);
-    padding: var(--sizing-lg) var(--sizing-2xl);
+    padding: var(--spacing-lg) var(--spacing-2xl);
 
     & .modal-close {
       position: absolute;
-      top: var(--sizing-lg);
-      right: var(--sizing-lg);
+      top: var(--spacing-lg);
+      right: var(--spacing-lg);
       height: var(--sizing-svg-base);
       width: var(--sizing-svg-base);
     }

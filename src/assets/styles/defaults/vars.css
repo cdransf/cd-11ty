@@ -108,12 +108,16 @@
   --sizing-svg-sm: 18px;
   --sizing-svg-base: 24px;
 
-  --padding-xs: var(--sizing-xs);
-  --padding-sm: var(--sizing-sm);
-  --padding-md: var(--sizing-md);
-  --padding-lg: var(--sizing-lg);
+  --spacing-xs: var(--sizing-xs);
+  --spacing-sm: var(--sizing-sm);
+  --spacing-md: var(--sizing-md);
+  --spacing-lg: var(--sizing-lg);
+  --spacing-base: var(--sizing-base);
+  --spacing-xl: var(--sizing-xl);
+  --spacing-2xl: var(--sizing-2xl);
+  --spacing-3xl: var(--sizing-3xl);
 
-  --margin-top-base-horizontal-zero: var(--sizing-base) 0;
+  --margin-vertical-base-horizontal-zero: var(--spacing-base) 0;
 
   /* radii */
   --border-radius-slight: var(--sizing-xs);

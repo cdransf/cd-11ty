@@ -4,9 +4,9 @@
   width: 100%;
   background-color: rgba(217, 222, 228, .6);
   border-radius: var(--border-radius-full);
-  overflow: hidden;
 
   & .progress-bar {
     background-color: var(--accent-color);
+    border-radius: var(--border-radius-full);
   }
 }
