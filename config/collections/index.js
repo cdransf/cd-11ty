@@ -29,7 +29,7 @@ export const processContent = (collection) => {
   let id = 0
   const collectionData = collection.getAll()[0]
   const { data } = collectionData
-  const { posts, links, movies, books, pages, artists, genres, tv, concerts } = data
+  const { posts, links, movies, books, pages, artists, genres, tv, concerts, albumReleases } = data
 
   const parseDate = (date) => {
     if (!date) return null
@@ -66,6 +66,7 @@ export const processContent = (collection) => {
   }
 
   const movieData = movies['movies'].filter((movie) => movie['rating'])
+  const showData = tv['shows'].filter((show) => show['last_watched_at'])
   const bookData = books.all.filter((book) => book['rating'])
 
   const addItemToIndex = (items, icon, getUrl, getTitle, getTags) => {
@@ -87,6 +88,7 @@ export const processContent = (collection) => {
       items.forEach((item) => {
         let attribution
         let hashTags = tagsToHashtags(item) ? ' ' + tagsToHashtags(item) : ''
+        if (item['type'] === 'album-release') hashTags = ' #Music #NewMusic'
 
         // link attribution if properties exist
         if (item?.['authors']?.['mastodon']) {
@@ -97,7 +99,7 @@ export const processContent = (collection) => {
         }
 
         const content = {
-          url: `${BASE_URL}${item['url']}`,
+          url: !item['url']?.includes('http') ? `${BASE_URL}${item['url']}` : item['url'],
           title: `${icon}: ${getTitle(item)}${attribution ? ' via ' + attribution : ''}${hashTags}`,
           type: item['type']
         }
@@ -130,6 +132,7 @@ export const processContent = (collection) => {
   addItemToIndex(artists, '🎙️', (item) => item['url'], (item) => `${item['name']} (${item['country']}) - ${item['genre']}`, (item) => `['${item['genre']}']`)
   addItemToIndex(genres, '🎵', (item) => item['url'], (item) => item['name'], (item) => item.artists.map(artist => artist['name_string']))
   if (movieData) addItemToIndex(movieData, '🎥', (item) => item['url'], (item) => `${item['title']} (${item['rating']})`, (item) => item['tags'])
+  if (showData) addItemToIndex(showData, '📺', (item) => item['url'], (item) => `${item['title']} (${item['year']})`, (item) => item['tags'])
   if (bookData) addItemToIndex(bookData, '📖', (item) => item['url'], (item) => `${item['title']} (${item['rating']})`, (item) => item['tags'])
 
   addContent(posts, '📝', (item) => item['title'], (item) => item['date'])
@@ -137,6 +140,7 @@ export const processContent = (collection) => {
   addContent(books.all.filter((book) => book['status'] === 'finished'), '📖', (item) => `${item['title']}${item['rating'] ? ' (' + item['rating'] + ')' : ''}`, (item) => item['date'])
   addContent(movies['movies'], '🎥', (item) => `${item['title']}${item['rating'] ? ' (' + item['rating'] + ')' : ''}`, (item) => item['lastWatched'])
   addContent(concerts, '🎤', (item) => `${item['artistNameString'] ? item['artistNameString'] : item['artist']['name']} at ${item['venue']['name'].split(',')[0].trim()}`, (item) => item['date'])
+  addContent([...albumReleases['current']].reverse(), '📆', (item) => `${item['title']} by ${item['artist']}`, (item) => item['release_date'])
 
   addSiteMapContent(posts, (item) => item.title, (item) => item.date)
   addSiteMapContent(pages, (item) => item.title, (item) => item.date)

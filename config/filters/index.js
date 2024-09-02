@@ -4,7 +4,6 @@ import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItFootnote from 'markdown-it-footnote'
 import sanitizeHtml from 'sanitize-html'
-
 import { shuffleArray, sanitizeMediaString } from '../utilities/index.js'
 
 const BASE_URL = 'https://coryd.dev'
@@ -108,47 +107,43 @@ export default {
     const entryData = limit ? entries.slice(0, limit) : entries
 
     entryData.forEach((entry) => {
-      const dateKey = Object.keys(entry).find(key => key.includes('date'))
-      const date = new Date(entry[dateKey])
       const md = mdGenerator()
-      let excerpt = ''
-      let url = ''
-      let author
-      let title = entry['title']
-      let image = entry['image']
+      const dateKey = Object.keys(entry).find(key => key.includes('date'))
+      let { title, image, url, slug, link, authors, description, type, content, backdrop, rating, tags } = entry
       const feedNote = '<hr/><p>This is a full text feed, but not all content can be rendered perfectly within the feed. If something looks off, feel free to <a href="https://coryd.dev">visit my site</a> for the original post.</p>'
+      const processedEntry = { title: title.trim(), date: new Date(entry[dateKey]), content: description }
 
-      if (entry['url']?.includes('http')) url = entry.url
-      if (!entry['url']?.includes('http')) url = new URL(entry['url'], BASE_URL).toString()
-      if (entry?.['slug']) url = new URL(entry['slug'], BASE_URL).toString()
-      if (entry?.['link']) {
-        title = `${entry['title']} via ${entry['authors']['name']}`
-        url = entry['link'],
-        author = {
-          name: entry['authors']['name'],
-          url: entry['authors']['url'],
-          mastodon: entry['.authors']?.['mastodon'] || '',
-          rss: entry['authors']?.['rss_feed'] || ''
+      if (url?.includes('http')) processedEntry['url'] = url
+      if (!url?.includes('http')) processedEntry['url'] = new URL(url, BASE_URL).toString()
+      if (slug) processedEntry['url'] = new URL(slug, BASE_URL).toString()
+      if (link) {
+        processedEntry['title'] = `${title} via ${authors['name']}`
+        processedEntry['url'] = link,
+        processedEntry['author'] = {
+          name: authors['name'],
+          url: authors['url'],
+          mastodon: authors?.['mastodon'] || '',
+          rss: authors?.['rss_feed'] || ''
         }
       }
-      if (entry['description']) excerpt = entry['description']
-      if (entry['type'] === 'book' || entry['type'] === 'movie' || entry['type'] === 'link') excerpt = sanitizeHtml(`${md.render(entry.description)}`)
-      if (entry?.['slug'] && entry['content']) excerpt = sanitizeHtml(`${md.render(entry['content'])}${feedNote}`, {
+      if (description) processedEntry['excerpt'] = description
+      if (['book', 'movie', 'link'].includes(type)) processedEntry['excerpt'] = sanitizeHtml(`${md.render(description)}`)
+      if (slug && content) processedEntry['excerpt'] = sanitizeHtml(`${md.render(content)}${feedNote}`, {
         disallowedTagsMode: 'completelyDiscard'
       })
-      if (entry['backdrop']) image = entry['backdrop']
-      if (entry) posts.push({
-        title: title.trim(),
-        url,
-        image,
-        content: entry['description'],
-        date,
-        excerpt,
-        rating: entry?.['rating'] || '',
-        tags: entry?.['tags'] || '',
-        author
-      })
+
+      processedEntry['image'] = backdrop || image
+
+      if (rating) processedEntry['rating'] = rating
+      if (tags) processedEntry['tags'] = tags
+      if (type === 'album-release') {
+        processedEntry['excerpt'] = `Check out the new release: <a href="${url}">${url}</a>`
+        processedEntry['content'] = `Check out the new release: ${url}`
+      }
+
+      if (entry) posts.push(processedEntry)
     })
+
     return posts
   },
 

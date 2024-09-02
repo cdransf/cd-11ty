@@ -1,0 +1,15 @@
+---
+layout: null
+eleventyExcludeFromCollections: true
+permalink: "/feeds/album-releases"
+---
+{%- assign releases = albumReleases.current | reverse -%}
+{% render "partials/feeds/rss.liquid"
+  permalink:"/feeds/album-releases"
+  title:"Album releases / Cory Dransfeldt"
+  globals:globals
+  data:releases
+  updated:releases[0].release_date
+  utm_campaign:"album_releases_feed"
+  appVersion:appVersion
+%}
