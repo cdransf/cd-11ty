@@ -29,7 +29,7 @@ theme-toggle {
   }
 }
 
-.theme__dark {
+[data-theme="dark"] {
   & .theme-toggle > .light {
     display: inline;
   }
@@ -39,7 +39,7 @@ theme-toggle {
   }
 }
 
-.theme__light {
+[data-theme="light"] {
   & .theme-toggle > .light {
     display: none;
   }

@@ -147,7 +147,7 @@
 }
 
 /* dark theme */
-:root.theme__dark {
+:root[data-theme="dark"] {
   --text-color: var(--color-lightest);
     --background-color: var(--color-darkest);
     --text-color-inverted: var(--color-darkest);
