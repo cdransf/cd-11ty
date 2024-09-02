@@ -17,7 +17,6 @@
     display: flex;
   }
 
-
   & img {
     max-width: calc(var(--sizing-3xl) * 4);
     height: auto;
@@ -114,10 +113,6 @@
         max-width: 50%;
       }
     }
-  }
-
-  p {
-    margin: var(--sizing-base) 0;
   }
 }
 

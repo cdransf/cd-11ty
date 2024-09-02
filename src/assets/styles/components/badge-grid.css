@@ -10,7 +10,7 @@
   }
 
   & a {
-    outline: 0;
+    outline: none;
 
     &:focus img,
     &:focus-within img {

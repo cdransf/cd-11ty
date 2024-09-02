@@ -109,7 +109,7 @@ export default {
     entryData.forEach((entry) => {
       const md = mdGenerator()
       const dateKey = Object.keys(entry).find(key => key.includes('date'))
-      let { title, image, url, slug, link, authors, description, type, content, backdrop, rating, tags } = entry
+      let { artist, authors, backdrop, content, description, image, link, rating, slug, title, url, tags, type  } = entry
       const feedNote = '<hr/><p>This is a full text feed, but not all content can be rendered perfectly within the feed. If something looks off, feel free to <a href="https://coryd.dev">visit my site</a> for the original post.</p>'
       const processedEntry = { title: title.trim(), date: new Date(entry[dateKey]), content: description }
 
@@ -137,6 +137,7 @@ export default {
       if (rating) processedEntry['rating'] = rating
       if (tags) processedEntry['tags'] = tags
       if (type === 'album-release') {
+        if (artist) processedEntry['title'] = `${title} by ${artist}`
         processedEntry['excerpt'] = 'Check out the new release!'
         processedEntry['content'] = 'Check out the new release!'
       }
@@ -156,43 +157,45 @@ export default {
         url: item['url'],
         type: item['type']
       }
-      if (item['type'] === 'artist') {
-        normalized['title'] = item['title']
-        normalized['alt'] = `${item['plays']} plays of ${item['title']}`
-        normalized['subtext'] = `${item['plays']} plays`
+
+      switch (item['type']) {
+        case 'artist':
+          normalized.title = item['title']
+          normalized.alt = `${item['plays']} plays of ${item['title']}`
+          normalized.subtext = `${item['plays']} plays`
+          break
+        case 'album':
+          normalized.title = item['title']
+          normalized.alt = `${item['title']} by ${item['artist']}`
+          normalized.subtext = `${item['artist']}`
+          break
+        case 'album-release':
+          normalized.title = item['title']
+          normalized.alt = `${item['title']} by ${item['artist']}`
+          normalized.subtext = `${item['artist']} / ${item['date']}`
+          break
+        case 'movie':
+          normalized.title = item['title']
+          normalized.alt = item['title']
+          normalized.rating = item['rating']
+          normalized.favorite = item['favorite']
+          normalized.subtext = item.rating ? `${item['rating']} (${item['year']})` : `(${item['year']})`
+          break
+        case 'book':
+          normalized.title = `${item['title']} by ${item['author']}`
+          if (item['rating']) {
+            normalized.rating = item['rating']
+            normalized.subtext = item['rating']
+          }
+          break
+        case 'tv':
+        case 'tv-range':
+          normalized.title = item['name']
+          normalized.alt = `${item['subtext']} ${item['type'] === 'tv' ? 'of' : 'from'} ${item['name']}`
+          normalized.subtext = item['subtext']
+          break
       }
-      if (item['type'] === 'album') {
-        normalized['title'] = item['title']
-        normalized['alt'] = `${item['title']} by ${item['artist']}`
-        normalized['subtext'] = `${item['artist']}`
-      }
-      if (item['type'] === 'album-release') {
-        normalized['title'] = item['title']
-        normalized['alt'] = `${item['title']} by ${item['artist']}`
-        normalized['subtext'] = `${item['artist']} / ${item['date']}`
-      }
-      if (item['type'] === 'movie') {
-        normalized['title'] = item['title']
-        normalized['alt'] = item['title']
-        normalized['rating'] = item['rating']
-        normalized['favorite'] = item['favorite']
-        normalized['subtext'] = item.rating ? `${item['rating']} (${item['year']})` : `(${item['year']})`
-      }
-      if (item['type'] === 'book') {
-        normalized['title'] = `${item['title']} by ${item['author']}`
-        normalized['rating'] = item['rating']
-        if (item['rating']) normalized['subtext'] = item['rating']
-      }
-      if (item['type'] === 'tv') {
-        normalized['title'] = item['name']
-        normalized['alt'] = `${item['subtext']} of ${item['name']}`
-        normalized['subtext'] = item['subtext']
-      }
-      if (item['type'] === 'tv-range') {
-        normalized['title'] = item['name']
-        normalized['alt'] = `${item['subtext']} from ${item['name']}`
-        normalized['subtext'] = item['subtext']
-      }
+
       return normalized
     })
   },

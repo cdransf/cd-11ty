@@ -24,17 +24,17 @@
 
 .menu-button-container {
   display: none;
+  outline: none;
   margin-left: var(--sizing-md);
-  outline: 0;
+
+  & svg {
+    cursor: pointer;
+  }
 
   &:focus,
   &:focus-within {
     outline: var(--outline-default);
     border-radius: var(--border-radius-slight);
-  }
-
-  & svg {
-    cursor: pointer;
   }
 
   &:hover svg,
@@ -123,7 +123,7 @@
 
     &:focus a,
     &:focus-within a {
-      outline: 0;
+      outline: none;
     }
 
     &:focus,

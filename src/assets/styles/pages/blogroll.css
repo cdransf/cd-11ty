@@ -5,7 +5,7 @@
   & a {
     display: flex;
     align-items: center;
-    outline: 0;
+    outline: none;
 
     &:focus svg,
     &:focus-within svg {

@@ -20,30 +20,8 @@
       position: absolute;
       top: var(--sizing-lg);
       right: var(--sizing-lg);
-      cursor: pointer;
       height: var(--sizing-svg-base);
       width: var(--sizing-svg-base);
-
-      &:focus svg,
-      &:focus-within svg {
-        outline: var(--outline-default);
-        border-radius: var(--border-radius-slight);
-      }
-
-      & svg {
-        stroke: var(--accent-color);
-
-        &:focus {
-          outline: var(--outline-default);
-          border-radius: var(--border-radius-slight);
-        }
-
-        &:hover,
-        &:focus,
-        &:active {
-          stroke: var(--accent-color-hover);
-        }
-      }
     }
   }
 }
@@ -60,7 +38,8 @@
   }
 }
 
-.modal-toggle {
+.modal-toggle,
+.modal-close {
   cursor: pointer;
   display: inline-flex;
   vertical-align: middle;

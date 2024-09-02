@@ -1,10 +1,10 @@
 .progress-bar-wrapper {
   display: flex;
+  height: var(--sizing-lg);
+  width: 100%;
   background-color: rgba(217, 222, 228, .6);
   border-radius: var(--border-radius-full);
   overflow: hidden;
-  height: var(--sizing-lg);
-  width: 100%;
 
   & .progress-bar {
     background-color: var(--accent-color);

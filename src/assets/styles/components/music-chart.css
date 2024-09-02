@@ -61,7 +61,7 @@
       line-height: 1.5;
 
       & a {
-        outline: 0;
+        outline: none;
       }
 
       &:focus,

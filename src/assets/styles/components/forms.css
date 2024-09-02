@@ -32,9 +32,17 @@ input:focus,
 input:focus-within,
 textarea:focus,
 textarea:focus-within {
+  padding: calc(var(--sizing-sm) + 1px);
+}
+
+input:focus,
+input:focus-within,
+textarea:focus,
+textarea:focus-within,
+select:focus,
+select:focus-within {
   border: 0;
   outline: var(--outline-default);
-  padding: calc(var(--sizing-sm) + 1px);
 }
 
 select {
@@ -43,12 +51,6 @@ select {
   border-radius: var(--border-radius-slight);
   background-color: var(--background-color);
   padding: var(--sizing-xs) var(--sizing-sm);
-
-  &:focus,
-  &:focus-within {
-    border: 0;
-    outline: var(--outline-default)
-  }
 }
 
 .search__form {

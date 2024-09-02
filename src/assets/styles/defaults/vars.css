@@ -123,6 +123,10 @@
   --stroke-width-bold: 2;
   --inline-margin-bottom: -5px;
 
+  /* shadows */
+  --box-shadow-media: inset 0 -85px 60px -60px var(--black);
+  --box-shadow-text-toggle: inset 0 -120px 60px -60px var(--background-color);
+
   /* input accent color */
   accent-color: var(--accent-color);
 }
