@@ -9,7 +9,7 @@
 }
 
 .banner {
-  padding: var(--sizing-md);
+  padding: var(--padding-md);
   border: 1px solid;
   border-radius: var(--border-radius-slight);
 

@@ -92,7 +92,7 @@ blockquote {
 }
 
 code {
-  padding: var(--sizing-xs);
+  padding: var(--padding-xs);
   color: var(--text-color-inverted);
   background-color: var(--background-color-inverted);
   border-radius: var(--border-radius-slight);
@@ -288,7 +288,7 @@ tr:not(:last-child) {
 
 th,
 td {
-  padding: var(--sizing-sm);
+  padding: var(--padding-sm);
   min-width: max-content;
   word-break: break-word;
   width: 100%;
@@ -486,7 +486,7 @@ ul, ol {
 .highlight-text {
   color: var(--color-lightest);
   background-color: var(--accent-color);
-  padding: var(--sizing-xs);
+  padding: var(--padding-xs);
   border-radius: var(--border-radius-slight);
 }
 

@@ -18,6 +18,11 @@
             --sizing-2xl: 2rem;
             --sizing-3xl: 2.25rem;
 
+            --padding-xs: var(--sizing-xs);
+            --padding-sm: var(--sizing-sm);
+            --padding-md: var(--sizing-md);
+            --padding-lg: var(--sizing-lg);
+
             --margin-top-base-horizontal-zero: var(--sizing-base) 0;
 
             --border-radius-slight: var(--sizing-xs);
@@ -306,7 +311,7 @@
           .highlight-text {
             color: var(--color-lightest);
             background-color: var(--accent-color);
-            padding: var(--sizing-xs);
+            padding: var(--padding-xs);
           }
 
           pre {
@@ -341,7 +346,7 @@
           }
 
           pre.small {
-            padding: var(--sizing-md);
+            padding: var(--padding-md);
           }
 
           @media screen and (min-width: 768px) {

@@ -15,7 +15,7 @@ textarea {
   background-color: var(--background-color);
   border: var(--border-default);
   border-radius: var(--border-radius-slight);
-  padding: var(--sizing-sm);
+  padding: var(--padding-sm);
   width: 100%;
 }
 
