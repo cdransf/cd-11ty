@@ -10,7 +10,7 @@ pre[class*="language-"] {
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
-  line-height: var(--line-height-reduced);
+  line-height: var(--line-height-md);
   tab-size: 2;
   hyphens: none;
 }

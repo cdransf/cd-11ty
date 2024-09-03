@@ -16,7 +16,7 @@ html {
 
 body {
   font-size: var(--font-size-base);
-  line-height: var(--line-height-default);
+  line-height: var(--line-height-base);
 }
 
 ::-moz-selection {
@@ -182,6 +182,7 @@ a.icon-link:focus,
 a.icon-link:focus-within {
   outline: var(--outline-default);
   border-radius: var(--border-radius-slight);
+  line-height: var(--line-height-sm);
   text-decoration: none;
 
   & svg {
@@ -228,7 +229,7 @@ a:active,
 /* headers */
 h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-reduced);
+  line-height: var(--line-height-md);
   margin: var(--margin-vertical-base-horizontal-zero);
 }
 
@@ -250,7 +251,7 @@ h6 { font-size: var(--font-size-sm); }
 
 .section-header {
   margin: var(--spacing-xl) 0 var(--spacing-lg);
-  line-height: 1;
+  line-height: var(--line-height-sm);
 
   &.posts {
     margin: 0 0 var(--spacing-lg);

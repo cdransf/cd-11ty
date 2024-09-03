@@ -92,8 +92,9 @@
   --font-weight-bold: 600;
   --font-weight-extrabold: 800;
 
-  --line-height-reduced: 1.5;
-  --line-height-default: 2;
+  --line-height-sm: 1;
+  --line-height-md: 1.5;
+  --line-height-base: 2;
 
   /* spacing */
   --sizing-xs: .25rem;

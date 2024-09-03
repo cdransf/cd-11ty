@@ -69,12 +69,11 @@
     & p {
       &.title {
         font-size: var(--font-size-xl);
-        line-height: var(--line-height-reduced);
+        line-height: var(--line-height-md);
       }
 
       &.sub-meta {
         font-size: var(--font-size-sm);
-        line-height: var(--line-height-sm);
 
         & svg {
           width: var(--sizing-svg-sm);

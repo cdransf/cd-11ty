@@ -90,8 +90,8 @@
             --font-weight-bold: 600;
             --font-weight-extrabold: 800;
 
-            --line-height-reduced: 1.5;
-            --line-height-default: 2;
+            --line-height-md: 1.5;
+            --line-height-base: 2;
 
             /* outline */
             --outline-default: var(--outline-default);
@@ -147,7 +147,7 @@
             font-family: var(--font-mono);
             font-size: var(--font-size-base);
             font-weight: var(--font-weight-base);
-            line-height: var(--line-height-default);
+            line-height: var(--line-height-base);
             letter-spacing: -.05rem;
             word-spacing: -.125rem;
             color: var(--text-color);
@@ -209,7 +209,7 @@
 
           h1, h2, h3 {
             font-weight: var(--font-weight-bold);
-            line-height: var(--line-height-reduced);
+            line-height: var(--line-height-md);
             margin-bottom: var(--spacing-base);
           }
 
@@ -219,17 +219,10 @@
           }
 
           a:focus,
-          a:focus-within
-          a:focus > svg,
-          a:focus-within > svg {
+          a:focus-within, {
             outline: var(--outline-default);
             border-radius: var(--border-radius-slight);
             text-decoration: none;
-          }
-
-          a:has(svg):focus,
-          a:has(svg):focus-within {
-            outline: none;
           }
 
           a:hover,

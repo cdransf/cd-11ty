@@ -58,7 +58,7 @@
 
     & .title {
       font-weight: var(--font-weight-bold);
-      line-height: var(--line-height-reduced);
+      line-height: var(--line-height-md);
 
       & a {
         outline: none;
@@ -82,7 +82,7 @@
     & .subtext,
     & .subtext p,
     & .timestamp {
-      line-height: var(--line-height-reduced);
+      line-height: var(--line-height-md);
     }
 
     & .subtext,

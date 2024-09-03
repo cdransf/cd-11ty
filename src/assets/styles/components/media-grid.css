@@ -86,7 +86,7 @@
     & .subheader {
       color: var(--color-lightest);
       font-size: var(--font-size-sm);
-      line-height: var(--line-height-reduced);
+      line-height: var(--line-height-md);
       text-shadow: var(--text-shadow-default);
     }
 

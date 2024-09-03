@@ -47,7 +47,7 @@ a:active > .watching.hero::after {
 
       & .header,
       & .subheader {
-        line-height: var(--line-height-reduced);
+        line-height: var(--line-height-md);
         text-shadow: var(--text-shadow-default);
       }
     }
@@ -109,7 +109,7 @@ a:active > .watching.hero::after {
         & .rating {
           color: var(--color-lightest);
           font-size: var(--font-size-sm);
-          line-height: var(--line-height-reduced);
+          line-height: var(--line-height-md);
           text-shadow: var(--text-shadow-default);
         }
 
@@ -171,12 +171,11 @@ a:active > .watching.hero::after {
 
       &.title {
         font-size: var(--font-size-xl);
-        line-height: var(--line-height-reduced);
+        line-height: var(--line-height-md);
       }
 
       &.sub-meta {
         font-size: var(--font-size-sm);
-        line-height: var(--line-height-sm);
 
         & svg {
           width: var(--sizing-svg-sm);
