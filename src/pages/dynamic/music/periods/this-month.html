@@ -13,21 +13,21 @@ schema: music-period
 <p><a href="/music/concerts">You can also take a look at the concerts I've been to.</a></p>
 <hr />
 <h3 id="artists" class="section-header">
-  <a href="/music/artists/this-month">
+  <a class="icon-link" href="/music/artists/this-month">
     {% tablericon "microphone-2" "Artists" %}
     Artists
   </a>
 </h3>
 {% render "partials/media/grid.liquid", data:music.month.artists, shape: "square", count: 8, loading: "eager" %}
 <h3 id="albums" class="section-header">
-  <a href="/music/albums/this-month">
+  <a class="icon-link" href="/music/albums/this-month">
     {% tablericon "vinyl" "Albums" %}
     Albums
   </a>
 </h3>
 {% render "partials/media/grid.liquid", data:music.month.albums, shape: "square", count: 8 %}
 <h3 id="tracks" class="section-header">
-  <a href="/music/tracks/this-month">
+  <a class="icon-link" href="/music/tracks/this-month">
     {% tablericon "playlist" "Tracks" %}
     Tracks
   </a>

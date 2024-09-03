@@ -98,6 +98,7 @@
 
             /* borders */
             --border-default: 1px solid var(--accent-color);
+            --border-gray: 1px solid var(--gray-light);
           }
 
           @media (prefers-color-scheme: dark) {
@@ -339,7 +340,7 @@
             font-family: var(--font-mono);
             background-color: var(--code-bg-color);
             color: var(--code-text-color);
-            border: 1px solid var(--border-color);
+            border: var(--border-gray);
             border-radius: var(--border-radius-slight);
           }
 

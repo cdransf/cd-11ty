@@ -178,6 +178,17 @@ a:has(svg):focus-within {
   outline: none;
 }
 
+a.icon-link:focus,
+a.icon-link:focus-within {
+  outline: var(--outline-default);
+  border-radius: var(--border-radius-slight);
+  text-decoration: none;
+
+  & svg {
+    outline: none;
+  }
+}
+
 a:hover,
 a:focus,
 a:active,

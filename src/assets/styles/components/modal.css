@@ -44,6 +44,7 @@
   display: inline-flex;
   vertical-align: middle;
 
+  &:active svg,
   &:focus svg,
   &:focus-within svg {
     outline: var(--outline-default);

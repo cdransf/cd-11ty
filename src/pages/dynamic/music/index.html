@@ -13,14 +13,14 @@ schema: music-index
 {% render "partials/blocks/now-playing.liquid", music:music %}
 <hr />
 <h3 id="artists" class="section-header">
-  <a href="/music/artists/this-week">
+  <a class="icon-link" href="/music/artists/this-week">
     {% tablericon "microphone-2" "Artists" %}
     Artists
   </a>
 </h3>
 {% render "partials/media/grid.liquid", data:music.week.artists, shape: "square", count: 8, loading: "eager" %}
 <h3 id="albums" class="section-header">
-  <a href="/music/albums/this-week">
+  <a class="icon-link" href="/music/albums/this-week">
     {% tablericon "vinyl" "Albums" %}
     Albums
   </a>
@@ -28,7 +28,7 @@ schema: music-index
 {% render "partials/media/grid.liquid", data:music.week.albums, shape: "square", count: 8 %}
 <div class="section-header-wrapper flex-centered">
   <h3 id="tracks" class="section-header">
-    <a href="/music/tracks/this-week">
+    <a class="icon-link" href="/music/tracks/this-week">
       {% tablericon "playlist" "Tracks" %}
       Tracks
     </a>
