@@ -2,7 +2,7 @@
   display: flex;
   height: var(--sizing-lg);
   width: 100%;
-  background-color: rgba(217, 222, 228, .6);
+  background-color: #d9dee499;
   border-radius: var(--border-radius-full);
 
   & .progress-bar {

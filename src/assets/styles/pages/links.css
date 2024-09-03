@@ -5,7 +5,7 @@
   margin-bottom: var(--spacing-base);
 
   & .link-box {
-    border: 1px solid var(--gray-light);
+    border: var(--border-gray);
     border-radius: var(--border-radius-slight);
     padding: var(--spacing-xs) var(--spacing-sm);
   }

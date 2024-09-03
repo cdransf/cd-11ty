@@ -263,7 +263,7 @@ table {
   display: block;
   overflow-x: auto;
   width: 100%;
-  border: 1px solid var(--gray-light);
+  border: var(--border-gray);
   border-radius: var(--border-radius-slight);
   white-space: nowrap;
   caption-side: bottom;
@@ -278,12 +278,12 @@ td {
 }
 
 :is(th, td):not(:first-child, :last-child) {
-  border-right: 1px solid var(--gray-light);
+  border-right: var(--border-gray);
 }
 
 th,
 tr:not(:last-child) {
-  border-bottom: 1px solid var(--gray-light);
+  border-bottom: var(--border-gray);
 }
 
 th,
@@ -394,7 +394,7 @@ article {
 
 .status,
 .posts-wrapper article {
-  border-bottom: 1px solid var(--gray-light);
+  border-bottom: var(--border-gray);
 }
 
 .status p:first-child {
@@ -402,7 +402,7 @@ article {
 }
 
 .article-widget-wrapper {
-  border-bottom: 1px solid var(--gray-light);
+  border-bottom: var(--border-gray);
   margin-bottom: var(--spacing-base);
 
   & article {

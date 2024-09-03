@@ -109,11 +109,11 @@
   }
 
   #menu-toggle:checked ~ .menu-primary li {
-    border-bottom: 1px solid var(--gray-light);
+    border-bottom: var(--border-gray);
     height: calc(var(--sizing-3xl) * 1.5);
 
     &:first-child {
-      border-top: 1px solid var(--gray-light);
+      border-top: var(--border-gray);
     }
 
     & a,

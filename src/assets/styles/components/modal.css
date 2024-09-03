@@ -72,6 +72,6 @@
     max-height: 75%;
     max-width: 75%;
     inset: 12.5%;
-    border: 1px solid var(--gray-light);
+    border: var(--border-gray);
   }
 }

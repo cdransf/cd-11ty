@@ -23,7 +23,7 @@
     aspect-ratio: var(--aspect-ratio-vertical);
     transition-property: border-color;
     transition-timing-function: var(--transition-ease-in-out);
-    transition-duration: 300ms;
+    transition-duration: var(--transition-duration-default);
   }
 
   & a:focus img,
