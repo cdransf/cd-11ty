@@ -19,14 +19,14 @@ pre[class*="language-"] {
   padding: var(--spacing-lg);
   margin: var(--sizing-xl) 0;
   overflow: auto;
-  background: var(--gray-darkest);
+  background: var(--gray-1000);
   border: 1px solid var(--gray-200);
 }
 
 :not(pre) > code[class*="language-"] {
   padding: var(--spacing-xs);
   white-space: normal;
-  background: var(--gray-darkest);
+  background: var(--gray-1000);
   border-radius: var(--border-radius-slight);
 }
 

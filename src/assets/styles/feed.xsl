@@ -34,7 +34,6 @@
 
             --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;
 
-            --blue-50: #eff5ff;
             --blue-100: #e2ecff;
             --blue-200: #c5d8ff;
             --blue-300: #a8c4ff;
@@ -44,7 +43,6 @@
             --blue-700: #2458d4;
             --blue-800: #1d4bac;
             --blue-900: #1c3e91;
-            --blue-950: #183275;
 
             --gray-50: #f6f7f8;
             --gray-100: #eceef1;
@@ -57,7 +55,7 @@
             --gray-800: #626d7f;
             --gray-900: #545e71;
             --gray-950: #4a5365;
-            --gray-darkest: #1a1d22;
+            --gray-1000: #1a1d22;
 
             --white: #fff;
             --black: #000;
@@ -69,7 +67,7 @@
             --accent-color: var(--blue-600);
             --accent-color-hover: var(--blue-800);
             --color-lightest: var(--gray-50);
-            --color-darkest: var(--gray-darkest);
+            --color-darkest: var(--gray-1000);
 
             --text-color: var(--color-darkest);
             --background-color: var(--color-lightest);
