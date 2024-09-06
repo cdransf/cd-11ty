@@ -17,7 +17,7 @@
             </section>
             <div class="default-wrapper">
               <p><xsl:value-of select="/rss/channel/description"/></p>
-              <p><span class="highlight-text">Subscribe by adding the URL below to your feed reader of choice.</span></p>
+              <p><strong class="highlight-text">Subscribe by adding the URL below to your feed reader of choice.</strong></p>
               <p>
                 <pre class="small">
                   <code><xsl:value-of select="rss/channel/atom:link/@href"/></code>
