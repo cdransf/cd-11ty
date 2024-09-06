@@ -39,7 +39,7 @@ export default {
     entryData.forEach((entry) => {
       const md = mdGenerator()
       const dateKey = Object.keys(entry).find(key => key.includes('date'))
-      let { artist, authors, backdrop, content, description, image, link, rating, slug, title, url, tags, type  } = entry
+      let { artist, authors, backdrop, content, description, image, link, rating, review, slug, title, url, tags, type  } = entry
       const feedNote = '<hr/><p>This is a full text feed, but not all content can be rendered perfectly within the feed. If something looks off, feel free to <a href="https://coryd.dev">visit my site</a> for the original post.</p>'
       const processedEntry = { title: title.trim(), date: new Date(entry[dateKey]), content: description }
 
@@ -54,10 +54,15 @@ export default {
           url: authors['url'],
           mastodon: authors?.['mastodon'] || '',
           rss: authors?.['rss_feed'] || ''
-        }
+        },
+        processedEntry['excerpt'] = sanitizeHtml(`${md.render(description)}`)
       }
       if (description) processedEntry['excerpt'] = description
-      if (['book', 'movie', 'link'].includes(type)) processedEntry['excerpt'] = sanitizeHtml(`${md.render(description)}`)
+      if (['book', 'movie'].includes(type) && review) {
+        processedEntry['excerpt'] = sanitizeHtml(`${md.render(review)}`)
+      } else if (['book', 'movie'].includes(type)) {
+        processedEntry['excerpt'] = sanitizeHtml(`${md.render(description)}`)
+      }
       if (slug && content) processedEntry['excerpt'] = sanitizeHtml(`${md.render(content)}${feedNote}`, {
         disallowedTagsMode: 'completelyDiscard'
       })

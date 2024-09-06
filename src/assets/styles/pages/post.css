@@ -13,7 +13,6 @@ youtube-video + .associated-media {
 .footnotes {
   & .footnotes-list {
     margin-bottom: 0;
-    padding-left: 0;
 
     & li:last-child {
       margin-bottom: 0;

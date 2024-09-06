@@ -1,5 +1,5 @@
-code[class*="language-"],
-pre[class*="language-"] {
+code,
+pre {
   color: var(--blue-200);
   background: none;
   border-radius: var(--border-radius-slight);
@@ -15,7 +15,7 @@ pre[class*="language-"] {
   hyphens: none;
 }
 
-pre[class*="language-"] {
+pre {
   padding: var(--spacing-lg);
   margin: var(--sizing-xl) 0;
   overflow: auto;
@@ -23,7 +23,7 @@ pre[class*="language-"] {
   border: 1px solid var(--gray-200);
 }
 
-:not(pre) > code[class*="language-"] {
+:not(pre) > code {
   padding: var(--spacing-xs);
   white-space: normal;
   background: var(--gray-1000);

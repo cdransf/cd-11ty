@@ -18,6 +18,7 @@
 @import url('./pages/books.css') layer(page);
 @import url('./pages/blogroll.css') layer(page);
 @import url('./pages/contact.css') layer(page);
+@import url('./pages/feeds.css') layer(page);
 @import url('./pages/links.css') layer(page);
 @import url('./pages/music.css') layer(page);
 @import url('./pages/post.css') layer(page);

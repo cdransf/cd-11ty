@@ -470,7 +470,6 @@ article {
     display: block;
     color: var(--gray-dark);
     font-size: var(--font-size-sm);
-    margin-right: var(--spacing-xs);
   }
 }
 
@@ -489,6 +488,7 @@ ul, ol {
 /* images */
 .image-banner {
   border: var(--border-default);
+  border-radius: var(--border-radius-slight);
   height: auto;
   width: 100%;
   display: block;
