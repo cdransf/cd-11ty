@@ -25,10 +25,8 @@ input[id="tracks-recent"] ~ [for="tracks-recent"]:has(+ [for="tracks-window"]) {
   background: transparent;
 }
 
-#tracks-recent:not(:checked) ~ [for="tracks-recent"]:active,
 #tracks-recent:not(:checked) ~ [for="tracks-recent"]:focus,
 #tracks-recent:not(:checked) ~ [for="tracks-recent"]:focus-within,
-#tracks-window:not(:checked) ~ [for="tracks-window"]:active,
 #tracks-window:not(:checked) ~ [for="tracks-window"]:focus,
 #tracks-window:not(:checked) ~ [for="tracks-window"]:focus-within {
   transition-property: none;
