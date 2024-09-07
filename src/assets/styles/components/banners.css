@@ -15,7 +15,7 @@
 
   & p {
     font-size: var(--font-size-sm);
-    line-height: var(--line-height-sm);
+    line-height: var(--line-height-md);
     margin: 0;
 
     a {
