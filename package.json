@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "24.7.7",
+  "version": "24.7.8",
   "description": "The source for my personal site. Built using 11ty (and other tools).",
   "type": "module",
   "scripts": {
@@ -44,7 +44,7 @@
     "ics": "^3.7.6",
     "luxon": "^3.5.0",
     "markdown-it": "^14.1.0",
-    "markdown-it-anchor": "^9.1.0",
+    "markdown-it-anchor": "^9.2.0",
     "markdown-it-footnote": "^4.0.0",
     "postcss": "^8.4.45",
     "postcss-cli": "^11.0.0",
