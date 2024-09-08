@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
         e.preventDefault()
         menuInput.checked = !menuInput.checked
       }
-    });
+    })
 
     menuItems.forEach((item) => {
       item.addEventListener('keydown', (e) => {
