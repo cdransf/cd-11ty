@@ -13,7 +13,7 @@
 {%- elsif genre.name -%}
   {%- assign pageTitle = 'Music / ' | append: genre.name | append: ' / ' | append: globals.site_name -%}
 {%- elsif book.title -%}
-  {%- assign pageTitle = 'Books / ' | append: book.title | append: ' by ' | append: book.author | append: ' / ' | append: globals.site_name -%}
+  {%- assign pageTitle = 'Books / ' | append: book.title | append: ' / ' | append: globals.site_name -%}
 {%- elsif year.value -%}
   {%- assign pageTitle = ' / Books ' | prepend: year.value | append: ' / ' | append: globals.site_name -%}
 {%- elsif movie.title -%}
