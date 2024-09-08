@@ -9,7 +9,7 @@ isbn: {{ book.isbn }}
 schema: book
 ---
 {%- capture alt -%}
-  {{ book.title }}{% if book.authors %}By {{ book.authors }}{% endif %}
+  {{ book.title }}{% if book.author %} by {{ book.author }}{% endif %}
 {%- endcapture -%}
 <a class="icon-link" href="/books" title="Go back to the books index page">{% tablericon "arrow-left" "Go back to the books index page" %} Back to books</a>
 <article class="book-focus">
