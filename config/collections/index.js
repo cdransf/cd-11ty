@@ -111,7 +111,7 @@ export const processContent = (collection) => {
         if (item?.['slug']) content['url'] = new URL(item['slug'], BASE_URL).toString()
 
         // link to artist concerts section if available - artistUrl is only present on concert objects here
-        if (item?.['artistUrl']) content['url'] = `${item['artistUrl']}#concerts`
+        if (item?.['artistUrl']) content['url'] = `${item['artistUrl']}?t=${DateTime.fromISO(item['date']).toMillis()}#concerts`
         if (item?.['description']) {
           content['description'] = `${item['description'].split(' ').slice(0, 25).join(' ')}...`
         } else if (item?.['notes']) {
