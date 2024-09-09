@@ -16,7 +16,6 @@ const fetchAllShows = async () => {
       .select(`
         id,
         tmdb_id,
-        last_watched_at,
         title,
         year,
         collected,
@@ -97,9 +96,9 @@ const prepareEpisodeData = (show) => show['episodes'].map(episode => ({
   favorite: show['favorite'],
   image: show['image'],
   backdrop: show['backdrop'],
-  episode_number: episode['episode_number'] || 0,
-  season_number: episode['season_number'] || 0,
-  last_watched_at: episode['last_watched_at'] || '1970-01-01T00:00:00Z'
+  episode_number: episode['episode_number'],
+  season_number: episode['season_number'],
+  last_watched_at: episode['last_watched_at']
 }))
 
 const formatEpisodeData = (episodes) => {

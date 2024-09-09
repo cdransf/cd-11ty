@@ -66,7 +66,7 @@ export const processContent = (collection) => {
   }
 
   const movieData = movies['movies'].filter((movie) => movie['rating'])
-  const showData = tv['shows'].filter((show) => show['last_watched_at'])
+  const showData = tv['shows'].filter((show) => show['episodes']?.[0]?.['last_watched_at'])
   const bookData = books.all.filter((book) => book['rating'])
 
   const addItemToIndex = (items, icon, getUrl, getTitle, getTags) => {
