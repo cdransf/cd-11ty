@@ -32,8 +32,10 @@
       height: calc(var(--sizing-3xl) * 1.5);
     }
 
-    & .presentation {
+    & .presentation .info {
       display: flex;
+      flex-direction: column;
+      gap: var(--spacing-xs);
     }
 
     & .meta,
