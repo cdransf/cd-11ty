@@ -182,7 +182,6 @@ a.icon-link:focus,
 a.icon-link:focus-within {
   outline: var(--outline-default);
   border-radius: var(--border-radius-slight);
-  line-height: var(--line-height-sm);
   text-decoration: none;
 
   & svg {

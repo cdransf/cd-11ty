@@ -35,7 +35,7 @@
     & .presentation .info {
       display: flex;
       flex-direction: column;
-      gap: var(--spacing-xs);
+      gap: var(--spacing-sm);
     }
 
     & .meta,
@@ -48,36 +48,17 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      max-width: 95%;
     }
 
     & .meta-text {
       display: flex;
       flex-direction: column;
       justify-content: start;
-      max-width: 75%;
     }
 
     & .title {
       font-weight: var(--font-weight-bold);
       line-height: var(--line-height-md);
-
-      & a {
-        outline: none;
-      }
-
-      &:focus,
-      &:focus-within {
-        outline: var(--outline-default);
-        border-radius: var(--border-radius-slight);
-      }
-    }
-
-    & .title,
-    & .subtext {
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
     }
 
     & .title,
