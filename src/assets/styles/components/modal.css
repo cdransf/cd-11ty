@@ -16,6 +16,13 @@
     border-radius: var(--border-radius-slight);
     padding: var(--spacing-lg) var(--spacing-2xl);
 
+    @media screen and (min-width: 768px) {
+      max-height: 75%;
+      max-width: 75%;
+      inset: 12.5%;
+      border: var(--border-gray);
+    }
+
     & .modal-close {
       position: absolute;
       top: var(--spacing-lg);
@@ -65,14 +72,5 @@
     &:active {
       stroke: var(--accent-color-hover);
     }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .modal-wrapper .modal-body {
-    max-height: 75%;
-    max-width: 75%;
-    inset: 12.5%;
-    border: var(--border-gray);
   }
 }

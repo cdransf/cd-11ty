@@ -5,6 +5,10 @@
     padding-left: 0;
     margin-top: 0;
 
+    @media screen and (min-width: 768px) {
+      list-style-position: outside;
+    }
+
     & li:first-of-type {
       margin-top: 0;
     }
@@ -16,6 +20,12 @@
     justify-content: start;
     align-items: start;
 
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
     &:not(:last-of-type) {
       margin-bottom: var(--spacing-md);
     }
@@ -23,6 +33,10 @@
     & .progress-bar-wrapper {
       margin-top: var(--spacing-sm);
       max-width: 40%;
+
+      @media screen and (min-width: 768px) {
+        margin-left: var(--spacing-lg);
+      }
     }
 
     & img {
@@ -30,30 +44,51 @@
       border-radius: var(--border-radius-slight);
       width: calc(var(--sizing-3xl) * 1.5);
       height: calc(var(--sizing-3xl) * 1.5);
+
+      @media screen and (min-width: 768px) {
+        width: calc(var(--sizing-3xl) * 2);
+        height: calc(var(--sizing-3xl) * 2);
+      }
     }
 
     & .presentation .info {
       display: flex;
       flex-direction: column;
       gap: var(--spacing-sm);
+
+      @media screen and (min-width: 768px) {
+        max-width: calc(75% - var(--sizing-lg));
+      }
     }
 
     & .meta,
     & .presentation {
       justify-content: start;
       gap: var(--spacing-md);
+
+      @media screen and (min-width: 768px) {
+        width: calc(80% - var(--sizing-lg));
+      }
     }
 
     & .meta {
       display: flex;
       flex-direction: row;
       align-items: center;
+
+      @media screen and (min-width: 768px) {
+        width: calc(75% - var(--sizing-lg));
+      }
     }
 
     & .meta-text {
       display: flex;
       flex-direction: column;
       justify-content: start;
+
+      @media screen and (min-width: 768px) {
+        max-width: 85%;
+      }
     }
 
     & .title {
@@ -76,6 +111,12 @@
     & .timestamp {
       margin-top: var(--spacing-sm);
       margin-left: 0;
+
+      @media screen and (min-width: 768px) {
+        margin-left: var(--spacing-lg);
+        text-align: right;
+        white-space: nowrap;
+      }
     }
   }
 
@@ -84,6 +125,10 @@
     gap: var(--spacing-sm);
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: var(--spacing-base);
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
     & .item .meta {
       max-width: 80%;
@@ -95,56 +140,6 @@
       & .subtext p {
         margin: 0;
         line-height: var(--line-height-sm);
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .music-chart {
-    & ol {
-      list-style-position: outside;
-    }
-
-    & .meta,
-    & .presentation {
-      width: calc(80% - var(--sizing-lg));
-    }
-
-    & .item {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-
-      & .meta {
-        width: calc(75% - var(--sizing-lg));
-      }
-
-      & .meta-text {
-        max-width: 85%;
-      }
-
-      & .timestamp {
-        margin-left: var(--spacing-lg);
-        text-align: right;
-        white-space: nowrap;
-      }
-
-      & .info {
-        max-width: calc(75% - var(--sizing-lg));
-      }
-
-      & .progress-bar-wrapper {
-        margin-left: var(--spacing-lg);
-      }
-    }
-
-    &.grid {
-      grid-template-columns: repeat(3, 1fr);
-
-      & .item img {
-        width: calc(var(--sizing-3xl) * 2);
-        height: calc(var(--sizing-3xl) * 2);
       }
     }
   }

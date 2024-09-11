@@ -1,5 +1,9 @@
 :root {
   --avatar-size: 16rem;
+
+  @media screen and (min-width: 768px) {
+    --avatar-size: 24rem;
+  }
 }
 
 .avatar-wrapper {
@@ -15,11 +19,5 @@
       height: var(--avatar-size);
       image-rendering: pixelated;
     }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  :root {
-    --avatar-size: 24rem;
   }
 }

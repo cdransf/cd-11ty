@@ -75,6 +75,10 @@ a:active > .watching.hero::after {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-bottom: var(--spacing-base);
 
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
     & a {
       display: flex;
       aspect-ratio: var(--aspect-ratio-banner);
@@ -187,11 +191,5 @@ a:active > .watching.hero::after {
 
   & .footnotes {
     padding-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .watching.grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

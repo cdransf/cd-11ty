@@ -4,6 +4,10 @@
   grid-template-columns: repeat(3, 1fr);
   margin-top: var(--spacing-2xl);
 
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   & > * {
     display: flex;
     justify-content: center;
@@ -20,11 +24,5 @@
 
   & img {
     image-rendering: pixelated;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .badge-grid {
-    grid-template-columns: repeat(4, 1fr);
   }
 }

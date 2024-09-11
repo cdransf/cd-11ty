@@ -2,13 +2,29 @@
   display: flex;
   flex-direction: column;
 
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
   & textarea {
     height: calc(var(--sizing-3xl) * 5);
     resize: none;
   }
 
-  & .column.description p:first-of-type {
-    margin-top: 0;
+  & .column {
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+
+    &.description {
+      & p:first-of-type {
+        margin-top: 0;
+      }
+
+      @media screen and (min-width: 768px) {
+        padding-right: var(--spacing-xl);
+      }
+    }
   }
 }
 
@@ -21,19 +37,5 @@
 
   h2 {
     margin: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contact-wrapper {
-    flex-direction: row;
-
-    & .column {
-      width: 50%;
-    }
-
-    & .column.description {
-      padding-right: var(--spacing-xl);
-    }
   }
 }

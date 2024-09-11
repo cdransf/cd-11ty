@@ -4,15 +4,13 @@
   grid-template-columns: repeat(1, minmax(0, 1fr));
   margin-bottom: var(--spacing-base);
 
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   & .link-box {
     border: var(--border-gray);
     border-radius: var(--border-radius-slight);
     padding: var(--spacing-xs) var(--spacing-sm);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .link-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
