@@ -9,6 +9,10 @@ a:active > .watching.hero::after {
   border-color: var(--accent-color-hover);
 }
 
+.icon-link + .watching.grid {
+  margin-top: var(--spacing-base);
+}
+
 .watching {
   & img {
     border-radius: var(--border-radius-slight);

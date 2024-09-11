@@ -8,6 +8,10 @@
   }
 }
 
+.icon-link + .media-grid {
+  margin-top: var(--spacing-base);
+}
+
 .media-grid {
   display: grid;
   gap: var(--spacing-sm);
