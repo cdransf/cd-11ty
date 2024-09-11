@@ -33,21 +33,21 @@ schema: movie
   />
   <div class="watching-meta">
     <p class="title"><strong>{{ movie.title }}</strong>{%- if movie.year and not movie.rating %} ({{ movie.year }}){%- endif -%}</p>
-    <p>
-      {%- if movie.rating -%}
+    {%- if movie.rating -%}
+      <p>
         {{ movie.rating }}
         {%- if movie.year %}
           ({{ movie.year }})
         {%- endif -%}
-      {% endif -%}
-    </p>
+      </p>
+    {% endif -%}
     {%- if movie.favorite -%}
       <p class="sub-meta favorite">{% tablericon "heart" "Favorite" %} This is one of my favorite movies!</p>
     {%- endif -%}
     {%- if movie.tattoo -%}
       <p class="sub-meta tattoo">{% tablericon "needle" "Tattoo" %} I have a tattoo inspired by this movie!</p>
     {%- endif -%}
-    {% if movie.lastWatched %}<p class="sub-meta">Last watched on {{ movie.lastWatched | date: "%B %e, %Y" }}.</p>{% endif %}
+    {%- if movie.lastWatched -%}<p class="sub-meta">Last watched on {{ movie.lastWatched | date: "%B %e, %Y" }}.</p>{%- endif -%}
   </div>
   {% if movie.review %}
   {% render "partials/blocks/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
