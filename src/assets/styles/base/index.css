@@ -3,8 +3,6 @@ body {
   color: var(--text-color);
   background: var(--background-color);
   font-family: var(--font-mono);
-  letter-spacing: -.05rem;
-  word-spacing: -.125rem;
   scrollbar-width: thin;
   scrollbar-color: var(--accent-color) var(--gray-light);
 }
