@@ -15,22 +15,20 @@ schema: show
 <article class="watching-focus">
   <img
     srcset="
-      https://cdn.coryd.dev{{ show.backdrop }}?class=bannersm 256w,
-      https://cdn.coryd.dev{{ show.backdrop }}?class=bannermd 512w,
-      https://cdn.coryd.dev{{ show.backdrop }}?class=bannerbase 1024w,
-      https://cdn.coryd.dev{{ show.backdrop }}?class=bannerlg 2048w
+      https://cdn.coryd.dev{{ show.backdrop }}?class=bannersm&type=webp 256w,
+      https://cdn.coryd.dev{{ show.backdrop }}?class=bannermd&type=webp 512w,
+      https://cdn.coryd.dev{{ show.backdrop }}?class=bannerbase&type=webp 1024w
     "
     sizes="(max-width: 450px) 256px,
       (max-width: 850px) 512px,
-      (max-width: 1000px) 1024px,
-      2048px"
-    src="https://cdn.coryd.dev/{{ show.backdrop }}?class=bannerlg"
+      1024px"
+    src="https://cdn.coryd.dev{{ show.backdrop }}?class=bannersm&type=webp"
     alt="{{ alt }}"
     class="image-banner"
     loading="eager"
     decoding="async"
-    width="1080"
-    height="720"
+    width="256"
+    height="180"
   />
   <div class="watching-meta">
     <p class="title"><strong>{{ show.title }}</strong>{%- if show.year %} ({{ show.year }}){%- endif -%}</p>

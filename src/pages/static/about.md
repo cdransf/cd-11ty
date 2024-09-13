@@ -8,25 +8,21 @@ permalink: /about.html
 {%- assign show = tv.recentlyWatched | first -%}
 <div class="avatar-wrapper flex-centered">
   <div class="interior">
-  {%- capture about_alt -%}{{ globals.site_name }} - image by @joel@fosstodon.org{%- endcapture -%}
-  <img
-    srcset="
-      https://cdn.coryd.dev/{{ globals.about }}?class=squaresm 200w,
-      https://cdn.coryd.dev/{{ globals.about }}?class=squaremd 400w,
-      https://cdn.coryd.dev/{{ globals.about }}?class=squarebase 800w,
-      https://cdn.coryd.dev/{{ globals.about }}?class=squarelg 1200w
-    "
-    sizes="(max-width: 450px) 200px,
-      (max-width: 850px) 400px,
-      (max-width: 1000px) 800px,
-      1200px"
-    src="https://cdn.coryd.dev/{{ globals.about }}?class=squarelg"
-    alt="{{ about_alt }}"
-    loading="eager"
-    decoding="async"
-    width="600"
-    height="600"
-  />
+    {%- capture about_alt -%}{{ globals.site_name }} - image by @joel@fosstodon.org{%- endcapture -%}
+    <img
+      srcset="
+        https://cdn.coryd.dev/{{ globals.about }}?class=squaresm&type=webp 200w,
+        https://cdn.coryd.dev/{{ globals.about }}?class=squaremd&type=webp 400w,
+        https://cdn.coryd.dev/{{ globals.about }}?class=squarebase&type=webp 800w
+      "
+      sizes="(max-width: 450px) 200px, (max-width: 850px) 400px, 800px"
+      src="https://cdn.coryd.dev/{{ globals.about }}?class=squaresm&type=webp"
+      alt="{{ about_alt }}"
+      loading="eager"
+      decoding="async"
+      width="200"
+      height="200"
+    />
   </div>
 </div>
 <h2 class="text-centered">Hi, I'm Cory</h2>

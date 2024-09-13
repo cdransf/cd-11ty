@@ -22,15 +22,11 @@
         {%- assign loadingStrategy = loading | default: 'lazy' -%}
         <img
           srcset="
-            https://cdn.coryd.dev{{ item.backdrop }}?class=bannersm 256w,
-            https://cdn.coryd.dev{{ item.backdrop }}?class=bannermd 512w,
-            https://cdn.coryd.dev{{ item.backdrop }}?class=bannerbase 1024w
+            https://cdn.coryd.dev{{ item.backdrop }}?class=bannersm&type=webp 256w,
+            https://cdn.coryd.dev{{ item.backdrop }}?class=bannermd&type=webp 512w
           "
-          sizes="(max-width: 450px) 256px,
-            (max-width: 850px) 512px,
-            (max-width: 1000px) 1024px,
-            1024px"
-          src="https://cdn.coryd.dev{{ item.backdrop }}?class=bannerbase"
+          sizes="(max-width: 450px) 256px, 512px"
+          src="https://cdn.coryd.dev{{ item.backdrop }}?class=bannersm&type=webp"
           alt="{{ alt }}"
           loading="{{ loadingStrategy }}"
           decoding="async"

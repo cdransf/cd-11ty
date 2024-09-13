@@ -20,39 +20,31 @@
         {%- if shape == 'square' -%}
           <img
             srcset="
-              https://cdn.coryd.dev{{ item.image }}?class=squaresm 200w,
-              https://cdn.coryd.dev{{ item.image }}?class=squaremd 400w,
-              https://cdn.coryd.dev{{ item.image }}?class=squarebase 800w
+              https://cdn.coryd.dev{{ item.image }}?class=squaresm&type=webp 200w,
+              https://cdn.coryd.dev{{ item.image }}?class=squaremd&type=webp 400w
             "
-            sizes="(max-width: 450px) 200px,
-              (max-width: 850px) 400px,
-              (max-width: 1000px) 800px,
-              800px"
-            src="https://cdn.coryd.dev{{ item.image }}?class=squarebase"
-            alt="{{ alt }}"
-            loading="{{ loadingStrategy }}"
-            decoding="async"
-            width="240"
-            height="240"
-          />
-        {%- else -%}
-          <img
-            srcset="
-              https://cdn.coryd.dev{{ item.image }}?class=verticalsm 200w,
-              https://cdn.coryd.dev{{ item.image }}?class=verticalmd 400w,
-              https://cdn.coryd.dev{{ item.image }}?class=verticalbase 800w
-            "
-            sizes="(max-width: 450px) 200px,
-              (max-width: 850px) 400px,
-              (max-width: 1000px) 800px,
-              800px"
-            src="https://cdn.coryd.dev{{ item.image }}?class=verticalbase"
+            sizes="(max-width: 450px) 200px, 400px"
+            src="https://cdn.coryd.dev{{ item.image }}?class=squaresm&type=webp"
             alt="{{ alt }}"
             loading="{{ loadingStrategy }}"
             decoding="async"
             width="200"
-            height="307"
+            height="200"
           />
+        {%- else -%}
+        <img
+          srcset="
+            https://cdn.coryd.dev{{ item.image }}?class=verticalsm&type=webp 200w,
+            https://cdn.coryd.dev{{ item.image }}?class=verticalmd&type=webp 400w
+          "
+          sizes="(max-width: 450px) 200px, 400px"
+          src="https://cdn.coryd.dev{{ item.image }}?class=verticalsm&type=webp"
+          alt="{{ alt }}"
+          loading="{{ loadingStrategy }}"
+          decoding="async"
+          width="200"
+          height="307"
+        />
         {%- endif -%}
       </div>
     </a>

@@ -5,12 +5,11 @@
       <div class="meta">
         <img
           srcset="
-            https://cdn.coryd.dev{{ item.image }}?class=w50 50w,
-            https://cdn.coryd.dev{{ item.image }}?class=w100 100w,
-            https://cdn.coryd.dev{{ item.image }}?class=w200 200w,
+            https://cdn.coryd.dev{{ item.image }}?class=w50&type=webp 50w,
+            https://cdn.coryd.dev{{ item.image }}?class=w100&type=webp 100w
           "
-          sizes="(max-width: 1000px) 50px, 100px, 200px"
-          src="https://cdn.coryd.dev{{ item.image }}?class=w200"
+          sizes="(max-width: 450px) 50px, 100px"
+          src="https://cdn.coryd.dev{{ item.image }}?class=w50&type=webp"
           alt="{{ alt }}"
           loading="lazy"
           decoding="async"
