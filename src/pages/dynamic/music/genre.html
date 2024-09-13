@@ -9,11 +9,11 @@ updated: "now"
 schema: genre
 ---
 {% assign artistCount = genre.artists.size %}
-{%- capture connectingWord -%}
+{%- capture connectingWords -%}
   {% if artistCount > 1 %}
-    are
+    artists are
   {% else %}
-    is
+    artist is
   {% endif %}
 {%- endcapture -%}
 {%- assign mediaLinks = genre.artists | sortByPlaysDescending: "total_plays" | mediaLinks: "artist", 5 -%}
@@ -22,7 +22,7 @@ schema: genre
 <h2>{{ genre.name }}</h2>
 <article class="genre-focus">
   {%- if mediaLinks -%}
-    <p>My top <strong class="highlight-text">{{ genre.name }}</strong> artists {{ connectingWord }} {{ mediaLinks }}. I've listened to <strong class="highlight-text">{{ genre.total_plays | formatNumber }}</strong> tracks form this genre.</p>
+    <p>My top <strong class="highlight-text">{{ genre.name }}</strong> {{ connectingWords }} {{ mediaLinks }}. I've listened to <strong class="highlight-text">{{ genre.total_plays | formatNumber }}</strong> tracks form this genre.</p>
     <hr />
   {%- endif -%}
   {% render "partials/blocks/associated-media.liquid", posts:genre.posts %}
