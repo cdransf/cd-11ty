@@ -7,17 +7,17 @@
     </h2>
   </div>
   {%- for post in posts -%}
-  <article class="h-entry">
-    <time class="dt-published" datetime="{{ post.date }}">
-      {{ post.date | date: "%B %e, %Y" }}
-    </time>
-    <a href="{{ post.slug }}">
-      <h3>{{ post.title }}</h3>
-    </a>
-    <span class="p-author h-card hidden">{{ globals.site_name }}</span>
-    <div class="p-summary hidden">{{ post.data.post_excerpt }}</div>
-    {{ post.description | normalize_whitespace | markdown | truncatewords: 50 }}
-  </article>
+    <article class="h-entry">
+      <time class="dt-published" datetime="{{ post.date }}">
+        {{ post.date | date: "%B %e, %Y" }}
+      </time>
+      <a href="{{ post.slug }}">
+        <h3>{{ post.title }}</h3>
+      </a>
+      <span class="p-author h-card hidden">{{ globals.site_name }}</span>
+      <div class="p-summary hidden">{{ post.data.post_excerpt }}</div>
+      {{ post.description | normalize_whitespace | markdown | truncatewords: 50 }}
+    </article>
   {%- endfor -%}
   {%- if postType != 'featured' -%}
     <a class="icon-link" href="/posts">View all posts {% tablericon "arrow-right" "View all posts" %}</a>
