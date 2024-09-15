@@ -52,6 +52,7 @@ p {
   margin: var(--margin-vertical-base-horizontal-zero);
 
   &.books,
+  &.collected,
   &.concerts,
   &.country,
   &.favorite,
@@ -61,6 +62,7 @@ p {
   &.posts,
   &.tattoo {
     &.books { --section-color: var(--books); }
+    &.collected { --section-color: var(--collected); }
     &.concerts { --section-color: var(--concerts); }
     &.country { --section-color: var(--country); }
     &.favorite { --section-color: var(--favorite); }

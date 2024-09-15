@@ -45,6 +45,9 @@ schema: movie
     {%- if movie.tattoo -%}
       <p class="sub-meta tattoo">{% tablericon "needle" "Tattoo" %} I have a tattoo inspired by this movie!</p>
     {%- endif -%}
+    {%- if movie.collected -%}
+      <p class="sub-meta collected">{% tablericon "circle-check" "Collection" %} This movie is in my collection!</p>
+    {%- endif -%}
     {%- if movie.lastWatched -%}<p class="sub-meta">Last watched on {{ movie.lastWatched | date: "%B %e, %Y" }}.</p>{%- endif -%}
   </div>
   {% if movie.review %}

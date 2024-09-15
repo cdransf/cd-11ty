@@ -38,6 +38,9 @@ schema: show
     {%- if show.tattoo -%}
       <p class="sub-meta tattoo">{% tablericon "needle" "Tattoo" %} I have a tattoo inspired by this show!</p>
     {%- endif -%}
+    {%- if show.collected -%}
+      <p class="sub-meta collected">{% tablericon "circle-check" "Collection" %} This show is in my collection!</p>
+    {%- endif -%}
     {%- if lastWatched -%}
       {%- capture lastWatchedText -%}
         {%- if show.episodes -%}
