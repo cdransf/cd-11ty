@@ -89,6 +89,7 @@ export const processContent = (collection) => {
         let attribution
         let hashTags = tagsToHashtags(item) ? ' ' + tagsToHashtags(item) : ''
         if (item['type'] === 'album-release') hashTags = ' #Music #NewMusic'
+        if (item['type'] === 'concert') hashTags = ' #Music #Concert'
 
         // link attribution if properties exist
         if (item?.['authors']?.['mastodon']) {
@@ -113,9 +114,9 @@ export const processContent = (collection) => {
         // link to artist concerts section if available - artistUrl is only present on concert objects here
         if (item?.['artistUrl']) content['url'] = `${item['artistUrl']}?t=${DateTime.fromISO(item['date']).toMillis()}#concerts`
         if (item?.['description']) {
-          content['description'] = `${item['description'].split(' ').slice(0, 25).join(' ')}...`
+          content['description'] = `${item['description'].split(' ').length >= 25 ? item['description'].split(' ').slice(0, 25).join(' ') + '...' : item['description']}`
         } else if (item?.['notes']) {
-          content['notes'] = `${item['notes'].split(' ').slice(0, 25).join(' ')}...`
+          content['notes'] = `${item['notes'].split(' ').length >= 25 ? item['description'].split(' ').slice(0, 25).join(' ') + '...' : item['description']}`
         } else {
           content['description'] = ''
         }

@@ -30,6 +30,7 @@ const fetchAlbumReleases = async () => {
       artist: album['artist_name'],
       title: album['name'],
       date: releaseDate.toLocaleString(DateTime.DATE_FULL),
+      description: 'Check out the new release!',
       url: album['release_link'],
       image: album['art'] ? `/${album['art']}` : '',
       total_plays: album['total_plays'],

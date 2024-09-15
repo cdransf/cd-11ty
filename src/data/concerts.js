@@ -47,6 +47,7 @@ const fetchAllConcerts = async () => {
 const processConcerts = (concerts) => {
   return concerts.map(concert => ({
     id: concert['id'],
+    type: 'concert',
     date: concert['date'],
     artistNameString: concert['artist_name_string'],
     venue: {
@@ -56,6 +57,7 @@ const processConcerts = (concerts) => {
       boundingBox: concert['bounding_box'],
       notes: concert['venue_notes']
     },
+    description: 'I went to (yet another) concert!',
     notes: concert['concert_notes'],
     artist: concert['artist'] ? {
       name: concert['artist_name'],
