@@ -26,8 +26,8 @@ export const cssConfig = (eleventyConfig) => {
           await fs.writeFile(outputPath, result.css)
 
           return result.css
-        };
+        }
       }
     },
-  });
-};
+  })
+}
