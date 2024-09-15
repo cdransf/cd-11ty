@@ -9,8 +9,6 @@ layout: base
   {%- endif -%}
 {%- endcapture -%}
 <div class="main-wrapper">
-  <main>
-    {{ content }}
-    {% render "partials/footer.liquid", page:page, nav:nav, updated:updateTime %}
-  </main>
+  <main>{{ content }}</main>
+  {% render "partials/footer.liquid", page:page, nav:nav, updated:updateTime %}
 </div>
