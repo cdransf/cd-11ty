@@ -2,7 +2,7 @@
   display: flex;
   height: var(--sizing-lg);
   width: 100%;
-  background-color: var(--gray-background-transparent);
+  background-color: var(--gray-light-transparent);
   border-radius: var(--border-radius-full);
 
   & .progress-bar {

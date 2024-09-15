@@ -31,8 +31,8 @@
   --gray-dark: var(--gray-950);
 
   /* semi-transparent overlay color */
-  --gray-overlay: #000000b3;
-  --gray-background-transparent: #d9dee499;
+  --gray-dark-transparent: #000000b3;
+  --gray-light-transparent: #d9dee499;
 
   /* base theme */
   --color-lightest: var(--gray-50);
