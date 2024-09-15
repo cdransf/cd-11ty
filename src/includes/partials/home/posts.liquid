@@ -1,7 +1,7 @@
 {%- assign posts = postData | filterByPostType: postType %}
 <div class="article-widget-wrapper">
   <div class="section-header-wrapper">
-    <h2 class="section-header posts flex-centered">
+    <h2 class="section-header posts">
       {% tablericon icon title %}
       {{ title }}
     </h2>
@@ -14,8 +14,6 @@
       <a href="{{ post.slug }}">
         <h3>{{ post.title }}</h3>
       </a>
-      <span class="p-author h-card hidden">{{ globals.site_name }}</span>
-      <div class="p-summary hidden">{{ post.data.post_excerpt }}</div>
       {{ post.description | normalize_whitespace | markdown | truncatewords: 50 }}
     </article>
   {%- endfor -%}

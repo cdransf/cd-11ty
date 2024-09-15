@@ -16,20 +16,18 @@ description: How to contact me.
     </ul>
   </div>
   <form data-form="contact" class="column" method="POST" action="https://coryd.dev/api/contact" name="contact">
-    <label class="hidden">
+    <label class="hp">
       Don't fill this out if you're human: <input type="text" name="hp_name">
     </label>
     <label>
-      <span class="hidden">Name</span>
+      <span>Name</span>
       <input type="text" name="name" placeholder="Name" required />
     </label>
     <label>
-      <span class="hidden">Email</span>
+      <span>Email</span>
       <input type="email" name="email" placeholder="Email" required />
     </label>
     <textarea name="message" placeholder="Message" required></textarea>
-    <div class="flex-centered justify-centered">
-      <button type="submit">Send message</button>
-    </div>
+    <button type="submit">Send message</button>
   </form>
 </div>

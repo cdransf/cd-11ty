@@ -1,3 +1,5 @@
+#tracks-recent,
+#tracks-window,
 #tracks-recent ~ .tracks-recent,
 #tracks-window ~ .tracks-window {
   display: none;
@@ -8,9 +10,9 @@
   display: block;
 }
 
-input[id="tracks-recent"] ~ [for="tracks-recent"],
-input[id="tracks-window"] ~ [for="tracks-window"] {
-  margin-bottom: var(--spacing-base);
+input[id="tracks-recent"] ~ .tracks-recent,
+input[id="tracks-window"] ~ .tracks-window {
+  margin-top: var(--spacing-base);
 }
 
 input[id="tracks-recent"] ~ [for="tracks-recent"]:has(+ [for="tracks-window"]) {

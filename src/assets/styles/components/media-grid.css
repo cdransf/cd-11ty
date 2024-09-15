@@ -66,9 +66,7 @@
       height: 100%;
       border: var(--border-default);
       border-radius: var(--border-radius-slight);
-      transition-property: border-color;
-      transition-timing-function: var(--transition-ease-in-out);
-      transition-duration: var(--transition-duration-default);
+      transition: border-color var(--transition-duration-default) var(--transition-ease-in-out);
     }
   }
 
@@ -104,8 +102,8 @@
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 6;
-      overflow: hidden;
       text-overflow: ellipsis;
+      overflow: hidden;
     }
   }
 }

@@ -1,4 +1,7 @@
 .pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 
   & button {
@@ -9,6 +12,11 @@
 
   & a {
     display: flex;
+  }
+
+  & p {
+    text-align: center;
+    margin: 0;
   }
 
   & span.disabled svg[data-tablericon-name^="arrow-"] {

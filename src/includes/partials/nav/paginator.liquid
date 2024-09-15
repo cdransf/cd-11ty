@@ -1,5 +1,5 @@
 <script type="module" src="/assets/scripts/components/select-pagination.js?v={% appVersion %}"></script>
-<nav aria-label="Pagination" class="pagination flex-centered">
+<nav aria-label="Pagination" class="pagination">
   {%- if pagination.href.previous -%}
     <a href="{{ pagination.href.previous }}" aria-label="Previous page">
       {% tablericon "arrow-left" "Previous" %}
@@ -19,9 +19,9 @@
       {%- endfor -%}
     </select>
     <noscript>
-      <div class="text-centered">
+      <p>
         <span aria-current="page">{{ pagination.pageNumber | plus: 1 }}</span> of {{ pagination.links.size }}
-      </div>
+      </p>
     </noscript>
   </select-pagination>
   {%- if pagination.href.next -%}

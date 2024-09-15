@@ -6,6 +6,11 @@
     flex-direction: row;
   }
 
+  & label.hp,
+  & label > span {
+    display: none;
+  }
+
   & textarea {
     height: calc(var(--sizing-3xl) * 5);
     resize: none;

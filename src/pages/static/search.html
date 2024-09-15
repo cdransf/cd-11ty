@@ -31,9 +31,13 @@ permalink: /search.html
     $input.addEventListener('input', () => {
       const query = $input.value
       const results = (query.length > 1) ? getSearchResults(query) : []
-      if (query === '') renderSearchResults([])
-      if (query.length > 1 && window?.umami) umami.trackEvent('Search', { query: query })
-      renderSearchResults(results)
+      if (query.length === 0) {
+        // Clear the results when input is empty
+        renderSearchResults([])
+      } else {
+        if (query.length > 1 && window?.umami) umami.trackEvent('Search', { query: query })
+        renderSearchResults(results, query)
+      }
     })
 
     $input.addEventListener('keydown', (event) => {
@@ -41,15 +45,20 @@ permalink: /search.html
     })
 
     const getSearchResults = (query) => miniSearch.search(query, { prefix: true, fuzzy: 0.2, boost: { title: 2 } }).map(({ id }) => resultsById[id])
-    const renderSearchResults = (results) => {
-      $results.innerHTML = results.map(({ title, url }) => {
-        return `<li class="search__results--result"><a href="${url}">${title}</a></li>`
-      }).join('\n')
 
+    const renderSearchResults = (results, query = '') => {
       if (results.length > 0) {
-        $results.classList.remove('hidden')
+        $results.innerHTML = results.map(({ title, url }) => {
+          return `<li class="search__results--result"><a href="${url}">${title}</a></li>`
+        }).join('\n')
+        $results.style.display = 'block'
       } else {
-        $results.classList.add('hidden')
+        if (query.trim() !== '') {
+          $results.innerHTML = `<li class="search__results--no-results">No results found for "${query}"</li>`
+        } else {
+          $results.innerHTML = ''
+        }
+        $results.style.display = 'block'
       }
     }
   })()
@@ -64,4 +73,4 @@ permalink: /search.html
   <input class="search__form--input" placeholder="Search" type="search" name="q" autocomplete="off" autofocus>
   <input class="search__form--fallback" type="hidden" placeholder="Type away..." name="sites" value="coryd.dev">
 </form>
-<ul class="search__results hidden"></ul>
+<ul class="search__results"></ul>

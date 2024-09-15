@@ -7,9 +7,7 @@ input[type="text"],
 input[type="email"],
 input[type="search"],
 textarea {
-  font-family: var(--font-mono);
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-base);
+  font: var(--font-weight-base) var(--font-size-base) var(--font-mono);
   line-height: var(--line-height-base);
   color: var(--text-color);
   background-color: var(--background-color);
@@ -47,7 +45,7 @@ select:focus-within {
 
 select {
   color: var(--text-color);
-  border: 1px solid var(--text-color);
+  border: var(--border-gray);
   border-radius: var(--border-radius-slight);
   background-color: var(--background-color);
   padding: var(--spacing-xs) var(--spacing-sm);
@@ -55,12 +53,17 @@ select {
 
 .search__form {
   margin-top: 0;
+
+  & .search__form--input::-webkit-search-cancel-button {
+    cursor: pointer;
+  }
 }
 
 .search__results {
   margin: 0 0 var(--spacing-base);
   padding: 0;
   list-style: none;
+  display: none;
 
   & li {
     margin: var(--spacing-sm) 0;

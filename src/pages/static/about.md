@@ -6,7 +6,7 @@ permalink: /about.html
 {%- assign artist = music.week.artists | first -%}
 {%- assign book = books.all | bookStatus: 'started' | reverse | first -%}
 {%- assign show = tv.recentlyWatched | first -%}
-<div class="avatar-wrapper flex-centered">
+<div class="avatar-wrapper">
   <div class="interior">
     {%- capture about_alt -%}{{ globals.site_name }} - image by @joel@fosstodon.org{%- endcapture -%}
     <img
@@ -25,7 +25,7 @@ permalink: /about.html
     />
   </div>
 </div>
-<h2 class="text-centered">Hi, I'm Cory</h2>
+<h2 class="about-title">Hi, I'm Cory</h2>
 
 <strong class="highlight-text">I'm a software developer based in Camarillo, California</strong>. I enjoy hanging out with my beautiful family and 3 rescue dogs, technology, automation, [music](https://coryd.dev/music), [writing](https://coryd.dev/posts), [reading](https://coryd.dev/books), [tv](https://coryd.dev/watching#tv) and [movies](https://coryd.dev/watching#movies). Lately I've been listening to a lot of <strong class="highlight-text">{{ artist.title }}</strong>, reading <strong class="highlight-text">{{ book.title }}</strong> and watching <strong class="highlight-text">{{ show.name }}</strong>.
 

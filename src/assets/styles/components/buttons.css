@@ -15,9 +15,6 @@ button,
     border-radius: var(--border-radius-full);
     padding: var(--spacing-xs) var(--spacing-md);
     cursor: pointer;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-base);
