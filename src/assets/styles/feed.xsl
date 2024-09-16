@@ -45,11 +45,11 @@
                 </xsl:for-each>
               </section>
             </div>
-            <footer>
-              <hr />
-              <p>Subscribe by adding <code><xsl:value-of select="rss/channel/atom:link/@href"/></code> to your feed reader of choice.</p>
-            </footer>
           </main>
+          <footer>
+            <hr />
+            <p>Subscribe by adding <code><xsl:value-of select="rss/channel/atom:link/@href"/></code> to your feed reader of choice.</p>
+          </footer>
         </div>
       </body>
     </html>

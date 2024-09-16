@@ -43,6 +43,5 @@
 
   & footer {
     padding-bottom: var(--spacing-3xl);
-    width: unset;
   }
 }

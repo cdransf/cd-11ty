@@ -28,8 +28,8 @@ export default {
           break
         case 'album-release':
           normalized.title = item['title']
-          normalized.alt = `${item['title']} by ${item['artist']}`
-          normalized.subtext = `${item['artist']} / ${item['date']}`
+          normalized.alt = `${item['title']} by ${item['artist']['name']}`
+          normalized.subtext = `${item['artist']['name']} / ${item['date']}`
           break
         case 'movie':
           normalized.title = item['title']

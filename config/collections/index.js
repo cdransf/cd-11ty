@@ -87,6 +87,8 @@ export const processContent = (collection) => {
       items.forEach((item) => {
         let attribution
         let hashTags = tagsToHashtags(item) ? ' ' + tagsToHashtags(item) : ''
+        if (item['type'] === 'album-release') hashTags = ' #Music #NewMusic'
+        if (item['type'] === 'concert') hashTags = ' #Music #Concert'
 
         // link attribution if properties exist
         if (item?.['authors']?.['mastodon']) {
@@ -108,6 +110,8 @@ export const processContent = (collection) => {
         // set url for posts - identified as slugs here
         if (item?.['slug']) content['url'] = new URL(item['slug'], BASE_URL).toString()
 
+        // set unique concert urls
+        if (item?.['type'] === 'concert') content['url'] = `${item['artistUrl']}?t=${DateTime.fromISO(item['date']).toMillis()}#concerts`
         if (item?.['description']) {
           content['description'] = `${item['description'].split(' ').length >= 25 ? item['description'].split(' ').slice(0, 25).join(' ') + '...' : item['description']}`
         } else if (item?.['notes']) {
@@ -135,6 +139,8 @@ export const processContent = (collection) => {
   addContent(links, '🔗', (item) => item['title'], (item) => item['date'])
   addContent(books.all.filter((book) => book['status'] === 'finished'), '📖', (item) => `${item['title']}${item['rating'] ? ' (' + item['rating'] + ')' : ''}`, (item) => item['date'])
   addContent(movies['movies'], '🎥', (item) => `${item['title']}${item['rating'] ? ' (' + item['rating'] + ')' : ''}`, (item) => item['lastWatched'])
+  addContent(concerts, '🎤', (item) => `${item['artistNameString'] ? item['artistNameString'] : item['artist']['name']} at ${item['venue']['name'].split(',')[0].trim()}`, (item) => item['date'])
+  addContent([...albumReleases['current']].reverse(), '📆', (item) => `${item['title']} by ${item['artist']['name']}`, (item) => item['release_date'])
 
   addSiteMapContent(posts, (item) => item.title, (item) => item.date)
   addSiteMapContent(pages, (item) => item.title, (item) => item.date)
@@ -173,10 +179,10 @@ export const albumReleasesCalendar = (collection) => {
       start: [date.year, date.month, date.day],
       startInputType: 'local',
       startOutputType: 'local',
-      title: `Release: ${album.artist} - ${album.title}`,
-      description: `Check out this new album release: ${album.url}`,
+      title: `Release: ${album['artist']['name']} - ${album['title']}`,
+      description: `Check out this new album release: ${album['url']}. Read more about ${album['artist']['name']} at https://coryd.dev${album['artist']['url']}`,
       url: album.url,
-      uid: `${date.toFormat('yyyyMMdd')}-${album.artist}-${album.title}@coryd.dev`,
+      uid: `${date.toFormat('yyyyMMdd')}-${album['artist']['name']}-${album.title}@coryd.dev`,
       timestamp: DateTime.now().toUTC().toFormat("yyyyMMdd'T'HHmmss'Z'")
     }
   }).filter(event => event !== null)

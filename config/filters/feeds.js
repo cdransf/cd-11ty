@@ -3,6 +3,7 @@ import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItFootnote from 'markdown-it-footnote'
 import sanitizeHtml from 'sanitize-html'
+import truncate from 'truncate-html'
 
 const BASE_URL = 'https://coryd.dev'
 
@@ -63,6 +64,16 @@ export default {
       } else if (['book', 'movie'].includes(type)) {
         processedEntry['excerpt'] = sanitizeHtml(`${md.render(description)}`)
       }
+      if (type === 'album-release') {
+        let sanitizedDescription = sanitizeHtml(`${md.render(description)}`)
+        let truncatedDescription = truncate(sanitizedDescription, {
+          length: 500,
+          reserveLastWord: true,
+          ellipsis: '...'
+        })
+        if (sanitizedDescription.length > 500) truncatedDescription += ` <a href="${entry['artist']['url']}">Read more about ${entry['artist']['name']}</a>`
+        processedEntry['excerpt'] = truncatedDescription
+      }
       if (slug && content) processedEntry['excerpt'] = sanitizeHtml(`${md.render(content)}${feedNote}`, {
         disallowedTagsMode: 'completelyDiscard'
       })
@@ -71,6 +82,8 @@ export default {
 
       if (rating) processedEntry['rating'] = rating
       if (tags) processedEntry['tags'] = tags
+      if (type === 'album-release' && artist) processedEntry['title'] = `${title} by ${artist}`
+
       if (entry) posts.push(processedEntry)
     })
 

@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
+import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 import { DateTime } from 'luxon'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
@@ -15,7 +16,11 @@ const fetchAlbumReleases = async () => {
       release_link,
       total_plays,
       art,
-      artist_name
+      artist_name,
+      artist_description,
+      artist_total_plays,
+      artist_country,
+      artist_favorite
     `)
 
   if (error) {
@@ -27,10 +32,17 @@ const fetchAlbumReleases = async () => {
     const releaseDate = DateTime.fromISO(album['release_date']).toUTC().startOf('day')
 
     return {
-      artist: album['artist_name'],
+      artist: {
+        name: album['artist_name'],
+        description: album['artist_description'],
+        total_plays: album['artist_total_plays'],
+        country: album['artist_country'],
+        favorite: album['artist_favorite'],
+        url: `/music/artists/${sanitizeMediaString(album['artist_name'])}-${sanitizeMediaString(parseCountryField(album['artist_country']))}`,
+      },
       title: album['name'],
       date: releaseDate.toLocaleString(DateTime.DATE_FULL),
-      description: 'Check out the new release!',
+      description: album['artist_description'],
       url: album['release_link'],
       image: album['art'] ? `/${album['art']}` : '',
       total_plays: album['total_plays'],
@@ -39,6 +51,7 @@ const fetchAlbumReleases = async () => {
       timestamp: releaseDate.toSeconds(),
     }
   }).sort((a, b) => a['timestamp'] - b['timestamp'])
+
   const upcoming = all.filter(album => (!album['total_plays'] || album['total_plays'] <= 0) && album['release_date'] > today)
   const current = all.filter(album => album['release_date'] <= today)
 
