@@ -18,8 +18,7 @@ const normalizeWord = (word) => {
 const tagsToHashtags = (item) => {
   const tags = item?.tags || []
   if (tags.length) return tags.map(tag => '#' + tag.split(' ').map(normalizeWord).join('')).join(' ')
-  const artistName = item?.artistName || item?.artist?.name
-  return artistName ? `#${artistName.charAt(0).toUpperCase() + artistName.slice(1).toLowerCase()} #Music #Concert ` : ''
+  return ''
 }
 
 export const processContent = (collection) => {
@@ -88,8 +87,6 @@ export const processContent = (collection) => {
       items.forEach((item) => {
         let attribution
         let hashTags = tagsToHashtags(item) ? ' ' + tagsToHashtags(item) : ''
-        if (item['type'] === 'album-release') hashTags = ' #Music #NewMusic'
-        if (item['type'] === 'concert') hashTags = ' #Music #Concert'
 
         // link attribution if properties exist
         if (item?.['authors']?.['mastodon']) {
@@ -111,8 +108,6 @@ export const processContent = (collection) => {
         // set url for posts - identified as slugs here
         if (item?.['slug']) content['url'] = new URL(item['slug'], BASE_URL).toString()
 
-        // link to artist concerts section if available - artistUrl is only present on concert objects here
-        if (item?.['artistUrl']) content['url'] = `${item['artistUrl']}?t=${DateTime.fromISO(item['date']).toMillis()}#concerts`
         if (item?.['description']) {
           content['description'] = `${item['description'].split(' ').length >= 25 ? item['description'].split(' ').slice(0, 25).join(' ') + '...' : item['description']}`
         } else if (item?.['notes']) {
@@ -140,8 +135,6 @@ export const processContent = (collection) => {
   addContent(links, '🔗', (item) => item['title'], (item) => item['date'])
   addContent(books.all.filter((book) => book['status'] === 'finished'), '📖', (item) => `${item['title']}${item['rating'] ? ' (' + item['rating'] + ')' : ''}`, (item) => item['date'])
   addContent(movies['movies'], '🎥', (item) => `${item['title']}${item['rating'] ? ' (' + item['rating'] + ')' : ''}`, (item) => item['lastWatched'])
-  addContent(concerts, '🎤', (item) => `${item['artistNameString'] ? item['artistNameString'] : item['artist']['name']} at ${item['venue']['name'].split(',')[0].trim()}`, (item) => item['date'])
-  addContent([...albumReleases['current']].reverse(), '📆', (item) => `${item['title']} by ${item['artist']}`, (item) => item['release_date'])
 
   addSiteMapContent(posts, (item) => item.title, (item) => item.date)
   addSiteMapContent(pages, (item) => item.title, (item) => item.date)

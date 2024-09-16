@@ -71,7 +71,6 @@ export default {
 
       if (rating) processedEntry['rating'] = rating
       if (tags) processedEntry['tags'] = tags
-      if (type === 'album-release' && artist) processedEntry['title'] = `${title} by ${artist}`
       if (entry) posts.push(processedEntry)
     })
 
