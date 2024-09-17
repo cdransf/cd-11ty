@@ -80,7 +80,7 @@
   --border-gray: 1px solid var(--gray-light);
 
   /* fonts */
-  --font-mono: MonoLisa, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;
+  --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;
 
   /* text */
   --font-size-xs: .7rem;

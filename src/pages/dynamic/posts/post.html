@@ -8,7 +8,7 @@ permalink: "{{ post.slug }}/index.html"
 schema: blog
 ---
 <article class="standalone">
-  <time>{{ post.date | date: "%B %e, %Y" }}</time>
+  <time datetime="{{ post.date }}">{{ post.date | date: "%B %e, %Y" }}</time>
   <h3>{{ post.title }}</h3>
   <div>
     {% render "partials/blocks/banners/old-post.liquid", date:post.date %}

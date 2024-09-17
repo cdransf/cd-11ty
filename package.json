@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "24.13.0",
+  "version": "24.13.4",
   "description": "The source for my personal site. Built using 11ty (and other tools).",
   "type": "module",
   "scripts": {
@@ -52,7 +52,7 @@
     "rimraf": "^6.0.1",
     "sanitize-html": "^2.13.0",
     "slugify": "^1.6.6",
-    "terser": "^5.32.0",
+    "terser": "^5.33.0",
     "truncate-html": "^1.1.2"
   }
 }

@@ -7,13 +7,13 @@
     </h2>
   </div>
   {%- for post in posts -%}
-    <article class="h-entry">
-      <time class="dt-published" datetime="{{ post.date }}">
+    <article>
+      <time datetime="{{ post.date }}">
         {{ post.date | date: "%B %e, %Y" }}
       </time>
-      <a href="{{ post.slug }}">
-        <h3>{{ post.title }}</h3>
-      </a>
+      <h3>
+        <a href="{{ post.slug }}">{{ post.title }}</a>
+      </h3>
       {{ post.description | normalize_whitespace | markdown | truncatewords: 50 }}
     </article>
   {%- endfor -%}
