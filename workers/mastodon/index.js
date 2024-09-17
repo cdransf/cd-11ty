@@ -7,7 +7,12 @@ export default {
   },
 
   async fetch(request, env, ctx) {
-    return Response.redirect('https://coryd.dev/feeds', 301)
+    if (request.method !== 'POST') return new Response('Method Not Allowed', { status: 405 })
+    if (request.headers.get('x-webhook-token') !== env.WEBHOOK_SECRET) return new Response('Unauthorized', { status: 401 })
+
+    await handleScheduledEvent(env)
+
+    return new Response('Worker triggered by successful build.', { status: 200 })
   }
 }
 
@@ -25,20 +30,19 @@ async function handleScheduledEvent(env) {
 
       if (existingPost) continue
 
-      const plainTextDescription = convert(item.description, {
-        wordwrap: 150,
-      })
-
+      const plainTextDescription = convert(item.description, { wordwrap: 130 })
       const content = `${item.title}\n\n${plainTextDescription}\n\n${item.link}`
+
       await postToMastodon(mastodonApiUrl, accessToken, content)
 
       const timestamp = new Date().toISOString()
+
       await env.RSS_TO_MASTODON_NAMESPACE.put(item.link, timestamp)
 
-      console.log(`Posted and stored URL: ${item.link}`)
+      console.log(`Posted stored URL: ${item.link}`)
     }
 
-    console.log('RSS feed processed successfully')
+    console.log('RSS processed successfully')
   } catch (error) {
     console.error('Error in scheduled event:', error)
   }
@@ -68,9 +72,9 @@ async function postToMastodon(apiUrl, accessToken, content) {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${accessToken}`,
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ status: content })
+    body: JSON.stringify({ status: content }),
   })
 
   if (!response.ok) {
@@ -78,5 +82,5 @@ async function postToMastodon(apiUrl, accessToken, content) {
     throw new Error(`Error posting to Mastodon: ${response.statusText} - ${errorText}`)
   }
 
-  console.log('Posted to Mastodon successfully!')
+  console.log('Posted to Mastodon successfully.')
 }
