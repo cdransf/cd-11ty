@@ -401,7 +401,6 @@ th {
   justify-content: space-between;
 
   & h1 {
-    font-weight: var(--font-weight-extrabold);
     margin: 0;
     padding: 0;
   }
