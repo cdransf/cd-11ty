@@ -1,0 +1,21 @@
+name = "rss-to-mastodon-worker"
+main = "./index.js"
+compatibility_date = "2023-01-01"
+
+account_id = "${CF_ACCOUNT_ID}"
+workers_dev = true
+
+[observability]
+enabled = true
+
+[[kv_namespaces]]
+binding = "RSS_TO_MASTODON_NAMESPACE"
+id = "${RSS_TO_MASTODON_KV_NAMESPACE_ID}"
+
+[env.production]
+name = "rss-to-mastodon-worker-production"
+triggers = { crons = ["0 * * * *"] }
+
+[[env.production.kv_namespaces]]
+binding = "RSS_TO_MASTODON_NAMESPACE"
+id = "${RSS_TO_MASTODON_KV_NAMESPACE_ID}"
