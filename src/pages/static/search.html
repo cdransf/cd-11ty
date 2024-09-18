@@ -35,7 +35,11 @@ permalink: /search.html
         // Clear the results when input is empty
         renderSearchResults([])
       } else {
-        if (query.length > 1 && window?.umami) umami.trackEvent('Search', { query: query })
+        if (query.length > 1) {
+          try { 
+            umami.trackEvent('Search', { query: query })
+          } catch (err) {}
+        }
         renderSearchResults(results, query)
       }
     })
