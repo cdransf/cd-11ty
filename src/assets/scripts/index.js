@@ -26,19 +26,45 @@ window.addEventListener('load', () => {
     })
   })()
 
-  // modal keyboard controls
+  // modal keyboard controls and scroll management
   ;(() => {
     const modalInputs = document.querySelectorAll('.modal-input')
+    if (!modalInputs) return
 
-    if (!modalInputs) return // early return if dom nodes are missing
+    const toggleBodyScroll = (disableScroll) => {
+      if (disableScroll) {
+        document.body.style.overflow = 'hidden'
+      } else {
+        document.body.style.overflow = ''
+      }
+    }
+
+    const checkModals = () => {
+      let isAnyModalOpen = false
+      modalInputs.forEach((modalInput) => {
+        if (modalInput.checked) {
+          isAnyModalOpen = true
+        }
+      })
+      toggleBodyScroll(isAnyModalOpen)
+    }
+
+    modalInputs.forEach((modalInput) => {
+      modalInput.addEventListener('change', checkModals)
+    })
 
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         modalInputs.forEach((modalInput) => {
-          if (modalInput.checked) modalInput.checked = false
+          if (modalInput.checked) {
+            modalInput.checked = false
+          }
         })
+        toggleBodyScroll(false)
       }
     })
+
+    checkModals()
   })()
 
   ;(() => {
