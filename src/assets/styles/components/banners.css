@@ -36,28 +36,23 @@
   &.old-post,
   &.rss,
   &.warning {
-    &.error { --border-color: var(--error); }
-    &.github { --border-color: var(--brand-github); }
-    &.npm { --border-color: var(--brand-npm); }
-    &.old-post { --border-color: var(--gray-dark); }
-    &.rss { --border-color: var(--brand-rss); }
-    &.warning { --border-color: var(--warning); }
+    &.error { --banner-accent-color: var(--error); }
+    &.github { --banner-accent-color: var(--brand-github); }
+    &.npm { --banner-accent-color: var(--brand-npm); }
+    &.old-post { --banner-accent-color: var(--gray-dark); }
+    &.rss { --banner-accent-color: var(--brand-rss); }
+    &.warning { --banner-accent-color: var(--warning); }
 
-    border-color: var(--border-color);
+    border-color: var(--banner-accent-color);
 
     & p a:hover,
     & p a:active,
     & p a:focus {
-      color: var(--border-color);
-    }
-
-    & p a:focus,
-    & p a:focus-within {
-      outline: 2px dashed var(--border-color);
+      color: var(--banner-accent-color);
     }
 
     & svg {
-      stroke: var(--border-color);
+      stroke: var(--banner-accent-color);
     }
   }
 }

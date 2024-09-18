@@ -75,12 +75,6 @@
     border-color: var(--accent-color-hover)
   }
 
-  & a:focus .item::after,
-  & a:focus-within .item::after {
-    border: 0;
-    outline: var(--outline-default);
-  }
-
   & .meta-text {
     position: absolute;
     z-index: 2;

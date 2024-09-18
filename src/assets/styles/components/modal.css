@@ -51,21 +51,9 @@
   display: inline-flex;
   vertical-align: middle;
 
-  &:active svg,
-  &:focus svg,
-  &:focus-within svg {
-    outline: var(--outline-default);
-    border-radius: var(--border-radius-slight);
-  }
-
   & svg {
     cursor: pointer;
     stroke: var(--accent-color);
-
-    &:focus {
-      outline: var(--outline-default);
-      border-radius: var(--border-radius-slight);
-    }
 
     &:hover,
     &:focus,

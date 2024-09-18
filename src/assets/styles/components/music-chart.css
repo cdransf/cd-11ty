@@ -43,12 +43,6 @@
       display: flex;
     }
 
-    & a:focus img,
-    & a:focus-within img {
-      outline: var(----outline-default);
-      border: 0;
-    }
-
     & img {
       border: var(--border-default);
       border-radius: var(--border-radius-slight);

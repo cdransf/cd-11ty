@@ -1,9 +1,3 @@
-a:focus > .watching.hero::after,
-a:focus-within > .watching.hero::after {
-  border: 0;
-  outline: var(--outline-default);
-}
-
 a:hover > .watching.hero::after,
 a:active > .watching.hero::after {
   border-color: var(--accent-color-hover);
@@ -91,12 +85,6 @@ a:active > .watching.hero::after {
     & a:hover .item::after,
     & a:active .item::after {
       border-color: var(--accent-color-hover)
-    }
-
-    & a:focus .item::after,
-    & a:focus-within .item::after {
-      border: 0;
-      outline: var(--outline-default);
     }
 
     & div {

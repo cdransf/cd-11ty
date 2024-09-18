@@ -33,16 +33,6 @@ textarea:focus-within {
   padding: calc(var(--spacing-sm) + 1px);
 }
 
-input:focus,
-input:focus-within,
-textarea:focus,
-textarea:focus-within,
-select:focus,
-select:focus-within {
-  border: 0;
-  outline: var(--outline-default);
-}
-
 select {
   color: var(--text-color);
   border: var(--border-gray);

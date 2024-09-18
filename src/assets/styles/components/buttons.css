@@ -35,20 +35,6 @@ button,
     transition-duration: var(--transition-duration-default);
   }
 
-  &:not(.theme-toggle, .active):focus,
-  &:not(.theme-toggle, .active):focus-within {
-    transition-property: none;
-    outline: var(--outline-default);
-    padding: calc(var(--spacing-xs) + 2px) calc(var(--spacing-md) + 2px);
-    border: 0;
-  }
-
-  &.theme-toggle:focus,
-  &.theme-toggle:focus-within {
-    outline: var(--outline-default);
-    border-radius: var(--border-radius-slight);
-  }
-
   &.secondary {
     color: var(--accent-color);
     background: transparent;

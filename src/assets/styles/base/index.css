@@ -3,8 +3,6 @@ body {
   color: var(--text-color);
   background: var(--background-color);
   font-family: var(--font-mono);
-  scrollbar-width: thin;
-  scrollbar-color: var(--accent-color) var(--gray-light);
 }
 
 html {
@@ -25,25 +23,6 @@ body {
 ::selection {
   color: var(--color-lightest);
   background: var(--accent-color);
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--gray-light);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--accent-color);
-  border-radius: var(--border-radius-full);
-}
-
-::-webkit-scrollbar-button {
-  background-color: var(--accent-color);
-}
-
-::-webkit-scrollbar,
-body::-webkit-scrollbar {
-  width: var(--sizing-md);
-  height: var(--sizing-md);
 }
 
 p {
@@ -79,7 +58,6 @@ p {
 
   & a {
     text-decoration: underline;
-    text-decoration-style: dashed;
     text-underline-offset: var(--spacing-xs);
   }
 }
@@ -170,26 +148,6 @@ a {
 
 :is(a:hover, a:active, a:focus) svg[data-tablericon-name^="arrow-"] {
   stroke: var(--accent-color-hover);
-}
-
-a:focus,
-a:focus-within
-a:has(svg):focus svg,
-a:has(svg):focus-within svg {
-  outline: var(--outline-default);
-  border-radius: var(--border-radius-slight);
-  text-decoration: none;
-}
-
-a.icon-link:focus,
-a.icon-link:focus-within {
-  outline: var(--outline-default);
-  border-radius: var(--border-radius-slight);
-  text-decoration: none;
-
-  & svg {
-    outline: none;
-  }
 }
 
 a:hover,
@@ -549,5 +507,4 @@ ul, ol {
   border-radius: var(--border-radius-slight);
   height: auto;
   width: 100%;
-  display: block;
 }

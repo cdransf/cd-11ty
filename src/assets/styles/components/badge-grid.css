@@ -12,15 +12,6 @@
     justify-content: center;
   }
 
-  & a {
-    outline: none;
-
-    &:focus img,
-    &:focus-within img {
-      outline: var(--outline-default);
-    }
-  }
-
   & img {
     image-rendering: pixelated;
   }
