@@ -51,10 +51,6 @@
 
     & p {
       margin: 0;
-      overflow: hidden;
-      max-width: 100%;
-      text-overflow: ellipsis;
-      width: fit-content;
     }
 
     & .description {
@@ -87,25 +83,23 @@
     flex-direction: column;
     gap: var(--spacing-sm);
 
-    & p {
-      &.title {
-        font-size: var(--font-size-xl);
-        line-height: var(--line-height-md);
-      }
+    & p.title {
+      font-size: var(--font-size-xl);
+      line-height: var(--line-height-md);
+    }
 
-      &.sub-meta {
-        font-size: var(--font-size-sm);
+    & p.sub-meta {
+      font-size: var(--font-size-sm);
 
-        & svg {
-          width: var(--sizing-svg-sm);
-          height: var(--sizing-svg-sm);
-        }
+      & svg {
+        width: var(--sizing-svg-sm);
+        height: var(--sizing-svg-sm);
       }
+    }
 
-      &.title,
-      &.sub-meta {
-        margin: 0;
-      }
+    & p.title,
+    & p.sub-meta {
+      margin: 0;
     }
   }
 }

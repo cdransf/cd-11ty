@@ -48,6 +48,7 @@ body::-webkit-scrollbar {
 
 p {
   margin: var(--margin-vertical-base-horizontal-zero);
+  overflow: visible;
 
   &.books,
   &.collected,
@@ -173,16 +174,11 @@ a {
 
 a:focus,
 a:focus-within
-a:focus > svg,
-a:focus-within > svg {
+a:has(svg):focus svg,
+a:has(svg):focus-within svg {
   outline: var(--outline-default);
   border-radius: var(--border-radius-slight);
   text-decoration: none;
-}
-
-a:has(svg):focus,
-a:has(svg):focus-within {
-  outline: none;
 }
 
 a.icon-link:focus,

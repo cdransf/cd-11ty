@@ -11,9 +11,9 @@ permalink: "/posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}
   {% for post in pagination.items %}
   <article>
     <time datetime="{{ post.date }}">{{ post.date | date: "%B %e, %Y" }}</time>
-    <a href="{{ post.slug }}">
-      <h3>{{ post.title }}</h3>
-    </a>
+    <h3>
+      <a href="{{ post.slug }}">{{ post.title }}</a>
+    </h3>
     <p>{{ post.description }}</p>
   </article>
   {% endfor %}
