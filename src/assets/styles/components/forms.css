@@ -26,13 +26,6 @@ form:has(+ *) {
   margin-bottom: var(--spacing-base);
 }
 
-input:focus,
-input:focus-within,
-textarea:focus,
-textarea:focus-within {
-  padding: calc(var(--spacing-sm) + 1px);
-}
-
 select {
   color: var(--text-color);
   border: var(--border-gray);
