@@ -15,10 +15,9 @@
 .media-grid {
   display: grid;
   gap: var(--spacing-sm);
-  margin-bottom: var(--spacing-base);
 
-  &.no-pagination {
-    margin-bottom: 0;
+  & ~ .pagination {
+    margin-top: var(--spacing-base);
   }
 
   &.square {

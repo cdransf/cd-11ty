@@ -6,21 +6,17 @@
       {%- assign percentage = item.plays | calculatePlayPercentage: playTotal -%}
       <li value="{{ item.rank }}">
         <div class="item">
-          <div class="presentation">
-            <div class="info">
-              <div class="title">
-                <a href="{{ item.url }}">{{ item.title }}</a>
-              </div>
-              {%- capture playsLabel -%}
-                {%- if item.plays > 1 -%}
-                  plays
-                {%- else -%}
-                  play
-                {%- endif -%}
-              {%- endcapture -%}
-              <div class="subtext">{{ item.artist }}</div>
-              <div class="subtext">{{ item.plays }} {{ playsLabel }}</div>
-            </div>
+          <div class="info">
+            <a class="title window" href="{{ item.url }}">{{ item.title }}</a>
+            {%- capture playsLabel -%}
+              {%- if item.plays > 1 -%}
+                plays
+              {%- else -%}
+                play
+              {%- endif -%}
+            {%- endcapture -%}
+            <span class="subtext">{{ item.artist }}</span>
+            <span class="subtext">{{ item.plays }} {{ playsLabel }}</span>
           </div>
           {% render "partials/media/progress-bar.liquid", percentage:percentage %}
         </div>

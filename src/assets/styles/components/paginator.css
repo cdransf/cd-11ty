@@ -21,7 +21,7 @@
 
   & span.disabled svg[data-tablericon-name^="arrow-"] {
     cursor: not-allowed;
-    stroke: color-mix(in srgb, var(--text-color), transparent 50%);
+    stroke: var(--gray-medium);
     stroke-width: var(--stroke-width-default);
   }
 }

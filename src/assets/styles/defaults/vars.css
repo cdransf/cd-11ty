@@ -28,11 +28,8 @@
 
   --gray-light: var(--gray-200);
   --gray-lighter: var(--gray-100);
+  --gray-medium: var(--gray-500);
   --gray-dark: var(--gray-950);
-
-  /* semi-transparent overlay color */
-  --gray-dark-transparent: #000000b3;
-  --gray-light-transparent: #d9dee499;
 
   /* base theme */
   --color-lightest: var(--gray-50);
@@ -52,6 +49,7 @@
   --brand-buy-me-a-coffee: #40dca5;
   --brand-rss: #f26522;
 
+  --article: #008080;
   --about: #ff6347;
   --books: #32cd32;
   --collected: #b5651d;
@@ -64,16 +62,12 @@
   --music: #1e90ff;
   --newsletter: #40e0d0;
   --now: #ff1493;
-  --posts: #008080;
   --search: #4682b4;
   --sun: #ffa500;
   --tattoo: #b22222;
   --tv: #ff4500;
   --warning: #ff8c00;
   --webrings: #da70d6;
-
-  /* outline */
-  --outline-default: 2px dashed var(--accent-color);
 
   /* borders */
   --border-default: 1px solid var(--accent-color);

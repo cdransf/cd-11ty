@@ -7,18 +7,18 @@ pagination:
   alias: posts
 permalink: "/posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html"
 ---
-<div class="posts-wrapper">
-  {% for post in pagination.items %}
-  <article>
+{% for post in pagination.items %}
+<article>
+  <div class="post-meta">
+    {%- if post.featured -%}{% tablericon "star" "featured" %}{%- endif -%}
     <time datetime="{{ post.date }}">
-      {%- if post.featured -%}{% tablericon "star" "featured" %}{%- endif -%}
       {{ post.date | date: "%B %e, %Y" }}
     </time>
-    <h3>
-      <a href="{{ post.slug }}">{{ post.title }}</a>
-    </h3>
-    <p>{{ post.description }}</p>
-  </article>
-  {% endfor %}
-</div>
+  </div>
+  <h3>
+    <a href="{{ post.slug }}">{{ post.title }}</a>
+  </h3>
+  <p>{{ post.description }}</p>
+</article>
+{% endfor %}
 {% render "partials/nav/paginator.liquid", pagination:pagination %}

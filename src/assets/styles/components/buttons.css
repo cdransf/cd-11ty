@@ -34,16 +34,4 @@ button,
     transition-timing-function: var(--transition-ease-in-out);
     transition-duration: var(--transition-duration-default);
   }
-
-  &.secondary {
-    color: var(--accent-color);
-    background: transparent;
-  }
-
-  &.secondary:not(.theme-toggle):hover,
-  &.secondary:not(.theme-toggle):active,
-  &.secondary:not(.theme-toggle):focus {
-    color: var(--accent-color-hover);
-    background: transparent;
-  }
 }

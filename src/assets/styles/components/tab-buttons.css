@@ -19,14 +19,6 @@ input[id="tracks-recent"] ~ [for="tracks-recent"]:has(+ [for="tracks-window"]) {
   margin-right: var(--spacing-xs);
 }
 
-#tracks-recent:not(:checked) ~ [for="tracks-recent"]:hover,
-#tracks-recent:not(:checked) ~ [for="tracks-recent"]:active,
-#tracks-window:not(:checked) ~ [for="tracks-window"]:hover,
-#tracks-window:not(:checked) ~ [for="tracks-window"]:active {
-  color: var(--accent-color-hover);
-  background: transparent;
-}
-
 #tracks-recent:checked ~ [for="tracks-recent"],
 #tracks-window:checked ~ [for="tracks-window"] {
   cursor: not-allowed;
@@ -38,4 +30,11 @@ input[id="tracks-recent"] ~ [for="tracks-recent"]:has(+ [for="tracks-window"]) {
 #tracks-window:not(:checked) ~ [for="tracks-window"] {
   color: var(--accent-color);
   background: transparent;
+}
+
+#tracks-recent:not(:checked) ~ [for="tracks-recent"]:hover,
+#tracks-recent:not(:checked) ~ [for="tracks-recent"]:active,
+#tracks-window:not(:checked) ~ [for="tracks-window"]:hover,
+#tracks-window:not(:checked) ~ [for="tracks-window"]:active {
+  color: var(--accent-color-hover);
 }

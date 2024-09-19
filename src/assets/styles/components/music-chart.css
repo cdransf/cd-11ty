@@ -35,7 +35,7 @@
       max-width: 40%;
 
       @media screen and (min-width: 768px) {
-        margin-left: var(--spacing-lg);
+        margin-top: 0;
       }
     }
 
@@ -55,18 +55,17 @@
       }
     }
 
-    & .presentation .info {
+    & .info {
       display: flex;
       flex-direction: column;
-      gap: var(--spacing-sm);
+      gap: var(--spacing-xs);
 
       @media screen and (min-width: 768px) {
         max-width: calc(75% - var(--sizing-lg));
       }
     }
 
-    & .meta,
-    & .presentation {
+    & .meta {
       justify-content: start;
       gap: var(--spacing-md);
 
@@ -97,7 +96,10 @@
 
     & .title {
       font-weight: var(--font-weight-bold);
-      line-height: var(--line-height-md);
+
+      &.window {
+        margin-bottom: calc(var(--spacing-sm) * -1);
+      }
     }
 
     & .title,

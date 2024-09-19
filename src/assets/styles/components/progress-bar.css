@@ -2,7 +2,7 @@
   display: flex;
   height: var(--sizing-lg);
   width: 100%;
-  background-color: var(--gray-light-transparent);
+  background-color: var(--gray-light);
   border-radius: var(--border-radius-full);
   overflow: hidden;
 

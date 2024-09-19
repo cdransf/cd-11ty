@@ -1,5 +1,5 @@
 {%- assign hidePagination = count or data.pages.size <= 1 -%}
-<div class="watching grid{% if hidePagination %} no-pagination {% endif %}">
+<div class="watching grid">
   {%- assign items = data.items | default: mediaItems -%}
   {%- for item in items limit: count -%}
     {%- capture alt -%}{{ item.title | escape }} ({{ item.year }}){% endcapture %}

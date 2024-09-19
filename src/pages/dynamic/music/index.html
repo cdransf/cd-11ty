@@ -12,28 +12,26 @@ schema: music-index
 <p><a href="/music/concerts">You can also take a look at the concerts I've been to.</a></p>
 {% render "partials/blocks/now-playing.liquid", music:music %}
 <hr />
-<h3 id="artists" class="section-header">
+<h3 id="artists">
   <a class="icon-link" href="/music/artists/this-week">
     {% tablericon "microphone-2" "Artists" %}
     Artists
   </a>
 </h3>
 {% render "partials/media/grid.liquid", data:music.week.artists, shape: "square", count: 8, loading: "eager" %}
-<h3 id="albums" class="section-header">
+<h3 id="albums">
   <a class="icon-link" href="/music/albums/this-week">
     {% tablericon "vinyl" "Albums" %}
     Albums
   </a>
 </h3>
 {% render "partials/media/grid.liquid", data:music.week.albums, shape: "square", count: 8 %}
-<div class="section-header-wrapper">
-  <h3 id="tracks" class="section-header">
-    <a class="icon-link" href="/music/tracks/this-week">
-      {% tablericon "playlist" "Tracks" %}
-      Tracks
-    </a>
-  </h3>
-</div>
+<h3 id="tracks">
+  <a class="icon-link" href="/music/tracks/this-week">
+    {% tablericon "playlist" "Tracks" %}
+    Tracks
+  </a>
+</h3>
 <div class="track-display">
   <input id="tracks-recent" name="track-options" type="radio" aria-hidden="true" checked />
   <input id="tracks-window" name="track-options" type="radio" aria-hidden="true" />
@@ -47,7 +45,7 @@ schema: music-index
   </div>
 </div>
 {% if albumReleases.size > 0 %}
-<h3 id="album-releases" class="section-header">
+<h3 id="album-releases">
   {% tablericon "calendar-time" "Anticipated albums" %}
   Anticipated albums
 </h3>
