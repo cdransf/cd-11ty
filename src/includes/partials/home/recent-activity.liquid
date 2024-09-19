@@ -1,0 +1,17 @@
+{%- assign track = music.week.tracks | first -%}
+{%- assign show = tv.recentlyWatched | first -%}
+{%- assign movie = movies.recentlyWatched | first -%}
+{%- assign book = books | bookStatus: 'finished' | bookSortDescending | first -%}
+{%- assign link = links | first -%}
+<h2 class="section-header">
+  {% tablericon "activity" "Recent activity" %}
+  Recent activity
+</h2>
+<ul>
+  <li class="music">Top track this week: <a href="{{ track.url }}">{{ track.title }} by {{ track.artist }}</a></li>
+  <li class="tv">Last episode watched: <strong class="highlight-text">S{{ show.season }}E{{ show.episode }}</strong> of <a href="{{ show.url }}">{{ show.name }}</a></li>
+  <li class="movies">Last movie watched: <a href="{{ movie.url }}">{{ movie.title }}</a>{%- if movie.rating %} ({{ movie.rating }}){%- endif -%}</li>
+  <li class="books">Last book finished: <a href="{{ book.url }}">{{ book.title }}</a> by {{ book.author }}{%- if book.rating %} ({{ book.rating }}){%- endif -%}</li>
+  <li class="link">Last link shared: <a href="{{ link.link }}">{{ link.title }}</a>{% if link.authors %} via <a href="{{ link.authors.url }}">{{ link.authors.name }}</a>{% endif %}</li>
+</ul>
+{% render "partials/blocks/banners/rss.liquid", url: "/feeds", text: "Subscribe to my movies, books, links or activity feed(s)" %}

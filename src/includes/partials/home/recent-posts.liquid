@@ -1,14 +1,14 @@
-{%- assign posts = postData | filterByPostType: postType %}
 <div class="article-widget-wrapper">
   <div class="section-header-wrapper">
-    <h2 class="section-header posts">
-      {% tablericon icon title %}
-      {{ title }}
+    <h2 class="section-header">
+      {% tablericon "clock" "Recent posts" %}
+      Recent posts
     </h2>
   </div>
-  {%- for post in posts -%}
+  {%- for post in posts limit: 5 -%}
     <article>
       <time datetime="{{ post.date }}">
+        {%- if post.featured -%}{% tablericon "star" "featured" %}{%- endif -%}
         {{ post.date | date: "%B %e, %Y" }}
       </time>
       <h3>
@@ -17,7 +17,5 @@
       {{ post.description | normalize_whitespace | markdown | truncatewords: 50 }}
     </article>
   {%- endfor -%}
-  {%- if postType != 'featured' -%}
-    <a class="icon-link" href="/posts">View all posts {% tablericon "arrow-right" "View all posts" %}</a>
-  {%- endif -%}
+  <a class="icon-link" href="/posts">View all posts {% tablericon "arrow-right" "View all posts" %}</a>
 </div>

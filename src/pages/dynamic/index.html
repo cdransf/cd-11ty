@@ -2,6 +2,5 @@
 layout: default
 permalink: /
 ---
-{% render "partials/home/status.liquid" status:status, music:music, books:books.all, tv:tv %}
-{% render "partials/home/posts.liquid" icon: "pencil-star", title: "Featured", postData:posts, postType: "featured" %}
-{% render "partials/home/posts.liquid" icon: "clock", title: "Recent posts", postData:posts %}
+{% render "partials/home/status.liquid" music:music, books:books.all, tv:tv, movies:movies, links:links %}
+{% render "partials/home/recent-posts.liquid" posts:posts %}

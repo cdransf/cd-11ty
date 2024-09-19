@@ -8,8 +8,13 @@ permalink: "{{ post.slug }}/index.html"
 schema: blog
 ---
 <article class="standalone">
-  <time datetime="{{ post.date }}">{{ post.date | date: "%B %e, %Y" }}</time>
-  <h3>{{ post.title }}</h3>
+  <time datetime="{{ post.date }}">
+    {%- if post.featured -%}{% tablericon "star" "featured" %}{%- endif -%}
+    {{ post.date | date: "%B %e, %Y" }}
+  </time>
+  <h3>
+    {{ post.title }}
+  </h3>
   <div>
     {% render "partials/blocks/banners/old-post.liquid", date:post.date %}
     {%- if post.image -%}

@@ -25,36 +25,38 @@ body {
   background: var(--accent-color);
 }
 
+.books,
+.collected,
+.concerts,
+.country,
+.favorite,
+.link,
+.movies,
+.tv,
+.music,
+.posts,
+.tattoo {
+  &.books { --section-color: var(--books); }
+  &.collected { --section-color: var(--collected); }
+  &.concerts { --section-color: var(--concerts); }
+  &.country { --section-color: var(--country); }
+  &.favorite { --section-color: var(--favorite); }
+  &.link { --section-color: var(--link); }
+  &.movies, &.tv { --section-color: var(--tv); }
+  &.music { --section-color: var(--music); }
+  &.posts { --section-color: var(--posts); }
+  &.tattoo { --section-color: var(--tattoo); }
+
+  color: var(--section-color);
+
+  & svg {
+    stroke: var(--section-color);
+  }
+}
+
 p {
   margin: var(--margin-vertical-base-horizontal-zero);
   overflow: visible;
-
-  &.books,
-  &.collected,
-  &.concerts,
-  &.country,
-  &.favorite,
-  &.movies,
-  &.tv,
-  &.music,
-  &.posts,
-  &.tattoo {
-    &.books { --section-color: var(--books); }
-    &.collected { --section-color: var(--collected); }
-    &.concerts { --section-color: var(--concerts); }
-    &.country { --section-color: var(--country); }
-    &.favorite { --section-color: var(--favorite); }
-    &.movies, &.tv { --section-color: var(--tv); }
-    &.music { --section-color: var(--music); }
-    &.posts { --section-color: var(--posts); }
-    &.tattoo { --section-color: var(--tattoo); }
-
-    color: var(--section-color);
-
-    & svg {
-      stroke: var(--section-color);
-    }
-  }
 
   & a {
     text-decoration: underline;
@@ -93,7 +95,9 @@ p:not(.banner p) > svg {
 }
 
 :is(h1, h2, h3, h4, h5, h6):has(svg) {
-  gap: var(--spacing-xs)
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm)
 }
 
 strong,
@@ -130,7 +134,7 @@ a {
   &.headphones > svg { stroke: var(--music); }
   &.heart-handshake > svg { stroke: var(--webrings); }
   &.info-circle > svg { stroke: var(--about); }
-  &.link > svg { stroke: var(--links); }
+  &.link > svg { stroke: var(--link); }
   &.mail-plus > svg { stroke: var(--newsletter); }
   &.rss > svg { stroke: var(--brand-rss); }
   &.search > svg { stroke: var(--search); }
@@ -173,7 +177,7 @@ a:active,
 :is(a):has(svg) {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-sm);
 
   & svg {
     stroke: var(--accent-color);
@@ -250,7 +254,6 @@ h6 {
 }
 
 .section-header {
-  display: flex;
   margin: var(--spacing-xl) 0 var(--spacing-lg);
   line-height: var(--line-height-sm);
 
@@ -484,9 +487,16 @@ article {
   }
 
   & time {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
     color: var(--gray-dark);
     font-size: var(--font-size-sm);
+
+    & svg {
+      width: var(--sizing-svg-sm);
+      height: var(--sizing-svg-sm);
+    }
   }
 }
 
