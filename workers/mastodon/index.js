@@ -30,7 +30,7 @@ async function handleScheduledEvent(env) {
 
       if (existingPost) continue
 
-      const plainTextDescription = convert(item.description, { wordwrap: 130 })
+      const plainTextDescription = convert(item.description)
       const content = `${item.title}\n\n${plainTextDescription}\n\n${item.link}`
 
       await postToMastodon(mastodonApiUrl, accessToken, content)

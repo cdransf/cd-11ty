@@ -14,7 +14,7 @@ id = "${RSS_TO_MASTODON_KV_NAMESPACE_ID}"
 
 [env.production]
 name = "rss-to-mastodon-worker-production"
-triggers = { crons = ["0 * * * *"] }
+triggers = { crons = ["*/15 * * * *"] }
 
 [[env.production.kv_namespaces]]
 binding = "RSS_TO_MASTODON_NAMESPACE"
