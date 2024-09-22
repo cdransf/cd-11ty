@@ -2,12 +2,12 @@
 <a href="{{ movie.url }}">
   <div class="watching hero">
     <div class="meta-text">
-      <div class="header">{{ movie.title }} ({{ movie.year }})</div>
+      <div class="header">{{ movie.title }}</div>
       <div class="subheader">
-        Last watched on {{ movie.dateAdded | date: "%B %e, %Y" }}
         {%- if movie.rating -%}
-          <span class="rating">({{ movie.rating }})</span>
+          <span class="rating">{{ movie.rating }} </span>
         {%- endif -%}
+        ({{ movie.year }})
       </div>
     </div>
     <img
