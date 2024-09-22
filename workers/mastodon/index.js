@@ -3,20 +3,20 @@ import { convert } from 'html-to-text'
 
 export default {
   async scheduled(event, env, ctx) {
-    await handleScheduledEvent(env)
+    await handleMastodonPost(env)
   },
 
   async fetch(request, env, ctx) {
     if (request.method !== 'POST') return new Response('Method Not Allowed', { status: 405 })
     if (request.headers.get('x-webhook-token') !== env.WEBHOOK_SECRET) return new Response('Unauthorized', { status: 401 })
 
-    await handleScheduledEvent(env)
+    await handleMastodonPost(env)
 
     return new Response('Worker triggered by successful build.', { status: 200 })
   }
 }
 
-async function handleScheduledEvent(env) {
+async function handleMastodonPost(env) {
   const mastodonApiUrl = 'https://social.lol/api/v1/statuses'
   const accessToken = env.MASTODON_ACCESS_TOKEN
   const rssFeedUrl = 'https://coryd.dev/feeds/all'
