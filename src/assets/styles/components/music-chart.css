@@ -27,7 +27,7 @@
     }
 
     &:not(:last-of-type) {
-      margin-bottom: var(--spacing-md);
+      margin-bottom: var(--spacing-lg);
     }
 
     & .progress-bar-wrapper {

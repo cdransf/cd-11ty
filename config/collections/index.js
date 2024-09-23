@@ -32,11 +32,23 @@ export const processContent = (collection) => {
 
   const parseDate = (date) => {
     if (!date) return null
-    let parsedDate = DateTime.fromISO(date)
-    if (!parsedDate.isValid) parsedDate = DateTime.fromFormat(date, 'yyyy-MM-dd')
-    if (!parsedDate.isValid) parsedDate = DateTime.fromFormat(date, 'MM/dd/yyyy')
-    if (!parsedDate.isValid) parsedDate = DateTime.fromFormat(date, 'dd-MM-yyyy')
-    return parsedDate.isValid ? parsedDate : null
+
+    const formats = [
+      { method: 'fromISO' },
+      { method: 'fromFormat', format: 'yyyy-MM-dd' },
+      { method: 'fromFormat', format: 'MM/dd/yyyy' },
+      { method: 'fromFormat', format: 'dd-MM-yyyy' },
+    ]
+
+    for (const { method, format } of formats) {
+      const parsedDate = format
+        ? DateTime[method](date, format)
+        : DateTime[method](date)
+
+      if (parsedDate.isValid) return parsedDate
+    }
+
+    return null
   }
 
   const addSiteMapContent = (items, getTitle, getDate) => {
