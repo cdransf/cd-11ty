@@ -1,7 +1,9 @@
 import { DateTime } from 'luxon'
+import markdownIt from 'markdown-it';
 import ics from 'ics'
 
 const BASE_URL = 'https://coryd.dev'
+const md = markdownIt()
 
 const normalizeWord = (word) => {
   const wordMap = {
@@ -124,16 +126,18 @@ export const processContent = (collection) => {
 
         // set unique concert urls
         if (item?.['type'] === 'concert') content['url'] = `${item['artistUrl']}?t=${DateTime.fromISO(item['date']).toMillis()}#concerts`
+
         if (item?.['description']) {
-          content['description'] = `${item['description'].split(' ').length >= 25 ? item['description'].split(' ').slice(0, 25).join(' ') + '...' : item['description']}`
+          content['description'] = md.render(item['description'])
         } else if (item?.['notes']) {
-          content['notes'] = `${item['notes'].split(' ').length >= 25 ? item['description'].split(' ').slice(0, 25).join(' ') + '...' : item['description']}`
+          content['notes'] = md.render(item['notes'])
         } else {
           content['description'] = ''
         }
 
         const date = getDate ? parseDate(getDate(item)) : null
         if (date) content['date'] = date
+
         aggregateContent.push(content)
       })
     }
