@@ -40,7 +40,7 @@
     "html-entities": "^2.5.2",
     "html-minifier-terser": "^7.2.0",
     "html-to-text": "^9.0.5",
-    "ics": "^3.8.0",
+    "ics": "^3.8.1",
     "luxon": "^3.5.0",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
