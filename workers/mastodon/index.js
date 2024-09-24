@@ -30,7 +30,16 @@ async function handleMastodonPost(env) {
 
       if (existingPost) continue
 
-      const plainTextDescription = convert(item.description)
+      const plainTextDescription = convert(item.description, {
+        wordwrap: false,
+        selectors: [
+          { selector: 'a', options: { ignoreHref: true } },
+          { selector: 'h1', options: { uppercase: false } },
+          { selector: 'h2', options: { uppercase: false } },
+          { selector: 'h3', options: { uppercase: false } },
+          { selector: '*', format: 'block' }
+        ]
+      })
       const content = `${item.title}\n\n${plainTextDescription}\n\n${item.link}`
 
       await postToMastodon(mastodonApiUrl, accessToken, content)
