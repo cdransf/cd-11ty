@@ -53,7 +53,7 @@
     "rimraf": "^6.0.1",
     "sanitize-html": "^2.13.0",
     "slugify": "^1.6.6",
-    "terser": "^5.33.0",
+    "terser": "^5.34.0",
     "truncate-html": "^1.1.2"
   }
 }
