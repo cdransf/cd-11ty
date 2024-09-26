@@ -30,6 +30,9 @@ async function handleMastodonPost(env) {
 
       if (existingPost) continue
 
+      const title = item.title
+      const link = item.link
+      const maxLength = 500
       const plainTextDescription = convert(item.description, {
         wordwrap: false,
         selectors: [
@@ -40,12 +43,12 @@ async function handleMastodonPost(env) {
           { selector: '*', format: 'block' }
         ]
       })
-      const content = `${item.title}\n\n${plainTextDescription}\n\n${item.link}`
+
+      const content = truncateContent(title, plainTextDescription, link, maxLength)
 
       await postToMastodon(mastodonApiUrl, accessToken, content)
 
       const timestamp = new Date().toISOString()
-
       await env.RSS_TO_MASTODON_NAMESPACE.put(item.link, timestamp)
 
       console.log(`Posted stored URL: ${item.link}`)
@@ -55,6 +58,16 @@ async function handleMastodonPost(env) {
   } catch (error) {
     console.error('Error in scheduled event:', error)
   }
+}
+
+function truncateContent(title, description, link, maxLength) {
+  const baseLength = `${title}\n\n${link}`.length
+  const availableSpace = maxLength - baseLength - 4
+  let truncatedDescription = description
+
+  if (description.length > availableSpace) truncatedDescription = description.substring(0, availableSpace).split(' ').slice(0, -1).join(' ') + '...'
+
+  return `${title}\n\n${truncatedDescription}\n\n${link}`
 }
 
 async function fetchRSSFeed(rssFeedUrl) {
