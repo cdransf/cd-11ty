@@ -1,6 +1,6 @@
 code,
 pre {
-  color: var(--blue-200);
+  color: var(--blue-100);
   background: none;
   border-radius: var(--border-radius-slight);
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
@@ -28,8 +28,8 @@ pre {
 
 pre,
 :not(pre) > code {
-  background: var(--gray-1000);
-  border: 1px solid var(--gray-200);
+  background: var(--gray-900);
+  border: 1px solid var(--gray-300);
 }
 
 .namespace {
@@ -46,11 +46,11 @@ pre,
   &.prolog,
   &.doctype,
   &.cdata {
-    color: var(--gray-600);
+    color: var(--gray-500);
   }
 
   &.punctuation {
-    color: var(--gray-200);
+    color: var(--gray-300);
   }
 
   &.property,
@@ -58,12 +58,12 @@ pre,
   &.constant,
   &.symbol,
   &.deleted {
-    color: var(--blue-500);
+    color: var(--blue-300);
   }
 
   &.boolean,
   &.number {
-    color: var(--blue-700);
+    color: var(--blue-500);
   }
 
   &.selector,

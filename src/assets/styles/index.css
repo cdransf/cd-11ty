@@ -4,6 +4,7 @@
 @import url('./reset.css') layer(reset);
 
 /* core defaults */
+@import url('./defaults/fonts.css') layer(defaults);
 @import url('./defaults/vars.css') layer(defaults);
 
  /* base styles */
