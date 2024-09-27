@@ -44,11 +44,13 @@ async function handleMastodonPost(env) {
         ]
       })
 
-      const content = truncateContent(title, plainTextDescription, link, maxLength)
+      const cleanedDescription = plainTextDescription.replace(/\s+/g, ' ').trim()
+      const content = truncateContent(title, cleanedDescription, link, maxLength)
 
       await postToMastodon(mastodonApiUrl, accessToken, content)
 
       const timestamp = new Date().toISOString()
+
       await env.RSS_TO_MASTODON_NAMESPACE.put(item.link, timestamp)
 
       console.log(`Posted stored URL: ${item.link}`)
