@@ -58,7 +58,7 @@ export default {
       } else if (type === 'album-release') {
         let sanitizedDescription = sanitizeHtml(md.render(description || ''))
         let truncatedDescription = truncate(sanitizedDescription, { length: 500, reserveLastWord: true, ellipsis: '...' })
-        if (sanitizedDescription.length > 500) truncatedDescription += ` <a href="${artist?.url}">Read more about ${artist?.name}</a>`
+        if (sanitizedDescription.length > 500) truncatedDescription += ` <p><a href="${artist?.url}">Read more about ${artist?.name}</a></p>`
         processedEntry.excerpt = truncatedDescription
       } else if (slug && content) {
         processedEntry.excerpt = sanitizeHtml(md.render(content) + feedNote, { disallowedTagsMode: 'completelyDiscard' })
