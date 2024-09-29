@@ -40,6 +40,9 @@
 /feeds/books.json
   Content-Type: application/json
 
+/api/search
+  Content-Type: application/json
+
 /.well-known/webfinger
   Content-Type: application/jrd+json; charset=utf-8
 

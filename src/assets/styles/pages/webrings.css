@@ -6,6 +6,10 @@
   text-align: center;
   margin: var(--margin-vertical-base-horizontal-zero);
 
+  & p {
+    margin: 0;
+  }
+
   & .webring-navigation {
     display: flex;
     align-items: center;
