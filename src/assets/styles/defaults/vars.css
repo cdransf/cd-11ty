@@ -1,11 +1,11 @@
 :root {
   /* colors */
-  --blue-100: #c5d8ff;
-  --blue-200: #7aa6ff;
-  --blue-300: #4b88ff;
-  --blue-400: #3168e9;
-  --blue-500: #2458d4;
-  --blue-600: #1d4bac;
+  --blue-100: #a2c4ff;
+  --blue-200: #6b9eff;
+  --blue-300: #4a78ff;
+  --blue-400: #3364ff;
+  --blue-500: #2553e6;
+  --blue-600: #1e42c7;
 
   --gray-100: #f6f7f8;
   --gray-200: #eceef1;
@@ -26,8 +26,8 @@
   --gray-dark: var(--gray-800);
 
   /* base theme */
-  --color-lightest: var(--gray-100);
-  --color-darkest: var(--gray-900);
+  --color-lightest: var(--white);
+  --color-darkest: var(--black);
   --text-color: var(--color-darkest);
   --background-color: var(--color-lightest);
   --text-color-inverted: var(--color-lightest);
@@ -46,25 +46,44 @@
   --brand-buy-me-a-coffee: #40dca5;
   --brand-rss: #f26522;
 
-  --article: #008080;
-  --about: #ff6347;
-  --books: #32cd32;
-  --collected: #b5651d;
-  --concerts: #e75480;
-  --country: #20b2aa;
-  --error: #d92525;
-  --favorite: #ff69b4;
-  --link: #9370db;
   --moon: #6a5acd;
-  --music: #1e90ff;
-  --newsletter: #40e0d0;
-  --now: #ff1493;
-  --search: #4682b4;
   --sun: #ffa500;
-  --tattoo: #b22222;
-  --tv: #ff4500;
-  --warning: #ff8c00;
-  --webrings: #da70d6;
+
+  --article: #007272;
+  --about: #e4513a;
+  --books: #1a7b1a;
+  --collected: #9a501a;
+  --concerts: #cb426e;
+  --country: #1a908d;
+  --error: #b81f1f;
+  --favorite: #cc5490;
+  --link: #7b5cba;
+  --music: #1565c3;
+  --newsletter: #37b0b0;
+  --now: #cc1076;
+  --search: #3a6b94;
+  --tattoo: #951b1b;
+  --tv: #cc3600;
+  --warning: #cc6f00;
+  --webrings: #b054b0;
+
+  --article-dark: #00ffff;
+  --about-dark: #ff967d;
+  --books-dark: #6fff6f;
+  --collected-dark: #ffae73;
+  --concerts-dark: #ff82aa;
+  --country-dark: #80dcdc;
+  --error-dark: #ff8b8b;
+  --favorite-dark: #ff9ccd;
+  --link-dark: #e2b8ff;
+  --music-dark: #99ccff;
+  --newsletter-dark: #91fffa;
+  --now-dark: #ff82d5;
+  --search-dark: #a0b8d9;
+  --tattoo-dark: #ff7373;
+  --tv-dark: #ff8f66;
+  --warning-dark: #ffbf66;
+  --webrings-dark: #ffb3ff;
 
   /* borders */
   --border-default: 1px solid var(--accent-color);
@@ -152,20 +171,54 @@
   --gray-lighter: var(--gray-200);
   --gray-dark: var(--gray-800);
   --brand-github: var(--brand-github-light);
+  --article: #007272;
+  --about: #e4513a;
+  --books: #1a7b1a;
+  --collected: #9a501a;
+  --concerts: #cb426e;
+  --country: #1a908d;
+  --error: #b81f1f;
+  --favorite: #cc5490;
+  --link: #7b5cba;
+  --music: #1565c3;
+  --newsletter: #37b0b0;
+  --now: #cc1076;
+  --search: #3a6b94;
+  --tattoo: #951b1b;
+  --tv: #cc3600;
+  --warning: #cc6f00;
+  --webrings: #b054b0;
 }
 
 /* dark theme */
 :root[data-theme="dark"] {
   --text-color: var(--color-lightest);
-    --background-color: var(--color-darkest);
-    --text-color-inverted: var(--color-darkest);
-    --background-color-inverted: var(--color-lightest);
-    --accent-color: var(--blue-200);
-    --accent-color-hover: var(--blue-100);
-    --gray-light: var(--gray-600);
-    --gray-lighter: var(--gray-700);
-    --gray-dark: var(--gray-300);
-    --brand-github: var(--brand-github-dark);
+  --background-color: var(--color-darkest);
+  --text-color-inverted: var(--color-darkest);
+  --background-color-inverted: var(--color-lightest);
+  --accent-color: var(--blue-200);
+  --accent-color-hover: var(--blue-100);
+  --gray-light: var(--gray-600);
+  --gray-lighter: var(--gray-700);
+  --gray-dark: var(--gray-300);
+  --brand-github: var(--brand-github-dark);
+  --article: var(--article-dark);
+  --about: var(--about-dark);
+  --books: var(--books-dark);
+  --collected: var(--collected-dark);
+  --concerts: var(--concerts-dark);
+  --country: var(--country-dark);
+  --error: var(--error-dark);
+  --favorite: var(--favorite-dark);
+  --link: var(--link-dark);
+  --music: var(--music-dark);
+  --newsletter: var(--newsletter-dark);
+  --now: var(--now-dark);
+  --search: var(--search-dark);
+  --tattoo: var(--tattoo-dark);
+  --tv: var(--tv-dark);
+  --warning: var(--warning-dark);
+  --webrings: var(--webrings-dark);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -180,5 +233,22 @@
     --gray-lighter: var(--gray-700);
     --gray-dark: var(--gray-300);
     --brand-github: var(--brand-github-dark);
+    --article: var(--article-dark);
+    --about: var(--about-dark);
+    --books: var(--books-dark);
+    --collected: var(--collected-dark);
+    --concerts: var(--concerts-dark);
+    --country: var(--country-dark);
+    --error: var(--error-dark);
+    --favorite: var(--favorite-dark);
+    --link: var(--link-dark);
+    --music: var(--music-dark);
+    --newsletter: var(--newsletter-dark);
+    --now: var(--now-dark);
+    --search: var(--search-dark);
+    --tattoo: var(--tattoo-dark);
+    --tv: var(--tv-dark);
+    --warning: var(--warning-dark);
+    --webrings: var(--webrings-dark);
   }
 }

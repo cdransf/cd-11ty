@@ -38,7 +38,7 @@ pre,
 
 .language-css .token.string,
 .style .token.string {
-  color: #3498db;
+  color: #99ccff;
 }
 
 .token {
@@ -58,12 +58,12 @@ pre,
   &.constant,
   &.symbol,
   &.deleted {
-    color: var(--blue-300);
+    color: var(--blue-200);
   }
 
   &.boolean,
   &.number {
-    color: var(--blue-500);
+    color: var(--blue-400);
   }
 
   &.selector,
@@ -72,30 +72,30 @@ pre,
   &.char,
   &.builtin,
   &.inserted {
-    color: #2ecc71;
+    color: #6fff6f;
   }
 
   &.operator,
   &.entity,
   &.url,
   &.variable {
-    color: #3498db;
+    color: #99ccff;
   }
 
   &.atrule,
   &.attr-value,
   &.function,
   &.class-name {
-    color: #e67e22;
+    color: #ff8f66;
   }
 
   &.keyword {
-    color: #1abc9c;
+    color: #00ffff;
   }
 
   &.regex,
   &.important {
-    color: #e74c3c;
+    color: #ff7373;
   }
 
   &.italic {
