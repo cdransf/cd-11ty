@@ -1,21 +1,22 @@
-import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
-import tablerIcons from '@cdransf/eleventy-plugin-tabler-icons'
+import { createRequire } from 'module'
+import dotenvFlow from 'dotenv-flow'
+import filters from './config/filters/index.js'
+import htmlmin from 'html-minifier-terser'
 import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItFootnote from 'markdown-it-footnote'
-import htmlmin from 'html-minifier-terser'
-import filters from './config/filters/index.js'
+import markdownItPrism from 'markdown-it-prism'
+import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
+import tablerIcons from '@cdransf/eleventy-plugin-tabler-icons'
 import { copyErrorPages, minifyJsComponents } from './config/events/index.js'
 import { processContent, albumReleasesCalendar } from './config/collections/index.js'
 import { cssConfig } from './config/plugins/css-config.js'
 import { DateTime } from 'luxon'
 
 // load .env
-import dotenvFlow from 'dotenv-flow'
 dotenvFlow.config()
 
 // get app version
-import { createRequire } from 'module'
 const require = createRequire(import.meta.url)
 const appVersion = require('./package.json').version
 
@@ -75,6 +76,7 @@ export default async function (eleventyConfig) {
     }),
   })
   md.use(markdownItFootnote)
+  md.use(markdownItPrism)
   eleventyConfig.setLibrary('md', md)
 
   // filters
