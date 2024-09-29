@@ -49,23 +49,23 @@
   --moon: #6a5acd;
   --sun: #ffa500;
 
-  --article: #007272;
-  --about: #e4513a;
-  --books: #1a7b1a;
-  --collected: #9a501a;
-  --concerts: #cb426e;
-  --country: #1a908d;
-  --error: #b81f1f;
-  --favorite: #cc5490;
-  --link: #7b5cba;
-  --music: #1565c3;
-  --newsletter: #37b0b0;
-  --now: #cc1076;
-  --search: #3a6b94;
-  --tattoo: #951b1b;
-  --tv: #cc3600;
-  --warning: #cc6f00;
-  --webrings: #b054b0;
+  --article-light: #007272;
+  --about-light: #e4513a;
+  --books-light: #1a7b1a;
+  --collected-light: #9a501a;
+  --concerts-light: #cb426e;
+  --country-light: #1a908d;
+  --error-light: #b81f1f;
+  --favorite-light: #cc5490;
+  --link-light: #7b5cba;
+  --music-light: #1565c3;
+  --newsletter-light: #37b0b0;
+  --now-light: #cc1076;
+  --search-light: #3a6b94;
+  --tattoo-light: #951b1b;
+  --tv-light: #cc3600;
+  --warning-light: #cc6f00;
+  --webrings-light: #b054b0;
 
   --article-dark: #00ffff;
   --about-dark: #ff967d;
@@ -84,6 +84,24 @@
   --tv-dark: #ff8f66;
   --warning-dark: #ffbf66;
   --webrings-dark: #ffb3ff;
+
+  --article: var(--article-light);
+  --about: var(--about-light);
+  --books: var(--books-light);
+  --collected: var(--collected-light);
+  --concerts: var(--concerts-light);
+  --country: var(--country-light);
+  --error: var(--error-light);
+  --favorite: var(--favorite-light);
+  --link: var(--link-light);
+  --music: var(--music-light);
+  --newsletter: var(--newsletter-light);
+  --now: var(--now-light);
+  --search: var(--search-light);
+  --tattoo: var(--tattoo-light);
+  --tv: var(--tv-light);
+  --warning: var(--warning-light);
+  --webrings: var(--webrings-light);
 
   /* borders */
   --border-default: 1px solid var(--accent-color);
@@ -171,23 +189,23 @@
   --gray-lighter: var(--gray-200);
   --gray-dark: var(--gray-800);
   --brand-github: var(--brand-github-light);
-  --article: #007272;
-  --about: #e4513a;
-  --books: #1a7b1a;
-  --collected: #9a501a;
-  --concerts: #cb426e;
-  --country: #1a908d;
-  --error: #b81f1f;
-  --favorite: #cc5490;
-  --link: #7b5cba;
-  --music: #1565c3;
-  --newsletter: #37b0b0;
-  --now: #cc1076;
-  --search: #3a6b94;
-  --tattoo: #951b1b;
-  --tv: #cc3600;
-  --warning: #cc6f00;
-  --webrings: #b054b0;
+  --article: var(--article-light);
+  --about: var(--about-light);
+  --books: var(--books-light);
+  --collected: var(--collected-light);
+  --concerts: var(--concerts-light);
+  --country: var(--country-light);
+  --error: var(--error-light);
+  --favorite: var(--favorite-light);
+  --link: var(--link-light);
+  --music: var(--music-light);
+  --newsletter: var(--newsletter-light);
+  --now: var(--now-light);
+  --search: var(--search-light);
+  --tattoo: var(--tattoo-light);
+  --tv: var(--tv-light);
+  --warning: var(--warning-light);
+  --webrings: var(--webrings-light);
 }
 
 /* dark theme */
