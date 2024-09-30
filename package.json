@@ -29,7 +29,7 @@
     "youtube-video-element": "^1.1.6"
   },
   "devDependencies": {
-    "@11ty/eleventy": "v3.0.0-beta.1",
+    "@11ty/eleventy": "v3.0.0-beta.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@cdransf/eleventy-plugin-tabler-icons": "^1.17.0",
     "@supabase/supabase-js": "^2.45.4",

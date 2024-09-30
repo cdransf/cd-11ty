@@ -28,6 +28,9 @@ export default async function (eleventyConfig) {
   // quiet build output
   eleventyConfig.setQuietMode(true)
 
+  // allow missing extensions
+  eleventyConfig.configureErrorReporting({ allowMissingExtensions: true })
+
   // template options
   eleventyConfig.setLiquidOptions({
     jsTruthy: true,
