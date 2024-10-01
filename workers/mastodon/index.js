@@ -17,7 +17,7 @@ export default {
 }
 
 async function handleMastodonPost(env) {
-  const mastodonApiUrl = 'https://social.lol/api/v1/statuses'
+  const mastodonApiUrl = 'https://follow.coryd.dev/api/v1/statuses'
   const accessToken = env.MASTODON_ACCESS_TOKEN
   const rssFeedUrl = 'https://coryd.dev/feeds/all'
 
