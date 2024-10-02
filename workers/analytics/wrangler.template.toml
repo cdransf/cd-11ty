@@ -1,5 +1,5 @@
 name = "analytics-worker"
-main = "./index.js"
+main = "./index.js"  # Add this line to specify the entry point
 compatibility_date = "2023-01-01"
 
 account_id = "${CF_ACCOUNT_ID}"
@@ -8,6 +8,6 @@ workers_dev = true
 [env.production]
 name = "analytics-worker-production"
 routes = [
-  { pattern = "coryd.dev/js/script.js", zone_id = "${CF_ZONE_ID}" },
-  { pattern = "coryd.dev/js/api/send", zone_id = "${CF_ZONE_ID}" }
+  { pattern = "coryd.dev/js/*", zone_id = "${CF_ZONE_ID}" },
+  { pattern = "coryd.dev/api/event", zone_id = "${CF_ZONE_ID}" }
 ]
