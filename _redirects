@@ -51,6 +51,7 @@
 
 # 404s
 /now.html /now 301
+/contact.html /contact 301
 
 # feeds
 /feeds/posts.xml /feeds/posts 301
