@@ -9,7 +9,7 @@ permalink: "/music/tracks/three-months/{% if pagination.pageNumber > 0 %}{{ pagi
 image: music.threeMonth.artists[0].image
 schema: music
 ---
-<a class="icon-link" href="/music" title="Go back to the music index page">{% tablericon "arrow-left" "Go back to the music index page" %} Back to music</a>
+<a class="icon-link" href="/music" title="Go back to the music index page">{% tablericon "arrow-left" %} Back to music</a>
 {% if pagination.pageNumber == 0 %}
 <h2>{{ title }}</h2>
 <p>I've listened to <strong class="highlight-text">{{ music.threeMonth.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.threeMonth.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.threeMonth.totalTracks }} tracks</strong> over the last 3 months. Most of that has been {{ music.threeMonth.genres | sortByPlaysDescending: "plays" | genreStrings: "genre" | mediaLinks: "genre", 5 }}.</p>

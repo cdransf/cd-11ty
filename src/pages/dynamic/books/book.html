@@ -11,7 +11,7 @@ schema: book
 {%- capture alt -%}
   {{ book.title }}{% if book.author %} by {{ book.author }}{% endif %}
 {%- endcapture -%}
-<a class="icon-link" href="/books" title="Go back to the books index page">{% tablericon "arrow-left" "Go back to the books index page" %} Back to books</a>
+<a class="icon-link" href="/books" title="Go back to the books index page">{% tablericon "arrow-left" %} Back to books</a>
 <article class="book-focus">
   <div class="book-display">
     <img
@@ -38,10 +38,10 @@ schema: book
         <p class="sub-meta">By {{ book.author }}</p>
       {% endif %}
       {%- if book.favorite -%}
-        <p class="sub-meta favorite">{% tablericon "heart" "Favorite" %} This is one of my favorite books!</p>
+        <p class="sub-meta favorite">{% tablericon "heart" %} This is one of my favorite books!</p>
       {%- endif -%}
       {%- if book.tattoo -%}
-        <p class="sub-meta tattoo">{% tablericon "needle" "Tattoo" %} I have a tattoo inspired by this book!</p>
+        <p class="sub-meta tattoo">{% tablericon "needle" %} I have a tattoo inspired by this book!</p>
       {%- endif -%}
       {% if book.status == 'finished' %}
         <p class="sub-meta">Finished on: {{ book.date | date: "%B %e, %Y" }}</p>

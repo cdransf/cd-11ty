@@ -11,7 +11,7 @@ schema: show
   {{ show.title }} / {{ show.year }}
 {%- endcapture -%}
 {% assign lastWatched = show | getLastWatched %}
-<a class="icon-link" href="/watching" title="Go back to the watching index page">{% tablericon "arrow-left" "Go back to the watching index page" %} Back to watching</a>
+<a class="icon-link" href="/watching" title="Go back to the watching index page">{% tablericon "arrow-left" %} Back to watching</a>
 <article class="watching-focus">
   <img
     srcset="
@@ -33,13 +33,13 @@ schema: show
   <div class="watching-meta">
     <p class="title"><strong>{{ show.title }}</strong>{%- if show.year %} ({{ show.year }}){%- endif -%}</p>
     {%- if show.favorite -%}
-      <p class="sub-meta favorite">{% tablericon "heart" "Favorite" %} This is one of my favorite shows!</p>
+      <p class="sub-meta favorite">{% tablericon "heart" %} This is one of my favorite shows!</p>
     {%- endif -%}
     {%- if show.tattoo -%}
-      <p class="sub-meta tattoo">{% tablericon "needle" "Tattoo" %} I have a tattoo inspired by this show!</p>
+      <p class="sub-meta tattoo">{% tablericon "needle" %} I have a tattoo inspired by this show!</p>
     {%- endif -%}
     {%- if show.collected -%}
-      <p class="sub-meta collected">{% tablericon "circle-check" "Collection" %} This show is in my collection!</p>
+      <p class="sub-meta collected">{% tablericon "circle-check" %} This show is in my collection!</p>
     {%- endif -%}
     {%- if lastWatched -%}
       {%- capture lastWatchedText -%}

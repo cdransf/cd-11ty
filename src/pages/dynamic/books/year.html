@@ -13,7 +13,7 @@ schema: books-year
 {%- capture currentYear -%}{% currentYear %}{%- endcapture -%}
 {%- assign yearString = year.value | append: '' -%}
 {%- assign currentYearString = currentYear | append: '' -%}
-<a class="icon-link" href="/books" title="Go back to the books index page">{% tablericon "arrow-left" "Go back to the books index page" %} Back to books</a>
+<a class="icon-link" href="/books" title="Go back to the books index page">{% tablericon "arrow-left" %} Back to books</a>
 <h2>{{ year.value }} / Books</h2>
 {% if yearString == currentYearString %}
 <p>I've finished <strong class="highlight-text">{{ bookData.size }} books</strong> this year.{%- if favoriteBooks %} Among my favorites are {{ favoriteBooks }}.{%- endif -%}</p>

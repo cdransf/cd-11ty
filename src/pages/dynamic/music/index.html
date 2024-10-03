@@ -14,21 +14,21 @@ schema: music-index
 <hr />
 <h3 id="artists">
   <a class="icon-link" href="/music/artists/this-week">
-    {% tablericon "microphone-2" "Artists" %}
+    {% tablericon "microphone-2" %}
     Artists
   </a>
 </h3>
 {% render "partials/media/grid.liquid", data:music.week.artists, shape: "square", count: 8, loading: "eager" %}
 <h3 id="albums">
   <a class="icon-link" href="/music/albums/this-week">
-    {% tablericon "vinyl" "Albums" %}
+    {% tablericon "vinyl" %}
     Albums
   </a>
 </h3>
 {% render "partials/media/grid.liquid", data:music.week.albums, shape: "square", count: 8 %}
 <h3 id="tracks">
   <a class="icon-link" href="/music/tracks/this-week">
-    {% tablericon "playlist" "Tracks" %}
+    {% tablericon "playlist" %}
     Tracks
   </a>
 </h3>
@@ -46,7 +46,7 @@ schema: music-index
 </div>
 {% if albumReleases.size > 0 %}
 <h3 id="album-releases">
-  {% tablericon "calendar-time" "Anticipated albums" %}
+  {% tablericon "calendar-time" %}
   Anticipated albums
 </h3>
 {% render "partials/media/grid.liquid", data:albumReleases.upcoming, shape: "square", count: 8 %}

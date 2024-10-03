@@ -2,7 +2,7 @@
 {%- if categoryUrl | isLinkActive: page.url -%}
   <span class="active {{ class }}" aria-current="page">
     {%- if icon -%}
-      {% tablericon icon title %}
+      {% tablericon icon %}
       <span>{{ title }}</span>
     {%- else -%}
       {{ title }}
@@ -11,7 +11,7 @@
 {%- else -%}
   <a class="{% if icon %}{{ icon | downcase }} icon {% endif %}{{ class }}" href="{{ categoryUrl }}" rel="me">
     {%- if icon -%}
-      {% tablericon icon title %}
+      {% tablericon icon %}
       <span>{{ title }}</span>
     {%- else -%}
       {{ title }}

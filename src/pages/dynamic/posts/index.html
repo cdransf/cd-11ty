@@ -10,7 +10,7 @@ permalink: "/posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}
 {% for post in pagination.items %}
 <article>
   <div class="post-meta">
-    {%- if post.featured -%}{% tablericon "star" "featured" %}{%- endif -%}
+    {%- if post.featured -%}{% tablericon "star" %}{%- endif -%}
     <time datetime="{{ post.date }}">
       {{ post.date | date: "%B %e, %Y" }}
     </time>

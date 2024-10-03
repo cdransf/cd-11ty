@@ -14,21 +14,21 @@ schema: music-period
 <hr />
 <h3 id="artists">
   <a class="icon-link" href="/music/artists/three-months">
-    {% tablericon "microphone-2" "Artists" %}
+    {% tablericon "microphone-2" %}
     Artists
   </a>
 </h3>
 {% render "partials/media/grid.liquid", data:music.threeMonth.artists, shape: "square", count: 8, loading: "eager" %}
 <h3 id="albums">
   <a class="icon-link" href="/music/albums/three-months">
-    {% tablericon "vinyl" "Albums" %}
+    {% tablericon "vinyl" %}
     Albums
   </a>
 </h3>
 {% render "partials/media/grid.liquid", data:music.threeMonth.albums, shape: "square", count: 8 %}
 <h3 id="tracks">
   <a class="icon-link" href="/music/tracks/three-months">
-    {% tablericon "playlist" "Tracks" %}
+    {% tablericon "playlist" %}
     Tracks
   </a>
 </h3>

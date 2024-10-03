@@ -1,6 +1,6 @@
 {%- capture labelContent -%}
   {%- if icon -%}
-    {% tablericon icon label %}
+    {% tablericon icon %}
   {%- elsif label -%}
     {{ label }}
   {%- endif -%}
@@ -11,7 +11,7 @@
 <div class="modal-wrapper">
   <div class="modal-body">
     <label class="modal-close" for="{{ id }}">
-      {% tablericon "circle-x" "Close modal" %}
+      {% tablericon "circle-x" %}
     </label>
     {{ content }}
   </div>

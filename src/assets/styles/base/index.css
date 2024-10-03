@@ -224,20 +224,24 @@ hr {
 
 /* tables */
 table {
-  overflow-x: auto;
-  width: 100%;
+  display: block;
   border: var(--border-gray);
   border-radius: var(--border-radius-slight);
+  overflow-x: scroll;
   white-space: nowrap;
   caption-side: bottom;
   overscroll-behavior: none;
 }
 
 table,
+tr {
+  width: 100%;
+}
+
+table,
 th,
 td {
   border-collapse: collapse;
-  width: 100%;
 }
 
 :is(th, td):not(:first-child, :last-child) {
@@ -252,9 +256,7 @@ tr:not(:last-child) {
 th,
 td {
   padding: var(--spacing-sm);
-  min-width: max-content;
   word-break: break-word;
-  width: 100%;
 
   &:first-child {
     position: sticky;
@@ -276,23 +278,36 @@ td {
   }
 }
 
+th {
+  font-weight: var(--font-weight-bold);
+  background-color: var(--gray-lighter);
+  text-align: left;
+}
+
+th:first-child,
+td:first-child {
+  position: sticky;
+  left: 0;
+  white-space: nowrap;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 td {
   min-width: calc(var(--spacing-3xl) * 2);
+  white-space: nowrap;
+  overflow: hidden;
 
   &:first-child {
-    background-color: var(--background-color);
+    background: var(--background-color);
+    width: 100%;
   }
 }
 
 td:first-of-type,
 :where(thead, tfoot) th:nth-child(2) {
-	border-inline-start: none;
-}
-
-th {
-  font-weight: var(--font-weight-bold);
-  background-color: var(--gray-lighter);
-  text-align: left;
+  border-inline-start: none;
 }
 
 /* header */

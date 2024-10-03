@@ -2,14 +2,14 @@
 <nav aria-label="Pagination" class="pagination">
   {%- if pagination.href.previous -%}
     <a href="{{ pagination.href.previous }}" aria-label="Previous page">
-      {% tablericon "arrow-left" "Previous" %}
+      {% tablericon "arrow-left" %}
     </a>
   {%- else -%}
     <span
       class="disabled"
       aria-label="Previous page (disabled)"
       disabled>
-      {% tablericon "arrow-left" "Prevous" %}
+      {% tablericon "arrow-left" %}
     </span>
   {%- endif -%}
   <select-pagination>
@@ -26,14 +26,14 @@
   </select-pagination>
   {%- if pagination.href.next -%}
     <a href="{{ pagination.href.next }}" aria-label="Next page">
-      {% tablericon "arrow-right" "Next" %}
+      {% tablericon "arrow-right" %}
     </a>
   {%- else -%}
     <span
       class="disabled"
       aria-label="Next page (disabled)"
       disabled>
-      {% tablericon "arrow-right" "Next" %}
+      {% tablericon "arrow-right" %}
     </span>
   {%- endif -%}
 </nav>

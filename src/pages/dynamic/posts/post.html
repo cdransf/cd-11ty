@@ -9,7 +9,7 @@ schema: blog
 ---
 <article class="standalone">
   <div class="post-meta">
-    {%- if post.featured -%}{% tablericon "star" "featured" %}{%- endif -%}
+    {%- if post.featured -%}{% tablericon "star" %}{%- endif -%}
     <time datetime="{{ post.date }}">
       {{ post.date | date: "%B %e, %Y" }}
     </time>
