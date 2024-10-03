@@ -1,3 +1,18 @@
+# 404s
+/now.html /now 301
+/contact.html /contact 301
+
+# feeds
+/feeds/posts.xml /feeds/posts 301
+/feeds/links.xml /feeds/links 301
+/feeds/books.xml /feeds/books 301
+/feeds/movies.xml /feeds/movies 301
+/feeds/all.xml /feeds/all 301
+
+# general
+/articles/ /posts/ 301
+/tags /search 301
+
 # blog posts
 /blog/fixing-safari-icloud-syncing  /posts/2022/fixing-safari-icloud-syncing/ 301
 /blog/migrating-to-fastmail /posts/2022/migrating-to-fastmail/ 301
@@ -45,21 +60,3 @@
 /blog/digital-privacy-tools /posts/2021/digital-privacy-tools/ 301
 /posts/2023/now-page-update-matter-favorites/ /posts/2023/now-page-update-favorite-articles-from-matter/ 301
 /posts/2023/now-playing-eleventy-netlify-edge-functions-emoji/ /posts/2023/displaying-now-playing-data-with-matching-emoji-using-netlify-edge-functions-and-eleventy/ 301
-
-# media
-/watching/movies/999999/ /watching/movies/942199/ 301
-
-# 404s
-/now.html /now 301
-/contact.html /contact 301
-
-# feeds
-/feeds/posts.xml /feeds/posts 301
-/feeds/links.xml /feeds/links 301
-/feeds/books.xml /feeds/books 301
-/feeds/movies.xml /feeds/movies 301
-/feeds/all.xml /feeds/all 301
-
-# general
-/articles/ /posts/ 301
-/tags /search 301
