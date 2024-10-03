@@ -1,4 +1,5 @@
 {%- assign categoryUrl = url | downcase -%}
+{%- assign isHttp = categoryUrl contains "http" -%}
 {%- if categoryUrl | isLinkActive: page.url -%}
   <span class="active {{ class }}" aria-current="page">
     {%- if icon -%}
@@ -9,7 +10,7 @@
     {%- endif -%}
   </span>
 {%- else -%}
-  <a class="{% if icon %}{{ icon | downcase }} icon {% endif %}{{ class }}" href="{{ categoryUrl }}" rel="me" aria-label="{{ title }}">
+  <a class="{% if icon %}{{ icon | downcase }} icon {% endif %}{{ class }}" href="{{ categoryUrl }}" {%- if isHttp -%} rel="me" {%- endif -%} aria-label="{{ title }}">
     {%- if icon -%}
       {% tablericon icon %}
       <span>{{ title }}</span>
