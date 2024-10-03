@@ -65,6 +65,8 @@
 
   & table + p {
     font-size: var(--font-size-sm);
+    margin-top: var(--spacing-base);
+    margin-bottom: 0;
   }
 }
 

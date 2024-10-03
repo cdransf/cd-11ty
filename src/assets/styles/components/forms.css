@@ -28,6 +28,7 @@ form:has(+ *) {
 
 select {
   color: var(--text-color);
+  cursor: pointer;
   border: var(--border-gray);
   border-radius: var(--border-radius-slight);
   background-color: var(--background-color);

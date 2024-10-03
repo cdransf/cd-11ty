@@ -284,8 +284,7 @@ th {
   text-align: left;
 }
 
-th:first-child,
-td:first-child {
+:is(th, td):first-child {
   position: sticky;
   left: 0;
   white-space: nowrap;
