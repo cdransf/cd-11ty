@@ -173,6 +173,11 @@
   --box-shadow-text-toggle: inset 0 -120px 60px -60px var(--background-color);
   --text-shadow-default: rgba(0, 0, 0, 0.7) 0px 0px 10px;
 
+  /* modals */
+  --modal-overlay-background-light: #ffffffbf;
+  --modal-overlay-background-dark: #000000bf;
+  --modal-overlay-background: var(--modal-overlay-background-light);
+
   /* input accent color */
   accent-color: var(--accent-color);
 }
@@ -188,6 +193,7 @@
   --gray-light: var(--gray-300);
   --gray-lighter: var(--gray-200);
   --gray-dark: var(--gray-800);
+  --modal-overlay-background: var(--modal-overlay-background-light);
   --brand-github: var(--brand-github-light);
   --article: var(--article-light);
   --about: var(--about-light);
@@ -219,6 +225,7 @@
   --gray-light: var(--gray-600);
   --gray-lighter: var(--gray-700);
   --gray-dark: var(--gray-300);
+  --modal-overlay-background: var(--modal-overlay-background-dark);
   --brand-github: var(--brand-github-dark);
   --article: var(--article-dark);
   --about: var(--about-dark);
@@ -250,6 +257,7 @@
     --gray-light: var(--gray-600);
     --gray-lighter: var(--gray-700);
     --gray-dark: var(--gray-300);
+    --modal-overlay-background: var(--modal-overlay-background-dark);
     --brand-github: var(--brand-github-dark);
     --article: var(--article-dark);
     --about: var(--about-dark);
