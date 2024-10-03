@@ -54,7 +54,7 @@ schema: show
   </div>
   {% if show.review %}
   {% render "partials/blocks/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
-  <h3>My thoughts</h3>
+  <h2>My thoughts</h2>
   {{ show.review | markdown }}
   <hr />
   {% endif %}
@@ -64,7 +64,7 @@ schema: show
   {% render "partials/blocks/associated-media.liquid", movies:show.movies %}
   {% render "partials/blocks/associated-media.liquid", books:show.books %}
   {% if show.description %}
-    <h3>Overview</h3>
+    <h2>Overview</h2>
     {{ show.description | markdown }}
   {% endif %}
 </article>

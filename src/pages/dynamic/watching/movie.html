@@ -52,7 +52,7 @@ schema: movie
   </div>
   {% if movie.review %}
   {% render "partials/blocks/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
-  <h3>My thoughts</h3>
+  <h2>My thoughts</h2>
   {{ movie.review | markdown }}
   <hr />
   {% endif %}
@@ -63,7 +63,7 @@ schema: movie
   {% render "partials/blocks/associated-media.liquid", books:movie.books %}
   {% render "partials/blocks/associated-media.liquid", genres:movie.genres %}
   {% if movie.description %}
-    <h3>Overview</h3>
+    <h2>Overview</h2>
     {{ movie.description | markdown }}
   {% endif %}
 </article>

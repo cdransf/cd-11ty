@@ -18,27 +18,27 @@ body {
 }
 
 ::-moz-selection {
-  color: var(--color-lightest);
+  color: var(--text-color-inverted);
   background: var(--accent-color);
 }
 
 ::selection {
-  color: var(--color-lightest);
+  color: var(--text-color-inverted);
   background: var(--accent-color);
 }
 
 p {
   margin: var(--margin-vertical-base-horizontal-zero);
   overflow: visible;
+}
 
-  & a {
-    text-decoration: underline;
-    text-underline-offset: var(--spacing-xs);
-  }
+:is(p, ul, ol) a {
+  text-decoration: underline;
+  text-underline-offset: var(--spacing-xs);
 }
 
 .highlight-text {
-  color: var(--color-lightest);
+  color: var(--text-color-inverted);
   background-color: var(--accent-color);
   padding: var(--spacing-xs);
   border-radius: var(--border-radius-slight);

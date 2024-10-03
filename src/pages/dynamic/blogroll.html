@@ -18,16 +18,16 @@ description: These are awesome blogs that I enjoy and you may enjoy too.
     <td><a href="{{ blog.url }}">{{ blog.url | replace: "https://", "" }}</a></td>
     <td class="blog-roll-icons">
       {%- if blog.rss_feed -%}
-      <a class="rss" href="{{ blog.rss_feed }}">{% tablericon "rss" %}</a>&nbsp;
+      <a class="rss" href="{{ blog.rss_feed }}" aria-label="RSS feed for {{ blog.name }}">{% tablericon "rss" %}</a>&nbsp;
       {%- endif -%}
       {%- if blog.json_feed -%}
-      <a class="json" href="{{ blog.json_feed }}">{% tablericon "json" %}</a>&nbsp;
+      <a class="json" href="{{ blog.json_feed }}" aria-label="JSON feed for {{ blog.name }}">{% tablericon "json" %}</a>&nbsp;
       {%- endif -%}
       {%- if blog.newsletter -%}
-      <a class="mail-plus" href="{{ blog.newsletter }}">{% tablericon "mail-plus" %}</a>&nbsp;
+      <a class="mail-plus" href="{{ blog.newsletter }}" aria-label="Subscribe to {{ blog.name }}'s newsletter">{% tablericon "mail-plus" %}</a>&nbsp;
       {%- endif -%}
       {%- if blog.mastodon -%}
-      <a class="brand-mastodon" href="{{ blog.mastodon }}">{% tablericon "brand-mastodon" %}</a>&nbsp;
+      <a class="brand-mastodon" href="{{ blog.mastodon }}" aria-label="Follow {{ blog.name }} on Mastodon">{% tablericon "brand-mastodon" %}</a>&nbsp;
       {%- endif -%}
     </td>
   </tr>

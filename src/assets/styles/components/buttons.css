@@ -19,7 +19,7 @@ button,
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-base);
     white-space: nowrap;
-    color: var(--color-lightest);
+    color: var(--text-color-inverted);
     background-color: var(--accent-color);
     appearance: none;
     transition-property: border;

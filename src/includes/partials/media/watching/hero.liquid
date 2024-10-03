@@ -1,4 +1,3 @@
-{%- capture alt -%}{{ movie.title | escape }} ({{ movie.year }}){%- endcapture -%}
 <a href="{{ movie.url }}">
   <div class="watching hero">
     <div class="meta-text">
@@ -22,7 +21,6 @@
         (max-width: 1000px) 1024px,
         2048px"
       src="https://cdn.coryd.dev{{ movie.backdrop }}?class=bannerlg"
-      alt="{{ alt }}"
       loading="eager"
       decoding="async"
       width="1080"

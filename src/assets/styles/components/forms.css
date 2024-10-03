@@ -50,5 +50,9 @@ select {
 
   & li {
     margin: var(--spacing-sm) 0;
+
+    & a {
+      text-decoration: none;
+    }
   }
 }

@@ -96,10 +96,6 @@
 
     & .title {
       font-weight: var(--font-weight-bold);
-
-      &.window {
-        margin-bottom: calc(var(--spacing-sm) * -1);
-      }
     }
 
     & .title,

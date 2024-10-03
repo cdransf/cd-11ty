@@ -54,7 +54,7 @@ schema: book
   </div>
   {% if book.review %}
   {% render "partials/blocks/banners/warning.liquid", text: "There are probably spoilers after this banner — this is a warning about them." %}
-  <h3>My thoughts</h3>
+  <h2>My thoughts</h2>
   {{ book.review | markdown }}
   <hr />
   {% endif %}
@@ -65,7 +65,7 @@ schema: book
   {% render "partials/blocks/associated-media.liquid", shows:book.shows %}
   {% render "partials/blocks/associated-media.liquid", genres:book.genres %}
   {% if book.description %}
-    <h3>Overview</h3>
+    <h2>Overview</h2>
     {{ book.description | markdown }}
   {% endif %}
 </article>

@@ -63,7 +63,7 @@ schema: artist
   {% render "partials/blocks/associated-media.liquid", movies:artist.movies %}
   {% render "partials/blocks/associated-media.liquid", shows:artist.shows %}
   {%- if artist.description -%}
-  <h3>Overview</h3>
+  <h2>Overview</h2>
   <div data-toggle-content class="text-toggle-hidden">{{ artist.description | markdown }}</div>
   <button data-toggle-button>Show more</button>
   {%- endif -%}
