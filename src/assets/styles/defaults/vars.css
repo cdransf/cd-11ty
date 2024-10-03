@@ -20,8 +20,8 @@
   --white: #fff;
   --black: #000;
 
-  --gray-light: var(--gray-300);
   --gray-lighter: var(--gray-200);
+  --gray-light: var(--gray-300);
   --gray-medium: var(--gray-400);
   --gray-dark: var(--gray-800);
 
@@ -126,7 +126,7 @@
   --line-height-md: 1.5;
   --line-height-base: 2;
 
-  /* spacing */
+  /* sizing */
   --sizing-xs: .25rem;
   --sizing-sm: .5rem;
   --sizing-md: .75rem;
@@ -139,6 +139,7 @@
   --sizing-svg-sm: 18px;
   --sizing-svg-base: 24px;
 
+  /* spacing */
   --spacing-xs: var(--sizing-xs);
   --spacing-sm: var(--sizing-sm);
   --spacing-md: var(--sizing-md);
@@ -174,9 +175,9 @@
   --text-shadow-default: rgba(0, 0, 0, 0.7) 0px 0px 10px;
 
   /* modals */
-  --modal-overlay-background-light: #ffffffbf;
+  --modal-overlay-background: #ffffffbf;
   --modal-overlay-background-dark: #000000bf;
-  --modal-overlay-background: var(--modal-overlay-background-light);
+  --modal-overlay-background: var(--modal-overlay-background);
 
   /* input accent color */
   accent-color: var(--accent-color);
@@ -193,7 +194,7 @@
   --gray-light: var(--gray-300);
   --gray-lighter: var(--gray-200);
   --gray-dark: var(--gray-800);
-  --modal-overlay-background: var(--modal-overlay-background-light);
+  --modal-overlay-background: var(--modal-overlay-background);
   --brand-github: var(--brand-github-light);
   --article: var(--article-light);
   --about: var(--about-light);

@@ -20,8 +20,8 @@
     & img {
       border: var(--border-default);
       border-radius: var(--border-radius-slight);
-      height: auto;
       width: 100%;
+      height: auto;
       display: block;
       margin-top: var(--sizing-base);
     }

@@ -27,19 +27,14 @@
     max-width: calc(var(--sizing-3xl) * 4);
     height: auto;
     aspect-ratio: var(--aspect-ratio-vertical);
-    transition-property: border-color;
-    transition-timing-function: var(--transition-ease-in-out);
-    transition-duration: var(--transition-duration-default);
+    transition: border-color var(--transition-duration-default) var(--transition-ease-in-out);
   }
 
   & a:focus img,
-  & a:focus-within img {
-    border: 0
-  }
-
+  & a:focus-within img,
   & a:hover img,
   & a:active img {
-    border-color: var(--accent-color-hover)
+    border-color: var(--accent-color-hover);
   }
 
   & .book-meta {
@@ -97,8 +92,7 @@
       }
     }
 
-    & p.title,
-    & p.sub-meta {
+    & p {
       margin: 0;
     }
   }

@@ -22,7 +22,7 @@ button,
     color: var(--text-color-inverted);
     background-color: var(--accent-color);
     appearance: none;
-    transition-property: border;
+    transition: color var(--transition-duration-default) var(--transition-ease-in-out);
   }
 
   &:not(.theme-toggle, .active):hover,
@@ -31,7 +31,5 @@ button,
   &:not(.theme-toggle, .active):focus-within {
     background-color: var(--accent-color-hover);
     border-color: var(--accent-color-hover);
-    transition-timing-function: var(--transition-ease-in-out);
-    transition-duration: var(--transition-duration-default);
   }
 }

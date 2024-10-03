@@ -66,18 +66,10 @@
     }
 
     & .meta {
-      justify-content: start;
-      gap: var(--spacing-md);
-
-      @media screen and (min-width: 768px) {
-        width: calc(80% - var(--sizing-lg));
-      }
-    }
-
-    & .meta {
       display: flex;
       flex-direction: row;
       align-items: center;
+      gap: var(--spacing-md);
 
       @media screen and (min-width: 768px) {
         width: calc(75% - var(--sizing-lg));

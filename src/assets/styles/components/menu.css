@@ -3,17 +3,28 @@ menu {
   flex-direction: row;
   align-items: center;
 
-  & .menu-primary {
-    display: flex;
-    flex-direction: row;
+  .menu-primary {
+    position: absolute;
     list-style: none;
-    margin: 0;
     padding: 0;
-    gap: var(--spacing-md);
+    top: 0;
+    left: 0;
+    gap: 0;
+    margin-top: calc(var(--spacing-3xl) * 2.25);
+    flex-direction: column;
+    width: 100%;
+    z-index: 3;
 
     & > li {
-      margin: 0;
       display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      margin: 0;
+      padding: var(--spacing-sm) 0;
+      width: 100%;
+      color: var(--text-color);
+      background: var(--background-color);
 
       & a {
         text-decoration: none;
@@ -21,96 +32,46 @@ menu {
 
       & .icon > svg,
       & .active > svg {
-        display: block;
+        display: none;
       }
 
       & .icon > span,
       & .active > span {
-        display: none;
+        display: inline;
       }
     }
   }
 
-  & .menu-button-container {
-    display: none;
-    margin-left: var(--spacing-md);
-
-    & svg {
-      cursor: pointer;
-    }
-
-    &:hover svg,
-    &:focus svg,
-    &:focus-within svg,
-    &:active svg {
-      stroke: var(--accent-color-hover);
-    }
-  }
-
-  & #menu-toggle {
+  #menu-toggle {
     display: none;
 
     &:checked + .menu-button-container {
-      & .menu-closed {
+      .menu-closed {
         display: none;
       }
 
-      & .menu-open {
+      .menu-open {
         display: block;
       }
     }
 
     &:not(:checked) + .menu-button-container {
-      & .menu-closed {
+      .menu-closed {
         display: block;
       }
 
-      & .menu-open {
+      .menu-open {
         display: none;
       }
     }
-  }
 
-  @media (max-width: 768px) {
-    .menu-primary {
-      position: absolute;
-      top: 0;
-      left: 0;
-      gap: 0;
-      margin-top: calc(var(--spacing-3xl) * 2.25);
-      flex-direction: column;
-      width: 100%;
-      z-index: 3;
-
-      & > li {
-        overflow: hidden;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        padding: var(--spacing-sm) 0;
-        width: 100%;
-        color: var(--text-color);
-        background: var(--background-color);
-
-        & .icon > svg,
-        & .active > svg {
-          display: none;
-        }
-
-        & .icon > span,
-        & .active > span {
-          display: inline;
-        }
-      }
-    }
-
-    #menu-toggle ~ .menu-primary li {
+    & ~ .menu-primary li {
       height: 0;
       border: 0;
       padding: 0;
     }
 
-    #menu-toggle:checked ~ .menu-primary li {
+    &:checked ~ .menu-primary li {
       border-bottom: var(--border-gray);
       height: calc(var(--sizing-3xl) * 1.5);
 
@@ -123,11 +84,64 @@ menu {
         font-size: var(--font-size-lg);
       }
     }
+  }
+
+  .menu-button-container {
+    display: unset;
+    width: var(--sizing-svg-base);
+    height: var(--sizing-svg-base);
+
+    & svg {
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .menu-primary {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      gap: var(--spacing-md);
+      position: relative;
+      top: unset;
+      left: unset;
+      width: auto;
+    }
+
+    .menu-primary > li {
+      width: auto;
+      height: auto;
+      padding: 0;
+      background: none;
+
+      & .icon > svg,
+      & .active > svg {
+        display: block;
+      }
+
+      & .icon > span,
+      & .active > span {
+        display: none;
+      }
+    }
+
+    #menu-toggle ~ .menu-primary li {
+      height: unset;
+      border: none;
+      padding: 0;
+    }
+
+    #menu-toggle:checked ~ .menu-primary li {
+      height: unset;
+      border: none;
+
+      &:first-child {
+        border: none;
+      }
+    }
 
     .menu-button-container {
-      display: unset;
-      width: var(--sizing-svg-base);
-      height: var(--sizing-svg-base);
+      display: none;
     }
   }
 }

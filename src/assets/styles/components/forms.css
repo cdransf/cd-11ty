@@ -17,12 +17,12 @@ textarea {
   width: 100%;
 }
 
+form:has(+ *),
 label:has(input):has(+ *) input,
 input[type="text"]:has(+ *),
 input[type="email"]:has(+ *),
 input[type="search"]:has(+ *),
-textarea:has(+ *),
-form:has(+ *) {
+textarea:has(+ *) {
   margin-bottom: var(--spacing-base);
 }
 

@@ -5,11 +5,6 @@ body {
   font-family: var(--font-mono);
 }
 
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: none;
-}
-
 body {
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
@@ -17,19 +12,13 @@ body {
   word-spacing: -.05rem;
 }
 
-::-moz-selection {
-  color: var(--text-color-inverted);
-  background: var(--accent-color);
-}
-
 ::selection {
-  color: var(--text-color-inverted);
+  color: var(--color-lightest);
   background: var(--accent-color);
 }
 
 p {
   margin: var(--margin-vertical-base-horizontal-zero);
-  overflow: visible;
 }
 
 :is(p, ul, ol) a {
@@ -162,9 +151,7 @@ a:active,
 :is(.main-title, footer nav.sub-pages) a:focus,
 :is(.main-title, footer nav.sub-pages) a:active {
   color: var(--accent-color-hover);
-  transition-property: color;
-  transition-timing-function: var(--transition-ease-in-out);
-  transition-duration: var(--transition-duration-default);
+  transition: color var(--transition-duration-default) var(--transition-ease-in-out);
 }
 
 :is(
@@ -234,11 +221,6 @@ table {
 }
 
 table,
-tr {
-  width: 100%;
-}
-
-table,
 th,
 td {
   border-collapse: collapse;
@@ -261,10 +243,11 @@ td {
   &:first-child {
     position: sticky;
     left: 0;
-    border-inline-end: none;
     max-width: 200px;
-    text-overflow: ellipsis;
+    border-inline-end: none;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
 
     &::after {
       content: '';
@@ -282,15 +265,6 @@ th {
   font-weight: var(--font-weight-bold);
   background-color: var(--gray-lighter);
   text-align: left;
-}
-
-:is(th, td):first-child {
-  position: sticky;
-  left: 0;
-  white-space: nowrap;
-  max-width: 200px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 td {

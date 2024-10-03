@@ -40,7 +40,7 @@ a:active > .watching.hero::after {
       & .subheader {
         font-size: var(--font-size-sm);
         display: inline-flex;
-        gap: var(--spacing-xs)
+        gap: var(--spacing-xs);
       }
 
       & .header,
@@ -61,9 +61,7 @@ a:active > .watching.hero::after {
       height: 100%;
       border: var(--border-default);
       border-radius: var(--border-radius-slight);
-      transition-property: border-color;
-      transition-timing-function: var(--transition-ease-in-out);
-      transition-duration: var(--transition-duration-default);
+      transition: border-color var(--transition-duration-default) var(--transition-ease-in-out);
     }
   }
 
@@ -84,7 +82,7 @@ a:active > .watching.hero::after {
 
     & a:hover .item::after,
     & a:active .item::after {
-      border-color: var(--accent-color-hover)
+      border-color: var(--accent-color-hover);
     }
 
     & div {
@@ -113,14 +111,14 @@ a:active > .watching.hero::after {
           font-weight: var(--font-weight-bold);
         }
 
-        .subheader {
+        & .subheader {
           display: flex;
           align-items: center;
           gap: var(--spacing-xs);
         }
 
         & .rating {
-          font-size: calc(var(--font-size-sm) * .75);
+          font-size: calc(var(--font-size-sm) * 0.75);
         }
       }
     }
@@ -143,9 +141,7 @@ a:active > .watching.hero::after {
       height: 100%;
       border: var(--border-default);
       border-radius: var(--border-radius-slight);
-      transition-property: border-color;
-      transition-timing-function: var(--transition-ease-in-out);
-      transition-duration: var(--transition-duration-default);
+      transition: border-color var(--transition-duration-default) var(--transition-ease-in-out);
     }
   }
 }

@@ -71,7 +71,7 @@
 
   & a:hover .item::after,
   & a:active .item::after {
-    border-color: var(--accent-color-hover)
+    border-color: var(--accent-color-hover);
   }
 
   & .meta-text {

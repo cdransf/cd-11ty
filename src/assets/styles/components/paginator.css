@@ -1,27 +1,25 @@
 .pagination {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
 
-  & button {
-    background: none;
-    padding-left: 0;
-    padding-right: 0;
-  }
+.pagination button {
+  background: none;
+  padding: 0;
+}
 
-  & a {
-    display: flex;
-  }
+.pagination a {
+  display: flex;
+}
 
-  & p {
-    text-align: center;
-    margin: 0;
-  }
+.pagination p {
+  text-align: center;
+  margin: 0;
+}
 
-  & span.disabled svg[data-tablericon-name^="arrow-"] {
-    cursor: not-allowed;
-    stroke: var(--gray-medium);
-    stroke-width: var(--stroke-width-default);
-  }
+.pagination span.disabled svg[data-tablericon-name^="arrow-"] {
+  cursor: not-allowed;
+  stroke: var(--gray-medium);
+  stroke-width: var(--stroke-width-default);
 }

@@ -7,7 +7,7 @@ img + .associated-media,
 .banner + .associated-media,
 youtube-video + .associated-media {
   margin-top: var(--spacing-base);
-  border-top: var(--border-gray)
+  border-top: var(--border-gray);
 }
 
 .footnotes {
