@@ -24,9 +24,9 @@ const tagsToHashtags = (item) => {
 }
 
 export const processContent = (collection) => {
+  const siteMapContent = []
   const searchIndex = []
   const aggregateContent = []
-  const siteMapContent = []
   let id = 0
   const collectionData = collection.getAll()[0]
   const { data } = collectionData
