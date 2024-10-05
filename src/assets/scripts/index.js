@@ -67,6 +67,7 @@ window.addEventListener('load', () => {
     checkModals()
   })()
 
+  // text toggle for media pages
   ;(() => {
     const button = document.querySelector('[data-toggle-button]')
     const content = document.querySelector('[data-toggle-content]')
