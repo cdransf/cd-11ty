@@ -1,0 +1,33 @@
+---
+permalink: "/.well-known/webfinger"
+layout: null
+eleventyExcludeFromCollections: true
+---
+{
+  "subject":"acct:cory@follow.coryd.dev",
+  "aliases":[
+    "https://follow.coryd.dev/@cory",
+    "https://follow.coryd.dev/users/cory"
+  ],
+  "links":[
+    {
+      "rel":"http://webfinger.net/rel/profile-page",
+      "type":"text/html",
+      "href":"https://follow.coryd.dev/@cory"
+    },
+    {
+      "rel":"self",
+      "type":"application/activity+json",
+      "href":"https://follow.coryd.dev/users/cory"
+    },
+    {
+      "rel":"http://ostatus.org/schema/1.0/subscribe",
+      "template":"https://follow.coryd.dev/authorize_interaction?uri={uri}"
+    },
+    {
+      "rel":"http://webfinger.net/rel/avatar",
+      "type":"image/png",
+      "href":"https://cdn.coryd.dev/f7516bb2-d914-479f-91c6-1bf96f3968bf.png?class=squarebase"
+    }
+  ]
+}
