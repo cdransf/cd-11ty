@@ -14,7 +14,7 @@
     inset: 0;
     overflow-y: scroll;
     border-radius: var(--border-radius-slight);
-    padding: var(--spacing-lg) var(--spacing-2xl);
+    padding: var(--spacing-lg) var(--spacing-base);
 
     @media screen and (min-width: 768px) {
       max-height: 75%;
@@ -48,6 +48,7 @@
 .modal-toggle,
 .modal-close {
   cursor: pointer;
+  display: inline-flex;
   vertical-align: middle;
 
   & svg {

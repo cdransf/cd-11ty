@@ -5,11 +5,33 @@ body {
   font-family: var(--font-mono);
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) var(--gray-light);
+}
+
 body {
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   letter-spacing: -.025rem;
   word-spacing: -.05rem;
+}
+
+::-webkit-scrollbar {
+  width: var(--sizing-md);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: var(--border-radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color-hover);
 }
 
 ::selection {
