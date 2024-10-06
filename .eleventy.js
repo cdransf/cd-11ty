@@ -25,18 +25,12 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(tablerIcons)
   if (process.env.ELEVENTY_PRODUCTION) eleventyConfig.addPlugin(cssConfig)
 
-  // quiet build output
   eleventyConfig.setQuietMode(true)
-
-  // allow missing extensions
   eleventyConfig.configureErrorReporting({ allowMissingExtensions: true })
-
-  // template options
   eleventyConfig.setLiquidOptions({
     jsTruthy: true,
   })
 
-  // passthrough
   eleventyConfig.addPassthroughCopy('src/assets')
   eleventyConfig.addPassthroughCopy('_redirects')
   eleventyConfig.addPassthroughCopy('_headers')
@@ -56,7 +50,6 @@ export default async function (eleventyConfig) {
     'node_modules/youtube-video-element/youtube-video-element.js': 'assets/scripts/components/youtube-video-element.js'
   })
 
-  // collections
   eleventyConfig.addCollection('allContent', (collection) => {
     const { allContent } = processContent(collection)
     return allContent
@@ -82,7 +75,6 @@ export default async function (eleventyConfig) {
   md.use(markdownItPrism)
   eleventyConfig.setLibrary('md', md)
 
-  // filters
   eleventyConfig.addLiquidFilter('markdown', (content) => {
     if (!content) return
     return md.render(content)
@@ -92,7 +84,6 @@ export default async function (eleventyConfig) {
     eleventyConfig.addLiquidFilter(filterName, filters[filterName])
   })
 
-  // shortcodes
   eleventyConfig.addShortcode('appVersion', () => appVersion)
   eleventyConfig.addShortcode('currentYear', () => DateTime.now().year)
 
@@ -117,7 +108,7 @@ export default async function (eleventyConfig) {
         sortAttributes: true,
         sortClassName: true,
         useShortDoctype: true,
-        processScripts: ['application/ld+json'], // minify JSON-LD scripts
+        processScripts: ['application/ld+json'],
       })
     }
     return content
