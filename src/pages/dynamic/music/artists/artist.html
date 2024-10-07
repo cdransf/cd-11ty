@@ -76,11 +76,11 @@ schema: artist
     <ul>
       {% for concert in artist.concerts %}
         {%- capture venue -%}
-          {% if concert.venue %}
+          {% if concert.venue_name %}
             {% if concert.venue_latitude and concert.venue_longitude %}
-              <a href="https://www.openstreetmap.org/?mlat={{ concert.venue_latitude }}&mlon={{ concert.venue_longitude }}#map=18/{{ concert.venue_latitude }}/{{ concert.venue_longitude }}">{{ concert.venue | formatVenue }}</a>
+              <a href="https://www.openstreetmap.org/?mlat={{ concert.venue_latitude }}&mlon={{ concert.venue_longitude }}#map=18/{{ concert.venue_latitude }}/{{ concert.venue_longitude }}">{{ concert.venue_name | formatVenue }}</a>
             {% else %}
-              {{ concert.venue | formatVenue }}
+              {{ concert.venue_name | formatVenue }}
             {% endif %}
           {% endif %}
         {%- endcapture -%}
