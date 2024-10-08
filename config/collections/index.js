@@ -125,7 +125,7 @@ export const processContent = (collection) => {
         if (item?.['slug']) content['url'] = new URL(item['slug'], BASE_URL).toString()
 
         // set unique concert urls
-        if (item?.['type'] === 'concert') if (item?.['type'] === 'concert') content['url'] = `${item['artistUrl'] ? item['artistUrl'] : BASE_URL + '/music/concerts'}?t=${DateTime.fromISO(item['date']).toMillis()}${item['artistUrl'] ? '#concerts' : ''}`
+        if (item?.['type'] === 'concert') content['url'] = `${item['artistUrl'] ? item['artistUrl'] : BASE_URL + '/music/concerts'}?t=${DateTime.fromISO(item['date']).toMillis()}${item['artistUrl'] ? '#concerts' : ''}`
 
         if (item?.['description']) {
           content['description'] = md.render(item['description'])
