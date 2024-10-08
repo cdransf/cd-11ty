@@ -16,7 +16,7 @@ const sanitizeMediaString = (str) => {
 
 const sendEmail = async (subject, text, authHeader, maxRetries = 3) => {
   const emailData = new URLSearchParams({
-    from: 'hi@admin.coryd.dev',
+    from: '<coryd.dev> hi@admin.coryd.dev',
     to: 'hi@coryd.dev',
     subject: subject,
     text: text,
