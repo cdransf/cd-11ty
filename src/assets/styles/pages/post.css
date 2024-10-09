@@ -5,7 +5,7 @@ article.standalone .associated-media:last-of-type > hr {
 p + .associated-media,
 img + .associated-media,
 .banner + .associated-media,
-.client-side + .associated-media,
+.client-side ~ .associated-media,
 youtube-video + .associated-media {
   margin-top: var(--spacing-base);
   border-top: var(--border-gray);
@@ -24,8 +24,8 @@ youtube-video + .associated-media {
     }
   }
 
-  &:has(+ .client-side > div) {
-    border-bottom: var(--border-gray);
+  &:has(~ *) {
+    margin-bottom: var(--spacing-base);
   }
 
   & ~ youtube-video {
