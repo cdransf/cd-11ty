@@ -1,26 +1,4 @@
 import { createClient } from '@supabase/supabase-js'
-import slugify from 'slugify'
-
-const sanitizeMediaString = (str) => {
-  const sanitizedString = str.normalize('NFD').replace(/[\u0300-\u036f\u2010—\.\?\(\)\[\]\{\}]/g, '').replace(/\.{3}/g, '')
-
-  return slugify(sanitizedString, {
-    replacement: '-',
-    remove: /[#,&,+()$~%.'":*?<>{}]/g,
-    lower: true,
-  })
-}
-
-const regionNames = new Intl.DisplayNames(['en'], { type: 'region' })
-const getCountryName = (countryCode) => regionNames.of(countryCode.trim()) || countryCode.trim()
-const parseCountryField = (countryField) => {
-  if (!countryField) return null
-
-  const delimiters = /[,\/&and]+/
-  const countries = countryField.split(delimiters)
-
-  return countries.map(getCountryName).join(', ')
-}
 
 export default {
   async fetch(request, env) {
@@ -49,7 +27,7 @@ export default {
     const emoji = data.artist_emoji || genreEmoji
 
     return new Response(JSON.stringify({
-      content: `${emoji || '🎧'} ${data.track_name} by <a href="https://coryd.dev/music/artists/${sanitizeMediaString(data.artist_name)}-${sanitizeMediaString(parseCountryField(data.artist_country))}">${data.artist_name}</a>`,
+      content: `${emoji || '🎧'} ${data.track_name} by <a href="https://coryd.dev${data.url}">${data.artist_name}</a>`,
     }), { headers })
   }
 }

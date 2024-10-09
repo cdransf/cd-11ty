@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
-import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
+import { parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
@@ -26,7 +26,6 @@ const fetchAllConcerts = async () => {
         bounding_box,
         venue_notes,
         artist_name,
-        artist_mbid,
         artist_country
       `)
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
@@ -61,11 +60,9 @@ const processConcerts = (concerts) => {
     notes: concert['concert_notes'],
     artist: concert['artist'] ? {
       name: concert['artist_name'],
-      mbid: concert['artist_mbid'],
-      country: parseCountryField(concert['artist_country'])
     } : null,
     url: `/music/concerts?id=${concert['id']}`,
-    artistUrl: concert['artist'] ? `/music/artists/${sanitizeMediaString(concert['artist_name'])}-${sanitizeMediaString(parseCountryField(concert['artist_country']))}` : null
+    artistUrl: concert['artist'] ? concert['artist_url'] : null
   })).sort((a, b) => new Date(b['date']) - new Date(a['date']))
 }
 

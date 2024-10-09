@@ -1,5 +1,5 @@
 import sanitizeHtml from 'sanitize-html'
-import { shuffleArray, sanitizeMediaString } from '../utilities/index.js'
+import { shuffleArray } from '../utilities/index.js'
 
 const BASE_URL = 'https://coryd.dev'
 
@@ -12,7 +12,6 @@ export default {
   },
   formatNumber: (number) => number.toLocaleString('en-US'),
   shuffleArray,
-  sanitizeMediaString,
   sanitizeHtml: (html) => sanitizeHtml(html, {
     textFilter: (text) => text.replace(/"/g, '')
   }),

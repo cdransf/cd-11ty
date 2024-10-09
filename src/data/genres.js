@@ -1,6 +1,4 @@
 import { createClient } from '@supabase/supabase-js'
-import slugify from 'slugify'
-import { parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
@@ -14,14 +12,8 @@ const fetchGenresWithArtists = async () => {
       description,
       total_plays,
       wiki_link,
-      artists (
-        mbid,
-        name_string,
-        total_plays,
-        country,
-        description,
-        favorite
-      ),
+      url,
+      artists,
       books,
       movies,
       posts
@@ -35,30 +27,23 @@ const fetchGenresWithArtists = async () => {
 
   return data.map(genre => ({
     ...genre,
-    artists: genre['artists'].map(artist => ({
-      ...artist,
-      country: parseCountryField(artist['country'])
-    })),
-    url: `/music/genres/${slugify(genre['name'].replace('/', '-').toLowerCase())}`,
-    books: genre['books']?.[0]?.['id'] ? genre['books'].map(book => ({
+    artists: genre['artists'],
+    url: genre['url'],
+    books: genre['books'] ? genre['books'].map(book => ({
       title: book['title'],
       author: book['author'],
-      isbn: book['isbn'],
       description: book['description'],
       url: `/books/${book['isbn']}`,
     })).sort((a, b) => a['title'].localeCompare(b['title'])) : null,
-    movies: genre['movies']?.[0]?.['id'] ? genre['movies'].map(movie => ({
+    movies: genre['movies'] ? genre['movies'].map(movie => ({
       title: movie['title'],
       year: movie['year'],
-      tmdb_id: movie['tmdb_id'],
       url: `/watching/movies/${movie['tmdb_id']}`,
     })).sort((a, b) => b['year'] - a['year']) : null,
-    posts: genre['posts']?.[0]?.['id'] ? genre['posts'].map(post => ({
-      id: post['id'],
+    posts: genre['posts'] ? genre['posts'].map(post => ({
       title: post['title'],
       date: post['date'],
-      slug: post['slug'],
-      url: post['slug'],
+      url: post['url'],
     })).sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
   }))
 }

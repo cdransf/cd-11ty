@@ -1,5 +1,8 @@
 import { XMLParser } from 'fast-xml-parser'
 import { convert } from 'html-to-text'
+import { createClient } from '@supabase/supabase-js'
+
+const BASE_URL = 'https://coryd.dev'
 
 export default {
   async scheduled(event, env, ctx) {
@@ -20,6 +23,9 @@ async function handleMastodonPost(env) {
   const mastodonApiUrl = 'https://follow.coryd.dev/api/v1/statuses'
   const accessToken = env.MASTODON_ACCESS_TOKEN
   const rssFeedUrl = 'https://coryd.dev/feeds/all'
+  const supabaseUrl = env.SUPABASE_URL
+  const supabaseKey = env.SUPABASE_KEY
+  const supabase = createClient(supabaseUrl, supabaseKey)
 
   try {
     const latestItems = await fetchRSSFeed(rssFeedUrl)
@@ -47,18 +53,36 @@ async function handleMastodonPost(env) {
       const cleanedDescription = plainTextDescription.replace(/\s+/g, ' ').trim()
       const content = truncateContent(title, cleanedDescription, link, maxLength)
 
-      await postToMastodon(mastodonApiUrl, accessToken, content)
+      const mastodonPostUrl = await postToMastodon(mastodonApiUrl, accessToken, content)
 
       const timestamp = new Date().toISOString()
 
-      await env.RSS_TO_MASTODON_NAMESPACE.put(item.link, timestamp)
+      await env.RSS_TO_MASTODON_NAMESPACE.put(link, timestamp)
 
-      console.log(`Posted stored URL: ${item.link}`)
+      if (link.includes('coryd.dev/posts')) {
+        const slug = link.replace(BASE_URL, '')
+        await addMastodonUrlToPost(supabase, slug, mastodonPostUrl)
+      }
+
+      console.log(`Posted stored URL: ${link}`)
     }
 
     console.log('RSS processed successfully')
   } catch (error) {
     console.error('Error in scheduled event:', error)
+  }
+}
+
+async function addMastodonUrlToPost(supabase, slug, mastodonPostUrl) {
+  const { data, error } = await supabase
+    .from('posts')
+    .update({ mastodon_url: mastodonPostUrl })
+    .eq('slug', slug)
+
+  if (error) {
+    console.error('Error updating post:', error)
+  } else {
+    console.log(`Updated post with Mastodon URL: ${mastodonPostUrl}`)
   }
 }
 
@@ -106,5 +130,9 @@ async function postToMastodon(apiUrl, accessToken, content) {
     throw new Error(`Error posting to Mastodon: ${response.statusText} - ${errorText}`)
   }
 
+  const responseData = await response.json()
+
   console.log('Posted to Mastodon successfully.')
+
+  return responseData.url
 }

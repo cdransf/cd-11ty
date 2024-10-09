@@ -1,5 +1,4 @@
 import { createClient } from '@supabase/supabase-js'
-import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 import { DateTime } from 'luxon'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
@@ -38,7 +37,7 @@ const fetchAlbumReleases = async () => {
         total_plays: album['artist_total_plays'],
         country: album['artist_country'],
         favorite: album['artist_favorite'],
-        url: `/music/artists/${sanitizeMediaString(album['artist_name'])}-${sanitizeMediaString(parseCountryField(album['artist_country']))}`,
+        url: album['artist_url'],
       },
       title: album['name'],
       date: releaseDate.toLocaleString(DateTime.DATE_FULL),

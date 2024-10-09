@@ -1,0 +1,23 @@
+{%- if post -%}
+<script type="module" src="/assets/scripts/components/mastodon-post.js"></script>
+<template id="mastodon-post-template">
+  <blockquote data-key="content"></blockquote>
+  <dl>
+    <dt>{% tablericon "refresh" %}</dt>
+    <dd data-key="reblogs_count"></dd>
+    <dt>{% tablericon "message-circle" %}</dt>
+    <dd data-key="replies_count"></dd>
+    <dt>{% tablericon "star" %}</dt>
+    <dd data-key="favourites_count"></dd>
+  </dl>
+</template>
+<span class="client-side">
+  <div class="mastodon-post-wrapper">
+    <mastodon-post>
+      <a href="{{ post }}">
+        Discuss on Mastodon
+      </a>
+    </mastodon-post>
+  </div>
+</span>
+{%- endif -%}

@@ -1,5 +1,4 @@
 import { createClient } from '@supabase/supabase-js'
-import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
@@ -56,8 +55,7 @@ const aggregateData = (data, groupByField, groupByType, genreMapping) => {
       aggregation[key] = {
         title: item[groupByField],
         plays: 0,
-        mbid: item[groupByType]?.['mbid'] || '',
-        url: `/music/artists/${sanitizeMediaString(item['artist_name'])}-${sanitizeMediaString(parseCountryField(item['artist_country']))}`,
+        url: item['artist_url'],
         image: `/${item[groupByType]}`,
         type: groupByType === 'artist_art' ? 'artist' : groupByType === 'album_art' ? 'album' : groupByType,
         genre: genreMapping[item['artist_genres']] || ''
@@ -74,7 +72,7 @@ const buildRecents = (data) => {
   return data.map(listen => ({
     title: listen['track_name'],
     artist: listen['artist_name'],
-    url: `/music/artists/${sanitizeMediaString(listen['artist_name'])}-${sanitizeMediaString(parseCountryField(listen['artist_country']))}`,
+    url: listen['artist_url'],
     timestamp: listen['listened_at'],
     image: `/${listen['album_art']}`
   })).sort((a, b) => b.timestamp - a.timestamp)
@@ -85,8 +83,7 @@ const aggregateGenres = (data, genreMapping) => {
 
   data.forEach(item => {
     const genre = genreMapping[item['artist_genres']] || ''
-
-    if (!genreAggregation[genre]) genreAggregation[genre] = { genre, plays: 0 }
+    if (!genreAggregation[genre]) genreAggregation[genre] = { name: genre, url: item['genre_url'], plays: 0 }
     genreAggregation[genre]['plays']++
   })
   return Object.values(genreAggregation).sort((a, b) => b['plays'] - a['plays'])
@@ -99,12 +96,12 @@ export default async function () {
     artist_name,
     album_name,
     album_key,
-    artist_mbid,
     artist_art,
     artist_genres,
     artist_country,
-    album_mbid,
-    album_art
+    album_art,
+    artist_url,
+    genre_url
   `
 
   try {

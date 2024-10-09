@@ -1,6 +1,4 @@
 import { createClient } from '@supabase/supabase-js'
-import slugify from 'slugify'
-import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
@@ -71,35 +69,25 @@ const processBooks = (books) => {
       status: book['read_status'],
       progress: book['progress'],
       tags: Array.isArray(book['tags']) ? book['tags'] : book['tags']?.split(',') || [],
-      isbn: book['isbn'],
       type: 'book',
-      artists: book['artists']?.[0]?.['id'] ? book['artists'].map(artist => {
-        artist['url'] = `/music/artists/${sanitizeMediaString(artist['name'])}-${sanitizeMediaString(parseCountryField(artist['country']))}`
-        return artist
-      }).sort((a, b) => a['name'].localeCompare(b['name'])) : null,
-      movies: book['movies']?.[0]?.['id'] ? book['movies'].map(movie => {
+      artists: book['artists'] ? book['artists'].sort((a, b) => a['name'].localeCompare(b['name'])) : null,
+      movies: book['movies'] ? book['movies'].map(movie => {
         movie['url'] = `/watching/movies/${movie['tmdb_id']}`
         return movie
       }).sort((a, b) => b['year'] - a['year']) : null,
-      genres: book['genres']?.[0]?.['id'] ? book['genres'].map(genre => {
-        genre['url'] = `/music/genres/${slugify(genre['name'].replace('/', '-').toLowerCase())}`
-        return genre
-      }).sort((a, b) => a['name'].localeCompare(b['name'])) : null,
-      shows: book['shows']?.[0]?.['id'] ? book['shows'].map(show => {
+      genres: book['genres'] ? book['genres'].sort((a, b) => a['name'].localeCompare(b['name'])) : null,
+      shows: book['shows'] ? book['shows'].map(show => {
         show['url'] = `/watching/shows/${show['tmdb_id']}`
         return show
       }).sort((a, b) => b['year'] - a['year']) : null,
-      posts: book['posts']?.[0]?.['id'] ? book['posts'].map(post => ({
-        id: post['id'],
+      posts: book['posts'] ? book['posts'].map(post => ({
         title: post['title'],
         date: post['date'],
-        slug: post['slug'],
-        url: post['slug'],
+        url: post['url'],
       })).sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
-      relatedBooks: book['related_books']?.[0]?.['id'] ? book['related_books'].map(relatedBook => ({
+      relatedBooks: book['related_books'] ? book['related_books'].map(relatedBook => ({
         title: relatedBook['title'],
         author: relatedBook['author'],
-        isbn: relatedBook['isbn'],
         description: relatedBook['description'],
         url: `/books/${relatedBook['isbn']}`,
       })).sort((a, b) => a['title'].localeCompare(b['title'])) : null, // Add related books processing

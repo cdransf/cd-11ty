@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
-import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
+import { parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
@@ -15,8 +15,8 @@ const fetchAllArtists = async () => {
       .from('optimized_artists')
       .select(`
         id,
-        mbid,
         name_string,
+        url,
         tentative,
         total_plays,
         country,
@@ -51,57 +51,49 @@ const fetchAllArtists = async () => {
 
 const processArtists = (artists) => {
   return artists.map(artist => ({
-    id: artist['id'],
-    mbid: artist['mbid'],
     name: artist['name_string'],
     tentative: artist['tentative'],
     totalPlays: artist['total_plays'],
     country: parseCountryField(artist['country']),
     description: artist['description'],
     favorite: artist['favorite'],
-    genre: artist['genre'],
+    genre: {
+      name: artist['genre']['name'],
+      url: artist['genre']['url'],
+    },
     emoji: artist['emoji'],
     tattoo: artist['tattoo'],
     image: artist['art'] ? `/${artist['art']}` : '',
-    url: `/music/artists/${sanitizeMediaString(artist['name_string'])}-${sanitizeMediaString(parseCountryField(artist['country']))}`,
+    url: artist['url'],
     albums: (artist['albums'] || []).map(album => ({
-      id: album['id'],
       name: album['name'],
       releaseYear: album['release_year'],
       totalPlays: album['total_plays'],
       art: album.art ? `/${album['art']}` : ''
     })).sort((a, b) => a['release_year'] - b['release_year']),
-    concerts: artist['concerts']?.[0]?.['id'] ? artist['concerts'].sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
-    books: artist['books']?.[0]?.['id'] ? artist['books'].map(book => ({
+    concerts: artist['concerts'] ? artist['concerts'].sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
+    books: artist['books'] ? artist['books'].map(book => ({
       title: book['title'],
       author: book['author'],
-      isbn: book['isbn'],
       description: book['description'],
       url: `/books/${book['isbn']}`,
     })).sort((a, b) => a['title'].localeCompare(b['title'])) : null,
-    movies: artist['movies']?.[0]?.['id'] ? artist['movies'].map(movie => ({
+    movies: artist['movies'] ? artist['movies'].map(movie => ({
       title: movie['title'],
       year: movie['year'],
-      tmdb_id: movie['tmdb_id'],
       url: `/watching/movies/${movie['tmdb_id']}`,
     })).sort((a, b) => b['year'] - a['year']) : null,
-    shows: artist['shows']?.[0]?.['id'] ? artist['shows'].map(show => ({
+    shows: artist['shows'] ? artist['shows'].map(show => ({
       title: show['title'],
       year: show['year'],
-      tmdb_id: show['tmdb_id'],
       url: `/watching/shows/${show['tmdb_id']}`,
     })).sort((a, b) => b['year'] - a['year']) : null,
-    posts: artist['posts']?.[0]?.['id'] ? artist['posts'].map(post => ({
-      id: post['id'],
+    posts: artist['posts'] ? artist['posts'].map(post => ({
       title: post['title'],
       date: post['date'],
-      slug: post['slug'],
-      url: post['slug'],
+      url: post['url'],
     })).sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
-    relatedArtists: artist['related_artists']?.[0]?.['id'] ? artist['related_artists'].map(relatedArtist => {
-      relatedArtist['url'] = `/music/artists/${sanitizeMediaString(relatedArtist['name'])}-${sanitizeMediaString(parseCountryField(relatedArtist['country']))}`
-      return relatedArtist
-    }).sort((a, b) => a['name'].localeCompare(b['name'])) : null,
+    relatedArtists: artist['related_artists'] ? artist['related_artists'].sort((a, b) => a['name'].localeCompare(b['name'])) : null,
   }))
 }
 

@@ -11,7 +11,7 @@
       </time>
     </div>
     <h3>
-      <a href="{{ post.slug }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a>
     </h3>
     {{ post.description | normalize_whitespace | markdown | truncatewords: 50 }}
   </article>

@@ -1,7 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
 import { DateTime } from 'luxon'
-import slugify from 'slugify'
-import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
@@ -71,33 +69,24 @@ const processMovies = (movies) => {
     tattoo: item['tattoo'],
     rating: item['star_rating'],
     review: item['review'],
-    id: item['tmdb_id'],
     type: 'movie',
     tags: item['tags'] ? item['tags'].split(',') : [],
-    artists: item['artists']?.[0]?.['id'] ? item['artists'].map(artist => {
-      artist['url'] = `/music/artists/${sanitizeMediaString(artist['name'])}-${sanitizeMediaString(parseCountryField(artist['country']))}`
-      return artist
-    }).sort((a, b) => a['name'].localeCompare(b['name'])) : null,
-    books: item['books']?.[0]?.['id'] ? item['books'].map(book => {
+    artists: item['artists'] ? item['artists'].sort((a, b) => a['name'].localeCompare(b['name'])) : null,
+    books: item['books'] ? item['books'].map(book => {
       book['url'] = `/books/${book['isbn']}`
       return book
     }).sort((a, b) => a['title'].localeCompare(b['title'])) : null,
-    genres: item['genres']?.[0]?.['id'] ? item['genres'].map(genre => {
-      genre['url'] = `/music/genres/${slugify(genre['name'].replace('/', '-').toLowerCase())}`
-      return genre
-    }).sort((a, b) => a['title'].localeCompare(b['title'])) : null,
-    shows: item['shows']?.[0]?.['id'] ? item['shows'].map(show => {
+    genres: item['genres'] ? item['genres'].sort((a, b) => a['title'].localeCompare(b['title'])) : null,
+    shows: item['shows'] ? item['shows'].map(show => {
       show['url'] = `/watching/shows/${show['tmdb_id']}`
       return show
     }).sort((a, b) => b['year'] - a['year']) : null,
-    posts: item['posts']?.[0]?.['id'] ? item['posts'].map(post => ({
-      id: post['id'],
+    posts: item['posts'] ? item['posts'].map(post => ({
       title: post['title'],
       date: post['date'],
-      slug: post['slug'],
-      url: post['slug'],
+      url: post['url'],
     })).sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
-    relatedMovies: item['related_movies']?.[0]?.['id'] ? item['related_movies'].map(movie => {
+    relatedMovies: item['related_movies'] ? item['related_movies'].map(movie => {
       movie['url'] = `/watching/movies/${movie['tmdb_id']}`
       return movie
     }).sort((a, b) => b['year'] - a['year']) : null,

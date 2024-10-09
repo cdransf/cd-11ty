@@ -1,5 +1,4 @@
 import { createClient } from '@supabase/supabase-js'
-import { sanitizeMediaString, parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
@@ -56,35 +55,27 @@ const prepareShowData = (show) => ({
   episodes: show['episodes'] || [],
   tattoo: show['tattoo'],
   tags: Array.isArray(show['tags']) ? show['tags'] : show['tags']?.split(',') || [],
-  movies: show['movies']?.[0]?.['id'] ? show['movies'].map(movie => {
+  movies: show['movies'] ? show['movies'].map(movie => {
     movie['url'] = `/watching/movies/${movie['tmdb_id']}`
     return movie
   }).sort((a, b) => b['year'] - a['year']) : null,
-  books: show['books']?.[0]?.['id'] ? show['books'].map(book => ({
+  books: show['books'] ? show['books'].map(book => ({
     title: book['title'],
     author: book['author'],
-    isbn: book['isbn'],
     description: book['description'],
     url: `/books/${book['isbn']}`,
   })).sort((a, b) => a['title'].localeCompare(b['title'])) : null,
-  posts: show['posts']?.[0]?.['id'] ? show['posts'].map(post => ({
-    id: post['id'],
+  posts: show['posts'] ? show['posts'].map(post => ({
     title: post['title'],
     date: post['date'],
-    slug: post['slug'],
-    url: post['slug'],
+    url: post['url'],
   })).sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
-  relatedShows: show['related_shows']?.[0]?.['id'] ? show['related_shows'].map(relatedShow => ({
-    id: relatedShow['id'],
+  relatedShows: show['related_shows'] ? show['related_shows'].map(relatedShow => ({
     title: relatedShow['title'],
     year: relatedShow['year'],
-    tmdb_id: relatedShow['tmdb_id'],
     url: `/watching/shows/${relatedShow['tmdb_id']}`,
   })).sort((a, b) => b['year'] - a['year']) : null,
-  artists: show['artists']?.[0]?.['id'] ? show['artists'].map(artist => {
-    artist['url'] = `/music/artists/${sanitizeMediaString(artist['name'])}-${sanitizeMediaString(parseCountryField(artist['country']))}`
-    return artist
-  }).sort((a, b) => a['name'].localeCompare(b['name'])) : null, // Add artists processing
+  artists: show['artists'] ? show['artists'].sort((a, b) => a['name'].localeCompare(b['name'])) : null
 })
 
 const prepareEpisodeData = (show) => show['episodes'].map(episode => ({

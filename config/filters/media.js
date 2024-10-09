@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon'
-import { shuffleArray, sanitizeMediaString } from '../utilities/index.js'
+import { shuffleArray } from '../utilities/index.js'
 
 export default {
   featuredWatching: (watching, count) => {
@@ -81,7 +81,6 @@ export default {
   },
   getLastWatched: (show) => show?.['episodes'][show['episodes']?.length - 1]?.['last_watched_at'],
   sortByPlaysDescending: (data, key) => data.sort((a, b) => b[key] - a[key]),
-  genreStrings: (genres, key) => genres.map(genre => genre[key]),
   mediaLinks: (data, type, count = 10) => {
     if (!data || !type) return ''
 
@@ -90,25 +89,17 @@ export default {
     if (dataSlice.length === 0) return null
     if (dataSlice.length === 1) {
       const item = dataSlice[0]
-      if (type === 'genre') {
-        return `<a href="/music/genres/${sanitizeMediaString(item)}">${item}</a>`
-      } else if (type === 'artist') {
-        return `<a href="/music/artists/${sanitizeMediaString(item['name_string'])}-${sanitizeMediaString(item['country'].toLowerCase())}">${item['name_string']}</a>`
+      if (type === 'genre' || type === 'artist') {
+        return `<a href="${item['url']}">${item['name']}</a>`
       } else if (type === 'book') {
-        return `<a href="/books/${item['isbn']}">${item['title']}</a>`
-      } else if (type === 'movie') {
         return `<a href="${item['url']}">${item['title']}</a>`
       }
     }
 
     const allButLast = dataSlice.slice(0, -1).map(item => {
-      if (type === 'genre') {
-        return `<a href="/music/genres/${sanitizeMediaString(item)}">${item}</a>`
-      } else if (type === 'artist') {
-        return `<a href="/music/artists/${sanitizeMediaString(item['name_string'])}-${sanitizeMediaString(item['country'].toLowerCase())}">${item['name_string']}</a>`
+      if (type === 'genre' || type === 'artist') {
+        return `<a href="${item['url']}">${item['name']}</a>`
       } else if (type === 'book') {
-        return `<a href="/books/${item['isbn']}">${item['title']}</a>`
-      } else if (type === 'movie') {
         return `<a href="${item['url']}">${item['title']}</a>`
       }
     }).join(', ')
@@ -116,15 +107,12 @@ export default {
     let last
     const lastItem = dataSlice[dataSlice.length - 1]
 
-    if (type === 'genre') {
-      last = `<a href="/music/genres/${sanitizeMediaString(lastItem)}">${lastItem}</a>`
-    } else if (type === 'artist') {
-      last = `<a href="/music/artists/${sanitizeMediaString(lastItem['name_string'])}-${sanitizeMediaString(lastItem['country'].toLowerCase())}">${lastItem['name_string']}</a>`
+    if (type === 'genre' || type === 'artist') {
+      last = `<a href="${lastItem['url']}">${lastItem['name']}</a>`
     } else if (type === 'book') {
-      last = `<a href="/books/${lastItem['isbn']}">${lastItem['title']}</a>`
-    } else if (type === 'movie') {
       last = `<a href="${lastItem['url']}">${lastItem['title']}</a>`
     }
+
     return `${allButLast} and ${last}`
   },
   formatVenue: (venue) => venue.split(',')[0].trim(),

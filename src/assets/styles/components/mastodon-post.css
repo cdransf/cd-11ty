@@ -1,0 +1,21 @@
+.mastodon-post-wrapper {
+  margin: var(--spacing-base) 0;
+  border-top: var(--border-gray);
+  padding-top: var(--sizing-base);
+
+  & dl, dt {
+    display: flex;
+  }
+
+  & dl {
+    align-items: center;
+
+    & dd {
+      margin-left:  var(--spacing-xs);;
+
+      &:not(:last-child) {
+        margin-right: var(--spacing-lg);
+      }
+    }
+  }
+}

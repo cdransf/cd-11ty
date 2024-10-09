@@ -114,6 +114,7 @@ export default {
                 mbid: null,
                 art: '4cef75db-831f-4f5d-9333-79eaa5bb55ee',
                 name: artistName,
+                slug: '/music',
                 tentative: true,
                 total_plays: 0,
               },
