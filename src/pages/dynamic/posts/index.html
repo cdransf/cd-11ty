@@ -4,7 +4,6 @@ layout: default
 pagination:
   data: posts
   size: 8
-  alias: posts
 permalink: "/posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html"
 ---
 {% for post in pagination.items %}

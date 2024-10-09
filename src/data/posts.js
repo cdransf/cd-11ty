@@ -61,7 +61,7 @@ const fetchAllPosts = async () => {
   let posts = []
   let page = 0
   let fetchMore = true
-  const uniqueSlugs = new Set()
+  const uniquePosts = new Set()
 
   while (fetchMore) {
     const { data, error } = await supabase
@@ -78,9 +78,9 @@ const fetchAllPosts = async () => {
     if (data.length < PAGE_SIZE) fetchMore = false
 
     for (const post of data) {
-      if (uniqueSlugs.has(post['slug'])) continue
+      if (uniquePosts.has(post['url'])) continue
 
-      uniqueSlugs.add(post['slug'])
+      uniquePosts.add(post['url'])
       posts.push(post)
     }
 
