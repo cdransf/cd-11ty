@@ -15,10 +15,10 @@ permalink: "/music/concerts/{% if pagination.pageNumber > 0 %}{{ pagination.page
 <ul class="concert-list">
   {%- for concert in pagination.items -%}
     {%- capture artistName -%}
-      {% if concert.artistNameString %}
-        {{ concert.artistNameString }}
+      {% if concert.artist.url %}
+        <a href="{{ concert.artist.url }}">{{ concert.artist.name }}</a>
       {% else %}
-        <a href="{{ concert.artistUrl }}">{{ concert.artist.name }}</a>
+        {{ concert.artist.name }}
       {% endif %}
     {%- endcapture -%}
     {%- capture venue -%}

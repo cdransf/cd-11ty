@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon'
-import markdownIt from 'markdown-it';
+import markdownIt from 'markdown-it'
 import ics from 'ics'
 
 const BASE_URL = 'https://coryd.dev'
@@ -28,6 +28,7 @@ export const processContent = (collection) => {
   const searchIndex = []
   const aggregateContent = []
   let id = 0
+
   const collectionData = collection.getAll()[0]
   const { data } = collectionData
   const { posts, links, movies, books, pages, artists, genres, tv, concerts, albumReleases } = data
@@ -53,41 +54,51 @@ export const processContent = (collection) => {
     return null
   }
 
+  const absoluteUrl = (url) => new URL(url, BASE_URL).toString()
+  const isValidUrl = (url) => {
+    try {
+      new URL(url)
+      return true
+    } catch {
+      return false
+    }
+  }
+
   const addSiteMapContent = (items, getTitle, getDate) => {
     const addedUrls = new Set()
 
     if (items) {
       items.forEach((item) => {
-        let url
-        if (item?.['url']) url = item['url']
-        if (item?.['permalink']) url = item['permalink']
-        if (item?.['slug']) url = item['slug']
+        let url = item?.['permalink'] || item?.['url']
+
         if (!url || addedUrls.has(url)) return
+        if (!isValidUrl(url)) url = absoluteUrl(url)
+        if (addedUrls.has(url)) return
 
         const parsedDate = getDate ? parseDate(getDate(item)) : null
         const formattedDate = parsedDate ? parsedDate.toFormat("yyyy-MM-dd'T'HH:mm:ssZZ") : null
-
         const content = {
           url,
           title: getTitle(item),
           date: formattedDate
         }
+
         siteMapContent.push(content)
         addedUrls.add(url)
       })
     }
   }
 
-  const movieData = movies['movies'].filter((movie) => movie['rating'])
-  const showData = tv['shows'].filter((show) => show['episodes']?.[0]?.['last_watched_at'])
-  const bookData = books.all.filter((book) => book['rating'])
-
   const addItemToIndex = (items, icon, getUrl, getTitle, getTags) => {
     if (items) {
       items.forEach((item) => {
+        const url = getUrl(item)
+        if (!url) return
+
+        const absoluteUrlString = isValidUrl(url) ? url : absoluteUrl(url)
         searchIndex.push({
           id,
-          url: getUrl(item),
+          url: absoluteUrlString,
           title: `${icon}: ${getTitle(item)}`,
           tags: getTags ? getTags(item) : []
         })
@@ -99,37 +110,31 @@ export const processContent = (collection) => {
   const addContent = (items, icon, getTitle, getDate) => {
     if (items) {
       items.forEach((item) => {
-        let attribution
+        let attribution = ''
         let hashTags = tagsToHashtags(item) ? ' ' + tagsToHashtags(item) : ''
         if (item['type'] === 'album-release') hashTags = ' #Music #NewMusic'
         if (item['type'] === 'concert') hashTags = ' #Music #Concert'
 
-        // link attribution if properties exist
         if (item?.['authors']?.['mastodon']) {
           const mastoUrl = new URL(item['authors']['mastodon'])
           attribution = `${mastoUrl.pathname.replace('/', '')}@${mastoUrl.host}`
-        } else if (!item?.['authors']?.['mastodon'] && item?.['authors']?.['name']) {
+        } else if (item?.['authors']?.['name']) {
           attribution = item['authors']['name']
         }
 
+        let url = item['url'] || item['link']
+        if (url && !isValidUrl(url)) url = absoluteUrl(url)
+        if (item['type'] === 'concert') url = `${item['artistUrl'] ? item['artistUrl'] : BASE_URL + '/music/concerts'}?t=${DateTime.fromISO(item['date']).toMillis()}${item['artistUrl'] ? '#concerts' : ''}`
+
         const content = {
-          url: !item['url']?.includes('http') ? `${BASE_URL}${item['url']}` : item['url'],
+          url,
           title: `${icon}: ${getTitle(item)}${attribution ? ' via ' + attribution : ''}${hashTags}`,
           type: item['type']
         }
 
-        // set url for link posts
-        if (item?.['link']) content['url'] = item?.['link']
-
-        // set url for posts - identified as slugs here
-        if (item?.['slug']) content['url'] = new URL(item['slug'], BASE_URL).toString()
-
-        // set unique concert urls
-        if (item?.['type'] === 'concert') content['url'] = `${item['artistUrl'] ? item['artistUrl'] : BASE_URL + '/music/concerts'}?t=${DateTime.fromISO(item['date']).toMillis()}${item['artistUrl'] ? '#concerts' : ''}`
-
-        if (item?.['description']) {
+        if (item['description']) {
           content['description'] = md.render(item['description'])
-        } else if (item?.['notes']) {
+        } else if (item['notes']) {
           content['notes'] = md.render(item['notes'])
         } else {
           content['description'] = ''
@@ -143,9 +148,13 @@ export const processContent = (collection) => {
     }
   }
 
-  addItemToIndex(posts, '📝', (item) => new URL(item['slug'], BASE_URL).toString(), (item) => item['title'], (item) => item['tags'])
+  const movieData = movies['movies'].filter((movie) => movie['rating'])
+  const showData = tv['shows'].filter((show) => show['episodes']?.[0]?.['last_watched_at'])
+  const bookData = books.all.filter((book) => book['rating'])
+
+  addItemToIndex(posts, '📝', (item) => item['url'], (item) => item['title'], (item) => item['tags'])
   addItemToIndex(links, '🔗', (item) => item['link'], (item) => item['title'], (item) => item['tags'])
-  addItemToIndex(artists, '🎙️', (item) => item['url'], (item) => `${item['name']} (${item['country']}) - ${item['genre']}`, (item) => `['${item['genre']}']`)
+  addItemToIndex(artists, '🎙️', (item) => item['url'], (item) => `${item['name']} (${item['country']}) - ${item['genre']['name']}`, (item) => `['${item['genre']}']`)
   addItemToIndex(genres, '🎵', (item) => item['url'], (item) => item['name'], (item) => item.artists.map(artist => artist['name_string']))
   if (movieData) addItemToIndex(movieData, '🎥', (item) => item['url'], (item) => `${item['title']} (${item['rating']})`, (item) => item['tags'])
   if (showData) addItemToIndex(showData, '📺', (item) => item['url'], (item) => `${item['title']} (${item['year']})`, (item) => item['tags'])

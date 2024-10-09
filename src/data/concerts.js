@@ -1,5 +1,4 @@
 import { createClient } from '@supabase/supabase-js'
-import { parseCountryField } from '../../config/utilities/index.js'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_KEY
@@ -16,17 +15,9 @@ const fetchAllConcerts = async () => {
       .select(`
         id,
         date,
-        artist_name_string,
-        venue,
-        concert_notes,
         artist,
-        venue_name,
-        latitude,
-        longitude,
-        bounding_box,
-        venue_notes,
-        artist_name,
-        artist_country
+        venue,
+        concert_notes
       `)
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
 
@@ -48,21 +39,20 @@ const processConcerts = (concerts) => {
     id: concert['id'],
     type: 'concert',
     date: concert['date'],
-    artistNameString: concert['artist_name_string'],
-    venue: {
-      name: concert['venue_name'],
-      latitude: concert['latitude'],
-      longitude: concert['longitude'],
-      boundingBox: concert['bounding_box'],
-      notes: concert['venue_notes']
-    },
+    artist: concert['artist'] && typeof concert['artist'] === 'object' ? {
+      name: concert['artist'].name,
+      url: concert['artist'].url
+    } : { name: concert['artist'], url: null },
+    venue: concert['venue'] && typeof concert['venue'] === 'object' ? {
+      name: concert['venue'].name,
+      latitude: concert['venue'].latitude,
+      longitude: concert['venue'].longitude,
+      notes: concert['venue'].notes
+    } : null,
     description: 'I went to (yet another) concert!',
     notes: concert['concert_notes'],
-    artist: concert['artist'] ? {
-      name: concert['artist_name'],
-    } : null,
     url: `/music/concerts?id=${concert['id']}`,
-    artistUrl: concert['artist'] ? concert['artist_url'] : null
+    artistUrl: concert['artist'] && typeof concert['artist'] === 'object' ? concert['artist'].url : null
   })).sort((a, b) => new Date(b['date']) - new Date(a['date']))
 }
 
