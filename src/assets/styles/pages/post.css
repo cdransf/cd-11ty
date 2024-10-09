@@ -26,6 +26,8 @@ youtube-video + .associated-media {
 
   &:has(~ *) {
     margin-bottom: var(--spacing-base);
+    padding-bottom: var(--spacing-base);
+    border-bottom: var(--border-gray);
   }
 
   & ~ youtube-video {
