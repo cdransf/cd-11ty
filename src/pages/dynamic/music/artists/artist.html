@@ -47,8 +47,8 @@ schema: artist
       {%- if artist.tattoo -%}
         <p class="sub-meta tattoo">{% tablericon "needle" %} I have a tattoo inspired by this artist!</p>
       {%- endif -%}
-      {%- if artist.totalPlays > 0 -%}
-        <p class="sub-meta"><strong class="highlight-text">{{ artist.totalPlays | formatNumber }} {{ playLabel }}</strong></p>
+      {%- if artist.total_plays > 0 -%}
+        <p class="sub-meta"><strong class="highlight-text">{{ artist.total_plays | formatNumber }} {{ playLabel }}</strong></p>
       {%- endif -%}
       <p class="sub-meta">
         <a href="{{ artist.genre.url }}" title="Learn more about {{ artist.genre.name | escape }}">
