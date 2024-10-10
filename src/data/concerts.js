@@ -12,13 +12,7 @@ const fetchAllConcerts = async () => {
   while (true) {
     const { data, error } = await supabase
       .from('optimized_concerts')
-      .select(`
-        id,
-        date,
-        artist,
-        venue,
-        concert_notes
-      `)
+      .select('*')
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
 
     if (error) {
@@ -36,24 +30,9 @@ const fetchAllConcerts = async () => {
 
 const processConcerts = (concerts) => {
   return concerts.map(concert => ({
-    id: concert['id'],
-    type: 'concert',
-    date: concert['date'],
-    artist: concert['artist'] && typeof concert['artist'] === 'object' ? {
-      name: concert['artist'].name,
-      url: concert['artist'].url
-    } : { name: concert['artist'], url: null },
-    venue: concert['venue'] && typeof concert['venue'] === 'object' ? {
-      name: concert['venue'].name,
-      latitude: concert['venue'].latitude,
-      longitude: concert['venue'].longitude,
-      notes: concert['venue'].notes
-    } : null,
-    description: 'I went to (yet another) concert!',
-    notes: concert['concert_notes'],
-    url: `/music/concerts?id=${concert['id']}`,
-    artistUrl: concert['artist'] && typeof concert['artist'] === 'object' ? concert['artist'].url : null
-  })).sort((a, b) => new Date(b['date']) - new Date(a['date']))
+    ...concert,
+    artist: concert.artist || { name: concert.artist_name_string, url: null },
+  }))
 }
 
 export default async function () {

@@ -1,7 +1,8 @@
+{%- assign currentYear = 'now' | date: "%Y" -%}
 {%- assign track = music.week.tracks | first -%}
 {%- assign show = tv.recentlyWatched | first -%}
 {%- assign movie = movies.recentlyWatched | first -%}
-{%- assign book = books | bookStatus: 'finished' | bookSortDescending | first -%}
+{%- assign book = books | bookFinishedYear: currentYear | first -%}
 {%- assign link = links | first -%}
 <article>
   <h2>
@@ -10,10 +11,10 @@
   </h2>
   <ul>
     <li><span class="music">Top track this week:</span> <a href="{{ track.url }}">{{ track.title }} by {{ track.artist }}</a></li>
-    <li><span class="tv">Last episode watched:</span> <strong class="highlight-text">S{{ show.season }}E{{ show.episode }}</strong> of <a href="{{ show.url }}">{{ show.name }}</a></li>
+    <li><span class="tv">Last episode watched:</span> <strong class="highlight-text">{{ show.formatted_episode }}</strong> of <a href="{{ show.url }}">{{ show.title }}</a></li>
     <li><span class="movies">Last movie watched:</span> <a href="{{ movie.url }}">{{ movie.title }}</a>{%- if movie.rating %} ({{ movie.rating }}){%- endif -%}</li>
     <li><span class="books">Last book finished:</span> <a href="{{ book.url }}">{{ book.title }}</a> by {{ book.author }}{%- if book.rating %} ({{ book.rating }}){%- endif -%}</li>
-    <li><span class="link">Last link shared:</span> <a href="{{ link.link }}">{{ link.title }}</a>{% if link.authors %} via <a href="{{ link.authors.url }}">{{ link.authors.name }}</a>{% endif %}</li>
+    <li><span class="link">Last link shared:</span> <a href="{{ link.link }}">{{ link.title }}</a>{% if link.author %} via <a href="{{ link.author.url }}">{{ link.author.name }}</a>{% endif %}</li>
   </ul>
   {% render "partials/blocks/banners/rss.liquid", url: "/feeds", text: "Subscribe to my movies, books, links or activity feed(s)" %}
 </article>

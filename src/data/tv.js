@@ -12,26 +12,7 @@ const fetchAllShows = async () => {
   while (true) {
     const { data, error } = await supabase
       .from('optimized_shows')
-      .select(`
-        id,
-        tmdb_id,
-        title,
-        year,
-        collected,
-        favorite,
-        tattoo,
-        description,
-        review,
-        art,
-        backdrop,
-        tags,
-        episodes,
-        artists,
-        books,
-        movies,
-        posts,
-        related_shows
-      `)
+      .select('*')
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
 
     if (error) {
@@ -47,136 +28,31 @@ const fetchAllShows = async () => {
   return shows
 }
 
-const prepareShowData = (show) => ({
-  ...show,
-  image: show['art'] ? `/${show['art']}` : '',
-  backdrop: show['backdrop'] ? `/${show['backdrop']}` : '',
-  url: `/watching/shows/${show['tmdb_id']}`,
-  episodes: show['episodes'] || [],
-  tattoo: show['tattoo'],
-  tags: Array.isArray(show['tags']) ? show['tags'] : show['tags']?.split(',') || [],
-  movies: show['movies'] ? show['movies'].map(movie => {
-    movie['url'] = `/watching/movies/${movie['tmdb_id']}`
-    return movie
-  }).sort((a, b) => b['year'] - a['year']) : null,
-  books: show['books'] ? show['books'].map(book => ({
-    title: book['title'],
-    author: book['author'],
-    description: book['description'],
-    url: `/books/${book['isbn']}`,
-  })).sort((a, b) => a['title'].localeCompare(b['title'])) : null,
-  posts: show['posts'] ? show['posts'].map(post => ({
-    title: post['title'],
-    date: post['date'],
-    url: post['url'],
-  })).sort((a, b) => new Date(b['date']) - new Date(a['date'])) : null,
-  relatedShows: show['related_shows'] ? show['related_shows'].map(relatedShow => ({
-    title: relatedShow['title'],
-    year: relatedShow['year'],
-    url: `/watching/shows/${relatedShow['tmdb_id']}`,
-  })).sort((a, b) => b['year'] - a['year']) : null,
-  artists: show['artists'] ? show['artists'].sort((a, b) => a['name'].localeCompare(b['name'])) : null
-})
-
-const prepareEpisodeData = (show) => show['episodes'].map(episode => ({
-  ...episode,
-  show_title: show['title'],
-  show_tmdb_id: show['tmdb_id'],
-  show_year: show['year'],
-  collected: show['collected'],
-  favorite: show['favorite'],
-  image: show['image'],
-  backdrop: show['backdrop'],
-  episode_number: episode['episode_number'],
-  season_number: episode['season_number'],
-  last_watched_at: episode['last_watched_at']
-}))
-
-const formatEpisodeData = (episodes) => {
-  const showEpisodesMap = {}
-
-  episodes.forEach(episode => {
-    const showTmdbId = episode['show_tmdb_id']
-    const showYear = episode['show_year']
-
-    if (!showEpisodesMap[showTmdbId]) {
-      showEpisodesMap[showTmdbId] = {
-        title: episode['show_title'],
-        tmdbId: showTmdbId,
-        year: showYear,
-        collected: episode['collected'],
-        favorite: episode['favorite'],
-        dateAdded: episode['last_watched_at'],
-        lastWatchedAt: episode['last_watched_at'],
-        episodes: [],
-        image: episode['image'],
-        backdrop: episode['backdrop'],
-      }
-    }
-
-    showEpisodesMap[showTmdbId].episodes.push({
-      name: episode['show_title'],
-      url: `/watching/shows/${showTmdbId}`,
-      subtext: `S${episode['season_number']}E${episode['episode_number']}`,
-      episode: episode['episode_number'],
-      season: episode['season_number'],
-      tmdbId: showTmdbId,
-      year: showYear,
-      type: 'tv',
-      dateAdded: episode['last_watched_at'],
-      lastWatchedAt: episode['last_watched_at'],
-      image: episode['image'],
-      backdrop: episode['backdrop'],
-    })
-  })
-
-  return Object.values(showEpisodesMap).sort((a, b) => new Date(b['episodes'][0]['lastWatchedAt']) - new Date(a['episodes'][0]['lastWatchedAt'])).flatMap(show => {
-    const startingEpisode = show['episodes'][show['episodes'].length - 1]['episode']
-    const startingSeason = show['episodes'][show['episodes'].length - 1]['season']
-    const endingEpisode = show['episodes'][0]['episode']
-    const endingSeason = show['episodes'][0]['season']
-
-    if (show.episodes.length > 1) {
-      return {
-        name: show['title'],
-        url: `/watching/shows/${show['tmdbId']}`,
-        subtext: `S${startingSeason}E${startingEpisode} - S${endingSeason}E${endingEpisode}`,
-        startingEpisode,
-        startingSeason,
-        episode: endingEpisode,
-        season: endingSeason,
-        tmdbId: show['tmdbId'],
-        year: show['year'],
-        collected: show['collected'],
-        favorite: show['favorite'],
-        type: 'tv-range',
-        image: show['image'],
-        backdrop: show['backdrop'],
-      }
-    } else {
-      return show['episodes'][0]
-    }
-  })
-}
-
 export default async function () {
   try {
-    const rawShows = await fetchAllShows()
-    const shows = rawShows.map(prepareShowData)
-    const episodes = shows.flatMap(prepareEpisodeData).sort((a, b) => new Date(b['last_watched_at']) - new Date(a['last_watched_at']))
-    const favoriteShows = shows.filter(show => show.favorite)
+    const shows = await fetchAllShows()
+    const watchedShows = shows.filter(show => show['last_watched_at'] !== null)
+    const episodes = watchedShows.map(show => ({
+      title: show['episode']['title'],
+      year: show['year'],
+      formatted_episode: show['episode']['formatted_episode'],
+      url: show['episode']['url'],
+      image: show['episode']['image'],
+      backdrop: show['episode']['backdrop'],
+      last_watched_at: show['episode']['last_watched_at'],
+      type: 'tv'
+    }))
 
     return {
       shows,
-      watchHistory: formatEpisodeData(episodes),
-      recentlyWatched: formatEpisodeData(episodes.slice(0, 225)),
-      favorites: formatEpisodeData(favoriteShows.flatMap(prepareEpisodeData)).sort((a, b) => a['name'].localeCompare(b['name'])),
+      recentlyWatched: episodes.slice(0, 225),
+      favorites: shows.filter(show => show.favorite).sort((a, b) => a.title.localeCompare(b.title)),
     }
   } catch (error) {
     console.error('Error fetching and processing shows data:', error)
+
     return {
       shows: [],
-      watchHistory: [],
       recentlyWatched: [],
       favorites: [],
     }

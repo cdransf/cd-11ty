@@ -1,40 +1,40 @@
 #tracks-recent,
-#tracks-window,
+#tracks-chart,
 #tracks-recent ~ .tracks-recent,
-#tracks-window ~ .tracks-window {
+#tracks-chart ~ .tracks-chart {
   display: none;
 }
 
 #tracks-recent:checked ~ .tracks-recent,
-#tracks-window:checked ~ .tracks-window {
+#tracks-chart:checked ~ .tracks-chart {
   display: block;
 }
 
 input[id="tracks-recent"] ~ .tracks-recent,
-input[id="tracks-window"] ~ .tracks-window {
+input[id="tracks-chart"] ~ .tracks-chart {
   margin-top: var(--spacing-base);
 }
 
-input[id="tracks-recent"] ~ [for="tracks-recent"]:has(+ [for="tracks-window"]) {
+input[id="tracks-recent"] ~ [for="tracks-recent"]:has(+ [for="tracks-chart"]) {
   margin-right: var(--spacing-xs);
 }
 
 #tracks-recent:checked ~ [for="tracks-recent"],
-#tracks-window:checked ~ [for="tracks-window"] {
+#tracks-chart:checked ~ [for="tracks-chart"] {
   cursor: not-allowed;
   border-color: var(--accent-color);
   background-color: var(--accent-color);
 }
 
 #tracks-recent:not(:checked) ~ [for="tracks-recent"],
-#tracks-window:not(:checked) ~ [for="tracks-window"] {
+#tracks-chart:not(:checked) ~ [for="tracks-chart"] {
   color: var(--accent-color);
   background: transparent;
 }
 
 #tracks-recent:not(:checked) ~ [for="tracks-recent"]:hover,
 #tracks-recent:not(:checked) ~ [for="tracks-recent"]:active,
-#tracks-window:not(:checked) ~ [for="tracks-window"]:hover,
-#tracks-window:not(:checked) ~ [for="tracks-window"]:active {
+#tracks-chart:not(:checked) ~ [for="tracks-chart"]:hover,
+#tracks-chart:not(:checked) ~ [for="tracks-chart"]:active {
   color: var(--accent-color-hover);
 }

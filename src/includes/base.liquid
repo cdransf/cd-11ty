@@ -47,7 +47,7 @@
   {%- assign pageDescription = description -%}
 {%- endif -%}
 
-{%- assign ogImage = 'https://cdn.coryd.dev/' | append: globals.opengraph_default -%}
+{%- assign ogImage = 'https://cdn.coryd.dev/' | append: globals.avatar | append: "?class=w800" -%}
 {%- case schema -%}
   {%- when 'music' -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: page.image -%}
@@ -61,11 +61,20 @@
   {%- when 'watching' -%}
     {%- assign featuredMovie = movies.recentlyWatched | first -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredMovie.backdrop -%}
+  {%- when 'watching-shows' -%}
+    {%- assign featuredShow = tv.recentlyWatched | first -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredShow.backdrop -%}
+  {%- when 'favorite-movies' -%}
+    {%- assign featuredMovie = movies.favorites| shuffleArray | first -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredMovie.backdrop -%}
+  {%- when 'favorite-shows' -%}
+    {%- assign featuredShow = tv.favorites | shuffleArray | first -%}
+    {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredShow.backdrop -%}
   {%- when 'books' -%}
     {%- assign featuredBook = books.all | bookStatus: 'started' | reverse | first -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredBook.image -%}
   {%- when 'books-year' -%}
-    {%- assign featuredBook = books.all | bookStatus: 'finished' | bookFinishedYear: year.value | bookSortDescending | first -%}
+    {%- assign featuredBook = books.all | bookStatus: 'finished' | bookFinishedYear: year.value | first -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredBook.image -%}
   {%- when 'book' -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: book.image -%}
@@ -95,12 +104,12 @@
     <meta property="og:url" content="{{ fullUrl }}" />
     <meta property="og:image" content="{{ ogImage }}?class=w800" />
     <meta name="theme-color" content="{{ globals.theme_color }}" />
-    <meta name="fediverse:creator" content="@cory@follow.coryd.dev" />
+    <meta name="fediverse:creator" content="{{ globals.mastodon }}" />
     <meta name="generator" content="Eleventy">
     <meta name="robots" content="noai, noimageai">
-    <link href="https://cdn.coryd.dev/{{ globals.favicon_ico }}?class=w50&v={% appVersion %}" rel="icon" sizes="any">
-    <link href="https://cdn.coryd.dev/{{ globals.favicon_svg }}?class=w50&v={% appVersion %}" rel="icon" type="image/svg+xml">
-    <link href="https://cdn.coryd.dev/{{ globals.apple_touch_icon }}?class=w200&v={% appVersion %}" rel="apple-touch-icon">
+    <link href="https://cdn.coryd.dev{{ globals.avatar_transparent }}?class=w50&v={% appVersion %}" rel="icon" sizes="any">
+    <link href="https://cdn.coryd.dev{{ globals.avatar_transparent }}?class=w50&v={% appVersion %}&type=svg" rel="icon" type="image/svg+xml">
+    <link href="https://cdn.coryd.dev{{ globals.avatar_transparent }}?class=w200&v={% appVersion %}" rel="apple-touch-icon">
     <link type="application/atom+xml" rel="alternate" title="Posts / {{ globals.site_name }}" href="https://coryd.dev/feeds/posts">
     <link rel="alternate" href="https://coryd.dev/feeds/links" title="Links / {{ globals.site_name }}" type="application/rss+xml">
     <link rel="alternate" href="https://coryd.dev/feeds/movies" title="Movies / {{ globals.site_name }}'s movies feed" type="application/rss+xml">

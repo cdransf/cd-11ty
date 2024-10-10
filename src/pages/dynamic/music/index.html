@@ -34,13 +34,13 @@ schema: music-index
 </h3>
 <div class="track-display">
   <input id="tracks-recent" name="track-options" type="radio" aria-hidden="true" checked />
-  <input id="tracks-window" name="track-options" type="radio" aria-hidden="true" />
+  <input id="tracks-chart" name="track-options" type="radio" aria-hidden="true" />
   <label for="tracks-recent" class="button" data-toggle="tracks-recent">Recent</label>
-  <label for="tracks-window" class="button" data-toggle="tracks-window">This week</label>
+  <label for="tracks-chart" class="button" data-toggle="tracks-chart">This week</label>
   <div class="tracks-recent">
     {% render "partials/media/music/recent", data:music.recent %}
   </div>
-  <div class="tracks-window">
+  <div class="tracks-chart">
     {% render "partials/media/music/chart.liquid", data:music.week.tracks, mostPlayed:music.week.tracks[0].plays, count: 10 %}
   </div>
 </div>

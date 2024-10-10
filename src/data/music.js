@@ -5,14 +5,14 @@ const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 const PAGE_SIZE = 1000
 
-const fetchDataFromView = async (viewName, fields) => {
+const fetchDataFromView = async (viewName) => {
   let rows = []
   let rangeStart = 0
 
   while (true) {
     const { data, error } = await supabase
       .from(viewName)
-      .select(fields)
+      .select('*')
       .order('listened_at', { ascending: false })
       .range(rangeStart, rangeStart + PAGE_SIZE - 1)
 
@@ -32,36 +32,40 @@ const fetchDataFromView = async (viewName, fields) => {
   return rows
 }
 
-const fetchGenreMapping = async () => {
-  const { data, error } = await supabase
-    .from('genres')
-    .select('id, name')
-
-  if (error) {
-    console.error('Error fetching genres:', error)
-    return {}
-  }
-  return data.reduce((acc, genre) => {
-    acc[genre['id']] = genre['name']
-    return acc
-  }, {})
-}
-
-const aggregateData = (data, groupByField, groupByType, genreMapping) => {
+const aggregateData = (data, groupByField, groupByType) => {
   const aggregation = {}
+
   data.forEach(item => {
     const key = item[groupByField]
     if (!aggregation[key]) {
+      let imageField = ''
+
+      switch (groupByType) {
+        case 'artist':
+          imageField = item['artist_art']
+          break
+        case 'album':
+          imageField = item['album_art']
+          break
+        case 'track':
+          imageField = item['album_art']
+          break
+        default:
+          imageField = ''
+      }
+
       aggregation[key] = {
         title: item[groupByField],
         plays: 0,
         url: item['artist_url'],
-        image: `/${item[groupByType]}`,
-        type: groupByType === 'artist_art' ? 'artist' : groupByType === 'album_art' ? 'album' : groupByType,
-        genre: genreMapping[item['artist_genres']] || ''
+        image: imageField,
+        genre: item['artist_genres'],
+        type: groupByType
       }
-      if (groupByType === 'track' || groupByType === 'album_art') aggregation[key]['artist'] = item['artist_name']
+
+      if (groupByType === 'track' || groupByType === 'album') aggregation[key]['artist'] = item['artist_name']
     }
+
     aggregation[key].plays++
   })
 
@@ -74,66 +78,62 @@ const buildRecents = (data) => {
     artist: listen['artist_name'],
     url: listen['artist_url'],
     timestamp: listen['listened_at'],
-    image: `/${listen['album_art']}`
-  })).sort((a, b) => b.timestamp - a.timestamp)
+    image: listen['album_art'],
+    type: 'track'
+  })).sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp))
 }
 
-const aggregateGenres = (data, genreMapping) => {
+const aggregateGenres = (data) => {
   const genreAggregation = {}
 
   data.forEach(item => {
-    const genre = genreMapping[item['artist_genres']] || ''
-    if (!genreAggregation[genre]) genreAggregation[genre] = { name: genre, url: item['genre_url'], plays: 0 }
+    const genre = item['genre_name'] || ''
+    const genreUrl = item['genre_url'] || ''
+
+    if (!genreAggregation[genre]) {
+      genreAggregation[genre] = {
+        name: genre,
+        url: genreUrl,
+        plays: 0,
+        type: 'genre'
+      }
+    }
+
     genreAggregation[genre]['plays']++
   })
+
   return Object.values(genreAggregation).sort((a, b) => b['plays'] - a['plays'])
 }
 
 export default async function () {
-  const selectFields = `
-    listened_at,
-    track_name,
-    artist_name,
-    album_name,
-    album_key,
-    artist_art,
-    artist_genres,
-    artist_country,
-    album_art,
-    artist_url,
-    genre_url
-  `
-
   try {
-    const genreMapping = await fetchGenreMapping()
-
     const [recentTracks, monthTracks, threeMonthTracks] = await Promise.all([
-      fetchDataFromView('recent_tracks', selectFields),
-      fetchDataFromView('month_tracks', selectFields),
-      fetchDataFromView('three_month_tracks', selectFields)
+      fetchDataFromView('recent_tracks'),
+      fetchDataFromView('month_tracks'),
+      fetchDataFromView('three_month_tracks')
     ])
 
     return {
       recent: buildRecents(recentTracks),
       week: {
-        artists: aggregateData(recentTracks, 'artist_name', 'artist_art', genreMapping),
-        albums: aggregateData(recentTracks, 'album_name', 'album_art', genreMapping),
-        tracks: aggregateData(recentTracks, 'track_name', 'track', genreMapping),
-        genres: aggregateGenres(recentTracks, genreMapping),
+        artists: aggregateData(recentTracks, 'artist_name', 'artist'),
+        albums: aggregateData(recentTracks, 'album_name', 'album'),
+        tracks: aggregateData(recentTracks, 'track_name', 'track'),
+        genres: aggregateGenres(recentTracks),
         totalTracks: recentTracks.length.toLocaleString('en-US')
       },
       month: {
-        artists: aggregateData(monthTracks, 'artist_name', 'artist_art', genreMapping),
-        albums: aggregateData(monthTracks, 'album_name', 'album_art', genreMapping),
-        tracks: aggregateData(monthTracks, 'track_name', 'track', genreMapping),
-        genres: aggregateGenres(monthTracks, genreMapping),
+        artists: aggregateData(monthTracks, 'artist_name', 'artist'),
+        albums: aggregateData(monthTracks, 'album_name', 'album'),
+        tracks: aggregateData(monthTracks, 'track_name', 'track'),
+        genres: aggregateGenres(monthTracks),
         totalTracks: monthTracks.length.toLocaleString('en-US')
       },
       threeMonth: {
-        artists: aggregateData(threeMonthTracks, 'artist_name', 'artist_art', genreMapping),
-        albums: aggregateData(threeMonthTracks, 'album_name', 'album_art', genreMapping),
-        tracks: aggregateData(threeMonthTracks, 'track_name', 'track', genreMapping),
-        genres: aggregateGenres(threeMonthTracks, genreMapping),
+        artists: aggregateData(threeMonthTracks, 'artist_name', 'artist'),
+        albums: aggregateData(threeMonthTracks, 'album_name', 'album'),
+        tracks: aggregateData(threeMonthTracks, 'track_name', 'track'),
+        genres: aggregateGenres(threeMonthTracks),
         totalTracks: threeMonthTracks.length.toLocaleString('en-US')
       }
     }

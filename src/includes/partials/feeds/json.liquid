@@ -4,12 +4,12 @@
     "home_page_url": "{{ permalink | absoluteUrl | escape }}",
     "feed_url": "{{ permalink | absoluteUrl | escape }}.json",
     "description": "{{ globals.site_description | escape }}",
-    "icon": "https://cdn.coryd.dev/{{ globals.feed_image | escape }}?class=w200&v={% appVersion %}",
-    "favicon": "https://cdn.coryd.dev/{{ globals.favicon_ico | escape }}?class=w50&v={% appVersion %}",
+    "icon": "https://cdn.coryd.dev{{ globals.avatar | escape }}?class=w200&v={% appVersion %}",
+    "favicon": "https://cdn.coryd.dev{{ globals.avatar | escape }}?class=w50&v={% appVersion %}",
     "authors": [{
       "name": "{{ globals.site_name }}",
       "url": "{{ globals.url | escape }}",
-      "avatar": "https://cdn.coryd.dev/{{ globals.avatar | escape }}?class=w200&v={% appVersion %}"
+      "avatar": "https://cdn.coryd.dev{{ globals.avatar | escape }}?class=w200&v={% appVersion %}"
     }],
     "items": [
         {%- assign entries = data | normalizeEntries: 20 -%}

@@ -6,6 +6,7 @@ const BASE_URL = 'https://coryd.dev'
 const md = markdownIt()
 
 const normalizeWord = (word) => {
+  if (!word) return ''
   const wordMap = {
     'ai': 'AI',
     'css': 'CSS',
@@ -14,12 +15,12 @@ const normalizeWord = (word) => {
     'macos': 'macOS',
     'tv': 'TV'
   }
-  return wordMap[word.toLowerCase()] || word.charAt(0).toUpperCase() + word.slice(1)
+  return wordMap[word?.toLowerCase()] || word?.charAt(0).toUpperCase() + word.slice(1)
 }
 
 const tagsToHashtags = (item) => {
-  const tags = item?.tags || []
-  if (tags.length) return tags.map(tag => '#' + tag.split(' ').map(normalizeWord).join('')).join(' ')
+  const tags = item?.['tags'] || []
+  if (tags.length) return tags.map(tag => '#' + normalizeWord(tag)).join(' ')
   return ''
 }
 
@@ -40,7 +41,7 @@ export const processContent = (collection) => {
       { method: 'fromISO' },
       { method: 'fromFormat', format: 'yyyy-MM-dd' },
       { method: 'fromFormat', format: 'MM/dd/yyyy' },
-      { method: 'fromFormat', format: 'dd-MM-yyyy' },
+      { method: 'fromFormat', format: 'dd-MM-yyyy' }
     ]
 
     for (const { method, format } of formats) {
@@ -115,16 +116,16 @@ export const processContent = (collection) => {
         if (item['type'] === 'album-release') hashTags = ' #Music #NewMusic'
         if (item['type'] === 'concert') hashTags = ' #Music #Concert'
 
-        if (item?.['authors']?.['mastodon']) {
-          const mastoUrl = new URL(item['authors']['mastodon'])
+        if (item?.['author']?.['mastodon']) {
+          const mastoUrl = new URL(item['author']['mastodon'])
           attribution = `${mastoUrl.pathname.replace('/', '')}@${mastoUrl.host}`
-        } else if (item?.['authors']?.['name']) {
-          attribution = item['authors']['name']
+        } else if (item?.['author']?.['name']) {
+          attribution = item['author']['name']
         }
 
         let url = item['url'] || item['link']
         if (url && !isValidUrl(url)) url = absoluteUrl(url)
-        if (item['type'] === 'concert') url = `${item['artistUrl'] ? item['artistUrl'] : BASE_URL + '/music/concerts'}?t=${DateTime.fromISO(item['date']).toMillis()}${item['artistUrl'] ? '#concerts' : ''}`
+        if (item['type'] === 'concert') url = `${item['artist']?.['url'] ? item['artist']['url'] : BASE_URL + '/music/concerts'}?t=${DateTime.fromISO(item['date']).toMillis()}${item['artist']?.['url'] ? '#concerts' : ''}`
 
         const content = {
           url,
@@ -149,12 +150,12 @@ export const processContent = (collection) => {
   }
 
   const movieData = movies['movies'].filter((movie) => movie['rating'])
-  const showData = tv['shows'].filter((show) => show['episodes']?.[0]?.['last_watched_at'])
-  const bookData = books.all.filter((book) => book['rating'])
+  const showData = tv['shows'].filter((show) => show?.['episode']?.['formatted_episode'])
+  const bookData = books['all'].filter((book) => book['rating'])
 
   addItemToIndex(posts, '📝', (item) => item['url'], (item) => item['title'], (item) => item['tags'])
   addItemToIndex(links, '🔗', (item) => item['link'], (item) => item['title'], (item) => item['tags'])
-  addItemToIndex(artists, '🎙️', (item) => item['url'], (item) => `${item['name']} (${item['country']}) - ${item['genre']['name']}`, (item) => `['${item['genre']}']`)
+  addItemToIndex(artists, '🎙️', (item) => item['url'], (item) => `${item['name']} (${item['country']}) - ${item['genre']?.['name']}`, (item) => `['${item['genre']}']`)
   addItemToIndex(genres, '🎵', (item) => item['url'], (item) => item['name'], (item) => item.artists.map(artist => artist['name_string']))
   if (movieData) addItemToIndex(movieData, '🎥', (item) => item['url'], (item) => `${item['title']} (${item['rating']})`, (item) => item['tags'])
   if (showData) addItemToIndex(showData, '📺', (item) => item['url'], (item) => `${item['title']} (${item['year']})`, (item) => item['tags'])
@@ -167,13 +168,13 @@ export const processContent = (collection) => {
   addContent(concerts, '🎤', (item) => `${item['artistNameString'] ? item['artistNameString'] : item['artist']['name']} at ${item['venue']['name'].split(',')[0].trim()}`, (item) => item['date'])
   addContent([...albumReleases['current']].reverse(), '📆', (item) => `${item['title']} by ${item['artist']['name']}`, (item) => item['release_date'])
 
-  addSiteMapContent(posts, (item) => item.title, (item) => item.date)
-  addSiteMapContent(pages, (item) => item.title, (item) => item.date)
-  addSiteMapContent(artists, (item) => item.name, (item) => item.date)
-  addSiteMapContent(genres, (item) => item.name, (item) => item.date)
-  addSiteMapContent(movies['movies'], (item) => item.title, (item) => item.date)
-  addSiteMapContent(books.all, (item) => item.title, (item) => item.date)
-  addSiteMapContent(tv?.['shows'], (item) => item.title, (item) => item.date)
+  addSiteMapContent(posts, (item) => item['title'], (item) => item['date'])
+  addSiteMapContent(pages, (item) => item['title'], (item) => item['date'])
+  addSiteMapContent(artists, (item) => item['name'], (item) => item['date'])
+  addSiteMapContent(genres, (item) => item['name'], (item) => item['date'])
+  addSiteMapContent(movies['movies'], (item) => item['title'], (item) => item['date'])
+  addSiteMapContent(books.all, (item) => item['title'], (item) => item['date'])
+  addSiteMapContent(tv?.['shows'], (item) => item['title'], (item) => item['date'])
 
   return {
     searchIndex,
@@ -197,7 +198,7 @@ export const albumReleasesCalendar = (collection) => {
   if (!all || all.length === 0) return ''
 
   const events = all.map(album => {
-    const date = DateTime.fromFormat(album.date, 'MMMM d, yyyy')
+    const date = DateTime.fromFormat(album['date'], 'MMMM d, yyyy')
     if (!date.isValid) return null
 
     return {
@@ -206,8 +207,8 @@ export const albumReleasesCalendar = (collection) => {
       startOutputType: 'local',
       title: `Release: ${album['artist']['name']} - ${album['title']}`,
       description: `Check out this new album release: ${album['url']}. Read more about ${album['artist']['name']} at https://coryd.dev${album['artist']['url']}`,
-      url: album.url,
-      uid: `${date.toFormat('yyyyMMdd')}-${album['artist']['name']}-${album.title}@coryd.dev`,
+      url: album['url'],
+      uid: `${date.toFormat('yyyyMMdd')}-${album['artist']['name']}-${album['title']}@coryd.dev`,
       timestamp: DateTime.now().toUTC().toFormat("yyyyMMdd'T'HHmmss'Z'")
     }
   }).filter(event => event !== null)

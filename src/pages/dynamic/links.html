@@ -19,7 +19,7 @@ permalink: "/links/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}
     <a href="{{ link.link }}" title="{{ link.title | escape }}">
       <strong>{{ link.title }}</strong>
     </a>
-    {% if link.authors %} via <a href="{{ link.authors.url }}">{{ link.authors.name }}</a>{% endif %}
+    {% if link.author %} via <a href="{{ link.author.url }}">{{ link.author.name }}</a>{% endif %}
   </div>
   {% endfor %}
 </div>

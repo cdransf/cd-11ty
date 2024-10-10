@@ -32,7 +32,7 @@ schema: watching
     Favorite movies
   </a>
 </h3>
-{% assign favoriteMovies = movies.favorites | featuredWatching: 6 %}
+{% assign favoriteMovies = movies.favorites | shuffleArray | featuredWatching: 6 %}
 {% render "partials/media/watching/grid.liquid", mediaItems:favoriteMovies, count: 6 %}
 <h3 id="favorite-shows">
   <a class="icon-link" href="/watching/favorite-shows">
@@ -40,5 +40,5 @@ schema: watching
     Favorite shows
   </a>
 </h3>
-{% assign favoriteShows = tv.favorites | featuredWatching: 6 %}
+{% assign favoriteShows = tv.favorites | shuffleArray | featuredWatching: 6 %}
 {% render "partials/media/watching/grid.liquid", mediaItems:favoriteShows, count: 6 %}

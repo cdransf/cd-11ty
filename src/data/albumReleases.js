@@ -6,21 +6,11 @@ const SUPABASE_KEY = process.env.SUPABASE_KEY
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 const fetchAlbumReleases = async () => {
-  const today = DateTime.utc().startOf('day')
+  const today = DateTime.utc().startOf('day').toSeconds()
+
   const { data, error } = await supabase
     .from('optimized_album_releases')
-    .select(`
-      name,
-      release_date,
-      release_link,
-      total_plays,
-      art,
-      artist_name,
-      artist_description,
-      artist_total_plays,
-      artist_country,
-      artist_favorite
-    `)
+    .select('*')
 
   if (error) {
     console.error('Error fetching data:', error)
@@ -28,31 +18,18 @@ const fetchAlbumReleases = async () => {
   }
 
   const all = data.map(album => {
-    const releaseDate = DateTime.fromISO(album['release_date']).toUTC().startOf('day')
+    const releaseDate = DateTime.fromSeconds(album['release_timestamp']).toUTC().startOf('day')
 
     return {
-      artist: {
-        name: album['artist_name'],
-        description: album['artist_description'],
-        total_plays: album['artist_total_plays'],
-        country: album['artist_country'],
-        favorite: album['artist_favorite'],
-        url: album['artist_url'],
-      },
-      title: album['name'],
+      ...album,
+      description: album['artist']['description'],
       date: releaseDate.toLocaleString(DateTime.DATE_FULL),
-      description: album['artist_description'],
-      url: album['release_link'],
-      image: album['art'] ? `/${album['art']}` : '',
-      total_plays: album['total_plays'],
-      release_date: releaseDate,
-      type: 'album-release',
-      timestamp: releaseDate.toSeconds(),
+      timestamp: releaseDate.toSeconds()
     }
   }).sort((a, b) => a['timestamp'] - b['timestamp'])
 
-  const upcoming = all.filter(album => (!album['total_plays'] || album['total_plays'] <= 0) && album['release_date'] > today)
-  const current = all.filter(album => album['release_date'] <= today)
+  const upcoming = all.filter(album => album['release_timestamp'] > today)
+  const current = all.filter(album => album['release_timestamp'] <= today)
 
   return { all, upcoming, current }
 }
