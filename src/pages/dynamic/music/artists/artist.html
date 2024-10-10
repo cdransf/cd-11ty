@@ -58,7 +58,7 @@ schema: artist
     </div>
   </div>
   {% render "partials/blocks/associated-media.liquid", posts:artist.posts %}
-  {% render "partials/blocks/associated-media.liquid", artists:artist.relatedArtists %}
+  {% render "partials/blocks/associated-media.liquid", artists:artist.related_artists %}
   {% render "partials/blocks/associated-media.liquid", books:artist.books %}
   {% render "partials/blocks/associated-media.liquid", movies:artist.movies %}
   {% render "partials/blocks/associated-media.liquid", shows:artist.shows %}

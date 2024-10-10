@@ -55,7 +55,7 @@ schema: show
   {% endif %}
   {% render "partials/blocks/associated-media.liquid", posts:show.posts %}
   {% render "partials/blocks/associated-media.liquid", artists:show.artists %}
-  {% render "partials/blocks/associated-media.liquid", shows:show.relatedShows %}
+  {% render "partials/blocks/associated-media.liquid", shows:show.related_shows %}
   {% render "partials/blocks/associated-media.liquid", movies:show.movies %}
   {% render "partials/blocks/associated-media.liquid", books:show.books %}
   {% if show.description %}
