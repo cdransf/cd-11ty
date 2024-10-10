@@ -3,7 +3,6 @@
   <p class="loading client-side">🎧 Loading...</p>
   <p class="content"></p>
   <noscript>
-    {%- assign track = music.recent | first -%}
-    <p>🎧 {{ track.title }} by <a href="{{ track.url }}">{{ track.artist }}</a></p>
+    <p>{{ nowPlaying }}</p>
   </noscript>
 </api-text>

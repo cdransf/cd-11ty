@@ -2,6 +2,6 @@
 layout: default
 permalink: /
 ---
-{% render "partials/home/intro.liquid" music:music %}
+{% render "partials/home/intro.liquid" nowPlaying:nowPlaying.content %}
 {% render "partials/home/recent-activity.liquid" music:music, books:books.all, tv:tv, movies:movies, links:links %}
 {% render "partials/home/recent-posts.liquid" posts:posts %}
