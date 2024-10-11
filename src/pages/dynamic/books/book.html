@@ -43,7 +43,7 @@ schema: book
         <p class="sub-meta tattoo">{% tablericon "needle" %} I have a tattoo inspired by this book!</p>
       {%- endif -%}
       {% if book.status == 'finished' %}
-        <p class="sub-meta">Finished on: {{ book.date | date: "%B %e, %Y" }}</p>
+        <p class="sub-meta">Finished on: <strong class="highlight-text">{{ book.date_finished | date: "%B %e, %Y" }}</strong></p>
       {% endif %}
       {% if book.status == 'started' %}
         {%- assign percentage = book.progress | append: '%' -%}

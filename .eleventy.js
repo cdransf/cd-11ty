@@ -11,7 +11,6 @@ import tablerIcons from '@cdransf/eleventy-plugin-tabler-icons'
 import { copyErrorPages, minifyJsComponents } from './config/events/index.js'
 import { processContent, albumReleasesCalendar } from './config/collections/index.js'
 import { cssConfig } from './config/plugins/css-config.js'
-import { DateTime } from 'luxon'
 
 // load .env
 dotenvFlow.config()
@@ -88,7 +87,6 @@ export default async function (eleventyConfig) {
   })
 
   eleventyConfig.addShortcode('appVersion', () => appVersion)
-  eleventyConfig.addShortcode('currentYear', () => DateTime.now().year)
 
   // events
   if (process.env.ELEVENTY_PRODUCTION) eleventyConfig.on('afterBuild', copyErrorPages)
