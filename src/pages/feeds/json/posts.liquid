@@ -4,11 +4,9 @@ eleventyExcludeFromCollections: true
 permalink: "/feeds/posts.json"
 ---
 {% render "partials/feeds/json.liquid"
-  permalink:"/feeds/posts"
+  permalink:"/feeds/posts.json"
   title:"Posts / Cory Dransfeldt"
   globals:globals
   data:posts
-  updated:posts[0].date
-  utm_campaign:"posts_json_feed"
-  appVersion:appVersion
+  utm_campaign:"posts_feed"
 %}

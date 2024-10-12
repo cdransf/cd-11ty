@@ -29,9 +29,8 @@ const fetchAlbumReleases = async () => {
   }).sort((a, b) => a['timestamp'] - b['timestamp'])
 
   const upcoming = all.filter(album => album['release_timestamp'] > today)
-  const current = all.filter(album => album['release_timestamp'] <= today)
 
-  return { all, upcoming, current }
+  return { all, upcoming }
 }
 
 export default async function () {

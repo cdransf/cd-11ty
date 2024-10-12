@@ -1,48 +1,24 @@
 {
-    "version": "https://jsonfeed.org/version/1.1",
-    "title": "{{ title | escape }}",
-    "home_page_url": "{{ permalink | absoluteUrl | escape }}",
-    "feed_url": "{{ permalink | absoluteUrl | escape }}.json",
-    "description": "{{ globals.site_description | escape }}",
-    "icon": "https://cdn.coryd.dev{{ globals.avatar | escape }}?class=w200&v={% appVersion %}",
-    "favicon": "https://cdn.coryd.dev{{ globals.avatar | escape }}?class=w50&v={% appVersion %}",
-    "authors": [{
-      "name": "{{ globals.site_name }}",
-      "url": "{{ globals.url | escape }}",
-      "avatar": "https://cdn.coryd.dev{{ globals.avatar | escape }}?class=w200&v={% appVersion %}"
-    }],
-    "items": [
-        {%- assign entries = data | normalizeEntries: 20 -%}
-        {%- for entry in entries -%}
-          {%- assign summary = entry.content | strip_html | normalize_whitespace | escape -%}
-          {%- assign utm_parameters = "utm_source=rss&utm_medium=feed&utm_campaign=" | append: utm_campaign -%}
-          {
-              "id": "{{ entry.url | encodeAmp | escape }}",
-              "title": "{{ entry.title | escape }}{% if entry.authors %} via {{ entry.authors.name | escape }}{% endif %}{% if entry.rating %} ({{ entry.rating | escape }}){% endif %}",
-              {%- if utm_campaign -%}
-              "url": "{{ entry.url | append: '?' | append: utm_parameters }}",
-              {%- else -%}
-              "url": "{{ entry.url | encodeAmp }}",
-              {%- endif -%}
-              "content_html": "{{ summary }}",
-              "summary": "{{ summary }}",
-              {%- if entry.author -%}
-              "external_url": "{{ entry.url | encodeAmp | escape }}",
-              "authors": [{
-                "name": "{{ entry.author.name | escape }}",
-                "url": "{{ entry.author.url | escape }}",
-                "mastodon": "{{ entry.author.mastodon | escape }}",
-                "rss": "{{ entry.author.feed | escape }}"
-              }],
-              {%- endif %}
-              "date_published": "{{ entry.date | date: '%Y-%m-%dT%H:%M:%S%:z' }}"{%- if entry.tags -%},
-              "tags": [
-                {%- for tag in entry.tags -%}
-                "{{ tag | escape }}"{%- unless forloop.last -%}, {% endunless -%}
-                {%- endfor -%}
-              ]
-              {%- endif -%}
-          }{%- if forloop.last == false -%},{%- endif -%}
-        {%- endfor -%}
-    ]
+  "version": "https://jsonfeed.org/version/1",
+  "title": "{{ title }}",
+  "home_page_url": "{{ globals.url }}",
+  "feed_url": "{{ permalink | absoluteUrl }}",
+  "description": "{{ globals.site_description }}",
+  "icon": "https://cdn.coryd.dev{{ globals.avatar }}?class=w200",
+  "author": {
+    "name": "{{ globals.site_name }}",
+    "url": "{{ globals.url }}",
+    "avatar": "https://cdn.coryd.dev{{ globals.avatar }}?class=w200"
+  },
+  "items": [
+    {%- assign entries = data -%}
+    {%- for entry in entries limit: 20 -%}
+    {
+      "id": "{{ entry.feed.url | encodeAmp }}",
+      "url": "{{ entry.feed.url | encodeAmp }}",
+      "title": "{{ entry.feed.title }}",
+      "date_published": "{{ entry.feed.date | stringToRFC3339 }}"
+    }{%- if forloop.last == false -%},{%- endif -%}
+    {%- endfor -%}
+  ]
 }

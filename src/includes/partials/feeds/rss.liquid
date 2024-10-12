@@ -3,11 +3,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <atom:link href="{{ permalink | absoluteUrl }}" rel="self" type="application/rss+xml" />
-    {%- assign entries = data | normalizeEntries: 20 -%}
+    {%- assign entries = data -%}
     <title><![CDATA[{{ title }}]]></title>
     <description><![CDATA[{{ globals.site_description }}]]></description>
     <link>{{ permalink | absoluteUrl }}</link>
-    <lastBuildDate>{{ updated | stringToRFC822Date }}</lastBuildDate>
+    <lastBuildDate>{{ 'now' | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
     <image>
       <title><![CDATA[{{ title }}]]></title>
       <link>{{ permalink | absoluteUrl }}</link>
@@ -15,27 +15,28 @@
       <width>144</width>
       <height>144</height>
     </image>
-    {% for entry in entries -%}
+    {% for entry in entries limit: 20 -%}
+      {%- assign entryFeed = entry.feed -%}
       {%- assign rating = entry.rating -%}
       {%- capture entryTitle -%}
-        {{ entry.title }}
-        {%- if entry.authors %} via {{ entry.authors.name }}{%- endif -%}
+        {{ entryFeed.title }}
+        {%- if entryFeed.artist and entryFeed.artist.name %} via {{ entryFeed.artist.name }}{%- endif -%}
         {%- if rating %} ({{ rating }}){%- endif -%}
       {%- endcapture -%}
       {%- assign utm_parameters = "utm_source=rss&utm_medium=feed&utm_campaign=" | append: utm_campaign -%}
       <item>
         <title><![CDATA[{{ entryTitle }}]]></title>
         {%- if utm_campaign -%}
-        <link>{{ entry.url | append: '?' | append: utm_parameters | encodeAmp }}</link>
+        <link>{{ entryFeed.url | append: '?' | append: utm_parameters | encodeAmp }}</link>
         {%- else -%}
-        <link>{{ entry.url | encodeAmp }}</link>
+        <link>{{ entryFeed.url | encodeAmp }}</link>
         {%- endif -%}
-        <pubDate>{{ entry.date | stringToRFC822Date }}</pubDate>
-        <guid isPermaLink="false">{{ entry.url | encodeAmp }}</guid>
-        {%- if entry.image -%}
-          <enclosure url="https://cdn.coryd.dev{{ entry.image }}?class=w800" type="image/jpeg" />
+        <pubDate>{{ entryFeed.date | stringToRFC822Date }}</pubDate>
+        <guid isPermaLink="false">{{ entryFeed.url | encodeAmp }}</guid>
+        {%- if entryFeed.image -%}
+          <enclosure url="https://cdn.coryd.dev{{ entryFeed.image }}?class=w800" type="image/jpeg" />
         {%- endif -%}
-        <description>{{ entry.excerpt | escape }}</description>
+        <description><![CDATA[{{ entryFeed.description | escape | markdown }}]]></description>
       </item>
     {%- endfor %}
   </channel>

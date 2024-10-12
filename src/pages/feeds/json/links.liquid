@@ -4,10 +4,8 @@ eleventyExcludeFromCollections: true
 permalink: "/feeds/links.json"
 ---
 {% render "partials/feeds/json.liquid"
-  permalink:"/feeds/links"
+  permalink:"/feeds/links.json"
   title:"Links / Cory Dransfeldt"
   globals:globals
   data:links
-  updated:links[0].date
-  appVersion:appVersion
 %}

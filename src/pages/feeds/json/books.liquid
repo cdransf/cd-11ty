@@ -3,13 +3,10 @@ layout: null
 eleventyExcludeFromCollections: true
 permalink: "/feeds/books.json"
 ---
-{%- assign bookData = books.all | bookStatus: 'finished' -%}
 {% render "partials/feeds/json.liquid"
-  permalink:"/feeds/books"
+  permalink:"/feeds/books.json"
   title:"Books / Cory Dransfeldt"
   globals:globals
-  data:bookData
-  updated:bookData[0].date
-  utm_campaign:"books_json_feed"
-  appVersion:appVersion
+  data:books.feed
+  utm_campaign:"books_feed"
 %}

@@ -9,7 +9,7 @@ import markdownItPrism from 'markdown-it-prism'
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import tablerIcons from '@cdransf/eleventy-plugin-tabler-icons'
 import { copyErrorPages, minifyJsComponents } from './config/events/index.js'
-import { processContent, albumReleasesCalendar } from './config/collections/index.js'
+import { albumReleasesCalendar } from './config/collections/index.js'
 import { cssConfig } from './config/plugins/css-config.js'
 
 // load .env
@@ -52,18 +52,6 @@ export default async function (eleventyConfig) {
     'node_modules/youtube-video-element/youtube-video-element.js': 'assets/scripts/components/youtube-video-element.js'
   })
 
-  eleventyConfig.addCollection('allContent', (collection) => {
-    const { allContent } = processContent(collection)
-    return allContent
-  })
-  eleventyConfig.addCollection('searchIndex', (collection) => {
-    const { searchIndex } = processContent(collection)
-    return searchIndex
-  })
-  eleventyConfig.addCollection('siteMap', (collection) => {
-    const { siteMap } = processContent(collection)
-    return siteMap
-  })
   eleventyConfig.addCollection('albumReleasesCalendar', albumReleasesCalendar)
 
   const md = markdownIt({ html: true, linkify: true })

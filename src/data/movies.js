@@ -35,15 +35,15 @@ export default async function () {
 
   try {
     const movies = await fetchAllMovies()
-    const filterMovies = (condition) => movies.filter(condition)
-    const favoriteMovies = filterMovies(movie => movie.favorite)
-    const recentlyWatchedMovies = filterMovies(movie => movie.last_watched && year - DateTime.fromISO(movie.last_watched).year <= 3)
+    const favoriteMovies = movies.filter(movie => movie['favorite'])
+    const recentlyWatchedMovies = movies.filter(movie => movie['last_watched'] && year - DateTime.fromISO(movie['last_watched']).year <= 3)
 
     return {
       movies,
-      watchHistory: filterMovies(movie => movie.last_watched),
+      watchHistory: movies.filter(movie => movie['last_watched']),
       recentlyWatched: recentlyWatchedMovies,
-      favorites: favoriteMovies.sort((a, b) => a.title.localeCompare(b.title)),
+      favorites: favoriteMovies.sort((a, b) => a['title'].localeCompare(b['title'])),
+      feed: movies.filter(movie => movie['feed']),
     }
   } catch (error) {
     console.error('Error fetching and processing movies data:', error)
@@ -51,7 +51,8 @@ export default async function () {
       movies: [],
       watchHistory: [],
       recentlyWatched: [],
-      favorites: []
+      favorites: [],
+      feed: []
     }
   }
 }

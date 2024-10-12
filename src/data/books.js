@@ -29,18 +29,6 @@ const fetchAllBooks = async () => {
   return books
 }
 
-const processBooks = (books) => {
-  return books.map(book => {
-    const dateFinished = book['date_finished'] ? new Date(book['date_finished']) : null
-    const year = dateFinished && !isNaN(dateFinished.getTime()) ? dateFinished.getUTCFullYear() : null
-
-    return {
-      ...book,
-      year,
-    }
-  })
-}
-
 const sortBooksByYear = (books) => {
   const years = {}
   books.forEach(book => {
@@ -51,12 +39,11 @@ const sortBooksByYear = (books) => {
       years[year]['data'].push(book)
     }
   })
-  return Object.values(years).filter(year => year.value > 2017)
+  return Object.values(years).filter(year => year['value'] > 2017)
 }
 
 export default async function () {
   const books = await fetchAllBooks()
-  const processedBooks = processBooks(books)
 
-  return { all: processedBooks, years: sortBooksByYear(processedBooks) }
+  return { all: books, years: sortBooksByYear(books), feed: books.filter(book => book['feed']) }
 }

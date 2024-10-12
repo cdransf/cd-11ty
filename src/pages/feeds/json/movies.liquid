@@ -4,11 +4,9 @@ eleventyExcludeFromCollections: true
 permalink: "/feeds/movies.json"
 ---
 {% render "partials/feeds/json.liquid"
-  permalink:"/feeds/movies"
+  permalink:"/feeds/movies.json"
   title:"Movies / Cory Dransfeldt"
   globals:globals
-  data:movies.recentlyWatched
-  updated:movies.recentlyWatched[0].lastWatched
-  utm_campaign:"movies_json_feed"
-  appVersion:appVersion
+  data:movies.feed
+  utm_campaign:"movies_feed"
 %}

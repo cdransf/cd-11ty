@@ -4,10 +4,9 @@ eleventyExcludeFromCollections: true
 permalink: "/feeds/all.json"
 ---
 {% render "partials/feeds/json.liquid"
-  permalink:"/feeds/all"
+  permalink:"/feeds/all.json"
   title:"All activity / Cory Dransfeldt"
   globals:globals
-  data:collections.allContent
-  updated:collections.allContent[0].date
+  data:activity
   appVersion:appVersion
 %}
