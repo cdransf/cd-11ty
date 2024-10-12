@@ -6,7 +6,7 @@ pagination:
   data: music.week.artists
   size: 24
 permalink: "/music/artists/this-week/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html"
-image: music.week.artists[0].image
+image: music.week.artists[0].grid.image
 schema: music
 ---
 <a class="icon-link" href="/music" title="Go back to the music index page">{% tablericon "arrow-left" %} Back to music</a>
@@ -17,4 +17,4 @@ schema: music
 <p><a href="/music/concerts">You can also take a look at the concerts I've been to.</a></p>
 <hr />
 {% endif %}
-{% render "partials/media/grid.liquid" data:pagination, shape: "square" %}
+{% render "partials/media/grid.liquid" data:pagination.items, pagination:pagination shape:"square" %}

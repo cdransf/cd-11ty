@@ -40,7 +40,7 @@ WITH search_data AS (
   SELECT
       'movie' AS content_type,
       CASE
-          WHEN m.rating IS NOT NULL THEN CONCAT('🎥 ', m.title, ' (', m.rating, ')')  -- Add emoji and rating for movies
+          WHEN m.rating IS NOT NULL THEN CONCAT('🎥 ', m.title, ' (', m.rating, ')')
           ELSE CONCAT('🎥 ', m.title)
       END AS title,
       CONCAT('https://coryd.dev', m.url) AS url,

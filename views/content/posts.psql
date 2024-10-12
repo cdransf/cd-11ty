@@ -8,7 +8,11 @@ SELECT
   p.featured,
   p.slug AS url,
   p.mastodon_url,
-  CONCAT('/', df.filename_disk) AS image,
+  CASE
+    WHEN df.filename_disk IS NOT NULL AND df.filename_disk != '' AND df.filename_disk != '/'
+    THEN CONCAT('/', df.filename_disk)
+    ELSE NULL
+  END AS image,
   p.image_alt,
 
   (

@@ -13,6 +13,19 @@ SELECT
   CONCAT('/', df_backdrop.filename_disk) AS backdrop,
 
   json_build_object(
+    'title', s.title,
+    'image', CONCAT('/', df_art.filename_disk),
+    'backdrop', CONCAT('/', df_backdrop.filename_disk),
+    'url', s.slug,
+    'alt', CONCAT(s.title, ' (', s.year, ')'),
+    'subtext', CASE
+        WHEN MAX(e.season_number) IS NOT NULL AND MAX(e.episode_number) IS NOT NULL 
+        THEN CONCAT('S', MAX(e.season_number), 'E', MAX(e.episode_number))
+        ELSE s.year::TEXT
+      END
+  ) AS grid,
+
+  json_build_object(
     'type', 'tv',
     'title', s.title,
     'year', s.year,

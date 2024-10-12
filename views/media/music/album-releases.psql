@@ -13,7 +13,15 @@ SELECT
     'description', ar.description
   ) AS artist,
 
-  EXTRACT(EPOCH FROM a.release_date) AS release_timestamp
+  EXTRACT(EPOCH FROM a.release_date) AS release_timestamp,
+
+  json_build_object(
+    'title', a.name,
+    'image', CONCAT('/', df.filename_disk),
+    'url', a.release_link,
+    'alt', CONCAT(a.name, ' by ', ar.name_string),
+    'subtext', CONCAT(ar.name_string, ' / ', a.release_date)
+  ) AS grid
 
 FROM
   albums a

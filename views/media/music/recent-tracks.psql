@@ -12,7 +12,15 @@ SELECT
     ol.artist_country,
     ol.album_art,
     ol.artist_url,
-    ol.genre_url
+    ol.genre_url,
+    json_build_object(
+        'title', ol.track_name,
+        'subtext', ol.artist_name,
+        'alt', CONCAT(ol.track_name, ' by ', ol.artist_name),
+        'url', ol.artist_url,
+        'image', ol.album_art,
+        'played_at', ol.listened_at
+    ) AS chart
 FROM
     optimized_listens ol
 WHERE

@@ -40,6 +40,7 @@ export default async function () {
       image: show['episode']['image'],
       backdrop: show['episode']['backdrop'],
       last_watched_at: show['episode']['last_watched_at'],
+      grid: show['grid'],
       type: 'tv'
     }))
 

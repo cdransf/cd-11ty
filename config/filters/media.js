@@ -1,57 +1,4 @@
-import { DateTime } from 'luxon'
-import { shuffleArray } from '../utilities/index.js'
-
 export default {
-  featuredWatching: (watching, count) => {
-    const data = [...watching]
-    return shuffleArray(data).slice(0, count)
-  },
-  normalizeMedia: (media, limit) => {
-    const mediaData = limit ? media.slice(0, limit) : media
-    return mediaData.map((item) => {
-      let normalized = {
-        title: item['title'],
-        image: item['image'],
-        url: item['url'],
-        type: item['type']
-      }
-
-      switch (item['type']) {
-        case 'artist':
-          normalized.alt = `${item['plays']} plays of ${item['title']}`
-          normalized.subtext = `${item['plays']} plays`
-          break
-        case 'album':
-          normalized.alt = `${item['title']} by ${item['artist']}`
-          normalized.subtext = `${item['artist']}`
-          break
-        case 'album-release':
-          normalized.alt = `${item['title']} by ${item['artist']['name']}`
-          normalized.subtext = `${item['artist']['name']} / ${item['release_date_formatted']}`
-          break
-        case 'movie':
-          normalized.alt = item['title']
-          normalized.rating = item['rating']
-          normalized.favorite = item['favorite']
-          normalized.subtext = item.rating ? `${item['rating']} (${item['year']})` : `(${item['year']})`
-          break
-        case 'book':
-          normalized.title = `${item['title']} by ${item['author']}`
-          if (item['rating']) {
-            normalized.rating = item['rating']
-            normalized.subtext = item['rating']
-          }
-          break
-        case 'tv':
-          normalized.alt = item['formatted_episode']
-          normalized.subtext = item['formatted_episode']
-          break
-      }
-
-      return normalized
-    })
-  },
-  calculatePlayPercentage: (plays, mostPlayed) => `${plays/mostPlayed * 100}%`,
   bookStatus: (books, status) => books.filter(book => book['status'] === status),
   bookFavorites: (books) => books.filter(book => book.favorite === true),
   bookYearLinks: (years) => years.sort((a, b) => b.value - a.value).map((year, index) => {
@@ -71,7 +18,9 @@ export default {
     if (dataSlice.length === 0) return null
     if (dataSlice.length === 1) {
       const item = dataSlice[0]
-      if (type === 'genre' || type === 'artist') {
+      if (type === 'genre') {
+        return `<a href="${item['genre_url']}">${item['genre_name']}</a>`
+      } else if (type === 'artist') {
         return `<a href="${item['url']}">${item['name']}</a>`
       } else if (type === 'book') {
         return `<a href="${item['url']}">${item['title']}</a>`
@@ -79,7 +28,9 @@ export default {
     }
 
     const allButLast = dataSlice.slice(0, -1).map(item => {
-      if (type === 'genre' || type === 'artist') {
+      if (type === 'genre') {
+        return `<a href="${item['genre_url']}">${item['genre_name']}</a>`
+      } else if (type === 'artist') {
         return `<a href="${item['url']}">${item['name']}</a>`
       } else if (type === 'book') {
         return `<a href="${item['url']}">${item['title']}</a>`
@@ -89,7 +40,9 @@ export default {
     let last
     const lastItem = dataSlice[dataSlice.length - 1]
 
-    if (type === 'genre' || type === 'artist') {
+    if (type === 'genre') {
+      last = `<a href="${lastItem['genre_url']}">${lastItem['genre_name']}</a>`
+    } else if (type === 'artist') {
       last = `<a href="${lastItem['url']}">${lastItem['name']}</a>`
     } else if (type === 'book') {
       last = `<a href="${lastItem['url']}">${lastItem['title']}</a>`

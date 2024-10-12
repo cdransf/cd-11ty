@@ -18,14 +18,14 @@ schema: music-index
     Artists
   </a>
 </h3>
-{% render "partials/media/grid.liquid", data:music.week.artists, shape: "square", count: 8, loading: "eager" %}
+{% render "partials/media/grid.liquid", data:music.week.artists, shape:"square", count: 8, loading: "eager" %}
 <h3 id="albums">
   <a class="icon-link" href="/music/albums/this-week">
     {% tablericon "vinyl" %}
     Albums
   </a>
 </h3>
-{% render "partials/media/grid.liquid", data:music.week.albums, shape: "square", count: 8 %}
+{% render "partials/media/grid.liquid", data:music.week.albums, shape:"square", count: 8 %}
 <h3 id="tracks">
   <a class="icon-link" href="/music/tracks/this-week">
     {% tablericon "playlist" %}
@@ -41,7 +41,7 @@ schema: music-index
     {% render "partials/media/music/recent", data:music.recent %}
   </div>
   <div class="tracks-chart">
-    {% render "partials/media/music/chart.liquid", data:music.week.tracks, mostPlayed:music.week.tracks[0].plays, count: 10 %}
+    {% render "partials/media/music/chart.liquid", data:music.week.tracks, count: 10 %}
   </div>
 </div>
 {% if albumReleases.size > 0 %}
@@ -49,5 +49,5 @@ schema: music-index
   {% tablericon "calendar-time" %}
   Anticipated albums
 </h3>
-{% render "partials/media/grid.liquid", data:albumReleases.upcoming, shape: "square", count: 8 %}
+{% render "partials/media/grid.liquid", data:albumReleases.upcoming, shape:"square", count: 8 %}
 {% endif %}

@@ -1,6 +1,7 @@
 CREATE OR REPLACE VIEW optimized_books AS
 SELECT
     b.date_finished,
+    EXTRACT(YEAR FROM b.date_finished) AS year,
     b.author,
     b.description,
     b.title,
@@ -86,6 +87,19 @@ SELECT
       LEFT JOIN books rb ON rbk.related_books_id = rb.id
       WHERE rbk.books_id = b.id
     ) AS related_books,
+
+    json_build_object(
+        'title', CONCAT(b.title, ' by ', b.author),
+        'image', CONCAT('/', df.filename_disk),
+        'url', b.slug,
+        'alt', CONCAT(b.title, ' by ', b.author),
+        'subtext',
+            CASE
+                WHEN b.star_rating IS NOT NULL
+                THEN CONCAT(EXTRACT(YEAR FROM b.date_finished), ' (', b.star_rating, ')')
+                ELSE EXTRACT(YEAR FROM b.date_finished)::TEXT
+            END
+    ) AS grid,
 
     CASE
         WHEN LOWER(b.read_status) = 'finished' AND b.star_rating IS NOT NULL THEN json_build_object(

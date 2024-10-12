@@ -1,17 +1,16 @@
 <div class="music-chart">
   {%- for item in data limit: 10 -%}
-  {%- capture alt -%}{{ item.title | escape }} by {{ item.artist }}{%- endcapture -%}
     <div class="item">
       <div class="meta">
-        <a href="{{ item.url }}">
+        <a href="{{ item.chart.url }}">
           <img
             srcset="
-              https://cdn.coryd.dev{{ item.image }}?class=w50&type=webp 50w,
-              https://cdn.coryd.dev{{ item.image }}?class=w100&type=webp 100w
+              https://cdn.coryd.dev{{ item.chart.image }}?class=w50&type=webp 50w,
+              https://cdn.coryd.dev{{ item.chart.image }}?class=w100&type=webp 100w
             "
             sizes="(max-width: 450px) 50px, 100px"
-            src="https://cdn.coryd.dev{{ item.image }}?class=w50&type=webp"
-            alt="{{ alt }}"
+            src="https://cdn.coryd.dev{{ item.chart.image }}?class=w50&type=webp"
+            alt="{{ item.chart.alt }}"
             loading="lazy"
             decoding="async"
             width="64"
@@ -19,12 +18,12 @@
           />
         </a>
         <div class="meta-text">
-          <a class="title" href="{{ item.url }}">{{ item.title }}</a>
-          <span class="subtext">{{ item.artist }}</span>
+          <a class="title" href="{{ item.chart.url }}">{{ item.chart.title }}</a>
+          <span class="subtext">{{ item.chart.subtext }}</span>
         </div>
       </div>
       <div class="timestamp">
-        {{ item.timestamp | date: "%B %-d, %-I:%M%p", "America/Los_Angeles" }}
+        {{ item.chart.played_at | date: "%B %-d, %-I:%M%p", "America/Los_Angeles" }}
       </div>
     </div>
   {%- endfor -%}
