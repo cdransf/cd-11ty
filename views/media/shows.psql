@@ -18,11 +18,14 @@ SELECT
     'backdrop', CONCAT('/', df_backdrop.filename_disk),
     'url', s.slug,
     'alt', CONCAT(s.title, ' (', s.year, ')'),
-    'subtext', CASE
-        WHEN MAX(e.season_number) IS NOT NULL AND MAX(e.episode_number) IS NOT NULL 
-        THEN CONCAT('S', MAX(e.season_number), 'E', MAX(e.episode_number))
-        ELSE s.year::TEXT
-      END
+    'subtext', COALESCE(
+        (SELECT CONCAT('S', e1.season_number, 'E', e1.episode_number)
+          FROM episodes e1
+          WHERE e1.show = s.id
+          ORDER BY e1.season_number DESC, e1.episode_number DESC
+          LIMIT 1),
+          s.year::TEXT
+    )
   ) AS grid,
 
   json_build_object(
@@ -32,7 +35,13 @@ SELECT
     'url', s.slug,
     'image', CONCAT('/', df_art.filename_disk),
     'backdrop', CONCAT('/', df_backdrop.filename_disk),
-    'formatted_episode', CONCAT('S', MAX(e.season_number), 'E', MAX(e.episode_number)),
+    'formatted_episode', COALESCE(
+        (SELECT CONCAT('S', e2.season_number, 'E', e2.episode_number)
+          FROM episodes e2
+          WHERE e2.show = s.id
+          ORDER BY e2.season_number DESC, e2.episode_number DESC
+          LIMIT 1)
+    ),
     'last_watched_at', MAX(e.last_watched_at)
   ) AS episode,
 
