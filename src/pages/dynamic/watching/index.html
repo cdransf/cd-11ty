@@ -6,7 +6,7 @@ permalink: "/watching/index.html"
 updated: "now"
 schema: watching
 ---
-{% assign featuredMovie = movies.recentlyWatched | shuffleArray | first %}
+{%- assign featuredMovie = movies.recentlyWatched | shuffleArray | first -%}
 <h2 class="watching">{{ title }}</h2>
 {% render "partials/media/watching/hero.liquid" movie:featuredMovie %}
 <p>Here's all of the TV and movies I've been watching presented in what is (hopefully) an organized fashion.</p>

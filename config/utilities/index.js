@@ -1,11 +1,12 @@
 export const shuffleArray = array => {
-  for (let i = array.length - 1; i > 0; i--) {
+  const shuffled = [...array]
+  for (let i = shuffled.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1))
-    let temp = array[i]
-    array[i] = array[j]
-    array[j] = temp
+    let temp = shuffled[i]
+    shuffled[i] = shuffled[j]
+    shuffled[j] = temp
   }
-  return array
+  return shuffled
 }
 
 export const regionNames = new Intl.DisplayNames(['en'], { type: 'region' })
