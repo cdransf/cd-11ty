@@ -12,11 +12,11 @@
 /feeds/all.json
   Content-Type: application/json
 
-/feeds/posts
+/feeds/books
   Content-Type: application/xml; charset=utf-8
   x-content-type-options: nosniff
 
-/feeds/posts.json
+/feeds/books.json
   Content-Type: application/json
 
 /feeds/links
@@ -26,6 +26,13 @@
 /feeds/links.json
   Content-Type: application/json
 
+/feeds/posts
+  Content-Type: application/xml; charset=utf-8
+  x-content-type-options: nosniff
+
+/feeds/posts.json
+  Content-Type: application/json
+
 /feeds/movies
   Content-Type: application/xml; charset=utf-8
   x-content-type-options: nosniff
@@ -33,12 +40,9 @@
 /feeds/movies.json
   Content-Type: application/json
 
-/feeds/books
+/feeds/syndication
   Content-Type: application/xml; charset=utf-8
   x-content-type-options: nosniff
-
-/feeds/books.json
-  Content-Type: application/json
 
 /api/search
   Content-Type: application/json
