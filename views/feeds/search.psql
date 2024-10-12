@@ -1,0 +1,94 @@
+CREATE OR REPLACE VIEW optimized_search_index AS
+WITH search_data AS (
+  SELECT
+      'post' AS content_type,
+      CONCAT('📝 ', p.title) AS title,
+      CONCAT('https://coryd.dev', p.url) AS url,
+      p.tags,
+      NULL AS genre_name,
+      NULL AS genre_url
+  FROM optimized_posts p
+
+  UNION ALL
+
+  SELECT
+      'link' AS content_type,
+      CONCAT('🔗 ', l.title, ' via ', l.name) AS title,
+      l.link AS url,
+      l.tags,
+      NULL AS genre_name,
+      NULL AS genre_url
+  FROM optimized_links l
+
+  UNION ALL
+
+  SELECT
+      'book' AS content_type,
+      CASE
+          WHEN b.rating IS NOT NULL THEN CONCAT('📖 ', b.title, ' (', b.rating, ')')
+          ELSE CONCAT('📖 ', b.title)
+      END AS title,
+      CONCAT('https://coryd.dev', b.url) AS url,
+      b.tags,
+      NULL AS genre_name,
+      NULL AS genre_url
+  FROM optimized_books b
+  WHERE LOWER(b.status) = 'finished'
+
+  UNION ALL
+
+  SELECT
+      'movie' AS content_type,
+      CASE
+          WHEN m.rating IS NOT NULL THEN CONCAT('🎥 ', m.title, ' (', m.rating, ')')  -- Add emoji and rating for movies
+          ELSE CONCAT('🎥 ', m.title)
+      END AS title,
+      CONCAT('https://coryd.dev', m.url) AS url,
+      m.tags,
+      NULL AS genre_name,
+      NULL AS genre_url
+  FROM optimized_movies m
+  WHERE m.last_watched IS NOT NULL
+
+  UNION ALL
+
+  SELECT
+      'artist' AS content_type,
+      CONCAT('🎧 ', ar.name, ' - ', ar.genre_name) AS title,
+      CONCAT('https://coryd.dev', ar.url) AS url,
+      ARRAY[ar.genre_name] AS tags,
+      ar.genre_name,
+      CONCAT('https://coryd.dev', ar.genre_slug) AS genre_url
+  FROM optimized_artists ar
+
+  UNION ALL
+
+  SELECT
+      'genre' AS content_type,
+      CONCAT('🎵 ', g.name) AS title,
+      CONCAT('https://coryd.dev', g.url) AS url,
+      NULL AS tags,
+      g.name AS genre_name,
+      CONCAT('https://coryd.dev', g.url) AS genre_url
+  FROM optimized_genres g
+),
+
+search_data_with_id AS (
+  SELECT
+    ROW_NUMBER() OVER (ORDER BY url) AS id,
+    search_data.*
+  FROM search_data
+)
+
+SELECT
+    json_agg(
+      json_build_object(
+        'id', search_data_with_id.id,
+        'url', search_data_with_id.url,
+        'title', search_data_with_id.title,
+        'tags', search_data_with_id.tags,
+        'genre_name', search_data_with_id.genre_name,
+        'genre_url', search_data_with_id.genre_url
+      )
+    ) AS search_index
+FROM search_data_with_id;

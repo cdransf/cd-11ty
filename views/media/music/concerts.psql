@@ -1,0 +1,39 @@
+CREATE OR REPLACE VIEW optimized_concerts AS
+SELECT
+    c.id,
+    c.date,
+    c.notes,
+    'I went to (yet another) concert!' AS description,
+    'concert' AS type,
+
+    CONCAT('/music/concerts?id=', c.id) AS url,
+
+    CASE
+        WHEN c.artist IS NOT NULL THEN
+            json_build_object(
+                'name', a.name_string,
+                'url', a.slug
+            )
+        ELSE
+            json_build_object(
+                'name', c.artist_name_string,
+                'url', NULL
+            )
+    END AS artist,
+
+    json_build_object(
+        'name', v.name,
+        'latitude', v.latitude,
+        'longitude', v.longitude,
+        'notes', v.notes
+    ) AS venue,
+
+    c.notes AS concert_notes
+
+FROM
+    concerts c
+    LEFT JOIN artists a ON c.artist = a.id
+    LEFT JOIN venues v ON c.venue = v.id
+
+ORDER BY
+    c.date DESC;

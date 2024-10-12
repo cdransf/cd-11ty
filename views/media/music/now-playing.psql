@@ -1,0 +1,24 @@
+CREATE VIEW optimized_latest_listen AS
+WITH latest_listen AS (
+    SELECT
+        l.track_name,
+        l.artist_name,
+        a.emoji AS artist_emoji,
+        g.emoji AS genre_emoji,
+        a.slug AS url,
+        ROW_NUMBER() OVER (ORDER BY l.listened_at DESC) AS row_num
+    FROM
+        listens l
+    JOIN artists a ON l.artist_name = a.name_string
+    LEFT JOIN genres g ON a.genres = g.id
+)
+SELECT
+    track_name,
+    artist_name,
+    artist_emoji,
+    genre_emoji,
+    url
+FROM
+    latest_listen
+WHERE
+    row_num = 1;

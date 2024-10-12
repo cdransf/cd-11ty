@@ -1,0 +1,57 @@
+CREATE OR REPLACE VIEW optimized_sitemap AS
+WITH sitemap_data AS (
+  SELECT
+      p.date AS content_date,
+      'post' AS content_type,
+      p.title,
+      CONCAT('https://coryd.dev', p.url) AS url
+  FROM optimized_posts p
+
+  UNION ALL
+
+  SELECT
+      b.date_finished AS content_date,
+      'book' AS content_type,
+      b.title,
+      CONCAT('https://coryd.dev', b.url) AS url
+  FROM optimized_books b
+  WHERE LOWER(b.status) = 'finished'
+
+  UNION ALL
+
+  SELECT
+      m.last_watched AS content_date,
+      'movie' AS content_type,
+      m.title,
+      CONCAT('https://coryd.dev', m.url) AS url
+  FROM optimized_movies m
+  WHERE m.last_watched IS NOT NULL
+
+  UNION ALL
+
+  SELECT
+      NULL AS content_date,
+      'artist' AS content_type,
+      ar.name AS title,
+      CONCAT('https://coryd.dev', ar.url) AS url
+  FROM optimized_artists ar
+
+  UNION ALL
+
+  SELECT
+      NULL AS content_date,
+      'genre' AS content_type,
+      g.name AS title,
+      CONCAT('https://coryd.dev', g.url) AS url
+  FROM optimized_genres g
+)
+
+SELECT
+    json_agg(
+        json_build_object(
+            'url', sd.url,
+            'title', sd.title,
+            'date', sd.content_date
+        )
+    ) AS sitemap
+FROM sitemap_data sd;
