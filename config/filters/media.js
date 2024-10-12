@@ -97,10 +97,5 @@ export default {
 
     return `${allButLast} and ${last}`
   },
-  formatVenue: (venue) => venue.split(',')[0].trim(),
-  lastWatchedEpisode: (episodes) => {
-    if (!episodes.length) return
-    const sortedEpisodes = episodes.sort((a, b) => new Date(a.last_watched_at) - new Date(b.last_watched_at))
-    return `S${sortedEpisodes[sortedEpisodes.length - 1]['season_number']}E${sortedEpisodes[sortedEpisodes.length - 1]['episode_number']}`
-  }
+  formatVenue: (venue) => venue.split(',')[0].trim()
 }

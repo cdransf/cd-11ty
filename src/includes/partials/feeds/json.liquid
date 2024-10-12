@@ -16,7 +16,8 @@
     {
       "id": "{{ entry.feed.url | encodeAmp }}",
       "url": "{{ entry.feed.url | encodeAmp }}",
-      "title": "{{ entry.feed.title }}",
+      "title": "{{ entry.feed.title | escape }}",
+      "content_text": "{{ entry.feed.description | markdown | strip_html | escape| normalize_whitespace | rstrip | truncatewords: 50, '...' }}",
       "date_published": "{{ entry.feed.date | stringToRFC3339 }}"
     }{%- if forloop.last == false -%},{%- endif -%}
     {%- endfor -%}
