@@ -410,37 +410,6 @@ footer {
   color: var(--text-color);
 }
 
-/* articles */
-article {
-  margin-bottom: var(--spacing-base);
-  border-bottom: var(--border-gray);
-
-  &:last-of-type {
-    border-bottom: none;
-  }
-
-  h3,
-  &:not(:has(h3)) p {
-    margin-top: 0;
-  }
-
-  & .post-meta {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-
-    & svg {
-      stroke: var(--gray-dark);
-      width: var(--sizing-svg-sm);
-      height: var(--sizing-svg-sm);
-    }
-
-    & time {
-      color: var(--gray-dark);
-      font-size: var(--font-size-sm);
-    }
-  }
-}
 
 /* lists */
 ul, ol {

@@ -47,7 +47,7 @@
   {%- assign pageDescription = description -%}
 {%- endif -%}
 
-{%- assign ogImage = 'https://cdn.coryd.dev/' | append: globals.avatar | append: "?class=w800" -%}
+{%- assign ogImage = 'https://cdn.coryd.dev' | append: globals.avatar | append: "?class=w800" -%}
 {%- case schema -%}
   {%- when 'music' -%}
     {%- assign ogImage = 'https://cdn.coryd.dev' | append: page.image -%}
