@@ -36,7 +36,7 @@
         {%- if entryFeed.image -%}
           <enclosure url="https://cdn.coryd.dev{{ entryFeed.image }}?class=w800" type="image/jpeg" />
         {%- endif -%}
-        <description><![CDATA[{{ entryFeed.description | escape | markdown }}]]></description>
+        <description><![CDATA[{{ entryFeed.description | markdown }}]]></description>
       </item>
     {%- endfor %}
   </channel>
