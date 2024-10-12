@@ -419,7 +419,7 @@ article {
     border-bottom: none;
   }
 
-  & h3 {
+  & h3:not(+ :not(p)) {
     margin: 0;
   }
 

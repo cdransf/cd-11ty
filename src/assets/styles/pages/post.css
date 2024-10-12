@@ -1,12 +1,5 @@
-article.standalone {
-  & + div,
-  & + img {
-    margin-bottom: var(--spacing-base);
-  }
-
-  & .associated-media:last-of-type > hr {
-    display: none;
-  }
+article.standalone .associated-media:last-of-type > hr {
+  display: none;
 }
 
 p + .associated-media,
