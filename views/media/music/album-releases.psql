@@ -20,7 +20,7 @@ SELECT
     'image', CONCAT('/', df.filename_disk),
     'url', a.release_link,
     'alt', CONCAT(a.name, ' by ', ar.name_string),
-    'subtext', CONCAT(ar.name_string, ' / ', a.release_date)
+    'subtext', CONCAT(ar.name_string, ' / ', TO_CHAR(a.release_date, 'Mon FMDD, YYYY'))
   ) AS grid
 
 FROM
