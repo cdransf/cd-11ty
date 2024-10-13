@@ -56,8 +56,7 @@
   {%- when 'artist' -%}
     {%- assign ogImage = globals.cdn_url | append: artist.grid.image -%}
   {%- when 'genre' -%}
-    {%- assign sortedGenreArtists = genre.artists | sortByPlaysDescending: "total_plays" -%}
-    {%- assign ogImage =  globals.cdn_url | append: sortedGenreArtists[0].grid.image -%}
+    {%- assign ogImage =  globals.cdn_url | append: genre.artists[0].grid.image -%}
   {%- when 'watching' -%}
     {%- assign featuredMovie = movies.recentlyWatched | first -%}
     {%- assign ogImage = globals.cdn_url | append: featuredMovie.grid.backdrop -%}
@@ -98,8 +97,8 @@
     <link rel="stylesheet" href="/assets/styles/index.css?v={% appVersion %}" type="text/css" />
     <link rel="canonical" href="{{ fullUrl }}" />
     <meta property="og:title" content="{{ pageTitle }}" />
-    <meta name="description" content="{{ pageDescription | sanitizeHtml }}" />
-    <meta property="og:description" content="{{ pageDescription | sanitizeHtml }}" />
+    <meta name="description" content="{{ pageDescription }}" />
+    <meta property="og:description" content="{{ pageDescription }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ fullUrl }}" />
     <meta property="og:image" content="{{ ogImage }}?class=w800" />

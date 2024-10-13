@@ -12,7 +12,7 @@ SELECT
             'name', a.name_string,
             'url', a.slug,
             'total_plays', a.total_plays
-        ))
+        ) ORDER BY a.total_plays DESC)
         FROM artists a
         WHERE a.genres = g.id
     ) AS artists,

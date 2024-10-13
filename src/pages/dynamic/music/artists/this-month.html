@@ -12,7 +12,7 @@ schema: music
 <a class="icon-link" href="/music" title="Go back to the music index page">{% tablericon "arrow-left" %} Back to music</a>
 {% if pagination.pageNumber == 0 %}
 <h2>{{ title }}</h2>
-<p>I've listened to <strong class="highlight-text">{{ music.month.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.month.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.month.totalTracks }} tracks</strong> this month. Most of that has been {{ music.month.genres | sortByPlaysDescending: "plays" | mediaLinks: "genre", 5 }}.</p>
+<p>I've listened to <strong class="highlight-text">{{ music.month.artists.size }} artists</strong>, <strong class="highlight-text">{{ music.month.albums.size }} albums</strong> and <strong class="highlight-text">{{ music.month.totalTracks }} tracks</strong> this month. Most of that has been {{ music.month.genres | mediaLinks: "genre", 5 }}.</p>
 <p><strong class="highlight-text">See the</strong> <a href="/music/albums/this-month/">albums</a> or <a href="/music/tracks/this-month/">tracks</a> I've listened to this month. <strong class="highlight-text">Or take a look at what I've listened to</strong> <a href="/music">this week</a> or <a href="/music/three-months">over the last 3 months</a>.</p>
 <p><a href="/music/concerts">You can also take a look at the concerts I've been to.</a></p>
 <hr />

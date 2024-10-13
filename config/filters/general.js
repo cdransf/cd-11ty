@@ -1,7 +1,4 @@
-import sanitizeHtml from 'sanitize-html'
 import { shuffleArray } from '../utilities/index.js'
-
-const BASE_URL = 'https://coryd.dev'
 
 export default {
   encodeAmp: (string) => {
@@ -12,8 +9,4 @@ export default {
   },
   formatNumber: (number) => number.toLocaleString('en-US'),
   shuffleArray,
-  sanitizeHtml: (html) => sanitizeHtml(html, {
-    textFilter: (text) => text.replace(/"/g, '')
-  }),
-  absoluteUrl: (url) => (new URL(url, BASE_URL)).toString(),
 }

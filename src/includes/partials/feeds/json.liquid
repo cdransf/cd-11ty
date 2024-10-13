@@ -2,7 +2,7 @@
   "version": "https://jsonfeed.org/version/1",
   "title": "{{ title }}",
   "home_page_url": "{{ globals.url }}",
-  "feed_url": "{{ permalink | absoluteUrl }}",
+  "feed_url": "{{ globals.url }}{{ permalink }}",
   "description": "{{ globals.site_description }}",
   "icon": "{{ globals.cdn_url }}{{ globals.avatar }}?class=w200",
   "author": {

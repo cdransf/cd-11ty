@@ -9,7 +9,6 @@ export default {
     if (book['status'] === 'finished' && book['year']) return parseInt(book['year']) === parseInt(year)
     return ''
   }),
-  sortByPlaysDescending: (data, key) => data.sort((a, b) => b[key] - a[key]),
   mediaLinks: (data, type, count = 10) => {
     if (!data || !type) return ''
 
