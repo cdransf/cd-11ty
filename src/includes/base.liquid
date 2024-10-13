@@ -97,8 +97,8 @@
     <link rel="stylesheet" href="/assets/styles/index.css?v={% appVersion %}" type="text/css" />
     <link rel="canonical" href="{{ fullUrl }}" />
     <meta property="og:title" content="{{ pageTitle }}" />
-    <meta name="description" content="{{ pageDescription }}" />
-    <meta property="og:description" content="{{ pageDescription }}" />
+    <meta name="description" content="{{ pageDescription | escape }}" />
+    <meta property="og:description" content="{{ pageDescription | escape }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ fullUrl }}" />
     <meta property="og:image" content="{{ ogImage }}?class=w800" />
@@ -127,7 +127,7 @@
             "@id": "{{ globals.url }}#website",
             "url": "{{ globals.url }}",
             "name": "{{ pageTitle }}",
-            "description": "{{ pageDescription }}",
+            "description": "{{ pageDescription | escape }}",
             "inLanguage": "{{ globals.locale }}"
           },
           {%- if schema == 'blog' -%}
@@ -137,7 +137,7 @@
               "isPartOf": { "@id": "{{ globals.url }}#website" },
               "@id": "{{ fullUrl }}",
               "headline": "{{ pageTitle }}",
-              "description": "{{ pageDescription }}",
+              "description": "{{ pageDescription | escape }}",
               "image": "{{ image | default: globals.meta_data.opengraph_default }}",
               "inLanguage": "{{ globals.locale }}",
               "publisher": { "@type": "{{ globals.site_type }}", "name": "{{ globals.author }}", "url": "{{ globals.url }}" },

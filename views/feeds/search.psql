@@ -65,6 +65,20 @@ WITH search_data AS (
       g.name AS genre_name,
       CONCAT('https://coryd.dev', g.url) AS genre_url
   FROM optimized_genres g
+
+  UNION ALL
+
+  SELECT
+      CASE
+          WHEN s.review IS NOT NULL THEN CONCAT('📺 ', s.title, ' (', s.year, ') - ', s.review)
+          ELSE CONCAT('📺 ', s.title, ' (', s.year, ')')
+      END AS title,
+      CONCAT('https://coryd.dev', s.url) AS url,
+      s.tags,
+      NULL AS genre_name,
+      NULL AS genre_url
+  FROM optimized_shows s
+  WHERE s.last_watched_at IS NOT NULL
 ),
 
 search_data_with_id AS (
