@@ -1,23 +1,26 @@
 export default {
   stringToRFC822Date: (dateString) => {
-    const date = new Date(Date.parse(dateString))
-    const dayStrings = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-    const monthStrings = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    const day = dayStrings[date.getDay()]
-    const dayNumber = String(date.getDate()).padStart(2, '0')
-    const month = monthStrings[date.getMonth()]
-    const year = date.getFullYear()
-    const time = `${String(date.getHours()).padStart(2, '0')}:${String(date.getMinutes()).padStart(2, '0')}:00`
-    const timezone = date.getTimezoneOffset() === 0 ? 'GMT' : 'PT'
-    return `${day}, ${dayNumber} ${month} ${year} ${time} ${timezone}`
+    const date = new Date(dateString)
+
+    if (isNaN(date)) return ''
+
+    const options = {
+      weekday: 'short',
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      timeZoneName: 'short'
+    }
+    const formatter = new Intl.DateTimeFormat('en-GB', options)
+
+    return formatter.format(date).replace(',', '')
   },
   stringToRFC3339: (dateString) => {
-    const timestamp = Date.parse(dateString);
-    if (!isNaN(timestamp)) {
-      const date = new Date(timestamp)
-      return date.toISOString()
-    } else {
-      return '';
-    }
+    const date = new Date(dateString)
+
+    return isNaN(date) ? '' : date.toISOString()
   }
 }
