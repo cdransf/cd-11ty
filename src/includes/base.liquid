@@ -85,6 +85,7 @@
     {%- assign genreArtist = genre.artists | shuffleArray | first -%}
     {%- assign ogImage = globals.cdn_url | append: genreArtist.grid.image -%}
 {%- endcase -%}
+{%- assign escapedPageDescription = pageDescription | escape -%}
 
 <!doctype html>
 <html lang="en">
@@ -97,8 +98,8 @@
     <link rel="stylesheet" href="/assets/styles/index.css?v={% appVersion %}" type="text/css" />
     <link rel="canonical" href="{{ fullUrl }}" />
     <meta property="og:title" content="{{ pageTitle }}" />
-    <meta name="description" content="{{ pageDescription | escape }}" />
-    <meta property="og:description" content="{{ pageDescription | escape }}" />
+    <meta name="description" content="{{ escapedPageDescription }}" />
+    <meta property="og:description" content="{{ escapedPageDescription }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ fullUrl }}" />
     <meta property="og:image" content="{{ ogImage }}?class=w800" />
@@ -127,7 +128,7 @@
             "@id": "{{ globals.url }}#website",
             "url": "{{ globals.url }}",
             "name": "{{ pageTitle }}",
-            "description": "{{ pageDescription | escape }}",
+            "description": "{{ escapedPageDescription }}",
             "inLanguage": "{{ globals.locale }}"
           },
           {%- if schema == 'blog' -%}
@@ -137,7 +138,7 @@
               "isPartOf": { "@id": "{{ globals.url }}#website" },
               "@id": "{{ fullUrl }}",
               "headline": "{{ pageTitle }}",
-              "description": "{{ pageDescription | escape }}",
+              "description": "{{ escapedPageDescription }}",
               "image": "{{ image | default: globals.meta_data.opengraph_default }}",
               "inLanguage": "{{ globals.locale }}",
               "publisher": { "@type": "{{ globals.site_type }}", "name": "{{ globals.author }}", "url": "{{ globals.url }}" },
