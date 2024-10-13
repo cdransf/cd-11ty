@@ -1,14 +1,11 @@
 export default {
   bookStatus: (books, status) => books.filter(book => book['status'] === status),
   bookFavorites: (books) => books.filter(book => book.favorite === true),
-  bookYearLinks: (years) => years.sort((a, b) => b.value - a.value).map((year, index) => {
-    const separator = index < years.length - 1 ? ' / ' : ''
-    return `<a href="/books/years/${year.value}">${year.value}</a>${separator}`
-  }).join(''),
-  bookFinishedYear: (books, year) => books.filter(book => {
-    if (book['status'] === 'finished' && book['year']) return parseInt(book['year']) === parseInt(year)
-    return ''
-  }),
+  bookYearLinks: (years) => years
+      .sort((a, b) => b.value - a.value)
+      .map((year, index) => `<a href="/books/years/${year.value}">${year.value}</a>${index < years.length - 1 ? ' / ' : ''}`)
+      .join(''),
+  bookFinishedYear: (books, year) => books.filter(book => book.status === 'finished' && parseInt(book.year) === parseInt(year)),
   mediaLinks: (data, type, count = 10) => {
     if (!data || !type) return ''
 
