@@ -13,7 +13,6 @@ WITH sitemap_data AS (
       b.title,
       CONCAT('https://coryd.dev', b.url) AS url
   FROM optimized_books b
-  WHERE LOWER(b.status) = 'finished'
 
   UNION ALL
 
@@ -22,7 +21,6 @@ WITH sitemap_data AS (
       m.title,
       CONCAT('https://coryd.dev', m.url) AS url
   FROM optimized_movies m
-  WHERE m.last_watched IS NOT NULL
 
   UNION ALL
 
@@ -47,7 +45,6 @@ WITH sitemap_data AS (
       s.title,
       CONCAT('https://coryd.dev', s.url) AS url
   FROM optimized_shows s
-  WHERE s.last_watched_at IS NOT NULL
 )
 
 SELECT
