@@ -4,30 +4,30 @@ layout: null
 eleventyExcludeFromCollections: true
 ---
 {
-  "subject":"acct:cory@follow.coryd.dev",
+  "subject":"acct:{{ globals.webfinger_username }}@{{ globals.webfinger_hostname }}",
   "aliases":[
-    "https://follow.coryd.dev/@cory",
-    "https://follow.coryd.dev/users/cory"
+    "https://{{ globals.webfinger_hostname }}/@{{ globals.webfinger_username }}",
+    "https://{{ globals.webfinger_hostname }}/users/{{ globals.webfinger_username }}"
   ],
   "links":[
     {
       "rel":"http://webfinger.net/rel/profile-page",
       "type":"text/html",
-      "href":"https://follow.coryd.dev/@cory"
+      "href":"https://{{ globals.webfinger_hostname }}/@{{ globals.webfinger_username }}"
     },
     {
       "rel":"self",
       "type":"application/activity+json",
-      "href":"https://follow.coryd.dev/users/cory"
+      "href":"https://{{ globals.webfinger_hostname }}/users/{{ globals.webfinger_username }}"
     },
     {
       "rel":"http://ostatus.org/schema/1.0/subscribe",
-      "template":"https://follow.coryd.dev/authorize_interaction?uri={uri}"
+      "template":"https://{{ globals.webfinger_hostname }}/authorize_interaction?uri={uri}"
     },
     {
       "rel":"http://webfinger.net/rel/avatar",
       "type":"image/png",
-      "href":"{{ globals.cdn_url }}/f7516bb2-d914-479f-91c6-1bf96f3968bf.png?class=squarebase"
+      "href":"{{ globals.cdn_url }}{{ globals.avatar }}?class=squarebase"
     }
   ]
 }

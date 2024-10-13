@@ -12,6 +12,8 @@ SELECT
     g.site_type,
     g.locale,
     g.lang,
+    g.webfinger_username,
+    g.webfinger_hostname,
     CONCAT('/', df.filename_disk) AS avatar,
     CONCAT('/', df2.filename_disk) AS avatar_transparent
 FROM
