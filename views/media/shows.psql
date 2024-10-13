@@ -29,7 +29,6 @@ SELECT
   ) AS grid,
 
   json_build_object(
-    'type', 'tv',
     'title', s.title,
     'year', s.year,
     'url', s.slug,

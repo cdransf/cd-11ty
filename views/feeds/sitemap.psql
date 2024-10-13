@@ -2,7 +2,6 @@ CREATE OR REPLACE VIEW optimized_sitemap AS
 WITH sitemap_data AS (
   SELECT
       p.date AS content_date,
-      'post' AS content_type,
       p.title,
       CONCAT('https://coryd.dev', p.url) AS url
   FROM optimized_posts p
@@ -11,7 +10,6 @@ WITH sitemap_data AS (
 
   SELECT
       b.date_finished AS content_date,
-      'book' AS content_type,
       b.title,
       CONCAT('https://coryd.dev', b.url) AS url
   FROM optimized_books b
@@ -21,7 +19,6 @@ WITH sitemap_data AS (
 
   SELECT
       m.last_watched AS content_date,
-      'movie' AS content_type,
       m.title,
       CONCAT('https://coryd.dev', m.url) AS url
   FROM optimized_movies m
@@ -31,7 +28,6 @@ WITH sitemap_data AS (
 
   SELECT
       NULL AS content_date,
-      'artist' AS content_type,
       ar.name AS title,
       CONCAT('https://coryd.dev', ar.url) AS url
   FROM optimized_artists ar
@@ -40,7 +36,6 @@ WITH sitemap_data AS (
 
   SELECT
       NULL AS content_date,
-      'genre' AS content_type,
       g.name AS title,
       CONCAT('https://coryd.dev', g.url) AS url
   FROM optimized_genres g

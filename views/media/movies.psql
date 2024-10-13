@@ -11,7 +11,6 @@ SELECT
   m.star_rating AS rating,
   m.description,
   m.review,
-  'movie' AS type,
   m.slug AS url,
   CONCAT('/', df.filename_disk) AS image,
   CONCAT('/', df2.filename_disk) AS backdrop,

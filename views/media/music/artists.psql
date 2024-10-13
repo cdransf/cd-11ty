@@ -3,7 +3,7 @@ SELECT
     ar.name_string AS name,
     ar.slug AS url,
     ar.tentative,
-    ar.total_plays AS totalPlays,
+    ar.total_plays,
     ar.country,
     ar.description,
     ar.favorite,
@@ -27,8 +27,8 @@ SELECT
     (
         SELECT json_agg(json_build_object(
             'name', a.name,
-            'releaseYear', a.release_year,
-            'totalPlays', a.total_plays,
+            'release_year', a.release_year,
+            'total_plays', a.total_plays,
             'art', df_album.filename_disk
         ) ORDER BY a.release_year)
         FROM albums a

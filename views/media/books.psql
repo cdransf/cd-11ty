@@ -13,7 +13,6 @@ SELECT
     CONCAT('/', df.filename_disk) AS image,
     b.favorite,
     b.tattoo,
-    'book' AS type,
 
     (
       SELECT array_agg(t.name)

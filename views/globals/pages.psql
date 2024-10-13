@@ -1,5 +1,5 @@
 CREATE OR REPLACE VIEW optimized_pages AS
-SELECT 
+SELECT
   p.id,
   p.title,
   p.permalink,

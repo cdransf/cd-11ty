@@ -142,7 +142,7 @@
               "inLanguage": "{{ globals.locale }}",
               "publisher": { "@type": "{{ globals.site_type }}", "name": "{{ globals.author }}", "url": "{{ globals.url }}" },
               "author": { "@type": "Person", "name": "{{ globals.author }}" },
-              "datePublished": "{{ page.date | isoDateOnly: '.' }}"
+              "datePublished": "{{ page.date | date: "%Y.%m.%d" }}"
             }
           {%- endif -%}
         ]

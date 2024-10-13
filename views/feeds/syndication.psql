@@ -2,7 +2,6 @@ CREATE OR REPLACE VIEW optimized_syndication AS
 WITH syndication_data AS (
   SELECT
       p.date AS content_date,
-      'post' AS content_type,
       p.title,
       p.description,
       CONCAT('https://coryd.dev', p.url) AS url,
@@ -24,7 +23,6 @@ WITH syndication_data AS (
 
   SELECT
       l.date AS content_date,
-      'link' AS content_type,
       l.title,
       l.description,
       l.link AS url,
@@ -52,7 +50,6 @@ WITH syndication_data AS (
 
   SELECT
       b.date_finished AS content_date,
-      'book' AS content_type,
       b.title,
       b.description,
       CONCAT('https://coryd.dev', b.url) AS url,
@@ -77,7 +74,6 @@ WITH syndication_data AS (
 
   SELECT
       m.last_watched AS content_date,
-      'movie' AS content_type,
       m.title,
       m.description,
       CONCAT('https://coryd.dev', m.url) AS url,

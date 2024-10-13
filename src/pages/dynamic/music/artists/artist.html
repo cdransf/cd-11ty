@@ -12,7 +12,7 @@ schema: artist
   {{ artist.name }} / {{ artist.country }}
 {%- endcapture -%}
 {%- capture playLabel -%}
-  {%- if artist.totalPlays == 1 -%}
+  {%- if artist.total_plays == 1 -%}
     play
   {%- else -%}
     plays
@@ -105,8 +105,8 @@ schema: artist
     {% for album in artist.albums %}
     <tr>
       <td>{{ album.name }}</td>
-      <td>{{ album.totalPlays }}</td>
-      <td>{{ album.releaseYear }}</td>
+      <td>{{ album.total_plays }}</td>
+      <td>{{ album.release_year }}</td>
     </tr>
     {% endfor %}
   </table>

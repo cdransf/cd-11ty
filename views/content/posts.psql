@@ -8,12 +8,18 @@ SELECT
   p.featured,
   p.slug AS url,
   p.mastodon_url,
+
   CASE
     WHEN df.filename_disk IS NOT NULL AND df.filename_disk != '' AND df.filename_disk != '/'
     THEN CONCAT('/', df.filename_disk)
     ELSE NULL
   END AS image,
   p.image_alt,
+
+  CASE
+    WHEN EXTRACT(YEAR FROM AGE(CURRENT_DATE, p.date)) > 3 THEN TRUE
+    ELSE FALSE
+  END AS old_post,
 
   (
     SELECT json_agg(
