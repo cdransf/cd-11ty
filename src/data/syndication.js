@@ -15,5 +15,6 @@ export default async function fetchSyndication() {
   }
 
   const [{ syndication } = {}] = data
+
   return syndication?.filter(item => item['syndication'] !== null) || []
 }

@@ -15,5 +15,6 @@ export default async function fetchSyndication() {
   }
 
   const [{ feed } = {}] = data
+
   return feed?.filter(item => item['feed'] !== null) || []
 }

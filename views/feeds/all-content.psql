@@ -22,14 +22,14 @@ WITH feed_data AS (
   SELECT
       l.date AS content_date,
       'link' AS content_type,
-      CONCAT(l.title, ' via ', l.name) AS title,
+      l.title,
       l.description,
       l.link AS url,
       NULL AS image,
       NULL AS rating,
       l.tags,
       json_build_object(
-          'title', CONCAT(l.title, ' via ', l.name),
+          'title', l.title,
           'url', l.link,
           'description', l.description,
           'date', l.date
@@ -86,4 +86,10 @@ WITH feed_data AS (
 )
 
 SELECT json_agg(feed_data.* ORDER BY feed_data.content_date DESC) AS feed
-FROM feed_data;
+FROM (
+    SELECT *
+    FROM feed_data
+    WHERE feed IS NOT NULL
+    ORDER BY content_date DESC
+    LIMIT 20
+) AS feed_data;
