@@ -49,6 +49,5 @@ export default {
     }
 
     return `${allButLast} and ${last}`
-  },
-  formatVenue: (venue) => venue.split(',')[0].trim()
+  }
 }

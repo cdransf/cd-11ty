@@ -24,9 +24,9 @@ permalink: "/music/concerts/{% if pagination.pageNumber > 0 %}{{ pagination.page
     {%- capture venue -%}
       {% if concert.venue.name %}
         {% if concert.venue.latitude and concert.venue.longitude %}
-          <a href="https://www.openstreetmap.org/?mlat={{ concert.venue.latitude }}&mlon={{ concert.venue.longitude }}#map=18/{{ concert.venue.latitude }}/{{ concert.venue.longitude }}">{{ concert.venue.name | formatVenue }}</a>
+          <a href="https://www.openstreetmap.org/?mlat={{ concert.venue.latitude }}&mlon={{ concert.venue.longitude }}#map=18/{{ concert.venue.latitude }}/{{ concert.venue.longitude }}">{{ concert.venue.name_short }}</a>
         {% else %}
-          {{ concert.venue.name | formatVenue }}
+          {{ concert.venue.name_short }}
         {% endif %}
       {% endif %}
     {%- endcapture -%}

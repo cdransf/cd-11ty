@@ -41,6 +41,7 @@ SELECT
             'id', c.id,
             'date', c.date,
             'venue_name', v.name,
+            'venue_name_short', trim(split_part(v.name, ',', 1)),
             'venue_latitude', v.latitude,
             'venue_longitude', v.longitude,
             'notes', c.notes
@@ -65,9 +66,7 @@ SELECT
         SELECT json_agg(json_build_object(
             'title', m.title,
             'year', m.year,
-            'url', m.slug,
-            'rating', m.rating,
-            'favorite', m.favorite
+            'url', m.slug
         ) ORDER BY m.year DESC)
         FROM movies_artists ma
         LEFT JOIN movies m ON ma.movies_id = m.id
