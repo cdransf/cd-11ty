@@ -11,7 +11,7 @@ schema: show
   {{ show.title }} / {{ show.year }}
 {%- endcapture -%}
 <a class="icon-link" href="/watching" title="Go back to the watching index page">{% tablericon "arrow-left" %} Back to watching</a>
-<article class="watching-focus">
+<article class="watching focus">
   <img
     srcset="
       https://cdn.coryd.dev{{ show.backdrop }}?class=bannersm&type=webp 256w,
@@ -29,7 +29,7 @@ schema: show
     width="256"
     height="180"
   />
-  <div class="watching-meta">
+  <div class="meta">
     <p class="title"><strong>{{ show.title }}</strong>{%- if show.year %} ({{ show.year }}){%- endif -%}</p>
     {%- if show.favorite -%}
       <p class="sub-meta favorite">{% tablericon "heart" %} This is one of my favorite shows!</p>

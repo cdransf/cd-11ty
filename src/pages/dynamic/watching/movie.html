@@ -11,7 +11,7 @@ schema: movie
   {{ movie.title }} / {{ movie.year }}{% if move.rating %} ({{ movie.rating }}){% endif %}
 {%- endcapture -%}
 <a class="icon-link" href="/watching" title="Go back to the watching index page">{% tablericon "arrow-left" %} Back to watching</a>
-<article class="watching-focus">
+<article class="watching focus">
   <img
     srcset="
       https://cdn.coryd.dev{{ movie.backdrop }}?class=bannersm&type=webp 256w,
@@ -29,7 +29,7 @@ schema: movie
     width="256"
     height="180"
   />
-  <div class="watching-meta">
+  <div class="meta">
     <p class="title"><strong>{{ movie.title }}</strong>{%- if movie.year and not movie.rating %} ({{ movie.year }}){%- endif -%}</p>
     {%- if movie.rating -%}
       <p>
