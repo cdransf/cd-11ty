@@ -20,12 +20,12 @@ schema: books
     <a href="{{ book.url }}">
       <img
         srcset="
-          https://cdn.coryd.dev{{ book.image }}?class=verticalsm&type=webp 200w,
-          https://cdn.coryd.dev{{ book.image }}?class=verticalmd&type=webp 400w
+          {{ globals.cdn_url }}{{ book.image }}?class=verticalsm&type=webp 200w,
+          {{ globals.cdn_url }}{{ book.image }}?class=verticalmd&type=webp 400w
         "
         sizes="(max-width: 450px) 200px,
           400px"
-        src="https://cdn.coryd.dev{{ book.image }}?class=verticalsm&type=webp"
+        src="{{ globals.cdn_url }}{{ book.image }}?class=verticalsm&type=webp"
         alt="{{ alt }}"
         loading="lazy"
         decoding="async"

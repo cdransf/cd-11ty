@@ -13,11 +13,11 @@
         {%- if shape == 'poster' -%}
           <img
             srcset="
-              https://cdn.coryd.dev{{ item.grid.backdrop }}?class=bannersm&type=webp 256w,
-              https://cdn.coryd.dev{{ item.grid.backdrop }}?class=bannermd&type=webp 512w
+              {{ globals.cdn_url }}{{ item.grid.backdrop }}?class=bannersm&type=webp 256w,
+              {{ globals.cdn_url }}{{ item.grid.backdrop }}?class=bannermd&type=webp 512w
             "
             sizes="(max-width: 450px) 256px, 512px"
-            src="https://cdn.coryd.dev{{ item.grid.backdrop }}?class=bannersm&type=webp"
+            src="{{ globals.cdn_url }}{{ item.grid.backdrop }}?class=bannersm&type=webp"
             alt="{{ alt }}"
             loading="{{ loadingStrategy }}"
             decoding="async"
@@ -27,11 +27,11 @@
         {%- elsif shape == 'square' -%}
           <img
             srcset="
-              https://cdn.coryd.dev{{ item.grid.image }}?class=squaresm&type=webp 200w,
-              https://cdn.coryd.dev{{ item.grid.image }}?class=squaremd&type=webp 400w
+              {{ globals.cdn_url }}{{ item.grid.image }}?class=squaresm&type=webp 200w,
+              {{ globals.cdn_url }}{{ item.grid.image }}?class=squaremd&type=webp 400w
             "
             sizes="(max-width: 450px) 200px, 400px"
-            src="https://cdn.coryd.dev{{ item.grid.image }}?class=squaresm&type=webp"
+            src="{{ globals.cdn_url }}{{ item.grid.image }}?class=squaresm&type=webp"
             alt="{{ alt }}"
             loading="{{ loadingStrategy }}"
             decoding="async"
@@ -41,11 +41,11 @@
         {%- elsif shape == 'vertical' -%}
         <img
           srcset="
-            https://cdn.coryd.dev{{ item.grid.image }}?class=verticalsm&type=webp 200w,
-            https://cdn.coryd.dev{{ item.grid.image }}?class=verticalmd&type=webp 400w
+            {{ globals.cdn_url }}{{ item.grid.image }}?class=verticalsm&type=webp 200w,
+            {{ globals.cdn_url }}{{ item.grid.image }}?class=verticalmd&type=webp 400w
           "
           sizes="(max-width: 450px) 200px, 400px"
-          src="https://cdn.coryd.dev{{ item.grid.image }}?class=verticalsm&type=webp"
+          src="{{ globals.cdn_url }}{{ item.grid.image }}?class=verticalsm&type=webp"
           alt="{{ alt }}"
           loading="{{ loadingStrategy }}"
           decoding="async"

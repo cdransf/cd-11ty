@@ -5,11 +5,11 @@
         <a href="{{ item.chart.url }}">
           <img
             srcset="
-              https://cdn.coryd.dev{{ item.chart.image }}?class=w50&type=webp 50w,
-              https://cdn.coryd.dev{{ item.chart.image }}?class=w100&type=webp 100w
+              {{ globals.cdn_url }}{{ item.chart.image }}?class=w50&type=webp 50w,
+              {{ globals.cdn_url }}{{ item.chart.image }}?class=w100&type=webp 100w
             "
             sizes="(max-width: 450px) 50px, 100px"
-            src="https://cdn.coryd.dev{{ item.chart.image }}?class=w50&type=webp"
+            src="{{ globals.cdn_url }}{{ item.chart.image }}?class=w50&type=webp"
             alt="{{ item.chart.alt }}"
             loading="lazy"
             decoding="async"

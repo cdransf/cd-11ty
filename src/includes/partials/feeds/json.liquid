@@ -4,11 +4,11 @@
   "home_page_url": "{{ globals.url }}",
   "feed_url": "{{ permalink | absoluteUrl }}",
   "description": "{{ globals.site_description }}",
-  "icon": "https://cdn.coryd.dev{{ globals.avatar }}?class=w200",
+  "icon": "{{ globals.cdn_url }}{{ globals.avatar }}?class=w200",
   "author": {
     "name": "{{ globals.site_name }}",
     "url": "{{ globals.url }}",
-    "avatar": "https://cdn.coryd.dev{{ globals.avatar }}?class=w200"
+    "avatar": "{{ globals.cdn_url }}{{ globals.avatar }}?class=w200"
   },
   "items": [
     {%- assign entries = data -%}

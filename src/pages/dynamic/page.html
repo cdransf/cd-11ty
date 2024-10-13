@@ -6,7 +6,7 @@ pagination:
   alias: page
 description: "{{ page.description }}"
 permalink: "{{ page.permalink }}/index.html"
-image: "{{ page.open_graph_image | prepend: 'https://cdn.coryd.dev' | default: globals.avatar }}"
+image: "{{ page.open_graph_image | prepend: globals.cdn_url | default: globals.avatar }}"
 updated: {{ page.updated | default: null }}
 ---
 {% render "partials/blocks/index.liquid", blocks:page.blocks %}

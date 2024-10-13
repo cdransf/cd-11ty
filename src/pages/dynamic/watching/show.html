@@ -14,14 +14,14 @@ schema: show
 <article class="watching focus">
   <img
     srcset="
-      https://cdn.coryd.dev{{ show.backdrop }}?class=bannersm&type=webp 256w,
-      https://cdn.coryd.dev{{ show.backdrop }}?class=bannermd&type=webp 512w,
-      https://cdn.coryd.dev{{ show.backdrop }}?class=bannerbase&type=webp 1024w
+      {{ globals.cdn_url }}{{ show.backdrop }}?class=bannersm&type=webp 256w,
+      {{ globals.cdn_url }}{{ show.backdrop }}?class=bannermd&type=webp 512w,
+      {{ globals.cdn_url }}{{ show.backdrop }}?class=bannerbase&type=webp 1024w
     "
     sizes="(max-width: 450px) 256px,
       (max-width: 850px) 512px,
       1024px"
-    src="https://cdn.coryd.dev{{ show.backdrop }}?class=bannersm&type=webp"
+    src="{{ globals.cdn_url }}{{ show.backdrop }}?class=bannersm&type=webp"
     alt="{{ alt }}"
     class="image-banner"
     loading="eager"

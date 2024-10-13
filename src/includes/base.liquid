@@ -47,44 +47,44 @@
   {%- assign pageDescription = description -%}
 {%- endif -%}
 
-{%- assign ogImage = 'https://cdn.coryd.dev' | append: globals.avatar | append: "?class=w800" -%}
+{%- assign ogImage = globals.cdn_url | append: globals.avatar -%}
 {%- case schema -%}
   {%- when 'music' -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: page.image -%}
+    {%- assign ogImage = globals.cdn_url | append: page.image -%}
   {%- when 'music-index' -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: music.week.artists[0].image -%}
+    {%- assign ogImage = globals.cdn_url | append: music.week.artists[0].grid.image -%}
   {%- when 'artist' -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: artist.image -%}
+    {%- assign ogImage = globals.cdn_url | append: artist.grid.image -%}
   {%- when 'genre' -%}
     {%- assign sortedGenreArtists = genre.artists | sortByPlaysDescending: "total_plays" -%}
-    {%- assign ogImage =  'https://cdn.coryd.dev' | append: sortedGenreArtists[0].image -%}
+    {%- assign ogImage =  globals.cdn_url | append: sortedGenreArtists[0].grid.image -%}
   {%- when 'watching' -%}
     {%- assign featuredMovie = movies.recentlyWatched | first -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredMovie.backdrop -%}
+    {%- assign ogImage = globals.cdn_url | append: featuredMovie.grid.backdrop -%}
   {%- when 'watching-shows' -%}
     {%- assign featuredShow = tv.recentlyWatched | first -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredShow.backdrop -%}
+    {%- assign ogImage = globals.cdn_url | append: featuredShow.grid.backdrop -%}
   {%- when 'favorite-movies' -%}
     {%- assign featuredMovie = movies.favorites| shuffleArray | first -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredMovie.backdrop -%}
+    {%- assign ogImage = globals.cdn_url | append: featuredMovie.grid.backdrop -%}
   {%- when 'favorite-shows' -%}
     {%- assign featuredShow = tv.favorites | shuffleArray | first -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredShow.backdrop -%}
+    {%- assign ogImage = globals.cdn_url | append: featuredShow.grid.backdrop -%}
   {%- when 'books' -%}
     {%- assign featuredBook = books.all | bookStatus: 'started' | reverse | first -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredBook.image -%}
+    {%- assign ogImage = globals.cdn_url | append: featuredBook.grid.image -%}
   {%- when 'books-year' -%}
     {%- assign featuredBook = books.all | bookStatus: 'finished' | bookFinishedYear: year.value | first -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: featuredBook.image -%}
+    {%- assign ogImage = globals.cdn_url | append: featuredBook.grid.image -%}
   {%- when 'book' -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: book.image -%}
+    {%- assign ogImage = globals.cdn_url | append: book.grid.image -%}
   {%- when 'movie' -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: movie.backdrop -%}
+    {%- assign ogImage = globals.cdn_url | append: movie.grid.backdrop -%}
   {%- when 'show' -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: show.backdrop -%}
+    {%- assign ogImage = globals.cdn_url | append: show.grid.backdrop -%}
   {%- when 'genre' -%}
     {%- assign genreArtist = genre.artists | shuffleArray | first -%}
-    {%- assign ogImage = 'https://cdn.coryd.dev' | append: genreArtist.image -%}
+    {%- assign ogImage = globals.cdn_url | append: genreArtist.grid.image -%}
 {%- endcase -%}
 
 <!doctype html>
@@ -107,9 +107,9 @@
     <meta name="fediverse:creator" content="{{ globals.mastodon }}" />
     <meta name="generator" content="Eleventy">
     <meta name="robots" content="noai, noimageai">
-    <link href="https://cdn.coryd.dev{{ globals.avatar_transparent }}?class=w50&v={% appVersion %}" rel="icon" sizes="any">
-    <link href="https://cdn.coryd.dev{{ globals.avatar_transparent }}?class=w50&v={% appVersion %}&type=svg" rel="icon" type="image/svg+xml">
-    <link href="https://cdn.coryd.dev{{ globals.avatar }}?class=w800&v={% appVersion %}" rel="apple-touch-icon">
+    <link href="{{ globals.cdn_url }}{{ globals.avatar_transparent }}?class=w50&v={% appVersion %}" rel="icon" sizes="any">
+    <link href="{{ globals.cdn_url }}{{ globals.avatar_transparent }}?class=w50&v={% appVersion %}&type=svg" rel="icon" type="image/svg+xml">
+    <link href="{{ globals.cdn_url }}{{ globals.avatar }}?class=w800&v={% appVersion %}" rel="apple-touch-icon">
     <link type="application/atom+xml" rel="alternate" title="Posts / {{ globals.site_name }}" href="https://coryd.dev/feeds/posts">
     <link rel="alternate" href="https://coryd.dev/feeds/links" title="Links / {{ globals.site_name }}" type="application/rss+xml">
     <link rel="alternate" href="https://coryd.dev/feeds/movies" title="Movies / {{ globals.site_name }}'s movies feed" type="application/rss+xml">

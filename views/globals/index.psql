@@ -1,12 +1,13 @@
 CREATE OR REPLACE VIEW optimized_globals AS
 SELECT
-    g.id,
     g.site_name,
     g.site_description,
+    g.intro,
     g.author,
     g.email,
     g.mastodon,
     g.url,
+    g.cdn_url,
     g.theme_color,
     g.site_type,
     g.locale,

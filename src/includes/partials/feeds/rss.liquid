@@ -11,7 +11,7 @@
     <image>
       <title><![CDATA[{{ title }}]]></title>
       <link>{{ permalink | absoluteUrl }}</link>
-      <url>{{ "https://cdn.coryd.dev" | append: globals.avatar | append: "?class=w200" }}</url>
+      <url>{{ globals.cdn_url }}{{ globals.avatar }}?class=w200</url>
       <width>144</width>
       <height>144</height>
     </image>
@@ -34,7 +34,7 @@
         <pubDate>{{ entryFeed.date | stringToRFC822Date }}</pubDate>
         <guid isPermaLink="false">{{ entryFeed.url | encodeAmp }}</guid>
         {%- if entryFeed.image -%}
-          <enclosure url="https://cdn.coryd.dev{{ entryFeed.image }}?class=w800" type="image/jpeg" />
+          <enclosure url="{{ globals.cdn_url }}{{ entryFeed.image }}?class=w800&type=jpg" type="image/jpeg" />
         {%- endif -%}
         <description><![CDATA[{{ entryFeed.description | markdown }}]]></description>
       </item>

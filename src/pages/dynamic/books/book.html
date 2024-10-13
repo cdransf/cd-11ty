@@ -15,15 +15,15 @@ schema: book
   <div class="book-display">
     <img
       srcset="
-        https://cdn.coryd.dev{{ book.image }}?class=verticalsm&type=webp 200w,
-        https://cdn.coryd.dev{{ book.image }}?class=verticalmd&type=webp 400w,
-        https://cdn.coryd.dev{{ book.image }}?class=verticalbase&type=webp 800w
+        {{ globals.cdn_url }}{{ book.image }}?class=verticalsm&type=webp 200w,
+        {{ globals.cdn_url }}{{ book.image }}?class=verticalmd&type=webp 400w,
+        {{ globals.cdn_url }}{{ book.image }}?class=verticalbase&type=webp 800w
       "
       sizes="(max-width: 450px) 203px,
         (max-width: 850px) 406px,
         (max-width: 1000px) 812px,
         812px"
-      src="https://cdn.coryd.dev{{ book.image }}?class=verticalsm&type=webp"
+      src="{{ globals.cdn_url }}{{ book.image }}?class=verticalsm&type=webp"
       alt="{{ alt }}"
       loading="lazy"
       decoding="async"

@@ -24,14 +24,14 @@ schema: artist
   <div class="artist-display">
     <img
       srcset="
-        https://cdn.coryd.dev{{ artist.image }}?class=w200&type=webp 200w,
-        https://cdn.coryd.dev{{ artist.image }}?class=w600&type=webp 400w,
-        https://cdn.coryd.dev{{ artist.image }}?class=w800&type=webp 800w
+        {{ globals.cdn_url }}{{ artist.image }}?class=w200&type=webp 200w,
+        {{ globals.cdn_url }}{{ artist.image }}?class=w600&type=webp 400w,
+        {{ globals.cdn_url }}{{ artist.image }}?class=w800&type=webp 800w
       "
       sizes="(max-width: 450px) 200px,
         (max-width: 850px) 400px,
         800px"
-      src="https://cdn.coryd.dev{{ artist.image }}?class=w200&type=webp"
+      src="{{ globals.cdn_url }}{{ artist.image }}?class=w200&type=webp"
       alt="{{ alt }}"
       loading="eager"
       decoding="async"

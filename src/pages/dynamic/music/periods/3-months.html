@@ -18,14 +18,14 @@ schema: music-period
     Artists
   </a>
 </h3>
-{% render "partials/media/grid.liquid", data:music.threeMonth.artists, shape:"square", count: 8, loading: "eager" %}
+{% render "partials/media/grid.liquid", globals:globals, data:music.threeMonth.artists, shape:"square", count: 8, loading: "eager" %}
 <h3 id="albums">
   <a class="icon-link" href="/music/albums/three-months">
     {% tablericon "vinyl" %}
     Albums
   </a>
 </h3>
-{% render "partials/media/grid.liquid", data:music.threeMonth.albums, shape:"square", count: 8 %}
+{% render "partials/media/grid.liquid", globals:globals, data:music.threeMonth.albums, shape:"square", count: 8 %}
 <h3 id="tracks">
   <a class="icon-link" href="/music/tracks/three-months">
     {% tablericon "playlist" %}
