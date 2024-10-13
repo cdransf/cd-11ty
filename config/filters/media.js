@@ -13,39 +13,26 @@ export default {
     if (!data || !type) return ''
 
     const dataSlice = data.slice(0, count)
-
     if (dataSlice.length === 0) return null
-    if (dataSlice.length === 1) {
-      const item = dataSlice[0]
-      if (type === 'genre') {
-        return `<a href="${item['genre_url']}">${item['genre_name']}</a>`
-      } else if (type === 'artist') {
-        return `<a href="${item['url']}">${item['name']}</a>`
-      } else if (type === 'book') {
-        return `<a href="${item['url']}">${item['title']}</a>`
+
+    const buildLink = (item) => {
+      switch (type) {
+        case 'genre':
+          return `<a href="${item['genre_url']}">${item['genre_name']}</a>`
+        case 'artist':
+          return `<a href="${item['url']}">${item['name']}</a>`
+        case 'book':
+          return `<a href="${item['url']}">${item['title']}</a>`
+        default:
+          return ''
       }
     }
 
-    const allButLast = dataSlice.slice(0, -1).map(item => {
-      if (type === 'genre') {
-        return `<a href="${item['genre_url']}">${item['genre_name']}</a>`
-      } else if (type === 'artist') {
-        return `<a href="${item['url']}">${item['name']}</a>`
-      } else if (type === 'book') {
-        return `<a href="${item['url']}">${item['title']}</a>`
-      }
-    }).join(', ')
+    if (dataSlice.length === 1) return buildLink(dataSlice[0])
 
-    let last
-    const lastItem = dataSlice[dataSlice.length - 1]
-
-    if (type === 'genre') {
-      last = `<a href="${lastItem['genre_url']}">${lastItem['genre_name']}</a>`
-    } else if (type === 'artist') {
-      last = `<a href="${lastItem['url']}">${lastItem['name']}</a>`
-    } else if (type === 'book') {
-      last = `<a href="${lastItem['url']}">${lastItem['title']}</a>`
-    }
+    const links = dataSlice.map(buildLink)
+    const allButLast = links.slice(0, -1).join(', ')
+    const last = links[links.length - 1]
 
     return `${allButLast} and ${last}`
   }
