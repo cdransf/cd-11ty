@@ -10,7 +10,7 @@
     Recent activity
   </h2>
   <ul>
-    <li><span class="music">Top track this week:</span> <a href="{{ track.url }}">{{ track.title }} by {{ track.artist }}</a></li>
+    <li><span class="music">Top track this week:</span> <a href="{{ track.artist_url }}">{{ track.track_name }} by {{ track.artist_name }}</a></li>
     <li><span class="tv">Last episode watched:</span> <strong class="highlight-text">{{ show.formatted_episode }}</strong> of <a href="{{ show.url }}">{{ show.title }}</a></li>
     <li><span class="movies">Last movie watched:</span> <a href="{{ movie.url }}">{{ movie.title }}</a>{%- if movie.rating %} ({{ movie.rating }}){%- endif -%}</li>
     <li><span class="books">Last book finished:</span> <a href="{{ book.url }}">{{ book.title }}</a> by {{ book.author }}{%- if book.rating %} ({{ book.rating }}){%- endif -%}</li>
