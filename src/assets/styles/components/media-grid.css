@@ -1,18 +1,3 @@
-:root {
-  --columns-two: repeat(2, minmax(0, 1fr));
-  --columns-three: repeat(3, minmax(0, 1fr));
-
-  --grid-poster: var(--columns-two);
-  --grid-square: var(--columns-two);
-  --grid-vertical: var(--columns-three);
-
-  @media screen and (min-width: 768px) {
-    --grid-poster: var(--columns-three);
-    --grid-square: repeat(4, minmax(0, 1fr));
-    --grid-vertical: repeat(6, minmax(0, 1fr));
-  }
-}
-
 .icon-link + .media-grid {
   margin-top: var(--spacing-base);
 }

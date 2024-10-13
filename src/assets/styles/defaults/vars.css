@@ -160,6 +160,22 @@
   --aspect-ratio-vertical: 2/3;
   --aspect-ratio-banner: 3/2;
 
+  /* grid columns */
+  --grid-columns-two: repeat(2, minmax(0, 1fr));
+  --grid-columns-three: repeat(3, minmax(0, 1fr));
+  --grid-columns-four: repeat(4, minmax(0, 1fr));
+  --grid-columns-six: repeat(6, minmax(0, 1fr));
+
+  --grid-poster: var(--grid-columns-two);
+  --grid-square: var(---grid-columns-two);
+  --grid-vertical: var(--grid-columns-three);
+
+  @media screen and (min-width: 768px) {
+    --grid-poster: var(--grid-columns-three);
+    --grid-square: var(--grid-columns-four);
+    --grid-vertical: var(--grid-columns-six);
+  }
+
   /* transitions */
   --transition-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-duration-default: 300ms;
