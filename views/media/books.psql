@@ -96,7 +96,7 @@ SELECT
         'subtext',
             CASE
                 WHEN b.star_rating IS NOT NULL
-                THEN CONCAT('(', b.star_rating, ')')
+                THEN b.star_rating
                 ELSE NULL
             END
     ) AS grid,

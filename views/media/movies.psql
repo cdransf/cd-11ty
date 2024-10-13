@@ -23,8 +23,8 @@ SELECT
     'backdrop', CONCAT('/', df2.filename_disk),
     'alt', CONCAT(m.title, ' (', m.year, ')'),
     'subtext', CASE
-      WHEN m.star_rating IS NOT NULL THEN CONCAT(m.year, ' (', m.star_rating, ')')
-      ELSE m.year::TEXT
+      WHEN m.star_rating IS NOT NULL THEN CONCAT(m.star_rating, ' (', m.year, ')')
+      ELSE CONCAT('(', m.year, ')')
     END
   ) AS grid,
 
@@ -102,7 +102,7 @@ SELECT
   ) AS related_movies,
 
   CASE
-    WHEN m.star_rating IS NOT NULL AND m.last_watched IS NOT NULL THEN 
+    WHEN m.star_rating IS NOT NULL AND m.last_watched IS NOT NULL THEN
       json_build_object(
         'title', m.title,
         'url', CONCAT('https://coryd.dev/movies/', m.slug),
