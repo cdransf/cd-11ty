@@ -17,4 +17,4 @@ schema: music
 <p><a href="/music/concerts">You can also take a look at the concerts I've been to.</a></p>
 <hr />
 {% endif %}
-{% render "partials/media/music/chart.liquid" data:pagination.items %}
+{% render "partials/media/music/chart.liquid" data:pagination.items, pagination:pagination %}
