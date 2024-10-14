@@ -9,4 +9,4 @@ permalink: "{{ page.permalink }}/index.html"
 image: "{{ page.open_graph_image | prepend: globals.cdn_url | default: globals.avatar }}"
 updated: {{ page.updated | default: null }}
 ---
-{% render "partials/blocks/index.liquid", blocks:page.blocks %}
+{% render "partials/blocks/index.liquid", blocks:page.blocks, globals:globals %}
