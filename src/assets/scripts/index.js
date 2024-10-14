@@ -42,9 +42,7 @@ window.addEventListener('load', () => {
     const checkModals = () => {
       let isAnyModalOpen = false
       modalInputs.forEach((modalInput) => {
-        if (modalInput.checked) {
-          isAnyModalOpen = true
-        }
+        if (modalInput.checked) isAnyModalOpen = true
       })
       toggleBodyScroll(isAnyModalOpen)
     }
@@ -56,9 +54,7 @@ window.addEventListener('load', () => {
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         modalInputs.forEach((modalInput) => {
-          if (modalInput.checked) {
-            modalInput.checked = false
-          }
+          if (modalInput.checked) modalInput.checked = false
         })
         toggleBodyScroll(false)
       }

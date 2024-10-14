@@ -32,8 +32,8 @@ WITH syndication_data AS (
               CASE
                   WHEN l.mastodon IS NOT NULL THEN
                       ' via @' || split_part(l.mastodon, '@', 2) || '@' || split_part(split_part(l.mastodon, 'https://', 2), '/', 1)
-                  ELSE ''
-              END, CONCAT(' via ', l.name), (
+                  ELSE CONCAT(' via ', l.name)
+              END, ' ', (
                   SELECT array_to_string(
                       array_agg('#' || initcap(replace(t.name, ' ', ''))), ' '
                   )

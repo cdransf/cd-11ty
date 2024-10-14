@@ -1,10 +1,10 @@
 .badge-grid {
   display: grid;
   gap: var(--spacing-md);
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: var(--grid-columns-three);
 
   @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: var(--grid-columns-four);
   }
 
   & > * {

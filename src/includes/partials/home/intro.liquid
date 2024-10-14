@@ -1,4 +1,6 @@
 <article>
   {{ intro }}
-  {% render "partials/blocks/now-playing.liquid", nowPlaying:nowPlaying %}
+  {%- if isProduction -%}
+    {% render "partials/blocks/now-playing.liquid", nowPlaying:nowPlaying %}
+  {%- endif -%}
 </article>

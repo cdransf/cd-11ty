@@ -7,8 +7,8 @@ pagination:
 permalink: "/books/years/{{ year.value }}.html"
 schema: books-year
 ---
-{%- assign bookData = year.data | bookStatus: 'finished' -%}
-{%- assign bookDataFavorites = bookData | bookFavorites -%}
+{%- assign bookData = year.data | filterBooksByStatus: 'finished' -%}
+{%- assign bookDataFavorites = bookData | findFavoriteBooks -%}
 {%- capture favoriteBooks -%}{{ bookDataFavorites | shuffleArray | mediaLinks: "book", 5 }}{%- endcapture -%}
 {%- assign currentYear = 'now' | date: "%Y" -%}
 {%- assign yearString = year.value | append: '' -%}

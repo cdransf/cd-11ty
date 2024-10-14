@@ -35,6 +35,35 @@ select {
   padding: var(--spacing-xs) var(--spacing-sm);
 }
 
+fieldset {
+  border: var(--border-gray);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: var(--spacing-lg);
+  }
+
+  & label {
+    display: flex;
+    align-items: center;
+    gap: var(--sizing-xs);
+  }
+
+  & input[type="checkbox"] {
+    margin: 0;
+  }
+
+  & legend {
+    color: var(--text-color-inverted);
+    background-color: var(--accent-color);
+    padding: var(--spacing-xs);
+    border-radius: var(--border-radius-slight);
+  }
+}
+
 .search__form {
   margin-top: 0;
 
@@ -51,6 +80,11 @@ select {
 
   & li {
     margin: var(--spacing-sm) 0;
+
+    &:not(:last-child) {
+      margin-bottom: var(--sizing-base);
+      border-bottom: var(--border-gray);
+    }
 
     & a {
       text-decoration: none;

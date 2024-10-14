@@ -70,10 +70,10 @@
     {%- assign featuredShow = tv.favorites | shuffleArray | first -%}
     {%- assign ogImage = globals.cdn_url | append: featuredShow.grid.backdrop -%}
   {%- when 'books' -%}
-    {%- assign featuredBook = books.all | bookStatus: 'started' | reverse | first -%}
+    {%- assign featuredBook = books.all | filterBooksByStatus: 'started' | reverse | first -%}
     {%- assign ogImage = globals.cdn_url | append: featuredBook.grid.image -%}
   {%- when 'books-year' -%}
-    {%- assign featuredBook = books.all | bookStatus: 'finished' | bookFinishedYear: year.value | first -%}
+    {%- assign featuredBook = books.currentYear | first -%}
     {%- assign ogImage = globals.cdn_url | append: featuredBook.grid.image -%}
   {%- when 'book' -%}
     {%- assign ogImage = globals.cdn_url | append: book.grid.image -%}
@@ -117,8 +117,10 @@
     <link rel="alternate" href="https://coryd.dev/feeds/album-releases" title="Album releases / {{ globals.site_name }}" type="application/rss+xml">
     <link rel="alternate" href="https://coryd.dev/feeds/all" title="All activity / {{ globals.site_name }}" type="application/rss+xml">
     <script defer src="/assets/scripts/index.js?v={% appVersion %}"></script>
-    <script defer data-domain="coryd.dev" src="/js/script.js"></script>
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    {%- if isProduction -%}
+      <script defer data-domain="coryd.dev" src="/js/script.js"></script>
+      <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    {%- endif -%}
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",

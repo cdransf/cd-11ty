@@ -2,7 +2,7 @@
 {%- assign track = music.week.tracks | first -%}
 {%- assign show = tv.recentlyWatched | first -%}
 {%- assign movie = movies.recentlyWatched | first -%}
-{%- assign book = books | bookFinishedYear: currentYear | first -%}
+{%- assign book = books | first -%}
 {%- assign link = links | first -%}
 <article>
   <h2>

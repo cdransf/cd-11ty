@@ -9,10 +9,12 @@ SELECT
     ar.favorite,
     g.name AS genre_name,
     g.slug AS genre_slug,
+    g.emoji AS genre_emoji,
 
     json_build_object(
         'name', g.name,
-        'url', g.slug
+        'url', g.slug,
+        'emoji', g.emoji
     ) AS genre,
 
     ar.emoji,
@@ -113,4 +115,4 @@ LEFT JOIN
 LEFT JOIN
     genres g ON ar.genres = g.id
 GROUP BY
-    ar.id, df.filename_disk, g.name, g.slug;
+    ar.id, df.filename_disk, g.name, g.slug, g.emoji;

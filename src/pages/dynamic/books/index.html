@@ -7,8 +7,8 @@ updated: "now"
 schema: books
 ---
 {%- assign currentYear = 'now' | date: "%Y" -%}
-{%- assign bookData = books.all | bookStatus: 'started' | reverse -%}
-{%- assign currentBookCount = books.all | bookFinishedYear: currentYear | size -%}
+{%- assign bookData = books.all | filterBooksByStatus: 'started' | reverse -%}
+{%- assign currentBookCount = books.currentYear | size -%}
 <h2>Currently reading</h2>
 <p>Here's what I'm reading at the moment. I've finished <strong class="highlight-text">{{ currentBookCount }} books</strong> this year.</p>
 <p>{{ books.years | bookYearLinks }}</p>

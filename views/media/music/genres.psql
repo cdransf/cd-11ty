@@ -3,6 +3,7 @@ SELECT
     g.id,
     g.name,
     g.description,
+    g.emoji,
     g.total_plays,
     g.wiki_link,
     g.slug AS url,

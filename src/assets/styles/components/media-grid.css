@@ -10,17 +10,20 @@
     margin-top: var(--spacing-base);
   }
 
+  :is(&.poster, &.square, &.vertical) img {
+    border-radius: var(--border-radius-slight);
+    width: 100%;
+  }
+
+  :is(&.poster, &.vertical) img {
+    height: auto;
+  }
+
   &.poster {
     grid-template-columns: var(--grid-poster);
 
     & a {
       aspect-ratio: var(--aspect-ratio-banner);
-    }
-
-    & img {
-      border-radius: var(--border-radius-slight);
-      width: 100%;
-      height: auto;
     }
   }
 
@@ -32,9 +35,7 @@
     }
 
     & img {
-      width: 100%;
       height: 100%;
-      border-radius: var(--border-radius-slight);
     }
   }
 
@@ -43,12 +44,6 @@
 
     & a {
       aspect-ratio: var(--aspect-ratio-vertical);
-    }
-
-    & img {
-      width: 100%;
-      height: auto;
-      border-radius: var(--border-radius-slight);
     }
   }
 

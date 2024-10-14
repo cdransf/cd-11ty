@@ -42,8 +42,19 @@ const sortBooksByYear = (books) => {
   return Object.values(years).filter(year => year['value'] > 2017)
 }
 
+const currentYear = new Date().getFullYear()
+
 export default async function () {
   const books = await fetchAllBooks()
+  const sortedByYear = sortBooksByYear(books)
+  const booksForCurrentYear = sortedByYear.find(
+    yearGroup => yearGroup.value === currentYear
+  )?.data || []
 
-  return { all: books, years: sortBooksByYear(books), feed: books.filter(book => book['feed']) }
+  return {
+    all: books,
+    years: sortedByYear,
+    currentYear: booksForCurrentYear,
+    feed: books.filter(book => book['feed'])
+  }
 }
