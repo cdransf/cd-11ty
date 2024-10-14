@@ -167,7 +167,7 @@
   --grid-columns-six: repeat(6, minmax(0, 1fr));
 
   --grid-poster: var(--grid-columns-two);
-  --grid-square: var(---grid-columns-two);
+  --grid-square: var(--grid-columns-two);
   --grid-vertical: var(--grid-columns-three);
 
   @media screen and (min-width: 768px) {
