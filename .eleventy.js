@@ -35,20 +35,10 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('_headers')
   eleventyConfig.addPassthroughCopy({
     'node_modules/@cdransf/api-text/api-text.js': 'assets/scripts/components/api-text.js',
-  })
-  eleventyConfig.addPassthroughCopy({
-    'node_modules/@daviddarnes/mastodon-post/mastodon-post.js': 'assets/scripts/components/mastodon-post.js'
-  })
-  eleventyConfig.addPassthroughCopy({
-    'node_modules/minisearch/dist/umd/index.js': 'assets/scripts/components/minisearch.js',
-  })
-  eleventyConfig.addPassthroughCopy({
     'node_modules/@cdransf/select-pagination/select-pagination.js': 'assets/scripts/components/select-pagination.js',
-  })
-  eleventyConfig.addPassthroughCopy({
     'node_modules/@cdransf/theme-toggle/theme-toggle.js': 'assets/scripts/components/theme-toggle.js',
-  })
-  eleventyConfig.addPassthroughCopy({
+    'node_modules/@daviddarnes/mastodon-post/mastodon-post.js': 'assets/scripts/components/mastodon-post.js',
+    'node_modules/minisearch/dist/umd/index.js': 'assets/scripts/components/minisearch.js',
     'node_modules/youtube-video-element/youtube-video-element.js': 'assets/scripts/components/youtube-video-element.js'
   })
 
