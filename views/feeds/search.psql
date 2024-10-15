@@ -63,8 +63,7 @@ WITH search_data AS (
   SELECT
       'artist' AS type,
       CONCAT(
-          COALESCE(ar.emoji, ar.genre_emoji, '🎧'), ' ', ar.name,
-          ' - ', ar.genre_name
+          COALESCE(ar.emoji, ar.genre_emoji, '🎧'), ' ', ar.name
       ) AS title,
       CONCAT('https://coryd.dev', ar.url) AS url,
       ar.description AS description,
