@@ -75,7 +75,6 @@ export default async function (eleventyConfig) {
   })
 
   eleventyConfig.addShortcode('appVersion', () => appVersion)
-  eleventyConfig.addShortcode('isProduction', () => process.env.ELEVENTY_PRODUCTION === 'true')
 
   // events
   if (process.env.ELEVENTY_PRODUCTION) eleventyConfig.on('afterBuild', copyErrorPages)

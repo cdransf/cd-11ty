@@ -117,10 +117,8 @@
     <link rel="alternate" href="https://coryd.dev/feeds/album-releases" title="Album releases / {{ globals.site_name }}" type="application/rss+xml">
     <link rel="alternate" href="https://coryd.dev/feeds/all" title="All activity / {{ globals.site_name }}" type="application/rss+xml">
     <script defer src="/assets/scripts/index.js?v={% appVersion %}"></script>
-    {%- if isProduction -%}
-      <script defer data-domain="coryd.dev" src="/js/script.js"></script>
-      <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    {%- endif -%}
+    <script defer data-domain="coryd.dev" src="/js/script.js"></script>
+    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
