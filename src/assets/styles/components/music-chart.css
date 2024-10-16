@@ -95,6 +95,7 @@
     & .subtext p,
     & .timestamp {
       line-height: var(--line-height-md);
+      word-break: break-word;
     }
 
     & .subtext,
