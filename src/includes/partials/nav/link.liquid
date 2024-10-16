@@ -10,7 +10,7 @@
     {%- endif -%}
   </span>
 {%- else -%}
-  <a class="{% if icon %}{{ icon | downcase }} icon {% endif %}{{ class }}" href="{{ categoryUrl }}" {%- if isHttp -%} rel="me" {%- endif -%} aria-label="{{ title }}">
+  <a class="{% if icon %}{{ icon | downcase }} icon {% endif %}{{ class }}" href="{{ categoryUrl }}" {% if isHttp -%} rel="me" {%- endif %} aria-label="{{ title }}">
     {%- if icon -%}
       {% tablericon icon %}
       <span>{{ title }}</span>

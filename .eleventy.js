@@ -24,6 +24,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(tablerIcons)
   if (process.env.ELEVENTY_PRODUCTION) eleventyConfig.addPlugin(cssConfig)
 
+  eleventyConfig.setServerOptions({ domdiff: false })
+  eleventyConfig.setWatchThrottleWaitTime(200)
   eleventyConfig.setQuietMode(true)
   eleventyConfig.configureErrorReporting({ allowMissingExtensions: true })
   eleventyConfig.setLiquidOptions({
