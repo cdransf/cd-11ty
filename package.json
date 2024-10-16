@@ -51,7 +51,7 @@
     "postcss-import-ext-glob": "^2.1.1",
     "rimraf": "^6.0.1",
     "slugify": "^1.6.6",
-    "terser": "^5.34.1",
+    "terser": "^5.36.0",
     "truncate-html": "^1.1.2"
   }
 }
