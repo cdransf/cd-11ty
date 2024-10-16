@@ -19,12 +19,20 @@ SELECT
     'url', s.slug,
     'alt', CONCAT(s.title, ' (', s.year, ')'),
     'subtext', COALESCE(
-        (SELECT CONCAT('S', e1.season_number, 'E', e1.episode_number)
+        (
+          SELECT
+            CASE
+              WHEN e1.last_watched_at >= NOW() - INTERVAL '90 days' THEN
+                CONCAT('S', e1.season_number, 'E', e1.episode_number)
+              ELSE
+                CONCAT('(', s.year::TEXT, ')')
+            END
           FROM episodes e1
           WHERE e1.show = s.id
-          ORDER BY e1.season_number DESC, e1.episode_number DESC
-          LIMIT 1),
-          s.year::TEXT
+          ORDER BY e1.last_watched_at DESC, e1.season_number DESC, e1.episode_number DESC
+          LIMIT 1
+        ),
+        CONCAT('(', s.year::TEXT, ')')
     )
   ) AS grid,
 
@@ -36,10 +44,10 @@ SELECT
     'backdrop', CONCAT('/', df_backdrop.filename_disk),
     'formatted_episode', COALESCE(
         (SELECT CONCAT('S', e2.season_number, 'E', e2.episode_number)
-          FROM episodes e2
-          WHERE e2.show = s.id
-          ORDER BY e2.season_number DESC, e2.episode_number DESC
-          LIMIT 1)
+         FROM episodes e2
+         WHERE e2.show = s.id
+         ORDER BY e2.season_number DESC, e2.episode_number DESC
+         LIMIT 1)
     ),
     'last_watched_at', MAX(e.last_watched_at)
   ) AS episode,
