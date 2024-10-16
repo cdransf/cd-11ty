@@ -13,7 +13,7 @@
     <h3>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </h3>
-    {{ post.description | normalize_whitespace | markdown | truncatewords: 50 }}
+    {{ post.description | normalize_whitespace | markdown | htmlTruncate }}
   </article>
 {%- endfor -%}
 <a class="icon-link" href="/posts">View all posts {% tablericon "arrow-right" %}</a>

@@ -32,15 +32,15 @@
 {%- if schema == 'blog' -%}
   {%- assign pageDescription = post.description | markdown | strip_html -%}
 {%- elsif artist.description -%}
-  {%- assign pageDescription = artist.description | markdown | strip_html | truncatewords: 50 -%}
+  {%- assign pageDescription = artist.description | markdown | strip_html | htmlTruncate -%}
 {%- elsif book.description -%}
-  {%- assign pageDescription = book.review | markdown | strip_html | default: book.description | truncatewords: 50 -%}
+  {%- assign pageDescription = book.review | markdown | strip_html | default: book.description | htmlTruncate -%}
 {%- elsif movie.description -%}
-  {%- assign pageDescription = movie.review | markdown | strip_html | default: movie.description | truncatewords: 50 -%}
+  {%- assign pageDescription = movie.review | markdown | strip_html | default: movie.description | htmlTruncate -%}
 {%- elsif show.description -%}
-  {%- assign pageDescription = show.review | markdown | strip_html | default: show.description | truncatewords: 50 -%}
+  {%- assign pageDescription = show.review | markdown | strip_html | default: show.description | htmlTruncate -%}
 {%- elsif genre.description -%}
-  {%- assign pageDescription = genre.description | markdown | strip_html | truncatewords: 50 -%}
+  {%- assign pageDescription = genre.description | markdown | strip_html | htmlTruncate -%}
 {%- elsif page.description -%}
   {%- assign pageDescription = page.description -%}
 {%- elsif description -%}

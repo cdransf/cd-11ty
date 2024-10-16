@@ -44,7 +44,7 @@ schema: books
         {%- assign percentage = book.progress | append: '%' -%}
         {% render "partials/media/progress-bar.liquid", percentage:percentage %}
       {% endif %}
-      {% if book.description %}<div class="description">{{ book.description | normalize_whitespace | markdown | truncatewords: 50 }}</div>{% endif %}
+      {% if book.description %}<div class="description">{{ book.description | normalize_whitespace | markdown | htmlTruncate }}</div>{% endif %}
     </div>
   </article>
 {% endfor %}

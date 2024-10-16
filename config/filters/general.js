@@ -1,3 +1,4 @@
+import truncateHtml from 'truncate-html'
 import { shuffleArray } from '../utilities/index.js'
 
 export default {
@@ -8,5 +9,9 @@ export default {
     return string.replace(pattern, replacement)
   },
   formatNumber: (number) => number.toLocaleString('en-US'),
+  htmlTruncate: (content, limit = 50) => truncateHtml(content, limit, {
+    byWords: true,
+    ellipsis: '...'
+  }),
   shuffleArray,
 }
