@@ -2,7 +2,7 @@
 {%- assign hidePagination = pageCount <= 1 -%}
 <div class="media-grid {% if shape == 'poster' -%}poster{%- elsif shape == 'square' -%}square{%- elsif shape == 'vertical' -%}vertical{%- endif -%}">
   {%- for item in data limit: count -%}
-    {%- assign alt = item.grid.alt | strip | escape -%}
+    {%- assign alt = item.grid.alt | replaceQuotes -%}
     <a href="{{ item.grid.url }}" title="{{ alt }}">
       <div class="item">
         <div class="meta-text">

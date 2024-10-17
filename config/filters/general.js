@@ -8,6 +8,7 @@ export default {
     const replacement = '&amp;'
     return string.replace(pattern, replacement)
   },
+  replaceQuotes: (string) => string.replace(/"/g, '&quot;'),
   formatNumber: (number) => number.toLocaleString('en-US'),
   htmlTruncate: (content, limit = 50) => truncateHtml(content, limit, {
     byWords: true,

@@ -24,7 +24,7 @@ schema: book
         (max-width: 1000px) 812px,
         812px"
       src="{{ globals.cdn_url }}{{ book.image }}?class=verticalsm&type=webp"
-      alt="{{ alt }}"
+      alt="{{ alt | replaceQuotes }}"
       loading="lazy"
       decoding="async"
       width="200"

@@ -22,7 +22,7 @@ schema: movie
       (max-width: 850px) 512px,
       1024px"
     src="{{ globals.cdn_url }}{{ movie.backdrop }}?class=bannersm&type=webp"
-    alt="{{ alt }}"
+    alt="{{ alt | replaceQuotes }}"
     class="image-banner"
     loading="eager"
     decoding="async"

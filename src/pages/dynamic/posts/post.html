@@ -32,7 +32,7 @@ schema: blog
         (max-width: 1000px) 800px,
         1200px"
       src="{{ globals.cdn_url }}{{ post.image }}?class=w200"
-      alt="{{ post.image_alt }}"
+      alt="{{ post.image_alt | replaceQuotes }}"
       class="image-banner"
       loading="eager"
       decoding="async"

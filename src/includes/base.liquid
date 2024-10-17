@@ -92,17 +92,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ pageTitle }}</title>
+    <title data-dynamic="title">{{ pageTitle }}</title>
     <link rel="preload" href="/assets/fonts/ml.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/assets/fonts/mlb.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/styles/index.css?v={% appVersion %}" type="text/css" />
     <link rel="canonical" href="{{ fullUrl }}" />
-    <meta property="og:title" content="{{ pageTitle }}" />
-    <meta name="description" content="{{ escapedPageDescription }}" />
-    <meta property="og:description" content="{{ escapedPageDescription }}" />
+    <meta property="og:title" content="{{ pageTitle }}" data-dynamic="og:title" />
+    <meta name="description" content="{{ escapedPageDescription }}" data-dynamic="description" />
+    <meta property="og:description" content="{{ escapedPageDescription }}" data-dynamic="og:description" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{ fullUrl }}" />
-    <meta property="og:image" content="{{ ogImage }}?class=w800" />
+    <meta property="og:url" content="{{ fullUrl }}" data-dynamic="og:url" />
+    <meta property="og:image" content="{{ ogImage }}?class=w800" data-dynamic="og:image" />
     <meta name="theme-color" content="{{ globals.theme_color }}" />
     <meta name="fediverse:creator" content="{{ globals.mastodon }}" />
     <meta name="generator" content="Eleventy">
@@ -119,36 +119,6 @@
     <script defer src="/assets/scripts/index.js?v={% appVersion %}"></script>
     <script defer data-domain="coryd.dev" src="/js/script.js"></script>
     <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebSite",
-            "@id": "{{ globals.url }}#website",
-            "url": "{{ globals.url }}",
-            "name": "{{ pageTitle }}",
-            "description": "{{ escapedPageDescription }}",
-            "inLanguage": "{{ globals.locale }}"
-          },
-          {%- if schema == 'blog' -%}
-            {
-              "@type": "BlogPosting",
-              "mainEntityOfPage": { "@type": "WebPage" },
-              "isPartOf": { "@id": "{{ globals.url }}#website" },
-              "@id": "{{ fullUrl }}",
-              "headline": "{{ pageTitle }}",
-              "description": "{{ escapedPageDescription }}",
-              "image": "{{ image | default: globals.meta_data.opengraph_default }}",
-              "inLanguage": "{{ globals.locale }}",
-              "publisher": { "@type": "{{ globals.site_type }}", "name": "{{ globals.author }}", "url": "{{ globals.url }}" },
-              "author": { "@type": "Person", "name": "{{ globals.author }}" },
-              "datePublished": "{{ page.date | date: "%Y.%m.%d" }}"
-            }
-          {%- endif -%}
-        ]
-      }
-    </script>
     <noscript>
       <style>.client-side {display:none}</style>
     </noscript>

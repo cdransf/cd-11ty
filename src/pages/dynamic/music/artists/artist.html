@@ -32,7 +32,7 @@ schema: artist
         (max-width: 850px) 400px,
         800px"
       src="{{ globals.cdn_url }}{{ artist.image }}?class=w200&type=webp"
-      alt="{{ alt }}"
+      alt="{{ alt | replaceQuotes }}"
       loading="eager"
       decoding="async"
       width="200"

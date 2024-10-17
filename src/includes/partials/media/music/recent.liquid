@@ -10,7 +10,7 @@
             "
             sizes="(max-width: 450px) 50px, 100px"
             src="{{ globals.cdn_url }}{{ item.chart.image }}?class=w50&type=webp"
-            alt="{{ item.chart.alt }}"
+            alt="{{ item.chart.alt | replaceQuotes }}"
             loading="lazy"
             decoding="async"
             width="64"
