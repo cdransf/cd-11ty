@@ -34,7 +34,6 @@ const parseCountryField = (countryField) => {
   return countries.map(getCountryName).join(', ')
 }
 
-
 const generateMediaLinks = (data, type, count = 10) => {
   if (!data || !type) return ''
 
@@ -74,6 +73,8 @@ async function fetchDataByUrl(supabase, table, url) {
   return data
 }
 
+const formatDate = (date) => new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+
 async function fetchGlobals(supabase) {
   const { data, error } = await supabase.from('optimized_globals').select('*').single()
   if (error) {
@@ -87,7 +88,7 @@ function generateMetadata(data, type, globals) {
   let title = globals['site_name']
   let description = data.description || globals.site_description
   const canonicalUrl = data.url ? `${globals.url}${data.url}` : globals.url
-  const ogImage = `${globals.cdn_url}${data.image || globals.avatar}?class=w800`
+  const ogImage = `${globals['cdn_url']}${data.image || globals.avatar}?class=w800`
 
   description = convert(truncateHtml(md.render(description), 100, {
       byWords: true,
@@ -198,14 +199,14 @@ function generateWatchingHTML(media, globals, type) {
     <article class="watching focus">
       <img
         srcset="
-          ${globals.cdn_url}${media.backdrop}?class=bannersm&type=webp 256w,
-          ${globals.cdn_url}${media.backdrop}?class=bannermd&type=webp 512w,
-          ${globals.cdn_url}${media.backdrop}?class=bannerbase&type=webp 1024w
+          ${globals['cdn_url']}${media.backdrop}?class=bannersm&type=webp 256w,
+          ${globals['cdn_url']}${media.backdrop}?class=bannermd&type=webp 512w,
+          ${globals['cdn_url']}${media.backdrop}?class=bannerbase&type=webp 1024w
         "
         sizes="(max-width: 450px) 256px,
           (max-width: 850px) 512px,
           1024px"
-        src="${globals.cdn_url}${media.backdrop}?class=bannersm&type=webp"
+        src="${globals['cdn_url']}${media.backdrop}?class=bannersm&type=webp"
         alt="${media.title} / ${media.year}"
         class="image-banner"
         loading="eager"
@@ -218,7 +219,7 @@ function generateWatchingHTML(media, globals, type) {
         ${media.favorite ? `<p class="sub-meta favorite">${ICON_MAP.heart} This is one of my favorite ${label}s!</p>` : ''}
         ${media.tattoo ? `<p class="sub-meta tattoo">${ICON_MAP.needle} I have a tattoo inspired by this ${label}!</p>` : ''}
         ${media.collected ? `<p class="sub-meta collected">${ICON_MAP.circleCheck} This ${label} is in my collection!</p>` : ''}
-        ${lastWatched ? `<p class="sub-meta">Last watched on <strong class="highlight-text">${new Date(lastWatched).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</strong></p>` : ''}
+        ${lastWatched ? `<p class="sub-meta">Last watched on <strong class="highlight-text">${formatDate(lastWatched)}</strong></p>` : ''}
       </div>
       ${media.review ? `${warningBanner}<h2>My thoughts</h2><p>${md.render(media.review)}</p>` : ''}
       ${generateAssociatedMediaHTML(media)}
@@ -250,7 +251,7 @@ function generateConcertModal(concert) {
 
   return `
     <li>
-      <strong class="highlight-text">${new Date(concert.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</strong> at ${venue}
+      <strong class="highlight-text">${formatDate(concert.date)}</strong> at ${venue}
       ${notesModal}
     </li>
   `
@@ -286,14 +287,14 @@ function generateArtistHTML(artist, globals) {
       <div class="artist-display">
         <img
           srcset="
-            ${globals.cdn_url}${artist.image}?class=w200&type=webp 200w,
-            ${globals.cdn_url}${artist.image}?class=w600&type=webp 400w,
-            ${globals.cdn_url}${artist.image}?class=w800&type=webp 800w
+            ${globals['cdn_url']}${artist.image}?class=w200&type=webp 200w,
+            ${globals['cdn_url']}${artist.image}?class=w600&type=webp 400w,
+            ${globals['cdn_url']}${artist.image}?class=w800&type=webp 800w
           "
           sizes="(max-width: 450px) 200px,
             (max-width: 850px) 400px,
             800px"
-          src="${globals.cdn_url}${artist.image}?class=w200&type=webp"
+          src="${globals['cdn_url']}${artist.image}?class=w200&type=webp"
           alt="${artist.name} / ${artist.country}"
           loading="eager"
           decoding="async"
@@ -321,10 +322,10 @@ function generateArtistHTML(artist, globals) {
 }
 
 function generateBookHTML(book, globals) {
-  const alt = `${book.title}${book.author ? ` by ${book.author}` : ''}`
-  const percentage = book.progress ? `${book.progress}%` : ''
-  const status = book.status === 'finished'
-    ? `Finished on <strong class="highlight-text">${new Date(book.date_finished).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</strong>`
+  const alt = `${book['title']}${book['author'] ? ` by ${book['author']}` : ''}`
+  const percentage = book['progress'] ? `${book['progress']}%` : ''
+  const status = book['status'] === 'finished'
+    ? `Finished on <strong class="highlight-text">${formatDate(book['date_finished'])}</strong>`
     : percentage
     ? `<div class="progress-bar-wrapper" title="${percentage}">
         <div style="width:${percentage}" class="progress-bar"></div>
@@ -332,17 +333,17 @@ function generateBookHTML(book, globals) {
     : ''
 
   return `
-    <a class="icon-link" href="/books">${ICON_MAP.arrowLeft} Back to books</a>
+    <a class="icon-link" href="/books">${ICON_MAP['arrowLeft']} Back to books</a>
     <article class="book-focus">
       <div class="book-display">
         <img
           srcset="
-            ${globals.cdn_url}${book.image}?class=verticalsm&type=webp 200w,
-            ${globals.cdn_url}${book.image}?class=verticalmd&type=webp 400w,
-            ${globals.cdn_url}${book.image}?class=verticalbase&type=webp 800w
+            ${globals['cdn_url']}${book['image']}?class=verticalsm&type=webp 200w,
+            ${globals['cdn_url']}${book['image']}?class=verticalmd&type=webp 400w,
+            ${globals['cdn_url']}${book['image']}?class=verticalbase&type=webp 800w
           "
           sizes="(max-width: 450px) 203px, (max-width: 850px) 406px, 812px"
-          src="${globals.cdn_url}${book.image}?class=verticalsm&type=webp"
+          src="${globals['cdn_url']}${book['image']}?class=verticalsm&type=webp"
           alt="${alt}"
           loading="lazy"
           decoding="async"
