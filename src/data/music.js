@@ -43,10 +43,6 @@ export default async function fetchMusicData() {
       monthArtists,
       monthAlbums,
       monthGenres,
-      threeMonthTracks,
-      threeMonthArtists,
-      threeMonthAlbums,
-      threeMonthGenres,
     ] = await Promise.all([
       fetchDataFromView('recent_tracks'),
       fetchDataFromView('week_tracks'),
@@ -57,10 +53,6 @@ export default async function fetchMusicData() {
       fetchDataFromView('month_artists'),
       fetchDataFromView('month_albums'),
       fetchDataFromView('month_genres'),
-      fetchDataFromView('three_month_tracks'),
-      fetchDataFromView('three_month_artists'),
-      fetchDataFromView('three_month_albums'),
-      fetchDataFromView('three_month_genres'),
     ])
 
     return {
@@ -80,15 +72,6 @@ export default async function fetchMusicData() {
         albums: monthAlbums,
         genres: monthGenres,
         totalTracks: monthTracks
-          .reduce((acc, track) => acc + track.plays, 0)
-          .toLocaleString('en-US'),
-      },
-      threeMonth: {
-        tracks: threeMonthTracks,
-        artists: threeMonthArtists,
-        albums: threeMonthAlbums,
-        genres: threeMonthGenres,
-        totalTracks: threeMonthTracks
           .reduce((acc, track) => acc + track.plays, 0)
           .toLocaleString('en-US'),
       },

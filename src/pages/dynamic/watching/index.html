@@ -13,17 +13,13 @@ schema: watching
 {% render "partials/blocks/banners/rss.liquid", url: "/feeds/movies", text: "Subscribe to my movies feed or follow along on this page" %}
 <hr />
 <h3 id="movies">
-  <a class="icon-link" href="/watching/recent/movies">
-    {% tablericon "movie" %}
-    Recent movies
-  </a>
+  {% tablericon "movie" %}
+  Recent movies
 </h3>
 {% render "partials/media/grid.liquid", globals:globals, data:movies.recentlyWatched, shape:"vertical", count: 6 %}
 <h3 id="tv">
-  <a class="icon-link" href="/watching/recent/shows">
-    {% tablericon "device-tv-old" %}
-    Recent shows
-  </a>
+  {% tablericon "device-tv-old" %}
+  Recent shows
 </h3>
 {% render "partials/media/grid.liquid", globals:globals, data:tv.recentlyWatched, shape:"vertical", count: 6 %}
 <h3 id="favorite-movies">
