@@ -16,8 +16,8 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url)
     const path = url.pathname.replace(/\/$/, '')
-    const supabaseUrl = env.SUPABASE_URL
-    const supabaseKey = env.SUPABASE_KEY
+    const supabaseUrl = env.SUPABASE_URL || process.env.SUPABASE_URL
+    const supabaseKey = env.SUPABASE_KEY || process.env.SUPABASE_KEY
     const supabase = createClient(supabaseUrl, supabaseKey)
     let data, type
 

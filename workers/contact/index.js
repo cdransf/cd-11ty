@@ -29,8 +29,8 @@ export default {
         if (!name || !email || !message) return new Response('Invalid input', { status: 400 })
 
         const emailDomain = email.split('@')[1].toLowerCase()
-        const supabaseUrl = env.SUPABASE_URL
-        const supabaseKey = env.SUPABASE_KEY
+        const supabaseUrl = env.SUPABASE_URL || process.env.SUPABASE_URL
+        const supabaseKey = env.SUPABASE_KEY || process.env.SUPABASE_KEY
         const supabase = createClient(supabaseUrl, supabaseKey)
         const { data: blockedDomains, error: domainError } = await supabase
           .from('blocked_domains')

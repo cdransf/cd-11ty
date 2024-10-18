@@ -2,9 +2,9 @@ import { createClient } from '@supabase/supabase-js'
 
 export default {
   async fetch(request, env) {
-    const SUPABASE_URL = env.SUPABASE_URL
-    const SUPABASE_KEY = env.SUPABASE_KEY
-    const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+    const supabaseUrl = env.SUPABASE_URL || process.env.SUPABASE_URL
+    const supabaseKey = env.SUPABASE_KEY || process.env.SUPABASE_KEY
+    const supabase = createClient(supabaseUrl, supabaseKey)
 
     const { data, error } = await supabase
       .from('optimized_latest_listen')

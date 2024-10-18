@@ -61,11 +61,11 @@ const sendEmail = async (subject, text, authHeader, maxRetries = 3) => {
 
 export default {
   async fetch(request, env) {
-    const SUPABASE_URL = env.SUPABASE_URL
-    const SUPABASE_KEY = env.SUPABASE_KEY
+    const supabaseUrl = env.SUPABASE_URL || process.env.SUPABASE_URL
+    const supabaseKey = env.SUPABASE_KEY || process.env.SUPABASE_KEY
     const FORWARDEMAIL_API_KEY = env.FORWARDEMAIL_API_KEY
     const ACCOUNT_ID_PLEX = env.ACCOUNT_ID_PLEX
-    const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+    const supabase = createClient(supabaseUrl, supabaseKey)
     const authHeader = 'Basic ' + btoa(`${FORWARDEMAIL_API_KEY}:`)
     const url = new URL(request.url)
     const params = url.searchParams

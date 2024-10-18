@@ -23,8 +23,8 @@ async function handleMastodonPost(env) {
   const mastodonApiUrl = 'https://follow.coryd.dev/api/v1/statuses'
   const accessToken = env.MASTODON_ACCESS_TOKEN
   const rssFeedUrl = 'https://coryd.dev/feeds/syndication'
-  const supabaseUrl = env.SUPABASE_URL
-  const supabaseKey = env.SUPABASE_KEY
+  const supabaseUrl = env.SUPABASE_URL || process.env.SUPABASE_URL
+  const supabaseKey = env.SUPABASE_KEY || process.env.SUPABASE_KEY
   const supabase = createClient(supabaseUrl, supabaseKey)
 
   try {

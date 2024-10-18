@@ -5,6 +5,7 @@ node_modules
 
 # local dependencies
 .env.local
+.dev.vars
 
 # system files
 .DS_Store
