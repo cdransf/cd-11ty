@@ -218,7 +218,7 @@ function generateWatchingHTML(media, globals, type) {
         ${media.favorite ? `<p class="sub-meta favorite">${ICON_MAP.heart} This is one of my favorite ${label}s!</p>` : ''}
         ${media.tattoo ? `<p class="sub-meta tattoo">${ICON_MAP.needle} I have a tattoo inspired by this ${label}!</p>` : ''}
         ${media.collected ? `<p class="sub-meta collected">${ICON_MAP.circleCheck} This ${label} is in my collection!</p>` : ''}
-        ${lastWatched ? `<p class="sub-meta">Last watched on ${new Date(lastWatched).toLocaleDateString()}</p>` : ''}
+        ${lastWatched ? `<p class="sub-meta">Last watched on <strong class="highlight-text">${new Date(lastWatched).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</strong></p>` : ''}
       </div>
       ${media.review ? `${warningBanner}<h2>My thoughts</h2><p>${md.render(media.review)}</p>` : ''}
       ${generateAssociatedMediaHTML(media)}
@@ -324,7 +324,7 @@ function generateBookHTML(book, globals) {
   const alt = `${book.title}${book.author ? ` by ${book.author}` : ''}`
   const percentage = book.progress ? `${book.progress}%` : ''
   const status = book.status === 'finished'
-    ? `Finished on <strong>${new Date(book.date_finished).toLocaleDateString()}</strong>`
+    ? `Finished on <strong class="highlight-text">${new Date(book.date_finished).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</strong>`
     : percentage
     ? `<div class="progress-bar-wrapper" title="${percentage}">
         <div style="width:${percentage}" class="progress-bar"></div>
