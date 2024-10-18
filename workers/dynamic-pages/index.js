@@ -192,7 +192,7 @@ function generateAssociatedMediaHTML(data, isGenre = false) {
 function generateWatchingHTML(media, globals, type) {
   const isShow = type === 'show'
   const label = isShow ? 'show' : 'movie'
-  const lastWatched = media.lastWatched || (isShow && media.episode?.last_watched_at)
+  const lastWatched = media.last_watched || (isShow && media.episode?.last_watched_at)
 
   return `
     <a class="icon-link" href="/watching">${ICON_MAP.arrowLeft} Back to watching</a>
