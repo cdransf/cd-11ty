@@ -36,7 +36,11 @@ export default async function () {
   try {
     const movies = await fetchAllMovies()
     const favoriteMovies = movies.filter(movie => movie['favorite'])
-    const recentlyWatchedMovies = movies.filter(movie => movie['last_watched'] && year - DateTime.fromISO(movie['last_watched']).year <= 3)
+    const now = DateTime.now();
+    const recentlyWatchedMovies = movies.filter(movie => {
+        const lastWatched = movie['last_watched']
+        return (lastWatched && now.diff(DateTime.fromISO(lastWatched), 'months').months <= 6)
+    })
 
     return {
       movies,

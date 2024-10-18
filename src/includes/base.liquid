@@ -4,26 +4,12 @@
   {%- assign pageTitle = post.title -%}
 {%- elsif title -%}
   {%- assign pageTitle = title | append: ' / ' | append: globals.site_name -%}
-{%- elsif artist.name -%}
-  {%- assign pageTitle = 'Artists / ' | append: artist.name | append: ' / ' | append: globals.site_name -%}
 {%- elsif schema == 'music-index' -%}
   {%- assign pageTitle = 'Music / ' | append: globals.site_name -%}
 {%- elsif schema == 'music-period' -%}
     {%- assign pageTitle = 'Music / ' | append: page.title | append: globals.site_name -%}
-{%- elsif genre.name -%}
-  {%- assign pageTitle = 'Music / ' | append: genre.name | append: ' / ' | append: globals.site_name -%}
-{%- elsif book.title -%}
-  {%- assign pageTitle = 'Books / ' | append: book.title | append: ' by ' | append: book.author | append: ' / ' | append: globals.site_name -%}
 {%- elsif year.value -%}
   {%- assign pageTitle = ' / Books ' | prepend: year.value | append: ' / ' | append: globals.site_name -%}
-{%- elsif movie.title -%}
-  {%- assign pageTitle = 'Movies / ' | append: movie.title -%}
-  {%- if movie.rating -%}
-    {%- assign pageTitle = pageTitle | append: ' (' | append: movie.rating | append: ')' -%}
-  {%- endif -%}
-  {%- assign pageTitle = pageTitle | append: ' / ' | append: globals.site_name -%}
-{%- elsif show.title -%}
-  {%- assign pageTitle = 'Shows / ' | append: show.title | append: ' / ' | append: globals.site_name -%}
 {%- elsif page.description -%}
   {%- assign pageTitle = page.title | append: ' / ' | append: globals.site_name -%}
 {%- endif -%}
@@ -31,16 +17,6 @@
 {%- assign pageDescription = globals.site_description -%}
 {%- if schema == 'blog' -%}
   {%- assign pageDescription = post.description | markdown | strip_html -%}
-{%- elsif artist.description -%}
-  {%- assign pageDescription = artist.description | markdown | strip_html | htmlTruncate -%}
-{%- elsif book.description -%}
-  {%- assign pageDescription = book.review | markdown | strip_html | default: book.description | htmlTruncate -%}
-{%- elsif movie.description -%}
-  {%- assign pageDescription = movie.review | markdown | strip_html | default: movie.description | htmlTruncate -%}
-{%- elsif show.description -%}
-  {%- assign pageDescription = show.review | markdown | strip_html | default: show.description | htmlTruncate -%}
-{%- elsif genre.description -%}
-  {%- assign pageDescription = genre.description | markdown | strip_html | htmlTruncate -%}
 {%- elsif page.description -%}
   {%- assign pageDescription = page.description -%}
 {%- elsif description -%}
@@ -53,10 +29,6 @@
     {%- assign ogImage = globals.cdn_url | append: page.image -%}
   {%- when 'music-index' -%}
     {%- assign ogImage = globals.cdn_url | append: music.week.artists[0].grid.image -%}
-  {%- when 'artist' -%}
-    {%- assign ogImage = globals.cdn_url | append: artist.grid.image -%}
-  {%- when 'genre' -%}
-    {%- assign ogImage =  globals.cdn_url | append: genre.artists[0].grid.image -%}
   {%- when 'watching' -%}
     {%- assign featuredMovie = movies.recentlyWatched | first -%}
     {%- assign ogImage = globals.cdn_url | append: featuredMovie.grid.backdrop -%}
@@ -75,15 +47,6 @@
   {%- when 'books-year' -%}
     {%- assign featuredBook = books.currentYear | first -%}
     {%- assign ogImage = globals.cdn_url | append: featuredBook.grid.image -%}
-  {%- when 'book' -%}
-    {%- assign ogImage = globals.cdn_url | append: book.grid.image -%}
-  {%- when 'movie' -%}
-    {%- assign ogImage = globals.cdn_url | append: movie.grid.backdrop -%}
-  {%- when 'show' -%}
-    {%- assign ogImage = globals.cdn_url | append: show.grid.backdrop -%}
-  {%- when 'genre' -%}
-    {%- assign genreArtist = genre.artists | shuffleArray | first -%}
-    {%- assign ogImage = globals.cdn_url | append: genreArtist.grid.image -%}
 {%- endcase -%}
 {%- assign escapedPageDescription = pageDescription | escape -%}
 

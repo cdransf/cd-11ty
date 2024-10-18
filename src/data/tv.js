@@ -46,7 +46,7 @@ export default async function () {
 
     return {
       shows,
-      recentlyWatched: episodes.slice(0, 225),
+      recentlyWatched: episodes.slice(0, 125),
       favorites: shows.filter(show => show.favorite).sort((a, b) => a.title.localeCompare(b.title)),
     }
   } catch (error) {

@@ -89,7 +89,6 @@ export default async function (eleventyConfig) {
         sortAttributes: true,
         sortClassName: true,
         useShortDoctype: true,
-        processScripts: ['application/ld+json'],
       })
     }
     return content

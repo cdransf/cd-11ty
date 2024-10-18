@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "The source for my personal site. Built using 11ty (and other tools).",
   "type": "module",
   "engines": {
@@ -44,6 +44,7 @@
     "html-minifier-terser": "^7.2.0",
     "html-to-text": "^9.0.5",
     "ics": "^3.8.1",
+    "linkedom": "0.18.5",
     "luxon": "^3.5.0",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",

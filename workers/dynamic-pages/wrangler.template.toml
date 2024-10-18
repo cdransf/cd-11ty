@@ -1,0 +1,25 @@
+name = "dynamic-media-worker"
+main = "./index.js"
+compatibility_date = "2023-01-01"
+
+account_id = "${CF_ACCOUNT_ID}"
+workers_dev = true
+
+[observability]
+enabled = true
+
+[env.production]
+name = "dynamic-media-worker-production"
+routes = [
+  { pattern = "https://coryd.dev/watching/movies/*", zone_id = "${CF_ZONE_ID}" },
+  { pattern = "https://coryd.dev/watching/shows/*", zone_id = "${CF_ZONE_ID}" },
+  { pattern = "https://coryd.dev/music/artists/*", zone_id = "${CF_ZONE_ID}" },
+  { pattern = "https://coryd.dev/music/genres/*", zone_id = "${CF_ZONE_ID}" },
+  { pattern = "https://coryd.dev/books/*", zone_id = "${CF_ZONE_ID}" },
+]
+
+[[env.production.excludes]]
+routes = [
+  { pattern = "https://coryd.dev/books", zone_id = "${CF_ZONE_ID}" },
+  { pattern = "https://coryd.dev/books/", zone_id = "${CF_ZONE_ID}" },
+]
