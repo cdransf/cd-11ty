@@ -1,5 +1,3 @@
-import MiniSearch from './components/mini-search.js'
-
 window.addEventListener('load', () => {
   // menu keyboard controls
   ;(() => {

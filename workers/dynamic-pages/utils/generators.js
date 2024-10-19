@@ -35,7 +35,7 @@ const generateAssociatedMediaHTML = (data, isGenre = false) => {
                 const year = item.year ? ` (${item.year})` : ''
                 const author = item.author ? ` by ${item.author}` : ''
                 const totalPlays = item.total_plays
-                  ? ` <strong class="highlight-text">${item.total_plays} ${item.total_plays === 1 ? 'play' : 'plays'}</strong>`
+                  ? ` <strong class="highlight-text">${item.total_plays}</strong> ${item.total_plays === 1 ? 'play' : 'plays'}`
                   : ''
                 let listItemContent = name
 
