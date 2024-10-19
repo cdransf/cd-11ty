@@ -173,17 +173,25 @@ window.addEventListener('load', () => {
 
     const loadSearchIndex = async (query = '', types = []) => {
       const typeQuery = types.join(',')
-      const response = await fetch(`https://coryd.dev/api/search?q=${query}&type=${typeQuery}`)
-      const index = await response.json()
 
-      resultsById = index.reduce((byId, result) => {
-        byId[result.id] = result
-        return byId
-      }, {})
+      try {
+        const response = await fetch(`https://coryd.dev/api/search?q=${query}&type=${typeQuery}`)
+        const index = await response.json()
 
-      miniSearch.removeAll()
-      miniSearch.addAll(index)
-      return resultsById
+        if (!Array.isArray(data)) return {}
+
+        resultsById = data.reduce((acc, item) => {
+          acc[item.id] = item
+          return acc
+        }, {})
+
+        miniSearch.removeAll()
+        miniSearch.addAll(index)
+        return resultsById
+      } catch (error) {
+        console.error('Error fetching search data:', error)
+        return {}
+      }
     }
 
     loadSearchIndex().then(loadedResultsById => resultsById = loadedResultsById)
