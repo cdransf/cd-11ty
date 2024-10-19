@@ -85,12 +85,11 @@ window.addEventListener('load', () => {
     })
   })()
 
+  // search logic
   ;(() => {
     if (!MiniSearch) return
-    const miniSearch = new MiniSearch({
-      fields: ['title', 'text', 'tags', 'type'],
-    })
 
+    const miniSearch = new MiniSearch({ fields: ['title', 'description', 'tags', 'type'] })
     const $form = document.querySelector('.search__form')
     const $input = document.querySelector('.search__form--input')
     const $fallback = document.querySelector('.search__form--fallback')
@@ -105,47 +104,108 @@ window.addEventListener('load', () => {
     const PAGE_SIZE = 10
     let currentPage = 1
     let currentResults = []
-
-    const loadSearchIndex = async () => {
-      try {
-        const response = await fetch('https://coryd.dev/api/search')
-        const index = await response.json()
-        const resultsById = index.reduce((byId, result) => {
-          byId[result.id] = result
-          return byId
-        }, {})
-        miniSearch.addAll(index)
-        return resultsById
-      } catch (error) {
-        console.error('Error fetching search index:', error)
-        return {}
-      }
-    }
-
     let resultsById = {}
     let debounceTimeout
 
-    loadSearchIndex().then(loadedResultsById => resultsById = loadedResultsById)
-
-    const getSelectedTypes = () => {
-      return Array.from($typeCheckboxes)
-        .filter(checkbox => checkbox.checked)
-        .map(checkbox => checkbox.value)
+    const parseMarkdown = markdown => {
+      if (!markdown) return ''
+      return markdown
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*(.*?)\*/g, '<em>$1</em>')
+        .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
+        .replace(/\n/g, '<br>')
+        .replace(/[#*_~`]/g, '')
     }
 
-    $input.addEventListener('input', () => {
-      const query = $input.value
+    const truncateDescription = (markdown, maxLength = 150) => {
+      const htmlDescription = parseMarkdown(markdown)
+      const tempDiv = document.createElement('div')
+      tempDiv.innerHTML = htmlDescription
+      const plainText = tempDiv.textContent || tempDiv.innerText || ''
+      return plainText.length > maxLength ? `${plainText.substring(0, maxLength)}...` : plainText
+    }
 
+    const formatArtistTitle = (title, totalPlays) =>
+      totalPlays > 0 ? `${title} <strong class="highlight-text">${totalPlays} plays</strong>` : title
+
+    const renderSearchResults = results => {
+      if (results.length > 0) {
+        $results.innerHTML = results.map(({ title, url, description, type, total_plays }) => {
+          const truncatedDesc = truncateDescription(description)
+          const formattedTitle = type === 'artist' && total_plays !== undefined
+            ? formatArtistTitle(title, total_plays)
+            : title
+
+          return `
+            <li class="search__results--result">
+              <a href="${url}">
+                <h3>${formattedTitle}</h3>
+              </a>
+              <p>${truncatedDesc}</p>
+            </li>
+          `
+        }).join('')
+        $results.style.display = 'block'
+      } else {
+        $results.innerHTML = '<li class="search__results--no-results">No results found.</li>'
+        $results.style.display = 'block'
+      }
+    }
+
+    const appendSearchResults = results => {
+      const newResults = results.map(({ title, url, description, type, total_plays }) => {
+        const truncatedDesc = truncateDescription(description)
+        const formattedTitle = type === 'artist' && total_plays !== undefined
+          ? formatArtistTitle(title, total_plays)
+          : title
+
+        return `
+          <li class="search__results--result">
+            <a href="${url}">
+              <h3>${formattedTitle}</h3>
+            </a>
+            <p>${truncatedDesc}</p>
+          </li>
+        `
+      }).join('')
+      $results.insertAdjacentHTML('beforeend', newResults)
+    }
+
+    const loadSearchIndex = async (query = '', types = []) => {
+      const typeQuery = types.join(',')
+      const response = await fetch(`https://coryd.dev/api/search-beta?q=${query}&type=${typeQuery}`)
+      const index = await response.json()
+
+      resultsById = index.reduce((byId, result) => {
+        byId[result.id] = result
+        return byId
+      }, {})
+
+      miniSearch.removeAll()
+      miniSearch.addAll(index)
+      return resultsById
+    }
+
+    loadSearchIndex().then(loadedResultsById => resultsById = loadedResultsById)
+
+    const getSelectedTypes = () =>
+      Array.from($typeCheckboxes)
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.value)
+
+    $input.addEventListener('input', () => {
+      const query = $input.value.trim()
       clearTimeout(debounceTimeout)
 
-      if (query.length === 0) {
+      if (!query) {
         renderSearchResults([])
         $loadMoreButton.style.display = 'none'
         return
       }
 
-      debounceTimeout = setTimeout(() => {
-        const results = (query.length > 1) ? getSearchResults(query) : []
+      debounceTimeout = setTimeout(async () => {
+        resultsById = await loadSearchIndex(query, getSelectedTypes())
+        const results = getSearchResults(query)
         currentResults = results
         currentPage = 1
 
@@ -154,14 +214,10 @@ window.addEventListener('load', () => {
       }, 300)
     })
 
-    $input.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter') event.preventDefault()
-    })
-
     $typeCheckboxes.forEach(checkbox => {
-      checkbox.addEventListener('change', () => {
-        const query = $input.value
-        const results = getSearchResults(query)
+      checkbox.addEventListener('change', async () => {
+        resultsById = await loadSearchIndex($input.value.trim(), getSelectedTypes())
+        const results = getSearchResults($input.value.trim())
         currentResults = results
         currentPage = 1
 
@@ -178,85 +234,12 @@ window.addEventListener('load', () => {
       if (currentPage * PAGE_SIZE >= currentResults.length) $loadMoreButton.style.display = 'none'
     })
 
-    const getSearchResults = (query) => {
-      const selectedTypes = getSelectedTypes()
-
-      return miniSearch.search(query, { prefix: true, fuzzy: 0.2, boost: { title: 2 } })
+    const getSearchResults = query =>
+      miniSearch.search(query, { prefix: true, fuzzy: 0.2, boost: { title: 2 } })
         .map(({ id }) => resultsById[id])
-        .filter(result => selectedTypes.includes(result.type))
-    }
+        .filter(result => getSelectedTypes().includes(result.type))
 
-    const getResultsForPage = (page) => {
-      const start = (page - 1) * PAGE_SIZE
-      const end = page * PAGE_SIZE
-      return currentResults.slice(start, end)
-    }
-
-    const parseMarkdown = (markdown) => {
-      if (!markdown) return ''
-      markdown = markdown.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-      markdown = markdown.replace(/\*(.*?)\*/g, '<em>$1</em>')
-      markdown = markdown.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
-      markdown = markdown.replace(/\n/g, '<br>')
-      markdown = markdown.replace(/[#*_~`]/g, '')
-      return markdown
-    }
-
-    const truncateDescription = (markdown, maxLength = 150) => {
-      const htmlDescription = parseMarkdown(markdown)
-      const tempDiv = document.createElement('div')
-      tempDiv.innerHTML = htmlDescription
-      const plainText = tempDiv.textContent || tempDiv.innerText || ''
-      if (plainText.length > maxLength) return plainText.substring(0, maxLength) + '...'
-      return plainText
-    }
-
-    const formatArtistTitle = (title, totalPlays) => {
-      if (totalPlays > 0) return `${title} <strong class="highlight-text">${totalPlays} plays</strong>`
-      return `${title}`
-    }
-
-    const renderSearchResults = (results) => {
-      if (results.length > 0) {
-        $results.innerHTML = results.map(({ title, url, description, type, total_plays }) => {
-          const truncatedDesc = truncateDescription(description)
-          let formattedTitle = title
-
-          if (type === 'artist' && total_plays !== undefined) formattedTitle = formatArtistTitle(title, total_plays)
-
-          return `
-            <li class="search__results--result">
-              <a href="${url}">
-                <h3>${formattedTitle}</h3>
-              </a>
-              <p>${truncatedDesc}</p>
-            </li>
-          `
-        }).join('\n')
-        $results.style.display = 'block'
-      } else {
-        $results.innerHTML = '<li class="search__results--no-results">No results found.</li>'
-        $results.style.display = 'block'
-      }
-    }
-
-    const appendSearchResults = (results) => {
-      const newResults = results.map(({ title, url, description, type, total_plays }) => {
-        const truncatedDesc = truncateDescription(description)
-        let formattedTitle = title
-
-        if (type === 'artist' && total_plays !== undefined) formattedTitle = formatArtistTitle(title, total_plays)
-
-        return `
-          <li class="search__results--result">
-            <a href="${url}">
-              <h3>${formattedTitle}</h3>
-            </a>
-            <p>${truncatedDesc}</p>
-          </li>
-        `
-      }).join('\n')
-      $results.insertAdjacentHTML('beforeend', newResults)
-    }
+    const getResultsForPage = page =>
+      currentResults.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
   })()
 })

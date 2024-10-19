@@ -62,9 +62,7 @@ WITH search_data AS (
 
   SELECT
       'artist' AS type,
-      CONCAT(
-          COALESCE(ar.emoji, ar.genre_emoji, '🎧'), ' ', ar.name
-      ) AS title,
+      CONCAT(COALESCE(ar.emoji, ar.genre_emoji, '🎧'), ' ', ar.name) AS title,
       CONCAT('https://coryd.dev', ar.url) AS url,
       ar.description AS description,
       ARRAY[ar.genre_name] AS tags,
@@ -110,17 +108,13 @@ search_data_with_id AS (
   FROM search_data
 )
 SELECT
-    json_agg(
-      json_build_object(
-        'id', search_data_with_id.id,
-        'url', search_data_with_id.url,
-        'title', search_data_with_id.title,
-        'description', search_data_with_id.description,
-        'tags', search_data_with_id.tags,
-        'genre_name', search_data_with_id.genre_name,
-        'genre_url', search_data_with_id.genre_url,
-        'type', search_data_with_id.type,
-        'total_plays', search_data_with_id.total_plays
-      )
-    ) AS search_index
+  id,
+  url,
+  title,
+  description,
+  tags,
+  genre_name,
+  genre_url,
+  type,
+  total_plays
 FROM search_data_with_id;
