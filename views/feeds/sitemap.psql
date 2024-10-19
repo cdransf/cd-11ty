@@ -3,7 +3,9 @@ WITH sitemap_data AS (
   SELECT
       p.date AS content_date,
       p.title,
-      CONCAT('https://coryd.dev', p.url) AS url
+      CONCAT('https://coryd.dev', p.url) AS url,
+      'monthly' AS changefreq,
+      0.7 AS priority
   FROM optimized_posts p
 
   UNION ALL
@@ -11,7 +13,9 @@ WITH sitemap_data AS (
   SELECT
       b.date_finished AS content_date,
       b.title,
-      CONCAT('https://coryd.dev', b.url) AS url
+      CONCAT('https://coryd.dev', b.url) AS url,
+      'monthly' AS changefreq,
+      0.5 AS priority
   FROM optimized_books b
 
   UNION ALL
@@ -19,7 +23,9 @@ WITH sitemap_data AS (
   SELECT
       m.last_watched AS content_date,
       m.title,
-      CONCAT('https://coryd.dev', m.url) AS url
+      CONCAT('https://coryd.dev', m.url) AS url,
+      'weekly' AS changefreq,
+      0.6 AS priority
   FROM optimized_movies m
 
   UNION ALL
@@ -27,7 +33,9 @@ WITH sitemap_data AS (
   SELECT
       NULL AS content_date,
       ar.name AS title,
-      CONCAT('https://coryd.dev', ar.url) AS url
+      CONCAT('https://coryd.dev', ar.url) AS url,
+      'monthly' AS changefreq,
+      0.5 AS priority
   FROM optimized_artists ar
 
   UNION ALL
@@ -35,7 +43,9 @@ WITH sitemap_data AS (
   SELECT
       NULL AS content_date,
       g.name AS title,
-      CONCAT('https://coryd.dev', g.url) AS url
+      CONCAT('https://coryd.dev', g.url) AS url,
+      'yearly' AS changefreq,
+      0.3 AS priority
   FROM optimized_genres g
 
   UNION ALL
@@ -43,16 +53,16 @@ WITH sitemap_data AS (
   SELECT
       s.last_watched_at AS content_date,
       s.title,
-      CONCAT('https://coryd.dev', s.url) AS url
+      CONCAT('https://coryd.dev', s.url) AS url,
+      'weekly' AS changefreq,
+      0.8 AS priority
   FROM optimized_shows s
 )
 
 SELECT
-    json_agg(
-        json_build_object(
-            'url', sd.url,
-            'title', sd.title,
-            'date', sd.content_date
-        )
-    ) AS sitemap
-FROM sitemap_data sd;
+    url,
+    title,
+    content_date AS lastmod,
+    changefreq,
+    priority
+FROM sitemap_data;
