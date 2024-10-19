@@ -11,8 +11,9 @@
     "start:eleventy": "eleventy --serve",
     "start:eleventy:quick": "eleventy --serve --incremental --ignore-initial",
     "build": "ELEVENTY_PRODUCTION=true eleventy",
-    "update:deps": "npm upgrade && ncu",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
+    "update:deps": "npm upgrade && ncu",
+    "install:components": "node ./scripts/install-components.mjs",
     "clean": "rimraf _site",
     "build:worker": "node scripts/worker-build.mjs $WORKER_NAME",
     "deploy:worker": "wrangler deploy --env production --config workers/$npm_config_worker/wrangler.toml"

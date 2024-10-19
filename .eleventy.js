@@ -44,16 +44,6 @@ export default async function (eleventyConfig) {
 						entryFileNames: 'assets/js/[name].[hash].js'
           },
         },
-        resolve: {
-          alias: {
-            'api-text': resolve('./node_modules/@cdransf/api-text/api-text.js'),
-            'select-pagination': resolve('./node_modules/@cdransf/select-pagination/select-pagination.js'),
-            'mastodon-post': resolve('./node_modules/@daviddarnes/mastodon-post/mastodon-post.js'),
-            'mini-search': resolve('./node_modules/minisearch/dist/umd/index.js'),
-            'theme-toggle': resolve('./node_modules/@cdransf/theme-toggle/theme-toggle.js'),
-            'youtube-video-element': resolve('./node_modules/youtube-video-element/youtube-video-element.js'),
-          },
-        },
       },
       plugins: [ViteMinifyPlugin({})],
     },
