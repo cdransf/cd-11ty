@@ -23,14 +23,9 @@
         {%- if entryFeed.artist and entryFeed.artist.name %} via {{ entryFeed.artist.name }}{%- endif -%}
         {%- if rating %} ({{ rating }}){%- endif -%}
       {%- endcapture -%}
-      {%- assign utm_parameters = "utm_source=rss&utm_medium=feed&utm_campaign=" | append: utm_campaign -%}
       <item>
         <title><![CDATA[{{ entryTitle }}]]></title>
-        {%- if utm_campaign -%}
-        <link>{{ entryFeed.url | append: '?' | append: utm_parameters | encodeAmp }}</link>
-        {%- else -%}
         <link>{{ entryFeed.url | encodeAmp }}</link>
-        {%- endif -%}
         <pubDate>{{ entryFeed.date | stringToRFC822Date }}</pubDate>
         <guid isPermaLink="false">{{ entryFeed.url | encodeAmp }}</guid>
         {%- if entryFeed.image -%}
