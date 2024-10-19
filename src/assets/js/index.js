@@ -110,7 +110,7 @@ window.addEventListener('load', () => {
 
     const loadSearchIndex = async () => {
       try {
-        const response = await fetch('/api/search')
+        const response = await fetch('/data/search.json')
         const index = await response.json()
         const resultsById = index.reduce((byId, result) => {
           byId[result.id] = result

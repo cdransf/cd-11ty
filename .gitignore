@@ -2,6 +2,7 @@
 _site
 node_modules
 .cache
+.11ty-vite
 
 # local dependencies
 .env.local
