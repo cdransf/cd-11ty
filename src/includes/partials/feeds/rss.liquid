@@ -29,7 +29,7 @@
         <pubDate>{{ entryFeed.date | stringToRFC822Date }}</pubDate>
         <guid isPermaLink="false">{{ entryFeed.url | encodeAmp }}</guid>
         {%- if entryFeed.image -%}
-          <enclosure url="{{ globals.cdn_url }}{{ entryFeed.image }}?class=w800&type=jpg" type="image/jpeg" />
+          <enclosure url="{{ globals.cdn_url }}{{ entryFeed.image }}?class=w800&amp;type=jpg" type="image/jpeg" />
         {%- endif -%}
         <description><![CDATA[{{ entryFeed.description | markdown }}]]></description>
       </item>
