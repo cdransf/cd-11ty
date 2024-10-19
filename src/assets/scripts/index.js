@@ -194,8 +194,6 @@ window.addEventListener('load', () => {
       }
     }
 
-    loadSearchIndex().then(loadedResultsById => resultsById = loadedResultsById)
-
     const getSelectedTypes = () =>
       Array.from($typeCheckboxes)
         .filter(checkbox => checkbox.checked)
