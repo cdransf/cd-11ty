@@ -108,7 +108,7 @@ window.addEventListener('load', () => {
 
     const loadSearchIndex = async () => {
       try {
-        const response = await fetch('/api/search')
+        const response = await fetch('https://coryd.dev/api/search')
         const index = await response.json()
         const resultsById = index.reduce((byId, result) => {
           byId[result.id] = result
