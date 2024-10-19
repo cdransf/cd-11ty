@@ -173,7 +173,7 @@ window.addEventListener('load', () => {
 
     const loadSearchIndex = async (query = '', types = []) => {
       const typeQuery = types.join(',')
-      const response = await fetch(`https://coryd.dev/api/search-beta?q=${query}&type=${typeQuery}`)
+      const response = await fetch(`https://coryd.dev/api/search?q=${query}&type=${typeQuery}`)
       const index = await response.json()
 
       resultsById = index.reduce((byId, result) => {
