@@ -44,6 +44,13 @@ app.use((req, res, next) => {
   if (req.path.endsWith('.css')) res.setHeader('Content-Type', 'text/css')
   else if (req.path.endsWith('.js')) res.setHeader('Content-Type', 'application/javascript')
   else if (req.path.endsWith('.json')) res.setHeader('Content-Type', 'application/json')
+  else if (req.path.startsWith('/api/')) res.setHeader('Content-Type', 'application/json')
+  else if (req.path.startsWith('/feeds/all')) res.setHeader('Content-Type', 'application/xml')
+  else if (req.path.startsWith('/feeds/books')) res.setHeader('Content-Type', 'application/xml')
+  else if (req.path.startsWith('/feeds/links')) res.setHeader('Content-Type', 'application/xml')
+  else if (req.path.startsWith('/feeds/movies')) res.setHeader('Content-Type', 'application/xml')
+  else if (req.path.startsWith('/feeds/posts')) res.setHeader('Content-Type', 'application/xml')
+  else if (req.path.startsWith('/feeds/syndication')) res.setHeader('Content-Type', 'application/xml')
   next()
 })
 
