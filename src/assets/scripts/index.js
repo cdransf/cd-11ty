@@ -192,12 +192,12 @@ window.addEventListener("load", () => {
       $results.insertAdjacentHTML("beforeend", newResults);
     };
 
-    const loadSearchIndex = async (query = "", types = []) => {
+    const loadSearchIndex = async (query = "", types = [], page = 1) => {
       const typeQuery = types.join(",");
 
       try {
         const response = await fetch(
-          `https://coryd.dev/api/search?q=${query}&type=${typeQuery}&page=${currentPage}&pageSize=${PAGE_SIZE}`
+          `https://coryd.dev/api/search?q=${query}&type=${typeQuery}&page=${page}&pageSize=${PAGE_SIZE}`
         );
         const index = await response.json();
         const results = index.results || [];
@@ -212,11 +212,10 @@ window.addEventListener("load", () => {
         miniSearch.removeAll();
         miniSearch.addAll(results);
 
-        currentResults = results;
-        return resultsById;
+        return results;
       } catch (error) {
         console.error("Error fetching search data:", error);
-        return {};
+        return [];
       }
     };
 
@@ -224,6 +223,17 @@ window.addEventListener("load", () => {
       Array.from($typeCheckboxes)
         .filter((checkbox) => checkbox.checked)
         .map((checkbox) => checkbox.value);
+
+    const updateSearchResults = (results) => {
+      if (currentPage === 1) {
+        renderSearchResults(results);
+      } else {
+        appendSearchResults(results);
+      }
+
+      const moreResultsToShow = currentPage * PAGE_SIZE < total;
+      $loadMoreButton.style.display = moreResultsToShow ? "block" : "none";
+    };
 
     $input.addEventListener("input", () => {
       const query = $input.value.trim();
@@ -236,34 +246,38 @@ window.addEventListener("load", () => {
       }
 
       debounceTimeout = setTimeout(async () => {
-        await loadSearchIndex(query, getSelectedTypes());
+        const results = await loadSearchIndex(query, getSelectedTypes(), 1);
+        currentResults = results;
         currentPage = 1;
 
-        renderSearchResults(getResultsForPage(currentPage));
-        $loadMoreButton.style.display = total > PAGE_SIZE ? "block" : "none";
+        updateSearchResults(currentResults);
       }, 300);
     });
 
     $typeCheckboxes.forEach((checkbox) => {
       checkbox.addEventListener("change", async () => {
-        await loadSearchIndex($input.value.trim(), getSelectedTypes());
+        const results = await loadSearchIndex(
+          $input.value.trim(),
+          getSelectedTypes(),
+          1
+        );
+        currentResults = results;
         currentPage = 1;
 
-        renderSearchResults(getResultsForPage(currentPage));
-        $loadMoreButton.style.display = total > PAGE_SIZE ? "block" : "none";
+        updateSearchResults(currentResults);
       });
     });
 
-    $loadMoreButton.addEventListener("click", () => {
+    $loadMoreButton.addEventListener("click", async () => {
       currentPage++;
-      const nextResults = getResultsForPage(currentPage);
-      appendSearchResults(nextResults);
+      const nextResults = await loadSearchIndex(
+        $input.value.trim(),
+        getSelectedTypes(),
+        currentPage
+      );
+      currentResults = [...currentResults, ...nextResults];
 
-      $loadMoreButton.style.display =
-        currentPage * PAGE_SIZE < total ? "block" : "none";
+      updateSearchResults(nextResults);
     });
-
-    const getResultsForPage = (page) =>
-      currentResults.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
   })();
 });
