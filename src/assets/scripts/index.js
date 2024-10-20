@@ -131,7 +131,7 @@ window.addEventListener("load", () => {
     let currentPage = 1;
     let currentResults = [];
     let total = 0;
-    let debounceTimeout; // Declare debounceTimeout here
+    let debounceTimeout;
 
     const parseMarkdown = (markdown) =>
       markdown

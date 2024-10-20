@@ -25,10 +25,15 @@ export default {
 
       if (error) {
         console.error("Error fetching search data:", error);
-        return new Response(JSON.stringify({ results: [] }), { status: 500 });
+        return new Response(JSON.stringify({ results: [], total: 0 }), {
+          status: 500,
+        });
       }
 
-      return new Response(JSON.stringify({ results: data }), {
+      const total = data.length > 0 ? data[0].total_count : 0;
+      const results = data.map(({ total_count, ...item }) => item);
+
+      return new Response(JSON.stringify({ results, total, page, pageSize }), {
         headers: { "Content-Type": "application/json" },
       });
     } catch (error) {
