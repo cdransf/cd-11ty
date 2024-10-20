@@ -2,74 +2,38 @@ import { createClient } from "@supabase/supabase-js";
 
 export default {
   async fetch(request, env) {
-    const allowedOrigin = "https://coryd.dev";
-    const origin = request.headers.get("Origin") || "";
-    const referer = request.headers.get("Referer") || "";
+    const supabaseUrl = env.SUPABASE_URL;
+    const supabaseKey = env.SUPABASE_KEY;
+    const supabase = createClient(supabaseUrl, supabaseKey);
 
-    if (!origin.startsWith(allowedOrigin) && !referer.startsWith(allowedOrigin))
-      return new Response("Forbidden", { status: 403 });
-
-    const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_KEY);
     const { searchParams } = new URL(request.url);
     const query = searchParams.get("q") || "";
-    const types = searchParams.get("type")?.split(",") || [];
+    const rawTypes = searchParams.getAll("type") || [];
+    const types = rawTypes.length > 0 ? rawTypes[0].split(",") : null;
+
     const page = parseInt(searchParams.get("page") || "1", 10);
     const pageSize = parseInt(searchParams.get("pageSize") || "10", 10);
     const offset = (page - 1) * pageSize;
 
     try {
-      let supabaseQuery = supabase
-        .from("optimized_search_index")
-        .select(
-          "id, title, description, url, tags, type, total_plays, genre_name, genre_url",
-          { count: "exact" }
-        )
-        .range(offset, offset + pageSize - 1);
-
-      if (types.length > 0) supabaseQuery = supabaseQuery.in("type", types);
-
-      if (query) {
-        const queryLower = `%${query.toLowerCase()}%`;
-        supabaseQuery = supabaseQuery.or(
-          `title.ilike.${queryLower},description.ilike.${queryLower}`
-        );
-      }
-
-      const { data, error, count } = await supabaseQuery;
+      const { data, error } = await supabase.rpc("search_optimized_index", {
+        search_query: query,
+        page_size: pageSize,
+        page_offset: offset,
+        types: types.length ? types : null,
+      });
 
       if (error) {
-        console.error("Query error:", error);
-        return new Response(JSON.stringify({ error: "Error fetching data" }), {
-          status: 500,
-        });
+        console.error("Error fetching search data:", error);
+        return new Response(JSON.stringify({ results: [] }), { status: 500 });
       }
 
-      if (!data || data.length === 0) {
-        console.warn("No results found.");
-        return new Response(
-          JSON.stringify({ results: [], total: 0, page, pageSize }),
-          { headers: { "Content-Type": "application/json" } }
-        );
-      }
-
-      return new Response(
-        JSON.stringify({
-          results: data,
-          total: count || 0,
-          page,
-          pageSize,
-        }),
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      return new Response(JSON.stringify({ results: data }), {
+        headers: { "Content-Type": "application/json" },
+      });
     } catch (error) {
       console.error("Unexpected error:", error);
-      return new Response(JSON.stringify({ error: "Internal Server Error" }), {
-        status: 500,
-      });
+      return new Response("Internal Server Error", { status: 500 });
     }
   },
 };

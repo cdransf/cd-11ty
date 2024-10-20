@@ -220,15 +220,20 @@ window.addEventListener("load", () => {
 
         total = index.total || results.length;
 
-        resultsById = results.reduce((acc, item) => {
+        const formattedResults = results.map((item) => ({
+          ...item,
+          id: item.result_id,
+        }));
+
+        resultsById = formattedResults.reduce((acc, item) => {
           acc[item.id] = item;
           return acc;
         }, {});
 
         miniSearch.removeAll();
-        miniSearch.addAll(results);
+        miniSearch.addAll(formattedResults);
 
-        return results;
+        return formattedResults;
       } catch (error) {
         console.error("Error fetching search data:", error);
         return [];
