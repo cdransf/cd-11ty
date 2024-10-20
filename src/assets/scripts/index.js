@@ -23,6 +23,7 @@ window.addEventListener("load", () => {
     });
 
     const $form = document.querySelector(".search__form");
+    const $fallback = document.querySelector(".search__form--fallback");
     const $input = document.querySelector(".search__form--input");
     const $results = document.querySelector(".search__results");
     const $loadMoreButton = document.querySelector(".search__load-more");
