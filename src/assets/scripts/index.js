@@ -92,7 +92,7 @@ window.addEventListener("load", () => {
 
   // search logic
   (() => {
-    if (!MiniSearch || !document.querySelector(".search__form--input")) return;
+    if (typeof MiniSearch === "undefined") return;
 
     const miniSearch = new MiniSearch({
       fields: ["title", "description", "tags", "type"],
