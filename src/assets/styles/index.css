@@ -1,40 +1,40 @@
 @layer reset, defaults, base, page, components, plugins;
 
 /* style resets */
-@import url('./reset.css') layer(reset);
+@import url("./reset.css") layer(reset);
 
 /* core defaults */
-@import url('./defaults/fonts.css') layer(defaults);
-@import url('./defaults/vars.css') layer(defaults);
+@import url("./defaults/fonts.css") layer(defaults);
+@import url("./defaults/vars.css") layer(defaults);
 
- /* base styles */
-@import url('./base/index.css') layer(base);
+/* base styles */
+@import url("./base/index.css") layer(base);
 
 /* plugins */
-@import url('./plugins/prism.css') layer(plugins);
+@import url("./plugins/prism.css") layer(plugins);
 
 /* page styles */
-@import url('./pages/about.css') layer(page);
-@import url('./pages/books.css') layer(page);
-@import url('./pages/blogroll.css') layer(page);
-@import url('./pages/contact.css') layer(page);
-@import url('./pages/feeds.css') layer(page);
-@import url('./pages/links.css') layer(page);
-@import url('./pages/music.css') layer(page);
-@import url('./pages/articles.css') layer(page);
-@import url('./pages/watching.css') layer(page);
-@import url('./pages/webrings.css') layer(page);
+@import url("./pages/about.css") layer(page);
+@import url("./pages/books.css") layer(page);
+@import url("./pages/blogroll.css") layer(page);
+@import url("./pages/contact.css") layer(page);
+@import url("./pages/feeds.css") layer(page);
+@import url("./pages/links.css") layer(page);
+@import url("./pages/music.css") layer(page);
+@import url("./pages/articles.css") layer(page);
+@import url("./pages/watching.css") layer(page);
+@import url("./pages/webrings.css") layer(page);
 
 /* component styles */
-@import url('./components/badge-grid.css') layer(components);
-@import url('./components/banners.css') layer(components);
-@import url('./components/buttons.css') layer(components);
-@import url('./components/forms.css') layer(components);
-@import url('./components/mastodon-post.css') layer(components);
-@import url('./components/media-grid.css') layer(components);
-@import url('./components/menu.css') layer(components);
-@import url('./components/modal.css') layer(components);
-@import url('./components/music-chart.css') layer(components);
-@import url('./components/paginator.css') layer(components);
-@import url('./components/progress-bar.css') layer(components);
-@import url('./components/theme-toggle.css') layer(components);
+@import url("./components/badge-grid.css") layer(components);
+@import url("./components/banners.css") layer(components);
+@import url("./components/buttons.css") layer(components);
+@import url("./components/forms.css") layer(components);
+@import url("./components/mastodon-post.css") layer(components);
+@import url("./components/media-grid.css") layer(components);
+@import url("./components/menu.css") layer(components);
+@import url("./components/modal.css") layer(components);
+@import url("./components/music-chart.css") layer(components);
+@import url("./components/paginator.css") layer(components);
+@import url("./components/progress-bar.css") layer(components);
+@import url("./components/theme-toggle.css") layer(components);

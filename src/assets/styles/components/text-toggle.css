@@ -12,7 +12,7 @@
     &::after {
       position: absolute;
       z-index: 1;
-      content: '';
+      content: "";
       box-shadow: var(--box-shadow-text-toggle);
       width: 100%;
       height: 20%;

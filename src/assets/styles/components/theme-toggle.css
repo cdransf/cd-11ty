@@ -20,10 +20,14 @@ theme-toggle {
     stroke: var(--accent-color-hover);
   }
 
-  & > .light svg { stroke: var(--sun); }
-  & > .dark svg { stroke: var(--moon); }
+  & > .light svg {
+    stroke: var(--sun);
+  }
+  & > .dark svg {
+    stroke: var(--moon);
+  }
 
-  & > .light ,
+  & > .light,
   & > .dark {
     display: none;
   }

@@ -20,7 +20,7 @@ pre {
   margin: var(--sizing-xl) 0;
   overflow: auto;
 
-  &  > code {
+  & > code {
     padding: 0;
   }
 }

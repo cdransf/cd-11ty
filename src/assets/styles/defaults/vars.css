@@ -108,11 +108,12 @@
   --border-gray: 1px solid var(--gray-light);
 
   /* fonts */
-  --font-mono: MonoLisa, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, ui-monospace, monospace;
+  --font-mono: MonoLisa, Menlo, Consolas, Monaco, Liberation Mono,
+    Lucida Console, ui-monospace, monospace;
 
   /* text */
-  --font-size-xs: .7rem;
-  --font-size-sm: .85rem;
+  --font-size-xs: 0.7rem;
+  --font-size-sm: 0.85rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.15rem;
   --font-size-xl: 1.3rem;
@@ -127,9 +128,9 @@
   --line-height-base: 2;
 
   /* sizing */
-  --sizing-xs: .25rem;
-  --sizing-sm: .5rem;
-  --sizing-md: .75rem;
+  --sizing-xs: 0.25rem;
+  --sizing-sm: 0.5rem;
+  --sizing-md: 0.75rem;
   --sizing-lg: 1rem;
   --sizing-base: 1.5rem;
   --sizing-xl: 1.75rem;

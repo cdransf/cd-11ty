@@ -1,20 +1,20 @@
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from "@supabase/supabase-js";
 
-const SUPABASE_URL = process.env.SUPABASE_URL
-const SUPABASE_KEY = process.env.SUPABASE_KEY
-const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+const SUPABASE_URL = process.env.SUPABASE_URL;
+const SUPABASE_KEY = process.env.SUPABASE_KEY;
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export default async function fetchActivity() {
   const { data, error } = await supabase
-    .from('optimized_all_activity')
-    .select('feed')
+    .from("optimized_all_activity")
+    .select("feed");
 
   if (error) {
-    console.error('Error fetching activity data:', error)
-    return []
+    console.error("Error fetching activity data:", error);
+    return [];
   }
 
-  const [{ feed } = {}] = data
+  const [{ feed } = {}] = data;
 
-  return feed?.filter(item => item['feed'] !== null) || []
+  return feed?.filter((item) => item["feed"] !== null) || [];
 }

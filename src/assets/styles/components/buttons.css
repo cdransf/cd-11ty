@@ -1,5 +1,5 @@
-@import url('./tab-buttons.css');
-@import url('./text-toggle.css');
+@import url("./tab-buttons.css");
+@import url("./text-toggle.css");
 
 button,
 .button {
@@ -22,7 +22,8 @@ button,
     color: var(--text-color-inverted);
     background-color: var(--accent-color);
     appearance: none;
-    transition: color var(--transition-duration-default) var(--transition-ease-in-out);
+    transition: color var(--transition-duration-default)
+      var(--transition-ease-in-out);
   }
 
   &:not(.theme-toggle, .active):hover,

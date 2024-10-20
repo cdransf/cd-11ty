@@ -1,6 +1,6 @@
 ::placeholder {
   color: var(--text-color);
-  opacity: .5;
+  opacity: 0.5;
 }
 
 input[type="text"],

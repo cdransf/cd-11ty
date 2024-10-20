@@ -45,7 +45,7 @@ a:active > .watching.hero::after {
     &::after {
       position: absolute;
       z-index: 1;
-      content: '';
+      content: "";
       top: 0;
       left: 0;
       box-shadow: var(--box-shadow-media);
@@ -53,7 +53,8 @@ a:active > .watching.hero::after {
       height: 100%;
       border: var(--border-default);
       border-radius: var(--border-radius-slight);
-      transition: border-color var(--transition-duration-default) var(--transition-ease-in-out);
+      transition: border-color var(--transition-duration-default)
+        var(--transition-ease-in-out);
     }
   }
 

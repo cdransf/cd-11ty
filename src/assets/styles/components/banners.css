@@ -37,12 +37,24 @@
   &.old-post,
   &.rss,
   &.warning {
-    &.error { --banner-accent-color: var(--error); }
-    &.github { --banner-accent-color: var(--brand-github); }
-    &.npm { --banner-accent-color: var(--brand-npm); }
-    &.old-post { --banner-accent-color: var(--gray-dark); }
-    &.rss { --banner-accent-color: var(--brand-rss); }
-    &.warning { --banner-accent-color: var(--warning); }
+    &.error {
+      --banner-accent-color: var(--error);
+    }
+    &.github {
+      --banner-accent-color: var(--brand-github);
+    }
+    &.npm {
+      --banner-accent-color: var(--brand-npm);
+    }
+    &.old-post {
+      --banner-accent-color: var(--gray-dark);
+    }
+    &.rss {
+      --banner-accent-color: var(--brand-rss);
+    }
+    &.warning {
+      --banner-accent-color: var(--warning);
+    }
 
     border-color: var(--banner-accent-color);
 

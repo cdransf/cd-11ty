@@ -1,28 +1,28 @@
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from "@supabase/supabase-js";
 
-const SUPABASE_URL = process.env.SUPABASE_URL
-const SUPABASE_KEY = process.env.SUPABASE_KEY
-const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+const SUPABASE_URL = process.env.SUPABASE_URL;
+const SUPABASE_KEY = process.env.SUPABASE_KEY;
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 const fetchGlobals = async () => {
   const { data, error } = await supabase
-    .from('optimized_globals')
-    .select('*')
-    .single()
+    .from("optimized_globals")
+    .select("*")
+    .single();
 
   if (error) {
-    console.error('Error fetching globals:', error)
-    return {}
+    console.error("Error fetching globals:", error);
+    return {};
   }
 
-  return data
-}
+  return data;
+};
 
 export default async function () {
   try {
-    return await fetchGlobals()
+    return await fetchGlobals();
   } catch (error) {
-    console.error('Error fetching and processing globals:', error)
-    return {}
+    console.error("Error fetching and processing globals:", error);
+    return {};
   }
 }

@@ -1,5 +1,6 @@
 .mastodon-post-wrapper {
-  & dl, dt {
+  & dl,
+  dt {
     display: flex;
   }
 
@@ -7,7 +8,7 @@
     align-items: center;
 
     & dd {
-      margin-left:  var(--spacing-xs);;
+      margin-left: var(--spacing-xs);
 
       &:not(:last-child) {
         margin-right: var(--spacing-lg);

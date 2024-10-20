@@ -27,7 +27,8 @@
     max-width: calc(var(--sizing-3xl) * 4);
     height: auto;
     aspect-ratio: var(--aspect-ratio-vertical);
-    transition: border-color var(--transition-duration-default) var(--transition-ease-in-out);
+    transition: border-color var(--transition-duration-default)
+      var(--transition-ease-in-out);
   }
 
   & a:focus img,
