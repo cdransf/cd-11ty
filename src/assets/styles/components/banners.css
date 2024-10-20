@@ -31,12 +31,16 @@
     }
   }
 
+  &.coffee,
   &.error,
   &.github,
   &.npm,
   &.old-post,
   &.rss,
   &.warning {
+    &.coffee {
+      --banner-accent-color: var(--brand-buy-me-a-coffee);
+    }
     &.error {
       --banner-accent-color: var(--error);
     }
