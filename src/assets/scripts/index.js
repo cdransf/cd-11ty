@@ -213,7 +213,7 @@ window.addEventListener("load", () => {
 
       try {
         const response = await fetch(
-          `https://localhost:8787/api/search?q=${query}&type=${typeQuery}&page=${page}&pageSize=${PAGE_SIZE}`
+          `https://coryd.dev/api/search?q=${query}&type=${typeQuery}&page=${page}&pageSize=${PAGE_SIZE}`
         );
         const index = await response.json();
         const results = index.results || [];
