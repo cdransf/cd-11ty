@@ -47,24 +47,6 @@ WITH search_data AS (
   UNION ALL
 
   SELECT
-      'movie' AS type,
-      CASE
-          WHEN m.rating IS NOT NULL THEN CONCAT('🎥 ', m.title, ' (', m.rating, ')')
-          ELSE CONCAT('🎥 ', m.title)
-      END AS title,
-      CONCAT('https://coryd.dev', m.url) AS url,
-      m.description AS description,
-      m.tags,
-      NULL AS genre_name,
-      NULL AS genre_url,
-      NULL::integer AS total_plays,
-      m.last_watched AS content_date
-  FROM optimized_movies m
-  WHERE m.last_watched IS NOT NULL
-
-  UNION ALL
-
-  SELECT
       'artist' AS type,
       CONCAT(COALESCE(ar.emoji, ar.genre_emoji, '🎧'), ' ', ar.name) AS title,
       CONCAT('https://coryd.dev', ar.url) AS url,
@@ -107,14 +89,9 @@ WITH search_data AS (
       s.last_watched_at AS content_date
   FROM optimized_shows s
   WHERE s.last_watched_at IS NOT NULL
-),
-search_data_with_id AS (
-  SELECT
-    ROW_NUMBER() OVER (ORDER BY content_date DESC NULLS LAST, url) AS id,
-    search_data.*
-  FROM search_data
 )
+
 SELECT
-  id, url, title, description, tags, genre_name, genre_url, type, total_plays
-FROM search_data_with_id
-ORDER BY content_date DESC NULLS LAST, url;
+  ROW_NUMBER() OVER (ORDER BY url) AS id,
+  *
+FROM search_data;

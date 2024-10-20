@@ -107,8 +107,9 @@ window.addEventListener("load", () => {
         "total_plays",
       ],
       searchOptions: {
+        fields: ["title", "tags"],
         prefix: true,
-        fuzzy: 0.2,
+        fuzzy: 0,
         boost: { title: 2, tags: 1.5 },
         sort: (a, b) => b.score - a.score,
       },
