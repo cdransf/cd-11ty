@@ -1,33 +1,45 @@
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from "@supabase/supabase-js";
 
 export default {
   async fetch(request, env) {
-    const supabaseUrl = env.SUPABASE_URL || process.env.SUPABASE_URL
-    const supabaseKey = env.SUPABASE_KEY || process.env.SUPABASE_KEY
-    const supabase = createClient(supabaseUrl, supabaseKey)
+    const supabaseUrl = env.SUPABASE_URL || process.env.SUPABASE_URL;
+    const supabaseKey = env.SUPABASE_KEY || process.env.SUPABASE_KEY;
+    const supabase = createClient(supabaseUrl, supabaseKey);
 
     const { data, error } = await supabase
-      .from('optimized_latest_listen')
-      .select('*')
-      .single()
+      .from("optimized_latest_listen")
+      .select("*")
+      .single();
 
     const headers = {
       "Content-Type": "application/json",
       "Cache-Control": "public, s-maxage=360, stale-while-revalidate=1080",
-    }
+    };
 
     if (error) {
-      console.error('Error fetching data:', error)
-      return new Response(JSON.stringify({ error: "Failed to fetch the latest track" }), { headers })
+      console.error("Error fetching data:", error);
+      return new Response(
+        JSON.stringify({ error: "Failed to fetch the latest track" }),
+        { headers }
+      );
     }
 
-    if (!data) return new Response(JSON.stringify({ message: "No recent tracks found" }), { headers })
+    if (!data)
+      return new Response(
+        JSON.stringify({ message: "No recent tracks found" }),
+        { headers }
+      );
 
-    const genreEmoji = data.genre_emoji
-    const emoji = data.artist_emoji || genreEmoji
+    const genreEmoji = data.genre_emoji;
+    const emoji = data.artist_emoji || genreEmoji;
 
-    return new Response(JSON.stringify({
-      content: `${emoji || '🎧'} ${data.track_name} by <a href="https://coryd.dev${data.url}">${data.artist_name}</a>`,
-    }), { headers })
-  }
-}
+    return new Response(
+      JSON.stringify({
+        content: `${emoji || "🎧"} ${
+          data.track_name
+        } by <a href="https://coryd.dev${data.url}">${data.artist_name}</a>`,
+      }),
+      { headers }
+    );
+  },
+};
