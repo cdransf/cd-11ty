@@ -109,9 +109,8 @@ window.addEventListener("load", () => {
       searchOptions: {
         fields: ["title", "tags"],
         prefix: true,
-        fuzzy: 0,
-        boost: { title: 2, tags: 1.5 },
-        sort: (a, b) => b.score - a.score,
+        fuzzy: 0.1,
+        boost: { title: 3, tags: 1.5 },
       },
     });
     const $form = document.querySelector(".search__form");
@@ -214,7 +213,7 @@ window.addEventListener("load", () => {
 
       try {
         const response = await fetch(
-          `https://coryd.dev/api/search?q=${query}&type=${typeQuery}&page=${page}&pageSize=${PAGE_SIZE}`
+          `https://localhost:8787/api/search?q=${query}&type=${typeQuery}&page=${page}&pageSize=${PAGE_SIZE}`
         );
         const index = await response.json();
         const results = index.results || [];
