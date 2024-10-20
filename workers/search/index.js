@@ -38,7 +38,7 @@ export default {
       const { data, error, count } = await supabaseQuery;
 
       if (error) {
-        console.error("Supabase query error:", error);
+        console.error("Query error:", error);
         return new Response(JSON.stringify({ error: "Error fetching data" }), {
           status: 500,
         });
