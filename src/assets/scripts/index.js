@@ -107,9 +107,10 @@ window.addEventListener("load", () => {
         "total_plays",
       ],
       searchOptions: {
-        boost: { title: 2, tags: 1.5 },
         prefix: true,
-        fuzzy: 0.3,
+        fuzzy: 0.2,
+        boost: { title: 2, tags: 1.5 },
+        sort: (a, b) => b.score - a.score,
       },
     });
     const $form = document.querySelector(".search__form");
