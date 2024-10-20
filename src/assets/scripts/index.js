@@ -96,6 +96,21 @@ window.addEventListener("load", () => {
 
     const miniSearch = new MiniSearch({
       fields: ["title", "description", "tags", "type"],
+      idField: "id",
+      storeFields: [
+        "id",
+        "title",
+        "url",
+        "description",
+        "type",
+        "tags",
+        "total_plays",
+      ],
+      searchOptions: {
+        boost: { title: 2, tags: 1.5 },
+        prefix: true,
+        fuzzy: 0.3,
+      },
     });
     const $form = document.querySelector(".search__form");
     const $input = document.querySelector(".search__form--input");
