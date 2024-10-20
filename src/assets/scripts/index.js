@@ -110,16 +110,7 @@ window.addEventListener("load", () => {
         fields: ["title", "tags"],
         prefix: true,
         fuzzy: 0.1,
-        boost: { title: 5, tags: 2 },
-        sort: (a, b) => {
-          const exactMatchA =
-            a.title.toLowerCase() === $input.value.trim().toLowerCase();
-          const exactMatchB =
-            b.title.toLowerCase() === $input.value.trim().toLowerCase();
-          if (exactMatchA && !exactMatchB) return -1;
-          if (!exactMatchA && exactMatchB) return 1;
-          return b.score - a.score;
-        },
+        boost: { title: 5, tags: 2, description: 1 },
       },
     });
     const $form = document.querySelector(".search__form");
