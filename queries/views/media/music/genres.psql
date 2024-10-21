@@ -4,53 +4,45 @@ SELECT
     g.name,
     g.description,
     g.emoji,
-    g.total_plays,
+    to_char(g.total_plays, 'FM999,999,999,999') AS total_plays,
     g.wiki_link,
     g.slug AS url,
+(
+        SELECT
+            json_agg(json_build_object('name', a.name_string, 'url', a.slug, 'total_plays', to_char(a.total_plays, 'FM999,999,999,999'))
+            ORDER BY a.total_plays DESC)
+        FROM
+            artists a
+        WHERE
+            a.genres = g.id) AS artists,
+(
+            SELECT
+                json_agg(json_build_object('title', b.title, 'author', b.author, 'url', b.slug))
+            FROM
+                books b
+                JOIN genres_books gb ON gb.books_id = b.id
+            WHERE
+                gb.genres_id = g.id) AS books,
+(
+                SELECT
+                    json_agg(json_build_object('title', m.title, 'year', m.year, 'url', m.slug)
+                    ORDER BY m.year DESC)
+                FROM
+                    movies m
+                    JOIN genres_movies gm ON gm.movies_id = m.id
+                WHERE
+                    gm.genres_id = g.id) AS movies,
+(
+                    SELECT
+                        json_agg(json_build_object('title', p.title, 'date', p.date, 'url', p.slug)
+                        ORDER BY p.date DESC)
+                    FROM
+                        posts_genres pg
+                    LEFT JOIN posts p ON pg.posts_id = p.id
+                WHERE
+                    pg.genres_id = g.id) AS posts
+            FROM
+                genres g
+            ORDER BY
+                g.id ASC;
 
-    (
-        SELECT json_agg(json_build_object(
-            'name', a.name_string,
-            'url', a.slug,
-            'total_plays', a.total_plays
-        ) ORDER BY a.total_plays DESC)
-        FROM artists a
-        WHERE a.genres = g.id
-    ) AS artists,
-
-    (
-        SELECT json_agg(json_build_object(
-            'title', b.title,
-            'author', b.author,
-            'url', b.slug
-        ))
-        FROM books b
-        JOIN genres_books gb ON gb.books_id = b.id
-        WHERE gb.genres_id = g.id
-    ) AS books,
-
-    (
-        SELECT json_agg(json_build_object(
-            'title', m.title,
-            'year', m.year,
-            'url', m.slug
-        ) ORDER BY m.year DESC)
-        FROM movies m
-        JOIN genres_movies gm ON gm.movies_id = m.id
-        WHERE gm.genres_id = g.id
-    ) AS movies,
-
-    (
-        SELECT json_agg(json_build_object(
-            'title', p.title,
-            'date', p.date,
-            'url', p.slug
-        ) ORDER BY p.date DESC)
-        FROM posts_genres pg
-        LEFT JOIN posts p ON pg.posts_id = p.id
-        WHERE pg.genres_id = g.id
-    ) AS posts
-FROM
-    genres g
-ORDER BY
-    g.id ASC;

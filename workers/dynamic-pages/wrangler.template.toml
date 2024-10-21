@@ -17,9 +17,3 @@ routes = [
   { pattern = "https://coryd.dev/music/genres/*", zone_id = "${CF_ZONE_ID}" },
   { pattern = "https://coryd.dev/books/*", zone_id = "${CF_ZONE_ID}" },
 ]
-
-[[env.production.excludes]]
-routes = [
-  { pattern = "https://coryd.dev/books", zone_id = "${CF_ZONE_ID}" },
-  { pattern = "https://coryd.dev/books/", zone_id = "${CF_ZONE_ID}" },
-]

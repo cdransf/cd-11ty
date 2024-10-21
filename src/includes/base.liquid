@@ -1,53 +1,45 @@
 {%- assign fullUrl = globals.url | append: page.url -%}
 {%- assign pageTitle = globals.site_name -%}
-{%- if schema == 'blog' -%}
-  {%- assign pageTitle = post.title -%}
-{%- elsif title -%}
-  {%- assign pageTitle = title | append: ' / ' | append: globals.site_name -%}
-{%- elsif schema == 'music-index' -%}
-  {%- assign pageTitle = 'Music / ' | append: globals.site_name -%}
-{%- elsif schema == 'music-period' -%}
-    {%- assign pageTitle = 'Music / ' | append: page.title | append: globals.site_name -%}
-{%- elsif year.value -%}
-  {%- assign pageTitle = ' / Books ' | prepend: year.value | append: ' / ' | append: globals.site_name -%}
-{%- elsif page.description -%}
-  {%- assign pageTitle = page.title | append: ' / ' | append: globals.site_name -%}
-{%- endif -%}
-
 {%- assign pageDescription = globals.site_description -%}
-{%- if schema == 'blog' -%}
-  {%- assign pageDescription = post.description | markdown | strip_html -%}
-{%- elsif page.description -%}
+
+{%- case schema -%}
+  {%- when 'blog' -%}
+    {%- assign pageTitle = post.title -%}
+    {%- assign pageDescription = post.description | markdown | strip_html | default: globals.site_description -%}
+  {%- when 'music-index' -%}
+    {%- assign pageTitle = 'Music / ' | append: globals.site_name -%}
+  {%- when 'music-period' -%}
+    {%- assign pageTitle = 'Music / ' | append: page.title | append: ' / ' | append: globals.site_name -%}
+  {%- when 'books-year' -%}
+    {%- assign pageTitle = year.value | append: ' / Books / ' | append: globals.site_name -%}
+  {%- else -%}
+    {%- assign pageTitle = title | append: ' / ' | append: globals.site_name -%}
+{%- endcase -%}
+
+{%- if page.description -%}
   {%- assign pageDescription = page.description -%}
 {%- elsif description -%}
   {%- assign pageDescription = description -%}
 {%- endif -%}
 
 {%- assign ogImage = globals.cdn_url | append: globals.avatar -%}
+
 {%- case schema -%}
   {%- when 'music' -%}
     {%- assign ogImage = globals.cdn_url | append: page.image -%}
   {%- when 'music-index' -%}
     {%- assign ogImage = globals.cdn_url | append: music.week.artists[0].grid.image -%}
-  {%- when 'watching' -%}
+  {%- when 'watching' or 'favorite-movies' -%}
     {%- assign featuredMovie = movies.recentlyWatched | first -%}
     {%- assign ogImage = globals.cdn_url | append: featuredMovie.grid.backdrop -%}
-  {%- when 'watching-shows' -%}
+  {%- when 'watching-shows' or 'favorite-shows' -%}
     {%- assign featuredShow = tv.recentlyWatched | first -%}
     {%- assign ogImage = globals.cdn_url | append: featuredShow.grid.backdrop -%}
-  {%- when 'favorite-movies' -%}
-    {%- assign featuredMovie = movies.favorites| shuffleArray | first -%}
-    {%- assign ogImage = globals.cdn_url | append: featuredMovie.grid.backdrop -%}
-  {%- when 'favorite-shows' -%}
-    {%- assign featuredShow = tv.favorites | shuffleArray | first -%}
-    {%- assign ogImage = globals.cdn_url | append: featuredShow.grid.backdrop -%}
-  {%- when 'books' -%}
+  {%- when 'books' or 'books-year' -%}
     {%- assign featuredBook = books.all | filterBooksByStatus: 'started' | reverse | first -%}
     {%- assign ogImage = globals.cdn_url | append: featuredBook.grid.image -%}
-  {%- when 'books-year' -%}
-    {%- assign featuredBook = books.currentYear | first -%}
-    {%- assign ogImage = globals.cdn_url | append: featuredBook.grid.image -%}
 {%- endcase -%}
+
 {%- assign escapedPageDescription = pageDescription | escape -%}
 
 <!doctype html>

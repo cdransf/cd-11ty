@@ -1,11 +1,11 @@
 import truncateHtml from "truncate-html";
 import { convert } from "html-to-text";
-
 import { parseCountryField } from "./countries.js";
 import { formatDate, md } from "./formatters.js";
 import { ICON_MAP } from "./icons.js";
 
 const warningBanner = `<div class="banner warning"><p>${ICON_MAP["alertTriangle"]}There are probably spoilers after this banner — this is a warning about them.</p></div>`;
+
 const generateAssociatedMediaHTML = (data, isGenre = false) => {
   const sections = [
     {
@@ -51,6 +51,12 @@ const generateAssociatedMediaHTML = (data, isGenre = false) => {
       title: "Related Post(s)",
     },
     {
+      key: "books",
+      icon: "books",
+      category: "books",
+      title: "Related Book(s)",
+    },
+    {
       key: "related_books",
       icon: "books",
       category: "books",
@@ -75,10 +81,11 @@ const generateAssociatedMediaHTML = (data, isGenre = false) => {
                 const year = item.year ? ` (${item.year})` : "";
                 const author = item.author ? ` by ${item.author}` : "";
                 const totalPlays = item.total_plays
-                  ? ` <strong class="highlight-text">${
-                      item.total_plays
-                    }</strong> ${item.total_plays === 1 ? "play" : "plays"}`
+                  ? ` <strong class="highlight-text">${item.total_plays} ${
+                      item.total_plays === 1 ? "play" : "plays"
+                    }</strong>`
                   : "";
+
                 let listItemContent = name;
 
                 if (key === "artists" || key === "related_artists") {
@@ -89,7 +96,7 @@ const generateAssociatedMediaHTML = (data, isGenre = false) => {
                   key === "related_shows"
                 ) {
                   listItemContent = `${name}${year}`;
-                } else if (key === "related_books") {
+                } else if (key === "books" || key === "related_books") {
                   listItemContent = `${name}${author}`;
                 }
 
@@ -101,6 +108,7 @@ const generateAssociatedMediaHTML = (data, isGenre = false) => {
     })
     .join("");
 };
+
 const generateMediaLinks = (data, type, count = 10) => {
   if (!data || !type) return "";
 

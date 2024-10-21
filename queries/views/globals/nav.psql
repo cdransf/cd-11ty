@@ -10,5 +10,5 @@ SELECT
     p.permalink AS page_permalink
 FROM
     navigation n
-LEFT JOIN
-    pages p ON n.pages = p.id;
+    LEFT JOIN pages p ON n.pages = p.id;
+

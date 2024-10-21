@@ -34,7 +34,6 @@ const startEleventy = () =>
     ["eleventy", "--serve", "--port", ELEVENTY_PORT],
     "Eleventy"
   );
-
 const startWorker = () =>
   startProcess(
     "npx",
@@ -44,30 +43,30 @@ const startWorker = () =>
 
 const app = express();
 
-app.use((req, res, next) => {
-  if (req.path === "/js/script.js") {
-    res.setHeader("Content-Type", "application/javascript");
-    return res.send("");
+const setContentType = (req, res) => {
+  const contentTypeMap = {
+    ".css": "text/css",
+    ".js": "application/javascript",
+    ".json": "application/json",
+    "/api/": "application/json",
+    "/feeds/all": "application/xml",
+    "/feeds/books": "application/xml",
+    "/feeds/links": "application/xml",
+    "/feeds/movies": "application/xml",
+    "/feeds/posts": "application/xml",
+    "/feeds/syndication": "application/xml",
+  };
+
+  for (const [key, value] of Object.entries(contentTypeMap)) {
+    if (req.path.endsWith(key) || req.path.startsWith(key)) {
+      res.setHeader("Content-Type", value);
+      break;
+    }
   }
-  if (req.path.endsWith(".css")) res.setHeader("Content-Type", "text/css");
-  else if (req.path.endsWith(".js"))
-    res.setHeader("Content-Type", "application/javascript");
-  else if (req.path.endsWith(".json"))
-    res.setHeader("Content-Type", "application/json");
-  else if (req.path.startsWith("/api/"))
-    res.setHeader("Content-Type", "application/json");
-  else if (req.path.startsWith("/feeds/all"))
-    res.setHeader("Content-Type", "application/xml");
-  else if (req.path.startsWith("/feeds/books"))
-    res.setHeader("Content-Type", "application/xml");
-  else if (req.path.startsWith("/feeds/links"))
-    res.setHeader("Content-Type", "application/xml");
-  else if (req.path.startsWith("/feeds/movies"))
-    res.setHeader("Content-Type", "application/xml");
-  else if (req.path.startsWith("/feeds/posts"))
-    res.setHeader("Content-Type", "application/xml");
-  else if (req.path.startsWith("/feeds/syndication"))
-    res.setHeader("Content-Type", "application/xml");
+};
+
+app.use((req, res, next) => {
+  setContentType(req, res);
   next();
 });
 

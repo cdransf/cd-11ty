@@ -1,5 +1,4 @@
-CREATE OR REPLACE VIEW optimized_listens AS
-SELECT DISTINCT ON (l.id, l.listened_at, l.track_name, l.artist_name, l.album_name)
+CREATE OR REPLACE VIEW optimized_listens AS SELECT DISTINCT ON (l.id, l.listened_at, l.track_name, l.artist_name, l.album_name)
     l.id,
     l.listened_at,
     l.track_name,
@@ -15,10 +14,15 @@ SELECT DISTINCT ON (l.id, l.listened_at, l.track_name, l.artist_name, l.album_na
     CONCAT('/', df_album.filename_disk) AS album_art
 FROM
     listens l
-LEFT JOIN artists a ON (l.artist_name = a.name_string)
-LEFT JOIN albums al ON (l.album_key = al.key)
-LEFT JOIN directus_files df_art ON (a.art = df_art.id)
-LEFT JOIN directus_files df_album ON (al.art = df_album.id)
-LEFT JOIN genres g ON (a.genres = g.id)
+    LEFT JOIN artists a ON (l.artist_name = a.name_string)
+    LEFT JOIN albums al ON (l.album_key = al.key)
+    LEFT JOIN directus_files df_art ON (a.art = df_art.id)
+    LEFT JOIN directus_files df_album ON (al.art = df_album.id)
+    LEFT JOIN genres g ON (a.genres = g.id)
 ORDER BY
-    l.id, l.listened_at, l.track_name, l.artist_name, l.album_name;
+    l.id,
+    l.listened_at,
+    l.track_name,
+    l.artist_name,
+    l.album_name;
+

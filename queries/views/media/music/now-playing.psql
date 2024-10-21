@@ -9,8 +9,8 @@ WITH latest_listen AS (
         ROW_NUMBER() OVER (ORDER BY l.listened_at DESC) AS row_num
     FROM
         listens l
-    JOIN artists a ON l.artist_name = a.name_string
-    LEFT JOIN genres g ON a.genres = g.id
+        JOIN artists a ON l.artist_name = a.name_string
+        LEFT JOIN genres g ON a.genres = g.id
 )
 SELECT
     track_name,
@@ -22,3 +22,4 @@ FROM
     latest_listen
 WHERE
     row_num = 1;
+
