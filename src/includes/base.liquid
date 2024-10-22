@@ -12,8 +12,10 @@
     {%- assign pageTitle = 'Music / ' | append: page.title | append: ' / ' | append: globals.site_name -%}
   {%- when 'books-year' -%}
     {%- assign pageTitle = year.value | append: ' / Books / ' | append: globals.site_name -%}
+  {%- when 'page' -%}
+    {%- assign pageTitle = page.title | append: ' / ' | append: globals.site_name -%}
   {%- else -%}
-    {%- assign pageTitle = title | append: ' / ' | append: globals.site_name -%}
+    {%- assign pageTitle = globals.site_name -%}
 {%- endcase -%}
 
 {%- if page.description -%}
