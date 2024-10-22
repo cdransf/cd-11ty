@@ -36,10 +36,11 @@ select {
 }
 
 fieldset {
-  border: var(--border-gray);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
+  padding: var(--spacing-lg) 0 0 0;
+  border: none;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -54,13 +55,6 @@ fieldset {
 
   & input[type="checkbox"] {
     margin: 0;
-  }
-
-  & legend {
-    color: var(--text-color-inverted);
-    background-color: var(--accent-color);
-    padding: var(--spacing-xs);
-    border-radius: var(--border-radius-slight);
   }
 }
 

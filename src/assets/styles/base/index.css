@@ -47,11 +47,17 @@ p {
   text-underline-offset: var(--spacing-xs);
 }
 
-.highlight-text {
+.highlight-text,
+details > summary {
   color: var(--text-color-inverted);
   background-color: var(--accent-color);
   padding: var(--spacing-xs);
   border-radius: var(--border-radius-slight);
+}
+
+details > summary {
+  cursor: pointer;
+  display: inline;
 }
 
 blockquote {
