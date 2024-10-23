@@ -1,6 +1,6 @@
 {
   "name": "coryd.dev",
-  "version": "1.6.3",
+  "version": "1.7.0",
   "description": "The source for my personal site. Built using 11ty (and other tools).",
   "type": "module",
   "engines": {
@@ -37,7 +37,7 @@
   "devDependencies": {
     "@11ty/eleventy": "v3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@cdransf/eleventy-plugin-tabler-icons": "^2.0.3",
+    "@cdransf/eleventy-plugin-tabler-icons": "^2.1.0",
     "@supabase/supabase-js": "^2.45.6",
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
