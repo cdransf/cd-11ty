@@ -17,7 +17,6 @@
         <li><a href="{{ artist.url }}">{{ artist.name }}</a>{%- if artist.total_plays > 0 -%}: <strong class="highlight-text">{{ artist.total_plays }} {{ playLabel }}</strong>{%- endif -%}</li>
       {% endfor %}
     </ul>
-    <hr />
   {%- endif -%}
   {% comment %} render related books {% endcomment %}
   {%- if books -%}
@@ -30,7 +29,6 @@
         <li><a href="{{ book.url }}">{{ book.title }}</a> by {{ book.author }}</li>
       {% endfor %}
     </ul>
-    <hr />
   {%- endif -%}
   {% comment %} render related genres {% endcomment %}
   {%- if genres -%}
@@ -43,7 +41,6 @@
         <li><a href="{{ genre.url }}">{{ genre.name }}</a></li>
       {% endfor %}
     </ul>
-    <hr />
   {%- endif -%}
   {% comment %} render related movies {% endcomment %}
   {%- if movies -%}
@@ -56,7 +53,6 @@
         <li><a href="{{ movie.url }}">{{ movie.title }}</a> ({{ movie.year }})</li>
       {% endfor %}
     </ul>
-    <hr />
   {%- endif -%}
   {% comment %} render related posts {% endcomment %}
   {%- if posts -%}
@@ -69,7 +65,6 @@
         <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%B %e, %Y" }})</li>
       {% endfor %}
     </ul>
-    <hr />
   {%- endif -%}
   {% comment %} render related shows {% endcomment %}
   {%- if shows -%}
@@ -82,6 +77,5 @@
         <li><a href="{{ show.url }}">{{ show.title }}</a> ({{ show.year }})</li>
       {% endfor %}
     </ul>
-    <hr />
   {%- endif -%}
 {% if artists or books or genres or movies or posts or shows %}</div>{% endif %}
