@@ -41,8 +41,8 @@ schema: blog
     />
     {%- endif -%}
     {{ post.content | markdown }}
-    {% render "partials/blocks/mastodon-post.liquid", post:post.mastodon_url %}
     {% render "partials/blocks/index.liquid", blocks:post.blocks %}
+    {% render "partials/blocks/mastodon-post.liquid", post:post.mastodon_url %}
     {% render "partials/blocks/associated-media.liquid", artists:post.artists %}
     {% render "partials/blocks/associated-media.liquid", books:post.books %}
     {% render "partials/blocks/associated-media.liquid", genres:post.genres %}
