@@ -54,17 +54,6 @@ img + .associated-media,
 
   &:has(~ *) {
     margin-bottom: var(--spacing-base);
-    padding-bottom: var(--spacing-base);
-    border-bottom: var(--border-gray);
-  }
-
-  & ~ youtube-video {
-    margin-top: var(--spacing-base);
-  }
-
-  & + .associated-media {
-    margin-top: var(--spacing-base);
-    border-top: var(--border-gray);
   }
 }
 
