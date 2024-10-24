@@ -34,9 +34,7 @@ article {
 
 p + .associated-media,
 img + .associated-media,
-.banner + .associated-media,
-.client-side ~ .associated-media,
-youtube-video + .associated-media {
+.banner + .associated-media {
   margin-top: var(--spacing-base);
   border-top: var(--border-gray);
 }
