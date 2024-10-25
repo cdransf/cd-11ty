@@ -22,11 +22,8 @@ const appVersion = require("./package.json").version;
 export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(tablerIcons);
-
   if (process.env.ELEVENTY_PRODUCTION) eleventyConfig.addPlugin(cssConfig);
 
-  eleventyConfig.setServerOptions({ domdiff: false });
-  eleventyConfig.setWatchThrottleWaitTime(200);
   eleventyConfig.setQuietMode(true);
   eleventyConfig.configureErrorReporting({ allowMissingExtensions: true });
   eleventyConfig.setLiquidOptions({
@@ -105,7 +102,6 @@ export default async function (eleventyConfig) {
     });
 
   return {
-    passthroughFileCopy: true,
     dir: {
       input: "src",
       includes: "includes",
