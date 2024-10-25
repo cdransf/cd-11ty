@@ -20,88 +20,55 @@
   --white: #fff;
   --black: #000;
 
-  --gray-lighter: var(--gray-200);
-  --gray-light: var(--gray-300);
+  --gray-lighter: light-dark(var(--gray-200), var(--gray-700));
+  --gray-light: light-dark(var(--gray-300), var(--gray-600));
   --gray-medium: var(--gray-400);
-  --gray-dark: var(--gray-800);
+  --gray-dark: light-dark(var(--gray-800), var(--gray-300));
 
   /* base theme */
   --color-lightest: var(--white);
   --color-darkest: var(--black);
-  --text-color: var(--color-darkest);
-  --background-color: var(--color-lightest);
-  --text-color-inverted: var(--color-lightest);
-  --background-color-inverted: var(--color-darkest);
-  --accent-color: var(--blue-400);
-  --accent-color-hover: var(--blue-600);
+  --text-color: light-dark(var(--color-darkest), var(--color-lightest));
+  --background-color: light-dark(var(--color-lightest), var(--color-darkest));
+  --text-color-inverted: light-dark(
+    var(--color-lightest),
+    var(--color-darkest)
+  );
+  --background-color-inverted: light-dark(
+    var(--color-darkest),
+    var(--color-lightest)
+  );
+  --accent-color: light-dark(var(--blue-400), var(--blue-200));
+  --accent-color-hover: light-dark(var(--blue-600), var(--blue-100));
 
-  --brand-github-light: #333;
-  --brand-github-dark: #f5f5f5;
-
-  --brand-gmail: #ea4335;
-  --brand-github: #333;
-  --brand-npm: #cc3534;
-  --brand-mastodon: #6364ff;
-  --brand-listenbrainz: #e97941;
   --brand-buy-me-a-coffee: #ff5f5f;
+  --brand-github: light-dark(#333, #f5f5f5);
+  --brand-gmail: #ea4335;
+  --brand-listenbrainz: #e97941;
+  --brand-mastodon: #6364ff;
+  --brand-npm: #cc3534;
   --brand-rss: #f26522;
 
   --moon: #6a5acd;
   --sun: #ffa500;
 
-  --article-light: #007272;
-  --about-light: #e4513a;
-  --books-light: #1a7b1a;
-  --collected-light: #9a501a;
-  --concerts-light: #cb426e;
-  --country-light: #146a67;
-  --error-light: #b81f1f;
-  --favorite-light: #b03c72;
-  --link-light: #7b5cba;
-  --music-light: #1565c3;
-  --newsletter-light: #37b0b0;
-  --now-light: #cc1076;
-  --search-light: #3a6b94;
-  --tattoo-light: #951b1b;
-  --tv-light: #cc3600;
-  --warning-light: #cc6f00;
-  --webrings-light: #b054b0;
-
-  --article-dark: #00ffff;
-  --about-dark: #ff967d;
-  --books-dark: #6fff6f;
-  --collected-dark: #ffae73;
-  --concerts-dark: #ff82aa;
-  --country-dark: #80dcdc;
-  --error-dark: #ff8b8b;
-  --favorite-dark: #ff9ccd;
-  --link-dark: #e2b8ff;
-  --music-dark: #99ccff;
-  --newsletter-dark: #91fffa;
-  --now-dark: #ff82d5;
-  --search-dark: #a0b8d9;
-  --tattoo-dark: #ff7373;
-  --tv-dark: #ff8f66;
-  --warning-dark: #ffbf66;
-  --webrings-dark: #ffb3ff;
-
-  --article: var(--article-light);
-  --about: var(--about-light);
-  --books: var(--books-light);
-  --collected: var(--collected-light);
-  --concerts: var(--concerts-light);
-  --country: var(--country-light);
-  --error: var(--error-light);
-  --favorite: var(--favorite-light);
-  --link: var(--link-light);
-  --music: var(--music-light);
-  --newsletter: var(--newsletter-light);
-  --now: var(--now-light);
-  --search: var(--search-light);
-  --tattoo: var(--tattoo-light);
-  --tv: var(--tv-light);
-  --warning: var(--warning-light);
-  --webrings: var(--webrings-light);
+  --article: light-dark(#007272, #00ffff);
+  --about: light-dark(#e4513a, #ff967d);
+  --books: light-dark(#1a7b1a, #6fff6f);
+  --collected: light-dark(#9a501a, #ffae73);
+  --concerts: light-dark(#cb426e, #ff82aa);
+  --country: light-dark(#146a67, #80dcdc);
+  --error: light-dark(#b81f1f, #ff8b8b);
+  --favorite: light-dark(#b03c72, #ff9ccd);
+  --link: light-dark(#7b5cba, #e2b8ff);
+  --music: light-dark(#1565c3, #99ccff);
+  --newsletter: light-dark(#37b0b0, #91fffa);
+  --now: light-dark(#cc1076, #ff82d5);
+  --search: light-dark(#3a6b94, #a0b8d9);
+  --tattoo: light-dark(#951b1b, #ff7373);
+  --tv: light-dark(#cc3600, #ff8f66);
+  --warning: light-dark(#cc6f00, #ffbf66);
+  --webrings: light-dark(#b054b0, #ffb3ff);
 
   /* borders */
   --border-default: 1px solid var(--accent-color);
@@ -192,107 +159,8 @@
   --text-shadow-default: rgba(0, 0, 0, 0.7) 0px 0px 10px;
 
   /* modals */
-  --modal-overlay-background-light: #ffffffbf;
-  --modal-overlay-background-dark: #000000bf;
-  --modal-overlay-background: var(--modal-overlay-background-light);
+  --modal-overlay-background: light-dark(#ffffffbf, #000000bf);
 
   /* input accent color */
   accent-color: var(--accent-color);
-}
-
-/* light theme */
-:root[data-theme="light"] {
-  --text-color: var(--color-darkest);
-  --background-color: var(--color-lightest);
-  --text-color-inverted: var(--color-lightest);
-  --background-color-inverted: var(--color-darkest);
-  --accent-color: var(--blue-400);
-  --accent-color-hover: var(--blue-600);
-  --gray-light: var(--gray-300);
-  --gray-lighter: var(--gray-200);
-  --gray-dark: var(--gray-800);
-  --modal-overlay-background: var(--modal-overlay-background-light);
-  --brand-github: var(--brand-github-light);
-  --article: var(--article-light);
-  --about: var(--about-light);
-  --books: var(--books-light);
-  --collected: var(--collected-light);
-  --concerts: var(--concerts-light);
-  --country: var(--country-light);
-  --error: var(--error-light);
-  --favorite: var(--favorite-light);
-  --link: var(--link-light);
-  --music: var(--music-light);
-  --newsletter: var(--newsletter-light);
-  --now: var(--now-light);
-  --search: var(--search-light);
-  --tattoo: var(--tattoo-light);
-  --tv: var(--tv-light);
-  --warning: var(--warning-light);
-  --webrings: var(--webrings-light);
-}
-
-/* dark theme */
-:root[data-theme="dark"] {
-  --text-color: var(--color-lightest);
-  --background-color: var(--color-darkest);
-  --text-color-inverted: var(--color-darkest);
-  --background-color-inverted: var(--color-lightest);
-  --accent-color: var(--blue-200);
-  --accent-color-hover: var(--blue-100);
-  --gray-light: var(--gray-600);
-  --gray-lighter: var(--gray-700);
-  --gray-dark: var(--gray-300);
-  --modal-overlay-background: var(--modal-overlay-background-dark);
-  --brand-github: var(--brand-github-dark);
-  --article: var(--article-dark);
-  --about: var(--about-dark);
-  --books: var(--books-dark);
-  --collected: var(--collected-dark);
-  --concerts: var(--concerts-dark);
-  --country: var(--country-dark);
-  --error: var(--error-dark);
-  --favorite: var(--favorite-dark);
-  --link: var(--link-dark);
-  --music: var(--music-dark);
-  --newsletter: var(--newsletter-dark);
-  --now: var(--now-dark);
-  --search: var(--search-dark);
-  --tattoo: var(--tattoo-dark);
-  --tv: var(--tv-dark);
-  --warning: var(--warning-dark);
-  --webrings: var(--webrings-dark);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: var(--color-lightest);
-    --background-color: var(--color-darkest);
-    --text-color-inverted: var(--color-darkest);
-    --background-color-inverted: var(--color-lightest);
-    --accent-color: var(--blue-200);
-    --accent-color-hover: var(--blue-100);
-    --gray-light: var(--gray-600);
-    --gray-lighter: var(--gray-700);
-    --gray-dark: var(--gray-300);
-    --modal-overlay-background: var(--modal-overlay-background-dark);
-    --brand-github: var(--brand-github-dark);
-    --article: var(--article-dark);
-    --about: var(--about-dark);
-    --books: var(--books-dark);
-    --collected: var(--collected-dark);
-    --concerts: var(--concerts-dark);
-    --country: var(--country-dark);
-    --error: var(--error-dark);
-    --favorite: var(--favorite-dark);
-    --link: var(--link-dark);
-    --music: var(--music-dark);
-    --newsletter: var(--newsletter-dark);
-    --now: var(--now-dark);
-    --search: var(--search-dark);
-    --tattoo: var(--tattoo-dark);
-    --tv: var(--tv-dark);
-    --warning: var(--warning-dark);
-    --webrings: var(--webrings-dark);
-  }
 }
