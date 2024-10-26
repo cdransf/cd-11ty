@@ -1,5 +1,4 @@
 {% assign media = artists | concat: books | concat: genres | concat: movies | concat: posts | concat: shows %}
-
 {% if media.size > 0 %}
   <div class="associated-media">
     {% assign sections =
@@ -10,14 +9,12 @@
       "posts:article:article:Related post(s)," | append:
       "shows:device-tv-old:tv:Related show(s)"
     | split: "," %}
-
     {% for section in sections %}
       {% assign parts = section | split: ":" %}
       {% assign key = parts[0] %}
       {% assign icon = parts[1] %}
       {% assign css_class = parts[2] %}
       {% assign label = parts[3] %}
-
       {% case key %}
         {% when "artists" %} {% assign items = artists %}
         {% when "books" %} {% assign items = books %}
@@ -26,7 +23,6 @@
         {% when "posts" %} {% assign items = posts %}
         {% when "shows" %} {% assign items = shows %}
       {% endcase %}
-
       {% if items and items.size > 0 %}
         <p id="{{ key }}" class="{{ css_class }}">
           {% tablericon icon %}

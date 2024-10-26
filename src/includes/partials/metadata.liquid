@@ -1,16 +1,17 @@
 {%- assign fullUrl = globals.url | append: page.url -%}
-{%- assign pageTitle = globals.site_name -%}
-{%- assign pageDescription = globals.site_description -%}
+{%- assign pageTitle = title | default: globals.site_name -%}
+{%- assign pageDescription = page.description | default: description | default: globals.site_description -%}
 {%- assign ogImage = globals.cdn_url | append: globals.avatar -%}
 {%- case schema -%}
   {%- when 'blog' -%}
     {%- assign pageTitle = post.title -%}
     {%- assign pageDescription = post.description | markdown | strip_html | default: globals.site_description -%}
-  {%- when 'books' or 'books-year' -%}
+  {%- when 'books', 'books-year' -%}
     {%- assign featuredBook = books.all | filterBooksByStatus: 'started' | reverse | first -%}
     {%- assign ogImage = globals.cdn_url | append: featuredBook.grid.image -%}
-  {%- when 'books-year' -%}
-    {%- assign pageTitle = year.value | append: ' / Books / ' | append: globals.site_name -%}
+    {%- if schema == 'books-year' -%}
+      {%- assign pageTitle = year.value | append: ' / Books / ' | append: globals.site_name -%}
+    {%- endif -%}
   {%- when 'music' -%}
     {%- assign ogImage = globals.cdn_url | append: page.image -%}
   {%- when 'music-index' -%}
@@ -20,28 +21,14 @@
     {%- assign pageTitle = 'Music / ' | append: page.title | append: ' / ' | append: globals.site_name -%}
   {%- when 'page' -%}
     {%- assign pageTitle = page.title | append: ' / ' | append: globals.site_name -%}
-  {%- when 'watching' or 'favorite-movies' -%}
+  {%- when 'watching', 'favorite-movies' -%}
     {%- assign featuredMovie = movies.recentlyWatched | first -%}
     {%- assign ogImage = globals.cdn_url | append: featuredMovie.grid.backdrop -%}
-  {%- when 'watching-shows' or 'favorite-shows' -%}
+  {%- when 'watching-shows', 'favorite-shows' -%}
     {%- assign featuredShow = tv.recentlyWatched | first -%}
     {%- assign ogImage = globals.cdn_url | append: featuredShow.grid.backdrop -%}
-  {%- else -%}
-    {%- assign pageTitle = globals.site_name -%}
 {%- endcase -%}
-
-{% if title %}
-  {%- assign pageTitle = title | append: ' / ' | append: globals.site_name -%}
-{% endif %}
-
-{%- if page.description -%}
-  {%- assign pageDescription = page.description -%}
-{%- elsif description -%}
-  {%- assign pageDescription = description -%}
-{%- endif -%}
-
 {%- assign escapedPageDescription = pageDescription | escape -%}
-
 <title data-dynamic="title">{{ pageTitle }}</title>
 <link rel="canonical" href="{{ fullUrl }}" />
 <meta property="og:title" content="{{ pageTitle }}" data-dynamic="og:title" />

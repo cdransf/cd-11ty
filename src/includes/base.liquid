@@ -1,11 +1,9 @@
-{%- capture updateTime -%}
-  {%- if updated == "now" -%}
-    {{ 'now' | date: "%B %-d, %l:%M %P", "America/Los_Angeles" }}
-  {%- elsif page.updated -%}
-    {{ page.updated | date: "%B %-d, %l:%M %P", "America/Los_Angeles" }}
-  {%- endif -%}
-{%- endcapture -%}
-
+{%- assign updateTime = "" -%}
+{%- if updated == "now" -%}
+  {%- assign updateTime = 'now' | date: "%B %-d, %l:%M %P", "America/Los_Angeles" -%}
+{%- elsif page.updated -%}
+  {%- assign updateTime = page.updated | date: "%B %-d, %l:%M %P", "America/Los_Angeles" -%}
+{%- endif -%}
 <!doctype html>
 <html lang="{{ globals.lang }}">
   <head>

@@ -18,7 +18,7 @@
   margin: 0;
 }
 
-.pagination span.disabled svg[data-tablericon-name^="arrow-"] {
+.pagination a.disabled svg[data-tablericon-name^="arrow-"] {
   cursor: not-allowed;
   stroke: var(--gray-medium);
   stroke-width: var(--stroke-width-default);
