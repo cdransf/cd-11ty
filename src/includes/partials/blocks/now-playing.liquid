@@ -1,8 +1,8 @@
 <script type="module" src="/assets/scripts/components/api-text.js?v={% appVersion %}" crossorigin="anonymous"></script>
-<api-text api-url="/api/now-playing">
-  <p class="loading client-side">{{ nowPlaying }}</p>
-  <p class="content"></p>
+<api-text api-url="/api/now-playing" display="inline">
+  <span class="loading client-side">{{ nowPlaying }}</span>
+  <span class="content"></span>
   <noscript>
-    <p>{{ nowPlaying }}</p>
+    <span>{{ nowPlaying }}</span>
   </noscript>
 </api-text>
