@@ -1,6 +1,6 @@
 ---
 permalink: /
 ---
-{% render "partials/home/intro.liquid" intro:globals.intro %}
-{% render "partials/home/recent-activity.liquid" music:music, nowPlaying:nowPlaying.content, books:books.currentYear, tv:tv, movies:movies, links:links %}
-{% render "partials/home/recent-posts.liquid" posts:posts %}
+{% render "home/intro.liquid" intro:globals.intro %}
+{% render "home/recent-activity.liquid" music:music, nowPlaying:nowPlaying.content, books:books.currentYear, tv:tv, movies:movies, links:links %}
+{% render "home/recent-posts.liquid" posts:posts %}

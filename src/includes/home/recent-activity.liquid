@@ -10,12 +10,12 @@
     Recent activity
   </h2>
   <ul>
-    <li><span class="music">Last track listened to:</span> {% render "partials/blocks/now-playing.liquid", nowPlaying:nowPlaying %}</li>
+    <li><span class="music">Last track listened to:</span> {% render "blocks/now-playing.liquid", nowPlaying:nowPlaying %}</li>
     <li><span class="music">Top track this week:</span> {{ track.track_name }} by <a href="{{ track.artist_url }}">{{ track.artist_name }}</a></li>
     <li><span class="tv">Last episode watched:</span> <strong class="highlight-text">{{ show.formatted_episode }}</strong> of <a href="{{ show.url }}">{{ show.title }}</a></li>
     <li><span class="movies">Last movie watched:</span> <a href="{{ movie.url }}">{{ movie.title }}</a>{%- if movie.rating %} ({{ movie.rating }}){%- endif -%}</li>
     <li><span class="books">Last book finished:</span> <a href="{{ book.url }}">{{ book.title }}</a> by {{ book.author }}{%- if book.rating %} ({{ book.rating }}){%- endif -%}</li>
     <li><span class="link">Last link shared:</span> <a href="{{ link.link }}">{{ link.title }}</a>{% if link.author %} via <a href="{{ link.author.url }}">{{ link.author.name }}</a>{% endif %}</li>
   </ul>
-  {% render "partials/blocks/banners/rss.liquid", url: "/feeds", text: "Subscribe to my movies, books, links or activity feed(s)" %}
+  {% render "blocks/banners/rss.liquid", url: "/feeds", text: "Subscribe to my movies, books, links or activity feed(s)" %}
 </article>

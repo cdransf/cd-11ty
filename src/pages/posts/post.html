@@ -17,7 +17,7 @@ schema: blog
     {{ post.title }}
   </h3>
   <div>
-    {% render "partials/blocks/banners/old-post.liquid", isOldPost:post.old_post %}
+    {% render "blocks/banners/old-post.liquid", isOldPost:post.old_post %}
     {%- if post.image -%}
     <img
       srcset="
@@ -40,9 +40,9 @@ schema: blog
     />
     {%- endif -%}
     {{ post.content | markdown }}
-    {% render "partials/blocks/index.liquid", blocks:post.blocks %}
-    {% render "partials/blocks/mastodon-post.liquid", post:post.mastodon_url %}
-    {% render "partials/blocks/associated-media.liquid",
+    {% render "blocks/index.liquid", blocks:post.blocks %}
+    {% render "blocks/mastodon-post.liquid", post:post.mastodon_url %}
+    {% render "blocks/associated-media.liquid",
       artists: post.artists,
       books: post.books,
       genres: post.genres,
@@ -50,6 +50,6 @@ schema: blog
       posts: post.posts,
       shows: post.shows
     %}
-    {% render "partials/blocks/banners/coffee.liquid" %}
+    {% render "blocks/banners/coffee.liquid" %}
   </div>
 </article>

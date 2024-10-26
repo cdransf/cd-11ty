@@ -10,12 +10,12 @@
             <span class="subtext">{{ item.chart.artist }}</span>
             <span class="subtext">{{ item.chart.plays }} {{ playsLabel }}</span>
           </div>
-          {% render "partials/media/progress-bar.liquid", percentage:percentage %}
+          {% render "media/progress-bar.liquid", percentage:percentage %}
         </div>
       </li>
     {%- endfor -%}
   </ol>
 </div>
 {%- unless count -%}
-  {% render "partials/nav/paginator.liquid", pagination:pagination %}
+  {% render "nav/paginator.liquid", pagination:pagination %}
 {%- endunless -%}

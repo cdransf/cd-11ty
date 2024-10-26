@@ -13,7 +13,7 @@
     <link rel="preload" href="/assets/fonts/ml.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/assets/fonts/mlb.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/styles/index.css?v={% appVersion %}" type="text/css" />
-    {% render "partials/metadata.liquid",
+    {% render "metadata.liquid",
       globals:globals,
       schema:schema,
       title:title,
@@ -59,12 +59,12 @@
     </script>
     <div class="main-wrapper">
       <main>
-        {% render "partials/header.liquid", globals:globals, page:page, nav:nav %}
+        {% render "header.liquid", globals:globals, page:page, nav:nav %}
         <div class="default-wrapper" data-dynamic="page">
           {{ content }}
         </div>
       </main>
-      {% render "partials/footer.liquid", page:page, nav:nav, updated:updateTime %}
+      {% render "footer.liquid", page:page, nav:nav, updated:updateTime %}
     </div>
   </body>
 </html>

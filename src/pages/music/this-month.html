@@ -14,14 +14,14 @@ schema: music-period
   {% tablericon "microphone-2" %}
   Artists
 </h3>
-{% render "partials/media/grid.liquid", globals:globals, data:music.month.artists, shape:"square", count: 8, loading: "eager" %}
+{% render "media/grid.liquid", globals:globals, data:music.month.artists, shape:"square", count: 8, loading: "eager" %}
 <h3 id="albums">
   {% tablericon "vinyl" %}
   Albums
 </h3>
-{% render "partials/media/grid.liquid", globals:globals, data:music.month.albums, shape:"square", count: 8 %}
+{% render "media/grid.liquid", globals:globals, data:music.month.albums, shape:"square", count: 8 %}
 <h3 id="tracks">
   {% tablericon "playlist" %}
   Tracks
 </h3>
-{% render "partials/media/music/chart.liquid", data:music.month.tracks, count: 10 %}
+{% render "media/music/chart.liquid", data:music.month.tracks, count: 10 %}

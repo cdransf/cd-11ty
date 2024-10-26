@@ -105,6 +105,7 @@ export default async function (eleventyConfig) {
     dir: {
       input: "src",
       includes: "includes",
+      layouts: "layouts",
       data: "data",
       output: "_site",
     },
