@@ -4,6 +4,7 @@
 
 # feeds
 /feed.xml /feeds/posts 301
+/follow.xml /feeds/all 301
 /feeds/posts.xml /feeds/posts 301
 /feeds/links.xml /feeds/links 301
 /feeds/books.xml /feeds/books 301
