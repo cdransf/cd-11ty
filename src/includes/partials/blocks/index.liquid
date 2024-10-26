@@ -1,17 +1,18 @@
 {%- for block in blocks -%}
-  {%- if block.type == 'youtube_player' -%}
-    {% render "partials/blocks/youtube-player.liquid", url:block.url %}
-  {%- elsif block.type == 'github_banner' -%}
-    {% render "partials/blocks/banners/github.liquid", url:block.url %}
-  {%- elsif block.type == 'npm_banner' -%}
-    {% render "partials/blocks/banners/npm.liquid", url:block.url, command:block.command %}
-  {%- elsif block.type == 'rss_banner' -%}
-    {% render "partials/blocks/banners/rss.liquid", url:block.url, text:block.text %}
-  {%- elsif block.type == 'hero' -%}
-    {% render "partials/blocks/hero.liquid", globals:globals, image:block.image, alt:block.alt %}
-  {%- elsif block.type == 'markdown' -%}
-    {{ block.text | markdown }}
-  {%- elsif block.type == 'divider' -%}
-    {{ block.markup | markdown }}
-  {%- endif -%}
+  {%- case block.type -%}
+    {%- when 'youtube_player' -%}
+      {% render "partials/blocks/youtube-player.liquid", url: block.url %}
+    {%- when 'github_banner' -%}
+      {% render "partials/blocks/banners/github.liquid", url: block.url %}
+    {%- when 'npm_banner' -%}
+      {% render "partials/blocks/banners/npm.liquid", url: block.url, command: block.command %}
+    {%- when 'rss_banner' -%}
+      {% render "partials/blocks/banners/rss.liquid", url: block.url, text: block.text %}
+    {%- when 'hero' -%}
+      {% render "partials/blocks/hero.liquid", globals: globals, image: block.image, alt: block.alt %}
+    {%- when 'markdown' -%}
+      {{ block.text | markdown }}
+    {%- when 'divider' -%}
+      {{ block.markup | markdown }}
+  {%- endcase -%}
 {%- endfor -%}

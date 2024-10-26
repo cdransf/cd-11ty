@@ -4,13 +4,13 @@
   {%- endif -%}
   <nav aria-label="Social icons" class="social">
     {%- for link in nav.footer_icons -%}
-      {% render "partials/nav/link.liquid", page:page, title:link.title, url:link.permalink, icon:link.icon %}
+      {% render "partials/nav/link.liquid", page:page, link:link %}
     {%- endfor -%}
   </nav>
   <nav aria-label="Secondary site navigation" class="sub-pages">
     {%- for link in nav.footer_text -%}
-      {% render "partials/nav/link.liquid", page:page, title:link.title, url:link.permalink, icon:link.icon %}
-      {% if not forloop.last %}<span>/</span>{% endif %}
+      {% render "partials/nav/link.liquid", page:page, link:link %}
+      {% unless forloop.last %}<span>/</span>{% endunless %}
     {%- endfor -%}
   </nav>
 </footer>

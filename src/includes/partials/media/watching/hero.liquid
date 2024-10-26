@@ -9,22 +9,6 @@
         ({{ movie.year }})
       </div>
     </div>
-    <img
-      srcset="
-        {{ globals.cdn_url }}{{ movie.backdrop }}?class=bannersm 256w,
-        {{ globals.cdn_url }}{{ movie.backdrop }}?class=bannermd 512w,
-        {{ globals.cdn_url }}{{ movie.backdrop }}?class=bannerbase 1024w,
-        {{ globals.cdn_url }}{{ movie.backdrop }}?class=bannerlg 2048w
-      "
-      sizes="(max-width: 450px) 256px,
-        (max-width: 850px) 512px,
-        (max-width: 1000px) 1024px,
-        2048px"
-      src="{{ globals.cdn_url }}{{ movie.backdrop }}?class=bannerlg"
-      loading="eager"
-      decoding="async"
-      width="1080"
-      height="720"
-    />
+    {% render "partials/blocks/hero.liquid", globals:globals, image:movie.backdrop, alt:movie.title %}
   </div>
 </a>

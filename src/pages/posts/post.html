@@ -42,11 +42,14 @@ schema: blog
     {{ post.content | markdown }}
     {% render "partials/blocks/index.liquid", blocks:post.blocks %}
     {% render "partials/blocks/mastodon-post.liquid", post:post.mastodon_url %}
-    {% render "partials/blocks/associated-media.liquid", artists:post.artists %}
-    {% render "partials/blocks/associated-media.liquid", books:post.books %}
-    {% render "partials/blocks/associated-media.liquid", genres:post.genres %}
-    {% render "partials/blocks/associated-media.liquid", movie:post.movies %}
-    {% render "partials/blocks/associated-media.liquid", shows:post.shows %}
+    {% render "partials/blocks/associated-media.liquid",
+      artists: post.artists,
+      books: post.books,
+      genres: post.genres,
+      movies: post.movies,
+      posts: post.posts,
+      shows: post.shows
+    %}
     {% render "partials/blocks/banners/coffee.liquid" %}
   </div>
 </article>

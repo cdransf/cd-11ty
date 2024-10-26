@@ -6,13 +6,7 @@
         <div class="item">
           <div class="info">
             <a class="title" href="{{ item.chart.url }}">{{ item.chart.title }}</a>
-            {%- capture playsLabel -%}
-              {%- if item.chart.plays > 1 -%}
-                plays
-              {%- else -%}
-                play
-              {%- endif -%}
-            {%- endcapture -%}
+            {%- assign playsLabel = item.chart.plays | pluralize:"play" -%}
             <span class="subtext">{{ item.chart.artist }}</span>
             <span class="subtext">{{ item.chart.plays }} {{ playsLabel }}</span>
           </div>

@@ -1,21 +1,26 @@
-{%- assign categoryUrl = url | downcase -%}
+{%- assign categoryUrl = link.permalink | downcase -%}
 {%- assign isHttp = categoryUrl contains "http" -%}
 {%- if categoryUrl | isLinkActive: page.url -%}
-  <span class="active {{ class }}" aria-current="page">
-    {%- if icon -%}
-      {% tablericon icon %}
-      <span>{{ title }}</span>
+  <span class="active {{ link.class }}" aria-current="page">
+    {%- if link.icon -%}
+      {% tablericon link.icon %}
+      <span>{{ link.title }}</span>
     {%- else -%}
-      {{ title }}
+      {{ link.title }}
     {%- endif -%}
   </span>
 {%- else -%}
-  <a class="{% if icon %}{{ icon | downcase }} icon {% endif %}{{ class }}" href="{{ categoryUrl }}" {% if isHttp -%} rel="me" {%- endif %} aria-label="{{ title }}">
-    {%- if icon -%}
-      {% tablericon icon %}
-      <span>{{ title }}</span>
+  <a
+    class="{% if link.icon %}{{ link.icon | downcase }} icon {% endif %}{{ link.class }}"
+    href="{{ categoryUrl }}"
+    {% if isHttp -%} rel="me" {%- endif %}
+    aria-label="{{ link.title }}"
+  >
+    {%- if link.icon -%}
+      {% tablericon link.icon %}
+      <span>{{ link.title }}</span>
     {%- else -%}
-      {{ title }}
+      {{ link.title }}
     {%- endif -%}
   </a>
 {%- endif -%}

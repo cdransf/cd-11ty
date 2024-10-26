@@ -6,27 +6,26 @@
   {%- when 'blog' -%}
     {%- assign pageTitle = post.title -%}
     {%- assign pageDescription = post.description | markdown | strip_html | default: globals.site_description -%}
-  {%- when 'music-index' -%}
-    {%- assign pageTitle = 'Music / ' | append: globals.site_name -%}
-  {%- when 'music-period' -%}
-    {%- assign pageTitle = 'Music / ' | append: page.title | append: ' / ' | append: globals.site_name -%}
+  {%- when 'books' or 'books-year' -%}
+    {%- assign featuredBook = books.all | filterBooksByStatus: 'started' | reverse | first -%}
+    {%- assign ogImage = globals.cdn_url | append: featuredBook.grid.image -%}
+  {%- when 'books-year' -%}
+    {%- assign pageTitle = year.value | append: ' / Books / ' | append: globals.site_name -%}
   {%- when 'music' -%}
     {%- assign ogImage = globals.cdn_url | append: page.image -%}
   {%- when 'music-index' -%}
+    {%- assign pageTitle = 'Music / ' | append: globals.site_name -%}
     {%- assign ogImage = globals.cdn_url | append: music.week.artists[0].grid.image -%}
+  {%- when 'music-period' -%}
+    {%- assign pageTitle = 'Music / ' | append: page.title | append: ' / ' | append: globals.site_name -%}
+  {%- when 'page' -%}
+    {%- assign pageTitle = page.title | append: ' / ' | append: globals.site_name -%}
   {%- when 'watching' or 'favorite-movies' -%}
     {%- assign featuredMovie = movies.recentlyWatched | first -%}
     {%- assign ogImage = globals.cdn_url | append: featuredMovie.grid.backdrop -%}
   {%- when 'watching-shows' or 'favorite-shows' -%}
     {%- assign featuredShow = tv.recentlyWatched | first -%}
     {%- assign ogImage = globals.cdn_url | append: featuredShow.grid.backdrop -%}
-  {%- when 'books' or 'books-year' -%}
-    {%- assign featuredBook = books.all | filterBooksByStatus: 'started' | reverse | first -%}
-    {%- assign ogImage = globals.cdn_url | append: featuredBook.grid.image -%}
-  {%- when 'books-year' -%}
-    {%- assign pageTitle = year.value | append: ' / Books / ' | append: globals.site_name -%}
-  {%- when 'page' -%}
-    {%- assign pageTitle = page.title | append: ' / ' | append: globals.site_name -%}
   {%- else -%}
     {%- assign pageTitle = globals.site_name -%}
 {%- endcase -%}

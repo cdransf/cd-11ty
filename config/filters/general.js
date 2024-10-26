@@ -15,4 +15,8 @@ export default {
       ellipsis: "...",
     }),
   shuffleArray,
+  pluralize: (count, string) => {
+    if (count === 1) return string;
+    return `${string}s`;
+  },
 };
