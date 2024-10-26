@@ -50,9 +50,7 @@
     }
 
     & .description {
-      @media screen and (min-width: 768px) {
-        margin-bottom: var(--spacing-base);
-      }
+      margin-bottom: var(--spacing-base);
     }
 
     & .progress-bar-wrapper {
