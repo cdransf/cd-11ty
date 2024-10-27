@@ -345,9 +345,7 @@ export const generateMetadata = (data, type, globals) => {
   const canonicalUrl = data["url"]
     ? `${globals["url"]}${data["url"]}`
     : globals["url"];
-  const ogImage = `${globals["cdn_url"]}${
-    data["image"] || globals["avatar"]
-  }?class=w800`;
+  const ogImage = `${globals["cdn_url"]}${(data["backdrop"] ? data["backdrop"] : data["image"]) || globals["avatar"]}?class=w800`;
 
   description = convert(
     truncateHtml(md.render(description), 100, {
@@ -376,10 +374,10 @@ export const generateMetadata = (data, type, globals) => {
       title = `Genre / ${data["name"]} / ${globals["site_name"]}`;
       break;
     case "book":
-      title = `Books / ${data["title"]} by ${data.author} / ${globals["site_name"]}`;
+      title = `Books / ${data["title"]} by ${data["author"]} / ${globals["site_name"]}`;
       break;
     case "movie":
-      title = `Movies / ${data["title"]} (${data.year}) / ${globals["site_name"]}`;
+      title = `Movies / ${data["title"]} (${data["year"]}) / ${globals["site_name"]}`;
       break;
     case "show":
       title = `Shows / ${data["title"]} / ${globals["site_name"]}`;
