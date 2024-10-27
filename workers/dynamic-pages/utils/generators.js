@@ -455,7 +455,7 @@ export const generateWatchingHTML = (media, globals, type) => {
           lastWatched
             ? `<p class="sub-meta">Last watched on <strong class="highlight-text">${formatDate(
                 lastWatched
-              )}</strong></p>`
+              )}</strong>.</p>`
             : ""
         }
       </div>
