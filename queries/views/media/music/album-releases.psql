@@ -5,7 +5,6 @@ SELECT
   a.release_link AS url,
   a.total_plays,
   CONCAT('/', df.filename_disk) AS image,
-  'album-release' AS type,
   json_build_object('name', ar.name_string, 'url', ar.slug, 'description', ar.description) AS artist,
   EXTRACT(EPOCH FROM a.release_date) AS release_timestamp,
   json_build_object('title', a.name, 'image', CONCAT('/', df.filename_disk), 'url', a.release_link, 'alt', CONCAT(a.name, ' by ', ar.name_string), 'subtext', CONCAT(ar.name_string, ' / ', TO_CHAR(a.release_date, 'Mon FMDD, YYYY'))) AS grid
