@@ -12,8 +12,8 @@ html {
 body {
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
-  letter-spacing: -0.025rem;
-  word-spacing: -0.05rem;
+  letter-spacing: -0.035rem;
+  word-spacing: -0.15rem;
 }
 
 ::-webkit-scrollbar {
