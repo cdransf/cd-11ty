@@ -11,7 +11,7 @@ SELECT
   s.slug AS url,
   CONCAT('/', df_art.filename_disk) AS image,
   CONCAT('/', df_backdrop.filename_disk) AS backdrop,
-  json_build_object('title', s.title, 'image', CONCAT('/', df_art.filename_disk), 'backdrop', CONCAT('/', df_backdrop.filename_disk), 'url', s.slug, 'alt', CONCAT(s.title, ' (', s.year, ')'), 'subtext', COALESCE((
+  json_build_object('title', s.title, 'image', CONCAT('/', df_art.filename_disk), 'backdrop', CONCAT('/', df_backdrop.filename_disk), 'url', s.slug, 'alt', CONCAT('Poster from ', s.title, ' (', s.year, ')'), 'subtext', COALESCE((
       SELECT
         CASE WHEN e1.last_watched_at >= NOW() - INTERVAL '90 days' THEN
           CONCAT('S', e1.season_number, 'E', e1.episode_number)

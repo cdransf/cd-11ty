@@ -7,7 +7,7 @@
   --blue-500: #2553e6;
   --blue-600: #1e42c7;
 
-  --gray-100: #f6f7f8;
+  --gray-100: #f9fafb;
   --gray-200: #eceef1;
   --gray-300: #dfe3e8;
   --gray-400: #959eae;
@@ -15,10 +15,7 @@
   --gray-600: #626d7f;
   --gray-700: #545e71;
   --gray-800: #4a5365;
-  --gray-900: #1a1d22;
-
-  --white: #fff;
-  --black: #000;
+  --gray-900: #14161a;
 
   --gray-lighter: light-dark(var(--gray-200), var(--gray-700));
   --gray-light: light-dark(var(--gray-300), var(--gray-600));
@@ -26,8 +23,8 @@
   --gray-dark: light-dark(var(--gray-800), var(--gray-300));
 
   /* base theme */
-  --color-lightest: var(--white);
-  --color-darkest: var(--black);
+  --color-lightest: var(--gray-100);
+  --color-darkest: var(--gray-900);
   --text-color: light-dark(var(--color-darkest), var(--color-lightest));
   --background-color: light-dark(var(--color-lightest), var(--color-darkest));
   --text-color-inverted: light-dark(
@@ -155,7 +152,7 @@
   --inline-margin-bottom: -5px;
 
   /* shadows */
-  --box-shadow-media: inset 0 -85px 60px -40px var(--black);
+  --box-shadow-media: inset 0 -85px 60px -40px var(--gray-900);
   --box-shadow-text-toggle: inset 0 -120px 60px -60px var(--background-color);
   --text-shadow-default: rgba(0, 0, 0, 0.7) 0px 0px 10px;
 

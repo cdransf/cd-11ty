@@ -71,7 +71,7 @@ WHERE
   LEFT JOIN books rb ON rbk.related_books_id = rb.id
 WHERE
   rbk.books_id = b.id) AS related_books,
-json_build_object('title', CONCAT(b.title, ' by ', b.author), 'image', CONCAT('/', df.filename_disk), 'url', b.slug, 'alt', CONCAT(b.title, ' by ', b.author), 'subtext', CASE WHEN b.star_rating IS NOT NULL THEN
+json_build_object('title', CONCAT(b.title, ' by ', b.author), 'image', CONCAT('/', df.filename_disk), 'url', b.slug, 'alt', CONCAT('Book cover from ', b.title, ' by ', b.author), 'subtext', CASE WHEN b.star_rating IS NOT NULL THEN
     b.star_rating
   ELSE
     NULL
