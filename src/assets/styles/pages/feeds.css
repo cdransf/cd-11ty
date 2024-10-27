@@ -1,4 +1,8 @@
 .feed {
+  .main-title h1 {
+    white-space: normal;
+  }
+
   & .item {
     &:not(:last-of-type) {
       border-bottom: var(--border-gray);
