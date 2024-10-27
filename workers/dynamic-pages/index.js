@@ -64,7 +64,7 @@ export default {
         break;
     }
 
-    const templateResponse = await fetch(`${BASE_URL}`);
+    const templateResponse = await fetch(`${BASE_URL}/save`);
     const template = await templateResponse.text();
     const metadata = generateMetadata(data, type, globals);
     const html = updateDynamicContent(template, metadata, mediaHtml);
