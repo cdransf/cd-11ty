@@ -37,7 +37,11 @@ WITH syndication_data AS (
         CONCAT('https://coryd.dev', b.url) AS url,
         b.tags,
         CASE WHEN LOWER(b.status) = 'finished' THEN
-            json_build_object('title', CONCAT('📖 ', b.title, ' ',(
+            json_build_object('title', CONCAT('📖 ', b.title, CASE WHEN b.rating IS NOT NULL THEN
+                        ' (' || b.rating || ')'
+                    ELSE
+                        ''
+                    END, ' ',(
                         SELECT
                             array_to_string(array_agg('#' || initcap(replace(t.name, ' ', ''))), ' ')
                         FROM unnest(b.tags) AS t(name))), 'description', b.description, 'url', CONCAT('https://coryd.dev', b.url), 'date', b.date_finished)
@@ -54,7 +58,11 @@ WITH syndication_data AS (
         CONCAT('https://coryd.dev', m.url) AS url,
         m.tags,
         CASE WHEN m.last_watched IS NOT NULL THEN
-            json_build_object('title', CONCAT('🎥 ', m.title, ' ',(
+            json_build_object('title', CONCAT('🎥 ', m.title, CASE WHEN m.rating IS NOT NULL THEN
+                        ' (' || m.rating || ')'
+                    ELSE
+                        ''
+                    END, ' ',(
                         SELECT
                             array_to_string(array_agg('#' || initcap(replace(t.name, ' ', ''))), ' ')
                         FROM unnest(m.tags) AS t(name))), 'description', m.description, 'url', CONCAT('https://coryd.dev', m.url), 'date', m.last_watched)
@@ -76,4 +84,3 @@ FROM (
     ORDER BY
         content_date DESC
     LIMIT 20) AS limited_data;
-

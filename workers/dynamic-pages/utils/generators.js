@@ -435,6 +435,7 @@ export const generateWatchingHTML = (media, globals, type) => {
         <p class="title"><strong>${media["title"]}</strong> (${
     media["year"]
   })</p>
+        ${media["rating"] ? `<p>${media["rating"]}</p>` : ""}
         ${
           media["favorite"]
             ? `<p class="sub-meta favorite">${ICON_MAP["heart"]} This is one of my favorite ${label}s!</p>`
