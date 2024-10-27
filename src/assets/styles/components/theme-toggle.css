@@ -20,29 +20,18 @@ theme-toggle {
     stroke: var(--accent-color-hover);
   }
 
+  .sun,
   & > .light svg {
     stroke: var(--sun);
   }
 
+  .moon,
   & > .dark svg {
     stroke: var(--moon);
   }
 
-  & > .auto svg {
-    & path:nth-of-type(3) {
-      stroke: var(--moon);
-    }
-
-    & path:nth-of-type(2),
-    & path:nth-of-type(4),
-    & path:nth-of-type(5),
-    & path:nth-of-type(6) {
-      stroke: var(--sun);
-    }
-
-    & path:nth-of-type(7) {
-      stroke: var(--twilight);
-    }
+  .twilight {
+    stroke: var(--twilight);
   }
 
   .light,

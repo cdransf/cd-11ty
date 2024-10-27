@@ -1,9 +1,19 @@
-<script type="module" src="/assets/scripts/components/theme-toggle.js?v={% appVersion %}" crossorigin="anonymous"></script>
+<script type="module" src="/assets/scripts/components/theme-toggle.js?v={% appVersion %}"
+  crossorigin="anonymous"></script>
 <span class="client-side">
   <theme-toggle mode="control">
     <button aria-label="Auto, light, dark theme control" class="theme-toggle">
       <span class="auto">
-        {% tablericon "sun-moon" %}
+        <svg aria-hidden="true" data-tablericon-name="sun-moon" fill="none" height="24" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path class="sun" d="M9.173 14.83a4 4 0 1 1 5.657 -5.657"></path>
+          <path class="moon" d="M11.294 12.707l.174 .247a7.5 7.5 0 0 0 8.845 2.492a9 9 0 0 1 -14.671 2.914"></path>
+          <path class="sun" d="M3 12h1"></path>
+          <path class="sun" d="M12 3v1"></path>
+          <path class="sun" d="M5.6 5.6l.7 .7"></path>
+          <path class="twilight" d="M3 21l18 -18"></path>
+        </svg>
       </span>
       <span class="light">
         {% tablericon "sun" %}
