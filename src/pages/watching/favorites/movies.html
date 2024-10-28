@@ -4,7 +4,7 @@ description: These are my favorite movies. There are many like them, but these a
 pagination:
   data: movies.favorites
   size: 24
-permalink: "/watching/favorite-movies/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html"
+permalink: "/watching/favorite-movies/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}.html"
 schema: favorite-movies
 ---
 <a class="icon-link" href="/watching" title="Go back to the watching index page">{% tablericon "arrow-left" %} Back to watching</a>

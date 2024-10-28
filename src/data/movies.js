@@ -31,8 +31,6 @@ const fetchAllMovies = async () => {
 };
 
 export default async function () {
-  const year = DateTime.now().year;
-
   try {
     const movies = await fetchAllMovies();
     const favoriteMovies = movies.filter((movie) => movie["favorite"]);
