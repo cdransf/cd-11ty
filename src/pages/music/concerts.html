@@ -4,7 +4,7 @@ description: These are concerts I've attended (not all of them — just the ones
 pagination:
   data: concerts
   size: 30
-permalink: "/music/concerts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}.html"
+permalink: "/music/concerts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html"
 ---
 {%- if pagination.pageNumber == 0 -%}
 <h2>Concerts</h2>
