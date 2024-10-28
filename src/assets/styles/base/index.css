@@ -315,7 +315,7 @@ article {
   border-bottom: var(--border-gray);
 
   &:last-of-type {
-    border-bottom: none;
+    border-bottom: 0;
   }
 
   &.intro p {

@@ -127,6 +127,7 @@
   --aspect-ratio-banner: 3/2;
 
   /* grid columns */
+  --grid-columns-one: repeat(1, minmax(0, 1fr));
   --grid-columns-two: repeat(2, minmax(0, 1fr));
   --grid-columns-three: repeat(3, minmax(0, 1fr));
   --grid-columns-four: repeat(4, minmax(0, 1fr));

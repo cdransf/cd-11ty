@@ -9,7 +9,7 @@ import markdownItPrism from "markdown-it-prism";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import tablerIcons from "@cdransf/eleventy-plugin-tabler-icons";
 import { minifyJsComponents } from "./config/events/index.js";
-import { albumReleasesCalendar } from "./config/collections/index.js";
+import { popularPosts, albumReleasesCalendar } from "./config/collections/index.js";
 import { cssConfig } from "./config/plugins/css-config.js";
 
 // load .env
@@ -48,6 +48,7 @@ export default async function (eleventyConfig) {
       "assets/scripts/components/youtube-video-element.js",
   });
 
+  eleventyConfig.addCollection("popularPosts", popularPosts);
   eleventyConfig.addCollection("albumReleasesCalendar", albumReleasesCalendar);
 
   const md = markdownIt({ html: true, linkify: true });

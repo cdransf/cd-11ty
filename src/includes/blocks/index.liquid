@@ -14,5 +14,7 @@
       {{ block.text | markdown }}
     {%- when 'divider' -%}
       {{ block.markup | markdown }}
+    {%- when 'addon_links' -%}
+      {% render "blocks/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}
   {%- endcase -%}
 {%- endfor -%}

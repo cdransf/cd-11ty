@@ -118,6 +118,7 @@ window.addEventListener("load", () => {
     const $fallback = document.querySelector(".search__form--fallback");
     const $input = document.querySelector(".search__form--input");
     const $results = document.querySelector(".search__results");
+    const $addonLinks = document.querySelector(".addon-links");
     const $loadMoreButton = document.querySelector(".search__load-more");
     const $typeCheckboxes = document.querySelectorAll(
       '.search__form--type input[type="checkbox"]'
@@ -179,6 +180,7 @@ window.addEventListener("load", () => {
         resultHTML ||
         '<li class="search__results--no-results">No results found.</li>';
       $results.style.display = "block";
+      $addonLinks.style.display = results.length === 0 ? "grid" : "none";
     };
 
     const loadSearchIndex = async (query, types, page) => {
@@ -243,6 +245,7 @@ window.addEventListener("load", () => {
       if (!query) {
         renderSearchResults([]);
         $loadMoreButton.style.display = "none";
+        $addonLinks.style.display = "grid";
         return;
       }
 
@@ -271,5 +274,7 @@ window.addEventListener("load", () => {
       currentResults = [...currentResults, ...nextResults];
       updateSearchResults(nextResults);
     });
+
+    $addonLinks.style.display = "grid";
   })();
 });

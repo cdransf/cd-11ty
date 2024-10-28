@@ -1,6 +1,22 @@
 import { DateTime } from "luxon";
 import ics from "ics";
 
+export const popularPosts = (collection) => {
+  const collectionData = collection.getAll()[0];
+  const { data } = collectionData;
+  const { posts, analytics } = data;
+
+  return posts
+    .filter((post) => {
+      if (analytics.find((p) => p.page.includes(post.url))) return true;
+    })
+    .sort((a, b) => {
+      const visitors = (page) =>
+        analytics.filter((p) => p.page.includes(page.url)).pop()?.visitors;
+      return visitors(b) - visitors(a);
+    });
+};
+
 export const albumReleasesCalendar = (collection) => {
   const collectionData = collection.getAll()[0];
   const { data } = collectionData;

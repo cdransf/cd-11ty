@@ -23,6 +23,8 @@ SELECT
           json_build_object('type', pb.collection, 'text', md.text)
         WHEN pb.collection = 'divider' THEN
           json_build_object('type', pb.collection, 'markup', d.markup)
+        WHEN pb.collection = 'addon_links' THEN
+          json_build_object('type', pb.collection, 'addon_links', d.title)
         ELSE
           json_build_object('type', pb.collection)
         END ORDER BY pb.sort)
