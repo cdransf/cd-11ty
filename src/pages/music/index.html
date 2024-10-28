@@ -37,9 +37,9 @@ schema: music-index
   </div>
 </div>
 {% if albumReleases.size > 0 %}
-<h3 id="album-releases">
-  {% tablericon "calendar-time" %}
-  Anticipated albums
-</h3>
-{% render "media/grid.liquid", globals:globals, data:albumReleases.upcoming, shape:"square", count: 8 %}
+  <h3 id="album-releases">
+    {% tablericon "calendar-time" %}
+    Anticipated albums
+  </h3>
+  {% render "media/grid.liquid", globals:globals, data:albumReleases.upcoming, shape:"square", count: 8 %}
 {% endif %}
