@@ -1,8 +1,10 @@
 {%- if links.size > 0 -%}
   <article>
-    <h3 class="link">
-      {% tablericon "link" "Links" %}
-      Recent links
+    <h3>
+      <a class="link" href="/links">
+        {% tablericon "link" "Links" %}
+        Recent links
+      </a>
     </h3>
     <ul>
       {%- for link in links limit: 5 -%}

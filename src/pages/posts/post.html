@@ -51,6 +51,6 @@ schema: blog
       shows: post.shows
     %}
     {% render "blocks/banners/coffee.liquid" %}
-    {% render "blocks/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}
+    {% render "blocks/links/addon-links.liquid", popularPosts:collections.popularPosts, links:links %}
   </div>
 </article>
