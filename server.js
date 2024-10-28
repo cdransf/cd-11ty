@@ -71,7 +71,7 @@ app.use((req, res, next) => {
 });
 
 app.use(
-  express.static(path.join(__dirname, "_site"), { extensions: ["html"] })
+  express.static(path.join(__dirname, "dist"), { extensions: ["html"] })
 );
 
 const proxy = createProxyMiddleware({
@@ -97,7 +97,7 @@ app.use(
 );
 
 app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "_site", "404.html"), (err) => {
+  res.status(404).sendFile(path.join(__dirname, "dist", "404.html"), (err) => {
     if (err) res.status(404).send("Page not found");
   });
 });

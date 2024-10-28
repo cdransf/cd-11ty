@@ -13,7 +13,7 @@
     "build": "ELEVENTY_PRODUCTION=true eleventy",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "update:deps": "npm upgrade && ncu",
-    "clean": "rimraf _site",
+    "clean": "rimraf dist",
     "build:worker": "node scripts/worker-build.mjs $WORKER_NAME",
     "deploy:worker": "wrangler deploy --env production --config workers/$npm_config_worker/wrangler.toml"
   },

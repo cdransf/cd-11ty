@@ -11,7 +11,7 @@ export const cssConfig = (eleventyConfig) => {
   eleventyConfig.addExtension("css", {
     outputFileExtension: "css",
     compile: async (inputContent, inputPath) => {
-      const outputPath = "_site/assets/css/index.css";
+      const outputPath = "dist/assets/css/index.css";
 
       if (inputPath.endsWith("index.css")) {
         return async () => {

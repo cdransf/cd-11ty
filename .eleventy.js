@@ -106,7 +106,7 @@ export default async function (eleventyConfig) {
       includes: "includes",
       layouts: "layouts",
       data: "data",
-      output: "_site",
+      output: "dist",
     },
   };
 }

@@ -1,5 +1,5 @@
 # build output
-_site
+dist
 node_modules
 .cache
 

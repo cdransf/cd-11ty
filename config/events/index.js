@@ -3,7 +3,7 @@ import path from "path";
 import { minify } from "terser";
 
 export const minifyJsComponents = async () => {
-  const scriptsDir = "_site/assets/scripts";
+  const scriptsDir = "dist/assets/scripts";
 
   const minifyJsFilesInDir = async (dir) => {
     const files = fs.readdirSync(dir);
