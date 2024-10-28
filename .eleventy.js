@@ -8,7 +8,7 @@ import markdownItFootnote from "markdown-it-footnote";
 import markdownItPrism from "markdown-it-prism";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import tablerIcons from "@cdransf/eleventy-plugin-tabler-icons";
-import { copyErrorPages, minifyJsComponents } from "./config/events/index.js";
+import { minifyJsComponents } from "./config/events/index.js";
 import { albumReleasesCalendar } from "./config/collections/index.js";
 import { cssConfig } from "./config/plugins/css-config.js";
 
@@ -73,8 +73,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addShortcode("appVersion", () => appVersion);
 
   // events
-  if (process.env.ELEVENTY_PRODUCTION)
-    eleventyConfig.on("afterBuild", copyErrorPages);
   if (process.env.ELEVENTY_PRODUCTION)
     eleventyConfig.on("afterBuild", minifyJsComponents);
 
