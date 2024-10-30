@@ -1,6 +1,8 @@
 # 404s
 /now.html /now 301
 /contact.html /contact 301
+/watching/favorite-movies /watching 301
+/watching/favorite-shows /watching 301
 
 # feeds
 /feed.xml /feeds/posts 301
