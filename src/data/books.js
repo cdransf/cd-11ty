@@ -48,7 +48,7 @@ export default async function () {
   const books = await fetchAllBooks();
   const sortedByYear = sortBooksByYear(books);
   const booksForCurrentYear =
-    sortedByYear.find((yearGroup) => yearGroup.value === currentYear)?.data ||
+    sortedByYear.find((yearGroup) => yearGroup.value === currentYear)?.data.filter(book => book['status'] === 'finished') ||
     [];
 
   return {
