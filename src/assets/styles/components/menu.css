@@ -28,9 +28,18 @@ menu {
 
       & a {
         text-decoration: none;
+        justify-content: center;
         width: 100%;
         height: 100%;
+      }
+
+      & .active {
+        display: flex;
+        align-items: center;
         justify-content: center;
+        width: 100%;
+        height: 100%;
+        cursor: not-allowed;
       }
 
       & .icon > svg,
