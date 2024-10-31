@@ -8,7 +8,7 @@ CREATE OR REPLACE FUNCTION public.search_optimized_index(search_query text, page
         genre_name text,
         genre_url text,
         type text,
-        total_plays text, -- Changed to text
+        total_plays text,
         rank real,
         total_count bigint
     )

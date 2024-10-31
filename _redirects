@@ -12,6 +12,11 @@
 /feeds/books.xml /feeds/books 301
 /feeds/movies.xml /feeds/movies 301
 /feeds/all.xml /feeds/all 301
+/feeds/posts/ /feeds/posts 301
+/feeds/links/ /feeds/links 301
+/feeds/books/ /feeds/books 301
+/feeds/movies/ /feeds/movies 301
+/feeds/all/ /feeds/all 301
 
 # general
 /articles/ /posts/ 301

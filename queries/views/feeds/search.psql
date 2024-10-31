@@ -89,6 +89,21 @@ WITH search_data AS (
         optimized_shows s
     WHERE
         s.last_watched_at IS NOT NULL
+    UNION ALL
+    SELECT
+        'movie' AS type,
+        CONCAT('🎬 ', m.title, ' (', m.rating, ')') AS title,
+        CONCAT('https://coryd.dev', m.url) AS url,
+        m.description AS description,
+        m.tags,
+        NULL AS genre_name,
+        NULL AS genre_url,
+        NULL::text AS total_plays,
+        m.last_watched AS content_date
+    FROM
+        optimized_movies m
+    WHERE
+        m.rating IS NOT NULL
 )
 SELECT
     ROW_NUMBER() OVER (ORDER BY url) AS id,
