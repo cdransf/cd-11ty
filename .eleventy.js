@@ -38,8 +38,6 @@ export default async function (eleventyConfig) {
       "assets/scripts/components/api-text.js",
     "node_modules/@cdransf/select-pagination/select-pagination.js":
       "assets/scripts/components/select-pagination.js",
-    "node_modules/@cdransf/theme-toggle/theme-toggle.js":
-      "assets/scripts/components/theme-toggle.js",
     "node_modules/@daviddarnes/mastodon-post/mastodon-post.js":
       "assets/scripts/components/mastodon-post.js",
     "node_modules/minisearch/dist/umd/index.js":

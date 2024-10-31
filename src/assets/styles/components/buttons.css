@@ -5,31 +5,28 @@ button,
 .button {
   appearance: none;
   border: none;
+  border: 2px solid var(--accent-color);
+  border-radius: var(--border-radius-full);
+  padding: var(--spacing-xs) var(--spacing-md);
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-base);
+  white-space: nowrap;
+  color: var(--text-color-inverted);
+  background-color: var(--accent-color);
+  appearance: none;
+  transition: color var(--transition-duration-default)
+    var(--transition-ease-in-out);
 
   & + hr {
     margin-top: 0;
   }
 
-  &:not(.theme-toggle) {
-    border: 2px solid var(--accent-color);
-    border-radius: var(--border-radius-full);
-    padding: var(--spacing-xs) var(--spacing-md);
-    cursor: pointer;
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-base);
-    white-space: nowrap;
-    color: var(--text-color-inverted);
-    background-color: var(--accent-color);
-    appearance: none;
-    transition: color var(--transition-duration-default)
-      var(--transition-ease-in-out);
-  }
-
-  &:not(.theme-toggle, .active):hover,
-  &:not(.theme-toggle, .active):active,
-  &:not(.theme-toggle, .active):focus,
-  &:not(.theme-toggle, .active):focus-within {
+  &:not(.active):hover,
+  &:not(.active):active,
+  &:not(.active):focus,
+  &:not(.active):focus-within {
     background-color: var(--accent-color-hover);
     border-color: var(--accent-color-hover);
   }
