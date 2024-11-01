@@ -33,6 +33,12 @@ const generateAssociatedMediaHTML = (data, isGenre = false) => {
       title: "Related Movie(s)",
     },
     {
+      key: "related_movies",
+      icon: "film",
+      category: "movies",
+      title: "Related Movie(s)",
+    },
+    {
       key: "shows",
       icon: "deviceTvOld",
       category: "tv",
@@ -92,6 +98,7 @@ const generateAssociatedMediaHTML = (data, isGenre = false) => {
                   return `<li><a href="${url}">${name}</a>${totalPlays}</li>`;
                 } else if (
                   key === "movies" ||
+                  key === "related_movies" ||
                   key === "shows" ||
                   key === "related_shows"
                 ) {
