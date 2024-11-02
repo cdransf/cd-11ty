@@ -83,7 +83,7 @@ WHERE
   r.movies_id = m.id) AS related_movies,
 CASE WHEN m.star_rating IS NOT NULL
   AND m.last_watched IS NOT NULL THEN
-  json_build_object('title', m.title, 'url', CONCAT('https://coryd.dev/movies/', m.slug), 'date', m.last_watched, 'description', m.description, 'image', CONCAT('/', df.filename_disk), 'rating', m.star_rating)
+  json_build_object('title', m.title, 'url', CONCAT('https://coryd.dev', m.slug), 'date', m.last_watched, 'description', m.description, 'image', CONCAT('/', df.filename_disk), 'rating', m.star_rating)
 ELSE
   NULL
 END AS feed
