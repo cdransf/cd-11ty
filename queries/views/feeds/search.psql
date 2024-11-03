@@ -73,11 +73,7 @@ WITH search_data AS (
     UNION ALL
     SELECT
         'show' AS type,
-        CASE WHEN s.review IS NOT NULL THEN
-            CONCAT('📺 ', s.title, ' (', s.year, ') - ', s.review)
-        ELSE
-            CONCAT('📺 ', s.title, ' (', s.year, ')')
-        END AS title,
+        CONCAT('📺 ', s.title, ' (', s.year, ')') AS title,
         CONCAT('https://coryd.dev', s.url) AS url,
         s.description AS description,
         s.tags,
