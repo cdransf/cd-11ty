@@ -6,6 +6,64 @@ import { ICON_MAP } from "./icons.js";
 
 const warningBanner = `<div class="banner warning"><p>${ICON_MAP["alertTriangle"]}There are probably spoilers after this banner — this is a warning about them.</p></div>`;
 
+export const generateMetadata = (data, type, globals) => {
+  let title = globals["site_name"];
+  let description = data["description"] || globals["site_description"];
+  const canonicalUrl = data["url"]
+    ? `${globals["url"]}${data["url"]}`
+    : globals["url"];
+  const ogImage = `${globals["cdn_url"]}${(data["backdrop"] ? data["backdrop"] : data["image"]) || globals["avatar"]}?class=w800`;
+
+  description = convert(
+    truncateHtml(md.render(description), 100, {
+      byWords: true,
+      ellipsis: "...",
+    }),
+    {
+      wordwrap: false,
+      selectors: [
+        { selector: "a", options: { ignoreHref: true } },
+        { selector: "h1", options: { uppercase: false } },
+        { selector: "h2", options: { uppercase: false } },
+        { selector: "h3", options: { uppercase: false } },
+        { selector: "*", format: "block" },
+      ],
+    }
+  )
+    .replace(/\s+/g, " ")
+    .trim();
+
+  switch (type) {
+    case "artist":
+      title = `Artists / ${data["name"]} / ${globals["site_name"]}`;
+      break;
+    case "genre":
+      title = `Genre / ${data["name"]} / ${globals["site_name"]}`;
+      break;
+    case "book":
+      title = `Books / ${data["title"]} by ${data["author"]} / ${globals["site_name"]}`;
+      break;
+    case "movie":
+      title = `Movies / ${data["title"]} (${data["year"]}) / ${globals["site_name"]}`;
+      break;
+    case "show":
+      title = `Shows / ${data["title"]} / ${globals["site_name"]}`;
+      break;
+    default:
+      title = `${data["title"] || globals["site_name"]}`;
+  }
+
+  return {
+    title,
+    description,
+    "og:title": title,
+    "og:description": description,
+    "og:image": ogImage,
+    "og:url": canonicalUrl,
+    canonical: canonicalUrl,
+  };
+};
+
 const generateAssociatedMediaHTML = (data, isGenre = false) => {
   const sections = [
     {
@@ -299,7 +357,7 @@ export const generateBookHTML = (book, globals) => {
       </div>
       ${
         book["review"]
-          ? `${warningBanner}<h2>My thoughts</h2><p>${book["review"]}</p>`
+          ? `${warningBanner}<h2>My thoughts</h2><p>${md.render(book["review"])}</p>`
           : ""
       }
       ${generateAssociatedMediaHTML(book)}
@@ -344,64 +402,6 @@ export const generateGenreHTML = (genre) => {
       }
     </article>
   `;
-};
-
-export const generateMetadata = (data, type, globals) => {
-  let title = globals["site_name"];
-  let description = data["description"] || globals["site_description"];
-  const canonicalUrl = data["url"]
-    ? `${globals["url"]}${data["url"]}`
-    : globals["url"];
-  const ogImage = `${globals["cdn_url"]}${(data["backdrop"] ? data["backdrop"] : data["image"]) || globals["avatar"]}?class=w800`;
-
-  description = convert(
-    truncateHtml(md.render(description), 100, {
-      byWords: true,
-      ellipsis: "...",
-    }),
-    {
-      wordwrap: false,
-      selectors: [
-        { selector: "a", options: { ignoreHref: true } },
-        { selector: "h1", options: { uppercase: false } },
-        { selector: "h2", options: { uppercase: false } },
-        { selector: "h3", options: { uppercase: false } },
-        { selector: "*", format: "block" },
-      ],
-    }
-  )
-    .replace(/\s+/g, " ")
-    .trim();
-
-  switch (type) {
-    case "artist":
-      title = `Artists / ${data["name"]} / ${globals["site_name"]}`;
-      break;
-    case "genre":
-      title = `Genre / ${data["name"]} / ${globals["site_name"]}`;
-      break;
-    case "book":
-      title = `Books / ${data["title"]} by ${data["author"]} / ${globals["site_name"]}`;
-      break;
-    case "movie":
-      title = `Movies / ${data["title"]} (${data["year"]}) / ${globals["site_name"]}`;
-      break;
-    case "show":
-      title = `Shows / ${data["title"]} / ${globals["site_name"]}`;
-      break;
-    default:
-      title = `${data["title"] || globals["site_name"]}`;
-  }
-
-  return {
-    title,
-    description,
-    "og:title": title,
-    "og:description": description,
-    "og:image": ogImage,
-    "og:url": canonicalUrl,
-    canonical: canonicalUrl,
-  };
 };
 
 export const generateWatchingHTML = (media, globals, type) => {
