@@ -16,4 +16,4 @@
     {{ post.description | normalize_whitespace | markdown | htmlTruncate }}
   </article>
 {%- endfor -%}
-<a class="icon-link" href="/posts">View all posts {% tablericon "arrow-right" %}</a>
+<a href="/posts">View all posts {% tablericon "arrow-right" %}</a>

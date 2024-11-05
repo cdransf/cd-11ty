@@ -4,7 +4,7 @@
   {%- assign loadingStrategy = loading | default: 'lazy' -%}
   {%- for item in data limit: count -%}
     {%- assign alt = item.grid.alt | replaceQuotes -%}
-    {%- assign imageUrl = item.grid.image | default: item.grid.backdrop -%}
+    {%- assign imageUrl = item.grid.image -%}
     <a href="{{ item.grid.url }}" title="{{ alt }}">
       <div class="item">
         <div class="meta-text">
@@ -16,6 +16,7 @@
         {%- assign height = 0 -%}
         {%- case shape -%}
           {%- when 'poster' -%}
+            {%- assign imageUrl = item.grid.backdrop -%}
             {%- assign imageClass = 'banner' -%}
             {%- assign width = 256 -%}
             {%- assign height = 170 -%}

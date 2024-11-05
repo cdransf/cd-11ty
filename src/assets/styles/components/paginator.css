@@ -2,24 +2,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-.pagination button {
-  background: none;
-  padding: 0;
-}
+  & button {
+    background: none;
+    padding: 0;
+  }
 
-.pagination a {
-  display: flex;
-}
+  & a {
+    display: flex;
 
-.pagination p {
-  text-align: center;
-  margin: 0;
-}
+    &.disabled svg[data-tablericon-name^="arrow-"] {
+      cursor: not-allowed;
+      stroke: var(--gray-medium);
+      stroke-width: var(--stroke-width-default);
+    }
+  }
 
-.pagination a.disabled svg[data-tablericon-name^="arrow-"] {
-  cursor: not-allowed;
-  stroke: var(--gray-medium);
-  stroke-width: var(--stroke-width-default);
+  & p {
+    text-align: center;
+  }
 }

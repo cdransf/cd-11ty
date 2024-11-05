@@ -12,7 +12,6 @@
 
   & img {
     border: var(--border-default);
-    border-radius: var(--border-radius-slight);
     width: 100%;
     height: auto;
     aspect-ratio: var(--aspect-ratio-square);
@@ -33,32 +32,11 @@
       gap: var(--spacing-md);
     }
 
-    & .artist-meta {
-      display: flex;
-      flex-direction: column;
-      gap: var(--spacing-sm);
+    & .media-meta {
       margin-top: var(--spacing-base);
 
       @media screen and (min-width: 768px) {
         margin-top: 0;
-      }
-
-      & p {
-        margin: 0;
-
-        &.title {
-          font-size: var(--font-size-xl);
-          line-height: var(--line-height-md);
-        }
-
-        &.sub-meta {
-          font-size: var(--font-size-sm);
-
-          & svg {
-            width: var(--sizing-svg-sm);
-            height: var(--sizing-svg-sm);
-          }
-        }
       }
     }
   }
@@ -72,13 +50,4 @@
 
 .concert-list {
   margin-top: 0;
-  padding-left: 0;
-
-  & li .modal-toggle {
-    height: calc(var(--sizing-lg) * 1.6);
-  }
-}
-
-p.concerts + ul + hr {
-  display: none;
 }

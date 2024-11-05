@@ -39,13 +39,7 @@
       }
     }
 
-    & a:has(img) {
-      display: flex;
-    }
-
     & img {
-      border: var(--border-default);
-      border-radius: var(--border-radius-slight);
       width: calc(var(--sizing-3xl) * 1.5);
       height: calc(var(--sizing-3xl) * 1.5);
 
@@ -92,18 +86,17 @@
 
     & .title,
     & .subtext,
-    & .subtext p,
-    & .timestamp {
+    & time {
       line-height: var(--line-height-md);
       word-break: break-word;
     }
 
     & .subtext,
-    & .timestamp {
+    & time {
       font-size: var(--font-size-sm);
     }
 
-    & .timestamp {
+    & time {
       margin-top: var(--spacing-sm);
       margin-left: 0;
 

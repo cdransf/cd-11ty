@@ -6,7 +6,6 @@
     href="{{ prevHref }}"
     aria-label="Previous page"
     class="{% unless prevHref %}disabled{% endunless %}"
-    {% unless prevHref %}disabled{% endunless %}
   >
     {% tablericon "arrow-left" %}
   </a>
@@ -29,7 +28,6 @@
     href="{{ nextHref }}"
     aria-label="Next page"
     class="{% unless nextHref %}disabled{% endunless %}"
-    {% unless nextHref %}disabled{% endunless %}
   >
     {% tablericon "arrow-right" %}
   </a>

@@ -8,14 +8,12 @@ button,
   border: 2px solid var(--accent-color);
   border-radius: var(--border-radius-full);
   padding: var(--spacing-xs) var(--spacing-md);
-  cursor: pointer;
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-base);
   white-space: nowrap;
   color: var(--text-color-inverted);
   background-color: var(--accent-color);
-  appearance: none;
   transition: color var(--transition-duration-default)
     var(--transition-ease-in-out);
 
@@ -23,10 +21,7 @@ button,
     margin-top: 0;
   }
 
-  &:not(.active):hover,
-  &:not(.active):active,
-  &:not(.active):focus,
-  &:not(.active):focus-within {
+  &:not(.active):is(:hover, :active, :focus, :focus-within) {
     background-color: var(--accent-color-hover);
     border-color: var(--accent-color-hover);
   }

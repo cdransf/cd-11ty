@@ -22,9 +22,9 @@
           <span class="subtext">{{ item.chart.subtext }}</span>
         </div>
       </div>
-      <div class="timestamp">
+      <time datetime="item.chart.played_at">
         {{ item.chart.played_at | date: "%B %-d, %-I:%M%p", "America/Los_Angeles" }}
-      </div>
+      </time>
     </div>
   {%- endfor -%}
 </div>

@@ -1,6 +1,4 @@
 .mastodon-post-wrapper {
-  margin-bottom: var(--spacing-base);
-
   & dl,
   dt {
     display: flex;

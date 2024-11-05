@@ -23,7 +23,6 @@ menu {
       margin: 0;
       padding: var(--spacing-sm) 0;
       width: 100%;
-      color: var(--text-color);
       background: var(--background-color);
 
       & a {

@@ -1,17 +1,15 @@
-html body {
+html,
+body {
+  font-family: var(--font-mono);
   color: var(--text-color);
   background: var(--background-color);
-  font-family: var(--font-mono);
 }
 
 html {
-  scrollbar-width: thin;
   scrollbar-color: var(--accent-color) var(--gray-light);
 }
 
 body {
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-base);
   letter-spacing: -0.035rem;
   word-spacing: -0.15rem;
 }
@@ -42,13 +40,7 @@ p {
   margin: var(--margin-vertical-base-horizontal-zero);
 }
 
-:is(p, ul, ol) a {
-  text-decoration: underline;
-  text-underline-offset: var(--spacing-xs);
-}
-
-.highlight-text,
-details > summary {
+.highlight-text {
   color: var(--text-color-inverted);
   background-color: var(--accent-color);
   padding: var(--spacing-xs);
@@ -56,7 +48,6 @@ details > summary {
 }
 
 details > summary {
-  cursor: pointer;
   display: inline;
 }
 
@@ -68,25 +59,8 @@ blockquote {
   margin: var(--margin-vertical-base-horizontal-zero);
 }
 
-code {
-  padding: var(--spacing-xs);
-  color: var(--text-color-inverted);
-  background-color: var(--background-color-inverted);
-  border-radius: var(--border-radius-slight);
-}
-
-p:not(.banner p) > svg {
-  margin-bottom: var(--inline-margin-bottom);
-}
-
-:is(h1, h2, h3, h4, h5, h6) svg {
+:is(h1, h2, h3) svg {
   stroke-width: var(--stroke-width-bold);
-}
-
-:is(h1, h2, h3, h4, h5, h6):has(svg) {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
 }
 
 strong,
@@ -105,7 +79,29 @@ svg {
   stroke-width: var(--stroke-width-default);
 }
 
-/* brand colors */
+/* images */
+img {
+  border-radius: var(--border-radius-slight);
+
+  &.image-banner {
+    border: var(--border-default);
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* lists */
+ul,
+ol {
+  margin: var(--margin-vertical-base-horizontal-zero);
+  padding-left: var(--spacing-base);
+
+  & li:not(:last-child) {
+    margin-bottom: var(--spacing-lg);
+  }
+}
+
+/* brand + section colors */
 .article,
 .books,
 .brand-github,
@@ -211,51 +207,44 @@ svg {
 /* links */
 a {
   color: var(--accent-color);
-  text-decoration: none;
-}
 
-:is(a:hover, a:active, a:focus) svg[data-tablericon-name^="arrow-"] {
-  stroke: var(--accent-color-hover);
-}
-
-a:hover,
-a:focus,
-a:active,
-:is(.main-title, footer nav.sub-pages) a:hover,
-:is(.main-title, footer nav.sub-pages) a:focus,
-:is(.main-title, footer nav.sub-pages) a:active {
-  color: var(--accent-color-hover);
-  transition: color var(--transition-duration-default)
-    var(--transition-ease-in-out);
-}
-
-:is(a:has(svg):hover, a:has(svg):active, a:has(svg):focus) svg {
-  stroke: var(--accent-color-hover);
-}
-
-:is(a):has(svg) {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--spacing-sm);
+  & > img {
+    border: var(--border-default);
+  }
 
   & svg {
     stroke: var(--accent-color);
   }
 
-  &:hover svg,
-  &:active svg,
-  &:focus svg {
-    stroke: var(--accent-color-hover);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color-hover);
+    transition: color var(--transition-duration-default)
+      var(--transition-ease-in-out);
+
+    & > img {
+      border-color: var(--accent-color-hover);
+      transition: border var(--transition-duration-default)
+        var(--transition-ease-in-out);
+    }
+
+    & > svg {
+      stroke: var(--accent-color-hover);
+    }
   }
+}
+
+:is(h1, h2, h3, a, p:not(.banner p), span, th, td, .post-meta):has(svg) {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
 }
 
 /* headers */
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-md);
   margin: var(--margin-vertical-base-horizontal-zero);
@@ -264,48 +253,32 @@ h6 {
 h1 {
   font-size: var(--font-size-2xl);
 }
+
 h2 {
   font-size: var(--font-size-xl);
 }
+
 h3 {
   font-size: var(--font-size-lg);
-}
-h4 {
-  font-size: var(--font-size-base);
-}
-h5 {
-  font-size: var(--font-size-md);
-}
-h6 {
-  font-size: var(--font-size-sm);
 }
 
 @media screen and (min-width: 768px) {
   h1 {
     font-size: var(--font-size-3xl);
   }
+
   h2 {
     font-size: var(--font-size-2xl);
   }
+
   h3 {
     font-size: var(--font-size-xl);
-  }
-  h4 {
-    font-size: var(--font-size-lg);
-  }
-  h5 {
-    font-size: var(--font-size-base);
-  }
-  h6 {
-    font-size: var(--font-size-md);
   }
 }
 
 /* dividers */
 hr {
-  height: 1px;
-  background-color: var(--gray-light);
-  border: 0;
+  color: var(--gray-light);
   margin: var(--margin-vertical-base-horizontal-zero);
 }
 
@@ -322,19 +295,11 @@ article {
     margin-top: 0;
   }
 
-  &.standalone .associated-media:last-of-type > hr {
-    display: none;
-  }
-
   & h3 {
     margin-top: 0;
   }
 
   & .post-meta {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-
     & svg {
       stroke: var(--gray-dark);
       width: var(--sizing-svg-sm);
@@ -362,10 +327,6 @@ img + .associated-media,
     & li:last-child {
       margin-bottom: 0;
     }
-
-    & .footnote-item > p {
-      display: inline;
-    }
   }
 
   &:has(~ *) {
@@ -375,11 +336,7 @@ img + .associated-media,
 
 sup.footnote-ref {
   line-height: var(--line-height-xs);
-}
-
-sup.footnote-ref a,
-.footnote-backref {
-  text-decoration: none;
+  padding: var(--spacing-xs);
 }
 
 /* tables */
@@ -476,8 +433,8 @@ td:first-of-type,
 .active,
 .active svg {
   cursor: not-allowed;
-  color: var(--accent-color);
-  stroke: var(--accent-color-hover);
+  color: var(--accent-color-active);
+  stroke: var(--accent-color-active);
 }
 
 /* layout */
@@ -506,8 +463,7 @@ main {
 main,
 footer {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
@@ -555,28 +511,4 @@ footer {
       }
     }
   }
-}
-
-:is(.main-title, footer nav.sub-pages) a {
-  color: var(--text-color);
-}
-
-/* lists */
-ul,
-ol {
-  list-style-position: inside;
-  margin: var(--margin-vertical-base-horizontal-zero);
-  padding-left: var(--spacing-base);
-
-  & li:not(:last-child) {
-    margin-bottom: var(--spacing-lg);
-  }
-}
-
-/* images */
-.image-banner {
-  border: var(--border-default);
-  border-radius: var(--border-radius-slight);
-  height: auto;
-  width: 100%;
 }

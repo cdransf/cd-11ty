@@ -32,12 +32,12 @@ schema: books
         height="307"
       />
     </a>
-    <div class="book-meta">
+    <div class="media-meta">
       <a href="{{ book.url }}">
-        <p class="title"><strong>{{ book.title }}</strong></p>
+        <span class="title"><strong>{{ book.title }}</strong></span>
       </a>
       {% if book.author %}
-        <p class="sub-meta">By {{ book.author }}</p>
+        <span class="sub-meta">By {{ book.author }}</span>
       {% endif %}
       {% if book.progress %}
         {%- assign percentage = book.progress | append: '%' -%}

@@ -13,14 +13,10 @@
   margin-bottom: var(--spacing-sm);
   width: 100%;
 
-  & .interior {
-    display: flex;
-
-    & img {
-      width: var(--avatar-size);
-      height: var(--avatar-size);
-      image-rendering: pixelated;
-    }
+  & img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    image-rendering: pixelated;
   }
 }
 

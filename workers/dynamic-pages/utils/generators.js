@@ -136,7 +136,7 @@ const generateAssociatedMediaHTML = (data, isGenre = false) => {
 
       return `
         <div class="associated-media">
-          <p class="${category}">${ICON_MAP[icon]} ${title}</p>
+          <span class="${category}">${ICON_MAP[icon]} ${title}</span>
           <ul>
             ${items
               .map((item) => {
@@ -206,10 +206,10 @@ export const generateArtistHTML = (artist, globals) => {
   const playLabel = artist?.["total_plays"] === 1 ? "play" : "plays";
   const concertsList = artist["concerts"]?.length
     ? `<hr />
-    <p id="concerts" class="concerts">
+    <span id="concerts" class="concerts">
       ${ICON_MAP["deviceSpeaker"]}
       I've seen this artist live!
-    </p>
+    </span>
     <ul>${artist["concerts"].map(generateConcertModal).join("")}</ul>`
     : "";
   const albumsTable = artist["albums"]?.length
@@ -231,7 +231,7 @@ export const generateArtistHTML = (artist, globals) => {
     : "";
 
   return `
-    <a class="icon-link" href="/music">${ICON_MAP.arrowLeft} Back to music</a>
+    <a href="/music">${ICON_MAP.arrowLeft} Back to music</a>
     <article class="artist-focus">
       <div class="artist-display">
         <img
@@ -250,31 +250,31 @@ export const generateArtistHTML = (artist, globals) => {
           width="200"
           height="200"
         />
-        <div class="artist-meta">
-          <p class="title"><strong>${artist["name"]}</strong></p>
-          <p class="sub-meta country">${ICON_MAP["mapPin"]} ${parseCountryField(
-    artist["country"]
-  )}</p>
+        <div class="media-meta">
+          <span class="title"><strong>${artist["name"]}</strong></span>
+          <span class="sub-meta country">${ICON_MAP["mapPin"]} ${parseCountryField(
+            artist["country"]
+          )}</span>
           ${
             artist["favorite"]
-              ? `<p class="sub-meta favorite">${ICON_MAP["heart"]} This is one of my favorite artists!</p>`
+              ? `<span class="sub-meta favorite">${ICON_MAP["heart"]} This is one of my favorite artists!</span>`
               : ""
           }
           ${
             artist["tattoo"]
-              ? `<p class="sub-meta tattoo">${ICON_MAP["needle"]} I have a tattoo inspired by this artist!</p>`
+              ? `<span class="sub-meta tattoo">${ICON_MAP["needle"]} I have a tattoo inspired by this artist!</span>`
               : ""
           }
           ${
             artist["total_plays"]
-              ? `<p class="sub-meta"><strong class="highlight-text">${artist["total_plays"]} ${playLabel}</strong></p>`
+              ? `<span class="sub-meta"><strong class="highlight-text">${artist["total_plays"]} ${playLabel}</strong></span>`
               : ""
           }
-          <p class="sub-meta">${
+          <span class="sub-meta">${
             artist["genre"]
               ? `<a href="${artist["genre"]["url"]}">${artist["genre"]["name"]}</a>`
               : ""
-          }</p>
+          }</span>
         </div>
       </div>
       ${generateAssociatedMediaHTML(artist)}
@@ -311,7 +311,7 @@ export const generateBookHTML = (book, globals) => {
       : "";
 
   return `
-    <a class="icon-link" href="/books">${
+    <a href="/books">${
       ICON_MAP["arrowLeft"]
     } Back to books</a>
     <article class="book-focus">
@@ -319,14 +319,14 @@ export const generateBookHTML = (book, globals) => {
         <img
           srcset="
             ${globals["cdn_url"]}${
-    book["image"]
-  }?class=verticalsm&type=webp 200w,
-            ${globals["cdn_url"]}${
-    book["image"]
-  }?class=verticalmd&type=webp 400w,
-            ${globals["cdn_url"]}${
-    book["image"]
-  }?class=verticalbase&type=webp 800w
+              book["image"]
+            }?class=verticalsm&type=webp 200w,
+                      ${globals["cdn_url"]}${
+              book["image"]
+            }?class=verticalmd&type=webp 400w,
+                      ${globals["cdn_url"]}${
+              book["image"]
+            }?class=verticalbase&type=webp 800w
           "
           sizes="(max-width: 450px) 203px, (max-width: 850px) 406px, 812px"
           src="${globals["cdn_url"]}${book["image"]}?class=verticalsm&type=webp"
@@ -336,23 +336,23 @@ export const generateBookHTML = (book, globals) => {
           width="200"
           height="307"
         />
-        <div class="book-meta">
-          <p class="title"><strong>${book["title"]}</strong></p>
-          ${book["rating"] ? `<p>${book["rating"]}</p>` : ""}
+        <div class="media-meta">
+          <span class="title"><strong>${book["title"]}</strong></span>
+          ${book["rating"] ? `<span>${book["rating"]}</span>` : ""}
           ${
-            book["author"] ? `<p class="sub-meta">By ${book["author"]}</p>` : ""
+            book["author"] ? `<span class="sub-meta">By ${book["author"]}</span>` : ""
           }
           ${
             book["favorite"]
-              ? `<p class="sub-meta favorite">${ICON_MAP["heart"]} This is one of my favorite books!</p>`
+              ? `<span class="sub-meta favorite">${ICON_MAP["heart"]} This is one of my favorite books!</span>`
               : ""
           }
           ${
             book["tattoo"]
-              ? `<p class="sub-meta tattoo">${ICON_MAP["needle"]} I have a tattoo inspired by this book!</p>`
+              ? `<span class="sub-meta tattoo">${ICON_MAP["needle"]} I have a tattoo inspired by this book!</span>`
               : ""
           }
-          ${status ? `<p class="sub-meta">${status}</p>` : ""}
+          ${status ? `<span class="sub-meta">${status}</span>` : ""}
         </div>
       </div>
       ${
@@ -373,7 +373,7 @@ export const generateGenreHTML = (genre) => {
   const mediaLinks = generateMediaLinks(genre["artists"], "artist", 5);
 
   return `
-    <a class="icon-link" href="/music">${
+    <a href="/music">${
       ICON_MAP["arrowLeft"]
     } Back to music</a>
     <h2>${genre["name"]}</h2>
@@ -411,21 +411,21 @@ export const generateWatchingHTML = (media, globals, type) => {
     media["last_watched"] || (isShow && media["episode"]?.["last_watched_at"]);
 
   return `
-    <a class="icon-link" href="/watching">${
+    <a href="/watching">${
       ICON_MAP.arrowLeft
     } Back to watching</a>
     <article class="watching focus">
       <img
         srcset="
           ${globals["cdn_url"]}${
-    media["backdrop"]
-  }?class=bannersm&type=webp 256w,
-          ${globals["cdn_url"]}${
-    media["backdrop"]
-  }?class=bannermd&type=webp 512w,
-          ${globals["cdn_url"]}${
-    media["backdrop"]
-  }?class=bannerbase&type=webp 1024w
+            media["backdrop"]
+          }?class=bannersm&type=webp 256w,
+                  ${globals["cdn_url"]}${
+            media["backdrop"]
+          }?class=bannermd&type=webp 512w,
+                  ${globals["cdn_url"]}${
+            media["backdrop"]
+          }?class=bannerbase&type=webp 1024w
         "
         sizes="(max-width: 450px) 256px,
           (max-width: 850px) 512px,
@@ -438,31 +438,31 @@ export const generateWatchingHTML = (media, globals, type) => {
         width="256"
         height="180"
       />
-      <div class="meta">
-        <p class="title"><strong>${media["title"]}</strong> (${
+      <div class="media-meta">
+        <span class="title"><strong>${media["title"]}</strong> (${
     media["year"]
-  })</p>
-        ${media["rating"] ? `<p>${media["rating"]}</p>` : ""}
+  })</span>
+        ${media["rating"] ? `<span>${media["rating"]}</span>` : ""}
         ${
           media["favorite"]
-            ? `<p class="sub-meta favorite">${ICON_MAP["heart"]} This is one of my favorite ${label}s!</p>`
+            ? `<span class="sub-meta favorite">${ICON_MAP["heart"]} This is one of my favorite ${label}s!</span>`
             : ""
         }
         ${
           media["tattoo"]
-            ? `<p class="sub-meta tattoo">${ICON_MAP["needle"]} I have a tattoo inspired by this ${label}!</p>`
+            ? `<span class="sub-meta tattoo">${ICON_MAP["needle"]} I have a tattoo inspired by this ${label}!</span>`
             : ""
         }
         ${
           media["collected"]
-            ? `<p class="sub-meta collected">${ICON_MAP["circleCheck"]} This ${label} is in my collection!</p>`
+            ? `<span class="sub-meta collected">${ICON_MAP["circleCheck"]} This ${label} is in my collection!</span>`
             : ""
         }
         ${
           lastWatched
-            ? `<p class="sub-meta">Last watched on <strong class="highlight-text">${formatDate(
+            ? `<span class="sub-meta">Last watched on <strong class="highlight-text">${formatDate(
                 lastWatched
-              )}</strong>.</p>`
+              )}</strong>.</span>`
             : ""
         }
       </div>

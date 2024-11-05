@@ -22,7 +22,7 @@ schema: watching
 </h3>
 {% render "media/grid.liquid", globals:globals, data:tv.recentlyWatched, shape:"vertical", count: 6 %}
 <h3 id="favorite-movies">
-  <a class="icon-link" href="/watching/favorite-movies">
+  <a href="/watching/favorite-movies">
     {% tablericon "star" %}
     Favorite movies
   </a>
@@ -30,7 +30,7 @@ schema: watching
 {% assign favoriteMovies = movies.favorites | shuffleArray %}
 {% render "media/grid.liquid", globals:globals, data:favoriteMovies, shape:"vertical", count: 6 %}
 <h3 id="favorite-shows">
-  <a class="icon-link" href="/watching/favorite-shows">
+  <a href="/watching/favorite-shows">
     {% tablericon "star" %}
     Favorite shows
   </a>

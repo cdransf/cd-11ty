@@ -1,0 +1,19 @@
+.media-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+
+  & .title {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-md);
+  }
+
+  & .sub-meta {
+    font-size: var(--font-size-sm);
+
+    & svg {
+      width: var(--sizing-svg-sm);
+      height: var(--sizing-svg-sm);
+    }
+  }
+}

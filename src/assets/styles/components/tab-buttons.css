@@ -1,7 +1,7 @@
 #tracks-recent,
 #tracks-chart,
-#tracks-recent ~ .tracks-recent,
-#tracks-chart ~ .tracks-chart {
+.tracks-recent,
+.tracks-chart {
   display: none;
 }
 
@@ -15,7 +15,7 @@ input[id="tracks-chart"] ~ .tracks-chart {
   margin-top: var(--spacing-base);
 }
 
-input[id="tracks-recent"] ~ [for="tracks-recent"]:has(+ [for="tracks-chart"]) {
+[for="tracks-recent"] {
   margin-right: var(--spacing-xs);
 }
 

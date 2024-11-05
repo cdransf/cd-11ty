@@ -1,16 +1,16 @@
 .link-grid {
   display: grid;
   gap: var(--spacing-sm);
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: var(--grid-columns-one);
   margin-bottom: var(--spacing-base);
 
   @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: var(--grid-columns-two);
   }
 
   & .link-box {
     border: var(--border-gray);
     border-radius: var(--border-radius-slight);
-    padding: var(--spacing-xs) var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
   }
 }

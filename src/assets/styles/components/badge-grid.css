@@ -14,5 +14,7 @@
 
   & img {
     image-rendering: pixelated;
+    border: none;
+    border-radius: 0;
   }
 }

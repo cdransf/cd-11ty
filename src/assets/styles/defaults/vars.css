@@ -37,13 +37,13 @@
   );
   --accent-color: light-dark(var(--blue-400), var(--blue-200));
   --accent-color-hover: light-dark(var(--blue-600), var(--blue-100));
+  --accent-color-active: light-dark(var(--blue-600), var(--blue-100));
 
-  --brand-buy-me-a-coffee: #ff5f5f;
+  --brand-buy-me-a-coffee: light-dark(#0d0c22, #ffdd00);
   --brand-github: light-dark(#333, #f5f5f5);
   --brand-fastmail: light-dark(#0067b9, #ffc107);
-  --brand-listenbrainz: #e97941;
-  --brand-mastodon: #6364ff;
-  --brand-npm: #cc3534;
+  --brand-mastodon: light-dark(#563acc, #858afa);
+  --brand-npm: #cb3837;
   --brand-rss: #f26522;
 
   --article: light-dark(#007272, #00ffff);
@@ -149,7 +149,7 @@
   --inline-margin-bottom: -5px;
 
   /* shadows */
-  --box-shadow-media: inset 0 -85px 60px -40px var(--gray-900);
+  --box-shadow-media: inset 0 -85px 60px -40px var(--color-darkest);
   --box-shadow-text-toggle: inset 0 -120px 60px -60px var(--background-color);
   --text-shadow-default: rgba(0, 0, 0, 0.7) 0px 0px 10px;
 

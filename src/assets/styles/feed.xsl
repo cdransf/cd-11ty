@@ -54,7 +54,7 @@
                     </h3>
                     <xsl:value-of select="description" disable-output-escaping="yes" />
                     <xsl:if test="enclosure">
-                      <img src="{enclosure/@url}" alt="{title}" />
+                      <img class="image-banner" src="{enclosure/@url}" alt="{title}" />
                     </xsl:if>
                   </div>
                 </xsl:for-each>

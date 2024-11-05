@@ -11,7 +11,6 @@ a:active > .watching.hero::after {
 
     & img {
       aspect-ratio: var(--aspect-ratio-banner);
-      border-radius: var(--border-radius-slight);
       height: auto;
       width: 100%;
     }
@@ -62,33 +61,8 @@ a:active > .watching.hero::after {
     margin-top: var(--spacing-base);
     border-bottom: 0;
 
-    & img {
-      aspect-ratio: var(--aspect-ratio-banner);
-    }
-
-    & .meta {
-      display: flex;
-      flex-direction: column;
-      gap: var(--spacing-sm);
+    & .media-meta {
       margin: var(--margin-vertical-base-horizontal-zero);
-
-      & p {
-        margin: 0;
-
-        &.title {
-          font-size: var(--font-size-xl);
-          line-height: var(--line-height-md);
-        }
-
-        &.sub-meta {
-          font-size: var(--font-size-sm);
-
-          & svg {
-            width: var(--sizing-svg-sm);
-            height: var(--sizing-svg-sm);
-          }
-        }
-      }
     }
 
     & .footnotes {
@@ -97,6 +71,6 @@ a:active > .watching.hero::after {
   }
 }
 
-.icon-link + .poster.grid {
+a + .poster.grid {
   margin-top: var(--spacing-base);
 }

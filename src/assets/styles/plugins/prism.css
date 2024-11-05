@@ -1,9 +1,15 @@
+code {
+  padding: var(--spacing-xs);
+  color: var(--text-color-inverted);
+  background-color: var(--background-color-inverted);
+  border-radius: var(--border-radius-slight);
+}
+
 code,
 pre {
   color: var(--blue-100);
   background: none;
   border-radius: var(--border-radius-slight);
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   font-family: var(--font-mono);
   text-align: left;
   white-space: pre;
@@ -32,8 +38,8 @@ pre {
 
 pre,
 :not(pre) > code {
-  background: var(--gray-900);
-  border: 1px solid var(--gray-300);
+  background: var(--color-darkest);
+  border: var(--border-gray);
 }
 
 .namespace {

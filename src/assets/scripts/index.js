@@ -153,23 +153,19 @@ window.addEventListener("load", () => {
         : plainText;
     };
 
-    const formatArtistTitle = (title, totalPlays) =>
-      totalPlays > 0
-        ? `${title} <strong class="highlight-text">${totalPlays} plays</strong>`
-        : title;
-
     const renderSearchResults = (results) => {
       const resultHTML = results
         .map(
           ({ title, url, description, type, total_plays }) => `
           <li class="search__results--result">
-            <a href="${url}">
-              <h3>${
-                type === "artist" && total_plays
-                  ? formatArtistTitle(title, total_plays)
-                  : title
-              }</h3>
-            </a>
+              <h3>
+                <a href="${url}">${title}</a>
+                ${
+                  type === "artist" && total_plays
+                    ? ` <strong class="highlight-text">${total_plays} plays</strong>`
+                    : ""
+                }
+              </h3>
             <p>${truncateDescription(description)}</p>
           </li>
         `
@@ -225,13 +221,14 @@ window.addEventListener("load", () => {
         .map(
           ({ title, url, description, type, total_plays }) => `
           <li class="search__results--result">
-            <a href="${url}">
-              <h3>${
+            <h3>
+              <a href="${url}">${title}</a>
+              ${
                 type === "artist" && total_plays
-                  ? formatArtistTitle(title, total_plays)
-                  : title
-              }</h3>
-            </a>
+                  ? ` <strong class="highlight-text">${total_plays} plays</strong>`
+                  : ""
+              }
+            </h3>
             <p>${truncateDescription(description)}</p>
           </li>
         `
