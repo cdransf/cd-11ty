@@ -231,7 +231,7 @@ export const generateArtistHTML = (artist, globals) => {
     : "";
 
   return `
-    <a href="/music">${ICON_MAP.arrowLeft} Back to music</a>
+    <a href="/music" class="back-link">${ICON_MAP.arrowLeft} Back to music</a>
     <article class="artist-focus">
       <div class="artist-display">
         <img
@@ -301,17 +301,17 @@ export const generateBookHTML = (book, globals) => {
   const percentage = book["progress"] ? `${book["progress"]}%` : "";
   const status =
     book["status"] === "finished"
-      ? `Finished on <strong class="highlight-text">${formatDate(
+      ? `<span class="sub-meta">Finished on <strong class="highlight-text">${formatDate(
           book["date_finished"]
-        )}</strong>`
+        )}</strong></span>`
       : percentage
       ? `<div class="progress-bar-wrapper" title="${percentage}">
-        <div style="width:${percentage}" class="progress-bar"></div>
+        <div class="progress-bar" style="width:${percentage}"></div>
       </div>`
       : "";
 
   return `
-    <a href="/books">${
+    <a href="/books" class="back-link">${
       ICON_MAP["arrowLeft"]
     } Back to books</a>
     <article class="book-focus">
@@ -352,7 +352,7 @@ export const generateBookHTML = (book, globals) => {
               ? `<span class="sub-meta tattoo">${ICON_MAP["needle"]} I have a tattoo inspired by this book!</span>`
               : ""
           }
-          ${status ? `<span class="sub-meta">${status}</span>` : ""}
+          ${status ? status : ""}
         </div>
       </div>
       ${
@@ -373,7 +373,7 @@ export const generateGenreHTML = (genre) => {
   const mediaLinks = generateMediaLinks(genre["artists"], "artist", 5);
 
   return `
-    <a href="/music">${
+    <a href="/music" class="back-link">${
       ICON_MAP["arrowLeft"]
     } Back to music</a>
     <h2>${genre["name"]}</h2>
@@ -411,7 +411,7 @@ export const generateWatchingHTML = (media, globals, type) => {
     media["last_watched"] || (isShow && media["episode"]?.["last_watched_at"]);
 
   return `
-    <a href="/watching">${
+    <a href="/watching" class="back-link">${
       ICON_MAP.arrowLeft
     } Back to watching</a>
     <article class="watching focus">

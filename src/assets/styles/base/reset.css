@@ -86,10 +86,6 @@ ol {
 	overflow-wrap: break-word;
 }
 
-:where(h1, h2, h3) {
-	text-wrap: balance;
-}
-
 :where(hr) {
 	border: none;
 	border-block-start: 1px solid;

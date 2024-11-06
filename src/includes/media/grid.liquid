@@ -6,7 +6,7 @@
     {%- assign alt = item.grid.alt | replaceQuotes -%}
     {%- assign imageUrl = item.grid.image -%}
     <a href="{{ item.grid.url }}" title="{{ alt }}">
-      <div class="item">
+      <div class="item media-overlay">
         <div class="meta-text">
           <div class="header">{{ item.grid.title }}</div>
           <div class="subheader">{{ item.grid.subtext }}</div>

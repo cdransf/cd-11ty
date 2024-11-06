@@ -1,76 +1,29 @@
-a:hover > .watching.hero::after,
-a:active > .watching.hero::after {
-  border-color: var(--accent-color-hover);
-}
+.watching.hero {
+  position: relative;
 
-.watching {
-  &.hero {
-    position: relative;
-    display: flex;
+  & img {
     aspect-ratio: var(--aspect-ratio-banner);
-
-    & img {
-      aspect-ratio: var(--aspect-ratio-banner);
-      height: auto;
-      width: 100%;
-    }
-
-    & .meta-text {
-      color: white;
-      position: absolute;
-      left: var(--spacing-sm);
-      bottom: var(--spacing-sm);
-      z-index: 2;
-      display: flex;
-      flex-direction: column;
-
-      & .header {
-        font-weight: var(--font-weight-bold);
-      }
-
-      & .subheader {
-        font-size: var(--font-size-sm);
-        display: inline-flex;
-        gap: var(--spacing-xs);
-      }
-
-      & .header,
-      & .subheader {
-        line-height: var(--line-height-md);
-        text-shadow: var(--text-shadow-default);
-      }
-    }
-
-    &::after {
-      position: absolute;
-      z-index: 1;
-      content: "";
-      top: 0;
-      left: 0;
-      box-shadow: var(--box-shadow-media);
-      width: 100%;
-      height: 100%;
-      border: var(--border-default);
-      border-radius: var(--border-radius-slight);
-      transition: border-color var(--transition-duration-default)
-        var(--transition-ease-in-out);
-    }
   }
 
-  &.focus {
-    margin-top: var(--spacing-base);
-    border-bottom: 0;
+  & .meta-text {
+    color: var(--color-lightest);
+    position: absolute;
+    z-index: 2;
+    left: var(--spacing-sm);
+    bottom: var(--spacing-sm);
 
-    & .media-meta {
-      margin: var(--margin-vertical-base-horizontal-zero);
+    & .header {
+      font-weight: var(--font-weight-bold);
     }
 
-    & .footnotes {
-      padding-bottom: 0;
+    & .subheader {
+      font-size: var(--font-size-sm);
+    }
+
+    & .header,
+    & .subheader {
+      line-height: var(--line-height-md);
+      text-shadow: var(--text-shadow-default);
     }
   }
-}
-
-a + .poster.grid {
-  margin-top: var(--spacing-base);
 }

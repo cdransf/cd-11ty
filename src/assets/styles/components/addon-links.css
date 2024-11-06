@@ -1,5 +1,4 @@
 .addon-links {
-  margin-top: var(--spacing-base);
   display: grid;
   gap: var(--sizing-base);
   grid-template-columns: var(--grid-columns-one);
@@ -8,17 +7,8 @@
     grid-template-columns: var(--grid-columns-two);
   }
 
-  h3 {
-    margin-top: 0;
-  }
-
   & article {
     border-bottom: 0;
     margin-bottom: 0;
-
-    & ul,
-    & ol {
-      margin-bottom: 0;
-    }
   }
 }

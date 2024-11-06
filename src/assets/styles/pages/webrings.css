@@ -1,8 +1,11 @@
-.webring-wrapper {
+.webring-wrapper,
+.webring-navigation {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+
+.webring-wrapper {
+  flex-direction: column;
   text-align: center;
   margin: var(--margin-vertical-base-horizontal-zero);
 
@@ -11,13 +14,7 @@
   }
 
   & .webring-navigation {
-    display: flex;
-    align-items: center;
     justify-content: center;
     gap: var(--spacing-sm);
-
-    & a {
-      display: flex;
-    }
   }
 }

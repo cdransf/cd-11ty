@@ -1,11 +1,11 @@
 @layer reset, defaults, base, page, components, plugins;
 
 /* style resets */
-@import url("./reset.css") layer(reset);
+@import url("./base/reset.css") layer(reset);
 
 /* core defaults */
-@import url("./defaults/fonts.css") layer(defaults);
-@import url("./defaults/vars.css") layer(defaults);
+@import url("./base/fonts.css") layer(defaults);
+@import url("./base/vars.css") layer(defaults);
 
 /* base styles */
 @import url("./base/index.css") layer(base);

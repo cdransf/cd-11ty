@@ -11,7 +11,7 @@ permalink: "/music/concerts/{% if pagination.pageNumber > 0 %}{{ pagination.page
 <p>These are concerts I've attended (not all of them — just the ones I could remember or glean from emails, photo metadata et al). I've been to at least <strong class="highlight-text">{{ concerts | size }}</strong> shows. <a href="/music">You can also take a look at the music I've been listening to lately</a>.</p>
 <hr />
 {%- endif -%}
-<ul class="concert-list">
+<ul>
   {%- for concert in pagination.items -%}
     {%- capture artistName -%}
       {% if concert.artist.url %}

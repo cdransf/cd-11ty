@@ -87,6 +87,7 @@ img {
     border: var(--border-default);
     height: auto;
     width: 100%;
+    margin: var(--margin-vertical-base-horizontal-zero);
   }
 }
 
@@ -208,6 +209,10 @@ ol {
 a {
   color: var(--accent-color);
 
+  &.back-link {
+    margin-bottom: var(--spacing-base);
+  }
+
   & > img {
     border: var(--border-default);
   }
@@ -216,15 +221,13 @@ a {
     stroke: var(--accent-color);
   }
 
-  &:hover,
-  &:focus,
-  &:active {
+  &:is(:hover, :focus, :active) {
     color: var(--accent-color-hover);
     transition: color var(--transition-duration-default)
       var(--transition-ease-in-out);
 
     & > img {
-      border-color: var(--accent-color-hover);
+      border: var(--border-default-hover);
       transition: border var(--transition-duration-default)
         var(--transition-ease-in-out);
     }
@@ -285,14 +288,17 @@ hr {
 /* articles */
 article {
   margin-bottom: var(--spacing-base);
-  border-bottom: var(--border-gray);
 
-  &:last-of-type {
-    border-bottom: 0;
+  &:not([class], :last-of-type) {
+    border-bottom: var(--border-gray);
   }
 
-  &.intro p {
-    margin-top: 0;
+  &.intro {
+    border-bottom: var(--border-gray);
+
+    & p {
+      margin-top: 0;
+    }
   }
 
   & h3 {
@@ -313,27 +319,6 @@ article {
   }
 }
 
-p + .associated-media,
-img + .associated-media,
-.banner + .associated-media {
-  margin-top: var(--spacing-base);
-  border-top: var(--border-gray);
-}
-
-.footnotes {
-  & .footnotes-list {
-    margin-bottom: 0;
-
-    & li:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &:has(~ *) {
-    margin-bottom: var(--spacing-base);
-  }
-}
-
 sup.footnote-ref {
   line-height: var(--line-height-xs);
   padding: var(--spacing-xs);
@@ -348,6 +333,7 @@ table {
   white-space: nowrap;
   caption-side: bottom;
   overscroll-behavior: none;
+  margin: var(--margin-vertical-base-horizontal-zero);
 }
 
 table,
@@ -441,12 +427,8 @@ td:first-of-type,
 .default-wrapper {
   padding-top: var(--spacing-2xl);
 
-  & > h2 {
+  & > h2:first-child {
     margin-top: 0;
-  }
-
-  & > a + h2 {
-    margin-top: var(--spacing-base);
   }
 }
 

@@ -5,14 +5,11 @@ youtube-video {
   overflow: hidden;
   border: var(--border-default);
   border-radius: var(--border-radius-slight);
+  margin: var(--margin-vertical-base-horizontal-zero);
 
   &:hover {
-    border-color: var(--accent-color-hover);
+    border: var(--border-default-hover);
     transition: border var(--transition-duration-default)
       var(--transition-ease-in-out);
-  }
-
-  &:has(+ *) {
-    margin-bottom: var(--spacing-base);
   }
 }

@@ -66,6 +66,7 @@
 
   /* borders */
   --border-default: 1px solid var(--accent-color);
+  --border-default-hover: 1px solid var(--accent-color-hover);
   --border-gray: 1px solid var(--gray-light);
 
   /* fonts */

@@ -20,8 +20,4 @@
       left: 0;
     }
   }
-
-  & + button[data-toggle-button]:has(+ *) {
-    margin: 0 0 var(--spacing-base);
-  }
 }

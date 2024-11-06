@@ -32,9 +32,7 @@ input[id="tracks-chart"] ~ .tracks-chart {
   background: transparent;
 }
 
-#tracks-recent:not(:checked) ~ [for="tracks-recent"]:hover,
-#tracks-recent:not(:checked) ~ [for="tracks-recent"]:active,
-#tracks-chart:not(:checked) ~ [for="tracks-chart"]:hover,
-#tracks-chart:not(:checked) ~ [for="tracks-chart"]:active {
+#tracks-recent:not(:checked) ~ [for="tracks-recent"]:is(:hover, :active),
+#tracks-chart:not(:checked) ~ [for="tracks-chart"]:is(:hover, :active) {
   color: var(--accent-color-hover);
 }

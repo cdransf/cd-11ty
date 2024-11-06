@@ -10,7 +10,6 @@
     Recent activity
   </h2>
   <ul>
-    <li><span class="music">Last track listened to:</span> {% render "blocks/now-playing.liquid", nowPlaying:nowPlaying %}</li>
     <li><span class="music">Top track this week:</span> {{ track.track_name }} by <a href="{{ track.artist_url }}">{{ track.artist_name }}</a></li>
     <li><span class="tv">Last episode watched:</span> <strong class="highlight-text">{{ show.formatted_episode }}</strong> of <a href="{{ show.url }}">{{ show.title }}</a></li>
     <li><span class="movies">Last movie watched:</span> <a href="{{ movie.url }}">{{ movie.title }}</a>{%- if movie.rating %} ({{ movie.rating }}){%- endif -%}</li>

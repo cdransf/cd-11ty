@@ -7,14 +7,11 @@
     &:not(:last-of-type) {
       border-bottom: var(--border-gray);
       margin-bottom: var(--spacing-base);
-      padding-bottom: var(--spacing-base);
     }
 
-    & .date {
-      display: block;
+    & time {
       color: var(--gray-dark);
       font-size: var(--font-size-sm);
-      margin-bottom: 0;
     }
 
     & h3 {
@@ -26,21 +23,15 @@
     }
   }
 
-  & p {
-    &:first-of-type {
-      margin-top: 0;
-    }
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-
   & ol > li p {
     display: inline;
   }
 
   & footer {
     padding-bottom: var(--spacing-3xl);
+
+    & hr {
+      margin-top: 0;
+    }
   }
 }

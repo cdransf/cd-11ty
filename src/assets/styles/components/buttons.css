@@ -17,12 +17,12 @@ button,
   transition: color var(--transition-duration-default)
     var(--transition-ease-in-out);
 
-  & + hr {
-    margin-top: 0;
-  }
-
   &:not(.active):is(:hover, :active, :focus, :focus-within) {
     background-color: var(--accent-color-hover);
-    border-color: var(--accent-color-hover);
+    border: 2px solid var(--accent-color-hover);
+    transition: background-color var(--transition-duration-default)
+        var(--transition-ease-in-out),
+      border var(--transition-duration-default) var(--transition-ease-in-out),
+      color var(--transition-duration-default) var(--transition-ease-in-out);
   }
 }

@@ -1,6 +1,6 @@
 .mastodon-post-wrapper {
   & dl,
-  dt {
+  & dt {
     display: flex;
   }
 

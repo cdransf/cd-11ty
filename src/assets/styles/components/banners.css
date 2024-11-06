@@ -1,15 +1,6 @@
-* + .banner,
-:not(* + .banner) .banner:first-of-type {
-  margin-top: var(--spacing-base);
-}
-
-.banner:has(+ *),
-:not(* + .banner) .banner:last-of-type {
-  margin-bottom: var(--spacing-base);
-}
-
 .banner {
   padding: var(--spacing-md);
+  margin: var(--margin-vertical-base-horizontal-zero);
   border: 1px solid;
   border-radius: var(--border-radius-slight);
 
@@ -62,9 +53,7 @@
 
     border-color: var(--banner-accent-color);
 
-    & p a:hover,
-    & p a:active,
-    & p a:focus {
+    & p a:is(:hover, :active, :focus) {
       color: var(--banner-accent-color);
     }
 

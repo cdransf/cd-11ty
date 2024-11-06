@@ -1,23 +1,12 @@
-.artist-focus,
-.genre-focus {
-  border-bottom: 0;
-}
-
-.genre-focus [data-toggle-content] p:last-of-type {
-  font-size: var(--font-size-sm);
-}
-
 .artist-focus {
-  margin-top: var(--spacing-base);
-
   & img {
     border: var(--border-default);
+    aspect-ratio: var(--aspect-ratio-square);
     width: 100%;
     height: auto;
-    aspect-ratio: var(--aspect-ratio-square);
 
     @media screen and (min-width: 768px) {
-      max-width: 240px;
+      max-width: calc(var(--sizing-3xl) * 6.75);
     }
   }
 
@@ -43,11 +32,6 @@
 
   & table + p {
     font-size: var(--font-size-sm);
-    margin-top: var(--spacing-base);
-    margin-bottom: 0;
+    margin: var(--spacing-base) 0 0;
   }
-}
-
-.concert-list {
-  margin-top: 0;
 }

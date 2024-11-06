@@ -24,26 +24,28 @@
               </h1>
             </section>
             <div class="default-wrapper">
-              <p>
-                <xsl:value-of select="/rss/channel/description" />
-              </p>
-              <p>
-                <strong class="highlight-text">Subscribe by adding the URL below to your feed reader
-                  of choice.</strong>
-              </p>
-              <p>
-                <pre class="small">
-                  <code><xsl:value-of select="rss/channel/atom:link/@href"/></code>
-                </pre>
-              </p>
-              <p>
-                <a href="/feeds">View more of the feeds from my site.</a>
-              </p>
+              <article class="intro">
+                <p>
+                  <xsl:value-of select="/rss/channel/description" />
+                </p>
+                <p>
+                  <strong class="highlight-text">Subscribe by adding the URL below to your feed reader
+                    of choice.</strong>
+                </p>
+                <p>
+                  <pre class="small">
+                    <code><xsl:value-of select="rss/channel/atom:link/@href"/></code>
+                  </pre>
+                </p>
+                <p>
+                  <a href="/feeds">View more of the feeds from my site.</a>
+                </p>
+              </article>
               <hr />
               <section>
                 <xsl:for-each select="/rss/channel/item">
                   <div class="item">
-                    <p class="date">Published: <xsl:value-of select="pubDate" /></p>
+                    <time>Published: <xsl:value-of select="pubDate" /></time>
                     <h3>
                       <a>
                         <xsl:attribute name="href">
