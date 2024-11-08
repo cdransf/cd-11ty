@@ -1,5 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 import { fetchDataByUrl, fetchGlobals } from "./utils/fetchers.js";
+import { minifyHTML } from "./utils/formatters.js";
 import {
   generateArtistHTML,
   generateBookHTML,
@@ -67,7 +68,7 @@ export default {
     const templateResponse = await fetch(`${BASE_URL}/dynamic`);
     const template = await templateResponse.text();
     const metadata = generateMetadata(data, type, globals);
-    const html = updateDynamicContent(template, metadata, mediaHtml);
+    const html = minifyHTML(updateDynamicContent(template, metadata, mediaHtml));
     const headers = new Headers({
       "Content-Type": "text/html",
       "Cache-Control":

@@ -18,3 +18,9 @@ md.use(markdownItAnchor, {
   }),
 });
 md.use(markdownItFootnote);
+
+export const minifyHTML = (html) =>
+  html
+    .replace(/\n\s+/g, "")
+    .replace(/>\s+</g, "><")
+    .replace(/<!--.*?-->/g, "");
