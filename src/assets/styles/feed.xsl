@@ -41,7 +41,6 @@
                   <a href="/feeds">View more of the feeds from my site.</a>
                 </p>
               </article>
-              <hr />
               <section>
                 <xsl:for-each select="/rss/channel/item">
                   <div class="item">
