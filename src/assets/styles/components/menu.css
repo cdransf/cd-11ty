@@ -18,6 +18,8 @@ menu {
 
       & a,
       & .active {
+        display: flex;
+        align-items: center;
         justify-content: center;
         width: 100%;
         height: 100%;
@@ -71,11 +73,16 @@ menu {
     }
 
     &:checked ~ .menu-primary li {
-      border-bottom: var(--border-gray);
       height: calc(var(--sizing-3xl) * 1.5);
 
+      @media (max-width: 767px) {
+        border-bottom: var(--border-gray);
+      }
+
       &:first-child {
-        border-top: var(--border-gray);
+        @media (max-width: 767px) {
+          border-top: var(--border-gray);
+        }
       }
     }
   }
@@ -99,9 +106,13 @@ menu {
       left: unset;
       width: auto;
 
-      &  > li {
-        padding: 0;
+      & > li {
         background: none;
+
+        & a {
+          width: var(--sizing-svg-base);
+          height: var(--sizing-svg-base);
+        }
 
         :is(.icon, .active) > svg {
           display: block;

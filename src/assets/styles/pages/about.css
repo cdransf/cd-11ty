@@ -19,5 +19,6 @@
 }
 
 .about-title {
+  margin: var(--margin-vertical-base-horizontal-zero);
   text-align: center;
 }
