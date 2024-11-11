@@ -6,7 +6,7 @@ updated: "now"
 schema: watching
 ---
 {%- assign featuredMovie = movies.recentlyWatched | shuffleArray | first -%}
-<h2 class="watching">{{ title }}</h2>
+<h2 class="page-title">{{ title }}</h2>
 {% render "media/watching/hero.liquid", globals:globals, movie:featuredMovie %}
 <p>Here's all of the TV and movies I've been watching presented in what is (hopefully) an organized fashion.</p>
 {% render "blocks/banners/rss.liquid", url: "/feeds/movies", text: "Subscribe to my movies feed or follow along on this page" %}

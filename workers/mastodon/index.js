@@ -5,7 +5,7 @@ import { createClient } from "@supabase/supabase-js";
 const BASE_URL = "https://coryd.dev";
 
 export default {
-  async scheduled(event, env, ctx) {
+  async scheduled(event, env) {
     await handleMastodonPost(env);
   },
 };
@@ -14,8 +14,8 @@ async function handleMastodonPost(env) {
   const mastodonApiUrl = "https://follow.coryd.dev/api/v1/statuses";
   const accessToken = env.MASTODON_ACCESS_TOKEN;
   const rssFeedUrl = "https://coryd.dev/feeds/syndication";
-  const supabaseUrl = env.SUPABASE_URL || process.env.SUPABASE_URL;
-  const supabaseKey = env.SUPABASE_KEY || process.env.SUPABASE_KEY;
+  const supabaseUrl = env.SUPABASE_URL;
+  const supabaseKey = env.SUPABASE_KEY;
   const supabase = createClient(supabaseUrl, supabaseKey);
 
   try {
@@ -56,7 +56,6 @@ async function handleMastodonPost(env) {
         accessToken,
         content
       );
-
       const timestamp = new Date().toISOString();
 
       await env.RSS_TO_MASTODON_NAMESPACE.put(link, timestamp);
@@ -100,6 +99,8 @@ function truncateContent(title, description, link, maxLength) {
         .split(" ")
         .slice(0, -1)
         .join(" ") + "...";
+
+  truncatedDescription = truncatedDescription.replace(/\s+([.,!?;:])/g, "$1");
 
   return `${title}\n\n${truncatedDescription}\n\n${link}`;
 }

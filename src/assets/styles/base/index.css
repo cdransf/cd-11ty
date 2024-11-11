@@ -427,7 +427,7 @@ td:first-of-type,
 .default-wrapper {
   padding-top: var(--spacing-2xl);
 
-  & h2:first-of-type {
+  h2.page-title {
     margin-top: 0;
   }
 }

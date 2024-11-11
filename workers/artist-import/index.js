@@ -17,18 +17,16 @@ function sanitizeMediaString(str) {
 
 export default {
   async fetch(request, env) {
-    const directusUrl = env["DIRECTUS_URL"];
-    const directusToken = env["DIRECTUS_API_TOKEN"];
-    const artistImportToken = env["ARTIST_IMPORT_TOKEN"];
-    const artistFlowID = env["ARTIST_FLOW_ID"];
-    const albumFlowID = env["ALBUM_FLOW_ID"];
+    const directusUrl = env.DIRECTUS_URL;
+    const directusToken = env.DIRECTUS_API_TOKEN;
+    const artistImportToken = env.ARTIST_IMPORT_TOKEN;
+    const artistFlowID = env.ARTIST_FLOW_ID;
+    const albumFlowID = env.ALBUM_FLOW_ID;
     const placeholderImageId = "4cef75db-831f-4f5d-9333-79eaa5bb55ee";
     const requestUrl = new URL(request["url"]);
     const providedToken = requestUrl.searchParams.get("token");
 
-    if (!providedToken || providedToken !== artistImportToken) {
-      return new Response("Unauthorized", { status: 401 });
-    }
+    if (!providedToken || providedToken !== artistImportToken) return new Response("Unauthorized", { status: 401 });
 
     async function saveToDirectus(endpoint, payload) {
       const response = await fetch(`${directusUrl}/items/${endpoint}`, {

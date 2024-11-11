@@ -32,7 +32,7 @@ const fetchAlbumReleases = async () => {
     })
     .sort((a, b) => a["timestamp"] - b["timestamp"]);
 
-  const upcoming = all.filter((album) => album["release_timestamp"] > today);
+  const upcoming = all.filter((album) => album["release_timestamp"] > today && album['total_plays'] === 0);
 
   return { all, upcoming };
 };
