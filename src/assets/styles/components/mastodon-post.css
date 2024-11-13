@@ -1,17 +1,21 @@
-.mastodon-post-wrapper {
-  & dl,
-  & dt {
-    display: flex;
-  }
+mastodon-post {
+  width: 100%;
 
-  & dl {
-    align-items: center;
+  .mastodon-post-wrapper {
+    & dl,
+    & dt {
+      display: flex;
+    }
 
-    & dd {
-      margin-left: var(--spacing-xs);
+    & dl {
+      align-items: center;
 
-      &:not(:last-child) {
-        margin-right: var(--spacing-lg);
+      & dd {
+        margin-left: var(--spacing-xs);
+
+        &:not(:last-child) {
+          margin-right: var(--spacing-lg);
+        }
       }
     }
   }

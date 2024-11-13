@@ -33,7 +33,7 @@
             <li>
               <a href="{{ item.url }}">{{ item.title | default: item.name }}</a>
               {% if key == "artists" and item.total_plays > 0 %}
-                : <strong class="highlight-text">
+                <strong class="highlight-text">
                   {{ item.total_plays }} {{ item.total_plays | pluralize: "play" }}
                 </strong>
               {% elsif key == "books" %}

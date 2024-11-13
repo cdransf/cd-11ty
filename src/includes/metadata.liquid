@@ -29,11 +29,11 @@
     {%- assign ogImage = globals.cdn_url | append: featuredShow.grid.backdrop -%}
 {%- endcase -%}
 {%- assign escapedPageDescription = pageDescription | escape -%}
-<title data-dynamic="title">{{ pageTitle }}</title>
+<title>{{ pageTitle }}</title>
 <link rel="canonical" href="{{ fullUrl }}" />
-<meta property="og:title" content="{{ pageTitle }}" data-dynamic="og:title" />
-<meta name="description" content="{{ escapedPageDescription }}" data-dynamic="description" />
-<meta property="og:description" content="{{ escapedPageDescription }}" data-dynamic="og:description" />
+<meta property="og:title" content="{{ pageTitle }}" />
+<meta name="description" content="{{ escapedPageDescription }}" />
+<meta property="og:description" content="{{ escapedPageDescription }}" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="{{ fullUrl }}" data-dynamic="og:url" />
-<meta property="og:image" content="{{ ogImage }}?class=w800" data-dynamic="og:image" />
+<meta property="og:url" content="{{ fullUrl }}" />
+<meta property="og:image" content="{{ ogImage }}?class=w800" />
