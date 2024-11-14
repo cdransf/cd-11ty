@@ -9,11 +9,6 @@ html {
   scrollbar-color: var(--accent-color) var(--gray-light);
 }
 
-body {
-  letter-spacing: -0.035rem;
-  word-spacing: -0.15rem;
-}
-
 ::-webkit-scrollbar {
   width: var(--sizing-md);
 }
