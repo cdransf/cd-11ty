@@ -1,9 +1,3 @@
-{%- assign updateTime = "" -%}
-{%- if updated == "now" -%}
-  {%- assign updateTime = 'now' | date: "%B %-d, %l:%M %P", "America/Los_Angeles" -%}
-{%- elsif page.updated -%}
-  {%- assign updateTime = page.updated | date: "%B %-d, %l:%M %P", "America/Los_Angeles" -%}
-{%- endif -%}
 <!doctype html>
 <html lang="{{ globals.lang }}">
   <head>
@@ -14,17 +8,19 @@
     <link rel="preload" href="/assets/fonts/mlb.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="stylesheet" href="/assets/styles/index.css?v={% appVersion %}" type="text/css" />
     {% render "metadata.liquid",
+      schema: schema,
+      page: page,
       globals:globals,
-      schema:schema,
-      title:title,
-      page:page,
       post:post,
-      year:year,
-      music:music,
+      artist:artist,
+      movie:movie,
+      movies:movies,
+      show:show,
+      tv:tv,
+      book:book,
       books:books,
-      featuredMovie:featuredMovie,
-      featuredShow:featuredShow,
-      featuredBook:featuredBook,
+      genre:genre,
+      year:year
     %}
     <meta name="theme-color" content="{{ globals.theme_color }}" />
     <meta name="fediverse:creator" content="{{ globals.mastodon }}" />
@@ -35,7 +31,7 @@
     <link href="{{ globals.cdn_url }}{{ globals.avatar }}?class=w800&v={% appVersion %}" rel="apple-touch-icon" />
     <link type="application/atom+xml" rel="alternate" title="Posts / {{ globals.site_name }}" href="https://coryd.dev/feeds/posts" />
     <link rel="alternate" href="https://coryd.dev/feeds/links" title="Links / {{ globals.site_name }}" type="application/rss+xml" />
-    <link rel="alternate" href="https://coryd.dev/feeds/movies" title="Movies / {{ globals.site_name }}'s movies feed" type="application/rss+xml" />
+    <link rel="alternate" href="https://coryd.dev/feeds/movies" title="Movies / {{ globals.site_name }}" type="application/rss+xml" />
     <link rel="alternate" href="https://coryd.dev/feeds/books" title="Books / {{ globals.site_name }}" type="application/rss+xml" />
     <link rel="alternate" href="https://coryd.dev/feeds/album-releases" title="Album releases / {{ globals.site_name }}" type="application/rss+xml" />
     <link rel="alternate" href="https://coryd.dev/feeds/all" title="All activity / {{ globals.site_name }}" type="application/rss+xml" />
@@ -54,7 +50,12 @@
           {{ content }}
         </div>
       </main>
-      {% render "footer.liquid", page:page, nav:nav, updated:updateTime %}
+      {% render "footer.liquid",
+        page:page,
+        nav:nav,
+        updated:updated,
+        pageUpdated:page.updated
+      %}
     </div>
   </body>
 </html>
