@@ -1,9 +1,0 @@
-.feed {
-  .main-title h1 {
-    white-space: normal;
-  }
-
-  footer {
-    border-top: var(--border-gray);
-  }
-}

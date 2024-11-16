@@ -254,6 +254,10 @@ h1 {
 
 h2 {
   font-size: var(--font-size-xl);
+
+  &.page-header {
+    margin-top: 0;
+  }
 }
 
 h3 {
@@ -421,10 +425,6 @@ td:first-of-type,
 /* layout */
 .default-wrapper {
   padding-top: var(--spacing-2xl);
-
-  h2.page-title {
-    margin-top: 0;
-  }
 }
 
 .main-wrapper {

@@ -1,3 +1,6 @@
+---
+permalink: /assets/styles/feed.xsl
+---
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:atom="http://www.w3.org/2005/Atom">
@@ -16,14 +19,11 @@
       <body class="feed">
         <div class="main-wrapper">
           <main>
-            <section class="main-title">
-              <h1>
-                <a href="/feeds" tabindex="0">
-                  <xsl:value-of select="/rss/channel/title" />
-                </a>
-              </h1>
-            </section>
+            {% render "header.liquid", globals:globals, page:page, nav:nav %}
             <div class="default-wrapper">
+              <h2 class="page-header">
+                <xsl:value-of select="/rss/channel/title" />
+              </h2>
               <article class="intro">
                 <p>
                   <xsl:value-of select="/rss/channel/description" />
@@ -62,12 +62,12 @@
               </section>
             </div>
           </main>
-          <footer>
-            <p>Subscribe by adding <code>
-                <xsl:value-of select="rss/channel/atom:link/@href" />
-              </code> to your
-              feed reader of choice.</p>
-          </footer>
+          {% render "footer.liquid",
+            page:page,
+            nav:nav,
+            updated:updated,
+            pageUpdated:page.updated
+          %}
         </div>
       </body>
     </html>
