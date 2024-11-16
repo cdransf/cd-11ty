@@ -255,7 +255,7 @@ h1 {
 h2 {
   font-size: var(--font-size-xl);
 
-  &.page-header {
+  &.page-title {
     margin-top: 0;
   }
 }

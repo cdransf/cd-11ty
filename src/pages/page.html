@@ -3,7 +3,6 @@ pagination:
   data: pages
   size: 1
   alias: page
-description: "{{ page.description }}"
 permalink: "{{ page.permalink }}.html"
 image: "{{ page.open_graph_image | prepend: globals.cdn_url | default: globals.avatar }}"
 updated: "{{ page.updated | default: null }}"
