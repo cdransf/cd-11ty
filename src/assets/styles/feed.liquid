@@ -9,12 +9,18 @@ permalink: /assets/styles/feed.xsl
     <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
       <head>
         <title>
-          <xsl:value-of select="/rss/channel/title" />
+          <xsl:value-of select="/rss/channel/title" /> / {{ globals.site_name }}
         </title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta name="color-scheme" content="light dark" />
-        <link rel="stylesheet" href="/assets/styles/index.css" type="text/css" />
+        <meta name="theme-color" content="{{ globals.theme_color }}" />
+        <meta name="fediverse:creator" content="{{ globals.mastodon }}" />
+        <meta name="generator" content="Eleventy" />
+        <meta name="robots" content="noai, noimageai" />
+        <link rel="preload" href="/assets/fonts/ml.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+        <link rel="preload" href="/assets/fonts/mlb.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/styles/index.css?v={% appVersion %}" type="text/css" />
       </head>
       <body class="feed">
         <div class="main-wrapper">

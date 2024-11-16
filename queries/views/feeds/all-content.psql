@@ -57,7 +57,7 @@ SELECT
                 m.review
             ELSE
                 m.description
-            END, 'image', m.image, 'rating', m.rating, 'date', m.last_watched)
+            END, 'image', m.backdrop, 'rating', m.rating, 'date', m.last_watched)
     ELSE
         NULL
     END AS feed

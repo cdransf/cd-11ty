@@ -87,7 +87,7 @@ CASE WHEN m.star_rating IS NOT NULL
       m.review
     ELSE
       m.description
-    END, 'image', CONCAT('/', df.filename_disk), 'rating', m.star_rating)
+    END, 'image', CONCAT('/', df2.filename_disk), 'rating', m.star_rating)
 ELSE
   NULL
 END AS feed
