@@ -78,7 +78,11 @@ json_build_object('title', CONCAT(b.title, ' by ', b.author), 'image', CONCAT('/
   END) AS grid,
 CASE WHEN LOWER(b.read_status) = 'finished'
   AND b.star_rating IS NOT NULL THEN
-  json_build_object('title', b.title, 'url', CONCAT('https://coryd.dev', b.slug), 'date', b.date_finished, 'description', b.description, 'image', CONCAT('/', df.filename_disk), 'rating', b.star_rating)
+  json_build_object('title', b.title, 'url', CONCAT('https://coryd.dev', b.slug), 'date', b.date_finished, 'description', CASE WHEN b.review IS NOT NULL THEN
+      b.review
+    ELSE
+      b.description
+    END, 'image', CONCAT('/', df.filename_disk), 'rating', b.star_rating)
 ELSE
   NULL
 END AS feed

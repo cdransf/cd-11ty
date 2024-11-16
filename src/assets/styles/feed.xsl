@@ -45,14 +45,14 @@
                 <xsl:for-each select="/rss/channel/item">
                   <div class="item">
                     <time>Published: <xsl:value-of select="pubDate" /></time>
-                    <h3>
+                    <h2>
                       <a>
                         <xsl:attribute name="href">
                           <xsl:value-of select="link" />
                         </xsl:attribute>
                         <xsl:value-of select="title" />
                       </a>
-                    </h3>
+                    </h2>
                     <xsl:value-of select="description" disable-output-escaping="yes" />
                     <xsl:if test="enclosure">
                       <img class="image-banner" src="{enclosure/@url}" alt="{title}" />
