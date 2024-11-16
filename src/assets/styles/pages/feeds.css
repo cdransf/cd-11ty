@@ -3,35 +3,7 @@
     white-space: normal;
   }
 
-  & .item {
-    &:not(:last-of-type) {
-      border-bottom: var(--border-gray);
-      margin-bottom: var(--spacing-base);
-    }
-
-    & time {
-      color: var(--gray-dark);
-      font-size: var(--font-size-sm);
-    }
-
-    & h2 {
-      margin-top: 0;
-    }
-
-    & img {
-      margin-top: var(--sizing-base);
-    }
-  }
-
-  & ol > li p {
-    display: inline;
-  }
-
-  & footer {
-    padding-bottom: var(--spacing-3xl);
-
-    & hr {
-      margin-top: 0;
-    }
+  footer {
+    border-top: var(--border-gray);
   }
 }

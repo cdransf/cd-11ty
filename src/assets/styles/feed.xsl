@@ -43,27 +43,26 @@
               </article>
               <section>
                 <xsl:for-each select="/rss/channel/item">
-                  <div class="item">
+                  <article>
                     <time>Published: <xsl:value-of select="pubDate" /></time>
-                    <h2>
+                    <h3>
                       <a>
                         <xsl:attribute name="href">
                           <xsl:value-of select="link" />
                         </xsl:attribute>
                         <xsl:value-of select="title" />
                       </a>
-                    </h2>
+                    </h3>
                     <xsl:value-of select="description" disable-output-escaping="yes" />
                     <xsl:if test="enclosure">
                       <img class="image-banner" src="{enclosure/@url}" alt="{title}" />
                     </xsl:if>
-                  </div>
+                  </article>
                 </xsl:for-each>
               </section>
             </div>
           </main>
           <footer>
-            <hr />
             <p>Subscribe by adding <code>
                 <xsl:value-of select="rss/channel/atom:link/@href" />
               </code> to your
