@@ -1,26 +1,14 @@
+import { DateTime } from "luxon";
+
 export default {
   stringToRFC822Date: (dateString) => {
-    const date = new Date(dateString);
+    const date = DateTime.fromISO(dateString, { zone: "America/Los_Angeles" });
 
-    if (isNaN(date)) return "";
-
-    const options = {
-      weekday: "short",
-      day: "2-digit",
-      month: "short",
-      year: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-      timeZoneName: "short",
-    };
-    const formatter = new Intl.DateTimeFormat("en-GB", options);
-
-    return formatter.format(date).replace(",", "");
+    return date.isValid ? date.toRFC2822() : "";
   },
   stringToRFC3339: (dateString) => {
-    const date = new Date(dateString);
+    const date = DateTime.fromISO(dateString, { zone: "America/Los_Angeles" });
 
-    return isNaN(date) ? "" : date.toISOString();
+    return date.isValid ? date.toISO() : "";
   },
 };
