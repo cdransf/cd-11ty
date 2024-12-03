@@ -35,7 +35,7 @@
   "devDependencies": {
     "@11ty/eleventy": "v3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@cdransf/eleventy-plugin-tabler-icons": "^2.2.0",
+    "@cdransf/eleventy-plugin-tabler-icons": "^2.4.0",
     "@supabase/supabase-js": "^2.46.1",
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
